@@ -10,7 +10,7 @@
   nom: Panneau de direction à fond bleu (autoroute)
   signification: 'Fond bleu : la direction indiquée est desservie par une autoroute (ou l''on se trouve sur le réseau autoroutier).'
   conduite: Suivre les panneaux bleus pour rejoindre ou rester sur l'autoroute ; anticiper le choix de voie.
-  complement: 'Code des couleurs : bleu = autoroute ; vert = grande liaison (pôle vert) par route ordinaire ; blanc = itinéraire local ; jaune = temporaire (déviation) ; marron = touristique/culturel ; noir sur blanc/vert = itinéraire vélo (Dv) selon réseau.'
+  complement: 'Code des couleurs : bleu = autoroute ; vert = grande liaison ; blanc = itinéraire local ; jaune = déviation ; marron = touristique.'
   theme: L
   sous_theme: panneaux
   importance: essentiel

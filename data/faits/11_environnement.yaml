@@ -6,7 +6,7 @@
   sous_theme: ecoconduite
   source: "ADEME — Écoconduite ; En Voiture Simone ; Codeclic"
 - id: e-surconsommations
-  texte: "Surconsommations typiques : climatisation +{{c1::10 %}} sur route et jusqu'à +25 % en ville ; coffre de toit ou galerie +{{c2::10 à 15 %}} ; 100 kg de charge inutile +{{c3::5 %}} ; pneus sous-gonflés jusqu'à +{{c4::8 %}} (et usure, risque d'éclatement)."
+  texte: "Surconsommations typiques : climatisation environ +{{c1::10 %}} sur route et jusqu'à +25 % en ville ; coffre de toit ou galerie +{{c2::10 à 15 %}} ; 100 kg de charge inutile +{{c3::5 %}} ; pneus sous-gonflés jusqu'à +{{c4::8 %}} (et usure, risque d'éclatement)."
   explication: "À vitesse élevée, les vitres ouvertes consomment plus que la climatisation (aérodynamique) ; en ville, on aère. Un entretien négligé (filtres, huile) peut coûter jusqu'à +25 %."
   theme: E
   sous_theme: ecoconduite
@@ -18,12 +18,14 @@
   sous_theme: ecoconduite
   source: "securite-routiere.gouv.fr — La vitesse ; Ornikar ; En Voiture Simone"
 - id: e-critair-chiffres
-  texte: "Crit'Air : {{c1::6}} classes (0 à 5) plus les non classés ; un diesel récent (Euro 5-6, 2011+) est Crit'Air {{c2::2}} ; une essence récente, un hybride rechargeable ou un véhicule au gaz est Crit'Air {{c3::1}} ; les véhicules d'avant {{c4::1997}} sont non classés."
-  explication: "Crit'Air 0 (vert) : électrique et hydrogène. À date égale, un diesel est une classe en dessous d'une essence. Vignette ≈ 3,85 €, valable toute la vie du véhicule ; absence en ZFE : 68 €."
+  dedup_ok: [aff-e-diesel-critair1]
+  texte: "Crit'Air : {{c1::6}} classes numérotées à partir de 0, plus les non classés ; un diesel récent (Euro 5-6, 2011+) est Crit'Air {{c2::2}} ; une essence récente, un hybride rechargeable ou un véhicule au gaz est Crit'Air {{c3::1}} ; les véhicules d'avant {{c4::1997}} sont non classés."
+  explication: "Couleurs : 0 vert (électrique, hydrogène), 1 violet, 2 jaune, 3 orange, 4 bordeaux, 5 gris. À date égale, un diesel est une classe en dessous d'une essence."
   theme: E
   sous_theme: pollution
   source: "service-public.fr F33371 ; certificat-air.gouv.fr"
 - id: e-pic-pollution-chiffres
+  dedup_ok: [e-pic-pollution]
   texte: "En cas d'épisode de pollution, le préfet peut instaurer la circulation différenciée (annoncée la veille) et abaisser les vitesses maximales de {{c1::20 km/h}} (130 → 110, 110 → 90, 90 → 70), sans descendre sous 70 km/h."
   explication: "Non-respect : 68 €. Les transports en commun peuvent être rendus gratuits ou moins chers, et les poids lourds déviés."
   theme: E

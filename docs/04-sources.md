@@ -64,6 +64,13 @@ la carte donne la **valeur en vigueur** et mentionne l'ancienne (ex. « 3 ans / 
    et leur nom ; captures de cartes rendues (`build/preview.py`).
 5. Relecture par un agent indépendant de chaque fichier de données contre les dossiers et le code
    consolidé (rapports dans `docs/research/review-*.md`), puis corrections.
+6. **Version 2** (21 septembre 2026, `docs/05-audit-v2.md`) : réécriture thème par thème selon
+   `docs/research/brief-v2-redaction.md` (rapports `docs/research/v2-*.md`, avec pour chaque carte
+   supprimée la carte qui porte désormais la connaissance), puis seconde relecture contradictoire
+   indépendante de chaque thème contre le Code consolidé (`docs/research/review-v2-*.md`, corrections
+   appliquées, doutes listés), contrôle des doublons entre fichiers (`python -m build.dedup`) et
+   règles de qualité vérifiées par le build (longueurs, équilibre vrai/faux, clozes qui se soufflent
+   la réponse, réponses identiques).
 
 ## Ce qu'il faudra surveiller (obsolescence)
 

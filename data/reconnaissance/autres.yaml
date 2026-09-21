@@ -6,9 +6,9 @@
     params:
       pose: bras_leve
   nom: 'Agent : bras levé verticalement'
-  signification: Un bras levé verticalement signifie « attention, arrêt » pour tous les usagers, quelle que soit leur direction d'arrivée (sauf ceux déjà engagés dans l'intersection, qui doivent la dégager).
+  signification: 'Bras levé verticalement : « attention, arrêt » pour tous, sauf ceux déjà engagés dans l''intersection, qui la dégagent.'
   conduite: S'arrêter (avant l'intersection) et attendre le signal suivant ; si l'on est déjà engagé, terminer sa traversée.
-  complement: Équivalent du feu jaune fixe puis rouge pour tout le monde. Les injonctions d'un agent prévalent sur les feux, les panneaux et le marquage.
+  complement: Équivalent du jaune puis du rouge pour tout le monde. Les injonctions de l'agent prévalent sur les feux et les panneaux.
   theme: L
   sous_theme: agents
   importance: essentiel
@@ -20,9 +20,9 @@
     params:
       pose: bras_tendus
   nom: 'Agent : bras tendu(s) horizontalement, vu de face ou de dos'
-  signification: 'Un ou deux bras tendus horizontalement : les usagers qui voient l''agent de face ou de dos doivent s''arrêter ; ceux qui le voient de profil (dans l''axe de ses bras) peuvent passer. Concrètement : si vous voyez la poitrine ou le dos de l''agent, vous vous arrêtez.'
-  conduite: S'arrêter si l'on voit l'agent de face ou de dos ; passer si on le voit de profil.
-  complement: 'Mémo : « face ou dos = STOP ; profil = passage ». Cela vaut aussi lorsque l''agent a les bras baissés : sa poitrine/son dos ferme la voie, ses épaules (profil) l''ouvrent.'
+  signification: 'Bras tendu(s) à l''horizontale : les usagers qui voient l''agent de face ou de dos s''arrêtent ; ceux qui le voient de profil passent.'
+  conduite: Si je vois sa poitrine ou son dos, je m'arrête ; de profil, je passe.
+  complement: 'Mémo : face ou dos = STOP, profil = passage. Vaut aussi bras baissés.'
   theme: L
   sous_theme: agents
   importance: essentiel
@@ -57,7 +57,7 @@
     params:
       pose: avancer
   nom: 'Agent : geste d''appel / de balancement du bras (avancer, accélérer)'
-  signification: Un mouvement de va-et-vient du bras ou de la main dans le sens de la circulation invite les usagers à avancer ou à accélérer le mouvement ; un bras pointé vers une direction leur indique où aller.
+  signification: Un va-et-vient du bras dans le sens de la circulation invite à avancer ou à accélérer ; un bras pointé indique où aller.
   conduite: Avancer sans hésiter dans la direction indiquée, à allure modérée.
   theme: L
   sous_theme: agents
@@ -69,9 +69,9 @@
   image:
     commons: France road sign SR3a.svg
   nom: Panneau d'annonce de radar automatique fixe (« Pour votre sécurité, contrôles automatiques »)
-  signification: 'Panneau d''information à fond jaune/gris annonçant, à l''avance, une zone de contrôle automatisé de la vitesse (radar fixe) : « Pour votre sécurité – contrôles automatiques », avec pictogramme de radar.'
-  conduite: 'Vérifier sa vitesse : le radar est à quelques centaines de mètres ; il n''y a aucune obligation nouvelle, la limitation en vigueur s''applique.'
-  complement: 'Quelques centaines de mètres avant un radar fixe (panneau non obligatoire : les radars ne sont plus systématiquement annoncés). Les panneaux SR (« Panneaux d''information de sécurité routière ») ne portent aucune prescription. SR3a = radar fixe annoncé ; SR3b = « contrôles radars fréquents » (zone) ; SR3c1/c2/c3 = contrôles sur toute la longueur du tunnel / du chantier / du pont ; SR3d = pictogramme radar seul (avec panonceau M9k pour les voies réservées, M9l pour le bruit) ; SR3e = radar + rappel de vitesse (contrôle de vitesse moyenne / radar tronçon).'
+  signification: 'Panneau d''information annonçant une zone de contrôle automatisé de la vitesse : « Pour votre sécurité, contrôles automatiques ».'
+  conduite: 'Vérifier sa vitesse : le radar est quelques centaines de mètres plus loin. La limitation en vigueur s''applique, ni plus ni moins.'
+  complement: 'Panneau non obligatoire : les radars ne sont plus systématiquement annoncés. Les panneaux SR informent sans rien prescrire.'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -95,7 +95,7 @@
   image:
     commons: France road sign SR3e.svg
   nom: Panneau de contrôle automatique avec rappel de la vitesse limite
-  signification: 'Panneau associant le pictogramme radar et le rappel de la vitesse maximale (ex. 90) : annonce d''un contrôle automatisé (notamment contrôle de vitesse moyenne sur une section / radar tronçon).'
+  signification: 'Pictogramme radar + rappel de la vitesse maximale : contrôle automatisé, souvent un radar tronçon (vitesse moyenne).'
   conduite: Tenir une vitesse moyenne inférieure ou égale à la limite sur toute la section.
   theme: L
   sous_theme: panneaux

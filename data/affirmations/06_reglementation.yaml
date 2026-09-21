@@ -1,0 +1,189 @@
+# D — Réglementation : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
+# Le barème chiffré vit dans data/faits/06_reglementation.yaml ; ici, les décisions et les pièges de l'épreuve.
+- id: aff-d-ceinture-passager-adulte
+  contexte: Je conduis ; mon passager adulte, assis à l'avant, n'a pas attaché sa ceinture.
+  affirmation: Cette ceinture non attachée me coûte 3 points.
+  verdict: faux
+  pourquoi: Un passager majeur non attaché paie lui-même 135 €, sans retrait pour moi. Je perds 3 points seulement si c'est moi qui ne suis pas attaché ; pour un passager de moins de 18 ans, je paie 135 € sans perdre de point.
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. R412-1 et R412-2
+- id: aff-d-probatoire-alcool
+  contexte: Je suis en première année de permis probatoire (6 points).
+  affirmation: Contrôlé à 0,3 g/L de sang, je risque une amende mais je garde mon permis.
+  verdict: faux
+  pourquoi: En probatoire le seuil est 0,2 g/L ; à 0,3 g/L, c'est 135 € et 6 points — soit la totalité d'un capital de 6 points, donc l'invalidation du permis et un délai de 6 mois avant de le repasser.
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. R234-1 et L223-5
+- id: aff-d-probatoire-majoration
+  affirmation: Après une première année de permis sans aucune infraction, mon capital passe de 6 à 8 points.
+  verdict: vrai
+  pourquoi: En filière classique le capital monte de 2 points par an (6 → 8 → 10 → 12 en 3 ans) ; après une conduite accompagnée, de 3 points par an (6 → 9 → 12 en 2 ans). Une seule infraction interrompt la majoration.
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-1 et R223-1
+- id: aff-d-invalidation-code-seul
+  contexte: Mon permis vient d'être invalidé pour solde de points nul.
+  affirmation: Je ne repasserai que le code si j'avais le permis depuis au moins 3 ans.
+  verdict: vrai
+  pourquoi: 'Permis de 3 ans ou plus : épreuve théorique seule. Moins de 3 ans : code et conduite. Dans les deux cas, 6 mois d''attente, un examen médical et des tests psychotechniques, et un nouveau permis probatoire.'
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-5 ; service-public.fr F1704
+- id: aff-d-invalidation-capital
+  affirmation: Le permis que l'on repasse après une invalidation redémarre avec un capital de 12 points.
+  verdict: faux
+  pourquoi: Il repart à 6 points, comme un premier permis, et un nouveau délai probatoire s'applique. Le capital de 12 points ne se retrouve qu'au terme de ce probatoire, sans aucune infraction avec retrait de points.
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-1 et R223-1
+- id: aff-d-recuperation-delai
+  contexte: Un excès de vitesse de 25 km/h m'a retiré 2 points ; je n'ai rien commis depuis.
+  affirmation: Je retrouve mon capital de 12 points au bout de deux ans.
+  verdict: faux
+  pourquoi: Il faut trois ans, parce qu'un excès d'au moins 20 km/h est une contravention de 4e classe. Le délai de deux ans ne vaut que si toutes les infractions sont des contraventions de 1re à 3e classe.
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-6 ; service-public.fr F1685
+- id: aff-d-velo-points
+  contexte: Je me déplace à vélo et je franchis un feu rouge.
+  affirmation: Je perds 4 points sur mon permis de conduire.
+  verdict: faux
+  pourquoi: Aucun retrait de points pour une infraction commise avec un véhicule qui n'exige pas le permis (vélo, trottinette, à pied) ; l'amende de 135 €, elle, reste due.
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-1 ; service-public.fr F20443
+- id: aff-d-aac-points-eleve
+  contexte: 'Conduite accompagnée : l''élève commet un excès de vitesse, l''accompagnateur est à côté de lui.'
+  affirmation: Les points sont retirés à l'élève, auteur de l'infraction.
+  verdict: faux
+  pourquoi: L'élève n'a pas encore de permis à points. Selon la Sécurité routière, c'est l'accompagnateur, responsable de la conduite, qui est sanctionné ; il est lui-même soumis au seuil de 0,2 g/L.
+  theme: D
+  sous_theme: permis
+  source: securite-routiere.gouv.fr — FAQ conduite accompagnée ; Code de la route, art. R234-1
+- id: aff-d-grand-exces-delit
+  affirmation: Un excès de vitesse de 50 km/h ou plus est un délit dès la première fois.
+  verdict: vrai
+  pourquoi: 'Depuis le 29 décembre 2025 : 3 mois de prison, 3 750 € et 6 points. Avant, c''était une contravention de 5e classe (1 500 €), délit seulement en récidive — la banque 2023 peut encore poser l''ancienne règle.'
+  theme: D
+  sous_theme: sanctions
+  tags:
+  - nouveau::2025
+  source: Code de la route, art. L413-1 (loi n° 2025-622 ; décret n° 2025-1269)
+- id: aff-d-clignotant-points
+  affirmation: Tourner sans mettre le clignotant se solde par une amende de 35 €, sans retrait de points.
+  verdict: faux
+  pourquoi: 'L''amende est bien de 35 € (2e classe), mais l''infraction retire 3 points et expose à une suspension. Petite amende, gros retrait : c''est un piège classique de l''épreuve.'
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. R412-10
+- id: aff-d-detecteur-radar
+  affirmation: Un détecteur de radar n'est sanctionné que s'il est en fonctionnement.
+  verdict: faux
+  pourquoi: 'Le simple fait de le détenir ou de le transporter est une contravention de 5e classe : 6 points, saisie de l''appareil et confiscation possible du véhicule.'
+  theme: D
+  sous_theme: sanctions
+  importance: utile
+  source: Code de la route, art. R413-15
+- id: aff-d-telephone-retention
+  contexte: Je suis intercepté pour un excès de vitesse, téléphone tenu en main.
+  affirmation: Les forces de l'ordre peuvent retenir mon permis sur place.
+  verdict: vrai
+  pourquoi: Le téléphone tenu en main cumulé à une autre infraction (vitesse, priorité, feu, ligne continue…) autorise la rétention immédiate du permis, puis une suspension préfectorale allant jusqu'à 6 mois.
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. R412-6-1, L224-1 et L224-2
+- id: aff-d-alcool-contravention
+  affirmation: Contrôlé à 0,9 g/L de sang, je risque une contravention de 135 € et 6 points.
+  verdict: faux
+  pourquoi: 'À partir de 0,8 g/L (0,40 mg/L d''air expiré), c''est un délit : 3 ans de prison, 9 000 € d''amende, 6 points, suspension jusqu''à 5 ans. La contravention s''arrête sous 0,8 g/L.'
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. L234-1 et R234-1
+- id: aff-d-delit-fuite
+  contexte: En manœuvrant, j'accroche une voiture en stationnement ; personne alentour.
+  affirmation: Repartir sans laisser mes coordonnées est un délit de fuite.
+  verdict: vrai
+  pourquoi: Ne pas s'arrêter après un accident que l'on a causé est puni de 3 ans de prison, 75 000 € et 6 points, même sans blessé. Il faut s'arrêter et permettre son identification.
+  theme: D
+  sous_theme: sanctions
+  source: Code pénal, art. 434-10 ; Code de la route, art. L231-1
+- id: aff-d-sans-assurance-points
+  affirmation: Conduire sans assurance est un délit, mais ne fait perdre aucun point.
+  verdict: vrai
+  pourquoi: 3 750 € d'amende (forfait délictuel 500 €), suspension jusqu'à 3 ans, confiscation possible — et zéro point retiré. La responsabilité civile reste obligatoire pour tout véhicule à moteur, même immobilisé.
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. L324-2 ; Code des assurances, art. L211-1
+- id: aff-d-vignette-assurance
+  affirmation: Le certificat d'assurance doit rester collé en bas à droite de mon pare-brise.
+  verdict: faux
+  pourquoi: 'Vignette et carte verte ont disparu le 1er avril 2024 : l''assurance se vérifie dans le fichier des véhicules assurés. Seule la vignette Crit''Air se colle encore sur le pare-brise.'
+  theme: D
+  sous_theme: documents
+  tags:
+  - nouveau::2024
+  source: Décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362
+- id: aff-d-permis-numerique
+  affirmation: Le permis de conduire de l'application France Identité est accepté lors d'un contrôle en France.
+  verdict: vrai
+  pourquoi: Depuis février 2024, le titre numérique vaut permis lors d'un contrôle routier en France. Il ne remplace pas la carte, qui reste nécessaire à l'étranger.
+  theme: D
+  sous_theme: documents
+  importance: utile
+  source: Code de la route, art. R233-1 ; service-public.fr F17970
+- id: aff-d-ct-tous-les-ans
+  affirmation: Le contrôle technique d'une voiture particulière se refait tous les ans.
+  verdict: faux
+  pourquoi: Premier contrôle dans les 6 mois qui précèdent le 4e anniversaire du véhicule, puis tous les 2 ans. Les deux-roues motorisés suivent, eux, un rythme de 5 ans puis 3 ans.
+  theme: D
+  sous_theme: documents
+  source: Code de la route, art. R323-22 et R323-27
+- id: aff-d-ct-defaillance-majeure
+  contexte: Mon contrôle technique relève une défaillance majeure.
+  affirmation: Je peux continuer à rouler en attendant la contre-visite.
+  verdict: vrai
+  pourquoi: 'Une défaillance majeure laisse 2 mois pour la contre-visite, véhicule utilisable. C''est la défaillance critique qui limite la validité au jour du contrôle : dès le lendemain, le véhicule ne doit plus circuler.'
+  theme: D
+  sous_theme: documents
+  source: service-public.fr F2878 ; arrêté du 18 juin 1991
+- id: aff-d-carte-grise-delai
+  contexte: J'achète une voiture d'occasion à un particulier.
+  affirmation: J'ai un mois pour faire établir la carte grise à mon nom.
+  verdict: vrai
+  pourquoi: Un mois à compter de la cession, sur l'ANTS ou chez un professionnel habilité (135 € à défaut). Le vendeur, lui, déclare la cession sous 15 jours. Même délai d'un mois pour un changement d'adresse.
+  theme: D
+  sous_theme: documents
+  source: Code de la route, art. R322-4, R322-5 et R322-7 ; service-public.fr F21031
+- id: aff-d-assurance-tiers
+  contexte: Je suis responsable d'un accident et je suis assuré au tiers.
+  affirmation: Mon assurance prendra en charge la réparation de ma propre voiture.
+  verdict: faux
+  pourquoi: La responsabilité civile ne couvre que les dommages causés aux autres. Les dégâts de mon véhicule et mes blessures relèvent de garanties facultatives (dommages tous accidents, garantie du conducteur).
+  theme: D
+  sous_theme: documents
+  source: Code des assurances, art. L211-1 ; service-public.fr F2655
+- id: aff-d-bonus-malus
+  affirmation: Un accident dont je suis responsable majore ma cotisation d'assurance de 25 %.
+  verdict: vrai
+  pourquoi: Le coefficient est multiplié par 1,25 (1,125 si la responsabilité est partagée), avec un malus plafonné à 3,50. À l'inverse, chaque année sans accident responsable vaut −5 %, jusqu'à 0,50.
+  theme: D
+  sous_theme: documents
+  importance: utile
+  source: Code des assurances, annexe à l'art. A121-1 ; service-public.fr F2655
+- id: aff-d-constat-desaccord
+  contexte: Accrochage sans blessé ; l'autre conducteur et moi ne sommes pas d'accord sur les circonstances.
+  affirmation: Je remplis le constat mais je ne le signe pas.
+  verdict: vrai
+  pourquoi: 'La signature vaut accord sur les faits : en cas de désaccord, on remplit sa partie, on garde un exemplaire et on laisse les assureurs trancher. Le sinistre se déclare sous 5 jours ouvrés.'
+  theme: D
+  sous_theme: documents
+  source: Code des assurances, art. L113-2 ; service-public.fr F2149
+- id: aff-d-gilet-coffre
+  affirmation: Mon gilet de haute visibilité peut être rangé dans le coffre, avec le triangle.
+  verdict: faux
+  pourquoi: Le gilet doit rester à portée de main dans l'habitacle, pour être enfilé avant de sortir d'un véhicule immobilisé sur la chaussée. Seul le triangle peut voyager dans le coffre.
+  theme: D
+  sous_theme: documents
+  source: Code de la route, art. R416-19 ; service-public.fr F19459

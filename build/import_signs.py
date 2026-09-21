@@ -150,6 +150,43 @@ EXCLUDE = {"PMV", "FEU-decompte", "FEU-tunnel-fermeture", "FEU-vert-clignotant",
 
 GENERIC_IMPLANT = re.compile(r"^Hors agglomération\s*:\s*100 à 200 m", re.I)
 
+# Category-level sentences that used to be repeated on every sign of a family (docs/05-audit-v2.md §2.3).
+# They are dropped from the cards: the rule is carried once by a fact/question card
+# (l-implantation-danger, l-portee-prescription, l-panonceau-portee, l-signalisation-temporaire).
+BOILERPLATE = [
+    r"^Sous le panneau qu'il complète, sur le même support\s*$",
+    r"^il ne s'applique qu'à ce panneau\.?$",
+    r"^Implanté à ~150 m du danger hors agglomération \(200 m sur autoroute\), ~50 m en agglomération\s*$",
+    r"^un panonceau M1 précise une distance différente\.?$",
+    r"^Placé à l'endroit où commence l'(interdiction|obligation)\s*$",
+    r"^répété après chaque intersection( \(sauf voies privées et chemins de terre\))?\.?$",
+    r"^En position devant le service, ou en présignalisation au dernier carrefour \(avec panonceau de direction M3b et/ou de distance M1\)\.?$",
+    r"^Placé à l'endroit où cesse la prescription\.?$",
+    r"^Comme les panneaux A : environ 150 m avant le danger hors agglomération \(100 à 200 m\), 50 m en agglomération, souvent complété par un panonceau KM1 \(distance\).*$",
+    r"^Fond JAUNE = signalisation temporaire \(chantier, événement, danger passager\) : elle prévaut sur la signalisation permanente contradictoire\.?$",
+    r"^À chaque entrée de la zone\s*$",
+    r"^la prescription vaut dans toutes les rues de la zone jusqu'au panneau de sortie, sans être répétée après les intersections\.?$",
+]
+BOILERPLATE_RE = [re.compile(p, re.I) for p in BOILERPLATE]
+
+
+def strip_boilerplate(text: str) -> str:
+    """Remove category-level sentences; keep what is specific to this sign."""
+    if not text:
+        return ""
+    parts = re.split(r"(?<=[.;])\s+", text)
+    kept = []
+    for p in parts:
+        core = p.rstrip(" ;.")
+        if any(r.match(core) or r.match(p) for r in BOILERPLATE_RE):
+            continue
+        kept.append(p)
+    out = " ".join(kept).strip()
+    out = re.sub(r"^[;\s]+", "", out)
+    if out and out[-1] == ";":
+        out = out[:-1].rstrip() + "."
+    return out
+
 
 def slug(code: str) -> str:
     s = code.lower().replace("'", "")
@@ -239,7 +276,7 @@ def convert():
             "nom": e["nom"].strip(),
             "signification": strip_unverified((e.get("signification") or "").strip()),
             "conduite": strip_unverified((e.get("conduite_a_tenir") or "").strip()),
-            "complement": strip_unverified(" ".join(comp_parts).strip()),
+            "complement": strip_boilerplate(strip_unverified(" ".join(comp_parts).strip())),
             "piege": piege,
             "theme": "L",
             "sous_theme": sous,
@@ -254,6 +291,10 @@ def convert():
                 item.pop(k, None)
             else:
                 item[k] = v
+        if item.get("complement"):
+            item["complement"] = strip_boilerplate(item["complement"])
+            if not item["complement"]:
+                item.pop("complement")
         by_file[fname].append(item)
     unused = set(OVERRIDES) - {it["id"] for items in by_file.values() for it in items}
     if unused:

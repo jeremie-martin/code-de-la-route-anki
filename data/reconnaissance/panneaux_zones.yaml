@@ -7,7 +7,7 @@
   nom: Entrée d'une zone à stationnement interdit
   signification: Entrée d'une zone où le stationnement est interdit dans toutes les rues, sauf emplacements aménagés ou signalisation contraire.
   conduite: Ne stationner que sur les emplacements matérialisés.
-  complement: 'À chaque entrée de la zone ; la prescription vaut dans toutes les rues de la zone jusqu''au panneau de sortie, sans être répétée après les intersections. Fin : B50a. Catégorie officielle IISR : prescription zonale (entrée de zone).'
+  complement: 'Fin : B50a. Catégorie officielle IISR : prescription zonale (entrée de zone).'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -18,9 +18,9 @@
   image:
     commons: France road sign B6b2.svg
   nom: Entrée d'une zone à stationnement unilatéral à alternance semi-mensuelle
-  signification: 'Entrée d''une zone où le stationnement est autorisé alternativement d''un côté puis de l''autre (1er-15 : côté des numéros impairs ; 16-fin : côté des numéros pairs), sauf indications contraires.'
-  conduite: Du 1er au 15, se garer côté impair ; du 16 à la fin du mois, côté pair. Changement de côté le dernier jour de chaque période entre 20 h 30 et 21 h.
-  complement: 'À chaque entrée de la zone ; la prescription vaut dans toutes les rues de la zone jusqu''au panneau de sortie, sans être répétée après les intersections. Fin : B50b. Règle R417-2 : 1er au 15 → côté des numéros IMPAIRS ; 16 au 31 → côté des numéros PAIRS (mémo : « 1 » est impair).'
+  signification: 'Entrée d''une zone à stationnement alterné semi-mensuel : du 1er au 15 côté impair, du 16 à la fin côté pair.'
+  conduite: Changer de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
+  complement: 'Fin : B50b. Mémo : « 1 » est impair (R417-2).'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -33,7 +33,7 @@
   nom: Entrée d'une zone à stationnement de durée limitée (zone bleue)
   signification: Entrée d'une zone où le stationnement est gratuit mais limité dans le temps, avec contrôle par disque de stationnement (« zone bleue »).
   conduite: Apposer le disque européen derrière le pare-brise, indiquant l'heure d'arrivée ; respecter la durée maximale (souvent 1 h 30) et les horaires du panonceau.
-  complement: 'À chaque entrée de la zone ; la prescription vaut dans toutes les rues de la zone jusqu''au panneau de sortie, sans être répétée après les intersections. Fin : B50c. Le marquage au sol de la zone bleue peut être bleu.'
+  complement: 'Fin : B50c. Le marquage au sol de la zone bleue peut être bleu.'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -46,7 +46,7 @@
   nom: Entrée d'une zone à stationnement payant
   signification: Entrée d'une zone où le stationnement est payant (horodateur, parcmètre, paiement mobile) selon les horaires indiqués.
   conduite: Payer et afficher le ticket ; sinon forfait post-stationnement (FPS).
-  complement: 'À chaque entrée de la zone ; la prescription vaut dans toutes les rues de la zone jusqu''au panneau de sortie, sans être répétée après les intersections. Fin : B50d.'
+  complement: 'Fin : B50d.'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -58,7 +58,7 @@
     commons: France road sign B6b5.svg
   nom: Entrée d'une zone à stationnement unilatéral alterné et à durée limitée
   signification: Entrée d'une zone combinant stationnement unilatéral à alternance semi-mensuelle et durée limitée avec contrôle par disque.
-  complement: 'À chaque entrée de la zone ; la prescription vaut dans toutes les rues de la zone jusqu''au panneau de sortie, sans être répétée après les intersections. Fin : B50e.'
+  complement: 'Fin : B50e.'
   theme: L
   sous_theme: panneaux
   importance: rare
@@ -81,13 +81,14 @@
   image:
     commons: France road sign B30 (30).svg
   nom: Entrée d'une zone 30
-  signification: Entrée d'une zone où la vitesse est limitée à 30 km/h dans toutes les rues. Par défaut, les voies à sens unique y sont à double sens pour les cyclistes (double-sens cyclable, décret 2008-754) et les ralentisseurs ne sont pas forcément signalés.
-  conduite: Rouler à 30 km/h maximum dans toute la zone ; s'attendre à des cyclistes à contresens et à des aménagements (plateaux, chicanes).
-  complement: 'À chaque entrée de zone ; peut être sur le même support qu''EB10 (vaut alors pour toute l''agglomération). Non répété après les intersections. Fin : B51. Différence : B14 30 (rond seul) = 30 km/h sur cette rue jusqu''à la prochaine intersection ; B30 (ZONE 30) = 30 km/h dans toute la zone jusqu''au B51.'
+  signification: 'Entrée d''une zone 30 : 30 km/h dans toutes les rues de la zone, jusqu''au panneau de sortie B51.'
+  conduite: Rouler à 30 km/h maximum ; s'attendre à des cyclistes à contresens et à des aménagements (plateaux, chicanes).
+  complement: 'Double-sens cyclable par défaut. Peut partager le support d''EB10 : vaut alors pour toute l''agglomération.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: B14 30 (rond seul) = 30 km/h sur cette rue ; B30 (ZONE 30) = 30 km/h dans toute la zone.
 - id: b51
   type: panneau
   code: B51
@@ -107,13 +108,14 @@
   image:
     commons: France road sign B52.svg
   nom: Entrée d'une zone de rencontre
-  signification: 'Entrée d''une zone de rencontre : espace partagé où les piétons sont prioritaires sur tous les véhicules (sauf tramways) et peuvent circuler sur toute la chaussée ; vitesse limitée à 20 km/h ; double-sens cyclable par défaut ; stationnement uniquement sur les emplacements aménagés.'
-  conduite: Rouler à 20 km/h maximum, céder le passage aux piétons (sans qu'ils aient à s'écarter), ne pas stationner hors emplacements.
-  complement: 'À chaque entrée de zone ; peut être sur le même support qu''EB10. Fin : B53. Trois vitesses à retenir : aire piétonne = allure du pas (≈ 6 km/h) ; zone de rencontre = 20 km/h ; zone 30 = 30 km/h. Le piéton est prioritaire en zone de rencontre mais doit néanmoins ne pas gêner inutilement.'
+  signification: 'Entrée d''une zone de rencontre : piétons prioritaires sur toute la chaussée, vitesse limitée à 20 km/h, stationnement sur emplacements seulement.'
+  conduite: Rouler à 20 km/h maximum et céder le passage aux piétons, sans qu'ils aient à s'écarter.
+  complement: 'Double-sens cyclable par défaut. Fin : B53.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: 'Trois vitesses : aire piétonne = allure du pas ; zone de rencontre = 20 ; zone 30 = 30.'
 - id: b53
   type: panneau
   code: B53
@@ -132,10 +134,10 @@
   image:
     commons: France road sign B54.svg
   nom: Entrée d'une aire piétonne
-  signification: 'Entrée d''une aire piétonne : zone affectée aux piétons, où ils sont prioritaires. Seuls les véhicules autorisés (desserte, livraisons, riverains selon panonceau M11b) peuvent y circuler, à l''allure du pas ; les cyclistes y roulent au pas sans gêner les piétons. Arrêt et stationnement interdits (sauf desserte).'
-  conduite: 'En voiture : ne pas y entrer sauf autorisation (panonceau) ; sinon rouler au pas et laisser la priorité absolue aux piétons.'
-  complement: 'À chaque entrée de l''aire ; panonceau M11b1 (période) ou M11b2 (dérogations). Fin : B55.'
-  piege: 'Aire piétonne ≠ zone de rencontre : dans l''aire piétonne la voiture est l''exception (allure du pas) ; dans la zone de rencontre elle est admise à 20 km/h. Piège de forme : B52/B54 sont des carrés BLEUS (comme des indications) alors que B30/B56/B58 sont blancs bordés de rouge ; B54/B55 ont remplacé C109/C110 en 2008 (arrêté du 7 novembre 2008).'
+  signification: 'Entrée d''une aire piétonne : zone affectée aux piétons, qui y sont prioritaires ; seuls les véhicules autorisés y circulent, à l''allure du pas.'
+  conduite: Ne pas y entrer sans autorisation (panonceau) ; sinon rouler au pas, priorité absolue aux piétons.
+  complement: 'Fin : B55. Panonceau M11b1 (période) ou M11b2 (dérogations).'
+  piege: 'Piège de forme : B52 et B54 sont des carrés BLEUS ; B30, B56, B58 sont blancs bordés de rouge.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -158,9 +160,9 @@
   image:
     commons: France road sign B56.svg
   nom: Entrée d'une zone à circulation restreinte (ZFE)
-  signification: 'Entrée d''une zone à circulation restreinte / zone à faibles émissions mobilité (ZFE-m) : l''accès est interdit aux véhicules ne répondant pas aux critères d''émissions indiqués sur le panonceau M11d (vignette Crit''Air), aux horaires indiqués.'
-  conduite: Vérifier la vignette Crit'Air de son véhicule et les catégories/horaires du panonceau ; ne pas entrer si le véhicule est concerné par la restriction (amende 68 €).
-  complement: 'À chaque entrée de zone, complété du panonceau M11d (catégories concernées, jours et heures). Fin : B57. Créé vers 2016-2017 sous le nom « zone à circulation restreinte » (ZCR, loi de transition énergétique de 2015 ; les ZCR sont devenues ZFE-m avec la loi LOM (2019). La vignette Crit''Air est obligatoire pour y circuler.'
+  signification: 'Entrée d''une zone à faibles émissions (ZFE-m) : accès interdit aux véhicules dont la vignette Crit''Air ne figure pas parmi celles autorisées par le panonceau M11d.'
+  conduite: Vérifier sa vignette Crit'Air et les horaires du panonceau ; ne pas entrer si le véhicule est concerné (68 €).
+  complement: 'Complété du panonceau M11d (catégories, jours et heures). Fin : B57.'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -183,13 +185,14 @@
   image:
     commons: France road sign B58.svg
   nom: Entrée d'une zone d'obligation d'équipements en période hivernale
-  signification: Entrée d'une zone (communes de montagne désignées par le préfet) où, du 1er novembre au 31 mars, les véhicules doivent être équipés de pneus hiver marqués 3PMSF (le seul marquage M+S ne suffit plus depuis le 1er novembre 2024) ou détenir des chaînes/chaussettes à neige pour au moins deux roues motrices.
-  conduite: 'Vérifier son équipement avant d''entrer : pneus hiver sur les 4 roues, ou chaînes/chaussettes dans le coffre.'
-  complement: 'À chaque entrée de zone, complété du panonceau M11b1 « du 01/11 au 31/03 » ; peut être utilisé en présignalisation avec M1. Fin : B59. Créé par l''arrêté du 23 juin 2021 (« loi Montagne II », décret 2020-1264), applicable depuis le 1er novembre 2021. Différent de B26 : B26 impose de MONTER les chaînes ici et maintenant ; B58 impose de les DÉTENIR (ou d''avoir des pneus hiver).'
+  signification: Zone de montagne où, du 1er novembre au 31 mars, il faut des pneus hiver marqués 3PMSF ou détenir des chaînes pour deux roues motrices.
+  conduite: 'Vérifier son équipement avant d''entrer : pneus hiver, ou chaînes/chaussettes dans le coffre.'
+  complement: 'Le marquage M+S seul ne suffit plus depuis le 1er novembre 2024. Fin : B59.'
   theme: L
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: B26 impose de MONTER les chaînes ici et maintenant ; B58 impose seulement de les DÉTENIR.
 - id: b59
   type: panneau
   code: B59

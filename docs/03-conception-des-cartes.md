@@ -89,6 +89,16 @@ stationnement, marquages. Le schéma est **généré** (SVG) à partir d'une sp�
 attendue est **calculée par un solveur de priorité et vérifiée à la main** ; l'explication cite la règle.
 Champs : `Image`, `Question`, `Reponse`, `Explication`, `Source`.
 
+### 3.6 `CDR Affirmation` (affirmation → VRAI/FAUX + pourquoi) — *1 carte par note* (v2)
+
+Pour la forme dominante de l'épreuve (11 des 20 questions officielles) : une affirmation plausible sur
+une situation, à juger. Champs : `Contexte` (facultatif, une ligne : où je suis, ce que je vois),
+`Affirmation`, `Verdict` (`vrai` | `faux`), `Pourquoi` (une ligne : la règle ou le mécanisme),
+`Image` (facultative), `Source`. Recto : contexte + « affirmation » + « Vrai ou faux ? (et pourquoi) ».
+Verso : badge VRAI/FAUX + pourquoi. La carte n'est « bonne » que si l'on a su dire pourquoi : c'est ce
+qui la distingue d'un Oui/Non devinable. Règles de rédaction dans `docs/research/brief-v2-redaction.md`
+(fausses affirmations plausibles, équilibre vrai/faux par fichier, pas de mots-signaux).
+
 ## 4. Ce qui est volontairement exclu
 
 - Les cartes « nom → image » généralisées (inutiles pour l'épreuve, doublent le volume).
@@ -97,24 +107,13 @@ Champs : `Image`, `Question`, `Reponse`, `Explication`, `Source`.
   d'entraînement (gardés seulement s'ils illustrent une règle : ex. couleurs des panneaux de direction).
 - Les listes ouvertes (« citez tous les cas où… »).
 
-## 5. Volumes visés
+## 5. Volumes
 
-| Type | Notes | Cartes | Commentaire |
-|---|---|---|---|
-| Reconnaissance | ~300 | ~300 | ~220 panneaux/panonceaux/balises, ~35 marquages, ~15 feux/agents, ~25 voyants, ~10 pictogrammes |
-| Confusion | ~40 | ~40 | paires ciblées |
-| Fait (cloze) | ~200 | ~300 | 1 à 4 clozes par note |
-| Question | ~300 | ~300 | |
-| Scénario | ~70 | ~70 | intersections, dépassements, stationnement |
-| **Total** | **~900** | **~1000** | ≈ 7 semaines à 20 nouvelles cartes/jour |
-
-Ces chiffres sont des cibles de conception ; les volumes réels sont dans `out/STATS.md` (build du
-21 septembre 2026 : 425 reconnaissances, 49 confusions, 127 faits / 326 cartes, 247 questions,
-48 scénarios — 896 notes, 1 095 cartes). Écarts assumés : plus de reconnaissances que prévu (les
-panonceaux et la signalisation temporaire sont couverts exhaustivement, les rares étant taggés
-`importance::rare` pour pouvoir être suspendus), moins de notes à trous mais autant de cartes (2,6 clozes par note en moyenne ; beaucoup de
-chiffres se retiennent mieux en question directe) et moins de scénarios (48 schémas couvrent toutes les
-configurations de priorité et de dépassement décidables ; le reste relève des photos d'examens blancs).
+Les cibles de conception v1 (~900 notes, ~1 000 cartes) ont été révisées en v2 (`docs/05-audit-v2.md`) :
+les cartes-listes sont découpées en cartes de décision et en affirmations, la signalisation garde sa
+couverture exhaustive (les signaux `utile` et `rare` arrivent en fin de programme et se suspendent par
+tag), les thèmes minces (route, autres usagers, aides à la conduite) sont complétés en forme d'épreuve.
+Les volumes réels sont dans `out/STATS.md` ; le déroulé jour par jour dans `out/PROGRAMME.md`.
 
 ## 6. Organisation du deck
 
@@ -137,6 +136,15 @@ Code de la route 2026
 Tags : `theme::L` … `theme::A`, `sous::priorites`, `type::panneau`, `importance::essentiel|utile|rare`,
 `nouveau::2023+` (règles ou panneaux récents, à ne pas confondre avec les anciennes versions).
 
+**Ordre d'apprentissage (v2).** La position des nouvelles cartes est calculée par `build/build.py`
+(`curriculum()`) : les cartes de méthode d'abord ; puis trois phases (`essentiel`, `utile`, `rare`) ;
+dans une phase, les thèmes sont entrelacés au prorata de leur volume (chaque jour est une tranche de
+l'épreuve entière), les scénarios n'apparaissant qu'après les panneaux dont ils dépendent ; les cartes
+sœurs d'une note à trous sont espacées d'une trentaine de positions. Le paquet embarque un préréglage
+d'options (20 nouvelles/jour, ordre par position, rétention 0,9) : il faut cocher « Importer les
+préréglages » à l'import, ou régler à la main « Ordre de collecte : position croissante » et « Ordre de
+tri : ordre de collecte ».
+
 ## 7. Alternatives envisagées (et pourquoi elles ont été écartées ou limitées)
 
 | Idée | Décision | Raison |
@@ -146,7 +154,8 @@ Tags : `theme::L` … `theme::A`, `sous::priorites`, `type::panneau`, `importanc
 | Une note par thème avec 10-20 clozes | Écartée | Viole la règle « une carte = une connaissance » ; une note-tableau produit des cartes dont le contexte trahit la réponse ou, inversement, des trous impossibles à deviner. Maximum 4 clozes, seulement pour des tableaux naturels. |
 | Occlusion d'image sur des photos réelles de situations | Écartée | Pas de banque de photos libres de droits calibrée sur l'examen ; les photos ambiguës créent des cartes contestables. Les scénarios sont donc des schémas générés, sans ambiguïté, vérifiés par un solveur. |
 | Reproduire les 1 037 questions de la banque | Impossible et inutile | La banque n'est pas publique ; apprendre des réponses par cœur ne transfère pas à des photos différentes. Le deck vise les *connaissances* et les *raisonnements* qui rendent chaque question décidable. |
-| Cartes Oui/Non calquées sur le format « double affirmation » | Transformées | Un simple Oui/Non se devine à 50 % et n'apprend rien ; chaque affirmation de l'examen devient une question dont la réponse contient la justification (« Non : champ visuel réduit, … »). |
+| Cartes Oui/Non calquées sur le format « double affirmation » | Adoptées en v2 avec justification obligatoire | Un simple Oui/Non se devine à 50 % ; le type `CDR Affirmation` impose le *pourquoi* au verso et des fausses affirmations plausibles, ce qui entraîne exactement le geste de l'épreuve. |
+| Cartes « fiches » (liste des cas, des règles, des étapes) | Écartées en v2 | Une liste ne se note pas honnêtement dans Anki et ne ressemble pas à l'épreuve ; le build refuse les réponses de plus de 40 mots ou de plus de 4 éléments. |
 | Tout inclure (504 signaux, tous les panonceaux de service) | Filtrée par importance | Les signaux rarissimes sont gardés seulement s'ils ont une image officielle et une signification propre, avec le tag `importance::rare` que l'apprenant peut suspendre ; les variantes sans valeur d'examen (sorties de zone de stationnement, cartouches obscurs) sont exclues. |
 | Sous-decks par type de carte (panneaux / faits / questions) | Écartée | Les résultats d'entraînement sont donnés par thème ; les sous-decks suivent donc les 10 thèmes officiels, pour cibler ses faiblesses. |
 | Générer les cartes directement avec un LLM sans base de données | Écartée | Pas de traçabilité ni de mise à jour possible ; ici chaque note vit dans un YAML sourcé, et le deck est régénéré de façon déterministe (ids stables). |

@@ -1,0 +1,18 @@
+# D — Réglementation : les décisions que l'épreuve fait prendre. Les chiffres vivent dans
+# data/faits/06_reglementation.yaml, les jugements dans data/affirmations/06_reglementation.yaml.
+- id: d-controle-papiers-oublies
+  question: 'Un agent me contrôle : je n''ai pas la carte grise du véhicule sur moi. Que se passe-t-il ?'
+  reponse: 'Une amende de 11 € et un délai de 5 jours pour présenter le document au commissariat ou à la gendarmerie ; passé ce délai, l''amende passe à 135 €.'
+  explication: 'Les documents exigés sont le permis (carte ou application France Identité) et le certificat d''immatriculation ; l''attestation d''assurance ne l''est plus depuis avril 2024 (contrôle par le fichier des véhicules assurés).'
+  theme: D
+  sous_theme: documents
+  tags:
+  - nouveau::2024
+  source: Code de la route, art. R233-1 ; service-public.fr F2794
+- id: d-vente-vehicule
+  question: Je vends ma voiture de huit ans à un particulier. Que dois-je lui remettre, et quelle démarche faire ?
+  reponse: 'La carte grise barrée et datée, un certificat de situation administrative et un contrôle technique récent ; et je déclare la cession en ligne, sinon je continue à recevoir ses contraventions.'
+  explication: 'Déclaration de cession sous 15 jours sur l''ANTS ou chez un professionnel habilité ; l''acheteur a ensuite un mois pour établir la carte grise à son nom. Le contrôle technique doit dater de moins de 6 mois.'
+  theme: D
+  sous_theme: documents
+  source: Code de la route, art. R322-4 et R323-22 ; service-public.fr F21031

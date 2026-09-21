@@ -220,3 +220,35 @@
   theme: L
   sous_theme: positionnement
   source: "Code de la route, art. R412-8 et R416-18"
+- id: scn-crois-b15-je-cede
+  kind: road
+  spec:
+    lanes: 2
+    axis: none
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 80, colour: rouge, dir: down}
+    extras:
+      - {kind: sign, file: "France road sign B15.svg", y: 45}
+  question: "Un rétrécissement à une voie est annoncé par ce panneau (flèche rouge de mon côté) ; une voiture arrive en face. Qui passe ?"
+  reponse: "Elle : le panneau B15 m'impose de céder le passage aux véhicules venant en sens inverse ; je m'arrête avant le rétrécissement."
+  explication: "B15 (rond rouge, flèche rouge = mon sens) : cédez le passage à la circulation venant en sens inverse. De l'autre côté, le C18 (carré bleu) donne la priorité à la voiture rouge. Sans panneau, la courtoisie et la prudence décident : je ne m'engage que si je peux dégager."
+  theme: L
+  sous_theme: croisement
+  source: "IISR 4e et 5e parties (B15, C18) ; Code de la route, art. R414-1"
+- id: scn-crois-c18-je-passe
+  kind: road
+  spec:
+    lanes: 2
+    axis: none
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 80, colour: rouge, dir: down}
+    extras:
+      - {kind: sign, file: "France road sign C18.svg", y: 45}
+  question: "Même rétrécissement, mais le panneau de mon côté est carré bleu (flèche blanche de mon côté). Une voiture arrive en face. Qui passe ?"
+  reponse: "Moi : le C18 m'indique que j'ai la priorité sur la circulation venant en sens inverse ; elle doit attendre au B15 de son côté."
+  explication: "Priorité ne veut pas dire passage forcé : si la voiture rouge s'est déjà engagée, je la laisse sortir du rétrécissement. Piège : la couleur (rouge = je cède, bleu = je passe) et la flèche qui correspond à mon sens."
+  theme: L
+  sous_theme: croisement
+  source: "IISR 5e partie (C18) ; Code de la route, art. R414-1"

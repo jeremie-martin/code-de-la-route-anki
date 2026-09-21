@@ -1,48 +1,14 @@
+# Thème X — Les deux chiffres de l'épreuve qui changent la façon de répondre. Les autres données
+# (prix, validité, inscription, banque de questions) sont dans le README, pas dans le deck.
 - id: etg-format-questions
   texte: L'épreuve théorique générale (ETG) comporte {{c1::40}} questions ; il faut au moins {{c2::35}} bonnes réponses pour être reçu (soit {{c3::5}} erreurs maximum).
-  explication: 'Seuil fixé par l''arrêté du 20 avril 2012 (art. 2). Chaque question vaut 1 point, sans demi-point : une question à plusieurs réponses n''est comptée juste que si toutes les bonnes réponses (et seulement elles) sont cochées. Trois questions d''essai non comptées précèdent les 40.'
+  explication: 'Une question à deux affirmations est notée tout ou rien : une seule erreur sur l''une des deux = 0 pour la question. Viser 37-38/40 en examen blanc avant de s''inscrire.'
   theme: X
   sous_theme: format
-  source: securite-routiere.gouv.fr — L'épreuve théorique générale ; arrêté du 16 avril 2026 (JO du 29 avril 2026)
+  source: Arrêté du 20 avril 2012, art. 2 ; securite-routiere.gouv.fr — Objectifs et réglementation de l'examen du code
 - id: etg-temps-par-question
   texte: À l'ETG, on dispose d'environ {{c1::20 secondes}} pour répondre à chaque question, décomptées à partir de la fin de la lecture orale de l'énoncé.
-  explication: Aucun texte officiel ne fixe cette durée ; c'est la valeur constatée par les opérateurs (Dekra, Pointcode) et les sites de formation. Un chronomètre circulaire est affiché à droite du bandeau. Pour une vidéo, on répond après l'avoir vue (une seule fois). Pas de retour en arrière.
+  explication: 'Le temps ne manque pas si l''on a le réflexe : bandeau (une/plusieurs réponses), pictogramme de point de vue, rétroviseurs et arrière-plan, puis les propositions une à une.'
   theme: X
   sous_theme: format
-  source: Pointcode (Pearson Vue) — Déroulement de l'examen ; Dekra — 10 erreurs à éviter ; docs/research/exam.md §1.3
-- id: etg-images-videos
-  texte: Sur les 40 questions de l'ETG, environ {{c1::4}} (≈ 10 %) sont des questions vidéo, visionnables une seule fois ; les autres reposent sur des photos réelles (poste de conduite, vues par drone, trottoir, guidon de moto…).
-  explication: 'Les vidéos testent l''anticipation : un événement se produit (piéton, portière, véhicule qui déboîte, voyant qui s''allume) et la question porte sur la bonne réaction. Le nombre exact de vidéos n''est pas fixé officiellement.'
-  theme: X
-  sous_theme: format
-  source: 'Prépacode (ENPC) — Nouveau code de la route 2023 : ce qui change'
-- id: etg-banque-2023
-  texte: La banque de questions actuelle de l'ETG, entrée en vigueur le {{c1::12 septembre 2023}}, compte {{c2::1 037}} questions entièrement reformulées, réparties en 10 thèmes.
-  explication: Formulations simplifiées, photos réelles (dont des vues par drone), mise en évidence en jaune du véhicule concerné, pictogramme indiquant le point de vue (piéton, cycliste, motard, conducteur de poids lourd…).
-  theme: X
-  sous_theme: format
-  source: 'securite-routiere.gouv.fr — La nouvelle épreuve du code de la route : 1000 questions entièrement reformulées (2023)'
-- id: etg-themes
-  texte: Les questions de l'ETG sont réparties en {{c1::10}} thèmes officiels ; le plus lourd est « {{c2::Le conducteur}} » (environ 10 questions sur 40).
-  explication: 'Les 10 thèmes : la circulation routière (L), le conducteur (C), la route (R), les autres usagers (U), les notions diverses (D), les premiers secours (A), prendre et quitter son véhicule (P), la mécanique et les équipements (M), la sécurité du passager et du véhicule (S), l''environnement (E). Les sous-decks de ce deck reprennent ce découpage.'
-  theme: X
-  sous_theme: format
-  source: Prépacode (ENPC) — Quelles sont les 10 thématiques des questions du code ; En Voiture Simone — Examen du code 2026
-- id: etg-prix-validite
-  texte: Le passage de l'ETG coûte {{c1::30 €}} ; une fois obtenu, le code est valable {{c2::5 ans}}, quel que soit le nombre de présentations à l'épreuve pratique.
-  explication: L'ancienne règle « 5 ans dans la limite de 5 présentations » n'est plus dans le texte en vigueur (arrêté du 20 avril 2012 modifié, art. 2) ; beaucoup de sites la répètent encore. Passé 5 ans sans permis, il faut repasser le code.
-  theme: X
-  sous_theme: format
-  source: Arrêté du 20 avril 2012 modifié, art. 2 ; communiqué DSR du 11/09/2023 ; service-public.fr F2825
-- id: etg-2026-organisation
-  texte: Depuis le 1er juillet 2026 (arrêté du 16 avril 2026), l'inscription à une session de code doit se faire au plus tard {{c1::la veille de l'épreuve}} ; le résultat est envoyé au plus tôt {{c2::24 heures}} après la fin de l'épreuve.
-  explication: 'Conséquence pratique : impossible de repasser dès le lendemain. Le même arrêté impose une pièce d''identité valide (France Identité acceptée), interdit tout appareil électronique en salle, fixe les sessions entre 8 h et 20 h hors dimanches et jours fériés, sans tolérance de retard. Le contenu de l''épreuve ne change pas.'
-  theme: X
-  sous_theme: format
-  source: Arrêté du 16 avril 2026 (JO du 29 avril 2026), art. 12 et mesure M-27
-- id: etg-age-minimum
-  texte: On peut s'inscrire au permis et passer l'ETG dès {{c1::15 ans}} en conduite accompagnée (AAC) et dès {{c2::16 ans}} en filière classique ; le permis B lui-même s'obtient dès {{c3::17 ans}} depuis le 1er janvier 2024.
-  explication: L'inscription exige un numéro NEPH (demande sur l'ANTS, puis 48 h avant de pouvoir réserver une session) et, pour les personnes nées à partir du 1er janvier 1988, l'ASSR 2 ou l'ASR.
-  theme: X
-  sous_theme: format
-  source: Arrêté du 20 avril 2012 modifié, art. 1 ; securite-routiere.gouv.fr — S'inscrire au permis ; arrêté du 16 avril 2026 (RG_INS_003)
+  source: Ornikar, En Voiture Simone, Codeclic (usage constaté ; non fixé par les textes)

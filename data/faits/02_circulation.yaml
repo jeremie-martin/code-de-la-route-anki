@@ -5,6 +5,7 @@
   sous_theme: vitesse
   source: Code de la route, art. R413-3 et R110-2
 - id: l-vitesse-hors-agglo
+  dedup_ok: [aff-l-90-departement]
   texte: Hors agglomération, sur une route à double sens sans séparateur central, la vitesse maximale est de {{c1::80 km/h}} (depuis le 1er juillet 2018), sauf si le département l'a relevée à {{c2::90 km/h}} par arrêté (signalé par des panneaux).
   explication: 'Sur les sections à 2 voies dans le même sens (créneau de dépassement) sans terre-plein, la vitesse est relevée à 90 sur ces seules voies. Avant 2018 : 90 partout — piège des supports anciens.'
   theme: L
@@ -24,7 +25,7 @@
   source: Code de la route, art. R413-2 II
 - id: l-vitesse-visibilite-50
   texte: Quand la visibilité est inférieure à {{c1::50 m}} (brouillard, neige, pluie violente), la vitesse est limitée à {{c2::50 km/h}} sur tous les réseaux, autoroute comprise.
-  explication: 'Article R413-4. Règle des trois 50 : visibilité 50 m = 50 km/h = 50 m d''intervalle. Feux de croisement obligatoires ; feux de brouillard avant et arrière autorisés et recommandés (R416-7).'
+  explication: 'Article R413-4. Règle des trois 50 : visibilité 50 m = 50 km/h = 50 m d''intervalle. Feux de croisement obligatoires ; feux de brouillard avant admis ; feux de brouillard arrière seulement par brouillard ou chute de neige, jamais sous la pluie (R416-7).'
   theme: L
   sous_theme: vitesse
   source: Code de la route, art. R413-4
@@ -41,7 +42,7 @@
   sous_theme: vitesse
   source: Code de la route, art. R413-19 et R413-8
 - id: l-vitesse-engins
-  texte: 'Vitesses par construction : trottinette électrique (EDPM) {{c1::25 km/h}} ; cyclomoteur et voiturette sans permis {{c2::45 km/h}} ; vélo à assistance électrique : assistance coupée à {{c3::25 km/h}} (au-delà, c''est un cyclomoteur).'
+  texte: 'Vitesses par construction : trottinette électrique (EDPM) {{c1::25 km/h}} ; cyclomoteur et voiturette sans permis {{c2::45 km/h}} ; vélo à assistance électrique : assistance coupée à {{c1::25 km/h}} (au-delà, c''est un cyclomoteur).'
   explication: Ces véhicules lents sont interdits sur autoroute (voiturettes et cyclomoteurs) ; les EDPM sont limités aux pistes cyclables et aux chaussées ≤ 50 km/h en ville.
   theme: L
   sous_theme: vitesse
@@ -61,6 +62,7 @@
   sous_theme: stationnement
   source: Code de la route, art. R417-9 à R417-12 ; service-public.fr F34212
 - id: l-stationnement-5m-passage
+  dedup_ok: [aff-l-5m-passage]
   texte: Il est interdit de s'arrêter ou de stationner sur un passage piéton et dans les {{c1::5 m}} en amont (stationnement très gênant, 135 €), pour ne pas masquer les piétons qui s'engagent.
   explication: Les places matérialisées existant dans ces 5 m sont tolérées jusqu'au 31 décembre 2026 ; à partir du 1er janvier 2027, l'exception disparaît (loi LOM).
   theme: L
@@ -77,7 +79,7 @@
   explication: 'Stationner à contresens (côté gauche d''une rue à double sens) est un stationnement gênant (35 €) et dangereux la nuit (feux non visibles). La nuit sur chaussée non éclairée : feux de position allumés.'
   theme: L
   sous_theme: stationnement
-  source: Code de la route, art. R417-1 et R416-12
+  source: Code de la route, art. R417-1, R417-4 et R416-12
 - id: l-zone-bleue
   texte: 'En zone bleue, le disque de stationnement (modèle européen) est obligatoire, avec l''heure d''arrivée affichée ; la durée autorisée est fixée par arrêté municipal (souvent 1 h 30) ; défaut ou dépassement : {{c1::35 €}} (contravention de 2e classe).'
   explication: Signalée par le panneau B6b3 (zone à stationnement de durée limitée) ou C1b, avec un marquage bleu au sol possible. Le stationnement payant impayé relève du forfait post-stationnement (FPS, montant communal), sans points.
@@ -85,8 +87,8 @@
   sous_theme: stationnement
   source: Code de la route, art. R417-3 ; service-public.fr F34440
 - id: l-feux-detresse-usage
-  texte: 'Les feux de détresse (warning) sont obligatoires quand on circule momentanément à allure fortement réduite ({{c1::dernier véhicule d''un bouchon}}) et, avec le triangle, pour présignaler un véhicule immobilisé dangereux ; ne pas les utiliser dans ces cas : {{c2::35 €}}.'
-  explication: Ils ne légalisent pas un arrêt en double file (qui reste un stationnement gênant). On les utilise aussi en cas de remorquage ou de panne.
+  texte: 'Les feux de détresse (warning) sont obligatoires quand on circule momentanément à allure fortement réduite ({{c1::dernier véhicule d''un bouchon}}) — ne pas les allumer : {{c2::35 €}} — et, avec le triangle, pour présignaler un véhicule immobilisé dangereux — défaut de présignalisation : {{c3::135 €}}.'
+  explication: 'Allure réduite : R416-18, 2e classe. Présignalisation d''un véhicule immobilisé dangereux : R416-19, 4e classe. Ils ne légalisent pas un arrêt en double file (qui reste un stationnement gênant).'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R416-18 et R416-19
@@ -115,12 +117,14 @@
   sous_theme: depassement
   source: Code de la route, art. R414-6 et R414-16
 - id: l-implantation-danger
+  dedup_ok: [aff-l-implantation-agglo-50, aff-r-descente-150m]
   texte: Les panneaux de danger (triangles) sont implantés à environ {{c1::150 m}} avant le danger hors agglomération, {{c2::50 m}} en agglomération (et 200 m sur autoroute) ; une distance différente est indiquée par un panonceau M1.
   explication: 'Question officielle 2023 : « la descente dangereuse à 15 % commence à environ 150 m » (OUI, hors agglomération). Les présignalisations de STOP (AB5) et de cédez-le-passage (AB3b) sont aussi implantées à 150 m.'
   theme: L
   sous_theme: signalisation
   source: IISR 2e partie, art. 28 ; Sécurité routière — Exemples de nouvelles questions (Q18, Q19)
 - id: l-balises-j10
+  dedup_ok: [aff-r-pn-150m]
   texte: 'À l''approche d''un passage à niveau hors agglomération, les balises J10 marquent la distance : {{c1::3 bandes}} rouges à 150 m (sur le panneau A7/A8), {{c2::2 bandes}} à 100 m, {{c3::1 bande}} à 50 m.'
   explication: 'Elles n''existent pas toujours en agglomération. Croix de Saint-André simple (G1) = une voie ; double (G1 bis) = plusieurs voies : un train peut en cacher un autre.'
   theme: L

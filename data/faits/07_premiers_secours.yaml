@@ -1,51 +1,52 @@
+# Thème A — Porter secours : repères chiffrés et ordres (P·A·S, numéros, distances, rythme RCP, sanctions).
 - id: pas-ordre
-  texte: 'Face à un accident, l''ordre des actions est : {{c1::Protéger}}, {{c2::Alerter}}, {{c3::Secourir}} (P·A·S).'
-  explication: Protéger d'abord pour éviter le suraccident (soi-même, les témoins, les victimes), alerter ensuite pour que les secours partent tôt, secourir enfin avec des gestes simples.
+  texte: "Face à un accident, l'ordre des actions est : {{c1::Protéger}}, {{c2::Alerter}}, {{c3::Secourir}} (P·A·S)."
+  explication: "Protéger d'abord pour éviter le suraccident (soi-même, les témoins, les victimes), alerter ensuite pour que les secours partent tôt, secourir enfin avec des gestes simples."
   theme: A
   sous_theme: pas
-  source: securite-routiere.gouv.fr — Que faire en cas d'accident ; Croix-Rouge française
+  source: "securite-routiere.gouv.fr — Que faire en cas d'accident ; Croix-Rouge française"
 - id: numeros-urgence
-  texte: 'Numéros d''urgence : {{c1::15}} = SAMU (urgence médicale), {{c2::17}} = police/gendarmerie, {{c3::18}} = sapeurs-pompiers, {{c4::112}} = numéro d''urgence européen (fonctionne dans toute l''UE, même sans crédit ni réseau de son opérateur).'
-  explication: 'Le 112 est le bon réflexe si l''on hésite : il redirige vers le service compétent. Il fonctionne depuis un téléphone verrouillé ou sans crédit, via n''importe quel réseau disponible.'
+  texte: "Numéros d'urgence : {{c1::15}} = SAMU (urgence médicale), {{c2::17}} = police/gendarmerie, {{c3::18}} = sapeurs-pompiers, {{c4::112}} = numéro d'urgence européen (fonctionne dans toute l'UE, même sans crédit ni réseau de son opérateur)."
+  explication: "Le 112 est le bon réflexe si l'on hésite : il redirige vers le service compétent. Il fonctionne depuis un téléphone verrouillé ou sans crédit, via n'importe quel réseau disponible."
   theme: A
   sous_theme: alerter
-  source: service-public.fr — Numéros d'urgence ; Code pénal, art. 223-6
+  source: "service-public.fr — Numéros d'urgence ; Code pénal, art. 223-6"
 - id: numero-114
-  texte: Le {{c1::114}} est le numéro d'urgence accessible par SMS ou visio, destiné aux personnes {{c2::sourdes ou malentendantes}}.
-  explication: Un automobiliste entendant utilise le 112, le 15, le 17 ou le 18 ; le 114 existe pour ne pas exclure les personnes qui ne peuvent pas téléphoner.
+  texte: "Le {{c1::114}} est le numéro d'urgence accessible par SMS ou visio, destiné aux personnes {{c2::sourdes ou malentendantes}}."
+  explication: "Un automobiliste entendant utilise le 112, le 15, le 17 ou le 18 ; le 114 existe pour ne pas exclure les personnes qui ne peuvent pas téléphoner."
   theme: A
   sous_theme: alerter
   importance: utile
-  source: service-public.fr — Numéros d'urgence
+  source: "service-public.fr — Numéros d'urgence"
 - id: borne-appel-autoroute
-  texte: Sur autoroute, les bornes d'appel d'urgence (orange) sont implantées environ tous les {{c1::2 km}} ; elles localisent automatiquement l'appel et mettent en relation avec le poste de sécurité.
-  explication: 'On les préfère au portable : les secours savent exactement où vous êtes et quel sens de circulation. Pour la rejoindre, marcher derrière la glissière, jamais sur la chaussée ni sur la bande d''arrêt d''urgence.'
+  texte: "Sur autoroute, les bornes d'appel d'urgence (orange) sont implantées environ tous les {{c1::2 km}} ; elles localisent automatiquement l'appel et mettent en relation avec le poste de sécurité."
+  explication: "Pour la rejoindre, marcher derrière la glissière, jamais sur la chaussée ni sur la bande d'arrêt d'urgence. En tunnel, les postes d'appel sont dans les niches de sécurité."
   theme: A
   sous_theme: alerter
-  source: securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA
+  source: "securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA"
 - id: message-alerte
-  texte: 'Un message d''alerte efficace donne : le {{c1::lieu précis}} (route, sens, point kilométrique ou repère), la nature de l''accident, le {{c2::nombre de victimes}} et leur état, les dangers particuliers (incendie, produits, voie coupée).'
-  explication: 'On ne raccroche jamais le premier : l''opérateur peut avoir des questions ou donner des consignes.'
+  texte: "Un message d'alerte efficace donne : le {{c1::lieu précis}} (route, sens, point kilométrique ou repère), la nature de l'accident, le {{c2::nombre de victimes}} et leur état, les dangers particuliers (incendie, produits, voie coupée)."
+  explication: "C'est d'après ce message que l'opérateur dimensionne les secours : on reste précis et calme, on s'identifie et on répond à ses questions."
   theme: A
   sous_theme: alerter
-  source: Croix-Rouge française — Alerter les secours ; securite-routiere.gouv.fr
+  source: "Croix-Rouge française — Alerter les secours ; securite-routiere.gouv.fr"
 - id: triangle-distance
-  texte: Le triangle de présignalisation se place à environ {{c1::30 m}} avant le véhicule (davantage avant un virage ou un sommet de côte), et toujours sur le bas-côté quand c'est possible.
-  explication: 'Sur autoroute, on ne le pose pas si cela oblige à marcher sur la chaussée ou la bande d''arrêt d''urgence : la priorité est de se mettre derrière la glissière. Le gilet se met avant de sortir du véhicule.'
+  texte: "Le triangle de présignalisation se place à environ {{c1::30 m}} avant le véhicule (davantage avant un virage ou un sommet de côte), et toujours sur le bas-côté quand c'est possible."
+  explication: "Sur route rapide, il se place plus loin (100 m et plus). Sur autoroute, on ne le pose pas si cela oblige à marcher sur la chaussée ou la bande d'arrêt d'urgence : la priorité est de se mettre derrière la glissière. Le gilet se met avant de sortir du véhicule."
   image:
     gen: triangle_distance
   theme: A
   sous_theme: proteger
-  source: Code de la route, art. R416-19 ; securite-routiere.gouv.fr
+  source: "Code de la route, art. R416-19 ; arrêté du 30 septembre 2008 ; Ornikar — Protéger la zone"
 - id: rcp-rythme
-  texte: 'Réanimation cardio-pulmonaire : {{c1::30}} compressions thoraciques puis {{c2::2}} insufflations, à un rythme de 100 à 120 compressions par minute, en attendant un défibrillateur (DAE) ou les secours.'
-  explication: On la pratique uniquement sur une victime inconsciente qui ne respire pas. Une victime inconsciente qui respire est mise en position latérale de sécurité (PLS).
+  texte: "Réanimation cardio-pulmonaire : {{c1::30}} compressions thoraciques puis {{c2::2}} insufflations, à un rythme de 100 à 120 compressions par minute, en attendant un défibrillateur (DAE) ou les secours."
+  explication: "On la pratique uniquement sur une victime inconsciente qui ne respire pas. Une victime inconsciente qui respire est mise en position latérale de sécurité (PLS)."
   theme: A
   sous_theme: secourir
-  source: Croix-Rouge française — Arrêt cardiaque
+  source: "Croix-Rouge française — Arrêt cardiaque"
 - id: non-assistance
-  texte: Ne pas porter secours à une personne en danger (sans risque pour soi) est un délit puni jusqu'à {{c1::5 ans}} de prison et {{c2::75 000 €}} d'amende.
-  explication: Alerter les secours suffit à remplir l'obligation. Quitter les lieux d'un accident que l'on a causé, c'est en plus un délit de fuite (6 points, 3 ans, 75 000 €).
+  texte: "Ne pas porter secours à une personne en danger (sans risque pour soi) est un délit puni jusqu'à {{c1::5 ans}} de prison et {{c2::75 000 €}} d'amende."
+  explication: "Alerter les secours suffit à remplir l'obligation. Quitter les lieux d'un accident que l'on a causé, c'est en plus un délit de fuite (6 points, 3 ans, 75 000 €)."
   theme: A
-  sous_theme: secourir
-  source: Code pénal, art. 223-6 ; Code de la route, art. L231-1 et L231-2
+  sous_theme: obligations
+  source: "Code pénal, art. 223-6 ; Code de la route, art. L231-1 et L231-2"

@@ -279,6 +279,13 @@
   theme: L
   sous_theme: panonceaux
   source: "IISR 1re partie, art. 9"
+- id: conf-j1-j3
+  a: j1
+  b: j3
+  difference: "Même piquet blanc, seule la bande change : **J1** bande **blanche** = balise de virage (elle suit le tracé du virage, à l'extérieur). **J3** bande **rouge** = balise d'intersection (posée de part et d'autre d'un carrefour hors agglomération, quel que soit le régime de priorité). Le délinéateur J6 porte une bande noire oblique et un catadioptre."
+  theme: L
+  sous_theme: balises
+  source: "IISR 1re partie (balises J1, J3, J6)"
 - id: conf-j4-j5
   a: j4
   b: j5

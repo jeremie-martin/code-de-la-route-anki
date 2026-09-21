@@ -1,0 +1,174 @@
+# M — La mécanique et les équipements : affirmations à juger VRAI/FAUX.
+# Priorité aux aides à la conduite (ADAS), sous-représentées en v1 alors que trois des vingt
+# questions officielles en relèvent (voyant ABS, assistance au stationnement, quitter un stationnement).
+- id: aff-m-voyant-orange-arret
+  contexte: Je roule sur route, un voyant orange s'allume au tableau de bord.
+  affirmation: Je dois m'arrêter sur-le-champ, au besoin sur la bande d'arrêt d'urgence.
+  verdict: faux
+  pourquoi: 'Orange = anomalie ou rappel : je poursuis en douceur et je fais vérifier rapidement. C''est le rouge (pression d''huile, température, freinage, batterie) qui impose de s''arrêter dès que possible en sécurité.'
+  theme: M
+  sous_theme: tableau_de_bord
+  source: Ornikar — Voyants lumineux ; En Voiture Simone — Tableau de bord
+- id: aff-m-autotest-voyants
+  contexte: Je mets le contact, plusieurs voyants s'allument puis s'éteignent.
+  affirmation: Un voyant qui ne s'allume pas du tout à ce moment-là est bon signe.
+  verdict: faux
+  pourquoi: 'À la mise du contact, tous les voyants doivent s''allumer brièvement : c''est l''autotest. Un voyant éteint signale une ampoule ou un témoin hors service, donc une alerte qui ne se déclenchera pas.'
+  theme: M
+  sous_theme: tableau_de_bord
+  source: lepermislibre — Voyants de la voiture
+- id: aff-m-voyant-abs-blocage
+  contexte: Le voyant ABS (orange) reste allumé en permanence (question officielle 2023, Q5).
+  affirmation: Lors d'un freinage d'urgence, les roues risquent de se bloquer.
+  verdict: vrai
+  pourquoi: 'L''antiblocage est hors service : le freinage ordinaire fonctionne, mais rien n''empêche plus les roues de se bloquer, donc de perdre la direction. J''allonge mes distances et je freine progressivement.'
+  theme: M
+  sous_theme: tableau_de_bord
+  source: Sécurité routière — Exemples de nouvelles questions (Q5)
+- id: aff-m-voyant-abs-arret
+  contexte: Le voyant ABS (orange) reste allumé en permanence (question officielle 2023, Q5).
+  affirmation: Je dois m'arrêter immédiatement.
+  verdict: faux
+  pourquoi: 'Non : le circuit de freinage classique fonctionne toujours. Je peux rouler jusqu''au garage en adaptant ma vitesse et mes distances, et je fais réparer sans tarder. Seul un voyant rouge impose l''arrêt.'
+  theme: M
+  sous_theme: tableau_de_bord
+  source: Sécurité routière — Exemples de nouvelles questions (Q5)
+- id: aff-m-abs-distance
+  affirmation: L'ABS réduit la distance de freinage.
+  verdict: faux
+  pourquoi: 'Il empêche le blocage des roues et conserve la directionnalité (on peut braquer pour éviter l''obstacle) ; la distance reste la même, et peut même s''allonger sur gravier ou sur neige.'
+  theme: M
+  sous_theme: freinage
+  source: securite-routiere.gouv.fr — Dépliant vitesse ; Ornikar — ABS
+- id: aff-m-abs-pedale
+  contexte: 'Freinage d''urgence : la pédale vibre fortement et repousse mon pied.'
+  affirmation: Je relâche un peu la pression pour laisser l'ABS travailler.
+  verdict: faux
+  pourquoi: 'Ces vibrations sont le fonctionnement normal de l''ABS. On écrase la pédale à fond et on la maintient sans relâcher, en braquant si nécessaire ; relâcher rallonge la distance d''arrêt.'
+  theme: M
+  sous_theme: freinage
+  source: securite-routiere.gouv.fr — Dépliant vitesse ; Ornikar — ABS
+- id: aff-m-abs-direction
+  contexte: Un obstacle surgit, je freine en urgence sur un véhicule équipé de l'ABS.
+  affirmation: Je peux continuer à braquer pendant le freinage pour contourner l'obstacle.
+  verdict: vrai
+  pourquoi: 'C''est tout l''intérêt de l''ABS : les roues ne se bloquent pas, donc elles continuent de diriger le véhicule. Sans ABS, des roues bloquées dérapent tout droit malgré le volant.'
+  theme: M
+  sous_theme: freinage
+  source: Stych — Aides à la conduite ; Ornikar — ABS
+- id: aff-m-frein-main-4-roues
+  affirmation: Le frein de stationnement agit sur les quatre roues.
+  verdict: faux
+  pourquoi: 'Il n''agit que sur les roues arrière. D''où la prudence en cas de panne de freins : on le serre progressivement, après avoir rétrogradé — tiré d''un coup sec, il met le véhicule en travers.'
+  theme: M
+  sous_theme: freinage
+  source: Ornikar — Frein à main ; Stych — Pannes
+- id: aff-m-pression-chaud
+  affirmation: La pression des pneus se contrôle après quelques kilomètres, quand ils sont chauds.
+  verdict: faux
+  pourquoi: 'Elle se contrôle à froid (plus de 2 h d''arrêt ou moins de 3 km). À chaud la pression monte : on ne dégonfle pas un pneu chaud, et si l''on doit gonfler à chaud on majore de 0,3 bar.'
+  theme: M
+  sous_theme: pneus
+  source: securite-routiere.gouv.fr — Pneus ; Michelin — Vérifier la pression
+- id: aff-m-chargement-pression
+  contexte: Coffre plein de valises pour un départ en vacances (question officielle 2023, Q1).
+  affirmation: Je diminue la pression des pneus pour gagner en confort.
+  verdict: faux
+  pourquoi: 'C''est l''inverse : on augmente la pression de 0,2 à 0,3 bar. Un pneu sous-gonflé sous une charge lourde s''échauffe, s''use sur les épaules et peut éclater ; on règle aussi la hauteur des feux.'
+  theme: M
+  sous_theme: pneus
+  source: Sécurité routière — Exemples de nouvelles questions (Q1) ; Michelin
+- id: aff-m-surgonflage
+  affirmation: Un pneu surgonflé s'use au centre de la bande de roulement et adhère moins.
+  verdict: vrai
+  pourquoi: 'Trop gonflé, le pneu bombe et ne porte plus que par le centre : surface de contact réduite, adhérence et confort dégradés. Sous-gonflé, c''est l''inverse : il s''use sur les épaules et chauffe.'
+  theme: M
+  sous_theme: pneus
+  source: Michelin — Usure des pneus ; Ornikar — Sous-gonflage
+- id: aff-m-pneus-neufs-arriere
+  contexte: Je ne fais remplacer que deux pneus sur quatre.
+  affirmation: Je fais monter les pneus neufs à l'arrière.
+  verdict: vrai
+  pourquoi: 'Les pneus les plus adhérents vont à l''arrière : un train arrière qui décroche part en survirage, bien plus difficile à rattraper qu''un sous-virage. Les deux pneus d''un même essieu doivent être identiques.'
+  theme: M
+  sous_theme: pneus
+  importance: utile
+  source: Michelin — Mixage des pneus ; Ornikar — Même essieu
+- id: aff-m-pneu-age
+  affirmation: Un pneu de plus de dix ans doit être remplacé, même s'il a très peu roulé.
+  verdict: vrai
+  pourquoi: 'La gomme vieillit et se fissure indépendamment du kilométrage. Le DOT à quatre chiffres (semaine et année) donne l''âge ; un contrôle professionnel s''impose dès cinq à six ans.'
+  theme: M
+  sous_theme: pneus
+  importance: utile
+  source: Allopneus — Durée de vie d'un pneu ; Ornikar — Vérifier le flanc
+- id: aff-m-4-saisons-3pmsf
+  contexte: Zone soumise à la loi Montagne, période hivernale.
+  affirmation: Des pneus 4 saisons marqués du symbole alpin 3PMSF comptent comme des pneus hiver.
+  verdict: vrai
+  pourquoi: 'Depuis le 1er novembre 2024, seul le marquage 3PMSF (montagne à trois pics et flocon) vaut pneu hiver ; un pneu 4 saisons qui le porte est accepté. Le seul marquage M+S ne suffit plus.'
+  theme: M
+  sous_theme: pneus
+  source: service-public.fr F19459 ; Code de la route, art. D314-8
+- id: aff-m-refroidissement-bouchon
+  contexte: Le voyant rouge de température s'allume, de la vapeur sort du capot.
+  affirmation: J'ouvre le bocal de liquide de refroidissement pour faire tomber la pression.
+  verdict: faux
+  pourquoi: 'Le circuit est sous pression à plus de 100 °C : l''ouvrir provoque un jet bouillant et des brûlures graves. On coupe le moteur, on attend une trentaine de minutes, puis on contrôle à froid.'
+  theme: M
+  sous_theme: entretien
+  source: Ornikar — Liquide de refroidissement
+- id: aff-m-boite-auto-p-arret
+  affirmation: Sur une boîte automatique, on n'engage P ou R qu'une fois le véhicule complètement arrêté.
+  verdict: vrai
+  pourquoi: 'Passer P ou R en mouvement abîme la transmission. On démarre en P ou N, pied sur le frein ; en descente on n''utilise pas N, qui supprime le frein moteur et le contrôle du véhicule.'
+  theme: M
+  sous_theme: entretien
+  source: Stych — La boîte automatique ; service-public.fr F2828
+- id: aff-m-feu-grille-nuit
+  contexte: Un feu de croisement est grillé, je dois rouler ce soir.
+  affirmation: Rouler ainsi la nuit peut entraîner l'immobilisation du véhicule.
+  verdict: vrai
+  pourquoi: 'Un feu défaillant est une contravention de 3e classe (68 €) avec immobilisation possible, surtout la nuit. Un seul phare rend aussi le véhicule difficile à identifier par les autres usagers.'
+  theme: M
+  sous_theme: feux
+  importance: utile
+  source: Code de la route, art. R313-2 et s. ; service-public.fr F19459
+- id: aff-m-stationnement-arriere
+  contexte: Ce conducteur va se ranger en créneau avec l'assistance au stationnement (question officielle 2023, Q8).
+  affirmation: Il n'a plus à surveiller la circulation vers l'arrière.
+  verdict: faux
+  pourquoi: 'Il doit surveiller vers l''avant comme vers l''arrière : la loi lui impose de garder le contrôle de la manœuvre et de pouvoir l''interrompre à tout instant (R412-6-3). Les capteurs ignorent un enfant ou un poteau fin.'
+  theme: M
+  sous_theme: adas
+  source: Sécurité routière — Exemples de nouvelles questions (Q8) ; Code de la route, art. R412-6-3
+- id: aff-m-regulateur-obstacle
+  contexte: Régulateur de vitesse enclenché sur route à 80 km/h.
+  affirmation: Le régulateur coupe l'accélération si un obstacle surgit devant moi.
+  verdict: faux
+  pourquoi: 'Un régulateur simple ne voit rien : il maintient la vitesse jusqu''à ce que je freine ou que je débraye. Seul le régulateur adaptatif (ACC), équipé d''un radar, conserve la distance avec le véhicule qui précède.'
+  theme: M
+  sous_theme: adas
+  source: Stych — Aides à la conduite ; Ornikar — Limiteur et régulateur
+- id: aff-m-regulateur-conditions
+  affirmation: Le régulateur de vitesse est déconseillé en circulation dense et sur chaussée glissante.
+  verdict: vrai
+  pourquoi: 'Il retarde la réaction (le pied quitte les pédales) et favorise l''hypovigilance ; sur sol glissant, la reprise d''accélération peut faire patiner. On le réserve aux voies rapides fluides, pied près des pédales.'
+  theme: M
+  sous_theme: adas
+  source: Stych — Aides à la conduite ; Ornikar — Limiteur et régulateur
+- id: aff-m-limiteur-descente
+  contexte: Limiteur réglé sur 90 km/h, longue descente.
+  affirmation: Le limiteur m'empêche de dépasser la vitesse affichée.
+  verdict: faux
+  pourquoi: 'Le limiteur n''agit que sur l''accélérateur, pas sur les freins : en descente, le véhicule prend de la vitesse malgré lui. Une accélération franche (kick-down) le force aussi à s''effacer.'
+  theme: M
+  sous_theme: adas
+  source: Ornikar — Limiteur et régulateur ; Stych — Aides à la conduite
+- id: aff-m-angle-mort-moto
+  affirmation: Le détecteur d'angle mort peut ne pas signaler une moto qui remonte vite la file voisine.
+  verdict: vrai
+  pourquoi: 'Les radars latéraux ont une portée limitée et détectent mal un usager étroit arrivant à grande vitesse. Le contrôle visuel par-dessus l''épaule reste la seule vérification fiable avant de se déporter.'
+  theme: M
+  sous_theme: adas
+  source: securite-routiere.gouv.fr — ADAS ; Stych — Nouvelles aides à la conduite

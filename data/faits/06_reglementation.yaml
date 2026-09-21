@@ -5,8 +5,8 @@
   sous_theme: points
   source: Code de la route, art. L223-1 et R223-1
 - id: d-probatoire-duree
-  texte: Le délai probatoire dure {{c1::3 ans}} (filière classique) ou {{c2::2 ans}} après une conduite accompagnée (AAC) ; le capital augmente de {{c3::2 points}} par an (6 → 8 → 10 → 12) — {{c4::3 points}} par an après AAC (6 → 9 → 12) — à condition de ne commettre aucune infraction avec retrait de points.
-  explication: 'Une seule infraction avec retrait de points interrompt la majoration. Pendant le probatoire : disque A à l''arrière, vitesses réduites (110/100/80), alcool 0,2 g/L.'
+  texte: Le délai probatoire dure {{c1::3 ans}} (filière classique) ou {{c2::2 ans}} après une conduite accompagnée (AAC) ; le capital de 6 points augmente de {{c3::2 points}} par an — {{c4::3 points}} par an après AAC — à condition de ne commettre aucune infraction avec retrait de points.
+  explication: 'La progression est donc 6 → 8 → 10 → 12 en filière classique et 6 → 9 → 12 après AAC ; une seule infraction avec retrait de points l''interrompt. Pendant le probatoire : disque A à l''arrière, vitesses réduites (110/100/80), alcool 0,2 g/L.'
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-1 et R223-1 ; service-public.fr F2390
@@ -18,14 +18,14 @@
   importance: utile
   source: Code de la route, art. L223-1 et R223-4-1 ; décret n° 2018-715 ; service-public.fr F2390
 - id: d-points-delit-cumul
-  texte: 'Un délit routier retire {{c1::6 points}} ; une contravention en retire au plus 6 ; plusieurs infractions constatées simultanément retirent au plus {{c2::8 points}} — seule exception : alcool + stupéfiants, {{c3::9 points}} (loi du 9 juillet 2025).'
-  explication: Les points sont retirés à la date du paiement de l'amende ou de la condamnation définitive, pas à la date de l'infraction. Aucun retrait pour une infraction commise à vélo, en trottinette ou à pied (véhicule sans permis exigé).
+  texte: 'Un délit routier retire {{c1::6 points}} ; plusieurs infractions constatées simultanément retirent au plus {{c2::8 points}} — seule exception : alcool + stupéfiants, {{c3::9 points}} (loi du 9 juillet 2025).'
+  explication: Une contravention aussi retire au plus 6 points. Les points sont retirés à la date du paiement de l'amende ou de la condamnation définitive, pas à la date de l'infraction. Aucun retrait pour une infraction commise à vélo, en trottinette ou à pied (véhicule sans permis exigé).
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-2 et L235-1 IV
 - id: d-probatoire-3-points
   texte: En permis probatoire, une infraction retirant au moins {{c1::3 points}} entraîne l'obligation de suivre un stage de sensibilisation dans les {{c2::4 mois}} (lettre 48N) ; la perte de la totalité des points (6 la 1re année) entraîne l'{{c3::invalidation}} du permis (lettre 48SI).
-  explication: Le stage obligatoire se substitue à l'amende (remboursée sur demande) et rend jusqu'à 4 points dans la limite du plafond. Un seul délit (alcool ≥ 0,8, stupéfiants, délit de fuite) ou une contravention à 6 points (alcool ≥ 0,2 en probatoire, priorité piéton) invalide le permis la première année.
+  explication: Le stage obligatoire remplace l'amende et rend jusqu'à 4 points, dans la limite du capital. La première année, un seul délit ou une contravention à 6 points (alcool ≥ 0,2 g/L, priorité piéton) suffit à invalider le permis.
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-6, R223-4, R223-8, L223-5
@@ -37,7 +37,7 @@
   source: Code de la route, art. L223-5 et L224-16 ; service-public.fr F1704
 - id: d-recuperation-points
   texte: 'Récupération automatique des points : {{c1::6 mois}} sans infraction pour un retrait d''un seul point ; {{c2::2 ans}} sans infraction pour retrouver 12 points si les infractions étaient des contraventions de 1re à 3e classe ; {{c3::3 ans}} si l''une d''elles est de 4e ou 5e classe ou un délit.'
-  explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès ≥ 20 km/h) sont de 4e classe → c''est souvent 3 ans. Règle des 10 ans : les points des contraventions des 4 premières classes reviennent au plus tard 10 ans après. Pas de reconstitution automatique pendant le probatoire : on récupère par la majoration annuelle ou par stage.'
+  explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès ≥ 20 km/h) sont de 4e classe → c''est souvent 3 ans. Pendant le probatoire, pas de reconstitution automatique : on récupère par la majoration annuelle ou par un stage.'
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-6 ; service-public.fr F1685
@@ -48,8 +48,8 @@
   sous_theme: points
   source: Code de la route, art. L223-6 et R223-8 ; service-public.fr F14208
 - id: d-consulter-points
-  texte: On consulte son solde de points sur le téléservice « {{c1::Mes Points Permis}} » (qui a remplacé Télépoints en novembre 2023) ; le permis B au format carte est valable {{c2::15 ans}} administrativement (renouvellement sans examen ni visite médicale).
-  explication: Le permis dématérialisé est disponible dans l'application France Identité depuis février 2024 et accepté aux contrôles en France (pas à l'étranger). Les anciens permis roses restent valables jusqu'au 19 janvier 2033.
+  texte: Le permis B au format carte est valable {{c1::15 ans}} administrativement (renouvellement sans examen ni visite médicale) ; on consulte son solde de points sur le téléservice « Mes Points Permis ».
+  explication: Le téléservice a remplacé Télépoints en novembre 2023. Le permis dématérialisé est disponible dans l'application France Identité depuis février 2024 et accepté aux contrôles en France (pas à l'étranger).
   theme: D
   sous_theme: documents
   importance: utile
@@ -62,13 +62,13 @@
   source: Code de la route, art. R211-3 et R211-5 ; service-public.fr F2826
 - id: d-permis-17-ans
   texte: Depuis le {{c1::1er janvier 2024}}, le permis B peut être obtenu et utilisé seul dès {{c2::17 ans}} (auparavant 18 ans) ; le permis AM (cyclomoteur, voiturette) s'obtient dès {{c3::14 ans}}.
-  explication: Le probatoire ne change pas (6 points, 3 ans ou 2 ans après AAC). La conduite supervisée (dès 18 ans, sans durée ni distance minimale) ne réduit pas le probatoire ; la conduite encadrée (dès 16 ans) concerne les élèves des métiers de la route.
+  explication: Le probatoire ne change pas (6 points, 3 ans ou 2 ans après AAC). La conduite supervisée (dès 18 ans) ne réduit pas le probatoire ; la conduite encadrée (dès 16 ans) vise les élèves des métiers de la route.
   theme: D
   sous_theme: permis
   source: Décret n° 2023-1214 du 20 décembre 2023 ; Code de la route, art. R221-5
 - id: d-formation-minimale
   texte: La formation pratique minimale au permis B est de {{c1::20 heures}} (dont au moins 15 h en circulation) ; {{c2::13 heures}} pour un permis sur boîte automatique (code 78), convertible en boîte manuelle après une formation de 7 h, sans délai depuis mars 2024.
-  explication: Le permis B autorise les véhicules ≤ 3,5 t et ≤ 9 places, une remorque ≤ 750 kg (ou plus si la somme des PTAC ≤ 3 500 kg ; B96 jusqu'à 4 250 kg ; BE au-delà), et les 125 cm³ après 2 ans de permis et une formation de 7 h.
+  explication: Le permis B autorise les véhicules de 3,5 t et 9 places au plus, et les 125 cm³ après 2 ans de permis et une formation de 7 h ; les règles de remorque font l'objet d'une carte dédiée.
   theme: D
   sous_theme: permis
   importance: utile
@@ -98,6 +98,7 @@
   sous_theme: sanctions
   source: Code de la route, art. R412-6-1, R412-6-2, L224-1 et L224-2
 - id: d-ceinture-sanction
+  dedup_ok: [aff-d-ceinture-passager-adulte]
   texte: 'Ceinture non attachée : le conducteur perd {{c1::3 points}} et paie 135 € ; un passager majeur non attaché paie {{c2::135 €}} lui-même, sans points ; pour un passager de moins de 18 ans (ou un enfant sans siège adapté), c''est le {{c3::conducteur}} qui paie 135 €, sans retrait de points.'
   explication: 'Piège fréquent : beaucoup de supports affichent « 3 points » pour l''enfant non attaché ; l''article R412-2 ne prévoit aucun retrait. Une ceinture par personne ; enfant de moins de 3 ans interdit sur un siège sans ceinture.'
   theme: D
@@ -116,6 +117,7 @@
   sous_theme: sanctions
   source: Code de la route, art. R413-14 ; décret n° 2023-1150 du 6 décembre 2023
 - id: d-grand-exces
+  dedup_ok: [aff-d-grand-exces-delit]
   texte: 'Un excès de vitesse de {{c1::50 km/h}} ou plus est, depuis le 29 décembre 2025, un {{c2::délit}} dès la première fois : 3 mois de prison, 3 750 € d''amende, {{c3::6 points}}, suspension jusqu''à 3 ans et confiscation possible (obligatoire en récidive).'
   explication: 'Avant (banque de questions 2023) : contravention de 5e classe (1 500 €, 6 points), délit seulement en récidive. Un excès ≥ 30 km/h est aussi l''une des circonstances aggravantes de l''homicide routier (loi du 9 juillet 2025).'
   theme: D
@@ -131,7 +133,7 @@
   source: Code de la route, art. R234-1
 - id: d-alcool-delit
   texte: Conduire avec au moins 0,8 g/L de sang (0,40 mg/L d'air) ou en état d'ivresse manifeste est un délit puni de {{c1::3 ans}} de prison et {{c2::9 000 €}} d'amende, {{c3::6 points}}, suspension jusqu'à 5 ans, annulation possible avec interdiction de repasser le permis jusqu'à 5 ans, confiscation du véhicule.
-  explication: 'Valeurs relevées par la loi du 9 juillet 2025 (avant : 2 ans, 4 500 € — la banque de questions et la page securite-routiere.gouv.fr peuvent encore les afficher). L''ivresse manifeste est depuis le 20 août 2026 un délit distinct (L237-1), aux mêmes peines. Récidive : annulation de plein droit et confiscation obligatoire. Refuser le dépistage = mêmes peines (3 ans, 9 000 € depuis août 2026).'
+  explication: 'Valeurs relevées par la loi du 9 juillet 2025 (avant : 2 ans et 4 500 €, que la banque 2023 peut encore afficher). L''ivresse manifeste est, depuis août 2026, un délit distinct (L237-1) aux mêmes peines, comme le refus de dépistage.'
   theme: D
   sous_theme: sanctions
   tags:
@@ -139,7 +141,7 @@
   source: Code de la route, art. L234-1, L234-2, L234-8, L237-1 (lois n° 2025-622 et n° 2026-798)
 - id: d-stupefiants-delit
   texte: 'Conduire après usage de stupéfiants (toute trace, sans seuil) : délit puni de {{c1::3 ans}} de prison et {{c2::9 000 €}}, 6 points, suspension jusqu''à 5 ans ; combiné à l''alcool : {{c3::5 ans}}, {{c4::15 000 €}} et 9 points.'
-  explication: 'Valeurs de la loi du 9 juillet 2025 (avant : 2 ans / 4 500 €, et 3 ans / 9 000 € en cumul). Dépistage salivaire possible à tout moment, obligatoire après un accident corporel ; le refus est puni comme un test positif. Concerne aussi cyclistes, trottinettes et accompagnateurs.'
+  explication: 'Valeurs de la loi du 9 juillet 2025 (avant : 2 ans et 4 500 €). Aucun seuil : toute trace suffit. Dépistage salivaire possible à tout moment, obligatoire après un accident corporel ; le refus est puni comme un test positif.'
   theme: D
   sous_theme: sanctions
   tags:
@@ -147,7 +149,7 @@
   source: Code de la route, art. L235-1 et L235-3 ; service-public.fr F2886
 - id: d-homicide-routier
   texte: 'La loi du 9 juillet 2025 a créé l''« {{c1::homicide routier}} » (code pénal, art. 221-18) : 7 ans de prison et 100 000 € d''amende avec une circonstance aggravante (alcool, stupéfiants, excès ≥ 30 km/h, téléphone en main, délit de fuite, refus d''obtempérer, sans permis…), 10 ans et 150 000 € avec deux ou plus.'
-  explication: 'Les « blessures routières » (ITT > 3 mois) sont punies de 5 ans / 75 000 €. Peines complémentaires : annulation du permis avec interdiction de le repasser pendant 5 à 10 ans. Sans circonstance aggravante, on reste dans l''homicide involontaire (5 ans, 75 000 €).'
+  explication: 'Les « blessures routières » (ITT > 3 mois) : 5 ans et 75 000 €. Peine complémentaire : annulation du permis, interdiction de le repasser pendant 5 à 10 ans. Sans circonstance aggravante, on reste dans l''homicide involontaire.'
   theme: D
   sous_theme: sanctions
   tags:
@@ -195,7 +197,7 @@
   source: Code de la route, art. L224-1, L224-2, L224-7 ; service-public.fr F1040
 - id: d-documents-bord
   texte: 'Documents à présenter à tout contrôle : le {{c1::permis de conduire}} (physique ou numérique France Identité), le {{c2::certificat d''immatriculation}} (carte grise), plus le gilet et le triangle ; la preuve d''assurance n''est plus exigée depuis le {{c3::1er avril 2024}} (contrôle via le Fichier des véhicules assurés).'
-  explication: 'Non-présentation immédiate : 11 €, puis 5 jours pour présenter les documents (sinon 135 €). Le « Mémo Véhicule Assuré » remis par l''assureur vaut présomption d''assurance pendant les 15 jours suivant la souscription, le temps de l''inscription au FVA. Le contrôle technique se prouve par le timbre sur la carte grise.'
+  explication: 'Non-présentation immédiate : 11 €, puis 5 jours pour présenter les documents (sinon 135 €). Le « Mémo Véhicule Assuré » remis à la souscription vaut présomption d''assurance pendant 15 jours. Le contrôle technique se prouve par le timbre sur la carte grise.'
   theme: D
   sous_theme: documents
   tags:
@@ -208,14 +210,14 @@
   sous_theme: documents
   source: Code de la route, art. R322-4, R322-5, R322-7 ; service-public.fr F21031
 - id: d-controle-technique
-  texte: 'Contrôle technique d''une voiture : premier contrôle dans les {{c1::6 mois}} précédant le {{c2::4e anniversaire}} de la première mise en circulation, puis tous les {{c3::2 ans}} ; pour vendre une voiture de plus de 4 ans, un contrôle de moins de {{c1::6 mois}} est exigé.'
-  explication: 'Défaillance majeure : contre-visite dans les 2 mois, le véhicule peut circuler ; défaillance critique : validité limitée au jour même. Défaut de CT : 135 €, sans points, immobilisation possible. Deux-roues motorisés et voiturettes : CT obligatoire depuis avril 2024 (5 ans, puis tous les 3 ans).'
+  texte: 'Contrôle technique d''une voiture : premier contrôle dans les {{c1::6 mois}} précédant le {{c2::4e anniversaire}} de la première mise en circulation, puis tous les {{c3::2 ans}} ; pour vendre une voiture d''occasion, le contrôle doit dater de moins de {{c1::6 mois}}.'
+  explication: 'Le contrôle de vente ne s''impose que pour une voiture de plus de 4 ans. Défaillance majeure : contre-visite sous 2 mois, le véhicule peut circuler ; défaillance critique : validité limitée au jour même. Défaut de CT : 135 €, sans points. Deux-roues et voiturettes : CT depuis avril 2024 (5 ans, puis tous les 3 ans).'
   theme: D
   sous_theme: documents
   source: Code de la route, art. R323-22 et R323-27 ; service-public.fr F2878
 - id: d-assurance-garanties
   texte: 'L''assurance obligatoire est la {{c1::responsabilité civile (« au tiers »)}} : elle couvre les dommages causés aux autres, jamais ceux du conducteur responsable ni de son véhicule (garanties facultatives : dommages tous accidents/« tous risques », vol, incendie, bris de glace, garantie du conducteur, assistance).'
-  explication: 'Le bonus-malus : coefficient de départ 1, −5 % par an sans accident responsable (bonus maximal 0,50 après 13 ans), +25 % par accident responsable (malus maximal 3,50). Jeune conducteur : surprime jusqu''à 100 % (50 % après AAC), réduite de moitié chaque année sans sinistre.'
+  explication: 'Bonus-malus : coefficient 1 au départ, −5 % par an sans accident responsable (jusqu''à 0,50), +25 % par accident responsable (jusqu''à 3,50). Jeune conducteur : surprime jusqu''à 100 % (50 % après AAC), réduite de moitié chaque année sans sinistre.'
   theme: D
   sous_theme: documents
   source: Code des assurances, art. L211-1, A121-1 et A121-1-1 ; service-public.fr F2655
@@ -227,7 +229,7 @@
   source: Code des assurances, art. L113-2 ; service-public.fr F2149
 - id: d-critair-prix
   texte: 'La vignette Crit''Air se commande uniquement sur certificat-air.gouv.fr (≈ {{c1::3,85 €}} en 2026), se colle en bas à droite du pare-brise et reste valable {{c2::toute la vie du véhicule}} ; circuler dans une ZFE avec un véhicule interdit ou sans vignette : {{c3::68 €}} (135 € pour un poids lourd).'
-  explication: 'Six classes : 0 (vert, électrique/hydrogène), 1 (violet), 2 (jaune), 3 (orange), 4 (bordeaux), 5 (gris), plus les non classés. Un diesel n''est jamais Crit''Air 1. Les ZFE sont maintenues : leur suppression votée en 2025 a été censurée par le Conseil constitutionnel (21 mai 2026).'
+  explication: 'Classes 0 (vert, électrique) à 5 (gris), plus les non classés ; un diesel n''est jamais Crit''Air 1. Les ZFE sont maintenues : leur suppression votée en 2025 a été censurée par le Conseil constitutionnel le 21 mai 2026.'
   theme: D
   sous_theme: documents
   tags:
@@ -235,7 +237,7 @@
   source: Code de la route, art. R318-2 et R411-19-1 ; service-public.fr F33371 ; décision CC n° 2026-903 DC
 - id: d-equipements-obligatoires
   texte: 'Équipements obligatoires à bord d''une voiture : un {{c1::gilet de haute visibilité}} à portée de main (à revêtir avant de sortir après un arrêt d''urgence) et un {{c2::triangle de présignalisation}} (à placer à ≈ 30 m, sauf danger sur autoroute) ; l''{{c3::éthylotest}} n''est plus obligatoire depuis mai 2020.'
-  explication: 'Ne pas avoir le gilet à portée de main : 11 € ; ne pas le porter en quittant le véhicule, ou ne pas présignaler un véhicule immobilisé dangereux : 135 €. Extincteur, trousse de secours, roue de secours et ampoules ne sont pas obligatoires (recommandés).'
+  explication: 'Gilet absent de l''habitacle : 11 € ; ne pas le porter en sortant, ou ne pas présignaler un véhicule immobilisé dangereux : 135 €. Extincteur, trousse de secours, roue de secours et ampoules ne sont pas obligatoires.'
   theme: D
   sous_theme: documents
   source: Code de la route, art. R416-19 ; décret n° 2020-605 ; service-public.fr F19459
@@ -247,21 +249,21 @@
   importance: utile
   source: Code de la route, art. R316-3-1
 - id: d-fourriere-abandon
-  texte: Un véhicule mis en fourrière est réputé abandonné après {{c1::15 jours}} (10 jours s'il a une faible valeur marchande) ; le stationnement abusif est constitué au-delà de {{c2::7 jours}} consécutifs au même endroit (35 €, fourrière possible).
+  texte: Un véhicule en fourrière est réputé abandonné {{c1::15 jours}} après la mise en demeure adressée au propriétaire (10 jours s'il est de faible valeur marchande) ; le stationnement abusif est constitué au-delà de {{c2::7 jours}} consécutifs au même endroit (35 €, fourrière possible).
   explication: 'La fourrière est possible pour tout stationnement gênant, très gênant, dangereux ou abusif. Anciens manuels : « 45 jours » — dépassé.'
   theme: D
   sous_theme: documents
   importance: utile
   source: Code de la route, art. L325-7 et R417-12
 - id: d-stats-tues
-  texte: En 2025, la route a tué {{c1::3 263}} personnes en France métropolitaine (≈ {{c2::9}} par jour, ordre de grandeur stable autour de 3 200 depuis 2019) ; environ {{c3::60 %}} des tués le sont hors agglomération, et {{c4::77 %}} sont des hommes.
-  explication: 'Bilan ONISR 2025 (publié en 2026). Autoroute : 8 % des tués (réseau le plus sûr au kilomètre). Les 18-24 ans ont un risque double de la moyenne. Facteurs principaux des accidents mortels : vitesse (29 %), alcool (21 %), inattention (13 %), stupéfiants (11 %).'
+  texte: En 2025, la route a tué {{c1::3 263}} personnes en France métropolitaine (environ 9 par jour, ordre de grandeur stable depuis 2019) ; environ {{c2::60 %}} des tués le sont hors agglomération.
+  explication: 'Bilan ONISR 2025. 77 % des tués sont des hommes ; l''autoroute ne compte que 8 % des tués. Facteurs principaux des accidents mortels : vitesse (29 %), alcool (21 %), inattention (13 %), stupéfiants (11 %).'
   theme: D
   sous_theme: statistiques
   importance: utile
   source: ONISR — Bilan 2025 de la sécurité routière (29 mai 2026)
 - id: d-stats-usagers
-  texte: 'Parts des tués en 2025 : voitures ≈ {{c1::47 %}}, deux-roues motorisés ≈ {{c2::21 %}}, piétons ≈ {{c3::15 %}}, cyclistes ≈ 7 %, trottinettes (EDPM) ≈ 2 % (en forte hausse).'
+  texte: 'Parts des tués en 2025 : voitures ≈ {{c1::47 %}}, deux-roues motorisés ≈ {{c2::21 %}}, piétons ≈ 15 %, cyclistes ≈ 7 %, trottinettes (EDPM) ≈ 2 % (en forte hausse).'
   explication: 'Piétons, cyclistes et EDPM (« modes doux ») représentent un quart des tués et plus d''un tiers des blessés graves : d''où l''insistance de l''examen sur les usagers vulnérables.'
   theme: D
   sous_theme: statistiques

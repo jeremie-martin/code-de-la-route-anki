@@ -1,0 +1,380 @@
+# L — Circulation : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
+# Priorités et signalisation sont les thèmes les plus échoués : les fausses affirmations reprennent
+# les distracteurs réels de l'épreuve (« je maintiens ma vitesse », « je peux », « puisque… »).
+- id: aff-l-chemin-terre
+  contexte: Intersection de campagne sans panneau ni feu.
+  affirmation: Un véhicule qui débouche d'un chemin de terre sur ma droite bénéficie de la priorité à droite.
+  verdict: faux
+  pourquoi: 'Il quitte un lieu non ouvert à la circulation publique : R415-9 l''oblige à céder le passage à tous, piétons du trottoir compris. Même règle pour un parking, une station-service ou une voie privée.'
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R415-9
+- id: aff-l-zone-30-priorite-droite
+  contexte: Je circule dans une zone 30 résidentielle.
+  affirmation: La priorité à droite ne s'y applique pas, puisque la zone impose déjà une vitesse réduite.
+  verdict: faux
+  pourquoi: 'La zone 30 ne change que la vitesse et le partage de la voirie. Sans panneau, feu ni agent, la priorité à droite reste la règle (R415-5) : elle y surprend d''autant plus que les rues se ressemblent.'
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R415-5 et R110-2
+- id: aff-l-priorite-droite-rue-etroite
+  contexte: J'arrive sur une large avenue non prioritaire ; une ruelle étroite débouche à ma droite.
+  affirmation: Ma voie étant nettement plus importante, je passe avant le véhicule qui sort de la ruelle.
+  verdict: faux
+  pourquoi: 'La largeur ou l''importance apparente des routes n''entre pas dans la règle : sans panneau ni feu, le conducteur venant de gauche cède (R415-5). Seul un panneau de priorité (AB2, AB6) changerait l''ordre de passage.'
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R415-5
+- id: aff-l-stop-rien-ne-vient
+  contexte: J'aborde un STOP ; la route transversale est parfaitement dégagée.
+  affirmation: Un net ralentissement suffit, puisque l'arrêt n'apporterait rien de plus.
+  verdict: faux
+  pourquoi: 'R415-6 impose l''arrêt absolu à la ligne, roues immobiles, même sans trafic — 135 € et 4 points. Le STOP est posé précisément là où la visibilité ne s''obtient qu''à l''arrêt.'
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R415-6
+- id: aff-l-stop-avancer
+  contexte: Je suis arrêté à la ligne du STOP, mais des véhicules en stationnement masquent la rue transversale.
+  affirmation: Je peux ensuite avancer lentement au-delà de la ligne pour voir avant de m'engager.
+  verdict: vrai
+  pourquoi: 'L''arrêt à la ligne est obligatoire ; une fois marqué, on progresse au pas jusqu''à voir, puis on cède le passage. Ce second temps est la manœuvre attendue, pas une infraction.'
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R415-6 ; REMC
+- id: aff-l-cedez-arret
+  contexte: Panneau cédez-le-passage (triangle pointe en bas) et route transversale libre.
+  affirmation: Je dois marquer un arrêt avant de m'engager.
+  verdict: faux
+  pourquoi: 'Le cédez-le-passage n''impose que de laisser passer les usagers de la route abordée : si elle est libre, je m''engage sans m''arrêter. C''est le STOP (octogone) qui impose l''arrêt complet.'
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R415-7
+- id: aff-l-vehicule-a-stop
+  contexte: Vue de dessus. Le véhicule A aborde l'intersection par une route portant un STOP ; le véhicule B circule sur la route transversale.
+  affirmation: Le véhicule A doit céder le passage de chaque côté.
+  verdict: vrai
+  pourquoi: 'Question officielle 2023 (Q2) : le STOP oblige à s''arrêter puis à céder le passage à tous les usagers de la route abordée, à gauche comme à droite. Elle répond aussi OUI à « A est prioritaire sur B ».'
+  theme: L
+  sous_theme: priorites
+  source: Sécurité routière — Exemples de nouvelles questions (Q2) ; Code de la route, art. R415-6
+- id: aff-l-tourner-gauche-centre
+  contexte: Je tourne à gauche à un carrefour sans feu ; un flot continu arrive en face.
+  affirmation: Je peux avancer et attendre au milieu du carrefour, clignotant allumé, roues droites.
+  verdict: vrai
+  pourquoi: 'Se placer près de l''axe et attendre au centre est la manœuvre attendue : elle libère la voie derrière moi. Roues droites pour ne pas être projeté dans le sens inverse en cas de choc arrière.'
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R415-4 ; REMC
+- id: aff-l-giratoire-sortie-cede
+  contexte: Je circule déjà dans l'anneau d'un giratoire et je vais poursuivre au-delà de la prochaine sortie.
+  affirmation: Le véhicule qui attend à cette entrée doit me laisser passer.
+  verdict: vrai
+  pourquoi: 'Au carrefour à sens giratoire (AB25 + cédez-le-passage), ceux qui entrent cèdent le passage à ceux qui circulent sur l''anneau (R415-10). Je signale néanmoins clairement que je ne sors pas.'
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R415-10
+- id: aff-l-giratoire-depassement
+  contexte: Giratoire à deux voies ; une voiture roule devant moi sur l'anneau.
+  affirmation: Je peux la dépasser en utilisant la seconde voie, puisque l'anneau est large.
+  verdict: faux
+  pourquoi: 'Un giratoire est une intersection : R414-11 y interdit le dépassement, sauf celui d''un deux-roues. Changer de voie pour se placer avant sa sortie reste autorisé en signalant, dépasser non.'
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R414-11 et R412-9
+- id: aff-l-pieton-intention
+  dedup_ok: [aff-u-pieton-telephone]
+  contexte: Un piéton se tient sur le trottoir, tourné vers la chaussée, à un pas d'un passage piéton.
+  affirmation: Tant qu'il n'a pas posé le pied sur la chaussée, je n'ai pas à m'arrêter.
+  verdict: faux
+  pourquoi: 'R415-11 : je cède le passage au piéton engagé ou qui manifeste clairement l''intention de traverser (regard, pas vers le bord). Refus de priorité au piéton : 135 € et 6 points.'
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R415-11
+- id: aff-l-feu-vert-priorite
+  contexte: Mon feu passe au vert à un carrefour de centre-ville.
+  affirmation: Le vert me donne la priorité sur tous les autres usagers du carrefour.
+  verdict: faux
+  pourquoi: 'Le vert autorise le passage sans primer sur les piétons déjà engagés, sur un véhicule prioritaire en intervention ni sur un tramway ; et je ne m''engage pas si le carrefour risque de rester bloqué (R412-33).'
+  theme: L
+  sous_theme: feux
+  source: Code de la route, art. R412-33 et R415-11
+- id: aff-l-jaune-accelerer
+  contexte: Le feu passe au jaune fixe alors que je suis encore à bonne distance de la ligne d'arrêt.
+  affirmation: J'accélère pour dégager le carrefour avant le rouge.
+  verdict: faux
+  pourquoi: 'R412-31 : le jaune fixe impose l''arrêt. Accélérer « pour passer à l''orange » est une faute (35 €) et la cause classique des collisions latérales avec le flux qui démarre en face.'
+  theme: L
+  sous_theme: feux
+  source: Code de la route, art. R412-31
+- id: aff-l-jaune-trop-engage
+  contexte: Le feu passe au jaune fixe alors que je suis à quelques mètres de la ligne d'arrêt.
+  affirmation: Je continue et je dégage le carrefour, sans accélérer.
+  verdict: vrai
+  pourquoi: 'R412-31 prévoit l''exception : on ne s''arrête pas si l''arrêt ne peut plus se faire « dans des conditions de sécurité suffisantes » — freinage brutal, véhicule collé derrière.'
+  theme: L
+  sous_theme: feux
+  source: Code de la route, art. R412-31
+- id: aff-l-continue-cyclomoteur
+  contexte: Route à ligne continue, bonne visibilité ; un cyclomoteur roule à 40 km/h devant moi.
+  affirmation: Je peux chevaucher la ligne continue pour le dépasser, comme pour un cycliste.
+  verdict: faux
+  pourquoi: 'R412-19 réserve ce chevauchement au dépassement d''un cycle, d''un EDPM ou d''un cyclomobile léger. Un cyclomoteur ou une moto n''en bénéficient pas : j''attends une ligne discontinue.'
+  theme: L
+  sous_theme: depassement
+  source: Code de la route, art. R412-19
+- id: aff-l-files-droite
+  contexte: Circulation dense sur une avenue à trois voies dans le même sens ; ma file avance plus vite que celle de gauche.
+  affirmation: Je suis en train de dépasser par la droite, ce qui est interdit.
+  verdict: faux
+  pourquoi: 'R414-15 : quand la circulation est établie en files, avancer plus vite que la file voisine n''est pas un dépassement. Je reste dans ma file et je ne me déporte pas pour gagner une place.'
+  theme: L
+  sous_theme: depassement
+  source: Code de la route, art. R414-15 et R412-24
+- id: aff-l-surdepassement
+  contexte: Le véhicule devant moi est lui-même en train d'en dépasser un autre.
+  affirmation: Je peux le dépasser à mon tour puisque la voie de gauche reste libre.
+  verdict: faux
+  pourquoi: 'R414-4 exige de pouvoir se rabattre sans gêner et de ne pas gêner celui qu''on dépasse : un véhicule en plein dépassement peut s''écarter ou se rabattre à tout instant. Le surdépassement est un accident classique.'
+  theme: L
+  sous_theme: depassement
+  source: Code de la route, art. R414-4
+- id: aff-l-depassement-intersection-prioritaire
+  contexte: Je circule sur une route prioritaire (losange jaune) et j'approche d'un carrefour, bonne visibilité.
+  affirmation: Je peux y dépasser la voiture qui me précède.
+  verdict: vrai
+  pourquoi: 'R414-11 interdit le dépassement aux intersections, sauf pour celui qui y est prioritaire (route prioritaire, ou STOP et cédez-le-passage pour les autres), aux carrefours à feux ou réglés par un agent.'
+  theme: L
+  sous_theme: depassement
+  source: Code de la route, art. R414-11
+- id: aff-l-3-voies-gauche
+  contexte: Route à trois voies à double sens ; je veux dépasser un camion.
+  affirmation: Je peux utiliser la voie la plus à gauche si elle est libre sur toute la longueur.
+  verdict: faux
+  pourquoi: 'R414-8 : sur une chaussée à double sens de plus de deux voies, la voie la plus à gauche est réservée au sens inverse. On dépasse par la voie centrale, utilisable dans les deux sens, et on la quitte aussitôt.'
+  theme: L
+  sous_theme: depassement
+  source: Code de la route, art. R414-8
+- id: aff-l-4-voies-double-sens
+  contexte: Route à quatre voies à double sens, sans terre-plein central (deux voies par sens).
+  affirmation: Je dépasse par la voie de gauche de mon sens, pas par celles d'en face.
+  verdict: vrai
+  pourquoi: 'Chaque sens dispose de deux voies : celle de gauche sert au dépassement, puis je me replace à droite. Franchir l''axe reviendrait à circuler à contresens (135 €, 3 points).'
+  theme: L
+  sous_theme: depassement
+  source: Code de la route, art. R412-9 et R414-7
+- id: aff-l-b3-deux-roues
+  contexte: Panneau rond « interdiction de dépasser » (B3) sur une route à double sens.
+  affirmation: Je peux encore dépasser une moto solo ou un cycliste si les conditions le permettent.
+  verdict: vrai
+  pourquoi: 'B3 interdit de dépasser les véhicules à moteur autres que les deux-roues sans side-car : motos solo, cyclomoteurs, vélos et véhicules à traction animale restent dépassables, visibilité et écart latéral respectés.'
+  theme: L
+  sous_theme: depassement
+  source: IISR 4e partie (B3) ; Code de la route, art. R414-14
+- id: aff-l-klaxon-nuit
+  contexte: Hors agglomération, de nuit, je m'apprête à dépasser un véhicule lent.
+  affirmation: J'avertis de préférence par un appel de phares plutôt qu'au klaxon.
+  verdict: vrai
+  pourquoi: 'R416-2 : la nuit, l''avertissement se donne par l''allumage intermittent des feux, le klaxon restant réservé à l''absolue nécessité. Le clignotant gauche demeure l''annonce principale du dépassement.'
+  theme: L
+  sous_theme: depassement
+  source: Code de la route, art. R416-1 et R416-2
+- id: aff-l-klaxon-hors-agglo
+  contexte: En plein jour, hors agglomération, sur une petite route sinueuse.
+  affirmation: Je peux utiliser l'avertisseur sonore pour annoncer mon approche dans un virage sans visibilité.
+  verdict: vrai
+  pourquoi: 'Hors agglomération, le klaxon sert à donner « les avertissements nécessaires » (R416-1), brièvement. En agglomération, il est réservé au danger immédiat ; les avertisseurs à sons multiples sont interdits.'
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R416-1 et R416-3
+- id: aff-l-voie-milieu-autoroute
+  contexte: Autoroute à trois voies, circulation très fluide ; je roule sur la voie du milieu à 130 km/h.
+  affirmation: Je peux y rester tant que je respecte la vitesse maximale.
+  verdict: faux
+  pourquoi: 'R412-23 impose d''emprunter la voie la plus à droite et de ne franchir les lignes que pour dépasser. Les voies de gauche servent au dépassement — je me replace à droite dès que c''est possible.'
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R412-23
+- id: aff-l-ilot-droite
+  contexte: Un îlot directionnel (refuge peint ou surélevé) sépare la chaussée devant moi.
+  affirmation: Je le contourne par la droite, sauf indication contraire de la signalisation.
+  verdict: vrai
+  pourquoi: 'R412-27 : tout obstacle, îlot, terre-plein ou borne se contourne par la droite, sauf si une flèche ou un panneau impose l''inverse. Les hachures qui le prolongent sont interdites à la circulation.'
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R412-27
+- id: aff-l-voie-preselection
+  contexte: Je me suis engagé dans une voie de présélection dont la flèche au sol impose de tourner à droite.
+  affirmation: Arrivé au carrefour, je peux continuer tout droit si personne ne me gêne.
+  verdict: faux
+  pourquoi: 'R412-26 : la flèche directionnelle impose de suivre la direction indiquée. On peut encore changer de voie tant que la ligne de séparation est discontinue, plus une fois arrivé à la ligne d''arrêt.'
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R412-26
+- id: aff-l-detresse-pluie
+  contexte: Forte pluie sur autoroute ; je roule à 90 km/h dans le flux.
+  affirmation: J'allume mes feux de détresse pour être mieux vu des véhicules qui me suivent.
+  verdict: faux
+  pourquoi: 'Les feux de détresse signalent un véhicule immobilisé ou une allure fortement réduite (dernier d''un bouchon). En roulant, ils neutralisent mes clignotants et brouillent le message. Sous la pluie, ce sont les feux de croisement.'
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R416-18 et R416-4
+- id: aff-l-demi-tour-giratoire
+  contexte: Je me suis trompé de direction sur une route à double sens ; un giratoire se présente.
+  affirmation: Faire le tour complet du giratoire pour repartir en sens inverse est autorisé.
+  verdict: vrai
+  pourquoi: 'Aucun texte ne l''interdit et c''est la façon la plus sûre de faire demi-tour, sans traverser la chaussée en sens inverse. Je signale ma sortie comme pour n''importe quelle autre.'
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R415-10 ; REMC
+- id: aff-l-demi-tour-ligne-continue
+  contexte: Route à double sens séparée par une ligne continue.
+  affirmation: Je peux y faire demi-tour si la visibilité est bonne dans les deux sens.
+  verdict: faux
+  pourquoi: 'Le demi-tour suppose de franchir la ligne continue, ce qui est interdit (R412-19 : 135 €, 3 points). J''attends une section à ligne discontinue, une intersection ou un giratoire.'
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R412-19 et R412-20
+- id: aff-l-croisement-depasseur-en-face
+  contexte: Route à double sens ; en face, une voiture a entrepris un dépassement et arrive sur ma voie.
+  affirmation: Je maintiens ma vitesse et ma trajectoire, puisque c'est elle qui est en faute.
+  verdict: faux
+  pourquoi: 'Le réflexe attendu est de ralentir et de serrer à droite pour lui laisser de la place : avoir raison ne protège pas d''un choc frontal. R414-1 impose de serrer à droite, R413-17 de rester maître de sa vitesse.'
+  theme: L
+  sous_theme: croisement
+  source: Code de la route, art. R414-1 et R413-17
+- id: aff-l-ligne-jaune-discontinue
+  contexte: Une ligne jaune discontinue est peinte sur la bordure du trottoir.
+  affirmation: Je peux m'y arrêter le temps de laisser descendre un passager, mais pas y stationner.
+  verdict: vrai
+  pourquoi: 'Ligne jaune discontinue = stationnement interdit, arrêt autorisé (équivalent au sol du panneau B6a1). La ligne jaune continue, elle, interdit l''arrêt comme le stationnement (B6d).'
+  theme: L
+  sous_theme: stationnement
+  source: IISR 7e partie art. 118-2
+- id: aff-l-5m-passage
+  contexte: Une place se libère juste avant un passage piéton, sans emplacement marqué au sol.
+  affirmation: Je peux m'y garer tant que mon véhicule n'empiète pas sur le passage.
+  verdict: faux
+  pourquoi: 'Le stationnement est très gênant dans les 5 m en amont d''un passage piéton (135 €) : un véhicule arrêté là masque le piéton qui s''engage. Les emplacements matérialisés sont tolérés jusqu''au 31 décembre 2026.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-11
+- id: aff-l-sens-unique-gauche
+  contexte: Rue à sens unique, sans marquage ni panneau de stationnement.
+  affirmation: Je peux stationner du côté gauche de la chaussée.
+  verdict: vrai
+  pourquoi: 'R417-1 : dans une rue à sens unique, le stationnement est admis à droite comme à gauche, sauf arrêté ou signalisation contraire. Sur une chaussée à double sens, seul le côté droit est permis.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-1
+- id: aff-l-bau-appel
+  contexte: Sur autoroute, mon téléphone sonne ; la bande d'arrêt d'urgence est dégagée.
+  affirmation: Je peux m'y arrêter le temps de l'appel, feux de détresse allumés.
+  verdict: faux
+  pourquoi: 'La BAU n''est ouverte qu''à la nécessité absolue (panne, malaise, secours) : un arrêt de confort y est un stationnement gênant, et c''est l''un des endroits les plus meurtriers de l''autoroute.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R421-7 et R417-10
+- id: aff-l-arret-moteur-tournant
+  contexte: J'attends quelqu'un dix minutes au volant, moteur tournant, le long du trottoir.
+  affirmation: Il s'agit d'un arrêt, pas d'un stationnement.
+  verdict: faux
+  pourquoi: 'R110-2 : l''arrêt est l''immobilisation momentanée le temps d''une montée, d''une descente ou d''un chargement. Attendre, même au volant et moteur tournant, est un stationnement — soumis à toutes les interdictions de stationner.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R110-2
+- id: aff-l-arret-chargement
+  contexte: Je charge des cartons dans mon coffre, à côté de mon véhicule, pendant cinq minutes.
+  affirmation: Il s'agit d'un arrêt, tant que je reste à proximité pour pouvoir déplacer le véhicule.
+  verdict: vrai
+  pourquoi: 'R110-2 : l''arrêt couvre la montée et la descente de personnes et le chargement ou déchargement, conducteur aux commandes ou à proximité. Là où l''arrêt est interdit (ligne jaune continue, B6d), il l''est aussi.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R110-2
+- id: aff-l-trottoir-moto
+  contexte: Une moto est garée en travers sur un large trottoir.
+  affirmation: Pour un deux-roues motorisé, le stationnement sur trottoir échappe à toute sanction.
+  verdict: faux
+  pourquoi: 'R417-10 : c''est un stationnement gênant (35 €, fourrière possible). Les motos et cyclomoteurs échappent seulement au « très gênant » à 135 € prévu pour les autres véhicules motorisés.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-10
+- id: aff-l-genant-fourriere
+  contexte: Mon véhicule est en stationnement seulement « gênant » (35 €).
+  affirmation: Il peut malgré tout être emmené en fourrière.
+  verdict: vrai
+  pourquoi: 'La fourrière est possible pour tout stationnement gênant, très gênant, dangereux ou abusif (plus de 7 jours au même point) : les frais d''enlèvement et de garde s''ajoutent à l''amende.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-9 à R417-12 ; L325-1
+- id: aff-l-zone-rencontre-stationnement
+  contexte: Zone de rencontre (panneau B52), chaussée large et dégagée.
+  affirmation: Je peux y stationner ailleurs que sur les emplacements marqués si je ne gêne personne.
+  verdict: faux
+  pourquoi: 'R417-10 : dans une zone de rencontre comme dans une aire piétonne, le stationnement hors des emplacements aménagés est gênant (35 €). La chaussée y est partagée avec les piétons, prioritaires partout.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-10 et R110-2
+- id: aff-l-probatoire-pluie-autoroute
+  contexte: Permis probatoire, autoroute limitée à 130 km/h, il pleut.
+  affirmation: Je dois rouler à 100 km/h au lieu de 110.
+  verdict: faux
+  pourquoi: 'Sous la pluie, l''autoroute passe à 110 km/h pour tout le monde (R413-2 II) et la limite probatoire y est déjà de 110 (R413-5) : les deux se rejoignent, la vitesse reste 110.'
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-2 II et R413-5
+- id: aff-l-90-departement
+  contexte: Route à double sens hors agglomération, sans terre-plein ni panneau de limitation.
+  affirmation: Je peux rouler à 90 km/h puisque aucun panneau n'abaisse la vitesse.
+  verdict: faux
+  pourquoi: 'Depuis le 1er juillet 2018, la limite par défaut est de 80 km/h (R413-2). Les départements qui l''ont relevée à 90 doivent le signaler par des panneaux : sans panneau, c''est 80.'
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-2
+- id: aff-l-creneau-90
+  contexte: Route hors agglomération limitée à 80 ; une section à deux voies dans mon sens (créneau de dépassement) commence.
+  affirmation: Je peux y rouler à 90 km/h sur ces voies.
+  verdict: vrai
+  pourquoi: 'R413-2 relève la vitesse à 90 km/h sur les sections comportant au moins deux voies affectées au même sens, sur ces seules voies. Le sens à une voie reste à 80, et le permis probatoire aussi.'
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-2 I 3° et R413-5
+- id: aff-l-lieu-dit
+  contexte: Sur une route de campagne, un panneau à lettres italiques blanches sur fond noir annonce « Les Granges ».
+  affirmation: À partir de ce panneau, je suis en agglomération et limité à 50 km/h.
+  verdict: faux
+  pourquoi: 'C''est un panneau de lieu-dit (E31), sans effet réglementaire. Seul le panneau d''entrée d''agglomération EB10 — nom sur fond blanc bordé de rouge — déclenche les 50 km/h et les autres règles d''agglomération.'
+  theme: L
+  sous_theme: vitesse
+  source: IISR 5e partie art. 99-3 ; Code de la route, art. R110-2
+- id: aff-l-agglo-50-panneau
+  contexte: Je franchis le panneau d'entrée d'agglomération ; aucun panneau de limitation ne suit.
+  affirmation: Je suis limité à 50 km/h dès ce panneau.
+  verdict: vrai
+  pourquoi: 'R413-3 : le panneau d''entrée d''agglomération vaut à lui seul limitation à 50 km/h, jusqu''au panneau de sortie. Le maire peut abaisser (zone 30, 30 généralisé) ou relever à 70 sur certaines sections.'
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-3
+- id: aff-l-vitesse-sous-limite
+  contexte: Rue de centre-ville limitée à 50, sortie d'école, nombreux piétons ; je roule à 48 km/h.
+  affirmation: Je peux être verbalisé alors même que je respecte la limitation.
+  verdict: vrai
+  pourquoi: 'R413-17 : les vitesses maximales ne valent qu''en conditions optimales, et le conducteur doit réduire son allure devant une école, des piétons, un virage ou une chaussée glissante. Vitesse inadaptée : 135 €.'
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-17
+- id: aff-l-zone-30-portee
+  contexte: J'entre dans une zone 30 (panneau B30) puis je traverse deux intersections.
+  affirmation: La limitation cesse de s'appliquer dès la première intersection franchie.
+  verdict: faux
+  pourquoi: 'Une zone (30, de rencontre, piétonne, ZFE) vaut jusqu''au panneau de fin de zone, intersections comprises. C''est la prescription posée par un panneau isolé qui tombe à la prochaine intersection.'
+  theme: L
+  sous_theme: signalisation
+  source: IISR 1re partie art. 8 ; Code de la route, art. R110-2
+- id: aff-l-implantation-agglo-50
+  contexte: En agglomération, un panneau triangulaire annonce un passage pour piétons.
+  affirmation: Le passage se situe à environ 150 m.
+  verdict: faux
+  pourquoi: 'En agglomération, les panneaux de danger sont implantés à environ 50 m du danger ; les 150 m valent hors agglomération (200 m sur autoroute). Un panonceau M1 indique toute autre distance.'
+  theme: L
+  sous_theme: signalisation
+  source: IISR 2e partie art. 28 ; Sécurité routière — Exemples de nouvelles questions (Q18, Q19)

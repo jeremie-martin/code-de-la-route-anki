@@ -39,7 +39,15 @@ BUILD_DIR = OUT / "_build"
 
 THEMES = set(M.THEME_NAMES)
 IMPORTANCE = {"essentiel", "utile", "rare"}
-KINDS = ["reconnaissance", "confusions", "faits", "questions", "scenarios"]
+KINDS = ["reconnaissance", "confusions", "faits", "questions", "affirmations", "scenarios"]
+# Card-quality limits (see docs/05-audit-v2.md §2.1, §2.3): a card that needs more words than this is a
+# sheet, not a card, and must be split. `long_ok: true` on a note documents a deliberate exception.
+MAX_ANSWER_WORDS = 40        # questions.reponse
+MAX_ANSWER_ITEMS = 4         # enumerated elements in questions.reponse
+MAX_AFFIRMATION_WORDS = 32   # affirmations.affirmation
+MAX_POURQUOI_WORDS = 45      # affirmations.pourquoi
+MAX_RECON_BACK_WORDS = 90    # signification + conduite + complement + piege
+AFF_BALANCE = (0.35, 0.65)   # share of 'vrai' per affirmations file
 TYPE_QUESTION = {
     "panneau": "Que signifie ce panneau ?",
     "panonceau": "Que signifie ce panonceau ?",
@@ -58,33 +66,52 @@ class DataError(Exception):
 
 
 # ------------------------------------------------------------------ load ---
-# Insertion order = order in which Anki introduces new cards. Recognition files are ordered
-# pedagogically (danger -> priorité -> interdiction -> ... -> voyants); other kinds follow their
-# numeric file prefixes. Within a file, essential notes come before useful and rare ones.
+# Pedagogical order of the recognition files inside the "signalisation" track of the curriculum
+# (see curriculum()): priority signs early because the priority scenarios depend on them, lights and
+# markings before the overtaking scenarios, agents (autres) with the lights.
 RECON_ORDER = ["panneaux_danger", "panneaux_priorite", "panneaux_interdiction", "panneaux_obligation", "panneaux_fin",
-               "panneaux_zones", "panneaux_indication", "panneaux_localisation", "panneaux_direction", "panonceaux",
-               "balises", "passage_a_niveau", "temporaire", "voies_reservees", "panneaux_services", "feux", "marquages",
-               "autres", "voyants"]
+               "panneaux_zones", "feux", "autres", "marquages", "panneaux_indication", "panneaux_localisation",
+               "panonceaux", "passage_a_niveau", "temporaire", "balises", "panneaux_direction", "voies_reservees",
+               "panneaux_services", "voyants"]
 IMPORTANCE_RANK = {"essentiel": 0, "utile": 1, "rare": 2}
 
 
 def load_all() -> dict[str, list[dict]]:
+    """Load every YAML file; file order is preserved (the curriculum decides the study order)."""
     data = {k: [] for k in KINDS}
     for kind in KINDS:
-        files = sorted((DATA / kind).glob("*.yaml"))
+        d = DATA / kind
+        files = sorted(d.glob("*.yaml")) if d.exists() else []
         if kind == "reconnaissance":
             files.sort(key=lambda f: (RECON_ORDER.index(f.stem) if f.stem in RECON_ORDER else 99, f.stem))
         for f in files:
             items = yaml.safe_load(f.read_text(encoding="utf-8")) or []
             if not isinstance(items, list):
                 raise DataError(f"{f}: expected a list")
-            for it in items:
+            for i, it in enumerate(items):
                 if not isinstance(it, dict):
                     raise DataError(f"{f}: entrée non structurée {it!r}")
                 it["_file"] = f.name
-            items.sort(key=lambda it: IMPORTANCE_RANK.get(it.get("importance", "essentiel"), 1))
+                it["_pos"] = i
+                it["_kind"] = kind
             data[kind].extend(items)
     return data
+
+
+def words(s) -> int:
+    return len(str(s or "").split())
+
+
+def items_in(s) -> int:
+    """Rough count of enumerated elements in an answer (separated by ' ; ' or by commas)."""
+    s = str(s or "")
+    return max(s.count(" ; ") + 1, s.count(", ") + 1)
+
+
+def norm_text(s) -> str:
+    s = str(s or "").lower()
+    s = re.sub(r"\{\{c\d+::(.*?)\}\}", r"\1", s)
+    return re.sub(r"[^a-z0-9àâäéèêëîïôöùûüç]+", " ", s).strip()
 
 
 # -------------------------------------------------------------- validate ---
@@ -124,6 +151,9 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
         req(it, "type", "image", "nom", "signification")
         if it.get("type") not in TYPE_QUESTION:
             errors.append(f"{it['_file']}:{it.get('id')}: type inconnu {it.get('type')}")
+        back = sum(words(it.get(k)) for k in ("signification", "conduite", "complement", "piege"))
+        if back > MAX_RECON_BACK_WORDS and not it.get("long_ok"):
+            errors.append(f"{it['_file']}:{it.get('id')}: verso trop long ({back} mots > {MAX_RECON_BACK_WORDS}) — resserrer via data/_meta/sign_overrides.yaml")
         recon_by_id[it.get("id")] = it
     for it in data["confusions"]:
         common(it, "confusions")
@@ -143,9 +173,49 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
             errors.append(f"{it['_file']}:{it.get('id')}: numérotation des clozes non contiguë {n}")
         elif len(n) > 4:
             errors.append(f"{it['_file']}:{it.get('id')}: plus de 4 clozes ({len(n)})")
+        # two clozes with the same answer under different numbers: one gives the other away
+        answers = {}
+        for num, ans in re.findall(r"\{\{c(\d+)::(.*?)(?:::.*?)?\}\}", it.get("texte", "")):
+            key = norm_text(ans)
+            if key in answers and answers[key] != num:
+                errors.append(f"{it['_file']}:{it.get('id')}: la réponse « {ans} » apparaît sous c{answers[key]} et c{num} (utiliser le même numéro)")
+            answers.setdefault(key, num)
+    seen_answers: dict[str, str] = {}
     for it in data["questions"]:
         common(it, "questions")
         req(it, "question", "reponse")
+        if not it.get("long_ok"):
+            w, k = words(it.get("reponse")), items_in(it.get("reponse"))
+            if w > MAX_ANSWER_WORDS:
+                errors.append(f"{it['_file']}:{it.get('id')}: réponse trop longue ({w} mots > {MAX_ANSWER_WORDS}) — découper en cartes de décision / affirmations")
+            elif k > MAX_ANSWER_ITEMS:
+                errors.append(f"{it['_file']}:{it.get('id')}: réponse énumérative ({k} éléments > {MAX_ANSWER_ITEMS}) — une carte par élément utile à l'examen")
+        key = norm_text(it.get("reponse"))
+        if len(key) > 30 and key in seen_answers:
+            errors.append(f"{it['_file']}:{it.get('id')}: réponse identique à {seen_answers[key]} (doublon)")
+        seen_answers.setdefault(key, it.get("id"))
+    per_file_verdicts: dict[str, Counter] = {}
+    seen_aff: dict[str, str] = {}
+    for it in data["affirmations"]:
+        common(it, "affirmations")
+        req(it, "affirmation", "verdict", "pourquoi")
+        if it.get("verdict") not in ("vrai", "faux"):
+            errors.append(f"{it['_file']}:{it.get('id')}: verdict doit être 'vrai' ou 'faux'")
+        if words(it.get("affirmation")) > MAX_AFFIRMATION_WORDS:
+            errors.append(f"{it['_file']}:{it.get('id')}: affirmation trop longue ({words(it.get('affirmation'))} mots > {MAX_AFFIRMATION_WORDS})")
+        if words(it.get("pourquoi")) > MAX_POURQUOI_WORDS and not it.get("long_ok"):
+            errors.append(f"{it['_file']}:{it.get('id')}: pourquoi trop long ({words(it.get('pourquoi'))} mots > {MAX_POURQUOI_WORDS})")
+        if re.search(r"\b(toujours|jamais|obligatoirement|uniquement)\b", str(it.get("affirmation", "")), re.I) and it.get("verdict") == "faux" and not it.get("signal_ok"):
+            errors.append(f"{it['_file']}:{it.get('id')}: affirmation fausse contenant un mot-signal (toujours/jamais/obligatoirement/uniquement) — reformuler ou marquer signal_ok: true si le mot est celui de l'épreuve")
+        key = norm_text(it.get("affirmation"))
+        if key in seen_aff:
+            errors.append(f"{it['_file']}:{it.get('id')}: affirmation identique à {seen_aff[key]}")
+        seen_aff.setdefault(key, it.get("id"))
+        per_file_verdicts.setdefault(it["_file"], Counter())[it.get("verdict")] += 1
+    for f, c in per_file_verdicts.items():
+        tot = c["vrai"] + c["faux"]
+        if tot >= 8 and not AFF_BALANCE[0] <= c["vrai"] / tot <= AFF_BALANCE[1]:
+            errors.append(f"{f}: affirmations déséquilibrées ({c['vrai']} vrai / {c['faux']} faux) — viser 35-65 % de vrai")
     for it in data["scenarios"]:
         common(it, "scenarios")
         req(it, "question", "reponse", "explication")
@@ -233,7 +303,8 @@ def ensure_media(data: dict[str, list[dict]], force=False) -> dict[str, str]:
         p = MEDIA / fname
         return force or not p.exists() or manifest.get(fname) != stamp(spec)
 
-    for kind, prefix, w_commons, w_gen in (("reconnaissance", "img", 360, 480), ("faits", "fai", 420, 520), ("questions", "que", 420, 520)):
+    for kind, prefix, w_commons, w_gen in (("reconnaissance", "img", 360, 480), ("faits", "fai", 420, 520),
+                                           ("questions", "que", 420, 520), ("affirmations", "aff", 420, 520)):
         for it in data[kind]:
             img = it.get("image")
             if not img:
@@ -292,6 +363,144 @@ def write_attributions(data):
         author = re.sub(r"<[^>]+>", "", e.get("author") or "").strip() or "—"
         lines.append(f"- [{key}](https://commons.wikimedia.org/wiki/{key.replace(' ', '_')}) — {e.get('license') or '?'} — {author}")
     (OUT / "ATTRIBUTIONS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+# ------------------------------------------------------------ curriculum ---
+# The study order of new cards (their "position") is computed here, not left to file order.
+# Design (docs/05-audit-v2.md §2.4): method cards first; then three phases (essentiel, utile, rare);
+# inside a phase the themes are interleaved in proportion to their volume, so every day is a slice of
+# the whole exam; the scenario track is gated behind the signs it depends on. Cloze siblings of one
+# note are spread SIBLING_GAP positions apart so the second blank is met a couple of days later.
+SIBLING_GAP = 30
+KIND_RANK = {"faits": 0, "questions": 1, "affirmations": 2, "reconnaissance": 0, "confusions": 1, "scenarios": 3}
+# scenario sub-theme -> recognition file that must be (mostly) known before the track opens
+SCENARIO_GATES = {"priorites": "panneaux_priorite", "agents": "autres", "depassement": "marquages",
+                  "positionnement": "marquages", "croisement": "marquages"}
+
+
+def track_of(kind: str, it: dict) -> str:
+    if it["theme"] == "X":
+        return "X"
+    if kind == "scenarios":
+        return "SCEN"
+    if it["theme"] == "L" and kind in ("reconnaissance", "confusions"):
+        return "SIGN"
+    if it["theme"] == "L":
+        return "CIRC"
+    return it["theme"]
+
+
+def curriculum(data: dict[str, list[dict]]) -> list[tuple[str, str]]:
+    """Return every note as (kind, id) in study order."""
+    imp = lambda it: IMPORTANCE_RANK.get(it.get("importance", "essentiel"), 0)
+    recon = {it["id"]: it for it in data["reconnaissance"]}
+    # --- sign track: recognition in RECON_ORDER, each confusion right after the later of its members
+    sign_recon = [it for it in data["reconnaissance"] if it["theme"] == "L"]
+    sign_recon.sort(key=lambda it: (imp(it), RECON_ORDER.index(it["_file"][:-5]) if it["_file"][:-5] in RECON_ORDER else 99, it["_pos"]))
+    sign_pos = {it["id"]: i for i, it in enumerate(sign_recon)}
+    sign_items: list[tuple[float, int, str, str]] = [(i, imp(it), "reconnaissance", it["id"]) for i, it in enumerate(sign_recon)]
+    for it in data["confusions"]:
+        if it["theme"] != "L":
+            continue  # e.g. dashboard-light pairs: they follow their own theme's track
+        a, b = recon[it["a"]], recon[it["b"]]
+        pos = max(sign_pos.get(a["id"], 0), sign_pos.get(b["id"], 0)) + 0.5
+        it["_phase"] = max(imp(it), imp(a), imp(b))  # a pair is studied once both members are known
+        sign_items.append((pos, it["_phase"], "confusions", it["id"]))
+    sign_items.sort()
+    # position after which each recognition file is fully seen (gates for the scenario track), per phase
+    gate_after: dict[tuple[int, str], int] = {}
+    counter = Counter()
+    for _, ph, kind, ident in sign_items:
+        counter[ph] += 1
+        if kind == "reconnaissance":
+            gate_after[(ph, recon[ident]["_file"][:-5])] = counter[ph]
+    # --- other tracks: file order, grouped by sub-theme, facts before questions before affirmations
+    tracks: dict[str, dict[int, list]] = {}
+    for kind in KINDS:
+        for it in data[kind]:
+            tr = track_of(kind, it)
+            if tr == "SIGN":
+                continue
+            tracks.setdefault(tr, {}).setdefault(imp(it), []).append(it)
+    for tr, phases in tracks.items():
+        for ph, items in phases.items():
+            if tr == "SCEN":  # scenarios in the order their gates open (priorities first, overtaking later)
+                items.sort(key=lambda it: (gate_after.get((ph, SCENARIO_GATES.get(it["sous_theme"], "panneaux_priorite")), 0), it["_file"], it["_pos"]))
+                continue
+            sub_order: dict[str, int] = {}
+            for it in items:
+                sub_order.setdefault(it["sous_theme"], len(sub_order))
+            items.sort(key=lambda it: (sub_order[it["sous_theme"]], KIND_RANK[it["_kind"]], it["_file"], it["_pos"]))
+    sign_phases: dict[int, list] = {}
+    for _, ph, kind, ident in sign_items:
+        sign_phases.setdefault(ph, []).append({"_kind": kind, "id": ident})
+    tracks["SIGN"] = sign_phases
+
+    order: list[tuple[str, str]] = []
+    x = tracks.pop("X", {})
+    for it in x.get(0, []) + x.get(1, []) + x.get(2, []):
+        order.append((it["_kind"], it["id"]))
+    for ph in (0, 1, 2):
+        queues = {tr: list(phases.get(ph, [])) for tr, phases in tracks.items() if phases.get(ph)}
+        # proportional interleaving; scenarios weighted up because their gates delay their start
+        weights = {tr: float(len(q)) * (2.0 if tr == "SCEN" else 1.0) for tr, q in queues.items()}
+        credit = {tr: 0.0 for tr in queues}
+        emitted = Counter()
+        while any(queues.values()):
+            eligible = []
+            for tr, q in queues.items():
+                if not q:
+                    continue
+                if tr == "SCEN":
+                    need = gate_after.get((ph, SCENARIO_GATES.get(q[0].get("sous_theme", ""), "panneaux_priorite")), 0)
+                    if emitted["SIGN"] < min(need, len(tracks["SIGN"].get(ph, []))):
+                        continue
+                eligible.append(tr)
+            total = sum(weights[tr] for tr in eligible)
+            for tr in eligible:
+                credit[tr] += weights[tr]
+            best = max(eligible, key=lambda tr: credit[tr])
+            credit[best] -= total
+            it = queues[best].pop(0)
+            emitted[best] += 1
+            order.append((it["_kind"], it["id"]))
+    return order
+
+
+def write_programme(data: dict[str, list[dict]], order: list[tuple[str, str]], per_day: int = 20) -> None:
+    """out/PROGRAMME.md: what a learner meets week by week at `per_day` new cards a day."""
+    by_key = {(kind, it["id"]): it for kind in KINDS for it in data[kind]}
+    n_cards = lambda it: len(set(CLOZE_RE.findall(it.get("texte", "")))) if it["_kind"] == "faits" else 1
+    rows, day, cards_today, mix = [], 1, 0, Counter()
+    phase_names = {0: "essentiel", 1: "utile", 2: "rare"}
+    phase_of = lambda it: phase_names[it["_phase"]] if "_phase" in it else it.get("importance", "essentiel")
+    phase_end: dict[str, int] = {}
+    total_cards = 0
+    for key in order:
+        it = by_key[key]
+        c = n_cards(it)
+        total_cards += c
+        phase_end[phase_of(it)] = total_cards
+        mix[track_of(it["_kind"], it)] += c
+        cards_today += c
+        if cards_today >= per_day:
+            rows.append((day, dict(mix)))
+            day, cards_today, mix = day + 1, 0, Counter()
+    if mix:
+        rows.append((day, dict(mix)))
+    lines = [f"# Programme d'apprentissage ({per_day} nouvelles cartes/jour)\n",
+             f"Cartes : {total_cards}. Phase « essentiel » jusqu'à la carte {phase_end.get('essentiel', 0)} "
+             f"(≈ jour {-(-phase_end.get('essentiel', 0) // per_day)}), « utile » jusqu'à {phase_end.get('utile', 0)} "
+             f"(≈ jour {-(-phase_end.get('utile', 0) // per_day)}), « rare » jusqu'à {phase_end.get('rare', 0)}.\n",
+             "Chaque semaine mélange tous les thèmes au prorata de leur volume ; les scénarios n'apparaissent qu'une fois "
+             "les panneaux dont ils dépendent vus.\n", "\n| Semaine | Mélange (cartes par piste) |\n|---|---|"]
+    week: Counter = Counter()
+    for day, mix in rows:
+        week.update(mix)
+        if day % 7 == 0 or day == rows[-1][0]:
+            lines.append(f"| {-(-day // 7)} | " + ", ".join(f"{k} {v}" for k, v in sorted(week.items(), key=lambda kv: -kv[1])) + " |")
+            week = Counter()
+    (OUT / "PROGRAMME.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 # ------------------------------------------------------------ collection ---
@@ -355,7 +564,21 @@ def build_collection(data, names, out_apkg: Path):
             d["desc"] = desc
             col.decks.save(d)
 
+    # options preset shipped with the deck: curriculum order (positions), 20 new/day, siblings buried
+    import copy
+    conf = copy.deepcopy(col.decks.get_config(1))
+    conf.update({"id": M.DECK_CONFIG_ID, "name": M.DECK_ROOT, "newGatherPriority": 1, "newSortOrder": 1,
+                 "desiredRetention": 0.9, "sm2Retention": 0.9})
+    conf["new"].update({"perDay": 20, "bury": True})
+    conf["rev"].update({"perDay": 400, "bury": True})
+    col.decks.update_config(conf)
+    for name in M.DECK_IDS:
+        d = col.decks.by_name(name)
+        d["conf"] = M.DECK_CONFIG_ID
+        col.decks.save(d)
+
     counts = Counter()
+    nids: dict[tuple[str, str], int] = {}
 
     def add(model_name, fields: dict, kind: str, it: dict):
         m = model_objs[model_name]
@@ -367,6 +590,7 @@ def build_collection(data, names, out_apkg: Path):
         did = old_dids[M.deck_for(it["theme"], it["sous_theme"])]
         col.add_note(n, did)
         counts[model_name] += 1
+        nids[(kind, it["id"])] = n.id
         return n
 
     esc = lambda s: html.escape(str(s)) if s is not None else ""
@@ -403,6 +627,13 @@ def build_collection(data, names, out_apkg: Path):
             "Image": img_tag(names[it["id"]]) if it.get("image") else "", "Code": esc(it.get("code", "")),
             "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
         }, "questions", it)
+    for it in data["affirmations"]:
+        add("CDR Affirmation", {
+            "Id": it["id"], "Contexte": md(it.get("contexte", "")), "Affirmation": md(it["affirmation"]),
+            "Verdict": it["verdict"], "Pourquoi": md(it["pourquoi"]),
+            "Image": img_tag(names[it["id"]]) if it.get("image") else "", "Code": esc(it.get("code", "")),
+            "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
+        }, "affirmations", it)
     for it in data["scenarios"]:
         add("CDR Scenario", {
             "Id": it["id"], "Image": img_tag(names[it["id"]]), "Question": md(it["question"]),
@@ -410,10 +641,17 @@ def build_collection(data, names, out_apkg: Path):
             "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
         }, "scenarios", it)
 
-    # "00 Méthode d'examen" (theme X) is introduced first when studying the root deck, whatever the file order
-    method = col.find_cards('"tag:theme::X"')
-    if method:
-        col.sched.reposition_new_cards(method, starting_from=0, step_size=1, randomize=False, shift_existing=True)
+    # study order = curriculum positions (new cards are gathered by lowest position, see preset above)
+    order = curriculum(data)
+    assert len(order) == len(nids), f"curriculum: {len(order)} notes ordonnées pour {len(nids)} notes"
+    pos_of_card: dict[int, int] = {}
+    for pos, key in enumerate(order):
+        for ord_, cid in enumerate(col.card_ids_of_note(nids[key])):
+            pos_of_card[cid] = pos + ord_ * SIBLING_GAP
+    db = col.db
+    for cid, pos in pos_of_card.items():
+        db.execute("update cards set due = ? where id = ? and type = 0", pos, cid)
+    write_programme(data, order)
 
     # media
     for fname in set(names.values()):
@@ -430,7 +668,7 @@ def build_collection(data, names, out_apkg: Path):
         out_apkg.unlink()
     col.export_anki_package(
         out_path=str(out_apkg),
-        options=ExportAnkiPackageOptions(with_scheduling=False, with_deck_configs=False, with_media=True, legacy=True),
+        options=ExportAnkiPackageOptions(with_scheduling=False, with_deck_configs=True, with_media=True, legacy=True),
         limit=DeckIdLimit(M.DECK_IDS[M.DECK_ROOT]),
     )
     per_deck = {d.name: len(col.find_cards(f'"deck:{d.name}"')) for d in col.decks.all_names_and_ids() if d.name.startswith(M.DECK_ROOT)}

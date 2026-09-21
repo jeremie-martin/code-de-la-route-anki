@@ -7,11 +7,12 @@
   nom: Obligation de tourner à droite avant le panneau
   signification: Le conducteur doit tourner à droite avant le panneau (le panneau est implanté en face, sur l'îlot ou le mur de fond).
   conduite: Tourner à droite au niveau du panneau ; clignotant, contrôle rétroviseur droit.
-  complement: Placé en face de l'usager, au-delà de l'endroit où il doit tourner (sur l'îlot, le mur d'en face). Flèche horizontale = tourner AVANT le panneau (B21-1/-2) ; flèche coudée = tourner à la PROCHAINE intersection (B21c1/c2) ; flèche oblique vers le bas = contourner l'obstacle (B21a1/a2).
+  complement: Placé en face de l'usager, au-delà de l'endroit où il doit tourner.
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: Flèche horizontale = tourner AVANT le panneau ; flèche coudée (B21c1) = à la PROCHAINE intersection.
 - id: b21-2
   type: panneau
   code: B21-2
@@ -59,7 +60,7 @@
   nom: 'Direction obligatoire à la prochaine intersection : tout droit'
   signification: À la prochaine intersection, le conducteur doit continuer tout droit (interdiction de tourner à droite ou à gauche).
   conduite: Rester dans la voie qui va tout droit.
-  complement: Placé avant l'intersection concernée, à distance appropriée (contrairement aux autres panneaux d'obligation placés à l'endroit où commence l'obligation).
+  complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
   piege: B21b (rond bleu, flèche vers le haut) = obligation d'aller tout droit ; C12 (carré bleu, flèche vers le haut) = sens unique (indication).
   theme: L
   sous_theme: panneaux
@@ -73,7 +74,7 @@
   nom: 'Direction obligatoire à la prochaine intersection : à droite'
   signification: À la prochaine intersection, obligation de tourner à droite.
   conduite: Se placer à droite, clignotant droit, tourner à droite à l'intersection.
-  complement: Placé avant l'intersection concernée, à distance appropriée (contrairement aux autres panneaux d'obligation placés à l'endroit où commence l'obligation).
+  complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -85,8 +86,8 @@
     commons: France road sign B21c2.svg
   nom: 'Direction obligatoire à la prochaine intersection : à gauche'
   signification: À la prochaine intersection, obligation de tourner à gauche.
-  conduite: Se placer à gauche de sa voie (ou dans la voie de gauche), clignotant gauche, céder le passage aux véhicules venant en face avant de tourner.
-  complement: Placé avant l'intersection concernée, à distance appropriée (contrairement aux autres panneaux d'obligation placés à l'endroit où commence l'obligation).
+  conduite: Se placer à gauche, clignotant gauche, et céder le passage aux véhicules venant en face.
+  complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -99,7 +100,7 @@
   nom: 'Directions obligatoires à la prochaine intersection : tout droit ou à droite'
   signification: À la prochaine intersection, le conducteur doit aller tout droit ou tourner à droite (interdiction de tourner à gauche).
   conduite: Choisir entre tout droit et à droite.
-  complement: Placé avant l'intersection concernée, à distance appropriée (contrairement aux autres panneaux d'obligation placés à l'endroit où commence l'obligation).
+  complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -112,7 +113,7 @@
   nom: 'Directions obligatoires à la prochaine intersection : tout droit ou à gauche'
   signification: À la prochaine intersection, le conducteur doit aller tout droit ou tourner à gauche (interdiction de tourner à droite).
   conduite: Choisir entre tout droit et à gauche.
-  complement: Placé avant l'intersection concernée, à distance appropriée (contrairement aux autres panneaux d'obligation placés à l'endroit où commence l'obligation).
+  complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -123,9 +124,9 @@
   image:
     commons: France road sign B21e.svg
   nom: 'Directions obligatoires à la prochaine intersection : à droite ou à gauche'
-  signification: À la prochaine intersection, le conducteur doit tourner à droite ou à gauche (interdiction d'aller tout droit).
+  signification: À la prochaine intersection, tourner à droite ou à gauche ; interdit d'aller tout droit.
   conduite: Choisir entre droite et gauche ; ne pas continuer tout droit.
-  complement: Placé avant l'intersection concernée, à distance appropriée (contrairement aux autres panneaux d'obligation placés à l'endroit où commence l'obligation).
+  complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -136,13 +137,14 @@
   image:
     commons: France road sign B22a.svg
   nom: Piste ou bande cyclable obligatoire
-  signification: Piste ou bande obligatoire pour les cycles sans side-car ni remorque ; les cyclistes doivent l'emprunter et les autres véhicules ne peuvent pas y circuler ni y stationner. Un panonceau M4d2 peut l'ouvrir aux cyclomoteurs.
-  conduite: 'En voiture : ne pas y rouler ni s''y arrêter ; attention aux cyclistes en la coupant pour tourner (leur céder le passage si elle est prioritaire). À vélo : obligation de l''utiliser.'
-  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B40. Rond bleu = OBLIGATOIRE (B22a) ; carré bleu = CONSEILLÉ (C113). Interdit d''y stationner ou de s''y arrêter (stationnement très gênant : 135 €).'
+  signification: 'Piste ou bande cyclable obligatoire : les cyclistes doivent l''emprunter ; interdite aux autres véhicules.'
+  conduite: 'En voiture : ne pas y rouler ni s''y arrêter ; attention aux cyclistes en la coupant pour tourner.'
+  complement: 'Fin : B40. Un panonceau M4d2 peut l''ouvrir aux cyclomoteurs. S''y arrêter ou stationner : très gênant, 135 €.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: Rond bleu = obligatoire (B22a) ; carré bleu = conseillé (C113).
 - id: b22b
   type: panneau
   code: B22b
@@ -151,7 +153,7 @@
   nom: Chemin obligatoire pour piétons
   signification: Chemin réservé et obligatoire pour les piétons ; interdit aux véhicules.
   conduite: 'En voiture : ne pas s''y engager.'
-  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B41.'
+  complement: 'Fin : B41.'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -163,7 +165,7 @@
     commons: France road sign B22c.svg
   nom: Chemin obligatoire pour cavaliers
   signification: Chemin réservé et obligatoire pour les cavaliers.
-  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B42.'
+  complement: 'Fin : B42.'
   theme: L
   sous_theme: panneaux
   importance: rare
@@ -174,13 +176,14 @@
   image:
     commons: France road sign B25 (30).svg
   nom: Vitesse minimale obligatoire
-  signification: Obligation de circuler au moins à la vitesse indiquée (ex. 30 km/h), sauf si les conditions (trafic, météo) ne le permettent pas. Concerne en pratique la voie sur laquelle il est implanté (voie de gauche d'une chaussée à plusieurs voies).
+  signification: Obligation de circuler au moins à la vitesse indiquée, sauf si les conditions ne le permettent pas.
   conduite: Ne pas emprunter cette voie si l'on ne peut pas atteindre cette vitesse (véhicule lent, remorque).
-  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B43. Rond BLEU avec chiffre = vitesse MINIMALE ; rond rouge = maximale.'
+  complement: 'Concerne la voie où il est implanté. Fin : B43.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: Rond BLEU avec chiffre = vitesse MINIMALE ; rond rouge = maximale.
 - id: b26
   type: panneau
   code: B26
@@ -188,25 +191,27 @@
     commons: France road sign B26.svg
   nom: Chaînes à neige obligatoires
   signification: Obligation d'équiper d'au moins deux roues motrices de chaînes à neige (ou dispositifs équivalents) sur les routes enneigées à partir du panneau.
-  conduite: 'S''arrêter sur l''aire de chaînage pour monter les chaînes ; sans chaînes, ne pas s''engager. Vitesse maxi avec chaînes : 50 km/h en général.'
-  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B44. Un panonceau M9 peut préciser « pneus neige admis ». Les pneus hiver marqués 3PMSF ne dispensent PAS d''obéir au B26 sauf mention sur panonceau. Depuis 2021, en zone B58, chaînes dans le coffre OU pneus hiver.'
+  conduite: S'arrêter sur l'aire de chaînage pour monter les chaînes ; vitesse maximale 50 km/h avec chaînes.
+  complement: 'Fin : B44. Les pneus 3PMSF ne dispensent pas d''obéir au B26, sauf mention sur panonceau.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: B26 = monter les chaînes ici ; B58 (zone) = seulement les détenir ou avoir des pneus hiver.
 - id: b27a
   type: panneau
   code: B27a
   image:
     commons: France road sign B27a.svg
   nom: Voie réservée aux véhicules des services réguliers de transport en commun
-  signification: 'Voie (couloir) réservée aux autobus et cars de lignes régulières ; les autres véhicules ne peuvent pas y circuler (sauf catégories autorisées par panonceau : taxis, vélos, véhicules d''urgence, VTC selon arrêté local).'
-  conduite: 'En voiture : ne pas y circuler ni y stationner ; on peut la traverser pour tourner ou accéder à un immeuble sans y circuler longitudinalement.'
-  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B45a. Exception à la règle « rond bleu = obligation » : les bus ne sont pas obligés de l''emprunter. Le couloir est délimité au sol par une ligne large T3 5u (traits longs rapprochés) et l''inscription BUS ; la ligne CONTINUE le rend infranchissable.'
+  signification: Voie réservée aux autobus et cars de lignes régulières ; interdite aux autres véhicules, sauf catégories autorisées par panonceau.
+  conduite: Ne pas y circuler ni y stationner ; on peut la traverser pour tourner ou accéder à un immeuble.
+  complement: 'Fin : B45a. Au sol, ligne large T3 5u et inscription BUS.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: 'Exception au « rond bleu = obligation » : les bus ne sont pas obligés d''emprunter le couloir.'
 - id: b27b
   type: panneau
   code: B27b
@@ -215,7 +220,7 @@
   nom: Voie réservée aux tramways
   signification: Voie réservée aux tramways ; interdite aux autres véhicules.
   conduite: Ne pas y circuler ni s'y arrêter ; le tramway est prioritaire.
-  complement: Placé à l'endroit où commence l'obligation ; répété après chaque intersection. Le panneau de fin B45b a été supprimé en 2009.
+  complement: Le panneau de fin B45b a été supprimé en 2009.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -228,7 +233,7 @@
   nom: Autre obligation (par inscription)
   signification: Obligation dont la nature est indiquée par une inscription (ex. « Allumez vos feux », « Véhicules lents », « Pneus neige »).
   conduite: Lire l'inscription et s'y conformer.
-  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B49. « Allumez vos feux » à l''entrée d''un tunnel : obligation d''allumer les feux de croisement (pas seulement les feux de position).'
+  complement: 'Fin : B49. « Allumez vos feux » à l''entrée d''un tunnel : obligation d''allumer les feux de croisement (pas seulement les feux de position).'
   theme: L
   sous_theme: panneaux
   importance: utile

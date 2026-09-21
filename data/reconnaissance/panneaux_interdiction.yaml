@@ -7,8 +7,7 @@
   nom: Circulation interdite à tout véhicule dans les deux sens
   signification: Interdiction de circuler à tout véhicule (avec ou sans moteur, y compris les cycles), dans les deux sens. Seuls les piétons peuvent passer.
   conduite: Ne pas s'engager. Un panonceau peut prévoir des exceptions (« sauf riverains », « sauf livraisons »).
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
-  piege: 'B0 (blanc, cercle rouge vide) = interdit à TOUT véhicule dans les DEUX sens ; B1 (rouge, barre blanche) = sens interdit dans UN sens. Ne pas confondre avec B31 (fin de toutes interdictions : blanc, barre noire oblique).'
+  piege: B0 (cercle rouge vide) = interdit dans les DEUX sens ; B1 (rouge à barre blanche) = sens interdit.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -19,26 +18,28 @@
   image:
     commons: France road sign B1.svg
   nom: Sens interdit à tout véhicule
-  signification: 'Interdiction de s''engager dans cette voie : elle est à sens unique dans l''autre sens. Concerne tous les véhicules, cycles compris, sauf panonceau.'
-  conduite: 'Ne pas s''engager. Avec le panonceau M9v1/M9v2 (« sauf vélo »), les cyclistes peuvent l''emprunter à contresens (double-sens cyclable) : attention en croisant ou en tournant.'
-  complement: 'Placé à l''entrée de la voie (à l''endroit où commence l''interdiction), généralement des deux côtés de la chaussée. L''autre extrémité de la rue porte un C12 (sens unique). Le double-sens cyclable est la règle par défaut dans les zones 30 et zones de rencontre depuis le décret 2008-754 (généralisation au 1er juillet 2010), étendue en 2015 (décret 2015-808) à toutes les voies limitées à 30 km/h ou moins : le B1 y est complété par M9v2. Fichier Commons « France road sign B1+M9.svg » existe pour le B1 + panonceau.'
+  signification: 'Interdiction de s''engager : la voie est à sens unique dans l''autre sens. Tous les véhicules, cycles compris, sauf panonceau.'
+  conduite: Ne pas s'engager. Avec un panonceau M9v1/M9v2 (« sauf vélo »), les cyclistes l'empruntent à contresens.
+  complement: À l'entrée de la voie, souvent des deux côtés ; l'autre extrémité porte un C12. Double-sens cyclable par défaut sous 30 km/h.
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: Ne pas confondre avec B0 (cercle rouge vide), qui interdit la circulation dans les deux sens.
 - id: b1j
   type: panneau
   code: B1j
   image:
     commons: France road sign B1j.svg
   nom: Sens interdit sur bretelle (fond jaune)
-  signification: 'Panneau B1 inscrit dans un carré jaune : rappel renforcé du sens interdit sur les bretelles de sortie d''autoroute ou de route à chaussées séparées, pour éviter les prises à contresens.'
+  signification: 'Panneau B1 inscrit dans un carré jaune : rappel renforcé du sens interdit sur les bretelles de sortie.'
   conduite: 'Ne jamais s''engager : on remonte une bretelle de sortie à contresens.'
-  complement: Sur les bretelles de sortie d'autoroute/route à chaussées séparées, face aux usagers qui pourraient s'y engager par erreur. Le fond jaune n'indique pas ici une signalisation temporaire mais un renforcement (panneau carré, exception à la forme ronde des B). Créé en 2008 pour lutter contre les contresens.
+  complement: Sur les bretelles de sortie, face aux usagers qui pourraient s'y engager par erreur.
   theme: L
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: 'Ici le fond jaune n''est pas une signalisation temporaire : c''est un renforcement (carré, exception à la forme ronde des B).'
 - id: b2a
   type: panneau
   code: B2a
@@ -74,7 +75,7 @@
   nom: Interdiction de faire demi-tour
   signification: Interdiction de faire demi-tour sur la route suivie, jusqu'à la prochaine intersection.
   conduite: Ne pas faire demi-tour ; continuer et changer de direction plus loin.
-  complement: Placé avant la section où s'applique l'interdiction. Sans panneau, le demi-tour est interdit sur autoroute et route express (R421-6, R432-3) et dans les tunnels (C111) ; il est de toute façon impossible sur une voie à sens unique et dangereux partout où la visibilité est insuffisante (virage, sommet de côte).
+  complement: Sans panneau, le demi-tour est interdit sur autoroute et route express (R421-6, R432-3) et dans les tunnels (C111) ; il est impossible en sens unique.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -85,13 +86,14 @@
   image:
     commons: France road sign B3.svg
   nom: Interdiction de dépasser tous les véhicules à moteur autres que ceux à deux roues sans side-car
-  signification: Interdiction de dépasser les véhicules à moteur, à l'exception des deux-roues motorisés sans side-car. On peut donc encore dépasser un cycliste, un cyclomoteur, une moto solo ou un véhicule à traction animale.
-  conduite: Rester derrière les voitures, camions, tracteurs, motos avec side-car ; dépasser uniquement les deux-roues sans side-car et les véhicules sans moteur, si les conditions le permettent.
-  complement: 'Placé à l''endroit où commence l''interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre). Peut être complété par un panonceau M2 (étendue) ou M9 « rappel ». Fin : B34, B31, ou à la prochaine intersection si le panneau n''est pas répété. Sur les panneaux d''interdiction de dépasser, la voiture ROUGE est à gauche (celle qui dépasserait).'
+  signification: Interdiction de dépasser les véhicules à moteur, sauf les deux-roues motorisés sans side-car.
+  conduite: Rester derrière voitures, camions, tracteurs ; on peut encore dépasser une moto solo, un cyclomoteur, un cycliste.
+  complement: 'Panonceau M2 (étendue) ou M9 « rappel ». Fin : B34, B31, ou la prochaine intersection si le panneau n''est pas répété.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: 'Sur les panneaux d''interdiction de dépasser, la voiture ROUGE est à gauche : c''est celle qui dépasserait.'
 - id: b3a
   type: panneau
   code: B3a
@@ -100,7 +102,7 @@
   nom: Interdiction de dépasser pour les véhicules de transport de marchandises de plus de 3,5 t
   signification: Interdiction, pour les véhicules affectés au transport de marchandises dont le PTAC ou le PTRA dépasse 3,5 t, de dépasser les véhicules à moteur autres que les deux-roues sans side-car.
   conduite: Ne concerne pas le conducteur d'une voiture ; les poids lourds doivent rester dans leur voie.
-  complement: 'Placé à l''endroit où commence l''interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre). Fin : B34a. Un panonceau M4f peut modifier le seuil de tonnage.'
+  complement: 'Fin : B34a. Un panonceau M4f peut modifier le seuil de tonnage.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -151,8 +153,8 @@
     commons: France road sign B5c2.svg
   nom: Arrêt au poste de péage
   signification: Obligation de s'arrêter au poste de péage (barrière) pour prendre un ticket ou payer.
-  conduite: Ralentir fortement, choisir sa voie selon le mode de paiement (C64), s'arrêter à la barrière sauf voie télépéage (30 km/h).
-  complement: 'Placé avant la gare de péage. Commons : « France road sign B5c2.svg » (actuel) et B5c1 (ancien).'
+  conduite: Ralentir fortement, choisir sa voie selon le mode de paiement (C64), s'arrêter à la barrière.
+  complement: Placé avant la gare de péage.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -163,10 +165,10 @@
   image:
     commons: France road sign B6a1.svg
   nom: Stationnement interdit
-  signification: Interdiction de stationner du côté de la route où le panneau est implanté, jusqu'à la prochaine intersection (sauf panonceau). L'arrêt (immobilisation brève, conducteur au volant ou à proximité, prêt à repartir) reste autorisé.
-  conduite: Ne pas stationner ; on peut s'arrêter le temps de déposer un passager ou charger/décharger rapidement. Le stationnement de l'autre côté reste possible sauf interdiction.
-  complement: 'Placé du côté où le stationnement est interdit ; panonceaux M8 (flèches de début/fin/rappel), M6a « gênant » (fourrière), M6b (jours), M6f (précisions), M4 (catégories). Fin : prochaine intersection ou panonceau M8b (fin de section) ; en zone (B6b1), la fin est le panneau B50a.'
-  piege: 1 barre = stationnement interdit (arrêt possible) ; 2 barres en croix (B6d) = arrêt ET stationnement interdits. L'interdiction vaut jusqu'à la prochaine intersection, même sans panonceau. B31 ne met PAS fin à une interdiction de stationner (il ne concerne que les véhicules en mouvement).
+  signification: Stationnement interdit du côté du panneau, jusqu'à la prochaine intersection. L'arrêt reste autorisé.
+  conduite: Ne pas stationner ; on peut s'arrêter pour déposer un passager ou charger rapidement.
+  complement: 'Panonceaux M8 (début/fin/rappel), M6a « gênant », M6b (jours), M4 (catégories). Fin : prochaine intersection ou M8b ; en zone B6b1, le B50a.'
+  piege: 1 barre = stationnement interdit ; 2 barres en croix (B6d) = arrêt ET stationnement interdits. B31 n'y met pas fin.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -177,13 +179,14 @@
   image:
     commons: France road sign B6a2.svg
   nom: Stationnement interdit du 1er au 15 du mois
-  signification: Stationnement interdit, du côté du panneau, du 1er au 15 de chaque mois (stationnement unilatéral à alternance semi-mensuelle) ; autorisé de ce côté du 16 à la fin du mois.
-  conduite: 'Du 1er au 15 : se garer de l''autre côté. Le changement de côté se fait le 15 et le dernier jour du mois entre 20 h 30 et 21 h.'
-  complement: Placé du côté concerné ; souvent complété du panonceau M6b « du 1er au 15 ». Les chiffres portés sont les jours où c'est INTERDIT de ce côté.
+  signification: Stationnement interdit du côté du panneau du 1er au 15 du mois ; autorisé de ce côté du 16 à la fin.
+  conduite: Du 1er au 15, se garer de l'autre côté.
+  complement: Changement de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: Les chiffres portés sont les jours où le stationnement est INTERDIT de ce côté.
 - id: b6a3
   type: panneau
   code: B6a3
@@ -191,8 +194,8 @@
     commons: France road sign B6a3.svg
   nom: Stationnement interdit du 16 à la fin du mois
   signification: Stationnement interdit, du côté du panneau, du 16 à la fin du mois ; autorisé de ce côté du 1er au 15.
-  conduite: 'Du 16 à la fin du mois : se garer de l''autre côté ; changement de côté le 15 et le dernier jour du mois entre 20 h 30 et 21 h.'
-  complement: Placé du côté concerné ; panonceau M6b « du 16 à la fin ».
+  conduite: Du 16 à la fin du mois, se garer de l'autre côté.
+  complement: Changement de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -205,11 +208,12 @@
   nom: Arrêt et stationnement interdits
   signification: Interdiction de s'arrêter et de stationner du côté du panneau, jusqu'à la prochaine intersection (sauf panonceau). Même une immobilisation brève est interdite (hors nécessité absolue).
   conduite: Ne pas s'immobiliser, même pour déposer quelqu'un ; continuer.
-  complement: 'Placé du côté où l''interdiction s''applique ; panonceaux M8 et M6a (« gênant » : fourrière) possibles. Fin : Prochaine intersection ou panonceau M8b. Se rencontre devant les arrêts de bus, casernes de pompiers, écoles… Une ligne jaune CONTINUE sur la bordure du trottoir signifie la même chose (arrêt interdit) ; une ligne jaune discontinue = stationnement interdit seulement.'
+  complement: 'Panonceaux M8 et M6a (« gênant » : fourrière). Fin : prochaine intersection ou M8b.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: 'Équivalent au sol : ligne jaune CONTINUE sur la bordure (arrêt interdit) ; jaune discontinue = stationnement interdit seulement.'
 - id: b7a
   type: panneau
   code: B7a
@@ -218,7 +222,6 @@
   nom: Accès interdit aux véhicules à moteur à l'exception des cyclomoteurs
   signification: Interdiction d'accès aux véhicules à moteur (voitures, motos, camions…), sauf les cyclomoteurs (≤ 50 cm³ / 45 km/h). Piétons et cycles peuvent passer.
   conduite: Ne pas s'engager en voiture ou à moto.
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   piege: B7a (voiture + moto, 2 symboles) laisse passer les cyclomoteurs ; B7b (voiture + moto + cyclomoteur, 3 symboles) interdit TOUS les véhicules à moteur.
   theme: L
   sous_theme: panneaux
@@ -232,7 +235,6 @@
   nom: Accès interdit à tous les véhicules à moteur
   signification: Interdiction d'accès à tout véhicule à moteur, cyclomoteurs compris. Reste accessible aux piétons, cycles, véhicules à traction animale.
   conduite: Ne pas s'engager avec un véhicule à moteur.
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -245,8 +247,7 @@
   nom: Accès interdit aux véhicules affectés au transport de marchandises
   signification: Interdiction d'accès aux véhicules de transport de marchandises (camions, camionnettes). Un panonceau M4f peut limiter l'interdiction aux véhicules dépassant un certain PTAC (ex. « 3,5 t »).
   conduite: Ne concerne pas les voitures particulières.
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
-  piege: B8 = interdit aux camions (quel que soit le poids, sauf panonceau) ; B13 = interdit aux véhicules dont le poids total dépasse le chiffre indiqué (peut concerner un camping-car ou une voiture + remorque).
+  piege: B8 = interdit aux camions quel que soit le poids ; B13 = interdit au-delà du poids indiqué.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -259,7 +260,6 @@
   nom: Accès interdit aux piétons
   signification: Interdiction d'accès aux piétons (autoroute, tunnel, voie rapide, chantier).
   conduite: En cas de panne sur une telle voie, rester derrière les glissières.
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -272,7 +272,6 @@
   nom: Accès interdit aux cycles
   signification: Interdiction d'accès aux cycles (vélos, VAE), par exemple sur les routes à accès réglementé.
   conduite: Le cycliste doit prendre un autre itinéraire ; il peut éventuellement passer à pied en poussant son vélo (il devient piéton).
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   piege: 'Piège des trois vélos : rond rouge (B9b) interdit ; rond bleu (B22a) piste obligatoire ; carré bleu (C113) piste conseillée ; triangle (A21) débouché de cyclistes.'
   theme: L
   sous_theme: panneaux
@@ -285,7 +284,6 @@
     commons: France road sign B9c.svg
   nom: Accès interdit aux véhicules à traction animale
   signification: Interdiction d'accès aux véhicules à traction animale (charrettes, calèches).
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -297,7 +295,6 @@
     commons: France road sign B9d.svg
   nom: Accès interdit aux véhicules agricoles à moteur
   signification: Interdiction d'accès aux véhicules agricoles à moteur (tracteurs, machines agricoles automotrices).
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -309,7 +306,6 @@
     commons: France road sign B9e.svg
   nom: Accès interdit aux voitures à bras
   signification: Interdiction d'accès aux voitures à bras (charrettes poussées ou tirées à la main), à l'exclusion des poussettes, voitures d'enfants et fauteuils roulants (article R412-34).
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: rare
@@ -321,7 +317,6 @@
     commons: France road sign B9f.svg
   nom: Accès interdit aux véhicules de transport en commun de personnes
   signification: Interdiction d'accès aux autobus et autocars.
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -333,7 +328,6 @@
     commons: France road sign B9g.svg
   nom: Accès interdit aux cyclomoteurs
   signification: Interdiction d'accès aux cyclomoteurs (≤ 50 cm³ ou 4 kW, ≤ 45 km/h).
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -345,7 +339,6 @@
     commons: France road sign B9h.svg
   nom: Accès interdit aux motocyclettes et motocyclettes légères
   signification: Interdiction d'accès aux motocyclettes (> 50 cm³) et motocyclettes légères (≤ 125 cm³).
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -357,7 +350,6 @@
     commons: France road sign B9i.svg
   nom: Accès interdit aux véhicules tractant une caravane ou une remorque de plus de 250 kg
   signification: Interdiction d'accès aux véhicules tractant une caravane ou une remorque de plus de 250 kg, l'ensemble ne dépassant pas 3,5 t de PTRA (au-delà, ce sont les panneaux B8/B13 qui s'appliquent).
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -370,7 +362,7 @@
   nom: Limitation de longueur
   signification: Accès interdit aux véhicules ou ensembles de véhicules dont la longueur (chargement compris) dépasse le nombre indiqué (ex. 10 m).
   conduite: Vérifier la longueur de son ensemble (voiture + caravane/remorque) avant de s'engager.
-  complement: 'Placé à l''endroit où commence l''interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre). Mémo : B10a = LONGUEUR (camion de profil, cote horizontale) ; B11 = LARGEUR (cote entre deux flèches horizontales) ; B12 = HAUTEUR (cote entre deux flèches verticales).'
+  complement: 'Mémo : B10a = LONGUEUR (camion de profil, cote horizontale) ; B11 = LARGEUR (cote entre deux flèches horizontales) ; B12 = HAUTEUR (cote entre deux flèches verticales).'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -383,7 +375,6 @@
   nom: Limitation de largeur
   signification: Accès interdit aux véhicules dont la largeur, chargement compris, dépasse le nombre indiqué (ex. 2 m).
   conduite: Une voiture fait environ 1,8 à 2 m ; attention aux rétroviseurs et aux chargements larges.
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -396,7 +387,7 @@
   nom: Limitation de hauteur
   signification: 'Accès interdit aux véhicules dont la hauteur, chargement compris, dépasse le nombre indiqué (ex. 3,5 m) : pont, tunnel, parking.'
   conduite: Vérifier la hauteur de son véhicule (galerie, coffre de toit, vélos sur le toit, camping-car).
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre). Un portique de gabarit peut compléter la signalisation.
+  complement: Un portique de gabarit peut compléter la signalisation.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -407,9 +398,8 @@
   image:
     commons: France road sign B13.svg
   nom: Limitation de poids total
-  signification: Accès interdit aux véhicules (ou ensembles) dont le poids total autorisé en charge (PTAC) ou le poids total roulant autorisé (PTRA) dépasse le nombre indiqué (ex. 3,5 t).
-  conduite: Concerne un camping-car lourd ou une voiture + remorque dont le PTRA dépasse la valeur ; se référer à la carte grise (F.2/F.3), pas au poids réel.
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
+  signification: Accès interdit aux véhicules dont le PTAC (ou le PTRA d'un ensemble) dépasse le nombre indiqué (ex. 3,5 t).
+  conduite: 'Peut concerner un camping-car ou une voiture + remorque : se référer à la carte grise (F.2/F.3).'
   piege: c'est le poids AUTORISÉ (carte grise), pas le poids réel du véhicule à l'instant t.
   theme: L
   sous_theme: panneaux
@@ -422,7 +412,6 @@
     commons: France road sign B13a.svg
   nom: Limitation de poids par essieu
   signification: Accès interdit aux véhicules pesant sur un essieu plus que le nombre indiqué.
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -433,23 +422,24 @@
   image:
     commons: France road sign B14 (50).svg
   nom: Limitation de vitesse
-  signification: Interdiction de dépasser la vitesse indiquée (en km/h). Elle s'applique à partir du panneau et jusqu'au prochain panneau de fin (B33, B31), à la prochaine intersection, ou jusqu'à un nouveau B14, sauf panonceau M2 d'étendue ou M9 « rappel ».
-  conduite: 'Adapter sa vitesse avant le panneau (pas après), car elle s''applique dès le panneau. C''est un maximum, pas une vitesse à tenir : réduire encore si les conditions l''exigent.'
-  complement: 'À l''endroit où commence la limitation, répété après chaque intersection. Sur le même support qu''EB10 (entrée d''agglomération) uniquement pour une vitesse < 50 km/h : elle vaut alors dans toute l''agglomération. Fin : B33 (fin de limitation), B31, prochaine intersection, ou nouveau B14 ; l''entrée/sortie d''agglomération (EB10/EB20) change aussi le régime de vitesse. Rond rouge = maximum (B14) ; rond bleu = minimum (B25) ; carré bleu = conseillé (C4a) ; fin = blanc barré (B33). Une limitation posée sur un panneau de danger (ex. A2b + B14 30) ne vaut que pour le danger concerné. Variantes courantes : 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 130.'
+  signification: Interdiction de dépasser la vitesse indiquée, à partir du panneau.
+  conduite: Être déjà à cette vitesse au niveau du panneau ; c'est un maximum, pas une consigne.
+  complement: 'Fin : B33, B31, prochaine intersection ou nouveau B14. Posée sur un panneau de danger (A2b + 30), elle ne vaut que pour ce danger.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: Rond rouge = maximum (B14) ; rond bleu = minimum (B25) ; carré bleu = conseillé (C4a) ; fin = blanc barré (B33).
 - id: b15
   type: panneau
   code: B15
   image:
     commons: France road sign B15.svg
   nom: Cédez le passage à la circulation venant en sens inverse
-  signification: 'Dans un passage étroit (pont, rétrécissement, chantier), le conducteur doit céder le passage aux véhicules venant en sens inverse : la priorité est à ceux d''en face.'
+  signification: 'Dans un passage étroit, céder le passage aux véhicules venant en sens inverse : la priorité est à ceux d''en face.'
   conduite: Ralentir, s'arrêter avant le rétrécissement si un véhicule arrive en face, et ne s'engager que lorsque la voie est libre.
-  complement: Placé à l'entrée du passage étroit, côté non prioritaire. En face, les usagers voient le panneau C18.
-  piege: 'Piège majeur : B15 (rond blanc/rouge, flèche rouge vers le haut = MOI, je cède) ≠ C18 (carré bleu, flèche blanche vers le haut = MOI, je suis prioritaire, flèche rouge = l''autre). La flèche rouge désigne toujours celui qui cède.'
+  complement: À l'entrée du passage étroit, côté non prioritaire ; en face, le C18.
+  piege: 'La flèche ROUGE désigne toujours celui qui cède : sur B15 elle est à droite, c''est moi.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -462,7 +452,7 @@
   nom: Signaux sonores interdits
   signification: Interdiction d'utiliser l'avertisseur sonore (klaxon), sauf danger immédiat (l'usage en cas de danger reste toujours autorisé).
   conduite: Ne pas klaxonner ; de nuit, avertir par appel de phares.
-  complement: 'Placé à l''endroit où commence l''interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre). Fin : B35. Hors panneau, le klaxon est interdit en agglomération sauf danger immédiat (R416-1) ; de nuit, on avertit par appels de phares, le klaxon n''étant admis qu''en cas d''absolue nécessité (R416-2).'
+  complement: 'Fin : B35. Hors panneau, le klaxon est interdit en agglomération sauf danger immédiat (R416-1) ; de nuit, on avertit par appels de phares, le klaxon n''étant admis qu''en cas d''absolue nécessité (R416-2).'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -475,7 +465,6 @@
   nom: Interdiction de circuler sans maintenir un intervalle minimal
   signification: 'Interdiction aux véhicules de circuler sans maintenir entre eux un intervalle au moins égal à la distance indiquée (ex. 70 m) : tunnels, ponts, cols.'
   conduite: Maintenir la distance indiquée avec le véhicule qui précède ; s'aider des repères au sol (chevrons, plots) quand ils existent.
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   piege: 'Fréquent à l''entrée des tunnels (ex. Mont-Blanc : 150 m). Ne pas confondre avec B14 (vitesse).'
   theme: L
   sous_theme: panneaux
@@ -488,7 +477,6 @@
     commons: France road sign B18a.svg
   nom: Accès interdit aux véhicules transportant des marchandises explosives ou facilement inflammables
   signification: Interdiction d'accès aux véhicules transportant des marchandises explosives ou facilement inflammables (signalés comme tels).
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -500,7 +488,6 @@
     commons: France road sign B18b.svg
   nom: Accès interdit aux véhicules transportant des marchandises susceptibles de polluer les eaux
   signification: Interdiction d'accès aux véhicules transportant des marchandises de nature à polluer les eaux (zones de captage, bords de lacs).
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -512,7 +499,6 @@
     commons: France road sign B18c.svg
   nom: Accès interdit aux véhicules transportant des marchandises dangereuses
   signification: Interdiction d'accès aux véhicules transportant des marchandises dangereuses (signalés par des plaques orange), typiquement à l'entrée de certains tunnels et zones urbaines.
-  complement: Placé à l'endroit où commence l'interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre).
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -525,7 +511,7 @@
   nom: Autre interdiction (par inscription)
   signification: Interdiction dont la nature est indiquée par une inscription sur le panneau (ex. « interdit aux quads », « interdit aux trottinettes »).
   conduite: Lire l'inscription et s'y conformer.
-  complement: 'Placé à l''endroit où commence l''interdiction ; répété après chaque intersection (sauf voies privées et chemins de terre). Fin : B39.'
+  complement: 'Fin : B39.'
   theme: L
   sous_theme: panneaux
   importance: utile

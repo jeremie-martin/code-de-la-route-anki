@@ -7,7 +7,6 @@
   nom: Cassis ou dos-d'âne (temporaire)
   signification: Annonce temporairement une déformation de la chaussée (tranchée, cassis, dos-d'âne) liée à des travaux.
   conduite: Ralentir fortement.
-  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -20,7 +19,6 @@
   nom: Chaussée rétrécie (temporaire)
   signification: Annonce un rétrécissement temporaire de la chaussée (chantier) ; variantes AK3a (par la droite) et AK3b (par la gauche).
   conduite: Ralentir, se replacer, ne pas dépasser ; appliquer les règles de croisement (B15/C18, K10, feux KR11).
-  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -32,7 +30,6 @@
     commons: France road sign AK3a.svg
   nom: Chaussée rétrécie par la droite (temporaire)
   signification: Rétrécissement temporaire par la droite.
-  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue).'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -44,7 +41,6 @@
     commons: France road sign AK3b.svg
   nom: Chaussée rétrécie par la gauche (temporaire)
   signification: Rétrécissement temporaire par la gauche.
-  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue).'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -57,7 +53,6 @@
   nom: Chaussée glissante (temporaire)
   signification: Annonce une chaussée temporairement glissante (boue de chantier, gravillons, enrobé frais, verglas localisé).
   conduite: Ralentir, éviter freinages et accélérations brusques.
-  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -69,8 +64,8 @@
     commons: France road sign AK5.svg
   nom: Travaux
   signification: 'Annonce une zone de travaux (chantier) sur ou près de la chaussée : présence d''ouvriers, d''engins, de modifications de la circulation.'
-  conduite: Ralentir (souvent 70 ou 50 km/h par panneau B14 jaune), redoubler d'attention, respecter les balises et les signaleurs ; les limitations de vitesse de chantier sont contrôlées.
-  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Peut être répété ; sur autoroute, souvent à 1 000 m / 500 m. Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire. Le panneau AK5 seul n''impose pas de vitesse : c''est le B14 associé qui la fixe.'
+  conduite: Ralentir (souvent 70 ou 50 par B14 jaune), respecter les balises et les signaleurs.
+  complement: 'Sur autoroute, souvent répété à 1 000 m et 500 m. AK5 seul n''impose aucune vitesse : c''est le B14 associé.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -83,7 +78,6 @@
   nom: Autres dangers (temporaire)
   signification: Annonce un danger temporaire non prévu par un autre panneau, précisé par le panonceau KM9 (« sortie de camions », « bande rugueuse », « déviation »...).
   conduite: Ralentir et lire le panonceau.
-  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -95,8 +89,7 @@
     commons: France road sign AK17.svg
   nom: Annonce de signaux lumineux temporaires
   signification: Annonce des feux tricolores temporaires (feux de chantier KR11) réglant une circulation alternée.
-  conduite: Ralentir, se préparer à s'arrêter au feu ; ne pas passer au rouge même si la voie semble libre (véhicules en face non visibles).
-  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
+  conduite: Ralentir, se préparer à s'arrêter ; ne pas passer au rouge même si la voie semble libre.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -109,7 +102,6 @@
   nom: Projection de gravillons
   signification: 'Annonce un risque de projection de gravillons (chaussée fraîchement gravillonnée) : danger pour les pare-brise et adhérence réduite.'
   conduite: Ralentir (souvent B14 50 associé), augmenter les distances, éviter de dépasser ou de croiser à vive allure.
-  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -122,7 +114,6 @@
   nom: Bouchon
   signification: Annonce un ralentissement ou un bouchon (file de véhicules à l'arrêt) à proximité, souvent sur panneau lumineux ou remorque.
   conduite: Ralentir immédiatement, allumer brièvement les feux de détresse pour prévenir ceux qui suivent, garder ses distances.
-  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -135,7 +126,6 @@
   nom: Accident
   signification: Annonce un accident sur la route à proximité (signalisation d'urgence).
   conduite: Ralentir fortement, ne pas se laisser distraire, se préparer à une circulation alternée ou à un arrêt.
-  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -148,7 +138,6 @@
   nom: Nappes de brouillard ou de fumées épaisses
   signification: Annonce des nappes de brouillard ou de fumées (incendie, écobuage) réduisant la visibilité, souvent sur panneau à messages variables (XAK32).
   conduite: Ralentir (50 km/h maximum si visibilité < 50 m), allumer feux de croisement et feux de brouillard avant, augmenter les distances.
-  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -186,8 +175,8 @@
     gen: cone
     params: {}
   nom: Cône de signalisation
-  signification: Cône rouge et blanc (ou orange) délimitant la position des limites d'un chantier ou d'un obstacle temporaire, en file pour guider la circulation.
-  conduite: Rester dans l'espace laissé libre, ne pas renverser ni franchir la file de cônes.
+  signification: Cône rouge et blanc délimitant un chantier ou un obstacle temporaire, posé en file pour guider.
+  conduite: Rester dans l'espace laissé libre ; ne pas franchir la file de cônes.
   complement: Le long des limites du chantier.
   theme: L
   sous_theme: panneaux
@@ -211,18 +200,19 @@
   image:
     commons: K5D.svg
   nom: Balise de guidage temporaire
-  signification: 'Balise de guidage K5d : cylindre (ou lame) jaune à bandes blanches rétroréfléchissantes, implantée en file pour guider les usagers le long d''une déviation de trajectoire ; la balise d''alignement rouge et blanche est la K5c.'
+  signification: Balise de guidage jaune à bandes blanches rétroréfléchissantes, implantée en file le long d'une déviation de trajectoire.
   theme: L
   sous_theme: panneaux
   importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: La balise d'alignement rouge et blanche est la K5c.
 - id: k8
   type: panneau
   code: K8
   image:
     commons: K8e1.svg
   nom: Balise de position de déviation ou de rétrécissement (chantier)
-  signification: 'Balise rectangulaire blanche portant un chevron rouge (parfois une flèche) implantée en tête de chantier ou de déviation : elle indique de quel côté contourner l''obstacle ou le rétrécissement.'
+  signification: 'Balise blanche à chevron rouge implantée en tête de chantier ou de déviation : elle indique de quel côté contourner.'
   conduite: Se déporter du côté indiqué par la flèche.
   complement: En tête de zone de chantier.
   theme: L
@@ -237,7 +227,7 @@
   nom: Signal manuel « passage » (piquet K10, face verte)
   signification: 'Face verte du piquet mobile K10 tenu par un signaleur de chantier : autorisation de passer (circulation alternée réglée manuellement).'
   conduite: Passer prudemment en respectant les limitations du chantier ; obéir au signaleur comme à un agent.
-  complement: 'Tenu par un signaleur à chaque extrémité de l''alternat. Piquet K10 à deux faces : K10a = face VERTE (passer), K10b = face ROUGE (arrêt). Le signaleur de chantier a autorité pour arrêter la circulation.'
+  complement: 'Piquet K10 à deux faces : K10a = VERTE (passer), K10b = ROUGE (arrêt). Le signaleur a autorité pour arrêter la circulation.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -248,7 +238,7 @@
   image:
     commons: K10b.svg
   nom: Signal manuel « arrêt » (piquet K10, face rouge)
-  signification: 'Face rouge du piquet mobile K10 (disque rouge, éventuellement avec inscription « STOP ») tenu par un signaleur : arrêt obligatoire.'
+  signification: 'Face rouge du piquet K10 tenu par un signaleur : arrêt obligatoire.'
   conduite: S'arrêter à hauteur du signaleur et attendre qu'il présente la face verte.
   complement: Tenu par un signaleur à chaque extrémité de l'alternat.
   theme: L
@@ -285,8 +275,8 @@
   image:
     commons: KC1 route barrée.svg
   nom: Panneau d'indication temporaire (route barrée, circulation alternée…)
-  signification: 'Panneau rectangulaire jaune portant une inscription qui informe d''une situation temporaire : « ROUTE BARRÉE », « CIRCULATION ALTERNÉE », « ABSENCE DE SIGNALISATION HORIZONTALE », « CHAUSSÉE DÉFORMÉE », « BARRIÈRE DE DÉGEL », « SORTIE DE CAMIONS »…'
-  conduite: 'Lire et adapter sa conduite ; « absence de marquage » : rouler à droite, doubler avec prudence ; « route barrée » : suivre la déviation.'
+  signification: 'Panneau rectangulaire jaune à inscription informant d''une situation temporaire : « ROUTE BARRÉE », « CIRCULATION ALTERNÉE », « CHAUSSÉE DÉFORMÉE »…'
+  conduite: 'Lire et appliquer : « route barrée » = déviation ; « absence de marquage » = serrer à droite.'
   complement: En présignalisation (avec distance) et en position.
   theme: L
   sous_theme: panneaux
@@ -298,8 +288,8 @@
   image:
     commons: KD8e3.svg
   nom: Présignalisation de changement de chaussée ou de trajectoire
-  signification: Panneau jaune schématisant un basculement de circulation (passage sur la chaussée opposée, déport de voies) sur route à chaussées séparées ou autoroute.
-  conduite: Suivre la trajectoire indiquée, ralentir ; on peut se retrouver à contresens de la chaussée habituelle, séparé par des balises.
+  signification: Panneau jaune schématisant un basculement de circulation (passage sur la chaussée opposée, déport de voies).
+  conduite: 'Suivre la trajectoire indiquée et ralentir : on peut rouler sur la chaussée opposée.'
   complement: En amont du basculement.
   theme: L
   sous_theme: panneaux
@@ -377,8 +367,8 @@
     params:
       state: rouge
   nom: Feux tricolores temporaires (feux de chantier)
-  signification: 'Feux tricolores mobiles (jaunes/portables) réglant une circulation alternée sur une voie unique en zone de chantier ; mêmes règles que les feux permanents : rouge = arrêt, jaune = arrêt sauf impossibilité, vert = passage.'
-  conduite: S'arrêter au rouge devant le feu même si l'on ne voit personne en face ; ne pas s'engager au vert si la voie n'est pas dégagée ; ne pas dépasser dans l'alternat.
+  signification: Feux tricolores mobiles réglant une circulation alternée sur voie unique en chantier ; mêmes règles que les feux permanents.
+  conduite: S'arrêter au rouge même sans personne en face ; ne pas s'engager au vert si la voie n'est pas dégagée.
   complement: À chaque extrémité de la section en alternat ; annoncés par AK17.
   theme: L
   sous_theme: panneaux
@@ -390,10 +380,11 @@
     gen: triangle_seul
     params: {}
   nom: Triangle de présignalisation (véhicule en panne ou accidenté)
-  signification: Triangle rouge rétroréfléchissant que tout conducteur doit placer sur la chaussée pour signaler son véhicule immobilisé (panne, accident) sur la route, en complément des feux de détresse. Équipement obligatoire à bord avec le gilet haute visibilité.
-  conduite: 'Enfiler le gilet avant de sortir, placer le triangle à 30 m au moins en amont du véhicule (davantage si la visibilité est réduite ; sur autoroute, ne pas le poser si cela expose à un danger : rester derrière la glissière), allumer les feux de détresse.'
-  complement: 'Au moins 30 m en amont du véhicule (plus loin si visibilité réduite, virage, sommet de côte), sauf danger pour soi (autoroute). Gilet et triangle obligatoires à bord : absence = 11 € (1re classe) ; ne pas revêtir le gilet ou ne pas présignaler un véhicule dangereux = 135 € (4e classe). Sur autoroute, la pose du triangle est déconseillée si elle met en danger : priorité à l''évacuation derrière la glissière.'
+  signification: Triangle rouge rétroréfléchissant à placer sur la chaussée pour signaler un véhicule immobilisé. Obligatoire à bord avec le gilet.
+  conduite: Gilet avant de sortir, feux de détresse, triangle au moins 30 m en amont — sauf si cela m'expose.
+  complement: 'Sur autoroute, ne pas poser le triangle si cela met en danger : priorité à l''évacuation derrière la glissière.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: Absence à bord = 11 € ; ne pas revêtir le gilet ou ne pas présignaler = 135 €.

@@ -5,13 +5,14 @@
   image:
     commons: France road sign EB10.svg
   nom: Entrée d'agglomération
-  signification: 'Indique l''entrée dans une agglomération : dès ce panneau, les règles propres à l''agglomération s''appliquent (vitesse limitée à 50 km/h sauf indication, priorité à droite en l''absence de signalisation, klaxon interdit sauf danger, feux de croisement obligatoires de nuit...).'
-  conduite: Réduire à 50 km/h au niveau du panneau (avant s'il faut ralentir), redoubler d'attention (piétons, cyclistes, intersections).
-  complement: 'À la limite de l''agglomération, surmonté d''un cartouche de route (E41-E44). Seuls B14 (< 50 km/h, valable alors pour toute l''agglomération), AB6, AB7, B30, B52, E31, E32 peuvent partager son support. Fin : EB20. Un 70 (relèvement) est implanté après l''EB10 et ne vaut que sur la route concernée, jusqu''à la prochaine intersection ou au B33. Un E31 (lieu-dit, lettres italiques blanches sur fond noir) ne limite PAS la vitesse à 50.'
+  signification: 'Entrée d''agglomération : à partir du panneau, 50 km/h sauf indication, priorité à droite en l''absence de signalisation, klaxon interdit sauf danger.'
+  conduite: Être à 50 km/h au niveau du panneau ; redoubler d'attention (piétons, cyclistes, intersections).
+  complement: 'Fin : EB20. Seuls B14 (< 50, valable alors dans toute l''agglomération), AB6, AB7, B30, B52, E31, E32 partagent son support.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: Un E31 (lieu-dit, lettres italiques blanches sur fond noir) ne limite PAS la vitesse à 50.
 - id: eb20
   type: panneau
   code: EB20
@@ -33,10 +34,10 @@
     params:
       text: Le Bourg
   nom: Localisation d'un lieu-dit ou d'un lieu traversé
-  signification: 'Indique le nom d''un lieu traversé par la route qui n''est pas une agglomération : lieu-dit, hameau, forêt, quartier, col, pont. N''implique aucune règle particulière (pas de limitation à 50).'
+  signification: 'Nom d''un lieu traversé qui n''est pas une agglomération : lieu-dit, hameau, forêt, col, pont. Aucune règle particulière.'
   conduite: 'Aucune obligation : la limitation reste celle de la route (sauf panneau B14 associé).'
-  complement: Peut être placé sur le même support qu'EB10 (le nom du hameau sous celui de la commune).
-  piege: 'Piège classique : lettres ITALIQUES blanches sur fond noir = lieu-dit (pas d''agglomération) ; lettres DROITES noires sur fond blanc bordé de rouge = agglomération (50 km/h).'
+  complement: Peut être sur le même support qu'EB10.
+  piege: Lettres ITALIQUES blanches sur fond noir = lieu-dit ; lettres droites noires sur fond blanc bordé de rouge = agglomération.
   theme: L
   sous_theme: panneaux
   importance: essentiel

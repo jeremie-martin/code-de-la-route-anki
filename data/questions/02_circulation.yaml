@@ -1,80 +1,75 @@
+# L — Circulation : cartes de décision (situation → décision + raison). Voir docs/research/brief-v2-redaction.md.
+# Les listes de la v1 ont été découpées en décisions et en affirmations (data/affirmations/02_circulation.yaml).
 - id: l-priorite-droite-defaut
-  question: À une intersection sans aucune signalisation, qui a la priorité ?
-  reponse: Le véhicule qui vient de droite (priorité à droite) — quelle que soit sa taille ou sa vitesse, et même si c'est un vélo.
-  explication: 'Règle par défaut (R415-5), valable aussi dans les zones 30 et sur les ronds-points sans panneau. On ralentit à l''approche pour pouvoir s''arrêter si un véhicule arrive de droite. Refus : 135 €, 4 points.'
+  question: À une intersection sans panneau, sans feu et sans marquage, qui passe en premier ?
+  reponse: Le véhicule qui vient de ma droite — quelle que soit sa taille ou sa vitesse, et même s'il s'agit d'un vélo ou d'une trottinette.
+  explication: 'Règle par défaut (R415-5), valable en agglomération comme hors agglomération, en zone 30 et sur un rond-point sans panneau AB25. J''approche au ralenti pour pouvoir m''arrêter. Refus de priorité : 135 €, 4 points.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-5
-- id: l-priorite-droite-exceptions
-  question: Dans quels cas la priorité à droite ne s'applique-t-elle PAS au véhicule qui vient de droite ?
-  reponse: Sortie d'un parking, d'une voie privée, d'un chemin de terre ou d'une aire (il cède à tous, y compris aux piétons du trottoir), STOP ou cédez-le-passage sur sa route, insertion sur autoroute, entrée d'un carrefour à sens giratoire — ou quand un agent, un feu ou un panneau de priorité en dispose autrement.
-  explication: 'Le véhicule qui quitte un lieu non ouvert à la circulation publique cède le passage à tous, piétons compris (R415-9). Attention : un chemin de terre qui débouche sur une route goudronnée n''est pas prioritaire.'
+- id: l-sortie-parking-priorite
+  question: 'Je sors d''un parking de supermarché : je dois franchir le trottoir puis m''engager dans la rue. Qui passe avant moi ?'
+  reponse: 'Tout le monde : les piétons qui marchent sur le trottoir et tous les véhicules de la rue, qu''ils viennent de ma gauche ou de ma droite.'
+  explication: 'R415-9 : le conducteur qui débouche d''un lieu non ouvert à la circulation publique (parking, station-service, chemin de terre, voie privée) cède le passage à tous. Refus : 135 €, 4 points.'
   theme: L
   sous_theme: priorites
-  source: Code de la route, art. R415-9, R415-10, R421-3
+  source: Code de la route, art. R415-9
 - id: l-stop-arret
-  question: Au STOP, où et comment doit-on s'arrêter ?
-  reponse: Arrêt complet (roues immobiles) à la limite de la chaussée abordée, c'est-à-dire à la ligne blanche continue (ou à l'aplomb du panneau s'il n'y a pas de ligne), puis céder le passage aux véhicules des deux côtés avant de repartir.
-  explication: Le STOP impose l'arrêt même si la route est visiblement libre. On peut ensuite avancer prudemment pour améliorer la visibilité. Ne pas marquer l'arrêt = 135 € et 4 points.
+  question: Au STOP, où exactement dois-je immobiliser mon véhicule ?
+  reponse: À la ligne blanche continue tracée au sol — ou, si elle manque, à la limite de la chaussée abordée — roues complètement immobiles, avant de céder le passage.
+  explication: 'L''arrêt s''impose même si la route paraît libre (135 €, 4 points). Une fois arrêté, je peux avancer au pas pour améliorer ma visibilité, puis je cède le passage des deux côtés.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-6
-- id: l-cedez-vs-stop
-  question: Quelle différence entre un cédez-le-passage (AB3a) et un STOP (AB4) ?
-  reponse: Les deux obligent à laisser passer les véhicules de la route abordée ; le STOP impose en plus un arrêt complet à la ligne, alors qu'au cédez-le-passage on peut passer sans s'arrêter si la voie est libre.
-  explication: Le cédez-le-passage est un triangle pointe en bas (bordé de rouge) ; sa ligne au sol est discontinue (traits de 50 cm espacés de 50 cm) ; celle du STOP est continue. Les deux sont présignalés à 150 m hors agglomération (AB3b / AB5).
-  theme: L
-  sous_theme: priorites
-  source: Code de la route, art. R415-6 et R415-7 ; IISR
 - id: l-tourner-gauche-regle
-  question: Quand je tourne à gauche à une intersection, à qui dois-je céder le passage ?
-  reponse: Aux véhicules qui viennent en face (tout droit ou qui tournent à droite), en plus de ceux qui viennent de ma droite si la priorité à droite s'applique.
-  explication: Je me place près de l'axe médian (sans le franchir), clignotant, et j'attends au centre de l'intersection si nécessaire ; je termine mon virage dès que c'est libre, même si le feu est passé à l'orange. Deux véhicules qui tournent à gauche face à face se croisent par la droite (chacun contourne le centre de l'intersection) sauf marquage de guidage contraire.
+  question: Je tourne à gauche à une intersection sans feu. À qui dois-je céder le passage ?
+  reponse: Aux véhicules qui viennent en face (qu'ils aillent tout droit ou qu'ils tournent à droite) et à ceux qui arrivent de ma droite si la priorité à droite s'applique.
+  explication: Je me place près de l'axe médian sans le franchir, clignotant allumé, et j'attends au centre du carrefour si nécessaire ; je termine mon virage dès que la voie est libre.
   theme: L
   sous_theme: priorites
-  source: Code de la route, art. R415-4 et R412-30
+  source: Code de la route, art. R415-4 et R412-10
 - id: l-giratoire-vs-rond-point
-  question: Quelle différence entre un carrefour à sens giratoire et un rond-point ?
-  reponse: 'Carrefour à sens giratoire (panneau AB25 + cédez-le-passage aux entrées) : les véhicules déjà dans l''anneau sont prioritaires. Rond-point sans panneau (rare, ex. place de l''Étoile) : priorité à droite, donc à ceux qui entrent.'
-  explication: 'Dans le giratoire : on circule dans le sens inverse des aiguilles d''une montre, on se place à droite pour sortir à la 1re ou 2e sortie, à gauche/au centre pour aller plus loin (puis on se rabat en signalant), clignotant droit avant chaque sortie. Changer de voie à l''intérieur est permis en signalant (R412-9), mais un giratoire reste une intersection : on n''y dépasse pas un autre véhicule (R414-11, sauf un deux-roues).'
+  question: Quelle différence entre un carrefour à sens giratoire et un simple rond-point, pour les priorités ?
+  reponse: 'Giratoire (panneau AB25 + cédez-le-passage aux entrées) : les usagers déjà dans l''anneau passent. Rond-point sans panneau : priorité à droite, donc à ceux qui entrent.'
+  explication: 'On y circule dans le sens inverse des aiguilles d''une montre. Un giratoire reste une intersection : on n''y dépasse pas un autre véhicule (R414-11, sauf un deux-roues). Le rond-point à priorité à droite est devenu rare (place de l''Étoile).'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-10 ; IISR (AB25)
 - id: l-giratoire-clignotant
   question: Dans un carrefour à sens giratoire, quand met-on le clignotant ?
-  reponse: Clignotant droit avant de sortir (dès la sortie précédant la sienne) ; clignotant gauche à l'entrée seulement si l'on va au-delà de la 2e sortie (on se place alors à gauche/au centre) ; aucun clignotant pour aller tout droit.
-  explication: Avant de sortir, contrôle du rétroviseur droit et de l'angle mort (cyclistes sur le pourtour), puis rabattement progressif à droite.
+  reponse: Clignotant droit avant chaque sortie, dès qu'on dépasse la sortie précédente ; clignotant gauche à l'entrée seulement si l'on va au-delà de la moitié de l'anneau.
+  explication: Aucun clignotant pour aller tout droit à l'entrée. Avant de sortir, contrôle du rétroviseur droit et de l'angle mort (cyclistes et deux-roues sur le pourtour extérieur).
   theme: L
   sous_theme: priorites
   source: REMC ; Codes Rousseau — Le giratoire
-- id: l-vehicules-prioritaires
-  question: Quels véhicules bénéficient d'une priorité absolue, et comment les reconnaît-on ?
-  reponse: 'Les véhicules d''intérêt général prioritaires — police, gendarmerie, douanes, pompiers, SAMU, déminage, transports de détenus (et depuis juillet 2026 la sûreté SNCF/RATP) — quand ils annoncent leur approche par gyrophare bleu + sirène « deux tons » : tout usager doit leur céder le passage et faciliter leur progression.'
-  explication: 'Sans sirène, ils circulent comme les autres. Les véhicules « à facilités de passage » (ambulances privées, EDF/gaz, transports de fonds, médecins) ont des feux bleus ou orange à éclats et un avertisseur « trois tons » : on facilite leur passage sans obligation légale de céder. Gyrophare orange = véhicule lent ou encombrant, aucune priorité.'
+- id: l-giratoire-placement
+  question: Giratoire à deux voies ; je veux prendre la troisième sortie. Sur quelle voie entrer, et comment en sortir ?
+  reponse: J'entre sur la voie de gauche en signalant à gauche ; avant ma sortie je me rabats à droite au clignotant droit, après contrôle du rétroviseur et de l'angle mort.
+  explication: 'Changer de voie à l''intérieur de l''anneau est permis à condition de signaler (R412-9). Pour la 1re ou la 2e sortie, on reste sur la voie de droite. Piège : un poids lourd à cheval sur les deux voies ne se dépasse pas.'
   theme: L
   sous_theme: priorites
-  source: Code de la route, art. R311-1, R415-12, R313-27 et R313-28
+  source: Code de la route, art. R415-10 et R412-9 ; REMC
 - id: l-bus-quitte-arret
   question: En agglomération, un bus met son clignotant pour quitter son arrêt. Que dois-je faire ?
-  reponse: Ralentir et, au besoin, m'arrêter pour le laisser sortir — sans freiner brusquement ni forcer le passage.
-  explication: 'Article R412-11 : « faciliter la sortie » du bus en agglomération ; hors agglomération, le bus attend une place. Le bus reste responsable de ne pas mettre en danger.'
+  reponse: Ralentir et, au besoin, m'arrêter pour le laisser reprendre sa place — sans freiner brusquement ni forcer le passage.
+  explication: 'R412-11 : en agglomération seulement, « ralentir si nécessaire et au besoin s''arrêter » pour laisser un véhicule de transport en commun quitter un arrêt signalé. Hors agglomération, le car attend une interruption du trafic.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R412-11
-- id: l-pieton-priorite
-  question: Quand dois-je céder le passage à un piéton ?
-  reponse: Dès qu'il est engagé sur la chaussée ou qu'il manifeste clairement l'intention de traverser (pied sur le bord, geste, regard vers moi), sur un passage piéton ou non ; toujours dans une aire piétonne ou une zone de rencontre ; et toujours quand un agent ou un feu le lui permet.
-  explication: 'Priorité piéton : 135 €, 6 points. Piège : un piéton qui attend immobile loin du bord ne « manifeste » pas l''intention — mais dans le doute, on ralentit et on lui laisse le passage. Ne jamais s''arrêter sur le passage ni dépasser un véhicule arrêté devant.'
-  theme: L
-  sous_theme: priorites
-  source: Code de la route, art. R415-11 et R414-5
 - id: l-insertion-autoroute-priorite
   question: Sur une voie d'accélération (entrée d'autoroute ou de voie rapide), ai-je la priorité pour m'insérer ?
-  reponse: 'Non : je cède le passage aux véhicules déjà sur l''autoroute ; ils facilitent souvent l''insertion en se déportant, mais rien ne les y oblige.'
-  explication: On utilise toute la longueur de la voie d'accélération pour atteindre la vitesse du trafic, clignotant, contrôles, et on s'insère de préférence derrière un véhicule. Sur une voie d'entrecroisement, chacun facilite (fermeture éclair) mais l'entrant reste non prioritaire.
+  reponse: 'Non : je cède le passage à ceux qui circulent déjà sur l''autoroute ; ils facilitent souvent l''insertion en se déportant, mais rien ne les y oblige.'
+  explication: R421-3. J'utilise toute la longueur de la voie d'accélération pour atteindre la vitesse du flux, clignotant et contrôles faits, et je m'insère de préférence derrière un véhicule.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R421-3
+- id: l-entrecroisement
+  question: Sur une voie d'entrecroisement (l'entrée d'un échangeur rejoint la sortie du suivant), qui doit céder le passage ?
+  reponse: 'Celui qui change de voie : entrant et sortant se croisent et chacun facilite l''autre en ajustant sa vitesse. La priorité à droite ne s''y applique pas.'
+  explication: Tronçon fréquent entre deux échangeurs rapprochés, délimité par une ligne discontinue à traits rapprochés. On s'y insère en « fermeture éclair », sans jamais s'arrêter sur la voie.
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R421-3 ; IISR 7e partie art. 117-3
 - id: l-intersection-encombree
   question: 'Le feu est vert mais l''intersection est bouchée derrière : puis-je m''engager ?'
   reponse: 'Non : je ne m''engage que si je suis sûr de ne pas rester immobilisé dans l''intersection et de bloquer les voies transversales.'
@@ -82,146 +77,160 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R412-33
+- id: l-sortie-stationnement
+  question: Je quitte ma place de stationnement le long du trottoir pour reprendre la circulation. Qui a la priorité ?
+  reponse: 'Les véhicules qui circulent déjà : je mets le clignotant, je contrôle rétroviseurs et angle mort, et je ne m''engage que lorsque la voie est libre.'
+  explication: R412-10 impose d'avertir avant de reprendre sa place dans le courant de la circulation. Celui qui sort d'un stationnement ne bénéficie d'aucune priorité, pas même la priorité à droite.
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R412-10
 - id: l-depassement-conditions
-  question: Avant de dépasser, quelles conditions faut-il réunir ?
-  reponse: Visibilité suffisante vers l'avant, aucun véhicule qui me dépasse déjà ou s'apprête à le faire (rétroviseurs + angle mort), aucune ligne continue ni interdiction, écart de vitesse suffisant pour dépasser vite, place pour me rabattre sans gêner — puis clignotant gauche, dépassement, et retour à droite quand je vois le véhicule dépassé en entier dans mon rétroviseur intérieur.
-  explication: Le dépassement se fait à gauche ; on n'accélère pas si c'est le véhicule devant qui accélère (on renonce). Clignotant droit pour se rabattre.
+  question: Avant de me déporter pour dépasser, de quoi dois-je m'être assuré ?
+  reponse: De pouvoir me rabattre ensuite sans gêner le véhicule dépassé ; d'avoir l'écart de vitesse pour dépasser brièvement ; de ne pas être moi-même sur le point d'être dépassé.
+  explication: Les trois conditions de R414-4. S'y ajoutent la visibilité et l'absence d'interdiction, puis la séquence rétroviseur intérieur, rétroviseur gauche, clignotant, angle mort. Si le véhicule de devant accélère, je renonce.
   theme: L
   sous_theme: depassement
-  source: Code de la route, art. R414-4 et R414-10
+  source: Code de la route, art. R414-4
+- id: l-depassement-rabattement
+  question: Pendant un dépassement, à quel moment puis-je revenir à droite ?
+  reponse: Quand je vois le véhicule dépassé en entier dans mon rétroviseur intérieur ; je signale à droite et je me rabats sans l'obliger à ralentir.
+  explication: 'R414-10 : se rabattre sans provoquer le ralentissement du véhicule dépassé. Se rabattre trop tôt est la faute classique, surtout après un poids lourd, dont le gabarit trompe sur la distance.'
+  theme: L
+  sous_theme: depassement
+  source: Code de la route, art. R414-10
 - id: l-depassement-interdit-lieux
-  question: Quelles conditions de visibilité ou de marquage interdisent de dépasser ?
-  reponse: Une visibilité insuffisante vers l'avant (virage, sommet de côte, brouillard), une ligne continue (ou mixte continue de mon côté), et un panneau B3 d'interdiction de dépasser (B3a pour les poids lourds).
-  explication: 'Dépassement dangereux : 135 €, 3 points. Une ligne de dissuasion (traits longs) n''interdit pas mais déconseille ; sans visibilité, le marquage discontinu ne protège pas.'
+  question: Sur une route à double sens, qu'est-ce qui m'interdit de dépasser, indépendamment du trafic ?
+  reponse: Une visibilité insuffisante vers l'avant (virage ou sommet de côte) ; une ligne continue de mon côté (seule ou mixte) ; un panneau B3.
+  explication: 'Dépassement dangereux : 135 €, 3 points. Une ligne de dissuasion (traits longs, espaces courts) n''interdit pas mais déconseille ; sans visibilité, un marquage discontinu ne protège pas.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-11 à R414-14
 - id: l-depassement-interdit-lieux-2
   question: Quels lieux interdisent de dépasser un véhicule (à quatre roues), même avec une bonne visibilité ?
-  reponse: Les intersections où l'on n'est pas prioritaire, les passages à niveau sans barrière, l'approche d'un passage piéton où un véhicule est arrêté ou ralentit, et un tramway ou un bus arrêté côté voyageurs.
+  reponse: Les intersections où l'on n'est pas prioritaire, les passages à niveau sans barrière, l'approche d'un passage piéton où un véhicule est arrêté ou ralentit, et un tramway ou un train arrêté côté voyageurs.
   explication: 'Dépasser à une intersection reste possible si l''on est sur la route prioritaire (AB6, AB2), aux feux ou avec un agent, et pour dépasser un deux-roues. Dépassement dangereux : 135 €, 3 points.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-11 à R414-13
 - id: l-depassement-droite
   question: Dans quels cas dépasse-t-on par la droite ?
-  reponse: Un véhicule dont le conducteur a signalé qu'il tourne à gauche (et s'est placé à gauche), et un tramway (si la place suffit).
-  explication: 'En files parallèles denses (routes à plusieurs voies dans le même sens, sens uniques), avancer plus vite que la file de gauche n''est pas un dépassement. Sinon, dépasser par la droite : 135 €, 3 points — et interdit sur autoroute.'
+  reponse: Un véhicule dont le conducteur a signalé qu'il tourne à gauche (et s'est placé à gauche), et un tramway (si la place à droite suffit).
+  explication: 'En files parallèles denses (sens unique, routes à plusieurs voies dans le même sens), avancer plus vite que la file de gauche n''est pas un dépassement. Hors de ces cas : 135 €, 3 points, et interdit sur autoroute.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-6 et R414-15
-- id: l-depassement-cycliste-ligne-continue
-  question: Un cycliste roule devant moi sur une route à ligne continue. Puis-je le dépasser ?
-  reponse: 'Oui, si la visibilité est suffisante et la voie d''en face libre : je peux chevaucher la ligne continue (pas la franchir entièrement) pour laisser 1 m en ville, 1,50 m hors agglomération.'
-  explication: 'Exception introduite en 2015 (R412-19), réservée aux cycles, EDPM et cyclomobiles légers : pour une moto ou un cyclomoteur, la ligne continue reste infranchissable. Sans visibilité ou avec un véhicule en face, j''attends derrière à distance.'
-  theme: L
-  sous_theme: depassement
-  source: Code de la route, art. R412-19 et R414-4
-- id: l-depassement-vehicule-tourne-gauche
-  question: Le véhicule devant moi ralentit avec son clignotant gauche pour tourner. Puis-je le dépasser par la gauche ?
-  reponse: 'Non : on ne dépasse jamais par la gauche un véhicule qui a signalé qu''il tourne à gauche ; on le dépasse par la droite si la place le permet, sinon on attend.'
-  explication: Classique des accidents graves. Même règle pour un véhicule qui se rabat vers la gauche pour entrer dans une propriété.
-  theme: L
-  sous_theme: depassement
-  source: Code de la route, art. R414-6
-- id: l-route-3-voies
-  question: Sur une route à trois voies (à double sens), comment utilise-t-on la voie centrale ?
-  reponse: Elle sert au dépassement, dans les deux sens ; on y reste le moins longtemps possible, on ne s'y engage que si elle est libre dans les deux sens, et jamais on n'utilise la voie de gauche (réservée au sens inverse).
-  explication: Sur une route à 4 voies à double sens (2 par sens), on ne dépasse que sur la voie de gauche de son sens. Des flèches ou une ligne mixte peuvent affecter la voie centrale à un sens.
-  theme: L
-  sous_theme: positionnement
-  source: Code de la route, art. R414-8 et R412-24
 - id: l-position-chaussee
   question: Où doit-on circuler sur la chaussée en marche normale ?
   reponse: À droite, sur la voie la plus à droite, près du bord — en laissant toutefois assez de place aux cyclistes et en tenant compte des véhicules stationnés (ouverture de portières).
-  explication: 'Sur les routes à plusieurs voies dans le même sens, la voie de gauche sert à dépasser ; rester à gauche sans raison est sanctionné (35 €, R412-9). Circuler à gauche sur une chaussée à double sens : 135 €, 3 points.'
+  explication: 'Sur les routes à plusieurs voies dans le même sens, les voies de gauche servent à dépasser ; rester à gauche sans raison est sanctionné (35 €, R412-9). Circuler à gauche sur une chaussée à double sens : 135 €, 3 points.'
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-9 et R412-23
-- id: l-demi-tour-marche-arriere
-  question: Où le demi-tour et la marche arrière sont-ils interdits ?
-  reponse: Sur autoroute et route à accès réglementé (même par une trouée du terre-plein), dans les tunnels, sur les ponts, dans les virages et sommets de côte sans visibilité, et partout où ils gêneraient ou mettraient en danger ; la marche arrière ne sert qu'à une manœuvre courte.
-  explication: 'Sur autoroute : 135 €, 4 points. Un demi-tour à une intersection ne se fait qu''en respectant les priorités et en signalant ; le demi-tour est aussi interdit sur une chaussée à ligne continue.'
+- id: l-tourner-droite-serrer
+  question: En ville, je m'apprête à tourner à droite dans la rue suivante. Comment me placer sur la chaussée ?
+  reponse: Je me rapproche du bord droit assez tôt, après contrôle du rétroviseur droit et de l'angle mort, pour ne pas laisser un deux-roues se glisser à ma droite.
+  explication: 'Le piège du tourne-à-droite : un cycliste ou un motard remonte par la droite et se retrouve serré contre le trottoir. S''il existe une bande cyclable, je ne m''y déporte pas (R412-23) et je laisse passer le cycliste qui continue tout droit (R415-14).'
   theme: L
   sous_theme: positionnement
-  source: Code de la route, art. R421-6, R412-9
+  source: Code de la route, art. R412-9, R412-23 et R415-14
+- id: l-file-changement
+  question: Avenue à sens unique à trois voies, circulation à l'arrêt sur toutes les files. Puis-je changer de file pour avancer plus vite ?
+  reponse: 'Non : quand la circulation est établie en files ininterrompues, je reste dans ma file et je n''en change que pour préparer un changement de direction.'
+  explication: 'R412-24. Dans ces conditions, une file qui avance plus vite qu''une autre n''est pas un dépassement (R414-15) : je n''ai rien à me reprocher, mais je ne zigzague pas non plus.'
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R412-24 et R414-15
+- id: l-demi-tour-marche-arriere
+  question: Où le demi-tour et la marche arrière sont-ils absolument interdits ?
+  reponse: Sur l'autoroute et les routes à accès réglementé (y compris par une trouée du terre-plein central) ; dans les tunnels ; sur toute chaussée où une ligne continue sépare les deux sens.
+  explication: 'Demi-tour ou marche arrière sur autoroute : 135 €, 4 points — au péage non plus, on ne recule pas. Ailleurs, la marche arrière n''est admise que pour une manœuvre courte, sans gêner ni surprendre.'
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R421-6 et R412-19
+- id: l-ligne-rive-franchir
+  question: Une ligne continue borde le côté droit de la chaussée (ligne de rive). Puis-je la franchir pour m'arrêter sur l'accotement ?
+  reponse: 'Oui : une ligne de rive n''est pas une ligne axiale ; elle peut être franchie pour s''arrêter hors chaussée, accéder à une propriété ou tourner.'
+  explication: 'Exception : la ligne de rive d''une bande d''arrêt d''urgence d''autoroute (traits très longs) ne se franchit qu''en cas de nécessité absolue (R412-22).'
+  theme: L
+  sous_theme: positionnement
+  source: IISR 7e partie ; Code de la route, art. R412-22
+- id: l-vocab-chaussee-voie
+  question: Quelle différence entre la chaussée, une voie et l'accotement ?
+  reponse: La chaussée est la partie de la route où circulent les véhicules ; une voie en est une subdivision, large d'une file de véhicules ; l'accotement est la partie latérale, hors chaussée.
+  explication: 'Vocabulaire des énoncés d''examen. La partie revêtue de l''accotement est la bande dérasée ; sur autoroute, c''est la bande d''arrêt d''urgence. Le trottoir, surélevé, est réservé aux piétons.'
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R110-2 ; IISR 7e partie
+- id: l-clignotant-quand
+  question: En dehors des changements de direction à une intersection, quand le clignotant est-il obligatoire ?
+  reponse: Avant tout déport à gauche, tout changement de voie, un dépassement et son rabattement, et pour reprendre la circulation après un arrêt ou un stationnement.
+  explication: 'R412-10 : avertir « tout changement dans la direction » du véhicule. Défaut de clignotant : 35 € et 3 points. Il s''allume assez tôt pour être compris, et s''éteint dès la manœuvre terminée.'
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R412-10
+- id: l-vitesse-adaptee
+  question: Le panneau indique 50 km/h. Puis-je toujours rouler à 50 ?
+  reponse: 'Non : c''est un maximum valable en conditions optimales seulement ; pluie, virage sans visibilité, rue étroite ou animée m''obligent à rouler plus lentement.'
+  explication: R413-17 impose de réduire sa vitesse au croisement de piétons ou de cyclistes, devant un transport d'enfants à l'arrêt, dans les virages et descentes, par visibilité insuffisante. Rouler « à la limite » peut donc être verbalisé.
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-17
+- id: l-retrecissement-croisement
+  question: Une chaussée se réduit à une seule voie sur un pont, sans panneau B15 ni C18. Un véhicule arrive en face. Qui passe ?
+  reponse: 'Celui dont la voie est libre : si l''obstacle est de mon côté, c''est à moi de m''arrêter et d''attendre. Le véhicule le plus large ou le plus long facilite le passage du plus petit.'
+  explication: 'R414-1 et R414-2 : chacun serre à droite ; sur chaussée étroite, les véhicules de plus de 2 m de large ou de 7 m de long s''arrêtent pour les plus petits. Quand les panneaux sont là, la flèche rouge désigne celui qui cède (B15).'
+  theme: L
+  sous_theme: croisement
+  source: Code de la route, art. R414-1 et R414-2
 - id: l-arret-vs-stationnement
   question: Quelle différence entre un arrêt et un stationnement ?
   reponse: L'arrêt est une immobilisation momentanée pour faire monter ou descendre des personnes, charger ou décharger, le conducteur restant à proximité pour pouvoir déplacer le véhicule ; toute autre immobilisation est un stationnement.
-  explication: Là où l'arrêt est interdit (ligne jaune continue, B6d), il l'est même pour une minute avec le moteur tournant. Là où seul le stationnement est interdit (ligne jaune discontinue, B6a1), un arrêt bref est toléré.
+  explication: Là où l'arrêt est interdit (ligne jaune continue, B6d), il l'est même pour une minute avec le moteur tournant. Là où seul le stationnement est interdit (ligne jaune discontinue, B6a1), un arrêt bref est admis.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R110-2
-- id: l-stationnement-tres-genant
-  question: Où l'arrêt et le stationnement sont-ils « très gênants » (135 €) ?
-  reponse: Sur les trottoirs, les passages piétons et les 5 m en amont, les bandes et pistes cyclables et voies vertes, les voies réservées (bus…), les places PMR, devant les bouches d'incendie et sur les bandes d'éveil de vigilance, et là où le véhicule masque un feu ou un panneau.
-  explication: 'Article R417-11 : 135 €, sans points, mise en fourrière possible. « Très gênant » vise les usagers vulnérables et les secours.'
+- id: l-stationnement-trottoir
+  question: Il n'y a plus de place ; je me gare avec deux roues sur le trottoir en laissant le passage aux piétons. Est-ce autorisé ?
+  reponse: 'Non : le stationnement d''un véhicule motorisé sur un trottoir est très gênant (135 €, fourrière possible), même s''il reste de la place pour passer.'
+  explication: 'R417-11 : le « très gênant » protège les usagers vulnérables — un piéton avec une poussette ou un fauteuil roulant est renvoyé sur la chaussée. Les deux-roues motorisés relèvent, eux, du stationnement gênant (35 €).'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-11
-- id: l-stationnement-genant
-  question: Où le stationnement est-il « gênant » (35 €) ?
-  reponse: En double file, devant les entrées carrossables, sur les ponts, dans les tunnels et passages souterrains, sur les emplacements de livraison, devant les bornes de recharge, sur la bande d'arrêt d'urgence sans nécessité, et hors emplacements dans une zone de rencontre.
-  explication: 'Article R417-10 : contravention de 2e classe (35 €), fourrière possible. Un arrêt bref devant sa propre entrée est toléré, le stationnement non (sauf arrêté local).'
+- id: l-stationnement-bande-cyclable
+  question: Puis-je m'arrêter deux minutes sur une bande cyclable, feux de détresse allumés, pour déposer un passager ?
+  reponse: 'Non : l''arrêt comme le stationnement sur une bande ou une piste cyclable sont très gênants (135 €) — ils renvoient le cycliste dans le flux des voitures.'
+  explication: R417-11 vise l'arrêt autant que le stationnement, et les feux de détresse ne régularisent aucune immobilisation interdite. Même régime sur une voie de bus, une voie verte ou une place réservée.
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-11
+- id: l-double-file
+  question: Je m'arrête 30 secondes en double file, moteur tournant, pour déposer quelqu'un. Est-ce autorisé ?
+  reponse: 'Non : l''arrêt en double file est gênant (35 €, fourrière possible), même bref et même avec les feux de détresse allumés.'
+  explication: 'R417-10 : la double file bloque une voie et masque les piétons qui s''engagent entre les véhicules. Les feux de détresse ne sont pas prévus pour cela (R416-18) et ne rendent rien régulier.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-10
+- id: l-entree-carrossable
+  question: Puis-je stationner devant mon propre garage, sur la voie publique ?
+  reponse: 'Non : stationner devant une entrée carrossable est gênant (35 €), y compris devant la sienne ; seul un arrêt bref, conducteur à proximité, est admis.'
+  explication: R417-10. Certaines communes tolèrent le stationnement du riverain par arrêté municipal ; sans arrêté, le véhicule est verbalisable et peut être mis en fourrière.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-10
 - id: l-stationnement-dangereux
-  question: Quand l'arrêt ou le stationnement est-il « dangereux » ?
-  reponse: 'Là où la visibilité est insuffisante : près d''une intersection, dans un virage, au sommet d''une côte, à l''approche d''un passage à niveau — 135 €, 3 points, fourrière possible.'
-  explication: 'Article R417-9 : c''est la seule infraction de stationnement qui retire des points, parce qu''elle expose les autres usagers à un choc sans visibilité.'
+  question: Sur une route de campagne, je laisse ma voiture sur la chaussée juste avant un sommet de côte. Comment est-ce qualifié ?
+  reponse: 'Stationnement dangereux : 135 €, 3 points et fourrière possible, parce que la visibilité est insuffisante pour ceux qui arrivent.'
+  explication: 'R417-9 : même qualification près d''une intersection, dans un virage ou à l''approche d''un passage à niveau. C''est la seule infraction de stationnement qui retire des points.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-9
-- id: l-ligne-jaune-sens
-  question: Que signifient les lignes jaunes peintes le long du trottoir ?
-  reponse: 'Continue : arrêt et stationnement interdits. Discontinue (tirets) : stationnement interdit, arrêt toléré. Zigzag : arrêt de bus (arrêt et stationnement interdits).'
-  explication: Blanc = marquage permanent ; jaune sur la chaussée = marquage temporaire (chantier) qui prime sur le blanc ; bleu = stationnement réglementé (zone bleue ou payant).
-  theme: L
-  sous_theme: stationnement
-  source: IISR 7e partie
 - id: l-stationnement-hors-agglo-nuit
-  question: Je dois m'arrêter la nuit sur une route hors agglomération sans éclairage. Quelles précautions ?
-  reponse: 'Me garer hors de la chaussée si possible (accotement), sinon à droite dans le sens de la marche, feux de position allumés (jamais les feux de route), et si le véhicule gêne : feux de détresse et triangle à 30 m.'
-  explication: 'S''arrêter la nuit sans feux ni signalisation hors éclairage public : 135 €, 3 points. Sur une route à grande circulation, on privilégie une aire ou un parking.'
+  question: Je dois m'arrêter sur une route de campagne. Où placer mon véhicule ?
+  reponse: Hors de la chaussée chaque fois que l'accotement le permet ; sinon à droite, dans le sens de ma marche, le plus près possible du bord.
+  explication: 'R417-4. La nuit, sur chaussée non éclairée, les feux de position restent allumés ; si le véhicule constitue un danger, feux de détresse et triangle à 30 m. S''arrêter sans signalisation la nuit : 135 €, 3 points.'
   theme: L
   sous_theme: stationnement
-  source: Code de la route, art. R417-1, R416-12, R416-19
-- id: l-feu-jaune-fixe
-  question: 'Feu jaune (orange) fixe : que dois-je faire ?'
-  reponse: 'M''arrêter — sauf si je suis trop engagé pour le faire en sécurité (freinage brusque dangereux) : dans ce cas, je dégage l''intersection.'
-  explication: 'Article R412-31 : l''arrêt est la règle, l''exception est l''impossibilité de s''arrêter « dans des conditions de sécurité suffisantes ». Accélérer pour passer au jaune est une faute (35 €). Le jaune fixe dure 3 s sur les voies limitées à 50 km/h, 5 s au-delà (IISR 6e partie).'
-  theme: L
-  sous_theme: feux
-  source: Code de la route, art. R412-31
-- id: l-feu-jaune-clignotant
-  question: 'Feu jaune clignotant : que signifie-t-il ?'
-  reponse: 'Les feux ne règlent plus la circulation (hors service ou heures creuses) : je passe avec prudence en respectant la signalisation présente — panneaux, sinon priorité à droite.'
-  explication: Un jaune clignotant n'est ni un feu vert ni une priorité. Il peut aussi signaler un danger particulier (passage piéton, sortie d'école).
-  theme: L
-  sous_theme: feux
-  source: Code de la route, art. R412-32
-- id: l-feu-rouge-clignotant
-  question: 'Feu rouge clignotant : que dois-je faire ?'
-  reponse: M'arrêter absolument et ne pas repartir tant qu'il clignote — passages à niveau, ponts mobiles, sorties de casernes de pompiers, aéroports, accès de tunnel fermé.
-  explication: 'Même valeur qu''un rouge fixe : 135 €, 4 points. Au passage à niveau, il annonce un train même si la barrière n''est pas encore baissée.'
-  theme: L
-  sous_theme: feux
-  source: Code de la route, art. R412-30
-- id: l-feu-vert-conditions
-  question: 'Feu vert : puis-je toujours passer ?'
-  reponse: Je peux passer à condition de ne pas bloquer l'intersection, de céder aux piétons qui finissent de traverser, aux véhicules déjà engagés, et, si je tourne, aux véhicules d'en face (à gauche) et aux piétons/cyclistes qui traversent la rue où je m'engage.
-  explication: 'Une flèche verte n''autorise que la direction indiquée. Un feu vert n''a jamais valeur de priorité absolue : les véhicules prioritaires en intervention passent d''abord.'
-  theme: L
-  sous_theme: feux
-  source: Code de la route, art. R412-33 et R415-4
-- id: l-feu-fleche-jaune
-  question: 'Feu rouge principal avec une flèche jaune clignotante vers la droite : puis-je tourner à droite ?'
-  reponse: Oui, en cédant le passage aux piétons qui traversent et aux véhicules qui ont le feu vert (c'est un « cédez-le-passage » dans la direction de la flèche) ; le tout droit reste interdit.
-  explication: Une flèche verte fixe vers la droite autorise aussi le mouvement mais avec la priorité d'un feu vert (les autres flux ont le rouge). Le panonceau M12 sous le feu joue le même rôle pour les cyclistes uniquement.
-  theme: L
-  sous_theme: feux
-  source: Code de la route, art. R412-30 et R415-15 ; IISR 6e partie
+  source: Code de la route, art. R417-4 et R416-12
 - id: l-feu-hors-service-panneaux
   question: Les feux d'un carrefour sont éteints (panne) et un panneau STOP est fixé sur le même poteau. Que faire ?
   reponse: 'Appliquer le panneau : m''arrêter au STOP et céder le passage. Sans panneau, priorité à droite.'
@@ -229,46 +238,10 @@
   theme: L
   sous_theme: feux
   source: Code de la route, art. R411-25 ; IISR 6e partie
-- id: l-feux-bus-tram
-  question: Que signifient les feux à barres blanches (au lieu des feux tricolores) ?
-  reponse: 'Ils sont réservés aux bus et tramways en site propre : barre horizontale = arrêt, barre verticale (ou oblique) = passage dans la direction indiquée, disque = annonce d''arrêt ; les autres conducteurs suivent leurs propres feux.'
-  explication: 'Ils indiquent qu''un tram ou un bus va s''engager : redoubler d''attention aux carrefours avec voies réservées.'
-  theme: L
-  sous_theme: feux
-  source: IISR 6e partie (signaux R17 et R18)
-- id: l-signaux-affectation-voies
-  question: Sur une voie rapide, une croix rouge est affichée au-dessus de ma voie et une flèche verte au-dessus de la voie voisine. Que faire ?
-  reponse: Quitter ma voie (fermée) dès que possible pour rejoindre la voie sous flèche verte ; une flèche jaune oblique clignotante annonce la fermeture prochaine de la voie.
-  explication: Signaux d'affectation de voies (tunnels, ponts, autoroutes à voies réversibles). Rester sous une croix rouge = circuler sur une voie interdite.
-  theme: L
-  sous_theme: feux
-  source: IISR 6e partie, art. 109-3 (signaux R21a à R21d)
-- id: l-agent-bras-leve
-  question: Un agent de la circulation lève un bras à la verticale. Que signifie ce geste ?
-  reponse: Arrêt pour tous les usagers, de toutes les directions (annonce généralement un changement de sens de passage).
-  explication: 'Les injonctions de l''agent priment sur les feux, les panneaux et le marquage. Le non-respect : 135 €, 4 points.'
-  image:
-    gen: agent
-    params:
-      pose: bras_leve
-  theme: L
-  sous_theme: agents
-  source: Code de la route, art. R411-28 et R412-29
-- id: l-agent-bras-tendus
-  question: Un agent me fait face (ou me tourne le dos), les bras tendus à l'horizontale. Puis-je passer ?
-  reponse: 'Non : de face ou de dos, bras tendus = arrêt ; seuls les usagers qui voient l''agent de profil peuvent passer.'
-  explication: 'Repère : « de face ou de dos, je m''arrête ; de profil, je passe ». La nuit, l''agent utilise un bâton lumineux ; un coup de sifflet attire l''attention sur un geste.'
-  image:
-    gen: agent
-    params:
-      pose: bras_tendus
-  theme: L
-  sous_theme: agents
-  source: Code de la route, art. R411-28
 - id: l-agent-ralentir-avancer
-  question: Un agent balance un bras de haut en bas ; un autre fait un geste d'appel du bras. Que signifient ces gestes ?
-  reponse: 'Bras qui monte et descend : ralentir. Geste d''appel (bras replié vers lui) : avancer, on m''invite à passer.'
-  explication: Ces gestes s'adressent à l'usager que l'agent regarde ; on reste attentif aux autres usagers libérés en même temps.
+  question: Un agent qui règle la circulation balance un bras de haut en bas dans ma direction. Que me demande-t-il ?
+  reponse: 'De ralentir : il ne m''arrête pas, mais je réduis nettement mon allure et je reste prêt à m''immobiliser.'
+  explication: À distinguer du bras levé (arrêt pour tous) et du geste d'appel (avancer). Le geste s'adresse à l'usager que l'agent regarde ; ses injonctions priment sur les feux et les panneaux.
   image:
     gen: agent
     params:
@@ -284,23 +257,23 @@
   sous_theme: signalisation
   source: IISR 1re partie
 - id: l-formes-priorite-temporaire
-  question: À quoi reconnaît-on les panneaux de priorité, et la signalisation temporaire ?
-  reponse: 'Octogone rouge : STOP. Triangle pointe en bas : cédez-le-passage. Losange jaune : route prioritaire (barré : fin). Triangles pointe en haut à croix ou à barre : intersection à priorité à droite (AB1) / priorité ponctuelle (AB2). Fond jaune : signalisation temporaire, qui prime sur la permanente.'
-  explication: 'Panneaux de direction : bleu = autoroute, vert = grande liaison, blanc = local, marron = touristique, jaune = temporaire ; cartouches : rouge autoroute/nationale, jaune départementale, blanc communale.'
+  question: À quoi reconnaît-on les panneaux de priorité et la signalisation temporaire ?
+  reponse: 'Octogone rouge : STOP. Triangle pointe en bas : cédez-le-passage. Losange jaune : route prioritaire (barré : fin de priorité). Fond jaune : signalisation temporaire.'
+  explication: 'Triangle pointe en haut à croix de Saint-André (AB1) : intersection où s''applique la priorité à droite ; à barre verticale (AB2) : priorité ponctuelle. Panneaux de direction — bleu autoroute, vert grande liaison, blanc local, marron touristique.'
   theme: L
   sous_theme: signalisation
   source: IISR 1re et 3e parties
 - id: l-portee-prescription
-  question: Jusqu'où s'applique un panneau d'interdiction ou d'obligation (ex. limitation à 30) ?
-  reponse: Jusqu'à la prochaine intersection (ou jusqu'au panneau de fin) — sauf indication d'étendue par un panonceau M2 (« 2 km »), ou s'il s'agit d'une zone (zone 30, zone de rencontre, aire piétonne, ZFE), valable jusqu'au panneau de fin de zone même après des intersections.
-  explication: Un panneau de rappel (panonceau « rappel ») confirme une prescription après une intersection. Le panneau d'entrée d'agglomération vaut limitation à 50 jusqu'au panneau de sortie.
+  question: Jusqu'où s'applique un panneau d'interdiction ou d'obligation, par exemple une limitation à 30 km/h ?
+  reponse: Jusqu'à la prochaine intersection, ou jusqu'au panneau de fin correspondant ; un panonceau M2 (« sur 2 km ») peut en fixer l'étendue.
+  explication: 'Les zones (zone 30, zone de rencontre, aire piétonne, ZFE) font exception : elles restent valables au-delà des intersections, jusqu''au panneau de fin de zone. Un panonceau « rappel » confirme une prescription après une intersection.'
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie, art. 8 ; Code de la route, art. R110-2
 - id: l-panonceau-portee
   question: À quoi s'applique un panonceau (petit rectangle blanc) placé sous un panneau ?
-  reponse: 'Uniquement au panneau sous lequel il est placé : il en précise la distance (M1), l''étendue (M2), la direction (M3, flèche), la catégorie d''usagers concernée (M4), les horaires ou conditions (M6, M9…).'
-  explication: 'Exemple : B1 « sens interdit » + panonceau « sauf vélo » (M9v2) = double-sens cyclable. Un panonceau « 150 m » sous un STOP = présignalisation (le STOP est 150 m plus loin).'
+  reponse: 'Au seul panneau sous lequel il est posé : il en précise la distance, l''étendue, la catégorie d''usagers concernée ou les horaires.'
+  explication: 'Exemples : B1 « sens interdit » + M9v2 « sauf vélo » = double-sens cyclable ; panonceau M5 « STOP 150 m » sous un signal avancé AB5 = le STOP est 150 m plus loin. M1 distance, M2 étendue, M3 direction, M4 catégorie.'
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie, art. 9
@@ -313,22 +286,15 @@
   source: IISR 8e partie ; Code de la route, art. R411-25
 - id: l-agglomeration-panneau
   question: Quelles règles change le panneau d'entrée d'agglomération (nom de la ville sur fond blanc bordé de rouge) ?
-  reponse: 50 km/h par défaut, klaxon interdit sauf danger immédiat, feux de croisement (pas de feux de route) sur voie éclairée, stationnement à droite dans le sens de la marche, panneaux de danger implantés à 50 m, et « faciliter » la sortie des bus.
-  explication: 'Le panneau de sortie (même nom barré de rouge, EB20) rétablit les règles hors agglomération. Un panneau de lieu-dit (E31 : lettres italiques blanches sur fond noir) n''entraîne aucune de ces règles.'
+  reponse: 50 km/h par défaut, klaxon réservé au danger immédiat, feux de croisement sur voie éclairée et stationnement à droite dans le sens de la marche.
+  explication: 'Les panneaux de danger y sont implantés à 50 m au lieu de 150 m, et je dois faciliter la sortie des bus. Le panneau de sortie (nom barré de rouge, EB20) rétablit les règles hors agglomération. Un panneau de lieu-dit (E31 : lettres italiques blanches sur fond noir) n''entraîne aucune de ces règles.'
   theme: L
   sous_theme: signalisation
   source: Code de la route, art. R110-2, R413-3, R416-1 ; IISR
-- id: l-vocab-chaussee-voie
-  question: Quelle différence entre la chaussée, une voie et l'accotement ?
-  reponse: La chaussée est la partie de la route utilisée pour la circulation des véhicules ; une voie est une subdivision de la chaussée pour une file de véhicules ; l'accotement est la partie latérale hors chaussée (arrêt d'urgence, piétons) — sa partie revêtue est la bande dérasée, et sur autoroute la bande d'arrêt d'urgence.
-  explication: 'Vocabulaire des énoncés d''examen : « je circule sur la voie de droite de la chaussée », « je m''arrête sur l''accotement ». Le trottoir est l''espace surélevé réservé aux piétons.'
-  theme: L
-  sous_theme: positionnement
-  source: Code de la route, art. R110-2
 - id: l-vocab-routes-lettres
   question: Que signifient les lettres A, N, D et C (ou M) devant un numéro de route ?
-  reponse: A = autoroute ; N = route nationale ; D = route départementale ; C = voie communale (M = voie métropolitaine). Les cartouches sont rouges pour A et N, jaunes pour D, blancs pour C.
-  explication: 'Une route à accès réglementé (C107, « voie express ») peut être nationale ou départementale : 110 km/h. Une route « à grande circulation » (liste fixée par décret) est en général une route prioritaire (AB6).'
+  reponse: A = autoroute ; N = route nationale ; D = route départementale ; C = voie communale (M = voie métropolitaine).
+  explication: 'Cartouches : rouges pour A et N, jaunes pour D, blancs pour C. Une route à accès réglementé (C107, « voie express ») peut être nationale ou départementale : 110 km/h. Une route à grande circulation est en général une route prioritaire (AB6).'
   theme: L
   sous_theme: signalisation
   importance: utile

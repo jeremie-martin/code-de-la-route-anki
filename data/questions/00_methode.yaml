@@ -1,7 +1,9 @@
+# Thème X — Lire une question de l'ETG sans tomber dans les pièges (docs/05-audit-v2.md §2.6 : seules les
+# cartes qui changent la façon de répondre sont gardées ; l'organisation de l'épreuve est dans le README).
 - id: etg-bandeau-reponses
   question: Sur une question de l'ETG, comment sait-on s'il faut cocher une ou plusieurs réponses ?
   reponse: 'Le bandeau de la question l''indique : « une réponse » ou « plusieurs réponses ».'
-  explication: 'Depuis 2023, ce n''est plus à deviner. « Plusieurs réponses » signifie au moins deux : il faut cocher toutes les bonnes et aucune mauvaise pour avoir le point.'
+  explication: '« Plusieurs réponses » signifie au moins deux : il faut cocher toutes les bonnes et aucune mauvaise pour avoir le point (tout ou rien).'
   theme: X
   sous_theme: lecture
   source: securite-routiere.gouv.fr — Nouvelle épreuve du code 2023 ; Codes Rousseau — Nouveautés 2026
@@ -28,15 +30,15 @@
   source: Méthode d'examen (synthèse des conseils Codes Rousseau, ENPC, Ornikar)
 - id: etg-reflexe-securite
   question: Entre deux réponses plausibles à l'ETG, laquelle privilégier ?
-  reponse: 'La plus sûre : celle qui réduit le risque (ralentir, vérifier ses rétroviseurs, laisser passer), jamais celle qui force le passage.'
+  reponse: 'La plus sûre, celle qui réduit le risque : ralentir, vérifier ses rétroviseurs, laisser passer — jamais celle qui force le passage.'
   explication: La banque de questions valorise l'anticipation et la prudence. « Je klaxonne » en ville, « j'accélère pour passer », « je force le passage » sont presque toujours faux.
   theme: X
   sous_theme: lecture
   source: Méthode d'examen (synthèse des conseils Codes Rousseau, ENPC, Ornikar)
 - id: etg-video-strategie
   question: 'Question vidéo à l''ETG : que faut-il observer pendant la vidéo ?'
-  reponse: 'Tout ce qui peut créer un danger : piétons, cyclistes, portières, clignotants, feux, signalisation, et surtout ce qui change entre le début et la fin.'
-  explication: 'La question porte presque toujours sur la bonne réaction face à un événement (véhicule qui déboîte, enfant qui traverse). Le chronomètre de 20 s démarre après la vidéo : on regarde d''abord, on lit ensuite.'
+  reponse: 'Ce qui change entre le début et la fin : un usager qui apparaît, un clignotant, une portière, un feu — la question porte sur la réaction à cet événement.'
+  explication: 'La vidéo n''est vue qu''une fois et le chronomètre de 20 s ne démarre qu''après : on regarde d''abord (rétroviseurs compris), on lit ensuite.'
   theme: X
   sous_theme: lecture
   source: Ornikar — Les questions vidéo de l'examen du code ; Prépacode (ENPC)
@@ -47,35 +49,27 @@
   theme: X
   sous_theme: format
   source: En Voiture Simone — Examen du code 2026 ; Codes Rousseau
-- id: etg-operateurs
-  question: Où passe-t-on l'ETG depuis 2016 ?
-  reponse: Dans un centre agréé géré par un opérateur privé (La Poste, SGS Objectif Code, Dekra, Bureau Veritas Code'nGo, Pearson Vue Point Code), sur tablette ou ordinateur, avec casque audio.
-  explication: Inscription en ligne avec son numéro NEPH ; résultat « Favorable/Défavorable » avec le score sur 40, par e-mail, au plus tôt 24 h après. On peut se présenter en candidat libre sans auto-école.
-  theme: X
-  sous_theme: format
-  importance: utile
-  source: service-public.fr — Examen du code de la route ; En Voiture Simone — Examen 2026
 - id: etg-forme-double-oui-non
-  question: Quelle est la forme de question la plus fréquente dans la banque 2023 de l'ETG ?
-  reponse: Deux affirmations sur la même photo, chacune à juger OUI ou NON (A/B puis C/D) — donc toujours « Plusieurs réponses », une lettre par ligne.
-  explication: '11 des 20 exemples officiels ont cette forme (« Un enfant peut être masqué par des véhicules en stationnement : OUI/NON — Un enfant perçoit les dangers comme un adulte : OUI/NON »). Les deux affirmations sont notées ensemble : une seule erreur = 0 point pour la question. Elles ne sont pas forcément liées entre elles.'
+  question: Une question de l'ETG présente deux affirmations sur la même photo, chacune à juger OUI/NON. Comment est-elle notée ?
+  reponse: 'Tout ou rien : les deux affirmations doivent être justes pour avoir le point ; elles ne sont pas forcément liées entre elles.'
+  explication: 'C''est la forme la plus fréquente de la banque 2023 (11 des 20 exemples officiels) : toujours « Plusieurs réponses », une lettre par ligne (A/B puis C/D). Juger chaque affirmation pour elle-même.'
   theme: X
   sous_theme: lecture
   source: Sécurité routière — Exemples de nouvelles questions (PDF, sept. 2023) ; En Voiture Simone — Questions pièges
 - id: etg-adverbes
-  question: Quels mots d'un énoncé de l'ETG changent tout le sens et méritent une relecture ?
-  reponse: Les restrictions (« obligatoirement », « uniquement », « exclusivement »), les nuances de fréquence (« principalement », « le plus souvent »), les conditions en fin d'énoncé (« sauf si », « dans ce cas ») et les négations (« il n'est pas interdit de… » = c'est autorisé).
-  explication: 'La nuance se trouve souvent en fin d''énoncé. Exemple officiel : « mon véhicule doit obligatoirement être équipé de 4 pneus hiver » (réponse OUI si je n''ai ni chaînes ni chaussettes à bord).'
+  question: 'Énoncé de l''ETG : « Pour entrer dans cette zone en période hivernale, mon véhicule doit obligatoirement être équipé de 4 pneus hiver. » Sur quel mot se joue la réponse ?'
+  reponse: 'Sur « obligatoirement » : c''est vrai seulement si je n''ai ni chaînes ni chaussettes à neige à bord (question officielle 2023, réponse OUI dans ce cas).'
+  explication: 'Les mots qui restreignent ou nuancent (obligatoirement, uniquement, principalement, le plus souvent) et les conditions en fin d''énoncé (sauf si, dans ce cas) décident souvent de la réponse : les relire avant de valider.'
   theme: X
   sous_theme: lecture
   source: Codeclic — Comment réussir le code ; En Voiture Simone — Questions pièges ; exemples officiels 2023
-- id: etg-quand-s-inscrire
-  question: À partir de quel niveau en examens blancs est-il raisonnable de réserver sa session d'ETG ?
-  reponse: Quand on obtient régulièrement 37-38/40 (moins de 3 fautes) sur des séries chronométrées de 40 questions.
-  explication: 'Le seuil réel est 35/40 ; la marge absorbe le stress et les questions inhabituelles. La Sécurité routière elle-même conseille de « repousser de quelques jours » si la préparation est à parfaire : en 2025, seuls 49 % des candidats ont réussi (59 % en première présentation).'
+- id: etg-negation
+  question: 'Énoncé de l''ETG : « Il n''est pas interdit de tourner à droite. » Qu''est-ce que cela veut dire ?'
+  reponse: 'Que c''est autorisé : une double négation (« pas interdit ») équivaut à une permission.'
+  explication: Les négations et doubles négations sont une source d'erreur classique ; les reformuler mentalement en positif avant de juger l'affirmation.
   theme: X
-  sous_theme: strategie
-  source: securite-routiere.gouv.fr — Objectifs et réglementation de l'examen du code ; bilan annuel 2025 des examens du permis ; Ornikar ; Codeclic
+  sous_theme: lecture
+  source: Codeclic — Comment réussir le code
 - id: etg-premiere-reponse
   question: Pendant l'épreuve, faut-il changer une réponse dont on doute au dernier moment ?
   reponse: 'Non, sauf si l''on a clairement repéré un élément manqué : on lit l''énoncé et toutes les propositions jusqu''au bout, on répond, on valide.'

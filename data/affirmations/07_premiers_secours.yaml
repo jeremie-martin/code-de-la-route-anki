@@ -1,0 +1,113 @@
+# A — Porter secours : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
+# Les fausses sont les idées reçues réelles du thème (knowledge-facts P7) ; le verso donne la raison en une ligne.
+- id: aff-a-dae-formation
+  contexte: Une victime est en arrêt cardiaque ; un DAE est accroché au mur du magasin voisin.
+  affirmation: Avant d'utiliser un DAE, je dois avoir suivi une formation.
+  verdict: faux
+  pourquoi: "Depuis 2007, toute personne, même non formée, peut se servir d'un défibrillateur automatisé externe : il s'allume, parle et guide pas à pas. Hésiter fait perdre des minutes décisives."
+  theme: A
+  sous_theme: secourir
+  source: "Sécurité routière — Exemples de nouvelles questions (Q6) ; décret n° 2007-705 ; Croix-Rouge française"
+- id: aff-a-dae-sans-arret-cardiaque
+  contexte: Le DAE est posé sur une victime inconsciente dont je ne connais pas l'état du cœur.
+  affirmation: Si la victime n'est pas en arrêt cardiaque, l'utilisation du DAE peut être dangereuse.
+  verdict: faux
+  pourquoi: "L'appareil analyse lui-même le rythme cardiaque et ne délivre un choc que s'il est nécessaire : sur une victime qui n'en a pas besoin, il ne choque pas. Question officielle 2023 (Q6)."
+  theme: A
+  sous_theme: secourir
+  source: "Sécurité routière — Exemples de nouvelles questions (Q6) ; Croix-Rouge française — Défibrillateur"
+- id: aff-a-pls-avec-casque
+  contexte: Un motard est inconscient sur le bas-côté ; il respire, son casque est resté en place.
+  affirmation: Je le mets en position latérale de sécurité sans lui retirer son casque.
+  verdict: vrai
+  pourquoi: "On ne retire pas le casque (réponse attendue à l'examen) : le mouvement risque d'aggraver une lésion des cervicales. La PLS se fait avec, visière ouverte pour surveiller la respiration, tête maintenue dans l'axe."
+  theme: A
+  sous_theme: secourir
+  source: "Croix-Rouge française — Inconscience ; securite-routiere.gouv.fr"
+- id: aff-a-respire-mais-inconsciente
+  contexte: Une victime ne répond pas ; sa poitrine se soulève régulièrement.
+  affirmation: "Elle est en arrêt cardiaque : je commence les compressions thoraciques."
+  verdict: faux
+  pourquoi: "Elle respire : elle est inconsciente, pas en arrêt cardiaque. Le geste attendu est la PLS, puis l'alerte et la surveillance. Les compressions ne se font que sur une victime qui ne respire pas."
+  theme: A
+  sous_theme: secourir
+  source: Croix-Rouge française — Inconscience ; Arrêt cardiaque
+- id: aff-a-compressions-seules
+  contexte: La victime ne respire pas ; le bouche-à-bouche me rebute.
+  affirmation: Je peux me limiter aux compressions thoraciques en attendant les secours.
+  verdict: vrai
+  pourquoi: "Des compressions seules, commencées tout de suite et poursuivies sans interruption, valent bien mieux que l'inaction. L'opérateur du 15 guide le rythme au téléphone jusqu'à l'arrivée des secours."
+  theme: A
+  sous_theme: secourir
+  source: Croix-Rouge française — Arrêt cardiaque
+- id: aff-a-couvrir-victime
+  contexte: Accident en plein été ; la victime est allongée, consciente, et il fait 30 °C.
+  affirmation: Je la couvre malgré la chaleur.
+  verdict: vrai
+  pourquoi: "L'état de choc fait chuter la température du corps quelle que soit la saison : on couvre (couverture de survie), on parle, on rassure, sans commenter les blessures."
+  theme: A
+  sous_theme: secourir
+  source: Croix-Rouge française — Les gestes de premiers secours
+- id: aff-a-donner-a-boire
+  contexte: Un blessé conscient me demande à boire en attendant les secours.
+  affirmation: Je peux lui donner un peu d'eau pour le soulager.
+  verdict: faux
+  pourquoi: "Ni boisson, ni nourriture, ni médicament : risque d'étouffement, et une anesthésie est souvent nécessaire à l'arrivée à l'hôpital. Je me contente de lui parler et de le couvrir."
+  theme: A
+  sous_theme: secourir
+  source: Ornikar — Secourir un blessé ; Croix-Rouge française
+- id: aff-a-contact-vehicules-accidentes
+  contexte: Deux voitures accidentées sont immobilisées au milieu d'un carrefour.
+  affirmation: Laisser leur contact mis ne présente pas de risque particulier.
+  verdict: faux
+  pourquoi: "On coupe le contact des véhicules accidentés : carburant et circuit électrique font un risque d'incendie. Le balisage est assuré par mes propres feux de détresse et par le triangle."
+  theme: A
+  sous_theme: proteger
+  source: Ornikar — Protéger la zone ; Croix-Rouge française
+- id: aff-a-triangle-autoroute
+  contexte: Accident sur autoroute ; poser le triangle m'obligerait à marcher sur les voies de circulation.
+  affirmation: Je renonce au triangle et je me mets à l'abri derrière la glissière.
+  verdict: vrai
+  pourquoi: "La mise en place du triangle n'est pas exigée quand elle met manifestement en danger la vie du conducteur (arrêté du 30 septembre 2008) : feux de détresse et mise à l'abri priment. Ailleurs, 30 m au moins."
+  theme: A
+  sous_theme: proteger
+  source: "Code de la route, art. R416-19 ; arrêté du 30 septembre 2008 ; Ornikar — Protéger la zone"
+- id: aff-a-18-secours-personne
+  contexte: Un conducteur est coincé dans sa voiture après un choc ; il n'y a pas d'incendie.
+  affirmation: Le 18 est un bon numéro à composer dans cette situation.
+  verdict: vrai
+  pourquoi: "Les sapeurs-pompiers assurent aussi le secours à personne et la désincarcération, pas seulement les incendies. Le 15 et le 112 conviennent également : les services se transmettent l'appel."
+  theme: A
+  sous_theme: alerter
+  source: service-public.fr — Numéros d'urgence ; Croix-Rouge française
+- id: aff-a-112-remplace-les-autres
+  affirmation: Depuis la création du 112, le 15, le 17 et le 18 ne sont plus valables en France.
+  verdict: faux
+  pourquoi: "Les trois numéros français restent actifs ; le 112 s'y ajoute, gratuit et valable dans toute l'Union européenne. Sur autoroute, la borne orange reste préférable : elle localise l'appel."
+  theme: A
+  sous_theme: alerter
+  source: service-public.fr — Numéros d'urgence
+- id: aff-a-rester-sur-place
+  contexte: J'ai appelé les secours depuis le lieu d'un accident et je suis pressé.
+  affirmation: Je reste sur place jusqu'à leur arrivée pour les guider.
+  verdict: vrai
+  pourquoi: "Celui qui alerte reste joignable, surveille la victime et fait signe aux secours : l'opérateur peut rappeler ou demander un geste. Conducteur impliqué, je n'ai de toute façon pas le droit de quitter les lieux (R231-1)."
+  theme: A
+  sous_theme: obligations
+  source: "Croix-Rouge française — Alerter ; Code de la route, art. R231-1"
+- id: aff-a-ne-rien-faire
+  contexte: Je n'ai suivi aucune formation aux premiers secours et j'arrive sur un accident.
+  affirmation: Mieux vaut ne rien faire que risquer d'aggraver l'état des victimes.
+  verdict: faux
+  pourquoi: "Protéger et alerter sont à la portée de tous et suffisent à remplir l'obligation légale ; s'abstenir expose à la non-assistance à personne en danger (5 ans de prison, 75 000 € d'amende)."
+  theme: A
+  sous_theme: obligations
+  source: "Code pénal, art. 223-6 ; Croix-Rouge française"
+- id: aff-a-constat-signature
+  contexte: Accrochage sans blessé ; nous sommes d'accord sur les circonstances.
+  affirmation: Signer le constat amiable revient à reconnaître ma responsabilité dans l'accident.
+  verdict: faux
+  pourquoi: "Le constat décrit les faits ; ce sont les assureurs qui répartissent ensuite les responsabilités. En revanche on ne signe pas un constat inexact, et rien ne se modifie après signature."
+  theme: A
+  sous_theme: obligations
+  source: service-public.fr — Constat amiable

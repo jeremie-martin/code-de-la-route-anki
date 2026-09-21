@@ -1,0 +1,135 @@
+# E — Environnement : affirmations à juger VRAI/FAUX, centrées sur les idées reçues de l'écoconduite
+# et de la pollution (knowledge-facts A6). Les chiffres vivent dans data/faits/11_environnement.yaml.
+- id: aff-e-clim-autoroute
+  contexte: Autoroute à 130 km/h, forte chaleur.
+  affirmation: Pour consommer moins, mieux vaut couper la climatisation et ouvrir les vitres.
+  verdict: faux
+  pourquoi: À vitesse élevée, les vitres ouvertes dégradent l'aérodynamique et coûtent plus cher que la climatisation. C'est en ville, à faible allure, qu'il vaut mieux aérer que climatiser.
+  theme: E
+  sous_theme: ecoconduite
+  source: ADEME ; En Voiture Simone — Éco-conduite
+- id: aff-e-point-mort-descente
+  contexte: Longue descente, route dégagée.
+  affirmation: Passer au point mort économise du carburant.
+  verdict: faux
+  pourquoi: 'Au point mort le moteur consomme son ralenti et je perds le frein moteur, donc les freins chauffent. Rapport engagé et pied levé, l''injection est coupée : la consommation tombe à zéro et le véhicule reste tenu.'
+  theme: E
+  sous_theme: ecoconduite
+  source: ADEME — Écoconduite ; En Voiture Simone — Éco-conduite
+- id: aff-e-moteur-chauffer
+  contexte: Matin d'hiver, moteur froid.
+  affirmation: Je laisse tourner le moteur deux ou trois minutes avant de partir, pour le ménager.
+  verdict: faux
+  pourquoi: 'Un moteur chauffe bien plus vite en roulant : on démarre et on roule doucement les premiers kilomètres. À l''arrêt il consomme et pollue sans avancer, et cela est interdit sans nécessité.'
+  theme: E
+  sous_theme: ecoconduite
+  source: ADEME — Écoconduite ; arrêté du 12 novembre 1963
+- id: aff-e-trajets-courts
+  affirmation: Les trajets de moins de trois kilomètres polluent peu, puisqu'ils sont courts.
+  verdict: faux
+  pourquoi: 'Ce sont les plus polluants au kilomètre : le moteur froid consomme jusqu''à 50 % de plus et le catalyseur ne filtre rien tant qu''il n''est pas chaud. D''où la marche ou le vélo sur ces distances.'
+  theme: E
+  sous_theme: ecoconduite
+  source: ADEME — Se déplacer autrement ; Codeclic — Conduite économique
+- id: aff-e-coffre-toit-vide
+  contexte: Retour de vacances ; le coffre de toit est encore sur le pavillon, vide.
+  affirmation: Vide, il ne coûte plus rien en carburant.
+  verdict: faux
+  pourquoi: 'Plein ou vide, il augmente la traînée et la consommation de 10 à 15 % : on le retire dès qu''il ne sert plus. Les barres de toit seules coûtent déjà 5 à 10 %.'
+  theme: E
+  sous_theme: ecoconduite
+  source: Codeclic — Conduite économique ; ADEME — Écoconduite
+- id: aff-e-vitesse-stable
+  contexte: Route dégagée, trafic fluide.
+  affirmation: Une allure souple et stable consomme moins qu'une conduite nerveuse à la même vitesse moyenne.
+  verdict: vrai
+  pourquoi: Chaque accélération coûte du carburant que le freinage suivant dissipe en chaleur ; une conduite nerveuse consomme jusqu'à 40 % de plus en ville, pour le même temps de trajet.
+  theme: E
+  sous_theme: ecoconduite
+  source: ADEME — Écoconduite ; Ornikar — Conduite écologique
+- id: aff-e-ecoconduite-securite
+  affirmation: Conduire en écoconduite, c'est aussi conduire plus sûrement.
+  verdict: vrai
+  pourquoi: Anticiper, garder de la distance et une allure stable, c'est se donner le temps de voir et d'éviter les freinages d'urgence. L'expérimentation menée à La Poste a mesuré −5 % de carburant et −10 % de sinistres.
+  theme: E
+  sous_theme: ecoconduite
+  source: ADEME — Écoconduite (expérimentation La Poste)
+- id: aff-e-equipements-electriques
+  affirmation: Le dégivrage de la lunette arrière et les sièges chauffants font consommer du carburant.
+  verdict: vrai
+  pourquoi: 'Ils sont alimentés par l''alternateur, entraîné par le moteur : tout consommateur électrique pèse sur la consommation. On les coupe dès qu''ils ne sont plus nécessaires.'
+  theme: E
+  sous_theme: ecoconduite
+  importance: utile
+  source: En Voiture Simone — Éco-conduite ; ADEME
+- id: aff-e-electrique-zero
+  affirmation: Un véhicule électrique n'émet aucune pollution.
+  verdict: faux
+  pourquoi: Rien à l'échappement, mais des particules d'usure (freins, pneus, chaussée), la fabrication de la batterie et la production de l'électricité. Crit'Air 0 ne veut pas dire « sans impact ».
+  theme: E
+  sous_theme: pollution
+  source: ADEME ; En Voiture Simone — Achat éco-responsable
+- id: aff-e-diesel-critair1
+  contexte: Une voiture diesel de 2015, norme Euro 6.
+  affirmation: Elle est classée Crit'Air 1.
+  verdict: faux
+  pourquoi: 'Un diesel n''atteint pas la classe 1 : même récent, il est Crit''Air 2. La classe 1 est réservée aux essences de 2011 ou plus, aux hybrides rechargeables et aux véhicules au gaz.'
+  theme: E
+  sous_theme: pollution
+  source: service-public.fr F33371 ; Code de la route, art. R318-2
+- id: aff-e-critair-renouvellement
+  affirmation: La vignette Crit'Air se renouvelle chaque année.
+  verdict: faux
+  pourquoi: 'Elle vaut pour toute la vie du véhicule : une seule commande sur certificat-air.gouv.fr. Elle n''est refaite que si le véhicule change de plaque d''immatriculation.'
+  theme: E
+  sous_theme: pollution
+  source: service-public.fr F33371 ; Code de la route, art. R318-2
+- id: aff-e-zfe-vignette
+  contexte: J'entre dans une ZFE au volant d'une voiture essence de 2022.
+  affirmation: Même autorisée à circuler, ma voiture doit porter la vignette Crit'Air.
+  verdict: vrai
+  pourquoi: 'Sans vignette, le contrôle ne peut pas vérifier la classe du véhicule : c''est 68 € pour une voiture, 135 € pour un poids lourd. Elle se colle en bas à droite du pare-brise.'
+  theme: E
+  sous_theme: pollution
+  source: Code de la route, art. R411-19-1 et R318-2 ; service-public.fr F33371
+- id: aff-e-zfe-supprimees
+  affirmation: Les zones à faibles émissions ont été supprimées en 2026.
+  verdict: faux
+  pourquoi: 'La suppression votée par le Parlement a été censurée par le Conseil constitutionnel le 21 mai 2026 : les ZFE restent en vigueur. Beaucoup de supports de préparation annoncent le contraire.'
+  theme: E
+  sous_theme: pollution
+  importance: utile
+  source: Conseil constitutionnel, décision n° 2026-903 DC du 21 mai 2026 ; service-public.fr F33371
+- id: aff-e-diesel-nox
+  contexte: Un diesel et une essence de même année et de même puissance.
+  affirmation: Le diesel émet davantage d'oxydes d'azote et de particules.
+  verdict: vrai
+  pourquoi: Un peu moins de CO₂, mais plus de NOx et de particules — d'où un classement Crit'Air une classe en dessous à date égale, et le filtre à particules et l'AdBlue sur les diesels récents.
+  theme: E
+  sous_theme: pollution
+  source: En Voiture Simone — Achat éco-responsable ; service-public.fr F33371
+- id: aff-e-ve-silence
+  contexte: Je conduis un véhicule électrique dans une rue étroite où des piétons circulent.
+  affirmation: Son silence est un danger pour les piétons.
+  verdict: vrai
+  pourquoi: 'Les piétons se fient beaucoup à l''ouïe : un véhicule électrique arrive sans être entendu. D''où l''avertisseur sonore imposé sous 20 km/h sur les modèles récents — et une vigilance accrue du conducteur.'
+  theme: E
+  sous_theme: ecomobilite
+  source: Règlement (UE) 540/2014 (AVAS) ; ADEME — Véhicules électriques
+- id: aff-e-covoiturage-electrique
+  contexte: Voie réservée signalée par un losange blanc ; je suis seul dans une voiture électrique.
+  affirmation: Je peux emprunter cette voie.
+  verdict: vrai
+  pourquoi: Elle est ouverte aux véhicules d'au moins deux occupants, mais aussi aux taxis, aux transports en commun et aux véhicules à très faibles émissions (Crit'Air 0), même avec un seul occupant.
+  theme: E
+  sous_theme: ecomobilite
+  importance: utile
+  source: Code de la route, art. L411-8 ; En Voiture Simone — Covoiturage
+- id: aff-e-borne-recharge
+  contexte: Place équipée d'une borne de recharge, libre devant les commerces.
+  affirmation: Je peux m'y garer sans recharger, le temps d'une course rapide.
+  verdict: faux
+  pourquoi: 'La place est réservée aux véhicules en charge : s''y arrêter sans recharger est un stationnement gênant (35 €), avec mise en fourrière possible.'
+  theme: E
+  sous_theme: ecomobilite
+  source: Code de la route, art. R417-10 III 3°

@@ -7,14 +7,14 @@
     params:
       kind: j1
   nom: Balise de virage
-  signification: Balise blanche portant une bande (collier) rétroréfléchissante blanche, implantée sur l'extérieur d'un virage pour en matérialiser le tracé, surtout de nuit ou par mauvaise visibilité.
+  signification: Balise blanche à collier rétroréfléchissant blanc, implantée à l'extérieur d'un virage pour en matérialiser le tracé.
   conduite: Ralentir avant le virage ; les balises montrent où va la route.
   complement: À l'extérieur des virages mal perçus ; J1bis (sommet rouge) sur routes enneigées.
   theme: L
   sous_theme: balises
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: 'Mémo des balises-piquets : J1 (virage) = bande BLANCHE ; J3 (intersection) = bande ROUGE ; J6 (délinéateur) = bande noire oblique avec catadioptre. J1bis = sommet rouge (routes enneigées).'
+  piege: J1 (virage) = bande BLANCHE ; J3 (intersection) = bande ROUGE ; J6 (délinéateur) = bande noire oblique.
 - id: j1bis
   type: balise
   code: J1bis
@@ -50,20 +50,21 @@
   image:
     commons: FR road beacon J4.svg
   nom: Balise de virage à chevrons
-  signification: Balise rectangulaire à chevron(s) blanc(s) sur fond bleu, implantée à l'extérieur d'un virage dangereux ; la pointe des chevrons indique le sens du virage. Existe en mono-chevron et multi-chevrons.
+  signification: 'Balise à chevron(s) blanc(s) sur fond bleu, à l''extérieur d''un virage dangereux : la pointe indique le sens du virage.'
   conduite: 'Ralentir fortement : le virage est serré ; suivre la direction des chevrons.'
-  complement: À l'extérieur du virage, face aux usagers ; peut être surmontée d'un feu jaune clignotant R1. Chevrons blancs sur fond BLEU = J4 (virage) ; chevrons blancs sur fond VERT = J14b (musoir, divergence).
+  complement: Peut être surmontée d'un feu jaune clignotant R1.
   theme: L
   sous_theme: balises
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: Chevrons blancs sur fond BLEU = J4 (virage) ; sur fond VERT = J14b (musoir, divergence).
 - id: j5
   type: balise
   code: J5
   image:
     commons: France road sign J5.svg
   nom: Balise de tête d'îlot (contournement par la droite)
-  signification: 'Balise carrée à fond bleu portant une large flèche blanche oblique pointant vers le bas à droite, implantée en tête d''un îlot directionnel ou d''un terre-plein : passer à droite.'
+  signification: 'Balise carrée bleue à large flèche blanche oblique, en tête d''un îlot ou d''un terre-plein : passer à droite.'
   conduite: Passer à droite de la balise (comme B21a1).
   complement: En tête d'îlot, souvent à l'entrée des giratoires.
   theme: L
@@ -76,7 +77,7 @@
   image:
     commons: FR road beacon J6.svg
   nom: Délinéateur (balise de délimitation de chaussée)
-  signification: Piquets blancs trapézoïdaux (1 m) espacés régulièrement le long des accotements, portant une bande noire oblique munie d'un catadioptre blanc, pour matérialiser les limites de la chaussée la nuit et par brouillard.
+  signification: Piquets blancs (1 m) espacés le long de l'accotement, portant une bande noire oblique et un catadioptre blanc.
   conduite: S'en servir pour évaluer le tracé et garder sa trajectoire de nuit.
   complement: En bord de chaussée, tous les 50 à 100 m (plus rapprochés en virage).
   theme: L
@@ -103,9 +104,9 @@
   image:
     commons: France road sign J10 3 barres.svg
   nom: Balise de passage à niveau
-  signification: Balises rectangulaires blanches portant trois, deux, puis une bande rouge oblique, placées respectivement à 150 m, 100 m et 50 m du passage à niveau (hors agglomération) ; elles décomptent la distance restante. La première (3 bandes) est fixée sous le panneau A7 ou A8.
-  conduite: Ralentir progressivement ; à la balise à une bande, le passage à niveau est à 50 m.
-  complement: 'Sur le support de A7/A8 puis aux 2/3 et 1/3 de la distance ; facultatives en agglomération (où A7/A8 est à 50 m). Fichiers Commons : « France road sign J10 3 barres.svg », « … 2 barres », « … 1 barre ». Nombre de bandes = nombre de tiers de distance restants (3 = 150 m, 2 = 100 m, 1 = 50 m).'
+  signification: Balises blanches à trois, deux puis une bande rouge oblique, placées à 150 m, 100 m et 50 m du passage à niveau (hors agglomération).
+  conduite: 'Ralentir progressivement : à la balise à une seule bande, le passage à niveau est à 50 m.'
+  complement: La première (3 bandes) est fixée sous le panneau A7 ou A8. Facultatives en agglomération, où A7/A8 est déjà à 50 m.
   theme: L
   sous_theme: balises
   importance: essentiel
@@ -116,7 +117,7 @@
   image:
     commons: FR road beacon J11.svg
   nom: Balise de renforcement d'un marquage continu
-  signification: Balise blanche souple implantée sur une ligne continue pour en renforcer la perception et empêcher son franchissement (ex. approche d'un carrefour, terre-plein).
+  signification: Balise blanche souple implantée sur une ligne continue pour en empêcher le franchissement.
   conduite: 'Ne pas franchir : la ligne continue reste infranchissable.'
   complement: Sur l'axe, en renforcement du marquage.
   theme: L
@@ -129,7 +130,7 @@
   image:
     commons: FR road beacon J12.svg
   nom: Balise de renforcement d'un marquage en divergent
-  signification: Balise verte implantée sur le marquage d'une divergence (séparation de deux chaussées, bretelle de sortie) pour renforcer la perception du musoir.
+  signification: Balise verte implantée sur le marquage d'une divergence (bretelle de sortie) pour renforcer la perception du musoir.
   conduite: Choisir sa direction à l'avance ; ne pas franchir le divergent au dernier moment.
   complement: Sur le marquage divergent.
   theme: L
@@ -142,9 +143,9 @@
   image:
     commons: FR road beacon J13.svg
   nom: Balise de signalisation d'obstacle
-  signification: Balise à bandes obliques alternées bleues et blanches signalant un obstacle permanent (pile de pont, mur, îlot, borne) proche de la chaussée.
+  signification: Balise à bandes obliques bleues et blanches signalant un obstacle permanent proche de la chaussée.
   conduite: Garder ses distances avec l'obstacle signalé.
-  complement: Sur l'obstacle. Bandes bleues/blanches = obstacle permanent (J13) ; bandes rouges/blanches = obstacle temporaire (K5c, K8).
+  complement: Bandes bleues/blanches = obstacle permanent ; rouges/blanches = obstacle temporaire (K5c, K8).
   theme: L
   sous_theme: balises
   importance: utile
@@ -155,9 +156,9 @@
   image:
     commons: FR road beacon J14a.svg
   nom: Balise de musoir (divergence de voies)
-  signification: 'Balise en demi-cercle à fond vert portant deux flèches blanches divergentes, implantée en tête de musoir (séparation de deux chaussées : sortie d''autoroute, bifurcation). J14b : série de chevrons blancs sur fond vert.'
-  conduite: Décider tôt de sa direction ; ne jamais franchir le musoir ni faire marche arrière si l'on a raté sa sortie.
-  complement: En tête de musoir.
+  signification: Balise en demi-cercle vert à deux flèches blanches divergentes, en tête de musoir (sortie d'autoroute, bifurcation).
+  conduite: Décider tôt de sa direction ; ne jamais franchir le musoir ni faire marche arrière.
+  complement: 'En tête de musoir. J14b : série de chevrons blancs sur fond vert.'
   theme: L
   sous_theme: balises
   importance: utile

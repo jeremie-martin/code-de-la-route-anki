@@ -1,0 +1,305 @@
+# C — Le conducteur : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
+# Les fausses sont les distracteurs réels de l'épreuve ; le verso donne la raison en une ligne.
+- id: aff-c-champ-visuel-vitesse-pieton
+  contexte: Je roule vite dans une rue bordée de trottoirs.
+  affirmation: Plus ma vitesse est élevée, plus je risque de ne pas voir un piéton qui s'apprête à traverser depuis le trottoir.
+  verdict: vrai
+  pourquoi: 'Le champ visuel se rétrécit avec la vitesse (≈ 180° à l''arrêt, 30° à 130 km/h) : à vive allure, seule la vision centrale reste utile et les côtés ne sont plus perçus (« effet tunnel »).'
+  theme: C
+  sous_theme: perception
+  source: securite-routiere.gouv.fr — Dépliant La vue ; Conduire sur autoroute
+- id: aff-c-vision-peripherique
+  affirmation: C'est ma vision périphérique, peu précise, qui me permet de détecter un mouvement sur le côté, comme un piéton qui descend du trottoir.
+  verdict: vrai
+  pourquoi: 'La vision centrale est précise (lire un panneau) mais étroite ; la vision périphérique est sensible aux mouvements et aux contrastes : elle détecte, la vision centrale identifie ensuite. D''où l''intérêt de balayer du regard.'
+  theme: C
+  sous_theme: perception
+  source: Code en Poche — Le champ visuel ; securite-routiere.gouv.fr — Dépliant La vue
+- id: aff-c-nuit-distances
+  contexte: Je conduis de nuit.
+  affirmation: 'La perception du relief et des contrastes est atténuée : j''ai tendance à sous-estimer les distances.'
+  verdict: vrai
+  pourquoi: 'De nuit, l''œil perd contrastes, couleurs et relief ; les distances et la vitesse des autres sont mal évaluées. Conséquence : réduire sa vitesse et allonger l''intervalle, même sur une route connue.'
+  theme: C
+  sous_theme: perception
+  source: securite-routiere.gouv.fr — Conduire la nuit ; Dépliant La vue
+- id: aff-c-regard-obstacle
+  affirmation: Fixer du regard un obstacle que je veux éviter augmente le risque de le heurter.
+  verdict: vrai
+  pourquoi: 'Le véhicule va où le regard se porte : on regarde la trajectoire d''évitement (l''espace libre), pas l''obstacle — ni les phares du véhicule que l''on croise.'
+  theme: C
+  sous_theme: perception
+  source: REMC ; Codes Rousseau — L'exploration visuelle
+- id: aff-c-temps-reaction-vitesse
+  affirmation: Le temps de réaction augmente avec la vitesse.
+  verdict: faux
+  pourquoi: 'Il reste d''environ 1 seconde (2 s fatigué ou alcoolisé) quelle que soit l''allure ; c''est la distance parcourue pendant ce temps qui augmente : 15 m à 50 km/h, 39 m à 130 km/h.'
+  theme: C
+  sous_theme: distances
+  source: Code en Poche — Temps de réaction ; securite-routiere.gouv.fr — La vitesse et la conduite
+- id: aff-c-reaction-vehicule-ralentit
+  affirmation: Pendant le temps de réaction, le véhicule commence déjà à ralentir.
+  verdict: faux
+  pourquoi: 'Tant que le pied n''a pas atteint le frein, le véhicule continue à vitesse constante : la distance de réaction s''ajoute intégralement à la distance de freinage pour former la distance d''arrêt.'
+  theme: C
+  sous_theme: distances
+  source: En Voiture Simone — Temps de réaction ; securite-routiere.gouv.fr — La vitesse et la conduite
+- id: aff-c-vitesse-double-freinage-double
+  affirmation: Si je double ma vitesse, ma distance de freinage double aussi.
+  verdict: faux
+  pourquoi: 'Elle est multipliée par 4 : l''énergie cinétique croît avec le carré de la vitesse. À 100 km/h, on freine quatre fois plus long qu''à 50 km/h.'
+  theme: C
+  sous_theme: distances
+  source: securite-routiere.gouv.fr — La vitesse et la conduite ; Ornikar — Énergie cinétique
+- id: aff-c-intervalle-pluie-nuit
+  contexte: Sur route, sous la pluie ou de nuit.
+  affirmation: Je porte mon intervalle de sécurité à 3 ou 4 secondes au lieu de 2.
+  verdict: vrai
+  pourquoi: 'Deux secondes sont le minimum légal (R412-12) et ce minimum suppose une chaussée sèche. Sur sol mouillé, la distance de freinage est nettement allongée (×1,5 à ×2) et de nuit on détecte plus tard.'
+  theme: C
+  sous_theme: distances
+  source: Code de la route, art. R412-12 ; Ornikar — Distance de sécurité
+- id: aff-c-pieton-detectable-motard
+  contexte: Je suis piéton, au bord d'un passage. Une voiture et une moto arrivent.
+  affirmation: Je suis aussi facilement détectable par le motard que par le conducteur de la voiture.
+  verdict: faux
+  pourquoi: 'Q11 officielle : le conducteur de la voiture. Le casque réduit son champ de vision et son attention va à l''équilibre : je m''assure d''être vu des deux. De nuit, un piéton sombre n''est vu qu''à 30 m, 150 m avec un gilet.'
+  theme: C
+  sous_theme: vigilance
+  source: Sécurité routière — Exemples de nouvelles questions (Q11)
+- id: aff-c-enfant-percoit-adulte
+  affirmation: Un enfant perçoit les dangers de la circulation de la même façon qu'un adulte.
+  verdict: faux
+  pourquoi: 'Question officielle 2023 (Q3 : NON). Champ visuel plus étroit et yeux plus bas, incapacité à évaluer vitesses et distances avant 10-12 ans, attention absorbée par le jeu, impulsivité : près des enfants, je roule au pas, prêt à m''arrêter.'
+  theme: C
+  sous_theme: vigilance
+  source: Sécurité routière — Exemples de nouvelles questions (Q3) ; securite-routiere.gouv.fr — Enfants piétons
+- id: aff-c-enfant-croit-vu
+  affirmation: Un enfant qui voit arriver ma voiture pense que je l'ai vu, moi aussi.
+  verdict: vrai
+  pourquoi: 'Pour un enfant, « je vois » égale « on me voit » : il peut s''élancer sans attendre que je ralentisse. C''est à moi d''anticiper (ralentir, couvrir le frein), pas à lui de se protéger.'
+  theme: C
+  sous_theme: vigilance
+  source: securite-routiere.gouv.fr — Enfants piétons ; REMC
+- id: aff-c-indice-danger-certain
+  affirmation: 'Je ne ralentis que lorsque le danger est certain : un simple indice, comme un ballon ou une portière entrouverte, ne justifie pas de lever le pied.'
+  verdict: faux
+  pourquoi: 'Anticiper, c''est réagir à l''indice avant que le danger soit visible : dès l''indice, je lève le pied et je couvre le frein. À l''ETG, « je maintiens ma vitesse » est presque toujours faux en présence d''un indice.'
+  theme: C
+  sous_theme: vigilance
+  source: Code en Poche — Anticiper ; REMC
+- id: aff-c-klaxon-ecole
+  contexte: Je passe devant une école à l'heure de la sortie.
+  affirmation: Je klaxonne pour prévenir les enfants de mon arrivée.
+  verdict: faux
+  pourquoi: 'Le klaxon est interdit en agglomération hors danger immédiat (R416-1) et peut faire sursauter un enfant. La réponse attendue : je ralentis fortement et je me tiens prêt à m''arrêter.'
+  theme: C
+  sous_theme: vigilance
+  source: Code de la route, art. R416-1 ; securite-routiere.gouv.fr — Enfants piétons
+- id: aff-c-retros-suffisent
+  affirmation: 'Mes rétroviseurs sont bien réglés : ils me suffisent pour changer de voie en sécurité.'
+  verdict: faux
+  pourquoi: 'Ils ne montrent pas l''angle mort, où un deux-roues tient entièrement. Avant de se déporter, un regard direct par-dessus l''épaule du côté de la manœuvre est indispensable ; s''il y a quelqu''un, on ne commence pas.'
+  theme: C
+  sous_theme: vigilance
+  source: Codeclic — L'angle mort ; securite-routiere.gouv.fr — Les angles morts
+- id: aff-c-fatigue-signes
+  contexte: 'Long trajet : j''ai les yeux qui picotent, la nuque raide et le regard qui se fige.'
+  affirmation: 'Une pause de 15 à 20 minutes suffit : ces signes sont ceux de la fatigue, pas de la somnolence.'
+  verdict: vrai
+  pourquoi: 'Distinction officielle : fatigue = difficulté à rester concentré (picotements, nuque raide, dos, regard fixe) → pause. Somnolence = difficulté à rester éveillé (bâillements, paupières lourdes, micro-sommeils de 1 à 4 s) → s''arrêter et dormir.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — La fatigue et la conduite
+- id: aff-c-pause-sans-signe
+  contexte: Long trajet sur autoroute, je me sens en forme.
+  affirmation: Une pause s'impose toutes les deux heures, même sans signe de fatigue.
+  verdict: vrai
+  pourquoi: 'La fatigue s''installe progressivement et on la sous-estime ; après 2 h de conduite, le temps de réaction tend vers 2 s. Pause de 15-20 min toutes les 2 h, plus souvent la nuit.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — La fatigue et la conduite ; En Voiture Simone — Fatigue
+- id: aff-c-micro-sommeil
+  affirmation: Un micro-sommeil de quelques secondes suffit à provoquer un accident mortel sur autoroute.
+  verdict: vrai
+  pourquoi: 'Les micro-sommeils durent 1 à 4 s : à 130 km/h, 4 s représentent près de 150 m parcourus à l''aveugle. La somnolence est la première cause d''accident mortel sur autoroute.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — La fatigue et la conduite
+- id: aff-c-repas-copieux
+  affirmation: Un repas copieux avant de reprendre la route favorise la somnolence.
+  verdict: vrai
+  pourquoi: 'Repas copieux, alcool, dette de sommeil, chaleur et médicaments aggravent la somnolence, surtout en début d''après-midi (13 h-15 h) et entre 2 h et 5 h : repas léger et pause avant de repartir.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — La fatigue et la conduite ; Départ en vacances
+- id: aff-c-nuit-trafic-fluide
+  affirmation: 'La nuit, le trafic est fluide : le risque d''accident mortel est donc plus faible que de jour.'
+  verdict: faux
+  pourquoi: 'Le risque d''accident mortel est environ 7 fois plus élevé la nuit : fatigue, alcool, vitesse plus élevée sur route dégagée et perception réduite se cumulent.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Conduire la nuit
+- id: aff-c-senior-visite
+  affirmation: En France, un conducteur de plus de 70 ans doit passer une visite médicale pour conserver son permis B.
+  verdict: faux
+  pourquoi: 'Aucune visite périodique liée à l''âge pour le permis B : l''aptitude s''apprécie sur les symptômes (vue, malaises, cognition) et c''est au conducteur de s''interroger sur ses capacités. Seuls les professionnels (groupe lourd) ont des visites régulières.'
+  importance: utile
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L'aptitude médicale à la conduite ; arrêté du 28 mars 2022
+- id: aff-c-senior-reaction
+  affirmation: Avec l'âge, le temps de réaction s'allonge et la récupération après un éblouissement est plus lente.
+  verdict: vrai
+  pourquoi: 'Après 40 ans, la récupération après éblouissement peut atteindre 2 minutes (≈ 10 s à 25 ans) ; acuité, champ visuel, audition et réflexes baissent progressivement, souvent sans que le conducteur s''en aperçoive.'
+  importance: utile
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Conseils pour les seniors ; Dépliant La vue
+- id: aff-c-lunettes-points
+  contexte: Mon permis porte la mention 01 (port de verres correcteurs).
+  affirmation: Conduire sans mes lunettes me coûte une amende, mais aucun point.
+  verdict: faux
+  pourquoi: 'Ne pas respecter une restriction d''usage du permis est une contravention de 4e classe : 135 € et 3 points, suspension possible (R221-1-1). La mention 01 conditionne la validité du permis.'
+  importance: utile
+  theme: C
+  sous_theme: deficiences
+  source: Code de la route, art. R221-1-1
+- id: aff-c-doses-maison
+  affirmation: Le plus souvent, les doses d'alcool servies à la maison sont plus importantes que celles servies dans un bar.
+  verdict: vrai
+  pourquoi: 'Question officielle 2023 (Q17 : « à la maison »). Au bar, le verre standard est dosé (≈ 10 g d''alcool pur) ; chez soi, on sert sans mesure : un verre maison peut en valoir deux ou trois.'
+  theme: C
+  sous_theme: deficiences
+  source: Sécurité routière — Exemples de nouvelles questions (Q17) ; securite-routiere.gouv.fr — L'alcool et la conduite
+- id: aff-c-biere-whisky
+  affirmation: Un demi de bière fait moins monter mon alcoolémie qu'un verre de whisky servi au bar.
+  verdict: faux
+  pourquoi: 'Un verre standard (25 cl de bière à 5°, 10 cl de vin, 3 cl d''alcool fort) contient toujours ≈ 10 g d''alcool pur et élève l''alcoolémie de 0,20 à 0,25 g/L : la boisson change, pas la dose.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L'alcool et la conduite ; Santé publique France
+- id: aff-c-alcool-sous-seuil
+  affirmation: Tant que je reste sous 0,5 g/L, l'alcool n'a aucun effet sur ma conduite.
+  verdict: faux
+  pourquoi: 'Les effets sont mesurables dès 0,3 g/L (attention, temps de réaction) et, à 0,5 g/L, le risque d''accident mortel est déjà multiplié par 2. Le seuil légal n''est pas un seuil de sécurité.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L'alcool et la conduite ; En Voiture Simone — Alcool au volant
+- id: aff-c-alcool-jugement
+  affirmation: Après deux verres, je reste capable de juger moi-même si je suis en état de conduire.
+  verdict: faux
+  pourquoi: 'L''alcool désinhibe : on surestime ses capacités et on sous-estime les risques, précisément quand ils augmentent. Seul un éthylotest (ou le temps) renseigne ; deux verres ≈ 0,5 g/L.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L'alcool et la conduite
+- id: aff-c-alcool-eblouissement
+  affirmation: L'alcool rend plus sensible à l'éblouissement.
+  verdict: vrai
+  pourquoi: 'Dès 0,5 g/L : sensibilité accrue à l''éblouissement, champ visuel rétréci, relief et distances mal perçus, coordination et vigilance dégradées — d''où le surrisque des retours de soirée de nuit.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L'alcool et la conduite
+- id: aff-c-dernier-verre-depart
+  affirmation: 'Aussitôt mon dernier verre bu, mon alcoolémie commence à baisser : mieux vaut partir tout de suite.'
+  verdict: faux
+  pourquoi: 'L''alcoolémie continue de monter après le dernier verre : pic 15 à 30 min après à jeun, 1 h au cours d''un repas. Partir « tout de suite », c''est conduire pendant la montée.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L'alcool et la conduite
+- id: aff-c-cafe-dessoule
+  affirmation: Un café serré ou une douche froide accélèrent l'élimination de l'alcool.
+  verdict: faux
+  pourquoi: 'Rien n''accélère l''élimination : le foie traite 0,10 à 0,15 g/L par heure (≈ 2 h 30 par verre). Café, douche, sport ou air frais donnent seulement une impression de lucidité.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L'alcool et la conduite ; Vinci Autoroutes — Idées reçues
+- id: aff-c-lendemain-matin
+  contexte: Soirée arrosée terminée vers 2 h du matin.
+  affirmation: À 8 h, je peux encore être au-dessus de 0,5 g/L.
+  verdict: vrai
+  pourquoi: 'Cinq verres ≈ 1 à 1,25 g/L au pic vers 3 h ; à 0,10-0,15 g/L éliminé par heure, il peut rester 0,5 g/L ou plus à 8 h. Le sommeil n''accélère rien : éthylotest avant de reprendre le volant.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code en Poche — Conduite en état d'ivresse
+- id: aff-c-probatoire-un-verre
+  contexte: Je suis en permis probatoire.
+  affirmation: Un seul verre standard suffit à dépasser le taux d'alcool autorisé.
+  verdict: vrai
+  pourquoi: 'Seuil probatoire : 0,2 g/L (0,10 mg/L d''air expiré, R234-1), soit « zéro verre » : un verre standard élève déjà l''alcoolémie de 0,20 à 0,25 g/L. Sanction : 135 €, 6 points — un permis probatoire de 1re année est invalidé.'
+  theme: C
+  sous_theme: deficiences
+  source: Code de la route, art. R234-1 ; securite-routiere.gouv.fr — L'alcool et la conduite
+- id: aff-c-cannabis-veille
+  affirmation: Un joint fumé la veille au soir peut encore être détecté par un test salivaire le lendemain matin.
+  verdict: vrai
+  pourquoi: 'Le cannabis reste détectable plusieurs heures (jusqu''à plusieurs jours chez un consommateur régulier) et il n''existe aucun seuil : toute trace constitue le délit (L235-1) ; le dépistage est possible sans infraction.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — La drogue et la conduite ; Code de la route, art. L235-1
+- id: aff-c-medicament-sans-ordonnance
+  affirmation: Un médicament acheté sans ordonnance ne peut pas être incompatible avec la conduite.
+  verdict: faux
+  pourquoi: 'L''automédication (antihistaminiques, antitussifs, antalgiques…) peut porter un pictogramme de niveau 2, voire 3 : vérifier la boîte et la rubrique « conducteurs » de la notice, et ne pas associer à l''alcool.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Les médicaments et la conduite ; ANSM
+- id: aff-c-somnifere-soir
+  affirmation: Un somnifère pris le soir n'a plus d'effet sur ma conduite le lendemain matin.
+  verdict: faux
+  pourquoi: 'Somnifères et anxiolytiques (benzodiazépines) ont des effets prolongés : somnolence résiduelle, réflexes ralentis, vision faussée au réveil ; ils portent un pictogramme de niveau 2 ou 3. Vérifier la notice avant de conduire.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Les médicaments et la conduite ; Vidal — Médicaments et conduite
+- id: aff-c-medicament-alcool
+  affirmation: Associer un médicament de niveau 1 (pictogramme jaune) à un verre d'alcool peut rendre la conduite dangereuse.
+  verdict: vrai
+  pourquoi: 'Alcool et médicaments additionnent leurs effets (somnolence, temps de réaction) : un traitement compatible avec la conduite quand il est pris seul peut devenir incompatible avec de l''alcool — de même avec le cannabis.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Les médicaments et la conduite ; Code en Poche — Médicaments
+- id: aff-c-mains-libres-passager
+  affirmation: Téléphoner avec le kit mains-libres intégré au véhicule est aussi peu risqué que discuter avec un passager.
+  verdict: faux
+  pourquoi: 'Le passager voit la route et se tait quand la situation se complique ; l''interlocuteur au téléphone, non : le risque est 2 à 3 fois plus élevé au téléphone. Le kit intégré est légal, pas sans danger : mieux vaut le mode avion.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Le téléphone et la conduite
+- id: aff-c-oreillette
+  affirmation: Je peux téléphoner avec une oreillette Bluetooth, puisque je ne tiens pas le téléphone en main.
+  verdict: faux
+  pourquoi: 'Le port à l''oreille de tout dispositif émettant du son (oreillette, écouteurs, casque) est interdit au conducteur depuis 2015 : 135 € et 3 points (R412-6-1). Seuls le kit intégré au véhicule et les appareils auditifs sont admis.'
+  theme: C
+  sous_theme: deficiences
+  source: Code de la route, art. R412-6-1
+- id: aff-c-gps-roulant
+  affirmation: Je peux entrer une adresse dans le GPS en roulant, à condition de rester sur ma voie.
+  verdict: faux
+  pourquoi: 'Quitter la route des yeux 5 s, c''est 70 m parcourus à l''aveugle à 50 km/h. On programme le GPS à l''arrêt et on suit ses consignes vocales en roulant.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Le téléphone et la conduite ; Ornikar — Vigilance
+- id: aff-c-ecran-video
+  affirmation: Un écran vidéo en fonctionnement dans mon champ de vision est interdit, même si je ne le manipule pas.
+  verdict: vrai
+  pourquoi: 'Tout écran en marche dans le champ de vision du conducteur, hors aide à la conduite ou navigation, est interdit : contravention de 5e classe (jusqu''à 1 500 €), 3 points et confiscation de l''appareil (R412-6-2).'
+  importance: utile
+  theme: C
+  sous_theme: deficiences
+  source: Code de la route, art. R412-6-2
+- id: aff-c-jeune-reflexes
+  affirmation: Grâce à leurs meilleurs réflexes, les jeunes conducteurs ont moins d'accidents mortels que la moyenne.
+  verdict: faux
+  pourquoi: 'Les 18-24 ans ont un risque d''être tués environ 2 fois supérieur à la moyenne (conducteurs novices : ×4) : inexpérience, surconfiance, vitesse, nuit et week-end, alcool, pression des passagers.'
+  importance: utile
+  theme: C
+  sous_theme: deficiences
+  source: ONISR — Bilan définitif 2024 ; securite-routiere.gouv.fr — Conseils aux conducteurs novices
+- id: aff-c-aac-accidents
+  affirmation: Les conducteurs formés en conduite accompagnée ont moins d'accidents pendant leurs premières années de permis.
+  verdict: vrai
+  pourquoi: 'Le surrisque du novice tient à l''inexpérience : 3 000 km parcourus sur au moins un an, en conditions variées et accompagné, la réduisent avant le permis. C''est la raison de la période probatoire ramenée à 2 ans.'
+  importance: utile
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Pourquoi choisir la conduite accompagnée

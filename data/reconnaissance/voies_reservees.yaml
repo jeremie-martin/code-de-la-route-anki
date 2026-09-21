@@ -4,13 +4,14 @@
   image:
     commons: Panneau de début de voie réservée aux véhicules à occupation multiple.svg
   nom: Début de voie réservée (panneau à losange blanc)
-  signification: 'Panneau carré (bleu ou noir/blanc selon version statique ou dynamique) portant un losange blanc, placé au-dessus ou à côté d''une voie de route à chaussées séparées : la voie est réservée, aux heures indiquées, aux véhicules de transport en commun, aux taxis et aux véhicules transportant un nombre minimal d''occupants (covoiturage, « 2+ » ou « 3+ » sur panonceau M4e), et selon les cas aux véhicules à très faibles émissions (Crit''Air 0 / vignette verte) et aux véhicules « autopartage » ; un panneau SR en amont détaille les catégories autorisées.'
-  conduite: Ne pas emprunter la voie si l'on est seul à bord d'un véhicule thermique (amende 135 €) ; quand le losange est éteint (voie dynamique) ou hors des horaires du panonceau M11b, la voie est ouverte à tous. Respecter la vitesse (souvent B14 associé).
-  complement: 'Panneau de position au début de la voie (première fois au-dessus de la voie), rappel après chaque échangeur, panonceau M3a/M3d de position, M4e (« 3+ »), M11b2 (horaires). Présignalisation par C24a à 150 m minimum ; panneau d''information SR en amont ; marquage : ligne T3 5u (permanente) ou T1 2u (horaires), losanges blancs au sol. Fin : panneau à losange barré de rouge (voir carte suivante). Signalisation expérimentale (arrêté du 24 août 2020, modifié 2024 et 2025, prolongée par l''arrêté du 28 juillet 2026) : pas de code IISR définitif à ce jour. Par défaut (sans panonceau) le losange = voie réservée bus + taxis + covoiturage 2+. Déployée à Lyon (M6/M7), Grenoble, Paris (A1/A13), Strasbourg, Nantes… Souvent enseignée dans les cours de code depuis 2021.'
+  signification: 'Losange blanc au-dessus d''une voie : voie réservée, aux heures indiquées, aux bus, aux taxis et au covoiturage (« 2+ » ou « 3+ »).'
+  conduite: Ne pas l'emprunter seul à bord (135 €) ; losange éteint ou hors horaires, la voie est ouverte à tous.
+  complement: 'Au début de la voie et après chaque échangeur ; panonceau M4e (« 3+ »), M11b2 (horaires). Fin : losange barré de rouge.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: Sans panonceau, le losange vaut bus + taxis + covoiturage 2+.
 - id: vr-losange-fin
   type: panneau
   image:

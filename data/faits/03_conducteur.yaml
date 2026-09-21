@@ -1,3 +1,4 @@
+# C — Le conducteur : faits à trous (v2). Un chiffre vit ici et nulle part ailleurs dans le thème.
 - id: c-temps-reaction
   texte: Le temps de réaction d'un conducteur attentif est d'environ {{c1::1 seconde}} ; il passe à {{c2::2 secondes}} (ou plus) avec la fatigue, l'alcool, les stupéfiants, les médicaments ou le téléphone.
   explication: 'Pendant ce temps, le véhicule continue à la même vitesse. Le temps de réaction ne dépend pas de la vitesse : seule la distance parcourue change.'
@@ -5,6 +6,7 @@
   sous_theme: distances
   source: securite-routiere.gouv.fr — La vitesse et la conduite ; Codeclic — Temps de réaction
 - id: c-distance-reaction-formule
+  dedup_ok: [aff-c-temps-reaction-vitesse]
   texte: 'Distance parcourue pendant 1 s de réaction ≈ chiffre des dizaines de la vitesse × {{c1::3}} : à 50 km/h → {{c2::15 m}}, à 90 km/h → {{c3::27 m}}, à 130 km/h → {{c4::39 m}}.'
   explication: 'C''est la convention des auto-écoles (V × 3/10). Valeur physique (V ÷ 3,6) : 14 m, 25 m, 36 m — les deux jeux de valeurs peuvent apparaître, ils sont proches.'
   theme: C
@@ -23,6 +25,7 @@
   sous_theme: distances
   source: Sécurité routière — Exemples de nouvelles questions (Q13) ; Ornikar ; Codes Rousseau
 - id: c-vitesse-double-freinage
+  dedup_ok: [aff-c-vitesse-double-freinage-double]
   texte: Quand la vitesse double, la distance de freinage est multipliée par {{c1::4}} (l'énergie cinétique croît avec le carré de la vitesse).
   explication: 'À 100 km/h, on freine 4 fois plus long qu''à 50. Et masse ×2 → énergie ×2 seulement : la vitesse pèse plus que le poids.'
   theme: C
@@ -35,7 +38,7 @@
   sous_theme: distances
   source: Code de la route, art. R412-12 ; Codes Rousseau — Calcul des distances
 - id: c-intervalle-pl-tunnel
-  texte: Hors agglomération, les véhicules de plus de {{c1::3,5 t}} (ou ensembles de plus de 7 m) qui se suivent à la même vitesse gardent au moins {{c2::50 m}} ; dans les tunnels, l'intervalle signalé est en général de {{c3::150 m}} (parfois 70 m), à respecter même à l'arrêt.
+  texte: Hors agglomération, les véhicules ou ensembles de plus de {{c1::3,5 t}} (ou de plus de 7 m de long) qui se suivent à la même vitesse gardent au moins {{c2::50 m}} ; dans les tunnels, l'intervalle signalé est en général de {{c3::150 m}} (parfois 70 m), à respecter même à l'arrêt.
   explication: Dans les tunnels, deux diodes bleues ou deux chevrons matérialisent l'intervalle. En voiture, je garde aussi une grande distance derrière un poids lourd pour voir devant lui — et pour qu'il me voie dans ses rétroviseurs.
   theme: C
   sous_theme: distances
@@ -47,7 +50,7 @@
   sous_theme: distances
   source: securite-routiere.gouv.fr — La vitesse et la conduite ; IISR 7e partie, art. 113-1
 - id: c-telephone-5s
-  texte: Lire un SMS détourne les yeux de la route environ {{c1::5 secondes}}, soit {{c2::70 m}} parcourus à 50 km/h (≈ 180 m à 130 km/h) ; le risque d'accident est multiplié par {{c3::3}} au téléphone et par {{c4::23}} en écrivant un message.
+  texte: Lire un SMS détourne les yeux de la route environ {{c1::5 secondes}}, soit {{c2::70 m}} parcourus à 50 km/h (≈ 180 m à 130 km/h) ; le risque d'accident est multiplié par {{c3::3}} au téléphone et par {{c4::23}} en lisant ou en écrivant un message.
   explication: 'Le smartphone cumule 4 distractions : visuelle, cognitive, auditive et physique, et réduit le champ de vision de 30 à 50 %.'
   theme: C
   sous_theme: vigilance
@@ -60,16 +63,10 @@
   source: securite-routiere.gouv.fr — Dépliant La vue ; Conduire sur autoroute ; En Voiture Simone — Champ visuel
 - id: c-vue-90-pourcent
   texte: Environ {{c1::90 %}} des informations utiles à la conduite passent par la vue ; l'acuité visuelle exigée pour le permis B est d'au moins {{c2::5/10}} avec les deux yeux (avec correction).
-  explication: 'Arrêté du 28 mars 2022. Si un œil voit moins de 1/10, l''autre doit atteindre 5/10. Avec lunettes ou lentilles obligatoires, le permis porte le code 01 : conduire sans, c''est 135 € et 3 points. Un contrôle de la vue régulier est conseillé (la baisse est progressive et inaperçue).'
+  explication: 'Arrêté du 28 mars 2022 : acuité binoculaire ≥ 5/10 (si un œil voit moins de 1/10, l''autre doit atteindre 5/10) et champ visuel horizontal ≥ 120°. Avec lunettes ou lentilles obligatoires, le permis porte le code 01 : conduire sans, c''est 135 € et 3 points. La baisse de la vue est progressive et passe inaperçue : contrôle régulier conseillé.'
   theme: C
   sous_theme: perception
-  source: Arrêté du 28 mars 2022 ; En Voiture Simone — Acuité visuelle
-- id: c-feux-portee
-  texte: Les feux de croisement éclairent à environ {{c1::30 m}}, les feux de route à environ {{c2::100 m}} ; un panneau doit être lisible à 150 m hors agglomération et 50 m en agglomération.
-  explication: 'De nuit en feux de croisement, un obstacle qui surgit dans la zone éclairée est inévitable au-delà de ~70 km/h : la vitesse doit permettre de s''arrêter dans la distance éclairée.'
-  theme: C
-  sous_theme: perception
-  source: securite-routiere.gouv.fr — Conduire la nuit ; Dépliant La vue
+  source: Arrêté du 28 mars 2022 ; En Voiture Simone — Acuité visuelle ; Code de la route, art. R221-1-1
 - id: c-fatigue-pause-chiffres
   texte: 'Sur long trajet : une pause de {{c1::15 à 20 min}} au moins toutes les {{c2::2 heures}} ; en cas de somnolence, une sieste d''environ {{c3::20 min}} est le seul remède efficace.'
   explication: 'Micro-sommeils de 1 à 4 s, bâillements, paupières lourdes = somnolence : on s''arrête et on dort. Fatigue (nuque raide, regard fixe, picotements) = pause. Heures à risque : 2 h-5 h et 13 h-15 h.'
@@ -113,20 +110,20 @@
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code de la route, art. R234-1
 - id: c-stupefiants-stats
-  texte: Les stupéfiants sont en cause dans environ {{c1::1 accident mortel sur 5}} ; le cannabis multiplie le risque d'accident mortel par près de {{c2::2}} (1,65 à 1,8), et l'association alcool + cannabis par environ {{c3::29}} (chiffre Sécurité routière).
-  explication: 'Le dépistage salivaire est possible à tout moment, même sans infraction ; il concerne aussi les cyclistes, les trottinettes et l''accompagnateur en conduite accompagnée. Aucun seuil : toute trace est un délit. D''anciens films de la Sécurité routière donnaient ×15 : les deux valeurs circulent dans les QCM.'
+  texte: Les stupéfiants sont en cause dans environ {{c1::1 accident mortel sur 5}} ; le cannabis multiplie le risque d'accident mortel par près de {{c2::2}}, et l'association alcool + cannabis par environ {{c3::29}} (chiffre Sécurité routière).
+  explication: 'Valeurs Sécurité routière : cannabis ×1,65 (×1,8 dans certains QCM), alcool + cannabis ×29 (×15 dans les anciens films). Le dépistage salivaire est possible à tout moment, même sans infraction ; il concerne aussi cyclistes, trottinettes et accompagnateur en conduite accompagnée.'
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — La drogue et la conduite ; ONISR 2024
+- id: c-medicaments-niveaux
+  texte: 'Pictogramme « médicaments et conduite » sur la boîte : niveau 1 (jaune) → {{c1::lire la notice avant de conduire}} ; niveau 2 (orange) → {{c2::ne pas conduire sans l''avis d''un professionnel de santé}} ; niveau 3 (rouge) → {{c3::ne pas conduire}} (avis médical pour reprendre).'
+  explication: 'Somnifères et anxiolytiques (benzodiazépines), certains antihistaminiques, antitussifs et antalgiques sont concernés ; environ un tiers des médicaments portent un pictogramme, y compris sans ordonnance. Ne jamais associer à l''alcool.'
+  theme: C
+  sous_theme: deficiences
+  source: ANSM — Médicaments et conduite ; arrêté du 8 août 2008 (CSP, art. R5121-139) ; securite-routiere.gouv.fr — Les médicaments et la conduite
 - id: c-retro-7s
   texte: En circulation, on contrôle le rétroviseur intérieur {{c1::régulièrement (toutes les 5 à 10 secondes environ)}} et, obligatoirement, avant de {{c2::ralentir, freiner, s'arrêter ou tourner}}.
   explication: 'Rétroviseur extérieur du côté concerné + angle mort avant de : tourner, dépasser, se déporter, changer de voie, se rabattre, s''insérer, quitter un stationnement, ouvrir la portière. Les contrôles précèdent toujours le clignotant ; l''angle mort est le dernier regard avant de tourner le volant.'
   theme: C
   sous_theme: vigilance
   source: Stych — Les contrôles ; Codeclic — L'angle mort
-- id: c-choc-50-etages
-  texte: Un choc frontal à 50 km/h équivaut à une chute de {{c1::3 étages}} (≈ 10 m) ; un enfant de 20 kg non attaché devient alors un projectile d'une {{c2::demi-tonne}}.
-  explication: 'Au-delà de 80 km/h, un choc frontal laisse peu de chances même ceinturé : la vitesse est la première cause de mortalité routière (~30 % des accidents mortels). Certains supports de la Sécurité routière disent « 4e étage » ; physiquement v²/2g ≈ 10 m, soit 3 étages.'
-  theme: C
-  sous_theme: perception
-  source: securite-routiere.gouv.fr — Conseils aux conducteurs novices ; Port de la ceinture

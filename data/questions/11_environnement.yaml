@@ -1,128 +1,131 @@
-- id: e-ecoconduite-principes
-  question: Quels sont les principes de l'écoconduite ?
-  reponse: Anticiper (regarder loin, lever le pied tôt, utiliser le frein moteur), accélérer en douceur, passer les rapports tôt, rouler à vitesse stable et modérée, couper le moteur aux arrêts prolongés, limiter la climatisation et les charges inutiles, entretenir le véhicule.
-  explication: 'Gain typique : 10 à 15 % de carburant et moins d''usure des freins — sans rouler plus lentement en moyenne, car on freine moins.'
+# E — Environnement : décisions d'écoconduite, pollution, écomobilité.
+# Les chiffres vivent dans data/faits/11_environnement.yaml, les idées reçues dans data/affirmations/11_environnement.yaml.
+- id: e-feu-rouge-anticipation
+  question: Le feu passe au rouge à une centaine de mètres devant moi. Je maintiens mon allure pour freiner ensuite, ou je lève le pied tout de suite ?
+  reponse: 'Je lève le pied tout de suite : en frein moteur l''injection est coupée, je ne consomme rien, je ménage mes freins et j''arrive peut-être au vert.'
+  explication: 'Anticiper est le premier geste d''écoconduite : moins de freinages, donc moins de réaccélérations. À l''ETG, « je maintiens ma vitesse » est presque toujours la mauvaise réponse.'
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — Écoconduite ; securite-routiere.gouv.fr
+  source: ADEME — Écoconduite ; En Voiture Simone — Éco-conduite
 - id: e-rapports-regime
   question: À quel régime passe-t-on les rapports pour consommer moins ?
   reponse: Vers 2 500 tr/min en essence et 2 000 tr/min en diesel ; on roule sur le rapport le plus élevé possible sans faire peiner le moteur (ex. 4e à 50 km/h en ville).
-  explication: Un moteur qui tourne vite consomme et s'use plus ; à l'inverse, un régime trop bas (à-coups) l'abîme. La boîte automatique gère cela seule en mode normal/éco.
+  explication: Un moteur qui tourne vite consomme et s'use plus ; à l'inverse, un régime trop bas (à-coups) l'abîme. La boîte automatique gère cela seule en mode normal ou éco.
   theme: E
   sous_theme: ecoconduite
   source: ADEME — Écoconduite
 - id: e-moteur-arret
-  question: À partir de quelle durée d'arrêt vaut-il mieux couper le moteur ?
-  reponse: Dès que l'arrêt dépasse environ 20 à 30 secondes (barrière, livraison, attente) — c'est ce que fait automatiquement le Stop & Start.
-  explication: Un moteur au ralenti consomme (0,5 à 1 L/h) et pollue pour rien ; le redémarrage coûte moins que 20 s de ralenti. Laisser tourner le moteur d'un véhicule à l'arrêt sans nécessité est d'ailleurs interdit.
+  question: Les barrières d'un passage à niveau viennent de se fermer devant moi. Je laisse tourner le moteur ?
+  reponse: 'Non : dès qu''un arrêt dépasse 20 à 30 secondes, je coupe le moteur — c''est exactement ce que fait automatiquement le Stop & Start.'
+  explication: Un moteur au ralenti consomme 0,5 à 1 L/h et pollue pour rien ; le redémarrage coûte moins que 20 s de ralenti. Laisser tourner le moteur d'un véhicule à l'arrêt sans nécessité est d'ailleurs interdit.
   theme: E
   sous_theme: ecoconduite
   source: ADEME — Écoconduite ; arrêté du 12 novembre 1963 (moteur tournant à l'arrêt)
-- id: e-climatisation-conso
-  question: Quel est l'effet de la climatisation sur la consommation ?
-  reponse: Une surconsommation de l'ordre de 10 à 20 % en ville (jusqu'à 30 % sur les petits moteurs), moins sur route ; à grande vitesse, elle consomme moins que les fenêtres ouvertes (aérodynamique).
-  explication: 'Bon usage : régler à ~5 °C sous la température extérieure, ventiler avant de l''allumer, l''entretenir (elle sert aussi à désembuer).'
-  theme: E
-  sous_theme: ecoconduite
-  source: ADEME — La climatisation
-- id: e-vitesse-conso
-  question: Sur autoroute, que gagne-t-on à rouler à 120 ou 110 km/h plutôt qu'à 130 ?
-  reponse: Environ 10 % de carburant à 120 et 20 à 25 % à 110, pour quelques minutes de plus sur 100 km (≈ 4 min à 120).
-  explication: 'La résistance de l''air augmente avec le carré de la vitesse : c''est le premier levier d''économie sur route. Rouler à vitesse stable (régulateur sur route plate) évite les accélérations coûteuses.'
-  theme: E
-  sous_theme: ecoconduite
-  source: ADEME — Écoconduite
-- id: e-pneus-conso
-  question: Quel est l'effet de pneus sous-gonflés sur la consommation et la sécurité ?
-  reponse: Surconsommation (≈ +2 à 5 % pour −0,5 bar), usure accélérée et surtout risque d'échauffement et d'éclatement, distance de freinage allongée.
-  explication: On vérifie la pression à froid une fois par mois et avant un long trajet, en ajoutant 0,2-0,3 bar si le véhicule est chargé.
-  theme: E
-  sous_theme: ecoconduite
-  source: ADEME ; securite-routiere.gouv.fr — Les pneus
 - id: e-frein-moteur
   question: Qu'est-ce que le frein moteur et pourquoi l'utiliser ?
-  reponse: 'Le ralentissement obtenu en levant le pied de l''accélérateur avec un rapport engagé (sans débrayer) : consommation quasi nulle (injection coupée), freins ménagés, meilleure stabilité — indispensable en descente.'
-  explication: 'Rouler au point mort (« en roue libre ») est dangereux et n''économise rien sur un moteur à injection. En descente longue : rapport inférieur + freinage par intermittence (question officielle 2023, Q18).'
+  reponse: 'Le ralentissement obtenu en levant le pied avec un rapport engagé, sans débrayer : injection coupée donc consommation nulle, freins ménagés et véhicule plus stable.'
+  explication: 'Il s''emploie dès que l''on peut ralentir sans freiner, et il est indispensable en longue descente (question officielle 2023 : freinage par intermittence et frein moteur).'
   theme: E
   sous_theme: ecoconduite
   source: ADEME — Écoconduite ; Sécurité routière — Exemples de nouvelles questions (Q18)
-- id: e-trajets-courts
-  question: Pourquoi les trajets courts (< 3 km) sont-ils les plus polluants au kilomètre ?
-  reponse: Le moteur froid consomme jusqu'à 50 % de plus et le catalyseur, inefficace tant qu'il n'est pas chaud, laisse passer les polluants ; les premiers kilomètres se font donc idéalement à pied, à vélo ou en transports en commun.
-  explication: 'Inutile de faire chauffer le moteur à l''arrêt : on part doucement et il chauffe en roulant.'
+- id: e-climatisation-conso
+  question: 'Été, embouteillage en ville par forte chaleur : climatisation ou vitres ouvertes ?'
+  reponse: 'Les vitres : à faible allure, c''est la climatisation qui coûte le plus cher en carburant. Si je la garde, je la règle 4 à 5 °C sous la température extérieure.'
+  explication: Un entretien régulier (filtre d'habitacle, fluide frigorigène) maintient son efficacité ; le fluide, gaz à fort effet de serre, ne se recharge que chez un professionnel.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — Se déplacer autrement
-- id: e-polluants
-  question: Quels sont les principaux polluants émis par un véhicule thermique ?
-  reponse: Le CO₂ (gaz à effet de serre, proportionnel au carburant brûlé), les oxydes d'azote NOx (surtout diesel), les particules fines (échappement mais aussi freins et pneus), le monoxyde de carbone CO et les hydrocarbures imbrûlés.
-  explication: Les particules et NOx nuisent à la santé (asthme, maladies cardio-vasculaires) ; le CO₂ au climat. Les véhicules électriques n'émettent pas de gaz d'échappement mais produisent des particules d'usure.
+  source: ADEME — La climatisation ; Codeclic — Conduite économique
+- id: e-polluant-co2
+  question: Pourquoi le CO₂ ne se traite-t-il pas comme les autres polluants d'un véhicule ?
+  reponse: Ce n'est pas un gaz toxique mais le principal gaz à effet de serre ; il est proportionnel au carburant brûlé, donc aucun filtre ne le réduit — seule une consommation plus faible le fait.
+  explication: Les transports pèsent près de 30 % des émissions françaises de gaz à effet de serre, la voiture particulière en tête. Les NOx et les particules, eux, se traitent par catalyseur, filtre à particules ou AdBlue.
   theme: E
   sous_theme: pollution
   source: ADEME ; Ministère de la Transition écologique — Qualité de l'air
-- id: e-critair-classes
-  question: Que classe la vignette Crit'Air, et combien y a-t-il de catégories ?
-  reponse: 'Le niveau d''émissions polluantes du véhicule selon sa motorisation et sa date de mise en circulation : Crit''Air 0 (vert, électrique/hydrogène), 1 (violet : essence Euro 5-6, hybrides rechargeables, gaz), 2 (jaune), 3 (orange), 4 (bordeaux), 5 (gris) — plus les non classés (les plus anciens).'
-  explication: 'Obligatoire pour circuler dans les ZFE et lors des pics de pollution (circulation différenciée) ; elle se commande en ligne (3,85 € en 2026, frais d''envoi inclus) et se colle sur le pare-brise. Absence de vignette dans une ZFE : 68 €.'
+- id: e-particules-usure
+  question: En dehors de l'échappement, d'où viennent les particules fines émises par une voiture ?
+  reponse: De l'usure des freins, des pneus et de la chaussée — plus de la moitié du total des particules dues au trafic routier.
+  explication: D'où l'intérêt d'une conduite souple, qui use moins les freins, et de pneus bien gonflés. Particules fines et NOx nuisent à la santé (asthme, maladies cardio-vasculaires) ; le CO₂ au climat.
   theme: E
   sous_theme: pollution
-  source: certificat-air.gouv.fr ; service-public.fr — Vignette Crit'Air
+  source: ADEME ; En Voiture Simone — Achat éco-responsable
+- id: e-critair-classes
+  question: Sur quoi repose la classe Crit'Air d'un véhicule ?
+  reponse: 'Sur son type de motorisation et sa date de première mise en circulation, qui déterminent sa norme Euro — pas sur sa puissance ni sur sa consommation réelle.'
+  explication: Une essence et un diesel de la même année n'ont donc pas la même classe. La vignette se commande sur certificat-air.gouv.fr et elle est exigée aussi bien en ZFE que lors d'un pic de pollution.
+  theme: E
+  sous_theme: pollution
+  source: certificat-air.gouv.fr ; service-public.fr F33371
 - id: e-zfe-definition
   question: Qu'est-ce qu'une ZFE (zone à faibles émissions mobilité) ?
-  reponse: Une zone urbaine, délimitée par des panneaux, où la circulation (et parfois le stationnement) des véhicules les plus polluants est interdite, de façon permanente ou à certaines heures, selon leur vignette Crit'Air.
-  explication: 'Les restrictions varient selon la métropole et l''année ; l''entrée est signalée par un panneau spécifique (B56) avec panonceau indiquant les Crit''Air interdits. Le Parlement avait voté leur suppression en 2025, censurée par le Conseil constitutionnel le 21 mai 2026 : les ZFE restent en vigueur ; les cartes et règles locales sont à vérifier avant un trajet.'
+  reponse: Une zone urbaine délimitée par des panneaux, où les véhicules les plus polluants ne peuvent pas circuler, en permanence ou à certaines heures, selon leur vignette Crit'Air.
+  explication: 'Les restrictions varient selon la métropole et selon l''année : on vérifie les règles locales avant un trajet. L''entrée est signalée par le panneau de zone B56, avec un panonceau qui précise les vignettes Crit''Air concernées et les horaires.'
   theme: E
   sous_theme: pollution
-  source: Code général des collectivités territoriales, art. L2213-4-1 ; service-public.fr — ZFE
+  source: Code général des collectivités territoriales, art. L2213-4-1 ; service-public.fr F33371
 - id: e-pic-pollution
-  question: Que se passe-t-il lors d'un pic de pollution ?
-  reponse: 'Le préfet peut abaisser les vitesses maximales (généralement de 20 km/h : 110 → 90, 90 → 70, 80 → 70), instaurer la circulation différenciée (seules certaines vignettes Crit''Air circulent), rendre gratuits ou moins chers les transports en commun et le stationnement résidentiel.'
-  explication: Les mesures sont annoncées par les panneaux à messages variables, la radio et les médias ; leur non-respect est sanctionné (68 €).
+  question: Que peut décider le préfet lors d'un épisode de pollution ?
+  reponse: 'Instaurer la circulation différenciée, annoncée la veille : seules certaines vignettes Crit''Air circulent ; il peut aussi abaisser les vitesses maximales et dévier les poids lourds.'
+  explication: Les mesures sont annoncées par les panneaux à messages variables, la radio et les médias ; leur non-respect coûte 68 €. Les transports en commun peuvent être rendus gratuits ou moins chers.
   theme: E
   sous_theme: pollution
-  source: Arrêté interpréfectoral (Île-de-France) ; service-public.fr — Pic de pollution
+  source: service-public.fr — Pic de pollution ; arrêtés préfectoraux
 - id: e-bruit-sources
-  question: Quelles sont les sources de bruit routier que le conducteur peut limiter ?
-  reponse: Le klaxon (interdit hors danger immédiat), un échappement modifié ou défectueux, les accélérations brutales et les hauts régimes, la musique à volume élevé fenêtres ouvertes, le claquement de portières la nuit.
-  explication: Le bruit est une nuisance sanitaire (sommeil, stress) ; un échappement non conforme est sanctionné (135 €) et peut entraîner l'immobilisation du véhicule. Radars sonores expérimentés depuis 2022.
+  question: Quelles nuisances sonores un conducteur peut-il éviter ?
+  reponse: Le klaxon hors danger immédiat, un échappement modifié ou percé, et les accélérations à haut régime, surtout la nuit en agglomération.
+  explication: Le bruit est une nuisance sanitaire (sommeil, stress) ; un échappement non conforme coûte 135 € et peut faire immobiliser le véhicule. Des radars sonores sont expérimentés depuis 2022.
   theme: E
   sous_theme: bruit
   source: Code de la route, art. R318-3 et R416-1 ; ADEME — Bruit
 - id: e-entretien-dechets
   question: Que fait-on des huiles usagées, batteries et pneus usés ?
-  reponse: 'On les rapporte en déchetterie ou chez un garagiste/distributeur (reprise obligatoire) : jamais à la poubelle, dans l''évier ou dans la nature.'
+  reponse: On les rapporte en déchetterie ou chez un garagiste ou un distributeur, tenu de les reprendre — pas à la poubelle ni dans la nature.
   explication: Un litre d'huile pollue des milliers de litres d'eau ; les batteries contiennent du plomb et de l'acide. Laver sa voiture en station plutôt que dans la rue évite le rejet d'hydrocarbures dans les eaux pluviales.
   theme: E
   sous_theme: pollution
   source: ADEME — Déchets automobiles
 - id: e-ecomobilite-choix
   question: Qu'est-ce que l'écomobilité ?
-  reponse: 'Choisir pour chaque trajet le mode de déplacement le moins polluant possible : marche, vélo (ou VAE), transports en commun, train, covoiturage, autopartage — et n''utiliser la voiture seul que quand c''est nécessaire.'
-  explication: En France, la moitié des trajets en voiture font moins de 5 km. Le vélo est souvent le plus rapide en ville sur ces distances.
+  reponse: Choisir pour chaque déplacement le mode le moins polluant possible — marche, vélo, transports en commun, covoiturage — et ne prendre la voiture seul que lorsque c'est nécessaire.
+  explication: Sur les courtes distances urbaines, le vélo est souvent aussi rapide que la voiture. Autopartage, parcs relais et forfait mobilités durables complètent l'offre.
   theme: E
   sous_theme: ecomobilite
   source: ADEME — Se déplacer autrement
 - id: e-covoiturage-voie
-  question: Comment reconnaît-on une voie réservée au covoiturage, et qui peut l'emprunter ?
-  reponse: 'Par le losange blanc (panneau et marquage au sol), parfois activé seulement à certaines heures : véhicules avec au moins 2 occupants, taxis, transports en commun, véhicules à très faibles émissions (Crit''Air 0).'
-  explication: Signal déployé depuis 2020 (Lyon, Grenoble, Paris périphérique, A48/A13…). Y circuler seul est sanctionné (135 €) ; des caméras comptent les occupants.
+  question: Comment reconnaît-on une voie réservée au covoiturage ?
+  reponse: Au losange blanc peint au sol ou affiché sur un panneau lumineux ; aux heures indiquées, elle est réservée au covoiturage (au moins deux personnes) et à quelques catégories admises, comme les taxis et les bus.
+  explication: Signal déployé depuis 2020 (Lyon, Grenoble, périphérique parisien, A48/A13…). Y circuler sans y avoir droit coûte 135 € ; des caméras comptent les occupants.
   theme: E
   sous_theme: ecomobilite
-  source: Code de la route, art. L411-8 ; IISR 9e partie (signalisation dynamique, arrêté du 15 mars 2024) ; paris.fr
-- id: e-motorisations
-  question: Quels avantages et limites des principales motorisations alternatives ?
-  reponse: 'Électrique : zéro émission à l''échappement, silencieuse (danger pour les piétons), autonomie et recharge à planifier, lourde. Hybride : consommation réduite en ville. GPL/GNV : moins de particules et de NOx, réseau limité. Hydrogène : rare. E85 : essence contenant jusqu''à 85 % de bioéthanol, véhicule ou boîtier compatible.'
-  explication: Un véhicule électrique doit émettre un son artificiel à basse vitesse (< 20 km/h) depuis 2021 pour être entendu des piétons. Le choix d'un véhicule se fait aussi selon son étiquette énergie/CO₂ (malus au-delà d'un seuil de CO₂ fixé chaque année).
+  source: Code de la route, art. L411-8 ; IISR 9e partie (arrêté du 15 mars 2024) ; paris.fr
+- id: e-electrique-avantages
+  question: Quels sont l'avantage et la limite principale d'une voiture électrique ?
+  reponse: Aucune émission à l'échappement et un coût au kilomètre faible, mais une autonomie et des temps de recharge à planifier, et un poids élevé.
+  explication: Elle est classée Crit'Air 0 et circule donc dans toutes les ZFE. Son poids allonge les distances de freinage ; le freinage régénératif la ralentit dès que l'on lève le pied.
   theme: E
   sous_theme: ecomobilite
-  importance: utile
-  source: ADEME — Car Labelling ; règlement (UE) 540/2014 (AVAS)
+  source: ADEME — Car Labelling ; service-public.fr
 - id: e-ve-recharge
-  question: Quelles précautions avec un véhicule électrique ?
-  reponse: Planifier les recharges (bornes, temps de charge de 30 min en rapide à plusieurs heures à domicile), adapter sa conduite au silence du véhicule près des piétons, et tenir compte de son poids (freinage) ; le freinage régénératif ralentit dès qu'on lève le pied.
-  explication: 'Une place de recharge est réservée aux véhicules en charge : y stationner sans recharger est un stationnement gênant (35 €, R417-10), avec mise en fourrière possible.'
+  question: Que faut-il prévoir pour partir loin en voiture électrique ?
+  reponse: 'Planifier les recharges : 20 à 40 minutes sur une borne rapide, plusieurs heures sur une prise domestique — et compter une autonomie nettement réduite par temps froid.'
+  explication: Le chauffage, la vitesse et le froid font chuter l'autonomie ; on repère la borne suivante avant d'arriver en réserve, les bornes rapides étant surtout implantées sur les grands axes.
   theme: E
   sous_theme: ecomobilite
   importance: utile
   source: service-public.fr ; Code de la route, art. R417-10
+- id: e-energies-alternatives
+  question: Qu'apportent le GPL, le GNV et l'hydrogène par rapport à une essence ou à un diesel ?
+  reponse: Moins de particules, d'oxydes d'azote et de bruit, avec un classement Crit'Air plus favorable ; en contrepartie, un réseau de stations très limité et un surcoût à l'achat.
+  explication: L'hydrogène (pile à combustible) ne rejette que de la vapeur d'eau, mais les stations sont rarissimes. Le malus écologique à l'immatriculation, calculé sur le CO₂ et sur le poids, pousse vers ces motorisations.
+  theme: E
+  sous_theme: ecomobilite
+  importance: utile
+  source: En Voiture Simone — Achat éco-responsable ; service-public.fr F33371
+- id: e-e85
+  question: Qu'est-ce que le superéthanol E85 ?
+  reponse: Un carburant contenant jusqu'à 85 % de bioéthanol, réservé aux véhicules « flex-fuel » ou équipés d'un boîtier homologué ; moins cher au litre, mais davantage consommé.
+  explication: À ne pas confondre avec le SP95-E10, qui ne contient que 10 % d'éthanol et convient à la quasi-totalité des essences récentes. En cas d'erreur de carburant, on ne démarre pas et on fait vidanger le réservoir.
+  theme: E
+  sous_theme: ecomobilite
+  importance: utile
+  source: En Voiture Simone — Achat éco-responsable ; ADEME

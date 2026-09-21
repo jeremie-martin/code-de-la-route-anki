@@ -12,7 +12,9 @@ MODEL_IDS = {
     "CDR Fait": 1758400000003,
     "CDR Question": 1758400000004,
     "CDR Scenario": 1758400000005,
+    "CDR Affirmation": 1758400000006,
 }
+DECK_CONFIG_ID = 1758400002000  # options preset shipped with the deck (curriculum order, 20 new/day)
 
 DECK_ROOT = "Code de la route 2026"
 DECK_IDS = {  # subdeck name -> stable id
@@ -108,6 +110,13 @@ CSS = """
 .cdr-fait.center { text-align: center; }
 hr#answer { border: 0; border-top: 1px solid #d0d0d0; margin: 14px 0; }
 ul.cdr-list { text-align: left; display: inline-block; margin: 6px auto; padding-left: 22px; }
+.cdr-ctx { font-size: 17px; color: #555; margin: 6px auto 4px; max-width: 620px; }
+.nightMode .cdr-ctx, .night_mode .cdr-ctx { color: #bdbdbd; }
+.cdr-aff { font-size: 22px; font-weight: 600; margin: 8px auto 4px; max-width: 640px; }
+.cdr-aff::before { content: "«\\00a0"; color: #8a8a8a; } .cdr-aff::after { content: "\\00a0»"; color: #8a8a8a; }
+.cdr-verdict { display: inline-block; font-size: 20px; font-weight: 800; letter-spacing: .08em; padding: 4px 18px; text-transform: uppercase;
+  border-radius: 999px; margin: 10px 0 8px; color: #fff; background: #1a6b3a; }
+.cdr-verdict.faux { background: #d8362d; }
 """
 
 KICKER = '<div class="cdr-kicker">{{Theme}}{{#SousTheme}} · {{SousTheme}}{{/SousTheme}}</div>'
@@ -216,14 +225,38 @@ def notetypes() -> list[dict]:
                 ),
             }],
         },
+        {
+            "name": "CDR Affirmation",
+            "fields": ["Id", "Contexte", "Affirmation", "Verdict", "Pourquoi", "Image", "Code", "Theme", "SousTheme", "Source"],
+            "templates": [{
+                "name": "Affirmation",
+                "qfmt": (
+                    '<div class="cdr-wrap">' + KICKER +
+                    '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
+                    '{{#Contexte}}<div class="cdr-ctx">{{Contexte}}</div>{{/Contexte}}'
+                    '<div class="cdr-aff">{{Affirmation}}</div>'
+                    '<div class="cdr-hint">Vrai ou faux ? (et pourquoi)</div></div>'
+                ),
+                "afmt": (
+                    '<div class="cdr-wrap">' + KICKER +
+                    '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
+                    '{{#Contexte}}<div class="cdr-ctx">{{Contexte}}</div>{{/Contexte}}'
+                    '<div class="cdr-aff">{{Affirmation}}</div>'
+                    '<hr id=answer>'
+                    '<div class="cdr-verdict {{Verdict}}">{{Verdict}}</div>'
+                    '<div class="cdr-box">{{Pourquoi}}</div>'
+                    + SRC + '</div>'
+                ),
+            }],
+        },
     ]
 
 
 DECK_DESCRIPTIONS = {
-    "00 Méthode d'examen": "Comment l'épreuve fonctionne (40 questions, 35/40, bandeau « une/plusieurs réponses », pictogramme de point de vue) et comment lire une question sans tomber dans les pièges. À voir en premier, et à revoir la veille de l'examen.",
+    "00 Méthode d'examen": "Lire une question de l'ETG sans tomber dans les pièges : bandeau « une/plusieurs réponses », pictogramme de point de vue, halo jaune, « je peux / je dois », adverbes, négations, questions vidéo. 40 questions, 35 bonnes réponses exigées, ~20 s par question. À voir en premier et à revoir la veille.",
     "01 Signalisation": "Panneaux, panonceaux, balises, marquages, feux, gestes de l'agent : image → sens exact, conduite à tenir, piège. Les signaux essentiels arrivent en premier ; « Parcourir → tag:importance::rare → Suspendre » si vous manquez de temps. Les cartes « Quelle est la différence ? » ciblent les paires confondues.",
     "02 Circulation": "Priorités (avec scénarios vérifiés), vitesses, positionnement, dépassement, croisement, arrêt et stationnement, feux. Thème le plus échoué à l'examen : ne pas le négliger.",
-    "03 Le conducteur": "Un quart des questions de l'examen : distances (réaction, freinage, arrêt, sécurité), perception, vigilance et anticipation, alcool, stupéfiants, médicaments, fatigue, téléphone.",
+    "03 Le conducteur": "Un quart des questions de l'examen : distances (réaction, freinage, arrêt, sécurité), perception, vigilance et anticipation, alcool, stupéfiants, médicaments, fatigue, téléphone. Beaucoup de cartes « Vrai ou faux ? » : l'épreuve juge des affirmations sur le risque, pas des articles de loi.",
     "04 La route": "Nuit, pluie, brouillard, neige, tunnels, passages à niveau, tramways, chantiers, autoroute, montagne.",
     "05 Les autres usagers": "Piétons, cyclistes, trottinettes, motos (inter-files 2025), poids lourds, bus et tramways, véhicules prioritaires et facilités de passage.",
     "06 Réglementation et notions diverses": "Permis à points et probatoire, classes d'amendes et barème des retraits, délits (valeurs 2025-2026, anciennes valeurs signalées), documents, assurance, contrôle technique, Crit'Air/ZFE, équipements.",
