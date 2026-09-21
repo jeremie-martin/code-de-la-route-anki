@@ -117,14 +117,18 @@
   sous_theme: ecomobilite
   source: Règlement (UE) 540/2014 (AVAS) ; ADEME — Véhicules électriques
 - id: aff-e-covoiturage-electrique
-  contexte: Voie réservée signalée par un losange blanc ; je suis seul dans une voiture électrique.
-  affirmation: Je peux emprunter cette voie.
+  contexte: Une voie réservée est active. La signalisation autorise seulement les véhicules à au moins deux occupants,
+    les taxis et les bus ; aucune exception pour l’électrique.
+  affirmation: Seul dans ma voiture électrique, je dois rester sur les voies générales.
   verdict: vrai
-  pourquoi: Elle est ouverte aux véhicules d'au moins deux occupants, mais aussi aux taxis, aux transports en commun et aux véhicules à très faibles émissions (Crit'Air 0), même avec un seul occupant.
+  pourquoi: La motorisation électrique ne donne pas une autorisation générale. Les bénéficiaires dépendent de la
+    réglementation locale et de la signalisation de cette voie.
   theme: E
   sous_theme: ecomobilite
   importance: utile
-  source: Code de la route, art. L411-8 ; En Voiture Simone — Covoiturage
+  source: Ville de Paris — https://www.paris.fr/pages/la-voie-reservee-sur-le-peripherique-entre-en-vigueur-le-3-mars-30106
+  tags:
+  - revision::v3
 - id: aff-e-borne-recharge
   contexte: Place équipée d'une borne de recharge, libre devant les commerces.
   affirmation: Je peux m'y garer sans recharger, le temps d'une course rapide.

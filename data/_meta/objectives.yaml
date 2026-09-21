@@ -1,0 +1,688 @@
+# Sélection éditoriale du socle v3 ; pas une estimation de fréquence des questions ETG.
+- id: x-lecture
+  theme: X
+  titre: Lire le point de vue, les conditions et chaque proposition
+  raison: Éviter les recettes de réponse et apprendre à justifier.
+  notes:
+  - etg-bandeau-reponses
+  - etg-pictogramme-point-de-vue
+  - etg-je-peux-je-dois
+  - etg-reflexe-securite
+  - etg-video-strategie
+  - etg-forme-double-oui-non
+- id: l-danger
+  theme: L
+  titre: Reconnaître le danger et anticiper avant de le voir
+  raison: Une variante de chaque famille utile, sans commencer par toutes les variantes.
+  notes:
+  - a1a
+  - a1c
+  - a2a
+  - a2b
+  - a3
+  - a3a
+  - a4
+  - a7
+  - a8
+  - a9b
+  - a13a
+  - a13b
+  - a14
+  - a15a1
+  - a15b
+  - a16
+  - a17
+  - a18
+  - a21
+  - a23
+  - a24
+  - l-implantation-danger
+  - conf-a13a-a13b
+  - conf-a7-a8
+- id: l-priorite-signaux
+  theme: L
+  titre: Lire les signaux qui attribuent la priorité
+  raison: Préparer les décisions aux intersections et aux rétrécissements.
+  notes:
+  - ab1
+  - ab2
+  - ab3a
+  - ab3b
+  - ab4
+  - ab5
+  - ab6
+  - ab7
+  - ab25
+  - b15
+  - c18
+  - m7
+  - conf-ab1-ab2
+  - conf-ab3a-ab4
+  - conf-b15-c18
+- id: l-intersection
+  theme: L
+  titre: Déterminer qui doit céder et où s'arrêter
+  raison: Règle, exception et application visuelle ; le sens des flèches compte.
+  notes:
+  - l-stop-arret
+  - l-sortie-parking-priorite
+  - l-tourner-gauche-regle
+  - l-intersection-encombree
+  - aff-l-stop-avancer
+  - aff-l-priorite-droite-rue-etroite
+  - scn-pd-droite-tout-droit
+  - scn-pd-gauche-tout-droit
+  - scn-pd-je-tourne-gauche-face
+  - scn-pd-face-tourne-gauche
+  - scn-stop-moi
+  - scn-stop-autre
+  - scn-sortie-parking
+  - scn-pd-trois-vehicules
+- id: l-giratoire
+  theme: L
+  titre: Entrer, se placer et sortir sans couper une trajectoire
+  raison: Distinguer priorité à l'entrée et priorité lors d'un changement de voie.
+  notes:
+  - l-giratoire-vs-rond-point
+  - l-giratoire-clignotant
+  - l-giratoire-placement
+  - l-giratoire-sortie-impossible
+  - scn-giratoire-cedez
+  - scn-rond-point-priorite-droite
+- id: l-feux
+  theme: L
+  titre: Combiner feux, agent et restrictions
+  raison: Le vert n'est pas une permission sans conditions.
+  notes:
+  - feu-rouge
+  - feu-jaune-fixe
+  - feu-vert
+  - feu-jaune-clignotant
+  - feu-rouge-clignotant
+  - r12
+  - r14
+  - r16
+  - r21a
+  - r21c
+  - agent-bras-leve
+  - agent-bras-tendu-face
+  - agent-profil
+  - l-signalisation-hierarchie
+  - l-feu-hors-service-panneaux
+  - l-feu-vert-interdiction-tourner
+  - aff-l-jaune-trop-engage
+  - scn-feu-vert-tourne-gauche
+  - scn-agent-bras-leve
+- id: l-prescriptions
+  theme: L
+  titre: Reconnaître une interdiction ou une obligation
+  raison: Identifier le symbole plutôt que réciter son numéro.
+  notes:
+  - b0
+  - b1
+  - b2a
+  - b2b
+  - b2c
+  - b3
+  - b6a1
+  - b6d
+  - b7a
+  - b7b
+  - b9b
+  - b9g
+  - b9h
+  - b11
+  - b12
+  - b13
+  - b14
+  - b16
+  - b21-1
+  - b21c1
+  - b21d1
+  - b22a
+  - b25
+  - b26
+  - b31
+  - b33
+  - b34
+  - c4a
+  - conf-b0-b1
+  - conf-b14-c4a
+  - conf-b22a-c113
+- id: l-portee
+  theme: L
+  titre: Lire portée, catégorie, zone et agglomération
+  raison: Une même valeur n'a pas toujours la même portée.
+  notes:
+  - m1
+  - m2
+  - m4a
+  - m4f
+  - m6c
+  - m6h
+  - m8a
+  - m8b
+  - m9v2
+  - m12
+  - eb10
+  - eb20
+  - e31
+  - b30
+  - b51
+  - b52
+  - b53
+  - b54
+  - b55
+  - b56
+  - b57
+  - b58
+  - b59
+  - l-portee-prescription
+  - l-panonceau-portee
+  - aff-l-zone-30-portee
+  - conf-m1-m2
+  - conf-eb10-e31
+- id: l-marquage
+  theme: L
+  titre: Lire lignes et affectations de voies
+  raison: Le marquage est une condition de manœuvre, pas une garantie de sécurité.
+  notes:
+  - marq-ligne-continue
+  - marq-ligne-discontinue-t1
+  - marq-ligne-dissuasion
+  - marq-ligne-mixte
+  - marq-fleches-directionnelles
+  - marq-ligne-stop
+  - marq-ligne-cedez
+  - marq-ligne-effet-feux
+  - marq-zebra
+  - marq-ligne-bau-t4
+  - marq-bande-cyclable
+  - marq-couloir-bus
+  - marq-sas-velo
+  - marq-ligne-jaune-continue
+  - marq-ligne-jaune-discontinue
+  - marq-ligne-jaune-zigzag
+  - marq-marquage-temporaire-jaune
+- id: l-vitesse
+  theme: L
+  titre: Choisir le plafond le plus restrictif et adapter l'allure
+  raison: Les cas contrastés préviennent les soustractions automatiques.
+  notes:
+  - l-vitesse-agglo
+  - l-vitesse-hors-agglo
+  - l-vitesse-separateur-autoroute
+  - l-vitesse-pluie
+  - l-vitesse-probatoire
+  - l-vitesse-visibilite-50
+  - l-probatoire-autoroute-110
+  - l-pluie-autoroute-110
+  - l-pluie-route80
+  - l-brouillard-zone30
+  - aff-l-creneau-90
+  - aff-l-vitesse-sous-limite
+- id: l-depasser
+  theme: L
+  titre: Décider si le dépassement est possible et renoncer à temps
+  raison: Ligne, visibilité, usager et espace latéral sont des conditions cumulatives.
+  notes:
+  - l-depassement-laterale
+  - l-depassement-conditions
+  - l-depassement-rabattement
+  - l-cycliste-ligne-espace
+  - aff-l-continue-cyclomoteur
+  - aff-l-b3-deux-roues
+  - scn-dep-ligne-continue
+  - scn-dep-ligne-discontinue-libre
+  - scn-dep-mixte-mon-cote
+  - scn-dep-mixte-autre-cote
+  - scn-dep-vehicule-en-face
+  - scn-dep-sommet-cote
+  - c-cycliste-devant-depassement
+- id: l-position
+  theme: L
+  titre: Tenir sa voie et gérer les croisements
+  raison: Ne pas confondre trajectoire, clignotant et droit de passage.
+  notes:
+  - l-position-chaussee
+  - l-entrecroisement
+  - l-retrecissement-croisement
+  - l-file-changement
+  - l-depassement-droite
+  - aff-l-files-droite
+  - aff-l-voie-preselection
+  - aff-l-croisement-depasseur-en-face
+- id: l-stationner
+  theme: L
+  titre: Distinguer arrêt, stationnement et interdictions
+  raison: La durée et les warnings ne créent aucune autorisation.
+  notes:
+  - l-arret-vs-stationnement
+  - l-stationnement-trottoir
+  - l-stationnement-bande-cyclable
+  - l-entree-carrossable
+  - l-stationnement-dangereux
+  - l-stationnement-hors-agglo-nuit
+  - aff-l-5m-passage
+  - aff-l-sens-unique-gauche
+  - aff-l-zone-rencontre-stationnement
+- id: c-distances
+  theme: C
+  titre: Relier vitesse, réaction, freinage et intervalle
+  raison: Comprendre le mécanisme et calculer sur les données fournies.
+  notes:
+  - c-temps-reaction
+  - c-distance-mouillee
+  - c-vitesse-double-freinage
+  - c-intervalle-2s
+  - c-autoroute-deux-traits
+  - c-arret-somme
+  - c-reaction-deux-secondes
+  - c-double-vitesse-arret
+  - c-intervalle-repere
+  - aff-c-temps-reaction-vitesse
+  - c-suiveur-trop-pres
+- id: c-observer
+  theme: C
+  titre: Chercher les indices et les zones masquées
+  raison: La situation décide du danger ; ne pas attendre la certitude.
+  notes:
+  - c-regarder-loin
+  - c-angle-mort-definition
+  - c-ordre-controles-changement-file
+  - c-retro-avant-freiner
+  - c-indice-ballon
+  - c-indice-feux-recul
+  - c-indice-cycliste-regard
+  - c-indice-vehicule-stationne-portiere
+  - c-occlusion-pieton
+  - aff-c-enfant-percoit-adulte
+  - aff-c-enfant-croit-vu
+  - aff-c-champ-visuel-vitesse-pieton
+- id: c-fatigue
+  theme: C
+  titre: Reconnaître l'inaptitude momentanée et interrompre le trajet
+  raison: Savoir agir avant le micro-sommeil ou la prise de risque.
+  notes:
+  - c-fatigue-pause-chiffres
+  - c-somnolence-que-faire
+  - c-fatigue-remedes-faux
+  - c-emotions
+  - c-passagers-pression
+  - aff-c-pause-sans-signe
+  - aff-c-micro-sommeil
+  - aff-c-nuit-trafic-fluide
+- id: c-substances
+  theme: C
+  titre: Distinguer seuil légal, danger et élimination
+  raison: Aucun nombre de verres ni sentiment de lucidité ne garantit l'aptitude.
+  notes:
+  - c-conversion-air-sang
+  - c-alcool-elimination
+  - c-alcool-unites-probatoire
+  - c-cannabis-effets
+  - c-medicaments-niveaux
+  - aff-c-doses-maison
+  - aff-c-alcool-sous-seuil
+  - aff-c-lendemain-matin
+  - aff-c-probatoire-un-verre
+  - aff-c-cafe-dessoule
+  - aff-c-medicament-sans-ordonnance
+  - aff-c-somnifere-soir
+- id: c-distraction
+  theme: C
+  titre: Écarter les distractions même légales
+  raison: La conversation et la manipulation détournent l'attention.
+  notes:
+  - c-telephone-arret
+  - aff-c-mains-libres-passager
+  - aff-c-oreillette
+  - aff-c-gps-roulant
+  - aff-c-ecran-video
+- id: r-meteo
+  theme: R
+  titre: Adapter commandes, feux et visibilité
+  raison: Les plafonds et les équipements ne garantissent pas l'adhérence.
+  notes:
+  - r-nuit-feux-croisement-route
+  - r-nuit-suivre-vehicule-feux
+  - r-nuit-vitesse-visibilite
+  - c-croisement-nuit-regard
+  - r-pluie-premieres-gouttes
+  - r-aquaplaning
+  - r-brouillard-feux
+  - r-brouillard-intervalle
+  - r-neige-conduite
+  - r-vent-lateral
+  - r-soleil-bas
+  - aff-r-brouillard-arriere-pluie
+  - aff-r-verglas-pont
+- id: r-montagne
+  theme: R
+  titre: Préparer l'équipement hiver et gérer une forte pente
+  raison: Distinguer équipement autorisé, priorité et possibilité de reculer.
+  notes:
+  - r-loi-montagne-periode
+  - aff-r-montagne-ms
+  - r-deneigement-depassement
+  - r-montagne-croisement-difficile
+  - r-montagne-marche-arriere
+  - r-descente-freinage
+  - conf-b26-b58
+- id: r-autoroute
+  theme: R
+  titre: S'insérer, sortir et se protéger sur voie rapide
+  raison: Les erreurs d'itinéraire ne justifient aucune manœuvre dangereuse.
+  notes:
+  - c107
+  - c207
+  - c208
+  - c8
+  - c26a
+  - l-insertion-autoroute-priorite
+  - r-autoroute-insertion-fin-voie
+  - r-autoroute-sortie
+  - r-autoroute-sortie-ratee
+  - r-autoroute-panne
+  - r-autoroute-panne-attendre
+  - aff-r-autoroute-bouchon-detresse
+  - aff-r-peage-reculer
+  - aff-r-autoroute-cyclo
+- id: r-tunnel-rail
+  theme: R
+  titre: Franchir sans rester piégé et évacuer
+  raison: Arrêt imposé, sortie libre, refuge et issue ont des rôles distincts.
+  notes:
+  - c111
+  - ce2a
+  - ce29
+  - ce30a
+  - g1
+  - g1a
+  - g1bis
+  - j10
+  - r-tunnel-feux-jour
+  - r-tunnel-distance-arret
+  - r-tunnel-incendie
+  - r-pn-feu-rouge-clignotant
+  - r-pn-engagement
+  - r-pn-bloque
+  - r-pn-barrieres-ouverture
+  - r-tram-priorite
+- id: r-travaux
+  theme: R
+  titre: Suivre les indications temporaires
+  raison: Lire l'état actuel de la route, même sans ouvriers visibles.
+  notes:
+  - ak5
+  - ak3
+  - ak4
+  - ak22
+  - ak30
+  - ak31
+  - k5a
+  - k8
+  - k10a
+  - k10b
+  - kd10
+  - kd22
+  - kr11
+  - r-chantier-approche
+  - r-chantier-fleche-lumineuse
+  - aff-r-chantier-sans-ouvriers
+- id: u-vulnerables
+  theme: U
+  titre: Préserver piétons, enfants et cyclistes
+  raison: Respecter leurs priorités et anticiper leurs erreurs.
+  notes:
+  - u-pieton-hors-passage
+  - u-pieton-canne-blanche
+  - u-zone-rencontre-pietons
+  - u-enfants-sortie-ecole
+  - u-cycliste-tourner-droite
+  - u-double-sens-cyclable
+  - u-velo-chiffres
+  - aff-u-pieton-imprudent
+  - aff-u-velo-m12
+  - aff-u-velo-ecart-portieres
+- id: u-micromobilite
+  theme: U
+  titre: Identifier les règles propres aux deux-roues et EDPM
+  raison: Changer de point de vue et distinguer règle nationale et locale.
+  notes:
+  - u-edpm-chiffres
+  - u-edpm-ou-circuler
+  - u-edpm-hors-agglo
+  - u-edpm-regle-locale
+  - u-interfiles-chiffres
+  - u-moto-vulnerabilite
+  - aff-u-edpm-pousse-main
+  - aff-u-edpm-gilet-agglo
+  - aff-u-interfiles-files-gauche
+- id: u-gabarit
+  theme: U
+  titre: Rester visible et hors des trajectoires des véhicules lourds
+  raison: La présence dans le rétroviseur ne prouve pas que l'autre a regardé.
+  notes:
+  - u-pl-angles-morts
+  - u-pl-tourne-droite
+  - u-pl-giratoire-deport
+  - u-pl-depasser-suivre
+  - u-matieres-dangereuses
+  - l-bus-quitte-arret
+  - aff-u-bus-hors-agglo
+  - aff-u-pl-retroviseur
+- id: u-intervention
+  theme: U
+  titre: Faciliter les secours sans créer de danger
+  raison: Priorité, facilité de passage et gyrophare orange sont distincts.
+  notes:
+  - u-vehicule-prioritaire-feu-rouge
+  - u-ambulance-privee-sans-sirene
+  - u-gyrophare-orange
+  - u-corridor-securite
+  - aff-u-prioritaire-sans-avertisseur
+- id: p-installer
+  theme: P
+  titre: Régler le poste avant de partir
+  raison: Réglage fonctionnel et champ visuel plutôt que liste arbitraire.
+  notes:
+  - p-ordre-installation
+  - p-siege-reglage
+  - p-appuie-tete
+  - p-retro-interieur
+  - p-retro-exterieurs
+  - p-ceinture-position
+  - p-verif-tour-vehicule
+  - p-verif-gps-passagers
+  - aff-p-retro-interieur-nuit
+- id: p-quitter
+  theme: P
+  titre: Immobiliser et sortir sans exposer les autres
+  raison: Contrôler le bon côté de la manœuvre et protéger les enfants.
+  notes:
+  - p-quitter-checklist
+  - p-pente-roues
+  - p-pente-vitesse
+  - p-ouvrir-portiere
+  - p-passagers-descendre
+  - p-enfants-seuls
+  - p-quitter-stationnement-surveiller
+  - aff-p-boite-auto-position-p
+- id: m-alertes
+  theme: M
+  titre: Identifier un voyant et choisir la réaction adaptée
+  raison: Le symbole et les symptômes décident, pas la couleur seule.
+  notes:
+  - voyant-huile
+  - voyant-batterie
+  - voyant-temperature
+  - voyant-frein
+  - voyant-frein-stationnement
+  - voyant-ceinture
+  - voyant-airbag
+  - voyant-moteur
+  - voyant-abs
+  - voyant-esp
+  - voyant-pression-pneus
+  - voyant-brouillard-arriere
+  - voyant-position
+  - voyant-croisement
+  - voyant-route
+  - voyant-brouillard-avant
+  - m-voyants-couleurs
+  - aff-m-voyant-abs-arret
+- id: m-entretien
+  theme: M
+  titre: Vérifier pneus, liquides et éclairage
+  raison: Préconisations constructeur et signes de panne priment sur les recettes.
+  notes:
+  - m-pneus-chiffres
+  - m-pression-etiquette
+  - m-niveau-huile
+  - m-liquide-refroidissement
+  - m-liquide-frein
+  - m-erreur-carburant
+  - m-feux-jour-limite
+  - m-allumage-automatique
+  - m-feux-reglage-hauteur
+  - aff-m-pneus-neufs-arriere
+- id: m-aides
+  theme: M
+  titre: Utiliser les aides sans déléguer sa vigilance
+  raison: Distinguer fonctions et limites, y compris en urgence.
+  notes:
+  - m-freinage-urgence-abs
+  - s-esp-fonction
+  - s-regulateur-limiteur
+  - m-afu-aeb
+  - m-adas-responsabilite
+  - s-ecall
+  - aff-m-abs-distance
+  - aff-m-stationnement-arriere
+  - aff-m-regulateur-obstacle
+  - aff-m-limiteur-descente
+- id: m-panne
+  theme: M
+  titre: Réagir à une panne sans aggraver le risque
+  raison: Assurer sa protection avant toute réparation.
+  notes:
+  - m-crevaison-eclatement
+  - m-panne-procedure-route
+  - m-changer-roue-securite
+  - m-panne-freins
+- id: s-retenir
+  theme: S
+  titre: Attacher chaque occupant et choisir le siège enfant
+  raison: Comprendre ceinture, airbag et responsabilité, pas seulement l'âge.
+  notes:
+  - s-ceinture-obligation
+  - s-femme-enceinte
+  - s-surnombre
+  - s-enfant-chiffres
+  - s-siege-dos-route
+  - s-groupes-sieges
+  - s-animaux
+  - aff-s-passagere-arriere-danger
+  - aff-s-siege-manteau
+  - aff-s-airbag-pieds
+  - s-securite-active-passive
+- id: s-charger
+  theme: S
+  titre: Charger, signaler et tracter dans les limites
+  raison: Lire les masses et appliquer les seuils à une situation.
+  notes:
+  - s-chargement-chiffres
+  - s-chargement-placement
+  - s-chargement-depassement
+  - s-remorque-chiffres
+  - s-remorque-cas-b
+  - s-remorque-cas-b96
+  - s-remorque-conduite
+  - aff-s-coffre-toit-lourd
+  - aff-s-caravane-passager
+- id: a-secourir
+  theme: A
+  titre: Protéger, alerter et choisir l'aide selon l'état de la victime
+  raison: La respiration normale et le traumatisme changent le geste ; suivre les secours.
+  notes:
+  - pas-ordre
+  - numeros-urgence
+  - a-alerter-borne-ou-portable
+  - a-alerter-raccrocher
+  - a-evaluer-victime
+  - a-pls
+  - a-rcp-dae
+  - a-dae-utilisation
+  - a-hemorragie
+  - a-blesse-deplacer
+  - a-casque-motard
+  - aff-a-pls-avec-casque
+  - aff-a-triangle-autoroute
+  - aff-a-donner-a-boire
+  - aff-a-compressions-seules
+- id: a-accident
+  theme: A
+  titre: Assumer ses obligations après un accident
+  raison: Identifier, déclarer et conserver les faits sans signer un récit contesté.
+  notes:
+  - a-accident-materiel-obligations
+  - a-accident-corporel-obligations
+  - a-constat-desaccord
+- id: d-permis
+  theme: D
+  titre: Comprendre capital, probatoire et conséquences des infractions
+  raison: Apprendre les conséquences structurantes avant les détails de procédure.
+  notes:
+  - d-points-capital
+  - d-probatoire-duree
+  - d-probatoire-3-points
+  - d-recuperation-points
+  - d-stage-points
+  - d-alcool-contravention
+  - d-grand-exces
+  - aff-d-alcool-contravention
+  - aff-d-telephone-retention
+  - aff-d-velo-points
+- id: d-vehicule
+  theme: D
+  titre: Rouler avec les documents, assurance et contrôle requis
+  raison: Appliquer les obligations à une situation concrète.
+  notes:
+  - d-documents-bord
+  - d-controle-technique
+  - d-assurance-garanties
+  - d-equipements-obligatoires
+  - d-ct-critique
+  - aff-d-ct-defaillance-majeure
+  - aff-d-assurance-tiers
+  - aff-d-vignette-assurance
+- id: e-ecoconduite
+  theme: E
+  titre: Réduire les consommations sans compromettre la sécurité
+  raison: Comprendre les gestes ; réserver les pourcentages variables à l'approfondissement.
+  notes:
+  - e-feu-rouge-anticipation
+  - e-rapports-regime
+  - e-frein-moteur
+  - e-moteur-arret
+  - e-climatisation-conso
+  - aff-e-coffre-toit-vide
+  - aff-e-trajets-courts
+  - e-ecomobilite-choix
+- id: e-pollution
+  theme: E
+  titre: Distinguer émissions, restrictions et énergie
+  raison: Lire les conditions locales et ne pas confondre électrique et sans impact.
+  notes:
+  - e-polluant-co2
+  - e-particules-usure
+  - e-critair-classes
+  - e-zfe-definition
+  - e-pic-pollution
+  - e-entretien-dechets
+  - e-ve-recharge
+  - aff-e-electrique-zero
+  - aff-e-ve-silence
+  - aff-e-covoiturage-electrique
+  - vr-losange-debut

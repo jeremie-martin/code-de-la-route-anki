@@ -1,82 +1,66 @@
-# Sources et vérification
+# Sources et périmètre de vérification
 
-Toutes les cartes portent un champ `Source`. Les dossiers de recherche complets, avec les URL et la
-date de consultation (20-21 septembre 2026), sont dans `docs/research/` :
+Une citation est nécessaire mais ne suffit pas : il faut qu’elle couvre **la phrase et ses conditions**.
+Une référence « Code de la route » ou « ISO 2575 » ne valide pas à elle seule une consigne de conduite.
+Le registre [`data/_meta/source_checks.yaml`](../data/_meta/source_checks.yaml) associe les contrôles
+externes ciblés de la v3 à leurs notes et à leur portée, avec date de consultation du 21 septembre 2026.
+Ce registre ne signifie pas que toute la bibliothèque a été à nouveau vérifiée ligne par ligne.
 
-| Dossier | Contenu | Taille |
+## Références utilisées pour la révision
+
+| Sujet | Référence primaire | Ce qu’elle établit |
 |---|---|---|
-| `research/exam.md` | L'épreuve elle-même : textes (arrêté du 20 avril 2012, arrêté du 16 avril 2026), banque 2023, 20 exemples officiels verbatim, formes de questions, statistiques de réussite, pièges, divergences entre sources | ≈ 11 000 mots, 180 URL |
-| `research/legal-facts.md` | Toutes les valeurs juridiques (vitesses, alcool, points, amendes, délits, documents, CT, Crit'Air/ZFE, équipements, EDPM, vélos, motos, stationnement, feux, marquages, santé, statistiques ONISR 2025) vérifiées sur Légifrance / service-public / ONISR, avec la chronologie des changements 2018-2026 | ≈ 28 000 mots |
-| `research/knowledge-facts.md` | Connaissances non juridiques par thème (conducteur, route, usagers, véhicule, sécurité, environnement, secours, circulation), avec les pièges rapportés par les formateurs et les divergences entre éditeurs | ≈ 35 000 mots, 610 URL |
-| `research/signs-notes.md` + `data/signs_inventory.yaml` | Inventaire de 504 éléments de signalisation (IISR via Wikipédia FR), formes/couleurs, implantation, portée, panonceaux, hiérarchie, panneaux récents | — |
-| `research/sources/` | PDF officiels archivés : exemples de questions 2023 (Sécurité routière), communiqué DSR du 11/09/2023, Code de la route consolidé (édition codes.droit.org du 10/09/2026, dernière modification 20/08/2026) | — |
+| Examen | [Service Public, ETG](https://www.service-public.gouv.fr/particuliers/vosdroits/F33694) | Format et seuil officiels |
+| Vitesse | [R413-1 à R413-16](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/) | Plafonds selon route, conditions et conducteur |
+| Signalisation | [R411-25](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087), [R411-28](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842090) | Portée des feux et des ordres des agents |
+| Dépassement | [R414-4 à R414-17](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/) | Conditions et exceptions |
+| Stationnement | [R417-10](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551) | Arrêt et stationnement à distinguer |
+| Secours | [PSC juillet 2026](https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf) | Conduites adaptées à l’état de la victime |
+| Pneumatiques | [Michelin, pression](https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus) | Préconisations du véhicule |
+| Voyants | [Notice Renault](https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux) | Exemple documenté ; ne pas l’universaliser à tous les véhicules |
+| Aides | [Comité des experts du CNSR](https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf) | Fonctions et limites des systèmes |
+| Invalidation | [Service Public F1704](https://www.service-public.gouv.fr/particuliers/vosdroits/F1704) | Conditions de retour au permis |
+| Contrôle technique | [Service Public F2878](https://www.service-public.gouv.fr/particuliers/vosdroits/F2878) | Validité selon le résultat |
+| Remorque | [Catégories de permis](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000032465124/) | PTAC, B et B96 |
+| Voie réservée | [Ville de Paris](https://www.paris.fr/pages/la-voie-reservee-sur-le-peripherique-entre-en-vigueur-le-3-mars-30106) | Exemple de conditions locales |
+| EDPM | [Service Public, mesure locale août 2026](https://www.service-public.gouv.fr/particuliers/actualites/A19037) | Ne pas confondre portée locale et nationale |
+| Anki | [Options](https://docs.ankiweb.net/deck-options), [paquets](https://docs.ankiweb.net/importing/packaged-decks.html) | Ordre, enfouissement et import ; vérification aussi dans la bibliothèque installée |
 
-## Textes de référence
+Le Code consolidé archivé dans `docs/research/sources/` reste utile pour rechercher les articles,
+mais il s’agit d’une édition secondaire provenant de codes.droit.org. Légifrance est la référence
+pour vérifier leur vigueur. Les contrôles textuels complémentaires de la v3 ont notamment porté sur
+R234-1, R412-9, R414-3 et les règles de priorité ; ils ne remplacent pas une veille des modifications.
 
-- **Code de la route** (parties L et R), version consolidée au 10 septembre 2026 : c'est l'autorité
-  pour toute valeur juridique. Les articles cités dans les cartes (R413-2, R415-5, R412-19…) ont été
-  relus dans cette version. Les changements récents intégrés : loi n° 2025-622 du 9 juillet 2025
-  (homicide routier ; alcool/stupéfiants 3 ans / 9 000 € ; grand excès de vitesse = délit dès le
-  29 décembre 2025), loi n° 2026-798 du 18 août 2026 (refus de dépistage 3 ans / 9 000 €, ivresse
-  manifeste, rodéos), décret n° 2026-652 (véhicules prioritaires), décision CC 2026-903 DC (ZFE
-  maintenues), décret n° 2025-33 (inter-files), décret n° 2023-1214 (permis à 17 ans), décret
-  n° 2023-1152 (fin de la vignette d'assurance).
-- **Instruction interministérielle sur la signalisation routière (IISR)**, parties 1 à 8, pour les
-  panneaux, panonceaux, balises, feux et marques sur chaussée (modulations T1/T'1/T2/T3/T4/T'2).
-- **Arrêté du 20 avril 2012** modifié (conditions de l'examen : 35/40, validité 5 ans) et **arrêté du
-  16 avril 2026** (organisation des épreuves théoriques : inscription J-1, résultats ≥ 24 h).
-- **securite-routiere.gouv.fr** (fiches thématiques, dépliants « vitesse », « la vue », « ceinture »,
-  exemples officiels de questions), **service-public.fr** (fiches datées « vérifié le »),
-  **ONISR** (bilan définitif 2025, publié le 29 mai 2026), **ADEME** (écoconduite), **Croix-Rouge
-  française** (gestes de premiers secours), **ANSM** (pictogrammes médicaments).
+## Approximations et désaccords
 
-## Conventions d'examen vs valeurs officielles
+Ne pas présenter une convention de manuel comme une consigne secrète connue de l’examen.
+Distance d’arrêt « dizaines au carré », temps de réaction moyen, pourcentages de consommation et
+statistiques de risque sont des repères contextuels. Leur résultat n’est pas garanti pour une scène.
+La règle actuelle prévaut sur les anciennes valeurs d’un QCM. Pour la pression, l’entretien, les
+aides et les alertes, suivre les spécifications du véhicule.
 
-Certaines valeurs enseignées par les auto-écoles sont des simplifications : distance d'arrêt
-« dizaines au carré » (25 m à 50 km/h) alors que la Sécurité routière donne 28 m ; sol mouillé × 1,5
-ou × 2 ; « 30 min » de pic d'alcoolémie alors que la Sécurité routière dit un quart d'heure à jeun. Les
-cartes donnent la **convention d'examen** (celle que la banque de questions attend) et signalent la
-valeur officielle dans l'explication, pour que le candidat reconnaisse les deux.
+Les dossiers v1/v2 (`exam.md`, `legal-facts.md`, `knowledge-facts.md`, `signs-notes.md`, `review-*.md`)
+sont conservés comme historique de recherche. Une formulation ancienne qui y subsiste ne doit pas
+être réintroduite sans consulter la carte actuelle et le journal de révision. Les fichiers
+`docs/01-…`, `02-…`, `03-…` et `06-…` décrivent les décisions actuelles.
 
-Inversement, quand la loi a changé après la rédaction de la banque de questions (septembre 2023),
-la carte donne la **valeur en vigueur** et mentionne l'ancienne (ex. « 3 ans / 9 000 € depuis juillet
-2025, auparavant 2 ans / 4 500 € — les QCM peuvent encore l'afficher »). Ces cartes portent le tag
-`nouveau::2024`, `nouveau::2025` ou `nouveau::2026`.
+## Images et contrôle
 
-## Images
+Images Commons : attributions et licences par fichier dans `out/ATTRIBUTIONS.md`. Les schémas et
+marquages générés sont des supports simplifiés, pas des documents officiels ni des scènes d’examen.
+Le solveur contrôle les relations déclarées pour les intersections qu’il sait modéliser ; ni toute
+la réponse française ni tous les types de scène ne sont vérifiés par lui.
 
-- Panneaux, panonceaux, balises : fichiers vectoriels de Wikimedia Commons (`France road sign
-  XXX.svg` et catégories associées), dessinés d'après l'IISR ; licence et auteur de chaque fichier
-  dans `out/ATTRIBUTIONS.md` (majorité domaine public / CC0 ; quelques CC BY-SA).
-- Voyants : symboles **ISO 7000** (domaine public sur Commons), teintés en rouge / orange / vert /
-  bleu selon leur fonction réelle et posés sur un fond de tableau de bord.
-- Marquages, feux, gestes de l'agent, scénarios : SVG générés par `build/gen_images.py` et
-  `build/diagrams.py` (charte unique), à partir des cotes de l'IISR.
+Les contrôles techniques couvrent données, ordre, présence des médias, rendu Anki et migration ;
+les contrôles éditoriaux et les séries nouvelles restent indispensables pour détecter une ambiguïté.
+Voir `out/VERIFICATION.md` et `docs/06-audit-v3.md`.
 
-## Processus de vérification
+## Veille à poursuivre
 
-1. Quatre dossiers de recherche indépendants (examen, droit, connaissances, signalisation), chacun
-   sourcé ligne à ligne, avec listes de divergences.
-2. Rédaction des cartes à partir des dossiers, en citant l'article ou la page.
-3. Contrôle croisé automatique : le solveur `build/priority.py` recalcule la réponse de chaque
-   scénario d'intersection ; le build échoue en cas de désaccord avec la réponse rédigée.
-4. Contrôle visuel : planches de contrôle (`build/qa_sheet.py`) de toutes les images avec leur code
-   et leur nom ; captures de cartes rendues (`build/preview.py`).
-5. Relecture par un agent indépendant de chaque fichier de données contre les dossiers et le code
-   consolidé (rapports dans `docs/research/review-*.md`), puis corrections.
-6. **Version 2** (21 septembre 2026, `docs/05-audit-v2.md`) : réécriture thème par thème selon
-   `docs/research/brief-v2-redaction.md` (rapports `docs/research/v2-*.md`, avec pour chaque carte
-   supprimée la carte qui porte désormais la connaissance), puis seconde relecture contradictoire
-   indépendante de chaque thème contre le Code consolidé (`docs/research/review-v2-*.md`, corrections
-   appliquées, doutes listés), contrôle des doublons entre fichiers (`python -m build.dedup`) et
-   règles de qualité vérifiées par le build (longueurs, équilibre vrai/faux, clozes qui se soufflent
-   la réponse, réponses identiques).
-
-## Ce qu'il faudra surveiller (obsolescence)
-
-- Tolérance loi Montagne (aucune sanction codifiée au 20/09/2026).
-- Seuil de puissance des véhicules interdits à la location en probatoire (loi 2026-798, décret à
-  paraître).
-- Fin de l'exception des places matérialisées dans les 5 m avant un passage piéton (1er janvier 2027).
-- Directive (UE) 2025/2205 (nouveaux contenus d'épreuve, applicable en novembre 2029).
-- Éventuelle nouvelle banque de questions ETG (aucune annoncée au 20/09/2026).
+Reconsulter les règles à chaque édition, en priorité : ZFE et voies réservées locales, EDPM,
+équipements hivernaux, sanctions et permis, recommandations de secours. Les dispositions relatives
+aux places avant passages piétons à l’échéance 2027 figurent dans la
+[version future de R417-11](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041910488/2027-01-01),
+consultée le 21 septembre 2026 : l’exception des emplacements matérialisés y est supprimée.
+Recontrôler cette version lors du passage à l’édition 2027.
+Mettre à jour `source_checks.yaml` seulement après une nouvelle consultation effective.

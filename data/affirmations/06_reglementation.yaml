@@ -19,18 +19,27 @@
 - id: aff-d-probatoire-majoration
   affirmation: Après une première année de permis sans aucune infraction, mon capital passe de 6 à 8 points.
   verdict: vrai
-  pourquoi: En filière classique le capital monte de 2 points par an (6 → 8 → 10 → 12 en 3 ans) ; après une conduite accompagnée, de 3 points par an (6 → 9 → 12 en 2 ans). Une seule infraction interrompt la majoration.
+  pourquoi: Dans cette situation, la majoration est de deux points par an. Après AAC, elle est de trois. Une infraction
+    entraînant un retrait de points interrompt cette acquisition progressive.
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-1 et R223-1
+  contexte: Permis B obtenu en filière classique, sans formation post-permis ni infraction entraînant un retrait
+    de points.
+  tags:
+  - revision::v3
 - id: aff-d-invalidation-code-seul
-  contexte: Mon permis vient d'être invalidé pour solde de points nul.
+  contexte: Permis obtenu depuis au moins trois ans, invalidation avec interdiction de six mois, formalités médicales
+    et inscription dans les délais réglementaires respectées.
   affirmation: Je ne repasserai que le code si j'avais le permis depuis au moins 3 ans.
   verdict: vrai
-  pourquoi: 'Permis de 3 ans ou plus : épreuve théorique seule. Moins de 3 ans : code et conduite. Dans les deux cas, 6 mois d''attente, un examen médical et des tests psychotechniques, et un nouveau permis probatoire.'
+  pourquoi: La dispense de conduite dépend aussi de la durée de l’interdiction et du respect des délais de réinscription.
+    Avoir eu son permis trois ans ne suffit pas à lui seul.
   theme: D
   sous_theme: points
-  source: Code de la route, art. L223-5 ; service-public.fr F1704
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F1704
+  tags:
+  - revision::v3
 - id: aff-d-invalidation-capital
   affirmation: Le permis que l'on repasse après une invalidation redémarre avec un capital de 12 points.
   verdict: faux
@@ -58,10 +67,13 @@
   contexte: 'Conduite accompagnée : l''élève commet un excès de vitesse, l''accompagnateur est à côté de lui.'
   affirmation: Les points sont retirés à l'élève, auteur de l'infraction.
   verdict: faux
-  pourquoi: L'élève n'a pas encore de permis à points. Selon la Sécurité routière, c'est l'accompagnateur, responsable de la conduite, qui est sanctionné ; il est lui-même soumis au seuil de 0,2 g/L.
+  pourquoi: 'Dans cet exemple d’un premier permis B, l’élève ne dispose pas encore d’un permis à points. Cela ne
+    signifie pas un retrait automatique sur celui de l’accompagnateur : la responsabilité pénale dépend de l’infraction.'
   theme: D
   sous_theme: permis
-  source: securite-routiere.gouv.fr — FAQ conduite accompagnée ; Code de la route, art. R234-1
+  source: Code de la route, L121-1 et L223-1
+  tags:
+  - revision::v3
 - id: aff-d-grand-exces-delit
   affirmation: Un excès de vitesse de 50 km/h ou plus est un délit dès la première fois.
   verdict: vrai

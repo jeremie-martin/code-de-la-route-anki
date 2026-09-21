@@ -35,10 +35,13 @@
   contexte: Je circule sur la voie de droite de l'autoroute ; une voiture descend la bretelle d'accès sur ma droite.
   affirmation: 'Je dois lui laisser le passage : celui qui s''insère est prioritaire.'
   verdict: faux
-  pourquoi: 'R421-3 : c''est l''entrant qui cède le passage. Je n''ai pas à freiner pour lui, mais je facilite l''insertion quand je le peux sans danger, en me déportant sur la voie de gauche ou en ajustant mon allure.'
+  pourquoi: L’entrant cède le passage (R421-3). Je facilite si possible en ajustant mon allure ou en changeant de
+    voie après contrôles. Ma priorité ne dispense pas de freiner si cela évite une collision.
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R421-3
+  tags:
+  - revision::v3
 - id: aff-r-autoroute-voie-gauche-80
   contexte: Autoroute à trois voies, circulation dense et pluie battante.
   affirmation: Sur la voie de gauche, je dois rouler à au moins 80 km/h en toutes circonstances.
@@ -125,10 +128,15 @@
 - id: aff-r-brouillard-depasser
   affirmation: Dans le brouillard, je reste sur la voie de droite et je renonce à dépasser.
   verdict: vrai
-  pourquoi: La distance de visibilité ne permet ni de juger ce qui arrive en face ni de se rabattre à temps. On se guide sur la ligne de rive et on garde un intervalle au moins égal à la distance de visibilité.
+  pourquoi: La visibilité manque pour garantir dépassement et rabattement. Je reste à droite, je réduis l’allure
+    et augmente l’intervalle ; suivre les feux d’un autre véhicule de près ne sécurise pas la conduite.
   theme: R
   sous_theme: intemperies
   source: Ornikar — Conduire dans le brouillard ; Codes Rousseau
+  contexte: 'Route à double sens dans un brouillard épais : je ne vois pas assez loin pour vérifier que la voie
+    opposée est libre.'
+  tags:
+  - revision::v3
 - id: aff-r-aquaplaning-freiner
   affirmation: En cas d'aquaplaning, il faut freiner fermement pour retrouver l'adhérence.
   verdict: faux

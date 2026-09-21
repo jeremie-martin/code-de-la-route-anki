@@ -17,12 +17,17 @@
   importance: utile
   source: "Ornikar — Protéger la zone ; Croix-Rouge française"
 - id: a-alerter-borne-ou-portable
-  question: "Témoin d'un accident sur autoroute, j'ai mon portable et une borne d'appel orange à 200 m : lequel j'utilise ?"
-  reponse: "La borne : elle localise l'appel automatiquement et joint directement le poste de sécurité de l'autoroute ; avec le portable je devrais décrire où je suis. J'y vais derrière la glissière."
-  explication: "Bornes tous les 2 km (et sur les aires) ; en tunnel, dans les niches. Depuis un portable, le 112 fonctionne partout mais il faut savoir donner le sens de circulation et le point kilométrique."
+  question: 'Témoin d''un accident sur autoroute, j''ai mon portable et une borne d''appel orange à 200 m : lequel
+    j''utilise ?'
+  reponse: Si elle est accessible en sécurité sans retarder une alerte urgente, la borne localise précisément l’appel.
+    Sinon, j’appelle le 112 depuis un lieu sûr.
+  explication: Ne pas quitter une victime nécessitant une aide immédiate ni marcher dangereusement pour chercher
+    une borne. Donner route, sens et repère au téléphone ; aucun appel mobile sans réseau disponible.
   theme: A
   sous_theme: alerter
-  source: "securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA"
+  source: securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA
+  tags:
+  - revision::v3
 - id: a-alerter-raccrocher
   question: "Au téléphone avec le 112, j'ai donné le lieu, le nombre de victimes et leur état. À quel moment je raccroche ?"
   reponse: "Seulement quand l'opérateur me le dit : il peut avoir des questions ou me donner des consignes (gestes à faire, guider les secours) ; je ne raccroche pas le premier."
@@ -31,26 +36,38 @@
   sous_theme: alerter
   source: "Croix-Rouge française — Alerter ; Ornikar — Alerter les secours"
 - id: a-evaluer-victime
-  question: "Zone protégée, secours alertés. Une victime est allongée et ne bouge pas : que fais-je en premier ?"
-  reponse: "Je lui parle et lui prends la main : répond-elle ? Sinon je regarde si sa poitrine se soulève pendant 10 secondes : respire-t-elle ? La réponse décide du geste (PLS ou réanimation)."
-  explication: "Une victime qui répond est consciente : je la laisse dans la position où elle se sent le mieux, je la couvre et je la rassure sans commenter ses blessures. Je vérifie aussi si elle saigne."
+  question: 'Zone protégée, secours alertés. Une victime est allongée et ne bouge pas : que fais-je en premier ?'
+  reponse: Je vérifie si elle répond ; sinon je libère les voies aériennes et recherche une respiration normale
+    pendant dix secondes au maximum.
+  explication: 'Les gasps, respirations rares et irrégulières, ne sont pas une respiration normale : alerter, commencer
+    la RCP et faire apporter un DAE.'
   theme: A
   sous_theme: secourir
-  source: "Croix-Rouge française — Les gestes de premiers secours"
+  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  tags:
+  - revision::v3
 - id: a-pls
-  question: "La victime est inconsciente mais respire : que fais-je ?"
-  reponse: "Je la mets en position latérale de sécurité (PLS) : sur le côté, bouche vers le sol, tête basculée en arrière pour libérer les voies aériennes ; puis j'alerte si ce n'est pas fait et je surveille sa respiration."
-  explication: "La PLS empêche la langue et les vomissements de boucher les voies respiratoires ; sur le dos, une victime inconsciente peut s'étouffer. Femme enceinte : sur le côté gauche."
+  question: Après un malaise sans chute ni traumatisme, une personne ne répond pas mais respire normalement. Quel
+    geste après vérification de la respiration ?
+  reponse: PLS, alerte et surveillance continue de la respiration.
+  explication: 'Après un traumatisme ou si l’origine est inconnue, suivre les consignes des secours : la mise sur
+    le côté n’est pas systématique.'
   theme: A
   sous_theme: secourir
-  source: "Croix-Rouge française — Inconscience"
+  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  tags:
+  - revision::v3
 - id: a-rcp-dae
-  question: "La victime est inconsciente et ne respire pas : que fais-je ?"
-  reponse: "J'alerte (15, 18 ou 112), je fais chercher un DAE et je commence immédiatement la réanimation cardio-pulmonaire, sans m'arrêter jusqu'à l'arrivée des secours ou la reprise de la respiration."
-  explication: "30 compressions au milieu de la poitrine (5-6 cm, 100 à 120 par minute) puis 2 insufflations ; dès que le DAE arrive, je l'allume et je suis ses consignes vocales."
+  question: Un adulte ne répond pas et ne respire pas normalement (respiration absente ou gasps). Que fais-je ?
+  reponse: J’alerte, fais apporter un DAE et commence immédiatement la RCP ; je suis les instructions des secours
+    et du DAE.
+  explication: 30 compressions au milieu de la poitrine (5-6 cm, 100 à 120 par minute) puis 2 insufflations ; dès
+    que le DAE arrive, je l'allume et je suis ses consignes vocales.
   theme: A
   sous_theme: secourir
-  source: "Croix-Rouge française — Arrêt cardiaque ; Sécurité routière — Exemples de nouvelles questions (Q6)"
+  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  tags:
+  - revision::v3
 - id: a-dae-utilisation
   question: "Un témoin apporte un DAE ; je l'ai allumé et j'ai posé les électrodes. L'appareil annonce « analyse en cours » : que fais-je ?"
   reponse: "Je m'écarte et j'empêche quiconque de toucher la victime pendant l'analyse puis pendant le choc ; ensuite je reprends aussitôt les compressions, en suivant ses consignes vocales."
@@ -66,19 +83,29 @@
   sous_theme: secourir
   source: "Croix-Rouge française — Hémorragie ; Brûlure ; Ornikar — Secourir un blessé"
 - id: a-blesse-deplacer
-  question: "Un blessé conscient est coincé dans sa voiture, en plein soleil. Un témoin veut le sortir pour le mettre à l'ombre : que fais-je ?"
-  reponse: "Je m'y oppose : on ne déplace pas un blessé (risque d'aggraver une lésion de la colonne vertébrale) sauf danger immédiat comme un incendie ; je lui parle, je le couvre et je surveille son état."
-  explication: "Dégagement d'urgence seulement si le danger est immédiat (feu, suraccident, noyade) : tirer dans l'axe en maintenant la tête. Ne pas tirer sur les membres, ne rien donner à boire."
+  question: 'Un blessé conscient est coincé dans sa voiture, en plein soleil. Un témoin veut le sortir pour le mettre
+    à l''ombre : que fais-je ?'
+  reponse: 'Je ne le déplace pas pour ce seul motif : j’alerte, limite son exposition à la chaleur et surveille
+    son état, en suivant les consignes des secours.'
+  explication: Un déplacement d’urgence ne se justifie que par un danger immédiat non maîtrisable. Éviter les mouvements
+    inutiles et ne rien donner à boire.
   theme: A
   sous_theme: secourir
-  source: "Croix-Rouge française ; Ornikar — Secourir un blessé"
+  source: Croix-Rouge française ; Ornikar — Secourir un blessé
+  tags:
+  - revision::v3
 - id: a-casque-motard
-  question: "Un motard accidenté est inconscient mais respire. Un témoin veut lui retirer son casque « pour qu'il respire mieux » : que fais-je ?"
-  reponse: "Je l'en empêche : on ne retire pas le casque (risque de lésion des cervicales) ; j'ouvre la visière, je desserre ce qui gêne la respiration et je surveille en attendant les secours."
-  explication: "Réponse attendue à l'examen : ne pas retirer le casque. Le retrait à deux sauveteurs s'apprend en formation (PSC1) pour une réanimation."
+  question: 'Un motard accidenté est inconscient mais respire. Un témoin veut lui retirer son casque « pour qu''il
+    respire mieux » : que fais-je ?'
+  reponse: 'Je l''en empêche : on ne retire pas le casque (risque de lésion des cervicales) ; j''ouvre la visière,
+    je desserre ce qui gêne la respiration et je surveille en attendant les secours.'
+  explication: Ne pas retirer un casque simplement pour le confort. Si la respiration devient absente ou anormale,
+    prévenir immédiatement les secours et suivre leurs instructions pour la réanimation.
   theme: A
   sous_theme: secourir
-  source: "Croix-Rouge française ; securite-routiere.gouv.fr"
+  source: Croix-Rouge française ; securite-routiere.gouv.fr
+  tags:
+  - revision::v3
 - id: a-accident-materiel-obligations
   question: "En manœuvrant sur un parking, j'accroche une voiture stationnée. Personne autour : que fais-je ?"
   reponse: "Je m'arrête et je cherche le propriétaire ; à défaut je laisse mes coordonnées bien en vue et je déclare l'accident à mon assureur. Repartir sans me faire connaître serait un délit de fuite."

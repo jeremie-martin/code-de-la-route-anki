@@ -4,11 +4,15 @@
 # ce qui protège les occupants reste dans le thème S.
 - id: m-voyants-couleurs
   question: Que signifient les couleurs des voyants du tableau de bord ?
-  reponse: 'Rouge : danger ou défaillance grave, s''arrêter dès que possible en sécurité. Orange : anomalie ou fonction à surveiller, faire vérifier rapidement sans arrêt d''urgence. Vert ou bleu : information, une fonction ou des feux sont en service.'
-  explication: 'À la mise du contact, tous les voyants s''allument brièvement : c''est l''autotest (un voyant qui ne s''allume pas est anormal). Exceptions au rouge : le frein à main serré (desserrer) et la batterie (rejoindre un garage sans couper le moteur).'
+  reponse: La couleur aide à classer l’alerte, mais je dois identifier le symbole et le message. Une alerte grave
+    impose un arrêt en sécurité ; un témoin peut aussi indiquer une fonction active.
+  explication: 'Orange n’autorise pas automatiquement à continuer : une alerte de pression peut signaler une crevaison.
+    Rouge peut simplement rappeler une ceinture ou un frein de stationnement. Suivre la notice.'
   theme: M
   sous_theme: tableau_de_bord
   source: Codes Rousseau — Les voyants ; Ornikar — Voyants lumineux
+  tags:
+  - revision::v3
 - id: m-pneus-pression-quand
   question: Quand et comment vérifie-t-on la pression des pneus ?
   reponse: À froid (plus de 2 h d'arrêt ou moins de 3 km parcourus), au moins une fois par mois et avant un long trajet, roue de secours comprise, à la valeur indiquée par le constructeur.
@@ -90,19 +94,27 @@
   source: securite-routiere.gouv.fr — Dépliant vitesse ; Ornikar — ABS
 - id: m-panne-freins
   question: 'Les freins ne répondent plus dans une descente : que faire ?'
-  reponse: Rétrograder pour utiliser le frein moteur, serrer progressivement le frein de stationnement et viser une voie de détresse ; en dernier recours, frotter contre la glissière.
-  explication: 'Le frein de stationnement agit sur les roues arrière : tiré d''un coup sec, il fait partir le véhicule en travers. Accélérateur bloqué : débrayer ou point mort, freiner, couper le contact sans verrouiller la direction.'
+  reponse: Je relâche l’accélérateur, rétrograde progressivement et cherche un dégagement sûr ou une voie de détresse,
+    en avertissant les autres.
+  explication: 'Ne pas couper le contact ni engager P en mouvement. Le recours au frein de stationnement dépend
+    du système : suivre la notice ; ne pas donner un coup brutal au levier.'
   theme: M
   sous_theme: freinage
   importance: utile
   source: Stych — Pannes ; En Voiture Simone — Voies de détresse
+  tags:
+  - revision::v3
 - id: m-feux-jour-limite
   question: Que font exactement les feux de jour (feux diurnes) ?
-  reponse: 'Ils s''allument seuls au contact et n''éclairent qu''à l''avant en blanc : ils servent à être vu de jour, n''éclairent pas la route et n''allument pas les feux arrière.'
-  explication: 'Obligatoires sur les voitures neuves de l''Union européenne depuis 2011. Dès que la visibilité baisse (pluie, crépuscule, tunnel), ils ne suffisent plus : il faut les feux de croisement, qui allument aussi les feux arrière.'
+  reponse: Ils rendent le véhicule visible de jour, surtout de l’avant. Ils ne remplacent pas les feux de croisement
+    la nuit, en tunnel ou quand la visibilité est insuffisante.
+  explication: Selon le véhicule, les feux arrière peuvent rester éteints avec les feux de jour. Vérifier l’éclairage
+    actif au lieu de se fier à la luminosité du tableau de bord.
   theme: M
   sous_theme: feux
   source: Stych — Systèmes d'éclairage ; Code de la route, art. R416-6
+  tags:
+  - revision::v3
 - id: m-feux-reglage-hauteur
   question: À quoi sert la molette de réglage des feux (0 à 3) ?
   reponse: 'À abaisser le faisceau des feux de croisement quand le véhicule est chargé à l''arrière, pour ne pas éblouir : 0 à vide, cran supérieur à pleine charge.'
@@ -133,11 +145,15 @@
   source: securite-routiere.gouv.fr — Les aides à la conduite
 - id: s-regulateur-limiteur
   question: Quelle différence entre régulateur et limiteur de vitesse ?
-  reponse: Le régulateur maintient seul la vitesse choisie (pied levé) ; le limiteur empêche de dépasser la vitesse choisie mais c'est le conducteur qui accélère. Les deux se désactivent en freinant ou par un appui franc (kick-down pour le limiteur).
-  explication: Le régulateur adaptatif (ACC) ajoute un radar qui conserve la distance avec le véhicule qui précède ; le régulateur simple, lui, ne voit rien devant lui.
+  reponse: Le régulateur maintient une vitesse choisie ; avec le limiteur, je dose l’accélérateur sous un plafond.
+    Je reste chargé du freinage et du respect des limitations.
+  explication: 'La désactivation et le dépassement volontaire du plafond dépendent du système. Freiner ne désactive
+    pas nécessairement un limiteur : consulter la notice.'
   theme: M
   sous_theme: adas
   source: securite-routiere.gouv.fr — Les aides à la conduite ; Codes Rousseau
+  tags:
+  - revision::v3
 - id: s-ecall
   question: Qu'est-ce que l'eCall ?
   reponse: 'L''appel d''urgence automatique : en cas de choc grave le véhicule appelle seul le 112 et transmet sa position ; un bouton SOS permet aussi de le déclencher à la main.'
@@ -162,11 +178,15 @@
   source: securite-routiere.gouv.fr — ADAS ; règlement (UE) 2019/2144
 - id: m-allumage-automatique
   question: Les feux sont sur « AUTO » et il se met à pleuvoir en plein jour. Puis-je m'en remettre au système ?
-  reponse: 'Non : le capteur réagit à la luminosité, pas à la pluie ; j''allume moi-même les feux de croisement et je vérifie le voyant vert au tableau de bord.'
-  explication: 'Même prudence avec les essuie-glaces automatiques et l''assistant de feux de route. Sous la pluie, les seuls feux de jour laissent l''arrière du véhicule invisible pour ceux qui suivent.'
+  reponse: 'Je vérifie que les feux de croisement sont réellement allumés et les commande moi-même si nécessaire
+    : le mode AUTO ne garantit pas leur activation dans toutes les pluies.'
+  explication: Les capteurs et automatismes diffèrent selon les véhicules. Un tableau de bord éclairé ou des feux
+    de jour actifs ne prouvent pas que les feux de croisement le sont.
   theme: M
   sous_theme: adas
   source: securite-routiere.gouv.fr — ADAS ; Stych — Systèmes d'éclairage
+  tags:
+  - revision::v3
 - id: m-conduite-automatisee
   question: Avec un véhicule à conduite partiellement automatisée (niveau 2), le conducteur peut-il relâcher son attention ?
   reponse: 'Non : il garde les mains sur le volant et doit pouvoir reprendre la main à tout instant ; il reste responsable. Seuls les niveaux 3 et plus permettent de déléguer.'
@@ -177,11 +197,15 @@
   source: Décret n° 2021-873 ; securite-routiere.gouv.fr — ADAS
 - id: m-panne-procedure-route
   question: 'Mon véhicule tombe en panne sur une route ordinaire : que faire dans l''ordre ?'
-  reponse: Feux de détresse, je me range à droite hors de la chaussée si possible, j'enfile le gilet avant de sortir, je fais descendre les passagers à l'écart et je pose le triangle à 30 m.
-  explication: 'Le triangle se place plus loin avant un virage ou un sommet de côte. Sur autoroute, on ne le pose pas si cela expose : tout le monde derrière la glissière et appel depuis la borne (tous les 2 km).'
+  reponse: Je signale et me range en sécurité ; gilet avant de sortir ; occupants à l’abri ; triangle à au moins
+    30 m si sa pose ne me met pas en danger.
+  explication: L’exception de danger pour la pose du triangle existe aussi hors autoroute. Ne pas s’exposer sur
+    une route étroite ou sans visibilité pour le poser.
   theme: M
   sous_theme: depannage
   source: Code de la route, art. R416-19 ; securite-routiere.gouv.fr — Véhicule en panne
+  tags:
+  - revision::v3
 - id: m-changer-roue-securite
   question: Que faut-il mettre en place avant de lever le véhicule pour changer une roue ?
   reponse: Un sol plat et stable hors de la circulation, le frein de stationnement serré avec un rapport engagé, les feux de détresse et le gilet, le cric au point de levage prévu.
@@ -207,9 +231,13 @@
   source: Stych — Dépannages
 - id: m-remorquage
   question: Un ami propose de me remorquer après une panne. Est-ce possible ?
-  reponse: Sur route oui, avec une barre ou une corde homologuée, feux de détresse allumés et un conducteur au volant du véhicule tracté ; sur autoroute c'est interdit.
-  explication: 'Moteur coupé, la direction et les freins n''ont plus d''assistance : ils durcissent. Sur autoroute, seul un dépanneur agréé intervient (il arrive sous 30 minutes, tarif réglementé).'
+  reponse: Sur autoroute, j’appelle un dépanneur agréé. Sur route, je vérifie les prescriptions du constructeur
+    et les conditions de sécurité ; si elles ne sont pas réunies, je fais dépanner.
+  explication: Une corde ne suffit pas à rendre le remorquage sûr. Transmission automatique, assistance de freinage
+    et direction peuvent imposer un transport sur plateau.
   theme: M
   sous_theme: depannage
   importance: utile
   source: lepermislibre — Remorquer un véhicule en panne ; securite-routiere.gouv.fr — Véhicule en panne
+  tags:
+  - revision::v3

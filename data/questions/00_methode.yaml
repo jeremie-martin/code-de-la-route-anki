@@ -29,12 +29,16 @@
   sous_theme: lecture
   source: Méthode d'examen (synthèse des conseils Codes Rousseau, ENPC, Ornikar)
 - id: etg-reflexe-securite
-  question: Entre deux réponses plausibles à l'ETG, laquelle privilégier ?
-  reponse: 'La plus sûre, celle qui réduit le risque : ralentir, vérifier ses rétroviseurs, laisser passer — jamais celle qui force le passage.'
-  explication: La banque de questions valorise l'anticipation et la prudence. « Je klaxonne » en ville, « j'accélère pour passer », « je force le passage » sont presque toujours faux.
+  question: Une réponse dit « je ralentis », une autre « je maintiens mon allure ». Comment choisir ?
+  reponse: 'Je relie chaque proposition aux indices visibles et à la règle : ralentir si le risque l’exige, maintenir
+    si les conditions le permettent.'
+  explication: Aucun verbe n’est automatiquement juste ou faux. Un danger immédiat peut justifier le klaxon ; une
+    insertion demande parfois d’accélérer. La réponse se justifie par la situation.
   theme: X
   sous_theme: lecture
   source: Méthode d'examen (synthèse des conseils Codes Rousseau, ENPC, Ornikar)
+  tags:
+  - revision::v3
 - id: etg-video-strategie
   question: 'Question vidéo à l''ETG : que faut-il observer pendant la vidéo ?'
   reponse: 'Ce qui change entre le début et la fin : un usager qui apparaît, un clignotant, une portière, un feu — la question porte sur la réaction à cet événement.'
@@ -50,12 +54,18 @@
   sous_theme: format
   source: En Voiture Simone — Examen du code 2026 ; Codes Rousseau
 - id: etg-forme-double-oui-non
-  question: Une question de l'ETG présente deux affirmations sur la même photo, chacune à juger OUI/NON. Comment est-elle notée ?
-  reponse: 'Tout ou rien : les deux affirmations doivent être justes pour avoir le point ; elles ne sont pas forcément liées entre elles.'
-  explication: 'C''est la forme la plus fréquente de la banque 2023 (11 des 20 exemples officiels) : toujours « Plusieurs réponses », une lettre par ligne (A/B puis C/D). Juger chaque affirmation pour elle-même.'
+  question: Une question de l'ETG présente deux affirmations sur la même photo, chacune à juger OUI/NON. Comment
+    est-elle notée ?
+  reponse: 'Tout ou rien : les deux affirmations doivent être justes pour avoir le point ; elles ne sont pas forcément
+    liées entre elles.'
+  explication: Juger séparément les deux affirmations puis vérifier les lettres cochées. Les 20 exemples publics
+    illustrent cette forme ; ils ne mesurent pas sa fréquence dans toute la banque.
   theme: X
   sous_theme: lecture
-  source: Sécurité routière — Exemples de nouvelles questions (PDF, sept. 2023) ; En Voiture Simone — Questions pièges
+  source: Sécurité routière — Exemples de nouvelles questions (PDF, sept. 2023) ; En Voiture Simone — Questions
+    pièges
+  tags:
+  - revision::v3
 - id: etg-adverbes
   question: 'Énoncé de l''ETG : « Pour entrer dans cette zone en période hivernale, mon véhicule doit obligatoirement être équipé de 4 pneus hiver. » Sur quel mot se joue la réponse ?'
   reponse: 'Sur « obligatoirement » : c''est vrai seulement si je n''ai ni chaînes ni chaussettes à neige à bord (question officielle 2023, réponse OUI dans ce cas).'

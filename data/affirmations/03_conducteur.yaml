@@ -224,12 +224,15 @@
   source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code en Poche — Conduite en état d'ivresse
 - id: aff-c-probatoire-un-verre
   contexte: Je suis en permis probatoire.
-  affirmation: Un seul verre standard suffit à dépasser le taux d'alcool autorisé.
+  affirmation: Un seul verre standard peut suffire à atteindre le seuil d’alcool interdit.
   verdict: vrai
-  pourquoi: 'Seuil probatoire : 0,2 g/L (0,10 mg/L d''air expiré, R234-1), soit « zéro verre » : un verre standard élève déjà l''alcoolémie de 0,20 à 0,25 g/L. Sanction : 135 €, 6 points — un permis probatoire de 1re année est invalidé.'
+  pourquoi: En probatoire, le seuil interdit commence à 0,2 g/L de sang. L’effet d’un verre varie selon la personne
+    ; je ne calcule pas un nombre de verres autorisés. Le choix sûr est zéro alcool.
   theme: C
   sous_theme: deficiences
   source: Code de la route, art. R234-1 ; securite-routiere.gouv.fr — L'alcool et la conduite
+  tags:
+  - revision::v3
 - id: aff-c-cannabis-veille
   affirmation: Un joint fumé la veille au soir peut encore être détecté par un test salivaire le lendemain matin.
   verdict: vrai

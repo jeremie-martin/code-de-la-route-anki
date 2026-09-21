@@ -1,0 +1,76 @@
+# Contrôles ciblés de la v3. Une date porte sur la portée décrite, pas sur tout le deck.
+- id: vitesses
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+  portee: Plafonds locaux, pluie, visibilité et période probatoire (R413-1 à R413-5).
+  notes: [l-vitesse-pluie, l-vitesse-probatoire, l-probatoire-autoroute-110, l-pluie-autoroute-110, l-pluie-route80, l-brouillard-zone30]
+- id: feux
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087
+  portee: Les feux prévalent sur les signaux réglant la priorité ; pas sur toutes les prescriptions.
+  notes: [l-signalisation-hierarchie, l-feu-vert-interdiction-tourner]
+- id: agent
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842090
+  portee: Prééminence des ordres de l’agent ; limite du solveur corrigée.
+  notes: [scn-agent-bras-tendus-face, scn-agent-bras-tendus-profil]
+- id: depassement
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
+  portee: Conditions cumulatives du dépassement, visibilité et voies disponibles.
+  notes: [l-depassement-conditions, aff-l-surdepassement]
+- id: double-file
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551
+  portee: R417-10 III vise le stationnement en double file ; distinction avec l’arrêt.
+  notes: [l-double-file]
+- id: secours
+  consulte_le: '2026-09-21'
+  url: https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  portee: Respiration normale, gasps, PLS et origine traumatique ; protection thermique. Pages 27 et 36–38.
+  notes: [a-evaluer-victime, a-pls, a-rcp-dae, aff-a-pls-avec-casque, aff-a-respire-mais-inconsciente, aff-a-couvrir-victime, rcp-rythme]
+- id: pneus
+  consulte_le: '2026-09-21'
+  url: https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
+  portee: Appliquer la pression du constructeur correspondant au véhicule et à la charge.
+  notes: [m-pneus-chiffres, m-pression-etiquette, aff-m-chargement-pression]
+- id: voyants
+  consulte_le: '2026-09-21'
+  url: https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
+  portee: Exemple de notice montrant la dépendance au symbole et aux messages ; charge batterie et défaut airbag.
+  notes: [voyant-batterie, voyant-airbag, m-voyants-couleurs, aff-m-autotest-voyants]
+- id: voie-reservee
+  consulte_le: '2026-09-21'
+  url: https://www.paris.fr/pages/la-voie-reservee-sur-le-peripherique-entre-en-vigueur-le-3-mars-30106
+  portee: Contre-exemple local à une autorisation générale de rouler seul en véhicule électrique sur voie réservée.
+  notes: [aff-e-covoiturage-electrique]
+- id: edpm-local
+  consulte_le: '2026-09-21'
+  url: https://www.service-public.gouv.fr/particuliers/actualites/A19037
+  portee: Casque et équipement rétro-réfléchissant à Paris et en petite couronne depuis août 2026 ; portée locale.
+  notes: [u-edpm-regle-locale]
+- id: invalidation
+  consulte_le: '2026-09-21'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F1704
+  portee: La dispense de conduite exige des conditions supplémentaires à trois ans d’ancienneté.
+  notes: [aff-d-invalidation-code-seul, d-invalidation-delai]
+- id: controle-technique
+  consulte_le: '2026-09-21'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F2878
+  portee: Défaillance majeure versus critique ; validité et conditions de vente.
+  notes: [d-controle-technique, d-ct-critique, aff-d-ct-defaillance-majeure]
+- id: remorques
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000032465124/
+  portee: Catégories B et B96 ; seuils appliqués à la somme des PTAC.
+  notes: [s-remorque-cas-b, s-remorque-cas-b96, s-remorque-permis-b, s-remorque-chiffres]
+- id: aides
+  consulte_le: '2026-09-21'
+  url: https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf
+  portee: Distinction assistance à un freinage déclenché et freinage automatique.
+  notes: [m-afu-aeb]
+- id: passages-pietons-2027
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041910488/2027-01-01
+  portee: Version future supprimant l’exception des emplacements matérialisés dans les cinq mètres en amont ; distinction avec la règle applicable en 2026.
+  notes: [l-stationnement-5m-passage, aff-l-5m-passage]

@@ -43,12 +43,17 @@
   sous_theme: priorites
   source: REMC ; Codes Rousseau — Le giratoire
 - id: l-giratoire-placement
-  question: Giratoire à deux voies ; je veux prendre la troisième sortie. Sur quelle voie entrer, et comment en sortir ?
-  reponse: J'entre sur la voie de gauche en signalant à gauche ; avant ma sortie je me rabats à droite au clignotant droit, après contrôle du rétroviseur et de l'angle mort.
-  explication: 'Changer de voie à l''intérieur de l''anneau est permis à condition de signaler (R412-9). Pour la 1re ou la 2e sortie, on reste sur la voie de droite. Piège : un poids lourd à cheval sur les deux voies ne se dépasse pas.'
+  question: Giratoire à deux voies ; je veux prendre la troisième sortie. Sur quelle voie entrer, et comment en
+    sortir ?
+  reponse: Je peux rester à droite ou me placer à gauche pour une sortie située à gauche. Pour sortir depuis l’intérieur,
+    je cède aux usagers de la voie extérieure avant de me rabattre.
+  explication: La voie intérieure est une possibilité, pas une obligation. Si le rabattement est impossible, je
+    refais un tour ; le clignotant ne donne aucune priorité. R412-9.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-10 et R412-9 ; REMC
+  tags:
+  - revision::v3
 - id: l-bus-quitte-arret
   question: En agglomération, un bus met son clignotant pour quitter son arrêt. Que dois-je faire ?
   reponse: Ralentir et, au besoin, m'arrêter pour le laisser reprendre sa place — sans freiner brusquement ni forcer le passage.
@@ -86,11 +91,15 @@
   source: Code de la route, art. R412-10
 - id: l-depassement-conditions
   question: Avant de me déporter pour dépasser, de quoi dois-je m'être assuré ?
-  reponse: De pouvoir me rabattre ensuite sans gêner le véhicule dépassé ; d'avoir l'écart de vitesse pour dépasser brièvement ; de ne pas être moi-même sur le point d'être dépassé.
-  explication: Les trois conditions de R414-4. S'y ajoutent la visibilité et l'absence d'interdiction, puis la séquence rétroviseur intérieur, rétroviseur gauche, clignotant, angle mort. Si le véhicule de devant accélère, je renonce.
+  reponse: Visibilité et signalisation compatibles ; voie libre sans être moi-même dépassé ; écart de vitesse suffisant
+    sans excès ; possibilité de laisser l’écart latéral et de me rabattre sans gêner.
+  explication: Une ligne discontinue autorise une manœuvre sous conditions ; elle ne garantit ni la visibilité ni
+    la place nécessaire.
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-4
+  tags:
+  - revision::v3
 - id: l-depassement-rabattement
   question: Pendant un dépassement, à quel moment puis-je revenir à droite ?
   reponse: Quand je vois le véhicule dépassé en entier dans mon rétroviseur intérieur ; je signale à droite et je me rabats sans l'obliger à ralentir.
@@ -128,11 +137,15 @@
   source: Code de la route, art. R412-9 et R412-23
 - id: l-tourner-droite-serrer
   question: En ville, je m'apprête à tourner à droite dans la rue suivante. Comment me placer sur la chaussée ?
-  reponse: Je me rapproche du bord droit assez tôt, après contrôle du rétroviseur droit et de l'angle mort, pour ne pas laisser un deux-roues se glisser à ma droite.
-  explication: 'Le piège du tourne-à-droite : un cycliste ou un motard remonte par la droite et se retrouve serré contre le trottoir. S''il existe une bande cyclable, je ne m''y déporte pas (R412-23) et je laisse passer le cycliste qui continue tout droit (R415-14).'
+  reponse: Après contrôle des rétroviseurs et de l’angle mort droit, je me place près du bord droit sans couper
+    un cycliste ni empiéter sur sa voie.
+  explication: Le placement prépare le virage ; il ne sert pas à bloquer un deux-roues. Je cède aux usagers de la
+    piste cyclable que je dois traverser.
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-9, R412-23 et R415-14
+  tags:
+  - revision::v3
 - id: l-file-changement
   question: Avenue à sens unique à trois voies, circulation à l'arrêt sur toutes les files. Puis-je changer de file pour avancer plus vite ?
   reponse: 'Non : quand la circulation est établie en files ininterrompues, je reste dans ma file et je n''en change que pour préparer un changement de direction.'
@@ -141,12 +154,16 @@
   sous_theme: positionnement
   source: Code de la route, art. R412-24 et R414-15
 - id: l-demi-tour-marche-arriere
-  question: Où le demi-tour et la marche arrière sont-ils absolument interdits ?
-  reponse: Sur l'autoroute et les routes à accès réglementé (y compris par une trouée du terre-plein central) ; dans les tunnels ; sur toute chaussée où une ligne continue sépare les deux sens.
-  explication: 'Demi-tour ou marche arrière sur autoroute : 135 €, 4 points — au péage non plus, on ne recule pas. Ailleurs, la marche arrière n''est admise que pour une manœuvre courte, sans gêner ni surprendre.'
+  question: 'J’ai raté une sortie d’autoroute. La bande d’arrêt d’urgence est libre : puis-je y reculer ou faire
+    demi-tour par une interruption du terre-plein ?'
+  reponse: 'Non : marche arrière et demi-tour sont interdits sur autoroute. Je poursuis jusqu’à la prochaine sortie.'
+  explication: 'Sur route ordinaire, examiner séparément les règles de chaque manœuvre : une ligne axiale continue
+    interdit son franchissement, pas toute marche arrière dans sa propre voie.'
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R421-6 et R412-19
+  tags:
+  - revision::v3
 - id: l-ligne-rive-franchir
   question: Une ligne continue borde le côté droit de la chaussée (ligne de rive). Puis-je la franchir pour m'arrêter sur l'accotement ?
   reponse: 'Oui : une ligne de rive n''est pas une ligne axiale ; elle peut être franchie pour s''arrêter hors chaussée, accéder à une propriété ou tourner.'
@@ -176,12 +193,16 @@
   sous_theme: vitesse
   source: Code de la route, art. R413-17
 - id: l-retrecissement-croisement
-  question: Une chaussée se réduit à une seule voie sur un pont, sans panneau B15 ni C18. Un véhicule arrive en face. Qui passe ?
-  reponse: 'Celui dont la voie est libre : si l''obstacle est de mon côté, c''est à moi de m''arrêter et d''attendre. Le véhicule le plus large ou le plus long facilite le passage du plus petit.'
-  explication: 'R414-1 et R414-2 : chacun serre à droite ; sur chaussée étroite, les véhicules de plus de 2 m de large ou de 7 m de long s''arrêtent pour les plus petits. Quand les panneaux sont là, la flèche rouge désigne celui qui cède (B15).'
+  question: Un obstacle occupe ma voie sur une route plate à double sens, sans signalisation de priorité. Une voiture
+    arrive en face. Qui attend ?
+  reponse: 'J’attends : je dois empiéter sur sa voie pour contourner l’obstacle, je ne peux pas la forcer à s’arrêter.'
+  explication: 'Un pont simplement étroit, sans obstacle d’un côté, ne permet pas de déduire cette priorité : observer
+    l’engagement et les possibilités de croisement.'
   theme: L
   sous_theme: croisement
   source: Code de la route, art. R414-1 et R414-2
+  tags:
+  - revision::v3
 - id: l-arret-vs-stationnement
   question: Quelle différence entre un arrêt et un stationnement ?
   reponse: L'arrêt est une immobilisation momentanée pour faire monter ou descendre des personnes, charger ou décharger, le conducteur restant à proximité pour pouvoir déplacer le véhicule ; toute autre immobilisation est un stationnement.
@@ -190,12 +211,16 @@
   sous_theme: stationnement
   source: Code de la route, art. R110-2
 - id: l-stationnement-trottoir
-  question: Il n'y a plus de place ; je me gare avec deux roues sur le trottoir en laissant le passage aux piétons. Est-ce autorisé ?
-  reponse: 'Non : le stationnement d''un véhicule motorisé sur un trottoir est très gênant (135 €, fourrière possible), même s''il reste de la place pour passer.'
-  explication: 'R417-11 : le « très gênant » protège les usagers vulnérables — un piéton avec une poussette ou un fauteuil roulant est renvoyé sur la chaussée. Les deux-roues motorisés relèvent, eux, du stationnement gênant (35 €).'
+  question: Je gare ma voiture avec deux roues sur le trottoir en laissant de la place aux piétons. Est-ce autorisé
+    ?
+  reponse: 'Non : pour une voiture, l’arrêt ou le stationnement sur un trottoir est très gênant (135 €), même si
+    les piétons peuvent encore passer.'
+  explication: Les deux-roues motorisés ont un autre barème ; cela ne rend pas leur stationnement sur trottoir autorisé.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-11
+  tags:
+  - revision::v3
 - id: l-stationnement-bande-cyclable
   question: Puis-je m'arrêter deux minutes sur une bande cyclable, feux de détresse allumés, pour déposer un passager ?
   reponse: 'Non : l''arrêt comme le stationnement sur une bande ou une piste cyclable sont très gênants (135 €) — ils renvoient le cycliste dans le flux des voitures.'
@@ -204,12 +229,15 @@
   sous_theme: stationnement
   source: Code de la route, art. R417-11
 - id: l-double-file
-  question: Je m'arrête 30 secondes en double file, moteur tournant, pour déposer quelqu'un. Est-ce autorisé ?
-  reponse: 'Non : l''arrêt en double file est gênant (35 €, fourrière possible), même bref et même avec les feux de détresse allumés.'
-  explication: 'R417-10 : la double file bloque une voie et masque les piétons qui s''engagent entre les véhicules. Les feux de détresse ne sont pas prévus pour cela (R416-18) et ne rendent rien régulier.'
+  question: Je stationne en double file en attendant un passager, feux de détresse allumés. Est-ce autorisé ?
+  reponse: 'Non : stationner en double file est gênant. Les feux de détresse ne donnent aucune autorisation.'
+  explication: 'Distinguer ce stationnement d’un arrêt réel pour une montée ou descente immédiate : R417-10 III
+    vise le stationnement en double file. Un arrêt ne doit pas gêner ni mettre en danger.'
   theme: L
   sous_theme: stationnement
-  source: Code de la route, art. R417-10
+  source: Code de la route, R110-2 et R417-10 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551
+  tags:
+  - revision::v3
 - id: l-entree-carrossable
   question: Puis-je stationner devant mon propre garage, sur la voie publique ?
   reponse: 'Non : stationner devant une entrée carrossable est gênant (35 €), y compris devant la sienne ; seul un arrêt bref, conducteur à proximité, est admis.'
@@ -258,32 +286,49 @@
   source: IISR 1re partie
 - id: l-formes-priorite-temporaire
   question: À quoi reconnaît-on les panneaux de priorité et la signalisation temporaire ?
-  reponse: 'Octogone rouge : STOP. Triangle pointe en bas : cédez-le-passage. Losange jaune : route prioritaire (barré : fin de priorité). Fond jaune : signalisation temporaire.'
-  explication: 'Triangle pointe en haut à croix de Saint-André (AB1) : intersection où s''applique la priorité à droite ; à barre verticale (AB2) : priorité ponctuelle. Panneaux de direction — bleu autoroute, vert grande liaison, blanc local, marron touristique.'
+  reponse: 'STOP : octogone rouge. Cédez-le-passage : triangle pointe en bas. Route prioritaire : losange jaune.
+    Les panneaux de danger temporaires sont des triangles à fond jaune.'
+  explication: 'Jaune ne signifie pas toujours temporaire : le losange de route prioritaire est jaune lui aussi.
+    Les prescriptions de chantier gardent généralement leur forme habituelle.'
   theme: L
   sous_theme: signalisation
   source: IISR 1re et 3e parties
+  tags:
+  - revision::v3
 - id: l-portee-prescription
-  question: Jusqu'où s'applique un panneau d'interdiction ou d'obligation, par exemple une limitation à 30 km/h ?
-  reponse: Jusqu'à la prochaine intersection, ou jusqu'au panneau de fin correspondant ; un panonceau M2 (« sur 2 km ») peut en fixer l'étendue.
-  explication: 'Les zones (zone 30, zone de rencontre, aire piétonne, ZFE) font exception : elles restent valables au-delà des intersections, jusqu''au panneau de fin de zone. Un panonceau « rappel » confirme une prescription après une intersection.'
+  question: Une limitation à 30 km/h par panneau B14 isolé (hors zone et hors panneau d’agglomération) est suivie
+    d’une intersection publique. Elle n’est pas répétée après. Que devient-elle ?
+  reponse: 'Elle cesse après l’intersection : j’applique alors la limitation qui correspond à la route et aux autres
+    panneaux.'
+  explication: 'Ne pas généraliser à toute prescription : une zone 30 traverse les intersections ; une limitation
+    associée au panneau d’entrée d’agglomération peut concerner toute l’agglomération.'
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie, art. 8 ; Code de la route, art. R110-2
+  tags:
+  - revision::v3
 - id: l-panonceau-portee
   question: À quoi s'applique un panonceau (petit rectangle blanc) placé sous un panneau ?
-  reponse: 'Au seul panneau sous lequel il est posé : il en précise la distance, l''étendue, la catégorie d''usagers concernée ou les horaires.'
-  explication: 'Exemples : B1 « sens interdit » + M9v2 « sauf vélo » = double-sens cyclable ; panonceau M5 « STOP 150 m » sous un signal avancé AB5 = le STOP est 150 m plus loin. M1 distance, M2 étendue, M3 direction, M4 catégorie.'
+  reponse: Au panneau qu’il complète. Je lis ensemble symbole, mentions et position sur le support pour connaître
+    les usagers concernés ou la portée.
+  explication: 'Un panonceau de catégorie peut concerner plusieurs prescriptions groupées : ne pas mémoriser « toujours
+    le seul panneau juste au-dessus ».'
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie, art. 9
+  tags:
+  - revision::v3
 - id: l-signalisation-temporaire
-  question: Un panneau jaune de limitation à 50 est posé sous un panneau blanc à 90 (chantier). Lequel s'applique ?
-  reponse: 'Le jaune (temporaire) : la signalisation temporaire prime toujours sur la signalisation permanente, qui est en principe masquée.'
-  explication: 'Même chose pour le marquage : des lignes jaunes au sol remplacent les blanches dans un chantier. Les feux temporaires (KR11) ont la même valeur que des feux permanents.'
+  question: Un chantier impose temporairement 50 km/h alors que la limitation permanente est de 90. Quel plafond
+    respecter ?
+  reponse: '50 km/h : je respecte la prescription temporaire du chantier.'
+  explication: 'Le jaune caractérise notamment les dangers temporaires, les directions et les marquages. Les panneaux
+    de prescription temporaires peuvent garder leur aspect habituel : ne pas se fier à la couleur seule.'
   theme: L
   sous_theme: signalisation
   source: IISR 8e partie ; Code de la route, art. R411-25
+  tags:
+  - revision::v3
 - id: l-agglomeration-panneau
   question: Quelles règles change le panneau d'entrée d'agglomération (nom de la ville sur fond blanc bordé de rouge) ?
   reponse: 50 km/h par défaut, klaxon réservé au danger immédiat, feux de croisement sur voie éclairée et stationnement à droite dans le sens de la marche.

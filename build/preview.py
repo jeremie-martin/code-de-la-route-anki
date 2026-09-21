@@ -25,7 +25,7 @@ CHROME = shutil.which("google-chrome") or shutil.which("google-chrome-stable") o
 PAGE = """<!doctype html><html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>{css}
-body {{ margin: 0; }} .card {{ min-height: 100vh; box-sizing: border-box; }}</style></head>
+body {{ margin: 0; width: {width}px; }} .card {{ min-height: 100vh; box-sizing: border-box; }}</style></head>
 <body class="{cls}"><div class="card {cls}">{body}</div>
 <script>
 // emulate Anki's cloze/hint behaviour minimally: nothing needed for static preview
@@ -64,7 +64,9 @@ def main(argv=None):
         cls = "nightMode night_mode" if args.night else ""
         for side, html_ in (("q", card.question()), ("a", card.answer())):
             html_ = html_.replace('src="cdr_', 'src="media/cdr_')
-            page = PAGE.format(css=css, body=html_, cls=cls)
+            # Chrome's desktop headless window has a minimum layout width.
+            # Constrain the document too so narrow captures test mobile wrapping.
+            page = PAGE.format(css=css, body=html_, cls=cls, width=args.width)
             hp = PREVIEW / f"{ident}_c{card.ord}_{side}.html"
             hp.write_text(page, encoding="utf-8")
             png = PREVIEW / f"{ident}_c{card.ord}_{side}.png"

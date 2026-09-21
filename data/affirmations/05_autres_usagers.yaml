@@ -195,12 +195,15 @@
 # ---------- Poids lourds, bus, tramways ----------
 - id: aff-u-pl-retroviseur
   contexte: Arrêté au feu à côté d'un camion, je ne distingue pas le visage de son conducteur dans son rétroviseur.
-  affirmation: C'est qu'il ne me voit pas.
+  affirmation: Je dois considérer qu’il peut ne pas me voir.
   verdict: vrai
-  pourquoi: 'Règle du rétroviseur : la vision est réciproque. Un poids lourd a quatre zones aveugles (avant, arrière et les deux côtés, surtout à droite) ; je me place derrière lui, pas à sa hauteur.'
+  pourquoi: 'L’absence de contact visuel m’alerte sur un angle mort. Même si je vois le conducteur, rien ne garantit
+    qu’il m’a remarqué : je reste hors de sa trajectoire et évite de me placer à côté.'
   theme: U
   sous_theme: poids_lourds
   source: 'securite-routiere.gouv.fr — Vrai ou faux : les angles morts'
+  tags:
+  - revision::v3
 - id: aff-u-pl-voie-gauche
   contexte: Autoroute à trois voies dans mon sens ; un poids lourd rattrape deux véhicules plus lents.
   affirmation: Il peut utiliser la voie de gauche le temps de les dépasser.

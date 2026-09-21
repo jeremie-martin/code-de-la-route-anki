@@ -100,11 +100,15 @@
   source: Code de la route, art. L411-8 ; IISR 9e partie (arrêté du 15 mars 2024) ; paris.fr
 - id: e-electrique-avantages
   question: Quels sont l'avantage et la limite principale d'une voiture électrique ?
-  reponse: Aucune émission à l'échappement et un coût au kilomètre faible, mais une autonomie et des temps de recharge à planifier, et un poids élevé.
-  explication: Elle est classée Crit'Air 0 et circule donc dans toutes les ZFE. Son poids allonge les distances de freinage ; le freinage régénératif la ralentit dès que l'on lève le pied.
+  reponse: Aucune émission à l'échappement et un coût au kilomètre faible, mais une autonomie et des temps de recharge
+    à planifier, et un poids élevé.
+  explication: 'Aucune émission à l’échappement ne signifie pas aucun impact : fabrication, électricité, pneus et
+    freins comptent. Le freinage régénératif dépend du véhicule et de l’état de charge ; rester prêt à freiner.'
   theme: E
   sous_theme: ecomobilite
   source: ADEME — Car Labelling ; service-public.fr
+  tags:
+  - revision::v3
 - id: e-ve-recharge
   question: Que faut-il prévoir pour partir loin en voiture électrique ?
   reponse: 'Planifier les recharges : 20 à 40 minutes sur une borne rapide, plusieurs heures sur une prise domestique — et compter une autonomie nettement réduite par temps froid.'

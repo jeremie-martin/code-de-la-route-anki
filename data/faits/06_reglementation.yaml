@@ -18,11 +18,15 @@
   importance: utile
   source: Code de la route, art. L223-1 et R223-4-1 ; décret n° 2018-715 ; service-public.fr F2390
 - id: d-points-delit-cumul
-  texte: 'Un délit routier retire {{c1::6 points}} ; plusieurs infractions constatées simultanément retirent au plus {{c2::8 points}} — seule exception : alcool + stupéfiants, {{c3::9 points}} (loi du 9 juillet 2025).'
-  explication: Une contravention aussi retire au plus 6 points. Les points sont retirés à la date du paiement de l'amende ou de la condamnation définitive, pas à la date de l'infraction. Aucun retrait pour une infraction commise à vélo, en trottinette ou à pied (véhicule sans permis exigé).
+  texte: Le délit de conduite après usage de stupéfiants retire {{c1::6 points}} ; le cumul d’infractions est normalement
+    plafonné à {{c2::8 points}}, sauf le cumul alcool + stupéfiants qui peut retirer {{c3::9 points}}.
+  explication: 'Tous les délits ne retirent pas six points : défaut d’assurance et conduite sans permis n’ont pas
+    ce barème. Distinguer délit, amende et retrait de points.'
   theme: D
   sous_theme: points
-  source: Code de la route, art. L223-2 et L235-1 IV
+  source: Code de la route, L223-2, L235-1 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F31551
+  tags:
+  - revision::v3
 - id: d-probatoire-3-points
   texte: En permis probatoire, une infraction retirant au moins {{c1::3 points}} entraîne l'obligation de suivre un stage de sensibilisation dans les {{c2::4 mois}} (lettre 48N) ; la perte de la totalité des points (6 la 1re année) entraîne l'{{c3::invalidation}} du permis (lettre 48SI).
   explication: Le stage obligatoire remplace l'amende et rend jusqu'à 4 points, dans la limite du capital. La première année, un seul délit ou une contravention à 6 points (alcool ≥ 0,2 g/L, priorité piéton) suffit à invalider le permis.
@@ -30,11 +34,17 @@
   sous_theme: points
   source: Code de la route, art. L223-6, R223-4, R223-8, L223-5
 - id: d-invalidation-delai
-  texte: Après une invalidation pour solde de points nul, on doit remettre son permis en préfecture sous {{c1::10 jours}} et attendre {{c2::6 mois}} avant de repasser le permis ({{c3::1 an}} si nouvelle invalidation dans les 5 ans) ; on repasse seulement le code si le permis avait au moins 3 ans, sinon code + conduite.
-  explication: 'Retour conditionné à un examen médical (médecin agréé, 36 €) et à des tests psychotechniques (~100 €), aux frais de l''intéressé. Le nouveau permis est probatoire (6 points). Conduire malgré l''invalidation : délit (2 ans, 4 500 €).'
+  texte: Après invalidation, remettre le permis sous {{c1::10 jours}} ; interdiction d’obtenir un nouveau permis
+    pendant {{c2::6 mois}}, ou {{c3::1 an}} en cas de nouvelle invalidation dans les cinq ans. La dispense de conduite
+    est conditionnelle.
+  explication: La dispense de conduite exige aussi une interdiction inférieure à un an et une réinscription dans
+    le délai applicable ; examens médical et psychotechnique requis. Vérifier la procédure à la réception de la
+    décision.
   theme: D
   sous_theme: points
-  source: Code de la route, art. L223-5 et L224-16 ; service-public.fr F1704
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F1704
+  tags:
+  - revision::v3
 - id: d-recuperation-points
   texte: 'Récupération automatique des points : {{c1::6 mois}} sans infraction pour un retrait d''un seul point ; {{c2::2 ans}} sans infraction pour retrouver 12 points si les infractions étaient des contraventions de 1re à 3e classe ; {{c3::3 ans}} si l''une d''elles est de 4e ou 5e classe ou un délit.'
   explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès ≥ 20 km/h) sont de 4e classe → c''est souvent 3 ans. Pendant le probatoire, pas de reconstitution automatique : on récupère par la majoration annuelle ou par un stage.'
@@ -74,11 +84,15 @@
   importance: utile
   source: Arrêté du 22 décembre 2009 ; Code de la route, art. R221-4 et R221-8 ; service-public.fr F2828
 - id: d-accompagnateur
-  texte: Pour accompagner un élève (AAC, conduite supervisée), il faut être titulaire du permis B depuis au moins {{c1::5 ans}} sans interruption ; en cas d'infraction pendant la conduite accompagnée, c'est {{c2::l'accompagnateur}} qui perd les points (et il est soumis au taux d'alcool de 0,2 g/L et au dépistage de stupéfiants).
-  explication: Selon la FAQ conduite accompagnée de la Sécurité routière, c'est l'accompagnateur, responsable de la conduite, qui est sanctionné et perd les points ; l'élève n'a pas de permis à points. Plusieurs accompagnateurs sont possibles, tous mentionnés au contrat d'assurance.
+  texte: Pour accompagner un élève, il faut notamment le permis B depuis {{c1::5 ans}} sans interruption et l’accord
+    de {{c2::l’assureur}} pour cet apprentissage.
+  explication: Ne pas enseigner un transfert automatique des points de l’élève vers l’accompagnateur. Les responsabilités
+    dépendent de l’infraction ; l’accompagnateur est personnellement soumis aux règles sur alcool et stupéfiants.
   theme: D
   sous_theme: permis
-  source: Code de la route, art. R211-3, R211-5, R234-1 V ; service-public.fr F2826
+  source: Code de la route, R211-3 et R234-1 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2826
+  tags:
+  - revision::v3
 - id: d-classes-amendes
   texte: 'Amendes forfaitaires par classe de contravention : 1re {{c1::11 €}}, 2e {{c2::35 €}}, 3e {{c3::68 €}}, 4e {{c4::135 €}} ; 5e classe : jusqu''à 1 500 € (forfaitisée à 200 € pour certaines depuis 2024).'
   explication: Les contraventions relèvent du tribunal de police, les délits du tribunal correctionnel (prison possible). Les 4 premières classes ne figurent pas au casier judiciaire.
@@ -210,11 +224,16 @@
   sous_theme: documents
   source: Code de la route, art. R322-4, R322-5, R322-7 ; service-public.fr F21031
 - id: d-controle-technique
-  texte: 'Contrôle technique d''une voiture : premier contrôle dans les {{c1::6 mois}} précédant le {{c2::4e anniversaire}} de la première mise en circulation, puis tous les {{c3::2 ans}} ; pour vendre une voiture d''occasion, le contrôle doit dater de moins de {{c1::6 mois}}.'
-  explication: 'Le contrôle de vente ne s''impose que pour une voiture de plus de 4 ans. Défaillance majeure : contre-visite sous 2 mois, le véhicule peut circuler ; défaillance critique : validité limitée au jour même. Défaut de CT : 135 €, sans points. Deux-roues et voiturettes : CT depuis avril 2024 (5 ans, puis tous les 3 ans).'
+  texte: 'Contrôle technique d''une voiture : premier contrôle dans les {{c1::6 mois}} précédant le {{c2::4e anniversaire}}
+    de la première mise en circulation, puis tous les {{c3::2 ans}} ; pour vendre une voiture d''occasion, le contrôle
+    doit dater de moins de {{c1::6 mois}}.'
+  explication: 'Pour la vente à un particulier d’une voiture de plus de quatre ans : contrôle de moins de six mois,
+    ou délai de contre-visite non dépassé. Une défaillance critique limite la circulation au jour du contrôle.'
   theme: D
   sous_theme: documents
-  source: Code de la route, art. R323-22 et R323-27 ; service-public.fr F2878
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2878
+  tags:
+  - revision::v3
 - id: d-assurance-garanties
   texte: 'L''assurance obligatoire est la {{c1::responsabilité civile (« au tiers »)}} : elle couvre les dommages causés aux autres, jamais ceux du conducteur responsable ni de son véhicule (garanties facultatives : dommages tous accidents/« tous risques », vol, incendie, bris de glace, garantie du conducteur, assistance).'
   explication: 'Bonus-malus : coefficient 1 au départ, −5 % par an sans accident responsable (jusqu''à 0,50), +25 % par accident responsable (jusqu''à 3,50). Jeune conducteur : surprime jusqu''à 100 % (50 % après AAC), réduite de moitié chaque année sans sinistre.'
@@ -228,12 +247,16 @@
   sous_theme: documents
   source: Code des assurances, art. L113-2 ; service-public.fr F2149
 - id: d-critair-prix
-  texte: 'La vignette Crit''Air se commande uniquement sur certificat-air.gouv.fr (≈ {{c1::3,85 €}} en 2026), se colle en bas à droite du pare-brise et reste valable {{c2::toute la vie du véhicule}} ; circuler dans une ZFE avec un véhicule interdit ou sans vignette : {{c3::68 €}} (135 € pour un poids lourd).'
-  explication: 'Classes 0 (vert, électrique) à 5 (gris), plus les non classés ; un diesel n''est jamais Crit''Air 1. Les ZFE sont maintenues : leur suppression votée en 2025 a été censurée par le Conseil constitutionnel le 21 mai 2026.'
+  texte: 'Crit’Air se commande sur {{c1::certificat-air.gouv.fr}} ; la vignette reste valable {{c2::tant qu’elle
+    est lisible et que les informations du véhicule ne changent pas}}. Défaut de vignette dans une zone où elle
+    est exigée : {{c3::68 €}} pour une voiture.'
+  explication: Ne pas apprendre le prix d’envoi, variable et sans intérêt pour décider au volant. Vérifier les règles
+    locales avant d’entrer dans une ZFE.
   theme: D
   sous_theme: documents
   tags:
   - nouveau::2026
+  - revision::v3
   source: Code de la route, art. R318-2 et R411-19-1 ; service-public.fr F33371 ; décision CC n° 2026-903 DC
 - id: d-equipements-obligatoires
   texte: 'Équipements obligatoires à bord d''une voiture : un {{c1::gilet de haute visibilité}} à portée de main (à revêtir avant de sortir après un arrêt d''urgence) et un {{c2::triangle de présignalisation}} (à placer à ≈ 30 m, sauf danger sur autoroute) ; l''{{c3::éthylotest}} n''est plus obligatoire depuis mai 2020.'

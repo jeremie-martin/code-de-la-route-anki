@@ -1,0 +1,66 @@
+- id: c-arret-somme
+  theme: C
+  sous_theme: distances
+  question: L’exercice donne 15 m parcourus pendant la réaction et 25 m de freinage. Quelle est la distance d’arrêt
+    ?
+  reponse: '40 m : 15 + 25.'
+  explication: Utiliser les données fournies, sans remplacer le calcul par une table approximative.
+  source: Sécurité routière — vitesse, distance d’arrêt = réaction + freinage
+  tags:
+  - revision::v3
+  - competence::application
+- id: c-reaction-deux-secondes
+  theme: C
+  sous_theme: distances
+  question: À 90 km/h, je parcours 25 m par seconde. Si je réagis en deux secondes, quelle distance parcours-je
+    avant de commencer à freiner ?
+  reponse: 50 m, avant même le début du freinage.
+  explication: Distance de réaction = vitesse en mètres par seconde × temps de réaction.
+  source: Relation physique distance = vitesse × temps ; Sécurité routière — vigilance
+  tags:
+  - revision::v3
+  - competence::application
+- id: c-double-vitesse-arret
+  theme: C
+  sous_theme: distances
+  question: 'À vitesse donnée : 10 m de réaction et 10 m de freinage. Je double la vitesse, avec le même temps de
+    réaction et la même adhérence. Distance d’arrêt théorique ?'
+  reponse: '60 m : 20 m de réaction + 40 m de freinage.'
+  explication: La réaction double, le freinage quadruple ; la distance d’arrêt totale ne quadruple donc pas automatiquement.
+  source: Modèle physique à décélération constante ; Sécurité routière — vitesse
+  tags:
+  - revision::v3
+  - competence::application
+- id: c-intervalle-repere
+  theme: C
+  sous_theme: distances
+  question: Le véhicule devant passe un panneau. Je l’atteins une seconde après lui sur route sèche. Mon intervalle
+    est-il suffisant ?
+  reponse: 'Non : je laisse au moins deux secondes, davantage si les conditions l’exigent.'
+  explication: Le repère fixe permet de contrôler l’intervalle sans estimer des mètres.
+  source: Code de la route, R412-12
+  tags:
+  - revision::v3
+  - competence::application
+- id: c-alcool-unites-probatoire
+  theme: C
+  sous_theme: deficiences
+  question: 'Permis probatoire : l’éthylomètre mesure 0,10 mg/L d’air expiré. Suis-je encore sous le seuil interdit
+    ?'
+  reponse: 'Non : le seuil interdit est atteint, correspondant à 0,2 g/L de sang.'
+  explication: 'Lire l’unité et le mot « atteint » : la limite ne doit pas être atteinte.'
+  source: Code de la route, R234-1
+  tags:
+  - revision::v3
+  - competence::application
+- id: c-occlusion-pieton
+  theme: C
+  sous_theme: vigilance
+  question: Une camionnette arrêtée masque l’entrée d’un passage piéton. Je ne vois personne. Puis-je en déduire
+    que la traversée est libre ?
+  reponse: 'Non : un piéton peut être masqué. Je ralentis pour pouvoir m’arrêter avant le passage.'
+  explication: Absence d’usager visible et absence de danger ne sont pas équivalentes.
+  source: Code de la route, R413-17 et R415-11
+  tags:
+  - revision::v3
+  - competence::application

@@ -17,21 +17,28 @@
   sous_theme: secourir
   source: "Sécurité routière — Exemples de nouvelles questions (Q6) ; Croix-Rouge française — Défibrillateur"
 - id: aff-a-pls-avec-casque
-  contexte: Un motard est inconscient sur le bas-côté ; il respire, son casque est resté en place.
-  affirmation: Je le mets en position latérale de sécurité sans lui retirer son casque.
+  contexte: Après sa chute, un motard est inconscient, allongé sur le dos et respire normalement ; pas de vomissement
+    ni de danger immédiat.
+  affirmation: J’alerte et je surveille sa respiration sans le retourner systématiquement.
   verdict: vrai
-  pourquoi: "On ne retire pas le casque (réponse attendue à l'examen) : le mouvement risque d'aggraver une lésion des cervicales. La PLS se fait avec, visière ouverte pour surveiller la respiration, tête maintenue dans l'axe."
+  pourquoi: 'Traumatisme : respecter les consignes des secours et limiter les mouvements. S’il vomit, le mettre
+    sur le côté en préservant autant que possible l’axe tête-cou-tronc.'
   theme: A
   sous_theme: secourir
-  source: "Croix-Rouge française — Inconscience ; securite-routiere.gouv.fr"
+  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  tags:
+  - revision::v3
 - id: aff-a-respire-mais-inconsciente
-  contexte: Une victime ne répond pas ; sa poitrine se soulève régulièrement.
-  affirmation: "Elle est en arrêt cardiaque : je commence les compressions thoraciques."
+  contexte: Après un malaise sans traumatisme, une personne ne répond pas mais respire normalement.
+  affirmation: 'Elle est en arrêt cardiaque : je commence les compressions thoraciques.'
   verdict: faux
-  pourquoi: "Elle respire : elle est inconsciente, pas en arrêt cardiaque. Le geste attendu est la PLS, puis l'alerte et la surveillance. Les compressions ne se font que sur une victime qui ne respire pas."
+  pourquoi: 'Elle n’est pas en arrêt cardiaque : PLS, alerte et surveillance. Une respiration absente ou anormale
+    appelle une réanimation.'
   theme: A
   sous_theme: secourir
-  source: Croix-Rouge française — Inconscience ; Arrêt cardiaque
+  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  tags:
+  - revision::v3
 - id: aff-a-compressions-seules
   contexte: La victime ne respire pas ; le bouche-à-bouche me rebute.
   affirmation: Je peux me limiter aux compressions thoraciques en attendant les secours.
@@ -42,12 +49,15 @@
   source: Croix-Rouge française — Arrêt cardiaque
 - id: aff-a-couvrir-victime
   contexte: Accident en plein été ; la victime est allongée, consciente, et il fait 30 °C.
-  affirmation: Je la couvre malgré la chaleur.
+  affirmation: Je la protège du froid, de la chaleur et des intempéries en attendant les secours.
   verdict: vrai
-  pourquoi: "L'état de choc fait chuter la température du corps quelle que soit la saison : on couvre (couverture de survie), on parle, on rassure, sans commenter les blessures."
+  pourquoi: 'Adapter la protection aux conditions : éviter refroidissement comme surchauffe. Je rassure la victime
+    et surveille son état.'
   theme: A
   sous_theme: secourir
-  source: Croix-Rouge française — Les gestes de premiers secours
+  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  tags:
+  - revision::v3
 - id: aff-a-donner-a-boire
   contexte: Un blessé conscient me demande à boire en attendant les secours.
   affirmation: Je peux lui donner un peu d'eau pour le soulager.
@@ -88,21 +98,28 @@
   sous_theme: alerter
   source: service-public.fr — Numéros d'urgence
 - id: aff-a-rester-sur-place
-  contexte: J'ai appelé les secours depuis le lieu d'un accident et je suis pressé.
+  contexte: Témoin d’un accident avec blessés, j’ai appelé les secours et peux rester sans danger ; aucune consigne
+    contraire ne m’a été donnée.
   affirmation: Je reste sur place jusqu'à leur arrivée pour les guider.
   verdict: vrai
-  pourquoi: "Celui qui alerte reste joignable, surveille la victime et fait signe aux secours : l'opérateur peut rappeler ou demander un geste. Conducteur impliqué, je n'ai de toute façon pas le droit de quitter les lieux (R231-1)."
+  pourquoi: Je reste joignable, surveille les victimes et aide à guider les secours. Pour un conducteur impliqué
+    dans un accident corporel, R231-1 prévoit aussi l’alerte de la police et la présence sur place.
   theme: A
   sous_theme: obligations
-  source: "Croix-Rouge française — Alerter ; Code de la route, art. R231-1"
+  source: Croix-Rouge française — Alerter ; Code de la route, art. R231-1
+  tags:
+  - revision::v3
 - id: aff-a-ne-rien-faire
   contexte: Je n'ai suivi aucune formation aux premiers secours et j'arrive sur un accident.
   affirmation: Mieux vaut ne rien faire que risquer d'aggraver l'état des victimes.
   verdict: faux
-  pourquoi: "Protéger et alerter sont à la portée de tous et suffisent à remplir l'obligation légale ; s'abstenir expose à la non-assistance à personne en danger (5 ans de prison, 75 000 € d'amende)."
+  pourquoi: Je peux protéger, alerter et suivre les instructions des secours. L’absence de formation ne justifie
+    pas l’inaction ; l’aide exigible dépend de ce que je peux faire sans risque pour moi ni pour autrui.
   theme: A
   sous_theme: obligations
-  source: "Code pénal, art. 223-6 ; Croix-Rouge française"
+  source: Code pénal, art. 223-6
+  tags:
+  - revision::v3
 - id: aff-a-constat-signature
   contexte: Accrochage sans blessé ; nous sommes d'accord sur les circonstances.
   affirmation: Signer le constat amiable revient à reconnaître ma responsabilité dans l'accident.

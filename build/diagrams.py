@@ -264,7 +264,7 @@ def draw_intersection(spec: dict) -> str:
             _transversal(S, a, cx, cy, half, solid=True)
         elif sign == "cedez":
             _transversal(S, a, cx, cy, half, solid=False)
-        elif sign == "feu_vert" or sign == "feu_rouge" or sign == "feu_orange":
+        elif sign and sign.startswith("feu_"):
             _transversal(S, a, cx, cy, half, solid=True, thin=True)
         if priv:
             _private_exit(S, a, cx, cy, half)
@@ -276,7 +276,7 @@ def draw_intersection(spec: dict) -> str:
         if sign in ("stop", "cedez", "prioritaire", "priorite_droite", "priorite_ponctuelle", "fin_prioritaire", "giratoire"):
             _sign(S, a, sign, cx, cy, half)
         elif sign and sign.startswith("feu_"):
-            _light(S, a, sign.split("_")[1], cx, cy, half)
+            _light(S, a, sign.split("_", 1)[1], cx, cy, half)
     for b in spec.get("crosswalks", []):
         _crosswalk(S, b, cx, cy, half, pedestrian=(b == spec.get("pedestrian")))
     if spec.get("agent"):
@@ -387,6 +387,9 @@ def _sign(S: SVG, a, sign, cx, cy, half, px=54):
 
 
 def _light(S: SVG, a, colour, cx, cy, half):
+    blink = colour == "orange_clignotant"
+    if blink:
+        colour = "orange"
     off = {"vert": 2, "rouge": 0, "orange": 1}[colour]  # index of the lit lamp (red, amber, green)
     gap = 8
     w, h = 22, 58
@@ -399,6 +402,9 @@ def _light(S: SVG, a, colour, cx, cy, half):
     elif a == "W":
         x, y = cx - half - 10 - w, cy + half + gap
     S.add(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="5" fill="#222" stroke="#000"/>')
+    if blink:
+        S.add(f'<text x="{x+w/2}" y="{y+h+13}" font-family="{FONT}" font-size="11" '
+              'text-anchor="middle" fill="#111">clignotant</text>')
     for i, c in enumerate(["#d8362d", "#f08a24", "#2fa14b"]):
         fill = c if i == off else "#555"
         S.add(f'<circle cx="{x+w/2}" cy="{y+11+i*18}" r="7" fill="{fill}"/>')

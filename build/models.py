@@ -82,7 +82,7 @@ CSS = """
 .cdr-kicker { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #8a8a8a; margin-bottom: 10px; }
 .cdr-img { margin: 6px auto 10px; }
 .cdr-img img { max-width: 100%; max-height: 46vh; width: auto; height: auto; border-radius: 10px; }
-.cdr-img.sign img { max-height: 40vh; max-width: 320px; }
+.cdr-img.sign img { max-height: 40vh; max-width: min(100%, 320px); }
 .cdr-pair { display: flex; gap: 18px; justify-content: center; align-items: flex-start; flex-wrap: wrap; }
 .cdr-pair > div { flex: 1 1 200px; max-width: 280px; }
 .cdr-pair img { max-width: 100%; max-height: 32vh; border-radius: 10px; }
@@ -102,7 +102,7 @@ CSS = """
 .cdr-box.info { border-left-color: #8a8a8a; color: #444; font-size: 16px; }
 .nightMode .cdr-box.info, .night_mode .cdr-box.info { color: #cfcfcf; }
 .cdr-box b { font-weight: 700; }
-.cdr-src { font-size: 12px; color: #a0a0a0; margin-top: 18px; }
+.cdr-src { font-size: 12px; color: #a0a0a0; margin-top: 18px; overflow-wrap: anywhere; }
 .cdr-code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 13px; color: #a0a0a0; }
 .cloze { color: #1a6b3a; font-weight: 700; }
 .nightMode .cloze, .night_mode .cloze { color: #7ed49a; }
@@ -120,6 +120,9 @@ ul.cdr-list { text-align: left; display: inline-block; margin: 6px auto; padding
 """
 
 KICKER = '<div class="cdr-kicker">{{Theme}}{{#SousTheme}} · {{SousTheme}}{{/SousTheme}}</div>'
+FRONT_KICKER = '<div class="cdr-kicker">Code de la route · Rappel actif</div>'
+GRADE = ('<div class="cdr-hint">À revoir si la décision ou la raison essentielle manquait. '
+         'Les détails de l’explication ne sont pas à réciter.</div>')
 SRC = '<div class="cdr-src">{{#Code}}<span class="cdr-code">{{Code}}</span> · {{/Code}}{{Source}}</div>'
 
 
@@ -131,16 +134,16 @@ def notetypes() -> list[dict]:
             "fields": ["Id", "Type", "Image", "Question", "Nom", "Signification", "ConduiteATenir", "Complement", "Piege", "Code", "Theme", "SousTheme", "Source"],
             "templates": [{
                 "name": "Reconnaissance",
-                "qfmt": f'<div class="cdr-wrap">{KICKER}<div class="cdr-img sign">{{{{Image}}}}</div><div class="cdr-q">{{{{Question}}}}</div></div>',
+                "qfmt": f'<div class="cdr-wrap">{FRONT_KICKER}<div class="cdr-img sign">{{{{Image}}}}</div><div class="cdr-q">{{{{Question}}}}</div><div class="cdr-hint">Donnez le sens ; le nom officiel n’est pas à réciter.</div></div>',
                 "afmt": (
                     '<div class="cdr-wrap">' + KICKER + '<div class="cdr-img sign">{{Image}}</div>'
                     '<hr id=answer>'
-                    '<div class="cdr-a">{{Nom}}</div>'
-                    '<div class="cdr-sig">{{Signification}}</div>'
+                    '<div class="cdr-a">{{Signification}}</div>'
+                    '<div class="cdr-hint">{{Nom}}</div>'
                     '{{#ConduiteATenir}}<div class="cdr-box conduite"><b>Conduite à tenir :</b> {{ConduiteATenir}}</div>{{/ConduiteATenir}}'
                     '{{#Complement}}<div class="cdr-box info">{{Complement}}</div>{{/Complement}}'
                     '{{#Piege}}<div class="cdr-box piege"><b>Piège :</b> {{Piege}}</div>{{/Piege}}'
-                    + SRC + '</div>'
+                    + '<div class="cdr-hint">À revoir si le sens était faux ou incomplet. Les encadrés expliquent la conduite.</div>' + SRC + '</div>'
                 ),
             }],
         },
@@ -150,7 +153,7 @@ def notetypes() -> list[dict]:
             "templates": [{
                 "name": "Confusion",
                 "qfmt": (
-                    '<div class="cdr-wrap">' + KICKER +
+                    '<div class="cdr-wrap">' + FRONT_KICKER +
                     '<div class="cdr-pair"><div>{{ImageA}}</div><div>{{ImageB}}</div></div>'
                     '<div class="cdr-q">Quelle est la différence ?</div></div>'
                 ),
@@ -159,7 +162,7 @@ def notetypes() -> list[dict]:
                     '<div class="cdr-pair"><div>{{ImageA}}<div class="lbl">{{NomA}}</div></div><div>{{ImageB}}<div class="lbl">{{NomB}}</div></div></div>'
                     '<hr id=answer>'
                     '<div class="cdr-box">{{Difference}}</div>'
-                    + SRC + '</div>'
+                    + GRADE + SRC + '</div>'
                 ),
             }],
         },
@@ -170,7 +173,7 @@ def notetypes() -> list[dict]:
             "templates": [{
                 "name": "Cloze",
                 "qfmt": (
-                    '<div class="cdr-wrap">' + KICKER +
+                    '<div class="cdr-wrap">' + FRONT_KICKER +
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
                     '<div class="cdr-fait">{{cloze:Texte}}</div></div>'
                 ),
@@ -179,7 +182,7 @@ def notetypes() -> list[dict]:
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
                     '<div class="cdr-fait">{{cloze:Texte}}</div>'
                     '{{#Explication}}<div class="cdr-box">{{Explication}}</div>{{/Explication}}'
-                    + SRC + '</div>'
+                    + '<div class="cdr-hint">À revoir si la valeur ou le terme demandé manquait. Vérifiez aussi l’unité.</div>' + SRC + '</div>'
                 ),
             }],
         },
@@ -189,7 +192,7 @@ def notetypes() -> list[dict]:
             "templates": [{
                 "name": "Question",
                 "qfmt": (
-                    '<div class="cdr-wrap">' + KICKER +
+                    '<div class="cdr-wrap">' + FRONT_KICKER +
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
                     '<div class="cdr-q">{{Question}}</div></div>'
                 ),
@@ -200,7 +203,7 @@ def notetypes() -> list[dict]:
                     '<hr id=answer>'
                     '<div class="cdr-a">{{Reponse}}</div>'
                     '{{#Explication}}<div class="cdr-box">{{Explication}}</div>{{/Explication}}'
-                    + SRC + '</div>'
+                    + GRADE + SRC + '</div>'
                 ),
             }],
         },
@@ -210,7 +213,7 @@ def notetypes() -> list[dict]:
             "templates": [{
                 "name": "Scenario",
                 "qfmt": (
-                    '<div class="cdr-wrap">' + KICKER +
+                    '<div class="cdr-wrap">' + FRONT_KICKER +
                     '<div class="cdr-img">{{Image}}</div>'
                     '<div class="cdr-q">{{Question}}</div></div>'
                 ),
@@ -221,7 +224,7 @@ def notetypes() -> list[dict]:
                     '<hr id=answer>'
                     '<div class="cdr-a">{{Reponse}}</div>'
                     '{{#Explication}}<div class="cdr-box">{{Explication}}</div>{{/Explication}}'
-                    + SRC + '</div>'
+                    + GRADE + SRC + '</div>'
                 ),
             }],
         },
@@ -231,11 +234,11 @@ def notetypes() -> list[dict]:
             "templates": [{
                 "name": "Affirmation",
                 "qfmt": (
-                    '<div class="cdr-wrap">' + KICKER +
+                    '<div class="cdr-wrap">' + FRONT_KICKER +
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
                     '{{#Contexte}}<div class="cdr-ctx">{{Contexte}}</div>{{/Contexte}}'
                     '<div class="cdr-aff">{{Affirmation}}</div>'
-                    '<div class="cdr-hint">Vrai ou faux ? (et pourquoi)</div></div>'
+                    '<div class="cdr-hint">Vrai ou faux ? Justifiez ; si faux, corrigez la proposition.</div></div>'
                 ),
                 "afmt": (
                     '<div class="cdr-wrap">' + KICKER +
@@ -245,7 +248,7 @@ def notetypes() -> list[dict]:
                     '<hr id=answer>'
                     '<div class="cdr-verdict {{Verdict}}">{{Verdict}}</div>'
                     '<div class="cdr-box">{{Pourquoi}}</div>'
-                    + SRC + '</div>'
+                    + GRADE + SRC + '</div>'
                 ),
             }],
         },
@@ -255,7 +258,7 @@ def notetypes() -> list[dict]:
 DECK_DESCRIPTIONS = {
     "00 Méthode d'examen": "Lire une question de l'ETG sans tomber dans les pièges : bandeau « une/plusieurs réponses », pictogramme de point de vue, halo jaune, « je peux / je dois », adverbes, négations, questions vidéo. 40 questions, 35 bonnes réponses exigées, ~20 s par question. À voir en premier et à revoir la veille.",
     "01 Signalisation": "Panneaux, panonceaux, balises, marquages, feux, gestes de l'agent : image → sens exact, conduite à tenir, piège. Les signaux essentiels arrivent en premier ; « Parcourir → tag:importance::rare → Suspendre » si vous manquez de temps. Les cartes « Quelle est la différence ? » ciblent les paires confondues.",
-    "02 Circulation": "Priorités (avec scénarios vérifiés), vitesses, positionnement, dépassement, croisement, arrêt et stationnement, feux. Thème le plus échoué à l'examen : ne pas le négliger.",
+    "02 Circulation": "Priorités (avec scénarios vérifiés), vitesses, positionnement, dépassement, croisement, arrêt et stationnement, feux. Relier les règles aux indices de chaque situation.",
     "03 Le conducteur": "Un quart des questions de l'examen : distances (réaction, freinage, arrêt, sécurité), perception, vigilance et anticipation, alcool, stupéfiants, médicaments, fatigue, téléphone. Beaucoup de cartes « Vrai ou faux ? » : l'épreuve juge des affirmations sur le risque, pas des articles de loi.",
     "04 La route": "Nuit, pluie, brouillard, neige, tunnels, passages à niveau, tramways, chantiers, autoroute, montagne.",
     "05 Les autres usagers": "Piétons, cyclistes, trottinettes, motos (inter-files 2025), poids lourds, bus et tramways, véhicules prioritaires et facilités de passage.",

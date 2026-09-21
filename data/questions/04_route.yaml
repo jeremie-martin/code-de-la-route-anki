@@ -49,19 +49,27 @@
   sous_theme: intemperies
   source: Code de la route, art. R416-6 et R416-7
 - id: r-brouillard-intervalle
-  question: Dans le brouillard, je ne distingue plus la route qu'à une cinquantaine de mètres. À quelle vitesse et à quelle distance rouler ?
-  reponse: '50 km/h au maximum (sur tout le réseau, autoroute comprise) et un intervalle au moins égal à ma distance de visibilité : c''est la règle des trois 50.'
-  explication: 'On se guide sur la ligne de rive et les délinéateurs, pas sur les feux du véhicule qui précède : on se laisse « aspirer » et on se rapproche sans s''en rendre compte.'
+  question: Le brouillard réduit la visibilité à 40 m. La route est normalement limitée à 80. Quel plafond de vitesse
+    appliquer ?
+  reponse: 50 km/h au maximum, et moins si nécessaire pour pouvoir m’arrêter dans la distance visible.
+  explication: Une limitation plus basse, par exemple 30, reste applicable. Augmenter l’intervalle ; 50 km/h n’est
+    pas une vitesse à atteindre.
   theme: R
   sous_theme: intemperies
-  source: Code de la route, art. R413-4 ; Ornikar — La règle des trois égalités
+  source: Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+  tags:
+  - revision::v3
 - id: r-neige-conduite
   question: Je roule sur une route couverte de neige. Comment dois-je agir sur les commandes ?
-  reponse: 'Tout en douceur et en anticipant : accélérations progressives, freinages longs et légers, aucun coup de volant, vitesse réduite de moitié et distances très augmentées.'
-  explication: Le frein moteur remplace le frein à pied dès que possible ; si la voiture glisse, on débraye ou on lève le pied plutôt que de freiner.
+  reponse: 'Je réduis fortement ma vitesse et j’augmente les distances, avec des commandes progressives : accélération,
+    freinage et direction sans gestes brusques.'
+  explication: 'Diviser la vitesse par deux ne garantit pas la sécurité : l’allure dépend de l’adhérence et de la
+    visibilité réelles.'
   theme: R
   sous_theme: intemperies
   source: securite-routiere.gouv.fr — Conduire en hiver ; Codes Rousseau — Neige et brouillard
+  tags:
+  - revision::v3
 - id: r-verglas-descente
   question: 'Chaussée verglacée dans une descente : quel rapport et quel frein ?'
   reponse: 'Un rapport bas, pour être retenu par le frein moteur, et le moins de frein à pied possible : sur le verglas, un freinage bloque les roues et fait partir la voiture tout droit.'
@@ -85,11 +93,15 @@
   source: securite-routiere.gouv.fr — Le vent ; Ornikar — Conduire par grand vent
 - id: r-soleil-bas
   question: 'Soleil rasant de face au coucher : que fais-je ?'
-  reponse: Je ralentis et j'augmente mon intervalle, je descends le pare-soleil et je garde le pare-brise propre ; je me rappelle que le conducteur d'en face est aveuglé de la même façon.
-  explication: Un pare-brise sale ou rayé diffuse la lumière et peut effacer complètement la route. L'œil met 5 à 10 s à s'adapter — même effet à la sortie d'un tunnel.
+  reponse: Je ralentis selon ma visibilité, j’augmente l’intervalle et j’utilise le pare-soleil avec un pare-brise
+    propre.
+  explication: Si le soleil est derrière moi, il peut éblouir l’usager venant en face. Si je l’ai de face, cet usager
+    ne l’a pas nécessairement de face lui aussi.
   theme: R
   sous_theme: intemperies
   source: En Voiture Simone — Conduire face au soleil
+  tags:
+  - revision::v3
 - id: r-tunnel-feux-jour
   question: 'Tunnel éclairé, en plein jour : dois-je allumer mes feux ?'
   reponse: 'Oui : les feux de croisement, dès le panneau d''entrée et même si le tunnel est bien éclairé ; les feux de route y sont proscrits (réverbération sur les parois).'
@@ -98,12 +110,17 @@
   sous_theme: tunnels
   source: Code de la route, art. R416-4 et R416-6
 - id: r-tunnel-distance-arret
-  question: Dans un tunnel, la circulation s'immobilise complètement devant moi. Quelle distance dois-je garder ?
-  reponse: 'Celle qui est affichée (souvent 150 m, ou deux repères lumineux bleus), même à l''arrêt : cet espace permet aux secours de progresser et à chacun d''évacuer.'
-  explication: Je coupe le moteur si l'arrêt dure, j'écoute la radio et je reste dans mon véhicule tant qu'il n'y a ni fumée ni consigne d'évacuation.
+  question: Dans un tunnel, la circulation s'immobilise complètement devant moi. Quelle distance dois-je garder
+    ?
+  reponse: Je garde l’espacement demandé par les panneaux ou les consignes du tunnel pour l’arrêt ; je ne colle
+    pas au véhicule précédent.
+  explication: Les distances en marche et à l’arrêt peuvent différer. « 150 m même à l’arrêt dans tous les tunnels
+    » est une généralisation incorrecte.
   theme: R
   sous_theme: tunnels
   source: CETU — Conduire en tunnel ; Code de la route, art. R412-12
+  tags:
+  - revision::v3
 - id: r-tunnel-panne
   question: Mon véhicule tombe en panne dans un tunnel. Où me placer et que faire des clés ?
   reponse: Feux de détresse, je gagne le garage (emplacement d'arrêt d'urgence) le plus proche puis je coupe le moteur en laissant les clés sur le contact et le véhicule non verrouillé, pour qu'on puisse le déplacer.
@@ -182,12 +199,16 @@
   sous_theme: chantiers
   source: IISR, 8e partie ; Ornikar — Flèches de rabattement
 - id: r-autoroute-insertion-fin-voie
-  question: Ma voie d'accélération se termine et une file continue circule sur la voie de droite de l'autoroute. Que fais-je ?
-  reponse: Je continue d'ajuster ma vitesse à celle du trafic et je m'insère derrière un véhicule dès qu'un espace se présente ; je ne m'arrête pas en bout de voie d'accélération.
-  explication: S'arrêter ou s'insérer trop lentement est la cause type des accidents d'entrée. Je n'ai pas la priorité (R421-3) et je ne dois pas mordre la bande d'arrêt d'urgence.
+  question: La voie d’accélération se termine et aucun espace sûr ne permet l’insertion. Que faire ?
+  reponse: Je cède le passage, en ralentissant et en m’arrêtant si nécessaire avant la fin de voie. Je ne force
+    pas l’insertion et ne prolonge pas ma course sur la bande d’arrêt d’urgence.
+  explication: Anticiper le créneau pour éviter l’arrêt reste souhaitable. Mais « ne jamais s’arrêter » ne peut
+    pas annuler l’obligation de céder.
   theme: R
   sous_theme: autoroute
-  source: Code de la route, art. R421-3 ; securite-routiere.gouv.fr — Conduire sur autoroute
+  source: Code de la route, R421-3 et R412-6
+  tags:
+  - revision::v3
 - id: r-autoroute-sortie
   question: Ma sortie d'autoroute est annoncée. Où et quand dois-je ralentir ?
   reponse: Je gagne la voie de droite dès l'annonce et je garde ma vitesse jusqu'à la voie de décélération ; je ne freine qu'une fois engagé dedans, puis dans la bretelle.

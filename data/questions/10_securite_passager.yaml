@@ -83,12 +83,17 @@
   source: Code de la route, art. R312-19 ; securite-routiere.gouv.fr
 - id: s-chargement-depassement
   question: Une planche dépasse de 2 m à l'arrière de mon break. Puis-je rouler ainsi ?
-  reponse: 'Oui, à condition de la signaler : tout dépassement arrière de plus de 1 m exige un dispositif réfléchissant, remplacé la nuit par un feu rouge visible de loin.'
-  explication: 'Le dépassement arrière est plafonné à 3 m (R312-21, 135 € au-delà) ; à l''avant, rien ne peut dépasser l''aplomb du véhicule (R312-22, 68 €). Le chargement ne doit ni traîner au sol ni masquer feux, plaque et rétroviseurs.'
-  dedup_ok: [s-chargement-chiffres]
+  reponse: 'Oui, si les autres limites sont respectées et le chargement solidement arrimé : dispositif réfléchissant
+    à l’arrière, complété la nuit ou par mauvaise visibilité par un feu rouge.'
+  explication: Le feu complète le réflecteur ; il ne le remplace pas. Le dépassement arrière est limité à 3 m et
+    ne doit pas masquer plaque ni éclairage.
+  dedup_ok:
+  - s-chargement-chiffres
   theme: S
   sous_theme: chargement
   source: Code de la route, art. R312-19 à R312-22
+  tags:
+  - revision::v3
 - id: s-coffre-toit
   question: Quelles conséquences un coffre de toit (ou une galerie) a-t-il sur la conduite ?
   reponse: Tenue de route dégradée (centre de gravité plus haut, prise au vent latéral) et consommation en hausse de 10 à 15 % ; on respecte la charge maximale du toit et la hauteur des parkings.
@@ -98,12 +103,16 @@
   source: ADEME — Éco-conduite ; securite-routiere.gouv.fr
 - id: s-remorque-permis-b
   question: Quelle remorque peut-on tracter avec le seul permis B ?
-  reponse: Une remorque de PTAC inférieur ou égal à 750 kg dans tous les cas ; plus lourde si la somme des PTAC ne dépasse pas 3 500 kg, sinon formation B96 puis permis BE.
-  explication: 'Entre 3 500 et 4 250 kg de somme des PTAC : formation B96 de 7 h ; au-delà : permis BE. Une remorque de plus de 500 kg a sa propre carte grise ; au-delà de 750 kg elle doit être freinée. Si le PTRA dépasse 3,5 t : 90 km/h sur autoroute, 80 km/h partout ailleurs (R413-8).'
+  reponse: Remorque de PTAC au plus 750 kg ; au-delà, permis B si la somme des PTAC ne dépasse pas 3 500 kg. Dans
+    tous les cas, respecter les capacités de traction du véhicule.
+  explication: 'Le permis ne suffit pas : vérifier les masses autorisées, notamment F.2 et F.3. B96 jusqu’à 4 250
+    kg de somme des PTAC ; au-delà, BE sous ses propres limites.'
   theme: S
   sous_theme: chargement
   importance: utile
   source: Code de la route, art. R221-4 et R413-8 ; service-public.fr — Permis B, BE, B96
+  tags:
+  - revision::v3
 - id: s-remorque-conduite
   question: Qu'est-ce qui change au volant quand on tracte une remorque ou une caravane ?
   reponse: Gabarit et distance d'arrêt plus grands, dépassements plus longs, marche arrière inversée et risque de louvoiement ; on charge lourd en bas sur l'essieu et on ralentit.

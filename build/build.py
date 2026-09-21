@@ -30,6 +30,7 @@ from build.commons_fetch import fetch, raster, raster_tinted
 from build import gen_images
 from build.diagrams import SIGN_FILES, draw_intersection, draw_roundabout, draw_road, render_png
 from build.priority import solve, passes_before
+from build import learning
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -95,6 +96,7 @@ def load_all() -> dict[str, list[dict]]:
                 it["_pos"] = i
                 it["_kind"] = kind
             data[kind].extend(items)
+    learning.annotate(data)
     return data
 
 
@@ -243,6 +245,7 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
     for i, c in ids.items():
         if c > 1:
             errors.append(f"id dupliqué: {i} (x{c})")
+    errors.extend(learning.validate_objectives(data))
     return errors
 
 
@@ -390,7 +393,7 @@ def track_of(kind: str, it: dict) -> str:
     return it["theme"]
 
 
-def curriculum(data: dict[str, list[dict]]) -> list[tuple[str, str]]:
+def _library_curriculum(data: dict[str, list[dict]]) -> list[tuple[str, str]]:
     """Return every note as (kind, id) in study order."""
     imp = lambda it: IMPORTANCE_RANK.get(it.get("importance", "essentiel"), 0)
     recon = {it["id"]: it for it in data["reconnaissance"]}
@@ -467,40 +470,11 @@ def curriculum(data: dict[str, list[dict]]) -> list[tuple[str, str]]:
     return order
 
 
-def write_programme(data: dict[str, list[dict]], order: list[tuple[str, str]], per_day: int = 20) -> None:
-    """out/PROGRAMME.md: what a learner meets week by week at `per_day` new cards a day."""
-    by_key = {(kind, it["id"]): it for kind in KINDS for it in data[kind]}
-    n_cards = lambda it: len(set(CLOZE_RE.findall(it.get("texte", "")))) if it["_kind"] == "faits" else 1
-    rows, day, cards_today, mix = [], 1, 0, Counter()
-    phase_names = {0: "essentiel", 1: "utile", 2: "rare"}
-    phase_of = lambda it: phase_names[it["_phase"]] if "_phase" in it else it.get("importance", "essentiel")
-    phase_end: dict[str, int] = {}
-    total_cards = 0
-    for key in order:
-        it = by_key[key]
-        c = n_cards(it)
-        total_cards += c
-        phase_end[phase_of(it)] = total_cards
-        mix[track_of(it["_kind"], it)] += c
-        cards_today += c
-        if cards_today >= per_day:
-            rows.append((day, dict(mix)))
-            day, cards_today, mix = day + 1, 0, Counter()
-    if mix:
-        rows.append((day, dict(mix)))
-    lines = [f"# Programme d'apprentissage ({per_day} nouvelles cartes/jour)\n",
-             f"Cartes : {total_cards}. Phase « essentiel » jusqu'à la carte {phase_end.get('essentiel', 0)} "
-             f"(≈ jour {-(-phase_end.get('essentiel', 0) // per_day)}), « utile » jusqu'à {phase_end.get('utile', 0)} "
-             f"(≈ jour {-(-phase_end.get('utile', 0) // per_day)}), « rare » jusqu'à {phase_end.get('rare', 0)}.\n",
-             "Chaque semaine mélange tous les thèmes au prorata de leur volume ; les scénarios n'apparaissent qu'une fois "
-             "les panneaux dont ils dépendent vus.\n", "\n| Semaine | Mélange (cartes par piste) |\n|---|---|"]
-    week: Counter = Counter()
-    for day, mix in rows:
-        week.update(mix)
-        if day % 7 == 0 or day == rows[-1][0]:
-            lines.append(f"| {-(-day // 7)} | " + ", ".join(f"{k} {v}" for k, v in sorted(week.items(), key=lambda kv: -kv[1])) + " |")
-            week = Counter()
-    (OUT / "PROGRAMME.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+def curriculum(data: dict[str, list[dict]]) -> list[tuple[str, str]]:
+    """Foundation first; preserve interleaving and prerequisite order within stages."""
+    order = _library_curriculum(data)
+    by_key = {(kind, n['id']): n for kind, notes in data.items() for n in notes}
+    return sorted(order, key=lambda key: by_key[key]['_stage'] != 'socle')
 
 
 # ------------------------------------------------------------ collection ---
@@ -515,6 +489,8 @@ def img_tag(fname: str) -> str:
 
 def tags_for(it: dict, kind: str) -> list[str]:
     t = [f"theme::{it['theme']}", f"sous::{it['sous_theme']}", f"importance::{it.get('importance', 'essentiel')}", f"type::{kind}"]
+    t.append(f"parcours::{it['_stage']}")
+    t.extend(f"objectif::{o}" for o in it['_objectives'])
     if kind == "reconnaissance":
         t.append(f"type::{it['type']}")
     for extra in it.get("tags", []) or []:
@@ -533,6 +509,9 @@ def build_collection(data, names, out_apkg: Path):
     mm = col.models
     old_mids = {}
     model_objs = {}
+    # Anki compares field/template identities as well as notetype IDs. Preserve
+    # those from the released v2 package; freshly generated IDs cause conflicts.
+    schema_ids = json.loads((DATA / '_meta/anki_schema.json').read_text(encoding='utf-8'))
     for nt in M.notetypes():
         m = mm.new(nt["name"])
         if nt.get("cloze"):
@@ -540,9 +519,12 @@ def build_collection(data, names, out_apkg: Path):
             m["type"] = MODEL_CLOZE
         m["flds"], m["tmpls"] = [], []
         for f in nt["fields"]:
-            mm.add_field(m, mm.new_field(f))
+            field = mm.new_field(f)
+            field['id'] = schema_ids[nt['name']]['flds'][f]
+            mm.add_field(m, field)
         for t in nt["templates"]:
             tm = mm.new_template(t["name"])
+            tm['id'] = schema_ids[nt['name']]['tmpls'][t['name']]
             tm["qfmt"], tm["afmt"] = t["qfmt"], t["afmt"]
             mm.add_template(m, tm)
         m["css"] = M.CSS
@@ -579,12 +561,14 @@ def build_collection(data, names, out_apkg: Path):
 
     counts = Counter()
     nids: dict[tuple[str, str], int] = {}
+    used_media: set[str] = set()
 
     def add(model_name, fields: dict, kind: str, it: dict):
         m = model_objs[model_name]
         n = col.new_note(m)
         for k, v in fields.items():
             n[k] = "" if v is None else str(v)
+            used_media.update(re.findall(r'<img src="([^"]+)"', n[k]))
         n.guid = guid_for(kind, it["id"])
         n.tags = tags_for(it, kind)
         did = old_dids[M.deck_for(it["theme"], it["sous_theme"])]
@@ -644,17 +628,19 @@ def build_collection(data, names, out_apkg: Path):
     # study order = curriculum positions (new cards are gathered by lowest position, see preset above)
     order = curriculum(data)
     assert len(order) == len(nids), f"curriculum: {len(order)} notes ordonnées pour {len(nids)} notes"
-    pos_of_card: dict[int, int] = {}
-    for pos, key in enumerate(order):
-        for ord_, cid in enumerate(col.card_ids_of_note(nids[key])):
-            pos_of_card[cid] = pos + ord_ * SIBLING_GAP
+    card_ids = {}
+    for key, nid in nids.items():
+        for cid in col.card_ids_of_note(nid):
+            card_ids[(*key, col.get_card(cid).ord)] = cid
+    plan = learning.card_plan(data, order, SIBLING_GAP)
+    assert len(plan) == col.card_count() and set(plan) == set(card_ids)
     db = col.db
-    for cid, pos in pos_of_card.items():
-        db.execute("update cards set due = ? where id = ? and type = 0", pos, cid)
-    write_programme(data, order)
+    for pos, key in enumerate(plan, start=1):
+        db.execute("update cards set due = ? where id = ? and type = 0", pos, card_ids[key])
+    learning.write_reports(data, order, OUT)
 
     # media
-    for fname in set(names.values()):
+    for fname in used_media:
         col.media.add_file(str(MEDIA / fname))
     n_notes, n_cards = col.note_count(), col.card_count()
     col.close()
@@ -701,6 +687,7 @@ def inline_md(s) -> str:
     out, in_list = [], False
     for ln in lines:
         e = html.escape(ln)
+        e = re.sub(r'https?://[^\s<>]+', lambda m: '<a href="' + m[0] + '">' + m[0] + '</a>', e)
         e = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", e)
         e = re.sub(r"(?<!\*)\*(?!\*)(.+?)\*(?!\*)", r"<i>\1</i>", e)
         e = re.sub(r"`(.+?)`", r"<code>\1</code>", e)
@@ -744,8 +731,13 @@ def main(argv=None):
     if args.media:
         return
     out_apkg = OUT / "Code-de-la-route-2026.apkg"
+    core = {kind: [n for n in notes if n['_stage'] == 'socle'] for kind, notes in data.items()}
+    core_apkg = OUT / "Code-de-la-route-2026-Socle.apkg"
+    core_notes, core_cards, _, _ = build_collection(core, names, core_apkg)
     n_notes, n_cards, counts, per_deck = build_collection(data, names, out_apkg)
-    stats = ["# Statistiques du build\n", f"- Notes : {n_notes}\n- Cartes : {n_cards}\n", "\n## Par type de note\n"]
+    stats = ["# Statistiques du build\n", f"- Notes : {n_notes}\n- Cartes : {n_cards}\n",
+             f"- Socle : {core_notes} notes / {core_cards} cartes (paquet séparé, mêmes identifiants)\n",
+             "\n## Par type de note\n"]
     stats += [f"- {k} : {v}\n" for k, v in sorted(counts.items())]
     stats += ["\n## Cartes par sous-deck\n"] + [f"- {k} : {v}\n" for k, v in sorted(per_deck.items())]
     by_theme = Counter()

@@ -50,21 +50,29 @@
   sous_theme: priorites
   source: Code de la route, art. R415-7
 - id: aff-l-vehicule-a-stop
-  contexte: Vue de dessus. Le véhicule A aborde l'intersection par une route portant un STOP ; le véhicule B circule sur la route transversale.
+  contexte: Vue de dessus. Le véhicule A aborde l'intersection par une route portant un STOP ; le véhicule B circule
+    sur la route transversale.
   affirmation: Le véhicule A doit céder le passage de chaque côté.
   verdict: vrai
-  pourquoi: 'Question officielle 2023 (Q2) : le STOP oblige à s''arrêter puis à céder le passage à tous les usagers de la route abordée, à gauche comme à droite. Elle répond aussi OUI à « A est prioritaire sur B ».'
+  pourquoi: 'Le STOP impose un arrêt complet puis de céder aux usagers de la route abordée. Une priorité éventuelle
+    sur un troisième véhicule dépend de sa position et de sa signalisation : elle ne se déduit pas de ce texte.'
   theme: L
   sous_theme: priorites
   source: Sécurité routière — Exemples de nouvelles questions (Q2) ; Code de la route, art. R415-6
+  tags:
+  - revision::v3
 - id: aff-l-tourner-gauche-centre
-  contexte: Je tourne à gauche à un carrefour sans feu ; un flot continu arrive en face.
+  contexte: Je tourne à gauche, sans feu. Une place d’attente au centre me permet de rester sans bloquer les voies
+    transversales ; des véhicules arrivent en face.
   affirmation: Je peux avancer et attendre au milieu du carrefour, clignotant allumé, roues droites.
   verdict: vrai
-  pourquoi: 'Se placer près de l''axe et attendre au centre est la manœuvre attendue : elle libère la voie derrière moi. Roues droites pour ne pas être projeté dans le sens inverse en cas de choc arrière.'
+  pourquoi: Je cède au trafic opposé en gardant les roues droites. Je ne m’engage pas si je risque de bloquer le
+    carrefour ; l’attente au centre n’est pas autorisée dans toute configuration.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-4 ; REMC
+  tags:
+  - revision::v3
 - id: aff-l-giratoire-sortie-cede
   contexte: Je circule déjà dans l'anneau d'un giratoire et je vais poursuivre au-delà de la prochaine sortie.
   affirmation: Le véhicule qui attend à cette entrée doit me laisser passer.
@@ -94,10 +102,13 @@
   contexte: Mon feu passe au vert à un carrefour de centre-ville.
   affirmation: Le vert me donne la priorité sur tous les autres usagers du carrefour.
   verdict: faux
-  pourquoi: 'Le vert autorise le passage sans primer sur les piétons déjà engagés, sur un véhicule prioritaire en intervention ni sur un tramway ; et je ne m''engage pas si le carrefour risque de rester bloqué (R412-33).'
+  pourquoi: Le vert autorise à passer, sans dispenser de céder aux piétons engagés et aux véhicules prioritaires
+    annoncés. En tournant à gauche, je cède au trafic opposé autorisé. Je ne bloque pas l’intersection.
   theme: L
   sous_theme: feux
   source: Code de la route, art. R412-33 et R415-11
+  tags:
+  - revision::v3
 - id: aff-l-jaune-accelerer
   contexte: Le feu passe au jaune fixe alors que je suis encore à bonne distance de la ligne d'arrêt.
   affirmation: J'accélère pour dégager le carrefour avant le rouge.
@@ -107,13 +118,17 @@
   sous_theme: feux
   source: Code de la route, art. R412-31
 - id: aff-l-jaune-trop-engage
-  contexte: Le feu passe au jaune fixe alors que je suis à quelques mètres de la ligne d'arrêt.
+  contexte: Le feu passe au jaune fixe ; compte tenu de ma distance et de mon allure, je ne peux plus m’arrêter
+    dans des conditions de sécurité suffisantes.
   affirmation: Je continue et je dégage le carrefour, sans accélérer.
   verdict: vrai
-  pourquoi: 'R412-31 prévoit l''exception : on ne s''arrête pas si l''arrêt ne peut plus se faire « dans des conditions de sécurité suffisantes » — freinage brutal, véhicule collé derrière.'
+  pourquoi: 'R412-31 prévoit l''exception : on ne s''arrête pas si l''arrêt ne peut plus se faire « dans des conditions
+    de sécurité suffisantes » — freinage brutal, véhicule collé derrière.'
   theme: L
   sous_theme: feux
   source: Code de la route, art. R412-31
+  tags:
+  - revision::v3
 - id: aff-l-continue-cyclomoteur
   contexte: Route à ligne continue, bonne visibilité ; un cyclomoteur roule à 40 km/h devant moi.
   affirmation: Je peux chevaucher la ligne continue pour le dépasser, comme pour un cycliste.
@@ -131,13 +146,17 @@
   sous_theme: depassement
   source: Code de la route, art. R414-15 et R412-24
 - id: aff-l-surdepassement
-  contexte: Le véhicule devant moi est lui-même en train d'en dépasser un autre.
-  affirmation: Je peux le dépasser à mon tour puisque la voie de gauche reste libre.
+  contexte: Route à double sens, une voie par sens. La voiture devant moi dépasse déjà un camion en occupant la
+    voie opposée.
+  affirmation: Je peux la dépasser à mon tour en me plaçant encore à sa gauche.
   verdict: faux
-  pourquoi: 'R414-4 exige de pouvoir se rabattre sans gêner et de ne pas gêner celui qu''on dépasse : un véhicule en plein dépassement peut s''écarter ou se rabattre à tout instant. Le surdépassement est un accident classique.'
+  pourquoi: Il n’y a pas de troisième voie disponible pour cette manœuvre. Je reste derrière. Sur une chaussée à
+    plusieurs voies dans le même sens, dépasser un véhicule lui-même en dépassement n’est pas interdit par principe.
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-4
+  tags:
+  - revision::v3
 - id: aff-l-depassement-intersection-prioritaire
   contexte: Je circule sur une route prioritaire (losange jaune) et j'approche d'un carrefour, bonne visibilité.
   affirmation: Je peux y dépasser la voiture qui me précède.
@@ -323,21 +342,29 @@
   sous_theme: vitesse
   source: Code de la route, art. R413-2 II et R413-5
 - id: aff-l-90-departement
-  contexte: Route à double sens hors agglomération, sans terre-plein ni panneau de limitation.
+  contexte: Route hors agglomération à double sens, une voie par sens, sans séparateur central ni panneau relevant
+    la limitation.
   affirmation: Je peux rouler à 90 km/h puisque aucun panneau n'abaisse la vitesse.
   verdict: faux
-  pourquoi: 'Depuis le 1er juillet 2018, la limite par défaut est de 80 km/h (R413-2). Les départements qui l''ont relevée à 90 doivent le signaler par des panneaux : sans panneau, c''est 80.'
+  pourquoi: 'Depuis le 1er juillet 2018, la limite par défaut est de 80 km/h (R413-2). Les départements qui l''ont
+    relevée à 90 doivent le signaler par des panneaux : sans panneau, c''est 80.'
   theme: L
   sous_theme: vitesse
   source: Code de la route, art. R413-2
+  tags:
+  - revision::v3
 - id: aff-l-creneau-90
-  contexte: Route hors agglomération limitée à 80 ; une section à deux voies dans mon sens (créneau de dépassement) commence.
+  contexte: Temps sec, permis hors période probatoire. Une section hors agglomération à deux voies dans mon sens
+    est signalée à 90 ; le sens opposé n’a qu’une voie.
   affirmation: Je peux y rouler à 90 km/h sur ces voies.
   verdict: vrai
-  pourquoi: 'R413-2 relève la vitesse à 90 km/h sur les sections comportant au moins deux voies affectées au même sens, sur ces seules voies. Le sens à une voie reste à 80, et le permis probatoire aussi.'
+  pourquoi: R413-2 relève la vitesse à 90 km/h sur les sections comportant au moins deux voies affectées au même
+    sens, sur ces seules voies. Le sens à une voie reste à 80, et le permis probatoire aussi.
   theme: L
   sous_theme: vitesse
   source: Code de la route, art. R413-2 I 3° et R413-5
+  tags:
+  - revision::v3
 - id: aff-l-lieu-dit
   contexte: Sur une route de campagne, un panneau à lettres italiques blanches sur fond noir annonce « Les Granges ».
   affirmation: À partir de ce panneau, je suis en agglomération et limité à 50 km/h.

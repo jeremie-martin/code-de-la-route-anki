@@ -126,12 +126,32 @@
   kind: intersection
   spec:
     approaches:
-      S: {vehicle: {colour: bleu, me: true}, goes: straight, sign: feu_vert}
-      N: {vehicle: {colour: rouge, kind: pompiers}, goes: left, sign: feu_vert}
-  check: {pair: [S, N, apres]}
-  question: "Feu vert pour moi ; en face, un véhicule de pompiers (sirène, gyrophare) tourne à sa gauche, coupant ma route. Qui passe ?"
-  reponse: "Les pompiers : un véhicule prioritaire en intervention passe avant tout le monde, même s'il tourne à gauche et même si j'ai le feu vert."
-  explication: "Article R415-12 : céder « en toutes circonstances ». Je m'arrête et je lui laisse le carrefour, sans manœuvre dangereuse."
+      S:
+        vehicle:
+          colour: bleu
+          me: true
+        goes: straight
+        sign: feu_vert
+      N:
+        vehicle:
+          colour: rouge
+          kind: pompiers
+          siren: true
+        goes: left
+        sign: feu_vert
+  check:
+    pair:
+    - S
+    - N
+    - apres
+  question: Feu vert pour moi ; en face, un véhicule de pompiers (sirène, gyrophare) tourne à sa gauche, coupant
+    ma route. Qui passe ?
+  reponse: 'Les pompiers : un véhicule prioritaire en intervention passe avant tout le monde, même s''il tourne
+    à gauche et même si j''ai le feu vert.'
+  explication: 'Article R415-12 : céder « en toutes circonstances ». Je m''arrête et je lui laisse le carrefour,
+    sans manœuvre dangereuse.'
   theme: L
   sous_theme: priorites
-  source: "Code de la route, art. R415-12"
+  source: Code de la route, art. R415-12
+  tags:
+  - revision::v3

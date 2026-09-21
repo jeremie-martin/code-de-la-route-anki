@@ -1,5 +1,5 @@
 # Thème M — Voyants du tableau de bord (symboles ISO 7000 / ISO 2575, domaine public sur Commons)
-# Code couleur : ROUGE = danger, arrêt dès que possible ; ORANGE = anomalie ou fonction à surveiller ; VERT/BLEU = fonction en service.
+# La couleur oriente ; lire le symbole, le message et la notice pour décider.
 # Teintes : rouge #e53935, orange #fb8c00, vert #43a047, bleu #1e88e5.
 
 # ---------- ROUGE ----------
@@ -18,15 +18,19 @@
 - id: voyant-batterie
   type: voyant
   code: ISO 7000-0247
-  image: {commons: "ISO 7000 - Ref-No 0247.svg", tint: "#e53935"}
+  image:
+    commons: ISO 7000 - Ref-No 0247.svg
+    tint: '#e53935'
   nom: Charge de la batterie (rouge)
-  signification: La batterie ne se recharge plus (alternateur ou courroie défaillants) — le véhicule roule sur ses réserves et va s'arrêter.
-  conduite: Je coupe les consommateurs inutiles (clim, radio) et je rejoins un garage ou un lieu sûr sans couper le moteur (il pourrait ne pas redémarrer).
-  piege: Normal qu'il s'allume au contact moteur arrêté ; anormal s'il reste allumé moteur tournant.
+  signification: 'Défaut du circuit de charge : la batterie peut ne plus se recharger correctement.'
+  conduite: Je gagne un endroit sûr et consulte les messages et la notice ; avec STOP, arrêt impératif en sécurité.
+  piege: 'Ne pas promettre de pouvoir rejoindre un garage : la panne et l’autonomie restante sont inconnues.'
   theme: M
   sous_theme: voyants
   importance: essentiel
-  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+  source: Renault, témoins lumineux (exemple constructeur ; consulter la notice du véhicule) — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
+  tags:
+  - revision::v3
 - id: voyant-temperature
   type: voyant
   code: ISO 7000-0246
@@ -76,15 +80,21 @@
 - id: voyant-airbag
   type: voyant
   code: ISO 7000-2108
-  image: {commons: "ISO 7000 - Ref-No 2108.svg", tint: "#e53935"}
+  image:
+    commons: ISO 7000 - Ref-No 2108.svg
+    tint: '#e53935'
   nom: Défaut du système airbag
-  signification: Les airbags (et prétensionneurs de ceinture) risquent de ne pas se déclencher en cas de choc — ou l'airbag passager a été désactivé.
-  conduite: Je peux rouler mais je fais contrôler rapidement ; c'est un défaut de sécurité passive, pas une urgence mécanique.
-  piege: Ce voyant s'allume aussi volontairement quand on désactive l'airbag passager pour installer un siège enfant dos à la route.
+  signification: 'Voyant restant allumé : défaut possible des airbags ou prétensionneurs ; leur protection peut
+    être compromise.'
+  conduite: Je fais contrôler rapidement selon la notice.
+  piege: Ne pas confondre ce défaut avec le témoin spécifique « airbag passager OFF », à vérifier pour un siège
+    dos à la route.
   theme: M
   sous_theme: voyants
   importance: essentiel
-  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+  source: Renault, témoins lumineux (exemple constructeur ; consulter la notice du véhicule) — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
+  tags:
+  - revision::v3
 - id: voyant-direction
   type: voyant
   code: ISO 7000-2305
@@ -123,15 +133,20 @@
 - id: voyant-abs
   type: voyant
   code: ISO 7000-1407
-  image: {commons: "ISO 7000 - Ref-No 1407.svg", tint: "#fb8c00"}
+  image:
+    commons: ISO 7000 - Ref-No 1407.svg
+    tint: '#fb8c00'
   nom: Défaut ABS (orange)
-  signification: L'antiblocage des roues est hors service ; le freinage ordinaire fonctionne toujours, mais les roues peuvent se bloquer lors d'un freinage d'urgence.
-  conduite: Je n'ai pas à m'arrêter immédiatement ; j'allonge mes distances, je freine progressivement et je fais réparer sans tarder.
-  piege: "Question officielle 2023 : voyant ABS allumé en permanence → « les roues risquent de se bloquer » (OUI) et « je dois m'arrêter immédiatement » (NON)."
+  signification: 'Voyant restant allumé : défaut de l’antiblocage. Les roues peuvent se bloquer au freinage.'
+  conduite: Si le freinage ordinaire est normal et sans autre alerte, j’adapte l’allure et fais contrôler. Sinon,
+    arrêt en sécurité.
+  piege: L’absence d’ABS seule n’impose pas un arrêt sur-le-champ ; un défaut du circuit de freinage est différent.
   theme: M
   sous_theme: voyants
   importance: essentiel
-  source: "Sécurité routière — Exemples de nouvelles questions (Q5) ; ISO 2575"
+  source: Sécurité routière — Exemples de nouvelles questions (Q5) ; ISO 2575
+  tags:
+  - revision::v3
 - id: voyant-esp
   type: voyant
   code: ESP / ESC

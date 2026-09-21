@@ -5,41 +5,56 @@
   contexte: Je roule sur route, un voyant orange s'allume au tableau de bord.
   affirmation: Je dois m'arrêter sur-le-champ, au besoin sur la bande d'arrêt d'urgence.
   verdict: faux
-  pourquoi: 'Orange = anomalie ou rappel : je poursuis en douceur et je fais vérifier rapidement. C''est le rouge (pression d''huile, température, freinage, batterie) qui impose de s''arrêter dès que possible en sécurité.'
+  pourquoi: 'La couleur seule ne décide pas : lire le symbole et le message. Un voyant orange peut exiger un arrêt
+    en sécurité, par exemple pour une perte de pression. La notice précise la conduite à tenir.'
   theme: M
   sous_theme: tableau_de_bord
   source: Ornikar — Voyants lumineux ; En Voiture Simone — Tableau de bord
+  tags:
+  - revision::v3
 - id: aff-m-autotest-voyants
-  contexte: Je mets le contact, plusieurs voyants s'allument puis s'éteignent.
+  contexte: La notice prévoit que le témoin de pression d’huile s’allume à la mise du contact, moteur arrêté.
   affirmation: Un voyant qui ne s'allume pas du tout à ce moment-là est bon signe.
   verdict: faux
-  pourquoi: 'À la mise du contact, tous les voyants doivent s''allumer brièvement : c''est l''autotest. Un voyant éteint signale une ampoule ou un témoin hors service, donc une alerte qui ne se déclenchera pas.'
+  pourquoi: Ce témoin devrait s’allumer pour vérifier l’alerte. Son absence peut signaler une panne ; le fonctionnement
+    de l’autotest dépend du véhicule, tous les témoins ne s’allument pas systématiquement.
   theme: M
   sous_theme: tableau_de_bord
   source: lepermislibre — Voyants de la voiture
+  tags:
+  - revision::v3
 - id: aff-m-voyant-abs-blocage
-  contexte: Le voyant ABS (orange) reste allumé en permanence (question officielle 2023, Q5).
+  contexte: Le voyant ABS orange reste allumé, sans autre alerte ni anomalie du freinage.
   affirmation: Lors d'un freinage d'urgence, les roues risquent de se bloquer.
   verdict: vrai
-  pourquoi: 'L''antiblocage est hors service : le freinage ordinaire fonctionne, mais rien n''empêche plus les roues de se bloquer, donc de perdre la direction. J''allonge mes distances et je freine progressivement.'
+  pourquoi: 'L’antiblocage peut être indisponible : lors d’un freinage d’urgence les roues risquent de se bloquer.
+    J’augmente les marges et fais contrôler selon la notice.'
   theme: M
   sous_theme: tableau_de_bord
   source: Sécurité routière — Exemples de nouvelles questions (Q5)
+  tags:
+  - revision::v3
 - id: aff-m-voyant-abs-arret
-  contexte: Le voyant ABS (orange) reste allumé en permanence (question officielle 2023, Q5).
+  contexte: Seul le voyant ABS orange reste allumé ; aucun voyant rouge ni anomalie du freinage ordinaire.
   affirmation: Je dois m'arrêter immédiatement.
   verdict: faux
-  pourquoi: 'Non : le circuit de freinage classique fonctionne toujours. Je peux rouler jusqu''au garage en adaptant ma vitesse et mes distances, et je fais réparer sans tarder. Seul un voyant rouge impose l''arrêt.'
+  pourquoi: La perte de l’antiblocage seule n’impose pas de s’immobiliser sur-le-champ. Je réduis l’allure, augmente
+    les distances et fais contrôler rapidement selon la notice. Si le freinage devient anormal, je m’arrête en sécurité.
   theme: M
   sous_theme: tableau_de_bord
   source: Sécurité routière — Exemples de nouvelles questions (Q5)
+  tags:
+  - revision::v3
 - id: aff-m-abs-distance
-  affirmation: L'ABS réduit la distance de freinage.
+  affirmation: L’ABS garantit une distance de freinage plus courte sur tous les revêtements.
   verdict: faux
-  pourquoi: 'Il empêche le blocage des roues et conserve la directionnalité (on peut braquer pour éviter l''obstacle) ; la distance reste la même, et peut même s''allonger sur gravier ou sur neige.'
+  pourquoi: Son rôle est d’éviter le blocage pour conserver la direction. Il ne garantit pas une distance plus courte,
+    notamment sur gravier ou neige ; l’adhérence reste déterminante.
   theme: M
   sous_theme: freinage
   source: securite-routiere.gouv.fr — Dépliant vitesse ; Ornikar — ABS
+  tags:
+  - revision::v3
 - id: aff-m-abs-pedale
   contexte: 'Freinage d''urgence : la pédale vibre fortement et repousse mon pied.'
   affirmation: Je relâche un peu la pression pour laisser l'ABS travailler.
@@ -57,12 +72,16 @@
   sous_theme: freinage
   source: Stych — Aides à la conduite ; Ornikar — ABS
 - id: aff-m-frein-main-4-roues
-  affirmation: Le frein de stationnement agit sur les quatre roues.
+  affirmation: Le frein de stationnement remplace le frein principal pour un freinage d’urgence ordinaire.
   verdict: faux
-  pourquoi: 'Il n''agit que sur les roues arrière. D''où la prudence en cas de panne de freins : on le serre progressivement, après avoir rétrogradé — tiré d''un coup sec, il met le véhicule en travers.'
+  pourquoi: Le frein principal est conçu pour arrêter le véhicule. Le frein de stationnement agit généralement sur
+    l’arrière ; les systèmes électriques ont des modes d’urgence propres à la notice. Ne pas tirer brutalement un
+    levier mécanique.
   theme: M
   sous_theme: freinage
   source: Ornikar — Frein à main ; Stych — Pannes
+  tags:
+  - revision::v3
 - id: aff-m-pression-chaud
   affirmation: La pression des pneus se contrôle après quelques kilomètres, quand ils sont chauds.
   verdict: faux
@@ -74,10 +93,13 @@
   contexte: Coffre plein de valises pour un départ en vacances (question officielle 2023, Q1).
   affirmation: Je diminue la pression des pneus pour gagner en confort.
   verdict: faux
-  pourquoi: 'C''est l''inverse : on augmente la pression de 0,2 à 0,3 bar. Un pneu sous-gonflé sous une charge lourde s''échauffe, s''use sur les épaules et peut éclater ; on règle aussi la hauteur des feux.'
+  pourquoi: Je règle les pneus à la valeur « véhicule chargé » prévue par le constructeur, à froid. Une baisse arbitraire
+    provoque sous-gonflage et échauffement. Je vérifie aussi le réglage des feux.
   theme: M
   sous_theme: pneus
-  source: Sécurité routière — Exemples de nouvelles questions (Q1) ; Michelin
+  source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
+  tags:
+  - revision::v3
 - id: aff-m-surgonflage
   affirmation: Un pneu surgonflé s'use au centre de la bande de roulement et adhère moins.
   verdict: vrai
@@ -114,10 +136,14 @@
   contexte: Le voyant rouge de température s'allume, de la vapeur sort du capot.
   affirmation: J'ouvre le bocal de liquide de refroidissement pour faire tomber la pression.
   verdict: faux
-  pourquoi: 'Le circuit est sous pression à plus de 100 °C : l''ouvrir provoque un jet bouillant et des brûlures graves. On coupe le moteur, on attend une trentaine de minutes, puis on contrôle à froid.'
+  pourquoi: 'Le circuit chaud est sous pression : risque de projection brûlante. Je m’arrête en sécurité et coupe
+    le moteur. Je n’ouvre pas avant refroidissement complet et respecte la notice ; aucun délai fixe ne garantit
+    l’absence de danger.'
   theme: M
   sous_theme: entretien
   source: Ornikar — Liquide de refroidissement
+  tags:
+  - revision::v3
 - id: aff-m-boite-auto-p-arret
   affirmation: Sur une boîte automatique, on n'engage P ou R qu'une fois le véhicule complètement arrêté.
   verdict: vrai
@@ -159,12 +185,15 @@
   source: Stych — Aides à la conduite ; Ornikar — Limiteur et régulateur
 - id: aff-m-limiteur-descente
   contexte: Limiteur réglé sur 90 km/h, longue descente.
-  affirmation: Le limiteur m'empêche de dépasser la vitesse affichée.
+  affirmation: Le limiteur garantit le respect de 90 km/h dans toute descente.
   verdict: faux
-  pourquoi: 'Le limiteur n''agit que sur l''accélérateur, pas sur les freins : en descente, le véhicule prend de la vitesse malgré lui. Une accélération franche (kick-down) le force aussi à s''effacer.'
+  pourquoi: 'De nombreux limiteurs agissent seulement sur l’accélération : une descente peut faire dépasser la consigne.
+    D’autres systèmes freinent. Je surveille la vitesse et utilise les commandes adaptées, selon la notice.'
   theme: M
   sous_theme: adas
   source: Ornikar — Limiteur et régulateur ; Stych — Aides à la conduite
+  tags:
+  - revision::v3
 - id: aff-m-angle-mort-moto
   affirmation: Le détecteur d'angle mort peut ne pas signaler une moto qui remonte vite la file voisine.
   verdict: vrai

@@ -1,118 +1,115 @@
-# Code de la route 2026 — deck Anki pour *réussir* l'ETG
+# Code de la route 2026 — apprendre les règles, puis les appliquer
 
-Un deck Anki conçu carte par carte pour passer l'épreuve théorique générale (permis B) telle qu'elle
-existe en 2026 : 40 questions sur photos/vidéos, 35 bonnes réponses exigées, banque de questions de
-septembre 2023, 10 thèmes officiels.
+Un deck Anki en français pour préparer l’ETG du permis B. L’objectif est de **reconnaître un indice,
+retrouver la règle et prendre une décision justifiée**, pas de réciter un catalogue de panneaux.
 
-Le fichier à importer : **`out/Code-de-la-route-2026.apkg`** (généré par `build/`).
+**Commencer par [le paquet Socle](out/Code-de-la-route-2026-Socle.apkg)** : **552 cartes / 483 notes**,
+organisées autour de **41 objectifs**, couvrant les dix thèmes de l’examen et sa méthode de lecture.
+Le [paquet complet](out/Code-de-la-route-2026.apkg) contient **1 378 cartes / 1 179 notes**, dont
+exactement ce même socle, suivi de l’approfondissement. Inutile d’importer les deux à la fois.
 
-Contenu (version 2, build du 21 septembre 2026, détail dans `out/STATS.md`) : **1 160 notes /
-1 359 cartes** — 425 reconnaissances (panneaux, panonceaux, balises, marquages, feux, gestes
-de l'agent, voyants), 50 paires de confusion, 127 faits à trous (326 cartes),
-250 questions de décision, 258 affirmations « vrai ou faux ? », 50 scénarios dessinés.
-Chaque note a été rédigée à partir de dossiers sourcés, puis relue par un relecteur indépendant
-contre le Code de la route consolidé au 10 septembre 2026 (rapports dans `docs/research/`).
+Le socle est une sélection pédagogique, **pas la promesse que seules ces cartes tomberont à l’examen**.
+Le détail de chaque choix est dans [la couverture](out/COUVERTURE.md), la progression dans
+[le programme](out/PROGRAMME.md), et le bilan critique dans [l’audit v3](docs/06-audit-v3.md).
 
-## Ce qui rend ce deck différent
+## Ce qui change dans la v3
 
-- **Conçu pour l'épreuve, pas pour réciter la loi.** Chaque carte répond à une question que l'examen
-  pose réellement : reconnaître (panneau, marquage, feu, voyant), rappeler (le chiffre, la règle),
-  décider (« dans cette situation, je… »), juger (« cette affirmation est-elle vraie ? » — la forme la
-  plus fréquente de la banque 2023). Voir `docs/01-analyse-examen.md`.
-- **Une carte = une connaissance décidable.** Pas de fiches à réciter : le build refuse toute réponse
-  de plus de 40 mots ou de plus de 4 éléments, toute affirmation sans justification, tout verso de
-  panneau de plus de 90 mots. Voir `docs/03-conception-des-cartes.md` et `docs/05-audit-v2.md`.
-- **Un programme d'apprentissage, pas un tas de cartes.** L'ordre des nouvelles cartes est calculé :
-  méthode d'examen d'abord, puis les connaissances essentielles de tous les thèmes entrelacées jour
-  après jour (chaque journée est une tranche de l'épreuve entière), les scénarios de priorité une fois
-  les panneaux connus, les signaux rares en dernier. Voir `out/PROGRAMME.md`.
-- **Des images correctes et nettes.** Panneaux vectoriels officiels (Wikimedia Commons, conformes à
-  l'IISR), voyants ISO 7000, schémas d'intersections et de marquages générés avec une charte unique.
-- **Des scénarios vérifiés par un solveur.** Chaque schéma de priorité a une réponse écrite à la main
-  *et* recalculée par `build/priority.py` ; le build échoue en cas de désaccord.
-- **À jour (septembre 2026)** : permis à 17 ans, mémo véhicule assuré, pneus hiver 3PMSF, EDPM,
-  inter-files 2025, ZFE/Crit'Air, délits 2025-2026 (alcool 3 ans / 9 000 €, grand excès de vitesse),
-  arrêté du 16 avril 2026 sur l'organisation de l'épreuve. Chaque note cite sa source.
-- **Mise à jour sans perte** : identifiants de notes, de types de notes et de decks stables, on peut
-  réimporter une nouvelle version sans perdre son historique de révision.
+- **Un premier parcours réellement finissable.** Les décisions de tous les thèmes arrivent avant les
+  variantes de signalisation, détails de procédure, dates et statistiques secondaires. À 20 nouvelles
+  cartes par jour, compter au moins 28 jours d’introduction du socle ; apprendre durablement demande
+  aussi les révisions. L’enfouissement des cartes sœurs peut allonger ce délai.
+- **Des cartes qui demandent la bonne chose.** Le sens d’un panneau suffit, son nom officiel n’est pas
+  à réciter. Un vrai/faux demande une justification et la correction de l’énoncé faux. Les détails
+  explicatifs du verso ne sont pas des éléments supplémentaires à restituer.
+- **Des conditions qui changent la réponse.** Dix-neuf applications ciblées : autoroute à 110 sous la
+  pluie ou en probatoire, brouillard en zone 30, distances calculées, angle masqué, remorque, aides à
+  la conduite, contrôle technique. Plusieurs scénarios demandent maintenant de lire le marquage
+  dessiné au lieu de le révéler dans le texte.
+- **Des corrections de fond.** Insertion sans créneau, portée d’un feu vert, placement en giratoire,
+  contrôle de l’angle mort du bon côté, pression constructeur, limites des voyants, premiers secours
+  selon le référentiel PSC de juillet 2026. [Changements par note](docs/research/revision-v3.md).
+- **Une réimportation testée.** Les identifiants des champs et gabarits sont désormais stables eux
+  aussi : la v2 ne stabilisait que les decks, types de notes et GUID. Les tests importent réellement
+  les paquets et vérifient les corrections, les médias et la conservation d’un historique de révision.
 
-## Organisation
+## Apprendre avec le deck
 
-```
-Code de la route 2026
-├── 00 Méthode d'examen         (lire une question sans tomber dans les pièges)
-├── 01 Signalisation            (panneaux, panonceaux, balises, marquages, feux, agents)
-├── 02 Circulation              (priorités, vitesses, positionnement, dépassement, arrêt/stationnement)
-├── 03 Le conducteur
-├── 04 La route
-├── 05 Les autres usagers
-├── 06 Réglementation et notions diverses
-├── 07 Premiers secours
-├── 08 Prendre et quitter son véhicule
-├── 09 Mécanique et équipements
-├── 10 Sécurité du passager et du véhicule
-└── 11 Environnement
-```
+1. **Importer le Socle** dans une version récente d’Anki et cocher « Importer les préréglages de deck ».
+   Le préréglage propose 20 nouvelles cartes/jour, collecte par position croissante, tri par ordre de
+   collecte et enfouissement des cartes sœurs. Étudier le **deck parent** « Code de la route 2026 ».
+   Activer FSRS dans les options si souhaité : ce réglage global n’est pas activé par le paquet.
+2. **Commencer aussi les photos et vidéos dès la première semaine.** D’abord de petites séries
+   thématiques corrigées, même avant de connaître tout le socle. Elles révèlent les erreurs de
+   perception qu’une carte textuelle ne mesure pas. Puis faire des examens blancs complets.
+3. **Répondre avant de retourner.** Dire le sens, la décision ou la valeur demandée. Pour une
+   décision, donner l’indice décisif ou la règle. Réponse devinée, justification absente ou règle
+   erronée : « À revoir ». Réponse correcte avec effort : « Difficile » ; correcte sans difficulté :
+   « Bon ». Ne pas utiliser « Difficile » pour masquer un oubli.
+4. **Adapter le débit à la charge réelle.** Faire les révisions dues ; diminuer les nouvelles cartes
+   si les révisions s’accumulent ou si les erreurs augmentent. Vingt est un point de départ, pas une
+   prescription. Le deck ne promet pas un temps quotidien fixe.
+5. **Utiliser les erreurs pour choisir la suite.** Noter si l’erreur vient d’une règle oubliée, d’un
+   indice non vu, de la lecture de l’énoncé ou de la précipitation. Retrouver l’objectif dans
+   [COUVERTURE](out/COUVERTURE.md). Réviser la règle existante avant de créer un doublon.
+   Le [carnet d’erreurs](docs/07-entrainement.md) donne une méthode et un modèle.
+6. **Ajouter l’approfondissement selon les besoins.** Importer le paquet complet conserve les notes
+   du socle et ajoute les autres. On peut suspendre les nouvelles cartes portant
+   `tag:parcours::approfondissement` puis réactiver les thèmes faibles ou les signaux rencontrés.
+   Les tags historiques `importance::*` sont conservés ; **ils ne définissent plus le socle**.
 
-Les sous-decks 03 à 11 correspondent aux thèmes officiels de l'épreuve, dans l'ordre où les sites
-d'entraînement rendent leurs résultats : si vous échouez sur « Le conducteur », travaillez le sous-deck 03.
+L’ETG exige 35 réponses correctes sur 40. Comme repère personnel, viser des résultats réguliers de
+37–38 sur des séries **nouvelles**, avec photos et vidéos, sans aide et au rythme de l’épreuve.
+C’est une marge de préparation, ni un seuil officiel supplémentaire ni une garantie. Un bon taux de
+réussite dans Anki ne mesure pas à lui seul l’aptitude à l’examen.
+[Conditions officielles de l’ETG](https://www.service-public.gouv.fr/particuliers/vosdroits/F33694).
 
-Six types de cartes : **Reconnaissance** (image → sens, conduite à tenir, piège), **Confusion**
-(deux signaux côte à côte : quelle différence ?), **Fait** (phrase à trous pour les chiffres),
-**Question** (situation → décision et sa raison), **Affirmation** (contexte + affirmation → VRAI/FAUX et
-pourquoi), **Scénario** (schéma vu de dessus → qui passe, puis-je dépasser).
+## Si une version précédente est déjà installée
 
-Tags : `theme::C`, `sous::vitesse`, `type::panneau`, `importance::essentiel|utile|rare`,
-`nouveau::2025` (règle récente que la banque de 2023 peut encore présenter avec l'ancienne valeur).
+Importer le **paquet complet** pour corriger aussi les anciennes notes d’approfondissement. Vérifier
+le bilan d’import : aucun conflit de type de note ne doit laisser les anciennes formulations en place.
+La migration est testée contre le paquet v2 présent dans le dépôt avant cette révision. Pour un autre
+ancien build ou des types modifiés personnellement, inspecter les éventuels conflits dans Anki.
 
-## Comment l'utiliser
+La conservation de l’historique ne signifie pas que les réponses corrigées sont déjà connues : chercher
+`tag:revision::v3`, lire [le journal](docs/research/revision-v3.md), et revoir les cartes concernées.
+Certaines formulations ou réponses ont changé. Une réimportation conserve aussi l’ordre et la
+planification déjà présents : le programme publié décrit **un import neuf**, pas le réordonnancement
+automatique de votre collection. Importer le Socle ne supprime pas les cartes déjà installées ;
+suspendre `tag:parcours::approfondissement is:new` pour se concentrer sur lui.
 
-1. **Importer** : Fichier → Importer → `Code-de-la-route-2026.apkg`, et **cocher « Importer les
-   préréglages de deck »** (Import any deck presets). Le deck arrive alors avec ses options : 20
-   nouvelles cartes par jour, ordre des nouvelles cartes = programme calculé, cartes sœurs enterrées,
-   rétention souhaitée 0,9. Si vous avez oublié la case : Options du deck → Nouvelles cartes → « Ordre
-   de collecte : position croissante » et « Ordre de tri : ordre de collecte ». Activez FSRS
-   (Options du deck → Planification) : c'est un réglage global d'Anki, il n'est pas dans le paquet.
-2. **Étudier le deck parent** (« Code de la route 2026 »), pas les sous-decks un par un : c'est ce qui
-   applique le programme. À 20 cartes/jour, l'essentiel (1 032 cartes) est vu en environ
-   7 à 8 semaines, le reste (signaux utiles puis rares) dans les 2 semaines
-   suivantes ; les révisions prennent ensuite 10 à 20 minutes par jour. Pressé ? Passez à 25-30
-   nouvelles cartes par jour, ou suspendez `tag:importance::rare` (Parcourir → recherche →
-   sélectionner tout → Suspendre).
-3. **En parallèle, à partir de la 3e semaine** : des séries d'examens blancs (40 questions, photos
-   réelles, 20 secondes) sur un site d'entraînement. Le deck apporte les connaissances et les réflexes ;
-   les séries apportent la lecture de photos et le rythme. Notez vos thèmes faibles et augmentez le
-   nombre de nouvelles cartes du sous-deck correspondant.
-4. **S'inscrire** quand les séries donnent régulièrement 37-38/40 (le seuil est 35 ; la marge absorbe le
-   stress). La Sécurité routière conseille elle-même de repousser de quelques jours si la préparation
-   est à parfaire. **Avant l'examen** : revoir `00 Méthode` et le tag `sous::priorites`.
+## Contenu et entretien
 
-L'épreuve en pratique (ces informations ne sont volontairement pas des cartes) : 40 questions, 35
-bonnes réponses, environ 20 secondes par question après la lecture orale, 3 questions d'essai non
-notées, 30 €, résultat au plus tôt 24 h après, inscription au plus tard la veille (arrêté du 16 avril
-2026), code valable 5 ans, dès 15 ans en conduite accompagnée et 16 ans sinon, dans un centre agréé
-(La Poste, SGS, Dekra, Bureau Veritas, Pearson Vue).
+Six types : reconnaissance visuelle, comparaison de signaux, fait à trous, question de décision,
+affirmation justifiée et scénario dessiné. Les sous-decks suivent les thèmes ; les nouvelles cartes
+sont entrelacées entre thèmes. Les [statistiques](out/STATS.md) sont générées à chaque build.
+Les schémas sont simplifiés : aucune photo n’est inventée ni présentée comme une question officielle.
 
-## Reconstruire ou modifier le deck
+Chaque note porte une source. Les sources historiques sont parfois seulement des références de
+manuel ou d’article ; **leur présence ne prouve pas une vérification récente de toute la phrase**.
+L’audit v3 distingue les corrections vérifiées des éléments hérités, et retire les affirmations de
+certification exhaustive. Les textes applicables, les préconisations du véhicule et les consignes
+locales priment sur les approximations pédagogiques. Voir [sources](docs/04-sources.md).
 
 ```bash
-uv venv .venv && source .venv/bin/activate
-uv pip install anki pyyaml cairosvg pillow requests lxml
-python -m build.build --check     # valide les données (YAML dans data/) : schéma, longueurs, doublons, solveur
-python -m build.build             # génère les images (téléchargement Commons au 1er build) et l'apkg
-python -m build.dedup             # liste les connaissances quasi identiques entre fichiers
-python -m build.preview --n 12    # capture d'écran de cartes au hasard (Chrome headless)
+uv venv .venv
+source .venv/bin/activate
+uv pip install -r requirements.txt
+python -m build.build --check
+python -m unittest discover -s tests -v
+python -m build.build                 # produit Socle + complet et les rapports
+python -m build.verify                # importe et vérifie les deux paquets
+python -m build.verify --previous /chemin/ancienne-version.apkg
+python -m build.preview --ids ab4,c-arret-somme,scn-dep-mixte-mon-cote --width 390
 ```
 
-Les connaissances vivent dans `data/` (YAML, un fichier par thème et par type de note) ; le code de
-génération dans `build/`. `docs/` explique l'analyse de l'épreuve (01), la carte des connaissances (02),
-la conception des cartes (03), les sources (04), l'audit de la première version et les décisions de la
-seconde (05) ; `docs/research/brief-v2-redaction.md` est la règle du jeu pour écrire une carte.
+Le premier build nécessite un accès réseau pour les médias Commons ; les suivants utilisent le cache.
+Les aperçus nécessitent Chrome/Chromium. Les sources YAML sont dans `data/`, les 41 objectifs dans
+`data/_meta/objectives.yaml`. Le build refuse les références absentes et un socle dépassant 600 cartes :
+un ajout exige un arbitrage. Les modèles, GUID, numéros de cloze, identifiants de champs et de gabarits
+sont à préserver. [Conception](docs/03-conception-des-cartes.md), [vérification des paquets](out/VERIFICATION.md).
 
 ## Licences
 
-- Contenu (textes, schémas générés, code) : CC BY-SA 4.0.
-- Panneaux : fichiers Wikimedia Commons (domaine public / CC0 / CC BY-SA selon le fichier,
-  liste dans `out/ATTRIBUTIONS.md`), dessinés d'après l'Instruction interministérielle sur la
-  signalisation routière.
-- Voyants : symboles ISO 7000 (domaine public sur Commons).
+Textes, code et schémas originaux : CC BY-SA 4.0. Images Commons : licence propre à chaque fichier,
+avec auteurs et liens dans [ATTRIBUTIONS](out/ATTRIBUTIONS.md). Les représentations Commons de
+signalisation ne sont pas une certification officielle du deck.

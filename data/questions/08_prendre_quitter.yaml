@@ -154,9 +154,14 @@
   sous_theme: quitter
   source: "securite-routiere.gouv.fr — Enfants en voiture"
 - id: p-quitter-stationnement-surveiller
-  question: "Je suis garé en créneau et je veux reprendre la circulation. Que dois-je surveiller avant de m'engager ?"
-  reponse: "Devant et derrière moi dans les rétroviseurs, puis l'angle mort à droite d'un regard direct : un cycliste peut longer les voitures. Clignotant, et je cède le passage."
-  explication: "Question officielle 2023 (Q14 : « face à lui et derrière lui » OUI, « dans l'angle mort sur sa droite » OUI). Reprendre sa place dans la circulation impose d'avertir (R412-10)."
+  question: Garé à droite dans une rue à double sens, je quitte ma place pour rejoindre la voie à ma gauche. Quel
+    angle mort contrôler juste avant le déport ?
+  reponse: 'L’angle mort gauche, en plus des rétroviseurs : c’est le côté où je rejoins la circulation. Je signale
+    et je cède aux usagers qui circulent.'
+  explication: Le côté du contrôle dépend de la manœuvre et de la configuration ; ne pas mémoriser « toujours à
+    droite » d’après une seule photo.
   theme: P
   sous_theme: quitter
-  source: "Sécurité routière — Exemples de nouvelles questions (Q14) ; Code de la route, art. R412-10"
+  source: Sécurité routière — Exemples de nouvelles questions (Q14) ; Code de la route, art. R412-10
+  tags:
+  - revision::v3

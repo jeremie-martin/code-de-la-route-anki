@@ -39,14 +39,22 @@
   sous_theme: proteger
   source: "Code de la route, art. R416-19 ; arrêté du 30 septembre 2008 ; Ornikar — Protéger la zone"
 - id: rcp-rythme
-  texte: "Réanimation cardio-pulmonaire : {{c1::30}} compressions thoraciques puis {{c2::2}} insufflations, à un rythme de 100 à 120 compressions par minute, en attendant un défibrillateur (DAE) ou les secours."
-  explication: "On la pratique uniquement sur une victime inconsciente qui ne respire pas. Une victime inconsciente qui respire est mise en position latérale de sécurité (PLS)."
+  texte: 'Réanimation cardio-pulmonaire : {{c1::30}} compressions thoraciques puis {{c2::2}} insufflations, à un
+    rythme de 100 à 120 compressions par minute, en attendant un défibrillateur (DAE) ou les secours.'
+  explication: 'Victime inconsciente sans respiration normale : réanimation. Respiration normale : conduite adaptée
+    à la cause, alerte et surveillance.'
   theme: A
   sous_theme: secourir
-  source: "Croix-Rouge française — Arrêt cardiaque"
+  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  tags:
+  - revision::v3
 - id: non-assistance
-  texte: "Ne pas porter secours à une personne en danger (sans risque pour soi) est un délit puni jusqu'à {{c1::5 ans}} de prison et {{c2::75 000 €}} d'amende."
-  explication: "Alerter les secours suffit à remplir l'obligation. Quitter les lieux d'un accident que l'on a causé, c'est en plus un délit de fuite (6 points, 3 ans, 75 000 €)."
+  texte: Ne pas porter secours à une personne en danger (sans risque pour soi) est un délit puni jusqu'à {{c1::5
+    ans}} de prison et {{c2::75 000 €}} d'amende.
+  explication: Il faut apporter l’aide possible sans risque pour soi ni pour autrui, personnellement ou en provoquant
+    les secours. Un simple appel ne dispense pas automatiquement de toute autre aide accessible.
   theme: A
   sous_theme: obligations
-  source: "Code pénal, art. 223-6 ; Code de la route, art. L231-1 et L231-2"
+  source: Code pénal, art. 223-6
+  tags:
+  - revision::v3

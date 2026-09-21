@@ -6,9 +6,11 @@ data/scenarios.yaml: a scenario whose hand answer disagrees with the solver
 fails the build, so a mistake in either is caught.
 
 Model (Code de la route, art. R415-5 to R415-11 and R412-30, R414-..):
-  1. Véhicules d'intérêt général prioritaires (sirène + gyrophare) pass first.
+  0. The agent's explicit directions override the following rules.
+  1. Véhicules d'intérêt général prioritaires explicitly signalled pass first.
   2. Tramways pass before other vehicles (unless lights/agent say otherwise).
-  3. Lights: green passes before red. Orange = stop (treated as red here).
+  3. Lights: green passes before red. Fixed amber = stop (treated as red here).
+     Flashing amber leaves the signs/default priority rules applicable.
   4. Signs: a vehicle facing STOP / cédez-le-passage, or leaving a private
      exit (parking, chemin), yields to every vehicle on the road it joins.
      A vehicle on a road marked AB6/AB2, or with no sign while others have
@@ -68,10 +70,6 @@ def yields(a: str, b: str, spec: dict) -> bool | None:
     """True if a yields to b, False if b yields to a, None if no ordering."""
     apa, apb = spec["approaches"][a], spec["approaches"][b]
     va, vb = apa["vehicle"], apb["vehicle"]
-    # 1. emergency vehicles
-    ea, eb = va.get("kind") == "pompiers" or va.get("siren"), vb.get("kind") == "pompiers" or vb.get("siren")
-    if ea != eb:
-        return not ea
     # agent: his orders void lights and signs (R411-28)
     agent = spec.get("agent")
     if agent == "bras_leve":
@@ -85,10 +83,16 @@ def yields(a: str, b: str, spec: dict) -> bool | None:
         if ba:  # both blocked: no order
             return None
         agent_frees_both = True  # both free: only the turning rules (5) apply
+    # A vehicle's appearance alone does not announce an urgent intervention.
+    # The scenario explicitly records active warning devices as `siren`.
+    ea, eb = bool(va.get("siren")), bool(vb.get("siren"))
+    if ea != eb:
+        return not ea
     if not agent_frees_both:
         # 2. trams
         ta, tb = va.get("kind") == "tram", vb.get("kind") == "tram"
-        lights = {k: v.get("sign") for k, v in spec["approaches"].items() if str(v.get("sign", "")).startswith("feu_")}
+        lights = {k: v.get("sign") for k, v in spec["approaches"].items()
+                  if v.get("sign") in {"feu_vert", "feu_rouge", "feu_orange"}}
         if ta != tb and not lights:
             return not ta
         # 3. lights

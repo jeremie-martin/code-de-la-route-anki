@@ -7,87 +7,159 @@
     lanes: 2
     axis: continue
     vehicles:
-      - {lane: 1, y: 15, colour: bleu, me: true}
-      - {lane: 1, y: 45, colour: gris, kind: truck}
-  question: "Le camion devant moi roule lentement, aucun véhicule en face. Puis-je le dépasser ?"
-  reponse: "Non : la ligne axiale est continue, il est interdit de la franchir ou de la chevaucher (135 €, 3 points)."
-  explication: "Seul un cycliste, une trottinette ou un cyclomobile léger peut être dépassé en chevauchant une ligne continue, avec visibilité. J'attends la fin de la ligne continue (annoncée ou non par une ligne de dissuasion)."
+    - lane: 1
+      y: 15
+      colour: bleu
+      me: true
+    - lane: 1
+      y: 45
+      colour: gris
+      kind: truck
+  question: Le camion roule lentement ; bonne visibilité, personne en face ni derrière. Le marquage permet-il de
+    le dépasser ?
+  reponse: 'Non : la ligne axiale est continue, il est interdit de la franchir ou de la chevaucher (135 €, 3 points).'
+  explication: Seul un cycliste, une trottinette ou un cyclomobile léger peut être dépassé en chevauchant une ligne
+    continue, avec visibilité. J'attends la fin de la ligne continue (annoncée ou non par une ligne de dissuasion).
   theme: L
   sous_theme: depassement
-  source: "Code de la route, art. R412-19"
+  source: Code de la route, art. R412-19
+  tags:
+  - competence::lecture_schema
+  - revision::v3
 - id: scn-dep-ligne-discontinue-libre
   kind: road
   spec:
     lanes: 2
     axis: discontinue
     vehicles:
-      - {lane: 1, y: 15, colour: bleu, me: true}
-      - {lane: 1, y: 45, colour: gris, kind: truck}
-  question: "Ligne discontinue, bonne visibilité, personne en face ni derrière. Puis-je dépasser le camion ?"
-  reponse: "Oui, si j'ai la visibilité et l'espace pour revenir à droite : rétroviseurs, clignotant gauche, angle mort, dépassement franc, rabattement quand je vois le camion dans mon rétroviseur intérieur."
-  explication: "Conditions de l'article R414-4 : visibilité suffisante, personne ne me dépasse, écart de vitesse suffisant, retour sans gêner. Un camion se dépasse sur une longue distance : ne pas s'engager sans marge."
+    - lane: 1
+      y: 15
+      colour: bleu
+      me: true
+    - lane: 1
+      y: 45
+      colour: gris
+      kind: truck
+  question: Le camion roule lentement ; bonne visibilité, personne en face ni derrière. Le marquage permet-il de
+    le dépasser ?
+  reponse: 'Oui, si j''ai la visibilité et l''espace pour revenir à droite : rétroviseurs, clignotant gauche, angle
+    mort, dépassement franc, rabattement quand je vois le camion dans mon rétroviseur intérieur.'
+  explication: 'Conditions de l''article R414-4 : visibilité suffisante, personne ne me dépasse, écart de vitesse
+    suffisant, retour sans gêner. Un camion se dépasse sur une longue distance : ne pas s''engager sans marge.'
   theme: L
   sous_theme: depassement
-  source: "Code de la route, art. R414-4 et R412-18"
+  source: Code de la route, art. R414-4 et R412-18
+  tags:
+  - competence::lecture_schema
+  - revision::v3
 - id: scn-dep-vehicule-en-face
   kind: road
   spec:
     lanes: 2
     axis: discontinue
     vehicles:
-      - {lane: 1, y: 15, colour: bleu, me: true}
-      - {lane: 1, y: 42, colour: gris, kind: truck}
-      - {lane: 1, y: 78, colour: rouge, dir: down}
-  question: "Ligne discontinue, mais une voiture arrive en face. Puis-je dépasser le camion maintenant ?"
-  reponse: "Non : je n'emprunte la moitié gauche de la chaussée que si je ne gêne pas les véhicules venant en sens inverse ; j'attends que la voie soit libre sur toute la longueur du dépassement."
-  explication: "Article R414-7. Un dépassement de camion demande plusieurs centaines de mètres : la voiture rouge arriverait avant que je me rabatte."
+    - lane: 1
+      y: 15
+      colour: bleu
+      me: true
+    - lane: 1
+      y: 42
+      colour: gris
+      kind: truck
+    - lane: 1
+      y: 78
+      colour: rouge
+      dir: down
+  question: La voiture rouge arrive trop vite pour que je termine avant son arrivée. Puis-je dépasser le camion
+    maintenant ?
+  reponse: 'Non : je n''emprunte la moitié gauche de la chaussée que si je ne gêne pas les véhicules venant en sens
+    inverse ; j''attends que la voie soit libre sur toute la longueur du dépassement.'
+  explication: 'Article R414-7. Un dépassement de camion demande plusieurs centaines de mètres : la voiture rouge
+    arriverait avant que je me rabatte.'
   theme: L
   sous_theme: depassement
-  source: "Code de la route, art. R414-7"
+  source: Code de la route, art. R414-7
+  tags:
+  - competence::lecture_schema
+  - revision::v3
 - id: scn-dep-mixte-mon-cote
   kind: road
   spec:
     lanes: 2
     axis: mixte_moi
     vehicles:
-      - {lane: 1, y: 15, colour: bleu, me: true}
-      - {lane: 1, y: 45, colour: gris}
-  question: "Ligne mixte : continue de mon côté, discontinue de l'autre. Puis-je dépasser ?"
-  reponse: "Non : seule la ligne la plus proche de moi compte, et elle est continue. Les véhicules d'en face, eux, peuvent dépasser."
-  explication: "Article R412-20 : on ne franchit une ligne mixte que si la ligne discontinue est de son côté au début de la manœuvre, et la manœuvre doit être terminée avant la fin de la discontinue."
+    - lane: 1
+      y: 15
+      colour: bleu
+      me: true
+    - lane: 1
+      y: 45
+      colour: gris
+  question: En observant le marquage de mon côté, puis-je commencer un dépassement si les autres conditions sont
+    réunies ?
+  reponse: 'Non : seule la ligne la plus proche de moi compte, et elle est continue. Les véhicules d''en face, eux,
+    peuvent dépasser.'
+  explication: 'Article R412-20 : on ne franchit une ligne mixte que si la ligne discontinue est de son côté au
+    début de la manœuvre, et la manœuvre doit être terminée avant la fin de la discontinue.'
   theme: L
   sous_theme: depassement
-  source: "Code de la route, art. R412-20"
+  source: Code de la route, art. R412-20
+  tags:
+  - competence::lecture_schema
+  - revision::v3
 - id: scn-dep-mixte-autre-cote
   kind: road
   spec:
     lanes: 2
     axis: mixte_autre
     vehicles:
-      - {lane: 1, y: 15, colour: bleu, me: true}
-      - {lane: 1, y: 45, colour: gris}
-  question: "Ligne mixte : discontinue de mon côté, continue de l'autre. Puis-je dépasser ?"
-  reponse: "Oui, si les conditions habituelles sont réunies (visibilité, personne en face, personne ne me dépasse) et si je peux me rabattre avant la fin de la ligne discontinue."
-  explication: "La ligne continue de l'autre côté interdit aux véhicules d'en face de dépasser — pas à moi. Je reste vigilant : elle annonce souvent une zone sans visibilité pour eux, pas pour moi."
+    - lane: 1
+      y: 15
+      colour: bleu
+      me: true
+    - lane: 1
+      y: 45
+      colour: gris
+  question: En observant le marquage de mon côté, puis-je commencer un dépassement si les autres conditions sont
+    réunies ?
+  reponse: Oui, si les conditions habituelles sont réunies (visibilité, personne en face, personne ne me dépasse)
+    et si je peux me rabattre avant la fin de la ligne discontinue.
+  explication: 'La ligne continue de l''autre côté interdit aux véhicules d''en face de dépasser — pas à moi. Je
+    reste vigilant : elle annonce souvent une zone sans visibilité pour eux, pas pour moi.'
   theme: L
   sous_theme: depassement
-  source: "Code de la route, art. R412-20"
+  source: Code de la route, art. R412-20
+  tags:
+  - competence::lecture_schema
+  - revision::v3
 - id: scn-dep-sommet-cote
   kind: road
   spec:
     lanes: 2
     axis: discontinue
     vehicles:
-      - {lane: 1, y: 15, colour: bleu, me: true}
-      - {lane: 1, y: 40, colour: gris, kind: truck}
+    - lane: 1
+      y: 15
+      colour: bleu
+      me: true
+    - lane: 1
+      y: 40
+      colour: gris
+      kind: truck
     extras:
-      - {kind: sommet, y: 70}
-  question: "Ligne discontinue, mais un sommet de côte masque la route devant. Puis-je dépasser le camion ?"
-  reponse: "Non : sans visibilité suffisante vers l'avant (sommet de côte, virage), le dépassement est interdit sur une chaussée à double sens, même avec une ligne discontinue."
-  explication: "Article R414-11. Le marquage n'est pas une garantie de visibilité : c'est au conducteur de juger. Un véhicule peut surgir derrière le sommet à 90 km/h."
+    - kind: sommet
+      y: 70
+  question: La route au-delà de la zone indiquée est masquée. Puis-je dépasser le camion maintenant ?
+  reponse: 'Non : sans visibilité suffisante vers l''avant (sommet de côte, virage), le dépassement est interdit
+    sur une chaussée à double sens, même avec une ligne discontinue.'
+  explication: 'Article R414-11. Le marquage n''est pas une garantie de visibilité : c''est au conducteur de juger.
+    Un véhicule peut surgir derrière le sommet à 90 km/h.'
   theme: L
   sous_theme: depassement
-  source: "Code de la route, art. R414-11"
+  source: Code de la route, art. R414-11
+  tags:
+  - competence::lecture_schema
+  - revision::v3
 - id: scn-dep-dissuasion-tracteur
   kind: road
   spec:

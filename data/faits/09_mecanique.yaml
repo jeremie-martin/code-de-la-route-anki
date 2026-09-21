@@ -1,9 +1,13 @@
 - id: m-pneus-chiffres
-  texte: 'Pneus : profondeur minimale des sculptures {{c1::1,6 mm}} (témoins d''usure) ; pression contrôlée à {{c2::froid}} (moins de 3 km ou plus de 2 h d''arrêt), au moins une fois par {{c3::mois}} ; +{{c4::0,2 à 0,3 bar}} en charge ou pour l''autoroute.'
-  explication: 'Pneu neuf ≈ 8 mm ; remplacement conseillé dès 3 mm (4 mm en hiver). Même type sur un même essieu ; pneus neufs à l''arrière si l''on n''en change que deux. Pneus lisses : 135 €, immobilisation.'
+  texte: 'Pneus : sculptures d’au moins {{c1::1,6 mm}} ; contrôle de pression à {{c2::froid}}, au moins une fois
+    par {{c3::mois}} et avant un long trajet. En charge, appliquer la pression {{c4::préconisée par le constructeur}}.'
+  explication: Lire l’étiquette du véhicule ou sa notice, avec la dimension des pneus et la charge. Ne pas ajouter
+    systématiquement la même valeur à tous les véhicules.
   theme: M
   sous_theme: pneus
-  source: Code de la route, art. R314-1 ; arrêté du 18 juillet 2019 ; Michelin
+  source: R314-1 ; Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
+  tags:
+  - revision::v3
 - id: m-galette-chiffres
   texte: 'Roue de secours galette ou kit anti-crevaison : dépannage provisoire, {{c1::80 km/h}} maximum ; pneus hiver efficaces sous {{c2::7 °C}} ; pneus cloutés : {{c3::90 km/h}} maximum, pendant la période hivernale fixée par arrêté.'
   explication: 'Pneus cloutés : période classiquement du samedi précédant le 11 novembre au dernier dimanche de mars (prolongeable par le préfet), disque à l''arrière. Chaînes : uniquement sur route enneigée, sur au moins deux roues motrices, ~50 km/h maximum (préconisation), obligatoires derrière un B26.'

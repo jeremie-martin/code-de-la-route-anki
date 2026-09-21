@@ -15,12 +15,16 @@
   sous_theme: perception
   source: Sécurité routière — Exemples de nouvelles questions (Q20)
 - id: c-eblouissement-duree
-  question: Après un éblouissement (phares, soleil), combien de temps la vision met-elle à revenir ?
-  reponse: 'Plusieurs secondes chez un jeune (≈ 10 s à 25 ans), jusqu''à 2 minutes après 40 ans — à 90 km/h, 25 m sont parcourus « à l''aveugle » chaque seconde.'
-  explication: 'D''où le réflexe : ralentir dès qu''on est ébloui et regarder le bord droit de la chaussée. Le temps de récupération augmente avec l''âge.'
+  question: Ébloui de nuit, puis-je compter sur un délai fixe pour retrouver une vision normale ?
+  reponse: 'Non : la récupération varie. Je ralentis selon ce que je vois et regarde le bord droit sans fixer les
+    phares.'
+  explication: Ne pas apprendre un délai garanti selon l’âge. L’état visuel et l’intensité lumineuse changent la
+    récupération.
   theme: C
   sous_theme: perception
   source: securite-routiere.gouv.fr — Conduire la nuit ; Dépliant La vue
+  tags:
+  - revision::v3
 - id: c-angle-mort-definition
   question: Qu'est-ce que l'angle mort et comment le contrôle-t-on ?
   reponse: 'La zone latérale arrière invisible dans les rétroviseurs ; on la contrôle d''un regard direct par-dessus l''épaule du côté de la manœuvre — dernier regard avant de se déporter ou d''ouvrir une portière.'
@@ -43,12 +47,17 @@
   sous_theme: vigilance
   source: Code de la route, art. R412-10 ; En Voiture Simone — Angle mort et contrôles
 - id: c-zone-attention-pluie
-  question: Sous la pluie en agglomération, entre le rétroviseur gauche, une voiture au loin devant et des piétons à droite, où concentrer principalement son attention ?
-  reponse: 'Sur les piétons, à droite : c''est le danger le plus proche et le plus probable ; le reste se surveille par balayage.'
-  explication: 'Question officielle 2023 (Q9 : zone C, les piétons/voiture à droite). Principe : hiérarchiser les zones par proximité et vulnérabilité, sans cesser de balayer.'
+  question: Sous la pluie, un piéton à droite avance vers la chaussée ; la voiture loin devant garde son allure.
+    Quel indice exige mon attention immédiate ?
+  reponse: 'Le piéton qui approche de la chaussée : je réduis mon allure et me tiens prêt à m’arrêter, tout en continuant
+    à surveiller autour.'
+  explication: 'La position « à droite » ne suffit pas : c’est le mouvement du piéton et la possibilité de conflit
+    qui rendent ce danger prioritaire.'
   theme: C
   sous_theme: vigilance
   source: Sécurité routière — Exemples de nouvelles questions (Q9)
+  tags:
+  - revision::v3
 - id: c-enfant-masque
   question: Devant une école ou une rangée de voitures stationnées, quel risque spécifique lié aux enfants faut-il anticiper ?
   reponse: 'Qu''un enfant, plus petit qu''un capot et masqué par les véhicules stationnés, surgisse d''un coup entre deux voitures : je ralentis fortement et je me tiens prêt à m''arrêter.'
@@ -72,11 +81,15 @@
   source: Sécurité routière — Exemples de nouvelles questions (Q7) ; Code de la route, art. R414-4
 - id: c-retro-avant-freiner
   question: Pourquoi contrôler le rétroviseur intérieur avant de freiner ou de ralentir ?
-  reponse: 'Pour savoir ce qui suit (deux-roues, véhicule trop proche) et adapter la façon de ralentir : frein moteur et freinage progressif si quelqu''un est collé derrière.'
-  explication: Un vélo ou une moto dans le rétroviseur signifie qu'un freinage brusque le mettrait en danger. Contrôler « derrière » avant de freiner est un réflexe attendu dans les questions d'examen.
+  reponse: 'Pour savoir ce qui suit (deux-roues, véhicule trop proche) et adapter la façon de ralentir : frein moteur
+    et freinage progressif si quelqu''un est collé derrière.'
+  explication: Ce contrôle accompagne un ralentissement anticipé. En danger immédiat, ne pas différer le freinage
+    d’urgence pour consulter le rétroviseur.
   theme: C
   sous_theme: vigilance
   source: Ornikar — Pièges à éviter ; REMC
+  tags:
+  - revision::v3
 - id: c-indice-feux-recul
   question: Une voiture stationnée devant moi a ses feux de recul (blancs) allumés. Qu'est-ce que j'anticipe ?
   reponse: 'Qu''elle va reculer ou sortir de sa place : je ralentis, je me tiens prêt à m''arrêter et je garde mes distances plutôt que de la dépasser au ras.'
@@ -93,11 +106,15 @@
   source: Code de la route, art. R412-11
 - id: c-indice-ballon
   question: Un ballon roule sur la chaussée depuis le trottoir. Que fais-je ?
-  reponse: 'Je freine fort et immédiatement (après un coup d''œil au rétroviseur) : un enfant va probablement le suivre sans regarder.'
-  explication: 'Indice classique de l''examen : ballon, vélo d''enfant couché, cartable, portail d''école ouvert. La bonne réponse est toujours de ralentir/se tenir prêt à s''arrêter, jamais de klaxonner.'
+  reponse: 'Je réduis immédiatement mon allure et je me tiens prêt à m’arrêter : un enfant peut surgir derrière
+    le ballon.'
+  explication: Si un enfant surgit, je freine en urgence sans retarder le freinage pour regarder le rétroviseur.
+    Sinon, j’adapte mon freinage au risque et au trafic arrière.
   theme: C
   sous_theme: vigilance
   source: REMC — Anticiper ; securite-routiere.gouv.fr — Enfants
+  tags:
+  - revision::v3
 - id: c-indice-cycliste-regard
   question: Devant moi, un cycliste regarde par-dessus son épaule gauche. Qu'est-ce que cela annonce ?
   reponse: 'Qu''il va se déporter ou tourner à gauche : je ne le dépasse pas maintenant, je ralentis et je lui laisse la place.'
@@ -114,11 +131,15 @@
   source: securite-routiere.gouv.fr — Emportiérage ; REMC
 - id: c-routine-monotonie
   question: Pourquoi les trajets quotidiens et les longues lignes droites sont-ils dangereux pour la vigilance ?
-  reponse: 'La routine installe des automatismes et fait baisser l''attention : on ne « voit » plus les changements (nouveau panneau, piéton, travaux) — la plupart des accidents mortels ont lieu près du domicile.'
-  explication: 'Antidote : balayer activement (loin, près, côtés, rétroviseurs), varier son regard, et traiter chaque intersection connue comme si elle était nouvelle — surtout sur le trajet fait tous les jours.'
+  reponse: 'La familiarité fait baisser l’attention : on risque de manquer un changement de signalisation, un piéton
+    ou un obstacle inhabituel.'
+  explication: Continuer à observer activement la route connue et ses intersections. Une statistique sur la proximité
+    du domicile ne permet pas d’évaluer le risque de la scène.
   theme: C
   sous_theme: vigilance
   source: securite-routiere.gouv.fr — Port de la ceinture (trajets courts) ; Ornikar — Vigilance
+  tags:
+  - revision::v3
 - id: c-somnolence-que-faire
   question: Sur autoroute, je bâille, mes paupières sont lourdes et ma trajectoire flotte. Que fais-je ?
   reponse: 'Je m''arrête à la prochaine aire et je dors 15 à 20 minutes : ce sont des signes de somnolence, contre laquelle on ne peut pas lutter (micro-sommeils de 1 à 4 s).'

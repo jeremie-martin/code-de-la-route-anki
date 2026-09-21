@@ -1,10 +1,14 @@
 # C — Le conducteur : faits à trous (v2). Un chiffre vit ici et nulle part ailleurs dans le thème.
 - id: c-temps-reaction
-  texte: Le temps de réaction d'un conducteur attentif est d'environ {{c1::1 seconde}} ; il passe à {{c2::2 secondes}} (ou plus) avec la fatigue, l'alcool, les stupéfiants, les médicaments ou le téléphone.
-  explication: 'Pendant ce temps, le véhicule continue à la même vitesse. Le temps de réaction ne dépend pas de la vitesse : seule la distance parcourue change.'
+  texte: Le repère pédagogique du temps de réaction d’un conducteur attentif est {{c1::1 seconde}} environ. Fatigue,
+    alcool ou distraction peuvent le porter à {{c2::2 secondes ou davantage}}, sans valeur fixe garantie.
+  explication: Pendant la réaction, le véhicule continue d’avancer. À réaction identique, une vitesse plus élevée
+    augmente la distance parcourue.
   theme: C
   sous_theme: distances
   source: securite-routiere.gouv.fr — La vitesse et la conduite ; Codeclic — Temps de réaction
+  tags:
+  - revision::v3
 - id: c-distance-reaction-formule
   dedup_ok: [aff-c-temps-reaction-vitesse]
   texte: 'Distance parcourue pendant 1 s de réaction ≈ chiffre des dizaines de la vitesse × {{c1::3}} : à 50 km/h → {{c2::15 m}}, à 90 km/h → {{c3::27 m}}, à 130 km/h → {{c4::39 m}}.'
@@ -13,11 +17,16 @@
   sous_theme: distances
   source: Codeclic ; En Voiture Simone ; securite-routiere.gouv.fr — Dépliant vitesse
 - id: c-distance-arret-formule
-  texte: 'Distance d''arrêt sur sol sec ≈ (dizaines de la vitesse)² : à 50 km/h → {{c1::25 m}}, à 90 km/h → {{c2::81 m}}, à 130 km/h → {{c3::169 m}}.'
-  explication: 'Distance d''arrêt = distance de réaction + distance de freinage. Convention d''examen la plus répandue ; certaines écoles appliquent le carré à la distance de freinage (arrêt = 15 + 25 = 40 m à 50 km/h) et la Sécurité routière retient 28 m / 70 m / 129 m (décélération 7 m/s²). Ce qui est sûr : l''ordre de grandeur (25-28 m à 50 km/h) et la relation vitesse × 2 → freinage × 4.'
+  texte: 'Distance d''arrêt sur sol sec ≈ (dizaines de la vitesse)² : à 50 km/h → {{c1::25 m}}, à 90 km/h → {{c2::81
+    m}}, à 130 km/h → {{c3::169 m}}.'
+  explication: Repères mnémotechniques approximatifs, pas mesures garanties ni barème officiel unique. La distance
+    réelle dépend de la réaction, de l’adhérence et du véhicule. Si un exercice fournit des distances, les utiliser
+    ; arrêt = réaction + freinage.
   theme: C
   sous_theme: distances
   source: Ornikar ; En Voiture Simone ; Stych ; securite-routiere.gouv.fr — Dépliant vitesse
+  tags:
+  - revision::v3
 - id: c-distance-mouillee
   texte: Sur chaussée mouillée, l'adhérence est environ {{c1::2}} fois moins bonne et la distance de freinage environ {{c1::2}} fois plus longue (question officielle 2023) ; sur neige ou verglas, la distance de freinage peut être multipliée par {{c2::10}}.
   explication: 'Q13 officielle : autoroute mouillée → « l''adhérence est 2 fois moins bonne » OUI, « la distance de freinage est 2 fois plus longue » OUI. Certaines écoles enseignent plutôt « distance d''arrêt × 1,5 » : l''ordre de grandeur suffit. Conséquence pratique : on double l''intervalle et on réduit la vitesse.'
@@ -38,11 +47,15 @@
   sous_theme: distances
   source: Code de la route, art. R412-12 ; Codes Rousseau — Calcul des distances
 - id: c-intervalle-pl-tunnel
-  texte: Hors agglomération, les véhicules ou ensembles de plus de {{c1::3,5 t}} (ou de plus de 7 m de long) qui se suivent à la même vitesse gardent au moins {{c2::50 m}} ; dans les tunnels, l'intervalle signalé est en général de {{c3::150 m}} (parfois 70 m), à respecter même à l'arrêt.
-  explication: Dans les tunnels, deux diodes bleues ou deux chevrons matérialisent l'intervalle. En voiture, je garde aussi une grande distance derrière un poids lourd pour voir devant lui — et pour qu'il me voie dans ses rétroviseurs.
+  texte: Hors agglomération, deux véhicules de plus de {{c1::3,5 t}} ou de plus de 7 m qui se suivent à la même
+    vitesse gardent au moins {{c2::50 m}}. En tunnel, respecter la distance {{c3::signalée pour la situation}}.
+  explication: 'Il n’existe pas de minimum universel de 150 m dans tous les tunnels. Les consignes peuvent distinguer
+    circulation et arrêt : lire panneaux et repères.'
   theme: C
   sous_theme: distances
-  source: Code de la route, art. R412-12 ; securite-routiere.gouv.fr — Conduire dans un tunnel
+  source: Code de la route, R412-12 ; CETU — sécurité des usagers en tunnel
+  tags:
+  - revision::v3
 - id: c-autoroute-deux-traits
   texte: 'Sur autoroute, l''intervalle de sécurité se contrôle avec la ligne de rive de la bande d''arrêt d''urgence : garder au moins {{c1::2 traits}} entre soi et le véhicule qui précède (trait 39 m + espace 13 m + trait ≈ {{c2::90 m}}).'
   explication: '« Un trait = danger, deux traits = sécurité ». À 130 km/h, 2 s = 78 m, d''où les 2 traits (IISR, modulation T4 : trait 39 m, vide 13 m).'
@@ -80,11 +93,15 @@
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — La fatigue et la conduite ; ASFA
 - id: c-nuit-risque
-  texte: Conduire la nuit multiplie le risque d'accident mortel par environ {{c1::7}} (fatigue, alcool, vitesse plus élevée, perception réduite) ; environ {{c2::75 %}} des accidents mortels surviennent près du domicile (trajets routiniers).
-  explication: La routine baisse la vigilance ; la nuit combine tous les facteurs de risque. Les 18-24 ans meurent surtout la nuit (56 % de leur mortalité routière).
+  texte: La nuit, la {{c1::visibilité réduite}} et la {{c2::somnolence}} rendent la conduite plus risquée, même
+    quand le trafic paraît faible.
+  explication: Réduire l’allure selon la distance visible et interrompre le trajet dès les signes de somnolence.
+    Les trajets familiers exigent la même vigilance que les autres.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — Conduire la nuit ; Conseils aux conducteurs novices
+  source: Sécurité routière — conduite de nuit et somnolence
+  tags:
+  - revision::v3
 - id: c-verre-standard
   texte: Un verre « standard » (25 cl de bière à 5°, 10 cl de vin à 12°, 3 cl d'alcool à 40°) contient environ {{c1::10 g}} d'alcool pur et élève l'alcoolémie d'environ {{c2::0,20 à 0,25 g/L}} ; deux verres suffisent pour atteindre 0,5 g/L.
   explication: Plus chez une femme ou une personne mince (jusqu'à 0,30 g/L par verre). Les doses servies à la maison sont plus généreuses qu'au bar (question officielle 2023).
@@ -104,11 +121,15 @@
   sous_theme: deficiences
   source: En Voiture Simone — Alcool au volant ; securite-routiere.gouv.fr — L'alcool et la conduite
 - id: c-conversion-air-sang
-  texte: 'Alcoolémie : la valeur dans l''air expiré (mg/L) est la moitié de la valeur dans le sang (g/L) : 0,5 g/L = {{c1::0,25 mg/L}} ; 0,2 g/L (probatoire) = {{c2::0,10 mg/L}} ; 0,8 g/L (délit) = {{c3::0,40 mg/L}}.'
-  explication: L'éthylotest et l'éthylomètre mesurent l'air expiré ; la prise de sang mesure le sang. Les questions mélangent volontairement les deux unités.
+  texte: 'Seuils légaux correspondants : 0,5 g/L dans le sang ↔ {{c1::0,25 mg/L}} d’air expiré ; 0,2 g/L ↔ {{c2::0,10
+    mg/L}} ; 0,8 g/L ↔ {{c3::0,40 mg/L}}.'
+  explication: Ce sont des correspondances réglementaires avec des unités différentes, pas une division entre deux
+    concentrations de même unité. Lire sang ou air avant de répondre.
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code de la route, art. R234-1
+  tags:
+  - revision::v3
 - id: c-stupefiants-stats
   texte: Les stupéfiants sont en cause dans environ {{c1::1 accident mortel sur 5}} ; le cannabis multiplie le risque d'accident mortel par près de {{c2::2}}, et l'association alcool + cannabis par environ {{c3::29}} (chiffre Sécurité routière).
   explication: 'Valeurs Sécurité routière : cannabis ×1,65 (×1,8 dans certains QCM), alcool + cannabis ×29 (×15 dans les anciens films). Le dépistage salivaire est possible à tout moment, même sans infraction ; il concerne aussi cyclistes, trottinettes et accompagnateur en conduite accompagnée.'
@@ -122,8 +143,12 @@
   sous_theme: deficiences
   source: ANSM — Médicaments et conduite ; arrêté du 8 août 2008 (CSP, art. R5121-139) ; securite-routiere.gouv.fr — Les médicaments et la conduite
 - id: c-retro-7s
-  texte: En circulation, on contrôle le rétroviseur intérieur {{c1::régulièrement (toutes les 5 à 10 secondes environ)}} et, obligatoirement, avant de {{c2::ralentir, freiner, s'arrêter ou tourner}}.
-  explication: 'Rétroviseur extérieur du côté concerné + angle mort avant de : tourner, dépasser, se déporter, changer de voie, se rabattre, s''insérer, quitter un stationnement, ouvrir la portière. Les contrôles précèdent toujours le clignotant ; l''angle mort est le dernier regard avant de tourner le volant.'
+  texte: Je consulte le rétroviseur intérieur {{c1::régulièrement}} et avant un {{c2::ralentissement anticipé ou
+    un changement de direction}}. Un danger immédiat exige de freiner sans retarder l’action pour ce contrôle.
+  explication: 'Il n’existe pas de chronomètre universel : la fréquence des contrôles s’adapte à la circulation.
+    Regard direct vers l’angle mort avant tout déport.'
   theme: C
   sous_theme: vigilance
   source: Stych — Les contrôles ; Codeclic — L'angle mort
+  tags:
+  - revision::v3

@@ -7,11 +7,16 @@
   tags: [nouveau::2023]
   source: "Code de la route, art. R412-43-1 à R412-43-3 ; décret n° 2023-848"
 - id: u-velo-chiffres
-  texte: "À vélo : casque obligatoire pour les moins de {{c1::12 ans}} ; gilet réfléchissant obligatoire hors agglomération {{c2::la nuit}} ; un enfant de moins de {{c3::8 ans}} peut rouler sur le trottoir au pas ; jamais plus de {{c4::deux}} de front."
-  explication: "En file simple dès la chute du jour ou quand un véhicule annonce son dépassement. Pas de retrait de points à vélo, mais les amendes s'appliquent. Un VAE (≤ 250 W, assistance coupée à 25 km/h) reste un vélo."
+  texte: 'À vélo : casque obligatoire avant {{c1::12 ans}} ; gilet hors agglomération {{c2::la nuit ou par visibilité
+    insuffisante}} ; avant {{c3::8 ans}}, trottoir possible au pas sans gêner les piétons ; au maximum {{c4::deux}}
+    de front.'
+  explication: File simple dès la nuit ou quand les conditions de circulation l’exigent, notamment lorsqu’un véhicule
+    annonce son dépassement. Le casque reste recommandé pour tous.
   theme: U
   sous_theme: cyclistes
-  source: "Code de la route, art. R431-1-1, R431-1-3, R412-34, R431-7"
+  source: Code de la route, art. R431-1-1, R431-1-3, R412-34, R431-7
+  tags:
+  - revision::v3
 - id: u-velo-equipement-chiffres
   texte: "Équipement obligatoire d'un vélo : {{c1::deux}} freins, un feu avant {{c2::blanc ou jaune}} et un feu arrière {{c3::rouge}} (la nuit ou par visibilité insuffisante), des catadioptres (orange sur les côtés et les pédales) et un avertisseur audible à {{c4::50 m}}."
   explication: "Défaut d'éclairage ou d'équipement : 11 €. Les catadioptres, eux, sont exigés en permanence : ce sont eux qui font voir le vélo de côté dans les phares d'une voiture qui débouche."

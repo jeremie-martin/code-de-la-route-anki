@@ -25,12 +25,17 @@
   sous_theme: pollution
   source: "service-public.fr F33371 ; certificat-air.gouv.fr"
 - id: e-pic-pollution-chiffres
-  dedup_ok: [e-pic-pollution]
-  texte: "En cas d'épisode de pollution, le préfet peut instaurer la circulation différenciée (annoncée la veille) et abaisser les vitesses maximales de {{c1::20 km/h}} (130 → 110, 110 → 90, 90 → 70), sans descendre sous 70 km/h."
-  explication: "Non-respect : 68 €. Les transports en commun peuvent être rendus gratuits ou moins chers, et les poids lourds déviés."
+  dedup_ok:
+  - e-pic-pollution
+  texte: Lors d’un épisode de pollution, une réduction de {{c1::20 km/h}} peut être prescrite sur certains axes
+    ; j’applique les limites annoncées par l’arrêté et la signalisation, pas une soustraction automatique partout.
+  explication: 'Les mesures varient localement : vitesse, circulation différenciée, déviation des poids lourds.
+    Une règle de plancher à 70 ne peut pas relever une limitation existante à 30 ou 50.'
   theme: E
   sous_theme: pollution
-  source: "service-public.fr — Pic de pollution ; arrêtés préfectoraux"
+  source: service-public.fr — Pic de pollution ; arrêtés préfectoraux
+  tags:
+  - revision::v3
 - id: e-trajets-courts-chiffres
   texte: "Environ {{c1::40 %}} des trajets urbains en voiture font moins de 2 km ; les transports représentent près de {{c2::30 %}} des émissions de gaz à effet de serre en France, la voiture particulière en étant la première source."
   explication: "Sur moins de 5 km en ville, le vélo est souvent aussi rapide que la voiture ; 2 km à pied = 24 minutes. Le moteur et le catalyseur froids rendent ces courts trajets les plus polluants au kilomètre."
