@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 30 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 32 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: marq-ligne-continue
   type: marquage
   image:
@@ -30,6 +30,24 @@
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Une ligne discontinue autorise le franchissement mais n''oblige à rien : le dépassement reste soumis aux règles générales.'
+- id: marq-ligne-t1
+  type: marquage
+  image:
+    gen: ligne_axiale
+    params:
+      style: discontinue
+      dash: 1.5
+      gap: 5
+  nom: Ligne discontinue axiale T'1 (1,5 m de trait, 5 m de vide)
+  signification: 'Ligne axiale discontinue à traits et espaces plus courts : franchissement possible si la manœuvre est sûre et autorisée.'
+  conduite: Vérifier visibilité, trafic et possibilité de rabattement.
+  complement: Même fonction que la ligne discontinue ordinaire ; la longueur des traits ne donne aucune priorité.
+  theme: L
+  sous_theme: marquages
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  tags:
+  - revision::v3_1
 - id: marq-ligne-dissuasion
   type: marquage
   image:
@@ -266,6 +284,22 @@
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Circuler ou stationner dans un couloir bus : très gênant, 135 €.'
+- id: marq-damier-blanc
+  type: marquage
+  image:
+    gen: damier
+    params:
+      colour: blanc
+  nom: Damier blanc (continuité d'un couloir bus dans un carrefour)
+  signification: Damier blanc peint dans un carrefour pour matérialiser la continuité d'un couloir de bus ou d'une voie de tramway à travers l'intersection.
+  conduite: 'Ne pas bloquer la traversée. Lire les feux et les priorités : le damier seul ne donne pas une priorité générale au bus.'
+  complement: Dans les carrefours traversés par un site propre.
+  theme: L
+  sous_theme: marquages
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  tags:
+  - revision::v3_1
 - id: marq-ligne-jaune-continue
   type: marquage
   image:

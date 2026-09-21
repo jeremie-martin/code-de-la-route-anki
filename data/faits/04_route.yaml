@@ -6,11 +6,15 @@
   sous_theme: passages_a_niveau
   source: SNCF Réseau — Sécurité aux passages à niveau ; securite-routiere.gouv.fr — Passage à niveau
 - id: r-neige-adherence
-  texte: Sur une chaussée enneigée, l'adhérence est environ {{c1::4 fois}} moins bonne que sur sol sec ; la vigilance au verglas commence dès {{c2::3 °C}} au thermomètre, et les ponts gèlent les premiers.
-  explication: On divise sa vitesse par deux et on multiplie les distances. Le sol reste gelé même quand l'air est repassé au-dessus de 0 °C.
+  texte: Sur neige, l’adhérence est {{c1::réduite et variable}}. Du verglas peut exister même si le thermomètre
+    de l’air indique {{c2::une température positive}}.
+  explication: 'Le revêtement peut être plus froid que l’air : prudence sur ponts et zones ombragées. Aucun rapport
+    fixe d’adhérence ni seuil affiché ne garantit l’absence de glace.'
   theme: R
   sous_theme: intemperies
   source: Codes Rousseau — Neige et brouillard ; En Voiture Simone — Le verglas
+  tags:
+  - revision::v3_1
 - id: r-loi-montagne-periode
   texte: 'Loi Montagne : du {{c1::1er novembre}} au {{c2::31 mars}}, dans les communes signalées par le panneau {{c3::B58}}, le véhicule doit avoir quatre pneus hiver 3PMSF ou des chaînes (ou chaussettes) à bord pour deux roues motrices.'
   explication: 'Le panneau B59 marque la sortie de zone. Aucune amende n''est codifiée pour le défaut d''équipement (art. D314-8) : l''obligation existe néanmoins et c''est la réponse attendue.'
@@ -18,12 +22,16 @@
   sous_theme: intemperies
   source: Décret n° 2020-1264 du 16 octobre 2020 ; service-public.fr F19459
 - id: r-tunnel-niches
-  texte: Dans un tunnel, les niches de sécurité (extincteur et poste d'appel d'urgence) sont espacées d'environ {{c1::200 m}} ; les issues de secours sont signalées en {{c2::vert}}, une flèche indiquant la plus proche.
-  explication: 'Les niches ne protègent pas des fumées : en cas d''incendie, on quitte le tunnel à pied par l''issue de secours, jamais en faisant demi-tour.'
+  texte: Dans un tunnel, une niche contient des {{c1::moyens d’alerte et de lutte contre l’incendie}} ; les issues
+    d’évacuation sont signalées en {{c2::vert}}.
+  explication: Une niche n’est pas nécessairement un abri contre la fumée. Repérer les flèches et distances vers
+    les issues ; l’espacement des équipements varie selon le tunnel.
   theme: R
   sous_theme: tunnels
   importance: utile
   source: CETU — Conduire en tunnel
+  tags:
+  - revision::v3_1
 - id: r-autoroute-sortie-annonces
   texte: Sur autoroute, une sortie est annoncée à environ {{c1::2 000 m}}, présignalée à environ {{c2::1 000 m}}, puis signalée au début de la voie de décélération ; la manœuvre doit être achevée au plus tard au {{c3::début de la bretelle}}.
   explication: Les aires de repos sont annoncées à 2 000 m puis 1 000 m, le péage à 1 000 m. Chaque sortie porte un numéro, repris sur les panneaux.

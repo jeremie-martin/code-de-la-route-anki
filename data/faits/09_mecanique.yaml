@@ -9,12 +9,17 @@
   tags:
   - revision::v3
 - id: m-galette-chiffres
-  texte: 'Roue de secours galette ou kit anti-crevaison : dépannage provisoire, {{c1::80 km/h}} maximum ; pneus hiver efficaces sous {{c2::7 °C}} ; pneus cloutés : {{c3::90 km/h}} maximum, pendant la période hivernale fixée par arrêté.'
-  explication: 'Pneus cloutés : période classiquement du samedi précédant le 11 novembre au dernier dimanche de mars (prolongeable par le préfet), disque à l''arrière. Chaînes : uniquement sur route enneigée, sur au moins deux roues motrices, ~50 km/h maximum (préconisation), obligatoires derrière un B26.'
+  texte: 'Galette ou kit : respecter la {{c1::vitesse maximale indiquée sur l’équipement ou dans la notice}}. En
+    hiver, vérifier le marquage {{c2::3PMSF}} pour des pneus admis comme hiver. Avec pneus cloutés : plafond {{c3::90
+    km/h}}, sans relever une limite plus basse.'
+  explication: Une réparation provisoire a aussi une limite de distance. Les équipements amovibles se montent selon
+    la notice et les prescriptions du lieu ; 80 km/h n’est pas universel pour tout kit.
   theme: M
   sous_theme: pneus
   importance: utile
   source: Code de la route, art. R413-7 et R314-3 ; Stych
+  tags:
+  - revision::v3_1
 - id: m-feux-portees
   texte: 'Portées réglementaires : feux de position visibles à {{c1::150 m}} ; feux de croisement éclairent à {{c2::30 m}} ; feux de route à {{c3::100 m}} ; éclairage de plaque lisible à 20 m.'
   explication: 'Piège de vocabulaire : « visible à » (position) vs « éclaire à » (croisement, route). Feu(x) de brouillard arrière obligatoires sur les véhicules depuis 1990 ; brouillard avant, recul et feux de jour facultatifs.'
@@ -22,12 +27,17 @@
   sous_theme: feux
   source: Code de la route, art. R313-2 à R313-4
 - id: m-batterie-liquides-chiffres
-  texte: La batterie fournit du {{c1::12 V}} et dure environ 4-5 ans ; le liquide de frein se remplace environ tous les {{c2::2 ans}} (il absorbe l'humidité) ; la courroie de distribution se change vers {{c3::100 000 à 160 000 km}} ou 5-10 ans selon le constructeur (sa rupture casse le moteur).
-  explication: 'Câbles de démarrage : rouge sur les bornes +, noir sur la borne − de la batterie de secours puis sur une masse du véhicule en panne. Amortisseurs : ~80 000 km (test du rebond).'
+  texte: 'Entretien : pour le circuit électrique, vérifier la {{c1::tension indiquée par le constructeur}} ; pour
+    le liquide de frein, suivre la {{c2::périodicité de la notice}} ; pour la distribution, respecter les échéances
+    de {{c3::kilométrage ET de durée}} prévues.'
+  explication: 'Les valeurs ne sont pas universelles : architecture électrique, liquide, courroie ou chaîne varient.
+    Une échéance en années peut arriver avant le kilométrage.'
   theme: M
   sous_theme: entretien
   importance: utile
   source: Ornikar — Entretien ; lepermislibre
+  tags:
+  - revision::v3_1
 - id: m-adas-dates
   texte: 'Équipements obligatoires sur les voitures neuves : ESP depuis {{c1::2014}}, eCall (appel automatique du 112) depuis {{c2::2018}}, feux de jour depuis 2011, et depuis juillet {{c3::2024}} (règlement GSR2) le freinage d''urgence automatique, l''adaptation intelligente de la vitesse, le maintien de voie d''urgence, l''alerte de somnolence et l''enregistreur de données (« boîte noire »).'
   explication: Ces aides assistent le conducteur, qui reste responsable et doit surveiller. eCall appelle le 112, pas le 15.

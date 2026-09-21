@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 29 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 30 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: a1a
   type: panneau
   code: A1a
@@ -163,6 +163,21 @@
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   complement: Croix de Saint-André (G1) en position ; un STOP (AB4) peut la surmonter.
+- id: a9a
+  type: panneau
+  code: A9a
+  image:
+    commons: France Road Sign A9a.png
+  nom: Traversée de voie de véhicules routiers des services réguliers de transport en commun
+  signification: Annonce une traversée de voie réservée aux bus.
+  conduite: Ralentir, regarder des deux côtés ; les bus circulant sur le site propre peuvent surgir.
+  complement: Lire les feux ou les priorités applicables ; le panneau de danger seul ne les attribue pas.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  tags:
+  - revision::v3_1
 - id: a9b
   type: panneau
   code: A9b

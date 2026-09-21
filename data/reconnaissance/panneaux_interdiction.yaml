@@ -270,13 +270,15 @@
   image:
     commons: France road sign B9b.svg
   nom: Accès interdit aux cycles
-  signification: Interdiction d'accès aux cycles (vélos, VAE), par exemple sur les routes à accès réglementé.
+  signification: Accès interdit aux cycles, aux EDPM et aux cyclomobiles légers.
   conduite: Le cycliste doit prendre un autre itinéraire ; il peut éventuellement passer à pied en poussant son vélo (il devient piéton).
   piege: 'Piège des trois vélos : rond rouge (B9b) interdit ; rond bleu (B22a) piste obligatoire ; carré bleu (C113) piste conseillée ; triangle (A21) débouché de cyclistes.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  tags:
+  - revision::v3_1
 - id: b9c
   type: panneau
   code: B9c

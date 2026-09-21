@@ -3,7 +3,7 @@
 Projet : générer `out/Code-de-la-route-2026.apkg`, un deck Anki pour réussir l'ETG (code de la route,
 permis B) tel qu'il existe en 2026. Lire `README.md` puis `docs/01-analyse-examen.md`,
 `docs/02-carte-des-connaissances.md`, `docs/03-conception-des-cartes.md`, `docs/04-sources.md`,
-`docs/06-audit-v3.md` (audit actuel). Les dossiers v1/v2 sont historiques ; ne pas réintroduire leurs formulations corrigées.
+`docs/08-integration-complete.md` (révision actuelle). Les dossiers v1/v2 sont historiques ; ne pas réintroduire leurs formulations corrigées.
 
 ## Commandes
 
@@ -37,9 +37,12 @@ python build/yamlfix.py data/*/*.yaml   # quote les valeurs YAML contenant ': '
 - Champs communs : `id` (unique, minuscules), `theme` (L C R U D A P M S E X), `sous_theme`,
   `importance` (essentiel|utile|rare), `source`, `tags` optionnels. Lettres officielles : A = porter
   secours, P = prendre/quitter le véhicule, S = sécurité passagers/véhicule, E = environnement.
-- V3 : `data/_meta/objectives.yaml` sélectionne explicitement le socle (budget 600 cartes).
+- V3 : `data/_meta/objectives.yaml` relie explicitement chaque note à ses objectifs :
+  `notes` pour l’introduction, `consolidation` pour la suite. Aucun plafond de notes ou de cartes.
   `build/learning.py` annote `parcours::*` / `objectif::*`, place toutes les cartes du socle avant
   l’approfondissement et produit le programme depuis le même plan que les positions exportées.
+- `data/_meta/sign_exclusions.yaml` justifie les signaux sans carte visuelle distincte et référence
+  leurs couvertures. Aucun filtre par rareté. Tout signal sélectionné doit avoir un média.
 - Ordre interne d’introduction des nouvelles cartes = programme calculé par `curriculum()` dans `build/build.py`
   (méthode d'abord ; phases essentiel → utile → rare ; thèmes entrelacés au prorata ; scénarios après les
   panneaux dont ils dépendent : `SCENARIO_GATES` ; `RECON_ORDER` = ordre des fichiers de signalisation).

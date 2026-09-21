@@ -98,7 +98,8 @@ def assert_history(col, cid, before):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--previous', type=Path)
+    parser.add_argument('--previous', type=Path, action='append', default=[],
+                        help='Ancien paquet à tester ; option répétable pour plusieurs versions')
     args = parser.parse_args()
     data = load_all()
     core = {kind: [n for n in notes if n['_stage'] == 'socle'] for kind, notes in data.items()}
@@ -123,15 +124,15 @@ def main():
                     checks.append('socle → complet → réimport : aucun doublon ; historique et planification conservés')
             finally:
                 col.close()
-        if args.previous:
-            col = Collection(str(Path(tmp) / 'upgrade.anki2'))
+        for index, previous in enumerate(args.previous):
+            col = Collection(str(Path(tmp) / f'upgrade-{index}.anki2'))
             try:
-                import_package(col, args.previous)
+                import_package(col, previous)
                 cid, before = mark_reviewed(col)
                 import_package(col, full_path)
                 verify_content(col, data)
                 assert_history(col, cid, before)
-                checks.append('ancien paquet → complet : correction appliquée ; historique et planification conservés')
+                checks.append(f'{previous.name} → complet : correction appliquée ; historique et planification conservés')
             finally:
                 col.close()
     (OUT / 'VERIFICATION.md').write_text('# Vérification des paquets\n\n' +

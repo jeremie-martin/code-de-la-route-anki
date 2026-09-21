@@ -100,15 +100,16 @@
   source: Code de la route, art. L411-8 ; IISR 9e partie (arrêté du 15 mars 2024) ; paris.fr
 - id: e-electrique-avantages
   question: Quels sont l'avantage et la limite principale d'une voiture électrique ?
-  reponse: Aucune émission à l'échappement et un coût au kilomètre faible, mais une autonomie et des temps de recharge
-    à planifier, et un poids élevé.
-  explication: 'Aucune émission à l’échappement ne signifie pas aucun impact : fabrication, électricité, pneus et
-    freins comptent. Le freinage régénératif dépend du véhicule et de l’état de charge ; rester prêt à freiner.'
+  reponse: Pas d’émission à l’échappement pendant la conduite ; en revanche, je dois prévoir autonomie et recharge
+    selon le trajet.
+  explication: Coût, masse et bilan environnemental dépendent du modèle, de l’usage et de la production d’énergie.
+    Pneus et freins émettent aussi des particules.
   theme: E
   sous_theme: ecomobilite
   source: ADEME — Car Labelling ; service-public.fr
   tags:
   - revision::v3
+  - revision::v3_1
 - id: e-ve-recharge
   question: Que faut-il prévoir pour partir loin en voiture électrique ?
   reponse: 'Planifier les recharges : 20 à 40 minutes sur une borne rapide, plusieurs heures sur une prise domestique — et compter une autonomie nettement réduite par temps froid.'
@@ -118,13 +119,18 @@
   importance: utile
   source: service-public.fr ; Code de la route, art. R417-10
 - id: e-energies-alternatives
-  question: Qu'apportent le GPL, le GNV et l'hydrogène par rapport à une essence ou à un diesel ?
-  reponse: Moins de particules, d'oxydes d'azote et de bruit, avec un classement Crit'Air plus favorable ; en contrepartie, un réseau de stations très limité et un surcoût à l'achat.
-  explication: L'hydrogène (pile à combustible) ne rejette que de la vapeur d'eau, mais les stations sont rarissimes. Le malus écologique à l'immatriculation, calculé sur le CO₂ et sur le poids, pousse vers ces motorisations.
+  question: Avant de choisir un véhicule au GPL, au GNV ou à l’hydrogène, que dois-je comparer pour mes trajets
+    ?
+  reponse: La disponibilité du carburant et des stations, l’autonomie, les coûts et le bilan environnemental de
+    la filière.
+  explication: Ces énergies ne garantissent pas toutes le même gain de bruit ou d’émissions ; distinguer carburant,
+    mode de propulsion et production de l’énergie.
   theme: E
   sous_theme: ecomobilite
   importance: utile
   source: En Voiture Simone — Achat éco-responsable ; service-public.fr F33371
+  tags:
+  - revision::v3_1
 - id: e-e85
   question: Qu'est-ce que le superéthanol E85 ?
   reponse: Un carburant contenant jusqu'à 85 % de bioéthanol, réservé aux véhicules « flex-fuel » ou équipés d'un boîtier homologué ; moins cher au litre, mais davantage consommé.

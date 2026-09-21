@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 22 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 43 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: ce1
   type: panneau
   code: CE1
@@ -22,6 +22,17 @@
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce2b
+  type: panneau
+  code: CE2b
+  image:
+    commons: France road sign CE2b.svg
+  nom: Cabine téléphonique publique
+  signification: Indique une cabine téléphonique publique.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce3a
   type: panneau
   code: CE3a
@@ -32,6 +43,17 @@
   theme: L
   sous_theme: panneaux
   importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce3b
+  type: panneau
+  code: CE3b
+  image:
+    commons: France road sign CE3b.svg
+  nom: Relais d'information service
+  signification: Panneau rectangulaire placé au-dessus de panneaux d'information pour identifier un relais d'information service (RIS).
+  theme: L
+  sous_theme: panneaux
+  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce4a
   type: panneau
@@ -66,6 +88,50 @@
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce5a
+  type: panneau
+  code: CE5a
+  image:
+    commons: France road sign CE5a.svg
+  nom: Auberge de jeunesse
+  signification: Indique une auberge de jeunesse.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce5b
+  type: panneau
+  code: CE5b
+  image:
+    commons: France road sign CE5b.svg
+  nom: Chambre d'hôtes ou gîte
+  signification: Indique une chambre d'hôtes ou un gîte agréé.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce6a
+  type: panneau
+  code: CE6a
+  image:
+    commons: France road sign CE6a.svg
+  nom: Accès à un itinéraire pédestre
+  signification: Indique le départ d'un itinéraire de randonnée pédestre.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce6b
+  type: panneau
+  code: CE6b
+  image:
+    commons: France road sign CE6b.svg
+  nom: Accès à un circuit de ski de fond
+  signification: Indique l'accès à un circuit de ski de fond (hors station).
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce7
   type: panneau
   code: CE7
@@ -76,6 +142,39 @@
   theme: L
   sous_theme: panneaux
   importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce8
+  type: panneau
+  code: CE8
+  image:
+    commons: France road sign CE8.svg
+  nom: Gare auto-train
+  signification: Indique une gare où les véhicules peuvent être chargés sur des trains.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce9
+  type: panneau
+  code: CE9
+  image:
+    commons: France road sign CE9.svg
+  nom: Parc de stationnement sous vidéosurveillance
+  signification: Indique un parking sous vidéosurveillance.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce10
+  type: panneau
+  code: CE10
+  image:
+    commons: France road sign CE10.svg
+  nom: Embarcadère
+  signification: Indique un embarcadère (bac, ferry) pour l'embarquement des personnes ou véhicules.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce12
   type: panneau
@@ -133,6 +232,17 @@
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce15h
+  type: panneau
+  code: CE15h
+  image:
+    commons: France road sign CE15h.svg
+  nom: Carburant, GPL et recharge des véhicules électriques
+  signification: Station-service avec carburant, GPL et recharge électrique.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce15i
   type: panneau
   code: CE15i
@@ -144,6 +254,17 @@
   theme: L
   sous_theme: panneaux
   importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce15j
+  type: panneau
+  code: CE15j
+  image:
+    commons: France road sign CE15j.svg
+  nom: Recharge des véhicules électriques et GPL
+  signification: Borne de recharge électrique et distribution de GPL.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce16
   type: panneau
@@ -178,6 +299,39 @@
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce19
+  type: panneau
+  code: CE19
+  image:
+    commons: France road sign CE19.svg
+  nom: Emplacement de mise à l'eau d'embarcations légères
+  signification: Indique une cale de mise à l'eau pour petits bateaux.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce20a
+  type: panneau
+  code: CE20a
+  image:
+    commons: France road sign CE20a.svg
+  nom: Gare de téléphérique
+  signification: Indique une gare de téléphérique.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce20b
+  type: panneau
+  code: CE20b
+  image:
+    commons: France road sign CE20b.svg
+  nom: Point de départ d'un télésiège ou d'une télécabine
+  signification: Indique le départ d'un télésiège ou d'une télécabine.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce21
   type: panneau
   code: CE21
@@ -200,6 +354,72 @@
   theme: L
   sous_theme: panneaux
   importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce23
+  type: panneau
+  code: CE23
+  image:
+    commons: France road sign CE23.svg
+  nom: Jeux d'enfants
+  signification: Indique une aire de jeux pour enfants.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce24
+  type: panneau
+  code: CE24
+  image:
+    commons: France road sign CE24.svg
+  nom: Station de vidange pour caravanes, autocaravanes et cars
+  signification: Indique une aire de vidange des eaux usées et de remplissage d'eau potable pour camping-cars.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce25
+  type: panneau
+  code: CE25
+  image:
+    commons: France road sign CE25.svg
+  nom: Distributeur de billets de banque
+  signification: Indique un distributeur automatique de billets.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce26
+  type: panneau
+  code: CE26
+  image:
+    commons: France road sign CE26.svg
+  nom: Station de gonflage
+  signification: Indique une station de gonflage gratuite des pneumatiques (autoroutes, aires).
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce27
+  type: panneau
+  code: CE27
+  image:
+    commons: France road sign CE27.svg
+  nom: Point de détente
+  signification: Indique un parcours de santé ou un espace aménagé pour la détente.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce28
+  type: panneau
+  code: CE28
+  image:
+    commons: France road sign CE28.svg
+  nom: Poste de dépannage
+  signification: Indique un poste de dépannage disponible 7 j/7 et 24 h/24.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce29
   type: panneau
@@ -235,6 +455,17 @@
   theme: L
   sous_theme: panneaux
   importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce50
+  type: panneau
+  code: CE50
+  image:
+    commons: France road sign CE50.svg
+  nom: Installations ou services divers
+  signification: Indique une installation ou un service non prévu par un autre panneau CE (pictogramme ou inscription).
+  theme: L
+  sous_theme: panneaux
+  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce52
   type: panneau

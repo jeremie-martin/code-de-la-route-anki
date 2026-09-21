@@ -631,11 +631,23 @@ def damier(params):
                 S.add(f'<rect x="{x0 + i * size}" y="{y0 + j * size}" width="{size}" height="{size}" fill="{MARK}"/>')
             elif colour == "rouge":
                 S.add(f'<rect x="{x0 + i * size}" y="{y0 + j * size}" width="{size}" height="{size}" fill="#d8362d"/>')
-    if colour == "blanc":
-        S.add(f'<text x="240" y="285" font-family="{FONT}" font-size="14" text-anchor="middle" fill="#333">damier blanc : traversée d\'un couloir bus</text>')
-    else:
+    if colour == "rouge":
         S.add(f'<rect x="330" y="40" width="150" height="220" fill="#b9a27a"/>')
-        S.add(f'<text x="240" y="285" font-family="{FONT}" font-size="14" text-anchor="middle" fill="#333">damier rouge et blanc : voie de détresse</text>')
+    return str(S)
+
+
+def direction_voies(params):
+    """Simplified gantry: each downward arrow identifies its corresponding lane."""
+    S = SVG(560, 340)
+    S.add(f'<rect width="560" height="340" fill="{GRASS}"/>')
+    S.add(f'<rect x="30" y="210" width="500" height="130" fill="{ASPHALT}"/>')
+    for x in (197, 363):
+        S.add(f'<path d="M{x},220 V340" stroke="white" stroke-width="3" stroke-dasharray="15 20"/>')
+    for x, width, label, arrows in ((35, 321, 'PARIS', (113, 280)), (366, 159, 'LYON', (446,))):
+        S.add(f'<rect x="{x}" y="25" width="{width}" height="175" rx="8" fill="#0759a4" stroke="white" stroke-width="4"/>')
+        S.add(f'<text x="{x + width / 2}" y="75" font-family="{FONT}" font-size="30" fill="white" text-anchor="middle">{label}</text>')
+        for arrow in arrows:
+            S.add(f'<path d="M{arrow},98 V167 m-17,-18 l17,18 17,-18" stroke="white" stroke-width="7" fill="none"/>')
     return str(S)
 
 
@@ -824,6 +836,7 @@ def voyant_direction(params):
 REGISTRY.update({
     "balise_piquet": balise_piquet, "voyant_direction": voyant_direction,
     "voie_insertion": voie_insertion, "bande_cyclable": bande_cyclable, "damier": damier, "ralentisseur": ralentisseur,
+    "direction_voies": direction_voies,
     "marquage_temporaire": marquage_temporaire, "zone_bleue": zone_bleue, "losange_sol": losange_sol, "cvcb": cvcb,
     "livraison": livraison, "direction_panel": direction_panel, "lieu_dit": lieu_dit, "feu_bicolore": feu_bicolore,
     "cone": cone, "triangle_seul": triangle_seul,

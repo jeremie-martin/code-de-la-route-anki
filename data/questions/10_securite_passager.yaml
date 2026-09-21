@@ -9,12 +9,16 @@
   sous_theme: passagers
   source: Code de la route, art. R412-1 et R412-2
 - id: s-ceinture-50-kmh
-  question: À 50 km/h, quelle force subit un occupant non attaché lors d'un choc frontal ?
-  reponse: 'L''équivalent d''une chute de 3 étages (~10 m) : un adulte de 75 kg est projeté avec une force d''environ 2,5 tonnes — impossible à retenir avec les bras.'
-  explication: La ceinture divise par deux à trois le risque d'être tué ; elle est efficace aussi en ville, à petite vitesse, où se produisent la majorité des chocs.
+  question: Lors d’un choc frontal à 50 km/h, un adulte non attaché peut-il se retenir avec les bras ?
+  reponse: 'Non : sa vitesse est celle du véhicule avant le choc ; ses bras ne peuvent pas remplacer la ceinture.
+    Il peut heurter l’habitacle ou les autres occupants.'
+  explication: 'Une « force en tonnes » n’est pas une valeur universelle : elle dépend notamment de la durée et
+    de la distance d’arrêt du corps. Retenir la nécessité de la retenue, pas une fausse constante.'
   theme: S
   sous_theme: passagers
   source: securite-routiere.gouv.fr — La ceinture de sécurité
+  tags:
+  - revision::v3_1
 - id: s-femme-enceinte
   question: Une femme enceinte doit-elle porter la ceinture ?
   reponse: 'Oui : sangle basse sous le ventre (sur les hanches), sangle haute entre les seins ; c''est la meilleure protection du bébé comme de la mère.'
@@ -96,11 +100,15 @@
   - revision::v3
 - id: s-coffre-toit
   question: Quelles conséquences un coffre de toit (ou une galerie) a-t-il sur la conduite ?
-  reponse: Tenue de route dégradée (centre de gravité plus haut, prise au vent latéral) et consommation en hausse de 10 à 15 % ; on respecte la charge maximale du toit et la hauteur des parkings.
-  explication: On le retire dès qu'il ne sert plus. La charge de toit admissible, fixée par la notice, dépasse rarement 75 à 100 kg ; les objets les plus lourds restent dans le coffre, en bas.
+  reponse: Il augmente la prise au vent et la consommation, et élève le centre de gravité. Je respecte les limites
+    de charge et vérifie la hauteur totale.
+  explication: L’effet varie avec le coffre, la charge et la vitesse ; retirer les accessoires inutilisés. Ne pas
+    apprendre un pourcentage comme une garantie.
   theme: S
   sous_theme: chargement
   source: ADEME — Éco-conduite ; securite-routiere.gouv.fr
+  tags:
+  - revision::v3_1
 - id: s-remorque-permis-b
   question: Quelle remorque peut-on tracter avec le seul permis B ?
   reponse: Remorque de PTAC au plus 750 kg ; au-delà, permis B si la somme des PTAC ne dépasse pas 3 500 kg. Dans

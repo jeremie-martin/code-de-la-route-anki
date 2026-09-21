@@ -1,13 +1,14 @@
-# Carte des compétences — v3
+# Carte des compétences — intégration complète
 
-La couverture active est définie par `data/_meta/objectives.yaml`, validée par le build et détaillée dans [out/COUVERTURE.md](../out/COUVERTURE.md). Chaque note du socle se rattache à un objectif. Le paquet complet conserve aussi les variantes et approfondissements.
+Chaque note du deck est nommément reliée à au moins un objectif dans `data/_meta/objectives.yaml`.
+Le build contrôle cette intégration pour les deux étapes. Aucun plafond de notes ou de cartes.
 
-Cette carte est une sélection explicite de compétences, pas une estimation de la fréquence des questions de la banque confidentielle.
+Le [rapport de couverture](../out/COUVERTURE.md) liste toutes les notes ; [ROLES](../out/ROLES.md) expose chaque cible de rappel.
 
 | Objectif | Thème | Savoir faire | Raison du choix |
 |---|---|---|---|
 | `x-lecture` | X | Lire le point de vue, les conditions et chaque proposition | Éviter les recettes de réponse et apprendre à justifier. |
-| `l-danger` | L | Reconnaître le danger et anticiper avant de le voir | Une variante de chaque famille utile, sans commencer par toutes les variantes. |
+| `l-danger` | L | Reconnaître le danger et anticiper avant de le voir | Chaque danger appelle une anticipation ; les variantes gauche/droite et les dangers moins rencontrés consolident la reconnaissance sans changer le standard de qualité. |
 | `l-priorite-signaux` | L | Lire les signaux qui attribuent la priorité | Préparer les décisions aux intersections et aux rétrécissements. |
 | `l-intersection` | L | Déterminer qui doit céder et où s'arrêter | Règle, exception et application visuelle ; le sens des flèches compte. |
 | `l-giratoire` | L | Entrer, se placer et sortir sans couper une trajectoire | Distinguer priorité à l'entrée et priorité lors d'un changement de voie. |
@@ -45,11 +46,19 @@ Cette carte est une sélection explicite de compétences, pas une estimation de 
 | `a-accident` | A | Assumer ses obligations après un accident | Identifier, déclarer et conserver les faits sans signer un récit contesté. |
 | `d-permis` | D | Comprendre capital, probatoire et conséquences des infractions | Apprendre les conséquences structurantes avant les détails de procédure. |
 | `d-vehicule` | D | Rouler avec les documents, assurance et contrôle requis | Appliquer les obligations à une situation concrète. |
-| `e-ecoconduite` | E | Réduire les consommations sans compromettre la sécurité | Comprendre les gestes ; réserver les pourcentages variables à l'approfondissement. |
+| `e-ecoconduite` | E | Réduire les consommations sans compromettre la sécurité | Relier consommation et gestes de conduite ; distinguer recommandations adaptables et calculs sur données fournies. |
 | `e-pollution` | E | Distinguer émissions, restrictions et énergie | Lire les conditions locales et ne pas confondre électrique et sans impact. |
+| `x-format` | X | Connaître les contraintes de l’épreuve | Se préparer au temps disponible, au seuil de réussite et à la validation des réponses ; ces repères complètent la lecture des scènes. |
+| `l-orientation` | L | Lire un itinéraire et préparer sa voie | Couleurs, cartouches, confirmation et affectation de voies servent à choisir assez tôt ; une erreur de direction ne justifie pas une manœuvre dangereuse. |
+| `l-services` | L | Identifier le service recherché et son accès | Distinguer secours, repos, carburant et recharge ; les variantes de services apprennent à interpréter les pictogrammes sans leur attribuer une prescription. |
+| `c-vision` | C | Comprendre les limites de la vision et les compensations | Champ utile, éblouissement et correction visuelle expliquent où chercher l’information ; les ordres de grandeur ne sont pas des garanties individuelles. |
+| `u-lents` | U | Partager la route avec animaux, convois et véhicules lents | Reconnaître la contrainte de gabarit ou de mobilité, anticiper un écart et dépasser seulement lorsque les conditions le permettent. |
+| `d-apprentissage` | D | Comprendre les filières et les conditions du permis | Âge, formation, accompagnement et restrictions définissent qui peut conduire et dans quelles conditions ; les procédures ne sont pas de simples anecdotes. |
+| `d-sanctions` | D | Distinguer infraction, sanction et mesure sur le permis | Comprendre qui est responsable, quels points sont retirés et la différence entre maxima pénaux, amendes et mesures administratives ; les cas complètent le fonctionnement du capital. |
+| `d-risque` | D | Interpréter les ordres de grandeur de l’accidentalité | Situer les risques collectifs avec année et population de référence ; ne pas déduire un risque individuel d’un pourcentage de victimes. |
+| `e-mobilite` | E | Choisir un mode de déplacement et une énergie adaptés | Comparer besoins, carburant compatible, recharge et solutions partagées ; ni prix ni impact ne sont universels. |
+| `e-bruit` | E | Réduire les nuisances sonores | Relier avertisseur, conduite et entretien aux nuisances pour les riverains, en distinguant avertissement nécessaire et bruit évitable. |
 
-## Critère d’ajout
-
-Une erreur répétée ou une lacune doit justifier l’ajout : règle absente, condition décisive non entraînée, confusion entre deux signaux, ou transfert insuffisant à une scène. Chercher la connaissance existante avant de créer une note. Ne pas ajouter pour atteindre un quota par thème.
-
-La présence d’une carte est un indicateur de couverture, pas une preuve de maîtrise. Les compétences de perception, rythme et sélection de plusieurs réponses se travaillent et se mesurent sur des séries de photos/vidéos inédites.
+Une lacune de couverture, une confusion, une exception ou une application distincte justifie un ajout.
+Ne pas attendre une erreur personnelle pour couvrir une connaissance déjà identifiée.
+La maîtrise se mesure aussi sur des situations nouvelles, pas sur la seule présence d’une carte.

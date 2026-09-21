@@ -263,7 +263,7 @@ DECK_DESCRIPTIONS = {
     "04 La route": "Nuit, pluie, brouillard, neige, tunnels, passages à niveau, tramways, chantiers, autoroute, montagne.",
     "05 Les autres usagers": "Piétons, cyclistes, trottinettes, motos (inter-files 2025), poids lourds, bus et tramways, véhicules prioritaires et facilités de passage.",
     "06 Réglementation et notions diverses": "Permis à points et probatoire, classes d'amendes et barème des retraits, délits (valeurs 2025-2026, anciennes valeurs signalées), documents, assurance, contrôle technique, Crit'Air/ZFE, équipements.",
-    "07 Premiers secours": "Protéger, alerter, secourir : une question à l'examen, toujours sur ce socle. Numéros d'urgence, PLS, RCP, DAE, obligations après un accident.",
+    "07 Premiers secours": "Protéger, alerter, secourir : choisir l’action selon la situation. Numéros d'urgence, PLS, RCP, DAE, obligations après un accident.",
     "08 Prendre et quitter son véhicule": "Vérifications, installation au poste de conduite (siège, appuie-tête, rétroviseurs, ceinture), quitter le véhicule (portière, pente, enfants).",
     "09 Mécanique et équipements": "Voyants du tableau de bord (symboles ISO en couleur réelle), pneus, niveaux, freinage, feux, aides à la conduite, dépannage.",
     "10 Sécurité du passager et du véhicule": "Ceinture, airbags, enfants (sièges, place avant), chargement et remorque, sécurité active/passive, ADAS.",

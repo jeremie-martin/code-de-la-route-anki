@@ -1,8 +1,9 @@
 import copy
 import unittest
+from unittest.mock import patch
 
 from build.build import curriculum, load_all, validate, inline_md
-from build.learning import card_plan
+from build.learning import card_plan, objectives, annotate, validate_objectives
 from build.priority import passes_before
 from build.models import notetypes
 
@@ -20,11 +21,33 @@ class LearningTests(unittest.TestCase):
         notes = {n['id']: n for ns in self.data.values() for n in ns}
         stages = [notes[i]['_stage'] for _, i, _ in plan]
         first_extension = stages.index('approfondissement')
-        self.assertGreater(first_extension, 400)
-        self.assertLessEqual(first_extension, 600)
+        self.assertGreater(first_extension, 0)
         self.assertNotIn('socle', stages[first_extension:])
         self.assertEqual(len(plan), len(set(plan)))
         self.assertEqual({notes[i]['theme'] for _, i, _ in plan[:first_extension]}, set('XLCRUDAPMSE'))
+
+    def test_every_note_has_an_explicit_learning_objective(self):
+        for notes in self.data.values():
+            for n in notes:
+                self.assertTrue(n['_objectives'], n['id'])
+        data = copy.deepcopy(self.data)
+        orphan = copy.deepcopy(data['questions'][0])
+        orphan['id'] = 'test-unassigned-note'
+        data['questions'].append(orphan)
+        annotate(data)
+        self.assertTrue(any('test-unassigned-note' in e for e in validate_objectives(data)))
+
+    def test_foundation_has_no_numerical_ceiling(self):
+        data = copy.deepcopy(self.data)
+        manifest = copy.deepcopy(objectives())
+        for index in range(700):
+            note = copy.deepcopy(data['questions'][0])
+            note['id'] = f'test-additional-purpose-{index}'
+            data['questions'].append(note)
+            manifest[0]['notes'].append(note['id'])
+        with patch('build.learning.objectives', return_value=manifest):
+            annotate(data)
+            self.assertEqual(validate_objectives(data), [])
 
     def test_pairs_require_both_images_first(self):
         plan = card_plan(self.data, curriculum(self.data))

@@ -9,12 +9,17 @@
   sous_theme: verifications
   source: "REMC (compétence 1) ; securite-routiere.gouv.fr — Bien préparer son trajet"
 - id: p-verif-chargement-important
-  question: "Je charge le coffre de valises pour partir en vacances : qu'est-ce que je règle avant de démarrer ?"
-  reponse: "J'augmente la pression des pneus selon la notice et je corrige la hauteur des feux de croisement vers le bas ; on ne diminue jamais la pression d'un véhicule chargé."
-  explication: "Question officielle 2023 (Q1). Chargé, le véhicule s'affaisse à l'arrière : les feux montent et éblouissent, et des pneus sous-gonflés chauffent. Le freinage s'allonge aussi."
+  question: 'Je charge le coffre de valises pour partir en vacances : qu''est-ce que je règle avant de démarrer
+    ?'
+  reponse: Je règle la pression à la valeur prévue pour cette charge et j’adapte la hauteur des feux selon la notice,
+    sauf correction automatique.
+  explication: La valeur constructeur décide ; ne pas ajouter une pression fixe ni supposer que tous les véhicules
+    ont le même réglage manuel.
   theme: P
   sous_theme: verifications
-  source: "Sécurité routière — Exemples de nouvelles questions (Q1) ; notices constructeurs"
+  source: Sécurité routière — Exemples de nouvelles questions (Q1) ; notices constructeurs
+  tags:
+  - revision::v3_1
 - id: p-verif-pare-brise
   question: "Matin d'hiver, je suis pressé : le pare-brise est givré sauf un hublot dégagé devant moi. Je pars ?"
   reponse: "Non : je dégivre et je désembue toute la surface vitrée, rétroviseurs compris, avant de démarrer. Un champ de vision réduit masque piétons et deux-roues (R412-6)."

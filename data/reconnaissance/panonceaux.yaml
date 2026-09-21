@@ -617,11 +617,13 @@
   image:
     commons: France road sign M9c.svg
   nom: Cédez le passage (inscription)
-  signification: Panonceau portant l'inscription « Cédez le passage », utilisé pour renforcer un panneau (ex. sous AB3a dans certains cas, sous C24a).
+  signification: Inscription « Cédez le passage », complétant le panneau AB3a.
   theme: L
   sous_theme: panonceaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  tags:
+  - revision::v3_1
 - id: m9d
   type: panonceau
   code: M9d
@@ -684,25 +686,29 @@
   image:
     commons: France road sign M9v1.svg
   nom: « Interdit sauf vélos » (la prescription ne s'applique pas aux cyclistes)
-  signification: '« INTERDIT SAUF » + vélo : la prescription du panneau ne s''applique pas aux cyclistes. Sous B1, ils circulent à contresens.'
-  conduite: 'En voiture : s''attendre à croiser des cyclistes en face dans une rue à sens unique.'
+  signification: La prescription ne s’applique pas aux cycles, aux EDPM ni aux cyclomobiles légers.
+  conduite: Sous un sens interdit, anticiper ces usagers venant en face ; vérifier la voie avant de tourner.
   complement: M9v2 porte « SAUF » + vélo, même signification ; M9v3/M9v4 font de même pour les cyclomoteurs.
   theme: L
   sous_theme: panonceaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  tags:
+  - revision::v3_1
 - id: m9v2
   type: panonceau
   code: M9v2
   image:
     commons: France road sign M9v2.svg
   nom: « Sauf vélos »
-  signification: 'Même signification que M9v1 : la prescription ne s''applique pas aux cyclistes ; inscription « SAUF » + pictogramme vélo.'
-  conduite: Même conduite que M9v1.
+  signification: La prescription ne s’applique pas aux cycles, aux EDPM ni aux cyclomobiles légers.
+  conduite: Sous un sens interdit, anticiper ces usagers venant en face ; vérifier la voie avant de tourner.
   theme: L
   sous_theme: panonceaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  tags:
+  - revision::v3_1
 - id: m9z
   type: panonceau
   code: M9z

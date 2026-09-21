@@ -38,7 +38,7 @@ quatrième. Les schémas entraînent une partie de l’observation, mais une ima
 n’est pas un test de perception sur une scène nouvelle. Les séries extérieures doivent donc commencer
 avant la fin du deck et guider la révision, pas seulement servir de répétition générale finale.
 
-La réussite des cartes ne se convertit pas en score ETG. Une sélection de 552 cartes n’est pas une
+La réussite des cartes ne se convertit pas en score ETG. Une étape introductive n’est pas une
 liste de questions probables : c’est un premier ensemble de connaissances et décisions, avec une
 bibliothèque plus large disponible selon les besoins. Les choix précis figurent dans
 [la carte des compétences](02-carte-des-connaissances.md) et [l’audit v3](06-audit-v3.md).

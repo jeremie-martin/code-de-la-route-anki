@@ -1,12 +1,16 @@
 # L — Circulation : cartes de décision (situation → décision + raison). Voir docs/research/brief-v2-redaction.md.
 # Les listes de la v1 ont été découpées en décisions et en affirmations (data/affirmations/02_circulation.yaml).
 - id: l-priorite-droite-defaut
-  question: À une intersection sans panneau, sans feu et sans marquage, qui passe en premier ?
-  reponse: Le véhicule qui vient de ma droite — quelle que soit sa taille ou sa vitesse, et même s'il s'agit d'un vélo ou d'une trottinette.
-  explication: 'Règle par défaut (R415-5), valable en agglomération comme hors agglomération, en zone 30 et sur un rond-point sans panneau AB25. J''approche au ralenti pour pouvoir m''arrêter. Refus de priorité : 135 €, 4 points.'
+  question: Deux véhicules arrivent sur des routes publiques à une intersection sans signalisation. Aucun ne bénéficie
+    d’un régime spécial. À qui dois-je céder ?
+  reponse: Au véhicule venant de ma droite, même s’il s’agit d’un vélo ou d’un EDPM.
+  explication: Une sortie de parking, un chemin de terre ou un véhicule prioritaire annoncé demande une autre analyse
+    ; ne pas décider seulement d’après l’absence de panneau.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-5
+  tags:
+  - revision::v3_1
 - id: l-sortie-parking-priorite
   question: 'Je sors d''un parking de supermarché : je dois franchir le trottoir puis m''engager dans la rue. Qui passe avant moi ?'
   reponse: 'Tout le monde : les piétons qui marchent sur le trottoir et tous les véhicules de la rue, qu''ils viennent de ma gauche ou de ma droite.'
@@ -108,12 +112,17 @@
   sous_theme: depassement
   source: Code de la route, art. R414-10
 - id: l-depassement-interdit-lieux
-  question: Sur une route à double sens, qu'est-ce qui m'interdit de dépasser, indépendamment du trafic ?
-  reponse: Une visibilité insuffisante vers l'avant (virage ou sommet de côte) ; une ligne continue de mon côté (seule ou mixte) ; un panneau B3.
-  explication: 'Dépassement dangereux : 135 €, 3 points. Une ligne de dissuasion (traits longs, espaces courts) n''interdit pas mais déconseille ; sans visibilité, un marquage discontinu ne protège pas.'
+  question: Sur une route à double sens, je veux dépasser une voiture en empruntant la voie opposée. Quels indices
+    peuvent interdire cette manœuvre ?
+  reponse: Une visibilité insuffisante, une ligne continue de mon côté ou un panneau B3. Même sans ces obstacles,
+    je dois vérifier le trafic et pouvoir me rabattre sans gêner.
+  explication: Ce cas concerne le dépassement d’une voiture en utilisant le sens opposé ; ne pas en déduire une
+    interdiction générale de tout dépassement sur une chaussée à plusieurs voies.
   theme: L
   sous_theme: depassement
-  source: Code de la route, art. R414-11 à R414-14
+  source: Code de la route, R414-4 et R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
+  tags:
+  - revision::v3_1
 - id: l-depassement-interdit-lieux-2
   question: Quels lieux interdisent de dépasser un véhicule (à quatre roues), même avec une bonne visibilité ?
   reponse: Les intersections où l'on n'est pas prioritaire, les passages à niveau sans barrière, l'approche d'un passage piéton où un véhicule est arrêté ou ralentit, et un tramway ou un train arrêté côté voyageurs.

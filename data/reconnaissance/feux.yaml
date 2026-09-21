@@ -51,13 +51,16 @@
     params:
       state: orange_clignotant
   nom: Feu jaune clignotant
-  signification: 'Passage autorisé avec prudence : les feux ne règlent plus l''intersection, on applique les panneaux ou, à défaut, la priorité à droite.'
+  signification: Passage prudent, en respectant les panneaux de priorité et les autres règles de priorité.
   conduite: Ralentir et appliquer le panneau placé sous le feu (STOP, cédez-le-passage) ou, à défaut, la priorité à droite.
   piege: Un feu jaune clignotant seul sur un panneau (R1) n'est qu'un renfort d'attention, pas un régime de priorité.
   theme: L
   sous_theme: feux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  complement: 'Au milieu : installation momentanément au clignotant. En bas : peut remplacer le vert dans un cycle normal. Ne pas conclure systématiquement à une panne.'
+  tags:
+  - revision::v3_1
 - id: feu-rouge-clignotant
   type: feu
   image:
@@ -85,8 +88,10 @@
   theme: L
   sous_theme: feux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: 'Pas de jaune pour les piétons : le vert peut clignoter puis passer directement au rouge.'
+  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  piege: Vert autorise à commencer la traversée ; au rouge, ne pas s’engager. En voiture, laisser finir les piétons déjà engagés.
+  tags:
+  - revision::v3_1
 - id: r13
   type: feu
   code: R13
@@ -135,8 +140,10 @@
   theme: L
   sous_theme: feux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: Flèche JAUNE clignotante (R16) = je cède ; flèche VERTE (R14) = passage protégé.
+  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  piege: 'Flèche jaune clignotante : autorisation conditionnelle, sans priorité sur les usagers dont on coupe la trajectoire.'
+  tags:
+  - revision::v3_1
 - id: r17
   type: feu
   code: R17

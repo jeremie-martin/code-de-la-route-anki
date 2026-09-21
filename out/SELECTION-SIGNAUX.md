@@ -1,0 +1,23 @@
+# Choix de représentation des signaux
+
+Pas de filtre par rareté ni de plafond. Ces entrées de l’inventaire ne produisent pas une carte de reconnaissance distincte pour les raisons ci-dessous. Une couverture textuelle entraîne la règle, pas la reconnaissance visuelle de toutes ses variantes.
+
+| Entrées | Raison | Cartes correspondantes |
+|---|---|---|
+| CE51 | Dispositif écotaxe abandonné : pas une règle actuelle à apprendre pour le permis B. |  |
+| CE100, CE15e, CE15f | Enseignes commerciales : la marque ne change pas le service ni la conduite attendue. Apprendre les services et leur combinaison. | `ce15a`, `ce15c`, `ce16` |
+| FEU-vert-clignotant | Entrée descriptive d’un signal absent de la signalisation française, pas un signal à inventer en image. | `feu-vert`, `feu-jaune-fixe` |
+| R11, R11j, R24, FEU-detresse, FEU-tunnel-fermeture | La même information visuelle et la décision sont déjà enseignées avec les feux correspondants et leurs applications. | `feu-rouge`, `feu-jaune-clignotant`, `feu-rouge-clignotant`, `voyant-detresse`, `r-tunnel-incendie` |
+| R1, R15, R19, R22, R25, FEU-decompte | Fonctions à couvrir dans les questions complémentaires de feux ; ne pas générer une image non vérifiée à partir de cette entrée sans média. | `l-feu-alerte-r1`, `l-feu-modal-anticipation`, `l-feu-cycliste-r19`, `l-feu-acces-regule`, `l-feu-pieton-tram`, `l-decompte-pieton` |
+| PMV | Une question d’application entraîne la lecture du message et sa prescription plutôt que la reconnaissance d’un boîtier lumineux. | `l-pmv-limitation` |
+| AGENT-nuit-baton, AGENT-injonction-arret, AGENT-signaleur-chantier, AGENT-vehicule-prioritaire | Les injonctions et gestes sont enseignés par leurs actions, le sens du véhicule ou des gestes reste déterminant. | `agent-bras-leve`, `agent-bras-tendu-face`, `k10a`, `k10b`, `u-vehicule-prioritaire-feu-rouge`, `d-refus-obtemperer` |
+| SR2, SR4, SR50, SR3c1, SR3c2, SR3c3, SR3d, SR-INTERFILE, VR-SR-INFO | Messages écrits et variantes de rappel : leur portée est enseignée dans les règles, le contrôle et les catégories indiquées ; aucun nouveau droit ne vient du panneau d’information. | `c-autoroute-deux-traits`, `sr3a`, `sr3b`, `m9k1`, `m9k2`, `m9l`, `u-interfiles-chiffres`, `e-covoiturage-voie` |
+| VR-COULOIR-CONTRESENS | Le contresens réservé se lit sur l’affectation des voies et les catégories ; consolidation de la lecture de C24 plutôt qu’une image générique. | `c24a`, `c24c`, `u-voie-bus` |
+| MARQ-fleches-rabattement, MARQ-ralentisseur-dos-d-ane, MARQ-coussin-berlinois | La flèche de rabattement et les surélévations ont déjà des cartes visuelles ; leur fonction prime sur les dimensions de construction. | `marq-ligne-annonce`, `marq-ralentisseur-triangles`, `marq-plateau-sureleve` |
+| MARQ-inscriptions-chaussee, MARQ-stationnement-emplacements, MARQ-quadrillage-jaune, MARQ-bandes-rugueuses, MARQ-voie-vehicules-lents | Lire les inscriptions et la situation : les fonctions correspondantes sont traitées explicitement dans les questions de marquage complémentaires. | `u-voie-bus`, `aff-u-place-pmr`, `l-quadrillage-carrefour`, `l-bandes-rugueuses`, `l-voie-lents` |
+| D-COULEUR-VELO, D-COULEUR-PIETON, D70, Dc-SIL, H-TOURISTIQUE | Le destinataire et le message du jalonnement sont exercés dans la lecture de direction ; ne pas réciter la nomenclature des supports. | `l-jalonnement-destinataire`, `d-couleur-marron`, `d-couleur-jaune` |
+| E32, E33a, E33b, E34a, E34c, E36a, E36b, E37a, E37b, E38, E39, E45, E46, E47, E41, E50, E60 | Les repères et cartouches sont enseignés par une question de lecture et de localisation ; la catégorie administrative ne fixe pas à elle seule la vitesse. | `l-reperes-localisation`, `l-vocab-routes-lettres`, `e42`, `e43`, `e44` |
+| J15, J16, J17, K5c | Renforcement du guidage, sans nouvelle priorité : la question de guidage complète les balises déjà représentées. | `l-guidage-reflecteurs`, `j6`, `j11`, `j12`, `k5b`, `k5d` |
+| G2, G3, K15 | Les barrières, le feu rouge, l’électrification et le gabarit sont traités par leurs règles et signaux associés. | `r-pn-feu-rouge-clignotant`, `r-pn-barrieres-ouverture`, `m9b`, `b12` |
+| KS1, KD62 | Numéro et confirmation d’un itinéraire de déviation : application de lecture plutôt que code administratif à réciter. | `l-jalonnement-destinataire`, `kd21`, `kd42` |
+| C60, C61, C63 | Annonce progressive de péage ; choix de voie et paiement enseignés avec pictogrammes et application. | `r-autoroute-peage`, `c62`, `c64a`, `c64b`, `c64c1`, `c64c2`, `c64d` |

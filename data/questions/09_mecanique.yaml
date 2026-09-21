@@ -22,11 +22,15 @@
   source: securite-routiere.gouv.fr — Pneus ; Michelin — Vérifier la pression
 - id: m-pneus-usure-1-6
   question: À partir de quelle profondeur de sculpture un pneu doit-il être remplacé, et comment la vérifier ?
-  reponse: 'À 1,6 mm (minimum légal) : les témoins d''usure moulés dans les rainures affleurent la bande de roulement ; on recommande de changer dès 3 mm (4 mm en hiver).'
-  explication: 'Pneus lisses, toile apparente ou flanc coupé : 135 € et immobilisation. Une hernie ou une coupure sur le flanc impose le remplacement immédiat (un flanc ne se répare pas, contrairement à la bande de roulement). Sur un même essieu : mêmes marque, dimension et type.'
+  reponse: 'Le minimum légal est 1,6 mm : les témoins d’usure permettent de repérer cette limite. Contrôler aussi
+    coupures, déformations et usure irrégulière.'
+  explication: Un pneu endommagé peut devoir être remplacé avant d’atteindre la limite de sculpture. Les recommandations
+    supplémentaires dépendent du pneu et de son usage.
   theme: M
   sous_theme: pneus
   source: Code de la route, art. R314-1 ; arrêté du 18 juillet 2019
+  tags:
+  - revision::v3_1
 - id: m-niveau-huile
   question: Comment contrôle-t-on le niveau d'huile moteur ?
   reponse: 'Sur sol plat et moteur froid (ou dix minutes après l''arrêt) : je sors la jauge, je l''essuie, je la replonge et je lis ; le niveau doit rester entre mini et maxi.'
@@ -50,19 +54,27 @@
   source: Ornikar — Liquide de frein ; lepermislibre
 - id: m-plaquettes-usure
   question: Quels signes annoncent des plaquettes de frein usées ?
-  reponse: Un grincement métallique au freinage, un voyant orange d'usure et un niveau de liquide de frein qui baisse peu à peu ; le freinage devient moins efficace.
-  explication: 'Des amortisseurs usés (la caisse rebondit plus d''une fois quand on appuie sur une aile) allongent aussi le freinage, jusqu''à 20 %. Les plaquettes se remplacent par essieu, avant que les disques ne soient attaqués.'
+  reponse: Un témoin d’usure ou un bruit anormal doit conduire à un contrôle. Une baisse du liquide peut accompagner
+    l’usure, mais aussi signaler une fuite.
+  explication: Ne pas diagnostiquer une simple usure ni se contenter de remettre du liquide. Un freinage anormal
+    ou une alerte grave exige l’arrêt en sécurité.
   theme: M
   sous_theme: entretien
   source: Ornikar — Plaquettes et amortisseurs ; Stych — Pannes et dysfonctionnements
+  tags:
+  - revision::v3_1
 - id: m-batterie-cables
-  question: Dans quel ordre branche-t-on des câbles de démarrage ?
-  reponse: 'Le rouge d''abord : borne + de la batterie à plat puis + de la donneuse ; ensuite le noir sur le − de la donneuse, et en dernier sur une masse métallique du véhicule en panne.'
-  explication: On débranche dans l'ordre inverse. Batterie 12 V, durée de vie 4-5 ans. Le voyant batterie rouge en roulant signale un défaut de charge (alternateur, courroie), pas seulement une batterie vide.
+  question: Avant de démarrer avec des câbles, quelle information dois-je vérifier ?
+  reponse: 'La procédure du constructeur : points de branchement, tension compatible et autorisation d’utiliser
+    des câbles. Je ne transpose pas une procédure à tous les véhicules.'
+  explication: Les points de masse et les restrictions diffèrent, notamment sur hybrides et électriques. Une batterie
+    endommagée ou une procédure inconnue appelle une assistance.
   theme: M
   sous_theme: entretien
   importance: utile
   source: APRR — Utiliser des câbles de démarrage ; lepermislibre
+  tags:
+  - revision::v3_1
 - id: m-carburants-etiquettes
   question: Que signifient les étiquettes ronde, carrée et en losange sur les pistolets de carburant ?
   reponse: Rond = essence ; carré = gazole ; losange = gaz (GPL, GNV ou hydrogène).
@@ -188,13 +200,18 @@
   tags:
   - revision::v3
 - id: m-conduite-automatisee
-  question: Avec un véhicule à conduite partiellement automatisée (niveau 2), le conducteur peut-il relâcher son attention ?
-  reponse: 'Non : il garde les mains sur le volant et doit pouvoir reprendre la main à tout instant ; il reste responsable. Seuls les niveaux 3 et plus permettent de déléguer.'
-  explication: 'Niveaux SAE : 0 aucune aide, 1 assistance, 2 partielle, 3 conditionnelle, 4 haute, 5 totale. En France, la conduite automatisée est encadrée depuis septembre 2022 (décret 2021-873).'
+  question: Avec un véhicule à conduite partiellement automatisée (niveau 2), le conducteur peut-il relâcher son
+    attention ?
+  reponse: 'Non : il surveille en permanence la circulation et doit pouvoir reprendre les commandes immédiatement,
+    selon les consignes du système.'
+  explication: 'Au niveau 2, accélération et direction assistées ne transfèrent pas la tâche de surveillance. Les
+    fonctions autorisées à un autre niveau ont des conditions spécifiques : ne pas généraliser.'
   theme: M
   sous_theme: adas
   importance: utile
   source: Décret n° 2021-873 ; securite-routiere.gouv.fr — ADAS
+  tags:
+  - revision::v3_1
 - id: m-panne-procedure-route
   question: 'Mon véhicule tombe en panne sur une route ordinaire : que faire dans l''ordre ?'
   reponse: Je signale et me range en sécurité ; gilet avant de sortir ; occupants à l’abri ; triangle à au moins

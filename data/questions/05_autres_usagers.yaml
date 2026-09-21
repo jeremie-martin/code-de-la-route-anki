@@ -241,12 +241,17 @@
   sous_theme: motos
   source: 'Code en Poche — Les motos ; Code de la route, art. R414-4'
 - id: u-pl-insertion-autoroute
-  question: 'Sur autoroute, un poids lourd chargé met son clignotant pour s''insérer depuis une bretelle, à ma hauteur. Que fais-je ?'
-  reponse: 'Je change de voie si je peux le faire sans danger, sinon je lève le pied pour lui ouvrir un espace : chargé, il ne peut pas atteindre la vitesse du trafic au bout de la voie d''accélération.'
-  explication: 'Il reste non prioritaire (R421-3), mais le bloquer l''obligerait à s''arrêter en bout de bretelle. Ne jamais accélérer pour « fermer la porte » à un véhicule qui s''insère.'
+  question: Sur autoroute, un poids lourd chargé met son clignotant pour s'insérer depuis une bretelle, à ma hauteur.
+    Que fais-je ?
+  reponse: Je facilite son insertion si possible, en ajustant mon allure ou en changeant de voie après contrôles.
+    Je ne crée pas un danger pour lui ouvrir un espace.
+  explication: Le poids lourd reste tenu de céder à l’insertion. Son accélération peut être limitée ; elle n’est
+    pas identique pour tous les véhicules et toutes les bretelles.
   theme: U
   sous_theme: poids_lourds
-  source: 'Code de la route, art. R421-3 ; coursdecode — Les poids lourds'
+  source: Code de la route, art. R421-3 ; coursdecode — Les poids lourds
+  tags:
+  - revision::v3_1
 - id: u-edpm-hors-agglo
   question: 'Je suis en trottinette électrique et je veux rejoindre le village voisin par une départementale limitée à 80 km/h. Puis-je ?'
   reponse: 'Non : hors agglomération, un EDPM ne circule que sur les voies vertes et les pistes cyclables, sauf autorisation locale sur une route limitée à 80 km/h — et alors casque, gilet et feux allumés sont exigés.'

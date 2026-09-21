@@ -1,5 +1,9 @@
 # Audit et réalisation v3 — 21 septembre 2026
 
+> État historique du commit `316dffb`. La [révision suivante](08-integration-complete.md) supprime
+> le plafond, étend l’intégration à toutes les notes et recommande le paquet complet.
+> Les nombres et arbitrages ci-dessous décrivent cette première révision.
+
 ## Verdict
 
 L’architecture bibliothèque YAML → médias → paquet Anki mérite d’être conservée. En revanche,
@@ -39,7 +43,7 @@ de la banque confidentielle ; les vingt exemples publics ne suffisent pas à les
 
 Les variantes moins fréquentes, sanctions détaillées, dates d’équipement, statistiques et repères
 chiffrés secondaires sont accessibles en approfondissement. Ils ne conditionnent plus le premier tour
-de tous les thèmes. Le plafond de 600 cartes oblige à arbitrer tout nouvel ajout. Le socle n’est pas
+de tous les thèmes. Un plafond de 600 cartes avait été introduit ici ; il est retiré dans la révision suivante. Le socle n’est pas
 une certification de complétude : les lacunes identifiées en séries nouvelles doivent faire évoluer
 la sélection.
 

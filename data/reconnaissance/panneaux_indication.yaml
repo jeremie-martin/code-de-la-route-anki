@@ -539,12 +539,14 @@
   image:
     commons: France road sign C64d2.svg
   nom: 'Voie de péage : paiement par abonnement (télépéage)'
-  signification: Voie réservée aux véhicules équipés d'un badge de télépéage ; passage sans arrêt à vitesse réduite (30 km/h).
-  conduite: N'emprunter cette voie qu'avec un badge ; rouler à 30 km/h maximum, ne pas talonner le véhicule précédent.
+  signification: Voie de péage pour les véhicules munis d’un badge de télépéage.
+  conduite: 'Suivre la limitation affichée : un passage à 30 km/h exige une voie signalée pour cela, sinon ralentir jusqu’à l’arrêt si nécessaire.'
   theme: L
   sous_theme: panneaux
   importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  tags:
+  - revision::v3_1
 - id: c65a
   type: panneau
   code: C65a
@@ -593,11 +595,13 @@
   signification: 'Début d''une route pour automobiles réservée aux véhicules à moteur : interdite aux piétons, cycles, cyclomoteurs et véhicules lents.'
   conduite: S'insérer par la voie d'accélération ; ni arrêt, ni stationnement, ni demi-tour, ni marche arrière.
   complement: 'Vitesse maximale 110 km/h si 2×2 voies avec séparateur (100 sous la pluie), 80 sur route bidirectionnelle. Fin : C108.'
-  piege: C107 (voiture de face) = route pour automobiles, 110 max ; C207 (pont blanc) = autoroute, 130 max.
+  piege: 'Le panneau ne fixe pas à lui seul la vitesse maximale : lire la route, les limitations et les conditions.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  tags:
+  - revision::v3_1
 - id: c108
   type: panneau
   code: C108
@@ -666,13 +670,16 @@
   image:
     commons: France road sign C115.svg
   nom: Voie verte
-  signification: 'Voie réservée à la circulation des piétons et des véhicules non motorisés (cycles, rollers, cavaliers selon arrêté) : interdite à tous les véhicules à moteur (créé en 2008).'
-  conduite: 'En voiture : ne pas s''y engager.'
-  complement: 'Au début de la voie verte. Fin : C116.'
+  signification: Voie verte réservée notamment aux piétons, cycles, EDPM, cyclomobiles légers et cavaliers, avec dérogations locales possibles.
+  conduite: En voiture, ne pas y entrer sans autorisation. Les usagers admis partagent l’espace en protégeant les plus vulnérables.
+  complement: 'Fin : C116. R110-2 et R411-3-2.'
   theme: L
   sous_theme: panneaux
   importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: Code de la route, R110-2, R411-3-2 et R412-43-1 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006143859
+  piege: Une trottinette électrique n’est pas interdite du seul fait de son moteur.
+  tags:
+  - revision::v3_1
 - id: c116
   type: panneau
   code: C116

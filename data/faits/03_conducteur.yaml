@@ -63,17 +63,25 @@
   sous_theme: distances
   source: securite-routiere.gouv.fr — La vitesse et la conduite ; IISR 7e partie, art. 113-1
 - id: c-telephone-5s
-  texte: Lire un SMS détourne les yeux de la route environ {{c1::5 secondes}}, soit {{c2::70 m}} parcourus à 50 km/h (≈ 180 m à 130 km/h) ; le risque d'accident est multiplié par {{c3::3}} au téléphone et par {{c4::23}} en lisant ou en écrivant un message.
-  explication: 'Le smartphone cumule 4 distractions : visuelle, cognitive, auditive et physique, et réduit le champ de vision de 30 à 50 %.'
+  texte: 'Exercice : quitter la route des yeux {{c1::5 secondes}} à 50 km/h fait parcourir environ {{c2::70 m}}
+    sans la regarder. Le téléphone détourne aussi l’attention {{c3::mentale}} et, s’il est manipulé, {{c4::manuelle}}.'
+  explication: 50 / 3,6 × 5 ≈ 69,4 m. Les cinq secondes sont une durée d’exercice, pas celle de tout SMS ; le mains-libres
+    ne supprime pas la distraction mentale.
   theme: C
   sous_theme: vigilance
-  source: securite-routiere.gouv.fr — Le téléphone et la conduite
+  source: Calcul v/3,6 × durée ; Sécurité routière — téléphone et distraction
+  tags:
+  - revision::v3_1
 - id: c-champ-visuel-chiffres
-  texte: 'Champ visuel du conducteur : environ {{c1::180°}} à l''arrêt, 100° à 40 km/h, 75° à 70 km/h, {{c2::45°}} à 100 km/h et seulement {{c3::30°}} à 130 km/h.'
-  explication: 'Barème enseigné par les auto-écoles ; la Sécurité routière ne cite explicitement que 180° à l''arrêt, 45° à 100 km/h et 30° à 130 km/h. À grande vitesse, seule la vision centrale reste utile : les piétons et véhicules sur les côtés ne sont plus perçus (« effet tunnel »).'
+  texte: Quand la vitesse augmente, le champ d’attention utile tend à se {{c1::rétrécir}} ; les indices {{c2::latéraux}}
+    risquent d’être manqués. Pour mieux les détecter, il faut {{c3::adapter l’allure et explorer du regard}}.
+  explication: Ne pas apprendre une table d’angles comme une mesure garantie de sa vision à chaque vitesse. Le champ
+    anatomique et le champ effectivement exploré ne sont pas identiques.
   theme: C
   sous_theme: perception
   source: securite-routiere.gouv.fr — Dépliant La vue ; Conduire sur autoroute ; En Voiture Simone — Champ visuel
+  tags:
+  - revision::v3_1
 - id: c-vue-90-pourcent
   texte: Environ {{c1::90 %}} des informations utiles à la conduite passent par la vue ; l'acuité visuelle exigée pour le permis B est d'au moins {{c2::5/10}} avec les deux yeux (avec correction).
   explication: 'Arrêté du 28 mars 2022 : acuité binoculaire ≥ 5/10 (si un œil voit moins de 1/10, l''autre doit atteindre 5/10) et champ visuel horizontal ≥ 120°. Avec lunettes ou lentilles obligatoires, le permis porte le code 01 : conduire sans, c''est 135 € et 3 points. La baisse de la vue est progressive et passe inaperçue : contrôle régulier conseillé.'
@@ -103,11 +111,15 @@
   tags:
   - revision::v3
 - id: c-verre-standard
-  texte: Un verre « standard » (25 cl de bière à 5°, 10 cl de vin à 12°, 3 cl d'alcool à 40°) contient environ {{c1::10 g}} d'alcool pur et élève l'alcoolémie d'environ {{c2::0,20 à 0,25 g/L}} ; deux verres suffisent pour atteindre 0,5 g/L.
-  explication: Plus chez une femme ou une personne mince (jusqu'à 0,30 g/L par verre). Les doses servies à la maison sont plus généreuses qu'au bar (question officielle 2023).
+  texte: 'Un verre standard contient environ {{c1::10 g}} d’alcool pur. Le taux d’alcoolémie qui en résulte {{c2::varie
+    selon la personne et les conditions}} : un nombre de verres ne garantit pas de rester sous le seuil.'
+  explication: Les doses servies à domicile peuvent dépasser le verre standard. Alimentation, corpulence et délai
+    modifient le taux ; ne pas calculer une permission de conduire avec un nombre de verres.
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code en Poche
+  tags:
+  - revision::v3_1
 - id: c-alcool-elimination
   texte: Le foie élimine l'alcool à raison de {{c1::0,10 à 0,15 g/L}} par heure (≈ 2 h 30 par verre) ; le pic d'alcoolémie survient {{c2::15 à 30 min}} après le dernier verre à jeun, {{c3::1 h}} au cours d'un repas.
   explication: Rien n'accélère l'élimination (ni café, ni douche, ni sport). Après une soirée, on peut être positif le lendemain matin.

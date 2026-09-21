@@ -3,38 +3,45 @@
 Un deck Anki en français pour préparer l’ETG du permis B. L’objectif est de **reconnaître un indice,
 retrouver la règle et prendre une décision justifiée**, pas de réciter un catalogue de panneaux.
 
-**Commencer par [le paquet Socle](out/Code-de-la-route-2026-Socle.apkg)** : **552 cartes / 483 notes**,
-organisées autour de **41 objectifs**, couvrant les dix thèmes de l’examen et sa méthode de lecture.
-Le [paquet complet](out/Code-de-la-route-2026.apkg) contient **1 378 cartes / 1 179 notes**, dont
-exactement ce même socle, suivi de l’approfondissement. Inutile d’importer les deux à la fois.
+**Utiliser [le paquet complet](out/Code-de-la-route-2026.apkg)** : **1 427 cartes / 1 228 notes**,
+reliées à **51 objectifs pédagogiques**. Le parcours introduit les bases, puis les cas, variantes et
+approfondissements. **Aucun plafond de cartes ou de notes** : leur nombre découle des connaissances
+et des exercices nécessaires, jamais d’un objectif de brièveté.
 
-Le socle est une sélection pédagogique, **pas la promesse que seules ces cartes tomberont à l’examen**.
-Le détail de chaque choix est dans [la couverture](out/COUVERTURE.md), la progression dans
-[le programme](out/PROGRAMME.md), et le bilan critique dans [l’audit v3](docs/06-audit-v3.md).
+Le [paquet Socle](out/Code-de-la-route-2026-Socle.apkg), **632 cartes / 555 notes**, est une extraction
+facultative de la première étape. Il n’est ni le deck recommandé à lui seul, ni un seuil de préparation
+suffisant. Il partage ses identifiants avec le complet ; inutile d’importer les deux simultanément.
+Le mot historique « approfondissement » signifie la suite du parcours, pas du contenu dispensable
+ou moins soigneusement conçu. Aucune carte n’est suspendue automatiquement pour sa rareté.
 
-## Ce qui change dans la v3
+Chaque note figure dans [la couverture de tout le deck](out/COUVERTURE.md) et chaque carte, y compris
+chaque cloze sœur, dans [l’inventaire des cibles de rappel](out/ROLES.md). Les choix de représentation
+des signaux sont [explicites et motivés](out/SELECTION-SIGNAUX.md). Voir aussi
+[le programme](out/PROGRAMME.md) et [la révision sans plafond](docs/08-integration-complete.md).
 
-- **Un premier parcours réellement finissable.** Les décisions de tous les thèmes arrivent avant les
+## Principes de la version actuelle
+
+- **Une introduction ordonnée, suivie de consolidation.** Les décisions de tous les thèmes arrivent avant les
   variantes de signalisation, détails de procédure, dates et statistiques secondaires. À 20 nouvelles
-  cartes par jour, compter au moins 28 jours d’introduction du socle ; apprendre durablement demande
+  cartes par jour, compter au moins 32 jours d’introduction du socle ; apprendre durablement demande
   aussi les révisions. L’enfouissement des cartes sœurs peut allonger ce délai.
 - **Des cartes qui demandent la bonne chose.** Le sens d’un panneau suffit, son nom officiel n’est pas
   à réciter. Un vrai/faux demande une justification et la correction de l’énoncé faux. Les détails
   explicatifs du verso ne sont pas des éléments supplémentaires à restituer.
-- **Des conditions qui changent la réponse.** Dix-neuf applications ciblées : autoroute à 110 sous la
+- **Des conditions qui changent la réponse.** Applications ciblées : autoroute à 110 sous la
   pluie ou en probatoire, brouillard en zone 30, distances calculées, angle masqué, remorque, aides à
   la conduite, contrôle technique. Plusieurs scénarios demandent maintenant de lire le marquage
   dessiné au lieu de le révéler dans le texte.
 - **Des corrections de fond.** Insertion sans créneau, portée d’un feu vert, placement en giratoire,
   contrôle de l’angle mort du bon côté, pression constructeur, limites des voyants, premiers secours
-  selon le référentiel PSC de juillet 2026. [Changements par note](docs/research/revision-v3.md).
+  selon le référentiel PSC de juillet 2026. [Corrections initiales](docs/research/revision-v3.md) et [compléments](docs/research/revision-v3_1.md).
 - **Une réimportation testée.** Les identifiants des champs et gabarits sont désormais stables eux
   aussi : la v2 ne stabilisait que les decks, types de notes et GUID. Les tests importent réellement
   les paquets et vérifient les corrections, les médias et la conservation d’un historique de révision.
 
 ## Apprendre avec le deck
 
-1. **Importer le Socle** dans une version récente d’Anki et cocher « Importer les préréglages de deck ».
+1. **Importer le paquet complet** dans une version récente d’Anki et cocher « Importer les préréglages de deck ».
    Le préréglage propose 20 nouvelles cartes/jour, collecte par position croissante, tri par ordre de
    collecte et enfouissement des cartes sœurs. Étudier le **deck parent** « Code de la route 2026 ».
    Activer FSRS dans les options si souhaité : ce réglage global n’est pas activé par le paquet.
@@ -52,10 +59,11 @@ Le détail de chaque choix est dans [la couverture](out/COUVERTURE.md), la progr
    indice non vu, de la lecture de l’énoncé ou de la précipitation. Retrouver l’objectif dans
    [COUVERTURE](out/COUVERTURE.md). Réviser la règle existante avant de créer un doublon.
    Le [carnet d’erreurs](docs/07-entrainement.md) donne une méthode et un modèle.
-6. **Ajouter l’approfondissement selon les besoins.** Importer le paquet complet conserve les notes
-   du socle et ajoute les autres. On peut suspendre les nouvelles cartes portant
-   `tag:parcours::approfondissement` puis réactiver les thèmes faibles ou les signaux rencontrés.
-   Les tags historiques `importance::*` sont conservés ; **ils ne définissent plus le socle**.
+6. **Poursuivre la consolidation.** Les variantes, les panneaux et les cas particuliers font partie
+   du travail prévu. Les erreurs en séries servent à anticiper un thème ou à reprendre une règle,
+   sans attendre d’échouer pour apprendre une connaissance déjà identifiée. Un rythme soutenable
+   règle le débit quotidien, pas le périmètre du contenu. Les tags historiques `importance::*`
+   ne déterminent ni les exclusions ni un plafond de contenu.
 
 L’ETG exige 35 réponses correctes sur 40. Comme repère personnel, viser des résultats réguliers de
 37–38 sur des séries **nouvelles**, avec photos et vidéos, sans aide et au rythme de l’épreuve.
@@ -71,11 +79,11 @@ La migration est testée contre le paquet v2 présent dans le dépôt avant cett
 ancien build ou des types modifiés personnellement, inspecter les éventuels conflits dans Anki.
 
 La conservation de l’historique ne signifie pas que les réponses corrigées sont déjà connues : chercher
-`tag:revision::v3`, lire [le journal](docs/research/revision-v3.md), et revoir les cartes concernées.
+`tag:revision::v3 OR tag:revision::v3_1`, lire [le journal](docs/research/revision-v3.md), et revoir les cartes concernées.
 Certaines formulations ou réponses ont changé. Une réimportation conserve aussi l’ordre et la
 planification déjà présents : le programme publié décrit **un import neuf**, pas le réordonnancement
 automatique de votre collection. Importer le Socle ne supprime pas les cartes déjà installées ;
-suspendre `tag:parcours::approfondissement is:new` pour se concentrer sur lui.
+continuer avec le paquet complet pour couvrir toutes les étapes.
 
 ## Contenu et entretien
 
@@ -103,9 +111,10 @@ python -m build.preview --ids ab4,c-arret-somme,scn-dep-mixte-mon-cote --width 3
 ```
 
 Le premier build nécessite un accès réseau pour les médias Commons ; les suivants utilisent le cache.
-Les aperçus nécessitent Chrome/Chromium. Les sources YAML sont dans `data/`, les 41 objectifs dans
-`data/_meta/objectives.yaml`. Le build refuse les références absentes et un socle dépassant 600 cartes :
-un ajout exige un arbitrage. Les modèles, GUID, numéros de cloze, identifiants de champs et de gabarits
+Les aperçus nécessitent Chrome/Chromium. Les sources YAML sont dans `data/`, les 51 objectifs dans
+`data/_meta/objectives.yaml`. Le build refuse une note sans objectif, les références absentes et les médias manquants ;
+il ne refuse jamais un ajout à cause du nombre de cartes. Le générateur de signalisation n’exclut
+plus une catégorie parce qu’elle est marquée « rare ». Les modèles, GUID, numéros de cloze, identifiants de champs et de gabarits
 sont à préserver. [Conception](docs/03-conception-des-cartes.md), [vérification des paquets](out/VERIFICATION.md).
 
 ## Licences

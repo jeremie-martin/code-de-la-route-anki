@@ -5,13 +5,15 @@
   image:
     commons: France road sign B31.svg
   nom: Fin de toutes les interdictions précédemment signalées
-  signification: Fin de toutes les interdictions précédemment signalées et imposées aux véhicules en mouvement (vitesse, dépassement, klaxon...). Ne met pas fin aux interdictions d'arrêt ou de stationnement.
+  signification: Fin des interdictions signalées imposées aux véhicules en mouvement.
   conduite: Reprendre la vitesse réglementaire de la route et les manœuvres à nouveau autorisées.
-  piege: 'B31 (blanc, barre noire oblique) ≠ B0 (blanc, cercle rouge). B31 ne concerne QUE les véhicules en mouvement : une interdiction de stationner continue.'
+  piege: Ne met pas fin aux interdictions d’arrêt ou de stationnement ; les règles générales restent applicables.
   theme: L
   sous_theme: panneaux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  tags:
+  - revision::v3_1
 - id: b33
   type: panneau
   code: B33

@@ -4,10 +4,16 @@
 
 La décision correcte face à une **nouvelle situation**, avec une charge de révision soutenable.
 Le nombre de cartes et leur ressemblance textuelle à un QCM ne sont pas des mesures de réussite.
-Le socle sélectionne des prérequis et des discriminations utiles sur tous les thèmes ; le paquet
-complet conserve les variantes et détails. Le plafond de 600 est un budget éditorial, pas un résultat
-scientifique sur le nombre idéal de cartes. La sélection actuelle et ses raisons sont explicites dans
-`data/_meta/objectives.yaml` et exportées dans `out/COUVERTURE.md`.
+Le paquet complet est le parcours de référence. L’introduction pose des prérequis ; la consolidation
+ajoute distinctions, variantes, exceptions et entraînement. Aucun budget numérique ne décide de la
+présence d’une note. Chaque note est nommément reliée à un objectif dans `data/_meta/objectives.yaml`.
+Cette attribution explique sa place ; elle ne suffit pas à prouver sa qualité.
+
+Examiner son apport : connaissance absente, discrimination utile, application d’une règle, ou variante
+qui empêche une mauvaise généralisation. Garder plusieurs cartes quand leurs tâches diffèrent.
+Réécrire ou fusionner si elles ne font que répéter une réponse ; ajouter autant que le besoin le demande.
+Le même standard vaut dans toutes les étapes, sans réserve de cartes médiocres « facultatives ».
+L’inventaire `out/ROLES.md` expose la cible de chaque carte, y compris chaque cloze, pour cette lecture.
 
 ## Choisir la forme selon le travail demandé
 
@@ -60,12 +66,12 @@ ne lit pas la réponse française et ne valide pas les piétons, tous les feux o
 
 ## Maintenance et vérification
 
-Conserver la séparation YAML / rendu / paquet. Ajouter une compétence dans le manifeste du socle
-avec sa justification ; arbitrer si son budget est dépassé. Vérifier données, ordre, rendus et
+Conserver la séparation YAML / rendu / paquet. Ajouter une compétence dans le manifeste de tout le deck
+avec sa justification, puis rattacher explicitement chaque note à sa place dans le parcours. Vérifier données, ordre, rendus et
 réimportation avec historique. Préserver aussi les identifiants internes des champs et gabarits dans
 `data/_meta/anki_schema.json`, repris du paquet v2 publié. Ne pas confondre reproduction du contenu
 avec identité binaire : les paquets contiennent notamment des dates de génération.
 
-Voir `docs/06-audit-v3.md` pour les arbitrages, `docs/07-entrainement.md` pour le retour des séries
+Voir `docs/08-integration-complete.md` pour les arbitrages, `docs/07-entrainement.md` pour le retour des séries
 réelles. Le test final de la conception reste le transfert à des situations nouvelles, à mesurer en
 usage : aucun essai comparatif de réussite des candidats n’a été réalisé pour ce deck.

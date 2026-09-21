@@ -3,6 +3,9 @@
 Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels que déclarés sur Commons.
 
 - [File:Barrage K2.webp](https://commons.wikimedia.org/wiki/File:Barrage_K2.webp) — CC BY 3.0 — Sécurité Routière
+- [File:D21a.svg](https://commons.wikimedia.org/wiki/File:D21a.svg) — CC BY-SA 3.0 — Roulex_45
+- [File:D31b.svg](https://commons.wikimedia.org/wiki/File:D31b.svg) — CC0 — Mathgb
+- [File:D43.svg](https://commons.wikimedia.org/wiki/File:D43.svg) — CC BY-SA 3.0 — Roulex 45
 - [File:E42.svg](https://commons.wikimedia.org/wiki/File:E42.svg) — Public domain — Roulex 45
 - [File:E43.svg](https://commons.wikimedia.org/wiki/File:E43.svg) — Public domain — Roulex 45
 - [File:E44.svg](https://commons.wikimedia.org/wiki/File:E44.svg) — CC BY-SA 3.0 — Roulex 45
@@ -18,6 +21,7 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:FR road sign G1.svg](https://commons.wikimedia.org/wiki/File:FR_road_sign_G1.svg) — CC BY-SA 3.0 — Roulex_45
 - [File:FR road sign G1a.svg](https://commons.wikimedia.org/wiki/File:FR_road_sign_G1a.svg) — CC0 — มองโกเลีย๔๔
 - [File:Fanion K1.webp](https://commons.wikimedia.org/wiki/File:Fanion_K1.webp) — CC BY 3.0 — Sécurité Routière
+- [File:France Road Sign A9a.png](https://commons.wikimedia.org/wiki/File:France_Road_Sign_A9a.png) — CC BY-SA 4.0 — Jean-Michel du 01
 - [File:France Road Sign KM1.png](https://commons.wikimedia.org/wiki/File:France_Road_Sign_KM1.png) — CC BY-SA 4.0 — Jean-Michel du 01
 - [File:France Road Sign KM2.png](https://commons.wikimedia.org/wiki/File:France_Road_Sign_KM2.png) — CC BY-SA 4.0 — Jean-Michel du 01
 - [File:France road sign A13a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_A13a.svg) — CC BY-SA 3.0 — Roulex 45
@@ -125,6 +129,10 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign B45a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B45a.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B49.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B49.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B50a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B50a.svg) — CC BY-SA 4.0 — Roulex 45
+- [File:France road sign B50b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B50b.svg) — CC BY-SA 4.0 — Roulex 45
+- [File:France road sign B50c.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B50c.svg) — Public domain — Roulex 45 self-made from source above
+- [File:France road sign B50d.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B50d.svg) — CC BY-SA 4.0 — Roulex 45
+- [File:France road sign B50e.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B50e.svg) — Public domain — Roulex 45 self-made from source above
 - [File:France road sign B51 (30).svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B51_(30).svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B52.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B52.svg) — Public domain — Roulex 45 self-made from source above
 - [File:France road sign B53.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B53.svg) — Public domain — Roulex 45 self-made from source above
@@ -216,27 +224,48 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign C8.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C8.svg) — CC BY-SA 3.0 — Roulex 45 self-made from source above
 - [File:France road sign C9.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C9.svg) — CC BY-SA 4.0 — KiwiNeko14
 - [File:France road sign CE1.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE1.svg) — CC BY-SA 3.0 — Roulex_45
+- [File:France road sign CE10.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE10.svg) — Public domain — Gouvernement français, Roulex 45 self-made from source above
 - [File:France road sign CE12.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE12.svg) — Public domain — Gouvernement français, Roulex 45 self-made from source above
 - [File:France road sign CE14.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE14.svg) — Public domain — Gouvernement français, Roulex 45 self-made from source above
 - [File:France road sign CE15a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE15a.svg) — Public domain — Gouvernement français, Roulex 45 self-made from source above
 - [File:France road sign CE15c.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE15c.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE15g.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE15g.svg) — CC BY-SA 4.0 — Chabe01
+- [File:France road sign CE15h.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE15h.svg) — CC BY-SA 4.0 — Chabe01
 - [File:France road sign CE15i.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE15i.svg) — CC BY-SA 4.0 — Chabe01
+- [File:France road sign CE15j.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE15j.svg) — CC BY-SA 4.0 — Chabe01
 - [File:France road sign CE16.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE16.svg) — Public domain — Gouvernement français, Roulex 45 self-made from source above
 - [File:France road sign CE17.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE17.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE18.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE18.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE19.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE19.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE20a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE20a.svg) — Public domain — Gouvernement français, Roulex 45 self-made from source above
+- [File:France road sign CE20b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE20b.svg) — Public domain — Gouvernement français, Roulex 45 self-made from source above
 - [File:France road sign CE21.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE21.svg) — Public domain — Gouvernement français, Roulex 45 self-made from source above
 - [File:France road sign CE22.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE22.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE23.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE23.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE24.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE24.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE25.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE25.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE26.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE26.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE27.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE27.svg) — Public domain — Gouvernement français, Roulex 45 self-made from source above
+- [File:France road sign CE28.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE28.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE29.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE29.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE2a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE2a.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE2b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE2b.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE30a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE30a.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE30b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE30b.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE3a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE3a.svg) — Public domain — Gouvernement français, Roulex 45 self-made from source above
+- [File:France road sign CE3b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE3b.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE4a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE4a.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE4b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE4b.svg) — Public domain — Gouvernement français, Roulex 45 self-made from source above
 - [File:France road sign CE4c.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE4c.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE50.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE50.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE52.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE52.svg) — Public domain — Ministère de la Transition écologique et solidaire
+- [File:France road sign CE5a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE5a.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE5b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE5b.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE6a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE6a.svg) — Public domain — Roulex 45 self-made from source above
+- [File:France road sign CE6b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE6b.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE7.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE7.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE8.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE8.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
+- [File:France road sign CE9.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE9.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign D52a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_D52a.svg) — CC BY-SA 4.0 — KiwiNeko14
 - [File:France road sign D61b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_D61b.svg) — CC0 — EthanL13
 - [File:France road sign EB10.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_EB10.svg) — CC BY-SA 4.0 — Kilyann Le Hen

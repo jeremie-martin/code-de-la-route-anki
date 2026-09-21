@@ -70,12 +70,14 @@
     commons: France road sign SR3a.svg
   nom: Panneau d'annonce de radar automatique fixe (« Pour votre sécurité, contrôles automatiques »)
   signification: 'Panneau d''information annonçant une zone de contrôle automatisé de la vitesse : « Pour votre sécurité, contrôles automatiques ».'
-  conduite: 'Vérifier sa vitesse : le radar est quelques centaines de mètres plus loin. La limitation en vigueur s''applique, ni plus ni moins.'
+  conduite: Vérifier et respecter la limitation en vigueur ; ce panneau ne permet pas de déduire la distance exacte jusqu’au radar.
   complement: 'Panneau non obligatoire : les radars ne sont plus systématiquement annoncés. Les panneaux SR informent sans rien prescrire.'
   theme: L
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  tags:
+  - revision::v3_1
 - id: sr3b
   type: panneau
   code: SR3b

@@ -1,22 +1,35 @@
 # Thème E — Environnement : chiffres de l'écoconduite et de la pollution (ordres de grandeur attendus)
 - id: e-rapports-chiffres
-  texte: "Écoconduite : passer les rapports vers {{c1::2 000}} tr/min en diesel et {{c2::2 500}} tr/min en essence ; couper le moteur dès un arrêt de plus de {{c3::20 à 30 secondes}}."
-  explication: "Le moteur froid consomme jusqu'à 50 % de plus sur le premier kilomètre : on ne fait pas chauffer à l'arrêt, on roule doucement. Le Stop & Start coupe automatiquement (−10 à −15 % en ville)."
+  texte: 'Boîte manuelle : passer le rapport supérieur {{c1::sans pousser inutilement le régime}}, mais éviter le
+    {{c2::sous-régime}}. Lors d’un arrêt prolongé, couper le moteur {{c3::si les conditions et la notice le permettent}}.'
+  explication: L’indicateur de changement de rapport, la charge et la motorisation guident le choix. Ne pas imposer
+    un régime ou un délai identique à tous les véhicules.
   theme: E
   sous_theme: ecoconduite
-  source: "ADEME — Écoconduite ; En Voiture Simone ; Codeclic"
+  source: ADEME — Écoconduite ; En Voiture Simone ; Codeclic
+  tags:
+  - revision::v3_1
 - id: e-surconsommations
-  texte: "Surconsommations typiques : climatisation environ +{{c1::10 %}} sur route et jusqu'à +25 % en ville ; coffre de toit ou galerie +{{c2::10 à 15 %}} ; 100 kg de charge inutile +{{c3::5 %}} ; pneus sous-gonflés jusqu'à +{{c4::8 %}} (et usure, risque d'éclatement)."
-  explication: "À vitesse élevée, les vitres ouvertes consomment plus que la climatisation (aérodynamique) ; en ville, on aère. Un entretien négligé (filtres, huile) peut coûter jusqu'à +25 %."
+  texte: 'Quatre causes de surconsommation à limiter : usage inutile de la {{c1::climatisation}}, accessoires de
+    toit augmentant la {{c2::résistance à l’air}}, {{c3::charge}} inutile et pneus {{c4::sous-gonflés}}.'
+  explication: Les pourcentages varient selon le trajet et le véhicule. Maintenir désembuage et confort thermique
+    nécessaires à la sécurité ; régler la pression selon la notice.
   theme: E
   sous_theme: ecoconduite
-  source: "ADEME ; Codeclic — Conduite économique ; Ornikar — Conduite écologique"
+  source: ADEME ; Codeclic — Conduite économique ; Ornikar — Conduite écologique
+  tags:
+  - revision::v3_1
 - id: e-vitesse-chiffres
-  texte: "Rouler 10 km/h moins vite sur autoroute économise environ {{c1::1 L/100 km}} (≈ 5 L sur 500 km) ; passer de 130 à 120 km/h sur 100 km ne coûte que {{c2::4 minutes}}."
-  explication: "La résistance de l'air croît avec le carré de la vitesse : la vitesse stable et modérée est le premier levier d'économie. Une conduite nerveuse peut consommer jusqu'à 40 % de plus en ville qu'une conduite souple."
+  texte: 'Exercice : consommation de 7 L/100 km à 130, 6 L/100 km à 120. Sur 500 km, le gain est {{c1::5 L}}. Sur
+    100 km à vitesse constante, passer de 130 à 120 ajoute environ {{c2::4 minutes}}.'
+  explication: Le litre économisé par 100 km est une donnée de cet exercice, pas une loi universelle. Temps = distance
+    / vitesse ; hors arrêts et circulation.
   theme: E
   sous_theme: ecoconduite
-  source: "securite-routiere.gouv.fr — La vitesse ; Ornikar ; En Voiture Simone"
+  source: 'Application arithmétique : données hypothétiques explicites, t = d/v ; économie = écart de consommation
+    × distance / 100'
+  tags:
+  - revision::v3_1
 - id: e-critair-chiffres
   dedup_ok: [aff-e-diesel-critair1]
   texte: "Crit'Air : {{c1::6}} classes numérotées à partir de 0, plus les non classés ; un diesel récent (Euro 5-6, 2011+) est Crit'Air {{c2::2}} ; une essence récente, un hybride rechargeable ou un véhicule au gaz est Crit'Air {{c3::1}} ; les véhicules d'avant {{c4::1997}} sont non classés."

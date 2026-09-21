@@ -2,8 +2,8 @@
 
 Rules:
   * image = Commons file from the inventory if it resolves; else ALT_COMMONS[code]; else GEN_MAP[code]
-    (a generator spec); entries with no image are skipped and listed.
-  * include: importance essentiel/utile; rare only when in RARE_ALLOW_CATEGORIES and an image exists.
+    (a generator spec); explicit overrides take precedence. Missing images fail generation.
+  * selection: explicit, reasoned exclusions in data/_meta/sign_exclusions.yaml; no rarity filter.
   * text fields are lightly normalised (generic implantation text compressed, 'fin' folded into complement,
     notes split between 'piege' and 'complement').
 The generated files must not be edited by hand: re-running this script overwrites them, so
@@ -45,10 +45,6 @@ CAT_FILE = {
     "autre": ("autres", "panneaux"),
 }
 TYPE_BY_CAT = {"panonceau": "panonceau", "balise": "balise", "marquage": "marquage", "feux": "feu"}
-RARE_ALLOW_CATEGORIES = {"danger", "intersection_priorite", "interdiction", "obligation", "fin_prescription",
-                         "prescription_zonale", "indication", "panonceau", "balise", "temporaire",
-                         "passage_a_niveau", "localisation"}
-
 # Alternative Commons files for entries whose inventory file name is blank or wrong.
 ALT_COMMONS = {
     "A9b": "France road sign A9.svg", "M11d": "France road sign M11d.png", "KM1": "France Road Sign KM1.png", "KM2": "France Road Sign KM2.png",
@@ -137,16 +133,8 @@ GEN_MAP = {
     "E31": ("lieu_dit", {"text": "Le Bourg"}),
 }
 
-# Entries excluded on purpose (no exam value, or covered by Question cards).
-EXCLUDE = {"PMV", "FEU-decompte", "FEU-tunnel-fermeture", "FEU-vert-clignotant", "FEU-detresse", "R1", "R11", "R11j",
-           "R15", "R19", "R22", "R25", "AGENT-nuit-baton", "AGENT-injonction-arret", "AGENT-signaleur-chantier",
-           "AGENT-vehicule-prioritaire", "SR4", "SR50", "SR-INTERFILE", "VR-SR-INFO", "VR-COULOIR-CONTRESENS",
-           "MARQ-inscriptions-chaussee", "MARQ-stationnement-emplacements", "MARQ-quadrillage-jaune",
-           "MARQ-bandes-rugueuses", "MARQ-coussin-berlinois", "MARQ-ralentisseur-dos-d-ane", "MARQ-voie-vehicules-lents",
-           "D-COULEUR-VELO", "D-COULEUR-PIETON", "D70", "Dc-SIL", "H-TOURISTIQUE", "E50", "E60", "G3", "J15", "J16", "J17",
-           "K15", "KS1", "KD62", "SR3c1", "SR3c2", "SR3c3", "SR3d", "E33a", "E33b", "E34a", "E34c", "E36a", "E36b",
-           "E37a", "E37b", "E38", "E39", "E41", "E45", "E46", "E47", "E32", "SR2", "A9a", "C60", "C61", "C63", "K5c",
-           "MARQ-fleches-rabattement", "R24", "G2", "D20", "D30", "D40", "Da40", "B50b", "B50c", "B50d", "B50e"}
+# Exclusions require an editorial reason; the report links each to its teaching coverage.
+SELECTION_FILE = ROOT / "data/_meta/sign_exclusions.yaml"
 
 GENERIC_IMPLANT = re.compile(r"^Hors agglomération\s*:\s*100 à 200 m", re.I)
 
@@ -225,18 +213,30 @@ def convert():
         OVERRIDES = yaml.safe_load(OVERRIDES_FILE.read_text(encoding="utf-8")) or {}
     inv = yaml.safe_load(INV.read_text(encoding="utf-8"))
     by_file: dict[str, list] = defaultdict(list)
+    decisions = yaml.safe_load(SELECTION_FILE.read_text(encoding="utf-8"))
+    excluded = {}
+    known = {e['code'] for e in inv}
+    for decision in decisions:
+        if not decision.get('raison'):
+            raise ValueError('Exclusion sans justification')
+        for code in decision['codes']:
+            if code in excluded or code not in known:
+                raise ValueError(f'Exclusion dupliquée ou inconnue : {code}')
+            excluded[code] = decision
     skipped, missing_img = [], []
     for e in inv:
         code = e["code"]
         cat = e["categorie"]
         imp = e.get("importance", "utile")
-        if code in EXCLUDE:
-            skipped.append((code, "exclu"))
+        if code in excluded:
+            skipped.append((code, excluded[code]["raison"]))
             continue
         # image
-        image = None
+        image = OVERRIDES.get(slug(code), {}).get("image")
         wf = (e.get("wikimedia_file") or "").strip()
-        if code in GEN_MAP:
+        if image is not None:
+            pass
+        elif code in GEN_MAP:
             g, p = GEN_MAP[code]
             image = {"gen": g, "params": p}
         elif code in ALT_COMMONS and ALT_COMMONS[code]:
@@ -247,9 +247,6 @@ def convert():
                 image = {"commons": key[len("File:"):]}
         if image is None:
             missing_img.append((code, imp, e["nom"]))
-            continue
-        if imp == "rare" and cat not in RARE_ALLOW_CATEGORIES:
-            skipped.append((code, "rare hors catégories retenues"))
             continue
         if "commons" in image:
             key, entry = find(image["commons"])
@@ -299,6 +296,8 @@ def convert():
     unused = set(OVERRIDES) - {it["id"] for items in by_file.values() for it in items}
     if unused:
         print(f"ATTENTION: {len(unused)} clé(s) de {OVERRIDES_FILE.name} sans note correspondante (id erroné ou obsolète) : {sorted(unused)}", file=sys.stderr)
+    if missing_img:
+        raise ValueError(f"Signaux sélectionnés sans média : {missing_img}")
     OUT_DIR.mkdir(exist_ok=True)
     total = 0
     for fname, items in by_file.items():

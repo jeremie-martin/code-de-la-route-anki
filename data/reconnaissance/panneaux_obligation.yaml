@@ -137,14 +137,16 @@
   image:
     commons: France road sign B22a.svg
   nom: Piste ou bande cyclable obligatoire
-  signification: 'Piste ou bande cyclable obligatoire : les cyclistes doivent l''emprunter ; interdite aux autres véhicules.'
+  signification: Piste ou bande obligatoire pour les cycles concernés ; les EDPM et cyclomobiles légers doivent aussi l’utiliser dans les conditions prévues.
   conduite: 'En voiture : ne pas y rouler ni s''y arrêter ; attention aux cyclistes en la coupant pour tourner.'
   complement: 'Fin : B40. Un panonceau M4d2 peut l''ouvrir aux cyclomoteurs. S''y arrêter ou stationner : très gênant, 135 €.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
   piege: Rond bleu = obligatoire (B22a) ; carré bleu = conseillé (C113).
+  tags:
+  - revision::v3_1
 - id: b22b
   type: panneau
   code: B22b
@@ -190,14 +192,16 @@
   image:
     commons: France road sign B26.svg
   nom: Chaînes à neige obligatoires
-  signification: Obligation d'équiper d'au moins deux roues motrices de chaînes à neige (ou dispositifs équivalents) sur les routes enneigées à partir du panneau.
-  conduite: S'arrêter sur l'aire de chaînage pour monter les chaînes ; vitesse maximale 50 km/h avec chaînes.
-  complement: 'Fin : B44. Les pneus 3PMSF ne dispensent pas d''obéir au B26, sauf mention sur panonceau.'
+  signification: 'Équipement hivernal en service : chaînes sur au moins deux roues motrices, ou pneus hiver admis en équivalence pour les catégories prévues.'
+  conduite: En voiture, vérifier les pneus et le complément du panneau ; avec « Chaînes à neige obligatoires », monter les chaînes avant la section.
+  complement: 'Fin : B44. L’équivalence des pneus conformes à D314-8 existe depuis 2021.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: B26 = monter les chaînes ici ; B58 (zone) = seulement les détenir ou avoir des pneus hiver.
+  source: Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12
+  piege: Chaînes dans le coffre ne suffisent pas si le véhicule doit être équipé de chaînes montées.
+  tags:
+  - revision::v3_1
 - id: b27a
   type: panneau
   code: B27a

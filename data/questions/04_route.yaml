@@ -72,11 +72,15 @@
   - revision::v3
 - id: r-verglas-descente
   question: 'Chaussée verglacée dans une descente : quel rapport et quel frein ?'
-  reponse: 'Un rapport bas, pour être retenu par le frein moteur, et le moins de frein à pied possible : sur le verglas, un freinage bloque les roues et fait partir la voiture tout droit.'
-  explication: 'Avec l''ABS les roues ne se bloquent pas, mais la distance d''arrêt reste énorme : c''est la vitesse d''entrée dans la descente qui décide de tout.'
+  reponse: J’aborde la descente très lentement et garde des commandes progressives, avec un rapport adapté. J’évite
+    freinage brutal et rétrogradage brusque ; si l’adhérence ne permet pas de continuer en sécurité, je renonce.
+  explication: Le frein moteur peut lui aussi faire perdre l’adhérence. Ni ABS ni rapport court ne garantit de maîtriser
+    une pente verglacée.
   theme: R
   sous_theme: intemperies
   source: securite-routiere.gouv.fr — Conduire en hiver ; En Voiture Simone — Le verglas
+  tags:
+  - revision::v3_1
 - id: r-deneigement-depassement
   question: Un engin de service hivernal (saleuse, lame) travaille devant moi sur la chaussée enneigée. Puis-je le dépasser ?
   reponse: 'Non : le dépassement d''un engin de service hivernal en action est interdit à tout véhicule. Devant lui, la chaussée n''est ni raclée ni salée.'
