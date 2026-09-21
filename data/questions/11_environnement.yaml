@@ -14,8 +14,9 @@
   question: À quel régime passe-t-on les rapports pour consommer moins ?
   reponse: Je monte les rapports tôt, sans pousser le régime inutilement, en suivant l’indicateur et la notice, tout en gardant
     assez de reprise.
-  explication: Ni un régime ni un rapport à 50 km/h ne conviennent à tous les moteurs et toutes les pentes. L’allure, la charge
-    et les besoins de sécurité décident.
+  explication: 'Repère courant des supports de préparation, à défaut d’indicateur ou de notice : passer le rapport supérieur
+    vers 2 000 à 2 500 tr/min en essence, 1 500 à 2 000 tr/min en diesel. Ni un régime ni un rapport à 50 km/h ne conviennent
+    à tous les moteurs et toutes les pentes ; l’allure, la charge et les besoins de sécurité décident.'
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
@@ -25,8 +26,9 @@
   question: Les barrières d'un passage à niveau viennent de se fermer devant moi. Je laisse tourner le moteur ?
   reponse: Pour un arrêt prolongé en sécurité, je coupe le moteur si la notice le permet ; avec un Stop & Start, je laisse
     le système gérer.
-  explication: Ne pas imposer une coupure manuelle au bout d’un délai universel ; conserver les fonctions nécessaires à la
-    sécurité et au confort thermique.
+  explication: 'Repère courant des supports de préparation : au-delà d’une trentaine de secondes d’arrêt, couper le moteur
+    économise du carburant et évite des émissions inutiles. Ce n’est pas un délai réglementaire ; conserver les fonctions
+    nécessaires à la sécurité et au confort thermique.'
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2

@@ -162,3 +162,15 @@
   theme: E
   sous_theme: ecomobilite
   source: Code de la route, art. R417-10 III 3°
+- id: aff-e-freinage-regeneratif
+  contexte: Voiture électrique ou hybride, en décélération.
+  affirmation: En levant le pied, le moteur ralentit le véhicule et recharge la batterie.
+  verdict: vrai
+  pourquoi: 'C’est le freinage régénératif : le moteur fonctionne en générateur et renvoie de l’énergie à la batterie,
+    d’où l’intérêt d’anticiper au lieu de freiner tard. Son intensité dépend du réglage ; il ne remplace pas le frein
+    principal en urgence.'
+  theme: E
+  sous_theme: ecoconduite
+  source: "ADEME — Voiture électrique : conseils d’usage ; securite-routiere.gouv.fr — Les aides à la conduite (ADAS)"
+  tags:
+  - revision::v8

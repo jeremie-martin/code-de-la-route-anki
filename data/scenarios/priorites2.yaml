@@ -170,3 +170,79 @@
   source: Code de la route, art. R415-12
   tags:
   - revision::v3
+- id: scn-pd-droite-tourne-gauche
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      E: {vehicle: {colour: rouge}, goes: left}
+  check: {pair: [S, E, apres]}
+  question: "Intersection sans signalisation. La voiture rouge, à ma droite, tourne à sa gauche et va couper ma route. Qui passe en premier ?"
+  reponse: "La rouge : elle vient de ma droite. La règle du tourne-à-gauche ne la fait céder qu'aux véhicules qui arrivent en face d'elle, pas à moi."
+  explication: "Priorité à droite (R415-5), quelle que soit la direction prise par le véhicule de droite. Le tourne-à-gauche (R415-4) impose de céder aux véhicules venant en sens inverse : pour la rouge, ce serait un véhicule venant de ma gauche. Je ralentis et je la laisse tourner."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5 et R415-4"
+  tags:
+  - revision::v8
+- id: scn-t-moi-branche
+  kind: intersection
+  spec:
+    branches: [E, W, S]
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: right}
+      W: {vehicle: {colour: rouge}, goes: straight}
+  check: {pair: [S, W, avant]}
+  question: "Intersection en T sans signalisation : ma rue débouche sur la route transversale et je tourne à droite ; la voiture rouge arrive de ma gauche. Qui passe en premier ?"
+  reponse: "Moi : je suis à sa droite. Sans panneau, la route « qui continue » n'est pas prioritaire."
+  explication: "Priorité à droite (R415-5), même en T et même pour celui qui débouche d'une rue. Seuls un STOP, un cédez-le-passage ou une sortie de chemin de terre, de parking ou de voie privée changeraient l'ordre. Je vérifie que la rouge ralentit avant de m'engager."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5"
+  tags:
+  - revision::v8
+- id: scn-moi-sortie-parking
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight, private: true}
+      W: {vehicle: {colour: rouge}, goes: straight}
+  check: {pair: [S, W, apres]}
+  question: "Je sors d'un parking pour traverser la rue ; la voiture rouge arrive de ma gauche. Qui passe en premier ?"
+  reponse: "La rouge : en sortant d'un lieu non ouvert à la circulation publique, je cède le passage à tous, même à ceux qui viennent de ma gauche."
+  explication: "R415-9 : le conducteur qui débouche d'un parking, d'une station-service, d'un chemin de terre ou d'une voie privée cède le passage à tout autre véhicule, et aux piétons du trottoir qu'il franchit (R415-11). La priorité à droite ne joue pas en ma faveur ici."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-9 et R415-11"
+  tags:
+  - revision::v8
+- id: scn-pd-cycliste-droite
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      E: {vehicle: {colour: vert, kind: bike}, goes: straight}
+  check: {pair: [S, E, apres]}
+  question: "Intersection sans signalisation : un cycliste arrive de ma droite. Dois-je lui céder le passage ?"
+  reponse: "Oui : la priorité à droite vaut pour tout véhicule, vélo compris. Je ralentis et je le laisse passer."
+  explication: "R415-5 ne distingue pas les catégories de véhicules : un cycliste, une trottinette électrique ou un cyclomoteur venant de droite ont la priorité. Sa vulnérabilité impose en plus une prudence accrue (R412-6) : ne pas s'engager en comptant sur son freinage."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5 et R412-6"
+  tags:
+  - revision::v8
+- id: scn-giratoire-autre-entree
+  kind: roundabout
+  spec:
+    giratoire: true
+    vehicles:
+      - {pos: S, colour: bleu, me: true, goes: left, distance: 20}
+      - {pos: W, colour: rouge, goes: straight, distance: 22}
+  question: "Carrefour à sens giratoire (AB25 + cédez-le-passage). L'anneau est vide ; la voiture rouge attend à l'entrée située à ma gauche. Je veux prendre la troisième sortie. Puis-je m'engager ?"
+  reponse: "Oui : je ne cède qu'aux véhicules déjà dans l'anneau. Une fois engagé, c'est la rouge qui me cédera le passage à son entrée."
+  explication: "R415-10 : priorité aux usagers qui circulent sur l'anneau ; un véhicule arrêté à une autre entrée n'y est pas encore. Clignotant gauche à l'entrée puisque je dépasse la moitié de l'anneau, puis clignotant droit avant ma sortie, en contrôlant à droite."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-10"
+  tags:
+  - revision::v8

@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 36 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 33 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: b0
   type: panneau
   code: B0
@@ -247,39 +247,6 @@
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   tags:
   - revision::v3_1
-- id: b9c
-  type: panneau
-  code: B9c
-  image:
-    commons: France road sign B9c.svg
-  nom: Accès interdit aux véhicules à traction animale
-  signification: Interdiction d'accès aux véhicules à traction animale (charrettes, calèches).
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b9d
-  type: panneau
-  code: B9d
-  image:
-    commons: France road sign B9d.svg
-  nom: Accès interdit aux véhicules agricoles à moteur
-  signification: Interdiction d'accès aux véhicules agricoles à moteur (tracteurs, machines agricoles automotrices).
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b9f
-  type: panneau
-  code: B9f
-  image:
-    commons: France road sign B9f.svg
-  nom: Accès interdit aux véhicules de transport en commun de personnes
-  signification: Interdiction d'accès aux autobus et autocars.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b9g
   type: panneau
   code: B9g

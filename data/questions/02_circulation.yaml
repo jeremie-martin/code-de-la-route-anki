@@ -402,9 +402,9 @@
 - id: l-vocab-routes-lettres
   question: Que signifient les lettres A, N, D et C (ou M) devant un numéro de route ?
   reponse: A = autoroute ; N = route nationale ; D = route départementale ; C = voie communale (M = voie métropolitaine).
-  explication: 'Cartouches : rouges pour A et N, jaunes pour D, blancs pour C. Une route à accès réglementé (C107, « voie
-    express ») peut être nationale ou départementale : 110 km/h. Une route à grande circulation est en général une route prioritaire
-    (AB6).'
+  explication: 'Cartouches : rouges pour A et N, jaunes pour D, blancs pour C. La lettre ne fixe pas la vitesse : une nationale
+    ou une départementale à accès réglementé (C107) est à 110 km/h seulement si ses chaussées sont séparées par un terre-plein
+    central, sinon 80 ou 90. Une route à grande circulation est en général une route prioritaire (AB6).'
   theme: L
   sous_theme: signalisation
   importance: utile

@@ -92,3 +92,13 @@ et délit dès 50 km/h (service-public F19460, décret n° 2025-1269), maintien 
 n° 2026-903 DC du 21 mai 2026, loi n° 2026-798 du 18 août 2026 (conduite sous emprise manifeste,
 L237-1), format inchangé de l’ETG en 2026. Les maxima de peine ne sont plus enseignés : ils ont changé
 deux fois en deux ans et ne décident d’aucun comportement au volant.
+
+## Contrôles supplémentaires v8
+
+Les entrées `v8-*` documentent les consultations du 21 septembre 2026 : organisation de l’ETG au 1er juillet 2026
+(arrêté du 16 avril 2026 : inscription close la veille, contrôle d’identité, pas de nouvelle tentative le jour
+même ; contenu, banque et seuil inchangés), L235-1 IV (9 points pour le cumul alcool + stupéfiants, dérogation
+au plafond de 8 points de L223-2), L224-2 (rétention 72 h / 120 h, suspension administrative 6 mois ou 1 an),
+R417-10 et R417-11 (qualifications gênant / très gênant), R413-2 (110 km/h lié aux chaussées séparées, pas au
+statut C107). Toutes ont été lues dans le Code consolidé du 10 septembre 2026 archivé dans
+`docs/research/sources/`, puis rapprochées de Légifrance pour l’URL de l’article.

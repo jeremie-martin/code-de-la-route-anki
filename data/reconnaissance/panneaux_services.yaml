@@ -1,15 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 15 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
-- id: ce1
-  type: panneau
-  code: CE1
-  image:
-    commons: France road sign CE1.svg
-  nom: Poste de secours
-  signification: Indique un poste de secours (association agréée ou service d'urgence d'un hôpital/clinique).
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 7 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: ce2a
   type: panneau
   code: CE2a
@@ -22,50 +11,6 @@
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: ce4c
-  type: panneau
-  code: CE4c
-  image:
-    commons: France road sign CE4c.svg
-  nom: Terrain de camping pour tentes, caravanes et autocaravanes
-  signification: Indique un terrain de camping mixte.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: ce7
-  type: panneau
-  code: CE7
-  image:
-    commons: France road sign CE7.svg
-  nom: Emplacement de pique-nique
-  signification: Indique une aire de pique-nique aménagée.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: ce12
-  type: panneau
-  code: CE12
-  image:
-    commons: France road sign CE12.svg
-  nom: Toilettes ouvertes au public
-  signification: Indique des toilettes publiques.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: ce14
-  type: panneau
-  code: CE14
-  image:
-    commons: France road sign CE14.svg
-  nom: Installations accessibles aux personnes handicapées à mobilité réduite
-  signification: Indique des installations accessibles aux personnes à mobilité réduite.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce15a
   type: panneau
   code: CE15a
@@ -77,28 +22,6 @@
   theme: L
   sous_theme: panneaux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: ce15c
-  type: panneau
-  code: CE15c
-  image:
-    commons: France road sign CE15c.svg
-  nom: Poste de distribution de carburant et de GPL
-  signification: Station-service distribuant aussi du GPL.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: ce15g
-  type: panneau
-  code: CE15g
-  image:
-    commons: France road sign CE15g.svg
-  nom: Carburant et recharge des véhicules électriques
-  signification: Station-service offrant aussi la recharge des véhicules électriques.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce15i
   type: panneau
@@ -144,17 +67,6 @@
   nom: Issue de secours vers la droite
   signification: Indique une issue de secours (tunnel, ouvrage) située vers la droite.
   conduite: En cas d'incendie ou d'accident dans un tunnel, rejoindre l'issue de secours indiquée à pied.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: ce30b
-  type: panneau
-  code: CE30b
-  image:
-    commons: France road sign CE30b.svg
-  nom: Issue de secours vers la gauche
-  signification: Indique une issue de secours située vers la gauche.
   theme: L
   sous_theme: panneaux
   importance: utile

@@ -142,3 +142,6 @@ Aucun plafond numérique : chaque retrait ci-dessous a un motif et une couvertur
 - `message-alerte` : Révision v6 : une liste à trous fait deviner l’élément caché ; la question demande le message complet. Couverture : `a-message-alerte`.
 - `non-assistance` : Révision v6 : le trou portait sur une formule de sept mots ; la question demande l’obligation et sa limite. Couverture : `a-non-assistance`.
 - `e-surconsommations` : Révision v6 : liste de quatre trous devinables par élimination ; la question demande les quatre facteurs. Couverture : `e-surconsommations-causes`.
+- `etg-reflexe-securite` : Révision v8 : conseil de méthode générique (« relier chaque proposition aux indices ») sans cible de rappel évaluable ; la compétence est exercée par toutes les cartes de décision et par le repère du thème X. Couverture : `etg-je-peux-je-dois`, `l-vitesse-adaptee`.
+- `etg-premiere-reponse` : Révision v8 : conseil de relecture sans connaissance à retrouver ; il appartient au guide de démarrage, pas à une carte révisée pendant des mois. Couverture : `etg-question-suivante`.
+- `etg-adverbes` : Révision v8 : question de contenu (équivalence pneus hiver / chaînes) déguisée en méthode, doublon des cartes B26 et de l’affirmation sur les quatre pneus hiver. Couverture : `r-b26-pneus-equivalence`, `aff-r-montagne-4-pneus`, `etg-negation`.

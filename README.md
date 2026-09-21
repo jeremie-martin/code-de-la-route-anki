@@ -1,20 +1,23 @@
 # Code de la route 2026 — comprendre, rappeler, décider
 
-Deck Anki en français pour l’ETG du permis B, **édition v7, révisée le 21 septembre 2026**.
+Deck Anki en français pour l’ETG du permis B, **édition v8, révisée le 21 septembre 2026**.
 
 **[Télécharger le deck complet](out/Code-de-la-route-2026.apkg)**. Les [statistiques générées](out/STATS.md)
-donnent les effectifs exacts (1 135 notes, 1 220 cartes). Le deck relie les règles, la reconnaissance
+donnent les effectifs exacts (1 100 notes, 1 185 cartes). Le deck relie les règles, la reconnaissance
 des signaux et leur application à 51 objectifs. Il comprend des schémas simplifiés, pas des photographies d’examen.
 
-La v7 resserre la cible de rappel des cartes de décision : environ 190 réponses sont réduites à
-**la décision et sa raison décisive** (30 mots au plus, le reste au verso), les trous de vitesse sont
-réécrits dans un cadre constant « conditions → plafond », cinq signaux sans décision sont retirés et la
-durée du disque A est ajoutée. La v6 avait déjà retiré 101 signaux de catalogue et reconsulté les règles
-récentes (délit dès 50 km/h d’excès, maintien des ZFE, inter-files, loi du 18 août 2026).
-Voir le [bilan v7](docs/13-bilan-v7.md), le [bilan v6](docs/12-bilan-v6.md), les
-[imports vérifiés](out/VERIFICATION.md) et les [contrôles de rendu](out/RENDU.md). Les bilans
-[v5](docs/10-bilan-v5.md) et [interface](docs/11-interface-quotidienne.md) restent valables pour ce
-qui n’a pas changé.
+La v8 relit toute la bibliothèque et applique jusqu’au bout le critère de sélection des signaux :
+**41 signaux déductibles** (sorties de zone, fins rares, pictogrammes transparents, variantes) sont
+retirés avec leur couverture, **six scénarios de priorité** couvrent des pièges fréquents (véhicule de
+droite qui tourne à gauche, T vu depuis la branche, sortie de parking, cycliste de droite, giratoire,
+tourne-à-gauche pendant un dépassement), trois affirmations ajoutent le freinage régénératif, le détecteur
+de fatigue et l’ISA, trois conseils de méthode sans cible de rappel quittent le deck. La v7 avait resserré
+les réponses de décision (décision + raison décisive, 30 mots au plus) ; la v6 avait retiré 101 signaux de
+catalogue et reconsulté les règles récentes (délit dès 50 km/h d’excès, maintien des ZFE, inter-files, loi
+du 18 août 2026). Voir le [bilan v8](docs/14-bilan-v8.md), le [bilan v7](docs/13-bilan-v7.md), le
+[bilan v6](docs/12-bilan-v6.md), les [imports vérifiés](out/VERIFICATION.md) et les
+[contrôles de rendu](out/RENDU.md). Les bilans [v5](docs/10-bilan-v5.md) et
+[interface](docs/11-interface-quotidienne.md) restent valables pour ce qui n’a pas changé.
 
 ## Commencer
 
@@ -33,19 +36,19 @@ Le [programme](out/PROGRAMME.md) donne l’ordre et les durées minimales d’in
 pour être prêt. Les cartes du socle passent avant la consolidation ; les deux étapes couvrent des
 compétences utiles. Le [paquet Socle](out/Code-de-la-route-2026-Socle.apkg) est une extraction de la
 première étape, pas un autre programme ni une préparation suffisante à lui seul. Inutile d’importer
-les deux en même temps. Le passage **Socle v7 → complet v7** est vérifié.
+les deux en même temps. Le passage **Socle v8 → complet v8** est vérifié.
 
 Cette édition est conçue pour un **import neuf**. Des notes ont été retirées, ajoutées ou redécoupées
 depuis la v5.1 : ne pas l’importer sur une collection déjà étudiée en espérant conserver le sens de
-toutes les anciennes cartes. Les réimports de la même édition v7 sont testés.
+toutes les anciennes cartes. Les réimports de la même édition v8 sont testés.
 
 ### Parcours type
 
-- **Semaines 1–5 (socle, 636 cartes)** : 20 nouvelles cartes par jour, révisions dues d’abord. Activer
+- **Semaines 1–5 (socle, 631 cartes)** : 20 nouvelles cartes par jour, révisions dues d’abord. Activer
   FSRS dans les options d’Anki (rétention souhaitée 0,90) ; le préréglage du deck fixe l’ordre et
   l’enfouissement des cartes sœurs. Dès la semaine 2, deux ou trois séries de 20 questions photo
   par semaine, corrigées, sur un support extérieur.
-- **Semaines 6–9 (consolidation, 584 cartes)** : mêmes réglages ; les variantes, exceptions et
+- **Semaines 6–9 (consolidation, 554 cartes)** : mêmes réglages ; les variantes, exceptions et
   applications s’ajoutent aux révisions du socle. Passer à des séries de 40 questions chronométrées.
 - **Avant l’épreuve** : ne plus introduire de nouvelles cartes la dernière semaine ; garder les
   révisions dues, relire les repères des thèmes où les séries échouent, et faire des examens blancs

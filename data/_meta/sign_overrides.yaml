@@ -584,8 +584,6 @@ j13:
   complement: Bandes bleues/blanches = obstacle permanent ; rouges/blanches = obstacle temporaire (K5c, K8).
 a1a:
   complement: Le sens de la flèche indique le sens du virage.
-a15a2:
-  complement: Même signification que A15a1 ; le symbole varie selon l'animal local (vache, mouton, cheval).
 b21b:
   complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
 b21c1:
@@ -693,16 +691,6 @@ c64d:
   source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
   tags:
   - revision::v3_1
-b50c:
-  signification: Fin de la zone où le stationnement est limité dans le temps avec contrôle par disque.
-  tags:
-  - revision::v3_1
-  complement: null
-b50d:
-  signification: Fin de la zone à stationnement payant.
-  tags:
-  - revision::v3_1
-  complement: null
 marq-damier-blanc:
   conduite: 'Ne pas bloquer la traversée. Lire les feux et les priorités : le damier seul ne donne pas une priorité générale
     au bus.'
@@ -727,11 +715,6 @@ d40:
     commons: D43.svg
   signification: Annonce avant l’intersection la direction à suivre pour les destinations indiquées ; je prépare ma voie à
     l’avance.
-a9a:
-  signification: Annonce une traversée de voie réservée aux bus.
-  complement: Lire les feux ou les priorités applicables ; le panneau de danger seul ne les attribue pas.
-  tags:
-  - revision::v3_1
 m9c:
   signification: Inscription « Cédez le passage », complétant le panneau AB3a.
   complement: null
@@ -771,10 +754,6 @@ c1b:
   complement: null
 b27b:
   complement: null
-b45a:
-  complement: null
-m4c:
-  complement: null
 b6b4:
   complement: null
 b19:
@@ -808,8 +787,6 @@ c5:
 c8:
   complement: Un arrêt hors urgence sur cet emplacement est interdit.
 c13a:
-  complement: null
-c20b:
   complement: null
 c20c:
   complement: null
@@ -858,25 +835,13 @@ b6b1:
   complement: null
 b6b3:
   complement: Le marquage au sol de la zone bleue peut être bleu.
-b50a:
-  complement: null
 b51:
-  complement: null
-b53:
-  complement: null
-b55:
-  complement: null
-b57:
-  complement: null
-b59:
   complement: null
 g1a:
   complement: null
 k1:
   complement: null
 kd10:
-  complement: null
-kd21:
   complement: null
 kd22:
   complement: null

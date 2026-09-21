@@ -309,7 +309,7 @@
       - {kind: label, y: 94, x: 20, text: "autoroute : bouchon, ma sortie est à 500 m"}
   question: "Bouchon sur autoroute ; ma sortie est à 500 m sur la droite. Puis-je emprunter la bande d'arrêt d'urgence pour la rejoindre ?"
   reponse: "Non : la bande d'arrêt d'urgence est réservée aux arrêts d'urgence et aux secours ; y circuler coûte 135 € et 3 points. Je reste dans ma file et j'allume mes feux de détresse si je suis le dernier du bouchon."
-  explication: "Article R412-8. Certaines voies d'entrecroisement sont ouvertes aux heures de pointe, mais seulement sur signalisation lumineuse explicite."
+  explication: "Article R412-8. Sur certains tronçons, la bande d'arrêt d'urgence est ouverte à la circulation aux heures de pointe comme voie auxiliaire, mais seulement sur signalisation lumineuse explicite (flèche verte au-dessus de la voie)."
   theme: L
   sous_theme: positionnement
   source: "Code de la route, art. R412-8 et R416-18"
@@ -345,3 +345,21 @@
   theme: L
   sous_theme: croisement
   source: "IISR 5e partie (C18) ; Code de la route, art. R414-1"
+- id: scn-dep-tourne-gauche-depasse
+  kind: road
+  spec:
+    lanes: 2
+    axis: discontinue
+    vehicles:
+      - {lane: 1, y: 40, colour: bleu, me: true, goes: left}
+      - {lane: 2, y: 18, colour: gris}
+    extras:
+      - {kind: intersection_gauche, y: 62}
+  question: "Je ralentis, clignotant gauche, pour tourner dans la rue à gauche. Dans le rétroviseur, une voiture est déjà en train de me dépasser. Puis-je tourner maintenant ?"
+  reponse: "Non : j'attends qu'elle m'ait dépassé ; me déporter à gauche maintenant la couperait."
+  explication: "R412-10 impose de s'assurer qu'un changement de direction est sans danger, et celui qui est sur le point d'être dépassé serre à droite (R414-16). Le clignotant annonce, il n'autorise pas : rétroviseur puis angle mort gauche avant de se déporter, même si l'autre n'aurait pas dû me dépasser par la gauche après mon signal (R414-6)."
+  theme: L
+  sous_theme: depassement
+  source: "Code de la route, art. R412-10, R414-16 et R414-6"
+  tags:
+  - revision::v8

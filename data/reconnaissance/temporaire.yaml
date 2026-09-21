@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 30 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 24 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: ak2
   type: panneau
   code: AK2
@@ -22,28 +22,6 @@
   theme: L
   sous_theme: panneaux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: ak3a
-  type: panneau
-  code: AK3a
-  image:
-    commons: France road sign AK3a.svg
-  nom: Chaussée rétrécie par la droite (temporaire)
-  signification: Rétrécissement temporaire par la droite.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: ak3b
-  type: panneau
-  code: AK3b
-  image:
-    commons: France road sign AK3b.svg
-  nom: Chaussée rétrécie par la gauche (temporaire)
-  signification: Rétrécissement temporaire par la gauche.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ak4
   type: panneau
@@ -180,18 +158,6 @@
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: k5b
-  type: panneau
-  code: K5b
-  image:
-    commons: K5B.svg
-  nom: Piquet de chantier
-  signification: Piquet (lame verticale) rouge et blanc délimitant un chantier ou un obstacle temporaire.
-  conduite: 'Comme les cônes : ne pas franchir.'
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: k8
   type: panneau
   code: K8
@@ -228,30 +194,6 @@
   theme: L
   sous_theme: panneaux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: k14
-  type: panneau
-  code: K14
-  image:
-    commons: Ruban K14.webp
-  nom: Ruban de chantier
-  signification: Ruban (rubalise) rouge et blanc délimitant un chantier ou une zone interdite.
-  conduite: Ne pas franchir.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: k16
-  type: panneau
-  code: K16
-  image:
-    commons: Séparateur K16.webp
-  nom: Séparateur modulaire de voies
-  signification: Séparateur modulaire (blocs rouges et blancs en plastique ou béton) séparant physiquement les sens ou délimitant un chantier de longue durée en assurant le guidage.
-  conduite: Rester dans sa voie ; ne pas heurter les séparateurs.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: kc1
   type: panneau
@@ -300,18 +242,6 @@
   theme: L
   sous_theme: panneaux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: kd21
-  type: panneau
-  code: KD21
-  image:
-    commons: KD21 Marseille.svg
-  nom: Direction de déviation avec mention de ville
-  signification: Panneau de direction jaune en forme de flèche indiquant l'itinéraire de déviation vers la ville mentionnée.
-  conduite: Suivre la flèche jaune.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: kd22
   type: panneau

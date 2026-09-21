@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 9 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 4 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: b31
   type: panneau
   code: B31
@@ -39,28 +39,6 @@
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b34a
-  type: panneau
-  code: B34a
-  image:
-    commons: France road sign B34a.svg
-  nom: Fin d'interdiction de dépasser pour les poids lourds
-  signification: Fin de l'interdiction de dépasser notifiée par le panneau B3a (véhicules de transport de marchandises > 3,5 t).
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b35
-  type: panneau
-  code: B35
-  image:
-    commons: France road sign B35.svg
-  nom: Fin d'interdiction de l'usage de l'avertisseur sonore
-  signification: Fin de l'interdiction des signaux sonores (B16).
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b40
   type: panneau
   code: B40
@@ -69,40 +47,6 @@
   nom: Fin de piste ou bande cyclable obligatoire
   signification: Fin de la piste ou bande obligatoire pour les cycles (B22a) ; les cyclistes réintègrent la chaussée.
   conduite: 'En voiture : s''attendre à voir des cyclistes revenir sur la chaussée.'
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b43
-  type: panneau
-  code: B43
-  image:
-    commons: France road sign B43 (30).svg
-  nom: Fin de vitesse minimale obligatoire
-  signification: Fin de l'obligation de rouler au moins à la vitesse indiquée (B25).
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b44
-  type: panneau
-  code: B44
-  image:
-    commons: France road sign B44.svg
-  nom: Fin d'obligation de l'usage des chaînes à neige
-  signification: Fin de l'obligation d'équipement en chaînes (B26).
-  conduite: Les chaînes peuvent être retirées (elles abîment la route et les pneus sur chaussée sèche).
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b45a
-  type: panneau
-  code: B45a
-  image:
-    commons: France road sign B45a.svg
-  nom: Fin de voie réservée aux véhicules de transport en commun
-  signification: Fin de la voie réservée aux bus (B27a) ; la voie redevient ouverte à tous.
   theme: L
   sous_theme: panneaux
   importance: utile

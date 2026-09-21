@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 36 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 30 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: m1
   type: panonceau
   code: M1
@@ -58,28 +58,6 @@
   sous_theme: panonceaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4b
-  type: panonceau
-  code: M4b
-  image:
-    commons: France road sign M4b.svg
-  nom: 'Catégorie : véhicules de transport en commun de personnes'
-  signification: Le panneau ne s'applique qu'aux bus et cars.
-  theme: L
-  sous_theme: panonceaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4c
-  type: panonceau
-  code: M4c
-  image:
-    commons: France road sign M4c.svg
-  nom: 'Catégorie : motocyclettes'
-  signification: Le panneau ne s'applique qu'aux motocyclettes et motocyclettes légères.
-  theme: L
-  sous_theme: panonceaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m4d1
   type: panonceau
   code: M4d1
@@ -127,28 +105,6 @@
   theme: L
   sous_theme: panonceaux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4g
-  type: panonceau
-  code: M4g
-  image:
-    commons: France road sign M4g.svg
-  nom: 'Catégorie : véhicules de transport de marchandises'
-  signification: Le panneau ne s'applique qu'aux véhicules affectés au transport de marchandises.
-  theme: L
-  sous_theme: panonceaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4n
-  type: panonceau
-  code: M4n
-  image:
-    commons: France road sign M4n.svg
-  nom: 'Catégorie : installation pour personnes handicapées'
-  signification: 'Indique une installation aménagée pour les personnes handicapées (sous C1a : places réservées).'
-  theme: L
-  sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m5
   type: panonceau
@@ -407,25 +363,3 @@
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Ne donne ni priorité ni autorisation aux voitures, motos ou cyclomoteurs ordinaires. Le signal lumineux R19 a un champ différent : les cyclistes.'
-- id: km1
-  type: panonceau
-  code: KM1
-  image:
-    commons: France Road Sign KM1.png
-  nom: Panonceau temporaire de distance
-  signification: Version jaune du panonceau M1 sous un panneau de danger temporaire AK.
-  theme: L
-  sous_theme: panonceaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: km2
-  type: panonceau
-  code: KM2
-  image:
-    commons: France Road Sign KM2.png
-  nom: Panonceau temporaire d'étendue
-  signification: Version jaune du panonceau M2 (longueur de la zone de chantier).
-  theme: L
-  sous_theme: panonceaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

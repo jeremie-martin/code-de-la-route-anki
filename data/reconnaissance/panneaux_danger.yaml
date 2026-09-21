@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 29 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 27 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: a1a
   type: panneau
   code: A1a
@@ -161,21 +161,6 @@
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   complement: La croix de Saint-André marque le passage lui-même ; un STOP peut la surmonter.
-- id: a9a
-  type: panneau
-  code: A9a
-  image:
-    commons: France Road Sign A9a.png
-  nom: Traversée de voie de véhicules routiers des services réguliers de transport en commun
-  signification: Annonce une traversée de voie réservée aux bus.
-  conduite: Ralentir, regarder des deux côtés ; les bus circulant sur le site propre peuvent surgir.
-  complement: Lire les feux ou les priorités applicables ; le panneau de danger seul ne les attribue pas.
-  theme: L
-  sous_theme: panneaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  tags:
-  - revision::v3_1
 - id: a9b
   type: panneau
   code: A9b
@@ -237,19 +222,6 @@
   theme: L
   sous_theme: panneaux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: a15a2
-  type: panneau
-  code: A15a2
-  image:
-    commons: France road sign A15a2.svg
-  nom: Passage d'animaux domestiques (moutons)
-  signification: 'Variante du panneau A15a représentant un mouton : passage d''animaux domestiques.'
-  conduite: Ralentir, être prêt à s'arrêter.
-  complement: Même signification que A15a1 ; le symbole varie selon l'animal local (vache, mouton, cheval).
-  theme: L
-  sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: a15b
   type: panneau

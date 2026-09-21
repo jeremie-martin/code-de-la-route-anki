@@ -30,17 +30,6 @@
   theme: X
   sous_theme: lecture
   source: Méthode d'examen (synthèse des conseils Codes Rousseau, ENPC, Ornikar)
-- id: etg-reflexe-securite
-  question: Une réponse dit « je ralentis », une autre « je maintiens mon allure ». Comment choisir ?
-  reponse: 'Je relie chaque proposition aux indices visibles et à la règle : ralentir si le risque l’exige, maintenir si les
-    conditions le permettent.'
-  explication: Aucun verbe n’est automatiquement juste ou faux. Un danger immédiat peut justifier le klaxon ; une insertion
-    demande parfois d’accélérer. La réponse se justifie par la situation.
-  theme: X
-  sous_theme: lecture
-  source: Méthode d'examen (synthèse des conseils Codes Rousseau, ENPC, Ornikar)
-  tags:
-  - revision::v3
 - id: etg-video-strategie
   question: 'Question vidéo à l''ETG : que faut-il observer pendant la vidéo ?'
   reponse: 'Ce qui change entre le début et la fin (usager qui apparaît, clignotant, portière, feu) : la question porte sur
@@ -69,18 +58,6 @@
   source: Sécurité routière — Exemples de nouvelles questions (PDF, sept. 2023) ; En Voiture Simone — Questions pièges
   tags:
   - revision::v3
-- id: etg-adverbes
-  question: « En zone d’équipements hiver, ma voiture doit avoir quatre pneus hiver, même si j’emporte des chaînes adaptées.
-    » Quelle condition dois-je examiner ?
-  reponse: 'L’alternative autorisée : pour l’obligation saisonnière, les chaînes adaptées à au moins deux roues motrices à
-    bord peuvent remplacer les quatre pneus hiver admis.'
-  explication: Lire toutes les conditions, pas seulement le mot « doit ». Une prescription locale B26 peut ensuite demander
-    un équipement en service. Ne pas deviner vrai/faux à partir d’un adverbe.
-  theme: X
-  sous_theme: lecture
-  source: Code de la route, D314-8 ; arrêté du 23 juin 2021
-  tags:
-  - revision::v4
 - id: etg-negation
   question: 'Énoncé de l''ETG : « Il n''est pas interdit de tourner à droite. » Qu''est-ce que cela veut dire ?'
   reponse: 'Que c''est autorisé : une double négation (« pas interdit ») équivaut à une permission.'
@@ -89,14 +66,3 @@
   theme: X
   sous_theme: lecture
   source: Codeclic — Comment réussir le code
-- id: etg-premiere-reponse
-  question: Une réponse choisie rapidement me fait hésiter avant de valider. Comment la vérifier utilement ?
-  reponse: Je relis les conditions et chaque proposition, puis cherche l’indice ou la règle qui justifie mon choix. Je corrige
-    si ce contrôle montre une erreur.
-  explication: Ni conserver systématiquement sa première intuition ni changer au hasard. Utiliser le temps disponible pour
-    contrôler point de vue, portée des signaux et mots de l’énoncé.
-  theme: X
-  sous_theme: strategie
-  source: Codeclic — Conseils examen ; Dekra — 10 erreurs à éviter
-  tags:
-  - revision::v4

@@ -201,3 +201,27 @@
   theme: M
   sous_theme: adas
   source: securite-routiere.gouv.fr — ADAS ; Stych — Nouvelles aides à la conduite
+- id: aff-m-detecteur-fatigue
+  contexte: Ma voiture est équipée d’un détecteur de fatigue (pictogramme « tasse de café »).
+  affirmation: Tant que le système ne m’alerte pas, je peux considérer que je suis apte à poursuivre.
+  verdict: faux
+  pourquoi: 'Le système déduit la fatigue des écarts de trajectoire et des mouvements du volant : il peut se déclencher
+    tard ou pas du tout. Bâillements, paupières lourdes ou regard fixe commandent l’arrêt, alerte ou non ; la tasse de
+    café n’est qu’une suggestion de pause.'
+  theme: M
+  sous_theme: adas
+  source: securite-routiere.gouv.fr — Les aides à la conduite (ADAS), comité des experts du CNSR, 2024
+  tags:
+  - revision::v8
+- id: aff-m-isa-panneaux
+  contexte: Voiture neuve équipée de l’adaptation intelligente de la vitesse (ISA), obligatoire depuis juillet 2024.
+  affirmation: La limitation affichée par le système me dispense de lire les panneaux.
+  verdict: faux
+  pourquoi: 'La caméra peut manquer un panneau masqué, ignorer un panonceau (« par temps de pluie ») ou lire la limite
+    d’une bretelle voisine, et la carte peut être obsolète. Le système avertit ou modère ; le conducteur reste seul
+    responsable de sa vitesse.'
+  theme: M
+  sous_theme: adas
+  source: securite-routiere.gouv.fr — Les aides à la conduite (ADAS) ; règlement (UE) 2019/2144 (GSR2)
+  tags:
+  - revision::v8

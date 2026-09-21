@@ -3,7 +3,7 @@
 Projet : générer `out/Code-de-la-route-2026.apkg`, un deck Anki pour réussir l'ETG (code de la route,
 permis B) tel qu'il existe en 2026. Lire `README.md` puis `docs/01-analyse-examen.md`,
 `docs/02-carte-des-connaissances.md`, `docs/03-conception-des-cartes.md`, `docs/04-sources.md`,
-`docs/13-bilan-v7.md` (révision actuelle), `docs/12-bilan-v6.md`, `docs/10-bilan-v5.md` et `docs/11-interface-quotidienne.md`.
+`docs/14-bilan-v8.md` (révision actuelle), `docs/13-bilan-v7.md`, `docs/12-bilan-v6.md`, `docs/10-bilan-v5.md` et `docs/11-interface-quotidienne.md`.
 Les dossiers v1/v2 sont historiques ; ne pas réintroduire leurs formulations corrigées.
 
 ## Commandes
@@ -48,10 +48,11 @@ python build/yamlfix.py data/*/*.yaml   # quote les valeurs YAML contenant ': '
   `build/learning.py` annote `parcours::*` / `objectif::*`, place toutes les cartes du socle avant
   l’approfondissement et produit le programme depuis le même plan que les positions exportées.
 - `data/_meta/sign_exclusions.yaml` justifie les signaux sans carte visuelle distincte et référence
-  leurs couvertures. Pas de filtre automatique par rareté, mais un critère éditorial (v6) : un signal
-  entre s'il porte une décision de conduite ou une discrimination que l'épreuve peut demander ; les
-  variantes d'une famille apprise et les services au pictogramme transparent sont exclus. Tout signal
-  sélectionné doit avoir un média.
+  leurs couvertures. Pas de filtre automatique par rareté, mais un critère éditorial (v6, appliqué
+  intégralement en v8) : un signal entre s'il porte une décision de conduite ou une discrimination que
+  l'épreuve peut demander ; les variantes d'une famille apprise, les sorties de zone et fins déductibles du
+  signal de début, les services et catégories au pictogramme transparent sont exclus (archétypes conservés :
+  B51, B31/B33/B34/B40, CE2a/CE15a/CE15i, M4a/M4d1/M4d2/M4f). Tout signal sélectionné doit avoir un média.
 - Ordre interne d’introduction des nouvelles cartes = programme calculé par `curriculum()` dans `build/build.py`
   (méthode d'abord ; phases essentiel → utile → rare ; thèmes entrelacés au prorata ; scénarios après les
   panneaux dont ils dépendent : `SCENARIO_GATES` ; `RECON_ORDER` = ordre des fichiers de signalisation).

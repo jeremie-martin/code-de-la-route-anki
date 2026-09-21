@@ -500,3 +500,52 @@
   notes:
   - aff-e-borne-recharge
   - scn-dep-passage-pieton
+- id: v8-etg-1er-juillet-2026
+  consulte_le: '2026-09-21'
+  url: https://www.digischool.fr/articles/auto/actualites/examen-code-de-la-route-1er-juillet-2026/
+  portee: 'Arrêté du 16 avril 2026 (JO du 29 avril) appliqué au 1er juillet 2026 : inscription close au plus tard la veille,
+    contrôle d’identité renforcé, pas de nouvelle tentative le jour même. Format, banque (12 septembre 2023) et seuil
+    (35/40) inchangés : aucune carte de contenu à modifier.'
+  notes:
+  - etg-format-questions
+  - etg-question-suivante
+- id: v8-l235-1-cumul-alcool-stupefiants
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006841089
+  portee: 'L235-1 IV (code consolidé du 10 septembre 2026, rédaction loi n° 2026-798) : usage de stupéfiants = moitié
+    du capital (6 points) ; cumul avec un état alcoolique = trois quarts (9 points), par dérogation au plafond des deux
+    tiers de L223-2 (8 points). Les deux valeurs des cartes sont confirmées.'
+  notes:
+  - d-points-delit-cumul
+  - d-stupefiants-delit
+- id: v8-l224-2-suspension-administrative
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025581
+  portee: 'L224-2 (rédaction loi n° 2026-798) : rétention 72 h (120 h avec analyses) ; suspension administrative de six
+    mois au plus, portée à un an pour alcool, stupéfiants, refus de vérification, refus d’obtempérer aggravé et accident
+    mortel ou corporel. Les valeurs de la carte sont confirmées.'
+  notes:
+  - d-retention-suspension
+- id: v8-r417-10-11-categories
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551
+  portee: 'R417-10 (gênant, 35 €) : trottoir pour les deux-roues motorisés, double file, entrée carrossable, dispositif de
+    recharge, zone de rencontre hors emplacement, BAU hors nécessité, arrêts de bus et taxis. R417-11 (très gênant,
+    135 €) : trottoir pour les autres véhicules motorisés, voies réservées, places PMR, passages piétons et 5 m en amont
+    hors emplacements matérialisés, bandes et pistes cyclables. Les qualifications des cartes sont confirmées.'
+  notes:
+  - aff-l-trottoir-moto
+  - l-stationnement-trottoir
+  - aff-e-borne-recharge
+  - aff-l-zone-rencontre-stationnement
+  - l-entree-carrossable
+  - l-double-file
+- id: v8-r413-2-c107-vitesse
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037259301
+  portee: 'R413-2 : 110 km/h sur les routes à deux chaussées séparées par un terre-plein central ; le statut de route à
+    accès réglementé (C107) ou la lettre de la route ne fixent pas la vitesse. Explication de la carte corrigée.'
+  notes:
+  - l-vocab-routes-lettres
+  - l-c107-route-simple
+  - l-c107-route-separee

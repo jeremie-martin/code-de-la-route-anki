@@ -1,4 +1,4 @@
-# Conception des cartes — v7
+# Conception des cartes — v8
 
 ## Ce que l’on optimise
 
@@ -64,9 +64,18 @@ pour équilibrer un nombre. Ces cartes ne sont pas un simulateur de notation ETG
 
 Un signal reçoit une carte de reconnaissance s’il porte une décision de conduite (céder, s’arrêter,
 ne pas dépasser, choisir une voie) ou une discrimination que l’épreuve peut demander (B6a1/B6d,
-B15/C18, J1/J3). Les variantes d’une famille déjà apprise (catégories exotiques de M4, campings,
-« arrêt au poste »), les services au pictogramme transparent (distributeur de billets, embarcadère)
-et les cartouches sont exclus et documentés avec leur couverture. Le complément d’une reconnaissance
+B15/C18, J1/J3, B7a/B7b). Les variantes d’une famille déjà apprise (catégories exotiques de M4, campings,
+« arrêt au poste », rétrécissements temporaires latéraux), les services et catégories au pictogramme
+transparent (distributeur de billets, embarcadère, toilettes, bus, camion) et les cartouches sont exclus
+et documentés avec leur couverture. Depuis la v8, le même critère s’applique aux **sorties de zone** et
+aux **fins de prescription** qui se déduisent du signal de début par une convention apprise sur un
+archétype : B51 pour « même panneau barré de gris », B31/B33/B34/B40 pour « rond barré ». Un signal
+est déductible quand un candidat qui connaît le signal de début et la convention produit la bonne réponse
+sans l’avoir jamais vu ; sinon il reste.
+
+Un scénario généré vaut une carte quand il matérialise un piège que le texte seul ne rend pas
+(qui est à ma droite, qui est déjà dans l’anneau, qui est en train de me dépasser). Les réponses des
+intersections sont vérifiées par le solveur ; giratoires et scénarios de dépassement sont relus à la main. Le complément d’une reconnaissance
 ne contient pas la nomenclature (codes de fin, panonceaux possibles, distances d’implantation) :
 il donne la seule nuance qui change une décision, ou rien.
 

@@ -6,14 +6,11 @@
   - etg-bandeau-reponses
   - etg-pictogramme-point-de-vue
   - etg-je-peux-je-dois
-  - etg-reflexe-securite
   - etg-video-strategie
   - etg-forme-double-oui-non
   consolidation:
   - etg-halo-jaune
-  - etg-adverbes
   - etg-negation
-  - etg-premiere-reponse
 - id: l-danger
   theme: L
   titre: Reconnaître le danger et anticiper avant de le voir
@@ -48,13 +45,11 @@
   - a1d
   - a3b
   - a6
-  - a15a2
   - a15c
   - a19
   - a20
   - conf-a15a1-a15b
   - conf-a2a-a2b
-  - a9a
 - id: l-priorite-signaux
   theme: L
   titre: Lire les signaux qui attribuent la priorité
@@ -131,6 +126,10 @@
   - scn-parking-gauche
   - scn-t-intersection-droite
   - scn-pompiers-face-tourne-gauche
+  - scn-pd-droite-tourne-gauche
+  - scn-t-moi-branche
+  - scn-moi-sortie-parking
+  - scn-pd-cycliste-droite
   - l-quadrillage-carrefour
 - id: l-giratoire
   theme: L
@@ -143,6 +142,7 @@
   - l-giratoire-sortie-impossible
   - scn-giratoire-cedez
   - scn-rond-point-priorite-droite
+  - scn-giratoire-autre-entree
   consolidation:
   - aff-l-giratoire-sortie-cede
   - aff-l-giratoire-depassement
@@ -240,9 +240,6 @@
   - b6a3
   - b8
   - b9a
-  - b9c
-  - b9d
-  - b9f
   - b9i
   - b10a
   - b13a
@@ -255,11 +252,6 @@
   - b21d2
   - b21e
   - b29
-  - b34a
-  - b35
-  - b43
-  - b44
-  - b45a
   - conf-b1-c12
   - conf-b3-b3a
   - conf-b7a-b7b
@@ -291,13 +283,9 @@
   - b30
   - b51
   - b52
-  - b53
   - b54
-  - b55
   - b56
-  - b57
   - b58
-  - b59
   - l-portee-prescription
   - l-panonceau-portee
   - aff-l-zone-30-portee
@@ -307,7 +295,6 @@
   - l-formes-priorite-temporaire
   - m3a
   - m4d1
-  - m4g
   - m8c
   - m9z
   - l-visuel-distance
@@ -319,12 +306,8 @@
   - b6b2
   - b6b3
   - b6b4
-  - b50a
-  - m4b
-  - m4c
   - m4d2
   - m4e
-  - m4n
   - m6a
   - m6b
   - m6d
@@ -339,8 +322,6 @@
   - conf-b52-b54
   - conf-b30-b56
   - conf-m8a-m8b
-  - b50c
-  - b50d
 - id: l-marquage
   theme: L
   titre: Lire lignes et affectations de voies
@@ -402,7 +383,6 @@
   consolidation:
   - sr3a
   - sr3e
-  - c4b
   - c51a
   - l-vitesse-minimale-autoroute
   - l-vitesse-engins
@@ -451,6 +431,7 @@
   - scn-dep-vehicule-tourne-gauche
   - scn-dep-suis-depasse
   - scn-dep-passage-pieton
+  - scn-dep-tourne-gauche-depasse
 - id: l-position
   theme: L
   titre: Tenir sa voie et gérer les croisements
@@ -749,7 +730,6 @@
   - r-tram-priorite
   consolidation:
   - c112
-  - ce30b
   - l-balises-j10
   - r-train-distance-arret
   - r-tunnel-niches
@@ -784,23 +764,15 @@
   - r-chantier-fleche-lumineuse
   - aff-r-chantier-sans-ouvriers
   consolidation:
-  - km1
-  - km2
   - ak2
-  - ak3a
-  - ak3b
   - ak14
   - ak17
   - ak32
   - k1
   - k2
-  - k5b
-  - k14
-  - k16
   - kc1
   - kd8
   - kd9
-  - kd21
   - kd42
   - conf-a14-ak14
   - conf-k10a-k10b
@@ -825,7 +797,6 @@
   consolidation:
   - marq-passage-cyclistes
   - c113
-  - c114
   - u-velo-equipement-chiffres
   - u-pieton-hors-agglo-cote
   - u-personnes-agees
@@ -885,7 +856,6 @@
   - aff-u-pl-retroviseur
   - c20c
   consolidation:
-  - c20b
   - u-pl-angles-morts-chiffres
   - u-tram-depasser
   - u-voie-bus
@@ -1054,6 +1024,8 @@
   - aff-m-frein-main-4-roues
   - aff-m-regulateur-conditions
   - aff-m-angle-mort-moto
+  - aff-m-detecteur-fatigue
+  - aff-m-isa-panneaux
 - id: m-panne
   theme: M
   titre: Réagir à une panne sans aggraver le risque
@@ -1244,6 +1216,7 @@
   - aff-e-vitesse-stable
   - aff-e-ecoconduite-securite
   - aff-e-equipements-electriques
+  - aff-e-freinage-regeneratif
 - id: e-pollution
   theme: E
   titre: Distinguer émissions, restrictions et énergie
@@ -1312,7 +1285,6 @@
   consolidation:
   - c13a
   - c13c
-  - c13d
   - c24a
   - c24b
   - c24c
@@ -1344,14 +1316,7 @@
   notes: []
   consolidation:
   - m3b
-  - ce1
-  - ce4c
-  - ce7
-  - ce12
-  - ce14
   - ce15a
-  - ce15c
-  - ce15g
   - ce15i
   - ce22
   - ce52

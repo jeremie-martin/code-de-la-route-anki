@@ -4,7 +4,9 @@ L’ETG comporte **40 questions** ; il faut **35 réponses correctes** pour réu
 règles et comportements à appliquer, notamment à partir de scènes photographiées ou filmées.
 [Service Public, conditions de l’ETG](https://www.service-public.gouv.fr/particuliers/vosdroits/F33694).
 Les modalités administratives détaillées se vérifient auprès du centre d’examen ; les mémoriser
-n’est pas l’objectif principal de ce deck.
+n’est pas l’objectif principal de ce deck. Depuis le 1er juillet 2026 (arrêté du 16 avril 2026),
+l’inscription est close au plus tard la veille et le contrôle d’identité est renforcé ; la banque de
+questions (septembre 2023), le format et le seuil n’ont pas changé.
 
 Les dix thèmes structurent les sous-decks : circulation, conducteur, route, autres usagers,
 réglementation et notions diverses, premiers secours, prendre et quitter le véhicule, mécanique,

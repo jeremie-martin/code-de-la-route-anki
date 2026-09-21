@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 17 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 10 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: b6b1
   type: panneau
   code: B6b1
@@ -49,43 +49,6 @@
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b50a
-  type: panneau
-  code: B50a
-  image:
-    commons: France road sign B50a.svg
-  nom: Sortie de zone à stationnement interdit
-  signification: Sortie de la zone à stationnement interdit (B6b1).
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b50c
-  type: panneau
-  code: B50c
-  image:
-    commons: France road sign B50c.svg
-  nom: Sortie de zone à stationnement de durée limitée
-  signification: Fin de la zone où le stationnement est limité dans le temps avec contrôle par disque.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  tags:
-  - revision::v3_1
-- id: b50d
-  type: panneau
-  code: B50d
-  image:
-    commons: France road sign B50d.svg
-  nom: Sortie de zone à stationnement payant
-  signification: Fin de la zone à stationnement payant.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  tags:
-  - revision::v3_1
 - id: b30
   type: panneau
   code: B30
@@ -126,17 +89,6 @@
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Trois vitesses : aire piétonne = allure du pas ; zone de rencontre = 20 ; zone 30 = 30.'
-- id: b53
-  type: panneau
-  code: B53
-  image:
-    commons: France road sign B53.svg
-  nom: Sortie d'une zone de rencontre
-  signification: Fin de la zone de rencontre ; retour aux règles générales (priorité des véhicules sur la chaussée, 50 km/h en agglomération).
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b54
   type: panneau
   code: B54
@@ -150,17 +102,6 @@
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b55
-  type: panneau
-  code: B55
-  image:
-    commons: France road sign B55.svg
-  nom: Sortie d'une aire piétonne
-  signification: Fin de l'aire piétonne.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b56
   type: panneau
   code: B56
@@ -170,17 +111,6 @@
   signification: 'Entrée d''une zone à faibles émissions (ZFE-m) : accès interdit aux véhicules dont la vignette Crit''Air ne figure pas parmi celles autorisées par le panonceau M11d.'
   conduite: Vérifier sa vignette Crit'Air et les horaires du panonceau ; ne pas entrer si le véhicule est concerné (68 €).
   complement: Un panonceau précise les catégories, jours et heures concernés.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b57
-  type: panneau
-  code: B57
-  image:
-    commons: France road sign B57.svg
-  nom: Sortie d'une zone à circulation restreinte (ZFE)
-  signification: Fin de la zone à circulation restreinte.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -201,14 +131,3 @@
   piege: B58 porte sur l’équipement saisonnier de la zone ; B26 peut demander un équipement en service sur une section. Lire son complément.
   tags:
   - revision::v3_1
-- id: b59
-  type: panneau
-  code: B59
-  image:
-    commons: France road sign B59.svg
-  nom: Sortie d'une zone d'obligation d'équipements en période hivernale
-  signification: Fin de la zone d'obligation d'équipements hivernaux.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 43 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 39 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: c1a
   type: panneau
   code: C1a
@@ -47,17 +47,6 @@
   theme: L
   sous_theme: panneaux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: c4b
-  type: panneau
-  code: C4b
-  image:
-    commons: France road sign C4b (50).svg
-  nom: Fin de vitesse conseillée
-  signification: Fin de la section à vitesse conseillée.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: c5
   type: panneau
@@ -134,17 +123,6 @@
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: c13d
-  type: panneau
-  code: C13d
-  image:
-    commons: France road sign C13d.svg
-  nom: Impasse comportant une issue pour les piétons et les cyclistes
-  signification: Impasse pour les véhicules motorisés, avec issue pour les piétons et les cyclistes (créé en 2011).
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: c14
   type: panneau
   code: C14
@@ -186,18 +164,6 @@
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Triangle A13b = annonce (150 m avant) ; carré bleu C20a = position.
-- id: c20b
-  type: panneau
-  code: C20b
-  image:
-    commons: France road sign C20b.svg
-  nom: Traversée de voie de véhicules de transport en commun
-  signification: Indique la position d'une traversée de voie réservée aux bus (site propre), créé en 2018.
-  conduite: Céder le passage aux bus, respecter les feux R24 éventuels.
-  theme: L
-  sous_theme: panneaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: c20c
   type: panneau
   code: C20c
@@ -493,17 +459,6 @@
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Conseillée pour un vélo ne signifie pas facultative pour tous les usagers autorisés.
-- id: c114
-  type: panneau
-  code: C114
-  image:
-    commons: France road sign C114.svg
-  nom: Fin de piste ou bande cyclable conseillée
-  signification: Fin de la piste ou bande cyclable conseillée.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: c115
   type: panneau
   code: C115

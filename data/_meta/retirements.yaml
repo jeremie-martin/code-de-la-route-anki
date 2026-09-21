@@ -181,3 +181,21 @@
   raison: 'Révision v6 : liste de quatre trous devinables par élimination ; la question demande les quatre facteurs.'
   couverts_par:
   - e-surconsommations-causes
+- id: etg-reflexe-securite
+  raison: 'Révision v8 : conseil de méthode générique (« relier chaque proposition aux indices ») sans cible de rappel
+    évaluable ; la compétence est exercée par toutes les cartes de décision et par le repère du thème X.'
+  couverts_par:
+  - etg-je-peux-je-dois
+  - l-vitesse-adaptee
+- id: etg-premiere-reponse
+  raison: 'Révision v8 : conseil de relecture sans connaissance à retrouver ; il appartient au guide de démarrage, pas
+    à une carte révisée pendant des mois.'
+  couverts_par:
+  - etg-question-suivante
+- id: etg-adverbes
+  raison: 'Révision v8 : question de contenu (équivalence pneus hiver / chaînes) déguisée en méthode, doublon des cartes
+    B26 et de l’affirmation sur les quatre pneus hiver.'
+  couverts_par:
+  - r-b26-pneus-equivalence
+  - aff-r-montagne-4-pneus
+  - etg-negation
