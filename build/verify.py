@@ -1,7 +1,9 @@
 """Verify distributable packages in disposable Anki collections.
 
 python -m build.verify [--previous /path/to/previous.apkg]
-Tests both fresh imports and upgrades, without accessing a user's collection.
+Tests fresh imports, Socle-to-full upgrades and reimports without accessing a
+user's collection. --previous is an optional compatibility probe, not a promise
+that pre-v4 packages can migrate across deliberate retirements and cloze changes.
 """
 from __future__ import annotations
 
@@ -13,7 +15,7 @@ import tempfile
 from anki.collection import Collection
 from anki.import_export_pb2 import ImportAnkiPackageRequest, ImportAnkiPackageOptions
 
-from build.build import OUT, load_all, curriculum, inline_md, tags_for
+from build.build import OUT, load_all, curriculum, inline_md, tags_for, fait_html, repere_html
 from build.learning import card_count, card_plan
 from build.models import MODEL_IDS, DECK_ROOT, notetypes, CSS
 
@@ -40,9 +42,11 @@ def verify_content(col, data):
                    'Complement': 'complement', 'Piege': 'piege', 'Difference': 'difference'}
     for note in notes.values():
         original = expected[note['Id']]
+        assert note['Repere'] == repere_html(original['theme'])
         for field, key in text_fields.items():
             if field in note and key in original:
-                assert note[field] == inline_md(original[key]), f"{note['Id']} : {field} périmé"
+                value = fait_html(original) if field == 'Texte' else inline_md(original[key])
+                assert note[field] == value, f"{note['Id']} : {field} périmé"
         if 'Verdict' in note:
             assert note['Verdict'] == original['verdict']
         assert set(tags_for(original, original['_kind'])).issubset(note.tags)

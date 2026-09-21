@@ -583,6 +583,31 @@ def render(name: str, params: dict | None = None) -> str:
     return REGISTRY[name](params or {})
 
 
+def tableau_lecture(params):
+    """Clearly fictional documents: practise selecting a row, unit and column."""
+    rows = params['rows']
+    columns = params['columns']
+    width, cell, top = 600, 600 / len(columns), 112
+    height = top + 62 * (len(rows) + 1) + 40
+    S = SVG(width, height)
+    S.add(f'<rect width="{width}" height="{height}" fill="#fff"/>')
+    S.add(f'<text x="300" y="32" font-family="{FONT}" font-size="18" text-anchor="middle" fill="#555">DOCUMENT FICTIF — EXERCICE</text>')
+    S.add(f'<text x="300" y="72" font-family="{FONT}" font-size="25" font-weight="700" text-anchor="middle" fill="#222">{esc(params["title"])}</text>')
+    for row_index, row in enumerate([columns] + rows):
+        if len(row) != len(columns):
+            raise ValueError('tableau : nombre de colonnes incohérent')
+        y = top + row_index * 62
+        for col_index, value in enumerate(row):
+            x = col_index * cell
+            S.add(f'<rect x="{x}" y="{y}" width="{cell}" height="62" fill="{"#e7edf5" if row_index == 0 else "#fff"}" stroke="#aab4c0"/>')
+            S.add(f'<text x="{x + cell / 2}" y="{y + 39}" font-family="{FONT}" font-size="23" text-anchor="middle" fill="#111">{esc(str(value))}</text>')
+    S.add(f'<text x="300" y="{height - 12}" font-family="{FONT}" font-size="16" text-anchor="middle" fill="#555">Valeurs propres à cet exercice</text>')
+    return str(S)
+
+
+REGISTRY['tableau_lecture'] = tableau_lecture
+
+
 # ------------------------------------------------------- extra markings ---
 def voie_insertion(params):
     """Motorway with an acceleration lane on the right delimited by a T2-type short dashed line."""

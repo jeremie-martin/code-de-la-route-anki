@@ -1,10 +1,13 @@
-# R — La route : chiffres propres au thème (les vitesses et distances générales vivent dans 02 et 03).
 - id: r-train-distance-arret
-  texte: Un train lancé à 100 km/h a besoin d'environ {{c1::1 km}} pour s'arrêter, soit environ {{c2::10 fois}} la distance d'arrêt d'une voiture ; il ne peut ni freiner court ni s'écarter.
-  explication: 'C''est pourquoi le feu rouge clignotant d''un passage à niveau impose l''arrêt absolu : le conducteur du train ne peut rien faire pour éviter un véhicule engagé.'
+  texte: 'Ordre de grandeur SNCF : un train lancé à 100 km/h peut avoir besoin d’environ {{c1::1 km}} pour
+    s’arrêter.'
+  explication: 'Ce n’est pas une garantie de freinage pour tout train. Il ne peut pas s’écarter : respecter
+    les signaux et vérifier qu’on peut dégager entièrement les rails avant de s’engager.'
   theme: R
   sous_theme: passages_a_niveau
   source: SNCF Réseau — Sécurité aux passages à niveau ; securite-routiere.gouv.fr — Passage à niveau
+  tags:
+  - revision::v4
 - id: r-neige-adherence
   texte: Sur neige, l’adhérence est {{c1::réduite et variable}}. Du verglas peut exister même si le thermomètre
     de l’air indique {{c2::une température positive}}.
@@ -16,11 +19,16 @@
   tags:
   - revision::v3_1
 - id: r-loi-montagne-periode
-  texte: 'Loi Montagne : du {{c1::1er novembre}} au {{c2::31 mars}}, dans les communes signalées par le panneau {{c3::B58}}, le véhicule doit avoir quatre pneus hiver 3PMSF ou des chaînes (ou chaussettes) à bord pour deux roues motrices.'
-  explication: 'Le panneau B59 marque la sortie de zone. Aucune amende n''est codifiée pour le défaut d''équipement (art. D314-8) : l''obligation existe néanmoins et c''est la réponse attendue.'
+  texte: Dans les communes concernées par l’obligation saisonnière d’équipements hiver, la période annuelle
+    est du {{c1::1er novembre au 31 mars}}.
+  explication: 'Pour une voiture : quatre pneus hiver admis (3PMSF) ou dispositifs antidérapants amovibles
+    pour au moins deux roues motrices. Les panneaux B58/B59 bornent la zone ; un B26 peut imposer une mise
+    en service locale. Lire ses compléments.'
   theme: R
   sous_theme: intemperies
   source: Décret n° 2020-1264 du 16 octobre 2020 ; service-public.fr F19459
+  tags:
+  - revision::v4
 - id: r-tunnel-niches
   texte: Dans un tunnel, une niche contient des {{c1::moyens d’alerte et de lutte contre l’incendie}} ; les issues
     d’évacuation sont signalées en {{c2::vert}}.

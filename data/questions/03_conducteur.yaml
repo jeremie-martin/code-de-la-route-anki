@@ -1,5 +1,3 @@
-# C — Le conducteur : questions de décision (v2). Les chiffres vivent dans data/faits/03_conducteur.yaml,
-# les jugements VRAI/FAUX dans data/affirmations/03_conducteur.yaml.
 - id: c-regarder-loin
   question: Pourquoi conseille-t-on de regarder loin devant soi en conduisant ?
   reponse: 'Pour anticiper : voir tôt les dangers, adapter sa vitesse en douceur et stabiliser sa trajectoire (le véhicule va où le regard se porte).'
@@ -80,9 +78,9 @@
   sous_theme: vigilance
   source: Sécurité routière — Exemples de nouvelles questions (Q7) ; Code de la route, art. R414-4
 - id: c-retro-avant-freiner
-  question: Pourquoi contrôler le rétroviseur intérieur avant de freiner ou de ralentir ?
-  reponse: 'Pour savoir ce qui suit (deux-roues, véhicule trop proche) et adapter la façon de ralentir : frein moteur
-    et freinage progressif si quelqu''un est collé derrière.'
+  question: Avant un ralentissement que je peux anticiper, pourquoi contrôler le rétroviseur intérieur ?
+  reponse: Pour connaître le trafic derrière et préparer un ralentissement progressif. Face à un danger immédiat,
+    je freine sans retarder l’action pour consulter le rétroviseur.
   explication: Ce contrôle accompagne un ralentissement anticipé. En danger immédiat, ne pas différer le freinage
     d’urgence pour consulter le rétroviseur.
   theme: C
@@ -90,6 +88,7 @@
   source: Ornikar — Pièges à éviter ; REMC
   tags:
   - revision::v3
+  - revision::v4
 - id: c-indice-feux-recul
   question: Une voiture stationnée devant moi a ses feux de recul (blancs) allumés. Qu'est-ce que j'anticipe ?
   reponse: 'Qu''elle va reculer ou sortir de sa place : je ralentis, je me tiens prêt à m''arrêter et je garde mes distances plutôt que de la dépasser au ras.'
@@ -117,11 +116,15 @@
   - revision::v3
 - id: c-indice-cycliste-regard
   question: Devant moi, un cycliste regarde par-dessus son épaule gauche. Qu'est-ce que cela annonce ?
-  reponse: 'Qu''il va se déporter ou tourner à gauche : je ne le dépasse pas maintenant, je ralentis et je lui laisse la place.'
-  explication: Un cycliste signale ses intentions par le bras et le regard, pas par un clignotant. Il peut aussi s'écarter pour éviter une plaque d'égout, des gravillons ou une portière.
+  reponse: Il peut préparer un déport ou un virage à gauche. Je ralentis, garde de la place et diffère le dépassement
+    tant que sa manœuvre n’est pas claire.
+  explication: Un cycliste signale ses intentions par le bras et le regard, pas par un clignotant. Il peut
+    aussi s'écarter pour éviter une plaque d'égout, des gravillons ou une portière.
   theme: C
   sous_theme: vigilance
   source: En Voiture Simone — Les vélos ; REMC
+  tags:
+  - revision::v4
 - id: c-indice-vehicule-stationne-portiere
   question: Je longe une file de voitures stationnées en ville. Où je me place et à quelle allure ?
   reponse: 'Je m''écarte d''au moins une largeur de portière (≈ 1 m) et je réduis ma vitesse : une portière peut s''ouvrir, un piéton surgir entre deux véhicules ou une voiture sortir de sa place.'

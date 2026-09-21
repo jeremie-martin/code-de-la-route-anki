@@ -1,11 +1,15 @@
-# Thème X — Les deux chiffres de l'épreuve qui changent la façon de répondre. Les autres données
-# (prix, validité, inscription, banque de questions) sont dans le README, pas dans le deck.
 - id: etg-format-questions
-  texte: L'épreuve théorique générale (ETG) comporte {{c1::40}} questions ; il faut au moins {{c2::35}} bonnes réponses pour être reçu (soit {{c3::5}} erreurs maximum).
-  explication: 'Une question à deux affirmations est notée tout ou rien : une seule erreur sur l''une des deux = 0 pour la question. Viser 37-38/40 en examen blanc avant de s''inscrire.'
+  explication: Cela permet cinq erreurs au maximum. Toutes les propositions attendues doivent être correctement
+    traitées ; 37–38 sur des séries nouvelles est une marge personnelle de préparation, pas une exigence officielle.
   theme: X
   sous_theme: format
-  source: Arrêté du 20 avril 2012, art. 2 ; securite-routiere.gouv.fr — Objectifs et réglementation de l'examen du code
+  source: Arrêté du 20 avril 2012, art. 2 ; securite-routiere.gouv.fr — Objectifs et réglementation de l'examen
+    du code
+  rappels:
+  - L’ETG comporte {{c1::40}} questions.
+  - Pour réussir l’ETG, il faut au moins {{c2::35}} réponses justes.
+  tags:
+  - revision::v4
 - id: etg-temps-par-question
   texte: À l'ETG, on dispose d'environ {{c1::20 secondes}} pour répondre à chaque question, décomptées à partir de la fin de la lecture orale de l'énoncé.
   explication: 'Le temps ne manque pas si l''on a le réflexe : bandeau (une/plusieurs réponses), pictogramme de point de vue, rétroviseurs et arrière-plan, puis les propositions une à une.'

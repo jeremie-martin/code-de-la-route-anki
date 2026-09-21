@@ -1,0 +1,63 @@
+- id: c-arret-repere-limite
+  theme: C
+  sous_theme: comprehension
+  question: Une table mnémotechnique donne 81 m d’arrêt à 90 km/h. Puis-je garantir que je m’arrêterai en 81
+    m sur une route mouillée ?
+  reponse: 'Non : cette estimation ne décrit ni mon temps de réaction réel ni l’adhérence et les freins du
+    véhicule.'
+  explication: Retenir arrêt = réaction + freinage. Calculer avec les hypothèses d’un exercice ; en circulation,
+    adapter l’allure et accroître les marges. Les tableaux d’arrêt ne sont pas des garanties.
+  source: Sécurité routière — https://modules.securite-routiere.gouv.fr/module_distance_arret.html
+  tags:
+  - revision::v4
+  - competence::application
+- id: d-risque-part-exposition
+  theme: D
+  sous_theme: comprehension
+  question: Un bilan donne la part de chaque catégorie parmi les personnes tuées. Cela suffit-il pour comparer
+    le risque par kilomètre des différentes catégories ?
+  reponse: 'Non : il faut aussi connaître leur exposition, par exemple les kilomètres parcourus.'
+  explication: Une proportion parmi les victimes et un risque pour une distance donnée ont des dénominateurs
+    différents. Les deux-roues restent vulnérables ; une table de pourcentages ne mesure pas mon risque personnel.
+  source: ONISR — https://www.onisr.securite-routiere.gouv.fr/etat-de-linsecurite-routiere/bilans-annuels-de-la-securite-routiere/bilan-2025-de-la-securite-routiere
+  tags:
+  - revision::v4
+  - competence::application
+- id: d-risque-comparer-bilans
+  theme: D
+  sous_theme: comprehension
+  question: Deux supports donnent des nombres différents de tués sur la route. Quelles informations vérifier
+    avant de conclure qu’ils se contredisent ?
+  reponse: L’année, le territoire, la définition de l’indicateur et le caractère provisoire ou définitif du
+    bilan.
+  explication: Métropole et France entière ne sont pas le même périmètre. Un bilan provisoire peut être révisé.
+    Pour un exercice, lire la légende ; pour une statistique actuelle, consulter l’ONISR.
+  source: ONISR — https://www.onisr.securite-routiere.gouv.fr/etat-de-linsecurite-routiere/bilans-annuels-de-la-securite-routiere/bilan-2025-de-la-securite-routiere
+  tags:
+  - revision::v4
+  - competence::application
+- id: m-adas-equipement-reel
+  theme: M
+  sous_theme: comprehension
+  question: Je prends une voiture récente que je ne connais pas. Puis-je compter sur un freinage automatique
+    simplement parce que les voitures récentes ont des aides obligatoires ?
+  reponse: 'Non : je vérifie les fonctions réellement présentes, leur activation et leurs limites dans la notice.
+    Je reste chargé d’observer et de freiner.'
+  explication: Date d’homologation, catégorie, équipement et conditions d’usage diffèrent. Mémoriser une année
+    d’obligation ne permet pas de présumer qu’un système évitera une collision.
+  source: CNSR — https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf
+  tags:
+  - revision::v4
+  - competence::application
+- id: m-distribution-delai
+  theme: M
+  sous_theme: comprehension
+  question: Ma voiture roule peu et n’a pas atteint le kilométrage prévu pour remplacer la courroie de distribution.
+    Puis-je ignorer l’échéance en années prévue par sa notice ?
+  reponse: 'Non : je respecte aussi l’échéance de durée, même avec un faible kilométrage.'
+  explication: Le programme d’entretien est propre au véhicule ; certaines pièces vieillissent sans beaucoup
+    rouler. La notice peut prévoir une échéance de kilométrage ou de temps, au premier terme atteint.
+  source: Préconisations d’entretien du constructeur du véhicule ; notice et carnet d’entretien
+  tags:
+  - revision::v4
+  - competence::application

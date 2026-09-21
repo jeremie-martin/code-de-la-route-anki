@@ -103,6 +103,8 @@ CSS = """
 .nightMode .cdr-box.info, .night_mode .cdr-box.info { color: #cfcfcf; }
 .cdr-box b { font-weight: 700; }
 .cdr-src { font-size: 12px; color: #a0a0a0; margin-top: 18px; overflow-wrap: anywhere; }
+.cdr-src a { color: #24559a; }
+.nightMode .cdr-src a, .night_mode .cdr-src a { color: #8ab4f8; }
 .cdr-code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 13px; color: #a0a0a0; }
 .cloze { color: #1a6b3a; font-weight: 700; }
 .nightMode .cloze, .night_mode .cloze { color: #7ed49a; }
@@ -123,12 +125,20 @@ KICKER = '<div class="cdr-kicker">{{Theme}}{{#SousTheme}} · {{SousTheme}}{{/Sou
 FRONT_KICKER = '<div class="cdr-kicker">Code de la route · Rappel actif</div>'
 GRADE = ('<div class="cdr-hint">À revoir si la décision ou la raison essentielle manquait. '
          'Les détails de l’explication ne sont pas à réciter.</div>')
-SRC = '<div class="cdr-src">{{#Code}}<span class="cdr-code">{{Code}}</span> · {{/Code}}{{Source}}</div>'
+SRC = ('{{#Repere}}<details class="cdr-box info cdr-lesson"><summary>Comprendre ce thème · exemple expliqué</summary>'
+       '{{Repere}}</details>{{/Repere}}'
+       '<div class="cdr-src">{{#Code}}<span class="cdr-code">{{Code}}</span> · {{/Code}}{{Source}}</div>')
+
+# Native Anki cloze conditionals work on both faces, without JavaScript or extra fields.
+# Legacy prose is unaffected; only explicitly authored independent prompts are filtered.
+CLOZE_FOCUS = ('<style>.cdr-unit { display: none; } .cdr-unit[data-cloze="' +
+               ''.join('{{#c' + str(i) + '}}' + str(i) + '{{/c' + str(i) + '}}' for i in range(1, 5)) +
+               '"] { display: block; }</style>')
 
 
 def notetypes() -> list[dict]:
     """Return the note type definitions as plain dicts consumed by build.py."""
-    return [
+    types = [
         {
             "name": "CDR Reconnaissance",
             "fields": ["Id", "Type", "Image", "Question", "Nom", "Signification", "ConduiteATenir", "Complement", "Piege", "Code", "Theme", "SousTheme", "Source"],
@@ -175,12 +185,12 @@ def notetypes() -> list[dict]:
                 "qfmt": (
                     '<div class="cdr-wrap">' + FRONT_KICKER +
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
-                    '<div class="cdr-fait">{{cloze:Texte}}</div></div>'
+                    + CLOZE_FOCUS + '<div class="cdr-fait">{{cloze:Texte}}</div></div>'
                 ),
                 "afmt": (
                     '<div class="cdr-wrap">' + KICKER +
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
-                    '<div class="cdr-fait">{{cloze:Texte}}</div>'
+                    + CLOZE_FOCUS + '<div class="cdr-fait">{{cloze:Texte}}</div>'
                     '{{#Explication}}<div class="cdr-box">{{Explication}}</div>{{/Explication}}'
                     + '<div class="cdr-hint">À revoir si la valeur ou le terme demandé manquait. Vérifiez aussi l’unité.</div>' + SRC + '</div>'
                 ),
@@ -253,16 +263,19 @@ def notetypes() -> list[dict]:
             }],
         },
     ]
+    for note_type in types:
+        note_type['fields'].append('Repere')
+    return types
 
 
 DECK_DESCRIPTIONS = {
     "00 Méthode d'examen": "Lire une question de l'ETG sans tomber dans les pièges : bandeau « une/plusieurs réponses », pictogramme de point de vue, halo jaune, « je peux / je dois », adverbes, négations, questions vidéo. 40 questions, 35 bonnes réponses exigées, ~20 s par question. À voir en premier et à revoir la veille.",
-    "01 Signalisation": "Panneaux, panonceaux, balises, marquages, feux, gestes de l'agent : image → sens exact, conduite à tenir, piège. Les signaux essentiels arrivent en premier ; « Parcourir → tag:importance::rare → Suspendre » si vous manquez de temps. Les cartes « Quelle est la différence ? » ciblent les paires confondues.",
-    "02 Circulation": "Priorités (avec scénarios vérifiés), vitesses, positionnement, dépassement, croisement, arrêt et stationnement, feux. Relier les règles aux indices de chaque situation.",
-    "03 Le conducteur": "Un quart des questions de l'examen : distances (réaction, freinage, arrêt, sécurité), perception, vigilance et anticipation, alcool, stupéfiants, médicaments, fatigue, téléphone. Beaucoup de cartes « Vrai ou faux ? » : l'épreuve juge des affirmations sur le risque, pas des articles de loi.",
+    "01 Signalisation": "Panneaux, panonceaux, balises, marquages, feux, gestes de l'agent : image → sens exact, conduite à tenir, piège. Les bases précèdent les variantes ; adapter le débit des nouvelles cartes à la charge de révision. Les cartes « Quelle est la différence ? » ciblent les paires confondues.",
+    "02 Circulation": "Priorités (avec scénarios dessinés), vitesses, positionnement, dépassement, croisement, arrêt et stationnement, feux. Relier les règles aux indices de chaque situation.",
+    "03 Le conducteur": "Distances (réaction, freinage, arrêt, sécurité), perception, vigilance et anticipation, alcool, stupéfiants, médicaments, fatigue, téléphone. Relier les règles aux indices ; justifier les réponses aux affirmations.",
     "04 La route": "Nuit, pluie, brouillard, neige, tunnels, passages à niveau, tramways, chantiers, autoroute, montagne.",
     "05 Les autres usagers": "Piétons, cyclistes, trottinettes, motos (inter-files 2025), poids lourds, bus et tramways, véhicules prioritaires et facilités de passage.",
-    "06 Réglementation et notions diverses": "Permis à points et probatoire, classes d'amendes et barème des retraits, délits (valeurs 2025-2026, anciennes valeurs signalées), documents, assurance, contrôle technique, Crit'Air/ZFE, équipements.",
+    "06 Réglementation et notions diverses": "Permis à points et probatoire, classes d'amendes et barème des retraits, délits et conséquences, documents, assurance, contrôle technique, Crit'Air/ZFE, équipements.",
     "07 Premiers secours": "Protéger, alerter, secourir : choisir l’action selon la situation. Numéros d'urgence, PLS, RCP, DAE, obligations après un accident.",
     "08 Prendre et quitter son véhicule": "Vérifications, installation au poste de conduite (siège, appuie-tête, rétroviseurs, ceinture), quitter le véhicule (portière, pente, enfants).",
     "09 Mécanique et équipements": "Voyants du tableau de bord (symboles ISO en couleur réelle), pneus, niveaux, freinage, feux, aides à la conduite, dépannage.",

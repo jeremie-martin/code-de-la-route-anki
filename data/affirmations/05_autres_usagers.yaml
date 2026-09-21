@@ -1,7 +1,3 @@
-# U — Les autres usagers : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
-# La moitié se place du point de vue de l'automobiliste, l'autre de celui de l'usager vulnérable
-# (pictogramme de point de vue : exam.md §3.2, forme 9). Les fausses sont les distracteurs réels de l'épreuve.
-# ---------- Piétons et personnes vulnérables ----------
 - id: aff-u-pieton-telephone
   contexte: Un piéton debout au bord d'un passage protégé consulte son téléphone, puis pose un pied sur la chaussée.
   affirmation: Il bénéficie de la priorité et je dois m'arrêter pour le laisser traverser.
@@ -50,14 +46,18 @@
   sous_theme: pietons
   source: 'Code de la route, art. R413-17 III 3° et R414-13'
 - id: aff-u-pieton-nuit-croisement
-  contexte: Je suis piéton, vêtu de sombre, sur une route de campagne non éclairée.
-  affirmation: Un conducteur en feux de croisement ne me découvre qu'à une trentaine de mètres.
+  contexte: Je marche la nuit sur une route non éclairée, avec des vêtements sombres.
+  affirmation: Je peux être découvert trop tard par un conducteur en feux de croisement.
   verdict: vrai
-  pourquoi: 'Les feux de croisement n''éclairent qu''environ 30 m, bien moins que la distance d''arrêt à 90 km/h : de nuit, on ne s''arrête plus dans la zone éclairée. D''où les vêtements clairs et la marche face aux véhicules.'
+  pourquoi: La distance de détection dépend du contraste, de l’éclairage et de la météo. Les 30 m de portée
+    minimale réglementaire ne sont pas une distance garantie de détection d’un piéton. Me rendre visible et
+    ne pas présumer avoir été vu.
   theme: U
   sous_theme: pietons
-  source: 'securite-routiere.gouv.fr — Conduire la nuit ; Code de la route, art. R412-36'
-# ---------- Cyclistes ----------
+  source: Code de la route, R413-17 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/
+    ; R313-3
+  tags:
+  - revision::v4
 - id: aff-u-velo-bande-obligatoire
   contexte: Je suis à vélo ; une bande cyclable signalée par un panneau carré bleu longe la chaussée.
   affirmation: Je dois l'emprunter et quitter la chaussée.

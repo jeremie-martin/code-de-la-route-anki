@@ -1,0 +1,72 @@
+- id: distance-etendue
+  raison: Même nombre ; les flèches changent la relation spatiale. Lire le panonceau avant de décider où anticiper.
+  notes:
+  - l-visuel-distance
+  - l-visuel-etendue
+- id: arret-stationnement
+  raison: Faire varier le signal puis le motif de l’immobilisation ; rester au volant ne suffit pas à qualifier
+    un arrêt.
+  notes:
+  - l-visuel-arret-b6a1
+  - l-visuel-arret-b6d
+  - l-visuel-attendre-b6a1
+- id: marquage-arret
+  raison: Transférer la distinction arrêt/stationnement des panneaux au marquage, sans annoncer la réponse
+    par le texte.
+  notes:
+  - l-visuel-jaune-continu
+  - l-visuel-jaune-discontinu
+- id: plafond-adaptation
+  raison: Lire une valeur puis distinguer son point d’application d’une permission de maintenir cette allure.
+  notes:
+  - l-visuel-b14-position
+  - l-visuel-b14-adaptation
+- id: fin-et-regle-generale
+  raison: Passer du nom d’un signal de fin à la règle qui s’applique ensuite.
+  notes:
+  - l-visuel-fin-interdictions
+  - l-vitesse-hors-agglo
+- id: voyant-et-contexte
+  raison: Même symbole et même couleur ; moteur arrêté ou en fonctionnement changent la décision.
+  notes:
+  - m-visuel-batterie-contact
+  - m-visuel-batterie-roulant
+- id: pression-document
+  raison: Appliquer la notice exige de choisir la bonne ligne ET le bon essieu ; compléter le rappel verbal
+    par une lecture de tableau.
+  notes:
+  - m-visuel-pression-charge
+  - m-visuel-pression-usuelle
+- id: remorque-cas-limite
+  raison: 'Changer de 50 kg fait changer de branche de la règle : ni 750 ni 3 500 kg ne sont des seuils universels
+    isolés.'
+  notes:
+  - s-remorque-seuil-750
+  - s-remorque-seuil-800
+  - s-remorque-cas-b
+  - s-remorque-cas-b96
+- id: distances-composantes
+  raison: Combiner les composantes pour comparer à l’espace disponible ; changer l’adhérence sans modifier
+    arbitrairement la réaction.
+  notes:
+  - c-arret-somme
+  - c-distance-freinage-mouille-exercice
+  - c-distance-obstacle-exercice
+  - c-double-vitesse-arret
+- id: ecart-et-exception
+  raison: L’écart nécessaire n’autorise pas n’importe quel franchissement ; changer la catégorie d’usager change
+    l’exception.
+  notes:
+  - scn-dep-cycliste-ligne-continue
+  - l-cycliste-ligne-espace
+  - l-cavalier-ligne-continue
+- id: intervalle-marge
+  raison: Relier la règle temporelle à une stratégie en circulation, y compris quand le danger vient de derrière.
+  notes:
+  - c-intervalle-repere
+  - c-suiveur-trop-pres
+- id: m12-destinataire
+  raison: Même feu, même direction ; changer le véhicule change la permission, jamais la priorité.
+  notes:
+  - l-visuel-m12-edpm
+  - l-visuel-m12-voiture

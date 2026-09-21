@@ -1,8 +1,10 @@
 import copy
+import re
+import tempfile
 import unittest
 from unittest.mock import patch
 
-from build.build import curriculum, load_all, validate, inline_md
+from build.build import curriculum, load_all, validate, inline_md, fait_html
 from build.learning import card_plan, objectives, annotate, validate_objectives
 from build.priority import passes_before
 from build.models import notetypes
@@ -65,8 +67,61 @@ class LearningTests(unittest.TestCase):
         for nt in notetypes():
             for template in nt['templates']:
                 self.assertNotIn('{{SousTheme}}', template['qfmt'])
-                for answer in ('Reponse', 'Verdict', 'Pourquoi', 'Signification', 'Nom'):
+                for answer in ('Reponse', 'Verdict', 'Pourquoi', 'Signification', 'Nom', 'Repere'):
                     self.assertNotIn('{{' + answer + '}}', template['qfmt'])
+
+    def test_visual_applications_follow_their_recognition(self):
+        plan = card_plan(self.data, curriculum(self.data))
+        positions = {ident: pos for pos, (_, ident, _) in enumerate(plan)}
+        recon = {n['id']: n for n in self.data['reconnaissance']}
+        for note in self.data['questions']:
+            if note.get('image_ref'):
+                self.assertEqual(note['image'], recon[note['image_ref']]['image'])
+                self.assertLess(positions[note['image_ref']], positions[note['id']])
+
+    def test_a_prompt_cannot_mix_or_repeat_sibling_targets(self):
+        for invalid in (["A {{c1::x}} et B {{c2::y}}"],
+                        ["A {{c1::x}}", "B {{c1::y}}"], ["Texte sans trou"]):
+            data = copy.deepcopy(self.data)
+            data['faits'][0]['rappels'] = invalid
+            self.assertTrue(any('chaque rappel' in e for e in validate(data)))
+
+    def test_independent_prompts_render_with_native_anki_conditionals(self):
+        from anki.collection import Collection
+        from anki.consts import MODEL_CLOZE
+        from lxml import html
+        model = next(m for m in notetypes() if m['name'] == 'CDR Fait')
+        with tempfile.TemporaryDirectory() as tmp:
+            col = Collection(tmp + '/clozes.anki2')
+            try:
+                m = col.models.new('CDR Fait')
+                m['type'] = MODEL_CLOZE
+                for name in model['fields']:
+                    col.models.add_field(m, col.models.new_field(name))
+                template = col.models.new_template('Cloze')
+                template.update(model['templates'][0])
+                col.models.add_template(m, template)
+                col.models.add(m)
+                for original in self.data['faits']:
+                    if 'rappels' not in original:
+                        continue
+                    note = col.new_note(m)
+                    note['Texte'] = fait_html(original)
+                    col.add_note(note, 1)
+                    cards = note.cards()
+                    self.assertEqual(len(cards), len(original['rappels']), original['id'])
+                    for card in cards:
+                        for face in (card.question(), card.answer()):
+                            # The selected ordinal is produced by Anki, not JS or our parser.
+                            target = re.search(r'\.cdr-unit\[data-cloze="(\d+)"\]', face)[1]
+                            self.assertEqual(int(target), card.ord + 1)
+                            tree = html.fromstring(face)
+                            shown = tree.xpath(f'//div[@class="cdr-unit"][@data-cloze="{target}"]')
+                            self.assertEqual(len(shown), 1, original['id'])
+                            self.assertTrue(shown[0].xpath('.//span[@class="cloze"]'))
+                            self.assertFalse(shown[0].xpath('.//span[@class="cloze-inactive"]'))
+            finally:
+                col.close()
 
     def test_opposite_turn_changes_priority(self):
         spec = {'approaches': {

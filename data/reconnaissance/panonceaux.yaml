@@ -109,12 +109,13 @@
   image:
     commons: France road sign M4d1.svg
   nom: 'Catégorie : cycles'
-  signification: Le panneau ne s'applique qu'aux cycles (vélos).
-  complement: 'Sous un B6a1 : « stationnement interdit aux vélos » ; sous un C1a : parking vélo. Différent de M9v1/M9v2 (« sauf vélo » : exception).'
+  signification: 'Catégorie désignée : cycles, EDPM et cyclomobiles légers.'
+  complement: 'Sous une interdiction : en précise les destinataires. Sous une obligation ou une indication : signale que cette catégorie est également concernée.'
   theme: L
   sous_theme: panonceaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: Le pictogramme vélo ne signifie pas que seuls les vélos sont concernés.
 - id: m4d2
   type: panonceau
   code: M4d2
@@ -890,14 +891,14 @@
   image:
     commons: France road sign M12D.svg
   nom: Autorisation conditionnelle de franchissement du feu rouge pour les cyclistes (« cédez-le-passage cycliste au feu »)
-  signification: 'Panonceau triangulaire pointe en bas, sous un feu : les cyclistes peuvent franchir le feu rouge dans la direction fléchée, en cédant le passage.'
-  conduite: 'En voiture : le rouge reste un arrêt absolu ; s''attendre à voir passer des cyclistes.'
-  complement: 'Seul panonceau triangulaire. Équivalent lumineux : le signal R19 (feu jaune clignotant avec vélo).'
+  signification: Sous un feu imposant l’arrêt, autorise cycles, EDPM et cyclomobiles légers à passer dans les directions fléchées, en cédant le passage.
+  conduite: 'En voiture : attendre le vert ; anticiper les usagers autorisés à passer et leurs trajectoires.'
+  complement: 'Céder aux piétons et aux véhicules bénéficiant du vert. EDPM : par exemple une trottinette électrique.'
   theme: L
   sous_theme: panonceaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: Ne concerne JAMAIS les voitures ni les deux-roues motorisés.
+  piege: 'Ne donne ni priorité ni autorisation aux voitures, motos ou cyclomoteurs ordinaires. Le signal lumineux R19 a un champ différent : les cyclistes.'
 - id: km1
   type: panonceau
   code: KM1

@@ -1,6 +1,3 @@
-# Thème L — Scénarios de dépassement, croisement et positionnement (schémas « route » générés)
-# Convention : « MOI » = voiture bleue cerclée de jaune, en bas, roulant vers le haut ; les véhicules rouges roulent en sens inverse.
-
 - id: scn-dep-ligne-continue
   kind: road
   spec:
@@ -15,17 +12,19 @@
       y: 45
       colour: gris
       kind: truck
-  question: Le camion roule lentement ; bonne visibilité, personne en face ni derrière. Le marquage permet-il de
-    le dépasser ?
-  reponse: 'Non : la ligne axiale est continue, il est interdit de la franchir ou de la chevaucher (135 €, 3 points).'
-  explication: Seul un cycliste, une trottinette ou un cyclomobile léger peut être dépassé en chevauchant une ligne
-    continue, avec visibilité. J'attends la fin de la ligne continue (annoncée ou non par une ligne de dissuasion).
+  question: Le camion roule lentement ; bonne visibilité, personne en face ni derrière. Le marquage permet-il
+    de le dépasser ?
+  reponse: 'Non : dépasser ce camion demanderait de franchir ou chevaucher la ligne continue, ce qui est interdit
+    ici.'
+  explication: 'L’exception de chevauchement pour dépasser un cycle, un EDPM ou un cyclomobile léger ne concerne
+    pas ce camion. Hors exception : 3 points pour franchissement, 1 pour chevauchement.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-19
   tags:
   - competence::lecture_schema
   - revision::v3
+  - revision::v4
 - id: scn-dep-ligne-discontinue-libre
   kind: road
   spec:
@@ -95,18 +94,19 @@
     - lane: 1
       y: 45
       colour: gris
-  question: En observant le marquage de mon côté, puis-je commencer un dépassement si les autres conditions sont
-    réunies ?
-  reponse: 'Non : seule la ligne la plus proche de moi compte, et elle est continue. Les véhicules d''en face, eux,
-    peuvent dépasser.'
-  explication: 'Article R412-20 : on ne franchit une ligne mixte que si la ligne discontinue est de son côté au
-    début de la manœuvre, et la manœuvre doit être terminée avant la fin de la discontinue.'
+  question: En observant le marquage de mon côté, puis-je commencer un dépassement si les autres conditions
+    sont réunies ?
+  reponse: 'Non : la ligne de mon côté est continue. Le sens opposé dispose d’une ligne discontinue, mais ses
+    conducteurs doivent aussi vérifier toutes les conditions de sécurité.'
+  explication: 'Article R412-20 : on ne franchit une ligne mixte que si la ligne discontinue est de son côté
+    au début de la manœuvre, et la manœuvre doit être terminée avant la fin de la discontinue.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-20
   tags:
   - competence::lecture_schema
   - revision::v3
+  - revision::v4
 - id: scn-dep-mixte-autre-cote
   kind: road
   spec:
@@ -180,14 +180,26 @@
     lanes: 2
     axis: continue
     vehicles:
-      - {lane: 1, y: 15, colour: bleu, me: true}
-      - {lane: 1, y: 45, colour: vert, kind: bike}
-  question: "Ligne continue ; un cycliste roule devant moi, bonne visibilité, personne en face. Puis-je le dépasser ?"
-  reponse: "Oui, en chevauchant (sans la franchir entièrement) la ligne continue pour laisser 1 m en agglomération, 1,50 m hors agglomération."
-  explication: "Exception de l'article R412-19 (2015) : chevauchement autorisé pour dépasser un cycle, un EDPM ou un cyclomobile léger, dans les conditions de sécurité de R414-4. Avec un véhicule en face ou sans visibilité, j'attends derrière."
+    - lane: 1
+      y: 15
+      colour: bleu
+      me: true
+    - lane: 1
+      y: 45
+      colour: vert
+      kind: bike
+  question: Hors agglomération, bonne visibilité, personne en face ni en train de me dépasser. Un simple chevauchement
+    permettrait de laisser 1,50 m au cycliste puis de revenir sans gêner. Puis-je dépasser ?
+  reponse: 'Oui : l’exception autorise le chevauchement pour dépasser un cycle, si toutes les conditions de
+    sécurité sont réunies. Elle n’autorise pas le franchissement complet.'
+  explication: 'Exception de l''article R412-19 (2015) : chevauchement autorisé pour dépasser un cycle, un
+    EDPM ou un cyclomobile léger, dans les conditions de sécurité de R414-4. Avec un véhicule en face ou sans
+    visibilité, j''attends derrière.'
   theme: L
   sous_theme: depassement
-  source: "Code de la route, art. R412-19 et R414-4"
+  source: Code de la route, art. R412-19 et R414-4
+  tags:
+  - revision::v4
 - id: scn-dep-vehicule-tourne-gauche
   kind: road
   spec:

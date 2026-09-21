@@ -1,5 +1,3 @@
-# Thème X — Lire une question de l'ETG sans tomber dans les pièges (docs/05-audit-v2.md §2.6 : seules les
-# cartes qui changent la façon de répondre sont gardées ; l'organisation de l'épreuve est dans le README).
 - id: etg-bandeau-reponses
   question: Sur une question de l'ETG, comment sait-on s'il faut cocher une ou plusieurs réponses ?
   reponse: 'Le bandeau de la question l''indique : « une réponse » ou « plusieurs réponses ».'
@@ -67,12 +65,17 @@
   tags:
   - revision::v3
 - id: etg-adverbes
-  question: 'Énoncé de l''ETG : « Pour entrer dans cette zone en période hivernale, mon véhicule doit obligatoirement être équipé de 4 pneus hiver. » Sur quel mot se joue la réponse ?'
-  reponse: 'Sur « obligatoirement » : c''est vrai seulement si je n''ai ni chaînes ni chaussettes à neige à bord (question officielle 2023, réponse OUI dans ce cas).'
-  explication: 'Les mots qui restreignent ou nuancent (obligatoirement, uniquement, principalement, le plus souvent) et les conditions en fin d''énoncé (sauf si, dans ce cas) décident souvent de la réponse : les relire avant de valider.'
+  question: « En zone d’équipements hiver, ma voiture doit avoir quatre pneus hiver, même si j’emporte des
+    chaînes adaptées. » Quelle condition dois-je examiner ?
+  reponse: 'L’alternative autorisée : pour l’obligation saisonnière, les chaînes adaptées à au moins deux roues
+    motrices à bord peuvent remplacer les quatre pneus hiver admis.'
+  explication: Lire toutes les conditions, pas seulement le mot « doit ». Une prescription locale B26 peut
+    ensuite demander un équipement en service. Ne pas deviner vrai/faux à partir d’un adverbe.
   theme: X
   sous_theme: lecture
-  source: Codeclic — Comment réussir le code ; En Voiture Simone — Questions pièges ; exemples officiels 2023
+  source: Code de la route, D314-8 ; arrêté du 23 juin 2021
+  tags:
+  - revision::v4
 - id: etg-negation
   question: 'Énoncé de l''ETG : « Il n''est pas interdit de tourner à droite. » Qu''est-ce que cela veut dire ?'
   reponse: 'Que c''est autorisé : une double négation (« pas interdit ») équivaut à une permission.'
@@ -81,9 +84,14 @@
   sous_theme: lecture
   source: Codeclic — Comment réussir le code
 - id: etg-premiere-reponse
-  question: Pendant l'épreuve, faut-il changer une réponse dont on doute au dernier moment ?
-  reponse: 'Non, sauf si l''on a clairement repéré un élément manqué : on lit l''énoncé et toutes les propositions jusqu''au bout, on répond, on valide.'
-  explication: 'Répondre trop vite est l''erreur n° 1 signalée par les opérateurs : utiliser les 20 secondes pour relire le bandeau (une/plusieurs réponses) et vérifier les rétroviseurs et l''arrière-plan de la photo.'
+  question: Une réponse choisie rapidement me fait hésiter avant de valider. Comment la vérifier utilement
+    ?
+  reponse: Je relis les conditions et chaque proposition, puis cherche l’indice ou la règle qui justifie mon
+    choix. Je corrige si ce contrôle montre une erreur.
+  explication: Ni conserver systématiquement sa première intuition ni changer au hasard. Utiliser le temps
+    disponible pour contrôler point de vue, portée des signaux et mots de l’énoncé.
   theme: X
   sous_theme: strategie
   source: Codeclic — Conseils examen ; Dekra — 10 erreurs à éviter
+  tags:
+  - revision::v4

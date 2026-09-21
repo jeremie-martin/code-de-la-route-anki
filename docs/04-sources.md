@@ -3,7 +3,7 @@
 Une citation est nécessaire mais ne suffit pas : il faut qu’elle couvre **la phrase et ses conditions**.
 Une référence « Code de la route » ou « ISO 2575 » ne valide pas à elle seule une consigne de conduite.
 Le registre [`data/_meta/source_checks.yaml`](../data/_meta/source_checks.yaml) associe les contrôles
-externes ciblés de la v3 à leurs notes et à leur portée, avec date de consultation du 21 septembre 2026.
+externes ciblés des révisions v3 et v4 à leurs notes et à leur portée, avec date de consultation du 21 septembre 2026.
 Ce registre ne signifie pas que toute la bibliothèque a été à nouveau vérifiée ligne par ligne.
 
 ## Références utilisées pour la révision
@@ -64,3 +64,15 @@ aux places avant passages piétons à l’échéance 2027 figurent dans la
 consultée le 21 septembre 2026 : l’exception des emplacements matérialisés y est supprimée.
 Recontrôler cette version lors du passage à l’édition 2027.
 Mettre à jour `source_checks.yaml` seulement après une nouvelle consultation effective.
+
+## Contrôles supplémentaires v4 — 21 septembre 2026
+
+Les entrées `v4-*` du registre précisent les notes et la portée contrôlées : alcool, vitesses et sanctions,
+inter-files, permis/remorque, triangle, ligne continue, adaptation de l’allure, pneumatiques, écoconduite,
+accidentalité et signalisation. Les valeurs constructeur restent propres au véhicule ; les tableaux
+créés pour exercer la lecture sont fictifs et explicitement signalés.
+
+L’[arrêté de signalisation consolidé](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/)
+précise notamment les catégories M4d1/M12 et l’obligation des EDPM sous C113. Ne pas généraliser la
+formulation « cyclistes » d’un signal à tous les pictogrammes vélo : le texte de R19 reste distinct.
+La consultation de cette source corrige les notes concernées, sans certifier tous les autres signaux.

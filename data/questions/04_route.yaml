@@ -1,4 +1,3 @@
-# R — La route : décisions situées (cf. docs/research/brief-v2-redaction.md).
 - id: r-nuit-feux-croisement-route
   question: De nuit, hors agglomération, je roule en feux de route ; des phares apparaissent au loin en face. Que fais-je ?
   reponse: Je passe en feux de croisement assez tôt pour ne pas l'éblouir, et j'y reste tant que nous ne sommes pas croisés.
@@ -15,11 +14,15 @@
   source: Code de la route, art. R416-6
 - id: r-nuit-vitesse-visibilite
   question: Pourquoi faut-il rouler moins vite de nuit, même sur une route connue et dégagée ?
-  reponse: 'Parce qu''on ne voit qu''à la portée de ses feux : environ 30 m en croisement. À 70 km/h et plus, un obstacle qui apparaît dans la zone éclairée n''est plus évitable.'
-  explication: On lève le pied de 10 à 20 km/h et on porte l'intervalle à 3 secondes ; même en feux de route, on n'éclaire qu'à 100 m.
+  reponse: Pour pouvoir m’arrêter dans la distance effectivement visible. L’éclairage, le contraste de l’obstacle,
+    la météo et mon temps de réaction limitent ce que je peux anticiper.
+  explication: Les 30 m réglementaires des feux de croisement sont un minimum de portée en conditions définies,
+    pas une portée réelle fixe. Aucun seuil universel de 70 km/h ne sépare obstacle évitable et inévitable.
   theme: R
   sous_theme: nuit
-  source: securite-routiere.gouv.fr — Conduire de nuit ; Codes Rousseau — Les feux
+  source: Code de la route, R413-17 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/
+  tags:
+  - revision::v4
 - id: r-pluie-feux
   question: Averse de jour sur une route hors agglomération, la visibilité baisse nettement. Dois-je allumer mes feux ?
   reponse: 'Oui, les feux de croisement : l''éclairage est obligatoire dès que la visibilité est réduite par les circonstances atmosphériques, de jour comme de nuit.'
@@ -35,12 +38,18 @@
   sous_theme: intemperies
   source: Stych — Circuler par temps de pluie ; securite-routiere.gouv.fr — Conduire sous la pluie
 - id: r-aquaplaning
-  question: Sur autoroute détrempée, à quoi je reconnais que mes pneus ne touchent plus la route ?
-  reponse: 'Ma direction devient légère et imprécise, un bruit d''eau monte du bas de caisse et le véhicule devant laisse une traînée de mousse : c''est l''aquaplaning.'
-  explication: Les sculptures n'évacuent plus l'eau et le pneu glisse sur une pellicule d'eau. Favorisé par la vitesse, les pneus usés et les chaussées larges et planes.
+  question: Sur chaussée très mouillée, la direction devient soudain légère et le véhicule répond mal. Que
+    faire face à un possible aquaplanage ?
+  reponse: Je relâche progressivement l’accélérateur et garde une direction stable, sans freinage ni braquage
+    brusque, pour retrouver l’adhérence.
+  explication: 'Les pneus peuvent perdre le contact avec la chaussée sur un film d’eau. Une gerbe derrière
+    un véhicule ne suffit pas à diagnostiquer un aquaplanage. Prévenir : allure réduite, pneus en état, intervalle
+    accru.'
   theme: R
   sous_theme: intemperies
   source: Ornikar — L'aquaplaning ; securite-routiere.gouv.fr — Conduire sous la pluie
+  tags:
+  - revision::v4
 - id: r-brouillard-feux
   question: Par brouillard, quels feux dois-je utiliser ?
   reponse: Les feux de croisement, pas les feux de route (ils se réfléchissent sur le brouillard et m'aveuglent), complétés si besoin des feux de brouillard avant et arrière.
@@ -215,11 +224,16 @@
   - revision::v3
 - id: r-autoroute-sortie
   question: Ma sortie d'autoroute est annoncée. Où et quand dois-je ralentir ?
-  reponse: Je gagne la voie de droite dès l'annonce et je garde ma vitesse jusqu'à la voie de décélération ; je ne freine qu'une fois engagé dedans, puis dans la bretelle.
-  explication: 'La manœuvre doit être achevée au plus tard aux signaux du début de la bretelle (R421-4). Après l''autoroute, la sensation de vitesse est faussée : lire le compteur.'
+  reponse: Je prépare ma voie assez tôt et réduis normalement l’allure sur la voie de décélération. Si le trafic,
+    la visibilité ou une limitation l’exigent, je ralentis avant, progressivement.
+  explication: Ne pas maintenir artificiellement sa vitesse face à une file arrêtée ou une limitation. Contrôler
+    derrière et anticiper évitent un freinage tardif. Une sortie manquée se rattrape à l’échangeur suivant.
   theme: R
   sous_theme: autoroute
-  source: Code de la route, art. R421-4 ; IISR, 5e partie
+  source: Code de la route, R413-17 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/
+    ; R421-4
+  tags:
+  - revision::v4
 - id: r-autoroute-sortie-ratee
   question: Je viens de dépasser la bretelle de sortie que je voulais prendre. Que fais-je ?
   reponse: 'Je continue jusqu''à la sortie suivante pour faire demi-tour hors de l''autoroute : marche arrière et demi-tour y sont interdits en toutes circonstances, bande d''arrêt d''urgence comprise.'

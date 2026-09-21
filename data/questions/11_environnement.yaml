@@ -1,47 +1,72 @@
-# E — Environnement : décisions d'écoconduite, pollution, écomobilité.
-# Les chiffres vivent dans data/faits/11_environnement.yaml, les idées reçues dans data/affirmations/11_environnement.yaml.
 - id: e-feu-rouge-anticipation
-  question: Le feu passe au rouge à une centaine de mètres devant moi. Je maintiens mon allure pour freiner ensuite, ou je lève le pied tout de suite ?
-  reponse: 'Je lève le pied tout de suite : en frein moteur l''injection est coupée, je ne consomme rien, je ménage mes freins et j''arrive peut-être au vert.'
-  explication: 'Anticiper est le premier geste d''écoconduite : moins de freinages, donc moins de réaccélérations. À l''ETG, « je maintiens ma vitesse » est presque toujours la mauvaise réponse.'
+  question: Le feu passe au rouge à une centaine de mètres devant moi. Je maintiens mon allure pour freiner
+    ensuite, ou je lève le pied tout de suite ?
+  reponse: 'Je lève le pied assez tôt et garde un rapport adapté : j’anticipe l’arrêt, ménage les freins et
+    évite une accélération inutile.'
+  explication: Sur de nombreux moteurs à injection, l’alimentation est coupée en décélération au-dessus d’un
+    certain régime. Ce mécanisme dépend du véhicule ; anticiper reste utile dans tous les cas.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — Écoconduite ; En Voiture Simone — Éco-conduite
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  tags:
+  - revision::v4
 - id: e-rapports-regime
   question: À quel régime passe-t-on les rapports pour consommer moins ?
-  reponse: Vers 2 500 tr/min en essence et 2 000 tr/min en diesel ; on roule sur le rapport le plus élevé possible sans faire peiner le moteur (ex. 4e à 50 km/h en ville).
-  explication: Un moteur qui tourne vite consomme et s'use plus ; à l'inverse, un régime trop bas (à-coups) l'abîme. La boîte automatique gère cela seule en mode normal ou éco.
+  reponse: Je monte les rapports sans pousser inutilement le régime, en suivant l’indicateur et la notice,
+    tout en gardant assez de reprise pour la situation. J’évite de faire peiner le moteur.
+  explication: Ni un régime ni un rapport à 50 km/h ne conviennent à tous les moteurs et toutes les pentes.
+    L’allure, la charge et les besoins de sécurité décident.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — Écoconduite
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  tags:
+  - revision::v4
 - id: e-moteur-arret
-  question: Les barrières d'un passage à niveau viennent de se fermer devant moi. Je laisse tourner le moteur ?
-  reponse: 'Non : dès qu''un arrêt dépasse 20 à 30 secondes, je coupe le moteur — c''est exactement ce que fait automatiquement le Stop & Start.'
-  explication: Un moteur au ralenti consomme 0,5 à 1 L/h et pollue pour rien ; le redémarrage coûte moins que 20 s de ralenti. Laisser tourner le moteur d'un véhicule à l'arrêt sans nécessité est d'ailleurs interdit.
+  question: Les barrières d'un passage à niveau viennent de se fermer devant moi. Je laisse tourner le moteur
+    ?
+  reponse: Pour un arrêt prolongé en sécurité, je coupe le moteur si les conditions et la notice le permettent.
+    Si le véhicule a un Stop & Start, je laisse le système gérer ses conditions de fonctionnement.
+  explication: Ne pas imposer une coupure manuelle au bout d’un délai universel ; conserver les fonctions nécessaires
+    à la sécurité et au confort thermique.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — Écoconduite ; arrêté du 12 novembre 1963 (moteur tournant à l'arrêt)
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  tags:
+  - revision::v4
 - id: e-frein-moteur
   question: Qu'est-ce que le frein moteur et pourquoi l'utiliser ?
-  reponse: 'Le ralentissement obtenu en levant le pied avec un rapport engagé, sans débrayer : injection coupée donc consommation nulle, freins ménagés et véhicule plus stable.'
-  explication: 'Il s''emploie dès que l''on peut ralentir sans freiner, et il est indispensable en longue descente (question officielle 2023 : freinage par intermittence et frein moteur).'
+  reponse: Le ralentissement obtenu en relâchant l’accélérateur avec un rapport engagé. Il aide à maîtriser
+    l’allure et à limiter l’échauffement des freins, notamment en descente.
+  explication: Sur de nombreux moteurs à injection, la consommation peut être nulle dans certaines phases de
+    décélération. Ce n’est pas une promesse universelle ; une électrique peut récupérer de l’énergie, dans
+    les limites de son système.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — Écoconduite ; Sécurité routière — Exemples de nouvelles questions (Q18)
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  tags:
+  - revision::v4
 - id: e-climatisation-conso
   question: 'Été, embouteillage en ville par forte chaleur : climatisation ou vitres ouvertes ?'
-  reponse: 'Les vitres : à faible allure, c''est la climatisation qui coûte le plus cher en carburant. Si je la garde, je la règle 4 à 5 °C sous la température extérieure.'
-  explication: Un entretien régulier (filtre d'habitacle, fluide frigorigène) maintient son efficacité ; le fluide, gaz à fort effet de serre, ne se recharge que chez un professionnel.
+  reponse: Je préserve une température compatible avec ma vigilance, j’aère d’abord si l’habitacle est surchauffé
+    puis j’utilise la climatisation sans refroidir excessivement, vitres fermées.
+  explication: La recherche d’économie ne doit pas entraîner chaleur dangereuse ou buée. L’effet sur la consommation
+    varie avec le véhicule, le climat et l’usage.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — La climatisation ; Codeclic — Conduite économique
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  tags:
+  - revision::v4
 - id: e-polluant-co2
   question: Pourquoi le CO₂ ne se traite-t-il pas comme les autres polluants d'un véhicule ?
-  reponse: Ce n'est pas un gaz toxique mais le principal gaz à effet de serre ; il est proportionnel au carburant brûlé, donc aucun filtre ne le réduit — seule une consommation plus faible le fait.
-  explication: Les transports pèsent près de 30 % des émissions françaises de gaz à effet de serre, la voiture particulière en tête. Les NOx et les particules, eux, se traitent par catalyseur, filtre à particules ou AdBlue.
+  reponse: Le CO₂ contribue au réchauffement climatique ; les NOx et les particules dégradent notamment la
+    qualité de l’air respiré. Réduire l’un ne suffit pas à supprimer les autres.
+  explication: Pour un carburant donné, le CO₂ à l’échappement dépend de la quantité brûlée. Un filtre à particules
+    ne piège pas ce gaz. Ne pas en déduire que le CO₂ serait inoffensif à toute concentration.
   theme: E
   sous_theme: pollution
-  source: ADEME ; Ministère de la Transition écologique — Qualité de l'air
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  tags:
+  - revision::v4
 - id: e-particules-usure
   question: En dehors de l'échappement, d'où viennent les particules fines émises par une voiture ?
   reponse: De l'usure des freins, des pneus et de la chaussée — plus de la moitié du total des particules dues au trafic routier.

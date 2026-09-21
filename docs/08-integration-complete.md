@@ -1,5 +1,9 @@
 # Révision du parcours complet — 21 septembre 2026
 
+Document historique de la révision précédente. La version actuelle est décrite dans
+[la refonte pédagogique v4](09-refonte-pedagogique.md).
+
+
 ## Décision
 
 Le commit `316dffb` conserve la première révision. Cette suite corrige son erreur de conception :

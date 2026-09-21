@@ -1,4 +1,4 @@
-# Conception des cartes — v3
+# Conception des cartes — v4
 
 ## Ce que l’on optimise
 
@@ -40,7 +40,7 @@ sous-thème, qui pouvait servir d’indice involontaire.
 Les clozes restent adaptées aux seuils utiles, mais une table visible peut permettre un calcul ou une
 déduction au lieu du rappel voulu. Le socle évite les nombreuses tables de statistiques et de sanctions
 secondaires ; il combine les seuils importants avec des applications nouvelles. Pour toute nouvelle
-cloze, examiner **chaque recto rendu**, pas seulement la note YAML. Ne pas changer les numéros des
+cloze, examiner **chaque recto rendu**, pas seulement la note YAML. La v4 est un départ neuf ; pour les versions suivantes, ne pas changer les numéros des
 clozes publiées sans traiter la migration de leurs cartes.
 
 Deux cartes sur la même règle sont justifiées si elles entraînent des compétences différentes :
@@ -75,3 +75,29 @@ avec identité binaire : les paquets contiennent notamment des dates de généra
 Voir `docs/08-integration-complete.md` pour les arbitrages, `docs/07-entrainement.md` pour le retour des séries
 réelles. Le test final de la conception reste le transfert à des situations nouvelles, à mesurer en
 usage : aucun essai comparatif de réussite des candidats n’a été réalisé pour ce deck.
+
+## Rappels indépendants et explications (v4)
+
+Un `fait` accepte soit `texte`, soit `rappels`, liste de phrases autonomes. Exemple :
+
+```yaml
+rappels:
+  - "Dans le cas A, le seuil est {{c1::valeur A}}."
+  - "Dans le cas B, le seuil est {{c2::valeur B}}."
+```
+
+Chaque entrée ne contient qu’un ordinal, distinct des autres, contigu de 1 à 4. Le build compile ces
+phrases dans `Texte` ; les conditions cloze natives d’Anki ne montrent que la phrase de la carte active,
+au recto comme au verso. L’enfouissement des cartes sœurs reste utile. Garder `texte` quand plusieurs
+trous forment volontairement une même relation ; contrôler l’absence d’indice qui court-circuite le rappel.
+
+Les onze repères de `lessons.yaml` fournissent principe, exemple expliqué et piste de transfert.
+Le volet au verso est fermé par défaut : il ne surcharge pas le rappel et ne donne pas la réponse au
+recto. Le guide `COMPRENDRE.md` permet de lire ces introductions avant de commencer un thème.
+Ces repères accompagnent les cartes ; ce ne sont ni un cours intégral ni onze nouvelles listes à apprendre.
+
+Une question avec `image_ref` réutilise la représentation canonique d’un signal et attend son
+introduction dans le parcours. Une image doit être nécessaire à la décision : ne pas nommer le signal
+ou transcrire sa valeur dans l’énoncé. Un tableau fictif porte explicitement sa nature et son périmètre.
+Les familles de `contrasts.yaml` rendent vérifiable la condition qui change entre les cas, sans imposer
+leur présentation consécutive. Les retraits sont motivés dans `retirements.yaml` et gardent une couverture.

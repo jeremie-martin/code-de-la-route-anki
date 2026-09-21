@@ -1,13 +1,16 @@
-# C — Le conducteur : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
-# Les fausses sont les distracteurs réels de l'épreuve ; le verso donne la raison en une ligne.
 - id: aff-c-champ-visuel-vitesse-pieton
   contexte: Je roule vite dans une rue bordée de trottoirs.
-  affirmation: Plus ma vitesse est élevée, plus je risque de ne pas voir un piéton qui s'apprête à traverser depuis le trottoir.
+  affirmation: Plus ma vitesse est élevée, plus je risque de ne pas voir un piéton qui s'apprête à traverser
+    depuis le trottoir.
   verdict: vrai
-  pourquoi: 'Le champ visuel se rétrécit avec la vitesse (≈ 180° à l''arrêt, 30° à 130 km/h) : à vive allure, seule la vision centrale reste utile et les côtés ne sont plus perçus (« effet tunnel »).'
+  pourquoi: À vitesse élevée, l’attention se concentre davantage vers l’avant et laisse moins de temps pour
+    explorer les côtés. Réduire l’allure et balayer du regard ; pas de table d’angles garantie pour chaque
+    vitesse.
   theme: C
   sous_theme: perception
   source: securite-routiere.gouv.fr — Dépliant La vue ; Conduire sur autoroute
+  tags:
+  - revision::v4
 - id: aff-c-vision-peripherique
   affirmation: C'est ma vision périphérique, peu précise, qui me permet de détecter un mouvement sur le côté, comme un piéton qui descend du trottoir.
   verdict: vrai
@@ -82,12 +85,17 @@
   sous_theme: vigilance
   source: securite-routiere.gouv.fr — Enfants piétons ; REMC
 - id: aff-c-indice-danger-certain
-  affirmation: 'Je ne ralentis que lorsque le danger est certain : un simple indice, comme un ballon ou une portière entrouverte, ne justifie pas de lever le pied.'
+  affirmation: 'Je ne ralentis que lorsque le danger est certain : un simple indice, comme un ballon ou une
+    portière entrouverte, ne justifie pas de lever le pied.'
   verdict: faux
-  pourquoi: 'Anticiper, c''est réagir à l''indice avant que le danger soit visible : dès l''indice, je lève le pied et je couvre le frein. À l''ETG, « je maintiens ma vitesse » est presque toujours faux en présence d''un indice.'
+  pourquoi: Un indice permet d’anticiper avant de voir le danger lui-même. Adapter l’allure à ce que la scène
+    permet d’exclure ou non ; ne pas utiliser une recette de réponse fondée sur la fréquence supposée d’une
+    proposition à l’ETG.
   theme: C
   sous_theme: vigilance
   source: Code en Poche — Anticiper ; REMC
+  tags:
+  - revision::v4
 - id: aff-c-klaxon-ecole
   contexte: Je passe devant une école à l'heure de la sortie.
   affirmation: Je klaxonne pour prévenir les enfants de mon arrivée.
@@ -115,10 +123,14 @@
   contexte: Long trajet sur autoroute, je me sens en forme.
   affirmation: Une pause s'impose toutes les deux heures, même sans signe de fatigue.
   verdict: vrai
-  pourquoi: 'La fatigue s''installe progressivement et on la sous-estime ; après 2 h de conduite, le temps de réaction tend vers 2 s. Pause de 15-20 min toutes les 2 h, plus souvent la nuit.'
+  pourquoi: Les pauses régulières préviennent l’accumulation de fatigue. La recommandation est une pause au
+    moins toutes les deux heures, et plus tôt dès les signes de fatigue. Aucun temps de réaction fixe ne découle
+    automatiquement de deux heures de conduite.
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — La fatigue et la conduite ; En Voiture Simone — Fatigue
+  tags:
+  - revision::v4
 - id: aff-c-micro-sommeil
   affirmation: Un micro-sommeil de quelques secondes suffit à provoquer un accident mortel sur autoroute.
   verdict: vrai
@@ -136,10 +148,14 @@
 - id: aff-c-nuit-trafic-fluide
   affirmation: 'La nuit, le trafic est fluide : le risque d''accident mortel est donc plus faible que de jour.'
   verdict: faux
-  pourquoi: 'Le risque d''accident mortel est environ 7 fois plus élevé la nuit : fatigue, alcool, vitesse plus élevée sur route dégagée et perception réduite se cumulent.'
+  pourquoi: La fluidité ne supprime ni visibilité réduite ni somnolence. Il faut adapter l’allure à la distance
+    visible et interrompre le trajet si l’on n’est plus en état de conduire, sans déduire le risque du seul
+    nombre de véhicules.
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — Conduire la nuit
+  tags:
+  - revision::v4
 - id: aff-c-senior-visite
   affirmation: En France, un conducteur de plus de 70 ans doit passer une visite médicale pour conserver son permis B.
   verdict: faux
@@ -149,13 +165,17 @@
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'aptitude médicale à la conduite ; arrêté du 28 mars 2022
 - id: aff-c-senior-reaction
-  affirmation: Avec l'âge, le temps de réaction s'allonge et la récupération après un éblouissement est plus lente.
+  affirmation: Avec l’âge, la réaction et la récupération après éblouissement peuvent devenir plus lentes.
   verdict: vrai
-  pourquoi: 'Après 40 ans, la récupération après éblouissement peut atteindre 2 minutes (≈ 10 s à 25 ans) ; acuité, champ visuel, audition et réflexes baissent progressivement, souvent sans que le conducteur s''en aperçoive.'
+  pourquoi: L’avancée en âge peut modifier vision et réflexes, avec de grandes différences individuelles. Pas
+    de délai de récupération universel après un éblouissement ; adapter l’allure, faire contrôler sa vue et
+    tenir compte de ses capacités réelles.
   importance: utile
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — Conseils pour les seniors ; Dépliant La vue
+  tags:
+  - revision::v4
 - id: aff-c-lunettes-points
   contexte: Mon permis porte la mention 01 (port de verres correcteurs).
   affirmation: Conduire sans mes lunettes me coûte une amende, mais aucun point.
@@ -175,10 +195,13 @@
 - id: aff-c-biere-whisky
   affirmation: Un demi de bière fait moins monter mon alcoolémie qu'un verre de whisky servi au bar.
   verdict: faux
-  pourquoi: 'Un verre standard (25 cl de bière à 5°, 10 cl de vin, 3 cl d''alcool fort) contient toujours ≈ 10 g d''alcool pur et élève l''alcoolémie de 0,20 à 0,25 g/L : la boisson change, pas la dose.'
+  pourquoi: À dose standard, ces boissons apportent des quantités comparables d’alcool pur. La boisson ne rend
+    donc pas la conduite sûre ; le taux obtenu varie avec la personne, la dose réellement servie et les conditions.
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite ; Santé publique France
+  tags:
+  - revision::v4
 - id: aff-c-alcool-sous-seuil
   affirmation: Tant que je reste sous 0,5 g/L, l'alcool n'a aucun effet sur ma conduite.
   verdict: faux
@@ -189,10 +212,14 @@
 - id: aff-c-alcool-jugement
   affirmation: Après deux verres, je reste capable de juger moi-même si je suis en état de conduire.
   verdict: faux
-  pourquoi: 'L''alcool désinhibe : on surestime ses capacités et on sous-estime les risques, précisément quand ils augmentent. Seul un éthylotest (ou le temps) renseigne ; deux verres ≈ 0,5 g/L.'
+  pourquoi: 'L’alcool dégrade aussi le jugement : se sentir lucide ne prouve pas être apte à conduire. Un nombre
+    de verres ni un calcul d’attente ne garantissent d’être sous le seuil ; prévoir un conducteur sobre ou
+    un autre retour.'
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite
+  tags:
+  - revision::v4
 - id: aff-c-alcool-eblouissement
   affirmation: L'alcool rend plus sensible à l'éblouissement.
   verdict: vrai
@@ -201,27 +228,38 @@
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite
 - id: aff-c-dernier-verre-depart
-  affirmation: 'Aussitôt mon dernier verre bu, mon alcoolémie commence à baisser : mieux vaut partir tout de suite.'
+  affirmation: 'Aussitôt mon dernier verre bu, mon alcoolémie commence à baisser : mieux vaut partir tout de
+    suite.'
   verdict: faux
-  pourquoi: 'L''alcoolémie continue de monter après le dernier verre : pic 15 à 30 min après à jeun, 1 h au cours d''un repas. Partir « tout de suite », c''est conduire pendant la montée.'
+  pourquoi: Le taux peut encore monter après la dernière absorption, avec un pic moyen vers trente minutes
+    à jeun ou une heure au cours d’un repas. Ces repères ne fixent pas une heure sûre de départ.
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite
+  tags:
+  - revision::v4
 - id: aff-c-cafe-dessoule
   affirmation: Un café serré ou une douche froide accélèrent l'élimination de l'alcool.
   verdict: faux
-  pourquoi: 'Rien n''accélère l''élimination : le foie traite 0,10 à 0,15 g/L par heure (≈ 2 h 30 par verre). Café, douche, sport ou air frais donnent seulement une impression de lucidité.'
+  pourquoi: Café, douche et sport ne rendent pas l’élimination plus rapide. Les valeurs moyennes par heure
+    ne permettent pas de promettre une heure de retour sous le seuil, ni un délai fixe par verre.
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite ; Vinci Autoroutes — Idées reçues
+  tags:
+  - revision::v4
 - id: aff-c-lendemain-matin
   contexte: Soirée arrosée terminée vers 2 h du matin.
   affirmation: À 8 h, je peux encore être au-dessus de 0,5 g/L.
   verdict: vrai
-  pourquoi: 'Cinq verres ≈ 1 à 1,25 g/L au pic vers 3 h ; à 0,10-0,15 g/L éliminé par heure, il peut rester 0,5 g/L ou plus à 8 h. Le sommeil n''accélère rien : éthylotest avant de reprendre le volant.'
+  pourquoi: Une alcoolémie excessive peut persister après une nuit de sommeil. Les quantités réellement bues
+    et l’élimination varient ; dormir n’accélère pas cette élimination. Ne pas présumer être apte à conduire
+    au réveil.
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code en Poche — Conduite en état d'ivresse
+  tags:
+  - revision::v4
 - id: aff-c-probatoire-un-verre
   contexte: Je suis en permis probatoire.
   affirmation: Un seul verre standard peut suffire à atteindre le seuil d’alcool interdit.

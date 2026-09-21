@@ -1,15 +1,30 @@
 - id: d-points-capital
-  texte: Le permis de conduire est doté d'un capital maximal de {{c1::12 points}} ; un permis probatoire démarre avec {{c2::6 points}}.
-  explication: Le capital de 6 points s'applique au premier permis et à tout permis obtenu après invalidation ou annulation. Ajouter une catégorie (moto) à un permis ancien ne fait pas repasser en probatoire.
+  explication: Le capital de 6 points s'applique au premier permis et à tout permis obtenu après invalidation
+    ou annulation. Ajouter une catégorie (moto) à un permis ancien ne fait pas repasser en probatoire.
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-1 et R223-1
+  rappels:
+  - Le capital maximal ordinaire du permis de conduire est {{c1::12 points}}.
+  - Un premier permis probatoire démarre avec {{c2::6 points}}.
+  tags:
+  - revision::v4
 - id: d-probatoire-duree
-  texte: Le délai probatoire dure {{c1::3 ans}} (filière classique) ou {{c2::2 ans}} après une conduite accompagnée (AAC) ; le capital de 6 points augmente de {{c3::2 points}} par an — {{c4::3 points}} par an après AAC — à condition de ne commettre aucune infraction avec retrait de points.
-  explication: 'La progression est donc 6 → 8 → 10 → 12 en filière classique et 6 → 9 → 12 après AAC ; une seule infraction avec retrait de points l''interrompt. Pendant le probatoire : disque A à l''arrière, vitesses réduites (110/100/80), alcool 0,2 g/L.'
+  explication: 'La progression est donc 6 → 8 → 10 → 12 en filière classique et 6 → 9 → 12 après AAC ; une
+    seule infraction avec retrait de points l''interrompt. Pendant le probatoire : disque A à l''arrière, vitesses
+    réduites (110/100/80), alcool 0,2 g/L.'
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-1 et R223-1 ; service-public.fr F2390
+  rappels:
+  - Sans formation post-permis ni AAC, le délai probatoire ordinaire dure {{c1::3 ans}}.
+  - Après AAC, sans formation post-permis, le délai probatoire ordinaire dure {{c2::2 ans}}.
+  - Sans infraction avec retrait de points, en filière classique, le capital probatoire augmente normalement
+    de {{c3::2 points}} par année.
+  - Sans infraction avec retrait de points, après AAC, le capital probatoire augmente normalement de {{c4::3
+    points}} par année.
+  tags:
+  - revision::v4
 - id: d-formation-post-permis
   texte: La formation complémentaire « post-permis » (1 journée de 7 h, entre le 6e et le 12e mois après le permis) ramène le délai probatoire de 3 ans à {{c1::2 ans}} (et de 2 ans à {{c2::1 an et 6 mois}} après AAC).
   explication: 'Volontaire, dans une école labellisée, réservée au premier permis, et à condition de n''avoir commis aucune infraction avec retrait de points. Avec elle : 12 points après 2 ans au lieu de 3.'
@@ -46,11 +61,21 @@
   tags:
   - revision::v3
 - id: d-recuperation-points
-  texte: 'Récupération automatique des points : {{c1::6 mois}} sans infraction pour un retrait d''un seul point ; {{c2::2 ans}} sans infraction pour retrouver 12 points si les infractions étaient des contraventions de 1re à 3e classe ; {{c3::3 ans}} si l''une d''elles est de 4e ou 5e classe ou un délit.'
-  explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès ≥ 20 km/h) sont de 4e classe → c''est souvent 3 ans. Pendant le probatoire, pas de reconstitution automatique : on récupère par la majoration annuelle ou par un stage.'
+  explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès ≥ 20 km/h)
+    sont de 4e classe → c''est souvent 3 ans. Pendant le probatoire, pas de reconstitution automatique : on
+    récupère par la majoration annuelle ou par un stage.'
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-6 ; service-public.fr F1685
+  rappels:
+  - Après le retrait d’un seul point, le délai de récupération sans nouvelle infraction donnant lieu à retrait
+    est {{c1::6 mois}}.
+  - 'Hors règles particulières du probatoire, reconstitution des 12 points après seules contraventions des
+    classes 1 à 3 : {{c2::2 ans}} sans nouvelle infraction donnant lieu à retrait.'
+  - 'Hors règles particulières du probatoire, reconstitution des 12 points si une infraction est de classe
+    4 ou 5 ou un délit : {{c3::3 ans}} sans nouvelle infraction donnant lieu à retrait.'
+  tags:
+  - revision::v4
 - id: d-stage-points
   texte: Un stage volontaire de sensibilisation à la sécurité routière ({{c1::2 jours}} consécutifs, ~200 €) permet de récupérer jusqu'à {{c2::4 points}}, dans la limite du capital, au plus {{c3::une fois par an}} (date à date), à condition que le permis soit encore valide.
   explication: Avant la loi LOPPSI 2 (2011), c'était une fois tous les 2 ans. Les points sont crédités le lendemain du dernier jour de stage.
@@ -71,18 +96,26 @@
   sous_theme: permis
   source: Code de la route, art. R211-3 et R211-5 ; service-public.fr F2826
 - id: d-permis-17-ans
-  texte: Depuis le {{c1::1er janvier 2024}}, le permis B peut être obtenu et utilisé seul dès {{c2::17 ans}} (auparavant 18 ans) ; le permis AM (cyclomoteur, voiturette) s'obtient dès {{c3::14 ans}}.
-  explication: Le probatoire ne change pas (6 points, 3 ans ou 2 ans après AAC). La conduite supervisée (dès 18 ans) ne réduit pas le probatoire ; la conduite encadrée (dès 16 ans) vise les élèves des métiers de la route.
+  texte: En France, le permis B peut être obtenu et utilisé pour conduire seul dès {{c1::17 ans}}.
+  explication: Règle applicable depuis le 1er janvier 2024. L’âge ne dispense ni de réussir le permis ni des
+    restrictions probatoires ; l’AAC a ses propres conditions.
   theme: D
   sous_theme: permis
   source: Décret n° 2023-1214 du 20 décembre 2023 ; Code de la route, art. R221-5
+  tags:
+  - revision::v4
 - id: d-formation-minimale
-  texte: La formation pratique minimale au permis B est de {{c1::20 heures}} (dont au moins 15 h en circulation) ; {{c2::13 heures}} pour un permis sur boîte automatique (code 78), convertible en boîte manuelle après une formation de 7 h, sans délai depuis mars 2024.
-  explication: Le permis B autorise les véhicules de 3,5 t et 9 places au plus, et les 125 cm³ après 2 ans de permis et une formation de 7 h ; les règles de remorque font l'objet d'une carte dédiée.
+  texte: 'Premier permis B en auto-école : formation pratique minimale ordinaire de {{c1::20 heures}} sur boîte
+    manuelle, ou {{c2::13 heures}} pour une formation limitée à la boîte automatique.'
+  explication: 'Hors simulateur : au moins 15 h en circulation sur boîte manuelle, 10 h sur boîte automatique.
+    Le simulateur peut réduire ces parties à 10 h et 7 h sous conditions. Le minimum réglementaire n’est pas
+    une promesse d’être prêt ; exceptions selon permis déjà détenu.'
   theme: D
   sous_theme: permis
   importance: utile
-  source: Arrêté du 22 décembre 2009 ; Code de la route, art. R221-4 et R221-8 ; service-public.fr F2828
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828
+  tags:
+  - revision::v4
 - id: d-accompagnateur
   texte: Pour accompagner un élève, il faut notamment le permis B depuis {{c1::5 ans}} sans interruption et l’accord
     de {{c2::l’assureur}} pour cet apprentissage.
@@ -125,11 +158,19 @@
   sous_theme: sanctions
   source: Code de la route, art. R412-30, R412-31, R415-5 à R415-11
 - id: d-vitesse-bareme
-  texte: 'Excès de vitesse : moins de 5 km/h → {{c1::0 point}} (amende maintenue) ; 5 à 19 km/h → {{c2::1 point}} (68 €, ou 135 € si la limite est ≤ 50 km/h) ; 20 à 29 → {{c3::2 points}} ; 30 à 39 → {{c4::3 points}} (135 €, suspension possible).'
-  explication: 'Le retrait pour les excès < 5 km/h a été supprimé le 1er janvier 2024. 40 à 49 km/h : 4 points, 135 €, rétention immédiate du permis. Les valeurs sont calculées après marge technique (5 km/h ou 5 %).'
+  explication: 'Le retrait pour les excès < 5 km/h a été supprimé le 1er janvier 2024. 40 à 49 km/h : 4 points,
+    135 €, rétention et suspension possibles selon la procédure. Les excès portent sur la vitesse retenue,
+    après la marge propre au dispositif de contrôle.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R413-14 ; décret n° 2023-1150 du 6 décembre 2023
+  rappels:
+  - Un excès de vitesse retenu de moins de 5 km/h entraîne le retrait de {{c1::0 point}} ; l’amende reste applicable.
+  - Un excès de vitesse retenu de 5 à 19 km/h entraîne le retrait de {{c2::1 point}}.
+  - Un excès de vitesse retenu de 20 à 29 km/h entraîne le retrait de {{c3::2 points}}.
+  - Un excès de vitesse retenu de 30 à 39 km/h entraîne le retrait de {{c4::3 points}}.
+  tags:
+  - revision::v4
 - id: d-grand-exces
   dedup_ok: [aff-d-grand-exces-delit]
   texte: 'Un excès de vitesse de {{c1::50 km/h}} ou plus est, depuis le 29 décembre 2025, un {{c2::délit}} dès la première fois : 3 mois de prison, 3 750 € d''amende, {{c3::6 points}}, suspension jusqu''à 3 ans et confiscation possible (obligatoire en récidive).'
@@ -140,11 +181,15 @@
   - nouveau::2025
   source: Code de la route, art. L413-1 (loi n° 2025-622 du 9 juillet 2025 ; décret n° 2025-1269 du 22 décembre 2025)
 - id: d-alcool-contravention
-  texte: 'Alcoolémie entre 0,5 et 0,8 g/L (0,2 à 0,8 en probatoire) : contravention de 4e classe, {{c1::135 €}} et {{c2::6 points}}, suspension possible jusqu''à 3 ans et rétention immédiate du permis.'
-  explication: En permis probatoire première année (6 points), 0,3 g/L suffit donc à invalider le permis. Pas de prison ni d'annulation au stade contraventionnel ; le préfet peut imposer un éthylotest antidémarrage (EAD).
+  texte: 'Alcoolémie au moins égale à 0,5 g/L et inférieure à 0,8 g/L (seuil bas 0,2 en probatoire) : amende
+    forfaitaire de {{c1::135 €}} et retrait de {{c2::6 points}}.'
+  explication: L’égalité au seuil bas suffit à constituer l’infraction. À 0,8 g/L ou plus, il s’agit d’un délit.
+    Suspension possible ; ne pas présenter la rétention immédiate comme automatique pour toute alcoolémie contraventionnelle.
   theme: D
   sous_theme: sanctions
-  source: Code de la route, art. R234-1
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2881
+  tags:
+  - revision::v4
 - id: d-alcool-delit
   texte: Conduire avec au moins 0,8 g/L de sang (0,40 mg/L d'air) ou en état d'ivresse manifeste est un délit puni de {{c1::3 ans}} de prison et {{c2::9 000 €}} d'amende, {{c3::6 points}}, suspension jusqu'à 5 ans, annulation possible avec interdiction de repasser le permis jusqu'à 5 ans, confiscation du véhicule.
   explication: 'Valeurs relevées par la loi du 9 juillet 2025 (avant : 2 ans et 4 500 €, que la banque 2023 peut encore afficher). L''ivresse manifeste est, depuis août 2026, un délit distinct (L237-1) aux mêmes peines, comme le refus de dépistage.'
@@ -210,13 +255,20 @@
   importance: utile
   source: Code de la route, art. L224-1, L224-2, L224-7 ; service-public.fr F1040
 - id: d-documents-bord
-  texte: 'Documents à présenter à tout contrôle : le {{c1::permis de conduire}} (physique ou numérique France Identité), le {{c2::certificat d''immatriculation}} (carte grise), plus le gilet et le triangle ; la preuve d''assurance n''est plus exigée depuis le {{c3::1er avril 2024}} (contrôle via le Fichier des véhicules assurés).'
-  explication: 'Non-présentation immédiate : 11 €, puis 5 jours pour présenter les documents (sinon 135 €). Le « Mémo Véhicule Assuré » remis à la souscription vaut présomption d''assurance pendant 15 jours. Le contrôle technique se prouve par le timbre sur la carte grise.'
+  explication: Pour une voiture immatriculée en France, l’assurance est contrôlée via le Fichier des véhicules
+    assurés ; la suppression de la carte verte n’a pas supprimé l’obligation d’assurance. Gilet et triangle
+    sont des équipements, pas des documents.
   theme: D
   sous_theme: documents
   tags:
   - nouveau::2024
+  - revision::v4
   source: Code de la route, art. R233-1 ; décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362
+  rappels:
+  - Au contrôle routier, le document prouvant mon droit de conduire est le {{c1::permis de conduire}} (physique
+    ou numérique admis).
+  - Au contrôle routier d’une voiture immatriculée, son document d’identification est le {{c2::certificat d’immatriculation}}
+    (carte grise).
 - id: d-carte-grise-delais
   texte: Après l'achat d'un véhicule, le nouveau propriétaire a {{c1::1 mois}} pour faire établir le certificat d'immatriculation à son nom (même délai pour déclarer un changement d'adresse) ; le vendeur déclare la cession sous {{c2::15 jours}} et remet un certificat de situation administrative de moins de 15 jours.
   explication: 'Démarches sur l''ANTS ou chez un professionnel habilité (plus de guichet en préfecture). Défaut : 135 €. Le certificat provisoire (CPI) vaut 1 mois. Format des plaques SIV AA-123-AA, numéro attribué à vie au véhicule.'
@@ -224,16 +276,22 @@
   sous_theme: documents
   source: Code de la route, art. R322-4, R322-5, R322-7 ; service-public.fr F21031
 - id: d-controle-technique
-  texte: 'Contrôle technique d''une voiture : premier contrôle dans les {{c1::6 mois}} précédant le {{c2::4e anniversaire}}
-    de la première mise en circulation, puis tous les {{c3::2 ans}} ; pour vendre une voiture d''occasion, le contrôle
-    doit dater de moins de {{c1::6 mois}}.'
-  explication: 'Pour la vente à un particulier d’une voiture de plus de quatre ans : contrôle de moins de six mois,
-    ou délai de contre-visite non dépassé. Une défaillance critique limite la circulation au jour du contrôle.'
+  explication: Pour vendre à un particulier une voiture de plus de quatre ans, contrôle de moins de six mois
+    ; si une contre-visite est prescrite, son délai ne doit pas être dépassé. Ne pas confondre périodicité
+    et validité pour la vente.
   theme: D
   sous_theme: documents
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2878
   tags:
   - revision::v3
+  - revision::v4
+  rappels:
+  - 'Voiture particulière : le premier contrôle technique se fait dans les {{c1::6 mois}} précédant le quatrième
+    anniversaire de sa première mise en circulation.'
+  - 'Voiture particulière : le premier contrôle technique doit être réalisé avant le {{c2::4e anniversaire}}
+    de sa première mise en circulation.'
+  - 'Voiture particulière, après un contrôle favorable : périodicité ordinaire des contrôles techniques suivants,
+    {{c3::2 ans}}.'
 - id: d-assurance-garanties
   texte: 'L''assurance obligatoire est la {{c1::responsabilité civile (« au tiers »)}} : elle couvre les dommages causés aux autres, jamais ceux du conducteur responsable ni de son véhicule (garanties facultatives : dommages tous accidents/« tous risques », vol, incendie, bris de glace, garantie du conducteur, assistance).'
   explication: 'Bonus-malus : coefficient 1 au départ, −5 % par an sans accident responsable (jusqu''à 0,50), +25 % par accident responsable (jusqu''à 3,50). Jeune conducteur : surprime jusqu''à 100 % (50 % après AAC), réduite de moitié chaque année sans sinistre.'
@@ -259,11 +317,18 @@
   - revision::v3
   source: Code de la route, art. R318-2 et R411-19-1 ; service-public.fr F33371 ; décision CC n° 2026-903 DC
 - id: d-equipements-obligatoires
-  texte: 'Équipements obligatoires à bord d''une voiture : un {{c1::gilet de haute visibilité}} à portée de main (à revêtir avant de sortir après un arrêt d''urgence) et un {{c2::triangle de présignalisation}} (à placer à ≈ 30 m, sauf danger sur autoroute) ; l''{{c3::éthylotest}} n''est plus obligatoire depuis mai 2020.'
-  explication: 'Gilet absent de l''habitacle : 11 € ; ne pas le porter en sortant, ou ne pas présignaler un véhicule immobilisé dangereux : 135 €. Extincteur, trousse de secours, roue de secours et ampoules ne sont pas obligatoires.'
+  texte: 'Équipements obligatoires à bord d''une voiture : un {{c1::gilet de haute visibilité}} à portée de
+    main (à revêtir avant de sortir après un arrêt d''urgence) et un {{c2::triangle de présignalisation}} (à
+    placer à ≈ 30 m, sauf si sa pose met en danger) ; l''{{c3::éthylotest}} n''est plus obligatoire depuis
+    mai 2020.'
+  explication: 'Le triangle présignale un véhicule immobilisé dangereux : environ 30 m en amont, davantage
+    si nécessaire, sauf si le poser expose manifestement le conducteur au danger. Cette exception ne se limite
+    pas à l’autoroute.'
   theme: D
   sous_theme: documents
   source: Code de la route, art. R416-19 ; décret n° 2020-605 ; service-public.fr F19459
+  tags:
+  - revision::v4
 - id: d-vitres-teintees
   texte: 'Depuis 2017, le pare-brise et les vitres latérales avant doivent laisser passer au moins {{c1::70 %}} de la lumière ; infraction : 135 € et {{c2::3 points}}, immobilisation possible.'
   explication: Les vitres arrière peuvent être teintées librement. Un pare-brise doit rester propre et sans fissure dans le champ de vision du conducteur.
@@ -278,17 +343,3 @@
   sous_theme: documents
   importance: utile
   source: Code de la route, art. L325-7 et R417-12
-- id: d-stats-tues
-  texte: En 2025, la route a tué {{c1::3 263}} personnes en France métropolitaine (environ 9 par jour, ordre de grandeur stable depuis 2019) ; environ {{c2::60 %}} des tués le sont hors agglomération.
-  explication: 'Bilan ONISR 2025. 77 % des tués sont des hommes ; l''autoroute ne compte que 8 % des tués. Facteurs principaux des accidents mortels : vitesse (29 %), alcool (21 %), inattention (13 %), stupéfiants (11 %).'
-  theme: D
-  sous_theme: statistiques
-  importance: utile
-  source: ONISR — Bilan 2025 de la sécurité routière (29 mai 2026)
-- id: d-stats-usagers
-  texte: 'Parts des tués en 2025 : voitures ≈ {{c1::47 %}}, deux-roues motorisés ≈ {{c2::21 %}}, piétons ≈ 15 %, cyclistes ≈ 7 %, trottinettes (EDPM) ≈ 2 % (en forte hausse).'
-  explication: 'Piétons, cyclistes et EDPM (« modes doux ») représentent un quart des tués et plus d''un tiers des blessés graves : d''où l''insistance de l''examen sur les usagers vulnérables.'
-  theme: D
-  sous_theme: statistiques
-  importance: utile
-  source: ONISR — Bilan 2025 de la sécurité routière

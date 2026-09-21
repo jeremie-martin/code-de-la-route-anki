@@ -1,13 +1,17 @@
 - id: m-pneus-chiffres
-  texte: 'Pneus : sculptures d’au moins {{c1::1,6 mm}} ; contrôle de pression à {{c2::froid}}, au moins une fois
-    par {{c3::mois}} et avant un long trajet. En charge, appliquer la pression {{c4::préconisée par le constructeur}}.'
-  explication: Lire l’étiquette du véhicule ou sa notice, avec la dimension des pneus et la charge. Ne pas ajouter
-    systématiquement la même valeur à tous les véhicules.
+  explication: Lire l’étiquette du véhicule ou sa notice, avec la dimension des pneus et la charge. Ne pas
+    ajouter systématiquement la même valeur à tous les véhicules.
   theme: M
   sous_theme: pneus
   source: R314-1 ; Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
   tags:
   - revision::v3
+  - revision::v4
+  rappels:
+  - 'Profondeur minimale réglementaire des rainures principales d’un pneu de voiture : {{c1::1,6 mm}}.'
+  - Pour comparer la pression d’un pneu à la valeur de référence du constructeur, la mesurer à {{c2::froid}}.
+  - 'Repère d’entretien : vérifier la pression au moins une fois par {{c3::mois}} et avant un long trajet.'
+  - 'Véhicule chargé : appliquer la pression {{c4::préconisée par le constructeur}} pour cette charge.'
 - id: m-galette-chiffres
   texte: 'Galette ou kit : respecter la {{c1::vitesse maximale indiquée sur l’équipement ou dans la notice}}. En
     hiver, vérifier le marquage {{c2::3PMSF}} pour des pneus admis comme hiver. Avec pneus cloutés : plafond {{c3::90
@@ -21,27 +25,15 @@
   tags:
   - revision::v3_1
 - id: m-feux-portees
-  texte: 'Portées réglementaires : feux de position visibles à {{c1::150 m}} ; feux de croisement éclairent à {{c2::30 m}} ; feux de route à {{c3::100 m}} ; éclairage de plaque lisible à 20 m.'
-  explication: 'Piège de vocabulaire : « visible à » (position) vs « éclaire à » (croisement, route). Feu(x) de brouillard arrière obligatoires sur les véhicules depuis 1990 ; brouillard avant, recul et feux de jour facultatifs.'
+  explication: 'Piège de vocabulaire : « visible à » (position) vs « éclaire à » (croisement, route). Feu(x)
+    de brouillard arrière obligatoires sur les véhicules depuis 1990 ; brouillard avant, recul et feux de jour
+    facultatifs.'
   theme: M
   sous_theme: feux
   source: Code de la route, art. R313-2 à R313-4
-- id: m-batterie-liquides-chiffres
-  texte: 'Entretien : pour le circuit électrique, vérifier la {{c1::tension indiquée par le constructeur}} ; pour
-    le liquide de frein, suivre la {{c2::périodicité de la notice}} ; pour la distribution, respecter les échéances
-    de {{c3::kilométrage ET de durée}} prévues.'
-  explication: 'Les valeurs ne sont pas universelles : architecture électrique, liquide, courroie ou chaîne varient.
-    Une échéance en années peut arriver avant le kilométrage.'
-  theme: M
-  sous_theme: entretien
-  importance: utile
-  source: Ornikar — Entretien ; lepermislibre
+  rappels:
+  - De nuit par temps clair, les feux de position avant doivent être visibles à {{c1::150 m}}.
+  - De nuit par temps clair, les feux de croisement doivent éclairer efficacement à au moins {{c2::30 m}}.
+  - De nuit par temps clair, les feux de route doivent éclairer efficacement à au moins {{c3::100 m}}.
   tags:
-  - revision::v3_1
-- id: m-adas-dates
-  texte: 'Équipements obligatoires sur les voitures neuves : ESP depuis {{c1::2014}}, eCall (appel automatique du 112) depuis {{c2::2018}}, feux de jour depuis 2011, et depuis juillet {{c3::2024}} (règlement GSR2) le freinage d''urgence automatique, l''adaptation intelligente de la vitesse, le maintien de voie d''urgence, l''alerte de somnolence et l''enregistreur de données (« boîte noire »).'
-  explication: Ces aides assistent le conducteur, qui reste responsable et doit surveiller. eCall appelle le 112, pas le 15.
-  theme: M
-  sous_theme: adas
-  importance: utile
-  source: Règlements (CE) 661/2009, (UE) 2015/758 et (UE) 2019/2144
+  - revision::v4

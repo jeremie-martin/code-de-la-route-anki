@@ -1,16 +1,29 @@
-# Thème A — Porter secours : repères chiffrés et ordres (P·A·S, numéros, distances, rythme RCP, sanctions).
 - id: pas-ordre
-  texte: "Face à un accident, l'ordre des actions est : {{c1::Protéger}}, {{c2::Alerter}}, {{c3::Secourir}} (P·A·S)."
-  explication: "Protéger d'abord pour éviter le suraccident (soi-même, les témoins, les victimes), alerter ensuite pour que les secours partent tôt, secourir enfin avec des gestes simples."
+  explication: Protéger d'abord pour éviter le suraccident (soi-même, les témoins, les victimes), alerter ensuite
+    pour que les secours partent tôt, secourir enfin avec des gestes simples.
   theme: A
   sous_theme: pas
-  source: "securite-routiere.gouv.fr — Que faire en cas d'accident ; Croix-Rouge française"
+  source: securite-routiere.gouv.fr — Que faire en cas d'accident ; Croix-Rouge française
+  rappels:
+  - Face à un accident, quelle action précède l’alerte et les gestes de secours ? {{c1::Protéger}}.
+  - Après avoir protégé la zone, quelle action permet de déclencher les secours ? {{c2::Alerter}}.
+  - Après protection et alerte, quelle est la troisième composante de la conduite à tenir ? {{c3::Secourir}}
+    selon l’état de la victime et ses compétences.
+  tags:
+  - revision::v4
 - id: numeros-urgence
-  texte: "Numéros d'urgence : {{c1::15}} = SAMU (urgence médicale), {{c2::17}} = police/gendarmerie, {{c3::18}} = sapeurs-pompiers, {{c4::112}} = numéro d'urgence européen (fonctionne dans toute l'UE, même sans crédit ni réseau de son opérateur)."
-  explication: "Le 112 est le bon réflexe si l'on hésite : il redirige vers le service compétent. Il fonctionne depuis un téléphone verrouillé ou sans crédit, via n'importe quel réseau disponible."
+  explication: 'Le 112 est le bon réflexe si l''on hésite : il redirige vers le service compétent. Il fonctionne
+    depuis un téléphone verrouillé ou sans crédit, via n''importe quel réseau disponible.'
   theme: A
   sous_theme: alerter
-  source: "service-public.fr — Numéros d'urgence ; Code pénal, art. 223-6"
+  source: service-public.fr — Numéros d'urgence ; Code pénal, art. 223-6
+  rappels:
+  - 'Numéro du SAMU pour une urgence médicale en France : {{c1::15}}.'
+  - 'Numéro de la police ou de la gendarmerie pour une urgence en France : {{c2::17}}.'
+  - 'Numéro des sapeurs-pompiers en France : {{c3::18}}.'
+  - 'Numéro d’urgence utilisable dans toute l’Union européenne : {{c4::112}}.'
+  tags:
+  - revision::v4
 - id: numero-114
   texte: "Le {{c1::114}} est le numéro d'urgence accessible par SMS ou visio, destiné aux personnes {{c2::sourdes ou malentendantes}}."
   explication: "Un automobiliste entendant utilise le 112, le 15, le 17 ou le 18 ; le 114 existe pour ne pas exclure les personnes qui ne peuvent pas téléphoner."
@@ -31,23 +44,32 @@
   sous_theme: alerter
   source: "Croix-Rouge française — Alerter les secours ; securite-routiere.gouv.fr"
 - id: triangle-distance
-  texte: "Le triangle de présignalisation se place à environ {{c1::30 m}} avant le véhicule (davantage avant un virage ou un sommet de côte), et toujours sur le bas-côté quand c'est possible."
-  explication: "Sur route rapide, il se place plus loin (100 m et plus). Sur autoroute, on ne le pose pas si cela oblige à marcher sur la chaussée ou la bande d'arrêt d'urgence : la priorité est de se mettre derrière la glissière. Le gilet se met avant de sortir du véhicule."
+  texte: Sur route, lorsqu’il est requis et que sa pose ne me met pas en danger, le triangle se place sur la
+    chaussée, environ {{c1::30 m}} avant l’obstacle, ou davantage pour être visible à temps.
+  explication: L’exception pour mise en danger vaut sur toute route. Ne pas prescrire systématiquement une
+    pose sur l’accotement ; le triangle doit avertir ceux qui arrivent sur la même voie. Sur autoroute, se
+    protéger derrière la glissière et alerter.
   image:
     gen: triangle_distance
+    params:
+      label: '?'
   theme: A
   sous_theme: proteger
-  source: "Code de la route, art. R416-19 ; arrêté du 30 septembre 2008 ; Ornikar — Protéger la zone"
+  source: Arrêté du 30 septembre 2008, art. 2 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000019566252/
+  tags:
+  - revision::v4
 - id: rcp-rythme
-  texte: 'Réanimation cardio-pulmonaire : {{c1::30}} compressions thoraciques puis {{c2::2}} insufflations, à un
-    rythme de 100 à 120 compressions par minute, en attendant un défibrillateur (DAE) ou les secours.'
-  explication: 'Victime inconsciente sans respiration normale : réanimation. Respiration normale : conduite adaptée
-    à la cause, alerte et surveillance.'
+  explication: 'Victime inconsciente sans respiration normale : réanimation. Respiration normale : conduite
+    adaptée à la cause, alerte et surveillance.'
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
   tags:
   - revision::v3
+  - revision::v4
+  rappels:
+  - 'RCP d’un adulte avec insufflations : combien de compressions avant les deux insufflations ? {{c1::30}}.'
+  - 'RCP d’un adulte avec insufflations : après trente compressions, combien d’insufflations ? {{c2::2}}.'
 - id: non-assistance
   texte: Ne pas porter secours à une personne en danger (sans risque pour soi) est un délit puni jusqu'à {{c1::5
     ans}} de prison et {{c2::75 000 €}} d'amende.

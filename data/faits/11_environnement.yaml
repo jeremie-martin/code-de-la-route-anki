@@ -1,14 +1,3 @@
-# Thème E — Environnement : chiffres de l'écoconduite et de la pollution (ordres de grandeur attendus)
-- id: e-rapports-chiffres
-  texte: 'Boîte manuelle : passer le rapport supérieur {{c1::sans pousser inutilement le régime}}, mais éviter le
-    {{c2::sous-régime}}. Lors d’un arrêt prolongé, couper le moteur {{c3::si les conditions et la notice le permettent}}.'
-  explication: L’indicateur de changement de rapport, la charge et la motorisation guident le choix. Ne pas imposer
-    un régime ou un délai identique à tous les véhicules.
-  theme: E
-  sous_theme: ecoconduite
-  source: ADEME — Écoconduite ; En Voiture Simone ; Codeclic
-  tags:
-  - revision::v3_1
 - id: e-surconsommations
   texte: 'Quatre causes de surconsommation à limiter : usage inutile de la {{c1::climatisation}}, accessoires de
     toit augmentant la {{c2::résistance à l’air}}, {{c3::charge}} inutile et pneus {{c4::sous-gonflés}}.'
@@ -20,16 +9,18 @@
   tags:
   - revision::v3_1
 - id: e-vitesse-chiffres
-  texte: 'Exercice : consommation de 7 L/100 km à 130, 6 L/100 km à 120. Sur 500 km, le gain est {{c1::5 L}}. Sur
-    100 km à vitesse constante, passer de 130 à 120 ajoute environ {{c2::4 minutes}}.'
-  explication: Le litre économisé par 100 km est une donnée de cet exercice, pas une loi universelle. Temps = distance
-    / vitesse ; hors arrêts et circulation.
+  explication: Le litre économisé par 100 km est une donnée de cet exercice, pas une loi universelle. Temps
+    = distance / vitesse ; hors arrêts et circulation.
   theme: E
   sous_theme: ecoconduite
   source: 'Application arithmétique : données hypothétiques explicites, t = d/v ; économie = écart de consommation
     × distance / 100'
   tags:
   - revision::v3_1
+  - revision::v4
+  rappels:
+  - 'Exercice : 7 L/100 km à 130, 6 L/100 km à 120. Sur 500 km, le gain est {{c1::5 L}}.'
+  - Sur 100 km à vitesse constante, passer de 130 à 120 km/h ajoute environ {{c2::4 minutes}} au trajet.
 - id: e-critair-chiffres
   dedup_ok: [aff-e-diesel-critair1]
   texte: "Crit'Air : {{c1::6}} classes numérotées à partir de 0, plus les non classés ; un diesel récent (Euro 5-6, 2011+) est Crit'Air {{c2::2}} ; une essence récente, un hybride rechargeable ou un véhicule au gaz est Crit'Air {{c3::1}} ; les véhicules d'avant {{c4::1997}} sont non classés."
@@ -49,10 +40,3 @@
   source: service-public.fr — Pic de pollution ; arrêtés préfectoraux
   tags:
   - revision::v3
-- id: e-trajets-courts-chiffres
-  texte: "Environ {{c1::40 %}} des trajets urbains en voiture font moins de 2 km ; les transports représentent près de {{c2::30 %}} des émissions de gaz à effet de serre en France, la voiture particulière en étant la première source."
-  explication: "Sur moins de 5 km en ville, le vélo est souvent aussi rapide que la voiture ; 2 km à pied = 24 minutes. Le moteur et le catalyseur froids rendent ces courts trajets les plus polluants au kilomètre."
-  theme: E
-  sous_theme: ecomobilite
-  importance: utile
-  source: "ADEME — Se déplacer autrement ; Ornikar — Écomobilité"

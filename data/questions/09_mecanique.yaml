@@ -1,7 +1,3 @@
-# M — La mécanique et les équipements : décisions de conduite.
-# Les voyants eux-mêmes sont des cartes de reconnaissance (data/reconnaissance/voyants.yaml) :
-# on ne les redouble pas ici. Les aides à la conduite (ADAS) vivent ici (fonction et limites) ;
-# ce qui protège les occupants reste dans le thème S.
 - id: m-voyants-couleurs
   question: Que signifient les couleurs des voyants du tableau de bord ?
   reponse: La couleur aide à classer l’alerte, mais je dois identifier le symbole et le message. Une alerte grave
@@ -15,11 +11,16 @@
   - revision::v3
 - id: m-pneus-pression-quand
   question: Quand et comment vérifie-t-on la pression des pneus ?
-  reponse: À froid (plus de 2 h d'arrêt ou moins de 3 km parcourus), au moins une fois par mois et avant un long trajet, roue de secours comprise, à la valeur indiquée par le constructeur.
-  explication: 'Valeur sur l''étiquette de portière, la trappe à carburant ou la notice. À chaud la pression monte : on ne dégonfle jamais un pneu chaud. Véhicule chargé ou autoroute : +0,2 à 0,3 bar (question officielle 2023, Q1).'
+  reponse: À froid (plus de 2 h d'arrêt ou moins de 3 km parcourus), au moins une fois par mois et avant un
+    long trajet, roue de secours comprise, à la valeur indiquée par le constructeur.
+  explication: Comparer à l’étiquette ou à la notice correspondant aux pneus et à la charge. Ne pas appliquer
+    une majoration fixe à toute voiture chargée. Ne pas dégonfler un pneu chaud pour le ramener à la valeur
+    à froid.
   theme: M
   sous_theme: pneus
-  source: securite-routiere.gouv.fr — Pneus ; Michelin — Vérifier la pression
+  source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
+  tags:
+  - revision::v4
 - id: m-pneus-usure-1-6
   question: À partir de quelle profondeur de sculpture un pneu doit-il être remplacé, et comment la vérifier ?
   reponse: 'Le minimum légal est 1,6 mm : les témoins d’usure permettent de repérer cette limite. Contrôler aussi
@@ -33,25 +34,39 @@
   - revision::v3_1
 - id: m-niveau-huile
   question: Comment contrôle-t-on le niveau d'huile moteur ?
-  reponse: 'Sur sol plat et moteur froid (ou dix minutes après l''arrêt) : je sors la jauge, je l''essuie, je la replonge et je lis ; le niveau doit rester entre mini et maxi.'
-  explication: 'Trop d''huile provoque une surpression et une fumée bleue ; pas assez, la casse. Contrôle avant un long trajet. Le voyant rouge de pression d''huile, lui, impose l''arrêt immédiat.'
+  reponse: 'Sur sol horizontal, moteur arrêté, selon le délai et la méthode prévus par la notice. Avec une
+    jauge manuelle : essuyer, réinsérer puis lire ; le niveau reste entre mini et maxi.'
+  explication: 'Le délai d’attente et les indications électroniques varient selon le véhicule. Un voyant rouge
+    de pression n’est pas une simple mesure de niveau : arrêt en sécurité et consignes constructeur.'
   theme: M
   sous_theme: entretien
   source: Ornikar — Huile moteur ; lepermislibre — Contrôler les niveaux
+  tags:
+  - revision::v4
 - id: m-liquide-refroidissement
   question: Quelle précaution essentielle avec le liquide de refroidissement ?
-  reponse: 'Ne jamais ouvrir le bouchon du vase d''expansion moteur chaud (liquide sous pression à plus de 100 °C : brûlures graves) ; contrôler à froid, entre mini et maxi, avec un liquide antigel adapté (pas seulement de l''eau).'
-  explication: 'Voyant température rouge = surchauffe : arrêt immédiat, moteur coupé, 30 min d''attente. Une baisse répétée du niveau signale une fuite. Le lave-glace se remplit lui aussi d''un produit antigel en hiver, jamais d''eau seule.'
+  reponse: 'Ne jamais ouvrir le bouchon du vase d''expansion moteur chaud (liquide sous pression à plus de
+    100 °C : brûlures graves) ; contrôler à froid, entre mini et maxi, avec un liquide antigel adapté (pas
+    seulement de l''eau).'
+  explication: En cas d’alerte de surchauffe, s’arrêter en sécurité et suivre la notice ou l’assistance. Un
+    délai fixe de trente minutes ne garantit pas un circuit refroidi et sans pression. Une baisse répétée du
+    niveau appelle un contrôle.
   theme: M
   sous_theme: entretien
   source: Ornikar — Liquide de refroidissement
+  tags:
+  - revision::v4
 - id: m-liquide-frein
   question: 'Le niveau du liquide de frein a baissé : que faut-il en conclure ?'
-  reponse: 'Soit les plaquettes sont usées, soit le circuit fuit : je fais contrôler sans compléter à l''aveugle ; une pédale molle ou qui s''enfonce impose l''arrêt.'
-  explication: Le liquide de frein absorbe l'humidité et se remplace environ tous les deux ans. Voyant frein rouge allumé alors que le frein à main est desserré = niveau bas ou défaut du circuit.
+  reponse: 'Soit les plaquettes sont usées, soit le circuit fuit : je fais contrôler sans compléter à l''aveugle
+    ; une pédale molle ou qui s''enfonce impose l''arrêt.'
+  explication: 'Le remplacement du liquide suit la périodicité du constructeur. Une alerte de freinage ou une
+    pédale anormale nécessite un arrêt en sécurité et une assistance : ne pas présumer qu’un appoint suffit.'
   theme: M
   sous_theme: entretien
   source: Ornikar — Liquide de frein ; lepermislibre
+  tags:
+  - revision::v4
 - id: m-plaquettes-usure
   question: Quels signes annoncent des plaquettes de frein usées ?
   reponse: Un témoin d’usure ou un bruit anormal doit conduire à un contrôle. Une baisse du liquide peut accompagner
@@ -99,11 +114,17 @@
   source: Stych — La boîte automatique ; service-public.fr F2828
 - id: m-freinage-urgence-abs
   question: Comment freiner en urgence avec un véhicule équipé de l'ABS ?
-  reponse: Écraser la pédale de frein à fond d'un coup et la maintenir sans relâcher malgré les vibrations, en braquant si nécessaire pour éviter l'obstacle ; avec une boîte manuelle, débrayer en même temps pour ne pas caler.
-  explication: 'L''ABS empêche le blocage des roues et conserve la direction ; il ne raccourcit pas la distance de freinage. Sans ABS, des roues bloquées = perte de direction : freiner par à-coups (pompage).'
+  reponse: Écraser la pédale de frein à fond d'un coup et la maintenir sans relâcher malgré les vibrations,
+    en braquant si nécessaire pour éviter l'obstacle ; avec une boîte manuelle, débrayer en même temps pour
+    ne pas caler.
+  explication: L’ABS aide à conserver la capacité de diriger en évitant le blocage ; il ne garantit pas une
+    distance plus courte sur tout revêtement. Ne pas pomper la pédale avec ABS. L’adhérence et la vitesse restent
+    déterminantes.
   theme: M
   sous_theme: freinage
   source: securite-routiere.gouv.fr — Dépliant vitesse ; Ornikar — ABS
+  tags:
+  - revision::v4
 - id: m-panne-freins
   question: 'Les freins ne répondent plus dans une descente : que faire ?'
   reponse: Je relâche l’accélérateur, rétrograde progressivement et cherche un dégagement sûr ou une voie de détresse,
@@ -136,11 +157,15 @@
   source: Sécurité routière — Exemples de nouvelles questions (Q1) ; Ornikar — Réglage des feux
 - id: m-appel-phares
   question: Un conducteur arrêté me fait un appel de phares pour me laisser passer. Puis-je m'engager ?
-  reponse: 'Non : un appel de phares n''a aucune valeur réglementaire et ne donne aucune priorité. Je ne m''engage qu''après avoir vérifié moi-même que la voie est libre.'
-  explication: 'De nuit, l''appel de phares est l''avertissement normal (allumage intermittent des feux, R416-2) ; le klaxon reste réservé à l''absolue nécessité, et en agglomération au seul danger immédiat (R416-1).'
+  reponse: 'Seulement après mes propres contrôles : l’appel ne garantit ni que les autres voies sont libres
+    ni que les autres usagers me cèdent le passage.'
+  explication: Un geste courtois n’attribue pas une priorité sur tout le carrefour. Chercher notamment le vélo,
+    la moto ou le piéton masqué par le véhicule arrêté.
   theme: M
   sous_theme: feux
   source: Code de la route, art. R416-1 et R416-2 ; Ornikar — L'appel de phares
+  tags:
+  - revision::v4
 - id: s-esp-fonction
   question: À quoi sert l'ESP (contrôle électronique de stabilité) ?
   reponse: À corriger un début de dérapage (sous-virage ou survirage) en freinant une ou plusieurs roues séparément et en réduisant le couple moteur, pour maintenir la trajectoire voulue.
@@ -225,12 +250,17 @@
   - revision::v3
 - id: m-changer-roue-securite
   question: Que faut-il mettre en place avant de lever le véhicule pour changer une roue ?
-  reponse: Un sol plat et stable hors de la circulation, le frein de stationnement serré avec un rapport engagé, les feux de détresse et le gilet, le cric au point de levage prévu.
-  explication: 'Jamais sur la bande d''arrêt d''urgence d''une autoroute : on appelle le dépanneur agréé depuis la borne. Avec la galette montée, on vérifie sa pression (souvent élevée) et on reste à 80 km/h.'
+  reponse: Un sol plat et stable hors de la circulation, le frein de stationnement serré avec un rapport engagé,
+    les feux de détresse et le gilet, le cric au point de levage prévu.
+  explication: Sur autoroute, se mettre à l’abri et appeler le dépannage agréé ; ne pas travailler exposé au
+    trafic. Avec une roue temporaire, respecter la vitesse et les autres limites inscrites sur l’équipement
+    ou dans la notice, sans valeur universelle.
   theme: M
   sous_theme: depannage
   importance: utile
   source: Stych — Dépannages ; Code en Poche — Changer une roue
+  tags:
+  - revision::v4
 - id: m-changer-roue-ecrous
   question: À quel moment desserre-t-on et resserre-t-on les écrous d'une roue ?
   reponse: On les desserre d'un quart de tour roue encore au sol, sinon elle tourne ; on termine le serrage en croix une fois la roue redescendue et le véhicule reposé.

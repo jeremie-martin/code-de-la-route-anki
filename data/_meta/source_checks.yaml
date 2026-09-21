@@ -152,3 +152,150 @@
   portee: 'R411-3-2 et R412-43-1 : usagers admis et dérogations locales ; les EDPM ne sont pas exclus en bloc.'
   notes:
   - c115
+- id: v4-alcool
+  consulte_le: '2026-09-21'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F2881
+  portee: Seuils inclus, sang/air, distinction contravention/délit et absence de rétention automatiquement
+    attachée à toute alcoolémie contraventionnelle.
+  notes:
+  - c-alcool-seuils-sang
+  - c-conversion-air-sang
+  - c-alcool-unites-probatoire
+  - d-alcool-contravention
+- id: v4-elimination
+  consulte_le: '2026-09-21'
+  url: https://www.securite-routiere.gouv.fr/sites/default/files/2024-03/depliant_alcool-conduite-070823.pdf
+  portee: Repères moyens de pic et élimination ; retrait des promesses de délai fixe par verre et de taux fixe
+    pour un nombre de verres.
+  notes:
+  - c-alcool-elimination
+  - aff-c-cafe-dessoule
+  - aff-c-dernier-verre-depart
+  - aff-c-biere-whisky
+  - aff-c-lendemain-matin
+  - aff-c-alcool-jugement
+- id: v4-triangle
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/loda/id/JORFTEXT000019566252/
+  portee: 'Article 2 : pose sur chaussée, environ 30 m ou davantage pour visibilité ; exception de mise en
+    danger, y compris hors autoroute. L’image ne révèle plus la distance au recto.'
+  notes:
+  - triangle-distance
+  - d-equipements-obligatoires
+- id: v4-ligne-continue
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/
+  portee: Exception limitée aux cycles, EDPM et cyclomobiles légers ; chevauchement distinct du franchissement
+    ; 1 et 3 points respectivement.
+  notes:
+  - l-depassement-laterale
+  - l-ligne-continue-sanction
+  - l-cavalier-ligne-continue
+  - scn-dep-ligne-continue
+  - scn-dep-cycliste-ligne-continue
+- id: v4-allure
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/
+  portee: R413-17 impose la maîtrise et l’adaptation aux circonstances ; correction des consignes absolues
+    de freinage sur sortie et de vitesse nocturne. Ne certifie pas des distances de visibilité individuelles.
+  notes:
+  - r-autoroute-sortie
+  - r-nuit-vitesse-visibilite
+  - l-visuel-b14-adaptation
+  - c-retro-avant-freiner
+- id: v4-pression
+  consulte_le: '2026-09-21'
+  url: https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
+  portee: Préconisations du constructeur selon charge, contrôle à froid et fréquence ; les valeurs des tableaux
+    ajoutés sont fictives, pas tirées de cette page.
+  notes:
+  - m-pneus-pression-quand
+  - m-pneus-chiffres
+  - m-visuel-pression-charge
+  - m-visuel-pression-usuelle
+- id: v4-signalisation
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  portee: Applications de M1/M2, B6a1/B6d, B14 et B31 ; les situations sont originales. Règle générale de vitesse
+    et distinction arrêt/stationnement complétées par R413-2 et R110-2.
+  notes:
+  - l-visuel-distance
+  - l-visuel-etendue
+  - l-visuel-arret-b6a1
+  - l-visuel-arret-b6d
+  - l-visuel-attendre-b6a1
+  - l-visuel-b14-position
+  - l-visuel-fin-interdictions
+- id: v4-ecoconduite
+  consulte_le: '2026-09-21'
+  url: https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  portee: Conseils d’anticipation, régime modéré, accessoires et climatisation ; retrait des pourcentages,
+    régimes et délais présentés comme universels. Les explications mécaniques sont des synthèses, pas des citations.
+  notes:
+  - e-rapports-regime
+  - e-moteur-arret
+  - e-climatisation-conso
+  - e-feu-rouge-anticipation
+  - e-frein-moteur
+  - aff-e-coffre-toit-vide
+  - aff-e-clim-autoroute
+  - aff-e-trajets-courts
+  - aff-e-vitesse-stable
+  - aff-e-ecoconduite-securite
+- id: v4-interfiles
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050963583/
+  portee: 'R412-11-3 : chaussées séparées, deux voies chacune, vitesse normalement au moins 70 malgré abaissement
+    local ; autres conditions et plafonds 50/30.'
+  notes:
+  - u-interfiles-chiffres
+- id: v4-formation-remorque
+  consulte_le: '2026-09-21'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F2828
+  portee: Minima de formation et réduction de la part en circulation avec simulateur ; branche remorque au
+    plus 750 kg distincte de la somme des PTAC.
+  notes:
+  - d-formation-minimale
+  - s-remorque-seuil-750
+  - s-remorque-seuil-800
+- id: v4-risque
+  consulte_le: '2026-09-21'
+  url: https://www.onisr.securite-routiere.gouv.fr/etat-de-linsecurite-routiere/bilans-annuels-de-la-securite-routiere/bilan-2025-de-la-securite-routiere
+  portee: Structure et périmètre du bilan ; les nouvelles tâches portent sur sa lecture, sans faire réciter
+    les totaux annuels.
+  notes:
+  - d-risque-part-exposition
+  - d-risque-comparer-bilans
+- id: v4-vitesse-sanction
+  consulte_le: '2026-09-21'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F19460
+  portee: 'Complément du barème : tranche 40 à 49 km/h, 4 points et amende forfaitaire 135 €.'
+  notes:
+  - d-vitesse-40-49
+  - d-vitesse-bareme
+- id: v4-mesures-permis
+  consulte_le: '2026-09-21'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F14836
+  portee: Distinction suspension temporaire et autres mesures ; invalidation pour solde nul également contrôlée
+    sur F1704 déjà au registre.
+  notes:
+  - d-suspension-invalidation
+- id: v4-ct
+  consulte_le: '2026-09-21'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F34300/2_0_0_0_1
+  portee: 'Pour la vente à un particulier, voiture de plus de quatre ans : contrôle de moins de six mois, délai
+    de contre-visite non dépassé.'
+  notes:
+  - d-controle-technique
+- id: v4-categories-signaux
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  portee: 'Articles 2-1, 5 et 7 : catégories M4d1, M12, C113 et distinction avec R19. Extension aux EDPM et
+    cyclomobiles légers là où le texte la prévoit.'
+  notes:
+  - m4d1
+  - m12
+  - c113
+  - l-visuel-m12-edpm
+  - l-visuel-m12-voiture
+  - l-feu-cycliste-r19

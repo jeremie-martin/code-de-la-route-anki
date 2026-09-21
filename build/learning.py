@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from collections import Counter
 from datetime import date
+from functools import cache
 from pathlib import Path
 import re
 
@@ -14,6 +15,12 @@ CLOZES = re.compile(r"\{\{c(\d+)::")
 
 def objectives():
     return yaml.safe_load(OBJECTIVES.read_text(encoding="utf-8"))
+
+
+@cache
+def lessons():
+    return {lesson['theme']: lesson for lesson in yaml.safe_load(
+        OBJECTIVES.with_name('lessons.yaml').read_text(encoding='utf-8'))}
 
 
 def annotate(data):
@@ -63,6 +70,8 @@ def validate_objectives(data):
     for n in by_id.values():
         if n['id'] not in assigned:
             errors.append(f"note sans objectif pédagogique : {n['id']}")
+        if n.get('image_ref') in by_id and n['_stage'] == 'socle' and by_id[n['image_ref']]['_stage'] != 'socle':
+            errors.append(f"{n['id']} : reconnaissance préalable hors socle")
     decisions = yaml.safe_load(OBJECTIVES.with_name('sign_exclusions.yaml').read_text(encoding='utf-8'))
     for decision in decisions:
         if not decision.get('raison'):
@@ -74,6 +83,23 @@ def validate_objectives(data):
     if themes != set("XLCRUDAPMSE"):
         errors.append(f"socle : thèmes manquants {set('XLCRUDAPMSE') - themes}")
     checks = yaml.safe_load(OBJECTIVES.with_name('source_checks.yaml').read_text(encoding='utf-8'))
+    if set(lessons()) != set('XLCRUDAPMSE'):
+        errors.append('repères : chaque thème doit avoir une introduction')
+    for lesson in lessons().values():
+        if not all(lesson.get(f) for f in ('titre', 'principe', 'exemple', 'transfert')):
+            errors.append(f"repère {lesson['theme']} incomplet")
+    for filename, field in [('contrasts.yaml', 'notes'), ('retirements.yaml', 'couverts_par')]:
+        entries = yaml.safe_load(OBJECTIVES.with_name(filename).read_text(encoding='utf-8'))
+        found = set()
+        for entry in entries:
+            if entry['id'] in found or not entry.get('raison') or not entry.get(field):
+                errors.append(f"{filename} : décision incomplète ou dupliquée {entry['id']}")
+            found.add(entry['id'])
+            if filename == 'retirements.yaml' and entry['id'] in by_id:
+                errors.append(f"note retirée encore active : {entry['id']}")
+            for ident in entry.get(field, []):
+                if ident not in by_id:
+                    errors.append(f"{filename} : note inconnue {ident}")
     for check in checks:
         try:
             date.fromisoformat(check['consulte_le'])
@@ -147,6 +173,7 @@ def write_reports(data, note_order, out, per_day=20):
         coverage.append("")
     (out / "COUVERTURE.md").write_text("\n".join(coverage) + "\n", encoding="utf-8")
     write_card_inventory(data, plan, out)
+    write_design_reports(by_id, out)
     decisions = yaml.safe_load(OBJECTIVES.with_name('sign_exclusions.yaml').read_text(encoding='utf-8'))
     selection = ['# Choix de représentation des signaux\n',
                  'Pas de filtre par rareté ni de plafond. Ces entrées de l’inventaire ne produisent pas '
@@ -157,6 +184,33 @@ def write_reports(data, note_order, out, per_day=20):
         selection.append('| ' + ', '.join(d['codes']) + ' | ' + d['raison'] + ' | ' +
                          ', '.join('`' + i + '`' for i in d['couverts_par']) + ' |')
     (out / 'SELECTION-SIGNAUX.md').write_text('\n'.join(selection) + '\n', encoding='utf-8')
+
+
+def write_design_reports(by_id, out):
+    guide = ['# Comprendre avant de mémoriser\n',
+             'Lire le repère d’un thème avant ses premières cartes, puis retrouver son exemple si une règle reste obscure. '
+             'Ces mêmes repères sont accessibles hors ligne au verso de chaque carte, dans « Comprendre ce thème ». '
+             'Ils donnent un cadre de raisonnement ; les cartes et leurs sources précisent les règles et exceptions.\n']
+    for lesson in lessons().values():
+        guide.extend([f"## {lesson['theme']} — {lesson['titre']}\n", lesson['principe'] + '\n',
+                      '**Exemple.** ' + lesson['exemple'] + '\n', '**Transfert.** ' + lesson['transfert'] + '\n'])
+    (out / 'COMPRENDRE.md').write_text('\n'.join(guide) + '\n', encoding='utf-8')
+    lines = ['# Décisions de conception v4\n',
+             'Les familles ci-dessous testent des conditions différentes. Elles sont mélangées dans le parcours ; '
+             'leur regroupement ici sert à examiner le raisonnement et ne crée pas de cartes supplémentaires.\n']
+    for entry in yaml.safe_load(OBJECTIVES.with_name('contrasts.yaml').read_text(encoding='utf-8')):
+        lines.extend([f"## {entry['id']}\n", entry['raison'] + '\n'])
+        for ident in entry['notes']:
+            if ident not in by_id:
+                continue  # The foundation export is built before the full package.
+            n = by_id[ident]
+            lines.append(f"- `{ident}` : " + str(n.get('question', n.get('texte', n.get('signification', '')))).replace('\n', ' '))
+        lines.append('')
+    lines.extend(['## Retraits justifiés\n', 'Aucun plafond numérique : chaque retrait ci-dessous a un motif et une couverture conservée. '
+                  'La v4 est destinée à un import neuf ; réimporter ne supprime pas les anciennes cartes.\n'])
+    for entry in yaml.safe_load(OBJECTIVES.with_name('retirements.yaml').read_text(encoding='utf-8')):
+        lines.append(f"- `{entry['id']}` : {entry['raison']} Couverture : " + ', '.join('`' + i + '`' for i in entry['couverts_par']) + '.')
+    (out / 'CONCEPTION.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
 
 def write_card_inventory(data, plan, out):

@@ -1,21 +1,27 @@
-# E — Environnement : affirmations à juger VRAI/FAUX, centrées sur les idées reçues de l'écoconduite
-# et de la pollution (knowledge-facts A6). Les chiffres vivent dans data/faits/11_environnement.yaml.
 - id: aff-e-clim-autoroute
   contexte: Autoroute à 130 km/h, forte chaleur.
   affirmation: Pour consommer moins, mieux vaut couper la climatisation et ouvrir les vitres.
   verdict: faux
-  pourquoi: À vitesse élevée, les vitres ouvertes dégradent l'aérodynamique et coûtent plus cher que la climatisation. C'est en ville, à faible allure, qu'il vaut mieux aérer que climatiser.
+  pourquoi: Les vitres ouvertes augmentent la résistance à l’air à grande vitesse. On privilégie une climatisation
+    raisonnable, vitres fermées ; aucun bilan chiffré universel ne vaut pour tous les véhicules et toutes les
+    chaleurs.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME ; En Voiture Simone — Éco-conduite
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  tags:
+  - revision::v4
 - id: aff-e-point-mort-descente
   contexte: Longue descente, route dégagée.
   affirmation: Passer au point mort économise du carburant.
   verdict: faux
-  pourquoi: 'Au point mort le moteur consomme son ralenti et je perds le frein moteur, donc les freins chauffent. Rapport engagé et pied levé, l''injection est coupée : la consommation tombe à zéro et le véhicule reste tenu.'
+  pourquoi: Je perds le frein moteur et sollicite davantage les freins. Avec un rapport adapté, je maîtrise
+    mieux l’allure ; sur de nombreux moteurs à injection, l’alimentation est coupée dans certaines phases de
+    décélération.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — Écoconduite ; En Voiture Simone — Éco-conduite
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  tags:
+  - revision::v4
 - id: aff-e-moteur-chauffer
   contexte: Matin d'hiver, moteur froid.
   affirmation: Je laisse tourner le moteur deux ou trois minutes avant de partir, pour le ménager.
@@ -27,41 +33,57 @@
 - id: aff-e-trajets-courts
   affirmation: Les trajets de moins de trois kilomètres polluent peu, puisqu'ils sont courts.
   verdict: faux
-  pourquoi: 'Ce sont les plus polluants au kilomètre : le moteur froid consomme jusqu''à 50 % de plus et le catalyseur ne filtre rien tant qu''il n''est pas chaud. D''où la marche ou le vélo sur ces distances.'
+  pourquoi: À froid, le moteur consomme davantage au kilomètre et les dispositifs de dépollution n’ont pas
+    encore atteint leur efficacité normale. Pour un court trajet, envisager marche ou vélo selon les possibilités.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — Se déplacer autrement ; Codeclic — Conduite économique
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  tags:
+  - revision::v4
 - id: aff-e-coffre-toit-vide
   contexte: Retour de vacances ; le coffre de toit est encore sur le pavillon, vide.
   affirmation: Vide, il ne coûte plus rien en carburant.
   verdict: faux
-  pourquoi: 'Plein ou vide, il augmente la traînée et la consommation de 10 à 15 % : on le retire dès qu''il ne sert plus. Les barres de toit seules coûtent déjà 5 à 10 %.'
+  pourquoi: Même vide, le coffre augmente la résistance à l’air et donc la consommation. Le retirer lorsqu’il
+    ne sert plus ; l’augmentation dépend du coffre et de la vitesse, pas d’un pourcentage fixe.
   theme: E
   sous_theme: ecoconduite
-  source: Codeclic — Conduite économique ; ADEME — Écoconduite
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  tags:
+  - revision::v4
 - id: aff-e-vitesse-stable
   contexte: Route dégagée, trafic fluide.
   affirmation: Une allure souple et stable consomme moins qu'une conduite nerveuse à la même vitesse moyenne.
   verdict: vrai
-  pourquoi: Chaque accélération coûte du carburant que le freinage suivant dissipe en chaleur ; une conduite nerveuse consomme jusqu'à 40 % de plus en ville, pour le même temps de trajet.
+  pourquoi: Les accélérations inutiles demandent de l’énergie ensuite dissipée au freinage. Anticiper et stabiliser
+    l’allure réduit ces pertes ; la circulation et la sécurité restent prioritaires.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — Écoconduite ; Ornikar — Conduite écologique
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  tags:
+  - revision::v4
 - id: aff-e-ecoconduite-securite
   affirmation: Conduire en écoconduite, c'est aussi conduire plus sûrement.
   verdict: vrai
-  pourquoi: Anticiper, garder de la distance et une allure stable, c'est se donner le temps de voir et d'éviter les freinages d'urgence. L'expérimentation menée à La Poste a mesuré −5 % de carburant et −10 % de sinistres.
+  pourquoi: Anticiper et garder des distances donnent du temps pour réagir. L’économie ne justifie ni de suivre
+    de trop près, ni de descendre au point mort, ni de retarder un freinage nécessaire.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — Écoconduite (expérimentation La Poste)
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  tags:
+  - revision::v4
 - id: aff-e-equipements-electriques
   affirmation: Le dégivrage de la lunette arrière et les sièges chauffants font consommer du carburant.
   verdict: vrai
-  pourquoi: 'Ils sont alimentés par l''alternateur, entraîné par le moteur : tout consommateur électrique pèse sur la consommation. On les coupe dès qu''ils ne sont plus nécessaires.'
+  pourquoi: Produire l’électricité demande de l’énergie au moteur. Couper les équipements devenus inutiles,
+    mais garder le désembuage ou le dégivrage tant qu’ils sont nécessaires à la visibilité.
   theme: E
   sous_theme: ecoconduite
   importance: utile
-  source: En Voiture Simone — Éco-conduite ; ADEME
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  contexte: Voiture thermique.
+  tags:
+  - revision::v4
 - id: aff-e-electrique-zero
   affirmation: Un véhicule électrique n'émet aucune pollution.
   verdict: faux
@@ -80,10 +102,13 @@
 - id: aff-e-critair-renouvellement
   affirmation: La vignette Crit'Air se renouvelle chaque année.
   verdict: faux
-  pourquoi: 'Elle vaut pour toute la vie du véhicule : une seule commande sur certificat-air.gouv.fr. Elle n''est refaite que si le véhicule change de plaque d''immatriculation.'
+  pourquoi: 'Pas de renouvellement annuel : elle reste valable tant qu’elle est lisible et correspond au véhicule.
+    Si elle est abîmée ou si les informations changent, vérifier le remplacement sur le site officiel.'
   theme: E
   sous_theme: pollution
   source: service-public.fr F33371 ; Code de la route, art. R318-2
+  tags:
+  - revision::v4
 - id: aff-e-zfe-vignette
   contexte: J'entre dans une ZFE au volant d'une voiture essence de 2022.
   affirmation: Même autorisée à circuler, ma voiture doit porter la vignette Crit'Air.

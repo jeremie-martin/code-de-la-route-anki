@@ -646,13 +646,14 @@
   image:
     commons: France road sign C113.svg
   nom: Piste ou bande cyclable conseillée et réservée aux cycles
-  signification: 'Piste ou bande cyclable conseillée : les cyclistes peuvent l''emprunter (pas d''obligation) ; elle leur est réservée : interdiction pour les autres véhicules d''y circuler ou stationner.'
-  conduite: 'En voiture : ne pas y rouler ni y stationner ; attention aux cyclistes qui peuvent aussi choisir la chaussée.'
-  complement: 'Au début de l''aménagement. Fin : C114. Carré bleu = conseillé (C113) ; rond bleu = obligatoire (B22a).'
+  signification: Piste ou bande cyclable conseillée pour les cycles à deux ou trois roues.
+  conduite: 'En voiture : ne pas y circuler ni s’y arrêter.'
+  complement: EDPM et cyclomobiles légers doivent l’emprunter, sauf décision locale contraire signalée. M4d2 peut autoriser les cyclomoteurs.
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  piege: Conseillée pour un vélo ne signifie pas facultative pour tous les usagers autorisés.
 - id: c114
   type: panneau
   code: C114

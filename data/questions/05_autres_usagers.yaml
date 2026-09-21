@@ -1,5 +1,3 @@
-# Thème U — Les autres usagers : décisions situées (v2, brief-v2-redaction.md)
-# ---------- Piétons et personnes vulnérables ----------
 - id: u-pieton-hors-passage
   question: 'Un piéton s''engage pour traverser hors de tout passage piéton (le plus proche est à 100 m). Dois-je le laisser passer ?'
   reponse: 'Oui : sans passage à moins de 50 m, il s''engage régulièrement et j''ai l''obligation de céder ; je ralentis et je le laisse finir de traverser, sans klaxonner.'
@@ -36,12 +34,17 @@
   sous_theme: pietons
   source: 'Code de la route, art. R413-17 ; arrêté du 2 juillet 1982 (transports d''enfants)'
 - id: u-personnes-agees
-  question: 'Mon feu passe au vert, mais un piéton âgé, engagé sur le passage, traverse lentement devant moi. Que fais-je ?'
-  reponse: 'J''attends qu''il ait fini de traverser, sans avancer ni klaxonner : un piéton engagé garde la priorité, et une personne âgée traverse lentement et évalue mal la vitesse des véhicules.'
-  explication: 'Plus de la moitié des piétons tués ont 65 ans ou plus : vue, audition et temps de réaction diminués. Le feu vert ne donne pas la priorité sur un piéton déjà engagé.'
+  question: Mon feu passe au vert, mais un piéton âgé, engagé sur le passage, traverse lentement devant moi.
+    Que fais-je ?
+  reponse: Je le laisse terminer sa traversée sans avancer sur lui ni le presser au klaxon. Mon feu vert ne
+    retire pas la priorité du piéton engagé.
+  explication: 'Ne pas généraliser une déficience à toutes les personnes âgées : c’est la traversée en cours
+    et son rythme réel qui commandent ma décision.'
   theme: U
   sous_theme: pietons
-  source: 'Code de la route, art. R415-11 ; ONISR 2025 (bilan définitif)'
+  source: Code de la route, art. R415-11 ; ONISR 2025 (bilan définitif)
+  tags:
+  - revision::v4
 - id: u-fauteuil-roulant-chaussee
   question: 'Hors agglomération, une personne en fauteuil roulant circule sur la chaussée devant moi, près du bord droit. Que fais-je ?'
   reponse: 'Je ralentis et je la dépasse en laissant au moins 1,50 m (1 m en agglomération) : assimilée à un piéton, elle peut circuler sur la chaussée dans tous les cas, en tenant sa droite.'
@@ -80,14 +83,18 @@
   source: 'Code de la route, art. R412-28-1 et R110-2'
 # ---------- EDPM (trottinettes électriques) ----------
 - id: u-edpm-ou-circuler
-  question: 'Je suis en trottinette électrique, en agglomération, sur une avenue limitée à 50 km/h sans piste ni bande cyclable. Où dois-je rouler ?'
-  reponse: 'Sur la chaussée, à droite : en agglomération, un EDPM prend la bande ou la piste cyclable si elle existe, sinon les routes limitées à 50 km/h au plus — jamais le trottoir.'
-  explication: 'Trottoir : seulement sur autorisation du maire, à l''allure du pas ; sinon je descends et je la pousse (je deviens piéton). Circuler hors des voies autorisées : 135 €.'
+  question: Je suis en trottinette électrique, en agglomération, sur une avenue limitée à 50 km/h sans piste
+    ni bande cyclable. Où dois-je rouler ?
+  reponse: En l’absence d’aménagement cyclable, sur la chaussée limitée à 50 km/h au plus, en tenant ma droite.
+    Le trottoir n’est admis que par autorisation locale spécifique, au pas et sans gêner les piétons.
+  explication: 'Trottoir : seulement sur autorisation du maire, à l''allure du pas ; sinon je descends et je
+    la pousse (je deviens piéton). Circuler hors des voies autorisées : 135 €.'
   theme: U
   sous_theme: edpm
   tags:
   - nouveau::2023
-  source: 'Code de la route, art. R412-43-1 ; service-public.fr F308'
+  - revision::v4
+  source: Code de la route, art. R412-43-1 ; service-public.fr F308
 - id: u-edpm-pieton-ou-vehicule
   question: 'À une intersection sans signalisation, une trottinette électrique arrive à ma droite. Qui passe ?'
   reponse: 'Elle : un EDPM est un véhicule soumis aux règles de priorité (ici la priorité à droite), pas un piéton ; seuls rollers, skate et trottinette sans moteur sont assimilés aux piétons.'
@@ -97,12 +104,16 @@
   source: 'Code de la route, art. R311-1, R412-34 et R415-5'
 # ---------- Motos et cyclomoteurs ----------
 - id: u-moto-vulnerabilite
-  question: 'Je vais tourner à gauche ; une moto arrive en face, elle me semble encore loin. Que fais-je ?'
-  reponse: 'Je la laisse passer avant de tourner : le gabarit étroit d''une moto fait sous-estimer sa vitesse et sa proximité ; « je ne l''ai pas vue » est l''erreur n° 1 des accidents voiture-moto.'
-  explication: 'Défaut de détection dans près de deux tiers des accidents voiture-moto : angle mort, montant de pare-brise, vitesse d''approche mal évaluée. Regarder deux fois.'
+  question: Je vais tourner à gauche ; une moto arrive en face, elle me semble encore loin. Que fais-je ?
+  reponse: Je vérifie sa vitesse et sa distance sans me fier à sa petite silhouette. En cas de doute sur un
+    créneau suffisant, j’attends qu’elle passe.
+  explication: Le gabarit étroit peut fausser l’appréciation. Une moto en face a la priorité sur mon virage
+    à gauche ; une distance réellement suffisante reste nécessaire pour tourner sans la gêner.
   theme: U
   sous_theme: motos
-  source: 'securite-routiere.gouv.fr — Être visible à moto ; Code de la route, art. R415-4'
+  source: securite-routiere.gouv.fr — Être visible à moto ; Code de la route, art. R415-4
+  tags:
+  - revision::v4
 - id: u-interfiles
   question: 'Autoroute embouteillée, files ininterrompues sur toutes les voies ; une moto remonte entre les deux files de gauche. Que fais-je ?'
   reponse: 'Je reste dans ma file en gardant l''espace latéral, et je contrôle rétroviseurs et angle mort avant tout changement de file : cette circulation inter-files est légale ici depuis 2025.'
@@ -114,19 +125,29 @@
   source: 'Code de la route, art. R412-11-3 (décret n° 2025-33 du 9 janvier 2025)'
 # ---------- Poids lourds ----------
 - id: u-pl-angles-morts
-  question: 'Je suis à vélo, arrêté au feu rouge à droite d''un camion, à hauteur de sa portière. Son conducteur me voit-il ?'
-  reponse: 'Non : le côté droit est le pire des quatre angles morts d''un poids lourd (avant, arrière et les deux côtés) ; je reste derrière lui, en retrait — jamais à sa hauteur.'
-  explication: 'Depuis 2021, les véhicules de plus de 3,5 t portent des autocollants « angles morts ». Un camion qui va tourner à droite balaie tout l''espace à sa droite.'
+  question: Je suis à vélo, arrêté au feu rouge à droite d'un camion, à hauteur de sa portière. Son conducteur
+    me voit-il ?
+  reponse: 'Il peut ne pas me voir : je peux être dans un angle mort. Je reste en retrait, hors de sa trajectoire,
+    plutôt que de présumer qu’il m’a repéré.'
+  explication: La visibilité dépend du véhicule, des rétroviseurs, des capteurs et du regard du conducteur.
+    Voir son rétroviseur ne prouve pas qu’il me voit ; ne pas s’installer à côté d’un camion qui pourrait tourner.
   theme: U
   sous_theme: poids_lourds
   source: 'securite-routiere.gouv.fr — Vrai ou faux : angles morts'
+  tags:
+  - revision::v4
 - id: u-pl-tourne-droite
-  question: 'Un poids lourd met son clignotant droit devant moi et se déporte vers la gauche. Que fait-il et que dois-je faire ?'
-  reponse: 'Il prend de l''élan pour tourner à droite (grand rayon de braquage) : je ne dois surtout pas m''engager dans l''espace à sa droite, je reste derrière.'
-  explication: 'Erreur mortelle typique des cyclistes et des automobilistes : un camion qui tourne balaie toute la largeur de la rue.'
+  question: Un poids lourd met son clignotant droit devant moi et se déporte vers la gauche. Que fait-il et
+    que dois-je faire ?
+  reponse: Il prépare probablement un virage à droite en élargissant sa trajectoire. Je reste derrière et ne
+    m’engage pas dans l’espace à sa droite.
+  explication: 'Le déport n’est pas une prise d’élan : le gabarit et le décalage de trajectoire des roues arrière
+    demandent de la place. Un clignotant décrit une intention, pas une certitude sur la manœuvre exacte.'
   theme: U
   sous_theme: poids_lourds
-  source: 'Ornikar — Transports de marchandises ; securite-routiere.gouv.fr — Angles morts'
+  source: Ornikar — Transports de marchandises ; securite-routiere.gouv.fr — Angles morts
+  tags:
+  - revision::v4
 - id: u-pl-giratoire-deport
   question: 'Dans un carrefour à sens giratoire à deux voies, le poids lourd devant moi roule à cheval sur les deux voies. Puis-je le dépasser dans l''anneau ?'
   reponse: 'Non : son gabarit l''oblige à occuper les deux voies pour tourner, et ses côtés sont des angles morts ; je reste derrière lui à distance jusqu''à sa sortie.'

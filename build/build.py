@@ -95,7 +95,18 @@ def load_all() -> dict[str, list[dict]]:
                 it["_file"] = f.name
                 it["_pos"] = i
                 it["_kind"] = kind
+                if kind == "faits" and "rappels" in it:
+                    if "texte" in it or not isinstance(it["rappels"], list) or not all(isinstance(s, str) for s in it["rappels"]):
+                        raise DataError(f"{f}:{it.get('id')}: rappels doit être une liste de textes, sans texte concurrent")
+                    it["texte"] = "\n\n".join(it["rappels"])
             data[kind].extend(items)
+    recon = {n['id']: n for n in data['reconnaissance']}
+    for kind, notes in data.items():
+        for n in notes:
+            if 'image_ref' in n:
+                if kind != 'questions' or n['image_ref'] not in recon or 'image' in n:
+                    raise DataError(f"{n['id']}: image_ref doit référencer une reconnaissance, sans image concurrente")
+                n['image'] = recon[n['image_ref']]['image']
     learning.annotate(data)
     return data
 
@@ -168,6 +179,10 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
     for it in data["faits"]:
         common(it, "faits")
         req(it, "texte")
+        if "rappels" in it:
+            ordinals = [set(CLOZE_RE.findall(s)) for s in it["rappels"]]
+            if any(len(nums) != 1 for nums in ordinals) or len(set.union(set(), *ordinals)) != len(ordinals):
+                errors.append(f"{it['id']}: chaque rappel doit cibler un seul numéro de cloze distinct")
         n = sorted({int(x) for x in CLOZE_RE.findall(it.get("texte", ""))})
         if not n:
             errors.append(f"{it['_file']}:{it.get('id')}: aucun cloze")
@@ -474,7 +489,23 @@ def curriculum(data: dict[str, list[dict]]) -> list[tuple[str, str]]:
     """Foundation first; preserve interleaving and prerequisite order within stages."""
     order = _library_curriculum(data)
     by_key = {(kind, n['id']): n for kind, notes in data.items() for n in notes}
-    return sorted(order, key=lambda key: by_key[key]['_stage'] != 'socle')
+    order = sorted(order, key=lambda key: by_key[key]['_stage'] != 'socle')
+    # A visual application follows recognition of its signal. Delay only the
+    # application, preserving the existing interleaving of other notes.
+    emitted, result, pending = set(), [], []
+    for key in order:
+        pending.append(key)
+        while True:
+            ready = next((k for k in pending if not by_key[k].get('image_ref') or
+                          by_key[k]['image_ref'] in emitted), None)
+            if ready is None:
+                break
+            pending.remove(ready)
+            result.append(ready)
+            emitted.add(ready[1])
+    if pending:
+        raise DataError(f"Prérequis visuels absents : {pending}")
+    return result
 
 
 # ------------------------------------------------------------ collection ---
@@ -566,6 +597,7 @@ def build_collection(data, names, out_apkg: Path):
     def add(model_name, fields: dict, kind: str, it: dict):
         m = model_objs[model_name]
         n = col.new_note(m)
+        fields['Repere'] = repere_html(it['theme'])
         for k, v in fields.items():
             n[k] = "" if v is None else str(v)
             used_media.update(re.findall(r'<img src="([^"]+)"', n[k]))
@@ -600,7 +632,7 @@ def build_collection(data, names, out_apkg: Path):
         }, "confusions", it)
     for it in data["faits"]:
         add("CDR Fait", {
-            "Id": it["id"], "Texte": md(it["texte"]), "Explication": md(it.get("explication", "")),
+            "Id": it["id"], "Texte": fait_html(it), "Explication": md(it.get("explication", "")),
             "Image": img_tag(names[it["id"]]) if it.get("image") else "", "Code": esc(it.get("code", "")),
             "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
         }, "faits", it)
@@ -678,6 +710,23 @@ def remap_ids(col_path: Path, old_mids: dict, old_dids: dict):
 
 
 # ------------------------------------------------------------- markdown ---
+def repere_html(theme):
+    lesson = learning.lessons()[theme]
+    return ('<p><b>' + inline_md(lesson['titre']) + '</b></p><p>' + inline_md(lesson['principe']) +
+            '</p><p><b>Exemple.</b> ' + inline_md(lesson['exemple']) +
+            '</p><p><b>À essayer sur une autre scène.</b> ' + inline_md(lesson['transfert']) + '</p>')
+
+
+def fait_html(note) -> str:
+    """Independent sibling prompts in the existing field; no schema or GUID change."""
+    if "rappels" not in note:
+        return inline_md(note["texte"])
+    return "".join(
+        f'<div class="cdr-unit" data-cloze="{CLOZE_RE.search(prompt)[1]}">{inline_md(prompt)}</div>'
+        for prompt in note["rappels"]
+    )
+
+
 def inline_md(s) -> str:
     """Tiny markdown: **bold**, *italic*, `code`, line breaks, '- ' lists. Escapes HTML otherwise."""
     if s is None:

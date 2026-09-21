@@ -3,7 +3,7 @@
 Projet : générer `out/Code-de-la-route-2026.apkg`, un deck Anki pour réussir l'ETG (code de la route,
 permis B) tel qu'il existe en 2026. Lire `README.md` puis `docs/01-analyse-examen.md`,
 `docs/02-carte-des-connaissances.md`, `docs/03-conception-des-cartes.md`, `docs/04-sources.md`,
-`docs/08-integration-complete.md` (révision actuelle). Les dossiers v1/v2 sont historiques ; ne pas réintroduire leurs formulations corrigées.
+`docs/09-refonte-pedagogique.md` (révision actuelle). Les dossiers v1/v2 sont historiques ; ne pas réintroduire leurs formulations corrigées.
 
 ## Commandes
 
@@ -26,7 +26,8 @@ python build/yamlfix.py data/*/*.yaml   # quote les valeurs YAML contenant ': '
   Générés par `build/import_signs.py` ; **ne pas éditer à la main** : corriger `data/_meta/sign_overrides.yaml`
   (clé = id) ou `data/signs_inventory.yaml`, puis régénérer. `voyants.yaml` est écrit à la main.
 - `confusions/*.yaml` : paires à discriminer (`a`, `b` = ids de reconnaissance).
-- `faits/*.yaml` : clozes `{{c1::…}}` (≤ 4 par note).
+- `faits/*.yaml` : clozes `{{c1::…}}` (≤ 4 par note). Préférer `rappels: [texte c1, texte c2]`
+  pour des cibles indépendantes ; chaque entrée cible un seul ordinal distinct. Ne pas cumuler avec `texte`.
 - `questions/*.yaml` : question → réponse courte (≤ 40 mots, ≤ 4 éléments ; `long_ok: true` pour une exception justifiée).
 - `affirmations/*.yaml` : `contexte` (facultatif), `affirmation`, `verdict: vrai|faux`, `pourquoi` ; fausses
   affirmations plausibles, 35-65 % de vrai par fichier, pas de mot-signal (toujours/jamais/obligatoirement/uniquement)
@@ -37,7 +38,7 @@ python build/yamlfix.py data/*/*.yaml   # quote les valeurs YAML contenant ': '
 - Champs communs : `id` (unique, minuscules), `theme` (L C R U D A P M S E X), `sous_theme`,
   `importance` (essentiel|utile|rare), `source`, `tags` optionnels. Lettres officielles : A = porter
   secours, P = prendre/quitter le véhicule, S = sécurité passagers/véhicule, E = environnement.
-- V3 : `data/_meta/objectives.yaml` relie explicitement chaque note à ses objectifs :
+- Parcours : `data/_meta/objectives.yaml` relie explicitement chaque note à ses objectifs :
   `notes` pour l’introduction, `consolidation` pour la suite. Aucun plafond de notes ou de cartes.
   `build/learning.py` annote `parcours::*` / `objectif::*`, place toutes les cartes du socle avant
   l’approfondissement et produit le programme depuis le même plan que les positions exportées.
@@ -59,8 +60,17 @@ python build/yamlfix.py data/*/*.yaml   # quote les valeurs YAML contenant ': '
   (`docs/research/sources/code_de_la_route_consolide_2026-09-10.pdf`, texte : `pdftotext -layout`).
 - Images : Commons `commons:` (nom de fichier exact), générateurs `gen:` (`build/gen_images.py`),
   teinte `tint:` pour les voyants ISO.
-- Préserver les GUID, ids de types/decks (`build/models.py`), numéros de cloze ET ids internes
+- La v4 est une refonte pour import neuf (retraits et ordinaux modifiés, sans migration v2/v3).
+  Pour les modifications ultérieures, préserver les GUID, ids de types/decks (`build/models.py`), numéros de cloze ET ids internes
   des champs/gabarits (`data/_meta/anki_schema.json`, repris du paquet v2 publié).
   `build.verify` doit refuser tout conflit de réimport, même si le nombre total de notes est correct.
 - Les contrôles externes ciblés sont documentés dans `data/_meta/source_checks.yaml` ; une date
   ne certifie que la portée écrite. Les références génériques héritées ne prouvent pas une vérification récente.
+
+## Repères et applications (v4)
+
+`lessons.yaml` contient un repère avec exemple par thème, exporté dans `out/COMPRENDRE.md` et
+le champ `Repere` de tous les modèles (volet au verso). Ce complément n’est pas une cible de rappel.
+`questions.image_ref` réutilise un signal existant ; le parcours place sa reconnaissance avant
+l’application. `contrasts.yaml` justifie les familles de cas ; `retirements.yaml` documente les
+suppressions avec leur couverture conservée. Les deux alimentent `out/CONCEPTION.md`.
