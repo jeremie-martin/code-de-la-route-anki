@@ -13,8 +13,7 @@
   tags:
   - revision::v4
 - id: s-chargement-chiffres
-  explication: 'Pas de limite générale de hauteur pour une voiture (ponts et parkings signalés). Arrimage défaillant
-    : 68 € et immobilisation ; dépassement arrière excessif : 135 €.'
+  explication: Mesurer le véhicule chargé. Vérifier aussi le gabarit des ponts et parkings, et arrimer le chargement.
   theme: S
   sous_theme: chargement
   source: Code de la route, art. R312-19 à R312-22

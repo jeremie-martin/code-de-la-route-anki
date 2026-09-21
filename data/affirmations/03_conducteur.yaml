@@ -51,8 +51,8 @@
 - id: aff-c-reaction-vehicule-ralentit
   affirmation: Je peux soustraire la distance de réaction de la distance nécessaire pour m’arrêter.
   verdict: faux
-  pourquoi: 'Non : distance d’arrêt = réaction + freinage. Le véhicule avance pendant les deux phases. La vitesse
-    constante pendant la réaction est ici une hypothèse du modèle, pas une loi applicable à toute situation.'
+  pourquoi: Distance d’arrêt = réaction + freinage. Le véhicule avance pendant les deux phases ; ici, la vitesse
+    est supposée constante pendant la réaction.
   theme: C
   sous_theme: distances
   source: En Voiture Simone — Temps de réaction ; securite-routiere.gouv.fr — La vitesse et la conduite
@@ -146,9 +146,8 @@
   contexte: 'Long trajet : j''ai les yeux qui picotent, la nuque raide et le regard qui se fige.'
   affirmation: Je m’arrête pour faire une pause ; je ne repars que si ma vigilance est rétablie.
   verdict: vrai
-  pourquoi: Une durée de pause ne garantit pas l’aptitude à repartir. Si je lutte pour rester éveillé, je dois
-    dormir ; si les signes persistent, je diffère le trajet. Ne pas attendre la pause prévue face aux premiers
-    signes.
+  pourquoi: Je m’arrête dès les premiers signes. Si je lutte pour rester éveillé, je dois dormir. Je ne repars
+    pas tant que ma vigilance reste insuffisante.
   theme: C
   sous_theme: deficiences
   source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf

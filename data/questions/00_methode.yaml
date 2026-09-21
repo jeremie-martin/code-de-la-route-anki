@@ -54,10 +54,9 @@
 - id: etg-forme-double-oui-non
   question: Une question de l'ETG présente deux affirmations sur la même photo, chacune à juger OUI/NON. Comment
     est-elle notée ?
-  reponse: 'Tout ou rien : les deux affirmations doivent être justes pour avoir le point ; elles ne sont pas forcément
-    liées entre elles.'
-  explication: Juger séparément les deux affirmations puis vérifier les lettres cochées. Les 20 exemples publics
-    illustrent cette forme ; ils ne mesurent pas sa fréquence dans toute la banque.
+  reponse: 'Tout ou rien : les deux affirmations doivent être justes pour avoir le point ; elles ne sont pas
+    forcément liées entre elles.'
+  explication: Juger séparément les deux affirmations, puis vérifier les lettres cochées.
   theme: X
   sous_theme: lecture
   source: Sécurité routière — Exemples de nouvelles questions (PDF, sept. 2023) ; En Voiture Simone — Questions

@@ -1,8 +1,8 @@
 agent-bras-tendu-face:
   signification: 'Bras tendu(s) à l''horizontale : les usagers qui voient l''agent de face ou de dos s''arrêtent
     ; ceux qui le voient de profil passent.'
-  conduite: Si je vois sa poitrine ou son dos, je m'arrête ; de profil, je passe.
-  complement: 'Mémo : face ou dos = STOP, profil = passage. Vaut aussi bras baissés.'
+  conduite: null
+  complement: L’ordre reste valable quand l’agent baisse les bras.
 agent-bras-leve:
   signification: 'Bras levé verticalement : « attention, arrêt » pour tous, sauf ceux déjà engagés dans l''intersection,
     qui la dégagent.'
@@ -266,6 +266,7 @@ a9b:
   complement: null
 a13b:
   nom: Passage pour piétons (annonce du danger)
+  complement: null
 a16:
   signification: Annonce une descente dangereuse ; le nombre indiqué (ex. 10 %) est le pourcentage de pente.
   conduite: Rétrograder pour utiliser le frein moteur ; en montagne, le véhicule qui descend facilite le croisement.
@@ -319,8 +320,10 @@ c20a:
     2015-808 : 135 €) ; la loi LOM impose leur suppression d''ici fin 2026.'
   piege: Triangle A13b = annonce (150 m avant) ; carré bleu C20a = position.
 c25a:
-  complement: Aux points d'entrée en France. Le dessin ci-contre est simplifié (il manque la ligne 110 km/h).
-  piege: Depuis 2018, 80 km/h sur route bidirectionnelle sans séparateur (90 possible par décision départementale).
+  complement: 'Illustration simplifiée : la ligne des routes à chaussées séparées (110 km/h) n’est pas représentée.'
+  piege: null
+  signification: Rappel des limitations générales de vitesse en France, selon le type de route.
+  conduite: Tenir compte aussi des limitations locales, de la météo et du permis probatoire.
 c27:
   complement: En position, au niveau du ralentisseur ; annoncé par A2b (facultatif en zone 30). Au sol, trois
     triangles blancs.
@@ -496,12 +499,11 @@ ab3a:
   piege: Triangle pointe en bas, reconnaissable de dos (comme AB3b/AB5 et le panonceau M12). Aux feux, le feu
     prévaut.
 ab4:
-  signification: Arrêt absolu obligatoire à la limite de la chaussée abordée, puis céder le passage aux véhicules
-    circulant sur l'autre route.
-  conduite: S'arrêter roues immobilisées à la ligne continue, même si la voie semble libre.
-  complement: Arrêt à la ligne ; en son absence, à la limite de la chaussée abordée, pas nécessairement à hauteur
-    du panneau. Un feu en fonctionnement prévaut sur le panneau de priorité.
-  piege: 'Seul panneau octogonal en France : reconnaissable de dos. Non-respect : 135 € et 4 points.'
+  signification: Arrêt complet à la ligne ; sans ligne, à la limite de la chaussée abordée. Puis céder le passage
+    aux véhicules de l’autre route.
+  conduite: Immobiliser les roues, même si la voie semble libre.
+  complement: Un feu en fonctionnement prévaut sur ce panneau de priorité.
+  piege: Le panneau est reconnaissable de dos à sa forme octogonale.
   source: Code de la route, R415-6 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842245/
   tags:
   - revision::v5
@@ -603,8 +605,7 @@ m9v1:
 m9v3:
   signification: 'Précise que la prescription ne s''applique pas aux cyclomoteurs : M9v3 « INTERDIT SAUF »
     + pictogramme, M9v4 « SAUF » + pictogramme.'
-  complement: Sous le panneau qu'il complète, sur le même support ; il ne s'applique qu'à ce panneau. Panonceaux
-    récents (postérieurs à 2015), rares à l'examen.
+  complement: null
 m9z:
   signification: 'Panonceau à inscription libre : « RAPPEL », « SAUF RIVERAINS », « PAR TEMPS DE PLUIE », «
     SORTIE D''USINE »…'
@@ -713,9 +714,11 @@ c24b:
 c51a:
   signification: Annonce une section d'autoroute où la vitesse maximale est modulée dynamiquement par panneaux
     à messages variables.
+  complement: null
 c65b:
   signification: 'Pour les usagers sans télépéage : délai et solutions de paiement du péage en flux libre.'
   conduite: Payer dans le délai indiqué (généralement 72 h).
+  complement: null
 ce29:
   conduite: 'En tunnel : se garer, couper le moteur, laisser les clés, rejoindre l''issue de secours.'
 ak17:
@@ -843,7 +846,7 @@ marq-damier-blanc:
   - revision::v3_1
 d20:
   signification: 'Panneau de direction en position : la pointe indique la voie à prendre au carrefour.'
-  complement: Lire destination et flèche. Les noms de lieux de l’exemple ne sont pas à mémoriser.
+  complement: null
   tags:
   - revision::v3_1
 d30:
@@ -877,8 +880,7 @@ da40:
   signification: 'Les flèches vers le bas désignent les voies : sur ce schéma, deux voies pour Paris et la
     voie de droite pour Lyon.'
   conduite: Choisir sa voie assez tôt, après contrôles ; ne pas couper les autres voies au dernier moment.
-  complement: Schéma pédagogique simplifié, sans reproduction certifiée d’un modèle Da. Les destinations illustrent
-    la lecture ; leurs noms ne sont pas à mémoriser.
+  complement: 'Schéma simplifié : les destinations servent à lire l’affectation des voies.'
   tags:
   - revision::v3_1
 m9v2:
@@ -901,3 +903,21 @@ c113:
   complement: EDPM et cyclomobiles légers doivent l’emprunter, sauf décision locale contraire signalée. M4d2
     peut autoriser les cyclomoteurs.
   piege: Conseillée pour un vélo ne signifie pas facultative pour tous les usagers autorisés.
+c1b:
+  complement: null
+b27b:
+  complement: null
+b45a:
+  complement: null
+m4c:
+  complement: null
+b6b4:
+  complement: null
+b6b5:
+  complement: null
+b19:
+  complement: null
+b22b:
+  complement: null
+b22c:
+  complement: null

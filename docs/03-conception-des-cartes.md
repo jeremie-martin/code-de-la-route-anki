@@ -1,4 +1,4 @@
-# Conception des cartes — v5
+# Conception des cartes — v5.1
 
 ## Ce que l’on optimise
 
@@ -102,3 +102,39 @@ introduction dans le parcours. Une image doit être nécessaire à la décision 
 ou transcrire sa valeur dans l’énoncé. Un tableau fictif porte explicitement sa nature et son périmètre.
 Les familles de `contrasts.yaml` rendent vérifiable la condition qui change entre les cas, sans imposer
 leur présentation consécutive. Les retraits sont motivés dans `retirements.yaml` et gardent une couverture.
+
+
+## Interface quotidienne : chaque élément doit justifier sa place
+
+Le [bilan d’interface](11-interface-quotidienne.md) documente le diagnostic, les appuis externes,
+les arbitrages et les vérifications. Ces règles s’appliquent à tous les types, avec des tâches différentes :
+
+| Niveau | Contenu | Critère |
+|---|---|---|
+| Recto | Question, contexte nécessaire, image utile | Peut-on répondre sans deviner une condition absente ? |
+| Verso principal | Réponse attendue, correction et explication utile | Peut-on juger sa réponse et comprendre son erreur sans ouvrir de volet ? |
+| Référence | Source, nom/code officiel, repère de thème | Sert-il surtout à vérifier, situer ou réapprendre ? |
+| Guide de démarrage | Méthode, notation, rythme | Est-ce une instruction identique à chaque révision ? |
+
+Ne pas transformer cette table en automatisme fondé sur le nom d’un champ. `Complement` peut
+porter une condition essentielle ; `Explication` peut contenir une remarque d’auteur inutile.
+Relire le sens avant de déplacer ou supprimer. Une réserve est utile si elle change ce que l’élève
+peut conclure : « valeur constructeur », « selon visibilité », « maxima encourus » ne sont pas du bruit.
+Une seconde mention « données fictives » après un tableau déjà étiqueté l’est généralement.
+
+Le contexte répété au verso facilite la comparaison avec sa réponse ; sa typographie est plus discrète.
+Une comparaison A/B se corrige avec les repères **A et B**, pas en obligeant à apprendre leurs codes.
+Une raison décisive reste visible. Ne jamais masquer les exceptions qui rendent la réponse exacte
+pour faire tenir la carte dans un écran. Le défilement est permis, mais les longs versos sont à examiner.
+Les noms officiels des signaux restent consultables, sans constituer une deuxième cible de récitation.
+
+Préférer une explication concrète (« seul le freinage double ici ») à un commentaire sur la fabrication
+du deck ou sur ce qu’il ne prétend pas garantir. Retirer une phrase déjà démontrée par la réponse si
+elle n’ajoute ni mécanisme, ni limite, ni distinction. Conserver une procédure cohérente lorsqu’une
+séparation ferait perdre le sens de l’action. Ne pas raccourcir en réduisant la police ou en rognant.
+
+Pour chaque changement, vérifier une question courte, une longue, une avec image, une sans image,
+une correction fausse, une comparaison et chaque ordinal d’une cloze modifiée. Examiner clair et sombre
+à 430 × 932, puis l’espace réduit de 430 × 740 et la contrainte à 320 px. Ouvrir le volet, vérifier ses
+liens et le refermer. Les captures Chromium évaluent l’interface web ; elles ne prouvent pas le rendu
+WebKit, les gestes AnkiMobile ou l’efficacité d’apprentissage sur plusieurs mois.

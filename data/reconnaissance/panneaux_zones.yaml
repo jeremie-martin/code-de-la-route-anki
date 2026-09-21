@@ -46,7 +46,6 @@
   nom: Entrée d'une zone à stationnement payant
   signification: Entrée d'une zone où le stationnement est payant (horodateur, parcmètre, paiement mobile) selon les horaires indiqués.
   conduite: Payer et afficher le ticket ; sinon forfait post-stationnement (FPS).
-  complement: 'Fin : B50d.'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -58,7 +57,6 @@
     commons: France road sign B6b5.svg
   nom: Entrée d'une zone à stationnement unilatéral alterné et à durée limitée
   signification: Entrée d'une zone combinant stationnement unilatéral à alternance semi-mensuelle et durée limitée avec contrôle par disque.
-  complement: 'Fin : B50e.'
   theme: L
   sous_theme: panneaux
   importance: rare

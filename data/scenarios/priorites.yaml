@@ -240,17 +240,31 @@
   kind: intersection
   spec:
     approaches:
-      S: {vehicle: {colour: bleu, me: true}, goes: straight}
-      E: {vehicle: {colour: rouge}, goes: straight, private: true}
-  check: {pair: [S, E, avant]}
-  question: "Une voiture sort d'un parking (à ma droite) au moment où j'arrive. La priorité à droite s'applique-t-elle ?"
-  reponse: "Non : un véhicule qui sort d'un parking, d'un chemin privé, d'une aire ou d'un chemin de terre cède le passage à tous — je passe avant."
-  explication: "Art. R415-9 : celui qui débouche d'un accès non ouvert à la circulation publique, d'un chemin de terre ou d'une aire de stationnement doit céder le passage à tout autre véhicule (et aux piétons du trottoir qu'il franchit, R415-11). Même chose pour un véhicule qui quitte un stationnement ou une voie non revêtue."
+      S:
+        vehicle:
+          colour: bleu
+          me: true
+        goes: straight
+      E:
+        vehicle:
+          colour: rouge
+        goes: straight
+        private: true
+  check:
+    pair:
+    - S
+    - E
+    - avant
+  question: Une voiture sort d'un parking (à ma droite) au moment où j'arrive. La priorité à droite s'applique-t-elle
+    ?
+  reponse: Non. En sortant du parking, la voiture rouge doit me céder le passage.
+  explication: 'Art. R415-9 : celui qui débouche d''un accès non ouvert à la circulation publique, d''un chemin
+    de terre ou d''une aire de stationnement doit céder le passage à tout autre véhicule (et aux piétons du
+    trottoir qu''il franchit, R415-11). Même chose pour un véhicule qui quitte un stationnement ou une voie
+    non revêtue.'
   theme: L
   sous_theme: priorites
-  source: "Code de la route, art. R415-9 et R415-11"
-
-# ---------- Tramway, véhicules prioritaires ----------
+  source: Code de la route, art. R415-9 et R415-11
 - id: scn-tram-gauche
   kind: intersection
   spec:

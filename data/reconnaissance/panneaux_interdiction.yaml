@@ -513,7 +513,6 @@
   nom: Autre interdiction (par inscription)
   signification: Interdiction dont la nature est indiquée par une inscription sur le panneau (ex. « interdit aux quads », « interdit aux trottinettes »).
   conduite: Lire l'inscription et s'y conformer.
-  complement: 'Fin : B39.'
   theme: L
   sous_theme: panneaux
   importance: utile

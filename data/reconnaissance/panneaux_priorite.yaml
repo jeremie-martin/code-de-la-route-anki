@@ -61,14 +61,14 @@
   image:
     commons: France road sign AB4.svg
   nom: Arrêt à l'intersection (STOP)
-  signification: Arrêt absolu obligatoire à la limite de la chaussée abordée, puis céder le passage aux véhicules circulant sur l'autre route.
-  conduite: S'arrêter roues immobilisées à la ligne continue, même si la voie semble libre.
-  complement: Arrêt à la ligne ; en son absence, à la limite de la chaussée abordée, pas nécessairement à hauteur du panneau. Un feu en fonctionnement prévaut sur le panneau de priorité.
+  signification: Arrêt complet à la ligne ; sans ligne, à la limite de la chaussée abordée. Puis céder le passage aux véhicules de l’autre route.
+  conduite: Immobiliser les roues, même si la voie semble libre.
+  complement: Un feu en fonctionnement prévaut sur ce panneau de priorité.
   theme: L
   sous_theme: panneaux
   importance: essentiel
   source: Code de la route, R415-6 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842245/
-  piege: 'Seul panneau octogonal en France : reconnaissable de dos. Non-respect : 135 € et 4 points.'
+  piege: Le panneau est reconnaissable de dos à sa forme octogonale.
   tags:
   - revision::v5
 - id: ab5

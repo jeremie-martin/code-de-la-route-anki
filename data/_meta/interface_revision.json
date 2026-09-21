@@ -1,0 +1,536 @@
+[
+  {
+    "id": "a-objet-plaie",
+    "field": "explication",
+    "before": "Un objet planté peut empêcher la compression directe : un garrot sur le membre peut être nécessaire. Ce cas demande un geste adapté, pas la répétition aveugle de « comprimer toute plaie ».",
+    "after": "Un objet planté peut empêcher la compression directe ; un garrot sur le membre peut être nécessaire, selon la formation ou le guidage des secours."
+  },
+  {
+    "id": "a13b",
+    "field": "complement",
+    "before": "Le piéton régulièrement engagé ou manifestant clairement l'intention de traverser a la priorité (R415-11).",
+    "after": null
+  },
+  {
+    "id": "ab4",
+    "field": "complement",
+    "before": "Arrêt à la ligne ; en son absence, à la limite de la chaussée abordée, pas nécessairement à hauteur du panneau. Un feu en fonctionnement prévaut sur le panneau de priorité.",
+    "after": "Un feu en fonctionnement prévaut sur ce panneau de priorité."
+  },
+  {
+    "id": "ab4",
+    "field": "conduite",
+    "before": "S'arrêter roues immobilisées à la ligne continue, même si la voie semble libre.",
+    "after": "Immobiliser les roues, même si la voie semble libre."
+  },
+  {
+    "id": "ab4",
+    "field": "piege",
+    "before": "Seul panneau octogonal en France : reconnaissable de dos. Non-respect : 135 € et 4 points.",
+    "after": "Le panneau est reconnaissable de dos à sa forme octogonale."
+  },
+  {
+    "id": "ab4",
+    "field": "signification",
+    "before": "Arrêt absolu obligatoire à la limite de la chaussée abordée, puis céder le passage aux véhicules circulant sur l'autre route.",
+    "after": "Arrêt complet à la ligne ; sans ligne, à la limite de la chaussée abordée. Puis céder le passage aux véhicules de l’autre route."
+  },
+  {
+    "id": "aff-c-fatigue-signes",
+    "field": "pourquoi",
+    "before": "Une durée de pause ne garantit pas l’aptitude à repartir. Si je lutte pour rester éveillé, je dois dormir ; si les signes persistent, je diffère le trajet. Ne pas attendre la pause prévue face aux premiers signes.",
+    "after": "Je m’arrête dès les premiers signes. Si je lutte pour rester éveillé, je dois dormir. Je ne repars pas tant que ma vigilance reste insuffisante."
+  },
+  {
+    "id": "aff-c-reaction-vehicule-ralentit",
+    "field": "pourquoi",
+    "before": "Non : distance d’arrêt = réaction + freinage. Le véhicule avance pendant les deux phases. La vitesse constante pendant la réaction est ici une hypothèse du modèle, pas une loi applicable à toute situation.",
+    "after": "Distance d’arrêt = réaction + freinage. Le véhicule avance pendant les deux phases ; ici, la vitesse est supposée constante pendant la réaction."
+  },
+  {
+    "id": "aff-d-grand-exces-delit",
+    "field": "pourquoi",
+    "before": "Depuis le 29 décembre 2025, c’est un délit dès la première fois, avec retrait de six points. Trois mois de prison et 3 750 € sont des maxima encourus, pas des peines systématiques. Apprendre le droit applicable, sans supposer le contenu de la banque confidentielle.",
+    "after": "Depuis le 29 décembre 2025, c’est un délit dès la première fois, avec retrait de six points. Trois mois de prison et 3 750 € sont les maxima encourus."
+  },
+  {
+    "id": "agent-bras-tendu-face",
+    "field": "complement",
+    "before": "Mémo : face ou dos = STOP, profil = passage. Vaut aussi bras baissés.",
+    "after": "L’ordre reste valable quand l’agent baisse les bras."
+  },
+  {
+    "id": "agent-bras-tendu-face",
+    "field": "conduite",
+    "before": "Si je vois sa poitrine ou son dos, je m'arrête ; de profil, je passe.",
+    "after": null
+  },
+  {
+    "id": "b19",
+    "field": "complement",
+    "before": "Fin : B39.",
+    "after": null
+  },
+  {
+    "id": "b22b",
+    "field": "complement",
+    "before": "Fin : B41.",
+    "after": null
+  },
+  {
+    "id": "b22c",
+    "field": "complement",
+    "before": "Fin : B42.",
+    "after": null
+  },
+  {
+    "id": "b27b",
+    "field": "complement",
+    "before": "Le panneau de fin B45b a été supprimé en 2009.",
+    "after": null
+  },
+  {
+    "id": "b45a",
+    "field": "complement",
+    "before": "Souvent codé simplement « B45 ». B45b (fin de voie tramway) a été supprimé en 2009.",
+    "after": null
+  },
+  {
+    "id": "b6b4",
+    "field": "complement",
+    "before": "Fin : B50d.",
+    "after": null
+  },
+  {
+    "id": "b6b5",
+    "field": "complement",
+    "before": "Fin : B50e.",
+    "after": null
+  },
+  {
+    "id": "c-cycliste-devant-depassement",
+    "field": "explication",
+    "before": "Question officielle 2023 (Q7), sans énoncé : photo (cycliste devant à droite, dépassement en cours) et trois propositions — « J'accélère / Je poursuis le dépassement / Je me replace à droite » → C. Le « véhicule en face » est l'interprétation la plus probable de la photo, pas un élément du texte officiel.",
+    "after": "Je dois pouvoir terminer le dépassement sans danger. Accélérer pour forcer le passage mettrait le cycliste et le véhicule en face en danger."
+  },
+  {
+    "id": "c-cycliste-devant-depassement",
+    "field": "reponse",
+    "before": "Je me replace à droite derrière le cycliste, sans accélérer ni poursuivre ; je le dépasserai quand la voie sera libre, en laissant 1 m (1,50 m hors agglomération).",
+    "after": "Je renonce au dépassement et me replace derrière le cycliste, en gardant une distance de sécurité."
+  },
+  {
+    "id": "c-cycliste-devant-depassement",
+    "field": "source",
+    "before": "Sécurité routière — Exemples de nouvelles questions (Q7) ; Code de la route, art. R414-4",
+    "after": "Code de la route, art. R414-4 (conditions du dépassement)."
+  },
+  {
+    "id": "c-distance-freinage-mouille-exercice",
+    "field": "explication",
+    "before": "On ne double pas automatiquement la distance d’arrêt entière : la réaction et le freinage sont deux composantes. L’hypothèse chiffrée appartient à cet exercice.",
+    "after": "Seul le freinage double dans cet énoncé. La réaction reste à 15 m : on ne double pas la distance d’arrêt entière."
+  },
+  {
+    "id": "c-retro-avant-freiner",
+    "field": "reponse",
+    "before": "Pour connaître le trafic derrière et préparer un ralentissement progressif. Face à un danger immédiat, je freine sans retarder l’action pour consulter le rétroviseur.",
+    "after": "Pour connaître le trafic derrière et préparer un ralentissement progressif."
+  },
+  {
+    "id": "c1b",
+    "field": "complement",
+    "before": "La version ancienne (C1b-ancien) montrait un disque marqué 1 h 30.",
+    "after": null
+  },
+  {
+    "id": "c25a",
+    "field": "complement",
+    "before": "Aux points d'entrée en France. Le dessin ci-contre est simplifié (il manque la ligne 110 km/h).",
+    "after": "Illustration simplifiée : la ligne des routes à chaussées séparées (110 km/h) n’est pas représentée."
+  },
+  {
+    "id": "c25a",
+    "field": "conduite",
+    "before": "Mémoriser les limitations générales ; par temps de pluie : 110 sur autoroute, 100 sur 2×2 voies, 80 sur route.",
+    "after": "Tenir compte aussi des limitations locales, de la météo et du permis probatoire."
+  },
+  {
+    "id": "c25a",
+    "field": "piege",
+    "before": "Depuis 2018, 80 km/h sur route bidirectionnelle sans séparateur (90 possible par décision départementale).",
+    "after": null
+  },
+  {
+    "id": "c25a",
+    "field": "signification",
+    "before": "Rappel, aux frontières, des vitesses maximales autorisées sur le territoire français par type de route (agglomération 50, route 80, route à chaussées séparées 110, autoroute 130).",
+    "after": "Rappel des limitations générales de vitesse en France, selon le type de route."
+  },
+  {
+    "id": "c51a",
+    "field": "complement",
+    "before": "Fin : C51b.",
+    "after": null
+  },
+  {
+    "id": "c65b",
+    "field": "complement",
+    "before": "Sur les sections à péage en flux libre.",
+    "after": null
+  },
+  {
+    "id": "conf-a13a-a13b",
+    "field": "difference",
+    "before": "**A13a** : deux enfants qui courent, sans bandes → endroit fréquenté par les enfants (école, aire de jeux) : je ralentis fortement, un enfant peut surgir. **A13b** : un adulte sur des bandes → annonce d'un passage pour piétons (150 m hors agglomération, 50 m en ville).",
+    "after": "**A** : deux enfants qui courent, sans bandes → endroit fréquenté par les enfants (école, aire de jeux) : je ralentis fortement, un enfant peut surgir. **B** : un adulte sur des bandes → annonce d'un passage pour piétons (150 m hors agglomération, 50 m en ville)."
+  },
+  {
+    "id": "conf-a13b-c20a",
+    "field": "difference",
+    "before": "**A13b** (triangle) : **annonce** un passage pour piétons à 150 m (50 m en ville). **C20a** (carré bleu) : indique la **position** du passage pour piétons, à hauteur des bandes. Dans les deux cas, on cède le passage aux piétons engagés ou qui s'apprêtent à traverser.",
+    "after": "**A** (triangle) : **annonce** un passage pour piétons à 150 m (50 m en ville). **B** (carré bleu) : indique la **position** du passage pour piétons, à hauteur des bandes. Dans les deux cas, on cède le passage aux piétons engagés ou qui s'apprêtent à traverser."
+  },
+  {
+    "id": "conf-a14-ak14",
+    "field": "difference",
+    "before": "Même symbole (point d'exclamation), mais **A14** (fond blanc) est un panneau permanent d'« autres dangers », précisé par un panonceau, tandis que **AK14** (fond jaune) est temporaire (chantier, incident) et prime sur la signalisation permanente.",
+    "after": "Même symbole (point d'exclamation), mais **A** (fond blanc) est un panneau permanent d'« autres dangers », précisé par un panonceau, tandis que **B** (fond jaune) est temporaire (chantier, incident) et prime sur la signalisation permanente."
+  },
+  {
+    "id": "conf-a15a1-a15b",
+    "field": "difference",
+    "before": "**A15a1** (vache) : passage d'animaux **domestiques** (troupeaux, sorties de fermes) — ralentir, ne pas klaxonner. **A15b** (cerf bondissant) : passage d'animaux **sauvages** (gibier, surtout à l'aube et au crépuscule, en forêt) — ralentir, scruter les bas-côtés.",
+    "after": "**A** (vache) : passage d'animaux **domestiques** (troupeaux, sorties de fermes) — ralentir, ne pas klaxonner. **B** (cerf bondissant) : passage d'animaux **sauvages** (gibier, surtout à l'aube et au crépuscule, en forêt) — ralentir, scruter les bas-côtés."
+  },
+  {
+    "id": "conf-a21-c20c",
+    "field": "difference",
+    "before": "A21 annonce des cyclistes ; C20c indique une traversée de tramway. Lire le véhicule représenté : ces deux signaux ne désignent pas le même usager.",
+    "after": "A annonce des cyclistes ; B indique une traversée de tramway. Lire le véhicule représenté : ces deux signaux ne désignent pas le même usager."
+  },
+  {
+    "id": "conf-a2a-a2b",
+    "field": "difference",
+    "before": "**A2a** (deux bosses) : cassis ou dos-d'âne — déformation de la chaussée, ralentir. **A2b** (une bosse) : ralentisseur de type dos-d'âne aménagé (agglomération, souvent 30 km/h), signalé aussi par le C27 et des triangles au sol.",
+    "after": "**A** (deux bosses) : cassis ou dos-d'âne — déformation de la chaussée, ralentir. **B** (une bosse) : ralentisseur de type dos-d'âne aménagé (agglomération, souvent 30 km/h), signalé aussi par le C27 et des triangles au sol."
+  },
+  {
+    "id": "conf-a7-a8",
+    "field": "difference",
+    "before": "**A7** (barrière) : passage à niveau **avec** barrières ou demi-barrières. **A8** (locomotive) : passage à niveau **sans** barrière : on ne compte que sur ses yeux et ses oreilles (croix de Saint-André, éventuellement feux rouges clignotants). Dans les deux cas, ne jamais s'engager sans pouvoir dégager.",
+    "after": "**A** (barrière) : passage à niveau **avec** barrières ou demi-barrières. **B** (locomotive) : passage à niveau **sans** barrière : on ne compte que sur ses yeux et ses oreilles (croix de Saint-André, éventuellement feux rouges clignotants). Dans les deux cas, ne jamais s'engager sans pouvoir dégager."
+  },
+  {
+    "id": "conf-ab1-ab2",
+    "field": "difference",
+    "before": "**AB1** (croix) : intersection où la **priorité à droite** s'applique — je cède aux véhicules venant de ma droite. **AB2** (barre verticale épaisse) : intersection où **je suis prioritaire**, ponctuellement (les autres ont un STOP ou un cédez-le-passage). Les deux sont des triangles de danger implantés avant l'intersection.",
+    "after": "**A** (croix) : intersection où la **priorité à droite** s'applique — je cède aux véhicules venant de ma droite. **B** (barre verticale épaisse) : intersection où **je suis prioritaire**, ponctuellement (les autres ont un STOP ou un cédez-le-passage). Les deux sont des triangles de danger implantés avant l'intersection."
+  },
+  {
+    "id": "conf-ab3a-ab4",
+    "field": "difference",
+    "before": "**AB3a** (triangle pointe en bas) : cédez le passage — je laisse passer les véhicules de la route abordée, sans obligation de m'arrêter si la voie est libre ; ligne au sol discontinue. **AB4** (octogone) : STOP — arrêt complet obligatoire à la ligne continue, puis je cède le passage.",
+    "after": "**A : céder le passage**, sans arrêt obligatoire si la voie est libre ; ligne discontinue. **B : arrêt complet obligatoire**, même si la voie est libre, puis céder le passage ; ligne continue."
+  },
+  {
+    "id": "conf-ab3b-ab5",
+    "field": "difference",
+    "before": "Deux signaux **avancés** implantés à ~150 m : **AB3b** (triangle inversé + panonceau de distance) annonce un cédez-le-passage ; **AB5** (triangle inversé + panonceau « STOP 150 m ») annonce un STOP. Ni l'un ni l'autre n'impose de s'arrêter à son niveau.",
+    "after": "Deux signaux **avancés** implantés à ~150 m : **A** (triangle inversé + panonceau de distance) annonce un cédez-le-passage ; **B** (triangle inversé + panonceau « STOP 150 m ») annonce un STOP. Ni l'un ni l'autre n'impose de s'arrêter à son niveau."
+  },
+  {
+    "id": "conf-ab6-ab7",
+    "field": "difference",
+    "before": "**AB6** (losange jaune) : je suis sur une route à caractère prioritaire, à toutes les intersections jusqu'au **AB7** (losange barré de noir), qui annonce la fin de ce régime : ensuite, priorité à droite sauf signalisation.",
+    "after": "**A** (losange jaune) : je suis sur une route à caractère prioritaire, à toutes les intersections jusqu'au **B** (losange barré de noir), qui annonce la fin de ce régime : ensuite, priorité à droite sauf signalisation."
+  },
+  {
+    "id": "conf-b0-b1",
+    "field": "difference",
+    "before": "**B0** (rond blanc bordé de rouge, vide) : circulation interdite à tout véhicule **dans les deux sens** (rue fermée). **B1** (rond rouge à barre blanche) : sens interdit — la rue est à sens unique, on ne peut pas l'emprunter dans ce sens (mais les véhicules peuvent en sortir vers moi).",
+    "after": "**A : circulation interdite aux véhicules dans les deux sens. B : entrée interdite par ce côté.** En B, des véhicules peuvent venir vers moi."
+  },
+  {
+    "id": "conf-b1-c12",
+    "field": "difference",
+    "before": "B1 interdit d’entrer par ce sens. C12 indique le sens unique des véhicules concernés ; rester attentif aux catégories autorisées à contresens, notamment cycles et EDPM. Le sens unique ne garantit pas l’absence de tout usager en face.",
+    "after": "A interdit d’entrer par ce sens. B indique le sens unique des véhicules concernés ; rester attentif aux catégories autorisées à contresens, notamment cycles et EDPM. Le sens unique ne garantit pas l’absence de tout usager en face."
+  },
+  {
+    "id": "conf-b11-b12",
+    "field": "difference",
+    "before": "**B11** (flèches horizontales ◄ 2,5 m ►) : limitation de **largeur**. **B12** (flèches verticales ▲ 3,5 m ▼) : limitation de **hauteur** (pont, tunnel). B10a (camion et flèches) : limitation de longueur. Ces gabarits concernent surtout les poids lourds, camping-cars et remorques.",
+    "after": "**A : largeur maximale. B : hauteur maximale.** Les flèches horizontales et verticales indiquent la dimension à vérifier sur mon véhicule, chargement compris."
+  },
+  {
+    "id": "conf-b13-b13a",
+    "field": "difference",
+    "before": "B13 limite le PTAC (ou le PTRA de l’ensemble), pas sa masse réelle du moment. B13a limite la masse pesant sur un essieu.",
+    "after": "A limite le PTAC (ou le PTRA de l’ensemble), pas sa masse réelle du moment. B limite la masse pesant sur un essieu."
+  },
+  {
+    "id": "conf-b14-b25",
+    "field": "difference",
+    "before": "**B14** (rond blanc bordé de rouge) : vitesse **maximale** — interdiction de rouler plus vite. **B25** (rond bleu) : vitesse **minimale** obligatoire — interdiction de rouler moins vite (par conditions normales), par exemple sur la voie de gauche d'une autoroute urbaine. Fin : B33 pour l'un, B43 pour l'autre.",
+    "after": "**A : vitesse maximale**, je ne roule pas plus vite. **B : vitesse minimale obligatoire**, dans des conditions normales de circulation."
+  },
+  {
+    "id": "conf-b14-c4a",
+    "field": "difference",
+    "before": "**B14** (rond rouge) : vitesse **maximale** autorisée, obligatoire, jusqu'à la prochaine intersection ou au panneau de fin. **C4a** (carré bleu) : vitesse **conseillée**, indicative (virage, descente) — la dépasser n'est pas une infraction en soi, mais peut être dangereux.",
+    "after": "**A** (rond rouge) : vitesse **maximale** autorisée, obligatoire, jusqu'à la prochaine intersection ou au panneau de fin. **B** (carré bleu) : vitesse **conseillée**, indicative (virage, descente) — la dépasser n'est pas une infraction en soi, mais peut être dangereux."
+  },
+  {
+    "id": "conf-b15-c18",
+    "field": "difference",
+    "before": "**B15** (rond bordé de rouge : flèche rouge à droite pointant vers le haut = moi, flèche noire à gauche = l'autre) : je dois **céder le passage** aux véhicules venant en sens inverse dans le rétrécissement. **C18** (carré bleu : flèche blanche à droite vers le haut = moi, flèche rouge à gauche vers le bas = l'autre) : j'ai la **priorité** sur les véhicules d'en face. Dans les deux cas, la flèche rouge désigne celui qui cède. Les deux panneaux sont toujours posés en vis-à-vis.",
+    "after": "**A : je cède le passage** aux véhicules en face. **B : je suis prioritaire** dans le passage étroit. La flèche vers le haut représente mon sens ; la flèche rouge désigne celui qui cède."
+  },
+  {
+    "id": "conf-b21-1-b21c1",
+    "field": "difference",
+    "before": "**B21-1** (flèche horizontale vers la droite) : obligation de tourner à droite **avant le panneau** (dès maintenant). **B21c1** (flèche coudée) : direction obligatoire à droite **à la prochaine intersection**. Regarder la forme de la flèche : droite = tout de suite, coudée = plus loin.",
+    "after": "**A : tourner à droite avant le panneau. B : tourner à droite à la prochaine intersection.** La flèche coudée annonce le changement de direction à venir."
+  },
+  {
+    "id": "conf-b21a1-b21c1",
+    "field": "difference",
+    "before": "**B21a1** (flèche oblique vers le bas à droite) : **contournement** obligatoire par la droite d'un obstacle ou d'un îlot (je passe à droite du panneau). **B21c1** (flèche coudée) : direction obligatoire à **droite à la prochaine intersection**.",
+    "after": "**A** (flèche oblique vers le bas à droite) : **contournement** obligatoire par la droite d'un obstacle ou d'un îlot (je passe à droite du panneau). **B** (flèche coudée) : direction obligatoire à **droite à la prochaine intersection**."
+  },
+  {
+    "id": "conf-b22a-c113",
+    "field": "difference",
+    "before": "Pour un cycliste concerné : B22a impose la piste ou bande ; C113 la conseille sans l’imposer. Dans les deux cas, une voiture ordinaire n’y circule pas. Les EDPM et cyclomobiles légers ont leurs règles d’accès : « interdit à tout moteur » serait faux.",
+    "after": "Pour un cycliste concerné : A impose la piste ou bande ; B la conseille sans l’imposer. Dans les deux cas, une voiture ordinaire n’y circule pas. Les EDPM et cyclomobiles légers ont leurs règles d’accès : « interdit à tout moteur » serait faux."
+  },
+  {
+    "id": "conf-b26-b58",
+    "field": "difference",
+    "before": "Pour une voiture : B26 exige un équipement en service, chaînes montées ou pneus hiver conformes admis en équivalence. Le complément « Chaînes à neige obligatoires » exclut cette équivalence. B58 impose, pendant la période indiquée, quatre pneus hiver conformes ou des dispositifs amovibles détenus à bord.",
+    "after": "Pour une voiture : A exige un équipement en service, chaînes montées ou pneus hiver conformes admis en équivalence. Le complément « Chaînes à neige obligatoires » exclut cette équivalence. B impose, pendant la période indiquée, quatre pneus hiver conformes ou des dispositifs amovibles détenus à bord."
+  },
+  {
+    "id": "conf-b3-b3a",
+    "field": "difference",
+    "before": "B3 interdit de dépasser les véhicules à moteur autres que les deux-roues sans side-car. B3a impose cette interdiction aux véhicules de transport de marchandises dont le PTAC ou PTRA dépasse 3,5 t. La visibilité, le marquage et l’écart latéral restent à vérifier.",
+    "after": "A interdit de dépasser les véhicules à moteur autres que les deux-roues sans side-car. B impose cette interdiction aux véhicules de transport de marchandises dont le PTAC ou PTRA dépasse 3,5 t. La visibilité, le marquage et l’écart latéral restent à vérifier."
+  },
+  {
+    "id": "conf-b30-b56",
+    "field": "difference",
+    "before": "Deux panneaux de zone (rectangle blanc avec le mot ZONE) : **B30** contient un B14 « 30 » — zone 30 (30 km/h, double sens cyclable par défaut). **B56** contient un rond rouge vide (B0) avec un panonceau de restriction — zone à faibles émissions (ZFE) : accès selon la vignette Crit'Air. Valables jusqu'au panneau de fin de zone.",
+    "after": "Deux panneaux de zone (rectangle blanc avec le mot ZONE) : **A** contient un B14 « 30 » — zone 30 (30 km/h, double sens cyclable par défaut). **B** contient un rond rouge vide (B0) avec un panonceau de restriction — zone à faibles émissions (ZFE) : accès selon la vignette Crit'Air. Valables jusqu'au panneau de fin de zone."
+  },
+  {
+    "id": "conf-b31-b33",
+    "field": "difference",
+    "before": "B31 met fin aux interdictions signalées pour les véhicules en mouvement ; il ne lève pas une interdiction de stationner. B33 termine seulement la limitation de vitesse indiquée. Les règles générales restent applicables.",
+    "after": "A met fin aux interdictions signalées pour les véhicules en mouvement ; il ne lève pas une interdiction de stationner. B termine seulement la limitation de vitesse indiquée. Les règles générales restent applicables."
+  },
+  {
+    "id": "conf-b52-b54",
+    "field": "difference",
+    "before": "**B52** (piéton, cycliste, voiture, « 20 ») : zone de rencontre — tous circulent, piétons prioritaires, 20 km/h. **B54** (adulte et enfant) : aire piétonne — réservée aux piétons, véhicules autorisés seulement pour la desserte, à l'allure du pas. Ne pas confondre avec B22b (rond bleu) : chemin obligatoire pour piétons.",
+    "after": "**A** (piéton, cycliste, voiture, « 20 ») : zone de rencontre — tous circulent, piétons prioritaires, 20 km/h. **B** (adulte et enfant) : aire piétonne — réservée aux piétons, véhicules autorisés seulement pour la desserte, à l'allure du pas. Ne pas confondre avec B22b (rond bleu) : chemin obligatoire pour piétons."
+  },
+  {
+    "id": "conf-b6a1-b6d",
+    "field": "difference",
+    "before": "**B6a1** (une barre rouge) : **stationnement** interdit — un arrêt bref (déposer un passager) reste possible. **B6d** (croix rouge) : **arrêt et stationnement** interdits — même une minute, même moteur tournant. Valable du panneau jusqu'à la prochaine intersection, du côté où il est implanté.",
+    "after": "**A** (une barre rouge) : **stationnement** interdit — un arrêt bref (déposer un passager) reste possible. **B** (croix rouge) : **arrêt et stationnement** interdits — même une minute, même moteur tournant. Valable du panneau jusqu'à la prochaine intersection, du côté où il est implanté."
+  },
+  {
+    "id": "conf-b6a2-b6a3",
+    "field": "difference",
+    "before": "Stationnement unilatéral alterné semi-mensuel : **B6a2** (« 1-15 ») interdit le stationnement de ce côté du **1er au 15** ; **B6a3** (« 16-31 ») l'interdit du **16 à la fin du mois**. Le changement de côté se fait le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.",
+    "after": "Stationnement unilatéral alterné semi-mensuel : **A** (« 1-15 ») interdit le stationnement de ce côté du **1er au 15** ; **B** (« 16-31 ») l'interdit du **16 à la fin du mois**. Le changement de côté se fait le 15 et le dernier jour du mois, entre 20 h 30 et 21 h."
+  },
+  {
+    "id": "conf-b7a-b7b",
+    "field": "difference",
+    "before": "**B7a** (voiture + moto) : accès interdit aux véhicules à moteur **sauf cyclomoteurs**. **B7b** (voiture + moto + cyclomoteur) : accès interdit à **tous** les véhicules à moteur, cyclomoteurs compris.",
+    "after": "**A** (voiture + moto) : accès interdit aux véhicules à moteur **sauf cyclomoteurs**. **B** (voiture + moto + cyclomoteur) : accès interdit à **tous** les véhicules à moteur, cyclomoteurs compris."
+  },
+  {
+    "id": "conf-b9g-b9h",
+    "field": "difference",
+    "before": "**B9g** (petit deux-roues à pédales/plateau) : accès interdit aux **cyclomoteurs** (≤ 50 cm³, 45 km/h). **B9h** (moto) : accès interdit aux **motocyclettes** et motocyclettes légères (125). Les silhouettes se ressemblent : regarder la taille de la machine.",
+    "after": "**A** (petit deux-roues à pédales/plateau) : accès interdit aux **cyclomoteurs** (≤ 50 cm³, 45 km/h). **B** (moto) : accès interdit aux **motocyclettes** et motocyclettes légères (125). Les silhouettes se ressemblent : regarder la taille de la machine."
+  },
+  {
+    "id": "conf-c107-c207",
+    "field": "difference",
+    "before": "C107 marque une route à accès réglementé ; C207 une autoroute. C107 ne fixe pas à lui seul 110 km/h : la vitesse dépend de la chaussée, des panneaux et des conditions. Sur autoroute, 130 est seulement le plafond général par temps sec.",
+    "after": "A marque une route à accès réglementé ; B une autoroute. A ne fixe pas à lui seul 110 km/h : la vitesse dépend de la chaussée, des panneaux et des conditions. Sur autoroute, 130 est seulement le plafond général par temps sec."
+  },
+  {
+    "id": "conf-c13a-c13c",
+    "field": "difference",
+    "before": "**C13a** : impasse — la voie n'a aucune issue. **C13c** (avec un piéton) : impasse **pour les véhicules**, mais avec une issue pour les piétons (et pour les cyclistes sur C13d). Le C13b annonce une impasse dans une rue latérale.",
+    "after": "**A : impasse. B : impasse avec issue pour les piétons.** Le symbole piéton indique qui peut continuer au-delà."
+  },
+  {
+    "id": "conf-c1b-c1c",
+    "field": "difference",
+    "before": "**C1b** (P + disque) : parking gratuit à durée limitée, contrôle par disque (zone bleue). **C1c** (P + horodateur/parcmètre) : parking payant. C1a (P seul) : parking libre.",
+    "after": "**A : stationnement gratuit à durée limitée**, avec disque. **B : stationnement payant.** Je lis les conditions affichées sur place."
+  },
+  {
+    "id": "conf-c8-c26a",
+    "field": "difference",
+    "before": "**C8** (route avec encoche) : emplacement d'arrêt d'urgence (aire aménagée pour s'arrêter en cas de panne, sur route sans bande d'arrêt d'urgence ou en tunnel). **C26a** (voie qui monte, damier) : voie de détresse — voie en gravier pour arrêter un véhicule dont les freins ont lâché en descente.",
+    "after": "**A** (route avec encoche) : emplacement d'arrêt d'urgence (aire aménagée pour s'arrêter en cas de panne, sur route sans bande d'arrêt d'urgence ou en tunnel). **B** (voie qui monte, damier) : voie de détresse — voie en gravier pour arrêter un véhicule dont les freins ont lâché en descente."
+  },
+  {
+    "id": "conf-e42-e43",
+    "field": "difference",
+    "before": "Cartouches numérotés au-dessus des panneaux de direction : **E42** (fond **rouge**) : route nationale ou autoroute (N 102, A 10). **E43** (fond **jaune**) : route départementale (D 49). E44 (fond blanc) : voie communale ; E41 (fond vert) : route européenne.",
+    "after": "**A, rouge : route nationale ou autoroute. B, jaune : route départementale.** Le cartouche identifie la route, sans donner de priorité."
+  },
+  {
+    "id": "conf-eb10-e31",
+    "field": "difference",
+    "before": "**EB10** (nom en lettres droites noires sur fond blanc, **bordure rouge**) : entrée d'agglomération — 50 km/h, règles de l'agglomération jusqu'au panneau de sortie barré (EB20). **E31** (nom en lettres **italiques blanches sur fond noir**) : simple localisation d'un lieu-dit ou hameau — aucun changement de règle.",
+    "after": "**A** (nom en lettres droites noires sur fond blanc, **bordure rouge**) : entrée d'agglomération — 50 km/h, règles de l'agglomération jusqu'au panneau de sortie barré (EB20). **B** (nom en lettres **italiques blanches sur fond noir**) : simple localisation d'un lieu-dit ou hameau — aucun changement de règle."
+  },
+  {
+    "id": "conf-j1-j3",
+    "field": "difference",
+    "before": "Même piquet blanc, seule la bande change : **J1** bande **blanche** = balise de virage (elle suit le tracé du virage, à l'extérieur). **J3** bande **rouge** = balise d'intersection (posée de part et d'autre d'un carrefour hors agglomération, quel que soit le régime de priorité). Le délinéateur J6 porte une bande noire oblique et un catadioptre.",
+    "after": "**A : balise de virage**, bande blanche. **B : balise d’intersection**, bande rouge. La balise d’intersection ne donne aucune priorité."
+  },
+  {
+    "id": "conf-j4-j5",
+    "field": "difference",
+    "before": "**J4** (chevron blanc sur fond bleu, pointant vers l'intérieur du virage) : balise de virage — indique le sens du virage. **J5** (flèche blanche oblique sur fond bleu) : balise de tête d'îlot — contournement obligatoire par la droite de l'îlot ou du refuge.",
+    "after": "**A** (chevron blanc sur fond bleu, pointant vers l'intérieur du virage) : balise de virage — indique le sens du virage. **B** (flèche blanche oblique sur fond bleu) : balise de tête d'îlot — contournement obligatoire par la droite de l'îlot ou du refuge."
+  },
+  {
+    "id": "conf-k10a-k10b",
+    "field": "difference",
+    "before": "Piquet mobile K10 tenu par un signaleur de chantier : **face verte** = passage autorisé (K10a) ; **face rouge** = arrêt (K10b). Ses ordres priment sur la signalisation fixe.",
+    "after": "Piquet mobile K10 tenu par un signaleur de chantier : **face verte** = passage autorisé (A) ; **face rouge** = arrêt (B). Ses ordres priment sur la signalisation fixe."
+  },
+  {
+    "id": "conf-m1-m2",
+    "field": "difference",
+    "before": "**M1** (« 50 m ») : la prescription ou le danger commence **à** cette distance. **M2** (flèches verticales encadrant la distance) : la prescription s'applique **sur** cette longueur (étendue), par exemple « limitation à 50 sur 2 km ».",
+    "after": "**A** (« 50 m ») : la prescription ou le danger commence **à** cette distance. **B** (flèches verticales encadrant la distance) : la prescription s'applique **sur** cette longueur (étendue), par exemple « limitation à 50 sur 2 km »."
+  },
+  {
+    "id": "conf-m8a-m8b",
+    "field": "difference",
+    "before": "Panonceaux de stationnement/arrêt : **M8a** (flèche vers le haut) : **début** de la section où s'applique l'interdiction. **M8b** (flèche vers le bas) : **fin** de la section. M8c (double flèche) : rappel, l'interdiction continue de part et d'autre du panneau.",
+    "after": "Pour l’arrêt ou le stationnement : **A marque le début** de l’interdiction ; **B en marque la fin**. Lire le sens de la flèche."
+  },
+  {
+    "id": "conf-r14-r16",
+    "field": "difference",
+    "before": "Flèche verte R14 : passage autorisé dans sa direction, en respectant les priorités restantes et sans bloquer. Flèche jaune clignotante R16 : passage conditionnel dans sa direction malgré le rouge, en cédant aux autres usagers.",
+    "after": "Flèche verte A : passage autorisé dans sa direction, en respectant les priorités restantes et sans bloquer. Flèche jaune clignotante B : passage conditionnel dans sa direction malgré le rouge, en cédant aux autres usagers."
+  },
+  {
+    "id": "d20",
+    "field": "complement",
+    "before": "Lire destination et flèche. Les noms de lieux de l’exemple ne sont pas à mémoriser.",
+    "after": null
+  },
+  {
+    "id": "da40",
+    "field": "complement",
+    "before": "Schéma pédagogique simplifié, sans reproduction certifiée d’un modèle Da. Les destinations illustrent la lecture ; leurs noms ne sont pas à mémoriser.",
+    "after": "Schéma simplifié : les destinations servent à lire l’affectation des voies."
+  },
+  {
+    "id": "e-budget-trajet-tableau",
+    "field": "explication",
+    "before": "Écart de 1 L/100 km, appliqué à 200 km. Ce sont des données fictives d’exercice, pas une promesse d’économie pour un véhicule réel.",
+    "after": "(7 − 6) × 200 / 100 = 2 L économisés."
+  },
+  {
+    "id": "e-budget-trajet-tableau",
+    "field": "question",
+    "before": "Sur ces deux trajets de même longueur, lequel économise du carburant, et combien au total ?",
+    "after": "Quel trajet consomme le moins de carburant ? Combien de litres économise-t-il sur les 200 km ?"
+  },
+  {
+    "id": "e-budget-trajet-tableau",
+    "field": "source",
+    "before": "Calcul sur données fictives explicites",
+    "after": "Exercice de calcul : consommation × distance / 100."
+  },
+  {
+    "id": "etg-format-questions",
+    "field": "explication",
+    "before": "Cela permet cinq erreurs au maximum. Toutes les propositions attendues doivent être correctement traitées ; 37–38 sur des séries nouvelles est une marge personnelle de préparation, pas une exigence officielle.",
+    "after": "Cinq erreurs au maximum. Pour obtenir le point d’une question, toutes les propositions attendues doivent être correctement traitées."
+  },
+  {
+    "id": "etg-forme-double-oui-non",
+    "field": "explication",
+    "before": "Juger séparément les deux affirmations puis vérifier les lettres cochées. Les 20 exemples publics illustrent cette forme ; ils ne mesurent pas sa fréquence dans toute la banque.",
+    "after": "Juger séparément les deux affirmations, puis vérifier les lettres cochées."
+  },
+  {
+    "id": "l-agglomeration-panneau",
+    "field": "explication",
+    "before": "Le panneau fixe la limite de l’agglomération, même si les premières maisons sont éloignées. D’autres règles changent aussi en ville ; une rue à sens unique peut autoriser le stationnement des deux côtés.",
+    "after": "Le panneau fixe la limite de l’agglomération, même si les premières maisons sont éloignées."
+  },
+  {
+    "id": "m-visuel-pression-charge",
+    "field": "explication",
+    "before": "Lire la ligne de charge puis chaque essieu. Les valeurs fictives de cet exercice ne s’appliquent pas à une autre voiture.",
+    "after": "Lire la ligne « Pleine charge », puis la colonne de chaque essieu. Pour un autre véhicule, consulter son étiquette."
+  },
+  {
+    "id": "m4c",
+    "field": "complement",
+    "before": "Une variante « M4c interfile » (2021, expérimentation de la circulation inter-files) existe sur Commons.",
+    "after": null
+  },
+  {
+    "id": "m9v3",
+    "field": "complement",
+    "before": "Panonceaux récents (postérieurs à 2015), rares à l'examen.",
+    "after": null
+  },
+  {
+    "id": "s-chargement-chiffres",
+    "field": "explication",
+    "before": "Pas de limite générale de hauteur pour une voiture (ponts et parkings signalés). Arrimage défaillant : 68 € et immobilisation ; dépassement arrière excessif : 135 €.",
+    "after": "Mesurer le véhicule chargé. Vérifier aussi le gabarit des ponts et parkings, et arrimer le chargement."
+  },
+  {
+    "id": "scn-dep-dissuasion-tracteur",
+    "field": "explication",
+    "before": "Une voiture roulant à 80 km/h, elle, ne se dépasse pas sur une ligne de dissuasion (le dépassement serait trop long pour la visibilité). Elle annonce souvent une ligne continue.",
+    "after": "La ligne de dissuasion est discontinue. Elle déconseille le dépassement des véhicules à allure normale, souvent trop long pour la visibilité disponible. Elle peut annoncer une ligne continue."
+  },
+  {
+    "id": "scn-dep-dissuasion-tracteur",
+    "field": "reponse",
+    "before": "Oui : la ligne de dissuasion est franchissable ; elle déconseille seulement le dépassement des véhicules roulant à une allure normale. Un véhicule très lent peut être dépassé si la visibilité le permet.",
+    "after": "Oui : je peux dépasser cet engin très lent si je peux terminer la manœuvre sans danger."
+  },
+  {
+    "id": "scn-dep-ligne-discontinue-libre",
+    "field": "reponse",
+    "before": "Oui, si j'ai la visibilité et l'espace pour revenir à droite : rétroviseurs, clignotant gauche, angle mort, dépassement franc, rabattement quand je vois le camion dans mon rétroviseur intérieur.",
+    "after": "Oui : le marquage l’autorise, sous réserve d’une visibilité et d’un espace suffisants pour dépasser puis me rabattre sans gêner."
+  },
+  {
+    "id": "scn-prioritaire-droite-arrive",
+    "field": "reponse",
+    "before": "Non : sur une route prioritaire, les véhicules des routes transversales cèdent, même ceux venant de ma droite (ils ont un STOP ou un cédez-le-passage).",
+    "after": "Non. La voiture rouge doit me céder le passage."
+  },
+  {
+    "id": "scn-sortie-parking",
+    "field": "reponse",
+    "before": "Non : un véhicule qui sort d'un parking, d'un chemin privé, d'une aire ou d'un chemin de terre cède le passage à tous — je passe avant.",
+    "after": "Non. En sortant du parking, la voiture rouge doit me céder le passage."
+  }
+]

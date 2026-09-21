@@ -166,8 +166,8 @@
   question: Cette étiquette correspond à ma voiture et à ses pneus. À pleine charge, pneus froids, quelles
     pressions appliquer à l’avant et à l’arrière ?
   reponse: 2,4 bar à l’avant et 2,6 bar à l’arrière.
-  explication: Lire la ligne de charge puis chaque essieu. Les valeurs fictives de cet exercice ne s’appliquent
-    pas à une autre voiture.
+  explication: Lire la ligne « Pleine charge », puis la colonne de chaque essieu. Pour un autre véhicule, consulter
+    son étiquette.
   source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
   tags:
   - revision::v4
@@ -233,8 +233,8 @@
   question: Un exercice donne 15 m de réaction et 25 m de freinage sur sol sec. Sur sol mouillé, il suppose
     le freinage doublé et la réaction inchangée. Quelle distance d’arrêt ?
   reponse: '65 m : 15 + (2 × 25).'
-  explication: 'On ne double pas automatiquement la distance d’arrêt entière : la réaction et le freinage sont
-    deux composantes. L’hypothèse chiffrée appartient à cet exercice.'
+  explication: 'Seul le freinage double dans cet énoncé. La réaction reste à 15 m : on ne double pas la distance
+    d’arrêt entière.'
   source: 'Modèle physique : arrêt = réaction + freinage ; calcul sur données explicites'
   tags:
   - revision::v4

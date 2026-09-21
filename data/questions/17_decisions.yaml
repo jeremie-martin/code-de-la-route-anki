@@ -47,8 +47,8 @@
     puis appuyer dessus ?
   reponse: 'Non : je ne retire pas l’objet et n’appuie pas dessus. Je fais alerter immédiatement et suis les
     consignes pour arrêter l’hémorragie.'
-  explication: 'Un objet planté peut empêcher la compression directe : un garrot sur le membre peut être nécessaire.
-    Ce cas demande un geste adapté, pas la répétition aveugle de « comprimer toute plaie ».'
+  explication: Un objet planté peut empêcher la compression directe ; un garrot sur le membre peut être nécessaire,
+    selon la formation ou le guidage des secours.
   source: https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
   tags:
   - revision::v5
@@ -80,11 +80,10 @@
 - id: e-budget-trajet-tableau
   theme: E
   sous_theme: applications
-  question: Sur ces deux trajets de même longueur, lequel économise du carburant, et combien au total ?
+  question: Quel trajet consomme le moins de carburant ? Combien de litres économise-t-il sur les 200 km ?
   reponse: 'Le trajet B : 2 litres de moins sur 200 km.'
-  explication: Écart de 1 L/100 km, appliqué à 200 km. Ce sont des données fictives d’exercice, pas une promesse
-    d’économie pour un véhicule réel.
-  source: Calcul sur données fictives explicites
+  explication: (7 − 6) × 200 / 100 = 2 L économisés.
+  source: 'Exercice de calcul : consommation × distance / 100.'
   tags:
   - revision::v5
   - competence::application

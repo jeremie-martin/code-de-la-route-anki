@@ -39,10 +39,10 @@
       y: 45
       colour: gris
       kind: truck
-  question: Le camion roule lentement ; bonne visibilité, personne en face ni derrière. Le marquage permet-il de
-    le dépasser ?
-  reponse: 'Oui, si j''ai la visibilité et l''espace pour revenir à droite : rétroviseurs, clignotant gauche, angle
-    mort, dépassement franc, rabattement quand je vois le camion dans mon rétroviseur intérieur.'
+  question: Le camion roule lentement ; bonne visibilité, personne en face ni derrière. Le marquage permet-il
+    de le dépasser ?
+  reponse: 'Oui : le marquage l’autorise, sous réserve d’une visibilité et d’un espace suffisants pour dépasser
+    puis me rabattre sans gêner.'
   explication: 'Conditions de l''article R414-4 : visibilité suffisante, personne ne me dépasse, écart de vitesse
     suffisant, retour sans gêner. Un camion se dépasse sur une longue distance : ne pas s''engager sans marge.'
   theme: L
@@ -166,14 +166,23 @@
     lanes: 2
     axis: dissuasion
     vehicles:
-      - {lane: 1, y: 15, colour: bleu, me: true}
-      - {lane: 1, y: 45, colour: vert, kind: truck, label: "25"}
-  question: "Ligne de dissuasion (traits longs, espaces courts). Un engin agricole roule à 25 km/h devant moi, bonne visibilité, personne en face. Puis-je le dépasser ?"
-  reponse: "Oui : la ligne de dissuasion est franchissable ; elle déconseille seulement le dépassement des véhicules roulant à une allure normale. Un véhicule très lent peut être dépassé si la visibilité le permet."
-  explication: "Une voiture roulant à 80 km/h, elle, ne se dépasse pas sur une ligne de dissuasion (le dépassement serait trop long pour la visibilité). Elle annonce souvent une ligne continue."
+    - lane: 1
+      y: 15
+      colour: bleu
+      me: true
+    - lane: 1
+      y: 45
+      colour: vert
+      kind: truck
+      label: '25'
+  question: Ligne de dissuasion (traits longs, espaces courts). Un engin agricole roule à 25 km/h devant moi,
+    bonne visibilité, personne en face. Puis-je le dépasser ?
+  reponse: 'Oui : je peux dépasser cet engin très lent si je peux terminer la manœuvre sans danger.'
+  explication: La ligne de dissuasion est discontinue. Elle déconseille le dépassement des véhicules à allure
+    normale, souvent trop long pour la visibilité disponible. Elle peut annoncer une ligne continue.
   theme: L
   sous_theme: depassement
-  source: "IISR 7e partie, art. 113 ; Code de la route, art. R412-18"
+  source: IISR 7e partie, art. 113 ; Code de la route, art. R412-18
 - id: scn-dep-cycliste-ligne-continue
   kind: road
   spec:

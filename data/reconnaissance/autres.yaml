@@ -21,8 +21,7 @@
       pose: bras_tendus
   nom: 'Agent : bras tendu(s) horizontalement, vu de face ou de dos'
   signification: 'Bras tendu(s) à l''horizontale : les usagers qui voient l''agent de face ou de dos s''arrêtent ; ceux qui le voient de profil passent.'
-  conduite: Si je vois sa poitrine ou son dos, je m'arrête ; de profil, je passe.
-  complement: 'Mémo : face ou dos = STOP, profil = passage. Vaut aussi bras baissés.'
+  complement: L’ordre reste valable quand l’agent baisse les bras.
   theme: L
   sous_theme: agents
   importance: essentiel

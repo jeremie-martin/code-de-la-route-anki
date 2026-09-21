@@ -8,7 +8,7 @@ Imports réels en collections temporaires avec la bibliothèque Anki 26.9.2.
 
 SHA-256 des paquets vérifiés :
 
-- `Code-de-la-route-2026.apkg` : `902531e968d2de95f2b7340bf01f97b9e3622ff5228b5a47a74d21fab70abea1`
-- `Code-de-la-route-2026-Socle.apkg` : `aa0ada7dbc30fce9512a0bf8a07cde7503f30616b1103e46582478745075d797`
+- `Code-de-la-route-2026.apkg` : `60d7c0488eabe64327924932ce284d0667eb7f818d56eaebd6abaf34909d9e00`
+- `Code-de-la-route-2026-Socle.apkg` : `a12e9c405a59277910046c122a66756646e18c50fc42d2a83b6ed272510e491a`
 
 Ces contrôles ne valident pas la justesse juridique de chaque phrase ni la réussite à l’examen. Le passage et les réimports ci-dessus concernent la même édition ; aucune migration depuis une édition antérieure n’est attestée sans le test explicite `--previous`. Voir aussi [le rendu navigateur](RENDU.md).

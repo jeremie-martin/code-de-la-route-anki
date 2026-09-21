@@ -37,7 +37,8 @@ def main(argv=None):
     ap.add_argument("--ids", default="")
     ap.add_argument("--n", type=int, default=12)
     ap.add_argument("--night", action="store_true")
-    ap.add_argument("--width", type=int, default=520)
+    ap.add_argument("--width", type=int, default=430)
+    ap.add_argument("--height", type=int, default=932)
     args = ap.parse_args(argv)
     if not CHROME:
         sys.exit("google-chrome / chromium introuvable dans le PATH (nécessaire pour les captures)")
@@ -71,7 +72,7 @@ def main(argv=None):
             hp.write_text(page, encoding="utf-8")
             png = PREVIEW / f"{ident}_c{card.ord}_{side}.png"
             subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--no-sandbox",
-                            f"--window-size={args.width},900", f"--screenshot={png}", str(hp)],
+                            f"--window-size={args.width},{args.height}", f"--screenshot={png}", str(hp)],
                            check=True, capture_output=True)
             shots.append(png)
     col.close()
@@ -79,7 +80,7 @@ def main(argv=None):
     from PIL import Image
     ims = [Image.open(p).convert("RGB") for p in shots]
     cols = 6
-    cw, ch = args.width, 900
+    cw, ch = args.width, args.height
     rows = (len(ims) + cols - 1) // cols
     sheet = Image.new("RGB", (cols * (cw + 8), rows * (ch + 8)), (200, 200, 200))
     for i, im in enumerate(ims):

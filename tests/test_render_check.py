@@ -45,3 +45,60 @@ class RenderCheckerTests(unittest.TestCase):
                 self.assertEqual(clipped, 0, 'Libellé rogné dans une cellule du tableau')
             finally:
                 browser.close()
+
+    def test_reference_disclosure_keeps_feedback_visible_and_works_with_keyboard(self):
+        import tempfile
+        from anki.collection import Collection
+        from anki.consts import MODEL_CLOZE
+        from playwright.sync_api import sync_playwright
+        from build.models import CSS, notetypes
+        from build.render_check import MEASURE, page_html
+
+        with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
+            col = Collection(tmp + '/interface.anki2')
+            browser = pw.chromium.launch(executable_path=CHROME, args=['--no-sandbox'])
+            try:
+                page = browser.new_page(viewport={'width': 430, 'height': 740})
+                for model in notetypes():
+                    m = col.models.new(model['name'])
+                    if model.get('cloze'):
+                        m['type'] = MODEL_CLOZE
+                    for field in model['fields']:
+                        col.models.add_field(m, col.models.new_field(field))
+                    t = col.models.new_template('Test')
+                    t.update(model['templates'][0])
+                    col.models.add_template(m, t)
+                    col.models.add(m)
+                    n = col.new_note(m)
+                    for field in model['fields']:
+                        n[field] = field + ' témoin'
+                    for field in ('Image', 'ImageA', 'ImageB'):
+                        if field in n:
+                            n[field] = '<span>Image témoin</span>'
+                    if 'Texte' in n:
+                        n['Texte'] = 'Seuil : {{c1::réponse}}.'
+                    if 'Verdict' in n:
+                        n['Verdict'] = 'faux'
+                    col.add_note(n, 1)
+                    card = n.cards()[0]
+                    page.set_content(page_html(card.question(), CSS))
+                    self.assertNotIn('Source témoin', page.evaluate(MEASURE)['text'])
+                    page.set_content(page_html(card.answer(), CSS, night=True))
+                    text = page.evaluate(MEASURE)['text']
+                    self.assertNotIn('Source témoin', text)
+                    self.assertNotIn('Repere témoin', text)
+                    for field in ('Reponse', 'Explication', 'Pourquoi', 'Signification',
+                                  'ConduiteATenir', 'Complement', 'Piege', 'Difference'):
+                        if field in n:
+                            self.assertIn(field + ' témoin', text, (model['name'], field))
+                    summary = page.locator('summary')
+                    self.assertGreaterEqual(summary.bounding_box()['height'], 44)
+                    summary.focus()
+                    page.keyboard.press('Enter')
+                    self.assertIn('Source témoin', page.evaluate(MEASURE)['text'])
+                    self.assertIn('Repere témoin', page.evaluate(MEASURE)['text'])
+                    page.keyboard.press('Space')
+                    self.assertNotIn('Source témoin', page.evaluate(MEASURE)['text'])
+            finally:
+                browser.close()
+                col.close()

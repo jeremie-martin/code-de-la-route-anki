@@ -81,7 +81,6 @@
   nom: Panneau de position (D21)
   signification: 'Panneau de direction en position : la pointe indique la voie à prendre au carrefour.'
   conduite: Tourner au niveau du panneau dans la direction de la pointe.
-  complement: Lire destination et flèche. Les noms de lieux de l’exemple ne sont pas à mémoriser.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -130,7 +129,7 @@
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  complement: Schéma pédagogique simplifié, sans reproduction certifiée d’un modèle Da. Les destinations illustrent la lecture ; leurs noms ne sont pas à mémoriser.
+  complement: 'Schéma simplifié : les destinations servent à lire l’affectation des voies.'
   tags:
   - revision::v3_1
 - id: d50

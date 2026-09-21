@@ -20,7 +20,6 @@
   nom: Lieu aménagé pour le stationnement gratuit à durée limitée avec contrôle par disque
   signification: Parking gratuit mais à durée limitée, contrôlé par disque de stationnement (zone bleue).
   conduite: Apposer le disque (heure d'arrivée) et respecter la durée indiquée.
-  complement: La version ancienne (C1b-ancien) montrait un disque marqué 1 h 30.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -311,14 +310,13 @@
   image:
     commons: France road sign C25a.svg
   nom: Limitations générales de vitesse en France
-  signification: Rappel, aux frontières, des vitesses maximales autorisées sur le territoire français par type de route (agglomération 50, route 80, route à chaussées séparées 110, autoroute 130).
-  conduite: 'Mémoriser les limitations générales ; par temps de pluie : 110 sur autoroute, 100 sur 2×2 voies, 80 sur route.'
-  complement: Aux points d'entrée en France. Le dessin ci-contre est simplifié (il manque la ligne 110 km/h).
+  signification: Rappel des limitations générales de vitesse en France, selon le type de route.
+  conduite: Tenir compte aussi des limitations locales, de la météo et du permis probatoire.
+  complement: 'Illustration simplifiée : la ligne des routes à chaussées séparées (110 km/h) n’est pas représentée.'
   theme: L
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: Depuis 2018, 80 km/h sur route bidirectionnelle sans séparateur (90 possible par décision départementale).
 - id: c25b
   type: panneau
   code: C25b
@@ -458,7 +456,6 @@
   nom: Présignalisation du début d'une section à vitesse régulée
   signification: Annonce une section d'autoroute où la vitesse maximale est modulée dynamiquement par panneaux à messages variables.
   conduite: Respecter les vitesses affichées sur les panneaux lumineux, qui remplacent la limite générale.
-  complement: 'Fin : C51b.'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -568,7 +565,6 @@
   nom: 'Péage en flux libre : délai et modalités de paiement pour les non-abonnés'
   signification: 'Pour les usagers sans télépéage : délai et solutions de paiement du péage en flux libre.'
   conduite: Payer dans le délai indiqué (généralement 72 h).
-  complement: Sur les sections à péage en flux libre.
   theme: L
   sous_theme: panneaux
   importance: rare

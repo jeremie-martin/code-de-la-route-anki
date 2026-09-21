@@ -32,15 +32,30 @@
   kind: intersection
   spec:
     approaches:
-      S: {vehicle: {colour: bleu, me: true}, goes: straight, sign: prioritaire}
-      E: {vehicle: {colour: rouge}, goes: straight, sign: cedez}
-  check: {pair: [S, E, avant]}
-  question: "Je suis sur une route prioritaire (losange jaune). Une voiture arrive de ma droite. Dois-je lui céder le passage ?"
-  reponse: "Non : sur une route prioritaire, les véhicules des routes transversales cèdent, même ceux venant de ma droite (ils ont un STOP ou un cédez-le-passage)."
-  explication: "Le losange jaune (AB6) vaut jusqu'au panneau de fin (AB7). Je garde un œil sur la rouge : « prioritaire » n'exonère pas de prudence."
+      S:
+        vehicle:
+          colour: bleu
+          me: true
+        goes: straight
+        sign: prioritaire
+      E:
+        vehicle:
+          colour: rouge
+        goes: straight
+        sign: cedez
+  check:
+    pair:
+    - S
+    - E
+    - avant
+  question: Je suis sur une route prioritaire (losange jaune). Une voiture arrive de ma droite. Dois-je lui
+    céder le passage ?
+  reponse: Non. La voiture rouge doit me céder le passage.
+  explication: 'Le losange jaune (AB6) vaut jusqu''au panneau de fin (AB7). Je garde un œil sur la rouge :
+    « prioritaire » n''exonère pas de prudence.'
   theme: L
   sous_theme: priorites
-  source: "Code de la route, art. R415-7 ; IISR (AB6)"
+  source: Code de la route, art. R415-7 ; IISR (AB6)
 - id: scn-fin-prioritaire
   kind: intersection
   spec:

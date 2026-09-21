@@ -1,8 +1,8 @@
 - id: conf-a13a-a13b
   a: a13a
   b: a13b
-  difference: '**A13a** : deux enfants qui courent, sans bandes → endroit fréquenté par les enfants (école, aire
-    de jeux) : je ralentis fortement, un enfant peut surgir. **A13b** : un adulte sur des bandes → annonce d''un
+  difference: '**A** : deux enfants qui courent, sans bandes → endroit fréquenté par les enfants (école, aire
+    de jeux) : je ralentis fortement, un enfant peut surgir. **B** : un adulte sur des bandes → annonce d''un
     passage pour piétons (150 m hors agglomération, 50 m en ville).'
   theme: L
   sous_theme: panneaux
@@ -10,43 +10,43 @@
 - id: conf-a15a1-a15b
   a: a15a1
   b: a15b
-  difference: '**A15a1** (vache) : passage d''animaux **domestiques** (troupeaux, sorties de fermes) — ralentir,
-    ne pas klaxonner. **A15b** (cerf bondissant) : passage d''animaux **sauvages** (gibier, surtout à l''aube et
-    au crépuscule, en forêt) — ralentir, scruter les bas-côtés.'
+  difference: '**A** (vache) : passage d''animaux **domestiques** (troupeaux, sorties de fermes) — ralentir,
+    ne pas klaxonner. **B** (cerf bondissant) : passage d''animaux **sauvages** (gibier, surtout à l''aube
+    et au crépuscule, en forêt) — ralentir, scruter les bas-côtés.'
   theme: L
   sous_theme: panneaux
   source: IISR 1re partie
 - id: conf-a2a-a2b
   a: a2a
   b: a2b
-  difference: '**A2a** (deux bosses) : cassis ou dos-d''âne — déformation de la chaussée, ralentir. **A2b** (une
-    bosse) : ralentisseur de type dos-d''âne aménagé (agglomération, souvent 30 km/h), signalé aussi par le C27
-    et des triangles au sol.'
+  difference: '**A** (deux bosses) : cassis ou dos-d''âne — déformation de la chaussée, ralentir. **B** (une
+    bosse) : ralentisseur de type dos-d''âne aménagé (agglomération, souvent 30 km/h), signalé aussi par le
+    C27 et des triangles au sol.'
   theme: L
   sous_theme: panneaux
   source: IISR 1re partie
 - id: conf-a7-a8
   a: a7
   b: a8
-  difference: '**A7** (barrière) : passage à niveau **avec** barrières ou demi-barrières. **A8** (locomotive) :
-    passage à niveau **sans** barrière : on ne compte que sur ses yeux et ses oreilles (croix de Saint-André, éventuellement
-    feux rouges clignotants). Dans les deux cas, ne jamais s''engager sans pouvoir dégager.'
+  difference: '**A** (barrière) : passage à niveau **avec** barrières ou demi-barrières. **B** (locomotive)
+    : passage à niveau **sans** barrière : on ne compte que sur ses yeux et ses oreilles (croix de Saint-André,
+    éventuellement feux rouges clignotants). Dans les deux cas, ne jamais s''engager sans pouvoir dégager.'
   theme: L
   sous_theme: panneaux
   source: IISR 1re partie ; Code de la route, art. R422-3
 - id: conf-a14-ak14
   a: a14
   b: ak14
-  difference: Même symbole (point d'exclamation), mais **A14** (fond blanc) est un panneau permanent d'« autres
-    dangers », précisé par un panonceau, tandis que **AK14** (fond jaune) est temporaire (chantier, incident) et
-    prime sur la signalisation permanente.
+  difference: Même symbole (point d'exclamation), mais **A** (fond blanc) est un panneau permanent d'« autres
+    dangers », précisé par un panonceau, tandis que **B** (fond jaune) est temporaire (chantier, incident)
+    et prime sur la signalisation permanente.
   theme: L
   sous_theme: panneaux
   source: IISR 1re et 8e parties
 - id: conf-a21-c20c
   a: a21
   b: c20c
-  difference: 'A21 annonce des cyclistes ; C20c indique une traversée de tramway. Lire le véhicule représenté :
+  difference: 'A annonce des cyclistes ; B indique une traversée de tramway. Lire le véhicule représenté :
     ces deux signaux ne désignent pas le même usager.'
   theme: L
   sous_theme: panneaux
@@ -56,26 +56,26 @@
 - id: conf-ab1-ab2
   a: ab1
   b: ab2
-  difference: '**AB1** (croix) : intersection où la **priorité à droite** s''applique — je cède aux véhicules venant
-    de ma droite. **AB2** (barre verticale épaisse) : intersection où **je suis prioritaire**, ponctuellement (les
-    autres ont un STOP ou un cédez-le-passage). Les deux sont des triangles de danger implantés avant l''intersection.'
+  difference: '**A** (croix) : intersection où la **priorité à droite** s''applique — je cède aux véhicules
+    venant de ma droite. **B** (barre verticale épaisse) : intersection où **je suis prioritaire**, ponctuellement
+    (les autres ont un STOP ou un cédez-le-passage). Les deux sont des triangles de danger implantés avant
+    l''intersection.'
   theme: L
   sous_theme: panneaux
   source: IISR 1re partie ; Code de la route, art. R415-5 et R415-7
 - id: conf-ab3a-ab4
   a: ab3a
   b: ab4
-  difference: '**AB3a** (triangle pointe en bas) : cédez le passage — je laisse passer les véhicules de la route
-    abordée, sans obligation de m''arrêter si la voie est libre ; ligne au sol discontinue. **AB4** (octogone) :
-    STOP — arrêt complet obligatoire à la ligne continue, puis je cède le passage.'
+  difference: '**A : céder le passage**, sans arrêt obligatoire si la voie est libre ; ligne discontinue. **B
+    : arrêt complet obligatoire**, même si la voie est libre, puis céder le passage ; ligne continue.'
   theme: L
   sous_theme: panneaux
   source: Code de la route, art. R415-6 et R415-7
 - id: conf-ab3b-ab5
   a: ab3b
   b: ab5
-  difference: 'Deux signaux **avancés** implantés à ~150 m : **AB3b** (triangle inversé + panonceau de distance)
-    annonce un cédez-le-passage ; **AB5** (triangle inversé + panonceau « STOP 150 m ») annonce un STOP. Ni l''un
+  difference: 'Deux signaux **avancés** implantés à ~150 m : **A** (triangle inversé + panonceau de distance)
+    annonce un cédez-le-passage ; **B** (triangle inversé + panonceau « STOP 150 m ») annonce un STOP. Ni l''un
     ni l''autre n''impose de s''arrêter à son niveau.'
   theme: L
   sous_theme: panneaux
@@ -83,8 +83,8 @@
 - id: conf-ab6-ab7
   a: ab6
   b: ab7
-  difference: '**AB6** (losange jaune) : je suis sur une route à caractère prioritaire, à toutes les intersections
-    jusqu''au **AB7** (losange barré de noir), qui annonce la fin de ce régime : ensuite, priorité à droite sauf
+  difference: '**A** (losange jaune) : je suis sur une route à caractère prioritaire, à toutes les intersections
+    jusqu''au **B** (losange barré de noir), qui annonce la fin de ce régime : ensuite, priorité à droite sauf
     signalisation.'
   theme: L
   sous_theme: panneaux
@@ -92,18 +92,17 @@
 - id: conf-b0-b1
   a: b0
   b: b1
-  difference: '**B0** (rond blanc bordé de rouge, vide) : circulation interdite à tout véhicule **dans les deux
-    sens** (rue fermée). **B1** (rond rouge à barre blanche) : sens interdit — la rue est à sens unique, on ne peut
-    pas l''emprunter dans ce sens (mais les véhicules peuvent en sortir vers moi).'
+  difference: '**A : circulation interdite aux véhicules dans les deux sens. B : entrée interdite par ce côté.**
+    En B, des véhicules peuvent venir vers moi.'
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie
 - id: conf-b1-c12
   a: b1
   b: c12
-  difference: B1 interdit d’entrer par ce sens. C12 indique le sens unique des véhicules concernés ; rester attentif
-    aux catégories autorisées à contresens, notamment cycles et EDPM. Le sens unique ne garantit pas l’absence de
-    tout usager en face.
+  difference: A interdit d’entrer par ce sens. B indique le sens unique des véhicules concernés ; rester attentif
+    aux catégories autorisées à contresens, notamment cycles et EDPM. Le sens unique ne garantit pas l’absence
+    de tout usager en face.
   theme: L
   sous_theme: panneaux
   source: IISR 4e et 5e parties
@@ -112,7 +111,7 @@
 - id: conf-b3-b3a
   a: b3
   b: b3a
-  difference: B3 interdit de dépasser les véhicules à moteur autres que les deux-roues sans side-car. B3a impose
+  difference: A interdit de dépasser les véhicules à moteur autres que les deux-roues sans side-car. B impose
     cette interdiction aux véhicules de transport de marchandises dont le PTAC ou PTRA dépasse 3,5 t. La visibilité,
     le marquage et l’écart latéral restent à vérifier.
   theme: L
@@ -123,8 +122,8 @@
 - id: conf-b6a1-b6d
   a: b6a1
   b: b6d
-  difference: '**B6a1** (une barre rouge) : **stationnement** interdit — un arrêt bref (déposer un passager) reste
-    possible. **B6d** (croix rouge) : **arrêt et stationnement** interdits — même une minute, même moteur tournant.
+  difference: '**A** (une barre rouge) : **stationnement** interdit — un arrêt bref (déposer un passager) reste
+    possible. **B** (croix rouge) : **arrêt et stationnement** interdits — même une minute, même moteur tournant.
     Valable du panneau jusqu''à la prochaine intersection, du côté où il est implanté.'
   theme: L
   sous_theme: panneaux
@@ -132,8 +131,8 @@
 - id: conf-b6a2-b6a3
   a: b6a2
   b: b6a3
-  difference: 'Stationnement unilatéral alterné semi-mensuel : **B6a2** (« 1-15 ») interdit le stationnement de
-    ce côté du **1er au 15** ; **B6a3** (« 16-31 ») l''interdit du **16 à la fin du mois**. Le changement de côté
+  difference: 'Stationnement unilatéral alterné semi-mensuel : **A** (« 1-15 ») interdit le stationnement de
+    ce côté du **1er au 15** ; **B** (« 16-31 ») l''interdit du **16 à la fin du mois**. Le changement de côté
     se fait le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.'
   theme: L
   sous_theme: panneaux
@@ -141,16 +140,16 @@
 - id: conf-b7a-b7b
   a: b7a
   b: b7b
-  difference: '**B7a** (voiture + moto) : accès interdit aux véhicules à moteur **sauf cyclomoteurs**. **B7b** (voiture
-    + moto + cyclomoteur) : accès interdit à **tous** les véhicules à moteur, cyclomoteurs compris.'
+  difference: '**A** (voiture + moto) : accès interdit aux véhicules à moteur **sauf cyclomoteurs**. **B**
+    (voiture + moto + cyclomoteur) : accès interdit à **tous** les véhicules à moteur, cyclomoteurs compris.'
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie
 - id: conf-b9g-b9h
   a: b9g
   b: b9h
-  difference: '**B9g** (petit deux-roues à pédales/plateau) : accès interdit aux **cyclomoteurs** (≤ 50 cm³, 45
-    km/h). **B9h** (moto) : accès interdit aux **motocyclettes** et motocyclettes légères (125). Les silhouettes
+  difference: '**A** (petit deux-roues à pédales/plateau) : accès interdit aux **cyclomoteurs** (≤ 50 cm³,
+    45 km/h). **B** (moto) : accès interdit aux **motocyclettes** et motocyclettes légères (125). Les silhouettes
     se ressemblent : regarder la taille de la machine.'
   theme: L
   sous_theme: panneaux
@@ -159,16 +158,15 @@
 - id: conf-b11-b12
   a: b11
   b: b12
-  difference: '**B11** (flèches horizontales ◄ 2,5 m ►) : limitation de **largeur**. **B12** (flèches verticales
-    ▲ 3,5 m ▼) : limitation de **hauteur** (pont, tunnel). B10a (camion et flèches) : limitation de longueur. Ces
-    gabarits concernent surtout les poids lourds, camping-cars et remorques.'
+  difference: '**A : largeur maximale. B : hauteur maximale.** Les flèches horizontales et verticales indiquent
+    la dimension à vérifier sur mon véhicule, chargement compris.'
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie
 - id: conf-b13-b13a
   a: b13
   b: b13a
-  difference: B13 limite le PTAC (ou le PTRA de l’ensemble), pas sa masse réelle du moment. B13a limite la masse
+  difference: A limite le PTAC (ou le PTRA de l’ensemble), pas sa masse réelle du moment. B limite la masse
     pesant sur un essieu.
   theme: L
   sous_theme: panneaux
@@ -178,8 +176,8 @@
 - id: conf-b14-c4a
   a: b14
   b: c4a
-  difference: '**B14** (rond rouge) : vitesse **maximale** autorisée, obligatoire, jusqu''à la prochaine intersection
-    ou au panneau de fin. **C4a** (carré bleu) : vitesse **conseillée**, indicative (virage, descente) — la dépasser
+  difference: '**A** (rond rouge) : vitesse **maximale** autorisée, obligatoire, jusqu''à la prochaine intersection
+    ou au panneau de fin. **B** (carré bleu) : vitesse **conseillée**, indicative (virage, descente) — la dépasser
     n''est pas une infraction en soi, mais peut être dangereux.'
   theme: L
   sous_theme: panneaux
@@ -187,45 +185,40 @@
 - id: conf-b14-b25
   a: b14
   b: b25
-  difference: '**B14** (rond blanc bordé de rouge) : vitesse **maximale** — interdiction de rouler plus vite. **B25**
-    (rond bleu) : vitesse **minimale** obligatoire — interdiction de rouler moins vite (par conditions normales),
-    par exemple sur la voie de gauche d''une autoroute urbaine. Fin : B33 pour l''un, B43 pour l''autre.'
+  difference: '**A : vitesse maximale**, je ne roule pas plus vite. **B : vitesse minimale obligatoire**, dans
+    des conditions normales de circulation.'
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie
 - id: conf-b15-c18
   a: b15
   b: c18
-  difference: '**B15** (rond bordé de rouge : flèche rouge à droite pointant vers le haut = moi, flèche noire à
-    gauche = l''autre) : je dois **céder le passage** aux véhicules venant en sens inverse dans le rétrécissement.
-    **C18** (carré bleu : flèche blanche à droite vers le haut = moi, flèche rouge à gauche vers le bas = l''autre)
-    : j''ai la **priorité** sur les véhicules d''en face. Dans les deux cas, la flèche rouge désigne celui qui cède.
-    Les deux panneaux sont toujours posés en vis-à-vis.'
+  difference: '**A : je cède le passage** aux véhicules en face. **B : je suis prioritaire** dans le passage
+    étroit. La flèche vers le haut représente mon sens ; la flèche rouge désigne celui qui cède.'
   theme: L
   sous_theme: panneaux
   source: IISR 4e et 5e parties
 - id: conf-b21-1-b21c1
   a: b21-1
   b: b21c1
-  difference: '**B21-1** (flèche horizontale vers la droite) : obligation de tourner à droite **avant le panneau**
-    (dès maintenant). **B21c1** (flèche coudée) : direction obligatoire à droite **à la prochaine intersection**.
-    Regarder la forme de la flèche : droite = tout de suite, coudée = plus loin.'
+  difference: '**A : tourner à droite avant le panneau. B : tourner à droite à la prochaine intersection.**
+    La flèche coudée annonce le changement de direction à venir.'
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie
 - id: conf-b21a1-b21c1
   a: b21a1
   b: b21c1
-  difference: '**B21a1** (flèche oblique vers le bas à droite) : **contournement** obligatoire par la droite d''un
-    obstacle ou d''un îlot (je passe à droite du panneau). **B21c1** (flèche coudée) : direction obligatoire à **droite
-    à la prochaine intersection**.'
+  difference: '**A** (flèche oblique vers le bas à droite) : **contournement** obligatoire par la droite d''un
+    obstacle ou d''un îlot (je passe à droite du panneau). **B** (flèche coudée) : direction obligatoire à
+    **droite à la prochaine intersection**.'
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie
 - id: conf-b22a-c113
   a: b22a
   b: c113
-  difference: 'Pour un cycliste concerné : B22a impose la piste ou bande ; C113 la conseille sans l’imposer. Dans
+  difference: 'Pour un cycliste concerné : A impose la piste ou bande ; B la conseille sans l’imposer. Dans
     les deux cas, une voiture ordinaire n’y circule pas. Les EDPM et cyclomobiles légers ont leurs règles d’accès
     : « interdit à tout moteur » serait faux.'
   theme: L
@@ -236,9 +229,9 @@
 - id: conf-b26-b58
   a: b26
   b: b58
-  difference: 'Pour une voiture : B26 exige un équipement en service, chaînes montées ou pneus hiver conformes admis
-    en équivalence. Le complément « Chaînes à neige obligatoires » exclut cette équivalence. B58 impose, pendant
-    la période indiquée, quatre pneus hiver conformes ou des dispositifs amovibles détenus à bord.'
+  difference: 'Pour une voiture : A exige un équipement en service, chaînes montées ou pneus hiver conformes
+    admis en équivalence. Le complément « Chaînes à neige obligatoires » exclut cette équivalence. B impose,
+    pendant la période indiquée, quatre pneus hiver conformes ou des dispositifs amovibles détenus à bord.'
   theme: L
   sous_theme: panneaux
   source: Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12
@@ -247,8 +240,8 @@
 - id: conf-b31-b33
   a: b31
   b: b33
-  difference: B31 met fin aux interdictions signalées pour les véhicules en mouvement ; il ne lève pas une interdiction
-    de stationner. B33 termine seulement la limitation de vitesse indiquée. Les règles générales restent applicables.
+  difference: A met fin aux interdictions signalées pour les véhicules en mouvement ; il ne lève pas une interdiction
+    de stationner. B termine seulement la limitation de vitesse indiquée. Les règles générales restent applicables.
   theme: L
   sous_theme: panneaux
   source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
@@ -257,53 +250,53 @@
 - id: conf-b52-b54
   a: b52
   b: b54
-  difference: '**B52** (piéton, cycliste, voiture, « 20 ») : zone de rencontre — tous circulent, piétons prioritaires,
-    20 km/h. **B54** (adulte et enfant) : aire piétonne — réservée aux piétons, véhicules autorisés seulement pour
-    la desserte, à l''allure du pas. Ne pas confondre avec B22b (rond bleu) : chemin obligatoire pour piétons.'
+  difference: '**A** (piéton, cycliste, voiture, « 20 ») : zone de rencontre — tous circulent, piétons prioritaires,
+    20 km/h. **B** (adulte et enfant) : aire piétonne — réservée aux piétons, véhicules autorisés seulement
+    pour la desserte, à l''allure du pas. Ne pas confondre avec B22b (rond bleu) : chemin obligatoire pour
+    piétons.'
   theme: L
   sous_theme: panneaux
   source: Code de la route, art. R110-2
 - id: conf-b30-b56
   a: b30
   b: b56
-  difference: 'Deux panneaux de zone (rectangle blanc avec le mot ZONE) : **B30** contient un B14 « 30 » — zone
-    30 (30 km/h, double sens cyclable par défaut). **B56** contient un rond rouge vide (B0) avec un panonceau de
-    restriction — zone à faibles émissions (ZFE) : accès selon la vignette Crit''Air. Valables jusqu''au panneau
-    de fin de zone.'
+  difference: 'Deux panneaux de zone (rectangle blanc avec le mot ZONE) : **A** contient un B14 « 30 » — zone
+    30 (30 km/h, double sens cyclable par défaut). **B** contient un rond rouge vide (B0) avec un panonceau
+    de restriction — zone à faibles émissions (ZFE) : accès selon la vignette Crit''Air. Valables jusqu''au
+    panneau de fin de zone.'
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie
 - id: conf-c1b-c1c
   a: c1b
   b: c1c
-  difference: '**C1b** (P + disque) : parking gratuit à durée limitée, contrôle par disque (zone bleue). **C1c**
-    (P + horodateur/parcmètre) : parking payant. C1a (P seul) : parking libre.'
+  difference: '**A : stationnement gratuit à durée limitée**, avec disque. **B : stationnement payant.** Je
+    lis les conditions affichées sur place.'
   theme: L
   sous_theme: panneaux
   source: IISR 5e partie
 - id: conf-c13a-c13c
   a: c13a
   b: c13c
-  difference: '**C13a** : impasse — la voie n''a aucune issue. **C13c** (avec un piéton) : impasse **pour les véhicules**,
-    mais avec une issue pour les piétons (et pour les cyclistes sur C13d). Le C13b annonce une impasse dans une
-    rue latérale.'
+  difference: '**A : impasse. B : impasse avec issue pour les piétons.** Le symbole piéton indique qui peut
+    continuer au-delà.'
   theme: L
   sous_theme: panneaux
   source: IISR 5e partie
 - id: conf-a13b-c20a
   a: a13b
   b: c20a
-  difference: '**A13b** (triangle) : **annonce** un passage pour piétons à 150 m (50 m en ville). **C20a** (carré
-    bleu) : indique la **position** du passage pour piétons, à hauteur des bandes. Dans les deux cas, on cède le
-    passage aux piétons engagés ou qui s''apprêtent à traverser.'
+  difference: '**A** (triangle) : **annonce** un passage pour piétons à 150 m (50 m en ville). **B** (carré
+    bleu) : indique la **position** du passage pour piétons, à hauteur des bandes. Dans les deux cas, on cède
+    le passage aux piétons engagés ou qui s''apprêtent à traverser.'
   theme: L
   sous_theme: panneaux
   source: IISR 1re et 5e parties
 - id: conf-c107-c207
   a: c107
   b: c207
-  difference: 'C107 marque une route à accès réglementé ; C207 une autoroute. C107 ne fixe pas à lui seul 110 km/h
-    : la vitesse dépend de la chaussée, des panneaux et des conditions. Sur autoroute, 130 est seulement le plafond
+  difference: 'A marque une route à accès réglementé ; B une autoroute. A ne fixe pas à lui seul 110 km/h :
+    la vitesse dépend de la chaussée, des panneaux et des conditions. Sur autoroute, 130 est seulement le plafond
     général par temps sec.'
   theme: L
   sous_theme: panneaux
@@ -313,17 +306,17 @@
 - id: conf-c8-c26a
   a: c8
   b: c26a
-  difference: '**C8** (route avec encoche) : emplacement d''arrêt d''urgence (aire aménagée pour s''arrêter en cas
-    de panne, sur route sans bande d''arrêt d''urgence ou en tunnel). **C26a** (voie qui monte, damier) : voie de
-    détresse — voie en gravier pour arrêter un véhicule dont les freins ont lâché en descente.'
+  difference: '**A** (route avec encoche) : emplacement d''arrêt d''urgence (aire aménagée pour s''arrêter
+    en cas de panne, sur route sans bande d''arrêt d''urgence ou en tunnel). **B** (voie qui monte, damier)
+    : voie de détresse — voie en gravier pour arrêter un véhicule dont les freins ont lâché en descente.'
   theme: L
   sous_theme: panneaux
   source: IISR 5e partie
 - id: conf-eb10-e31
   a: eb10
   b: e31
-  difference: '**EB10** (nom en lettres droites noires sur fond blanc, **bordure rouge**) : entrée d''agglomération
-    — 50 km/h, règles de l''agglomération jusqu''au panneau de sortie barré (EB20). **E31** (nom en lettres **italiques
+  difference: '**A** (nom en lettres droites noires sur fond blanc, **bordure rouge**) : entrée d''agglomération
+    — 50 km/h, règles de l''agglomération jusqu''au panneau de sortie barré (EB20). **B** (nom en lettres **italiques
     blanches sur fond noir**) : simple localisation d''un lieu-dit ou hameau — aucun changement de règle.'
   theme: L
   sous_theme: panneaux
@@ -331,46 +324,42 @@
 - id: conf-e42-e43
   a: e42
   b: e43
-  difference: 'Cartouches numérotés au-dessus des panneaux de direction : **E42** (fond **rouge**) : route nationale
-    ou autoroute (N 102, A 10). **E43** (fond **jaune**) : route départementale (D 49). E44 (fond blanc) : voie
-    communale ; E41 (fond vert) : route européenne.'
+  difference: '**A, rouge : route nationale ou autoroute. B, jaune : route départementale.** Le cartouche identifie
+    la route, sans donner de priorité.'
   theme: L
   sous_theme: panneaux
   source: IISR 5e partie
 - id: conf-m1-m2
   a: m1
   b: m2
-  difference: '**M1** (« 50 m ») : la prescription ou le danger commence **à** cette distance. **M2** (flèches verticales
-    encadrant la distance) : la prescription s''applique **sur** cette longueur (étendue), par exemple « limitation
-    à 50 sur 2 km ».'
+  difference: '**A** (« 50 m ») : la prescription ou le danger commence **à** cette distance. **B** (flèches
+    verticales encadrant la distance) : la prescription s''applique **sur** cette longueur (étendue), par exemple
+    « limitation à 50 sur 2 km ».'
   theme: L
   sous_theme: panonceaux
   source: IISR 1re partie, art. 9
 - id: conf-m8a-m8b
   a: m8a
   b: m8b
-  difference: 'Panonceaux de stationnement/arrêt : **M8a** (flèche vers le haut) : **début** de la section où s''applique
-    l''interdiction. **M8b** (flèche vers le bas) : **fin** de la section. M8c (double flèche) : rappel, l''interdiction
-    continue de part et d''autre du panneau.'
+  difference: 'Pour l’arrêt ou le stationnement : **A marque le début** de l’interdiction ; **B en marque la
+    fin**. Lire le sens de la flèche.'
   theme: L
   sous_theme: panonceaux
   source: IISR 1re partie, art. 9
 - id: conf-j1-j3
   a: j1
   b: j3
-  difference: 'Même piquet blanc, seule la bande change : **J1** bande **blanche** = balise de virage (elle suit
-    le tracé du virage, à l''extérieur). **J3** bande **rouge** = balise d''intersection (posée de part et d''autre
-    d''un carrefour hors agglomération, quel que soit le régime de priorité). Le délinéateur J6 porte une bande
-    noire oblique et un catadioptre.'
+  difference: '**A : balise de virage**, bande blanche. **B : balise d’intersection**, bande rouge. La balise
+    d’intersection ne donne aucune priorité.'
   theme: L
   sous_theme: balises
   source: IISR 1re partie (balises J1, J3, J6)
 - id: conf-j4-j5
   a: j4
   b: j5
-  difference: '**J4** (chevron blanc sur fond bleu, pointant vers l''intérieur du virage) : balise de virage — indique
-    le sens du virage. **J5** (flèche blanche oblique sur fond bleu) : balise de tête d''îlot — contournement obligatoire
-    par la droite de l''îlot ou du refuge.'
+  difference: '**A** (chevron blanc sur fond bleu, pointant vers l''intérieur du virage) : balise de virage
+    — indique le sens du virage. **B** (flèche blanche oblique sur fond bleu) : balise de tête d''îlot — contournement
+    obligatoire par la droite de l''îlot ou du refuge.'
   theme: L
   sous_theme: balises
   source: IISR 1re partie
@@ -427,9 +416,9 @@
 - id: conf-r14-r16
   a: r14
   b: r16
-  difference: 'Flèche verte R14 : passage autorisé dans sa direction, en respectant les priorités restantes et sans
-    bloquer. Flèche jaune clignotante R16 : passage conditionnel dans sa direction malgré le rouge, en cédant aux
-    autres usagers.'
+  difference: 'Flèche verte A : passage autorisé dans sa direction, en respectant les priorités restantes et
+    sans bloquer. Flèche jaune clignotante B : passage conditionnel dans sa direction malgré le rouge, en cédant
+    aux autres usagers.'
   theme: L
   sous_theme: feux
   source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
@@ -438,8 +427,8 @@
 - id: conf-k10a-k10b
   a: k10a
   b: k10b
-  difference: 'Piquet mobile K10 tenu par un signaleur de chantier : **face verte** = passage autorisé (K10a) ;
-    **face rouge** = arrêt (K10b). Ses ordres priment sur la signalisation fixe.'
+  difference: 'Piquet mobile K10 tenu par un signaleur de chantier : **face verte** = passage autorisé (A)
+    ; **face rouge** = arrêt (B). Ses ordres priment sur la signalisation fixe.'
   theme: L
   sous_theme: panneaux
   source: IISR 8e partie

@@ -355,8 +355,6 @@
     commence ici ?
   reponse: 50 km/h par défaut, avec une allure plus basse si la situation l’exige.
   explication: Le panneau fixe la limite de l’agglomération, même si les premières maisons sont éloignées.
-    D’autres règles changent aussi en ville ; une rue à sens unique peut autoriser le stationnement des deux
-    côtés.
   theme: L
   sous_theme: signalisation
   source: Code de la route, art. R110-2, R413-3, R416-1 ; IISR

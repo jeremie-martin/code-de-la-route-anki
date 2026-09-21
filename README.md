@@ -1,6 +1,6 @@
 # Code de la route 2026 — comprendre, rappeler, décider
 
-Deck Anki en français pour l’ETG du permis B, **édition v5, révisée le 21 septembre 2026**.
+Deck Anki en français pour l’ETG du permis B, **édition v5.1, révisée le 21 septembre 2026**.
 
 **[Télécharger le deck complet](out/Code-de-la-route-2026.apkg)**. Les [statistiques générées](out/STATS.md)
 donnent les effectifs exacts. Le deck relie les règles, la reconnaissance des signaux et leur application
@@ -8,7 +8,8 @@ donnent les effectifs exacts. Le deck relie les règles, la reconnaissance des s
 
 La v5 corrige des généralisations encore présentes en v4, resserre les rappels de sanctions,
 ajoute des cas où une condition change la réponse et améliore le rendu sur téléphone.
-Voir le [bilan critique](docs/10-bilan-v5.md), les [imports vérifiés](out/VERIFICATION.md)
+La v5.1 allège l’interface de révision et précise sa hiérarchie, sans changer le parcours.
+Voir la [révision de l’interface](docs/11-interface-quotidienne.md), le [bilan critique](docs/10-bilan-v5.md), les [imports vérifiés](out/VERIFICATION.md)
 et les [contrôles de rendu](out/RENDU.md).
 
 ## Commencer
@@ -16,7 +17,7 @@ et les [contrôles de rendu](out/RENDU.md).
 1. Importer le **paquet complet** dans une collection neuve avec une version récente d’Anki.
    Cocher « Importer les préréglages de deck ». Étudier le parent **Code de la route 2026**.
 2. Lire les [repères expliqués](out/COMPRENDRE.md) avant les premières cartes d’un thème.
-   Ils restent accessibles hors ligne au verso, dans « Comprendre ce thème ».
+   Ils restent accessibles hors ligne au verso, dans « Sources et repères », avec la référence de la carte.
 3. Faire les révisions dues avant les nouvelles cartes. Le préréglage propose **20 nouvelles/jour**,
    avec ordre progressif et enfouissement des cartes sœurs. Diminuer ce débit si les révisions
    s’accumulent ; ce n’est ni une prescription ni une promesse de durée quotidienne.
@@ -28,11 +29,11 @@ Le [programme](out/PROGRAMME.md) donne l’ordre et les durées minimales d’in
 pour être prêt. Les cartes du socle passent avant la consolidation ; les deux étapes couvrent des
 compétences utiles. Le [paquet Socle](out/Code-de-la-route-2026-Socle.apkg) est une extraction de la
 première étape, pas un autre programme ni une préparation suffisante à lui seul. Inutile d’importer
-les deux en même temps. Le passage **Socle v5 → complet v5** est vérifié.
+les deux en même temps. Le passage **Socle v5.1 → complet v5.1** est vérifié.
 
 Cette édition est conçue pour votre **premier import**. Des notes et des numéros de cloze ont changé :
 ne pas l’importer sur une v4 étudiée en espérant conserver le sens de toutes les anciennes cartes.
-Une migration depuis v2/v3/v4 n’est pas fournie. Les réimports de la même v5 sont testés.
+Une migration depuis v2/v3/v4 n’est pas fournie. Les réimports de la même édition v5.1 sont testés.
 
 ## Répondre et s’évaluer
 
@@ -48,7 +49,9 @@ Répondre **avant** de retourner, en une phrase ou à voix haute. Pas de récita
 
 **À revoir** si la réponse est fausse, devinée, ou si la raison essentielle manque.
 **Difficile** pour une réponse correcte obtenue avec effort ; **Bon** si correcte sans difficulté.
-Les explications et encadrés du verso ne sont pas des éléments supplémentaires à réciter.
+La réponse principale permet de se corriger ; le texte qui suit explique la raison ou une limite.
+Ces explications ne sont pas des éléments supplémentaires à réciter.
+Le volet « Sources et repères » est facultatif ; il contient aussi les noms et codes officiels des signaux.
 Une réponse valide formulée autrement doit être acceptée. Les versos longs se lisent en défilant.
 
 Après une erreur récurrente, relire le repère puis comparer les conditions d’un cas voisin.
@@ -96,7 +99,8 @@ Pour une modification :
 4. Pour plusieurs seuils dans une note, préférer `rappels` autonomes : chaque recto doit se suffire
    sans afficher les réponses sœurs. Garder ensemble une procédure courte cohérente, comme le cycle RCP.
    Voir la [conception des cartes](docs/03-conception-des-cartes.md).
-5. Exécuter les commandes ci-dessus. Inspecter les captures dans `out/qa/render/`, notamment les
+5. Exécuter les commandes ci-dessus. Inspecter les captures à 430 × 932 (clair et sombre) dans `out/qa/render/`. Les fichiers
+   `_viewport.png` montrent un seul écran ; les autres montrent toute la carte. Vérifier notamment les
    nombres, flèches et petits textes **dans les images** : les mesures DOM ne les comprennent pas.
    Après toute nouvelle modification, reconstruire avant de revérifier le paquet.
 6. Relire le diff et actualiser le bilan. Pour une diffusion ultérieure à des utilisateurs ayant

@@ -541,7 +541,7 @@ Recherche Anki : `objectif::l-depasser`
 | `l-depassement-rabattement` | socle | questions | Code de la route, art. R414-10 |
 | `l-depassement-interdit-lieux` | approfondissement | questions | Code de la route, R414-4 et R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
 | `l-depassement-interdit-lieux-2` | approfondissement | questions | Code de la route, art. R414-11 à R414-13 |
-| `c-cycliste-devant-depassement` | socle | questions | Sécurité routière — Exemples de nouvelles questions (Q7) ; Code de la route, art. R414-4 |
+| `c-cycliste-devant-depassement` | socle | questions | Code de la route, art. R414-4 (conditions du dépassement). |
 | `l-cycliste-ligne-espace` | socle | questions | Code de la route, R412-19 et R414-4 |
 | `l-cavalier-ligne-continue` | socle | questions | Code de la route, R412-19 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/ |
 | `aff-l-continue-cyclomoteur` | socle | affirmations | Code de la route, art. R412-19 |
@@ -1521,7 +1521,7 @@ Recherche Anki : `objectif::e-ecoconduite`
 | `e-frein-moteur` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `e-climatisation-conso` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `e-ecomobilite-choix` | socle | questions | ADEME — Se déplacer autrement |
-| `e-budget-trajet-tableau` | socle | questions | Calcul sur données fictives explicites |
+| `e-budget-trajet-tableau` | socle | questions | Exercice de calcul : consommation × distance / 100. |
 | `aff-e-clim-autoroute` | approfondissement | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `aff-e-point-mort-descente` | approfondissement | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `aff-e-moteur-chauffer` | approfondissement | affirmations | ADEME — Écoconduite ; arrêté du 12 novembre 1963 |

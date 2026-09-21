@@ -3,7 +3,7 @@
 Projet : générer `out/Code-de-la-route-2026.apkg`, un deck Anki pour réussir l'ETG (code de la route,
 permis B) tel qu'il existe en 2026. Lire `README.md` puis `docs/01-analyse-examen.md`,
 `docs/02-carte-des-connaissances.md`, `docs/03-conception-des-cartes.md`, `docs/04-sources.md`,
-`docs/10-bilan-v5.md` (révision actuelle). Les dossiers v1/v2 sont historiques ; ne pas réintroduire leurs formulations corrigées.
+`docs/10-bilan-v5.md` et `docs/11-interface-quotidienne.md` (révision actuelle). Les dossiers v1/v2 sont historiques ; ne pas réintroduire leurs formulations corrigées.
 
 ## Commandes
 
@@ -53,8 +53,8 @@ python build/yamlfix.py data/*/*.yaml   # quote les valeurs YAML contenant ': '
 
 ## Règles de rédaction
 
-- Une carte = une connaissance ; réponse courte et non ambiguë ; explication d'une ligne (le pourquoi,
-  le piège). Pas de cartes inversées. Règle actuelle en réponse ; toute approximation explicitement nommée.
+- Une carte = une connaissance ; réponse courte et non ambiguë ; explication centrée sur le pourquoi,
+  la limite ou la distinction utile (sa longueur doit se justifier). Pas de cartes inversées. Règle actuelle en réponse ; toute approximation explicitement nommée.
   Ne pas prétendre connaître une ancienne réponse attendue par la banque confidentielle.
 - Toute valeur juridique se vérifie dans le Code de la route consolidé
   (`docs/research/sources/code_de_la_route_consolide_2026-09-10.pdf`, texte : `pdftotext -layout`).
@@ -75,10 +75,14 @@ le champ `Repere` de tous les modèles (volet au verso). Ce complément n’est 
 l’application. `contrasts.yaml` justifie les familles de cas ; `retirements.yaml` documente les
 suppressions avec leur couverture conservée. Les deux alimentent `out/CONCEPTION.md`.
 
-## Vérification du rendu v5
+## Vérification du rendu v5.1
 
 Installer `requirements-qa.txt` et Chrome/Chromium, puis `python -m build.render_check`.
 Le vérificateur importe le paquet dans une collection temporaire et contrôle toutes les faces
-à 390 px clair / 320 px sombre ; captures dans `out/qa/render/`. Les mesures ne valident pas
+à 430 × 932 clair/sombre, 430 × 740 sombre et 320 × 640 sombre ; captures dans `out/qa/render/`. Les mesures ne valident pas
 le sens des images ni les petits textes incorporés : les inspecter. `out/RENDU.md` et
 `out/VERIFICATION.md` portent le SHA-256 du paquet réellement contrôlé.
+
+Interface : appliquer les niveaux de visibilité de `docs/03-conception-des-cartes.md`. Les corrections
+restent visibles ; « Sources et repères » regroupe uniquement les références. Pas de consigne de notation
+répétée au verso. Inspecter les captures `_viewport` et pleine hauteur, pas seulement les mesures.

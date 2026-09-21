@@ -732,6 +732,9 @@ def inline_md(s) -> str:
     if s is None:
         return ""
     s = str(s).strip()
+    # Keep French high punctuation with its preceding word on narrow screens.
+    # Apply before HTML/link generation; URLs contain no literal spaces.
+    s = re.sub(r" +(?=[;:!?])", "\u202f", s)
     lines = s.split("\n")
     out, in_list = [], False
     for ln in lines:

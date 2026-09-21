@@ -154,6 +154,11 @@ class LearningTests(unittest.TestCase):
             approach['sign'] = 'feu_orange'
         self.assertEqual(passes_before(spec, 'S', 'E'), 'indetermine')
 
+    def test_french_punctuation_stays_with_the_preceding_word(self):
+        self.assertEqual(inline_md("Qui passe ? Non : je cède ; pourquoi !"),
+                         "Qui passe\u202f? Non\u202f: je cède\u202f; pourquoi\u202f!")
+        self.assertIn("{{c1::30 km/h}}", inline_md("Plafond : {{c1::30 km/h}}."))
+
     def test_sources_clickable_and_text_escaped(self):
         value = inline_md('Source https://example.org/article?a=1&b=2 <script>')
         self.assertIn('href="https://example.org/article?a=1&amp;b=2"', value)

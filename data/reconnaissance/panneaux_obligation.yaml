@@ -155,7 +155,6 @@
   nom: Chemin obligatoire pour piétons
   signification: Chemin réservé et obligatoire pour les piétons ; interdit aux véhicules.
   conduite: 'En voiture : ne pas s''y engager.'
-  complement: 'Fin : B41.'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -167,7 +166,6 @@
     commons: France road sign B22c.svg
   nom: Chemin obligatoire pour cavaliers
   signification: Chemin réservé et obligatoire pour les cavaliers.
-  complement: 'Fin : B42.'
   theme: L
   sous_theme: panneaux
   importance: rare
@@ -224,7 +222,6 @@
   nom: Voie réservée aux tramways
   signification: Voie réservée aux tramways ; interdite aux autres véhicules.
   conduite: Ne pas y circuler ni s'y arrêter ; le tramway est prioritaire.
-  complement: Le panneau de fin B45b a été supprimé en 2009.
   theme: L
   sous_theme: panneaux
   importance: utile

@@ -588,11 +588,11 @@ def tableau_lecture(params):
     """Clearly fictional documents: practise selecting a row, unit and column."""
     rows = params['rows']
     columns = params['columns']
-    width, cell, top = 540, 540 / len(columns), 112
-    height = top + 62 * (len(rows) + 1) + 40
+    width, cell, top = 540, 540 / len(columns), 96
+    height = top + 62 * (len(rows) + 1) + 2
     S = SVG(width, height)
     S.add(f'<rect width="{width}" height="{height}" fill="#fff"/>')
-    S.add(f'<text x="270" y="32" font-family="{FONT}" font-size="20" text-anchor="middle" fill="#555">DOCUMENT FICTIF — EXERCICE</text>')
+    S.add(f'<text x="270" y="32" font-family="{FONT}" font-size="20" text-anchor="middle" fill="#555">Exercice — données fictives</text>')
     S.add(f'<text x="270" y="72" font-family="{FONT}" font-size="30" font-weight="700" text-anchor="middle" fill="#222">{esc(params["title"])}</text>')
     for row_index, row in enumerate([columns] + rows):
         if len(row) != len(columns):
@@ -608,7 +608,6 @@ def tableau_lecture(params):
             spans = ''.join(f'<tspan x="{x + cell / 2}" y="{baseline + i * 28}">{esc(line)}</tspan>'
                             for i, line in enumerate(lines))
             S.add(f'<text font-family="{FONT}" font-size="28" text-anchor="middle" fill="#111">{spans}</text>')
-    S.add(f'<text x="270" y="{height - 12}" font-family="{FONT}" font-size="18" text-anchor="middle" fill="#555">Valeurs propres à cet exercice</text>')
     return str(S)
 
 

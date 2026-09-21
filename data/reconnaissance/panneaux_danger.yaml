@@ -211,7 +211,6 @@
   nom: Passage pour piétons (annonce du danger)
   signification: Annonce un passage pour piétons (passage protégé) situé 150 m plus loin hors agglomération (50 m en agglomération).
   conduite: Ralentir, être prêt à s'arrêter pour laisser traverser les piétons engagés ou manifestant l'intention de traverser ; ne pas dépasser un véhicule qui ralentit ou s'arrête devant le passage.
-  complement: Le piéton régulièrement engagé ou manifestant clairement l'intention de traverser a la priorité (R415-11).
   theme: L
   sous_theme: panneaux
   importance: essentiel

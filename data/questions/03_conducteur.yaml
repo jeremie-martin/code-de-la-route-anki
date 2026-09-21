@@ -71,16 +71,17 @@
   sous_theme: vigilance
   source: Sécurité routière — Exemples de nouvelles questions (Q4)
 - id: c-cycliste-devant-depassement
-  question: 'Je suis en train de dépasser un cycliste ; un véhicule arrive en face et je ne pourrai pas terminer en sécurité. Que fais-je ?'
-  reponse: 'Je me replace à droite derrière le cycliste, sans accélérer ni poursuivre ; je le dépasserai quand la voie sera libre, en laissant 1 m (1,50 m hors agglomération).'
-  explication: 'Question officielle 2023 (Q7), sans énoncé : photo (cycliste devant à droite, dépassement en cours) et trois propositions — « J''accélère / Je poursuis le dépassement / Je me replace à droite » → C. Le « véhicule en face » est l''interprétation la plus probable de la photo, pas un élément du texte officiel.'
+  question: Je suis en train de dépasser un cycliste ; un véhicule arrive en face et je ne pourrai pas terminer
+    en sécurité. Que fais-je ?
+  reponse: Je renonce au dépassement et me replace derrière le cycliste, en gardant une distance de sécurité.
+  explication: Je dois pouvoir terminer le dépassement sans danger. Accélérer pour forcer le passage mettrait
+    le cycliste et le véhicule en face en danger.
   theme: C
   sous_theme: vigilance
-  source: Sécurité routière — Exemples de nouvelles questions (Q7) ; Code de la route, art. R414-4
+  source: Code de la route, art. R414-4 (conditions du dépassement).
 - id: c-retro-avant-freiner
   question: Avant un ralentissement que je peux anticiper, pourquoi contrôler le rétroviseur intérieur ?
-  reponse: Pour connaître le trafic derrière et préparer un ralentissement progressif. Face à un danger immédiat,
-    je freine sans retarder l’action pour consulter le rétroviseur.
+  reponse: Pour connaître le trafic derrière et préparer un ralentissement progressif.
   explication: Ce contrôle accompagne un ralentissement anticipé. En danger immédiat, ne pas différer le freinage
     d’urgence pour consulter le rétroviseur.
   theme: C

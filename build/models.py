@@ -73,66 +73,66 @@ def deck_for(theme: str, sous_theme: str) -> str:
 
 CSS = """
 .card {
-  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  font-size: 20px; line-height: 1.4; text-align: center;
-  color: #1c1c1c; background: #f7f7f5; padding: 14px 12px 24px;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px; line-height: 1.45; text-align: left;
+  color: #202124; background: #fafaf8; padding: 18px 18px 28px;
+  -webkit-text-size-adjust: 100%;
 }
-.card.nightMode, .nightMode .card, .night_mode .card { color: #ececec; background: #1f1f1f; }
-.cdr-wrap { max-width: 680px; margin: 0 auto; }
-.cdr-kicker { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #8a8a8a; margin-bottom: 10px; }
-.cdr-img { margin: 6px auto 10px; }
-.cdr-img img { max-width: 100%; max-height: 46vh; width: auto; height: auto; border-radius: 10px; }
-.cdr-img.sign img { max-height: 40vh; max-width: min(100%, 320px); }
-.cdr-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; align-items: start; }
+.card.nightMode, .nightMode .card, .night_mode .card { color: #ececec; background: #202124; }
+.cdr-wrap { max-width: 640px; margin: 0 auto; overflow-wrap: anywhere; }
+.cdr-img { text-align: center; margin: 0 auto 16px; }
+.cdr-img img { display: inline-block; max-width: 100%; max-height: 46vh; width: auto; height: auto; border-radius: 6px; }
+.cdr-img.sign img { max-height: 36vh; max-width: min(100%, 300px); }
+.cdr-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; text-align: center; }
 .cdr-pair > div { min-width: 0; }
-.cdr-pair .cdr-side { display: block; font-size: 15px; font-weight: 700; margin-bottom: 6px; }
-.cdr-pair img { max-width: 100%; max-height: 32vh; border-radius: 10px; }
-.cdr-pair .lbl { font-size: 17px; font-weight: 700; margin-top: 8px; color: #1a6b3a; }
-.nightMode .cdr-pair .lbl, .night_mode .cdr-pair .lbl { color: #7ed49a; }
-.cdr-q { font-size: 22px; font-weight: 600; margin: 10px 0 6px; }
-.cdr-hint { font-size: 15px; color: #8a8a8a; margin-top: 4px; }
-.cdr-a { font-size: 23px; font-weight: 700; color: #1a6b3a; margin: 12px 0 6px; }
-.nightMode .cdr-a, .night_mode .cdr-a { color: #7ed49a; }
-.cdr-sig { font-size: 19px; margin: 4px auto 10px; max-width: 620px; }
-.cdr-box { font-size: 17px; text-align: left; margin: 10px auto; max-width: 620px;
-  background: #ffffff; border-left: 4px solid #2d6fd8; padding: 8px 12px; border-radius: 6px; }
-.nightMode .cdr-box, .night_mode .cdr-box { background: #2a2a2a; }
-.cdr-box.conduite { border-left-color: #1a6b3a; }
-.cdr-box.piege { border-left-color: #d8362d; background: #fff5f4; }
-.nightMode .cdr-box.piege, .night_mode .cdr-box.piege { background: #332424; }
-.cdr-box.info { border-left-color: #8a8a8a; color: #444; font-size: 16px; }
-.nightMode .cdr-box.info, .night_mode .cdr-box.info { color: #cfcfcf; }
-.cdr-box b { font-weight: 700; }
-.cdr-src { font-size: 12px; color: #a0a0a0; margin-top: 18px; overflow-wrap: anywhere; }
-.cdr-src a { color: #24559a; }
-.nightMode .cdr-src a, .night_mode .cdr-src a { color: #8ab4f8; }
-.cdr-code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 13px; color: #a0a0a0; }
-.cloze { color: #1a6b3a; font-weight: 700; }
-.nightMode .cloze, .night_mode .cloze { color: #7ed49a; }
-.cdr-fait { font-size: 22px; max-width: 640px; margin: 8px auto; text-align: left; }
-.cdr-fait.center { text-align: center; }
-hr#answer { border: 0; border-top: 1px solid #d0d0d0; margin: 14px 0; }
-ul.cdr-list { text-align: left; display: inline-block; margin: 6px auto; padding-left: 22px; }
-.cdr-ctx { font-size: 17px; color: #555; margin: 6px auto 4px; max-width: 620px; }
-.nightMode .cdr-ctx, .night_mode .cdr-ctx { color: #bdbdbd; }
-.cdr-aff { font-size: 22px; font-weight: 600; margin: 8px auto 4px; max-width: 640px; }
-.cdr-aff::before { content: "«\\00a0"; color: #8a8a8a; } .cdr-aff::after { content: "\\00a0»"; color: #8a8a8a; }
-.cdr-verdict { display: inline-block; font-size: 20px; font-weight: 800; letter-spacing: .08em; padding: 4px 18px; text-transform: uppercase;
-  border-radius: 999px; margin: 10px 0 8px; color: #fff; background: #1a6b3a; }
-.cdr-verdict.faux { background: #d8362d; }
-.cdr-kicker, .cdr-hint, .cdr-src, .cdr-code { color: #626262; }
-.nightMode .cdr-kicker, .nightMode .cdr-hint, .nightMode .cdr-src, .nightMode .cdr-code,
-.night_mode .cdr-kicker, .night_mode .cdr-hint, .night_mode .cdr-src, .night_mode .cdr-code { color: #bdbdbd; }
-.cdr-wrap { overflow-wrap: anywhere; }
+.cdr-side { display: block; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+.cdr-pair img { max-width: 100%; max-height: 30vh; width: auto; height: auto; border-radius: 6px; }
+.cdr-q, .cdr-aff { font-size: 22px; font-weight: 600; margin: 12px 0; }
+.cdr-a { font-size: 22px; font-weight: 650; margin: 16px 0 12px; color: #176039; }
+.nightMode .cdr-a, .night_mode .cdr-a { color: #91d7ad; }
+.cdr-box { font-size: 18px; margin: 12px 0; }
+.cdr-box.conduite { margin-top: 14px; }
+.cdr-box.piege { border-left: 3px solid #b26614; padding-left: 12px; }
+.nightMode .cdr-box.piege, .night_mode .cdr-box.piege { border-color: #eab777; }
+.cdr-box b { font-weight: 650; }
+.cdr-ctx, .cdr-hint { font-size: 18px; color: #555b61; margin: 8px 0; }
+.cdr-hint { font-size: 16px; }
+.nightMode .cdr-ctx, .night_mode .cdr-ctx,
+.nightMode .cdr-hint, .night_mode .cdr-hint { color: #c0c3c7; }
+.cdr-back .cdr-q, .cdr-back .cdr-aff { font-size: 18px; font-weight: 400; }
+.cdr-aff::before { content: "«\\00a0"; }
+.cdr-aff::after { content: "\\00a0»"; }
+.cdr-fait { font-size: 22px; margin: 8px 0 16px; }
+.cloze { color: #176039; font-weight: 700; }
+.nightMode .cloze, .night_mode .cloze { color: #91d7ad; }
+hr#answer { border: 0; border-top: 1px solid #d0d3d5; margin: 18px 0; }
+.nightMode hr#answer, .night_mode hr#answer { border-color: #51555b; }
+.cdr-verdict { font-size: 22px; font-weight: 700; margin: 14px 0 8px; text-transform: capitalize; color: #176039; }
+.cdr-verdict.faux { color: #af2929; }
+.nightMode .cdr-verdict, .night_mode .cdr-verdict { color: #91d7ad; }
+.nightMode .cdr-verdict.faux, .night_mode .cdr-verdict.faux { color: #ffaaa5; }
+.cdr-reference { margin-top: 20px; border-top: 1px solid #d0d3d5; font-size: 16px; color: #555b61; }
+.cdr-reference summary { cursor: pointer; min-height: 44px; box-sizing: border-box; padding: 11px 0; }
+.cdr-reference summary:focus-visible { outline: 2px solid #2867b2; outline-offset: 3px; }
+.cdr-reference p { margin: 8px 0 14px; }
+.cdr-reference a { color: #24559a; overflow-wrap: anywhere; }
+.cdr-reference h3 { font-size: 17px; margin: 16px 0 8px; }
+.cdr-code { font-family: ui-monospace, Menlo, Consolas, monospace; }
+.nightMode .cdr-reference, .night_mode .cdr-reference { border-color: #51555b; color: #c0c3c7; }
+.nightMode .cdr-reference a, .night_mode .cdr-reference a { color: #9bc3ff; }
+ul.cdr-list { padding-left: 24px; }
+@media (max-width: 350px) { .card { padding: 14px 12px 24px; } }
 """
 
-KICKER = '<div class="cdr-kicker">{{Theme}}{{#SousTheme}} · {{SousTheme}}{{/SousTheme}}</div>'
-FRONT_KICKER = '<div class="cdr-kicker">Code de la route · Rappel actif</div>'
-GRADE = ('<div class="cdr-hint">À revoir si la décision ou la raison essentielle manquait. '
-         'Les détails de l’explication ne sont pas à réciter.</div>')
-SRC = ('{{#Repere}}<details class="cdr-box info cdr-lesson"><summary>Comprendre ce thème · exemple expliqué</summary>'
-       '{{Repere}}</details>{{/Repere}}'
-       '<div class="cdr-src">{{#Code}}<span class="cdr-code">{{Code}}</span> · {{/Code}}{{Source}}</div>')
+
+def reference(extra=""):
+    """One secondary layer; corrective feedback never lives here."""
+    return ('<details class="cdr-reference"><summary>Sources et repères</summary>' + extra +
+            '<p>{{#Code}}<span class="cdr-code">{{Code}}</span> · {{/Code}}{{Source}}</p>'
+            '{{#Repere}}<h3>{{Theme}}</h3>{{Repere}}{{/Repere}}</details>')
+
+
+SRC = reference()
 
 # Native Anki cloze conditionals work on both faces, without JavaScript or extra fields.
 # Legacy prose is unaffected; only explicitly authored independent prompts are filtered.
@@ -149,16 +149,15 @@ def notetypes() -> list[dict]:
             "fields": ["Id", "Type", "Image", "Question", "Nom", "Signification", "ConduiteATenir", "Complement", "Piege", "Code", "Theme", "SousTheme", "Source"],
             "templates": [{
                 "name": "Reconnaissance",
-                "qfmt": f'<div class="cdr-wrap">{FRONT_KICKER}<div class="cdr-img sign">{{{{Image}}}}</div><div class="cdr-q">{{{{Question}}}}</div><div class="cdr-hint">Donnez le sens ; le nom officiel n’est pas à réciter.</div></div>',
+                "qfmt": f'<div class="cdr-wrap"><div class="cdr-img sign">{{{{Image}}}}</div><div class="cdr-q">{{{{Question}}}}</div></div>',
                 "afmt": (
-                    '<div class="cdr-wrap">' + KICKER + '<div class="cdr-img sign">{{Image}}</div>'
+                    '<div class="cdr-wrap cdr-back">' + '<div class="cdr-img sign">{{Image}}</div>'
                     '<hr id=answer>'
                     '<div class="cdr-a">{{Signification}}</div>'
-                    '<div class="cdr-hint">{{Nom}}</div>'
-                    '{{#ConduiteATenir}}<div class="cdr-box conduite"><b>Conduite à tenir :</b> {{ConduiteATenir}}</div>{{/ConduiteATenir}}'
+                    '{{#ConduiteATenir}}<div class="cdr-box conduite"><b>En pratique.</b> {{ConduiteATenir}}</div>{{/ConduiteATenir}}'
                     '{{#Complement}}<div class="cdr-box info">{{Complement}}</div>{{/Complement}}'
-                    '{{#Piege}}<div class="cdr-box piege"><b>Piège :</b> {{Piege}}</div>{{/Piege}}'
-                    + '<div class="cdr-hint">À revoir si le sens était faux ou incomplet. Les encadrés expliquent la conduite.</div>' + SRC + '</div>'
+                    '{{#Piege}}<div class="cdr-box piege">{{Piege}}</div>{{/Piege}}'
+                    + reference('<p>{{Nom}}</p>') + '</div>'
                 ),
             }],
         },
@@ -168,16 +167,16 @@ def notetypes() -> list[dict]:
             "templates": [{
                 "name": "Confusion",
                 "qfmt": (
-                    '<div class="cdr-wrap">' + FRONT_KICKER +
+                    '<div class="cdr-wrap">' +
                     '<div class="cdr-pair"><div><span class="cdr-side">A</span>{{ImageA}}</div><div><span class="cdr-side">B</span>{{ImageB}}</div></div>'
                     '<div class="cdr-q">Quelle est la différence ?</div></div>'
                 ),
                 "afmt": (
-                    '<div class="cdr-wrap">' + KICKER +
-                    '<div class="cdr-pair"><div><span class="cdr-side">A</span>{{ImageA}}<div class="lbl">{{NomA}}</div></div><div><span class="cdr-side">B</span>{{ImageB}}<div class="lbl">{{NomB}}</div></div></div>'
+                    '<div class="cdr-wrap cdr-back">' +
+                    '<div class="cdr-pair"><div><span class="cdr-side">A</span>{{ImageA}}</div><div><span class="cdr-side">B</span>{{ImageB}}</div></div>'
                     '<hr id=answer>'
-                    '<div class="cdr-box">{{Difference}}</div>'
-                    + GRADE + SRC + '</div>'
+                    '<div class="cdr-box cdr-difference">{{Difference}}</div>'
+                    + reference('<p>A : {{NomA}}<br>B : {{NomB}}</p>') + '</div>'
                 ),
             }],
         },
@@ -188,16 +187,16 @@ def notetypes() -> list[dict]:
             "templates": [{
                 "name": "Cloze",
                 "qfmt": (
-                    '<div class="cdr-wrap">' + FRONT_KICKER +
+                    '<div class="cdr-wrap">' +
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
                     + CLOZE_FOCUS + '<div class="cdr-fait">{{cloze:Texte}}</div></div>'
                 ),
                 "afmt": (
-                    '<div class="cdr-wrap">' + KICKER +
+                    '<div class="cdr-wrap cdr-back">' +
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
                     + CLOZE_FOCUS + '<div class="cdr-fait">{{cloze:Texte}}</div>'
                     '{{#Explication}}<div class="cdr-box">{{Explication}}</div>{{/Explication}}'
-                    + '<div class="cdr-hint">À revoir si la valeur ou le terme demandé manquait. Vérifiez aussi l’unité.</div>' + SRC + '</div>'
+                    + SRC + '</div>'
                 ),
             }],
         },
@@ -207,18 +206,18 @@ def notetypes() -> list[dict]:
             "templates": [{
                 "name": "Question",
                 "qfmt": (
-                    '<div class="cdr-wrap">' + FRONT_KICKER +
+                    '<div class="cdr-wrap">' +
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
                     '<div class="cdr-q">{{Question}}</div></div>'
                 ),
                 "afmt": (
-                    '<div class="cdr-wrap">' + KICKER +
+                    '<div class="cdr-wrap cdr-back">' +
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
                     '<div class="cdr-q">{{Question}}</div>'
                     '<hr id=answer>'
                     '<div class="cdr-a">{{Reponse}}</div>'
                     '{{#Explication}}<div class="cdr-box">{{Explication}}</div>{{/Explication}}'
-                    + GRADE + SRC + '</div>'
+                    + SRC + '</div>'
                 ),
             }],
         },
@@ -228,18 +227,18 @@ def notetypes() -> list[dict]:
             "templates": [{
                 "name": "Scenario",
                 "qfmt": (
-                    '<div class="cdr-wrap">' + FRONT_KICKER +
+                    '<div class="cdr-wrap">' +
                     '<div class="cdr-img">{{Image}}</div>'
                     '<div class="cdr-q">{{Question}}</div></div>'
                 ),
                 "afmt": (
-                    '<div class="cdr-wrap">' + KICKER +
+                    '<div class="cdr-wrap cdr-back">' +
                     '<div class="cdr-img">{{Image}}</div>'
                     '<div class="cdr-q">{{Question}}</div>'
                     '<hr id=answer>'
                     '<div class="cdr-a">{{Reponse}}</div>'
                     '{{#Explication}}<div class="cdr-box">{{Explication}}</div>{{/Explication}}'
-                    + GRADE + SRC + '</div>'
+                    + SRC + '</div>'
                 ),
             }],
         },
@@ -249,21 +248,21 @@ def notetypes() -> list[dict]:
             "templates": [{
                 "name": "Affirmation",
                 "qfmt": (
-                    '<div class="cdr-wrap">' + FRONT_KICKER +
+                    '<div class="cdr-wrap">' +
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
                     '{{#Contexte}}<div class="cdr-ctx">{{Contexte}}</div>{{/Contexte}}'
                     '<div class="cdr-aff">{{Affirmation}}</div>'
-                    '<div class="cdr-hint">Vrai ou faux ? Justifiez ; si faux, corrigez la proposition.</div></div>'
+                    '<div class="cdr-hint">Vrai ou faux ? Pourquoi ?</div></div>'
                 ),
                 "afmt": (
-                    '<div class="cdr-wrap">' + KICKER +
+                    '<div class="cdr-wrap cdr-back">' +
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
                     '{{#Contexte}}<div class="cdr-ctx">{{Contexte}}</div>{{/Contexte}}'
                     '<div class="cdr-aff">{{Affirmation}}</div>'
                     '<hr id=answer>'
                     '<div class="cdr-verdict {{Verdict}}">{{Verdict}}</div>'
                     '<div class="cdr-box">{{Pourquoi}}</div>'
-                    + GRADE + SRC + '</div>'
+                    + SRC + '</div>'
                 ),
             }],
         },
