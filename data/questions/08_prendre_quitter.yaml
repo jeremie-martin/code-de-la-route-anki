@@ -1,0 +1,131 @@
+- id: p-verif-tour-vehicule
+  question: Avant de prendre la route, que vérifie-t-on en faisant le tour du véhicule ?
+  reponse: L'état et la pression apparente des pneus, la propreté des vitres, feux et plaques, l'absence d'obstacle ou d'enfant autour, et que rien ne dépasse du chargement.
+  explication: Un pneu visiblement affaissé, une vitre embuée ou un feu sale sont des causes d'accident évitables en 30 secondes. Le tour du véhicule fait partie des « vérifications extérieures » demandées aussi à l'épreuve pratique.
+  theme: P
+  sous_theme: verifications
+  source: REMC (compétence 1) ; securite-routiere.gouv.fr — Bien préparer son trajet
+- id: p-verif-chargement-important
+  question: Le coffre est très chargé pour un long trajet. Que doit-on ajuster avant de partir ?
+  reponse: Augmenter la pression des pneus (selon la notice, généralement +0,2 à +0,3 bar) et régler la hauteur des feux vers le bas.
+  explication: 'Question officielle 2023 (réponse « j''augmente la pression » + « je règle la hauteur des feux »). Un véhicule chargé s''affaisse à l''arrière : les feux de croisement montent et éblouissent, les pneus sous-gonflés chauffent. On ne diminue jamais la pression.'
+  theme: P
+  sous_theme: verifications
+  source: Sécurité routière — Exemples de nouvelles questions (Q1) ; notices constructeurs
+- id: p-verif-pare-brise
+  question: 'Pare-brise embué ou givré au départ : que fait-on ?'
+  reponse: 'On dégivre/désembue complètement (raclette, ventilation, dégivrage arrière) avant de démarrer : conduire avec un « hublot » dégagé est dangereux et sanctionnable.'
+  explication: Un pare-brise partiellement dégagé réduit le champ de vision et masque les piétons. Le lave-glace doit contenir un liquide antigel en hiver.
+  theme: P
+  sous_theme: verifications
+  source: Code de la route, art. R316-3 ; securite-routiere.gouv.fr — Conduire en hiver
+- id: p-siege-reglage
+  question: Comment règle-t-on le siège pour une position de conduite correcte ?
+  reponse: 'Assise : pédale d''embrayage (ou de frein) enfoncée à fond avec la jambe légèrement fléchie ; dossier : poignets posés sur le haut du volant sans décoller les épaules ; assis au fond du siège.'
+  explication: Une bonne position réduit la fatigue, permet un freinage d'urgence à pleine force et laisse l'airbag agir (≈ 25 cm entre le sternum et le volant).
+  theme: P
+  sous_theme: installation
+  source: REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite
+- id: p-appuie-tete
+  question: À quelle hauteur règle-t-on l'appuie-tête, et à quoi sert-il ?
+  reponse: 'Le haut de l''appuie-tête au niveau du sommet de la tête (ou au moins des yeux), le plus près possible de la nuque : il protège les cervicales du « coup du lapin » en cas de choc arrière.'
+  explication: Un appuie-tête trop bas agit comme un pivot et aggrave la lésion. Il se règle pour chaque occupant, passagers arrière compris.
+  theme: P
+  sous_theme: installation
+  source: securite-routiere.gouv.fr — Bien régler son appuie-tête ; Euro NCAP
+- id: p-retro-interieur
+  question: Comment règle-t-on le rétroviseur intérieur ?
+  reponse: Pour voir la totalité de la lunette arrière, sans bouger la tête, en position de conduite normale.
+  explication: 'C''est le seul rétroviseur qui donne une vue non déformée et sert à évaluer la distance d''un véhicule qui suit (et à savoir quand se rabattre après un dépassement : quand on voit le véhicule dépassé en entier dans ce rétroviseur).'
+  image:
+    gen: retroviseur
+    params:
+      kind: interieur
+  theme: P
+  sous_theme: installation
+  source: REMC ; Codes Rousseau — Les rétroviseurs
+- id: p-retro-exterieurs
+  question: Comment règle-t-on les rétroviseurs extérieurs ?
+  reponse: On voit un petit bord de sa carrosserie sur le côté intérieur du miroir, et l'horizon à mi-hauteur (autant de route que de ciel).
+  explication: 'Trop de carrosserie = angle mort agrandi ; trop de ciel = on ne voit pas les deux-roues. Les rétroviseurs ne suppriment jamais l''angle mort : un contrôle direct par-dessus l''épaule reste nécessaire avant de déboîter.'
+  image:
+    gen: retroviseur
+    params:
+      kind: exterieur
+  theme: P
+  sous_theme: installation
+  source: REMC ; Codes Rousseau — Les rétroviseurs
+- id: p-ceinture-position
+  question: Comment la ceinture doit-elle être positionnée ?
+  reponse: 'Sangle plate, non vrillée, bien tendue : la partie basse sur les hanches (le bassin, pas le ventre), la partie haute sur le milieu de l''épaule et le sternum, jamais sous le bras ni derrière le dos.'
+  explication: Une ceinture sur le ventre provoque des lésions internes lors du choc ; sous le bras, elle ne retient pas le buste. Retirer les vêtements épais si possible, et régler la hauteur du point d'ancrage.
+  theme: P
+  sous_theme: installation
+  source: securite-routiere.gouv.fr — La ceinture de sécurité
+- id: p-volant-mains
+  question: Où place-t-on les mains sur le volant ?
+  reponse: À « 9 h 15 » (ou 10 h 10), les deux mains sur le cerceau, pouces à l'extérieur des branches, bras légèrement fléchis.
+  explication: 'Cette position permet un braquage rapide dans les deux sens et évite les blessures des pouces en cas de déclenchement de l''airbag. Une seule main sur le volant : réaction plus lente en cas d''urgence.'
+  theme: P
+  sous_theme: installation
+  source: REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite
+- id: p-ordre-installation
+  question: Dans quel ordre s'installe-t-on à bord ?
+  reponse: Siège et dossier → appuie-tête → rétroviseurs → ceinture (puis contact).
+  explication: On règle les rétroviseurs après le siège, sinon ils seront faux. La ceinture en dernier, une fois la position définitive. Les passagers aussi doivent être attachés avant le départ.
+  theme: P
+  sous_theme: installation
+  source: REMC ; Codes Rousseau
+- id: p-ouvrir-portiere
+  question: Que fait-on avant d'ouvrir sa portière pour descendre ?
+  reponse: Contrôler le rétroviseur puis l'angle mort par-dessus l'épaule, et ouvrir avec la main opposée à la portière (la « poignée hollandaise »), ce qui oblige à tourner le buste et à regarder derrière.
+  explication: Une portière ouverte sur un cycliste ou un motard qui arrive est un accident grave et fréquent (« emportiérage ») ; le conducteur est responsable. Descendre côté trottoir quand c'est possible.
+  theme: P
+  sous_theme: quitter
+  source: 'Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Cyclistes : l''emportiérage'
+- id: p-quitter-checklist
+  question: Avant de quitter le véhicule stationné, que fait-on pour le sécuriser ?
+  reponse: Moteur coupé, frein de stationnement serré, une vitesse engagée (ou P), roues orientées en pente, vitres fermées, aucun objet visible, verrouillage.
+  explication: 'Un objet visible attire le vol ; un véhicule non freiné en pente peut partir seul. Avec une boîte automatique : position P et frein de stationnement.'
+  theme: P
+  sous_theme: quitter
+  source: Code de la route, art. R417-8 (précautions avant de s'éloigner du véhicule)
+- id: p-pente-roues
+  question: Stationné en pente, dans quel sens braque-t-on les roues ?
+  reponse: 'En descente : vers le trottoir ; en montée : vers la chaussée (à l''opposé du trottoir). Si le frein lâche, le trottoir bloque la roue.'
+  explication: 'Moyen mnémotechnique : en descente, la voiture « veut » aller vers le bas, on tourne les roues vers le trottoir pour qu''elle bute dessus ; en montée, elle reculerait : roues avant braquées vers la route, l''arrière du pneu avant droit vient s''appuyer contre le trottoir. Sans trottoir : roues vers l''accotement dans les deux cas. Plus : première en montée, marche arrière en descente.'
+  image:
+    gen: roue_position
+    params:
+      pente: descente
+  theme: P
+  sous_theme: quitter
+  source: securite-routiere.gouv.fr ; Codes Rousseau — Stationner en pente
+- id: p-pente-vitesse
+  question: Stationné en pente avec une boîte manuelle, quel rapport engage-t-on en plus du frein à main ?
+  reponse: La première en montée, la marche arrière en descente (le moteur retient le véhicule dans le sens où il pourrait partir).
+  explication: 'Le frein de stationnement peut se desserrer ou lâcher ; le rapport engagé est une seconde sécurité. En boîte automatique : P.'
+  theme: P
+  sous_theme: quitter
+  source: Codes Rousseau — Stationner en pente
+- id: p-enfants-seuls
+  question: Peut-on laisser un jeune enfant seul quelques minutes dans la voiture stationnée ?
+  reponse: 'Non : risque de coup de chaleur en quelques minutes (même vitre entrouverte), de manipulation des commandes, ou de départ du véhicule.'
+  explication: L'habitacle d'une voiture au soleil peut atteindre 70 °C en 20 minutes. La sécurité enfant des portières arrière empêche l'ouverture de l'intérieur en roulant.
+  theme: P
+  sous_theme: quitter
+  source: securite-routiere.gouv.fr — Enfants en voiture
+- id: p-quitter-stationnement-surveiller
+  question: En quittant une place de stationnement (créneau), que doit-on surveiller ?
+  reponse: Devant et derrière (rétroviseurs), et l'angle mort du côté où l'on sort — vers la route, y compris à droite pour les cyclistes sur une piste — puis clignotant avant de s'engager, sans priorité.
+  explication: 'Question officielle 2023 (Q14 : « face à lui et derrière lui » OUI ; « dans l''angle mort sur sa droite » OUI). Sortir d''un stationnement est une manœuvre : on cède le passage à tous les usagers qui circulent.'
+  theme: P
+  sous_theme: quitter
+  source: Sécurité routière — Exemples de nouvelles questions (Q14) ; Code de la route, art. R412-10 (avertir avant de reprendre sa place dans la circulation)
+- id: p-assistance-stationnement
+  question: Avec une assistance au stationnement (capteurs, caméra, créneau automatique), le conducteur peut-il cesser de surveiller ?
+  reponse: 'Non : il reste responsable et doit surveiller vers l''avant comme vers l''arrière, les capteurs ne détectant pas tout (enfant, poteau fin, deux-roues en mouvement).'
+  explication: 'Question officielle 2023 (Q8 : surveiller vers l''avant OUI, vers l''arrière OUI). Les aides à la conduite assistent, elles ne remplacent pas le conducteur.'
+  theme: P
+  sous_theme: quitter
+  source: Sécurité routière — Exemples de nouvelles questions (Q8)

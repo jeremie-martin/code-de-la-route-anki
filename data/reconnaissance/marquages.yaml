@@ -1,0 +1,421 @@
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 30 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+- id: marq-ligne-continue
+  type: marquage
+  image:
+    gen: ligne_axiale
+    params:
+      style: continue
+  nom: Ligne continue (axiale ou séparative de voies)
+  signification: 'Ligne blanche continue séparant les sens de circulation ou des voies : il est interdit de la franchir ou de la chevaucher. Seule exception (article R412-19, depuis 2015) : la chevaucher (sans la franchir) pour dépasser un cycle, un engin de déplacement personnel motorisé ou un cyclomobile léger, si la visibilité est suffisante et en respectant l''écart de sécurité (1 m en agglomération, 1,5 m hors agglomération).'
+  conduite: Ne pas dépasser, ne pas tourner à gauche en la franchissant (sauf ligne mixte côté discontinu). On peut la chevaucher, sans la franchir, uniquement pour dépasser un cycliste ou un engin de déplacement personnel.
+  complement: 'Sur les sections sans visibilité (virages, sommets de côte), à l''approche des intersections et des îlots ; largeur 2u (3u ou 5u sur routes larges). Franchir une ligne continue (R412-19) : 135 € et 3 points ; la chevaucher : 135 € et 1 point. Le code ne prévoit aucune autre exception écrite (entrer dans une propriété ou contourner un obstacle relève au mieux de la tolérance / de l''état de nécessité, jamais d''un droit).'
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ligne-discontinue-t1
+  type: marquage
+  image:
+    gen: ligne_axiale
+    params:
+      style: discontinue
+      dash: 3
+      gap: 10
+  nom: Ligne discontinue axiale T1 (3 m de trait, 10 m de vide)
+  signification: 'Ligne discontinue de guidage la plus courante hors agglomération : traits de 3 m espacés de 10 m. Elle sépare les sens ou les voies et peut être franchie pour dépasser ou changer de direction, si la manœuvre est sûre.'
+  conduite: Dépasser uniquement si la visibilité et le trafic le permettent, et terminer le dépassement avant la fin de la ligne discontinue (avant la ligne d'annonce / continue).
+  complement: 'Section courante des routes bidirectionnelles. Rapport plein/vide 1/3. Une ligne discontinue autorise le franchissement mais n''oblige à rien : le dépassement reste soumis aux règles générales (visibilité, sens inverse libre, pas d''intersection...).'
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ligne-dissuasion
+  type: marquage
+  image:
+    gen: ligne_axiale
+    params:
+      style: dissuasion
+      dash: 3
+      gap: 1.33
+  nom: Ligne de dissuasion T3 (3 m de trait, 1,33 m de vide)
+  signification: 'Ligne discontinue à traits longs et rapprochés (3 m / 1,33 m, largeur 3u) qui déconseille fortement le dépassement : il n''est autorisé que pour dépasser un véhicule lent (tracteur, cyclomoteur, cycliste, engin de voirie, véhicule roulant très lentement avec feux de détresse). Sur autoroute, à l''approche des sorties, elle dissuade de se rabattre au dernier moment.'
+  conduite: Ne pas dépasser un véhicule roulant à allure normale ; dépasser seulement un véhicule lent, avec une visibilité suffisante.
+  complement: Routes étroites ou sinueuses, approche des sorties d'autoroute, voies pour véhicules lents. Rapport plein/vide 3 (traits beaucoup plus longs que les vides). Franchissable légalement, mais réservé aux dépassements de véhicules lents. La même modulation T3 (largeur 5u) délimite les bandes cyclables, couloirs bus et voies pour véhicules lents.
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ligne-annonce
+  type: marquage
+  image:
+    gen: fleches
+    params:
+      kind: rabattement
+  nom: Ligne d'annonce d'une ligne continue (T3) avec flèches de rabattement
+  signification: 'Traits longs et intervalles courts, accompagnés de flèches obliques : une ligne continue commence bientôt, il faut se rabattre à droite et ne plus entreprendre de dépassement.'
+  conduite: Se rabattre avant la ligne continue ; ne pas commencer de dépassement.
+  complement: Avant chaque ligne continue, sur une centaine de mètres.
+  piege: 'Les flèches de rabattement (au nombre de trois, espacement décroissant) ne sont pas des flèches directionnelles : elles ne désignent pas une direction à prendre mais l''ordre de se rabattre.'
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ligne-mixte
+  type: marquage
+  image:
+    gen: ligne_axiale
+    params:
+      style: mixte_moi
+  nom: Ligne mixte (continue doublée d'une discontinue)
+  signification: 'Ligne continue accolée à une ligne discontinue : les conducteurs situés du côté de la ligne discontinue peuvent la franchir (dépasser, tourner) ; ceux situés du côté de la ligne continue ne le peuvent pas. C''est la ligne la plus proche du véhicule qui compte.'
+  conduite: 'Regarder quelle ligne est la plus proche de sa voie : discontinue = franchissable, continue = interdit. Terminer la manœuvre avant que la ligne de son côté devienne continue.'
+  complement: 'Sections où le dépassement n''est possible que dans un sens (visibilité dissymétrique). Règle R412-20 : on peut franchir une ligne discontinue si elle est la plus proche de son véhicule AU DÉBUT de la manœuvre, à condition de terminer la manœuvre avant la fin de la partie discontinue.'
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-fleches-directionnelles
+  type: marquage
+  image:
+    gen: fleches
+    params:
+      kind: directionnelles
+  nom: Flèches directionnelles (de sélection / d'affectation de voie)
+  signification: 'Flèches blanches droites (tout droit, à gauche, à droite, ou combinées) peintes dans une voie à l''approche d''une intersection : elles indiquent la ou les directions que doivent suivre les véhicules qui circulent dans cette voie. Une fois engagé dans la voie, on doit suivre la direction indiquée.'
+  conduite: Choisir sa voie à l'avance selon sa direction ; ne pas changer de voie une fois la ligne devenue continue ; si l'on s'est trompé de voie, suivre la direction imposée et faire demi-tour plus loin.
+  complement: Voies de présélection avant les intersections, voies de sortie. Avec des flèches au sol et une ligne continue entre les voies, changer de voie est interdit.
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ligne-stop
+  type: marquage
+  image:
+    gen: transversale
+    params:
+      kind: stop
+  nom: 'Ligne d''arrêt (STOP) : ligne transversale continue'
+  signification: 'Large ligne blanche continue (50 cm) tracée en travers de la voie, associée au panneau STOP (AB4) : c''est à cette ligne, et non au panneau, que l''arrêt doit être marqué. L''inscription « STOP » peut être peinte en amont.'
+  conduite: S'arrêter complètement les roues avant la ligne, sans la dépasser, puis céder le passage.
+  complement: Au niveau du panneau AB4, à la limite de la chaussée abordée. Ligne CONTINUE transversale = STOP ; ligne DISCONTINUE transversale (T'2) = cédez-le-passage. Le marquage doit accompagner le panneau (l'un ne va pas sans l'autre).
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ligne-cedez
+  type: marquage
+  image:
+    gen: transversale
+    params:
+      kind: cedez
+  nom: 'Ligne de cédez-le-passage : ligne transversale discontinue'
+  signification: 'Ligne blanche discontinue (traits de 50 cm espacés de 50 cm, largeur 50 cm) tracée en travers de la voie, associée au panneau AB3a : limite à ne pas franchir sans avoir cédé le passage ; arrêt uniquement si nécessaire.'
+  conduite: Ralentir, contrôler, s'arrêter à la ligne si un véhicule arrive, sinon passer sans s'arrêter.
+  complement: Au niveau du panneau AB3a, aux entrées de giratoire, en fin de voie d'insertion. Les « dents de requin » (triangles blancs pointe vers le conducteur) que l'on voit parfois pour un cédez-le-passage ne sont pas un marquage réglementaire de l'IISR (Belgique, Pays-Bas) ; en France, les triangles au sol signalent un ralentisseur.
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ligne-effet-feux
+  type: marquage
+  image:
+    gen: transversale
+    params:
+      kind: effet_feux
+  nom: Ligne d'effet des feux (ligne d'arrêt aux feux)
+  signification: 'Ligne blanche discontinue fine (traits de 50 cm espacés de 50 cm, largeur 15 cm) tracée en travers de la voie avant un feu tricolore ou un passage à niveau à feux : elle matérialise l''endroit où les véhicules doivent s''arrêter au rouge. Sans marquage, l''arrêt se fait avant le passage piéton s''il y en a un, sinon à l''aplomb du feu.'
+  conduite: S'arrêter avant cette ligne au feu rouge ou jaune, sans empiéter sur le passage piéton ni le sas vélo.
+  complement: Avant le feu (ou avant le passage piéton), et une seconde ligne 3 à 5 m en amont si sas vélo. Franchir la ligne d'effet des feux au rouge = feu rouge grillé (4 points), même si le véhicule s'arrête ensuite au milieu du carrefour.
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-passage-pietons
+  type: marquage
+  image:
+    gen: passage
+    params:
+      kind: pieton
+  nom: Passage pour piétons (marquage au sol)
+  signification: Bandes blanches parallèles à l'axe de la chaussée (2,50 m de long, 50 cm de large, espacées de 50 cm) matérialisant un passage réservé aux piétons ; les piétons y sont prioritaires dès qu'ils sont engagés ou manifestent l'intention de traverser. Interdiction de s'y arrêter ou de stationner, et de stationner 5 m en amont.
+  conduite: Céder le passage aux piétons engagés ou manifestant l'intention de traverser (s'arrêter si besoin) ; ne pas dépasser un véhicule arrêté ou ralentissant devant un passage ; ne pas s'immobiliser sur le passage même en cas de bouchon.
+  complement: 'Aux traversées ; annoncé par A13b, position C20a. Refus de priorité à un piéton : 6 points, 135 €. Un piéton doit utiliser le passage s''il est à moins de 50 m.'
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-passage-cyclistes
+  type: marquage
+  image:
+    gen: passage
+    params:
+      kind: cycliste
+  nom: Traversée cyclable (passage pour cyclistes)
+  signification: Traversée de chaussée réservée aux cyclistes matérialisée par des carrés (ou pointillés) blancs de 50 cm de part et d'autre ; le cycliste qui l'emprunte reste soumis aux règles de priorité du carrefour (panneaux, feux), sauf si un cédez-le-passage ou un STOP impose aux voitures de céder.
+  conduite: Contrôler la traversée avant de tourner ; céder le passage aux cyclistes si la signalisation le prévoit (souvent AB3a pour les voitures) ; sinon le cycliste n'est pas automatiquement prioritaire comme un piéton.
+  complement: En prolongement des pistes cyclables aux intersections.
+  piege: contrairement au passage piéton, le passage cycliste ne confère pas la priorité par lui-même ; c'est la signalisation (feux, AB3a, priorité à droite) qui la fixe.
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-zebra
+  type: marquage
+  image:
+    gen: passage
+    params:
+      kind: zebra
+  nom: Zébra (hachures blanches)
+  signification: 'Zone hachurée blanche (hachures obliques bordées d''une ligne continue) matérialisant un espace interdit à la circulation, à l''arrêt et au stationnement : îlot séparateur peint, biseau de raccordement, musoir, terre-plein.'
+  conduite: Ne pas y circuler, ne pas y stationner, ne pas s'en servir pour dépasser ou tourner ; on peut exceptionnellement s'y arrêter en cas de panne. Certaines hachures bordées d'une ligne discontinue sont franchissables en cas de nécessité.
+  complement: Îlots, divergents de sortie d'autoroute, approches d'intersection. Zébra bordé d'une ligne continue = infranchissable ; bordé d'une ligne discontinue = franchissable si nécessaire.
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ligne-rive
+  type: marquage
+  image:
+    gen: ligne_rive
+    params:
+      style: discontinue
+      dash: 3
+      gap: 3.5
+  nom: 'Ligne de rive (T2 : 3 m de trait, 3,5 m de vide) et rive continue'
+  signification: Ligne blanche discontinue de rive (T2, 3 m / 3,5 m, largeur 3u) ou continue délimitant le bord de la chaussée et l'accotement. Elle guide la nuit ; la rive continue signale que l'accotement est impraticable ou qu'on ne doit pas s'y arrêter (sauf urgence) ; T'3 (20 m / 6 m) aux abords des carrefours et dans les bretelles.
+  conduite: Rester à gauche de la ligne de rive ; ne pas rouler sur l'accotement ; on peut la franchir pour s'arrêter sur l'accotement (si autorisé) ou entrer dans une propriété.
+  complement: 'Bord droit (et gauche sur chaussées séparées) des routes ; sur autoroute, c''est la ligne T4. La ligne de rive ne sépare pas des voies de circulation : sa modulation (T2) est différente de l''axiale (T1) pour éviter la confusion la nuit.'
+  theme: L
+  sous_theme: marquages
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ligne-bau-t4
+  type: marquage
+  image:
+    gen: ligne_rive
+    params:
+      style: bau
+  nom: 'Ligne délimitant la bande d''arrêt d''urgence (T4 : 39 m de trait, 13 m de vide)'
+  signification: 'Ligne discontinue à très longs traits (39 m) et vides de 13 m délimitant la bande d''arrêt d''urgence sur autoroute et routes à chaussées séparées. Elle sert de repère de distance de sécurité : à 130 km/h, garder au moins deux traits (≈ 90 m, soit un peu plus de 2 secondes) avec le véhicule précédent.'
+  conduite: 'Ne pas circuler sur la BAU (réservée aux arrêts d''urgence et aux secours) ; utiliser les traits pour vérifier sa distance de sécurité : « un trait = danger, deux traits = sécurité ».'
+  complement: 'Section courante des autoroutes. Circuler sur la BAU : 135 €, 3 points. La distance de sécurité de 2 s à 130 km/h ≈ 73 m.'
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-chevrons
+  type: marquage
+  image:
+    gen: chevrons
+    params: {}
+  nom: Chevrons de distance de sécurité
+  signification: 'Chevrons blancs peints dans l''axe des voies (autoroutes, tunnels) et espacés de façon à matérialiser la distance de sécurité : il faut laisser au moins deux chevrons entre soi et le véhicule qui précède.'
+  conduite: Garder deux chevrons visibles entre son véhicule et celui de devant.
+  complement: Sections d'autoroute et tunnels où les accidents en chaîne sont fréquents.
+  piege: Ne pas confondre avec les chevrons des balises J4 (virage) ou des musoirs J14b.
+  theme: L
+  sous_theme: marquages
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-voie-insertion
+  type: marquage
+  image:
+    gen: voie_insertion
+    params: {}
+  nom: Ligne de délimitation des voies d'insertion, de décélération et d'entrecroisement (T2 5u)
+  signification: 'Ligne discontinue large (T2 : 3 m / 3,5 m, largeur 5u) séparant une voie d''accélération, de décélération ou d''entrecroisement de la chaussée principale ; les traits larges signalent une voie spéciale.'
+  conduite: 'Voie d''accélération : accélérer pour atteindre la vitesse du trafic et s''insérer en cédant le passage (le conducteur déjà sur l''autoroute est prioritaire mais doit faciliter l''insertion). Voie de décélération : s''y engager dès son début puis freiner dedans, pas sur la voie principale.'
+  complement: Entrées et sorties d'autoroute et de routes à chaussées séparées ; voies de stockage pour tourner. Une ligne discontinue LARGE à traits courts délimite une voie spéciale (insertion, sortie, stockage, bus) ; une ligne discontinue FINE à longs vides (T1) sépare deux voies ordinaires.
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-bande-cyclable
+  type: marquage
+  image:
+    gen: bande_cyclable
+    params:
+      green: true
+  nom: Bande cyclable (ligne T3 5u + pictogramme vélo)
+  signification: 'Voie réservée aux cyclistes sur la chaussée, délimitée par une ligne discontinue large à traits longs (T3 : 3 m / 1,33 m, largeur 5u) et souvent un pictogramme vélo peint. Interdit aux autres véhicules d''y circuler, de s''y arrêter ou d''y stationner (sauf pour la traverser en tournant, en cédant le passage aux cyclistes).'
+  conduite: Ne pas y rouler ni y stationner ; contrôler l'angle mort avant de la couper pour tourner à droite ; une bande cyclable peut être à contresens (double-sens cyclable).
+  complement: Sur la chaussée, côté droit ; signalisation par B22a (obligatoire) ou C113 (conseillée). Stationnement sur bande cyclable = très gênant (135 €). Une bande cyclable est sur la chaussée ; une piste cyclable est séparée de la chaussée.
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-couloir-bus
+  type: marquage
+  image:
+    gen: voie_texte
+    params:
+      text: BUS
+  nom: Couloir réservé aux bus (ligne T3 5u + inscription BUS)
+  signification: Voie réservée aux autobus, délimitée par une ligne discontinue large (T3 5u) ou une ligne continue, avec l'inscription « BUS » (et parfois « TAXI ») au sol. Interdite aux autres véhicules sauf catégories autorisées par panonceau. Ligne continue = infranchissable ; ligne discontinue = traversable pour tourner ou accéder à une propriété.
+  conduite: Ne pas y circuler ni y stationner ; la traverser seulement pour tourner (si ligne discontinue), en cédant le passage aux bus. Dans un carrefour, un damier blanc peut prolonger le couloir.
+  complement: 'En agglomération ; signalisation verticale B27a / C24a. Circuler dans un couloir bus : 135 €. Certains couloirs sont à contresens de la circulation générale.'
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ligne-jaune-continue
+  type: marquage
+  image:
+    gen: ligne_jaune
+    params:
+      style: continue
+  nom: 'Ligne jaune continue (sur bordure ou en rive) : arrêt interdit'
+  signification: 'Ligne jaune continue peinte sur la bordure du trottoir ou en rive de chaussée : interdiction de s''arrêter et de stationner (équivalent au sol du panneau B6d).'
+  conduite: Ne pas s'immobiliser le long de cette bordure.
+  complement: Le long des bordures concernées (sorties de garage, arrêts, zones de sécurité). JAUNE continue = arrêt ET stationnement interdits ; JAUNE discontinue = stationnement interdit (arrêt possible).
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ligne-jaune-discontinue
+  type: marquage
+  image:
+    gen: ligne_jaune
+    params:
+      style: discontinue
+  nom: 'Ligne jaune discontinue (sur bordure) : stationnement interdit'
+  signification: 'Ligne jaune discontinue (T''2, 50 cm / 50 cm) peinte sur la bordure ou en rive : interdiction de stationner, l''arrêt restant autorisé (équivalent au sol du panneau B6a1).'
+  conduite: On peut s'arrêter brièvement (dépose, chargement) mais pas stationner.
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ligne-jaune-zigzag
+  type: marquage
+  image:
+    gen: ligne_jaune
+    params:
+      style: zigzag
+  nom: 'Ligne jaune en zigzag : arrêt de bus'
+  signification: 'Ligne jaune en zigzag peinte le long du trottoir matérialisant un arrêt d''autobus : interdiction de s''y arrêter et d''y stationner pour les autres véhicules.'
+  conduite: Ne pas s'arrêter ni stationner sur le zigzag, même brièvement ; ne pas gêner le bus qui repart.
+  complement: 'Aux arrêts de bus (panneau C6). S''arrêter ou stationner sur l''emplacement réservé au bus = stationnement gênant (R417-10 II 2°) : 35 € et mise en fourrière possible ; circuler ou stationner dans un couloir bus est en revanche très gênant (135 €).'
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-livraison
+  type: marquage
+  image:
+    gen: livraison
+    params: {}
+  nom: Aire de livraison (ligne jaune T'2 + croix jaune + inscription LIVRAISON)
+  signification: 'Emplacement réservé à l''arrêt des véhicules effectuant un chargement/déchargement : ligne jaune discontinue et croix diagonale jaune, avec l''inscription « LIVRAISON ». Depuis 2010, certaines aires (ligne discontinue simple) sont ouvertes au stationnement des particuliers la nuit (20 h – 7 h), dimanches et fêtes ; les aires « sanctuarisées » (double ligne discontinue) restent réservées 24 h/24.'
+  conduite: Ne pas y stationner (arrêt bref possible pour un chargement) sauf horaires autorisés sur les aires partagées.
+  complement: En agglomération.
+  theme: L
+  sous_theme: marquages
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-marquage-temporaire-jaune
+  type: marquage
+  image:
+    gen: marquage_temporaire
+    params: {}
+  nom: Marquage temporaire jaune (chantier)
+  signification: 'En zone de travaux, les lignes et flèches temporaires sont peintes en jaune : elles remplacent le marquage blanc permanent, même si celui-ci reste visible, et prévalent sur lui.'
+  conduite: Suivre les lignes jaunes et ignorer les lignes blanches contradictoires.
+  complement: 'Zones de chantier, basculements de chaussée. Priorité : marquage temporaire jaune > marquage permanent blanc.'
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-zone-bleue
+  type: marquage
+  image:
+    gen: zone_bleue
+    params: {}
+  nom: Marquage bleu (zone bleue)
+  signification: 'Emplacements de stationnement délimités en bleu (au lieu de blanc) : stationnement gratuit à durée limitée avec disque de stationnement (zone bleue, panneaux B6b3 / C1b).'
+  conduite: Apposer son disque de stationnement et respecter la durée maximale.
+  theme: L
+  sous_theme: marquages
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-damier-rouge-blanc
+  type: marquage
+  image:
+    gen: damier
+    params:
+      colour: rouge
+  nom: Damier rouge et blanc (voie de détresse)
+  signification: Damier rouge et blanc peint au début d'une voie de détresse (lit d'arrêt) en fin de descente dangereuse.
+  conduite: N'y entrer qu'en cas de défaillance des freins ; ne jamais s'y arrêter ou stationner.
+  complement: À l'entrée des voies de détresse (C26a/C26b).
+  theme: L
+  sous_theme: marquages
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-ralentisseur-triangles
+  type: marquage
+  image:
+    gen: ralentisseur
+    params:
+      kind: dos_d_ane
+  nom: Marquage d'un ralentisseur (triangles blancs)
+  signification: 'Trois triangles blancs (« dents de requin ») disposés sur le ralentisseur, pointes dans le sens de la circulation, dans l''axe de chaque voie : ils signalent un dos-d''âne ; sur les plateaux et coussins, les triangles couvrent les rampes. Non obligatoire en zone 30.'
+  conduite: Ralentir à 30 km/h maximum avant de franchir.
+  complement: Sur la rampe du ralentisseur ; signalisation verticale A2b puis C27. Les triangles blancs au sol en France = ralentisseur (pas un cédez-le-passage).
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-plateau-sureleve
+  type: marquage
+  image:
+    gen: ralentisseur
+    params:
+      kind: plateau
+  nom: Ralentisseur de type trapézoïdal (plateau surélevé)
+  signification: Surélévation de chaussée à plateau (rampes d'accès + plateau plat, souvent avec passage piéton surélevé), sur toute la largeur de la chaussée ; signalé par A2b / C27 (et M9d sous C20a si passage piéton surélevé) avec triangles blancs sur les rampes.
+  conduite: Ralentir à 30 km/h ; céder le passage aux piétons si le plateau porte un passage.
+  complement: Agglomération, zones 30 et zones de rencontre.
+  theme: L
+  sous_theme: marquages
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-sas-velo
+  type: marquage
+  image:
+    gen: passage
+    params:
+      kind: sas_velo
+  nom: Sas vélo (sas cyclable)
+  signification: 'Espace réservé aux cyclistes entre deux lignes d''effet des feux (3 à 5 m), matérialisé par un pictogramme vélo, à un carrefour à feux : les voitures s''arrêtent à la ligne arrière, les cyclistes se placent devant, bien visibles, pour démarrer avant les véhicules motorisés.'
+  conduite: 'En voiture ou à moto : s''arrêter à la première ligne (arrière), ne jamais s''immobiliser dans le sas (135 €, 4 points comme un franchissement de ligne d''arrêt).'
+  complement: Carrefours à feux en agglomération (créés en 1998, généralisés depuis 2015). Les cyclomoteurs n'ont accès au sas que si l'autorité locale l'autorise (décret 2015).
+  theme: L
+  sous_theme: marquages
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-cvcb
+  type: marquage
+  image:
+    gen: cvcb
+    params: {}
+  nom: Chaussée à voie centrale banalisée (« chaucidou »)
+  signification: Chaussée étroite sans ligne axiale, comportant une voie centrale unique à double sens pour les véhicules motorisés et deux bandes latérales (rives) destinées aux cyclistes. Les véhicules circulent au centre et, pour se croiser, se déportent temporairement sur les rives en cédant le passage aux cyclistes.
+  conduite: Rouler au centre ; lors d'un croisement, se déporter à droite sur la bande latérale seulement après s'être assuré de l'absence de cycliste, puis revenir au centre. Ne pas rouler en permanence sur la rive.
+  complement: Routes étroites hors et en agglomération ; signalée par un panneau d'information (C24a / C50) et souvent une limitation de vitesse. Recommandée par le CEREMA ; pas de code de panneau dédié dans l'IISR (signalisation par C24a/C50 avec schéma).
+  theme: L
+  sous_theme: marquages
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: marq-losange-vr
+  type: marquage
+  image:
+    gen: losange_sol
+    params: {}
+  nom: Losange blanc au sol (voie réservée)
+  signification: Losange blanc peint dans l'axe d'une voie réservée (covoiturage, transports en commun, taxis) sur voie rapide, en complément du panneau à losange (expérimentation 2020-2026).
+  conduite: Ne pas emprunter la voie si l'on n'appartient pas aux catégories autorisées (aux heures indiquées).
+  complement: Voies de gauche (ou de droite) des routes à chaussées séparées équipées.
+  theme: L
+  sous_theme: marquages
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

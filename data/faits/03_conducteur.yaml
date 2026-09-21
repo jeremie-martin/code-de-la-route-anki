@@ -1,0 +1,132 @@
+- id: c-temps-reaction
+  texte: Le temps de réaction d'un conducteur attentif est d'environ {{c1::1 seconde}} ; il passe à {{c2::2 secondes}} (ou plus) avec la fatigue, l'alcool, les stupéfiants, les médicaments ou le téléphone.
+  explication: 'Pendant ce temps, le véhicule continue à la même vitesse. Le temps de réaction ne dépend pas de la vitesse : seule la distance parcourue change.'
+  theme: C
+  sous_theme: distances
+  source: securite-routiere.gouv.fr — La vitesse et la conduite ; Codeclic — Temps de réaction
+- id: c-distance-reaction-formule
+  texte: 'Distance parcourue pendant 1 s de réaction ≈ chiffre des dizaines de la vitesse × {{c1::3}} : à 50 km/h → {{c2::15 m}}, à 90 km/h → {{c3::27 m}}, à 130 km/h → {{c4::39 m}}.'
+  explication: 'C''est la convention des auto-écoles (V × 3/10). Valeur physique (V ÷ 3,6) : 14 m, 25 m, 36 m — les deux jeux de valeurs peuvent apparaître, ils sont proches.'
+  theme: C
+  sous_theme: distances
+  source: Codeclic ; En Voiture Simone ; securite-routiere.gouv.fr — Dépliant vitesse
+- id: c-distance-arret-formule
+  texte: 'Distance d''arrêt sur sol sec ≈ (dizaines de la vitesse)² : à 50 km/h → {{c1::25 m}}, à 90 km/h → {{c2::81 m}}, à 130 km/h → {{c3::169 m}}.'
+  explication: 'Distance d''arrêt = distance de réaction + distance de freinage. Convention d''examen la plus répandue ; certaines écoles appliquent le carré à la distance de freinage (arrêt = 15 + 25 = 40 m à 50 km/h) et la Sécurité routière retient 28 m / 70 m / 129 m (décélération 7 m/s²). Ce qui est sûr : l''ordre de grandeur (25-28 m à 50 km/h) et la relation vitesse × 2 → freinage × 4.'
+  theme: C
+  sous_theme: distances
+  source: Ornikar ; En Voiture Simone ; Stych ; securite-routiere.gouv.fr — Dépliant vitesse
+- id: c-distance-mouillee
+  texte: Sur chaussée mouillée, l'adhérence est environ {{c1::2}} fois moins bonne et la distance de freinage environ {{c1::2}} fois plus longue (question officielle 2023) ; sur neige ou verglas, la distance de freinage peut être multipliée par {{c2::10}}.
+  explication: 'Q13 officielle : autoroute mouillée → « l''adhérence est 2 fois moins bonne » OUI, « la distance de freinage est 2 fois plus longue » OUI. Certaines écoles enseignent plutôt « distance d''arrêt × 1,5 » : l''ordre de grandeur suffit. Conséquence pratique : on double l''intervalle et on réduit la vitesse.'
+  theme: C
+  sous_theme: distances
+  source: Sécurité routière — Exemples de nouvelles questions (Q13) ; Ornikar ; Codes Rousseau
+- id: c-vitesse-double-freinage
+  texte: Quand la vitesse double, la distance de freinage est multipliée par {{c1::4}} (l'énergie cinétique croît avec le carré de la vitesse).
+  explication: 'À 100 km/h, on freine 4 fois plus long qu''à 50. Et masse ×2 → énergie ×2 seulement : la vitesse pèse plus que le poids.'
+  theme: C
+  sous_theme: distances
+  source: securite-routiere.gouv.fr — La vitesse et la conduite ; Ornikar — Énergie cinétique
+- id: c-intervalle-2s
+  texte: 'Entre deux véhicules qui se suivent, l''intervalle de sécurité minimal est de {{c1::2 secondes}} (art. R412-12), soit en mètres ≈ dizaines de la vitesse × {{c2::6}} : 50 km/h → {{c3::30 m}}, 130 km/h → {{c4::78 m}}.'
+  explication: 'Méthode : quand le véhicule qui précède passe un repère fixe, compter « un crocodile, deux crocodiles » ; si j''atteins le repère avant, je suis trop près. Pluie, nuit, chargement, débutant : 3 à 4 s. Sanction : 135 €, 3 points.'
+  theme: C
+  sous_theme: distances
+  source: Code de la route, art. R412-12 ; Codes Rousseau — Calcul des distances
+- id: c-intervalle-pl-tunnel
+  texte: Hors agglomération, les véhicules de plus de {{c1::3,5 t}} (ou ensembles de plus de 7 m) qui se suivent à la même vitesse gardent au moins {{c2::50 m}} ; dans les tunnels, l'intervalle signalé est en général de {{c3::150 m}} (parfois 70 m), à respecter même à l'arrêt.
+  explication: Dans les tunnels, deux diodes bleues ou deux chevrons matérialisent l'intervalle. En voiture, je garde aussi une grande distance derrière un poids lourd pour voir devant lui — et pour qu'il me voie dans ses rétroviseurs.
+  theme: C
+  sous_theme: distances
+  source: Code de la route, art. R412-12 ; securite-routiere.gouv.fr — Conduire dans un tunnel
+- id: c-autoroute-deux-traits
+  texte: 'Sur autoroute, l''intervalle de sécurité se contrôle avec la ligne de rive de la bande d''arrêt d''urgence : garder au moins {{c1::2 traits}} entre soi et le véhicule qui précède (trait 39 m + espace 13 m + trait ≈ {{c2::90 m}}).'
+  explication: '« Un trait = danger, deux traits = sécurité ». À 130 km/h, 2 s = 78 m, d''où les 2 traits (IISR, modulation T4 : trait 39 m, vide 13 m).'
+  theme: C
+  sous_theme: distances
+  source: securite-routiere.gouv.fr — La vitesse et la conduite ; IISR 7e partie, art. 113-1
+- id: c-telephone-5s
+  texte: Lire un SMS détourne les yeux de la route environ {{c1::5 secondes}}, soit {{c2::70 m}} parcourus à 50 km/h (≈ 180 m à 130 km/h) ; le risque d'accident est multiplié par {{c3::3}} au téléphone et par {{c4::23}} en écrivant un message.
+  explication: 'Le smartphone cumule 4 distractions : visuelle, cognitive, auditive et physique, et réduit le champ de vision de 30 à 50 %.'
+  theme: C
+  sous_theme: vigilance
+  source: securite-routiere.gouv.fr — Le téléphone et la conduite
+- id: c-champ-visuel-chiffres
+  texte: 'Champ visuel du conducteur : environ {{c1::180°}} à l''arrêt, 100° à 40 km/h, 75° à 70 km/h, {{c2::45°}} à 100 km/h et seulement {{c3::30°}} à 130 km/h.'
+  explication: 'Barème enseigné par les auto-écoles ; la Sécurité routière ne cite explicitement que 180° à l''arrêt, 45° à 100 km/h et 30° à 130 km/h. À grande vitesse, seule la vision centrale reste utile : les piétons et véhicules sur les côtés ne sont plus perçus (« effet tunnel »).'
+  theme: C
+  sous_theme: perception
+  source: securite-routiere.gouv.fr — Dépliant La vue ; Conduire sur autoroute ; En Voiture Simone — Champ visuel
+- id: c-vue-90-pourcent
+  texte: Environ {{c1::90 %}} des informations utiles à la conduite passent par la vue ; l'acuité visuelle exigée pour le permis B est d'au moins {{c2::5/10}} avec les deux yeux (avec correction).
+  explication: 'Arrêté du 28 mars 2022. Si un œil voit moins de 1/10, l''autre doit atteindre 5/10. Avec lunettes ou lentilles obligatoires, le permis porte le code 01 : conduire sans, c''est 135 € et 3 points. Un contrôle de la vue régulier est conseillé (la baisse est progressive et inaperçue).'
+  theme: C
+  sous_theme: perception
+  source: Arrêté du 28 mars 2022 ; En Voiture Simone — Acuité visuelle
+- id: c-feux-portee
+  texte: Les feux de croisement éclairent à environ {{c1::30 m}}, les feux de route à environ {{c2::100 m}} ; un panneau doit être lisible à 150 m hors agglomération et 50 m en agglomération.
+  explication: 'De nuit en feux de croisement, un obstacle qui surgit dans la zone éclairée est inévitable au-delà de ~70 km/h : la vitesse doit permettre de s''arrêter dans la distance éclairée.'
+  theme: C
+  sous_theme: perception
+  source: securite-routiere.gouv.fr — Conduire la nuit ; Dépliant La vue
+- id: c-fatigue-pause-chiffres
+  texte: 'Sur long trajet : une pause de {{c1::15 à 20 min}} au moins toutes les {{c2::2 heures}} ; en cas de somnolence, une sieste d''environ {{c3::20 min}} est le seul remède efficace.'
+  explication: 'Micro-sommeils de 1 à 4 s, bâillements, paupières lourdes = somnolence : on s''arrête et on dort. Fatigue (nuque raide, regard fixe, picotements) = pause. Heures à risque : 2 h-5 h et 13 h-15 h.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — La fatigue et la conduite
+- id: c-somnolence-stats
+  texte: 'La somnolence est la première cause d''accident mortel sur autoroute : environ {{c1::1 sur 3}} ; {{c2::17 h}} de veille active équivalent à une alcoolémie de 0,5 g/L.'
+  explication: Dès les premiers signes de somnolence, le risque d'accident est multiplié par 3 à 4 dans la demi-heure. Chiffre de campagne ASFA/Sécurité routière ; l'ONISR (facteurs relevés par les forces de l'ordre) ne relève la somnolence que chez 4 % des présumés responsables (8 à 14 % sur autoroute) — l'examen retient « 1 sur 3 ».
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — La fatigue et la conduite ; ASFA
+- id: c-nuit-risque
+  texte: Conduire la nuit multiplie le risque d'accident mortel par environ {{c1::7}} (fatigue, alcool, vitesse plus élevée, perception réduite) ; environ {{c2::75 %}} des accidents mortels surviennent près du domicile (trajets routiniers).
+  explication: La routine baisse la vigilance ; la nuit combine tous les facteurs de risque. Les 18-24 ans meurent surtout la nuit (56 % de leur mortalité routière).
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Conduire la nuit ; Conseils aux conducteurs novices
+- id: c-verre-standard
+  texte: Un verre « standard » (25 cl de bière à 5°, 10 cl de vin à 12°, 3 cl d'alcool à 40°) contient environ {{c1::10 g}} d'alcool pur et élève l'alcoolémie d'environ {{c2::0,20 à 0,25 g/L}} ; deux verres suffisent pour atteindre 0,5 g/L.
+  explication: Plus chez une femme ou une personne mince (jusqu'à 0,30 g/L par verre). Les doses servies à la maison sont plus généreuses qu'au bar (question officielle 2023).
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code en Poche
+- id: c-alcool-elimination
+  texte: Le foie élimine l'alcool à raison de {{c1::0,10 à 0,15 g/L}} par heure (≈ 2 h 30 par verre) ; le pic d'alcoolémie survient {{c2::15 à 30 min}} après le dernier verre à jeun, {{c3::1 h}} au cours d'un repas.
+  explication: Rien n'accélère l'élimination (ni café, ni douche, ni sport). Après une soirée, on peut être positif le lendemain matin.
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L'alcool et la conduite ; Codeclic
+- id: c-alcool-risque-multiplie
+  texte: 'Risque d''accident mortel selon l''alcoolémie : ×{{c1::2}} à 0,5 g/L, ×{{c2::10}} à 0,8 g/L, ×35 à 1,2 g/L ; l''alcool est présent dans près de {{c3::30 %}} des accidents mortels.'
+  explication: 'Barème enseigné (En Voiture Simone, Vinci). Sécurité routière : un conducteur alcoolisé a 18 fois plus de risque d''être responsable d''un accident mortel ; plus de 1 000 tués par an.'
+  theme: C
+  sous_theme: deficiences
+  source: En Voiture Simone — Alcool au volant ; securite-routiere.gouv.fr — L'alcool et la conduite
+- id: c-conversion-air-sang
+  texte: 'Alcoolémie : la valeur dans l''air expiré (mg/L) est la moitié de la valeur dans le sang (g/L) : 0,5 g/L = {{c1::0,25 mg/L}} ; 0,2 g/L (probatoire) = {{c2::0,10 mg/L}} ; 0,8 g/L (délit) = {{c3::0,40 mg/L}}.'
+  explication: L'éthylotest et l'éthylomètre mesurent l'air expiré ; la prise de sang mesure le sang. Les questions mélangent volontairement les deux unités.
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code de la route, art. R234-1
+- id: c-stupefiants-stats
+  texte: Les stupéfiants sont en cause dans environ {{c1::1 accident mortel sur 5}} ; le cannabis multiplie le risque d'accident mortel par près de {{c2::2}} (1,65 à 1,8), et l'association alcool + cannabis par environ {{c3::29}} (chiffre Sécurité routière).
+  explication: 'Le dépistage salivaire est possible à tout moment, même sans infraction ; il concerne aussi les cyclistes, les trottinettes et l''accompagnateur en conduite accompagnée. Aucun seuil : toute trace est un délit. D''anciens films de la Sécurité routière donnaient ×15 : les deux valeurs circulent dans les QCM.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — La drogue et la conduite ; ONISR 2024
+- id: c-retro-7s
+  texte: En circulation, on contrôle le rétroviseur intérieur {{c1::régulièrement (toutes les 5 à 10 secondes environ)}} et, obligatoirement, avant de {{c2::ralentir, freiner, s'arrêter ou tourner}}.
+  explication: 'Rétroviseur extérieur du côté concerné + angle mort avant de : tourner, dépasser, se déporter, changer de voie, se rabattre, s''insérer, quitter un stationnement, ouvrir la portière. Les contrôles précèdent toujours le clignotant ; l''angle mort est le dernier regard avant de tourner le volant.'
+  theme: C
+  sous_theme: vigilance
+  source: Stych — Les contrôles ; Codeclic — L'angle mort
+- id: c-choc-50-etages
+  texte: Un choc frontal à 50 km/h équivaut à une chute de {{c1::3 étages}} (≈ 10 m) ; un enfant de 20 kg non attaché devient alors un projectile d'une {{c2::demi-tonne}}.
+  explication: 'Au-delà de 80 km/h, un choc frontal laisse peu de chances même ceinturé : la vitesse est la première cause de mortalité routière (~30 % des accidents mortels). Certains supports de la Sécurité routière disent « 4e étage » ; physiquement v²/2g ≈ 10 m, soit 3 étages.'
+  theme: C
+  sous_theme: perception
+  source: securite-routiere.gouv.fr — Conseils aux conducteurs novices ; Port de la ceinture

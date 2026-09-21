@@ -1,0 +1,720 @@
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 57 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+- id: c1a
+  type: panneau
+  code: C1a
+  image:
+    commons: France road sign C1a.svg
+  nom: Lieu aménagé pour le stationnement
+  signification: Indique un parking ou un emplacement aménagé pour le stationnement (gratuit, sauf indication).
+  conduite: Se garer uniquement sur les emplacements ; des panonceaux (M4, M6, M3b) précisent catégories, conditions et direction.
+  complement: En position (à l'entrée du parking) ou en présignalisation avec panonceau de direction M3b.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c1b
+  type: panneau
+  code: C1b
+  image:
+    commons: France road sign C1b.svg
+  nom: Lieu aménagé pour le stationnement gratuit à durée limitée avec contrôle par disque
+  signification: Parking gratuit mais à durée limitée, contrôlé par disque de stationnement (zone bleue).
+  conduite: Apposer le disque (heure d'arrivée) et respecter la durée indiquée.
+  complement: La version ancienne (C1b-ancien) montrait un disque marqué 1 h 30.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c1c
+  type: panneau
+  code: C1c
+  image:
+    commons: France road sign C1c.svg
+  nom: Lieu aménagé pour le stationnement payant
+  signification: Parking ou emplacements de stationnement payants.
+  conduite: Payer selon les modalités affichées (horodateur, application).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c3
+  type: panneau
+  code: C3
+  image:
+    commons: France road sign C3.svg
+  nom: Risque d'incendie
+  signification: 'Indique une zone (forêt) exposée aux incendies : « Attention au feu ».'
+  conduite: Ne pas jeter de mégot, ne pas allumer de feu, ne pas stationner sur l'herbe sèche (pot d'échappement).
+  complement: En position, dans les massifs forestiers.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c4a
+  type: panneau
+  code: C4a
+  image:
+    commons: France road sign C4a (50).svg
+  nom: Vitesse conseillée
+  signification: Indique la vitesse à laquelle il est conseillé de circuler si les circonstances le permettent (ex. virage, sortie). Ce n'est pas une obligation.
+  conduite: Adapter sa vitesse à la valeur conseillée ; on peut rouler moins vite, et légalement plus vite dans la limite réglementaire, mais c'est déconseillé.
+  complement: 'En position uniquement. Fin : C4b. Carré bleu = indication (conseil) ; rond rouge = interdiction (maximum) ; rond bleu = obligation (minimum).'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c4b
+  type: panneau
+  code: C4b
+  image:
+    commons: France road sign C4b (50).svg
+  nom: Fin de vitesse conseillée
+  signification: Fin de la section à vitesse conseillée.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c5
+  type: panneau
+  code: C5
+  image:
+    commons: France road sign C5.svg
+  nom: Station de taxis
+  signification: Indique une station de taxis ; l'arrêt et le stationnement des autres véhicules y sont interdits.
+  conduite: Ne pas s'arrêter ni stationner sur l'emplacement réservé.
+  complement: En position, au début (et éventuellement à la fin) de la zone réservée.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c6
+  type: panneau
+  code: C6
+  image:
+    commons: France road sign C6.svg
+  nom: Arrêt d'autobus ou d'autocar
+  signification: Indique un arrêt de bus ou de car de ligne régulière ; l'arrêt et le stationnement des autres véhicules y sont interdits (zigzag jaune au sol).
+  conduite: Ne pas s'arrêter sur l'emplacement ; en agglomération, ralentir et au besoin s'arrêter pour laisser le bus quitter son arrêt (R412-11) — il annonce son départ par le clignotant.
+  complement: En position, à l'arrêt. En agglomération, on doit ralentir et au besoin s'arrêter pour laisser un bus quitter son arrêt.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c8
+  type: panneau
+  code: C8
+  image:
+    commons: France road sign C8.svg
+  nom: Emplacement d'arrêt d'urgence
+  signification: Indique un emplacement (refuge) où l'arrêt d'urgence est possible sur une route sans bande d'arrêt d'urgence (autoroute, route à chaussées séparées, tunnel).
+  conduite: N'y stationner qu'en cas de panne ou d'urgence ; panonceaux M9e/M9f signalent un poste d'appel d'urgence et/ou un extincteur.
+  complement: En position. Un arrêt hors urgence sur un tel emplacement est interdit.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c9
+  type: panneau
+  code: C9
+  image:
+    commons: France road sign C9.svg
+  nom: Station d'autopartage
+  signification: Emplacement d'arrêt et de stationnement réservé aux véhicules bénéficiant du label « autopartage » (créé par l'arrêté du 31 décembre 2012).
+  conduite: Ne pas y stationner avec un véhicule personnel.
+  piege: 'Attention : dans certains cours de code, « C9 » est utilisé à tort pour le tunnel ; le tunnel est C111.'
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c12
+  type: panneau
+  code: C12
+  image:
+    commons: France road sign C12.svg
+  nom: Circulation à sens unique
+  signification: 'Indique que la chaussée est à sens unique : tous les véhicules circulent dans le sens de la flèche ; on peut se placer dans la voie de gauche pour tourner à gauche ou dépasser (les deux côtés sont dans le même sens) ; le demi-tour y est impossible.'
+  conduite: Se placer dans la voie adaptée à sa direction (on peut rouler à gauche pour tourner à gauche) ; ne pas faire demi-tour ; attention aux cyclistes en contresens si double-sens cyclable.
+  complement: En position, à l'entrée de la voie à sens unique (l'autre extrémité porte un B1).
+  piege: C12 (rectangle bleu, flèche) = sens unique (indication) ; B21b (rond bleu, flèche) = tout droit obligatoire. La fin du sens unique peut être signalée par A18 (circulation dans les deux sens).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c13a
+  type: panneau
+  code: C13a
+  image:
+    commons: France road sign C13a.svg
+  nom: Impasse
+  signification: Indique que la voie est une impasse (sans issue) pour les véhicules.
+  conduite: Ne pas s'y engager si l'on ne s'y rend pas ; attention aux demi-tours des autres.
+  complement: En position, à l'entrée de l'impasse.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c13b
+  type: panneau
+  code: C13b
+  image:
+    commons: France road sign C13b.svg
+  nom: Présignalisation d'une impasse
+  signification: Annonce qu'une voie adjacente (à droite ou à gauche) est une impasse.
+  conduite: Ne pas emprunter la voie latérale si l'on cherche un itinéraire de passage.
+  complement: Avant l'intersection avec l'impasse.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c13c
+  type: panneau
+  code: C13c
+  image:
+    commons: France road sign C13c.svg
+  nom: Impasse comportant une issue pour les piétons
+  signification: Impasse pour les véhicules, mais avec une issue pour les piétons (créé en 2011).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c13d
+  type: panneau
+  code: C13d
+  image:
+    commons: France road sign C13d.svg
+  nom: Impasse comportant une issue pour les piétons et les cyclistes
+  signification: Impasse pour les véhicules motorisés, avec issue pour les piétons et les cyclistes (créé en 2011).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c14
+  type: panneau
+  code: C14
+  image:
+    commons: France road sign C14.svg
+  nom: Praticabilité d'une section de route
+  signification: Présignale l'état (ouvert / fermé, chaînes obligatoires) d'un col, d'un tunnel ou d'une route de montagne, sur des volets amovibles.
+  conduite: Choisir un autre itinéraire si la section est fermée ; prévoir l'équipement indiqué.
+  complement: Avant le dernier carrefour permettant d'éviter la section. Jamais complété d'un panonceau.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c18
+  type: panneau
+  code: C18
+  image:
+    commons: France road sign C18.svg
+  nom: Priorité par rapport à la circulation venant en sens inverse
+  signification: Dans un passage étroit, le conducteur a la priorité par rapport aux véhicules venant en sens inverse (qui, eux, voient le panneau B15 et doivent céder le passage).
+  conduite: 'S''engager en restant prudent : la priorité ne dispense pas de vérifier que l''autre a bien cédé le passage.'
+  complement: En position, à l'entrée du passage étroit, côté prioritaire. C18 = carré bleu = je suis prioritaire ; B15 = rond rouge = je cède. La flèche rouge est celle de l'usager qui cède.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c20a
+  type: panneau
+  code: C20a
+  image:
+    commons: France road sign C20a.svg
+  nom: Passage pour piétons (panneau de position)
+  signification: Indique la position d'un passage pour piétons (panneau de position, à hauteur du passage matérialisé au sol).
+  conduite: Céder le passage aux piétons engagés ou qui manifestent l'intention de traverser ; ne pas dépasser un véhicule arrêté devant un passage ; ne pas s'arrêter sur le passage (ni stationner à moins de 5 m en amont).
+  complement: 'À hauteur du passage piéton ; l''annonce se fait 150 m avant avec A13b. Panonceau M9d si passage surélevé. Triangle A13b = annonce (danger) ; carré bleu C20a = position. Arrêt et stationnement interdits 5 m en amont d''un passage piéton, hors emplacements matérialisés (R417-11, décret 2015-808 : très gênant, 135 €) ; la loi LOM impose la suppression de ces emplacements d''ici fin 2026.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c20b
+  type: panneau
+  code: C20b
+  image:
+    commons: France road sign C20b.svg
+  nom: Traversée de voie de véhicules de transport en commun
+  signification: Indique la position d'une traversée de voie réservée aux bus (site propre), créé en 2018.
+  conduite: Céder le passage aux bus, respecter les feux R24 éventuels.
+  complement: À hauteur de la traversée ; annonce par A9a.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c20c
+  type: panneau
+  code: C20c
+  image:
+    commons: France road sign C20c.svg
+  nom: Traversée de tramways
+  signification: Indique la position d'une traversée de voies de tramway ; le tramway est prioritaire.
+  conduite: Céder le passage au tramway, ne pas s'immobiliser sur les rails.
+  complement: À hauteur de la traversée ; annonce par A9b.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c23
+  type: panneau
+  code: C23
+  image:
+    commons: France road sign C23.svg
+  nom: Stationnement réglementé pour les caravanes et les autocaravanes
+  signification: Indique un emplacement où le stationnement des caravanes et camping-cars est réglementé (durée, période) selon le panonceau.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c24a
+  type: panneau
+  code: C24a
+  image:
+    commons: France road sign C24a.svg
+  nom: Conditions particulières de circulation par voie sur la route suivie
+  signification: 'Indique, voie par voie, des conditions particulières de circulation sur la route suivie : voie réservée (bus, vélos), voie à contresens, double-sens cyclable, voie réservée aux véhicules lents, etc.'
+  conduite: Se placer dans la voie qui correspond à son véhicule et à sa direction ; ne pas emprunter une voie réservée.
+  complement: En position, au début de la section. Utilisé notamment pour signaler un double-sens cyclable (voie avec vélo à contresens) et les couloirs bus à contresens.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c24b
+  type: panneau
+  code: C24b
+  image:
+    commons: France road sign C24b.svg
+  nom: Voies affectées à l'approche d'une intersection
+  signification: Indique les voies affectées aux différentes directions à l'approche d'une intersection (présélection).
+  conduite: Se placer à l'avance dans la voie correspondant à la direction voulue ; une fois engagé dans une voie de présélection, on doit suivre sa direction.
+  complement: En amont de l'intersection.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c24c
+  type: panneau
+  code: C24c
+  image:
+    commons: France road sign C24c.svg
+  nom: Conditions particulières de circulation sur la route ou la voie embranchée
+  signification: Indique les conditions de circulation (sens unique, double-sens cyclable, voie bus…) sur la route que l'on va rejoindre ou croiser.
+  conduite: Tenir compte, avant de tourner, de la présence éventuelle d'usagers à contresens sur la voie embranchée (cyclistes).
+  complement: Avant l'intersection.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c25a
+  type: panneau
+  code: C25a
+  image:
+    commons: France road sign C25a.svg
+  nom: Limitations générales de vitesse en France
+  signification: Rappel, aux frontières, des vitesses maximales autorisées sur le territoire français par type de route (agglomération 50, route 80, route à chaussées séparées 110, autoroute 130).
+  conduite: 'Mémoriser les limitations générales ; par temps de pluie : 110 sur autoroute, 100 sur 2×2 voies, 80 sur route.'
+  complement: Aux points d'entrée en France. Depuis le 1er juillet 2018, 80 km/h sur les routes bidirectionnelles sans séparateur (90 possible par décision départementale depuis 2020). Le dessin ci-contre est simplifié (le panneau réel comporte aussi la ligne 110 km/h des routes à chaussées séparées).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c25b
+  type: panneau
+  code: C25b
+  image:
+    commons: France road sign C25b.svg
+  nom: Rappel des limitations de vitesse sur autoroute
+  signification: 'Rappel des limites de vitesse sur autoroute : 130 km/h par temps sec, 110 km/h par temps de pluie (ou 110/100 sur certaines sections).'
+  conduite: Réduire à 110 dès que la chaussée est mouillée (essuie-glaces en marche).
+  complement: 'Sur autoroute, après les péages et échangeurs. Jeune conducteur (permis probatoire) : 110 sur autoroute, 100 sur 2×2 voies, 80 sur route, quelles que soient les conditions.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c26a
+  type: panneau
+  code: C26a
+  image:
+    commons: France road sign C26a.svg
+  nom: Voie de détresse à droite
+  signification: Indique une voie de détresse (lit d'arrêt en gravier remontant) située à droite, permettant d'arrêter un véhicule dont les freins ont lâché dans une descente.
+  conduite: En cas de défaillance des freins, s'y engager sans hésiter ; sinon ne jamais s'y arrêter ni y stationner.
+  complement: En position et en présignalisation, en fin de descente dangereuse ; damier rouge et blanc au sol à l'entrée.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c26b
+  type: panneau
+  code: C26b
+  image:
+    commons: France road sign C26b.svg
+  nom: Voie de détresse à gauche
+  signification: Voie de détresse située à gauche de la chaussée.
+  conduite: Même conduite que C26a.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c27
+  type: panneau
+  code: C27
+  image:
+    commons: France road sign C27.svg
+  nom: Surélévation de chaussée
+  signification: Indique la position d'un ralentisseur (dos-d'âne, plateau surélevé, coussin) ; souvent limité à 30 km/h.
+  conduite: Franchir à vitesse très réduite (30 km/h maximum, souvent moins) ; ne pas dépasser sur le ralentisseur.
+  complement: 'En position, au niveau du ralentisseur, sans panonceau. Annonce préalable par A2b (sauf en zone 30 où la signalisation est facultative). Triangle A2b = annonce ; carré bleu C27 = position. Marquage au sol : trois triangles blancs sur le dos-d''âne (« dents de requin »).'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c28
+  type: panneau
+  code: C28
+  image:
+    commons: France road sign C28.svg
+  nom: Réduction du nombre de voies
+  signification: Indique une réduction du nombre de voies sur une route à chaussées séparées ou un créneau de dépassement (ex. passage de 3 à 2 voies, de 2 à 1).
+  conduite: Se rabattre à temps sur la voie qui subsiste (généralement la droite), en alternant courtoisement (fermeture éclair) en cas de bouchon.
+  complement: 'En présignalisation puis en position ; un panonceau M1 peut préciser la distance. Version temporaire jaune : KD10. En cas de rétrécissement, celui qui reste dans sa voie qui continue est prioritaire ; celui dont la voie disparaît doit s''insérer.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c29a
+  type: panneau
+  code: C29a
+  image:
+    commons: France road sign C29a.svg
+  nom: Présignalisation d'un créneau de dépassement
+  signification: Annonce, avec la distance, un créneau de dépassement (section à trois voies avec deux voies dans un sens, ou passage à chaussées séparées).
+  conduite: Se préparer à dépasser sur le créneau plutôt qu'avant.
+  complement: Avant le créneau, avec distance.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c29b
+  type: panneau
+  code: C29b
+  image:
+    commons: France road sign C29b.svg
+  nom: 'Créneau de dépassement à trois voies : deux voies dans mon sens'
+  signification: 'Début d''un créneau de dépassement : la chaussée comporte trois voies dont deux affectées à mon sens de circulation ; le dépassement y est facilité.'
+  conduite: Utiliser la voie de gauche uniquement pour dépasser, puis se rabattre avant la fin du créneau (annoncée par C30).
+  complement: 'Au début du créneau ; panonceau M2 possible (longueur). Fin : C30.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c29c
+  type: panneau
+  code: C29c
+  image:
+    commons: France road sign C29c.svg
+  nom: 'Section de route à trois voies : une voie dans mon sens, deux dans l''autre'
+  signification: 'La chaussée comporte trois voies dont une seule dans mon sens : les deux autres sont affectées au sens inverse. Interdiction d''utiliser la voie centrale pour dépasser.'
+  conduite: Rester dans sa voie ; pas de dépassement (ligne continue en général).
+  piege: 'Piège classique : sur une route à trois voies, la voie du milieu appartient au sens qui a deux flèches ; ne pas s''y engager si l''on n''a qu''une flèche.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c30
+  type: panneau
+  code: C30
+  image:
+    commons: France road sign C30.svg
+  nom: Fin d'un créneau de dépassement à trois voies affectées
+  signification: 'Annonce la fin du créneau de dépassement : les deux voies du même sens se réduisent à une.'
+  conduite: Se rabattre à droite en toute sécurité avant la fin du créneau (flèches de rabattement au sol).
+  complement: En présignalisation (avec M1) puis en position.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c50
+  type: panneau
+  code: C50
+  image:
+    commons: France road sign C50.svg
+  nom: Indications diverses
+  signification: Panneau d'indication portant une inscription ou un pictogramme non prévu ailleurs (ex. « Zone de covoiturage », « Contrôle radar », « Nouveau régime de priorité »).
+  conduite: Lire l'information.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  complement: 'Exemple ci-contre : mention locale autorisant l''arrêt sur le trottoir — cas exceptionnel, l''arrêt sur trottoir étant sinon très gênant (135 €).'
+- id: c51a
+  type: panneau
+  code: C51a
+  image:
+    commons: France road sign C51a.svg
+  nom: Présignalisation du début d'une section à vitesse régulée
+  signification: Annonce une section d'autoroute ou voie rapide sur laquelle la vitesse maximale est modulée dynamiquement (panneaux à messages variables XB14) selon le trafic ou la météo (créé en 2011).
+  conduite: Respecter les vitesses affichées sur les panneaux lumineux, qui remplacent la limite générale.
+  complement: 'Fin : C51b.'
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c51b
+  type: panneau
+  code: C51b
+  image:
+    commons: France road sign C51b.svg
+  nom: Fin de section à vitesse régulée
+  signification: Fin de la section à vitesse régulée ; retour aux limitations générales.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c62
+  type: panneau
+  code: C62
+  image:
+    commons: France road sign C62.svg
+  nom: Présignalisation d'une borne de retrait de ticket de péage
+  signification: Annonce une borne où l'on prend un ticket de péage à l'entrée d'une section payante (système fermé).
+  conduite: Ralentir, s'arrêter à la borne et prendre le ticket ; ne pas le perdre.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c64a
+  type: panneau
+  code: C64a
+  image:
+    commons: France road sign C64a.svg
+  nom: 'Voie de péage : paiement auprès d''un péagiste'
+  signification: Indique une voie de péage où le paiement s'effectue auprès d'un agent (péagiste), tous moyens de paiement.
+  conduite: Emprunter cette voie si l'on paie en espèces ou en cas de doute.
+  complement: Au-dessus de chaque voie de péage.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c64b
+  type: panneau
+  code: C64b
+  image:
+    commons: France road sign C64b new.svg
+  nom: 'Voie de péage : paiement par carte bancaire'
+  signification: Voie de péage où le paiement se fait uniquement par carte bancaire ou accréditive.
+  conduite: Emprunter cette voie avec une carte ; pas d'espèces.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c64c1
+  type: panneau
+  code: C64c1
+  image:
+    commons: France road sign C64c1.svg
+  nom: 'Voie de péage : paiement automatique par pièces de monnaie'
+  signification: Voie de péage automatique acceptant les pièces de monnaie (« panier »).
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c64c2
+  type: panneau
+  code: C64c2
+  image:
+    commons: France road sign C64c2.svg
+  nom: 'Voie de péage : paiement automatique par pièces et billets'
+  signification: Voie de péage automatique acceptant pièces et billets (créé en 2011).
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c64d
+  type: panneau
+  code: C64d
+  image:
+    commons: France road sign C64d2.svg
+  nom: 'Voie de péage : paiement par abonnement (télépéage)'
+  signification: Voie réservée aux véhicules équipés d'un badge de télépéage ; passage sans arrêt à vitesse réduite (30 km/h).
+  conduite: N'emprunter cette voie qu'avec un badge ; rouler à 30 km/h maximum, ne pas talonner le véhicule précédent.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c65a
+  type: panneau
+  code: C65a
+  image:
+    commons: France road sign C65a.svg
+  nom: 'Péage en flux libre : moyens de paiement'
+  signification: 'Panneau signalant un péage « en flux libre » (sans barrière : les plaques sont lues au passage sous un portique) et indiquant les moyens de paiement : paiement dématérialisé (internet, application), paiement physique (borne, bureau de tabac partenaire) et télépéage par abonnement.'
+  conduite: Ne pas s'arrêter sous le portique ; payer dans le délai imparti (72 h en général) en ligne, en point de vente ou automatiquement avec un badge de télépéage, sous peine de majoration.
+  complement: En amont et au niveau des portiques de péage en flux libre (ex. A79, A13/A14, A4). Signalisation récente (péage en flux libre généralisé depuis 2022-2024). Dans les anciennes versions de l'IISR, C65a/C65b désignaient la présignalisation des aires annexes (aujourd'hui assurée par les panneaux D46).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c65b
+  type: panneau
+  code: C65b
+  image:
+    commons: France road sign C65b.svg
+  nom: 'Péage en flux libre : délai et modalités de paiement pour les non-abonnés'
+  signification: Panneau indiquant, pour les usagers sans badge de télépéage, le délai de paiement du péage en flux libre et les solutions de paiement (dématérialisé ou physique).
+  conduite: Noter le délai (généralement 72 h après le passage) et payer à temps.
+  complement: Sur les sections à péage en flux libre.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c65c
+  type: panneau
+  code: C65c
+  image:
+    commons: France road sign C65c.svg
+  nom: 'Péage en flux libre : rappel de paiement en sortie de zone'
+  signification: Panneau rappelant à l'usager qui sort d'une zone à péage en flux libre qu'il doit penser à payer son péage.
+  conduite: Payer le péage dans les délais si ce n'est pas fait automatiquement.
+  complement: En sortie de zone à péage en flux libre.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c107
+  type: panneau
+  code: C107
+  image:
+    commons: France road sign C107.svg
+  nom: Route à accès réglementé
+  signification: 'Début d''une route (voie express, route pour automobiles) réservée aux véhicules à moteur : interdite aux piétons, cycles, cyclomoteurs, tracteurs et véhicules lents, véhicules à traction animale. Interdiction d''arrêt, de stationnement, de demi-tour et de marche arrière. Vitesse maximale 110 km/h si 2×2 voies avec séparateur (100 par temps de pluie), 80 sur route bidirectionnelle.'
+  conduite: S'insérer à l'aide de la voie d'accélération ; ne pas s'arrêter sur la chaussée ; respecter la limite (souvent 110 ou 90 selon panneau).
+  complement: 'Au début de la section, après le dernier accès ouvert à tous. Fin : C108.'
+  piege: 'C107 (voiture de face, bleu) = route pour automobiles à accès réglementé (110 max) ≠ C207 (autoroute : pont blanc sur fond bleu, 130 max). Un panonceau M11a peut porter des dérogations.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c108
+  type: panneau
+  code: C108
+  image:
+    commons: France road sign C108.svg
+  nom: Fin de route à accès réglementé
+  signification: Fin de la route à accès réglementé ; retour aux règles ordinaires (usagers lents admis, vitesse 80/90, intersections).
+  conduite: Réduire la vitesse, se méfier des usagers lents et des intersections.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c111
+  type: panneau
+  code: C111
+  image:
+    commons: France road sign C111.svg
+  nom: Entrée d'un tunnel
+  signification: 'Indique l''entrée d''un tunnel. Obligations liées : allumer les feux de croisement, interdiction de faire demi-tour, de s''arrêter ou de stationner hors emplacements d''arrêt d''urgence ; respecter les distances de sécurité (souvent B17).'
+  conduite: Allumer les feux de croisement, retirer les lunettes de soleil, garder ses distances (au moins 2 s ; ou l'intervalle du B17), ne pas dépasser si interdit, en cas d'arrêt d'urgence couper le moteur et allumer les feux de détresse.
+  complement: 'À l''entrée des tunnels de plus de 300 m (obligatoire) ; panonceau M10z avec le nom du tunnel, M2 avec la longueur. Fin : C112. Bien que carré bleu (indication), C111 emporte des obligations et interdictions (feux de croisement, pas de demi-tour, pas d''arrêt). Souvent enseigné comme « C9 » dans d''anciens supports : le code correct est C111.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c112
+  type: panneau
+  code: C112
+  image:
+    commons: France road sign C112.svg
+  nom: Sortie de tunnel
+  signification: Indique la sortie du tunnel ; fin des règles spécifiques.
+  conduite: Attention à l'éblouissement et au vent latéral en sortie.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c113
+  type: panneau
+  code: C113
+  image:
+    commons: France road sign C113.svg
+  nom: Piste ou bande cyclable conseillée et réservée aux cycles
+  signification: 'Piste ou bande cyclable conseillée : les cyclistes peuvent l''emprunter (pas d''obligation) ; elle leur est réservée : interdiction pour les autres véhicules d''y circuler ou stationner.'
+  conduite: 'En voiture : ne pas y rouler ni y stationner ; attention aux cyclistes qui peuvent aussi choisir la chaussée.'
+  complement: 'Au début de l''aménagement. Fin : C114. Carré bleu = conseillé (C113) ; rond bleu = obligatoire (B22a).'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c114
+  type: panneau
+  code: C114
+  image:
+    commons: France road sign C114.svg
+  nom: Fin de piste ou bande cyclable conseillée
+  signification: Fin de la piste ou bande cyclable conseillée.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c115
+  type: panneau
+  code: C115
+  image:
+    commons: France road sign C115.svg
+  nom: Voie verte
+  signification: 'Voie réservée à la circulation des piétons et des véhicules non motorisés (cycles, rollers, cavaliers selon arrêté) : interdite à tous les véhicules à moteur (créé en 2008).'
+  conduite: 'En voiture : ne pas s''y engager.'
+  complement: 'Au début de la voie verte. Fin : C116.'
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c116
+  type: panneau
+  code: C116
+  image:
+    commons: France road sign C116.svg
+  nom: Fin de voie verte
+  signification: Fin de la voie verte.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c117
+  type: panneau
+  code: C117
+  image:
+    commons: France road sign C117-B21b.svg
+  nom: Présignalisation d'un tunnel interdit à certains véhicules transportant des marchandises dangereuses
+  signification: Indique aux conducteurs de véhicules transportant des marchandises dangereuses les directions conseillées au prochain carrefour pour éviter un tunnel qui leur est interdit (catégorie du tunnel B à E sur panonceau M11c). Six variantes (C117-b21b à C117-b21e) reprenant les flèches des B21.
+  conduite: Ne concerne pas les voitures particulières.
+  complement: Avant le carrefour, avec panonceau M11c.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c207
+  type: panneau
+  code: C207
+  image:
+    commons: France road sign C207.svg
+  nom: Début d'une section d'autoroute
+  signification: 'Début d''autoroute : route réservée aux véhicules à moteur rapides (interdite aux piétons, cycles, cyclomoteurs, tracteurs, véhicules ne pouvant dépasser 40 km/h), sans croisement à niveau. Vitesse maximale 130 km/h (110 par temps de pluie, 110 permis probatoire, 50 si visibilité < 50 m), minimale 80 km/h sur la voie la plus à gauche par conditions normales. Interdits : arrêt, stationnement, marche arrière, demi-tour, circulation sur la bande d''arrêt d''urgence.'
+  conduite: S'insérer via la voie d'accélération en cédant le passage aux véhicules déjà sur l'autoroute, rouler à droite, ne dépasser que par la gauche, respecter les distances (règle des « deux traits » de la ligne de rive ; 2 s ≈ 73 m à 130 km/h).
+  complement: 'Au début de l''autoroute, en position. Fin : C208.'
+  piege: 'autoroute = pictogramme du pont (C207) ; route pour automobiles = voiture de face (C107). Sur autoroute, l''arrêt même bref sur la BAU hors urgence est interdit ; en cas de panne : feux de détresse, gilet, tout le monde derrière la glissière, borne d''appel d''urgence (tous les 2 km).'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: c208
+  type: panneau
+  code: C208
+  image:
+    commons: France road sign C208.svg
+  nom: Fin d'une section d'autoroute
+  signification: 'Fin de l''autoroute : retour aux règles ordinaires (intersections, usagers lents, vitesse 80/90 ou 110).'
+  conduite: 'Ralentir en conséquence : l''impression de lenteur après l''autoroute est trompeuse (contrôler le compteur).'
+  complement: À la fin de la section ; souvent précédé d'une présignalisation avec distance.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

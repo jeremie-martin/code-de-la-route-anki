@@ -1,0 +1,79 @@
+# Thème A — Porter secours (≈ 1 question) : protéger, alerter, secourir, obligations après un accident
+- id: a-proteger-actions
+  question: "J'arrive le premier sur un accident : par quoi commence-t-on (« Protéger ») ?"
+  reponse: "Me garer après l'accident, en sécurité, feux de détresse ; gilet avant de sortir ; couper le contact des véhicules accidentés (frein à main, ne pas fumer) ; baliser (triangle à 30 m et plus, avant un virage ou un sommet de côte) ; mettre les témoins et blessés valides à l'abri (derrière la glissière, hors chaussée)."
+  explication: "Protéger évite le suraccident. On ne déplace pas les véhicules s'il y a des blessés (traces pour l'enquête). Sur autoroute : pas de triangle si sa pose expose, tout le monde derrière la glissière."
+  theme: A
+  sous_theme: proteger
+  source: "Code de la route, art. R416-19 et R231-1 ; Croix-Rouge française"
+- id: a-alerter-message
+  question: "Que dit-on en alertant les secours, et quand raccroche-t-on ?"
+  reponse: "Son identité et son numéro, le lieu précis (route, sens, borne ou repère, commune), la nature de l'accident (véhicules, incendie, matières dangereuses), le nombre de victimes et leur état (conscientes, respirent, saignent, coincées), les risques particuliers — puis on répond aux questions et on ne raccroche que sur instruction de l'opérateur."
+  explication: "112 depuis un portable (partout en Europe), 15 SAMU, 17 police, 18 pompiers, 114 par SMS pour les sourds et malentendants. Sur autoroute, la borne orange (tous les 2 km) est préférable : elle localise l'appel."
+  theme: A
+  sous_theme: alerter
+  source: "Croix-Rouge française — Alerter ; service-public.fr — Numéros d'urgence"
+- id: a-blesse-deplacer
+  question: "Peut-on déplacer un blessé de la route ?"
+  reponse: "Non, sauf danger immédiat (incendie, suraccident imminent, noyade) : tout mouvement peut aggraver une lésion de la colonne vertébrale. On le couvre, on lui parle, on surveille sa respiration en attendant les secours."
+  explication: "Si l'on doit absolument le dégager : tirer dans l'axe en maintenant la tête. Ne pas lui donner à boire ni à manger (opération possible), ne pas donner de médicament."
+  theme: A
+  sous_theme: secourir
+  source: "Croix-Rouge française ; Ornikar — Secourir un blessé"
+- id: a-casque-motard
+  question: "Un motard accidenté est inconscient mais respire. Faut-il lui retirer son casque ?"
+  reponse: "Non : on ne retire jamais le casque (risque de lésion des cervicales) ; on ouvre la visière, on desserre ce qui gêne la respiration, on surveille et on alerte."
+  explication: "Réponse attendue à l'examen : ne pas retirer le casque. Le retrait à deux sauveteurs s'apprend en formation (PSC1) pour une réanimation."
+  theme: A
+  sous_theme: secourir
+  source: "Croix-Rouge française ; securite-routiere.gouv.fr"
+- id: a-evaluer-victime
+  question: "Comment évalue-t-on l'état d'une victime ?"
+  reponse: "Répond-elle (parler, poser des questions simples) ? Respire-t-elle (regarder le thorax, écouter, sentir le souffle pendant 10 secondes) ? Saigne-t-elle abondamment ? Les réponses dictent le geste : PLS si inconsciente et respire, RCP si elle ne respire pas, compression si hémorragie."
+  explication: "Une victime consciente est laissée dans la position où elle se sent le mieux, couverte, rassurée, sans commenter ses blessures."
+  theme: A
+  sous_theme: secourir
+  source: "Croix-Rouge française — Les gestes de premiers secours"
+- id: a-pls
+  question: "Une victime est inconsciente mais respire : que fait-on ?"
+  reponse: "On la place en position latérale de sécurité (PLS) : voies aériennes libérées (tête doucement basculée en arrière, menton relevé), roulée sur le côté, bouche tournée vers le sol pour éviter l'étouffement — puis on alerte et on surveille sa respiration jusqu'aux secours."
+  explication: "La PLS empêche la langue et les vomissements d'obstruer les voies respiratoires. Femme enceinte : sur le côté gauche. Motard casqué : PLS avec le casque."
+  theme: A
+  sous_theme: secourir
+  source: "Croix-Rouge française — Inconscience"
+- id: a-rcp-dae
+  question: "Une victime inconsciente ne respire pas : que fait-on ?"
+  reponse: "Alerter (15/18/112), faire chercher un défibrillateur (DAE), et commencer la réanimation : 30 compressions au milieu de la poitrine (bras tendus, 5-6 cm de profondeur, 100 à 120 par minute) puis 2 insufflations, sans s'arrêter jusqu'à l'arrivée des secours ou la reprise de la respiration."
+  explication: "Le DAE (panneau vert cœur + éclair) guide par la voix, ne délivre un choc que si nécessaire et peut être utilisé par tous sans formation (question officielle 2023 : formation NON obligatoire, DAE sans danger si la victime n'est pas en arrêt cardiaque). Chaque minute sans réanimation réduit les chances de survie d'environ 10 %."
+  theme: A
+  sous_theme: secourir
+  source: "Sécurité routière — Exemples de nouvelles questions (Q6) ; Croix-Rouge française — Arrêt cardiaque ; décret n° 2007-705"
+- id: a-hemorragie
+  question: "Une victime saigne abondamment d'une plaie au bras. Que faire ?"
+  reponse: "Comprimer directement la plaie avec la main (linge propre, gant ou sac plastique pour se protéger), allonger la victime, maintenir la compression jusqu'aux secours ; le garrot n'est qu'un dernier recours (compression impossible), en notant l'heure de pose."
+  explication: "Ne jamais retirer un objet planté dans une plaie (il limite le saignement) ; le signaler aux secours. Brûlure : refroidir à l'eau tempérée 10 à 20 minutes."
+  theme: A
+  sous_theme: secourir
+  source: "Croix-Rouge française — Hémorragie ; Brûlure"
+- id: a-accident-materiel-obligations
+  question: "Après un accrochage sans blessé, quelles sont mes obligations ?"
+  reponse: "M'arrêter aussitôt que possible sans créer de danger, dégager la chaussée si nécessaire (après photos), échanger identité et adresse avec l'autre conducteur, remplir un constat amiable (sans le signer en cas de désaccord) et déclarer le sinistre à mon assureur sous 5 jours ouvrés."
+  explication: "Repartir sans se faire connaître, même après un simple accrochage sur un véhicule stationné (sans laisser ses coordonnées), est un délit de fuite : 3 ans, 75 000 €, 6 points."
+  theme: A
+  sous_theme: obligations
+  source: "Code de la route, art. R231-1 ; Code pénal, art. 434-10 ; Code des assurances, art. L113-2"
+- id: a-accident-corporel-obligations
+  question: "Après un accident avec des blessés, quelles obligations s'ajoutent ?"
+  reponse: "Prévenir la police ou la gendarmerie, ne pas modifier l'état des lieux ni effacer les traces (ne pas déplacer les véhicules), rester sur place et décliner son identité ; les conducteurs impliqués sont obligatoirement dépistés (alcool, stupéfiants)."
+  explication: "Protéger, alerter, secourir restent la priorité. Ne pas porter assistance à une personne en danger est un délit (5 ans, 75 000 €)."
+  theme: A
+  sous_theme: obligations
+  source: "Code de la route, art. R231-1, L234-3, L235-2 ; Code pénal, art. 223-6"
+- id: a-incendie-vehicule
+  question: "Un véhicule accidenté commence à prendre feu : que faire ?"
+  reponse: "Éloigner tout le monde, alerter le 18/112, et si l'on dispose d'un extincteur, l'utiliser par la calandre ou sous le moteur sans ouvrir le capot en grand (appel d'air) ; face à un camion à plaque orange (matières dangereuses), s'éloigner et transmettre les codes de la plaque aux secours."
+  explication: "L'extincteur n'est pas obligatoire en voiture en France. Dans un tunnel, on gagne l'issue de secours à pied sans rester dans le véhicule."
+  theme: A
+  sous_theme: proteger
+  importance: utile
+  source: "Ornikar — Protéger la zone ; CETU — Consignes en tunnel"

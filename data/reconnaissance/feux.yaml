@@ -1,0 +1,219 @@
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 14 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+- id: feu-rouge
+  type: feu
+  image:
+    gen: feu_tricolore
+    params:
+      state: rouge
+  nom: Feu rouge fixe
+  signification: 'Interdiction absolue de franchir la ligne d''effet des feux (ou l''aplomb du feu s''il n''y a pas de ligne) : arrêt obligatoire, y compris pour tourner à droite (sauf signal R19 ou panonceau M12 pour les cyclistes uniquement).'
+  conduite: S'arrêter avant la ligne d'arrêt (ligne T'2 discontinue) sans empiéter sur le passage piéton ni le sas vélo ; attendre le vert. Un véhicule prioritaire en intervention peut franchir le rouge avec prudence.
+  complement: On ne « tourne pas à droite au rouge » en France (contrairement aux États-Unis). Le franchissement de la ligne (roues au-delà) au rouge est déjà une infraction, même sans traverser.
+  theme: L
+  sous_theme: feux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: feu-jaune-fixe
+  type: feu
+  image:
+    gen: feu_tricolore
+    params:
+      state: orange
+  nom: Feu jaune fixe
+  signification: 'Annonce l''imminence du rouge : arrêt obligatoire, sauf si le conducteur ne peut plus s''arrêter dans des conditions de sécurité suffisantes (trop proche du feu, freinage brutal dangereux).'
+  conduite: Freiner et s'arrêter si c'est possible sans danger ; sinon franchir sans accélérer. Ne jamais accélérer pour « passer à l'orange ».
+  complement: 'Officiellement « jaune » (le Code ne parle pas d''orange). Franchir un feu jaune fixe alors qu''on pouvait s''arrêter : 35 €, pas de retrait de points. Il n''y a pas de jaune après le rouge en France (pas de rouge+jaune comme en Allemagne).'
+  theme: L
+  sous_theme: feux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: feu-vert
+  type: feu
+  image:
+    gen: feu_tricolore
+    params:
+      state: vert
+  nom: Feu vert
+  signification: Autorisation de passer, à condition que l'intersection soit dégagée et en cédant le passage aux piétons engagés et aux véhicules qui terminent leur traversée. Il ne dispense pas de céder le passage en tournant (véhicules venant en face quand on tourne à gauche, piétons sur le passage).
+  conduite: S'engager seulement si l'on peut franchir le carrefour sans s'y immobiliser ; regarder à gauche et à droite malgré le vert (usagers qui grillent le feu, véhicules prioritaires).
+  piege: '« feu vert clignotant » n''existe pas en France. Un feu vert avec un panneau AB4 ou AB3a : le feu prévaut, on passe sans s''arrêter.'
+  theme: L
+  sous_theme: feux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: feu-jaune-clignotant
+  type: feu
+  image:
+    gen: feu_tricolore
+    params:
+      state: orange_clignotant
+  nom: Feu jaune clignotant
+  signification: 'Feu jaune clignotant (seul, ou sur le feu du milieu d''un R11 hors service, ou R11j où il remplace le vert) : passage autorisé avec prudence ; les règles de priorité redeviennent celles des panneaux (STOP, cédez-le-passage, AB6) ou, à défaut, la priorité à droite.'
+  conduite: Ralentir, appliquer la signalisation verticale ou la priorité à droite, céder le passage aux piétons ; considérer l'intersection comme non gérée par les feux.
+  piege: 'Jaune clignotant = feux hors service ou mode de nuit : on revient aux panneaux (un STOP sous le feu s''applique alors). Un feu jaune clignotant sur un panneau (R1) n''est qu''un renfort d''attention.'
+  theme: L
+  sous_theme: feux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: feu-rouge-clignotant
+  type: feu
+  image:
+    gen: feu_rouge_clignotant
+    params:
+      twin: true
+  nom: Feu rouge clignotant (signal d'arrêt R24)
+  signification: 'Feu rouge clignotant (un ou deux feux alternés) : interdiction absolue de passer, comme un feu rouge fixe, devant un obstacle ou un danger particulier : passage à niveau, pont mobile, sortie de pompiers, traversée de tramway ou de voie de bus, avalanche, tunnel fermé.'
+  conduite: S'arrêter avant le feu et attendre son extinction ; au passage à niveau, ne pas contourner les demi-barrières ; ne repartir que lorsque les barrières sont relevées et le feu éteint.
+  complement: 'Aux passages à niveau (G1bis, G2), ponts mobiles, casernes de pompiers, aires de danger aérien, entrées de tunnels. Ne jamais franchir un feu rouge clignotant, même si rien n''est visible : le train peut arriver dans quelques secondes.'
+  theme: L
+  sous_theme: feux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: r12
+  type: feu
+  code: R12
+  image:
+    gen: feu_pieton
+    params:
+      state: vert
+  nom: Signal bicolore pour piétons
+  signification: 'Feux pour piétons à deux couleurs : silhouette rouge (traversée interdite) et silhouette verte (traversée autorisée), sans jaune ; le vert peut clignoter ou passer directement au rouge. Un décompteur de temps peut y être associé (2022) ; R12m : version piétons + cycles.'
+  conduite: 'Piéton : ne pas s''engager au rouge ; si le rouge apparaît en cours de traversée, terminer la traversée sans courir (les véhicules doivent laisser finir). Conducteur : céder le passage aux piétons engagés même quand leur feu passe au rouge.'
+  complement: De part et d'autre du passage piéton, souvent avec bouton d'appel ou dispositif sonore pour malvoyants. Le code correct du feu piéton est R12 (R25 est le signal STOP piéton des traversées de tramway). Pas de jaune pour les piétons.
+  theme: L
+  sous_theme: feux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: r13
+  type: feu
+  code: R13
+  image:
+    gen: feu_velo
+    params:
+      state: vert
+  nom: Signaux tricolores modaux (bus R13b, cyclistes R13c)
+  signification: 'Feux tricolores portant un pictogramme (bus pour R13b, vélo pour R13c) : ils ne s''adressent qu''à la catégorie représentée, qui doit les respecter à la place du feu général ; le vert peut être remplacé par un jaune clignotant (R13bj/R13cj).'
+  conduite: Un conducteur de voiture ignore les feux modaux et suit le R11 ; un cycliste suit le feu vélo (petit feu tricolore avec pictogramme).
+  complement: Les feux vélo (R13c) sont souvent placés bas, près des sas vélo, avec quelques secondes d'avance (départ anticipé).
+  theme: L
+  sous_theme: feux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: r14
+  type: feu
+  code: R14
+  image:
+    gen: feu_tricolore
+    params:
+      state: vert
+      arrow: left
+  nom: Signaux tricolores directionnels (feux à flèches)
+  signification: 'Feux tricolores dont les trois feux portent une flèche (tourne-à-gauche R14tg, direct R14d, tourne-à-droite R14td, ou combinaisons) : ils ne concernent que les usagers qui vont dans la direction de la flèche. Flèche verte = passage autorisé dans cette direction, en principe sans conflit avec les autres flux (mouvements opposés arrêtés) ; flèche rouge = interdit dans cette direction ; jamais de jaune clignotant à la place du vert.'
+  conduite: Se placer dans la voie de la direction voulue et obéir au feu fléché correspondant ; une flèche verte de tourne-à-gauche signifie que le trafic en face est arrêté (mais céder aux piétons éventuels).
+  complement: Au-dessus ou à côté des voies de présélection.
+  piege: la flèche verte (R14) donne un passage protégé ; la flèche jaune clignotante (R16) n'est qu'une autorisation de passer en cédant le passage.
+  theme: L
+  sous_theme: feux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: r16
+  type: feu
+  code: R16
+  image:
+    gen: feu_fleche_composite
+    params:
+      colour: orange
+      direction: right
+      blink: true
+  nom: Signal d'anticipation directionnel (flèche jaune clignotante)
+  signification: 'Feu jaune clignotant en forme de flèche (à droite, tout droit ou à gauche), associé à un feu tricolore : quand il clignote, les usagers allant dans cette direction peuvent passer, même au feu rouge, mais en cédant le passage aux piétons et aux véhicules qui ont le vert (pas de priorité).'
+  conduite: Tourner dans la direction de la flèche jaune clignotante seulement après avoir cédé le passage aux piétons qui traversent et aux véhicules de l'autre flux ; s'arrêter si nécessaire.
+  complement: 'À côté ou sous le feu tricolore, souvent pour le tourne-à-droite. Différence clé : flèche VERTE (R14) = passage protégé et prioritaire ; flèche JAUNE clignotante (R16) = passage possible en cédant le passage. Sans R16, tourner à droite au rouge est interdit.'
+  theme: L
+  sous_theme: feux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: r17
+  type: feu
+  code: R17
+  image:
+    gen: feu_bus
+    params:
+      bar: vertical
+  nom: Signal pour véhicules de transport en commun (feux à barres blanches)
+  signification: 'Feux réservés aux bus (et tramways) en site propre, composés de trois feux blancs sur fond noir : barre verticale (en bas) = passage autorisé ; disque (au milieu, parfois clignotant) = arrêt imminent (équivalent du jaune) ; barre horizontale (en haut) = arrêt. R18 : version directionnelle avec barre inclinée à gauche ou à droite.'
+  conduite: 'Ne concerne que les bus/tramways : les autres conducteurs suivent leur propre feu ; à un site propre, se méfier d''un bus qui a une barre verticale (il va passer).'
+  complement: 'Aux traversées de sites propres bus/tram. Mémo : barre verticale = « feu vert » du bus ; barre horizontale = « feu rouge » ; disque = « jaune ».'
+  theme: L
+  sous_theme: feux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: r21a
+  type: feu
+  code: R21a
+  image:
+    gen: signal_affectation
+    params:
+      lanes:
+      - croix
+      - fleche
+      - fleche
+  nom: 'Signal d''affectation de voie : croix rouge'
+  signification: 'Croix de Saint-André rouge fixe placée au-dessus d''une voie (autoroute, tunnel, péage, pont) : interdiction d''emprunter cette voie.'
+  conduite: Quitter la voie dès que possible en sécurité ; ne jamais y circuler tant que la croix est allumée.
+  complement: Sur portique au-dessus de chaque voie. Croix rouge = voie fermée ; flèche verte vers le bas = voie ouverte ; flèche jaune oblique clignotante = se rabattre sur la voie indiquée.
+  theme: L
+  sous_theme: feux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: r21b
+  type: feu
+  code: R21b
+  image:
+    gen: signal_affectation
+    params:
+      lanes:
+      - fleche
+      - fleche
+      - fleche
+  nom: 'Signal d''affectation de voie : flèche verte vers le bas'
+  signification: 'Flèche verte fixe pointant vers le bas au-dessus d''une voie : autorisation de circuler sur cette voie.'
+  conduite: Rester ou se placer dans cette voie.
+  complement: Sur portique.
+  theme: L
+  sous_theme: feux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: r21c
+  type: feu
+  code: R21c
+  image:
+    gen: signal_affectation
+    params:
+      lanes:
+      - rabattement_droite
+      - fleche
+      - fleche
+  nom: 'Signal d''affectation de voie : flèche jaune oblique clignotante'
+  signification: 'Flèche jaune clignotante inclinée à 45° vers le bas (à droite R21cd, à gauche R21cg) au-dessus d''une voie : annonce la fermeture de cette voie et oblige à se rabattre sur la voie adjacente indiquée.'
+  conduite: Changer de voie dans le sens de la flèche dès que possible, sans manœuvre brusque.
+  complement: Sur portique, en amont de la croix rouge.
+  theme: L
+  sous_theme: feux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: r23
+  type: feu
+  code: R23
+  image:
+    gen: feu_bicolore
+    params:
+      state: vert
+  nom: Signal bicolore de contrôle individuel (vert/rouge)
+  signification: 'Deux feux (vert en bas, rouge en haut, ou jaune clignotant/rouge) contrôlant le passage véhicule par véhicule à un poste : péage, douane, parking, accès régulé.'
+  conduite: Avancer au vert, s'arrêter au rouge.
+  complement: Aux barrières de péage, douanes, parkings.
+  theme: L
+  sous_theme: feux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

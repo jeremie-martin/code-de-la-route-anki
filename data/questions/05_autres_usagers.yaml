@@ -1,0 +1,204 @@
+- id: u-pieton-hors-passage
+  question: Un piéton s'engage pour traverser en dehors de tout passage piéton (le plus proche est à 100 m). Dois-je le laisser passer ?
+  reponse: 'Oui : il s''engage régulièrement (pas de passage à moins de 50 m) et, même s''il était en tort, la prudence accrue envers les usagers vulnérables s''impose ; je ralentis et je le laisse finir de traverser.'
+  explication: 'Priorité piéton : 135 €, 6 points. Un conducteur reste responsable même face à un piéton imprudent (R412-6). Ne pas klaxonner un piéton engagé.'
+  theme: U
+  sous_theme: pietons
+  source: Code de la route, art. R415-11, R412-6, R412-37
+- id: u-pieton-canne-blanche
+  question: Un piéton avec une canne blanche attend au bord de la chaussée. Que faire ?
+  reponse: M'arrêter et le laisser traverser, sans klaxonner (il se repère au son) — une personne malvoyante ne peut pas évaluer si je vais m'arrêter.
+  explication: 'Même réflexe pour un piéton âgé, un enfant, une personne en fauteuil roulant ou avec une poussette : anticiper, ralentir, laisser passer. Personnes en fauteuil, poussettes, rollers et trottinettes sans moteur sont assimilés aux piétons.'
+  theme: U
+  sous_theme: pietons
+  source: Code de la route, art. R412-6 et R412-34 ; securite-routiere.gouv.fr
+- id: u-pieton-hors-agglo-cote
+  question: Hors agglomération, sans trottoir ni accotement praticable, de quel côté de la route un piéton doit-il marcher ?
+  reponse: Sur le bord gauche, face aux véhicules (pour les voir arriver) — sauf danger particulier ; celui qui pousse un vélo, un cyclomoteur ou une trottinette marche à droite.
+  explication: 'En groupe (cortège), on marche à droite. La nuit, vêtements clairs ou gilet réfléchissant recommandés : un piéton sombre n''est vu qu''à 30 m en feux de croisement.'
+  theme: U
+  sous_theme: pietons
+  source: Code de la route, art. R412-36 et R412-42
+- id: u-zone-rencontre-pietons
+  question: Dans une zone de rencontre (panneau B52), quelles règles s'appliquent ?
+  reponse: Vitesse 20 km/h, les piétons peuvent circuler sur toute la chaussée et sont prioritaires sur tous les véhicules (sauf le tramway), double sens cyclable par défaut, stationnement uniquement sur les emplacements aménagés.
+  explication: 'Aire piétonne (B54) : allure du pas, seuls les véhicules de desserte y entrent, piétons prioritaires. Zone 30 (B30) : 30 km/h, double sens cyclable, mais priorités habituelles pour les piétons.'
+  theme: U
+  sous_theme: pietons
+  source: Code de la route, art. R110-2
+- id: u-enfants-sortie-ecole
+  question: 'Sortie d''école, car scolaire arrêté avec ses feux de détresse : quelle conduite ?'
+  reponse: 'Réduire fortement la vitesse (obligation R413-17), s''écarter, être prêt à s''arrêter : les enfants surgissent devant ou derrière le car sans regarder ; ne dépasser le car qu''avec une extrême prudence, jamais un tram ou un train à l''arrêt côté voyageurs.'
+  explication: Le pictogramme « enfants » à l'avant et à l'arrière du car et ses feux de détresse à chaque montée/descente sont les signaux d'alerte. Les enfants ne perçoivent pas les dangers comme les adultes.
+  theme: U
+  sous_theme: pietons
+  source: Code de la route, art. R413-17 et R414-13
+- id: u-personnes-agees
+  question: Pourquoi les piétons âgés sont-ils particulièrement exposés ?
+  reponse: 'Ils traversent plus lentement, voient et entendent moins bien, évaluent mal les vitesses et réagissent plus tard : plus de la moitié des piétons tués ont 65 ans ou plus.'
+  explication: 'Réponse attendue : ralentir, laisser le temps de traverser, ne pas klaxonner, ne pas s''engager tant que la traversée n''est pas finie.'
+  theme: U
+  sous_theme: pietons
+  source: ONISR 2025 ; securite-routiere.gouv.fr — Conseils pour les seniors
+- id: u-cyclistes-de-front
+  question: Les cyclistes peuvent-ils rouler à deux de front ?
+  reponse: Oui, deux au maximum — mais ils doivent se remettre en file simple dès la chute du jour, par visibilité insuffisante, et quand un véhicule annonce son dépassement (sauf en aire piétonne, zone de rencontre et voie verte).
+  explication: 'Un cycliste peut aussi s''écarter des voitures stationnées (portières) sur les voies ≤ 50 km/h : je garde ma distance et je ne le serre pas.'
+  theme: U
+  sous_theme: cyclistes
+  source: Code de la route, art. R431-7 et R412-9
+- id: u-cycliste-tourner-droite
+  question: Je tourne à droite ; une bande cyclable longe la chaussée et un cycliste arrive derrière moi sur cette bande. Qui passe ?
+  reponse: 'Le cycliste : la bande ou piste cyclable est traitée comme une voie de la chaussée que je coupe ; je contrôle rétroviseur droit et angle mort, clignotant, et je le laisse passer avant de tourner.'
+  explication: Accident type du cycliste « coincé » à droite d'un véhicule qui tourne. Même règle pour un poids lourd (angles morts) et pour un piéton qui traverse la rue où je m'engage.
+  theme: U
+  sous_theme: cyclistes
+  source: Code de la route, art. R415-14 et R415-4
+- id: u-sas-velo
+  question: Au feu rouge, un espace marqué d'un vélo se trouve entre deux lignes d'arrêt. Où dois-je m'arrêter ?
+  reponse: 'À la première ligne (la plus éloignée du feu) : l''espace est un « sas vélo » réservé aux cyclistes et trottinettes, pour qu''ils démarrent devant les voitures et soient vus.'
+  explication: 'Occuper le sas : 35 € (ou feu rouge, 135 € et 4 points, si l''on a franchi la ligne d''arrêt). Les cyclistes peuvent aussi bénéficier d''un panonceau M12 leur permettant de passer au rouge en cédant le passage, dans la direction fléchée.'
+  theme: U
+  sous_theme: cyclistes
+  source: Code de la route, art. R415-2 et R415-15
+- id: u-double-sens-cyclable
+  question: 'Panneau « sens interdit » avec panonceau « sauf vélos » (M9v2) : que dois-je anticiper ?'
+  reponse: 'Des cyclistes qui arrivent en face dans cette rue à sens unique (double-sens cyclable) : je me tiens à droite, je vérifie avant de tourner et je ne me rabats pas sur eux.'
+  explication: Le double-sens cyclable est la règle par défaut dans toutes les zones 30 et zones de rencontre, même sans panonceau. Il vaut aussi pour les trottinettes électriques.
+  theme: U
+  sous_theme: cyclistes
+  source: Code de la route, art. R412-28-1 et R110-2
+- id: u-velo-piste-obligatoire
+  question: Quelle différence entre un panneau rond bleu avec un vélo (B22a) et un panneau carré bleu avec un vélo (C113) ?
+  reponse: Rond = piste ou bande cyclable obligatoire pour les cyclistes (ils ne doivent pas rouler sur la chaussée) ; carré = piste conseillée et réservée (les cyclistes peuvent aussi rester sur la chaussée).
+  explication: 'Dans les deux cas, la piste est interdite aux véhicules motorisés (sauf EDPM) et y stationner est très gênant (135 €). Fin : B40 / C114. Une voie verte (C115) est réservée aux non-motorisés, EDPM, piétons et cavaliers.'
+  theme: U
+  sous_theme: cyclistes
+  source: IISR ; Code de la route, art. R431-9 et R417-11
+- id: u-velo-equipements
+  question: Quels équipements un vélo doit-il avoir ?
+  reponse: Deux freins, un feu de position avant (blanc ou jaune) et un feu arrière rouge la nuit ou par visibilité insuffisante, des catadioptres (arrière rouge, avant blanc, latéraux et pédales orange) et un avertisseur sonore audible à 50 m.
+  explication: 'Tout défaut d''équipement : 11 €. Depuis novembre 2024, un feu porté sur le cycliste est admis et des feux supplémentaires ou clignotants sont autorisés.'
+  theme: U
+  sous_theme: cyclistes
+  source: Code de la route, art. R431-1-1, R431-1-3, R313-4 et s. ; securite-routiere.gouv.fr — Équipements obligatoires vélo
+- id: u-cycliste-equipements
+  question: Quelles obligations d'équipement pèsent sur le cycliste lui-même ?
+  reponse: 'Casque attaché pour les moins de 12 ans (conducteur et passager, sous la responsabilité de l''adulte : 135 €), gilet réfléchissant hors agglomération la nuit ou par mauvaise visibilité (35 €) ; écouteurs et téléphone en main interdits (135 €).'
+  explication: Les adultes n'ont pas d'obligation de casque (recommandé). Un enfant de moins de 8 ans peut rouler sur le trottoir au pas. Pas de retrait de points à vélo, mais les amendes s'appliquent (feu rouge 135 €).
+  theme: U
+  sous_theme: cyclistes
+  source: Code de la route, art. R431-1-1, R431-1-3, R412-6-1
+- id: u-edpm-regles
+  question: Quelles sont les conditions pour conduire une trottinette électrique (EDPM) ?
+  reponse: Avoir au moins 14 ans, être seul à bord, 25 km/h maximum par construction, assurance obligatoire, gilet réfléchissant la nuit, casque recommandé en ville (obligatoire hors agglomération sur les routes autorisées).
+  explication: 'Passager, trottoir ou écouteurs : 135 € ; engin débridé au-delà de 25 km/h : jusqu''à 1 500 €. L''âge minimal est passé de 12 à 14 ans le 1er septembre 2023. Les mêmes règles d''alcool et de stupéfiants s''appliquent.'
+  theme: U
+  sous_theme: edpm
+  tags:
+  - nouveau::2023
+  source: Code de la route, art. R412-43-1 à R412-43-3 ; service-public.fr F308
+- id: u-edpm-ou-circuler
+  question: Où une trottinette électrique (EDPM) peut-elle circuler ?
+  reponse: 'Jamais sur le trottoir (sauf autorisation du maire, à l''allure du pas) ; en agglomération : sur les pistes et bandes cyclables si elles existent, sinon sur les chaussées limitées à 50 km/h ; hors agglomération : uniquement sur les pistes cyclables et voies vertes (sauf autorisation locale).'
+  explication: 'Un EDPM est un véhicule : il respecte les feux, les sens interdits et les priorités ; il bénéficie des double-sens cyclables. Circuler hors des voies autorisées : 135 €.'
+  theme: U
+  sous_theme: edpm
+  tags:
+  - nouveau::2023
+  source: Code de la route, art. R412-43-1 ; service-public.fr F308
+- id: u-edpm-pieton-ou-vehicule
+  question: Une trottinette électrique est-elle considérée comme un piéton ou comme un véhicule ?
+  reponse: 'Comme un véhicule (engin de déplacement personnel motorisé) : elle doit respecter les feux, les sens interdits et les priorités ; seules les trottinettes sans moteur, rollers et skateboards sont assimilés aux piétons (trottoir, passages piétons).'
+  explication: 'Pour l''automobiliste : distance latérale de 1 m / 1,50 m, prudence accrue (faible gabarit, équilibre précaire : question officielle 2023).'
+  theme: U
+  sous_theme: edpm
+  source: Code de la route, art. R311-1 et R412-34
+- id: u-moto-vulnerabilite
+  question: Pourquoi les motards sont-ils si vulnérables, et quelle erreur des automobilistes est la plus fréquente ?
+  reponse: Pas de carrosserie, gabarit étroit facile à masquer (angle mort, montant de pare-brise), vitesse d'approche mal évaluée ; l'erreur n° 1 est le « je ne l'ai pas vu » quand on tourne à gauche ou qu'on change de file — d'où le contrôle systématique de l'angle mort, deux fois.
+  explication: 'Les deux-roues motorisés représentent moins de 2 % du trafic mais environ 21 % des tués (risque par km ~20 à 30 fois celui d''une voiture). Un motard peut se déporter pour éviter un nid-de-poule, une plaque d''égout ou des gravillons : on garde ses distances.'
+  theme: U
+  sous_theme: motos
+  source: ONISR 2025 ; securite-routiere.gouv.fr — Être visible à moto
+- id: u-interfiles
+  question: La circulation inter-files des motos est-elle autorisée, et à quelles conditions ?
+  reponse: 'Oui, généralisée depuis le 11 janvier 2025 : deux-roues de moins d''1 m de large, seulement sur autoroutes et routes à 2 chaussées séparées d''au moins 2 voies chacune limitées à 70 km/h ou plus, quand la circulation est dense et en files ininterrompues, entre les deux files les plus à gauche, à 50 km/h maximum (30 km/h si une file est arrêtée), sans dépasser un autre deux-roues en inter-files.'
+  explication: 'Pour l''automobiliste : rester dans sa file, garder de l''espace entre les files, contrôler rétroviseurs et angle mort avant tout changement de file. Hors conditions : 135 € et 3 points pour le motard. Une limitation « en inter-files » sur panneau ne concerne que les motards (question officielle 2023).'
+  theme: U
+  sous_theme: motos
+  tags:
+  - nouveau::2025
+  source: Code de la route, art. R412-11-3 (décret n° 2025-33 du 9 janvier 2025)
+- id: u-moto-equipements
+  question: Quels équipements sont obligatoires à moto ou en cyclomoteur ?
+  reponse: Casque homologué attaché (conducteur et passager ; 135 € et 3 points pour le conducteur), gants certifiés CE (depuis 2016 ; 68 €, 1 point), gilet réfléchissant à bord (à revêtir en cas d'arrêt d'urgence), feux de croisement allumés même de jour, plaque arrière, rétroviseur.
+  explication: Un cyclomoteur (≤ 50 cm³, 45 km/h) se conduit dès 14 ans avec le permis AM ; une 125 cm³ avec le permis A1, ou le permis B depuis 2 ans + 7 h de formation.
+  theme: U
+  sous_theme: motos
+  source: Code de la route, art. R431-1, R431-1-2, R416-17, R416-19
+- id: u-pl-angles-morts
+  question: Où sont les angles morts d'un poids lourd, et comment savoir si son conducteur me voit ?
+  reponse: 'Quatre zones : juste devant la cabine, derrière, et sur les deux côtés (surtout à droite) ; règle : si je ne vois pas les yeux du conducteur dans son rétroviseur, il ne me voit pas.'
+  explication: 'Depuis 2021, les véhicules de plus de 3,5 t portent des autocollants « angles morts ». Ne jamais rester à côté d''un camion ni s''arrêter juste devant ou derrière : à l''arrêt au feu, garder ses distances.'
+  theme: U
+  sous_theme: poids_lourds
+  source: 'securite-routiere.gouv.fr — Vrai ou faux : angles morts'
+- id: u-pl-tourne-droite
+  question: Un poids lourd met son clignotant droit devant moi et se déporte vers la gauche. Que fait-il et que dois-je faire ?
+  reponse: 'Il prend de l''élan pour tourner à droite (grand rayon de braquage) : je ne dois surtout pas m''engager dans l''espace à sa droite, je reste derrière.'
+  explication: Erreur mortelle typique des cyclistes et automobilistes. Un camion qui tourne balaie toute la largeur de la rue.
+  theme: U
+  sous_theme: poids_lourds
+  source: Ornikar — Transports de marchandises ; securite-routiere.gouv.fr
+- id: u-pl-depasser-suivre
+  question: Quelles précautions pour suivre puis dépasser un poids lourd ?
+  reponse: Le suivre à plus grande distance (il masque la route, freine moins vite, projette de l'eau), ne dépasser que si la visibilité et la longueur libre suffisent (dépassement long), se méfier de l'appel d'air et du vent latéral en le doublant, et ne pas se rabattre trop tôt.
+  explication: Hors agglomération, deux véhicules lourds qui se suivent gardent au moins 50 m. Sur les routes à 3 voies ou plus dans le même sens, les camions n'ont pas le droit d'utiliser la voie la plus à gauche.
+  theme: U
+  sous_theme: poids_lourds
+  source: Code de la route, art. R412-12 et R412-25 ; coursdecode
+- id: u-matieres-dangereuses
+  question: Que signifie la plaque orange à l'arrière d'un camion ?
+  reponse: 'Qu''il transporte des matières dangereuses (plaque orange avec, si numérotée, le code danger en haut et le numéro de la matière en bas) : distance de sécurité accrue, accès interdit à certains tunnels (panneaux B18a/b/c), prudence en cas d''accident (ne pas approcher, prévenir les secours en signalant la plaque).'
+  explication: Les losanges de couleur précisent la classe de danger (inflammable, toxique, corrosif…). Ces véhicules ont des vitesses réduites (80 sur autoroute).
+  theme: U
+  sous_theme: poids_lourds
+  importance: utile
+  source: Accord ADR ; Code de la route, art. R413-9 ; IISR (B18)
+- id: u-tram-depasser
+  question: Un tramway est arrêté à sa station, côté où descendent les voyageurs. Puis-je le dépasser ?
+  reponse: Non, tant que des voyageurs montent ou descendent de ce côté ; s'il n'y a pas de quai et que la place suffit, on le dépasse par la droite, au pas — et par la gauche seulement s'il circule à droite de la chaussée.
+  explication: Le tram a priorité sur tous les usagers, piétons compris ; ne jamais s'arrêter sur ses rails ; ses feux propres (barres blanches) ne s'adressent pas aux voitures.
+  theme: U
+  sous_theme: transports_commun
+  source: Code de la route, art. R414-13, R414-6, R422-3
+- id: u-voie-bus
+  question: Puis-je circuler ou m'arrêter sur une voie réservée aux bus ?
+  reponse: 'Non : la voie « BUS » (panneau B27a, marquage au sol) est interdite aux autres véhicules, sauf ceux mentionnés par un panonceau (taxis, vélos…) ; y circuler : 135 € ; s''y arrêter ou stationner : très gênant, 135 €.'
+  explication: On la traverse uniquement pour tourner ou rejoindre un stationnement, en cédant le passage aux bus. Un damier blanc au sol marque la traversée d'une voie bus à un carrefour.
+  theme: U
+  sous_theme: transports_commun
+  source: Code de la route, art. R412-7 et R417-11
+- id: u-vehicule-prioritaire-feu-rouge
+  question: Une ambulance du SAMU arrive derrière moi sirène hurlante alors que je suis arrêté au feu rouge. Que faire ?
+  reponse: 'Lui dégager le passage sans me mettre en danger : me ranger sur le côté, monter sur l''accotement, ou franchir le feu au pas avec beaucoup de prudence si c''est le seul moyen — les clichés radar sont vérifiés et ne donnent pas lieu à amende dans ce cas.'
+  explication: 'Obligation de céder « en toutes circonstances » aux véhicules d''intérêt général prioritaires qui annoncent leur approche (gyrophare bleu + sirène deux tons) : 135 €, 4 points si refus. Jamais de manœuvre dangereuse pour les piétons ou cyclistes.'
+  theme: U
+  sous_theme: vehicules_prioritaires
+  source: Code de la route, art. R415-12 ; securite-routiere.gouv.fr — Info/intox
+- id: u-gyrophare-orange
+  question: Un véhicule avec un gyrophare orange (dépanneuse, chasse-neige, engin de voirie) approche. Est-il prioritaire ?
+  reponse: 'Non : le gyrophare orange signale un véhicule lent, encombrant ou en intervention sur la voirie, donc un danger — prudence et distance, mais aucune priorité.'
+  explication: 'Gyrophare bleu + deux tons = prioritaire (police, pompiers, SAMU…) : on cède. Gyrophare bleu + trois tons = facilité de passage (ambulance privée, EDF, transport de fonds) : on facilite sans obligation. Corridor de sécurité : à l''approche d''un véhicule arrêté sur la bande d''arrêt d''urgence avec ses feux, je ralentis et je change de voie si possible.'
+  theme: U
+  sous_theme: vehicules_prioritaires
+  source: Code de la route, art. R313-27, R313-28, R412-11-1
+- id: u-convoi-exceptionnel
+  question: 'Un véhicule pilote « CONVOI EXCEPTIONNEL » avec gyrophares orange me fait signe de ralentir : que faire ?'
+  reponse: Ralentir, me ranger à droite ou m'arrêter selon ses indications, ne pas m'engager dans l'intersection qu'il signale et ne dépasser le convoi que sur indication de l'accompagnateur.
+  explication: 'Un transport exceptionnel déjà engagé dans une intersection garde la priorité même si mon feu passe au vert. Les engins agricoles (≤ 40 km/h) et véhicules lents sortent des champs sans visibilité : patience.'
+  theme: U
+  sous_theme: vehicules_prioritaires
+  importance: utile
+  source: Code de la route, art. R433-17 et R412-33

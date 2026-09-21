@@ -1,0 +1,271 @@
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 22 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+- id: ce1
+  type: panneau
+  code: CE1
+  image:
+    commons: France road sign CE1.svg
+  nom: Poste de secours
+  signification: Indique un poste de secours (association agréée ou service d'urgence d'un hôpital/clinique).
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce2a
+  type: panneau
+  code: CE2a
+  image:
+    commons: France road sign CE2a.svg
+  nom: Poste d'appel d'urgence
+  signification: Indique un poste d'appel d'urgence (borne orange reliée aux secours), notamment quand il n'est pas visible depuis la route.
+  conduite: 'Sur autoroute, les bornes sont tous les 2 km : les préférer au téléphone portable car elles localisent l''appel.'
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce3a
+  type: panneau
+  code: CE3a
+  image:
+    commons: France road sign CE3a.svg
+  nom: Informations relatives aux services et au tourisme
+  signification: Indique un point d'information (office de tourisme, relais d'information service).
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce4a
+  type: panneau
+  code: CE4a
+  image:
+    commons: France road sign CE4a.svg
+  nom: Terrain de camping pour tentes
+  signification: Indique un terrain de camping pour tentes.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce4b
+  type: panneau
+  code: CE4b
+  image:
+    commons: France road sign CE4b.svg
+  nom: Terrain de camping pour caravanes et autocaravanes
+  signification: Indique un terrain de camping pour caravanes et camping-cars.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce4c
+  type: panneau
+  code: CE4c
+  image:
+    commons: France road sign CE4c.svg
+  nom: Terrain de camping pour tentes, caravanes et autocaravanes
+  signification: Indique un terrain de camping mixte.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce7
+  type: panneau
+  code: CE7
+  image:
+    commons: France road sign CE7.svg
+  nom: Emplacement de pique-nique
+  signification: Indique une aire de pique-nique aménagée.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce12
+  type: panneau
+  code: CE12
+  image:
+    commons: France road sign CE12.svg
+  nom: Toilettes ouvertes au public
+  signification: Indique des toilettes publiques.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce14
+  type: panneau
+  code: CE14
+  image:
+    commons: France road sign CE14.svg
+  nom: Installations accessibles aux personnes handicapées à mobilité réduite
+  signification: Indique des installations accessibles aux personnes à mobilité réduite.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce15a
+  type: panneau
+  code: CE15a
+  image:
+    commons: France road sign CE15a.svg
+  nom: Poste de distribution de carburant
+  signification: Indique une station-service ouverte 7 j/7 et 24 h/24 (signalisation obligatoire sur autoroute).
+  conduite: Sur autoroute, panonceau M1a avec la marque et la distance.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce15c
+  type: panneau
+  code: CE15c
+  image:
+    commons: France road sign CE15c.svg
+  nom: Poste de distribution de carburant et de GPL
+  signification: Station-service distribuant aussi du GPL.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce15g
+  type: panneau
+  code: CE15g
+  image:
+    commons: France road sign CE15g.svg
+  nom: Carburant et recharge des véhicules électriques
+  signification: Station-service offrant aussi la recharge des véhicules électriques.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce15i
+  type: panneau
+  code: CE15i
+  image:
+    commons: France road sign CE15i.svg
+  nom: Recharge des véhicules électriques
+  signification: Indique une borne de recharge pour véhicules électriques.
+  conduite: Les emplacements de recharge sont réservés aux véhicules électriques pendant la recharge (panonceau M6i).
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce16
+  type: panneau
+  code: CE16
+  image:
+    commons: France road sign CE16.svg
+  nom: Restaurant ouvert 7 jours sur 7
+  signification: Indique un restaurant ouvert tous les jours (hors agglomération, autoroutes).
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce17
+  type: panneau
+  code: CE17
+  image:
+    commons: France road sign CE17.svg
+  nom: Hôtel ou motel ouvert 7 jours sur 7
+  signification: Indique un hôtel ou motel ouvert tous les jours.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce18
+  type: panneau
+  code: CE18
+  image:
+    commons: France road sign CE18.svg
+  nom: Débit de boissons ou collations ouvert 7 jours sur 7
+  signification: Indique un café / bar ou un établissement de restauration rapide ouvert tous les jours.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce21
+  type: panneau
+  code: CE21
+  image:
+    commons: France road sign CE21.svg
+  nom: Point de vue
+  signification: Indique un point de vue (belvédère) aménagé.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce22
+  type: panneau
+  code: CE22
+  image:
+    commons: France road sign CE22.svg
+  nom: Fréquence d'informations routières
+  signification: Indique la fréquence d'une radio d'information routière (ex. 107.7 sur autoroute).
+  conduite: Régler l'autoradio sur la fréquence pour connaître trafic, accidents et météo.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce29
+  type: panneau
+  code: CE29
+  image:
+    commons: France road sign CE29.svg
+  nom: Moyen de lutte contre l'incendie
+  signification: Indique un extincteur ou moyen de lutte contre l'incendie utilisable par les usagers (obligatoire en tunnel).
+  conduite: 'En cas d''incendie en tunnel : se garer, couper le moteur, laisser les clés, rejoindre l''issue de secours ; tenter d''éteindre un feu naissant seulement si possible sans risque.'
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce30a
+  type: panneau
+  code: CE30a
+  image:
+    commons: France road sign CE30a.svg
+  nom: Issue de secours vers la droite
+  signification: Indique une issue de secours (tunnel, ouvrage) située vers la droite.
+  conduite: En cas d'incendie ou d'accident dans un tunnel, rejoindre l'issue de secours indiquée à pied.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce30b
+  type: panneau
+  code: CE30b
+  image:
+    commons: France road sign CE30b.svg
+  nom: Issue de secours vers la gauche
+  signification: Indique une issue de secours située vers la gauche.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ce52
+  type: panneau
+  code: CE52
+  image:
+    commons: France road sign CE52.svg
+  nom: Aire de covoiturage
+  signification: Indique un lieu aménagé pour la pratique du covoiturage (parking de covoiturage), créé par l'arrêté du 8 janvier 2016.
+  complement: En position devant le service, ou en présignalisation au dernier carrefour (avec panonceau de direction M3b et/ou de distance M1).
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

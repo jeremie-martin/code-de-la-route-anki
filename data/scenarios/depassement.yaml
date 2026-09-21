@@ -1,0 +1,222 @@
+# Thème L — Scénarios de dépassement, croisement et positionnement (schémas « route » générés)
+# Convention : « MOI » = voiture bleue cerclée de jaune, en bas, roulant vers le haut ; les véhicules rouges roulent en sens inverse.
+
+- id: scn-dep-ligne-continue
+  kind: road
+  spec:
+    lanes: 2
+    axis: continue
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 45, colour: gris, kind: truck}
+  question: "Le camion devant moi roule lentement, aucun véhicule en face. Puis-je le dépasser ?"
+  reponse: "Non : la ligne axiale est continue, il est interdit de la franchir ou de la chevaucher (135 €, 3 points)."
+  explication: "Seul un cycliste, une trottinette ou un cyclomobile léger peut être dépassé en chevauchant une ligne continue, avec visibilité. J'attends la fin de la ligne continue (annoncée ou non par une ligne de dissuasion)."
+  theme: L
+  sous_theme: depassement
+  source: "Code de la route, art. R412-19"
+- id: scn-dep-ligne-discontinue-libre
+  kind: road
+  spec:
+    lanes: 2
+    axis: discontinue
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 45, colour: gris, kind: truck}
+  question: "Ligne discontinue, bonne visibilité, personne en face ni derrière. Puis-je dépasser le camion ?"
+  reponse: "Oui, si j'ai la visibilité et l'espace pour revenir à droite : rétroviseurs, clignotant gauche, angle mort, dépassement franc, rabattement quand je vois le camion dans mon rétroviseur intérieur."
+  explication: "Conditions de l'article R414-4 : visibilité suffisante, personne ne me dépasse, écart de vitesse suffisant, retour sans gêner. Un camion se dépasse sur une longue distance : ne pas s'engager sans marge."
+  theme: L
+  sous_theme: depassement
+  source: "Code de la route, art. R414-4 et R412-18"
+- id: scn-dep-vehicule-en-face
+  kind: road
+  spec:
+    lanes: 2
+    axis: discontinue
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 42, colour: gris, kind: truck}
+      - {lane: 1, y: 78, colour: rouge, dir: down}
+  question: "Ligne discontinue, mais une voiture arrive en face. Puis-je dépasser le camion maintenant ?"
+  reponse: "Non : je n'emprunte la moitié gauche de la chaussée que si je ne gêne pas les véhicules venant en sens inverse ; j'attends que la voie soit libre sur toute la longueur du dépassement."
+  explication: "Article R414-7. Un dépassement de camion demande plusieurs centaines de mètres : la voiture rouge arriverait avant que je me rabatte."
+  theme: L
+  sous_theme: depassement
+  source: "Code de la route, art. R414-7"
+- id: scn-dep-mixte-mon-cote
+  kind: road
+  spec:
+    lanes: 2
+    axis: mixte_moi
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 45, colour: gris}
+  question: "Ligne mixte : continue de mon côté, discontinue de l'autre. Puis-je dépasser ?"
+  reponse: "Non : seule la ligne la plus proche de moi compte, et elle est continue. Les véhicules d'en face, eux, peuvent dépasser."
+  explication: "Article R412-20 : on ne franchit une ligne mixte que si la ligne discontinue est de son côté au début de la manœuvre, et la manœuvre doit être terminée avant la fin de la discontinue."
+  theme: L
+  sous_theme: depassement
+  source: "Code de la route, art. R412-20"
+- id: scn-dep-mixte-autre-cote
+  kind: road
+  spec:
+    lanes: 2
+    axis: mixte_autre
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 45, colour: gris}
+  question: "Ligne mixte : discontinue de mon côté, continue de l'autre. Puis-je dépasser ?"
+  reponse: "Oui, si les conditions habituelles sont réunies (visibilité, personne en face, personne ne me dépasse) et si je peux me rabattre avant la fin de la ligne discontinue."
+  explication: "La ligne continue de l'autre côté interdit aux véhicules d'en face de dépasser — pas à moi. Je reste vigilant : elle annonce souvent une zone sans visibilité pour eux, pas pour moi."
+  theme: L
+  sous_theme: depassement
+  source: "Code de la route, art. R412-20"
+- id: scn-dep-sommet-cote
+  kind: road
+  spec:
+    lanes: 2
+    axis: discontinue
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 40, colour: gris, kind: truck}
+    extras:
+      - {kind: sommet, y: 70}
+  question: "Ligne discontinue, mais un sommet de côte masque la route devant. Puis-je dépasser le camion ?"
+  reponse: "Non : sans visibilité suffisante vers l'avant (sommet de côte, virage), le dépassement est interdit sur une chaussée à double sens, même avec une ligne discontinue."
+  explication: "Article R414-11. Le marquage n'est pas une garantie de visibilité : c'est au conducteur de juger. Un véhicule peut surgir derrière le sommet à 90 km/h."
+  theme: L
+  sous_theme: depassement
+  source: "Code de la route, art. R414-11"
+- id: scn-dep-dissuasion-tracteur
+  kind: road
+  spec:
+    lanes: 2
+    axis: dissuasion
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 45, colour: vert, kind: truck, label: "25"}
+  question: "Ligne de dissuasion (traits longs, espaces courts). Un engin agricole roule à 25 km/h devant moi, bonne visibilité, personne en face. Puis-je le dépasser ?"
+  reponse: "Oui : la ligne de dissuasion est franchissable ; elle déconseille seulement le dépassement des véhicules roulant à une allure normale. Un véhicule très lent peut être dépassé si la visibilité le permet."
+  explication: "Une voiture roulant à 80 km/h, elle, ne se dépasse pas sur une ligne de dissuasion (le dépassement serait trop long pour la visibilité). Elle annonce souvent une ligne continue."
+  theme: L
+  sous_theme: depassement
+  source: "IISR 7e partie, art. 113 ; Code de la route, art. R412-18"
+- id: scn-dep-cycliste-ligne-continue
+  kind: road
+  spec:
+    lanes: 2
+    axis: continue
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 45, colour: vert, kind: bike}
+  question: "Ligne continue ; un cycliste roule devant moi, bonne visibilité, personne en face. Puis-je le dépasser ?"
+  reponse: "Oui, en chevauchant (sans la franchir entièrement) la ligne continue pour laisser 1 m en agglomération, 1,50 m hors agglomération."
+  explication: "Exception de l'article R412-19 (2015) : chevauchement autorisé pour dépasser un cycle, un EDPM ou un cyclomobile léger, dans les conditions de sécurité de R414-4. Avec un véhicule en face ou sans visibilité, j'attends derrière."
+  theme: L
+  sous_theme: depassement
+  source: "Code de la route, art. R412-19 et R414-4"
+- id: scn-dep-vehicule-tourne-gauche
+  kind: road
+  spec:
+    lanes: 2
+    axis: discontinue
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 45, colour: gris, goes: left}
+    extras:
+      - {kind: intersection_gauche, y: 68}
+  question: "Le véhicule devant moi ralentit, clignotant gauche, pour entrer dans la rue à gauche. Puis-je le dépasser par la gauche ?"
+  reponse: "Non : on ne dépasse jamais par la gauche un véhicule qui a signalé qu'il tourne à gauche ; on le dépasse par la droite si la place le permet, sinon on attend."
+  explication: "Article R414-6. Le dépassement à une intersection est de toute façon interdit si je ne suis pas sur une route prioritaire."
+  theme: L
+  sous_theme: depassement
+  source: "Code de la route, art. R414-6 et R414-11"
+- id: scn-dep-suis-depasse
+  kind: road
+  spec:
+    lanes: 2
+    axis: discontinue
+    vehicles:
+      - {lane: 1, y: 30, colour: bleu, me: true}
+      - {lane: 2, y: 12, colour: gris}
+  question: "Une voiture est en train de me dépasser. Que dois-je faire ?"
+  reponse: "Serrer à droite sans accélérer, et ne surtout pas me déporter à gauche ; au besoin ralentir légèrement pour faciliter son rabattement."
+  explication: "Accélérer quand on est dépassé : 135 €, 2 points (R414-16). Je ne dépasse pas non plus un véhicule qui est lui-même en train de dépasser."
+  theme: L
+  sous_theme: depassement
+  source: "Code de la route, art. R414-16"
+- id: scn-dep-passage-pieton
+  kind: road
+  spec:
+    lanes: 2
+    axis: discontinue
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 45, colour: gris}
+    extras:
+      - {kind: passage_pieton, y: 62}
+  question: "Le véhicule devant moi s'arrête juste avant un passage piéton, sans raison visible pour moi. Puis-je le dépasser ?"
+  reponse: "Non : un véhicule arrêté ou qui ralentit devant un passage piéton masque probablement un piéton ; on ne le dépasse qu'après s'être assuré qu'aucun piéton n'est engagé — en pratique, on s'arrête derrière."
+  explication: "Article R414-5. Refus de priorité à un piéton : 135 €, 6 points. Le passage piéton est aussi un lieu où l'arrêt et le stationnement sont interdits."
+  theme: L
+  sous_theme: depassement
+  source: "Code de la route, art. R414-5 et R415-11"
+- id: scn-pos-trois-voies
+  kind: road
+  spec:
+    lanes: 3
+    up_lanes: 2
+    axis: discontinue
+    lane_lines:
+      - {at: 2, style: discontinue}
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 50, colour: gris, kind: truck}
+      - {lane: 1, y: 85, colour: rouge, dir: down}
+  question: "Route à trois voies à double sens. Je veux dépasser le camion : quelle voie puis-je utiliser ?"
+  reponse: "La voie centrale, uniquement si elle est libre dans les deux sens sur toute la longueur du dépassement ; jamais la voie la plus à gauche, réservée au sens inverse."
+  explication: "Article R414-8 : sur une chaussée à double sens à plus de deux voies, le véhicule qui dépasse n'emprunte jamais la voie la plus à gauche. La voie centrale sert au dépassement dans les deux sens : prudence, on y reste le moins longtemps possible."
+  theme: L
+  sous_theme: positionnement
+  source: "Code de la route, art. R414-8"
+- id: scn-pos-croisement-obstacle
+  kind: road
+  spec:
+    lanes: 2
+    axis: discontinue
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 55, colour: noir}
+      - {lane: 1, y: 70, colour: rouge, dir: down}
+    extras:
+      - {kind: label, y: 62, x: 330, text: "véhicule stationné"}
+  question: "Un véhicule stationné occupe ma voie et une voiture arrive en face. Qui passe en premier ?"
+  reponse: "La voiture d'en face : l'obstacle est de mon côté, c'est à moi de m'arrêter et de la laisser passer avant de contourner."
+  explication: "Règle de conduite : l'obstacle est de mon côté, c'est à moi de laisser passer le véhicule d'en face avant de contourner (R414-1 : le croisement se fait à droite, chacun serrant sur sa droite). Sur un pont ou un passage étroit, les panneaux B15 (je cède) et C18 (j'ai la priorité) fixent l'ordre."
+  theme: L
+  sous_theme: croisement
+  source: "Code de la route, art. R414-1 et R414-2"
+- id: scn-pos-bau-bouchon
+  kind: road
+  spec:
+    lanes: 2
+    up_lanes: 2
+    axis: none
+    lane_lines:
+      - {at: 1, style: discontinue}
+    vehicles:
+      - {lane: 1, y: 15, colour: bleu, me: true}
+      - {lane: 1, y: 45, colour: gris}
+      - {lane: 2, y: 45, colour: noir}
+      - {lane: 1, y: 70, colour: gris, kind: truck}
+      - {lane: 2, y: 72, colour: vert}
+    extras:
+      - {kind: bau}
+      - {kind: label, y: 94, x: 20, text: "autoroute : bouchon, ma sortie est à 500 m"}
+  question: "Bouchon sur autoroute ; ma sortie est à 500 m sur la droite. Puis-je emprunter la bande d'arrêt d'urgence pour la rejoindre ?"
+  reponse: "Non : la bande d'arrêt d'urgence est réservée aux arrêts d'urgence et aux secours ; y circuler coûte 135 € et 3 points. Je reste dans ma file et j'allume mes feux de détresse si je suis le dernier du bouchon."
+  explication: "Article R412-8. Certaines voies d'entrecroisement sont ouvertes aux heures de pointe, mais seulement sur signalisation lumineuse explicite."
+  theme: L
+  sous_theme: positionnement
+  source: "Code de la route, art. R412-8 et R416-18"

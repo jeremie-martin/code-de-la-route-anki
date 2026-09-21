@@ -1,0 +1,332 @@
+# Thème L — Scénarios de priorité (schémas générés, réponses vérifiées par build/priority.py)
+# Convention : « MOI » = voiture bleue cerclée de jaune, toujours en bas (approche S). Les flèches indiquent l'intention.
+# check.order = ordre calculé attendu (lettres d'approche : N, E, S, W) ; check.pair = [a, b, avant|apres|independant].
+
+# ---------- Priorité à droite ----------
+- id: scn-pd-droite-tout-droit
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      E: {vehicle: {colour: rouge}, goes: straight}
+  check: {pair: [S, E, apres]}
+  question: "Intersection sans aucune signalisation. Je passe avant ou après la voiture rouge ?"
+  reponse: "Après : elle vient de ma droite."
+  explication: "Sans signalisation, c'est la priorité à droite (art. R415-5). Je ralentis à l'approche pour pouvoir m'arrêter, je cède le passage, puis je passe."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5"
+- id: scn-pd-gauche-tout-droit
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      W: {vehicle: {colour: rouge}, goes: straight}
+  check: {pair: [S, W, avant]}
+  question: "Intersection sans signalisation. Je passe avant ou après la voiture rouge ?"
+  reponse: "Avant : elle vient de ma gauche, je suis à sa droite."
+  explication: "Priorité à droite : le rouge doit me céder le passage. Je vérifie quand même qu'il ralentit avant de m'engager (« prioritaire » ne veut pas dire « aveugle »)."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5"
+- id: scn-pd-trois-vehicules
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      E: {vehicle: {colour: rouge}, goes: straight}
+      N: {vehicle: {colour: vert}, goes: straight}
+  check: {order: [N, E, S]}
+  question: "Intersection sans signalisation, trois véhicules. Dans quel ordre passent-ils ?"
+  reponse: "Vert, puis rouge, puis moi."
+  explication: "Le vert n'a personne à sa droite : il passe en premier. Le rouge cède au vert (à sa droite) puis passe. Je cède au rouge (à ma droite) et je passe en dernier."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5"
+- id: scn-pd-trois-vehicules-2
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      W: {vehicle: {colour: rouge}, goes: straight}
+      N: {vehicle: {colour: vert}, goes: straight}
+  check: {order: [S, W, N]}
+  question: "Intersection sans signalisation, trois véhicules. Dans quel ordre passent-ils ?"
+  reponse: "Moi, puis rouge, puis vert."
+  explication: "Personne à ma droite : je passe en premier. Le rouge (à gauche) me cède le passage, puis passe avant le vert qui est à sa gauche. Le vert cède au rouge qui vient de sa droite."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5"
+- id: scn-pd-je-tourne-gauche-face
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: left}
+      N: {vehicle: {colour: rouge}, goes: straight}
+  check: {pair: [S, N, apres]}
+  question: "Intersection sans signalisation. Je tourne à gauche, la voiture rouge d'en face va tout droit. Qui passe en premier ?"
+  reponse: "La rouge : en tournant à gauche, je coupe sa trajectoire, je dois la laisser passer."
+  explication: "Règle du tourne-à-gauche (art. R415-4) : celui qui tourne à gauche cède le passage aux véhicules venant en face, qu'ils aillent tout droit ou tournent à droite. Je me place près de l'axe, clignotant, et j'attends au centre sans gêner."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-4"
+- id: scn-pd-face-tourne-gauche
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      N: {vehicle: {colour: rouge}, goes: left}
+  check: {pair: [S, N, avant]}
+  question: "Intersection sans signalisation. Je vais tout droit, la voiture rouge d'en face tourne à sa gauche. Qui passe en premier ?"
+  reponse: "Moi : c'est elle qui coupe ma trajectoire."
+  explication: "Le véhicule qui tourne à gauche cède le passage à ceux d'en face. Je vérifie qu'elle s'arrête bien avant de m'engager : un conducteur pressé peut « forcer »."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-4"
+- id: scn-pd-je-tourne-gauche-droite-arrive
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: left}
+      E: {vehicle: {colour: rouge}, goes: straight}
+  check: {pair: [S, E, apres]}
+  question: "Intersection sans signalisation. Je tourne à gauche ; une voiture arrive de ma droite. Qui passe en premier ?"
+  reponse: "La rouge : elle vient de ma droite."
+  explication: "Priorité à droite, quelle que soit ma direction. Tourner à gauche est la manœuvre qui cède à presque tout le monde : véhicules de droite (priorité à droite) et véhicules d'en face (tourne-à-gauche)."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5 et R415-4"
+- id: scn-pd-je-tourne-gauche-gauche-arrive
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: left}
+      W: {vehicle: {colour: rouge}, goes: straight}
+  check: {pair: [S, W, avant]}
+  question: "Intersection sans signalisation. Je tourne à gauche ; une voiture arrive de ma gauche et va tout droit. Qui passe en premier ?"
+  reponse: "Moi : je suis à sa droite."
+  explication: "La priorité à droite joue en ma faveur ; le tourne-à-gauche ne m'oblige à céder qu'aux véhicules venant d'en face. Je m'assure que le rouge ralentit, puis je tourne."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5"
+- id: scn-pd-les-deux-tournent-droite
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: right}
+      N: {vehicle: {colour: rouge}, goes: right}
+  check: {pair: [S, N, independant]}
+  question: "Intersection sans signalisation. Je tourne à droite, la voiture d'en face tourne à sa droite. Qui doit céder le passage ?"
+  reponse: "Personne : nos trajectoires ne se croisent pas, nous pouvons tourner en même temps."
+  explication: "Deux véhicules qui se font face et tournent chacun à droite ne se gênent pas. Je surveille tout de même un piéton qui traverserait la rue où je m'engage."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5 (aucun conflit de trajectoires)"
+- id: scn-pd-face-tourne-droite-moi-gauche
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: left}
+      N: {vehicle: {colour: rouge}, goes: right}
+  check: {pair: [S, N, apres]}
+  question: "Intersection sans signalisation. Je tourne à gauche, la voiture d'en face tourne à sa droite (nous prenons la même rue). Qui passe en premier ?"
+  reponse: "La rouge : elle a la priorité sur moi qui tourne à gauche, et elle n'a pas à traverser la chaussée."
+  explication: "Tourner à gauche = céder le passage à tous les véhicules d'en face (tout droit ou à droite). Je la laisse s'engager, puis je tourne derrière elle."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-4"
+
+# ---------- STOP, cédez-le-passage, route prioritaire ----------
+- id: scn-stop-moi
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight, sign: stop}
+      W: {vehicle: {colour: rouge}, goes: straight}
+  check: {pair: [S, W, apres]}
+  question: "J'ai un STOP ; une voiture arrive de ma gauche. Que dois-je faire ?"
+  reponse: "M'arrêter complètement à la ligne, céder le passage à la rouge (et à tout véhicule sur la route transversale, y compris ceux venant de ma gauche), puis repartir quand c'est libre."
+  explication: "Le STOP annule la priorité à droite à mon détriment : je cède aux véhicules des deux côtés. L'arrêt doit être total (roues immobiles) au niveau de la ligne, même si la voie semble libre."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-6"
+- id: scn-stop-autre
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      E: {vehicle: {colour: rouge}, goes: straight, sign: stop}
+  check: {pair: [S, E, avant]}
+  question: "La voiture rouge, à ma droite, a un STOP ; moi je n'ai aucun panneau. Qui passe en premier ?"
+  reponse: "Moi : je suis sur la route prioritaire, la rouge doit s'arrêter et me céder le passage."
+  explication: "Quand l'autre route a un STOP ou un cédez-le-passage, je suis prioritaire même si le véhicule vient de ma droite. Le panneau AB2 (priorité ponctuelle) peut me le confirmer, mais son absence ne change rien."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-6 et R415-7"
+- id: scn-cedez-moi-gauche-arrive
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: right, sign: cedez}
+      W: {vehicle: {colour: rouge}, goes: straight}
+  check: {pair: [S, W, apres]}
+  question: "J'ai un cédez-le-passage et je tourne à droite ; une voiture arrive de ma gauche. Puis-je m'engager ?"
+  reponse: "Non : je cède le passage à la rouge ; je peux m'engager sans m'arrêter seulement si la voie est libre."
+  explication: "Le cédez-le-passage (AB3a) n'impose pas l'arrêt, mais impose de laisser passer tous les véhicules de la route transversale, même en tournant à droite (la rouge va occuper la voie où je vais)."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-7"
+- id: scn-route-prioritaire-tourne-gauche
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: left, sign: prioritaire}
+      N: {vehicle: {colour: rouge}, goes: straight, sign: prioritaire}
+      E: {vehicle: {colour: vert}, goes: straight, sign: stop}
+  check: {order: [N, S, E]}
+  question: "Je suis sur une route prioritaire (AB6) et je tourne à gauche ; en face, la voiture rouge va tout droit ; à droite, la verte a un STOP. Ordre de passage ?"
+  reponse: "Rouge, puis moi, puis verte."
+  explication: "Être sur la route prioritaire ne dispense pas de la règle du tourne-à-gauche : je cède à la rouge qui vient en face. La verte, au STOP, attend que nous soyons passés tous les deux, même si elle est à ma droite."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-4 et R415-6"
+- id: scn-deux-stops
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight, sign: stop}
+      E: {vehicle: {colour: rouge}, goes: straight, sign: stop}
+  check: {pair: [S, E, apres]}
+  question: "Nous avons chacun un STOP, la voiture rouge est à ma droite, et la route transversale est libre. Qui repart en premier ?"
+  reponse: "La rouge : entre deux véhicules arrêtés au STOP, la priorité à droite s'applique."
+  explication: "Après l'arrêt obligatoire, s'il n'y a personne sur la route prioritaire, on départage les véhicules non prioritaires par la règle générale : priorité à droite."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5 et R415-6"
+- id: scn-sortie-parking
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      E: {vehicle: {colour: rouge}, goes: straight, private: true}
+  check: {pair: [S, E, avant]}
+  question: "Une voiture sort d'un parking (à ma droite) au moment où j'arrive. La priorité à droite s'applique-t-elle ?"
+  reponse: "Non : un véhicule qui sort d'un parking, d'un chemin privé, d'une aire ou d'un chemin de terre cède le passage à tous — je passe avant."
+  explication: "Art. R415-9 : celui qui débouche d'un accès non ouvert à la circulation publique, d'un chemin de terre ou d'une aire de stationnement doit céder le passage à tout autre véhicule (et aux piétons du trottoir qu'il franchit, R415-11). Même chose pour un véhicule qui quitte un stationnement ou une voie non revêtue."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-9 et R415-11"
+
+# ---------- Tramway, véhicules prioritaires ----------
+- id: scn-tram-gauche
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      W: {vehicle: {colour: jaune, kind: tram}, goes: straight}
+  check: {pair: [S, W, apres]}
+  question: "Intersection sans signalisation : un tramway arrive de ma gauche. Qui passe en premier ?"
+  reponse: "Le tramway, même s'il vient de ma gauche."
+  explication: "Le tramway est prioritaire sur tous les usagers, même venant de gauche (art. R422-3 I) ; seuls des feux ou un agent peuvent l'arrêter. Il ne peut pas freiner court ni dévier : je m'arrête avant les rails."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R422-3"
+- id: scn-pompiers-gauche
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      W: {vehicle: {colour: rouge, kind: pompiers}, goes: straight}
+  check: {pair: [S, W, apres]}
+  question: "Intersection sans signalisation : un véhicule de pompiers arrive de ma gauche, sirène et gyrophare en marche. Qui passe en premier ?"
+  reponse: "Les pompiers : je m'arrête et je leur laisse le passage, même si je suis prioritaire."
+  explication: "Véhicules d'intérêt général prioritaires (pompiers, police, gendarmerie, SAMU, douanes) avec avertisseurs spéciaux (2 tons + gyrophare bleu) : tout usager doit leur céder le passage et faciliter leur progression (art. R415-12), sans mise en danger."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-12"
+
+# ---------- Feux ----------
+- id: scn-feu-vert-tourne-gauche
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: left, sign: feu_vert}
+      N: {vehicle: {colour: rouge}, goes: straight, sign: feu_vert}
+      E: {vehicle: {colour: vert}, goes: straight, sign: feu_rouge}
+  check: {order: [N, S, E]}
+  question: "Feu vert pour moi et pour la voiture rouge d'en face ; je tourne à gauche, elle va tout droit ; la verte à droite a le feu rouge. Ordre de passage ?"
+  reponse: "Rouge, puis moi, puis verte (quand son feu passera au vert)."
+  explication: "Feu vert = je peux passer, mais en tournant à gauche je cède aux véhicules d'en face. Je m'avance au centre de l'intersection, clignotant, et je termine mon virage dès que c'est libre — même si mon feu passe à l'orange."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R412-33 et R415-4"
+- id: scn-feu-orange-clignotant
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight, sign: feu_orange}
+      E: {vehicle: {colour: rouge}, goes: straight, sign: feu_orange}
+  question: "Les feux de l'intersection clignotent à l'orange (hors service). Une voiture arrive de ma droite. Qui passe en premier ?"
+  reponse: "La rouge : feux au jaune clignotant = prudence et retour aux panneaux ou, sans panneau, à la priorité à droite."
+  explication: "Le jaune clignotant n'est pas un feu vert : il signale que les feux ne règlent plus la circulation. On applique la signalisation verticale présente ; à défaut, la priorité à droite (art. R412-32 et R415-5)."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R412-32 et R415-5"
+
+# ---------- Agent ----------
+- id: scn-agent-bras-tendus-profil
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      E: {vehicle: {colour: rouge}, goes: straight}
+    agent: bras_tendus_EW
+  check: {pair: [S, E, avant]}
+  question: "Un agent règle la circulation, bras tendus dans l'axe est-ouest (je le vois de profil). Puis-je passer ?"
+  reponse: "Oui : les bras tendus barrent les véhicules qui font face à l'agent ou lui tournent le dos (ici la rouge) ; ceux qui le voient de profil, comme moi, peuvent passer."
+  explication: "L'agent prime sur les feux et les panneaux. Bras levé vertical = tout le monde s'arrête. Il faut regarder son orientation, pas seulement ses bras."
+  theme: L
+  sous_theme: agents
+  source: "Code de la route, art. R411-28"
+- id: scn-agent-bras-tendus-face
+  kind: intersection
+  spec:
+    approaches:
+      S: {vehicle: {colour: bleu, me: true}, goes: straight}
+      W: {vehicle: {colour: rouge}, goes: straight}
+    agent: bras_tendus_NS
+  check: {pair: [S, W, apres]}
+  question: "L'agent me fait face, bras tendus (dans mon axe nord-sud). La voiture rouge à ma gauche passe-t-elle avant moi ?"
+  reponse: "Oui : je dois m'arrêter (agent de face), la rouge qui le voit de profil est libérée."
+  explication: "De face ou de dos, bras tendus = arrêt pour moi. La priorité à droite ne s'applique pas quand un agent règle la circulation."
+  theme: L
+  sous_theme: agents
+  source: "Code de la route, art. R411-28"
+
+# ---------- Giratoire / rond-point ----------
+- id: scn-giratoire-cedez
+  kind: roundabout
+  spec:
+    giratoire: true
+    vehicles:
+      - {pos: S, colour: bleu, me: true, goes: straight, distance: 20}
+      - {pos: inside, angle: 225, colour: rouge}
+  question: "Carrefour à sens giratoire (panneau AB25 + cédez-le-passage). Une voiture circule déjà dans l'anneau, à ma gauche. Puis-je m'engager ?"
+  reponse: "Non : je cède le passage aux véhicules déjà engagés dans l'anneau (ils viennent de ma gauche), puis j'entre par la droite."
+  explication: "Dans un carrefour à sens giratoire (AB25), la priorité est à ceux qui sont dans l'anneau. On entre sans clignotant (ou à droite si l'on sort à la 1re sortie), et on met le clignotant droit avant chaque sortie."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-10 ; IISR (AB25)"
+- id: scn-rond-point-priorite-droite
+  kind: roundabout
+  spec:
+    giratoire: false
+    vehicles:
+      - {pos: S, colour: bleu, me: true, goes: straight, distance: 20}
+      - {pos: inside, angle: 225, colour: rouge}
+  question: "Rond-point SANS panneau AB25 ni cédez-le-passage, seulement des AB1 (rare, ex. place de l'Étoile). Une voiture circule dans l'anneau à ma gauche. Puis-je m'engager ?"
+  reponse: "Oui : sans signalisation, c'est la priorité à droite — celui qui entre est prioritaire sur celui qui tourne dans l'anneau."
+  explication: "C'est la différence entre un « carrefour à sens giratoire » (AB25 : l'anneau est prioritaire) et un simple « rond-point » (priorité à droite : l'entrant est prioritaire). Le panneau AB25 fait toute la différence."
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5 et R415-10 ; IISR"

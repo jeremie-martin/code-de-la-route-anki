@@ -1,0 +1,146 @@
+- id: l-vitesse-agglo
+  texte: En agglomération, la vitesse maximale par défaut est de {{c1::50 km/h}} — dès le panneau d'entrée d'agglomération (EB10), jusqu'au panneau de sortie (EB20).
+  explication: 'Le maire peut abaisser (30 km/h généralisé) ou relever à 70 km/h sur des sections sans accès riverains ni traversées piétonnes. Zone 30 : 30 km/h ; zone de rencontre : 20 km/h ; aire piétonne : allure du pas (≈ 6 km/h).'
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-3 et R110-2
+- id: l-vitesse-hors-agglo
+  texte: Hors agglomération, sur une route à double sens sans séparateur central, la vitesse maximale est de {{c1::80 km/h}} (depuis le 1er juillet 2018), sauf si le département l'a relevée à {{c2::90 km/h}} par arrêté (signalé par des panneaux).
+  explication: 'Sur les sections à 2 voies dans le même sens (créneau de dépassement) sans terre-plein, la vitesse est relevée à 90 sur ces seules voies. Avant 2018 : 90 partout — piège des supports anciens.'
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-2 ; CGCT, art. L3221-4-1
+- id: l-vitesse-separateur-autoroute
+  texte: 'Route à deux chaussées séparées par un terre-plein central : {{c1::110 km/h}} ; autoroute : {{c2::130 km/h}}.'
+  explication: 'Le critère est le terre-plein central, pas le nombre de voies. Une « route à accès réglementé » (panneau bleu avec une voiture, C107) n''est pas une autoroute : 110 km/h par défaut, mêmes interdictions (piétons, vélos, demi-tour…).'
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-2
+- id: l-vitesse-pluie
+  texte: 'Par temps de pluie (ou autres précipitations), les vitesses maximales sont abaissées : autoroute {{c1::110 km/h}}, routes à chaussées séparées {{c2::100 km/h}}, routes limitées à 90 → {{c3::80 km/h}} ; les routes à 80 restent à 80 et l''agglomération reste à 50.'
+  explication: Le code n'abaisse la vitesse qu'en cas de précipitations ; sur chaussée simplement mouillée, il faut adapter sa vitesse (R413-17). Sous la pluie, la limite probatoire et la limite normale se rejoignent sur autoroute (110).
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-2 II
+- id: l-vitesse-visibilite-50
+  texte: Quand la visibilité est inférieure à {{c1::50 m}} (brouillard, neige, pluie violente), la vitesse est limitée à {{c2::50 km/h}} sur tous les réseaux, autoroute comprise.
+  explication: 'Article R413-4. Règle des trois 50 : visibilité 50 m = 50 km/h = 50 m d''intervalle. Feux de croisement obligatoires ; feux de brouillard avant et arrière autorisés et recommandés (R416-7).'
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-4
+- id: l-vitesse-probatoire
+  texte: 'Pendant le permis probatoire (et pour tout élève conducteur) : {{c1::110 km/h}} sur autoroute, {{c2::100 km/h}} sur route à chaussées séparées, {{c3::80 km/h}} sur les autres routes hors agglomération (même celles relevées à 90), 50 en ville.'
+  explication: Le disque « A » est obligatoire à l'arrière pendant tout le probatoire (3 ans, 2 ans après AAC). S'applique aussi en conduite accompagnée et supervisée.
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-5
+- id: l-vitesse-minimale-autoroute
+  texte: Sur autoroute, par circulation fluide et bonnes conditions, la vitesse minimale sur la voie la plus à gauche est de {{c1::80 km/h}} ; circuler sans raison à une vitesse anormalement réduite est sanctionné (35 €).
+  explication: 'Aucune vitesse minimale ailleurs, mais l''obligation de ne pas gêner. Véhicules > 3,5 t : 90 sur autoroute, 80 sur les autres routes.'
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-19 et R413-8
+- id: l-vitesse-engins
+  texte: 'Vitesses par construction : trottinette électrique (EDPM) {{c1::25 km/h}} ; cyclomoteur et voiturette sans permis {{c2::45 km/h}} ; vélo à assistance électrique : assistance coupée à {{c3::25 km/h}} (au-delà, c''est un cyclomoteur).'
+  explication: Ces véhicules lents sont interdits sur autoroute (voiturettes et cyclomoteurs) ; les EDPM sont limités aux pistes cyclables et aux chaussées ≤ 50 km/h en ville.
+  theme: L
+  sous_theme: vitesse
+  importance: utile
+  source: Code de la route, art. R311-1
+- id: l-vitesse-peripherique
+  texte: Le boulevard périphérique de Paris est limité à {{c1::50 km/h}} depuis le 1er octobre 2024 (auparavant 70 km/h, valeur que le Code de la route mentionne encore).
+  explication: Mesure municipale (arrêté de la Ville de Paris). Sa voie de gauche est réservée au covoiturage (losange lumineux) aux heures de pointe depuis mars 2025.
+  theme: L
+  sous_theme: vitesse
+  importance: rare
+  source: Arrêté Ville de Paris n° 2024 P 15981 ; Code de la route, art. R413-3
+- id: l-stationnement-categories
+  texte: 'Stationnement gênant : {{c1::35 €}} ; très gênant : {{c2::135 €}} ; dangereux (visibilité insuffisante : virage, sommet de côte, intersection, passage à niveau) : 135 € et {{c3::3 points}} ; abusif (plus de {{c4::7 jours}} au même endroit) : 35 €. Fourrière possible dans tous les cas.'
+  explication: 'Seul le stationnement dangereux retire des points. « Très gênant » : trottoir, passage piéton et 5 m en amont, piste ou bande cyclable, voie de bus, place PMR, bouche d''incendie, devant les feux ou panneaux masqués.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-9 à R417-12 ; service-public.fr F34212
+- id: l-stationnement-5m-passage
+  texte: Il est interdit de s'arrêter ou de stationner sur un passage piéton et dans les {{c1::5 m}} en amont (stationnement très gênant, 135 €), pour ne pas masquer les piétons qui s'engagent.
+  explication: Les places matérialisées existant dans ces 5 m sont tolérées jusqu'au 31 décembre 2026 ; à partir du 1er janvier 2027, l'exception disparaît (loi LOM).
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-11 ; Code de la voirie routière, art. L118-5-1
+- id: l-stationnement-alterne
+  texte: 'Stationnement unilatéral alterné semi-mensuel : du 1er au 15 du mois côté des numéros {{c1::impairs}}, du 16 à la fin du mois côté des numéros {{c2::pairs}} ; le changement de côté se fait le dernier jour de chaque période entre {{c3::20 h 30 et 21 h}}.'
+  explication: 'Piège : le changement a lieu le soir (20 h 30), pas le matin. Signalé par les panneaux B6a2 (stationnement interdit du 1er au 15 : posé côté des numéros pairs) et B6a3 (interdit du 16 à la fin du mois : côté impair), ou par le panneau de zone B6b2.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-2
+- id: l-stationnement-cote
+  texte: En agglomération, on stationne sur le côté {{c1::droit}} de la chaussée dans le sens de sa marche (à droite ou à gauche dans une rue à sens unique) ; hors agglomération, autant que possible {{c2::hors de la chaussée}} (accotement).
+  explication: 'Stationner à contresens (côté gauche d''une rue à double sens) est un stationnement gênant (35 €) et dangereux la nuit (feux non visibles). La nuit sur chaussée non éclairée : feux de position allumés.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-1 et R416-12
+- id: l-zone-bleue
+  texte: 'En zone bleue, le disque de stationnement (modèle européen) est obligatoire, avec l''heure d''arrivée affichée ; la durée autorisée est fixée par arrêté municipal (souvent 1 h 30) ; défaut ou dépassement : {{c1::35 €}} (contravention de 2e classe).'
+  explication: Signalée par le panneau B6b3 (zone à stationnement de durée limitée) ou C1b, avec un marquage bleu au sol possible. Le stationnement payant impayé relève du forfait post-stationnement (FPS, montant communal), sans points.
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-3 ; service-public.fr F34440
+- id: l-feux-detresse-usage
+  texte: 'Les feux de détresse (warning) sont obligatoires quand on circule momentanément à allure fortement réduite ({{c1::dernier véhicule d''un bouchon}}) et, avec le triangle, pour présignaler un véhicule immobilisé dangereux ; ne pas les utiliser dans ces cas : {{c2::35 €}}.'
+  explication: Ils ne légalisent pas un arrêt en double file (qui reste un stationnement gênant). On les utilise aussi en cas de remorquage ou de panne.
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R416-18 et R416-19
+- id: l-depassement-laterale
+  texte: 'Distance latérale minimale pour dépasser un piéton, un cycliste, une trottinette, un cavalier ou un animal : {{c1::1 m}} en agglomération, {{c2::1,50 m}} hors agglomération (135 €, 3 points).'
+  explication: Pour cette manœuvre, on peut chevaucher (pas franchir totalement) une ligne continue si la visibilité le permet (R412-19). Si la place manque, on attend derrière sans coller.
+  theme: L
+  sous_theme: depassement
+  source: Code de la route, art. R414-4 et R412-19
+- id: l-ligne-continue-sanction
+  texte: 'Ligne continue : la {{c1::franchir}} coûte 135 € et 3 points ; la {{c2::chevaucher}} (une roue dessus) coûte 135 € et 1 point.'
+  explication: Une ligne discontinue peut être franchie et chevauchée ; une ligne mixte ne se franchit que si la ligne discontinue est de son côté au début de la manœuvre.
+  theme: L
+  sous_theme: depassement
+  source: Code de la route, art. R412-18 à R412-20
+- id: l-croisement-largeur
+  texte: Au croisement sur une chaussée étroite, les véhicules de plus de {{c1::2 m}} de large ou de plus de {{c2::7 m}} de long doivent ralentir ou s'arrêter pour laisser passer les plus petits ; en montagne, c'est le véhicule {{c3::descendant}} qui s'arrête ou recule.
+  explication: 'Si une marche arrière est nécessaire : elle incombe au véhicule seul face à un ensemble, au plus léger, au poids lourd face à un transport en commun — et entre véhicules de même catégorie, au descendant, sauf si le montant est plus près d''une place d''évitement.'
+  theme: L
+  sous_theme: croisement
+  source: Code de la route, art. R414-1 à R414-3
+- id: l-depasse-serrer-droite
+  texte: Quand on est dépassé, on serre à droite sans accélérer ; accélérer pendant qu'on est dépassé coûte 135 € et {{c1::2 points}}.
+  explication: Le dépassement se fait à gauche, sauf pour dépasser un véhicule qui a signalé qu'il tourne à gauche, ou un tramway (par la droite si la place suffit).
+  theme: L
+  sous_theme: depassement
+  source: Code de la route, art. R414-6 et R414-16
+- id: l-implantation-danger
+  texte: Les panneaux de danger (triangles) sont implantés à environ {{c1::150 m}} avant le danger hors agglomération, {{c2::50 m}} en agglomération (et 200 m sur autoroute) ; une distance différente est indiquée par un panonceau M1.
+  explication: 'Question officielle 2023 : « la descente dangereuse à 15 % commence à environ 150 m » (OUI, hors agglomération). Les présignalisations de STOP (AB5) et de cédez-le-passage (AB3b) sont aussi implantées à 150 m.'
+  theme: L
+  sous_theme: signalisation
+  source: IISR 2e partie, art. 28 ; Sécurité routière — Exemples de nouvelles questions (Q18, Q19)
+- id: l-balises-j10
+  texte: 'À l''approche d''un passage à niveau hors agglomération, les balises J10 marquent la distance : {{c1::3 bandes}} rouges à 150 m (sur le panneau A7/A8), {{c2::2 bandes}} à 100 m, {{c3::1 bande}} à 50 m.'
+  explication: 'Elles n''existent pas toujours en agglomération. Croix de Saint-André simple (G1) = une voie ; double (G1 bis) = plusieurs voies : un train peut en cacher un autre.'
+  theme: L
+  sous_theme: signalisation
+  source: IISR 2e partie, art. 28 et 34
+- id: l-marquage-modulations
+  texte: 'Ligne axiale discontinue ordinaire (T1) : traits de {{c1::3 m}} espacés de {{c2::10 m}} ; ligne de dissuasion ou d''annonce d''une ligne continue (T3) : traits de 3 m espacés de {{c3::1,33 m}} (traits longs, espaces courts) ; ligne de rive de bande d''arrêt d''urgence (T4) : traits de 39 m espacés de 13 m.'
+  explication: 'Plus les traits sont longs et rapprochés, plus le message est restrictif : T1 = dépassement autorisé ; T3 = dépassement déconseillé (seulement un véhicule très lent) et annonce d''une ligne continue ; continue = interdit.'
+  theme: L
+  sous_theme: marquages
+  source: IISR 7e partie, art. 113
+- id: l-passage-pieton-50m
+  texte: Un piéton doit emprunter le passage piéton s'il en existe un à moins de {{c1::50 m}} ; le conducteur doit céder le passage au piéton {{c2::engagé}} ou qui manifeste clairement l'intention de traverser (135 €, {{c3::6 points}}).
+  explication: Dans une aire piétonne ou une zone de rencontre, le piéton est prioritaire partout. Ne jamais s'arrêter sur le passage ni dépasser un véhicule arrêté devant un passage piéton.
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R412-37 et R415-11
+- id: l-signalisation-hierarchie
+  texte: 'Hiérarchie des prescriptions : les indications de l''{{c1::agent}} priment sur les {{c2::feux}}, qui priment sur les panneaux, qui priment sur le marquage au sol et sur la règle générale (priorité à droite) ; la signalisation temporaire ({{c3::jaune}}) prime sur la signalisation permanente.'
+  explication: 'Exemple : feu vert mais agent bras tendus de face → je m''arrête. Feux hors service (jaune clignotant) → panneaux, puis priorité à droite.'
+  theme: L
+  sous_theme: signalisation
+  source: Code de la route, art. R411-25 et R411-28 ; IISR

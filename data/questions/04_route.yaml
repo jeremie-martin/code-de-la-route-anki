@@ -1,0 +1,233 @@
+- id: r-nuit-feux-croisement-route
+  question: De nuit hors agglomération, quand utilise-t-on les feux de route, et quand repasse-t-on en croisement ?
+  reponse: Feux de route dès que la route n'est pas éclairée et qu'il n'y a personne devant ; retour en feux de croisement dès qu'on croise un véhicule, qu'on en suit un de près, ou qu'on risque d'éblouir (piéton, cycliste, virage).
+  explication: 'En agglomération éclairée : feux de croisement. Portée : croisement ~30 m — à 70 km/h et plus, on ne peut plus s''arrêter dans la zone éclairée (Sécurité routière) ; route ~100 m.'
+  theme: R
+  sous_theme: nuit
+  source: Code de la route, art. R416-4 à R416-6
+- id: r-nuit-vitesse-visibilite
+  question: Pourquoi faut-il rouler moins vite de nuit, même sur une route qu'on connaît ?
+  reponse: 'Parce qu''on ne peut voir qu''à la portée de ses feux (30 m en croisement) : à 70 km/h et plus, on ne peut plus s''arrêter dans la zone éclairée (Sécurité routière) ; on détecte plus tard piétons, animaux, obstacles, et la fatigue est plus forte.'
+  explication: 'Règle : pouvoir toujours s''arrêter dans la distance éclairée. À 90 km/h, la distance d''arrêt (~70-80 m sur sol sec) est plus de 2 fois la portée des feux de croisement.'
+  theme: R
+  sous_theme: nuit
+  source: securite-routiere.gouv.fr — Conduire de nuit ; Codes Rousseau
+- id: r-nuit-eblouissement-suiveur
+  question: Un véhicule me suit de près, la nuit, et ses phares m'éblouissent dans le rétroviseur intérieur. Que faire ?
+  reponse: Basculer le rétroviseur intérieur en position « nuit » (ou il s'assombrit automatiquement) et, si possible, le laisser passer ; ne pas freiner brusquement ni « me venger » avec les feux de route.
+  explication: Le rétroviseur jour/nuit est une petite languette à sa base. Un freinage-surprise face à un suiveur collé est un accident probable.
+  theme: R
+  sous_theme: nuit
+  source: REMC ; Codes Rousseau — Conduire de nuit
+- id: r-nuit-stationnement-feux
+  question: Stationné la nuit sur une route hors agglomération sans éclairage public, dois-je laisser des feux allumés ?
+  reponse: 'Oui : les feux de position (avant et arrière) — ou, en agglomération éclairée, aucun feu n''est obligatoire si le véhicule est visible à distance suffisante.'
+  explication: Hors agglomération, on stationne de préférence hors chaussée ; sur la chaussée, à droite dans le sens de circulation, avec les feux de position si l'éclairage est insuffisant (feux de stationnement d'un seul côté admis en agglomération).
+  theme: R
+  sous_theme: nuit
+  source: Code de la route, art. R416-12 et R417-1
+- id: r-pluie-feux
+  question: Sous une pluie qui réduit la visibilité, en plein jour, quels feux faut-il allumer ?
+  reponse: Les feux de croisement (pas seulement les feux de jour, qui n'allument pas l'arrière). Les feux de brouillard avant sont autorisés, les feux de brouillard arrière sont interdits sous la pluie (éblouissement par réflexion).
+  explication: 'Obligation dès que la visibilité est réduite (pluie, brouillard, neige, chute du jour). L''allumage automatique ne détecte pas toujours la pluie : vérifier le voyant vert.'
+  theme: R
+  sous_theme: intemperies
+  source: Code de la route, art. R416-4 et R416-7
+- id: r-aquaplaning
+  question: Qu'est-ce que l'aquaplaning et comment y réagir ?
+  reponse: 'La perte de contact des pneus avec la route sur une pellicule d''eau (direction et freins inopérants) : on lève le pied progressivement, sans freiner ni braquer brusquement, jusqu''à retrouver l''adhérence.'
+  explication: 'Favorisé par la vitesse, les pneus usés ou sous-gonflés et les flaques (ornières). Prévention : ralentir dès les premières gouttes (la route est la plus glissante au début de la pluie, quand poussière et gomme se mélangent à l''eau).'
+  theme: R
+  sous_theme: intemperies
+  source: securite-routiere.gouv.fr — Conduire sous la pluie
+- id: r-pluie-distances
+  question: Sur chaussée mouillée, comment évoluent l'adhérence et la distance de freinage ?
+  reponse: 'L''adhérence est environ 2 fois moins bonne et la distance de freinage environ 2 fois plus longue : on double l''intervalle de sécurité et on réduit sa vitesse (limites abaissées : 130 → 110, 110 → 100, 90 → 80 ; les routes limitées à 80 restent à 80).'
+  explication: 'Question officielle 2023 (Q13, autoroute sèche/mouillée : adhérence « 2 fois moins bonne » OUI, freinage « 2 fois plus long » OUI). Les projections d''eau réduisent aussi la visibilité : essuie-glaces en bon état.'
+  theme: R
+  sous_theme: intemperies
+  source: Sécurité routière — Exemples de nouvelles questions (Q13) ; Code de la route, art. R413-2
+- id: r-brouillard-feux
+  question: Par brouillard, quels feux utiliser ?
+  reponse: 'Feux de croisement obligatoires (jamais les feux de route : ils se réfléchissent sur le brouillard) + feux de brouillard avant si équipé ; feux de brouillard arrière uniquement si le brouillard est dense, à éteindre dès qu''il se dissipe.'
+  explication: 'Visibilité inférieure à 50 m : vitesse limitée à 50 km/h sur tous les réseaux. On garde un intervalle plus grand et on se repère sur la ligne de rive plutôt que sur les feux du véhicule qui précède.'
+  theme: R
+  sous_theme: intemperies
+  source: Code de la route, art. R416-7 et R413-4
+- id: r-neige-conduite
+  question: Comment adapter sa conduite sur neige ou verglas ?
+  reponse: 'Tout en douceur : démarrer en 2e si nécessaire, vitesse très réduite, rapport élevé, distances multipliées (×4 à ×10 sur verglas), pas de freinage ni de coup de volant brusques, frein moteur en descente, et équipements (pneus hiver, chaînes ou chaussettes si B26 ou zone montagne).'
+  explication: 'Le verglas est invisible : méfiance par temps clair et froid le matin (ponts, zones ombragées, sous-bois). Chaînes : sur les roues motrices, vitesse ≤ 50 km/h, à retirer dès la chaussée dégagée.'
+  theme: R
+  sous_theme: intemperies
+  source: securite-routiere.gouv.fr — Conduire en hiver ; Code de la route, art. R314-3
+- id: r-loi-montagne
+  question: En zone de montagne (loi Montagne II), que doit avoir un véhicule du 1er novembre au 31 mars ?
+  reponse: Soit 4 pneus hiver (marquage 3PMSF « flocon » ; depuis le 1er novembre 2024 le seul marquage M+S ne suffit plus, sauf à avoir des chaînes à bord), soit des chaînes ou chaussettes à neige à bord pour au moins deux roues motrices — dans les communes listées par le préfet, signalées par le panneau B58.
+  explication: 'Question officielle 2023 (Q10 : sans chaînes ni chaussettes, « mon véhicule doit obligatoirement être équipé de 4 pneus hiver » : OUI). Aucune amende n''est codifiée (D314-8) : le « 135 € » annoncé n''a jamais été appliqué ; l''obligation existe néanmoins et c''est la réponse attendue.'
+  theme: R
+  sous_theme: intemperies
+  source: Sécurité routière — Exemples de nouvelles questions (Q10) ; décret n° 2020-1264 du 16 octobre 2020 ; securite-routiere.gouv.fr — Loi Montagne
+- id: r-vent-lateral
+  question: Quels usagers et quels lieux sont sensibles au vent latéral, et comment réagir ?
+  reponse: Deux-roues, caravanes, camions et fourgons, véhicules avec coffre de toit ; sorties de tunnel, ponts, viaducs, trouées entre des bâtiments, dépassement d'un poids lourd (effet d'aspiration puis rafale). On ralentit, on tient fermement le volant à deux mains et on augmente l'écart latéral.
+  explication: Le panneau A24 (manche à air) et les manches à air réelles signalent les zones exposées.
+  theme: R
+  sous_theme: intemperies
+  source: securite-routiere.gouv.fr — Vent ; IISR (A24)
+- id: r-soleil-bas
+  question: Que faire face à un soleil rasant (lever ou coucher) ?
+  reponse: 'Ralentir, utiliser le pare-soleil et des lunettes de soleil, garder le pare-brise propre (intérieur et extérieur), allumer les feux de croisement pour être vu, et anticiper : les autres conducteurs sont aussi aveuglés.'
+  explication: Un pare-brise sale ou rayé diffracte la lumière et peut rendre la route totalement invisible.
+  theme: R
+  sous_theme: intemperies
+  source: securite-routiere.gouv.fr — Soleil
+- id: r-tunnel-regles
+  question: Quelles règles s'appliquent dans un tunnel ?
+  reponse: Feux de croisement allumés, intervalle de sécurité indiqué par la signalisation (souvent 150 m, ou 2 repères lumineux bleus) à respecter même à l'arrêt, interdiction de s'arrêter, de faire demi-tour ou marche arrière, de dépasser si le tunnel est signalé (B3 ou ligne continue), vitesse adaptée, radio sur la fréquence indiquée (107.7 sur autoroute).
+  explication: 'Le panneau C111 (entrée de tunnel) rappelle ces obligations. Avant d''entrer : retirer ses lunettes de soleil, repérer les issues de secours signalées en vert.'
+  theme: R
+  sous_theme: tunnels
+  source: Code de la route, art. R412-12 et R416-11 ; securite-routiere.gouv.fr — Tunnels
+- id: r-tunnel-panne
+  question: 'Mon véhicule tombe en panne dans un tunnel : que faire ?'
+  reponse: Feux de détresse, me ranger au plus près du bord (garage ou niche si possible), couper le moteur, laisser les clés sur le contact, sortir par le côté droit avec le gilet, rejoindre une niche de sécurité (téléphone d'urgence, extincteur, tous les 200 m) et appeler.
+  explication: Le téléphone d'urgence de la niche localise l'appel et alerte l'exploitant, qui voit le tunnel en vidéo. On ne fait jamais demi-tour.
+  theme: R
+  sous_theme: tunnels
+  source: securite-routiere.gouv.fr — Tunnels ; CETU
+- id: r-tunnel-incendie
+  question: 'Un incendie se déclare dans le tunnel (fumée, véhicule en feu devant moi) : que faire ?'
+  reponse: M'arrêter à distance (≥ 100 m si possible) sur le côté, couper le moteur, laisser les clés, sortir immédiatement et gagner à pied l'issue de secours la plus proche (panneaux verts, flèches lumineuses), en s'éloignant de la fumée ; ne jamais rester dans le véhicule ni faire demi-tour en voiture.
+  explication: La fumée tue en quelques minutes ; les issues de secours (abris pressurisés, galeries) sont signalées tous les 200 m environ et mènent à l'air libre ou à l'autre tube. Un extincteur n'est utile que sur un feu naissant, sans se mettre en danger.
+  theme: R
+  sous_theme: tunnels
+  source: securite-routiere.gouv.fr — Tunnels ; CETU — Consignes en cas d'incendie
+- id: r-pn-feu-rouge-clignotant
+  question: À un passage à niveau, les feux rouges clignotent et la sonnerie retentit, mais la barrière n'est pas encore baissée. Puis-je passer ?
+  reponse: 'Non : le feu rouge clignotant impose l''arrêt absolu, barrière ou non ; un train peut arriver dans les secondes qui suivent.'
+  explication: Le feu rouge clignotant (R24) signifie « arrêt absolu » partout où on le rencontre (PN, pont mobile, sortie de caserne de pompiers, aéroport). Un train à 100 km/h a besoin de plus de 1 km pour s'arrêter.
+  theme: R
+  sous_theme: passages_a_niveau
+  source: Code de la route, art. R412-30 et R422-3 ; SNCF Réseau — Sécurité aux passages à niveau
+- id: r-pn-engagement
+  question: Quelle règle absolue avant de s'engager sur un passage à niveau ?
+  reponse: Ne s'engager que si l'on est certain de pouvoir le franchir sans s'arrêter (sortie dégagée, pas de bouchon derrière) ; en file, on attend avant le passage, jamais dessus.
+  explication: Beaucoup d'accidents surviennent avec des véhicules bloqués sur les voies par un embouteillage. Aucun dépassement ni stationnement sur ou aux abords d'un PN.
+  theme: R
+  sous_theme: passages_a_niveau
+  source: Code de la route, art. R422-3 ; SNCF Réseau
+- id: r-pn-bloque
+  question: 'Mon véhicule est immobilisé (calé, en panne) sur les voies d''un passage à niveau : que faire ?'
+  reponse: Faire descendre tous les occupants et les éloigner des voies immédiatement, appeler le numéro d'urgence inscrit sur le panneau du passage à niveau (numéro du PN indiqué) ou le 112, puis seulement si c'est sans danger tenter de dégager le véhicule (pousser, démarreur en 1re).
+  explication: Une barrière fermée se traverse à pied ou se casse en voiture si nécessaire (elles sont conçues pour). Le numéro d'appel et le numéro du PN figurent sur une plaque au passage à niveau.
+  theme: R
+  sous_theme: passages_a_niveau
+  source: SNCF Réseau — Que faire en cas d'immobilisation ; securite-routiere.gouv.fr
+- id: r-pn-sans-barriere
+  question: À un passage à niveau sans barrière ni feux (croix de Saint-André seule), comment procéder ?
+  reponse: Ralentir fortement, regarder et écouter des deux côtés (vitre ouverte si besoin), et ne traverser que si aucun train n'approche ; en cas de doute, s'arrêter.
+  explication: 'Une croix simple (G1) = une voie ; une croix double (G1 bis) = plusieurs voies : un train peut en cacher un autre. Le panneau A8 annonce ce type de passage à 150 m (50 m en agglomération), avec les balises J10 à 150/100/50 m.'
+  theme: R
+  sous_theme: passages_a_niveau
+  source: Code de la route, art. R422-3 ; IISR (G1, A8, J10)
+- id: r-tram-priorite
+  question: Qui a la priorité entre un tramway et une voiture ?
+  reponse: Le tramway, presque toujours (il ne peut ni dévier ni freiner court) — sauf indication contraire d'un agent ou d'un feu propre au tram (barres blanches).
+  explication: 'On ne s''arrête jamais sur les voies, on ne dépasse un tram à l''arrêt que si les voyageurs ne sont pas mis en danger (jamais par la gauche quand il circule au milieu : il est dépassé par la droite), et les rails mouillés sont glissants pour les deux-roues.'
+  theme: R
+  sous_theme: tramways
+  source: Code de la route, art. R422-3 et R414-13
+- id: r-chantier-regles
+  question: Que change une zone de travaux (signalisation jaune) pour le conducteur ?
+  reponse: La signalisation temporaire (jaune) prime sur la signalisation permanente ; on ralentit dès le panneau AK5, on respecte les limitations et déviations, on ne dépasse pas les engins ou ouvriers sans distance, et on suit les piquets K5 et les balises.
+  explication: 'Les ouvriers sont des usagers vulnérables : vitesse réduite, distance latérale, pas de klaxon. Les feux tricolores temporaires (KR11) ont la même valeur que les feux permanents.'
+  theme: R
+  sous_theme: chantiers
+  source: IISR, 8e partie (signalisation temporaire) ; Code de la route, art. R411-25
+- id: r-chantier-fleche-lumineuse
+  question: 'Une flèche lumineuse de rabattement (sur véhicule de chantier) ou un panneau de réduction de voies précède un chantier sur voie rapide : que faire ?'
+  reponse: Me rabattre dès que possible sur la voie indiquée, en réduisant ma vitesse, sans attendre le dernier moment ni forcer le passage ; les véhicules déjà sur la voie de destination facilitent l'insertion (fermeture éclair).
+  explication: 'Les véhicules de chantier avec flèche lumineuse (FLR/FLU) sont eux-mêmes une protection : ne jamais se glisser entre eux et le chantier.'
+  theme: R
+  sous_theme: chantiers
+  source: IISR, 8e partie ; securite-routiere.gouv.fr — Zones de chantier
+- id: r-autoroute-insertion
+  question: Comment s'insérer sur l'autoroute depuis la voie d'accélération ?
+  reponse: J'accélère franchement pour atteindre la vitesse du trafic, clignotant gauche, contrôle rétroviseur + angle mort, et je m'insère dans un espace suffisant en fin de voie d'accélération ; ce sont les usagers de l'autoroute qui ont la priorité, mais ils facilitent souvent l'insertion en se déportant.
+  explication: 'Erreurs classiques : s''arrêter en bout de bretelle, ou s''insérer trop lentement. Ne pas franchir la ligne continue en début de bretelle.'
+  theme: R
+  sous_theme: autoroute
+  source: Code de la route, art. R421-3 ; securite-routiere.gouv.fr — Autoroute
+- id: r-autoroute-sortie
+  question: Comment quitter l'autoroute ?
+  reponse: 'Je me place à droite à l''avance, clignotant droit dès la présignalisation (panneau à 2 000 m, 1 000 m, puis balises), je rejoins la voie de décélération sans ralentir sur l''autoroute, et je ralentis dans la bretelle (attention : sensation de vitesse faussée après l''autoroute).'
+  explication: 'Si je rate ma sortie, je continue jusqu''à la suivante : marche arrière et demi-tour sont interdits et mortels.'
+  theme: R
+  sous_theme: autoroute
+  source: Code de la route, art. R412-9 ; securite-routiere.gouv.fr — Autoroute
+- id: r-autoroute-bau
+  question: À quoi sert la bande d'arrêt d'urgence, et qui peut y circuler ?
+  reponse: Uniquement aux arrêts d'urgence (panne, malaise) et aux véhicules de secours ou d'exploitation ; y rouler ou s'y arrêter pour une pause, un appel ou une carte est interdit (135 €, 3 points) et très dangereux.
+  explication: 'Après un arrêt sur la BAU : gilet avant de sortir, tous les occupants derrière la glissière, borne d''appel (tous les 2 km), ne pas tenter de réparer soi-même. Sur certains tronçons, la bande d''arrêt d''urgence est ouverte à la circulation aux heures de pointe comme voie auxiliaire (signalisation dynamique).'
+  theme: R
+  sous_theme: autoroute
+  source: Code de la route, art. R412-8 et R421-7 ; securite-routiere.gouv.fr — Autoroute
+- id: r-autoroute-panne
+  question: 'Je tombe en panne sur autoroute : quelle procédure ?'
+  reponse: Feux de détresse, me ranger sur la BAU le plus à droite possible (roues braquées vers l'extérieur), enfiler le gilet avant de sortir, faire descendre tous les occupants par la droite et les mettre derrière la glissière, marcher derrière la glissière jusqu'à la borne d'appel (≤ 1 km) et appeler ; le dépanneur agréé arrive (tarif réglementé).
+  explication: 'Poser le triangle n''est pas obligatoire sur autoroute si cela met en danger. Ne jamais rester dans le véhicule ni derrière lui. L''appel via borne est préférable au portable : localisation immédiate.'
+  theme: R
+  sous_theme: autoroute
+  source: Code de la route, art. R416-19 ; ASFA ; securite-routiere.gouv.fr — Autoroute
+- id: r-autoroute-interdictions
+  question: Quelles manœuvres sont interdites sur autoroute ?
+  reponse: Marche arrière, demi-tour (y compris par une trouée du terre-plein), arrêt ou stationnement hors urgence, circulation sur la bande d'arrêt d'urgence, rouler sans nécessité sur la voie de gauche, dépasser par la droite, remorquer un autre véhicule.
+  explication: 'Vitesse minimale de 80 km/h sur la voie la plus à gauche par bonnes conditions. Au péage : ne pas reculer si l''on s''est trompé de voie, demander de l''aide via l''interphone.'
+  theme: R
+  sous_theme: autoroute
+  source: Code de la route, art. R412-8, R412-9, R421-2 et s.
+- id: r-autoroute-usagers-interdits
+  question: Quels usagers n'ont pas le droit de circuler sur autoroute ?
+  reponse: Les piétons, les vélos, les cyclomoteurs, les voiturettes (quadricycles légers), les tracteurs et engins agricoles ou de travaux publics, les véhicules non immatriculés et les ensembles à plusieurs remorques.
+  explication: Article R421-2. Les mêmes interdictions valent sur les routes à accès réglementé (C107). Un élève en conduite accompagnée peut, lui, circuler sur autoroute.
+  theme: R
+  sous_theme: autoroute
+  source: Code de la route, art. R421-2 et R422-4
+- id: r-autoroute-fatigue-aires
+  question: Sur autoroute, où et à quelle fréquence trouve-t-on des aires pour faire une pause ?
+  reponse: Une aire de repos environ tous les 15 à 20 km et une aire de service (carburant, restauration) environ tous les 40 à 50 km ; pause conseillée toutes les 2 h ou dès les premiers signes de fatigue.
+  explication: La somnolence cause environ un tiers des accidents mortels sur autoroute ; les aires sont annoncées par des panneaux à 2 000 m puis 1 000 m.
+  theme: R
+  sous_theme: autoroute
+  importance: utile
+  source: ASFA — Aires d'autoroute ; securite-routiere.gouv.fr
+- id: r-autoroute-peage
+  question: Comment choisir sa voie au péage ?
+  reponse: 'Selon les pictogrammes au-dessus des voies : « t » orange = télépéage (badge, sans s''arrêter, 30 km/h max), cartes bancaires, pièces/billets, flèche verte = toutes catégories ; croix rouge = voie fermée ; on choisit tôt et on ne change plus de voie.'
+  explication: Après le péage, les véhicules se réinsèrent en respectant les lignes et la « fermeture éclair » ; attention aux piétons (agents) dans la zone.
+  theme: R
+  sous_theme: autoroute
+  importance: utile
+  source: ASFA — Le péage ; IISR
+- id: r-autoroute-chevrons
+  question: Que signifient les chevrons peints sur la chaussée de l'autoroute ?
+  reponse: 'Ils aident à respecter l''intervalle de sécurité : on doit toujours voir au moins 2 chevrons entre soi et le véhicule qui précède (≈ 90 m à 130 km/h, soit les 2 secondes réglementaires).'
+  explication: 'Les 2 secondes se comptent au passage d''un repère fixe (panneau, pont) : « un crocodile, deux crocodiles ». Par temps de pluie, on double.'
+  theme: R
+  sous_theme: autoroute
+  source: Code de la route, art. R412-12 ; ASFA
+- id: r-montagne-priorite
+  question: Sur une route de montagne étroite, qui doit céder le passage au croisement ?
+  reponse: 'Le véhicule qui descend doit s''arrêter le premier (et reculer si nécessaire) pour laisser passer celui qui monte — sauf si le véhicule montant est plus près d''une place d''évitement (c''est alors lui qui recule). Entre véhicules de catégories différentes, celui qui recule est : le véhicule seul face à un attelage, le plus léger des deux, le camion de plus de 3,5 t face à un transport en commun.'
+  explication: 'Article R414-3. En descente : rapport bas et frein moteur, freinage par intermittence pour ne pas surchauffer les freins.'
+  theme: R
+  sous_theme: montagne
+  source: Code de la route, art. R414-2 et R414-3
+- id: r-descente-freinage
+  question: Comment freiner dans une longue descente (ex. 15 %) ?
+  reponse: Rapport inférieur pour utiliser le frein moteur, et freinage par intermittence (appuis francs puis relâche) plutôt que continu, pour éviter la surchauffe et la perte d'efficacité des freins.
+  explication: 'Question officielle 2023 (Q18 : « je freine par intermittence et j''utilise le frein moteur » — pas « doucement et en permanence »). Le panneau A16 (descente dangereuse, %) est implanté à ~150 m hors agglomération.'
+  theme: R
+  sous_theme: montagne
+  source: Sécurité routière — Exemples de nouvelles questions (Q18)

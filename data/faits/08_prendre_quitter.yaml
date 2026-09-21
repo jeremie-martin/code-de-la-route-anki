@@ -1,0 +1,13 @@
+# Thème P — Prendre et quitter son véhicule : repères chiffrés
+- id: p-installation-reperes
+  texte: "Installation : le haut de l'appuie-tête au niveau du {{c1::sommet de la tête}} ; les poignets posés sur le {{c2::haut du volant}} bras tendus sans décoller les épaules du dossier ; la jambe gauche légèrement {{c3::fléchie}} quand l'embrayage est enfoncé à fond ; mains à {{c4::9 h 15}} (ou 10 h 10)."
+  explication: "Ordre : siège (avancée, hauteur), dossier, appuie-tête, rétroviseurs, ceinture — toujours à l'arrêt. Rétroviseur intérieur : toute la lunette arrière ; extérieurs : un peu de carrosserie et l'horizon."
+  theme: P
+  sous_theme: installation
+  source: "REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite"
+- id: p-quitter-reperes
+  texte: "Avant d'ouvrir la portière : rétroviseur puis {{c1::angle mort}}, et ouverture avec la main {{c2::opposée}} à la portière (« portière gauche, main droite ») ; en pente : {{c3::1re}} en montée, {{c4::marche arrière}} en descente (P en boîte automatique), roues tournées vers le trottoir en descente."
+  explication: "Une portière ouverte sans contrôle sur un cycliste (emportiérage) engage la responsabilité du conducteur (R417-7). Un véhicule au soleil atteint 70 °C en 20 minutes : jamais d'enfant ni d'animal seul à bord."
+  theme: P
+  sous_theme: quitter
+  source: "Code de la route, art. R417-7 et R417-8 ; securite-routiere.gouv.fr — Portière gauche, main droite"

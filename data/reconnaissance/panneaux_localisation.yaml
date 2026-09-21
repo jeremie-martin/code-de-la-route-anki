@@ -1,0 +1,77 @@
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 6 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+- id: eb10
+  type: panneau
+  code: EB10
+  image:
+    commons: France road sign EB10.svg
+  nom: Entrée d'agglomération
+  signification: 'Indique l''entrée dans une agglomération : dès ce panneau, les règles propres à l''agglomération s''appliquent (vitesse limitée à 50 km/h sauf indication, priorité à droite en l''absence de signalisation, klaxon interdit sauf danger, feux de croisement obligatoires de nuit...).'
+  conduite: Réduire à 50 km/h au niveau du panneau (avant s'il faut ralentir), redoubler d'attention (piétons, cyclistes, intersections).
+  complement: 'À la limite de l''agglomération, surmonté d''un cartouche de route (E41-E44). Seuls B14 (< 50 km/h, valable alors pour toute l''agglomération), AB6, AB7, B30, B52, E31, E32 peuvent partager son support. Fin : EB20. Un 70 (relèvement) est implanté après l''EB10 et ne vaut que sur la route concernée, jusqu''à la prochaine intersection ou au B33. Un E31 (lieu-dit, lettres italiques blanches sur fond noir) ne limite PAS la vitesse à 50.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: eb20
+  type: panneau
+  code: EB20
+  image:
+    commons: France road sign EB20.svg
+  nom: Sortie d'agglomération
+  signification: 'Indique la sortie de l''agglomération : fin des règles spécifiques ; la vitesse redevient celle hors agglomération (80/90 km/h sur route bidirectionnelle).'
+  conduite: Accélérer progressivement seulement après le panneau, si les conditions le permettent ; attention, hors agglomération le klaxon est de nouveau autorisé (avertissement).
+  complement: À la limite de l'agglomération, souvent adossé au panneau EB10 de l'autre sens.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: e31
+  type: panneau
+  code: E31
+  image:
+    gen: lieu_dit
+    params:
+      text: Le Bourg
+  nom: Localisation d'un lieu-dit ou d'un lieu traversé
+  signification: 'Indique le nom d''un lieu traversé par la route qui n''est pas une agglomération : lieu-dit, hameau, forêt, quartier, col, pont. N''implique aucune règle particulière (pas de limitation à 50).'
+  conduite: 'Aucune obligation : la limitation reste celle de la route (sauf panneau B14 associé).'
+  complement: Peut être placé sur le même support qu'EB10 (le nom du hameau sous celui de la commune).
+  piege: 'Piège classique : lettres ITALIQUES blanches sur fond noir = lieu-dit (pas d''agglomération) ; lettres DROITES noires sur fond blanc bordé de rouge = agglomération (50 km/h).'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: e42
+  type: panneau
+  code: E42
+  image:
+    commons: E42.svg
+  nom: Cartouche de route nationale ou d'autoroute
+  signification: Cartouche identifiant une autoroute (A + numéro) ou une route nationale (N + numéro).
+  complement: 'Au-dessus des panneaux de direction ou d''agglomération. Couleur des cartouches : rouge = A/N (État), jaune = D (département), blanc = C/VC (commune), vert = E (Europe) ou F (forêt), bleu = M (métropole).'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: e43
+  type: panneau
+  code: E43
+  image:
+    commons: E43.svg
+  nom: Cartouche de route départementale
+  signification: Cartouche identifiant une route départementale (D + numéro).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: e44
+  type: panneau
+  code: E44
+  image:
+    commons: E44.svg
+  nom: Cartouche de voie communale ou rurale
+  signification: Cartouche identifiant une voie communale (C, VC) ou un chemin rural.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

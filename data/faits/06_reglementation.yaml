@@ -1,0 +1,269 @@
+- id: d-points-capital
+  texte: Le permis de conduire est doté d'un capital maximal de {{c1::12 points}} ; un permis probatoire démarre avec {{c2::6 points}}.
+  explication: Le capital de 6 points s'applique au premier permis et à tout permis obtenu après invalidation ou annulation. Ajouter une catégorie (moto) à un permis ancien ne fait pas repasser en probatoire.
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-1 et R223-1
+- id: d-probatoire-duree
+  texte: Le délai probatoire dure {{c1::3 ans}} (filière classique) ou {{c2::2 ans}} après une conduite accompagnée (AAC) ; le capital augmente de {{c3::2 points}} par an (6 → 8 → 10 → 12) — {{c4::3 points}} par an après AAC (6 → 9 → 12) — à condition de ne commettre aucune infraction avec retrait de points.
+  explication: 'Une seule infraction avec retrait de points interrompt la majoration. Pendant le probatoire : disque A à l''arrière, vitesses réduites (110/100/80), alcool 0,2 g/L.'
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-1 et R223-1 ; service-public.fr F2390
+- id: d-formation-post-permis
+  texte: La formation complémentaire « post-permis » (1 journée de 7 h, entre le 6e et le 12e mois après le permis) ramène le délai probatoire de 3 ans à {{c1::2 ans}} (et de 2 ans à {{c2::1 an et 6 mois}} après AAC).
+  explication: 'Volontaire, dans une école labellisée, réservée au premier permis, et à condition de n''avoir commis aucune infraction avec retrait de points. Avec elle : 12 points après 2 ans au lieu de 3.'
+  theme: D
+  sous_theme: points
+  importance: utile
+  source: Code de la route, art. L223-1 et R223-4-1 ; décret n° 2018-715 ; service-public.fr F2390
+- id: d-points-delit-cumul
+  texte: 'Un délit routier retire {{c1::6 points}} ; une contravention en retire au plus 6 ; plusieurs infractions constatées simultanément retirent au plus {{c2::8 points}} — seule exception : alcool + stupéfiants, {{c3::9 points}} (loi du 9 juillet 2025).'
+  explication: Les points sont retirés à la date du paiement de l'amende ou de la condamnation définitive, pas à la date de l'infraction. Aucun retrait pour une infraction commise à vélo, en trottinette ou à pied (véhicule sans permis exigé).
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-2 et L235-1 IV
+- id: d-probatoire-3-points
+  texte: En permis probatoire, une infraction retirant au moins {{c1::3 points}} entraîne l'obligation de suivre un stage de sensibilisation dans les {{c2::4 mois}} (lettre 48N) ; la perte de la totalité des points (6 la 1re année) entraîne l'{{c3::invalidation}} du permis (lettre 48SI).
+  explication: Le stage obligatoire se substitue à l'amende (remboursée sur demande) et rend jusqu'à 4 points dans la limite du plafond. Un seul délit (alcool ≥ 0,8, stupéfiants, délit de fuite) ou une contravention à 6 points (alcool ≥ 0,2 en probatoire, priorité piéton) invalide le permis la première année.
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-6, R223-4, R223-8, L223-5
+- id: d-invalidation-delai
+  texte: Après une invalidation pour solde de points nul, on doit remettre son permis en préfecture sous {{c1::10 jours}} et attendre {{c2::6 mois}} avant de repasser le permis ({{c3::1 an}} si nouvelle invalidation dans les 5 ans) ; on repasse seulement le code si le permis avait au moins 3 ans, sinon code + conduite.
+  explication: 'Retour conditionné à un examen médical (médecin agréé, 36 €) et à des tests psychotechniques (~100 €), aux frais de l''intéressé. Le nouveau permis est probatoire (6 points). Conduire malgré l''invalidation : délit (2 ans, 4 500 €).'
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-5 et L224-16 ; service-public.fr F1704
+- id: d-recuperation-points
+  texte: 'Récupération automatique des points : {{c1::6 mois}} sans infraction pour un retrait d''un seul point ; {{c2::2 ans}} sans infraction pour retrouver 12 points si les infractions étaient des contraventions de 1re à 3e classe ; {{c3::3 ans}} si l''une d''elles est de 4e ou 5e classe ou un délit.'
+  explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès ≥ 20 km/h) sont de 4e classe → c''est souvent 3 ans. Règle des 10 ans : les points des contraventions des 4 premières classes reviennent au plus tard 10 ans après. Pas de reconstitution automatique pendant le probatoire : on récupère par la majoration annuelle ou par stage.'
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-6 ; service-public.fr F1685
+- id: d-stage-points
+  texte: Un stage volontaire de sensibilisation à la sécurité routière ({{c1::2 jours}} consécutifs, ~200 €) permet de récupérer jusqu'à {{c2::4 points}}, dans la limite du capital, au plus {{c3::une fois par an}} (date à date), à condition que le permis soit encore valide.
+  explication: Avant la loi LOPPSI 2 (2011), c'était une fois tous les 2 ans. Les points sont crédités le lendemain du dernier jour de stage.
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-6 et R223-8 ; service-public.fr F14208
+- id: d-consulter-points
+  texte: On consulte son solde de points sur le téléservice « {{c1::Mes Points Permis}} » (qui a remplacé Télépoints en novembre 2023) ; le permis B au format carte est valable {{c2::15 ans}} administrativement (renouvellement sans examen ni visite médicale).
+  explication: Le permis dématérialisé est disponible dans l'application France Identité depuis février 2024 et accepté aux contrôles en France (pas à l'étranger). Les anciens permis roses restent valables jusqu'au 19 janvier 2033.
+  theme: D
+  sous_theme: documents
+  importance: utile
+  source: Arrêté du 13 novembre 2023 ; service-public.fr F17970 et F31133
+- id: d-aac-conditions
+  texte: 'Apprentissage anticipé de la conduite (AAC) : possible dès {{c1::15 ans}} ; après la formation initiale, au moins {{c2::1 an}} et {{c3::3 000 km}} de conduite accompagnée, avec 2 rendez-vous pédagogiques ; épreuve pratique dès 17 ans.'
+  explication: 'Avantages : taux de réussite plus élevé, probatoire réduit à 2 ans, assurance moins chère. L''accompagnateur doit avoir le permis B depuis au moins 5 ans sans interruption et l''accord écrit de l''assureur. Conduite à l''étranger interdite pendant l''AAC.'
+  theme: D
+  sous_theme: permis
+  source: Code de la route, art. R211-3 et R211-5 ; service-public.fr F2826
+- id: d-permis-17-ans
+  texte: Depuis le {{c1::1er janvier 2024}}, le permis B peut être obtenu et utilisé seul dès {{c2::17 ans}} (auparavant 18 ans) ; le permis AM (cyclomoteur, voiturette) s'obtient dès {{c3::14 ans}}.
+  explication: Le probatoire ne change pas (6 points, 3 ans ou 2 ans après AAC). La conduite supervisée (dès 18 ans, sans durée ni distance minimale) ne réduit pas le probatoire ; la conduite encadrée (dès 16 ans) concerne les élèves des métiers de la route.
+  theme: D
+  sous_theme: permis
+  source: Décret n° 2023-1214 du 20 décembre 2023 ; Code de la route, art. R221-5
+- id: d-formation-minimale
+  texte: La formation pratique minimale au permis B est de {{c1::20 heures}} (dont au moins 15 h en circulation) ; {{c2::13 heures}} pour un permis sur boîte automatique (code 78), convertible en boîte manuelle après une formation de 7 h, sans délai depuis mars 2024.
+  explication: Le permis B autorise les véhicules ≤ 3,5 t et ≤ 9 places, une remorque ≤ 750 kg (ou plus si la somme des PTAC ≤ 3 500 kg ; B96 jusqu'à 4 250 kg ; BE au-delà), et les 125 cm³ après 2 ans de permis et une formation de 7 h.
+  theme: D
+  sous_theme: permis
+  importance: utile
+  source: Arrêté du 22 décembre 2009 ; Code de la route, art. R221-4 et R221-8 ; service-public.fr F2828
+- id: d-accompagnateur
+  texte: Pour accompagner un élève (AAC, conduite supervisée), il faut être titulaire du permis B depuis au moins {{c1::5 ans}} sans interruption ; en cas d'infraction pendant la conduite accompagnée, c'est {{c2::l'accompagnateur}} qui perd les points (et il est soumis au taux d'alcool de 0,2 g/L et au dépistage de stupéfiants).
+  explication: Selon la FAQ conduite accompagnée de la Sécurité routière, c'est l'accompagnateur, responsable de la conduite, qui est sanctionné et perd les points ; l'élève n'a pas de permis à points. Plusieurs accompagnateurs sont possibles, tous mentionnés au contrat d'assurance.
+  theme: D
+  sous_theme: permis
+  source: Code de la route, art. R211-3, R211-5, R234-1 V ; service-public.fr F2826
+- id: d-classes-amendes
+  texte: 'Amendes forfaitaires par classe de contravention : 1re {{c1::11 €}}, 2e {{c2::35 €}}, 3e {{c3::68 €}}, 4e {{c4::135 €}} ; 5e classe : jusqu''à 1 500 € (forfaitisée à 200 € pour certaines depuis 2024).'
+  explication: Les contraventions relèvent du tribunal de police, les délits du tribunal correctionnel (prison possible). Les 4 premières classes ne figurent pas au casier judiciaire.
+  theme: D
+  sous_theme: sanctions
+  source: Code pénal, art. 131-13 ; Code de procédure pénale, art. R49 ; service-public.fr F18509
+- id: d-amende-minoree-majoree
+  texte: 'Une amende de 4e classe (135 €) est minorée à {{c1::90 €}} si elle est payée dans les 15 jours (30 jours en ligne) et majorée à {{c2::375 €}} au-delà de 45 jours (60 jours en ligne) ; pour une 3e classe (68 €) : 45 € minorée, 180 € majorée ; 2e classe (35 €) : 22 € / 75 €.'
+  explication: Pas de minoration en 1re classe ni pour le stationnement. La contestation se fait dans les 45 jours (30 jours pour une majorée).
+  theme: D
+  sous_theme: sanctions
+  source: Code de procédure pénale, art. R49-7 et R49-9 ; service-public.fr F18509
+- id: d-telephone-sanction
+  texte: 'Téléphone tenu en main, oreillette, écouteurs ou casque audio au volant : {{c1::135 €}} et {{c2::3 points}} ; si l''infraction est commise en même temps qu''une autre (vitesse, feu, priorité, ligne continue…), le permis peut être retenu immédiatement puis suspendu jusqu''à 6 mois.'
+  explication: 'L''interdiction vaut dès que le véhicule est en circulation, même arrêté au feu ou dans un bouchon (Cass. 2018). Le kit mains libres intégré au véhicule est toléré. Un écran vidéo dans le champ de vision : 5e classe et 3 points.'
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. R412-6-1, R412-6-2, L224-1 et L224-2
+- id: d-ceinture-sanction
+  texte: 'Ceinture non attachée : le conducteur perd {{c1::3 points}} et paie 135 € ; un passager majeur non attaché paie {{c2::135 €}} lui-même, sans points ; pour un passager de moins de 18 ans (ou un enfant sans siège adapté), c''est le {{c3::conducteur}} qui paie 135 €, sans retrait de points.'
+  explication: 'Piège fréquent : beaucoup de supports affichent « 3 points » pour l''enfant non attaché ; l''article R412-2 ne prévoit aucun retrait. Une ceinture par personne ; enfant de moins de 3 ans interdit sur un siège sans ceinture.'
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. R412-1 et R412-2
+- id: d-feu-rouge-stop-sanction
+  texte: 'Franchir un feu rouge (fixe ou clignotant), un STOP, ou refuser une priorité (cédez-le-passage, priorité à droite, giratoire, sortie de parking) : 135 € et {{c1::4 points}} ; refuser la priorité à un piéton : 135 € et {{c2::6 points}} ; ne pas respecter un feu jaune fixe : {{c3::35 €}} sans points.'
+  explication: La priorité piéton est passée de 4 à 6 points le 19 septembre 2018. Suspension possible jusqu'à 3 ans pour le feu rouge, le STOP et la priorité.
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. R412-30, R412-31, R415-5 à R415-11
+- id: d-vitesse-bareme
+  texte: 'Excès de vitesse : moins de 5 km/h → {{c1::0 point}} (amende maintenue) ; 5 à 19 km/h → {{c2::1 point}} (68 €, ou 135 € si la limite est ≤ 50 km/h) ; 20 à 29 → {{c3::2 points}} ; 30 à 39 → {{c4::3 points}} (135 €, suspension possible).'
+  explication: 'Le retrait pour les excès < 5 km/h a été supprimé le 1er janvier 2024. 40 à 49 km/h : 4 points, 135 €, rétention immédiate du permis. Les valeurs sont calculées après marge technique (5 km/h ou 5 %).'
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. R413-14 ; décret n° 2023-1150 du 6 décembre 2023
+- id: d-grand-exces
+  texte: 'Un excès de vitesse de {{c1::50 km/h}} ou plus est, depuis le 29 décembre 2025, un {{c2::délit}} dès la première fois : 3 mois de prison, 3 750 € d''amende, {{c3::6 points}}, suspension jusqu''à 3 ans et confiscation possible (obligatoire en récidive).'
+  explication: 'Avant (banque de questions 2023) : contravention de 5e classe (1 500 €, 6 points), délit seulement en récidive. Un excès ≥ 30 km/h est aussi l''une des circonstances aggravantes de l''homicide routier (loi du 9 juillet 2025).'
+  theme: D
+  sous_theme: sanctions
+  tags:
+  - nouveau::2025
+  source: Code de la route, art. L413-1 (loi n° 2025-622 du 9 juillet 2025 ; décret n° 2025-1269 du 22 décembre 2025)
+- id: d-alcool-contravention
+  texte: 'Alcoolémie entre 0,5 et 0,8 g/L (0,2 à 0,8 en probatoire) : contravention de 4e classe, {{c1::135 €}} et {{c2::6 points}}, suspension possible jusqu''à 3 ans et rétention immédiate du permis.'
+  explication: En permis probatoire première année (6 points), 0,3 g/L suffit donc à invalider le permis. Pas de prison ni d'annulation au stade contraventionnel ; le préfet peut imposer un éthylotest antidémarrage (EAD).
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. R234-1
+- id: d-alcool-delit
+  texte: Conduire avec au moins 0,8 g/L de sang (0,40 mg/L d'air) ou en état d'ivresse manifeste est un délit puni de {{c1::3 ans}} de prison et {{c2::9 000 €}} d'amende, {{c3::6 points}}, suspension jusqu'à 5 ans, annulation possible avec interdiction de repasser le permis jusqu'à 5 ans, confiscation du véhicule.
+  explication: 'Valeurs relevées par la loi du 9 juillet 2025 (avant : 2 ans, 4 500 € — la banque de questions et la page securite-routiere.gouv.fr peuvent encore les afficher). L''ivresse manifeste est depuis le 20 août 2026 un délit distinct (L237-1), aux mêmes peines. Récidive : annulation de plein droit et confiscation obligatoire. Refuser le dépistage = mêmes peines (3 ans, 9 000 € depuis août 2026).'
+  theme: D
+  sous_theme: sanctions
+  tags:
+  - nouveau::2025
+  source: Code de la route, art. L234-1, L234-2, L234-8, L237-1 (lois n° 2025-622 et n° 2026-798)
+- id: d-stupefiants-delit
+  texte: 'Conduire après usage de stupéfiants (toute trace, sans seuil) : délit puni de {{c1::3 ans}} de prison et {{c2::9 000 €}}, 6 points, suspension jusqu''à 5 ans ; combiné à l''alcool : {{c3::5 ans}}, {{c4::15 000 €}} et 9 points.'
+  explication: 'Valeurs de la loi du 9 juillet 2025 (avant : 2 ans / 4 500 €, et 3 ans / 9 000 € en cumul). Dépistage salivaire possible à tout moment, obligatoire après un accident corporel ; le refus est puni comme un test positif. Concerne aussi cyclistes, trottinettes et accompagnateurs.'
+  theme: D
+  sous_theme: sanctions
+  tags:
+  - nouveau::2025
+  source: Code de la route, art. L235-1 et L235-3 ; service-public.fr F2886
+- id: d-homicide-routier
+  texte: 'La loi du 9 juillet 2025 a créé l''« {{c1::homicide routier}} » (code pénal, art. 221-18) : 7 ans de prison et 100 000 € d''amende avec une circonstance aggravante (alcool, stupéfiants, excès ≥ 30 km/h, téléphone en main, délit de fuite, refus d''obtempérer, sans permis…), 10 ans et 150 000 € avec deux ou plus.'
+  explication: 'Les « blessures routières » (ITT > 3 mois) sont punies de 5 ans / 75 000 €. Peines complémentaires : annulation du permis avec interdiction de le repasser pendant 5 à 10 ans. Sans circonstance aggravante, on reste dans l''homicide involontaire (5 ans, 75 000 €).'
+  theme: D
+  sous_theme: sanctions
+  tags:
+  - nouveau::2025
+  importance: utile
+  source: Loi n° 2025-622 du 9 juillet 2025 ; Code pénal, art. 221-18 à 221-21
+- id: d-delit-fuite
+  texte: Le délit de fuite (ne pas s'arrêter après un accident que l'on a causé ou provoqué) est puni de {{c1::3 ans}} de prison et {{c2::75 000 €}} d'amende, {{c3::6 points}}, suspension jusqu'à 5 ans, annulation possible.
+  explication: S'arrêter est obligatoire même sans blessé (constat). En cas de blessés, s'ajoute la non-assistance à personne en danger (5 ans, 75 000 €). Les peines des blessures ou de l'homicide sont doublées en cas de fuite.
+  theme: D
+  sous_theme: sanctions
+  source: Code pénal, art. 434-10 ; Code de la route, art. L231-1
+- id: d-sans-permis-sans-assurance
+  texte: 'Conduire sans permis : délit, {{c1::1 an}} de prison et {{c2::15 000 €}} (amende forfaitaire délictuelle 800 €), confiscation. Conduire sans assurance : délit, {{c3::3 750 €}} (amende forfaitaire 500 €), suspension jusqu''à 3 ans, confiscation ; sans retrait de points.'
+  explication: L'assurance responsabilité civile est obligatoire pour tout véhicule terrestre à moteur, même s'il ne roule pas, y compris trottinettes électriques, voiturettes et remorques. Le Fonds de garantie (FGAO) indemnise les victimes d'un non-assuré puis se retourne contre lui.
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. L221-2 et L324-2 ; Code des assurances, art. L211-1
+- id: d-refus-obtemperer
+  texte: Le refus d'obtempérer (ne pas s'arrêter à la sommation d'un agent) est un délit puni de {{c1::2 ans}} de prison et {{c2::15 000 €}}, 6 points, suspension jusqu'à 3 ans et confiscation obligatoire du véhicule ; 5 ans et 75 000 € s'il met en danger la vie d'autrui.
+  explication: 'Le rodéo motorisé est puni de 2 ans et 30 000 € depuis août 2026 (avant : 1 an, 15 000 €). Conduire malgré une suspension ou une invalidation : 2 ans, 4 500 €, 6 points.'
+  theme: D
+  sous_theme: sanctions
+  importance: utile
+  source: Code de la route, art. L233-1, L233-1-1, L236-1, L224-16
+- id: d-autres-bareme-3-points
+  texte: 'Infractions à {{c1::3 points}} (135 €) : dépassement dangereux, non-respect des distances de sécurité, franchissement d''une ligne continue, circulation sur la bande d''arrêt d''urgence, circulation à gauche, vitres avant trop teintées, stationnement dangereux, non-port du casque à moto ; le chevauchement d''une ligne continue ne retire que {{c2::1 point}}.'
+  explication: 'Changement de direction sans clignotant : amende de 35 € seulement, mais 3 points. Accélérer quand on est dépassé : 135 € et 2 points. Sens interdit, marche arrière ou demi-tour sur autoroute, circuler de nuit sans éclairage : 4 points.'
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. R412-19, R412-12, R414-4, R412-8, R412-9, R412-10, R412-28, R421-6, R416-11, R417-9
+- id: d-detecteur-radar
+  texte: 'Détenir, transporter ou utiliser un détecteur ou brouilleur de radars : contravention de 5e classe (jusqu''à 1 500 €, forfait 200 €), {{c1::6 points}}, confiscation de l''appareil et éventuellement du véhicule.'
+  explication: 'Les avertisseurs de « zones de danger » (Coyote, Waze) restent tolérés. Une plaque absente ou illisible : 135 €, sans points, immobilisation.'
+  theme: D
+  sous_theme: sanctions
+  importance: utile
+  source: Code de la route, art. R413-15 et R317-8
+- id: d-retention-suspension
+  texte: Les forces de l'ordre peuvent retenir le permis sur le bord de la route pendant {{c1::72 heures}} (120 h si des analyses sont en cours) ; le préfet peut ensuite prononcer une suspension administrative jusqu'à {{c2::6 mois}} ({{c3::1 an}} pour alcool, stupéfiants, refus de dépistage, accident mortel ou corporel).
+  explication: 'Cas de rétention : alcool, stupéfiants, refus, excès ≥ 40 km/h avec interception, téléphone cumulé à une autre infraction, accident grave avec infraction, refus d''obtempérer. Le tribunal peut ensuite suspendre jusqu''à 3 ans (5 ans pour alcool/stupéfiants) ou annuler le permis.'
+  theme: D
+  sous_theme: sanctions
+  importance: utile
+  source: Code de la route, art. L224-1, L224-2, L224-7 ; service-public.fr F1040
+- id: d-documents-bord
+  texte: 'Documents à présenter à tout contrôle : le {{c1::permis de conduire}} (physique ou numérique France Identité), le {{c2::certificat d''immatriculation}} (carte grise), plus le gilet et le triangle ; la preuve d''assurance n''est plus exigée depuis le {{c3::1er avril 2024}} (contrôle via le Fichier des véhicules assurés).'
+  explication: 'Non-présentation immédiate : 11 €, puis 5 jours pour présenter les documents (sinon 135 €). Le « Mémo Véhicule Assuré » remis par l''assureur vaut présomption d''assurance pendant les 15 jours suivant la souscription, le temps de l''inscription au FVA. Le contrôle technique se prouve par le timbre sur la carte grise.'
+  theme: D
+  sous_theme: documents
+  tags:
+  - nouveau::2024
+  source: Code de la route, art. R233-1 ; décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362
+- id: d-carte-grise-delais
+  texte: Après l'achat d'un véhicule, le nouveau propriétaire a {{c1::1 mois}} pour faire établir le certificat d'immatriculation à son nom (même délai pour déclarer un changement d'adresse) ; le vendeur déclare la cession sous {{c2::15 jours}} et remet un certificat de situation administrative de moins de 15 jours.
+  explication: 'Démarches sur l''ANTS ou chez un professionnel habilité (plus de guichet en préfecture). Défaut : 135 €. Le certificat provisoire (CPI) vaut 1 mois. Format des plaques SIV AA-123-AA, numéro attribué à vie au véhicule.'
+  theme: D
+  sous_theme: documents
+  source: Code de la route, art. R322-4, R322-5, R322-7 ; service-public.fr F21031
+- id: d-controle-technique
+  texte: 'Contrôle technique d''une voiture : premier contrôle dans les {{c1::6 mois}} précédant le {{c2::4e anniversaire}} de la première mise en circulation, puis tous les {{c3::2 ans}} ; pour vendre une voiture de plus de 4 ans, un contrôle de moins de {{c1::6 mois}} est exigé.'
+  explication: 'Défaillance majeure : contre-visite dans les 2 mois, le véhicule peut circuler ; défaillance critique : validité limitée au jour même. Défaut de CT : 135 €, sans points, immobilisation possible. Deux-roues motorisés et voiturettes : CT obligatoire depuis avril 2024 (5 ans, puis tous les 3 ans).'
+  theme: D
+  sous_theme: documents
+  source: Code de la route, art. R323-22 et R323-27 ; service-public.fr F2878
+- id: d-assurance-garanties
+  texte: 'L''assurance obligatoire est la {{c1::responsabilité civile (« au tiers »)}} : elle couvre les dommages causés aux autres, jamais ceux du conducteur responsable ni de son véhicule (garanties facultatives : dommages tous accidents/« tous risques », vol, incendie, bris de glace, garantie du conducteur, assistance).'
+  explication: 'Le bonus-malus : coefficient de départ 1, −5 % par an sans accident responsable (bonus maximal 0,50 après 13 ans), +25 % par accident responsable (malus maximal 3,50). Jeune conducteur : surprime jusqu''à 100 % (50 % après AAC), réduite de moitié chaque année sans sinistre.'
+  theme: D
+  sous_theme: documents
+  source: Code des assurances, art. L211-1, A121-1 et A121-1-1 ; service-public.fr F2655
+- id: d-constat-declaration
+  texte: Après un accident matériel, on remplit un constat amiable (papier ou e-constat) — sans le signer en cas de désaccord — et on déclare le sinistre à son assureur sous {{c1::5 jours ouvrés}} ({{c2::2 jours}} en cas de vol).
+  explication: 'Le constat n''est pas obligatoire mais évite les litiges : un exemplaire par conducteur, croquis, croix dans les cases, signatures des deux. Ne jamais quitter les lieux sans échanger les identités : ce serait un délit de fuite.'
+  theme: D
+  sous_theme: documents
+  source: Code des assurances, art. L113-2 ; service-public.fr F2149
+- id: d-critair-prix
+  texte: 'La vignette Crit''Air se commande uniquement sur certificat-air.gouv.fr (≈ {{c1::3,85 €}} en 2026), se colle en bas à droite du pare-brise et reste valable {{c2::toute la vie du véhicule}} ; circuler dans une ZFE avec un véhicule interdit ou sans vignette : {{c3::68 €}} (135 € pour un poids lourd).'
+  explication: 'Six classes : 0 (vert, électrique/hydrogène), 1 (violet), 2 (jaune), 3 (orange), 4 (bordeaux), 5 (gris), plus les non classés. Un diesel n''est jamais Crit''Air 1. Les ZFE sont maintenues : leur suppression votée en 2025 a été censurée par le Conseil constitutionnel (21 mai 2026).'
+  theme: D
+  sous_theme: documents
+  tags:
+  - nouveau::2026
+  source: Code de la route, art. R318-2 et R411-19-1 ; service-public.fr F33371 ; décision CC n° 2026-903 DC
+- id: d-equipements-obligatoires
+  texte: 'Équipements obligatoires à bord d''une voiture : un {{c1::gilet de haute visibilité}} à portée de main (à revêtir avant de sortir après un arrêt d''urgence) et un {{c2::triangle de présignalisation}} (à placer à ≈ 30 m, sauf danger sur autoroute) ; l''{{c3::éthylotest}} n''est plus obligatoire depuis mai 2020.'
+  explication: 'Ne pas avoir le gilet à portée de main : 11 € ; ne pas le porter en quittant le véhicule, ou ne pas présignaler un véhicule immobilisé dangereux : 135 €. Extincteur, trousse de secours, roue de secours et ampoules ne sont pas obligatoires (recommandés).'
+  theme: D
+  sous_theme: documents
+  source: Code de la route, art. R416-19 ; décret n° 2020-605 ; service-public.fr F19459
+- id: d-vitres-teintees
+  texte: 'Depuis 2017, le pare-brise et les vitres latérales avant doivent laisser passer au moins {{c1::70 %}} de la lumière ; infraction : 135 € et {{c2::3 points}}, immobilisation possible.'
+  explication: Les vitres arrière peuvent être teintées librement. Un pare-brise doit rester propre et sans fissure dans le champ de vision du conducteur.
+  theme: D
+  sous_theme: documents
+  importance: utile
+  source: Code de la route, art. R316-3-1
+- id: d-fourriere-abandon
+  texte: Un véhicule mis en fourrière est réputé abandonné après {{c1::15 jours}} (10 jours s'il a une faible valeur marchande) ; le stationnement abusif est constitué au-delà de {{c2::7 jours}} consécutifs au même endroit (35 €, fourrière possible).
+  explication: 'La fourrière est possible pour tout stationnement gênant, très gênant, dangereux ou abusif. Anciens manuels : « 45 jours » — dépassé.'
+  theme: D
+  sous_theme: documents
+  importance: utile
+  source: Code de la route, art. L325-7 et R417-12
+- id: d-stats-tues
+  texte: En 2025, la route a tué {{c1::3 263}} personnes en France métropolitaine (≈ {{c2::9}} par jour, ordre de grandeur stable autour de 3 200 depuis 2019) ; environ {{c3::60 %}} des tués le sont hors agglomération, et {{c4::77 %}} sont des hommes.
+  explication: 'Bilan ONISR 2025 (publié en 2026). Autoroute : 8 % des tués (réseau le plus sûr au kilomètre). Les 18-24 ans ont un risque double de la moyenne. Facteurs principaux des accidents mortels : vitesse (29 %), alcool (21 %), inattention (13 %), stupéfiants (11 %).'
+  theme: D
+  sous_theme: statistiques
+  importance: utile
+  source: ONISR — Bilan 2025 de la sécurité routière (29 mai 2026)
+- id: d-stats-usagers
+  texte: 'Parts des tués en 2025 : voitures ≈ {{c1::47 %}}, deux-roues motorisés ≈ {{c2::21 %}}, piétons ≈ {{c3::15 %}}, cyclistes ≈ 7 %, trottinettes (EDPM) ≈ 2 % (en forte hausse).'
+  explication: 'Piétons, cyclistes et EDPM (« modes doux ») représentent un quart des tués et plus d''un tiers des blessés graves : d''où l''insistance de l''examen sur les usagers vulnérables.'
+  theme: D
+  sous_theme: statistiques
+  importance: utile
+  source: ONISR — Bilan 2025 de la sécurité routière

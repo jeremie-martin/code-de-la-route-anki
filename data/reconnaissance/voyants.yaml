@@ -1,0 +1,303 @@
+# Thème M — Voyants du tableau de bord (symboles ISO 7000 / ISO 2575, domaine public sur Commons)
+# Code couleur : ROUGE = danger, arrêt dès que possible ; ORANGE = anomalie ou fonction à surveiller ; VERT/BLEU = fonction en service.
+# Teintes : rouge #e53935, orange #fb8c00, vert #43a047, bleu #1e88e5.
+
+# ---------- ROUGE ----------
+- id: voyant-huile
+  type: voyant
+  code: ISO 7000-0248
+  image: {commons: "ISO 7000 - Ref-No 0248.svg", tint: "#e53935"}
+  nom: Pression d'huile moteur (rouge)
+  signification: La pression d'huile est insuffisante — le moteur n'est plus lubrifié et peut casser en quelques minutes.
+  conduite: Je m'arrête dès que possible en sécurité, je coupe le moteur ; je contrôle le niveau d'huile à froid sur sol plat ; si le voyant reste allumé après appoint, je ne repars pas (dépannage).
+  piege: Ce voyant signale une **pression**, pas seulement un niveau bas. Une burette qui s'allume en roulant impose l'arrêt, contrairement au voyant orange de niveau d'huile de certains véhicules.
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "ISO 2575 ; Codes Rousseau — Les voyants du tableau de bord"
+- id: voyant-batterie
+  type: voyant
+  code: ISO 7000-0247
+  image: {commons: "ISO 7000 - Ref-No 0247.svg", tint: "#e53935"}
+  nom: Charge de la batterie (rouge)
+  signification: La batterie ne se recharge plus (alternateur ou courroie défaillants) — le véhicule roule sur ses réserves et va s'arrêter.
+  conduite: Je coupe les consommateurs inutiles (clim, radio) et je rejoins un garage ou un lieu sûr sans couper le moteur (il pourrait ne pas redémarrer).
+  piege: Normal qu'il s'allume au contact moteur arrêté ; anormal s'il reste allumé moteur tournant.
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+- id: voyant-temperature
+  type: voyant
+  code: ISO 7000-0246
+  image: {commons: "ISO 7000 - Ref-No 0246.svg", tint: "#e53935"}
+  nom: Température du liquide de refroidissement (rouge)
+  signification: Le moteur surchauffe (manque de liquide, fuite, ventilateur en panne) — risque de joint de culasse et de casse.
+  conduite: Je m'arrête dès que possible, moteur coupé, et je laisse refroidir ; je n'ouvre jamais le bouchon du vase d'expansion à chaud (jet bouillant).
+  piege: En bleu au démarrage sur certains véhicules = moteur froid, sans gravité.
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+- id: voyant-frein
+  type: voyant
+  code: ISO 7000-0239
+  image: {commons: "ISO 7000 - Ref-No 0239.svg", tint: "#e53935"}
+  nom: Alerte de freinage (rouge)
+  signification: Frein de stationnement serré, ou niveau de liquide de frein trop bas / défaillance du circuit de freinage.
+  conduite: "Si je roule frein à main desserré et que le voyant reste allumé, je m'arrête dès que possible : le freinage peut être dégradé ; je vérifie le niveau de liquide de frein et je fais dépanner."
+  piege: "Ce cercle « (!) » est le voyant de **freinage** ; le « (P) » cerclé est le frein de stationnement seul. Une usure de plaquettes s'affiche en orange (cercle avec pointillés), pas en rouge."
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+- id: voyant-frein-stationnement
+  type: voyant
+  code: ISO 7000-0238
+  image: {commons: "ISO 7000 - Ref-No 0238.svg", tint: "#e53935"}
+  nom: Frein de stationnement serré (rouge)
+  signification: Le frein à main (ou le frein de parking électrique) est serré ou incomplètement desserré.
+  conduite: Je desserre complètement le frein de stationnement avant de rouler ; s'il reste allumé en roulant, je m'arrête pour vérifier (échauffement des freins arrière, liquide de frein).
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+- id: voyant-ceinture
+  type: voyant
+  code: ISO 7000-0249
+  image: {commons: "ISO 7000 - Ref-No 0249.svg", tint: "#e53935"}
+  nom: Ceinture non bouclée (rouge)
+  signification: Un occupant (conducteur, et sur les véhicules récents chaque passager) n'a pas attaché sa ceinture ; un signal sonore s'ajoute quand on roule.
+  conduite: Je boucle ma ceinture et je m'assure que tous les passagers sont attachés avant de partir — le conducteur est responsable des mineurs.
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "ISO 2575 ; Code de la route, art. R412-1"
+- id: voyant-airbag
+  type: voyant
+  code: ISO 7000-2108
+  image: {commons: "ISO 7000 - Ref-No 2108.svg", tint: "#e53935"}
+  nom: Défaut du système airbag
+  signification: Les airbags (et prétensionneurs de ceinture) risquent de ne pas se déclencher en cas de choc — ou l'airbag passager a été désactivé.
+  conduite: Je peux rouler mais je fais contrôler rapidement ; c'est un défaut de sécurité passive, pas une urgence mécanique.
+  piege: Ce voyant s'allume aussi volontairement quand on désactive l'airbag passager pour installer un siège enfant dos à la route.
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+- id: voyant-direction
+  type: voyant
+  code: ISO 7000-2305
+  image: {gen: voyant_direction, params: {}}
+  nom: Défaut de direction assistée
+  signification: "L'assistance de direction est en panne : le volant devient très dur, surtout à basse vitesse et en manœuvre."
+  conduite: Je conserve le contrôle (la direction fonctionne, mais avec effort) et je fais dépanner ; en orange sur certains véhicules = anomalie mineure.
+  theme: M
+  sous_theme: voyants
+  importance: utile
+  source: "ISO 2575 ; notices constructeurs"
+- id: voyant-detresse
+  type: voyant
+  code: ISO 7000-0085
+  image: {commons: "ISO 7000 - Ref-No 0085.svg", tint: "#e53935"}
+  nom: Feux de détresse (warning) en fonction
+  signification: Les quatre clignotants fonctionnent ensemble pour signaler un danger ou un véhicule immobilisé.
+  conduite: "Je les utilise en cas de panne, d'arrêt forcé, de ralentissement brusque (bouchon sur autoroute), de remorquage ou de véhicule roulant anormalement lentement — pas pour un stationnement de complaisance."
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "Code de la route, art. R416-18 ; ISO 2575"
+
+# ---------- ORANGE ----------
+- id: voyant-moteur
+  type: voyant
+  code: ISO 7000-0640
+  image: {commons: "ISO 7000 - Ref-No 0640.svg", tint: "#fb8c00"}
+  nom: Défaut moteur / diagnostic (orange)
+  signification: Le calculateur a détecté une anomalie du moteur ou du système antipollution (injection, allumage, sonde, catalyseur).
+  conduite: Fixe, je peux rouler en douceur et je fais contrôler rapidement ; clignotant, je m'arrête (risque de destruction du catalyseur).
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+- id: voyant-abs
+  type: voyant
+  code: ISO 7000-1407
+  image: {commons: "ISO 7000 - Ref-No 1407.svg", tint: "#fb8c00"}
+  nom: Défaut ABS (orange)
+  signification: L'antiblocage des roues est hors service ; le freinage ordinaire fonctionne toujours, mais les roues peuvent se bloquer lors d'un freinage d'urgence.
+  conduite: Je n'ai pas à m'arrêter immédiatement ; j'allonge mes distances, je freine progressivement et je fais réparer sans tarder.
+  piege: "Question officielle 2023 : voyant ABS allumé en permanence → « les roues risquent de se bloquer » (OUI) et « je dois m'arrêter immédiatement » (NON)."
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "Sécurité routière — Exemples de nouvelles questions (Q5) ; ISO 2575"
+- id: voyant-esp
+  type: voyant
+  code: ESP / ESC
+  image: {commons: "Kontrollleuchte ESP 2.svg", tint: "#fb8c00"}
+  nom: ESP / contrôle de stabilité (orange)
+  signification: "Clignotant : l'ESP intervient (perte d'adhérence détectée). Fixe : ESP désactivé ou en défaut."
+  conduite: "S'il clignote, je lève le pied et je garde une trajectoire souple, la chaussée est glissante. S'il est fixe alors que je ne l'ai pas désactivé, je fais contrôler."
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "ISO 2575 ; Codes Rousseau — Les aides à la conduite"
+- id: voyant-pression-pneus
+  type: voyant
+  code: ISO 7000-1434A
+  image: {commons: "ISO 7000 - Ref-No 1434A.svg", tint: "#fb8c00"}
+  nom: Pression des pneus (orange)
+  signification: Un pneu au moins est sous-gonflé (ou crevaison lente) — détecté par le système de surveillance de la pression (obligatoire sur les véhicules neufs depuis 2014).
+  conduite: Je réduis ma vitesse, je m'arrête pour contrôler les quatre pneus et je regonfle à la pression préconisée (à froid) ; je réinitialise le système si nécessaire.
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "ISO 2575 ; règlement (CE) 661/2009"
+- id: voyant-prechauffage
+  type: voyant
+  code: ISO 7000-0457
+  image: {commons: "ISO 7000 - Ref-No 0457.svg", tint: "#fb8c00"}
+  nom: Préchauffage (diesel)
+  signification: Les bougies de préchauffage chauffent la chambre de combustion (moteur diesel froid).
+  conduite: J'attends que le voyant s'éteigne avant d'actionner le démarreur ; s'il clignote en roulant, c'est un défaut d'injection à faire contrôler.
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+- id: voyant-carburant
+  type: voyant
+  code: ISO 7000-0245
+  image: {commons: "ISO 7000 - Ref-No 0245.svg", tint: "#fb8c00"}
+  nom: Réserve de carburant
+  signification: Le réservoir est sur la réserve — quelques dizaines de kilomètres d'autonomie seulement.
+  conduite: Je fais le plein à la prochaine occasion ; tomber en panne sèche sur autoroute expose à un arrêt dangereux (et à une amende pour arrêt sur BAU sans nécessité mécanique).
+  piege: La petite flèche à côté de la pompe indique de quel côté se trouve la trappe à carburant.
+  theme: M
+  sous_theme: voyants
+  importance: utile
+  source: "ISO 2575"
+- id: voyant-brouillard-arriere
+  type: voyant
+  code: ISO 7000-0634
+  image: {commons: "ISO 7000 - Ref-No 0634.svg", tint: "#fb8c00"}
+  nom: Feu de brouillard arrière allumé (orange)
+  signification: Le feu arrière de brouillard (très puissant) est en fonction.
+  conduite: "Je ne l'utilise que par brouillard ou chute de neige : dès que la visibilité redevient normale — et sous la pluie — je l'éteins, il éblouit les conducteurs qui suivent."
+  piege: "Le pictogramme du brouillard **arrière** a le faisceau tourné vers la droite (feu vu de l'arrière) et est orange ; celui de l'**avant** a le faisceau vers la gauche et est vert."
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "Code de la route, art. R416-7 ; ISO 2575"
+- id: voyant-plaquettes
+  type: voyant
+  code: ISO 7000-1408
+  image: {commons: "ISO 7000 - Ref-No 1408.svg", tint: "#fb8c00"}
+  nom: Usure des plaquettes de frein (orange)
+  signification: Les plaquettes ont atteint leur témoin d'usure.
+  conduite: Je fais remplacer les plaquettes rapidement ; le freinage reste possible mais se dégrade et les disques s'abîment.
+  theme: M
+  sous_theme: voyants
+  importance: utile
+  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+- id: voyant-lave-glace
+  type: voyant
+  code: ISO 7000-0088
+  image: {commons: "ISO 7000 - Ref-No 0088.svg", tint: "#fb8c00"}
+  nom: Niveau de liquide lave-glace bas
+  signification: Le réservoir de lave-glace est presque vide.
+  conduite: Je fais l'appoint (liquide antigel en hiver) — un pare-brise sale que l'on ne peut pas nettoyer est un danger, surtout de nuit ou face au soleil.
+  theme: M
+  sous_theme: voyants
+  importance: utile
+  source: "ISO 2575"
+- id: voyant-fap
+  type: voyant
+  code: FAP / DPF
+  image: {commons: "Kontrollleuchte DPF.svg", tint: "#fb8c00"}
+  nom: Filtre à particules (diesel)
+  signification: Le filtre à particules est encrassé et a besoin d'une régénération.
+  conduite: Je roule une vingtaine de minutes à allure soutenue et régulière (route ou voie rapide) pour permettre la régénération ; si le voyant persiste, garage.
+  theme: M
+  sous_theme: voyants
+  importance: utile
+  source: "Notices constructeurs ; Codes Rousseau"
+# ---------- VERT / BLEU ----------
+- id: voyant-position
+  type: voyant
+  code: ISO 7000-0456
+  image: {commons: "ISO 7000 - Ref-No 0456.svg", tint: "#43a047"}
+  nom: Feux de position allumés (vert)
+  signification: Les feux de position (veilleuses) sont en fonction — ils servent à être vu, pas à voir.
+  conduite: "À l'arrêt ou en stationnement sur la chaussée la nuit, ils sont obligatoires (R416-12). Pour rouler, ils ne suffisent qu'en agglomération sur une rue suffisamment éclairée (R416-6) ; partout ailleurs, feux de croisement."
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "Code de la route, art. R416-1 et s. ; ISO 2575"
+- id: voyant-croisement
+  type: voyant
+  code: ISO 7000-0083
+  image: {commons: "ISO 7000 - Ref-No 0083.svg", tint: "#43a047"}
+  nom: Feux de croisement allumés (vert)
+  signification: Les feux de croisement (codes) sont en fonction — portée d'environ 30 m, sans éblouir.
+  conduite: "Obligatoires la nuit, par visibilité réduite (pluie, brouillard, neige), dans les tunnels, et recommandés de jour."
+  piege: "Faisceau incliné vers le bas = croisement ; faisceau horizontal (bleu) = route."
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "Code de la route, art. R416-4 et s. ; ISO 2575"
+- id: voyant-route
+  type: voyant
+  code: ISO 7000-0082
+  image: {commons: "ISO 7000 - Ref-No 0082.svg", tint: "#1e88e5"}
+  nom: Feux de route allumés (bleu)
+  signification: Les feux de route (pleins phares) sont en fonction — portée d'environ 100 m, éblouissants.
+  conduite: "Je les utilise la nuit hors agglomération quand la route n'est pas éclairée, et je repasse en croisement dès que je croise ou suis un véhicule, ou en agglomération éclairée."
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "Code de la route, art. R416-5 et s. ; ISO 2575"
+- id: voyant-brouillard-avant
+  type: voyant
+  code: ISO 7000-0633
+  image: {commons: "ISO 7000 - Ref-No 0633.svg", tint: "#43a047"}
+  nom: Feux de brouillard avant allumés (vert)
+  signification: Les feux de brouillard avant sont en fonction, en complément des feux de croisement.
+  conduite: "Je les utilise par brouillard, neige ou forte pluie ; je les éteins dès que la visibilité redevient normale (ils éblouissent)."
+  theme: M
+  sous_theme: voyants
+  importance: essentiel
+  source: "Code de la route, art. R416-7 ; ISO 2575"
+- id: voyant-clignotants
+  type: voyant
+  code: ISO 7000-0084
+  image: {commons: "ISO 7000 - Ref-No 0084.svg", tint: "#43a047"}
+  nom: Clignotants (vert, clignote)
+  signification: Un indicateur de direction est en fonction.
+  conduite: "Un clignotement anormalement rapide signale une ampoule de clignotant grillée de ce côté."
+  theme: M
+  sous_theme: voyants
+  importance: utile
+  source: "ISO 2575"
+- id: voyant-feux-jour
+  type: voyant
+  code: ISO 7000-2611
+  image: {commons: "ISO 7000 - Ref-No 2611.svg", tint: "#43a047"}
+  nom: Feux de jour (vert)
+  signification: Les feux de circulation diurne sont allumés (automatiques sur les véhicules neufs depuis 2011).
+  conduite: "Ils ne remplacent pas les feux de croisement la nuit ou par mauvaise visibilité : ils n'allument pas les feux arrière."
+  theme: M
+  sous_theme: voyants
+  importance: utile
+  source: "Règlement (CE) 661/2009 ; ISO 2575"
+- id: voyant-regulateur
+  type: voyant
+  code: ISO 7000-2047
+  image: {commons: "ISO 7000 - Ref-No 2047.svg", tint: "#43a047"}
+  nom: Régulateur de vitesse actif
+  signification: Le régulateur maintient automatiquement la vitesse choisie (le limiteur, lui, empêche de la dépasser).
+  conduite: "Je reste maître du véhicule : un appui sur le frein (ou l'embrayage) le désactive ; je ne l'utilise pas en trafic dense, sur route sinueuse ou glissante."
+  theme: M
+  sous_theme: voyants
+  importance: utile
+  source: "ISO 2575 ; Codes Rousseau — Les aides à la conduite"

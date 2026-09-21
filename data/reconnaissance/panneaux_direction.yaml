@@ -1,0 +1,101 @@
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 7 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+- id: d-couleur-bleu
+  type: panneau
+  image:
+    gen: direction_panel
+    params:
+      colour: bleu
+      text: LYON
+      dist: '45'
+  nom: Panneau de direction à fond bleu (autoroute)
+  signification: 'Fond bleu : la direction indiquée est desservie par une autoroute (ou l''on se trouve sur le réseau autoroutier).'
+  conduite: Suivre les panneaux bleus pour rejoindre ou rester sur l'autoroute ; anticiper le choix de voie.
+  complement: 'Code des couleurs : bleu = autoroute ; vert = grande liaison (pôle vert) par route ordinaire ; blanc = itinéraire local ; jaune = temporaire (déviation) ; marron = touristique/culturel ; noir sur blanc/vert = itinéraire vélo (Dv) selon réseau.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: d-couleur-vert
+  type: panneau
+  image:
+    gen: direction_panel
+    params:
+      colour: vert
+      text: PARIS
+      dist: '12'
+  nom: Panneau de direction à fond vert (grande liaison)
+  signification: 'Fond vert : la direction est un « pôle vert » (grande agglomération ou pôle générateur de trafic) desservi par une route ordinaire (nationale/départementale) sans emprunter l''autoroute.'
+  conduite: Suivre le vert pour les longs trajets hors autoroute.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: d-couleur-blanc
+  type: panneau
+  image:
+    gen: direction_panel
+    params:
+      colour: blanc
+      text: Vernon
+      dist: '3'
+  nom: Panneau de direction à fond blanc (itinéraire local)
+  signification: 'Fond blanc : direction locale (communes, quartiers, lieux-dits, zones d''activité) sur route ordinaire.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: d-couleur-jaune
+  type: panneau
+  image:
+    gen: direction_panel
+    params:
+      colour: jaune
+      text: DÉVIATION
+      dist: ''
+  nom: Panneau de direction à fond jaune (temporaire / déviation)
+  signification: 'Fond jaune : indication de direction à caractère temporaire ou d''exploitation (déviation, itinéraire de substitution, chantier).'
+  conduite: Suivre l'itinéraire jaune de déviation ; il prime sur les indications permanentes contradictoires.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: d-couleur-marron
+  type: panneau
+  image:
+    gen: direction_panel
+    params:
+      colour: marron
+      text: Château
+      dist: '8'
+  nom: Panneau de direction à fond marron (site touristique / culturel)
+  signification: 'Fond marron : indication d''un site ou d''un itinéraire d''intérêt culturel ou touristique (château, musée, parc naturel), avec pictogramme (idéogramme ID).'
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: d50
+  type: panneau
+  code: D50
+  image:
+    commons: France road sign D52a.svg
+  nom: Panneau d'avertissement de sortie ou de bifurcation (D51/D52)
+  signification: Sur autoroute, panneau annonçant à 2 000 m / 1 000 m / 500 m la proximité d'un échangeur ou d'une bifurcation ; variante Da50 avec affectation de voies.
+  conduite: Se rabattre à droite progressivement pour sortir ; la sortie est signalée par un numéro (cartouche M10b).
+  complement: 2 000 m, 1 000 m et 500 m avant l'échangeur.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: d60
+  type: panneau
+  code: D60
+  image:
+    commons: France road sign D61b.svg
+  nom: Panneau de confirmation (D61/D62)
+  signification: Panneau placé après un carrefour ou un échangeur confirmant les directions desservies par la route et leurs distances (kilomètres).
+  conduite: Vérifier qu'on est sur le bon itinéraire.
+  complement: Après le carrefour ou l'échangeur.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

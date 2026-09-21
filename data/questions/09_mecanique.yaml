@@ -1,0 +1,188 @@
+- id: m-voyants-couleurs
+  question: Que signifient les couleurs des voyants du tableau de bord ?
+  reponse: 'Rouge : danger ou défaillance grave, s''arrêter dès que possible en sécurité. Orange : anomalie ou fonction à surveiller, faire vérifier rapidement sans arrêt d''urgence. Vert ou bleu : information, une fonction ou des feux sont en service.'
+  explication: 'À la mise du contact, tous les voyants s''allument brièvement : c''est l''autotest (un voyant qui ne s''allume pas est anormal). Exceptions au rouge : le frein à main serré (desserrer) et la batterie (rejoindre un garage sans couper le moteur).'
+  theme: M
+  sous_theme: tableau_de_bord
+  source: Codes Rousseau — Les voyants ; Ornikar — Voyants lumineux
+- id: m-voyant-moteur-clignote
+  question: Le voyant moteur (orange) s'allume en roulant. Que faire s'il est fixe ? s'il clignote ?
+  reponse: 'Fixe : anomalie du moteur ou de l''antipollution, je peux continuer en douceur et je fais contrôler rapidement. Clignotant (ou fixe avec perte de puissance) : je m''arrête dès que possible et je coupe le moteur — risque de destruction du catalyseur ou du moteur.'
+  explication: Le voyant de pression d'huile (rouge) et celui de température (rouge) imposent, eux, un arrêt immédiat.
+  theme: M
+  sous_theme: tableau_de_bord
+  source: Ornikar — Voyant d'alerte moteur
+- id: m-pneus-pression-quand
+  question: Quand et comment vérifie-t-on la pression des pneus ?
+  reponse: À froid (véhicule arrêté depuis plus de 2 h ou moins de 3 km parcourus), au moins une fois par mois et avant un long trajet, roue de secours comprise, à la valeur indiquée par le constructeur (étiquette de portière ou trappe à carburant) ; +0,2 à 0,3 bar si le véhicule est chargé ou pour l'autoroute.
+  explication: 'À chaud, la pression augmente : on ne dégonfle jamais un pneu chaud (on majore de 0,3 bar si l''on doit gonfler à chaud). Question officielle 2023 : véhicule très chargé → j''augmente la pression.'
+  theme: M
+  sous_theme: pneus
+  source: securite-routiere.gouv.fr — Pneus ; Michelin — Vérifier la pression
+- id: m-pneus-sous-gonflage
+  question: Quels sont les risques d'un pneu sous-gonflé ?
+  reponse: Échauffement pouvant aller jusqu'à l'éclatement, usure rapide des épaules, distance de freinage allongée, aquaplaning plus précoce, tenue de route dégradée et surconsommation (≈ +6 % par bar manquant).
+  explication: 'Un pneu surgonflé s''use au centre et adhère moins. Le sous-gonflage est invisible à l''œil au-delà de 0,5 bar : d''où l''importance du contrôle mensuel et du système de surveillance (voyant orange).'
+  theme: M
+  sous_theme: pneus
+  source: Ornikar — Sous-gonflage ; Michelin
+- id: m-pneus-usure-1-6
+  question: À partir de quelle profondeur de sculpture un pneu doit-il être remplacé, et comment la vérifier ?
+  reponse: 'À 1,6 mm (minimum légal) : les témoins d''usure moulés dans les rainures affleurent la bande de roulement ; on recommande de changer dès 3 mm (4 mm en hiver).'
+  explication: 'Pneus lisses, toile apparente ou flanc coupé : 135 € et immobilisation. Une hernie ou une coupure sur le flanc impose le remplacement immédiat (un flanc ne se répare pas). Sur un même essieu : deux pneus de mêmes marque, dimension et type ; si l''on n''en change que deux, on met les neufs à l''arrière.'
+  theme: M
+  sous_theme: pneus
+  source: Code de la route, art. R314-1 ; arrêté du 18 juillet 2019
+- id: m-pneus-marquage
+  question: Que signifie le marquage « 205/55 R16 91V » sur un pneu ?
+  reponse: 205 = largeur en mm ; 55 = hauteur du flanc en % de la largeur ; R = structure radiale ; 16 = diamètre de la jante en pouces ; 91 = indice de charge (615 kg par pneu) ; V = indice de vitesse maximale (240 km/h).
+  explication: Le DOT à 4 chiffres donne la semaine et l'année de fabrication ; au-delà de 5-6 ans, faire contrôler, 10 ans maximum. Le marquage 3PMSF (montagne à 3 pics + flocon) désigne un vrai pneu hiver ; M+S seul n'est qu'une déclaration du fabricant.
+  theme: M
+  sous_theme: pneus
+  importance: utile
+  source: Michelin — Indices de charge et de vitesse
+- id: m-pneus-hiver-chaines
+  question: Quelle différence entre pneus hiver, chaînes et chaussettes, et quand les utilise-t-on ?
+  reponse: 'Pneus hiver (3PMSF) : efficaces sous 7 °C, utilisables tout l''hiver sur toute route. Chaînes : uniquement sur route enneigée, sur au moins deux roues motrices, à retirer dès que la neige disparaît, obligatoires derrière un panneau B26 (fin B44). Chaussettes : alternative textile aux chaînes, moins durable.'
+  explication: 'En zone loi Montagne (1er nov.–31 mars, panneau B58) : 4 pneus hiver ou chaînes/chaussettes à bord. Vitesse avec chaînes : ~50 km/h (préconisation fabricants). Pneus cloutés : 90 km/h max, du samedi précédant le 11 novembre au dernier dimanche de mars.'
+  theme: M
+  sous_theme: pneus
+  source: Code de la route, art. R314-3 et R413-7 ; service-public.fr F19459
+- id: m-roue-galette
+  question: Quelles limites avec une roue de secours « galette » (roue étroite) ou un kit anti-crevaison ?
+  reponse: 'Dépannage provisoire seulement : vitesse maximale 80 km/h et distance limitée (quelques dizaines de kilomètres), pour rejoindre un garage ; conduite prudente (adhérence et freinage dégradés, ESP perturbé).'
+  explication: 'La roue de secours n''est pas obligatoire en France. On ne change pas une roue sur autoroute : on appelle le dépanneur agréé depuis la borne (tous les 2 km).'
+  theme: M
+  sous_theme: pneus
+  importance: utile
+  source: Stych — Dépannages ; Ornikar — Roue de secours
+- id: m-niveau-huile
+  question: Comment contrôle-t-on le niveau d'huile moteur ?
+  reponse: 'Véhicule sur sol plat, moteur arrêté et refroidi (à froid ou après 10 min d''arrêt) : sortir la jauge, l''essuyer, la replonger, lire — le niveau doit être entre les repères mini et maxi ; compléter par petites quantités sans jamais dépasser le maxi.'
+  explication: Trop d'huile = surpression, fumée bleue, casse possible. Contrôle conseillé tous les 1 000 km et avant un long trajet. Le voyant rouge de pression d'huile impose l'arrêt immédiat.
+  theme: M
+  sous_theme: entretien
+  source: Ornikar — Huile moteur ; lepermislibre — Contrôler les niveaux
+- id: m-liquide-refroidissement
+  question: Quelle précaution essentielle avec le liquide de refroidissement ?
+  reponse: 'Ne jamais ouvrir le bouchon du vase d''expansion moteur chaud (liquide sous pression à plus de 100 °C : brûlures graves) ; contrôler à froid, entre mini et maxi, avec un liquide antigel adapté (pas seulement de l''eau).'
+  explication: 'Voyant température rouge = surchauffe : arrêt immédiat, moteur coupé, attendre 30 min. Une baisse répétée du niveau signale une fuite.'
+  theme: M
+  sous_theme: entretien
+  source: Ornikar — Liquide de refroidissement
+- id: m-liquide-frein
+  question: 'Le niveau du liquide de frein a baissé : que faut-il en conclure ?'
+  reponse: 'Soit les plaquettes sont usées (le niveau baisse à mesure que les pistons avancent), soit il y a une fuite : dans le doute, faire contrôler sans compléter à l''aveugle ; le liquide de frein se remplace environ tous les 2 ans car il absorbe l''humidité.'
+  explication: 'Voyant frein rouge allumé frein à main desserré = niveau de liquide de frein bas ou défaut du circuit : s''arrêter. Une pédale molle ou qui s''enfonce = danger.'
+  theme: M
+  sous_theme: entretien
+  source: Ornikar — Liquide de frein ; lepermislibre
+- id: m-batterie-cables
+  question: Dans quel ordre branche-t-on des câbles de démarrage ?
+  reponse: 'Câble rouge : borne + de la batterie déchargée, puis borne + de la batterie de secours ; câble noir : borne − de la batterie de secours, puis une masse métallique (pièce non peinte du moteur) du véhicule en panne — jamais directement sur la borne − de la batterie à plat ; démarrer, puis débrancher dans l''ordre inverse.'
+  explication: Batterie 12 V, durée de vie 4-5 ans. Le voyant batterie rouge en roulant signale un défaut de charge (alternateur, courroie), pas seulement une batterie vide.
+  theme: M
+  sous_theme: entretien
+  importance: utile
+  source: APRR — Utiliser des câbles de démarrage ; lepermislibre
+- id: m-amortisseurs-plaquettes
+  question: Comment repère-t-on des amortisseurs ou des plaquettes de frein usés ?
+  reponse: 'Amortisseurs : la voiture rebondit plus d''une fois quand on appuie sur l''aile, tenue de route floue, freinage allongé (jusqu''à +20 %), usure irrégulière des pneus (~80 000 km). Plaquettes : grincement au freinage, voyant orange, pédale qui s''enfonce, niveau de liquide de frein en baisse.'
+  explication: 'Un véhicule qui tire d''un côté = parallélisme déréglé (choc contre un trottoir) ; des vibrations dans le volant vers 90 km/h = équilibrage des roues. Courroie de distribution : à remplacer selon le constructeur (~100 000-160 000 km ou 5-10 ans), sa rupture casse le moteur.'
+  theme: M
+  sous_theme: entretien
+  source: Ornikar — Amortisseurs ; Stych — Pannes
+- id: m-carburants-etiquettes
+  question: Que signifient les étiquettes rondes, carrées et en losange sur les pistolets de carburant ?
+  reponse: 'Rond = essence (E5, E10, E85) ; carré = gazole (B7, B10, XTL) ; losange = gaz (GPL/LPG, GNV/CNG, hydrogène H2). Une erreur de carburant : ne pas démarrer, faire vidanger.'
+  explication: Le SP95-E10 (10 % d'éthanol) convient à la plupart des essences depuis 2000 ; l'E85 (jusqu'à 85 % d'éthanol) exige un véhicule flexfuel ou un boîtier homologué. Un diesel moderne a un filtre à particules (régénération sur route) et souvent un réservoir d'AdBlue (bouchon bleu) sans lequel il ne redémarre pas.
+  theme: M
+  sous_theme: entretien
+  importance: utile
+  source: Norme EN 16942 (étiquetage 2018) ; TotalEnergies ; Ornikar
+- id: m-boite-auto-positions
+  question: Que signifient les positions P, R, N et D d'une boîte automatique ?
+  reponse: 'P (Park) : transmission bloquée, pour stationner et démarrer ; R : marche arrière ; N (Neutral) : point mort ; D (Drive) : marche avant. On démarre en P ou N pied sur le frein, on ne passe P ou R qu''à l''arrêt, on n''utilise jamais N en descente, et le pied gauche reste au repos.'
+  explication: Le permis passé sur boîte automatique porte le code 78 ; une formation de 7 h permet de conduire une boîte manuelle, sans délai depuis mars 2024. Modes S (sport) ou B/L (frein moteur) selon les véhicules.
+  theme: M
+  sous_theme: entretien
+  source: Stych — La boîte automatique ; service-public.fr F2828
+- id: m-freinage-urgence-abs
+  question: Comment freiner en urgence avec un véhicule équipé de l'ABS ?
+  reponse: Écraser la pédale de frein à fond d'un coup et la maintenir sans relâcher malgré les vibrations, en braquant si nécessaire pour éviter l'obstacle ; avec une boîte manuelle, débrayer en même temps pour ne pas caler.
+  explication: 'L''ABS empêche le blocage des roues et conserve la direction ; il ne raccourcit pas la distance de freinage. Sans ABS, des roues bloquées = perte de direction : freiner par à-coups (pompage).'
+  theme: M
+  sous_theme: freinage
+  source: securite-routiere.gouv.fr — Dépliant vitesse ; Ornikar — ABS
+- id: m-panne-freins
+  question: 'Les freins ne répondent plus dans une descente : que faire ?'
+  reponse: Rétrograder rapport par rapport pour utiliser le frein moteur, serrer progressivement le frein à main (roues arrière), utiliser une voie de détresse si elle existe (gravier, damier rouge et blanc), et en dernier recours frotter contre la glissière ou le talus.
+  explication: 'Prévention : freinage par intermittence en longue descente pour éviter la surchauffe (fading) — question officielle 2023. Accélérateur bloqué : débrayer ou point mort, freiner, couper le contact sans verrouiller la direction.'
+  theme: M
+  sous_theme: freinage
+  source: Stych — Pannes ; En Voiture Simone — Voies de détresse
+- id: m-crevaison-eclatement
+  question: Un pneu éclate en roulant. Quelle réaction ?
+  reponse: Tenir fermement le volant à deux mains, ne pas freiner brutalement, lever le pied et laisser le véhicule ralentir, puis freiner doucement et se ranger en sécurité (feux de détresse, gilet).
+  explication: 'Un freinage brusque sur un pneu éclaté déséquilibre le véhicule. Sur autoroute : bande d''arrêt d''urgence, tous derrière la glissière, appel au dépanneur agréé.'
+  theme: M
+  sous_theme: depannage
+  source: Stych — Dépannages
+- id: m-feux-liste
+  question: Quels feux une voiture doit-elle obligatoirement avoir, et lesquels sont facultatifs ?
+  reponse: 'Obligatoires : feux de position (avant blancs, arrière rouges, visibles à 150 m), feux de croisement (30 m), feux de route (100 m), feux stop, clignotants orange, feux de détresse, éclairage de plaque, feu(x) de brouillard arrière, catadioptres rouges. Facultatifs : feux de brouillard avant, feux de recul (blancs), feux de jour.'
+  explication: 'Feu défaillant : 68 €, immobilisation possible la nuit. Piège de vocabulaire : les feux de position sont « visibles à », les feux de croisement et de route « éclairent à ».'
+  theme: M
+  sous_theme: feux
+  source: Code de la route, art. R313-2 à R313-15 ; service-public.fr F19459
+- id: m-feux-jour-limite
+  question: Les feux de jour (feux diurnes) suffisent-ils pour rouler sous la pluie ou au crépuscule ?
+  reponse: 'Non : ils n''éclairent qu''à l''avant et n''allument pas les feux arrière ; dès que la visibilité baisse (pluie, tunnel, crépuscule, brouillard), il faut les feux de croisement.'
+  explication: 'L''allumage automatique ne se déclenche pas toujours sous la pluie de jour : vérifier le voyant vert des feux de croisement.'
+  theme: M
+  sous_theme: feux
+  source: Stych — Systèmes d'éclairage ; Code de la route, art. R416-4
+- id: m-feux-reglage-hauteur
+  question: À quoi sert la molette de réglage des feux (0 à 3) ?
+  reponse: 'À abaisser le faisceau des feux de croisement quand le véhicule est chargé à l''arrière (passagers, coffre plein, remorque), pour ne pas éblouir les autres conducteurs : 0 à vide, position plus élevée quand on est chargé.'
+  explication: 'Question officielle 2023 (chargement important → « je règle la hauteur des feux »). Un mauvais réglage : 68 € et contre-visite au contrôle technique.'
+  theme: M
+  sous_theme: feux
+  source: Sécurité routière — Exemples de nouvelles questions (Q1) ; Ornikar — Réglage des feux
+- id: m-appel-phares
+  question: Quand peut-on faire un appel de phares ?
+  reponse: La nuit, pour avertir d'un danger ou signaler sa présence (avant de dépasser, à un croisement sans visibilité) à la place du klaxon, réservé à l'absolue nécessité ; de jour, pour avertir d'un danger immédiat.
+  explication: 'Un appel de phares pour « laisser passer » quelqu''un n''a aucune valeur réglementaire : ne jamais s''engager sur la foi d''un appel de phares.'
+  theme: M
+  sous_theme: feux
+  source: Code de la route, art. R416-2
+- id: m-ldw-lka-angle-mort
+  question: Que font l'alerte de franchissement de ligne, le maintien de voie et le détecteur d'angle mort, et quelles sont leurs limites ?
+  reponse: 'L''alerte de franchissement (LDW) prévient par vibration ou son quand on franchit une ligne sans clignotant ; le maintien de voie (LKA) corrige la trajectoire ; le détecteur d''angle mort allume un témoin dans le rétroviseur si un véhicule s''y trouve. Limites : marquage effacé ou couvert de neige, pluie, soleil bas, capteurs sales, deux-roues rapides non détectés.'
+  explication: 'Ces aides n''exonèrent pas des contrôles visuels : rétroviseurs + angle mort restent obligatoires. Depuis juillet 2024, les voitures neuves ont obligatoirement le freinage d''urgence automatique, le maintien de voie d''urgence, l''adaptation intelligente de la vitesse et l''alerte de somnolence (règlement GSR2).'
+  theme: M
+  sous_theme: adas
+  source: securite-routiere.gouv.fr — ADAS ; règlement (UE) 2019/2144
+- id: m-conduite-automatisee
+  question: Avec un véhicule à conduite partiellement automatisée (niveau 2, ex. régulateur adaptatif + maintien de voie), le conducteur peut-il lâcher l'attention ?
+  reponse: 'Non : il doit garder les mains sur le volant et rester en état de reprendre la main à tout moment ; il reste responsable. Seuls les niveaux 3 et plus (rares, sur autoroute dans des conditions limitées) autorisent à déléguer temporairement.'
+  explication: 'Niveaux SAE : 0 aucune aide, 1 assistance, 2 partielle, 3 conditionnelle, 4 haute, 5 totale. En France, la conduite automatisée est encadrée depuis septembre 2022.'
+  theme: M
+  sous_theme: adas
+  importance: utile
+  source: Décret n° 2021-873 ; securite-routiere.gouv.fr — ADAS
+- id: m-panne-procedure-route
+  question: 'Mon véhicule tombe en panne sur une route ordinaire : que faire dans l''ordre ?'
+  reponse: Feux de détresse, me ranger le plus à droite possible (accotement), enfiler le gilet avant de sortir, faire descendre les passagers côté opposé à la circulation et les mettre à l'écart, poser le triangle à environ 30 m (plus loin avant un virage ou un sommet de côte), puis appeler l'assistance.
+  explication: Sur autoroute, on ne pose pas le triangle si cela expose (on passe derrière la glissière) et on appelle depuis la borne orange. Le remorquage par un particulier est interdit sur autoroute ; sur route, barre ou corde homologuée, feux de détresse, conducteur au volant du véhicule tracté.
+  theme: M
+  sous_theme: depannage
+  source: Code de la route, art. R416-19 ; securite-routiere.gouv.fr — Véhicule en panne
+- id: m-changer-roue
+  question: Quelles étapes pour changer une roue en sécurité ?
+  reponse: Sol plat et stable, hors de la circulation ; frein à main serré, vitesse (ou P) engagée, feux de détresse, gilet, triangle ; desserrer légèrement les écrous avant de lever, cric au point de levage prévu, retirer la roue, monter la roue de secours, serrer les écrous en croix, redescendre et finir le serrage.
+  explication: 'Jamais sur la bande d''arrêt d''urgence d''une autoroute. Avec une galette : 80 km/h maximum et vérifier sa pression (souvent élevée, ~4 bars).'
+  theme: M
+  sous_theme: depannage
+  importance: utile
+  source: Stych — Dépannages ; Code en Poche — Changer une roue

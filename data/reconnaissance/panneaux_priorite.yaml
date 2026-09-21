@@ -1,0 +1,122 @@
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 9 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+- id: ab1
+  type: panneau
+  code: AB1
+  image:
+    commons: France road sign AB1.svg
+  nom: Intersection où s'applique la priorité à droite
+  signification: Annonce une intersection où le conducteur doit céder le passage aux véhicules venant de sa droite (règle générale de priorité à droite), et où il a la priorité sur ceux venant de sa gauche.
+  conduite: Ralentir, contrôler à droite et céder le passage aux véhicules venant de droite ; ne pas compter sur la priorité.
+  complement: 'Signal avancé : environ 150 m avant l''intersection hors agglomération ; 0 à 30 m en agglomération (sans panonceau de distance sauf si > 150 m).'
+  piege: 'AB1 (croix X, je cède à droite) ≠ AB2 (barre verticale épaisse, je suis prioritaire à cette intersection seulement). Ce panneau ne crée pas la règle, il la rappelle : la priorité à droite s''applique aussi sans panneau.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ab2
+  type: panneau
+  code: AB2
+  image:
+    commons: France road sign AB2.svg
+  nom: Intersection avec une route non prioritaire (priorité ponctuelle)
+  signification: Annonce une intersection où le conducteur est prioritaire par rapport aux véhicules venant des routes transversales (ils ont un STOP ou un cédez-le-passage). La priorité ne vaut que pour cette intersection.
+  conduite: 'Continuer en restant vigilant : la priorité n''exclut pas la prudence (un usager peut griller son STOP). Ne pas ralentir inutilement.'
+  complement: 'Signal avancé : environ 150 m avant l''intersection hors agglomération ; 0 à 30 m en agglomération. Peut être complété par un panonceau M7 (schéma de l''intersection, branches prioritaires en trait épais). Priorité PONCTUELLE (une seule intersection), contrairement à AB6 (route prioritaire sur tout l''itinéraire). Avec panonceau M7, le trait large montre les branches prioritaires.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ab3a
+  type: panneau
+  code: AB3a
+  image:
+    commons: France road sign AB3a.svg
+  nom: Cédez le passage
+  signification: À l'intersection, le conducteur doit céder le passage aux véhicules circulant sur la route qu'il va croiser ou rejoindre, sans obligation de s'arrêter s'il peut passer sans gêner.
+  conduite: Ralentir, contrôler à gauche et à droite, s'arrêter si nécessaire à la ligne discontinue (T'2) ou à hauteur du panneau, et ne s'engager qu'en sécurité.
+  complement: 'Implanté à hauteur de l''intersection, au niveau de la ligne discontinue de cédez-le-passage (marquage obligatoire : ligne T''2 de 50 cm de trait / 50 cm de vide, largeur 50 cm). Aussi en fin de voie d''insertion (autoroute) et aux entrées de giratoire. Triangle pointe en bas (comme ses signaux avancés AB3b/AB5 et le panonceau M12) : reconnaissable par sa forme, même de dos ou couvert de neige. L''arrêt n''est pas obligatoire si la voie est libre. Sur feux tricolores : les feux prévalent ; le panneau ne s''applique que feux éteints ou au jaune clignotant.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ab3b
+  type: panneau
+  code: AB3b
+  image:
+    commons: France road sign AB3b.svg
+  nom: Signal avancé de cédez-le-passage
+  signification: Annonce un cédez-le-passage (AB3a) situé à la distance indiquée par le panonceau M1 (le plus souvent 150 m).
+  conduite: Ralentir progressivement, se préparer à céder le passage à l'intersection annoncée.
+  complement: Environ 150 m avant l'intersection hors agglomération (répété à mi-distance si placé à plus de 200 m). Distance sur panonceau M1.
+  piege: AB3b = AB3a + panonceau de distance M1. Ne pas confondre avec AB5 (STOP à 150 m, panonceau M5).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ab4
+  type: panneau
+  code: AB4
+  image:
+    commons: France road sign AB4.svg
+  nom: Arrêt à l'intersection (STOP)
+  signification: Obligation de marquer l'arrêt absolu à la limite de la chaussée abordée (ligne blanche continue), puis de céder le passage aux véhicules circulant sur l'autre route, dans les deux sens.
+  conduite: S'arrêter complètement (roues immobilisées) à la ligne continue, même si la voie semble libre ; regarder gauche-droite-gauche ; s'engager seulement quand c'est sûr. À un STOP, on n'est jamais prioritaire.
+  complement: 'Implanté à l''endroit où le conducteur doit s''arrêter, à hauteur de la ligne d''arrêt continue (largeur 50 cm). Peut surmonter un panneau G1 à un passage à niveau (arrêt obligatoire avant les voies). Obligatoirement accompagné du marquage au sol. Seul panneau octogonal en France : reconnaissable de dos. L''arrêt se fait à la ligne (pas au panneau) ; sans ligne, à l''aplomb du panneau. Non-respect : 4 points, 135 €. Aux feux : le feu prévaut sur le STOP (feu vert = passer sans s''arrêter ; feu jaune clignotant ou éteint = STOP applicable).'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ab5
+  type: panneau
+  code: AB5
+  image:
+    commons: France road sign AB5.svg
+  nom: Signal avancé de STOP
+  signification: Annonce un panneau STOP (AB4) situé à la distance indiquée par le panonceau M5 (le plus souvent 150 m).
+  conduite: Ralentir, se préparer à marquer l'arrêt à l'intersection annoncée.
+  complement: Environ 150 m avant le STOP hors agglomération ; distance portée par le panonceau M5 (« STOP 150 m »). Le panneau AB5 ne demande pas de s'arrêter à son niveau ; l'arrêt se fait au STOP 150 m plus loin.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ab6
+  type: panneau
+  code: AB6
+  image:
+    commons: France road sign AB6.svg
+  nom: Route à caractère prioritaire
+  signification: 'Indique que la route sur laquelle on circule est prioritaire : à toutes les intersections suivantes (jusqu''au panneau AB7), les véhicules venant des routes transversales doivent céder le passage.'
+  conduite: Continuer en restant attentif ; ne pas ralentir inutilement aux intersections mais rester prêt à réagir. La priorité ne dispense pas de céder le passage aux piétons, tramways, véhicules prioritaires en intervention.
+  complement: 'Placé au début de la route prioritaire et rappelé après les intersections importantes et à l''entrée des agglomérations (peut être sur le même support qu''EB10). Fin : AB7.'
+  piege: 'Losange jaune plein = route prioritaire ; losange barré = fin. Ne pas confondre le caractère prioritaire de la route (AB6, toute la route) avec la priorité ponctuelle (AB2, une intersection). Un STOP ou cédez-le-passage vaut malgré un AB6 antérieur : un panneau plus récent s''applique.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ab7
+  type: panneau
+  code: AB7
+  image:
+    commons: France road sign AB7.svg
+  nom: Fin de route à caractère prioritaire
+  signification: Indique la fin du caractère prioritaire de la route ; à partir de là, sauf signalisation contraire, la règle générale de la priorité à droite s'applique.
+  conduite: 'Redoubler de vigilance aux intersections suivantes : céder le passage aux véhicules venant de droite en l''absence de signalisation.'
+  complement: Implanté à l'endroit où cesse le caractère prioritaire ; souvent à l'entrée d'agglomération, sur le même support qu'EB10.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ab25
+  type: panneau
+  code: AB25
+  image:
+    commons: France road sign AB25.svg
+  nom: Carrefour à sens giratoire
+  signification: 'Annonce un carrefour à sens giratoire : les usagers déjà engagés dans l''anneau sont prioritaires ; chaque entrée est munie d''une ligne discontinue de cédez-le-passage (et du panneau AB3a, obligatoire hors agglomération, facultatif en agglomération).'
+  conduite: Ralentir, céder le passage aux véhicules dans l'anneau, s'engager quand c'est possible, circuler dans le sens antihoraire (par la droite), clignotant droit avant de sortir, clignotant gauche uniquement si l'on va prendre une sortie au-delà de la moitié.
+  complement: 'Signal avancé : environ 150 m avant hors agglomération, à proximité immédiate en agglomération. En position : AB3a + ligne discontinue à chaque entrée ; l''îlot central porte souvent une balise J5 ou un panneau B21a1 (contournement par la droite).'
+  piege: 'Il n''existe plus de panneau rond bleu « sens giratoire obligatoire » en France (B21f supprimé en 1984). Piège : « carrefour à sens giratoire » (AB25 + AB3a : priorité à l''anneau) ≠ « rond-point » sans cédez-le-passage (rare, ex. place de l''Étoile à Paris) où la priorité à droite s''applique : celui qui entre est prioritaire. Sur un giratoire à deux voies, on utilise la voie de droite pour sortir aux premières sorties.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

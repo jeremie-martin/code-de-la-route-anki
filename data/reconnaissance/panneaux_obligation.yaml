@@ -1,0 +1,235 @@
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 18 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+- id: b21-1
+  type: panneau
+  code: B21-1
+  image:
+    commons: France road sign B21-1.svg
+  nom: Obligation de tourner à droite avant le panneau
+  signification: Le conducteur doit tourner à droite avant le panneau (le panneau est implanté en face, sur l'îlot ou le mur de fond).
+  conduite: Tourner à droite au niveau du panneau ; clignotant, contrôle rétroviseur droit.
+  complement: Placé en face de l'usager, au-delà de l'endroit où il doit tourner (sur l'îlot, le mur d'en face). Flèche horizontale = tourner AVANT le panneau (B21-1/-2) ; flèche coudée = tourner à la PROCHAINE intersection (B21c1/c2) ; flèche oblique vers le bas = contourner l'obstacle (B21a1/a2).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b21-2
+  type: panneau
+  code: B21-2
+  image:
+    commons: France road sign B21-2.svg
+  nom: Obligation de tourner à gauche avant le panneau
+  signification: Le conducteur doit tourner à gauche avant le panneau.
+  conduite: Tourner à gauche au niveau du panneau.
+  complement: Placé en face de l'usager, au-delà de l'endroit où il doit tourner.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b21a1
+  type: panneau
+  code: B21a1
+  image:
+    commons: France road sign B21a1.svg
+  nom: Contournement obligatoire par la droite
+  signification: Obligation de contourner par la droite l'obstacle ou l'îlot devant lequel le panneau est placé (refuge, terre-plein, îlot central de giratoire, chantier).
+  conduite: Passer à droite du panneau/obstacle.
+  complement: 'Placé sur l''obstacle lui-même (tête d''îlot), souvent avec la balise J5. Se rencontre à l''entrée des giratoires (îlot central) et sur les refuges. Version temporaire jaune : sur balise K8.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b21a2
+  type: panneau
+  code: B21a2
+  image:
+    commons: France road sign B21a2.svg
+  nom: Contournement obligatoire par la gauche
+  signification: Obligation de contourner par la gauche l'obstacle devant lequel le panneau est placé.
+  conduite: Passer à gauche du panneau/obstacle.
+  complement: Placé sur l'obstacle lui-même.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b21b
+  type: panneau
+  code: B21b
+  image:
+    commons: France road sign B21b.svg
+  nom: 'Direction obligatoire à la prochaine intersection : tout droit'
+  signification: À la prochaine intersection, le conducteur doit continuer tout droit (interdiction de tourner à droite ou à gauche).
+  conduite: Rester dans la voie qui va tout droit.
+  complement: Placé avant l'intersection concernée, à distance appropriée (contrairement aux autres panneaux d'obligation placés à l'endroit où commence l'obligation).
+  piege: B21b (rond bleu, flèche vers le haut) = obligation d'aller tout droit ; C12 (carré bleu, flèche vers le haut) = sens unique (indication).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b21c1
+  type: panneau
+  code: B21c1
+  image:
+    commons: France road sign B21c1.svg
+  nom: 'Direction obligatoire à la prochaine intersection : à droite'
+  signification: À la prochaine intersection, obligation de tourner à droite.
+  conduite: Se placer à droite, clignotant droit, tourner à droite à l'intersection.
+  complement: Placé avant l'intersection concernée, à distance appropriée (contrairement aux autres panneaux d'obligation placés à l'endroit où commence l'obligation).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b21c2
+  type: panneau
+  code: B21c2
+  image:
+    commons: France road sign B21c2.svg
+  nom: 'Direction obligatoire à la prochaine intersection : à gauche'
+  signification: À la prochaine intersection, obligation de tourner à gauche.
+  conduite: Se placer à gauche de sa voie (ou dans la voie de gauche), clignotant gauche, céder le passage aux véhicules venant en face avant de tourner.
+  complement: Placé avant l'intersection concernée, à distance appropriée (contrairement aux autres panneaux d'obligation placés à l'endroit où commence l'obligation).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b21d1
+  type: panneau
+  code: B21d1
+  image:
+    commons: France road sign B21d1.svg
+  nom: 'Directions obligatoires à la prochaine intersection : tout droit ou à droite'
+  signification: À la prochaine intersection, le conducteur doit aller tout droit ou tourner à droite (interdiction de tourner à gauche).
+  conduite: Choisir entre tout droit et à droite.
+  complement: Placé avant l'intersection concernée, à distance appropriée (contrairement aux autres panneaux d'obligation placés à l'endroit où commence l'obligation).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b21d2
+  type: panneau
+  code: B21d2
+  image:
+    commons: France road sign B21d2.svg
+  nom: 'Directions obligatoires à la prochaine intersection : tout droit ou à gauche'
+  signification: À la prochaine intersection, le conducteur doit aller tout droit ou tourner à gauche (interdiction de tourner à droite).
+  conduite: Choisir entre tout droit et à gauche.
+  complement: Placé avant l'intersection concernée, à distance appropriée (contrairement aux autres panneaux d'obligation placés à l'endroit où commence l'obligation).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b21e
+  type: panneau
+  code: B21e
+  image:
+    commons: France road sign B21e.svg
+  nom: 'Directions obligatoires à la prochaine intersection : à droite ou à gauche'
+  signification: À la prochaine intersection, le conducteur doit tourner à droite ou à gauche (interdiction d'aller tout droit).
+  conduite: Choisir entre droite et gauche ; ne pas continuer tout droit.
+  complement: Placé avant l'intersection concernée, à distance appropriée (contrairement aux autres panneaux d'obligation placés à l'endroit où commence l'obligation).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b22a
+  type: panneau
+  code: B22a
+  image:
+    commons: France road sign B22a.svg
+  nom: Piste ou bande cyclable obligatoire
+  signification: Piste ou bande obligatoire pour les cycles sans side-car ni remorque ; les cyclistes doivent l'emprunter et les autres véhicules ne peuvent pas y circuler ni y stationner. Un panonceau M4d2 peut l'ouvrir aux cyclomoteurs.
+  conduite: 'En voiture : ne pas y rouler ni s''y arrêter ; attention aux cyclistes en la coupant pour tourner (leur céder le passage si elle est prioritaire). À vélo : obligation de l''utiliser.'
+  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B40. Rond bleu = OBLIGATOIRE (B22a) ; carré bleu = CONSEILLÉ (C113). Interdit d''y stationner ou de s''y arrêter (stationnement très gênant : 135 €).'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b22b
+  type: panneau
+  code: B22b
+  image:
+    commons: France road sign B22b.svg
+  nom: Chemin obligatoire pour piétons
+  signification: Chemin réservé et obligatoire pour les piétons ; interdit aux véhicules.
+  conduite: 'En voiture : ne pas s''y engager.'
+  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B41.'
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b22c
+  type: panneau
+  code: B22c
+  image:
+    commons: France road sign B22c.svg
+  nom: Chemin obligatoire pour cavaliers
+  signification: Chemin réservé et obligatoire pour les cavaliers.
+  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B42.'
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b25
+  type: panneau
+  code: B25
+  image:
+    commons: France road sign B25 (30).svg
+  nom: Vitesse minimale obligatoire
+  signification: Obligation de circuler au moins à la vitesse indiquée (ex. 30 km/h), sauf si les conditions (trafic, météo) ne le permettent pas. Concerne en pratique la voie sur laquelle il est implanté (voie de gauche d'une chaussée à plusieurs voies).
+  conduite: Ne pas emprunter cette voie si l'on ne peut pas atteindre cette vitesse (véhicule lent, remorque).
+  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B43. Rond BLEU avec chiffre = vitesse MINIMALE ; rond rouge = maximale.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b26
+  type: panneau
+  code: B26
+  image:
+    commons: France road sign B26.svg
+  nom: Chaînes à neige obligatoires
+  signification: Obligation d'équiper d'au moins deux roues motrices de chaînes à neige (ou dispositifs équivalents) sur les routes enneigées à partir du panneau.
+  conduite: 'S''arrêter sur l''aire de chaînage pour monter les chaînes ; sans chaînes, ne pas s''engager. Vitesse maxi avec chaînes : 50 km/h en général.'
+  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B44. Un panonceau M9 peut préciser « pneus neige admis ». Les pneus hiver marqués 3PMSF ne dispensent PAS d''obéir au B26 sauf mention sur panonceau. Depuis 2021, en zone B58, chaînes dans le coffre OU pneus hiver.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b27a
+  type: panneau
+  code: B27a
+  image:
+    commons: France road sign B27a.svg
+  nom: Voie réservée aux véhicules des services réguliers de transport en commun
+  signification: 'Voie (couloir) réservée aux autobus et cars de lignes régulières ; les autres véhicules ne peuvent pas y circuler (sauf catégories autorisées par panonceau : taxis, vélos, véhicules d''urgence, VTC selon arrêté local).'
+  conduite: 'En voiture : ne pas y circuler ni y stationner ; on peut la traverser pour tourner ou accéder à un immeuble sans y circuler longitudinalement.'
+  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B45a. Exception à la règle « rond bleu = obligation » : les bus ne sont pas obligés de l''emprunter. Le couloir est délimité au sol par une ligne large T3 5u (traits longs rapprochés) et l''inscription BUS ; la ligne CONTINUE le rend infranchissable.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b27b
+  type: panneau
+  code: B27b
+  image:
+    commons: France road sign B27b.svg
+  nom: Voie réservée aux tramways
+  signification: Voie réservée aux tramways ; interdite aux autres véhicules.
+  conduite: Ne pas y circuler ni s'y arrêter ; le tramway est prioritaire.
+  complement: Placé à l'endroit où commence l'obligation ; répété après chaque intersection. Le panneau de fin B45b a été supprimé en 2009.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b29
+  type: panneau
+  code: B29
+  image:
+    commons: France road sign B29.svg
+  nom: Autre obligation (par inscription)
+  signification: Obligation dont la nature est indiquée par une inscription (ex. « Allumez vos feux », « Véhicules lents », « Pneus neige »).
+  conduite: Lire l'inscription et s'y conformer.
+  complement: 'Placé à l''endroit où commence l''obligation ; répété après chaque intersection. Fin : B49. « Allumez vos feux » à l''entrée d''un tunnel : obligation d''allumer les feux de croisement (pas seulement les feux de position).'
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

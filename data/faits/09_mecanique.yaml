@@ -1,0 +1,33 @@
+- id: m-pneus-chiffres
+  texte: 'Pneus : profondeur minimale des sculptures {{c1::1,6 mm}} (témoins d''usure) ; pression contrôlée à {{c2::froid}} (moins de 3 km ou plus de 2 h d''arrêt), au moins une fois par {{c3::mois}} ; +{{c4::0,2 à 0,3 bar}} en charge ou pour l''autoroute.'
+  explication: 'Pneu neuf ≈ 8 mm ; remplacement conseillé dès 3 mm (4 mm en hiver). Même type sur un même essieu ; pneus neufs à l''arrière si l''on n''en change que deux. Pneus lisses : 135 €, immobilisation.'
+  theme: M
+  sous_theme: pneus
+  source: Code de la route, art. R314-1 ; arrêté du 18 juillet 2019 ; Michelin
+- id: m-galette-chiffres
+  texte: 'Roue de secours galette ou kit anti-crevaison : dépannage provisoire, {{c1::80 km/h}} maximum ; pneus hiver efficaces sous {{c2::7 °C}} ; pneus cloutés : {{c3::90 km/h}} maximum, pendant la période hivernale fixée par arrêté.'
+  explication: 'Pneus cloutés : période classiquement du samedi précédant le 11 novembre au dernier dimanche de mars (prolongeable par le préfet), disque à l''arrière. Chaînes : uniquement sur route enneigée, sur au moins deux roues motrices, ~50 km/h maximum (préconisation), obligatoires derrière un B26.'
+  theme: M
+  sous_theme: pneus
+  importance: utile
+  source: Code de la route, art. R413-7 et R314-3 ; Stych
+- id: m-feux-portees
+  texte: 'Portées réglementaires : feux de position visibles à {{c1::150 m}} ; feux de croisement éclairent à {{c2::30 m}} ; feux de route à {{c3::100 m}} ; éclairage de plaque lisible à 20 m.'
+  explication: 'Piège de vocabulaire : « visible à » (position) vs « éclaire à » (croisement, route). Feu(x) de brouillard arrière obligatoires sur les véhicules depuis 1990 ; brouillard avant, recul et feux de jour facultatifs.'
+  theme: M
+  sous_theme: feux
+  source: Code de la route, art. R313-2 à R313-4
+- id: m-batterie-liquides-chiffres
+  texte: La batterie fournit du {{c1::12 V}} et dure environ 4-5 ans ; le liquide de frein se remplace environ tous les {{c2::2 ans}} (il absorbe l'humidité) ; la courroie de distribution se change vers {{c3::100 000 à 160 000 km}} ou 5-10 ans selon le constructeur (sa rupture casse le moteur).
+  explication: 'Câbles de démarrage : rouge sur les bornes +, noir sur la borne − de la batterie de secours puis sur une masse du véhicule en panne. Amortisseurs : ~80 000 km (test du rebond).'
+  theme: M
+  sous_theme: entretien
+  importance: utile
+  source: Ornikar — Entretien ; lepermislibre
+- id: m-adas-dates
+  texte: 'Équipements obligatoires sur les voitures neuves : ESP depuis {{c1::2014}}, eCall (appel automatique du 112) depuis {{c2::2018}}, feux de jour depuis 2011, et depuis juillet {{c3::2024}} (règlement GSR2) le freinage d''urgence automatique, l''adaptation intelligente de la vitesse, le maintien de voie d''urgence, l''alerte de somnolence et l''enregistreur de données (« boîte noire »).'
+  explication: Ces aides assistent le conducteur, qui reste responsable et doit surveiller. eCall appelle le 112, pas le 15.
+  theme: M
+  sous_theme: adas
+  importance: utile
+  source: Règlements (CE) 661/2009, (UE) 2015/758 et (UE) 2019/2144

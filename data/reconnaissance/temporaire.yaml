@@ -1,0 +1,399 @@
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 31 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+- id: ak2
+  type: panneau
+  code: AK2
+  image:
+    commons: France road sign AK2.svg
+  nom: Cassis ou dos-d'âne (temporaire)
+  signification: Annonce temporairement une déformation de la chaussée (tranchée, cassis, dos-d'âne) liée à des travaux.
+  conduite: Ralentir fortement.
+  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ak3
+  type: panneau
+  code: AK3
+  image:
+    commons: France road sign AK3.svg
+  nom: Chaussée rétrécie (temporaire)
+  signification: Annonce un rétrécissement temporaire de la chaussée (chantier) ; variantes AK3a (par la droite) et AK3b (par la gauche).
+  conduite: Ralentir, se replacer, ne pas dépasser ; appliquer les règles de croisement (B15/C18, K10, feux KR11).
+  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ak3a
+  type: panneau
+  code: AK3a
+  image:
+    commons: France road sign AK3a.svg
+  nom: Chaussée rétrécie par la droite (temporaire)
+  signification: Rétrécissement temporaire par la droite.
+  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue).'
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ak3b
+  type: panneau
+  code: AK3b
+  image:
+    commons: France road sign AK3b.svg
+  nom: Chaussée rétrécie par la gauche (temporaire)
+  signification: Rétrécissement temporaire par la gauche.
+  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue).'
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ak4
+  type: panneau
+  code: AK4
+  image:
+    commons: France road sign AK4.svg
+  nom: Chaussée glissante (temporaire)
+  signification: Annonce une chaussée temporairement glissante (boue de chantier, gravillons, enrobé frais, verglas localisé).
+  conduite: Ralentir, éviter freinages et accélérations brusques.
+  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ak5
+  type: panneau
+  code: AK5
+  image:
+    commons: France road sign AK5.svg
+  nom: Travaux
+  signification: 'Annonce une zone de travaux (chantier) sur ou près de la chaussée : présence d''ouvriers, d''engins, de modifications de la circulation.'
+  conduite: Ralentir (souvent 70 ou 50 km/h par panneau B14 jaune), redoubler d'attention, respecter les balises et les signaleurs ; les limitations de vitesse de chantier sont contrôlées.
+  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Peut être répété ; sur autoroute, souvent à 1 000 m / 500 m. Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire. Le panneau AK5 seul n''impose pas de vitesse : c''est le B14 associé qui la fixe.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ak14
+  type: panneau
+  code: AK14
+  image:
+    commons: France road sign AK14.svg
+  nom: Autres dangers (temporaire)
+  signification: Annonce un danger temporaire non prévu par un autre panneau, précisé par le panonceau KM9 (« sortie de camions », « bande rugueuse », « déviation »...).
+  conduite: Ralentir et lire le panonceau.
+  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ak17
+  type: panneau
+  code: AK17
+  image:
+    commons: France road sign AK17.svg
+  nom: Annonce de signaux lumineux temporaires
+  signification: Annonce des feux tricolores temporaires (feux de chantier KR11) réglant une circulation alternée.
+  conduite: Ralentir, se préparer à s'arrêter au feu ; ne pas passer au rouge même si la voie semble libre (véhicules en face non visibles).
+  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ak22
+  type: panneau
+  code: AK22
+  image:
+    commons: France road sign AK22.svg
+  nom: Projection de gravillons
+  signification: 'Annonce un risque de projection de gravillons (chaussée fraîchement gravillonnée) : danger pour les pare-brise et adhérence réduite.'
+  conduite: Ralentir (souvent B14 50 associé), augmenter les distances, éviter de dépasser ou de croiser à vive allure.
+  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ak30
+  type: panneau
+  code: AK30
+  image:
+    commons: France road sign AK30.svg
+  nom: Bouchon
+  signification: Annonce un ralentissement ou un bouchon (file de véhicules à l'arrêt) à proximité, souvent sur panneau lumineux ou remorque.
+  conduite: Ralentir immédiatement, allumer brièvement les feux de détresse pour prévenir ceux qui suivent, garder ses distances.
+  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ak31
+  type: panneau
+  code: AK31
+  image:
+    commons: France road sign AK31.svg
+  nom: Accident
+  signification: Annonce un accident sur la route à proximité (signalisation d'urgence).
+  conduite: Ralentir fortement, ne pas se laisser distraire, se préparer à une circulation alternée ou à un arrêt.
+  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: ak32
+  type: panneau
+  code: AK32
+  image:
+    commons: France road sign AK32.svg
+  nom: Nappes de brouillard ou de fumées épaisses
+  signification: Annonce des nappes de brouillard ou de fumées (incendie, écobuage) réduisant la visibilité, souvent sur panneau à messages variables (XAK32).
+  conduite: Ralentir (50 km/h maximum si visibilité < 50 m), allumer feux de croisement et feux de brouillard avant, augmenter les distances.
+  complement: 'Comme les panneaux A : environ 150 m avant le danger hors agglomération (100 à 200 m), 50 m en agglomération, souvent complété par un panonceau KM1 (distance) ou KM2 (étendue). Fond JAUNE = signalisation temporaire (chantier, événement, danger passager) : elle prévaut sur la signalisation permanente contradictoire.'
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: k1
+  type: panneau
+  code: K1
+  image:
+    commons: Fanion K1.webp
+  nom: Fanion de danger
+  signification: Fanion (drapeau) rouge ou rouge et blanc brandi ou planté pour signaler un danger temporaire imminent (chantier mobile, agent sur la chaussée).
+  conduite: Ralentir et se préparer à s'arrêter.
+  complement: Au niveau du danger.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: k2
+  type: panneau
+  code: K2
+  image:
+    commons: Barrage K2.webp
+  nom: Barrage (barrière de chantier)
+  signification: Barrière rouge et blanche matérialisant la fermeture totale ou partielle de la chaussée ou la position d'un obstacle temporaire (route barrée, chantier).
+  conduite: Ne pas franchir ; suivre la déviation ou la partie de chaussée laissée libre.
+  complement: En position, devant l'obstacle ou la fermeture. Sur l'image, la barrière porte un panneau « fin de chantier » ; la barrière seule signale une fermeture ou un obstacle.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: k5a
+  type: equipement
+  code: K5a
+  image:
+    gen: cone
+    params: {}
+  nom: Cône de signalisation
+  signification: Cône rouge et blanc (ou orange) délimitant la position des limites d'un chantier ou d'un obstacle temporaire, en file pour guider la circulation.
+  conduite: Rester dans l'espace laissé libre, ne pas renverser ni franchir la file de cônes.
+  complement: Le long des limites du chantier.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: k5b
+  type: panneau
+  code: K5b
+  image:
+    commons: K5B.svg
+  nom: Piquet de chantier
+  signification: Piquet (lame verticale) rouge et blanc délimitant un chantier ou un obstacle temporaire.
+  conduite: 'Comme les cônes : ne pas franchir.'
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: k5d
+  type: panneau
+  code: K5d
+  image:
+    commons: K5D.svg
+  nom: Balise de guidage temporaire
+  signification: 'Balise de guidage K5d : cylindre (ou lame) jaune à bandes blanches rétroréfléchissantes, implantée en file pour guider les usagers le long d''une déviation de trajectoire ; la balise d''alignement rouge et blanche est la K5c.'
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: k8
+  type: panneau
+  code: K8
+  image:
+    commons: K8e1.svg
+  nom: Balise de position de déviation ou de rétrécissement (chantier)
+  signification: 'Balise rectangulaire blanche portant un chevron rouge (parfois une flèche) implantée en tête de chantier ou de déviation : elle indique de quel côté contourner l''obstacle ou le rétrécissement.'
+  conduite: Se déporter du côté indiqué par la flèche.
+  complement: En tête de zone de chantier.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: k10a
+  type: panneau
+  code: K10a
+  image:
+    commons: K10a.svg
+  nom: Signal manuel « passage » (piquet K10, face verte)
+  signification: 'Face verte du piquet mobile K10 tenu par un signaleur de chantier : autorisation de passer (circulation alternée réglée manuellement).'
+  conduite: Passer prudemment en respectant les limitations du chantier ; obéir au signaleur comme à un agent.
+  complement: 'Tenu par un signaleur à chaque extrémité de l''alternat. Piquet K10 à deux faces : K10a = face VERTE (passer), K10b = face ROUGE (arrêt). Le signaleur de chantier a autorité pour arrêter la circulation.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: k10b
+  type: panneau
+  code: K10b
+  image:
+    commons: K10b.svg
+  nom: Signal manuel « arrêt » (piquet K10, face rouge)
+  signification: 'Face rouge du piquet mobile K10 (disque rouge, éventuellement avec inscription « STOP ») tenu par un signaleur : arrêt obligatoire.'
+  conduite: S'arrêter à hauteur du signaleur et attendre qu'il présente la face verte.
+  complement: Tenu par un signaleur à chaque extrémité de l'alternat.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: k14
+  type: panneau
+  code: K14
+  image:
+    commons: Ruban K14.webp
+  nom: Ruban de chantier
+  signification: Ruban (rubalise) rouge et blanc délimitant un chantier ou une zone interdite.
+  conduite: Ne pas franchir.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: k16
+  type: panneau
+  code: K16
+  image:
+    commons: Séparateur K16.webp
+  nom: Séparateur modulaire de voies
+  signification: Séparateur modulaire (blocs rouges et blancs en plastique ou béton) séparant physiquement les sens ou délimitant un chantier de longue durée en assurant le guidage.
+  conduite: Rester dans sa voie ; ne pas heurter les séparateurs.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: kc1
+  type: panneau
+  code: KC1
+  image:
+    commons: KC1 route barrée.svg
+  nom: Panneau d'indication temporaire (route barrée, circulation alternée…)
+  signification: 'Panneau rectangulaire jaune portant une inscription qui informe d''une situation temporaire : « ROUTE BARRÉE », « CIRCULATION ALTERNÉE », « ABSENCE DE SIGNALISATION HORIZONTALE », « CHAUSSÉE DÉFORMÉE », « BARRIÈRE DE DÉGEL », « SORTIE DE CAMIONS »…'
+  conduite: 'Lire et adapter sa conduite ; « absence de marquage » : rouler à droite, doubler avec prudence ; « route barrée » : suivre la déviation.'
+  complement: En présignalisation (avec distance) et en position.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: kd8
+  type: panneau
+  code: KD8
+  image:
+    commons: KD8e3.svg
+  nom: Présignalisation de changement de chaussée ou de trajectoire
+  signification: Panneau jaune schématisant un basculement de circulation (passage sur la chaussée opposée, déport de voies) sur route à chaussées séparées ou autoroute.
+  conduite: Suivre la trajectoire indiquée, ralentir ; on peut se retrouver à contresens de la chaussée habituelle, séparé par des balises.
+  complement: En amont du basculement.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: kd9
+  type: panneau
+  code: KD9
+  image:
+    commons: KD9e3.svg
+  nom: Affectation de voies (temporaire)
+  signification: Panneau jaune indiquant l'affectation temporaire des voies (voies neutralisées ou affectées à une direction) en zone de chantier.
+  conduite: Se placer dans la voie indiquée.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: kd10
+  type: panneau
+  code: KD10
+  image:
+    commons: KD10e1.svg
+  nom: Annonce de la réduction du nombre de voies (temporaire)
+  signification: 'Panneau jaune annonçant (avec distance) la réduction du nombre de voies laissées libres sur route à chaussées séparées : KD10a (une voie neutralisée), KD10b (plusieurs voies, signalisation d''urgence).'
+  conduite: Se rabattre à temps sur les voies restantes en respectant l'alternance (une voiture sur deux) en cas de bouchon.
+  complement: À 1 000 m, 500 m puis 200 m du rétrécissement sur autoroute.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: kd21
+  type: panneau
+  code: KD21
+  image:
+    commons: KD21 Marseille.svg
+  nom: Direction de déviation avec mention de ville
+  signification: Panneau de direction jaune en forme de flèche indiquant l'itinéraire de déviation vers la ville mentionnée.
+  conduite: Suivre la flèche jaune.
+  complement: Dans le carrefour.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: kd22
+  type: panneau
+  code: KD22
+  image:
+    commons: KD22a.svg
+  nom: Direction de déviation
+  signification: Panneau de direction jaune en forme de flèche portant la mention « Déviation » (ou le symbole KS1 numéroté) indiquant le chemin de la déviation.
+  conduite: Suivre la déviation.
+  complement: Dans le carrefour.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: kd42
+  type: panneau
+  code: KD42
+  image:
+    commons: KD42.svg
+  nom: Présignalisation de déviation
+  signification: Panneau jaune annonçant avant le carrefour la direction de la déviation (schéma ou flèche), avec éventuellement la ville et la distance.
+  conduite: Se préparer à tourner dans la direction indiquée.
+  complement: Avant le carrefour.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: kr11
+  type: panneau
+  code: KR11
+  image:
+    gen: feu_chantier
+    params:
+      state: rouge
+  nom: Feux tricolores temporaires (feux de chantier)
+  signification: 'Feux tricolores mobiles (jaunes/portables) réglant une circulation alternée sur une voie unique en zone de chantier ; mêmes règles que les feux permanents : rouge = arrêt, jaune = arrêt sauf impossibilité, vert = passage.'
+  conduite: S'arrêter au rouge devant le feu même si l'on ne voit personne en face ; ne pas s'engager au vert si la voie n'est pas dégagée ; ne pas dépasser dans l'alternat.
+  complement: À chaque extrémité de la section en alternat ; annoncés par AK17.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: triangle-presignalisation
+  type: equipement
+  image:
+    gen: triangle_seul
+    params: {}
+  nom: Triangle de présignalisation (véhicule en panne ou accidenté)
+  signification: Triangle rouge rétroréfléchissant que tout conducteur doit placer sur la chaussée pour signaler son véhicule immobilisé (panne, accident) sur la route, en complément des feux de détresse. Équipement obligatoire à bord avec le gilet haute visibilité.
+  conduite: 'Enfiler le gilet avant de sortir, placer le triangle à 30 m au moins en amont du véhicule (davantage si la visibilité est réduite ; sur autoroute, ne pas le poser si cela expose à un danger : rester derrière la glissière), allumer les feux de détresse.'
+  complement: 'Au moins 30 m en amont du véhicule (plus loin si visibilité réduite, virage, sommet de côte), sauf danger pour soi (autoroute). Gilet et triangle obligatoires à bord : absence = 11 € (1re classe) ; ne pas revêtir le gilet ou ne pas présignaler un véhicule dangereux = 135 € (4e classe). Sur autoroute, la pose du triangle est déconseillée si elle met en danger : priorité à l''évacuation derrière la glissière.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

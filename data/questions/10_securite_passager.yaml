@@ -1,0 +1,144 @@
+- id: s-enfant-moins-10-ans
+  question: Jusqu'à quel âge un enfant doit-il voyager dans un dispositif de retenue homologué (siège, réhausseur) ?
+  reponse: Jusqu'à 10 ans, adapté à sa taille et à son poids — et en principe à l'arrière.
+  explication: 'Exceptions pour l''avant : absence de siège arrière ou sièges arrière déjà occupés par des enfants de moins de 10 ans, ou véhicule sans ceinture arrière. Un enfant de 10 ans et plus utilise la ceinture comme un adulte (réhausseur conseillé tant qu''il mesure moins de 1,35 m — mais la limite légale française est l''âge, pas la taille). Sanction : 135 € pour le conducteur, sans retrait de points (R412-2).'
+  theme: S
+  sous_theme: enfants
+  source: Code de la route, art. R412-2 et R412-3 ; service-public.fr — Transport d'enfants en voiture
+- id: s-siege-dos-route
+  question: Peut-on installer un siège bébé dos à la route sur le siège passager avant ?
+  reponse: 'Seulement si l''airbag frontal passager est désactivé : sinon, le déploiement de l''airbag contre le siège peut tuer le bébé.'
+  explication: Le dos à la route est le plus protecteur (tête et nuque soutenues lors d'un choc frontal) ; la norme i-Size l'impose jusqu'à 15 mois. Le voyant « airbag passager OFF » confirme la désactivation.
+  theme: S
+  sous_theme: enfants
+  source: Code de la route, art. R412-2 ; règlement ONU R129 (i-Size) ; securite-routiere.gouv.fr — Enfants en voiture
+- id: s-groupes-sieges
+  question: Comment choisit-on un siège enfant ?
+  reponse: 'Selon la taille (norme i-Size/R129, de 40 à 150 cm) ou le poids (ancienne norme R44 : groupes 0/0+ jusqu''à 13 kg dos à la route, 1 de 9 à 18 kg, 2/3 de 15 à 36 kg réhausseur), avec l''étiquette d''homologation orange, et de préférence fixé par Isofix.'
+  explication: Un siège mal fixé ou trop grand ne protège pas ; les sangles doivent être tendues (un doigt passe à peine) et sans manteau épais. Après un accident, on remplace le siège.
+  theme: S
+  sous_theme: enfants
+  importance: utile
+  source: securite-routiere.gouv.fr — Sièges auto ; règlements ONU R44 et R129
+- id: s-securite-enfant-portieres
+  question: À quoi sert la « sécurité enfants » des portières arrière ?
+  reponse: À empêcher l'ouverture des portes arrière depuis l'intérieur (et sur certains véhicules, le fonctionnement des lève-vitres arrière).
+  explication: On l'active dès qu'un enfant voyage à l'arrière ; on fait descendre les enfants côté trottoir.
+  theme: S
+  sous_theme: enfants
+  source: securite-routiere.gouv.fr — Enfants en voiture
+- id: s-ceinture-obligation
+  question: Qui doit porter la ceinture de sécurité, et qui est sanctionné en cas de non-port ?
+  reponse: Tous les occupants, à l'avant comme à l'arrière. Un adulte non attaché est sanctionné lui-même (135 €) ; le conducteur est sanctionné (135 €, sans points) pour chaque passager de moins de 18 ans non attaché ou mal installé — et perd 3 points s'il n'est pas attaché lui-même.
+  explication: 'Une ceinture par personne : deux enfants sur une même ceinture est interdit. Dispenses médicales sur certificat uniquement. Le nombre de passagers ne peut pas dépasser le nombre de places (carte grise, S.1).'
+  theme: S
+  sous_theme: passagers
+  source: Code de la route, art. R412-1 et R412-2
+- id: s-ceinture-50-kmh
+  question: À 50 km/h, quelle force subit un occupant non attaché lors d'un choc frontal ?
+  reponse: 'L''équivalent d''une chute de 3 étages (~10 m) : un adulte de 75 kg est projeté avec une force d''environ 2,5 tonnes — impossible à retenir avec les bras.'
+  explication: La ceinture réduit de moitié le risque de décès ; elle est efficace aussi en ville, à petite vitesse, où se produisent la majorité des chocs.
+  theme: S
+  sous_theme: passagers
+  source: securite-routiere.gouv.fr — La ceinture de sécurité
+- id: s-femme-enceinte
+  question: Une femme enceinte doit-elle porter la ceinture ?
+  reponse: 'Oui : sangle basse sous le ventre (sur les hanches), sangle haute entre les seins ; c''est la meilleure protection du bébé comme de la mère.'
+  explication: Une dispense médicale est possible mais rare. Se tenir éloignée du volant/airbag (≥ 25 cm).
+  theme: S
+  sous_theme: passagers
+  importance: utile
+  source: securite-routiere.gouv.fr — La ceinture de sécurité
+- id: s-animaux
+  question: Comment transporter un animal en voiture ?
+  reponse: Attaché (harnais relié à la ceinture) ou dans une caisse/cage, ou derrière un filet ou une grille dans le coffre — jamais libre dans l'habitacle ni sur les genoux du conducteur.
+  explication: 'Un animal libre distrait le conducteur (35 €, contravention de 2e classe, R412-6 : possibilités de mouvement et champ de vision réduits) et devient un projectile en cas de choc. Ne jamais laisser un animal dans une voiture au soleil.'
+  theme: S
+  sous_theme: passagers
+  source: Code de la route, art. R412-6 ; securite-routiere.gouv.fr
+- id: s-airbag-distance
+  question: À quelle distance du volant le conducteur doit-il se tenir pour que l'airbag protège sans blesser ?
+  reponse: Au moins 25 cm entre le sternum et le centre du volant, ceinture bouclée (l'airbag est conçu pour compléter la ceinture, pas la remplacer).
+  explication: 'L''airbag se déploie en ~30 millisecondes à plus de 200 km/h : trop près, il frappe au lieu d''amortir. Pas de pieds sur le tableau de bord côté passager.'
+  theme: S
+  sous_theme: passagers
+  source: securite-routiere.gouv.fr — S'installer au poste de conduite ; constructeurs
+- id: s-chargement-placement
+  question: Comment répartit-on un chargement dans le véhicule ?
+  reponse: Les objets lourds en bas et le plus en avant possible (contre le dossier de la banquette), les objets légers au-dessus, le tout arrimé (filet, sangles) et jamais au-dessus de la hauteur des dossiers dans l'habitacle.
+  explication: 'Un objet non arrimé devient un projectile en cas de freinage (une bouteille d''eau de 1,5 kg pèse ~50 kg à 50 km/h). Un chargement lourd modifie le comportement du véhicule : freinage plus long, tenue de route dégradée — on adapte pression des pneus et hauteur des feux.'
+  theme: S
+  sous_theme: chargement
+  source: Code de la route, art. R312-19 ; securite-routiere.gouv.fr
+- id: s-chargement-depassement
+  question: Un chargement peut-il dépasser du véhicule ? Dans quelles limites ?
+  reponse: Jamais à l'avant ; jusqu'à 3 m à l'arrière (signalé par un dispositif réfléchissant de jour et un feu rouge la nuit dès qu'il dépasse de plus de 1 m) ; largeur totale 2,55 m maximum ; pas de limite générale de hauteur pour une voiture (attention aux ponts signalés).
+  explication: 'Le chargement ne doit ni traîner ni masquer les feux, plaques et rétroviseurs, ni déborder latéralement du contour du véhicule. Arrimage défaillant : 68 € et immobilisation ; dépassement arrière > 3 m : 135 €.'
+  theme: S
+  sous_theme: chargement
+  source: Code de la route, art. R312-19 à R312-21
+- id: s-coffre-toit
+  question: Quelles conséquences un coffre de toit (ou une galerie) a-t-il sur la conduite ?
+  reponse: Surconsommation (+10 à 20 %), sensibilité au vent latéral, centre de gravité plus haut (tenue de route dégradée en virage), hauteur à surveiller (parkings), et charge maximale du toit à respecter (souvent 50-75 kg).
+  explication: On le retire dès qu'il ne sert plus. Les objets lourds vont dans le coffre, pas sur le toit.
+  theme: S
+  sous_theme: chargement
+  source: ADEME — Éco-conduite ; securite-routiere.gouv.fr
+- id: s-remorque-permis-b
+  question: Quelle remorque peut-on tracter avec le seul permis B ?
+  reponse: Une remorque de PTAC ≤ 750 kg ; ou plus lourde si la somme des PTAC (voiture + remorque) ne dépasse pas 3 500 kg. Entre 3 500 et 4 250 kg de somme des PTAC, il faut la formation B96 (7 h) ; au-delà, le permis BE.
+  explication: 'Une remorque de plus de 500 kg de PTAC a sa propre carte grise ; au-delà de 750 kg, elle doit être freinée. Si le PTRA de l''ensemble dépasse 3,5 t, vitesses réduites : 90 km/h sur autoroute et sur route à chaussées séparées, 80 km/h sur les autres routes (R413-8).'
+  theme: S
+  sous_theme: chargement
+  importance: utile
+  source: Code de la route, art. R221-4 ; service-public.fr — Permis B, BE, B96
+- id: s-securite-active-passive
+  question: Quelle différence entre sécurité active et sécurité passive ?
+  reponse: 'Active : ce qui aide à éviter l''accident (freins, ABS, ESP, pneus, éclairage, aides à la conduite). Passive : ce qui limite les blessures quand l''accident survient (ceintures, airbags, appuie-tête, zones déformables, habitacle rigide).'
+  explication: Le classement Euro NCAP (0 à 5 étoiles) évalue la protection des adultes, des enfants et des piétons ainsi que les aides à la sécurité.
+  theme: S
+  sous_theme: equipements
+  source: securite-routiere.gouv.fr — Équipements de sécurité ; Euro NCAP
+- id: s-abs-fonction
+  question: Que fait l'ABS lors d'un freinage d'urgence, et comment doit-on freiner avec ?
+  reponse: Il empêche le blocage des roues pour conserver la direction (on peut encore éviter l'obstacle) ; on écrase la pédale à fond sans la relâcher, malgré les vibrations, et on braque si nécessaire.
+  explication: L'ABS ne raccourcit pas forcément la distance d'arrêt (elle peut même s'allonger sur gravier ou neige), il préserve la maîtrise de la trajectoire. Voyant ABS allumé = système hors service, freinage classique conservé.
+  theme: S
+  sous_theme: equipements
+  source: securite-routiere.gouv.fr — Les aides à la conduite ; Codes Rousseau
+- id: s-esp-fonction
+  question: À quoi sert l'ESP (contrôle électronique de stabilité) ?
+  reponse: À corriger un début de dérapage (sous-virage ou survirage) en freinant une ou plusieurs roues séparément et en réduisant le couple moteur, pour maintenir la trajectoire voulue.
+  explication: 'Obligatoire sur les voitures neuves depuis 2014 en Europe. Il ne supprime pas les lois de la physique : à vitesse excessive dans un virage glissant, il ne peut rien. Son voyant clignote quand il travaille.'
+  theme: S
+  sous_theme: equipements
+  source: securite-routiere.gouv.fr — Les aides à la conduite ; règlement (CE) 661/2009
+- id: s-afu-fonction
+  question: Qu'est-ce que l'AFU (aide au freinage d'urgence) ?
+  reponse: Un système qui détecte un appui brusque sur la pédale de frein et applique immédiatement la pression maximale (car la plupart des conducteurs ne freinent pas assez fort en urgence) ; il peut allumer les feux de détresse.
+  explication: À ne pas confondre avec le freinage automatique d'urgence (AEB), qui freine seul si le conducteur ne réagit pas à un obstacle détecté par radar/caméra.
+  theme: S
+  sous_theme: equipements
+  source: securite-routiere.gouv.fr — Les aides à la conduite
+- id: s-regulateur-limiteur
+  question: Quelle différence entre régulateur et limiteur de vitesse ?
+  reponse: Le régulateur maintient seul la vitesse choisie (pied levé) ; le limiteur empêche de dépasser la vitesse choisie mais c'est le conducteur qui accélère. Les deux se désactivent en freinant ou par un appui franc (kick-down pour le limiteur).
+  explication: Le régulateur est déconseillé en trafic dense, sur route glissante ou sinueuse et quand on est fatigué (perte de vigilance) ; le limiteur est utile en ville et en zone radar.
+  theme: S
+  sous_theme: equipements
+  source: securite-routiere.gouv.fr — Les aides à la conduite ; Codes Rousseau
+- id: s-adas-limites
+  question: Les aides à la conduite (détecteur d'angle mort, alerte de franchissement de ligne, freinage automatique, aide au stationnement) dispensent-elles de surveiller ?
+  reponse: 'Non : elles assistent, elles ne remplacent pas le conducteur, qui reste seul responsable ; elles peuvent ne pas détecter un piéton, un deux-roues ou un obstacle fin, ou être aveuglées (pluie, saleté, soleil).'
+  explication: 'Questions officielles 2023 (Q8) : avec l''assistance au stationnement, le conducteur surveille quand même l''avant et l''arrière. Les réponses « je laisse faire le système » sont fausses.'
+  theme: S
+  sous_theme: equipements
+  source: Sécurité routière — Exemples de nouvelles questions (Q8) ; securite-routiere.gouv.fr — ADAS
+- id: s-ecall
+  question: Qu'est-ce que l'eCall ?
+  reponse: 'Le système d''appel d''urgence automatique, obligatoire sur les modèles homologués depuis le 31 mars 2018 : en cas d''accident grave (déclenchement d''airbag), il appelle le 112 et transmet la position du véhicule ; on peut aussi le déclencher manuellement (bouton SOS).'
+  explication: Il n'empêche pas de prévenir soi-même les secours et de protéger les lieux.
+  theme: S
+  sous_theme: equipements
+  importance: utile
+  source: Règlement (UE) 2015/758 ; securite-routiere.gouv.fr

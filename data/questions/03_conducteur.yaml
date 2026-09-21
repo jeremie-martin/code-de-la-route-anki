@@ -1,0 +1,253 @@
+- id: c-champ-visuel-vitesse
+  question: Que devient le champ visuel du conducteur quand la vitesse augmente ?
+  reponse: 'Il se rétrécit : environ 180° à l''arrêt, 100° à 40 km/h, 75° à 70, 45° à 100 et ~30° à 130 km/h (« effet tunnel »).'
+  explication: Le cerveau ne peut traiter qu'une partie de l'information ; à grande vitesse il se concentre loin devant et perd la vision latérale — d'où les piétons ou véhicules « non vus » en agglomération quand on roule trop vite.
+  theme: C
+  sous_theme: perception
+  source: 'securite-routiere.gouv.fr — La vitesse : les risques ; Codes Rousseau'
+- id: c-regarder-loin
+  question: Pourquoi conseille-t-on de regarder loin devant soi en conduisant ?
+  reponse: 'Pour anticiper : voir tôt les dangers, adapter sa vitesse en douceur, et stabiliser sa trajectoire (le véhicule va où le regard se porte).'
+  explication: 'Regarder juste devant le capot oblige à réagir tard et brutalement. La règle : regarder loin, balayer, et contrôler régulièrement les rétroviseurs (toutes les 5 à 10 secondes environ).'
+  theme: C
+  sous_theme: perception
+  source: REMC ; Codes Rousseau — L'exploration visuelle
+- id: c-croisement-nuit-regard
+  question: De nuit, un véhicule arrive en face avec ses phares. Où porter le regard pour le croiser en sécurité ?
+  reponse: Vers la droite, le plus loin possible (bord de chaussée, ligne de rive), sans fixer ses feux ; et je ralentis.
+  explication: 'Question officielle 2023 (Q20 : « je regarde vers la droite le plus loin possible » + « je ralentis » ; PAS « je regarde ses feux » ni « je conserve les feux de route »). Fixer les phares éblouit et attire le véhicule vers eux.'
+  theme: C
+  sous_theme: perception
+  source: Sécurité routière — Exemples de nouvelles questions (Q20)
+- id: c-eblouissement-duree
+  question: Après un éblouissement (phares, soleil), combien de temps la vision met-elle à revenir ?
+  reponse: Plusieurs secondes chez un jeune (≈ 10 s à 25 ans), jusqu'à 2 minutes après 40 ans — à 90 km/h, on parcourt 25 m par seconde « à l'aveugle ».
+  explication: D'où l'importance de ralentir dès qu'on est ébloui, de regarder le bord droit de la chaussée, et de passer en feux de croisement à temps pour ne pas éblouir les autres. Le temps de récupération augmente avec l'âge.
+  theme: C
+  sous_theme: perception
+  source: securite-routiere.gouv.fr — Conduire de nuit ; Codes Rousseau
+- id: c-angle-mort-definition
+  question: Qu'est-ce que l'angle mort et comment le contrôle-t-on ?
+  reponse: La zone latérale arrière que les rétroviseurs ne montrent pas ; on la contrôle par un regard direct par-dessus l'épaule avant tout changement de file, dépassement, sortie de stationnement ou ouverture de portière.
+  explication: Un deux-roues peut tenir entièrement dans l'angle mort. Le contrôle doit être bref (moins d'une seconde) pour ne pas perdre la route de vue.
+  theme: C
+  sous_theme: perception
+  source: REMC ; securite-routiere.gouv.fr — Les angles morts
+- id: c-zone-attention-pluie
+  question: Sous la pluie en agglomération, entre le rétroviseur, un véhicule au loin devant et des piétons près d'un passage à droite, où concentrer principalement son attention ?
+  reponse: 'Sur les piétons proches du passage, à droite : c''est le danger le plus proche et le plus probable ; le reste se surveille par balayage.'
+  explication: 'Question officielle 2023 (Q9 : zone C, les piétons/voiture à droite). Principe : hiérarchiser les zones par proximité et vulnérabilité, sans cesser de balayer.'
+  theme: C
+  sous_theme: vigilance
+  source: Sécurité routière — Exemples de nouvelles questions (Q9)
+- id: c-detectabilite-pieton-nuit
+  question: 'Piéton au bord d''un passage, une voiture et une moto arrivent (question officielle Q11, point de vue piéton) : par quel conducteur suis-je facilement détectable ?'
+  reponse: Par le conducteur de la voiture — pas par le motard, dont le champ de vision est réduit par le casque et l'attention absorbée par l'équilibre et la trajectoire ; je m'assure donc d'être vu des deux avant de traverser.
+  explication: 'Question officielle 2023 (Q11 : « je suis facilement détectable par : le conducteur de la voiture »). De nuit, un piéton sombre n''est vu qu''à ~30 m en feux de croisement, ~150 m avec un gilet réfléchissant.'
+  theme: C
+  sous_theme: vigilance
+  source: Sécurité routière — Exemples de nouvelles questions (Q11) ; securite-routiere.gouv.fr — Piétons
+- id: c-vision-acuite-permis
+  question: Quelle acuité visuelle minimale est exigée pour le permis B ?
+  reponse: 5/10 avec les deux yeux (avec correction si nécessaire) ; si un œil est inférieur à 1/10 ou nul, l'autre doit atteindre 5/10 ; un champ visuel horizontal d'au moins 120° est aussi requis.
+  explication: 'Si l''on conduit avec lunettes ou lentilles, le permis porte la mention 01 : conduire sans correction, c''est 135 € et 3 points (R221-1-1). Faire contrôler sa vue tous les 2 ans est recommandé.'
+  theme: C
+  sous_theme: deficiences
+  importance: utile
+  source: Arrêté du 28 mars 2022 fixant la liste des affections médicales incompatibles ; service-public.fr
+- id: c-enfant-perception
+  question: Un enfant perçoit-il les dangers de la circulation de la même façon qu'un adulte ?
+  reponse: 'Non : champ visuel plus étroit (et yeux plus bas), incapacité à évaluer vitesses et distances avant 10-12 ans, attention absorbée par le jeu, impulsivité, et il croit qu''être vu = voir.'
+  explication: 'Question officielle 2023 (Q3 : « Un enfant perçoit les dangers de la même façon qu''un adulte : NON »). Un enfant peut aussi être masqué par les véhicules en stationnement (OUI) : près des écoles, on roule au pas.'
+  theme: C
+  sous_theme: vigilance
+  source: Sécurité routière — Exemples de nouvelles questions (Q3) ; securite-routiere.gouv.fr — Enfants piétons
+- id: c-enfant-masque
+  question: Devant une école ou une rangée de voitures stationnées, quel risque spécifique lié aux enfants faut-il anticiper ?
+  reponse: Qu'un enfant, masqué par les véhicules stationnés (plus petit qu'un capot), surgisse d'un coup entre deux voitures pour traverser.
+  explication: 'Indices à repérer : ballon, cartables, arrêt de car, sortie d''école, adultes qui attendent. Réponse attendue : je ralentis fortement et je me tiens prêt à m''arrêter — pas « je klaxonne ».'
+  theme: C
+  sous_theme: vigilance
+  source: Sécurité routière — Exemples de nouvelles questions (Q3)
+- id: c-trottinette-vulnerable
+  question: Pourquoi un usager de trottinette électrique est-il particulièrement vulnérable ?
+  reponse: Son équilibre est précaire (petites roues, freinage inégal) et son faible gabarit le rend peu détectable, surtout dans les angles morts et de nuit.
+  explication: 'Question officielle 2023 (Q4 : équilibre précaire OUI, faible gabarit peu détectable OUI). Conséquence : distance latérale d''au moins 1 m en agglomération, pas de dépassement serré.'
+  theme: C
+  sous_theme: vigilance
+  source: Sécurité routière — Exemples de nouvelles questions (Q4)
+- id: c-passagere-sans-ceinture
+  question: Une passagère arrière ne porte pas sa ceinture. Est-elle en danger ? Met-elle le conducteur en danger ?
+  reponse: 'Oui aux deux : en cas de choc à 50 km/h, un passager non attaché est projeté avec une force de plusieurs tonnes — contre les sièges avant et leurs occupants.'
+  explication: 'Question officielle 2023 (Q12 : « est en danger » OUI, « met le conducteur en danger » OUI). Le conducteur est responsable (et sanctionné) pour les passagers mineurs non attachés ; les adultes sont sanctionnés eux-mêmes.'
+  theme: C
+  sous_theme: vigilance
+  source: Sécurité routière — Exemples de nouvelles questions (Q12) ; Code de la route, art. R412-1 et R412-2
+- id: c-cycliste-devant-depassement
+  question: 'Je suis en train de dépasser un cycliste et un véhicule arrive en face : que faire ?'
+  reponse: 'Renoncer : je me replace derrière le cycliste à droite (sans accélérer ni poursuivre) et je dépasserai quand la voie sera libre en laissant 1 m (1,50 m hors agglomération).'
+  explication: 'Question officielle 2023 (Q7, sans énoncé : cycliste devant à droite, dépassement en cours ; réponse « Je me replace à droite. ») — le contexte « véhicule en face » est l''interprétation la plus probable de la photo. Un dépassement ne se termine jamais en serrant le cycliste ; accélérer augmente le risque de collision frontale.'
+  theme: C
+  sous_theme: vigilance
+  source: Sécurité routière — Exemples de nouvelles questions (Q7) ; Code de la route, art. R414-4
+- id: c-indices-anticipation
+  question: Quels indices d'une scène urbaine annoncent un danger à anticiper ?
+  reponse: Un ballon qui roule, un bus arrêté (piétons qui en sortent), une portière qui s'ouvre, des feux de recul, un clignotant, une roue braquée, un enfant sur le trottoir, une sortie d'école, un cycliste qui regarde par-dessus son épaule (il va se déporter).
+  explication: 'L''examen valorise l''anticipation : dès l''indice, on lève le pied et on couvre le frein. « Je maintiens ma vitesse » est presque toujours faux en présence d''un indice.'
+  theme: C
+  sous_theme: vigilance
+  source: REMC ; Codes Rousseau — Anticiper
+- id: c-retro-avant-freiner
+  question: Pourquoi contrôler le rétroviseur intérieur avant de freiner ou de ralentir ?
+  reponse: 'Pour savoir ce qui suit (deux-roues, véhicule trop proche) et adapter la façon de ralentir : frein moteur et freinage progressif si quelqu''un est collé derrière.'
+  explication: Un vélo ou une moto dans le rétroviseur signifie qu'un freinage brusque le mettrait en danger. Contrôler « derrière » avant de freiner est un réflexe attendu dans les questions d'examen.
+  theme: C
+  sous_theme: vigilance
+  source: Ornikar — Pièges à éviter ; REMC
+- id: c-fatigue-signes
+  question: Quels signes annoncent la fatigue ou la somnolence au volant ?
+  reponse: 'Fatigue : picotements des yeux, nuque raide, douleurs dorsales, regard fixe → faire une pause. Somnolence : bâillements, paupières lourdes, trajectoire flottante, micro-sommeils, oubli des derniers kilomètres → s''arrêter et dormir.'
+  explication: Dès les premiers signes, la seule réponse efficace est de s'arrêter et dormir 15-20 min ; ouvrir la fenêtre, la radio ou le café n'agissent que quelques minutes.
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Fatigue et somnolence
+- id: c-fatigue-pause
+  question: Sur un long trajet, à quelle fréquence faut-il faire une pause, et combien de temps ?
+  reponse: Au moins toutes les 2 heures, 15 à 20 minutes ; et dès le premier signe de fatigue, sans attendre.
+  explication: La somnolence est la première cause d'accident mortel sur autoroute (environ un tiers). Le risque est maximal entre 2 h et 5 h du matin et en début d'après-midi ; un repas copieux ou un manque de sommeil la nuit précédente l'aggravent.
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Fatigue et somnolence ; ASFA
+- id: c-fatigue-remedes-faux
+  question: 'Café, fenêtre ouverte, musique forte : cela suffit-il pour continuer à conduire quand on est somnolent ?'
+  reponse: 'Non : ces moyens ne retardent la somnolence que quelques minutes et donnent une fausse impression de vigilance. Seul le sommeil (sieste de 15-20 min) est efficace.'
+  explication: 'Piège d''examen classique : « je bois un café et je repars » est une mauvaise réponse ; « je m''arrête sur une aire pour dormir » est la bonne.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Fatigue et somnolence
+- id: c-telephone-risque
+  question: Téléphoner en conduisant, même avec un kit mains-libres, est-il sans danger ?
+  reponse: 'Non : la conversation détourne l''attention (risque d''accident multiplié par ~3), le champ de vision se rétrécit et le temps de réaction s''allonge ; lire ou écrire un message multiplie le risque par ~23.'
+  explication: 'Le téléphone tenu en main est interdit (135 €, 3 points) ; les oreillettes, écouteurs et casques sont interdits ; le kit mains-libres intégré est toléré mais déconseillé. Le mieux : mode avion ou téléphone hors de portée.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Téléphone au volant ; Code de la route, art. R412-6-1
+- id: c-telephone-arret
+  question: Puis-je utiliser mon téléphone en main, arrêté au feu rouge ou dans un bouchon ?
+  reponse: 'Non : l''interdiction vaut dès que le véhicule est en circulation, même à l''arrêt moteur tournant ; seul un véhicule stationné (garé, moteur coupé) hors de la circulation y échappe — sauf panne ou urgence sur la BAU.'
+  explication: 'Jurisprudence de la Cour de cassation (2018) : arrêté sur la chaussée = en circulation. 135 € et 3 points, et suspension possible si l''infraction est combinée à une autre (vitesse, feu…).'
+  theme: C
+  sous_theme: deficiences
+  source: Code de la route, art. R412-6-1 ; Cour de cassation, 23 janvier 2018
+- id: c-distracteurs
+  question: Quels distracteurs, autres que le téléphone, dégradent la vigilance au volant ?
+  reponse: Le GPS que l'on manipule en roulant, la radio/écran tactile, manger ou fumer, les passagers agités ou une dispute, les émotions fortes (colère, stress), les animaux non attachés.
+  explication: On programme le GPS à l'arrêt ; on garde les deux mains sur le volant. Un conducteur en colère prend plus de risques et perçoit moins.
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Distracteurs ; Codes Rousseau
+- id: c-alcool-doses
+  question: Les doses d'alcool servies sont-elles plus importantes au bar ou à la maison ?
+  reponse: 'À la maison : on se sert sans mesure, alors qu''un verre « standard » de bar (25 cl de bière à 5°, 10 cl de vin à 12°, 3 cl d''alcool fort à 40°) contient toujours ~10 g d''alcool pur.'
+  explication: 'Question officielle 2023 (Q17 : réponse « à la maison »). Chaque verre standard élève l''alcoolémie d''environ 0,20 à 0,25 g/L ; un verre maison peut en valoir deux ou trois.'
+  theme: C
+  sous_theme: deficiences
+  source: Sécurité routière — Exemples de nouvelles questions (Q17) ; securite-routiere.gouv.fr — Alcool
+- id: c-alcool-effets
+  question: Quels sont les effets de l'alcool sur la conduite, même en dessous du seuil légal ?
+  reponse: Temps de réaction allongé, champ visuel rétréci, mauvaise évaluation des distances et des vitesses, coordination dégradée, somnolence, et surtout euphorie et sous-estimation du risque.
+  explication: 'Dès 0,2 g/L les effets sont mesurables ; à 0,5 g/L le risque d''accident mortel est multiplié par 2, à 0,8 g/L par 10. Rien n''accélère l''élimination (ni café, ni douche, ni sommeil court) : le foie élimine 0,10 à 0,15 g/L par heure.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Alcool ; OFDT
+- id: c-alcool-pic
+  question: Combien de temps après le dernier verre l'alcoolémie est-elle maximale ?
+  reponse: Environ 15 à 30 minutes à jeun, 1 heure au cours d'un repas — puis elle redescend lentement (0,10 à 0,15 g/L par heure).
+  explication: 'Après 3 verres pris en fin de soirée, on peut encore être positif le lendemain matin. Le seul moyen sûr de savoir : un éthylotest, avant de reprendre le volant.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Alcool
+- id: c-cannabis-effets
+  question: Quels effets le cannabis a-t-il sur la conduite, et combien de temps durent-ils ?
+  reponse: Temps de réaction allongé, somnolence, difficulté à se concentrer et à maintenir sa trajectoire, mauvaise perception des distances ; les effets durent plusieurs heures et le dépistage reste positif bien plus longtemps.
+  explication: 'Le risque d''accident mortel est multiplié par ~1,65 à 1,8 sous cannabis, et par ~29 avec alcool et cannabis combinés (chiffres Sécurité routière ; certains supports disent ×15). Toute conduite après usage de stupéfiants est un délit, quelle que soit la quantité : 3 ans et 9 000 € depuis juillet 2025.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Stupéfiants ; étude SAM (OFDT)
+- id: c-medicaments-pictogrammes
+  question: Comment savoir si un médicament est compatible avec la conduite ?
+  reponse: 'Par le pictogramme triangulaire sur la boîte : niveau 1 jaune « soyez prudent » (lire la notice), niveau 2 orange « soyez très prudent » (avis d''un professionnel de santé), niveau 3 rouge « ne pas conduire » (avis médical pour reprendre).'
+  explication: Somnifères, anxiolytiques, certains antihistaminiques et antalgiques, sirops contre la toux sont concernés. Un médicament « sans ordonnance » peut être de niveau 2. Ne jamais mélanger avec l'alcool.
+  theme: C
+  sous_theme: deficiences
+  source: ANSM — Médicaments et conduite ; securite-routiere.gouv.fr
+- id: c-emotions
+  question: Peut-on prendre le volant après une forte émotion (dispute, colère, mauvaise nouvelle) ?
+  reponse: 'Mieux vaut attendre : sous le coup de l''émotion, on perçoit moins, on prend plus de risques (vitesse, dépassements) et le temps de réaction s''allonge.'
+  explication: Le stress et la colère sont des « déficiences » au même titre que la fatigue. La réponse attendue à l'examen est de différer le trajet ou de se calmer avant de partir.
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Les facteurs de risque ; Codes Rousseau
+- id: c-jeunes-conducteurs-risque
+  question: Pourquoi les jeunes conducteurs (18-24 ans) sont-ils surreprésentés dans les accidents mortels ?
+  reponse: Inexpérience (mauvaise détection des dangers), surconfiance, vitesse, conduite de nuit et le week-end, alcool/stupéfiants, passagers qui incitent à la prise de risque, et sous-estimation de la fatigue.
+  explication: Les 18-24 ans représentent environ 8 % de la population mais près de 17 % des tués sur la route. D'où le permis probatoire (6 points, vitesses réduites, 0,2 g/L) et l'intérêt de la conduite accompagnée, qui réduit nettement le risque.
+  theme: C
+  sous_theme: deficiences
+  source: ONISR — Bilan de l'accidentalité ; securite-routiere.gouv.fr — Jeunes conducteurs
+- id: c-indice-feux-recul
+  question: Une voiture stationnée devant moi a ses feux de recul (blancs) allumés. Qu'est-ce que j'anticipe ?
+  reponse: 'Qu''elle va reculer ou sortir de sa place : je ralentis, je me tiens prêt à m''arrêter et je garde mes distances plutôt que de la dépasser au ras.'
+  explication: 'Les feux de recul ne s''allument qu''en marche arrière (R416-20) : c''est un indice fiable. Même logique pour des roues braquées ou un conducteur installé au volant.'
+  theme: C
+  sous_theme: vigilance
+  source: Code de la route, art. R416-20 ; REMC — Anticiper
+- id: c-indice-bus-arrete
+  question: Un bus est arrêté à son arrêt, à droite, en ville. Quels dangers j'anticipe ?
+  reponse: 'Des piétons qui traversent devant ou derrière le bus (masqués), et le bus qui peut redémarrer (clignotant) : je ralentis, je m''écarte et je le laisse repartir s''il l''annonce.'
+  explication: En agglomération, on doit faciliter la sortie d'un bus qui quitte son arrêt (R412-11). Un car scolaire avec ses feux de détresse impose de réduire fortement la vitesse.
+  theme: C
+  sous_theme: vigilance
+  source: Code de la route, art. R412-11 et R413-17
+- id: c-indice-ballon
+  question: Un ballon roule sur la chaussée depuis le trottoir. Que fais-je ?
+  reponse: 'Je freine fort et immédiatement (après un coup d''œil au rétroviseur) : un enfant va probablement le suivre sans regarder.'
+  explication: 'Indice classique de l''examen : ballon, vélo d''enfant couché, cartable, portail d''école ouvert. La bonne réponse est toujours de ralentir/se tenir prêt à s''arrêter, jamais de klaxonner.'
+  theme: C
+  sous_theme: vigilance
+  source: REMC — Anticiper ; securite-routiere.gouv.fr — Enfants
+- id: c-indice-cycliste-regard
+  question: Devant moi, un cycliste regarde par-dessus son épaule gauche. Qu'est-ce que cela annonce ?
+  reponse: 'Qu''il va se déporter ou tourner à gauche : je ne le dépasse pas maintenant, je ralentis et je lui laisse la place.'
+  explication: Un cycliste signale ses intentions par le bras et le regard, pas par un clignotant. Il peut aussi s'écarter pour éviter une plaque d'égout, des gravillons ou une portière.
+  theme: C
+  sous_theme: vigilance
+  source: En Voiture Simone — Les vélos ; REMC
+- id: c-indice-vehicule-stationne-portiere
+  question: Je longe une file de voitures stationnées en ville. Quels risques et quelle position ?
+  reponse: 'Portière qui s''ouvre, piéton ou enfant qui surgit entre deux véhicules, voiture qui sort de sa place : je m''écarte d''au moins une largeur de portière (≈ 1 m), je réduis ma vitesse et je surveille les habitacles (têtes, feux).'
+  explication: L'emportiérage est un accident grave et fréquent pour les cyclistes ; en voiture, c'est aussi un accrochage courant. Rouler à 30 dans ces rues divise la distance d'arrêt par deux par rapport à 50.
+  theme: C
+  sous_theme: vigilance
+  source: securite-routiere.gouv.fr — Emportiérage ; REMC
+- id: c-routine-monotonie
+  question: Pourquoi les trajets quotidiens et les longues lignes droites sont-ils dangereux pour la vigilance ?
+  reponse: 'La routine et la monotonie installent des automatismes et font baisser l''attention : on ne « voit » plus les changements (nouveau panneau, piéton, travaux) — la majorité des accidents ont lieu sur des trajets courts et connus, près du domicile.'
+  explication: 'Antidote : se forcer à balayer activement (loin, près, côtés, rétroviseurs), varier son regard, et traiter chaque intersection connue comme si elle était nouvelle.'
+  theme: C
+  sous_theme: vigilance
+  source: securite-routiere.gouv.fr — La ceinture (trajets courts) ; Ornikar — Vigilance
+- id: c-vitesse-fatigue
+  question: Rouler vite fatigue-t-il plus que rouler lentement ?
+  reponse: 'Oui : à vitesse élevée le cerveau doit traiter plus d''informations en moins de temps, ce qui génère du stress et accélère la fatigue et la perte de vigilance.'
+  explication: 'Idée reçue à l''examen : « rouler lentement endort ». La Sécurité routière retient l''inverse. Plus la vitesse est élevée, plus le champ visuel se rétrécit et plus la fatigue arrive vite.'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — La fatigue et la conduite ; La vitesse
+- id: c-passagers-pression
+  question: Mes passagers m'incitent à rouler plus vite ou à « passer à l'orange ». Que faire ?
+  reponse: 'Refuser et garder mon allure : le conducteur est seul responsable ; la pression des passagers (surtout chez les jeunes) est un facteur de prise de risque reconnu.'
+  explication: 'Le disque A signale aux autres un conducteur novice et réduit l''impatience des suiveurs. Refuser aussi de monter avec un conducteur qui a bu : désigner un « Sam ».'
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — Conseils aux conducteurs novices

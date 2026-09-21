@@ -1,0 +1,40 @@
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 3 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+- id: g1
+  type: panneau
+  code: G1
+  image:
+    commons: FR road sign G1.svg
+  nom: Croix de Saint-André (passage à niveau à une voie sans barrière)
+  signification: 'Panneau de position d''un passage à niveau à une voie ferrée, sans barrière ni demi-barrière et sans signalisation automatique. Il est placé au niveau des rails : le conducteur doit s''assurer lui-même qu''aucun train n''approche avant de franchir. Sert aussi (avec M9a et feux rouges clignotants) pour les aires de danger aérien.'
+  conduite: S'arrêter si nécessaire, regarder et écouter des deux côtés ; franchir sans s'arrêter sur les voies uniquement si aucun train n'est visible ou audible ; si un AB4 (STOP) surmonte la croix, arrêt obligatoire.
+  complement: 'À hauteur du passage à niveau (position) ; annoncé par A8 + balises J10. Variante G1b : croix plus étroite pour implantation difficile. Une seule croix = une seule voie ferrée ; croix double (G1a) = plusieurs voies. Dépassement interdit aux traversées de voies ferrées sans barrières ni demi-barrières (R414-12), même avec signalisation automatique (G1bis).'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: g1a
+  type: panneau
+  code: G1a
+  image:
+    commons: FR road sign G1a.svg
+  nom: Croix de Saint-André double (passage à niveau à plusieurs voies sans barrière)
+  signification: 'Panneau de position d''un passage à niveau à plusieurs voies ferrées, sans barrière ni signalisation automatique (deux croix superposées, ou G1c : version étroite).'
+  conduite: Même conduite que G1, en tenant compte qu'un train peut en cacher un autre.
+  complement: À hauteur du passage à niveau.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: g1bis
+  type: panneau
+  code: G1bis
+  image:
+    commons: FR road sign G1 bis.svg
+  nom: Croix de Saint-André avec signalisation automatique lumineuse et sonore
+  signification: 'Croix de Saint-André (G1 ou G1b) complétée d''un feu rouge clignotant (R24) et d''une sonnerie : passage à niveau à une voie sans barrière mais avec signalisation automatique annonçant l''arrivée des trains. G1a bis / G1c bis : versions à plusieurs voies.'
+  conduite: Feu rouge clignotant allumé = arrêt absolu, même si le train n'est pas visible ; feu éteint = franchir après s'être assuré qu'aucun train n'approche.
+  complement: À hauteur du passage à niveau ; annoncé par A8 (le panneau de danger reste A8 puisqu'il n'y a pas de barrière).
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

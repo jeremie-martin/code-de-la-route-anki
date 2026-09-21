@@ -1,0 +1,163 @@
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 13 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+- id: b31
+  type: panneau
+  code: B31
+  image:
+    commons: France road sign B31.svg
+  nom: Fin de toutes les interdictions précédemment signalées
+  signification: Fin de toutes les interdictions précédemment signalées et imposées aux véhicules en mouvement (vitesse, dépassement, klaxon...). Ne met pas fin aux interdictions d'arrêt ou de stationnement.
+  conduite: Reprendre la vitesse réglementaire de la route (ex. 80 km/h hors agglomération) et les manœuvres à nouveau autorisées, si les conditions le permettent.
+  complement: Placé à l'endroit où cesse la prescription.
+  piege: 'B31 (blanc, barre noire oblique) ≠ B0 (blanc, cercle rouge). B31 ne concerne QUE les véhicules en mouvement : une interdiction de stationner continue.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b33
+  type: panneau
+  code: B33
+  image:
+    commons: France road sign B33 (50).svg
+  nom: Fin de limitation de vitesse
+  signification: Fin de la limitation de vitesse indiquée ; la vitesse maximale redevient celle du régime général de la route (agglomération 50, route 80/90, 2×2 voies 110, autoroute 130).
+  conduite: Reprendre la vitesse réglementaire applicable, sans dépasser celle qui est adaptée aux conditions.
+  complement: 'Placé à l''endroit où cesse la prescription. Après un B33, ce n''est pas « vitesse libre » : c''est la limite générale du type de route qui s''applique. Variantes courantes : 30, 50, 70, 90, 110.'
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b34
+  type: panneau
+  code: B34
+  image:
+    commons: France road sign B34.svg
+  nom: Fin d'interdiction de dépasser
+  signification: Fin de l'interdiction de dépasser notifiée par le panneau B3.
+  conduite: Dépassement à nouveau autorisé si les conditions de sécurité et le marquage le permettent.
+  complement: Placé à l'endroit où cesse la prescription.
+  theme: L
+  sous_theme: panneaux
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b34a
+  type: panneau
+  code: B34a
+  image:
+    commons: France road sign B34a.svg
+  nom: Fin d'interdiction de dépasser pour les poids lourds
+  signification: Fin de l'interdiction de dépasser notifiée par le panneau B3a (véhicules de transport de marchandises > 3,5 t).
+  complement: Placé à l'endroit où cesse la prescription.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b35
+  type: panneau
+  code: B35
+  image:
+    commons: France road sign B35.svg
+  nom: Fin d'interdiction de l'usage de l'avertisseur sonore
+  signification: Fin de l'interdiction des signaux sonores (B16).
+  complement: Placé à l'endroit où cesse la prescription.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b39
+  type: panneau
+  code: B39
+  image:
+    commons: France road sign B39.svg
+  nom: Fin d'interdiction (par inscription)
+  signification: Fin de l'interdiction dont la nature est indiquée sur le panneau (correspond à B19).
+  complement: Placé à l'endroit où cesse la prescription.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b40
+  type: panneau
+  code: B40
+  image:
+    commons: France road sign B40.svg
+  nom: Fin de piste ou bande cyclable obligatoire
+  signification: Fin de la piste ou bande obligatoire pour les cycles (B22a) ; les cyclistes réintègrent la chaussée.
+  conduite: 'En voiture : s''attendre à voir des cyclistes revenir sur la chaussée.'
+  complement: Placé à l'endroit où cesse la prescription.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b41
+  type: panneau
+  code: B41
+  image:
+    commons: France road sign B41.svg
+  nom: Fin de chemin obligatoire pour piétons
+  signification: Fin du chemin obligatoire pour piétons (B22b).
+  complement: Placé à l'endroit où cesse la prescription.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b42
+  type: panneau
+  code: B42
+  image:
+    commons: France road sign B42.svg
+  nom: Fin de chemin obligatoire pour cavaliers
+  signification: Fin du chemin obligatoire pour cavaliers (B22c).
+  complement: Placé à l'endroit où cesse la prescription.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b43
+  type: panneau
+  code: B43
+  image:
+    commons: France road sign B43 (30).svg
+  nom: Fin de vitesse minimale obligatoire
+  signification: Fin de l'obligation de rouler au moins à la vitesse indiquée (B25).
+  complement: Placé à l'endroit où cesse la prescription.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b44
+  type: panneau
+  code: B44
+  image:
+    commons: France road sign B44.svg
+  nom: Fin d'obligation de l'usage des chaînes à neige
+  signification: Fin de l'obligation d'équipement en chaînes (B26).
+  conduite: Les chaînes peuvent être retirées (elles abîment la route et les pneus sur chaussée sèche).
+  complement: Placé à l'endroit où cesse la prescription.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b45a
+  type: panneau
+  code: B45a
+  image:
+    commons: France road sign B45a.svg
+  nom: Fin de voie réservée aux véhicules de transport en commun
+  signification: Fin de la voie réservée aux bus (B27a) ; la voie redevient ouverte à tous.
+  complement: Placé à l'endroit où cesse la prescription. Souvent codé simplement « B45 ». B45b (fin de voie tramway) a été supprimé en 2009.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: b49
+  type: panneau
+  code: B49
+  image:
+    commons: France road sign B49.svg
+  nom: Fin d'obligation (par inscription)
+  signification: Fin de l'obligation dont la nature est mentionnée par inscription (correspond à B29).
+  complement: Placé à l'endroit où cesse la prescription.
+  theme: L
+  sous_theme: panneaux
+  importance: rare
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

@@ -1,0 +1,39 @@
+# Thème U — Les autres usagers : chiffres à connaître
+- id: u-edpm-chiffres
+  texte: "Trottinette électrique (EDPM) : âge minimum {{c1::14 ans}} (depuis le 1er septembre 2023), vitesse maximale par construction {{c2::25 km/h}}, {{c3::une seule}} personne à bord, trottoir interdit, assurance obligatoire."
+  explication: "Passager, trottoir ou écouteurs : 135 € ; engin débridé : jusqu'à 1 500 €. Gilet réfléchissant obligatoire la nuit, casque recommandé (obligatoire hors agglomération sur les routes autorisées)."
+  theme: U
+  sous_theme: edpm
+  source: "Code de la route, art. R412-43-1 à R412-43-3 ; décret n° 2023-848"
+- id: u-velo-chiffres
+  texte: "À vélo : casque obligatoire pour les moins de {{c1::12 ans}} ; gilet réfléchissant obligatoire hors agglomération {{c2::la nuit}} ; un enfant de moins de {{c3::8 ans}} peut rouler sur le trottoir au pas ; jamais plus de {{c4::deux}} de front."
+  explication: "En file simple dès la chute du jour ou quand un véhicule annonce son dépassement. Pas de retrait de points à vélo, mais les amendes s'appliquent. Un VAE (≤ 250 W, assistance coupée à 25 km/h) reste un vélo."
+  theme: U
+  sous_theme: cyclistes
+  source: "Code de la route, art. R431-1-1, R431-1-3, R412-34, R431-7"
+- id: u-interfiles-chiffres
+  texte: "Circulation inter-files des motos (généralisée le 11 janvier 2025) : uniquement sur autoroutes et routes à chaussées séparées limitées à {{c1::70 km/h}} ou plus, en circulation dense, entre les deux files les plus à gauche, à {{c2::50 km/h}} maximum ({{c3::30 km/h}} si une file est arrêtée)."
+  explication: "Interdit de dépasser un autre deux-roues en inter-files, interdit par neige, verglas ou travaux. Infraction : 135 €, 3 points. L'automobiliste reste dans sa file et vérifie ses angles morts avant de se décaler."
+  theme: U
+  sous_theme: motos
+  tags: [nouveau::2025]
+  source: "Code de la route, art. R412-11-3 (décret n° 2025-33)"
+- id: u-motos-mortalite
+  texte: "Les deux-roues motorisés représentent moins de {{c1::2 %}} du trafic mais environ {{c2::21 %}} des tués sur la route ; un motard a environ {{c3::20 à 30 fois}} plus de risque d'être tué par kilomètre parcouru qu'un automobiliste."
+  explication: "Chiffre Sécurité routière : × 27. Dans près de deux tiers des accidents voiture-moto, l'automobiliste « n'a pas vu » la moto : angle mort, gabarit étroit, vitesse d'approche mal évaluée."
+  theme: U
+  sous_theme: motos
+  source: "ONISR 2025 ; securite-routiere.gouv.fr — 27 fois plus de risques"
+- id: u-pietons-mortalite
+  texte: "Les piétons représentent environ {{c1::15 %}} des tués sur la route (≈ 500 par an) ; plus de la {{c2::moitié}} des piétons tués ont 65 ans ou plus, et environ {{c3::65 %}} des piétons tués le sont en agglomération."
+  explication: "D'où la réforme de 2018 : refus de priorité à un piéton = 6 points. Piège de vigilance : les seniors traversent lentement et évaluent mal les vitesses."
+  theme: U
+  sous_theme: pietons
+  importance: utile
+  source: "ONISR 2025"
+- id: u-pl-angles-morts-chiffres
+  texte: "Un poids lourd a {{c1::4}} zones d'angle mort (devant, derrière, les deux côtés — surtout à droite) ; depuis 2021, les véhicules de plus de {{c2::3,5 t}} portent des autocollants « angles morts » ; hors agglomération, deux poids lourds qui se suivent gardent au moins {{c3::50 m}}."
+  explication: "Règle du rétroviseur : si je ne vois pas les yeux du conducteur dans son rétroviseur, il ne me voit pas. Un camion qui tourne à droite se déporte d'abord à gauche."
+  theme: U
+  sous_theme: poids_lourds
+  source: "securite-routiere.gouv.fr — Angles morts ; Code de la route, art. R412-12"

@@ -1,0 +1,38 @@
+# Thème E — Environnement : chiffres de l'écoconduite et de la pollution (ordres de grandeur attendus)
+- id: e-rapports-chiffres
+  texte: "Écoconduite : passer les rapports vers {{c1::2 000}} tr/min en diesel et {{c2::2 500}} tr/min en essence ; couper le moteur dès un arrêt de plus de {{c3::20 à 30 secondes}}."
+  explication: "Le moteur froid consomme jusqu'à 50 % de plus sur le premier kilomètre : on ne fait pas chauffer à l'arrêt, on roule doucement. Le Stop & Start coupe automatiquement (−10 à −15 % en ville)."
+  theme: E
+  sous_theme: ecoconduite
+  source: "ADEME — Écoconduite ; En Voiture Simone ; Codeclic"
+- id: e-surconsommations
+  texte: "Surconsommations typiques : climatisation +{{c1::10 %}} sur route et jusqu'à +25 % en ville ; coffre de toit ou galerie +{{c2::10 à 15 %}} ; 100 kg de charge inutile +{{c3::5 %}} ; pneus sous-gonflés jusqu'à +{{c4::8 %}} (et usure, risque d'éclatement)."
+  explication: "À vitesse élevée, les vitres ouvertes consomment plus que la climatisation (aérodynamique) ; en ville, on aère. Un entretien négligé (filtres, huile) peut coûter jusqu'à +25 %."
+  theme: E
+  sous_theme: ecoconduite
+  source: "ADEME ; Codeclic — Conduite économique ; Ornikar — Conduite écologique"
+- id: e-vitesse-chiffres
+  texte: "Rouler 10 km/h moins vite sur autoroute économise environ {{c1::1 L/100 km}} (≈ 5 L sur 500 km) ; passer de 130 à 120 km/h sur 100 km ne coûte que {{c2::4 minutes}}."
+  explication: "La résistance de l'air croît avec le carré de la vitesse : la vitesse stable et modérée est le premier levier d'économie. Une conduite nerveuse peut consommer jusqu'à 40 % de plus en ville qu'une conduite souple."
+  theme: E
+  sous_theme: ecoconduite
+  source: "securite-routiere.gouv.fr — La vitesse ; Ornikar ; En Voiture Simone"
+- id: e-critair-chiffres
+  texte: "Crit'Air : {{c1::6}} classes (0 à 5) plus les non classés ; un diesel récent (Euro 5-6, 2011+) est Crit'Air {{c2::2}} ; une essence récente, un hybride rechargeable ou un véhicule au gaz est Crit'Air {{c3::1}} ; les véhicules d'avant {{c4::1997}} sont non classés."
+  explication: "Crit'Air 0 (vert) : électrique et hydrogène. À date égale, un diesel est une classe en dessous d'une essence. Vignette ≈ 3,85 €, valable toute la vie du véhicule ; absence en ZFE : 68 €."
+  theme: E
+  sous_theme: pollution
+  source: "service-public.fr F33371 ; certificat-air.gouv.fr"
+- id: e-pic-pollution-chiffres
+  texte: "En cas d'épisode de pollution, le préfet peut instaurer la circulation différenciée (annoncée la veille) et abaisser les vitesses maximales de {{c1::20 km/h}} (130 → 110, 110 → 90, 90 → 70), sans descendre sous 70 km/h."
+  explication: "Non-respect : 68 €. Les transports en commun peuvent être rendus gratuits ou moins chers, et les poids lourds déviés."
+  theme: E
+  sous_theme: pollution
+  source: "service-public.fr — Pic de pollution ; arrêtés préfectoraux"
+- id: e-trajets-courts-chiffres
+  texte: "Environ {{c1::40 %}} des trajets urbains en voiture font moins de 2 km ; les transports représentent près de {{c2::30 %}} des émissions de gaz à effet de serre en France, la voiture particulière en étant la première source."
+  explication: "Sur moins de 5 km en ville, le vélo est souvent aussi rapide que la voiture ; 2 km à pied = 24 minutes. Le moteur et le catalyseur froids rendent ces courts trajets les plus polluants au kilomètre."
+  theme: E
+  sous_theme: ecomobilite
+  importance: utile
+  source: "ADEME — Se déplacer autrement ; Ornikar — Écomobilité"

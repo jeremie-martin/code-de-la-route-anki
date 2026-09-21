@@ -1,0 +1,103 @@
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 7 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+- id: agent-bras-leve
+  type: geste
+  image:
+    gen: agent
+    params:
+      pose: bras_leve
+  nom: 'Agent : bras levé verticalement'
+  signification: Un bras levé verticalement signifie « attention, arrêt » pour tous les usagers, quelle que soit leur direction d'arrivée (sauf ceux déjà engagés dans l'intersection, qui doivent la dégager).
+  conduite: S'arrêter (avant l'intersection) et attendre le signal suivant ; si l'on est déjà engagé, terminer sa traversée.
+  complement: Équivalent du feu jaune fixe puis rouge pour tout le monde. Les injonctions d'un agent prévalent sur les feux, les panneaux et le marquage.
+  theme: L
+  sous_theme: agents
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: agent-bras-tendu-face
+  type: geste
+  image:
+    gen: agent
+    params:
+      pose: bras_tendus
+  nom: 'Agent : bras tendu(s) horizontalement, vu de face ou de dos'
+  signification: 'Un ou deux bras tendus horizontalement : les usagers qui voient l''agent de face ou de dos doivent s''arrêter ; ceux qui le voient de profil (dans l''axe de ses bras) peuvent passer. Concrètement : si vous voyez la poitrine ou le dos de l''agent, vous vous arrêtez.'
+  conduite: S'arrêter si l'on voit l'agent de face ou de dos ; passer si on le voit de profil.
+  complement: 'Mémo : « face ou dos = STOP ; profil = passage ». Cela vaut aussi lorsque l''agent a les bras baissés : sa poitrine/son dos ferme la voie, ses épaules (profil) l''ouvrent.'
+  theme: L
+  sous_theme: agents
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: agent-profil
+  type: geste
+  image:
+    gen: intersection
+    params:
+      approaches:
+        S:
+          vehicle:
+            colour: bleu
+            me: true
+          goes: straight
+        E:
+          vehicle:
+            colour: rouge
+          goes: straight
+      agent: bras_tendus_EW
+  nom: Agent vu de profil (bras tendus ou baissés)
+  signification: Les usagers qui voient l'agent de profil (dans l'alignement de ses bras tendus, ou de ses épaules bras baissés) sont autorisés à passer.
+  conduite: Passer prudemment, en suivant les gestes de l'agent ; céder le passage aux piétons.
+  theme: L
+  sous_theme: agents
+  importance: essentiel
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: agent-geste-avancer
+  type: geste
+  image:
+    gen: agent
+    params:
+      pose: avancer
+  nom: 'Agent : geste d''appel / de balancement du bras (avancer, accélérer)'
+  signification: Un mouvement de va-et-vient du bras ou de la main dans le sens de la circulation invite les usagers à avancer ou à accélérer le mouvement ; un bras pointé vers une direction leur indique où aller.
+  conduite: Avancer sans hésiter dans la direction indiquée, à allure modérée.
+  theme: L
+  sous_theme: agents
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: sr3a
+  type: panneau
+  code: SR3a
+  image:
+    commons: France road sign SR3a.svg
+  nom: Panneau d'annonce de radar automatique fixe (« Pour votre sécurité, contrôles automatiques »)
+  signification: 'Panneau d''information à fond jaune/gris annonçant, à l''avance, une zone de contrôle automatisé de la vitesse (radar fixe) : « Pour votre sécurité – contrôles automatiques », avec pictogramme de radar.'
+  conduite: 'Vérifier sa vitesse : le radar est à quelques centaines de mètres ; il n''y a aucune obligation nouvelle, la limitation en vigueur s''applique.'
+  complement: 'Quelques centaines de mètres avant un radar fixe (panneau non obligatoire : les radars ne sont plus systématiquement annoncés). Les panneaux SR (« Panneaux d''information de sécurité routière ») ne portent aucune prescription. SR3a = radar fixe annoncé ; SR3b = « contrôles radars fréquents » (zone) ; SR3c1/c2/c3 = contrôles sur toute la longueur du tunnel / du chantier / du pont ; SR3d = pictogramme radar seul (avec panonceau M9k pour les voies réservées, M9l pour le bruit) ; SR3e = radar + rappel de vitesse (contrôle de vitesse moyenne / radar tronçon).'
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: sr3b
+  type: panneau
+  code: SR3b
+  image:
+    commons: France road sign SR3b.svg
+  nom: Panneau « Pour votre sécurité, contrôles radars fréquents »
+  signification: Panneau d'information annonçant une zone où des contrôles radars (fixes, mobiles, embarqués) sont fréquents, sans indiquer la position exacte.
+  conduite: Respecter la limitation sur toute la zone.
+  complement: À l'entrée d'itinéraires à contrôles fréquents.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+- id: sr3e
+  type: panneau
+  code: SR3e
+  image:
+    commons: France road sign SR3e.svg
+  nom: Panneau de contrôle automatique avec rappel de la vitesse limite
+  signification: 'Panneau associant le pictogramme radar et le rappel de la vitesse maximale (ex. 90) : annonce d''un contrôle automatisé (notamment contrôle de vitesse moyenne sur une section / radar tronçon).'
+  conduite: Tenir une vitesse moyenne inférieure ou égale à la limite sur toute la section.
+  theme: L
+  sous_theme: panneaux
+  importance: utile
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
