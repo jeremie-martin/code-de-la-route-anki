@@ -18,10 +18,7 @@
     secours seulement les informations observables en sécurité ; suivre leurs consignes.
   theme: A
   sous_theme: proteger
-  importance: utile
   source: Sécurité civile, PSC juillet 2026, Protection — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
-  tags:
-  - revision::v5
 - id: a-alerter-borne-ou-portable
   question: 'Témoin d''un accident sur autoroute, j''ai mon portable et une borne d''appel orange à 200 m : lequel j''utilise
     ?'
@@ -32,8 +29,6 @@
   theme: A
   sous_theme: alerter
   source: securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA
-  tags:
-  - revision::v3
 - id: a-message-alerte
   question: J’appelle le 112 pour un accident. Quelles informations mon message doit-il donner ?
   reponse: Le lieu précis (route, sens et repère) ; la nature de l’accident ; le nombre et l’état des victimes ; les dangers
@@ -43,8 +38,6 @@
   theme: A
   sous_theme: alerter
   source: Croix-Rouge française — Alerter les secours ; securite-routiere.gouv.fr
-  tags:
-  - revision::v6
 - id: a-alerter-raccrocher
   question: Au téléphone avec le 112, j'ai donné le lieu, le nombre de victimes et leur état. À quel moment je raccroche ?
   reponse: 'Seulement quand l’opérateur me le dit : il peut avoir des questions ou des consignes à donner ; je ne raccroche
@@ -63,19 +56,16 @@
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
-  tags:
-  - revision::v3
 - id: a-pls
   question: Après un malaise sans chute ni traumatisme, une personne ne répond pas mais respire normalement. Quel geste après
     vérification de la respiration ?
-  reponse: PLS, alerte et surveillance continue de la respiration.
-  explication: 'Après un traumatisme ou si l’origine est inconnue, suivre les consignes des secours : la mise sur le côté
-    n’est pas systématique.'
+  reponse: Je la mets sur le côté (PLS), j’alerte et je surveille sa respiration jusqu’aux secours.
+  explication: 'Réponse classique de l’épreuve pour toute victime inconsciente qui respire. Le référentiel PSC de 2026 nuance
+    le cas du traumatisme (laisser sur le dos, sauf vomissements) : si la question précise un choc violent, suivre les
+    consignes des secours.'
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
-  tags:
-  - revision::v3
 - id: a-rcp-dae
   question: Un adulte ne répond pas et ne respire pas normalement (respiration absente ou gasps). Que fais-je ?
   reponse: J’alerte, fais apporter un DAE et commence immédiatement la RCP ; je suis les instructions des secours et du DAE.
@@ -84,9 +74,6 @@
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
-  tags:
-  - revision::v3
-  - revision::v5
 - id: a-dae-utilisation
   question: 'Un témoin apporte un DAE ; je l''ai allumé et j''ai posé les électrodes. L''appareil annonce « analyse en cours
     » : que fais-je ?'
@@ -106,8 +93,6 @@
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, pages 15–18 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
-  tags:
-  - revision::v5
 - id: a-blesse-deplacer
   question: 'Un blessé conscient est coincé dans sa voiture, en plein soleil. Un témoin veut le sortir pour le mettre à l''ombre
     : que fais-je ?'
@@ -117,8 +102,6 @@
   theme: A
   sous_theme: secourir
   source: Croix-Rouge française ; Ornikar — Secourir un blessé
-  tags:
-  - revision::v3
 - id: a-casque-motard
   question: 'Un motard accidenté est inconscient mais respire. Un témoin veut lui retirer son casque « pour qu''il respire
     mieux » : que fais-je ?'
@@ -129,8 +112,6 @@
   theme: A
   sous_theme: secourir
   source: Croix-Rouge française ; securite-routiere.gouv.fr
-  tags:
-  - revision::v3
 - id: a-non-assistance
   question: Témoin d’un accident, je ne sais pas faire les gestes de secours. Que m’impose la loi ?
   reponse: 'Apporter l’aide que je peux donner sans risque pour moi ni pour autrui : au minimum protéger, alerter les secours
@@ -140,8 +121,6 @@
   theme: A
   sous_theme: obligations
   source: Code pénal, article 223-6
-  tags:
-  - revision::v6
 - id: a-accident-materiel-obligations
   question: 'En manœuvrant sur un parking, j''accroche une voiture stationnée. Personne autour : que fais-je ?'
   reponse: Je m’arrête et cherche le propriétaire ; à défaut je laisse mes coordonnées en évidence et je déclare l’accident

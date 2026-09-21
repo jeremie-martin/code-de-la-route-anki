@@ -11,7 +11,6 @@
   complement: 'Exception R412-19 : la chevaucher, sans la franchir, pour dépasser un cycle, un EDPM ou un cyclomobile léger.'
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Franchir une ligne continue : 135 € et 3 points ; la chevaucher : 135 € et 1 point.'
 - id: marq-ligne-discontinue-t1
@@ -27,7 +26,6 @@
   conduite: Dépasser seulement si la visibilité le permet, et terminer avant la ligne d'annonce ou la ligne continue.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Une ligne discontinue autorise le franchissement mais n''oblige à rien : le dépassement reste soumis aux règles générales.'
 - id: marq-ligne-dissuasion
@@ -44,7 +42,6 @@
   complement: Fréquente sur routes sinueuses et à l’approche des sorties d’autoroute.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-ligne-annonce
   type: marquage
@@ -59,7 +56,6 @@
   piege: 'Les flèches de rabattement (trois, espacement décroissant) ne désignent pas une direction : elles ordonnent de se rabattre.'
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-ligne-mixte
   type: marquage
@@ -73,7 +69,6 @@
   complement: 'R412-20 : la ligne discontinue doit être la plus proche AU DÉBUT de la manœuvre, qui doit s''achever avant la fin de la partie discontinue.'
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-fleches-directionnelles
   type: marquage
@@ -87,7 +82,6 @@
   complement: Voies de présélection et de sortie. Avec une ligne continue entre les voies, changer de voie est interdit.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-ligne-stop
   type: marquage
@@ -100,7 +94,6 @@
   conduite: S'arrêter complètement les roues avant la ligne, sans la dépasser, puis céder le passage.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Ligne transversale CONTINUE = STOP ; ligne transversale DISCONTINUE (T'2) = cédez-le-passage.
 - id: marq-ligne-cedez
@@ -115,7 +108,6 @@
   complement: Se trouve aussi aux entrées de giratoire et en fin de voie d’insertion.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Les triangles blancs au sol signalent en France un ralentisseur, pas un cédez-le-passage.
 - id: marq-ligne-effet-feux
@@ -130,7 +122,6 @@
   complement: Sans marquage, l'arrêt se fait avant le passage piéton, sinon à l'aplomb du feu.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Franchir la ligne d'effet des feux au rouge = feu grillé (135 €, 4 points), même en s'arrêtant ensuite.
 - id: marq-passage-pietons
@@ -145,7 +136,6 @@
   complement: Arrêt et stationnement interdits dans les 5 m en amont du passage.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Refus de priorité à un piéton : 135 € et 6 points.'
 - id: marq-passage-cyclistes
@@ -158,10 +148,9 @@
   signification: Traversée de chaussée réservée aux cyclistes, matérialisée par deux rangées de carrés blancs de 50 cm.
   conduite: Contrôler la traversée avant de tourner ; céder le passage si la signalisation le prévoit (souvent AB3a).
   complement: En prolongement des pistes cyclables aux intersections.
-  piege: 'Contrairement au passage piéton, ce marquage ne donne pas la priorité : c''est la signalisation du carrefour qui la fixe.'
+  piege: En ligne droite, c’est la signalisation du carrefour qui fixe la priorité, pas le marquage. Mais en tournant, je cède aux cyclistes de la piste que je coupe (R415-3 et R415-4).
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-zebra
   type: marquage
@@ -175,7 +164,6 @@
   complement: Zébra bordé d'une ligne continue = infranchissable ; bordé d'une ligne discontinue = franchissable en cas de nécessité.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-ligne-rive
   type: marquage
@@ -191,7 +179,6 @@
   complement: Continue, elle signale un accotement impraticable ou interdit à l'arrêt.
   theme: L
   sous_theme: marquages
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Une ligne de rive ne sépare pas deux voies : traits et vides quasi égaux, contrairement à l''axiale T1.'
 - id: marq-ligne-bau-t4
@@ -206,7 +193,6 @@
   complement: 'À 130 km/h, deux traits ≈ 90 m, soit un peu plus de 2 secondes. Circuler sur la BAU : 135 €, 3 points.'
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-chevrons
   type: marquage
@@ -220,7 +206,6 @@
   piege: Ne pas confondre avec les chevrons des balises J4 (virage) ou des musoirs J14b.
   theme: L
   sous_theme: marquages
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-voie-insertion
   type: marquage
@@ -232,7 +217,6 @@
   conduite: 'Voie d''accélération : prendre la vitesse du trafic et s''insérer en cédant le passage. Voie de décélération : freiner dedans.'
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Ligne discontinue LARGE à traits courts = voie spéciale (insertion, sortie, bus) ; ligne FINE à longs vides (T1) = deux voies ordinaires.
 - id: marq-bande-cyclable
@@ -247,7 +231,6 @@
   complement: Signalée par B22a (obligatoire) ou C113 (conseillée). Peut être à contresens (double-sens cyclable).
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Bande cyclable = sur la chaussée ; piste cyclable = séparée de la chaussée. S''y arrêter : 135 €.'
 - id: marq-couloir-bus
@@ -262,9 +245,8 @@
   complement: Signalisation verticale B27a ou C24a. Ligne continue = infranchissable. Certains couloirs sont à contresens.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: 'Circuler ou stationner dans un couloir bus : très gênant, 135 €.'
+  piege: 'Y circuler : 135 € (R412-7) ; s’y arrêter ou y stationner : « très gênant », 135 € (R417-11).'
 - id: marq-damier-blanc
   type: marquage
   image:
@@ -277,10 +259,7 @@
   complement: Dans les carrefours traversés par un site propre.
   theme: L
   sous_theme: marquages
-  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  tags:
-  - revision::v3_1
 - id: marq-ligne-jaune-continue
   type: marquage
   image:
@@ -293,7 +272,6 @@
   complement: Jaune continue = arrêt et stationnement interdits ; jaune discontinue = stationnement interdit, arrêt possible.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-ligne-jaune-discontinue
   type: marquage
@@ -306,7 +284,6 @@
   conduite: On peut s'arrêter brièvement (dépose, chargement) mais pas stationner.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-ligne-jaune-zigzag
   type: marquage
@@ -320,7 +297,6 @@
   complement: Aux arrêts de bus. S’y arrêter ou stationner est un stationnement gênant, avec fourrière possible.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Un couloir bus, lui, est très gênant : 135 €.'
 - id: marq-livraison
@@ -334,7 +310,6 @@
   complement: Certaines aires (ligne discontinue simple) sont ouvertes au stationnement la nuit (20 h – 7 h), dimanches et fêtes ; les aires à double ligne restent réservées 24 h/24.
   theme: L
   sous_theme: marquages
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-marquage-temporaire-jaune
   type: marquage
@@ -347,7 +322,6 @@
   complement: 'Zones de chantier, basculements de chaussée. Priorité : marquage temporaire jaune > marquage permanent blanc.'
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-zone-bleue
   type: marquage
@@ -359,7 +333,6 @@
   conduite: Apposer son disque de stationnement et respecter la durée maximale.
   theme: L
   sous_theme: marquages
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-damier-rouge-blanc
   type: marquage
@@ -373,7 +346,6 @@
   complement: À l'entrée des voies de détresse (C26a/C26b).
   theme: L
   sous_theme: marquages
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-ralentisseur-triangles
   type: marquage
@@ -387,7 +359,6 @@
   complement: En France, les triangles blancs au sol signalent un ralentisseur, pas un cédez-le-passage.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-plateau-sureleve
   type: marquage
@@ -401,7 +372,6 @@
   complement: Rencontré en agglomération, zones 30 et zones de rencontre.
   theme: L
   sous_theme: marquages
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-sas-velo
   type: marquage
@@ -415,9 +385,8 @@
   complement: Il permet aux cyclistes de se placer devant, bien visibles, et de démarrer les premiers.
   theme: L
   sous_theme: marquages
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: 'S''immobiliser dans le sas = franchissement de ligne d''arrêt : 135 € et 4 points.'
+  piege: 'S’engager dans le sas quand on risque d’y rester bloqué est une infraction (R415-2) ; franchir la ligne d’arrêt des voitures au rouge, c’est un feu grillé : 135 € et 4 points.'
 - id: marq-cvcb
   type: marquage
   image:
@@ -428,7 +397,6 @@
   conduite: Rouler au centre, pas sur la rive ; pour croiser, se déporter après avoir vérifié l'absence de cycliste.
   theme: L
   sous_theme: marquages
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: marq-losange-vr
   type: marquage
@@ -440,5 +408,4 @@
   conduite: Ne pas emprunter la voie si l'on n'appartient pas aux catégories autorisées (aux heures indiquées).
   theme: L
   sous_theme: marquages
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

@@ -64,14 +64,6 @@
   theme: P
   sous_theme: verifications
   source: Cours de code — Entrer et sortir de son véhicule ; securite-routiere.gouv.fr — Conduire en hiver
-- id: aff-p-vehicule-emprunte
-  contexte: J'emprunte la voiture d'un proche pour la première fois.
-  affirmation: Je vérifie que le gilet est à portée de main et le triangle à bord.
-  verdict: vrai
-  pourquoi: "Ils sont obligatoires et c'est le conducteur qui est sanctionné, pas le propriétaire. J'en profite pour repérer les commandes (feux, essuie-glaces, détresse) et le niveau de carburant."
-  theme: P
-  sous_theme: verifications
-  source: "Code de la route, art. R416-19 ; Code en Poche — Prendre et quitter son véhicule"
 - id: aff-p-entrer-face-circulation
   contexte: Ma voiture est garée le long d'une rue passante, portière conducteur côté chaussée.
   affirmation: Je m'approche face à la circulation pour monter à bord.

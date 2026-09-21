@@ -7,8 +7,6 @@
   theme: R
   sous_theme: montagne
   source: IISR, art. 67-1, modifié par arrêté du 23 juin 2021 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12
-  tags:
-  - revision::v3_1
 - id: r-b26-chaines-complement
   question: Le B26 est complété par « Chaînes à neige obligatoires ». Ma voiture a quatre pneus 3PMSF. Puis-je continuer
     sans chaînes montées ?
@@ -18,18 +16,13 @@
   theme: R
   sous_theme: montagne
   source: IISR, art. 67-1, modifié par arrêté du 23 juin 2021 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12
-  tags:
-  - revision::v3_1
 - id: l-feu-alerte-r1
-  question: Un feu jaune clignote au-dessus d’un panneau de danger. Me donne-t-il la priorité au prochain carrefour
-    ?
-  reponse: 'Non : il attire l’attention sur le danger ; je lis séparément les règles de priorité.'
+  question: Un feu jaune clignotant est fixé au-dessus d'un panneau de danger. Que signifie-t-il ?
+  reponse: Il renforce l'alerte du panneau (danger fréquent ou peu visible) ; il ne change rien aux règles de priorité.
   explication: Distinguer le feu de renforcement d’un panneau du fonctionnement d’un carrefour au jaune clignotant.
   theme: L
   sous_theme: signalisation
   source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: l-feu-modal-anticipation
   question: Mon feu automobile est rouge. À côté, un petit feu jaune clignotant porte le mot BUS. Puis-je le suivre
     en voiture particulière ?
@@ -38,8 +31,6 @@
   theme: L
   sous_theme: signalisation
   source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: l-feu-cycliste-r19
   question: À vélo, un feu jaune clignotant porte un vélo et une flèche à droite à côté du rouge. Puis-je tourner
     à droite ?
@@ -48,8 +39,6 @@
   theme: L
   sous_theme: signalisation
   source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: l-feu-acces-regule
   question: Un feu tricolore sur ma bretelle d’accès à l’autoroute est rouge alors qu’un créneau semble libre. Puis-je
     m’insérer ?
@@ -58,8 +47,6 @@
   theme: L
   sous_theme: signalisation
   source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: l-feu-pieton-tram
   question: À pied, devant une traversée de tramway, le signal piéton affiche STOP en rouge clignotant. Aucun tram
     n’est encore visible. Puis-je traverser ?
@@ -69,18 +56,13 @@
   theme: L
   sous_theme: signalisation
   source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: l-decompte-pieton
-  question: Le décompteur piéton indique quelques secondes avant la fin du rouge. Puis-je commencer à traverser
-    ?
-  reponse: 'Non : le décompte informe ; j’attends le signal autorisant la traversée.'
+  question: Le décompteur piéton indique quelques secondes avant la fin du rouge. Quand puis-je traverser ?
+  reponse: 'Au signal vert seulement : le décompte informe, il n''autorise rien.'
   explication: Ne pas anticiper une autorisation qui n’est pas encore donnée.
   theme: L
   sous_theme: signalisation
   source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: l-pmv-limitation
   question: Sur autoroute normalement limitée à 130, un panneau lumineux affiche un disque rouge « 90 ». Est-ce
     un simple conseil ?
@@ -90,28 +72,22 @@
   theme: L
   sous_theme: signalisation
   source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: l-quadrillage-carrefour
-  question: Mon feu est vert mais la sortie du carrefour est bloquée. Un quadrillage au sol matérialise la zone
-    centrale. Puis-je avancer jusque-là ?
-  reponse: 'Non : j’attends avant l’intersection de pouvoir la dégager.'
+  question: Mon feu est vert mais la sortie du carrefour est bloquée ; un quadrillage au sol matérialise la zone centrale.
+    Que fais-je ?
+  reponse: 'J''attends avant l''intersection de pouvoir la dégager : le quadrillage doit rester libre.'
   explication: Le marquage rappelle une obligation déjà valable même sans quadrillage.
   theme: L
   sous_theme: signalisation
   source: Code de la route, R415-2
-  tags:
-  - revision::v3_1
 - id: l-bandes-rugueuses
-  question: Des bandes transversales produisent bruit et vibrations à l’approche d’un danger. Me donnent-elles une
-    priorité ?
-  reponse: 'Non : elles attirent mon attention. Je recherche le danger et adapte mon allure.'
+  question: Des bandes transversales font vibrer la voiture à l'approche d'un carrefour. Que signalent-elles ?
+  reponse: 'L''approche d''un danger ou d''une intersection : je ralentis et je cherche ce qui est annoncé (STOP,
+    virage, passage).'
   explication: Un dispositif d’alerte n’est ni un STOP ni une règle de priorité.
   theme: L
   sous_theme: signalisation
   source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: l-voie-lents
   question: Une voie à droite est signalée pour les véhicules lents. Ma voiture tractant une remorque n’arrive pas
     à dépasser 60 km/h dans la montée. Dois-je l’utiliser ?
@@ -121,29 +97,20 @@
   theme: L
   sous_theme: signalisation
   source: Code de la route, R422-1
-  tags:
-  - revision::v3_1
 - id: l-jalonnement-destinataire
-  question: Un panneau directionnel porte un pictogramme vélo. Puis-je en déduire que l’itinéraire est accessible
-    à ma voiture ?
-  reponse: 'Non : il jalonne un itinéraire cyclable. Je suis les indications et restrictions propres à mon véhicule.'
+  question: Un panneau directionnel porte un pictogramme vélo. À qui s'adresse-t-il ?
+  reponse: 'Aux cyclistes : il jalonne un itinéraire cyclable ; ma voiture suit les panneaux de direction ordinaires.'
   explication: 'Même principe pour le jalonnement piéton : le destinataire compte autant que le nom de la destination.'
   theme: L
   sous_theme: signalisation
   source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: l-itineraire-bis
-  question: Pour rejoindre ma destination, on me propose un itinéraire « Bis » ; un chantier impose ailleurs une
-    déviation. Ces deux indications ont-elles le même caractère ?
-  reponse: 'Non : l’itinéraire Bis propose une alternative ; la fermeture et les prescriptions du chantier imposent
-    de respecter le détour signalé.'
+  question: Quelle différence entre un itinéraire « Bis » et une déviation de chantier ?
+  reponse: 'Le Bis est une alternative conseillée ; la déviation s''impose : la route habituelle est fermée.'
   explication: Un itinéraire conseillé ne m’autorise jamais à ignorer un sens interdit ou une route barrée.
   theme: L
   sous_theme: signalisation
   source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: l-reperes-localisation
   question: J’appelle les secours depuis une route. Une borne indique le numéro de route et un point kilométrique.
     Qu’en faire ?
@@ -153,26 +120,29 @@
   theme: A
   sous_theme: alerter
   source: 'Sécurité routière — alerte : route, sens, localisation'
-  tags:
-  - revision::v3_1
 - id: l-cartouche-vitesse
-  question: Le cartouche de la route passe de D à M ; sa chaussée et les panneaux de vitesse ne changent pas. Cela
-    fixe-t-il une nouvelle vitesse maximale ?
-  reponse: 'Non : la catégorie administrative ne suffit pas à déterminer la vitesse. Je lis la configuration et
-    les prescriptions.'
+  question: Le cartouche de la route passe de D à M, sans changement de chaussée ni de panneau. Quelle vitesse maximale
+    s'applique ?
+  reponse: 'La même : ce sont la configuration de la route et les panneaux qui fixent le plafond, pas la catégorie
+    administrative.'
   explication: De même, un numéro européen ou une limite départementale ne crée pas seul une limitation.
   theme: L
   sous_theme: signalisation
   source: Code de la route, R413-1 à R413-5
-  tags:
-  - revision::v3_1
 - id: l-guidage-reflecteurs
-  question: De nuit, des plots et réflecteurs matérialisent le bord de la voie. M’autorisent-ils à franchir une
-    ligne continue ?
-  reponse: 'Non : ils rendent le tracé plus visible sans supprimer la prescription du marquage.'
+  question: De nuit, des plots réfléchissants bordent la voie le long d'une ligne continue. Que changent-ils pour
+    moi ?
+  reponse: 'Rien aux règles : ils rendent le tracé visible ; la ligne continue reste infranchissable.'
   explication: Distinguer guidage visuel, affectation de voie et autorisation de changer de voie.
   theme: L
   sous_theme: signalisation
   source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
+- id: l-fleche-jaune-droite-rouge
+  question: Mon feu est rouge ; à côté, une flèche jaune clignotante pointe vers la droite. Puis-je tourner à droite
+    ?
+  reponse: 'Oui, avec prudence : je cède le passage aux piétons et aux véhicules qui ont le vert.'
+  explication: Cette flèche autorise le mouvement indiqué malgré le rouge, sans donner la priorité. Sans flèche,
+    tourner à droite au feu rouge reste interdit en France.
+  theme: L
+  sous_theme: feux
+  source: Code de la route, art. R412-30 et R412-33 ; IISR 6e partie (signal R16)

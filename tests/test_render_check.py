@@ -86,7 +86,6 @@ class RenderCheckerTests(unittest.TestCase):
                     page.set_content(page_html(card.answer(), CSS, night=True))
                     text = page.evaluate(MEASURE)['text']
                     self.assertNotIn('Source témoin', text)
-                    self.assertNotIn('Repere témoin', text)
                     for field in ('Reponse', 'Explication', 'Pourquoi', 'Signification',
                                   'ConduiteATenir', 'Complement', 'Piege', 'Difference'):
                         if field in n:
@@ -96,7 +95,6 @@ class RenderCheckerTests(unittest.TestCase):
                     summary.focus()
                     page.keyboard.press('Enter')
                     self.assertIn('Source témoin', page.evaluate(MEASURE)['text'])
-                    self.assertIn('Repere témoin', page.evaluate(MEASURE)['text'])
                     page.keyboard.press('Space')
                     self.assertNotIn('Source témoin', page.evaluate(MEASURE)['text'])
             finally:

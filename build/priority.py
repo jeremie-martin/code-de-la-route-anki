@@ -76,7 +76,9 @@ def yields(a: str, b: str, spec: dict) -> bool | None:
         return None
     agent_frees_both = False
     if agent in ("bras_tendus_NS", "bras_tendus_EW"):
-        blocked = {"N", "S"} if agent == "bras_tendus_NS" else {"E", "W"}
+        # Arms extended along one axis: the users on that axis see the agent in profile and pass; the
+        # users on the other axis face his chest or back and stop (R411-28, arrêté du 24 novembre 1967).
+        blocked = {"E", "W"} if agent == "bras_tendus_NS" else {"N", "S"}
         ba, bb = a in blocked, b in blocked
         if ba != bb:
             return ba
@@ -196,8 +198,8 @@ if __name__ == "__main__":
     assert passes_before(spec(S={"goes": "straight"}, E={"goes": "straight", "private": True}), "S", "E") == "avant"
     # 11. 4 vehicles priorité à droite all straight -> cycle
     assert solve(spec(S={"goes": "straight"}, E={"goes": "straight"}, N={"goes": "straight"}, W={"goes": "straight"}))["cycle"]
-    # 12. agent frees the N-S axis: lights and signs are void, only the turning rules apply
-    s = spec(S={"goes": "left", "sign": "feu_vert"}, N={"goes": "straight", "sign": "feu_rouge"}); s["agent"] = "bras_tendus_EW"
+    # 12. agent frees the N-S axis (arms along it): lights and signs are void, only the turning rules apply
+    s = spec(S={"goes": "left", "sign": "feu_vert"}, N={"goes": "straight", "sign": "feu_rouge"}); s["agent"] = "bras_tendus_NS"
     assert passes_before(s, "S", "N") == "apres"
     # 13. a pair the solver never computed must not pass silently
     try:

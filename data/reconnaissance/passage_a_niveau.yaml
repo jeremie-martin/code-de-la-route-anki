@@ -10,7 +10,6 @@
   complement: Annoncé par A8 et les balises J10. Une seule croix = une voie ferrée ; croix double (G1a) = plusieurs voies.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Dépassement interdit aux passages à niveau sans barrière ni demi-barrière (R414-12), même avec signalisation automatique.
 - id: g1a
@@ -23,7 +22,6 @@
   conduite: Même conduite que G1, en tenant compte qu'un train peut en cacher un autre.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: g1bis
   type: panneau
@@ -35,5 +33,4 @@
   conduite: Feu rouge clignotant allumé = arrêt absolu, même si le train n'est pas visible ; feu éteint = franchir après s'être assuré qu'aucun train n'approche.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

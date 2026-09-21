@@ -1,7 +1,8 @@
 """Render sample cards to PNG (question + answer side) with headless Chrome for visual QA.
 
-Usage: .venv/bin/python -m build.preview [--ids id1,id2] [--n 12] [--night]
-Output: out/preview/<id>_q.png, <id>_a.png and out/preview/sheet.png
+Usage: .venv/bin/python -m build.preview [--ids id1,id2] [--n 12] [--night] [--out DIR]
+Output: <out>/<id>_c<ord>_q.png, _a.png and <out>/sheet.png (default out/preview/).
+The build collection is copied before being opened, so several previews can run at once.
 """
 from __future__ import annotations
 
@@ -10,6 +11,7 @@ import random
 import shutil
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 from anki.collection import Collection
@@ -39,10 +41,14 @@ def main(argv=None):
     ap.add_argument("--night", action="store_true")
     ap.add_argument("--width", type=int, default=430)
     ap.add_argument("--height", type=int, default=932)
+    ap.add_argument("--out", default=str(PREVIEW), help="dossier de sortie (vidé avant les captures)")
     args = ap.parse_args(argv)
     if not CHROME:
         sys.exit("google-chrome / chromium introuvable dans le PATH (nécessaire pour les captures)")
-    col = Collection(str(OUT / "_build" / "collection.anki2"))
+    out_dir = Path(args.out).resolve()
+    tmp = Path(tempfile.mkdtemp(prefix="cdr-preview-"))
+    shutil.copy(OUT / "_build" / "collection.anki2", tmp / "collection.anki2")
+    col = Collection(str(tmp / "collection.anki2"))
     if args.ids:
         cids = []
         for i in args.ids.split(","):
@@ -51,11 +57,11 @@ def main(argv=None):
         cids = list(col.find_cards(f'"deck:{M.DECK_ROOT}"'))
         random.seed(7)
         cids = random.sample(cids, min(args.n, len(cids)))
-    if PREVIEW.exists():
-        shutil.rmtree(PREVIEW)
-    PREVIEW.mkdir(parents=True)
+    if out_dir.exists():
+        shutil.rmtree(out_dir)
+    out_dir.mkdir(parents=True)
     # media must be reachable relative to the html file
-    (PREVIEW / "media").symlink_to(MEDIA)
+    (out_dir / "media").symlink_to(MEDIA)
     shots = []
     for cid in cids:
         card = col.get_card(cid)
@@ -68,14 +74,15 @@ def main(argv=None):
             # Chrome's desktop headless window has a minimum layout width.
             # Constrain the document too so narrow captures test mobile wrapping.
             page = PAGE.format(css=css, body=html_, cls=cls, width=args.width)
-            hp = PREVIEW / f"{ident}_c{card.ord}_{side}.html"
+            hp = out_dir / f"{ident}_c{card.ord}_{side}.html"
             hp.write_text(page, encoding="utf-8")
-            png = PREVIEW / f"{ident}_c{card.ord}_{side}.png"
+            png = out_dir / f"{ident}_c{card.ord}_{side}.png"
             subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--no-sandbox",
                             f"--window-size={args.width},{args.height}", f"--screenshot={png}", str(hp)],
                            check=True, capture_output=True)
             shots.append(png)
     col.close()
+    shutil.rmtree(tmp, ignore_errors=True)
     # contact sheet
     from PIL import Image
     ims = [Image.open(p).convert("RGB") for p in shots]
@@ -85,8 +92,8 @@ def main(argv=None):
     sheet = Image.new("RGB", (cols * (cw + 8), rows * (ch + 8)), (200, 200, 200))
     for i, im in enumerate(ims):
         sheet.paste(im, ((i % cols) * (cw + 8), (i // cols) * (ch + 8)))
-    sheet.save(PREVIEW / "sheet.png")
-    print("preview:", PREVIEW / "sheet.png", len(shots), "shots")
+    sheet.save(out_dir / "sheet.png")
+    print("preview:", out_dir / "sheet.png", len(shots), "shots")
 
 
 if __name__ == "__main__":

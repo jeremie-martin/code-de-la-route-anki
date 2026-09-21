@@ -21,10 +21,6 @@
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-19
-  tags:
-  - competence::lecture_schema
-  - revision::v3
-  - revision::v4
 - id: scn-dep-ligne-discontinue-libre
   kind: road
   spec:
@@ -48,9 +44,6 @@
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-4 et R412-18
-  tags:
-  - competence::lecture_schema
-  - revision::v3
 - id: scn-dep-vehicule-en-face
   kind: road
   spec:
@@ -71,16 +64,12 @@
       dir: down
   question: La voiture rouge arrive trop vite pour que je termine avant son arrivée. Puis-je dépasser le camion
     maintenant ?
-  reponse: 'Non : je n''emprunte la moitié gauche de la chaussée que si je ne gêne pas les véhicules venant en sens
-    inverse ; j''attends que la voie soit libre sur toute la longueur du dépassement.'
+  reponse: 'Non : je n''emprunte la voie de gauche que si personne n''arrive en face sur toute la longueur du dépassement.'
   explication: 'Article R414-7. Un dépassement de camion demande plusieurs centaines de mètres : la voiture rouge
     arriverait avant que je me rabatte.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-7
-  tags:
-  - competence::lecture_schema
-  - revision::v3
 - id: scn-dep-mixte-mon-cote
   kind: road
   spec:
@@ -103,10 +92,6 @@
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-20
-  tags:
-  - competence::lecture_schema
-  - revision::v3
-  - revision::v4
 - id: scn-dep-mixte-autre-cote
   kind: road
   spec:
@@ -129,9 +114,6 @@
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-20
-  tags:
-  - competence::lecture_schema
-  - revision::v3
 - id: scn-dep-sommet-cote
   kind: road
   spec:
@@ -157,9 +139,6 @@
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-11
-  tags:
-  - competence::lecture_schema
-  - revision::v3
 - id: scn-dep-dissuasion-tracteur
   kind: road
   spec:
@@ -207,8 +186,6 @@
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-19 et R414-4
-  tags:
-  - revision::v4
 - id: scn-dep-vehicule-tourne-gauche
   kind: road
   spec:
@@ -220,8 +197,9 @@
     extras:
       - {kind: intersection_gauche, y: 68}
   question: "Le véhicule devant moi ralentit, clignotant gauche, pour entrer dans la rue à gauche. Puis-je le dépasser par la gauche ?"
-  reponse: "Non : on ne dépasse jamais par la gauche un véhicule qui a signalé qu'il tourne à gauche ; on le dépasse par la droite si la place le permet, sinon on attend."
-  explication: "Article R414-6. Le dépassement à une intersection est de toute façon interdit si je ne suis pas sur une route prioritaire."
+  reponse: 'Non : jamais par la gauche un véhicule qui a annoncé qu''il tourne à gauche ; par la droite si la place
+    le permet, sinon j''attends.'
+  explication: "Un véhicule qui tourne à gauche se dépasse par la droite (R414-6). À une intersection, dépasser n'est permis que si je suis prioritaire, si des feux ou un agent règlent le carrefour, ou pour dépasser un deux-roues (R414-11)."
   theme: L
   sous_theme: depassement
   source: "Code de la route, art. R414-6 et R414-11"
@@ -250,7 +228,8 @@
     extras:
       - {kind: passage_pieton, y: 62}
   question: "Le véhicule devant moi s'arrête juste avant un passage piéton, sans raison visible pour moi. Puis-je le dépasser ?"
-  reponse: "Non : un véhicule arrêté ou qui ralentit devant un passage piéton masque probablement un piéton ; on ne le dépasse qu'après s'être assuré qu'aucun piéton n'est engagé — en pratique, on s'arrête derrière."
+  reponse: 'Non : un véhicule qui s''arrête devant un passage piéton masque probablement un piéton ; je m''arrête
+    derrière lui.'
   explication: "Article R414-5. Refus de priorité à un piéton : 135 €, 6 points. Le passage piéton est aussi un lieu où l'arrêt et le stationnement sont interdits."
   theme: L
   sous_theme: depassement
@@ -268,7 +247,8 @@
       - {lane: 1, y: 50, colour: gris, kind: truck}
       - {lane: 1, y: 85, colour: rouge, dir: down}
   question: "Route à trois voies à double sens. Je veux dépasser le camion : quelle voie puis-je utiliser ?"
-  reponse: "La voie centrale, uniquement si elle est libre dans les deux sens sur toute la longueur du dépassement ; jamais la voie la plus à gauche, réservée au sens inverse."
+  reponse: La voie centrale, si elle est libre dans les deux sens sur toute la longueur du dépassement ; jamais la
+    voie de gauche, réservée au sens inverse.
   explication: "Article R414-8 : sur une chaussée à double sens à plus de deux voies, le véhicule qui dépasse n'emprunte jamais la voie la plus à gauche. La voie centrale sert au dépassement dans les deux sens : prudence, on y reste le moins longtemps possible."
   theme: L
   sous_theme: positionnement
@@ -286,10 +266,10 @@
       - {kind: label, y: 62, x: 330, text: "véhicule stationné"}
   question: "Un véhicule stationné occupe ma voie et une voiture arrive en face. Qui passe en premier ?"
   reponse: "La voiture d'en face : l'obstacle est de mon côté, c'est à moi de m'arrêter et de la laisser passer avant de contourner."
-  explication: "Règle de conduite : l'obstacle est de mon côté, c'est à moi de laisser passer le véhicule d'en face avant de contourner (R414-1 : le croisement se fait à droite, chacun serrant sur sa droite). Sur un pont ou un passage étroit, les panneaux B15 (je cède) et C18 (j'ai la priorité) fixent l'ordre."
+  explication: "Règle de conduite enseignée pour l'épreuve : l'obstacle est de mon côté, c'est à moi de laisser passer le véhicule d'en face avant de contourner, puisque je dois empiéter sur sa voie (R414-1 : le croisement se fait à droite). Sur un pont ou un passage étroit, les panneaux B15 (je cède) et C18 (j'ai la priorité) fixent l'ordre."
   theme: L
   sous_theme: croisement
-  source: "Code de la route, art. R414-1 et R414-2"
+  source: "Code de la route, art. R414-1 ; règle de conduite (programme REMC)"
 - id: scn-pos-bau-bouchon
   kind: road
   spec:
@@ -306,9 +286,10 @@
       - {lane: 2, y: 72, colour: vert}
     extras:
       - {kind: bau}
-      - {kind: label, y: 94, x: 20, text: "autoroute : bouchon, ma sortie est à 500 m"}
+    caption: "Autoroute, bouchon : ma sortie est à 500 m"
   question: "Bouchon sur autoroute ; ma sortie est à 500 m sur la droite. Puis-je emprunter la bande d'arrêt d'urgence pour la rejoindre ?"
-  reponse: "Non : la bande d'arrêt d'urgence est réservée aux arrêts d'urgence et aux secours ; y circuler coûte 135 € et 3 points. Je reste dans ma file et j'allume mes feux de détresse si je suis le dernier du bouchon."
+  reponse: 'Non : la bande d''arrêt d''urgence est réservée aux urgences et aux secours (135 €, 3 points). Je reste
+    dans ma file, feux de détresse si je suis le dernier.'
   explication: "Article R412-8. Sur certains tronçons, la bande d'arrêt d'urgence est ouverte à la circulation aux heures de pointe comme voie auxiliaire, mais seulement sur signalisation lumineuse explicite (flèche verte au-dessus de la voie)."
   theme: L
   sous_theme: positionnement
@@ -322,7 +303,8 @@
       - {lane: 1, y: 15, colour: bleu, me: true}
       - {lane: 1, y: 80, colour: rouge, dir: down}
     extras:
-      - {kind: sign, file: "France road sign B15.svg", y: 45}
+      - {kind: retrecissement, y: 48}
+      - {kind: sign, file: "France road sign B15.svg", y: 28}
   question: "Un rétrécissement à une voie est annoncé par ce panneau (flèche rouge de mon côté) ; une voiture arrive en face. Qui passe ?"
   reponse: "Elle : le panneau B15 m'impose de céder le passage aux véhicules venant en sens inverse ; je m'arrête avant le rétrécissement."
   explication: "B15 (rond rouge, flèche rouge = mon sens) : cédez le passage à la circulation venant en sens inverse. De l'autre côté, le C18 (carré bleu) donne la priorité à la voiture rouge. Sans panneau, la courtoisie et la prudence décident : je ne m'engage que si je peux dégager."
@@ -338,7 +320,8 @@
       - {lane: 1, y: 15, colour: bleu, me: true}
       - {lane: 1, y: 80, colour: rouge, dir: down}
     extras:
-      - {kind: sign, file: "France road sign C18.svg", y: 45}
+      - {kind: retrecissement, y: 48}
+      - {kind: sign, file: "France road sign C18.svg", y: 28}
   question: "Même rétrécissement, mais le panneau de mon côté est carré bleu (flèche blanche de mon côté). Une voiture arrive en face. Qui passe ?"
   reponse: "Moi : le C18 m'indique que j'ai la priorité sur la circulation venant en sens inverse ; elle doit attendre au B15 de son côté."
   explication: "Priorité ne veut pas dire passage forcé : si la voiture rouge s'est déjà engagée, je la laisse sortir du rétrécissement. Piège : la couleur (rouge = je cède, bleu = je passe) et la flèche qui correspond à mon sens."
@@ -361,5 +344,3 @@
   theme: L
   sous_theme: depassement
   source: "Code de la route, art. R412-10, R414-16 et R414-6"
-  tags:
-  - revision::v8

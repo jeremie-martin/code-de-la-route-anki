@@ -11,7 +11,6 @@
   complement: Équivalent du jaune puis du rouge pour tout le monde. Les injonctions de l'agent prévalent sur les feux et les panneaux.
   theme: L
   sous_theme: agents
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: agent-bras-tendu-face
   type: geste
@@ -24,7 +23,6 @@
   complement: L’ordre reste valable quand l’agent baisse les bras.
   theme: L
   sous_theme: agents
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: agent-profil
   type: geste
@@ -47,7 +45,6 @@
   conduite: Passer prudemment, en suivant les gestes de l'agent ; céder le passage aux piétons.
   theme: L
   sous_theme: agents
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: agent-geste-avancer
   type: geste
@@ -60,7 +57,6 @@
   conduite: Avancer sans hésiter dans la direction indiquée, à allure modérée.
   theme: L
   sous_theme: agents
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: sr3a
   type: panneau
@@ -73,10 +69,7 @@
   complement: 'Panneau non obligatoire : les radars ne sont plus systématiquement annoncés. Les panneaux SR informent sans rien prescrire.'
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  tags:
-  - revision::v3_1
 - id: sr3e
   type: panneau
   code: SR3e
@@ -87,5 +80,4 @@
   conduite: Tenir une vitesse moyenne inférieure ou égale à la limite sur toute la section.
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 11 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 9 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: j1
   type: balise
   code: J1
@@ -11,7 +11,6 @@
   conduite: Ralentir avant le virage ; les balises montrent où va la route.
   theme: L
   sous_theme: balises
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: J1 (virage) = bande BLANCHE ; J3 (intersection) = bande ROUGE ; J6 (délinéateur) = bande noire oblique.
 - id: j3
@@ -26,7 +25,6 @@
   conduite: 'Une intersection est proche : réduire l''allure et contrôler les côtés.'
   theme: L
   sous_theme: balises
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Bande ROUGE = intersection (J3) ; bande blanche = virage (J1). Le J3 ne dit rien du régime de priorité : il signale seulement qu''une intersection est là.'
 - id: j4
@@ -39,7 +37,6 @@
   conduite: 'Ralentir fortement : le virage est serré ; suivre la direction des chevrons.'
   theme: L
   sous_theme: balises
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Chevrons blancs sur fond BLEU = J4 (virage) ; sur fond VERT = J14b (musoir, divergence).
 - id: j5
@@ -53,7 +50,6 @@
   complement: En tête d’îlot, souvent à l’entrée d’un giratoire.
   theme: L
   sous_theme: balises
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: j6
   type: balise
@@ -65,7 +61,6 @@
   conduite: S'en servir pour évaluer le tracé et garder sa trajectoire de nuit.
   theme: L
   sous_theme: balises
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: J1 (virage) = bande blanche ; J3 (intersection) = bande rouge ; J6 (délinéateur) = bande noire oblique + catadioptre blanc.
 - id: j7
@@ -79,7 +74,6 @@
   complement: Signale l’endroit précis exposé au vent, en complément du panneau A24.
   theme: L
   sous_theme: balises
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: j10
   type: balise
@@ -92,31 +86,6 @@
   complement: La première balise (3 bandes) est sous le panneau A7 ou A8. Elles peuvent manquer en agglomération.
   theme: L
   sous_theme: balises
-  importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: j11
-  type: balise
-  code: J11
-  image:
-    commons: FR road beacon J11.svg
-  nom: Balise de renforcement d'un marquage continu
-  signification: Balise blanche souple implantée sur une ligne continue pour en empêcher le franchissement.
-  conduite: 'Ne pas franchir : la ligne continue reste infranchissable.'
-  theme: L
-  sous_theme: balises
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: j12
-  type: balise
-  code: J12
-  image:
-    commons: FR road beacon J12.svg
-  nom: Balise de renforcement d'un marquage en divergent
-  signification: Balise verte implantée sur le marquage d'une divergence (bretelle de sortie) pour renforcer la perception du musoir.
-  conduite: Choisir sa direction à l'avance ; ne pas franchir le divergent au dernier moment.
-  theme: L
-  sous_theme: balises
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: j13
   type: balise
@@ -129,7 +98,6 @@
   complement: Bandes bleues/blanches = obstacle permanent ; rouges/blanches = obstacle temporaire (K5c, K8).
   theme: L
   sous_theme: balises
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: j14a
   type: balise
@@ -141,5 +109,4 @@
   conduite: Décider tôt de sa direction ; ne jamais franchir le musoir ni faire marche arrière.
   theme: L
   sous_theme: balises
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

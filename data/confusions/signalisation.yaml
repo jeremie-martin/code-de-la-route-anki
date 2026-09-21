@@ -51,8 +51,6 @@
   theme: L
   sous_theme: panneaux
   source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: conf-ab1-ab2
   a: ab1
   b: ab2
@@ -106,8 +104,6 @@
   theme: L
   sous_theme: panneaux
   source: IISR 4e et 5e parties
-  tags:
-  - revision::v3_1
 - id: conf-b3-b3a
   a: b3
   b: b3a
@@ -117,8 +113,6 @@
   theme: L
   sous_theme: panneaux
   source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: conf-b6a1-b6d
   a: b6a1
   b: b6d
@@ -153,7 +147,6 @@
     se ressemblent : regarder la taille de la machine.'
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR 4e partie
 - id: conf-b11-b12
   a: b11
@@ -163,16 +156,6 @@
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie
-- id: conf-b13-b13a
-  a: b13
-  b: b13a
-  difference: A limite le PTAC (ou le PTRA de l’ensemble), pas sa masse réelle du moment. B limite la masse
-    pesant sur un essieu.
-  theme: L
-  sous_theme: panneaux
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: conf-b14-c4a
   a: b14
   b: c4a
@@ -224,8 +207,6 @@
   theme: L
   sous_theme: panneaux
   source: IISR 4e et 5e parties ; Code de la route, art. R431-9
-  tags:
-  - revision::v3_1
 - id: conf-b26-b58
   a: b26
   b: b58
@@ -235,8 +216,6 @@
   theme: L
   sous_theme: panneaux
   source: Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12
-  tags:
-  - revision::v3_1
 - id: conf-b31-b33
   a: b31
   b: b33
@@ -245,8 +224,6 @@
   theme: L
   sous_theme: panneaux
   source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: conf-b52-b54
   a: b52
   b: b54
@@ -267,14 +244,6 @@
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie
-- id: conf-c1b-c1c
-  a: c1b
-  b: c1c
-  difference: '**A : stationnement gratuit à durée limitée**, avec disque. **B : stationnement payant.** Je
-    lis les conditions affichées sur place.'
-  theme: L
-  sous_theme: panneaux
-  source: IISR 5e partie
 - id: conf-c13a-c13c
   a: c13a
   b: c13c
@@ -301,8 +270,6 @@
   theme: L
   sous_theme: panneaux
   source: Code de la route, R413-2 à R413-5 ; arrêté signalisation, C107 et C207
-  tags:
-  - revision::v3_1
 - id: conf-c8-c26a
   a: c8
   b: c26a
@@ -372,8 +339,6 @@
   theme: L
   sous_theme: marquages
   source: Code de la route, R412-19 ; IISR, 7e partie
-  tags:
-  - revision::v3_1
 - id: conf-t1-dissuasion
   a: marq-ligne-discontinue-t1
   b: marq-ligne-dissuasion
@@ -411,8 +376,6 @@
   theme: L
   sous_theme: feux
   source: Code de la route, art. R412-31 et R412-32
-  tags:
-  - revision::v3_1
 - id: conf-r14-r16
   a: r14
   b: r16
@@ -422,8 +385,6 @@
   theme: L
   sous_theme: feux
   source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  tags:
-  - revision::v3_1
 - id: conf-k10a-k10b
   a: k10a
   b: k10b
@@ -459,5 +420,3 @@
   theme: M
   sous_theme: voyants
   source: Code de la route, R416-4 à R416-7 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159603
-  tags:
-  - revision::v3_1

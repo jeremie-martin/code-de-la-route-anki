@@ -5,7 +5,7 @@
   affirmation: La descente dangereuse à 15 % commence à environ 150 m.
   verdict: vrai
   pourquoi: Hors agglomération, un panneau de danger est implanté à environ 150 m de ce qu'il annonce (50 m en agglomération),
-    sauf panonceau de distance. Un exemple public de question (2023) porte sur ce cas.
+    sauf panonceau de distance.
   theme: R
   sous_theme: montagne
   source: Sécurité routière — Exemples de nouvelles questions (Q18) ; IISR, 1re partie
@@ -14,7 +14,7 @@
   affirmation: Circulant hors agglomération, le passage à niveau se situe à environ 150 m.
   verdict: vrai
   pourquoi: Hors agglomération, le panneau annonce le passage à 150 m ; les balises J10 égrènent ensuite 150 m (trois
-    bandes), 100 m (deux) et 50 m (une). En agglomération, ce serait 50 m. Un exemple public de question (2023) porte sur ce cas.
+    bandes), 100 m (deux) et 50 m (une). En agglomération, ce serait 50 m.
   theme: R
   sous_theme: passages_a_niveau
   source: Sécurité routière — Exemples de nouvelles questions (Q19) ; IISR
@@ -23,7 +23,7 @@
   affirmation: À ce passage à niveau, je peux rencontrer des feux rouges clignotants.
   verdict: vrai
   pourquoi: 'Le panonceau « signal automatique » annonce une signalisation automatique lumineuse et sonore : deux
-    feux rouges clignotants et une sonnerie, avec ou sans demi-barrières. Un exemple public de question (2023) porte sur ce cas.'
+    feux rouges clignotants et une sonnerie, avec ou sans demi-barrières.'
   theme: R
   sous_theme: passages_a_niveau
   source: Sécurité routière — Exemples de nouvelles questions (Q19) ; IISR, 6e partie
@@ -45,14 +45,13 @@
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R421-3
-  tags:
-  - revision::v3
 - id: aff-r-autoroute-voie-gauche-80
-  contexte: Autoroute à trois voies, circulation dense et pluie battante.
-  affirmation: Sur la voie de gauche, je dois rouler à au moins 80 km/h en toutes circonstances.
-  verdict: faux
-  pourquoi: Le minimum de 80 km/h ne vaut que si la circulation est fluide et si les conditions atmosphériques permettent
-    une visibilité et une adhérence suffisantes (R413-19). Sous la pluie ou dans un bouchon, il ne s'applique pas.
+  contexte: Autoroute à trois voies, circulation fluide, temps sec.
+  affirmation: Sur la voie de gauche, je dois rouler à au moins 80 km/h tant que la circulation reste fluide.
+  verdict: vrai
+  pourquoi: 'R413-19 : sur la voie la plus à gauche d''une autoroute, 80 km/h au minimum quand la circulation est
+    fluide et que les conditions permettent visibilité et adhérence suffisantes. Dans un bouchon ou sous une pluie
+    battante, ce minimum ne s''applique plus.'
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R413-19
@@ -75,7 +74,7 @@
   sous_theme: autoroute
   source: Code de la route, art. R413-2 et R413-5
 - id: aff-r-autoroute-cyclo
-  affirmation: Un cyclomoteur de 50 cm³ peut emprunter l'autoroute dès lors qu'il est immatriculé.
+  affirmation: Un cyclomoteur de 50 cm³ immatriculé peut emprunter l'autoroute.
   verdict: faux
   pourquoi: 'R421-2 interdit l''accès de l''autoroute aux cyclomoteurs, aux voiturettes, aux vélos, aux piétons,
     aux animaux et aux engins agricoles, immatriculés ou non : ils ne peuvent pas tenir l''allure du trafic.'
@@ -89,7 +88,6 @@
     probatoire (110 km/h sur autoroute, 100 sur chaussées séparées, 80 ailleurs).
   theme: R
   sous_theme: autoroute
-  importance: utile
   source: Code de la route, art. R413-5 ; service-public.fr F2390
 - id: aff-r-autoroute-bouchon-detresse
   contexte: Sur autoroute, je découvre un bouchon et je suis le dernier véhicule de la file.
@@ -144,18 +142,6 @@
   theme: R
   sous_theme: intemperies
   source: Code de la route, art. R413-4
-- id: aff-r-brouillard-depasser
-  affirmation: Dans le brouillard, je reste sur la voie de droite et je renonce à dépasser.
-  verdict: vrai
-  pourquoi: La visibilité manque pour garantir dépassement et rabattement. Je reste à droite, je réduis l’allure
-    et augmente l’intervalle ; suivre les feux d’un autre véhicule de près ne sécurise pas la conduite.
-  theme: R
-  sous_theme: intemperies
-  source: Ornikar — Conduire dans le brouillard ; Codes Rousseau
-  contexte: 'Route à double sens dans un brouillard épais : je ne vois pas assez loin pour vérifier que la voie
-    opposée est libre.'
-  tags:
-  - revision::v3
 - id: aff-r-aquaplaning-freiner
   affirmation: En cas d'aquaplaning, il faut freiner fermement pour retrouver l'adhérence.
   verdict: faux
@@ -177,8 +163,8 @@
   contexte: Route enneigée, panneau d'entrée de zone montagne, en pleine période hivernale.
   affirmation: Sans chaînes ni chaussettes à bord, il me faut quatre pneus hiver pour circuler ici.
   verdict: vrai
-  pourquoi: 'L''obligation hivernale se remplit au choix par les pneus ou par un équipement amovible : privé de
-    chaînes et de chaussettes, il ne reste que les quatre pneus marqués 3PMSF. Un exemple public de question (2023) porte sur ce cas.'
+  pourquoi: 'L''obligation hivernale se remplit au choix par les pneus ou par un équipement amovible : privé de chaînes
+    et de chaussettes, il ne reste que les quatre pneus marqués 3PMSF.'
   theme: R
   sous_theme: intemperies
   source: Sécurité routière — Exemples de nouvelles questions (Q10) ; décret n° 2020-1264
@@ -200,8 +186,6 @@
   theme: R
   sous_theme: intemperies
   source: Codes Rousseau — Neige et brouillard ; En Voiture Simone — Le verglas
-  tags:
-  - revision::v6
 - id: aff-r-neige-depassement-pl
   affirmation: Sur une chaussée enneigée, un poids lourd de plus de 3,5 t ne peut ni dépasser ni changer de file.
   verdict: vrai
@@ -209,7 +193,6 @@
     de file sont interdits aux véhicules de plus de 3,5 t et aux ensembles de plus de 7 m.'
   theme: R
   sous_theme: intemperies
-  importance: utile
   source: Code de la route, art. R414-17
 - id: aff-r-nuit-feux-position-agglo
   contexte: La nuit, en agglomération, sur une avenue bien éclairée.
@@ -257,7 +240,7 @@
   source: Code de la route, art. R414-13 ; coursdecode.com — Les tramways
 - id: aff-r-chantier-sans-ouvriers
   contexte: Chantier autoroutier un dimanche, limitation jaune à 90, aucun engin ni ouvrier en vue.
-  affirmation: Je peux reprendre 130 km/h puisque personne ne travaille.
+  affirmation: 'Personne ne travaille : je peux reprendre 130 km/h.'
   verdict: faux
   pourquoi: 'Tant que les panneaux temporaires sont en place, ils s''imposent et priment sur la signalisation permanente
     : la chaussée reste rétrécie ou dévoyée, et les contrôles de vitesse y fonctionnent aussi le dimanche.'
@@ -271,7 +254,6 @@
     de vent ; tendue à l''horizontale, vent fort. Le panneau A24 annonce la zone exposée.'
   theme: R
   sous_theme: intemperies
-  importance: utile
   source: IISR (A24, J7) ; Ornikar — Conduire par grand vent
 - id: aff-r-vent-deux-roues
   affirmation: Par vent latéral, je laisse un écart plus grand au motard que je dépasse.

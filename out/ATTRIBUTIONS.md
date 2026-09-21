@@ -2,15 +2,11 @@
 
 Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels que déclarés sur Commons.
 
-- [File:Barrage K2.webp](https://commons.wikimedia.org/wiki/File:Barrage_K2.webp) — CC BY 3.0 — Sécurité Routière
 - [File:D21a.svg](https://commons.wikimedia.org/wiki/File:D21a.svg) — CC BY-SA 3.0 — Roulex_45
-- [File:D31b.svg](https://commons.wikimedia.org/wiki/File:D31b.svg) — CC0 — Mathgb
 - [File:D43.svg](https://commons.wikimedia.org/wiki/File:D43.svg) — CC BY-SA 3.0 — Roulex 45
 - [File:E42.svg](https://commons.wikimedia.org/wiki/File:E42.svg) — Public domain — Roulex 45
 - [File:E43.svg](https://commons.wikimedia.org/wiki/File:E43.svg) — Public domain — Roulex 45
 - [File:E44.svg](https://commons.wikimedia.org/wiki/File:E44.svg) — CC BY-SA 3.0 — Roulex 45
-- [File:FR road beacon J11.svg](https://commons.wikimedia.org/wiki/File:FR_road_beacon_J11.svg) — CC BY-SA 4.0 — Roulex 45
-- [File:FR road beacon J12.svg](https://commons.wikimedia.org/wiki/File:FR_road_beacon_J12.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:FR road beacon J13.svg](https://commons.wikimedia.org/wiki/File:FR_road_beacon_J13.svg) — CC0 — มองโกเลีย๔๔
 - [File:FR road beacon J14a.svg](https://commons.wikimedia.org/wiki/File:FR_road_beacon_J14a.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:FR road beacon J4.svg](https://commons.wikimedia.org/wiki/File:FR_road_beacon_J4.svg) — CC BY-SA 4.0 — Paris 16
@@ -19,7 +15,6 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:FR road sign G1 bis.svg](https://commons.wikimedia.org/wiki/File:FR_road_sign_G1_bis.svg) — CC BY-SA 3.0 — Roulex 45
 - [File:FR road sign G1.svg](https://commons.wikimedia.org/wiki/File:FR_road_sign_G1.svg) — CC BY-SA 3.0 — Roulex_45
 - [File:FR road sign G1a.svg](https://commons.wikimedia.org/wiki/File:FR_road_sign_G1a.svg) — CC0 — มองโกเลีย๔๔
-- [File:Fanion K1.webp](https://commons.wikimedia.org/wiki/File:Fanion_K1.webp) — CC BY 3.0 — Sécurité Routière
 - [File:France road sign A13a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_A13a.svg) — CC BY-SA 3.0 — Roulex 45
 - [File:France road sign A13b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_A13b.svg) — CC BY-SA 3.0 — Roulex 45
 - [File:France road sign A14.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_A14.svg) — CC BY-SA 3.0 — Roulex_45
@@ -72,13 +67,11 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign B11.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B11.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B12.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B12.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B13.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B13.svg) — CC BY-SA 4.0 — Roulex 45
-- [File:France road sign B13a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B13a.svg) — Public domain — Roulex 45 self-made from source above
 - [File:France road sign B14 (50).svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B14_(50).svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B15.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B15.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B16.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B16.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B17.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B17.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B18c.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B18c.svg) — CC BY-SA 4.0 — Roulex 45
-- [File:France road sign B19.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B19.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B1j.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B1j.svg) — Public domain — Roland45 self-made from source above
 - [File:France road sign B21-1.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B21-1.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B21-2.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B21-2.svg) — CC BY-SA 4.0 — Roulex 45
@@ -96,7 +89,6 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign B26.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B26.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B27a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B27a.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B27b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B27b.svg) — CC BY-SA 4.0 — Roulex 45
-- [File:France road sign B29.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B29.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B2a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B2a.svg) — CC BY-SA 3.0 — Roulex 45
 - [File:France road sign B2b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B2b.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B2c.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B2c.svg) — CC BY-SA 4.0 — Roulex 45
@@ -113,7 +105,6 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign B54.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B54.svg) — Public domain — Roulex 45 self-made from source above
 - [File:France road sign B56.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B56.svg) — CC BY-SA 4.0 — Roland45
 - [File:France road sign B58.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B58.svg) — CC BY-SA 4.0 — Kilyann Le Hen
-- [File:France road sign B5b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B5b.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B6a1.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B6a1.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B6a2.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B6a2.svg) — CC BY-SA 4.0 — Roulex 45
 - [File:France road sign B6a3.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B6a3.svg) — CC BY-SA 4.0 — Roulex 45
@@ -142,8 +133,6 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign C14.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C14.svg) — CC BY-SA 3.0 — Roulex 45 self-made from source above
 - [File:France road sign C18.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C18.svg) — CC BY-SA 4.0 — Gigillo83
 - [File:France road sign C1a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C1a.svg) — CC BY-SA 3.0 — Roulex_45
-- [File:France road sign C1b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C1b.svg) — Public domain — Roulex 45 self-made from source above
-- [File:France road sign C1c.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C1c.svg) — CC BY-SA 3.0 — Roulex 45 self-made from source above
 - [File:France road sign C207.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C207.svg) — CC BY-SA 3.0 — Roulex 45 self-made from source above
 - [File:France road sign C208.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C208.svg) — CC BY-SA 3.0 — Roulex 45 self-made from source above
 - [File:France road sign C20a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C20a.svg) — CC BY-SA 3.0 — Roulex 45 self-made from source above
@@ -162,8 +151,6 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign C29c.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C29c.svg) — Public domain — Roulex 45 self-made from source above
 - [File:France road sign C30.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C30.svg) — Public domain — Roulex 45 self-made from source above
 - [File:France road sign C4a (50).svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C4a_(50).svg) — CC BY-SA 3.0 — Roulex 45 self-made from source above
-- [File:France road sign C5.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C5.svg) — CC BY-SA 3.0 — Roulex 45 self-made from source above
-- [File:France road sign C50.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C50.svg) — CC BY-SA 3.0 — Roulex 45 self-made from source above
 - [File:France road sign C51a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C51a.svg) — Public domain — Roulex 45 self-made from source above
 - [File:France road sign C6.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C6.svg) — CC BY-SA 3.0 — Roulex_45
 - [File:France road sign C64d2.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C64d2.svg) — CC BY-SA 3.0 — Roulex 45 self-made from source above
@@ -171,19 +158,16 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign C8.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C8.svg) — CC BY-SA 3.0 — Roulex 45 self-made from source above
 - [File:France road sign CE15a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE15a.svg) — Public domain — Gouvernement français, Roulex 45 self-made from source above
 - [File:France road sign CE15i.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE15i.svg) — CC BY-SA 4.0 — Chabe01
-- [File:France road sign CE22.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE22.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE29.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE29.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE2a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE2a.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE30a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE30a.svg) — Public domain — Original: Gouvernement français Vector:  Roulex 45
 - [File:France road sign CE52.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_CE52.svg) — Public domain — Ministère de la Transition écologique et solidaire
 - [File:France road sign D52a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_D52a.svg) — CC BY-SA 4.0 — KiwiNeko14
-- [File:France road sign D61b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_D61b.svg) — CC0 — EthanL13
 - [File:France road sign EB10.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_EB10.svg) — CC BY-SA 4.0 — Kilyann Le Hen
 - [File:France road sign EB20.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_EB20.svg) — CC BY-SA 4.0 — Kilyann Le Hen
 - [File:France road sign J10 3 barres.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_J10_3_barres.svg) — CC BY 4.0 — Marcel Roblin
 - [File:France road sign J5.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_J5.svg) — CC BY-SA 3.0 — Roulex_45
 - [File:France road sign M1.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M1.svg) — CC0 — Mathgb
-- [File:France road sign M10b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M10b.svg) — CC0 — Mathgb
 - [File:France road sign M11b1.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M11b1.svg) — Public domain — Roulex 45 self-made from source above
 - [File:France Road Sign M11d.png](https://commons.wikimedia.org/wiki/File:France_Road_Sign_M11d.png) — CC BY-SA 4.0 — Jean-Michel du 01
 - [File:France road sign M12D.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M12D.svg) — CC0 — Mathgb
@@ -216,12 +200,9 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign SR3e.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_SR3e.svg) — CC BY-SA 3.0 — Ryse93
 - [File:ISO 7000 - Ref-No 0082.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0082.svg) — Public domain — Vectorization:  Mrmw
 - [File:ISO 7000 - Ref-No 0083.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0083.svg) — Public domain — Vectorization:  Mrmw
-- [File:ISO 7000 - Ref-No 0084.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0084.svg) — Public domain — Vectorization:  Mrmw
 - [File:ISO 7000 - Ref-No 0085.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0085.svg) — Public domain — Vectorization:  Mrmw
-- [File:ISO 7000 - Ref-No 0088.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0088.svg) — Public domain — Vectorization:  Mrmw
 - [File:ISO 7000 - Ref-No 0238.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0238.svg) — Public domain — Vectorization:  Mrmw
 - [File:ISO 7000 - Ref-No 0239.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0239.svg) — Public domain — Vectorization:  Mrmw
-- [File:ISO 7000 - Ref-No 0245.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0245.svg) — Public domain — Vectorization:  Mrmw
 - [File:ISO 7000 - Ref-No 0246.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0246.svg) — Public domain — Vectorization:  Mrmw
 - [File:ISO 7000 - Ref-No 0247.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0247.svg) — Public domain — Vectorization:  Mrmw
 - [File:ISO 7000 - Ref-No 0248.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0248.svg) — Public domain — Vectorization:  Mrmw

@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 30 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 29 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: m1
   type: panonceau
   code: M1
@@ -10,7 +10,6 @@
   complement: 'Sous un panneau de danger : distance différente des 150 m / 50 m habituels. Sous un AB3a : signal avancé (AB3b). Sous CE : distance jusqu''au service.'
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m2
   type: panonceau
@@ -23,7 +22,6 @@
   piege: M1 « 150 m » = le danger est DANS 150 m ; M2 « 150 m » = le danger DURE 150 m.
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m3a
   type: panonceau
@@ -34,7 +32,6 @@
   signification: Indique par une flèche oblique la voie ou la partie de chaussée concernée par le panneau (ex. limitation ne s'appliquant qu'à une voie).
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m3b
   type: panonceau
@@ -45,7 +42,6 @@
   signification: Indique la direction à suivre (flèche) et éventuellement la distance pour atteindre le service ou le lieu indiqué par le panneau (parking, station-service…).
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m4a
   type: panonceau
@@ -56,7 +52,6 @@
   signification: Le panneau ne s'applique qu'aux véhicules (ou ensembles) dont le PTAC/PTRA est inférieur à 3,5 t.
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m4d1
   type: panonceau
@@ -68,7 +63,6 @@
   complement: 'Sous une interdiction : en précise les destinataires. Sous une obligation ou une indication : signale que cette catégorie est également concernée.'
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Le pictogramme vélo ne signifie pas que seuls les vélos sont concernés.
 - id: m4d2
@@ -80,7 +74,6 @@
   signification: 'Le panneau ne s''applique qu''aux cyclomoteurs (sous B22a : piste ouverte/obligatoire aussi pour les cyclomoteurs).'
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m4e
   type: panonceau
@@ -92,7 +85,6 @@
   complement: Utilisé sur les voies réservées à losange pour préciser le nombre minimal d'occupants.
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m4f
   type: panonceau
@@ -104,7 +96,6 @@
   complement: 'Sous un B8 : interdiction aux camions de plus de X t seulement.'
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m5
   type: panonceau
@@ -116,7 +107,6 @@
   conduite: Se préparer à s'arrêter à la distance indiquée.
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m6a
   type: panonceau
@@ -128,7 +118,6 @@
   conduite: 'Ne pas s''y arrêter ni stationner : risque d''enlèvement.'
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m6b
   type: panonceau
@@ -139,7 +128,6 @@
   signification: 'Précise les jours d''interdiction du stationnement alterné : « du 1er au 15 » ou « du 16 à la fin du mois », sous B6a2/B6a3 (ou B6a1).'
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m6c
   type: panonceau
@@ -151,7 +139,6 @@
   conduite: Apposer le disque de stationnement européen indiquant l'heure d'arrivée.
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m6d
   type: panonceau
@@ -163,7 +150,6 @@
   conduite: Payer à l'horodateur ou par application ; sinon forfait post-stationnement.
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m6h
   type: panonceau
@@ -175,7 +161,6 @@
   conduite: 'Ne jamais s''y garer sans la carte : stationnement très gênant, 135 € et enlèvement.'
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m6i
   type: panonceau
@@ -187,7 +172,6 @@
   conduite: 'Ne pas occuper l''emplacement avec un véhicule non électrique ou hors recharge : stationnement gênant (R417-10 III 3°), 35 € et mise en fourrière possible.'
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m7
   type: panonceau
@@ -200,7 +184,6 @@
   complement: Sous AB2, ou sous AB3b/AB5. La branche verticale du bas est la route sur laquelle je me trouve.
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m8a
   type: panonceau
@@ -211,7 +194,6 @@
   signification: 'Flèche indiquant que la prescription (stationnement/arrêt) s''applique après le panneau : c''est le début de la section.'
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m8b
   type: panonceau
@@ -223,7 +205,6 @@
   conduite: Au-delà de ce panneau, le stationnement redevient possible (sauf autre interdiction).
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m8c
   type: panonceau
@@ -234,7 +215,6 @@
   signification: 'Double flèche indiquant que la prescription s''applique de part et d''autre du panneau : c''est un rappel.'
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m8d
   type: panonceau
@@ -245,7 +225,6 @@
   signification: 'Flèche horizontale vers la droite : la section où s''applique la prescription s''étend à droite du panneau ; la distance éventuelle précise sa longueur.'
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m9c
   type: panonceau
@@ -256,10 +235,7 @@
   signification: Inscription « Cédez le passage », complétant le panneau AB3a.
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  tags:
-  - revision::v3_1
 - id: m9d
   type: panonceau
   code: M9d
@@ -269,7 +245,6 @@
   signification: 'Sous C20a, précise que le passage pour piétons est surélevé (plateau) : ralentir.'
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m9v1
   type: panonceau
@@ -282,10 +257,7 @@
   complement: 'M9v2 porte « SAUF » et un vélo : même lecture.'
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  tags:
-  - revision::v3_1
 - id: m9v2
   type: panonceau
   code: M9v2
@@ -296,10 +268,7 @@
   conduite: Sous un sens interdit, anticiper ces usagers venant en face ; vérifier la voie avant de tourner.
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  tags:
-  - revision::v3_1
 - id: m9z
   type: panonceau
   code: M9z
@@ -311,20 +280,7 @@
   complement: '« RAPPEL » sous un B14 : la limitation continue, souvent après une intersection.'
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m10b
-  type: panonceau
-  code: M10b
-  image:
-    commons: France road sign M10b.svg
-  nom: 'Cartouche : numéro d''échangeur'
-  signification: Cartouche portant le numéro de la sortie/échangeur (sur autoroute), placé au-dessus des panneaux de sortie.
-  theme: L
-  sous_theme: panonceaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  complement: Cartouche placé AU-DESSUS du panneau qu'il complète (exception parmi les panonceaux).
 - id: m11b1
   type: panonceau
   code: M11b1
@@ -334,7 +290,6 @@
   signification: 'Indique la période durant laquelle la voie a le statut d''aire piétonne (sous B54) ou la période d''obligation d''équipements hivernaux (sous B58 : « du 01/11 au 31/03 »).'
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m11d
   type: panonceau
@@ -346,7 +301,6 @@
   conduite: Comparer sa vignette Crit'Air aux catégories affichées après « SAUF » avant d'entrer.
   theme: L
   sous_theme: panonceaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Les vignettes dessinées sont celles qui peuvent entrer, pas celles qui sont interdites.
 - id: m12
@@ -360,6 +314,5 @@
   complement: 'Céder aux piétons et aux véhicules bénéficiant du vert. EDPM : par exemple une trottinette électrique.'
   theme: L
   sous_theme: panonceaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Ne donne ni priorité ni autorisation aux voitures, motos ou cyclomoteurs ordinaires. Le signal lumineux R19 a un champ différent : les cyclistes.'

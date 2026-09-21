@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 7 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 6 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: ce2a
   type: panneau
   code: CE2a
@@ -9,7 +9,6 @@
   conduite: 'Sur autoroute, les bornes sont tous les 2 km : les préférer au téléphone portable car elles localisent l''appel.'
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce15a
   type: panneau
@@ -21,7 +20,6 @@
   conduite: Sur autoroute, panonceau M1a avec la marque et la distance.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce15i
   type: panneau
@@ -33,19 +31,6 @@
   conduite: Les emplacements de recharge sont réservés aux véhicules électriques pendant la recharge (panonceau M6i).
   theme: L
   sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: ce22
-  type: panneau
-  code: CE22
-  image:
-    commons: France road sign CE22.svg
-  nom: Fréquence d'informations routières
-  signification: Indique la fréquence d'une radio d'information routière (ex. 107.7 sur autoroute).
-  conduite: Régler l'autoradio sur la fréquence pour connaître trafic, accidents et météo.
-  theme: L
-  sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce29
   type: panneau
@@ -57,7 +42,6 @@
   conduite: 'En tunnel : se garer, couper le moteur, laisser les clés, rejoindre l''issue de secours.'
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce30a
   type: panneau
@@ -69,7 +53,6 @@
   conduite: En cas d'incendie ou d'accident dans un tunnel, rejoindre l'issue de secours indiquée à pied.
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ce52
   type: panneau
@@ -80,5 +63,4 @@
   signification: Indique un lieu aménagé pour la pratique du covoiturage (parking de covoiturage), créé par l'arrêté du 8 janvier 2016.
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

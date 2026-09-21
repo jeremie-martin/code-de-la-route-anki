@@ -1,9 +1,9 @@
 """Anki note types (models) for the deck: fields, card templates and CSS.
 
 Stable ids: the backend assigns fresh ids on creation, so build.py remaps them
-to these constants in SQLite before export (see build.py:remap_ids). Keeping
-ids stable lets a learner import a new version of the deck without losing
-review history.
+to these constants in SQLite before export (see build.py:remap_ids), and note
+GUIDs derive from the note id. Reimporting the same edition therefore updates
+notes in place instead of duplicating them.
 """
 
 MODEL_IDS = {
@@ -14,7 +14,7 @@ MODEL_IDS = {
     "CDR Scenario": 1758400000005,
     "CDR Affirmation": 1758400000006,
 }
-DECK_CONFIG_ID = 1758400002000  # options preset shipped with the deck (curriculum order, 20 new/day)
+DECK_CONFIG_ID = 1758400002000  # options preset shipped with the deck (curriculum order, siblings buried)
 
 DECK_ROOT = "Code de la route 2026"
 DECK_IDS = {  # subdeck name -> stable id
@@ -49,6 +49,11 @@ THEME_NAMES = {
 
 # Sub-themes of L that belong to the "Signalisation" subdeck; every other L sub-theme goes to "Circulation".
 SIGNALISATION_SUBTHEMES = {"panneaux", "panonceaux", "balises", "marquages", "feux", "agents", "signalisation"}
+# sub-deck (short name) -> theme whose repère is shown on its overview screen
+THEME_OF_DECK = {"00 Méthode d'examen": "X", "01 Signalisation": "L", "02 Circulation": "L", "03 Le conducteur": "C",
+                 "04 La route": "R", "05 Les autres usagers": "U", "06 Réglementation et notions diverses": "D",
+                 "07 Premiers secours": "A", "08 Prendre et quitter son véhicule": "P",
+                 "09 Mécanique et équipements": "M", "10 Sécurité du passager et du véhicule": "S", "11 Environnement": "E"}
 
 
 def deck_for(theme: str, sous_theme: str) -> str:
@@ -126,10 +131,9 @@ ul.cdr-list { padding-left: 24px; }
 
 
 def reference(extra=""):
-    """One secondary layer; corrective feedback never lives here."""
-    return ('<details class="cdr-reference"><summary>Sources et repères</summary>' + extra +
-            '<p>{{#Code}}<span class="cdr-code">{{Code}}</span> · {{/Code}}{{Source}}</p>'
-            '{{#Repere}}<h3>{{Theme}}</h3>{{Repere}}{{/Repere}}</details>')
+    """One collapsed layer for references (official name, code, source); corrective feedback never lives here."""
+    return ('<details class="cdr-reference"><summary>Sources</summary>' + extra +
+            '<p>{{#Code}}<span class="cdr-code">{{Code}}</span> · {{/Code}}{{Source}}</p></details>')
 
 
 SRC = reference()
@@ -156,7 +160,7 @@ def notetypes() -> list[dict]:
                     '<div class="cdr-a">{{Signification}}</div>'
                     '{{#ConduiteATenir}}<div class="cdr-box conduite"><b>En pratique.</b> {{ConduiteATenir}}</div>{{/ConduiteATenir}}'
                     '{{#Complement}}<div class="cdr-box info">{{Complement}}</div>{{/Complement}}'
-                    '{{#Piege}}<div class="cdr-box piege">{{Piege}}</div>{{/Piege}}'
+                    '{{#Piege}}<div class="cdr-box piege"><b>Piège.</b> {{Piege}}</div>{{/Piege}}'
                     + reference('<p>{{Nom}}</p>') + '</div>'
                 ),
             }],
@@ -267,14 +271,12 @@ def notetypes() -> list[dict]:
             }],
         },
     ]
-    for note_type in types:
-        note_type['fields'].append('Repere')
     return types
 
 
 DECK_DESCRIPTIONS = {
-    "00 Méthode d'examen": "Lire une question de l'ETG sans tomber dans les pièges : bandeau « une/plusieurs réponses », pictogramme de point de vue, halo jaune, « je peux / je dois », adverbes, négations, questions vidéo. 40 questions, 35 bonnes réponses exigées, ~20 s par question. À voir en premier et à revoir la veille.",
-    "01 Signalisation": "Panneaux, panonceaux, balises, marquages, feux, gestes de l'agent : image → sens exact, conduite à tenir, piège. Les bases précèdent les variantes ; adapter le débit des nouvelles cartes à la charge de révision. Les cartes « Quelle est la différence ? » ciblent les paires confondues.",
+    "00 Méthode d'examen": "Lire une question de l'ETG sans tomber dans les pièges : pictogramme de point de vue, halo jaune, « je peux / je dois », double affirmation, négations, questions vidéo. 40 questions, 35 bonnes réponses exigées, une vingtaine de secondes par question.",
+    "01 Signalisation": "Panneaux, panonceaux, balises, marquages, feux, gestes de l'agent : image → sens exact, conduite à tenir, piège. Les cartes « Quelle est la différence ? » ciblent les paires confondues.",
     "02 Circulation": "Priorités (avec scénarios dessinés), vitesses, positionnement, dépassement, croisement, arrêt et stationnement, feux. Relier les règles aux indices de chaque situation.",
     "03 Le conducteur": "Distances (réaction, freinage, arrêt, sécurité), perception, vigilance et anticipation, alcool, stupéfiants, médicaments, fatigue, téléphone. Relier les règles aux indices ; justifier les réponses aux affirmations.",
     "04 La route": "Nuit, pluie, brouillard, neige, tunnels, passages à niveau, tramways, chantiers, autoroute, montagne.",

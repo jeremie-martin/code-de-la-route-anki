@@ -162,8 +162,6 @@
   couverts_par:
   - l-guidage-reflecteurs
   - j6
-  - j11
-  - j12
   - k5a
 - codes:
   - G2
@@ -295,7 +293,6 @@
   - m8b
   - m8d
   - m9v2
-  - m10b
   - m11b1
   - m11d
   - m1
@@ -378,7 +375,6 @@
     interdit aux marchandises dangereuses » et l’annonce de contrôle automatique.'
   couverts_par:
   - b4
-  - b5b
   - b18c
   - u-matieres-dangereuses
   - sr3a
@@ -517,3 +513,36 @@
   - k5a
   - k2
   - l-signalisation-temporaire
+- codes:
+  - C1b
+  - C1c
+  - C5
+  - C50
+  - CE22
+  - M10b
+  - B19
+  - B29
+  - K1
+  - J11
+  - J12
+  - B13a
+  - B5b
+  - D30
+  - D60
+  raison: 'Révision v9 : signaux au pictogramme ou à l’inscription transparents (parking gratuit/payant, taxis, fréquence
+    radio, indications diverses, interdiction ou obligation par inscription, cartouche d’échangeur), variantes d’une famille
+    apprise (arrêt au poste de police après la douane, poids par essieu après le poids total, balises de renforcement de
+    marquage, fanion) et nomenclature des panneaux de direction (signalisation avancée, confirmation) que l’épreuve ne
+    demande pas de nommer.'
+  couverts_par:
+  - c1a
+  - b6b3
+  - b4
+  - b13
+  - l-formes-couleurs-panneaux
+  - d20
+  - d40
+  - d50
+  - da40
+  - j6
+  - l-guidage-reflecteurs

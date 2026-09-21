@@ -1,11 +1,9 @@
 - id: d-ct-critique
   theme: D
   sous_theme: controle_technique
-  question: Contrôle technique avec défaillance critique aujourd’hui. Puis-je conduire demain pour me rendre au
-    garage ?
-  reponse: 'Non : la validité est limitée au jour du contrôle ; je fais transporter le véhicule.'
+  question: Le contrôle technique révèle une défaillance critique aujourd'hui. Jusqu'à quand puis-je conduire la voiture
+    ?
+  reponse: 'Jusqu''à ce soir seulement : la validité est limitée au jour du contrôle ; ensuite, je fais transporter
+    le véhicule.'
   explication: Ne pas confondre les deux mois pour la contre-visite avec l’autorisation de circuler.
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2878
-  tags:
-  - competence::application
-  - revision::v3

@@ -1,6 +1,6 @@
-# Comprendre avant de mémoriser
+# Repères par thème
 
-Lire le repère d’un thème avant ses premières cartes, puis retrouver son exemple si une règle reste obscure. Ces mêmes repères sont accessibles hors ligne au verso de chaque carte, dans « Comprendre ce thème ». Ils donnent un cadre de raisonnement ; les cartes et leurs sources précisent les règles et exceptions.
+Un repère par thème : le principe, un exemple expliqué et une piste de transfert. Ils sont aussi affichés sur l’écran de chaque sous-deck dans Anki. Ils donnent un cadre de raisonnement ; les cartes et leurs sources précisent les règles et leurs exceptions.
 
 ## X — Lire, décider, puis vérifier chaque proposition
 

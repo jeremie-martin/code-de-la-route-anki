@@ -9,7 +9,6 @@
   conduite: Être à 50 km/h au niveau du panneau ; redoubler d'attention (piétons, cyclistes, intersections).
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Un E31 (lieu-dit, lettres italiques blanches sur fond noir) ne limite PAS la vitesse à 50.
 - id: eb20
@@ -22,7 +21,6 @@
   conduite: Accélérer progressivement seulement après le panneau, si les conditions le permettent ; attention, hors agglomération le klaxon est de nouveau autorisé (avertissement).
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: e31
   type: panneau
@@ -37,7 +35,6 @@
   piege: Lettres ITALIQUES blanches sur fond noir = lieu-dit ; lettres droites noires sur fond blanc bordé de rouge = agglomération.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: e42
   type: panneau
@@ -46,10 +43,9 @@
     commons: E42.svg
   nom: Cartouche de route nationale ou d'autoroute
   signification: Cartouche identifiant une autoroute (A + numéro) ou une route nationale (N + numéro).
-  complement: 'Couleur des cartouches : rouge = A/N (État), jaune = D (département), blanc = C/VC (commune), vert = E (Europe) ou F (forêt), bleu = M (métropole).'
+  complement: 'Couleur des cartouches : rouge = A/N (État), jaune = D (département), blanc = C/VC (commune), vert = E (Europe).'
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: e43
   type: panneau
@@ -60,7 +56,6 @@
   signification: Cartouche identifiant une route départementale (D + numéro).
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: e44
   type: panneau
@@ -71,5 +66,4 @@
   signification: Cartouche identifiant une voie communale (C, VC) ou un chemin rural.
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

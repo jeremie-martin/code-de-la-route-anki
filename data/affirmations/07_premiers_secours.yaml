@@ -17,8 +17,6 @@
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Défibrillation — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
-  tags:
-  - revision::v5
 - id: aff-a-pls-avec-casque
   contexte: Après sa chute, un motard est inconscient, allongé sur le dos et respire normalement ; pas de vomissement
     ni de danger immédiat.
@@ -29,8 +27,6 @@
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
-  tags:
-  - revision::v3
 - id: aff-a-respire-mais-inconsciente
   contexte: Après un malaise sans traumatisme, une personne ne répond pas mais respire normalement.
   affirmation: 'Elle est en arrêt cardiaque : je commence les compressions thoraciques.'
@@ -40,8 +36,6 @@
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
-  tags:
-  - revision::v3
 - id: aff-a-compressions-seules
   contexte: La victime ne respire pas ; le bouche-à-bouche me rebute.
   affirmation: Je peux me limiter aux compressions thoraciques en attendant les secours.
@@ -50,17 +44,6 @@
   theme: A
   sous_theme: secourir
   source: Croix-Rouge française — Arrêt cardiaque
-- id: aff-a-couvrir-victime
-  contexte: Accident en plein été ; la victime est allongée, consciente, et il fait 30 °C.
-  affirmation: Je la protège du froid, de la chaleur et des intempéries en attendant les secours.
-  verdict: vrai
-  pourquoi: 'Adapter la protection aux conditions : éviter refroidissement comme surchauffe. Je rassure la victime
-    et surveille son état.'
-  theme: A
-  sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
-  tags:
-  - revision::v3
 - id: aff-a-donner-a-boire
   contexte: Un blessé conscient me demande à boire en attendant les secours.
   affirmation: Je peux lui donner un peu d'eau pour le soulager.
@@ -70,8 +53,6 @@
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
-  tags:
-  - revision::v5
 - id: aff-a-contact-vehicules-accidentes
   contexte: Deux voitures accidentées sont immobilisées au milieu d'un carrefour.
   affirmation: Laisser leur contact mis ne présente pas de risque particulier.
@@ -96,29 +77,15 @@
   theme: A
   sous_theme: alerter
   source: service-public.fr — Numéros d'urgence ; Croix-Rouge française
-- id: aff-a-112-remplace-les-autres
-  affirmation: Depuis la création du 112, le 15, le 17 et le 18 ne sont plus valables en France.
-  verdict: faux
-  pourquoi: Les numéros français restent actifs ; le 112 s’y ajoute dans l’Union européenne. Une borne localise
-    l’appel sur autoroute, mais je ne retarde pas une alerte urgente pour la rejoindre et ne marche pas sur
-    les voies.
-  theme: A
-  sous_theme: alerter
-  source: service-public.fr — Numéros d'urgence
-  tags:
-  - revision::v5
 - id: aff-a-rester-sur-place
-  contexte: Témoin d’un accident avec blessés, j’ai appelé les secours et peux rester sans danger ; aucune consigne
-    contraire ne m’a été donnée.
-  affirmation: Je reste sur place jusqu'à leur arrivée pour les guider.
-  verdict: vrai
-  pourquoi: Je reste joignable, surveille les victimes et aide à guider les secours. Pour un conducteur impliqué
-    dans un accident corporel, R231-1 prévoit aussi l’alerte de la police et la présence sur place.
+  contexte: Témoin d'un accident avec blessés, j'ai alerté les secours ; rien ne me menace sur place.
+  affirmation: 'Une fois l''alerte donnée, je peux repartir : les secours sont prévenus.'
+  verdict: faux
+  pourquoi: 'Je reste sur place : joignable pour les secours, je surveille les victimes et je les guide à leur arrivée.
+    Un conducteur impliqué doit de toute façon rester et prévenir la police (R231-1).'
   theme: A
   sous_theme: obligations
   source: Croix-Rouge française — Alerter ; Code de la route, art. R231-1
-  tags:
-  - revision::v3
 - id: aff-a-ne-rien-faire
   contexte: Je n'ai suivi aucune formation aux premiers secours et j'arrive sur un accident.
   affirmation: Mieux vaut ne rien faire que risquer d'aggraver l'état des victimes.
@@ -128,8 +95,6 @@
   theme: A
   sous_theme: obligations
   source: Code pénal, art. 223-6
-  tags:
-  - revision::v3
 - id: aff-a-constat-signature
   contexte: Accrochage sans blessé ; nous sommes d'accord sur les circonstances.
   affirmation: Signer le constat amiable revient à reconnaître ma responsabilité dans l'accident.
@@ -138,3 +103,13 @@
   theme: A
   sous_theme: obligations
   source: service-public.fr — Constat amiable
+- id: aff-a-degagement-urgence
+  contexte: 'Voiture accidentée : de la fumée sort du moteur ; le conducteur, conscient, est bloqué par sa ceinture.'
+  affirmation: Je peux le sortir du véhicule, dès lors qu'un danger immédiat l'exige.
+  verdict: vrai
+  pourquoi: 'Le dégagement d''urgence est l''exception à la règle « ne pas déplacer une victime » : incendie, risque
+    d''explosion ou de sur-accident. Je le tire par les aisselles vers un lieu sûr, sans me mettre moi-même en danger,
+    puis j''alerte.'
+  theme: A
+  sous_theme: proteger
+  source: Sécurité civile, PSC juillet 2026 — Dégagement d’urgence

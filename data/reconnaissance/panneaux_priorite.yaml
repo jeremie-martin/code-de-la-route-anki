@@ -10,7 +10,6 @@
   piege: 'Le panneau ne crée pas la règle, il la rappelle : la priorité à droite s''applique aussi sans panneau.'
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ab2
   type: panneau
@@ -22,7 +21,6 @@
   conduite: 'Continuer sans ralentir inutilement, mais rester vigilant : un usager peut griller son STOP.'
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Priorité PONCTUELLE (une seule intersection), contrairement à AB6 qui vaut sur toute la route.
 - id: ab3a
@@ -36,7 +34,6 @@
   complement: Se trouve aussi en fin de voie d’insertion et aux entrées de giratoire.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Triangle pointe en bas, reconnaissable de dos (comme AB3b/AB5 et le panonceau M12). Aux feux, le feu prévaut.
 - id: ab3b
@@ -50,7 +47,6 @@
   piege: AB3b = AB3a + panonceau de distance M1. Ne pas confondre avec AB5 (STOP à 150 m, panonceau M5).
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ab4
   type: panneau
@@ -63,11 +59,8 @@
   complement: Un feu en fonctionnement prévaut sur ce panneau de priorité.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: Code de la route, R415-6 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842245/
   piege: Le panneau est reconnaissable de dos à sa forme octogonale.
-  tags:
-  - revision::v5
 - id: ab5
   type: panneau
   code: AB5
@@ -78,7 +71,6 @@
   conduite: Ralentir, se préparer à marquer l'arrêt à l'intersection annoncée.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'AB5 ne demande pas de s''arrêter à son niveau : l''arrêt se fait au STOP, 150 m plus loin.'
 - id: ab6
@@ -92,7 +84,6 @@
   piege: 'Un STOP ou un cédez-le-passage rencontré ensuite l''emporte : le panneau le plus récent s''applique.'
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ab7
   type: panneau
@@ -104,7 +95,6 @@
   conduite: 'Redoubler de vigilance aux intersections suivantes : céder le passage aux véhicules venant de droite en l''absence de signalisation.'
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ab25
   type: panneau
@@ -117,5 +107,4 @@
   piege: Carrefour à sens giratoire (AB25 + AB3a) = priorité à l'anneau ; rond-point sans cédez-le-passage = priorité à droite, celui qui entre passe.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

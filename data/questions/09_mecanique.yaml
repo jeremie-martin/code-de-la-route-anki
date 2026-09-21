@@ -7,19 +7,15 @@
   theme: M
   sous_theme: tableau_de_bord
   source: Codes Rousseau — Les voyants ; Ornikar — Voyants lumineux
-  tags:
-  - revision::v3
+  debut: true
 - id: m-pneus-pression-quand
   question: Quand et comment vérifie-t-on la pression des pneus ?
-  reponse: À froid (2 h d’arrêt ou moins de 3 km), au moins une fois par mois et avant un long trajet, à la valeur du constructeur,
-    roue de secours comprise.
-  explication: Comparer à l’étiquette ou à la notice correspondant aux pneus et à la charge. Ne pas appliquer une majoration
-    fixe à toute voiture chargée. Ne pas dégonfler un pneu chaud pour le ramener à la valeur à froid.
+  reponse: À froid, une fois par mois et avant un long trajet, à la valeur du constructeur, roue de secours comprise.
+  explication: '« À froid » : après 2 h d''arrêt ou moins de 3 km. Un pneu chaud affiche une pression plus élevée
+    : on ne le dégonfle pas pour retrouver la valeur à froid.'
   theme: M
   sous_theme: pneus
   source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
-  tags:
-  - revision::v4
 - id: m-pneus-usure-1-6
   question: À partir de quelle profondeur de sculpture un pneu doit-il être remplacé, et comment la vérifier ?
   reponse: 1,6 mm, minimum légal repérable aux témoins d’usure ; contrôler aussi coupures, déformations et usure irrégulière.
@@ -28,8 +24,6 @@
   theme: M
   sous_theme: pneus
   source: Code de la route, art. R314-1 ; arrêté du 18 juillet 2019
-  tags:
-  - revision::v3_1
 - id: m-niveau-huile
   question: Comment contrôle-t-on le niveau d'huile moteur ?
   reponse: 'Sur sol horizontal, moteur arrêté et selon la notice ; avec une jauge : essuyer, réinsérer puis lire ; le niveau
@@ -39,8 +33,6 @@
   theme: M
   sous_theme: entretien
   source: Ornikar — Huile moteur ; lepermislibre — Contrôler les niveaux
-  tags:
-  - revision::v4
 - id: m-liquide-refroidissement
   question: Quelle précaution essentielle avec le liquide de refroidissement ?
   reponse: Ne jamais ouvrir le vase d’expansion moteur chaud (liquide sous pression, brûlures graves) ; contrôler à froid,
@@ -50,41 +42,33 @@
   theme: M
   sous_theme: entretien
   source: Ornikar — Liquide de refroidissement
-  tags:
-  - revision::v4
 - id: m-liquide-frein
   question: 'Le niveau du liquide de frein a baissé : que faut-il en conclure ?'
-  reponse: 'Plaquettes usées ou fuite du circuit : contrôle sans appoint à l’aveugle ; une pédale molle ou qui s’enfonce impose
-    l’arrêt.'
-  explication: 'Le remplacement du liquide suit la périodicité du constructeur. Une alerte de freinage ou une pédale anormale
-    nécessite un arrêt en sécurité et une assistance : ne pas présumer qu’un appoint suffit.'
+  reponse: 'Plaquettes usées ou fuite du circuit : je fais contrôler sans faire d''appoint à l''aveugle ; une pédale
+    molle ou qui s''enfonce impose l''arrêt.'
+  explication: Le liquide de frein se remplace périodiquement (souvent tous les 2 ans) car il absorbe l'humidité et
+    perd son efficacité à chaud.
   theme: M
   sous_theme: entretien
   source: Ornikar — Liquide de frein ; lepermislibre
-  tags:
-  - revision::v4
 - id: m-plaquettes-usure
   question: Quels signes annoncent des plaquettes de frein usées ?
-  reponse: Un témoin d’usure ou un bruit anormal doit conduire à un contrôle. Une baisse du liquide peut accompagner l’usure,
-    mais aussi signaler une fuite.
-  explication: Ne pas diagnostiquer une simple usure ni se contenter de remettre du liquide. Un freinage anormal ou une alerte
-    grave exige l’arrêt en sécurité.
+  reponse: 'Un témoin d''usure au tableau de bord, un bruit métallique au freinage ou une baisse du liquide de frein
+    : contrôle sans attendre.'
+  explication: 'Une baisse du liquide accompagne l''usure des plaquettes, mais peut aussi signaler une fuite : on
+    fait contrôler, on ne se contente pas de remettre du liquide.'
   theme: M
   sous_theme: entretien
   source: Ornikar — Plaquettes et amortisseurs ; Stych — Pannes et dysfonctionnements
-  tags:
-  - revision::v3_1
 - id: m-batterie-cables
   question: Avant de démarrer avec des câbles, quelle information dois-je vérifier ?
-  reponse: 'La procédure du constructeur : points de branchement, tension compatible et autorisation d’utiliser des câbles.'
-  explication: Les points de masse et les restrictions diffèrent, notamment sur hybrides et électriques. Une batterie endommagée
-    ou une procédure inconnue appelle une assistance.
+  reponse: 'L''ordre de branchement : rouge sur les deux bornes +, noir sur la borne − de la batterie de secours puis
+    sur une masse du véhicule en panne.'
+  explication: 'Débrancher dans l''ordre inverse. Les hybrides et électriques ont une procédure propre, indiquée dans
+    la notice ; batterie gonflée ou fuyante : assistance.'
   theme: M
   sous_theme: entretien
-  importance: utile
   source: APRR — Utiliser des câbles de démarrage ; lepermislibre
-  tags:
-  - revision::v3_1
 - id: m-carburants-etiquettes
   question: Que signifient les étiquettes ronde, carrée et en losange sur les pistolets de carburant ?
   reponse: Rond = essence ; carré = gazole ; losange = gaz (GPL, GNV ou hydrogène).
@@ -93,7 +77,6 @@
     de l'AdBlue (bouchon bleu).
   theme: M
   sous_theme: entretien
-  importance: utile
   source: Norme EN 16942 (étiquetage 2018) ; TotalEnergies ; Ornikar
 - id: m-erreur-carburant
   question: Je viens de faire le plein avec le mauvais carburant. Que faire ?
@@ -123,8 +106,6 @@
   theme: M
   sous_theme: freinage
   source: securite-routiere.gouv.fr — Dépliant vitesse ; Ornikar — ABS
-  tags:
-  - revision::v4
 - id: m-panne-freins
   question: 'Les freins ne répondent plus dans une descente : que faire ?'
   reponse: Je relâche l’accélérateur, rétrograde progressivement et cherche un dégagement sûr ou une voie de détresse, en
@@ -133,10 +114,7 @@
     : suivre la notice ; ne pas donner un coup brutal au levier.'
   theme: M
   sous_theme: freinage
-  importance: utile
   source: Stych — Pannes ; En Voiture Simone — Voies de détresse
-  tags:
-  - revision::v3
 - id: m-feux-jour-limite
   question: Que font exactement les feux de jour (feux diurnes) ?
   reponse: Ils rendent le véhicule visible de jour, surtout de l’avant ; ils ne remplacent pas les feux de croisement la nuit,
@@ -146,8 +124,6 @@
   theme: M
   sous_theme: feux
   source: Stych — Systèmes d'éclairage ; Code de la route, art. R416-6
-  tags:
-  - revision::v3
 - id: m-feux-reglage-hauteur
   question: À quoi sert la molette de réglage des feux (0 à 3) ?
   reponse: À adapter la hauteur du faisceau à la charge pour ne pas éblouir, à la position prescrite par la notice (certains
@@ -157,8 +133,6 @@
   theme: M
   sous_theme: feux
   source: Sécurité routière — Exemples de nouvelles questions (Q1) ; Ornikar — Réglage des feux
-  tags:
-  - revision::v5
 - id: m-appel-phares
   question: Un conducteur arrêté me fait un appel de phares pour me laisser passer. Puis-je m'engager ?
   reponse: 'Seulement après mes propres contrôles : l’appel ne garantit ni que les autres voies sont libres ni que les autres
@@ -168,8 +142,6 @@
   theme: M
   sous_theme: feux
   source: Code de la route, art. R416-1 et R416-2 ; Ornikar — L'appel de phares
-  tags:
-  - revision::v4
 - id: s-esp-fonction
   question: À quoi sert l'ESP (contrôle électronique de stabilité) ?
   reponse: À corriger un début de dérapage en freinant des roues séparément et en réduisant le couple moteur, pour garder
@@ -183,9 +155,9 @@
   question: Qu'est-ce que l'AFU (aide au freinage d'urgence) ?
   reponse: Un système qui détecte un appui brusque sur le frein et applique aussitôt la pression maximale, car on freine rarement
     assez fort en urgence.
-  explication: Il peut aussi allumer les feux de détresse. À ne pas confondre avec le freinage automatique d’urgence (AEB),
-    qui freine seul si le conducteur ne réagit pas à un obstacle détecté par radar ou caméra ; l’AEB équipe toutes les voitures
-    neuves depuis juillet 2024.
+  explication: 'Il peut aussi allumer les feux de détresse. À ne pas confondre avec le freinage automatique d''urgence
+    (AEB), qui freine seul si le conducteur ne réagit pas à un obstacle détecté par radar ou caméra : obligatoire
+    sur les voitures neuves depuis juillet 2024 (détection des piétons et cyclistes généralisée en 2026).'
   theme: M
   sous_theme: adas
   source: securite-routiere.gouv.fr — Les aides à la conduite
@@ -198,8 +170,6 @@
   theme: M
   sous_theme: adas
   source: securite-routiere.gouv.fr — Les aides à la conduite ; Codes Rousseau
-  tags:
-  - revision::v3
 - id: s-ecall
   question: Qu'est-ce que l'eCall ?
   reponse: 'L’appel d’urgence automatique : après un choc grave, le véhicule appelle seul le 112 et transmet sa position ;
@@ -208,7 +178,6 @@
     la position, l'identifiant du véhicule et le nombre d'occupants. Il n'empêche pas de protéger les lieux et d'alerter soi-même.
   theme: M
   sous_theme: adas
-  importance: utile
   source: Règlement (UE) 2015/758 ; securite-routiere.gouv.fr
 - id: m-adas-responsabilite
   question: Mon véhicule a un détecteur d'angle mort et une alerte de franchissement de ligne. Puis-je m'y fier pour changer
@@ -238,21 +207,16 @@
   theme: M
   sous_theme: adas
   source: securite-routiere.gouv.fr — ADAS ; Stych — Systèmes d'éclairage
-  tags:
-  - revision::v3
 - id: m-conduite-automatisee
-  question: Avec un véhicule à conduite partiellement automatisée (niveau 2), le conducteur peut-il relâcher son attention
-    ?
-  reponse: 'Non : il surveille en permanence la circulation et doit pouvoir reprendre les commandes immédiatement, selon les
-    consignes du système.'
+  question: Voiture à conduite partiellement automatisée (niveau 2), fonctions actives sur autoroute. Quel est le
+    rôle du conducteur ?
+  reponse: 'Surveiller en permanence la circulation et pouvoir reprendre les commandes immédiatement : l''attention
+    n''est pas transférée au système.'
   explication: 'Au niveau 2, accélération et direction assistées ne transfèrent pas la tâche de surveillance. Les fonctions
     autorisées à un autre niveau ont des conditions spécifiques : ne pas généraliser.'
   theme: M
   sous_theme: adas
-  importance: utile
   source: Décret n° 2021-873 ; securite-routiere.gouv.fr — ADAS
-  tags:
-  - revision::v3_1
 - id: m-panne-procedure-route
   question: 'Mon véhicule tombe en panne sur une route ordinaire : que faire dans l''ordre ?'
   reponse: Je signale et me range en sécurité ; gilet avant de sortir ; occupants à l’abri ; triangle à 30 m au moins si sa
@@ -262,8 +226,6 @@
   theme: M
   sous_theme: depannage
   source: Code de la route, art. R416-19 ; securite-routiere.gouv.fr — Véhicule en panne
-  tags:
-  - revision::v3
 - id: m-changer-roue-securite
   question: Que faut-il mettre en place avant de lever le véhicule pour changer une roue ?
   reponse: Sol plat et stable hors circulation, frein de stationnement serré et rapport engagé, feux de détresse et gilet,
@@ -273,10 +235,7 @@
     universelle.
   theme: M
   sous_theme: depannage
-  importance: utile
   source: Stych — Dépannages ; Code en Poche — Changer une roue
-  tags:
-  - revision::v4
 - id: m-changer-roue-ecrous
   question: À quel moment desserre-t-on et resserre-t-on les écrous d'une roue ?
   reponse: Desserrer d’un quart de tour roue encore au sol (sinon elle tourne) ; serrer en croix une fois la roue redescendue
@@ -285,7 +244,6 @@
     la pression de la roue montée dès que possible.
   theme: M
   sous_theme: depannage
-  importance: utile
   source: Stych — Dépannages ; Code en Poche — Changer une roue
 - id: m-crevaison-eclatement
   question: Un pneu éclate en roulant. Quelle réaction ?
@@ -298,13 +256,10 @@
   source: Stych — Dépannages
 - id: m-remorquage
   question: Un ami propose de me remorquer après une panne. Est-ce possible ?
-  reponse: Sur autoroute, dépanneur agréé seulement. Sur route, si les prescriptions du constructeur et les conditions de
-    sécurité le permettent ; sinon, dépannage.
-  explication: Une corde ne suffit pas à rendre le remorquage sûr. Transmission automatique, assistance de freinage et direction
-    peuvent imposer un transport sur plateau.
+  reponse: 'Sur autoroute, non : dépanneur agréé seulement. Sur route, oui avec une barre ou une corde, à allure très
+    réduite et feux de détresse allumés.'
+  explication: 'Boîte automatique, freinage et direction assistés inactifs moteur coupé : la notice peut imposer un
+    plateau. Le tracté doit avoir un conducteur au volant.'
   theme: M
   sous_theme: depannage
-  importance: utile
   source: lepermislibre — Remorquer un véhicule en panne ; securite-routiere.gouv.fr — Véhicule en panne
-  tags:
-  - revision::v3

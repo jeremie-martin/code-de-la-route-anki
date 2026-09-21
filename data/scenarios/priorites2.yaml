@@ -97,19 +97,6 @@
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R422-3"
-- id: scn-parking-gauche
-  kind: intersection
-  spec:
-    approaches:
-      S: {vehicle: {colour: bleu, me: true}, goes: straight}
-      W: {vehicle: {colour: rouge}, goes: left, private: true}
-  check: {pair: [S, W, avant]}
-  question: "Une voiture sort d'une station-service (à ma gauche) pour tourner à gauche et s'engager devant moi, dans mon sens. Doit-elle me laisser passer ?"
-  reponse: "Oui : elle quitte un lieu non ouvert à la circulation publique et cède le passage à tous les usagers, piétons du trottoir compris."
-  explication: "Article R415-9. Elle est en plus à ma gauche. Je reste attentif : les sorties de parking sont des lieux d'accrochages fréquents."
-  theme: L
-  sous_theme: priorites
-  source: "Code de la route, art. R415-9"
 - id: scn-t-intersection-droite
   kind: intersection
   spec:
@@ -168,8 +155,6 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-12
-  tags:
-  - revision::v3
 - id: scn-pd-droite-tourne-gauche
   kind: intersection
   spec:
@@ -183,8 +168,6 @@
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5 et R415-4"
-  tags:
-  - revision::v8
 - id: scn-t-moi-branche
   kind: intersection
   spec:
@@ -199,8 +182,6 @@
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5"
-  tags:
-  - revision::v8
 - id: scn-moi-sortie-parking
   kind: intersection
   spec:
@@ -214,8 +195,6 @@
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-9 et R415-11"
-  tags:
-  - revision::v8
 - id: scn-pd-cycliste-droite
   kind: intersection
   spec:
@@ -229,8 +208,6 @@
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5 et R412-6"
-  tags:
-  - revision::v8
 - id: scn-giratoire-autre-entree
   kind: roundabout
   spec:
@@ -244,5 +221,3 @@
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-10"
-  tags:
-  - revision::v8

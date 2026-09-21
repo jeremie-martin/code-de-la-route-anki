@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from build.build import curriculum, load_all, validate, inline_md, fait_html
+from build.build import curriculum, load_all, validate, lint, inline_md, fait_html
 from build.learning import card_plan, objectives, annotate, validate_objectives
 from build.priority import passes_before
 from build.models import notetypes
@@ -60,14 +60,14 @@ class LearningTests(unittest.TestCase):
 
     def test_typo_in_coverage_cannot_silently_drop_a_competence(self):
         data = copy.deepcopy(self.data)
-        data['questions'] = [n for n in data['questions'] if n['id'] != 'c-arret-somme']
-        self.assertTrue(any('c-arret-somme' in error for error in validate(data)))
+        data['questions'] = [n for n in data['questions'] if n['id'] != 'l-priorite-droite-defaut']
+        self.assertTrue(any('l-priorite-droite-defaut' in error for error in validate(data)))
 
     def test_fronts_do_not_supply_topic_or_answer_fields(self):
         for nt in notetypes():
             for template in nt['templates']:
                 self.assertNotIn('{{SousTheme}}', template['qfmt'])
-                for answer in ('Reponse', 'Verdict', 'Pourquoi', 'Signification', 'Nom', 'Repere'):
+                for answer in ('Reponse', 'Verdict', 'Pourquoi', 'Signification', 'Nom'):
                     self.assertNotIn('{{' + answer + '}}', template['qfmt'])
 
     def test_visual_applications_follow_their_recognition(self):
@@ -86,19 +86,29 @@ class LearningTests(unittest.TestCase):
             data['faits'][0]['rappels'] = invalid
             self.assertTrue(any('chaque rappel' in e for e in validate(data)))
 
-    def test_a_sentence_carries_one_target_and_a_short_one(self):
+    def test_editorial_limits_warn_but_never_fail_the_build(self):
         data = copy.deepcopy(self.data)
         sheet = copy.deepcopy(next(n for n in data['faits'] if 'rappels' not in n))
         sheet['id'], sheet['texte'] = 'test-sheet', 'A {{c1::1}} et B {{c2::2}}.'
         recitation = copy.deepcopy(sheet)
         recitation['id'], recitation['texte'] = 'test-recitation', 'Règle : {{c1::une phrase entière de neuf mots à réciter sans faute}}.'
         data['faits'] += [sheet, recitation]
-        errors = validate(data)
-        self.assertTrue(any('test-sheet' in e and 'rappels' in e for e in errors), errors)
-        self.assertTrue(any('test-recitation' in e and 'réciter' in e for e in errors), errors)
+        self.assertFalse([e for e in validate(data) if 'test-' in e and 'objectif' not in e])
+        warnings = lint(data)
+        self.assertTrue(any('test-sheet' in w and 'trous' in w for w in warnings), warnings)
+        self.assertTrue(any('test-recitation' in w and 'réciter' in w for w in warnings), warnings)
         sheet['multi_ok'] = True
         recitation['long_ok'] = True
-        self.assertFalse([e for e in validate(data) if 'test-' in e and 'objectif' not in e])
+        self.assertFalse([w for w in lint(data) if 'test-' in w])
+
+    def test_style_tells_are_reported(self):
+        data = copy.deepcopy(self.data)
+        for index in range(6):
+            note = copy.deepcopy(data['affirmations'][0])
+            note.update(id=f'test-tell-{index}', affirmation=f'Je m\'arrête, attendu que la règle {index} l\'impose.', verdict='faux')
+            data['affirmations'].append(note)
+        with patch('build.build.STYLE_MARKERS', ['attendu que']):
+            self.assertTrue(any('attendu que' in w for w in lint(data)))
 
     def test_independent_prompts_render_with_native_anki_conditionals(self):
         from anki.collection import Collection
@@ -155,8 +165,10 @@ class LearningTests(unittest.TestCase):
         self.assertEqual(passes_before(spec, 'S', 'E'), 'apres')
         spec['approaches']['S']['vehicle']['siren'] = True
         self.assertEqual(passes_before(spec, 'S', 'E'), 'avant')
-        spec['agent'] = 'bras_tendus_NS'
+        spec['agent'] = 'bras_tendus_EW'  # arms across the S vehicle's path: it faces the agent and stops
         self.assertEqual(passes_before(spec, 'S', 'E'), 'apres')
+        spec['agent'] = 'bras_tendus_NS'  # arms along its path: it sees the profile and passes
+        self.assertEqual(passes_before(spec, 'S', 'E'), 'avant')
 
     def test_flashing_amber_is_not_a_fixed_stop_light(self):
         spec = {'approaches': {

@@ -4,9 +4,6 @@
     ne l’impose pas partout.
   theme: U
   sous_theme: edpm
-  tags:
-  - nouveau::2023
-  - revision::v4
   source: Code de la route, art. R412-43-1 à R412-43-3 ; décret n° 2023-848
   rappels:
   - 'Âge minimal national pour conduire un EDPM motorisé : {{c1::14 ans}}.'
@@ -18,9 +15,6 @@
   theme: U
   sous_theme: cyclistes
   source: Code de la route, art. R431-1-1, R431-1-3, R412-34, R431-7
-  tags:
-  - revision::v3
-  - revision::v4
   rappels:
   - À vélo, le casque attaché est obligatoire pour un conducteur ou passager de moins de {{c1::12 ans}}.
   - À vélo hors agglomération, le gilet de haute visibilité est obligatoire {{c2::la nuit ou par visibilité insuffisante}}.
@@ -33,22 +27,16 @@
     les pédales) et un avertisseur sonore. Les catadioptres font voir le vélo de côté dans les phares d’une voiture qui débouche.'
   theme: U
   sous_theme: cyclistes
-  importance: utile
   source: Code de la route, art. R313-4 et s. ; securite-routiere.gouv.fr — Équipements obligatoires vélo
   rappels:
-  - De nuit ou par visibilité insuffisante, un vélo doit avoir un feu avant {{c1::blanc ou jaune}} et un feu arrière rouge.
-  - De nuit ou par visibilité insuffisante, un vélo doit avoir un feu arrière {{c2::rouge}} et un feu avant blanc ou jaune.
-  tags:
-  - revision::v6
+  - De nuit ou par visibilité insuffisante, un vélo doit avoir un feu avant {{c1::blanc ou jaune}} et un feu arrière
+    rouge.
 - id: u-interfiles-chiffres
   explication: Files ininterrompues sur toutes les voies ; motos et tricycles L3e/L5e d’au plus 1 m de large, entre les deux
     voies les plus à gauche. Pas de neige, verglas ou travaux sur la chaussée ; espace suffisant. La limitation locale plus
     basse ne suffit pas à exclure l’inter-files.
   theme: U
   sous_theme: motos
-  tags:
-  - nouveau::2025
-  - revision::v4
   source: Code de la route, R412-11-3 — https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050963583/
   rappels:
   - L'inter-files est réglementée sur les autoroutes et routes à chaussées séparées (au moins deux voies par sens) normalement
@@ -66,8 +54,6 @@
   rappels:
   - 'Conduire un deux-roues motorisé sans casque homologué attaché : 135 € et {{c1::3 points}}.'
   - Depuis 2016, des {{c2::gants}} certifiés CE sont obligatoires à moto et en cyclomoteur, pour le conducteur et le passager.
-  tags:
-  - revision::v6
 - id: u-pl-angles-morts-chiffres
   texte: Depuis 2021, les véhicules de plus de {{c1::3,5 t}} portent des autocollants « angles morts » sur les côtés et à
     l’arrière.
@@ -76,5 +62,3 @@
   theme: U
   sous_theme: poids_lourds
   source: securite-routiere.gouv.fr — Angles morts ; Code de la route, art. R313-32-1 et R412-12
-  tags:
-  - revision::v6

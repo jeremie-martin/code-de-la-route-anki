@@ -10,8 +10,6 @@
   theme: M
   sous_theme: tableau_de_bord
   source: Ornikar — Voyants lumineux ; En Voiture Simone — Tableau de bord
-  tags:
-  - revision::v3
 - id: aff-m-autotest-voyants
   contexte: La notice prévoit que le témoin de pression d’huile s’allume à la mise du contact, moteur arrêté.
   affirmation: Un voyant qui ne s'allume pas du tout à ce moment-là est bon signe.
@@ -21,8 +19,6 @@
   theme: M
   sous_theme: tableau_de_bord
   source: lepermislibre — Voyants de la voiture
-  tags:
-  - revision::v3
 - id: aff-m-voyant-abs-blocage
   contexte: Le voyant ABS orange reste allumé, sans autre alerte ni anomalie du freinage.
   affirmation: Lors d'un freinage d'urgence, les roues risquent de se bloquer.
@@ -32,8 +28,6 @@
   theme: M
   sous_theme: tableau_de_bord
   source: Sécurité routière — Exemples de nouvelles questions (Q5)
-  tags:
-  - revision::v3
 - id: aff-m-voyant-abs-arret
   contexte: Seul le voyant ABS orange reste allumé ; aucun voyant rouge ni anomalie du freinage ordinaire.
   affirmation: Je dois m'arrêter immédiatement.
@@ -43,26 +37,6 @@
   theme: M
   sous_theme: tableau_de_bord
   source: Sécurité routière — Exemples de nouvelles questions (Q5)
-  tags:
-  - revision::v3
-- id: aff-m-abs-distance
-  affirmation: L’ABS garantit une distance de freinage plus courte sur tous les revêtements.
-  verdict: faux
-  pourquoi: Son rôle est d’éviter le blocage pour conserver la direction. Il ne garantit pas une distance plus courte,
-    notamment sur gravier ou neige ; l’adhérence reste déterminante.
-  theme: M
-  sous_theme: freinage
-  source: securite-routiere.gouv.fr — Dépliant vitesse ; Ornikar — ABS
-  tags:
-  - revision::v3
-- id: aff-m-abs-pedale
-  contexte: 'Freinage d''urgence : la pédale vibre fortement et repousse mon pied.'
-  affirmation: Je relâche un peu la pression pour laisser l'ABS travailler.
-  verdict: faux
-  pourquoi: 'Ces vibrations sont le fonctionnement normal de l''ABS. On écrase la pédale à fond et on la maintient sans relâcher, en braquant si nécessaire ; relâcher rallonge la distance d''arrêt.'
-  theme: M
-  sous_theme: freinage
-  source: securite-routiere.gouv.fr — Dépliant vitesse ; Ornikar — ABS
 - id: aff-m-abs-direction
   contexte: Un obstacle surgit, je freine en urgence sur un véhicule équipé de l'ABS.
   affirmation: Je peux continuer à braquer pendant le freinage pour contourner l'obstacle.
@@ -80,8 +54,6 @@
   theme: M
   sous_theme: freinage
   source: Ornikar — Frein à main ; Stych — Pannes
-  tags:
-  - revision::v3
 - id: aff-m-pression-chaud
   affirmation: La pression des pneus se contrôle après quelques kilomètres, quand ils sont chauds.
   verdict: faux
@@ -98,8 +70,6 @@
   theme: M
   sous_theme: pneus
   source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
-  tags:
-  - revision::v3
 - id: aff-m-surgonflage
   affirmation: Un pneu surgonflé s'use au centre de la bande de roulement et adhère moins.
   verdict: vrai
@@ -114,7 +84,6 @@
   pourquoi: 'Les pneus les plus adhérents vont à l''arrière : un train arrière qui décroche part en survirage, bien plus difficile à rattraper qu''un sous-virage. Les deux pneus d''un même essieu doivent être identiques.'
   theme: M
   sous_theme: pneus
-  importance: utile
   source: Michelin — Mixage des pneus ; Ornikar — Même essieu
 - id: aff-m-pneu-age
   affirmation: Un pneu de plus de dix ans doit être remplacé, même s'il a très peu roulé.
@@ -122,13 +91,12 @@
   pourquoi: 'La gomme vieillit et se fissure indépendamment du kilométrage. Le DOT à quatre chiffres (semaine et année) donne l''âge ; un contrôle professionnel s''impose dès cinq à six ans.'
   theme: M
   sous_theme: pneus
-  importance: utile
   source: Allopneus — Durée de vie d'un pneu ; Ornikar — Vérifier le flanc
 - id: aff-m-4-saisons-3pmsf
   contexte: Zone soumise à la loi Montagne, période hivernale.
   affirmation: Des pneus 4 saisons marqués du symbole alpin 3PMSF comptent comme des pneus hiver.
   verdict: vrai
-  pourquoi: 'Depuis le 1er novembre 2024, seul le marquage 3PMSF (montagne à trois pics et flocon) vaut pneu hiver ; un pneu 4 saisons qui le porte est accepté. Le seul marquage M+S ne suffit plus.'
+  pourquoi: 'Depuis le 1er novembre 2024, le pneu hiver doit porter le symbole alpin 3PMSF (montagne à trois pics et flocon), en plus du marquage M+S ; un pneu 4 saisons qui les porte est accepté. Le seul marquage M+S ne suffit plus.'
   theme: M
   sous_theme: pneus
   source: service-public.fr F19459 ; Code de la route, art. D314-8
@@ -142,8 +110,6 @@
   theme: M
   sous_theme: entretien
   source: Ornikar — Liquide de refroidissement
-  tags:
-  - revision::v3
 - id: aff-m-boite-auto-p-arret
   affirmation: Sur une boîte automatique, on n'engage P ou R qu'une fois le véhicule complètement arrêté.
   verdict: vrai
@@ -158,7 +124,6 @@
   pourquoi: 'Un feu défaillant est une contravention de 3e classe (68 €) avec immobilisation possible, surtout la nuit. Un seul phare rend aussi le véhicule difficile à identifier par les autres usagers.'
   theme: M
   sous_theme: feux
-  importance: utile
   source: Code de la route, art. R313-2 et s. ; service-public.fr F19459
 - id: aff-m-stationnement-arriere
   contexte: Ce conducteur va se ranger en créneau avec l'assistance au stationnement.
@@ -187,13 +152,11 @@
   contexte: Limiteur réglé sur 90 km/h, longue descente.
   affirmation: Le limiteur garantit le respect de 90 km/h dans toute descente.
   verdict: faux
-  pourquoi: 'De nombreux limiteurs agissent seulement sur l’accélération : une descente peut faire dépasser la consigne.
-    D’autres systèmes freinent. Je surveille la vitesse et utilise les commandes adaptées, selon la notice.'
+  pourquoi: 'Le limiteur n''agit que sur l''accélérateur : en descente, la voiture peut dépasser la consigne, sans
+    que le système freine. Je surveille le compteur et j''utilise le frein moteur ou le frein.'
   theme: M
   sous_theme: adas
   source: Ornikar — Limiteur et régulateur ; Stych — Aides à la conduite
-  tags:
-  - revision::v3
 - id: aff-m-angle-mort-moto
   affirmation: Le détecteur d'angle mort peut ne pas signaler une moto qui remonte vite la file voisine.
   verdict: vrai
@@ -203,7 +166,7 @@
   source: securite-routiere.gouv.fr — ADAS ; Stych — Nouvelles aides à la conduite
 - id: aff-m-detecteur-fatigue
   contexte: Ma voiture est équipée d’un détecteur de fatigue (pictogramme « tasse de café »).
-  affirmation: Tant que le système ne m’alerte pas, je peux considérer que je suis apte à poursuivre.
+  affirmation: Sans alerte du détecteur, je peux considérer que je suis apte à poursuivre.
   verdict: faux
   pourquoi: 'Le système déduit la fatigue des écarts de trajectoire et des mouvements du volant : il peut se déclencher
     tard ou pas du tout. Bâillements, paupières lourdes ou regard fixe commandent l’arrêt, alerte ou non ; la tasse de
@@ -211,8 +174,6 @@
   theme: M
   sous_theme: adas
   source: securite-routiere.gouv.fr — Les aides à la conduite (ADAS), comité des experts du CNSR, 2024
-  tags:
-  - revision::v8
 - id: aff-m-isa-panneaux
   contexte: Voiture neuve équipée de l’adaptation intelligente de la vitesse (ISA), obligatoire depuis juillet 2024.
   affirmation: La limitation affichée par le système me dispense de lire les panneaux.
@@ -223,5 +184,32 @@
   theme: M
   sous_theme: adas
   source: securite-routiere.gouv.fr — Les aides à la conduite (ADAS) ; règlement (UE) 2019/2144 (GSR2)
-  tags:
-  - revision::v8
+- id: aff-m-tpms-orange
+  contexte: En roulant, le voyant orange de pression des pneus s'allume ; la voiture ne tire pas et ne vibre pas.
+  affirmation: Je peux rejoindre la prochaine station à allure modérée, à condition de contrôler la pression sans
+    tarder.
+  verdict: vrai
+  pourquoi: 'Orange = anomalie à traiter rapidement, contrairement au rouge qui impose l''arrêt. Si la voiture tire
+    d''un côté, vibre ou si le voyant clignote, c''est peut-être une crevaison : je m''arrête en sécurité.'
+  theme: M
+  sous_theme: voyants
+  source: Notices constructeurs (Renault, témoins lumineux) ; REMC
+- id: aff-m-regulateur-adaptatif
+  contexte: Régulateur adaptatif (ACC) enclenché sur autoroute, trafic fluide.
+  affirmation: Le système règle ma vitesse sur le véhicule qui précède, mais la surveillance et le freinage d'urgence
+    restent de ma responsabilité.
+  verdict: vrai
+  pourquoi: L'ACC maintient un intervalle grâce à un radar ; il peut ne pas détecter un véhicule arrêté, un deux-roues
+    ou un obstacle en courbe, et ne remplace ni l'observation ni la décision.
+  theme: M
+  sous_theme: adas
+  source: CNSR, Comité des experts — Les aides à la conduite (ADAS), 2024
+- id: aff-m-camera-recul
+  contexte: Ma voiture est équipée d'une caméra de recul et de capteurs de stationnement.
+  affirmation: Grâce à eux, je peux reculer sans contrôler les rétroviseurs ni l'angle mort.
+  verdict: faux
+  pourquoi: Le champ de la caméra est limité et déformé ; un piéton ou un vélo peut arriver par le côté. Caméra,
+    capteurs, rétroviseurs et regard vers l'arrière se complètent.
+  theme: M
+  sous_theme: adas
+  source: CNSR, Comité des experts — Les aides à la conduite (ADAS), 2024

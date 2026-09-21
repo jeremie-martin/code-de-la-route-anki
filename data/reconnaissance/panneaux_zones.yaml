@@ -9,7 +9,6 @@
   conduite: Ne stationner que sur les emplacements matérialisés.
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b6b2
   type: panneau
@@ -22,7 +21,6 @@
   complement: 'Mémo : « 1 » est impair.'
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b6b3
   type: panneau
@@ -35,7 +33,6 @@
   complement: Le marquage au sol de la zone bleue peut être bleu.
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b6b4
   type: panneau
@@ -47,7 +44,6 @@
   conduite: Payer et afficher le ticket ; sinon forfait post-stationnement (FPS).
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b30
   type: panneau
@@ -60,7 +56,6 @@
   complement: Double-sens cyclable par défaut.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: B14 30 (rond seul) = 30 km/h sur cette rue ; B30 (ZONE 30) = 30 km/h dans toute la zone.
 - id: b51
@@ -73,7 +68,6 @@
   conduite: Reprendre 50 km/h maximum si en agglomération.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b52
   type: panneau
@@ -86,7 +80,6 @@
   complement: Double-sens cyclable par défaut.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Trois vitesses : aire piétonne = allure du pas ; zone de rencontre = 20 ; zone 30 = 30.'
 - id: b54
@@ -100,7 +93,6 @@
   piege: 'Piège de forme : B52 et B54 sont des carrés BLEUS ; B30, B56, B58 sont blancs bordés de rouge.'
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b56
   type: panneau
@@ -113,7 +105,6 @@
   complement: Un panonceau précise les catégories, jours et heures concernés.
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b58
   type: panneau
@@ -126,8 +117,5 @@
   complement: Le marquage M+S seul ne suffit plus depuis le 1er novembre 2024.
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12
   piege: B58 porte sur l’équipement saisonnier de la zone ; B26 peut demander un équipement en service sur une section. Lire son complément.
-  tags:
-  - revision::v3_1

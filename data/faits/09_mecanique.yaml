@@ -4,8 +4,6 @@
   theme: M
   sous_theme: pneus
   source: R314-1 ; Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
-  tags:
-  - revision::v6
   rappels:
   - 'Profondeur minimale réglementaire des rainures principales d’un pneu de voiture : {{c1::1,6 mm}}.'
   - Pour comparer la pression d’un pneu à la valeur de référence du constructeur, la mesurer à {{c2::froid}}.
@@ -16,12 +14,9 @@
     prescriptions du lieu.'
   theme: M
   sous_theme: pneus
-  importance: utile
   source: Code de la route, art. R413-7 et R314-3 ; Stych
-  tags:
-  - revision::v6
   rappels:
-  - Les pneus admis comme pneus hiver portent le marquage {{c1::3PMSF}} (flocon dans une montagne).
+  - Les pneus admis comme pneus hiver portent, avec le M+S, le marquage {{c1::3PMSF}} (flocon dans une montagne).
   - Avec des pneus cloutés, la vitesse est plafonnée à {{c2::90 km/h}}, sans relever une limite plus basse.
 - id: m-feux-portees
   explication: Distinguer « être visible » (position) et « éclairer » (croisement, route). Ces minima réglementaires
@@ -33,6 +28,3 @@
   - De nuit par temps clair, les feux de position avant doivent être visibles à {{c1::150 m}}.
   - De nuit par temps clair, les feux de croisement doivent éclairer efficacement à au moins {{c2::30 m}}.
   - De nuit par temps clair, les feux de route doivent éclairer efficacement à au moins {{c3::100 m}}.
-  tags:
-  - revision::v4
-  - revision::v5

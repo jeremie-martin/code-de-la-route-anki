@@ -57,7 +57,7 @@
   sous_theme: enfants
   source: Code de la route, art. R412-2 et R412-3 ; service-public.fr F628
 - id: aff-s-enfant-135-cm
-  affirmation: Un enfant qui mesure plus de 1,35 m peut se passer de dispositif de retenue, quel que soit son âge.
+  affirmation: Un enfant de plus de 1,35 m peut se passer de dispositif de retenue, même avant 10 ans.
   verdict: faux
   pourquoi: 'Le critère de 1,35 m vient d''autres pays européens. En France, la limite est l''âge de 10 ans (R412-2) ; on n''y échappe que par une morphologie adaptée à la ceinture, un certificat médical, un taxi ou un transport en commun.'
   theme: S
@@ -85,7 +85,6 @@
   pourquoi: 'Le siège s''ancre par deux crochets sur des points fixes de la caisse, avec sangle haute ou jambe de force, au lieu d''être sanglé par la ceinture. Isofix équipe les véhicules neufs depuis 2011 ; deux sièges sur trois sont mal installés.'
   theme: S
   sous_theme: enfants
-  importance: utile
   source: service-public.fr F628 ; securite-routiere.gouv.fr — Transporter un enfant
 - id: aff-s-chargement-distance-arret
   contexte: Quatre passagers et un coffre plein pour partir en vacances.
@@ -125,7 +124,6 @@
   pourquoi: 'On ne transporte de passagers que sur des sièges du véhicule, dans la limite des places de la carte grise : personne dans une caravane, dans un coffre ou dans la zone de chargement d''un utilitaire.'
   theme: S
   sous_theme: chargement
-  importance: utile
   source: Code de la route, art. R412-1-1 ; Stych — Chargement et remorque
 - id: aff-s-remorque-retroviseurs
   contexte: La caravane attelée est plus large que la voiture.
@@ -134,7 +132,6 @@
   pourquoi: 'Le conducteur doit conserver une vision vers l''arrière sans angle mort notable : si la remorque masque le champ des rétroviseurs d''origine, des bras rallongés sont nécessaires. La plaque et les feux doivent aussi rester visibles.'
   theme: S
   sous_theme: chargement
-  importance: utile
   source: Code de la route, art. R316-6 ; securite-routiere.gouv.fr — Équipement de la voiture
 - id: aff-s-abs-passive
   affirmation: L'ABS et l'ESP font partie de la sécurité passive du véhicule.
@@ -149,5 +146,4 @@
   pourquoi: 'Le classement porte sur quatre domaines : protection des occupants adultes, protection des occupants enfants, protection des usagers vulnérables et aides à la sécurité. Cinq étoiles au maximum.'
   theme: S
   sous_theme: equipements
-  importance: utile
   source: Euro NCAP — How to read the stars

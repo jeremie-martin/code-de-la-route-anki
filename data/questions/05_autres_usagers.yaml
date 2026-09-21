@@ -32,9 +32,8 @@
     ?
   reponse: 'Je le suis à son allure, sans klaxonner : en zone de rencontre (20 km/h maximum), les piétons circulent sur toute
     la chaussée et ont priorité sur les véhicules.'
-  explication: 'Priorité des piétons sur tous les véhicules, sauf le tramway. Aire piétonne (B54) : allure du pas, desserte
-    seulement. Zone 30 (B30) : priorités habituelles, les piétons y traversent aux passages. Double sens cyclable par défaut
-    dans les trois.'
+  explication: 'Aire piétonne (B54) : allure du pas, desserte seulement. Zone 30 (B30) : priorités habituelles, les piétons y
+    traversent aux passages. Double sens cyclable par défaut dans les trois.'
   theme: U
   sous_theme: pietons
   source: Code de la route, art. R110-2 et R415-11
@@ -57,8 +56,6 @@
   theme: U
   sous_theme: pietons
   source: Code de la route, art. R415-11 ; ONISR 2025 (bilan définitif)
-  tags:
-  - revision::v4
 - id: u-fauteuil-roulant-chaussee
   question: Hors agglomération, une personne en fauteuil roulant circule sur la chaussée devant moi, près du bord droit. Que
     fais-je ?
@@ -117,9 +114,6 @@
     deviens piéton). Circuler hors des voies autorisées : 135 €.'
   theme: U
   sous_theme: edpm
-  tags:
-  - nouveau::2023
-  - revision::v4
   source: Code de la route, art. R412-43-1 ; service-public.fr F308
 - id: u-edpm-pieton-ou-vehicule
   question: À une intersection sans signalisation, une trottinette électrique arrive à ma droite. Qui passe ?
@@ -139,8 +133,6 @@
   theme: U
   sous_theme: motos
   source: securite-routiere.gouv.fr — Être visible à moto ; Code de la route, art. R415-4
-  tags:
-  - revision::v4
 - id: u-interfiles
   question: Autoroute embouteillée, files ininterrompues sur toutes les voies ; une moto remonte entre les deux files de gauche.
     Que fais-je ?
@@ -150,8 +142,6 @@
     séparées ≥ 70 km/h, circulation dense, 50 km/h maximum (30 si une file est arrêtée).'
   theme: U
   sous_theme: motos
-  tags:
-  - nouveau::2025
   source: Code de la route, art. R412-11-3 (décret n° 2025-33 du 9 janvier 2025)
 - id: u-pl-angles-morts
   question: Je suis à vélo, arrêté au feu rouge à droite d'un camion, à hauteur de sa portière. Son conducteur me voit-il
@@ -163,8 +153,6 @@
   theme: U
   sous_theme: poids_lourds
   source: 'securite-routiere.gouv.fr — Vrai ou faux : angles morts'
-  tags:
-  - revision::v4
 - id: u-pl-tourne-droite
   question: Un poids lourd met son clignotant droit devant moi et se déporte vers la gauche. Que fait-il et que dois-je faire
     ?
@@ -175,8 +163,6 @@
   theme: U
   sous_theme: poids_lourds
   source: Ornikar — Transports de marchandises ; securite-routiere.gouv.fr — Angles morts
-  tags:
-  - revision::v4
 - id: u-pl-giratoire-deport
   question: Dans un carrefour à sens giratoire à deux voies, le poids lourd devant moi roule à cheval sur les deux voies.
     Puis-je le dépasser dans l'anneau ?
@@ -186,7 +172,6 @@
     qu''il semble libérer.'
   theme: U
   sous_theme: poids_lourds
-  importance: utile
   source: securite-routiere.gouv.fr — Angles morts ; Ornikar — Transports de marchandises
 - id: u-pl-depasser-suivre
   question: Route à double sens, je suis derrière un poids lourd que je souhaite dépasser. Quelles précautions particulières
@@ -206,24 +191,23 @@
     Accès interdit à certains tunnels (B18a/b/c).'
   theme: U
   sous_theme: poids_lourds
-  importance: utile
   source: Accord ADR ; IISR (B18)
 - id: u-tram-depasser
   dedup_ok:
   - aff-u-car-scolaire-depassement
-  question: Un tramway est arrêté à sa station et des voyageurs descendent de mon côté. Puis-je le dépasser ?
-  reponse: 'Non : on ne dépasse pas un tramway (ou un train) à l’arrêt du côté où les voyageurs montent ou descendent ; j’attends
-    derrière, à distance.'
+  question: Un tramway est arrêté à sa station et des voyageurs descendent de mon côté. Que fais-je ?
+  reponse: 'Je m''arrête et j''attends : on ne dépasse pas un tramway à l''arrêt du côté où les voyageurs montent
+    ou descendent.'
   explication: En marche, un tramway se dépasse par la droite si l'intervalle jusqu'au bord de la chaussée suffit (R414-6
     II 2°). Le tram ne peut ni dévier ni freiner court.
   theme: U
   sous_theme: transports_commun
   source: Code de la route, art. R414-13 et R414-6
 - id: u-voie-bus
-  question: Avenue avec une voie « BUS » à ma droite ; je veux tourner à droite au prochain carrefour. Puis-je rouler sur
-    cette voie ?
-  reponse: 'Non, sauf pour la traverser au dernier moment en cédant aux bus : la voie réservée est interdite aux autres véhicules
-    (135 €), sauf catégories admises par panonceau.'
+  question: Avenue avec une voie « BUS » à ma droite ; je veux tourner à droite au prochain carrefour. Comment procéder
+    ?
+  reponse: 'Je reste sur ma voie et je ne traverse la voie bus qu''au dernier moment, en cédant aux bus : elle est
+    interdite aux autres véhicules.'
   explication: 'S''y arrêter ou stationner : très gênant, 135 €. Un damier blanc au sol marque la traversée d''une voie bus
     à un carrefour.'
   theme: U
@@ -240,20 +224,20 @@
   sous_theme: vehicules_prioritaires
   source: Code de la route, art. R415-12 ; securite-routiere.gouv.fr — Info/intox
 - id: u-ambulance-privee-sans-sirene
-  question: Une ambulance privée arrive derrière moi, feux bleus à éclats allumés mais sans avertisseur sonore. Dois-je lui
-    céder le passage ?
-  reponse: 'Non : elle n’a que des facilités de passage ; je facilite si je le peux sans danger. Céder n’est obligatoire qu’à
-    un véhicule prioritaire qui annonce son approche.'
+  question: Une ambulance privée arrive derrière moi, feux bleus à éclats allumés mais sans avertisseur sonore. Que
+    fais-je ?
+  reponse: 'Je lui facilite le passage si je le peux sans danger : sans sirène, elle n''a que des facilités de passage,
+    pas la priorité.'
   explication: 'Prioritaires (police, pompiers, SAMU…) : gyrophare bleu + deux tons → je cède (R415-12). Facilités de passage
     (ambulances privées, EDF, transports de fonds) : feux à éclats + trois tons → je facilite.'
   theme: U
   sous_theme: vehicules_prioritaires
   source: Code de la route, art. R311-1 (6.5 et 6.6), R415-12 et R414-2
 - id: u-gyrophare-orange
-  question: Un véhicule avec un gyrophare orange (dépanneuse, chasse-neige, engin de voirie) approche. Est-il prioritaire
-    ?
-  reponse: 'Non : le gyrophare orange signale un véhicule lent, encombrant ou en intervention, donc un danger : prudence et
-    distance, mais aucune priorité.'
+  question: Un véhicule avec un gyrophare orange (dépanneuse, chasse-neige, engin de voirie) approche. Que signale
+    ce gyrophare ?
+  reponse: Un véhicule lent, encombrant ou en intervention, donc un danger à contourner prudemment ; il n'est pas
+    prioritaire.
   explication: Gyrophare bleu + deux tons = prioritaire, on cède. Feux bleus à éclats + trois tons = facilités de passage
     (ambulance privée, EDF), on facilite sans obligation.
   theme: U
@@ -277,7 +261,6 @@
     garde la priorité (R412-33).'
   theme: U
   sous_theme: vehicules_lents_animaux
-  importance: utile
   source: Code de la route, art. R433-17, R433-2 III et R412-33
 - id: u-tracteur-depassement
   question: Un tracteur, gyrophare orange allumé, roule à 25 km/h devant moi sur une route à ligne discontinue, bonne visibilité,
@@ -317,7 +300,6 @@
     âgé — donc peu expérimenté ou peu réactif : je lui laisse de la marge.'
   theme: U
   sous_theme: vehicules_lents_animaux
-  importance: utile
   source: Code de la route, art. R311-1 et R421-2 ; service-public.fr — Permis AM
 - id: u-moto-ecart-chaussee
   question: Le motard qui me précède se déporte brusquement vers le milieu de la voie à l'approche d'une plaque d'égout mouillée.
@@ -339,17 +321,13 @@
   theme: U
   sous_theme: poids_lourds
   source: Code de la route, art. R421-3 ; coursdecode — Les poids lourds
-  tags:
-  - revision::v3_1
 - id: u-edpm-hors-agglo
-  question: Je suis en trottinette électrique et je veux rejoindre le village voisin par une départementale limitée à 80 km/h.
-    Puis-je ?
-  reponse: 'Non : hors agglomération, un EDPM ne circule que sur voies vertes et pistes cyclables ; exception : autorisation
-    locale sur route à 80 km/h (casque, gilet et feux exigés).'
+  question: Je suis en trottinette électrique et je veux rejoindre le village voisin par une départementale limitée
+    à 80 km/h. Est-ce permis ?
+  reponse: 'Non : hors agglomération, un EDPM ne circule que sur les voies vertes et les pistes cyclables, sauf autorisation
+    locale (casque, gilet et feux exigés).'
   explication: 'En agglomération au contraire, la chaussée limitée à 50 km/h est autorisée à défaut d''aménagement cyclable.
     Circuler hors des voies permises : 135 €.'
   theme: U
   sous_theme: edpm
-  tags:
-  - nouveau::2023
   source: Code de la route, art. R412-43-1 II et III ; service-public.fr F308

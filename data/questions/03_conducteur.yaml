@@ -10,20 +10,11 @@
 - id: c-croisement-nuit-regard
   question: De nuit, un véhicule arrive en face avec ses phares. Où porter le regard pour le croiser en sécurité ?
   reponse: Vers la droite, le plus loin possible, sans fixer ses feux ; et je ralentis.
-  explication: Fixer les phares éblouit et attire le véhicule vers eux ; garder les feux de route éblouirait l’autre conducteur.
-    Un exemple public de question (2023) attend exactement ces deux réponses.
+  explication: Fixer les phares éblouit et attire le véhicule vers eux ; garder les feux de route éblouirait l’autre
+    conducteur. L'épreuve attend exactement ces deux réponses.
   theme: C
   sous_theme: perception
   source: Sécurité routière — Exemples de nouvelles questions (Q20)
-- id: c-eblouissement-duree
-  question: Ébloui de nuit, puis-je compter sur un délai fixe pour retrouver une vision normale ?
-  reponse: 'Non : la récupération varie. Je ralentis selon ce que je vois et regarde le bord droit sans fixer les phares.'
-  explication: Ne pas apprendre un délai garanti selon l’âge. L’état visuel et l’intensité lumineuse changent la récupération.
-  theme: C
-  sous_theme: perception
-  source: securite-routiere.gouv.fr — Conduire la nuit ; Dépliant La vue
-  tags:
-  - revision::v3
 - id: c-angle-mort-definition
   question: Qu'est-ce que l'angle mort et comment le contrôle-t-on ?
   reponse: La zone latérale arrière invisible dans les rétroviseurs ; on la contrôle d’un regard direct par-dessus l’épaule,
@@ -34,7 +25,8 @@
   sous_theme: perception
   source: REMC ; securite-routiere.gouv.fr — Les angles morts
 - id: c-ordre-controles-changement-file
-  question: Sur une route à deux voies dans mon sens, je veux passer sur la voie de gauche. Dans quel ordre je procède ?
+  question: Sur une route à deux voies dans mon sens, je veux passer sur la voie de gauche. Dans quel ordre est-ce
+    que je procède ?
   reponse: Rétroviseur intérieur puis gauche, clignotant, angle mort gauche (tête tournée), puis déport progressif à vitesse
     constante.
   explication: 'Certaines écoles placent l''angle mort avant le clignotant ; ce que l''ETG attend : les rétroviseurs précèdent
@@ -60,8 +52,6 @@
   theme: C
   sous_theme: vigilance
   source: Sécurité routière — Exemples de nouvelles questions (Q9)
-  tags:
-  - revision::v3
 - id: c-enfant-masque
   question: Devant une école ou une rangée de voitures stationnées, quel risque spécifique lié aux enfants faut-il anticiper
     ?
@@ -77,7 +67,7 @@
   reponse: Équilibre précaire (petites roues, freinage inégal) et faible gabarit peu détectable, surtout dans les angles morts
     et de nuit.
   explication: 'Conséquence : écart latéral d’au moins 1 m en agglomération (1,50 m hors agglomération), pas de dépassement
-    serré. Un exemple public de question (2023) retient ces deux caractéristiques.'
+    serré. L''épreuve retient ces deux caractéristiques.'
   theme: C
   sous_theme: vigilance
   source: Sécurité routière — Exemples de nouvelles questions (Q4)
@@ -98,9 +88,6 @@
   theme: C
   sous_theme: vigilance
   source: Ornikar — Pièges à éviter ; REMC
-  tags:
-  - revision::v3
-  - revision::v4
 - id: c-indice-feux-recul
   question: Une voiture stationnée devant moi a ses feux de recul (blancs) allumés. Qu'est-ce que j'anticipe ?
   reponse: 'Qu’elle va reculer ou quitter sa place : je ralentis, prêt à m’arrêter, et je garde mes distances plutôt que de
@@ -128,8 +115,6 @@
   theme: C
   sous_theme: vigilance
   source: REMC — Anticiper ; securite-routiere.gouv.fr — Enfants
-  tags:
-  - revision::v3
 - id: c-indice-cycliste-regard
   question: Devant moi, un cycliste regarde par-dessus son épaule gauche. Qu'est-ce que cela annonce ?
   reponse: 'Un déport ou un virage à gauche : je ralentis, je garde de la place et je diffère le dépassement tant que sa manœuvre
@@ -139,8 +124,6 @@
   theme: C
   sous_theme: vigilance
   source: En Voiture Simone — Les vélos ; REMC
-  tags:
-  - revision::v4
 - id: c-indice-vehicule-stationne-portiere
   question: Je longe une file de voitures stationnées en ville. Où je me place et à quelle allure ?
   reponse: 'À au moins une largeur de portière (≈ 1 m) des véhicules et à vitesse réduite : portière qui s’ouvre, piéton entre
@@ -158,8 +141,6 @@
   theme: C
   sous_theme: vigilance
   source: securite-routiere.gouv.fr — Port de la ceinture (trajets courts) ; Ornikar — Vigilance
-  tags:
-  - revision::v3
 - id: c-somnolence-que-faire
   question: Sur autoroute, je bâille, mes paupières sont lourdes et ma trajectoire flotte. Que fais-je ?
   reponse: Je gagne dès que possible un lieu d’arrêt sûr pour dormir ; je ne poursuis pas en luttant contre le sommeil.
@@ -168,18 +149,15 @@
   theme: C
   sous_theme: deficiences
   source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf
-  tags:
-  - revision::v5
 - id: c-fatigue-remedes-faux
-  question: 'Café, fenêtre ouverte, musique forte : cela suffit-il pour continuer à conduire quand on est somnolent ?'
-  reponse: Non. Je m’arrête en sécurité pour dormir ; je ne reprends que si je suis réellement apte à conduire.
+  question: 'Je suis somnolent au volant. Café, fenêtre ouverte, musique forte : que vaut chacun de ces remèdes ?'
+  reponse: 'Rien de durable : la seule solution est de m''arrêter en sécurité pour dormir, et de ne reprendre que
+    réellement apte.'
   explication: Une courte sieste peut aider mais ne garantit pas la récupération. Une fenêtre ouverte ou la musique ne remplace
     pas le sommeil. Le café ne justifie pas de continuer à lutter contre l’endormissement.
   theme: C
   sous_theme: deficiences
   source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf
-  tags:
-  - revision::v5
 - id: c-vitesse-fatigue
   question: Rouler vite fatigue-t-il plus que rouler lentement ?
   reponse: 'Oui : à vitesse élevée, le cerveau traite plus d’informations en moins de temps ; stress, fatigue et perte de
@@ -207,8 +185,6 @@
   theme: C
   sous_theme: deficiences
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
-  tags:
-  - revision::v5
 - id: c-emotions
   question: Peut-on prendre le volant après une forte émotion (dispute, colère, mauvaise nouvelle) ?
   reponse: 'Mieux vaut attendre : sous le coup de l’émotion, on perçoit moins, on prend plus de risques et le temps de réaction
@@ -217,7 +193,6 @@
     est de différer le trajet ou de se calmer avant de partir.
   theme: C
   sous_theme: deficiences
-  importance: utile
   source: securite-routiere.gouv.fr — Les facteurs de risque ; Codes Rousseau
 - id: c-passagers-pression
   question: Mes passagers m'incitent à rouler plus vite ou à « passer à l'orange ». Que faire ?
@@ -227,7 +202,6 @@
     monter avec un conducteur qui a bu : désigner un « Sam ».'
   theme: C
   sous_theme: deficiences
-  importance: utile
   source: securite-routiere.gouv.fr — Conseils aux conducteurs novices
 - id: c-suiveur-trop-pres
   question: Sur une route à double sens, le véhicule qui me suit roule à quelques mètres de mon pare-chocs. Que fais-je ?
@@ -238,3 +212,12 @@
   theme: C
   sous_theme: distances
   source: Code de la route, art. R412-12 ; securite-routiere.gouv.fr — Les distances de sécurité
+- id: c-distance-arret-carre
+  question: Sol sec, conducteur attentif. Comment estimer rapidement ma distance d'arrêt en mètres à partir de ma
+    vitesse ?
+  reponse: 'Le carré du chiffre des dizaines : 50 km/h → 25 m, 90 → 81 m, 130 → 169 m.'
+  explication: Ordre de grandeur des supports de préparation, repris par l'épreuve. Réaction ≈ 1 s (3 m par tranche
+    de 10 km/h) + freinage ; sur sol mouillé, le freinage double.
+  theme: C
+  sous_theme: distances
+  source: Supports de préparation (Codes Rousseau, ENPC) ; Sécurité routière — Exemples de questions 2023

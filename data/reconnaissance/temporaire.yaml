@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 24 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 23 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: ak2
   type: panneau
   code: AK2
@@ -9,7 +9,6 @@
   conduite: Ralentir fortement.
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ak3
   type: panneau
@@ -21,7 +20,6 @@
   conduite: Ralentir, se replacer, ne pas dépasser ; appliquer les règles de croisement (B15/C18, K10, feux KR11).
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ak4
   type: panneau
@@ -33,7 +31,6 @@
   conduite: Ralentir, éviter freinages et accélérations brusques.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ak5
   type: panneau
@@ -46,7 +43,6 @@
   complement: 'Sur autoroute, souvent répété à 1 000 m et 500 m. AK5 seul n''impose aucune vitesse : c''est le B14 associé.'
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ak14
   type: panneau
@@ -58,7 +54,6 @@
   conduite: Ralentir et lire le panonceau.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ak17
   type: panneau
@@ -70,7 +65,6 @@
   conduite: Ralentir, se préparer à s'arrêter ; ne pas passer au rouge même si la voie semble libre.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ak22
   type: panneau
@@ -82,7 +76,6 @@
   conduite: Ralentir (souvent B14 50 associé), augmenter les distances, éviter de dépasser ou de croiser à vive allure.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ak30
   type: panneau
@@ -94,7 +87,6 @@
   conduite: Ralentir immédiatement, allumer brièvement les feux de détresse pour prévenir ceux qui suivent, garder ses distances.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ak31
   type: panneau
@@ -106,7 +98,6 @@
   conduite: Ralentir fortement, ne pas se laisser distraire, se préparer à une circulation alternée ou à un arrêt.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: ak32
   type: panneau
@@ -118,32 +109,17 @@
   conduite: Ralentir (50 km/h maximum si visibilité < 50 m), allumer feux de croisement et feux de brouillard avant, augmenter les distances.
   theme: L
   sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: k1
-  type: panneau
-  code: K1
-  image:
-    commons: Fanion K1.webp
-  nom: Fanion de danger
-  signification: Fanion (drapeau) rouge ou rouge et blanc brandi ou planté pour signaler un danger temporaire imminent (chantier mobile, agent sur la chaussée).
-  conduite: Ralentir et se préparer à s'arrêter.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: k2
   type: panneau
   code: K2
   image:
-    commons: Barrage K2.webp
+    gen: barriere_k2
   nom: Barrage (barrière de chantier)
   signification: Barrière rouge et blanche matérialisant la fermeture totale ou partielle de la chaussée ou la position d'un obstacle temporaire (route barrée, chantier).
   conduite: Ne pas franchir ; suivre la déviation ou la partie de chaussée laissée libre.
-  complement: Sur l’image, la barrière porte un panneau « fin de chantier » ; la barrière seule signale une fermeture ou un obstacle.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: k5a
   type: equipement
@@ -156,7 +132,6 @@
   conduite: Rester dans l'espace laissé libre ; ne pas franchir la file de cônes.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: k8
   type: panneau
@@ -168,7 +143,6 @@
   conduite: Se déporter du côté indiqué par la flèche.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: k10a
   type: panneau
@@ -181,7 +155,6 @@
   complement: 'Piquet K10 à deux faces : K10a = VERTE (passer), K10b = ROUGE (arrêt). Le signaleur a autorité pour arrêter la circulation.'
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: k10b
   type: panneau
@@ -193,7 +166,6 @@
   conduite: S'arrêter à hauteur du signaleur et attendre qu'il présente la face verte.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: kc1
   type: panneau
@@ -205,7 +177,6 @@
   conduite: 'Lire et appliquer : « route barrée » = déviation ; « absence de marquage » = serrer à droite.'
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: kd8
   type: panneau
@@ -217,7 +188,6 @@
   conduite: 'Suivre la trajectoire indiquée et ralentir : on peut rouler sur la chaussée opposée.'
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: kd9
   type: panneau
@@ -229,7 +199,6 @@
   conduite: Se placer dans la voie indiquée.
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: kd10
   type: panneau
@@ -241,7 +210,6 @@
   conduite: Se rabattre à temps sur les voies restantes en respectant l'alternance (une voiture sur deux) en cas de bouchon.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: kd22
   type: panneau
@@ -253,7 +221,6 @@
   conduite: Suivre la déviation.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: kd42
   type: panneau
@@ -265,7 +232,6 @@
   conduite: Se préparer à tourner dans la direction indiquée.
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: kr11
   type: panneau
@@ -279,7 +245,6 @@
   conduite: S'arrêter au rouge même sans personne en face ; ne pas s'engager au vert si la voie n'est pas dégagée.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: triangle-presignalisation
   type: equipement
@@ -292,6 +257,5 @@
   complement: 'Sur autoroute, ne pas poser le triangle si cela met en danger : priorité à l''évacuation derrière la glissière.'
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Absence à bord = 11 € ; ne pas revêtir le gilet ou ne pas présignaler = 135 €.

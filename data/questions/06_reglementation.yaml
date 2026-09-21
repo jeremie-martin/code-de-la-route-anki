@@ -8,8 +8,6 @@
     ; l'attestation d'assurance ne l'est plus depuis avril 2024 (contrôle par le fichier des véhicules assurés).
   theme: D
   sous_theme: documents
-  tags:
-  - nouveau::2024
   source: Code de la route, art. R233-1 ; service-public.fr F2794
 - id: d-vente-vehicule
   question: Je vends ma voiture de huit ans à un particulier. Que dois-je lui remettre, et quelle démarche faire ?
@@ -30,7 +28,23 @@
     dès 16 ans.
   theme: D
   sous_theme: permis
-  importance: utile
   source: Code de la route, art. R211-5-1 ; service-public.fr F2827
-  tags:
-  - revision::v6
+- id: d-permis-b-125
+  question: J'ai le permis B depuis trois ans. Puis-je conduire un scooter de 125 cm³ ?
+  reponse: 'Oui, après une formation de 7 heures : permis B depuis au moins 2 ans, motocyclette légère (125 cm³,
+    11 kW).'
+  explication: Sans cette formation (sauf pratique attestée avant 2011), la conduite d'une 125 avec le permis B
+    est une conduite sans permis valable. Un cyclomoteur de 50 cm³ se conduit avec le B sans formation.
+  theme: D
+  sous_theme: permis
+  source: Code de la route, art. R221-8 ; arrêté du 17 décembre 2010 modifié ; service-public F2828
+- id: d-invalidation-repasser
+  question: Permis invalidé pour solde de points nul. Dois-je repasser le code et la conduite ?
+  reponse: Le code toujours ; la conduite seulement si j'avais le permis depuis moins de 3 ans, ou si je me réinscris
+    hors délai.
+  explication: Après l'interdiction de solliciter un nouveau permis (6 mois, 1 an en cas de récidive), le titulaire
+    depuis au moins 3 ans repasse l'épreuve théorique seule s'il s'inscrit dans les 9 mois ; un contrôle médical
+    est aussi exigé.
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-5 et R224-20 ; service-public F1704

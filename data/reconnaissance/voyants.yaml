@@ -13,7 +13,6 @@
   piege: Ce voyant signale une **pression**, pas seulement un niveau bas — une burette qui s'allume en roulant impose l'arrêt.
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "ISO 2575 ; Codes Rousseau — Les voyants du tableau de bord"
 - id: voyant-batterie
   type: voyant
@@ -24,13 +23,11 @@
   nom: Charge de la batterie (rouge)
   signification: 'Défaut du circuit de charge : la batterie peut ne plus se recharger correctement.'
   conduite: Je gagne un endroit sûr et consulte les messages et la notice ; avec STOP, arrêt impératif en sécurité.
-  piege: 'Ne pas promettre de pouvoir rejoindre un garage : la panne et l’autonomie restante sont inconnues.'
+  piege: 'L''autonomie restante est inconnue : les consommateurs (feux, climatisation) épuisent la batterie ; je n''ai
+    aucune garantie de rejoindre un garage.'
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: Renault, témoins lumineux (exemple constructeur ; consulter la notice du véhicule) — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
-  tags:
-  - revision::v3
 - id: voyant-temperature
   type: voyant
   code: ISO 7000-0246
@@ -41,7 +38,6 @@
   piege: En bleu au démarrage sur certains véhicules = moteur froid, sans gravité.
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "ISO 2575 ; Codes Rousseau — Les voyants"
 - id: voyant-frein
   type: voyant
@@ -53,7 +49,6 @@
   piege: "Ce cercle « (!) » est le voyant de **freinage** ; le « (P) » cerclé est le frein de stationnement seul."
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "ISO 2575 ; Codes Rousseau — Les voyants"
 - id: voyant-frein-stationnement
   type: voyant
@@ -64,7 +59,6 @@
   conduite: Je desserre complètement le frein de stationnement avant de rouler ; s'il reste allumé en roulant, je m'arrête pour vérifier (échauffement des freins arrière, liquide de frein).
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "ISO 2575 ; Codes Rousseau — Les voyants"
 - id: voyant-ceinture
   type: voyant
@@ -75,7 +69,6 @@
   conduite: Je boucle ma ceinture et je m'assure que tous les passagers sont attachés avant de partir — le conducteur est responsable des mineurs.
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "ISO 2575 ; Code de la route, art. R412-1"
 - id: voyant-airbag
   type: voyant
@@ -91,10 +84,7 @@
     dos à la route.
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: Renault, témoins lumineux (exemple constructeur ; consulter la notice du véhicule) — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
-  tags:
-  - revision::v3
 - id: voyant-direction
   type: voyant
   code: ISO 7000-2305
@@ -104,7 +94,6 @@
   conduite: Je conserve le contrôle (la direction fonctionne, mais avec effort) et je fais dépanner ; en orange sur certains véhicules = anomalie mineure.
   theme: M
   sous_theme: voyants
-  importance: utile
   source: "ISO 2575 ; notices constructeurs"
 - id: voyant-detresse
   type: voyant
@@ -115,7 +104,6 @@
   conduite: Je les utilise en cas de panne, d'arrêt forcé, de ralentissement brusque ou de remorquage — jamais pour stationner.
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "Code de la route, art. R416-18 ; ISO 2575"
 
 # ---------- ORANGE ----------
@@ -128,7 +116,6 @@
   conduite: Fixe, je peux rouler en douceur et je fais contrôler rapidement ; clignotant, je m'arrête (risque de destruction du catalyseur).
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "ISO 2575 ; Codes Rousseau — Les voyants"
 - id: voyant-abs
   type: voyant
@@ -143,10 +130,7 @@
   piege: L’absence d’ABS seule n’impose pas un arrêt sur-le-champ ; un défaut du circuit de freinage est différent.
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: Sécurité routière — Exemples de nouvelles questions (Q5) ; ISO 2575
-  tags:
-  - revision::v3
 - id: voyant-esp
   type: voyant
   code: ESP / ESC
@@ -156,7 +140,6 @@
   conduite: "S'il clignote, je lève le pied et je garde une trajectoire souple, la chaussée est glissante. S'il est fixe alors que je ne l'ai pas désactivé, je fais contrôler."
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "ISO 2575 ; Codes Rousseau — Les aides à la conduite"
 - id: voyant-pression-pneus
   type: voyant
@@ -167,7 +150,6 @@
   conduite: Je réduis ma vitesse, je m'arrête pour contrôler les quatre pneus et je regonfle à la pression préconisée (à froid) ; je réinitialise le système si nécessaire.
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "ISO 2575 ; règlement (CE) 661/2009"
 - id: voyant-prechauffage
   type: voyant
@@ -178,20 +160,7 @@
   conduite: J'attends que le voyant s'éteigne avant d'actionner le démarreur ; s'il clignote en roulant, c'est un défaut d'injection à faire contrôler.
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "ISO 2575 ; Codes Rousseau — Les voyants"
-- id: voyant-carburant
-  type: voyant
-  code: ISO 7000-0245
-  image: {commons: "ISO 7000 - Ref-No 0245.svg", tint: "#fb8c00"}
-  nom: Réserve de carburant
-  signification: Le réservoir est sur la réserve — quelques dizaines de kilomètres d'autonomie seulement.
-  conduite: "Je fais le plein à la prochaine occasion : la panne sèche sur autoroute est dangereuse et verbalisable."
-  piege: La petite flèche à côté de la pompe indique de quel côté se trouve la trappe à carburant.
-  theme: M
-  sous_theme: voyants
-  importance: utile
-  source: "ISO 2575"
 - id: voyant-brouillard-arriere
   type: voyant
   code: ISO 7000-0634
@@ -202,7 +171,6 @@
   piege: "Brouillard **arrière** : faisceau vers la droite, voyant orange ; **avant** : faisceau vers la gauche, voyant vert."
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "Code de la route, art. R416-7 ; ISO 2575"
 - id: voyant-plaquettes
   type: voyant
@@ -213,19 +181,7 @@
   conduite: Je fais remplacer les plaquettes rapidement ; le freinage reste possible mais se dégrade et les disques s'abîment.
   theme: M
   sous_theme: voyants
-  importance: utile
   source: "ISO 2575 ; Codes Rousseau — Les voyants"
-- id: voyant-lave-glace
-  type: voyant
-  code: ISO 7000-0088
-  image: {commons: "ISO 7000 - Ref-No 0088.svg", tint: "#fb8c00"}
-  nom: Niveau de liquide lave-glace bas
-  signification: Le réservoir de lave-glace est presque vide.
-  conduite: Je fais l'appoint (liquide antigel en hiver) — un pare-brise sale que l'on ne peut pas nettoyer est un danger, surtout de nuit ou face au soleil.
-  theme: M
-  sous_theme: voyants
-  importance: utile
-  source: "ISO 2575"
 - id: voyant-fap
   type: voyant
   code: FAP / DPF
@@ -235,7 +191,6 @@
   conduite: Je roule une vingtaine de minutes à allure soutenue et régulière (route ou voie rapide) pour permettre la régénération ; si le voyant persiste, garage.
   theme: M
   sous_theme: voyants
-  importance: utile
   source: "Notices constructeurs ; Codes Rousseau"
 # ---------- VERT / BLEU ----------
 - id: voyant-position
@@ -244,10 +199,10 @@
   image: {commons: "ISO 7000 - Ref-No 0456.svg", tint: "#43a047"}
   nom: Feux de position allumés (vert)
   signification: Les feux de position (veilleuses) sont en fonction — ils servent à être vu, pas à voir.
-  conduite: "Obligatoires à l'arrêt la nuit sur la chaussée (R416-12) ; pour rouler, ils ne suffisent qu'en agglomération éclairée (R416-6)."
+  conduite: "Obligatoires à l'arrêt ou en stationnement la nuit sur la chaussée (R416-12). Pour rouler la nuit, ils ne suffisent jamais, même en ville éclairée : feux de croisement (R416-6)."
+  piege: "Seule tolérance des feux de position seuls en marche : de jour, par temps de pluie, en agglomération suffisamment éclairée."
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "Code de la route, art. R416-1 et s. ; ISO 2575"
 - id: voyant-croisement
   type: voyant
@@ -259,7 +214,6 @@
   piege: "Faisceau incliné vers le bas = croisement ; faisceau horizontal (bleu) = route."
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "Code de la route, art. R416-4 et s. ; ISO 2575"
 - id: voyant-route
   type: voyant
@@ -270,7 +224,6 @@
   conduite: Je les utilise la nuit hors agglomération non éclairée ; je repasse en croisement dès que je croise ou suis un véhicule.
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "Code de la route, art. R416-5 et s. ; ISO 2575"
 - id: voyant-brouillard-avant
   type: voyant
@@ -281,19 +234,7 @@
   conduite: "Je les utilise par brouillard, neige ou forte pluie ; je les éteins dès que la visibilité redevient normale (ils éblouissent)."
   theme: M
   sous_theme: voyants
-  importance: essentiel
   source: "Code de la route, art. R416-7 ; ISO 2575"
-- id: voyant-clignotants
-  type: voyant
-  code: ISO 7000-0084
-  image: {commons: "ISO 7000 - Ref-No 0084.svg", tint: "#43a047"}
-  nom: Clignotants (vert, clignote)
-  signification: Un indicateur de direction est en fonction.
-  conduite: "Un clignotement anormalement rapide signale une ampoule de clignotant grillée de ce côté."
-  theme: M
-  sous_theme: voyants
-  importance: utile
-  source: "ISO 2575"
 - id: voyant-feux-jour
   type: voyant
   code: ISO 7000-2611
@@ -303,7 +244,6 @@
   conduite: "Ils ne remplacent pas les feux de croisement la nuit ou par mauvaise visibilité : ils n'allument pas les feux arrière."
   theme: M
   sous_theme: voyants
-  importance: utile
   source: "Règlement (CE) 661/2009 ; ISO 2575"
 - id: voyant-regulateur
   type: voyant
@@ -314,5 +254,4 @@
   conduite: "Je reste maître du véhicule : un appui sur le frein (ou l'embrayage) le désactive ; je ne l'utilise pas en trafic dense, sur route sinueuse ou glissante."
   theme: M
   sous_theme: voyants
-  importance: utile
   source: "ISO 2575 ; Codes Rousseau — Les aides à la conduite"

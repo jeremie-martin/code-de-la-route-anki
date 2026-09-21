@@ -10,35 +10,23 @@
     adapté à sa morphologie.
   - Avec un siège i-Size homologué R129, la position dos à la route s’impose au moins jusqu’à {{c2::15 mois}}.
   - Un enfant de moins de {{c3::3 ans}} ne peut pas être transporté sur un siège dépourvu de ceinture de sécurité.
-  tags:
-  - revision::v4
 - id: s-chargement-chiffres
   explication: Mesurer le véhicule chargé. Vérifier aussi le gabarit des ponts et parkings, et arrimer le chargement.
   theme: S
   sous_theme: chargement
-  source: Code de la route, art. R312-19 à R312-22
+  source: Code de la route, art. R312-19 à R312-21 ; arrêté du 16 juillet 1954 (signalisation des chargements)
   rappels:
   - Un chargement ne doit pas dépasser à l’{{c1::avant}} du véhicule.
   - Le dépassement maximal du chargement à l’arrière est {{c2::3 m}}.
   - Un chargement dépassant de plus de {{c3::1 m}} à l’arrière doit porter une signalisation spécifique.
-  - 'Largeur totale maximale usuelle d’une voiture avec son chargement : {{c4::2,55 m}}.'
-  tags:
-  - revision::v4
 - id: s-remorque-chiffres
-  explication: 'Toujours respecter les capacités du véhicule tracteur. BE : véhicule B et remorque de PTAC
-    au plus 3 500 kg ; au-delà, une autre catégorie peut être nécessaire.'
+  explication: 'Toujours respecter les capacités du véhicule tracteur. Au-delà de 3 500 kg de somme des PTAC : mention
+    B96 (jusqu''à 4 250 kg) puis permis BE. Une remorque de plus de 500 kg de PTAC a sa propre carte grise.'
   theme: S
   sous_theme: chargement
-  importance: utile
   source: Code de la route, art. R221-4, R317-8, R413-8 ; service-public.fr F2827
-  tags:
-  - revision::v3
-  - revision::v4
   rappels:
-  - Avec le permis B, une remorque de PTAC au plus égal à {{c1::750 kg}} est autorisée derrière un véhicule
-    de catégorie B, sous réserve des masses admissibles du véhicule.
-  - Avec le permis B seul, si la remorque dépasse 750 kg de PTAC, la somme des PTAC ne doit pas dépasser {{c2::3
-    500 kg}}.
-  - La mention B96 permet, pour une remorque de PTAC supérieur à 750 kg, une somme des PTAC au-delà de 3 500
-    kg et jusqu’à {{c3::4 250 kg}}.
-  - Une remorque doit avoir sa propre carte grise lorsque son PTAC dépasse {{c4::500 kg}}.
+  - Avec le permis B, une remorque de PTAC au plus égal à {{c1::750 kg}} est autorisée derrière un véhicule de catégorie
+    B, sous réserve des masses admissibles du véhicule.
+  - Avec le permis B seul, si la remorque dépasse 750 kg de PTAC, la somme des PTAC ne doit pas dépasser {{c2::3 500
+    kg}}.

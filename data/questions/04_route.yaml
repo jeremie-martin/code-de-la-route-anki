@@ -8,10 +8,10 @@
   sous_theme: nuit
   source: Code de la route, art. R416-5 et R416-6
 - id: r-nuit-suivre-vehicule-feux
-  question: De nuit sur une route non éclairée, je rattrape une voiture et je roule à faible distance derrière elle. Puis-je
-    garder mes feux de route ?
-  reponse: 'Non : feux de croisement tant que je la suis de près (je l’éblouis par ses rétroviseurs) ; les feux de route ne
-    reviennent que pour la dépasser.'
+  question: De nuit sur une route non éclairée, je rattrape une voiture et je roule à faible distance derrière elle.
+    Quels feux ?
+  reponse: Feux de croisement tant que je la suis de près (je l'éblouis par ses rétroviseurs) ; les feux de route
+    quand l'écart se creuse.
   explication: 'Art. R416-6 II 1° b : feux de croisement quand on suit un autre véhicule à faible distance, sauf lors d''une
     manœuvre de dépassement.'
   theme: R
@@ -26,8 +26,6 @@
   theme: R
   sous_theme: nuit
   source: Code de la route, R413-17 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/
-  tags:
-  - revision::v4
 - id: r-pluie-feux
   question: Averse de jour sur une route hors agglomération, la visibilité baisse nettement. Dois-je allumer mes feux ?
   reponse: 'Oui, les feux de croisement : obligatoires dès que la visibilité est réduite par la météo, de jour comme de nuit.'
@@ -56,8 +54,6 @@
   theme: R
   sous_theme: intemperies
   source: Ornikar — L'aquaplaning ; securite-routiere.gouv.fr — Conduire sous la pluie
-  tags:
-  - revision::v4
 - id: r-brouillard-feux
   question: Par brouillard, quels feux dois-je utiliser ?
   reponse: Les feux de croisement (jamais les feux de route, qui se réfléchissent sur le brouillard), complétés au besoin
@@ -76,8 +72,6 @@
   theme: R
   sous_theme: intemperies
   source: Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
-  tags:
-  - revision::v3
 - id: r-neige-conduite
   question: Je roule sur une route couverte de neige. Comment dois-je agir sur les commandes ?
   reponse: 'Je réduis fortement ma vitesse et j’augmente les distances, avec des commandes progressives : accélération, freinage
@@ -87,8 +81,6 @@
   theme: R
   sous_theme: intemperies
   source: securite-routiere.gouv.fr — Conduire en hiver ; Codes Rousseau — Neige et brouillard
-  tags:
-  - revision::v3
 - id: r-verglas-descente
   question: 'Chaussée verglacée dans une descente : quel rapport et quel frein ?'
   reponse: Très lentement, rapport adapté et commandes progressives ; ni freinage brutal ni rétrogradage brusque ; si l’adhérence
@@ -98,8 +90,6 @@
   theme: R
   sous_theme: intemperies
   source: securite-routiere.gouv.fr — Conduire en hiver ; En Voiture Simone — Le verglas
-  tags:
-  - revision::v3_1
 - id: r-deneigement-depassement
   question: Un engin de service hivernal (saleuse, lame) travaille devant moi sur la chaussée enneigée. Puis-je le dépasser
     ?
@@ -127,8 +117,6 @@
   theme: R
   sous_theme: intemperies
   source: En Voiture Simone — Conduire face au soleil
-  tags:
-  - revision::v3
 - id: r-tunnel-feux-jour
   question: 'Tunnel éclairé, en plein jour : dois-je allumer mes feux ?'
   reponse: 'Oui : les feux de croisement dès le panneau d’entrée, même si le tunnel est éclairé ; jamais les feux de route
@@ -140,14 +128,13 @@
   source: Code de la route, art. R416-4 et R416-6
 - id: r-tunnel-distance-arret
   question: Dans un tunnel, la circulation s'immobilise complètement devant moi. Quelle distance dois-je garder ?
-  reponse: L’espacement demandé par les panneaux ou les consignes du tunnel ; je ne colle pas au véhicule précédent.
-  explication: Les distances en marche et à l’arrêt peuvent différer. « 150 m même à l’arrêt dans tous les tunnels » est une
-    généralisation incorrecte.
+  reponse: 'Celle qu''indiquent les panneaux du tunnel : en marche, souvent 150 m (deux repères lumineux) ; à l''arrêt,
+    quelques mètres pour pouvoir évacuer.'
+  explication: Les tunnels longs affichent leurs consignes à l'entrée ; la distance à l'arrêt permet de sortir du
+    véhicule et de laisser passer les secours. Ne pas transposer « 150 m » à tous les tunnels sans le lire.
   theme: R
   sous_theme: tunnels
   source: CETU — Conduire en tunnel ; Code de la route, art. R412-12
-  tags:
-  - revision::v3
 - id: r-tunnel-panne
   question: Mon véhicule tombe en panne dans un tunnel. Où me placer et que faire des clés ?
   reponse: Feux de détresse, garage (emplacement d’arrêt) le plus proche, moteur coupé, clés sur le contact et véhicule non
@@ -167,18 +154,19 @@
   sous_theme: tunnels
   source: CETU — Consignes en cas d'incendie ; securite-routiere.gouv.fr — Les tunnels
 - id: r-pn-feu-rouge-clignotant
-  question: À un passage à niveau, les feux rouges clignotent et la sonnerie retentit, mais la barrière n'est pas encore baissée.
-    Puis-je passer ?
-  reponse: 'Non : le feu rouge clignotant impose l''arrêt absolu, barrière ou non ; un train peut arriver dans les secondes
-    qui suivent.'
+  question: À un passage à niveau, les feux rouges clignotent et la sonnerie retentit, mais la barrière n'est pas
+    encore baissée. Que fais-je ?
+  reponse: 'Je m''arrête : le feu rouge clignotant impose l''arrêt absolu, barrière ou non ; un train peut arriver
+    dans les secondes.'
   explication: 'La sonnerie et les feux se déclenchent avant la descente des demi-barrières : les feux suffisent à imposer
     l''arrêt (135 €, 4 points).'
   theme: R
   sous_theme: passages_a_niveau
   source: Code de la route, art. R412-30 et R422-3
 - id: r-pn-engagement
-  question: J'arrive sur un passage à niveau ouvert, mais la file de voitures est arrêtée juste après. Je m'engage ?
-  reponse: 'Non : je m’arrête avant le passage et j’attends de pouvoir le franchir d’un trait, sans risquer d’y rester bloqué.'
+  question: J'arrive sur un passage à niveau ouvert, mais la file de voitures est arrêtée juste après. Que fais-je
+    ?
+  reponse: Je m'arrête avant le passage et j'attends de pouvoir le franchir d'un trait, sans risquer d'y rester bloqué.
   explication: Art. R422-3 II. Beaucoup d'accidents viennent d'un véhicule bloqué sur les voies par un bouchon ; le dépassement
     est en outre interdit aux passages à niveau sans barrière ni demi-barrière (R414-12).
   theme: R
@@ -193,8 +181,6 @@
   theme: R
   sous_theme: passages_a_niveau
   source: SNCF Réseau — Que faire en cas d'immobilisation ; Code de la route, art. R422-3
-  tags:
-  - revision::v5
 - id: r-pn-sans-barriere
   question: À un passage à niveau sans barrière ni feux (croix de Saint-André seule), comment procéder ?
   reponse: Ralentir fortement, regarder et écouter des deux côtés, et ne traverser que si aucun train n’approche ; dans le
@@ -205,16 +191,15 @@
   sous_theme: passages_a_niveau
   source: Code de la route, art. R422-3 et R414-12 ; IISR (G1, A8, J10)
 - id: r-pn-barrieres-ouverture
-  question: Les demi-barrières commencent à se relever mais les feux rouges clignotent encore. Je passe ?
-  reponse: 'Non : tant que les feux clignotent ou que les barrières bougent, l’engagement est interdit ; un second train peut
+  question: Les demi-barrières commencent à se relever mais les feux rouges clignotent encore. Quand puis-je passer
+    ?
+  reponse: 'Quand les feux sont éteints et les barrières immobiles : tant qu''ils clignotent, un second train peut
     arriver.'
   explication: Attendre l’ouverture complète et l’extinction des feux. Une fermeture prolongée peut avoir plusieurs causes
     ; elle ne donne aucune autorisation de passer. Signaler une anomalie depuis un lieu sûr.
   theme: R
   sous_theme: passages_a_niveau
   source: Code de la route, art. R422-3 ; SNCF Réseau
-  tags:
-  - revision::v5
 - id: r-tram-priorite
   question: Un tramway arrive sur ma gauche à un croisement sans feu ni panneau. Qui passe ?
   reponse: 'Le tramway : il est prioritaire sur tous les usagers, d’où qu’il vienne, car il ne peut ni s’écarter ni s’arrêter
@@ -261,8 +246,6 @@
   theme: R
   sous_theme: autoroute
   source: Code de la route, R421-3 et R412-6
-  tags:
-  - revision::v3
 - id: r-autoroute-sortie
   question: Ma sortie d'autoroute est annoncée. Où et quand dois-je ralentir ?
   reponse: Je prépare ma voie tôt et je ralentis sur la voie de décélération ; plus tôt et progressivement si le trafic, la
@@ -272,8 +255,6 @@
   theme: R
   sous_theme: autoroute
   source: Code de la route, R413-17 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/ ; R421-4
-  tags:
-  - revision::v4
 - id: r-autoroute-bau
   question: À quoi sert la bande d'arrêt d'urgence et qui peut l'emprunter ?
   reponse: Aux arrêts d’urgence (panne, malaise) et aux véhicules de secours ou d’exploitation ; y rouler, ou s’y arrêter
@@ -314,21 +295,19 @@
   question: Comment choisir sa voie à l'approche d'un péage ?
   reponse: 'Tôt, d’après les pictogrammes : « t » orange pour le télépéage, carte bancaire, pièces ou péagiste ; une croix
     rouge signale une voie fermée.'
-  explication: 'Voie « t » : 30 km/h maximum, sans s''arrêter. Après le péage, chacun se réinsère en fermeture éclair ; attention
-    aux agents à pied dans la zone.'
+  explication: 'Voie « t » : au plus 30 km/h quand la voie l''affiche, sinon ralentir jusqu''à l''arrêt devant la barrière. Après
+    le péage, chacun se réinsère en fermeture éclair ; attention aux agents à pied dans la zone.'
   theme: R
   sous_theme: autoroute
-  importance: utile
   source: ASFA — Le péage ; IISR
 - id: r-autoroute-fatigue-aires
   question: Sur autoroute, où puis-je m'arrêter pour faire une pause ?
   reponse: 'Sur une aire seulement : aire de repos (stationnement, détente) ou aire de service (carburant, restauration) ;
     la bande d’arrêt d’urgence n’est jamais un lieu de pause.'
-  explication: Les aires sont annoncées par des panneaux à 2 000 m puis 1 000 m. On s'arrête au moins 20 minutes toutes les
-    2 heures, et sans attendre dès les premiers signes de somnolence.
+  explication: Les aires sont annoncées par des panneaux à 2 000 m puis 1 000 m. Une pause toutes les 2 heures, et
+    sans attendre dès les premiers signes de somnolence (sieste de 15 à 20 minutes).
   theme: R
   sous_theme: autoroute
-  importance: utile
   source: ASFA — Les aires d'autoroute ; securite-routiere.gouv.fr — La fatigue
 - id: r-montagne-croisement-difficile
   question: 'Route de montagne étroite : un véhicule monte pendant que je descends et le croisement s''annonce difficile.
@@ -348,14 +327,13 @@
     léger des deux, ou le camion de plus de 3,5 t face à un transport en commun.
   theme: R
   sous_theme: montagne
-  importance: utile
   source: Code de la route, art. R414-3
 - id: r-descente-freinage
   question: Comment freiner dans une longue descente (par exemple à 15 %) ?
   reponse: Rapport inférieur pour le frein moteur, et freinage par intermittence (appuis francs puis relâche) plutôt que continu,
     pour éviter la surchauffe.
-  explication: Un frein chaud perd son efficacité. Un exemple public de question (2023) attend « je freine par intermittence
-    et j’utilise le frein moteur », et non « doucement et en permanence ».
+  explication: Un frein chaud perd son efficacité. L'épreuve attend « je freine par intermittence et j’utilise le
+    frein moteur », et non « doucement et en permanence ».
   theme: R
   sous_theme: montagne
   source: Sécurité routière — Exemples de nouvelles questions (Q18)

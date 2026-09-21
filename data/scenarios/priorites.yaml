@@ -157,16 +157,13 @@
     - W
     - apres
   question: Les véhicules suivent les flèches. Dois-je passer avant ou après la voiture rouge, et pourquoi ?
-  reponse: M'arrêter complètement à la ligne, céder le passage à la rouge (et à tout véhicule sur la route transversale,
-    y compris ceux venant de ma gauche), puis repartir quand c'est libre.
+  reponse: M'arrêter complètement à la ligne, céder le passage à la rouge et à tout véhicule sur la route transversale,
+    puis repartir quand c'est libre.
   explication: 'Le STOP annule la priorité à droite à mon détriment : je cède aux véhicules des deux côtés. L''arrêt
     doit être total (roues immobiles) au niveau de la ligne, même si la voie semble libre.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-6
-  tags:
-  - competence::lecture_schema
-  - revision::v3
 - id: scn-stop-autre
   kind: intersection
   spec:
@@ -193,9 +190,6 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-6 et R415-7
-  tags:
-  - competence::lecture_schema
-  - revision::v3
 - id: scn-cedez-moi-gauche-arrive
   kind: intersection
   spec:
@@ -232,7 +226,9 @@
   check: {pair: [S, E, apres]}
   question: "Nous avons chacun un STOP, la voiture rouge est à ma droite, et la route transversale est libre. Qui repart en premier ?"
   reponse: "La rouge : entre deux véhicules arrêtés au STOP, la priorité à droite s'applique."
-  explication: "Après l'arrêt obligatoire, s'il n'y a personne sur la route prioritaire, on départage les véhicules non prioritaires par la règle générale : priorité à droite."
+  explication: 'Après l''arrêt obligatoire, s''il n''y a personne sur la route prioritaire, aucun texte spécial ne
+    départage deux véhicules au STOP : on revient à la règle générale, la priorité à droite. C''est la réponse attendue
+    à l''épreuve.'
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5 et R415-6"
@@ -307,8 +303,6 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-12
-  tags:
-  - revision::v3
 - id: scn-feu-vert-tourne-gauche
   kind: intersection
   spec:
@@ -343,9 +337,6 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R412-33 et R415-4
-  tags:
-  - competence::lecture_schema
-  - revision::v3
 - id: scn-feu-orange-clignotant
   kind: intersection
   spec:
@@ -361,8 +352,8 @@
           colour: rouge
         goes: straight
         sign: feu_orange_clignotant
-  question: Les feux de l'intersection clignotent à l'orange (hors service). Une voiture arrive de ma droite. Qui
-    passe en premier ?
+  question: Les feux de l'intersection clignotent au jaune (hors service). Une voiture arrive de ma droite. Qui passe
+    en premier ?
   reponse: 'La rouge : feux au jaune clignotant = prudence et retour aux panneaux ou, sans panneau, à la priorité
     à droite.'
   explication: 'Le jaune clignotant n''est pas un feu vert : il signale que les feux ne règlent plus la circulation.
@@ -375,19 +366,17 @@
     - S
     - E
     - apres
-  tags:
-  - revision::v3
 - id: scn-agent-bras-tendus-profil
   kind: intersection
   spec:
     approaches:
       S: {vehicle: {colour: bleu, me: true}, goes: straight}
       E: {vehicle: {colour: rouge}, goes: straight}
-    agent: bras_tendus_EW
+    agent: bras_tendus_NS
   check: {pair: [S, E, avant]}
-  question: "Un agent règle la circulation, bras tendus dans l'axe est-ouest (je le vois de profil). Puis-je passer ?"
-  reponse: "Oui : les bras tendus barrent les véhicules qui font face à l'agent ou lui tournent le dos (ici la rouge) ; ceux qui le voient de profil, comme moi, peuvent passer."
-  explication: "L'agent prime sur les feux et les panneaux. Bras levé vertical = tout le monde s'arrête. Il faut regarder son orientation, pas seulement ses bras."
+  question: "Un agent règle la circulation, bras tendus à l'horizontale : depuis ma voiture, je vois le bout de son bras (son profil). Puis-je passer ?"
+  reponse: "Oui : je suis dans l'axe de ses bras, donc je passe ; la rouge, qui voit sa poitrine, doit s'arrêter."
+  explication: "Bras tendus = barrière pour ceux qui voient l'agent de face ou de dos ; passage pour ceux qui le voient de profil. Bras levé vertical = tout le monde s'arrête. L'agent prime sur les feux et les panneaux."
   theme: L
   sous_theme: agents
   source: "Code de la route, art. R411-28"
@@ -397,11 +386,11 @@
     approaches:
       S: {vehicle: {colour: bleu, me: true}, goes: straight}
       W: {vehicle: {colour: rouge}, goes: straight}
-    agent: bras_tendus_NS
+    agent: bras_tendus_EW
   check: {pair: [S, W, apres]}
-  question: "L'agent me fait face, bras tendus (dans mon axe nord-sud). La voiture rouge à ma gauche passe-t-elle avant moi ?"
-  reponse: "Oui : je dois m'arrêter (agent de face), la rouge qui le voit de profil est libérée."
-  explication: "De face ou de dos, bras tendus = arrêt pour moi. La priorité à droite ne s'applique pas quand un agent règle la circulation."
+  question: "L'agent me fait face, bras tendus en travers de ma route. La voiture rouge à ma gauche passe-t-elle avant moi ?"
+  reponse: "Oui : de face, ses bras tendus me barrent le passage ; la rouge, qui le voit de profil, est libérée."
+  explication: "De face ou de dos, bras tendus = arrêt. La priorité à droite ne compte plus quand un agent règle la circulation : seuls ses gestes décident."
   theme: L
   sous_theme: agents
   source: "Code de la route, art. R411-28"

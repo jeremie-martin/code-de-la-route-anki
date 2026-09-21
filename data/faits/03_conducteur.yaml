@@ -6,9 +6,6 @@
   theme: C
   sous_theme: distances
   source: securite-routiere.gouv.fr — La vitesse et la conduite ; Codeclic — Temps de réaction
-  tags:
-  - revision::v3
-  - revision::v5
 - id: c-distance-reaction-formule
   dedup_ok:
   - aff-c-temps-reaction-vitesse
@@ -21,12 +18,10 @@
   rappels:
   - Pour estimer mentalement la distance parcourue en une seconde, le raccourci « dizaines de km/h × … » utilise le facteur
     {{c1::3}}.
-  tags:
-  - revision::v4
 - id: c-distance-arret-reperes
-  explication: 'Ordre de grandeur usuel des supports de préparation : carré des dizaines de km/h (50 → 25 m, 90 → 81 m, 130
-    → 169 m), pour un conducteur attentif sur sol sec. Le calcul d’un exercice utilise ses propres données ; la distance réelle
-    dépend de la réaction, de l’adhérence et des freins.'
+  explication: Carré des dizaines de km/h (50 → 25 m, 90 → 81 m, 130 → 169 m), pour un conducteur attentif sur sol
+    sec. Un exercice chiffré utilise ses propres données ; la distance réelle dépend de la réaction, de l'adhérence
+    et des freins.
   theme: C
   sous_theme: distances
   source: Sécurité routière — https://modules.securite-routiere.gouv.fr/module_distance_arret.html ; Codes Rousseau — Calcul
@@ -36,19 +31,15 @@
     {{c1::25 m}}.'
   - 'Ordre de grandeur sur sol sec, conducteur attentif : à 90 km/h, la distance d’arrêt (réaction + freinage) est d’environ
     {{c2::80 m}}.'
-  tags:
-  - revision::v6
 - id: c-distance-mouillee
-  texte: Sur route mouillée, la distance de freinage {{c1::augmente}} ; un doublement est un repère pédagogique, pas une valeur
-    garantie.
-  explication: La pluie diminue l’adhérence selon le revêtement, les pneus et la quantité d’eau. Réduire l’allure et accroître
-    les marges. Ne pas appliquer automatiquement ×2 ou ×10 à une scène réelle ; calculer avec les hypothèses explicites de
-    l’exercice.
+  texte: 'Repère de l’examen : sur route mouillée, l’adhérence est divisée par deux et la distance de freinage est
+    {{c1::doublée}} par rapport au sol sec.'
+  explication: C’est l’ordre de grandeur que retiennent l’épreuve (exemple officiel de 2023) et les supports de préparation ;
+    la valeur réelle dépend du revêtement, des pneus et de la hauteur d’eau. Dans un exercice chiffré, appliquer les hypothèses
+    de l’énoncé ; le temps de réaction, lui, ne change pas.
   theme: C
   sous_theme: distances
   source: Sécurité routière, exemple public Q13 (2023) ; repère et limites du modèle
-  tags:
-  - revision::v5
 - id: c-vitesse-double-freinage
   dedup_ok:
   - aff-c-vitesse-double-freinage-double
@@ -59,8 +50,6 @@
   theme: C
   sous_theme: distances
   source: securite-routiere.gouv.fr — La vitesse et la conduite ; Ornikar — Énergie cinétique
-  tags:
-  - revision::v4
 - id: c-intervalle-2s
   explication: 'La règle est temporelle : deux secondes au minimum, davantage selon les conditions. Le calcul physique donne
     environ 28 m à 50 km/h et 72 m à 130 km/h. Les 30 et 78 m sont des approximations pédagogiques, pas des égalités.'
@@ -70,8 +59,6 @@
   rappels:
   - Entre deux voitures qui se suivent, l’intervalle minimal réglementaire correspond à la distance parcourue pendant au moins
     {{c1::2 secondes}}.
-  tags:
-  - revision::v4
 - id: c-intervalle-pl-tunnel
   texte: Hors agglomération, deux véhicules de plus de 3,5 t (ou de plus de 7 m) qui se suivent à la même vitesse gardent
     au moins {{c1::50 m}}.
@@ -80,8 +67,6 @@
   theme: C
   sous_theme: distances
   source: Code de la route, R412-12 ; CETU — sécurité des usagers en tunnel
-  tags:
-  - revision::v6
 - id: c-autoroute-deux-traits
   texte: 'Sur autoroute, repère visuel usuel d''intervalle : laisser au moins {{c1::2 traits}} complets de la ligne de rive
     de la bande d''arrêt d''urgence, davantage selon les conditions.'
@@ -90,17 +75,12 @@
   theme: C
   sous_theme: distances
   source: securite-routiere.gouv.fr — La vitesse et la conduite ; IISR 7e partie, art. 113-1
-  tags:
-  - revision::v4
 - id: c-telephone-5s
   explication: 50 ÷ 3,6 × 5 ≈ 69,4 m. Les cinq secondes sont une hypothèse, pas la durée universelle d’un SMS. Le téléphone
     ajoute des distractions visuelle, mentale et manuelle ; les mains libres ne suppriment pas la distraction mentale.
   theme: C
   sous_theme: vigilance
   source: Calcul v/3,6 × durée ; Sécurité routière — téléphone et distraction
-  tags:
-  - revision::v3_1
-  - revision::v4
   rappels:
   - À 50 km/h (environ 14 m/s), quitter la route des yeux pendant 5 s fait parcourir environ {{c1::70 m}}.
 - id: c-vue-90-pourcent
@@ -111,8 +91,6 @@
   theme: C
   sous_theme: perception
   source: Arrêté du 28 mars 2022 ; En Voiture Simone — Acuité visuelle ; Code de la route, art. R221-1-1
-  tags:
-  - revision::v4
 - id: c-fatigue-pause-chiffres
   explication: 'Une pause de 15 à 20 minutes est un repère, pas une garantie : elle ne permet pas de continuer malgré les
     paupières lourdes. Une courte sieste ne compense pas toute dette de sommeil ; changer de conducteur ou interrompre le
@@ -120,12 +98,10 @@
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — La fatigue et la conduite
-  tags:
-  - revision::v6
   rappels:
   - Sur un long trajet, une pause est recommandée au moins toutes les {{c1::2 heures}}, avant tout signe de fatigue.
-  - En cas de somnolence au volant, s’arrêter en sécurité sans attendre et dormir environ {{c2::20 min}} ; ne repartir qu’en
-    état de conduire.
+  - En cas de somnolence au volant, s’arrêter en sécurité sans attendre et dormir {{c2::15 à 20 min}} ; ne repartir
+    qu’en état de conduire.
 - id: c-verre-standard
   texte: Un verre standard (demi de bière, verre de vin, dose de whisky servis au bar) contient environ {{c1::10 g}} d’alcool
     pur.
@@ -134,32 +110,31 @@
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code en Poche
-  tags:
-  - revision::v6
+- id: c-verre-alcoolemie
+  texte: 'Repère moyen : chaque verre standard fait monter l''alcoolémie d''environ {{c1::0,20 à 0,25 g/L}}.'
+  explication: Davantage à jeun, pour une personne légère ou une femme ; deux verres peuvent donc suffire à dépasser
+    0,5 g/L, et un seul le seuil probatoire de 0,2 g/L.
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L’alcool et la conduite
 - id: c-alcool-elimination
   explication: Le taux varie selon la personne et les conditions ; pas de règle fixe « heures par verre ». Café, douche ou
     sport n’accélèrent pas l’élimination. Une alcoolémie peut rester excessive le lendemain.
   theme: C
   sous_theme: deficiences
   source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2024-03/depliant_alcool-conduite-070823.pdf
-  tags:
-  - revision::v6
   rappels:
   - 'Repère moyen, sans garantie individuelle : l’alcoolémie baisse d’environ {{c1::0,10 à 0,15 g/L}} par heure.'
   - Le pic d’alcoolémie survient environ {{c2::30 min}} après absorption à jeun (environ 1 h au cours d’un repas).
 - id: c-conversion-air-sang
-  explication: Ce sont des correspondances réglementaires avec des unités différentes, pas une division entre deux concentrations
-    de même unité. Lire sang ou air avant de répondre.
+  explication: 'Même règle pour les autres seuils : 0,2 g/L ↔ 0,10 mg/L, 0,8 g/L ↔ 0,40 mg/L. Ce sont des correspondances
+    réglementaires entre deux unités différentes. Lire « sang » ou « air » avant de répondre.'
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code de la route, art. R234-1
-  tags:
-  - revision::v3
-  - revision::v4
   rappels:
-  - Au seuil de 0,5 g/L de sang correspond le seuil légal de {{c1::0,25 mg/L}} d’air expiré.
-  - Au seuil de 0,2 g/L de sang correspond le seuil légal de {{c2::0,10 mg/L}} d’air expiré.
-  - Au seuil de 0,8 g/L de sang correspond le seuil légal de {{c3::0,40 mg/L}} d’air expiré.
+  - Au seuil de 0,5 g/L de sang correspond le seuil légal de {{c1::0,25 mg/L}} d’air expiré (le chiffre est divisé
+    par deux).
 - id: c-medicaments-niveaux
   explication: Somnifères et anxiolytiques (benzodiazépines), certains antihistaminiques, antitussifs et antalgiques sont
     concernés ; environ un tiers des médicaments portent un pictogramme, y compris sans ordonnance. Ne jamais associer à l'alcool.
@@ -171,5 +146,3 @@
   - 'Pictogramme médicaments de niveau 1 (jaune) : {{c1::lire la notice}} avant de conduire.'
   - 'Pictogramme médicaments de niveau 2 (orange) : ne pas conduire sans {{c2::l’avis d’un professionnel de santé}}.'
   - 'Pictogramme médicaments de niveau 3 (rouge) : {{c3::ne pas conduire}} ; demander un avis médical pour reprendre.'
-  tags:
-  - revision::v6

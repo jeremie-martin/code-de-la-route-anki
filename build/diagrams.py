@@ -417,7 +417,7 @@ def _agent(S: SVG, cx, cy, pose):
     if pose == "bras_leve":
         S.add(f'<line x1="{cx}" y1="{cy}" x2="{cx}" y2="{cy-46}" stroke="#fff" stroke-width="7" stroke-linecap="round"/>')
         S.add(f'<circle cx="{cx}" cy="{cy-48}" r="6" fill="#f5d0b0"/>')
-    elif pose == "bras_tendus_NS":  # arms along N-S axis: blocks N and S, frees E/W
+    elif pose == "bras_tendus_NS":  # arms along the N-S axis: N and S see the profile and pass, E and W stop
         S.add(f'<line x1="{cx}" y1="{cy-46}" x2="{cx}" y2="{cy+46}" stroke="#fff" stroke-width="7" stroke-linecap="round"/>')
         S.add(f'<circle cx="{cx}" cy="{cy-48}" r="6" fill="#f5d0b0"/><circle cx="{cx}" cy="{cy+48}" r="6" fill="#f5d0b0"/>')
     elif pose == "bras_tendus_EW":
@@ -560,9 +560,17 @@ def draw_road(spec: dict) -> str:
         elif k == "virage":
             S.add(f'<text x="{x0+road_w+8}" y="{y+5}" font-family="{FONT}" font-size="14" fill="#333">virage sans visibilité</text>')
             S.add(f'<path d="M{x0+road_w},{y-30} q40,-30 80,0" fill="none" stroke="#333" stroke-width="3" stroke-dasharray="6 6"/>')
-        elif k == "sign":
-            uri = sign_data_uri(ex["file"], 120)
-            S.add(f'<image href="{uri}" x="{x0+road_w+8}" y="{y-26}" width="52" height="52"/>')
+        elif k == "sign":  # roadside sign, drawn large enough to be read on a phone
+            uri = sign_data_uri(ex["file"], 200)
+            S.add(f'<image href="{uri}" x="{x0+road_w+10}" y="{y-48}" width="96" height="96"/>')
+        elif k == "retrecissement":  # the road narrows to one central lane over a stretch
+            top, bottom, w = y - 70, y + 70, (road_w - lane_w) / 2
+            for x in (x0, x0 + road_w - w):
+                S.add(f'<path d="M{x},{top-40} L{x+w if x == x0 else x},{top} L{x+w if x == x0 else x},{bottom} L{x},{bottom+40} Z" fill="{GRASS}"/>'
+                      if x == x0 else
+                      f'<path d="M{x+w},{top-40} L{x},{top} L{x},{bottom} L{x+w},{bottom+40} Z" fill="{GRASS}"/>')
+            S.add(f'<path d="M{x0},{top-40} L{x0+w},{top} L{x0+w},{bottom} L{x0},{bottom+40}" fill="none" stroke="{MARK}" stroke-width="2"/>')
+            S.add(f'<path d="M{x0+road_w},{top-40} L{x0+road_w-w},{top} L{x0+road_w-w},{bottom} L{x0+road_w},{bottom+40}" fill="none" stroke="{MARK}" stroke-width="2"/>')
         elif k == "label":
             S.add(f'<text x="{ex.get("x", 20)}" y="{y}" font-family="{FONT}" font-size="15" fill="#222">{esc(str(ex["text"]))}</text>')
         elif k == "bau":

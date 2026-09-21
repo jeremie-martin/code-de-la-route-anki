@@ -9,7 +9,6 @@
   complement: Un panonceau précise le nombre minimal d’occupants et les horaires.
   theme: L
   sous_theme: panneaux
-  importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Sans panonceau, le losange vaut bus + taxis + covoiturage 2+.
 - id: vr-losange-fin
@@ -21,5 +20,4 @@
   conduite: La voie peut de nouveau être empruntée par tous les véhicules.
   theme: L
   sous_theme: panneaux
-  importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

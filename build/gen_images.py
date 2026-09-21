@@ -821,6 +821,20 @@ def cone(params):
     return str(S)
 
 
+def barriere_k2(params):
+    """K2 barrier: red and white striped rail on two legs, seen from the front, on a road."""
+    S = SVG(360, 260)
+    S.add(f'<rect x="0" y="0" width="360" height="260" fill="{GRASS}"/>')
+    S.add(f'<rect x="0" y="150" width="360" height="110" fill="{ASPHALT}"/>')
+    S.add('<ellipse cx="180" cy="232" rx="150" ry="10" fill="#000" opacity="0.2"/>')
+    for x in (60, 288):
+        S.add(f'<rect x="{x}" y="120" width="12" height="110" fill="#e8e8e8" stroke="#555" stroke-width="2"/>')
+    S.add('<rect x="30" y="80" width="300" height="52" rx="6" fill="#ffffff" stroke="#333" stroke-width="3"/>')
+    for i in range(0, 6, 2):
+        S.add(f'<rect x="{34 + i * 49}" y="84" width="49" height="44" fill="#d8362d"/>')
+    return str(S)
+
+
 def triangle_seul(params):
     S = SVG(300, 280)
     S.add('<rect x="0" y="0" width="300" height="280" fill="#ffffff"/>')
@@ -870,5 +884,5 @@ REGISTRY.update({
     "direction_voies": direction_voies,
     "marquage_temporaire": marquage_temporaire, "zone_bleue": zone_bleue, "losange_sol": losange_sol, "cvcb": cvcb,
     "livraison": livraison, "direction_panel": direction_panel, "lieu_dit": lieu_dit, "feu_bicolore": feu_bicolore,
-    "cone": cone, "triangle_seul": triangle_seul,
+    "cone": cone, "triangle_seul": triangle_seul, "barriere_k2": barriere_k2,
 })

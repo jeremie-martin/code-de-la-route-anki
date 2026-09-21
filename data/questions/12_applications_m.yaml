@@ -7,9 +7,6 @@
   explication: On lit la préconisation correspondant au véhicule et aux pneus, plutôt que d’ajouter forfaitairement
     0,3 bar.
   source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
-  tags:
-  - revision::v3
-  - competence::application
 - id: m-afu-aeb
   theme: M
   sous_theme: adas
@@ -18,6 +15,3 @@
     après détection d’un risque de collision.
   explication: 'Ni l’un ni l’autre ne garantit l’évitement : rester attentif et prêt à freiner.'
   source: CNSR, Comité des experts, aides à la conduite — https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf
-  tags:
-  - competence::application
-  - revision::v3

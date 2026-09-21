@@ -5,10 +5,6 @@
   reponse: À 50 m du panneau ; je me prépare avant d’y arriver.
   explication: L’absence de flèches verticales indique une distance jusqu’au danger, pas sa longueur.
   source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: m1
 - id: l-visuel-etendue
   theme: L
@@ -19,10 +15,6 @@
   explication: Les flèches verticales indiquent l’étendue. Ce n’est pas une invitation à attendre 50 m pour
     ralentir.
   source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: m2
 - id: l-visuel-arret-b6a1
   theme: L
@@ -33,10 +25,6 @@
   explication: Un arrêt reste interdit s’il est gênant, dangereux ou interdit par une autre règle, même sous
     ce panneau.
   source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: b6a1
 - id: l-visuel-arret-b6d
   theme: L
@@ -46,10 +34,6 @@
   reponse: 'Non : ce panneau interdit aussi l’arrêt volontaire.'
   explication: La brièveté, la présence du conducteur et les warnings ne lèvent pas l’interdiction.
   source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: b6d
 - id: l-visuel-attendre-b6a1
   theme: L
@@ -60,10 +44,6 @@
   explication: L’arrêt réglementaire correspond à une montée, descente, opération de chargement ou déchargement,
     pas à toute immobilisation courte.
   source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R110-2
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: b6a1
 - id: l-visuel-jaune-continu
   theme: L
@@ -73,10 +53,6 @@
   reponse: 'Non : la ligne jaune continue interdit l’arrêt et le stationnement.'
   explication: 'La couleur seule ne tranche pas : lire aussi la continuité de la ligne.'
   source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: marq-ligne-jaune-continue
 - id: l-visuel-jaune-discontinu
   theme: L
@@ -87,10 +63,6 @@
   explication: Si j’attends sans charger, il s’agit d’un stationnement. Les autres interdictions continuent
     de s’appliquer.
   source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: marq-ligne-jaune-discontinue
 - id: l-visuel-b14-position
   theme: L
@@ -100,10 +72,6 @@
   reponse: Avoir déjà atteint au plus 50 km/h à son niveau.
   explication: Préparer le ralentissement en amont, selon le trafic et sans freinage brutal.
   source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: b14
 - id: l-visuel-b14-adaptation
   theme: L
@@ -113,37 +81,23 @@
   reponse: 'Non : c’est un plafond ; je ralentis davantage pour pouvoir réagir aux enfants.'
   explication: Le maximum autorisé et l’allure adaptée sont deux décisions différentes.
   source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-17
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: b14
 - id: l-visuel-fin-interdictions
   theme: L
   sous_theme: applications
-  question: 'Voiture, permis hors probatoire, temps sec. Hors agglomération, une voie par sens sans séparateur,
-    après une limitation à 50, je franchis ce panneau. Aucun autre panneau : quel plafond retrouve-je ?'
+  question: 'Hors agglomération, route à une voie par sens, sans terre-plein. Après une limitation à 50, je passe
+    ce panneau et rien ne suit. Voiture, temps sec, permis définitif : à combien puis-je rouler ?'
   reponse: '80 km/h : la limitation ponctuelle cesse, mais la règle générale de cette route demeure.'
   explication: Une fin d’interdiction ne signifie pas vitesse libre. Vérifier le type de route et les conditions.
   source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-2
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: b31
 - id: m-visuel-batterie-contact
   theme: M
   sous_theme: applications
-  question: Ce témoin s’allume quand je mets le contact, avant de démarrer. À lui seul, prouve-t-il une panne
-    de charge ?
-  reponse: 'Non : avant le démarrage, son allumage peut faire partie du fonctionnement normal. Je vérifie qu’il
-    s’éteint comme prévu après démarrage.'
+  question: Ce témoin s'allume quand je mets le contact, avant de démarrer. Que dois-je vérifier ?
+  reponse: 'Qu''il s''éteint une fois le moteur lancé : à la mise du contact, son allumage est l''autotest normal.'
   explication: L’état du moteur et les indications de la notice changent l’interprétation du même symbole.
   source: Notice Renault — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: voyant-batterie
 - id: m-visuel-batterie-roulant
   theme: M
@@ -155,53 +109,7 @@
   explication: 'Reconnaître la batterie dessinée ne suffit pas : il faut tenir compte du moment où l’alerte
     apparaît.'
   source: Notice Renault — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: voyant-batterie
-- id: m-visuel-pression-charge
-  theme: M
-  sous_theme: applications
-  question: Cette étiquette correspond à ma voiture et à ses pneus. À pleine charge, pneus froids, quelles
-    pressions appliquer à l’avant et à l’arrière ?
-  reponse: 2,4 bar à l’avant et 2,6 bar à l’arrière.
-  explication: Lire la ligne « Pleine charge », puis la colonne de chaque essieu. Pour un autre véhicule, consulter
-    son étiquette.
-  source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_document
-  image: &id001
-    gen: tableau_lecture
-    params:
-      title: Pressions à froid (bar)
-      columns:
-      - Charge
-      - Avant
-      - Arrière
-      rows:
-      - - Usuelle
-        - 2,2
-        - 2,1
-      - - Pleine charge
-        - 2,4
-        - 2,6
-- id: m-visuel-pression-usuelle
-  theme: M
-  sous_theme: applications
-  question: 'Même étiquette, charge usuelle et pneus froids. Je lis 2,6 bar dans le tableau : est-ce la valeur
-    à appliquer aux quatre pneus ?'
-  reponse: 'Non : 2,2 bar à l’avant et 2,1 bar à l’arrière pour cette charge.'
-  explication: Une valeur présente dans la notice peut correspondre à une autre situation ; ne pas retenir
-    le plus grand nombre par réflexe.
-  source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_document
-  image: *id001
 - id: s-remorque-seuil-750
   theme: S
   sous_theme: applications
@@ -211,34 +119,6 @@
   explication: Le cas de la remorque au plus égale à 750 kg est distinct du cas d’une remorque plus lourde.
     Calculer seulement la somme dans tous les cas conduit à une erreur.
   source: Service Public, permis B — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828
-  tags:
-  - revision::v4
-  - competence::application
-- id: s-remorque-seuil-800
-  theme: S
-  sous_theme: applications
-  question: Voiture de PTAC 3 500 kg, remorque de PTAC 800 kg ; capacités techniques respectées. Le permis
-    B seul suffit-il ?
-  reponse: 'Non : au-delà de 750 kg pour la remorque, la somme des PTAC compte ; 4 300 kg dépasse même le plafond
-    B96.'
-  explication: Le cas de la remorque au plus égale à 750 kg est distinct du cas d’une remorque plus lourde.
-    Calculer seulement la somme dans tous les cas conduit à une erreur.
-  source: Service Public, permis B — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828
-  tags:
-  - revision::v4
-  - competence::application
-- id: c-distance-freinage-mouille-exercice
-  theme: C
-  sous_theme: applications
-  question: Un exercice donne 15 m de réaction et 25 m de freinage sur sol sec. Sur sol mouillé, il suppose
-    le freinage doublé et la réaction inchangée. Quelle distance d’arrêt ?
-  reponse: '65 m : 15 + (2 × 25).'
-  explication: 'Seul le freinage double dans cet énoncé. La réaction reste à 15 m : on ne double pas la distance
-    d’arrêt entière.'
-  source: 'Modèle physique : arrêt = réaction + freinage ; calcul sur données explicites'
-  tags:
-  - revision::v4
-  - competence::application
 - id: c-distance-obstacle-exercice
   theme: C
   sous_theme: applications
@@ -248,9 +128,6 @@
   explication: Un freinage possible ne signifie pas un arrêt possible avant l’obstacle. Les distances données
     priment sur une table mnémotechnique.
   source: 'Relation physique : arrêt = réaction + freinage ; calcul sur données explicites'
-  tags:
-  - revision::v4
-  - competence::application
 - id: l-cavalier-ligne-continue
   theme: L
   sous_theme: applications
@@ -260,9 +137,6 @@
   explication: L’obligation d’écart latéral couvre plusieurs usagers, mais l’exception de chevauchement ne
     couvre que cycles, EDPM et cyclomobiles légers.
   source: Code de la route, R412-19 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/
-  tags:
-  - revision::v4
-  - competence::application
 - id: l-visuel-m12-edpm
   theme: L
   sous_theme: applications
@@ -272,10 +146,6 @@
   explication: Le M12 vise les cycles, EDPM et cyclomobiles légers. L’autorisation dépend de la catégorie et
     de la direction ; elle ne donne pas priorité.
   source: Arrêté du 24 novembre 1967, article 2-1 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: m12
 - id: l-visuel-m12-voiture
   theme: L
@@ -286,8 +156,4 @@
   explication: Le M12 vise les cycles, EDPM et cyclomobiles légers. L’autorisation dépend de la catégorie et
     de la direction ; elle ne donne pas priorité.
   source: Arrêté du 24 novembre 1967, article 2-1 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
-  tags:
-  - revision::v4
-  - competence::application
-  - competence::lecture_image
   image_ref: m12

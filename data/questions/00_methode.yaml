@@ -1,11 +1,3 @@
-- id: etg-bandeau-reponses
-  question: Sur une question de l'ETG, comment sait-on s'il faut cocher une ou plusieurs réponses ?
-  reponse: 'Le bandeau de la question l''indique : « une réponse » ou « plusieurs réponses ».'
-  explication: '« Plusieurs réponses » signifie au moins deux : il faut cocher toutes les bonnes et aucune mauvaise pour avoir
-    le point (tout ou rien).'
-  theme: X
-  sous_theme: lecture
-  source: securite-routiere.gouv.fr — Nouvelle épreuve du code 2023 ; Codes Rousseau — Nouveautés 2026
 - id: etg-pictogramme-point-de-vue
   question: Un pictogramme apparaît en haut à droite de la photo (piéton, vélo, moto, poids lourd…). Que signifie-t-il ?
   reponse: Que la question se place du point de vue de cet usager, pas de celui d'un automobiliste.
@@ -24,7 +16,8 @@
   source: securite-routiere.gouv.fr — Nouvelle épreuve du code 2023
 - id: etg-je-peux-je-dois
   question: Quelle différence de lecture entre « Je peux… » et « Je dois… » dans une question de l'ETG ?
-  reponse: « Je peux » demande si l'action est autorisée (règle + sécurité) ; « Je dois » demande si elle est obligatoire.
+  reponse: 'Convention de l’épreuve : « Je peux » demande si l’action est à la fois autorisée et sûre ; « Je dois
+    » demande si elle est obligatoire.'
   explication: 'Exemple : feu vert et piéton engagé → « je peux passer » = non (danger) ; « je dois m''arrêter » = oui. Une
     action autorisée mais dangereuse se répond « non » à « je peux ».'
   theme: X
@@ -39,14 +32,6 @@
   theme: X
   sous_theme: lecture
   source: Ornikar — Les questions vidéo de l'examen du code ; Prépacode (ENPC)
-- id: etg-question-suivante
-  question: À l'ETG, peut-on revenir à une question précédente ou la sauter pour y revenir plus tard ?
-  reponse: 'Non : chaque question doit être validée dans le temps imparti, sans retour possible.'
-  explication: Si le temps s'écoule sans réponse, la question est comptée fausse. Mieux vaut répondre avec sa meilleure hypothèse
-    que ne rien cocher.
-  theme: X
-  sous_theme: format
-  source: En Voiture Simone — Examen du code 2026 ; Codes Rousseau
 - id: etg-forme-double-oui-non
   question: Une question de l'ETG présente deux affirmations sur la même photo, chacune à juger OUI/NON. Comment est-elle
     notée ?
@@ -56,8 +41,6 @@
   theme: X
   sous_theme: lecture
   source: Sécurité routière — Exemples de nouvelles questions (PDF, sept. 2023) ; En Voiture Simone — Questions pièges
-  tags:
-  - revision::v3
 - id: etg-negation
   question: 'Énoncé de l''ETG : « Il n''est pas interdit de tourner à droite. » Qu''est-ce que cela veut dire ?'
   reponse: 'Que c''est autorisé : une double négation (« pas interdit ») équivaut à une permission.'

@@ -6,9 +6,6 @@
   reponse: 100 km/h.
   explication: La limite probatoire de 110 ne concerne que les sections normalement à 130.
   source: Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
-  tags:
-  - revision::v3
-  - competence::application
 - id: l-pluie-autoroute-110
   theme: L
   sous_theme: vitesse
@@ -17,9 +14,6 @@
   reponse: 100 km/h sous la pluie.
   explication: Si un panneau impose moins, c’est ce plafond inférieur qui s’applique.
   source: Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
-  tags:
-  - revision::v3
-  - competence::application
 - id: l-brouillard-zone30
   theme: L
   sous_theme: vitesse
@@ -27,9 +21,6 @@
   reponse: 'Non : 30 km/h reste le maximum, et je ralentis davantage si nécessaire.'
   explication: Le plafond de 50 ne relève jamais une limitation locale plus basse.
   source: Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
-  tags:
-  - revision::v3
-  - competence::application
 - id: l-pluie-route80
   theme: L
   sous_theme: vitesse
@@ -37,9 +28,6 @@
   reponse: 'Non : le plafond reste 80 km/h ; mon allure réelle peut devoir être bien plus basse.'
   explication: 'Ne pas soustraire systématiquement 10 ou 20 : identifier le type de route et les plafonds applicables.'
   source: Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
-  tags:
-  - revision::v3
-  - competence::application
 - id: l-feu-vert-interdiction-tourner
   theme: L
   sous_theme: signalisation
@@ -47,9 +35,6 @@
   reponse: 'Non : le vert ne supprime pas cette interdiction.'
   explication: Les feux prévalent sur les panneaux qui règlent la priorité, pas sur toutes les prescriptions.
   source: Code de la route, R411-25 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087
-  tags:
-  - revision::v3
-  - competence::application
 - id: l-giratoire-sortie-impossible
   theme: L
   sous_theme: priorites
@@ -58,9 +43,6 @@
   reponse: Je lui cède le passage et, si je ne peux pas me rabattre sans le couper, je refais un tour.
   explication: Être dans l’anneau ne donne pas priorité pour changer de voie.
   source: Code de la route, R412-9 et R412-10
-  tags:
-  - revision::v3
-  - competence::application
 - id: l-cycliste-ligne-espace
   theme: L
   sous_theme: depassement
@@ -70,6 +52,3 @@
   explication: L’exception autorise le chevauchement, pas le franchissement complet ; la distance latérale reste
     obligatoire.
   source: Code de la route, R412-19 et R414-4
-  tags:
-  - revision::v3
-  - competence::application

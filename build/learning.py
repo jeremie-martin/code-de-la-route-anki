@@ -1,4 +1,4 @@
-"""Editorial objectives, foundation selection and an exact card-level programme."""
+"""Editorial objectives (data/_meta/objectives.yaml), the socle/consolidation split and the card-level programme."""
 from __future__ import annotations
 
 from collections import Counter
@@ -88,18 +88,6 @@ def validate_objectives(data):
     for lesson in lessons().values():
         if not all(lesson.get(f) for f in ('titre', 'principe', 'exemple', 'transfert')):
             errors.append(f"repère {lesson['theme']} incomplet")
-    for filename, field in [('contrasts.yaml', 'notes'), ('retirements.yaml', 'couverts_par')]:
-        entries = yaml.safe_load(OBJECTIVES.with_name(filename).read_text(encoding='utf-8'))
-        found = set()
-        for entry in entries:
-            if entry['id'] in found or not entry.get('raison') or not entry.get(field):
-                errors.append(f"{filename} : décision incomplète ou dupliquée {entry['id']}")
-            found.add(entry['id'])
-            if filename == 'retirements.yaml' and entry['id'] in by_id:
-                errors.append(f"note retirée encore active : {entry['id']}")
-            for ident in entry.get(field, []):
-                if ident not in by_id:
-                    errors.append(f"{filename} : note inconnue {ident}")
     for check in checks:
         try:
             date.fromisoformat(check['consulte_le'])
@@ -134,110 +122,50 @@ def card_plan(data, note_order, sibling_gap=30):
     return plan
 
 
-def write_reports(data, note_order, out, per_day=20):
+def write_reports(data, note_order, out):
     by_id = {n["id"]: n for notes in data.values() for n in notes}
     plan = card_plan(data, note_order)
     core = sum(1 for _, ident, _ in plan if by_id[ident]["_stage"] == "socle")
-    lines = ["# Programme calculé depuis les positions des cartes\n",
-             f"{len(plan)} cartes au total ; **{core} cartes de socle** avant l'approfondissement.\n",
-             f"À {per_day} nouvelles cartes/jour : socle en au moins {-(-core // per_day)} jours "
-             f"d'introduction ; totalité en au moins {-(-len(plan) // per_day)} jours.\n",
-             "Ces durées ne prédisent ni la maîtrise ni la charge de révision. L'enfouissement des cartes "
-             "sœurs, les limites quotidiennes et les jours sans étude peuvent les allonger.\n",
-             "Les thèmes sont entrelacés. Une carte sœur reçoit une position distincte ; toutes les "
-             "cartes du socle passent avant l'approfondissement. Le tableau utilise exactement le plan exporté.\n",
-             "| Semaine | Positions | Socle / approfondissement | Cartes par thème |",
-             "|---|---|---|---|"]
-    for start in range(0, len(plan), per_day * 7):
-        chunk = plan[start:start + per_day * 7]
-        mix = Counter(by_id[i]["theme"] for _, i, _ in chunk)
-        stages = Counter(by_id[i]["_stage"] for _, i, _ in chunk)
-        lines.append(f"| {start // (per_day * 7) + 1} | {start + 1}–{start + len(chunk)} | "
-                     f"{stages['socle']} / {stages['approfondissement']} | " +
-                     ", ".join(f"{t} {c}" for t, c in sorted(mix.items())) + " |")
+    lines = ["# Ordre d'introduction des cartes\n",
+             f"{len(plan)} cartes ; les **{core} cartes du socle** (positions 1 à {core}) précèdent la consolidation. "
+             "Cet ordre est celui du paquet : nouvelles cartes collectées par position la plus basse (préréglage fourni). "
+             "Les thèmes sont entrelacés ; une carte sœur d'un même fait reçoit une position plus lointaine.\n",
+             "| Position | Carte | Thème | Forme | Étape |", "|---|---|---|---|---|"]
+    for pos, (kind, ident, ordinal) in enumerate(plan, 1):
+        n = by_id[ident]
+        card = f"`{ident}`" + (f" ({ordinal + 1})" if kind == "faits" else "")
+        lines.append(f"| {pos} | {card} | {n['theme']} · {n['sous_theme']} | {kind} | {n['_stage']} |")
     (out / "PROGRAMME.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    coverage = ["# Couverture de tout le deck\n",
-                "Sélection éditoriale, pas garantie de couvrir la banque confidentielle de l'ETG. "
-                "Chaque note du paquet complet est reliée à au moins un objectif explicite. "
-                "Socle et consolidation sont des étapes d'apprentissage, pas deux niveaux de qualité. "
-                "Aucun plafond de notes ou de cartes.\n"]
+    coverage = ["# Couverture : objectifs et notes\n",
+                "Chaque note est reliée à au moins un objectif. La recherche Anki `objectif::…` retrouve les cartes "
+                "d'un objectif après une erreur en série. Sélection éditoriale : elle ne garantit pas de couvrir la "
+                "banque confidentielle de l'ETG.\n"]
     for obj in objectives():
         notes = [n for n in by_id.values() if obj["id"] in n["_objectives"]]
         coverage.extend([f"## {obj['id']} — {obj['titre']}\n", obj["raison"] + "\n",
                          f"{len(notes)} notes / {sum(card_count(n) for n in notes)} cartes.\n",
                          "Recherche Anki : `objectif::" + obj["id"] + "`\n",
-                         "| Note | Étape | Exercice | Source |", "|---|---|---|---|"])
+                         "| Note | Étape | Forme | Source |", "|---|---|---|---|"])
         for n in notes:
             source = str(n["source"]).replace("|", "/").replace("\n", " ")
             coverage.append(f"| `{n['id']}` | {n['_stage']} | {n['_kind']} | {source} |")
         coverage.append("")
     (out / "COUVERTURE.md").write_text("\n".join(coverage) + "\n", encoding="utf-8")
-    write_card_inventory(data, plan, out)
-    write_design_reports(by_id, out)
+    guide = ['# Repères par thème\n',
+             'Un repère par thème : le principe, un exemple expliqué et une piste de transfert. Ils sont aussi affichés '
+             'sur l’écran de chaque sous-deck dans Anki. Ils donnent un cadre de raisonnement ; les cartes et leurs '
+             'sources précisent les règles et leurs exceptions.\n']
+    for lesson in lessons().values():
+        guide.extend([f"## {lesson['theme']} — {lesson['titre']}\n", lesson['principe'] + '\n',
+                      '**Exemple.** ' + lesson['exemple'] + '\n', '**Transfert.** ' + lesson['transfert'] + '\n'])
+    (out / 'REPERES.md').write_text('\n'.join(guide) + '\n', encoding='utf-8')
     decisions = yaml.safe_load(OBJECTIVES.with_name('sign_exclusions.yaml').read_text(encoding='utf-8'))
-    selection = ['# Choix de représentation des signaux\n',
-                 'Aucun plafond numérique ni filtre automatique : chaque entrée de l’inventaire sans carte de '
-                 'reconnaissance distincte est listée ici avec sa raison éditoriale (v6 : signaux sans décision '
-                 'de conduite ou variantes d’une famille déjà apprise). Une couverture textuelle entraîne la règle, '
-                 'pas la reconnaissance visuelle de toutes ses variantes.\n',
+    selection = ['# Signaux sans carte de reconnaissance\n',
+                 'Un signal a sa carte s’il porte une décision de conduite ou une discrimination que l’épreuve peut '
+                 'demander. Chaque entrée de l’inventaire sans carte distincte est listée ici avec sa raison et les '
+                 'cartes qui couvrent la règle.\n',
                  '| Entrées | Raison | Cartes correspondantes |', '|---|---|---|']
     for d in decisions:
         selection.append('| ' + ', '.join(d['codes']) + ' | ' + d['raison'] + ' | ' +
                          ', '.join('`' + i + '`' for i in d['couverts_par']) + ' |')
     (out / 'SELECTION-SIGNAUX.md').write_text('\n'.join(selection) + '\n', encoding='utf-8')
-
-
-def write_design_reports(by_id, out):
-    guide = ['# Comprendre avant de mémoriser\n',
-             'Lire le repère d’un thème avant ses premières cartes, puis retrouver son exemple si une règle reste obscure. '
-             'Ces mêmes repères sont accessibles hors ligne au verso de chaque carte, dans « Comprendre ce thème ». '
-             'Ils donnent un cadre de raisonnement ; les cartes et leurs sources précisent les règles et exceptions.\n']
-    for lesson in lessons().values():
-        guide.extend([f"## {lesson['theme']} — {lesson['titre']}\n", lesson['principe'] + '\n',
-                      '**Exemple.** ' + lesson['exemple'] + '\n', '**Transfert.** ' + lesson['transfert'] + '\n'])
-    (out / 'COMPRENDRE.md').write_text('\n'.join(guide) + '\n', encoding='utf-8')
-    lines = ['# Décisions de conception v4\n',
-             'Les familles ci-dessous testent des conditions différentes. Elles sont mélangées dans le parcours ; '
-             'leur regroupement ici sert à examiner le raisonnement et ne crée pas de cartes supplémentaires.\n']
-    for entry in yaml.safe_load(OBJECTIVES.with_name('contrasts.yaml').read_text(encoding='utf-8')):
-        lines.extend([f"## {entry['id']}\n", entry['raison'] + '\n'])
-        for ident in entry['notes']:
-            if ident not in by_id:
-                continue  # The foundation export is built before the full package.
-            n = by_id[ident]
-            lines.append(f"- `{ident}` : " + str(n.get('question', n.get('texte', n.get('signification', '')))).replace('\n', ' '))
-        lines.append('')
-    lines.extend(['## Retraits justifiés\n', 'Aucun plafond numérique : chaque retrait ci-dessous a un motif et une couverture conservée. '
-                  'La v4 est destinée à un import neuf ; réimporter ne supprime pas les anciennes cartes.\n'])
-    for entry in yaml.safe_load(OBJECTIVES.with_name('retirements.yaml').read_text(encoding='utf-8')):
-        lines.append(f"- `{entry['id']}` : {entry['raison']} Couverture : " + ', '.join('`' + i + '`' for i in entry['couverts_par']) + '.')
-    (out / 'CONCEPTION.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
-
-
-def write_card_inventory(data, plan, out):
-    """Expose every retrieval target, including every sibling of a cloze note.
-
-    This is an inspection aid, not a claim that a tag proves educational quality.
-    """
-    by_id = {n['id']: n for ns in data.values() for n in ns}
-    rows = ['# Rôle et cible de chaque carte\n',
-            'Inventaire généré depuis les notes livrées, dans leur ordre d’introduction. '
-            'Le rôle dépend du type ; la cible est le contenu effectivement demandé. '
-            'Les objectifs renvoient aux raisons éditoriales de COUVERTURE.md. '
-            'Cet inventaire ne remplace pas la lecture critique des rectos et versos.\n',
-            '| Position | Note / carte | Objectifs | Travail demandé | Cible de rappel |',
-            '|---|---|---|---|---|']
-    roles = {'reconnaissance': 'Reconnaître le signal', 'confusions': 'Discriminer deux signaux',
-             'faits': 'Rappeler une valeur ou notion', 'questions': 'Répondre à la question',
-             'affirmations': 'Juger et justifier ; corriger si faux', 'scenarios': 'Lire la scène et décider'}
-    for pos, (kind, ident, ordinal) in enumerate(plan, 1):
-        n = by_id[ident]
-        if kind == 'faits':
-            target = ' / '.join(re.findall(r'\{\{c' + str(ordinal + 1) + r'::(.*?)(?:::.*?)?\}\}', n['texte']))
-        else:
-            field = {'reconnaissance': 'signification', 'confusions': 'difference',
-                     'questions': 'reponse', 'affirmations': 'pourquoi', 'scenarios': 'reponse'}[kind]
-            target = n[field]
-        target = str(target).replace('|', '/').replace('\n', ' ')
-        rows.append(f"| {pos} | `{ident}` / {ordinal + 1} | {', '.join(n['_objectives'])} | {roles[kind]} | {target} |")
-    (out / 'ROLES.md').write_text('\n'.join(rows) + '\n', encoding='utf-8')

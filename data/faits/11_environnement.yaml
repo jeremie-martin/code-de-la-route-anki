@@ -1,6 +1,4 @@
 - id: e-critair-chiffres
-  dedup_ok:
-  - aff-e-diesel-critair1
   explication: 'La classification dépend aussi de la catégorie. Ne pas étendre les dates des voitures aux motos ou poids lourds.
     Une classe identique n’autorise pas automatiquement l’accès à toutes les ZFE : consulter les règles locales.'
   theme: E
@@ -10,8 +8,6 @@
   - Pour une voiture diesel Euro 5 ou 6, la vignette est Crit’Air {{c1::2}}.
   - Pour une voiture essence Euro 5 ou 6, la vignette est Crit’Air {{c2::1}}.
   - Pour une voiture entièrement électrique ou à hydrogène, la vignette Crit’Air est {{c3::verte (classe électrique)}}.
-  tags:
-  - revision::v5
 - id: e-pic-pollution-chiffres
   dedup_ok:
   - e-pic-pollution
@@ -22,5 +18,3 @@
   theme: E
   sous_theme: pollution
   source: service-public.fr — Pic de pollution ; arrêtés préfectoraux
-  tags:
-  - revision::v3

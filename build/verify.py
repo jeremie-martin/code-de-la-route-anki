@@ -1,13 +1,11 @@
-"""Verify distributable packages in disposable Anki collections.
+"""Verify the distributable package in a disposable Anki collection.
 
-python -m build.verify [--previous /path/to/previous.apkg]
-Tests fresh imports, Socle-to-full upgrades and reimports without accessing a
-user's collection. --previous is an optional compatibility probe, not a promise
-that pre-v4 packages can migrate across deliberate retirements and cloze changes.
+python -m build.verify
+Tests a fresh import (content, media, study order, options preset) and a reimport of the same
+edition (no duplicate, review history kept), without touching a user's collection.
 """
 from __future__ import annotations
 
-import argparse
 import hashlib
 from importlib.metadata import version
 from pathlib import Path
@@ -17,7 +15,7 @@ import tempfile
 from anki.collection import Collection
 from anki.import_export_pb2 import ImportAnkiPackageRequest, ImportAnkiPackageOptions
 
-from build.build import OUT, load_all, curriculum, inline_md, tags_for, fait_html, repere_html
+from build.build import OUT, load_all, curriculum, inline_md, tags_for, fait_html
 from build.learning import card_count, card_plan
 from build.models import MODEL_IDS, DECK_ROOT, notetypes, CSS
 
@@ -44,7 +42,6 @@ def verify_content(col, data):
                    'Complement': 'complement', 'Piege': 'piege', 'Difference': 'difference'}
     for note in notes.values():
         original = expected[note['Id']]
-        assert note['Repere'] == repere_html(original['theme'])
         for field, key in text_fields.items():
             if field in note and key in original:
                 value = fait_html(original) if field == 'Texte' else inline_md(original[key])
@@ -99,57 +96,33 @@ def assert_history(col, cid, before):
     card = col.get_card(cid)
     assert (card.nid, card.ord, card.ivl, card.due, card.reps, card.lapses) == before
     assert col.db.scalar('select count(*) from revlog where cid=?', cid) == 1
-    assert '{{c2::100 km/h}}' in card.note()['Texte'], 'correction non importée'
+    assert '{{c2::100 km/h}}' in card.note()['Texte'], 'contenu de la note absent après réimport'
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--previous', type=Path, action='append', default=[],
-                        help='Ancien paquet à tester ; option répétable pour plusieurs versions')
-    args = parser.parse_args()
     data = load_all()
-    core = {kind: [n for n in notes if n['_stage'] == 'socle'] for kind, notes in data.items()}
-    full_path, core_path = OUT / 'Code-de-la-route-2026.apkg', OUT / 'Code-de-la-route-2026-Socle.apkg'
+    full_path = OUT / 'Code-de-la-route-2026.apkg'
     checks = []
     with tempfile.TemporaryDirectory(prefix='cdr-verify-') as tmp:
-        for name, subset, path in [('socle', core, core_path), ('complet', data, full_path)]:
-            col = Collection(str(Path(tmp) / f'{name}.anki2'))
-            try:
-                import_package(col, path)
-                verify_content(col, subset)
-                verify_new_order(col, subset)
-                checks.append(f'{name} : {col.note_count()} notes, {col.card_count()} cartes ; rendu, médias, ordre et options OK')
-                if name == 'socle':
-                    cid, before = mark_reviewed(col)
-                    import_package(col, full_path)
-                    verify_content(col, data)
-                    assert_history(col, cid, before)
-                    import_package(col, full_path)
-                    verify_content(col, data)
-                    assert_history(col, cid, before)
-                    checks.append('socle → complet → réimport : aucun doublon ; historique et planification conservés')
-            finally:
-                col.close()
-        for index, previous in enumerate(args.previous):
-            col = Collection(str(Path(tmp) / f'upgrade-{index}.anki2'))
-            try:
-                import_package(col, previous)
-                cid, before = mark_reviewed(col)
-                import_package(col, full_path)
-                verify_content(col, data)
-                assert_history(col, cid, before)
-                checks.append(f'{previous.name} → complet : correction appliquée ; historique et planification conservés')
-            finally:
-                col.close()
-    fingerprints = '\n'.join(
-        f'- `{path.name}` : `{hashlib.sha256(path.read_bytes()).hexdigest()}`'
-        for path in (full_path, core_path))
-    (OUT / 'VERIFICATION.md').write_text('# Vérification des paquets\n\n' +
-        f'Imports réels en collections temporaires avec la bibliothèque Anki {version("anki")}.\n\n' +
-        '\n'.join('- ' + line for line in checks) + '\n\nSHA-256 des paquets vérifiés :\n\n' +
-        fingerprints + '\n\nCes contrôles ne valident pas la justesse juridique de chaque phrase ni la réussite à l’examen. '
-        'Le passage et les réimports ci-dessus concernent la même édition ; aucune migration depuis une édition antérieure '
-        'n’est attestée sans le test explicite `--previous`. Voir aussi [le rendu navigateur](RENDU.md).\n')
+        col = Collection(str(Path(tmp) / 'complet.anki2'))
+        try:
+            import_package(col, full_path)
+            verify_content(col, data)
+            verify_new_order(col, data)
+            checks.append(f'import neuf : {col.note_count()} notes, {col.card_count()} cartes ; rendu, médias, ordre et options OK')
+            cid, before = mark_reviewed(col)
+            import_package(col, full_path)
+            verify_content(col, data)
+            assert_history(col, cid, before)
+            checks.append('réimport de la même édition : aucun doublon ; historique et planification conservés')
+        finally:
+            col.close()
+    fingerprint = hashlib.sha256(full_path.read_bytes()).hexdigest()
+    (OUT / 'VERIFICATION.md').write_text('# Vérification du paquet\n\n' +
+        f'Import réel en collection temporaire avec la bibliothèque Anki {version("anki")}.\n\n' +
+        '\n'.join('- ' + line for line in checks) + f'\n\nSHA-256 du paquet vérifié : `{fingerprint}`\n\n'
+        'Ces contrôles ne valident ni la justesse de chaque phrase ni la réussite à l’examen. '
+        'Voir aussi [le rendu navigateur](RENDU.md).\n')
     print('\n'.join(checks))
 
 

@@ -8,8 +8,6 @@
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
-  tags:
-  - revision::v4
 - id: aff-e-point-mort-descente
   contexte: Longue descente, route dégagée.
   affirmation: Passer au point mort économise du carburant.
@@ -20,8 +18,6 @@
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
-  tags:
-  - revision::v4
 - id: aff-e-moteur-chauffer
   contexte: Matin d'hiver, moteur froid.
   affirmation: Je laisse tourner le moteur deux ou trois minutes avant de partir, pour le ménager.
@@ -38,8 +34,6 @@
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
-  tags:
-  - revision::v4
 - id: aff-e-coffre-toit-vide
   contexte: Retour de vacances ; le coffre de toit est encore sur le pavillon, vide.
   affirmation: Vide, il ne coûte plus rien en carburant.
@@ -49,8 +43,6 @@
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
-  tags:
-  - revision::v4
 - id: aff-e-vitesse-stable
   contexte: Route dégagée, trafic fluide.
   affirmation: Une allure souple et stable consomme moins qu'une conduite nerveuse à la même vitesse moyenne.
@@ -60,18 +52,6 @@
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
-  tags:
-  - revision::v4
-- id: aff-e-ecoconduite-securite
-  affirmation: Conduire en écoconduite, c'est aussi conduire plus sûrement.
-  verdict: vrai
-  pourquoi: Anticiper et garder des distances donnent du temps pour réagir. L’économie ne justifie ni de suivre
-    de trop près, ni de descendre au point mort, ni de retarder un freinage nécessaire.
-  theme: E
-  sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
-  tags:
-  - revision::v4
 - id: aff-e-equipements-electriques
   affirmation: Le dégivrage de la lunette arrière et les sièges chauffants font consommer du carburant.
   verdict: vrai
@@ -79,36 +59,16 @@
     mais garder le désembuage ou le dégivrage tant qu’ils sont nécessaires à la visibilité.
   theme: E
   sous_theme: ecoconduite
-  importance: utile
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
   contexte: Voiture thermique.
-  tags:
-  - revision::v4
 - id: aff-e-electrique-zero
   affirmation: Un véhicule électrique n'émet aucune pollution.
   verdict: faux
-  pourquoi: Rien à l'échappement, mais des particules d'usure (freins, pneus, chaussée), la fabrication de la batterie et la production de l'électricité. Crit'Air 0 ne veut pas dire « sans impact ».
+  pourquoi: Rien à l'échappement, mais des particules d'usure (freins, pneus, chaussée), la fabrication de la batterie
+    et la production de l'électricité. La vignette verte ne veut pas dire « sans impact ».
   theme: E
   sous_theme: pollution
   source: ADEME ; En Voiture Simone — Achat éco-responsable
-- id: aff-e-diesel-critair1
-  contexte: Une voiture diesel de 2015, norme Euro 6.
-  affirmation: Elle est classée Crit'Air 1.
-  verdict: faux
-  pourquoi: 'Un diesel n''atteint pas la classe 1 : même récent, il est Crit''Air 2. La classe 1 est réservée aux essences de 2011 ou plus, aux hybrides rechargeables et aux véhicules au gaz.'
-  theme: E
-  sous_theme: pollution
-  source: service-public.fr F33371 ; Code de la route, art. R318-2
-- id: aff-e-critair-renouvellement
-  affirmation: La vignette Crit'Air se renouvelle chaque année.
-  verdict: faux
-  pourquoi: 'Pas de renouvellement annuel : elle reste valable tant qu’elle est lisible et correspond au véhicule.
-    Si elle est abîmée ou si les informations changent, vérifier le remplacement sur le site officiel.'
-  theme: E
-  sous_theme: pollution
-  source: service-public.fr F33371 ; Code de la route, art. R318-2
-  tags:
-  - revision::v4
 - id: aff-e-zfe-vignette
   contexte: J'entre dans une ZFE au volant d'une voiture essence de 2022.
   affirmation: Même autorisée à circuler, ma voiture doit porter la vignette Crit'Air.
@@ -117,14 +77,6 @@
   theme: E
   sous_theme: pollution
   source: Code de la route, art. R411-19-1 et R318-2 ; service-public.fr F33371
-- id: aff-e-zfe-supprimees
-  affirmation: Les zones à faibles émissions ont été supprimées en 2026.
-  verdict: faux
-  pourquoi: 'La suppression votée par le Parlement a été censurée par le Conseil constitutionnel le 21 mai 2026 : les ZFE restent en vigueur. Beaucoup de supports de préparation annoncent le contraire.'
-  theme: E
-  sous_theme: pollution
-  importance: utile
-  source: Conseil constitutionnel, décision n° 2026-903 DC du 21 mai 2026 ; service-public.fr F33371
 - id: aff-e-diesel-nox
   contexte: Un diesel et une essence de même année et de même puissance.
   affirmation: Le diesel émet davantage d'oxydes d'azote et de particules.
@@ -142,18 +94,15 @@
   sous_theme: ecomobilite
   source: Règlement (UE) 540/2014 (AVAS) ; ADEME — Véhicules électriques
 - id: aff-e-covoiturage-electrique
-  contexte: Une voie réservée est active. La signalisation autorise seulement les véhicules à au moins deux occupants,
-    les taxis et les bus ; aucune exception pour l’électrique.
-  affirmation: Seul dans ma voiture électrique, je dois rester sur les voies générales.
-  verdict: vrai
-  pourquoi: La motorisation électrique ne donne pas une autorisation générale. Les bénéficiaires dépendent de la
-    réglementation locale et de la signalisation de cette voie.
+  contexte: Une voie réservée (losange) est active ; le panonceau autorise les véhicules à au moins deux occupants,
+    les taxis et les bus.
+  affirmation: Seul dans ma voiture électrique, je peux l'emprunter.
+  verdict: faux
+  pourquoi: 'La motorisation électrique ne donne aucun droit général : seuls les usagers nommés par la signalisation
+    de cette voie peuvent l''emprunter. Sans panonceau, ce sont les transports en commun, les taxis et le covoiturage.'
   theme: E
   sous_theme: ecomobilite
-  importance: utile
   source: Ville de Paris — https://www.paris.fr/pages/la-voie-reservee-sur-le-peripherique-entre-en-vigueur-le-3-mars-30106
-  tags:
-  - revision::v3
 - id: aff-e-borne-recharge
   contexte: Place équipée d'une borne de recharge, libre devant les commerces.
   affirmation: Je peux m'y garer sans recharger, le temps d'une course rapide.
@@ -172,5 +121,3 @@
   theme: E
   sous_theme: ecoconduite
   source: "ADEME — Voiture électrique : conseils d’usage ; securite-routiere.gouv.fr — Les aides à la conduite (ADAS)"
-  tags:
-  - revision::v8

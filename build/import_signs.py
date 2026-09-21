@@ -277,7 +277,6 @@ def convert():
             "piege": piege,
             "theme": "L",
             "sous_theme": sous,
-            "importance": imp,
             "source": "IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France",
         }
         if e.get("variants"):

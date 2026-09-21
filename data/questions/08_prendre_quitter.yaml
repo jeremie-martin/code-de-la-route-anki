@@ -20,19 +20,19 @@
   theme: P
   sous_theme: verifications
   source: Sécurité routière — Exemples de nouvelles questions (Q1) ; notices constructeurs
-  tags:
-  - revision::v3_1
 - id: p-verif-pare-brise
-  question: 'Matin d''hiver, je suis pressé : le pare-brise est givré sauf un hublot dégagé devant moi. Je pars ?'
-  reponse: 'Non : je dégivre et désembue toute la surface vitrée, rétroviseurs compris ; un champ de vision réduit masque
-    piétons et deux-roues.'
+  question: 'Matin d''hiver, je suis pressé : le pare-brise est givré sauf un hublot dégagé devant moi. Que fais-je
+    ?'
+  reponse: 'Je dégivre et désembue toute la surface vitrée, rétroviseurs compris : un champ de vision partiel est
+    dangereux et sanctionnable.'
   explication: Le givre, la buée et la neige se traitent avant de partir, pas en roulant. En hiver, le lave-glace doit contenir
     un liquide antigel pour ne pas geler sur la vitre.
   theme: P
   sous_theme: verifications
   source: Code de la route, art. R412-6 ; securite-routiere.gouv.fr — Conduire en hiver
 - id: p-verif-gps-passagers
-  question: Je pars vers une adresse inconnue, avec deux passagers à l'arrière. Quand je programme le GPS ?
+  question: Je pars vers une adresse inconnue, avec deux passagers à l'arrière. À quel moment est-ce que je programme
+    le GPS ?
   reponse: 'Avant de démarrer, à l’arrêt : le régler en roulant détourne les yeux de la route plusieurs secondes.'
   explication: Cinq secondes les yeux sur l’écran à 90 km/h, ce sont 125 m parcourus en aveugle. J’en profite pour vérifier
     que tout le monde est attaché. Une modification d’itinéraire se fait sur une aire ou un parking.
@@ -48,8 +48,6 @@
   theme: P
   sous_theme: installation
   source: REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite
-  tags:
-  - revision::v5
 - id: p-dossier-reglage
   question: Le siège est à la bonne distance. Comment je vérifie l'inclinaison du dossier ?
   reponse: Bras tendus, poignets posés sur le haut du volant sans décoller les épaules du dossier ; en conduite, les bras
@@ -161,8 +159,6 @@
   theme: P
   sous_theme: quitter
   source: securite-routiere.gouv.fr ; Codes Rousseau — Stationner en pente
-  tags:
-  - revision::v5
 - id: p-pente-vitesse
   question: 'Même rue en pente, boîte manuelle : quel rapport j''engage en plus du frein à main ?'
   reponse: 'La première en montée, la marche arrière en descente : le moteur retient le véhicule dans le sens où il partirait
@@ -182,10 +178,9 @@
   theme: P
   sous_theme: quitter
   source: Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Portière gauche, main droite
-  tags:
-  - revision::v5
 - id: p-passagers-descendre
-  question: Je m'arrête le long d'une rue pour déposer mes enfants assis à l'arrière. Comment ils descendent ?
+  question: Je m'arrête le long d'une rue pour déposer mes enfants assis à l'arrière. Par où doivent-ils descendre
+    ?
   reponse: Côté trottoir, après avoir vérifié qu’aucun vélo ni trottinette n’arrive ; sécurité enfant active, c’est moi qui
     ouvre depuis l’extérieur.
   explication: Un enfant n'a pas le réflexe de regarder avant d'ouvrir. R417-7 vise tout occupant du véhicule ; avec des enfants
@@ -212,5 +207,12 @@
   theme: P
   sous_theme: quitter
   source: Sécurité routière — Exemples de nouvelles questions (Q14) ; Code de la route, art. R412-10
-  tags:
-  - revision::v3
+- id: p-vehicule-emprunte-equipements
+  question: J'emprunte la voiture d'un proche ; le gilet et le triangle manquent. Qui est sanctionné en cas de contrôle
+    ?
+  reponse: 'Moi, le conducteur : les équipements obligatoires sont vérifiés avant de partir, quel que soit le propriétaire.'
+  explication: 'Gilet à portée de main et triangle à bord (11 € chacun s''ils manquent). Avant de partir avec un
+    véhicule inconnu, repérer aussi les commandes : feux, essuie-glaces, détresse.'
+  theme: P
+  sous_theme: verifications
+  source: Code de la route, art. R416-19
