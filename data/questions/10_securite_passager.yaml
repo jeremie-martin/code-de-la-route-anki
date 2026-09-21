@@ -137,3 +137,21 @@
   theme: S
   sous_theme: equipements
   source: securite-routiere.gouv.fr — Équipements de sécurité ; Euro NCAP
+- id: s-remorque-seuil-750
+  theme: S
+  sous_theme: applications
+  question: Voiture de PTAC 3 500 kg, remorque de PTAC 750 kg ; capacités techniques respectées. Le permis
+    B seul suffit-il ?
+  reponse: 'Oui : la remorque ne dépasse pas 750 kg de PTAC, même si la somme des PTAC atteint 4 250 kg.'
+  explication: Le cas de la remorque au plus égale à 750 kg est distinct du cas d’une remorque plus lourde.
+    Calculer seulement la somme dans tous les cas conduit à une erreur.
+  source: Service Public, permis B — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828
+- id: s-remorque-masse-reelle
+  theme: S
+  sous_theme: applications
+  question: 'La somme des PTAC dépasse 3 500 kg, avec une remorque de PTAC 1 000 kg. La remorque est vide :
+    cela suffit-il à autoriser le permis B seul ?'
+  reponse: 'Non : pour cette règle de permis, on additionne les PTAC, pas les masses réelles du jour.'
+  explication: Le permis et les capacités techniques sont deux contrôles différents. Vider la remorque ne modifie
+    pas son PTAC.
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828

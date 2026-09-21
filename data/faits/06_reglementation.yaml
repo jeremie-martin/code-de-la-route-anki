@@ -80,15 +80,6 @@
     du capital.
   - Le stage volontaire de récupération de points est possible au plus {{c2::une fois par an}} (date à date), permis encore
     valide.
-- id: d-consulter-points
-  texte: Le permis B au format carte a une validité administrative de {{c1::15 ans}} (renouvellement sans examen ni visite
-    médicale).
-  explication: Le solde de points se consulte sur le téléservice « Mes Points Permis », qui a remplacé Télépoints en novembre
-    2023. Le permis dématérialisé est disponible dans l'application France Identité depuis février 2024 et accepté aux contrôles
-    en France (pas à l'étranger).
-  theme: D
-  sous_theme: documents
-  source: Arrêté du 13 novembre 2023 ; service-public.fr F17970 et F31133
 - id: d-aac-conditions
   explication: 'Avantages : taux de réussite plus élevé, probatoire réduit à 2 ans, assurance moins chère. L''accompagnateur
     doit avoir le permis B depuis au moins 5 ans sans interruption et l''accord écrit de l''assureur. Conduite à l''étranger
@@ -115,8 +106,9 @@
   sous_theme: permis
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828
 - id: d-accompagnateur
-  explication: 'Les points de l''élève ne sont pas transférés à l''accompagnateur : chacun répond de ses propres infractions
-    ; l''accompagnateur est personnellement soumis aux règles sur l''alcool et les stupéfiants.'
+  explication: 'En conduite accompagnée, c''est l''accompagnateur qui répond des infractions de l''élève : amende,
+    retrait de points et rétention ou suspension de son permis (L224-1 II). Il est aussi personnellement soumis aux
+    règles sur l''alcool et les stupéfiants.'
   theme: D
   sous_theme: permis
   source: Code de la route, R211-3 et R234-1 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2826
@@ -141,7 +133,8 @@
   source: Code de la route, art. R412-6-1, R412-6-2, L224-1 et L224-2
 - id: d-ceinture-sanction
   explication: 'Enfant non attaché : l''amende revient au conducteur (135 €) mais l''article R412-2 ne prévoit aucun
-    retrait de points, contrairement à l''adulte qui ne s''attache pas lui-même (3 points).'
+    retrait de points, contrairement au conducteur qui ne s''attache pas lui-même (3 points). Un passager adulte non
+    attaché paie lui-même, sans point.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R412-1 et R412-2
@@ -174,9 +167,9 @@
   - Un excès de vitesse retenu de 20 à 29 km/h entraîne le retrait de {{c3::2 points}}.
   - Un excès de vitesse retenu de 30 à 39 km/h entraîne le retrait de {{c4::3 points}}.
 - id: d-grand-exces
-  explication: Depuis le 29 décembre 2025 (décret pris pour la loi du 9 juillet 2025). Le délit est jugé au tribunal correctionnel
-    ; suspension, confiscation et autres mesures dépendent de la procédure. Ne pas confondre maxima judiciaires et sanction
-    systématiquement prononcée.
+  explication: 'Depuis le 29 décembre 2025 (loi du 9 juillet 2025) : délit dès la première fois, jugé au tribunal
+    correctionnel. Avant cette date : contravention de 5e classe, 6 points, délit seulement en récidive — une question
+    non mise à jour peut encore attendre cette réponse.'
   theme: D
   sous_theme: sanctions
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F19460
@@ -297,8 +290,8 @@
   sous_theme: documents
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2878
   rappels:
-  - 'Voiture particulière : le premier contrôle technique se fait dans les 6 mois précédant son {{c1::4e anniversaire}}
-    de mise en circulation.'
+  - 'Voiture particulière : le premier contrôle technique se fait dans les 6 mois précédant le {{c1::4e anniversaire}}
+    de sa première mise en circulation.'
   - 'Voiture particulière, après un contrôle favorable : les contrôles suivants ont lieu tous les {{c2::2 ans}}.'
 - id: d-assurance-garanties
   texte: 'L''assurance automobile obligatoire est la {{c1::responsabilité civile (« au tiers »)}} : elle couvre les dommages
@@ -348,9 +341,21 @@
 - id: d-permis-b-perimetre
   rappels:
   - Le permis B autorise un véhicule dont le PTAC ne dépasse pas {{c1::3,5 t}}.
-  - Le permis B autorise un véhicule conçu pour au plus {{c2::8 passagers}} en plus du conducteur (9 places).
-  explication: 'Au-delà : permis C1/C (poids) ou D1/D (personnes). Remorque : 750 kg de PTAC, ou davantage si la
-    somme des PTAC reste sous 3,5 t (B96 jusqu''à 4,25 t, puis BE).'
+  - Le permis B autorise un véhicule conçu pour au plus {{c2::8 passagers}} en plus du conducteur.
+  explication: 'Soit 9 places au total. Au-delà : permis C1/C (poids) ou D1/D (personnes). Remorque : 750 kg de PTAC,
+    ou davantage si la somme des PTAC reste sous 3,5 t (B96 jusqu''à 4,25 t, puis BE).'
   theme: D
   sous_theme: permis
   source: Code de la route, art. R221-4 (catégorie B)
+- id: d-masses-definitions
+  theme: D
+  sous_theme: documents
+  rappels:
+  - Le PTAC (rubrique F.2 de la carte grise) est la masse maximale autorisée du véhicule {{c1::chargé}}, passagers
+    et bagages compris.
+  - La charge utile est la différence entre le PTAC et le {{c2::poids à vide}} (rubrique G.1).
+  - La masse maximale autorisée de l'ensemble véhicule + remorque est le {{c3::PTRA}} (rubrique F.3).
+  explication: Dépasser le PTAC allonge la distance d'arrêt, dégrade la tenue de route et expose à une amende et
+    à l'immobilisation. Pour le permis B, ce sont les PTAC, pas les masses réelles, qui se comparent aux 3 500 kg.
+  source: Code de la route, art. R311-1 et R221-4 ; arrêté du 9 février 2009 (certificat d'immatriculation, rubriques
+    F.2, F.3, G.1)

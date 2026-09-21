@@ -6,7 +6,9 @@ data/scenarios.yaml: a scenario whose hand answer disagrees with the solver
 fails the build, so a mistake in either is caught.
 
 Model (Code de la route, art. R415-5 to R415-11 and R412-30, R414-..):
-  0. The agent's explicit directions override the following rules.
+  0. The agent's explicit directions override the following rules. Arms extended (bras tendus): the
+     users on the axis of the arms see the agent in profile and pass; the users facing his chest or
+     back stop (R411-28, arrêté du 24 novembre 1967). Arm raised: everybody stops.
   1. Véhicules d'intérêt général prioritaires explicitly signalled pass first.
   2. Tramways pass before other vehicles (unless lights/agent say otherwise).
   3. Lights: green passes before red. Fixed amber = stop (treated as red here).

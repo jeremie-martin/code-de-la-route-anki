@@ -35,7 +35,7 @@
   pourquoi: La perte de l’antiblocage seule n’impose pas de s’immobiliser sur-le-champ. Je réduis l’allure, augmente
     les distances et fais contrôler rapidement selon la notice. Si le freinage devient anormal, je m’arrête en sécurité.
   theme: M
-  sous_theme: tableau_de_bord
+  sous_theme: voyants
   source: Sécurité routière — Exemples de nouvelles questions (Q5)
 - id: aff-m-abs-direction
   contexte: Un obstacle surgit, je freine en urgence sur un véhicule équipé de l'ABS.
@@ -166,7 +166,7 @@
   source: securite-routiere.gouv.fr — ADAS ; Stych — Nouvelles aides à la conduite
 - id: aff-m-detecteur-fatigue
   contexte: Ma voiture est équipée d’un détecteur de fatigue (pictogramme « tasse de café »).
-  affirmation: Sans alerte du détecteur, je peux considérer que je suis apte à poursuivre.
+  affirmation: Tant que le détecteur ne m'alerte pas, je peux considérer que je suis apte à poursuivre.
   verdict: faux
   pourquoi: 'Le système déduit la fatigue des écarts de trajectoire et des mouvements du volant : il peut se déclencher
     tard ou pas du tout. Bâillements, paupières lourdes ou regard fixe commandent l’arrêt, alerte ou non ; la tasse de
@@ -186,11 +186,11 @@
   source: securite-routiere.gouv.fr — Les aides à la conduite (ADAS) ; règlement (UE) 2019/2144 (GSR2)
 - id: aff-m-tpms-orange
   contexte: En roulant, le voyant orange de pression des pneus s'allume ; la voiture ne tire pas et ne vibre pas.
-  affirmation: Je peux rejoindre la prochaine station à allure modérée, à condition de contrôler la pression sans
-    tarder.
-  verdict: vrai
-  pourquoi: 'Orange = anomalie à traiter rapidement, contrairement au rouge qui impose l''arrêt. Si la voiture tire
-    d''un côté, vibre ou si le voyant clignote, c''est peut-être une crevaison : je m''arrête en sécurité.'
+  affirmation: Je peux continuer normalement jusqu'à ma destination et contrôler la pression plus tard.
+  verdict: faux
+  pourquoi: 'Orange = anomalie à traiter rapidement : je réduis ma vitesse et je m''arrête dès que possible pour contrôler
+    les quatre pneus (station de gonflage). Si la voiture tire d''un côté ou vibre, c''est peut-être une crevaison
+    : arrêt immédiat en sécurité. Rouge, lui, impose toujours l''arrêt.'
   theme: M
   sous_theme: voyants
   source: Notices constructeurs (Renault, témoins lumineux) ; REMC
@@ -213,3 +213,22 @@
   theme: M
   sous_theme: adas
   source: CNSR, Comité des experts — Les aides à la conduite (ADAS), 2024
+- id: aff-m-voyant-abs-distance
+  contexte: Le voyant ABS reste allumé en permanence ; le freinage ordinaire fonctionne.
+  affirmation: Lors d'un freinage d'urgence, la distance d'arrêt sera fortement augmentée.
+  verdict: faux
+  pourquoi: 'L''ABS empêche le blocage des roues et conserve la direction ; il ne raccourcit pas nettement l''arrêt
+    sur sol sec. Sans lui, ce qui est perdu, c''est la possibilité de braquer en freinant fort : c''est cela que
+    l''épreuve attend.'
+  theme: M
+  sous_theme: freinage
+  source: Sécurité routière — Exemples de nouvelles questions (Q5)
+- id: aff-m-clignotant-rapide
+  contexte: En actionnant le clignotant, le témoin vert clignote deux fois plus vite que d'habitude.
+  affirmation: Cela signale qu'une ampoule de clignotant est grillée.
+  verdict: vrai
+  pourquoi: 'Le rythme accéléré est le signal classique d''une ampoule hors service : je vérifie et je remplace
+    l''ampoule (les autres usagers ne voient plus mon intention de ce côté).'
+  theme: M
+  sous_theme: feux
+  source: Notices constructeurs ; REMC

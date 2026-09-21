@@ -79,6 +79,7 @@
   titre: Déterminer qui doit céder et où s'arrêter
   raison: Règle, exception et application visuelle ; le sens des flèches compte.
   notes:
+  - scn-deux-stops-face
   - l-stop-arret
   - l-sortie-parking-priorite
   - l-tourner-gauche-regle
@@ -176,7 +177,6 @@
   - l-fleche-jaune-droite-rouge
   - r13
   - r17
-  - r23
   - agent-geste-avancer
   - l-agent-ralentir-avancer
   - aff-l-feu-vert-priorite
@@ -238,8 +238,6 @@
   - b6a3
   - b8
   - b9a
-  - b9i
-  - b10a
   - b17
   - b18c
   - b21-2
@@ -428,6 +426,7 @@
   titre: Tenir sa voie et gérer les croisements
   raison: Ne pas confondre trajectoire, clignotant et droit de passage.
   notes:
+  - aff-l-virage-gauche-axe
   - l-position-chaussee
   - l-entrecroisement
   - l-retrecissement-croisement
@@ -508,7 +507,6 @@
   - aff-c-temps-reaction-vitesse
   - c-suiveur-trop-pres
   - c-distance-obstacle-exercice
-  - c-distance-arret-reperes
   consolidation:
   - c-distance-reaction-formule
   - c-intervalle-pl-tunnel
@@ -519,6 +517,7 @@
   titre: Chercher les indices et les zones masquées
   raison: La situation décide du danger ; ne pas attendre la certitude.
   notes:
+  - c-virage-technique
   - c-regarder-loin
   - c-angle-mort-definition
   - c-ordre-controles-changement-file
@@ -532,6 +531,7 @@
   - aff-c-enfant-croit-vu
   - aff-c-champ-visuel-vitesse-pieton
   consolidation:
+  - aff-c-musique-forte
   - c-clignotant-avant-ralentir
   - c-zone-attention-pluie
   - c-enfant-masque
@@ -555,6 +555,7 @@
   - aff-c-micro-sommeil
   - aff-c-nuit-trafic-fluide
   consolidation:
+  - aff-c-jeunes-risque-double
   - c-routine-monotonie
   - c-vitesse-fatigue
   - aff-c-jeune-reflexes
@@ -578,6 +579,8 @@
   - aff-c-medicament-sans-ordonnance
   - aff-c-somnifere-soir
   consolidation:
+  - aff-c-senior-visite-70
+  - aff-c-alcool-un-sur-trois
   - c-verre-standard
   - aff-c-repas-copieux
   - aff-c-senior-reaction
@@ -593,6 +596,7 @@
   titre: Écarter les distractions même légales
   raison: La conversation et la manipulation détournent l'attention.
   notes:
+  - c-chiffres-campagne
   - c-telephone-arret
   - aff-c-mains-libres-passager
   - aff-c-oreillette
@@ -748,9 +752,6 @@
   - ak32
   - k2
   - kc1
-  - kd8
-  - kd9
-  - kd42
   - conf-a14-ak14
   - conf-k10a-k10b
 - id: u-vulnerables
@@ -758,6 +759,7 @@
   titre: Préserver piétons, enfants et cyclistes
   raison: Respecter leurs priorités et anticiper leurs erreurs.
   notes:
+  - c113
   - aff-u-pieton-engage-lent
   - u-pieton-hors-passage
   - u-pieton-canne-blanche
@@ -767,14 +769,13 @@
   - u-double-sens-cyclable
   - u-velo-chiffres
   - aff-u-pieton-imprudent
-  - aff-u-velo-m12
   - aff-u-velo-ecart-portieres
   - c20a
   - c115
   - marq-passage-pietons
   consolidation:
+  - aff-u-velo-m12
   - marq-passage-cyclistes
-  - c113
   - u-velo-equipement-chiffres
   - u-pieton-hors-agglo-cote
   - u-personnes-agees
@@ -834,6 +835,7 @@
   - aff-u-pl-retroviseur
   - c20c
   consolidation:
+  - u-pl-vitesses-chiffres
   - u-pl-angles-morts-chiffres
   - u-tram-depasser
   - u-voie-bus
@@ -924,6 +926,8 @@
   - m-visuel-batterie-contact
   - m-visuel-batterie-roulant
   consolidation:
+  - aff-m-clignotant-rapide
+  - aff-m-voyant-abs-distance
   - aff-m-tpms-orange
   - voyant-direction
   - voyant-detresse
@@ -1014,6 +1018,7 @@
   titre: Attacher chaque occupant et choisir le siège enfant
   raison: Comprendre ceinture, airbag et responsabilité, pas seulement l'âge.
   notes:
+  - aff-s-enfant-10-ans-avant
   - s-ceinture-obligation
   - s-femme-enceinte
   - s-surnombre
@@ -1026,6 +1031,8 @@
   - aff-s-airbag-pieds
   - s-securite-active-passive
   consolidation:
+  - aff-s-fumer-mineur
+  - aff-s-ceinture-autocar
   - s-ceinture-50-kmh
   - s-airbag-distance
   - s-enfant-moins-10-ans
@@ -1034,7 +1041,6 @@
   - aff-s-airbag-remplace-ceinture
   - aff-s-appuie-tete-securite
   - aff-s-animal-libre
-  - aff-s-enfant-10-ans-avant
   - aff-s-enfant-135-cm
   - aff-s-enfant-genoux
   - aff-s-isofix
@@ -1055,6 +1061,7 @@
   - s-remorque-seuil-750
   - s-remorque-masse-reelle
   consolidation:
+  - d-masses-definitions
   - s-coffre-toit
   - aff-s-chargement-distance-arret
   - aff-s-plage-arriere
@@ -1065,6 +1072,7 @@
   titre: Protéger, alerter et choisir l'aide selon l'état de la victime
   raison: La respiration normale et le traumatisme changent le geste ; suivre les secours.
   notes:
+  - aff-a-dae-sans-danger
   - pas-ordre
   - numeros-urgence
   - a-alerter-borne-ou-portable
@@ -1117,7 +1125,6 @@
   raison: Apprendre les conséquences structurantes avant les détails de procédure.
   notes:
   - d-permis-b-perimetre
-  - d-permis-b-125
   - d-points-capital
   - d-probatoire-duree
   - d-probatoire-3-points
@@ -1130,6 +1137,7 @@
   - aff-d-velo-points
   - d-suspension-invalidation
   consolidation:
+  - d-permis-b-125
   - d-permis-am-14-ans
   - d-formation-post-permis
   - d-points-delit-cumul
@@ -1153,7 +1161,6 @@
   - aff-d-assurance-tiers
   - aff-d-vignette-assurance
   consolidation:
-  - d-consulter-points
   - d-carte-grise-delais
   - d-constat-declaration
   - d-vitres-teintees
@@ -1197,9 +1204,9 @@
   - e-ve-recharge
   - aff-e-electrique-zero
   - aff-e-ve-silence
-  - aff-e-covoiturage-electrique
   - vr-losange-debut
   consolidation:
+  - aff-e-covoiturage-electrique
   - marq-losange-vr
   - m11d
   - vr-losange-fin
@@ -1228,7 +1235,6 @@
   - d-couleur-marron
   - e42
   - e43
-  - e44
   - d50
   - l-vocab-routes-lettres
   consolidation:
@@ -1264,13 +1270,13 @@
   - m3b
   - ce15a
   - ce15i
-  - ce52
 - id: c-vision
   theme: C
   titre: Comprendre les limites de la vision et les compensations
   raison: Champ utile, éblouissement et correction visuelle expliquent où chercher l’information ; les ordres de
     grandeur ne sont pas des garanties individuelles.
-  notes: []
+  notes:
+  - c-champ-visuel-chiffres
   consolidation:
   - c-vue-90-pourcent
   - aff-c-vision-peripherique
@@ -1331,13 +1337,13 @@
   theme: E
   titre: Choisir un mode de déplacement et une énergie adaptés
   raison: Comparer besoins, carburant compatible, recharge et solutions partagées ; ni prix ni impact ne sont universels.
-  notes: []
+  notes:
+  - aff-e-borne-recharge
   consolidation:
   - e-covoiturage-voie
   - e-electrique-avantages
   - e-energies-alternatives
   - e-e85
-  - aff-e-borne-recharge
 - id: e-bruit
   theme: E
   titre: Réduire les nuisances sonores

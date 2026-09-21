@@ -178,7 +178,9 @@
   contexte: En plein jour, hors agglomération, sur une petite route sinueuse.
   affirmation: Je peux utiliser l'avertisseur sonore pour annoncer mon approche dans un virage sans visibilité.
   verdict: vrai
-  pourquoi: 'Hors agglomération, le klaxon sert à donner « les avertissements nécessaires » (R416-1), brièvement. En agglomération, il est réservé au danger immédiat ; les avertisseurs à sons multiples sont interdits.'
+  pourquoi: Hors agglomération, le klaxon sert à donner « les avertissements nécessaires » (R416-1), brièvement. En
+    agglomération, il est réservé au danger immédiat. À l'épreuve, la réponse principale dans un virage sans visibilité
+    reste « je ralentis » ; le klaxon n'est jamais la seule réponse.
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R416-1 et R416-3
@@ -362,3 +364,12 @@
   theme: L
   sous_theme: signalisation
   source: IISR 2e partie art. 28 ; Sécurité routière — Exemples de nouvelles questions (Q18, Q19)
+- id: aff-l-virage-gauche-axe
+  contexte: Route à double sens, virage à gauche sans visibilité.
+  affirmation: Je peux me rapprocher de l'axe de la chaussée pour élargir ma trajectoire.
+  verdict: faux
+  pourquoi: Un véhicule masqué par le virage arrive en face sur cette partie de chaussée. On reste dans sa voie,
+    près du bord droit, allure réduite avant la courbe (R412-9, R413-17).
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R412-9 et R413-17

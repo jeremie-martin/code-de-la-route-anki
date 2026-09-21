@@ -2,9 +2,9 @@
 
 Import réel en collection temporaire avec la bibliothèque Anki 26.9.2.
 
-- import neuf : 1045 notes, 1117 cartes ; rendu, médias, ordre et options OK
+- import neuf : 1051 notes, 1128 cartes ; rendu, médias, ordre et options OK
 - réimport de la même édition : aucun doublon ; historique et planification conservés
 
-SHA-256 du paquet vérifié : `927684669cde7f860ddfbca54d7f05b85d00dde0ff01dbb4deac1a924183d8c6`
+SHA-256 du paquet vérifié : `3c9612e911424fc4c0579e8f220dd74ea49af10e335d498c0117e1c5e5f5e63c`
 
 Ces contrôles ne valident ni la justesse de chaque phrase ni la réussite à l’examen. Voir aussi [le rendu navigateur](RENDU.md).

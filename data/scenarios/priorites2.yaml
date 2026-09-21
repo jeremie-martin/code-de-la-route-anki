@@ -221,3 +221,31 @@
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-10"
+- id: scn-deux-stops-face
+  kind: intersection
+  spec:
+    approaches:
+      N:
+        goes: left
+        sign: stop
+        vehicle:
+          colour: rouge
+      S:
+        goes: straight
+        sign: stop
+        vehicle:
+          colour: bleu
+          me: true
+  check:
+    pair:
+    - S
+    - N
+    - avant
+  question: Nous avons chacun un STOP, face à face, et la route transversale est libre. La rouge tourne à sa gauche,
+    je vais tout droit. Qui repart en premier ?
+  reponse: 'Moi : après l''arrêt, celui qui tourne à gauche cède le passage au véhicule qui vient en face.'
+  explication: 'Le STOP règle la priorité avec la route transversale, pas entre les deux véhicules arrêtés : on
+    revient à la règle du tourne-à-gauche (R415-4). C''est la réponse attendue à l''exemple officiel de 2023 (Q2).'
+  theme: L
+  sous_theme: priorites
+  source: Code de la route, art. R415-4 et R415-6 ; Sécurité routière — Exemples de nouvelles questions (Q2)

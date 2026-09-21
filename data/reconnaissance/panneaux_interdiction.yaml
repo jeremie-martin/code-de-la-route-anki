@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 30 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 28 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: b0
   type: panneau
   code: B0
@@ -232,28 +232,6 @@
     commons: France road sign B9h.svg
   nom: Accès interdit aux motocyclettes et motocyclettes légères
   signification: Interdiction d'accès aux motocyclettes (> 50 cm³) et motocyclettes légères (≤ 125 cm³).
-  theme: L
-  sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b9i
-  type: panneau
-  code: B9i
-  image:
-    commons: France road sign B9i.svg
-  nom: Accès interdit aux véhicules tractant une caravane ou une remorque de plus de 250 kg
-  signification: Interdiction d'accès aux véhicules tractant une caravane ou une remorque de plus de 250 kg, l'ensemble ne dépassant pas 3,5 t de PTRA (au-delà, ce sont les panneaux B8/B13 qui s'appliquent).
-  theme: L
-  sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b10a
-  type: panneau
-  code: B10a
-  image:
-    commons: France road sign B10a.svg
-  nom: Limitation de longueur
-  signification: Accès interdit aux véhicules ou ensembles de véhicules dont la longueur (chargement compris) dépasse le nombre indiqué (ex. 10 m).
-  conduite: Vérifier la longueur de son ensemble (voiture + caravane/remorque) avant de s'engager.
-  complement: 'Mémo : B10a = LONGUEUR (camion de profil, cote horizontale) ; B11 = LARGEUR (cote entre deux flèches horizontales) ; B12 = HAUTEUR (cote entre deux flèches verticales).'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

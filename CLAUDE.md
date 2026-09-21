@@ -22,17 +22,17 @@ python build/yamlfix.py data/*/*.yaml  # quote les valeurs YAML contenant ': '
 
 - `data/reconnaissance/*.yaml` sont **générés** : corriger `data/_meta/sign_overrides.yaml` (clé = id, `null`
   retire un champ) ou `data/signs_inventory.yaml`, puis régénérer. `voyants.yaml` est écrit à la main.
-  Exclure un signal = l’ajouter à `data/_meta/sign_exclusions.yaml` (codes de l’inventaire + `couverts_par`).
+  Exclure un signal = l’ajouter à `data/_meta/sign_exclusions.yaml` (`codes` de l’inventaire, `raison`,
+  `couverts_par`). Formats des notes et sous-thèmes : `docs/maintenance.md`.
 - Chaque note doit figurer dans `data/_meta/objectives.yaml` (`notes` = socle, `consolidation` = suite) ;
   retirer une note = la retirer aussi de tous les registres (le build le signale).
-- Les scénarios d’intersection déclarent `check` ; `build/priority.py` doit être d’accord. Agent bras tendus :
-  les usagers **dans l’axe des bras** passent (ils voient le profil), les autres s’arrêtent.
+- Les scénarios d’intersection déclarent `check` ; `build/priority.py` (modèle documenté en tête du fichier)
+  doit être d’accord.
 - Toute valeur juridique se vérifie dans `docs/research/sources/cdr.txt` (Code consolidé au 10 septembre 2026,
   `grep -n "R. 415-5"`), puis la consultation se note dans `data/_meta/source_checks.yaml`.
 - Les limites de longueur, la balance vrai/faux et les tournures qui trahissent un verdict sont des
   **avertissements** : on juge la carte, on ne la tord pas pour faire taire le compteur. `long_ok` /
   `multi_ok` / `dedup_ok` marquent une exception assumée.
 - Les images générées sont invalidées automatiquement quand `diagrams.py` ou `gen_images.py` change.
-- Le deck n’a jamais été importé par son utilisateur : aucune compatibilité avec une édition antérieure n’est
-  requise ; les GUID dérivent des ids, ce qui suffit au réimport de la même édition.
+- Pas de migration entre éditions : les GUID dérivent des ids, ce qui suffit au réimport d’une même édition.
 - Pas d’agents en cascade : au plus deux sous-agents à la fois, sur Opus, avec « ne pas lancer de sous-agents ».

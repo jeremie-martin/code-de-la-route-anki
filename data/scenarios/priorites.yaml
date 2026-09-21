@@ -374,7 +374,8 @@
       E: {vehicle: {colour: rouge}, goes: straight}
     agent: bras_tendus_NS
   check: {pair: [S, E, avant]}
-  question: "Un agent règle la circulation, bras tendus à l'horizontale : depuis ma voiture, je vois le bout de son bras (son profil). Puis-je passer ?"
+  question: 'Un agent règle la circulation, bras tendus à l''horizontale : je le vois de profil, dans l''axe de ses
+    bras. Puis-je passer ?'
   reponse: "Oui : je suis dans l'axe de ses bras, donc je passe ; la rouge, qui voit sa poitrine, doit s'arrêter."
   explication: "Bras tendus = barrière pour ceux qui voient l'agent de face ou de dos ; passage pour ceux qui le voient de profil. Bras levé vertical = tout le monde s'arrête. L'agent prime sur les feux et les panneaux."
   theme: L

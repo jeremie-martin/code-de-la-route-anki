@@ -43,27 +43,30 @@ les défauts de structure ; les longueurs et les tics de style font l’objet d�
 (`python -m build.build --check`), qui appellent une décision éditoriale, pas un contournement.
 
 1. **Une carte, une décision ou une valeur, et le recto contient tout ce dont la réponse dépend** : type de
-   route, météo, véhicule, point de vue, statut du conducteur, visibilité. Si une condition manque, la carte
-   est fausse, pas « courte ». Un schéma qui n’est pas à l’échelle ne mesure ni une vitesse ni une distance :
-   on les écrit.
+   route, météo, véhicule, point de vue, statut du conducteur, visibilité. Test : si un moniteur devrait poser
+   une question avant de répondre (« en ville ? », « il pleut ? »), le recto est incomplet. Un schéma qui n’est
+   pas à l’échelle ne mesure ni une vitesse ni une distance : on les écrit.
 2. **La cible de rappel est ce que l’épreuve notera.** Quand le droit et la convention des supports de
    préparation divergent (freinage doublé sur route mouillée, carré des dizaines, PLS), la réponse est celle
-   attendue à l’épreuve et l’explication porte la nuance, nommée comme telle. Quand la règle a changé après
-   2023, la réponse est la règle actuelle et l’explication le dit. Aucune carte ne prétend connaître la réponse
-   d’une banque confidentielle.
+   attendue à l’épreuve et l’explication porte la nuance, nommée comme telle. Quand la règle a changé depuis le
+   renouvellement de la banque de questions (septembre 2023), la réponse est la règle actuelle et l’explication
+   nomme le texte et sa date. Aucune carte ne prétend connaître la réponse d’une banque confidentielle.
 3. **Rien de devinable sans savoir.** Ni depuis le recto (un contexte qui énonce la condition du verdict), ni
    depuis une carte sœur (deux trous complémentaires, un exercice à données fixes qui devient du rappel de
    nombre), ni depuis le style : les affirmations vraies et fausses partagent les mêmes tournures
-   (« puisque », « tant que », « je peux », « toujours »…), et l’ensemble des oui/non n’est pas majoritairement
-   « non ». Une affirmation fausse est plausible pour un adulte.
+   (« puisque », « tant que », « je peux », « toujours »… : le build signale une tournure à plus de 85 % d’un
+   côté), la part de « vrai » reste entre 40 et 60 %, et les questions oui/non ne sont pas massivement « non ».
+   Une affirmation fausse décrit ce qu’un conducteur ordinaire fait ou croit vraiment ; si personne ne la
+   dirait, elle n’apprend rien.
 4. **La réponse est courte et jugeable ; l’explication explique.** Réponse = la décision ou la valeur et la
-   raison décisive. L’explication donne le mécanisme, la limite ou la distinction utile ; elle n’ajoute pas
-   une seconde liste à réciter, ne commente pas la fabrication du deck et ne s’adresse pas à un rédacteur.
-   Une réserve n’y figure que si elle change ce que l’élève peut conclure (« valeur constructeur »,
-   « selon visibilité ») ; une réponse qui se limite à « voir la notice » n’est pas une réponse.
-5. **Le français est celui d’un bon moniteur** : première personne, phrases naturelles, un seul registre,
-   pas de cadres télégraphiques ni d’inversions littéraires, pas de jargon administratif quand un mot courant
-   existe.
+   raison décisive, en une phrase (le build signale au-delà de 35 mots ou de quatre éléments) ; tout ce qui ne
+   sert pas à juger sa propre réponse va dans l’explication. Celle-ci donne le mécanisme, la limite ou la
+   distinction utile ; elle n’ajoute pas une seconde liste à réciter, ne commente pas la fabrication du deck et
+   ne s’adresse pas à un rédacteur. Une réserve n’y figure que si elle change ce que l’élève peut conclure
+   (« valeur constructeur », « selon visibilité ») ; une réponse qui se limite à « voir la notice » n’en est pas une.
+5. **Le français est celui d’un bon moniteur.** Chaque champ se lit à voix haute sans être reformulé ; aucun
+   champ n’est une étiquette suivie d’une valeur (« Conditions. Configuration → plafond ») ; première personne,
+   pas d’inversions littéraires (« que fais-je »), pas de jargon administratif quand un mot courant existe.
 6. **Prérequis avant application.** Les bases (formes et couleurs des panneaux, vocabulaire, priorité à
    droite, code couleur des voyants) précèdent tout le reste ; un signal est reconnu avant qu’une question
    ne l’utilise ; les scénarios de priorité s’ouvrent après les panneaux de priorité. L’ordre est calculé par
@@ -72,11 +75,15 @@ les défauts de structure ; les longueurs et les tics de style font l’objet d�
    demander.** Les variantes d’une famille apprise, les fins et sorties de zone déductibles d’un archétype,
    les pictogrammes et inscriptions transparents restent hors du deck, chacun documenté avec les cartes qui
    couvrent la règle (`data/_meta/sign_exclusions.yaml`). Tout signal retenu a un média.
-8. **Ce qui ne décide rien au volant n’est pas une cible de rappel** : maxima de peine, statistiques annuelles,
+8. **Ce qui ne décide rien au volant n’est pas une cible de rappel** : maxima de peine, bilans annuels,
    délais administratifs qu’on consulte, prix. Les seuils, la qualification (contravention, délit), les points
-   et les délais que l’épreuve demande restent.
-9. **Toute valeur juridique est vérifiée dans le Code de la route consolidé et datée** ; toute règle récente
-   nomme son texte. Une référence générique n’est pas une vérification.
+   et les délais que l’épreuve demande restent, ainsi que les quelques chiffres de campagne qu’elle reprend
+   tels quels (téléphone × 3, somnolence première cause sur autoroute), nommés comme des repères ; un montant
+   forfaitaire (35 €, 135 €) peut figurer en explication, jamais comme cible ; les maxima encourus ne figurent
+   nulle part.
+9. **Toute valeur juridique est vérifiée dans le Code de la route consolidé et datée** : la carte cite
+   l’article dans `source`, la date et la portée de la consultation sont dans `data/_meta/source_checks.yaml` ;
+   toute règle récente nomme son texte. Une référence générique n’est pas une vérification.
 10. **Rien dans le paquet qui ne serve qu’au mainteneur** : les étiquettes de provenance, les journaux de
     révision et les commentaires de conception restent dans le dépôt.
 

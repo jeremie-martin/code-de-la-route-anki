@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 23 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 20 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: ak2
   type: panneau
   code: AK2
@@ -178,28 +178,6 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: kd8
-  type: panneau
-  code: KD8
-  image:
-    commons: KD8e3.svg
-  nom: Présignalisation de changement de chaussée ou de trajectoire
-  signification: Panneau jaune schématisant un basculement de circulation (passage sur la chaussée opposée, déport de voies).
-  conduite: 'Suivre la trajectoire indiquée et ralentir : on peut rouler sur la chaussée opposée.'
-  theme: L
-  sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: kd9
-  type: panneau
-  code: KD9
-  image:
-    commons: KD9e3.svg
-  nom: Affectation de voies (temporaire)
-  signification: Panneau jaune indiquant l'affectation temporaire des voies (voies neutralisées ou affectées à une direction) en zone de chantier.
-  conduite: Se placer dans la voie indiquée.
-  theme: L
-  sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: kd10
   type: panneau
   code: KD10
@@ -219,17 +197,6 @@
   nom: Direction de déviation
   signification: Panneau de direction jaune en forme de flèche portant la mention « Déviation » (ou le symbole KS1 numéroté) indiquant le chemin de la déviation.
   conduite: Suivre la déviation.
-  theme: L
-  sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: kd42
-  type: panneau
-  code: KD42
-  image:
-    commons: KD42.svg
-  nom: Présignalisation de déviation
-  signification: Panneau jaune annonçant avant le carrefour la direction de la déviation (schéma ou flèche), avec éventuellement la ville et la distance.
-  conduite: Se préparer à tourner dans la direction indiquée.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

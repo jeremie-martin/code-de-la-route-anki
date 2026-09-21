@@ -28,7 +28,7 @@
   sous_theme: pietons
   source: Code de la route, art. R412-36 et R412-42
 - id: u-zone-rencontre-pietons
-  question: J'entre dans une zone de rencontre (panneau B52). Un piéton marche au milieu de la chaussée devant moi. Que fais-je
+  question: J'entre dans une zone de rencontre. Un piéton marche au milieu de la chaussée devant moi. Que fais-je
     ?
   reponse: 'Je le suis à son allure, sans klaxonner : en zone de rencontre (20 km/h maximum), les piétons circulent sur toute
     la chaussée et ont priorité sur les véhicules.'
@@ -331,3 +331,12 @@
   theme: U
   sous_theme: edpm
   source: Code de la route, art. R412-43-1 II et III ; service-public.fr F308
+- id: u-edpm-regle-locale
+  theme: U
+  sous_theme: edpm
+  question: À trottinette électrique en ville, une règle locale impose casque et équipement rétro-réfléchissant
+    de jour. Puis-je appliquer seulement la règle nationale moins stricte ?
+  reponse: 'Non : je respecte aussi cette obligation locale.'
+  explication: Depuis août 2026, Paris et la petite couronne imposent ces équipements. Vérifier les prescriptions
+    locales, sans transformer cette mesure en règle nationale.
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/actualites/A19037

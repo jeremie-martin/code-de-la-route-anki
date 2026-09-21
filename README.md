@@ -5,17 +5,17 @@ en 2026, et comprendre les règles assez bien pour les appliquer à des situatio
 Il est généré à partir d’une bibliothèque de connaissances écrite à la main (`data/`) par le code de `build/`.
 
 **[Télécharger le paquet](out/Code-de-la-route-2026.apkg)** — effectifs exacts dans [STATS](out/STATS.md)
-(1 045 notes, 1 117 cartes). Le deck relie les signaux, les règles, les décisions et des scénarios dessinés à
+(1 051 notes, 1 128 cartes). Le deck relie les signaux, les règles, les décisions et des scénarios dessinés à
 49 objectifs d’apprentissage. Il ne contient pas de photographies d’examen.
 
 ## Commencer
 
 1. Importer le paquet dans Anki (version récente) en cochant **« Importer les préréglages de deck »** : c’est
    ce préréglage qui fait arriver les nouvelles cartes dans l’ordre calculé (position la plus basse) et qui
-   enfouit les cartes sœurs. Sans lui, Anki servirait les 370 cartes de signalisation d’un bloc.
+   enfouit les cartes sœurs. Sans lui, Anki servirait toutes les cartes de signalisation d’un bloc.
    Vérification : Options du deck → Nouvelles cartes → ordre de collecte « position la plus basse ».
 2. Étudier le deck parent **Code de la route 2026**. L’ordre d’introduction entrelace les thèmes ; les
-   612 premières cartes forment le socle, la suite consolide (variantes, exceptions, applications). Le nombre
+   617 premières cartes forment le socle, la suite consolide (variantes, exceptions, applications). Le nombre
    de nouvelles cartes par jour est un réglage personnel.
 3. L’écran de chaque sous-deck affiche le **repère** du thème (principe, exemple, transfert) ; les mêmes
    textes sont réunis dans [REPERES](out/REPERES.md). Les lire avant les premières cartes d’un thème.
@@ -57,12 +57,10 @@ source .venv/bin/activate
 python -m build.build --check      # structure des données (erreurs) et relecture éditoriale (avertissements)
 python -m build.build              # médias, paquet, rapports dans out/
 python -m build.verify             # import réel et réimport dans une collection temporaire
-python -m unittest discover -s tests
 ```
 
-Chrome/Chromium et `requirements-qa.txt` permettent en plus `python -m build.preview --ids …` (captures de
-cartes) et `python -m build.render_check` (toutes les faces, plusieurs tailles d’écran).
-Les médias Commons sont téléchargés au premier build puis mis en cache.
+Le premier build télécharge les médias Commons (quelques minutes), ensuite tout est en cache. Les autres
+commandes (tests, captures de cartes, contrôle du rendu) sont dans la [maintenance](docs/maintenance.md).
 
 - [Conception](docs/conception.md) — ce que le deck optimise, les formes de cartes, les principes de rédaction.
 - [Maintenance](docs/maintenance.md) — structure des données, procédure de modification, contrôles.

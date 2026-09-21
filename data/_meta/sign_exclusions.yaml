@@ -152,7 +152,6 @@
   - l-vocab-routes-lettres
   - e42
   - e43
-  - e44
 - codes:
   - J15
   - J16
@@ -180,7 +179,6 @@
   couverts_par:
   - l-jalonnement-destinataire
   - kd22
-  - kd42
 - codes:
   - C60
   - C61
@@ -216,7 +214,7 @@
   - CE27
   - CE28
   - CE50
-  raison: 'Révision v6 : services au pictogramme transparent (embarcadère, distributeur de billets, télésiège…) sans règle
+  raison: 'services au pictogramme transparent (embarcadère, distributeur de billets, télésiège…) sans règle
     ni décision de conduite. Les services utiles à l’examen (secours, carburant, recharge, repos, camping) gardent un représentant
     par famille.'
   couverts_par:
@@ -243,7 +241,7 @@
   - M4x
   - M4y
   - M4z
-  raison: 'Révision v6 : catégories d’usagers exotiques (charrettes à bras, cavaliers, essieux…). La lecture « le panonceau
+  raison: 'catégories d’usagers exotiques (charrettes à bras, cavaliers, essieux…). La lecture « le panonceau
     désigne la catégorie concernée par le panneau » est entraînée sur les catégories courantes ; les marchandises dangereuses
     et les remorques ont leurs panneaux d’interdiction.'
   couverts_par:
@@ -253,7 +251,6 @@
   - m4f
   - l-panonceau-portee
   - b18c
-  - b9i
 - codes:
   - M1a
   - M3d
@@ -283,7 +280,7 @@
   - M11c1
   - M11c2
   - KM9
-  raison: 'Révision v6 : variantes d’inscription ou de flèche dont la lecture se déduit du panonceau de base déjà appris (début/fin,
+  raison: 'variantes d’inscription ou de flèche dont la lecture se déduit du panonceau de base déjà appris (début/fin,
     catégorie, période, cartouche, inscription libre). Une inscription se lit ; elle ne se mémorise pas comme un code.'
   couverts_par:
   - m6b
@@ -307,7 +304,7 @@
   - B9e
   - C51b
   - C116
-  raison: 'Révision v6 : fins de prescription rares et catégories marginales (voitures à bras, cavaliers). Le principe « rond
+  raison: 'fins de prescription rares et catégories marginales (voitures à bras, cavaliers). Le principe « rond
     blanc barré = fin de l’interdiction » et les signaux de début correspondants suffisent.'
   couverts_par:
   - b31
@@ -329,7 +326,7 @@
   - C65b
   - C65c
   - C117
-  raison: 'Révision v6 : indications sans décision propre (risque d’incendie, autopartage, présignalisation d’impasse) ou
+  raison: 'indications sans décision propre (risque d’incendie, autopartage, présignalisation d’impasse) ou
     variantes de péage dont la lecture est déjà exercée sur les pictogrammes principaux.'
   couverts_par:
   - c13a
@@ -343,7 +340,7 @@
   - B6b5
   - B50b
   - B50e
-  raison: 'Révision v6 : combinaisons de zones de stationnement ; l’alternance semi-mensuelle et les entrées/sorties de zone
+  raison: 'combinaisons de zones de stationnement ; l’alternance semi-mensuelle et les entrées/sorties de zone
     sont apprises sur leurs panneaux simples.'
   couverts_par:
   - b6b2
@@ -356,7 +353,7 @@
   - MARQ-ligne-T'1
   - K5d
   - A23
-  raison: 'Révision v6 : variantes de balises et de marquage sans décision distincte (balise de neige, musoir à chevrons,
+  raison: 'variantes de balises et de marquage sans décision distincte (balise de neige, musoir à chevrons,
     ligne T’1) et danger aérien, sans place dans une préparation au permis B.'
   couverts_par:
   - j1
@@ -371,7 +368,7 @@
   - B18a
   - B18b
   - SR3b
-  raison: 'Révision v6 : un représentant par famille suffit pour « arrêt obligatoire au poste » (douane, police), « accès
+  raison: 'un représentant par famille suffit pour « arrêt obligatoire au poste » (douane, police), « accès
     interdit aux marchandises dangereuses » et l’annonce de contrôle automatique.'
   couverts_par:
   - b4
@@ -383,7 +380,7 @@
   - CE3a
   - CE16
   - CE17
-  raison: 'Révision v7 : services au pictogramme transparent (point d’information, restaurant, hôtel) sans décision de conduite
+  raison: 'services au pictogramme transparent (point d’information, restaurant, hôtel) sans décision de conduite
     ; la lecture des services reste exercée sur secours, carburant, recharge et aires.'
   couverts_par:
   - ce2a
@@ -393,7 +390,7 @@
 - codes:
   - C64a
   - C64b
-  raison: 'Révision v7 : variantes de voie de péage (péagiste, carte) sans décision propre ; le choix de voie est enseigné
+  raison: 'variantes de voie de péage (péagiste, carte) sans décision propre ; le choix de voie est enseigné
     par l’application et par le télépéage, seule variante qui change l’allure.'
   couverts_par:
   - r-autoroute-peage
@@ -407,7 +404,7 @@
   - B55
   - B57
   - B59
-  raison: 'Révision v8 : sorties de zone. Le panneau d’entrée est appris et la sortie se déduit de la convention « même panneau
+  raison: 'sorties de zone. Le panneau d’entrée est appris et la sortie se déduit de la convention « même panneau
     barré de gris », enseignée par B51 ; aucune décision propre.'
   couverts_par:
   - b51
@@ -426,7 +423,7 @@
   - B44
   - B45a
   - B34a
-  raison: 'Révision v8 : fins de prescription qui se déduisent du signal de début et de la convention « rond barré » (B31,
+  raison: 'fins de prescription qui se déduisent du signal de début et de la convention « rond barré » (B31,
     B33, B34, B40 restent appris comme archétypes) ; aucune décision propre.'
   couverts_par:
   - b31
@@ -450,7 +447,7 @@
   - CE15c
   - CE15g
   - CE30b
-  raison: 'Révision v8 : services au pictogramme transparent (croix rouge, tente, table, toilettes, fauteuil, GPL, carburant
+  raison: 'services au pictogramme transparent (croix rouge, tente, table, toilettes, fauteuil, GPL, carburant
     + prise) ou variante miroir (issue de secours vers la gauche) ; les services qui portent une décision restent (appel d’urgence,
     carburant, recharge, extincteur, issue de secours).'
   couverts_par:
@@ -468,7 +465,7 @@
   - B9c
   - B9d
   - B9f
-  raison: 'Révision v8 : catégories désignées par un pictogramme transparent (bus, moto, camion, fauteuil, charrette, tracteur,
+  raison: 'catégories désignées par un pictogramme transparent (bus, moto, camion, fauteuil, charrette, tracteur,
     autocar). La lecture d’un panonceau de catégorie et les interdictions d’accès sont apprises sur les cas non transparents
     (cycles/EDPM, cyclomoteur, PTAC) ; la discrimination cyclomoteur/moto est conservée (B7a/B7b, B9g/B9h).'
   couverts_par:
@@ -495,7 +492,7 @@
   - K5b
   - K14
   - K16
-  raison: 'Révision v8 : variantes d’une famille apprise (mouton après vache, bus après tramway, impasse avec issue piétons
+  raison: 'variantes d’une famille apprise (mouton après vache, bus après tramway, impasse avec issue piétons
     et cyclistes après issue piétons, rétrécissements temporaires latéraux après AK3 et A3a/A3b, panonceaux jaunes après M1/M2,
     flèche de déviation avec ville après KD22, piquet, ruban et séparateur après le cône) ; même décision que le signal de
     référence.'
@@ -529,7 +526,7 @@
   - B5b
   - D30
   - D60
-  raison: 'Révision v9 : signaux au pictogramme ou à l’inscription transparents (parking gratuit/payant, taxis, fréquence
+  raison: 'signaux au pictogramme ou à l’inscription transparents (parking gratuit/payant, taxis, fréquence
     radio, indications diverses, interdiction ou obligation par inscription, cartouche d’échangeur), variantes d’une famille
     apprise (arrêt au poste de police après la douane, poids par essieu après le poids total, balises de renforcement de
     marquage, fanion) et nomenclature des panneaux de direction (signalisation avancée, confirmation) que l’épreuve ne
@@ -546,3 +543,22 @@
   - da40
   - j6
   - l-guidage-reflecteurs
+- codes:
+  - B9i
+  - B10a
+  - E44
+  - KD8
+  - KD9
+  - KD42
+  - CE52
+  - R23
+  raison: 'Variantes d’une famille apprise (caravane après les limitations de poids, longueur après largeur et hauteur,
+    cartouche communal après E42/E43, déviations temporaires après KD22) ou signaux au pictogramme transparent (aire de
+    covoiturage, feu bicolore de contrôle individuel) : aucune question plausible de l’épreuve ne porte sur eux.'
+  couverts_par:
+  - b13
+  - b11
+  - b12
+  - e42
+  - kd22
+  - feu-rouge

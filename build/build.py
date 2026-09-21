@@ -234,6 +234,11 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
     for i, c in ids.items():
         if c > 1:
             errors.append(f"id dupliqué: {i} (x{c})")
+    for kind in KINDS:
+        for it in data[kind]:
+            for other in it.get("dedup_ok", []) or []:
+                if other not in ids:
+                    errors.append(f"{it['_file']}:{it.get('id')}: dedup_ok cite une note inconnue {other}")
     errors.extend(learning.validate_objectives(data))
     return errors
 
@@ -241,6 +246,11 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
 def lint(data: dict[str, list[dict]]) -> list[str]:
     """Editorial warnings: length outliers, guessable verdicts, duplicated targets. Never fatal."""
     warn: list[str] = []
+    for kind in KINDS:
+        for it in data[kind]:
+            tr = track_of(kind, it)
+            if tr in SUBTHEME_ORDER and it["sous_theme"] not in SUBTHEME_ORDER[tr]:
+                warn.append(f"{it['id']}: sous-thème « {it['sous_theme']} » absent de SUBTHEME_ORDER[{tr}] — faute de frappe, ou à ajouter à l'ordre")
     for it in data["reconnaissance"]:
         back = sum(words(it.get(k)) for k in ("signification", "conduite", "complement", "piege"))
         if back > LINT_RECON_BACK_WORDS and not it.get("long_ok"):
@@ -273,7 +283,7 @@ def lint(data: dict[str, list[dict]]) -> list[str]:
     markers: dict[str, Counter] = {m: Counter() for m in STYLE_MARKERS}
     for it in data["affirmations"]:
         verdicts[it.get("verdict")] += 1
-        if words(it.get("affirmation")) > LINT_AFFIRMATION_WORDS:
+        if words(it.get("affirmation")) > LINT_AFFIRMATION_WORDS and not it.get("long_ok"):
             warn.append(f"{it['id']}: affirmation de {words(it.get('affirmation'))} mots — une proposition d'examen est plus courte")
         if words(it.get("pourquoi")) > LINT_POURQUOI_WORDS and not it.get("long_ok"):
             warn.append(f"{it['id']}: pourquoi de {words(it.get('pourquoi'))} mots — expliquer le mécanisme, pas tout le chapitre")
@@ -427,6 +437,8 @@ KIND_RANK = {"faits": 0, "questions": 1, "affirmations": 2, "reconnaissance": 0,
 # scenario sub-theme -> recognition file that must be (mostly) known before the track opens
 SCENARIO_GATES = {"priorites": "panneaux_priorite", "agents": "autres", "depassement": "marquages",
                   "positionnement": "marquages", "croisement": "marquages"}
+# scenario sub-theme -> circulation sub-theme whose rule cards (faits, questions) must precede its scenarios
+SCENARIO_RULE_GATES = {"depassement": "depassement", "croisement": "croisement"}
 SUBTHEME_ORDER = {
     "CIRC": ["signalisation", "priorites", "vitesse", "feux", "marquages", "panonceaux", "balises", "agents",
              "croisement", "positionnement", "depassement", "stationnement", "applications"],
@@ -434,8 +446,8 @@ SUBTHEME_ORDER = {
     "R": ["nuit", "intemperies", "autoroute", "tunnels", "passages_a_niveau", "tramways", "montagne", "chantiers"],
     "U": ["pietons", "cyclistes", "edpm", "motos", "poids_lourds", "transports_commun", "vehicules_prioritaires",
           "vehicules_lents_animaux"],
-    "D": ["permis", "points", "sanctions", "documents", "controle_technique", "comprehension"],
-    "A": ["proteger", "alerter", "secourir", "obligations", "pas", "applications"],
+    "D": ["points", "permis", "sanctions", "documents", "controle_technique", "comprehension"],
+    "A": ["pas", "proteger", "alerter", "secourir", "obligations", "applications"],
     "P": ["verifications", "installation", "quitter"],
     "M": ["tableau_de_bord", "voyants", "freinage", "pneus", "feux", "entretien", "adas", "depannage", "comprehension",
           "applications"],
@@ -500,18 +512,24 @@ def _library_curriculum(data: dict[str, list[dict]]) -> list[tuple[str, str]]:
     tracks["SIGN"] = [{"_kind": kind, "id": ident} for _, kind, ident in sign_items]
 
     queues = {tr: list(items) for tr, items in tracks.items() if items}
+    rule_cards = {sub: {it["id"] for it in tracks.get("CIRC", []) if it["sous_theme"] == sub and it["_kind"] in ("faits", "questions")}
+                  for sub in set(SCENARIO_RULE_GATES.values())}
     # proportional interleaving; scenarios weighted up because their gates delay their start
     weights = {tr: float(len(q)) * (2.0 if tr == "SCEN" else 1.0) for tr, q in queues.items()}
     credit = {tr: 0.0 for tr in queues}
     emitted = Counter()
+    seen: set[str] = set()
     while any(queues.values()):
         eligible = []
         for tr, q in queues.items():
             if not q:
                 continue
             if tr == "SCEN":
-                need = gate_after.get(SCENARIO_GATES.get(q[0].get("sous_theme", ""), "panneaux_priorite"), 0)
+                sub = q[0].get("sous_theme", "")
+                need = gate_after.get(SCENARIO_GATES.get(sub, "panneaux_priorite"), 0)
                 if emitted["SIGN"] < min(need, len(tracks["SIGN"])):
+                    continue
+                if sub in SCENARIO_RULE_GATES and not rule_cards[SCENARIO_RULE_GATES[sub]] <= seen:
                     continue
             eligible.append(tr)
         total = sum(weights[tr] for tr in eligible)
@@ -521,6 +539,7 @@ def _library_curriculum(data: dict[str, list[dict]]) -> list[tuple[str, str]]:
         credit[best] -= total
         it = queues[best].pop(0)
         emitted[best] += 1
+        seen.add(it["id"])
         order.append((it["_kind"], it["id"]))
     return order
 

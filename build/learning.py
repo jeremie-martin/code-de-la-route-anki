@@ -28,9 +28,9 @@ def annotate(data):
     by_id = {n["id"]: n for notes in data.values() for n in notes}
     for n in by_id.values():
         n["_objectives"] = []
-        n["_stage"] = "approfondissement"
+        n["_stage"] = "consolidation"
     for objective in objectives():
-        for stage, field in (("socle", "notes"), ("approfondissement", "consolidation")):
+        for stage, field in (("socle", "notes"), ("consolidation", "consolidation")):
             for ident in objective.get(field, []):
                 if ident in by_id:
                     by_id[ident]["_objectives"].append(objective["id"])
@@ -74,11 +74,12 @@ def validate_objectives(data):
             errors.append(f"{n['id']} : reconnaissance préalable hors socle")
     decisions = yaml.safe_load(OBJECTIVES.with_name('sign_exclusions.yaml').read_text(encoding='utf-8'))
     for decision in decisions:
+        label = ', '.join(decision.get('codes', []))
         if not decision.get('raison'):
-            errors.append('exclusion de signal sans justification')
+            errors.append(f"sign_exclusions.yaml : exclusion sans justification ({label})")
         for ident in decision['couverts_par']:
             if ident not in by_id:
-                errors.append(f"couverture d'un signal exclu : note inconnue {ident}")
+                errors.append(f"sign_exclusions.yaml : entrée {label} — couverture inconnue {ident}")
     themes = {n["theme"] for n in by_id.values() if n["_stage"] == "socle"}
     if themes != set("XLCRUDAPMSE"):
         errors.append(f"socle : thèmes manquants {set('XLCRUDAPMSE') - themes}")
@@ -109,7 +110,7 @@ def card_plan(data, note_order, sibling_gap=30):
     """
     by_key = {(kind, n["id"]): n for kind, notes in data.items() for n in notes}
     plan = []
-    for stage in ("socle", "approfondissement"):
+    for stage in ("socle", "consolidation"):
         notes = [key for key in note_order if by_key[key]["_stage"] == stage]
         pending = []
         for index, key in enumerate(notes):

@@ -288,7 +288,7 @@
   sous_theme: deficiences
   source: Code de la route, art. R412-6-1
 - id: aff-c-gps-roulant
-  affirmation: En roulant, je peux entrer une adresse dans le GPS si je reste sur ma voie.
+  affirmation: En roulant, je peux entrer une adresse dans le GPS, à condition de rester sur ma voie.
   verdict: faux
   pourquoi: 'Quitter la route des yeux 5 s, c''est 70 m parcourus à l''aveugle à 50 km/h. On programme le GPS à l''arrêt et on suit ses consignes vocales en roulant.'
   theme: C
@@ -311,3 +311,39 @@
   theme: C
   sous_theme: deficiences
   source: ONISR — Bilan définitif 2024 ; securite-routiere.gouv.fr — Conseils aux conducteurs novices
+- id: aff-c-alcool-un-sur-trois
+  affirmation: L'alcool est en cause dans près d'un accident mortel sur trois.
+  verdict: vrai
+  pourquoi: Chiffre de campagne de la Sécurité routière (« près de 30 % ») ; l'ONISR compte 28 % des tués dans un
+    accident impliquant un conducteur alcoolisé. Le risque d'être responsable d'un accident mortel est multiplié
+    par environ 18 avec un taux illégal.
+  theme: C
+  sous_theme: deficiences
+  source: securite-routiere.gouv.fr — L'alcool et la conduite ; ONISR, bilan 2025
+- id: aff-c-jeunes-risque-double
+  affirmation: Les 18-24 ans ont un risque d'être tués sur la route environ deux fois plus élevé que la moyenne.
+  verdict: vrai
+  pourquoi: '16 % des tués pour 8 % de la population : inexpérience, nuit, vitesse, alcool et pression du groupe.
+    D''où le permis probatoire, ses vitesses réduites et son seuil d''alcool à 0,2 g/L.'
+  theme: C
+  sous_theme: vigilance
+  source: ONISR, bilan 2025 ; securite-routiere.gouv.fr — Conducteurs novices
+- id: aff-c-musique-forte
+  contexte: Vitres fermées, musique à fort volume.
+  affirmation: Je reste capable d'entendre aussi bien une sirène, un klaxon ou un deux-roues qui arrive.
+  verdict: faux
+  pourquoi: L'ouïe complète la vue pour détecter ce qui n'est pas encore visible (véhicule prioritaire, moto qui
+    remonte). Le volume sonore et les écouteurs (interdits) suppriment cette information ; la musique n'est pas
+    non plus un remède à la somnolence.
+  theme: C
+  sous_theme: perception
+  source: securite-routiere.gouv.fr — Distracteurs ; Code de la route, art. R412-6-1
+- id: aff-c-senior-visite-70
+  affirmation: À partir de 70 ans, conserver son permis B impose une visite médicale périodique.
+  verdict: faux
+  pourquoi: Aucune visite liée à l'âge n'existe pour le permis B en France ; seules certaines affections, restrictions
+    ou activités professionnelles imposent un contrôle médical. Chacun doit cependant faire vérifier sa vue et adapter
+    sa conduite.
+  theme: C
+  sous_theme: deficiences
+  source: Code de la route, art. R221-10 et R226-1 ; service-public F2882

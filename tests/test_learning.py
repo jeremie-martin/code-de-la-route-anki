@@ -22,7 +22,7 @@ class LearningTests(unittest.TestCase):
         plan = card_plan(self.data, curriculum(self.data))
         notes = {n['id']: n for ns in self.data.values() for n in ns}
         stages = [notes[i]['_stage'] for _, i, _ in plan]
-        first_extension = stages.index('approfondissement')
+        first_extension = stages.index('consolidation')
         self.assertGreater(first_extension, 0)
         self.assertNotIn('socle', stages[first_extension:])
         self.assertEqual(len(plan), len(set(plan)))

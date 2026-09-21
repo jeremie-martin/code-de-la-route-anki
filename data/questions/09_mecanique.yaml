@@ -263,3 +263,39 @@
   theme: M
   sous_theme: depannage
   source: lepermislibre — Remorquer un véhicule en panne ; securite-routiere.gouv.fr — Véhicule en panne
+- id: m-pression-etiquette
+  theme: M
+  sous_theme: pneus
+  question: L’étiquette de ma voiture indique 2,2 bar à vide et 2,6 bar en charge. Je pars chargé et les pneus sont
+    froids. Quelle valeur choisir ?
+  reponse: 2,6 bar, la valeur prévue pour cette charge.
+  explication: On lit la préconisation correspondant au véhicule et aux pneus, plutôt que d’ajouter forfaitairement
+    0,3 bar.
+  source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
+- id: m-afu-aeb
+  theme: M
+  sous_theme: adas
+  question: Quelle différence entre AFU et freinage automatique d’urgence (AEB) ?
+  reponse: L’AFU amplifie un freinage d’urgence déclenché par le conducteur ; l’AEB peut déclencher un freinage
+    après détection d’un risque de collision.
+  explication: 'Ni l’un ni l’autre ne garantit l’évitement : rester attentif et prêt à freiner.'
+  source: CNSR, Comité des experts, aides à la conduite — https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf
+- id: m-visuel-batterie-contact
+  theme: M
+  sous_theme: applications
+  question: Ce témoin s'allume quand je mets le contact, avant de démarrer. Que dois-je vérifier ?
+  reponse: 'Qu''il s''éteint une fois le moteur lancé : à la mise du contact, son allumage est l''autotest normal.'
+  explication: L’état du moteur et les indications de la notice changent l’interprétation du même symbole.
+  source: Notice Renault — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
+  image_ref: voyant-batterie
+- id: m-visuel-batterie-roulant
+  theme: M
+  sous_theme: applications
+  question: Ce témoin s’allume en roulant et reste allumé. Puis-je considérer que c’est seulement l’autotest
+    du démarrage ?
+  reponse: 'Non : il peut signaler un défaut du circuit de charge. Je m’arrête en sécurité et suis la notice
+    ou les consignes d’assistance.'
+  explication: 'Reconnaître la batterie dessinée ne suffit pas : il faut tenir compte du moment où l’alerte
+    apparaît.'
+  source: Notice Renault — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
+  image_ref: voyant-batterie

@@ -18,12 +18,11 @@
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Défibrillation — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
 - id: aff-a-pls-avec-casque
-  contexte: Après sa chute, un motard est inconscient, allongé sur le dos et respire normalement ; pas de vomissement
-    ni de danger immédiat.
-  affirmation: J’alerte et je surveille sa respiration sans le retourner systématiquement.
+  contexte: Après sa chute, un motard est inconscient, allongé sur le dos, et respire normalement.
+  affirmation: Je le mets sur le côté en maintenant l'axe tête-cou-tronc, sans lui retirer son casque.
   verdict: vrai
-  pourquoi: 'Traumatisme : respecter les consignes des secours et limiter les mouvements. S’il vomit, le mettre
-    sur le côté en préservant autant que possible l’axe tête-cou-tronc.'
+  pourquoi: 'Position latérale de sécurité, casque en place, alerte et surveillance de la respiration : c''est la
+    réponse attendue. Retirer le casque expose les cervicales ; on ouvre seulement la visière.'
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
@@ -113,3 +112,12 @@
   theme: A
   sous_theme: proteger
   source: Sécurité civile, PSC juillet 2026 — Dégagement d’urgence
+- id: aff-a-dae-sans-danger
+  contexte: Une victime ne répond pas ; un témoin apporte un DAE.
+  affirmation: Si la victime n'est pas en arrêt cardiaque, l'utilisation du DAE peut être dangereuse.
+  verdict: faux
+  pourquoi: Le DAE analyse le rythme et ne délivre un choc que s'il est indiqué ; sur un cœur qui bat normalement,
+    il n'en délivre aucun. On l'allume sans attendre et on suit ses consignes.
+  theme: A
+  sous_theme: secourir
+  source: Sécurité routière — Exemples de nouvelles questions (Q6) ; Sécurité civile, PSC juillet 2026 — Défibrillation

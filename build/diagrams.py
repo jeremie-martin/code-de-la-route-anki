@@ -411,18 +411,22 @@ def _light(S: SVG, a, colour, cx, cy, half):
 
 
 def _agent(S: SVG, cx, cy, pose):
-    """Traffic officer in the centre. pose: 'bras_leve' | 'bras_tendus_NS' | 'bras_tendus_EW'."""
-    S.add(f'<circle cx="{cx}" cy="{cy}" r="24" fill="#1f3a93" stroke="#fff" stroke-width="3"/>')
-    S.add(f'<circle cx="{cx}" cy="{cy}" r="10" fill="#f5d0b0"/>')
+    """Traffic officer in the centre. pose: 'bras_leve' | 'bras_tendus_NS' | 'bras_tendus_EW'.
+    Arms are hi-vis yellow with a dark outline so their axis stays readable over the road markings."""
+    def arm(x1, y1, x2, y2):
+        S.add(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#222" stroke-width="15" stroke-linecap="round"/>')
+        S.add(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#ffb300" stroke-width="9" stroke-linecap="round"/>')
+        S.add(f'<circle cx="{x2}" cy="{y2}" r="7" fill="#f5d0b0" stroke="#222" stroke-width="2"/>')
     if pose == "bras_leve":
-        S.add(f'<line x1="{cx}" y1="{cy}" x2="{cx}" y2="{cy-46}" stroke="#fff" stroke-width="7" stroke-linecap="round"/>')
-        S.add(f'<circle cx="{cx}" cy="{cy-48}" r="6" fill="#f5d0b0"/>')
+        arm(cx, cy, cx, cy - 56)
     elif pose == "bras_tendus_NS":  # arms along the N-S axis: N and S see the profile and pass, E and W stop
-        S.add(f'<line x1="{cx}" y1="{cy-46}" x2="{cx}" y2="{cy+46}" stroke="#fff" stroke-width="7" stroke-linecap="round"/>')
-        S.add(f'<circle cx="{cx}" cy="{cy-48}" r="6" fill="#f5d0b0"/><circle cx="{cx}" cy="{cy+48}" r="6" fill="#f5d0b0"/>')
+        arm(cx, cy, cx, cy - 56)
+        arm(cx, cy, cx, cy + 56)
     elif pose == "bras_tendus_EW":
-        S.add(f'<line x1="{cx-46}" y1="{cy}" x2="{cx+46}" y2="{cy}" stroke="#fff" stroke-width="7" stroke-linecap="round"/>')
-        S.add(f'<circle cx="{cx-48}" cy="{cy}" r="6" fill="#f5d0b0"/><circle cx="{cx+48}" cy="{cy}" r="6" fill="#f5d0b0"/>')
+        arm(cx, cy, cx - 56, cy)
+        arm(cx, cy, cx + 56, cy)
+    S.add(f'<circle cx="{cx}" cy="{cy}" r="26" fill="#1f3a93" stroke="#ffb300" stroke-width="4"/>')
+    S.add(f'<circle cx="{cx}" cy="{cy}" r="11" fill="#f5d0b0"/>')
 
 
 # ----------------------------------------------------------- roundabout ----

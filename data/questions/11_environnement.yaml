@@ -36,14 +36,16 @@
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
 - id: e-climatisation-conso
-  question: 'Été, embouteillage en ville par forte chaleur : climatisation ou vitres ouvertes ?'
-  reponse: 'J’aère d’abord si l’habitacle est surchauffé, puis climatisation sans excès, vitres fermées : la vigilance passe
-    avant l’économie.'
-  explication: La recherche d’économie ne doit pas entraîner chaleur dangereuse ou buée. L’effet sur la consommation varie
-    avec le véhicule, le climat et l’usage.
+  question: Forte chaleur. Pour limiter la consommation, quand ouvrir les vitres et quand utiliser la climatisation
+    ?
+  reponse: 'À faible vitesse (ville, bouchon) : vitres ouvertes. À vitesse élevée (route, autoroute) : climatisation
+    modérée, vitres fermées.'
+  explication: 'Vitres ouvertes, la résistance à l''air croît avec la vitesse ; au-delà de 70-80 km/h la climatisation
+    coûte moins. Ordre de grandeur ADEME : jusqu''à un quart de consommation en plus pour la climatisation en ville.
+    La vigilance passe avant l''économie : aérer un habitacle surchauffé avant de partir.'
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  source: ADEME — Écoconduite (climatisation) ; securite-routiere.gouv.fr — Chaleur et conduite
 - id: e-surconsommations-causes
   question: En dehors de ma façon de conduire, quels facteurs liés au véhicule augmentent la consommation ?
   reponse: La climatisation utilisée sans besoin, les accessoires de toit (résistance à l’air), une charge inutile et des

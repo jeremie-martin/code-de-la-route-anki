@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 14 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 13 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: feu-rouge
   type: feu
   image:
@@ -187,20 +187,6 @@
   nom: 'Signal d''affectation de voie : flèche jaune oblique clignotante'
   signification: 'Flèche jaune clignotante inclinée vers le bas au-dessus d''une voie : cette voie est fermée, se rabattre du côté indiqué.'
   conduite: Changer de voie dans le sens de la flèche dès que possible, sans manœuvre brusque.
-  theme: L
-  sous_theme: feux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: r23
-  type: feu
-  code: R23
-  image:
-    gen: feu_bicolore
-    params:
-      state: vert
-  nom: Signal bicolore de contrôle individuel (vert/rouge)
-  signification: 'Deux feux (vert en bas, rouge en haut, ou jaune clignotant/rouge) contrôlant le passage véhicule par véhicule à un poste : péage, douane, parking, accès régulé.'
-  conduite: Avancer au vert, s'arrêter au rouge.
-  complement: Aux barrières de péage, douanes, parkings.
   theme: L
   sous_theme: feux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

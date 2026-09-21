@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 6 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 5 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: eb10
   type: panneau
   code: EB10
@@ -54,16 +54,6 @@
     commons: E43.svg
   nom: Cartouche de route départementale
   signification: Cartouche identifiant une route départementale (D + numéro).
-  theme: L
-  sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: e44
-  type: panneau
-  code: E44
-  image:
-    commons: E44.svg
-  nom: Cartouche de voie communale ou rurale
-  signification: Cartouche identifiant une voie communale (C, VC) ou un chemin rural.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

@@ -60,9 +60,9 @@
   question: Après un malaise sans chute ni traumatisme, une personne ne répond pas mais respire normalement. Quel geste après
     vérification de la respiration ?
   reponse: Je la mets sur le côté (PLS), j’alerte et je surveille sa respiration jusqu’aux secours.
-  explication: 'Réponse classique de l’épreuve pour toute victime inconsciente qui respire. Le référentiel PSC de 2026 nuance
-    le cas du traumatisme (laisser sur le dos, sauf vomissements) : si la question précise un choc violent, suivre les
-    consignes des secours.'
+  explication: Réponse attendue de l'épreuve pour toute victime inconsciente qui respire, y compris après un accident
+    (en limitant alors les mouvements de la tête). Le référentiel PSC de 2026 nuance le cas du traumatisme ; cette
+    nuance ne change pas la réponse de l'examen.
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
@@ -151,3 +151,32 @@
   theme: A
   sous_theme: obligations
   source: Code de la route, art. R231-1, L234-3 et L235-2 ; Code pénal, art. 223-6
+- id: l-reperes-localisation
+  question: J’appelle les secours depuis une route. Une borne indique le numéro de route et un point kilométrique.
+    Qu’en faire ?
+  reponse: Je transmets ces repères et mon sens de circulation pour préciser ma position.
+  explication: Un nom de département ou d’aire peut aider mais ne remplace pas un repère précis ; ne pas me mettre
+    en danger pour aller le chercher.
+  theme: A
+  sous_theme: alerter
+  source: 'Sécurité routière — alerte : route, sens, localisation'
+- id: a-objet-plaie
+  theme: A
+  sous_theme: applications
+  question: Un morceau de métal est planté dans une plaie du bras qui saigne abondamment. Que fais-je ?
+  reponse: Je ne retire pas l'objet et n'appuie pas dessus ; je fais alerter immédiatement et je suis les consignes
+    pour arrêter l'hémorragie.
+  explication: Un objet planté peut empêcher la compression directe ; un garrot sur le membre peut être nécessaire,
+    selon la formation ou le guidage des secours.
+  source: https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+- id: a-traumatisme-respiration
+  theme: A
+  sous_theme: applications
+  question: Après un choc routier, une victime ne répond pas mais respire normalement, allongée sur le dos. Que fais-je
+    ?
+  reponse: Je la mets sur le côté (PLS) en limitant les mouvements de la tête et du cou, j'alerte et je surveille
+    sa respiration jusqu'aux secours.
+  explication: 'Réponse attendue à l''épreuve : PLS pour toute victime inconsciente qui respire, traumatisme compris,
+    casque laissé en place. Le référentiel PSC de juillet 2026 préfère laisser une victime traumatisée sur le dos
+    sous surveillance, sauf vomissements ; cette nuance ne change pas la réponse de l''examen.'
+  source: Sécurité routière — Exemples de nouvelles questions (Q6, thème A) ; Sécurité civile, PSC juillet 2026 (nuance)

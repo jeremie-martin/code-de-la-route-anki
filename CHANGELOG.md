@@ -1,11 +1,14 @@
 # Historique des éditions
 
-Toutes les éditions datent de septembre 2026 ; les détails sont dans l’historique git.
+Les éditions v1 à v8 sont les jalons d’une même journée de travail (21 septembre 2026) ; les détails sont dans
+l’historique git.
 
 ## v9 — 21 septembre 2026 (édition actuelle)
 
-Révision après quatre relectures indépendantes (qualité des cartes vue par l’apprenant, exactitude et
-cohérence, couverture et structure, trajectoire du projet). 1 045 notes / 1 117 cartes (socle 612).
+Révision après deux séries de relectures indépendantes : qualité des cartes vue par l’apprenant, exactitude et
+cohérence, couverture et structure, trajectoire du projet ; puis simulation de transfert à l’épreuve (131
+questions de style ETG), vérification adverse des modifications et de l’ordre d’étude, test des procédures
+documentées par un nouveau mainteneur. 1 051 notes / 1 128 cartes.
 
 - **Erreurs corrigées** : les deux scénarios « agent, bras tendus » étaient inversés (dessin, solveur et
   réponses) ; feux de position seuls la nuit en ville (R416-6) ; freinage doublé sur route mouillée (réponse
@@ -18,11 +21,16 @@ cohérence, couverture et structure, trajectoire du projet). 1 045 notes / 1 117
 - **Retraits** (≈ 60 notes) : contraintes de l’interface d’examen, cartes d’épistémologie, exercices à données
   fixes et tableaux fictifs, doublons vrai/faux de faits déjà à trous, affirmations trivialement vraies ou
   invraisemblables, trivia administratifs, 15 signaux transparents ou variantes, 3 voyants.
-- **Ajouts** : carré des dizaines, périmètre du permis B, alcoolémie par verre, permis AM à 14 ans, 125 cm³
-  avec le B, régulateur adaptatif, caméra de recul, dégagement d’urgence, piéton engagé, flèche jaune au rouge,
-  klaxon en agglomération.
-- **Ordre** : bases d’abord (`debut: true`), sous-thèmes ordonnés explicitement, une seule étape socle →
-  consolidation (le champ `importance` disparaît).
+- **Ajouts** : carré des dizaines, périmètre du permis B, PTAC / charge utile / PTRA, alcoolémie par verre,
+  chiffres de campagne (téléphone × 3, SMS × 23, somnolence sur autoroute, alcool, jeunes conducteurs), permis AM
+  à 14 ans, 125 cm³ avec le B, vitesses des poids lourds, prise de virage, champ visuel, ouïe, régulateur
+  adaptatif, caméra de recul, ABS et DAE (exemples officiels Q5 et Q6), deux STOP face à face (Q2), dégagement
+  d’urgence, piéton engagé, flèche jaune au rouge, klaxon en agglomération, ceinture en autocar, fumer avec un
+  mineur, clignotant rapide. PLS et climatisation alignées sur la réponse attendue à l’épreuve.
+- **Ordre** : bases d’abord (`debut: true`), sous-thèmes ordonnés explicitement (PAS avant les gestes, capital
+  de points avant le reste de D), scénarios de dépassement et de croisement après leurs règles, une seule étape
+  socle → consolidation (le champ `importance` disparaît). Les fichiers de questions « applications », « transfert »
+  et « décisions » sont fondus dans les fichiers par thème.
 - **Générateur** : le paquet Socle, la couche de compatibilité (ids de champs figés, `--previous`), le champ
   `Repere` copié sur chaque note, les étiquettes de provenance, les rapports ROLES/CONCEPTION et les registres
   `retirements`, `contrasts`, `interface_revision` sont supprimés ; les repères de thème vont sur l’écran des

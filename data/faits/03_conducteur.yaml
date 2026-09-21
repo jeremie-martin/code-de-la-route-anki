@@ -18,25 +18,12 @@
   rappels:
   - Pour estimer mentalement la distance parcourue en une seconde, le raccourci « dizaines de km/h × … » utilise le facteur
     {{c1::3}}.
-- id: c-distance-arret-reperes
-  explication: Carré des dizaines de km/h (50 → 25 m, 90 → 81 m, 130 → 169 m), pour un conducteur attentif sur sol
-    sec. Un exercice chiffré utilise ses propres données ; la distance réelle dépend de la réaction, de l'adhérence
-    et des freins.
-  theme: C
-  sous_theme: distances
-  source: Sécurité routière — https://modules.securite-routiere.gouv.fr/module_distance_arret.html ; Codes Rousseau — Calcul
-    des distances
-  rappels:
-  - 'Ordre de grandeur sur sol sec, conducteur attentif : à 50 km/h, la distance d’arrêt (réaction + freinage) est d’environ
-    {{c1::25 m}}.'
-  - 'Ordre de grandeur sur sol sec, conducteur attentif : à 90 km/h, la distance d’arrêt (réaction + freinage) est d’environ
-    {{c2::80 m}}.'
 - id: c-distance-mouillee
-  texte: 'Repère de l’examen : sur route mouillée, l’adhérence est divisée par deux et la distance de freinage est
-    {{c1::doublée}} par rapport au sol sec.'
-  explication: C’est l’ordre de grandeur que retiennent l’épreuve (exemple officiel de 2023) et les supports de préparation ;
-    la valeur réelle dépend du revêtement, des pneus et de la hauteur d’eau. Dans un exercice chiffré, appliquer les hypothèses
-    de l’énoncé ; le temps de réaction, lui, ne change pas.
+  texte: 'Repère de l''examen : sur route mouillée, la distance de freinage est {{c1::doublée}} par rapport au sol
+    sec.'
+  explication: L'adhérence est alors divisée par deux. C'est l'ordre de grandeur que retiennent l'épreuve (exemple
+    officiel de 2023) et les supports de préparation ; la valeur réelle dépend du revêtement, des pneus et de la hauteur
+    d'eau. Dans un exercice chiffré, appliquer les hypothèses de l'énoncé ; le temps de réaction, lui, ne change pas.
   theme: C
   sous_theme: distances
   source: Sécurité routière, exemple public Q13 (2023) ; repère et limites du modèle
@@ -146,3 +133,35 @@
   - 'Pictogramme médicaments de niveau 1 (jaune) : {{c1::lire la notice}} avant de conduire.'
   - 'Pictogramme médicaments de niveau 2 (orange) : ne pas conduire sans {{c2::l’avis d’un professionnel de santé}}.'
   - 'Pictogramme médicaments de niveau 3 (rouge) : {{c3::ne pas conduire}} ; demander un avis médical pour reprendre.'
+- id: c-alcool-seuils-sang
+  theme: C
+  sous_theme: deficiences
+  rappels:
+  - 'Conducteur de voiture hors probatoire, sans restriction EAD : la conduite est interdite dès {{c1::0,5
+    g/L}} d’alcool dans le sang.'
+  - 'Élève conducteur ou permis probatoire : la conduite est interdite dès {{c2::0,2 g/L}} d’alcool dans le
+    sang.'
+  explication: 'Le seuil est inclus : il faut être en dessous. Lire sang ou air expiré ; aucun nombre de verres
+    ne garantit le résultat. Zéro alcool reste le choix sûr.'
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2881
+- id: c-chiffres-campagne
+  theme: C
+  sous_theme: vigilance
+  rappels:
+  - Selon la Sécurité routière, téléphoner au volant multiplie le risque d'accident par environ {{c1::3}}.
+  - Lire ou écrire un message au volant multiplie le risque d'accident par environ {{c2::23}}.
+  - Sur autoroute, la première cause d'accident mortel est {{c3::la somnolence}}.
+  explication: Chiffres de campagne de la Sécurité routière, repris tels quels par l'épreuve. Sur l'ensemble du
+    réseau, la vitesse excessive ou inadaptée reste la première cause d'accident mortel (environ 30 %).
+  source: securite-routiere.gouv.fr — Le téléphone et la conduite ; La fatigue et la conduite ; La vitesse et la
+    conduite
+- id: c-champ-visuel-chiffres
+  theme: C
+  sous_theme: perception
+  rappels:
+  - À l'arrêt, le champ visuel d'un conducteur couvre environ {{c1::180°}}.
+  - À 130 km/h, le champ visuel utile se réduit à environ {{c2::30°}}.
+  explication: 'Repère des supports de préparation : plus la vitesse augmente, plus le regard se concentre loin
+    devant et moins on perçoit les côtés (environ 100° à 40 km/h, 45° à 100 km/h). D''où l''importance de ralentir
+    là où les usagers peuvent surgir des côtés.'
+  source: Sécurité routière — La vue et la conduite ; supports de préparation

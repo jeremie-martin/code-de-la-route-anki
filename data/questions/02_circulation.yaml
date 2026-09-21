@@ -1,11 +1,11 @@
 # L — Circulation : cartes de décision (situation → décision + raison). Voir docs/research/brief-v2-redaction.md.
 # Les listes de la v1 ont été découpées en décisions et en affirmations (data/affirmations/02_circulation.yaml).
 - id: l-priorite-droite-defaut
-  question: Deux véhicules arrivent sur des routes publiques à une intersection sans signalisation. Aucun ne bénéficie d’un
-    régime spécial. À qui dois-je céder ?
-  reponse: Au véhicule venant de ma droite, même s’il s’agit d’un vélo ou d’un EDPM.
-  explication: Une sortie de parking, un chemin de terre ou un véhicule prioritaire annoncé demande une autre analyse ; ne
-    pas décider seulement d’après l’absence de panneau.
+  question: Intersection sans panneau ni feu ; deux véhicules arrivent en même temps par des routes ordinaires. À
+    qui dois-je céder le passage ?
+  reponse: À celui qui vient de ma droite, même si c'est un vélo ou une trottinette.
+  explication: Sans panneau, feu ni agent, la priorité à droite s'applique, quelle que soit la largeur des rues. Une
+    sortie de parking, un chemin de terre ou un véhicule prioritaire annoncé changent l'analyse.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-5
@@ -38,8 +38,8 @@
   source: Code de la route, art. R415-4 et R412-10
 - id: l-giratoire-vs-rond-point
   question: Quelle différence entre un carrefour à sens giratoire et un simple rond-point, pour les priorités ?
-  reponse: 'Giratoire (AB25 + cédez-le-passage) : priorité à ceux qui sont dans l’anneau. Rond-point sans panneau : priorité
-    à droite, donc à ceux qui entrent.'
+  reponse: 'Giratoire (panneau « cédez le passage » avec les flèches en anneau) : priorité à ceux qui sont déjà dans
+    l''anneau. Rond-point sans panneau : priorité à droite, donc à ceux qui entrent.'
   explication: 'La forme ronde ne suffit pas à attribuer la priorité : lire les signaux aux entrées. Les changements de voie
     imposent contrôles, signalement et respect des usagers de la voie rejointe. Ne pas déduire une interdiction générale de
     dépasser du seul mot giratoire.'
@@ -338,8 +338,8 @@
   source: IISR 1re et 3e parties
   debut: true
 - id: l-portee-prescription
-  question: Une limitation à 30 km/h par panneau B14 isolé (hors zone et hors panneau d’agglomération) est suivie d’une intersection
-    publique. Elle n’est pas répétée après. Que devient-elle ?
+  question: Une limitation à 30 km/h par un panneau rond isolé (hors zone 30 et hors panneau d'agglomération) est
+    suivie d'une intersection. Elle n'est pas répétée après. Que devient-elle ?
   reponse: Elle cesse après l’intersection ; j’applique ensuite la limitation propre à la route et aux autres panneaux.
   explication: 'Ne pas généraliser à toute prescription : une zone 30 traverse les intersections ; une limitation associée
     au panneau d’entrée d’agglomération peut concerner toute l’agglomération.'
@@ -391,3 +391,330 @@
   theme: L
   sous_theme: signalisation
   source: Code de la route, art. R416-1
+- id: l-probatoire-autoroute-110
+  theme: L
+  sous_theme: vitesse
+  question: 'Permis probatoire, temps sec, section d’autoroute normalement limitée à 110 km/h : quel est mon maximum
+    ?'
+  reponse: 100 km/h.
+  explication: La limite probatoire de 110 ne concerne que les sections normalement à 130.
+  source: Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+- id: l-pluie-autoroute-110
+  theme: L
+  sous_theme: vitesse
+  question: 'Permis hors période probatoire, autoroute normalement limitée à 110 km/h : il pleut. Quel est le maximum
+    ?'
+  reponse: 100 km/h sous la pluie.
+  explication: Si un panneau impose moins, c’est ce plafond inférieur qui s’applique.
+  source: Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+- id: l-brouillard-zone30
+  theme: L
+  sous_theme: vitesse
+  question: Zone 30, visibilité réduite à 40 m. La règle du brouillard me permet-elle de rouler à 50 ?
+  reponse: 'Non : 30 km/h reste le maximum, et je ralentis davantage si nécessaire.'
+  explication: Le plafond de 50 ne relève jamais une limitation locale plus basse.
+  source: Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+- id: l-pluie-route80
+  theme: L
+  sous_theme: vitesse
+  question: Route hors agglomération limitée à 80 km/h, il pleut. La limite devient-elle automatiquement 70 ?
+  reponse: 'Non : le plafond reste 80 km/h ; mon allure réelle peut devoir être bien plus basse.'
+  explication: 'Ne pas soustraire systématiquement 10 ou 20 : identifier le type de route et les plafonds applicables.'
+  source: Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+- id: l-feu-vert-interdiction-tourner
+  theme: L
+  sous_theme: signalisation
+  question: Le feu est vert mais un panneau interdit de tourner à gauche. Puis-je tourner à gauche ?
+  reponse: 'Non : le vert ne supprime pas cette interdiction.'
+  explication: Les feux prévalent sur les panneaux qui règlent la priorité, pas sur toutes les prescriptions.
+  source: Code de la route, R411-25 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087
+- id: l-giratoire-sortie-impossible
+  theme: L
+  sous_theme: priorites
+  question: Dans la voie intérieure d’un giratoire, ma sortie arrive mais un cycliste circule à ma droite sur la
+    voie extérieure. Que faire ?
+  reponse: Je lui cède le passage et, si je ne peux pas me rabattre sans le couper, je refais un tour.
+  explication: Être dans l’anneau ne donne pas priorité pour changer de voie.
+  source: Code de la route, R412-9 et R412-10
+- id: l-cycliste-ligne-espace
+  theme: L
+  sous_theme: depassement
+  question: Hors agglomération, dépasser le cycliste en laissant 1,50 m exigerait de franchir entièrement la ligne
+    continue. Que faire ?
+  reponse: Je reste derrière jusqu’à pouvoir dépasser légalement et sans danger.
+  explication: L’exception autorise le chevauchement, pas le franchissement complet ; la distance latérale reste
+    obligatoire.
+  source: Code de la route, R412-19 et R414-4
+- id: l-feu-alerte-r1
+  question: Un feu jaune clignotant est fixé au-dessus d'un panneau de danger. Que signifie-t-il ?
+  reponse: Il renforce l'alerte du panneau (danger fréquent ou peu visible) ; il ne change rien aux règles de priorité.
+  explication: Distinguer le feu de renforcement d’un panneau du fonctionnement d’un carrefour au jaune clignotant.
+  theme: L
+  sous_theme: signalisation
+  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+- id: l-feu-modal-anticipation
+  question: Mon feu automobile est rouge. À côté, un petit feu jaune clignotant porte le mot BUS. Puis-je le suivre
+    en voiture particulière ?
+  reponse: 'Non : cette autorisation vise les usagers auxquels le signal modal s’adresse, pas ma voiture.'
+  explication: Lire le destinataire du feu avant sa couleur ; les véhicules autorisés doivent encore céder le passage.
+  theme: L
+  sous_theme: signalisation
+  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+- id: l-feu-cycliste-r19
+  question: À vélo, un feu jaune clignotant porte un vélo et une flèche à droite à côté du rouge. Puis-je tourner
+    à droite ?
+  reponse: Oui, après avoir cédé aux piétons et aux autres usagers ; je m’arrête si nécessaire.
+  explication: La direction représentée et le symbole vélo limitent l’autorisation. Ce signal ne donne pas de priorité.
+  theme: L
+  sous_theme: signalisation
+  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+- id: l-feu-acces-regule
+  question: Un feu tricolore sur ma bretelle d’accès à l’autoroute est rouge alors qu’un créneau semble libre. Puis-je
+    m’insérer ?
+  reponse: 'Non : je respecte le rouge. Au passage autorisé, je dois encore céder au trafic de l’autoroute.'
+  explication: Le feu régule le débit d’entrée ; il ne transforme pas la bretelle en voie prioritaire.
+  theme: L
+  sous_theme: signalisation
+  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+- id: l-feu-pieton-tram
+  question: À pied, devant une traversée de tramway, le signal piéton affiche STOP en rouge clignotant. Aucun tram
+    n’est encore visible. Puis-je traverser ?
+  reponse: 'Non : je m’arrête avant la traversée et attends la fin de l’interdiction.'
+  explication: La visibilité de l’usager ne remplace pas le signal d’arrêt. Le tram peut être masqué ou arriver
+    rapidement.
+  theme: L
+  sous_theme: signalisation
+  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+- id: l-decompte-pieton
+  question: Le décompteur piéton indique quelques secondes avant la fin du rouge. Quand puis-je traverser ?
+  reponse: 'Au signal vert seulement : le décompte informe, il n''autorise rien.'
+  explication: Ne pas anticiper une autorisation qui n’est pas encore donnée.
+  theme: L
+  sous_theme: signalisation
+  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+- id: l-pmv-limitation
+  question: Sur autoroute normalement limitée à 130, un panneau lumineux affiche un disque rouge « 90 ». Est-ce
+    un simple conseil ?
+  reponse: 'Non : c’est une limitation à 90 km/h, à respecter comme un panneau fixe.'
+  explication: 'Lire la forme et le contenu : un message de prudence et une prescription de vitesse ne demandent
+    pas la même interprétation.'
+  theme: L
+  sous_theme: signalisation
+  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+- id: l-quadrillage-carrefour
+  question: Mon feu est vert mais la sortie du carrefour est bloquée ; un quadrillage au sol matérialise la zone centrale.
+    Que fais-je ?
+  reponse: 'J''attends avant l''intersection de pouvoir la dégager : le quadrillage doit rester libre.'
+  explication: Le marquage rappelle une obligation déjà valable même sans quadrillage.
+  theme: L
+  sous_theme: signalisation
+  source: Code de la route, R415-2
+- id: l-bandes-rugueuses
+  question: Des bandes transversales font vibrer la voiture à l'approche d'un carrefour. Que signalent-elles ?
+  reponse: 'L''approche d''un danger ou d''une intersection : je ralentis et je cherche ce qui est annoncé (STOP,
+    virage, passage).'
+  explication: Un dispositif d’alerte n’est ni un STOP ni une règle de priorité.
+  theme: L
+  sous_theme: signalisation
+  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+- id: l-voie-lents
+  question: Une voie à droite est signalée pour les véhicules lents. Ma voiture tractant une remorque n’arrive pas
+    à dépasser 60 km/h dans la montée. Dois-je l’utiliser ?
+  reponse: 'Oui : cette voie concerne les véhicules lents, pas seulement les camions.'
+  explication: Lire la prescription et ses conditions ; à sa fin, se réinsérer après contrôles et sans forcer le
+    passage.
+  theme: L
+  sous_theme: signalisation
+  source: Code de la route, R422-1
+- id: l-jalonnement-destinataire
+  question: Un panneau directionnel porte un pictogramme vélo. À qui s'adresse-t-il ?
+  reponse: 'Aux cyclistes : il jalonne un itinéraire cyclable ; ma voiture suit les panneaux de direction ordinaires.'
+  explication: 'Même principe pour le jalonnement piéton : le destinataire compte autant que le nom de la destination.'
+  theme: L
+  sous_theme: signalisation
+  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+- id: l-itineraire-bis
+  question: Quelle différence entre un itinéraire « Bis » et une déviation de chantier ?
+  reponse: 'Le Bis est une alternative conseillée ; la déviation s''impose : la route habituelle est fermée.'
+  explication: Un itinéraire conseillé ne m’autorise jamais à ignorer un sens interdit ou une route barrée.
+  theme: L
+  sous_theme: signalisation
+  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+- id: l-cartouche-vitesse
+  question: Le cartouche de la route passe de D à M, sans changement de chaussée ni de panneau. Quelle vitesse maximale
+    s'applique ?
+  reponse: 'La même : ce sont la configuration de la route et les panneaux qui fixent le plafond, pas la catégorie
+    administrative.'
+  explication: De même, un numéro européen ou une limite départementale ne crée pas seul une limitation.
+  theme: L
+  sous_theme: signalisation
+  source: Code de la route, R413-1 à R413-5
+- id: l-guidage-reflecteurs
+  question: De nuit, des plots réfléchissants bordent la voie le long d'une ligne continue. Que changent-ils pour
+    moi ?
+  reponse: 'Rien aux règles : ils rendent le tracé visible ; la ligne continue reste infranchissable.'
+  explication: Distinguer guidage visuel, affectation de voie et autorisation de changer de voie.
+  theme: L
+  sous_theme: signalisation
+  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+- id: l-fleche-jaune-droite-rouge
+  question: Mon feu est rouge ; à côté, une flèche jaune clignotante pointe vers la droite. Puis-je tourner à droite
+    ?
+  reponse: 'Oui, avec prudence : je cède le passage aux piétons et aux véhicules qui ont le vert.'
+  explication: Cette flèche autorise le mouvement indiqué malgré le rouge, sans donner la priorité. Sans flèche,
+    tourner à droite au feu rouge reste interdit en France.
+  theme: L
+  sous_theme: feux
+  source: Code de la route, art. R412-30 et R412-32 ; arrêté du 24 novembre 1967 (signal R16)
+- id: l-visuel-distance
+  theme: L
+  sous_theme: applications
+  question: Sous un panneau de chaussée rétrécie, je lis ce panonceau. Où le danger annoncé commence-t-il ?
+  reponse: À 50 m du panneau ; je me prépare avant d’y arriver.
+  explication: L’absence de flèches verticales indique une distance jusqu’au danger, pas sa longueur.
+  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  image_ref: m1
+- id: l-visuel-etendue
+  theme: L
+  sous_theme: applications
+  question: Sous un panneau de chaussée rétrécie placé au début du danger, je lis ce panonceau. Sur quelle
+    longueur dois-je prévoir le rétrécissement ?
+  reponse: Sur 50 m à partir du début du danger.
+  explication: Les flèches verticales indiquent l’étendue. Ce n’est pas une invitation à attendre 50 m pour
+    ralentir.
+  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  image_ref: m2
+- id: l-visuel-arret-b6a1
+  theme: L
+  sous_theme: applications
+  question: De ce côté de la rue, après ce panneau, aucun autre motif d’interdiction ni danger. Puis-je déposer
+    immédiatement mon passager en restant aux commandes ?
+  reponse: 'Oui : ce panneau interdit le stationnement, pas cet arrêt pour descente immédiate.'
+  explication: Un arrêt reste interdit s’il est gênant, dangereux ou interdit par une autre règle, même sous
+    ce panneau.
+  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  image_ref: b6a1
+- id: l-visuel-arret-b6d
+  theme: L
+  sous_theme: applications
+  question: De ce côté de la rue, après ce panneau, aucun autre motif d’interdiction ni danger. Puis-je déposer
+    immédiatement mon passager en restant aux commandes ?
+  reponse: 'Non : ce panneau interdit aussi l’arrêt volontaire.'
+  explication: La brièveté, la présence du conducteur et les warnings ne lèvent pas l’interdiction.
+  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  image_ref: b6d
+- id: l-visuel-attendre-b6a1
+  theme: L
+  sous_theme: applications
+  question: Après ce panneau, je reste au volant en attendant un ami qui n’est pas encore arrivé. Est-ce autorisé
+    de ce côté de la rue ?
+  reponse: 'Non : cette attente est un stationnement, interdit ici.'
+  explication: L’arrêt réglementaire correspond à une montée, descente, opération de chargement ou déchargement,
+    pas à toute immobilisation courte.
+  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R110-2
+  image_ref: b6a1
+- id: l-visuel-jaune-continu
+  theme: L
+  sous_theme: applications
+  question: En bordure de cette chaussée, puis-je m’immobiliser pour charger immédiatement une valise, conducteur
+    disponible, sans autre danger ?
+  reponse: 'Non : la ligne jaune continue interdit l’arrêt et le stationnement.'
+  explication: 'La couleur seule ne tranche pas : lire aussi la continuité de la ligne.'
+  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  image_ref: marq-ligne-jaune-continue
+- id: l-visuel-jaune-discontinu
+  theme: L
+  sous_theme: applications
+  question: En bordure de cette chaussée, puis-je m’immobiliser pour charger immédiatement une valise, conducteur
+    disponible, sans autre interdiction ni danger ?
+  reponse: 'Oui : ce marquage interdit le stationnement, mais permet cet arrêt de chargement.'
+  explication: Si j’attends sans charger, il s’agit d’un stationnement. Les autres interdictions continuent
+    de s’appliquer.
+  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  image_ref: marq-ligne-jaune-discontinue
+- id: l-visuel-b14-position
+  theme: L
+  sous_theme: applications
+  question: J’approche de ce panneau isolé, sans panonceau. Dois-je commencer à freiner au panneau ou avoir
+    déjà atteint le plafond à son niveau ?
+  reponse: Avoir déjà atteint au plus 50 km/h à son niveau.
+  explication: Préparer le ralentissement en amont, selon le trafic et sans freinage brutal.
+  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  image_ref: b14
+- id: l-visuel-b14-adaptation
+  theme: L
+  sous_theme: applications
+  question: Après ce panneau, des enfants jouent près du bord et pourraient surgir. La valeur affichée m’autorise-t-elle
+    à conserver cette vitesse ?
+  reponse: 'Non : c’est un plafond ; je ralentis davantage pour pouvoir réagir aux enfants.'
+  explication: Le maximum autorisé et l’allure adaptée sont deux décisions différentes.
+  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-17
+  image_ref: b14
+- id: l-visuel-fin-interdictions
+  theme: L
+  sous_theme: applications
+  question: 'Hors agglomération, route à une voie par sens, sans terre-plein. Après une limitation à 50, je passe
+    ce panneau et rien ne suit. Voiture, temps sec, permis définitif : à combien puis-je rouler ?'
+  reponse: '80 km/h : la limitation ponctuelle cesse, mais la règle générale de cette route demeure.'
+  explication: Une fin d’interdiction ne signifie pas vitesse libre. Vérifier le type de route et les conditions.
+  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-2
+  image_ref: b31
+- id: l-cavalier-ligne-continue
+  theme: L
+  sous_theme: applications
+  question: 'Hors agglomération, un cavalier avance devant moi. L’écart de 1,50 m demanderait de chevaucher
+    une ligne continue. Bonne visibilité : puis-je invoquer l’exception prévue pour les vélos ?'
+  reponse: 'Non : cette exception ne concerne pas le cavalier ; j’attends une possibilité légale et sûre.'
+  explication: L’obligation d’écart latéral couvre plusieurs usagers, mais l’exception de chevauchement ne
+    couvre que cycles, EDPM et cyclomobiles légers.
+  source: Code de la route, R412-19 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/
+- id: l-visuel-m12-edpm
+  theme: L
+  sous_theme: applications
+  question: Je conduis une trottinette électrique (EDPM). Le feu est rouge et porte ce panonceau. Puis-je franchir
+    la ligne d’effet du feu dans la direction fléchée ?
+  reponse: Oui, dans la direction fléchée, en cédant aux piétons et aux véhicules bénéficiant du vert.
+  explication: Le M12 vise les cycles, EDPM et cyclomobiles légers. L’autorisation dépend de la catégorie et
+    de la direction ; elle ne donne pas priorité.
+  source: Arrêté du 24 novembre 1967, article 2-1 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  image_ref: m12
+- id: l-visuel-m12-voiture
+  theme: L
+  sous_theme: applications
+  question: Je conduis une voiture. Le feu est rouge et porte ce panonceau. Puis-je franchir la ligne d’effet
+    du feu dans la direction fléchée ?
+  reponse: Non. Le panonceau ne m’autorise pas à franchir le rouge ; j’attends le vert.
+  explication: Le M12 vise les cycles, EDPM et cyclomobiles légers. L’autorisation dépend de la catégorie et
+    de la direction ; elle ne donne pas priorité.
+  source: Arrêté du 24 novembre 1967, article 2-1 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  image_ref: m12
+- id: l-c107-route-simple
+  theme: L
+  sous_theme: applications
+  question: 'Ce panneau est à l’entrée d’une route hors agglomération : une voie par sens, sans terre-plein
+    central, ni relèvement signalé. Voiture, temps sec, hors probatoire : quel plafond ?'
+  reponse: 80 km/h. Le panneau réglemente l’accès, pas un plafond automatique de 110.
+  explication: Une route réservée aux véhicules motorisés n’est pas nécessairement une autoroute ni une route
+    à chaussées séparées. Lire la configuration avant d’attribuer une vitesse.
+  source: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
+  image_ref: c107
+- id: l-c107-route-separee
+  theme: L
+  sous_theme: applications
+  question: 'Ce même panneau est à l’entrée d’une route à deux chaussées séparées par terre-plein central,
+    hors agglomération. Voiture, temps sec, hors probatoire, sans limite plus basse : quel plafond ?'
+  reponse: 110 km/h, du fait des chaussées séparées par un terre-plein central.
+  explication: C’est la configuration donnée qui distingue ce cas de la route à une voie par sens, pas le dessin
+    de la voiture sur le panneau.
+  source: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
+  image_ref: c107
+- id: l-priorite-prudence
+  theme: L
+  sous_theme: applications
+  question: Je circule sous ce régime de priorité. À une intersection, une voiture arrive vite de droite sans ralentir.
+    Que fais-je ?
+  reponse: 'Je ralentis et me tiens prêt à m''arrêter : ma priorité ne garantit pas que l''autre l''a comprise.'
+  explication: Le droit de passer n’établit pas que l’autre conducteur l’a compris ou peut s’arrêter. Il faut
+    observer son comportement.
+  source: Code de la route, R415-1 et R413-17
+  image_ref: ab6

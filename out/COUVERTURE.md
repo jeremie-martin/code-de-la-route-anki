@@ -13,11 +13,11 @@ Recherche Anki : `objectif::x-lecture`
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `etg-pictogramme-point-de-vue` | socle | questions | Prépacode (ENPC) — Nouveau code 2023 ; Codes Rousseau — Nouveautés 2026 |
-| `etg-halo-jaune` | approfondissement | questions | securite-routiere.gouv.fr — Nouvelle épreuve du code 2023 |
+| `etg-halo-jaune` | consolidation | questions | securite-routiere.gouv.fr — Nouvelle épreuve du code 2023 |
 | `etg-je-peux-je-dois` | socle | questions | Méthode d'examen (synthèse des conseils Codes Rousseau, ENPC, Ornikar) |
 | `etg-video-strategie` | socle | questions | Ornikar — Les questions vidéo de l'examen du code ; Prépacode (ENPC) |
 | `etg-forme-double-oui-non` | socle | questions | Sécurité routière — Exemples de nouvelles questions (PDF, sept. 2023) ; En Voiture Simone — Questions pièges |
-| `etg-negation` | approfondissement | questions | Codeclic — Comment réussir le code |
+| `etg-negation` | consolidation | questions | Codeclic — Comment réussir le code |
 
 ## l-danger — Reconnaître le danger et anticiper avant de le voir
 
@@ -30,16 +30,16 @@ Recherche Anki : `objectif::l-danger`
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `a1a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `a1b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `a1b` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a1c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `a1d` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `a1d` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a2a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a2b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a3` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a3a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `a3b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `a3b` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a4` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `a6` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `a6` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a7` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a8` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a9b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -48,17 +48,17 @@ Recherche Anki : `objectif::l-danger`
 | `a14` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a15a1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a15b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `a15c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `a15c` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a16` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a17` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a18` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `a19` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `a20` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `a19` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `a20` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a21` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a24` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `conf-a13a-a13b` | socle | confusions | IISR 1re partie |
-| `conf-a15a1-a15b` | approfondissement | confusions | IISR 1re partie |
-| `conf-a2a-a2b` | approfondissement | confusions | IISR 1re partie |
+| `conf-a15a1-a15b` | consolidation | confusions | IISR 1re partie |
+| `conf-a2a-a2b` | consolidation | confusions | IISR 1re partie |
 | `conf-a7-a8` | socle | confusions | IISR 1re partie ; Code de la route, art. R422-3 |
 | `l-implantation-danger` | socle | faits | IISR 2e partie, art. 28 ; Sécurité routière — Exemples de nouvelles questions (Q18, Q19) |
 
@@ -83,12 +83,12 @@ Recherche Anki : `objectif::l-priorite-signaux`
 | `ab25` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b15` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c18` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m5` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m5` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m7` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m9c` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `conf-ab1-ab2` | socle | confusions | IISR 1re partie ; Code de la route, art. R415-5 et R415-7 |
 | `conf-ab3a-ab4` | socle | confusions | Code de la route, art. R415-6 et R415-7 |
-| `conf-ab3b-ab5` | approfondissement | confusions | IISR 1re partie |
+| `conf-ab3b-ab5` | consolidation | confusions | IISR 1re partie |
 | `conf-ab6-ab7` | socle | confusions | IISR 1re partie |
 | `conf-b15-c18` | socle | confusions | IISR 4e et 5e parties |
 
@@ -96,7 +96,7 @@ Recherche Anki : `objectif::l-priorite-signaux`
 
 Règle, exception et application visuelle ; le sens des flèches compte.
 
-48 notes / 48 cartes.
+49 notes / 49 cartes.
 
 Recherche Anki : `objectif::l-intersection`
 
@@ -108,48 +108,49 @@ Recherche Anki : `objectif::l-intersection`
 | `l-stop-arret` | socle | questions | Code de la route, art. R415-6 |
 | `l-tourner-gauche-regle` | socle | questions | Code de la route, art. R415-4 et R412-10 |
 | `l-intersection-encombree` | socle | questions | Code de la route, art. R412-33 |
-| `l-sortie-stationnement` | approfondissement | questions | Code de la route, art. R412-10 |
-| `l-quadrillage-carrefour` | approfondissement | questions | Code de la route, R415-2 |
+| `l-sortie-stationnement` | consolidation | questions | Code de la route, art. R412-10 |
+| `l-quadrillage-carrefour` | consolidation | questions | Code de la route, R415-2 |
 | `l-priorite-prudence` | socle | questions | Code de la route, R415-1 et R413-17 |
-| `aff-l-chemin-terre` | approfondissement | affirmations | R415-9 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968/ |
-| `aff-l-zone-30-priorite-droite` | approfondissement | affirmations | Code de la route, art. R415-5 et R110-2 |
+| `aff-l-chemin-terre` | consolidation | affirmations | R415-9 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968/ |
+| `aff-l-zone-30-priorite-droite` | consolidation | affirmations | Code de la route, art. R415-5 et R110-2 |
 | `aff-l-priorite-droite-rue-etroite` | socle | affirmations | Code de la route, art. R415-5 |
-| `aff-l-stop-rien-ne-vient` | approfondissement | affirmations | Code de la route, art. R415-6 |
+| `aff-l-stop-rien-ne-vient` | consolidation | affirmations | Code de la route, art. R415-6 |
 | `aff-l-stop-avancer` | socle | affirmations | Code de la route, art. R415-6 ; REMC |
-| `aff-l-cedez-arret` | approfondissement | affirmations | Code de la route, art. R415-7 |
-| `aff-l-tourner-gauche-centre` | approfondissement | affirmations | Code de la route, art. R415-4 ; REMC |
-| `aff-l-pieton-intention` | approfondissement | affirmations | Code de la route, art. R415-11 |
+| `aff-l-cedez-arret` | consolidation | affirmations | Code de la route, art. R415-7 |
+| `aff-l-tourner-gauche-centre` | consolidation | affirmations | Code de la route, art. R415-4 ; REMC |
+| `aff-l-pieton-intention` | consolidation | affirmations | Code de la route, art. R415-11 |
 | `scn-pd-droite-tout-droit` | socle | scenarios | Code de la route, art. R415-5 |
 | `scn-pd-gauche-tout-droit` | socle | scenarios | Code de la route, art. R415-5 |
 | `scn-pd-trois-vehicules` | socle | scenarios | Code de la route, art. R415-5 |
-| `scn-pd-trois-vehicules-2` | approfondissement | scenarios | Code de la route, art. R415-5 |
+| `scn-pd-trois-vehicules-2` | consolidation | scenarios | Code de la route, art. R415-5 |
 | `scn-pd-je-tourne-gauche-face` | socle | scenarios | Code de la route, art. R415-4 |
 | `scn-pd-face-tourne-gauche` | socle | scenarios | Code de la route, art. R415-4 |
-| `scn-pd-je-tourne-gauche-droite-arrive` | approfondissement | scenarios | Code de la route, art. R415-5 et R415-4 |
-| `scn-pd-je-tourne-gauche-gauche-arrive` | approfondissement | scenarios | Code de la route, art. R415-5 |
-| `scn-pd-les-deux-tournent-droite` | approfondissement | scenarios | Code de la route, art. R415-5 (aucun conflit de trajectoires) |
-| `scn-pd-face-tourne-droite-moi-gauche` | approfondissement | scenarios | Code de la route, art. R415-4 |
+| `scn-pd-je-tourne-gauche-droite-arrive` | consolidation | scenarios | Code de la route, art. R415-5 et R415-4 |
+| `scn-pd-je-tourne-gauche-gauche-arrive` | consolidation | scenarios | Code de la route, art. R415-5 |
+| `scn-pd-les-deux-tournent-droite` | consolidation | scenarios | Code de la route, art. R415-5 (aucun conflit de trajectoires) |
+| `scn-pd-face-tourne-droite-moi-gauche` | consolidation | scenarios | Code de la route, art. R415-4 |
 | `scn-stop-moi` | socle | scenarios | Code de la route, art. R415-6 |
 | `scn-stop-autre` | socle | scenarios | Code de la route, art. R415-6 et R415-7 |
-| `scn-cedez-moi-gauche-arrive` | approfondissement | scenarios | Code de la route, art. R415-7 |
-| `scn-route-prioritaire-tourne-gauche` | approfondissement | scenarios | Code de la route, art. R415-4 et R415-6 |
-| `scn-deux-stops` | approfondissement | scenarios | Code de la route, art. R415-5 et R415-6 |
+| `scn-cedez-moi-gauche-arrive` | consolidation | scenarios | Code de la route, art. R415-7 |
+| `scn-route-prioritaire-tourne-gauche` | consolidation | scenarios | Code de la route, art. R415-4 et R415-6 |
+| `scn-deux-stops` | consolidation | scenarios | Code de la route, art. R415-5 et R415-6 |
 | `scn-sortie-parking` | socle | scenarios | Code de la route, art. R415-9 et R415-11 |
-| `scn-tram-gauche` | approfondissement | scenarios | Code de la route, art. R422-3 |
-| `scn-pompiers-gauche` | approfondissement | scenarios | Code de la route, art. R415-12 |
-| `scn-feu-orange-clignotant` | approfondissement | scenarios | Code de la route, art. R412-32 et R415-5 |
-| `scn-stop-trois-vehicules` | approfondissement | scenarios | Code de la route, art. R415-6 et R415-4 |
-| `scn-cedez-face-tourne-gauche` | approfondissement | scenarios | Code de la route, art. R415-7 et R415-4 |
-| `scn-prioritaire-droite-arrive` | approfondissement | scenarios | Code de la route, art. R415-7 ; IISR (AB6) |
-| `scn-fin-prioritaire` | approfondissement | scenarios | Code de la route, art. R415-5 ; IISR (AB7) |
-| `scn-feu-vert-pieton` | approfondissement | scenarios | Code de la route, art. R415-11 |
-| `scn-tram-droite-moi-prioritaire` | approfondissement | scenarios | Code de la route, art. R422-3 |
-| `scn-t-intersection-droite` | approfondissement | scenarios | Code de la route, art. R415-5 |
-| `scn-pompiers-face-tourne-gauche` | approfondissement | scenarios | Code de la route, art. R415-12 |
-| `scn-pd-droite-tourne-gauche` | approfondissement | scenarios | Code de la route, art. R415-5 et R415-4 |
-| `scn-t-moi-branche` | approfondissement | scenarios | Code de la route, art. R415-5 |
-| `scn-moi-sortie-parking` | approfondissement | scenarios | Code de la route, art. R415-9 et R415-11 |
-| `scn-pd-cycliste-droite` | approfondissement | scenarios | Code de la route, art. R415-5 et R412-6 |
+| `scn-tram-gauche` | consolidation | scenarios | Code de la route, art. R422-3 |
+| `scn-pompiers-gauche` | consolidation | scenarios | Code de la route, art. R415-12 |
+| `scn-feu-orange-clignotant` | consolidation | scenarios | Code de la route, art. R412-32 et R415-5 |
+| `scn-stop-trois-vehicules` | consolidation | scenarios | Code de la route, art. R415-6 et R415-4 |
+| `scn-cedez-face-tourne-gauche` | consolidation | scenarios | Code de la route, art. R415-7 et R415-4 |
+| `scn-prioritaire-droite-arrive` | consolidation | scenarios | Code de la route, art. R415-7 ; IISR (AB6) |
+| `scn-fin-prioritaire` | consolidation | scenarios | Code de la route, art. R415-5 ; IISR (AB7) |
+| `scn-feu-vert-pieton` | consolidation | scenarios | Code de la route, art. R415-11 |
+| `scn-tram-droite-moi-prioritaire` | consolidation | scenarios | Code de la route, art. R422-3 |
+| `scn-t-intersection-droite` | consolidation | scenarios | Code de la route, art. R415-5 |
+| `scn-pompiers-face-tourne-gauche` | consolidation | scenarios | Code de la route, art. R415-12 |
+| `scn-pd-droite-tourne-gauche` | consolidation | scenarios | Code de la route, art. R415-5 et R415-4 |
+| `scn-t-moi-branche` | consolidation | scenarios | Code de la route, art. R415-5 |
+| `scn-moi-sortie-parking` | consolidation | scenarios | Code de la route, art. R415-9 et R415-11 |
+| `scn-pd-cycliste-droite` | consolidation | scenarios | Code de la route, art. R415-5 et R412-6 |
+| `scn-deux-stops-face` | socle | scenarios | Code de la route, art. R415-4 et R415-6 ; Sécurité routière — Exemples de nouvelles questions (Q2) |
 
 ## l-giratoire — Entrer, se placer et sortir sans couper une trajectoire
 
@@ -165,9 +166,9 @@ Recherche Anki : `objectif::l-giratoire`
 | `l-giratoire-clignotant` | socle | questions | REMC ; Codes Rousseau — Le giratoire |
 | `l-giratoire-placement` | socle | questions | Code de la route, art. R415-10 et R412-9 ; REMC |
 | `l-giratoire-sortie-impossible` | socle | questions | Code de la route, R412-9 et R412-10 |
-| `aff-l-giratoire-sortie-cede` | approfondissement | affirmations | Code de la route, art. R415-10 |
-| `aff-l-giratoire-depassement` | approfondissement | affirmations | R414-4 et R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
-| `aff-l-demi-tour-giratoire` | approfondissement | affirmations | Code de la route, art. R415-10 ; REMC |
+| `aff-l-giratoire-sortie-cede` | consolidation | affirmations | Code de la route, art. R415-10 |
+| `aff-l-giratoire-depassement` | consolidation | affirmations | R414-4 et R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
+| `aff-l-demi-tour-giratoire` | consolidation | affirmations | Code de la route, art. R415-10 ; REMC |
 | `scn-giratoire-cedez` | socle | scenarios | Code de la route, art. R415-10 ; IISR (AB25) |
 | `scn-rond-point-priorite-droite` | socle | scenarios | Code de la route, art. R415-5 et R415-10 ; IISR |
 | `scn-giratoire-autre-entree` | socle | scenarios | Code de la route, art. R415-10 |
@@ -176,7 +177,7 @@ Recherche Anki : `objectif::l-giratoire`
 
 Le vert n'est pas une permission sans conditions.
 
-37 notes / 39 cartes.
+36 notes / 38 cartes.
 
 Recherche Anki : `objectif::l-feux`
 
@@ -188,43 +189,42 @@ Recherche Anki : `objectif::l-feux`
 | `feu-jaune-clignotant` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `feu-rouge-clignotant` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `r12` | socle | reconnaissance | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `r13` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `r13` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `r14` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `r16` | socle | reconnaissance | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `r17` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `r17` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `r21a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `r21b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `r21c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `r23` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `agent-bras-leve` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `agent-bras-tendu-face` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `agent-profil` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `agent-geste-avancer` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `agent-geste-avancer` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `conf-jaune-fixe-clignotant` | socle | confusions | Code de la route, art. R412-31 et R412-32 |
 | `conf-r14-r16` | socle | confusions | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `l-signalisation-hierarchie` | socle | faits | Code de la route, R411-25 et R411-28 ; IISR, 8e partie — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087 |
 | `l-feu-hors-service-panneaux` | socle | questions | Code de la route, art. R411-25 ; IISR 6e partie |
-| `l-agent-ralentir-avancer` | approfondissement | questions | Code de la route, art. R411-28 ; Codes Rousseau — Les agents |
+| `l-agent-ralentir-avancer` | consolidation | questions | Code de la route, art. R411-28 ; Codes Rousseau — Les agents |
 | `l-klaxon-danger-agglo` | socle | questions | Code de la route, art. R416-1 |
 | `l-feu-vert-interdiction-tourner` | socle | questions | Code de la route, R411-25 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087 |
-| `l-feu-alerte-r1` | approfondissement | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `l-feu-modal-anticipation` | approfondissement | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `l-feu-cycliste-r19` | approfondissement | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `l-decompte-pieton` | approfondissement | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `l-fleche-jaune-droite-rouge` | approfondissement | questions | Code de la route, art. R412-30 et R412-33 ; IISR 6e partie (signal R16) |
-| `aff-l-feu-vert-priorite` | approfondissement | affirmations | Code de la route, art. R412-33 et R415-11 |
-| `aff-l-jaune-accelerer` | approfondissement | affirmations | Code de la route, art. R412-31 |
+| `l-feu-alerte-r1` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
+| `l-feu-modal-anticipation` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
+| `l-feu-cycliste-r19` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
+| `l-decompte-pieton` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
+| `l-fleche-jaune-droite-rouge` | consolidation | questions | Code de la route, art. R412-30 et R412-32 ; arrêté du 24 novembre 1967 (signal R16) |
+| `aff-l-feu-vert-priorite` | consolidation | affirmations | Code de la route, art. R412-33 et R415-11 |
+| `aff-l-jaune-accelerer` | consolidation | affirmations | Code de la route, art. R412-31 |
 | `aff-l-jaune-trop-engage` | socle | affirmations | Code de la route, art. R412-31 |
 | `scn-feu-vert-tourne-gauche` | socle | scenarios | Code de la route, art. R412-33 et R415-4 |
-| `scn-agent-bras-tendus-profil` | approfondissement | scenarios | Code de la route, art. R411-28 |
-| `scn-agent-bras-tendus-face` | approfondissement | scenarios | Code de la route, art. R411-28 |
+| `scn-agent-bras-tendus-profil` | consolidation | scenarios | Code de la route, art. R411-28 |
+| `scn-agent-bras-tendus-face` | consolidation | scenarios | Code de la route, art. R411-28 |
 | `scn-agent-bras-leve` | socle | scenarios | Code de la route, art. R411-28 |
 
 ## l-prescriptions — Reconnaître une interdiction ou une obligation
 
 Identifier le symbole plutôt que réciter son numéro.
 
-65 notes / 65 cartes.
+63 notes / 63 cartes.
 
 Recherche Anki : `objectif::l-prescriptions`
 
@@ -232,43 +232,41 @@ Recherche Anki : `objectif::l-prescriptions`
 |---|---|---|---|
 | `b0` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b1j` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b1j` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b2a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b2b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b2c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b3` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b3a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b4` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b3a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b4` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b6a1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b6a2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b6a3` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b6a2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b6a3` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b6d` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b7a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b7b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b8` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b9a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b8` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b9a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b9b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b9g` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b9h` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b9i` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b10a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b11` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b12` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b13` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b14` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b16` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b17` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b18c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b17` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b18c` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b21-1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b21-2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b21-2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b21a1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b21a2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b21a2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b21b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b21c1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b21c2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b21c2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b21d1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b21d2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b21e` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b21d2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b21e` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b22a` | socle | reconnaissance | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `b22b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b25` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -283,17 +281,17 @@ Recherche Anki : `objectif::l-prescriptions`
 | `c12` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c113` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `conf-b0-b1` | socle | confusions | IISR 4e partie |
-| `conf-b1-c12` | approfondissement | confusions | IISR 4e et 5e parties |
-| `conf-b3-b3a` | approfondissement | confusions | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `conf-b7a-b7b` | approfondissement | confusions | IISR 4e partie |
-| `conf-b9g-b9h` | approfondissement | confusions | IISR 4e partie |
-| `conf-b11-b12` | approfondissement | confusions | IISR 4e partie |
+| `conf-b1-c12` | consolidation | confusions | IISR 4e et 5e parties |
+| `conf-b3-b3a` | consolidation | confusions | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
+| `conf-b7a-b7b` | consolidation | confusions | IISR 4e partie |
+| `conf-b9g-b9h` | consolidation | confusions | IISR 4e partie |
+| `conf-b11-b12` | consolidation | confusions | IISR 4e partie |
 | `conf-b14-c4a` | socle | confusions | IISR 4e et 5e parties |
-| `conf-b14-b25` | approfondissement | confusions | IISR 4e partie |
-| `conf-b21-1-b21c1` | approfondissement | confusions | IISR 4e partie |
-| `conf-b21a1-b21c1` | approfondissement | confusions | IISR 4e partie |
+| `conf-b14-b25` | consolidation | confusions | IISR 4e partie |
+| `conf-b21-1-b21c1` | consolidation | confusions | IISR 4e partie |
+| `conf-b21a1-b21c1` | consolidation | confusions | IISR 4e partie |
 | `conf-b22a-c113` | socle | confusions | IISR 4e et 5e parties ; Code de la route, art. R431-9 |
-| `conf-b31-b33` | approfondissement | confusions | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
+| `conf-b31-b33` | consolidation | confusions | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `l-visuel-fin-interdictions` | socle | questions | Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-2 |
 
 ## l-portee — Lire portée, catégorie, zone et agglomération
@@ -306,10 +304,10 @@ Recherche Anki : `objectif::l-portee`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `b6b1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b6b2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b6b3` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b6b4` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b6b1` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b6b2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b6b3` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b6b4` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b30` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b51` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b52` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -324,42 +322,42 @@ Recherche Anki : `objectif::l-portee`
 | `m3a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m4a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m4d1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4d2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4e` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m4d2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m4e` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m4f` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m6a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m6b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m6a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m6b` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m6c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m6d` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m6d` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m6h` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m6i` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m6i` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m8a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m8b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m8c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m8d` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9d` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9v1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m8d` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m9d` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m9v1` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m9v2` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m9z` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m11b1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m11b1` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m12` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `conf-b52-b54` | approfondissement | confusions | Code de la route, art. R110-2 |
-| `conf-b30-b56` | approfondissement | confusions | IISR 4e partie |
+| `conf-b52-b54` | consolidation | confusions | Code de la route, art. R110-2 |
+| `conf-b30-b56` | consolidation | confusions | IISR 4e partie |
 | `conf-eb10-e31` | socle | confusions | IISR 5e partie ; Code de la route, art. R110-2 |
 | `conf-m1-m2` | socle | confusions | IISR 1re partie, art. 9 |
-| `conf-m8a-m8b` | approfondissement | confusions | IISR 1re partie, art. 9 |
+| `conf-m8a-m8b` | consolidation | confusions | IISR 1re partie, art. 9 |
 | `l-formes-couleurs-panneaux` | socle | questions | IISR 1re partie |
 | `l-formes-priorite-temporaire` | socle | questions | IISR 1re et 3e parties |
 | `l-portee-prescription` | socle | questions | IISR 1re partie, art. 8 ; Code de la route, art. R110-2 |
 | `l-panonceau-portee` | socle | questions | IISR 1re partie, art. 9 |
-| `l-signalisation-temporaire` | approfondissement | questions | IISR 8e partie ; Code de la route, art. R411-25 |
-| `l-agglomeration-panneau` | approfondissement | questions | Code de la route, art. R110-2, R413-3, R416-1 ; IISR |
+| `l-signalisation-temporaire` | consolidation | questions | IISR 8e partie ; Code de la route, art. R411-25 |
+| `l-agglomeration-panneau` | consolidation | questions | Code de la route, art. R110-2, R413-3, R416-1 ; IISR |
 | `l-visuel-distance` | socle | questions | Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
 | `l-visuel-etendue` | socle | questions | Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
 | `l-visuel-m12-edpm` | socle | questions | Arrêté du 24 novembre 1967, article 2-1 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
 | `l-visuel-m12-voiture` | socle | questions | Arrêté du 24 novembre 1967, article 2-1 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
 | `aff-l-zone-30-portee` | socle | affirmations | IISR 1re partie art. 8 ; Code de la route, art. R110-2 |
-| `aff-l-implantation-agglo-50` | approfondissement | affirmations | IISR 2e partie art. 28 ; Sécurité routière — Exemples de nouvelles questions (Q18, Q19) |
+| `aff-l-implantation-agglo-50` | consolidation | affirmations | IISR 2e partie art. 28 ; Sécurité routière — Exemples de nouvelles questions (Q18, Q19) |
 
 ## l-marquage — Lire lignes et affectations de voies
 
@@ -381,27 +379,27 @@ Recherche Anki : `objectif::l-marquage`
 | `marq-ligne-cedez` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-ligne-effet-feux` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-zebra` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `marq-ligne-rive` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `marq-ligne-rive` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-ligne-bau-t4` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `marq-chevrons` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `marq-chevrons` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-voie-insertion` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-bande-cyclable` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-couloir-bus` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `marq-damier-blanc` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `marq-damier-blanc` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-ligne-jaune-continue` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-ligne-jaune-discontinue` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-ligne-jaune-zigzag` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-marquage-temporaire-jaune` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `marq-damier-rouge-blanc` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `marq-ralentisseur-triangles` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `marq-plateau-sureleve` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `marq-damier-rouge-blanc` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `marq-ralentisseur-triangles` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `marq-plateau-sureleve` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-sas-velo` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-cvcb` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `conf-continue-dissuasion` | socle | confusions | Code de la route, R412-19 ; IISR, 7e partie |
-| `conf-t1-dissuasion` | approfondissement | confusions | IISR 7e partie, art. 113 |
-| `conf-stop-cedez-lignes` | approfondissement | confusions | IISR 7e partie |
-| `conf-jaune-continue-discontinue` | approfondissement | confusions | IISR 7e partie |
-| `l-bandes-rugueuses` | approfondissement | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
+| `conf-t1-dissuasion` | consolidation | confusions | IISR 7e partie, art. 113 |
+| `conf-stop-cedez-lignes` | consolidation | confusions | IISR 7e partie |
+| `conf-jaune-continue-discontinue` | consolidation | confusions | IISR 7e partie |
+| `l-bandes-rugueuses` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 
 ## l-vitesse — Choisir le plafond le plus restrictif et adapter l'allure
 
@@ -413,31 +411,31 @@ Recherche Anki : `objectif::l-vitesse`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `sr3a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `sr3e` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c51a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `sr3a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `sr3e` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c51a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `l-vitesse-agglo` | socle | faits | R413-3 et R110-2 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
-| `l-vitesse-hors-agglo` | socle | faits | Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
+| `l-vitesse-hors-agglo` | socle | faits | Code de la route, art. R413-2 ; CGCT, art. L3221-4-1 (relèvement à 90 par le département) |
 | `l-vitesse-separateur-autoroute` | socle | faits | R413-2 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-vitesse-pluie` | socle | faits | Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-vitesse-visibilite-50` | socle | faits | R413-4 ; R412-12 ; R413-17 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-vitesse-probatoire` | socle | faits | Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
-| `l-vitesse-minimale-autoroute` | approfondissement | faits | R413-19 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
-| `l-vitesse-engins` | approfondissement | faits | Code de la route, art. R311-1 |
-| `l-vitesse-adaptee` | approfondissement | questions | Code de la route, art. R413-17 |
+| `l-vitesse-minimale-autoroute` | consolidation | faits | R413-19 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
+| `l-vitesse-engins` | consolidation | faits | Code de la route, art. R311-1 |
+| `l-vitesse-adaptee` | consolidation | questions | Code de la route, art. R413-17 |
 | `l-probatoire-autoroute-110` | socle | questions | Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-pluie-autoroute-110` | socle | questions | Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-brouillard-zone30` | socle | questions | Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-pluie-route80` | socle | questions | Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
-| `l-pmv-limitation` | approfondissement | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
+| `l-pmv-limitation` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `l-visuel-b14-position` | socle | questions | Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
 | `l-visuel-b14-adaptation` | socle | questions | Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-17 |
 | `l-c107-route-simple` | socle | questions | https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-c107-route-separee` | socle | questions | https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
-| `aff-l-90-departement` | approfondissement | affirmations | Code de la route, art. R413-2 |
+| `aff-l-90-departement` | consolidation | affirmations | Code de la route, art. R413-2 |
 | `aff-l-creneau-90` | socle | affirmations | Code de la route, art. R413-2 I 3° et R413-5 |
-| `aff-l-lieu-dit` | approfondissement | affirmations | IISR 5e partie art. 99-3 ; Code de la route, art. R110-2 |
-| `aff-l-agglo-50-panneau` | approfondissement | affirmations | Code de la route, art. R413-3 |
+| `aff-l-lieu-dit` | consolidation | affirmations | IISR 5e partie art. 99-3 ; Code de la route, art. R110-2 |
+| `aff-l-agglo-50-panneau` | consolidation | affirmations | Code de la route, art. R413-3 |
 | `aff-l-vitesse-sous-limite` | socle | affirmations | Code de la route, art. R413-17 |
 
 ## l-depasser — Décider si le dépassement est possible et renoncer à temps
@@ -450,74 +448,75 @@ Recherche Anki : `objectif::l-depasser`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `c29a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c29a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c29b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c29c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c30` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `l-depassement-laterale` | socle | faits | Code de la route, R414-4 et R412-19 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/ |
-| `l-ligne-continue-sanction` | approfondissement | faits | Code de la route, art. R412-18 à R412-20 |
-| `l-depasse-serrer-droite` | approfondissement | faits | Code de la route, art. R414-6 et R414-16 |
+| `l-ligne-continue-sanction` | consolidation | faits | Code de la route, art. R412-18 à R412-20 |
+| `l-depasse-serrer-droite` | consolidation | faits | Code de la route, art. R414-6 et R414-16 |
 | `l-depassement-conditions` | socle | questions | Code de la route, art. R414-4 |
 | `l-depassement-rabattement` | socle | questions | Code de la route, art. R414-10 |
-| `l-depassement-interdit-lieux` | approfondissement | questions | Code de la route, R414-4 et R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
-| `l-depassement-interdit-lieux-2` | approfondissement | questions | Code de la route, art. R414-11 à R414-13 |
-| `c-cycliste-devant-depassement` | socle | questions | Code de la route, art. R414-4 (conditions du dépassement). |
+| `l-depassement-interdit-lieux` | consolidation | questions | Code de la route, R414-4 et R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
+| `l-depassement-interdit-lieux-2` | consolidation | questions | Code de la route, art. R414-11 à R414-13 |
 | `l-cycliste-ligne-espace` | socle | questions | Code de la route, R412-19 et R414-4 |
 | `l-cavalier-ligne-continue` | socle | questions | Code de la route, R412-19 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/ |
+| `c-cycliste-devant-depassement` | socle | questions | Code de la route, art. R414-4 (conditions du dépassement). |
 | `aff-l-continue-cyclomoteur` | socle | affirmations | Code de la route, art. R412-19 |
-| `aff-l-surdepassement` | approfondissement | affirmations | Code de la route, art. R414-4 |
-| `aff-l-depassement-intersection-prioritaire` | approfondissement | affirmations | Code de la route, art. R414-11 |
-| `aff-l-4-voies-double-sens` | approfondissement | affirmations | Code de la route, art. R412-9 et R414-7 |
+| `aff-l-surdepassement` | consolidation | affirmations | Code de la route, art. R414-4 |
+| `aff-l-depassement-intersection-prioritaire` | consolidation | affirmations | Code de la route, art. R414-11 |
+| `aff-l-4-voies-double-sens` | consolidation | affirmations | Code de la route, art. R412-9 et R414-7 |
 | `aff-l-b3-deux-roues` | socle | affirmations | IISR 4e partie (B3) ; Code de la route, art. R414-14 |
-| `aff-l-klaxon-nuit` | approfondissement | affirmations | Code de la route, art. R416-1 et R416-2 |
+| `aff-l-klaxon-nuit` | consolidation | affirmations | Code de la route, art. R416-1 et R416-2 |
 | `scn-dep-ligne-continue` | socle | scenarios | Code de la route, art. R412-19 |
 | `scn-dep-ligne-discontinue-libre` | socle | scenarios | Code de la route, art. R414-4 et R412-18 |
 | `scn-dep-vehicule-en-face` | socle | scenarios | Code de la route, art. R414-7 |
 | `scn-dep-mixte-mon-cote` | socle | scenarios | Code de la route, art. R412-20 |
 | `scn-dep-mixte-autre-cote` | socle | scenarios | Code de la route, art. R412-20 |
 | `scn-dep-sommet-cote` | socle | scenarios | Code de la route, art. R414-11 |
-| `scn-dep-dissuasion-tracteur` | approfondissement | scenarios | IISR 7e partie, art. 113 ; Code de la route, art. R412-18 |
-| `scn-dep-cycliste-ligne-continue` | approfondissement | scenarios | Code de la route, art. R412-19 et R414-4 |
-| `scn-dep-vehicule-tourne-gauche` | approfondissement | scenarios | Code de la route, art. R414-6 et R414-11 |
-| `scn-dep-suis-depasse` | approfondissement | scenarios | Code de la route, art. R414-16 |
-| `scn-dep-passage-pieton` | approfondissement | scenarios | Code de la route, art. R414-5 et R415-11 |
-| `scn-dep-tourne-gauche-depasse` | approfondissement | scenarios | Code de la route, art. R412-10, R414-16 et R414-6 |
+| `scn-dep-dissuasion-tracteur` | consolidation | scenarios | IISR 7e partie, art. 113 ; Code de la route, art. R412-18 |
+| `scn-dep-cycliste-ligne-continue` | consolidation | scenarios | Code de la route, art. R412-19 et R414-4 |
+| `scn-dep-vehicule-tourne-gauche` | consolidation | scenarios | Code de la route, art. R414-6 et R414-11 |
+| `scn-dep-suis-depasse` | consolidation | scenarios | Code de la route, art. R414-16 |
+| `scn-dep-passage-pieton` | consolidation | scenarios | Code de la route, art. R414-5 et R415-11 |
+| `scn-dep-tourne-gauche-depasse` | consolidation | scenarios | Code de la route, art. R412-10, R414-16 et R414-6 |
 
 ## l-position — Tenir sa voie et gérer les croisements
 
 Ne pas confondre trajectoire, clignotant et droit de passage.
 
-25 notes / 25 cartes.
+26 notes / 26 cartes.
 
 Recherche Anki : `objectif::l-position`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `l-croisement-largeur` | approfondissement | faits | Code de la route, R414-2 et R414-3 |
+| `l-croisement-largeur` | consolidation | faits | Code de la route, R414-2 et R414-3 |
 | `l-entrecroisement` | socle | questions | Code de la route, art. R421-3 ; IISR 7e partie art. 117-3 |
 | `l-depassement-droite` | socle | questions | Code de la route, art. R414-6 et R414-15 |
 | `l-position-chaussee` | socle | questions | Code de la route, art. R412-9 et R412-23 |
 | `l-tourner-droite-serrer` | socle | questions | Code de la route, art. R412-9, R412-23 et R415-14 |
 | `l-file-changement` | socle | questions | Code de la route, art. R412-24 et R414-15 |
-| `l-demi-tour-marche-arriere` | approfondissement | questions | Code de la route, art. R421-6 et R412-19 |
-| `l-ligne-rive-franchir` | approfondissement | questions | IISR 7e partie ; Code de la route, art. R412-22 |
+| `l-demi-tour-marche-arriere` | consolidation | questions | Code de la route, art. R421-6 et R412-19 |
+| `l-ligne-rive-franchir` | consolidation | questions | IISR 7e partie ; Code de la route, art. R412-22 |
 | `l-vocab-chaussee-voie` | socle | questions | Code de la route, art. R110-2 ; IISR 7e partie |
 | `l-clignotant-quand` | socle | questions | Code de la route, art. R412-10 |
 | `l-retrecissement-croisement` | socle | questions | Code de la route, art. R414-1 ; règle de conduite (programme REMC) |
-| `l-voie-lents` | approfondissement | questions | Code de la route, R422-1 |
+| `l-voie-lents` | consolidation | questions | Code de la route, R422-1 |
 | `aff-l-files-droite` | socle | affirmations | Code de la route, art. R414-15 et R412-24 |
-| `aff-l-klaxon-hors-agglo` | approfondissement | affirmations | Code de la route, art. R416-1 et R416-3 |
-| `aff-l-voie-milieu-autoroute` | approfondissement | affirmations | Code de la route, art. R412-23 |
-| `aff-l-ilot-droite` | approfondissement | affirmations | Code de la route, art. R412-27 |
+| `aff-l-klaxon-hors-agglo` | consolidation | affirmations | Code de la route, art. R416-1 et R416-3 |
+| `aff-l-voie-milieu-autoroute` | consolidation | affirmations | Code de la route, art. R412-23 |
+| `aff-l-ilot-droite` | consolidation | affirmations | Code de la route, art. R412-27 |
 | `aff-l-voie-preselection` | socle | affirmations | Code de la route, art. R412-26 |
-| `aff-l-detresse-pluie` | approfondissement | affirmations | Code de la route, art. R416-18 et R416-4 |
-| `aff-l-demi-tour-ligne-continue` | approfondissement | affirmations | Code de la route, art. R412-19 et R412-20 |
+| `aff-l-detresse-pluie` | consolidation | affirmations | Code de la route, art. R416-18 et R416-4 |
+| `aff-l-demi-tour-ligne-continue` | consolidation | affirmations | Code de la route, art. R412-19 et R412-20 |
 | `aff-l-croisement-depasseur-en-face` | socle | affirmations | Code de la route, art. R414-1 et R413-17 |
-| `scn-pos-trois-voies` | approfondissement | scenarios | Code de la route, art. R414-8 |
-| `scn-pos-croisement-obstacle` | approfondissement | scenarios | Code de la route, art. R414-1 ; règle de conduite (programme REMC) |
-| `scn-pos-bau-bouchon` | approfondissement | scenarios | Code de la route, art. R412-8 et R416-18 |
-| `scn-crois-b15-je-cede` | approfondissement | scenarios | IISR 4e et 5e parties (B15, C18) ; Code de la route, art. R414-1 |
-| `scn-crois-c18-je-passe` | approfondissement | scenarios | IISR 5e partie (C18) ; Code de la route, art. R414-1 |
+| `aff-l-virage-gauche-axe` | socle | affirmations | Code de la route, art. R412-9 et R413-17 |
+| `scn-pos-trois-voies` | consolidation | scenarios | Code de la route, art. R414-8 |
+| `scn-pos-croisement-obstacle` | consolidation | scenarios | Code de la route, art. R414-1 ; règle de conduite (programme REMC) |
+| `scn-pos-bau-bouchon` | consolidation | scenarios | Code de la route, art. R412-8 et R416-18 |
+| `scn-crois-b15-je-cede` | consolidation | scenarios | IISR 4e et 5e parties (B15, C18) ; Code de la route, art. R414-1 |
+| `scn-crois-c18-je-passe` | consolidation | scenarios | IISR 5e partie (C18) ; Code de la route, art. R414-1 |
 
 ## l-stationner — Distinguer arrêt, stationnement et interdictions
 
@@ -530,25 +529,25 @@ Recherche Anki : `objectif::l-stationner`
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `b6a1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b6a2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b6a3` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b6a2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `b6a3` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b6d` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `marq-livraison` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `marq-zone-bleue` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c1a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c6` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `marq-livraison` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `marq-zone-bleue` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c1a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c6` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `conf-b6a1-b6d` | socle | confusions | IISR 4e partie ; Code de la route, art. R110-2 |
-| `conf-b6a2-b6a3` | approfondissement | confusions | Code de la route, art. R417-2 |
-| `l-stationnement-categories` | approfondissement | faits | Code de la route, art. R417-9 à R417-12 ; service-public.fr F34212 |
-| `l-stationnement-5m-passage` | approfondissement | faits | Code de la route, art. R417-11 ; Code de la voirie routière, art. L118-5-1 |
-| `l-stationnement-alterne` | approfondissement | faits | Code de la route, art. R417-2 |
+| `conf-b6a2-b6a3` | consolidation | confusions | Code de la route, art. R417-2 |
+| `l-stationnement-categories` | consolidation | faits | Code de la route, art. R417-9 à R417-12 ; service-public.fr F34212 |
+| `l-stationnement-5m-passage` | consolidation | faits | Code de la route, art. R417-11 ; Code de la voirie routière, art. L118-5-1 |
+| `l-stationnement-alterne` | consolidation | faits | Code de la route, art. R417-2 |
 | `l-stationnement-cote` | socle | faits | Code de la route, art. R417-1, R417-4 et R416-12 |
-| `l-zone-bleue` | approfondissement | faits | Code de la route, art. R417-3 ; service-public.fr F34440 |
-| `l-feux-detresse-usage` | approfondissement | faits | Code de la route, art. R416-18 et R416-19 |
+| `l-zone-bleue` | consolidation | faits | Code de la route, art. R417-3 ; service-public.fr F34440 |
+| `l-feux-detresse-usage` | consolidation | faits | Code de la route, art. R416-18 et R416-19 |
 | `l-arret-vs-stationnement` | socle | questions | Code de la route, art. R110-2 |
 | `l-stationnement-trottoir` | socle | questions | Code de la route, art. R417-11 |
 | `l-stationnement-bande-cyclable` | socle | questions | Code de la route, art. R417-11 |
-| `l-double-file` | approfondissement | questions | Code de la route, R110-2 et R417-10 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551 |
+| `l-double-file` | consolidation | questions | Code de la route, R110-2 et R417-10 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551 |
 | `l-entree-carrossable` | socle | questions | Code de la route, art. R417-10 |
 | `l-stationnement-dangereux` | socle | questions | Code de la route, art. R417-9 |
 | `l-stationnement-hors-agglo-nuit` | socle | questions | Code de la route, art. R417-4 et R416-12 |
@@ -557,32 +556,31 @@ Recherche Anki : `objectif::l-stationner`
 | `l-visuel-attendre-b6a1` | socle | questions | Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R110-2 |
 | `l-visuel-jaune-continu` | socle | questions | Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
 | `l-visuel-jaune-discontinu` | socle | questions | Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
-| `aff-l-ligne-jaune-discontinue` | approfondissement | affirmations | IISR 7e partie art. 118-2 |
+| `aff-l-ligne-jaune-discontinue` | consolidation | affirmations | IISR 7e partie art. 118-2 |
 | `aff-l-sens-unique-gauche` | socle | affirmations | Code de la route, art. R417-1 |
-| `aff-l-bau-appel` | approfondissement | affirmations | Code de la route, art. R421-7 et R417-10 |
-| `aff-l-arret-moteur-tournant` | approfondissement | affirmations | Code de la route, art. R110-2 |
-| `aff-l-arret-chargement` | approfondissement | affirmations | Code de la route, art. R110-2 |
-| `aff-l-trottoir-moto` | approfondissement | affirmations | Code de la route, art. R417-10 |
-| `aff-l-genant-fourriere` | approfondissement | affirmations | Code de la route, art. R417-9 à R417-12 ; L325-1 |
+| `aff-l-bau-appel` | consolidation | affirmations | Code de la route, art. R421-7 et R417-10 |
+| `aff-l-arret-moteur-tournant` | consolidation | affirmations | Code de la route, art. R110-2 |
+| `aff-l-arret-chargement` | consolidation | affirmations | Code de la route, art. R110-2 |
+| `aff-l-trottoir-moto` | consolidation | affirmations | Code de la route, art. R417-10 |
+| `aff-l-genant-fourriere` | consolidation | affirmations | Code de la route, art. R417-9 à R417-12 ; L325-1 |
 | `aff-l-zone-rencontre-stationnement` | socle | affirmations | Code de la route, art. R417-10 et R110-2 |
 
 ## c-distances — Relier vitesse, réaction, freinage et intervalle
 
 Comprendre le mécanisme et calculer sur les données fournies.
 
-16 notes / 17 cartes.
+15 notes / 15 cartes.
 
 Recherche Anki : `objectif::c-distances`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `c-temps-reaction` | socle | faits | securite-routiere.gouv.fr — La vitesse et la conduite ; Codeclic — Temps de réaction |
-| `c-distance-reaction-formule` | approfondissement | faits | Codeclic ; En Voiture Simone ; securite-routiere.gouv.fr — Dépliant vitesse |
-| `c-distance-arret-reperes` | socle | faits | Sécurité routière — https://modules.securite-routiere.gouv.fr/module_distance_arret.html ; Codes Rousseau — Calcul des distances |
+| `c-distance-reaction-formule` | consolidation | faits | Codeclic ; En Voiture Simone ; securite-routiere.gouv.fr — Dépliant vitesse |
 | `c-distance-mouillee` | socle | faits | Sécurité routière, exemple public Q13 (2023) ; repère et limites du modèle |
 | `c-vitesse-double-freinage` | socle | faits | securite-routiere.gouv.fr — La vitesse et la conduite ; Ornikar — Énergie cinétique |
 | `c-intervalle-2s` | socle | faits | Code de la route, art. R412-12 ; Codes Rousseau — Calcul des distances |
-| `c-intervalle-pl-tunnel` | approfondissement | faits | Code de la route, R412-12 ; CETU — sécurité des usagers en tunnel |
+| `c-intervalle-pl-tunnel` | consolidation | faits | Code de la route, R412-12 ; CETU — sécurité des usagers en tunnel |
 | `c-autoroute-deux-traits` | socle | faits | securite-routiere.gouv.fr — La vitesse et la conduite ; IISR 7e partie, art. 113-1 |
 | `c-suiveur-trop-pres` | socle | questions | Code de la route, art. R412-12 ; securite-routiere.gouv.fr — Les distances de sécurité |
 | `c-distance-arret-carre` | socle | questions | Supports de préparation (Codes Rousseau, ENPC) ; Sécurité routière — Exemples de questions 2023 |
@@ -590,14 +588,14 @@ Recherche Anki : `objectif::c-distances`
 | `c-intervalle-repere` | socle | questions | Code de la route, R412-12 |
 | `c-distance-obstacle-exercice` | socle | questions | Relation physique : arrêt = réaction + freinage ; calcul sur données explicites |
 | `aff-c-temps-reaction-vitesse` | socle | affirmations | Code en Poche — Temps de réaction ; securite-routiere.gouv.fr — La vitesse et la conduite |
-| `aff-c-reaction-vehicule-ralentit` | approfondissement | affirmations | En Voiture Simone — Temps de réaction ; securite-routiere.gouv.fr — La vitesse et la conduite |
-| `aff-c-vitesse-double-freinage-double` | approfondissement | affirmations | securite-routiere.gouv.fr — La vitesse et la conduite ; Ornikar — Énergie cinétique |
+| `aff-c-reaction-vehicule-ralentit` | consolidation | affirmations | En Voiture Simone — Temps de réaction ; securite-routiere.gouv.fr — La vitesse et la conduite |
+| `aff-c-vitesse-double-freinage-double` | consolidation | affirmations | securite-routiere.gouv.fr — La vitesse et la conduite ; Ornikar — Énergie cinétique |
 
 ## c-observer — Chercher les indices et les zones masquées
 
 La situation décide du danger ; ne pas attendre la certitude.
 
-21 notes / 21 cartes.
+23 notes / 23 cartes.
 
 Recherche Anki : `objectif::c-observer`
 
@@ -606,58 +604,61 @@ Recherche Anki : `objectif::c-observer`
 | `c-regarder-loin` | socle | questions | REMC ; Codes Rousseau — L'exploration visuelle |
 | `c-angle-mort-definition` | socle | questions | REMC ; securite-routiere.gouv.fr — Les angles morts |
 | `c-ordre-controles-changement-file` | socle | questions | Codeclic — L'angle mort ; Stych — Les contrôles ; Code de la route, art. R412-10 |
-| `c-clignotant-avant-ralentir` | approfondissement | questions | Code de la route, art. R412-10 ; En Voiture Simone — Angle mort et contrôles |
-| `c-zone-attention-pluie` | approfondissement | questions | Sécurité routière — Exemples de nouvelles questions (Q9) |
-| `c-enfant-masque` | approfondissement | questions | Sécurité routière — Exemples de nouvelles questions (Q3) |
-| `c-trottinette-vulnerable` | approfondissement | questions | Sécurité routière — Exemples de nouvelles questions (Q4) |
+| `c-clignotant-avant-ralentir` | consolidation | questions | Code de la route, art. R412-10 ; En Voiture Simone — Angle mort et contrôles |
+| `c-zone-attention-pluie` | consolidation | questions | Sécurité routière — Exemples de nouvelles questions (Q9) |
+| `c-enfant-masque` | consolidation | questions | Sécurité routière — Exemples de nouvelles questions (Q3) |
+| `c-trottinette-vulnerable` | consolidation | questions | Sécurité routière — Exemples de nouvelles questions (Q4) |
 | `c-retro-avant-freiner` | socle | questions | Ornikar — Pièges à éviter ; REMC |
 | `c-indice-feux-recul` | socle | questions | Code de la route, art. R416-20 et R412-10 ; REMC — Anticiper |
-| `c-indice-bus-arrete` | approfondissement | questions | Code de la route, art. R412-11 |
+| `c-indice-bus-arrete` | consolidation | questions | Code de la route, art. R412-11 |
 | `c-indice-ballon` | socle | questions | REMC — Anticiper ; securite-routiere.gouv.fr — Enfants |
 | `c-indice-cycliste-regard` | socle | questions | En Voiture Simone — Les vélos ; REMC |
 | `c-indice-vehicule-stationne-portiere` | socle | questions | securite-routiere.gouv.fr — Emportiérage ; REMC |
 | `c-occlusion-pieton` | socle | questions | Code de la route, R413-17 et R415-11 |
+| `c-virage-technique` | socle | questions | REMC (compétence 2) ; securite-routiere.gouv.fr — La vitesse et la conduite |
 | `aff-c-champ-visuel-vitesse-pieton` | socle | affirmations | securite-routiere.gouv.fr — Dépliant La vue ; Conduire sur autoroute |
-| `aff-c-pieton-detectable-motard` | approfondissement | affirmations | Sécurité routière — Exemples de nouvelles questions (Q11) |
+| `aff-c-pieton-detectable-motard` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q11) |
 | `aff-c-enfant-percoit-adulte` | socle | affirmations | Sécurité routière — Exemples de nouvelles questions (Q3) ; securite-routiere.gouv.fr — Enfants piétons |
 | `aff-c-enfant-croit-vu` | socle | affirmations | securite-routiere.gouv.fr — Enfants piétons ; REMC |
-| `aff-c-indice-danger-certain` | approfondissement | affirmations | Code en Poche — Anticiper ; REMC |
-| `aff-c-klaxon-ecole` | approfondissement | affirmations | Code de la route, art. R416-1 ; securite-routiere.gouv.fr — Enfants piétons |
-| `aff-c-retros-suffisent` | approfondissement | affirmations | Codeclic — L'angle mort ; securite-routiere.gouv.fr — Les angles morts |
+| `aff-c-indice-danger-certain` | consolidation | affirmations | Code en Poche — Anticiper ; REMC |
+| `aff-c-klaxon-ecole` | consolidation | affirmations | Code de la route, art. R416-1 ; securite-routiere.gouv.fr — Enfants piétons |
+| `aff-c-retros-suffisent` | consolidation | affirmations | Codeclic — L'angle mort ; securite-routiere.gouv.fr — Les angles morts |
+| `aff-c-musique-forte` | consolidation | affirmations | securite-routiere.gouv.fr — Distracteurs ; Code de la route, art. R412-6-1 |
 
 ## c-fatigue — Reconnaître l'inaptitude momentanée et interrompre le trajet
 
 Savoir agir avant le micro-sommeil ou la prise de risque.
 
-11 notes / 12 cartes.
+12 notes / 13 cartes.
 
 Recherche Anki : `objectif::c-fatigue`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `c-fatigue-pause-chiffres` | socle | faits | securite-routiere.gouv.fr — La fatigue et la conduite |
-| `c-routine-monotonie` | approfondissement | questions | securite-routiere.gouv.fr — Port de la ceinture (trajets courts) ; Ornikar — Vigilance |
+| `c-routine-monotonie` | consolidation | questions | securite-routiere.gouv.fr — Port de la ceinture (trajets courts) ; Ornikar — Vigilance |
 | `c-somnolence-que-faire` | socle | questions | Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf |
 | `c-fatigue-remedes-faux` | socle | questions | Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf |
-| `c-vitesse-fatigue` | approfondissement | questions | securite-routiere.gouv.fr — La fatigue et la conduite ; La vitesse |
+| `c-vitesse-fatigue` | consolidation | questions | securite-routiere.gouv.fr — La fatigue et la conduite ; La vitesse |
 | `c-emotions` | socle | questions | securite-routiere.gouv.fr — Les facteurs de risque ; Codes Rousseau |
 | `c-passagers-pression` | socle | questions | securite-routiere.gouv.fr — Conseils aux conducteurs novices |
 | `aff-c-pause-sans-signe` | socle | affirmations | securite-routiere.gouv.fr — La fatigue et la conduite ; En Voiture Simone — Fatigue |
 | `aff-c-micro-sommeil` | socle | affirmations | Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf |
 | `aff-c-nuit-trafic-fluide` | socle | affirmations | securite-routiere.gouv.fr — Conduire la nuit |
-| `aff-c-jeune-reflexes` | approfondissement | affirmations | ONISR — Bilan définitif 2024 ; securite-routiere.gouv.fr — Conseils aux conducteurs novices |
+| `aff-c-jeune-reflexes` | consolidation | affirmations | ONISR — Bilan définitif 2024 ; securite-routiere.gouv.fr — Conseils aux conducteurs novices |
+| `aff-c-jeunes-risque-double` | consolidation | affirmations | ONISR, bilan 2025 ; securite-routiere.gouv.fr — Conducteurs novices |
 
 ## c-substances — Distinguer seuil légal, danger et élimination
 
 Aucun nombre de verres ni sentiment de lucidité ne garantit l'aptitude.
 
-24 notes / 28 cartes.
+26 notes / 30 cartes.
 
 Recherche Anki : `objectif::c-substances`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `c-verre-standard` | approfondissement | faits | securite-routiere.gouv.fr — L'alcool et la conduite ; Code en Poche |
+| `c-verre-standard` | consolidation | faits | securite-routiere.gouv.fr — L'alcool et la conduite ; Code en Poche |
 | `c-verre-alcoolemie` | socle | faits | securite-routiere.gouv.fr — L’alcool et la conduite |
 | `c-alcool-elimination` | socle | faits | Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2024-03/depliant_alcool-conduite-070823.pdf |
 | `c-conversion-air-sang` | socle | faits | securite-routiere.gouv.fr — L'alcool et la conduite ; Code de la route, art. R234-1 |
@@ -665,34 +666,37 @@ Recherche Anki : `objectif::c-substances`
 | `c-alcool-seuils-sang` | socle | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2881 |
 | `c-cannabis-effets` | socle | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886 |
 | `c-alcool-unites-probatoire` | socle | questions | Code de la route, R234-1 |
-| `aff-c-repas-copieux` | approfondissement | affirmations | securite-routiere.gouv.fr — La fatigue et la conduite ; Départ en vacances |
-| `aff-c-senior-reaction` | approfondissement | affirmations | securite-routiere.gouv.fr — Conseils pour les seniors ; Dépliant La vue |
-| `aff-c-lunettes-points` | approfondissement | affirmations | Code de la route, art. R221-1-1 |
+| `aff-c-repas-copieux` | consolidation | affirmations | securite-routiere.gouv.fr — La fatigue et la conduite ; Départ en vacances |
+| `aff-c-senior-reaction` | consolidation | affirmations | securite-routiere.gouv.fr — Conseils pour les seniors ; Dépliant La vue |
+| `aff-c-lunettes-points` | consolidation | affirmations | Code de la route, art. R221-1-1 |
 | `aff-c-doses-maison` | socle | affirmations | Sécurité routière — Exemples de nouvelles questions (Q17) ; securite-routiere.gouv.fr — L'alcool et la conduite |
-| `aff-c-biere-whisky` | approfondissement | affirmations | securite-routiere.gouv.fr — L'alcool et la conduite ; Santé publique France |
+| `aff-c-biere-whisky` | consolidation | affirmations | securite-routiere.gouv.fr — L'alcool et la conduite ; Santé publique France |
 | `aff-c-alcool-sous-seuil` | socle | affirmations | securite-routiere.gouv.fr — L'alcool et la conduite ; En Voiture Simone — Alcool au volant |
-| `aff-c-alcool-jugement` | approfondissement | affirmations | securite-routiere.gouv.fr — L'alcool et la conduite |
-| `aff-c-alcool-eblouissement` | approfondissement | affirmations | securite-routiere.gouv.fr — L'alcool et la conduite |
-| `aff-c-dernier-verre-depart` | approfondissement | affirmations | securite-routiere.gouv.fr — L'alcool et la conduite |
+| `aff-c-alcool-jugement` | consolidation | affirmations | securite-routiere.gouv.fr — L'alcool et la conduite |
+| `aff-c-alcool-eblouissement` | consolidation | affirmations | securite-routiere.gouv.fr — L'alcool et la conduite |
+| `aff-c-dernier-verre-depart` | consolidation | affirmations | securite-routiere.gouv.fr — L'alcool et la conduite |
 | `aff-c-cafe-dessoule` | socle | affirmations | securite-routiere.gouv.fr — L'alcool et la conduite ; Vinci Autoroutes — Idées reçues |
 | `aff-c-lendemain-matin` | socle | affirmations | securite-routiere.gouv.fr — L'alcool et la conduite ; Code en Poche — Conduite en état d'ivresse |
 | `aff-c-probatoire-un-verre` | socle | affirmations | Code de la route, art. R234-1 ; securite-routiere.gouv.fr — L'alcool et la conduite |
-| `aff-c-cannabis-veille` | approfondissement | affirmations | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886 |
+| `aff-c-cannabis-veille` | consolidation | affirmations | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886 |
 | `aff-c-medicament-sans-ordonnance` | socle | affirmations | securite-routiere.gouv.fr — Les médicaments et la conduite ; ANSM |
 | `aff-c-somnifere-soir` | socle | affirmations | securite-routiere.gouv.fr — Les médicaments et la conduite ; Vidal — Médicaments et conduite |
-| `aff-c-medicament-alcool` | approfondissement | affirmations | securite-routiere.gouv.fr — Les médicaments et la conduite ; Code en Poche — Médicaments |
+| `aff-c-medicament-alcool` | consolidation | affirmations | securite-routiere.gouv.fr — Les médicaments et la conduite ; Code en Poche — Médicaments |
+| `aff-c-alcool-un-sur-trois` | consolidation | affirmations | securite-routiere.gouv.fr — L'alcool et la conduite ; ONISR, bilan 2025 |
+| `aff-c-senior-visite-70` | consolidation | affirmations | Code de la route, art. R221-10 et R226-1 ; service-public F2882 |
 
 ## c-distraction — Écarter les distractions même légales
 
 La conversation et la manipulation détournent l'attention.
 
-6 notes / 6 cartes.
+7 notes / 9 cartes.
 
 Recherche Anki : `objectif::c-distraction`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `c-telephone-5s` | approfondissement | faits | Calcul v/3,6 × durée ; Sécurité routière — téléphone et distraction |
+| `c-telephone-5s` | consolidation | faits | Calcul v/3,6 × durée ; Sécurité routière — téléphone et distraction |
+| `c-chiffres-campagne` | socle | faits | securite-routiere.gouv.fr — Le téléphone et la conduite ; La fatigue et la conduite ; La vitesse et la conduite |
 | `c-telephone-arret` | socle | questions | Code de la route, art. R412-6-1 et L224-1 |
 | `aff-c-mains-libres-passager` | socle | affirmations | securite-routiere.gouv.fr — Le téléphone et la conduite |
 | `aff-c-oreillette` | socle | affirmations | Code de la route, art. R412-6-1 |
@@ -713,29 +717,29 @@ Recherche Anki : `objectif::r-meteo`
 | `r-nuit-feux-croisement-route` | socle | questions | Code de la route, art. R416-5 et R416-6 |
 | `r-nuit-suivre-vehicule-feux` | socle | questions | Code de la route, art. R416-6 |
 | `r-nuit-vitesse-visibilite` | socle | questions | Code de la route, R413-17 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/ |
-| `r-pluie-feux` | approfondissement | questions | Code de la route, art. R416-4 et R416-6 |
+| `r-pluie-feux` | consolidation | questions | Code de la route, art. R416-4 et R416-6 |
 | `r-pluie-premieres-gouttes` | socle | questions | Stych — Circuler par temps de pluie ; securite-routiere.gouv.fr — Conduire sous la pluie |
 | `r-aquaplaning` | socle | questions | Ornikar — L'aquaplaning ; securite-routiere.gouv.fr — Conduire sous la pluie |
 | `r-brouillard-feux` | socle | questions | Code de la route, art. R416-6 et R416-7 |
 | `r-brouillard-intervalle` | socle | questions | Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `r-neige-conduite` | socle | questions | securite-routiere.gouv.fr — Conduire en hiver ; Codes Rousseau — Neige et brouillard |
-| `r-verglas-descente` | approfondissement | questions | securite-routiere.gouv.fr — Conduire en hiver ; En Voiture Simone — Le verglas |
+| `r-verglas-descente` | consolidation | questions | securite-routiere.gouv.fr — Conduire en hiver ; En Voiture Simone — Le verglas |
 | `r-vent-lateral` | socle | questions | securite-routiere.gouv.fr — Le vent ; Ornikar — Conduire par grand vent |
 | `r-soleil-bas` | socle | questions | En Voiture Simone — Conduire face au soleil |
 | `aff-r-brouillard-arriere-pluie` | socle | affirmations | Code de la route, art. R416-7 |
-| `aff-r-brouillard-avant-pluie` | approfondissement | affirmations | Code de la route, art. R416-7 |
-| `aff-r-brouillard-feux-route` | approfondissement | affirmations | Code de la route, art. R416-6 |
-| `aff-r-visibilite-50-autoroute` | approfondissement | affirmations | Code de la route, art. R413-4 |
-| `aff-r-aquaplaning-freiner` | approfondissement | affirmations | Ornikar — L'aquaplaning ; securite-routiere.gouv.fr — Conduire sous la pluie |
-| `aff-r-montagne-4-pneus` | approfondissement | affirmations | Sécurité routière — Exemples de nouvelles questions (Q10) ; décret n° 2020-1264 |
+| `aff-r-brouillard-avant-pluie` | consolidation | affirmations | Code de la route, art. R416-7 |
+| `aff-r-brouillard-feux-route` | consolidation | affirmations | Code de la route, art. R416-6 |
+| `aff-r-visibilite-50-autoroute` | consolidation | affirmations | Code de la route, art. R413-4 |
+| `aff-r-aquaplaning-freiner` | consolidation | affirmations | Ornikar — L'aquaplaning ; securite-routiere.gouv.fr — Conduire sous la pluie |
+| `aff-r-montagne-4-pneus` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q10) ; décret n° 2020-1264 |
 | `aff-r-verglas-pont` | socle | affirmations | En Voiture Simone — Le verglas ; Roole — Neige et verglas |
-| `aff-r-verglas-temperature-positive` | approfondissement | affirmations | Codes Rousseau — Neige et brouillard ; En Voiture Simone — Le verglas |
-| `aff-r-neige-depassement-pl` | approfondissement | affirmations | Code de la route, art. R414-17 |
-| `aff-r-nuit-feux-position-agglo` | approfondissement | affirmations | Code de la route, art. R416-6 et R416-8 |
-| `aff-r-nuit-feux-route-arret` | approfondissement | affirmations | Code de la route, art. R416-5 |
-| `aff-r-nuit-pieton-sombre` | approfondissement | affirmations | securite-routiere.gouv.fr — Conduire de nuit ; Code de la route, art. R313-3 |
-| `aff-r-vent-manche` | approfondissement | affirmations | IISR (A24, J7) ; Ornikar — Conduire par grand vent |
-| `aff-r-vent-deux-roues` | approfondissement | affirmations | securite-routiere.gouv.fr — Le vent ; En Voiture Simone — Le vent |
+| `aff-r-verglas-temperature-positive` | consolidation | affirmations | Codes Rousseau — Neige et brouillard ; En Voiture Simone — Le verglas |
+| `aff-r-neige-depassement-pl` | consolidation | affirmations | Code de la route, art. R414-17 |
+| `aff-r-nuit-feux-position-agglo` | consolidation | affirmations | Code de la route, art. R416-6 et R416-8 |
+| `aff-r-nuit-feux-route-arret` | consolidation | affirmations | Code de la route, art. R416-5 |
+| `aff-r-nuit-pieton-sombre` | consolidation | affirmations | securite-routiere.gouv.fr — Conduire de nuit ; Code de la route, art. R313-3 |
+| `aff-r-vent-manche` | consolidation | affirmations | IISR (A24, J7) ; Ornikar — Conduire par grand vent |
+| `aff-r-vent-deux-roues` | consolidation | affirmations | securite-routiere.gouv.fr — Le vent ; En Voiture Simone — Le vent |
 
 ## r-montagne — Préparer l'équipement hiver et gérer une forte pente
 
@@ -749,16 +753,16 @@ Recherche Anki : `objectif::r-montagne`
 |---|---|---|---|
 | `b26` | socle | reconnaissance | Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12 |
 | `b58` | socle | reconnaissance | Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12 |
-| `c14` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c14` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `conf-b26-b58` | socle | confusions | Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12 |
 | `r-loi-montagne-periode` | socle | faits | Décret n° 2020-1264 du 16 octobre 2020 ; service-public.fr F19459 |
 | `r-deneigement-depassement` | socle | questions | Code de la route, art. R414-17 |
 | `r-montagne-croisement-difficile` | socle | questions | Code de la route, art. R414-2 et R414-3 |
 | `r-montagne-marche-arriere` | socle | questions | Code de la route, art. R414-3 |
 | `r-descente-freinage` | socle | questions | Sécurité routière — Exemples de nouvelles questions (Q18) |
-| `r-b26-pneus-equivalence` | approfondissement | questions | IISR, art. 67-1, modifié par arrêté du 23 juin 2021 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12 |
-| `r-b26-chaines-complement` | approfondissement | questions | IISR, art. 67-1, modifié par arrêté du 23 juin 2021 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12 |
-| `aff-r-descente-150m` | approfondissement | affirmations | Sécurité routière — Exemples de nouvelles questions (Q18) ; IISR, 1re partie |
+| `r-b26-pneus-equivalence` | consolidation | questions | IISR, art. 67-1, modifié par arrêté du 23 juin 2021 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12 |
+| `r-b26-chaines-complement` | consolidation | questions | IISR, art. 67-1, modifié par arrêté du 23 juin 2021 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12 |
+| `aff-r-descente-150m` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q18) ; IISR, 1re partie |
 | `aff-r-montagne-ms` | socle | affirmations | Décret n° 2020-1264 ; service-public.fr F19459 |
 
 ## r-autoroute — S'insérer, sortir et se protéger sur voie rapide
@@ -776,28 +780,28 @@ Recherche Anki : `objectif::r-autoroute`
 | `c64d` | socle | reconnaissance | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `c65a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c107` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c108` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c108` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c207` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c208` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `conf-c107-c207` | socle | confusions | Code de la route, R413-2 à R413-5 ; arrêté signalisation, C107 et C207 |
-| `conf-c8-c26a` | approfondissement | confusions | IISR 5e partie |
-| `r-autoroute-sortie-annonces` | approfondissement | faits | IISR, 5e partie (art. 83 et 84) ; Code de la route, art. R421-4 |
+| `conf-c8-c26a` | consolidation | confusions | IISR 5e partie |
+| `r-autoroute-sortie-annonces` | consolidation | faits | IISR, 5e partie (art. 83 et 84) ; Code de la route, art. R421-4 |
 | `l-insertion-autoroute-priorite` | socle | questions | Code de la route, art. R421-3 |
+| `l-feu-acces-regule` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `r-autoroute-insertion-fin-voie` | socle | questions | Code de la route, R421-3 et R412-6 |
 | `r-autoroute-sortie` | socle | questions | Code de la route, R413-17 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/ ; R421-4 |
-| `r-autoroute-bau` | approfondissement | questions | Code de la route, art. R412-8 et R421-7 |
+| `r-autoroute-bau` | consolidation | questions | Code de la route, art. R412-8 et R421-7 |
 | `r-autoroute-panne` | socle | questions | Code de la route, art. R421-7 et R416-19 |
 | `r-autoroute-panne-attendre` | socle | questions | securite-routiere.gouv.fr — Panne sur autoroute ; Code de la route, art. R421-7 |
-| `r-autoroute-usagers-interdits` | approfondissement | questions | Code de la route, art. R421-2 |
+| `r-autoroute-usagers-interdits` | consolidation | questions | Code de la route, art. R421-2 |
 | `r-autoroute-peage` | socle | questions | ASFA — Le péage ; IISR |
-| `r-autoroute-fatigue-aires` | approfondissement | questions | ASFA — Les aires d'autoroute ; securite-routiere.gouv.fr — La fatigue |
-| `l-feu-acces-regule` | approfondissement | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `aff-r-insertion-prioritaire` | approfondissement | affirmations | Code de la route, art. R421-3 |
-| `aff-r-autoroute-voie-gauche-80` | approfondissement | affirmations | Code de la route, art. R413-19 |
-| `aff-r-autoroute-trouee-terre-plein` | approfondissement | affirmations | Code de la route, art. R421-5 et R421-6 |
-| `aff-r-autoroute-vitesse-pluie` | approfondissement | affirmations | Code de la route, art. R413-2 et R413-5 |
+| `r-autoroute-fatigue-aires` | consolidation | questions | ASFA — Les aires d'autoroute ; securite-routiere.gouv.fr — La fatigue |
+| `aff-r-insertion-prioritaire` | consolidation | affirmations | Code de la route, art. R421-3 |
+| `aff-r-autoroute-voie-gauche-80` | consolidation | affirmations | Code de la route, art. R413-19 |
+| `aff-r-autoroute-trouee-terre-plein` | consolidation | affirmations | Code de la route, art. R421-5 et R421-6 |
+| `aff-r-autoroute-vitesse-pluie` | consolidation | affirmations | Code de la route, art. R413-2 et R413-5 |
 | `aff-r-autoroute-cyclo` | socle | affirmations | Code de la route, art. R421-2 |
-| `aff-r-autoroute-aac` | approfondissement | affirmations | Code de la route, art. R413-5 ; service-public.fr F2390 |
+| `aff-r-autoroute-aac` | consolidation | affirmations | Code de la route, art. R413-5 ; service-public.fr F2390 |
 | `aff-r-autoroute-bouchon-detresse` | socle | affirmations | Code de la route, art. R416-18 |
 | `aff-r-peage-reculer` | socle | affirmations | Code de la route, art. R421-6 ; ASFA — Le péage |
 
@@ -812,7 +816,7 @@ Recherche Anki : `objectif::r-tunnel-rail`
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `c111` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c112` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c112` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `g1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `g1a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `g1bis` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -820,62 +824,59 @@ Recherche Anki : `objectif::r-tunnel-rail`
 | `ce2a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce29` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce30a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `l-balises-j10` | approfondissement | faits | IISR 2e partie, art. 28 et 34 |
-| `r-train-distance-arret` | approfondissement | faits | SNCF Réseau — Sécurité aux passages à niveau ; securite-routiere.gouv.fr — Passage à niveau |
-| `r-tunnel-niches` | approfondissement | faits | CETU — Conduire en tunnel |
+| `l-balises-j10` | consolidation | faits | IISR 2e partie, art. 28 et 34 |
+| `r-train-distance-arret` | consolidation | faits | SNCF Réseau — Sécurité aux passages à niveau ; securite-routiere.gouv.fr — Passage à niveau |
+| `r-tunnel-niches` | consolidation | faits | CETU — Conduire en tunnel |
+| `l-feu-pieton-tram` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `r-tunnel-feux-jour` | socle | questions | Code de la route, art. R416-4 et R416-6 |
 | `r-tunnel-distance-arret` | socle | questions | CETU — Conduire en tunnel ; Code de la route, art. R412-12 |
-| `r-tunnel-panne` | approfondissement | questions | CETU — Conduire en tunnel ; securite-routiere.gouv.fr — Les tunnels |
+| `r-tunnel-panne` | consolidation | questions | CETU — Conduire en tunnel ; securite-routiere.gouv.fr — Les tunnels |
 | `r-tunnel-incendie` | socle | questions | CETU — Consignes en cas d'incendie ; securite-routiere.gouv.fr — Les tunnels |
 | `r-pn-feu-rouge-clignotant` | socle | questions | Code de la route, art. R412-30 et R422-3 |
 | `r-pn-engagement` | socle | questions | Code de la route, art. R422-3 ; SNCF Réseau — Sécurité aux passages à niveau |
 | `r-pn-bloque` | socle | questions | SNCF Réseau — Que faire en cas d'immobilisation ; Code de la route, art. R422-3 |
-| `r-pn-sans-barriere` | approfondissement | questions | Code de la route, art. R422-3 et R414-12 ; IISR (G1, A8, J10) |
+| `r-pn-sans-barriere` | consolidation | questions | Code de la route, art. R422-3 et R414-12 ; IISR (G1, A8, J10) |
 | `r-pn-barrieres-ouverture` | socle | questions | Code de la route, art. R422-3 ; SNCF Réseau |
 | `r-tram-priorite` | socle | questions | Code de la route, art. R422-3 et R414-13 |
-| `r-tram-traversee-degager` | approfondissement | questions | Code de la route, art. R422-3 et R417-11 ; coursdecode.com — Les tramways |
-| `l-feu-pieton-tram` | approfondissement | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `aff-r-pn-150m` | approfondissement | affirmations | Sécurité routière — Exemples de nouvelles questions (Q19) ; IISR |
-| `aff-r-pn-feux-rouges-possibles` | approfondissement | affirmations | Sécurité routière — Exemples de nouvelles questions (Q19) ; IISR, 6e partie |
-| `aff-r-pn-barriere-contourner` | approfondissement | affirmations | Code de la route, art. R422-3 ; SNCF Réseau |
-| `aff-r-tunnel-demi-tour` | approfondissement | affirmations | CETU — Conduire en tunnel ; Code de la route, art. R417-10 (arrêt et stationnement interdits en tunnel) |
-| `aff-r-tram-station-pieton` | approfondissement | affirmations | Code de la route, art. R414-13 ; coursdecode.com — Les tramways |
+| `r-tram-traversee-degager` | consolidation | questions | Code de la route, art. R422-3 et R417-11 ; coursdecode.com — Les tramways |
+| `aff-r-pn-150m` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q19) ; IISR |
+| `aff-r-pn-feux-rouges-possibles` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q19) ; IISR, 6e partie |
+| `aff-r-pn-barriere-contourner` | consolidation | affirmations | Code de la route, art. R422-3 ; SNCF Réseau |
+| `aff-r-tunnel-demi-tour` | consolidation | affirmations | CETU — Conduire en tunnel ; Code de la route, art. R417-10 (arrêt et stationnement interdits en tunnel) |
+| `aff-r-tram-station-pieton` | consolidation | affirmations | Code de la route, art. R414-13 ; coursdecode.com — Les tramways |
 
 ## r-travaux — Suivre les indications temporaires
 
 Lire l'état actuel de la route, même sans ouvriers visibles.
 
-28 notes / 28 cartes.
+25 notes / 25 cartes.
 
 Recherche Anki : `objectif::r-travaux`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `a14` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ak2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `ak2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ak3` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ak4` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ak5` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ak14` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ak17` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `ak14` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `ak17` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ak22` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ak30` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ak31` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ak32` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `k2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `ak32` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `k2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `k5a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `k8` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `k10a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `k10b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `kc1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `kd8` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `kd9` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `kc1` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `kd10` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `kd22` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `kd42` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `kr11` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `conf-a14-ak14` | approfondissement | confusions | IISR 1re et 8e parties |
-| `conf-k10a-k10b` | approfondissement | confusions | IISR 8e partie |
+| `conf-a14-ak14` | consolidation | confusions | IISR 1re et 8e parties |
+| `conf-k10a-k10b` | consolidation | confusions | IISR 8e partie |
 | `r-chantier-approche` | socle | questions | IISR, 8e partie ; securite-routiere.gouv.fr — Zones de chantier |
 | `r-chantier-fleche-lumineuse` | socle | questions | IISR, 8e partie ; Ornikar — Flèches de rabattement |
 | `aff-r-chantier-sans-ouvriers` | socle | affirmations | IISR, 8e partie ; Code de la route, art. R411-25 |
@@ -893,40 +894,40 @@ Recherche Anki : `objectif::u-vulnerables`
 | `a13b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a21` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-passage-pietons` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `marq-passage-cyclistes` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `marq-passage-cyclistes` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c20a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c20c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c113` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c115` | socle | reconnaissance | Code de la route, R110-2, R411-3-2 et R412-43-1 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006143859 |
-| `conf-a21-c20c` | approfondissement | confusions | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `conf-a13b-c20a` | approfondissement | confusions | IISR 1re et 5e parties |
+| `conf-a21-c20c` | consolidation | confusions | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
+| `conf-a13b-c20a` | consolidation | confusions | IISR 1re et 5e parties |
 | `u-velo-chiffres` | socle | faits | Code de la route, art. R431-1-1, R431-1-3, R412-34, R431-7 |
-| `u-velo-equipement-chiffres` | approfondissement | faits | Code de la route, art. R313-4 et s. ; securite-routiere.gouv.fr — Équipements obligatoires vélo |
+| `u-velo-equipement-chiffres` | consolidation | faits | Code de la route, art. R313-4 et s. ; securite-routiere.gouv.fr — Équipements obligatoires vélo |
 | `u-pieton-hors-passage` | socle | questions | Code de la route, art. R415-11 et R412-37 |
 | `u-pieton-canne-blanche` | socle | questions | Code de la route, art. R412-6 et R415-11 ; securite-routiere.gouv.fr — Piétons |
-| `u-pieton-hors-agglo-cote` | approfondissement | questions | Code de la route, art. R412-36 et R412-42 |
+| `u-pieton-hors-agglo-cote` | consolidation | questions | Code de la route, art. R412-36 et R412-42 |
 | `u-zone-rencontre-pietons` | socle | questions | Code de la route, art. R110-2 et R415-11 |
 | `u-enfants-sortie-ecole` | socle | questions | Code de la route, art. R413-17 ; arrêté du 2 juillet 1982 (transports d'enfants) |
-| `u-personnes-agees` | approfondissement | questions | Code de la route, art. R415-11 ; ONISR 2025 (bilan définitif) |
-| `u-fauteuil-roulant-chaussee` | approfondissement | questions | Code de la route, art. R412-34, R412-35, R412-36 et R414-4 |
-| `u-cyclistes-de-front` | approfondissement | questions | Code de la route, art. R431-7 et R414-4 |
+| `u-personnes-agees` | consolidation | questions | Code de la route, art. R415-11 ; ONISR 2025 (bilan définitif) |
+| `u-fauteuil-roulant-chaussee` | consolidation | questions | Code de la route, art. R412-34, R412-35, R412-36 et R414-4 |
+| `u-cyclistes-de-front` | consolidation | questions | Code de la route, art. R431-7 et R414-4 |
 | `u-cycliste-tourner-droite` | socle | questions | Code de la route, art. R415-14 (piste cyclable) et R415-13 (voie réservée) |
-| `u-cycliste-bras-gauche` | approfondissement | questions | Code de la route, art. R412-10 et R414-6 ; En Voiture Simone — Les vélos |
+| `u-cycliste-bras-gauche` | consolidation | questions | Code de la route, art. R412-10 et R414-6 ; En Voiture Simone — Les vélos |
 | `u-double-sens-cyclable` | socle | questions | Code de la route, art. R412-28-1 et R110-2 |
-| `aff-u-pieton-telephone` | approfondissement | affirmations | Code de la route, art. R415-11 ; Ornikar — Priorité piéton |
+| `aff-u-pieton-telephone` | consolidation | affirmations | Code de la route, art. R415-11 ; Ornikar — Priorité piéton |
 | `aff-u-pieton-imprudent` | socle | affirmations | Code de la route, art. R412-6 et R412-37 ; securite-routiere.gouv.fr — Réglementation des piétons |
-| `aff-u-pieton-passage-50m` | approfondissement | affirmations | Code de la route, art. R412-37 |
-| `aff-u-place-pmr` | approfondissement | affirmations | Code de la route, art. R417-11 ; service-public.fr F2891 |
-| `aff-u-fauteuil-roulant-pieton` | approfondissement | affirmations | Code de la route, art. R412-34 et R412-35 |
-| `aff-u-car-scolaire-depassement` | approfondissement | affirmations | Code de la route, art. R413-17 III 3° et R414-13 |
-| `aff-u-pieton-nuit-croisement` | approfondissement | affirmations | Code de la route, R413-17 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/ ; R313-3 |
-| `aff-u-velo-bande-obligatoire` | approfondissement | affirmations | Code de la route, art. R431-9 et R412-43-1 ; IISR (B22a, C113) |
-| `aff-u-velo-front-nuit` | approfondissement | affirmations | Code de la route, art. R431-7 (décret n° 2024-1074) |
-| `aff-u-velo-enfant-trottoir` | approfondissement | affirmations | Code de la route, art. R412-34 I bis |
-| `aff-u-velo-casque-enfant-adulte` | approfondissement | affirmations | Code de la route, art. R431-1-3 |
-| `aff-u-velo-ecouteurs` | approfondissement | affirmations | Code de la route, art. R412-6-1 ; securite-routiere.gouv.fr — Règles de circulation pour les cyclistes |
-| `aff-u-velo-double-sens-zone30` | approfondissement | affirmations | Code de la route, art. R412-28-1 et R110-2 |
-| `aff-u-velo-m12` | socle | affirmations | IISR (panonceau M12) ; Cerema — Doctrine cédez-le-passage cycliste au feu |
+| `aff-u-pieton-passage-50m` | consolidation | affirmations | Code de la route, art. R412-37 |
+| `aff-u-place-pmr` | consolidation | affirmations | Code de la route, art. R417-11 ; service-public.fr F2891 |
+| `aff-u-fauteuil-roulant-pieton` | consolidation | affirmations | Code de la route, art. R412-34 et R412-35 |
+| `aff-u-car-scolaire-depassement` | consolidation | affirmations | Code de la route, art. R413-17 III 3° et R414-13 |
+| `aff-u-pieton-nuit-croisement` | consolidation | affirmations | Code de la route, R413-17 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/ ; R313-3 |
+| `aff-u-velo-bande-obligatoire` | consolidation | affirmations | Code de la route, art. R431-9 et R412-43-1 ; IISR (B22a, C113) |
+| `aff-u-velo-front-nuit` | consolidation | affirmations | Code de la route, art. R431-7 (décret n° 2024-1074) |
+| `aff-u-velo-enfant-trottoir` | consolidation | affirmations | Code de la route, art. R412-34 I bis |
+| `aff-u-velo-casque-enfant-adulte` | consolidation | affirmations | Code de la route, art. R431-1-3 |
+| `aff-u-velo-ecouteurs` | consolidation | affirmations | Code de la route, art. R412-6-1 ; securite-routiere.gouv.fr — Règles de circulation pour les cyclistes |
+| `aff-u-velo-double-sens-zone30` | consolidation | affirmations | Code de la route, art. R412-28-1 et R110-2 |
+| `aff-u-velo-m12` | consolidation | affirmations | IISR (panonceau M12) ; Cerema — Doctrine cédez-le-passage cycliste au feu |
 | `aff-u-velo-ecart-portieres` | socle | affirmations | Code de la route, art. R412-9 et R414-4 |
 | `aff-u-pieton-engage-lent` | socle | affirmations | Code de la route, art. R415-11 |
 
@@ -942,46 +943,47 @@ Recherche Anki : `objectif::u-micromobilite`
 |---|---|---|---|
 | `u-edpm-chiffres` | socle | faits | Code de la route, art. R412-43-1 à R412-43-3 ; décret n° 2023-848 |
 | `u-interfiles-chiffres` | socle | faits | Code de la route, R412-11-3 — https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050963583/ |
-| `u-moto-equipements-chiffres` | approfondissement | faits | Code de la route, art. R431-1, R431-1-2, R416-17, R416-19 |
+| `u-moto-equipements-chiffres` | consolidation | faits | Code de la route, art. R431-1, R431-1-2, R416-17, R416-19 |
 | `u-edpm-ou-circuler` | socle | questions | Code de la route, art. R412-43-1 ; service-public.fr F308 |
-| `u-edpm-pieton-ou-vehicule` | approfondissement | questions | Code de la route, art. R311-1, R412-34 et R415-5 |
+| `u-edpm-pieton-ou-vehicule` | consolidation | questions | Code de la route, art. R311-1, R412-34 et R415-5 |
 | `u-moto-vulnerabilite` | socle | questions | securite-routiere.gouv.fr — Être visible à moto ; Code de la route, art. R415-4 |
-| `u-interfiles` | approfondissement | questions | Code de la route, art. R412-11-3 (décret n° 2025-33 du 9 janvier 2025) |
-| `u-moto-ecart-chaussee` | approfondissement | questions | Code en Poche — Les motos ; Code de la route, art. R414-4 |
+| `u-interfiles` | consolidation | questions | Code de la route, art. R412-11-3 (décret n° 2025-33 du 9 janvier 2025) |
+| `u-moto-ecart-chaussee` | consolidation | questions | Code en Poche — Les motos ; Code de la route, art. R414-4 |
 | `u-edpm-hors-agglo` | socle | questions | Code de la route, art. R412-43-1 II et III ; service-public.fr F308 |
 | `u-edpm-regle-locale` | socle | questions | Service Public — https://www.service-public.gouv.fr/particuliers/actualites/A19037 |
-| `aff-u-edpm-trottoir` | approfondissement | affirmations | Code de la route, art. R412-43-1 et R412-34 ; service-public.fr F308 |
+| `aff-u-edpm-trottoir` | consolidation | affirmations | Code de la route, art. R412-43-1 et R412-34 ; service-public.fr F308 |
 | `aff-u-edpm-pousse-main` | socle | affirmations | Code de la route, art. R412-34 II 2° |
 | `aff-u-edpm-gilet-agglo` | socle | affirmations | Code de la route, art. R412-43-2 et R431-1-1 ; service-public.fr F308 |
-| `aff-u-interfiles-vitesse` | approfondissement | affirmations | Code de la route, art. R412-11-3 (décret n° 2025-33) |
+| `aff-u-interfiles-vitesse` | consolidation | affirmations | Code de la route, art. R412-11-3 (décret n° 2025-33) |
 | `aff-u-interfiles-files-gauche` | socle | affirmations | Code de la route, art. R412-11-3 (décret n° 2025-33) |
-| `aff-u-interfiles-panneau-autos` | approfondissement | affirmations | Sécurité routière — Exemples de nouvelles questions (Q16) ; Code de la route, art. R412-11-3 |
-| `aff-u-moto-vitesse-approche` | approfondissement | affirmations | securite-routiere.gouv.fr — Être visible à moto |
-| `aff-u-moto-feux-jour` | approfondissement | affirmations | Code de la route, art. R416-17 ; securite-routiere.gouv.fr — Être visible à moto |
+| `aff-u-interfiles-panneau-autos` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q16) ; Code de la route, art. R412-11-3 |
+| `aff-u-moto-vitesse-approche` | consolidation | affirmations | securite-routiere.gouv.fr — Être visible à moto |
+| `aff-u-moto-feux-jour` | consolidation | affirmations | Code de la route, art. R416-17 ; securite-routiere.gouv.fr — Être visible à moto |
 
 ## u-gabarit — Rester visible et hors des trajectoires des véhicules lourds
 
 La présence dans le rétroviseur ne prouve pas que l'autre a regardé.
 
-14 notes / 14 cartes.
+15 notes / 16 cartes.
 
 Recherche Anki : `objectif::u-gabarit`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `c20c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `u-pl-angles-morts-chiffres` | approfondissement | faits | securite-routiere.gouv.fr — Angles morts ; Code de la route, art. R313-32-1 et R412-12 |
+| `u-pl-angles-morts-chiffres` | consolidation | faits | securite-routiere.gouv.fr — Angles morts ; Code de la route, art. R313-32-1 et R412-12 |
+| `u-pl-vitesses-chiffres` | consolidation | faits | Code de la route, art. R413-8 et R413-8-1 |
 | `l-bus-quitte-arret` | socle | questions | Code de la route, art. R412-11 |
 | `u-pl-angles-morts` | socle | questions | securite-routiere.gouv.fr — Vrai ou faux : angles morts |
 | `u-pl-tourne-droite` | socle | questions | Ornikar — Transports de marchandises ; securite-routiere.gouv.fr — Angles morts |
 | `u-pl-giratoire-deport` | socle | questions | securite-routiere.gouv.fr — Angles morts ; Ornikar — Transports de marchandises |
 | `u-pl-depasser-suivre` | socle | questions | Code de la route, art. R414-4 et R412-12 ; coursdecode — Les poids lourds |
 | `u-matieres-dangereuses` | socle | questions | Accord ADR ; IISR (B18) |
-| `u-tram-depasser` | approfondissement | questions | Code de la route, art. R414-13 et R414-6 |
-| `u-voie-bus` | approfondissement | questions | Code de la route, art. R412-7 et R417-11 |
-| `u-pl-insertion-autoroute` | approfondissement | questions | Code de la route, art. R421-3 ; coursdecode — Les poids lourds |
+| `u-tram-depasser` | consolidation | questions | Code de la route, art. R414-13 et R414-6 |
+| `u-voie-bus` | consolidation | questions | Code de la route, art. R412-7 et R417-11 |
+| `u-pl-insertion-autoroute` | consolidation | questions | Code de la route, art. R421-3 ; coursdecode — Les poids lourds |
 | `aff-u-pl-retroviseur` | socle | affirmations | securite-routiere.gouv.fr — Vrai ou faux : les angles morts |
-| `aff-u-pl-voie-gauche` | approfondissement | affirmations | Code de la route, art. R412-25 |
+| `aff-u-pl-voie-gauche` | consolidation | affirmations | Code de la route, art. R412-25 |
 | `aff-u-bus-hors-agglo` | socle | affirmations | Code de la route, art. R412-11 |
 
 ## u-intervention — Faciliter les secours sans créer de danger
@@ -999,8 +1001,8 @@ Recherche Anki : `objectif::u-intervention`
 | `u-gyrophare-orange` | socle | questions | Code de la route, art. R313-27 et R313-28 |
 | `u-corridor-securite` | socle | questions | Code de la route, art. R412-11-1 et R413-17 |
 | `aff-u-prioritaire-sans-avertisseur` | socle | affirmations | Code de la route, art. R415-12 et R313-27 |
-| `aff-u-prioritaire-feu-rouge-radar` | approfondissement | affirmations | Code de la route, R415-12 et R411-28 |
-| `aff-u-prioritaire-route-prioritaire` | approfondissement | affirmations | Code de la route, art. R415-12 |
+| `aff-u-prioritaire-feu-rouge-radar` | consolidation | affirmations | Code de la route, R415-12 et R411-28 |
+| `aff-u-prioritaire-route-prioritaire` | consolidation | affirmations | Code de la route, art. R415-12 |
 
 ## p-installer — Régler le poste avant de partir
 
@@ -1013,27 +1015,27 @@ Recherche Anki : `objectif::p-installer`
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `p-verif-tour-vehicule` | socle | questions | REMC (compétence 1) ; securite-routiere.gouv.fr — Bien préparer son trajet |
-| `p-verif-chargement-important` | approfondissement | questions | Sécurité routière — Exemples de nouvelles questions (Q1) ; notices constructeurs |
-| `p-verif-pare-brise` | approfondissement | questions | Code de la route, art. R412-6 ; securite-routiere.gouv.fr — Conduire en hiver |
+| `p-verif-chargement-important` | consolidation | questions | Sécurité routière — Exemples de nouvelles questions (Q1) ; notices constructeurs |
+| `p-verif-pare-brise` | consolidation | questions | Code de la route, art. R412-6 ; securite-routiere.gouv.fr — Conduire en hiver |
 | `p-verif-gps-passagers` | socle | questions | securite-routiere.gouv.fr — Bien préparer son trajet ; REMC |
 | `p-siege-reglage` | socle | questions | REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite |
-| `p-dossier-reglage` | approfondissement | questions | En Voiture Simone — S'installer ; REMC |
+| `p-dossier-reglage` | consolidation | questions | En Voiture Simone — S'installer ; REMC |
 | `p-appuie-tete` | socle | questions | securite-routiere.gouv.fr — Bien régler son appuie-tête ; Euro NCAP |
 | `p-retro-interieur` | socle | questions | REMC ; Codes Rousseau — Les rétroviseurs |
 | `p-retro-exterieurs` | socle | questions | REMC ; Codes Rousseau — Les rétroviseurs |
 | `p-ceinture-position` | socle | questions | securite-routiere.gouv.fr — Comment positionner la ceinture de sécurité |
-| `p-volant-mains` | approfondissement | questions | REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite |
+| `p-volant-mains` | consolidation | questions | REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite |
 | `p-ordre-installation` | socle | questions | REMC ; Code en Poche — Prendre et quitter son véhicule ; En Voiture Simone — S'installer |
-| `p-demarrage-point-mort` | approfondissement | questions | Code en Poche — Prendre et quitter son véhicule ; REMC |
-| `p-vehicule-emprunte-equipements` | approfondissement | questions | Code de la route, art. R416-19 |
-| `aff-p-reglage-en-roulant` | approfondissement | affirmations | Code en Poche — Prendre et quitter son véhicule ; REMC |
+| `p-demarrage-point-mort` | consolidation | questions | Code en Poche — Prendre et quitter son véhicule ; REMC |
+| `p-vehicule-emprunte-equipements` | consolidation | questions | Code de la route, art. R416-19 |
+| `aff-p-reglage-en-roulant` | consolidation | affirmations | Code en Poche — Prendre et quitter son véhicule ; REMC |
 | `aff-p-retro-interieur-nuit` | socle | affirmations | En Voiture Simone — S'installer ; Codes Rousseau — Les rétroviseurs |
-| `aff-p-ceinture-sous-le-bras` | approfondissement | affirmations | securite-routiere.gouv.fr — Comment positionner la ceinture de sécurité |
-| `aff-p-ceinture-blouson` | approfondissement | affirmations | securite-routiere.gouv.fr — La ceinture de sécurité |
-| `aff-p-volant-bras-croises` | approfondissement | affirmations | REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite |
-| `aff-p-pied-gauche-frein` | approfondissement | affirmations | En Voiture Simone — S'installer au poste de conduite |
-| `aff-p-neige-toit` | approfondissement | affirmations | Cours de code — Entrer et sortir de son véhicule ; securite-routiere.gouv.fr — Conduire en hiver |
-| `aff-p-entrer-face-circulation` | approfondissement | affirmations | Cours de code — Entrer et sortir de son véhicule en sécurité |
+| `aff-p-ceinture-sous-le-bras` | consolidation | affirmations | securite-routiere.gouv.fr — Comment positionner la ceinture de sécurité |
+| `aff-p-ceinture-blouson` | consolidation | affirmations | securite-routiere.gouv.fr — La ceinture de sécurité |
+| `aff-p-volant-bras-croises` | consolidation | affirmations | REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite |
+| `aff-p-pied-gauche-frein` | consolidation | affirmations | En Voiture Simone — S'installer au poste de conduite |
+| `aff-p-neige-toit` | consolidation | affirmations | Cours de code — Entrer et sortir de son véhicule ; securite-routiere.gouv.fr — Conduire en hiver |
+| `aff-p-entrer-face-circulation` | consolidation | affirmations | Cours de code — Entrer et sortir de son véhicule en sécurité |
 
 ## p-quitter — Immobiliser et sortir sans exposer les autres
 
@@ -1046,23 +1048,23 @@ Recherche Anki : `objectif::p-quitter`
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `p-quitter-checklist` | socle | questions | Code de la route, art. R417-8 (précautions avant de s'éloigner du véhicule) |
-| `p-quitter-objets` | approfondissement | questions | En Voiture Simone — Précautions pour quitter son véhicule ; securite-routiere.gouv.fr |
+| `p-quitter-objets` | consolidation | questions | En Voiture Simone — Précautions pour quitter son véhicule ; securite-routiere.gouv.fr |
 | `p-pente-roues` | socle | questions | securite-routiere.gouv.fr ; Codes Rousseau — Stationner en pente |
 | `p-pente-vitesse` | socle | questions | Codes Rousseau — Stationner en pente ; En Voiture Simone — Quitter son véhicule |
 | `p-ouvrir-portiere` | socle | questions | Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Portière gauche, main droite |
 | `p-passagers-descendre` | socle | questions | Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Enfants en voiture |
 | `p-enfants-seuls` | socle | questions | securite-routiere.gouv.fr — Enfants en voiture |
 | `p-quitter-stationnement-surveiller` | socle | questions | Sécurité routière — Exemples de nouvelles questions (Q14) ; Code de la route, art. R412-10 |
-| `aff-p-quitter-documents` | approfondissement | affirmations | En Voiture Simone — Précautions pour quitter son véhicule |
-| `aff-p-sortie-stationnement-priorite` | approfondissement | affirmations | Code de la route, art. R412-10 ; Sécurité routière — Exemples de nouvelles questions (Q14) |
-| `aff-p-portiere-responsabilite` | approfondissement | affirmations | Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Portière gauche, main droite |
+| `aff-p-quitter-documents` | consolidation | affirmations | En Voiture Simone — Précautions pour quitter son véhicule |
+| `aff-p-sortie-stationnement-priorite` | consolidation | affirmations | Code de la route, art. R412-10 ; Sécurité routière — Exemples de nouvelles questions (Q14) |
+| `aff-p-portiere-responsabilite` | consolidation | affirmations | Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Portière gauche, main droite |
 | `aff-p-boite-auto-position-p` | socle | affirmations | En Voiture Simone — Précautions pour quitter son véhicule ; Codes Rousseau |
 
 ## m-alertes — Identifier un voyant et choisir la réaction adaptée
 
 Le symbole et les symptômes décident, pas la couleur seule.
 
-34 notes / 34 cartes.
+36 notes / 36 cartes.
 
 Recherche Anki : `objectif::m-alertes`
 
@@ -1075,33 +1077,35 @@ Recherche Anki : `objectif::m-alertes`
 | `voyant-frein-stationnement` | socle | reconnaissance | ISO 2575 ; Codes Rousseau — Les voyants |
 | `voyant-ceinture` | socle | reconnaissance | ISO 2575 ; Code de la route, art. R412-1 |
 | `voyant-airbag` | socle | reconnaissance | Renault, témoins lumineux (exemple constructeur ; consulter la notice du véhicule) — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux |
-| `voyant-direction` | approfondissement | reconnaissance | ISO 2575 ; notices constructeurs |
-| `voyant-detresse` | approfondissement | reconnaissance | Code de la route, art. R416-18 ; ISO 2575 |
+| `voyant-direction` | consolidation | reconnaissance | ISO 2575 ; notices constructeurs |
+| `voyant-detresse` | consolidation | reconnaissance | Code de la route, art. R416-18 ; ISO 2575 |
 | `voyant-moteur` | socle | reconnaissance | ISO 2575 ; Codes Rousseau — Les voyants |
 | `voyant-abs` | socle | reconnaissance | Sécurité routière — Exemples de nouvelles questions (Q5) ; ISO 2575 |
 | `voyant-esp` | socle | reconnaissance | ISO 2575 ; Codes Rousseau — Les aides à la conduite |
 | `voyant-pression-pneus` | socle | reconnaissance | ISO 2575 ; règlement (CE) 661/2009 |
-| `voyant-prechauffage` | approfondissement | reconnaissance | ISO 2575 ; Codes Rousseau — Les voyants |
+| `voyant-prechauffage` | consolidation | reconnaissance | ISO 2575 ; Codes Rousseau — Les voyants |
 | `voyant-brouillard-arriere` | socle | reconnaissance | Code de la route, art. R416-7 ; ISO 2575 |
-| `voyant-plaquettes` | approfondissement | reconnaissance | ISO 2575 ; Codes Rousseau — Les voyants |
-| `voyant-fap` | approfondissement | reconnaissance | Notices constructeurs ; Codes Rousseau |
+| `voyant-plaquettes` | consolidation | reconnaissance | ISO 2575 ; Codes Rousseau — Les voyants |
+| `voyant-fap` | consolidation | reconnaissance | Notices constructeurs ; Codes Rousseau |
 | `voyant-position` | socle | reconnaissance | Code de la route, art. R416-1 et s. ; ISO 2575 |
 | `voyant-croisement` | socle | reconnaissance | Code de la route, art. R416-4 et s. ; ISO 2575 |
 | `voyant-route` | socle | reconnaissance | Code de la route, art. R416-5 et s. ; ISO 2575 |
 | `voyant-brouillard-avant` | socle | reconnaissance | Code de la route, art. R416-7 ; ISO 2575 |
-| `voyant-feux-jour` | approfondissement | reconnaissance | Règlement (CE) 661/2009 ; ISO 2575 |
-| `voyant-regulateur` | approfondissement | reconnaissance | ISO 2575 ; Codes Rousseau — Les aides à la conduite |
-| `conf-voyant-frein-stationnement` | approfondissement | confusions | ISO 2575 |
-| `conf-voyant-brouillard-av-ar` | approfondissement | confusions | ISO 2575 ; Code de la route, art. R416-7 |
-| `conf-voyant-croisement-route` | approfondissement | confusions | Code de la route, R416-4 à R416-7 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159603 |
+| `voyant-feux-jour` | consolidation | reconnaissance | Règlement (CE) 661/2009 ; ISO 2575 |
+| `voyant-regulateur` | consolidation | reconnaissance | ISO 2575 ; Codes Rousseau — Les aides à la conduite |
+| `conf-voyant-frein-stationnement` | consolidation | confusions | ISO 2575 |
+| `conf-voyant-brouillard-av-ar` | consolidation | confusions | ISO 2575 ; Code de la route, art. R416-7 |
+| `conf-voyant-croisement-route` | consolidation | confusions | Code de la route, R416-4 à R416-7 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159603 |
 | `m-voyants-couleurs` | socle | questions | Codes Rousseau — Les voyants ; Ornikar — Voyants lumineux |
 | `m-visuel-batterie-contact` | socle | questions | Notice Renault — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux |
 | `m-visuel-batterie-roulant` | socle | questions | Notice Renault — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux |
-| `aff-m-voyant-orange-arret` | approfondissement | affirmations | Ornikar — Voyants lumineux ; En Voiture Simone — Tableau de bord |
-| `aff-m-autotest-voyants` | approfondissement | affirmations | lepermislibre — Voyants de la voiture |
-| `aff-m-voyant-abs-blocage` | approfondissement | affirmations | Sécurité routière — Exemples de nouvelles questions (Q5) |
+| `aff-m-voyant-orange-arret` | consolidation | affirmations | Ornikar — Voyants lumineux ; En Voiture Simone — Tableau de bord |
+| `aff-m-autotest-voyants` | consolidation | affirmations | lepermislibre — Voyants de la voiture |
+| `aff-m-voyant-abs-blocage` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q5) |
 | `aff-m-voyant-abs-arret` | socle | affirmations | Sécurité routière — Exemples de nouvelles questions (Q5) |
-| `aff-m-tpms-orange` | approfondissement | affirmations | Notices constructeurs (Renault, témoins lumineux) ; REMC |
+| `aff-m-tpms-orange` | consolidation | affirmations | Notices constructeurs (Renault, témoins lumineux) ; REMC |
+| `aff-m-voyant-abs-distance` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q5) |
+| `aff-m-clignotant-rapide` | consolidation | affirmations | Notices constructeurs ; REMC |
 
 ## m-entretien — Vérifier pneus, liquides et éclairage
 
@@ -1114,32 +1118,32 @@ Recherche Anki : `objectif::m-entretien`
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `m-pneus-chiffres` | socle | faits | R314-1 ; Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus |
-| `m-galette-chiffres` | approfondissement | faits | Code de la route, art. R413-7 et R314-3 ; Stych |
-| `m-feux-portees` | approfondissement | faits | Code de la route, art. R313-2 à R313-4 |
-| `m-pneus-pression-quand` | approfondissement | questions | Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus |
-| `m-pneus-usure-1-6` | approfondissement | questions | Code de la route, art. R314-1 ; arrêté du 18 juillet 2019 |
+| `m-galette-chiffres` | consolidation | faits | Code de la route, art. R413-7 et R314-3 ; Stych |
+| `m-feux-portees` | consolidation | faits | Code de la route, art. R313-2 à R313-4 |
+| `m-pneus-pression-quand` | consolidation | questions | Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus |
+| `m-pneus-usure-1-6` | consolidation | questions | Code de la route, art. R314-1 ; arrêté du 18 juillet 2019 |
 | `m-niveau-huile` | socle | questions | Ornikar — Huile moteur ; lepermislibre — Contrôler les niveaux |
 | `m-liquide-refroidissement` | socle | questions | Ornikar — Liquide de refroidissement |
 | `m-liquide-frein` | socle | questions | Ornikar — Liquide de frein ; lepermislibre |
-| `m-plaquettes-usure` | approfondissement | questions | Ornikar — Plaquettes et amortisseurs ; Stych — Pannes et dysfonctionnements |
-| `m-batterie-cables` | approfondissement | questions | APRR — Utiliser des câbles de démarrage ; lepermislibre |
-| `m-carburants-etiquettes` | approfondissement | questions | Norme EN 16942 (étiquetage 2018) ; TotalEnergies ; Ornikar |
+| `m-plaquettes-usure` | consolidation | questions | Ornikar — Plaquettes et amortisseurs ; Stych — Pannes et dysfonctionnements |
+| `m-batterie-cables` | consolidation | questions | APRR — Utiliser des câbles de démarrage ; lepermislibre |
+| `m-carburants-etiquettes` | consolidation | questions | Norme EN 16942 (étiquetage 2018) ; TotalEnergies ; Ornikar |
 | `m-erreur-carburant` | socle | questions | TotalEnergies — Erreur de carburant ; Ornikar — Carburants |
-| `m-boite-auto-positions` | approfondissement | questions | Stych — La boîte automatique ; service-public.fr F2828 |
+| `m-boite-auto-positions` | consolidation | questions | Stych — La boîte automatique ; service-public.fr F2828 |
 | `m-feux-jour-limite` | socle | questions | Stych — Systèmes d'éclairage ; Code de la route, art. R416-6 |
 | `m-feux-reglage-hauteur` | socle | questions | Sécurité routière — Exemples de nouvelles questions (Q1) ; Ornikar — Réglage des feux |
-| `m-appel-phares` | approfondissement | questions | Code de la route, art. R416-1 et R416-2 ; Ornikar — L'appel de phares |
+| `m-appel-phares` | consolidation | questions | Code de la route, art. R416-1 et R416-2 ; Ornikar — L'appel de phares |
 | `m-allumage-automatique` | socle | questions | securite-routiere.gouv.fr — ADAS ; Stych — Systèmes d'éclairage |
 | `m-pression-etiquette` | socle | questions | Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus |
-| `aff-m-pression-chaud` | approfondissement | affirmations | securite-routiere.gouv.fr — Pneus ; Michelin — Vérifier la pression |
-| `aff-m-chargement-pression` | approfondissement | affirmations | Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus |
-| `aff-m-surgonflage` | approfondissement | affirmations | Michelin — Usure des pneus ; Ornikar — Sous-gonflage |
+| `aff-m-pression-chaud` | consolidation | affirmations | securite-routiere.gouv.fr — Pneus ; Michelin — Vérifier la pression |
+| `aff-m-chargement-pression` | consolidation | affirmations | Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus |
+| `aff-m-surgonflage` | consolidation | affirmations | Michelin — Usure des pneus ; Ornikar — Sous-gonflage |
 | `aff-m-pneus-neufs-arriere` | socle | affirmations | Michelin — Mixage des pneus ; Ornikar — Même essieu |
-| `aff-m-pneu-age` | approfondissement | affirmations | Allopneus — Durée de vie d'un pneu ; Ornikar — Vérifier le flanc |
-| `aff-m-4-saisons-3pmsf` | approfondissement | affirmations | service-public.fr F19459 ; Code de la route, art. D314-8 |
-| `aff-m-refroidissement-bouchon` | approfondissement | affirmations | Ornikar — Liquide de refroidissement |
-| `aff-m-boite-auto-p-arret` | approfondissement | affirmations | Stych — La boîte automatique ; service-public.fr F2828 |
-| `aff-m-feu-grille-nuit` | approfondissement | affirmations | Code de la route, art. R313-2 et s. ; service-public.fr F19459 |
+| `aff-m-pneu-age` | consolidation | affirmations | Allopneus — Durée de vie d'un pneu ; Ornikar — Vérifier le flanc |
+| `aff-m-4-saisons-3pmsf` | consolidation | affirmations | service-public.fr F19459 ; Code de la route, art. D314-8 |
+| `aff-m-refroidissement-bouchon` | consolidation | affirmations | Ornikar — Liquide de refroidissement |
+| `aff-m-boite-auto-p-arret` | consolidation | affirmations | Stych — La boîte automatique ; service-public.fr F2828 |
+| `aff-m-feu-grille-nuit` | consolidation | affirmations | Code de la route, art. R313-2 et s. ; service-public.fr F19459 |
 
 ## m-aides — Utiliser les aides sans déléguer sa vigilance
 
@@ -1153,23 +1157,23 @@ Recherche Anki : `objectif::m-aides`
 |---|---|---|---|
 | `m-freinage-urgence-abs` | socle | questions | securite-routiere.gouv.fr — Dépliant vitesse ; Ornikar — ABS |
 | `s-esp-fonction` | socle | questions | securite-routiere.gouv.fr — Les aides à la conduite ; règlement (CE) 661/2009 |
-| `s-afu-fonction` | approfondissement | questions | securite-routiere.gouv.fr — Les aides à la conduite |
+| `s-afu-fonction` | consolidation | questions | securite-routiere.gouv.fr — Les aides à la conduite |
 | `s-regulateur-limiteur` | socle | questions | securite-routiere.gouv.fr — Les aides à la conduite ; Codes Rousseau |
 | `s-ecall` | socle | questions | Règlement (UE) 2015/758 ; securite-routiere.gouv.fr |
 | `m-adas-responsabilite` | socle | questions | securite-routiere.gouv.fr — ADAS |
-| `m-ldw-lka` | approfondissement | questions | securite-routiere.gouv.fr — ADAS ; règlement (UE) 2019/2144 |
-| `m-conduite-automatisee` | approfondissement | questions | Décret n° 2021-873 ; securite-routiere.gouv.fr — ADAS |
+| `m-ldw-lka` | consolidation | questions | securite-routiere.gouv.fr — ADAS ; règlement (UE) 2019/2144 |
+| `m-conduite-automatisee` | consolidation | questions | Décret n° 2021-873 ; securite-routiere.gouv.fr — ADAS |
 | `m-afu-aeb` | socle | questions | CNSR, Comité des experts, aides à la conduite — https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf |
-| `aff-m-abs-direction` | approfondissement | affirmations | Stych — Aides à la conduite ; Ornikar — ABS |
-| `aff-m-frein-main-4-roues` | approfondissement | affirmations | Ornikar — Frein à main ; Stych — Pannes |
+| `aff-m-abs-direction` | consolidation | affirmations | Stych — Aides à la conduite ; Ornikar — ABS |
+| `aff-m-frein-main-4-roues` | consolidation | affirmations | Ornikar — Frein à main ; Stych — Pannes |
 | `aff-m-stationnement-arriere` | socle | affirmations | Sécurité routière — Exemples de nouvelles questions (Q8) ; Code de la route, art. R412-6-3 |
 | `aff-m-regulateur-obstacle` | socle | affirmations | Stych — Aides à la conduite ; Ornikar — Limiteur et régulateur |
-| `aff-m-regulateur-conditions` | approfondissement | affirmations | Stych — Aides à la conduite ; Ornikar — Limiteur et régulateur |
+| `aff-m-regulateur-conditions` | consolidation | affirmations | Stych — Aides à la conduite ; Ornikar — Limiteur et régulateur |
 | `aff-m-limiteur-descente` | socle | affirmations | Ornikar — Limiteur et régulateur ; Stych — Aides à la conduite |
-| `aff-m-angle-mort-moto` | approfondissement | affirmations | securite-routiere.gouv.fr — ADAS ; Stych — Nouvelles aides à la conduite |
-| `aff-m-detecteur-fatigue` | approfondissement | affirmations | securite-routiere.gouv.fr — Les aides à la conduite (ADAS), comité des experts du CNSR, 2024 |
-| `aff-m-isa-panneaux` | approfondissement | affirmations | securite-routiere.gouv.fr — Les aides à la conduite (ADAS) ; règlement (UE) 2019/2144 (GSR2) |
-| `aff-m-regulateur-adaptatif` | approfondissement | affirmations | CNSR, Comité des experts — Les aides à la conduite (ADAS), 2024 |
+| `aff-m-angle-mort-moto` | consolidation | affirmations | securite-routiere.gouv.fr — ADAS ; Stych — Nouvelles aides à la conduite |
+| `aff-m-detecteur-fatigue` | consolidation | affirmations | securite-routiere.gouv.fr — Les aides à la conduite (ADAS), comité des experts du CNSR, 2024 |
+| `aff-m-isa-panneaux` | consolidation | affirmations | securite-routiere.gouv.fr — Les aides à la conduite (ADAS) ; règlement (UE) 2019/2144 (GSR2) |
+| `aff-m-regulateur-adaptatif` | consolidation | affirmations | CNSR, Comité des experts — Les aides à la conduite (ADAS), 2024 |
 | `aff-m-camera-recul` | socle | affirmations | CNSR, Comité des experts — Les aides à la conduite (ADAS), 2024 |
 
 ## m-panne — Réagir à une panne sans aggraver le risque
@@ -1185,15 +1189,15 @@ Recherche Anki : `objectif::m-panne`
 | `m-panne-freins` | socle | questions | Stych — Pannes ; En Voiture Simone — Voies de détresse |
 | `m-panne-procedure-route` | socle | questions | Code de la route, art. R416-19 ; securite-routiere.gouv.fr — Véhicule en panne |
 | `m-changer-roue-securite` | socle | questions | Stych — Dépannages ; Code en Poche — Changer une roue |
-| `m-changer-roue-ecrous` | approfondissement | questions | Stych — Dépannages ; Code en Poche — Changer une roue |
+| `m-changer-roue-ecrous` | consolidation | questions | Stych — Dépannages ; Code en Poche — Changer une roue |
 | `m-crevaison-eclatement` | socle | questions | Stych — Dépannages |
-| `m-remorquage` | approfondissement | questions | lepermislibre — Remorquer un véhicule en panne ; securite-routiere.gouv.fr — Véhicule en panne |
+| `m-remorquage` | consolidation | questions | lepermislibre — Remorquer un véhicule en panne ; securite-routiere.gouv.fr — Véhicule en panne |
 
 ## s-retenir — Attacher chaque occupant et choisir le siège enfant
 
 Comprendre ceinture, airbag et responsabilité, pas seulement l'âge.
 
-25 notes / 27 cartes.
+27 notes / 29 cartes.
 
 Recherche Anki : `objectif::s-retenir`
 
@@ -1201,74 +1205,77 @@ Recherche Anki : `objectif::s-retenir`
 |---|---|---|---|
 | `s-enfant-chiffres` | socle | faits | Code de la route, art. R412-2 et R412-3 ; règlement ONU R129 |
 | `s-ceinture-obligation` | socle | questions | Code de la route, art. R412-1 et R412-2 |
-| `s-ceinture-50-kmh` | approfondissement | questions | securite-routiere.gouv.fr — La ceinture de sécurité |
+| `s-ceinture-50-kmh` | consolidation | questions | securite-routiere.gouv.fr — La ceinture de sécurité |
 | `s-femme-enceinte` | socle | questions | securite-routiere.gouv.fr — La ceinture de sécurité |
-| `s-airbag-distance` | approfondissement | questions | securite-routiere.gouv.fr — S'installer au poste de conduite ; constructeurs |
+| `s-airbag-distance` | consolidation | questions | securite-routiere.gouv.fr — S'installer au poste de conduite ; constructeurs |
 | `s-animaux` | socle | questions | Code de la route, art. R412-6 ; securite-routiere.gouv.fr |
 | `s-surnombre` | socle | questions | Code de la route, art. R412-1-1 ; Stych — Installation des passagers |
-| `s-enfant-moins-10-ans` | approfondissement | questions | Code de la route, art. R412-2 et R412-3 ; service-public.fr — Transport d'enfants en voiture |
+| `s-enfant-moins-10-ans` | consolidation | questions | Code de la route, art. R412-2 et R412-3 ; service-public.fr — Transport d'enfants en voiture |
 | `s-siege-dos-route` | socle | questions | Code de la route, art. R412-3 ; règlement ONU R129 (i-Size) ; securite-routiere.gouv.fr — Enfants en voiture |
 | `s-groupes-sieges` | socle | questions | securite-routiere.gouv.fr — Transporter un enfant en voiture ; règlements ONU R44 et R129 |
-| `s-securite-enfant-portieres` | approfondissement | questions | securite-routiere.gouv.fr — Enfants en voiture |
+| `s-securite-enfant-portieres` | consolidation | questions | securite-routiere.gouv.fr — Enfants en voiture |
 | `s-securite-active-passive` | socle | questions | securite-routiere.gouv.fr — Équipements de sécurité ; Euro NCAP |
 | `aff-s-passagere-arriere-danger` | socle | affirmations | Sécurité routière — Exemples de nouvelles questions (Q12) ; Dépliant ceinture 2022 |
-| `aff-s-ceinture-majeur-amende` | approfondissement | affirmations | Code de la route, art. R412-1 et R412-2 ; securite-routiere.gouv.fr — Port de la ceinture |
-| `aff-s-airbag-remplace-ceinture` | approfondissement | affirmations | securite-routiere.gouv.fr — Airbags ; Code de la route, art. R412-1 |
-| `aff-s-appuie-tete-securite` | approfondissement | affirmations | Ornikar — Appuie-tête ; Stych — Installation au poste de conduite |
+| `aff-s-ceinture-majeur-amende` | consolidation | affirmations | Code de la route, art. R412-1 et R412-2 ; securite-routiere.gouv.fr — Port de la ceinture |
+| `aff-s-airbag-remplace-ceinture` | consolidation | affirmations | securite-routiere.gouv.fr — Airbags ; Code de la route, art. R412-1 |
+| `aff-s-appuie-tete-securite` | consolidation | affirmations | Ornikar — Appuie-tête ; Stych — Installation au poste de conduite |
 | `aff-s-airbag-pieds` | socle | affirmations | securite-routiere.gouv.fr — Airbags ; Ornikar — Airbags |
-| `aff-s-animal-libre` | approfondissement | affirmations | Code de la route, art. R412-6 ; Stych — Installation des passagers |
-| `aff-s-enfant-10-ans-avant` | approfondissement | affirmations | Code de la route, art. R412-2 et R412-3 ; service-public.fr F628 |
-| `aff-s-enfant-135-cm` | approfondissement | affirmations | Code de la route, art. R412-2 ; service-public.fr F628 |
-| `aff-s-enfant-genoux` | approfondissement | affirmations | Code de la route, art. R412-1-1 ; securite-routiere.gouv.fr — Transporter un enfant |
+| `aff-s-animal-libre` | consolidation | affirmations | Code de la route, art. R412-6 ; Stych — Installation des passagers |
+| `aff-s-enfant-10-ans-avant` | socle | affirmations | Code de la route, art. R412-2 et R412-3 ; service-public.fr F628 |
+| `aff-s-enfant-135-cm` | consolidation | affirmations | Code de la route, art. R412-2 ; service-public.fr F628 |
+| `aff-s-enfant-genoux` | consolidation | affirmations | Code de la route, art. R412-1-1 ; securite-routiere.gouv.fr — Transporter un enfant |
 | `aff-s-siege-manteau` | socle | affirmations | securite-routiere.gouv.fr — Transporter un enfant en voiture |
-| `aff-s-isofix` | approfondissement | affirmations | service-public.fr F628 ; securite-routiere.gouv.fr — Transporter un enfant |
-| `aff-s-abs-passive` | approfondissement | affirmations | Stych — Sécurité active et passive ; lepermislibre |
-| `aff-s-euroncap-pietons` | approfondissement | affirmations | Euro NCAP — How to read the stars |
+| `aff-s-isofix` | consolidation | affirmations | service-public.fr F628 ; securite-routiere.gouv.fr — Transporter un enfant |
+| `aff-s-abs-passive` | consolidation | affirmations | Stych — Sécurité active et passive ; lepermislibre |
+| `aff-s-euroncap-pietons` | consolidation | affirmations | Euro NCAP — How to read the stars |
+| `aff-s-ceinture-autocar` | consolidation | affirmations | Code de la route, art. R412-1 |
+| `aff-s-fumer-mineur` | consolidation | affirmations | Code de la santé publique, art. L3512-9 et R3515-4 |
 
 ## s-charger — Charger, signaler et tracter dans les limites
 
 Lire les masses et appliquer les seuils à une situation.
 
-14 notes / 17 cartes.
+15 notes / 20 cartes.
 
 Recherche Anki : `objectif::s-charger`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
+| `d-masses-definitions` | consolidation | faits | Code de la route, art. R311-1 et R221-4 ; arrêté du 9 février 2009 (certificat d'immatriculation, rubriques F.2, F.3, G.1) |
 | `s-chargement-chiffres` | socle | faits | Code de la route, art. R312-19 à R312-21 ; arrêté du 16 juillet 1954 (signalisation des chargements) |
 | `s-remorque-chiffres` | socle | faits | Code de la route, art. R221-4, R317-8, R413-8 ; service-public.fr F2827 |
 | `s-chargement-placement` | socle | questions | Code de la route, art. R312-19 ; securite-routiere.gouv.fr |
 | `s-chargement-depassement` | socle | questions | Code de la route, art. R312-19 à R312-22 |
-| `s-coffre-toit` | approfondissement | questions | ADEME — Éco-conduite ; securite-routiere.gouv.fr |
+| `s-coffre-toit` | consolidation | questions | ADEME — Éco-conduite ; securite-routiere.gouv.fr |
 | `s-remorque-conduite` | socle | questions | securite-routiere.gouv.fr — Équipement de la voiture ; Stych — Chargement et remorque |
 | `s-remorque-seuil-750` | socle | questions | Service Public, permis B — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828 |
 | `s-remorque-masse-reelle` | socle | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828 |
-| `aff-s-chargement-distance-arret` | approfondissement | affirmations | securite-routiere.gouv.fr — Équipement de la voiture ; Stych — Chargement |
-| `aff-s-plage-arriere` | approfondissement | affirmations | securite-routiere.gouv.fr — Conseils chargement ; Stych — Chargement |
-| `aff-s-chargement-avant` | approfondissement | affirmations | Code de la route, art. R312-21 et R312-22 |
+| `aff-s-chargement-distance-arret` | consolidation | affirmations | securite-routiere.gouv.fr — Équipement de la voiture ; Stych — Chargement |
+| `aff-s-plage-arriere` | consolidation | affirmations | securite-routiere.gouv.fr — Conseils chargement ; Stych — Chargement |
+| `aff-s-chargement-avant` | consolidation | affirmations | Code de la route, art. R312-21 et R312-22 |
 | `aff-s-coffre-toit-lourd` | socle | affirmations | securite-routiere.gouv.fr — Conseils chargement ; ADEME |
 | `aff-s-caravane-passager` | socle | affirmations | Code de la route, art. R412-1-1 ; Stych — Chargement et remorque |
-| `aff-s-remorque-retroviseurs` | approfondissement | affirmations | Code de la route, art. R316-6 ; securite-routiere.gouv.fr — Équipement de la voiture |
+| `aff-s-remorque-retroviseurs` | consolidation | affirmations | Code de la route, art. R316-6 ; securite-routiere.gouv.fr — Équipement de la voiture |
 
 ## a-secourir — Protéger, alerter et choisir l'aide selon l'état de la victime
 
 La respiration normale et le traumatisme changent le geste ; suivre les secours.
 
-32 notes / 35 cartes.
+33 notes / 36 cartes.
 
 Recherche Anki : `objectif::a-secourir`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `triangle-presignalisation` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `triangle-presignalisation` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `pas-ordre` | socle | faits | Sécurité civile, PSC juillet 2026, Protection, Alerte et Hémorragies — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `numeros-urgence` | socle | faits | service-public.fr — Numéros d'urgence ; Code pénal, art. 223-6 |
 | `numero-114` | socle | faits | service-public.fr — Numéros d'urgence |
-| `borne-appel-autoroute` | approfondissement | faits | securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA |
+| `borne-appel-autoroute` | consolidation | faits | securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA |
 | `triangle-distance` | socle | faits | Arrêté du 30 septembre 2008, art. 2 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000019566252/ |
 | `rcp-rythme` | socle | faits | Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
-| `a-proteger-arret` | approfondissement | questions | Code de la route, art. R416-19 ; Ornikar — Protéger la zone ; Croix-Rouge française |
-| `a-incendie-vehicule` | approfondissement | questions | Sécurité civile, PSC juillet 2026, Protection — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
+| `a-proteger-arret` | consolidation | questions | Code de la route, art. R416-19 ; Ornikar — Protéger la zone ; Croix-Rouge française |
+| `a-incendie-vehicule` | consolidation | questions | Sécurité civile, PSC juillet 2026, Protection — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-alerter-borne-ou-portable` | socle | questions | securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA |
 | `a-message-alerte` | socle | questions | Croix-Rouge française — Alerter les secours ; securite-routiere.gouv.fr |
 | `a-alerter-raccrocher` | socle | questions | Croix-Rouge française — Alerter ; Ornikar — Alerter les secours |
@@ -1279,19 +1286,20 @@ Recherche Anki : `objectif::a-secourir`
 | `a-hemorragie` | socle | questions | Sécurité civile, PSC juillet 2026, pages 15–18 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-blesse-deplacer` | socle | questions | Croix-Rouge française ; Ornikar — Secourir un blessé |
 | `a-casque-motard` | socle | questions | Croix-Rouge française ; securite-routiere.gouv.fr |
-| `l-reperes-localisation` | approfondissement | questions | Sécurité routière — alerte : route, sens, localisation |
+| `l-reperes-localisation` | consolidation | questions | Sécurité routière — alerte : route, sens, localisation |
 | `a-objet-plaie` | socle | questions | https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
-| `a-traumatisme-respiration` | socle | questions | https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
-| `aff-a-dae-formation` | approfondissement | affirmations | Sécurité routière — Exemples de nouvelles questions (Q6) ; décret n° 2007-705 ; Croix-Rouge française |
-| `aff-a-dae-sans-arret-cardiaque` | approfondissement | affirmations | Sécurité civile, PSC juillet 2026, Défibrillation — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
+| `a-traumatisme-respiration` | socle | questions | Sécurité routière — Exemples de nouvelles questions (Q6, thème A) ; Sécurité civile, PSC juillet 2026 (nuance) |
+| `aff-a-dae-formation` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q6) ; décret n° 2007-705 ; Croix-Rouge française |
+| `aff-a-dae-sans-arret-cardiaque` | consolidation | affirmations | Sécurité civile, PSC juillet 2026, Défibrillation — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `aff-a-pls-avec-casque` | socle | affirmations | Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
-| `aff-a-respire-mais-inconsciente` | approfondissement | affirmations | Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
+| `aff-a-respire-mais-inconsciente` | consolidation | affirmations | Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `aff-a-compressions-seules` | socle | affirmations | Croix-Rouge française — Arrêt cardiaque |
 | `aff-a-donner-a-boire` | socle | affirmations | Sécurité civile, PSC juillet 2026 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
-| `aff-a-contact-vehicules-accidentes` | approfondissement | affirmations | Ornikar — Protéger la zone ; Croix-Rouge française |
+| `aff-a-contact-vehicules-accidentes` | consolidation | affirmations | Ornikar — Protéger la zone ; Croix-Rouge française |
 | `aff-a-triangle-autoroute` | socle | affirmations | Code de la route, art. R416-19 ; arrêté du 30 septembre 2008 ; Ornikar — Protéger la zone |
-| `aff-a-18-secours-personne` | approfondissement | affirmations | service-public.fr — Numéros d'urgence ; Croix-Rouge française |
-| `aff-a-degagement-urgence` | approfondissement | affirmations | Sécurité civile, PSC juillet 2026 — Dégagement d’urgence |
+| `aff-a-18-secours-personne` | consolidation | affirmations | service-public.fr — Numéros d'urgence ; Croix-Rouge française |
+| `aff-a-degagement-urgence` | consolidation | affirmations | Sécurité civile, PSC juillet 2026 — Dégagement d’urgence |
+| `aff-a-dae-sans-danger` | socle | affirmations | Sécurité routière — Exemples de nouvelles questions (Q6) ; Sécurité civile, PSC juillet 2026 — Défibrillation |
 
 ## a-accident — Assumer ses obligations après un accident
 
@@ -1303,13 +1311,13 @@ Recherche Anki : `objectif::a-accident`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `a-non-assistance` | approfondissement | questions | Code pénal, article 223-6 |
+| `a-non-assistance` | consolidation | questions | Code pénal, article 223-6 |
 | `a-accident-materiel-obligations` | socle | questions | Code de la route, art. R231-1 et L231-1 ; Code pénal, art. 434-10 |
 | `a-constat-desaccord` | socle | questions | service-public.fr — Constat amiable ; Code des assurances, art. L113-2 |
 | `a-accident-corporel-obligations` | socle | questions | Code de la route, art. R231-1, L234-3 et L235-2 ; Code pénal, art. 223-6 |
-| `aff-a-rester-sur-place` | approfondissement | affirmations | Croix-Rouge française — Alerter ; Code de la route, art. R231-1 |
-| `aff-a-ne-rien-faire` | approfondissement | affirmations | Code pénal, art. 223-6 |
-| `aff-a-constat-signature` | approfondissement | affirmations | service-public.fr — Constat amiable |
+| `aff-a-rester-sur-place` | consolidation | affirmations | Croix-Rouge française — Alerter ; Code de la route, art. R231-1 |
+| `aff-a-ne-rien-faire` | consolidation | affirmations | Code pénal, art. 223-6 |
+| `aff-a-constat-signature` | consolidation | affirmations | service-public.fr — Constat amiable |
 
 ## d-permis — Comprendre capital, probatoire et conséquences des infractions
 
@@ -1323,23 +1331,23 @@ Recherche Anki : `objectif::d-permis`
 |---|---|---|---|
 | `d-points-capital` | socle | faits | Code de la route, art. L223-1 et R223-1 |
 | `d-probatoire-duree` | socle | faits | Code de la route, art. L223-1 et R223-1 ; service-public.fr F2390 |
-| `d-formation-post-permis` | approfondissement | faits | Code de la route, art. L223-1 et R223-4-1 ; décret n° 2018-715 ; service-public.fr F2390 |
-| `d-points-delit-cumul` | approfondissement | faits | Code de la route, L223-2, L235-1 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F31551 |
+| `d-formation-post-permis` | consolidation | faits | Code de la route, art. L223-1 et R223-4-1 ; décret n° 2018-715 ; service-public.fr F2390 |
+| `d-points-delit-cumul` | consolidation | faits | Code de la route, L223-2, L235-1 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F31551 |
 | `d-probatoire-3-points` | socle | faits | Code de la route, art. L223-6, R223-4, R223-8, L223-5 |
-| `d-invalidation-delai` | approfondissement | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 |
+| `d-invalidation-delai` | consolidation | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 |
 | `d-recuperation-points` | socle | faits | Code de la route, art. L223-6 ; service-public.fr F1685 |
 | `d-stage-points` | socle | faits | Code de la route, art. L223-6 et R223-8 ; service-public.fr F14208 |
 | `d-grand-exces` | socle | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F19460 |
 | `d-alcool-contravention` | socle | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2881 |
-| `d-permis-am-14-ans` | approfondissement | faits | Code de la route, art. R221-5 et R221-4 (catégorie AM) ; service-public F2828 |
+| `d-permis-am-14-ans` | consolidation | faits | Code de la route, art. R221-5 et R221-4 (catégorie AM) ; service-public F2828 |
 | `d-permis-b-perimetre` | socle | faits | Code de la route, art. R221-4 (catégorie B) |
-| `d-permis-b-125` | socle | questions | Code de la route, art. R221-8 ; arrêté du 17 décembre 2010 modifié ; service-public F2828 |
-| `d-invalidation-repasser` | approfondissement | questions | Code de la route, art. L223-5 et R224-20 ; service-public F1704 |
+| `d-permis-b-125` | consolidation | questions | Code de la route, art. R221-8 ; arrêté du 17 décembre 2010 modifié ; service-public F2828 |
+| `d-invalidation-repasser` | consolidation | questions | Code de la route, art. L223-5 et R224-20 ; service-public F1704 |
 | `d-suspension-invalidation` | socle | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F14836 ; https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 |
-| `aff-d-probatoire-majoration` | approfondissement | affirmations | Code de la route, art. L223-1 et R223-1 |
-| `aff-d-disque-a-duree` | approfondissement | affirmations | Code de la route, art. R413-5 II et III ; L223-1 |
-| `aff-d-invalidation-capital` | approfondissement | affirmations | Code de la route, art. L223-1 et R223-1 |
-| `aff-d-recuperation-delai` | approfondissement | affirmations | Code de la route, art. L223-6 ; service-public.fr F1685 |
+| `aff-d-probatoire-majoration` | consolidation | affirmations | Code de la route, art. L223-1 et R223-1 |
+| `aff-d-disque-a-duree` | consolidation | affirmations | Code de la route, art. R413-5 II et III ; L223-1 |
+| `aff-d-invalidation-capital` | consolidation | affirmations | Code de la route, art. L223-1 et R223-1 |
+| `aff-d-recuperation-delai` | consolidation | affirmations | Code de la route, art. L223-6 ; service-public.fr F1685 |
 | `aff-d-velo-points` | socle | affirmations | Code de la route, art. L223-1 ; service-public.fr F20443 |
 | `aff-d-telephone-retention` | socle | affirmations | Code de la route, art. R412-6-1, L224-1 et L224-2 |
 | `aff-d-alcool-contravention` | socle | affirmations | Code de la route, art. L234-1 et R234-1 |
@@ -1348,28 +1356,27 @@ Recherche Anki : `objectif::d-permis`
 
 Appliquer les obligations à une situation concrète.
 
-16 notes / 21 cartes.
+15 notes / 20 cartes.
 
 Recherche Anki : `objectif::d-vehicule`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `d-consulter-points` | approfondissement | faits | Arrêté du 13 novembre 2023 ; service-public.fr F17970 et F31133 |
 | `d-documents-bord` | socle | faits | Code de la route, art. R233-1 ; décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362 |
-| `d-carte-grise-delais` | approfondissement | faits | Code de la route, art. R322-4, R322-5, R322-7 ; service-public.fr F21031 |
+| `d-carte-grise-delais` | consolidation | faits | Code de la route, art. R322-4, R322-5, R322-7 ; service-public.fr F21031 |
 | `d-controle-technique` | socle | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2878 |
 | `d-assurance-garanties` | socle | faits | Code des assurances, art. L211-1, A121-1 et A121-1-1 ; service-public.fr F2655 |
-| `d-constat-declaration` | approfondissement | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2149 ; https://www.service-public.gouv.fr/particuliers/vosdroits/F2685 |
+| `d-constat-declaration` | consolidation | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2149 ; https://www.service-public.gouv.fr/particuliers/vosdroits/F2685 |
 | `d-equipements-obligatoires` | socle | faits | Code de la route, art. R416-19 ; décret n° 2020-605 ; service-public.fr F19459 |
-| `d-vitres-teintees` | approfondissement | faits | Code de la route, art. R316-3-1 |
-| `d-controle-papiers-oublies` | approfondissement | questions | Code de la route, art. R233-1 ; service-public.fr F2794 |
-| `d-vente-vehicule` | approfondissement | questions | Code de la route, art. R322-4 et R323-22 ; service-public.fr F21031 |
+| `d-vitres-teintees` | consolidation | faits | Code de la route, art. R316-3-1 |
+| `d-controle-papiers-oublies` | consolidation | questions | Code de la route, art. R233-1 ; service-public.fr F2794 |
+| `d-vente-vehicule` | consolidation | questions | Code de la route, art. R322-4 et R323-22 ; service-public.fr F21031 |
 | `d-ct-critique` | socle | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2878 |
 | `aff-d-vignette-assurance` | socle | affirmations | Décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362 |
 | `aff-d-ct-defaillance-majeure` | socle | affirmations | service-public.fr F2878 ; arrêté du 18 juin 1991 |
-| `aff-d-carte-grise-delai` | approfondissement | affirmations | Code de la route, art. R322-4, R322-5 et R322-7 ; service-public.fr F21031 |
+| `aff-d-carte-grise-delai` | consolidation | affirmations | Code de la route, art. R322-4, R322-5 et R322-7 ; service-public.fr F21031 |
 | `aff-d-assurance-tiers` | socle | affirmations | Code des assurances, art. L211-1 ; service-public.fr F2655 |
-| `aff-d-gilet-coffre` | approfondissement | affirmations | Code de la route, art. R416-19 ; service-public.fr F19459 |
+| `aff-d-gilet-coffre` | consolidation | affirmations | Code de la route, art. R416-19 ; service-public.fr F19459 |
 
 ## e-ecoconduite — Réduire les consommations sans compromettre la sécurité
 
@@ -1385,17 +1392,17 @@ Recherche Anki : `objectif::e-ecoconduite`
 | `e-rapports-regime` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `e-moteur-arret` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `e-frein-moteur` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
-| `e-climatisation-conso` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
-| `e-surconsommations-causes` | approfondissement | questions | ADEME ; Codeclic — Conduite économique ; Ornikar — Conduite écologique |
+| `e-climatisation-conso` | socle | questions | ADEME — Écoconduite (climatisation) ; securite-routiere.gouv.fr — Chaleur et conduite |
+| `e-surconsommations-causes` | consolidation | questions | ADEME ; Codeclic — Conduite économique ; Ornikar — Conduite écologique |
 | `e-ecomobilite-choix` | socle | questions | ADEME — Se déplacer autrement |
-| `aff-e-clim-autoroute` | approfondissement | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
-| `aff-e-point-mort-descente` | approfondissement | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
-| `aff-e-moteur-chauffer` | approfondissement | affirmations | ADEME — Écoconduite ; arrêté du 12 novembre 1963 |
+| `aff-e-clim-autoroute` | consolidation | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
+| `aff-e-point-mort-descente` | consolidation | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
+| `aff-e-moteur-chauffer` | consolidation | affirmations | ADEME — Écoconduite ; arrêté du 12 novembre 1963 |
 | `aff-e-trajets-courts` | socle | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `aff-e-coffre-toit-vide` | socle | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
-| `aff-e-vitesse-stable` | approfondissement | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
-| `aff-e-equipements-electriques` | approfondissement | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
-| `aff-e-freinage-regeneratif` | approfondissement | affirmations | ADEME — Voiture électrique : conseils d’usage ; securite-routiere.gouv.fr — Les aides à la conduite (ADAS) |
+| `aff-e-vitesse-stable` | consolidation | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
+| `aff-e-equipements-electriques` | consolidation | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
+| `aff-e-freinage-regeneratif` | consolidation | affirmations | ADEME — Voiture électrique : conseils d’usage ; securite-routiere.gouv.fr — Les aides à la conduite (ADAS) |
 
 ## e-pollution — Distinguer émissions, restrictions et énergie
 
@@ -1407,12 +1414,12 @@ Recherche Anki : `objectif::e-pollution`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `marq-losange-vr` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m11d` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `marq-losange-vr` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m11d` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `vr-losange-debut` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `vr-losange-fin` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `e-critair-chiffres` | approfondissement | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F33371 |
-| `e-pic-pollution-chiffres` | approfondissement | faits | service-public.fr — Pic de pollution ; arrêtés préfectoraux |
+| `vr-losange-fin` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `e-critair-chiffres` | consolidation | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F33371 |
+| `e-pic-pollution-chiffres` | consolidation | faits | service-public.fr — Pic de pollution ; arrêtés préfectoraux |
 | `e-polluant-co2` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `e-particules-usure` | socle | questions | ADEME ; En Voiture Simone — Achat éco-responsable |
 | `e-critair-classes` | socle | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F33371 |
@@ -1421,91 +1428,90 @@ Recherche Anki : `objectif::e-pollution`
 | `e-entretien-dechets` | socle | questions | ADEME — Déchets automobiles |
 | `e-ve-recharge` | socle | questions | service-public.fr ; Code de la route, art. R417-10 |
 | `aff-e-electrique-zero` | socle | affirmations | ADEME ; En Voiture Simone — Achat éco-responsable |
-| `aff-e-zfe-vignette` | approfondissement | affirmations | Code de la route, art. R411-19-1 et R318-2 ; service-public.fr F33371 |
-| `aff-e-diesel-nox` | approfondissement | affirmations | En Voiture Simone — Achat éco-responsable ; service-public.fr F33371 |
+| `aff-e-zfe-vignette` | consolidation | affirmations | Code de la route, art. R411-19-1 et R318-2 ; service-public.fr F33371 |
+| `aff-e-diesel-nox` | consolidation | affirmations | En Voiture Simone — Achat éco-responsable ; service-public.fr F33371 |
 | `aff-e-ve-silence` | socle | affirmations | Règlement (UE) 540/2014 (AVAS) ; ADEME — Véhicules électriques |
-| `aff-e-covoiturage-electrique` | socle | affirmations | Ville de Paris — https://www.paris.fr/pages/la-voie-reservee-sur-le-peripherique-entre-en-vigueur-le-3-mars-30106 |
+| `aff-e-covoiturage-electrique` | consolidation | affirmations | Ville de Paris — https://www.paris.fr/pages/la-voie-reservee-sur-le-peripherique-entre-en-vigueur-le-3-mars-30106 |
 
 ## l-orientation — Lire un itinéraire et préparer sa voie
 
 Couleurs, cartouches, confirmation et affectation de voies servent à choisir assez tôt ; une erreur de direction ne justifie pas une manœuvre dangereuse.
 
-40 notes / 40 cartes.
+39 notes / 39 cartes.
 
 Recherche Anki : `objectif::l-orientation`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `c12` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c13a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c13c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c24a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c24b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c24c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c25a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c25b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c26b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c27` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c13a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c13c` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c24a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c24b` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c24c` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c25a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c25b` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c26b` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `c27` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c28` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `e42` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `e43` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `e44` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `j1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `j3` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `j4` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `j5` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `j6` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `j7` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `j13` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `j7` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `j13` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `j14a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `d-couleur-bleu` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `d-couleur-vert` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `d-couleur-blanc` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `d-couleur-jaune` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `d-couleur-marron` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `d20` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `d40` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `da40` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `d20` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `d40` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `da40` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `d50` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `conf-c13a-c13c` | approfondissement | confusions | IISR 5e partie |
-| `conf-e42-e43` | approfondissement | confusions | IISR 5e partie |
-| `conf-j1-j3` | approfondissement | confusions | IISR 1re partie (balises J1, J3, J6) |
-| `conf-j4-j5` | approfondissement | confusions | IISR 1re partie |
+| `conf-c13a-c13c` | consolidation | confusions | IISR 5e partie |
+| `conf-e42-e43` | consolidation | confusions | IISR 5e partie |
+| `conf-j1-j3` | consolidation | confusions | IISR 1re partie (balises J1, J3, J6) |
+| `conf-j4-j5` | consolidation | confusions | IISR 1re partie |
 | `l-vocab-routes-lettres` | socle | questions | Code de la route, art. L110-3 et s. ; IISR 5e partie (cartouches E42-E44) |
-| `l-jalonnement-destinataire` | approfondissement | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `l-itineraire-bis` | approfondissement | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `l-cartouche-vitesse` | approfondissement | questions | Code de la route, R413-1 à R413-5 |
-| `l-guidage-reflecteurs` | approfondissement | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
+| `l-jalonnement-destinataire` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
+| `l-itineraire-bis` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
+| `l-cartouche-vitesse` | consolidation | questions | Code de la route, R413-1 à R413-5 |
+| `l-guidage-reflecteurs` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 
 ## l-services — Identifier le service recherché et son accès
 
 Distinguer secours, repos, carburant et recharge ; les variantes de services apprennent à interpréter les pictogrammes sans leur attribuer une prescription.
 
-4 notes / 4 cartes.
+3 notes / 3 cartes.
 
 Recherche Anki : `objectif::l-services`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `m3b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce15a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce15i` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce52` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `m3b` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `ce15a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
+| `ce15i` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 
 ## c-vision — Comprendre les limites de la vision et les compensations
 
 Champ utile, éblouissement et correction visuelle expliquent où chercher l’information ; les ordres de grandeur ne sont pas des garanties individuelles.
 
-4 notes / 4 cartes.
+5 notes / 6 cartes.
 
 Recherche Anki : `objectif::c-vision`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `c-vue-90-pourcent` | approfondissement | faits | Arrêté du 28 mars 2022 ; En Voiture Simone — Acuité visuelle ; Code de la route, art. R221-1-1 |
-| `aff-c-vision-peripherique` | approfondissement | affirmations | Code en Poche — Le champ visuel ; securite-routiere.gouv.fr — Dépliant La vue |
-| `aff-c-nuit-distances` | approfondissement | affirmations | securite-routiere.gouv.fr — Conduire la nuit ; Dépliant La vue |
-| `aff-c-regard-obstacle` | approfondissement | affirmations | REMC ; Codes Rousseau — L'exploration visuelle |
+| `c-vue-90-pourcent` | consolidation | faits | Arrêté du 28 mars 2022 ; En Voiture Simone — Acuité visuelle ; Code de la route, art. R221-1-1 |
+| `c-champ-visuel-chiffres` | socle | faits | Sécurité routière — La vue et la conduite ; supports de préparation |
+| `aff-c-vision-peripherique` | consolidation | affirmations | Code en Poche — Le champ visuel ; securite-routiere.gouv.fr — Dépliant La vue |
+| `aff-c-nuit-distances` | consolidation | affirmations | securite-routiere.gouv.fr — Conduire la nuit ; Dépliant La vue |
+| `aff-c-regard-obstacle` | consolidation | affirmations | REMC ; Codes Rousseau — L'exploration visuelle |
 
 ## u-lents — Partager la route avec animaux, convois et véhicules lents
 
@@ -1517,12 +1523,12 @@ Recherche Anki : `objectif::u-lents`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `u-convoi-exceptionnel` | approfondissement | questions | Code de la route, art. R433-17, R433-2 III et R412-33 |
-| `u-tracteur-depassement` | approfondissement | questions | Code de la route, art. R313-28 et R414-4 ; Ornikar — Véhicules lents |
+| `u-convoi-exceptionnel` | consolidation | questions | Code de la route, art. R433-17, R433-2 III et R412-33 |
+| `u-tracteur-depassement` | consolidation | questions | Code de la route, art. R313-28 et R414-4 ; Ornikar — Véhicules lents |
 | `u-cavalier-depassement` | socle | questions | Code de la route, art. R414-4, R413-17 et R412-44 |
 | `u-troupeau-animaux` | socle | questions | Code de la route, art. R413-17 et R412-44 |
-| `u-voiturette` | approfondissement | questions | Code de la route, art. R311-1 et R421-2 ; service-public.fr — Permis AM |
-| `aff-u-convoi-feu-vert` | approfondissement | affirmations | Code de la route, art. R412-33 et R433-17 |
+| `u-voiturette` | consolidation | questions | Code de la route, art. R311-1 et R421-2 ; service-public.fr — Permis AM |
+| `aff-u-convoi-feu-vert` | consolidation | affirmations | Code de la route, art. R412-33 et R433-17 |
 
 ## d-apprentissage — Comprendre les filières et les conditions du permis
 
@@ -1534,12 +1540,12 @@ Recherche Anki : `objectif::d-apprentissage`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `d-aac-conditions` | approfondissement | faits | Code de la route, art. R211-3 et R211-5 ; service-public.fr F2826 |
-| `d-permis-17-ans` | approfondissement | faits | Décret n° 2023-1214 du 20 décembre 2023 ; Code de la route, art. R221-5 |
-| `d-formation-minimale` | approfondissement | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828 |
-| `d-accompagnateur` | approfondissement | faits | Code de la route, R211-3 et R234-1 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2826 |
-| `d-conduite-supervisee` | approfondissement | questions | Code de la route, art. R211-5-1 ; service-public.fr F2827 |
-| `aff-d-aac-points-eleve` | approfondissement | affirmations | Code de la route, L121-1 et L223-1 |
+| `d-aac-conditions` | consolidation | faits | Code de la route, art. R211-3 et R211-5 ; service-public.fr F2826 |
+| `d-permis-17-ans` | consolidation | faits | Décret n° 2023-1214 du 20 décembre 2023 ; Code de la route, art. R221-5 |
+| `d-formation-minimale` | consolidation | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828 |
+| `d-accompagnateur` | consolidation | faits | Code de la route, R211-3 et R234-1 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2826 |
+| `d-conduite-supervisee` | consolidation | questions | Code de la route, art. R211-5-1 ; service-public.fr F2827 |
+| `aff-d-aac-points-eleve` | consolidation | affirmations | Code de la route, L121-1 et L223-1 |
 
 ## d-sanctions — Distinguer infraction, sanction et mesure sur le permis
 
@@ -1551,24 +1557,24 @@ Recherche Anki : `objectif::d-sanctions`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `d-classes-amendes` | approfondissement | faits | Code pénal, art. 131-13 ; Code de procédure pénale, art. R49 ; service-public.fr F18509 |
-| `d-telephone-sanction` | approfondissement | faits | Code de la route, art. R412-6-1, R412-6-2, L224-1 et L224-2 |
-| `d-ceinture-sanction` | approfondissement | faits | Code de la route, art. R412-1 et R412-2 |
-| `d-feu-rouge-stop-sanction` | approfondissement | faits | Code de la route, art. R412-30, R412-31, R415-5 à R415-11 |
-| `d-vitesse-bareme` | approfondissement | faits | Code de la route, art. R413-14 ; décret n° 2023-1150 du 6 décembre 2023 |
-| `d-alcool-delit` | approfondissement | faits | Code de la route, art. L234-1, L234-2, L234-8, L237-1 (lois n° 2025-622 et n° 2026-798) |
-| `d-stupefiants-delit` | approfondissement | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886 |
-| `d-homicide-routier` | approfondissement | faits | Code pénal, art. 221-18 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886 |
-| `d-delit-fuite` | approfondissement | faits | Code pénal, art. 434-10 ; Code de la route, art. L231-1 |
-| `d-sans-permis-sans-assurance` | approfondissement | faits | Code de la route, art. L221-2 et L324-2 ; Code des assurances, art. L211-1 |
-| `d-refus-obtemperer` | approfondissement | faits | Code de la route, art. L233-1, L233-1-1, L236-1, L224-16 |
-| `d-autres-bareme-3-points` | approfondissement | faits | Code de la route, art. R412-19, R412-12, R414-4, R412-8, R412-9, R412-10, R412-28, R421-6, R416-11, R417-9 |
-| `d-detecteur-radar` | approfondissement | faits | Code de la route, art. R413-15 et R317-8 |
-| `d-retention-suspension` | approfondissement | faits | Code de la route, art. L224-1, L224-2, L224-7 ; service-public.fr F1040 |
-| `d-vitesse-40-49` | approfondissement | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F19460 |
-| `aff-d-probatoire-alcool` | approfondissement | affirmations | Code de la route, art. R234-1 et L223-5 |
-| `aff-d-clignotant-points` | approfondissement | affirmations | Code de la route, art. R412-10 |
-| `aff-d-sans-assurance-points` | approfondissement | affirmations | Code de la route, art. L324-2 ; Code des assurances, art. L211-1 |
+| `d-classes-amendes` | consolidation | faits | Code pénal, art. 131-13 ; Code de procédure pénale, art. R49 ; service-public.fr F18509 |
+| `d-telephone-sanction` | consolidation | faits | Code de la route, art. R412-6-1, R412-6-2, L224-1 et L224-2 |
+| `d-ceinture-sanction` | consolidation | faits | Code de la route, art. R412-1 et R412-2 |
+| `d-feu-rouge-stop-sanction` | consolidation | faits | Code de la route, art. R412-30, R412-31, R415-5 à R415-11 |
+| `d-vitesse-bareme` | consolidation | faits | Code de la route, art. R413-14 ; décret n° 2023-1150 du 6 décembre 2023 |
+| `d-alcool-delit` | consolidation | faits | Code de la route, art. L234-1, L234-2, L234-8, L237-1 (lois n° 2025-622 et n° 2026-798) |
+| `d-stupefiants-delit` | consolidation | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886 |
+| `d-homicide-routier` | consolidation | faits | Code pénal, art. 221-18 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886 |
+| `d-delit-fuite` | consolidation | faits | Code pénal, art. 434-10 ; Code de la route, art. L231-1 |
+| `d-sans-permis-sans-assurance` | consolidation | faits | Code de la route, art. L221-2 et L324-2 ; Code des assurances, art. L211-1 |
+| `d-refus-obtemperer` | consolidation | faits | Code de la route, art. L233-1, L233-1-1, L236-1, L224-16 |
+| `d-autres-bareme-3-points` | consolidation | faits | Code de la route, art. R412-19, R412-12, R414-4, R412-8, R412-9, R412-10, R412-28, R421-6, R416-11, R417-9 |
+| `d-detecteur-radar` | consolidation | faits | Code de la route, art. R413-15 et R317-8 |
+| `d-retention-suspension` | consolidation | faits | Code de la route, art. L224-1, L224-2, L224-7 ; service-public.fr F1040 |
+| `d-vitesse-40-49` | consolidation | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F19460 |
+| `aff-d-probatoire-alcool` | consolidation | affirmations | Code de la route, art. R234-1 et L223-5 |
+| `aff-d-clignotant-points` | consolidation | affirmations | Code de la route, art. R412-10 |
+| `aff-d-sans-assurance-points` | consolidation | affirmations | Code de la route, art. L324-2 ; Code des assurances, art. L211-1 |
 
 ## e-mobilite — Choisir un mode de déplacement et une énergie adaptés
 
@@ -1580,11 +1586,11 @@ Recherche Anki : `objectif::e-mobilite`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `e-covoiturage-voie` | approfondissement | questions | Code de la route, art. L411-8 ; IISR 9e partie (arrêté du 15 mars 2024) ; paris.fr |
-| `e-electrique-avantages` | approfondissement | questions | ADEME — Car Labelling ; service-public.fr |
-| `e-energies-alternatives` | approfondissement | questions | En Voiture Simone — Achat éco-responsable ; service-public.fr F33371 |
-| `e-e85` | approfondissement | questions | En Voiture Simone — Achat éco-responsable ; ADEME |
-| `aff-e-borne-recharge` | approfondissement | affirmations | Code de la route, art. R417-10 III 3° |
+| `e-covoiturage-voie` | consolidation | questions | Code de la route, art. L411-8 ; IISR 9e partie (arrêté du 15 mars 2024) ; paris.fr |
+| `e-electrique-avantages` | consolidation | questions | ADEME — Car Labelling ; service-public.fr |
+| `e-energies-alternatives` | consolidation | questions | En Voiture Simone — Achat éco-responsable ; service-public.fr F33371 |
+| `e-e85` | consolidation | questions | En Voiture Simone — Achat éco-responsable ; ADEME |
+| `aff-e-borne-recharge` | socle | affirmations | Code de la route, art. R417-10 III 3° |
 
 ## e-bruit — Réduire les nuisances sonores
 
@@ -1596,5 +1602,5 @@ Recherche Anki : `objectif::e-bruit`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `e-bruit-sources` | approfondissement | questions | Code de la route, R416-1 et R416-2 |
+| `e-bruit-sources` | consolidation | questions | Code de la route, R416-1 et R416-2 |
 

@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 6 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 5 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: ce2a
   type: panneau
   code: CE2a
@@ -51,16 +51,6 @@
   nom: Issue de secours vers la droite
   signification: Indique une issue de secours (tunnel, ouvrage) située vers la droite.
   conduite: En cas d'incendie ou d'accident dans un tunnel, rejoindre l'issue de secours indiquée à pied.
-  theme: L
-  sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: ce52
-  type: panneau
-  code: CE52
-  image:
-    commons: France road sign CE52.svg
-  nom: Aire de covoiturage
-  signification: Indique un lieu aménagé pour la pratique du covoiturage (parking de covoiturage), créé par l'arrêté du 8 janvier 2016.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

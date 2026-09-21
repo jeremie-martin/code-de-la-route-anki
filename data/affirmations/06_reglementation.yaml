@@ -55,8 +55,8 @@
   contexte: 'Conduite accompagnée : l''élève commet un excès de vitesse, l''accompagnateur est à côté de lui.'
   affirmation: Les points sont retirés à l'élève, auteur de l'infraction.
   verdict: faux
-  pourquoi: 'L''élève n''a pas encore de permis à points : il ne peut pas en perdre, mais l''amende lui revient comme
-    conducteur. L''accompagnateur ne perd des points que pour ses propres infractions (alcool, par exemple).'
+  pourquoi: 'L''élève n''a pas de permis à points. C''est l''accompagnateur qui assume l''infraction : amende, retrait
+    de points sur son permis et suspension possible (L224-1 II) ; l''infraction est notée dans le livret d''apprentissage.'
   theme: D
   sous_theme: permis
   source: Code de la route, L121-1 et L223-1

@@ -151,8 +151,8 @@
   source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf
 - id: c-fatigue-remedes-faux
   question: 'Je suis somnolent au volant. Café, fenêtre ouverte, musique forte : que vaut chacun de ces remèdes ?'
-  reponse: 'Rien de durable : la seule solution est de m''arrêter en sécurité pour dormir, et de ne reprendre que
-    réellement apte.'
+  reponse: 'Rien de durable : la seule solution est de m''arrêter en sécurité pour dormir, et de ne repartir qu''une
+    fois réellement apte.'
   explication: Une courte sieste peut aider mais ne garantit pas la récupération. Une fenêtre ouverte ou la musique ne remplace
     pas le sommeil. Le café ne justifie pas de continuer à lutter contre l’endormissement.
   theme: C
@@ -221,3 +221,53 @@
   theme: C
   sous_theme: distances
   source: Supports de préparation (Codes Rousseau, ENPC) ; Sécurité routière — Exemples de questions 2023
+- id: c-double-vitesse-arret
+  theme: C
+  sous_theme: distances
+  question: 'À vitesse donnée : 10 m de réaction et 10 m de freinage. Je double la vitesse, avec le même temps de
+    réaction et la même adhérence. Distance d’arrêt théorique ?'
+  reponse: '60 m : 20 m de réaction + 40 m de freinage.'
+  explication: La réaction double, le freinage quadruple ; la distance d’arrêt totale ne quadruple donc pas automatiquement.
+  source: Modèle physique à décélération constante ; Sécurité routière — vitesse
+- id: c-intervalle-repere
+  theme: C
+  sous_theme: distances
+  question: Le véhicule devant passe un panneau. Je l’atteins une seconde après lui sur route sèche. Mon intervalle
+    est-il suffisant ?
+  reponse: 'Non : je laisse au moins deux secondes, davantage si les conditions l’exigent.'
+  explication: Le repère fixe permet de contrôler l’intervalle sans estimer des mètres.
+  source: Code de la route, R412-12
+- id: c-alcool-unites-probatoire
+  theme: C
+  sous_theme: deficiences
+  question: 'Permis probatoire : l’éthylomètre mesure 0,10 mg/L d’air expiré. Suis-je encore sous le seuil interdit
+    ?'
+  reponse: 'Non : le seuil interdit est atteint, correspondant à 0,2 g/L de sang.'
+  explication: 'Lire l’unité et le mot « atteint » : la limite ne doit pas être atteinte.'
+  source: Code de la route, R234-1
+- id: c-occlusion-pieton
+  theme: C
+  sous_theme: vigilance
+  question: Une camionnette arrêtée masque l'entrée d'un passage piéton. Je ne vois personne. Que fais-je ?
+  reponse: 'Je ralentis pour pouvoir m''arrêter avant le passage : un piéton peut être masqué.'
+  explication: Absence d’usager visible et absence de danger ne sont pas équivalentes.
+  source: Code de la route, R413-17 et R415-11
+- id: c-distance-obstacle-exercice
+  theme: C
+  sous_theme: applications
+  question: L’obstacle est à 35 m. L’exercice donne 15 m de réaction puis 25 m de freinage jusqu’à l’arrêt.
+    Puis-je m’immobiliser avant l’obstacle ?
+  reponse: 'Non : il faut 40 m, soit 5 m de plus que la distance disponible.'
+  explication: Un freinage possible ne signifie pas un arrêt possible avant l’obstacle. Les distances données
+    priment sur une table mnémotechnique.
+  source: 'Relation physique : arrêt = réaction + freinage ; calcul sur données explicites'
+- id: c-virage-technique
+  question: J'aborde un virage serré sur une route de campagne. Quand est-ce que je freine, et où je me place ?
+  reponse: Je freine avant le virage, en ligne droite ; dans la courbe, allure stable et je serre à droite, sans
+    couper vers l'axe.
+  explication: Freiner en courbe surcharge l'avant et peut faire décrocher l'arrière ; la force centrifuge pousse
+    vers l'extérieur et croît avec le carré de la vitesse. Réaccélérer progressivement en sortie. Un véhicule peut
+    arriver en face, masqué par le virage.
+  theme: C
+  sous_theme: vigilance
+  source: REMC (compétence 2) ; securite-routiere.gouv.fr — La vitesse et la conduite

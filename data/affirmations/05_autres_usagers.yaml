@@ -43,7 +43,7 @@
   verdict: vrai
   pourquoi: 'Aucun texte n''interdit ce dépassement : R413-17 impose de réduire fortement sa vitesse au croisement
     comme au dépassement d''un transport d''enfants à l''arrêt. Un enfant peut surgir devant le car. L''interdiction
-    de dépasser vise le tramway ou le train à l''arrêt quand des voyageurs traversent.'
+    de dépasser vise le tramway ou le train à l''arrêt, du côté où des voyageurs montent ou descendent.'
   theme: U
   sous_theme: pietons
   source: 'Code de la route, art. R413-17 III 3° et R414-13'
@@ -124,7 +124,7 @@
 # ---------- EDPM (trottinettes électriques) ----------
 - id: aff-u-edpm-trottoir
   contexte: Je suis en trottinette électrique et la chaussée me paraît dangereuse.
-  affirmation: Je peux emprunter le trottoir à l'allure du pas.
+  affirmation: Je peux emprunter le trottoir, dès lors que je roule à l'allure du pas.
   verdict: faux
   pourquoi: 'Le trottoir est interdit aux EDPM (135 €), sauf autorisation expresse du maire. Pour l''emprunter, je descends et je pousse l''engin à la main : je redeviens alors un piéton.'
   theme: U

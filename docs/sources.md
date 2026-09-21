@@ -11,7 +11,7 @@ cette date.
 | Sujet | Référence | Ce qu’elle établit |
 |---|---|---|
 | Code de la route | [Légifrance](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/) ; copie consolidée au 10 septembre 2026 dans `docs/research/sources/` (`pdftotext -layout` → `cdr.txt`, article `R. 415-5` cherchable) | Toute valeur juridique : vitesses (R413), priorités (R415), dépassement et croisement (R414), arrêt et stationnement (R417), éclairage (R416), autoroute (R421), alcool et stupéfiants (L234, L235, R234), permis et points (L223, R221), équipements (R311–R323, D314-8) |
-| Examen | [Service Public, ETG](https://www.service-public.gouv.fr/particuliers/vosdroits/F33694) ; [exemples officiels de questions, sept. 2023](research/sources/securite-routiere_exemples_nouvelles_questions_code_2023-09.pdf) ; communiqué DSR sur la banque 2023 ; arrêté du 16 avril 2026 (organisation au 1er juillet 2026, sans changement de contenu ni de seuil) | Format, seuil, formes des questions, réponses attendues sur vingt exemples |
+| Examen | [Service Public, ETG](https://www.service-public.gouv.fr/particuliers/vosdroits/F33694) ; [exemples officiels de questions, sept. 2023](research/sources/securite-routiere_exemples_nouvelles_questions_code_2023-09.pdf) ; [communiqué DSR sur la banque 2023](research/sources/dsr_communique_banque-etg_2023-09-11.pdf) ; arrêté du 16 avril 2026 (organisation au 1er juillet 2026, sans changement de contenu ni de seuil) | Format, seuil, formes des questions, réponses attendues sur vingt exemples |
 | Signalisation | Instruction interministérielle sur la signalisation routière (IISR, parties 1 à 8) ; arrêté du 24 novembre 1967 consolidé | Sens, implantation, catégories des signaux |
 | Secours | [Références techniques nationales PSC, juillet 2026](https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf) | Conduites à tenir selon l’état de la victime |
 | Aides à la conduite | [CNSR, comité des experts — ADAS (2024)](https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf) | Fonctions et limites des systèmes |
@@ -23,20 +23,21 @@ Les supports de préparation (Codes Rousseau, ENPC, Ornikar, En Voiture Simone, 
 que l’épreuve demande et les conventions qu’elle attend (ordre de grandeur des distances, repères
 d’écoconduite) ; aucune valeur juridique n’est reprise d’eux sans vérification.
 
-## Règles récentes vérifiées (septembre 2026)
+## Règles récentes (entrées datées du registre)
 
 Délit dès 50 km/h d’excès (L413-1, en vigueur depuis le 29 décembre 2025) ; 9 points pour le cumul alcool +
 stupéfiants (L235-1 IV, loi 2026-798 du 18 août 2026) ; ZFE maintenues (décision du Conseil constitutionnel du
 21 mai 2026) ; circulation inter-files des deux-roues (R412-11-3, décret 2025-33) ; casque et gilet pour les
 EDPM à Paris et dans les Hauts-de-Seine, la Seine-Saint-Denis et le Val-de-Marne depuis le 7 août 2026 (mesure
-locale) ; permis B à 17 ans ; 3PMSF + M+S pour les pneus hiver (D314-8) ; ISA et AEB sur les voitures neuves
-(règlement GSR2, juillet 2024) ; suppression des places dans les 5 m avant les passages piétons au
-31 décembre 2026 (L118-5-1 du Code de la voirie routière : à revérifier pour une édition 2027).
+locale) ; permis B dès 17 ans (R221-5) ; 3PMSF + M+S pour les pneus hiver (D314-8) ; suppression des places dans
+les 5 m avant les passages piétons au 31 décembre 2026 (L118-5-1 du Code de la voirie routière : à revérifier
+pour une édition 2027). Chacune a une entrée dans `source_checks.yaml` ; c’est le registre qui fait foi.
 
 ## Ce qui reste non vérifié sur une source primaire
 
-Le détail de certains signaux hérités de Wikipédia (dimensions des balises J10, pictogramme exact de B56),
-les pratiques des exploitants (tunnels, péages en flux libre), les chiffres ADEME et Euro NCAP cités dans les
+Les dates des obligations d’équipement des voitures neuves (ISA, AEB : règlement GSR2, juillet 2024, de mémoire),
+le détail de certains signaux hérités de Wikipédia (dimensions des balises J10, pictogramme exact de B56), les
+pratiques des exploitants (tunnels, péages en flux libre), les chiffres ADEME et Euro NCAP cités dans les
 explications, la date exacte des obligations d’équipement des sièges enfants. Ils n’apparaissent pas comme
 cibles de rappel.
 

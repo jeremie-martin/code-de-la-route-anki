@@ -147,3 +147,22 @@
   theme: S
   sous_theme: equipements
   source: Euro NCAP — How to read the stars
+- id: aff-s-ceinture-autocar
+  contexte: Voyage en autocar équipé de ceintures de sécurité.
+  affirmation: Chaque passager doit attacher sa ceinture.
+  verdict: vrai
+  pourquoi: Le port de la ceinture s'impose dans tout véhicule qui en est équipé (R412-1), autocar compris ; un
+    passager non attaché est projeté en cas de choc ou de renversement et met les autres en danger. Amende de 135
+    € pour le passager majeur.
+  theme: S
+  sous_theme: passagers
+  source: Code de la route, art. R412-1
+- id: aff-s-fumer-mineur
+  contexte: Je conduis avec mon enfant de 12 ans à bord.
+  affirmation: Je peux fumer une cigarette au volant, vitre ouverte.
+  verdict: faux
+  pourquoi: 'Fumer (ou vapoter) dans un véhicule en présence d''un mineur est interdit : 135 €. Le geste détourne
+    aussi l''attention et une main du volant.'
+  theme: S
+  sous_theme: passagers
+  source: Code de la santé publique, art. L3512-9 et R3515-4

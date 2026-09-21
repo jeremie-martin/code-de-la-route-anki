@@ -62,3 +62,13 @@
   theme: U
   sous_theme: poids_lourds
   source: securite-routiere.gouv.fr — Angles morts ; Code de la route, art. R313-32-1 et R412-12
+- id: u-pl-vitesses-chiffres
+  theme: U
+  sous_theme: poids_lourds
+  rappels:
+  - Un poids lourd de plus de 3,5 t (hors transport en commun) est limité sur autoroute à {{c1::90 km/h}}.
+  - Sur les autres routes hors agglomération, ce poids lourd est limité à {{c2::80 km/h}} (50 en agglomération).
+  explication: Un autocar de plus de 3,5 t et jusqu'à 12 t peut rouler à 110 sur autoroute. Différence d'allure
+    = dépassements longs et files derrière les camions dans les côtes ; en cas de neige au sol, ni dépassement ni
+    changement de file pour eux.
+  source: Code de la route, art. R413-8 et R413-8-1
