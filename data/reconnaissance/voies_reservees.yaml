@@ -6,7 +6,7 @@
   nom: Début de voie réservée (panneau à losange blanc)
   signification: 'Losange blanc au-dessus d''une voie : voie réservée, aux heures indiquées, aux bus, aux taxis et au covoiturage (« 2+ » ou « 3+ »).'
   conduite: Ne pas l'emprunter seul à bord (135 €) ; losange éteint ou hors horaires, la voie est ouverte à tous.
-  complement: 'Au début de la voie et après chaque échangeur ; panonceau M4e (« 3+ »), M11b2 (horaires). Fin : losange barré de rouge.'
+  complement: Un panonceau précise le nombre minimal d’occupants et les horaires.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -19,7 +19,6 @@
   nom: Fin de voie réservée (losange barré)
   signification: 'Panneau carré portant un losange blanc barré d''une diagonale rouge : fin de la voie réservée ; la voie redevient ouverte à tous.'
   conduite: La voie peut de nouveau être empruntée par tous les véhicules.
-  complement: À la fin de la section, sur le terre-plein central ou au-dessus des voies.
   theme: L
   sous_theme: panneaux
   importance: utile

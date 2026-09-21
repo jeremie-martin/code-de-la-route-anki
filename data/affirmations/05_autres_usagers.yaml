@@ -173,7 +173,7 @@
   contexte: Sur une voie rapide, un panneau « 50 » est surmonté du panonceau « EN INTER-FILES ».
   affirmation: Cette limitation s'applique aussi aux automobilistes quand la circulation est dense.
   verdict: faux
-  pourquoi: 'Question officielle 2023 (Q16) : elle ne vise que les deux-roues circulant en inter-files. Les automobilistes restent soumis à la vitesse normalement autorisée sur leur voie.'
+  pourquoi: 'Elle ne vise que les deux-roues circulant en inter-files. Les automobilistes restent soumis à la vitesse normalement autorisée sur leur voie.'
   theme: U
   sous_theme: motos
   source: 'Sécurité routière — Exemples de nouvelles questions (Q16) ; Code de la route, art. R412-11-3'

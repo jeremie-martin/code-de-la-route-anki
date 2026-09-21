@@ -1,94 +1,120 @@
 - id: u-pieton-hors-passage
-  question: 'Un piéton s''engage pour traverser hors de tout passage piéton (le plus proche est à 100 m). Dois-je le laisser passer ?'
-  reponse: 'Oui : sans passage à moins de 50 m, il s''engage régulièrement et j''ai l''obligation de céder ; je ralentis et je le laisse finir de traverser, sans klaxonner.'
-  explication: 'Refus de priorité à un piéton : 135 €, 6 points (R415-11). Piège : « il n''est pas sur un passage, je peux passer » — faux.'
+  question: Un piéton s'engage pour traverser hors de tout passage piéton (le plus proche est à 100 m). Dois-je le laisser
+    passer ?
+  reponse: 'Oui : sans passage à moins de 50 m, il traverse régulièrement et je dois céder ; je ralentis et le laisse finir,
+    sans klaxonner.'
+  explication: 'Refus de priorité à un piéton : 135 €, 6 points (R415-11). Piège : « il n''est pas sur un passage, je peux
+    passer » — faux.'
   theme: U
   sous_theme: pietons
-  source: 'Code de la route, art. R415-11 et R412-37'
+  source: Code de la route, art. R415-11 et R412-37
 - id: u-pieton-canne-blanche
-  question: 'Un piéton avec une canne blanche attend au bord de la chaussée. Que fais-je ?'
-  reponse: 'Je m''arrête et je le laisse traverser, sans klaxonner : une personne malvoyante se repère au son et ne peut pas juger si je vais m''arrêter.'
-  explication: 'Même réflexe pour une personne en fauteuil, avec une poussette ou un déambulateur : anticiper, ralentir, laisser passer. Prudence accrue envers les usagers vulnérables (R412-6).'
+  question: Un piéton avec une canne blanche attend au bord de la chaussée. Que fais-je ?
+  reponse: 'Je m’arrête et le laisse traverser, sans klaxonner : une personne malvoyante se repère au son et ne peut pas juger
+    si je m’arrête.'
+  explication: 'Même réflexe pour une personne en fauteuil, avec une poussette ou un déambulateur : anticiper, ralentir, laisser
+    passer. Prudence accrue envers les usagers vulnérables (R412-6).'
   theme: U
   sous_theme: pietons
-  source: 'Code de la route, art. R412-6 et R415-11 ; securite-routiere.gouv.fr — Piétons'
+  source: Code de la route, art. R412-6 et R415-11 ; securite-routiere.gouv.fr — Piétons
 - id: u-pieton-hors-agglo-cote
-  question: 'Je suis piéton, hors agglomération, sans trottoir ni accotement praticable. De quel côté de la chaussée dois-je marcher ?'
-  reponse: 'Près du bord gauche, face aux véhicules, pour les voir arriver — sauf danger particulier ; en fauteuil roulant ou en poussant un vélo ou un cyclomoteur, on tient la droite.'
-  explication: 'Un cortège, un convoi ou une procession marche à droite, en laissant libre toute la moitié gauche (R412-42). La nuit, vêtements clairs ou gilet réfléchissant sont recommandés — jamais obligatoires pour un piéton.'
+  question: Je suis piéton, hors agglomération, sans trottoir ni accotement praticable. De quel côté de la chaussée dois-je
+    marcher ?
+  reponse: Près du bord gauche, face aux véhicules, sauf danger particulier ; en fauteuil roulant ou en poussant un vélo,
+    on tient la droite.
+  explication: Un cortège, un convoi ou une procession marche à droite, en laissant libre toute la moitié gauche (R412-42).
+    La nuit, vêtements clairs ou gilet réfléchissant sont recommandés — jamais obligatoires pour un piéton.
   theme: U
   sous_theme: pietons
-  source: 'Code de la route, art. R412-36 et R412-42'
+  source: Code de la route, art. R412-36 et R412-42
 - id: u-zone-rencontre-pietons
-  question: 'J''entre dans une zone de rencontre (panneau B52). Un piéton marche au milieu de la chaussée devant moi. Que fais-je ?'
-  reponse: 'Je le suis à son allure, sans klaxonner : en zone de rencontre (20 km/h maximum), les piétons circulent sur toute la chaussée et sont prioritaires sur tous les véhicules sauf le tramway.'
-  explication: 'Aire piétonne (B54) : allure du pas, desserte seulement. Zone 30 (B30) : priorités habituelles, les piétons y traversent aux passages. Double sens cyclable par défaut dans les trois.'
+  question: J'entre dans une zone de rencontre (panneau B52). Un piéton marche au milieu de la chaussée devant moi. Que fais-je
+    ?
+  reponse: 'Je le suis à son allure, sans klaxonner : en zone de rencontre (20 km/h maximum), les piétons circulent sur toute
+    la chaussée et ont priorité sur les véhicules.'
+  explication: 'Priorité des piétons sur tous les véhicules, sauf le tramway. Aire piétonne (B54) : allure du pas, desserte
+    seulement. Zone 30 (B30) : priorités habituelles, les piétons y traversent aux passages. Double sens cyclable par défaut
+    dans les trois.'
   theme: U
   sous_theme: pietons
-  source: 'Code de la route, art. R110-2 et R415-11'
+  source: Code de la route, art. R110-2 et R415-11
 - id: u-enfants-sortie-ecole
-  question: 'Un car de transport d''enfants (pictogramme enfants) est arrêté devant moi, feux de détresse allumés. Que fais-je ?'
-  reponse: 'Je réduis fortement ma vitesse et je me tiens prêt à m''arrêter : des enfants peuvent surgir devant ou derrière le car ; je ne le dépasse qu''à très faible vitesse, avec une extrême prudence.'
-  explication: 'R413-17 III 3° : vitesse réduite au croisement ou au dépassement d''un transport d''enfants pendant la montée ou la descente. Les feux de détresse du car sont le signal.'
+  question: Un car de transport d'enfants (pictogramme enfants) est arrêté devant moi, feux de détresse allumés. Que fais-je
+    ?
+  reponse: 'Je réduis fortement ma vitesse, prêt à m’arrêter : des enfants peuvent surgir devant ou derrière le car ; je ne
+    le dépasse qu’à très faible allure.'
+  explication: 'R413-17 III 3° : vitesse réduite au croisement ou au dépassement d''un transport d''enfants pendant la montée
+    ou la descente. Les feux de détresse du car sont le signal.'
   theme: U
   sous_theme: pietons
-  source: 'Code de la route, art. R413-17 ; arrêté du 2 juillet 1982 (transports d''enfants)'
+  source: Code de la route, art. R413-17 ; arrêté du 2 juillet 1982 (transports d'enfants)
 - id: u-personnes-agees
-  question: Mon feu passe au vert, mais un piéton âgé, engagé sur le passage, traverse lentement devant moi.
-    Que fais-je ?
-  reponse: Je le laisse terminer sa traversée sans avancer sur lui ni le presser au klaxon. Mon feu vert ne
-    retire pas la priorité du piéton engagé.
-  explication: 'Ne pas généraliser une déficience à toutes les personnes âgées : c’est la traversée en cours
-    et son rythme réel qui commandent ma décision.'
+  question: Mon feu passe au vert, mais un piéton âgé, engagé sur le passage, traverse lentement devant moi. Que fais-je ?
+  reponse: 'Je le laisse terminer sa traversée sans avancer sur lui ni klaxonner : mon feu vert ne retire pas la priorité
+    du piéton engagé.'
+  explication: 'Ne pas généraliser une déficience à toutes les personnes âgées : c’est la traversée en cours et son rythme
+    réel qui commandent ma décision.'
   theme: U
   sous_theme: pietons
   source: Code de la route, art. R415-11 ; ONISR 2025 (bilan définitif)
   tags:
   - revision::v4
 - id: u-fauteuil-roulant-chaussee
-  question: 'Hors agglomération, une personne en fauteuil roulant circule sur la chaussée devant moi, près du bord droit. Que fais-je ?'
-  reponse: 'Je ralentis et je la dépasse en laissant au moins 1,50 m (1 m en agglomération) : assimilée à un piéton, elle peut circuler sur la chaussée dans tous les cas, en tenant sa droite.'
-  explication: 'R412-35 : les personnes en fauteuil roulant peuvent « dans tous les cas » circuler sur la chaussée ; R412-36 : près du bord droit. Vitesse réduite au dépassement d''un piéton (R413-17).'
+  question: Hors agglomération, une personne en fauteuil roulant circule sur la chaussée devant moi, près du bord droit. Que
+    fais-je ?
+  reponse: 'Je ralentis et la dépasse avec au moins 1,50 m (1 m en agglomération) : assimilée à un piéton, elle peut circuler
+    sur la chaussée, à droite.'
+  explication: 'R412-35 : les personnes en fauteuil roulant peuvent « dans tous les cas » circuler sur la chaussée ; R412-36
+    : près du bord droit. Vitesse réduite au dépassement d''un piéton (R413-17).'
   theme: U
   sous_theme: pietons
-  source: 'Code de la route, art. R412-34, R412-35, R412-36 et R414-4'
-# ---------- Cyclistes ----------
+  source: Code de la route, art. R412-34, R412-35, R412-36 et R414-4
 - id: u-cyclistes-de-front
-  question: 'De jour, sur route, deux cyclistes roulent de front devant moi et j''annonce mon intention de les dépasser. Que doivent-ils faire ?'
-  reponse: 'Se remettre en file simple : rouler à deux de front est permis, mais la file simple s''impose dès qu''un véhicule annonce son dépassement et dès la chute du jour.'
-  explication: 'Exceptions : aires piétonnes, zones de rencontre et voies vertes (décret 2024-1074). Même en file, je garde 1,50 m hors agglomération et je ne les serre pas.'
+  question: De jour, sur route, deux cyclistes roulent de front devant moi et j'annonce mon intention de les dépasser. Que
+    doivent-ils faire ?
+  reponse: 'Se remettre en file simple : rouler de front est permis, mais la file simple s’impose dès qu’un véhicule annonce
+    son dépassement ou à la nuit tombée.'
+  explication: 'Exceptions : aires piétonnes, zones de rencontre et voies vertes (décret 2024-1074). Même en file, je garde
+    1,50 m hors agglomération et je ne les serre pas.'
   theme: U
   sous_theme: cyclistes
-  source: 'Code de la route, art. R431-7 et R414-4'
+  source: Code de la route, art. R431-7 et R414-4
 - id: u-cycliste-tourner-droite
-  question: 'Je tourne à droite ; une piste cyclable longe la chaussée à ma droite et un cycliste y arrive derrière moi. Qui passe ?'
-  reponse: 'Le cycliste : pour les règles de priorité, une piste cyclable compte comme une voie de la chaussée qu''elle longe ; je contrôle rétroviseur droit et angle mort, puis je le laisse passer avant de tourner.'
-  explication: 'Accident type du cycliste « coincé » à droite d''un véhicule qui tourne. Même conduite avec une bande cyclable, et avec un piéton qui traverse la rue où je m''engage.'
+  question: Je tourne à droite ; une piste cyclable longe la chaussée à ma droite et un cycliste y arrive derrière moi. Qui
+    passe ?
+  reponse: 'Le cycliste : la piste cyclable compte comme une voie de la chaussée qu’elle longe ; contrôle du rétroviseur droit
+    et de l’angle mort, puis je le laisse passer.'
+  explication: Accident type du cycliste « coincé » à droite d'un véhicule qui tourne. Même conduite avec une bande cyclable,
+    et avec un piéton qui traverse la rue où je m'engage.
   theme: U
   sous_theme: cyclistes
-  source: 'Code de la route, art. R415-14 (piste cyclable) et R415-13 (voie réservée)'
+  source: Code de la route, art. R415-14 (piste cyclable) et R415-13 (voie réservée)
 - id: u-cycliste-bras-gauche
-  question: 'Devant moi, en ville, un cycliste tend le bras gauche. Que fais-je ?'
-  reponse: 'Je ralentis et je le laisse se déporter et tourner sans le dépasser par la gauche : un vélo n''a pas de clignotant, le bras tendu annonce son changement de direction.'
-  explication: 'Un regard par-dessus l''épaule gauche annonce la même chose. R414-6 II 1° : un usager qui a signalé qu''il se porte à gauche se dépasse par la droite, jamais par la gauche ; dans le doute, j''attends.'
+  question: Devant moi, en ville, un cycliste tend le bras gauche. Que fais-je ?
+  reponse: 'Je ralentis et je le laisse se déporter et tourner, sans le dépasser par la gauche : le bras tendu annonce son
+    changement de direction.'
+  explication: 'Un regard par-dessus l''épaule gauche annonce la même chose. R414-6 II 1° : un usager qui a signalé qu''il
+    se porte à gauche se dépasse par la droite, jamais par la gauche ; dans le doute, j''attends.'
   theme: U
   sous_theme: cyclistes
-  source: 'Code de la route, art. R412-10 et R414-6 ; En Voiture Simone — Les vélos'
+  source: Code de la route, art. R412-10 et R414-6 ; En Voiture Simone — Les vélos
 - id: u-double-sens-cyclable
-  question: 'Panneau « sens interdit » avec panonceau « sauf vélos » (M9v2) à l''entrée d''une rue : que dois-je anticiper ?'
-  reponse: 'Des cyclistes qui arrivent en face dans cette rue à sens unique (double-sens cyclable) : je me tiens à droite, je vérifie avant de tourner et je ne me rabats pas sur eux.'
-  explication: 'Le double-sens cyclable est la règle par défaut dans les zones 30 et zones de rencontre, même sans panonceau ; il vaut aussi pour les trottinettes électriques.'
+  question: 'Panneau « sens interdit » avec panonceau « sauf vélos » (M9v2) à l''entrée d''une rue : que dois-je anticiper
+    ?'
+  reponse: 'Des cyclistes qui arrivent en face dans cette rue à sens unique (double-sens cyclable) : je me tiens à droite
+    et je vérifie avant de tourner.'
+  explication: Le double-sens cyclable est la règle par défaut dans les zones 30 et zones de rencontre, même sans panonceau
+    ; il vaut aussi pour les trottinettes électriques.
   theme: U
   sous_theme: cyclistes
-  source: 'Code de la route, art. R412-28-1 et R110-2'
-# ---------- EDPM (trottinettes électriques) ----------
+  source: Code de la route, art. R412-28-1 et R110-2
 - id: u-edpm-ou-circuler
-  question: Je suis en trottinette électrique, en agglomération, sur une avenue limitée à 50 km/h sans piste
-    ni bande cyclable. Où dois-je rouler ?
-  reponse: En l’absence d’aménagement cyclable, sur la chaussée limitée à 50 km/h au plus, en tenant ma droite.
-    Le trottoir n’est admis que par autorisation locale spécifique, au pas et sans gêner les piétons.
-  explication: 'Trottoir : seulement sur autorisation du maire, à l''allure du pas ; sinon je descends et je
-    la pousse (je deviens piéton). Circuler hors des voies autorisées : 135 €.'
+  question: Je suis en trottinette électrique, en agglomération, sur une avenue limitée à 50 km/h sans piste ni bande cyclable.
+    Où dois-je rouler ?
+  reponse: Sur la chaussée (limitée à 50 km/h au plus), en tenant ma droite, faute d’aménagement cyclable ; le trottoir n’est
+    admis que sur autorisation locale, au pas.
+  explication: 'Trottoir : seulement sur autorisation du maire, à l''allure du pas ; sinon je descends et je la pousse (je
+    deviens piéton). Circuler hors des voies autorisées : 135 €.'
   theme: U
   sous_theme: edpm
   tags:
@@ -96,189 +122,234 @@
   - revision::v4
   source: Code de la route, art. R412-43-1 ; service-public.fr F308
 - id: u-edpm-pieton-ou-vehicule
-  question: 'À une intersection sans signalisation, une trottinette électrique arrive à ma droite. Qui passe ?'
-  reponse: 'Elle : un EDPM est un véhicule soumis aux règles de priorité (ici la priorité à droite), pas un piéton ; seuls rollers, skate et trottinette sans moteur sont assimilés aux piétons.'
-  explication: 'Un EDPM respecte aussi les feux et les sens interdits. Pour l''automobiliste : 1 m / 1,50 m au dépassement, prudence accrue (faible gabarit, équilibre précaire — question officielle 2023).'
+  question: À une intersection sans signalisation, une trottinette électrique arrive à ma droite. Qui passe ?
+  reponse: 'Elle : un EDPM est un véhicule soumis aux règles de priorité, pas un piéton ; seuls rollers, skate et trottinette
+    sans moteur sont assimilés aux piétons.'
+  explication: 'Un EDPM respecte aussi les feux et les sens interdits. Pour l''automobiliste : 1 m / 1,50 m au dépassement,
+    prudence accrue (faible gabarit, équilibre précaire).'
   theme: U
   sous_theme: edpm
-  source: 'Code de la route, art. R311-1, R412-34 et R415-5'
-# ---------- Motos et cyclomoteurs ----------
+  source: Code de la route, art. R311-1, R412-34 et R415-5
 - id: u-moto-vulnerabilite
   question: Je vais tourner à gauche ; une moto arrive en face, elle me semble encore loin. Que fais-je ?
-  reponse: Je vérifie sa vitesse et sa distance sans me fier à sa petite silhouette. En cas de doute sur un
-    créneau suffisant, j’attends qu’elle passe.
-  explication: Le gabarit étroit peut fausser l’appréciation. Une moto en face a la priorité sur mon virage
-    à gauche ; une distance réellement suffisante reste nécessaire pour tourner sans la gêner.
+  reponse: Je vérifie sa vitesse et sa distance sans me fier à sa petite silhouette ; en cas de doute sur le créneau, j’attends
+    qu’elle passe.
+  explication: Le gabarit étroit peut fausser l’appréciation. Une moto en face a la priorité sur mon virage à gauche ; une
+    distance réellement suffisante reste nécessaire pour tourner sans la gêner.
   theme: U
   sous_theme: motos
   source: securite-routiere.gouv.fr — Être visible à moto ; Code de la route, art. R415-4
   tags:
   - revision::v4
 - id: u-interfiles
-  question: 'Autoroute embouteillée, files ininterrompues sur toutes les voies ; une moto remonte entre les deux files de gauche. Que fais-je ?'
-  reponse: 'Je reste dans ma file en gardant l''espace latéral, et je contrôle rétroviseurs et angle mort avant tout changement de file : cette circulation inter-files est légale ici depuis 2025.'
-  explication: 'Décret 2025-33, en vigueur le 11 janvier 2025 : deux-roues ≤ 1 m de large, autoroutes et routes à chaussées séparées ≥ 70 km/h, circulation dense, 50 km/h maximum (30 si une file est arrêtée).'
+  question: Autoroute embouteillée, files ininterrompues sur toutes les voies ; une moto remonte entre les deux files de gauche.
+    Que fais-je ?
+  reponse: 'Je reste dans ma file en gardant l’espace latéral, et je contrôle rétroviseurs et angle mort avant tout changement
+    de file : l’inter-files est légale ici.'
+  explication: 'Décret 2025-33, en vigueur le 11 janvier 2025 : deux-roues ≤ 1 m de large, autoroutes et routes à chaussées
+    séparées ≥ 70 km/h, circulation dense, 50 km/h maximum (30 si une file est arrêtée).'
   theme: U
   sous_theme: motos
   tags:
   - nouveau::2025
-  source: 'Code de la route, art. R412-11-3 (décret n° 2025-33 du 9 janvier 2025)'
-# ---------- Poids lourds ----------
+  source: Code de la route, art. R412-11-3 (décret n° 2025-33 du 9 janvier 2025)
 - id: u-pl-angles-morts
-  question: Je suis à vélo, arrêté au feu rouge à droite d'un camion, à hauteur de sa portière. Son conducteur
-    me voit-il ?
-  reponse: 'Il peut ne pas me voir : je peux être dans un angle mort. Je reste en retrait, hors de sa trajectoire,
-    plutôt que de présumer qu’il m’a repéré.'
-  explication: La visibilité dépend du véhicule, des rétroviseurs, des capteurs et du regard du conducteur.
-    Voir son rétroviseur ne prouve pas qu’il me voit ; ne pas s’installer à côté d’un camion qui pourrait tourner.
+  question: Je suis à vélo, arrêté au feu rouge à droite d'un camion, à hauteur de sa portière. Son conducteur me voit-il
+    ?
+  reponse: 'Il peut ne pas me voir (angle mort) : je reste en retrait, hors de sa trajectoire, plutôt que de présumer qu’il
+    m’a repéré.'
+  explication: La visibilité dépend du véhicule, des rétroviseurs, des capteurs et du regard du conducteur. Voir son rétroviseur
+    ne prouve pas qu’il me voit ; ne pas s’installer à côté d’un camion qui pourrait tourner.
   theme: U
   sous_theme: poids_lourds
   source: 'securite-routiere.gouv.fr — Vrai ou faux : angles morts'
   tags:
   - revision::v4
 - id: u-pl-tourne-droite
-  question: Un poids lourd met son clignotant droit devant moi et se déporte vers la gauche. Que fait-il et
-    que dois-je faire ?
-  reponse: Il prépare probablement un virage à droite en élargissant sa trajectoire. Je reste derrière et ne
-    m’engage pas dans l’espace à sa droite.
-  explication: 'Le déport n’est pas une prise d’élan : le gabarit et le décalage de trajectoire des roues arrière
-    demandent de la place. Un clignotant décrit une intention, pas une certitude sur la manœuvre exacte.'
+  question: Un poids lourd met son clignotant droit devant moi et se déporte vers la gauche. Que fait-il et que dois-je faire
+    ?
+  reponse: 'Il prépare sans doute un virage à droite en élargissant sa trajectoire : je reste derrière et ne m’engage pas
+    dans l’espace à sa droite.'
+  explication: 'Le déport n’est pas une prise d’élan : le gabarit et le décalage de trajectoire des roues arrière demandent
+    de la place. Un clignotant décrit une intention, pas une certitude sur la manœuvre exacte.'
   theme: U
   sous_theme: poids_lourds
   source: Ornikar — Transports de marchandises ; securite-routiere.gouv.fr — Angles morts
   tags:
   - revision::v4
 - id: u-pl-giratoire-deport
-  question: 'Dans un carrefour à sens giratoire à deux voies, le poids lourd devant moi roule à cheval sur les deux voies. Puis-je le dépasser dans l''anneau ?'
-  reponse: 'Non : son gabarit l''oblige à occuper les deux voies pour tourner, et ses côtés sont des angles morts ; je reste derrière lui à distance jusqu''à sa sortie.'
-  explication: 'Même logique qu''un camion qui se déporte à gauche avant de tourner à droite : ne jamais se glisser dans l''espace qu''il semble libérer.'
+  question: Dans un carrefour à sens giratoire à deux voies, le poids lourd devant moi roule à cheval sur les deux voies.
+    Puis-je le dépasser dans l'anneau ?
+  reponse: 'Non : son gabarit l’oblige à occuper les deux voies pour tourner et ses côtés sont des angles morts ; je reste
+    derrière lui jusqu’à sa sortie.'
+  explication: 'Même logique qu''un camion qui se déporte à gauche avant de tourner à droite : ne jamais se glisser dans l''espace
+    qu''il semble libérer.'
   theme: U
   sous_theme: poids_lourds
   importance: utile
-  source: 'securite-routiere.gouv.fr — Angles morts ; Ornikar — Transports de marchandises'
+  source: securite-routiere.gouv.fr — Angles morts ; Ornikar — Transports de marchandises
 - id: u-pl-depasser-suivre
-  question: 'Route à double sens, je suis derrière un poids lourd que je souhaite dépasser. Quelles précautions particulières ?'
-  reponse: 'Je me tiens plus loin de lui pour voir la route qu''il masque, je ne m''engage que si la longueur libre suffit (dépassement long) et je ne me rabats pas trop tôt.'
-  explication: 'Il freine moins vite, projette de l''eau et crée un appel d''air. Hors agglomération, deux poids lourds qui se suivent gardent au moins 50 m (R412-12).'
+  question: Route à double sens, je suis derrière un poids lourd que je souhaite dépasser. Quelles précautions particulières
+    ?
+  reponse: Rester plus loin pour voir la route qu’il masque, ne m’engager que si la longueur libre suffit (dépassement long),
+    ne pas me rabattre trop tôt.
+  explication: Il freine moins vite, projette de l'eau et crée un appel d'air. Hors agglomération, deux poids lourds qui se
+    suivent gardent au moins 50 m (R412-12).
   theme: U
   sous_theme: poids_lourds
-  source: 'Code de la route, art. R414-4 et R412-12 ; coursdecode — Les poids lourds'
+  source: Code de la route, art. R414-4 et R412-12 ; coursdecode — Les poids lourds
 - id: u-matieres-dangereuses
-  question: 'Que signifie la plaque orange à l''arrière d''un camion, et qu''est-ce que cela change pour moi ?'
-  reponse: 'Il transporte des matières dangereuses : je garde une distance de sécurité accrue, et en cas d''accident je n''approche pas et je signale la plaque aux secours.'
-  explication: 'Plaque numérotée : code danger en haut, numéro de la matière en bas ; losanges de classe (inflammable, toxique…). Accès interdit à certains tunnels (B18a/b/c).'
+  question: Que signifie la plaque orange à l'arrière d'un camion, et qu'est-ce que cela change pour moi ?
+  reponse: 'Il transporte des matières dangereuses : distance de sécurité accrue ; en cas d’accident, je n’approche pas et
+    je signale la plaque aux secours.'
+  explication: 'Plaque numérotée : code danger en haut, numéro de la matière en bas ; losanges de classe (inflammable, toxique…).
+    Accès interdit à certains tunnels (B18a/b/c).'
   theme: U
   sous_theme: poids_lourds
   importance: utile
-  source: 'Accord ADR ; IISR (B18)'
-# ---------- Bus et tramways ----------
+  source: Accord ADR ; IISR (B18)
 - id: u-tram-depasser
-  dedup_ok: [aff-u-car-scolaire-depassement]
-  question: 'Un tramway est arrêté à sa station et des voyageurs descendent de mon côté. Puis-je le dépasser ?'
-  reponse: 'Non : il est interdit de dépasser un tramway (ou un train) à l''arrêt du côté où les voyageurs montent ou descendent ; j''attends derrière, à distance.'
-  explication: 'En marche, un tramway se dépasse par la droite si l''intervalle jusqu''au bord de la chaussée suffit (R414-6 II 2°). Le tram ne peut ni dévier ni freiner court.'
+  dedup_ok:
+  - aff-u-car-scolaire-depassement
+  question: Un tramway est arrêté à sa station et des voyageurs descendent de mon côté. Puis-je le dépasser ?
+  reponse: 'Non : on ne dépasse pas un tramway (ou un train) à l’arrêt du côté où les voyageurs montent ou descendent ; j’attends
+    derrière, à distance.'
+  explication: En marche, un tramway se dépasse par la droite si l'intervalle jusqu'au bord de la chaussée suffit (R414-6
+    II 2°). Le tram ne peut ni dévier ni freiner court.
   theme: U
   sous_theme: transports_commun
-  source: 'Code de la route, art. R414-13 et R414-6'
+  source: Code de la route, art. R414-13 et R414-6
 - id: u-voie-bus
-  question: 'Avenue avec une voie « BUS » à ma droite ; je veux tourner à droite au prochain carrefour. Puis-je rouler sur cette voie ?'
-  reponse: 'Non, sauf pour la traverser au dernier moment en cédant le passage aux bus : la voie réservée est interdite aux autres véhicules (135 €), sauf catégories admises par panonceau (taxis, vélos).'
-  explication: 'S''y arrêter ou stationner : très gênant, 135 €. Un damier blanc au sol marque la traversée d''une voie bus à un carrefour.'
+  question: Avenue avec une voie « BUS » à ma droite ; je veux tourner à droite au prochain carrefour. Puis-je rouler sur
+    cette voie ?
+  reponse: 'Non, sauf pour la traverser au dernier moment en cédant aux bus : la voie réservée est interdite aux autres véhicules
+    (135 €), sauf catégories admises par panonceau.'
+  explication: 'S''y arrêter ou stationner : très gênant, 135 €. Un damier blanc au sol marque la traversée d''une voie bus
+    à un carrefour.'
   theme: U
   sous_theme: transports_commun
-  source: 'Code de la route, art. R412-7 et R417-11'
-# ---------- Véhicules d'intérêt général ----------
+  source: Code de la route, art. R412-7 et R417-11
 - id: u-vehicule-prioritaire-feu-rouge
-  question: 'Arrêté au feu rouge, j''entends la sirène deux tons d''une ambulance du SAMU qui arrive derrière moi, gyrophare allumé. Que fais-je ?'
-  reponse: 'Je lui dégage le passage sans me mettre en danger : je me range sur le côté, ou je franchis le feu au pas avec la plus grande prudence si c''est le seul moyen.'
-  explication: 'R415-12 : céder « en toutes circonstances » aux véhicules d''intérêt général prioritaires qui annoncent leur approche (refus : 135 €, 4 points). Jamais de manœuvre dangereuse pour les piétons.'
+  question: Arrêté au feu rouge, j'entends la sirène deux tons d'une ambulance du SAMU qui arrive derrière moi, gyrophare
+    allumé. Que fais-je ?
+  reponse: 'Je dégage le passage sans me mettre en danger : rangé sur le côté ou, si c’est le seul moyen, en franchissant
+    le feu au pas, très prudemment.'
+  explication: 'R415-12 : céder « en toutes circonstances » aux véhicules d''intérêt général prioritaires qui annoncent leur
+    approche (refus : 135 €, 4 points). Jamais de manœuvre dangereuse pour les piétons.'
   theme: U
   sous_theme: vehicules_prioritaires
-  source: 'Code de la route, art. R415-12 ; securite-routiere.gouv.fr — Info/intox'
+  source: Code de la route, art. R415-12 ; securite-routiere.gouv.fr — Info/intox
 - id: u-ambulance-privee-sans-sirene
-  question: 'Une ambulance privée arrive derrière moi, feux bleus à éclats allumés mais sans avertisseur sonore. Dois-je lui céder le passage ?'
-  reponse: 'Non, mais je facilite son passage si je le peux sans danger : une ambulance privée n''a que des facilités de passage, et l''obligation de céder ne vaut que pour un véhicule prioritaire qui annonce son approche.'
-  explication: 'Prioritaires (police, pompiers, SAMU…) : gyrophare bleu + deux tons → je cède (R415-12). Facilités de passage (ambulances privées, EDF, transports de fonds) : feux à éclats + trois tons → je facilite.'
+  question: Une ambulance privée arrive derrière moi, feux bleus à éclats allumés mais sans avertisseur sonore. Dois-je lui
+    céder le passage ?
+  reponse: 'Non : elle n’a que des facilités de passage ; je facilite si je le peux sans danger. Céder n’est obligatoire qu’à
+    un véhicule prioritaire qui annonce son approche.'
+  explication: 'Prioritaires (police, pompiers, SAMU…) : gyrophare bleu + deux tons → je cède (R415-12). Facilités de passage
+    (ambulances privées, EDF, transports de fonds) : feux à éclats + trois tons → je facilite.'
   theme: U
   sous_theme: vehicules_prioritaires
-  source: 'Code de la route, art. R311-1 (6.5 et 6.6), R415-12 et R414-2'
+  source: Code de la route, art. R311-1 (6.5 et 6.6), R415-12 et R414-2
 - id: u-gyrophare-orange
-  question: 'Un véhicule avec un gyrophare orange (dépanneuse, chasse-neige, engin de voirie) approche. Est-il prioritaire ?'
-  reponse: 'Non : le gyrophare orange signale un véhicule lent, encombrant ou en intervention sur la voirie, donc un danger — prudence et distance, mais aucune priorité.'
-  explication: 'Gyrophare bleu + deux tons = prioritaire, on cède. Feux bleus à éclats + trois tons = facilités de passage (ambulance privée, EDF), on facilite sans obligation.'
+  question: Un véhicule avec un gyrophare orange (dépanneuse, chasse-neige, engin de voirie) approche. Est-il prioritaire
+    ?
+  reponse: 'Non : le gyrophare orange signale un véhicule lent, encombrant ou en intervention, donc un danger : prudence et
+    distance, mais aucune priorité.'
+  explication: Gyrophare bleu + deux tons = prioritaire, on cède. Feux bleus à éclats + trois tons = facilités de passage
+    (ambulance privée, EDF), on facilite sans obligation.
   theme: U
   sous_theme: vehicules_prioritaires
-  source: 'Code de la route, art. R313-27 et R313-28'
+  source: Code de la route, art. R313-27 et R313-28
 - id: u-corridor-securite
-  question: 'Sur autoroute, une dépanneuse gyrophare orange est arrêtée sur la bande d''arrêt d''urgence devant moi. Que fais-je ?'
-  reponse: 'Je ralentis et je change de voie si je peux le faire sans danger ; sinon, je m''écarte le plus possible en restant dans ma voie (corridor de sécurité).'
-  explication: 'R412-11-1 (2018) : vaut pour tout véhicule à feux spéciaux ou en feux de détresse, immobilisé ou lent sur l''accotement ou la BAU. Protège les dépanneurs et les patrouilleurs.'
+  question: Sur autoroute, une dépanneuse gyrophare orange est arrêtée sur la bande d'arrêt d'urgence devant moi. Que fais-je
+    ?
+  reponse: Je ralentis et je change de voie si c’est possible sans danger ; sinon je m’écarte le plus possible dans ma voie
+    (corridor de sécurité).
+  explication: 'R412-11-1 (2018) : vaut pour tout véhicule à feux spéciaux ou en feux de détresse, immobilisé ou lent sur
+    l''accotement ou la BAU. Protège les dépanneurs et les patrouilleurs.'
   theme: U
   sous_theme: vehicules_prioritaires
-  source: 'Code de la route, art. R412-11-1 et R413-17'
-# ---------- Convois, véhicules lents, animaux ----------
+  source: Code de la route, art. R412-11-1 et R413-17
 - id: u-convoi-exceptionnel
   question: 'Un véhicule pilote « CONVOI EXCEPTIONNEL » avec gyrophares orange me fait signe de ralentir : que faire ?'
-  reponse: 'Ralentir, me ranger à droite ou m''arrêter selon ses indications, ne pas m''engager dans l''intersection qu''il signale et ne dépasser le convoi que sur indication de l''accompagnateur.'
-  explication: 'Ne pas suivre les indications d''un véhicule de guidage : 135 € (R433-2 III). Un convoi engagé dans une intersection garde la priorité (R412-33).'
+  reponse: Ralentir, me ranger ou m’arrêter selon ses indications, ne pas m’engager dans l’intersection signalée, et ne dépasser
+    le convoi que sur indication de l’accompagnateur.
+  explication: 'Ne pas suivre les indications d''un véhicule de guidage : 135 € (R433-2 III). Un convoi engagé dans une intersection
+    garde la priorité (R412-33).'
   theme: U
   sous_theme: vehicules_lents_animaux
   importance: utile
-  source: 'Code de la route, art. R433-17, R433-2 III et R412-33'
+  source: Code de la route, art. R433-17, R433-2 III et R412-33
 - id: u-tracteur-depassement
-  question: 'Un tracteur, gyrophare orange allumé, roule à 25 km/h devant moi sur une route à ligne discontinue, bonne visibilité, personne en face. Puis-je le dépasser ?'
-  reponse: 'Oui : le gyrophare orange signale un véhicule lent, pas une interdiction de dépasser ; j''annonce mon dépassement et je me méfie d''un virage soudain vers un champ ou un chemin.'
-  explication: 'Un engin agricole est large, sort des champs sans visibilité et laisse de la boue ; ses clignotants sont parfois masqués par l''outil attelé.'
+  question: Un tracteur, gyrophare orange allumé, roule à 25 km/h devant moi sur une route à ligne discontinue, bonne visibilité,
+    personne en face. Puis-je le dépasser ?
+  reponse: 'Oui : le gyrophare orange signale un véhicule lent, pas une interdiction ; j’annonce mon dépassement en me méfiant
+    d’un virage soudain vers un chemin.'
+  explication: Un engin agricole est large, sort des champs sans visibilité et laisse de la boue ; ses clignotants sont parfois
+    masqués par l'outil attelé.
   theme: U
   sous_theme: vehicules_lents_animaux
-  source: 'Code de la route, art. R313-28 et R414-4 ; Ornikar — Véhicules lents'
+  source: Code de la route, art. R313-28 et R414-4 ; Ornikar — Véhicules lents
 - id: u-cavalier-depassement
-  question: 'Hors agglomération, un cavalier circule au bord droit de la route devant moi. Comment le dépasser ?'
-  reponse: 'Lentement, en m''écartant d''au moins 1,50 m (1 m en agglomération), sans klaxonner ni accélérer brusquement : un cheval effrayé peut faire un écart sur la chaussée.'
-  explication: 'R414-4 IV : distance latérale pour un cavalier ou un animal ; R413-17 III 11° : vitesse réduite au croisement ou au dépassement d''animaux. Tout animal doit avoir un conducteur (R412-44).'
+  question: Hors agglomération, un cavalier circule au bord droit de la route devant moi. Comment le dépasser ?
+  reponse: 'Lentement, avec au moins 1,50 m d’écart (1 m en agglomération), sans klaxonner ni accélérer brusquement : un cheval
+    effrayé peut faire un écart.'
+  explication: 'R414-4 IV : distance latérale pour un cavalier ou un animal ; R413-17 III 11° : vitesse réduite au croisement
+    ou au dépassement d''animaux. Tout animal doit avoir un conducteur (R412-44).'
   theme: U
   sous_theme: vehicules_lents_animaux
-  source: 'Code de la route, art. R414-4, R413-17 et R412-44'
+  source: Code de la route, art. R414-4, R413-17 et R412-44
 - id: u-troupeau-animaux
-  question: 'Sur une route de campagne, un troupeau de vaches conduit par un berger occupe toute la chaussée devant moi. Que fais-je ?'
-  reponse: 'Je ralentis fortement et je m''arrête si nécessaire, sans klaxonner ni faire d''appel de phares, et j''attends les indications du conducteur du troupeau pour repartir au pas.'
-  explication: 'R413-17 III 11° : vitesse réduite au croisement ou au dépassement d''animaux. Un klaxon disperse un troupeau et fait paniquer les bêtes ; tout animal doit avoir un conducteur (R412-44).'
+  question: Sur une route de campagne, un troupeau de vaches conduit par un berger occupe toute la chaussée devant moi. Que
+    fais-je ?
+  reponse: Je ralentis fortement, m’arrête si nécessaire, sans klaxon ni appel de phares, et j’attends les indications du
+    berger pour repartir au pas.
+  explication: 'R413-17 III 11° : vitesse réduite au croisement ou au dépassement d''animaux. Un klaxon disperse un troupeau
+    et fait paniquer les bêtes ; tout animal doit avoir un conducteur (R412-44).'
   theme: U
   sous_theme: vehicules_lents_animaux
-  source: 'Code de la route, art. R413-17 et R412-44'
+  source: Code de la route, art. R413-17 et R412-44
 - id: u-voiturette
-  question: 'Une voiturette (quadricycle léger, sans permis B) roule à 45 km/h devant moi sur une route limitée à 80 km/h. Que dois-je en déduire ?'
-  reponse: 'Qu''elle ne peut pas aller plus vite (45 km/h par construction) et qu''elle peut être conduite dès 14 ans avec le permis AM : je la traite comme un véhicule lent et je dépasse sans forcer.'
-  explication: 'Une voiturette est interdite sur autoroute et voies rapides. Son conducteur est souvent très jeune ou très âgé — donc peu expérimenté ou peu réactif : je lui laisse de la marge.'
+  question: Une voiturette (quadricycle léger, sans permis B) roule à 45 km/h devant moi sur une route limitée à 80 km/h.
+    Que dois-je en déduire ?
+  reponse: 'Qu’elle ne peut pas aller plus vite (45 km/h par construction) et que son conducteur peut n’avoir que 14 ans :
+    véhicule lent, dépassement sans forcer.'
+  explication: 'Une voiturette est interdite sur autoroute et voies rapides. Son conducteur est souvent très jeune ou très
+    âgé — donc peu expérimenté ou peu réactif : je lui laisse de la marge.'
   theme: U
   sous_theme: vehicules_lents_animaux
   importance: utile
-  source: 'Code de la route, art. R311-1 et R421-2 ; service-public.fr — Permis AM'
+  source: Code de la route, art. R311-1 et R421-2 ; service-public.fr — Permis AM
 - id: u-moto-ecart-chaussee
-  question: 'Le motard qui me précède se déporte brusquement vers le milieu de la voie à l''approche d''une plaque d''égout mouillée. Que fais-je ?'
-  reponse: 'Je garde ma distance et je ne profite pas de l''espace libéré pour le dépasser : un deux-roues doit éviter les plaques, gravillons et rails glissants, qui le font chuter.'
-  explication: 'Un motard « zigzague » pour rester sur une surface adhérente et pour être vu. Le vent latéral et l''appel d''air d''un camion le déportent aussi : on ne le serre jamais.'
+  question: Le motard qui me précède se déporte brusquement vers le milieu de la voie à l'approche d'une plaque d'égout mouillée.
+    Que fais-je ?
+  reponse: 'Je garde ma distance sans profiter de l’espace libéré pour le dépasser : un deux-roues doit éviter plaques, gravillons
+    et rails, qui le font chuter.'
+  explication: 'Un motard « zigzague » pour rester sur une surface adhérente et pour être vu. Le vent latéral et l''appel
+    d''air d''un camion le déportent aussi : on ne le serre jamais.'
   theme: U
   sous_theme: motos
-  source: 'Code en Poche — Les motos ; Code de la route, art. R414-4'
+  source: Code en Poche — Les motos ; Code de la route, art. R414-4
 - id: u-pl-insertion-autoroute
-  question: Sur autoroute, un poids lourd chargé met son clignotant pour s'insérer depuis une bretelle, à ma hauteur.
-    Que fais-je ?
-  reponse: Je facilite son insertion si possible, en ajustant mon allure ou en changeant de voie après contrôles.
-    Je ne crée pas un danger pour lui ouvrir un espace.
-  explication: Le poids lourd reste tenu de céder à l’insertion. Son accélération peut être limitée ; elle n’est
-    pas identique pour tous les véhicules et toutes les bretelles.
+  question: Sur autoroute, un poids lourd chargé met son clignotant pour s'insérer depuis une bretelle, à ma hauteur. Que
+    fais-je ?
+  reponse: Je facilite son insertion si possible, en ajustant mon allure ou en changeant de voie après contrôles, sans créer
+    de danger pour autant.
+  explication: Le poids lourd reste tenu de céder à l’insertion. Son accélération peut être limitée ; elle n’est pas identique
+    pour tous les véhicules et toutes les bretelles.
   theme: U
   sous_theme: poids_lourds
   source: Code de la route, art. R421-3 ; coursdecode — Les poids lourds
   tags:
   - revision::v3_1
 - id: u-edpm-hors-agglo
-  question: 'Je suis en trottinette électrique et je veux rejoindre le village voisin par une départementale limitée à 80 km/h. Puis-je ?'
-  reponse: 'Non : hors agglomération, un EDPM ne circule que sur les voies vertes et les pistes cyclables, sauf autorisation locale sur une route limitée à 80 km/h — et alors casque, gilet et feux allumés sont exigés.'
-  explication: 'En agglomération au contraire, la chaussée limitée à 50 km/h est autorisée à défaut d''aménagement cyclable. Circuler hors des voies permises : 135 €.'
+  question: Je suis en trottinette électrique et je veux rejoindre le village voisin par une départementale limitée à 80 km/h.
+    Puis-je ?
+  reponse: 'Non : hors agglomération, un EDPM ne circule que sur voies vertes et pistes cyclables ; exception : autorisation
+    locale sur route à 80 km/h (casque, gilet et feux exigés).'
+  explication: 'En agglomération au contraire, la chaussée limitée à 50 km/h est autorisée à défaut d''aménagement cyclable.
+    Circuler hors des voies permises : 135 €.'
   theme: U
   sous_theme: edpm
   tags:
   - nouveau::2023
-  source: 'Code de la route, art. R412-43-1 II et III ; service-public.fr F308'
+  source: Code de la route, art. R412-43-1 II et III ; service-public.fr F308

@@ -90,7 +90,7 @@
   sous_theme: pneus
   source: securite-routiere.gouv.fr — Pneus ; Michelin — Vérifier la pression
 - id: aff-m-chargement-pression
-  contexte: Coffre plein de valises pour un départ en vacances (question officielle 2023, Q1).
+  contexte: Coffre plein de valises pour un départ en vacances.
   affirmation: Je diminue la pression des pneus pour gagner en confort.
   verdict: faux
   pourquoi: Je règle les pneus à la valeur « véhicule chargé » prévue par le constructeur, à froid. Une baisse arbitraire
@@ -161,7 +161,7 @@
   importance: utile
   source: Code de la route, art. R313-2 et s. ; service-public.fr F19459
 - id: aff-m-stationnement-arriere
-  contexte: Ce conducteur va se ranger en créneau avec l'assistance au stationnement (question officielle 2023, Q8).
+  contexte: Ce conducteur va se ranger en créneau avec l'assistance au stationnement.
   affirmation: Il n'a plus à surveiller la circulation vers l'arrière.
   verdict: faux
   pourquoi: 'Il doit surveiller vers l''avant comme vers l''arrière : la loi lui impose de garder le contrôle de la manœuvre et de pouvoir l''interrompre à tout instant (R412-6-3). Les capteurs ignorent un enfant ou un poteau fin.'

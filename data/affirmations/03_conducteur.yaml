@@ -231,7 +231,7 @@
 - id: aff-c-doses-maison
   affirmation: Le plus souvent, les doses d'alcool servies à la maison sont plus importantes que celles servies dans un bar.
   verdict: vrai
-  pourquoi: 'Question officielle 2023 (Q17 : « à la maison »). Au bar, le verre standard est dosé (≈ 10 g d''alcool pur) ; chez soi, on sert sans mesure : un verre maison peut en valoir deux ou trois.'
+  pourquoi: 'Un exemple public de question (2023) attend « à la maison ». Au bar, le verre standard est dosé (≈ 10 g d''alcool pur) ; chez soi, on sert sans mesure : un verre maison peut en valoir deux ou trois.'
   theme: C
   sous_theme: deficiences
   source: Sécurité routière — Exemples de nouvelles questions (Q17) ; securite-routiere.gouv.fr — L'alcool et la conduite
@@ -383,7 +383,7 @@
 - id: aff-c-ecran-video
   affirmation: Un écran vidéo en fonctionnement dans mon champ de vision est interdit, même si je ne le manipule pas.
   verdict: vrai
-  pourquoi: 'Tout écran en marche dans le champ de vision du conducteur, hors aide à la conduite ou navigation, est interdit : contravention de 5e classe (jusqu''à 1 500 €), 3 points et confiscation de l''appareil (R412-6-2).'
+  pourquoi: 'Tout écran en marche dans le champ de vision du conducteur, hors aide à la conduite ou navigation, est interdit : contravention de 5e classe, 3 points et confiscation de l''appareil (R412-6-2).'
   importance: utile
   theme: C
   sous_theme: deficiences

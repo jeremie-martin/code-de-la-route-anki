@@ -153,7 +153,6 @@
   nom: Panneau de confirmation (D61/D62)
   signification: Panneau placé après un carrefour ou un échangeur confirmant les directions desservies par la route et leurs distances (kilomètres).
   conduite: Vérifier qu'on est sur le bon itinéraire.
-  complement: Après le carrefour ou l'échangeur.
   theme: L
   sous_theme: panneaux
   importance: utile

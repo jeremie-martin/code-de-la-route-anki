@@ -176,9 +176,10 @@ def write_reports(data, note_order, out, per_day=20):
     write_design_reports(by_id, out)
     decisions = yaml.safe_load(OBJECTIVES.with_name('sign_exclusions.yaml').read_text(encoding='utf-8'))
     selection = ['# Choix de représentation des signaux\n',
-                 'Pas de filtre par rareté ni de plafond. Ces entrées de l’inventaire ne produisent pas '
-                 'une carte de reconnaissance distincte pour les raisons ci-dessous. Une couverture '
-                 'textuelle entraîne la règle, pas la reconnaissance visuelle de toutes ses variantes.\n',
+                 'Aucun plafond numérique ni filtre automatique : chaque entrée de l’inventaire sans carte de '
+                 'reconnaissance distincte est listée ici avec sa raison éditoriale (v6 : signaux sans décision '
+                 'de conduite ou variantes d’une famille déjà apprise). Une couverture textuelle entraîne la règle, '
+                 'pas la reconnaissance visuelle de toutes ses variantes.\n',
                  '| Entrées | Raison | Cartes correspondantes |', '|---|---|---|']
     for d in decisions:
         selection.append('| ' + ', '.join(d['codes']) + ' | ' + d['raison'] + ' | ' +

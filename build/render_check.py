@@ -31,8 +31,15 @@ SAMPLES = {
     'aff-r-nuit-feux-route-arret',
     'c-arret-somme',
     'c-cycliste-devant-depassement',
-    'c116',
-    'c65b',
+    'c13c',
+    'b14',
+    'c20a',
+    'c-distance-arret-reperes',
+    'a-message-alerte',
+    'd-conduite-supervisee',
+    'aff-r-verglas-temperature-positive',
+    'd-ceinture-sanction',
+    'm-galette-chiffres',
     'conf-ab3a-ab4',
     'conf-b0-b1',
     'conf-b13-b13a',
@@ -55,6 +62,8 @@ SAMPLES = {
     'scn-prioritaire-droite-arrive',
     'scn-sortie-parking',
     'u-interfiles-chiffres',
+    'l-stop-arret', 'u-voie-bus', 'r-tunnel-panne', 'aff-d-disque-a-duree',
+    'l-vitesse-hors-agglo', 'marq-losange-vr', 'l-formes-couleurs-panneaux', 'm-freinage-urgence-abs',
 }
 
 # Kept separate so the checker itself can be tested against deliberately bad pages.

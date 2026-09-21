@@ -1,4 +1,4 @@
-# Conception des cartes — v5.1
+# Conception des cartes — v7
 
 ## Ce que l’on optimise
 
@@ -32,7 +32,10 @@ la vitesse ou une distance si le schéma n’est pas à l’échelle : les préc
 Ne pas inventer une priorité manquante pour obtenir une réponse tranchée.
 
 La réponse principale est courte et évaluable. L’explication donne la limite, le mécanisme ou le
-contre-exemple ; elle n’ajoute pas une liste obligatoire à réciter. Les rectos n’affichent plus le
+contre-exemple ; elle n’ajoute pas une liste obligatoire à réciter. Depuis la v7, une réponse de
+question tient en 30 mots au plus (cible 10-22) : **la décision ou la valeur, puis la raison décisive**.
+Une deuxième condition, une conséquence ou une sanction vont dans l’explication : elles restent lues au
+verso sans devenir un critère pour se dire « Bon ». Le build refuse une réponse plus longue sans `long_ok`. Les rectos n’affichent plus le
 sous-thème, qui pouvait servir d’indice involontaire.
 
 ## Clozes, variantes et doublons
@@ -43,6 +46,11 @@ secondaires ; il combine les seuils importants avec des applications nouvelles. 
 cloze, examiner **chaque recto rendu**, pas seulement la note YAML. La v5 est un départ neuf autorisé par l’absence d’import ; une diffusion ultérieure auprès
 d’utilisateurs ayant étudié le deck doit traiter toute migration de cibles ou de numéros de cloze.
 
+Règles de trous (v6, contrôlées par le build) : une phrase `texte` ne porte qu’un trou ; plusieurs cibles
+vont dans `rappels` ; un trou fait au plus huit mots. Une formule à réciter devient une question ; une
+énumération à trous (« quatre causes… ») devient une question qui demande la liste entière, car le
+trou d’une liste se devine par élimination. `multi_ok` et `long_ok` documentent les rares exceptions.
+
 Deux cartes sur la même règle sont justifiées si elles entraînent des compétences différentes :
 reconnaissance d’un marquage puis décision avec trafic, rappel d’un seuil puis application à un cas
 limite. Elles ne le sont pas pour reformuler le même oui/non. Les paires proches relevées par
@@ -51,6 +59,16 @@ limite. Elles ne le sont pas pour reformuler le même oui/non. Les paires proche
 Une famille d’affirmations doit éviter une réponse devinable par le style. Le contrôle de balance
 35–65 % des fichiers complets est une alerte de rédaction ; on ne rajoute pas de questions inutiles
 pour équilibrer un nombre. Ces cartes ne sont pas un simulateur de notation ETG.
+
+## Signaux : ce qui mérite une carte
+
+Un signal reçoit une carte de reconnaissance s’il porte une décision de conduite (céder, s’arrêter,
+ne pas dépasser, choisir une voie) ou une discrimination que l’épreuve peut demander (B6a1/B6d,
+B15/C18, J1/J3). Les variantes d’une famille déjà apprise (catégories exotiques de M4, campings,
+« arrêt au poste »), les services au pictogramme transparent (distributeur de billets, embarcadère)
+et les cartouches sont exclus et documentés avec leur couverture. Le complément d’une reconnaissance
+ne contient pas la nomenclature (codes de fin, panonceaux possibles, distances d’implantation) :
+il donne la seule nuance qui change une décision, ou rien.
 
 ## Sources et précision
 

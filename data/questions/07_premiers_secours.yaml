@@ -2,18 +2,20 @@
 # Cartes de décision : une situation, une décision et sa raison (brief v2). Les chiffres sont dans data/faits/07,
 # les idées reçues de l'épreuve dans data/affirmations/07.
 - id: a-proteger-arret
-  question: "Je suis le premier à arriver sur un accident, sur une route à double sens. Où et comment je m'arrête ?"
-  reponse: "Après le lieu de l'accident (pas avant : je ne dois pas le masquer) et en sécurité sur l'accotement ; feux de détresse allumés et gilet enfilé avant de sortir."
-  explication: "Protéger = éviter le suraccident : gilet pour chaque occupant qui sort, triangle à 30 m et plus (avant un virage ou un sommet de côte) si sa pose n'expose pas, puis tout le monde hors chaussée — derrière la glissière sur voie rapide."
+  question: Je suis le premier à arriver sur un accident, sur une route à double sens. Où et comment je m'arrête ?
+  reponse: Après le lieu de l’accident (pour ne pas le masquer), en sécurité sur l’accotement ; feux de détresse allumés et
+    gilet enfilé avant de sortir.
+  explication: 'Protéger = éviter le suraccident : gilet pour chaque occupant qui sort, triangle à 30 m et plus (avant un
+    virage ou un sommet de côte) si sa pose n''expose pas, puis tout le monde hors chaussée — derrière la glissière sur voie
+    rapide.'
   theme: A
   sous_theme: proteger
-  source: "Code de la route, art. R416-19 ; Ornikar — Protéger la zone ; Croix-Rouge française"
+  source: Code de la route, art. R416-19 ; Ornikar — Protéger la zone ; Croix-Rouge française
 - id: a-incendie-vehicule
   question: 'Un véhicule accidenté commence à prendre feu sous le capot : que fais-je ?'
-  reponse: J’éloigne les personnes du danger et j’alerte le 18 ou le 112. Je ne m’expose pas pour essayer d’éteindre
-    le feu.
-  explication: Ne pas ouvrir le capot en grand ni s’approcher pour lire une plaque de matières dangereuses.
-    Transmettre aux secours seulement les informations observables en sécurité ; suivre leurs consignes.
+  reponse: J’éloigne les personnes du danger et j’alerte le 18 ou le 112. Je ne m’expose pas pour essayer d’éteindre le feu.
+  explication: Ne pas ouvrir le capot en grand ni s’approcher pour lire une plaque de matières dangereuses. Transmettre aux
+    secours seulement les informations observables en sécurité ; suivre leurs consignes.
   theme: A
   sous_theme: proteger
   importance: utile
@@ -21,54 +23,64 @@
   tags:
   - revision::v5
 - id: a-alerter-borne-ou-portable
-  question: 'Témoin d''un accident sur autoroute, j''ai mon portable et une borne d''appel orange à 200 m : lequel
-    j''utilise ?'
-  reponse: Si elle est accessible en sécurité sans retarder une alerte urgente, la borne localise précisément l’appel.
-    Sinon, j’appelle le 112 depuis un lieu sûr.
-  explication: Ne pas quitter une victime nécessitant une aide immédiate ni marcher dangereusement pour chercher
-    une borne. Donner route, sens et repère au téléphone ; aucun appel mobile sans réseau disponible.
+  question: 'Témoin d''un accident sur autoroute, j''ai mon portable et une borne d''appel orange à 200 m : lequel j''utilise
+    ?'
+  reponse: La borne si elle est accessible en sécurité sans retarder l’alerte (elle localise l’appel) ; sinon le 112 depuis
+    un lieu sûr.
+  explication: Ne pas quitter une victime nécessitant une aide immédiate ni marcher dangereusement pour chercher une borne.
+    Donner route, sens et repère au téléphone ; aucun appel mobile sans réseau disponible.
   theme: A
   sous_theme: alerter
   source: securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA
   tags:
   - revision::v3
-- id: a-alerter-raccrocher
-  question: "Au téléphone avec le 112, j'ai donné le lieu, le nombre de victimes et leur état. À quel moment je raccroche ?"
-  reponse: "Seulement quand l'opérateur me le dit : il peut avoir des questions ou me donner des consignes (gestes à faire, guider les secours) ; je ne raccroche pas le premier."
-  explication: "Piège de l'épreuve : « je raccroche dès que j'ai donné l'adresse » est faux. Après l'appel, je reste joignable et j'envoie quelqu'un guider les secours."
+- id: a-message-alerte
+  question: J’appelle le 112 pour un accident. Quelles informations mon message doit-il donner ?
+  reponse: Le lieu précis (route, sens et repère) ; la nature de l’accident ; le nombre et l’état des victimes ; les dangers
+    particuliers (incendie, produits ou voie coupée).
+  explication: 'C’est d’après ce message que l’opérateur dimensionne les secours : rester précis et calme, s’identifier, répondre
+    aux questions et ne pas raccrocher le premier.'
   theme: A
   sous_theme: alerter
-  source: "Croix-Rouge française — Alerter ; Ornikar — Alerter les secours"
+  source: Croix-Rouge française — Alerter les secours ; securite-routiere.gouv.fr
+  tags:
+  - revision::v6
+- id: a-alerter-raccrocher
+  question: Au téléphone avec le 112, j'ai donné le lieu, le nombre de victimes et leur état. À quel moment je raccroche ?
+  reponse: 'Seulement quand l’opérateur me le dit : il peut avoir des questions ou des consignes à donner ; je ne raccroche
+    pas le premier.'
+  explication: 'Piège de l''épreuve : « je raccroche dès que j''ai donné l''adresse » est faux. Après l''appel, je reste joignable
+    et j''envoie quelqu''un guider les secours.'
+  theme: A
+  sous_theme: alerter
+  source: Croix-Rouge française — Alerter ; Ornikar — Alerter les secours
 - id: a-evaluer-victime
   question: 'Zone protégée, secours alertés. Une victime est allongée et ne bouge pas : que fais-je en premier ?'
-  reponse: Je vérifie si elle répond ; sinon je libère les voies aériennes et recherche une respiration normale
-    pendant dix secondes au maximum.
-  explication: 'Les gasps, respirations rares et irrégulières, ne sont pas une respiration normale : alerter, commencer
-    la RCP et faire apporter un DAE.'
+  reponse: Je vérifie si elle répond ; sinon je libère les voies aériennes et recherche une respiration normale pendant dix
+    secondes au maximum.
+  explication: 'Les gasps, respirations rares et irrégulières, ne sont pas une respiration normale : alerter, commencer la
+    RCP et faire apporter un DAE.'
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
   tags:
   - revision::v3
 - id: a-pls
-  question: Après un malaise sans chute ni traumatisme, une personne ne répond pas mais respire normalement. Quel
-    geste après vérification de la respiration ?
+  question: Après un malaise sans chute ni traumatisme, une personne ne répond pas mais respire normalement. Quel geste après
+    vérification de la respiration ?
   reponse: PLS, alerte et surveillance continue de la respiration.
-  explication: 'Après un traumatisme ou si l’origine est inconnue, suivre les consignes des secours : la mise sur
-    le côté n’est pas systématique.'
+  explication: 'Après un traumatisme ou si l’origine est inconnue, suivre les consignes des secours : la mise sur le côté
+    n’est pas systématique.'
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
   tags:
   - revision::v3
 - id: a-rcp-dae
-  question: Un adulte ne répond pas et ne respire pas normalement (respiration absente ou gasps). Que fais-je
-    ?
-  reponse: J’alerte, fais apporter un DAE et commence immédiatement la RCP ; je suis les instructions des secours
-    et du DAE.
-  explication: 'Adulte : 30 compressions puis 2 insufflations si je sais et peux les pratiquer ; sinon compressions
-    continues. Fréquence 100–120/min, profondeur 5–6 cm. Faire alerter et apporter le DAE ; suivre le guidage
-    des secours.'
+  question: Un adulte ne répond pas et ne respire pas normalement (respiration absente ou gasps). Que fais-je ?
+  reponse: J’alerte, fais apporter un DAE et commence immédiatement la RCP ; je suis les instructions des secours et du DAE.
+  explication: 'Adulte : 30 compressions puis 2 insufflations si je sais et peux les pratiquer ; sinon compressions continues.
+    Fréquence 100–120/min, profondeur 5–6 cm. Faire alerter et apporter le DAE ; suivre le guidage des secours.'
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
@@ -76,66 +88,87 @@
   - revision::v3
   - revision::v5
 - id: a-dae-utilisation
-  question: "Un témoin apporte un DAE ; je l'ai allumé et j'ai posé les électrodes. L'appareil annonce « analyse en cours » : que fais-je ?"
-  reponse: "Je m'écarte et j'empêche quiconque de toucher la victime pendant l'analyse puis pendant le choc ; ensuite je reprends aussitôt les compressions, en suivant ses consignes vocales."
-  explication: "Le DAE (panneau vert, cœur et éclair) parle et guide pas à pas ; c'est lui qui décide s'il faut choquer. On le laisse en place et allumé jusqu'à l'arrivée des secours."
+  question: 'Un témoin apporte un DAE ; je l''ai allumé et j''ai posé les électrodes. L''appareil annonce « analyse en cours
+    » : que fais-je ?'
+  reponse: Je m’écarte et j’empêche quiconque de toucher la victime pendant l’analyse et le choc ; puis je reprends aussitôt
+    les compressions, selon ses consignes.
+  explication: Le DAE (panneau vert, cœur et éclair) parle et guide pas à pas ; c'est lui qui décide s'il faut choquer. On
+    le laisse en place et allumé jusqu'à l'arrivée des secours.
   theme: A
   sous_theme: secourir
-  source: "Croix-Rouge française — Défibrillateur ; décret n° 2007-705"
+  source: Croix-Rouge française — Défibrillateur ; décret n° 2007-705
 - id: a-hemorragie
-  question: Zone protégée. Une victime saigne abondamment du bras, sans objet planté dans la plaie. Quel geste
-    immédiat ?
-  reponse: Je comprime fortement la plaie, main protégée si possible, et maintiens la pression ; je fais allonger
-    la victime et alerter les secours.
-  explication: 'Si la compression d’un membre est impossible ou inefficace : garrot selon la formation ou le
-    guidage des secours ; noter l’heure, ne pas le desserrer. La présence d’un objet planté change le geste.'
+  question: Zone protégée. Une victime saigne abondamment du bras, sans objet planté dans la plaie. Quel geste immédiat ?
+  reponse: Je comprime fortement la plaie (main protégée si possible) et je maintiens la pression ; victime allongée, secours
+    alertés.
+  explication: 'Si la compression d’un membre est impossible ou inefficace : garrot selon la formation ou le guidage des secours
+    ; noter l’heure, ne pas le desserrer. La présence d’un objet planté change le geste.'
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, pages 15–18 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
   tags:
   - revision::v5
 - id: a-blesse-deplacer
-  question: 'Un blessé conscient est coincé dans sa voiture, en plein soleil. Un témoin veut le sortir pour le mettre
-    à l''ombre : que fais-je ?'
-  reponse: 'Je ne le déplace pas pour ce seul motif : j’alerte, limite son exposition à la chaleur et surveille
-    son état, en suivant les consignes des secours.'
-  explication: Un déplacement d’urgence ne se justifie que par un danger immédiat non maîtrisable. Éviter les mouvements
-    inutiles et ne rien donner à boire.
+  question: 'Un blessé conscient est coincé dans sa voiture, en plein soleil. Un témoin veut le sortir pour le mettre à l''ombre
+    : que fais-je ?'
+  reponse: 'Je ne le déplace pas pour ce motif : j’alerte, je limite son exposition à la chaleur et je surveille son état.'
+  explication: Un déplacement d’urgence ne se justifie que par un danger immédiat non maîtrisable. Éviter les mouvements inutiles
+    et ne rien donner à boire.
   theme: A
   sous_theme: secourir
   source: Croix-Rouge française ; Ornikar — Secourir un blessé
   tags:
   - revision::v3
 - id: a-casque-motard
-  question: 'Un motard accidenté est inconscient mais respire. Un témoin veut lui retirer son casque « pour qu''il
-    respire mieux » : que fais-je ?'
-  reponse: 'Je l''en empêche : on ne retire pas le casque (risque de lésion des cervicales) ; j''ouvre la visière,
-    je desserre ce qui gêne la respiration et je surveille en attendant les secours.'
-  explication: Ne pas retirer un casque simplement pour le confort. Si la respiration devient absente ou anormale,
-    prévenir immédiatement les secours et suivre leurs instructions pour la réanimation.
+  question: 'Un motard accidenté est inconscient mais respire. Un témoin veut lui retirer son casque « pour qu''il respire
+    mieux » : que fais-je ?'
+  reponse: 'Je l’en empêche : on ne retire pas le casque (risque pour les cervicales) ; j’ouvre la visière, desserre ce qui
+    gêne et surveille jusqu’aux secours.'
+  explication: Ne pas retirer un casque simplement pour le confort. Si la respiration devient absente ou anormale, prévenir
+    immédiatement les secours et suivre leurs instructions pour la réanimation.
   theme: A
   sous_theme: secourir
   source: Croix-Rouge française ; securite-routiere.gouv.fr
   tags:
   - revision::v3
+- id: a-non-assistance
+  question: Témoin d’un accident, je ne sais pas faire les gestes de secours. Que m’impose la loi ?
+  reponse: 'Apporter l’aide que je peux donner sans risque pour moi ni pour autrui : au minimum protéger, alerter les secours
+    et suivre leurs consignes.'
+  explication: L’inaction peut constituer le délit de non-assistance à personne en danger (Code pénal, art. 223-6). Appeler
+    ne dispense pas d’un autre geste utile que je peux faire sans danger ; le guidage des secours aide à choisir l’action.
+  theme: A
+  sous_theme: obligations
+  source: Code pénal, article 223-6
+  tags:
+  - revision::v6
 - id: a-accident-materiel-obligations
-  question: "En manœuvrant sur un parking, j'accroche une voiture stationnée. Personne autour : que fais-je ?"
-  reponse: "Je m'arrête et je cherche le propriétaire ; à défaut je laisse mes coordonnées bien en vue et je déclare l'accident à mon assureur. Repartir sans me faire connaître serait un délit de fuite."
-  explication: "R231-1 : tout conducteur impliqué s'arrête aussitôt que possible et communique identité et adresse. Délit de fuite (art. 434-10 du Code pénal) : 3 ans, 75 000 €, 6 points. Déclaration à l'assureur sous 5 jours ouvrés."
+  question: 'En manœuvrant sur un parking, j''accroche une voiture stationnée. Personne autour : que fais-je ?'
+  reponse: Je m’arrête et cherche le propriétaire ; à défaut je laisse mes coordonnées en évidence et je déclare l’accident
+    à mon assureur. Repartir serait un délit de fuite.
+  explication: 'R231-1 : tout conducteur impliqué s''arrête aussitôt que possible et communique identité et adresse. Le délit
+    de fuite (art. 434-10 du Code pénal) retire 6 points et expose à des peines judiciaires. Déclaration à l''assureur sous
+    5 jours ouvrés.'
   theme: A
   sous_theme: obligations
-  source: "Code de la route, art. R231-1 et L231-1 ; Code pénal, art. 434-10"
+  source: Code de la route, art. R231-1 et L231-1 ; Code pénal, art. 434-10
 - id: a-constat-desaccord
-  question: "Accrochage sans blessé. L'autre conducteur décrit les circonstances autrement que moi et me tend le constat à signer : que fais-je ?"
-  reponse: "Je ne signe pas un constat que je conteste : je note mon désaccord dans les observations ou je remplis mon propre constat, avec photos et coordonnées des témoins."
-  explication: "Le constat n'est pas une reconnaissance de responsabilité : il décrit les faits, l'assureur tranche. Une fois signé et les exemplaires séparés, plus rien ne peut être modifié."
+  question: 'Accrochage sans blessé. L''autre conducteur décrit les circonstances autrement que moi et me tend le constat
+    à signer : que fais-je ?'
+  reponse: 'Je ne signe pas un constat que je conteste : je note mon désaccord dans les observations ou je remplis mon propre
+    constat, avec photos et témoins.'
+  explication: 'Le constat n''est pas une reconnaissance de responsabilité : il décrit les faits, l''assureur tranche. Une
+    fois signé et les exemplaires séparés, plus rien ne peut être modifié.'
   theme: A
   sous_theme: obligations
-  source: "service-public.fr — Constat amiable ; Code des assurances, art. L113-2"
+  source: service-public.fr — Constat amiable ; Code des assurances, art. L113-2
 - id: a-accident-corporel-obligations
-  question: "Je suis impliqué dans un accident où quelqu'un est blessé. Une fois les secours alertés, que dois-je faire d'autre ?"
-  reponse: "Rester sur place, faire prévenir la police ou la gendarmerie et lui donner mon identité ; je ne modifie pas l'état des lieux (traces, position des véhicules) autant que la sécurité de la circulation le permet."
-  explication: "R231-1 3°. Les conducteurs impliqués sont dépistés (alcool, stupéfiants). Ne pas alerter ni secourir : non-assistance à personne en danger (5 ans, 75 000 €)."
+  question: Je suis impliqué dans un accident où quelqu'un est blessé. Une fois les secours alertés, que dois-je faire d'autre
+    ?
+  reponse: Rester sur place, faire prévenir police ou gendarmerie et donner mon identité ; ne pas modifier l’état des lieux,
+    sauf pour la sécurité de la circulation.
+  explication: 'R231-1 3°. Les conducteurs impliqués sont dépistés (alcool, stupéfiants). Ne pas alerter ni secourir : délit
+    de non-assistance à personne en danger.'
   theme: A
   sous_theme: obligations
-  source: "Code de la route, art. R231-1, L234-3 et L235-2 ; Code pénal, art. 223-6"
+  source: Code de la route, art. R231-1, L234-3 et L235-2 ; Code pénal, art. 223-6

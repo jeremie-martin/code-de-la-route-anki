@@ -1,16 +1,19 @@
 - id: s-ceinture-obligation
   question: Qui doit porter la ceinture dans la voiture, et qui répond du non-port ?
-  reponse: 'Tous les occupants, à l''avant comme à l''arrière : un passager majeur est sanctionné lui-même, et le conducteur répond de chaque passager de moins de 18 ans.'
-  explication: 'Conducteur non attaché : 135 € et 3 points ; passager majeur : 135 € pour lui, sans points ; passager mineur non attaché : 135 € pour le conducteur, sans points. Une place équipée d''une ceinture par personne ; dispenses limitées (morphologie inadaptée, certificat médical, taxi en service — R412-1 II).'
+  reponse: 'Tous les occupants, à l’avant comme à l’arrière : un passager majeur répond de lui-même ; le conducteur répond
+    de chaque passager de moins de 18 ans.'
+  explication: 'Conducteur non attaché : 135 € et 3 points ; passager majeur : 135 € pour lui, sans points ; passager mineur
+    non attaché : 135 € pour le conducteur, sans points. Une place équipée d''une ceinture par personne ; dispenses limitées
+    (morphologie inadaptée, certificat médical, taxi en service — R412-1 II).'
   theme: S
   sous_theme: passagers
   source: Code de la route, art. R412-1 et R412-2
 - id: s-ceinture-50-kmh
   question: Lors d’un choc frontal à 50 km/h, un adulte non attaché peut-il se retenir avec les bras ?
-  reponse: 'Non : sa vitesse est celle du véhicule avant le choc ; ses bras ne peuvent pas remplacer la ceinture.
-    Il peut heurter l’habitacle ou les autres occupants.'
-  explication: 'Une « force en tonnes » n’est pas une valeur universelle : elle dépend notamment de la durée et
-    de la distance d’arrêt du corps. Retenir la nécessité de la retenue, pas une fausse constante.'
+  reponse: 'Non : il garde la vitesse du véhicule avant le choc ; ses bras ne peuvent pas le retenir et il heurte l’habitacle
+    ou les autres occupants.'
+  explication: 'Une « force en tonnes » n’est pas une valeur universelle : elle dépend notamment de la durée et de la distance
+    d’arrêt du corps. Retenir la nécessité de la retenue, pas une fausse constante.'
   theme: S
   sous_theme: passagers
   source: securite-routiere.gouv.fr — La ceinture de sécurité
@@ -18,10 +21,10 @@
   - revision::v3_1
 - id: s-femme-enceinte
   question: Une femme enceinte doit-elle porter la ceinture ?
-  reponse: 'Oui : sangle basse sous le ventre (sur les hanches), sangle haute entre les seins ; c''est la meilleure
-    protection du bébé comme de la mère.'
-  explication: Régler le siège selon la notice, avec de l’espace devant le buste et l’accès aux commandes.
-    La grossesse ne dispense pas à elle seule de ceinture ; une dispense médicale relève d’une procédure spécifique.
+  reponse: 'Oui : sangle basse sous le ventre (sur les hanches), sangle haute entre les seins ; c''est la meilleure protection
+    du bébé comme de la mère.'
+  explication: Régler le siège selon la notice, avec de l’espace devant le buste et l’accès aux commandes. La grossesse ne
+    dispense pas à elle seule de ceinture ; une dispense médicale relève d’une procédure spécifique.
   theme: S
   sous_theme: passagers
   importance: utile
@@ -29,12 +32,11 @@
   tags:
   - revision::v5
 - id: s-airbag-distance
-  question: Je suis très près du volant. Pourquoi reculer le siège tout en gardant les commandes accessibles
-    ?
-  reponse: Pour laisser à l’airbag l’espace prévu pour se déployer, avec la ceinture correctement portée. Je
-    règle ma position selon la notice sans perdre l’accès aux pédales.
-  explication: La distance recommandée dépend du constructeur ; environ 25 cm est un repère courant, pas une
-    garantie de protection ni une obligation universelle.
+  question: Je suis très près du volant. Pourquoi reculer le siège tout en gardant les commandes accessibles ?
+  reponse: Pour laisser à l’airbag l’espace prévu pour se déployer, ceinture correctement portée, sans perdre l’accès aux
+    pédales (position selon la notice).
+  explication: La distance recommandée dépend du constructeur ; environ 25 cm est un repère courant, pas une garantie de protection
+    ni une obligation universelle.
   theme: S
   sous_theme: passagers
   source: securite-routiere.gouv.fr — S'installer au poste de conduite ; constructeurs
@@ -42,15 +44,19 @@
   - revision::v5
 - id: s-animaux
   question: Comment transporter un animal en voiture ?
-  reponse: Attaché (harnais relié à la ceinture) ou dans une caisse, ou derrière un filet ou une grille dans le coffre — jamais libre dans l'habitacle ni sur les genoux du conducteur.
-  explication: 'Un animal libre distrait le conducteur (35 €, contravention de 2e classe, R412-6 : possibilités de mouvement et champ de vision réduits) et devient un projectile en cas de choc. Ne jamais laisser un animal dans une voiture au soleil.'
+  reponse: Attaché (harnais relié à la ceinture), en caisse, ou derrière un filet ou une grille dans le coffre ; jamais libre
+    dans l’habitacle.
+  explication: 'Un animal libre distrait le conducteur (35 €, contravention de 2e classe, R412-6 : possibilités de mouvement
+    et champ de vision réduits) et devient un projectile en cas de choc. Ne jamais laisser un animal dans une voiture au soleil.'
   theme: S
   sous_theme: passagers
   source: Code de la route, art. R412-6 ; securite-routiere.gouv.fr
 - id: s-surnombre
   question: Peut-on transporter plus de passagers qu'il n'y a de places assises ?
-  reponse: 'Non : chaque siège ne peut être occupé que par une personne, dans la limite du nombre inscrit sur la carte grise (repère S.1) ; un enfant compte pour une place.'
-  explication: 'Le surnombre est une contravention de 4e classe et coûte 3 points au conducteur (R412-1-1). Personne dans le coffre, dans une caravane en circulation ou dans la zone de chargement d''un utilitaire.'
+  reponse: 'Non : une personne par siège, dans la limite du nombre inscrit sur la carte grise (repère S.1) ; un enfant compte
+    pour une place.'
+  explication: Le surnombre est une contravention de 4e classe et coûte 3 points au conducteur (R412-1-1). Personne dans le
+    coffre, dans une caravane en circulation ou dans la zone de chargement d'un utilitaire.
   theme: S
   sous_theme: passagers
   importance: utile
@@ -58,24 +64,27 @@
 - id: s-enfant-moins-10-ans
   question: Jusqu'à quel âge un enfant doit-il voyager dans un dispositif de retenue homologué (siège, réhausseur) ?
   reponse: Jusqu'à 10 ans, adapté à sa taille et à son poids — et en principe à l'arrière.
-  explication: 'Dérogations au dispositif de retenue (R412-2 III) : morphologie de l''enfant adaptée à la ceinture, certificat médical, taxi ou transport en commun. Sanction : 135 € pour le conducteur, sans retrait de points. Les exceptions pour la place avant sont celles de l''article R412-3.'
+  explication: 'Dérogations au dispositif de retenue (R412-2 III) : morphologie de l''enfant adaptée à la ceinture, certificat
+    médical, taxi ou transport en commun. Sanction : 135 € pour le conducteur, sans retrait de points. Les exceptions pour
+    la place avant sont celles de l''article R412-3.'
   theme: S
   sous_theme: enfants
   source: Code de la route, art. R412-2 et R412-3 ; service-public.fr — Transport d'enfants en voiture
 - id: s-siege-dos-route
   question: Peut-on installer un siège bébé dos à la route sur le siège passager avant ?
-  reponse: 'Seulement si l''airbag frontal passager est désactivé : sinon, le déploiement de l''airbag contre le siège peut tuer le bébé.'
-  explication: Le dos à la route est le plus protecteur (tête et nuque soutenues lors d'un choc frontal) ; la norme i-Size l'impose jusqu'à 15 mois. Le voyant « airbag passager OFF » confirme la désactivation.
+  reponse: 'Seulement si l’airbag frontal passager est désactivé : sinon son déploiement contre le siège peut tuer le bébé.'
+  explication: Le dos à la route est le plus protecteur (tête et nuque soutenues lors d'un choc frontal) ; la norme i-Size
+    l'impose jusqu'à 15 mois. Le voyant « airbag passager OFF » confirme la désactivation.
   theme: S
   sous_theme: enfants
   source: Code de la route, art. R412-3 ; règlement ONU R129 (i-Size) ; securite-routiere.gouv.fr — Enfants en voiture
 - id: s-groupes-sieges
   question: Comment choisit-on un siège enfant ?
-  reponse: Selon sa taille avec la norme i-Size (R129) ou selon son poids avec l'ancienne norme R44 ; étiquette
-    d'homologation orange, fixation Isofix de préférence.
-  explication: 'R44 : groupe 0 jusqu’à 10 kg, 0+ jusqu’à 13 kg ; groupe 1 de 9 à 18 kg ; 2 de 15 à 25 kg ;
-    3 de 22 à 36 kg. Pour chaque siège, lire ses propres limites et sa notice. R44 n’est plus commercialisé
-    neuf depuis septembre 2024, mais son utilisation reste admise.'
+  reponse: Selon sa taille (norme i-Size, R129) ou selon son poids (ancienne norme R44) ; homologation sur étiquette orange,
+    fixation Isofix de préférence.
+  explication: 'R44 : groupe 0 jusqu’à 10 kg, 0+ jusqu’à 13 kg ; groupe 1 de 9 à 18 kg ; 2 de 15 à 25 kg ; 3 de 22 à 36 kg.
+    Pour chaque siège, lire ses propres limites et sa notice. R44 n’est plus commercialisé neuf depuis septembre 2024, mais
+    son utilisation reste admise.'
   theme: S
   sous_theme: enfants
   importance: utile
@@ -84,18 +93,20 @@
   - revision::v4
 - id: s-securite-enfant-portieres
   question: À quoi sert la « sécurité enfants » des portières arrière ?
-  reponse: À empêcher l'ouverture des portes arrière depuis l'intérieur (et sur certains véhicules, le fonctionnement des lève-vitres arrière).
-  explication: On l'active dès qu'un enfant voyage à l'arrière ; on fait descendre les enfants côté trottoir, et on ne laisse jamais un enfant seul dans le véhicule.
+  reponse: À empêcher l'ouverture des portes arrière depuis l'intérieur (et sur certains véhicules, le fonctionnement des
+    lève-vitres arrière).
+  explication: On l'active dès qu'un enfant voyage à l'arrière ; on fait descendre les enfants côté trottoir, et on ne laisse
+    jamais un enfant seul dans le véhicule.
   theme: S
   sous_theme: enfants
   source: securite-routiere.gouv.fr — Enfants en voiture
 - id: s-chargement-placement
   question: Comment répartit-on un chargement dans le véhicule ?
-  reponse: Les objets lourds en bas et le plus en avant possible (contre le dossier de la banquette), les objets
-    légers au-dessus, le tout arrimé et jamais au-dessus de la hauteur des dossiers.
-  explication: Au choc, les objets non arrimés continuent leur mouvement et peuvent blesser. Il n’existe pas
-    de conversion universelle de kilogrammes en « poids au choc » sans durée ou distance de décélération. Respecter
-    charge, arrimage, pression et réglage des feux.
+  reponse: Objets lourds en bas et le plus en avant possible (contre le dossier), légers au-dessus, le tout arrimé et pas
+    plus haut que les dossiers.
+  explication: Au choc, les objets non arrimés continuent leur mouvement et peuvent blesser. Il n’existe pas de conversion
+    universelle de kilogrammes en « poids au choc » sans durée ou distance de décélération. Respecter charge, arrimage, pression
+    et réglage des feux.
   theme: S
   sous_theme: chargement
   source: Code de la route, art. R312-19 ; securite-routiere.gouv.fr
@@ -103,10 +114,10 @@
   - revision::v4
 - id: s-chargement-depassement
   question: Une planche dépasse de 2 m à l'arrière de mon break. Puis-je rouler ainsi ?
-  reponse: 'Oui, si les autres limites sont respectées et le chargement solidement arrimé : dispositif réfléchissant
-    à l’arrière, complété la nuit ou par mauvaise visibilité par un feu rouge.'
-  explication: Le feu complète le réflecteur ; il ne le remplace pas. Le dépassement arrière est limité à 3 m et
-    ne doit pas masquer plaque ni éclairage.
+  reponse: 'Oui, si le chargement est solidement arrimé et signalé : dispositif réfléchissant à l’arrière, complété d’un feu
+    rouge la nuit ou par mauvaise visibilité.'
+  explication: Le feu complète le réflecteur ; il ne le remplace pas. Le dépassement arrière est limité à 3 m et ne doit pas
+    masquer plaque ni éclairage.
   dedup_ok:
   - s-chargement-chiffres
   theme: S
@@ -116,39 +127,31 @@
   - revision::v3
 - id: s-coffre-toit
   question: Quelles conséquences un coffre de toit (ou une galerie) a-t-il sur la conduite ?
-  reponse: Il augmente la prise au vent et la consommation, et élève le centre de gravité. Je respecte les limites
-    de charge et vérifie la hauteur totale.
-  explication: L’effet varie avec le coffre, la charge et la vitesse ; retirer les accessoires inutilisés. Ne pas
-    apprendre un pourcentage comme une garantie.
+  reponse: Prise au vent et consommation en hausse, centre de gravité plus haut ; je respecte la charge maximale et je vérifie
+    la hauteur totale.
+  explication: L’effet varie avec le coffre, la charge et la vitesse ; retirer les accessoires inutilisés. Ne pas apprendre
+    un pourcentage comme une garantie.
   theme: S
   sous_theme: chargement
   source: ADEME — Éco-conduite ; securite-routiere.gouv.fr
   tags:
   - revision::v3_1
-- id: s-remorque-permis-b
-  question: Quelle remorque peut-on tracter avec le seul permis B ?
-  reponse: Remorque de PTAC au plus 750 kg ; au-delà, permis B si la somme des PTAC ne dépasse pas 3 500 kg. Dans
-    tous les cas, respecter les capacités de traction du véhicule.
-  explication: 'Le permis ne suffit pas : vérifier les masses autorisées, notamment F.2 et F.3. B96 jusqu’à 4 250
-    kg de somme des PTAC ; au-delà, BE sous ses propres limites.'
-  theme: S
-  sous_theme: chargement
-  importance: utile
-  source: Code de la route, art. R221-4 et R413-8 ; service-public.fr — Permis B, BE, B96
-  tags:
-  - revision::v3
 - id: s-remorque-conduite
   question: Qu'est-ce qui change au volant quand on tracte une remorque ou une caravane ?
-  reponse: Gabarit et distance d'arrêt plus grands, dépassements plus longs, marche arrière inversée et risque de louvoiement ; on charge lourd en bas sur l'essieu et on ralentit.
-  explication: 'Le poids réel de la remorque ne doit pas dépasser 1,3 fois celui du véhicule tracteur. Si l''attelage est plus large, il faut des rétroviseurs additionnels. En cas de louvoiement : lever le pied sans freiner brutalement.'
+  reponse: 'Gabarit et distance d’arrêt plus grands, dépassements plus longs, marche arrière inversée et risque de louvoiement
+    : charge lourde en bas sur l’essieu, allure réduite.'
+  explication: 'Le poids réel de la remorque ne doit pas dépasser 1,3 fois celui du véhicule tracteur. Si l''attelage est
+    plus large, il faut des rétroviseurs additionnels. En cas de louvoiement : lever le pied sans freiner brutalement.'
   theme: S
   sous_theme: chargement
   importance: utile
   source: securite-routiere.gouv.fr — Équipement de la voiture ; Stych — Chargement et remorque
 - id: s-securite-active-passive
   question: Quelle différence entre sécurité active et sécurité passive ?
-  reponse: 'La sécurité active évite l''accident : freins, pneus et éclairage ; la sécurité passive limite les blessures quand il survient : ceinture, airbags et appuie-tête.'
-  explication: 'Sont actifs aussi la direction, les amortisseurs et toutes les aides à la conduite (ABS, ESP, AFU) ; sont passifs les prétensionneurs, les zones de déformation et l''habitacle rigide. Le classement Euro NCAP (5 étoiles) évalue les deux.'
+  reponse: La sécurité active évite l’accident (freins, pneus, éclairage…) ; la sécurité passive limite les blessures quand
+    il survient (ceinture, airbags…).
+  explication: Sont actifs aussi la direction, les amortisseurs et toutes les aides à la conduite (ABS, ESP, AFU) ; sont passifs
+    les prétensionneurs, les zones de déformation et l'habitacle rigide. Le classement Euro NCAP (5 étoiles) évalue les deux.
   theme: S
   sous_theme: equipements
   source: securite-routiere.gouv.fr — Équipements de sécurité ; Euro NCAP

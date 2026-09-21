@@ -1,7 +1,7 @@
 - id: u-edpm-chiffres
-  explication: Assurance de responsabilité civile obligatoire. Trottoir interdit sauf autorisation locale,
-    au pas et sans gêner. Vérifier aussi les obligations locales d’équipement ; certaines imposent un casque
-    alors que la règle nationale ne l’impose pas partout.
+  explication: Assurance de responsabilité civile obligatoire. Trottoir interdit sauf autorisation locale, au pas et sans
+    gêner. Vérifier aussi les obligations locales d’équipement ; certaines imposent un casque alors que la règle nationale
+    ne l’impose pas partout.
   theme: U
   sous_theme: edpm
   tags:
@@ -13,8 +13,8 @@
   - 'Vitesse maximale par construction d’un EDPM motorisé : {{c2::25 km/h}}.'
   - 'Sur une trottinette électrique, nombre de personnes autorisées à bord : {{c3::une seule}}.'
 - id: u-velo-chiffres
-  explication: File simple dès la nuit ou quand les conditions de circulation l’exigent, notamment lorsqu’un
-    véhicule annonce son dépassement. Le casque reste recommandé pour tous.
+  explication: File simple dès la nuit ou quand les conditions de circulation l’exigent, notamment lorsqu’un véhicule annonce
+    son dépassement. Le casque reste recommandé pour tous.
   theme: U
   sous_theme: cyclistes
   source: Code de la route, art. R431-1-1, R431-1-3, R412-34, R431-7
@@ -23,23 +23,27 @@
   - revision::v4
   rappels:
   - À vélo, le casque attaché est obligatoire pour un conducteur ou passager de moins de {{c1::12 ans}}.
-  - À vélo hors agglomération, le gilet de haute visibilité est obligatoire {{c2::la nuit ou par visibilité
-    insuffisante}}.
-  - Un enfant de moins de {{c3::8 ans}} peut rouler à vélo sur le trottoir au pas, sans gêner les piétons,
-    sauf dispositions contraires.
-  - Sur la chaussée, le nombre maximal de cyclistes pouvant rouler de front est {{c4::deux}}, avec remise en
-    file simple lorsque la règle l’impose.
+  - À vélo hors agglomération, le gilet de haute visibilité est obligatoire {{c2::la nuit ou par visibilité insuffisante}}.
+  - Un enfant de moins de {{c3::8 ans}} peut rouler à vélo sur le trottoir au pas, sans gêner les piétons, sauf dispositions
+    contraires.
+  - Sur la chaussée, le nombre maximal de cyclistes pouvant rouler de front est {{c4::deux}}, avec remise en file simple lorsque
+    la règle l’impose.
 - id: u-velo-equipement-chiffres
-  texte: "Équipement obligatoire d'un vélo : {{c1::deux}} freins, un feu avant {{c2::blanc ou jaune}} et un feu arrière {{c3::rouge}} (la nuit ou par visibilité insuffisante), des catadioptres (orange sur les côtés et les pédales) et un avertisseur audible à {{c4::50 m}}."
-  explication: "Défaut d'éclairage ou d'équipement : 11 €. Les catadioptres, eux, sont exigés en permanence : ce sont eux qui font voir le vélo de côté dans les phares d'une voiture qui débouche."
+  explication: 'Équipement permanent : deux freins, des catadioptres (arrière rouge, avant blanc, orange sur les côtés et
+    les pédales) et un avertisseur sonore. Les catadioptres font voir le vélo de côté dans les phares d’une voiture qui débouche.'
   theme: U
   sous_theme: cyclistes
   importance: utile
-  source: "Code de la route, art. R313-4 et s. ; securite-routiere.gouv.fr — Équipements obligatoires vélo"
+  source: Code de la route, art. R313-4 et s. ; securite-routiere.gouv.fr — Équipements obligatoires vélo
+  rappels:
+  - De nuit ou par visibilité insuffisante, un vélo doit avoir un feu avant {{c1::blanc ou jaune}} et un feu arrière rouge.
+  - De nuit ou par visibilité insuffisante, un vélo doit avoir un feu arrière {{c2::rouge}} et un feu avant blanc ou jaune.
+  tags:
+  - revision::v6
 - id: u-interfiles-chiffres
-  explication: Files ininterrompues sur toutes les voies ; motos et tricycles L3e/L5e d’au plus 1 m de large,
-    entre les deux voies les plus à gauche. Pas de neige, verglas ou travaux sur la chaussée ; espace suffisant.
-    La limitation locale plus basse ne suffit pas à exclure l’inter-files.
+  explication: Files ininterrompues sur toutes les voies ; motos et tricycles L3e/L5e d’au plus 1 m de large, entre les deux
+    voies les plus à gauche. Pas de neige, verglas ou travaux sur la chaussée ; espace suffisant. La limitation locale plus
+    basse ne suffit pas à exclure l’inter-files.
   theme: U
   sous_theme: motos
   tags:
@@ -47,20 +51,30 @@
   - revision::v4
   source: Code de la route, R412-11-3 — https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050963583/
   rappels:
-  - L’inter-files réglementée vise les autoroutes et routes à deux chaussées séparées ayant au moins deux voies
-    chacune, normalement limitées à {{c1::70 km/h}} ou plus, même si une limitation locale est plus basse.
-  - 'Lorsque toutes les conditions de l’inter-files sont réunies et qu’aucune des deux files n’est arrêtée,
-    vitesse maximale de la moto en inter-files : {{c2::50 km/h}}.'
-  - 'En inter-files, dès qu’une des deux files est arrêtée, vitesse maximale : {{c3::30 km/h}}.'
+  - L'inter-files est réglementée sur les autoroutes et routes à chaussées séparées (au moins deux voies par sens) normalement
+    limitées à {{c1::70 km/h}} ou plus.
+  - 'Lorsque toutes les conditions de l''inter-files sont réunies et qu''aucune des deux files n''est arrêtée, vitesse maximale
+    de la moto en inter-files : {{c2::50 km/h}}.'
+  - 'En inter-files, dès qu''une des deux files est arrêtée, vitesse maximale : {{c3::30 km/h}}.'
 - id: u-moto-equipements-chiffres
-  texte: "À moto ou en cyclomoteur : casque homologué attaché (conducteur : 135 € et {{c1::3 points}}), {{c2::gants}} certifiés CE obligatoires depuis 2016 (conducteur et passager), et un gilet de haute visibilité {{c3::à bord}}, à revêtir en cas d'arrêt d'urgence."
-  explication: "Un cyclomoteur (≤ 50 cm³, 45 km/h) se conduit dès 14 ans avec le permis AM ; une 125 cm³ avec le permis A1, ou le permis B depuis 2 ans + 7 h de formation."
+  explication: Un gilet de haute visibilité doit être à bord, à revêtir en cas d’arrêt d’urgence. Un cyclomoteur (≤ 50 cm³,
+    45 km/h) se conduit dès 14 ans avec le permis AM ; une 125 cm³ avec le permis A1, ou le permis B depuis 2 ans et 7 h de
+    formation.
   theme: U
   sous_theme: motos
-  source: "Code de la route, art. R431-1, R431-1-2, R416-17, R416-19"
+  source: Code de la route, art. R431-1, R431-1-2, R416-17, R416-19
+  rappels:
+  - 'Conduire un deux-roues motorisé sans casque homologué attaché : 135 € et {{c1::3 points}}.'
+  - Depuis 2016, des {{c2::gants}} certifiés CE sont obligatoires à moto et en cyclomoteur, pour le conducteur et le passager.
+  tags:
+  - revision::v6
 - id: u-pl-angles-morts-chiffres
-  texte: "Un poids lourd a {{c1::4}} zones d'angle mort (devant, derrière, les deux côtés — surtout à droite) ; depuis 2021, les véhicules de plus de {{c2::3,5 t}} portent des autocollants « angles morts » ; hors agglomération, deux poids lourds qui se suivent gardent au moins {{c3::50 m}}."
-  explication: "Les autocollants sont apposés sur les côtés et à l'arrière du véhicule (R313-32-1). Un camion qui tourne à droite se déporte d'abord à gauche : ne jamais se glisser dans l'espace qu'il semble libérer."
+  texte: Depuis 2021, les véhicules de plus de {{c1::3,5 t}} portent des autocollants « angles morts » sur les côtés et à
+    l’arrière.
+  explication: 'Un poids lourd a des angles morts devant, derrière et sur les deux côtés, surtout à droite. Un camion qui
+    tourne à droite se déporte d’abord à gauche : ne jamais se glisser dans l’espace qu’il semble libérer.'
   theme: U
   sous_theme: poids_lourds
-  source: "securite-routiere.gouv.fr — Angles morts ; Code de la route, art. R313-32-1 et R412-12"
+  source: securite-routiere.gouv.fr — Angles morts ; Code de la route, art. R313-32-1 et R412-12
+  tags:
+  - revision::v6

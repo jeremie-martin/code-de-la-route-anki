@@ -118,7 +118,6 @@
   nom: Signaux tricolores directionnels (feux à flèches)
   signification: 'Feux tricolores dont les trois feux portent une flèche : ils ne concernent que les usagers qui vont dans cette direction.'
   conduite: Se placer dans la voie de sa direction et obéir au feu fléché ; céder quand même aux piétons.
-  complement: Au-dessus ou à côté des voies de présélection.
   piege: Ne pas confondre avec R16, la flèche jaune clignotante (passer en cédant le passage).
   theme: L
   sous_theme: feux
@@ -154,7 +153,6 @@
   nom: Signal pour véhicules de transport en commun (feux à barres blanches)
   signification: 'Feux réservés aux bus et tramways, en barres blanches : barre verticale = passage, disque = arrêt imminent, barre horizontale = arrêt.'
   conduite: 'En voiture, suivre son propre feu ; se méfier d''un bus dont la barre est verticale : il va passer.'
-  complement: 'Aux traversées de sites propres bus/tram. R18 : version directionnelle à barre inclinée.'
   theme: L
   sous_theme: feux
   importance: utile
@@ -190,7 +188,6 @@
   nom: 'Signal d''affectation de voie : flèche verte vers le bas'
   signification: 'Flèche verte fixe pointant vers le bas au-dessus d''une voie : autorisation de circuler sur cette voie.'
   conduite: Rester ou se placer dans cette voie.
-  complement: Sur portique.
   theme: L
   sous_theme: feux
   importance: essentiel
@@ -208,7 +205,6 @@
   nom: 'Signal d''affectation de voie : flèche jaune oblique clignotante'
   signification: 'Flèche jaune clignotante inclinée vers le bas au-dessus d''une voie : cette voie est fermée, se rabattre du côté indiqué.'
   conduite: Changer de voie dans le sens de la flèche dès que possible, sans manœuvre brusque.
-  complement: Sur portique, en amont de la croix rouge.
   theme: L
   sous_theme: feux
   importance: essentiel

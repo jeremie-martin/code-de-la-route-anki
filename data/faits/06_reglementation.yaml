@@ -1,6 +1,6 @@
 - id: d-points-capital
-  explication: Le capital de 6 points s'applique au premier permis et à tout permis obtenu après invalidation
-    ou annulation. Ajouter une catégorie (moto) à un permis ancien ne fait pas repasser en probatoire.
+  explication: Le capital de 6 points s'applique au premier permis et à tout permis obtenu après invalidation ou annulation.
+    Ajouter une catégorie (moto) à un permis ancien ne fait pas repasser en probatoire.
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-1 et R223-1
@@ -10,156 +10,199 @@
   tags:
   - revision::v4
 - id: d-probatoire-duree
-  explication: 'La progression est donc 6 → 8 → 10 → 12 en filière classique et 6 → 9 → 12 après AAC ; une
-    seule infraction avec retrait de points l''interrompt. Pendant le probatoire : disque A à l''arrière, vitesses
-    réduites (110/100/80), alcool 0,2 g/L.'
+  explication: 'La progression est donc 6 → 8 → 10 → 12 en filière classique et 6 → 9 → 12 après AAC ; une seule infraction
+    avec retrait de points l''interrompt. Pendant le probatoire : disque A à l''arrière, vitesses réduites (110/100/80), alcool
+    0,2 g/L.'
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-1 et R223-1 ; service-public.fr F2390
   rappels:
   - Sans formation post-permis ni AAC, le délai probatoire ordinaire dure {{c1::3 ans}}.
   - Après AAC, sans formation post-permis, le délai probatoire ordinaire dure {{c2::2 ans}}.
-  - Sans infraction avec retrait de points, en filière classique, le capital probatoire augmente normalement
-    de {{c3::2 points}} par année.
-  - Sans infraction avec retrait de points, après AAC, le capital probatoire augmente normalement de {{c4::3
-    points}} par année.
+  - Sans infraction avec retrait de points, en filière classique, le capital probatoire augmente normalement de {{c3::2 points}}
+    par année.
+  - Sans infraction avec retrait de points, après AAC, le capital probatoire augmente normalement de {{c4::3 points}} par
+    année.
   tags:
   - revision::v4
 - id: d-formation-post-permis
-  texte: La formation complémentaire « post-permis » (1 journée de 7 h, entre le 6e et le 12e mois après le permis) ramène le délai probatoire de 3 ans à {{c1::2 ans}} (et de 2 ans à {{c2::1 an et 6 mois}} après AAC).
-  explication: 'Volontaire, dans une école labellisée, réservée au premier permis, et à condition de n''avoir commis aucune infraction avec retrait de points. Avec elle : 12 points après 2 ans au lieu de 3.'
+  texte: La formation complémentaire « post-permis » (une journée, entre le 6e et le 12e mois) ramène le délai probatoire
+    de 3 ans à {{c1::2 ans}}.
+  explication: 'Après AAC, elle le ramène de 2 ans à 1 an et 6 mois. Volontaire, dans une école labellisée, réservée au premier
+    permis et sans infraction avec retrait de points. Avec elle : 12 points après 2 ans au lieu de 3.'
   theme: D
   sous_theme: points
   importance: utile
   source: Code de la route, art. L223-1 et R223-4-1 ; décret n° 2018-715 ; service-public.fr F2390
+  tags:
+  - revision::v6
 - id: d-points-delit-cumul
-  texte: Le délit de conduite après usage de stupéfiants retire {{c1::6 points}} ; le cumul d’infractions est normalement
-    plafonné à {{c2::8 points}}, sauf le cumul alcool + stupéfiants qui peut retirer {{c3::9 points}}.
-  explication: 'Tous les délits ne retirent pas six points : défaut d’assurance et conduite sans permis n’ont pas
-    ce barème. Distinguer délit, amende et retrait de points.'
+  texte: Pour plusieurs infractions constatées en même temps, le retrait de points est plafonné à {{c1::8 points}} ; seul
+    le cumul alcool + stupéfiants peut en retirer 9.
+  explication: 'Tous les délits ne retirent pas six points : défaut d’assurance et conduite sans permis n’ont pas ce barème.
+    Distinguer délit, amende et retrait de points.'
   theme: D
   sous_theme: points
   source: Code de la route, L223-2, L235-1 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F31551
   tags:
-  - revision::v3
+  - revision::v6
 - id: d-probatoire-3-points
-  texte: En permis probatoire, une infraction retirant au moins {{c1::3 points}} entraîne l'obligation de suivre un stage de sensibilisation dans les {{c2::4 mois}} (lettre 48N) ; la perte de la totalité des points (6 la 1re année) entraîne l'{{c3::invalidation}} du permis (lettre 48SI).
-  explication: Le stage obligatoire remplace l'amende et rend jusqu'à 4 points, dans la limite du capital. La première année, un seul délit ou une contravention à 6 points (alcool ≥ 0,2 g/L, priorité piéton) suffit à invalider le permis.
+  texte: En permis probatoire, une infraction retirant au moins {{c1::3 points}} entraîne l’obligation de suivre un stage
+    de sensibilisation (lettre 48N).
+  explication: 'Le stage, à suivre dans les 4 mois, remplace l’amende et rend jusqu’à 4 points dans la limite du capital.
+    La perte de la totalité des points (6 la première année) entraîne l’invalidation du permis : un seul délit ou une contravention
+    à 6 points suffit.'
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-6, R223-4, R223-8, L223-5
+  tags:
+  - revision::v6
 - id: d-invalidation-delai
-  texte: Après invalidation, remettre le permis sous {{c1::10 jours}} ; interdiction d’obtenir un nouveau permis
-    pendant {{c2::6 mois}}, ou {{c3::1 an}} en cas de nouvelle invalidation dans les cinq ans. La dispense de conduite
-    est conditionnelle.
-  explication: La dispense de conduite exige aussi une interdiction inférieure à un an et une réinscription dans
-    le délai applicable ; examens médical et psychotechnique requis. Vérifier la procédure à la réception de la
-    décision.
+  texte: Après une invalidation pour solde de points nul, il est interdit d’obtenir un nouveau permis pendant {{c1::6 mois}}
+    (1 an en cas de nouvelle invalidation dans les cinq ans).
+  explication: 'Le permis est à remettre sous 10 jours ; examens médical et psychotechnique sont requis. La dispense de l’épreuve
+    de conduite est conditionnelle : vérifier la procédure à la réception de la décision.'
   theme: D
   sous_theme: points
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F1704
   tags:
-  - revision::v3
+  - revision::v6
 - id: d-recuperation-points
-  explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès ≥ 20 km/h)
-    sont de 4e classe → c''est souvent 3 ans. Pendant le probatoire, pas de reconstitution automatique : on
-    récupère par la majoration annuelle ou par un stage.'
+  explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès ≥ 20 km/h) sont de 4e
+    classe → c''est souvent 3 ans. Pendant le probatoire, pas de reconstitution automatique : on récupère par la majoration
+    annuelle ou par un stage.'
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-6 ; service-public.fr F1685
   rappels:
-  - Après le retrait d’un seul point, le délai de récupération sans nouvelle infraction donnant lieu à retrait
-    est {{c1::6 mois}}.
-  - 'Hors règles particulières du probatoire, reconstitution des 12 points après seules contraventions des
-    classes 1 à 3 : {{c2::2 ans}} sans nouvelle infraction donnant lieu à retrait.'
-  - 'Hors règles particulières du probatoire, reconstitution des 12 points si une infraction est de classe
-    4 ou 5 ou un délit : {{c3::3 ans}} sans nouvelle infraction donnant lieu à retrait.'
+  - Après le retrait d’un seul point, le délai de récupération sans nouvelle infraction donnant lieu à retrait est {{c1::6
+    mois}}.
+  - 'Hors règles particulières du probatoire, reconstitution des 12 points après seules contraventions des classes 1 à 3 :
+    {{c2::2 ans}} sans nouvelle infraction donnant lieu à retrait.'
+  - 'Hors règles particulières du probatoire, reconstitution des 12 points si une infraction est de classe 4 ou 5 ou un délit
+    : {{c3::3 ans}} sans nouvelle infraction donnant lieu à retrait.'
   tags:
   - revision::v4
 - id: d-stage-points
-  texte: Un stage volontaire de sensibilisation à la sécurité routière ({{c1::2 jours}} consécutifs, ~200 €) permet de récupérer jusqu'à {{c2::4 points}}, dans la limite du capital, au plus {{c3::une fois par an}} (date à date), à condition que le permis soit encore valide.
-  explication: Avant la loi LOPPSI 2 (2011), c'était une fois tous les 2 ans. Les points sont crédités le lendemain du dernier jour de stage.
+  explication: Les points sont crédités le lendemain du dernier jour de stage. Avant 2011, la fréquence était d’une fois tous
+    les deux ans.
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-6 et R223-8 ; service-public.fr F14208
+  rappels:
+  - Un stage volontaire de sensibilisation (2 jours consécutifs) permet de récupérer jusqu’à {{c1::4 points}}, dans la limite
+    du capital.
+  - Le stage volontaire de récupération de points est possible au plus {{c2::une fois par an}} (date à date), permis encore
+    valide.
+  tags:
+  - revision::v6
 - id: d-consulter-points
-  texte: Le permis B au format carte est valable {{c1::15 ans}} administrativement (renouvellement sans examen ni visite médicale) ; on consulte son solde de points sur le téléservice « Mes Points Permis ».
-  explication: Le téléservice a remplacé Télépoints en novembre 2023. Le permis dématérialisé est disponible dans l'application France Identité depuis février 2024 et accepté aux contrôles en France (pas à l'étranger).
+  texte: Le permis B au format carte a une validité administrative de {{c1::15 ans}} (renouvellement sans examen ni visite
+    médicale).
+  explication: Le solde de points se consulte sur le téléservice « Mes Points Permis », qui a remplacé Télépoints en novembre
+    2023. Le permis dématérialisé est disponible dans l'application France Identité depuis février 2024 et accepté aux contrôles
+    en France (pas à l'étranger).
   theme: D
   sous_theme: documents
   importance: utile
   source: Arrêté du 13 novembre 2023 ; service-public.fr F17970 et F31133
 - id: d-aac-conditions
-  texte: 'Apprentissage anticipé de la conduite (AAC) : possible dès {{c1::15 ans}} ; après la formation initiale, au moins {{c2::1 an}} et {{c3::3 000 km}} de conduite accompagnée, avec 2 rendez-vous pédagogiques ; épreuve pratique dès 17 ans.'
-  explication: 'Avantages : taux de réussite plus élevé, probatoire réduit à 2 ans, assurance moins chère. L''accompagnateur doit avoir le permis B depuis au moins 5 ans sans interruption et l''accord écrit de l''assureur. Conduite à l''étranger interdite pendant l''AAC.'
+  explication: 'Avantages : taux de réussite plus élevé, probatoire réduit à 2 ans, assurance moins chère. L''accompagnateur
+    doit avoir le permis B depuis au moins 5 ans sans interruption et l''accord écrit de l''assureur. Conduite à l''étranger
+    interdite pendant l''AAC.'
   theme: D
   sous_theme: permis
   source: Code de la route, art. R211-3 et R211-5 ; service-public.fr F2826
+  rappels:
+  - L’apprentissage anticipé de la conduite (AAC) est possible dès {{c1::15 ans}}.
+  - En AAC, après la formation initiale, la conduite accompagnée dure au moins {{c2::1 an}} (et 3 000 km) avec deux rendez-vous
+    pédagogiques.
+  - En AAC, après la formation initiale, la conduite accompagnée couvre au moins {{c3::3 000 km}} (et 1 an) avec deux rendez-vous
+    pédagogiques.
+  tags:
+  - revision::v6
 - id: d-permis-17-ans
   texte: En France, le permis B peut être obtenu et utilisé pour conduire seul dès {{c1::17 ans}}.
-  explication: Règle applicable depuis le 1er janvier 2024. L’âge ne dispense ni de réussir le permis ni des
-    restrictions probatoires ; l’AAC a ses propres conditions.
+  explication: Règle applicable depuis le 1er janvier 2024. L’âge ne dispense ni de réussir le permis ni des restrictions
+    probatoires ; l’AAC a ses propres conditions.
   theme: D
   sous_theme: permis
   source: Décret n° 2023-1214 du 20 décembre 2023 ; Code de la route, art. R221-5
   tags:
   - revision::v4
 - id: d-formation-minimale
-  texte: 'Premier permis B en auto-école : formation pratique minimale ordinaire de {{c1::20 heures}} sur boîte
-    manuelle, ou {{c2::13 heures}} pour une formation limitée à la boîte automatique.'
-  explication: 'Hors simulateur : au moins 15 h en circulation sur boîte manuelle, 10 h sur boîte automatique.
-    Le simulateur peut réduire ces parties à 10 h et 7 h sous conditions. Le minimum réglementaire n’est pas
-    une promesse d’être prêt ; exceptions selon permis déjà détenu.'
+  texte: 'Premier permis B en auto-école : formation pratique minimale ordinaire de {{c1::20 heures}} sur boîte manuelle.'
+  explication: '13 heures pour une formation limitée à la boîte automatique. Hors simulateur : au moins 15 h en circulation
+    (10 h en automatique). Le minimum réglementaire n’est pas une promesse d’être prêt.'
   theme: D
   sous_theme: permis
   importance: utile
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828
   tags:
-  - revision::v4
+  - revision::v6
 - id: d-accompagnateur
-  texte: Pour accompagner un élève, il faut notamment le permis B depuis {{c1::5 ans}} sans interruption et l’accord
-    de {{c2::l’assureur}} pour cet apprentissage.
   explication: Ne pas enseigner un transfert automatique des points de l’élève vers l’accompagnateur. Les responsabilités
     dépendent de l’infraction ; l’accompagnateur est personnellement soumis aux règles sur alcool et stupéfiants.
   theme: D
   sous_theme: permis
   source: Code de la route, R211-3 et R234-1 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2826
   tags:
-  - revision::v3
+  - revision::v6
+  rappels:
+  - Pour accompagner un élève, il faut notamment le permis B depuis {{c1::5 ans}} sans interruption.
+  - Pour accompagner un élève, il faut l’accord de {{c2::l’assureur}} du véhicule pour cet apprentissage.
 - id: d-classes-amendes
-  texte: Une contravention relève du tribunal de police ; un délit relève du {{c1::tribunal correctionnel}}
-    et peut exposer à une peine de prison.
-  explication: Une amende forfaitaire, une amende majorée et le maximum fixé par la loi ne sont pas le même
-    montant. Pour un avis reçu, lire sa procédure et ses délais. Les infractions utiles au permis sont étudiées
-    dans leurs situations.
+  texte: Une contravention relève du tribunal de police ; un délit relève du {{c1::tribunal correctionnel}} et peut exposer
+    à une peine de prison.
+  explication: Une amende forfaitaire, une amende majorée et le maximum fixé par la loi ne sont pas le même montant. Pour
+    un avis reçu, lire sa procédure et ses délais. Les infractions utiles au permis sont étudiées dans leurs situations.
   theme: D
   sous_theme: sanctions
   source: Code pénal, art. 131-13 ; Code de procédure pénale, art. R49 ; service-public.fr F18509
   tags:
   - revision::v5
 - id: d-telephone-sanction
-  texte: 'Téléphone tenu en main, oreillette, écouteurs ou casque audio au volant : {{c1::135 €}} et {{c2::3 points}} ; si l''infraction est commise en même temps qu''une autre (vitesse, feu, priorité, ligne continue…), le permis peut être retenu immédiatement puis suspendu jusqu''à 6 mois.'
-  explication: 'L''interdiction vaut dès que le véhicule est en circulation, même arrêté au feu ou dans un bouchon (Cass. 2018). Le kit mains libres intégré au véhicule est toléré. Un écran vidéo dans le champ de vision : 5e classe et 3 points.'
+  texte: 'Téléphone tenu en main, oreillette, écouteurs ou casque audio au volant : 135 € et {{c1::3 points}}.'
+  explication: 'Si l’infraction est commise en même temps qu’une autre (vitesse, feu, priorité, ligne continue…), le permis
+    peut être retenu immédiatement puis suspendu. L’interdiction vaut dès que le véhicule est en circulation, même arrêté
+    au feu. Le kit mains libres intégré est toléré ; un écran vidéo dans le champ de vision : 5e classe et 3 points.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R412-6-1, R412-6-2, L224-1 et L224-2
+  tags:
+  - revision::v6
 - id: d-ceinture-sanction
-  dedup_ok: [aff-d-ceinture-passager-adulte]
-  texte: 'Ceinture non attachée : le conducteur perd {{c1::3 points}} et paie 135 € ; un passager majeur non attaché paie {{c2::135 €}} lui-même, sans points ; pour un passager de moins de 18 ans (ou un enfant sans siège adapté), c''est le {{c3::conducteur}} qui paie 135 €, sans retrait de points.'
-  explication: 'Piège fréquent : beaucoup de supports affichent « 3 points » pour l''enfant non attaché ; l''article R412-2 ne prévoit aucun retrait. Une ceinture par personne ; enfant de moins de 3 ans interdit sur un siège sans ceinture.'
+  dedup_ok:
+  - aff-d-ceinture-passager-adulte
+  explication: Beaucoup de supports affichent « 3 points » pour l’enfant non attaché ; l’article R412-2 ne prévoit aucun retrait.
+    Une ceinture par personne ; enfant de moins de 3 ans interdit sur un siège sans ceinture.
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R412-1 et R412-2
+  rappels:
+  - 'Conducteur non attaché : 135 € et {{c1::3 points}}.'
+  - 'Passager majeur non attaché : l’amende de 135 € est payée par {{c2::le passager lui-même}}, sans retrait de points.'
+  - 'Passager de moins de 18 ans non attaché (ou enfant sans dispositif adapté) : l’amende de 135 € est payée par {{c3::le
+    conducteur}}, sans retrait de points.'
+  tags:
+  - revision::v6
 - id: d-feu-rouge-stop-sanction
-  texte: 'Franchir un feu rouge (fixe ou clignotant), un STOP, ou refuser une priorité (cédez-le-passage, priorité à droite, giratoire, sortie de parking) : 135 € et {{c1::4 points}} ; refuser la priorité à un piéton : 135 € et {{c2::6 points}} ; ne pas respecter un feu jaune fixe : {{c3::35 €}} sans points.'
-  explication: La priorité piéton est passée de 4 à 6 points le 19 septembre 2018. Suspension possible jusqu'à 3 ans pour le feu rouge, le STOP et la priorité.
+  explication: La priorité piéton est passée de 4 à 6 points le 19 septembre 2018. Suspension possible jusqu'à 3 ans pour
+    le feu rouge, le STOP et la priorité.
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R412-30, R412-31, R415-5 à R415-11
+  rappels:
+  - 'Franchir un feu rouge, un STOP ou refuser une priorité (cédez-le-passage, priorité à droite, giratoire) : 135 € et {{c1::4
+    points}}.'
+  - 'Refuser la priorité à un piéton : 135 € et {{c2::6 points}}.'
+  - 'Ne pas s’arrêter à un feu jaune fixe alors que c’était possible : {{c3::35 €}}, sans retrait de points.'
+  tags:
+  - revision::v6
 - id: d-vitesse-bareme
-  explication: 'Le retrait pour les excès < 5 km/h a été supprimé le 1er janvier 2024. 40 à 49 km/h : 4 points,
-    135 €, rétention et suspension possibles selon la procédure. Les excès portent sur la vitesse retenue,
-    après la marge propre au dispositif de contrôle.'
+  explication: 'Le retrait pour les excès < 5 km/h a été supprimé le 1er janvier 2024. 40 à 49 km/h : 4 points, 135 €, rétention
+    et suspension possibles selon la procédure. Les excès portent sur la vitesse retenue, après la marge propre au dispositif
+    de contrôle.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R413-14 ; décret n° 2023-1150 du 6 décembre 2023
@@ -173,9 +216,9 @@
 - id: d-grand-exces
   dedup_ok:
   - aff-d-grand-exces-delit
-  explication: 'Depuis le 29 décembre 2025. Peines maximales encourues : trois mois de prison et 3 750 € ;
-    autres mesures possibles selon la procédure. Ne pas confondre maxima judiciaires et sanction systématiquement
-    prononcée.'
+  explication: Depuis le 29 décembre 2025 (décret pris pour la loi du 9 juillet 2025). Le délit est jugé au tribunal correctionnel
+    ; suspension, confiscation et autres mesures dépendent de la procédure. Ne pas confondre maxima judiciaires et sanction
+    systématiquement prononcée.
   theme: D
   sous_theme: sanctions
   tags:
@@ -186,19 +229,18 @@
   - En 2026, un excès de vitesse retenu d’au moins 50 km/h constitue un {{c1::délit dès la première fois}}.
   - Un excès de vitesse retenu d’au moins 50 km/h entraîne le retrait de {{c2::6 points}}.
 - id: d-alcool-contravention
-  texte: 'Alcoolémie au moins égale à 0,5 g/L et inférieure à 0,8 g/L (seuil bas 0,2 en probatoire) : amende
-    forfaitaire de {{c1::135 €}} et retrait de {{c2::6 points}}.'
-  explication: L’égalité au seuil bas suffit à constituer l’infraction. À 0,8 g/L ou plus, il s’agit d’un délit.
-    Suspension possible ; ne pas présenter la rétention immédiate comme automatique pour toute alcoolémie contraventionnelle.
+  texte: 'Alcoolémie au moins égale à 0,5 g/L et inférieure à 0,8 g/L (seuil bas 0,2 en probatoire) : amende forfaitaire de
+    135 € et retrait de {{c1::6 points}}.'
+  explication: L’égalité au seuil bas suffit à constituer l’infraction. À 0,8 g/L ou plus, il s’agit d’un délit. Suspension
+    possible ; ne pas présenter la rétention immédiate comme automatique pour toute alcoolémie contraventionnelle.
   theme: D
   sous_theme: sanctions
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2881
   tags:
-  - revision::v4
+  - revision::v6
 - id: d-alcool-delit
-  explication: Le seuil est inclus. Des peines de prison et d’amende ainsi qu’une suspension ou annulation
-    sont encourues. L’ivresse manifeste et le refus de vérification constituent aussi des délits ; les peines
-    maximales ne sont pas automatiques.
+  explication: Le seuil est inclus. Des peines de prison et d’amende ainsi qu’une suspension ou annulation sont encourues.
+    L’ivresse manifeste et le refus de vérification constituent aussi des délits ; les peines maximales ne sont pas automatiques.
   theme: D
   sous_theme: sanctions
   tags:
@@ -209,9 +251,8 @@
   - Le seuil d’alcoolémie qui fait de la conduite un délit est {{c1::0,8 g/L de sang}} (0,40 mg/L d’air expiré).
   - La conduite avec une alcoolémie délictuelle entraîne le retrait de {{c2::6 points}}.
 - id: d-stupefiants-delit
-  explication: L’analyse établit l’usage ; le dépistage n’est pas un test d’aptitude. Alcool et stupéfiants
-    cumulent les risques et aggravent les sanctions. Des peines de prison, d’amende et des mesures sur le permis
-    sont encourues.
+  explication: L’analyse établit l’usage ; le dépistage n’est pas un test d’aptitude. Alcool et stupéfiants cumulent les risques
+    et aggravent les sanctions. Des peines de prison, d’amende et des mesures sur le permis sont encourues.
   theme: D
   sous_theme: sanctions
   tags:
@@ -220,14 +261,13 @@
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
   rappels:
   - Conduire après usage de stupéfiants est un {{c1::délit}}, même sans signe d’altération ressenti.
-  - 'Conduite après usage de stupéfiants : retrait de {{c2::6 points}} ; en cumul avec une alcoolémie interdite,
-    9 points.'
+  - 'Conduite après usage de stupéfiants : retrait de {{c2::6 points}} ; en cumul avec une alcoolémie interdite, 9 points.'
 - id: d-homicide-routier
-  texte: Causer involontairement la mort d’autrui au volant avec une circonstance aggravante prévue par la
-    loi peut constituer un {{c1::homicide routier}}.
-  explication: Alcool, stupéfiants ou grand excès de vitesse peuvent notamment aggraver les faits. C’est une
-    qualification pénale, pas la preuve d’une intention de tuer. Les peines dépendent des circonstances ; ne
-    pas apprendre une liste abrégée comme exhaustive.
+  texte: Causer involontairement la mort d’autrui au volant avec une circonstance aggravante prévue par la loi peut constituer
+    un {{c1::homicide routier}}.
+  explication: Alcool, stupéfiants ou grand excès de vitesse peuvent notamment aggraver les faits. C’est une qualification
+    pénale, pas la preuve d’une intention de tuer. Les peines dépendent des circonstances ; ne pas apprendre une liste abrégée
+    comme exhaustive.
   theme: D
   sous_theme: sanctions
   tags:
@@ -236,20 +276,18 @@
   importance: utile
   source: Code pénal, art. 221-18 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
 - id: d-delit-fuite
-  texte: Après avoir causé ou occasionné un accident, chercher à échapper à sa responsabilité sans s’arrêter
-    peut constituer un {{c1::délit de fuite}}, même sans blessé.
-  explication: S’arrêter et se faire connaître ; alerter et porter l’aide possible si quelqu’un est blessé.
-    Six points et des peines judiciaires sont encourus. Une non-assistance n’est pas automatiquement constituée
-    par toute présence de blessés.
+  texte: Après avoir causé ou occasionné un accident, chercher à échapper à sa responsabilité sans s’arrêter peut constituer
+    un {{c1::délit de fuite}}, même sans blessé.
+  explication: S’arrêter et se faire connaître ; alerter et porter l’aide possible si quelqu’un est blessé. Six points et
+    des peines judiciaires sont encourus. Une non-assistance n’est pas automatiquement constituée par toute présence de blessés.
   theme: D
   sous_theme: sanctions
   source: Code pénal, art. 434-10 ; Code de la route, art. L231-1
   tags:
   - revision::v5
 - id: d-sans-permis-sans-assurance
-  explication: 'L’assurance minimale obligatoire est la responsabilité civile. Le FGAO peut indemniser les
-    victimes puis réclamer les sommes au responsable non assuré : une dette considérable peut s’ajouter aux
-    sanctions pénales.'
+  explication: 'L’assurance minimale obligatoire est la responsabilité civile. Le FGAO peut indemniser les victimes puis réclamer
+    les sommes au responsable non assuré : une dette considérable peut s’ajouter aux sanctions pénales.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L221-2 et L324-2 ; Code des assurances, art. L211-1
@@ -257,46 +295,53 @@
   - revision::v5
   texte: Conduire sans le permis requis ou sans assurance constitue un {{c1::délit}}.
 - id: d-refus-obtemperer
-  texte: Refuser la sommation de s’arrêter d’un agent habilité constitue un {{c1::délit de refus d’obtempérer}}.
-  explication: Je m’arrête à l’endroit indiqué sans créer de danger. Des peines judiciaires, un retrait de
-    points et des mesures sur le permis et le véhicule sont encourus ; mettre autrui en danger aggrave les
-    faits.
+  texte: Refuser la sommation de s’arrêter d’un agent habilité constitue un {{c1::délit}} (refus d’obtempérer), même sans
+    autre infraction.
+  explication: Je m’arrête à l’endroit indiqué sans créer de danger. Des peines judiciaires, un retrait de points et des mesures
+    sur le permis et le véhicule sont encourus ; mettre autrui en danger aggrave les faits.
   theme: D
   sous_theme: sanctions
   importance: utile
   source: Code de la route, art. L233-1, L233-1-1, L236-1, L224-16
   tags:
-  - revision::v5
+  - revision::v6
 - id: d-autres-bareme-3-points
-  explication: Franchir entièrement la ligne continue retire trois points. Le chevauchement autorisé pour dépasser
-    un cycle, un EDPM ou un cyclomobile léger reste soumis aux conditions de sécurité et d’écart latéral.
+  explication: Franchir entièrement la ligne continue retire trois points. Le chevauchement autorisé pour dépasser un cycle,
+    un EDPM ou un cyclomobile léger reste soumis aux conditions de sécurité et d’écart latéral.
   theme: D
   sous_theme: sanctions
-  source: Code de la route, art. R412-19, R412-12, R414-4, R412-8, R412-9, R412-10, R412-28, R421-6, R416-11,
-    R417-9
+  source: Code de la route, art. R412-19, R412-12, R414-4, R412-8, R412-9, R412-10, R412-28, R421-6, R416-11, R417-9
   rappels:
   - Un dépassement dangereux entraîne un retrait de {{c1::3 points}}.
   - Hors exception autorisée, chevaucher une ligne continue entraîne le retrait de {{c2::1 point}}.
   tags:
   - revision::v5
 - id: d-detecteur-radar
-  texte: 'Détenir, transporter ou utiliser un détecteur ou brouilleur de radars : contravention de 5e classe (jusqu''à 1 500 €, forfait 200 €), {{c1::6 points}}, confiscation de l''appareil et éventuellement du véhicule.'
-  explication: 'Les avertisseurs de « zones de danger » (Coyote, Waze) restent tolérés. Une plaque absente ou illisible : 135 €, sans points, immobilisation.'
+  texte: 'Détenir, transporter ou utiliser un détecteur ou brouilleur de radars : contravention de 5e classe, {{c1::6 points}},
+    confiscation de l''appareil et éventuellement du véhicule.'
+  explication: 'Les avertisseurs de « zones de danger » (Coyote, Waze) restent tolérés. Une plaque absente ou illisible :
+    135 €, sans points, immobilisation.'
   theme: D
   sous_theme: sanctions
   importance: utile
   source: Code de la route, art. R413-15 et R317-8
 - id: d-retention-suspension
-  texte: Les forces de l'ordre peuvent retenir le permis sur le bord de la route pendant {{c1::72 heures}} (120 h si des analyses sont en cours) ; le préfet peut ensuite prononcer une suspension administrative jusqu'à {{c2::6 mois}} ({{c3::1 an}} pour alcool, stupéfiants, refus de dépistage, accident mortel ou corporel).
-  explication: 'Cas de rétention : alcool, stupéfiants, refus, excès ≥ 40 km/h avec interception, téléphone cumulé à une autre infraction, accident grave avec infraction, refus d''obtempérer. Le tribunal peut ensuite suspendre jusqu''à 3 ans (5 ans pour alcool/stupéfiants) ou annuler le permis.'
+  explication: 'Cas de rétention : alcool, stupéfiants, refus, excès ≥ 40 km/h avec interception, téléphone cumulé à une autre
+    infraction, refus d’obtempérer. Le tribunal peut ensuite suspendre plus longtemps ou annuler le permis.'
   theme: D
   sous_theme: sanctions
   importance: utile
   source: Code de la route, art. L224-1, L224-2, L224-7 ; service-public.fr F1040
+  rappels:
+  - Les forces de l’ordre peuvent retenir le permis sur place pendant {{c1::72 heures}} (120 h si des analyses sont en cours).
+  - Après une rétention, le préfet peut prononcer une suspension administrative jusqu’à {{c2::6 mois}} (1 an pour alcool,
+    stupéfiants, refus de dépistage ou accident corporel).
+  tags:
+  - revision::v6
 - id: d-documents-bord
-  explication: Pour une voiture immatriculée en France, l’assurance est contrôlée via le Fichier des véhicules
-    assurés ; la suppression de la carte verte n’a pas supprimé l’obligation d’assurance. Gilet et triangle
-    sont des équipements, pas des documents.
+  explication: Pour une voiture immatriculée en France, l’assurance est contrôlée via le Fichier des véhicules assurés ; la
+    suppression de la carte verte n’a pas supprimé l’obligation d’assurance. Gilet et triangle sont des équipements, pas des
+    documents.
   theme: D
   sous_theme: documents
   tags:
@@ -304,20 +349,25 @@
   - revision::v4
   source: Code de la route, art. R233-1 ; décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362
   rappels:
-  - Au contrôle routier, le document prouvant mon droit de conduire est le {{c1::permis de conduire}} (physique
-    ou numérique admis).
+  - Au contrôle routier, le document prouvant mon droit de conduire est le {{c1::permis de conduire}} (physique ou numérique
+    admis).
   - Au contrôle routier d’une voiture immatriculée, son document d’identification est le {{c2::certificat d’immatriculation}}
     (carte grise).
 - id: d-carte-grise-delais
-  texte: Après l'achat d'un véhicule, le nouveau propriétaire a {{c1::1 mois}} pour faire établir le certificat d'immatriculation à son nom (même délai pour déclarer un changement d'adresse) ; le vendeur déclare la cession sous {{c2::15 jours}} et remet un certificat de situation administrative de moins de 15 jours.
-  explication: 'Démarches sur l''ANTS ou chez un professionnel habilité (plus de guichet en préfecture). Défaut : 135 €. Le certificat provisoire (CPI) vaut 1 mois. Format des plaques SIV AA-123-AA, numéro attribué à vie au véhicule.'
+  explication: 'Démarches sur l’ANTS ou chez un professionnel habilité. Défaut : 135 €. Le vendeur remet aussi un certificat
+    de situation administrative de moins de 15 jours ; le certificat provisoire vaut 1 mois.'
   theme: D
   sous_theme: documents
   source: Code de la route, art. R322-4, R322-5, R322-7 ; service-public.fr F21031
+  rappels:
+  - Après l’achat d’un véhicule, le nouveau propriétaire a {{c1::1 mois}} pour faire établir le certificat d’immatriculation
+    à son nom (même délai pour un changement d’adresse).
+  - Après la vente d’un véhicule, le vendeur déclare la cession sous {{c2::15 jours}}.
+  tags:
+  - revision::v6
 - id: d-controle-technique
-  explication: Pour vendre à un particulier une voiture de plus de quatre ans, contrôle de moins de six mois
-    ; si une contre-visite est prescrite, son délai ne doit pas être dépassé. Ne pas confondre périodicité
-    et validité pour la vente.
+  explication: Pour vendre à un particulier une voiture de plus de quatre ans, contrôle de moins de six mois ; si une contre-visite
+    est prescrite, son délai ne doit pas être dépassé. Ne pas confondre périodicité et validité pour la vente.
   theme: D
   sous_theme: documents
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2878
@@ -325,59 +375,64 @@
   - revision::v3
   - revision::v4
   rappels:
-  - 'Voiture particulière : le premier contrôle technique se fait dans les {{c1::6 mois}} précédant le quatrième
-    anniversaire de sa première mise en circulation.'
-  - 'Voiture particulière : le premier contrôle technique doit être réalisé avant le {{c2::4e anniversaire}}
+  - 'Voiture particulière : le premier contrôle technique se fait dans les {{c1::6 mois}} précédant le quatrième anniversaire
     de sa première mise en circulation.'
-  - 'Voiture particulière, après un contrôle favorable : périodicité ordinaire des contrôles techniques suivants,
-    {{c3::2 ans}}.'
+  - 'Voiture particulière : le premier contrôle technique doit être réalisé avant le {{c2::4e anniversaire}} de sa première
+    mise en circulation.'
+  - 'Voiture particulière, après un contrôle favorable : périodicité ordinaire des contrôles techniques suivants, {{c3::2
+    ans}}.'
 - id: d-assurance-garanties
-  texte: 'L''assurance obligatoire est la {{c1::responsabilité civile (« au tiers »)}} : elle couvre les dommages causés aux autres, jamais ceux du conducteur responsable ni de son véhicule (garanties facultatives : dommages tous accidents/« tous risques », vol, incendie, bris de glace, garantie du conducteur, assistance).'
-  explication: 'Bonus-malus : coefficient 1 au départ, −5 % par an sans accident responsable (jusqu''à 0,50), +25 % par accident responsable (jusqu''à 3,50). Jeune conducteur : surprime jusqu''à 100 % (50 % après AAC), réduite de moitié chaque année sans sinistre.'
+  texte: 'L''assurance automobile obligatoire est la {{c1::responsabilité civile (« au tiers »)}} : elle couvre les dommages
+    causés aux autres, pas ceux du conducteur responsable ni de son véhicule.'
+  explication: 'Garanties facultatives : dommages tous accidents (« tous risques »), vol, incendie, bris de glace, garantie
+    du conducteur, assistance. Bonus-malus : coefficient 1 au départ, −5 % par an sans accident responsable (jusqu''à 0,50),
+    +25 % par accident responsable (jusqu''à 3,50). Jeune conducteur : surprime jusqu''à 100 % (50 % après AAC), réduite de
+    moitié chaque année sans sinistre.'
   theme: D
   sous_theme: documents
   source: Code des assurances, art. L211-1, A121-1 et A121-1-1 ; service-public.fr F2655
 - id: d-constat-declaration
-  explication: 'Vérifier le contrat : un délai plus long peut être prévu. Le constat décrit les faits ; ne
-    pas signer une description inexacte. Déclarer rapidement sans attendre de régler un désaccord.'
+  explication: 'Vérifier le contrat : un délai plus long peut être prévu. Le constat décrit les faits ; ne pas signer une
+    description inexacte. Déclarer rapidement sans attendre de régler un désaccord.'
   theme: D
   sous_theme: documents
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2149 ; https://www.service-public.gouv.fr/particuliers/vosdroits/F2685
   rappels:
   - Après un accident, le délai usuel pour déclarer le sinistre à l’assureur est {{c1::5 jours ouvrés}}.
-  - Pour un vol de véhicule, le délai contractuel de déclaration à l’assureur ne peut être inférieur à {{c2::2
-    jours ouvrés}} après en avoir eu connaissance.
+  - Pour un vol de véhicule, le délai contractuel de déclaration à l’assureur ne peut être inférieur à {{c2::2 jours ouvrés}}
+    après en avoir eu connaissance.
   tags:
   - revision::v5
 - id: d-critair-prix
-  texte: 'Crit’Air se commande sur {{c1::certificat-air.gouv.fr}} ; la vignette reste valable {{c2::tant qu’elle
-    est lisible et que les informations du véhicule ne changent pas}}. Défaut de vignette dans une zone où elle
-    est exigée : {{c3::68 €}} pour une voiture.'
-  explication: Ne pas apprendre le prix d’envoi, variable et sans intérêt pour décider au volant. Vérifier les règles
-    locales avant d’entrer dans une ZFE.
+  texte: 'Défaut de vignette Crit’Air dans une zone où elle est exigée : amende de {{c1::68 €}} pour une voiture.'
+  explication: La vignette se commande sur certificat-air.gouv.fr et reste valable tant qu’elle est lisible et que les informations
+    du véhicule ne changent pas. Vérifier les règles locales avant d’entrer dans une ZFE ; ne pas apprendre le prix d’envoi.
   theme: D
   sous_theme: documents
   tags:
   - nouveau::2026
-  - revision::v3
+  - revision::v6
   source: Code de la route, art. R318-2 et R411-19-1 ; service-public.fr F33371 ; décision CC n° 2026-903 DC
 - id: d-equipements-obligatoires
-  texte: 'Équipements obligatoires à bord d''une voiture : un {{c1::gilet de haute visibilité}} à portée de
-    main (à revêtir avant de sortir après un arrêt d''urgence) et un {{c2::triangle de présignalisation}} (à
-    placer à ≈ 30 m, sauf si sa pose met en danger) ; l''{{c3::éthylotest}} n''est plus obligatoire depuis
-    mai 2020.'
-  explication: 'Le triangle présignale un véhicule immobilisé dangereux : environ 30 m en amont, davantage
-    si nécessaire, sauf si le poser expose manifestement le conducteur au danger. Cette exception ne se limite
-    pas à l’autoroute.'
+  explication: 'Le triangle présignale un véhicule immobilisé dangereux : environ 30 m en amont, davantage si nécessaire,
+    sauf si le poser expose manifestement le conducteur au danger. Cette exception ne se limite pas à l’autoroute.'
   theme: D
   sous_theme: documents
   source: Code de la route, art. R416-19 ; décret n° 2020-605 ; service-public.fr F19459
   tags:
-  - revision::v4
+  - revision::v6
+  rappels:
+  - 'Équipements obligatoires à bord d’une voiture : un {{c1::gilet de haute visibilité}} à portée de main et un triangle
+    de présignalisation.'
+  - 'Équipements obligatoires à bord d’une voiture : un gilet de haute visibilité et un {{c2::triangle de présignalisation}}.'
+  - L’{{c3::éthylotest}} n’est plus obligatoire à bord depuis mai 2020.
 - id: d-vitres-teintees
-  texte: 'Depuis 2017, le pare-brise et les vitres latérales avant doivent laisser passer au moins {{c1::70 %}} de la lumière ; infraction : 135 € et {{c2::3 points}}, immobilisation possible.'
-  explication: Les vitres arrière peuvent être teintées librement. Un pare-brise doit rester propre et sans fissure dans le champ de vision du conducteur.
+  texte: Le pare-brise et les vitres latérales avant doivent laisser passer au moins {{c1::70 %}} de la lumière.
+  explication: 'Infraction : 135 € et 3 points, immobilisation possible. Les vitres arrière peuvent être teintées librement.
+    Le pare-brise doit rester propre et sans fissure dans le champ de vision.'
   theme: D
   sous_theme: documents
   importance: utile
   source: Code de la route, art. R316-3-1
+  tags:
+  - revision::v6

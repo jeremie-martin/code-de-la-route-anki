@@ -43,11 +43,12 @@ IMPORTANCE = {"essentiel", "utile", "rare"}
 KINDS = ["reconnaissance", "confusions", "faits", "questions", "affirmations", "scenarios"]
 # Card-quality limits (see docs/05-audit-v2.md §2.1, §2.3): a card that needs more words than this is a
 # sheet, not a card, and must be split. `long_ok: true` on a note documents a deliberate exception.
-MAX_ANSWER_WORDS = 40        # questions.reponse
+MAX_ANSWER_WORDS = 30        # questions.reponse (v7 : décision + raison décisive ; viser 10-22 mots)
 MAX_ANSWER_ITEMS = 4         # enumerated elements in questions.reponse
 MAX_AFFIRMATION_WORDS = 32   # affirmations.affirmation
 MAX_POURQUOI_WORDS = 45      # affirmations.pourquoi
 MAX_RECON_BACK_WORDS = 90    # signification + conduite + complement + piege
+MAX_CLOZE_WORDS = 8          # hidden text of one cloze; longer = recitation, not recall
 AFF_BALANCE = (0.35, 0.65)   # share of 'vrai' per affirmations file
 TYPE_QUESTION = {
     "panneau": "Que signifie ce panneau ?",
@@ -190,6 +191,12 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
             errors.append(f"{it['_file']}:{it.get('id')}: numérotation des clozes non contiguë {n}")
         elif len(n) > 4:
             errors.append(f"{it['_file']}:{it.get('id')}: plus de 4 clozes ({len(n)})")
+        elif len(n) > 1 and "rappels" not in it and not it.get("multi_ok"):
+            # v6: several targets in one sentence make a sheet, not a card; each target gets its own prompt
+            errors.append(f"{it['_file']}:{it.get('id')}: {len(n)} clozes dans une même phrase — utiliser rappels (ou multi_ok: true pour une relation unique)")
+        for _, ans in re.findall(r"\{\{c(\d+)::(.*?)(?:::.*?)?\}\}", it.get("texte", "")):
+            if words(ans) > MAX_CLOZE_WORDS and not it.get("long_ok"):
+                errors.append(f"{it['_file']}:{it.get('id')}: trou de {words(ans)} mots (> {MAX_CLOZE_WORDS}) — une phrase à réciter n'est pas une cible de rappel ; préférer une question")
         # two clozes with the same answer under different numbers: one gives the other away
         answers = {}
         for num, ans in re.findall(r"\{\{c(\d+)::(.*?)(?:::.*?)?\}\}", it.get("texte", "")):
@@ -569,7 +576,7 @@ def build_collection(data, names, out_apkg: Path):
     root = col.decks.by_name(M.DECK_ROOT)
     root["desc"] = ("Deck pour réussir l'épreuve théorique générale (code de la route, permis B), édition 2026. "
                     "Cartes conçues une par une : reconnaissance, faits, questions, scénarios. "
-                    "Conseil : 20 nouvelles cartes/jour, FSRS activé, et des séries d'entraînement en parallèle.")
+                    "Conseil : 20 nouvelles cartes/jour (préréglage fourni), FSRS activé dans les options, et des séries photo/vidéo en parallèle.")
     col.decks.save(root)
     for sub, desc in M.DECK_DESCRIPTIONS.items():
         d = col.decks.by_name(f"{M.DECK_ROOT}::{sub}")

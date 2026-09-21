@@ -27,7 +27,7 @@ Recherche Anki : `objectif::x-lecture`
 
 Chaque danger appelle une anticipation ; les variantes gauche/droite et les dangers moins rencontrés consolident la reconnaissance sans changer le standard de qualité.
 
-35 notes / 36 cartes.
+34 notes / 35 cartes.
 
 Recherche Anki : `objectif::l-danger`
 
@@ -61,7 +61,6 @@ Recherche Anki : `objectif::l-danger`
 | `a19` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a20` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a21` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `a23` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `a24` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `conf-a13a-a13b` | socle | confusions | IISR 1re partie |
 | `conf-a15a1-a15b` | approfondissement | confusions | IISR 1re partie |
@@ -103,7 +102,7 @@ Recherche Anki : `objectif::l-priorite-signaux`
 
 Règle, exception et application visuelle ; le sens des flèches compte.
 
-46 notes / 48 cartes.
+46 notes / 46 cartes.
 
 Recherche Anki : `objectif::l-intersection`
 
@@ -226,7 +225,7 @@ Recherche Anki : `objectif::l-feux`
 
 Identifier le symbole plutôt que réciter son numéro.
 
-88 notes / 88 cartes.
+78 notes / 78 cartes.
 
 Recherche Anki : `objectif::l-prescriptions`
 
@@ -241,9 +240,7 @@ Recherche Anki : `objectif::l-prescriptions`
 | `b3` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b3a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b4` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b5a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b5b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b5c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b6a1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b6a2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b6a3` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -255,7 +252,6 @@ Recherche Anki : `objectif::l-prescriptions`
 | `b9b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b9c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b9d` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b9e` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b9f` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b9g` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b9h` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -268,8 +264,6 @@ Recherche Anki : `objectif::l-prescriptions`
 | `b14` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b16` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b17` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b18a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b18b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b18c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b19` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b21-1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -284,7 +278,6 @@ Recherche Anki : `objectif::l-prescriptions`
 | `b21e` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b22a` | socle | reconnaissance | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `b22b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b22c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b25` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b26` | socle | reconnaissance | Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12 |
 | `b27a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -295,14 +288,10 @@ Recherche Anki : `objectif::l-prescriptions`
 | `b34` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b34a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b35` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b39` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b40` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b41` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b42` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b43` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b44` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b45a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b49` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c4a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c12` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c113` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -325,7 +314,7 @@ Recherche Anki : `objectif::l-prescriptions`
 
 Une même valeur n'a pas toujours la même portée.
 
-103 notes / 103 cartes.
+65 notes / 65 cartes.
 
 Recherche Anki : `objectif::l-portee`
 
@@ -335,12 +324,9 @@ Recherche Anki : `objectif::l-portee`
 | `b6b2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b6b3` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b6b4` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b6b5` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b50a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b50b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b50c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b50d` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `b50e` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b30` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b51` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `b52` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -357,7 +343,6 @@ Recherche Anki : `objectif::l-portee`
 | `m1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m2` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m3a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m3d` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m4a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m4b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m4c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -366,56 +351,22 @@ Recherche Anki : `objectif::l-portee`
 | `m4e` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m4f` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m4g` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4h` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4i` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4j` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4k` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4l` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4m` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m4n` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4p` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4q` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4r` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4s` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4t` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4u` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4v` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4w` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4x` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4y` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m4z` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m6a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m6b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m6c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m6d` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m6e` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m6f` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m6g` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m6h` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m6i` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m6j` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m6k1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m6k2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m8a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m8b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m8c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m8d` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m8e` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m8f` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m9d` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9j1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9j2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m9v1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m9v2` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m9z` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9v3` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9k1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9k2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9l` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m11a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m11b1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m11b2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m12` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `conf-b52-b54` | approfondissement | confusions | Code de la route, art. R110-2 |
 | `conf-b30-b56` | approfondissement | confusions | IISR 4e partie |
@@ -439,7 +390,7 @@ Recherche Anki : `objectif::l-portee`
 
 Le marquage est une condition de manœuvre, pas une garantie de sécurité.
 
-32 notes / 32 cartes.
+31 notes / 31 cartes.
 
 Recherche Anki : `objectif::l-marquage`
 
@@ -447,7 +398,6 @@ Recherche Anki : `objectif::l-marquage`
 |---|---|---|---|
 | `marq-ligne-continue` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-ligne-discontinue-t1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `marq-ligne-t1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-ligne-dissuasion` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-ligne-annonce` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `marq-ligne-mixte` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -482,18 +432,16 @@ Recherche Anki : `objectif::l-marquage`
 
 Les cas contrastés préviennent les soustractions automatiques.
 
-31 notes / 39 cartes.
+29 notes / 36 cartes.
 
 Recherche Anki : `objectif::l-vitesse`
 
 | Note | Étape | Exercice | Source |
 |---|---|---|---|
 | `sr3a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `sr3b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `sr3e` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c4b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c51a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c51b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `l-vitesse-agglo` | socle | faits | R413-3 et R110-2 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-vitesse-hors-agglo` | socle | faits | Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-vitesse-separateur-autoroute` | socle | faits | R413-2 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
@@ -567,7 +515,7 @@ Recherche Anki : `objectif::l-depasser`
 
 Ne pas confondre trajectoire, clignotant et droit de passage.
 
-25 notes / 27 cartes.
+25 notes / 26 cartes.
 
 Recherche Anki : `objectif::l-position`
 
@@ -603,7 +551,7 @@ Recherche Anki : `objectif::l-position`
 
 La durée et les warnings ne créent aucune autorisation.
 
-43 notes / 47 cartes.
+41 notes / 45 cartes.
 
 Recherche Anki : `objectif::l-stationner`
 
@@ -620,8 +568,6 @@ Recherche Anki : `objectif::l-stationner`
 | `c1c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c5` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c6` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c9` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c23` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `conf-b6a1-b6d` | socle | confusions | IISR 4e partie ; Code de la route, art. R110-2 |
 | `conf-b6a2-b6a3` | approfondissement | confusions | Code de la route, art. R417-2 |
 | `conf-c1b-c1c` | approfondissement | confusions | IISR 5e partie |
@@ -657,7 +603,7 @@ Recherche Anki : `objectif::l-stationner`
 
 Comprendre le mécanisme et calculer sur les données fournies.
 
-19 notes / 21 cartes.
+20 notes / 21 cartes.
 
 Recherche Anki : `objectif::c-distances`
 
@@ -665,6 +611,7 @@ Recherche Anki : `objectif::c-distances`
 |---|---|---|---|
 | `c-temps-reaction` | socle | faits | securite-routiere.gouv.fr — La vitesse et la conduite ; Codeclic — Temps de réaction |
 | `c-distance-reaction-formule` | approfondissement | faits | Codeclic ; En Voiture Simone ; securite-routiere.gouv.fr — Dépliant vitesse |
+| `c-distance-arret-reperes` | socle | faits | Sécurité routière — https://modules.securite-routiere.gouv.fr/module_distance_arret.html ; Codes Rousseau — Calcul des distances |
 | `c-distance-mouillee` | socle | faits | Sécurité routière, exemple public Q13 (2023) ; repère et limites du modèle |
 | `c-vitesse-double-freinage` | socle | faits | securite-routiere.gouv.fr — La vitesse et la conduite ; Ornikar — Énergie cinétique |
 | `c-intervalle-2s` | socle | faits | Code de la route, art. R412-12 ; Codes Rousseau — Calcul des distances |
@@ -687,13 +634,12 @@ Recherche Anki : `objectif::c-distances`
 
 La situation décide du danger ; ne pas attendre la certitude.
 
-22 notes / 23 cartes.
+21 notes / 21 cartes.
 
 Recherche Anki : `objectif::c-observer`
 
 | Note | Étape | Exercice | Source |
 |---|---|---|---|
-| `c-retro-7s` | approfondissement | faits | Stych — Les contrôles ; Codeclic — L'angle mort |
 | `c-regarder-loin` | socle | questions | REMC ; Codes Rousseau — L'exploration visuelle |
 | `c-angle-mort-definition` | socle | questions | REMC ; securite-routiere.gouv.fr — Les angles morts |
 | `c-ordre-controles-changement-file` | socle | questions | Codeclic — L'angle mort ; Stych — Les contrôles ; Code de la route, art. R412-10 |
@@ -720,14 +666,13 @@ Recherche Anki : `objectif::c-observer`
 
 Savoir agir avant le micro-sommeil ou la prise de risque.
 
-14 notes / 17 cartes.
+13 notes / 14 cartes.
 
 Recherche Anki : `objectif::c-fatigue`
 
 | Note | Étape | Exercice | Source |
 |---|---|---|---|
 | `c-fatigue-pause-chiffres` | socle | faits | securite-routiere.gouv.fr — La fatigue et la conduite |
-| `c-nuit-risque` | approfondissement | faits | Sécurité routière — conduite de nuit et somnolence |
 | `c-routine-monotonie` | approfondissement | questions | securite-routiere.gouv.fr — Port de la ceinture (trajets courts) ; Ornikar — Vigilance |
 | `c-somnolence-que-faire` | socle | questions | Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf |
 | `c-fatigue-remedes-faux` | socle | questions | Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf |
@@ -745,7 +690,7 @@ Recherche Anki : `objectif::c-fatigue`
 
 Aucun nombre de verres ni sentiment de lucidité ne garantit l'aptitude.
 
-25 notes / 33 cartes.
+25 notes / 31 cartes.
 
 Recherche Anki : `objectif::c-substances`
 
@@ -798,13 +743,12 @@ Recherche Anki : `objectif::c-distraction`
 
 Les plafonds et les équipements ne garantissent pas l'adhérence.
 
-28 notes / 29 cartes.
+28 notes / 28 cartes.
 
 Recherche Anki : `objectif::r-meteo`
 
 | Note | Étape | Exercice | Source |
 |---|---|---|---|
-| `r-neige-adherence` | approfondissement | faits | Codes Rousseau — Neige et brouillard ; En Voiture Simone — Le verglas |
 | `c-croisement-nuit-regard` | socle | questions | Sécurité routière — Exemples de nouvelles questions (Q20) |
 | `r-nuit-feux-croisement-route` | socle | questions | Code de la route, art. R416-5 et R416-6 |
 | `r-nuit-suivre-vehicule-feux` | socle | questions | Code de la route, art. R416-6 |
@@ -826,6 +770,7 @@ Recherche Anki : `objectif::r-meteo`
 | `aff-r-aquaplaning-freiner` | approfondissement | affirmations | Ornikar — L'aquaplaning ; securite-routiere.gouv.fr — Conduire sous la pluie |
 | `aff-r-montagne-4-pneus` | approfondissement | affirmations | Sécurité routière — Exemples de nouvelles questions (Q10) ; décret n° 2020-1264 |
 | `aff-r-verglas-pont` | socle | affirmations | En Voiture Simone — Le verglas ; Roole — Neige et verglas |
+| `aff-r-verglas-temperature-positive` | approfondissement | affirmations | Codes Rousseau — Neige et brouillard ; En Voiture Simone — Le verglas |
 | `aff-r-neige-depassement-pl` | approfondissement | affirmations | Code de la route, art. R414-17 |
 | `aff-r-nuit-feux-position-agglo` | approfondissement | affirmations | Code de la route, art. R416-6 et R416-8 |
 | `aff-r-nuit-feux-route-arret` | approfondissement | affirmations | Code de la route, art. R416-5 |
@@ -861,7 +806,7 @@ Recherche Anki : `objectif::r-montagne`
 
 Les erreurs d'itinéraire ne justifient aucune manœuvre dangereuse.
 
-36 notes / 38 cartes.
+29 notes / 30 cartes.
 
 Recherche Anki : `objectif::r-autoroute`
 
@@ -869,15 +814,8 @@ Recherche Anki : `objectif::r-autoroute`
 |---|---|---|---|
 | `c8` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c26a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c62` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c64a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c64b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c64c1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c64c2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c64d` | socle | reconnaissance | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `c65a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c65b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c65c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c107` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c108` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c207` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -908,7 +846,7 @@ Recherche Anki : `objectif::r-autoroute`
 
 Arrêt imposé, sortie libre, refuge et issue ont des rôles distincts.
 
-36 notes / 39 cartes.
+30 notes / 32 cartes.
 
 Recherche Anki : `objectif::r-tunnel-rail`
 
@@ -916,12 +854,6 @@ Recherche Anki : `objectif::r-tunnel-rail`
 |---|---|---|---|
 | `c111` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c112` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c117` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9e` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m9f` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m11c1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m11c2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `g1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `g1a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `g1bis` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -955,7 +887,7 @@ Recherche Anki : `objectif::r-tunnel-rail`
 
 Lire l'état actuel de la route, même sans ouvriers visibles.
 
-39 notes / 39 cartes.
+37 notes / 37 cartes.
 
 Recherche Anki : `objectif::r-travaux`
 
@@ -964,7 +896,6 @@ Recherche Anki : `objectif::r-travaux`
 | `a14` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `km1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `km2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `km9` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ak2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ak3` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ak3a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -981,7 +912,6 @@ Recherche Anki : `objectif::r-travaux`
 | `k2` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `k5a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `k5b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `k5d` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `k8` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `k10a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `k10b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -1005,7 +935,7 @@ Recherche Anki : `objectif::r-travaux`
 
 Respecter leurs priorités et anticiper leurs erreurs.
 
-40 notes / 46 cartes.
+39 notes / 43 cartes.
 
 Recherche Anki : `objectif::u-vulnerables`
 
@@ -1020,7 +950,6 @@ Recherche Anki : `objectif::u-vulnerables`
 | `c113` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c114` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c115` | socle | reconnaissance | Code de la route, R110-2, R411-3-2 et R412-43-1 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006143859 |
-| `c116` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `conf-a21-c20c` | approfondissement | confusions | Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `conf-a13b-c20a` | approfondissement | confusions | IISR 1re et 5e parties |
 | `u-velo-chiffres` | socle | faits | Code de la route, art. R431-1-1, R431-1-3, R412-34, R431-7 |
@@ -1056,7 +985,7 @@ Recherche Anki : `objectif::u-vulnerables`
 
 Changer de point de vue et distinguer règle nationale et locale.
 
-18 notes / 24 cartes.
+18 notes / 23 cartes.
 
 Recherche Anki : `objectif::u-micromobilite`
 
@@ -1085,7 +1014,7 @@ Recherche Anki : `objectif::u-micromobilite`
 
 La présence dans le rétroviseur ne prouve pas que l'autre a regardé.
 
-16 notes / 18 cartes.
+16 notes / 16 cartes.
 
 Recherche Anki : `objectif::u-gabarit`
 
@@ -1233,7 +1162,7 @@ Recherche Anki : `objectif::m-alertes`
 
 Préconisations constructeur et signes de panne priment sur les recettes.
 
-30 notes / 37 cartes.
+30 notes / 35 cartes.
 
 Recherche Anki : `objectif::m-entretien`
 
@@ -1357,7 +1286,7 @@ Recherche Anki : `objectif::s-retenir`
 
 Lire les masses et appliquer les seuils à une situation.
 
-18 notes / 24 cartes.
+15 notes / 21 cartes.
 
 Recherche Anki : `objectif::s-charger`
 
@@ -1368,10 +1297,7 @@ Recherche Anki : `objectif::s-charger`
 | `s-chargement-placement` | socle | questions | Code de la route, art. R312-19 ; securite-routiere.gouv.fr |
 | `s-chargement-depassement` | socle | questions | Code de la route, art. R312-19 à R312-22 |
 | `s-coffre-toit` | approfondissement | questions | ADEME — Éco-conduite ; securite-routiere.gouv.fr |
-| `s-remorque-permis-b` | approfondissement | questions | Code de la route, art. R221-4 et R413-8 ; service-public.fr — Permis B, BE, B96 |
 | `s-remorque-conduite` | socle | questions | securite-routiere.gouv.fr — Équipement de la voiture ; Stych — Chargement et remorque |
-| `s-remorque-cas-b` | socle | questions | Code de la route, R221-4 |
-| `s-remorque-cas-b96` | socle | questions | Code de la route, R221-4 et R221-8 |
 | `s-remorque-seuil-750` | socle | questions | Service Public, permis B — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828 |
 | `s-remorque-seuil-800` | socle | questions | Service Public, permis B — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828 |
 | `s-remorque-masse-reelle` | socle | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828 |
@@ -1386,7 +1312,7 @@ Recherche Anki : `objectif::s-charger`
 
 La respiration normale et le traumatisme changent le geste ; suivre les secours.
 
-33 notes / 38 cartes.
+33 notes / 36 cartes.
 
 Recherche Anki : `objectif::a-secourir`
 
@@ -1397,12 +1323,12 @@ Recherche Anki : `objectif::a-secourir`
 | `numeros-urgence` | socle | faits | service-public.fr — Numéros d'urgence ; Code pénal, art. 223-6 |
 | `numero-114` | socle | faits | service-public.fr — Numéros d'urgence |
 | `borne-appel-autoroute` | approfondissement | faits | securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA |
-| `message-alerte` | socle | faits | Croix-Rouge française — Alerter les secours ; securite-routiere.gouv.fr |
 | `triangle-distance` | socle | faits | Arrêté du 30 septembre 2008, art. 2 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000019566252/ |
 | `rcp-rythme` | socle | faits | Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-proteger-arret` | approfondissement | questions | Code de la route, art. R416-19 ; Ornikar — Protéger la zone ; Croix-Rouge française |
 | `a-incendie-vehicule` | approfondissement | questions | Sécurité civile, PSC juillet 2026, Protection — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-alerter-borne-ou-portable` | socle | questions | securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA |
+| `a-message-alerte` | socle | questions | Croix-Rouge française — Alerter les secours ; securite-routiere.gouv.fr |
 | `a-alerter-raccrocher` | socle | questions | Croix-Rouge française — Alerter ; Ornikar — Alerter les secours |
 | `a-evaluer-victime` | socle | questions | Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-pls` | socle | questions | Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
@@ -1436,7 +1362,7 @@ Recherche Anki : `objectif::a-accident`
 
 | Note | Étape | Exercice | Source |
 |---|---|---|---|
-| `non-assistance` | approfondissement | faits | Code pénal, article 223-6 |
+| `a-non-assistance` | approfondissement | questions | Code pénal, article 223-6 |
 | `a-accident-materiel-obligations` | socle | questions | Code de la route, art. R231-1 et L231-1 ; Code pénal, art. 434-10 |
 | `a-constat-desaccord` | socle | questions | service-public.fr — Constat amiable ; Code des assurances, art. L113-2 |
 | `a-accident-corporel-obligations` | socle | questions | Code de la route, art. R231-1, L234-3 et L235-2 ; Code pénal, art. 223-6 |
@@ -1448,7 +1374,7 @@ Recherche Anki : `objectif::a-accident`
 
 Apprendre les conséquences structurantes avant les détails de procédure.
 
-18 notes / 35 cartes.
+19 notes / 27 cartes.
 
 Recherche Anki : `objectif::d-permis`
 
@@ -1466,6 +1392,7 @@ Recherche Anki : `objectif::d-permis`
 | `d-alcool-contravention` | socle | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2881 |
 | `d-suspension-invalidation` | socle | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F14836 ; https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 |
 | `aff-d-probatoire-majoration` | approfondissement | affirmations | Code de la route, art. L223-1 et R223-1 |
+| `aff-d-disque-a-duree` | approfondissement | affirmations | Code de la route, art. R413-5 II et III ; L223-1 |
 | `aff-d-invalidation-code-seul` | approfondissement | affirmations | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 |
 | `aff-d-invalidation-capital` | approfondissement | affirmations | Code de la route, art. L223-1 et R223-1 |
 | `aff-d-recuperation-delai` | approfondissement | affirmations | Code de la route, art. L223-6 ; service-public.fr F1685 |
@@ -1477,7 +1404,7 @@ Recherche Anki : `objectif::d-permis`
 
 Appliquer les obligations à une situation concrète.
 
-20 notes / 28 cartes.
+20 notes / 27 cartes.
 
 Recherche Anki : `objectif::d-vehicule`
 
@@ -1508,18 +1435,18 @@ Recherche Anki : `objectif::d-vehicule`
 
 Relier consommation et gestes de conduite ; distinguer recommandations adaptables et calculs sur données fournies.
 
-16 notes / 19 cartes.
+16 notes / 16 cartes.
 
 Recherche Anki : `objectif::e-ecoconduite`
 
 | Note | Étape | Exercice | Source |
 |---|---|---|---|
-| `e-surconsommations` | approfondissement | faits | ADEME ; Codeclic — Conduite économique ; Ornikar — Conduite écologique |
 | `e-feu-rouge-anticipation` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `e-rapports-regime` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `e-moteur-arret` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `e-frein-moteur` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `e-climatisation-conso` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
+| `e-surconsommations-causes` | approfondissement | questions | ADEME ; Codeclic — Conduite économique ; Ornikar — Conduite écologique |
 | `e-ecomobilite-choix` | socle | questions | ADEME — Se déplacer autrement |
 | `e-budget-trajet-tableau` | socle | questions | Exercice de calcul : consommation × distance / 100. |
 | `aff-e-clim-autoroute` | approfondissement | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
@@ -1535,7 +1462,7 @@ Recherche Anki : `objectif::e-ecoconduite`
 
 Lire les conditions locales et ne pas confondre électrique et sans impact.
 
-22 notes / 26 cartes.
+22 notes / 24 cartes.
 
 Recherche Anki : `objectif::e-pollution`
 
@@ -1582,7 +1509,7 @@ Recherche Anki : `objectif::x-format`
 
 Couleurs, cartouches, confirmation et affectation de voies servent à choisir assez tôt ; une erreur de direction ne justifie pas une manœuvre dangereuse.
 
-53 notes / 53 cartes.
+47 notes / 47 cartes.
 
 Recherche Anki : `objectif::l-orientation`
 
@@ -1590,7 +1517,6 @@ Recherche Anki : `objectif::l-orientation`
 |---|---|---|---|
 | `c12` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c13a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `c13b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c13c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c13d` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `c24a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -1605,12 +1531,8 @@ Recherche Anki : `objectif::l-orientation`
 | `e42` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `e43` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `e44` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m10a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m10b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m10c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m10z` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `j1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `j1bis` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `j3` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `j4` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `j5` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -1620,7 +1542,6 @@ Recherche Anki : `objectif::l-orientation`
 | `j12` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `j13` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `j14a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `j14b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `d-couleur-bleu` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `d-couleur-vert` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `d-couleur-blanc` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
@@ -1646,66 +1567,35 @@ Recherche Anki : `objectif::l-orientation`
 
 Distinguer secours, repos, carburant et recharge ; les variantes de services apprennent à interpréter les pictogrammes sans leur attribuer une prescription.
 
-42 notes / 42 cartes.
+12 notes / 12 cartes.
 
 Recherche Anki : `objectif::l-services`
 
 | Note | Étape | Exercice | Source |
 |---|---|---|---|
-| `c3` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `m1a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `m3b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce1` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce2b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce3a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce3b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce4a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce4b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce4c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce5a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce5b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce6a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce6b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce7` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce8` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce9` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce10` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce12` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce14` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce15a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce15c` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce15g` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce15h` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce15i` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce15j` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce16` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce17` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce18` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce19` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce20a` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce20b` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce21` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce22` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce23` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce24` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce25` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce26` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce27` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce28` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
-| `ce50` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `ce52` | approfondissement | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 
 ## c-vision — Comprendre les limites de la vision et les compensations
 
 Champ utile, éblouissement et correction visuelle expliquent où chercher l’information ; les ordres de grandeur ne sont pas des garanties individuelles.
 
-6 notes / 8 cartes.
+5 notes / 5 cartes.
 
 Recherche Anki : `objectif::c-vision`
 
 | Note | Étape | Exercice | Source |
 |---|---|---|---|
-| `c-champ-visuel-chiffres` | approfondissement | faits | securite-routiere.gouv.fr — Dépliant La vue ; Conduire sur autoroute ; En Voiture Simone — Champ visuel |
 | `c-vue-90-pourcent` | approfondissement | faits | Arrêté du 28 mars 2022 ; En Voiture Simone — Acuité visuelle ; Code de la route, art. R221-1-1 |
 | `c-eblouissement-duree` | approfondissement | questions | securite-routiere.gouv.fr — Conduire la nuit ; Dépliant La vue |
 | `aff-c-vision-peripherique` | approfondissement | affirmations | Code en Poche — Le champ visuel ; securite-routiere.gouv.fr — Dépliant La vue |
@@ -1733,7 +1623,7 @@ Recherche Anki : `objectif::u-lents`
 
 Âge, formation, accompagnement et restrictions définissent qui peut conduire et dans quelles conditions ; les procédures ne sont pas de simples anecdotes.
 
-5 notes / 9 cartes.
+6 notes / 9 cartes.
 
 Recherche Anki : `objectif::d-apprentissage`
 
@@ -1743,13 +1633,14 @@ Recherche Anki : `objectif::d-apprentissage`
 | `d-permis-17-ans` | approfondissement | faits | Décret n° 2023-1214 du 20 décembre 2023 ; Code de la route, art. R221-5 |
 | `d-formation-minimale` | approfondissement | faits | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828 |
 | `d-accompagnateur` | approfondissement | faits | Code de la route, R211-3 et R234-1 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2826 |
+| `d-conduite-supervisee` | approfondissement | questions | Code de la route, art. R211-5-1 ; service-public.fr F2827 |
 | `aff-d-aac-points-eleve` | approfondissement | affirmations | Code de la route, L121-1 et L223-1 |
 
 ## d-sanctions — Distinguer infraction, sanction et mesure sur le permis
 
 Comprendre qui est responsable, quels points sont retirés et la différence entre maxima pénaux, amendes et mesures administratives ; les cas complètent le fonctionnement du capital.
 
-22 notes / 35 cartes.
+22 notes / 33 cartes.
 
 Recherche Anki : `objectif::d-sanctions`
 

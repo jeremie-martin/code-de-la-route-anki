@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 30 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 29 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: a1a
   type: panneau
   code: A1a
@@ -57,7 +57,7 @@
   nom: Cassis ou dos-d'âne
   signification: Annonce une déformation naturelle ou accidentelle de la chaussée (creux « cassis » ou bosse « dos-d'âne ») qui n'est pas un aménagement volontaire.
   conduite: Ralentir fortement ; risque de perte d'adhérence et de dommages au véhicule.
-  complement: 'A2a (deux bosses) = déformation de la route ; A2b (une bosse) = ralentisseur construit volontairement. Version temporaire : AK2.'
+  complement: A2a (deux bosses) = déformation de la route ; A2b (une bosse) = ralentisseur construit volontairement.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -70,7 +70,6 @@
   nom: Ralentisseur de type dos-d'âne
   signification: Annonce un ralentisseur aménagé de type dos-d'âne (bosse) destiné à faire ralentir les véhicules.
   conduite: Ralentir à la vitesse indiquée par le panneau B14 qui l'accompagne généralement (30 km/h).
-  complement: Ralentisseur dos-d'âne autorisé uniquement en agglomération (ou sur voie limitée à 30). Implanté 0 à 50 m avant, suivi du panneau de position C27.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -144,7 +143,6 @@
   nom: Passage à niveau muni de barrières ou demi-barrières
   signification: Annonce un passage à niveau gardé par des barrières ou demi-barrières (automatiques ou manuelles).
   conduite: Ralentir, être prêt à s'arrêter ; ne jamais s'engager si l'on risque d'être immobilisé sur les voies.
-  complement: Panonceau M9b « voie ferrée électrifiée » possible.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -162,7 +160,7 @@
   sous_theme: panneaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  complement: Croix de Saint-André (G1) en position ; un STOP (AB4) peut la surmonter.
+  complement: La croix de Saint-André marque le passage lui-même ; un STOP peut la surmonter.
 - id: a9a
   type: panneau
   code: A9a
@@ -299,7 +297,7 @@
   nom: Annonce de feux tricolores
   signification: Annonce des feux de signalisation tricolores (carrefour à feux) souvent masqués ou inattendus (hors agglomération, sortie de virage).
   conduite: Ralentir, se préparer à s'arrêter ; anticiper le passage au jaune.
-  complement: 'Version temporaire jaune : AK17 (feux de chantier). Un feu jaune clignotant R1 peut être ajouté au sommet du panneau pour renforcer l''alerte.'
+  complement: Un feu jaune clignotant peut être ajouté au sommet du panneau pour renforcer l’alerte.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -355,18 +353,6 @@
   theme: L
   sous_theme: panneaux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: a23
-  type: panneau
-  code: A23
-  image:
-    commons: France road sign A23.svg
-  nom: Traversée d'une aire de danger aérien
-  signification: 'Annonce la traversée d''une zone où des aéronefs volent à basse altitude (proximité d''un aérodrome) : risque de surprise ou d''effet de souffle.'
-  conduite: Ne pas se laisser distraire ni s'arrêter ; respecter les feux rouges clignotants s'il y en a.
-  theme: L
-  sous_theme: panneaux
-  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: a24
   type: panneau

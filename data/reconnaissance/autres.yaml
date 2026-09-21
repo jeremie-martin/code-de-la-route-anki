@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 7 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 6 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: agent-bras-leve
   type: geste
   image:
@@ -77,19 +77,6 @@
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   tags:
   - revision::v3_1
-- id: sr3b
-  type: panneau
-  code: SR3b
-  image:
-    commons: France road sign SR3b.svg
-  nom: Panneau « Pour votre sécurité, contrôles radars fréquents »
-  signification: Panneau d'information annonçant une zone où des contrôles radars (fixes, mobiles, embarqués) sont fréquents, sans indiquer la position exacte.
-  conduite: Respecter la limitation sur toute la zone.
-  complement: À l'entrée d'itinéraires à contrôles fréquents.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: sr3e
   type: panneau
   code: SR3e

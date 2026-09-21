@@ -11,7 +11,6 @@
   couverts_par:
   - ce15a
   - ce15c
-  - ce16
 - codes:
   - FEU-vert-clignotant
   raison: Entrée descriptive d’un signal absent de la signalisation française, pas un signal à inventer en image.
@@ -82,10 +81,8 @@
   couverts_par:
   - c-autoroute-deux-traits
   - sr3a
-  - sr3b
-  - m9k1
-  - m9k2
-  - m9l
+  - sr3e
+  - vr-losange-debut
   - u-interfiles-chiffres
   - e-covoiturage-voie
 - codes:
@@ -169,8 +166,8 @@
   - j6
   - j11
   - j12
+  - k5a
   - k5b
-  - k5d
 - codes:
   - G2
   - G3
@@ -180,7 +177,7 @@
   couverts_par:
   - r-pn-feu-rouge-clignotant
   - r-pn-barrieres-ouverture
-  - m9b
+  - r-pn-sans-barriere
   - b12
 - codes:
   - KS1
@@ -198,9 +195,223 @@
   raison: Annonce progressive de péage ; choix de voie et paiement enseignés avec pictogrammes et application.
   couverts_par:
   - r-autoroute-peage
-  - c62
-  - c64a
-  - c64b
-  - c64c1
-  - c64c2
   - c64d
+  - c65a
+- codes:
+  - CE2b
+  - CE3b
+  - CE4a
+  - CE4b
+  - CE5a
+  - CE5b
+  - CE6a
+  - CE6b
+  - CE8
+  - CE9
+  - CE10
+  - CE15h
+  - CE15j
+  - CE18
+  - CE19
+  - CE20a
+  - CE20b
+  - CE21
+  - CE23
+  - CE24
+  - CE25
+  - CE26
+  - CE27
+  - CE28
+  - CE50
+  raison: 'Révision v6 : services au pictogramme transparent (embarcadère, distributeur de billets, télésiège…)
+    sans règle ni décision de conduite. Les services utiles à l’examen (secours, carburant, recharge, repos, camping)
+    gardent un représentant par famille.'
+  couverts_par:
+  - ce1
+  - ce4c
+  - ce15a
+  - ce15g
+  - ce15i
+  - ce29
+- codes:
+  - M4h
+  - M4i
+  - M4j
+  - M4k
+  - M4l
+  - M4m
+  - M4p
+  - M4q
+  - M4r
+  - M4s
+  - M4t
+  - M4u
+  - M4v
+  - M4w
+  - M4x
+  - M4y
+  - M4z
+  raison: 'Révision v6 : catégories d’usagers exotiques (charrettes à bras, cavaliers, essieux…). La lecture « le
+    panonceau désigne la catégorie concernée par le panneau » est entraînée sur les catégories courantes ; les marchandises
+    dangereuses et les remorques ont leurs panneaux d’interdiction.'
+  couverts_par:
+  - m4a
+  - m4b
+  - m4c
+  - m4d1
+  - m4d2
+  - m4f
+  - m4g
+  - l-panonceau-portee
+  - b18c
+  - b9i
+- codes:
+  - M1a
+  - M3d
+  - M6e
+  - M6f
+  - M6g
+  - M6j
+  - M6k1
+  - M6k2
+  - M8e
+  - M8f
+  - M9a
+  - M9b
+  - M9e
+  - M9f
+  - M9j1
+  - M9j2
+  - M9v3
+  - M9k1
+  - M9k2
+  - M9l
+  - M10a
+  - M10c
+  - M10z
+  - M11a
+  - M11b2
+  - M11c1
+  - M11c2
+  - KM9
+  raison: 'Révision v6 : variantes d’inscription ou de flèche dont la lecture se déduit du panonceau de base déjà
+    appris (début/fin, catégorie, période, cartouche, inscription libre). Une inscription se lit ; elle ne se mémorise
+    pas comme un code.'
+  couverts_par:
+  - m6b
+  - m6c
+  - m6d
+  - m8a
+  - m8b
+  - m8d
+  - m9v2
+  - m10b
+  - m11b1
+  - m11d
+  - km1
+  - km2
+  - l-panonceau-portee
+- codes:
+  - B39
+  - B41
+  - B42
+  - B49
+  - B22c
+  - B9e
+  - C51b
+  - C116
+  raison: 'Révision v6 : fins de prescription rares et catégories marginales (voitures à bras, cavaliers). Le principe
+    « rond blanc barré = fin de l’interdiction » et les signaux de début correspondants suffisent.'
+  couverts_par:
+  - b31
+  - b33
+  - b40
+  - b22a
+  - b22b
+  - b9c
+  - c51a
+  - c115
+- codes:
+  - C3
+  - C9
+  - C13b
+  - C23
+  - C62
+  - C64c1
+  - C64c2
+  - C65b
+  - C65c
+  - C117
+  raison: 'Révision v6 : indications sans décision propre (risque d’incendie, autopartage, présignalisation d’impasse)
+    ou variantes de péage dont la lecture est déjà exercée sur les pictogrammes principaux.'
+  couverts_par:
+  - c13a
+  - c13c
+  - c64d
+  - c65a
+  - r-autoroute-peage
+  - b18c
+  - c111
+- codes:
+  - B6b5
+  - B50b
+  - B50e
+  raison: 'Révision v6 : combinaisons de zones de stationnement ; l’alternance semi-mensuelle et les entrées/sorties
+    de zone sont apprises sur leurs panneaux simples.'
+  couverts_par:
+  - b6b2
+  - b50a
+  - b50c
+  - l-stationnement-alterne
+- codes:
+  - J1bis
+  - J14b
+  - MARQ-ligne-T'1
+  - K5d
+  - A23
+  raison: 'Révision v6 : variantes de balises et de marquage sans décision distincte (balise de neige, musoir à
+    chevrons, ligne T’1) et danger aérien, sans place dans une préparation au permis B.'
+  couverts_par:
+  - j1
+  - j14a
+  - marq-ligne-discontinue-t1
+  - marq-ligne-dissuasion
+  - k5a
+  - k5b
+  - a14
+- codes:
+  - B5a
+  - B5c
+  - B18a
+  - B18b
+  - SR3b
+  raison: 'Révision v6 : un représentant par famille suffit pour « arrêt obligatoire au poste » (douane, police),
+    « accès interdit aux marchandises dangereuses » et l’annonce de contrôle automatique.'
+  couverts_par:
+  - b4
+  - b5b
+  - b18c
+  - u-matieres-dangereuses
+  - sr3a
+  - sr3e
+- codes:
+  - CE3a
+  - CE16
+  - CE17
+  raison: 'Révision v7 : services au pictogramme transparent (point d’information, restaurant, hôtel) sans décision
+    de conduite ; la lecture des services reste exercée sur secours, carburant, recharge et aires.'
+  couverts_par:
+  - ce1
+  - ce15a
+  - ce15g
+  - ce7
+  - r-autoroute-fatigue-aires
+- codes:
+  - C64a
+  - C64b
+  raison: 'Révision v7 : variantes de voie de péage (péagiste, carte) sans décision propre ; le choix de voie est
+    enseigné par l’application et par le télépéage, seule variante qui change l’allure.'
+  couverts_par:
+  - r-autoroute-peage
+  - c64d
+  - c65a

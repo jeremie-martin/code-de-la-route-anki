@@ -99,7 +99,7 @@ def assert_history(col, cid, before):
     card = col.get_card(cid)
     assert (card.nid, card.ord, card.ivl, card.due, card.reps, card.lapses) == before
     assert col.db.scalar('select count(*) from revlog where cid=?', cid) == 1
-    assert 'normalement à 110' in card.note()['Texte'], 'correction non importée'
+    assert '{{c2::100 km/h}}' in card.note()['Texte'], 'correction non importée'
 
 
 def main():

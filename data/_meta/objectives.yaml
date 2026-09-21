@@ -17,8 +17,8 @@
 - id: l-danger
   theme: L
   titre: Reconnaître le danger et anticiper avant de le voir
-  raison: Chaque danger appelle une anticipation ; les variantes gauche/droite et les dangers moins rencontrés
-    consolident la reconnaissance sans changer le standard de qualité.
+  raison: Chaque danger appelle une anticipation ; les variantes gauche/droite et les dangers moins rencontrés consolident
+    la reconnaissance sans changer le standard de qualité.
   notes:
   - a1a
   - a1c
@@ -39,7 +39,6 @@
   - a17
   - a18
   - a21
-  - a23
   - a24
   - l-implantation-danger
   - conf-a13a-a13b
@@ -236,23 +235,18 @@
   - b1j
   - b3a
   - b4
-  - b5a
   - b5b
-  - b5c
   - b6a2
   - b6a3
   - b8
   - b9a
   - b9c
   - b9d
-  - b9e
   - b9f
   - b9i
   - b10a
   - b13a
   - b17
-  - b18a
-  - b18b
   - b18c
   - b19
   - b21-2
@@ -260,17 +254,12 @@
   - b21c2
   - b21d2
   - b21e
-  - b22c
   - b29
   - b34a
   - b35
-  - b39
-  - b41
-  - b42
   - b43
   - b44
   - b45a
-  - b49
   - conf-b1-c12
   - conf-b3-b3a
   - conf-b7a-b7b
@@ -317,10 +306,8 @@
   - l-formes-couleurs-panneaux
   - l-formes-priorite-temporaire
   - m3a
-  - m3d
   - m4d1
   - m4g
-  - m4h
   - m8c
   - m9z
   - l-visuel-distance
@@ -332,64 +319,28 @@
   - b6b2
   - b6b3
   - b6b4
-  - b6b5
   - b50a
   - m4b
   - m4c
   - m4d2
   - m4e
-  - m4i
-  - m4j
-  - m4k
-  - m4l
-  - m4m
   - m4n
-  - m4p
-  - m4q
-  - m4r
-  - m4s
-  - m4t
-  - m4u
-  - m4v
-  - m4w
-  - m4x
-  - m4y
-  - m4z
   - m6a
   - m6b
   - m6d
-  - m6e
-  - m6f
-  - m6g
   - m6i
-  - m6j
-  - m6k1
-  - m6k2
   - m8d
-  - m8e
-  - m8f
-  - m9a
   - m9d
-  - m9j1
-  - m9j2
   - m9v1
-  - m9v3
-  - m9k1
-  - m9k2
-  - m9l
-  - m11a
   - m11b1
-  - m11b2
   - l-signalisation-temporaire
   - l-agglomeration-panneau
   - aff-l-implantation-agglo-50
   - conf-b52-b54
   - conf-b30-b56
   - conf-m8a-m8b
-  - b50b
   - b50c
   - b50d
-  - b50e
 - id: l-marquage
   theme: L
   titre: Lire lignes et affectations de voies
@@ -426,7 +377,6 @@
   - conf-stop-cedez-lignes
   - conf-jaune-continue-discontinue
   - l-bandes-rugueuses
-  - marq-ligne-t1
   - marq-damier-blanc
 - id: l-vitesse
   theme: L
@@ -451,11 +401,9 @@
   - l-c107-route-separee
   consolidation:
   - sr3a
-  - sr3b
   - sr3e
   - c4b
   - c51a
-  - c51b
   - l-vitesse-minimale-autoroute
   - l-vitesse-engins
   - l-vitesse-peripherique
@@ -563,8 +511,6 @@
   - c1c
   - c5
   - c6
-  - c9
-  - c23
   - l-stationnement-categories
   - l-stationnement-5m-passage
   - l-stationnement-alterne
@@ -598,6 +544,7 @@
   - c-distance-freinage-mouille-exercice
   - c-distance-obstacle-exercice
   - c-arret-repere-limite
+  - c-distance-arret-reperes
   consolidation:
   - c-distance-reaction-formule
   - c-intervalle-pl-tunnel
@@ -622,7 +569,6 @@
   - aff-c-enfant-croit-vu
   - aff-c-champ-visuel-vitesse-pieton
   consolidation:
-  - c-retro-7s
   - c-clignotant-avant-ralentir
   - c-zone-attention-pluie
   - c-enfant-masque
@@ -647,7 +593,6 @@
   - aff-c-nuit-trafic-fluide
   - c-fatigue-apres-pause
   consolidation:
-  - c-nuit-risque
   - c-routine-monotonie
   - c-vitesse-fatigue
   - aff-c-jeune-reflexes
@@ -714,7 +659,7 @@
   - aff-r-brouillard-arriere-pluie
   - aff-r-verglas-pont
   consolidation:
-  - r-neige-adherence
+  - aff-r-verglas-temperature-positive
   - r-pluie-feux
   - r-verglas-descente
   - aff-r-brouillard-avant-pluie
@@ -767,15 +712,8 @@
   - r-autoroute-peage
   - c64d
   - c65a
-  - c65b
   - conf-c107-c207
   consolidation:
-  - c62
-  - c64a
-  - c64b
-  - c64c1
-  - c64c2
-  - c65c
   - c108
   - r-autoroute-sortie-annonces
   - r-autoroute-bau
@@ -811,12 +749,6 @@
   - r-tram-priorite
   consolidation:
   - c112
-  - c117
-  - m9b
-  - m9e
-  - m9f
-  - m11c1
-  - m11c2
   - ce30b
   - l-balises-j10
   - r-train-distance-arret
@@ -854,7 +786,6 @@
   consolidation:
   - km1
   - km2
-  - km9
   - ak2
   - ak3a
   - ak3b
@@ -864,7 +795,6 @@
   - k1
   - k2
   - k5b
-  - k5d
   - k14
   - k16
   - kc1
@@ -891,7 +821,6 @@
   - aff-u-velo-ecart-portieres
   - c20a
   - c115
-  - c116
   - marq-passage-pietons
   consolidation:
   - marq-passage-cyclistes
@@ -1177,8 +1106,6 @@
   - s-chargement-placement
   - s-chargement-depassement
   - s-remorque-chiffres
-  - s-remorque-cas-b
-  - s-remorque-cas-b96
   - s-remorque-conduite
   - aff-s-coffre-toit-lourd
   - aff-s-caravane-passager
@@ -1187,7 +1114,6 @@
   - s-remorque-masse-reelle
   consolidation:
   - s-coffre-toit
-  - s-remorque-permis-b
   - aff-s-chargement-distance-arret
   - aff-s-plage-arriere
   - aff-s-chargement-avant
@@ -1212,7 +1138,7 @@
   - aff-a-triangle-autoroute
   - aff-a-donner-a-boire
   - aff-a-compressions-seules
-  - message-alerte
+  - a-message-alerte
   - triangle-distance
   - rcp-rythme
   - numero-114
@@ -1240,7 +1166,7 @@
   - a-accident-corporel-obligations
   - a-constat-desaccord
   consolidation:
-  - non-assistance
+  - a-non-assistance
   - aff-a-rester-sur-place
   - aff-a-ne-rien-faire
   - aff-a-constat-signature
@@ -1268,6 +1194,7 @@
   - aff-d-invalidation-code-seul
   - aff-d-invalidation-capital
   - aff-d-recuperation-delai
+  - aff-d-disque-a-duree
 - id: d-vehicule
   theme: D
   titre: Rouler avec les documents, assurance et contrôle requis
@@ -1297,8 +1224,8 @@
 - id: e-ecoconduite
   theme: E
   titre: Réduire les consommations sans compromettre la sécurité
-  raison: Relier consommation et gestes de conduite ; distinguer recommandations adaptables et calculs sur
-    données fournies.
+  raison: Relier consommation et gestes de conduite ; distinguer recommandations adaptables et calculs sur données
+    fournies.
   notes:
   - e-feu-rouge-anticipation
   - e-rapports-regime
@@ -1310,7 +1237,7 @@
   - e-ecomobilite-choix
   - e-budget-trajet-tableau
   consolidation:
-  - e-surconsommations
+  - e-surconsommations-causes
   - aff-e-clim-autoroute
   - aff-e-point-mort-descente
   - aff-e-moteur-chauffer
@@ -1348,8 +1275,8 @@
 - id: x-format
   theme: X
   titre: Connaître les contraintes de l’épreuve
-  raison: Se préparer au temps disponible, au seuil de réussite et à la validation des réponses ; ces repères
-    complètent la lecture des scènes.
+  raison: Se préparer au temps disponible, au seuil de réussite et à la validation des réponses ; ces repères complètent
+    la lecture des scènes.
   notes:
   - etg-format-questions
   - etg-temps-par-question
@@ -1358,8 +1285,8 @@
 - id: l-orientation
   theme: L
   titre: Lire un itinéraire et préparer sa voie
-  raison: Couleurs, cartouches, confirmation et affectation de voies servent à choisir assez tôt ; une erreur
-    de direction ne justifie pas une manœuvre dangereuse.
+  raison: Couleurs, cartouches, confirmation et affectation de voies servent à choisir assez tôt ; une erreur de
+    direction ne justifie pas une manœuvre dangereuse.
   notes:
   - c12
   - c28
@@ -1384,7 +1311,6 @@
   - l-vocab-routes-lettres
   consolidation:
   - c13a
-  - c13b
   - c13c
   - c13d
   - c24a
@@ -1395,14 +1321,9 @@
   - c26b
   - c27
   - c50
-  - m10a
   - m10b
-  - m10c
-  - m10z
-  - j1bis
   - j7
   - j13
-  - j14b
   - conf-c13a-c13c
   - conf-e42-e43
   - conf-j1-j3
@@ -1422,13 +1343,8 @@
     les pictogrammes sans leur attribuer une prescription.
   notes: []
   consolidation:
-  - c3
-  - m1a
   - m3b
   - ce1
-  - ce3a
-  - ce4a
-  - ce4b
   - ce4c
   - ce7
   - ce12
@@ -1437,41 +1353,15 @@
   - ce15c
   - ce15g
   - ce15i
-  - ce16
-  - ce17
-  - ce18
-  - ce21
   - ce22
   - ce52
-  - ce2b
-  - ce3b
-  - ce5a
-  - ce5b
-  - ce6a
-  - ce6b
-  - ce8
-  - ce9
-  - ce10
-  - ce15h
-  - ce15j
-  - ce19
-  - ce20a
-  - ce20b
-  - ce23
-  - ce24
-  - ce25
-  - ce26
-  - ce27
-  - ce28
-  - ce50
 - id: c-vision
   theme: C
   titre: Comprendre les limites de la vision et les compensations
-  raison: Champ utile, éblouissement et correction visuelle expliquent où chercher l’information ; les ordres
-    de grandeur ne sont pas des garanties individuelles.
+  raison: Champ utile, éblouissement et correction visuelle expliquent où chercher l’information ; les ordres de
+    grandeur ne sont pas des garanties individuelles.
   notes: []
   consolidation:
-  - c-champ-visuel-chiffres
   - c-vue-90-pourcent
   - c-eblouissement-duree
   - aff-c-vision-peripherique
@@ -1501,6 +1391,7 @@
   - d-permis-17-ans
   - d-formation-minimale
   - d-accompagnateur
+  - d-conduite-supervisee
   - aff-d-aac-points-eleve
 - id: d-sanctions
   theme: D
@@ -1543,8 +1434,7 @@
 - id: e-mobilite
   theme: E
   titre: Choisir un mode de déplacement et une énergie adaptés
-  raison: Comparer besoins, carburant compatible, recharge et solutions partagées ; ni prix ni impact ne sont
-    universels.
+  raison: Comparer besoins, carburant compatible, recharge et solutions partagées ; ni prix ni impact ne sont universels.
   notes: []
   consolidation:
   - e-covoiturage-voie

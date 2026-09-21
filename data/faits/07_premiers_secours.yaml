@@ -1,6 +1,6 @@
 - id: pas-ordre
-  explication: Protéger évite le suraccident. Faire alerter par un témoin permet de secourir en parallèle ;
-    ne pas retarder un geste vital pour réciter une séquence rigide.
+  explication: Protéger évite le suraccident. Faire alerter par un témoin permet de secourir en parallèle ; ne pas retarder
+    un geste vital pour réciter une séquence rigide.
   theme: A
   sous_theme: pas
   source: Sécurité civile, PSC juillet 2026, Protection, Alerte et Hémorragies — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
@@ -9,8 +9,8 @@
   - revision::v5
   texte: Face à un accident, les trois priorités de l’aide sont {{c1::protéger, alerter, secourir}}.
 - id: numeros-urgence
-  explication: 'Le 112 est le bon réflexe si l''on hésite : il redirige vers le service compétent. Il fonctionne
-    depuis un téléphone verrouillé ou sans crédit, via n''importe quel réseau disponible.'
+  explication: 'Le 112 est le bon réflexe si l''on hésite : il redirige vers le service compétent. Il fonctionne depuis un
+    téléphone verrouillé ou sans crédit, via n''importe quel réseau disponible.'
   theme: A
   sous_theme: alerter
   source: service-public.fr — Numéros d'urgence ; Code pénal, art. 223-6
@@ -22,30 +22,28 @@
   tags:
   - revision::v4
 - id: numero-114
-  texte: "Le {{c1::114}} est le numéro d'urgence accessible par SMS ou visio, destiné aux personnes {{c2::sourdes ou malentendantes}}."
-  explication: "Un automobiliste entendant utilise le 112, le 15, le 17 ou le 18 ; le 114 existe pour ne pas exclure les personnes qui ne peuvent pas téléphoner."
+  texte: Le numéro d’urgence accessible par SMS ou visio, destiné aux personnes sourdes ou malentendantes, est le {{c1::114}}.
+  explication: Un automobiliste entendant utilise le 112, le 15, le 17 ou le 18 ; le 114 existe pour ne pas exclure les personnes
+    qui ne peuvent pas téléphoner.
   theme: A
   sous_theme: alerter
   importance: utile
-  source: "service-public.fr — Numéros d'urgence"
+  source: service-public.fr — Numéros d'urgence
+  tags:
+  - revision::v6
 - id: borne-appel-autoroute
-  texte: "Sur autoroute, les bornes d'appel d'urgence (orange) sont implantées environ tous les {{c1::2 km}} ; elles localisent automatiquement l'appel et mettent en relation avec le poste de sécurité."
-  explication: "Pour la rejoindre, marcher derrière la glissière, jamais sur la chaussée ni sur la bande d'arrêt d'urgence. En tunnel, les postes d'appel sont dans les niches de sécurité."
+  texte: Sur autoroute, les bornes d'appel d'urgence (orange) sont implantées environ tous les {{c1::2 km}} ; elles localisent
+    automatiquement l'appel et mettent en relation avec le poste de sécurité.
+  explication: Pour la rejoindre, marcher derrière la glissière, jamais sur la chaussée ni sur la bande d'arrêt d'urgence.
+    En tunnel, les postes d'appel sont dans les niches de sécurité.
   theme: A
   sous_theme: alerter
-  source: "securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA"
-- id: message-alerte
-  texte: "Un message d'alerte efficace donne : le {{c1::lieu précis}} (route, sens, point kilométrique ou repère), la nature de l'accident, le {{c2::nombre de victimes}} et leur état, les dangers particuliers (incendie, produits, voie coupée)."
-  explication: "C'est d'après ce message que l'opérateur dimensionne les secours : on reste précis et calme, on s'identifie et on répond à ses questions."
-  theme: A
-  sous_theme: alerter
-  source: "Croix-Rouge française — Alerter les secours ; securite-routiere.gouv.fr"
+  source: securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA
 - id: triangle-distance
-  texte: Sur route, lorsqu’il est requis et que sa pose ne me met pas en danger, le triangle se place sur la
-    chaussée, environ {{c1::30 m}} avant l’obstacle, ou davantage pour être visible à temps.
-  explication: L’exception pour mise en danger vaut sur toute route. Ne pas prescrire systématiquement une
-    pose sur l’accotement ; le triangle doit avertir ceux qui arrivent sur la même voie. Sur autoroute, se
-    protéger derrière la glissière et alerter.
+  texte: Sur route, si sa pose ne me met pas en danger, le triangle se place environ {{c1::30 m}} avant l'obstacle, ou davantage
+    pour être visible à temps.
+  explication: L’exception pour mise en danger vaut sur toute route. Ne pas prescrire systématiquement une pose sur l’accotement
+    ; le triangle doit avertir ceux qui arrivent sur la même voie. Sur autoroute, se protéger derrière la glissière et alerter.
   image:
     gen: triangle_distance
     params:
@@ -56,8 +54,8 @@
   tags:
   - revision::v4
 - id: rcp-rythme
-  explication: Un cycle est une seule procédure à retrouver. Si les insufflations sont impossibles, poursuivre
-    les compressions. Alerter, faire apporter un DAE et suivre ses consignes.
+  explication: Un cycle est une seule procédure à retrouver. Si les insufflations sont impossibles, poursuivre les compressions.
+    Alerter, faire apporter un DAE et suivre ses consignes.
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
@@ -65,16 +63,4 @@
   - revision::v3
   - revision::v4
   - revision::v5
-  texte: Chez l’adulte, quand je pratique une RCP avec insufflations, j’alterne {{c1::30 compressions puis
-    2 insufflations}}.
-- id: non-assistance
-  texte: Face à une personne en péril, je dois apporter l’aide possible {{c1::sans risque pour moi ni pour
-    autrui}}, personnellement ou en provoquant les secours.
-  explication: L’inaction peut constituer un délit. Un appel ne dispense pas d’un autre geste utile que je
-    peux faire sans danger ; le guidage des secours aide à choisir l’action.
-  theme: A
-  sous_theme: obligations
-  source: Code pénal, article 223-6
-  tags:
-  - revision::v3
-  - revision::v5
+  texte: Chez l’adulte, quand je pratique une RCP avec insufflations, j’alterne {{c1::30 compressions puis 2 insufflations}}.

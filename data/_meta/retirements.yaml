@@ -7,11 +7,13 @@
   - scn-dep-ligne-discontinue-libre
 - id: c-distance-arret-formule
   raison: Trois résultats de carrés mémorisés ne permettent pas de calculer un arrêt réel ; remplacer par les
-    composantes et les limites des hypothèses.
+    composantes et les limites des hypothèses. La v6 réintroduit deux ordres de grandeur explicitement
+    qualifiés (50 et 90 km/h sur sol sec), car l’épreuve les demande, sans en refaire une formule à réciter.
   couverts_par:
   - c-arret-repere-limite
   - c-arret-somme
   - c-double-vitesse-arret
+  - c-distance-arret-reperes
 - id: c-somnolence-stats
   raison: Un taux sans périmètre et une équivalence expérimentale en alcoolémie ne décident pas de l’aptitude
     à poursuivre.
@@ -124,3 +126,58 @@
   raison: Même décision et mêmes conditions que la question existante ; aucun transfert supplémentaire.
   couverts_par:
   - l-demi-tour-marche-arriere
+- id: s-remorque-cas-b
+  raison: 'Révision v6 : cinq applications pour une règle de permis que l’examen pose rarement ; la paire 750/800 kg
+    et le cas de la remorque vide gardent les trois discriminations utiles.'
+  couverts_par:
+  - s-remorque-seuil-750
+  - s-remorque-seuil-800
+  - s-remorque-masse-reelle
+- id: s-remorque-cas-b96
+  raison: 'Révision v6 : même contraste que le cas 800 kg (somme des PTAC au-delà de 3 500 kg).'
+  couverts_par:
+  - s-remorque-seuil-800
+  - s-remorque-chiffres
+- id: s-remorque-permis-b
+  raison: 'Révision v6 : la question récitait la règle déjà portée par les rappels de la note chiffrée et exercée
+    par les applications.'
+  couverts_par:
+  - s-remorque-chiffres
+  - s-remorque-seuil-750
+- id: c-champ-visuel-chiffres
+  raison: 'Révision v6 : trois trous de vocabulaire (« rétrécir », « latéraux », « adapter l’allure ») demandaient
+    de réciter une phrase, pas de rappeler une connaissance ; l’affirmation et la question d’exploration visuelle
+    portent la même idée.'
+  couverts_par:
+  - aff-c-champ-visuel-vitesse-pieton
+  - c-regarder-loin
+- id: c-retro-7s
+  raison: 'Révision v6 : trous de phrase (« régulièrement », « ralentissement anticipé… ») sans valeur de rappel ;
+    la question sur le contrôle avant ralentissement suffit.'
+  couverts_par:
+  - c-retro-avant-freiner
+  - c-regarder-loin
+- id: c-nuit-risque
+  raison: 'Révision v6 : trous de mots devinables ; l’affirmation sur le trafic fluide de nuit et la question sur la
+    vitesse de nuit entraînent la même décision.'
+  couverts_par:
+  - aff-c-nuit-trafic-fluide
+  - r-nuit-vitesse-visibilite
+- id: r-neige-adherence
+  raison: 'Révision v6 : remplacée par une affirmation à juger (température positive n’exclut pas le verglas), plus
+    proche du travail demandé à l’examen qu’un trou de phrase.'
+  couverts_par:
+  - aff-r-verglas-temperature-positive
+  - aff-r-verglas-pont
+- id: message-alerte
+  raison: 'Révision v6 : une liste à trous fait deviner l’élément caché ; la question demande le message complet.'
+  couverts_par:
+  - a-message-alerte
+- id: non-assistance
+  raison: 'Révision v6 : le trou portait sur une formule de sept mots ; la question demande l’obligation et sa limite.'
+  couverts_par:
+  - a-non-assistance
+- id: e-surconsommations
+  raison: 'Révision v6 : liste de quatre trous devinables par élimination ; la question demande les quatre facteurs.'
+  couverts_par:
+  - e-surconsommations-causes

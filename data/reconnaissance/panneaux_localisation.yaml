@@ -7,7 +7,6 @@
   nom: Entrée d'agglomération
   signification: 'Entrée d''agglomération : à partir du panneau, 50 km/h sauf indication, priorité à droite en l''absence de signalisation, klaxon interdit sauf danger.'
   conduite: Être à 50 km/h au niveau du panneau ; redoubler d'attention (piétons, cyclistes, intersections).
-  complement: 'Fin : EB20. Seuls B14 (< 50, valable alors dans toute l''agglomération), AB6, AB7, B30, B52, E31, E32 partagent son support.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -21,7 +20,6 @@
   nom: Sortie d'agglomération
   signification: 'Indique la sortie de l''agglomération : fin des règles spécifiques ; la vitesse redevient celle hors agglomération (80/90 km/h sur route bidirectionnelle).'
   conduite: Accélérer progressivement seulement après le panneau, si les conditions le permettent ; attention, hors agglomération le klaxon est de nouveau autorisé (avertissement).
-  complement: À la limite de l'agglomération, souvent adossé au panneau EB10 de l'autre sens.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -36,7 +34,6 @@
   nom: Localisation d'un lieu-dit ou d'un lieu traversé
   signification: 'Nom d''un lieu traversé qui n''est pas une agglomération : lieu-dit, hameau, forêt, col, pont. Aucune règle particulière.'
   conduite: 'Aucune obligation : la limitation reste celle de la route (sauf panneau B14 associé).'
-  complement: Peut être sur le même support qu'EB10.
   piege: Lettres ITALIQUES blanches sur fond noir = lieu-dit ; lettres droites noires sur fond blanc bordé de rouge = agglomération.
   theme: L
   sous_theme: panneaux
@@ -49,7 +46,7 @@
     commons: E42.svg
   nom: Cartouche de route nationale ou d'autoroute
   signification: Cartouche identifiant une autoroute (A + numéro) ou une route nationale (N + numéro).
-  complement: 'Au-dessus des panneaux de direction ou d''agglomération. Couleur des cartouches : rouge = A/N (État), jaune = D (département), blanc = C/VC (commune), vert = E (Europe) ou F (forêt), bleu = M (métropole).'
+  complement: 'Couleur des cartouches : rouge = A/N (État), jaune = D (département), blanc = C/VC (commune), vert = E (Europe) ou F (forêt), bleu = M (métropole).'
   theme: L
   sous_theme: panneaux
   importance: essentiel

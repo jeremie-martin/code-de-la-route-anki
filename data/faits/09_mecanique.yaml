@@ -1,33 +1,31 @@
 - id: m-pneus-chiffres
-  explication: Lire l’étiquette du véhicule ou sa notice, avec la dimension des pneus et la charge. Ne pas
-    ajouter systématiquement la même valeur à tous les véhicules.
+  explication: 'Véhicule chargé : appliquer la pression préconisée par le constructeur pour cette charge, lue sur
+    l’étiquette ou la notice ; ne pas ajouter systématiquement la même valeur à tous les véhicules.'
   theme: M
   sous_theme: pneus
   source: R314-1 ; Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
   tags:
-  - revision::v3
-  - revision::v4
+  - revision::v6
   rappels:
   - 'Profondeur minimale réglementaire des rainures principales d’un pneu de voiture : {{c1::1,6 mm}}.'
   - Pour comparer la pression d’un pneu à la valeur de référence du constructeur, la mesurer à {{c2::froid}}.
   - 'Repère d’entretien : vérifier la pression au moins une fois par {{c3::mois}} et avant un long trajet.'
-  - 'Véhicule chargé : appliquer la pression {{c4::préconisée par le constructeur}} pour cette charge.'
 - id: m-galette-chiffres
-  texte: 'Galette ou kit : respecter la {{c1::vitesse maximale indiquée sur l’équipement ou dans la notice}}. En
-    hiver, vérifier le marquage {{c2::3PMSF}} pour des pneus admis comme hiver. Avec pneus cloutés : plafond {{c3::90
-    km/h}}, sans relever une limite plus basse.'
-  explication: Une réparation provisoire a aussi une limite de distance. Les équipements amovibles se montent selon
-    la notice et les prescriptions du lieu ; 80 km/h n’est pas universel pour tout kit.
+  explication: 'Galette ou kit de réparation : respecter la vitesse maximale et la distance indiquées sur l’équipement
+    ou dans la notice ; 80 km/h n’est pas universel. Les équipements amovibles se montent selon la notice et les
+    prescriptions du lieu.'
   theme: M
   sous_theme: pneus
   importance: utile
   source: Code de la route, art. R413-7 et R314-3 ; Stych
   tags:
-  - revision::v3_1
+  - revision::v6
+  rappels:
+  - Les pneus admis comme pneus hiver portent le marquage {{c1::3PMSF}} (flocon dans une montagne).
+  - Avec des pneus cloutés, la vitesse est plafonnée à {{c2::90 km/h}}, sans relever une limite plus basse.
 - id: m-feux-portees
   explication: Distinguer « être visible » (position) et « éclairer » (croisement, route). Ces minima réglementaires
-    par temps clair ne décrivent pas une portée réelle garantie en pluie, brouillard ou face à un obstacle
-    sombre.
+    par temps clair ne décrivent pas une portée réelle garantie en pluie, brouillard ou face à un obstacle sombre.
   theme: M
   sous_theme: feux
   source: Code de la route, art. R313-2 à R313-4

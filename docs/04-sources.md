@@ -84,3 +84,11 @@ dépassement, chemin de terre, PSC 2026, fatigue, Crit’Air, délits, alcool/st
 du vol, permis/remorque et obligations locales EDPM. Voir le [bilan v5](10-bilan-v5.md).
 L’étiquette `revision::v5` indique une modification éditoriale, **pas une vérification externe
 intégrale de la note**. Le registre seul indique la portée réellement consultée.
+
+## Contrôles supplémentaires v6
+
+Les entrées `v6-*` documentent les consultations du 21 septembre 2026 : barème des excès de vitesse
+et délit dès 50 km/h (service-public F19460, décret n° 2025-1269), maintien des ZFE après la décision
+n° 2026-903 DC du 21 mai 2026, loi n° 2026-798 du 18 août 2026 (conduite sous emprise manifeste,
+L237-1), format inchangé de l’ETG en 2026. Les maxima de peine ne sont plus enseignés : ils ont changé
+deux fois en deux ans et ne décident d’aucun comportement au volant.

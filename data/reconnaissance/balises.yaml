@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 13 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 11 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: j1
   type: balise
   code: J1
@@ -9,25 +9,11 @@
   nom: Balise de virage
   signification: Balise blanche à collier rétroréfléchissant blanc, implantée à l'extérieur d'un virage pour en matérialiser le tracé.
   conduite: Ralentir avant le virage ; les balises montrent où va la route.
-  complement: À l'extérieur des virages mal perçus ; J1bis (sommet rouge) sur routes enneigées.
   theme: L
   sous_theme: balises
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: J1 (virage) = bande BLANCHE ; J3 (intersection) = bande ROUGE ; J6 (délinéateur) = bande noire oblique.
-- id: j1bis
-  type: balise
-  code: J1bis
-  image:
-    gen: balise_piquet
-    params:
-      kind: j1bis
-  nom: Balise de virage pour routes enneigées
-  signification: Balise de virage dont la partie située au-dessus de la bande rétroréfléchissante est rouge, pour rester visible sur les routes fréquemment enneigées.
-  theme: L
-  sous_theme: balises
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: j3
   type: balise
   code: J3
@@ -38,7 +24,6 @@
   nom: Balise d'intersection
   signification: Balise implantée de part et d'autre d'une intersection (hors agglomération) pour en signaler la position, quel que soit le régime de priorité.
   conduite: 'Une intersection est proche : réduire l''allure et contrôler les côtés.'
-  complement: En position, à l'intersection.
   theme: L
   sous_theme: balises
   importance: utile
@@ -52,7 +37,6 @@
   nom: Balise de virage à chevrons
   signification: 'Balise à chevron(s) blanc(s) sur fond bleu, à l''extérieur d''un virage dangereux : la pointe indique le sens du virage.'
   conduite: 'Ralentir fortement : le virage est serré ; suivre la direction des chevrons.'
-  complement: Peut être surmontée d'un feu jaune clignotant R1.
   theme: L
   sous_theme: balises
   importance: essentiel
@@ -66,7 +50,7 @@
   nom: Balise de tête d'îlot (contournement par la droite)
   signification: 'Balise carrée bleue à large flèche blanche oblique, en tête d''un îlot ou d''un terre-plein : passer à droite.'
   conduite: Passer à droite de la balise (comme B21a1).
-  complement: En tête d'îlot, souvent à l'entrée des giratoires.
+  complement: En tête d’îlot, souvent à l’entrée d’un giratoire.
   theme: L
   sous_theme: balises
   importance: essentiel
@@ -79,7 +63,6 @@
   nom: Délinéateur (balise de délimitation de chaussée)
   signification: Piquets blancs (1 m) espacés le long de l'accotement, portant une bande noire oblique et un catadioptre blanc.
   conduite: S'en servir pour évaluer le tracé et garder sa trajectoire de nuit.
-  complement: En bord de chaussée, tous les 50 à 100 m (plus rapprochés en virage).
   theme: L
   sous_theme: balises
   importance: utile
@@ -93,7 +76,7 @@
   nom: Manche à air
   signification: Manche à air indiquant l'endroit où souffle fréquemment un vent latéral violent, ainsi que sa direction et son intensité (manche horizontale = vent fort).
   conduite: Tenir fermement le volant, ralentir, anticiper les rafales à la sortie d'un abri ; attention aux deux-roues et véhicules hauts.
-  complement: À l'endroit exposé, en complément du panneau A24.
+  complement: Signale l’endroit précis exposé au vent, en complément du panneau A24.
   theme: L
   sous_theme: balises
   importance: essentiel
@@ -106,7 +89,7 @@
   nom: Balise de passage à niveau
   signification: Balises blanches à trois, deux puis une bande rouge oblique, placées à 150 m, 100 m et 50 m du passage à niveau (hors agglomération).
   conduite: 'Ralentir progressivement : à la balise à une seule bande, le passage à niveau est à 50 m.'
-  complement: La première (3 bandes) est fixée sous le panneau A7 ou A8. Facultatives en agglomération, où A7/A8 est déjà à 50 m.
+  complement: La première balise (3 bandes) est sous le panneau A7 ou A8. Elles peuvent manquer en agglomération.
   theme: L
   sous_theme: balises
   importance: essentiel
@@ -119,7 +102,6 @@
   nom: Balise de renforcement d'un marquage continu
   signification: Balise blanche souple implantée sur une ligne continue pour en empêcher le franchissement.
   conduite: 'Ne pas franchir : la ligne continue reste infranchissable.'
-  complement: Sur l'axe, en renforcement du marquage.
   theme: L
   sous_theme: balises
   importance: utile
@@ -132,7 +114,6 @@
   nom: Balise de renforcement d'un marquage en divergent
   signification: Balise verte implantée sur le marquage d'une divergence (bretelle de sortie) pour renforcer la perception du musoir.
   conduite: Choisir sa direction à l'avance ; ne pas franchir le divergent au dernier moment.
-  complement: Sur le marquage divergent.
   theme: L
   sous_theme: balises
   importance: utile
@@ -158,19 +139,7 @@
   nom: Balise de musoir (divergence de voies)
   signification: Balise en demi-cercle vert à deux flèches blanches divergentes, en tête de musoir (sortie d'autoroute, bifurcation).
   conduite: Décider tôt de sa direction ; ne jamais franchir le musoir ni faire marche arrière.
-  complement: 'En tête de musoir. J14b : série de chevrons blancs sur fond vert.'
   theme: L
   sous_theme: balises
   importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: j14b
-  type: balise
-  code: J14b
-  image:
-    commons: FR road beacon J14b.svg
-  nom: Balise de musoir à chevrons
-  signification: Série d'éléments à chevron blanc sur fond vert matérialisant la divergence des voies (musoir).
-  theme: L
-  sous_theme: balises
-  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

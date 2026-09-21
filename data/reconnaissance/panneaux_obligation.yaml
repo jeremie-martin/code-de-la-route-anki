@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 18 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 17 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: b21-1
   type: panneau
   code: B21-1
@@ -34,7 +34,7 @@
   nom: Contournement obligatoire par la droite
   signification: Obligation de contourner par la droite l'obstacle ou l'îlot devant lequel le panneau est placé (refuge, terre-plein, îlot central de giratoire, chantier).
   conduite: Passer à droite du panneau/obstacle.
-  complement: 'Placé sur l''obstacle lui-même (tête d''îlot), souvent avec la balise J5. Se rencontre à l''entrée des giratoires (îlot central) et sur les refuges. Version temporaire jaune : sur balise K8.'
+  complement: Placé sur l’obstacle lui-même (tête d’îlot, entrée de giratoire, refuge).
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -47,7 +47,7 @@
   nom: Contournement obligatoire par la gauche
   signification: Obligation de contourner par la gauche l'obstacle devant lequel le panneau est placé.
   conduite: Passer à gauche du panneau/obstacle.
-  complement: Placé sur l'obstacle lui-même.
+  complement: Placé sur l’obstacle lui-même.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -139,7 +139,7 @@
   nom: Piste ou bande cyclable obligatoire
   signification: Piste ou bande obligatoire pour les cycles concernés ; les EDPM et cyclomobiles légers doivent aussi l’utiliser dans les conditions prévues.
   conduite: 'En voiture : ne pas y rouler ni s''y arrêter ; attention aux cyclistes en la coupant pour tourner.'
-  complement: 'Fin : B40. Un panonceau M4d2 peut l''ouvrir aux cyclomoteurs. S''y arrêter ou stationner : très gênant, 135 €.'
+  complement: 'Un panonceau peut l’ouvrir aux cyclomoteurs. S’y arrêter ou stationner : très gênant, 135 €.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -159,17 +159,6 @@
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b22c
-  type: panneau
-  code: B22c
-  image:
-    commons: France road sign B22c.svg
-  nom: Chemin obligatoire pour cavaliers
-  signification: Chemin réservé et obligatoire pour les cavaliers.
-  theme: L
-  sous_theme: panneaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b25
   type: panneau
   code: B25
@@ -178,7 +167,6 @@
   nom: Vitesse minimale obligatoire
   signification: Obligation de circuler au moins à la vitesse indiquée, sauf si les conditions ne le permettent pas.
   conduite: Ne pas emprunter cette voie si l'on ne peut pas atteindre cette vitesse (véhicule lent, remorque).
-  complement: 'Concerne la voie où il est implanté. Fin : B43.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -192,7 +180,6 @@
   nom: Chaînes à neige obligatoires
   signification: 'Équipement hivernal en service : chaînes sur au moins deux roues motrices, ou pneus hiver admis en équivalence pour les catégories prévues.'
   conduite: En voiture, vérifier les pneus et le complément du panneau ; avec « Chaînes à neige obligatoires », monter les chaînes avant la section.
-  complement: 'Fin : B44. L’équivalence des pneus conformes à D314-8 existe depuis 2021.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -208,7 +195,6 @@
   nom: Voie réservée aux véhicules des services réguliers de transport en commun
   signification: Voie réservée aux autobus et cars de lignes régulières ; interdite aux autres véhicules, sauf catégories autorisées par panonceau.
   conduite: Ne pas y circuler ni y stationner ; on peut la traverser pour tourner ou accéder à un immeuble.
-  complement: 'Fin : B45a. Au sol, ligne large T3 5u et inscription BUS.'
   theme: L
   sous_theme: panneaux
   importance: essentiel

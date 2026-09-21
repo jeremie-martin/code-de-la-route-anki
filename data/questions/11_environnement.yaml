@@ -1,10 +1,10 @@
 - id: e-feu-rouge-anticipation
-  question: Le feu passe au rouge à une centaine de mètres devant moi. Je maintiens mon allure pour freiner
-    ensuite, ou je lève le pied tout de suite ?
-  reponse: 'Je lève le pied assez tôt et garde un rapport adapté : j’anticipe l’arrêt, ménage les freins et
-    évite une accélération inutile.'
-  explication: Sur de nombreux moteurs à injection, l’alimentation est coupée en décélération au-dessus d’un
-    certain régime. Ce mécanisme dépend du véhicule ; anticiper reste utile dans tous les cas.
+  question: Le feu passe au rouge à une centaine de mètres devant moi. Je maintiens mon allure pour freiner ensuite, ou je
+    lève le pied tout de suite ?
+  reponse: 'Je lève le pied tout de suite, rapport adapté : j’anticipe l’arrêt, je ménage les freins et j’évite une accélération
+    inutile.'
+  explication: Sur de nombreux moteurs à injection, l’alimentation est coupée en décélération au-dessus d’un certain régime.
+    Ce mécanisme dépend du véhicule ; anticiper reste utile dans tous les cas.
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
@@ -12,22 +12,21 @@
   - revision::v4
 - id: e-rapports-regime
   question: À quel régime passe-t-on les rapports pour consommer moins ?
-  reponse: Je monte les rapports sans pousser inutilement le régime, en suivant l’indicateur et la notice,
-    tout en gardant assez de reprise pour la situation. J’évite de faire peiner le moteur.
-  explication: Ni un régime ni un rapport à 50 km/h ne conviennent à tous les moteurs et toutes les pentes.
-    L’allure, la charge et les besoins de sécurité décident.
+  reponse: Je monte les rapports tôt, sans pousser le régime inutilement, en suivant l’indicateur et la notice, tout en gardant
+    assez de reprise.
+  explication: Ni un régime ni un rapport à 50 km/h ne conviennent à tous les moteurs et toutes les pentes. L’allure, la charge
+    et les besoins de sécurité décident.
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
   tags:
   - revision::v4
 - id: e-moteur-arret
-  question: Les barrières d'un passage à niveau viennent de se fermer devant moi. Je laisse tourner le moteur
-    ?
-  reponse: Pour un arrêt prolongé en sécurité, je coupe le moteur si les conditions et la notice le permettent.
-    Si le véhicule a un Stop & Start, je laisse le système gérer ses conditions de fonctionnement.
-  explication: Ne pas imposer une coupure manuelle au bout d’un délai universel ; conserver les fonctions nécessaires
-    à la sécurité et au confort thermique.
+  question: Les barrières d'un passage à niveau viennent de se fermer devant moi. Je laisse tourner le moteur ?
+  reponse: Pour un arrêt prolongé en sécurité, je coupe le moteur si la notice le permet ; avec un Stop & Start, je laisse
+    le système gérer.
+  explication: Ne pas imposer une coupure manuelle au bout d’un délai universel ; conserver les fonctions nécessaires à la
+    sécurité et au confort thermique.
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
@@ -35,11 +34,10 @@
   - revision::v4
 - id: e-frein-moteur
   question: Qu'est-ce que le frein moteur et pourquoi l'utiliser ?
-  reponse: Le ralentissement obtenu en relâchant l’accélérateur avec un rapport engagé. Il aide à maîtriser
-    l’allure et à limiter l’échauffement des freins, notamment en descente.
-  explication: Sur de nombreux moteurs à injection, la consommation peut être nulle dans certaines phases de
-    décélération. Ce n’est pas une promesse universelle ; une électrique peut récupérer de l’énergie, dans
-    les limites de son système.
+  reponse: 'Le ralentissement obtenu en relâchant l’accélérateur avec un rapport engagé : il maîtrise l’allure et limite l’échauffement
+    des freins en descente.'
+  explication: Sur de nombreux moteurs à injection, la consommation peut être nulle dans certaines phases de décélération.
+    Ce n’est pas une promesse universelle ; une électrique peut récupérer de l’énergie, dans les limites de son système.
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
@@ -47,21 +45,32 @@
   - revision::v4
 - id: e-climatisation-conso
   question: 'Été, embouteillage en ville par forte chaleur : climatisation ou vitres ouvertes ?'
-  reponse: Je préserve une température compatible avec ma vigilance, j’aère d’abord si l’habitacle est surchauffé
-    puis j’utilise la climatisation sans refroidir excessivement, vitres fermées.
-  explication: La recherche d’économie ne doit pas entraîner chaleur dangereuse ou buée. L’effet sur la consommation
-    varie avec le véhicule, le climat et l’usage.
+  reponse: 'J’aère d’abord si l’habitacle est surchauffé, puis climatisation sans excès, vitres fermées : la vigilance passe
+    avant l’économie.'
+  explication: La recherche d’économie ne doit pas entraîner chaleur dangereuse ou buée. L’effet sur la consommation varie
+    avec le véhicule, le climat et l’usage.
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
   tags:
   - revision::v4
+- id: e-surconsommations-causes
+  question: En dehors de ma façon de conduire, quels facteurs liés au véhicule augmentent la consommation ?
+  reponse: La climatisation utilisée sans besoin, les accessoires de toit (résistance à l’air), une charge inutile et des
+    pneus sous-gonflés.
+  explication: 'Les pourcentages varient selon le trajet et le véhicule : retenir les mécanismes plutôt qu’un chiffre. Garder
+    le désembuage et le confort thermique nécessaires à la sécurité ; régler la pression selon la notice.'
+  theme: E
+  sous_theme: ecoconduite
+  source: ADEME ; Codeclic — Conduite économique ; Ornikar — Conduite écologique
+  tags:
+  - revision::v6
 - id: e-polluant-co2
   question: Pourquoi le CO₂ ne se traite-t-il pas comme les autres polluants d'un véhicule ?
-  reponse: Le CO₂ contribue au réchauffement climatique ; les NOx et les particules dégradent notamment la
-    qualité de l’air respiré. Réduire l’un ne suffit pas à supprimer les autres.
-  explication: Pour un carburant donné, le CO₂ à l’échappement dépend de la quantité brûlée. Un filtre à particules
-    ne piège pas ce gaz. Ne pas en déduire que le CO₂ serait inoffensif à toute concentration.
+  reponse: Le CO₂ contribue au réchauffement climatique ; NOx et particules dégradent l’air respiré. Réduire l’un ne supprime
+    pas les autres.
+  explication: Pour un carburant donné, le CO₂ à l’échappement dépend de la quantité brûlée. Un filtre à particules ne piège
+    pas ce gaz. Ne pas en déduire que le CO₂ serait inoffensif à toute concentration.
   theme: E
   sous_theme: pollution
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
@@ -70,8 +79,8 @@
 - id: e-particules-usure
   question: En dehors de l'échappement, d'où viennent les particules fines émises par une voiture ?
   reponse: De l’usure des freins, des pneus et de la chaussée, ainsi que de la remise en suspension des dépôts.
-  explication: Même sans échappement, une voiture peut émettre des particules. Les proportions dépendent du
-    périmètre étudié ; la décision utile est de limiter les trajets, accélérations et freinages inutiles.
+  explication: Même sans échappement, une voiture peut émettre des particules. Les proportions dépendent du périmètre étudié
+    ; la décision utile est de limiter les trajets, accélérations et freinages inutiles.
   theme: E
   sous_theme: pollution
   source: ADEME ; En Voiture Simone — Achat éco-responsable
@@ -79,10 +88,9 @@
   - revision::v5
 - id: e-critair-classes
   question: Sur quoi repose la classe Crit'Air d'un véhicule ?
-  reponse: Sur la catégorie du véhicule, sa motorisation et sa norme Euro, ou à défaut sa date de première
-    immatriculation.
-  explication: La norme Euro et la date ne sont pas interchangeables dans tous les cas. Utiliser les données
-    de la carte grise et le simulateur officiel ; Crit’Air ne mesure pas la consommation réelle.
+  reponse: Sur la catégorie du véhicule, sa motorisation et sa norme Euro, ou à défaut sa date de première immatriculation.
+  explication: La norme Euro et la date ne sont pas interchangeables dans tous les cas. Utiliser les données de la carte grise
+    et le simulateur officiel ; Crit’Air ne mesure pas la consommation réelle.
   theme: E
   sous_theme: pollution
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F33371
@@ -90,17 +98,20 @@
   - revision::v5
 - id: e-zfe-definition
   question: Qu'est-ce qu'une ZFE (zone à faibles émissions mobilité) ?
-  reponse: Une zone urbaine délimitée par des panneaux, où les véhicules les plus polluants ne peuvent pas circuler, en permanence ou à certaines heures, selon leur vignette Crit'Air.
-  explication: 'Les restrictions varient selon la métropole et selon l''année : on vérifie les règles locales avant un trajet. L''entrée est signalée par le panneau de zone B56, avec un panonceau qui précise les vignettes Crit''Air concernées et les horaires.'
+  reponse: Une zone urbaine délimitée par des panneaux où les véhicules les plus polluants (selon leur vignette Crit’Air)
+    ne peuvent pas circuler, en permanence ou à certaines heures.
+  explication: 'Les restrictions varient selon la métropole et selon l''année : on vérifie les règles locales avant un trajet.
+    L''entrée est signalée par le panneau de zone B56, avec un panonceau qui précise les vignettes Crit''Air concernées et
+    les horaires.'
   theme: E
   sous_theme: pollution
   source: Code général des collectivités territoriales, art. L2213-4-1 ; service-public.fr F33371
 - id: e-pic-pollution
   question: Que peut décider le préfet lors d'un épisode de pollution ?
-  reponse: Restreindre la circulation selon Crit’Air, abaisser certaines vitesses ou dévier des véhicules,
-    selon l’arrêté local.
-  explication: Vérifier la zone, les horaires, les catégories admises et les dérogations. Ne pas compter sur
-    un délai d’annonce universel ni soustraire automatiquement 20 km/h partout.
+  reponse: Restreindre la circulation selon Crit’Air, abaisser certaines vitesses ou dévier des véhicules, selon l’arrêté
+    local.
+  explication: Vérifier la zone, les horaires, les catégories admises et les dérogations. Ne pas compter sur un délai d’annonce
+    universel ni soustraire automatiquement 20 km/h partout.
   theme: E
   sous_theme: pollution
   source: service-public.fr — Pic de pollution ; arrêtés préfectoraux
@@ -109,8 +120,8 @@
 - id: e-bruit-sources
   question: Quelles nuisances sonores un conducteur peut-il éviter ?
   reponse: Les coups de klaxon inutiles, un échappement défectueux ou modifié et les accélérations bruyantes.
-  explication: En agglomération, le klaxon se limite au danger immédiat ; hors agglomération, aux avertissements
-    nécessaires. La nuit, privilégier les signaux lumineux, sauf nécessité absolue.
+  explication: En agglomération, le klaxon se limite au danger immédiat ; hors agglomération, aux avertissements nécessaires.
+    La nuit, privilégier les signaux lumineux, sauf nécessité absolue.
   theme: E
   sous_theme: bruit
   source: Code de la route, R416-1 et R416-2
@@ -118,31 +129,37 @@
   - revision::v5
 - id: e-entretien-dechets
   question: Que fait-on des huiles usagées, batteries et pneus usés ?
-  reponse: On les rapporte en déchetterie ou chez un garagiste ou un distributeur, tenu de les reprendre — pas à la poubelle ni dans la nature.
-  explication: Un litre d'huile pollue des milliers de litres d'eau ; les batteries contiennent du plomb et de l'acide. Laver sa voiture en station plutôt que dans la rue évite le rejet d'hydrocarbures dans les eaux pluviales.
+  reponse: En déchetterie, ou chez un garagiste ou un distributeur tenu de les reprendre ; jamais à la poubelle ni dans la
+    nature.
+  explication: Un litre d'huile pollue des milliers de litres d'eau ; les batteries contiennent du plomb et de l'acide. Laver
+    sa voiture en station plutôt que dans la rue évite le rejet d'hydrocarbures dans les eaux pluviales.
   theme: E
   sous_theme: pollution
   source: ADEME — Déchets automobiles
 - id: e-ecomobilite-choix
   question: Qu'est-ce que l'écomobilité ?
-  reponse: Choisir pour chaque déplacement le mode le moins polluant possible — marche, vélo, transports en commun, covoiturage — et ne prendre la voiture seul que lorsque c'est nécessaire.
-  explication: Sur les courtes distances urbaines, le vélo est souvent aussi rapide que la voiture. Autopartage, parcs relais et forfait mobilités durables complètent l'offre.
+  reponse: Choisir pour chaque déplacement le mode le moins polluant (marche, vélo, transports en commun, covoiturage) et
+    ne prendre la voiture seul que si nécessaire.
+  explication: Sur les courtes distances urbaines, le vélo est souvent aussi rapide que la voiture. Autopartage, parcs relais
+    et forfait mobilités durables complètent l'offre.
   theme: E
   sous_theme: ecomobilite
   source: ADEME — Se déplacer autrement
 - id: e-covoiturage-voie
   question: Comment reconnaît-on une voie réservée au covoiturage ?
-  reponse: Au losange blanc peint au sol ou affiché sur un panneau lumineux ; aux heures indiquées, elle est réservée au covoiturage (au moins deux personnes) et à quelques catégories admises, comme les taxis et les bus.
-  explication: Signal déployé depuis 2020 (Lyon, Grenoble, périphérique parisien, A48/A13…). Y circuler sans y avoir droit coûte 135 € ; des caméras comptent les occupants.
+  reponse: 'Au losange blanc au sol ou sur panneau lumineux : aux heures indiquées, voie réservée au covoiturage (au moins
+    deux personnes) et à quelques catégories admises.'
+  explication: Signal déployé depuis 2020 (Lyon, Grenoble, périphérique parisien, A48/A13…). Y circuler sans y avoir droit
+    coûte 135 € ; des caméras comptent les occupants.
   theme: E
   sous_theme: ecomobilite
   source: Code de la route, art. L411-8 ; IISR 9e partie (arrêté du 15 mars 2024) ; paris.fr
 - id: e-electrique-avantages
   question: Quels sont l'avantage et la limite principale d'une voiture électrique ?
-  reponse: Pas d’émission à l’échappement pendant la conduite ; en revanche, je dois prévoir autonomie et recharge
-    selon le trajet.
-  explication: Coût, masse et bilan environnemental dépendent du modèle, de l’usage et de la production d’énergie.
-    Pneus et freins émettent aussi des particules.
+  reponse: Pas d’émission à l’échappement pendant la conduite ; en revanche, je dois prévoir autonomie et recharge selon le
+    trajet.
+  explication: Coût, masse et bilan environnemental dépendent du modèle, de l’usage et de la production d’énergie. Pneus et
+    freins émettent aussi des particules.
   theme: E
   sous_theme: ecomobilite
   source: ADEME — Car Labelling ; service-public.fr
@@ -151,10 +168,9 @@
   - revision::v3_1
 - id: e-ve-recharge
   question: Que faut-il prévoir pour partir loin en voiture électrique ?
-  reponse: Les bornes compatibles et disponibles, leur puissance, le temps de recharge adapté au véhicule et
-    une marge d’autonomie.
-  explication: La durée dépend du véhicule, de la borne, du niveau et de la température de la batterie. Froid,
-    vitesse et chauffage modifient l’autonomie ; ne pas promettre un temps universel sur borne rapide.
+  reponse: Les bornes compatibles et disponibles, leur puissance, le temps de recharge adapté au véhicule et une marge d’autonomie.
+  explication: La durée dépend du véhicule, de la borne, du niveau et de la température de la batterie. Froid, vitesse et
+    chauffage modifient l’autonomie ; ne pas promettre un temps universel sur borne rapide.
   theme: E
   sous_theme: ecomobilite
   importance: utile
@@ -162,12 +178,10 @@
   tags:
   - revision::v5
 - id: e-energies-alternatives
-  question: Avant de choisir un véhicule au GPL, au GNV ou à l’hydrogène, que dois-je comparer pour mes trajets
-    ?
-  reponse: La disponibilité du carburant et des stations, l’autonomie, les coûts et le bilan environnemental de
-    la filière.
-  explication: Ces énergies ne garantissent pas toutes le même gain de bruit ou d’émissions ; distinguer carburant,
-    mode de propulsion et production de l’énergie.
+  question: Avant de choisir un véhicule au GPL, au GNV ou à l’hydrogène, que dois-je comparer pour mes trajets ?
+  reponse: La disponibilité du carburant et des stations, l’autonomie, les coûts et le bilan environnemental de la filière.
+  explication: Ces énergies ne garantissent pas toutes le même gain de bruit ou d’émissions ; distinguer carburant, mode de
+    propulsion et production de l’énergie.
   theme: E
   sous_theme: ecomobilite
   importance: utile
@@ -176,8 +190,10 @@
   - revision::v3_1
 - id: e-e85
   question: Qu'est-ce que le superéthanol E85 ?
-  reponse: Un carburant contenant jusqu'à 85 % de bioéthanol, réservé aux véhicules « flex-fuel » ou équipés d'un boîtier homologué ; moins cher au litre, mais davantage consommé.
-  explication: À ne pas confondre avec le SP95-E10, qui ne contient que 10 % d'éthanol et convient à la quasi-totalité des essences récentes. En cas d'erreur de carburant, on ne démarre pas et on fait vidanger le réservoir.
+  reponse: Un carburant contenant jusqu’à 85 % de bioéthanol, réservé aux véhicules flex-fuel ou à boîtier homologué ; moins
+    cher au litre, davantage consommé.
+  explication: À ne pas confondre avec le SP95-E10, qui ne contient que 10 % d'éthanol et convient à la quasi-totalité des
+    essences récentes. En cas d'erreur de carburant, on ne démarre pas et on fait vidanger le réservoir.
   theme: E
   sous_theme: ecomobilite
   importance: utile

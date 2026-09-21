@@ -1,23 +1,24 @@
 - id: c-regarder-loin
   question: Pourquoi conseille-t-on de regarder loin devant soi en conduisant ?
-  reponse: 'Pour anticiper : voir tôt les dangers, adapter sa vitesse en douceur et stabiliser sa trajectoire (le véhicule va où le regard se porte).'
-  explication: 'Regarder juste devant le capot oblige à réagir tard et brutalement. La règle : regarder loin, balayer (près, côtés) et contrôler le rétroviseur intérieur toutes les 5 à 10 secondes environ.'
+  reponse: 'Pour anticiper : voir les dangers tôt, adapter l’allure en douceur et stabiliser la trajectoire (le véhicule va
+    où le regard se porte).'
+  explication: 'Regarder juste devant le capot oblige à réagir tard et brutalement. La règle : regarder loin, balayer (près,
+    côtés) et contrôler le rétroviseur intérieur toutes les 5 à 10 secondes environ.'
   theme: C
   sous_theme: perception
   source: REMC ; Codes Rousseau — L'exploration visuelle
 - id: c-croisement-nuit-regard
   question: De nuit, un véhicule arrive en face avec ses phares. Où porter le regard pour le croiser en sécurité ?
-  reponse: Vers la droite, le plus loin possible (bord de chaussée, ligne de rive), sans fixer ses feux ; et je ralentis.
-  explication: 'Question officielle 2023 (Q20 : « je regarde vers la droite le plus loin possible » + « je ralentis » ; PAS « je regarde ses feux » ni « je conserve les feux de route »). Fixer les phares éblouit et attire le véhicule vers eux.'
+  reponse: Vers la droite, le plus loin possible, sans fixer ses feux ; et je ralentis.
+  explication: Fixer les phares éblouit et attire le véhicule vers eux ; garder les feux de route éblouirait l’autre conducteur.
+    Un exemple public de question (2023) attend exactement ces deux réponses.
   theme: C
   sous_theme: perception
   source: Sécurité routière — Exemples de nouvelles questions (Q20)
 - id: c-eblouissement-duree
   question: Ébloui de nuit, puis-je compter sur un délai fixe pour retrouver une vision normale ?
-  reponse: 'Non : la récupération varie. Je ralentis selon ce que je vois et regarde le bord droit sans fixer les
-    phares.'
-  explication: Ne pas apprendre un délai garanti selon l’âge. L’état visuel et l’intensité lumineuse changent la
-    récupération.
+  reponse: 'Non : la récupération varie. Je ralentis selon ce que je vois et regarde le bord droit sans fixer les phares.'
+  explication: Ne pas apprendre un délai garanti selon l’âge. L’état visuel et l’intensité lumineuse changent la récupération.
   theme: C
   sous_theme: perception
   source: securite-routiere.gouv.fr — Conduire la nuit ; Dépliant La vue
@@ -25,65 +26,75 @@
   - revision::v3
 - id: c-angle-mort-definition
   question: Qu'est-ce que l'angle mort et comment le contrôle-t-on ?
-  reponse: 'La zone latérale arrière invisible dans les rétroviseurs ; on la contrôle d''un regard direct par-dessus l''épaule du côté de la manœuvre — dernier regard avant de se déporter ou d''ouvrir une portière.'
-  explication: 'Un deux-roues tient entièrement dans l''angle mort. Le contrôle est bref (moins d''une seconde) pour ne pas perdre la route de vue ; si un usager s''y trouve, on ne commence pas la manœuvre.'
+  reponse: La zone latérale arrière invisible dans les rétroviseurs ; on la contrôle d’un regard direct par-dessus l’épaule,
+    dernier geste avant de se déporter.
+  explication: Un deux-roues tient entièrement dans l'angle mort. Le contrôle est bref (moins d'une seconde) pour ne pas perdre
+    la route de vue ; si un usager s'y trouve, on ne commence pas la manœuvre.
   theme: C
   sous_theme: perception
   source: REMC ; securite-routiere.gouv.fr — Les angles morts
 - id: c-ordre-controles-changement-file
   question: Sur une route à deux voies dans mon sens, je veux passer sur la voie de gauche. Dans quel ordre je procède ?
-  reponse: 'Rétroviseur intérieur puis rétroviseur gauche, clignotant, contrôle de l''angle mort gauche (tête tournée), puis je me déporte progressivement à vitesse constante.'
-  explication: 'Certaines écoles placent l''angle mort avant le clignotant ; ce que l''ETG attend : les rétroviseurs précèdent le clignotant, et l''angle mort est le dernier regard avant de tourner le volant.'
+  reponse: Rétroviseur intérieur puis gauche, clignotant, angle mort gauche (tête tournée), puis déport progressif à vitesse
+    constante.
+  explication: 'Certaines écoles placent l''angle mort avant le clignotant ; ce que l''ETG attend : les rétroviseurs précèdent
+    le clignotant, et l''angle mort est le dernier regard avant de tourner le volant.'
   theme: C
   sous_theme: vigilance
   source: Codeclic — L'angle mort ; Stych — Les contrôles ; Code de la route, art. R412-10
 - id: c-clignotant-avant-ralentir
   question: Je vais tourner à droite à la prochaine intersection. Je mets mon clignotant avant ou après avoir ralenti ?
-  reponse: 'Avant de ralentir, juste après le contrôle des rétroviseurs : ceux qui me suivent sont prévenus avant que je freine ; je ralentis ensuite progressivement.'
-  explication: 'R412-10 : avertir avant tout changement de direction ou ralentissement. Un clignotant mis trop tôt (avant une autre rue ou une sortie intermédiaire) est ambigu : assez tôt, mais après la dernière intersection.'
+  reponse: 'Avant de ralentir, juste après le contrôle des rétroviseurs : ceux qui me suivent sont prévenus avant mon freinage.'
+  explication: 'R412-10 : avertir avant tout changement de direction ou ralentissement. Un clignotant mis trop tôt (avant
+    une autre rue ou une sortie intermédiaire) est ambigu : assez tôt, mais après la dernière intersection.'
   theme: C
   sous_theme: vigilance
   source: Code de la route, art. R412-10 ; En Voiture Simone — Angle mort et contrôles
 - id: c-zone-attention-pluie
-  question: Sous la pluie, un piéton à droite avance vers la chaussée ; la voiture loin devant garde son allure.
-    Quel indice exige mon attention immédiate ?
-  reponse: 'Le piéton qui approche de la chaussée : je réduis mon allure et me tiens prêt à m’arrêter, tout en continuant
-    à surveiller autour.'
-  explication: 'La position « à droite » ne suffit pas : c’est le mouvement du piéton et la possibilité de conflit
-    qui rendent ce danger prioritaire.'
+  question: Sous la pluie, un piéton à droite avance vers la chaussée ; la voiture loin devant garde son allure. Quel indice
+    exige mon attention immédiate ?
+  reponse: 'Le piéton qui approche de la chaussée : je réduis l’allure et me tiens prêt à m’arrêter, sans cesser de surveiller
+    le reste.'
+  explication: 'La position « à droite » ne suffit pas : c’est le mouvement du piéton et la possibilité de conflit qui rendent
+    ce danger prioritaire.'
   theme: C
   sous_theme: vigilance
   source: Sécurité routière — Exemples de nouvelles questions (Q9)
   tags:
   - revision::v3
 - id: c-enfant-masque
-  question: Devant une école ou une rangée de voitures stationnées, quel risque spécifique lié aux enfants faut-il anticiper ?
-  reponse: 'Qu''un enfant, plus petit qu''un capot et masqué par les véhicules stationnés, surgisse d''un coup entre deux voitures : je ralentis fortement et je me tiens prêt à m''arrêter.'
-  explication: 'Question officielle 2023 (Q3 : « Un enfant peut être masqué par des véhicules en stationnement : OUI »). Sortie d''école, adultes qui attendent, car scolaire : autant d''indices qui imposent d''arriver déjà lent.'
+  question: Devant une école ou une rangée de voitures stationnées, quel risque spécifique lié aux enfants faut-il anticiper
+    ?
+  reponse: 'Un enfant, plus petit qu’un capot et masqué par les voitures, peut surgir entre deux véhicules : je ralentis fortement,
+    prêt à m’arrêter.'
+  explication: 'Sortie d’école, adultes qui attendent, car scolaire : ces indices imposent d’arriver déjà lent. Un exemple
+    public de question (2023) valide « un enfant peut être masqué par des véhicules en stationnement ».'
   theme: C
   sous_theme: vigilance
   source: Sécurité routière — Exemples de nouvelles questions (Q3)
 - id: c-trottinette-vulnerable
   question: Pourquoi un usager de trottinette électrique est-il particulièrement vulnérable ?
-  reponse: Son équilibre est précaire (petites roues, freinage inégal) et son faible gabarit le rend peu détectable, surtout dans les angles morts et de nuit.
-  explication: 'Question officielle 2023 (Q4 : équilibre précaire OUI, faible gabarit peu détectable OUI). Conséquence : distance latérale d''au moins 1 m en agglomération, pas de dépassement serré.'
+  reponse: Équilibre précaire (petites roues, freinage inégal) et faible gabarit peu détectable, surtout dans les angles morts
+    et de nuit.
+  explication: 'Conséquence : écart latéral d’au moins 1 m en agglomération (1,50 m hors agglomération), pas de dépassement
+    serré. Un exemple public de question (2023) retient ces deux caractéristiques.'
   theme: C
   sous_theme: vigilance
   source: Sécurité routière — Exemples de nouvelles questions (Q4)
 - id: c-cycliste-devant-depassement
-  question: Je suis en train de dépasser un cycliste ; un véhicule arrive en face et je ne pourrai pas terminer
-    en sécurité. Que fais-je ?
+  question: Je suis en train de dépasser un cycliste ; un véhicule arrive en face et je ne pourrai pas terminer en sécurité.
+    Que fais-je ?
   reponse: Je renonce au dépassement et me replace derrière le cycliste, en gardant une distance de sécurité.
-  explication: Je dois pouvoir terminer le dépassement sans danger. Accélérer pour forcer le passage mettrait
-    le cycliste et le véhicule en face en danger.
+  explication: Je dois pouvoir terminer le dépassement sans danger. Accélérer pour forcer le passage mettrait le cycliste
+    et le véhicule en face en danger.
   theme: C
   sous_theme: vigilance
   source: Code de la route, art. R414-4 (conditions du dépassement).
 - id: c-retro-avant-freiner
   question: Avant un ralentissement que je peux anticiper, pourquoi contrôler le rétroviseur intérieur ?
   reponse: Pour connaître le trafic derrière et préparer un ralentissement progressif.
-  explication: Ce contrôle accompagne un ralentissement anticipé. En danger immédiat, ne pas différer le freinage
-    d’urgence pour consulter le rétroviseur.
+  explication: Ce contrôle accompagne un ralentissement anticipé. En danger immédiat, ne pas différer le freinage d’urgence
+    pour consulter le rétroviseur.
   theme: C
   sous_theme: vigilance
   source: Ornikar — Pièges à éviter ; REMC
@@ -92,24 +103,28 @@
   - revision::v4
 - id: c-indice-feux-recul
   question: Une voiture stationnée devant moi a ses feux de recul (blancs) allumés. Qu'est-ce que j'anticipe ?
-  reponse: 'Qu''elle va reculer ou sortir de sa place : je ralentis, je me tiens prêt à m''arrêter et je garde mes distances plutôt que de la dépasser au ras.'
-  explication: 'Les feux de recul ne s''allument qu''en marche arrière (R416-20) : c''est un indice fiable. Mêmes indices d''un départ imminent : roues braquées vers la chaussée, conducteur installé au volant, clignotant. Celui qui quitte un stationnement doit avertir de son intention (R412-10) et céder le passage, mais l''ETG attend que j''anticipe.'
+  reponse: 'Qu’elle va reculer ou quitter sa place : je ralentis, prêt à m’arrêter, et je garde mes distances plutôt que de
+    la frôler.'
+  explication: 'Les feux de recul ne s''allument qu''en marche arrière (R416-20) : c''est un indice fiable. Mêmes indices
+    d''un départ imminent : roues braquées vers la chaussée, conducteur installé au volant, clignotant. Celui qui quitte un
+    stationnement doit avertir de son intention (R412-10) et céder le passage, mais l''ETG attend que j''anticipe.'
   theme: C
   sous_theme: vigilance
   source: Code de la route, art. R416-20 et R412-10 ; REMC — Anticiper
 - id: c-indice-bus-arrete
   question: Un bus est arrêté à son arrêt, à droite, en ville. Quels dangers j'anticipe ?
-  reponse: 'Des piétons qui traversent devant ou derrière le bus (masqués), et le bus qui peut redémarrer (clignotant) : je ralentis, je m''écarte et je le laisse repartir s''il l''annonce.'
-  explication: 'En agglomération, je dois ralentir et au besoin m''arrêter pour laisser un véhicule de transport en commun quitter son arrêt (R412-11) : ce n''est pas une priorité du bus, c''est une obligation pour moi.'
+  reponse: 'Des piétons masqués qui traversent devant ou derrière le bus, et son redémarrage : je ralentis, je m’écarte et
+    je le laisse repartir s’il l’annonce.'
+  explication: 'En agglomération, je dois ralentir et au besoin m''arrêter pour laisser un véhicule de transport en commun
+    quitter son arrêt (R412-11) : ce n''est pas une priorité du bus, c''est une obligation pour moi.'
   theme: C
   sous_theme: vigilance
   source: Code de la route, art. R412-11
 - id: c-indice-ballon
   question: Un ballon roule sur la chaussée depuis le trottoir. Que fais-je ?
-  reponse: 'Je réduis immédiatement mon allure et je me tiens prêt à m’arrêter : un enfant peut surgir derrière
-    le ballon.'
-  explication: Si un enfant surgit, je freine en urgence sans retarder le freinage pour regarder le rétroviseur.
-    Sinon, j’adapte mon freinage au risque et au trafic arrière.
+  reponse: 'Je réduis immédiatement mon allure et je me tiens prêt à m’arrêter : un enfant peut surgir derrière le ballon.'
+  explication: Si un enfant surgit, je freine en urgence sans retarder le freinage pour regarder le rétroviseur. Sinon, j’adapte
+    mon freinage au risque et au trafic arrière.
   theme: C
   sous_theme: vigilance
   source: REMC — Anticiper ; securite-routiere.gouv.fr — Enfants
@@ -117,10 +132,10 @@
   - revision::v3
 - id: c-indice-cycliste-regard
   question: Devant moi, un cycliste regarde par-dessus son épaule gauche. Qu'est-ce que cela annonce ?
-  reponse: Il peut préparer un déport ou un virage à gauche. Je ralentis, garde de la place et diffère le dépassement
-    tant que sa manœuvre n’est pas claire.
-  explication: Un cycliste signale ses intentions par le bras et le regard, pas par un clignotant. Il peut
-    aussi s'écarter pour éviter une plaque d'égout, des gravillons ou une portière.
+  reponse: 'Un déport ou un virage à gauche : je ralentis, je garde de la place et je diffère le dépassement tant que sa manœuvre
+    n’est pas claire.'
+  explication: Un cycliste signale ses intentions par le bras et le regard, pas par un clignotant. Il peut aussi s'écarter
+    pour éviter une plaque d'égout, des gravillons ou une portière.
   theme: C
   sous_theme: vigilance
   source: En Voiture Simone — Les vélos ; REMC
@@ -128,17 +143,18 @@
   - revision::v4
 - id: c-indice-vehicule-stationne-portiere
   question: Je longe une file de voitures stationnées en ville. Où je me place et à quelle allure ?
-  reponse: 'Je m''écarte d''au moins une largeur de portière (≈ 1 m) et je réduis ma vitesse : une portière peut s''ouvrir, un piéton surgir entre deux véhicules ou une voiture sortir de sa place.'
-  explication: 'Je surveille les habitacles (têtes, feux de recul, roues braquées). L''emportiérage est un accident grave et fréquent pour les cyclistes ; à 30 km/h, la distance d''arrêt est bien plus courte qu''à 50.'
+  reponse: 'À au moins une largeur de portière (≈ 1 m) des véhicules et à vitesse réduite : portière qui s’ouvre, piéton entre
+    deux voitures, véhicule qui sort.'
+  explication: Je surveille les habitacles (têtes, feux de recul, roues braquées). L'emportiérage est un accident grave et
+    fréquent pour les cyclistes ; à 30 km/h, la distance d'arrêt est bien plus courte qu'à 50.
   theme: C
   sous_theme: vigilance
   source: securite-routiere.gouv.fr — Emportiérage ; REMC
 - id: c-routine-monotonie
   question: Pourquoi les trajets quotidiens et les longues lignes droites sont-ils dangereux pour la vigilance ?
-  reponse: 'La familiarité fait baisser l’attention : on risque de manquer un changement de signalisation, un piéton
-    ou un obstacle inhabituel.'
-  explication: Continuer à observer activement la route connue et ses intersections. Une statistique sur la proximité
-    du domicile ne permet pas d’évaluer le risque de la scène.
+  reponse: 'La familiarité fait baisser l’attention : on manque un changement de signalisation, un piéton ou un obstacle inhabituel.'
+  explication: Continuer à observer activement la route connue et ses intersections. Une statistique sur la proximité du domicile
+    ne permet pas d’évaluer le risque de la scène.
   theme: C
   sous_theme: vigilance
   source: securite-routiere.gouv.fr — Port de la ceinture (trajets courts) ; Ornikar — Vigilance
@@ -146,22 +162,19 @@
   - revision::v3
 - id: c-somnolence-que-faire
   question: Sur autoroute, je bâille, mes paupières sont lourdes et ma trajectoire flotte. Que fais-je ?
-  reponse: Je gagne dès que possible un lieu d’arrêt sûr pour dormir ; je ne poursuis pas en luttant contre
-    le sommeil.
-  explication: Prévoir les pauses avant d’être somnolent. Une sieste de 15 à 20 minutes est un repère, pas
-    une autorisation automatique de repartir. Si la vigilance reste insuffisante, différer le trajet ou passer
-    le volant à un conducteur apte.
+  reponse: Je gagne dès que possible un lieu d’arrêt sûr pour dormir ; je ne poursuis pas en luttant contre le sommeil.
+  explication: Prévoir les pauses avant d’être somnolent. Une sieste de 15 à 20 minutes est un repère, pas une autorisation
+    automatique de repartir. Si la vigilance reste insuffisante, différer le trajet ou passer le volant à un conducteur apte.
   theme: C
   sous_theme: deficiences
   source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf
   tags:
   - revision::v5
 - id: c-fatigue-remedes-faux
-  question: 'Café, fenêtre ouverte, musique forte : cela suffit-il pour continuer à conduire quand on est somnolent
-    ?'
+  question: 'Café, fenêtre ouverte, musique forte : cela suffit-il pour continuer à conduire quand on est somnolent ?'
   reponse: Non. Je m’arrête en sécurité pour dormir ; je ne reprends que si je suis réellement apte à conduire.
-  explication: Une courte sieste peut aider mais ne garantit pas la récupération. Une fenêtre ouverte ou la
-    musique ne remplace pas le sommeil. Le café ne justifie pas de continuer à lutter contre l’endormissement.
+  explication: Une courte sieste peut aider mais ne garantit pas la récupération. Une fenêtre ouverte ou la musique ne remplace
+    pas le sommeil. Le café ne justifie pas de continuer à lutter contre l’endormissement.
   theme: C
   sous_theme: deficiences
   source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf
@@ -169,25 +182,28 @@
   - revision::v5
 - id: c-vitesse-fatigue
   question: Rouler vite fatigue-t-il plus que rouler lentement ?
-  reponse: 'Oui : à vitesse élevée le cerveau doit traiter plus d''informations en moins de temps, ce qui génère du stress et accélère la fatigue et la perte de vigilance.'
-  explication: 'Idée reçue à l''examen : « rouler lentement endort ». La Sécurité routière retient l''inverse. Plus la vitesse est élevée, plus le champ visuel se rétrécit et plus la fatigue arrive vite.'
+  reponse: 'Oui : à vitesse élevée, le cerveau traite plus d’informations en moins de temps ; stress, fatigue et perte de
+    vigilance arrivent plus vite.'
+  explication: 'Idée reçue à l''examen : « rouler lentement endort ». La Sécurité routière retient l''inverse. Plus la vitesse
+    est élevée, plus le champ visuel se rétrécit et plus la fatigue arrive vite.'
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — La fatigue et la conduite ; La vitesse
 - id: c-telephone-arret
   question: Puis-je utiliser mon téléphone en main, arrêté au feu rouge ou dans un bouchon ?
-  reponse: 'Non : l''interdiction vaut dès que le véhicule est en circulation, même arrêté au feu ou dans un bouchon ; pour téléphoner en main, il faut être garé sur un emplacement où l''arrêt est autorisé.'
-  explication: 'R412-6-1 : 135 € et 3 points. Si le téléphone est relevé en même temps qu''une autre infraction (vitesse, feu, priorité), le permis peut être retenu sur-le-champ puis suspendu (L224-1 I 7°).'
+  reponse: 'Non : l’interdiction vaut dès que le véhicule est en circulation, même arrêté au feu ou dans un bouchon ; il faut
+    être garé sur un emplacement autorisé.'
+  explication: 'R412-6-1 : 135 € et 3 points. Si le téléphone est relevé en même temps qu''une autre infraction (vitesse,
+    feu, priorité), le permis peut être retenu sur-le-champ puis suspendu (L224-1 I 7°).'
   theme: C
   sous_theme: deficiences
   source: Code de la route, art. R412-6-1 et L224-1
 - id: c-cannabis-effets
   question: Quels effets le cannabis a-t-il sur la conduite, et combien de temps durent-ils ?
-  reponse: Temps de réaction allongé, somnolence, trajectoire mal tenue et distances mal perçues ; les effets
-    durent plusieurs heures et le dépistage salivaire reste positif bien plus longtemps.
-  explication: Il est interdit de conduire après usage. Le dépistage et la vérification servent à établir cet
-    usage ; ils ne mesurent pas une aptitude à conduire. Les effets peuvent se cumuler avec ceux de l’alcool
-    ou de médicaments.
+  reponse: Temps de réaction allongé, somnolence, trajectoire et distances mal maîtrisées ; les effets durent plusieurs heures,
+    la détection bien plus longtemps.
+  explication: Il est interdit de conduire après usage. Le dépistage et la vérification servent à établir cet usage ; ils
+    ne mesurent pas une aptitude à conduire. Les effets peuvent se cumuler avec ceux de l’alcool ou de médicaments.
   theme: C
   sous_theme: deficiences
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
@@ -195,24 +211,30 @@
   - revision::v5
 - id: c-emotions
   question: Peut-on prendre le volant après une forte émotion (dispute, colère, mauvaise nouvelle) ?
-  reponse: 'Mieux vaut attendre : sous le coup de l''émotion, on perçoit moins, on prend plus de risques (vitesse, dépassements) et le temps de réaction s''allonge.'
-  explication: Le stress et la colère sont des « déficiences » au même titre que la fatigue. La réponse attendue à l'examen est de différer le trajet ou de se calmer avant de partir.
+  reponse: 'Mieux vaut attendre : sous le coup de l’émotion, on perçoit moins, on prend plus de risques et le temps de réaction
+    s’allonge.'
+  explication: Le stress et la colère sont des « déficiences » au même titre que la fatigue. La réponse attendue à l'examen
+    est de différer le trajet ou de se calmer avant de partir.
   theme: C
   sous_theme: deficiences
   importance: utile
   source: securite-routiere.gouv.fr — Les facteurs de risque ; Codes Rousseau
 - id: c-passagers-pression
   question: Mes passagers m'incitent à rouler plus vite ou à « passer à l'orange ». Que faire ?
-  reponse: 'Refuser et garder mon allure : le conducteur est seul responsable ; la pression des passagers (surtout chez les jeunes) est un facteur de prise de risque reconnu.'
-  explication: 'Le disque A signale aux autres un conducteur novice et réduit l''impatience des suiveurs. Refuser aussi de monter avec un conducteur qui a bu : désigner un « Sam ».'
+  reponse: 'Refuser et garder mon allure : le conducteur est seul responsable ; la pression des passagers est un facteur reconnu
+    de prise de risque.'
+  explication: 'Le disque A signale aux autres un conducteur novice et réduit l''impatience des suiveurs. Refuser aussi de
+    monter avec un conducteur qui a bu : désigner un « Sam ».'
   theme: C
   sous_theme: deficiences
   importance: utile
   source: securite-routiere.gouv.fr — Conseils aux conducteurs novices
 - id: c-suiveur-trop-pres
   question: Sur une route à double sens, le véhicule qui me suit roule à quelques mètres de mon pare-chocs. Que fais-je ?
-  reponse: 'J''allonge mon propre intervalle avec le véhicule qui me précède et je laisse le suiveur me dépasser dès qu''il le peut ; je ne freine pas pour le faire reculer.'
-  explication: 'Freiner ou accélérer face à un suiveur collé provoque l''accident. En reculant mon point de freinage, je récupère la marge que lui n''a plus. Les 2 s de l''art. R412-12 se comptent devant moi, pas derrière.'
+  reponse: J’allonge mon intervalle avec le véhicule qui me précède et je laisse le suiveur me dépasser dès qu’il le peut
+    ; je ne freine pas pour le repousser.
+  explication: Freiner ou accélérer face à un suiveur collé provoque l'accident. En reculant mon point de freinage, je récupère
+    la marge que lui n'a plus. Les 2 s de l'art. R412-12 se comptent devant moi, pas derrière.
   theme: C
   sous_theme: distances
   source: Code de la route, art. R412-12 ; securite-routiere.gouv.fr — Les distances de sécurité

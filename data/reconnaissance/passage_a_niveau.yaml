@@ -21,7 +21,6 @@
   nom: Croix de Saint-André double (passage à niveau à plusieurs voies sans barrière)
   signification: 'Panneau de position d''un passage à niveau à plusieurs voies ferrées, sans barrière ni signalisation automatique (deux croix superposées, ou G1c : version étroite).'
   conduite: Même conduite que G1, en tenant compte qu'un train peut en cacher un autre.
-  complement: À hauteur du passage à niveau.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -34,7 +33,6 @@
   nom: Croix de Saint-André avec signalisation automatique lumineuse et sonore
   signification: 'Croix de Saint-André complétée d''un feu rouge clignotant (R24) et d''une sonnerie : passage à niveau sans barrière, à signalisation automatique.'
   conduite: Feu rouge clignotant allumé = arrêt absolu, même si le train n'est pas visible ; feu éteint = franchir après s'être assuré qu'aucun train n'approche.
-  complement: À hauteur du passage à niveau ; annoncé par A8 (le panneau de danger reste A8 puisqu'il n'y a pas de barrière).
   theme: L
   sous_theme: panneaux
   importance: essentiel

@@ -4,7 +4,8 @@
   contexte: Route de montagne hors agglomération, panneau triangulaire « descente dangereuse 15 % ».
   affirmation: La descente dangereuse à 15 % commence à environ 150 m.
   verdict: vrai
-  pourquoi: Hors agglomération, un panneau de danger est implanté à environ 150 m de ce qu'il annonce (50 m en agglomération), sauf panonceau de distance. Question officielle 2023 (Q18).
+  pourquoi: Hors agglomération, un panneau de danger est implanté à environ 150 m de ce qu'il annonce (50 m en agglomération),
+    sauf panonceau de distance. Un exemple public de question (2023) porte sur ce cas.
   theme: R
   sous_theme: montagne
   source: Sécurité routière — Exemples de nouvelles questions (Q18) ; IISR, 1re partie
@@ -12,7 +13,8 @@
   contexte: Route hors agglomération, panneau « passage à niveau » avec panonceau « signal automatique ».
   affirmation: Circulant hors agglomération, le passage à niveau se situe à environ 150 m.
   verdict: vrai
-  pourquoi: Hors agglomération, le panneau annonce le passage à 150 m ; les balises J10 égrènent ensuite 150 m (trois bandes), 100 m (deux) et 50 m (une). En agglomération, ce serait 50 m. Question officielle 2023 (Q19).
+  pourquoi: Hors agglomération, le panneau annonce le passage à 150 m ; les balises J10 égrènent ensuite 150 m (trois
+    bandes), 100 m (deux) et 50 m (une). En agglomération, ce serait 50 m. Un exemple public de question (2023) porte sur ce cas.
   theme: R
   sous_theme: passages_a_niveau
   source: Sécurité routière — Exemples de nouvelles questions (Q19) ; IISR
@@ -20,14 +22,17 @@
   contexte: Passage à niveau annoncé par un panonceau « signal automatique ».
   affirmation: À ce passage à niveau, je peux rencontrer des feux rouges clignotants.
   verdict: vrai
-  pourquoi: 'Le panonceau « signal automatique » annonce une signalisation automatique lumineuse et sonore : deux feux rouges clignotants et une sonnerie, avec ou sans demi-barrières. Question officielle 2023 (Q19).'
+  pourquoi: 'Le panonceau « signal automatique » annonce une signalisation automatique lumineuse et sonore : deux
+    feux rouges clignotants et une sonnerie, avec ou sans demi-barrières. Un exemple public de question (2023) porte sur ce cas.'
   theme: R
   sous_theme: passages_a_niveau
   source: Sécurité routière — Exemples de nouvelles questions (Q19) ; IISR, 6e partie
 - id: aff-r-pn-barriere-contourner
-  affirmation: 'Une demi-barrière ne ferme que ma moitié de chaussée : je peux la contourner si je ne vois pas de train.'
+  affirmation: 'Une demi-barrière ne ferme que ma moitié de chaussée : je peux la contourner si je ne vois pas de
+    train.'
   verdict: faux
-  pourquoi: Aucun usager ne doit s'engager quand les barrières sont fermées, en cours de fermeture ou d'ouverture (R422-3 II). Un train peut en cacher un autre, et il lui faut environ 1 km pour s'arrêter.
+  pourquoi: Aucun usager ne doit s'engager quand les barrières sont fermées, en cours de fermeture ou d'ouverture
+    (R422-3 II). Un train peut en cacher un autre, et il lui faut environ 1 km pour s'arrêter.
   theme: R
   sous_theme: passages_a_niveau
   source: Code de la route, art. R422-3 ; SNCF Réseau
@@ -46,14 +51,17 @@
   contexte: Autoroute à trois voies, circulation dense et pluie battante.
   affirmation: Sur la voie de gauche, je dois rouler à au moins 80 km/h en toutes circonstances.
   verdict: faux
-  pourquoi: Le minimum de 80 km/h ne vaut que si la circulation est fluide et si les conditions atmosphériques permettent une visibilité et une adhérence suffisantes (R413-19). Sous la pluie ou dans un bouchon, il ne s'applique pas.
+  pourquoi: Le minimum de 80 km/h ne vaut que si la circulation est fluide et si les conditions atmosphériques permettent
+    une visibilité et une adhérence suffisantes (R413-19). Sous la pluie ou dans un bouchon, il ne s'applique pas.
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R413-19
 - id: aff-r-autoroute-trouee-terre-plein
   affirmation: Une trouée aménagée dans le terre-plein central me permet de faire demi-tour si je me suis trompé.
   verdict: faux
-  pourquoi: 'Le demi-tour est interdit sur autoroute « en aucun cas », y compris en traversant le terre-plein central ou en empruntant une de ses interruptions (R421-6) : 135 €, 4 points. Ces passages sont réservés aux services d''exploitation et de secours.'
+  pourquoi: 'Le demi-tour est interdit sur autoroute « en aucun cas », y compris en traversant le terre-plein central
+    ou en empruntant une de ses interruptions (R421-6) : 135 €, 4 points. Ces passages sont réservés aux services
+    d''exploitation et de secours.'
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R421-5 et R421-6
@@ -61,21 +69,24 @@
   contexte: Autoroute normalement limitée à 130 km/h, sous une forte averse.
   affirmation: Sous la pluie, la limitation passe à 110 km/h, y compris pour un conducteur en permis probatoire.
   verdict: vrai
-  pourquoi: 'Par temps de pluie, l''autoroute est limitée à 110 km/h pour tous (R413-2) : l''écart entre le probatoire (110) et le permis définitif (130) disparaît donc sous la pluie.'
+  pourquoi: 'Par temps de pluie, l''autoroute est limitée à 110 km/h pour tous (R413-2) : l''écart entre le probatoire
+    (110) et le permis définitif (130) disparaît donc sous la pluie.'
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R413-2 et R413-5
 - id: aff-r-autoroute-cyclo
   affirmation: Un cyclomoteur de 50 cm³ peut emprunter l'autoroute dès lors qu'il est immatriculé.
   verdict: faux
-  pourquoi: 'R421-2 interdit l''accès de l''autoroute aux cyclomoteurs, aux voiturettes, aux vélos, aux piétons, aux animaux et aux engins agricoles, immatriculés ou non : ils ne peuvent pas tenir l''allure du trafic.'
+  pourquoi: 'R421-2 interdit l''accès de l''autoroute aux cyclomoteurs, aux voiturettes, aux vélos, aux piétons,
+    aux animaux et aux engins agricoles, immatriculés ou non : ils ne peuvent pas tenir l''allure du trafic.'
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R421-2
 - id: aff-r-autoroute-aac
   affirmation: Un élève en conduite accompagnée n'a pas le droit de circuler sur autoroute.
   verdict: faux
-  pourquoi: L'autoroute est autorisée en conduite accompagnée ; l'élève est seulement soumis aux vitesses du permis probatoire (110 km/h sur autoroute, 100 sur chaussées séparées, 80 ailleurs).
+  pourquoi: L'autoroute est autorisée en conduite accompagnée ; l'élève est seulement soumis aux vitesses du permis
+    probatoire (110 km/h sur autoroute, 100 sur chaussées séparées, 80 ailleurs).
   theme: R
   sous_theme: autoroute
   importance: utile
@@ -84,44 +95,52 @@
   contexte: Sur autoroute, je découvre un bouchon et je suis le dernier véhicule de la file.
   affirmation: J'allume mes feux de détresse tout en ralentissant.
   verdict: vrai
-  pourquoi: 'Les feux de détresse sont obligatoires quand on est contraint de circuler momentanément à allure fortement réduite (R416-18) : c''est ce qui évite le suraccident par l''arrière à 130 km/h.'
+  pourquoi: 'Les feux de détresse sont obligatoires quand on est contraint de circuler momentanément à allure fortement
+    réduite (R416-18) : c''est ce qui évite le suraccident par l''arrière à 130 km/h.'
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R416-18
 - id: aff-r-peage-reculer
   affirmation: Si je me trompe de voie au péage, je peux reculer pour changer de file.
   verdict: faux
-  pourquoi: La marche arrière est interdite sur autoroute, péage compris (R421-6). On s'arrête, on appelle par l'interphone de la borne et un agent règle la situation à distance.
+  pourquoi: La marche arrière est interdite sur autoroute, péage compris (R421-6). On s'arrête, on appelle par l'interphone
+    de la borne et un agent règle la situation à distance.
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R421-6 ; ASFA — Le péage
 - id: aff-r-brouillard-arriere-pluie
-  dedup_ok: [aff-r-brouillard-avant-pluie]
+  dedup_ok:
+  - aff-r-brouillard-avant-pluie
   contexte: Forte pluie sur une route à double sens, en plein jour.
   affirmation: J'allume mes feux de brouillard arrière pour être mieux vu.
   verdict: faux
-  pourquoi: 'Les feux arrière de brouillard ne peuvent être utilisés qu''en cas de brouillard ou de chute de neige (R416-7 II) : sous la pluie, ils éblouissent ceux qui suivent (135 €). Les feux de brouillard avant, eux, sont admis.'
+  pourquoi: 'Les feux arrière de brouillard ne peuvent être utilisés qu''en cas de brouillard ou de chute de neige
+    (R416-7 II) : sous la pluie, ils éblouissent ceux qui suivent (135 €). Les feux de brouillard avant, eux, sont
+    admis.'
   theme: R
   sous_theme: intemperies
   source: Code de la route, art. R416-7
 - id: aff-r-brouillard-avant-pluie
   affirmation: Par forte pluie, les feux de brouillard avant peuvent remplacer mes feux de croisement.
   verdict: vrai
-  pourquoi: 'R416-7 I : en cas de brouillard, de chute de neige ou de forte pluie, les feux avant de brouillard peuvent remplacer ou compléter les feux de croisement.'
+  pourquoi: 'R416-7 I : en cas de brouillard, de chute de neige ou de forte pluie, les feux avant de brouillard
+    peuvent remplacer ou compléter les feux de croisement.'
   theme: R
   sous_theme: intemperies
   source: Code de la route, art. R416-7
 - id: aff-r-brouillard-feux-route
   affirmation: Dans le brouillard, les feux de route éclairent plus loin que les feux de croisement.
   verdict: faux
-  pourquoi: Leur faisceau se réfléchit sur les gouttelettes et forme un mur blanc qui réduit encore la visibilité ; R416-6 impose d'ailleurs les feux de croisement par visibilité réduite.
+  pourquoi: Leur faisceau se réfléchit sur les gouttelettes et forme un mur blanc qui réduit encore la visibilité
+    ; R416-6 impose d'ailleurs les feux de croisement par visibilité réduite.
   theme: R
   sous_theme: intemperies
   source: Code de la route, art. R416-6
 - id: aff-r-visibilite-50-autoroute
   affirmation: La limitation à 50 km/h en cas de visibilité inférieure à 50 m ne s'applique pas sur autoroute.
   verdict: faux
-  pourquoi: R413-4 abaisse la vitesse à 50 km/h « sur l'ensemble des réseaux routier et autoroutier ». C'est un article distinct de celui des vitesses par temps de pluie (R413-2).
+  pourquoi: R413-4 abaisse la vitesse à 50 km/h « sur l'ensemble des réseaux routier et autoroutier ». C'est un
+    article distinct de celui des vitesses par temps de pluie (R413-2).
   theme: R
   sous_theme: intemperies
   source: Code de la route, art. R413-4
@@ -140,14 +159,17 @@
 - id: aff-r-aquaplaning-freiner
   affirmation: En cas d'aquaplaning, il faut freiner fermement pour retrouver l'adhérence.
   verdict: faux
-  pourquoi: 'Les roues ne touchent plus la route : freiner ou braquer met la voiture en travers. On lève le pied progressivement, volant tenu fermement et roues droites, jusqu''au retour du contact.'
+  pourquoi: 'Les roues ne touchent plus la route : freiner ou braquer met la voiture en travers. On lève le pied
+    progressivement, volant tenu fermement et roues droites, jusqu''au retour du contact.'
   theme: R
   sous_theme: intemperies
   source: Ornikar — L'aquaplaning ; securite-routiere.gouv.fr — Conduire sous la pluie
 - id: aff-r-montagne-ms
-  affirmation: Des pneus marqués seulement « M+S » suffisent pour satisfaire à l'obligation d'équipement en zone montagne.
+  affirmation: Des pneus marqués seulement « M+S » suffisent pour satisfaire à l'obligation d'équipement en zone
+    montagne.
   verdict: faux
-  pourquoi: Depuis le 1er novembre 2024, un pneu hiver doit porter le symbole alpin 3PMSF (le flocon) en plus du marquage M+S ; le M+S seul ne convient plus, sauf à détenir des chaînes ou des chaussettes à bord.
+  pourquoi: Depuis le 1er novembre 2024, un pneu hiver doit porter le symbole alpin 3PMSF (le flocon) en plus du
+    marquage M+S ; le M+S seul ne convient plus, sauf à détenir des chaînes ou des chaussettes à bord.
   theme: R
   sous_theme: intemperies
   source: Décret n° 2020-1264 ; service-public.fr F19459
@@ -155,21 +177,36 @@
   contexte: Route enneigée, panneau d'entrée de zone montagne, en pleine période hivernale.
   affirmation: Sans chaînes ni chaussettes à bord, il me faut quatre pneus hiver pour circuler ici.
   verdict: vrai
-  pourquoi: 'L''obligation hivernale se remplit au choix par les pneus ou par un équipement amovible : privé de chaînes et de chaussettes, il ne reste que les quatre pneus marqués 3PMSF. Question officielle 2023 (Q10).'
+  pourquoi: 'L''obligation hivernale se remplit au choix par les pneus ou par un équipement amovible : privé de
+    chaînes et de chaussettes, il ne reste que les quatre pneus marqués 3PMSF. Un exemple public de question (2023) porte sur ce cas.'
   theme: R
   sous_theme: intemperies
   source: Sécurité routière — Exemples de nouvelles questions (Q10) ; décret n° 2020-1264
 - id: aff-r-verglas-pont
   affirmation: Un pont peut être verglacé alors que la route qui y mène ne l'est pas.
   verdict: vrai
-  pourquoi: 'Un tablier de pont se refroidit par-dessus et par-dessous : il gèle avant le reste de la chaussée. Même piège dans les zones d''ombre, les sous-bois et près des cours d''eau.'
+  pourquoi: 'Un tablier de pont se refroidit par-dessus et par-dessous : il gèle avant le reste de la chaussée.
+    Même piège dans les zones d''ombre, les sous-bois et près des cours d''eau.'
   theme: R
   sous_theme: intemperies
   source: En Voiture Simone — Le verglas ; Roole — Neige et verglas
+- id: aff-r-verglas-temperature-positive
+  contexte: Aube d’hiver ; le thermomètre extérieur de la voiture indique +2 °C.
+  affirmation: La température étant positive, je peux exclure tout verglas sur la route.
+  verdict: faux
+  pourquoi: 'Le revêtement peut être plus froid que l’air, surtout sur les ponts, dans les zones d’ombre et près
+    des cours d’eau : du verglas est possible avec une température affichée positive. Aucune valeur du thermomètre
+    ne garantit l’absence de glace.'
+  theme: R
+  sous_theme: intemperies
+  source: Codes Rousseau — Neige et brouillard ; En Voiture Simone — Le verglas
+  tags:
+  - revision::v6
 - id: aff-r-neige-depassement-pl
   affirmation: Sur une chaussée enneigée, un poids lourd de plus de 3,5 t ne peut ni dépasser ni changer de file.
   verdict: vrai
-  pourquoi: 'R414-17 : dès qu''une voie au moins est couverte de neige ou de verglas, le dépassement et le changement de file sont interdits aux véhicules de plus de 3,5 t et aux ensembles de plus de 7 m.'
+  pourquoi: 'R414-17 : dès qu''une voie au moins est couverte de neige ou de verglas, le dépassement et le changement
+    de file sont interdits aux véhicules de plus de 3,5 t et aux ensembles de plus de 7 m.'
   theme: R
   sous_theme: intemperies
   importance: utile
@@ -178,37 +215,43 @@
   contexte: La nuit, en agglomération, sur une avenue bien éclairée.
   affirmation: Je peux me contenter de mes feux de position.
   verdict: faux
-  pourquoi: 'La nuit, même sur une voie éclairée, ce sont les feux de croisement qui s''imposent (R416-6 II 2°). Les feux de position servent à être vu, pas à voir : ils n''éclairent pas la chaussée.'
+  pourquoi: 'La nuit, même sur une voie éclairée, ce sont les feux de croisement qui s''imposent (R416-6 II 2°).
+    Les feux de position servent à être vu, pas à voir : ils n''éclairent pas la chaussée.'
   theme: R
   sous_theme: nuit
   source: Code de la route, art. R416-6 et R416-8
 - id: aff-r-nuit-feux-route-arret
   affirmation: À l'arrêt ou en stationnement, l'usage des feux de route est interdit.
   verdict: vrai
-  pourquoi: 'R416-5 : les feux de route sont interdits véhicule arrêté ou stationné (135 €). Hors agglomération non éclairée, on signale le véhicule par ses feux de position.'
+  pourquoi: 'R416-5 : les feux de route sont interdits véhicule arrêté ou stationné (135 €). Hors agglomération
+    non éclairée, on signale le véhicule par ses feux de position.'
   theme: R
   sous_theme: nuit
   source: Code de la route, art. R416-5
 - id: aff-r-nuit-pieton-sombre
-  dedup_ok: [aff-u-pieton-nuit-croisement]
+  dedup_ok:
+  - aff-u-pieton-nuit-croisement
   contexte: Nuit, hors agglomération, feux de croisement ; un piéton en vêtements sombres marche sur le bas-côté.
   affirmation: Je le distingue à peu près aussi loin qu'un piéton portant un gilet rétroréfléchissant.
   verdict: faux
-  pourquoi: En vêtements sombres, il n'apparaît qu'à la limite de la zone éclairée par mes feux de croisement, une trentaine de mètres ; un gilet rétroréfléchissant renvoie la lumière et le signale bien plus tôt.
+  pourquoi: En vêtements sombres, il n'apparaît qu'à la limite de la zone éclairée par mes feux de croisement, une
+    trentaine de mètres ; un gilet rétroréfléchissant renvoie la lumière et le signale bien plus tôt.
   theme: R
   sous_theme: nuit
   source: securite-routiere.gouv.fr — Conduire de nuit ; Code de la route, art. R313-3
 - id: aff-r-tunnel-demi-tour
   affirmation: Si un bouchon se forme dans le tunnel, je peux faire demi-tour pour ressortir.
   verdict: faux
-  pourquoi: Demi-tour et marche arrière sont interdits en tunnel. On s'arrête en gardant la distance affichée, moteur coupé, radio allumée ; si une évacuation est nécessaire, elle se fait à pied par les issues de secours.
+  pourquoi: Demi-tour et marche arrière sont interdits en tunnel. On s'arrête en gardant la distance affichée, moteur
+    coupé, radio allumée ; si une évacuation est nécessaire, elle se fait à pied par les issues de secours.
   theme: R
   sous_theme: tunnels
   source: CETU — Conduire en tunnel ; Code de la route, art. R417-10 (arrêt et stationnement interdits en tunnel)
 - id: aff-r-tram-station-pieton
   affirmation: Un tramway arrêté à sa station peut masquer un piéton qui traverse devant lui.
   verdict: vrai
-  pourquoi: 'Les voyageurs descendus rejoignent le trottoir en coupant la chaussée devant ou derrière la rame : on ralentit à l''approche d''une station, et on ne dépasse pas du côté où ils descendent.'
+  pourquoi: 'Les voyageurs descendus rejoignent le trottoir en coupant la chaussée devant ou derrière la rame :
+    on ralentit à l''approche d''une station, et on ne dépasse pas du côté où ils descendent.'
   theme: R
   sous_theme: tramways
   source: Code de la route, art. R414-13 ; coursdecode.com — Les tramways
@@ -216,14 +259,16 @@
   contexte: Chantier autoroutier un dimanche, limitation jaune à 90, aucun engin ni ouvrier en vue.
   affirmation: Je peux reprendre 130 km/h puisque personne ne travaille.
   verdict: faux
-  pourquoi: 'Tant que les panneaux temporaires sont en place, ils s''imposent et priment sur la signalisation permanente : la chaussée reste rétrécie ou dévoyée, et les contrôles de vitesse y fonctionnent aussi le dimanche.'
+  pourquoi: 'Tant que les panneaux temporaires sont en place, ils s''imposent et priment sur la signalisation permanente
+    : la chaussée reste rétrécie ou dévoyée, et les contrôles de vitesse y fonctionnent aussi le dimanche.'
   theme: R
   sous_theme: chantiers
   source: IISR, 8e partie ; Code de la route, art. R411-25
 - id: aff-r-vent-manche
   affirmation: Une manche à air placée à l'horizontale signale un vent fort.
   verdict: vrai
-  pourquoi: 'La manche à air donne en temps réel la force et la direction du vent : pendante à la verticale, pas de vent ; tendue à l''horizontale, vent fort. Le panneau A24 annonce la zone exposée.'
+  pourquoi: 'La manche à air donne en temps réel la force et la direction du vent : pendante à la verticale, pas
+    de vent ; tendue à l''horizontale, vent fort. Le panneau A24 annonce la zone exposée.'
   theme: R
   sous_theme: intemperies
   importance: utile
@@ -231,7 +276,8 @@
 - id: aff-r-vent-deux-roues
   affirmation: Par vent latéral, je laisse un écart plus grand au motard que je dépasse.
   verdict: vrai
-  pourquoi: Deux-roues, caravanes, fourgons et véhicules à coffre de toit sont les plus sensibles au vent ; la rafale surprend surtout à la sortie d'une zone abritée (tunnel, pile de pont, rideau d'arbres).
+  pourquoi: Deux-roues, caravanes, fourgons et véhicules à coffre de toit sont les plus sensibles au vent ; la rafale
+    surprend surtout à la sortie d'une zone abritée (tunnel, pile de pont, rideau d'arbres).
   theme: R
   sous_theme: intemperies
   source: securite-routiere.gouv.fr — Le vent ; En Voiture Simone — Le vent

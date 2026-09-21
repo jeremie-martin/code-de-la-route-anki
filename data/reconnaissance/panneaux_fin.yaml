@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 13 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 9 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: b31
   type: panneau
   code: B31
@@ -22,7 +22,7 @@
   nom: Fin de limitation de vitesse
   signification: Fin de la limitation de vitesse indiquée ; la vitesse maximale redevient celle du régime général de la route (agglomération 50, route 80/90, 2×2 voies 110, autoroute 130).
   conduite: Reprendre la vitesse réglementaire applicable, sans dépasser celle qui est adaptée aux conditions.
-  complement: 'Après un B33, ce n''est pas « vitesse libre » : c''est la limite générale du type de route qui s''applique. Variantes courantes : 30, 50, 70, 90, 110.'
+  complement: 'Après un B33, ce n’est pas « vitesse libre » : c’est la limite générale du type de route qui s’applique.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -61,17 +61,6 @@
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b39
-  type: panneau
-  code: B39
-  image:
-    commons: France road sign B39.svg
-  nom: Fin d'interdiction (par inscription)
-  signification: Fin de l'interdiction dont la nature est indiquée sur le panneau (correspond à B19).
-  theme: L
-  sous_theme: panneaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b40
   type: panneau
   code: B40
@@ -83,28 +72,6 @@
   theme: L
   sous_theme: panneaux
   importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b41
-  type: panneau
-  code: B41
-  image:
-    commons: France road sign B41.svg
-  nom: Fin de chemin obligatoire pour piétons
-  signification: Fin du chemin obligatoire pour piétons (B22b).
-  theme: L
-  sous_theme: panneaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b42
-  type: panneau
-  code: B42
-  image:
-    commons: France road sign B42.svg
-  nom: Fin de chemin obligatoire pour cavaliers
-  signification: Fin du chemin obligatoire pour cavaliers (B22c).
-  theme: L
-  sous_theme: panneaux
-  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b43
   type: panneau
@@ -139,15 +106,4 @@
   theme: L
   sous_theme: panneaux
   importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b49
-  type: panneau
-  code: B49
-  image:
-    commons: France road sign B49.svg
-  nom: Fin d'obligation (par inscription)
-  signification: Fin de l'obligation dont la nature est mentionnée par inscription (correspond à B29).
-  theme: L
-  sous_theme: panneaux
-  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

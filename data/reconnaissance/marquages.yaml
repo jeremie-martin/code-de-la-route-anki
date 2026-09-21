@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 32 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 31 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: marq-ligne-continue
   type: marquage
   image:
@@ -30,24 +30,6 @@
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: 'Une ligne discontinue autorise le franchissement mais n''oblige à rien : le dépassement reste soumis aux règles générales.'
-- id: marq-ligne-t1
-  type: marquage
-  image:
-    gen: ligne_axiale
-    params:
-      style: discontinue
-      dash: 1.5
-      gap: 5
-  nom: Ligne discontinue axiale T'1 (1,5 m de trait, 5 m de vide)
-  signification: 'Ligne axiale discontinue à traits et espaces plus courts : franchissement possible si la manœuvre est sûre et autorisée.'
-  conduite: Vérifier visibilité, trafic et possibilité de rabattement.
-  complement: Même fonction que la ligne discontinue ordinaire ; la longueur des traits ne donne aucune priorité.
-  theme: L
-  sous_theme: marquages
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  tags:
-  - revision::v3_1
 - id: marq-ligne-dissuasion
   type: marquage
   image:
@@ -59,7 +41,7 @@
   nom: Ligne de dissuasion T3 (3 m de trait, 1,33 m de vide)
   signification: 'Ligne discontinue à traits longs et vides courts (3 m / 1,33 m) : le dépassement n''est autorisé que pour un véhicule lent.'
   conduite: Ne pas dépasser un véhicule à allure normale ; dépasser un tracteur, un cyclomoteur ou un engin lent reste possible.
-  complement: Routes sinueuses, approche des sorties d'autoroute. La même modulation T3 en 5u délimite bandes cyclables et couloirs bus.
+  complement: Fréquente sur routes sinueuses et à l’approche des sorties d’autoroute.
   theme: L
   sous_theme: marquages
   importance: essentiel
@@ -116,7 +98,6 @@
   nom: 'Ligne d''arrêt (STOP) : ligne transversale continue'
   signification: 'Large ligne blanche continue (50 cm) en travers de la voie : c''est à elle, et non au panneau STOP, que l''arrêt se fait.'
   conduite: S'arrêter complètement les roues avant la ligne, sans la dépasser, puis céder le passage.
-  complement: Le marquage accompagne obligatoirement le panneau AB4.
   theme: L
   sous_theme: marquages
   importance: essentiel
@@ -131,7 +112,7 @@
   nom: 'Ligne de cédez-le-passage : ligne transversale discontinue'
   signification: 'Ligne blanche discontinue en travers de la voie (traits de 50 cm), associée au panneau AB3a : céder le passage avant de la franchir.'
   conduite: Ralentir, contrôler, s'arrêter à la ligne si un véhicule arrive, sinon passer sans s'arrêter.
-  complement: Au niveau du panneau AB3a, aux entrées de giratoire, en fin de voie d'insertion.
+  complement: Se trouve aussi aux entrées de giratoire et en fin de voie d’insertion.
   theme: L
   sous_theme: marquages
   importance: essentiel
@@ -161,7 +142,7 @@
   nom: Passage pour piétons (marquage au sol)
   signification: Bandes blanches parallèles à l'axe de la chaussée matérialisant la traversée des piétons ; s'y arrêter ou y stationner est interdit.
   conduite: Céder le passage au piéton engagé ou qui manifeste l'intention de traverser ; ne pas dépasser un véhicule arrêté devant.
-  complement: Annoncé par A13b, position C20a. Arrêt et stationnement interdits 5 m en amont.
+  complement: Arrêt et stationnement interdits dans les 5 m en amont du passage.
   theme: L
   sous_theme: marquages
   importance: essentiel
@@ -309,7 +290,7 @@
   nom: 'Ligne jaune continue (sur bordure ou en rive) : arrêt interdit'
   signification: 'Ligne jaune continue peinte sur la bordure du trottoir ou en rive de chaussée : interdiction de s''arrêter et de stationner (équivalent au sol du panneau B6d).'
   conduite: Ne pas s'immobiliser le long de cette bordure.
-  complement: Le long des bordures concernées (sorties de garage, arrêts, zones de sécurité). JAUNE continue = arrêt ET stationnement interdits ; JAUNE discontinue = stationnement interdit (arrêt possible).
+  complement: Jaune continue = arrêt et stationnement interdits ; jaune discontinue = stationnement interdit, arrêt possible.
   theme: L
   sous_theme: marquages
   importance: essentiel
@@ -336,7 +317,7 @@
   nom: 'Ligne jaune en zigzag : arrêt de bus'
   signification: 'Ligne jaune en zigzag peinte le long du trottoir matérialisant un arrêt d''autobus : interdiction de s''y arrêter et d''y stationner pour les autres véhicules.'
   conduite: Ne pas s'y arrêter, même brièvement ; ne pas gêner le bus qui repart.
-  complement: 'Aux arrêts de bus (panneau C6). S''y arrêter ou stationner = stationnement gênant : 35 € et fourrière possible (R417-10 II 2°).'
+  complement: Aux arrêts de bus. S’y arrêter ou stationner est un stationnement gênant, avec fourrière possible.
   theme: L
   sous_theme: marquages
   importance: essentiel
@@ -403,7 +384,7 @@
   nom: Marquage d'un ralentisseur (triangles blancs)
   signification: Trois triangles blancs (« dents de requin »), pointes dans le sens de la circulation, peints sur la rampe d'un ralentisseur.
   conduite: Ralentir à 30 km/h maximum avant de franchir.
-  complement: Sur la rampe du ralentisseur ; signalisation verticale A2b puis C27. Les triangles blancs au sol en France = ralentisseur (pas un cédez-le-passage).
+  complement: En France, les triangles blancs au sol signalent un ralentisseur, pas un cédez-le-passage.
   theme: L
   sous_theme: marquages
   importance: essentiel
@@ -417,7 +398,7 @@
   nom: Ralentisseur de type trapézoïdal (plateau surélevé)
   signification: 'Ralentisseur trapézoïdal : rampes d''accès et plateau plat sur toute la largeur de la chaussée, souvent avec passage piéton surélevé.'
   conduite: Ralentir à 30 km/h ; céder le passage aux piétons si le plateau porte un passage.
-  complement: Agglomération, zones 30 et zones de rencontre ; signalé par A2b / C27, triangles blancs sur les rampes.
+  complement: Rencontré en agglomération, zones 30 et zones de rencontre.
   theme: L
   sous_theme: marquages
   importance: utile
@@ -445,7 +426,6 @@
   nom: Chaussée à voie centrale banalisée (« chaucidou »)
   signification: 'Chaussée étroite sans ligne axiale : une voie centrale à double sens pour les véhicules et deux rives pour les cyclistes.'
   conduite: Rouler au centre, pas sur la rive ; pour croiser, se déporter après avoir vérifié l'absence de cycliste.
-  complement: '« Chaucidou » : signalée par C24a ou C50, sans code de panneau dédié dans l''IISR.'
   theme: L
   sous_theme: marquages
   importance: utile
@@ -456,9 +436,8 @@
     gen: losange_sol
     params: {}
   nom: Losange blanc au sol (voie réservée)
-  signification: Losange blanc peint dans l'axe d'une voie réservée (covoiturage, transports en commun, taxis) sur voie rapide, en complément du panneau à losange (expérimentation 2020-2026).
+  signification: Losange blanc peint dans l'axe d'une voie réservée (covoiturage, transports en commun, taxis) sur voie rapide, en complément du panneau à losange.
   conduite: Ne pas emprunter la voie si l'on n'appartient pas aux catégories autorisées (aux heures indiquées).
-  complement: Voies de gauche (ou de droite) des routes à chaussées séparées équipées.
   theme: L
   sous_theme: marquages
   importance: utile

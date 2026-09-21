@@ -86,6 +86,20 @@ class LearningTests(unittest.TestCase):
             data['faits'][0]['rappels'] = invalid
             self.assertTrue(any('chaque rappel' in e for e in validate(data)))
 
+    def test_a_sentence_carries_one_target_and_a_short_one(self):
+        data = copy.deepcopy(self.data)
+        sheet = copy.deepcopy(next(n for n in data['faits'] if 'rappels' not in n))
+        sheet['id'], sheet['texte'] = 'test-sheet', 'A {{c1::1}} et B {{c2::2}}.'
+        recitation = copy.deepcopy(sheet)
+        recitation['id'], recitation['texte'] = 'test-recitation', 'Règle : {{c1::une phrase entière de neuf mots à réciter sans faute}}.'
+        data['faits'] += [sheet, recitation]
+        errors = validate(data)
+        self.assertTrue(any('test-sheet' in e and 'rappels' in e for e in errors), errors)
+        self.assertTrue(any('test-recitation' in e and 'réciter' in e for e in errors), errors)
+        sheet['multi_ok'] = True
+        recitation['long_ok'] = True
+        self.assertFalse([e for e in validate(data) if 'test-' in e and 'objectif' not in e])
+
     def test_independent_prompts_render_with_native_anki_conditionals(self):
         from anki.collection import Collection
         from anki.consts import MODEL_CLOZE

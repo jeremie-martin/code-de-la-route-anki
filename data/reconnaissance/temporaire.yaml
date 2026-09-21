@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 31 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 30 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: ak2
   type: panneau
   code: AK2
@@ -150,7 +150,6 @@
   nom: Fanion de danger
   signification: Fanion (drapeau) rouge ou rouge et blanc brandi ou planté pour signaler un danger temporaire imminent (chantier mobile, agent sur la chaussée).
   conduite: Ralentir et se préparer à s'arrêter.
-  complement: Au niveau du danger.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -163,7 +162,7 @@
   nom: Barrage (barrière de chantier)
   signification: Barrière rouge et blanche matérialisant la fermeture totale ou partielle de la chaussée ou la position d'un obstacle temporaire (route barrée, chantier).
   conduite: Ne pas franchir ; suivre la déviation ou la partie de chaussée laissée libre.
-  complement: En position, devant l'obstacle ou la fermeture. Sur l'image, la barrière porte un panneau « fin de chantier » ; la barrière seule signale une fermeture ou un obstacle.
+  complement: Sur l’image, la barrière porte un panneau « fin de chantier » ; la barrière seule signale une fermeture ou un obstacle.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -177,7 +176,6 @@
   nom: Cône de signalisation
   signification: Cône rouge et blanc délimitant un chantier ou un obstacle temporaire, posé en file pour guider.
   conduite: Rester dans l'espace laissé libre ; ne pas franchir la file de cônes.
-  complement: Le long des limites du chantier.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -194,18 +192,6 @@
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: k5d
-  type: panneau
-  code: K5d
-  image:
-    commons: K5D.svg
-  nom: Balise de guidage temporaire
-  signification: Balise de guidage jaune à bandes blanches rétroréfléchissantes, implantée en file le long d'une déviation de trajectoire.
-  theme: L
-  sous_theme: panneaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: La balise d'alignement rouge et blanche est la K5c.
 - id: k8
   type: panneau
   code: K8
@@ -214,7 +200,6 @@
   nom: Balise de position de déviation ou de rétrécissement (chantier)
   signification: 'Balise blanche à chevron rouge implantée en tête de chantier ou de déviation : elle indique de quel côté contourner.'
   conduite: Se déporter du côté indiqué par la flèche.
-  complement: En tête de zone de chantier.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -240,7 +225,6 @@
   nom: Signal manuel « arrêt » (piquet K10, face rouge)
   signification: 'Face rouge du piquet K10 tenu par un signaleur : arrêt obligatoire.'
   conduite: S'arrêter à hauteur du signaleur et attendre qu'il présente la face verte.
-  complement: Tenu par un signaleur à chaque extrémité de l'alternat.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -277,7 +261,6 @@
   nom: Panneau d'indication temporaire (route barrée, circulation alternée…)
   signification: 'Panneau rectangulaire jaune à inscription informant d''une situation temporaire : « ROUTE BARRÉE », « CIRCULATION ALTERNÉE », « CHAUSSÉE DÉFORMÉE »…'
   conduite: 'Lire et appliquer : « route barrée » = déviation ; « absence de marquage » = serrer à droite.'
-  complement: En présignalisation (avec distance) et en position.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -290,7 +273,6 @@
   nom: Présignalisation de changement de chaussée ou de trajectoire
   signification: Panneau jaune schématisant un basculement de circulation (passage sur la chaussée opposée, déport de voies).
   conduite: 'Suivre la trajectoire indiquée et ralentir : on peut rouler sur la chaussée opposée.'
-  complement: En amont du basculement.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -315,7 +297,6 @@
   nom: Annonce de la réduction du nombre de voies (temporaire)
   signification: 'Panneau jaune annonçant (avec distance) la réduction du nombre de voies laissées libres sur route à chaussées séparées : KD10a (une voie neutralisée), KD10b (plusieurs voies, signalisation d''urgence).'
   conduite: Se rabattre à temps sur les voies restantes en respectant l'alternance (une voiture sur deux) en cas de bouchon.
-  complement: À 1 000 m, 500 m puis 200 m du rétrécissement sur autoroute.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -328,7 +309,6 @@
   nom: Direction de déviation avec mention de ville
   signification: Panneau de direction jaune en forme de flèche indiquant l'itinéraire de déviation vers la ville mentionnée.
   conduite: Suivre la flèche jaune.
-  complement: Dans le carrefour.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -341,7 +321,6 @@
   nom: Direction de déviation
   signification: Panneau de direction jaune en forme de flèche portant la mention « Déviation » (ou le symbole KS1 numéroté) indiquant le chemin de la déviation.
   conduite: Suivre la déviation.
-  complement: Dans le carrefour.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -354,7 +333,6 @@
   nom: Présignalisation de déviation
   signification: Panneau jaune annonçant avant le carrefour la direction de la déviation (schéma ou flèche), avec éventuellement la ville et la distance.
   conduite: Se préparer à tourner dans la direction indiquée.
-  complement: Avant le carrefour.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -369,7 +347,6 @@
   nom: Feux tricolores temporaires (feux de chantier)
   signification: Feux tricolores mobiles réglant une circulation alternée sur voie unique en chantier ; mêmes règles que les feux permanents.
   conduite: S'arrêter au rouge même sans personne en face ; ne pas s'engager au vert si la voie n'est pas dégagée.
-  complement: À chaque extrémité de la section en alternat ; annoncés par AK17.
   theme: L
   sous_theme: panneaux
   importance: essentiel

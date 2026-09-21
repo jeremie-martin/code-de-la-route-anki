@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 20 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 17 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: b6b1
   type: panneau
   code: B6b1
@@ -7,7 +7,6 @@
   nom: Entrée d'une zone à stationnement interdit
   signification: Entrée d'une zone où le stationnement est interdit dans toutes les rues, sauf emplacements aménagés ou signalisation contraire.
   conduite: Ne stationner que sur les emplacements matérialisés.
-  complement: 'Fin : B50a. Catégorie officielle IISR : prescription zonale (entrée de zone).'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -20,7 +19,7 @@
   nom: Entrée d'une zone à stationnement unilatéral à alternance semi-mensuelle
   signification: 'Entrée d''une zone à stationnement alterné semi-mensuel : du 1er au 15 côté impair, du 16 à la fin côté pair.'
   conduite: Changer de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
-  complement: 'Fin : B50b. Mémo : « 1 » est impair (R417-2).'
+  complement: 'Mémo : « 1 » est impair.'
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -33,7 +32,7 @@
   nom: Entrée d'une zone à stationnement de durée limitée (zone bleue)
   signification: Entrée d'une zone où le stationnement est gratuit mais limité dans le temps, avec contrôle par disque de stationnement (« zone bleue »).
   conduite: Apposer le disque européen derrière le pare-brise, indiquant l'heure d'arrivée ; respecter la durée maximale (souvent 1 h 30) et les horaires du panonceau.
-  complement: 'Fin : B50c. Le marquage au sol de la zone bleue peut être bleu.'
+  complement: Le marquage au sol de la zone bleue peut être bleu.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -50,17 +49,6 @@
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b6b5
-  type: panneau
-  code: B6b5
-  image:
-    commons: France road sign B6b5.svg
-  nom: Entrée d'une zone à stationnement unilatéral alterné et à durée limitée
-  signification: Entrée d'une zone combinant stationnement unilatéral à alternance semi-mensuelle et durée limitée avec contrôle par disque.
-  theme: L
-  sous_theme: panneaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b50a
   type: panneau
   code: B50a
@@ -68,25 +56,10 @@
     commons: France road sign B50a.svg
   nom: Sortie de zone à stationnement interdit
   signification: Sortie de la zone à stationnement interdit (B6b1).
-  complement: À chaque sortie de zone.
   theme: L
   sous_theme: panneaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b50b
-  type: panneau
-  code: B50b
-  image:
-    commons: France road sign B50b.svg
-  nom: Sortie de zone à stationnement unilatéral à alternance semi-mensuelle
-  signification: Fin de la zone à stationnement alterné semi-mensuel.
-  complement: À chaque sortie de zone.
-  theme: L
-  sous_theme: panneaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  tags:
-  - revision::v3_1
 - id: b50c
   type: panneau
   code: B50c
@@ -94,7 +67,6 @@
     commons: France road sign B50c.svg
   nom: Sortie de zone à stationnement de durée limitée
   signification: Fin de la zone où le stationnement est limité dans le temps avec contrôle par disque.
-  complement: À chaque sortie de zone.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -108,24 +80,9 @@
     commons: France road sign B50d.svg
   nom: Sortie de zone à stationnement payant
   signification: Fin de la zone à stationnement payant.
-  complement: À chaque sortie de zone.
   theme: L
   sous_theme: panneaux
   importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  tags:
-  - revision::v3_1
-- id: b50e
-  type: panneau
-  code: B50e
-  image:
-    commons: France road sign B50e.svg
-  nom: Sortie de zone à stationnement unilatéral alterné et à durée limitée
-  signification: Fin de la zone combinant stationnement alterné semi-mensuel et durée limitée.
-  complement: À chaque sortie de zone.
-  theme: L
-  sous_theme: panneaux
-  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   tags:
   - revision::v3_1
@@ -137,7 +94,7 @@
   nom: Entrée d'une zone 30
   signification: 'Entrée d''une zone 30 : 30 km/h dans toutes les rues de la zone, jusqu''au panneau de sortie B51.'
   conduite: Rouler à 30 km/h maximum ; s'attendre à des cyclistes à contresens et à des aménagements (plateaux, chicanes).
-  complement: 'Double-sens cyclable par défaut. Peut partager le support d''EB10 : vaut alors pour toute l''agglomération.'
+  complement: Double-sens cyclable par défaut.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -151,7 +108,6 @@
   nom: Sortie d'une zone 30
   signification: Fin de la zone 30 ; la vitesse redevient celle du régime général (50 km/h en agglomération).
   conduite: Reprendre 50 km/h maximum si en agglomération.
-  complement: À chaque sortie de zone.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -164,7 +120,7 @@
   nom: Entrée d'une zone de rencontre
   signification: 'Entrée d''une zone de rencontre : piétons prioritaires sur toute la chaussée, vitesse limitée à 20 km/h, stationnement sur emplacements seulement.'
   conduite: Rouler à 20 km/h maximum et céder le passage aux piétons, sans qu'ils aient à s'écarter.
-  complement: 'Double-sens cyclable par défaut. Fin : B53.'
+  complement: Double-sens cyclable par défaut.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -177,7 +133,6 @@
     commons: France road sign B53.svg
   nom: Sortie d'une zone de rencontre
   signification: Fin de la zone de rencontre ; retour aux règles générales (priorité des véhicules sur la chaussée, 50 km/h en agglomération).
-  complement: À chaque sortie de zone.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -190,7 +145,6 @@
   nom: Entrée d'une aire piétonne
   signification: 'Entrée d''une aire piétonne : zone affectée aux piétons, qui y sont prioritaires ; seuls les véhicules autorisés y circulent, à l''allure du pas.'
   conduite: Ne pas y entrer sans autorisation (panonceau) ; sinon rouler au pas, priorité absolue aux piétons.
-  complement: 'Fin : B55. Panonceau M11b1 (période) ou M11b2 (dérogations).'
   piege: 'Piège de forme : B52 et B54 sont des carrés BLEUS ; B30, B56, B58 sont blancs bordés de rouge.'
   theme: L
   sous_theme: panneaux
@@ -203,7 +157,6 @@
     commons: France road sign B55.svg
   nom: Sortie d'une aire piétonne
   signification: Fin de l'aire piétonne.
-  complement: À chaque sortie.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -216,7 +169,7 @@
   nom: Entrée d'une zone à circulation restreinte (ZFE)
   signification: 'Entrée d''une zone à faibles émissions (ZFE-m) : accès interdit aux véhicules dont la vignette Crit''Air ne figure pas parmi celles autorisées par le panonceau M11d.'
   conduite: Vérifier sa vignette Crit'Air et les horaires du panonceau ; ne pas entrer si le véhicule est concerné (68 €).
-  complement: 'Complété du panonceau M11d (catégories, jours et heures). Fin : B57.'
+  complement: Un panonceau précise les catégories, jours et heures concernés.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -228,7 +181,6 @@
     commons: France road sign B57.svg
   nom: Sortie d'une zone à circulation restreinte (ZFE)
   signification: Fin de la zone à circulation restreinte.
-  complement: À chaque sortie.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -241,7 +193,7 @@
   nom: Entrée d'une zone d'obligation d'équipements en période hivernale
   signification: Zone de montagne où, du 1er novembre au 31 mars, il faut des pneus hiver marqués 3PMSF ou détenir des chaînes pour deux roues motrices.
   conduite: 'Vérifier son équipement avant d''entrer : pneus hiver, ou chaînes/chaussettes dans le coffre.'
-  complement: 'Le marquage M+S seul ne suffit plus depuis le 1er novembre 2024. Fin : B59.'
+  complement: Le marquage M+S seul ne suffit plus depuis le 1er novembre 2024.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -256,7 +208,6 @@
     commons: France road sign B59.svg
   nom: Sortie d'une zone d'obligation d'équipements en période hivernale
   signification: Fin de la zone d'obligation d'équipements hivernaux.
-  complement: À chaque sortie.
   theme: L
   sous_theme: panneaux
   importance: utile

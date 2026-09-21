@@ -3,7 +3,8 @@
 Projet : générer `out/Code-de-la-route-2026.apkg`, un deck Anki pour réussir l'ETG (code de la route,
 permis B) tel qu'il existe en 2026. Lire `README.md` puis `docs/01-analyse-examen.md`,
 `docs/02-carte-des-connaissances.md`, `docs/03-conception-des-cartes.md`, `docs/04-sources.md`,
-`docs/10-bilan-v5.md` et `docs/11-interface-quotidienne.md` (révision actuelle). Les dossiers v1/v2 sont historiques ; ne pas réintroduire leurs formulations corrigées.
+`docs/13-bilan-v7.md` (révision actuelle), `docs/12-bilan-v6.md`, `docs/10-bilan-v5.md` et `docs/11-interface-quotidienne.md`.
+Les dossiers v1/v2 sont historiques ; ne pas réintroduire leurs formulations corrigées.
 
 ## Commandes
 
@@ -26,9 +27,13 @@ python build/yamlfix.py data/*/*.yaml   # quote les valeurs YAML contenant ': '
   Générés par `build/import_signs.py` ; **ne pas éditer à la main** : corriger `data/_meta/sign_overrides.yaml`
   (clé = id) ou `data/signs_inventory.yaml`, puis régénérer. `voyants.yaml` est écrit à la main.
 - `confusions/*.yaml` : paires à discriminer (`a`, `b` = ids de reconnaissance).
-- `faits/*.yaml` : clozes `{{c1::…}}` (≤ 4 par note). Préférer `rappels: [texte c1, texte c2]`
-  pour des cibles indépendantes ; chaque entrée cible un seul ordinal distinct. Ne pas cumuler avec `texte`.
-- `questions/*.yaml` : question → réponse courte (≤ 40 mots, ≤ 4 éléments ; `long_ok: true` pour une exception justifiée).
+- `faits/*.yaml` : clozes `{{c1::…}}` (≤ 4 par note). Les rappels de vitesse suivent le cadre « Conditions.
+  Configuration → plafond {{valeur}} ». Plusieurs cibles → `rappels: [texte c1, texte c2]`,
+  chaque entrée ciblant un seul ordinal distinct ; `texte` n'admet qu'un trou (sauf `multi_ok: true` pour
+  une relation unique) et un trou fait au plus 8 mots (sauf `long_ok: true`). Ne pas cumuler `texte` et `rappels`.
+  Une phrase à réciter ou un élément de liste à deviner devient une question ou une affirmation.
+- `questions/*.yaml` : question → réponse courte : la décision ou la valeur et sa raison décisive (≤ 30 mots, viser 10-22,
+  ≤ 4 éléments ; `long_ok: true` pour une exception justifiée) ; les nuances vont dans `explication`.
 - `affirmations/*.yaml` : `contexte` (facultatif), `affirmation`, `verdict: vrai|faux`, `pourquoi` ; fausses
   affirmations plausibles, 35-65 % de vrai par fichier, pas de mot-signal (toujours/jamais/obligatoirement/uniquement)
   dans une fausse sauf `signal_ok: true`.
@@ -43,19 +48,26 @@ python build/yamlfix.py data/*/*.yaml   # quote les valeurs YAML contenant ': '
   `build/learning.py` annote `parcours::*` / `objectif::*`, place toutes les cartes du socle avant
   l’approfondissement et produit le programme depuis le même plan que les positions exportées.
 - `data/_meta/sign_exclusions.yaml` justifie les signaux sans carte visuelle distincte et référence
-  leurs couvertures. Aucun filtre par rareté. Tout signal sélectionné doit avoir un média.
+  leurs couvertures. Pas de filtre automatique par rareté, mais un critère éditorial (v6) : un signal
+  entre s'il porte une décision de conduite ou une discrimination que l'épreuve peut demander ; les
+  variantes d'une famille apprise et les services au pictogramme transparent sont exclus. Tout signal
+  sélectionné doit avoir un média.
 - Ordre interne d’introduction des nouvelles cartes = programme calculé par `curriculum()` dans `build/build.py`
   (méthode d'abord ; phases essentiel → utile → rare ; thèmes entrelacés au prorata ; scénarios après les
   panneaux dont ils dépendent : `SCENARIO_GATES` ; `RECON_ORDER` = ordre des fichiers de signalisation).
   Le paquet embarque un préréglage d'options (id `DECK_CONFIG_ID`) qui applique cet ordre.
 - Versos de reconnaissance ≤ 90 mots ; les phrases de catégorie répétées sont retirées à l'import
-  (`BOILERPLATE` dans `build/import_signs.py`) et vivent dans des cartes de règle.
+  (`BOILERPLATE` dans `build/import_signs.py`) et vivent dans des cartes de règle. Le `complement`
+  ne cite ni codes de fin, ni panonceaux possibles, ni distances d'implantation : seulement une nuance
+  qui change la décision (corrections dans `sign_overrides.yaml`).
 
 ## Règles de rédaction
 
 - Une carte = une connaissance ; réponse courte et non ambiguë ; explication centrée sur le pourquoi,
   la limite ou la distinction utile (sa longueur doit se justifier). Pas de cartes inversées. Règle actuelle en réponse ; toute approximation explicitement nommée.
-  Ne pas prétendre connaître une ancienne réponse attendue par la banque confidentielle.
+  Ne pas prétendre connaître une ancienne réponse attendue par la banque confidentielle. Pas de mention
+  « question officielle » au recto. Pas de maxima de peine (prison, amende) dans les cartes : seuils,
+  qualification de délit et points seulement.
 - Toute valeur juridique se vérifie dans le Code de la route consolidé
   (`docs/research/sources/code_de_la_route_consolide_2026-09-10.pdf`, texte : `pdftotext -layout`).
 - Images : Commons `commons:` (nom de fichier exact), générateurs `gen:` (`build/gen_images.py`),

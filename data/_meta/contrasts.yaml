@@ -43,8 +43,6 @@
   notes:
   - s-remorque-seuil-750
   - s-remorque-seuil-800
-  - s-remorque-cas-b
-  - s-remorque-cas-b96
 - id: distances-composantes
   raison: Combiner les composantes pour comparer à l’espace disponible ; changer l’adhérence sans modifier
     arbitrairement la réaction.

@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 41 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 36 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: b0
   type: panneau
   code: B0
@@ -20,7 +20,7 @@
   nom: Sens interdit à tout véhicule
   signification: 'Interdiction de s''engager : la voie est à sens unique dans l''autre sens. Tous les véhicules, cycles compris, sauf panonceau.'
   conduite: Ne pas s'engager. Avec un panonceau M9v1/M9v2 (« sauf vélo »), les cyclistes l'empruntent à contresens.
-  complement: À l'entrée de la voie, souvent des deux côtés ; l'autre extrémité porte un C12. Double-sens cyclable par défaut sous 30 km/h.
+  complement: Dans les zones 30 et zones de rencontre, des cyclistes peuvent arriver en face (double-sens cyclable).
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -48,7 +48,7 @@
   nom: Interdiction de tourner à gauche à la prochaine intersection
   signification: Il est interdit de tourner à gauche à la prochaine intersection.
   conduite: Continuer tout droit ou tourner à droite ; ne pas tourner à gauche même si la voie paraît libre.
-  complement: Placé avant l'intersection concernée (à une distance appropriée), et non à l'endroit même.
+  complement: Vaut pour la prochaine intersection.
   piege: l'interdiction ne vaut que pour LA prochaine intersection. Rond rouge = interdiction ; rond bleu (B21) = obligation.
   theme: L
   sous_theme: panneaux
@@ -62,7 +62,7 @@
   nom: Interdiction de tourner à droite à la prochaine intersection
   signification: Il est interdit de tourner à droite à la prochaine intersection.
   conduite: Continuer tout droit ou tourner à gauche.
-  complement: Placé avant l'intersection concernée.
+  complement: Vaut pour la prochaine intersection.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -88,7 +88,6 @@
   nom: Interdiction de dépasser tous les véhicules à moteur autres que ceux à deux roues sans side-car
   signification: Interdiction de dépasser les véhicules à moteur, sauf les deux-roues motorisés sans side-car.
   conduite: Rester derrière voitures, camions, tracteurs ; on peut encore dépasser une moto solo, un cyclomoteur, un cycliste.
-  complement: 'Panonceau M2 (étendue) ou M9 « rappel ». Fin : B34, B31, ou la prochaine intersection si le panneau n''est pas répété.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -102,7 +101,6 @@
   nom: Interdiction de dépasser pour les véhicules de transport de marchandises de plus de 3,5 t
   signification: Interdiction, pour les véhicules affectés au transport de marchandises dont le PTAC ou le PTRA dépasse 3,5 t, de dépasser les véhicules à moteur autres que les deux-roues sans side-car.
   conduite: Ne concerne pas le conducteur d'une voiture ; les poids lourds doivent rester dans leur voie.
-  complement: 'Fin : B34a. Un panonceau M4f peut modifier le seuil de tonnage.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -115,20 +113,6 @@
   nom: Arrêt au poste de douane
   signification: Obligation de s'arrêter au poste de douane pour un éventuel contrôle.
   conduite: S'arrêter à hauteur du poste et attendre les instructions ; ne repartir qu'après autorisation.
-  complement: Placé avant le poste, à distance appropriée.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b5a
-  type: panneau
-  code: B5a
-  image:
-    commons: France road sign B5a.svg
-  nom: Arrêt au poste de gendarmerie
-  signification: Obligation de s'arrêter au poste de gendarmerie (barrage, contrôle).
-  conduite: S'arrêter et se conformer aux injonctions des gendarmes.
-  complement: Placé avant le poste ou le barrage.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -141,20 +125,6 @@
   nom: Arrêt au poste de police
   signification: Obligation de s'arrêter au poste de police (barrage, contrôle).
   conduite: S'arrêter et se conformer aux injonctions des policiers.
-  complement: Placé avant le poste ou le barrage.
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b5c
-  type: panneau
-  code: B5c
-  image:
-    commons: France road sign B5c2.svg
-  nom: Arrêt au poste de péage
-  signification: Obligation de s'arrêter au poste de péage (barrière) pour prendre un ticket ou payer.
-  conduite: Ralentir fortement, choisir sa voie selon le mode de paiement (C64), s'arrêter à la barrière.
-  complement: Placé avant la gare de péage.
   theme: L
   sous_theme: panneaux
   importance: utile
@@ -167,7 +137,6 @@
   nom: Stationnement interdit
   signification: Stationnement interdit du côté du panneau, jusqu'à la prochaine intersection. L'arrêt reste autorisé.
   conduite: Ne pas stationner ; on peut s'arrêter pour déposer un passager ou charger rapidement.
-  complement: 'Panonceaux M8 (début/fin/rappel), M6a « gênant », M6b (jours), M4 (catégories). Fin : prochaine intersection ou M8b ; en zone B6b1, le B50a.'
   piege: 1 barre = stationnement interdit ; 2 barres en croix (B6d) = arrêt ET stationnement interdits. B31 n'y met pas fin.
   theme: L
   sous_theme: panneaux
@@ -208,7 +177,6 @@
   nom: Arrêt et stationnement interdits
   signification: Interdiction de s'arrêter et de stationner du côté du panneau, jusqu'à la prochaine intersection (sauf panonceau). Même une immobilisation brève est interdite (hors nécessité absolue).
   conduite: Ne pas s'immobiliser, même pour déposer quelqu'un ; continuer.
-  complement: 'Panonceaux M8 et M6a (« gênant » : fourrière). Fin : prochaine intersection ou M8b.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -300,17 +268,6 @@
   theme: L
   sous_theme: panneaux
   importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b9e
-  type: panneau
-  code: B9e
-  image:
-    commons: France road sign B9e.svg
-  nom: Accès interdit aux voitures à bras
-  signification: Interdiction d'accès aux voitures à bras (charrettes poussées ou tirées à la main), à l'exclusion des poussettes, voitures d'enfants et fauteuils roulants (article R412-34).
-  theme: L
-  sous_theme: panneaux
-  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: b9f
   type: panneau
@@ -426,7 +383,7 @@
   nom: Limitation de vitesse
   signification: Interdiction de dépasser la vitesse indiquée, à partir du panneau.
   conduite: Être déjà à cette vitesse au niveau du panneau ; c'est un maximum, pas une consigne.
-  complement: 'Fin : B33, B31, prochaine intersection ou nouveau B14. Posée sur un panneau de danger (A2b + 30), elle ne vaut que pour ce danger.'
+  complement: Posée sur un panneau de danger, elle ne vaut que pour ce danger.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -440,7 +397,7 @@
   nom: Cédez le passage à la circulation venant en sens inverse
   signification: 'Dans un passage étroit, céder le passage aux véhicules venant en sens inverse : la priorité est à ceux d''en face.'
   conduite: Ralentir, s'arrêter avant le rétrécissement si un véhicule arrive en face, et ne s'engager que lorsque la voie est libre.
-  complement: À l'entrée du passage étroit, côté non prioritaire ; en face, le C18.
+  complement: Côté non prioritaire ; en face, le C18.
   piege: 'La flèche ROUGE désigne toujours celui qui cède : sur B15 elle est à droite, c''est moi.'
   theme: L
   sous_theme: panneaux
@@ -454,7 +411,7 @@
   nom: Signaux sonores interdits
   signification: Interdiction d'utiliser l'avertisseur sonore (klaxon), sauf danger immédiat (l'usage en cas de danger reste toujours autorisé).
   conduite: Ne pas klaxonner ; de nuit, avertir par appel de phares.
-  complement: 'Fin : B35. Hors panneau, le klaxon est interdit en agglomération sauf danger immédiat (R416-1) ; de nuit, on avertit par appels de phares, le klaxon n''étant admis qu''en cas d''absolue nécessité (R416-2).'
+  complement: Hors panneau, le klaxon est interdit en agglomération sauf danger immédiat ; de nuit, avertir par appels de phares.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -468,28 +425,6 @@
   signification: 'Interdiction aux véhicules de circuler sans maintenir entre eux un intervalle au moins égal à la distance indiquée (ex. 70 m) : tunnels, ponts, cols.'
   conduite: Maintenir la distance indiquée avec le véhicule qui précède ; s'aider des repères au sol (chevrons, plots) quand ils existent.
   piege: 'Fréquent à l''entrée des tunnels (ex. Mont-Blanc : 150 m). Ne pas confondre avec B14 (vitesse).'
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b18a
-  type: panneau
-  code: B18a
-  image:
-    commons: France road sign B18a.svg
-  nom: Accès interdit aux véhicules transportant des marchandises explosives ou facilement inflammables
-  signification: Interdiction d'accès aux véhicules transportant des marchandises explosives ou facilement inflammables (signalés comme tels).
-  theme: L
-  sous_theme: panneaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: b18b
-  type: panneau
-  code: B18b
-  image:
-    commons: France road sign B18b.svg
-  nom: Accès interdit aux véhicules transportant des marchandises susceptibles de polluer les eaux
-  signification: Interdiction d'accès aux véhicules transportant des marchandises de nature à polluer les eaux (zones de captage, bords de lacs).
   theme: L
   sous_theme: panneaux
   importance: utile

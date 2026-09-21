@@ -1,9 +1,9 @@
 - id: l-vitesse-agglo
-  texte: En agglomération, la vitesse maximale par défaut est de {{c1::50 km/h}} — dès le panneau d'entrée
-    d'agglomération (EB10), jusqu'au panneau de sortie (EB20).
-  explication: 'Une autorité locale peut abaisser la limite. Le relèvement à 70 exige notamment des accès riverains
-    et traversées piétonnes en nombre limité et protégés. Zone 30 : 30 ; zone de rencontre : 20 ; aire piétonne
-    : allure du pas, sans seuil légal universel de 6 km/h.'
+  texte: En agglomération, la vitesse maximale par défaut est de {{c1::50 km/h}} — dès le panneau d'entrée d'agglomération
+    (EB10), jusqu'au panneau de sortie (EB20).
+  explication: 'Une autorité locale peut abaisser la limite. Le relèvement à 70 exige notamment des accès riverains et traversées
+    piétonnes en nombre limité et protégés. Zone 30 : 30 ; zone de rencontre : 20 ; aire piétonne : allure du pas, sans seuil
+    légal universel de 6 km/h.'
   theme: L
   sous_theme: vitesse
   source: R413-3 et R110-2 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
@@ -12,8 +12,8 @@
 - id: l-vitesse-hors-agglo
   dedup_ok:
   - aff-l-90-departement
-  explication: 'Les sections à au moins deux voies dans un même sens ont un régime particulier à 90 sur ces
-    voies. Pluie et permis probatoire : 80. Une limitation plus basse prévaut.'
+  explication: 'Les sections à au moins deux voies dans un même sens ont un régime particulier à 90 sur ces voies. Pluie et
+    permis probatoire : 80. Une limitation locale plus basse prévaut toujours.'
   theme: L
   sous_theme: vitesse
   source: Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
@@ -21,28 +21,27 @@
   - revision::v3
   - revision::v4
   rappels:
-  - 'Voiture, permis hors probatoire, temps sec : sur route hors agglomération à double sens, une voie par
-    sens, sans séparateur ni relèvement signalé, le plafond est {{c1::80 km/h}}.'
-  - 'Voiture, permis hors probatoire, temps sec : sur route hors agglomération à double sens, une voie par
-    sens, le plafond peut être relevé et signalé à {{c2::90 km/h}}.'
+  - Temps sec, voiture, permis définitif. Route hors agglomération à double sens, sans séparateur central ni relèvement signalé
+    → plafond {{c1::80 km/h}}.
+  - 'Temps sec, voiture, permis définitif. Route hors agglomération à double sens sans séparateur central : le plafond peut
+    être relevé et signalé à {{c2::90 km/h}}.'
 - id: l-vitesse-separateur-autoroute
-  explication: 'Le terre-plein central sépare deux chaussées ; le nombre de voies ne suffit pas. Le panneau
-    C107 réglemente l’accès : il ne fixe pas à lui seul 110 km/h. Lire la configuration, les panneaux et les
-    conditions.'
+  explication: 'Le terre-plein central sépare deux chaussées ; le nombre de voies ne suffit pas. Le panneau C107 réglemente
+    l’accès : il ne fixe pas à lui seul 110 km/h. Une limitation locale plus basse prévaut ; lire la configuration, les panneaux
+    et les conditions.'
   theme: L
   sous_theme: vitesse
   source: R413-2 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
   rappels:
-  - 'Voiture, temps sec, permis hors probatoire, hors agglomération, sans limite locale plus basse : sur une
-    route à deux chaussées séparées par terre-plein central, le plafond est {{c1::110 km/h}}.'
-  - 'Voiture, temps sec, permis hors probatoire et sans limite locale plus basse : sur autoroute, le plafond
-    général est {{c2::130 km/h}}.'
+  - Temps sec, voiture, permis définitif, hors agglomération. Route à deux chaussées séparées par un terre-plein central →
+    plafond {{c1::110 km/h}}.
+  - Temps sec, voiture, permis définitif. Autoroute → plafond général {{c2::130 km/h}}.
   tags:
   - revision::v4
   - revision::v5
 - id: l-vitesse-pluie
-  explication: 'Les limites locales plus basses restent applicables : 80 reste 80, 70 reste 70. En ville, 50
-    par défaut. Visibilité inférieure à 50 m : plafond de 50 km/h, sans relever une limite à 30.'
+  explication: 'Les limites locales plus basses restent applicables : 80 reste 80, 70 reste 70. En ville, 50 par défaut. Visibilité
+    inférieure à 50 m : plafond de 50 km/h, sans relever une limite à 30.'
   theme: L
   sous_theme: vitesse
   source: Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
@@ -50,29 +49,27 @@
   - revision::v3
   - revision::v4
   rappels:
-  - 'Voiture, hors probatoire, sous la pluie, visibilité d’au moins 50 m : autoroute normalement à 130, sans
-    limite locale plus basse, plafond {{c1::110 km/h}}.'
-  - 'Voiture, hors probatoire, sous la pluie, visibilité d’au moins 50 m : autoroute normalement à 110 ou route
-    à chaussées séparées, sans limite locale plus basse, plafond {{c2::100 km/h}}.'
-  - 'Voiture, hors probatoire, sous la pluie : route hors agglomération à double sens sans séparateur, normalement
-    à 90, sans autre restriction, plafond {{c3::80 km/h}}.'
+  - Pluie, voiture, permis définitif. Autoroute (130 par temps sec) → plafond {{c1::110 km/h}}.
+  - Pluie, voiture, permis définitif. Autoroute limitée à 110, ou route à chaussées séparées (110 par temps sec) → plafond
+    {{c2::100 km/h}}.
+  - Pluie, voiture, permis définitif. Route à double sens sans séparateur, relevée à 90 par temps sec → plafond {{c3::80 km/h}}.
 - id: l-vitesse-visibilite-50
-  explication: R413-4 fixe un plafond de vitesse, pas un intervalle universel de 50 m. Garder au moins deux
-    secondes et augmenter la marge selon les conditions ; rester capable de s’arrêter dans la distance visible.
-    Le seuil légal est une visibilité inférieure à 50 m.
+  explication: R413-4 fixe un plafond de vitesse, pas un intervalle universel de 50 m. Garder au moins deux secondes et augmenter
+    la marge selon les conditions ; rester capable de s’arrêter dans la distance visible. Le seuil légal est une visibilité
+    inférieure à 50 m.
   theme: L
   sous_theme: vitesse
   source: R413-4 ; R412-12 ; R413-17 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
   rappels:
   - Le plafond spécial lié à une visibilité très réduite s’applique quand on voit à moins de {{c1::50 m}}.
-  - 'Visibilité inférieure à 50 m : sur autoroute comme sur les autres réseaux, plafond {{c2::50 km/h}}, sans
-    relever une limite plus basse et en ralentissant davantage si nécessaire.'
+  - 'Visibilité inférieure à 50 m : sur autoroute comme sur les autres réseaux, plafond {{c2::50 km/h}}, sans relever une
+    limite plus basse et en ralentissant davantage si nécessaire.'
   tags:
   - revision::v4
   - revision::v5
 - id: l-vitesse-probatoire
-  explication: 'Une limitation locale plus basse reste applicable. Pluie et permis probatoire ne se cumulent
-    pas par soustractions : appliquer le plafond le plus bas qui concerne la situation.'
+  explication: 'Une limitation locale plus basse reste applicable. Pluie et permis probatoire ne se cumulent pas par soustractions
+    : appliquer le plafond le plus bas qui concerne la situation (sous la pluie, l’autoroute est à 110 pour tous).'
   theme: L
   sous_theme: vitesse
   source: Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
@@ -80,110 +77,106 @@
   - revision::v3
   - revision::v4
   rappels:
-  - 'Élève ou permis probatoire, temps sec et sans limite locale plus basse : autoroute normalement à 130,
-    plafond {{c1::110 km/h}}.'
-  - 'Élève ou permis probatoire, temps sec et sans limite locale plus basse : autoroute normalement à 110 ou
-    route à chaussées séparées, plafond {{c2::100 km/h}}.'
-  - 'Élève ou permis probatoire, route hors agglomération à double sens sans séparateur, normalement à 90 :
-    plafond {{c3::80 km/h}}.'
+  - Temps sec, élève ou permis probatoire. Autoroute (130 pour les autres) → plafond {{c1::110 km/h}}.
+  - Temps sec, élève ou permis probatoire. Autoroute limitée à 110, ou route à chaussées séparées (110 pour les autres) →
+    plafond {{c2::100 km/h}}.
+  - Élève ou permis probatoire. Route à double sens sans séparateur, relevée à 90 pour les autres → plafond {{c3::80 km/h}}.
 - id: l-vitesse-minimale-autoroute
-  texte: Sur autoroute, par circulation fluide et bonnes conditions, la vitesse minimale sur la voie la plus
-    à gauche est de {{c1::80 km/h}} ; circuler sans raison à une vitesse anormalement réduite est sanctionné
+  texte: Sur autoroute, par circulation fluide et bonnes conditions, la vitesse minimale sur la voie la plus à gauche est
+    de {{c1::80 km/h}}.
+  explication: Ce minimum ne s'applique que sur la voie la plus à gauche et dans les conditions indiquées ; il n'autorise
+    pas à maintenir 80 face à un danger. Ailleurs, circuler sans raison à une vitesse anormalement réduite est aussi sanctionné
     (35 €).
-  explication: Ce minimum ne s’applique que sur la voie la plus à gauche et dans les conditions indiquées.
-    Il n’autorise pas à maintenir 80 face à un danger. Ailleurs, ne pas gêner sans raison par une vitesse anormalement
-    réduite.
   theme: L
   sous_theme: vitesse
   source: R413-19 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
   tags:
   - revision::v5
 - id: l-vitesse-engins
-  texte: 'Vitesses maximales par construction : EDPM {{c1::25 km/h}} ; cyclomoteur et voiturette légère {{c2::45
-    km/h}}. Sur un VAE conforme, l’assistance se coupe à {{c1::25 km/h}}, mais on peut pédaler plus vite.'
-  explication: 'Un VAE conforme coupe seulement son assistance à 25 km/h : pédaler ou descendre plus vite ne le
-    transforme pas en cyclomoteur. Une assistance débridée change en revanche sa conformité.'
+  explication: 'Un EDPM est bridé à 25 km/h (voir la carte dédiée). Sur un VAE conforme, l’assistance se coupe à 25 km/h mais
+    on peut pédaler plus vite : ce n’est pas un cyclomoteur. Une assistance débridée change sa conformité.'
   theme: L
   sous_theme: vitesse
   importance: utile
   source: Code de la route, art. R311-1
   tags:
-  - revision::v3
+  - revision::v6
+  rappels:
+  - 'Vitesse maximale par construction d’un cyclomoteur ou d’une voiturette (quadricycle léger) : {{c1::45 km/h}}.'
 - id: l-vitesse-peripherique
-  texte: Le boulevard périphérique de Paris est limité à {{c1::50 km/h}} depuis le 1er octobre 2024 (auparavant 70 km/h, valeur que le Code de la route mentionne encore).
-  explication: Mesure municipale (arrêté de la Ville de Paris). Sa voie de gauche est réservée au covoiturage (losange lumineux) aux heures de pointe depuis mars 2025.
+  texte: Le boulevard périphérique de Paris est limité à {{c1::50 km/h}} depuis le 1er octobre 2024 (auparavant 70 km/h, valeur
+    que le Code de la route mentionne encore).
+  explication: Mesure municipale (arrêté de la Ville de Paris). Sa voie de gauche est réservée au covoiturage (losange lumineux)
+    aux heures de pointe depuis mars 2025.
   theme: L
   sous_theme: vitesse
   importance: rare
   source: Arrêté Ville de Paris n° 2024 P 15981 ; Code de la route, art. R413-3
 - id: l-stationnement-categories
-  explication: Gênant, très gênant et abusif ne retirent pas de points à eux seuls ; le stationnement dangereux,
-    si. Fourrière possible. Pour décider où s’arrêter, lire les lieux et les panneaux avant de penser au montant
-    de l’amende.
+  explication: Gênant, très gênant et abusif ne retirent pas de points à eux seuls ; le stationnement dangereux, si. Fourrière
+    possible. Pour décider où s’arrêter, lire les lieux et les panneaux avant de penser au montant de l’amende.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-9 à R417-12 ; service-public.fr F34212
   rappels:
-  - 'Arrêt ou stationnement dangereux par visibilité insuffisante : retrait de {{c1::3 points}}, en plus de
-    l’amende.'
-  - Sauf délai local plus court, laisser un véhicule au même endroit plus de {{c2::7 jours consécutifs}} constitue
-    un stationnement abusif.
+  - 'Arrêt ou stationnement dangereux par visibilité insuffisante : retrait de {{c1::3 points}}, en plus de l’amende.'
+  - Sauf délai local plus court, laisser un véhicule au même endroit plus de {{c2::7 jours consécutifs}} constitue un stationnement
+    abusif.
   tags:
   - revision::v5
 - id: l-stationnement-5m-passage
   dedup_ok:
   - aff-l-5m-passage
-  texte: Pour une voiture, arrêt et stationnement interdits sur un passage piéton et dans les {{c1::5 m}} en amont
-    ; en 2026, une exception subsiste en amont pour les emplacements matérialisés à cet effet.
-  explication: Les places matérialisées existant dans ces 5 m sont tolérées jusqu'au 31 décembre 2026 ; à partir
-    du 1er janvier 2027, l'exception disparaît (loi LOM).
+  texte: Pour une voiture, arrêt et stationnement sont interdits sur un passage piéton et dans les {{c1::5 m}} en amont (emplacements
+    matérialisés tolérés jusqu'à fin 2026).
+  explication: Les places matérialisées existant dans ces 5 m sont tolérées jusqu'au 31 décembre 2026 ; à partir du 1er janvier
+    2027, l'exception disparaît (loi LOM).
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-11 ; Code de la voirie routière, art. L118-5-1
   tags:
   - revision::v3_1
 - id: l-stationnement-alterne
-  explication: 'Piège : le changement a lieu le soir (20 h 30), pas le matin. Signalé par les panneaux B6a2
-    (stationnement interdit du 1er au 15 : posé côté des numéros pairs) et B6a3 (interdit du 16 à la fin du
-    mois : côté impair), ou par le panneau de zone B6b2.'
+  explication: 'Piège : le changement a lieu le soir (20 h 30), pas le matin. Signalé par les panneaux B6a2 (stationnement
+    interdit du 1er au 15 : posé côté des numéros pairs) et B6a3 (interdit du 16 à la fin du mois : côté impair), ou par le
+    panneau de zone B6b2.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-2
   rappels:
   - 'Stationnement unilatéral alterné semi-mensuel : du 1er au 15 du mois, côté des numéros {{c1::impairs}}.'
   - 'Stationnement unilatéral alterné semi-mensuel : du 16 au dernier jour du mois, côté des numéros {{c2::pairs}}.'
-  - 'Stationnement unilatéral alterné semi-mensuel : le dernier jour de chaque période, changement de côté
-    entre {{c3::20 h 30 et 21 h}}.'
+  - 'Stationnement unilatéral alterné semi-mensuel : le dernier jour de chaque période, changement de côté entre {{c3::20
+    h 30 et 21 h}}.'
   tags:
   - revision::v4
 - id: l-stationnement-cote
-  explication: 'Stationner à contresens (côté gauche d''une rue à double sens) est un stationnement gênant
-    (35 €) et dangereux la nuit (feux non visibles). La nuit sur chaussée non éclairée : feux de position allumés.'
+  explication: 'Stationner à contresens (côté gauche d''une rue à double sens) est un stationnement gênant (35 €) et dangereux
+    la nuit (feux non visibles). La nuit sur chaussée non éclairée : feux de position allumés.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-1, R417-4 et R416-12
   rappels:
   - 'Rue à double sens en agglomération : stationner du côté {{c1::droit}} dans son sens de circulation.'
-  - Hors agglomération, stationner autant que possible {{c2::hors de la chaussée}}, sans créer de danger ni
-    enfreindre une autre interdiction.
+  - Hors agglomération, stationner autant que possible {{c2::hors de la chaussée}}, sans créer de danger ni enfreindre une
+    autre interdiction.
   tags:
   - revision::v4
 - id: l-zone-bleue
-  texte: En zone bleue, j’indique sur le disque mon heure {{c1::d’arrivée}} ; la durée autorisée se lit sur
-    la signalisation locale.
-  explication: Ne pas présumer une durée nationale de 1 h 30. Respecter horaires et durée indiqués ; le disque
-    n’autorise pas à dépasser cette durée en le déplaçant.
+  texte: En zone bleue, j’indique sur le disque mon heure {{c1::d’arrivée}} ; la durée autorisée se lit sur la signalisation
+    locale.
+  explication: Ne pas présumer une durée nationale de 1 h 30. Respecter horaires et durée indiqués ; le disque n’autorise
+    pas à dépasser cette durée en le déplaçant.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-3 ; service-public.fr F34440
   tags:
   - revision::v5
 - id: l-feux-detresse-usage
-  texte: À l’approche d’un fort ralentissement, le {{c1::dernier véhicule de la file}} doit utiliser les feux
-    de détresse pour avertir ceux qui arrivent.
-  explication: 'R416-18 : conducteur momentanément contraint à une allure fortement réduite ; en file ininterrompue,
-    obligation limitée au dernier véhicule. Les warnings présignalent aussi une immobilisation dangereuse,
-    mais n’autorisent pas le stationnement.'
+  texte: À l’approche d’un fort ralentissement, le {{c1::dernier véhicule de la file}} doit utiliser les feux de détresse
+    pour avertir ceux qui arrivent.
+  explication: 'R416-18 : conducteur momentanément contraint à une allure fortement réduite ; en file ininterrompue, obligation
+    limitée au dernier véhicule. Les warnings présignalent aussi une immobilisation dangereuse, mais n’autorisent pas le stationnement.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R416-18 et R416-19
@@ -191,9 +184,9 @@
   - revision::v4
   - revision::v5
 - id: l-depassement-laterale
-  explication: 'Ces écarts protègent aussi les autres usagers mentionnés par R414-4 : piétons, cavaliers, animaux,
-    deux ou trois-roues. L’exception de chevauchement d’une ligne continue concerne les cycles, EDPM et cyclomobiles
-    légers ; ne pas l’étendre à tous ces usagers.'
+  explication: 'Ces écarts protègent aussi les autres usagers mentionnés par R414-4 : piétons, cavaliers, animaux, deux ou
+    trois-roues. L’exception de chevauchement d’une ligne continue concerne les cycles, EDPM et cyclomobiles légers ; ne pas
+    l’étendre à tous ces usagers.'
   theme: L
   sous_theme: depassement
   source: Code de la route, R414-4 et R412-19 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/
@@ -203,9 +196,8 @@
   tags:
   - revision::v4
 - id: l-ligne-continue-sanction
-  explication: 'Hors exception légale : franchissement, 3 points ; chevauchement, 1 point ; amende forfaitaire
-    de 135 €. Ne pas confondre les deux gestes pour appliquer l’exception de dépassement des cycles, EDPM et
-    cyclomobiles légers.'
+  explication: 'Hors exception légale : franchissement, 3 points ; chevauchement, 1 point ; amende forfaitaire de 135 €. Ne
+    pas confondre les deux gestes pour appliquer l’exception de dépassement des cycles, EDPM et cyclomobiles légers.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-18 à R412-20
@@ -215,19 +207,24 @@
   tags:
   - revision::v4
 - id: l-croisement-largeur
-  texte: 'Sur chaussée étroite, un véhicule de plus de {{c1::2 m}} de large ou {{c2::7 m}} de long facilite le croisement
-    avec un plus petit (exception : transport en commun en ville). En montagne, le {{c3::descendant}} s’arrête le
-    premier.'
-  explication: 'S’arrêter et reculer sont deux questions différentes. Pour reculer : véhicule seul avant ensemble,
-    léger avant lourd ; à catégorie égale, descendant sauf si le refuge est plus accessible au montant.'
+  explication: 'Exception : les transports en commun en agglomération. En montagne, c’est le descendant qui s’arrête le premier
+    ; pour reculer : véhicule seul avant ensemble, léger avant lourd, puis descendant sauf si le refuge est plus accessible
+    au montant.'
   theme: L
   sous_theme: croisement
   source: Code de la route, R414-2 et R414-3
   tags:
-  - revision::v3
+  - revision::v6
+  rappels:
+  - Sur chaussée étroite, un véhicule de plus de {{c1::2 m}} de large (ou de plus de 7 m de long) doit faciliter le croisement
+    avec un plus petit.
+  - Sur chaussée étroite, un véhicule de plus de {{c2::7 m}} de long (ou de plus de 2 m de large) doit faciliter le croisement
+    avec un plus petit.
 - id: l-depasse-serrer-droite
-  texte: Quand on est dépassé, on serre à droite sans accélérer ; accélérer pendant qu'on est dépassé coûte 135 € et {{c1::2 points}}.
-  explication: Le dépassement se fait à gauche, sauf pour dépasser un véhicule qui a signalé qu'il tourne à gauche, ou un tramway (par la droite si la place suffit).
+  texte: Quand on est dépassé, on serre à droite sans accélérer ; accélérer pendant qu'on est dépassé coûte 135 € et {{c1::2
+    points}}.
+  explication: Le dépassement se fait à gauche, sauf pour dépasser un véhicule qui a signalé qu'il tourne à gauche, ou un
+    tramway (par la droite si la place suffit).
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-6 et R414-16
@@ -235,24 +232,23 @@
   dedup_ok:
   - aff-l-implantation-agglo-50
   - aff-r-descente-150m
-  explication: Ce sont des distances usuelles d’implantation, pas des mesures de la scène. Le panonceau de
-    distance indique l’éloignement réel annoncé ; un panonceau d’étendue décrit la longueur concernée. Cas
-    particuliers selon le signal et la configuration.
+  explication: Ce sont des distances usuelles d’implantation, pas des mesures de la scène. Le panonceau de distance indique
+    l’éloignement réel annoncé ; un panonceau d’étendue décrit la longueur concernée. Cas particuliers selon le signal et
+    la configuration.
   theme: L
   sous_theme: signalisation
   source: IISR 2e partie, art. 28 ; Sécurité routière — Exemples de nouvelles questions (Q18, Q19)
   rappels:
-  - Hors agglomération, sans panonceau de distance, un panneau de danger est généralement placé à environ {{c1::150
-    m}} du danger.
-  - En agglomération, sans panonceau de distance, un panneau de danger est généralement placé à environ {{c2::50
-    m}} du danger.
+  - Hors agglomération, sans panonceau de distance, un panneau de danger est généralement placé à environ {{c1::150 m}} du
+    danger.
+  - En agglomération, sans panonceau de distance, un panneau de danger est généralement placé à environ {{c2::50 m}} du danger.
   tags:
   - revision::v4
 - id: l-balises-j10
   dedup_ok:
   - aff-r-pn-150m
-  explication: 'Elles n''existent pas toujours en agglomération. Croix de Saint-André simple (G1) = une voie
-    ; double (G1 bis) = plusieurs voies : un train peut en cacher un autre.'
+  explication: 'Elles n''existent pas toujours en agglomération. Croix de Saint-André simple (G1) = une voie ; double (G1
+    bis) = plusieurs voies : un train peut en cacher un autre.'
   theme: L
   sous_theme: signalisation
   source: IISR 2e partie, art. 28 et 34
@@ -263,18 +259,25 @@
   tags:
   - revision::v4
 - id: l-passage-pieton-50m
-  texte: Un piéton doit emprunter le passage piéton s'il en existe un à moins de {{c1::50 m}} ; le conducteur doit céder le passage au piéton {{c2::engagé}} ou qui manifeste clairement l'intention de traverser (135 €, {{c3::6 points}}).
-  explication: Dans une aire piétonne ou une zone de rencontre, le piéton est prioritaire partout. Ne jamais s'arrêter sur le passage ni dépasser un véhicule arrêté devant un passage piéton.
+  texte: Un piéton doit emprunter le passage piéton s’il en existe un à moins de {{c1::50 m}} ; au-delà, il peut traverser
+    ailleurs, et le conducteur doit lui céder le passage.
+  explication: Je cède au piéton engagé ou qui manifeste clairement l’intention de traverser (135 €, 6 points). Dans une aire
+    piétonne ou une zone de rencontre, le piéton est prioritaire partout. Ne jamais s’arrêter sur le passage ni dépasser un
+    véhicule arrêté devant.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R412-37 et R415-11
+  tags:
+  - revision::v6
 - id: l-signalisation-hierarchie
-  texte: Les ordres de l’{{c1::agent}} prévalent. Les {{c2::feux}} remplacent les panneaux réglant la priorité,
-    pas les autres interdictions. En cas de conflit, la signalisation {{c3::temporaire}} remplace la permanente.
-  explication: Un feu vert ne permet ni un sens interdit ni le franchissement d’une ligne continue. Éviter la fausse
-    hiérarchie « tous les panneaux > tous les marquages ».
+  explication: Un feu vert ne permet ni un sens interdit ni le franchissement d’une ligne continue. Éviter la fausse hiérarchie
+    « tous les panneaux > tous les marquages ».
   theme: L
   sous_theme: signalisation
   source: Code de la route, R411-25 et R411-28 ; IISR, 8e partie — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087
   tags:
-  - revision::v3
+  - revision::v6
+  rappels:
+  - Les ordres de l’{{c1::agent}} qui règle la circulation prévalent sur les feux et les panneaux.
+  - Les {{c2::feux}} en fonctionnement prévalent sur les panneaux qui règlent la priorité, pas sur les autres interdictions.
+  - En cas de contradiction, la signalisation {{c3::temporaire}} (jaune) prévaut sur la signalisation permanente.

@@ -7,7 +7,6 @@
   nom: Intersection où s'applique la priorité à droite
   signification: 'Annonce une intersection où s''applique la priorité à droite : je cède aux véhicules venant de ma droite.'
   conduite: Ralentir, contrôler à droite et céder le passage ; ne pas compter sur sa propre priorité.
-  complement: 'Signal avancé : environ 150 m avant l''intersection hors agglomération, 0 à 30 m en agglomération.'
   piege: 'Le panneau ne crée pas la règle, il la rappelle : la priorité à droite s''applique aussi sans panneau.'
   theme: L
   sous_theme: panneaux
@@ -21,7 +20,6 @@
   nom: Intersection avec une route non prioritaire (priorité ponctuelle)
   signification: Annonce une intersection où je suis prioritaire sur les routes transversales, pour cette intersection seulement.
   conduite: 'Continuer sans ralentir inutilement, mais rester vigilant : un usager peut griller son STOP.'
-  complement: 'Signal avancé : environ 150 m avant l''intersection hors agglomération, 0 à 30 m en agglomération. Panonceau M7 possible.'
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -35,7 +33,7 @@
   nom: Cédez le passage
   signification: À l'intersection, céder le passage aux véhicules circulant sur la route croisée ou rejointe, sans obligation de s'arrêter.
   conduite: Ralentir, contrôler, s'arrêter à la ligne discontinue si nécessaire, et ne s'engager qu'en sécurité.
-  complement: À hauteur de l'intersection, au niveau de la ligne discontinue T'2 (obligatoire). Aussi en fin de voie d'insertion et aux entrées de giratoire.
+  complement: Se trouve aussi en fin de voie d’insertion et aux entrées de giratoire.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -49,7 +47,6 @@
   nom: Signal avancé de cédez-le-passage
   signification: Annonce un cédez-le-passage (AB3a) situé à la distance indiquée par le panonceau M1 (le plus souvent 150 m).
   conduite: Ralentir progressivement, se préparer à céder le passage à l'intersection annoncée.
-  complement: Environ 150 m avant l'intersection hors agglomération (répété à mi-distance si placé à plus de 200 m). Distance sur panonceau M1.
   piege: AB3b = AB3a + panonceau de distance M1. Ne pas confondre avec AB5 (STOP à 150 m, panonceau M5).
   theme: L
   sous_theme: panneaux
@@ -79,7 +76,6 @@
   nom: Signal avancé de STOP
   signification: Annonce un panneau STOP (AB4) situé à la distance indiquée par le panonceau M5 (le plus souvent 150 m).
   conduite: Ralentir, se préparer à marquer l'arrêt à l'intersection annoncée.
-  complement: Environ 150 m avant le STOP hors agglomération ; distance portée par le panonceau M5.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -93,7 +89,6 @@
   nom: Route à caractère prioritaire
   signification: 'La route suivie est prioritaire : à toutes les intersections jusqu''au panneau AB7, les routes transversales cèdent le passage.'
   conduite: Continuer sans ralentir inutilement ; céder quand même aux piétons, tramways et véhicules prioritaires en intervention.
-  complement: 'Au début de la route prioritaire, rappelé après les intersections importantes et à l''entrée d''agglomération. Fin : AB7.'
   piege: 'Un STOP ou un cédez-le-passage rencontré ensuite l''emporte : le panneau le plus récent s''applique.'
   theme: L
   sous_theme: panneaux
@@ -107,7 +102,6 @@
   nom: Fin de route à caractère prioritaire
   signification: Indique la fin du caractère prioritaire de la route ; à partir de là, sauf signalisation contraire, la règle générale de la priorité à droite s'applique.
   conduite: 'Redoubler de vigilance aux intersections suivantes : céder le passage aux véhicules venant de droite en l''absence de signalisation.'
-  complement: Implanté à l'endroit où cesse le caractère prioritaire ; souvent à l'entrée d'agglomération, sur le même support qu'EB10.
   theme: L
   sous_theme: panneaux
   importance: essentiel
@@ -120,7 +114,6 @@
   nom: Carrefour à sens giratoire
   signification: 'Annonce un carrefour à sens giratoire : les usagers déjà engagés dans l''anneau sont prioritaires.'
   conduite: Ralentir, céder le passage à l'anneau, clignotant gauche si je dépasse la moitié, clignotant droit avant de sortir.
-  complement: Signal avancé 150 m avant hors agglomération ; en position, AB3a et ligne discontinue à chaque entrée.
   piege: Carrefour à sens giratoire (AB25 + AB3a) = priorité à l'anneau ; rond-point sans cédez-le-passage = priorité à droite, celui qui entre passe.
   theme: L
   sous_theme: panneaux

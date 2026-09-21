@@ -1,48 +1,42 @@
 - id: r-train-distance-arret
-  texte: 'Ordre de grandeur SNCF : un train lancé à 100 km/h peut avoir besoin d’environ {{c1::1 km}} pour
-    s’arrêter.'
-  explication: 'Ce n’est pas une garantie de freinage pour tout train. Il ne peut pas s’écarter : respecter
-    les signaux et vérifier qu’on peut dégager entièrement les rails avant de s’engager.'
+  texte: 'Ordre de grandeur SNCF : un train lancé à 100 km/h peut avoir besoin d’environ {{c1::1 km}} pour s’arrêter.'
+  explication: 'Ce n’est pas une garantie de freinage pour tout train. Il ne peut pas s’écarter : respecter les
+    signaux et vérifier qu’on peut dégager entièrement les rails avant de s’engager.'
   theme: R
   sous_theme: passages_a_niveau
   source: SNCF Réseau — Sécurité aux passages à niveau ; securite-routiere.gouv.fr — Passage à niveau
   tags:
   - revision::v4
-- id: r-neige-adherence
-  texte: Sur neige, l’adhérence est {{c1::réduite et variable}}. Du verglas peut exister même si le thermomètre
-    de l’air indique {{c2::une température positive}}.
-  explication: 'Le revêtement peut être plus froid que l’air : prudence sur ponts et zones ombragées. Aucun rapport
-    fixe d’adhérence ni seuil affiché ne garantit l’absence de glace.'
-  theme: R
-  sous_theme: intemperies
-  source: Codes Rousseau — Neige et brouillard ; En Voiture Simone — Le verglas
-  tags:
-  - revision::v3_1
 - id: r-loi-montagne-periode
-  texte: Dans les communes concernées par l’obligation saisonnière d’équipements hiver, la période annuelle
-    est du {{c1::1er novembre au 31 mars}}.
-  explication: 'Pour une voiture : quatre pneus hiver admis (3PMSF) ou dispositifs antidérapants amovibles
-    pour au moins deux roues motrices. Les panneaux B58/B59 bornent la zone ; un B26 peut imposer une mise
-    en service locale. Lire ses compléments.'
+  texte: Dans les communes concernées par l’obligation saisonnière d’équipements hiver, la période annuelle est
+    du {{c1::1er novembre au 31 mars}}.
+  explication: 'Pour une voiture : quatre pneus hiver admis (3PMSF) ou dispositifs antidérapants amovibles pour
+    au moins deux roues motrices. Les panneaux B58/B59 bornent la zone ; un B26 peut imposer une mise en service
+    locale. Lire ses compléments.'
   theme: R
   sous_theme: intemperies
   source: Décret n° 2020-1264 du 16 octobre 2020 ; service-public.fr F19459
   tags:
   - revision::v4
 - id: r-tunnel-niches
-  texte: Dans un tunnel, une niche contient des {{c1::moyens d’alerte et de lutte contre l’incendie}} ; les issues
-    d’évacuation sont signalées en {{c2::vert}}.
-  explication: Une niche n’est pas nécessairement un abri contre la fumée. Repérer les flèches et distances vers
-    les issues ; l’espacement des équipements varie selon le tunnel.
+  texte: Dans un tunnel, les issues d’évacuation sont signalées en {{c1::vert}}.
+  explication: Les niches de sécurité contiennent des moyens d’alerte et de lutte contre l’incendie ; elles ne sont
+    pas des abris contre la fumée. Repérer les flèches et distances vers les issues ; l’espacement des équipements
+    varie selon le tunnel.
   theme: R
   sous_theme: tunnels
   importance: utile
   source: CETU — Conduire en tunnel
   tags:
-  - revision::v3_1
+  - revision::v6
 - id: r-autoroute-sortie-annonces
-  texte: Sur autoroute, une sortie est annoncée à environ {{c1::2 000 m}}, présignalée à environ {{c2::1 000 m}}, puis signalée au début de la voie de décélération ; la manœuvre doit être achevée au plus tard au {{c3::début de la bretelle}}.
-  explication: Les aires de repos sont annoncées à 2 000 m puis 1 000 m, le péage à 1 000 m. Chaque sortie porte un numéro, repris sur les panneaux.
+  explication: La manœuvre doit être achevée au plus tard au début de la bretelle. Les aires sont annoncées à 2
+    000 m puis 1 000 m ; chaque sortie porte un numéro repris sur les panneaux.
   theme: R
   sous_theme: autoroute
   source: IISR, 5e partie (art. 83 et 84) ; Code de la route, art. R421-4
+  rappels:
+  - Sur autoroute, une sortie est annoncée une première fois à environ {{c1::2 000 m}}.
+  - Sur autoroute, une sortie est présignalée à environ {{c2::1 000 m}}, puis signalée au début de la voie de décélération.
+  tags:
+  - revision::v6

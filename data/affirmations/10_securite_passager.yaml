@@ -2,10 +2,10 @@
 # Forme dominante de l'ETG (11 des 20 questions officielles), dont la Q12 « Cette passagère arrière
 # met le conducteur en danger ». Les affirmations sur les aides à la conduite sont dans le thème M.
 - id: aff-s-passagere-arriere-danger
-  contexte: Une passagère assise à l'arrière n'a pas bouclé sa ceinture (question officielle 2023, Q12).
+  contexte: Une passagère assise à l'arrière n'a pas bouclé sa ceinture.
   affirmation: Elle met aussi le conducteur en danger.
   verdict: vrai
-  pourquoi: 'Lors d''un choc, un passager arrière non attaché est projeté vers l''avant avec une force de plusieurs tonnes : il écrase le dossier et la tête de l''occupant avant. Elle est en danger et elle en crée un.'
+  pourquoi: 'Lors d''un choc, un passager arrière non attaché est projeté vers l''avant : il écrase le dossier et la tête de l''occupant avant. Elle est en danger et elle en crée un.'
   theme: S
   sous_theme: passagers
   source: Sécurité routière — Exemples de nouvelles questions (Q12) ; Dépliant ceinture 2022
@@ -99,7 +99,7 @@
   contexte: Une boîte de mouchoirs et un parapluie posés sur la plage arrière.
   affirmation: Des objets légers posés là ne présentent pas de danger.
   verdict: faux
-  pourquoi: 'Au choc, tout objet libre devient un projectile : un objet de 300 g lancé à 50 km/h frappe la nuque comme une boule de bowling. La plage arrière et la lunette arrière restent dégagées.'
+  pourquoi: 'Au choc, tout objet libre poursuit sa course à la vitesse du véhicule et devient un projectile, même léger : il peut blesser la nuque ou le visage. La plage arrière et la lunette arrière restent dégagées.'
   theme: S
   sous_theme: chargement
   source: securite-routiere.gouv.fr — Conseils chargement ; Stych — Chargement

@@ -36,7 +36,7 @@ Lire une valeur puis distinguer son point d’application d’une permission de 
 Passer du nom d’un signal de fin à la règle qui s’applique ensuite.
 
 - `l-visuel-fin-interdictions` : Voiture, permis hors probatoire, temps sec. Hors agglomération, une voie par sens sans séparateur, après une limitation à 50, je franchis ce panneau. Aucun autre panneau : quel plafond retrouve-je ?
-- `l-vitesse-hors-agglo` : Voiture, permis hors probatoire, temps sec : sur route hors agglomération à double sens, une voie par sens, sans séparateur ni relèvement signalé, le plafond est {{c1::80 km/h}}.  Voiture, permis hors probatoire, temps sec : sur route hors agglomération à double sens, une voie par sens, le plafond peut être relevé et signalé à {{c2::90 km/h}}.
+- `l-vitesse-hors-agglo` : Temps sec, voiture, permis définitif. Route hors agglomération à double sens, sans séparateur central ni relèvement signalé → plafond {{c1::80 km/h}}.  Temps sec, voiture, permis définitif. Route hors agglomération à double sens sans séparateur central : le plafond peut être relevé et signalé à {{c2::90 km/h}}.
 
 ## voyant-et-contexte
 
@@ -58,8 +58,6 @@ Changer de 50 kg fait changer de branche de la règle : ni 750 ni 3 500 kg ne so
 
 - `s-remorque-seuil-750` : Voiture de PTAC 3 500 kg, remorque de PTAC 750 kg ; capacités techniques respectées. Le permis B seul suffit-il ?
 - `s-remorque-seuil-800` : Voiture de PTAC 3 500 kg, remorque de PTAC 800 kg ; capacités techniques respectées. Le permis B seul suffit-il ?
-- `s-remorque-cas-b` : Voiture de PTAC 2 000 kg et remorque de PTAC 1 200 kg, capacités de traction respectées : le permis B suffit-il ?
-- `s-remorque-cas-b96` : Voiture de PTAC 2 400 kg et remorque de PTAC 1 500 kg, capacités de traction respectées : le permis B seul suffit-il ?
 
 ## distances-composantes
 
@@ -113,7 +111,7 @@ La présence d’un objet dans la plaie ou l’origine traumatique change l’ac
 Aucun plafond numérique : chaque retrait ci-dessous a un motif et une couverture conservée. La v4 est destinée à un import neuf ; réimporter ne supprime pas les anciennes cartes.
 
 - `l-marquage-modulations` : Les longueurs de construction T1/T3 sont déjà documentées dans les signaux ; la compétence utile est la lecture et la décision, pas trois dimensions isolées. Couverture : `marq-ligne-discontinue-t1`, `marq-ligne-dissuasion`, `scn-dep-ligne-discontinue-libre`.
-- `c-distance-arret-formule` : Trois résultats de carrés mémorisés ne permettent pas de calculer un arrêt réel ; remplacer par les composantes et les limites des hypothèses. Couverture : `c-arret-repere-limite`, `c-arret-somme`, `c-double-vitesse-arret`.
+- `c-distance-arret-formule` : Trois résultats de carrés mémorisés ne permettent pas de calculer un arrêt réel ; remplacer par les composantes et les limites des hypothèses. La v6 réintroduit deux ordres de grandeur explicitement qualifiés (50 et 90 km/h sur sol sec), car l’épreuve les demande, sans en refaire une formule à réciter. Couverture : `c-arret-repere-limite`, `c-arret-somme`, `c-double-vitesse-arret`, `c-distance-arret-reperes`.
 - `c-somnolence-stats` : Un taux sans périmètre et une équivalence expérimentale en alcoolémie ne décident pas de l’aptitude à poursuivre. Couverture : `c-somnolence-que-faire`, `aff-c-micro-sommeil`, `d-risque-comparer-bilans`.
 - `c-alcool-risque-multiplie` : Écarter la récitation d’une table de multiplicateurs peu contextualisée ; conserver effets, seuils et distinction légalité/sécurité. Couverture : `aff-c-alcool-sous-seuil`, `aff-c-alcool-jugement`.
 - `c-stupefiants-stats` : Remplacer les ratios de population par les effets et le risque de cumul réellement utiles à une décision. Couverture : `c-cannabis-effets`, `aff-c-medicament-alcool`, `d-stupefiants-delit`.
@@ -134,3 +132,13 @@ Aucun plafond numérique : chaque retrait ci-dessous a un motif et une couvertur
 - `d-amende-minoree-majoree` : Réciter les montants de paiement ne prépare pas une décision de conduite ; lire délais et montants sur l’avis reçu. Couverture : `d-classes-amendes`.
 - `e-vitesse-chiffres` : Résultats arithmétiques fixes appris par cœur ; le nouveau tableau demande de lire et comparer des données sans universaliser une économie. Couverture : `e-budget-trajet-tableau`.
 - `r-autoroute-sortie-ratee` : Même décision et mêmes conditions que la question existante ; aucun transfert supplémentaire. Couverture : `l-demi-tour-marche-arriere`.
+- `s-remorque-cas-b` : Révision v6 : cinq applications pour une règle de permis que l’examen pose rarement ; la paire 750/800 kg et le cas de la remorque vide gardent les trois discriminations utiles. Couverture : `s-remorque-seuil-750`, `s-remorque-seuil-800`, `s-remorque-masse-reelle`.
+- `s-remorque-cas-b96` : Révision v6 : même contraste que le cas 800 kg (somme des PTAC au-delà de 3 500 kg). Couverture : `s-remorque-seuil-800`, `s-remorque-chiffres`.
+- `s-remorque-permis-b` : Révision v6 : la question récitait la règle déjà portée par les rappels de la note chiffrée et exercée par les applications. Couverture : `s-remorque-chiffres`, `s-remorque-seuil-750`.
+- `c-champ-visuel-chiffres` : Révision v6 : trois trous de vocabulaire (« rétrécir », « latéraux », « adapter l’allure ») demandaient de réciter une phrase, pas de rappeler une connaissance ; l’affirmation et la question d’exploration visuelle portent la même idée. Couverture : `aff-c-champ-visuel-vitesse-pieton`, `c-regarder-loin`.
+- `c-retro-7s` : Révision v6 : trous de phrase (« régulièrement », « ralentissement anticipé… ») sans valeur de rappel ; la question sur le contrôle avant ralentissement suffit. Couverture : `c-retro-avant-freiner`, `c-regarder-loin`.
+- `c-nuit-risque` : Révision v6 : trous de mots devinables ; l’affirmation sur le trafic fluide de nuit et la question sur la vitesse de nuit entraînent la même décision. Couverture : `aff-c-nuit-trafic-fluide`, `r-nuit-vitesse-visibilite`.
+- `r-neige-adherence` : Révision v6 : remplacée par une affirmation à juger (température positive n’exclut pas le verglas), plus proche du travail demandé à l’examen qu’un trou de phrase. Couverture : `aff-r-verglas-temperature-positive`, `aff-r-verglas-pont`.
+- `message-alerte` : Révision v6 : une liste à trous fait deviner l’élément caché ; la question demande le message complet. Couverture : `a-message-alerte`.
+- `non-assistance` : Révision v6 : le trou portait sur une formule de sept mots ; la question demande l’obligation et sa limite. Couverture : `a-non-assistance`.
+- `e-surconsommations` : Révision v6 : liste de quatre trous devinables par élimination ; la question demande les quatre facteurs. Couverture : `e-surconsommations-causes`.

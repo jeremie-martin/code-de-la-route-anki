@@ -1,16 +1,20 @@
 # Code de la route 2026 — comprendre, rappeler, décider
 
-Deck Anki en français pour l’ETG du permis B, **édition v5.1, révisée le 21 septembre 2026**.
+Deck Anki en français pour l’ETG du permis B, **édition v7, révisée le 21 septembre 2026**.
 
 **[Télécharger le deck complet](out/Code-de-la-route-2026.apkg)**. Les [statistiques générées](out/STATS.md)
-donnent les effectifs exacts. Le deck relie les règles, la reconnaissance des signaux et leur application
-à 51 objectifs. Il comprend des schémas simplifiés, pas des photographies d’examen.
+donnent les effectifs exacts (1 135 notes, 1 220 cartes). Le deck relie les règles, la reconnaissance
+des signaux et leur application à 51 objectifs. Il comprend des schémas simplifiés, pas des photographies d’examen.
 
-La v5 corrige des généralisations encore présentes en v4, resserre les rappels de sanctions,
-ajoute des cas où une condition change la réponse et améliore le rendu sur téléphone.
-La v5.1 allège l’interface de révision et précise sa hiérarchie, sans changer le parcours.
-Voir la [révision de l’interface](docs/11-interface-quotidienne.md), le [bilan critique](docs/10-bilan-v5.md), les [imports vérifiés](out/VERIFICATION.md)
-et les [contrôles de rendu](out/RENDU.md).
+La v7 resserre la cible de rappel des cartes de décision : environ 190 réponses sont réduites à
+**la décision et sa raison décisive** (30 mots au plus, le reste au verso), les trous de vitesse sont
+réécrits dans un cadre constant « conditions → plafond », cinq signaux sans décision sont retirés et la
+durée du disque A est ajoutée. La v6 avait déjà retiré 101 signaux de catalogue et reconsulté les règles
+récentes (délit dès 50 km/h d’excès, maintien des ZFE, inter-files, loi du 18 août 2026).
+Voir le [bilan v7](docs/13-bilan-v7.md), le [bilan v6](docs/12-bilan-v6.md), les
+[imports vérifiés](out/VERIFICATION.md) et les [contrôles de rendu](out/RENDU.md). Les bilans
+[v5](docs/10-bilan-v5.md) et [interface](docs/11-interface-quotidienne.md) restent valables pour ce
+qui n’a pas changé.
 
 ## Commencer
 
@@ -29,11 +33,26 @@ Le [programme](out/PROGRAMME.md) donne l’ordre et les durées minimales d’in
 pour être prêt. Les cartes du socle passent avant la consolidation ; les deux étapes couvrent des
 compétences utiles. Le [paquet Socle](out/Code-de-la-route-2026-Socle.apkg) est une extraction de la
 première étape, pas un autre programme ni une préparation suffisante à lui seul. Inutile d’importer
-les deux en même temps. Le passage **Socle v5.1 → complet v5.1** est vérifié.
+les deux en même temps. Le passage **Socle v7 → complet v7** est vérifié.
 
-Cette édition est conçue pour votre **premier import**. Des notes et des numéros de cloze ont changé :
-ne pas l’importer sur une v4 étudiée en espérant conserver le sens de toutes les anciennes cartes.
-Une migration depuis v2/v3/v4 n’est pas fournie. Les réimports de la même édition v5.1 sont testés.
+Cette édition est conçue pour un **import neuf**. Des notes ont été retirées, ajoutées ou redécoupées
+depuis la v5.1 : ne pas l’importer sur une collection déjà étudiée en espérant conserver le sens de
+toutes les anciennes cartes. Les réimports de la même édition v7 sont testés.
+
+### Parcours type
+
+- **Semaines 1–5 (socle, 636 cartes)** : 20 nouvelles cartes par jour, révisions dues d’abord. Activer
+  FSRS dans les options d’Anki (rétention souhaitée 0,90) ; le préréglage du deck fixe l’ordre et
+  l’enfouissement des cartes sœurs. Dès la semaine 2, deux ou trois séries de 20 questions photo
+  par semaine, corrigées, sur un support extérieur.
+- **Semaines 6–9 (consolidation, 584 cartes)** : mêmes réglages ; les variantes, exceptions et
+  applications s’ajoutent aux révisions du socle. Passer à des séries de 40 questions chronométrées.
+- **Avant l’épreuve** : ne plus introduire de nouvelles cartes la dernière semaine ; garder les
+  révisions dues, relire les repères des thèmes où les séries échouent, et faire des examens blancs
+  complets. Une erreur récurrente en série se traite en cherchant la carte correspondante dans la
+  [couverture](out/COUVERTURE.md), pas en ajoutant des cartes au hasard.
+
+Ces durées supposent une étude quotidienne ; elles s’allongent sans dommage si le débit est réduit.
 
 ## Répondre et s’évaluer
 
@@ -43,8 +62,8 @@ Répondre **avant** de retourner, en une phrase ou à voix haute. Pas de récita
 |---|---|
 | Signal | Son sens utile ; son code administratif n’est pas à réciter |
 | Comparaison A/B | La différence qui change la règle ou la conduite |
-| Trou | La valeur avec l’unité, ou le terme demandé |
-| Décision / scénario | L’action et l’indice ou la règle décisive |
+| Trou | La valeur avec l’unité, ou le terme demandé ; chaque phrase à trou se suffit à elle-même |
+| Décision / scénario | L’action et l’indice ou la règle décisive ; le verso ajoute les nuances, qui ne sont pas à réciter |
 | Vrai/faux | Le verdict justifié ; corriger la proposition fausse |
 
 **À revoir** si la réponse est fausse, devinée, ou si la raison essentielle manque.
@@ -92,19 +111,27 @@ Pour une modification :
    [`source_checks.yaml`](data/_meta/source_checks.yaml). Une ancienne référence ne vaut pas revalidation.
 2. Modifier `data/`. La reconnaissance est générée : modifier `signs_inventory.yaml` ou
    `_meta/sign_overrides.yaml`, puis exécuter `python build/import_signs.py`.
-   `reconnaissance/voyants.yaml` est rédigé directement.
+   `reconnaissance/voyants.yaml` est rédigé directement. Un signal n’entre dans le deck que s’il
+   porte une décision de conduite ou une discrimination que l’épreuve peut demander ; sinon, le
+   documenter dans `_meta/sign_exclusions.yaml` avec sa couverture. Le complément d’une
+   reconnaissance ne liste ni codes voisins, ni distances d’implantation, ni panonceaux possibles.
 3. Relier les notes aux objectifs dans `_meta/objectives.yaml` et aux familles de cas si utile.
    Consigner les retraits avec leur couverture restante. Les délais administratifs et statistiques
    n’ont pas à devenir des cibles de rappel lorsqu’une consultation est plus pertinente.
-4. Pour plusieurs seuils dans une note, préférer `rappels` autonomes : chaque recto doit se suffire
-   sans afficher les réponses sœurs. Garder ensemble une procédure courte cohérente, comme le cycle RCP.
-   Voir la [conception des cartes](docs/03-conception-des-cartes.md).
+4. Une réponse de question tient en **30 mots au plus** (viser 10-22) : la décision ou la valeur et la raison
+   décisive ; toute autre nuance va dans `explication`. Les rappels de vitesse suivent le cadre
+   « Conditions. Configuration → plafond ». Pour plusieurs seuils dans une note, utiliser `rappels` autonomes :
+   chaque recto doit se suffire sans afficher les réponses sœurs. Le build refuse deux trous dans une même phrase (sauf `multi_ok`
+   pour une relation unique) et un trou de plus de huit mots (sauf `long_ok`) : une phrase à réciter ou
+   un élément de liste à deviner devient une question ou une affirmation. Garder ensemble une
+   procédure courte cohérente, comme le cycle RCP. Voir la [conception des cartes](docs/03-conception-des-cartes.md).
 5. Exécuter les commandes ci-dessus. Inspecter les captures à 430 × 932 (clair et sombre) dans `out/qa/render/`. Les fichiers
    `_viewport.png` montrent un seul écran ; les autres montrent toute la carte. Vérifier notamment les
    nombres, flèches et petits textes **dans les images** : les mesures DOM ne les comprennent pas.
    Après toute nouvelle modification, reconstruire avant de revérifier le paquet.
-6. Relire le diff et actualiser le bilan. Pour une diffusion ultérieure à des utilisateurs ayant
-   étudié le deck, traiter explicitement les suppressions, changements de schéma ou de cibles de cloze.
+6. Relire le diff et actualiser le bilan. Consigner tout retrait dans `_meta/retirements.yaml` avec sa
+   couverture. Pour une diffusion ultérieure à des utilisateurs ayant étudié le deck, traiter
+   explicitement les suppressions, changements de schéma ou de cibles de cloze.
 
 Les rapports [ROLES](out/ROLES.md), [COUVERTURE](out/COUVERTURE.md) et
 [SELECTION-SIGNAUX](out/SELECTION-SIGNAUX.md) rendent les choix inspectables. Ils ne prouvent pas

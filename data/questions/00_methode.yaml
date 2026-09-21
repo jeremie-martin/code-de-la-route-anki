@@ -1,37 +1,41 @@
 - id: etg-bandeau-reponses
   question: Sur une question de l'ETG, comment sait-on s'il faut cocher une ou plusieurs réponses ?
   reponse: 'Le bandeau de la question l''indique : « une réponse » ou « plusieurs réponses ».'
-  explication: '« Plusieurs réponses » signifie au moins deux : il faut cocher toutes les bonnes et aucune mauvaise pour avoir le point (tout ou rien).'
+  explication: '« Plusieurs réponses » signifie au moins deux : il faut cocher toutes les bonnes et aucune mauvaise pour avoir
+    le point (tout ou rien).'
   theme: X
   sous_theme: lecture
   source: securite-routiere.gouv.fr — Nouvelle épreuve du code 2023 ; Codes Rousseau — Nouveautés 2026
 - id: etg-pictogramme-point-de-vue
   question: Un pictogramme apparaît en haut à droite de la photo (piéton, vélo, moto, poids lourd…). Que signifie-t-il ?
   reponse: Que la question se place du point de vue de cet usager, pas de celui d'un automobiliste.
-  explication: 'Piège classique : la photo est prise au guidon d''un vélo ou d''une trottinette, et les règles à appliquer sont celles de cet usager (piste cyclable, sas vélo, M12…). Toujours vérifier le pictogramme avant de répondre.'
+  explication: 'Piège classique : la photo est prise au guidon d''un vélo ou d''une trottinette, et les règles à appliquer
+    sont celles de cet usager (piste cyclable, sas vélo, M12…). Toujours vérifier le pictogramme avant de répondre.'
   theme: X
   sous_theme: lecture
   source: Prépacode (ENPC) — Nouveau code 2023 ; Codes Rousseau — Nouveautés 2026
 - id: etg-halo-jaune
   question: Dans une question de l'ETG, un véhicule de la photo est entouré/surligné en jaune. Pourquoi ?
   reponse: C'est le véhicule dont parle la question (« ce véhicule », « la voiture bleue »…).
-  explication: Le repère de localisation (goutte/pin) joue le même rôle pour un lieu précis. Cela évite d'hésiter sur l'objet de la question.
+  explication: Le repère de localisation (goutte/pin) joue le même rôle pour un lieu précis. Cela évite d'hésiter sur l'objet
+    de la question.
   theme: X
   sous_theme: lecture
   source: securite-routiere.gouv.fr — Nouvelle épreuve du code 2023
 - id: etg-je-peux-je-dois
   question: Quelle différence de lecture entre « Je peux… » et « Je dois… » dans une question de l'ETG ?
   reponse: « Je peux » demande si l'action est autorisée (règle + sécurité) ; « Je dois » demande si elle est obligatoire.
-  explication: 'Exemple : feu vert et piéton engagé → « je peux passer » = non (danger) ; « je dois m''arrêter » = oui. Une action autorisée mais dangereuse se répond « non » à « je peux ».'
+  explication: 'Exemple : feu vert et piéton engagé → « je peux passer » = non (danger) ; « je dois m''arrêter » = oui. Une
+    action autorisée mais dangereuse se répond « non » à « je peux ».'
   theme: X
   sous_theme: lecture
   source: Méthode d'examen (synthèse des conseils Codes Rousseau, ENPC, Ornikar)
 - id: etg-reflexe-securite
   question: Une réponse dit « je ralentis », une autre « je maintiens mon allure ». Comment choisir ?
-  reponse: 'Je relie chaque proposition aux indices visibles et à la règle : ralentir si le risque l’exige, maintenir
-    si les conditions le permettent.'
-  explication: Aucun verbe n’est automatiquement juste ou faux. Un danger immédiat peut justifier le klaxon ; une
-    insertion demande parfois d’accélérer. La réponse se justifie par la situation.
+  reponse: 'Je relie chaque proposition aux indices visibles et à la règle : ralentir si le risque l’exige, maintenir si les
+    conditions le permettent.'
+  explication: Aucun verbe n’est automatiquement juste ou faux. Un danger immédiat peut justifier le klaxon ; une insertion
+    demande parfois d’accélérer. La réponse se justifie par la situation.
   theme: X
   sous_theme: lecture
   source: Méthode d'examen (synthèse des conseils Codes Rousseau, ENPC, Ornikar)
@@ -39,37 +43,39 @@
   - revision::v3
 - id: etg-video-strategie
   question: 'Question vidéo à l''ETG : que faut-il observer pendant la vidéo ?'
-  reponse: 'Ce qui change entre le début et la fin : un usager qui apparaît, un clignotant, une portière, un feu — la question porte sur la réaction à cet événement.'
-  explication: 'La vidéo n''est vue qu''une fois et le chronomètre de 20 s ne démarre qu''après : on regarde d''abord (rétroviseurs compris), on lit ensuite.'
+  reponse: 'Ce qui change entre le début et la fin (usager qui apparaît, clignotant, portière, feu) : la question porte sur
+    la réaction à cet événement.'
+  explication: 'La vidéo n''est vue qu''une fois et le chronomètre de 20 s ne démarre qu''après : on regarde d''abord (rétroviseurs
+    compris), on lit ensuite.'
   theme: X
   sous_theme: lecture
   source: Ornikar — Les questions vidéo de l'examen du code ; Prépacode (ENPC)
 - id: etg-question-suivante
   question: À l'ETG, peut-on revenir à une question précédente ou la sauter pour y revenir plus tard ?
   reponse: 'Non : chaque question doit être validée dans le temps imparti, sans retour possible.'
-  explication: Si le temps s'écoule sans réponse, la question est comptée fausse. Mieux vaut répondre avec sa meilleure hypothèse que ne rien cocher.
+  explication: Si le temps s'écoule sans réponse, la question est comptée fausse. Mieux vaut répondre avec sa meilleure hypothèse
+    que ne rien cocher.
   theme: X
   sous_theme: format
   source: En Voiture Simone — Examen du code 2026 ; Codes Rousseau
 - id: etg-forme-double-oui-non
-  question: Une question de l'ETG présente deux affirmations sur la même photo, chacune à juger OUI/NON. Comment
-    est-elle notée ?
-  reponse: 'Tout ou rien : les deux affirmations doivent être justes pour avoir le point ; elles ne sont pas
-    forcément liées entre elles.'
+  question: Une question de l'ETG présente deux affirmations sur la même photo, chacune à juger OUI/NON. Comment est-elle
+    notée ?
+  reponse: 'Tout ou rien : les deux affirmations doivent être justes pour avoir le point ; elles ne sont pas forcément liées
+    entre elles.'
   explication: Juger séparément les deux affirmations, puis vérifier les lettres cochées.
   theme: X
   sous_theme: lecture
-  source: Sécurité routière — Exemples de nouvelles questions (PDF, sept. 2023) ; En Voiture Simone — Questions
-    pièges
+  source: Sécurité routière — Exemples de nouvelles questions (PDF, sept. 2023) ; En Voiture Simone — Questions pièges
   tags:
   - revision::v3
 - id: etg-adverbes
-  question: « En zone d’équipements hiver, ma voiture doit avoir quatre pneus hiver, même si j’emporte des
-    chaînes adaptées. » Quelle condition dois-je examiner ?
-  reponse: 'L’alternative autorisée : pour l’obligation saisonnière, les chaînes adaptées à au moins deux roues
-    motrices à bord peuvent remplacer les quatre pneus hiver admis.'
-  explication: Lire toutes les conditions, pas seulement le mot « doit ». Une prescription locale B26 peut
-    ensuite demander un équipement en service. Ne pas deviner vrai/faux à partir d’un adverbe.
+  question: « En zone d’équipements hiver, ma voiture doit avoir quatre pneus hiver, même si j’emporte des chaînes adaptées.
+    » Quelle condition dois-je examiner ?
+  reponse: 'L’alternative autorisée : pour l’obligation saisonnière, les chaînes adaptées à au moins deux roues motrices à
+    bord peuvent remplacer les quatre pneus hiver admis.'
+  explication: Lire toutes les conditions, pas seulement le mot « doit ». Une prescription locale B26 peut ensuite demander
+    un équipement en service. Ne pas deviner vrai/faux à partir d’un adverbe.
   theme: X
   sous_theme: lecture
   source: Code de la route, D314-8 ; arrêté du 23 juin 2021
@@ -78,17 +84,17 @@
 - id: etg-negation
   question: 'Énoncé de l''ETG : « Il n''est pas interdit de tourner à droite. » Qu''est-ce que cela veut dire ?'
   reponse: 'Que c''est autorisé : une double négation (« pas interdit ») équivaut à une permission.'
-  explication: Les négations et doubles négations sont une source d'erreur classique ; les reformuler mentalement en positif avant de juger l'affirmation.
+  explication: Les négations et doubles négations sont une source d'erreur classique ; les reformuler mentalement en positif
+    avant de juger l'affirmation.
   theme: X
   sous_theme: lecture
   source: Codeclic — Comment réussir le code
 - id: etg-premiere-reponse
-  question: Une réponse choisie rapidement me fait hésiter avant de valider. Comment la vérifier utilement
-    ?
-  reponse: Je relis les conditions et chaque proposition, puis cherche l’indice ou la règle qui justifie mon
-    choix. Je corrige si ce contrôle montre une erreur.
-  explication: Ni conserver systématiquement sa première intuition ni changer au hasard. Utiliser le temps
-    disponible pour contrôler point de vue, portée des signaux et mots de l’énoncé.
+  question: Une réponse choisie rapidement me fait hésiter avant de valider. Comment la vérifier utilement ?
+  reponse: Je relis les conditions et chaque proposition, puis cherche l’indice ou la règle qui justifie mon choix. Je corrige
+    si ce contrôle montre une erreur.
+  explication: Ni conserver systématiquement sa première intuition ni changer au hasard. Utiliser le temps disponible pour
+    contrôler point de vue, portée des signaux et mots de l’énoncé.
   theme: X
   sous_theme: strategie
   source: Codeclic — Conseils examen ; Dekra — 10 erreurs à éviter

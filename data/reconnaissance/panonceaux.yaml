@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 81 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 36 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: m1
   type: panonceau
   code: M1
@@ -11,17 +11,6 @@
   theme: L
   sous_theme: panonceaux
   importance: essentiel
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m1a
-  type: panonceau
-  code: M1a
-  image:
-    commons: France road sign M1a.svg
-  nom: Panonceau de distance et de marque de carburant
-  signification: Indique la marque du distributeur de carburant et la distance restant à parcourir jusqu'à la prochaine station sur autoroute.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m2
   type: panonceau
@@ -54,17 +43,6 @@
     commons: France road sign M3b3.svg
   nom: Panonceau directionnel (services)
   signification: Indique la direction à suivre (flèche) et éventuellement la distance pour atteindre le service ou le lieu indiqué par le panneau (parking, station-service…).
-  theme: L
-  sous_theme: panonceaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m3d
-  type: panonceau
-  code: M3d
-  image:
-    commons: France road sign M3d.svg
-  nom: Panonceau de position (panneau au-dessus de la voie)
-  signification: Flèche verticale vers le bas indiquant que le panneau, implanté au-dessus de la chaussée, s'applique à la voie située en dessous.
   theme: L
   sous_theme: panonceaux
   importance: utile
@@ -161,72 +139,6 @@
   sous_theme: panonceaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4h
-  type: panonceau
-  code: M4h
-  image:
-    commons: France road sign M4h.svg
-  nom: 'Catégorie : transport de marchandises de PTAC supérieur au nombre indiqué'
-  signification: Le panneau ne s'applique qu'aux véhicules de transport de marchandises dont le PTAC/PTRA dépasse la valeur indiquée.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4i
-  type: panonceau
-  code: M4i
-  image:
-    commons: France road sign M4i.svg
-  nom: 'Catégorie : véhicules agricoles à moteur'
-  signification: Le panneau ne s'applique qu'aux tracteurs et machines agricoles.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4j
-  type: panonceau
-  code: M4j
-  image:
-    commons: France road sign M4j.svg
-  nom: 'Catégorie : véhicules équipés de chaînes à neige'
-  signification: 'Le panneau ne s''applique qu''aux véhicules équipés de chaînes (ex. sous B14 : vitesse limitée pour les véhicules chaînés).'
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4k
-  type: panonceau
-  code: M4k
-  image:
-    commons: France road sign M4k.svg
-  nom: 'Catégorie : marchandises explosives ou inflammables'
-  signification: Le panneau ne s'applique qu'aux véhicules transportant des marchandises explosives ou facilement inflammables.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4l
-  type: panonceau
-  code: M4l
-  image:
-    commons: France road sign M4l.svg
-  nom: 'Catégorie : marchandises polluantes pour les eaux'
-  signification: Le panneau ne s'applique qu'aux véhicules transportant des marchandises de nature à polluer les eaux.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4m
-  type: panonceau
-  code: M4m
-  image:
-    commons: France road sign M4m.svg
-  nom: 'Catégorie : marchandises dangereuses'
-  signification: Le panneau ne s'applique qu'aux véhicules transportant des marchandises dangereuses.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m4n
   type: panonceau
   code: M4n
@@ -237,127 +149,6 @@
   theme: L
   sous_theme: panonceaux
   importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4p
-  type: panonceau
-  code: M4p
-  image:
-    commons: France road sign M4p.svg
-  nom: 'Catégorie : piétons'
-  signification: Le panneau ne s'applique qu'aux piétons.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4q
-  type: panonceau
-  code: M4q
-  image:
-    commons: France road sign M4q.svg
-  nom: 'Catégorie : véhicules dont la longueur excède le nombre indiqué'
-  signification: Le panneau ne s'applique qu'aux véhicules plus longs que la valeur indiquée.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4r
-  type: panonceau
-  code: M4r
-  image:
-    commons: France road sign M4r.svg
-  nom: 'Catégorie : véhicules pesant sur un essieu plus que le nombre indiqué'
-  signification: Le panneau ne s'applique qu'aux véhicules dont la charge par essieu dépasse la valeur.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4s
-  type: panonceau
-  code: M4s
-  image:
-    commons: France road sign M4s.svg
-  nom: 'Catégorie : véhicules à traction animale'
-  signification: Le panneau ne s'applique qu'aux véhicules à traction animale.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4t
-  type: panonceau
-  code: M4t
-  image:
-    commons: France road sign M4t.svg
-  nom: 'Catégorie : charrettes à bras'
-  signification: Le panneau ne s'applique qu'aux voitures à bras.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4u
-  type: panonceau
-  code: M4u
-  image:
-    commons: France road sign M4u.svg
-  nom: 'Catégorie : véhicules dont la largeur excède le nombre indiqué'
-  signification: Le panneau ne s'applique qu'aux véhicules plus larges que la valeur indiquée.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4v
-  type: panonceau
-  code: M4v
-  image:
-    commons: France road sign M4v.svg
-  nom: 'Catégorie : véhicules dont la hauteur excède le nombre indiqué'
-  signification: Le panneau ne s'applique qu'aux véhicules plus hauts que la valeur indiquée.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4w
-  type: panonceau
-  code: M4w
-  image:
-    commons: France road sign M4w.svg
-  nom: 'Catégorie : véhicules tractant une remorque de plus de 250 kg'
-  signification: Le panneau ne s'applique qu'aux véhicules tractant une remorque dont le PTAC dépasse 250 kg.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4x
-  type: panonceau
-  code: M4x
-  image:
-    commons: France road sign M4x.svg
-  nom: 'Catégorie : véhicules tractant une caravane ou remorque (ensemble ≤ 3,5 t)'
-  signification: Le panneau ne s'applique qu'aux véhicules tractant une caravane ou remorque de plus de 250 kg, l'ensemble n'excédant pas 3,5 t.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4y
-  type: panonceau
-  code: M4y
-  image:
-    commons: France road sign M4y.svg
-  nom: 'Catégorie : cavaliers'
-  signification: Le panneau ne s'applique qu'aux cavaliers.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m4z
-  type: panonceau
-  code: M4z
-  image:
-    commons: France road sign M4z.svg
-  nom: 'Catégorie : véhicules d''autopartage'
-  signification: Le panneau ne s'applique qu'aux véhicules bénéficiant du label autopartage (créé en 2012).
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m5
   type: panonceau
@@ -418,39 +209,6 @@
   sous_theme: panonceaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m6e
-  type: panonceau
-  code: M6e
-  image:
-    commons: France road sign M6e.svg
-  nom: Stationnement payant (inscription et direction de l'horodateur)
-  signification: 'Variante par inscription de M6d : « stationnement payant horodateur » avec une flèche indiquant où se trouve l''appareil de paiement.'
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m6f
-  type: panonceau
-  code: M6f
-  image:
-    commons: France road sign M6f1.svg
-  nom: Précisions concernant l'interdiction de stationner
-  signification: 'Précise l''interdiction de stationnement : jours, heures, motifs (ex. « sauf livraisons », « jours de marché », « 8 h – 12 h »).'
-  theme: L
-  sous_theme: panonceaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m6g
-  type: panonceau
-  code: M6g
-  image:
-    commons: France road sign M6g.svg
-  nom: Indications diverses ne concernant pas les interdictions (stationnement)
-  signification: Donne des indications relatives au stationnement autre qu'une interdiction (ex. « stationnement autorisé le dimanche », durée).
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m6h
   type: panonceau
   code: M6h
@@ -474,39 +232,6 @@
   theme: L
   sous_theme: panonceaux
   importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m6j
-  type: panonceau
-  code: M6j
-  image:
-    commons: France road sign M6j.svg
-  nom: Stationnement réservé aux véhicules d'autopartage
-  signification: Arrêt ou stationnement réservé aux véhicules bénéficiant du label autopartage (2012).
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m6k1
-  type: panonceau
-  code: M6k1
-  image:
-    commons: France road sign M6k1.svg
-  nom: Stationnement réservé aux véhicules de covoiturage
-  signification: Arrêt ou stationnement réservé aux véhicules des usagers pratiquant le covoiturage (arrêté du 8 janvier 2016).
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m6k2
-  type: panonceau
-  code: M6k2
-  image:
-    commons: France road sign M6k2.svg
-  nom: Stationnement autorisé aux seuls véhicules de covoiturage
-  signification: Arrêt ou stationnement autorisé aux seuls véhicules des usagers pratiquant le covoiturage (2016).
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m7
   type: panonceau
@@ -566,51 +291,6 @@
   sous_theme: panonceaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  complement: 'M8e : vers la gauche ; M8f : des deux côtés.'
-- id: m8e
-  type: panonceau
-  code: M8e
-  image:
-    commons: France road sign M8e.svg
-  nom: Section d'application vers la gauche (flèche horizontale)
-  signification: 'Flèche horizontale vers la gauche : la section concernée s''étend à gauche du panneau, sur la distance éventuellement indiquée.'
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m8f
-  type: panonceau
-  code: M8f
-  image:
-    commons: France road sign M8f.svg
-  nom: Section d'application des deux côtés (double flèche horizontale)
-  signification: 'Double flèche horizontale : la prescription s''applique de part et d''autre du panneau, sur les distances éventuellement indiquées.'
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m9a
-  type: panonceau
-  code: M9a
-  image:
-    commons: France road sign M9a.svg
-  nom: Aire de danger aérien
-  signification: Précise que le panneau associé (A23 ou G1) concerne une aire de danger aérien.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m9b
-  type: panonceau
-  code: M9b
-  image:
-    commons: France road sign M9b.svg
-  nom: Voie ferrée électrifiée
-  signification: 'Au passage à niveau, précise que la voie ferrée est électrifiée (danger pour les véhicules hauts : caténaire).'
-  theme: L
-  sous_theme: panonceaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m9c
   type: panonceau
   code: M9c
@@ -635,51 +315,6 @@
   sous_theme: panonceaux
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m9e
-  type: panonceau
-  code: M9e
-  image:
-    commons: France road sign M9e.svg
-  nom: 'Panonceau : poste d''appel d''urgence (sous C8)'
-  signification: Sous C8, précise que l'emplacement d'arrêt d'urgence est doté d'un poste d'appel d'urgence.
-  theme: L
-  sous_theme: panonceaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m9f
-  type: panonceau
-  code: M9f
-  image:
-    commons: France road sign M9f.svg
-  nom: Poste d'appel d'urgence et moyen de lutte contre l'incendie
-  signification: Sous C8, précise la présence d'un poste d'appel d'urgence et d'un extincteur.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m9j1
-  type: panonceau
-  code: M9j1
-  image:
-    commons: France road sign M9j1.svg
-  nom: Risque de heurt de véhicules lents en descente
-  signification: 'Sous A16 (ou A14) : risque de rattraper des véhicules très lents (poids lourds) en descente.'
-  conduite: Anticiper un ralentissement brutal.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m9j2
-  type: panonceau
-  code: M9j2
-  image:
-    commons: France road sign M9j2.svg
-  nom: Risque de heurt de véhicules lents en montée
-  signification: Risque de rattraper des véhicules très lents en montée.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m9v1
   type: panonceau
   code: M9v1
@@ -688,7 +323,7 @@
   nom: « Interdit sauf vélos » (la prescription ne s'applique pas aux cyclistes)
   signification: La prescription ne s’applique pas aux cycles, aux EDPM ni aux cyclomobiles légers.
   conduite: Sous un sens interdit, anticiper ces usagers venant en face ; vérifier la voie avant de tourner.
-  complement: M9v2 porte « SAUF » + vélo, même signification ; M9v3/M9v4 font de même pour les cyclomoteurs.
+  complement: 'M9v2 porte « SAUF » et un vélo : même lecture.'
   theme: L
   sous_theme: panonceaux
   importance: essentiel
@@ -722,63 +357,6 @@
   sous_theme: panonceaux
   importance: essentiel
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m9v3
-  type: panonceau
-  code: M9v3
-  image:
-    commons: France road sign M9v3.svg
-  nom: « Sauf cyclomoteurs » (la prescription ne s'applique pas aux cyclomotoristes)
-  signification: 'Précise que la prescription ne s''applique pas aux cyclomoteurs : M9v3 « INTERDIT SAUF » + pictogramme, M9v4 « SAUF » + pictogramme.'
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m9k1
-  type: panonceau
-  code: M9k1
-  image:
-    commons: France road sign M9k1.svg
-  nom: « Voie réservée » (zone de contrôle automatisé d'une voie réservée)
-  signification: Sous le panneau SR3d (radar), indique que l'usage de la voie réservée est contrôlé automatiquement.
-  conduite: 'Ne pas emprunter la voie réservée sans y avoir droit : le contrôle est automatique.'
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m9k2
-  type: panonceau
-  code: M9k2
-  image:
-    commons: France road sign M9k2.svg
-  nom: « Voies réservées » (zone de contrôle automatisé de plusieurs voies réservées)
-  signification: Variante plurielle de M9k1, sous SR3d.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m9l
-  type: panonceau
-  code: M9l
-  image:
-    commons: France road sign M9l.svg
-  nom: Contrôle du niveau sonore des véhicules
-  signification: Sous le panneau SR3d, indique une zone de contrôle automatisé du niveau d'émissions sonores des véhicules (radars « bruit », expérimentation).
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m10a
-  type: panonceau
-  code: M10a
-  image:
-    commons: France road sign M10a.svg
-  nom: 'Cartouche : numéro d''une route ou d''une autoroute'
-  signification: Cartouche (placé au-dessus du panneau) portant le numéro de la route ou de l'autoroute concernée.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  complement: Cartouche placé AU-DESSUS du panneau qu'il complète (exception parmi les panonceaux).
 - id: m10b
   type: panonceau
   code: M10b
@@ -791,41 +369,6 @@
   importance: utile
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   complement: Cartouche placé AU-DESSUS du panneau qu'il complète (exception parmi les panonceaux).
-- id: m10c
-  type: panonceau
-  code: M10c
-  image:
-    commons: France road sign M10c.svg
-  nom: 'Cartouche : accès à une rocade'
-  signification: Cartouche indiquant l'accès à une rocade (M10c1, c2, c3 selon la position), créé en 2011.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  complement: Cartouche placé AU-DESSUS du panneau qu'il complète (exception parmi les panonceaux).
-- id: m10z
-  type: panonceau
-  code: M10z
-  image:
-    commons: France road sign M10z.svg
-  nom: 'Cartouche : nom propre d''un site ou d''un service'
-  signification: Cartouche portant le nom d'un site (tunnel, camping, aire).
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  complement: Cartouche placé AU-DESSUS du panneau qu'il complète (exception parmi les panonceaux).
-- id: m11a
-  type: panonceau
-  code: M11a
-  image:
-    commons: France road sign M11a.svg
-  nom: Dérogations sur route à accès réglementé
-  signification: Sous C107, indique les dérogations aux prescriptions de la route à accès réglementé (ex. catégories admises).
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m11b1
   type: panonceau
   code: M11b1
@@ -836,39 +379,6 @@
   theme: L
   sous_theme: panonceaux
   importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m11b2
-  type: panonceau
-  code: M11b2
-  image:
-    commons: France road sign M11b2.svg
-  nom: Prescriptions particulières dans l'aire piétonne
-  signification: Indique les prescriptions ou dérogations qui s'appliquent dans l'aire piétonne (ex. « livraisons 6 h – 10 h »).
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m11c1
-  type: panonceau
-  code: M11c1
-  image:
-    commons: France road sign M11c1.svg
-  nom: Catégorie de tunnel (marchandises dangereuses)
-  signification: Lettre B à E indiquant la catégorie du tunnel selon les marchandises dangereuses autorisées ; M11c2 ajoute la période d'application.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: m11c2
-  type: panonceau
-  code: M11c2
-  image:
-    commons: France road sign M11c2.svg
-  nom: Catégorie de tunnel avec période d'application
-  signification: Catégorie de tunnel (B à E) et période d'application de la restriction.
-  theme: L
-  sous_theme: panonceaux
-  importance: rare
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
 - id: m11d
   type: panonceau
@@ -915,17 +425,6 @@
     commons: France Road Sign KM2.png
   nom: Panonceau temporaire d'étendue
   signification: Version jaune du panonceau M2 (longueur de la zone de chantier).
-  theme: L
-  sous_theme: panonceaux
-  importance: utile
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-- id: km9
-  type: panonceau
-  code: KM9
-  image:
-    commons: KM9 sortie camions.svg
-  nom: Panonceau temporaire d'indications diverses
-  signification: Version jaune du panonceau M9 précisant la nature de l'obstacle temporaire ou du chantier (« sortie de camions », « circulation alternée »).
   theme: L
   sous_theme: panonceaux
   importance: utile

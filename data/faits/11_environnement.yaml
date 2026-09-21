@@ -1,19 +1,8 @@
-- id: e-surconsommations
-  texte: 'Quatre causes de surconsommation à limiter : usage inutile de la {{c1::climatisation}}, accessoires de
-    toit augmentant la {{c2::résistance à l’air}}, {{c3::charge}} inutile et pneus {{c4::sous-gonflés}}.'
-  explication: Les pourcentages varient selon le trajet et le véhicule. Maintenir désembuage et confort thermique
-    nécessaires à la sécurité ; régler la pression selon la notice.
-  theme: E
-  sous_theme: ecoconduite
-  source: ADEME ; Codeclic — Conduite économique ; Ornikar — Conduite écologique
-  tags:
-  - revision::v3_1
 - id: e-critair-chiffres
   dedup_ok:
   - aff-e-diesel-critair1
-  explication: 'La classification dépend aussi de la catégorie. Ne pas étendre les dates des voitures aux motos
-    ou poids lourds. Une classe identique n’autorise pas automatiquement l’accès à toutes les ZFE : consulter
-    les règles locales.'
+  explication: 'La classification dépend aussi de la catégorie. Ne pas étendre les dates des voitures aux motos ou poids lourds.
+    Une classe identique n’autorise pas automatiquement l’accès à toutes les ZFE : consulter les règles locales.'
   theme: E
   sous_theme: pollution
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F33371
@@ -26,10 +15,10 @@
 - id: e-pic-pollution-chiffres
   dedup_ok:
   - e-pic-pollution
-  texte: Lors d’un épisode de pollution, une réduction de {{c1::20 km/h}} peut être prescrite sur certains axes
-    ; j’applique les limites annoncées par l’arrêté et la signalisation, pas une soustraction automatique partout.
-  explication: 'Les mesures varient localement : vitesse, circulation différenciée, déviation des poids lourds.
-    Une règle de plancher à 70 ne peut pas relever une limitation existante à 30 ou 50.'
+  texte: Lors d'un épisode de pollution, une réduction de {{c1::20 km/h}} des vitesses maximales peut être prescrite sur certains
+    axes, selon l'arrêté et la signalisation.
+  explication: 'Les mesures varient localement : vitesse, circulation différenciée, déviation des poids lourds. Une règle
+    de plancher à 70 ne peut pas relever une limitation existante à 30 ou 50.'
   theme: E
   sous_theme: pollution
   source: service-public.fr — Pic de pollution ; arrêtés préfectoraux

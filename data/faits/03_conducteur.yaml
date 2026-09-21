@@ -1,8 +1,8 @@
 - id: c-temps-reaction
-  texte: Pour un exercice sans autre indication, le repère pédagogique du temps de réaction d’un conducteur
-    attentif est d’environ {{c1::1 seconde}}.
-  explication: La durée réelle varie avec la personne, la tâche et l’état de vigilance. Fatigue, alcool ou
-    distraction peuvent l’allonger ; deux secondes n’est pas une valeur fixe pour ces états.
+  texte: Pour un exercice sans autre indication, le repère pédagogique du temps de réaction d’un conducteur attentif est d’environ
+    {{c1::1 seconde}}.
+  explication: La durée réelle varie avec la personne, la tâche et l’état de vigilance. Fatigue, alcool ou distraction peuvent
+    l’allonger ; deux secondes n’est pas une valeur fixe pour ces états.
   theme: C
   sous_theme: distances
   source: securite-routiere.gouv.fr — La vitesse et la conduite ; Codeclic — Temps de réaction
@@ -12,23 +12,38 @@
 - id: c-distance-reaction-formule
   dedup_ok:
   - aff-c-temps-reaction-vitesse
-  explication: 'Le calcul physique est vitesse en km/h ÷ 3,6 × durée en secondes. Le raccourci dizaines × 3
-    donne environ 15, 27 et 39 m à 50, 90 et 130 km/h en 1 s ; valeurs physiques : environ 14, 25 et 36 m.
-    Utiliser les hypothèses données par l’exercice.'
+  explication: 'Le calcul physique est vitesse en km/h ÷ 3,6 × durée en secondes. Le raccourci dizaines × 3 donne environ
+    15, 27 et 39 m à 50, 90 et 130 km/h en 1 s ; valeurs physiques : environ 14, 25 et 36 m. Utiliser les hypothèses données
+    par l’exercice.'
   theme: C
   sous_theme: distances
   source: Codeclic ; En Voiture Simone ; securite-routiere.gouv.fr — Dépliant vitesse
   rappels:
-  - Pour estimer mentalement la distance parcourue en une seconde, le raccourci « dizaines de km/h × … » utilise
-    le facteur {{c1::3}}.
+  - Pour estimer mentalement la distance parcourue en une seconde, le raccourci « dizaines de km/h × … » utilise le facteur
+    {{c1::3}}.
   tags:
   - revision::v4
+- id: c-distance-arret-reperes
+  explication: 'Ordre de grandeur usuel des supports de préparation : carré des dizaines de km/h (50 → 25 m, 90 → 81 m, 130
+    → 169 m), pour un conducteur attentif sur sol sec. Le calcul d’un exercice utilise ses propres données ; la distance réelle
+    dépend de la réaction, de l’adhérence et des freins.'
+  theme: C
+  sous_theme: distances
+  source: Sécurité routière — https://modules.securite-routiere.gouv.fr/module_distance_arret.html ; Codes Rousseau — Calcul
+    des distances
+  rappels:
+  - 'Ordre de grandeur sur sol sec, conducteur attentif : à 50 km/h, la distance d’arrêt (réaction + freinage) est d’environ
+    {{c1::25 m}}.'
+  - 'Ordre de grandeur sur sol sec, conducteur attentif : à 90 km/h, la distance d’arrêt (réaction + freinage) est d’environ
+    {{c2::80 m}}.'
+  tags:
+  - revision::v6
 - id: c-distance-mouillee
-  texte: Sur route mouillée, la distance de freinage {{c1::augmente}} ; un doublement est un repère pédagogique,
-    pas une valeur garantie.
-  explication: La pluie diminue l’adhérence selon le revêtement, les pneus et la quantité d’eau. Réduire l’allure
-    et accroître les marges. Ne pas appliquer automatiquement ×2 ou ×10 à une scène réelle ; calculer avec
-    les hypothèses explicites de l’exercice.
+  texte: Sur route mouillée, la distance de freinage {{c1::augmente}} ; un doublement est un repère pédagogique, pas une valeur
+    garantie.
+  explication: La pluie diminue l’adhérence selon le revêtement, les pneus et la quantité d’eau. Réduire l’allure et accroître
+    les marges. Ne pas appliquer automatiquement ×2 ou ×10 à une scène réelle ; calculer avec les hypothèses explicites de
+    l’exercice.
   theme: C
   sous_theme: distances
   source: Sécurité routière, exemple public Q13 (2023) ; repère et limites du modèle
@@ -37,52 +52,49 @@
 - id: c-vitesse-double-freinage
   dedup_ok:
   - aff-c-vitesse-double-freinage-double
-  texte: À adhérence et décélération identiques dans un modèle simplifié, doubler la vitesse multiplie la distance
-    de freinage par {{c1::4}}.
-  explication: La distance de réaction, elle, double si le temps de réaction reste identique. La distance d’arrêt
-    totale ne quadruple donc pas automatiquement ; voir les exercices sur les deux composantes.
+  texte: À adhérence et décélération identiques dans un modèle simplifié, doubler la vitesse multiplie la distance de freinage
+    par {{c1::4}}.
+  explication: La distance de réaction, elle, double si le temps de réaction reste identique. La distance d’arrêt totale ne
+    quadruple donc pas automatiquement ; voir les exercices sur les deux composantes.
   theme: C
   sous_theme: distances
   source: securite-routiere.gouv.fr — La vitesse et la conduite ; Ornikar — Énergie cinétique
   tags:
   - revision::v4
 - id: c-intervalle-2s
-  explication: 'La règle est temporelle : deux secondes au minimum, davantage selon les conditions. Le calcul
-    physique donne environ 28 m à 50 km/h et 72 m à 130 km/h. Les 30 et 78 m sont des approximations pédagogiques,
-    pas des égalités.'
+  explication: 'La règle est temporelle : deux secondes au minimum, davantage selon les conditions. Le calcul physique donne
+    environ 28 m à 50 km/h et 72 m à 130 km/h. Les 30 et 78 m sont des approximations pédagogiques, pas des égalités.'
   theme: C
   sous_theme: distances
   source: Code de la route, art. R412-12 ; Codes Rousseau — Calcul des distances
   rappels:
-  - Entre deux voitures qui se suivent, l’intervalle minimal réglementaire correspond à la distance parcourue
-    pendant au moins {{c1::2 secondes}}.
+  - Entre deux voitures qui se suivent, l’intervalle minimal réglementaire correspond à la distance parcourue pendant au moins
+    {{c1::2 secondes}}.
   tags:
   - revision::v4
 - id: c-intervalle-pl-tunnel
-  texte: Hors agglomération, deux véhicules de plus de {{c1::3,5 t}} ou de plus de 7 m qui se suivent à la même
-    vitesse gardent au moins {{c2::50 m}}. En tunnel, respecter la distance {{c3::signalée pour la situation}}.
-  explication: 'Il n’existe pas de minimum universel de 150 m dans tous les tunnels. Les consignes peuvent distinguer
-    circulation et arrêt : lire panneaux et repères.'
+  texte: Hors agglomération, deux véhicules de plus de 3,5 t (ou de plus de 7 m) qui se suivent à la même vitesse gardent
+    au moins {{c1::50 m}}.
+  explication: 'En tunnel, respecter la distance signalée pour la situation : il n’existe pas de minimum universel de 150
+    m dans tous les tunnels, et les consignes peuvent distinguer circulation et arrêt.'
   theme: C
   sous_theme: distances
   source: Code de la route, R412-12 ; CETU — sécurité des usagers en tunnel
   tags:
-  - revision::v3
+  - revision::v6
 - id: c-autoroute-deux-traits
-  texte: Sur autoroute, un repère visuel usuel d’intervalle est de laisser au moins {{c1::2 traits}} complets
-    de la ligne de rive de la bande d’arrêt d’urgence entre les véhicules, davantage selon les conditions.
-  explication: 'Deux traits de rive complets et leur intervalle font 39 + 13 + 39 = 91 m, soit environ 90 m.
-    À 130 km/h, deux secondes représentent environ 72 m : le repère des traits laisse une marge. Augmenter
-    encore l’intervalle si nécessaire.'
+  texte: 'Sur autoroute, repère visuel usuel d''intervalle : laisser au moins {{c1::2 traits}} complets de la ligne de rive
+    de la bande d''arrêt d''urgence, davantage selon les conditions.'
+  explication: 'Deux traits de rive complets et leur intervalle font 39 + 13 + 39 = 91 m, soit environ 90 m. À 130 km/h, deux
+    secondes représentent environ 72 m : le repère des traits laisse une marge. Augmenter encore l’intervalle si nécessaire.'
   theme: C
   sous_theme: distances
   source: securite-routiere.gouv.fr — La vitesse et la conduite ; IISR 7e partie, art. 113-1
   tags:
   - revision::v4
 - id: c-telephone-5s
-  explication: 50 ÷ 3,6 × 5 ≈ 69,4 m. Les cinq secondes sont une hypothèse, pas la durée universelle d’un SMS.
-    Le téléphone ajoute des distractions visuelle, mentale et manuelle ; les mains libres ne suppriment pas
-    la distraction mentale.
+  explication: 50 ÷ 3,6 × 5 ≈ 69,4 m. Les cinq secondes sont une hypothèse, pas la durée universelle d’un SMS. Le téléphone
+    ajoute des distractions visuelle, mentale et manuelle ; les mains libres ne suppriment pas la distraction mentale.
   theme: C
   sous_theme: vigilance
   source: Calcul v/3,6 × durée ; Sécurité routière — téléphone et distraction
@@ -91,70 +103,53 @@
   - revision::v4
   rappels:
   - À 50 km/h (environ 14 m/s), quitter la route des yeux pendant 5 s fait parcourir environ {{c1::70 m}}.
-- id: c-champ-visuel-chiffres
-  texte: Quand la vitesse augmente, le champ d’attention utile tend à se {{c1::rétrécir}} ; les indices {{c2::latéraux}}
-    risquent d’être manqués. Pour mieux les détecter, il faut {{c3::adapter l’allure et explorer du regard}}.
-  explication: Ne pas apprendre une table d’angles comme une mesure garantie de sa vision à chaque vitesse. Le champ
-    anatomique et le champ effectivement exploré ne sont pas identiques.
-  theme: C
-  sous_theme: perception
-  source: securite-routiere.gouv.fr — Dépliant La vue ; Conduire sur autoroute ; En Voiture Simone — Champ visuel
-  tags:
-  - revision::v3_1
 - id: c-vue-90-pourcent
   texte: Pour le permis B, le seuil d’acuité visuelle binoculaire est d’au moins {{c1::5/10}}, avec correction si nécessaire.
-  explication: 'Arrêté du 28 mars 2022 : acuité binoculaire ≥ 5/10 (si un œil voit moins de 1/10, l''autre doit atteindre 5/10) et champ visuel horizontal ≥ 120°. Avec lunettes ou lentilles obligatoires, le permis porte le code 01 : conduire sans, c''est 135 € et 3 points. La baisse de la vue est progressive et passe inaperçue : contrôle régulier conseillé.'
+  explication: 'Arrêté du 28 mars 2022 : acuité binoculaire ≥ 5/10 (si un œil voit moins de 1/10, l''autre doit atteindre
+    5/10) et champ visuel horizontal ≥ 120°. Avec lunettes ou lentilles obligatoires, le permis porte le code 01 : conduire
+    sans, c''est 135 € et 3 points. La baisse de la vue est progressive et passe inaperçue : contrôle régulier conseillé.'
   theme: C
   sous_theme: perception
   source: Arrêté du 28 mars 2022 ; En Voiture Simone — Acuité visuelle ; Code de la route, art. R221-1-1
   tags:
   - revision::v4
 - id: c-fatigue-pause-chiffres
-  texte: 'Sur long trajet : pause conseillée de {{c1::15 à 20 min}} au moins toutes les {{c2::2 heures}}. En
-    cas de somnolence, s’arrêter en sécurité sans attendre et dormir environ {{c3::20 min}} ; ne repartir qu’en
-    état de conduire.'
-  explication: Une pause programmée ne permet pas de continuer malgré les paupières lourdes. Une courte sieste
-    ne garantit pas de compenser toute dette de sommeil ; changer de conducteur ou interrompre le trajet si
-    nécessaire.
+  explication: 'Une pause de 15 à 20 minutes est un repère, pas une garantie : elle ne permet pas de continuer malgré les
+    paupières lourdes. Une courte sieste ne compense pas toute dette de sommeil ; changer de conducteur ou interrompre le
+    trajet si nécessaire.'
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — La fatigue et la conduite
   tags:
-  - revision::v4
-- id: c-nuit-risque
-  texte: La nuit, la {{c1::visibilité réduite}} et la {{c2::somnolence}} rendent la conduite plus risquée, même
-    quand le trafic paraît faible.
-  explication: Réduire l’allure selon la distance visible et interrompre le trajet dès les signes de somnolence.
-    Les trajets familiers exigent la même vigilance que les autres.
-  theme: C
-  sous_theme: deficiences
-  source: Sécurité routière — conduite de nuit et somnolence
-  tags:
-  - revision::v3
+  - revision::v6
+  rappels:
+  - Sur un long trajet, une pause est recommandée au moins toutes les {{c1::2 heures}}, avant tout signe de fatigue.
+  - En cas de somnolence au volant, s’arrêter en sécurité sans attendre et dormir environ {{c2::20 min}} ; ne repartir qu’en
+    état de conduire.
 - id: c-verre-standard
-  texte: 'Un verre standard contient environ {{c1::10 g}} d’alcool pur. Le taux d’alcoolémie qui en résulte {{c2::varie
-    selon la personne et les conditions}} : un nombre de verres ne garantit pas de rester sous le seuil.'
-  explication: Les doses servies à domicile peuvent dépasser le verre standard. Alimentation, corpulence et délai
-    modifient le taux ; ne pas calculer une permission de conduire avec un nombre de verres.
+  texte: Un verre standard (demi de bière, verre de vin, dose de whisky servis au bar) contient environ {{c1::10 g}} d’alcool
+    pur.
+  explication: 'Le taux d’alcoolémie qui en résulte varie selon la personne, l’alimentation et le délai : un nombre de verres
+    ne garantit pas de rester sous le seuil. Les doses servies à domicile dépassent souvent le verre standard.'
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code en Poche
   tags:
-  - revision::v3_1
+  - revision::v6
 - id: c-alcool-elimination
-  texte: 'Repères moyens, non utilisables pour garantir une heure de reprise : baisse de {{c1::0,10 à 0,15
-    g/L}} par heure ; pic d’alcoolémie environ {{c2::30 min}} après absorption à jeun, {{c3::1 h}} au cours
-    d’un repas.'
-  explication: Le taux varie selon la personne et les conditions ; pas de règle fixe « heures par verre ».
-    Café, douche ou sport n’accélèrent pas l’élimination. Une alcoolémie peut rester excessive le lendemain.
+  explication: Le taux varie selon la personne et les conditions ; pas de règle fixe « heures par verre ». Café, douche ou
+    sport n’accélèrent pas l’élimination. Une alcoolémie peut rester excessive le lendemain.
   theme: C
   sous_theme: deficiences
   source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2024-03/depliant_alcool-conduite-070823.pdf
   tags:
-  - revision::v4
+  - revision::v6
+  rappels:
+  - 'Repère moyen, sans garantie individuelle : l’alcoolémie baisse d’environ {{c1::0,10 à 0,15 g/L}} par heure.'
+  - Le pic d’alcoolémie survient environ {{c2::30 min}} après absorption à jeun (environ 1 h au cours d’un repas).
 - id: c-conversion-air-sang
-  explication: Ce sont des correspondances réglementaires avec des unités différentes, pas une division entre
-    deux concentrations de même unité. Lire sang ou air avant de répondre.
+  explication: Ce sont des correspondances réglementaires avec des unités différentes, pas une division entre deux concentrations
+    de même unité. Lire sang ou air avant de répondre.
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code de la route, art. R234-1
@@ -166,28 +161,15 @@
   - Au seuil de 0,2 g/L de sang correspond le seuil légal de {{c2::0,10 mg/L}} d’air expiré.
   - Au seuil de 0,8 g/L de sang correspond le seuil légal de {{c3::0,40 mg/L}} d’air expiré.
 - id: c-medicaments-niveaux
-  explication: Somnifères et anxiolytiques (benzodiazépines), certains antihistaminiques, antitussifs et antalgiques
-    sont concernés ; environ un tiers des médicaments portent un pictogramme, y compris sans ordonnance. Ne
-    jamais associer à l'alcool.
+  explication: Somnifères et anxiolytiques (benzodiazépines), certains antihistaminiques, antitussifs et antalgiques sont
+    concernés ; environ un tiers des médicaments portent un pictogramme, y compris sans ordonnance. Ne jamais associer à l'alcool.
   theme: C
   sous_theme: deficiences
-  source: ANSM — Médicaments et conduite ; arrêté du 8 août 2008 (CSP, art. R5121-139) ; securite-routiere.gouv.fr
-    — Les médicaments et la conduite
+  source: ANSM — Médicaments et conduite ; arrêté du 8 août 2008 (CSP, art. R5121-139) ; securite-routiere.gouv.fr — Les médicaments
+    et la conduite
   rappels:
-  - 'Pictogramme médicaments de niveau 1 (jaune) : {{c1::lire la notice avant de conduire}}.'
-  - 'Pictogramme médicaments de niveau 2 (orange) : {{c2::ne pas conduire sans l’avis d’un professionnel de
-    santé}}.'
-  - 'Pictogramme médicaments de niveau 3 (rouge) : {{c3::ne pas conduire}} ; demander un avis médical pour
-    reprendre.'
+  - 'Pictogramme médicaments de niveau 1 (jaune) : {{c1::lire la notice}} avant de conduire.'
+  - 'Pictogramme médicaments de niveau 2 (orange) : ne pas conduire sans {{c2::l’avis d’un professionnel de santé}}.'
+  - 'Pictogramme médicaments de niveau 3 (rouge) : {{c3::ne pas conduire}} ; demander un avis médical pour reprendre.'
   tags:
-  - revision::v4
-- id: c-retro-7s
-  texte: Je consulte le rétroviseur intérieur {{c1::régulièrement}} et avant un {{c2::ralentissement anticipé ou
-    un changement de direction}}. Un danger immédiat exige de freiner sans retarder l’action pour ce contrôle.
-  explication: 'Il n’existe pas de chronomètre universel : la fréquence des contrôles s’adapte à la circulation.
-    Regard direct vers l’angle mort avant tout déport.'
-  theme: C
-  sous_theme: vigilance
-  source: Stych — Les contrôles ; Codeclic — L'angle mort
-  tags:
-  - revision::v3
+  - revision::v6
