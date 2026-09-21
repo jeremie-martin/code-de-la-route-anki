@@ -3,7 +3,7 @@
 Projet : générer `out/Code-de-la-route-2026.apkg`, un deck Anki pour réussir l'ETG (code de la route,
 permis B) tel qu'il existe en 2026. Lire `README.md` puis `docs/01-analyse-examen.md`,
 `docs/02-carte-des-connaissances.md`, `docs/03-conception-des-cartes.md`, `docs/04-sources.md`,
-`docs/09-refonte-pedagogique.md` (révision actuelle). Les dossiers v1/v2 sont historiques ; ne pas réintroduire leurs formulations corrigées.
+`docs/10-bilan-v5.md` (révision actuelle). Les dossiers v1/v2 sont historiques ; ne pas réintroduire leurs formulations corrigées.
 
 ## Commandes
 
@@ -60,17 +60,25 @@ python build/yamlfix.py data/*/*.yaml   # quote les valeurs YAML contenant ': '
   (`docs/research/sources/code_de_la_route_consolide_2026-09-10.pdf`, texte : `pdftotext -layout`).
 - Images : Commons `commons:` (nom de fichier exact), générateurs `gen:` (`build/gen_images.py`),
   teinte `tint:` pour les voyants ISO.
-- La v4 est une refonte pour import neuf (retraits et ordinaux modifiés, sans migration v2/v3).
+- La v5 est une refonte pour import neuf (retraits et ordinaux modifiés, sans migration v2/v3/v4).
   Pour les modifications ultérieures, préserver les GUID, ids de types/decks (`build/models.py`), numéros de cloze ET ids internes
   des champs/gabarits (`data/_meta/anki_schema.json`, repris du paquet v2 publié).
   `build.verify` doit refuser tout conflit de réimport, même si le nombre total de notes est correct.
 - Les contrôles externes ciblés sont documentés dans `data/_meta/source_checks.yaml` ; une date
   ne certifie que la portée écrite. Les références génériques héritées ne prouvent pas une vérification récente.
 
-## Repères et applications (v4)
+## Repères et applications (v4, poursuivis en v5)
 
 `lessons.yaml` contient un repère avec exemple par thème, exporté dans `out/COMPRENDRE.md` et
 le champ `Repere` de tous les modèles (volet au verso). Ce complément n’est pas une cible de rappel.
 `questions.image_ref` réutilise un signal existant ; le parcours place sa reconnaissance avant
 l’application. `contrasts.yaml` justifie les familles de cas ; `retirements.yaml` documente les
 suppressions avec leur couverture conservée. Les deux alimentent `out/CONCEPTION.md`.
+
+## Vérification du rendu v5
+
+Installer `requirements-qa.txt` et Chrome/Chromium, puis `python -m build.render_check`.
+Le vérificateur importe le paquet dans une collection temporaire et contrôle toutes les faces
+à 390 px clair / 320 px sombre ; captures dans `out/qa/render/`. Les mesures ne valident pas
+le sens des images ni les petits textes incorporés : les inspecter. `out/RENDU.md` et
+`out/VERIFICATION.md` portent le SHA-256 du paquet réellement contrôlé.

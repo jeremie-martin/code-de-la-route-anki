@@ -8,6 +8,8 @@ that pre-v4 packages can migrate across deliberate retirements and cloze changes
 from __future__ import annotations
 
 import argparse
+import hashlib
+from importlib.metadata import version
 from pathlib import Path
 import re
 import tempfile
@@ -139,8 +141,15 @@ def main():
                 checks.append(f'{previous.name} → complet : correction appliquée ; historique et planification conservés')
             finally:
                 col.close()
+    fingerprints = '\n'.join(
+        f'- `{path.name}` : `{hashlib.sha256(path.read_bytes()).hexdigest()}`'
+        for path in (full_path, core_path))
     (OUT / 'VERIFICATION.md').write_text('# Vérification des paquets\n\n' +
-        '\n'.join('- ' + line for line in checks) + '\n\nCes contrôles ne valident pas la justesse juridique de chaque phrase ni la réussite à l’examen.\n')
+        f'Imports réels en collections temporaires avec la bibliothèque Anki {version("anki")}.\n\n' +
+        '\n'.join('- ' + line for line in checks) + '\n\nSHA-256 des paquets vérifiés :\n\n' +
+        fingerprints + '\n\nCes contrôles ne valident pas la justesse juridique de chaque phrase ni la réussite à l’examen. '
+        'Le passage et les réimports ci-dessus concernent la même édition ; aucune migration depuis une édition antérieure '
+        'n’est attestée sans le test explicite `--previous`. Voir aussi [le rendu navigateur](RENDU.md).\n')
     print('\n'.join(checks))
 
 

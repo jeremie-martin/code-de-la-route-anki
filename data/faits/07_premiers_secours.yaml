@@ -1,16 +1,13 @@
 - id: pas-ordre
-  explication: Protéger d'abord pour éviter le suraccident (soi-même, les témoins, les victimes), alerter ensuite
-    pour que les secours partent tôt, secourir enfin avec des gestes simples.
+  explication: Protéger évite le suraccident. Faire alerter par un témoin permet de secourir en parallèle ;
+    ne pas retarder un geste vital pour réciter une séquence rigide.
   theme: A
   sous_theme: pas
-  source: securite-routiere.gouv.fr — Que faire en cas d'accident ; Croix-Rouge française
-  rappels:
-  - Face à un accident, quelle action précède l’alerte et les gestes de secours ? {{c1::Protéger}}.
-  - Après avoir protégé la zone, quelle action permet de déclencher les secours ? {{c2::Alerter}}.
-  - Après protection et alerte, quelle est la troisième composante de la conduite à tenir ? {{c3::Secourir}}
-    selon l’état de la victime et ses compétences.
+  source: Sécurité civile, PSC juillet 2026, Protection, Alerte et Hémorragies — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
   tags:
   - revision::v4
+  - revision::v5
+  texte: Face à un accident, les trois priorités de l’aide sont {{c1::protéger, alerter, secourir}}.
 - id: numeros-urgence
   explication: 'Le 112 est le bon réflexe si l''on hésite : il redirige vers le service compétent. Il fonctionne
     depuis un téléphone verrouillé ou sans crédit, via n''importe quel réseau disponible.'
@@ -59,24 +56,25 @@
   tags:
   - revision::v4
 - id: rcp-rythme
-  explication: 'Victime inconsciente sans respiration normale : réanimation. Respiration normale : conduite
-    adaptée à la cause, alerte et surveillance.'
+  explication: Un cycle est une seule procédure à retrouver. Si les insufflations sont impossibles, poursuivre
+    les compressions. Alerter, faire apporter un DAE et suivre ses consignes.
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
   tags:
   - revision::v3
   - revision::v4
-  rappels:
-  - 'RCP d’un adulte avec insufflations : combien de compressions avant les deux insufflations ? {{c1::30}}.'
-  - 'RCP d’un adulte avec insufflations : après trente compressions, combien d’insufflations ? {{c2::2}}.'
+  - revision::v5
+  texte: Chez l’adulte, quand je pratique une RCP avec insufflations, j’alterne {{c1::30 compressions puis
+    2 insufflations}}.
 - id: non-assistance
-  texte: Ne pas porter secours à une personne en danger (sans risque pour soi) est un délit puni jusqu'à {{c1::5
-    ans}} de prison et {{c2::75 000 €}} d'amende.
-  explication: Il faut apporter l’aide possible sans risque pour soi ni pour autrui, personnellement ou en provoquant
-    les secours. Un simple appel ne dispense pas automatiquement de toute autre aide accessible.
+  texte: Face à une personne en péril, je dois apporter l’aide possible {{c1::sans risque pour moi ni pour
+    autrui}}, personnellement ou en provoquant les secours.
+  explication: L’inaction peut constituer un délit. Un appel ne dispense pas d’un autre geste utile que je
+    peux faire sans danger ; le guidage des secours aide à choisir l’action.
   theme: A
   sous_theme: obligations
-  source: Code pénal, art. 223-6
+  source: Code pénal, article 223-6
   tags:
   - revision::v3
+  - revision::v5

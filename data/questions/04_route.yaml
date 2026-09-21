@@ -163,12 +163,16 @@
   sous_theme: passages_a_niveau
   source: Code de la route, art. R422-3 ; SNCF Réseau — Sécurité aux passages à niveau
 - id: r-pn-bloque
-  question: Mon véhicule cale et reste immobilisé sur les voies d'un passage à niveau. Que fais-je ?
-  reponse: Je fais descendre tout le monde et je m'éloigne des voies, puis j'appelle le numéro inscrit sur la pancarte du passage à niveau ; les barrières se forcent en voiture si nécessaire.
-  explication: 'Art. R422-3 V : faire cesser l''obstruction ou prévenir sans délai les agents du chemin de fer. Les demi-barrières sont conçues pour se rompre.'
+  question: Ma voiture reste immobilisée sur les rails et ne peut plus avancer. Que faire ?
+  reponse: Faire sortir les occupants, s’éloigner des voies et alerter immédiatement avec le téléphone ou le
+    numéro d’urgence du passage à niveau ; à défaut, le 112.
+  explication: Si le véhicule peut encore rouler mais est enfermé par les barrières, les enfoncer pour dégager.
+    Ne pas mélanger ce cas avec celui d’un véhicule incapable de bouger ; ne pas rester pour sauver la voiture.
   theme: R
   sous_theme: passages_a_niveau
   source: SNCF Réseau — Que faire en cas d'immobilisation ; Code de la route, art. R422-3
+  tags:
+  - revision::v5
 - id: r-pn-sans-barriere
   question: À un passage à niveau sans barrière ni feux (croix de Saint-André seule), comment procéder ?
   reponse: Ralentir fortement, regarder et écouter des deux côtés (vitre ouverte si besoin), et ne traverser que si aucun train n'approche ; en cas de doute, s'arrêter.
@@ -178,11 +182,15 @@
   source: Code de la route, art. R422-3 et R414-12 ; IISR (G1, A8, J10)
 - id: r-pn-barrieres-ouverture
   question: Les demi-barrières commencent à se relever mais les feux rouges clignotent encore. Je passe ?
-  reponse: 'Non : tant que les feux clignotent ou que les barrières sont en cours d''ouverture, l''engagement est interdit — un second train peut arriver.'
-  explication: Art. R422-3 II. Des barrières qui restent fermées anormalement longtemps annoncent le plus souvent un deuxième train.
+  reponse: 'Non : tant que les feux clignotent ou que les barrières sont en cours d''ouverture, l''engagement
+    est interdit — un second train peut arriver.'
+  explication: Attendre l’ouverture complète et l’extinction des feux. Une fermeture prolongée peut avoir plusieurs
+    causes ; elle ne donne aucune autorisation de passer. Signaler une anomalie depuis un lieu sûr.
   theme: R
   sous_theme: passages_a_niveau
   source: Code de la route, art. R422-3 ; SNCF Réseau
+  tags:
+  - revision::v5
 - id: r-tram-priorite
   question: Un tramway arrive sur ma gauche à un croisement sans feu ni panneau. Qui passe ?
   reponse: 'Le tramway : il a la priorité sur tous les usagers, quel que soit le côté d''où il vient, parce qu''il ne peut ni s''écarter ni s''arrêter court.'
@@ -234,13 +242,6 @@
     ; R421-4
   tags:
   - revision::v4
-- id: r-autoroute-sortie-ratee
-  question: Je viens de dépasser la bretelle de sortie que je voulais prendre. Que fais-je ?
-  reponse: 'Je continue jusqu''à la sortie suivante pour faire demi-tour hors de l''autoroute : marche arrière et demi-tour y sont interdits en toutes circonstances, bande d''arrêt d''urgence comprise.'
-  explication: 'Art. R421-6 : 135 €, 4 points et suspension possible. C''est une manœuvre à contresens là où les vitesses sont les plus élevées du réseau.'
-  theme: R
-  sous_theme: autoroute
-  source: Code de la route, art. R421-6
 - id: r-autoroute-bau
   question: À quoi sert la bande d'arrêt d'urgence et qui peut l'emprunter ?
   reponse: Aux seuls arrêts d'urgence (panne, malaise) et aux véhicules de secours ou d'exploitation ; y rouler ou s'y arrêter pour téléphoner ou se reposer est interdit.

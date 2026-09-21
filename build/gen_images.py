@@ -6,6 +6,7 @@ Visual identity matches build/diagrams.py (same asphalt, grass, marking colours)
 from __future__ import annotations
 
 import math
+import textwrap
 
 from build.diagrams import ASPHALT, GRASS, MARK, FONT, SVG, draw_road, draw_intersection, draw_roundabout, vehicle_sprite, esc
 
@@ -587,12 +588,12 @@ def tableau_lecture(params):
     """Clearly fictional documents: practise selecting a row, unit and column."""
     rows = params['rows']
     columns = params['columns']
-    width, cell, top = 600, 600 / len(columns), 112
+    width, cell, top = 540, 540 / len(columns), 112
     height = top + 62 * (len(rows) + 1) + 40
     S = SVG(width, height)
     S.add(f'<rect width="{width}" height="{height}" fill="#fff"/>')
-    S.add(f'<text x="300" y="32" font-family="{FONT}" font-size="18" text-anchor="middle" fill="#555">DOCUMENT FICTIF — EXERCICE</text>')
-    S.add(f'<text x="300" y="72" font-family="{FONT}" font-size="25" font-weight="700" text-anchor="middle" fill="#222">{esc(params["title"])}</text>')
+    S.add(f'<text x="270" y="32" font-family="{FONT}" font-size="20" text-anchor="middle" fill="#555">DOCUMENT FICTIF — EXERCICE</text>')
+    S.add(f'<text x="270" y="72" font-family="{FONT}" font-size="30" font-weight="700" text-anchor="middle" fill="#222">{esc(params["title"])}</text>')
     for row_index, row in enumerate([columns] + rows):
         if len(row) != len(columns):
             raise ValueError('tableau : nombre de colonnes incohérent')
@@ -600,8 +601,14 @@ def tableau_lecture(params):
         for col_index, value in enumerate(row):
             x = col_index * cell
             S.add(f'<rect x="{x}" y="{y}" width="{cell}" height="62" fill="{"#e7edf5" if row_index == 0 else "#fff"}" stroke="#aab4c0"/>')
-            S.add(f'<text x="{x + cell / 2}" y="{y + 39}" font-family="{FONT}" font-size="23" text-anchor="middle" fill="#111">{esc(str(value))}</text>')
-    S.add(f'<text x="300" y="{height - 12}" font-family="{FONT}" font-size="16" text-anchor="middle" fill="#555">Valeurs propres à cet exercice</text>')
+            lines = textwrap.wrap(str(value), width=11, break_long_words=False, break_on_hyphens=False)
+            if len(lines) > 2:
+                raise ValueError('tableau : raccourcir le libellé de cellule')
+            baseline = y + (39 if len(lines) == 1 else 24)
+            spans = ''.join(f'<tspan x="{x + cell / 2}" y="{baseline + i * 28}">{esc(line)}</tspan>'
+                            for i, line in enumerate(lines))
+            S.add(f'<text font-family="{FONT}" font-size="28" text-anchor="middle" fill="#111">{spans}</text>')
+    S.add(f'<text x="270" y="{height - 12}" font-family="{FONT}" font-size="18" text-anchor="middle" fill="#555">Valeurs propres à cet exercice</text>')
     return str(S)
 
 

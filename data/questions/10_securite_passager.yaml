@@ -18,19 +18,28 @@
   - revision::v3_1
 - id: s-femme-enceinte
   question: Une femme enceinte doit-elle porter la ceinture ?
-  reponse: 'Oui : sangle basse sous le ventre (sur les hanches), sangle haute entre les seins ; c''est la meilleure protection du bébé comme de la mère.'
-  explication: Une dispense médicale est possible mais rare. Se tenir éloignée du volant et de l'airbag (au moins 25 cm environ).
+  reponse: 'Oui : sangle basse sous le ventre (sur les hanches), sangle haute entre les seins ; c''est la meilleure
+    protection du bébé comme de la mère.'
+  explication: Régler le siège selon la notice, avec de l’espace devant le buste et l’accès aux commandes.
+    La grossesse ne dispense pas à elle seule de ceinture ; une dispense médicale relève d’une procédure spécifique.
   theme: S
   sous_theme: passagers
   importance: utile
   source: securite-routiere.gouv.fr — La ceinture de sécurité
+  tags:
+  - revision::v5
 - id: s-airbag-distance
-  question: À quelle distance du volant le conducteur doit-il se tenir pour que l'airbag protège sans blesser ?
-  reponse: Au moins 25 cm environ entre le sternum et le centre du volant, ceinture bouclée (l'airbag est conçu pour compléter la ceinture, pas la remplacer).
-  explication: 'L''airbag se déploie en quelques dizaines de millisecondes à plus de 200 km/h : trop près, il frappe au lieu d''amortir. Pas de pieds sur le tableau de bord côté passager.'
+  question: Je suis très près du volant. Pourquoi reculer le siège tout en gardant les commandes accessibles
+    ?
+  reponse: Pour laisser à l’airbag l’espace prévu pour se déployer, avec la ceinture correctement portée. Je
+    règle ma position selon la notice sans perdre l’accès aux pédales.
+  explication: La distance recommandée dépend du constructeur ; environ 25 cm est un repère courant, pas une
+    garantie de protection ni une obligation universelle.
   theme: S
   sous_theme: passagers
   source: securite-routiere.gouv.fr — S'installer au poste de conduite ; constructeurs
+  tags:
+  - revision::v5
 - id: s-animaux
   question: Comment transporter un animal en voiture ?
   reponse: Attaché (harnais relié à la ceinture) ou dans une caisse, ou derrière un filet ou une grille dans le coffre — jamais libre dans l'habitacle ni sur les genoux du conducteur.

@@ -8,26 +8,21 @@
   source: ADEME ; Codeclic — Conduite économique ; Ornikar — Conduite écologique
   tags:
   - revision::v3_1
-- id: e-vitesse-chiffres
-  explication: Le litre économisé par 100 km est une donnée de cet exercice, pas une loi universelle. Temps
-    = distance / vitesse ; hors arrêts et circulation.
-  theme: E
-  sous_theme: ecoconduite
-  source: 'Application arithmétique : données hypothétiques explicites, t = d/v ; économie = écart de consommation
-    × distance / 100'
-  tags:
-  - revision::v3_1
-  - revision::v4
-  rappels:
-  - 'Exercice : 7 L/100 km à 130, 6 L/100 km à 120. Sur 500 km, le gain est {{c1::5 L}}.'
-  - Sur 100 km à vitesse constante, passer de 130 à 120 km/h ajoute environ {{c2::4 minutes}} au trajet.
 - id: e-critair-chiffres
-  dedup_ok: [aff-e-diesel-critair1]
-  texte: "Crit'Air : {{c1::6}} classes numérotées à partir de 0, plus les non classés ; un diesel récent (Euro 5-6, 2011+) est Crit'Air {{c2::2}} ; une essence récente, un hybride rechargeable ou un véhicule au gaz est Crit'Air {{c3::1}} ; les véhicules d'avant {{c4::1997}} sont non classés."
-  explication: "Couleurs : 0 vert (électrique, hydrogène), 1 violet, 2 jaune, 3 orange, 4 bordeaux, 5 gris. À date égale, un diesel est une classe en dessous d'une essence."
+  dedup_ok:
+  - aff-e-diesel-critair1
+  explication: 'La classification dépend aussi de la catégorie. Ne pas étendre les dates des voitures aux motos
+    ou poids lourds. Une classe identique n’autorise pas automatiquement l’accès à toutes les ZFE : consulter
+    les règles locales.'
   theme: E
   sous_theme: pollution
-  source: "service-public.fr F33371 ; certificat-air.gouv.fr"
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F33371
+  rappels:
+  - Pour une voiture diesel Euro 5 ou 6, la vignette est Crit’Air {{c1::2}}.
+  - Pour une voiture essence Euro 5 ou 6, la vignette est Crit’Air {{c2::1}}.
+  - Pour une voiture entièrement électrique ou à hydrogène, la vignette Crit’Air est {{c3::verte (classe électrique)}}.
+  tags:
+  - revision::v5
 - id: e-pic-pollution-chiffres
   dedup_ok:
   - e-pic-pollution

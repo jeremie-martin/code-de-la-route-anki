@@ -70,3 +70,16 @@
   notes:
   - l-visuel-m12-edpm
   - l-visuel-m12-voiture
+- id: v5-acces-vitesse
+  raison: Même panneau C107 ; seule la séparation des chaussées change le plafond applicable.
+  notes:
+  - l-c107-route-simple
+  - l-c107-route-separee
+- id: v5-secours-condition
+  raison: La présence d’un objet dans la plaie ou l’origine traumatique change l’action ; ne pas étendre une
+    procédure hors de ses conditions.
+  notes:
+  - a-hemorragie
+  - a-objet-plaie
+  - a-pls
+  - a-traumatisme-respiration

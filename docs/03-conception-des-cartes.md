@@ -1,4 +1,4 @@
-# Conception des cartes — v4
+# Conception des cartes — v5
 
 ## Ce que l’on optimise
 
@@ -40,8 +40,8 @@ sous-thème, qui pouvait servir d’indice involontaire.
 Les clozes restent adaptées aux seuils utiles, mais une table visible peut permettre un calcul ou une
 déduction au lieu du rappel voulu. Le socle évite les nombreuses tables de statistiques et de sanctions
 secondaires ; il combine les seuils importants avec des applications nouvelles. Pour toute nouvelle
-cloze, examiner **chaque recto rendu**, pas seulement la note YAML. La v4 est un départ neuf ; pour les versions suivantes, ne pas changer les numéros des
-clozes publiées sans traiter la migration de leurs cartes.
+cloze, examiner **chaque recto rendu**, pas seulement la note YAML. La v5 est un départ neuf autorisé par l’absence d’import ; une diffusion ultérieure auprès
+d’utilisateurs ayant étudié le deck doit traiter toute migration de cibles ou de numéros de cloze.
 
 Deux cartes sur la même règle sont justifiées si elles entraînent des compétences différentes :
 reconnaissance d’un marquage puis décision avec trafic, rappel d’un seuil puis application à un cas
@@ -68,7 +68,8 @@ ne lit pas la réponse française et ne valide pas les piétons, tous les feux o
 
 Conserver la séparation YAML / rendu / paquet. Ajouter une compétence dans le manifeste de tout le deck
 avec sa justification, puis rattacher explicitement chaque note à sa place dans le parcours. Vérifier données, ordre, rendus et
-réimportation avec historique. Préserver aussi les identifiants internes des champs et gabarits dans
+réimportation dans la même édition. Exécuter aussi `python -m build.render_check` avec les dépendances
+QA et Chrome : les contrôles portent sur un import du paquet, pas sur une ancienne collection de build. Préserver aussi les identifiants internes des champs et gabarits dans
 `data/_meta/anki_schema.json`, repris du paquet v2 publié. Ne pas confondre reproduction du contenu
 avec identité binaire : les paquets contiennent notamment des dates de génération.
 

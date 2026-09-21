@@ -213,12 +213,17 @@
   sous_theme: poids_lourds
   source: 'Code de la route, art. R412-25'
 - id: aff-u-pl-distance-arret
-  affirmation: À vitesse égale, un poids lourd chargé a besoin d'une distance d'arrêt nettement plus longue qu'une voiture.
+  affirmation: Je garde une marge importante avant de me rabattre, sans le forcer à ralentir.
   verdict: vrai
-  pourquoi: 'Sa masse (jusqu''à 44 t) allonge le freinage : je ne me rabats pas juste devant lui et je ne freine pas brusquement quand il me suit. Hors agglomération, deux poids lourds gardent 50 m (R412-12).'
+  pourquoi: Sa capacité d’arrêt dépend de sa vitesse, de ses freins, de sa charge et de l’adhérence. La masse
+    seule ne donne pas un rapport fixe avec une voiture. Préserver son intervalle ; R414-10 interdit un rabattement
+    provoquant son ralentissement.
   theme: U
   sous_theme: poids_lourds
-  source: 'Code de la route, art. R412-12 ; coursdecode — Les poids lourds'
+  source: R414-10 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
+  contexte: Je viens de dépasser un poids lourd chargé.
+  tags:
+  - revision::v5
 - id: aff-u-bus-hors-agglo
   contexte: Hors agglomération, un autocar met son clignotant gauche pour quitter son arrêt.
   affirmation: Je dois ralentir et, au besoin, m'arrêter pour le laisser repartir.
@@ -237,13 +242,16 @@
   sous_theme: vehicules_prioritaires
   source: 'Code de la route, art. R415-12 et R313-27'
 - id: aff-u-prioritaire-feu-rouge-radar
-  contexte: Pour dégager le passage à un camion de pompiers, j'ai franchi au pas la ligne d'arrêt au feu rouge.
-  affirmation: Le radar de franchissement me vaudra une amende malgré tout.
+  contexte: Je suis arrêté au rouge ; les pompiers annoncent leur approche derrière moi.
+  affirmation: Leur sirène suffit à me permettre de traverser tout le carrefour sans vérifier les autres usagers.
   verdict: faux
-  pourquoi: 'Les clichés sont contrôlés par un officier de police judiciaire : quand le véhicule d''urgence apparaît, l''avis n''est pas envoyé. La manœuvre doit rester au pas et ne mettre personne en danger.'
+  pourquoi: Je facilite leur passage en contrôlant la circulation, sans créer un nouveau danger. Ne pas confondre
+    dégager prudemment le passage et traverser aveuglément au rouge ; une consigne d’un agent prime.
   theme: U
   sous_theme: vehicules_prioritaires
-  source: 'securite-routiere.gouv.fr — Info/intox : griller un feu pour un véhicule prioritaire'
+  source: Code de la route, R415-12 et R411-28
+  tags:
+  - revision::v5
 - id: aff-u-prioritaire-route-prioritaire
   contexte: Je circule sur une route à caractère prioritaire ; une ambulance du SAMU arrive de ma droite, gyrophare et deux tons.
   affirmation: Ma priorité de passage l'emporte sur la sienne.

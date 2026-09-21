@@ -3,7 +3,7 @@
 Une citation est nécessaire mais ne suffit pas : il faut qu’elle couvre **la phrase et ses conditions**.
 Une référence « Code de la route » ou « ISO 2575 » ne valide pas à elle seule une consigne de conduite.
 Le registre [`data/_meta/source_checks.yaml`](../data/_meta/source_checks.yaml) associe les contrôles
-externes ciblés des révisions v3 et v4 à leurs notes et à leur portée, avec date de consultation du 21 septembre 2026.
+externes ciblés des révisions v3, v4 et v5 à leurs notes et à leur portée, avec date de consultation du 21 septembre 2026.
 Ce registre ne signifie pas que toute la bibliothèque a été à nouveau vérifiée ligne par ligne.
 
 ## Références utilisées pour la révision
@@ -42,7 +42,7 @@ aides et les alertes, suivre les spécifications du véhicule.
 Les dossiers v1/v2 (`exam.md`, `legal-facts.md`, `knowledge-facts.md`, `signs-notes.md`, `review-*.md`)
 sont conservés comme historique de recherche. Une formulation ancienne qui y subsiste ne doit pas
 être réintroduite sans consulter la carte actuelle et le journal de révision. Les fichiers
-`docs/01-…`, `02-…`, `03-…` et `06-…` décrivent les décisions actuelles.
+`README.md`, `docs/03-…` et `docs/10-…` décrivent l’édition actuelle ; les bilans v3/v4 restent historiques.
 
 ## Images et contrôle
 
@@ -76,3 +76,11 @@ L’[arrêté de signalisation consolidé](https://www.legifrance.gouv.fr/loda/i
 précise notamment les catégories M4d1/M12 et l’obligation des EDPM sous C113. Ne pas généraliser la
 formulation « cyclistes » d’un signal à tous les pictogrammes vélo : le texte de R19 reste distinct.
 La consultation de cette source corrige les notes concernées, sans certifier tous les autres signaux.
+
+## Contrôles supplémentaires v5
+
+Les entrées `v5-*` documentent les nouvelles consultations : vitesse/configuration de route,
+dépassement, chemin de terre, PSC 2026, fatigue, Crit’Air, délits, alcool/stupéfiants, déclaration
+du vol, permis/remorque et obligations locales EDPM. Voir le [bilan v5](10-bilan-v5.md).
+L’étiquette `revision::v5` indique une modification éditoriale, **pas une vérification externe
+intégrale de la note**. Le registre seul indique la portée réellement consultée.

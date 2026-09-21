@@ -25,9 +25,9 @@
   tags:
   - revision::v3_1
 - id: m-feux-portees
-  explication: 'Piège de vocabulaire : « visible à » (position) vs « éclaire à » (croisement, route). Feu(x)
-    de brouillard arrière obligatoires sur les véhicules depuis 1990 ; brouillard avant, recul et feux de jour
-    facultatifs.'
+  explication: Distinguer « être visible » (position) et « éclairer » (croisement, route). Ces minima réglementaires
+    par temps clair ne décrivent pas une portée réelle garantie en pluie, brouillard ou face à un obstacle
+    sombre.
   theme: M
   sous_theme: feux
   source: Code de la route, art. R313-2 à R313-4
@@ -37,3 +37,4 @@
   - De nuit par temps clair, les feux de route doivent éclairer efficacement à au moins {{c3::100 m}}.
   tags:
   - revision::v4
+  - revision::v5

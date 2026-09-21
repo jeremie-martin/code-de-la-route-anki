@@ -35,12 +35,16 @@
   sous_theme: verifications
   source: "securite-routiere.gouv.fr — Bien préparer son trajet ; REMC"
 - id: p-siege-reglage
-  question: "Je m'installe au volant d'une voiture que je ne connais pas. Comment je règle l'avancée du siège ?"
-  reponse: "J'enfonce la pédale d'embrayage à fond : ma jambe gauche doit rester légèrement fléchie. Jambe tendue, le siège est trop loin et je ne pourrais pas écraser le frein en urgence."
-  explication: "Je m'assois au fond du siège, puis je règle la hauteur pour voir loin devant et lire le tableau de bord sans que mes genoux touchent le volant."
+  question: Je m’installe au volant d’une voiture à boîte manuelle. Comment vérifier l’avancée du siège ?
+  reponse: Pédale d’embrayage enfoncée à fond, ma jambe reste légèrement fléchie. Je dois aussi pouvoir freiner
+    à fond sans déplacer mon bassin.
+  explication: Avec une boîte automatique, vérifier l’accès et l’enfoncement complet de la pédale de frein.
+    Les réglages doivent laisser les commandes accessibles sans étirer les jambes.
   theme: P
   sous_theme: installation
-  source: "REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite"
+  source: REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite
+  tags:
+  - revision::v5
 - id: p-dossier-reglage
   question: "Le siège est à la bonne distance. Comment je vérifie l'inclinaison du dossier ?"
   reponse: "Bras tendus, je pose les poignets sur le haut du volant sans décoller les épaules du dossier ; mes bras seront alors semi-fléchis, mains sur le cerceau."
@@ -120,16 +124,21 @@
   sous_theme: quitter
   source: "En Voiture Simone — Précautions pour quitter son véhicule ; securite-routiere.gouv.fr"
 - id: p-pente-roues
-  question: "Je stationne dans une rue en forte pente, le long d'un trottoir. Dans quel sens je braque les roues ?"
-  reponse: "En descente vers le trottoir, en montée vers la chaussée : si le frein lâche, le pneu vient buter contre la bordure au lieu de partir seul."
-  explication: "En montée, la voiture reculerait : roues avant braquées vers la route, l'arrière du pneu avant droit vient s'appuyer contre le trottoir. Sans trottoir, roues vers l'accotement dans les deux cas."
+  question: Je stationne à droite, en forte pente, contre une bordure de trottoir. Comment orienter les roues
+    ?
+  reponse: 'En descente vers le trottoir, en montée vers la chaussée : si le frein lâche, le pneu vient buter
+    contre la bordure au lieu de partir seul.'
+  explication: Ce repère suppose une bordure pouvant retenir le pneu. Sans bordure, orienter pour limiter un
+    départ vers la circulation ; appliquer le frein de stationnement et la procédure de la notice.
   image:
     gen: roue_position
     params:
       pente: descente
   theme: P
   sous_theme: quitter
-  source: "securite-routiere.gouv.fr ; Codes Rousseau — Stationner en pente"
+  source: securite-routiere.gouv.fr ; Codes Rousseau — Stationner en pente
+  tags:
+  - revision::v5
 - id: p-pente-vitesse
   question: "Même rue en pente, boîte manuelle : quel rapport j'engage en plus du frein à main ?"
   reponse: "La première en montée, la marche arrière en descente : le moteur retient le véhicule dans le sens où il pourrait partir. En boîte automatique, position P."
@@ -138,12 +147,17 @@
   sous_theme: quitter
   source: "Codes Rousseau — Stationner en pente ; En Voiture Simone — Quitter son véhicule"
 - id: p-ouvrir-portiere
-  question: "Je suis garé le long d'une rue bordée d'une bande cyclable. Que fais-je avant d'ouvrir ma portière ?"
-  reponse: "Je contrôle le rétroviseur puis l'angle mort par-dessus l'épaule, et j'ouvre de la main droite : la main opposée oblige le buste à pivoter vers l'arrière."
-  explication: "L'emportiérage d'un cycliste ou d'un motard est un accident grave ; R417-7 interdit d'ouvrir une portière quand la manœuvre constitue un danger. Je descends côté trottoir quand c'est possible."
+  question: Au siège conducteur d’une voiture à volant à gauche, garée à droite, je vais ouvrir côté circulation.
+    Quels contrôles et quelle main utiliser ?
+  reponse: 'Je contrôle le rétroviseur puis l''angle mort par-dessus l''épaule, et j''ouvre de la main droite
+    : la main opposée oblige le buste à pivoter vers l''arrière.'
+  explication: Le geste de la main opposée facilite le regard arrière, sans remplacer les contrôles. Pour une
+    autre place, adapter le côté et la main ; attention aux vélos même sur un trottoir ou une piste.
   theme: P
   sous_theme: quitter
-  source: "Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Portière gauche, main droite"
+  source: Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Portière gauche, main droite
+  tags:
+  - revision::v5
 - id: p-passagers-descendre
   question: "Je m'arrête le long d'une rue pour déposer mes enfants assis à l'arrière. Comment ils descendent ?"
   reponse: "Côté trottoir, après avoir vérifié qu'aucun vélo ni trottinette n'arrive ; la sécurité enfant étant active, c'est moi qui leur ouvre depuis l'extérieur, portière peu entrebâillée."

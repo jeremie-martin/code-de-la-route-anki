@@ -594,7 +594,7 @@
   nom: Route à accès réglementé
   signification: 'Début d''une route pour automobiles réservée aux véhicules à moteur : interdite aux piétons, cycles, cyclomoteurs et véhicules lents.'
   conduite: S'insérer par la voie d'accélération ; ni arrêt, ni stationnement, ni demi-tour, ni marche arrière.
-  complement: 'Vitesse maximale 110 km/h si 2×2 voies avec séparateur (100 sous la pluie), 80 sur route bidirectionnelle. Fin : C108.'
+  complement: 'Hors agglomération : 110 km/h sur chaussées séparées par terre-plein central, 80 sur une voie par sens sans séparateur ni relèvement ; appliquer les limites plus basses et les conditions météo/probatoires. Fin : C108.'
   piege: 'Le panneau ne fixe pas à lui seul la vitesse maximale : lire la route, les limitations et les conditions.'
   theme: L
   sous_theme: panneaux

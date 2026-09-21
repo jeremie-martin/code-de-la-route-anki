@@ -17,8 +17,8 @@
 - id: l-danger
   theme: L
   titre: Reconnaître le danger et anticiper avant de le voir
-  raison: Chaque danger appelle une anticipation ; les variantes gauche/droite et les dangers moins rencontrés consolident
-    la reconnaissance sans changer le standard de qualité.
+  raison: Chaque danger appelle une anticipation ; les variantes gauche/droite et les dangers moins rencontrés
+    consolident la reconnaissance sans changer le standard de qualité.
   notes:
   - a1a
   - a1c
@@ -102,6 +102,7 @@
   - scn-pd-trois-vehicules
   - l-priorite-droite-defaut
   - l-passage-pieton-50m
+  - l-priorite-prudence
   consolidation:
   - l-sortie-stationnement
   - aff-l-chemin-terre
@@ -446,6 +447,8 @@
   - aff-l-vitesse-sous-limite
   - l-visuel-b14-position
   - l-visuel-b14-adaptation
+  - l-c107-route-simple
+  - l-c107-route-separee
   consolidation:
   - sr3a
   - sr3b
@@ -642,6 +645,7 @@
   - aff-c-pause-sans-signe
   - aff-c-micro-sommeil
   - aff-c-nuit-trafic-fluide
+  - c-fatigue-apres-pause
   consolidation:
   - c-nuit-risque
   - c-routine-monotonie
@@ -755,7 +759,6 @@
   - l-insertion-autoroute-priorite
   - r-autoroute-insertion-fin-voie
   - r-autoroute-sortie
-  - r-autoroute-sortie-ratee
   - r-autoroute-panne
   - r-autoroute-panne-attendre
   - aff-r-autoroute-bouchon-detresse
@@ -1181,6 +1184,7 @@
   - aff-s-caravane-passager
   - s-remorque-seuil-750
   - s-remorque-seuil-800
+  - s-remorque-masse-reelle
   consolidation:
   - s-coffre-toit
   - s-remorque-permis-b
@@ -1212,6 +1216,8 @@
   - triangle-distance
   - rcp-rythme
   - numero-114
+  - a-objet-plaie
+  - a-traumatisme-respiration
   consolidation:
   - triangle-presignalisation
   - borne-appel-autoroute
@@ -1280,7 +1286,6 @@
   - d-carte-grise-delais
   - d-constat-declaration
   - d-vitres-teintees
-  - d-fourriere-abandon
   - d-controle-papiers-oublies
   - d-vente-vehicule
   - aff-d-permis-numerique
@@ -1303,9 +1308,9 @@
   - aff-e-coffre-toit-vide
   - aff-e-trajets-courts
   - e-ecomobilite-choix
+  - e-budget-trajet-tableau
   consolidation:
   - e-surconsommations
-  - e-vitesse-chiffres
   - aff-e-clim-autoroute
   - aff-e-point-mort-descente
   - aff-e-moteur-chauffer
@@ -1343,8 +1348,8 @@
 - id: x-format
   theme: X
   titre: Connaître les contraintes de l’épreuve
-  raison: Se préparer au temps disponible, au seuil de réussite et à la validation des réponses ; ces repères complètent
-    la lecture des scènes.
+  raison: Se préparer au temps disponible, au seuil de réussite et à la validation des réponses ; ces repères
+    complètent la lecture des scènes.
   notes:
   - etg-format-questions
   - etg-temps-par-question
@@ -1353,8 +1358,8 @@
 - id: l-orientation
   theme: L
   titre: Lire un itinéraire et préparer sa voie
-  raison: Couleurs, cartouches, confirmation et affectation de voies servent à choisir assez tôt ; une erreur de
-    direction ne justifie pas une manœuvre dangereuse.
+  raison: Couleurs, cartouches, confirmation et affectation de voies servent à choisir assez tôt ; une erreur
+    de direction ne justifie pas une manœuvre dangereuse.
   notes:
   - c12
   - c28
@@ -1462,8 +1467,8 @@
 - id: c-vision
   theme: C
   titre: Comprendre les limites de la vision et les compensations
-  raison: Champ utile, éblouissement et correction visuelle expliquent où chercher l’information ; les ordres de
-    grandeur ne sont pas des garanties individuelles.
+  raison: Champ utile, éblouissement et correction visuelle expliquent où chercher l’information ; les ordres
+    de grandeur ne sont pas des garanties individuelles.
   notes: []
   consolidation:
   - c-champ-visuel-chiffres
@@ -1505,7 +1510,6 @@
   notes: []
   consolidation:
   - d-classes-amendes
-  - d-amende-minoree-majoree
   - d-telephone-sanction
   - d-ceinture-sanction
   - d-feu-rouge-stop-sanction

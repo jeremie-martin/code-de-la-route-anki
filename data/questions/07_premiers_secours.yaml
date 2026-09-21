@@ -9,13 +9,17 @@
   sous_theme: proteger
   source: "Code de la route, art. R416-19 ; Ornikar — Protéger la zone ; Croix-Rouge française"
 - id: a-incendie-vehicule
-  question: "Un véhicule accidenté commence à prendre feu sous le capot : que fais-je ?"
-  reponse: "J'éloigne tout le monde et j'alerte le 18 ou le 112 ; avec un extincteur je vise par la calandre ou sous le moteur sans ouvrir le capot en grand (l'appel d'air ravive le feu)."
-  explication: "L'extincteur n'est pas obligatoire en voiture. Face à un camion portant une plaque orange (matières dangereuses), je m'éloigne et je lis les codes de la plaque aux secours."
+  question: 'Un véhicule accidenté commence à prendre feu sous le capot : que fais-je ?'
+  reponse: J’éloigne les personnes du danger et j’alerte le 18 ou le 112. Je ne m’expose pas pour essayer d’éteindre
+    le feu.
+  explication: Ne pas ouvrir le capot en grand ni s’approcher pour lire une plaque de matières dangereuses.
+    Transmettre aux secours seulement les informations observables en sécurité ; suivre leurs consignes.
   theme: A
   sous_theme: proteger
   importance: utile
-  source: "Ornikar — Protéger la zone ; Croix-Rouge française"
+  source: Sécurité civile, PSC juillet 2026, Protection — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  tags:
+  - revision::v5
 - id: a-alerter-borne-ou-portable
   question: 'Témoin d''un accident sur autoroute, j''ai mon portable et une borne d''appel orange à 200 m : lequel
     j''utilise ?'
@@ -58,16 +62,19 @@
   tags:
   - revision::v3
 - id: a-rcp-dae
-  question: Un adulte ne répond pas et ne respire pas normalement (respiration absente ou gasps). Que fais-je ?
+  question: Un adulte ne répond pas et ne respire pas normalement (respiration absente ou gasps). Que fais-je
+    ?
   reponse: J’alerte, fais apporter un DAE et commence immédiatement la RCP ; je suis les instructions des secours
     et du DAE.
-  explication: 30 compressions au milieu de la poitrine (5-6 cm, 100 à 120 par minute) puis 2 insufflations ; dès
-    que le DAE arrive, je l'allume et je suis ses consignes vocales.
+  explication: 'Adulte : 30 compressions puis 2 insufflations si je sais et peux les pratiquer ; sinon compressions
+    continues. Fréquence 100–120/min, profondeur 5–6 cm. Faire alerter et apporter le DAE ; suivre le guidage
+    des secours.'
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
   tags:
   - revision::v3
+  - revision::v5
 - id: a-dae-utilisation
   question: "Un témoin apporte un DAE ; je l'ai allumé et j'ai posé les électrodes. L'appareil annonce « analyse en cours » : que fais-je ?"
   reponse: "Je m'écarte et j'empêche quiconque de toucher la victime pendant l'analyse puis pendant le choc ; ensuite je reprends aussitôt les compressions, en suivant ses consignes vocales."
@@ -76,12 +83,17 @@
   sous_theme: secourir
   source: "Croix-Rouge française — Défibrillateur ; décret n° 2007-705"
 - id: a-hemorragie
-  question: "Une victime saigne abondamment du bras : que fais-je ?"
-  reponse: "J'appuie fortement et directement sur la plaie (linge propre, main protégée par un gant ou un sac) et je maintiens la compression en l'allongeant jusqu'aux secours ; le garrot n'est qu'un dernier recours."
-  explication: "Garrot seulement si la compression est impossible ou inefficace : on note l'heure et on ne le desserre pas. On ne retire pas un objet planté dans la plaie. Brûlure : refroidir 10 à 20 minutes à l'eau tempérée."
+  question: Zone protégée. Une victime saigne abondamment du bras, sans objet planté dans la plaie. Quel geste
+    immédiat ?
+  reponse: Je comprime fortement la plaie, main protégée si possible, et maintiens la pression ; je fais allonger
+    la victime et alerter les secours.
+  explication: 'Si la compression d’un membre est impossible ou inefficace : garrot selon la formation ou le
+    guidage des secours ; noter l’heure, ne pas le desserrer. La présence d’un objet planté change le geste.'
   theme: A
   sous_theme: secourir
-  source: "Croix-Rouge française — Hémorragie ; Brûlure ; Ornikar — Secourir un blessé"
+  source: Sécurité civile, PSC juillet 2026, pages 15–18 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  tags:
+  - revision::v5
 - id: a-blesse-deplacer
   question: 'Un blessé conscient est coincé dans sa voiture, en plein soleil. Un témoin veut le sortir pour le mettre
     à l''ombre : que fais-je ?'

@@ -127,17 +127,16 @@
   tags:
   - revision::v3
 - id: d-classes-amendes
-  texte: 'Amendes forfaitaires par classe de contravention : 1re {{c1::11 €}}, 2e {{c2::35 €}}, 3e {{c3::68 €}}, 4e {{c4::135 €}} ; 5e classe : jusqu''à 1 500 € (forfaitisée à 200 € pour certaines depuis 2024).'
-  explication: Les contraventions relèvent du tribunal de police, les délits du tribunal correctionnel (prison possible). Les 4 premières classes ne figurent pas au casier judiciaire.
+  texte: Une contravention relève du tribunal de police ; un délit relève du {{c1::tribunal correctionnel}}
+    et peut exposer à une peine de prison.
+  explication: Une amende forfaitaire, une amende majorée et le maximum fixé par la loi ne sont pas le même
+    montant. Pour un avis reçu, lire sa procédure et ses délais. Les infractions utiles au permis sont étudiées
+    dans leurs situations.
   theme: D
   sous_theme: sanctions
   source: Code pénal, art. 131-13 ; Code de procédure pénale, art. R49 ; service-public.fr F18509
-- id: d-amende-minoree-majoree
-  texte: 'Une amende de 4e classe (135 €) est minorée à {{c1::90 €}} si elle est payée dans les 15 jours (30 jours en ligne) et majorée à {{c2::375 €}} au-delà de 45 jours (60 jours en ligne) ; pour une 3e classe (68 €) : 45 € minorée, 180 € majorée ; 2e classe (35 €) : 22 € / 75 €.'
-  explication: Pas de minoration en 1re classe ni pour le stationnement. La contestation se fait dans les 45 jours (30 jours pour une majorée).
-  theme: D
-  sous_theme: sanctions
-  source: Code de procédure pénale, art. R49-7 et R49-9 ; service-public.fr F18509
+  tags:
+  - revision::v5
 - id: d-telephone-sanction
   texte: 'Téléphone tenu en main, oreillette, écouteurs ou casque audio au volant : {{c1::135 €}} et {{c2::3 points}} ; si l''infraction est commise en même temps qu''une autre (vitesse, feu, priorité, ligne continue…), le permis peut être retenu immédiatement puis suspendu jusqu''à 6 mois.'
   explication: 'L''interdiction vaut dès que le véhicule est en circulation, même arrêté au feu ou dans un bouchon (Cass. 2018). Le kit mains libres intégré au véhicule est toléré. Un écran vidéo dans le champ de vision : 5e classe et 3 points.'
@@ -172,14 +171,20 @@
   tags:
   - revision::v4
 - id: d-grand-exces
-  dedup_ok: [aff-d-grand-exces-delit]
-  texte: 'Un excès de vitesse de {{c1::50 km/h}} ou plus est, depuis le 29 décembre 2025, un {{c2::délit}} dès la première fois : 3 mois de prison, 3 750 € d''amende, {{c3::6 points}}, suspension jusqu''à 3 ans et confiscation possible (obligatoire en récidive).'
-  explication: 'Avant (banque de questions 2023) : contravention de 5e classe (1 500 €, 6 points), délit seulement en récidive. Un excès ≥ 30 km/h est aussi l''une des circonstances aggravantes de l''homicide routier (loi du 9 juillet 2025).'
+  dedup_ok:
+  - aff-d-grand-exces-delit
+  explication: 'Depuis le 29 décembre 2025. Peines maximales encourues : trois mois de prison et 3 750 € ;
+    autres mesures possibles selon la procédure. Ne pas confondre maxima judiciaires et sanction systématiquement
+    prononcée.'
   theme: D
   sous_theme: sanctions
   tags:
   - nouveau::2025
-  source: Code de la route, art. L413-1 (loi n° 2025-622 du 9 juillet 2025 ; décret n° 2025-1269 du 22 décembre 2025)
+  - revision::v5
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F19460
+  rappels:
+  - En 2026, un excès de vitesse retenu d’au moins 50 km/h constitue un {{c1::délit dès la première fois}}.
+  - Un excès de vitesse retenu d’au moins 50 km/h entraîne le retrait de {{c2::6 points}}.
 - id: d-alcool-contravention
   texte: 'Alcoolémie au moins égale à 0,5 g/L et inférieure à 0,8 g/L (seuil bas 0,2 en probatoire) : amende
     forfaitaire de {{c1::135 €}} et retrait de {{c2::6 points}}.'
@@ -191,55 +196,89 @@
   tags:
   - revision::v4
 - id: d-alcool-delit
-  texte: Conduire avec au moins 0,8 g/L de sang (0,40 mg/L d'air) ou en état d'ivresse manifeste est un délit puni de {{c1::3 ans}} de prison et {{c2::9 000 €}} d'amende, {{c3::6 points}}, suspension jusqu'à 5 ans, annulation possible avec interdiction de repasser le permis jusqu'à 5 ans, confiscation du véhicule.
-  explication: 'Valeurs relevées par la loi du 9 juillet 2025 (avant : 2 ans et 4 500 €, que la banque 2023 peut encore afficher). L''ivresse manifeste est, depuis août 2026, un délit distinct (L237-1) aux mêmes peines, comme le refus de dépistage.'
+  explication: Le seuil est inclus. Des peines de prison et d’amende ainsi qu’une suspension ou annulation
+    sont encourues. L’ivresse manifeste et le refus de vérification constituent aussi des délits ; les peines
+    maximales ne sont pas automatiques.
   theme: D
   sous_theme: sanctions
   tags:
   - nouveau::2025
+  - revision::v5
   source: Code de la route, art. L234-1, L234-2, L234-8, L237-1 (lois n° 2025-622 et n° 2026-798)
+  rappels:
+  - Le seuil d’alcoolémie qui fait de la conduite un délit est {{c1::0,8 g/L de sang}} (0,40 mg/L d’air expiré).
+  - La conduite avec une alcoolémie délictuelle entraîne le retrait de {{c2::6 points}}.
 - id: d-stupefiants-delit
-  texte: 'Conduire après usage de stupéfiants (toute trace, sans seuil) : délit puni de {{c1::3 ans}} de prison et {{c2::9 000 €}}, 6 points, suspension jusqu''à 5 ans ; combiné à l''alcool : {{c3::5 ans}}, {{c4::15 000 €}} et 9 points.'
-  explication: 'Valeurs de la loi du 9 juillet 2025 (avant : 2 ans et 4 500 €). Aucun seuil : toute trace suffit. Dépistage salivaire possible à tout moment, obligatoire après un accident corporel ; le refus est puni comme un test positif.'
+  explication: L’analyse établit l’usage ; le dépistage n’est pas un test d’aptitude. Alcool et stupéfiants
+    cumulent les risques et aggravent les sanctions. Des peines de prison, d’amende et des mesures sur le permis
+    sont encourues.
   theme: D
   sous_theme: sanctions
   tags:
   - nouveau::2025
-  source: Code de la route, art. L235-1 et L235-3 ; service-public.fr F2886
+  - revision::v5
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
+  rappels:
+  - Conduire après usage de stupéfiants est un {{c1::délit}}, même sans signe d’altération ressenti.
+  - 'Conduite après usage de stupéfiants : retrait de {{c2::6 points}} ; en cumul avec une alcoolémie interdite,
+    9 points.'
 - id: d-homicide-routier
-  texte: 'La loi du 9 juillet 2025 a créé l''« {{c1::homicide routier}} » (code pénal, art. 221-18) : 7 ans de prison et 100 000 € d''amende avec une circonstance aggravante (alcool, stupéfiants, excès ≥ 30 km/h, téléphone en main, délit de fuite, refus d''obtempérer, sans permis…), 10 ans et 150 000 € avec deux ou plus.'
-  explication: 'Les « blessures routières » (ITT > 3 mois) : 5 ans et 75 000 €. Peine complémentaire : annulation du permis, interdiction de le repasser pendant 5 à 10 ans. Sans circonstance aggravante, on reste dans l''homicide involontaire.'
+  texte: Causer involontairement la mort d’autrui au volant avec une circonstance aggravante prévue par la
+    loi peut constituer un {{c1::homicide routier}}.
+  explication: Alcool, stupéfiants ou grand excès de vitesse peuvent notamment aggraver les faits. C’est une
+    qualification pénale, pas la preuve d’une intention de tuer. Les peines dépendent des circonstances ; ne
+    pas apprendre une liste abrégée comme exhaustive.
   theme: D
   sous_theme: sanctions
   tags:
   - nouveau::2025
+  - revision::v5
   importance: utile
-  source: Loi n° 2025-622 du 9 juillet 2025 ; Code pénal, art. 221-18 à 221-21
+  source: Code pénal, art. 221-18 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
 - id: d-delit-fuite
-  texte: Le délit de fuite (ne pas s'arrêter après un accident que l'on a causé ou provoqué) est puni de {{c1::3 ans}} de prison et {{c2::75 000 €}} d'amende, {{c3::6 points}}, suspension jusqu'à 5 ans, annulation possible.
-  explication: S'arrêter est obligatoire même sans blessé (constat). En cas de blessés, s'ajoute la non-assistance à personne en danger (5 ans, 75 000 €). Les peines des blessures ou de l'homicide sont doublées en cas de fuite.
+  texte: Après avoir causé ou occasionné un accident, chercher à échapper à sa responsabilité sans s’arrêter
+    peut constituer un {{c1::délit de fuite}}, même sans blessé.
+  explication: S’arrêter et se faire connaître ; alerter et porter l’aide possible si quelqu’un est blessé.
+    Six points et des peines judiciaires sont encourus. Une non-assistance n’est pas automatiquement constituée
+    par toute présence de blessés.
   theme: D
   sous_theme: sanctions
   source: Code pénal, art. 434-10 ; Code de la route, art. L231-1
+  tags:
+  - revision::v5
 - id: d-sans-permis-sans-assurance
-  texte: 'Conduire sans permis : délit, {{c1::1 an}} de prison et {{c2::15 000 €}} (amende forfaitaire délictuelle 800 €), confiscation. Conduire sans assurance : délit, {{c3::3 750 €}} (amende forfaitaire 500 €), suspension jusqu''à 3 ans, confiscation ; sans retrait de points.'
-  explication: L'assurance responsabilité civile est obligatoire pour tout véhicule terrestre à moteur, même s'il ne roule pas, y compris trottinettes électriques, voiturettes et remorques. Le Fonds de garantie (FGAO) indemnise les victimes d'un non-assuré puis se retourne contre lui.
+  explication: 'L’assurance minimale obligatoire est la responsabilité civile. Le FGAO peut indemniser les
+    victimes puis réclamer les sommes au responsable non assuré : une dette considérable peut s’ajouter aux
+    sanctions pénales.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L221-2 et L324-2 ; Code des assurances, art. L211-1
+  tags:
+  - revision::v5
+  texte: Conduire sans le permis requis ou sans assurance constitue un {{c1::délit}}.
 - id: d-refus-obtemperer
-  texte: Le refus d'obtempérer (ne pas s'arrêter à la sommation d'un agent) est un délit puni de {{c1::2 ans}} de prison et {{c2::15 000 €}}, 6 points, suspension jusqu'à 3 ans et confiscation obligatoire du véhicule ; 5 ans et 75 000 € s'il met en danger la vie d'autrui.
-  explication: 'Le rodéo motorisé est puni de 2 ans et 30 000 € depuis août 2026 (avant : 1 an, 15 000 €). Conduire malgré une suspension ou une invalidation : 2 ans, 4 500 €, 6 points.'
+  texte: Refuser la sommation de s’arrêter d’un agent habilité constitue un {{c1::délit de refus d’obtempérer}}.
+  explication: Je m’arrête à l’endroit indiqué sans créer de danger. Des peines judiciaires, un retrait de
+    points et des mesures sur le permis et le véhicule sont encourus ; mettre autrui en danger aggrave les
+    faits.
   theme: D
   sous_theme: sanctions
   importance: utile
   source: Code de la route, art. L233-1, L233-1-1, L236-1, L224-16
+  tags:
+  - revision::v5
 - id: d-autres-bareme-3-points
-  texte: 'Infractions à {{c1::3 points}} (135 €) : dépassement dangereux, non-respect des distances de sécurité, franchissement d''une ligne continue, circulation sur la bande d''arrêt d''urgence, circulation à gauche, vitres avant trop teintées, stationnement dangereux, non-port du casque à moto ; le chevauchement d''une ligne continue ne retire que {{c2::1 point}}.'
-  explication: 'Changement de direction sans clignotant : amende de 35 € seulement, mais 3 points. Accélérer quand on est dépassé : 135 € et 2 points. Sens interdit, marche arrière ou demi-tour sur autoroute, circuler de nuit sans éclairage : 4 points.'
+  explication: Franchir entièrement la ligne continue retire trois points. Le chevauchement autorisé pour dépasser
+    un cycle, un EDPM ou un cyclomobile léger reste soumis aux conditions de sécurité et d’écart latéral.
   theme: D
   sous_theme: sanctions
-  source: Code de la route, art. R412-19, R412-12, R414-4, R412-8, R412-9, R412-10, R412-28, R421-6, R416-11, R417-9
+  source: Code de la route, art. R412-19, R412-12, R414-4, R412-8, R412-9, R412-10, R412-28, R421-6, R416-11,
+    R417-9
+  rappels:
+  - Un dépassement dangereux entraîne un retrait de {{c1::3 points}}.
+  - Hors exception autorisée, chevaucher une ligne continue entraîne le retrait de {{c2::1 point}}.
+  tags:
+  - revision::v5
 - id: d-detecteur-radar
   texte: 'Détenir, transporter ou utiliser un détecteur ou brouilleur de radars : contravention de 5e classe (jusqu''à 1 500 €, forfait 200 €), {{c1::6 points}}, confiscation de l''appareil et éventuellement du véhicule.'
   explication: 'Les avertisseurs de « zones de danger » (Coyote, Waze) restent tolérés. Une plaque absente ou illisible : 135 €, sans points, immobilisation.'
@@ -299,11 +338,17 @@
   sous_theme: documents
   source: Code des assurances, art. L211-1, A121-1 et A121-1-1 ; service-public.fr F2655
 - id: d-constat-declaration
-  texte: Après un accident matériel, on remplit un constat amiable (papier ou e-constat) — sans le signer en cas de désaccord — et on déclare le sinistre à son assureur sous {{c1::5 jours ouvrés}} ({{c2::2 jours}} en cas de vol).
-  explication: 'Le constat n''est pas obligatoire mais évite les litiges : un exemplaire par conducteur, croquis, croix dans les cases, signatures des deux. Ne jamais quitter les lieux sans échanger les identités : ce serait un délit de fuite.'
+  explication: 'Vérifier le contrat : un délai plus long peut être prévu. Le constat décrit les faits ; ne
+    pas signer une description inexacte. Déclarer rapidement sans attendre de régler un désaccord.'
   theme: D
   sous_theme: documents
-  source: Code des assurances, art. L113-2 ; service-public.fr F2149
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2149 ; https://www.service-public.gouv.fr/particuliers/vosdroits/F2685
+  rappels:
+  - Après un accident, le délai usuel pour déclarer le sinistre à l’assureur est {{c1::5 jours ouvrés}}.
+  - Pour un vol de véhicule, le délai contractuel de déclaration à l’assureur ne peut être inférieur à {{c2::2
+    jours ouvrés}} après en avoir eu connaissance.
+  tags:
+  - revision::v5
 - id: d-critair-prix
   texte: 'Crit’Air se commande sur {{c1::certificat-air.gouv.fr}} ; la vignette reste valable {{c2::tant qu’elle
     est lisible et que les informations du véhicule ne changent pas}}. Défaut de vignette dans une zone où elle
@@ -336,10 +381,3 @@
   sous_theme: documents
   importance: utile
   source: Code de la route, art. R316-3-1
-- id: d-fourriere-abandon
-  texte: Un véhicule en fourrière est réputé abandonné {{c1::15 jours}} après la mise en demeure adressée au propriétaire (10 jours s'il est de faible valeur marchande) ; le stationnement abusif est constitué au-delà de {{c2::7 jours}} consécutifs au même endroit (35 €, fourrière possible).
-  explication: 'La fourrière est possible pour tout stationnement gênant, très gênant, dangereux ou abusif. Anciens manuels : « 45 jours » — dépassé.'
-  theme: D
-  sous_theme: documents
-  importance: utile
-  source: Code de la route, art. L325-7 et R417-12

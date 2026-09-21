@@ -145,18 +145,27 @@
   - revision::v3
 - id: c-somnolence-que-faire
   question: Sur autoroute, je bâille, mes paupières sont lourdes et ma trajectoire flotte. Que fais-je ?
-  reponse: 'Je m''arrête à la prochaine aire et je dors 15 à 20 minutes : ce sont des signes de somnolence, contre laquelle on ne peut pas lutter (micro-sommeils de 1 à 4 s).'
-  explication: 'Fatigue (picotements des yeux, nuque raide, regard fixe) = une pause suffit ; somnolence (bâillements, paupières lourdes, oubli des derniers kilomètres) = dormir. Ne pas « tenir jusqu''à la sortie ».'
+  reponse: Je gagne dès que possible un lieu d’arrêt sûr pour dormir ; je ne poursuis pas en luttant contre
+    le sommeil.
+  explication: Prévoir les pauses avant d’être somnolent. Une sieste de 15 à 20 minutes est un repère, pas
+    une autorisation automatique de repartir. Si la vigilance reste insuffisante, différer le trajet ou passer
+    le volant à un conducteur apte.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — La fatigue et la conduite
+  source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf
+  tags:
+  - revision::v5
 - id: c-fatigue-remedes-faux
-  question: 'Café, fenêtre ouverte, musique forte : cela suffit-il pour continuer à conduire quand on est somnolent ?'
-  reponse: 'Non : ces moyens ne retardent la somnolence que quelques minutes et donnent une fausse impression de vigilance. Seul le sommeil (sieste de 15-20 min) est efficace.'
-  explication: 'Piège d''examen classique : « je bois un café et je repars » est une mauvaise réponse ; « je m''arrête sur une aire pour dormir » est la bonne.'
+  question: 'Café, fenêtre ouverte, musique forte : cela suffit-il pour continuer à conduire quand on est somnolent
+    ?'
+  reponse: Non. Je m’arrête en sécurité pour dormir ; je ne reprends que si je suis réellement apte à conduire.
+  explication: Une courte sieste peut aider mais ne garantit pas la récupération. Une fenêtre ouverte ou la
+    musique ne remplace pas le sommeil. Le café ne justifie pas de continuer à lutter contre l’endormissement.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — La fatigue et la conduite
+  source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf
+  tags:
+  - revision::v5
 - id: c-vitesse-fatigue
   question: Rouler vite fatigue-t-il plus que rouler lentement ?
   reponse: 'Oui : à vitesse élevée le cerveau doit traiter plus d''informations en moins de temps, ce qui génère du stress et accélère la fatigue et la perte de vigilance.'
@@ -173,11 +182,16 @@
   source: Code de la route, art. R412-6-1 et L224-1
 - id: c-cannabis-effets
   question: Quels effets le cannabis a-t-il sur la conduite, et combien de temps durent-ils ?
-  reponse: 'Temps de réaction allongé, somnolence, trajectoire mal tenue et distances mal perçues ; les effets durent plusieurs heures et le dépistage salivaire reste positif bien plus longtemps.'
-  explication: 'Aucun seuil : toute trace détectée constitue le délit (L235-1 : 3 ans, 9 000 €, 6 points), et les effets s''additionnent à ceux de l''alcool ou d''un médicament.'
+  reponse: Temps de réaction allongé, somnolence, trajectoire mal tenue et distances mal perçues ; les effets
+    durent plusieurs heures et le dépistage salivaire reste positif bien plus longtemps.
+  explication: Il est interdit de conduire après usage. Le dépistage et la vérification servent à établir cet
+    usage ; ils ne mesurent pas une aptitude à conduire. Les effets peuvent se cumuler avec ceux de l’alcool
+    ou de médicaments.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — La drogue et la conduite ; Code de la route, art. L235-1
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
+  tags:
+  - revision::v5
 - id: c-emotions
   question: Peut-on prendre le volant après une forte émotion (dispute, colère, mauvaise nouvelle) ?
   reponse: 'Mieux vaut attendre : sous le coup de l''émotion, on perçoit moins, on prend plus de risques (vitesse, dépassements) et le temps de réaction s''allonge.'

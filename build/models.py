@@ -83,8 +83,9 @@ CSS = """
 .cdr-img { margin: 6px auto 10px; }
 .cdr-img img { max-width: 100%; max-height: 46vh; width: auto; height: auto; border-radius: 10px; }
 .cdr-img.sign img { max-height: 40vh; max-width: min(100%, 320px); }
-.cdr-pair { display: flex; gap: 18px; justify-content: center; align-items: flex-start; flex-wrap: wrap; }
-.cdr-pair > div { flex: 1 1 200px; max-width: 280px; }
+.cdr-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; align-items: start; }
+.cdr-pair > div { min-width: 0; }
+.cdr-pair .cdr-side { display: block; font-size: 15px; font-weight: 700; margin-bottom: 6px; }
 .cdr-pair img { max-width: 100%; max-height: 32vh; border-radius: 10px; }
 .cdr-pair .lbl { font-size: 17px; font-weight: 700; margin-top: 8px; color: #1a6b3a; }
 .nightMode .cdr-pair .lbl, .night_mode .cdr-pair .lbl { color: #7ed49a; }
@@ -119,6 +120,10 @@ ul.cdr-list { text-align: left; display: inline-block; margin: 6px auto; padding
 .cdr-verdict { display: inline-block; font-size: 20px; font-weight: 800; letter-spacing: .08em; padding: 4px 18px; text-transform: uppercase;
   border-radius: 999px; margin: 10px 0 8px; color: #fff; background: #1a6b3a; }
 .cdr-verdict.faux { background: #d8362d; }
+.cdr-kicker, .cdr-hint, .cdr-src, .cdr-code { color: #626262; }
+.nightMode .cdr-kicker, .nightMode .cdr-hint, .nightMode .cdr-src, .nightMode .cdr-code,
+.night_mode .cdr-kicker, .night_mode .cdr-hint, .night_mode .cdr-src, .night_mode .cdr-code { color: #bdbdbd; }
+.cdr-wrap { overflow-wrap: anywhere; }
 """
 
 KICKER = '<div class="cdr-kicker">{{Theme}}{{#SousTheme}} · {{SousTheme}}{{/SousTheme}}</div>'
@@ -164,12 +169,12 @@ def notetypes() -> list[dict]:
                 "name": "Confusion",
                 "qfmt": (
                     '<div class="cdr-wrap">' + FRONT_KICKER +
-                    '<div class="cdr-pair"><div>{{ImageA}}</div><div>{{ImageB}}</div></div>'
+                    '<div class="cdr-pair"><div><span class="cdr-side">A</span>{{ImageA}}</div><div><span class="cdr-side">B</span>{{ImageB}}</div></div>'
                     '<div class="cdr-q">Quelle est la différence ?</div></div>'
                 ),
                 "afmt": (
                     '<div class="cdr-wrap">' + KICKER +
-                    '<div class="cdr-pair"><div>{{ImageA}}<div class="lbl">{{NomA}}</div></div><div>{{ImageB}}<div class="lbl">{{NomB}}</div></div></div>'
+                    '<div class="cdr-pair"><div><span class="cdr-side">A</span>{{ImageA}}<div class="lbl">{{NomA}}</div></div><div><span class="cdr-side">B</span>{{ImageB}}<div class="lbl">{{NomB}}</div></div></div>'
                     '<hr id=answer>'
                     '<div class="cdr-box">{{Difference}}</div>'
                     + GRADE + SRC + '</div>'

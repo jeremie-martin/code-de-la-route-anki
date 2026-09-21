@@ -92,6 +92,22 @@ Même feu, même direction ; changer le véhicule change la permission, jamais l
 - `l-visuel-m12-edpm` : Je conduis une trottinette électrique (EDPM). Le feu est rouge et porte ce panonceau. Puis-je franchir la ligne d’effet du feu dans la direction fléchée ?
 - `l-visuel-m12-voiture` : Je conduis une voiture. Le feu est rouge et porte ce panonceau. Puis-je franchir la ligne d’effet du feu dans la direction fléchée ?
 
+## v5-acces-vitesse
+
+Même panneau C107 ; seule la séparation des chaussées change le plafond applicable.
+
+- `l-c107-route-simple` : Ce panneau est à l’entrée d’une route hors agglomération : une voie par sens, sans terre-plein central, ni relèvement signalé. Voiture, temps sec, hors probatoire : quel plafond ?
+- `l-c107-route-separee` : Ce même panneau est à l’entrée d’une route à deux chaussées séparées par terre-plein central, hors agglomération. Voiture, temps sec, hors probatoire, sans limite plus basse : quel plafond ?
+
+## v5-secours-condition
+
+La présence d’un objet dans la plaie ou l’origine traumatique change l’action ; ne pas étendre une procédure hors de ses conditions.
+
+- `a-hemorragie` : Zone protégée. Une victime saigne abondamment du bras, sans objet planté dans la plaie. Quel geste immédiat ?
+- `a-objet-plaie` : Un morceau de métal est planté dans une plaie du bras qui saigne abondamment. Puis-je l’enlever puis appuyer dessus ?
+- `a-pls` : Après un malaise sans chute ni traumatisme, une personne ne répond pas mais respire normalement. Quel geste après vérification de la respiration ?
+- `a-traumatisme-respiration` : Après un choc routier, une victime ne répond pas mais respire normalement, allongée sur le dos, sans vomissement. La PLS est-elle automatique ?
+
 ## Retraits justifiés
 
 Aucun plafond numérique : chaque retrait ci-dessous a un motif et une couverture conservée. La v4 est destinée à un import neuf ; réimporter ne supprime pas les anciennes cartes.
@@ -114,3 +130,7 @@ Aucun plafond numérique : chaque retrait ci-dessous a un motif et une couvertur
 - `e-rapports-chiffres` : Répétition à trous de trois règles déjà demandées par des questions ouvertes. Couverture : `e-rapports-regime`, `e-moteur-arret`.
 - `e-trajets-courts-chiffres` : Fractions collectives non datées ; conserver l’effet des trajets à froid et le choix de mobilité. Couverture : `aff-e-trajets-courts`, `e-ecomobilite-choix`.
 - `c-intervalle-urgence-arriere` : Ajout de cette révision identifié comme doublon d’une application déjà présente. Couverture : `c-suiveur-trop-pres`.
+- `d-fourriere-abandon` : Le délai de récupération en fourrière relève de la consultation de la notification ; la prévention du stationnement abusif est conservée. Couverture : `l-stationnement-categories`.
+- `d-amende-minoree-majoree` : Réciter les montants de paiement ne prépare pas une décision de conduite ; lire délais et montants sur l’avis reçu. Couverture : `d-classes-amendes`.
+- `e-vitesse-chiffres` : Résultats arithmétiques fixes appris par cœur ; le nouveau tableau demande de lire et comparer des données sans universaliser une économie. Couverture : `e-budget-trajet-tableau`.
+- `r-autoroute-sortie-ratee` : Même décision et mêmes conditions que la question existante ; aucun transfert supplémentaire. Couverture : `l-demi-tour-marche-arriere`.

@@ -150,11 +150,15 @@
   - revision::v3
 - id: m-feux-reglage-hauteur
   question: À quoi sert la molette de réglage des feux (0 à 3) ?
-  reponse: 'À abaisser le faisceau des feux de croisement quand le véhicule est chargé à l''arrière, pour ne pas éblouir : 0 à vide, cran supérieur à pleine charge.'
-  explication: 'Question officielle 2023 (chargement important → « je règle la hauteur des feux »). Un véhicule chargé s''affaisse à l''arrière et le faisceau monte. Mauvais réglage : 68 € et contre-visite au contrôle technique.'
+  reponse: À adapter la hauteur du faisceau à la charge pour ne pas éblouir. J’utilise la position prescrite
+    par la notice ; certains véhicules corrigent automatiquement.
+  explication: Une charge arrière importante peut relever l’avant de la voiture. Le chiffre à sélectionner
+    dépend du véhicule et de la répartition de la charge, pas seulement du poids total.
   theme: M
   sous_theme: feux
   source: Sécurité routière — Exemples de nouvelles questions (Q1) ; Ornikar — Réglage des feux
+  tags:
+  - revision::v5
 - id: m-appel-phares
   question: Un conducteur arrêté me fait un appel de phares pour me laisser passer. Puis-je m'engager ?
   reponse: 'Seulement après mes propres contrôles : l’appel ne garantit ni que les autres voies sont libres

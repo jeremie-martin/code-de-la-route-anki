@@ -1,0 +1,147 @@
+"""Check actual Anki-rendered cards in Chromium, offline, at phone widths.
+
+Install requirements-qa.txt; use the system Chrome/Chromium (no browser download).
+python -m build.render_check
+Screenshots are samples; DOM/layout/media checks cover every card, both faces.
+Vertical scrolling is reported, not treated as missing content.
+"""
+from __future__ import annotations
+
+import hashlib
+import json
+from pathlib import Path
+import tempfile
+
+from anki.collection import Collection
+from playwright.sync_api import sync_playwright
+
+from build.preview import CHROME, OUT
+from build.verify import import_package
+
+SAMPLES = {
+    'conf-ab3a-ab4', 'conf-b13-b13a', 'l-vitesse-pluie', 'd-grand-exces',
+    'scn-dep-mixte-mon-cote', 'scn-pd-je-tourne-gauche-face', 'ab4',
+    'a-hemorragie', 'a-objet-plaie', 'a-traumatisme-respiration',
+    'aff-c-fatigue-signes', 'e-budget-trajet-tableau', 'm-visuel-pression-charge',
+    'l-c107-route-simple', 'l-c107-route-separee', 'l-agglomeration-panneau',
+}
+
+# Kept separate so the checker itself can be tested against deliberately bad pages.
+MEASURE = """() => {
+  const visible = e => e.getClientRects().length > 0;
+  const images = [...document.images];
+  return {
+    overflow: document.documentElement.scrollWidth > innerWidth + 1,
+    broken: images.filter(e => !e.complete || !e.naturalWidth).map(e => e.src),
+    units: [...document.querySelectorAll('.cdr-unit')].filter(visible).length,
+    totalUnits: document.querySelectorAll('.cdr-unit').length,
+    clozes: [...document.querySelectorAll('.cloze')].filter(visible).length,
+    text: document.body.innerText.trim(),
+    height: document.documentElement.scrollHeight,
+    imageSizes: images.filter(visible).map(e => [Math.round(e.width), Math.round(e.height)]),
+    expanded: [...document.querySelectorAll('details[open]')].length
+  };
+}"""
+
+
+def page_html(body, css, night=False):
+    cls = 'nightMode night_mode' if night else ''
+    return ('<!doctype html><meta charset="utf-8">'
+            '<meta name="viewport" content="width=device-width,initial-scale=1">'
+            f'<style>{css}\nbody {{margin:0}} .card {{box-sizing:border-box; min-height:100vh}}</style>'
+            f'<body class="{cls}"><main class="card {cls}">{body}</main></body>')
+
+
+def main():
+    if not CHROME:
+        raise SystemExit('Chrome/Chromium requis ; voir requirements-qa.txt')
+    target = OUT / 'qa' / 'render'
+    target.mkdir(parents=True, exist_ok=True)
+    origin = target / 'index.html'
+    origin.write_text('<!doctype html><title>Contrôle local</title>')
+    temporary = tempfile.TemporaryDirectory(prefix='cdr-render-')
+    col = Collection(str(Path(temporary.name) / 'render.anki2'))
+    failures, scrolling, results = [], [], []
+    shots = 0
+    try:
+        import_package(col, OUT / 'Code-de-la-route-2026.apkg')
+        media_uri = Path(col.media.dir()).as_uri()
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch(executable_path=CHROME, args=['--no-sandbox'])
+            page = browser.new_page()
+            # Cards must work without any online resource.
+            page.route('http://**/*', lambda route: route.abort())
+            page.route('https://**/*', lambda route: route.abort())
+            page.goto(origin.as_uri())
+            for width, height, night in ((390, 844, False), (320, 640, True), (960, 900, False)):
+                page.set_viewport_size({'width': width, 'height': height})
+                checked = 0
+                for cid in col.find_cards(''):
+                    card = col.get_card(cid)
+                    note = card.note()
+                    ident = note['Id']
+                    if width == 960 and ident not in SAMPLES:
+                        continue
+                    for side, html in (('q', card.question()), ('a', card.answer())):
+                        html = html.replace('src="cdr_', f'src="{media_uri}/cdr_')
+                        page.set_content(page_html(html, card.note_type()['css'], night), wait_until='load')
+                        m = page.evaluate(MEASURE)
+                        key = f'{ident}/c{card.ord}/{side}/{width}'
+                        errors = []
+                        if m['overflow']:
+                            errors.append('débordement horizontal')
+                        if m['broken']:
+                            errors.append('image non chargée')
+                        if not m['text'] or 'Invalid HTML' in m['text'] or '{{' in m['text']:
+                            errors.append('texte vide ou gabarit non résolu')
+                        if m['totalUnits'] and m['units'] != 1:
+                            errors.append(f"rappels visibles : {m['units']}")
+                        if side == 'q' and 'CDR Fait' == card.note_type()['name'] and not m['clozes']:
+                            errors.append('cloze absent')
+                        if m['expanded']:
+                            errors.append('repère ouvert par défaut')
+                        if errors:
+                            failures.append([key, errors])
+                        if m['height'] > height:
+                            scrolling.append([key, m['height']])
+                        if ident in SAMPLES:
+                            page.screenshot(path=str(target / f'{ident}_c{card.ord}_{side}_{width}.png'), full_page=True)
+                            shots += 1
+                        checked += 1
+                results.append({'width': width, 'height': height, 'night': night, 'faces': checked})
+                print(f'{width}px: {checked} faces contrôlées', flush=True)
+            browser.close()
+    finally:
+        col.close()
+        temporary.cleanup()
+    package = OUT / 'Code-de-la-route-2026.apkg'
+    digest = hashlib.sha256(package.read_bytes()).hexdigest()
+    report = dict(package_sha256=digest, configurations=results, failures=failures,
+                  scrolling=scrolling, screenshots=shots)
+    (target / 'measurements.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
+    lines = ['# Vérification du rendu navigateur\n',
+             f'Paquet complet SHA-256 : `{digest}`.\n',
+             'Paquet importé dans une collection temporaire ; contenus et gabarits rendus par Anki, '
+             'puis chargés dans Chromium local sans réseau externe. '
+             'Toutes les cartes, recto et verso, à 390 px en clair et 320 px en sombre ; '
+             'échantillon à 960 px.\n',
+             '| Largeur × hauteur | Mode | Faces contrôlées |', '|---|---|---|']
+    for row in results:
+        lines.append(f"| {row['width']} × {row['height']} | {'sombre' if row['night'] else 'clair'} | {row['faces']} |")
+    lines += [f'\n**{len(failures)} échec(s)** : débordement horizontal, média absent, rappel mal isolé, '
+              'gabarit non résolu ou repère ouvert par défaut.\n',
+              f'{len(scrolling)} faces/configurations nécessitent un défilement vertical ; '
+              'ce défilement est admis. Les captures sont en pleine hauteur.\n',
+              f'{shots} captures dans `out/qa/render/`, avec le détail dans `measurements.json`.\n',
+              'Les mesures de mise en page ne vérifient ni la lisibilité du texte incorporé dans une image, '
+              'ni sa signification. L’inspection visuelle manuelle est décrite dans le bilan v5. '
+              'Chromium ne remplace pas un essai dans AnkiMobile ou AnkiDroid.\n']
+    if failures:
+        lines.append('```json\n' + json.dumps(failures, ensure_ascii=False, indent=2) + '\n```')
+    (OUT / 'RENDU.md').write_text('\n'.join(lines), encoding='utf-8')
+    if failures:
+        raise SystemExit(f'{len(failures)} échecs ; voir out/RENDU.md')
+
+
+if __name__ == '__main__':
+    main()

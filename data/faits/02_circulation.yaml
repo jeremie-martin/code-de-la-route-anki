@@ -1,9 +1,14 @@
 - id: l-vitesse-agglo
-  texte: En agglomération, la vitesse maximale par défaut est de {{c1::50 km/h}} — dès le panneau d'entrée d'agglomération (EB10), jusqu'au panneau de sortie (EB20).
-  explication: 'Le maire peut abaisser (30 km/h généralisé) ou relever à 70 km/h sur des sections sans accès riverains ni traversées piétonnes. Zone 30 : 30 km/h ; zone de rencontre : 20 km/h ; aire piétonne : allure du pas (≈ 6 km/h).'
+  texte: En agglomération, la vitesse maximale par défaut est de {{c1::50 km/h}} — dès le panneau d'entrée
+    d'agglomération (EB10), jusqu'au panneau de sortie (EB20).
+  explication: 'Une autorité locale peut abaisser la limite. Le relèvement à 70 exige notamment des accès riverains
+    et traversées piétonnes en nombre limité et protégés. Zone 30 : 30 ; zone de rencontre : 20 ; aire piétonne
+    : allure du pas, sans seuil légal universel de 6 km/h.'
   theme: L
   sous_theme: vitesse
-  source: Code de la route, art. R413-3 et R110-2
+  source: R413-3 et R110-2 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
+  tags:
+  - revision::v5
 - id: l-vitesse-hors-agglo
   dedup_ok:
   - aff-l-90-departement
@@ -21,12 +26,12 @@
   - 'Voiture, permis hors probatoire, temps sec : sur route hors agglomération à double sens, une voie par
     sens, le plafond peut être relevé et signalé à {{c2::90 km/h}}.'
 - id: l-vitesse-separateur-autoroute
-  explication: 'Le critère est le terre-plein central, pas le nombre de voies. Une « route à accès réglementé
-    » (panneau bleu avec une voiture, C107) n''est pas une autoroute : 110 km/h par défaut, mêmes interdictions
-    (piétons, vélos, demi-tour…).'
+  explication: 'Le terre-plein central sépare deux chaussées ; le nombre de voies ne suffit pas. Le panneau
+    C107 réglemente l’accès : il ne fixe pas à lui seul 110 km/h. Lire la configuration, les panneaux et les
+    conditions.'
   theme: L
   sous_theme: vitesse
-  source: Code de la route, art. R413-2
+  source: R413-2 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
   rappels:
   - 'Voiture, temps sec, permis hors probatoire, hors agglomération, sans limite locale plus basse : sur une
     route à deux chaussées séparées par terre-plein central, le plafond est {{c1::110 km/h}}.'
@@ -34,6 +39,7 @@
     général est {{c2::130 km/h}}.'
   tags:
   - revision::v4
+  - revision::v5
 - id: l-vitesse-pluie
   explication: 'Les limites locales plus basses restent applicables : 80 reste 80, 70 reste 70. En ville, 50
     par défaut. Visibilité inférieure à 50 m : plafond de 50 km/h, sans relever une limite à 30.'
@@ -51,18 +57,19 @@
   - 'Voiture, hors probatoire, sous la pluie : route hors agglomération à double sens sans séparateur, normalement
     à 90, sans autre restriction, plafond {{c3::80 km/h}}.'
 - id: l-vitesse-visibilite-50
-  explication: 'Article R413-4. Règle des trois 50 : visibilité 50 m = 50 km/h = 50 m d''intervalle. Feux de
-    croisement obligatoires ; feux de brouillard avant admis ; feux de brouillard arrière seulement par brouillard
-    ou chute de neige, jamais sous la pluie (R416-7).'
+  explication: R413-4 fixe un plafond de vitesse, pas un intervalle universel de 50 m. Garder au moins deux
+    secondes et augmenter la marge selon les conditions ; rester capable de s’arrêter dans la distance visible.
+    Le seuil légal est une visibilité inférieure à 50 m.
   theme: L
   sous_theme: vitesse
-  source: Code de la route, art. R413-4
+  source: R413-4 ; R412-12 ; R413-17 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
   rappels:
   - Le plafond spécial lié à une visibilité très réduite s’applique quand on voit à moins de {{c1::50 m}}.
   - 'Visibilité inférieure à 50 m : sur autoroute comme sur les autres réseaux, plafond {{c2::50 km/h}}, sans
     relever une limite plus basse et en ralentissant davantage si nécessaire.'
   tags:
   - revision::v4
+  - revision::v5
 - id: l-vitesse-probatoire
   explication: 'Une limitation locale plus basse reste applicable. Pluie et permis probatoire ne se cumulent
     pas par soustractions : appliquer le plafond le plus bas qui concerne la situation.'
@@ -80,11 +87,17 @@
   - 'Élève ou permis probatoire, route hors agglomération à double sens sans séparateur, normalement à 90 :
     plafond {{c3::80 km/h}}.'
 - id: l-vitesse-minimale-autoroute
-  texte: Sur autoroute, par circulation fluide et bonnes conditions, la vitesse minimale sur la voie la plus à gauche est de {{c1::80 km/h}} ; circuler sans raison à une vitesse anormalement réduite est sanctionné (35 €).
-  explication: 'Aucune vitesse minimale ailleurs, mais l''obligation de ne pas gêner. Véhicules > 3,5 t : 90 sur autoroute, 80 sur les autres routes.'
+  texte: Sur autoroute, par circulation fluide et bonnes conditions, la vitesse minimale sur la voie la plus
+    à gauche est de {{c1::80 km/h}} ; circuler sans raison à une vitesse anormalement réduite est sanctionné
+    (35 €).
+  explication: Ce minimum ne s’applique que sur la voie la plus à gauche et dans les conditions indiquées.
+    Il n’autorise pas à maintenir 80 face à un danger. Ailleurs, ne pas gêner sans raison par une vitesse anormalement
+    réduite.
   theme: L
   sous_theme: vitesse
-  source: Code de la route, art. R413-19 et R413-8
+  source: R413-19 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
+  tags:
+  - revision::v5
 - id: l-vitesse-engins
   texte: 'Vitesses maximales par construction : EDPM {{c1::25 km/h}} ; cyclomoteur et voiturette légère {{c2::45
     km/h}}. Sur un VAE conforme, l’assistance se coupe à {{c1::25 km/h}}, mais on peut pédaler plus vite.'
@@ -104,11 +117,19 @@
   importance: rare
   source: Arrêté Ville de Paris n° 2024 P 15981 ; Code de la route, art. R413-3
 - id: l-stationnement-categories
-  texte: 'Stationnement gênant : {{c1::35 €}} ; très gênant : {{c2::135 €}} ; dangereux (visibilité insuffisante : virage, sommet de côte, intersection, passage à niveau) : 135 € et {{c3::3 points}} ; abusif (plus de {{c4::7 jours}} au même endroit) : 35 €. Fourrière possible dans tous les cas.'
-  explication: 'Seul le stationnement dangereux retire des points. « Très gênant » : trottoir, passage piéton et 5 m en amont, piste ou bande cyclable, voie de bus, place PMR, bouche d''incendie, devant les feux ou panneaux masqués.'
+  explication: Gênant, très gênant et abusif ne retirent pas de points à eux seuls ; le stationnement dangereux,
+    si. Fourrière possible. Pour décider où s’arrêter, lire les lieux et les panneaux avant de penser au montant
+    de l’amende.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-9 à R417-12 ; service-public.fr F34212
+  rappels:
+  - 'Arrêt ou stationnement dangereux par visibilité insuffisante : retrait de {{c1::3 points}}, en plus de
+    l’amende.'
+  - Sauf délai local plus court, laisser un véhicule au même endroit plus de {{c2::7 jours consécutifs}} constitue
+    un stationnement abusif.
+  tags:
+  - revision::v5
 - id: l-stationnement-5m-passage
   dedup_ok:
   - aff-l-5m-passage
@@ -148,23 +169,27 @@
   tags:
   - revision::v4
 - id: l-zone-bleue
-  texte: 'En zone bleue, le disque de stationnement (modèle européen) est obligatoire, avec l''heure d''arrivée affichée ; la durée autorisée est fixée par arrêté municipal (souvent 1 h 30) ; défaut ou dépassement : {{c1::35 €}} (contravention de 2e classe).'
-  explication: Signalée par le panneau B6b3 (zone à stationnement de durée limitée) ou C1b, avec un marquage bleu au sol possible. Le stationnement payant impayé relève du forfait post-stationnement (FPS, montant communal), sans points.
+  texte: En zone bleue, j’indique sur le disque mon heure {{c1::d’arrivée}} ; la durée autorisée se lit sur
+    la signalisation locale.
+  explication: Ne pas présumer une durée nationale de 1 h 30. Respecter horaires et durée indiqués ; le disque
+    n’autorise pas à dépasser cette durée en le déplaçant.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-3 ; service-public.fr F34440
+  tags:
+  - revision::v5
 - id: l-feux-detresse-usage
-  texte: 'Les feux de détresse (warning) sont obligatoires quand on circule momentanément à allure fortement
-    réduite ({{c1::dernier véhicule d''un bouchon}}) — ne pas les allumer : {{c2::35 €}} — et, avec le triangle,
-    pour présignaler un véhicule immobilisé dangereux — défaut de présignalisation : {{c3::135 €}}.'
-  explication: 'Les warnings signalent un danger ; ils ne créent aucune autorisation de stationnement. Distinguer
-    l’arrêt pour montée, descente ou manutention, conducteur disponible, du stationnement en attente. R416-18
-    : allure fortement réduite ; R416-19 : immobilisation dangereuse.'
+  texte: À l’approche d’un fort ralentissement, le {{c1::dernier véhicule de la file}} doit utiliser les feux
+    de détresse pour avertir ceux qui arrivent.
+  explication: 'R416-18 : conducteur momentanément contraint à une allure fortement réduite ; en file ininterrompue,
+    obligation limitée au dernier véhicule. Les warnings présignalent aussi une immobilisation dangereuse,
+    mais n’autorisent pas le stationnement.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R416-18 et R416-19
   tags:
   - revision::v4
+  - revision::v5
 - id: l-depassement-laterale
   explication: 'Ces écarts protègent aussi les autres usagers mentionnés par R414-4 : piétons, cavaliers, animaux,
     deux ou trois-roues. L’exception de chevauchement d’une ligne continue concerne les cycles, EDPM et cyclomobiles

@@ -1,13 +1,14 @@
 - id: c-temps-reaction
-  texte: Le repère pédagogique du temps de réaction d’un conducteur attentif est {{c1::1 seconde}} environ. Fatigue,
-    alcool ou distraction peuvent le porter à {{c2::2 secondes ou davantage}}, sans valeur fixe garantie.
-  explication: Pendant la réaction, le véhicule continue d’avancer. À réaction identique, une vitesse plus élevée
-    augmente la distance parcourue.
+  texte: Pour un exercice sans autre indication, le repère pédagogique du temps de réaction d’un conducteur
+    attentif est d’environ {{c1::1 seconde}}.
+  explication: La durée réelle varie avec la personne, la tâche et l’état de vigilance. Fatigue, alcool ou
+    distraction peuvent l’allonger ; deux secondes n’est pas une valeur fixe pour ces états.
   theme: C
   sous_theme: distances
   source: securite-routiere.gouv.fr — La vitesse et la conduite ; Codeclic — Temps de réaction
   tags:
   - revision::v3
+  - revision::v5
 - id: c-distance-reaction-formule
   dedup_ok:
   - aff-c-temps-reaction-vitesse
@@ -23,11 +24,16 @@
   tags:
   - revision::v4
 - id: c-distance-mouillee
-  texte: Sur chaussée mouillée, l'adhérence est environ {{c1::2}} fois moins bonne et la distance de freinage environ {{c1::2}} fois plus longue (question officielle 2023) ; sur neige ou verglas, la distance de freinage peut être multipliée par {{c2::10}}.
-  explication: 'Q13 officielle : autoroute mouillée → « l''adhérence est 2 fois moins bonne » OUI, « la distance de freinage est 2 fois plus longue » OUI. Certaines écoles enseignent plutôt « distance d''arrêt × 1,5 » : l''ordre de grandeur suffit. Conséquence pratique : on double l''intervalle et on réduit la vitesse.'
+  texte: Sur route mouillée, la distance de freinage {{c1::augmente}} ; un doublement est un repère pédagogique,
+    pas une valeur garantie.
+  explication: La pluie diminue l’adhérence selon le revêtement, les pneus et la quantité d’eau. Réduire l’allure
+    et accroître les marges. Ne pas appliquer automatiquement ×2 ou ×10 à une scène réelle ; calculer avec
+    les hypothèses explicites de l’exercice.
   theme: C
   sous_theme: distances
-  source: Sécurité routière — Exemples de nouvelles questions (Q13) ; Ornikar ; Codes Rousseau
+  source: Sécurité routière, exemple public Q13 (2023) ; repère et limites du modèle
+  tags:
+  - revision::v5
 - id: c-vitesse-double-freinage
   dedup_ok:
   - aff-c-vitesse-double-freinage-double

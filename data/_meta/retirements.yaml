@@ -105,3 +105,22 @@
   raison: Ajout de cette révision identifié comme doublon d’une application déjà présente.
   couverts_par:
   - c-suiveur-trop-pres
+- id: d-fourriere-abandon
+  raison: Le délai de récupération en fourrière relève de la consultation de la notification ; la prévention
+    du stationnement abusif est conservée.
+  couverts_par:
+  - l-stationnement-categories
+- id: d-amende-minoree-majoree
+  raison: Réciter les montants de paiement ne prépare pas une décision de conduite ; lire délais et montants
+    sur l’avis reçu.
+  couverts_par:
+  - d-classes-amendes
+- id: e-vitesse-chiffres
+  raison: Résultats arithmétiques fixes appris par cœur ; le nouveau tableau demande de lire et comparer des
+    données sans universaliser une économie.
+  couverts_par:
+  - e-budget-trajet-tableau
+- id: r-autoroute-sortie-ratee
+  raison: Même décision et mêmes conditions que la question existante ; aucun transfert supplémentaire.
+  couverts_par:
+  - l-demi-tour-marche-arriere

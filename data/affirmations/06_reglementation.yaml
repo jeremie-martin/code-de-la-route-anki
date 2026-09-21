@@ -77,12 +77,15 @@
 - id: aff-d-grand-exces-delit
   affirmation: Un excès de vitesse de 50 km/h ou plus est un délit dès la première fois.
   verdict: vrai
-  pourquoi: 'Depuis le 29 décembre 2025 : 3 mois de prison, 3 750 € et 6 points. Avant, c''était une contravention de 5e classe (1 500 €), délit seulement en récidive — la banque 2023 peut encore poser l''ancienne règle.'
+  pourquoi: Depuis le 29 décembre 2025, c’est un délit dès la première fois, avec retrait de six points. Trois
+    mois de prison et 3 750 € sont des maxima encourus, pas des peines systématiques. Apprendre le droit applicable,
+    sans supposer le contenu de la banque confidentielle.
   theme: D
   sous_theme: sanctions
   tags:
   - nouveau::2025
-  source: Code de la route, art. L413-1 (loi n° 2025-622 ; décret n° 2025-1269)
+  - revision::v5
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F19460
 - id: aff-d-clignotant-points
   affirmation: Tourner sans mettre le clignotant se solde par une amende de 35 €, sans retrait de points.
   verdict: faux

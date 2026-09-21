@@ -26,19 +26,31 @@
   sous_theme: priorites
   source: Code de la route, art. R415-6
 - id: l-tourner-gauche-regle
-  question: Je tourne à gauche à une intersection sans feu. À qui dois-je céder le passage ?
-  reponse: Aux véhicules qui viennent en face (qu'ils aillent tout droit ou qu'ils tournent à droite) et à ceux qui arrivent de ma droite si la priorité à droite s'applique.
-  explication: Je me place près de l'axe médian sans le franchir, clignotant allumé, et j'attends au centre du carrefour si nécessaire ; je termine mon virage dès que la voie est libre.
+  question: Je tourne à gauche à une intersection sans feu. Quels véhicules peuvent avoir priorité sur moi
+    ?
+  reponse: Aux véhicules qui viennent en face (qu'ils aillent tout droit ou qu'ils tournent à droite) et à
+    ceux qui arrivent de ma droite si la priorité à droite s'applique.
+  explication: Vérifier aussi les piétons qui traversent la chaussée abordée et les pistes cyclables traversées.
+    La réponse cible ici les conflits avec les véhicules ; tourner n’accorde aucune priorité sur ces autres
+    usagers.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-4 et R412-10
+  tags:
+  - revision::v5
 - id: l-giratoire-vs-rond-point
-  question: Quelle différence entre un carrefour à sens giratoire et un simple rond-point, pour les priorités ?
-  reponse: 'Giratoire (panneau AB25 + cédez-le-passage aux entrées) : les usagers déjà dans l''anneau passent. Rond-point sans panneau : priorité à droite, donc à ceux qui entrent.'
-  explication: 'On y circule dans le sens inverse des aiguilles d''une montre. Un giratoire reste une intersection : on n''y dépasse pas un autre véhicule (R414-11, sauf un deux-roues). Le rond-point à priorité à droite est devenu rare (place de l''Étoile).'
+  question: Quelle différence entre un carrefour à sens giratoire et un simple rond-point, pour les priorités
+    ?
+  reponse: 'Giratoire (panneau AB25 + cédez-le-passage aux entrées) : les usagers déjà dans l''anneau passent.
+    Rond-point sans panneau : priorité à droite, donc à ceux qui entrent.'
+  explication: 'La forme ronde ne suffit pas à attribuer la priorité : lire les signaux aux entrées. Les changements
+    de voie imposent contrôles, signalement et respect des usagers de la voie rejointe. Ne pas déduire une
+    interdiction générale de dépasser du seul mot giratoire.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-10 ; IISR (AB25)
+  tags:
+  - revision::v5
 - id: l-giratoire-clignotant
   question: Dans un carrefour à sens giratoire, quand met-on le clignotant ?
   reponse: Clignotant droit avant chaque sortie, dès qu'on dépasse la sortie précédente ; clignotant gauche à l'entrée seulement si l'on va au-delà de la moitié de l'anneau.
@@ -339,12 +351,18 @@
   tags:
   - revision::v3
 - id: l-agglomeration-panneau
-  question: Quelles règles change le panneau d'entrée d'agglomération (nom de la ville sur fond blanc bordé de rouge) ?
-  reponse: 50 km/h par défaut, klaxon réservé au danger immédiat, feux de croisement sur voie éclairée et stationnement à droite dans le sens de la marche.
-  explication: 'Les panneaux de danger y sont implantés à 50 m au lieu de 150 m, et je dois faciliter la sortie des bus. Le panneau de sortie (nom barré de rouge, EB20) rétablit les règles hors agglomération. Un panneau de lieu-dit (E31 : lettres italiques blanches sur fond noir) n''entraîne aucune de ces règles.'
+  question: Ce panneau d’entrée d’agglomération est posé seul, sans autre limitation. Quel plafond de vitesse
+    commence ici ?
+  reponse: 50 km/h par défaut, avec une allure plus basse si la situation l’exige.
+  explication: Le panneau fixe la limite de l’agglomération, même si les premières maisons sont éloignées.
+    D’autres règles changent aussi en ville ; une rue à sens unique peut autoriser le stationnement des deux
+    côtés.
   theme: L
   sous_theme: signalisation
   source: Code de la route, art. R110-2, R413-3, R416-1 ; IISR
+  image_ref: eb10
+  tags:
+  - revision::v5
 - id: l-vocab-routes-lettres
   question: Que signifient les lettres A, N, D et C (ou M) devant un numéro de route ?
   reponse: A = autoroute ; N = route nationale ; D = route départementale ; C = voie communale (M = voie métropolitaine).

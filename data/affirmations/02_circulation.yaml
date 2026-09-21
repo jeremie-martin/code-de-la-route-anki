@@ -5,10 +5,14 @@
   contexte: Intersection de campagne sans panneau ni feu.
   affirmation: Un véhicule qui débouche d'un chemin de terre sur ma droite bénéficie de la priorité à droite.
   verdict: faux
-  pourquoi: 'Il quitte un lieu non ouvert à la circulation publique : R415-9 l''oblige à céder le passage à tous, piétons du trottoir compris. Même règle pour un parking, une station-service ou une voie privée.'
+  pourquoi: 'R415-9 vise expressément le débouché d’un chemin de terre, même sans prouver qu’il est privé.
+    Le conducteur en sortant cède aux autres véhicules. Une route privée peut être ouverte au public : ne pas
+    décider de la priorité sur la seule propriété du terrain.'
   theme: L
   sous_theme: priorites
-  source: Code de la route, art. R415-9
+  source: R415-9 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968/
+  tags:
+  - revision::v5
 - id: aff-l-zone-30-priorite-droite
   contexte: Je circule dans une zone 30 résidentielle.
   affirmation: La priorité à droite ne s'y applique pas, puisque la zone impose déjà une vitesse réduite.
@@ -29,10 +33,13 @@
   contexte: J'aborde un STOP ; la route transversale est parfaitement dégagée.
   affirmation: Un net ralentissement suffit, puisque l'arrêt n'apporterait rien de plus.
   verdict: faux
-  pourquoi: 'R415-6 impose l''arrêt absolu à la ligne, roues immobiles, même sans trafic — 135 € et 4 points. Le STOP est posé précisément là où la visibilité ne s''obtient qu''à l''arrêt.'
+  pourquoi: 'R415-6 impose l’arrêt à la ligne, roues immobiles, même sans trafic : 135 € et 4 points. Une bonne
+    visibilité n’annule pas le STOP ; après l’arrêt, je vérifie et cède le passage.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-6
+  tags:
+  - revision::v5
 - id: aff-l-stop-avancer
   contexte: Je suis arrêté à la ligne du STOP, mais des véhicules en stationnement masquent la rue transversale.
   affirmation: Je peux ensuite avancer lentement au-delà de la ligne pour voir avant de m'engager.
@@ -82,13 +89,17 @@
   sous_theme: priorites
   source: Code de la route, art. R415-10
 - id: aff-l-giratoire-depassement
-  contexte: Giratoire à deux voies ; une voiture roule devant moi sur l'anneau.
-  affirmation: Je peux la dépasser en utilisant la seconde voie, puisque l'anneau est large.
+  contexte: Giratoire à deux voies ; un camion devant moi empiète sur les deux voies pour tourner.
+  affirmation: Je peux me glisser à sa gauche pour le dépasser.
   verdict: faux
-  pourquoi: 'Un giratoire est une intersection : R414-11 y interdit le dépassement, sauf celui d''un deux-roues. Changer de voie pour se placer avant sa sortie reste autorisé en signalant, dépasser non.'
+  pourquoi: 'Son gabarit et sa trajectoire ne laissent pas de marge sûre : je reste derrière. La largeur apparente
+    de l’anneau ne suffit pas. R414-4 impose un dépassement sans danger ; R414-11 comporte des exceptions,
+    pas une interdiction générale propre aux giratoires.'
   theme: L
   sous_theme: priorites
-  source: Code de la route, art. R414-11 et R412-9
+  source: R414-4 et R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
+  tags:
+  - revision::v5
 - id: aff-l-pieton-intention
   dedup_ok: [aff-u-pieton-telephone]
   contexte: Un piéton se tient sur le trottoir, tourné vers la chaussée, à un pas d'un passage piéton.
@@ -166,13 +177,18 @@
   sous_theme: depassement
   source: Code de la route, art. R414-11
 - id: aff-l-3-voies-gauche
-  contexte: Route à trois voies à double sens ; je veux dépasser un camion.
+  contexte: Route à double sens à trois voies ; une seule voie est affectée à mon sens. Je veux dépasser un
+    camion.
   affirmation: Je peux utiliser la voie la plus à gauche si elle est libre sur toute la longueur.
   verdict: faux
-  pourquoi: 'R414-8 : sur une chaussée à double sens de plus de deux voies, la voie la plus à gauche est réservée au sens inverse. On dépasse par la voie centrale, utilisable dans les deux sens, et on la quitte aussitôt.'
+  pourquoi: 'Je ne peux pas emprunter la voie située le plus à gauche. Je lis aussi l’affectation et les lignes
+    de la voie centrale : elle n’est pas automatiquement utilisable dans les deux sens. Sans voie autorisée
+    et libre, j’attends.'
   theme: L
   sous_theme: depassement
-  source: Code de la route, art. R414-8
+  source: R414-8 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
+  tags:
+  - revision::v5
 - id: aff-l-4-voies-double-sens
   contexte: Route à quatre voies à double sens, sans terre-plein central (deux voies par sens).
   affirmation: Je dépasse par la voie de gauche de mon sens, pas par celles d'en face.
