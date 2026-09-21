@@ -207,7 +207,7 @@ def main():
               f'{disclosures} ouvertures et fermetures du volet testées sur l’échantillon.\n',
               f'{shots} captures dans `out/qa/render/`, avec le détail dans `measurements.json`.\n',
               'Les mesures de mise en page ne vérifient ni la lisibilité du texte incorporé dans une image, '
-              'ni sa signification. L’inspection visuelle est décrite dans docs/11-interface-quotidienne.md. '
+              'ni sa signification. L’inspection visuelle des captures reste nécessaire. '
               'Chromium ne remplace pas un essai dans AnkiMobile ou AnkiDroid.\n']
     if failures:
         lines.append('```json\n' + json.dumps(failures, ensure_ascii=False, indent=2) + '\n```')

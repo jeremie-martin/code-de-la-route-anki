@@ -138,7 +138,7 @@ SELECTION_FILE = ROOT / "data/_meta/sign_exclusions.yaml"
 
 GENERIC_IMPLANT = re.compile(r"^Hors agglomération\s*:\s*100 à 200 m", re.I)
 
-# Category-level sentences that used to be repeated on every sign of a family (docs/05-audit-v2.md §2.3).
+# Category-level sentences that used to be repeated on every sign of a family; the rule lives in one card.
 # They are dropped from the cards: the rule is carried once by a fact/question card
 # (l-implantation-danger, l-portee-prescription, l-panonceau-portee, l-signalisation-temporaire).
 BOILERPLATE = [
@@ -227,7 +227,6 @@ def convert():
     for e in inv:
         code = e["code"]
         cat = e["categorie"]
-        imp = e.get("importance", "utile")
         if code in excluded:
             skipped.append((code, excluded[code]["raison"]))
             continue
@@ -246,12 +245,12 @@ def convert():
             if entry:
                 image = {"commons": key[len("File:"):]}
         if image is None:
-            missing_img.append((code, imp, e["nom"]))
+            missing_img.append((code, e["nom"]))
             continue
         if "commons" in image:
             key, entry = find(image["commons"])
             if not entry:
-                missing_img.append((code, imp, e["nom"] + f" [fichier introuvable: {image['commons']}]"))
+                missing_img.append((code, e["nom"] + f" [fichier introuvable: {image['commons']}]"))
                 continue
         fname, sous = CAT_FILE[cat]
         typ = TYPE_BY_CAT.get(cat, "panneau")

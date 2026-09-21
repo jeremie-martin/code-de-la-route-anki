@@ -527,3 +527,53 @@
   - l-vocab-routes-lettres
   - l-c107-route-simple
   - l-c107-route-separee
+- id: v9-eclairage
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842197
+  portee: 'R416-6 (feux de croisement obligatoires la nuit en agglomération éclairée ; tolérance des feux de position seuls de jour par pluie) et R416-12 (feux de position à l''arrêt), lus dans le Code consolidé du 10 septembre 2026.'
+  notes:
+  - voyant-position
+  - aff-r-nuit-feux-position-agglo
+- id: v9-agent
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842090
+  portee: 'R411-28 et doctrine de l''arrêté du 24 novembre 1967 (bras tendus = arrêt pour ceux qui voient l''agent de face ou de dos, passage pour ceux qui le voient de profil) ; solveur et dessins mis en accord.'
+  notes:
+  - scn-agent-bras-tendus-profil
+  - scn-agent-bras-tendus-face
+  - agent-bras-tendu-face
+- id: v9-exemples-2023
+  consulte_le: '2026-09-21'
+  url: https://www.securite-routiere.gouv.fr/
+  portee: 'Corrigé des vingt exemples officiels de septembre 2023 (Q13 adhérence ÷ 2 et freinage × 2 sous la pluie ; Q8/Q14 aides au stationnement).'
+  notes:
+  - c-distance-mouillee
+  - c-distance-arret-carre
+  - aff-m-camera-recul
+- id: v9-depassement-croisement
+  consulte_le: '2026-09-21'
+  url: https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
+  portee: 'R414-6 (dépassement par la droite d''un véhicule qui tourne à gauche), R414-11 (exceptions aux feux, avec agent, deux-roues), R412-19 (chevauchement pour dépasser un cycle), R414-1 (croisement), R412-7 (circulation sur voie réservée) et R417-11 (arrêt ou stationnement sur voie réservée).'
+  notes:
+  - scn-dep-vehicule-tourne-gauche
+  - aff-l-surdepassement
+  - marq-couloir-bus
+  - marq-sas-velo
+  - scn-pos-croisement-obstacle
+  - l-retrecissement-croisement
+- id: v9-permis
+  consulte_le: '2026-09-21'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F2828
+  portee: 'R221-4 (catégories B et AM), R221-5 (âges), R221-8 et arrêté du 17 décembre 2010 (formation 7 h pour les motocyclettes légères avec le permis B), L223-5 / R224-20 (invalidation, épreuves à repasser).'
+  notes:
+  - d-permis-b-perimetre
+  - d-permis-am-14-ans
+  - d-permis-b-125
+  - d-invalidation-repasser
+- id: v9-secours
+  consulte_le: '2026-09-21'
+  url: https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  portee: 'PSC juillet 2026 — perte de connaissance (PLS ; traumatisme : sur le dos, sur le côté si vomissements) et dégagement d’urgence.'
+  notes:
+  - a-pls
+  - aff-a-degagement-urgence
