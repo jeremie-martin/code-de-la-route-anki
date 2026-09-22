@@ -68,9 +68,24 @@
   theme: L
   sous_theme: priorites
   source: "Code de la route, R412-9 et R412-10 ; Association Prévention Routière, https://www.preventionroutiere.asso.fr/le-carrefour-giratoire-commen-bien-lemprunter/"
+  illustration:
+    gen: giratoire_sortie
+    params:
+      vehicles:
+      - me: true
+        lane: ext
+        angle: 130
+      exit: W
+      marker:
+        angle: 105
+        text: clignotant droit
+        label:
+        - 330
+        - 40
+    width: 640
+    legende: 'Je vise la sortie de gauche : je mets le clignotant droit après être passé devant la sortie précédente.'
 - id: l-giratoire-placement
-  question: Giratoire à deux voies, sans flèches imposant une voie ; ma sortie est à gauche de mon axe d’entrée.
-    Sur quelle voie entrer, et comment en sortir ?
+  question: Giratoire à deux voies, sans flèches au sol ; je vise la sortie indiquée. Sur quelle voie entrer, et comment sortir ?
   reponse: Je peux rester à droite ou emprunter la voie intérieure. Depuis l’intérieur, je cède aux usagers de
     la voie extérieure avant de me rabattre et de sortir.
   explication: C’est la position de la sortie par rapport à l’axe d’entrée qui compte, pas son numéro. La voie
@@ -79,6 +94,13 @@
   theme: L
   sous_theme: priorites
   source: "Code de la route, R412-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688"
+  image:
+    gen: giratoire_sortie
+    params:
+      vehicles:
+      - me: true
+        entry: S
+      exit: W
 - id: l-bus-quitte-arret
   question: En agglomération, un bus met son clignotant pour quitter son arrêt. Que dois-je faire ?
   reponse: "Ralentir et, au besoin, m'arrêter pour le laisser reprendre sa place, sans freiner brusquement ni forcer le passage."

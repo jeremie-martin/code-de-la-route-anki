@@ -924,7 +924,12 @@ def cycliste_tourne_droite(params):
 
 
 def giratoire_sortie(params):
-    """Two lanes, one intended exit; no suggested crossing of the cyclist's lane."""
+    """Two-lane roundabout seen from above (entries S, W, N, E; anticlockwise). params:
+    vehicles: [{kind, colour, me, lane: "int" | "ext" | "both" (straddling), angle (deg, 0 = east, anticlockwise)}]
+              or {entry: S|W|N|E} for a vehicle waiting at that entry; exit: the branch marked « Sortie visée »;
+    marker: {angle, text, label: [x, y]} a spot of the outer lane, with its label placed at (x, y). Default: MOI inside, cyclist outside, exit E."""
+    vehicles = params.get("vehicles", [{"me": True, "lane": "int", "angle": -32}, {"kind": "bike", "colour": "rouge", "lane": "ext", "angle": -30}])
+    exit_ = params.get("exit", "E")
     S = SVG(640, 440)
     S.add(f'<rect width="640" height="440" fill="{GRASS}"/>')
     S.add(f'<path d="M190 0H290V440H190Z M0 165H640V275H0Z" fill="{ASPHALT}"/>')
@@ -932,18 +937,40 @@ def giratoire_sortie(params):
     S.add(f'<circle cx="240" cy="220" r="60" fill="{GRASS}" stroke="{MARK}" stroke-width="3"/>')
     S.add(f'<circle cx="240" cy="220" r="128" fill="none" stroke="{MARK}" stroke-width="3" stroke-dasharray="18 15"/>')
     S.add(f'<path d="M437 220H640 M240 0V23 M240 417V440 M0 220H43" stroke="{MARK}" stroke-width="3"/>')
-    for x1,y1,x2,y2 in ((440,168,440,216),(193,22,236,22),(244,418,287,418),(40,224,40,272)):
+    for x1, y1, x2, y2 in ((440, 168, 440, 216), (193, 22, 236, 22), (244, 418, 287, 418), (40, 224, 40, 272)):
         S.add(f'<path d="M{x1} {y1}L{x2} {y2}" stroke="{MARK}" stroke-width="6" stroke-dasharray="8 6"/>')
-    # Shared symbols retain readable silhouettes, with the bicycle smaller than the car.
-    for radius, angle, kind, colour, scale in ((94, -32, "car", "bleu", 1.0), (162, -30, "bike", "rouge", .9)):
-        a = math.radians(angle)
-        x, y = 240 + radius*math.cos(a), 220 - radius*math.sin(a)
-        sprite = _body({"me": True}, -angle) if colour == "bleu" else vehicle_sprite(kind, colour)
-        S.add(f'<g transform="translate({x},{y}) rotate({-angle}) scale({scale})">{sprite}</g>')
-    S.add(f'<path d="M485 248h98m-12-8 12 8-12 8" fill="none" stroke="{MARK}" stroke-width="4"/>')
-    S.add(f'<text x="537" y="314" text-anchor="middle" font-family="{FONT}" font-size="26" fill="#263336">Sortie visée</text>')
+    radius = {"int": 94, "ext": 162, "both": 128}
+    entry = {"S": (265, 390, 0), "N": (215, 50, 180), "E": (560, 195, 270), "W": (-80, 245, 90)}
+    for v in vehicles:
+        kind, colour = v.get("kind", "car"), v.get("colour", "gris")
+        sprite = _body({"me": True}, 0) if v.get("me") else vehicle_sprite(kind, colour)
+        scale = .9 if kind == "bike" else 1.0
+        if "entry" in v:
+            x, y, rot = entry[v["entry"]]
+            if v["entry"] == "W":
+                x = 110
+            S.add(f'<g transform="translate({x},{y}) rotate({rot}) scale({scale})">{sprite}</g>')
+            continue
+        a = math.radians(v["angle"])
+        x, y = 240 + radius[v["lane"]] * math.cos(a), 220 - radius[v["lane"]] * math.sin(a)
+        if v.get("me"):
+            sprite = _body({"me": True}, -v["angle"])
+        S.add(f'<g transform="translate({x},{y}) rotate({-v["angle"]}) scale({scale})">{sprite}</g>')
+    if exit_ == "E":
+        S.add(f'<path d="M485 248h98m-12-8 12 8-12 8" fill="none" stroke="{MARK}" stroke-width="4"/>')
+        _pill(S, 537, 318, "Sortie visée", 24, anchor="middle")
+    elif exit_ == "W":
+        S.add(f'<path d="M40 192h-28m12-8 -12 8 12 8" fill="none" stroke="{MARK}" stroke-width="4"/>')
+        _pill(S, 14, 318, "Sortie visée", 24)
+    if params.get("marker"):
+        m = params["marker"]
+        a = math.radians(m["angle"])
+        x, y = 240 + 185 * math.cos(a), 220 - 185 * math.sin(a)
+        S.add(f'<circle cx="{x}" cy="{y}" r="9" fill="{YELLOW}" stroke="{LABEL}" stroke-width="2"/>')
+        tx, ty = m["label"]
+        S.add(f'<path d="M{x},{y} L{tx},{ty}" stroke="{LABEL}" stroke-width="2"/>')
+        _pill(S, tx, ty + 6, m["text"])
     return str(S)
-
 
 def entrecroisement(params):
     """Separate ramps join one shared weaving lane beside the motorway."""

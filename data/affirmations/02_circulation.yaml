@@ -93,15 +93,25 @@
   sous_theme: priorites
   source: Code de la route, art. R415-4 ; REMC
 - id: aff-l-giratoire-sortie-cede
-  contexte: Je circule déjà dans l'anneau d'un giratoire et je vais poursuivre au-delà de la prochaine sortie.
-  affirmation: Le véhicule qui attend à cette entrée doit me laisser passer.
+  contexte: Je circule déjà dans l’anneau et je vais poursuivre au-delà de la prochaine sortie ; la voiture grise attend à cette entrée.
+  affirmation: La voiture grise doit me laisser passer.
   verdict: vrai
   pourquoi: Au giratoire avec cédez-le-passage aux entrées, les entrants cèdent aux véhicules dans l’anneau. Je ne mets pas mon clignotant droit avant une sortie que je ne prends pas.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-10
+  image:
+    gen: giratoire_sortie
+    params:
+      vehicles:
+      - me: true
+        lane: ext
+        angle: -60
+      - entry: E
+        colour: gris
+      exit: null
 - id: aff-l-giratoire-depassement
-  contexte: Giratoire à deux voies ; un camion devant moi empiète sur les deux voies pour tourner.
+  contexte: Giratoire à deux voies ; le camion devant moi occupe les deux voies pour tourner.
   affirmation: Je peux me glisser à sa gauche pour le dépasser.
   verdict: faux
   pourquoi: 'Son gabarit l’oblige à occuper les deux voies pour tourner et ses côtés sont des angles morts : je reste
@@ -110,6 +120,18 @@
   theme: L
   sous_theme: priorites
   source: "R414-4 et R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/"
+  image:
+    gen: giratoire_sortie
+    params:
+      vehicles:
+      - kind: truck
+        colour: gris
+        lane: both
+        angle: -20
+      - me: true
+        lane: ext
+        angle: -62
+      exit: null
 - id: aff-l-pieton-intention
   dedup_ok: [aff-u-pieton-telephone]
   contexte: Un piéton se tient sur le trottoir, tourné vers la chaussée, à un pas d'un passage piéton.
