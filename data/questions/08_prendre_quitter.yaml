@@ -182,6 +182,10 @@
   theme: P
   sous_theme: quitter
   source: "Nissan Juke 2024, stationnement, https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml"
+  illustration:
+    gen: pente_roues
+    params: {}
+    legende: Si la voiture part vers le bas, une roue avant vient buter contre la bordure.
 - id: p-pente-vitesse
   question: Je stationne une voiture à boîte manuelle en pente. Quel rapport laisser engagé en complément du frein
     de stationnement ?

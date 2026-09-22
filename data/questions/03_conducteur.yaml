@@ -112,6 +112,9 @@
   theme: C
   sous_theme: vigilance
   source: "Code de la route, art. R416-20 et R412-10 ; REMC, Anticiper"
+  image:
+    gen: feux_recul
+    params: {}
 - id: c-indice-bus-arrete
   question: Un bus est arrêté à son arrêt, à droite, en ville. Quels dangers j'anticipe ?
   reponse: 'Des piétons masqués qui traversent devant ou derrière le bus, et son redémarrage : je ralentis, je m’écarte et

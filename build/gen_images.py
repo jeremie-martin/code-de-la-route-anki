@@ -1934,7 +1934,227 @@ def champ_visuel(params):
     return str(S)
 
 
+# ------------------------------------------------ vehicles from the side and behind, parts ---
+GLASS, LOAD, LOAD_DARK = "#cfe6f7", "#c9a26b", "#8a6a3e"
+
+
+def _car_side(x, y, colour="gris", tilt=0, flip=False):
+    """Estate car from the side, 240 long, facing right (left with `flip`); (x, y) = rear bumper at ground level.
+    `tilt` (degrees, negative = nose up) pivots the body about the rear wheel, as a load in the boot does."""
+    c = CAR_COLOURS.get(colour, colour)
+    body = (f'<g transform="rotate({tilt} 48 0)">'
+            f'<path d="M0,-34 V-74 Q2,-82 12,-84 L20,-120 Q22,-126 30,-126 H140 Q150,-126 156,-120 L192,-86 L232,-80 '
+            f'Q240,-78 240,-68 V-34 Q240,-28 234,-28 H6 Q0,-28 0,-34 Z" fill="{c}" stroke="#111" stroke-width="2"/>'
+            f'<path d="M28,-118 H92 V-90 H24 Z M98,-118 H146 L176,-90 H98 Z" fill="{GLASS}" stroke="#111" stroke-width="1.5"/>'
+            f'<rect x="0" y="-72" width="6" height="14" fill="#d8362d"/><rect x="232" y="-72" width="8" height="10" fill="#fff6c2"/></g>')
+    wheels = "".join(f'<circle cx="{wx}" cy="-24" r="22" fill="#222"/><circle cx="{wx}" cy="-24" r="9" fill="#999"/>'
+                     for wx in (48, 192))
+    mirror = " translate(240,0) scale(-1,1)" if flip else ""
+    return f'<g transform="translate({x},{y}){mirror}">{body}{wheels}</g>'
+
+
+def feux_chargement(params):
+    """Loaded car at night, two panels: headlamp levelling left at 0 (the nose rises, the beam dazzles the oncoming
+    driver) and set for the load (the beam comes back onto the road)."""
+    S = SVG(480, 380)
+    S.add(f'<rect x="0" y="0" width="480" height="380" fill="{PAPER}"/>')
+    for i, (setting, wrong) in enumerate((("molette sur 0", True), ("molette réglée", False))):
+        top, ground = 190 * i, 190 * i + 170
+        S.add(f'<rect x="0" y="{ground}" width="480" height="8" fill="#9aa0a2"/>')
+        tilt = -4
+        hx, hy = 30 + 236, ground - 66 - 236 * math.sin(math.radians(-tilt)) + 2   # headlamp once the nose has risen
+        end = (480, hy - 40) if wrong else (480, ground)
+        S.add(f'<path d="M{hx:.0f},{hy - 4:.0f} L{end[0]},{end[1] - 30} L{end[0]},{end[1] + 12} L{hx:.0f},{hy + 4:.0f} Z" '
+              f'fill="{YELLOW}" opacity="0.45"/>')
+        S.add(_car_side(30, ground, "gris", tilt))
+        for bx, by, w, h in ((30, -106, 30, 16), (62, -100, 24, 10)):                  # load, seen through the window
+            S.add(f'<rect x="{30 + bx}" y="{ground + by}" width="{w}" height="{h}" fill="{LOAD}" stroke="{LOAD_DARK}" '
+                  f'stroke-width="1.5" transform="rotate({tilt} 78 {ground})"/>')
+        _pill(S, 16, top + 30, setting, colour=WRONG if wrong else INK)
+    return str(S)
+
+
+def chargement_arriere(params):
+    """Load sticking out behind an estate car, to scale (a car ≈ 4.5 m). `depasse` in metres; `limites` draws the
+    3 m maximum and the 1 m beyond which the end must be signalled; the end carries a red reflector (and a red
+    lamp at night)."""
+    limits = params.get("limites", False)
+    H = 280 if limits else 220
+    S = SVG(480, H)
+    S.add(f'<rect x="0" y="0" width="480" height="{H}" fill="{PAPER}"/>')
+    ground, rear, px_m = 200, 210, 53
+    S.add(f'<rect x="0" y="{ground}" width="480" height="8" fill="#9aa0a2"/>')
+    end = rear - params.get("depasse", 2) * px_m
+    S.add(f'<rect x="{end}" y="{ground - 96}" width="{rear + 120 - end}" height="10" fill="{LOAD}" stroke="{LOAD_DARK}" stroke-width="2"/>')
+    S.add(_car_side(rear, ground, "gris"))
+    S.add(f'<rect x="{end - 4}" y="{ground - 104}" width="12" height="26" fill="{SIGN_RED}" stroke="{PAPER}" stroke-width="2"/>')
+    if limits:
+        y = ground + 38
+        three, one = rear - 3 * px_m, rear - px_m
+        S.add(f'<path d="M{rear},{y} H{three} M{rear},{y - 8} v16 M{three},{y - 8} v16 M{one},{y - 6} v12" '
+              f'stroke="{INK}" stroke-width="2.5" fill="none"/>')
+        _text(S, (rear + three) / 2, y - 12, "3 m maximum", LABEL_SIZE, INK)
+        _text(S, one, y + 26, "1 m", LABEL_SIZE, INK)
+    return str(S)
+
+
+def chargement_coffre(params):
+    """Estate car cut away at the boot: heavy load on the floor against the rear seat back, lighter on top, nothing
+    above the top of the seat back (dashed)."""
+    S = SVG(480, 230)
+    S.add(f'<rect x="0" y="0" width="480" height="230" fill="{PAPER}"/>')
+    ground, x0, s = 220, 50, 1.6
+    S.add(f'<rect x="0" y="{ground}" width="480" height="10" fill="#9aa0a2"/>')
+    S.add(f'<g transform="translate({x0},{ground}) scale({s}) translate({-x0},{-ground})">' + _car_side(x0, ground, "gris")
+          # cut-away of the boot (car coordinates): opening, rear seat back, then the load
+          + f'<path d="M{x0 + 6},{ground - 36} V{ground - 116} H{x0 + 94} V{ground - 36} Z" fill="{PAPER}" stroke="#111" stroke-width="1.2"/>'
+          f'<rect x="{x0 + 80}" y="{ground - 104}" width="14" height="68" rx="5" fill="{SEAT_DARK}"/>'
+          f'<rect x="{x0 + 44}" y="{ground - 70}" width="36" height="34" fill="{LOAD_DARK}"/>'
+          f'<rect x="{x0 + 12}" y="{ground - 62}" width="30" height="26" fill="{LOAD}" stroke="{LOAD_DARK}" stroke-width="1.2"/>'
+          f'<rect x="{x0 + 46}" y="{ground - 92}" width="32" height="22" fill="{LOAD}" stroke="{LOAD_DARK}" stroke-width="1.2"/>'
+          f'<path d="M{x0 + 6},{ground - 104} H{x0 + 94}" stroke="{INK}" stroke-width="1.5" stroke-dasharray="5 4"/></g>')
+    return str(S)
+
+
+def _car_rear(cx, ground, colour="gris", reversing=False):
+    """Car seen from behind, 200 wide; reversing lamps (white) lit or not."""
+    c = CAR_COLOURS.get(colour, colour)
+    x0 = cx - 100
+    out = (f'<rect x="{x0 + 14}" y="{ground - 30}" width="34" height="30" rx="6" fill="#222"/>'
+           f'<rect x="{x0 + 152}" y="{ground - 30}" width="34" height="30" rx="6" fill="#222"/>'
+           f'<path d="M{x0 + 30},{ground - 150} H{x0 + 170} L{x0 + 188},{ground - 96} H{x0 + 12} Z" fill="{c}" stroke="#111" stroke-width="2"/>'
+           f'<path d="M{x0 + 40},{ground - 142} H{x0 + 160} L{x0 + 174},{ground - 104} H{x0 + 26} Z" fill="{GLASS}" stroke="#111" stroke-width="1.5"/>'
+           f'<rect x="{x0}" y="{ground - 100}" width="200" height="76" rx="14" fill="{c}" stroke="#111" stroke-width="2"/>'
+           f'<rect x="{x0 + 70}" y="{ground - 56}" width="60" height="18" rx="3" fill="{PAPER}" stroke="#111" stroke-width="1.5"/>')
+    for lx in (x0 + 6, x0 + 156):
+        out += f'<rect x="{lx}" y="{ground - 92}" width="38" height="24" rx="5" fill="#d8362d" stroke="#111" stroke-width="1.5"/>'
+        rx = lx + 29 if lx < cx else lx + 9
+        out += f'<circle cx="{rx}" cy="{ground - 80}" r="7" fill="{PAPER if reversing else "#e9e9e9"}" stroke="#111" stroke-width="1"/>'
+        if reversing:
+            out += f'<circle cx="{rx}" cy="{ground - 80}" r="12" fill="none" stroke="{PAPER}" stroke-width="4" opacity="0.8"/>'
+    return out
+
+
+def feux_recul(params):
+    """A parked car seen from behind, its white reversing lamps lit."""
+    S = SVG(400, 240)
+    S.add(f'<rect x="0" y="0" width="400" height="240" fill="{ASPHALT}"/>')
+    S.add('<rect x="0" y="0" width="400" height="70" fill="#cfd3d4"/>')
+    S.add(_car_rear(200, 214, "rouge", reversing=True))
+    return str(S)
+
+
+def gabarit_nuit(params):
+    """Night, unlit road rising to a crest: above the crest, the marker lamps high on a lorry's cab appear while
+    its headlamps are still hidden (only their glow shows)."""
+    S = SVG(480, 280)
+    S.add('<rect x="0" y="0" width="480" height="280" fill="#101a2a"/>')
+    S.add('<ellipse cx="240" cy="150" rx="70" ry="14" fill="#fff6c2" opacity="0.18"/>')      # glow of hidden headlamps
+    S.add('<path d="M206,160 V114 Q206,106 214,106 H266 Q274,106 274,114 V160 Z" fill="#232a33"/>')    # top of the cab
+    for x in (212, 268):                                                                       # end-outline marker lamps
+        S.add(f'<circle cx="{x}" cy="112" r="4" fill="#fff6c2"/><circle cx="{x}" cy="112" r="10" fill="#fff6c2" opacity="0.25"/>')
+    S.add('<path d="M0,190 Q240,120 480,190 V280 H0 Z" fill="#1c2127"/>')
+    S.add('<path d="M170,280 L228,156 H252 L310,280 Z" fill="#2b3036"/>')
+    S.add('<path d="M240,164 L240,280" stroke="#8a8f94" stroke-width="3" stroke-dasharray="14 16"/>')
+    S.add('<path d="M0,190 Q240,120 480,190" fill="none" stroke="#2b3036" stroke-width="2"/>')
+    return str(S)
+
+
+def jauge_huile(params):
+    """Oil dipstick after the wipe-and-dip: the oil film ends between the min and max marks."""
+    S = SVG(480, 150)
+    S.add(f'<rect x="0" y="0" width="480" height="150" fill="{PAPER}"/>')
+    S.add(f'<circle cx="40" cy="60" r="22" fill="none" stroke="{YELLOW}" stroke-width="10"/>')
+    S.add('<rect x="60" y="54" width="400" height="12" rx="6" fill="#b8bec1"/>')
+    S.add('<rect x="392" y="54" width="68" height="12" rx="6" fill="#b07a1e" opacity="0.85"/>')          # oil film
+    for x, name in ((432, "min"), (370, "max")):
+        S.add(f'<path d="M{x},46 V74" stroke="{INK}" stroke-width="3"/>')
+        _text(S, x, 104, name, LABEL_SIZE, INK)
+    return str(S)
+
+
+def ecrous_croix(params):
+    """Wheel from the side: the five nuts tightened in a star (1 to 5), each followed by the one across."""
+    S = SVG(360, 340)
+    S.add(f'<rect x="0" y="0" width="360" height="340" fill="{PAPER}"/>')
+    cx, cy = 180, 170
+    S.add(f'<circle cx="{cx}" cy="{cy}" r="150" fill="#222"/><circle cx="{cx}" cy="{cy}" r="100" fill="#b8bec1"/>'
+          f'<circle cx="{cx}" cy="{cy}" r="24" fill="#8d9396"/>')
+    pts = [(cx + 60 * math.sin(math.radians(72 * k)), cy - 60 * math.cos(math.radians(72 * k))) for k in range(5)]
+    order = [0, 2, 4, 1, 3]
+    S.add('<path d="M' + " L".join(f"{pts[k][0]:.1f},{pts[k][1]:.1f}" for k in order + [0]) + f'" fill="none" '
+          f'stroke="{INK}" stroke-width="2" stroke-dasharray="6 5"/>')
+    for n, k in enumerate(order, 1):
+        x, y = pts[k]
+        S.add(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="13" fill="#555" stroke="#111" stroke-width="1.5"/>')
+        lx, ly = cx + 86 * math.sin(math.radians(72 * k)), cy - 86 * math.cos(math.radians(72 * k))
+        _text(S, lx, ly + 7, n, NUMBER_SIZE, INK)
+    return str(S)
+
+
+def pneu_hernie(params):
+    """Tyre from the side with a bulge on the sidewall."""
+    S = SVG(360, 320)
+    S.add(f'<rect x="0" y="0" width="360" height="320" fill="{PAPER}"/>')
+    cx, cy = 180, 160
+    S.add(f'<circle cx="{cx}" cy="{cy}" r="140" fill="#2a2a2a"/><circle cx="{cx}" cy="{cy}" r="136" fill="none" '
+          f'stroke="#444" stroke-width="3" stroke-dasharray="4 6"/><circle cx="{cx}" cy="{cy}" r="82" fill="#b8bec1"/>'
+          f'<circle cx="{cx}" cy="{cy}" r="22" fill="#8d9396"/>')
+    S.add('<defs><radialGradient id="bosse" cx="0.4" cy="0.35" r="0.7"><stop offset="0" stop-color="#6a6a6a"/>'
+          '<stop offset="0.6" stop-color="#3a3a3a"/><stop offset="1" stop-color="#2a2a2a"/></radialGradient></defs>')
+    S.add('<ellipse cx="264" cy="90" rx="34" ry="24" transform="rotate(40 264 90)" fill="url(#bosse)"/>'
+          '<path d="M236,110 Q258,124 290,104" fill="none" stroke="#111" stroke-width="3" opacity="0.6"/>')
+    return str(S)
+
+
+def pneu_gonflage(params):
+    """Tyre cross-sections on the road: correct pressure (whole tread on the road), over-inflated (crown bulges,
+    only the centre touches), under-inflated (the crown sags, the shoulders carry the load). Contact in yellow."""
+    S = SVG(480, 230)
+    S.add(f'<rect x="0" y="0" width="480" height="230" fill="{PAPER}"/>')
+    for i, (name, crown, contact) in enumerate((("correct", 0, (-40, 40)), ("surgonflé", 14, (-16, 16)),
+                                                ("sous-gonflé", -8, None))):
+        cx, ground = 80 + 160 * i, 170
+        # section: two sidewalls and the tread; crown > 0 bulges down in the middle, < 0 lifts it
+        side = 58 + (6 if crown < 0 else -4 if crown > 0 else 0)
+        S.add(f'<path d="M{cx - side},{ground - 110} Q{cx - side - 8},{ground - 50} {cx - 46},{ground - 6} '
+              f'Q{cx},{ground - 6 + crown} {cx + 46},{ground - 6} Q{cx + side + 8},{ground - 50} {cx + side},{ground - 110}" '
+              f'fill="none" stroke="#2a2a2a" stroke-width="14" stroke-linejoin="round"/>')
+        S.add(f'<rect x="{cx - 70}" y="{ground}" width="140" height="6" fill="#9aa0a2"/>')
+        spans = [contact] if contact else [(-46, -26), (26, 46)]
+        for a, b in spans:
+            S.add(f'<rect x="{cx + a}" y="{ground - 3}" width="{b - a}" height="6" fill="{YELLOW}"/>')
+        _text(S, cx, ground + 44, name, LABEL_SIZE, INK)
+    return str(S)
+
+
+def pente_roues(params):
+    """Parked against the kerb (on the right) on a steep slope, from above: going down, front wheels turned towards
+    the kerb; going up, towards the road — if the car rolls, a tyre stops against the kerb."""
+    S = SVG(480, 330)
+    S.add(f'<rect x="0" y="0" width="480" height="330" fill="#cfd3d4"/>')
+    for i, (name, turn) in enumerate((("en descente", 25), ("en montée", -25))):
+        x0 = 240 * i
+        S.add(f'<rect x="{x0}" y="0" width="170" height="290" fill="{ASPHALT}"/>')
+        S.add(f'<rect x="{x0 + 168}" y="0" width="6" height="290" fill="#9aa0a2"/>')              # kerb
+        cx, cy = x0 + 132, 150
+        for sx in (-1, 1):
+            S.add(f'<rect x="-6" y="-13" width="12" height="26" rx="3" fill="#111" '
+                  f'transform="translate({cx + sx * 24},{cy - 26}) rotate({turn})"/>')
+        S.add(f'<g transform="translate({cx},{cy})">{vehicle_sprite("car", "bleu")}</g>')
+        # slope: the arrow points downhill
+        down = -1 if turn > 0 else 1
+        S.add(f'<path d="M{x0 + 40},{150 - down * 60} V{150 + down * 60} m-10,{-down * 14} l10,{down * 14} l10,{-down * 14}" '
+              f'fill="none" stroke="{MARK}" stroke-width="4"/>')
+        _text(S, x0 + 56, 150 + down * 50, "bas", LABEL_SIZE, MARK, "start")
+        _text(S, x0 + 85, 318, name, LABEL_SIZE, INK)
+    return str(S)
+
+
 REGISTRY.update({
+    "feux_chargement": feux_chargement, "chargement_arriere": chargement_arriere, "chargement_coffre": chargement_coffre,
+    "feux_recul": feux_recul, "gabarit_nuit": gabarit_nuit, "jauge_huile": jauge_huile, "ecrous_croix": ecrous_croix,
+    "pneu_hernie": pneu_hernie, "pneu_gonflage": pneu_gonflage, "pente_roues": pente_roues,
     "poste_conduite": poste_conduite, "siege_dos_route": siege_dos_route, "volant_mains": volant_mains, "retroviseur": retroviseur, "champ_visuel": champ_visuel,
     "distance_arret": distance_arret, "ligne_continue_gestes": ligne_continue_gestes,
     "rue_stationnement": rue_stationnement,

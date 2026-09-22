@@ -25,6 +25,9 @@
   theme: R
   sous_theme: nuit
   source: Code de la route, art. R416-6 et R313-10
+  image:
+    gen: gabarit_nuit
+    params: {}
 - id: r-nuit-vitesse-visibilite
   question: Pourquoi faut-il rouler moins vite de nuit, même sur une route connue et dégagée ?
   reponse: Pour pouvoir m’arrêter dans la distance effectivement visible, que l’éclairage, le contraste de l’obstacle et la

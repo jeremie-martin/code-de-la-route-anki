@@ -66,6 +66,10 @@
   theme: M
   sous_theme: pneus
   source: "Michelin, Usure des pneus ; Ornikar, Sous-gonflage"
+  illustration:
+    gen: pneu_gonflage
+    params: {}
+    legende: En jaune, la partie de la bande de roulement qui touche la route.
 - id: aff-m-pneus-neufs-arriere
   contexte: Je ne fais remplacer que deux pneus sur quatre.
   affirmation: Je fais monter les pneus neufs à l'arrière.

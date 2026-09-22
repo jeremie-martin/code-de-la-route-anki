@@ -41,6 +41,9 @@
   theme: M
   sous_theme: pneus
   source: 'Michelin, Dommages aux flancs du pneu, https://www.michelin.fr/auto/conseils/changer-pneus/dommages-aux-flancs-des-pneus'
+  image:
+    gen: pneu_hernie
+    params: {}
 - id: m-niveau-huile
   question: Comment contrôle-t-on le niveau d'huile moteur ?
   reponse: 'Sur sol horizontal, moteur arrêté et selon la notice ; avec une jauge : essuyer, réinsérer puis lire ; le niveau
@@ -50,6 +53,10 @@
   theme: M
   sous_theme: entretien
   source: "Ornikar, Huile moteur ; lepermislibre, Contrôler les niveaux"
+  illustration:
+    gen: jauge_huile
+    params: {}
+    legende: 'Jauge essuyée, réinsérée puis retirée : l’huile s’arrête entre min et max.'
 - id: m-liquide-refroidissement
   question: Quelle précaution essentielle avec le liquide de refroidissement ?
   reponse: Ne jamais ouvrir le vase d’expansion moteur chaud (liquide sous pression, brûlures graves) ; contrôler à froid,
@@ -187,6 +194,10 @@
   theme: M
   sous_theme: feux
   source: "Sécurité routière, Exemples de nouvelles questions (Q1) ; Ornikar, Réglage des feux"
+  illustration:
+    gen: feux_chargement
+    params: {}
+    legende: 'Chargée à l’arrière, la voiture lève le nez : sans correction, le faisceau monte et éblouit.'
 - id: m-feux-arriere-controle
   question: Je ne vois pas mes feux stop ni mes feux arrière depuis le poste de conduite. Comment m’assurer qu’ils
     fonctionnent ?
@@ -306,6 +317,10 @@
   theme: M
   sous_theme: depannage
   source: "Stych, Dépannages ; Code en Poche, Changer une roue"
+  illustration:
+    gen: ecrous_croix
+    params: {}
+    legende: 'Serrage en croix : chaque écrou est suivi du plus éloigné.'
 - id: m-crevaison-eclatement
   question: Un pneu éclate en roulant. Quelle réaction ?
   reponse: Je tiens fermement le volant sans freiner brutalement ; je lève le pied, je laisse le véhicule ralentir puis je

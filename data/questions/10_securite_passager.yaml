@@ -105,6 +105,10 @@
   theme: S
   sous_theme: chargement
   source: Code de la route, art. R312-19 ; securite-routiere.gouv.fr
+  illustration:
+    gen: chargement_coffre
+    params: {}
+    legende: Le plus lourd au plancher, contre le dossier ; rien au-dessus du haut des dossiers (pointillés).
 - id: s-chargement-depassement
   question: Une planche dépasse de 2 m à l'arrière de mon break. Puis-je rouler ainsi ?
   reponse: 'Oui, si le chargement est solidement arrimé et signalé : dispositif réfléchissant à l’arrière, complété d’un feu
@@ -116,6 +120,11 @@
   theme: S
   sous_theme: chargement
   source: Code de la route, art. R312-19 à R312-22
+  illustration:
+    gen: chargement_arriere
+    params:
+      depasse: 2
+    legende: 'À l’extrémité : dispositif réfléchissant rouge, et feu rouge la nuit.'
 - id: s-coffre-toit
   question: Quelles conséquences un coffre de toit (ou une galerie) a-t-il sur la conduite ?
   reponse: Prise au vent et consommation en hausse, centre de gravité plus haut ; je respecte la charge maximale et je vérifie
