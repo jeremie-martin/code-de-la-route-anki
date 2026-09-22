@@ -37,10 +37,7 @@ Le schéma occupe environ 241 px de haut dans cette carte à 390 px de large. Au
 ni mesure d’efficacité pédagogique. La géométrie du biseau est contrôlée directement dans le SVG ;
 son implantation n’a pas fait l’objet d’une validation de signalisation de chantier.
 
-## Candidats voisins
+## Suite du travail
 
-| Carte | Décision |
-|---|---|
-| `r-chantier-fleche-lumineuse` | Prochain candidat : lire une flèche et choisir le côté du rabattement. Vérifier la représentation exacte du dispositif avant de dessiner ; pas encore modifié. |
-| `kd10` | Déjà illustrée : la fermeture de voie est lisible sur le panneau. Pas de scène supplémentaire pour le même rappel. |
-| `aff-r-chantier-sans-ouvriers` | Garder le texte : l’absence d’ouvriers ne rend pas caduque la limitation temporaire. Une image n’ajoute pas de distinction utile. |
+La [carte des candidats visuels](../../candidats-visuels.md) rassemble désormais les pistes voisines et
+celles du reste du deck, leurs bénéfices attendus et les raisons de conserver certaines notes sans image.

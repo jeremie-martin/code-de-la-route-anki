@@ -55,3 +55,6 @@ Les repères de thème sont sur les sous-decks, sans alourdir chaque carte.
 Vérifier les cartes réellement rendues, sur téléphone en clair et sombre : images lisibles, conditions
 visibles, réponse sans ambiguïté. Le défilement vertical est acceptable ; réduire la police pour faire tenir
 une longue réponse ne résout pas un problème de rédaction. Les mesures automatiques complètent cette lecture.
+
+Les pistes d’illustration et leurs réserves sont réunies dans la [carte des candidats visuels](candidats-visuels.md).
+Elle sert à discuter les changements et les recouvrements, sans prescrire un nombre d’images à produire.
