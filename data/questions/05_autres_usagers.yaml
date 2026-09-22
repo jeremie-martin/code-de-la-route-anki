@@ -1,13 +1,14 @@
 - id: u-pieton-hors-passage
-  question: Un piéton s'engage pour traverser hors de tout passage piéton (le plus proche est à 100 m). Dois-je le laisser
-    passer ?
-  reponse: 'Oui : sans passage à moins de 50 m, il traverse régulièrement et je dois céder ; je ralentis et le laisse finir,
-    sans klaxonner.'
-  explication: 'Refus de priorité à un piéton : 135 €, 6 points (R415-11). Piège : « il n''est pas sur un passage, je peux
-    passer » — faux.'
+  question: Hors intersection, sans feu ni agent, un piéton s’engage perpendiculairement pour traverser.
+    Le passage le plus proche est à 100 m ; nous nous voyons et je peux m’arrêter sans danger. Dois-je céder ?
+  reponse: Oui, je le laisse traverser ; sa priorité ne dépend pas de la présence de bandes au sol.
+  explication: >-
+    L’absence de passage à moins de 50 m ne suffit pas à elle seule : visibilité, distances,
+    vitesses et emplacement de la traversée comptent aussi. Même devant un piéton en infraction,
+    je ralentis et évite de le mettre en danger.
   theme: U
   sous_theme: pietons
-  source: Code de la route, art. R415-11 et R412-37
+  source: Code de la route, R412-37 à R412-39, R412-6 et R415-11 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037411323
 - id: u-pieton-canne-blanche
   question: Un piéton avec une canne blanche attend au bord de la chaussée. Que fais-je ?
   reponse: 'Je m’arrête et le laisse traverser, sans klaxonner : une personne malvoyante se repère au son et ne peut pas juger

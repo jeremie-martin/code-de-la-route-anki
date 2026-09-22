@@ -902,7 +902,7 @@ Recherche Anki : `objectif::u-vulnerables`
 | `conf-a13b-c20a` | consolidation | confusions | IISR 1re et 5e parties |
 | `u-velo-chiffres` | socle | faits | Code de la route, art. R431-1-1, R431-1-3, R412-34, R431-7 |
 | `u-velo-equipement-chiffres` | consolidation | faits | Code de la route, art. R313-4 et s. ; securite-routiere.gouv.fr — Équipements obligatoires vélo |
-| `u-pieton-hors-passage` | socle | questions | Code de la route, art. R415-11 et R412-37 |
+| `u-pieton-hors-passage` | socle | questions | Code de la route, R412-37 à R412-39, R412-6 et R415-11 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037411323 |
 | `u-pieton-canne-blanche` | socle | questions | Code de la route, art. R412-6 et R415-11 ; securite-routiere.gouv.fr — Piétons |
 | `u-pieton-hors-agglo-cote` | consolidation | questions | Code de la route, art. R412-36 et R412-42 |
 | `u-zone-rencontre-pietons` | socle | questions | Code de la route, art. R110-2 et R415-11 |
@@ -915,7 +915,7 @@ Recherche Anki : `objectif::u-vulnerables`
 | `u-double-sens-cyclable` | socle | questions | Code de la route, art. R412-28-1 et R110-2 |
 | `aff-u-pieton-telephone` | consolidation | affirmations | Code de la route, art. R415-11 ; Ornikar — Priorité piéton |
 | `aff-u-pieton-imprudent` | socle | affirmations | Code de la route, art. R412-6 et R412-37 ; securite-routiere.gouv.fr — Réglementation des piétons |
-| `aff-u-pieton-passage-50m` | consolidation | affirmations | Code de la route, art. R412-37 |
+| `aff-u-pieton-passage-50m` | consolidation | affirmations | Code de la route, R412-37 et R412-39 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177125/ |
 | `aff-u-place-pmr` | consolidation | affirmations | Code de la route, art. R417-11 ; service-public.fr F2891 |
 | `aff-u-fauteuil-roulant-pieton` | consolidation | affirmations | Code de la route, art. R412-34 et R412-35 |
 | `aff-u-car-scolaire-depassement` | consolidation | affirmations | Code de la route, art. R413-17 III 3° et R414-13 |
@@ -1025,7 +1025,7 @@ Recherche Anki : `objectif::p-installer`
 | `p-ceinture-position` | socle | questions | securite-routiere.gouv.fr — Comment positionner la ceinture de sécurité |
 | `p-volant-mains` | consolidation | questions | REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite |
 | `p-ordre-installation` | socle | questions | REMC ; Code en Poche — Prendre et quitter son véhicule ; En Voiture Simone — S'installer |
-| `p-demarrage-point-mort` | consolidation | questions | Code en Poche — Prendre et quitter son véhicule ; REMC |
+| `p-demarrage-point-mort` | consolidation | questions | REMC ; Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux |
 | `p-vehicule-emprunte-equipements` | consolidation | questions | Code de la route, art. R416-19 |
 | `aff-p-reglage-en-roulant` | consolidation | affirmations | Code en Poche — Prendre et quitter son véhicule ; REMC |
 | `aff-p-retro-interieur-nuit` | socle | affirmations | En Voiture Simone — S'installer ; Codes Rousseau — Les rétroviseurs |
@@ -1069,9 +1069,9 @@ Recherche Anki : `objectif::m-alertes`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `voyant-huile` | socle | reconnaissance | ISO 2575 ; Codes Rousseau — Les voyants du tableau de bord |
+| `voyant-huile` | socle | reconnaissance | ISO 2575 ; Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux |
 | `voyant-batterie` | socle | reconnaissance | Renault, témoins lumineux (exemple constructeur ; consulter la notice du véhicule) — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux |
-| `voyant-temperature` | socle | reconnaissance | ISO 2575 ; Codes Rousseau — Les voyants |
+| `voyant-temperature` | socle | reconnaissance | ISO 2575 ; Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux |
 | `voyant-frein` | socle | reconnaissance | ISO 2575 ; Codes Rousseau — Les voyants |
 | `voyant-frein-stationnement` | socle | reconnaissance | ISO 2575 ; Codes Rousseau — Les voyants |
 | `voyant-ceinture` | socle | reconnaissance | ISO 2575 ; Code de la route, art. R412-1 |
@@ -1099,7 +1099,7 @@ Recherche Anki : `objectif::m-alertes`
 | `m-visuel-batterie-contact` | socle | questions | Notice Renault — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux |
 | `m-visuel-batterie-roulant` | socle | questions | Notice Renault — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux |
 | `aff-m-voyant-orange-arret` | consolidation | affirmations | Ornikar — Voyants lumineux ; En Voiture Simone — Tableau de bord |
-| `aff-m-autotest-voyants` | consolidation | affirmations | lepermislibre — Voyants de la voiture |
+| `aff-m-autotest-voyants` | consolidation | affirmations | Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux |
 | `aff-m-voyant-abs-blocage` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q5) |
 | `aff-m-voyant-abs-arret` | socle | affirmations | Sécurité routière — Exemples de nouvelles questions (Q5) |
 | `aff-m-tpms-orange` | consolidation | affirmations | Notices constructeurs (Renault, témoins lumineux) ; REMC |

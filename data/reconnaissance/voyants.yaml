@@ -7,19 +7,23 @@
   type: voyant
   code: ISO 7000-0248
   image: {commons: "ISO 7000 - Ref-No 0248.svg", tint: "#e53935"}
+  question: En roulant, ce voyant rouge s’allume. Que signale-t-il et que faire ?
   nom: Pression d'huile moteur (rouge)
-  signification: La pression d'huile est insuffisante — le moteur n'est plus lubrifié et peut casser en quelques minutes.
-  conduite: "Je m'arrête dès que possible et je coupe le moteur ; je contrôle le niveau d'huile. Voyant toujours allumé : dépannage."
-  piege: Ce voyant signale une **pression**, pas seulement un niveau bas — une burette qui s'allume en roulant impose l'arrêt.
+  signification: Alerte de pression d’huile insuffisante ; la lubrification du moteur est menacée.
+  conduite: Je m’arrête en sécurité et coupe le moteur ; je suis la notice et fais appel à l’assistance.
+    Un niveau normal ne suffit pas à autoriser le redémarrage.
+  piege: Il signale la pression, pas seulement le niveau. Son allumage au contact, moteur arrêté, peut être
+    normal ; c’est l’allumage en roulant qui est testé ici.
   theme: M
   sous_theme: voyants
-  source: "ISO 2575 ; Codes Rousseau — Les voyants du tableau de bord"
+  source: ISO 2575 ; Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux
 - id: voyant-batterie
   type: voyant
   code: ISO 7000-0247
   image:
     commons: ISO 7000 - Ref-No 0247.svg
     tint: '#e53935'
+  question: En roulant, ce voyant rouge s’allume. Que signale-t-il et que faire ?
   nom: Charge de la batterie (rouge)
   signification: 'Défaut du circuit de charge : la batterie peut ne plus se recharger correctement.'
   conduite: Je gagne un endroit sûr et consulte les messages et la notice ; avec STOP, arrêt impératif en sécurité.
@@ -34,11 +38,12 @@
   image: {commons: "ISO 7000 - Ref-No 0246.svg", tint: "#e53935"}
   nom: Température du liquide de refroidissement (rouge)
   signification: Le moteur surchauffe (manque de liquide, fuite, ventilateur en panne) — risque de joint de culasse et de casse.
-  conduite: Je m'arrête dès que possible, moteur coupé, et je laisse refroidir ; je n'ouvre jamais le bouchon du vase d'expansion à chaud (jet bouillant).
+  conduite: Je m’arrête en sécurité et suis la notice pour le moteur (arrêt ou bref ralenti selon le véhicule) ;
+    je n’ouvre jamais le vase d’expansion à chaud, car le liquide sous pression peut brûler.
   piege: En bleu au démarrage sur certains véhicules = moteur froid, sans gravité.
   theme: M
   sous_theme: voyants
-  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+  source: ISO 2575 ; Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux
 - id: voyant-frein
   type: voyant
   code: ISO 7000-0239

@@ -67,6 +67,7 @@ est dans le [registre des sources](data/_meta/source_checks.yaml).
 - [Conception](docs/conception.md) — ce que le deck optimise, les formes de cartes, les principes de rédaction.
 - [Maintenance](docs/maintenance.md) — structure des données, procédure de modification, contrôles.
 - [Sources](docs/sources.md) — références utilisées et registre des consultations.
+- [Comparaison avec le livre](docs/research/comparaison-livre-2025-2026.md) — apports retenus, divergences et limites.
 - [Historique](CHANGELOG.md) — les éditions successives.
 
 ## Licences

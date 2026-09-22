@@ -11,14 +11,14 @@
   sous_theme: tableau_de_bord
   source: Ornikar — Voyants lumineux ; En Voiture Simone — Tableau de bord
 - id: aff-m-autotest-voyants
-  contexte: La notice prévoit que le témoin de pression d’huile s’allume à la mise du contact, moteur arrêté.
+  contexte: La notice prévoit que le témoin d’airbag s’allume brièvement à la mise du contact.
   affirmation: Un voyant qui ne s'allume pas du tout à ce moment-là est bon signe.
   verdict: faux
   pourquoi: Ce témoin devrait s’allumer pour vérifier l’alerte. Son absence peut signaler une panne ; le fonctionnement
     de l’autotest dépend du véhicule, tous les témoins ne s’allument pas systématiquement.
   theme: M
   sous_theme: tableau_de_bord
-  source: lepermislibre — Voyants de la voiture
+  source: Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux
 - id: aff-m-voyant-abs-blocage
   contexte: Le voyant ABS orange reste allumé, sans autre alerte ni anomalie du freinage.
   affirmation: Lors d'un freinage d'urgence, les roues risquent de se bloquer.

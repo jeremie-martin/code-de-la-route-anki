@@ -765,3 +765,18 @@
   url: https://www.cetu.developpement-durable.gouv.fr/IMG/pdf/CETU-Note_Info_22_2011.pdf
   portee: 'Note technique historique, p. 2 et 7 : utilité de l’espacement à l’arrêt et distinction distances en circulation/à l’arrêt selon l’ouvrage. Sert à expliquer le mécanisme ; aucune valeur locale de 2011 n’est présentée comme une obligation actuelle.'
   notes: [r-tunnel-distance-arret]
+- id: audit-pietons-traversee-conditions
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177125/
+  portee: 'Texte consulté de R412-37 à R412-39 : seuil de 50 m, visibilité et vitesses, prolongement des trottoirs aux intersections, interdiction de traverser le carrefour en diagonale sans passage prévu ; exceptions des aires piétonnes et zones de rencontre. Le seuil seul ne prouve pas une traversée régulière.'
+  notes: [l-passage-pieton-50m, u-pieton-hors-passage, aff-u-pieton-passage-50m]
+- id: audit-pietons-priorite-reguliere
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037411323
+  portee: 'R415-11 consulté : priorité au piéton engagé régulièrement ou manifestant clairement cette intention. La situation de la question précise les conditions de traversée ; elle ne déduit plus la régularité du seul éloignement du passage.'
+  notes: [u-pieton-hors-passage]
+- id: audit-voyants-contact-roulage
+  consulte_le: '2026-09-22'
+  url: https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux
+  portee: 'Notice Clio 5 phase 1 consultée : allumage au contact/démarrage puis extinction, airbag absent au contact, huile et batterie en roulage ; surchauffe avec bref ralenti avant arrêt moteur. Exemple constructeur qui réfute les consignes universelles, pas procédure applicable à tous les véhicules. Contrôle du niveau seul insuffisant pour banaliser une alerte de pression.'
+  notes: [p-demarrage-point-mort, voyant-huile, voyant-batterie, voyant-temperature, aff-m-autotest-voyants]

@@ -45,3 +45,21 @@ abstrait les conflits, il n’enseigne pas toutes les trajectoires possibles sel
 Aucun scénario du paquet ne met actuellement en scène deux véhicules opposés tournant tous deux à gauche.
 Cette comparaison ne démontre ni la couverture exhaustive de l’ETG ni un gain mesuré de rétention.
 Les scènes photo/vidéo nouvelles restent nécessaires pour entraîner la perception.
+
+## Seconde lecture ciblée — 22 septembre 2026
+
+Relecture des passages sur le placement, les changements de direction, les croisements, les distances,
+le fonctionnement du véhicule et les piétons (ch. 14, 19–21, 24 et 37), avec inspection du schéma de
+croisement à l’indonésienne. Pas de nouveau média nécessaire pour les corrections retenues :
+
+- **Voyants :** le livre rappelle les alertes en roulage, mais la comparaison des cartes du deck entre elles
+  révèle une consigne erronée d’extinction avant démarrage. Cinq notes sont harmonisées avec une notice Renault :
+  contact et roulage distincts, autotest de l’airbag, pression d’huile distincte du niveau, procédure de
+  surchauffe dépendant du véhicule.
+- **Piétons :** trois notes sont précisées à partir de R412-37 à R412-39 et R415-11. Le rappel du seuil
+  reste dans le fait à trous ; le vrai/faux teste maintenant son transfert au carrefour, sans carte supplémentaire.
+- **Distances :** ne pas reprendre les coefficients du livre comme des constantes physiques universelles.
+  Le deck distingue déjà estimation pédagogique, réaction et freinage ; aucune nouvelle carte justifiée ici.
+
+Cette passe porte sur les points ci-dessus et leur cohérence dans le deck, pas sur une nouvelle vérification
+juridique de ses 1 052 notes. Le livre reste un document local de comparaison, exclu de Git et du paquet.

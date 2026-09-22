@@ -203,7 +203,8 @@
   - ref: j10
     legende: Les bandes rouges décomptent la distance au passage à niveau.
 - id: l-passage-pieton-50m
-  texte: Un piéton doit utiliser un passage prévu à son intention s’il en existe un à moins de {{c1::50 m}}.
+  texte: Hors aire piétonne et zone de rencontre, un piéton doit utiliser un passage prévu à son intention
+    s’il en existe un à moins de {{c1::50 m}}.
   explication: Sans passage proche, il tient compte de la visibilité, de la distance et de la vitesse des véhicules
     ; à une intersection, il traverse dans le prolongement du trottoir. Je cède à celui qui s’engage régulièrement
     ou manifeste clairement cette intention. Même face à un piéton en infraction, je dois éviter l’accident.

@@ -15,13 +15,15 @@
   sous_theme: pietons
   source: 'Code de la route, art. R412-6 et R412-37 ; securite-routiere.gouv.fr — Réglementation des piétons'
 - id: aff-u-pieton-passage-50m
-  contexte: Je suis piéton et je veux traverser ; un passage protégé se trouve à 30 m sur ma gauche.
-  affirmation: Je dois l'emprunter plutôt que de traverser ici.
-  verdict: vrai
-  pourquoi: 'R412-37 : le piéton est tenu d''utiliser les passages lorsqu''il en existe à moins de 50 m, et de traverser perpendiculairement. Au-delà de 50 m, il traverse où il veut, en jugeant distances et vitesses.'
+  contexte: Je suis piéton à un carrefour ordinaire, hors zone de rencontre et aire piétonne.
+    Aucun passage piéton n’est aménagé à proximité ; il n’y a ni feu ni agent.
+  affirmation: L’absence de passage à moins de 50 m m’autorise à traverser le carrefour en diagonale.
+  verdict: faux
+  pourquoi: Je contourne le carrefour en traversant dans le prolongement des trottoirs, après avoir vérifié
+    la circulation. L’absence de passage proche ne permet pas de choisir n’importe quelle trajectoire.
   theme: U
   sous_theme: pietons
-  source: 'Code de la route, art. R412-37'
+  source: Code de la route, R412-37 et R412-39 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177125/
 - id: aff-u-place-pmr
   contexte: Je dépose un passager devant un commerce ; la seule place libre porte le marquage « personnes handicapées ».
   affirmation: Un arrêt de deux minutes y est admis.

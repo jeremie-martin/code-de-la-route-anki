@@ -19,6 +19,8 @@ from build.preview import CHROME, OUT
 from build.verify import import_package
 
 SAMPLES = {
+    'p-demarrage-point-mort', 'voyant-huile', 'voyant-batterie', 'voyant-temperature',
+    'aff-m-autotest-voyants', 'u-pieton-hors-passage', 'aff-u-pieton-passage-50m',
     's-remorque-vitesses', 's-remorque-permis-vitesse', 'm-freins-apres-lavage', 's-groupes-sieges',
     'l-sortie-parking-priorite', 'aff-l-chemin-terre', 'scn-moi-sortie-parking',
     'scn-t-moi-branche', 'l-giratoire-placement', 'l-giratoire-clignotant',

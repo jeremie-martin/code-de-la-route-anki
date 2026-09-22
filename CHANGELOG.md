@@ -1,3 +1,17 @@
+# Voyants et traversées piétonnes — 22 septembre 2026
+
+- Huit notes corrigées, sans ajouter de cartes : distinguer contact et roulage, pression et niveau d’huile,
+  adapter la consigne de surchauffe au véhicule ; préciser les conditions de traversée des piétons.
+  Le vrai/faux redondant sur les 50 m devient une application au carrefour.
+- Les questions personnalisées de reconnaissance passent désormais par le même traitement de texte que
+  les autres questions ; le contrôle d’import a révélé puis confirmé la correction de cette incohérence.
+- Sources primaires consultées, comparaison ciblée du livre prolongée et maintenance précisée.
+  Le livre commercial reste local, ignoré par Git ; aucun de ses médias n’est incorporé.
+- Paquet reconstruit : 1 052 notes, 1 126 cartes. 22 tests réussis ; import et réimport Anki réussis.
+  Inspection des huit notes modifiées à 430 px, avec échantillons sombres et à 320 px.
+  Le rapport `out/RENDU.md` donne les résultats automatiques pour l’empreinte du paquet livré.
+  Pas de revalidation juridique exhaustive, d’essai natif mobile ni de mesure de rétention.
+
 # Comparaison avec le livre 2025–2026 — 22 septembre 2026
 
 - Trois questions ajoutées : plafonds de vitesse avec remorque, distinction permis/PTRA dans un cas

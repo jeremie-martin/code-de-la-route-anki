@@ -122,11 +122,13 @@
   question: Tout est réglé, je vais mettre le contact. Où doit être le levier de vitesses ?
   reponse: 'Au point mort, embrayage enfoncé (boîte automatique : P, pied sur le frein), frein de stationnement serré : le
     véhicule ne peut pas bondir.'
-  explication: J'attends l'extinction des voyants avant de lancer le moteur, et je ne desserre le frein de stationnement qu'au
-    moment de partir.
+  explication: >-
+    Je suis la procédure de démarrage de la notice : certains témoins ne s’éteignent qu’une fois
+    le moteur lancé. Je vérifie alors les alertes restantes avant de partir ; je ne desserre le frein de
+    stationnement qu’au moment de rouler.
   theme: P
   sous_theme: installation
-  source: Code en Poche — Prendre et quitter son véhicule ; REMC
+  source: REMC ; Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux
 - id: p-quitter-checklist
   question: Je me gare et je vais m'éloigner de ma voiture. Que fais-je avant de sortir ?
   reponse: 'Moteur coupé, clé retirée, frein de stationnement serré et un rapport engagé (ou P) : rien ne doit pouvoir bouger

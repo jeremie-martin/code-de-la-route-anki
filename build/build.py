@@ -657,7 +657,7 @@ def build_collection(data, names, out_apkg: Path):
     for it in data["reconnaissance"]:
         add("CDR Reconnaissance", {
             "Id": it["id"], "Type": it["type"], "Image": img_tag(names[it["id"]]),
-            "Question": it.get("question") or TYPE_QUESTION[it["type"]],
+            "Question": md(it.get("question") or TYPE_QUESTION[it["type"]]),
             "Nom": md(it["nom"]), "Signification": md(it["signification"]),
             "ConduiteATenir": md(it.get("conduite", "")), "Complement": md(it.get("complement", "")),
             "Piege": feedback_html(it, "piege", names), "Code": esc(it.get("code", "")),
