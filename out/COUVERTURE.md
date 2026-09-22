@@ -15,7 +15,7 @@ Recherche Anki : `objectif::x-lecture`
 | `etg-pictogramme-point-de-vue` | socle | questions | Prépacode (ENPC) — Nouveau code 2023 ; Codes Rousseau — Nouveautés 2026 |
 | `etg-halo-jaune` | consolidation | questions | securite-routiere.gouv.fr — Nouvelle épreuve du code 2023 |
 | `etg-je-peux-je-dois` | socle | questions | Méthode d'examen (synthèse des conseils Codes Rousseau, ENPC, Ornikar) |
-| `etg-video-strategie` | socle | questions | Ornikar — Les questions vidéo de l'examen du code ; Prépacode (ENPC) |
+| `etg-video-strategie` | socle | questions | Méthode d’observation (synthèse pédagogique) ; Sécurité routière — préparation à l’examen |
 | `etg-forme-double-oui-non` | socle | questions | Sécurité routière — Exemples de nouvelles questions (PDF, sept. 2023) ; En Voiture Simone — Questions pièges |
 | `etg-negation` | consolidation | questions | Codeclic — Comment réussir le code |
 
@@ -583,7 +583,7 @@ Recherche Anki : `objectif::c-distances`
 | `c-intervalle-pl-tunnel` | consolidation | faits | Code de la route, R412-12 ; CETU — sécurité des usagers en tunnel |
 | `c-autoroute-deux-traits` | socle | faits | securite-routiere.gouv.fr — La vitesse et la conduite ; IISR 7e partie, art. 113-1 |
 | `c-suiveur-trop-pres` | socle | questions | Code de la route, art. R412-12 ; securite-routiere.gouv.fr — Les distances de sécurité |
-| `c-distance-arret-carre` | socle | questions | Supports de préparation (Codes Rousseau, ENPC) ; Sécurité routière — Exemples de questions 2023 |
+| `c-distance-arret-carre` | socle | questions | Supports de préparation (Codes Rousseau, ENPC), raccourci pédagogique ; Sécurité routière — exemples 2023, Q13 (freinage sous la pluie uniquement) |
 | `c-double-vitesse-arret` | socle | questions | Modèle physique à décélération constante ; Sécurité routière — vitesse |
 | `c-intervalle-repere` | socle | questions | Code de la route, R412-12 |
 | `c-distance-obstacle-exercice` | socle | questions | Relation physique : arrêt = réaction + freinage ; calcul sur données explicites |
@@ -1280,7 +1280,7 @@ Recherche Anki : `objectif::a-secourir`
 | `a-message-alerte` | socle | questions | Croix-Rouge française — Alerter les secours ; securite-routiere.gouv.fr |
 | `a-alerter-raccrocher` | socle | questions | Croix-Rouge française — Alerter ; Ornikar — Alerter les secours |
 | `a-evaluer-victime` | socle | questions | Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
-| `a-pls` | socle | questions | Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
+| `a-pls` | socle | questions | Sécurité civile, PSC juillet 2026, p. 36–38 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-rcp-dae` | socle | questions | Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-dae-utilisation` | socle | questions | Croix-Rouge française — Défibrillateur ; décret n° 2007-705 |
 | `a-hemorragie` | socle | questions | Sécurité civile, PSC juillet 2026, pages 15–18 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
@@ -1288,10 +1288,10 @@ Recherche Anki : `objectif::a-secourir`
 | `a-casque-motard` | socle | questions | Croix-Rouge française ; securite-routiere.gouv.fr |
 | `l-reperes-localisation` | consolidation | questions | Sécurité routière — alerte : route, sens, localisation |
 | `a-objet-plaie` | socle | questions | https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
-| `a-traumatisme-respiration` | socle | questions | Sécurité routière — Exemples de nouvelles questions (Q6, thème A) ; Sécurité civile, PSC juillet 2026 (nuance) |
+| `a-traumatisme-respiration` | socle | questions | Sécurité civile, PSC juillet 2026, p. 36–38 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `aff-a-dae-formation` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q6) ; décret n° 2007-705 ; Croix-Rouge française |
 | `aff-a-dae-sans-arret-cardiaque` | consolidation | affirmations | Sécurité civile, PSC juillet 2026, Défibrillation — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
-| `aff-a-pls-avec-casque` | socle | affirmations | Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
+| `aff-a-pls-avec-casque` | socle | affirmations | Sécurité civile, PSC juillet 2026, p. 36–38 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Sécurité routière — secours au motard |
 | `aff-a-respire-mais-inconsciente` | consolidation | affirmations | Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `aff-a-compressions-seules` | socle | affirmations | Croix-Rouge française — Arrêt cardiaque |
 | `aff-a-donner-a-boire` | socle | affirmations | Sécurité civile, PSC juillet 2026 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
@@ -1299,7 +1299,7 @@ Recherche Anki : `objectif::a-secourir`
 | `aff-a-triangle-autoroute` | socle | affirmations | Code de la route, art. R416-19 ; arrêté du 30 septembre 2008 ; Ornikar — Protéger la zone |
 | `aff-a-18-secours-personne` | consolidation | affirmations | service-public.fr — Numéros d'urgence ; Croix-Rouge française |
 | `aff-a-degagement-urgence` | consolidation | affirmations | Sécurité civile, PSC juillet 2026 — Dégagement d’urgence |
-| `aff-a-dae-sans-danger` | socle | affirmations | Sécurité routière — Exemples de nouvelles questions (Q6) ; Sécurité civile, PSC juillet 2026 — Défibrillation |
+| `aff-a-dae-sans-danger` | socle | affirmations | Sécurité civile, PSC juillet 2026, p. 26–34 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 
 ## a-accident — Assumer ses obligations après un accident
 

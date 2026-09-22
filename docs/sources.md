@@ -20,8 +20,9 @@ cette date.
 | Anki | [Options de deck](https://docs.ankiweb.net/deck-options), [paquets](https://docs.ankiweb.net/importing/packaged-decks.html) | Ordre de collecte, enfouissement, import des préréglages |
 
 Les supports de préparation (Codes Rousseau, ENPC, Ornikar, En Voiture Simone, Stych…) servent à repérer ce
-que l’épreuve demande et les conventions qu’elle attend (ordre de grandeur des distances, repères
-d’écoconduite) ; aucune valeur juridique n’est reprise d’eux sans vérification.
+les sujets et les raccourcis pédagogiques (ordre de grandeur des distances, repères d’écoconduite). Ils ne
+certifient pas les réponses de la banque. Les dossiers `research/*.md` sont des notes de recherche historiques,
+avec des hypothèses parfois remplacées ; vérifier la source actuelle avant de réutiliser un passage.
 
 ## Règles récentes (entrées datées du registre)
 
@@ -31,7 +32,7 @@ stupéfiants (L235-1 IV, loi 2026-798 du 18 août 2026) ; ZFE maintenues (décis
 EDPM à Paris et dans les Hauts-de-Seine, la Seine-Saint-Denis et le Val-de-Marne depuis le 7 août 2026 (mesure
 locale) ; permis B dès 17 ans (R221-5) ; 3PMSF + M+S pour les pneus hiver (D314-8) ; suppression des places dans
 les 5 m avant les passages piétons au 31 décembre 2026 (L118-5-1 du Code de la voirie routière : à revérifier
-pour une édition 2027). Chacune a une entrée dans `source_checks.yaml` ; c’est le registre qui fait foi.
+pour une édition 2027). Chacune a une entrée dans `source_checks.yaml` ; le registre décrit la consultation, mais le texte officiel actuel fait foi.
 
 ## Ce qui reste non vérifié sur une source primaire
 
@@ -46,3 +47,8 @@ cibles de rappel.
 À chaque édition, reconsulter en priorité : ZFE et voies réservées locales, EDPM, équipements hivernaux,
 sanctions et permis, recommandations de secours, aides à la conduite obligatoires. Mettre à jour
 `source_checks.yaml` seulement après une consultation effective.
+
+Consultation ciblée du 22 septembre 2026 : PSC juillet 2026, pages 26–38. Les cartes distinguent désormais
+malaise sans traumatisme (PLS) et traumatisme ou cause inconnue (sur le dos, alerte, voies aériennes libres,
+surveillance ; sur le côté en cas de vomissements ou selon les secours). Aucun corrigé ETG 2026 vérifié ne
+permet d’affirmer une exception à cette conduite. Le corrigé d’un exemple de 2023 ne suffit pas à en créer une.

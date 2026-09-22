@@ -40,15 +40,7 @@ BUILD_DIR = OUT / "_build"
 
 THEMES = set(M.THEME_NAMES)
 KINDS = ["reconnaissance", "confusions", "faits", "questions", "affirmations", "scenarios"]
-# Editorial guidelines checked by lint() (warnings, never build failures): a card that needs many more
-# words than this is usually a sheet to split, but the judgement stays editorial. `long_ok: true` on a
-# note acknowledges a deliberate exception and silences the warning.
-LINT_ANSWER_WORDS = 35       # questions.reponse : décision + raison décisive
-LINT_ANSWER_ITEMS = 4        # enumerated elements in questions.reponse
-LINT_AFFIRMATION_WORDS = 35  # affirmations.affirmation
-LINT_POURQUOI_WORDS = 55     # affirmations.pourquoi
-LINT_RECON_BACK_WORDS = 100  # signification + conduite + complement + piege
-LINT_CLOZE_WORDS = 8         # hidden text of one cloze; longer = recitation, not recall
+# Editorial signals, not limits on answer length or list size.
 LINT_VRAI_SHARE = (0.40, 0.60)   # share of 'vrai' over all affirmations
 # Wording that must not predict a verdict: the split vrai/faux of each marker is reported, and a marker
 # that lands ≥ 85 % on one side (n ≥ 5) is flagged, whatever the side.
@@ -113,16 +105,6 @@ def load_all() -> dict[str, list[dict]]:
                 n['image'] = recon[n['image_ref']]['image']
     learning.annotate(data)
     return data
-
-
-def words(s) -> int:
-    return len(str(s or "").split())
-
-
-def items_in(s) -> int:
-    """Rough count of enumerated elements in an answer (separated by ' ; ' or by commas)."""
-    s = str(s or "")
-    return max(s.count(" ; ") + 1, s.count(", ") + 1)
 
 
 def norm_text(s) -> str:
@@ -255,32 +237,20 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
 
 
 def lint(data: dict[str, list[dict]]) -> list[str]:
-    """Editorial warnings: length outliers, guessable verdicts, duplicated targets. Never fatal."""
+    """Editorial warnings: sibling cues, guessable verdicts, duplicated targets. Never fatal."""
     warn: list[str] = []
     for kind in KINDS:
         for it in data[kind]:
             tr = track_of(kind, it)
             if tr in SUBTHEME_ORDER and it["sous_theme"] not in SUBTHEME_ORDER[tr]:
                 warn.append(f"{it['id']}: sous-thème « {it['sous_theme']} » absent de SUBTHEME_ORDER[{tr}] — faute de frappe, ou à ajouter à l'ordre")
-    for it in data["reconnaissance"]:
-        back = sum(words(it.get(k)) for k in ("signification", "conduite", "complement", "piege"))
-        if back > LINT_RECON_BACK_WORDS and not it.get("long_ok"):
-            warn.append(f"{it['id']}: verso de {back} mots — vérifier que tout change une décision (sign_overrides.yaml)")
     for it in data["faits"]:
         n = sorted({int(x) for x in CLOZE_RE.findall(it.get("texte", ""))})
         if len(n) > 1 and "rappels" not in it and not it.get("multi_ok"):
             warn.append(f"{it['id']}: {len(n)} trous dans une même phrase — chaque trou se rappelle-t-il sans lire les autres ?")
-        for _, ans in re.findall(r"\{\{c(\d+)::(.*?)(?:::.*?)?\}\}", it.get("texte", "")):
-            if words(ans) > LINT_CLOZE_WORDS and not it.get("long_ok"):
-                warn.append(f"{it['id']}: trou de {words(ans)} mots — une phrase à réciter n'est pas une cible de rappel")
     seen_answers: dict[str, str] = {}
     yes_no = Counter()
     for it in data["questions"]:
-        w, k = words(it.get("reponse")), items_in(it.get("reponse"))
-        if w > LINT_ANSWER_WORDS and not it.get("long_ok"):
-            warn.append(f"{it['id']}: réponse de {w} mots — garder la décision et la raison décisive, le reste en explication")
-        elif k > LINT_ANSWER_ITEMS and not it.get("long_ok"):
-            warn.append(f"{it['id']}: réponse énumérative ({k} éléments) — l'épreuve demande rarement une liste entière")
         key = norm_text(it.get("reponse"))
         if len(key) > 30 and key in seen_answers:
             warn.append(f"{it['id']}: réponse identique à {seen_answers[key]} — doublon probable")
@@ -294,17 +264,13 @@ def lint(data: dict[str, list[dict]]) -> list[str]:
     markers: dict[str, Counter] = {m: Counter() for m in STYLE_MARKERS}
     for it in data["affirmations"]:
         verdicts[it.get("verdict")] += 1
-        if words(it.get("affirmation")) > LINT_AFFIRMATION_WORDS and not it.get("long_ok"):
-            warn.append(f"{it['id']}: affirmation de {words(it.get('affirmation'))} mots — une proposition d'examen est plus courte")
-        if words(it.get("pourquoi")) > LINT_POURQUOI_WORDS and not it.get("long_ok"):
-            warn.append(f"{it['id']}: pourquoi de {words(it.get('pourquoi'))} mots — expliquer le mécanisme, pas tout le chapitre")
         text = " ".join(str(it.get(k, "")) for k in ("contexte", "affirmation")).lower()
         for m in STYLE_MARKERS:
             if re.search(r"\b" + re.escape(m) + r"\b", text):
                 markers[m][it.get("verdict")] += 1
     tot = verdicts["vrai"] + verdicts["faux"]
     if tot and not LINT_VRAI_SHARE[0] <= verdicts["vrai"] / tot <= LINT_VRAI_SHARE[1]:
-        warn.append(f"affirmations : {verdicts['vrai']} vrai / {verdicts['faux']} faux sur l'ensemble — viser 40-60 % de vrai")
+        warn.append(f"affirmations : {verdicts['vrai']} vrai / {verdicts['faux']} faux sur l'ensemble — examiner le risque de réponse devinable, sans imposer un quota")
     for m, c in markers.items():
         n = c["vrai"] + c["faux"]
         if n >= 5 and max(c["vrai"], c["faux"]) / n >= 0.85:

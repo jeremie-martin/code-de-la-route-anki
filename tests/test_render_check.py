@@ -7,6 +7,12 @@ from build.preview import CHROME
 
 @unittest.skipUnless(CHROME and importlib.util.find_spec('playwright'), 'QA browser dependencies absent')
 class RenderCheckerTests(unittest.TestCase):
+    def test_screenshot_samples_reference_existing_notes(self):
+        from build.build import load_all
+        from build.render_check import SAMPLES
+        ids = {n['id'] for notes in load_all().values() for n in notes}
+        self.assertFalse(SAMPLES - ids, f'Stale screenshot samples: {SAMPLES - ids}')
+
     def test_distinguishes_plain_cloze_from_hidden_units_and_finds_bad_layout(self):
         from playwright.sync_api import sync_playwright
         from build.render_check import MEASURE, page_html

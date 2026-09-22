@@ -28,15 +28,15 @@ SAMPLES = {
     'a-traumatisme-respiration',
     'ab4',
     'aff-a-pls-avec-casque',
-    'aff-c-fatigue-signes',
-    'aff-e-ecoconduite-securite',
+    'a-pls',
+    'aff-a-dae-sans-danger',
     'aff-r-nuit-feux-route-arret',
-    'c-arret-somme',
+    'c-distance-reaction-formule',
     'c-cycliste-devant-depassement',
     'c13c',
     'b14',
     'c20a',
-    'c-distance-arret-reperes',
+    'c-distance-arret-carre',
     'a-message-alerte',
     'd-conduite-supervisee',
     'aff-r-verglas-temperature-positive',
@@ -44,17 +44,17 @@ SAMPLES = {
     'm-galette-chiffres',
     'conf-ab3a-ab4',
     'conf-b0-b1',
-    'conf-b13-b13a',
+    'c-ordre-controles-changement-file',
     'conf-b15-c18',
     'conf-k10a-k10b',
     'd-grand-exces',
-    'e-budget-trajet-tableau',
+    'etg-video-strategie',
     'l-agglomeration-panneau',
     'l-c107-route-separee',
     'l-c107-route-simple',
     'l-vitesse-pluie',
     'm-liquide-frein',
-    'm-visuel-pression-charge',
+    'm-pression-etiquette',
     'm12',
     'r-tunnel-niches',
     's-chargement-chiffres',
@@ -117,6 +117,10 @@ def main():
     disclosures = 0
     try:
         import_package(col, OUT / 'Code-de-la-route-2026.apkg')
+        present = {col.get_note(nid)['Id'] for nid in col.find_notes('')}
+        missing = SAMPLES - present
+        if missing:
+            raise ValueError(f'Échantillon de rendu absent du paquet : {sorted(missing)}')
         media_uri = Path(col.media.dir()).as_uri()
         with sync_playwright() as pw:
             browser = pw.chromium.launch(executable_path=CHROME, args=['--no-sandbox'])
@@ -173,7 +177,7 @@ def main():
                                     failures.append([key, ['volet de références inaccessible ou débordant']])
                                 if note['Source'] and not disclosure.locator('p').first.is_visible():
                                     failures.append([key, ['source invisible après ouverture']])
-                                if width == 430 and height == 932 and not night and ident in {'ab4', 'aff-c-fatigue-signes'}:
+                                if width == 430 and height == 932 and not night and ident in {'ab4', 'a-pls'}:
                                     page.screenshot(path=str(target / f'{ident}_references.png'), full_page=True)
                                     shots += 1
                                 disclosure.locator('summary').click()

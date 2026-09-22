@@ -104,7 +104,7 @@ class LearningTests(unittest.TestCase):
             data['faits'][0]['rappels'] = invalid
             self.assertTrue(any('chaque rappel' in e for e in validate(data)))
 
-    def test_editorial_limits_warn_but_never_fail_the_build(self):
+    def test_lint_flags_sibling_cues_without_imposing_answer_lengths(self):
         data = copy.deepcopy(self.data)
         sheet = copy.deepcopy(next(n for n in data['faits'] if 'rappels' not in n))
         sheet['id'], sheet['texte'] = 'test-sheet', 'A {{c1::1}} et B {{c2::2}}.'
@@ -114,9 +114,8 @@ class LearningTests(unittest.TestCase):
         self.assertFalse([e for e in validate(data) if 'test-' in e and 'objectif' not in e])
         warnings = lint(data)
         self.assertTrue(any('test-sheet' in w and 'trous' in w for w in warnings), warnings)
-        self.assertTrue(any('test-recitation' in w and 'réciter' in w for w in warnings), warnings)
+        self.assertFalse(any('test-recitation' in w for w in warnings), warnings)
         sheet['multi_ok'] = True
-        recitation['long_ok'] = True
         self.assertFalse([w for w in lint(data) if 'test-' in w])
 
     def test_style_tells_are_reported(self):

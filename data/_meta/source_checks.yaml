@@ -592,3 +592,25 @@
   url: https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006842250/2026-02-28
   portee: 'R415-10 : les entrants cèdent aux usagers de l’anneau ; reformulation des questions sans codes de panneaux.'
   notes: [scn-giratoire-cedez, scn-giratoire-autre-entree, aff-l-giratoire-sortie-cede]
+
+- id: v11-secours-conditions
+  consulte_le: '2026-09-22'
+  url: https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  portee: 'PDF téléchargé depuis la page officielle des références nationales et lu, pages 26–38 : perte de connaissance non traumatique, traumatisme ou origine inconnue, vomissements, surveillance et reprise des compressions après une analyse sans choc. Remplace les affirmations antérieures de réponse ETG universelle ; ne certifie pas le corrigé de la banque actuelle.'
+  notes: [a-pls, a-traumatisme-respiration, aff-a-pls-avec-casque, aff-a-dae-sans-danger]
+
+- id: v11-vitesse-sondage
+  consulte_le: '2026-09-22'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F19460
+  portee: 'Sondage de cohérence : plafonds généraux, pluie, probatoire, visibilité inférieure à 50 m et barème des points ; délit dès 50 km/h d’excès, six points. Contenu conservé.'
+  notes: [d-grand-exces, d-vitesse-bareme, l-vitesse-visibilite-50]
+- id: v11-stupefiants-sondage
+  consulte_le: '2026-09-22'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
+  portee: 'Interdiction après usage quelle que soit la quantité ; six points, neuf en cumul avec alcool. Contenu conservé.'
+  notes: [d-stupefiants-delit, d-points-delit-cumul]
+- id: v11-edpm-sondage
+  consulte_le: '2026-09-22'
+  url: https://www.service-public.gouv.fr/particuliers/actualites/A19037
+  portee: 'Mesure locale Paris et petite couronne depuis le 7 août 2026, casque et équipement rétro-réfléchissant à toute heure ; ne pas généraliser à tout le pays. Contenu conservé.'
+  notes: [u-edpm-regle-locale]

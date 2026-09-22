@@ -1,105 +1,52 @@
 # Conception du deck
 
-## Ce que l’on optimise
+Le deck prépare aux connaissances et aux distinctions utiles à l’ETG du permis B : reconnaître un signal,
+identifier les conditions d’une règle et choisir une action justifiée. Ses dix thèmes sont reliés à des
+objectifs dans `data/_meta/objectives.yaml`. Ce classement sert à retrouver une difficulté ; il ne prouve
+pas la couverture d’une banque d’examen confidentielle.
 
-La bonne décision face à une **situation nouvelle** le jour de l’épreuve, avec une charge de révision qu’une
-personne seule peut tenir. Ni le nombre de cartes, ni la ressemblance avec un QCM, ni la couverture d’une
-banque de questions confidentielle ne sont des mesures de réussite.
+Anki stabilise le rappel et le raisonnement. Les exercices sur photos et vidéos nouvelles entraînent la
+perception, et les examens blancs la décision sous contrainte de temps. Les schémas du deck isolent des
+conflits et des trajectoires ; ils ne remplacent pas ces scènes réalistes. Aucune efficacité sur la rétention
+ou la réussite à l’examen n’a été mesurée.
 
-L’ETG : 40 questions, 35 bonnes réponses exigées, une vingtaine de secondes par question, dix thèmes
-officiels (L circulation, C conducteur, R route, U autres usagers, D notions diverses, A premiers secours,
-P prendre et quitter le véhicule, M mécanique et équipements, S sécurité des passagers et du véhicule,
-E environnement). Une question type montre une photo ou une vidéo, impose un point de vue et demande une
-décision ou un jugement sur une ou plusieurs propositions.
+## Choisir la forme selon la connaissance
 
-Réussir demande cinq choses : **savoir** (sens d’un signal, seuil, droit de passage), **discriminer**
-(la condition qui change la réponse : agglomération, météo, statut probatoire, catégorie d’usager),
-**observer** (trouver ces conditions dans une scène, remarquer ce qui peut être masqué), **décider** (choisir
-une action possible et sûre sans inventer un fait absent) et **lire** l’énoncé jusqu’au bout. Anki sert
-surtout aux deux premières et stabilise le raisonnement de la quatrième ; les scènes nouvelles (séries photo
-et vidéo, examens blancs) entraînent les autres. Le deck est conçu pour être complété par elles, pas pour les
-remplacer.
+| Forme | Travail demandé |
+|---|---|
+| Reconnaissance | Sens du signal et conséquence pratique ; pas son code technique |
+| Comparaison A/B | Différence visible qui change la règle ou la conduite |
+| Fait à trous | Valeur avec unité ou terme précis, sans indice donné par une carte sœur |
+| Question | Décision et raison décisive, à partir des conditions du recto |
+| Vrai/faux | Verdict justifié et correction de l’idée reçue |
+| Scénario dessiné | Lire les positions, signes et trajectoires avant de décider |
 
-## Les formes de cartes et le travail demandé
+Conserver plusieurs cartes d’une règle si elles font travailler des compétences distinctes. Éviter les
+reformulations qui demandent exactement le même rappel. Les exemples chiffrés servent à comprendre une
+relation ; leur résultat seul ne doit pas devenir la connaissance à apprendre.
 
-| Forme | Ce qu’on rappelle | Ce qui ne suffit pas |
-|---|---|---|
-| Reconnaissance (image → sens) | Le sens du signal et ce qu’il change pour moi | Son code, une vague catégorie |
-| Comparaison A/B | La différence qui change la règle ou la conduite | Deux noms récités |
-| Fait à trous | La valeur avec son unité, ou le terme | Deviner grâce au reste de la phrase ou à une carte sœur |
-| Question | La décision et l’indice ou la règle qui la décide | Une réponse prudente générique |
-| Affirmation vrai/faux | Le verdict et la raison ; la correction si c’est faux | Deviner au style |
-| Scénario dessiné | Lire les signes et les trajectoires, puis décider | Lire la solution déjà écrite dans la question |
+## Rédiger et vérifier
 
-Une règle mérite plusieurs cartes quand elles entraînent des compétences différentes (reconnaître un marquage,
-puis décider avec du trafic ; rappeler un seuil, puis l’appliquer à un cas limite). Elle n’en mérite pas deux
-pour reformuler le même oui/non. Un scénario généré vaut une carte quand il matérialise un piège que le texte
-ne rend pas (qui est à ma droite, qui est déjà dans l’anneau, qui est en train de me dépasser).
+- Donner au recto les conditions nécessaires : véhicule, statut du conducteur, route, météo, visibilité,
+  point de vue. Une image hors échelle ne permet pas de mesurer une distance ou une vitesse.
+- Rendre la réponse jugeable avec ses propres mots. Mettre en explication le mécanisme, la limite ou la
+  confusion utile. La longueur dépend du sujet ; aucune limite universelle de mots ou de listes.
+- Enseigner la règle actuelle et citer une source qui couvre aussi ses conditions. Un raccourci pédagogique
+  doit être nommé comme tel. Un exemple officiel prouve son propre corrigé, pas toutes les réponses de la
+  banque. Ne pas faire passer une supposée convention d’examen avant une consigne officielle actuelle.
+- Montrer les distinctions qui changent l’action : permis probatoire, seuil atteint, accès privé, traumatisme,
+  visibilité masquée… Éviter les verdicts devinables par la tournure ou une prudence générique.
+- Introduire les prérequis avant leurs applications. Le build entrelace les thèmes, place le socle avant la
+  consolidation, espace les cartes sœurs et vérifie les dépendances des images et comparaisons.
+- Sélectionner les signaux pour leur sens utile ou une confusion réelle. Les variantes déductibles et les
+  inscriptions transparentes peuvent rester hors du deck ; les exclusions indiquent la règle qui les couvre.
 
-## Principes de rédaction
+## Présentation
 
-Ce sont des principes de jugement, pas des règles à faire respecter par un compteur. Le build ne refuse que
-les défauts de structure ; les longueurs et les tics de style font l’objet d’avertissements à relire
-(`python -m build.build --check`), qui appellent une décision éditoriale, pas un contournement.
+Recto : situation, image utile, question. Verso : réponse visible puis explication. Les références, noms
+techniques et codes restent dans le volet « Sources ». Les exemples visuels du verso portent une légende.
+Les repères de thème sont sur les sous-decks, sans alourdir chaque carte.
 
-1. **Une carte, une décision ou une valeur, et le recto contient tout ce dont la réponse dépend** : type de
-   route, météo, véhicule, point de vue, statut du conducteur, visibilité. Test : si un moniteur devrait poser
-   une question avant de répondre (« en ville ? », « il pleut ? »), le recto est incomplet. Un schéma qui n’est
-   pas à l’échelle ne mesure ni une vitesse ni une distance : on les écrit.
-2. **La cible de rappel est ce que l’épreuve notera.** Quand le droit et la convention des supports de
-   préparation divergent (freinage doublé sur route mouillée, carré des dizaines, PLS), la réponse est celle
-   attendue à l’épreuve et l’explication porte la nuance, nommée comme telle. Quand la règle a changé depuis le
-   renouvellement de la banque de questions (septembre 2023), la réponse est la règle actuelle et l’explication
-   nomme le texte et sa date. Aucune carte ne prétend connaître la réponse d’une banque confidentielle.
-3. **Rien de devinable sans savoir.** Ni depuis le recto (un contexte qui énonce la condition du verdict), ni
-   depuis une carte sœur (deux trous complémentaires, un exercice à données fixes qui devient du rappel de
-   nombre), ni depuis le style : les affirmations vraies et fausses partagent les mêmes tournures
-   (« puisque », « tant que », « je peux », « toujours »… : le build signale une tournure à plus de 85 % d’un
-   côté), la balance des verdicts et des réponses oui/non fournit un autre indice à examiner.
-   Une affirmation fausse décrit ce qu’un conducteur ordinaire fait ou croit vraiment ; si personne ne la
-   dirait, elle n’apprend rien.
-4. **La réponse est courte et jugeable ; l’explication explique.** Réponse = la décision ou la valeur et la
-   raison décisive, dans la forme adaptée au sujet ; tout ce qui ne sert pas à juger sa propre réponse va
-   dans l’explication. Les seuils du lint sont des alertes de relecture, pas des limites de rédaction.
-   L’explication donne le mécanisme, la limite ou la distinction utile ; elle n’ajoute pas une seconde liste à réciter, ne commente pas la fabrication du deck et
-   ne s’adresse pas à un rédacteur. Une réserve n’y figure que si elle change ce que l’élève peut conclure
-   (« valeur constructeur », « selon visibilité ») ; une réponse qui se limite à « voir la notice » n’en est pas une.
-5. **Le français est celui d’un bon moniteur.** Chaque champ se lit à voix haute sans être reformulé ; aucun
-   champ n’est une étiquette suivie d’une valeur (« Conditions. Configuration → plafond ») ; première personne,
-   pas d’inversions littéraires (« que fais-je »), pas de jargon administratif quand un mot courant existe.
-   Les codes de panneaux et de marquages restent dans les sources ; le texte d’apprentissage nomme le sens et les indices visibles. Une comparaison visuelle
-   montre les images avec une légende explicite. Développer un sigle lorsque son déchiffrage masque la décision.
-6. **Prérequis avant application.** Les bases (formes et couleurs des panneaux, vocabulaire, priorité à
-   droite, code couleur des voyants) précèdent tout le reste ; un signal est reconnu avant qu’une question
-   ne l’utilise ; les scénarios de priorité s’ouvrent après les panneaux de priorité. L’ordre est calculé par
-   le build et vérifié à l’import.
-7. **Un signal a sa carte s’il porte une décision de conduite ou une discrimination que l’épreuve peut
-   demander.** Les variantes d’une famille apprise, les fins et sorties de zone déductibles d’un archétype,
-   les pictogrammes et inscriptions transparents restent hors du deck, chacun documenté avec les cartes qui
-   couvrent la règle (`data/_meta/sign_exclusions.yaml`). Tout signal retenu a un média.
-8. **Ce qui ne décide rien au volant n’est pas une cible de rappel** : maxima de peine, bilans annuels,
-   délais administratifs qu’on consulte, prix. Les seuils, la qualification (contravention, délit), les points
-   et les délais que l’épreuve demande restent, ainsi que les quelques chiffres de campagne qu’elle reprend
-   tels quels (téléphone × 3, somnolence première cause sur autoroute), nommés comme des repères ; un montant
-   forfaitaire (35 €, 135 €) peut figurer en explication, jamais comme cible ; les maxima encourus ne figurent
-   nulle part.
-9. **Toute valeur juridique est vérifiée dans le Code de la route consolidé et datée** : la carte cite
-   l’article dans `source`, la date et la portée de la consultation sont dans `data/_meta/source_checks.yaml` ;
-   toute règle récente nomme son texte. Une référence générique n’est pas une vérification.
-10. **Rien dans le paquet qui ne serve qu’au mainteneur** : les étiquettes de provenance, les journaux de
-    révision et les commentaires de conception restent dans le dépôt.
-
-## L’interface d’une carte
-
-Recto : la situation, l’image utile, la question. Pas de sous-thème ni d’indice involontaire.
-Verso : la réponse en évidence, puis l’explication ; pour une reconnaissance, le sens, « En pratique »,
-un complément s’il change une décision, et un « Piège » s’il y a une confusion classique. Le volet fermé
-« Sources » porte la référence et le nom officiel. Les repères de thème sont sur l’écran des sous-decks,
-pas sur chaque carte. Tout se lit sur un téléphone en mode clair et sombre ; les longs versos se relisent,
-ils ne se compriment pas en réduisant la police.
-
-## Ce que le deck ne fait pas
-
-Il n’entraîne ni la perception sur photo ni la décision sous chronomètre. Il ne couvre pas une banque
-confidentielle : la sélection est éditoriale. Il ne remplace pas une formation pratique aux gestes de secours.
-Aucune mesure de rétention ni de réussite à l’examen n’a été réalisée avec lui.
+Vérifier les cartes réellement rendues, sur téléphone en clair et sombre : images lisibles, conditions
+visibles, réponse sans ambiguïté. Le défilement vertical est acceptable ; réduire la police pour faire tenir
+une longue réponse ne résout pas un problème de rédaction. Les mesures automatiques complètent cette lecture.

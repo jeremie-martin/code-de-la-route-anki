@@ -46,7 +46,7 @@ Champs communs : `id` (unique, minuscules, chiffres, tirets), `theme` (X L C R U
 lecture de l’épreuve), `sous_theme` (voir la liste ci-dessous), `source`. Facultatifs : `image` (`{commons: nom
 de fichier exact}`, `{gen: générateur, params: {…}}`, `tint: "#hex"` pour un voyant ISO), `image_ref` (une
 question réutilise l’image d’une reconnaissance, qui la précède alors dans l’ordre), `debut: true` (base à
-introduire avant tout le reste), `long_ok`, `multi_ok`, `dedup_ok: [autre-id]` (exceptions assumées qui font
+introduire avant tout le reste), `multi_ok`, `dedup_ok: [autre-id]` (exceptions assumées qui font
 taire un avertissement). Les valeurs contenant « : » se mettent entre guillemets (`python build/yamlfix.py fichier`).
 
 ```yaml
@@ -161,13 +161,11 @@ formés, même réponse sous deux numéros de cloze, affirmation identique à un
 scénario dont la réponse déclarée (`check`) contredit le solveur de priorité. `import_signs.py` refuse de son
 côté un signal retenu sans média ou une exclusion sans `raison`.
 
-Il imprime ensuite des **avertissements à relire** : réponse de plus de 35 mots ou de plus de quatre éléments,
-affirmation de plus de 35 mots, justification de plus de 55, verso de reconnaissance de plus de 100, trou de plus
-de huit mots, plusieurs trous dans une même phrase, réponse identique à une autre question, part de « vrai » hors
-de 40–60 % sur l’ensemble, tournure présente à plus de 85 % d’un même côté vrai/faux (n ≥ 5 : « puisque »,
-« tant que », « je peux », « toujours »…), plus de 70 % de « non » aux questions oui/non, sous-thème inconnu.
-Ce sont des invitations à juger la carte ; `long_ok`, `multi_ok` et `dedup_ok` marquent une exception assumée.
-Seuils dans `build/build.py` (`LINT_*`, `STYLE_MARKERS`).
+Il imprime ensuite des **avertissements à relire** : trous susceptibles de révéler une carte sœur,
+réponses identiques, indices de style ou déséquilibre des verdicts, sous-thème inconnu. Ces signaux invitent
+à relire ; ils ne justifient ni un quota de vrai/faux ni une modification artificielle du texte. `multi_ok`
+et `dedup_ok` documentent les exceptions utiles. La longueur des réponses se juge sur la carte rendue,
+sans seuil automatique ; les anciens champs `long_ok` sont sans effet.
 
 `python -m unittest discover -s tests` couvre l’ordre, les objectifs, les gabarits, le solveur et le
 rendu des clozes indépendantes. `python -m build.verify` importe le paquet dans une collection temporaire
@@ -220,7 +218,8 @@ python build/qa_sheet.py                 # planches image + code + nom par fichi
 5. `python -m build.build --check`, lire les avertissements, puis `python -m build.build`, `python -m build.verify`
    et les tests. Regarder les cartes modifiées avec `build.preview` (une carte cloze donne `_c0`, `_c1`…). Pour
    une révision large, `python -m build.render_check` contrôle toutes les faces et écrit `out/RENDU.md` avec
-   l’empreinte du paquet contrôlé : le lancer en dernier, après le build définitif. Les mesures ne lisent pas le
+   l’empreinte du paquet contrôlé : le lancer en dernier, après le build définitif. Un identifiant de capture
+   absent du paquet fait échouer le contrôle ; actualiser `SAMPLES` si une note disparaît. Les mesures ne lisent pas le
    sens des images ni les petits textes incorporés : les inspecter.
 6. Ajouter une ligne à [CHANGELOG](../CHANGELOG.md) et mettre à jour les effectifs du README.
 

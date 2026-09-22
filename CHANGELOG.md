@@ -1,3 +1,11 @@
+# Révision ciblée — 22 septembre 2026
+
+- Secours : distinction malaise/traumatisme conforme au PSC juillet 2026 ; vomissements et analyse du DAE sans choc traités explicitement. Retrait de la prétendue exception « réponse attendue à l’examen ».
+- Rappel : observation vidéo élargie aux indices stables et aux zones masquées ; formule de distance d’arrêt présentée comme raccourci ; contrôles de changement de voie expliqués par leur fonction.
+- Maintenance : suppression des seuils de longueur et de taille des listes dans le lint ; conception condensée et statut des dossiers de recherche clarifié.
+- Rendu : sept identifiants de capture obsolètes remplacés ; le contrôle refuse désormais un échantillon absent du paquet.
+- Aucun ajout de cartes ni changement de modèle ; effectifs inchangés. Rapports d’import et de rendu régénérés avec le paquet.
+
 # Historique des éditions
 
 Les éditions v1 à v8 sont les jalons d’une même journée de travail (21 septembre 2026) ; les détails sont dans

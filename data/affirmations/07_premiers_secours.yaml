@@ -18,14 +18,13 @@
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Défibrillation — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
 - id: aff-a-pls-avec-casque
-  contexte: Après sa chute, un motard est inconscient, allongé sur le dos, et respire normalement.
-  affirmation: Je le mets sur le côté en maintenant l'axe tête-cou-tronc, sans lui retirer son casque.
+  contexte: Après sa chute, un motard est inconscient, allongé sur le dos, et respire normalement. Il se met à vomir.
+  affirmation: Je le tourne sur le côté en maintenant si possible l’axe tête-cou-tronc, avec de l’aide, sans retirer son casque.
   verdict: vrai
-  pourquoi: 'Position latérale de sécurité, casque en place, alerte et surveillance de la respiration : c''est la
-    réponse attendue. Retirer le casque expose les cervicales ; on ouvre seulement la visière.'
+  pourquoi: Les vomissements menacent ses voies aériennes et justifient la mise sur le côté malgré le traumatisme. Alerter et suivre les secours, surveiller la respiration ; ne pas retirer le casque pour le confort.
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: Sécurité civile, PSC juillet 2026, p. 36–38 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Sécurité routière — secours au motard
 - id: aff-a-respire-mais-inconsciente
   contexte: Après un malaise sans traumatisme, une personne ne répond pas mais respire normalement.
   affirmation: 'Elle est en arrêt cardiaque : je commence les compressions thoraciques.'
@@ -113,11 +112,10 @@
   sous_theme: proteger
   source: Sécurité civile, PSC juillet 2026 — Dégagement d’urgence
 - id: aff-a-dae-sans-danger
-  contexte: Une victime ne répond pas ; un témoin apporte un DAE.
-  affirmation: Si la victime n'est pas en arrêt cardiaque, l'utilisation du DAE peut être dangereuse.
-  verdict: faux
-  pourquoi: Le DAE analyse le rythme et ne délivre un choc que s'il est indiqué ; sur un cœur qui bat normalement,
-    il n'en délivre aucun. On l'allume sans attendre et on suit ses consignes.
+  contexte: Une victime ne répond pas et ne respire pas normalement ; un témoin apporte un DAE.
+  affirmation: Le DAE peut décider qu’aucun choc n’est nécessaire ; dans ce cas, je reprends immédiatement les compressions selon ses consignes.
+  verdict: vrai
+  pourquoi: L’absence de choc conseillé ne signifie pas que la victime est réanimée. Le DAE analyse le rythme ; je poursuis la réanimation et suis ses instructions jusqu’au relais des secours ou à la reprise d’une respiration normale.
   theme: A
   sous_theme: secourir
-  source: Sécurité routière — Exemples de nouvelles questions (Q6) ; Sécurité civile, PSC juillet 2026 — Défibrillation
+  source: Sécurité civile, PSC juillet 2026, p. 26–34 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf

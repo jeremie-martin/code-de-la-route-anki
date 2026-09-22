@@ -29,8 +29,7 @@
     que je procède ?
   reponse: Rétroviseur intérieur puis gauche, clignotant, angle mort gauche (tête tournée), puis déport progressif à vitesse
     constante.
-  explication: 'Certaines écoles placent l''angle mort avant le clignotant ; ce que l''ETG attend : les rétroviseurs précèdent
-    le clignotant, et l''angle mort est le dernier regard avant de tourner le volant.'
+  explication: Les contrôles vérifient que la voie est libre ; le clignotant avertit sans donner la priorité. Recontrôler juste avant le déport, et renoncer si un usager arrive. La sécurité de la manœuvre compte davantage qu’une séquence récitée.
   theme: C
   sous_theme: vigilance
   source: Codeclic — L'angle mort ; Stych — Les contrôles ; Code de la route, art. R412-10
@@ -213,14 +212,12 @@
   sous_theme: distances
   source: Code de la route, art. R412-12 ; securite-routiere.gouv.fr — Les distances de sécurité
 - id: c-distance-arret-carre
-  question: Sol sec, conducteur attentif. Comment estimer rapidement ma distance d'arrêt en mètres à partir de ma
-    vitesse ?
+  question: Quel raccourci de calcul utilise-t-on dans les supports de préparation pour estimer la distance d’arrêt sur sol sec, sans autre donnée ?
   reponse: 'Le carré du chiffre des dizaines : 50 km/h → 25 m, 90 → 81 m, 130 → 169 m.'
-  explication: Ordre de grandeur des supports de préparation, repris par l'épreuve. Réaction ≈ 1 s (3 m par tranche
-    de 10 km/h) + freinage ; sur sol mouillé, le freinage double.
+  explication: C’est un repère pédagogique, pas une distance garantie. Le temps de réaction, les pneus et l’adhérence changent le résultat. Si l’exercice donne des distances de réaction et de freinage, les additionner ; le doublement du freinage sur sol mouillé est aussi un ordre de grandeur.
   theme: C
   sous_theme: distances
-  source: Supports de préparation (Codes Rousseau, ENPC) ; Sécurité routière — Exemples de questions 2023
+  source: Supports de préparation (Codes Rousseau, ENPC), raccourci pédagogique ; Sécurité routière — exemples 2023, Q13 (freinage sous la pluie uniquement)
 - id: c-double-vitesse-arret
   theme: C
   sous_theme: distances

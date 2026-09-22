@@ -60,12 +60,10 @@
   question: Après un malaise sans chute ni traumatisme, une personne ne répond pas mais respire normalement. Quel geste après
     vérification de la respiration ?
   reponse: Je la mets sur le côté (PLS), j’alerte et je surveille sa respiration jusqu’aux secours.
-  explication: Réponse attendue de l'épreuve pour toute victime inconsciente qui respire, y compris après un accident
-    (en limitant alors les mouvements de la tête). Le référentiel PSC de 2026 nuance le cas du traumatisme ; cette
-    nuance ne change pas la réponse de l'examen.
+  explication: La PLS maintient les voies aériennes libres et permet aux liquides de s’écouler. Après un traumatisme ou si la cause est inconnue, la conduite diffère ; suivre les consignes des secours.
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: Sécurité civile, PSC juillet 2026, p. 36–38 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
 - id: a-rcp-dae
   question: 'Un adulte ne répond pas et ne respire pas normalement : pas de respiration, ou seulement des inspirations rares et bruyantes. Que fais-je ?'
   reponse: J’alerte, fais apporter un défibrillateur et commence immédiatement les compressions thoraciques ; je suis les instructions des secours et de l’appareil.
@@ -171,11 +169,7 @@
 - id: a-traumatisme-respiration
   theme: A
   sous_theme: applications
-  question: Après un choc routier, une victime ne répond pas mais respire normalement, allongée sur le dos. Que fais-je
-    ?
-  reponse: Je la mets sur le côté (PLS) en limitant les mouvements de la tête et du cou, j'alerte et je surveille
-    sa respiration jusqu'aux secours.
-  explication: 'Réponse attendue à l''épreuve : PLS pour toute victime inconsciente qui respire, traumatisme compris,
-    casque laissé en place. Le référentiel PSC de juillet 2026 préfère laisser une victime traumatisée sur le dos
-    sous surveillance, sauf vomissements ; cette nuance ne change pas la réponse de l''examen.'
-  source: Sécurité routière — Exemples de nouvelles questions (Q6, thème A) ; Sécurité civile, PSC juillet 2026 (nuance)
+  question: Après un choc routier, une victime ne répond pas mais respire normalement, allongée sur le dos. Elle ne vomit pas et la zone est protégée. Que fais-je ?
+  reponse: Je la laisse sur le dos, j’alerte et suis les consignes des secours ; je maintiens les voies aériennes libres et surveille continuellement sa respiration.
+  explication: En cas de vomissements ou régurgitations, la tourner sur le côté en maintenant si possible l’axe tête-cou-tronc, avec de l’aide. Les secours peuvent aussi demander une PLS. Si la respiration devient anormale ou s’arrête, commencer la réanimation et prévenir les secours.
+  source: Sécurité civile, PSC juillet 2026, p. 36–38 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf

@@ -62,6 +62,9 @@ python -m build.verify             # import réel et réimport dans une collecti
 
 Le premier build télécharge les médias Commons (quelques minutes), ensuite tout est en cache. Les autres
 commandes (tests, captures de cartes, contrôle du rendu) sont dans la [maintenance](docs/maintenance.md).
+Les rapports [d’import](out/VERIFICATION.md) et [de rendu](out/RENDU.md) identifient le paquet contrôlé
+par son SHA-256. Ils ne constituent pas une validation juridique exhaustive ; la portée des consultations
+est dans le [registre des sources](data/_meta/source_checks.yaml).
 
 - [Conception](docs/conception.md) — ce que le deck optimise, les formes de cartes, les principes de rédaction.
 - [Maintenance](docs/maintenance.md) — structure des données, procédure de modification, contrôles.
