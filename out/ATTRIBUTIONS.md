@@ -66,7 +66,10 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign B11.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B11.svg) ; licence : CC BY-SA 4.0 ; auteur : Roulex 45
 - [File:France road sign B12.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B12.svg) ; licence : CC BY-SA 4.0 ; auteur : Roulex 45
 - [File:France road sign B13.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B13.svg) ; licence : CC BY-SA 4.0 ; auteur : Roulex 45
+- [File:France road sign B14 (30).svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B14_(30).svg) ; licence : CC BY-SA 3.0 ; auteur : Grondin
 - [File:France road sign B14 (50).svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B14_(50).svg) ; licence : CC BY-SA 4.0 ; auteur : Roulex 45
+- [File:France road sign B14 (70).svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B14_(70).svg) ; licence : CC BY-SA 3.0 ; auteur : Grondin
+- [File:France road sign B14 (90).svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B14_(90).svg) ; licence : CC BY-SA 3.0 ; auteur : Grondin
 - [File:France road sign B15.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B15.svg) ; licence : CC BY-SA 4.0 ; auteur : Roulex 45
 - [File:France road sign B16.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B16.svg) ; licence : CC BY-SA 4.0 ; auteur : Roulex 45
 - [File:France road sign B17.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_B17.svg) ; licence : CC BY-SA 4.0 ; auteur : Roulex 45
@@ -174,6 +177,7 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign M3a1.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M3a1.svg) ; licence : Public domain ; auteur : Government of France
 - [File:France road sign M3b3.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M3b3.svg) ; licence : CC BY 4.0 ; auteur : มองโกเลีย๔๔
 - [File:France road sign M4a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4a.svg) ; licence : CC0 ; auteur : Mathgb
+- [File:France road sign M4c interfile.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4c_interfile.svg) ; licence : CC BY 4.0 ; auteur : Chabe01
 - [File:France road sign M4d1.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4d1.svg) ; licence : CC BY-SA 4.0 ; auteur : Paris 16
 - [File:France road sign M4d2.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4d2.svg) ; licence : CC BY-SA 4.0 ; auteur : Chabe01
 - [File:France road sign M4e.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4e.svg) ; licence : CC BY-SA 4.0 ; auteur : มองโกเลีย๔๔

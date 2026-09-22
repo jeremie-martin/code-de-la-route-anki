@@ -1137,7 +1137,70 @@ def formes_panneaux(params):
     return str(S)
 
 
+# ---------------------------------------------------------- sign composites ---
+# Signs are Commons files declared as {kind: sign, file: …} (attributed automatically in ATTRIBUTIONS.md).
+
+def _sign_png(item, width):
+    """Data URI and height of one sign item rendered at `width` px (keeps the file's proportions)."""
+    import base64, struct
+    if "gen" in item or item.get("draw") == "cedez":  # a drawn signal (AB3a without its plate, a light…)
+        import re
+        svg = render(item.get("gen", "cedez_le_passage"), item.get("params") or {})
+        w, h = (float(v) for v in re.search(r'width="([\d.]+)" height="([\d.]+)"', svg).groups())
+        uri = "data:image/svg+xml;base64," + base64.b64encode(svg.encode()).decode()
+        return uri, round(width * h / w)
+    uri = sign_data_uri(item["file"], width * 2)
+    png = base64.b64decode(uri.split(",", 1)[1])
+    w, h = struct.unpack(">II", png[16:24])
+    return uri, round(width * h / w)
+
+
+def support_panneaux(params):
+    """Several signs (and plates) on one post, top to bottom, as seen when approaching."""
+    items = params["signs"]
+    width = params.get("width", 150)
+    parts, y = [], 16
+    for item in items:
+        w = item.get("w", width)
+        uri, h = _sign_png(item, w)
+        parts.append((uri, w, h, y))
+        y += h + 6
+    H = y + 70
+    S = SVG(300, H)
+    S.add(f'<rect x="0" y="0" width="300" height="{H}" fill="#ffffff"/>')
+    S.add(f'<rect x="144" y="20" width="12" height="{H - 20}" fill="#9a9a9a"/>')
+    for uri, w, h, top in parts:
+        S.add(f'<image href="{uri}" x="{150 - w / 2}" y="{top}" width="{w}" height="{h}"/>')
+    return str(S)
+
+
+def planche_signaux(params):
+    """Numbered sheet of signs; with verso, each name appears under its number (nothing else moves)."""
+    verso = params.get("verso", False)
+    items = params["signs"]
+    cols = params.get("cols", len(items) if len(items) <= 3 else 2 if len(items) == 4 else 3)
+    cell_w, sign_w = 480 // cols, min(150, 480 // cols - 40)
+    rows = (len(items) + cols - 1) // cols
+    cells = []
+    for item in items:
+        uri, h = _sign_png(item, item.get("w", sign_w))
+        cells.append((uri, item.get("w", sign_w), h, item["name"]))
+    row_h = max(h for _, _, h, _ in cells) + 60
+    S = SVG(480, rows * row_h)
+    S.add(f'<rect x="0" y="0" width="480" height="{rows * row_h}" fill="#ffffff"/>')
+    for i, (uri, w, h, name) in enumerate(cells):
+        cx = cell_w * (i % cols) + cell_w / 2
+        top = (i // cols) * row_h + 8
+        S.add(f'<image href="{uri}" x="{cx - w / 2}" y="{top + (row_h - 60 - h) / 2}" width="{w}" height="{h}"/>')
+        _tag(S, cx, top + row_h - 36, str(i + 1), str(i + 1), verso, size=20)
+        if verso:
+            S.add(f'<text x="{cx}" y="{top + row_h - 12}" font-family="{FONT}" font-size="20" font-weight="700" '
+                  f'text-anchor="middle" fill="#1c5fb8">{esc(name)}</text>')
+    return str(S)
+
+
 REGISTRY.update({
+    "support_panneaux": support_panneaux, "planche_signaux": planche_signaux,
     "vocab_route": vocab_route, "formes_panneaux": formes_panneaux,
     "balise_piquet": balise_piquet, "voyant_direction": voyant_direction,
     "voie_insertion": voie_insertion, "bande_cyclable": bande_cyclable, "damier": damier, "ralentisseur": ralentisseur,

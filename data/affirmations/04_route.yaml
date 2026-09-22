@@ -264,7 +264,7 @@
   sous_theme: tramways
   source: "Code de la route, art. R414-13 ; coursdecode.com, Les tramways"
 - id: aff-r-chantier-sans-ouvriers
-  contexte: Chantier autoroutier un dimanche, limitation jaune à 90, aucun engin ni ouvrier en vue.
+  contexte: Chantier autoroutier un dimanche, signalé ainsi ; aucun engin ni ouvrier en vue.
   affirmation: 'Personne ne travaille : je peux reprendre 130 km/h.'
   verdict: faux
   pourquoi: 'Tant que les panneaux temporaires sont en place, ils s''imposent et priment sur la signalisation permanente
@@ -272,6 +272,16 @@
   theme: R
   sous_theme: chantiers
   source: IISR, 8e partie ; Code de la route, art. R411-25
+  image:
+    gen: support_panneaux
+    params:
+      signs:
+      - kind: sign
+        file: France road sign AK5.svg
+        w: 130
+      - kind: sign
+        file: France road sign B14 (90).svg
+        w: 110
 - id: aff-r-vent-deux-roues
   affirmation: Par vent latéral, je laisse un écart plus grand au motard que je dépasse.
   verdict: vrai

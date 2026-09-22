@@ -99,7 +99,7 @@
   sous_theme: cyclistes
   source: "Code de la route, art. R412-10 et R414-6 ; En Voiture Simone, Les vélos"
 - id: u-double-sens-cyclable
-  question: Un sens interdit avec un panonceau « sauf vélos » est placé à l’autre entrée de la rue où je circule. Quel usager puis-je rencontrer en face ?
+  question: Ce panneau est placé à l’autre entrée de la rue où je circule. Quel usager puis-je rencontrer en face ?
   reponse: 'Des cyclistes qui arrivent en face dans cette rue à sens unique (double-sens cyclable) : je me tiens à droite
     et je vérifie avant de tourner.'
   explication: Le double-sens cyclable est la règle par défaut dans les zones 30 et zones de rencontre, même sans panonceau
@@ -107,6 +107,16 @@
   theme: U
   sous_theme: cyclistes
   source: Code de la route, art. R412-28-1 et R110-2
+  image:
+    gen: support_panneaux
+    params:
+      signs:
+      - kind: sign
+        file: France road sign B1.svg
+        w: 120
+      - kind: sign
+        file: France road sign M9v1.svg
+        w: 120
 - id: u-edpm-ou-circuler
   question: Je suis en trottinette électrique, en agglomération, sur une avenue limitée à 50 km/h sans piste ni bande cyclable.
     Où dois-je rouler ?

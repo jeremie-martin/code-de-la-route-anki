@@ -152,13 +152,23 @@
   sous_theme: motos
   source: 'Code de la route, art. R412-11-3 (décret n° 2025-33)'
 - id: aff-u-interfiles-panneau-autos
-  contexte: Sur une voie rapide, un panneau « 50 » est surmonté du panonceau « EN INTER-FILES ».
+  contexte: Sur une voie rapide, je vois ce panneau.
   affirmation: Cette limitation s'applique aussi aux automobilistes quand la circulation est dense.
   verdict: faux
   pourquoi: Elle ne vise que les motos et tricycles circulant en inter-files. Les automobilistes restent soumis à la vitesse normalement autorisée sur leur voie.
   theme: U
   sous_theme: motos
   source: "Sécurité routière, Exemples de nouvelles questions (Q16) ; Code de la route, art. R412-11-3"
+  image:
+    gen: support_panneaux
+    params:
+      signs:
+      - kind: sign
+        file: France road sign M4c interfile.svg
+        w: 150
+      - kind: sign
+        file: France road sign B14 (50).svg
+        w: 120
 - id: aff-u-moto-vitesse-approche
   contexte: Je suis motard ; en face, une voiture attend pour tourner à gauche devant moi.
   affirmation: Son conducteur évalue ma vitesse d'approche aussi bien que celle d'une voiture.
