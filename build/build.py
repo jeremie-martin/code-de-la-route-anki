@@ -143,6 +143,18 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
             elif "gen" in img and img["gen"] not in gen_images.REGISTRY:
                 errors.append(f"{it.get('_file')}:{it.get('id')}: générateur inconnu {img['gen']}")
 
+        if "illustration" in it:
+            illustration = it["illustration"]
+            if (kind != "questions" or not isinstance(illustration, dict) or
+                    set(illustration) - {"gen", "params", "width", "legende"} or
+                    not isinstance(illustration.get("gen"), str) or
+                    illustration.get("gen") not in gen_images.REGISTRY or
+                    not isinstance(illustration.get("params", {}), dict) or
+                    type(illustration.get("width", 640)) is not int or illustration.get("width", 640) <= 0 or
+                    not isinstance(illustration.get("legende"), str) or
+                    not illustration.get("legende", "").strip()):
+                errors.append(f"{it.get('id')}: illustration exige une question, un générateur connu, des paramètres objet, une largeur positive et une légende")
+
     for it in data["reconnaissance"]:
         common(it, "reconnaissance")
         req(it, "type", "image", "nom", "signification")
@@ -359,6 +371,15 @@ def ensure_media(data: dict[str, list[dict]], force=False) -> dict[str, str]:
         render_png(draw(it["spec"]), MEDIA / fname, width=560)
         manifest[fname] = stamp(spec)
         print("  media", fname)
+    for it in data["questions"]:
+        img = it.get("illustration")
+        if img:
+            fname = media_name("exp", it["id"])
+            names[it["id"] + ":illustration"] = fname
+            if need(fname, img):
+                make_image(img, MEDIA / fname, 420, 640, it["id"])
+                manifest[fname] = stamp(img)
+                print("  media", fname)
     manifest_path.write_text(json.dumps(manifest, indent=0), encoding="utf-8")
     write_attributions(data)
     return names
@@ -384,7 +405,8 @@ def write_attributions(data):
             img = it.get("image") or {}
             if isinstance(img, dict) and img.get("commons"):
                 titles.add(img["commons"])
-            for ex in _walk_dicts(it.get("spec") or (img.get("params") if isinstance(img, dict) else None)):
+            for ex in _walk_dicts([it.get("spec"), img.get("params") if isinstance(img, dict) else None,
+                                   (it.get("illustration") or {}).get("params")]):
                 if ex.get("kind") == "sign" and ex.get("file"):  # draw_road extras
                     titles.add(ex["file"])
     lines = ["# Attributions des images (Wikimedia Commons)\n",
@@ -555,7 +577,7 @@ def img_tag(fname: str) -> str:
 
 
 def feedback_html(note: dict, field: str, names: dict[str, str]) -> str:
-    """Reuse packaged recognition media in answer-only, captioned comparisons."""
+    """Append captioned comparison media and explanatory illustrations to answer text."""
     result = inline_md(note.get(field, ""))
     if note.get("comparaisons"):
         figures = []
@@ -563,6 +585,10 @@ def feedback_html(note: dict, field: str, names: dict[str, str]) -> str:
             figures.append('<figure>' + img_tag(names[comparison["ref"]]) +
                            '<figcaption>' + inline_md(comparison["legende"]) + '</figcaption></figure>')
         result += '<div class="cdr-comparisons">' + ''.join(figures) + '</div>'
+    if note.get("illustration"):
+        illustration = note["illustration"]
+        result += ('<figure class="cdr-illustration">' + img_tag(names[note["id"] + ":illustration"]) +
+                   '<figcaption>' + inline_md(illustration["legende"]) + '</figcaption></figure>')
     return result
 
 

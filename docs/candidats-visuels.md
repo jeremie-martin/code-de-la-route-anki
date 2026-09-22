@@ -1,6 +1,6 @@
 # Candidats à une illustration
 
-État au 22 septembre 2026, après intégration du premier lot de trois scènes. Carte de discussion éditoriale, pas liste d’images à produire.
+État au 22 septembre 2026, après intégration des scènes de décision et du lot spatial. Carte de discussion éditoriale, pas liste d’images à produire.
 Les bénéfices indiqués sont des hypothèses de conception, sans mesure d’efficacité. Un candidat peut être
 abandonné si son prototype n’améliore pas la compréhension ou le rappel. Aucun quota d’illustrations.
 
@@ -13,7 +13,7 @@ et de `scn-giratoire-cedez` à 390 px. Ce n’est ni une nouvelle validation jur
 chaque image du deck. Les propositions non intégrées demandent encore une vérification de leurs sources et un essai.
 
 Le deck possède déjà 284 notes de reconnaissance illustrées, 48 comparaisons visuelles et 56 scénarios ;
-25 questions et un fait ont aussi une image principale. L’absence d’image n’est donc pas un défaut en soi.
+28 questions et un fait ont aussi une image principale ; une question a un schéma explicatif au verso. L’absence d’image n’est donc pas un défaut en soi.
 Les notes non retenues restent inchangées ; leur omission ne signifie pas qu’elles ont été définitivement
 écartées. Les identifiants ci-dessous désignent des **notes**, parfois porteuses de plusieurs cartes cloze.
 
@@ -27,22 +27,22 @@ invisibles. **Verso** : l’image explique la réponse après le rappel. Un dess
 peut supprimer précisément l’effort qu’on veut entraîner. Les flèches d’intention sont des données ; une
 trajectoire correcte tracée d’avance est souvent une réponse. Les couleurs ne doivent pas donner le verdict.
 
-## Candidats les plus solides à prototyper
+## Scènes intégrées et candidats prioritaires
 
 L’ordre commence par les voisins du chantier, puis élargit aux distinctions spatiales et à la lecture technique.
-Chaque ligne décrit une piste, pas une autorisation de modifier toutes les notes citées.
+Les lignes non intégrées restent des pistes ; leur présence ne vaut pas décision de réalisation.
 
 | Note cible | Gain attendu et dessin proposé | Conditions de réussite, recouvrements |
 |---|---|---|
 | `r-chantier-fleche-lumineuse` | **Intégrée, recto.** Deux FLR décalées et détail agrandi du signal actif ; choisir le côté et préparer le rabattement. | KR42 corrigé en KR43 après lecture de l’IISR VC20250904 et de l’arrêté du 4 septembre 2025. Deux panneaux schématiques, flèche oblique et B21a2 concordants ; aucune trajectoire de réponse. Le détail est de face et les distances hors échelle. |
 | `u-corridor-securite` | **Intégrée, recto.** Dépanneuse sur BAU et voiture à gauche empêchant un déport immédiat. | Cas de R412-11-1 où le changement de voie est irréalisable. La réponse demande ralentissement et écart dans sa voie ; l’explication conserve l’obligation de changer de voie lorsque cela devient possible sans danger. |
 | `u-cycliste-tourner-droite` | **Intégrée, recto.** Piste séparée traversant la rue de destination, vélo rejoignant la voiture et intention de virage. | R415-3 III vérifié. Pas de signal contraire, pas de voiture déjà engagée sur la piste ; la flèche représente seulement l’intention. La proximité temporelle reste explicitée dans le texte. |
-| `l-entrecroisement` | **Recto.** Rendre compréhensible cette géométrie peu évidente en mots : entrée prolongée jusqu’à une sortie, deux véhicules et leurs destinations. Demander qui change de voie dans le cas montré. | La question générale devrait devenir un cas déterminé, sans attribuer une priorité universelle à un véhicule coloré. Vérifier R421-3/R412-10. `marq-voie-insertion` montre un marquage et une insertion simple, pas deux intentions qui se croisent. |
-| `l-giratoire-sortie-impossible` | **Recto.** Voir pourquoi la sortie coupe la voie du cycliste : anneau à deux voies, voiture à l’intérieur, vélo à l’extérieur et sortie visée. | Le giratoire existant de `scn-giratoire-cedez` teste l’entrée, pas le changement de voie. Vérifier géométrie, sens et absence de flèches imposant une voie. Conserver la portée de `l-giratoire-placement` : une illustration ne doit pas transformer une voie facultative en obligation. |
-| `u-pl-tourne-droite` | **Recto**, puis éventuellement explication au **verso**. Montrer le déport initial à gauche avec clignotant droit ; expliquer ensuite le passage des roues arrière à l’intérieur du virage. | Le déplacement initial ne prouve pas une trajectoire future certaine. Le balayage dessiné doit correspondre au véhicule choisi, pas à une enveloppe universelle. Relire avec `u-pl-angles-morts`, qui teste la visibilité et non le gabarit. |
-| `scn-dep-passage-pieton` ; relire `c-occlusion-pieton` | **Amélioration d’un visuel existant.** Montrer ce que le véhicule arrêté empêche de voir depuis le conducteur. Le plan actuel situe les véhicules, mais ne représente pas le masque de visibilité. | Travailler d’abord le scénario existant ; décider ensuite si la question textuelle apporte un rappel distinct. Ne pas dessiner un piéton visible au recto : cela remplace l’incertitude par un danger certain. Un plan omniscient demande une zone explicitement non visible, ou une vue depuis le conducteur. |
+| `l-entrecroisement` | **Intégrée, recto.** Entrée et sortie partageant une voie ; deux intentions de changement de voie. | Cas déterminé : la bleue arrive de l’entrée et cède à la rouge déjà sur l’autoroute. R421-3 et R412-10 relus ; coopération sans priorité inventée. |
+| `l-giratoire-sortie-impossible` | **Intégrée, recto.** Voiture à l’intérieur, cycliste à l’extérieur et sortie visée. | Changement de voie, distinct de l’entrée testée par `scn-giratoire-cedez`. R412-9/R412-10 relus ; aucune voie imposée ni trajectoire de réponse tracée. |
+| `u-pl-tourne-droite` | **Intégrée, recto et verso.** Position initiale et clignotant droit ; après le rappel, deux arcs expliquent le passage du train arrière à l’intérieur. | Le mouvement initial et le clignotement restent dans le texte. Fiche pédagogique officielle consultée. Modèle de camion rigide en virage régulier, sans enveloppe universelle ni prétention à simuler la manœuvre du recto. |
+| `scn-dep-passage-pieton` ; `c-occlusion-pieton` | **Scénario amélioré.** Camion arrêté et secteur masqué depuis la place du conducteur, sans piéton dessiné. | R414-5 relu. Distinguer absence de piéton vu et passage réellement libre. La question textuelle `c-occlusion-pieton` conserve le principe général, sans deuxième illustration. |
 | `aff-l-stop-avancer` ; relire `l-stop-arret` | **Recto.** Séparer l’endroit de l’arrêt obligatoire de celui où la vue se dégage : ligne, voiture déjà arrêtée et obstacle latéral masquant la rue. | Le texte doit dire que l’arrêt a déjà eu lieu, fait impossible à déduire d’une image fixe. Ne pas placer la voiture au-delà de la ligne dès le premier arrêt ni promettre qu’on peut toujours avancer. Les scénarios STOP actuels testent surtout les priorités. |
-| `l-c107-route-simple`, `l-c107-route-separee` | **Remplacer les images actuelles du panneau seul** par deux scènes comparables : même C107, chaussée unique ou deux chaussées avec terre-plein. | Faire lire la différence qui détermine la réponse. Garder dans le texte météo, permis et absence de limite plus basse. Même cadrage et même style, sans chiffre de vitesse visible ni couleur donnant la réponse. Relire les conditions légales de chaque configuration. |
+| `l-c107-route-simple`, `l-c107-route-separee` | **Images remplacées.** Même C107 et même cadrage ; seule la séparation des chaussées change. | La configuration se lit dans le dessin, les conditions invisibles restent dans le texte. R413-2 relu ; une voie par sens dans les deux cas, sans chiffre de vitesse au recto. |
 | `l-vocab-chaussee-voie` | **Verso.** Un même plan avec accolades et légendes montre qu’une chaussée contient plusieurs voies, et situe l’accotement. | Réutilisable comme vocabulaire explicatif, sans ajouter une nouvelle carte. Au recto, des légendes donneraient la réponse. Ne pas confondre accotement, trottoir et BAU ; contrôler les définitions avant le dessin. |
 | `m-pneus-usure-1-6` | **Verso.** Coupe simple d’une rainure, témoin d’usure et surface de roulement pour rendre « atteindre le témoin » concret. | Vérifier sur une documentation technique primaire ; ne pas faire du témoin un diagnostic de tous les défauts. La cote du minimum reste au verso. Une photo de détail peut être préférable au SVG si celui-ci rend le témoin méconnaissable. |
 | `m-pression-etiquette` | **Recto.** Remplacer les deux valeurs récitées dans la question par une petite étiquette lisible, avec charge et pressions ; demander de sélectionner la ligne adaptée. | Se fonder sur une notice ou étiquette réelle, identifier l’exemple et conserver pneus froids, dimensions et essieux utiles. Ne pas présenter 2,2/2,6 bar comme norme générale ni inventer une étiquette constructeur. L’image doit faire lire une information, pas répéter la phrase. |
@@ -87,10 +87,10 @@ Ces idées peuvent être utiles, mais le coût, la redondance ou le risque de fu
 
 ## Comment reprendre ce travail
 
-Le premier lot est intégré ; voir [l’historique](../CHANGELOG.md)
-et le commit intitulé « Add three focused visual decision scenes ». Les prochaines pistes à comparer sont
-`l-entrecroisement` et `l-giratoire-sortie-impossible`, sans engagement à réaliser toute la liste.
-Les vues techniques au verso peuvent attendre une décision sur leur apport réel.
+Les deux lots sont intégrés ; voir [l’historique](../CHANGELOG.md), entrées « Trois scènes de décision »
+et « Cinq situations spatiales ». Les pistes restantes ne constituent pas un programme automatique.
+Le STOP avec visibilité masquée, le vocabulaire chaussée/voie et la lecture d’une étiquette technique
+restent à comparer selon leur apport réel.
 
 Pour un candidat, reprendre la note entière et ses voisines, écrire la décision que l’apprenant devra prendre,
 puis confronter la version textuelle à un prototype de carte complète. L’image doit apporter une information
@@ -103,11 +103,10 @@ Réutiliser `SVG`, la palette, les véhicules et les symboles existants dans `bu
 un détail matériel, photos/vidéos pour la perception. Pas de bibliothèque de scènes ni de génération en masse
 à partir de cette liste. Un helper partagé se justifie par une réutilisation concrète.
 
-**Limite technique actuelle :** `image` apparaît au recto et reste au verso. `comparaisons` ajoute au verso
-des médias de reconnaissance déjà présents. Les nouveaux schémas explicatifs proposés ici n’ont pas encore
-de champ dédié au verso : décider du plus petit ajout nécessaire avec le premier cas retenu, sans utiliser
-une fausse reconnaissance ni modifier tous les types de notes par anticipation. Attention aux images communes
-aux cartes d’une même note cloze.
+**Support technique :** `image` apparaît au recto et reste au verso. `comparaisons` réutilise des médias
+de reconnaissance au verso ; `illustration` ajoute un schéma explicatif au verso d’une question, dans son
+champ d’explication existant. Voir [maintenance](maintenance.md). Ne pas étendre ce support à d’autres
+types par anticipation ; attention aux images communes aux cartes d’une même note cloze.
 
 Avant intégration, consulter la source primaire pour la règle **et** la configuration dessinée, consigner
 la portée dans le registre, puis contrôler attribution, rendu clair/sombre sur téléphone et absence d’indices

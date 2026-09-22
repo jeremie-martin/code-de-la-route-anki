@@ -165,7 +165,7 @@ Recherche Anki : `objectif::l-giratoire`
 | `l-giratoire-vs-rond-point` | socle | questions | Code de la route, art. R415-10 ; IISR (AB25) |
 | `l-giratoire-clignotant` | socle | questions | Code de la route, R412-9 et R412-10 ; Association Prévention Routière, https://www.preventionroutiere.asso.fr/le-carrefour-giratoire-commen-bien-lemprunter/ |
 | `l-giratoire-placement` | socle | questions | Code de la route, R412-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688 |
-| `l-giratoire-sortie-impossible` | socle | questions | Code de la route, R412-9 et R412-10 |
+| `l-giratoire-sortie-impossible` | socle | questions | Code de la route, R412-9 et R412-10, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177121/ |
 | `aff-l-giratoire-sortie-cede` | consolidation | affirmations | Code de la route, art. R415-10 |
 | `aff-l-giratoire-depassement` | consolidation | affirmations | R414-4 et R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
 | `aff-l-demi-tour-giratoire` | consolidation | affirmations | Code de la route, art. R415-10 ; REMC |
@@ -478,7 +478,7 @@ Recherche Anki : `objectif::l-depasser`
 | `scn-dep-cycliste-ligne-continue` | consolidation | scenarios | Code de la route, art. R412-19 et R414-4 |
 | `scn-dep-vehicule-tourne-gauche` | consolidation | scenarios | Code de la route, art. R414-6 et R414-11 |
 | `scn-dep-suis-depasse` | consolidation | scenarios | Code de la route, art. R414-16 |
-| `scn-dep-passage-pieton` | consolidation | scenarios | Code de la route, art. R414-5 et R415-11 |
+| `scn-dep-passage-pieton` | consolidation | scenarios | Code de la route, R414-5, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842217 |
 | `scn-dep-tourne-gauche-depasse` | consolidation | scenarios | Code de la route, art. R412-10, R414-16 et R414-6 |
 
 ## l-position : Tenir sa voie et gérer les croisements
@@ -974,7 +974,7 @@ Recherche Anki : `objectif::u-gabarit`
 | `u-pl-vitesses-chiffres` | consolidation | faits | Code de la route, art. R413-8 et R413-8-1 |
 | `l-bus-quitte-arret` | socle | questions | Code de la route, art. R412-11 |
 | `u-pl-angles-morts` | socle | questions | securite-routiere.gouv.fr, Vrai ou faux : angles morts |
-| `u-pl-tourne-droite` | socle | questions | Ornikar, Transports de marchandises ; securite-routiere.gouv.fr, Angles morts |
+| `u-pl-tourne-droite` | socle | questions | Sécurité routière, fiche pédagogique 6, https://www.securite-routiere.gouv.fr/sites/default/files/2019-02/fiche_pedago_film_6.pdf |
 | `u-pl-giratoire-deport` | socle | questions | securite-routiere.gouv.fr, Angles morts ; Ornikar, Transports de marchandises |
 | `u-pl-depasser-suivre` | socle | questions | Code de la route, art. R414-4 et R412-12 ; coursdecode, Les poids lourds |
 | `u-matieres-dangereuses` | socle | questions | Accord ADR ; IISR (B18) |

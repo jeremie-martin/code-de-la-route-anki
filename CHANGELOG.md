@@ -1,3 +1,22 @@
+# Cinq situations spatiales (22 septembre 2026)
+
+- Six notes améliorées : sortie de giratoire, entrecroisement, deux configurations sous C107,
+  camion tournant à droite et passage piéton masqué. Les questions exploitent les dessins ; elles
+  conservent les faits qu’une image fixe ne peut établir, comme une intention ou un clignotement.
+- Deux vues C107 comparables font distinguer chaussée unique et terre-plein central. La scène du
+  passage piéton montre une zone masquée sans inventer un piéton ; les sanctions hors sujet sont retirées.
+- Le camion reçoit aussi un schéma explicatif au verso. Petit support `illustration` dans le champ
+  d’explication existant, avec légende, attribution et vérification du rendu natif ; aucun nouveau type
+  de note. Palette, véhicules et symboles partagés réutilisés.
+- Sources primaires consultées et portée consignée ; carte des candidats et maintenance actualisées.
+  Le schéma du camion est un modèle géométrique de principe, pas une enveloppe de giration calculée
+  pour le carrefour. Les schémas de circulation ne sont pas des plans d’implantation réglementaires.
+- 1 051 notes, 1 125 cartes, 370 médias. Comparaison avec le paquet précédent : seules les six notes
+  prévues changent ; quatre médias ajoutés et trois remplacés. Identités et ordre d’introduction identiques.
+- 26 tests réussis ; import neuf, réimport, mise à jour et contrôles FSRS réussis. Inspection des six
+  cartes à 390 px en clair et 320 px en sombre ; 9 042 faces/configurations sans échec (`out/RENDU.md`).
+  Aucun essai natif mobile ni mesure d’efficacité pédagogique.
+
 # Trois scènes de décision (22 septembre 2026)
 
 - `r-chantier-fleche-lumineuse` : lire le côté du rabattement et préparer la manœuvre, avec un détail

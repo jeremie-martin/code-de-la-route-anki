@@ -151,15 +151,21 @@
   sous_theme: poids_lourds
   source: "securite-routiere.gouv.fr, Vrai ou faux : angles morts"
 - id: u-pl-tourne-droite
-  question: Un poids lourd met son clignotant droit devant moi et se déporte vers la gauche. Que fait-il et que dois-je faire
-    ?
-  reponse: 'Il prépare sans doute un virage à droite en élargissant sa trajectoire : je reste derrière et ne m’engage pas
-    dans l’espace à sa droite.'
-  explication: 'Le déport n’est pas une prise d’élan : le gabarit et le décalage de trajectoire des roues arrière demandent
-    de la place. Un clignotant décrit une intention, pas une certitude sur la manœuvre exacte.'
+  question: 'Devant ma voiture bleue, le camion vient de se déporter à gauche, clignotant droit en marche.
+    Comment réagir à l’espace laissé à sa droite ?'
+  reponse: Il prépare probablement son virage à droite. Je reste derrière, sans m’engager dans cet espace.
+  explication: 'Les roues arrière passent à l’intérieur de la trajectoire des roues avant : le camion peut avoir
+    besoin de s’écarter avant de tourner. L’espace libre maintenant peut se refermer pendant le virage.
+    Le clignotant indique une intention, pas une certitude sur la manœuvre exacte.'
   theme: U
   sous_theme: poids_lourds
-  source: "Ornikar, Transports de marchandises ; securite-routiere.gouv.fr, Angles morts"
+  source: "Sécurité routière, fiche pédagogique 6, https://www.securite-routiere.gouv.fr/sites/default/files/2019-02/fiche_pedago_film_6.pdf"
+  image: {gen: camion_virage, width: 960}
+  illustration:
+    gen: camion_roues
+    width: 960
+    legende: 'Vue de principe : trajectoires du centre des trains avant et arrière dans un virage régulier.
+      Le tracé intérieur explique pourquoi il faut laisser de la place ; ce n’est pas l’enveloppe complète du camion.'
 - id: u-pl-giratoire-deport
   question: Dans un carrefour à sens giratoire à deux voies, le poids lourd devant moi roule à cheval sur les deux voies.
     Puis-je le dépasser dans l'anneau ?

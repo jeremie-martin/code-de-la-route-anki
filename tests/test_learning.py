@@ -36,6 +36,46 @@ class LearningTests(unittest.TestCase):
         self.assertIn('<figcaption>Piéton &lt;sur des bandes&gt;</figcaption>', result)
         self.assertEqual(feedback_html({}, 'piege', {}), '')
 
+    def test_explanatory_illustrations_require_a_generator_and_caption(self):
+        valid = {'gen': 'camion_roues', 'legende': 'Trajectoires des trains.'}
+        for kind, value in [('questions', v) for v in (
+                None, 'camion_roues', {}, {**valid, 'gen': 'unknown'},
+                {**valid, 'legende': ' '}, {**valid, 'commons': 'extra.svg'},
+                {**valid, 'params': 'invalid'}, {**valid, 'width': 0}, {**valid, 'width': True})] + [('faits', valid)]:
+            with self.subTest(kind=kind, value=value):
+                data = copy.deepcopy(self.data)
+                data[kind][0]['illustration'] = value
+                self.assertTrue(any('illustration' in e for e in validate(data)))
+
+    def test_explanatory_illustration_is_only_on_the_native_anki_answer(self):
+        from anki.collection import Collection
+        model = next(m for m in notetypes() if m['name'] == 'CDR Question')
+        original = {'id': 'test', 'explication': 'La règle.', 'illustration': {
+            'gen': 'camion_roues', 'legende': 'Centre <des trains>'}}
+        feedback = feedback_html(original, 'explication', {'test:illustration': 'explanation.png'})
+        with tempfile.TemporaryDirectory() as tmp:
+            col = Collection(tmp + '/illustration.anki2')
+            try:
+                m = col.models.new(model['name'])
+                for name in model['fields']:
+                    col.models.add_field(m, col.models.new_field(name))
+                template = col.models.new_template('Question')
+                template.update(model['templates'][0])
+                col.models.add_template(m, template)
+                col.models.add(m)
+                note = col.new_note(m)
+                note['Question'], note['Reponse'], note['Explication'] = 'Que faire ?', 'Attendre.', feedback
+                note['Image'] = '<img src="scene.png">'
+                col.add_note(note, 1)
+                card = note.cards()[0]
+                self.assertIn('scene.png', card.question())
+                self.assertIn('scene.png', card.answer())
+                self.assertNotIn('explanation.png', card.question())
+                self.assertIn('<img src="explanation.png">', card.answer())
+                self.assertIn('Centre &lt;des trains&gt;', card.answer())
+            finally:
+                col.close()
+
     def test_no_extension_card_interrupts_foundation(self):
         plan = card_plan(self.data, curriculum(self.data))
         notes = {n['id']: n for ns in self.data.values() for n in ns}

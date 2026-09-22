@@ -24,9 +24,9 @@ from build.verify import import_package
 SAMPLES = {
     'a13a', 'b9b', 'ab4', 'voyant-temperature', 'conf-a2a-a2b', 'conf-ab3a-ab4',
     'l-vitesse-hors-agglo', 'triangle-distance', 's-chargement-chiffres',
-    'r-chantier-fleche-lumineuse', 'u-corridor-securite', 'u-cycliste-tourner-droite',
-    'scn-stop-moi', 'scn-dep-cycliste-ligne-continue', 'aff-l-stop-rien-ne-vient',
-    'r-chantier-approche', 'a-pls', 'a-message-alerte',
+    'l-entrecroisement', 'l-giratoire-sortie-impossible', 'l-c107-route-simple',
+    'l-c107-route-separee', 'u-pl-tourne-droite', 'scn-dep-passage-pieton',
+    'aff-l-stop-rien-ne-vient', 'a-pls', 'a-message-alerte',
 }
 
 # Kept separate so the checker itself can be tested against deliberately bad pages.

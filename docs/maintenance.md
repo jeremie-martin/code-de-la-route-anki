@@ -140,6 +140,20 @@ existants. Déclarer les panneaux Commons dans `image.params` avec `kind: sign` 
 attribution automatique. Le SVG généré est rastérisé pour Anki ; les prototypes sont des archives,
 pas une seconde source à maintenir. Ajouter un helper partagé lorsqu’un dessin est effectivement réutilisé.
 
+Pour une explication dessinée au **verso d’une question**, utiliser `illustration` :
+
+```yaml
+illustration:
+  gen: camion_roues
+  width: 960
+  legende: 'Ce que le schéma explique et les limites utiles à sa lecture.'
+```
+
+Le générateur, les `params` éventuels et la largeur suivent le principe de `image` ; une légende est requise.
+Le build ajoute le média à l’explication existante, sans nouveau champ Anki ni nouvelle carte. Il contrôle
+le générateur et réserve cet usage aux questions. Les panneaux éventuels dans `illustration.params`
+sont attribués comme ceux de `image.params`. Choisir le verso quand le dessin révélerait la réponse au recto.
+
 Le thème **Signal** est dans `build/cards.css`, consolidé depuis le
 [handoff approuvé](signal-theme-handoff/README.md). Ce dossier reste une référence visuelle historique,
 pas une source de contenu à réimporter. Les tests comparent le rendu au CSS exporté et vérifient séparément

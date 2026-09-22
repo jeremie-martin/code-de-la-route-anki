@@ -581,6 +581,33 @@ def draw_road(spec: dict) -> str:
             S.add(f'<rect x="{x0 + road_w}" y="0" width="70" height="600" fill="#5c5c5c"/>')
             S.add(f'<line x1="{x0 + road_w}" y1="0" x2="{x0 + road_w}" y2="600" stroke="{MARK}" stroke-width="4" stroke-dasharray="78 26"/>')
             S.add(f'<text x="{x0 + road_w + 35}" y="300" font-family="{FONT}" font-size="13" text-anchor="middle" fill="#fff" transform="rotate(-90 {x0 + road_w + 35} 300)">bande d\'arrêt d\'urgence</text>')
+    # A tall vehicle masks an angular sector, not a confirmed pedestrian.
+    # Only the northbound truck/car case is supported, with dimensions matching the sprites.
+    for obstacle in spec.get("vehicles", []):
+        if not obstacle.get("occludes"):
+            continue
+        observer = next(v for v in spec["vehicles"] if v.get("me"))
+        if (obstacle.get("kind") != "truck" or observer.get("kind", "car") != "car" or
+                any(v.get("dir", "up") != "up" for v in (observer, obstacle))):
+            raise ValueError("occludes requires a northbound truck ahead of the learner car")
+        ox = x0 + road_w - (observer["lane"] - .5) * lane_w - 12
+        oy = 600 - observer["y"] * 6 - 20
+        bx = x0 + road_w - (obstacle["lane"] - .5) * lane_w
+        by = 600 - obstacle["y"] * 6 + 60
+        if by >= oy:
+            raise ValueError("occluding truck must be ahead of the observer")
+        left, right = bx - 26, bx + 26
+        far_left = ox + (left - ox) * oy / (oy - by)
+        far_right = ox + (right - ox) * oy / (oy - by)
+        S.add('<defs><pattern id="hidden" width="12" height="12" patternUnits="userSpaceOnUse">'
+              '<path d="M-3 3L3-3 M0 12L12 0 M9 15L15 9" stroke="#bac2c5" stroke-width="2"/></pattern></defs>')
+        S.add(f'<path d="M{left} {by}L{far_left} 0H{far_right}L{right} {by}Z" '
+              'fill="url(#hidden)" stroke="#bac2c5" stroke-width="2"/>')
+        S.add(f'<path d="M{ox} {oy}L{left} {by} M{ox} {oy}L{right} {by}" '
+              'stroke="#bac2c5" stroke-width="1.5" stroke-dasharray="5 5"/>')
+        S.add(f'<path d="M430 185H525" stroke="#263336" stroke-width="2"/>')
+        for y, text in ((148, "Zone masquée"), (172, "depuis ma place")):
+            S.add(f'<text x="490" y="{y}" text-anchor="middle" font-family="{FONT}" font-size="18" fill="#263336">{text}</text>')
     for v in spec.get("vehicles", []):
         lane = v["lane"]
         d = v.get("dir", "up")

@@ -223,16 +223,18 @@
     axis: discontinue
     vehicles:
       - {lane: 1, y: 15, colour: bleu, me: true}
-      - {lane: 1, y: 45, colour: gris}
+      - {lane: 1, y: 45, colour: gris, kind: truck, occludes: true}
     extras:
       - {kind: passage_pieton, y: 62}
-  question: "Le véhicule devant moi s'arrête juste avant un passage piéton, sans raison visible pour moi. Puis-je le dépasser ?"
-  reponse: 'Non : un véhicule qui s''arrête devant un passage piéton masque probablement un piéton ; je m''arrête
-    derrière lui.'
-  explication: "Article R414-5. Refus de priorité à un piéton : 135 €, 6 points. Le passage piéton est aussi un lieu où l'arrêt et le stationnement sont interdits."
+  question: 'Le camion devant moi est arrêté avant le passage piéton. Je ne vois aucun piéton depuis ma voiture
+    bleue. Puis-je le dépasser ?'
+  reponse: Non. Le camion me masque une partie du passage ; je reste derrière, prêt à céder le passage et à m’arrêter.
+  explication: 'Pour dépasser à l’approche d’un passage piéton, je dois pouvoir m’assurer qu’aucun piéton n’y est engagé.
+    Ne pas en voir ne suffit pas quand la vue est masquée. Les hachures montrent ce que le camion cache dans ce schéma,
+    sans affirmer qu’un piéton s’y trouve ni garantir la visibilité partout ailleurs.'
   theme: L
   sous_theme: depassement
-  source: "Code de la route, art. R414-5 et R415-11"
+  source: "Code de la route, R414-5, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842217"
 - id: scn-pos-trois-voies
   kind: road
   spec:

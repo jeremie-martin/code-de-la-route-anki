@@ -902,6 +902,111 @@ def cycliste_tourne_droite(params):
     return str(S)
 
 
+def giratoire_sortie(params):
+    """Two lanes, one intended exit; no suggested crossing of the cyclist's lane."""
+    S = SVG(640, 440)
+    S.add(f'<rect width="640" height="440" fill="{GRASS}"/>')
+    S.add(f'<path d="M190 0H290V440H190Z M0 165H640V275H0Z" fill="{ASPHALT}"/>')
+    S.add(f'<circle cx="240" cy="220" r="195" fill="{ASPHALT}"/>')
+    S.add(f'<circle cx="240" cy="220" r="90" fill="{GRASS}" stroke="{MARK}" stroke-width="3"/>')
+    S.add(f'<circle cx="240" cy="220" r="142" fill="none" stroke="{MARK}" stroke-width="3" stroke-dasharray="18 15"/>')
+    S.add(f'<path d="M437 220H640 M240 0V23 M240 417V440 M0 220H43" stroke="{MARK}" stroke-width="3"/>')
+    for x1,y1,x2,y2 in ((440,168,440,216),(193,22,236,22),(244,418,287,418),(40,224,40,272)):
+        S.add(f'<path d="M{x1} {y1}L{x2} {y2}" stroke="{MARK}" stroke-width="6" stroke-dasharray="8 6"/>')
+    for radius,angle,kind,colour in ((116,-32,"car","bleu"),(174,-28,"bike","rouge")):
+        a=math.radians(angle)
+        x,y=240+radius*math.cos(a),220-radius*math.sin(a)
+        S.add(f'<g transform="translate({x},{y}) rotate({-angle}) scale(.9)">{vehicle_sprite(kind,colour)}</g>')
+    S.add(f'<path d="M485 248h98m-12-8 12 8-12 8" fill="none" stroke="{MARK}" stroke-width="4"/>')
+    S.add(f'<text x="537" y="314" text-anchor="middle" font-family="{FONT}" font-size="22" fill="#263336">Sortie visée</text>')
+    return str(S)
+
+
+def entrecroisement(params):
+    """An entering driver must yield to traffic already on the motorway, even exiting."""
+    S=SVG(640,440)
+    S.add(f'<rect width="640" height="440" fill="{GRASS}"/>')
+    S.add(f'<path d="M70 0H340V440H70Z M340 0H470L430 80V350L495 440H365L340 390Z" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M200 0V440" stroke="{MARK}" stroke-width="3" stroke-dasharray="22 18"/>')
+    S.add(f'<path d="M340 0V440" stroke="{MARK}" stroke-width="5" stroke-dasharray="12 14"/>')
+    S.add(f'<path d="M340 0H470L430 80V350L495 440 M70 0V440" fill="none" stroke="{MARK}" stroke-width="3"/>')
+    S.add(f'<g transform="translate(380,340)">{vehicle_sprite("car","bleu")}{intention_arrow("left")}</g>')
+    S.add(f'<g transform="translate(270,253)">{vehicle_sprite("car","rouge")}{intention_arrow("right")}</g>')
+    for y,label in ((410,"Entrée"),(35,"Sortie")):
+        S.add(f'<text x="520" y="{y}" font-family="{FONT}" font-size="22" fill="#263336">{label}</text>')
+    S.add(f'<path d="M270 143V70m-8 12 8-12 8 12" fill="none" stroke="{MARK}" stroke-width="3"/>')
+    return str(S)
+
+
+def route_c107(params):
+    """Matched framing: road layout changes, C107 and all non-geometric conditions do not."""
+    S=SVG(640,440)
+    S.add(f'<rect width="640" height="440" fill="{GRASS}"/>')
+    S.add(f'<path d="M115 0H405V440H115Z" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M122 0V440 M398 0V440" stroke="{MARK}" stroke-width="3"/>')
+    if params.get("separee"):
+        S.add(f'<path d="M246 0H274V440H246Z" fill="{GRASS}" stroke="#b7c2ad" stroke-width="6"/>')
+        S.add(f'<path d="M236 0V440 M284 0V440" stroke="{MARK}" stroke-width="3"/>')
+    else:
+        S.add(f'<path d="M260 0V440" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 18"/>')
+    S.add(f'<g transform="translate(185,120) rotate(180)">{vehicle_sprite("car","gris")}</g>')
+    S.add(f'<g transform="translate(335,342)">{vehicle_sprite("car","bleu")}</g>')
+    for x,y,direction in ((185,300,180),(335,155,0)):
+        S.add(f'<g transform="translate({x},{y}) rotate({direction})"><path d="M0 20V-20m-8 10 8-10 8 10" '
+              f'fill="none" stroke="{MARK}" stroke-width="4"/></g>')
+    uri=sign_data_uri(params["sign"]["file"],200)
+    S.add('<path d="M510 298V372" stroke="#687475" stroke-width="5"/>')
+    S.add(f'<image x="460" y="242" width="100" height="100" xlink:href="{uri}"/>')
+    return str(S)
+
+
+def camion_virage(params):
+    """Initial lateral position only; flashing right indicator is also stated in the prompt."""
+    S=SVG(640,440)
+    S.add(f'<rect width="640" height="440" fill="{GRASS}"/>')
+    S.add('<path d="M77 0H443V440H77Z M430 98H640V262H430Z" fill="#ced6c8"/>')
+    S.add(f'<path d="M90 0H430V440H90Z M430 110H640V250H430Z" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M97 0V440 M423 0V110H640 M423 440V250H640" fill="none" stroke="{MARK}" stroke-width="3"/>')
+    S.add(f'<path d="M250 0V440" stroke="{MARK}" stroke-width="3" stroke-dasharray="22 18"/>')
+    S.add(f'<g transform="translate(294,214) scale(1.25)">{vehicle_sprite("truck","gris")}')
+    # Lamps on the truck's right, with small rays indicating the lit phase.
+    S.add('<path d="M23-60v9 M23 50v9" stroke="#ffc438" stroke-width="7"/>')
+    S.add('<path d="M32-57h7 M32 55h7" stroke="#ffc438" stroke-width="3"/></g>')
+    S.add(f'<g transform="translate(345,376)">{vehicle_sprite("car","bleu")}</g>')
+    return str(S)
+
+
+def camion_roues(params):
+    """Bicycle-model axle-centre paths in a steady right turn, not a swept-body envelope."""
+    S=SVG(640,360)
+    S.add(f'<rect width="640" height="360" fill="{GRASS}"/>')
+    S.add(f'<path d="M110 330V240A200 200 0 0 1 310 40H590V245H340A30 30 0 0 0 310 275V330Z" fill="{ASPHALT}"/>')
+    # Rear axle radius 110, wheelbase 90: front radius follows Pythagoras.
+    rear, wheelbase=110,90
+    front=math.hypot(rear,wheelbase)
+    for radius,colour,dash in ((front,"#ffffff",""),(rear,"#ffd166",'stroke-dasharray="9 6"')):
+        S.add(f'<path d="M{330-radius} 270A{radius} {radius} 0 0 1 330 {270-radius}" '
+              f'fill="none" stroke="{colour}" stroke-width="5" {dash}/>')
+    # One rigid vehicle pose: rear axle tangent to its own circle, front axle ahead.
+    a=math.radians(220)
+    rx,ry=330+rear*math.cos(a),270+rear*math.sin(a)
+    fx,fy=rx-wheelbase*math.sin(a),ry+wheelbase*math.cos(a)
+    cx,cy=(rx+fx)/2,(ry+fy)/2
+    rot=math.degrees(math.atan2(fy-ry,fx-rx))+90
+    S.add(f'<g transform="translate({cx},{cy}) rotate({rot})"><g transform="scale(1.1)">{vehicle_sprite("truck","gris")}</g>')
+    for y in (-45,45):
+        S.add(f'<path d="M-27 {y}h54" stroke="#222" stroke-width="3"/>')
+        for x in (-26,26):
+            steer = math.degrees(math.atan2(wheelbase, rear-x)) if y < 0 else 0
+            S.add(f'<rect x="{x-3}" y="{y-9}" width="6" height="18" rx="2" fill="#111" '
+                  f'transform="rotate({steer},{x},{y})"/>')
+    S.add('</g>')
+    for y, label, colour, dash in ((130, "Avant", "#ffffff", ""), (178, "Arrière", "#ffd166", 'stroke-dasharray="9 6"')):
+        S.add(f'<path d="M394 {y}h38" stroke="{colour}" stroke-width="5" {dash}/>')
+        S.add(f'<text x="447" y="{y+7}" font-family="{FONT}" font-size="23" fill="{colour}">{label}</text>')
+    return str(S)
+
+
 def barriere_k2(params):
     """K2 barrier: red and white striped rail on two legs, seen from the front, on a road."""
     S = SVG(360, 260)
@@ -965,6 +1070,7 @@ REGISTRY.update({
     "direction_voies": direction_voies,
     "marquage_temporaire": marquage_temporaire, "zone_bleue": zone_bleue, "losange_sol": losange_sol, "cvcb": cvcb,
     "livraison": livraison, "direction_panel": direction_panel, "lieu_dit": lieu_dit, "feu_bicolore": feu_bicolore,
-    "chantier_rabattement": chantier_rabattement, "corridor_securite": corridor_securite,
+    "giratoire_sortie": giratoire_sortie, "entrecroisement": entrecroisement, "route_c107": route_c107,
+    "camion_virage": camion_virage, "camion_roues": camion_roues, "chantier_rabattement": chantier_rabattement, "corridor_securite": corridor_securite,
     "cycliste_tourne_droite": cycliste_tourne_droite, "chantier_approche": chantier_approche, "cone": cone, "triangle_seul": triangle_seul, "barriere_k2": barriere_k2,
 })
