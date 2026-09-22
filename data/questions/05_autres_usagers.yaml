@@ -189,13 +189,15 @@
   sous_theme: poids_lourds
   source: "Code de la route, art. R414-4 et R412-12 ; coursdecode, Les poids lourds"
 - id: u-matieres-dangereuses
-  question: Que signifie la plaque orange à l'arrière d'un camion, et qu'est-ce que cela change pour moi ?
+  question: Que signifie cette plaque à l’arrière du camion, et qu’est-ce que cela change pour moi ?
   reponse: 'Il transporte des matières dangereuses : distance de sécurité accrue ; en cas d’accident, je n’approche pas et
     je signale la plaque aux secours.'
   explication: Sur la plaque orange numérotée, le haut renseigne le danger et le bas identifie la matière. Les losanges précisent le risque, par exemple inflammable ou toxique. Certaines routes ou certains tunnels sont interdits à ces transports ; je lis leur signalisation.
   theme: U
   sous_theme: poids_lourds
   source: Accord ADR ; IISR (B18)
+  image:
+    gen: plaque_orange
 - id: u-tram-depasser
   question: Un tramway est arrêté à sa station et des voyageurs descendent de mon côté. Que fais-je ?
   reponse: 'Je m''arrête et j''attends : on ne dépasse pas un tramway à l''arrêt du côté où les voyageurs montent

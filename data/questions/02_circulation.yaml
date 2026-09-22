@@ -550,28 +550,40 @@
   - l-depassement-laterale
   - marq-ligne-continue
 - id: l-feu-alerte-r1
-  question: Un feu jaune clignotant est fixé au-dessus d'un panneau de danger. Que signifie-t-il ?
+  question: Ce feu clignote au-dessus du panneau. Que signifie-t-il ?
   reponse: Il renforce l'alerte du panneau (danger fréquent ou peu visible) ; il ne change rien aux règles de priorité.
   explication: Distinguer le feu de renforcement d’un panneau du fonctionnement d’un carrefour au jaune clignotant.
   theme: L
   sous_theme: signalisation
   source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
+  image:
+    gen: feu_sur_panneau
+    params:
+      sign:
+        kind: sign
+        file: France road sign A1a.svg
 - id: l-feu-modal-anticipation
-  question: Mon feu automobile est rouge. À côté, un petit feu jaune clignotant porte le mot BUS. Puis-je le suivre
-    en voiture particulière ?
+  question: Mon feu est rouge ; le petit feu voisin clignote. Puis-je le suivre en voiture particulière ?
   reponse: 'Non : cette autorisation vise les usagers auxquels le signal modal s’adresse, pas ma voiture.'
   explication: Lire le destinataire du feu avant sa couleur ; les véhicules autorisés doivent encore céder le passage.
   theme: L
   sous_theme: signalisation
   source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
+  image:
+    gen: feu_modal
+    params:
+      kind: bus
 - id: l-feu-cycliste-r19
-  question: À vélo, un feu jaune clignotant porte un vélo et une flèche à droite à côté du rouge. Puis-je tourner
-    à droite ?
+  question: À vélo, j’arrive à ce feu rouge ; le petit feu voisin clignote. Puis-je tourner à droite ?
   reponse: Oui, après avoir cédé aux piétons et aux autres usagers ; je m’arrête si nécessaire.
   explication: La direction représentée et le symbole vélo limitent l’autorisation. Ce signal ne donne pas de priorité.
   theme: L
   sous_theme: signalisation
   source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
+  image:
+    gen: feu_modal
+    params:
+      kind: velo
 - id: l-feu-acces-regule
   question: Un feu tricolore sur ma bretelle d’accès à l’autoroute est rouge alors qu’un créneau semble libre. Puis-je
     m’insérer ?
@@ -597,14 +609,17 @@
   sous_theme: signalisation
   source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: l-pmv-limitation
-  question: Sur autoroute normalement limitée à 130, un panneau lumineux affiche un disque rouge « 90 ». Est-ce
-    un simple conseil ?
+  question: Sur autoroute normalement limitée à 130, ce panneau lumineux s’allume au-dessus des voies. Est-ce un simple conseil ?
   reponse: 'Non : c’est une limitation à 90 km/h, à respecter comme un panneau fixe.'
   explication: 'Lire la forme et le contenu : un message de prudence et une prescription de vitesse ne demandent
     pas la même interprétation.'
   theme: L
   sous_theme: signalisation
   source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
+  image:
+    gen: pmv
+    params:
+      value: '90'
 - id: l-bandes-rugueuses
   question: Des bandes transversales font vibrer la voiture à l'approche d'un carrefour. Que signalent-elles ?
   reponse: 'L''approche d''un danger ou d''une intersection : je ralentis et je cherche ce qui est annoncé (STOP,
@@ -623,12 +638,19 @@
   sous_theme: signalisation
   source: Code de la route, R422-1
 - id: l-jalonnement-destinataire
-  question: Un panneau directionnel porte un pictogramme vélo. À qui s'adresse-t-il ?
+  question: À qui s’adresse ce panneau directionnel ?
   reponse: 'Aux cyclistes : il jalonne un itinéraire cyclable ; ma voiture suit les panneaux de direction ordinaires.'
   explication: 'Même principe pour le jalonnement piéton : le destinataire compte autant que le nom de la destination.'
   theme: L
   sous_theme: signalisation
   source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
+  image:
+    gen: direction_panel
+    params:
+      colour: velo
+      picto: velo
+      text: Gare
+      dist: '3'
 - id: l-itineraire-bis
   question: Quelle différence entre un itinéraire « Bis » et une déviation de chantier ?
   reponse: 'Le Bis est une alternative conseillée ; la déviation s''impose : la route habituelle est fermée.'

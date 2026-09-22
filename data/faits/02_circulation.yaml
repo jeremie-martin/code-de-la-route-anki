@@ -15,19 +15,22 @@
   sous_theme: vitesse
   source: Code de la route, art. R413-2 ; CGCT, art. L3221-4-1 (relèvement à 90 par le département)
   rappels:
-  - 'Route de campagne ordinaire (double sens, une voie par sens, pas de terre-plein), temps sec, permis définitif
-    : je ne dépasse pas {{c1::80 km/h}}.'
-  - 'Route de campagne ordinaire (double sens, une voie par sens, sans terre-plein) : le département peut relever
-    le plafond à {{c2::90 km/h}}, signalé par des panneaux.'
+  - 'Route 1 (double sens, une voie par sens, sans terre-plein), hors agglomération, temps sec, permis définitif : je ne dépasse pas {{c1::80 km/h}}.'
+  - 'Route 1 : le département peut relever le plafond à {{c2::90 km/h}}, signalé par des panneaux.'
+  image:
+    gen: types_routes
+    verso: true
 - id: l-vitesse-separateur-autoroute
   explication: Le terre-plein central sépare deux chaussées ; le nombre de voies ne suffit pas. Le panneau bleu avec une voiture réglemente l’accès, sans fixer à lui seul 110 km/h. Je lis la configuration, les limitations et les conditions.
   theme: L
   sous_theme: vitesse
   source: "R413-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
   rappels:
-  - 'Route à deux chaussées séparées par un terre-plein central, hors agglomération, temps sec, permis définitif :
-    je ne dépasse pas {{c1::110 km/h}}.'
-  - Sur autoroute, temps sec, permis définitif, le plafond général est de {{c2::130 km/h}}.
+  - 'Route 2 (deux chaussées séparées par un terre-plein central), hors agglomération, temps sec, permis définitif : je ne dépasse pas {{c1::110 km/h}}.'
+  - 'Autoroute (3), temps sec, permis définitif : le plafond général est de {{c2::130 km/h}}.'
+  image:
+    gen: types_routes
+    verso: true
 - id: l-vitesse-pluie
   explication: 'Les limites locales plus basses restent applicables : 80 reste 80, 70 reste 70. En ville, 50 par défaut. Visibilité
     inférieure à 50 m : plafond de 50 km/h, sans relever une limite à 30.'

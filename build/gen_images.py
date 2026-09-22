@@ -732,6 +732,9 @@ def direction_panel(params):
     S.add(f'<path d="M40,80 l30,-22 l0,12 l50,0 l0,20 l-50,0 l0,12 z" fill="{fg}"/>')
     S.add(f'<text x="140" y="92" font-family="{FONT}" font-size="34" font-weight="700" fill="{fg}">{text}</text>')
     S.add(f'<text x="385" y="92" font-family="{FONT}" font-size="30" font-weight="700" text-anchor="end" fill="{fg}">{dist}</text>')
+    if params.get("picto") == "velo":
+        S.add(f'<g transform="translate(300,80) scale(1.3)" fill="none" stroke="{fg}" stroke-width="3"><circle cx="-10" cy="6" r="8"/>'
+              f'<circle cx="10" cy="6" r="8"/><path d="M-10,6 l7,-13 l11,0 l2,13 M-3,-7 l5,13"/></g>')
     return str(S)
 
 
@@ -1199,7 +1202,117 @@ def planche_signaux(params):
     return str(S)
 
 
+# ------------------------------------------------------------ lights, panels ---
+
+def _flash_rays(S, cx, cy, r, colour):
+    for ang in range(0, 360, 45):
+        a = math.radians(ang)
+        S.add(f'<line x1="{cx + (r + 6) * math.cos(a):.1f}" y1="{cy + (r + 6) * math.sin(a):.1f}" '
+              f'x2="{cx + (r + 13) * math.cos(a):.1f}" y2="{cy + (r + 13) * math.sin(a):.1f}" '
+              f'stroke="{colour}" stroke-width="3" stroke-linecap="round"/>')
+
+
+def feu_modal(params):
+    """Red main light with a small flashing amber head beside it: BUS (R15) or cycle + arrow (R19)."""
+    kind = params.get("kind", "bus")
+    S = SVG(320, 360)
+    S.add('<rect x="0" y="0" width="320" height="360" fill="#ffffff"/>')
+    S.add('<rect x="50" y="20" width="100" height="300" rx="16" fill="#222" stroke="#000" stroke-width="2"/>')
+    _lamp(S, 100, 70, 36, RED, on=True)
+    _lamp(S, 100, 170, 36, AMBER, on=False)
+    _lamp(S, 100, 270, 36, GREEN, on=False)
+    S.add('<rect x="180" y="210" width="100" height="100" rx="14" fill="#222" stroke="#000" stroke-width="2"/>')
+    S.add('<circle cx="230" cy="260" r="38" fill="#111"/>')
+    if kind == "bus":
+        S.add(f'<text x="230" y="270" font-family="{FONT}" font-size="26" font-weight="800" text-anchor="middle" fill="{AMBER}">BUS</text>')
+    else:
+        S.add(f'<g transform="translate(222,256)" fill="none" stroke="{AMBER}" stroke-width="3"><circle cx="-10" cy="6" r="8"/>'
+              f'<circle cx="10" cy="6" r="8"/><path d="M-10,6 l7,-13 l11,0 l2,13 M-3,-7 l5,13"/></g>')
+        S.add(f'<path d="M244,244 h14 v-6 l10,10 l-10,10 v-6 h-14 z" fill="{AMBER}"/>')
+    _flash_rays(S, 230, 260, 44, AMBER)
+    return str(S)
+
+
+def feu_sur_panneau(params):
+    """Flashing amber light fixed above a warning sign (R1): it reinforces the sign's warning."""
+    S = SVG(260, 330)
+    S.add('<rect x="0" y="0" width="260" height="330" fill="#ffffff"/>')
+    S.add('<rect x="124" y="120" width="12" height="210" fill="#9a9a9a"/>')
+    S.add('<rect x="95" y="14" width="70" height="70" rx="12" fill="#222"/>')
+    _lamp(S, 130, 49, 24, AMBER, on=True)
+    _flash_rays(S, 130, 49, 26, AMBER)
+    uri = sign_data_uri(params["sign"]["file"], 300)
+    S.add(f'<image href="{uri}" x="55" y="92" width="150" height="150"/>')
+    return str(S)
+
+
+def pmv(params):
+    """Variable-message panel over a motorway lane showing a speed limit (red ring, lit figures)."""
+    value = esc(str(params.get("value", "90")))
+    S = SVG(420, 260)
+    S.add('<rect x="0" y="0" width="420" height="260" fill="#ffffff"/>')
+    S.add('<rect x="10" y="20" width="400" height="16" fill="#8a8a8a"/>')
+    S.add('<rect x="110" y="36" width="200" height="200" rx="14" fill="#141414" stroke="#555" stroke-width="3"/>')
+    S.add('<circle cx="210" cy="136" r="78" fill="none" stroke="#e53935" stroke-width="16"/>')
+    S.add(f'<text x="210" y="160" font-family="{FONT}" font-size="68" font-weight="800" text-anchor="middle" fill="#f6f6f6">{value}</text>')
+    return str(S)
+
+
+def plaque_orange(params):
+    """Rear of a lorry carrying dangerous goods: orange plate (hazard number over UN number) and a hazard diamond."""
+    top, bottom = esc(str(params.get("danger", "33"))), esc(str(params.get("matiere", "1203")))
+    S = SVG(420, 320)
+    S.add('<rect x="0" y="0" width="420" height="320" fill="#ffffff"/>')
+    S.add('<rect x="40" y="20" width="340" height="240" rx="8" fill="#c9ced1" stroke="#555" stroke-width="3"/>')
+    S.add('<rect x="40" y="250" width="340" height="30" fill="#333"/>')
+    for x in (70, 330):
+        S.add(f'<rect x="{x - 20}" y="232" width="40" height="18" rx="3" fill="#d52b1e"/>')
+    S.add('<rect x="140" y="130" width="140" height="94" rx="4" fill="#f28c00" stroke="#111" stroke-width="5"/>')
+    S.add('<path d="M140,177 H280" stroke="#111" stroke-width="4"/>')
+    S.add(f'<text x="210" y="167" font-family="{FONT}" font-size="34" font-weight="800" text-anchor="middle" fill="#111">{top}</text>')
+    S.add(f'<text x="210" y="214" font-family="{FONT}" font-size="34" font-weight="800" text-anchor="middle" fill="#111">{bottom}</text>')
+    # hazard diamond (flammable liquid): red, white flame
+    S.add('<path d="M320,40 l42,42 l-42,42 l-42,-42 z" fill="#d52b1e" stroke="#fff" stroke-width="3"/>')
+    S.add('<path d="M320,58 c10,14 14,22 8,34 c-3,6 -13,8 -18,2 c-6,-8 -1,-18 4,-22 c0,6 2,10 6,10 c2,-8 -2,-16 0,-24 z" fill="#fff"/>')
+    return str(S)
+
+
+def types_routes(params):
+    """Three road types side by side (plan): 1 one carriageway; 2 two carriageways separated by a central
+    reserve; 3 motorway (reserve, two lanes each way, hard shoulders). The back adds the limit under each number."""
+    verso = params.get("verso", False)
+    limits = params.get("limits", ["80 km/h", "110 km/h", "130 km/h"])
+    H = 300
+    S = SVG(480, H + 80)
+    S.add(f'<rect x="0" y="0" width="480" height="{H}" fill="{GRASS}"/>')
+    S.add(f'<rect x="0" y="{H}" width="480" height="80" fill="#ffffff"/>')
+
+    def carriage(x, w, lanes=1, shoulder=None):
+        S.add(f'<rect x="{x}" y="0" width="{w}" height="{H}" fill="{ASPHALT}"/>')
+        S.add(f'<path d="M{x + 2},0 V{H} M{x + w - 2},0 V{H}" stroke="{MARK}" stroke-width="3"/>')
+        for i in range(1, lanes):
+            S.add(f'<path d="M{x + w * i / lanes},0 V{H}" stroke="{MARK}" stroke-width="3" stroke-dasharray="18 16"/>')
+        if shoulder:  # hard shoulder beyond the right-hand edge line
+            sx = x + w if shoulder == "right" else x - 16
+            S.add(f'<rect x="{sx}" y="0" width="16" height="{H}" fill="#6e6e6e"/>')
+
+    reserve = "#9cb07e"
+    carriage(40, 90, lanes=2)                                                      # 1
+    carriage(180, 46); S.add(f'<rect x="226" y="0" width="24" height="{H}" fill="{reserve}"/>'); carriage(250, 46)  # 2
+    carriage(356, 50, lanes=2, shoulder="left"); S.add(f'<rect x="406" y="0" width="14" height="{H}" fill="{reserve}"/>')
+    carriage(420, 50, lanes=2, shoulder="right")                                    # 3
+    uri = sign_data_uri("France road sign C207.svg", 160)
+    S.add(f'<rect x="386" y="18" width="64" height="64" rx="6" fill="#ffffff"/>')
+    S.add(f'<image href="{uri}" x="390" y="22" width="56" height="56"/>')
+    for i, cx in enumerate((85, 238, 413)):
+        _tag(S, cx, H + 30, str(i + 1), str(i + 1), verso, size=24)
+        if verso:
+            S.add(f'<text x="{cx}" y="{H + 64}" font-family="{FONT}" font-size="24" font-weight="700" text-anchor="middle" fill="#1c5fb8">{esc(limits[i])}</text>')
+    return str(S)
+
+
 REGISTRY.update({
+    "feu_modal": feu_modal, "feu_sur_panneau": feu_sur_panneau, "pmv": pmv, "plaque_orange": plaque_orange, "types_routes": types_routes,
     "support_panneaux": support_panneaux, "planche_signaux": planche_signaux,
     "vocab_route": vocab_route, "formes_panneaux": formes_panneaux,
     "balise_piquet": balise_piquet, "voyant_direction": voyant_direction,
