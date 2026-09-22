@@ -3,9 +3,11 @@
 python -m build.verify
 Tests a fresh import (content, media, study order, options preset) and a reimport of the same
 edition (no duplicate, review history kept), without touching a user's collection.
+Use --previous old.apkg to also verify an upgrade from an earlier package.
 """
 from __future__ import annotations
 
+import argparse
 import hashlib
 from importlib.metadata import version
 from pathlib import Path
@@ -17,7 +19,7 @@ from anki.import_export_pb2 import ImportAnkiPackageRequest, ImportAnkiPackageOp
 
 from build.build import OUT, load_all, curriculum, inline_md, tags_for, fait_html, feedback_html, media_name
 from build.learning import card_count, card_plan
-from build.models import MODEL_IDS, DECK_ROOT, notetypes, CSS
+from build.models import MODEL_IDS, DECK_ROOT, notetypes, CSS, SCHEMA_IDS
 
 
 def import_package(col, path):
@@ -25,6 +27,8 @@ def import_package(col, path):
         package_path=str(path.resolve()),
         options=ImportAnkiPackageOptions(with_deck_configs=True),
     ))
+    # The backend import can replace note types already cached by the Python API.
+    col.models._clear_cache()
     assert not result.log.conflicting, f'{len(result.log.conflicting)} notes en conflit : {path}'
 
 
@@ -60,6 +64,8 @@ def verify_content(col, data):
     for expected_model in notetypes():
         model = col.models.by_name(expected_model['name'])
         assert model['css'] == CSS
+        assert {f['name']: f['id'] for f in model['flds']} == SCHEMA_IDS[model['name']]['fields']
+        assert {t['name']: t['id'] for t in model['tmpls']} == SCHEMA_IDS[model['name']]['templates']
         for actual, template in zip(model['tmpls'], expected_model['templates'], strict=True):
             assert actual['qfmt'] == template['qfmt'] and actual['afmt'] == template['afmt']
     missing = []
@@ -110,7 +116,10 @@ def assert_history(col, cid, before):
     assert '{{c2::100 km/h}}' in card.note()['Texte'], 'contenu de la note absent après réimport'
 
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--previous', type=Path, help='vérifier aussi la mise à jour de ce paquet antérieur')
+    args = parser.parse_args(argv)
     data = load_all()
     full_path = OUT / 'Code-de-la-route-2026.apkg'
     checks = []
@@ -128,6 +137,30 @@ def main():
             checks.append('réimport de la même édition : aucun doublon ; historique et planification conservés')
         finally:
             col.close()
+        if args.previous:
+            col = Collection(str(Path(tmp) / 'mise-a-jour.anki2'))
+            try:
+                import_package(col, args.previous)
+                note_ids = {n.guid: n.id for n in (col.get_note(nid) for nid in col.find_notes(''))}
+                card_ids = {(col.get_note(c.nid).guid, c.ord): c.id
+                            for c in (col.get_card(cid) for cid in col.find_cards(''))}
+                cid, before = mark_reviewed(col)
+                import_package(col, full_path)
+                verify_content(col, data)
+                assert_history(col, cid, before)
+                for nid in col.find_notes(''):
+                    n = col.get_note(nid)
+                    if n.guid in note_ids:
+                        assert n.id == note_ids[n.guid], 'identité de note modifiée'
+                    for card in n.cards():
+                        key = (n.guid, card.ord)
+                        if key in card_ids:
+                            assert card.id == card_ids[key], 'identité de carte modifiée'
+                previous_hash = hashlib.sha256(args.previous.read_bytes()).hexdigest()
+                checks.append(f'mise à jour depuis SHA-256 `{previous_hash}` : identités des notes/cartes '
+                              'conservées, aucun doublon ; historique et planification du témoin conservés')
+            finally:
+                col.close()
     fingerprint = hashlib.sha256(full_path.read_bytes()).hexdigest()
     (OUT / 'VERIFICATION.md').write_text('# Vérification du paquet\n\n' +
         f'Import réel en collection temporaire avec la bibliothèque Anki {version("anki")}.\n\n' +

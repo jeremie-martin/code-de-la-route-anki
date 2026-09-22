@@ -89,7 +89,10 @@ class RenderCheckerTests(unittest.TestCase):
                     card = n.cards()[0]
                     page.set_content(page_html(card.question(), CSS))
                     self.assertNotIn('Source témoin', page.evaluate(MEASURE)['text'])
+                    page.set_content(page_html(card.question(), CSS, night=True))
+                    front = page.evaluate(MEASURE)['front']
                     page.set_content(page_html(card.answer(), CSS, night=True))
+                    self.assertEqual(page.evaluate(MEASURE)['front'], front, model['name'])
                     text = page.evaluate(MEASURE)['text']
                     self.assertNotIn('Source témoin', text)
                     for field in ('Reponse', 'Explication', 'Pourquoi', 'Signification',

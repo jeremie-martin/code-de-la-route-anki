@@ -22,14 +22,11 @@ from build.verify import import_package
 # Every card still gets all phone layout checks; this set only selects screenshots,
 # source-disclosure checks and the additional desktop pass. Replace obsolete samples.
 SAMPLES = {
-    'p-verif-tour-vehicule', 'p-retro-interieur', 'p-retro-exterieurs',
-    'p-ordre-installation', 'p-quitter-checklist', 'p-quitter-objets',
-    'p-pente-roues', 'p-pente-vitesse', 'p-enfants-seuls',
-    'aff-p-retro-interieur-nuit', 'aff-p-siege-verrouille', 'aff-p-boite-auto-position-p',
-    'ab4', 'a13a', 'conf-ab3a-ab4',
-    'conf-t1-dissuasion', 'l-vitesse-hors-agglo', 's-chargement-chiffres',
-    'scn-pd-je-tourne-gauche-face', 'scn-dep-cycliste-ligne-continue', 'a-pls',
-    'a-message-alerte', 'voyant-temperature', 'r-b26-chaines-complement',
+    'a13a', 'b9b', 'ab4', 'voyant-temperature', 'conf-a2a-a2b', 'conf-ab3a-ab4',
+    'l-vitesse-hors-agglo', 'triangle-distance', 's-chargement-chiffres',
+    'r-aquaplaning', 'l-arret-vs-stationnement', 'r-b26-chaines-complement',
+    'scn-stop-moi', 'scn-dep-cycliste-ligne-continue', 'aff-l-stop-rien-ne-vient',
+    'aff-p-siege-verrouille', 'a-pls', 'a-message-alerte',
 }
 
 # Kept separate so the checker itself can be tested against deliberately bad pages.
@@ -37,6 +34,13 @@ MEASURE = """() => {
   const visible = e => e.getClientRects().length > 0;
   const images = [...document.images];
   return {
+    front: [...document.querySelectorAll('.cdr-img, .cdr-img img, .cdr-pair, .cdr-pair img, .cdr-side, .cdr-q, .cdr-aff, .cdr-ctx, .cdr-hint')]
+      .filter(visible).map(e => {
+        const r = e.getBoundingClientRect(), s = getComputedStyle(e);
+        return {text: e.innerText, src: e.getAttribute('src'),
+          rect: [r.x, r.y, r.width, r.height],
+          style: [s.fontFamily, s.fontSize, s.fontWeight, s.lineHeight, s.letterSpacing, s.color]};
+      }),
     overflow: document.documentElement.scrollWidth > innerWidth + 1,
     broken: images.filter(e => !e.complete || !e.naturalWidth).map(e => e.src),
     units: [...document.querySelectorAll('.cdr-unit')].filter(visible).length,
@@ -79,6 +83,7 @@ def main():
     shots = 0
     metrics = []
     disclosures = 0
+    persistence_checks = 0
     try:
         import_package(col, OUT / 'Code-de-la-route-2026.apkg')
         present = {col.get_note(nid)['Id'] for nid in col.find_notes('')}
@@ -93,7 +98,7 @@ def main():
             page.route('http://**/*', lambda route: route.abort())
             page.route('https://**/*', lambda route: route.abort())
             page.goto(origin.as_uri())
-            for width, height, night in ((430, 932, False), (430, 932, True), (430, 740, True), (320, 640, True), (960, 900, False)):
+            for width, height, night in ((430, 932, False), (430, 932, True), (390, 844, True), (320, 640, True), (960, 900, False)):
                 page.set_viewport_size({'width': width, 'height': height})
                 checked = 0
                 config = f'{width}x{height}_{"dark" if night else "light"}'
@@ -112,6 +117,12 @@ def main():
                                             config=config, words=len(m['text'].split()), height=m['height'],
                                             primaryBottom=m['primaryBottom'], reviewBottom=m['reviewBottom']))
                         errors = []
+                        if side == 'q':
+                            front = m['front']
+                        else:
+                            persistence_checks += 1
+                            if m['front'] != front:
+                                errors.append('image ou texte du recto déplacé/modifié au verso')
                         if m['overflow']:
                             errors.append('débordement horizontal')
                         if m['broken']:
@@ -158,20 +169,23 @@ def main():
     if hashlib.sha256(package.read_bytes()).hexdigest() != digest:
         raise SystemExit('Le paquet a changé pendant le contrôle ; relancer après le build.')
     report = dict(package_sha256=digest, configurations=results, failures=failures,
-                  scrolling=scrolling, screenshots=shots, disclosure_checks=disclosures)
+                  scrolling=scrolling, screenshots=shots, disclosure_checks=disclosures,
+                  front_persistence_checks=persistence_checks)
     (target / "card-metrics.json").write_text(json.dumps(metrics, ensure_ascii=False, indent=2))
     (target / 'measurements.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
     lines = ['# Vérification du rendu navigateur\n',
              f'Paquet complet SHA-256 : `{digest}`.\n',
              'Paquet importé dans une collection temporaire ; contenus et gabarits rendus par Anki, '
              'puis chargés dans Chromium local sans réseau externe. '
-             'Toutes les cartes, recto et verso, à 430 × 932 en clair et sombre, à 430 × 740 et 320 × 640 en sombre ; '
+             'Toutes les cartes, recto et verso, à 430 × 932 en clair et sombre, à 390 × 844 et 320 × 640 en sombre ; '
              'échantillon à 960 px.\n',
              '| Largeur × hauteur | Mode | Faces contrôlées |', '|---|---|---|']
     for row in results:
         lines.append(f"| {row['width']} × {row['height']} | {'sombre' if row['night'] else 'clair'} | {row['faces']} |")
     lines += [f'\n**{len(failures)} échec(s)** : débordement horizontal, média absent, rappel mal isolé, '
-              'gabarit non résolu ou repère ouvert par défaut.\n',
+              'gabarit non résolu, recto déplacé/modifié au verso ou repère ouvert par défaut.\n',
+              f'{persistence_checks} comparaisons recto/verso : géométrie des images, textes et typographie des prompts '
+              '(le texte cloze se révèle en place et peut naturellement changer de longueur).\n',
               f'{len(scrolling)} faces/configurations nécessitent un défilement vertical ; '
               'ce défilement est admis. Captures en pleine hauteur et captures du seul écran (`_viewport`).\n',
               f'{disclosures} ouvertures et fermetures du volet testées sur l’échantillon.\n',

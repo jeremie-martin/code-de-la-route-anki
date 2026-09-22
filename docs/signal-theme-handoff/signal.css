@@ -1,0 +1,80 @@
+
+.card { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 19px; line-height: 1.5; text-align: left; color: #eef3f4; background: #0c2530; padding: 76px 24px 46px; -webkit-text-size-adjust: 100%; }
+.cdr-wrap { max-width: 640px; margin: 0 auto; overflow-wrap: anywhere; }
+.cdr-wrap::before { content: "RÉVISION"; display: block; margin-bottom: 22px; color: #f4c63d; font-size: 10px; font-weight: 800; letter-spacing: .2em; }
+.cdr-img { text-align: center; margin: 0 -4px 24px; padding: 18px; border-radius: 14px; background: #f5f7f4; }
+.cdr-img img { display: inline-block; max-width: 100%; max-height: 38vh; width: auto; height: auto; border-radius: 7px; }
+.cdr-img.sign img { max-height: 27vh; max-width: 235px; }
+.cdr-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; text-align: center; }.cdr-pair > div { padding: 14px 8px; border-radius: 12px; background: #f5f7f4; }
+.cdr-pair img { max-width: 100%; max-height: 22vh; }.cdr-side { display: block; margin-bottom: 8px; color: #18323d; font-size: 12px; font-weight: 800; }
+.cdr-q, .cdr-aff, .cdr-fait { margin: 14px 0; font-size: 25px; font-weight: 680; line-height: 1.34; letter-spacing: -.02em; }
+.cdr-aff::before { content: "« "; }.cdr-aff::after { content: " »"; }.cdr-ctx, .cdr-hint { margin: 8px 0; color: #b9c8cd; font-size: 16px; }.cdr-hint { color: #f4c63d; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+hr#answer { height: 4px; width: 42px; margin: 28px 0; border: 0; border-radius: 3px; background: #f4c63d; }
+.cdr-a,.cdr-verdict { margin: 0 0 18px; color: #f4c63d; font-size: 25px; font-weight: 750; line-height: 1.38; }.cdr-verdict { text-transform: uppercase; letter-spacing: .06em; }.cdr-verdict.faux { color: #ff9685; }
+.cdr-box { margin: 14px 0; padding: 15px 16px; border-radius: 9px; color: #dbe4e6; background: #14343f; font-size: 16px; }.cdr-box.piege { border-left: 4px solid #f4c63d; }.cdr-box b { color: #fff; }.cloze { color: #f4c63d; font-weight: 800; }
+.cdr-reference { margin-top: 22px; border-top: 1px solid #31505b; color: #aabcc1; font-size: 13px; }.cdr-reference summary { padding: 15px 0; cursor: pointer; }.cdr-reference a { color: #f4c63d; overflow-wrap: anywhere; }.cdr-reference p { margin: 8px 0 14px; }
+.nightMode.card { color: #eef3f4; background: #081a22; }
+
+/* Mobile reading refinements */
+.card { padding: 28px 24px 36px; }
+.cdr-wrap { overflow-wrap: break-word; }
+.cdr-pair { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+.cdr-pair > div { min-width: 0; }
+.cdr-pair img { width: auto; height: auto; }
+.cdr-box { font-size: 18px; line-height: 1.55; }
+.cdr-reference { font-size: 15px; line-height: 1.5; }
+.cdr-reference summary { min-height: 44px; }
+.cdr-reference a { overflow-wrap: anywhere; }
+.cdr-reference summary:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.nightMode .cdr-ctx, .nightMode .cdr-hint, .nightMode .cdr-reference { color: #bdc8c2; }
+.nightMode .cdr-reference a { color: #a9cfef; }
+.nightMode .cdr-verdict:not(.faux) { color: #a5dec6; }
+.nightMode .cdr-box.piege { color: #ece4d7; }
+.nightMode .cdr-box.piege b { color: #efc08d; }
+
+.cdr-wrap::before { display: none; }
+.card:not(.nightMode) { background: #f3f6f7; color: #20343c; }
+.card:not(.nightMode) .cdr-q,.card:not(.nightMode) .cdr-aff,.card:not(.nightMode) .cdr-fait { color: #20343c; }
+.card:not(.nightMode) .cdr-a,.card:not(.nightMode) .cloze,.card:not(.nightMode) .cdr-verdict { color: #17566e; }
+.card:not(.nightMode) .cdr-verdict.faux { color: #a33c30; }
+.card:not(.nightMode) .cdr-box { background: #e3ebed; color: #253b44; }
+.card:not(.nightMode) .cdr-box b { color: #20343c; }
+.card:not(.nightMode) .cdr-ctx,.card:not(.nightMode) .cdr-hint,.card:not(.nightMode) .cdr-reference { color: #536b75; }
+.card:not(.nightMode) .cdr-reference a { color: #18536c; }
+
+/* Consistent phone typography and compact, unboxed feedback */
+.card { padding: 20px 20px 28px; font-size: 19px; line-height: 1.45; }
+.card .cdr-wrap .cdr-q, .card .cdr-wrap .cdr-aff,
+.card .cdr-wrap .cdr-fait { font-size: 22px; line-height: 1.4; margin: 10px 0; padding: 0; }
+.card .cdr-wrap .cdr-ctx  { font-size: 19px; line-height: 1.45; }
+.card .cdr-wrap .cdr-a, .card .cdr-wrap .cdr-verdict {
+  font-size: 21px; line-height: 1.4; font-weight: 650; margin: 12px 0 10px;
+  padding: 0; border: 0; border-radius: 0; background: transparent;
+}
+.card .cdr-wrap .cdr-box {
+  font-size: 19px; line-height: 1.45; margin: 10px 0; padding: 0;
+  border: 0; border-radius: 0; background: transparent; box-shadow: none;
+}
+.card .cdr-wrap .cdr-box.piege { border-left: 2px solid #ab8251; padding-left: 10px; }
+.card .cdr-wrap .cdr-box b { font-size: 1em; }
+.card .cdr-wrap .cdr-img { padding: 0; margin: 0 auto 14px; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.card .cdr-wrap .cdr-pair > div { padding: 0; border: 0; background: transparent; box-shadow: none; }
+.card .cdr-wrap .cdr-img img { box-shadow: none; }
+.card .cdr-wrap hr#answer { margin: 16px 0; }
+.card .cdr-wrap .cdr-reference { margin-top: 16px; }
+.card .cdr-wrap .cdr-hint { font-size: 16px; }
+
+.card .cdr-wrap { border:0; border-radius:0; box-shadow:none; background:transparent; padding:0; }
+.card .cdr-wrap::before { content:none; }
+.card .cdr-wrap .cdr-reference summary { border:0; border-radius:0; background:transparent; padding:12px 0; }
+.card .cdr-wrap .cdr-q,.card .cdr-wrap .cdr-aff { font-weight:700; }
+
+.card .cdr-wrap .cloze { font-weight:800; text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:3px; }
+
+.card.card .cdr-wrap .cdr-reference { border:0; margin-top:4px; padding:0; }
+.card.card .cdr-wrap .cdr-reference summary { min-height:44px; box-sizing:border-box; padding:8px 0; }
+
+.cdr-comparisons { display: flex; flex-wrap: wrap; gap: 14px; margin: 14px 0; }
+.cdr-comparisons figure { flex: 1 1 125px; max-width: 240px; margin: 0; text-align: center; }
+.cdr-comparisons img { display: block; width: auto; height: auto; max-width: 100%; max-height: 110px; margin: 0 auto 8px; }
+.cdr-comparisons figcaption { font-size: 16px; line-height: 1.4; }

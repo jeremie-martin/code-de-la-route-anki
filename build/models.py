@@ -2,10 +2,11 @@
 
 Stable ids: the backend assigns fresh ids on creation, so build.py remaps them
 to these constants in SQLite before export (see build.py:remap_ids), and note
-GUIDs derive from the note id. Reimporting the same edition therefore updates
-notes in place instead of duplicating them.
+GUIDs derive from the note id. Field/template identities are also fixed in
+schema_ids.json so a rebuilt edition can update in place without schema conflicts.
 """
 
+import json
 from pathlib import Path
 
 MODEL_IDS = {
@@ -16,6 +17,10 @@ MODEL_IDS = {
     "CDR Scenario": 1758400000005,
     "CDR Affirmation": 1758400000006,
 }
+# Field/template identities from the published package at 67618d8. Anki uses these
+# as well as model IDs when updating a note type; rebuilding must not regenerate them.
+SCHEMA_IDS = json.loads(Path(__file__).with_name("schema_ids.json").read_text(encoding="utf-8"))
+
 DECK_CONFIG_ID = 1758400002000  # options preset shipped with the deck (curriculum order, siblings buried)
 
 DECK_ROOT = "Code de la route 2026"
@@ -107,6 +112,7 @@ def notetypes() -> list[dict]:
                 "qfmt": f'<div class="cdr-wrap"><div class="cdr-img sign">{{{{Image}}}}</div><div class="cdr-q">{{{{Question}}}}</div></div>',
                 "afmt": (
                     '<div class="cdr-wrap cdr-back">' + '<div class="cdr-img sign">{{Image}}</div>'
+                    '<div class="cdr-q">{{Question}}</div>'
                     '<hr id=answer>'
                     '<div class="cdr-a">{{Signification}}</div>'
                     '{{#ConduiteATenir}}<div class="cdr-box conduite"><b>En pratique.</b> {{ConduiteATenir}}</div>{{/ConduiteATenir}}'
@@ -129,6 +135,7 @@ def notetypes() -> list[dict]:
                 "afmt": (
                     '<div class="cdr-wrap cdr-back">' +
                     '<div class="cdr-pair"><div><span class="cdr-side">A</span>{{ImageA}}</div><div><span class="cdr-side">B</span>{{ImageB}}</div></div>'
+                    '<div class="cdr-q">Quelle est la différence ?</div>'
                     '<hr id=answer>'
                     '<div class="cdr-box cdr-difference">{{Difference}}</div>'
                     + reference('<p>A : {{NomA}}<br>B : {{NomB}}</p>') + '</div>'
@@ -214,6 +221,7 @@ def notetypes() -> list[dict]:
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
                     '{{#Contexte}}<div class="cdr-ctx">{{Contexte}}</div>{{/Contexte}}'
                     '<div class="cdr-aff">{{Affirmation}}</div>'
+                    '<div class="cdr-hint">Vrai ou faux ? Pourquoi ?</div>'
                     '<hr id=answer>'
                     '<div class="cdr-verdict {{Verdict}}">{{Verdict}}</div>'
                     '<div class="cdr-box">{{Pourquoi}}</div>'

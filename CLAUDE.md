@@ -34,5 +34,6 @@ python build/yamlfix.py data/*/*.yaml  # quote les valeurs YAML contenant ': '
   juger la carte, sans quota ni longueur universelle. `multi_ok` / `dedup_ok` documentent une exception ;
   `long_ok` est sans effet.
 - Les images générées sont invalidées automatiquement quand `diagrams.py` ou `gen_images.py` change.
-- Pas de migration entre éditions : les GUID dérivent des ids, ce qui suffit au réimport d’une même édition.
+- GUID dérivés des ids ; identifiants de champs/gabarits fixes dans `build/schema_ids.json` (ne pas les
+  régénérer). `build.verify --previous ancien.apkg` contrôle une mise à jour ; pas de migration entre éditions.
 - Pas d’agents en cascade : au plus deux sous-agents à la fois, sur Opus, avec « ne pas lancer de sous-agents ».

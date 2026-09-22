@@ -1,54 +1,55 @@
-/* Essential: quiet typography, unboxed feedback, compact phone layout. */
+/* Signal — consolidated from docs/signal-theme-handoff/signal.css.
+   Front content keeps its geometry and typography when the answer is revealed. */
 .card {
+  --paper: #f3f6f7; --text: #20343c; --answer: #17566e; --false: #a33c30;
+  --body: #253b44; --muted: #536b75; --link: #18536c; --strong: #20343c;
+  --true: #17566e; --trap: #253b44; --trap-strong: #20343c; --side: #18323d;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 19px; line-height: 1.45; text-align: left;
-  color: #202622; background: #f8f9f7; padding: 18px 18px 24px;
-  -webkit-text-size-adjust: 100%;
+  color: var(--text); background: var(--paper);
+  margin: 0; padding: 20px 20px 28px; box-sizing: border-box; min-height: 100vh;
+  -webkit-text-size-adjust: 100%; text-size-adjust: 100%;
+}
+:is(.nightMode, .night_mode).card, :is(.nightMode, .night_mode) .card {
+  --paper: #081a22; --text: #eef3f4; --answer: #f4c63d; --false: #ff9685;
+  --body: #dbe4e6; --muted: #bdc8c2; --link: #a9cfef; --strong: #fff;
+  --true: #a5dec6; --trap: #ece4d7; --trap-strong: #efc08d; --side: #bdc8c2;
 }
 .cdr-wrap { max-width: 640px; margin: 0 auto; overflow-wrap: break-word; }
 .cdr-img { text-align: center; margin: 0 auto 14px; }
-.cdr-img img { display: inline-block; max-width: 100%; max-height: 42vh; width: auto; height: auto; border-radius: 8px; }
-.cdr-img.sign img { max-height: 31vh; max-width: min(100%, 255px); }
-.cdr-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; text-align: center; }
+.cdr-img img { display: inline-block; max-width: 100%; max-height: 38vh; width: auto; height: auto; border-radius: 7px; }
+.cdr-img.sign img { max-height: 27vh; max-width: min(100%, 235px); }
+.cdr-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; text-align: center; }
 .cdr-pair > div { min-width: 0; }
-.cdr-pair img { max-width: 100%; max-height: 26vh; width: auto; height: auto; }
-.cdr-side { display: block; margin-bottom: 6px; color: #69726c; font-size: 16px; font-weight: 650; }
-.cdr-q, .cdr-aff, .cdr-fait { margin: 10px 0; font-size: 21px; font-weight: 650; line-height: 1.4; }
+.cdr-pair img { max-width: 100%; max-height: 22vh; width: auto; height: auto; }
+.cdr-side { display: block; margin-bottom: 8px; color: var(--side); font-size: 12px; font-weight: 800; }
+.cdr-q, .cdr-aff, .cdr-fait { margin: 10px 0; font-size: 22px; font-weight: 680; line-height: 1.4; letter-spacing: -.02em; }
+.cdr-q, .cdr-aff { font-weight: 700; }
 .cdr-aff::before { content: "« "; }
 .cdr-aff::after { content: " »"; }
-.cdr-ctx, .cdr-hint { margin: 6px 0; color: #626b65; font-size: 18px; }
-.cdr-hint { font-size: 16px; }
-hr#answer { margin: 14px 0; border: 0; border-top: 1px solid #cdd2ce; }
-.cdr-back .cdr-q, .cdr-back .cdr-aff { color: #626b65; font-size: 18px; font-weight: 430; line-height: 1.45; }
-.cdr-a, .cdr-verdict { margin: 10px 0 8px; color: #3c566c; font-size: 20px; font-weight: 650; line-height: 1.4; }
-.cdr-verdict { text-transform: capitalize; color: #28634b; }
-.cdr-verdict.faux { color: #a63c3c; }
-.cdr-box { margin: 10px 0; font-size: 18px; line-height: 1.45; }
-.cdr-box.piege { border-left: 2px solid #ab8251; padding-left: 10px; }
-.cdr-box b { font-weight: 700; }
-.cloze { color: #3c566c; font-weight: 800; }
-.cdr-reference { margin-top: 12px; border-top: 1px solid #d9ddda; color: #68706a; font-size: 15px; line-height: 1.5; }
-.cdr-reference summary { box-sizing: border-box; min-height: 44px; padding: 12px 0; cursor: pointer; }
+.cdr-ctx, .cdr-hint { margin: 8px 0; color: var(--muted); }
+.cdr-ctx { font-size: 19px; line-height: 1.45; }
+.cdr-hint { font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+hr#answer { height: 4px; width: 42px; margin: 16px 0; border: 0; border-radius: 3px; background: #f4c63d; }
+.cdr-a, .cdr-verdict { margin: 12px 0 10px; color: var(--answer); font-size: 21px; font-weight: 650; line-height: 1.4; }
+.cdr-verdict { color: var(--true); text-transform: uppercase; letter-spacing: .06em; }
+.cdr-verdict.faux { color: var(--false); }
+.cdr-box { margin: 10px 0; color: var(--body); font-size: 19px; line-height: 1.45; }
+.cdr-box.piege { border-left: 2px solid #ab8251; padding-left: 10px; color: var(--trap); }
+.cdr-box b { color: var(--strong); font-size: 1em; }
+.cdr-box.piege b { color: var(--trap-strong); }
+.cloze { color: var(--answer); font-weight: 800; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.cdr-reference { margin-top: 4px; color: var(--muted); font-size: 15px; line-height: 1.5; }
+.cdr-reference summary { min-height: 44px; box-sizing: border-box; padding: 8px 0; cursor: pointer; }
 .cdr-reference summary:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
-.cdr-reference p { margin: 7px 0 12px; }
-.cdr-reference a { color: #31644f; overflow-wrap: anywhere; }
+.cdr-reference a { color: var(--link); overflow-wrap: anywhere; }
+.cdr-reference p { margin: 8px 0 14px; }
+/* Production helpers not present in the lab snapshot. */
 .cdr-reference h3 { font-size: 16px; margin: 16px 0 8px; }
 .cdr-code { font-family: ui-monospace, Menlo, Consolas, monospace; }
 ul.cdr-list { padding-left: 24px; }
-/* Supporting examples appear only on the answer, with their meaning directly beside them. */
+/* Supporting examples remain on the answer, with captions and responsive wrapping. */
 .cdr-comparisons { display: flex; flex-wrap: wrap; gap: 14px; margin: 14px 0; }
 .cdr-comparisons figure { flex: 1 1 125px; max-width: 240px; margin: 0; text-align: center; }
 .cdr-comparisons img { display: block; width: auto; height: auto; max-width: 100%; max-height: 110px; margin: 0 auto 8px; }
 .cdr-comparisons figcaption { font-size: 16px; line-height: 1.4; }
-:is(.nightMode, .night_mode).card, :is(.nightMode, .night_mode) .card { color: #ebeeeb; background: #1b1e1c; }
-:is(.nightMode, .night_mode) :is(.cdr-q, .cdr-aff, .cdr-fait) { color: #f1f3f0; }
-:is(.nightMode, .night_mode) :is(.cdr-a, .cloze) { color: #b0c8dc; }
-:is(.nightMode, .night_mode) .cdr-verdict { color: #a5dec6; }
-:is(.nightMode, .night_mode) .cdr-verdict.faux { color: #f4a0a0; }
-:is(.nightMode, .night_mode) :is(.cdr-ctx, .cdr-hint, .cdr-side, .cdr-reference),
-:is(.nightMode, .night_mode) .cdr-back :is(.cdr-q, .cdr-aff) { color: #bdc8c2; }
-:is(.nightMode, .night_mode) :is(hr#answer, .cdr-reference) { border-color: #424743; }
-:is(.nightMode, .night_mode) .cdr-reference a { color: #a9cfef; }
-:is(.nightMode, .night_mode) .cdr-box.piege { color: #ece4d7; border-color: #efc08d; }
-:is(.nightMode, .night_mode) .cdr-box.piege b { color: #efc08d; }
-@media (max-width: 350px) { .card { padding: 14px 12px 24px; } }

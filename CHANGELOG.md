@@ -1,3 +1,20 @@
+# Thème Signal — 22 septembre 2026
+
+- Application du Signal approuvé dans `docs/signal-theme-handoff/` : CSS consolidé et comparé au rendu de
+  référence, réponses de 21 px, texte de 19 px, séparateur jaune court, feedback sans panneaux remplis,
+  sources compactes et fermées. Alias sombres indépendants et contraste des labels A/B corrigés.
+- Le verso conserve les images et prompts du recto ; les trois prompts manquants sont restaurés dans les
+  gabarits natifs. Clozes, contenu, médias, objectifs et ordre d’apprentissage conservés.
+- Correction d’un défaut de reconstruction découvert lors de l’essai de mise à jour : les identifiants des
+  champs et modèles de cartes étaient aléatoires. Ceux du paquet publié `67618d8` sont désormais fixes ;
+  `build.verify --previous` vérifie aussi la mise à jour, sans toucher à une collection utilisateur.
+- Les captures utilisent un viewport Chromium exact, sans artefact de taille de fenêtre. Le contrôle complet
+  compare désormais images, prompts et typographie entre les faces ; largeurs de téléphone 320, 390 et 430 px.
+- 24 tests réussis ; 9 042 faces/configurations et 4 521 comparaisons recto/verso sans échec. Import neuf,
+  réimport et mise à jour du paquet précédent réussis, sans doublon ni perte de l’historique témoin.
+  Inspection visuelle des six types en clair/sombre, avec exemples étroits et images de comparaison.
+  Rapports liés au paquet livré (1 051 notes, 1 125 cartes) par SHA-256 ; AnkiMobile/AnkiDroid non testés.
+
 # Installation et stationnement : décisions et conditions — 22 septembre 2026
 
 - Douze notes améliorées : réglage des rétroviseurs après déplacement du siège, verrouillage du siège,

@@ -1,6 +1,7 @@
 """Render sample cards to PNG (question + answer side) with headless Chrome for visual QA.
 
 Usage: .venv/bin/python -m build.preview [--ids id1,id2] [--n 12] [--night] [--out DIR]
+Install requirements-qa.txt; uses the system Chromium at the exact requested CSS viewport.
 Output: <out>/<id>_c<ord>_q.png, _a.png and <out>/sheet.png (default out/preview/).
 The build collection is copied before being opened, so several previews can run at once.
 """
@@ -9,7 +10,6 @@ from __future__ import annotations
 import argparse
 import random
 import shutil
-import subprocess
 import sys
 import tempfile
 from pathlib import Path
@@ -45,6 +45,8 @@ def main(argv=None):
     args = ap.parse_args(argv)
     if not CHROME:
         sys.exit("google-chrome / chromium introuvable dans le PATH (nécessaire pour les captures)")
+    from playwright.sync_api import sync_playwright
+
     out_dir = Path(args.out).resolve()
     tmp = Path(tempfile.mkdtemp(prefix="cdr-preview-"))
     shutil.copy(OUT / "_build" / "collection.anki2", tmp / "collection.anki2")
@@ -63,24 +65,28 @@ def main(argv=None):
     # media must be reachable relative to the html file
     (out_dir / "media").symlink_to(MEDIA)
     shots = []
-    for cid in cids:
-        card = col.get_card(cid)
-        note = card.note()
-        ident = note["Id"] if "Id" in note else str(cid)
-        css = card.note_type()["css"]
-        cls = "nightMode night_mode" if args.night else ""
-        for side, html_ in (("q", card.question()), ("a", card.answer())):
-            html_ = html_.replace('src="cdr_', 'src="media/cdr_')
-            # Chrome's desktop headless window has a minimum layout width.
-            # Constrain the document too so narrow captures test mobile wrapping.
-            page = PAGE.format(css=css, body=html_, cls=cls, width=args.width)
-            hp = out_dir / f"{ident}_c{card.ord}_{side}.html"
-            hp.write_text(page, encoding="utf-8")
-            png = out_dir / f"{ident}_c{card.ord}_{side}.png"
-            subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--no-sandbox",
-                            f"--window-size={args.width},{args.height}", f"--screenshot={png}", str(hp)],
-                           check=True, capture_output=True)
-            shots.append(png)
+    # Explicit CSS viewport dimensions avoid Chrome window chrome/minimum-width artifacts.
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch(executable_path=CHROME, args=["--no-sandbox"])
+        viewport = browser.new_page(viewport={"width": args.width, "height": args.height})
+        try:
+            for cid in cids:
+                card = col.get_card(cid)
+                note = card.note()
+                ident = note["Id"] if "Id" in note else str(cid)
+                css = card.note_type()["css"]
+                cls = "nightMode night_mode" if args.night else ""
+                for side, html_ in (("q", card.question()), ("a", card.answer())):
+                    html_ = html_.replace('src="cdr_', 'src="media/cdr_')
+                    page = PAGE.format(css=css, body=html_, cls=cls, width=args.width)
+                    hp = out_dir / f"{ident}_c{card.ord}_{side}.html"
+                    hp.write_text(page, encoding="utf-8")
+                    png = out_dir / f"{ident}_c{card.ord}_{side}.png"
+                    viewport.goto(hp.as_uri(), wait_until="load")
+                    viewport.screenshot(path=str(png))
+                    shots.append(png)
+        finally:
+            browser.close()
     col.close()
     shutil.rmtree(tmp, ignore_errors=True)
     # contact sheet

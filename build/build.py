@@ -593,9 +593,12 @@ def build_collection(data, names, out_apkg: Path):
             m["type"] = MODEL_CLOZE
         m["flds"], m["tmpls"] = [], []
         for f in nt["fields"]:
-            mm.add_field(m, mm.new_field(f))
+            field = mm.new_field(f)
+            field["id"] = M.SCHEMA_IDS[nt["name"]]["fields"][f]
+            mm.add_field(m, field)
         for t in nt["templates"]:
             tm = mm.new_template(t["name"])
+            tm["id"] = M.SCHEMA_IDS[nt["name"]]["templates"][t["name"]]
             tm["qfmt"], tm["afmt"] = t["qfmt"], t["afmt"]
             mm.add_template(m, tm)
         m["css"] = M.CSS

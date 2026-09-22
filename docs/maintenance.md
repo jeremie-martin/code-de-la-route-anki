@@ -134,8 +134,11 @@ Le build valide la référence et incorpore l’image au verso, près de l’exp
 reconnaissance). Aucun nouveau téléchargement ni carte supplémentaire. L’image principale reste seule au
 recto ; une comparaison au verso n’exige pas d’avoir étudié l’autre signal. Pour tester la distinction,
 utiliser une note `confusions`. Éviter les exemples supplémentaires qui ne changent pas la compréhension.
-Le style partagé est dans `build/cards.css`, adapté du fichier de référence `essential.css` ; reconstruire
-le paquet après une modification du style.
+Le thème **Signal** est dans `build/cards.css`, consolidé depuis le
+[handoff approuvé](signal-theme-handoff/README.md). Ce dossier reste une référence visuelle historique,
+pas une source de contenu à réimporter. Les tests comparent le rendu au CSS exporté et vérifient séparément
+`.nightMode` et `.night_mode`, sur la carte ou un ancêtre. Reconstruire le paquet après toute modification.
+Le verso prolonge le recto : mêmes images, prompts et typographie ; le cloze se révèle en place.
 
 Sous-thèmes par thème (l’ordre est aussi celui de `SUBTHEME_ORDER` dans `build/build.py` ; un sous-thème
 inconnu est signalé par un avertissement et trié en dernier) :
@@ -168,8 +171,10 @@ et `dedup_ok` documentent les exceptions utiles. La longueur des réponses se ju
 sans seuil automatique ; les anciens champs `long_ok` sont sans effet.
 
 `python -m unittest discover -s tests` couvre l’ordre, les objectifs, les gabarits, le solveur et le
-rendu des clozes indépendantes. `python -m build.verify` importe le paquet dans une collection temporaire
-(contenu, médias, ordre des nouvelles cartes, préréglage) puis le réimporte (aucun doublon, historique conservé).
+rendu des clozes indépendantes. Avec `requirements-qa.txt`, les tests contrôlent aussi la conformité au thème
+Signal. `python -m build.verify` importe le paquet dans une collection temporaire (contenu, médias, ordre,
+préréglage, identifiants de schéma) puis le réimporte. Pour vérifier une mise à jour, conserver l’ancien
+paquet avant le build et le passer à `--previous` : identités et historique témoin sont alors contrôlés.
 
 ## Ordre d’introduction
 
@@ -188,11 +193,11 @@ quand les signaux dont ils dépendent sont vus (`SCENARIO_GATES`). Toutes les no
 source .venv/bin/activate
 python -m build.build --check            # erreurs (bloquantes) + avertissements (à juger)
 python -m build.build [--media] [--force-media]   # médias puis paquet et rapports ; --media s'arrête après les médias
-python -m build.verify                   # import réel + réimport dans une collection temporaire
+python -m build.verify [--previous ancien.apkg] # import, réimport ; mise à jour depuis un paquet conservé
 python -m unittest discover -s tests
 python build/import_signs.py             # régénère data/reconnaissance/* (sauf voyants.yaml)
 python build/yamlfix.py data/*/*.yaml    # quote les valeurs contenant ': '
-python -m build.preview --ids id1,id2 [--night] [--width 430] [--out dossier]   # captures (Chrome headless ;
+python -m build.preview --ids id1,id2 [--night] [--width 430] [--out dossier]   # captures (Chromium via requirements-qa.txt ;
                                          # nécessite un build préalable ; --out est VIDÉ avant les captures)
 python -m build.render_check             # toutes les faces, quatre tailles d'écran (~10 min, requirements-qa.txt)
 python -m build.dedup [--threshold 0.62] # paires de notes textuellement proches (décision éditoriale, rien n'est modifié)
@@ -229,14 +234,16 @@ python build/qa_sheet.py                 # planches image + code + nom par fichi
    une révision large, `python -m build.render_check` contrôle toutes les faces et écrit `out/RENDU.md` avec
    l’empreinte du paquet contrôlé : le lancer en dernier, après le build définitif. Un identifiant de capture
    absent du paquet fait échouer le contrôle. `SAMPLES` choisit les captures, le volet des sources et le complément
-   sur grand écran ; toutes les cartes sont mesurées sur téléphone. Garder des formes représentatives et les cas
+   sur grand écran ; toutes les cartes sont mesurées sur téléphone, avec comparaison de la géométrie et de la
+   typographie du recto avant/après révélation. Garder des formes représentatives et les cas
    modifiés, en remplaçant les anciens échantillons. Les mesures ne lisent pas le sens des images ni les petits
    textes incorporés : les inspecter.
 6. Ajouter une ligne à [CHANGELOG](../CHANGELOG.md) et mettre à jour les effectifs du README.
 
 ## Identifiants et réimport
 
-Les identifiants des types de notes et des decks sont fixes (`build/models.py`) et les GUID dérivent de
-l’`id` de la note : réimporter une nouvelle version de la même édition met les notes à jour sans doublon et
+Les identifiants des types de notes et des decks sont fixes (`build/models.py`), ceux des champs et modèles
+de cartes sont conservés dans `build/schema_ids.json` (issus du paquet `67618d8`). Ne pas les régénérer :
+Anki les utilise pour reconnaître une mise à jour de schéma. Les GUID dérivent de l’`id` de la note : réimporter une nouvelle version de la même édition met les notes à jour sans doublon et
 conserve l’historique de révision. Il n’y a pas de migration entre éditions : renommer un `id`, renuméroter un
 cloze ou changer la structure des champs crée de nouvelles cartes à l’import, à faire en connaissance de cause.
