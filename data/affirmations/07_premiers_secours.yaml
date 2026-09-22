@@ -50,6 +50,9 @@
   theme: A
   sous_theme: proteger
   source: "Code de la route, art. R416-19 ; arrêté du 30 septembre 2008 ; Ornikar, Protéger la zone"
+  illustration:
+    gen: autoroute_attente
+    legende: Sur autoroute, l’abri derrière la glissière passe avant le triangle.
 - id: aff-a-18-secours-personne
   contexte: Un conducteur est coincé dans sa voiture après un choc ; il n'y a pas d'incendie.
   affirmation: Le 18 est un bon numéro à composer dans cette situation.

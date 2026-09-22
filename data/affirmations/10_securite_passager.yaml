@@ -80,7 +80,7 @@
   contexte: Quatre passagers et un coffre plein pour partir en vacances.
   affirmation: Ma distance d'arrêt sera plus longue qu'à vide.
   verdict: vrai
-  pourquoi: 'La masse en mouvement augmente l''énergie à dissiper : le freinage s''allonge et la tenue de route se dégrade. On augmente la pression des pneus, on abaisse le faisceau des feux et on allonge les intervalles.'
+  pourquoi: 'La masse en mouvement augmente l’énergie à dissiper : le freinage s’allonge et la tenue de route se dégrade. On applique la pression prévue en charge, on abaisse le faisceau des feux et on allonge les intervalles.'
   theme: S
   sous_theme: chargement
   source: "securite-routiere.gouv.fr, Équipement de la voiture ; Stych, Chargement"

@@ -42,7 +42,7 @@
   question: Je passe ce panneau ; un piéton marche au milieu de la chaussée devant moi. Que fais-je ?
   reponse: 'Je le suis à son allure, sans klaxonner : en zone de rencontre (20 km/h maximum), les piétons circulent sur toute
     la chaussée et ont priorité sur les véhicules.'
-  explication: Dans l’aire piétonne, les véhicules autorisés pour la desserte roulent à l’allure du pas. Dans une zone 30, les priorités habituelles s’appliquent et les piétons utilisent les passages lorsqu’ils y sont tenus. Le double sens cyclable est la règle par défaut dans ces zones.
+  explication: Dans l’aire piétonne, les véhicules autorisés pour la desserte roulent à l’allure du pas. Dans une zone 30, les priorités habituelles s’appliquent et les piétons utilisent les passages lorsqu’ils y sont tenus. Le double sens cyclable est la règle par défaut en zone 30 et en zone de rencontre.
   theme: U
   sous_theme: pietons
   source: Code de la route, art. R110-2 et R415-11
@@ -82,7 +82,7 @@
   source: Code de la route, art. R431-7 et R414-4
 - id: u-cycliste-tourner-droite
   image: {gen: cycliste_tourne_droite, width: 960}
-  question: Je conduis la voiture bleue et veux tourner à droite. Le cycliste arrive à ma hauteur et poursuit tout droit sur la piste ; aucun feu ni panneau ne règle la priorité. Qui doit attendre ?
+  question: Je veux tourner à droite. Le cycliste arrive à ma hauteur et poursuit tout droit sur la piste ; aucun feu ni panneau ne règle la priorité. Qui doit attendre ?
   reponse: "Moi. Je laisse passer le cycliste avant de tourner : je vais couper la piste sur laquelle il circule."
   explication: Je contrôle le rétroviseur droit et l’angle mort avant de tourner. Le cycliste arrive à ma hauteur, mais cela ne me donne pas priorité pour traverser sa piste. La flèche près de ma voiture indique mon intention, pas une priorité.
   theme: U
@@ -99,7 +99,7 @@
   sous_theme: cyclistes
   source: "Code de la route, art. R412-10 et R414-6 ; En Voiture Simone, Les vélos"
 - id: u-double-sens-cyclable
-  question: Ce panneau est placé à l’autre entrée de la rue où je circule. Quel usager puis-je rencontrer en face ?
+  question: Ces panneaux sont placés à l’autre entrée de la rue où je circule. Quel usager puis-je rencontrer en face ?
   reponse: 'Des cyclistes qui arrivent en face dans cette rue à sens unique (double-sens cyclable) : je me tiens à droite
     et je vérifie avant de tourner.'
   explication: Le double-sens cyclable est la règle par défaut dans les zones 30 et zones de rencontre, même sans panonceau
@@ -208,8 +208,7 @@
     params: {}
     legende: 'À hauteur de la cabine, côté droit : dans le plus grand angle mort du camion.'
 - id: u-pl-tourne-droite
-  question: 'Devant ma voiture bleue, le camion vient de se déporter à gauche, clignotant droit en marche.
-    Comment réagir à l’espace laissé à sa droite ?'
+  question: Le camion devant moi vient de se déporter à gauche, clignotant droit en marche. Comment réagir à l’espace laissé à sa droite ?
   reponse: Il prépare probablement son virage à droite. Je reste derrière, sans m’engager dans cet espace.
   explication: 'Les roues arrière passent à l’intérieur de la trajectoire des roues avant : le camion peut avoir
     besoin de s’écarter avant de tourner. L’espace libre maintenant peut se refermer pendant le virage.
@@ -221,8 +220,7 @@
   illustration:
     gen: camion_roues
     width: 960
-    legende: 'Vue de principe : trajectoires du centre des trains avant et arrière dans un virage régulier.
-      Le tracé intérieur explique pourquoi il faut laisser de la place ; ce n’est pas l’enveloppe complète du camion.'
+    legende: 'Les roues arrière coupent l’intérieur du virage : le camion a besoin de cette place.'
 - id: u-pl-depasser-suivre
   question: 'Route à double sens : je souhaite dépasser ce poids lourd. Quelles précautions particulières ?'
   reponse: Rester plus loin pour voir la route qu’il masque, ne m’engager que si la longueur libre suffit (dépassement long),
@@ -238,11 +236,11 @@
       axis: discontinue
       vehicles:
       - lane: 1
-        y: 18
+        y: 14
         me: true
       - lane: 1
-        y: 45
-        kind: truck
+        y: 52
+        kind: lorry
         colour: gris
         occludes: true
 - id: u-matieres-dangereuses
@@ -266,8 +264,7 @@
 - id: u-voie-bus
   question: Avenue avec une voie « BUS » à ma droite ; je veux tourner à droite au prochain carrefour. Comment procéder
     ?
-  reponse: 'Je reste sur ma voie et je ne traverse la voie bus qu''au dernier moment, en cédant aux bus : elle est
-    interdite aux autres véhicules.'
+  reponse: 'Je reste sur ma voie et je n’entre dans la voie bus que là où sa ligne devient discontinue, juste avant le carrefour, en cédant aux bus : ailleurs, elle est interdite aux autres véhicules.'
   explication: 'S''y arrêter ou stationner : très gênant, 135 €. Un damier blanc au sol marque la traversée d''une voie bus
     à un carrefour.'
   theme: U
@@ -305,7 +302,7 @@
   source: Code de la route, art. R313-27 et R313-28
 - id: u-corridor-securite
   image: {gen: corridor_securite, width: 960}
-  question: Je conduis la voiture bleue sur autoroute. La dépanneuse est arrêtée, gyrophare orange allumé, et la voiture grise reste à ma hauteur. Comment protéger les intervenants ?
+  question: Sur autoroute, la dépanneuse est arrêtée, gyrophare orange allumé, et la voiture grise reste à ma hauteur. Comment protéger les intervenants ?
   reponse: Je ralentis et m’écarte autant que possible de la dépanneuse en restant dans ma voie. Je ne force pas le passage dans la voie occupée.
   explication: C’est le corridor de sécurité. Si le changement de voie est réalisable sans danger, je dois changer de voie après mes contrôles ; sinon, je garde le plus d’écart possible dans la mienne. Le ralentissement reste nécessaire dans les deux cas.
   theme: U

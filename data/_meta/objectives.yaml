@@ -1285,10 +1285,10 @@
   - d-alcool-delit
   - d-telephone-sanction
   - d-stupefiants-delit
-  consolidation:
-  - d-ceinture-sanction
   - d-feu-rouge-stop-sanction
   - d-vitesse-bareme
+  consolidation:
+  - d-ceinture-sanction
   - d-homicide-routier
   - d-delit-fuite
   - d-sans-permis-sans-assurance

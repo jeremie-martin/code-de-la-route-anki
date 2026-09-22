@@ -26,7 +26,7 @@
     ?'
   reponse: La borne si elle est accessible en sécurité sans retarder l’alerte (elle localise l’appel) ; sinon le 112 depuis
     un lieu sûr.
-  explication: Le 112 depuis un lieu sûr convient aussi. Ne pas quitter une victime nécessitant une aide immédiate ni marcher dangereusement pour chercher une borne. Donner route, sens et repère au téléphone ; aucun appel mobile sans réseau disponible.
+  explication: Ne pas quitter une victime nécessitant une aide immédiate ni marcher dangereusement pour chercher une borne. Donner route, sens et repère au téléphone ; aucun appel mobile sans réseau disponible.
   theme: A
   sous_theme: alerter
   source: "securite-routiere.gouv.fr, Bien se comporter sur autoroute ; ASFA"

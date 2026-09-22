@@ -18,8 +18,7 @@
   sous_theme: nuit
   source: Code de la route, art. R416-6
 - id: r-nuit-gabarit-camion
-  question: De nuit sur une route non éclairée, j’aperçois au loin des feux placés en hauteur, bien avant des phares.
-    Qu’en conclure ?
+  question: De nuit sur une route non éclairée, j’aperçois ceci au loin, bien avant des phares. Qu’en conclure ?
   reponse: 'Qu’un poids lourd arrive en face : je passe en feux de croisement dès maintenant.'
   explication: Les feux d’encombrement (dits de gabarit), en haut de la cabine, se voient de plus loin que les projecteurs, souvent avant un sommet de côte ou une courbe. Ils laissent le temps de basculer en feux de croisement sans éblouir un conducteur assis haut.
   theme: R
@@ -39,8 +38,7 @@
 - id: r-pluie-feux
   question: Averse de jour sur une route hors agglomération, la visibilité baisse nettement. Dois-je allumer mes feux ?
   reponse: 'Oui, les feux de croisement : obligatoires dès que la visibilité est réduite par la météo, de jour comme de nuit.'
-  explication: 'L''allumage automatique ne réagit pas toujours à la pluie de jour : vérifier le voyant vert. Par forte pluie,
-    les feux de brouillard avant sont admis, les arrière non.'
+  explication: 'L’allumage automatique ne réagit pas toujours à la pluie de jour : vérifier le voyant vert. En agglomération bien éclairée, les feux de position peuvent suffire sous la pluie, sauf pour les motos (R416-6 II 3°). Par forte pluie, les feux de brouillard avant sont admis, les arrière non.'
   theme: R
   sous_theme: intemperies
   source: Code de la route, art. R416-4 et R416-6
@@ -133,8 +131,7 @@
 - id: r-soleil-bas
   question: 'Soleil rasant de face au coucher : que fais-je ?'
   reponse: Je ralentis selon ma visibilité, j’augmente l’intervalle et j’utilise le pare-soleil avec un pare-brise propre.
-  explication: Si le soleil est derrière moi, il peut éblouir l’usager venant en face. Si je l’ai de face, cet usager ne l’a
-    pas nécessairement de face lui aussi.
+  explication: Si le soleil est derrière moi, il peut éblouir l’usager venant en face. Allumer les feux de croisement aide les autres à me voir.
   theme: R
   sous_theme: intemperies
   source: "En Voiture Simone, Conduire face au soleil"
@@ -257,7 +254,7 @@
     params:
       barriere: mi
 - id: r-tram-priorite
-  question: Un tramway arrive sur ma gauche à un croisement sans feu ni panneau. Qui passe ?
+  question: Croisement sans feu ni panneau ; ce tramway arrive sur ma gauche. Qui passe ?
   reponse: 'Le tramway : il est prioritaire sur tous les usagers, d’où qu’il vienne, car il ne peut ni s’écarter ni s’arrêter
     court.'
   explication: Art. R422-3 I. Seuls un agent ou un signal à prescription absolue l'arrêtent. On ne dépasse pas un tram à l'arrêt
@@ -265,8 +262,22 @@
   theme: R
   sous_theme: tramways
   source: Code de la route, art. R422-3 et R414-13
+  image:
+    gen: intersection
+    params:
+      approaches:
+        S:
+          vehicle:
+            colour: bleu
+            me: true
+          goes: straight
+        W:
+          vehicle:
+            colour: jaune
+            kind: tram
+          goes: straight
 - id: r-tram-traversee-degager
-  question: Je dois traverser ces rails de tramway pour continuer tout droit. Que fais-je ?
+  question: Je dois traverser ces rails de tramway pour continuer tout droit ; la file devant moi est arrêtée. Que fais-je ?
   reponse: 'J’attends avant les rails de pouvoir les dégager entièrement : s’arrêter sur la plateforme est interdit et le
     tram ne peut pas m’éviter.'
   explication: La distance de freinage d'un tramway est très longue et il ne peut pas dévier ; une station toute proche fait
@@ -294,7 +305,7 @@
     width: 960
     params:
       sign: {kind: sign, file: "France road sign B21a2.svg"}
-  question: Sur cette chaussée d’autoroute, je conduis la voiture bleue vers le haut du dessin. De quel côté dois-je me rabattre, et comment préparer la manœuvre ?
+  question: Sur cette chaussée d’autoroute, je roule vers le haut du dessin. De quel côté dois-je me rabattre, et comment préparer la manœuvre ?
   reponse: À gauche. Je ralentis, contrôle les rétroviseurs et l’angle mort, puis signale et me rabats dès que je peux le faire sans danger.
   explication: La flèche lumineuse indique le côté à rejoindre. Elle ne me donne pas priorité sur les véhicules de cette voie.
     Je prépare le rabattement en amont, sans attendre d’être au niveau du dispositif. Schéma hors échelle ; le détail montre le signal de face.
@@ -341,6 +352,9 @@
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R421-7 et R416-19
+  illustration:
+    gen: autoroute_attente
+    legende: Voiture au bord droit de la bande d’arrêt d’urgence ; occupants en gilet derrière la glissière.
 - id: r-autoroute-panne-attendre
   question: Mon véhicule est arrêté sur la bande d'arrêt d'urgence et tout le monde est sorti. Où attendre les secours ?
   reponse: Derrière la glissière de sécurité, en arrière du véhicule, du côté d’où arrivent les voitures ; pour rejoindre la borne d’appel, je marche derrière la glissière, jamais sur la chaussée.

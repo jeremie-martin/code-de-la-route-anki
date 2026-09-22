@@ -41,5 +41,3 @@
   comparaisons:
   - ref: d50
     legende: 'Avertissement : la sortie approche (2 000, 1 000 puis 500 m).'
-  - ref: d40
-    legende: Présignalisation de la sortie et de ses destinations.

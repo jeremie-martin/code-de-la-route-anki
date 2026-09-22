@@ -135,9 +135,7 @@
   - 'Refuser la priorité à un piéton : 135 € et {{c2::6 points}}.'
   - 'Ne pas s’arrêter à un feu jaune fixe alors que c’était possible : {{c3::35 €}}, sans retrait de points.'
 - id: d-vitesse-bareme
-  explication: 'Le retrait pour les excès < 5 km/h a été supprimé le 1er janvier 2024. 40 à 49 km/h : 4 points, 135 €, rétention
-    et suspension possibles selon la procédure. Les excès portent sur la vitesse retenue, après la marge propre au dispositif
-    de contrôle.'
+  explication: Le retrait pour les excès < 5 km/h a été supprimé le 1er janvier 2024. Les excès portent sur la vitesse retenue, après la marge propre au dispositif de contrôle.
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R413-14 ; décret n° 2023-1150 du 6 décembre 2023
@@ -222,8 +220,7 @@
 - id: d-detecteur-radar
   texte: 'Détenir, transporter ou utiliser un détecteur ou brouilleur de radars : contravention de 5e classe, {{c1::6 points}},
     confiscation de l''appareil et éventuellement du véhicule.'
-  explication: 'Les avertisseurs de « zones de danger » (Coyote, Waze) restent tolérés. Une plaque absente ou illisible :
-    135 €, sans points, immobilisation.'
+  explication: Les avertisseurs de « zones de danger » (Coyote, Waze) restent tolérés.
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R413-15 et R317-8

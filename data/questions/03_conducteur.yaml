@@ -74,8 +74,8 @@
       - 150
       - 300
       child: 225
-      me: 350
-    legende: Plus petit qu’un capot, l’enfant entre deux voitures reste caché jusqu’au dernier moment.
+      me: 330
+    legende: Plus petit qu’une voiture, l’enfant entre deux véhicules reste caché jusqu’au dernier moment (en médaillon, vu de côté).
 - id: c-trottinette-vulnerable
   question: Pourquoi un usager de trottinette électrique est-il particulièrement vulnérable ?
   reponse: Équilibre précaire (petites roues, freinage inégal) et faible gabarit peu détectable, surtout dans les
@@ -103,7 +103,7 @@
   sous_theme: vigilance
   source: "Ornikar, Pièges à éviter ; REMC"
 - id: c-indice-feux-recul
-  question: Une voiture stationnée devant moi a ses feux de recul (blancs) allumés. Qu'est-ce que j'anticipe ?
+  question: Cette voiture est stationnée devant moi. Qu’est-ce que j’anticipe ?
   reponse: 'Qu’elle va reculer ou quitter sa place : je ralentis, prêt à m’arrêter, et je garde mes distances plutôt que de
     la frôler.'
   explication: 'Les feux de recul ne s''allument qu''en marche arrière (R416-20) : c''est un indice fiable. Mêmes indices
@@ -306,7 +306,7 @@
 - id: c-occlusion-pieton
   theme: C
   sous_theme: vigilance
-  question: Le véhicule blanc est arrêté juste avant le passage piéton ; la voie à sa gauche est libre. Puis-je le dépasser sans voir derrière lui ?
+  question: Le véhicule blanc est arrêté ; la voie à sa gauche est libre. Puis-je le dépasser sans voir derrière lui ?
   reponse: 'Non : je dois d’abord m’assurer qu’aucun piéton n’est engagé. Je ralentis, prêt à m’arrêter avant
     le passage ; « je ne vois personne » ne signifie pas « personne ne traverse ».'
   explication: Le véhicule arrêté peut cacher un piéton. R414-5 impose cette vérification avant de dépasser à l’approche

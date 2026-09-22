@@ -144,8 +144,8 @@ def _rot_for(approach: str) -> float:
 
 # Half-length of each sprite: vehicles wait with their FRONT at the same distance from the junction,
 # and intention arrows start at the front, whatever the vehicle.
-HALF_WIDTH = {"car": 22, "truck": 26, "bus": 24}
-HALF_LENGTH = {"car": 42, "truck": 60, "bus": 64, "tram": 80, "moto": 38, "bike": 34, "pompiers": 50}
+HALF_WIDTH = {"car": 22, "truck": 26, "bus": 24, "lorry": 27}
+HALF_LENGTH = {"car": 42, "truck": 60, "lorry": 115, "bus": 64, "tram": 80, "moto": 38, "bike": 34, "pompiers": 50}
 
 
 def _upright(text: str, y: float, rot: float, size: int, fill="#111", along=False) -> str:
@@ -178,6 +178,14 @@ def vehicle_sprite(kind: str, colour: str, label: str | None = None, rot: float 
             f'<rect x="-20" y="-52" width="40" height="12" rx="3" fill="#cfe6f7" stroke="{stroke}" stroke-width="1.5"/>'
             f'<line x1="-26" y1="-28" x2="26" y2="-28" stroke="{stroke}" stroke-width="2"/>'
             + (_upright(label, 14, rot, 20) if label else "")
+            + "</g>"
+        )
+    if kind == "lorry":  # rigid lorry, about 2.7 car lengths: cab, then the box
+        return (
+            f'<g><rect x="-27" y="-64" width="54" height="179" rx="4" fill="{c}" stroke="{stroke}" stroke-width="2"/>'
+            f'<rect x="-27" y="-115" width="54" height="46" rx="7" fill="{c}" stroke="{stroke}" stroke-width="2"/>'
+            f'<rect x="-21" y="-108" width="42" height="12" rx="3" fill="#cfe6f7" stroke="{stroke}" stroke-width="1.5"/>'
+            + (_upright(label, 20, rot, 20) if label else "")
             + "</g>"
         )
     if kind == "bus":
@@ -417,15 +425,19 @@ def _vehicle(S: SVG, a, v, goes, cx, cy, half, dist):
 
 
 def _rails(S: SVG, a, cx, cy, half):
-    """Two rails along the lane of approach `a`, across the whole plane."""
+    """Tram track along the lane of approach `a`, across the whole plane: a slightly paler strip carrying two rails
+    about a track gauge apart, so rails read as a track even without a tram."""
     lane = half / 2
-    for off in (-7, 7):
-        if a in ("N", "S"):
-            x = (cx - lane if a == "N" else cx + lane) + off
-            S.add(f'<line x1="{x}" y1="0" x2="{x}" y2="600" stroke="{RAIL}" stroke-width="2"/>')
-        else:
-            y = (cy - lane if a == "E" else cy + lane) + off
-            S.add(f'<line x1="0" y1="{y}" x2="600" y2="{y}" stroke="{RAIL}" stroke-width="2"/>')
+    if a in ("N", "S"):
+        x = cx - lane if a == "N" else cx + lane
+        S.add(f'<rect x="{x - 22}" y="0" width="44" height="600" fill="#5a5a5a"/>')
+        for off in (-13, 13):
+            S.add(f'<line x1="{x + off}" y1="0" x2="{x + off}" y2="600" stroke="{RAIL}" stroke-width="3.5"/>')
+    else:
+        y = cy - lane if a == "E" else cy + lane
+        S.add(f'<rect x="0" y="{y - 22}" width="600" height="44" fill="#5a5a5a"/>')
+        for off in (-13, 13):
+            S.add(f'<line x1="0" y1="{y + off}" x2="600" y2="{y + off}" stroke="{RAIL}" stroke-width="3.5"/>')
 
 
 def _transversal(S: SVG, a, cx, cy, half, kind="stop"):

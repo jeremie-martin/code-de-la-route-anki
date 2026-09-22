@@ -1,8 +1,7 @@
 - id: c-temps-reaction
   texte: Pour un exercice sans autre indication, le repère pédagogique du temps de réaction d’un conducteur attentif est d’environ
     {{c1::1 seconde}}.
-  explication: La durée réelle varie avec la personne, la tâche et l’état de vigilance. Fatigue, alcool ou distraction peuvent
-    l’allonger ; deux secondes n’est pas une valeur fixe pour ces états.
+  explication: La durée réelle varie avec la personne, la tâche et l’état de vigilance. Fatigue, alcool ou distraction l’allongent nettement, sans valeur fixe.
   theme: C
   sous_theme: distances
   source: "securite-routiere.gouv.fr, La vitesse et la conduite ; Codeclic, Temps de réaction"
@@ -62,9 +61,10 @@
   theme: C
   sous_theme: distances
   source: "securite-routiere.gouv.fr, La vitesse et la conduite ; IISR 7e partie, art. 113-1"
-  comparaisons:
-  - ref: marq-ligne-bau-t4
-    legende: 'Ligne de rive de la bande d’arrêt d’urgence : longs traits espacés.'
+  illustration:
+    gen: deux_traits
+    params: {}
+    legende: 'Deux traits complets entre nous : environ 90 m, plus que 2 s à 130 km/h.'
 - id: c-acuite-5-10
   texte: Pour le permis B, le seuil d’acuité visuelle binoculaire est d’au moins {{c1::5/10}}, avec correction si nécessaire.
   explication: 'Arrêté du 28 mars 2022 : acuité binoculaire ≥ 5/10 (si un œil voit moins de 1/10, l''autre doit atteindre

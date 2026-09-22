@@ -11,7 +11,7 @@
   image_ref: a16
 - id: aff-r-pn-150m
   contexte: Route hors agglomération ; je passe ce panneau.
-  affirmation: Circulant hors agglomération, le passage à niveau se situe à environ 150 m.
+  affirmation: Le passage à niveau se situe à environ 150 m.
   verdict: vrai
   pourquoi: Hors agglomération, un panneau de danger est implanté à environ 150 m de ce qu’il annonce, sauf panonceau de distance. Des balises à trois, deux puis une bande rouge décomptent l’approche (150, 100, 50 m).
   theme: R
@@ -27,17 +27,18 @@
   contexte: Un passage à niveau est annoncé par ce panneau et son panonceau.
   affirmation: À ce passage à niveau, je peux rencontrer des feux rouges clignotants.
   verdict: vrai
-  pourquoi: 'Le panonceau « signal automatique » annonce une signalisation automatique lumineuse et sonore : deux
-    feux rouges clignotants et une sonnerie, avec ou sans demi-barrières.'
+  pourquoi: 'A7 annonce des barrières ; le panonceau « signal automatique » précise qu’elles sont automatiques : de chaque côté, un feu rouge clignotant et une sonnerie précèdent la fermeture des demi-barrières.'
   theme: R
   sous_theme: passages_a_niveau
-  source: "Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR, 6e partie"
+  source: Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR, 4e partie (signal G2)
   image:
     commons: France road sign A7 + M9z Signal Automatique.svg
     signal: true
-  comparaisons:
-  - ref: g1bis
-    legende: 'Au passage : croix de Saint-André, feux rouges clignotants et sonnerie.'
+  illustration:
+    gen: pn_face
+    params:
+      barriere: haute
+    legende: 'Au passage : le feu rouge clignote avant que la demi-barrière ne s’abaisse.'
 - id: aff-r-pn-barriere-contourner
   affirmation: 'Une demi-barrière ne ferme que ma moitié de chaussée : je peux la contourner si je ne vois pas de
     train.'

@@ -299,6 +299,11 @@
   theme: M
   sous_theme: depannage
   source: "Code de la route, art. R416-19 ; securite-routiere.gouv.fr, Véhicule en panne"
+  illustration:
+    gen: triangle_distance
+    params:
+      label: ≈ 30 m
+    legende: Triangle environ 30 m en amont, si le poser ne m’expose pas.
 - id: m-changer-roue-securite
   question: Que faut-il mettre en place avant de lever le véhicule pour changer une roue ?
   reponse: Sol plat et stable hors circulation, frein de stationnement serré et rapport engagé, feux de détresse et gilet,

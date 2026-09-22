@@ -1018,19 +1018,19 @@ def route_c107(params):
 
 
 def camion_virage(params):
-    """Initial lateral position only; flashing right indicator is also stated in the prompt."""
-    S = SVG(640, 600)
-    S.add(f'<rect width="640" height="600" fill="{GRASS}"/>')
-    S.add('<path d="M77 0H443V600H77Z M430 98H640V262H430Z" fill="#ced6c8"/>')
-    S.add(f'<path d="M90 0H430V600H90Z M430 110H640V250H430Z" fill="{ASPHALT}"/>')
-    S.add(f'<path d="M97 0V600 M423 0V110H640 M423 600V250H640" fill="none" stroke="{MARK}" stroke-width="3"/>')
-    S.add(f'<path d="M250 0V600 M430 180H640" stroke="{MARK}" stroke-width="3" stroke-dasharray="22 18"/>')
-    S.add(f'<g transform="translate(294,360) scale(1.4)">{vehicle_sprite("truck","gris")}')
-    # Keep the whole truck upstream: the cab has room to approach before the turn.
-    # Lamps on the truck's right, with small rays indicating the lit phase.
-    S.add('<path d="M23-60v9 M23 50v9" stroke="#ffc438" stroke-width="7"/>')
-    S.add('<path d="M32-57h7 M32 55h7" stroke="#ffc438" stroke-width="3"/></g>')
-    S.add(f'<g transform="translate(345,530) scale(1.4)">{ME}</g>')
+    """Initial lateral position only; flashing right indicator is also stated in the prompt. The lorry keeps its
+    whole length before the junction; MOI follows it."""
+    S = SVG(640, 640)
+    S.add(f'<rect width="640" height="640" fill="{GRASS}"/>')
+    S.add('<path d="M77 0H443V640H77Z M430 98H640V262H430Z" fill="#ced6c8"/>')
+    S.add(f'<path d="M90 0H430V640H90Z M430 110H640V250H430Z" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M97 0V640 M423 0V110H640 M423 640V250H640" fill="none" stroke="{MARK}" stroke-width="3"/>')
+    S.add(f'<path d="M250 0V640 M430 180H640" stroke="{MARK}" stroke-width="3" stroke-dasharray="22 18"/>')
+    S.add(f'<g transform="translate(294,392) scale(1.1)">{vehicle_sprite("lorry","gris")}')
+    # right indicators, front and rear, with the rays of every flashing light
+    S.add('<path d="M23-115v9 M23 106v9" stroke="#ffc438" stroke-width="7"/>')
+    S.add('<path d="M32-112h7 M32 111h7" stroke="#ffc438" stroke-width="3"/></g>')
+    S.add(f'<g transform="translate(345,590) scale(1.1)">{ME}</g>')
     return str(S)
 
 
@@ -1039,8 +1039,8 @@ def camion_roues(params):
     S = SVG(640, 360)
     S.add(f'<rect width="640" height="360" fill="{GRASS}"/>')
     S.add(f'<path d="M110 330V240A200 200 0 0 1 310 40H590V245H340A30 30 0 0 0 310 275V330Z" fill="{ASPHALT}"/>')
-    # Rear axle radius 110, wheelbase 90: front radius follows Pythagoras.
-    rear, wheelbase = 110, 90
+    # Rear axle radius 110, wheelbase 160 (a rigid lorry): front radius follows Pythagoras.
+    rear, wheelbase = 110, 160
     front = math.hypot(rear, wheelbase)
     # One rigid vehicle pose: rear axle tangent to its own circle, front axle ahead.
     a = math.radians(220)
@@ -1048,8 +1048,8 @@ def camion_roues(params):
     fx, fy = rx - wheelbase*math.sin(a), ry + wheelbase*math.cos(a)
     cx, cy = (rx+fx)/2, (ry+fy)/2
     rot = math.degrees(math.atan2(fy-ry, fx-rx)) + 90
-    S.add(f'<g transform="translate({cx},{cy}) rotate({rot})"><g transform="scale(1.1)" opacity=".55">{vehicle_sprite("truck","gris")}</g>')
-    for y in (-45, 45):
+    S.add(f'<g transform="translate({cx},{cy}) rotate({rot})"><g transform="translate(0,12)" opacity=".55">{vehicle_sprite("lorry","gris")}</g>')
+    for y in (-wheelbase / 2, wheelbase / 2):
         S.add(f'<path d="M-27 {y}h54" stroke="#222" stroke-width="3"/>')
         for x in (-26, 26):
             steer = math.degrees(math.atan2(wheelbase, rear-x)) if y < 0 else 0
@@ -1594,16 +1594,16 @@ def bretelle(params):
 
 
 def pn_face(params):
-    """Level crossing with half barriers seen from the approach: the R24 twin light (as on its recognition card),
-    lit and flashing when `feux`, and the half barrier 'haute', 'mi' (moving) or 'basse'."""
+    """Level crossing with automatic half barriers (G2) seen from the approach: on each side of the road a single
+    flashing red light R24 (no St Andrew's cross: it marks crossings without barriers), lit when `feux`, and the half
+    barrier 'haute', 'mi' (moving) or 'basse'."""
     S = SVG(420, 320)
     S.add(f'<rect x="0" y="0" width="420" height="320" fill="{PAPER}"/>')
     S.add('<rect x="0" y="282" width="420" height="38" fill="#7a7a7a"/>')
     S.add('<rect x="96" y="100" width="10" height="186" fill="#9a9a9a"/>')
-    S.add('<rect x="41" y="40" width="120" height="80" rx="10" fill="#222" stroke="#000" stroke-width="2"/>')
+    S.add('<circle cx="101" cy="80" r="38" fill="#222" stroke="#000" stroke-width="2"/>')
     lit = params.get("feux", True)
-    _lamp(S, 74, 80, 21, RED, on=lit, blink=lit)
-    _lamp(S, 128, 80, 21, RED, on=False)
+    _lamp(S, 101, 80, 24, RED, on=lit, blink=lit)
     angle = {"haute": -84, "mi": -38, "basse": 0}[params.get("barriere", "haute")]
     S.add('<rect x="176" y="246" width="34" height="40" rx="4" fill="#d9d9d9" stroke="#777"/>')
     S.add(f'<g transform="translate(200,258) rotate({angle})">'
@@ -1693,8 +1693,16 @@ def rue_stationnement(params):
                 _text(S, park1 + 16, y, params["door_label"], LABEL_SIZE, INK, "start")
     if params.get("child") is not None:                  # a child in a gap between parked cars, about to step out
         y = params["child"]
-        S.add(_person(px - 4, y, SIGN_RED))
+        S.add(_person(px - 4, y, CLOTH))
         S.add(f'<path d="M{px - 20},{y} H{px - 50} m8,-7 l-8,7 l8,7" fill="none" stroke="{MARK}" stroke-width="3"/>')
+        # side view on the pavement: the child, shorter than the car, is hidden behind it (hatched, dashed outline)
+        mx, my = park1 + 14, 60
+        S.add(f'<rect x="{mx}" y="{my}" width="130" height="92" rx="10" fill="{PAPER}" stroke="#9aa0a2" stroke-width="2"/>')
+        S.add(f'<g transform="translate({mx + 8},{my + 84}) scale(0.48)">' + _car_side(0, 0, "gris") + '</g>')
+        _hidden_pattern(S, "cache")
+        S.add(f'<g transform="translate({mx + 74},{my + 80})"><circle cx="0" cy="-50" r="8" fill="url(#cache)" '
+              f'stroke="{INK}" stroke-width="1.5" stroke-dasharray="3 2"/><rect x="-7" y="-41" width="14" height="36" rx="5" '
+              f'fill="url(#cache)" stroke="{INK}" stroke-width="1.5" stroke-dasharray="3 2"/></g>')
     if params.get("me") is not None:
         me_x = px - 22 - 22 - 22            # a door's reach (≈ 1 m, 22 px) between MOI and the parked cars
         if params.get("door") is not None:
@@ -1764,8 +1772,8 @@ def _limb(a, b, width, colour):
             f'stroke-linecap="round"/>')
 
 
-def _knee(hip, ankle, thigh, shin):
-    """Two-segment leg: the knee bends upwards (towards the top of the drawing)."""
+def _knee(hip, ankle, thigh, shin, up=True):
+    """Middle joint of a two-segment limb (knee, elbow): bends towards the top of the drawing, or down with up=False."""
     dx, dy = ankle[0] - hip[0], ankle[1] - hip[1]
     d = math.hypot(dx, dy)
     if d > thigh + shin:
@@ -1773,7 +1781,8 @@ def _knee(hip, ankle, thigh, shin):
     along = (thigh ** 2 - shin ** 2 + d ** 2) / (2 * d)
     h = math.sqrt(max(thigh ** 2 - along ** 2, 0))
     ux, uy = dx / d, dy / d
-    return hip[0] + ux * along + uy * h, hip[1] + uy * along - ux * h
+    s = 1 if up else -1
+    return hip[0] + ux * along + s * uy * h, hip[1] + uy * along - s * ux * h
 
 
 SEAT_HIP, SEAT_LEAN = (160, 250), math.radians(15)     # side views: occupant's hip on the cushion, backrest lean
@@ -1825,8 +1834,14 @@ def poste_conduite(params):
     S.add(_limb(hip, shoulder, 2 * half, CLOTH))
     S.add(f'<circle cx="{head[0]:.1f}" cy="{head[1]:.1f}" r="{head_r}" fill="{SKIN}"/>')
     S.add(_limb(rim_top, bottom, 12, "#333"))
-    S.add(_limb(shoulder, wrist, 20, CLOTH) + _limb(wrist, (wrist[0] + 16, wrist[1] + 8), 14, SKIN))
     focus = params.get("focus")
+    if focus == "bras":          # the backrest test: arms straight, wrists resting on the top of the rim
+        S.add(_limb(shoulder, wrist, 20, CLOTH) + _limb(wrist, (wrist[0] + 16, wrist[1] + 8), 14, SKIN))
+    else:                        # driving: hands on the rim at 9 h 15 (the centre, seen from the side), elbows bent
+        d = math.hypot(centre[0] - shoulder[0], centre[1] - shoulder[1])
+        grip_wrist = (centre[0] - 16 * (centre[0] - shoulder[0]) / d, centre[1] - 16 * (centre[1] - shoulder[1]) / d)
+        elbow = _knee(shoulder, grip_wrist, 84, 84, up=False)
+        S.add(_limb(shoulder, elbow, 20, CLOTH) + _limb(elbow, grip_wrist, 18, CLOTH) + _limb(grip_wrist, centre, 14, SKIN))
     if focus == "tete":
         y = head[1] - head_r
         S.add(f'<path d="M30,{y:.1f} H200" stroke="{INK}" stroke-width="2" stroke-dasharray="6 5"/>')
@@ -1835,7 +1850,6 @@ def poste_conduite(params):
         _pill(S, 214, 334, "jambe encore fléchie")
     elif focus == "bras":
         _pill(S, 214, 108, "poignets sur le haut du volant")
-        _pill(S, 12, 334, "épaules au dossier")
     return str(S)
 
 
@@ -1927,7 +1941,8 @@ def champ_visuel(params):
     S.add(f'<path d="M{eye[0]},{eye[1]} L{narrow[0][0]:.0f},{narrow[0][1]:.0f} L{narrow[1][0]:.0f},{narrow[1][1]:.0f} Z" '
           f'fill="{YELLOW}" opacity="0.55"/>')
     S.add(f'<g transform="translate(290,330)">{ME}</g>')
-    S.add(_person(392, 200) + f'<path d="M378,200 H350 m8,-7 l-8,7 l8,7" fill="none" stroke="{INK}" stroke-width="3"/>')
+    S.add(f'<g transform="translate(396,200) scale(1.5)">{_person(0, 0)}</g>'
+          f'<path d="M372,200 H346 m8,-7 l-8,7 l8,7" fill="none" stroke="{INK}" stroke-width="3"/>')
     _pill(S, 274, 40, "vision centrale : précise", anchor="end")
     _pill(S, 16, 250, "vision périphérique :")
     _pill(S, 16, 282, "détecte les mouvements")
@@ -1979,7 +1994,7 @@ def chargement_arriere(params):
     3 m maximum and the 1 m beyond which the end must be signalled; the end carries a red reflector (and a red
     lamp at night)."""
     limits = params.get("limites", False)
-    H = 280 if limits else 220
+    H = 290 if limits else 220
     S = SVG(480, H)
     S.add(f'<rect x="0" y="0" width="480" height="{H}" fill="{PAPER}"/>')
     ground, rear, px_m = 200, 210, 53
@@ -1989,12 +2004,10 @@ def chargement_arriere(params):
     S.add(_car_side(rear, ground, "gris"))
     S.add(f'<rect x="{end - 4}" y="{ground - 104}" width="12" height="26" fill="{SIGN_RED}" stroke="{PAPER}" stroke-width="2"/>')
     if limits:
-        y = ground + 38
-        three, one = rear - 3 * px_m, rear - px_m
-        S.add(f'<path d="M{rear},{y} H{three} M{rear},{y - 8} v16 M{three},{y - 8} v16 M{one},{y - 6} v12" '
-              f'stroke="{INK}" stroke-width="2.5" fill="none"/>')
-        _text(S, (rear + three) / 2, y - 12, "3 m maximum", LABEL_SIZE, INK)
-        _text(S, one, y + 26, "1 m", LABEL_SIZE, INK)
+        for y, metres, label in ((ground + 30, 1, "1 m : signalisation"), (ground + 68, 3, "3 m : maximum")):
+            x = rear - metres * px_m
+            S.add(f'<path d="M{rear},{y} H{x} M{rear},{y - 7} v14 M{x},{y - 7} v14" stroke="{INK}" stroke-width="2.5" fill="none"/>')
+            _text(S, rear + 12, y + 6, label, LABEL_SIZE, INK, "start")
     return str(S)
 
 
@@ -2030,8 +2043,9 @@ def _car_rear(cx, ground, colour="gris", reversing=False):
         out += f'<rect x="{lx}" y="{ground - 92}" width="38" height="24" rx="5" fill="#d8362d" stroke="#111" stroke-width="1.5"/>'
         rx = lx + 29 if lx < cx else lx + 9
         out += f'<circle cx="{rx}" cy="{ground - 80}" r="7" fill="{PAPER if reversing else "#e9e9e9"}" stroke="#111" stroke-width="1"/>'
-        if reversing:
-            out += f'<circle cx="{rx}" cy="{ground - 80}" r="12" fill="none" stroke="{PAPER}" stroke-width="4" opacity="0.8"/>'
+        if reversing:                                                   # lit: a white glow around the lamp
+            out += (f'<circle cx="{rx}" cy="{ground - 80}" r="17" fill="{PAPER}" opacity="0.35"/>'
+                    f'<circle cx="{rx}" cy="{ground - 80}" r="11" fill="{PAPER}" opacity="0.6"/>')
     return out
 
 
@@ -2062,10 +2076,10 @@ def gabarit_nuit(params):
 
 def jauge_huile(params):
     """Oil dipstick after the wipe-and-dip: the oil film ends between the min and max marks."""
-    S = SVG(480, 150)
+    S = SVG(480, 150, view=(146, 20, 334, 110))                              # the graduated end, large
     S.add(f'<rect x="0" y="0" width="480" height="150" fill="{PAPER}"/>')
-    S.add(f'<circle cx="40" cy="60" r="22" fill="none" stroke="{YELLOW}" stroke-width="10"/>')
-    S.add('<rect x="60" y="54" width="400" height="12" rx="6" fill="#b8bec1"/>')
+    S.add(f'<circle cx="178" cy="60" r="18" fill="none" stroke="{YELLOW}" stroke-width="9"/>')
+    S.add('<rect x="194" y="54" width="266" height="12" rx="6" fill="#b8bec1"/>')
     S.add('<rect x="392" y="54" width="68" height="12" rx="6" fill="#b07a1e" opacity="0.85"/>')          # oil film
     for x, name in ((432, "min"), (370, "max")):
         S.add(f'<path d="M{x},46 V74" stroke="{INK}" stroke-width="3"/>')
@@ -2100,8 +2114,8 @@ def pneu_hernie(params):
     S.add(f'<circle cx="{cx}" cy="{cy}" r="140" fill="#2a2a2a"/><circle cx="{cx}" cy="{cy}" r="136" fill="none" '
           f'stroke="#444" stroke-width="3" stroke-dasharray="4 6"/><circle cx="{cx}" cy="{cy}" r="82" fill="#b8bec1"/>'
           f'<circle cx="{cx}" cy="{cy}" r="22" fill="#8d9396"/>')
-    S.add('<defs><radialGradient id="bosse" cx="0.4" cy="0.35" r="0.7"><stop offset="0" stop-color="#6a6a6a"/>'
-          '<stop offset="0.6" stop-color="#3a3a3a"/><stop offset="1" stop-color="#2a2a2a"/></radialGradient></defs>')
+    S.add('<defs><radialGradient id="bosse" cx="0.4" cy="0.35" r="0.7"><stop offset="0" stop-color="#9a9a9a"/>'
+          '<stop offset="0.55" stop-color="#555"/><stop offset="1" stop-color="#2a2a2a"/></radialGradient></defs>')
     S.add('<ellipse cx="264" cy="90" rx="34" ry="24" transform="rotate(40 264 90)" fill="url(#bosse)"/>'
           '<path d="M236,110 Q258,124 290,104" fill="none" stroke="#111" stroke-width="3" opacity="0.6"/>')
     return str(S)
@@ -2133,15 +2147,15 @@ def pente_roues(params):
     the kerb; going up, towards the road — if the car rolls, a tyre stops against the kerb."""
     S = SVG(480, 330)
     S.add(f'<rect x="0" y="0" width="480" height="330" fill="#cfd3d4"/>')
-    for i, (name, turn) in enumerate((("en descente", 25), ("en montée", -25))):
+    for i, (name, turn) in enumerate((("en descente", 32), ("en montée", -32))):
         x0 = 240 * i
         S.add(f'<rect x="{x0}" y="0" width="170" height="290" fill="{ASPHALT}"/>')
         S.add(f'<rect x="{x0 + 168}" y="0" width="6" height="290" fill="#9aa0a2"/>')              # kerb
-        cx, cy = x0 + 132, 150
-        for sx in (-1, 1):
-            S.add(f'<rect x="-6" y="-13" width="12" height="26" rx="3" fill="#111" '
-                  f'transform="translate({cx + sx * 24},{cy - 26}) rotate({turn})"/>')
-        S.add(f'<g transform="translate({cx},{cy})">{vehicle_sprite("car", "bleu")}</g>')
+        cx, cy = x0 + 126, 150
+        # the car, larger than in the road scenes, with its front wheels drawn over the body so the steering shows
+        S.add(f'<g transform="translate({cx},{cy}) scale(1.35)">{vehicle_sprite("car", "bleu")}'
+              + "".join(f'<rect x="-6" y="-16" width="12" height="32" rx="3" fill="#111" stroke="{PAPER}" stroke-width="1.5" '
+                        f'transform="translate({sx * 22},-26) rotate({turn})"/>' for sx in (-1, 1)) + '</g>')
         # slope: the arrow points downhill
         down = -1 if turn > 0 else 1
         S.add(f'<path d="M{x0 + 40},{150 - down * 60} V{150 + down * 60} m-10,{-down * 14} l10,{down * 14} l10,{-down * 14}" '
@@ -2232,8 +2246,8 @@ def virage_gauche(params):
     for cx, cy, r in ((186, 236, 44), (150, 270, 34), (214, 280, 30), (120, 230, 28), (160, 200, 26), (100, 300, 30),
                       (70, 250, 26), (200, 330, 26)):
         S.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#5d7f4a" stroke="#48673a" stroke-width="2"/>')
-    S.add(f'<path d="M372,300 V230 A192,192 0 0 0 180,38 H60" fill="none" stroke="{YELLOW}" stroke-width="3" stroke-dasharray="8 6"/>')
-    S.add(f'<g transform="translate(372,330)">{ME}</g>')
+    S.add(f'<path d="M372,268 V230 A192,192 0 0 0 180,38 H60" fill="none" stroke="{YELLOW}" stroke-width="3" stroke-dasharray="8 6"/>')
+    S.add(f'<g transform="translate(372,318)">{ME}</g>')
     S.add(f'<g transform="translate(70,120) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
     return str(S)
 
@@ -2295,7 +2309,31 @@ def portee_prescription(params):
     return str(S)
 
 
+def deux_traits(params):
+    """Motorway right lane and hard shoulder, traffic to the right: the long dashes of the edge line (39 m, gaps of
+    13 m, to scale for the line only) and two full dashes between the car ahead and MOI."""
+    S = SVG(480, 240)
+    S.add(f'<rect x="0" y="0" width="480" height="240" fill="{GRASS}"/>')
+    S.add(f'<rect x="0" y="40" width="480" height="140" fill="{ASPHALT}"/>')
+    _dashes_h(S, 44, 3, 10, w=4)
+    px_m, front_me = 3.6, 76                                              # 39 m dash ≈ 140 px
+    rear_other = front_me + (39 + 13 + 39) * px_m                         # two full dashes and the gap between
+    x = front_me - (39 + 13) * px_m
+    while x < 480:
+        x0, x1 = max(x, 0), min(x + 39 * px_m, 480)
+        if x1 > x0:
+            S.add(f'<rect x="{x0:.1f}" y="124" width="{x1 - x0:.1f}" height="6" fill="{MARK}"/>')
+        x += (39 + 13) * px_m
+    S.add(f'<g transform="translate({rear_other + 30:.1f},88) rotate(90) scale(0.7)">{vehicle_sprite("car", "gris")}</g>')
+    S.add(f'<g transform="translate({front_me - 30},88) rotate(90) scale(0.7)">{_body({"me": True}, 90)}</g>')
+    _pill(S, 470, 162, "bande d’arrêt d’urgence", size=15, anchor="end")
+    S.add(f'<path d="M{front_me},196 v10 H{rear_other:.1f} v-10" fill="none" stroke="{INK}" stroke-width="2.5"/>')
+    _text(S, (front_me + rear_other) / 2, 230, "2 traits ≈ 90 m", LABEL_SIZE, INK)
+    return str(S)
+
+
 REGISTRY.update({
+    "deux_traits": deux_traits,
     "verres_standard": verres_standard, "pl_angles_morts": pl_angles_morts,
     "tourner_gauche_placement": tourner_gauche_placement, "virage_gauche": virage_gauche,
     "protection_accident": protection_accident, "pieton_carrefour": pieton_carrefour, "portee_prescription": portee_prescription,
