@@ -16,16 +16,17 @@ import tempfile
 
 from anki.collection import Collection
 from anki.import_export_pb2 import ImportAnkiPackageRequest, ImportAnkiPackageOptions
+from anki.scheduler.v3 import CardAnswer
 
 from build.build import OUT, load_all, curriculum, inline_md, tags_for, fait_html, feedback_html, media_name
 from build.learning import card_count, card_plan
 from build.models import MODEL_IDS, DECK_ROOT, notetypes, CSS, SCHEMA_IDS
 
 
-def import_package(col, path):
+def import_package(col, path, *, with_deck_configs=True):
     result = col.import_anki_package(ImportAnkiPackageRequest(
         package_path=str(path.resolve()),
-        options=ImportAnkiPackageOptions(with_deck_configs=True),
+        options=ImportAnkiPackageOptions(with_deck_configs=with_deck_configs),
     ))
     # The backend import can replace note types already cached by the Python API.
     col.models._clear_cache()
@@ -83,6 +84,11 @@ def verify_content(col, data):
 
 
 def verify_new_order(col, data):
+    assert col.db.scalar('select count(*) from revlog') == 0, 'historique exporté'
+    for cid in col.find_cards(''):
+        card = col.get_card(cid)
+        assert (card.type, card.queue, card.reps, card.lapses, card.ivl) == (0, 0, 0, 0, 0)
+        assert card.memory_state is None, 'état mémoire FSRS exporté'
     expected = card_plan(data, curriculum(data))
     actual = []
     for cid in col.db.list('select id from cards order by due, id'):
@@ -95,6 +101,42 @@ def verify_new_order(col, data):
     config = col.decks.config_dict_for_deck_id(col.decks.id(DECK_ROOT))
     assert config['newGatherPriority'] == 1 and config['newSortOrder'] == 1
     assert config['new']['bury'] and config['rev']['bury']
+    assert config['buryInterdayLearning']
+    assert config['rev']['perDay'] >= col.card_count()
+
+
+def verify_fsrs(col, path):
+    """Exercise the native scheduler and an update with learner-owned settings."""
+    did = col.decks.id(DECK_ROOT)
+    config = col.decks.config_dict_for_deck_id(did)
+    config['desiredRetention'] = 0.91
+    config['new']['perDay'] = 7
+    col.decks.update_config(config)
+    config = col.decks.config_dict_for_deck_id(did)
+    col.set_config('fsrs', True)
+    col.decks.select(did)
+    queued = col.sched.get_queued_cards(fetch_limit=7)
+    expected = col.db.list('select id from cards order by due, id limit 7')
+    assert [q.card.id for q in queued.cards] == expected, 'collecte réelle hors programme'
+    reviewed = []
+    for rating in (CardAnswer.EASY, CardAnswer.AGAIN):
+        q = col.sched.get_queued_cards().cards[0]
+        card = col.get_card(q.card.id)
+        card.start_timer()
+        col.sched.answer_card(col.sched.build_answer(card=card, states=q.states, rating=rating))
+        card.load()
+        assert card.memory_state is not None and card.memory_state.stability > 0
+        assert card.type == (2 if rating == CardAnswer.EASY else 1)
+        reviewed.append((card.id, card.due, card.ivl, card.memory_state))
+    history = col.db.all('select * from revlog order by id')
+    import_package(col, path, with_deck_configs=False)
+    actual = col.decks.config_dict_for_deck_id(did)
+    assert actual == config, 'préréglage personnel modifié malgré import désactivé'
+    assert col.get_config('fsrs') is True
+    assert col.db.all('select * from revlog order by id') == history
+    for cid, due, ivl, memory in reviewed:
+        card = col.get_card(cid)
+        assert (card.due, card.ivl, card.memory_state) == (due, ivl, memory)
 
 
 def mark_reviewed(col):
@@ -130,6 +172,10 @@ def main(argv=None):
             verify_content(col, data)
             verify_new_order(col, data)
             checks.append(f'import neuf : {col.note_count()} notes, {col.card_count()} cartes ; rendu, médias, ordre et options OK')
+            verify_fsrs(col, full_path)
+            checks.append('paquet vierge : toutes les cartes nouvelles, aucun historique ni état mémoire ; '
+                          'FSRS natif : collecte des 7 premières cartes dans l’ordre, réponses Facile/À revoir ; '
+                          'réimport sans préréglages : options personnelles, FSRS, états mémoire et historique conservés')
             cid, before = mark_reviewed(col)
             import_package(col, full_path)
             verify_content(col, data)

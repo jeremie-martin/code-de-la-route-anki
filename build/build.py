@@ -612,8 +612,10 @@ def build_collection(data, names, out_apkg: Path):
     root = col.decks.by_name(M.DECK_ROOT)
     root["desc"] = ("Deck pour réussir l'épreuve théorique générale (code de la route, permis B), édition 2026 : "
                     "signaux, règles, décisions et scénarios, dans un ordre d'introduction calculé. "
-                    "Cet ordre est porté par le préréglage d'options fourni : à l'import, cocher « Importer les préréglages "
-                    "de deck » (ou vérifier Options → Nouvelles cartes → ordre de collecte « position la plus basse »). "
+                    "Au premier import, cocher « Importer les préréglages de deck ». "
+                    "Étudier le deck parent ; collecte des nouvelles cartes par position croissante, tri dans l'ordre de collecte. "
+                    "Activer FSRS dans les options d'Anki si souhaité (réglage global). "
+                    "Lors des mises à jour, laisser l'import des préréglages décoché pour garder ses réglages personnels. "
                     "Compléter par des séries photo/vidéo et des examens blancs.")
     col.decks.save(root)
     for sub, desc in M.DECK_DESCRIPTIONS.items():
@@ -626,9 +628,10 @@ def build_collection(data, names, out_apkg: Path):
     import copy
     conf = copy.deepcopy(col.decks.get_config(1))
     conf.update({"id": M.DECK_CONFIG_ID, "name": M.DECK_ROOT, "newGatherPriority": 1, "newSortOrder": 1,
-                 "desiredRetention": 0.9, "sm2Retention": 0.9})
+                 "desiredRetention": 0.9, "sm2Retention": 0.9, "buryInterdayLearning": True})
     conf["new"].update({"perDay": 20, "bury": True})
-    conf["rev"].update({"perDay": 400, "bury": True})
+    # Expose due reviews; the learner controls workload through new-card intake.
+    conf["rev"].update({"perDay": 9999, "bury": True})
     col.decks.update_config(conf)
     for name in M.DECK_IDS:
         d = col.decks.by_name(name)

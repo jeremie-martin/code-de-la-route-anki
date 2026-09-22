@@ -10,10 +10,11 @@ Il est généré à partir d’une bibliothèque de connaissances écrite à la 
 
 ## Commencer
 
-1. Importer le paquet dans Anki (version récente) en cochant **« Importer les préréglages de deck »** : c’est
+1. Au premier import dans Anki (version récente), cocher **« Importer les préréglages de deck »** : c’est
    ce préréglage qui fait arriver les nouvelles cartes dans l’ordre calculé (position la plus basse) et qui
-   enfouit les cartes sœurs. Sans lui, Anki servirait toutes les cartes de signalisation d’un bloc.
-   Vérification : Options du deck → Nouvelles cartes → ordre de collecte « position la plus basse ».
+   enfouit les cartes sœurs. Sans lui, l’ordre dépend de vos options existantes.
+   Vérification : Options du deck → Ordre d’affichage → collecte des nouvelles cartes par **position
+   croissante**, tri dans **l’ordre de collecte**.
 2. Étudier le deck parent **Code de la route 2026**. L’ordre d’introduction entrelace les thèmes ; les
    614 premières cartes forment le socle, la suite consolide (variantes, exceptions, applications). Le nombre
    de nouvelles cartes par jour est un réglage personnel.
@@ -26,6 +27,27 @@ Il est généré à partir d’une bibliothèque de connaissances écrite à la 
 L’ETG demande 35 bonnes réponses sur 40 ([conditions officielles](https://www.service-public.gouv.fr/particuliers/vosdroits/F33694)).
 Réussir les cartes ne prouve pas l’aptitude à l’examen ; des séries nouvelles réussies régulièrement en donnent
 une meilleure idée.
+
+## FSRS et mises à jour
+
+Activer **FSRS** dans les options d’Anki ; ce choix s’applique à toute la collection, et ne s’active pas par
+l’import du deck. Utiliser des versions récentes sur tous les appareils. Le préréglage fournit une rétention
+souhaitée de **90 %**, des étapes d’apprentissage de `1m 10m` et de réapprentissage de `10m`, compatibles
+avec FSRS. Garder ses paramètres par défaut au départ ; « Optimiser » les adaptera à votre propre historique.
+La rétention souhaitée concerne le rappel des cartes à leur échéance, pas la note à l’examen.
+Voir le [guide officiel FSRS](https://docs.ankiweb.net/deck-options.html#fsrs).
+
+Les positions « dû » des cartes **nouvelles** servent uniquement à leur introduction : elles ne sont ni des
+dates ni des identifiants. Après les réponses, Anki calcule les échéances. Il n’y a rien à renuméroter ou à
+réinitialiser pour FSRS. Étudier le parent conserve l’entrelacement des thèmes ; les révisions suivent ensuite
+le planificateur. Le préréglage propose 20 nouvelles cartes/jour, valeur ajustable, et une limite de révisions
+de 9 999 pour laisser visibles les cartes dues. Ce ne sont pas des objectifs quotidiens : ajuster l’arrivée des
+nouvelles cartes à la charge supportable. Les cartes sœurs sont enfouies pour éviter les indices immédiats.
+
+Pour **mettre à jour** un deck déjà étudié, réimporter le paquet sans supprimer le deck et **sans importer
+les préréglages** : vos réglages personnels sont ainsi conservés. Les identités stables permettent la mise à
+jour des notes existantes tout en gardant leur historique ; cela ne supprime pas automatiquement d’anciennes
+notes retirées du dépôt. Les modifications locales de contenu suivent les options de mise à jour d’Anki.
 
 ## Répondre et s’évaluer
 
@@ -40,7 +62,8 @@ Répondre **avant** de retourner la carte, avec ses propres mots ou à voix haut
 | Vrai/faux | Le verdict **et** la raison ; si c’est faux, la règle exacte |
 
 **À revoir** si la réponse est fausse, devinée, ou si la raison manque ; **Difficile** si elle est correcte avec
-effort ; **Bon** si elle vient sans difficulté. Une réponse juste formulée autrement est juste. L’explication
+effort ; **Bon** pour un rappel correct ordinaire ; **Facile** si le rappel est immédiat et sans hésitation.
+Une réponse juste formulée autrement est juste. L’explication
 sous la réponse donne le mécanisme, la limite ou la distinction : elle se lit, elle ne se récite pas.
 Les comparaisons utiles montrent les autres signaux avec leur sens en légende. Le volet
 « Sources » contient la référence, le code technique et le nom officiel du signal ; ces codes ne sont pas à apprendre.

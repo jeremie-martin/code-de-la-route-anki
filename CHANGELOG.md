@@ -1,3 +1,14 @@
+# Planification et utilisation avec FSRS — 22 septembre 2026
+
+- Instructions de premier import, d’activation de FSRS et de mise à jour sans écraser les réglages personnels.
+  Distinction entre positions d’introduction, identités stables et échéances calculées ; aucune renumérotation
+  nécessaire. Les paramètres FSRS restent ceux de l’utilisateur, sans historique livré avec le deck.
+- Plafond de révisions porté de 400 à 9 999 pour laisser visibles les cartes dues ; enfouissement étendu aux
+  cartes sœurs en apprentissage ayant franchi le changement de jour. Contenu et ordre d’introduction inchangés.
+- Vérification du paquet vierge, de la collecte réelle et de réponses avec FSRS natif ; réimport sans
+  préréglages conservant les options personnelles, les états mémoire et l’historique. Import neuf, réimport et
+  mise à jour depuis le paquet Signal vérifiés ; 24 tests réussis. Aucun essai natif mobile ni mesure d’efficacité.
+
 # Thème Signal — 22 septembre 2026
 
 - Application du Signal approuvé dans `docs/signal-theme-handoff/` : CSS consolidé et comparé au rendu de

@@ -247,3 +247,14 @@ de cartes sont conservés dans `build/schema_ids.json` (issus du paquet `67618d8
 Anki les utilise pour reconnaître une mise à jour de schéma. Les GUID dérivent de l’`id` de la note : réimporter une nouvelle version de la même édition met les notes à jour sans doublon et
 conserve l’historique de révision. Il n’y a pas de migration entre éditions : renommer un `id`, renuméroter un
 cloze ou changer la structure des champs crée de nouvelles cartes à l’import, à faire en connaissance de cause.
+
+Le paquet est exporté sans progression : cartes nouvelles, aucun historique ni état mémoire FSRS.
+Le `due` d’une carte nouvelle est sa position dans le programme, pas son identité ; les identifiants numériques
+de notes/cartes peuvent différer entre builds. Ne pas réordonner les cartes déjà étudiées. Le format de paquet
+`legacy=True` sert à la compatibilité d’import, sans imposer l’ancien planificateur.
+FSRS est un choix global de l’utilisateur ; le deck fournit un préréglage compatible, sans paramètres appris
+sur l’historique d’une autre personne. Importer ce préréglage au départ, puis le laisser décoché aux mises à jour.
+`build.verify` exerce aussi FSRS dans une collection temporaire et vérifie que cette procédure conserve les
+options personnelles et les états mémoire. Pour une livraison, conserver le paquet précédent et lancer
+`python -m build.verify --previous ancien.apkg` ; ce témoin ne couvre pas toutes les personnalisations possibles.
+Une note retirée du dépôt reste chez les utilisateurs précédents : documenter les suppressions dans le changelog.
