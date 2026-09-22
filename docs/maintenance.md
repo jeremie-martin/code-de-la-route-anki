@@ -303,4 +303,4 @@ Le paquet est exporté sans progression : cartes nouvelles, aucun historique ni 
 d’une carte nouvelle est sa position dans le programme, pas son identité. Le préréglage embarqué (collecte par
 position croissante, cartes sœurs enfouies, rétention 90 %) s’importe au premier import puis se laisse décoché
 aux mises à jour pour conserver les réglages personnels ; `build.verify` exerce ce parcours. Une note retirée du
-dépôt reste chez les utilisateurs précédents.
+dépôt reste chez les utilisateurs précédents : `build.verify --previous` la nomme, pour la signaler à la publication.

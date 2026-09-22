@@ -33,12 +33,15 @@ def import_package(col, path, *, with_deck_configs=True):
     assert not result.log.conflicting, f'{len(result.log.conflicting)} notes en conflit : {path}'
 
 
-def verify_content(col, data):
+def verify_content(col, data, removed=frozenset()):
+    """The collection holds exactly the notes of `data`, rendered from it; `removed` names notes of an earlier
+    edition that an update leaves in place (they are left out of the checks)."""
     expected = {n['id']: n for notes in data.values() for n in notes}
-    assert col.note_count() == len(expected), (col.note_count(), len(expected))
-    assert col.card_count() == sum(card_count(n) for n in expected.values())
-    assert {m['id'] for m in col.models.all() if m['name'] in MODEL_IDS} == set(MODEL_IDS.values())
     notes = {nid: col.get_note(nid) for nid in col.find_notes('')}
+    notes = {nid: n for nid, n in notes.items() if n['Id'] not in removed}
+    assert len(notes) == len(expected), (len(notes), len(expected))
+    assert sum(len(n.cards()) for n in notes.values()) == sum(card_count(n) for n in expected.values())
+    assert {m['id'] for m in col.models.all() if m['name'] in MODEL_IDS} == set(MODEL_IDS.values())
     assert {n['Id'] for n in notes.values()} == set(expected)
     names = {n['id']: media_name('img', n['id']) for n in data['reconnaissance']}
     names.update({n['id'] + ':illustration': media_name('exp', n['id'])
@@ -74,6 +77,8 @@ def verify_content(col, data):
     missing = []
     for cid in col.find_cards(''):
         card = col.get_card(cid)
+        if card.nid not in notes:
+            continue
         for rendered in (card.question(), card.answer()):
             assert 'Invalid HTML' not in rendered and 'No cloze' not in rendered, notes[card.nid]['Id']
             for media in re.findall(r'<img src="([^"]+)"', rendered):
@@ -197,7 +202,9 @@ def main(argv=None):
                             for c in (col.get_card(cid) for cid in col.find_cards(''))}
                 cid, before = mark_reviewed(col)
                 import_package(col, full_path)
-                verify_content(col, data)
+                current = {n['id'] for notes in data.values() for n in notes}
+                removed = {col.get_note(nid)['Id'] for nid in col.find_notes('')} - current
+                verify_content(col, data, removed)
                 assert_history(col, cid, before)
                 for nid in col.find_notes(''):
                     n = col.get_note(nid)
@@ -209,7 +216,9 @@ def main(argv=None):
                             assert card.id == card_ids[key], 'identité de carte modifiée'
                 previous_hash = hashlib.sha256(args.previous.read_bytes()).hexdigest()
                 checks.append(f'mise à jour depuis SHA-256 `{previous_hash}` : identités des notes/cartes '
-                              'conservées, aucun doublon ; historique et planification du témoin conservés')
+                              'conservées, aucun doublon ; historique et planification du témoin conservés'
+                              + (f' ; notes retirées depuis, restées dans la collection : {", ".join(sorted(removed))}'
+                                 if removed else ''))
             finally:
                 col.close()
     fingerprint = hashlib.sha256(full_path.read_bytes()).hexdigest()
