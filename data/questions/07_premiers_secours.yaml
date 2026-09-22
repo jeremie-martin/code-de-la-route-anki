@@ -7,6 +7,10 @@
   theme: A
   sous_theme: proteger
   source: "Code de la route, art. R416-19 ; Ornikar, Protéger la zone ; Croix-Rouge française"
+  illustration:
+    gen: protection_accident
+    params: {}
+    legende: Arrêt après l’accident, sur l’accotement, feux de détresse ; triangle en amont (distance non à l’échelle).
 - id: a-incendie-vehicule
   question: 'Un véhicule accidenté commence à prendre feu sous le capot : que fais-je ?'
   reponse: J’éloigne les personnes du danger et j’alerte le 18 ou le 112. Sur un feu naissant, j’utilise un extincteur

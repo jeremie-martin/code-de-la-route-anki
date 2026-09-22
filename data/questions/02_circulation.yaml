@@ -480,6 +480,10 @@
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie, art. 8 ; Code de la route, art. R110-2
+  illustration:
+    gen: portee_prescription
+    params: {}
+    legende: 'En jaune, la portion limitée à 30 : jusqu’à l’intersection pour le panneau isolé, jusqu’à la sortie pour la zone.'
 - id: l-b14-meme-support
   question: À l’entrée d’une agglomération, je vois ce support. Jusqu’où s’applique le 30 ?
   reponse: À toute l’agglomération, pas seulement à la rue où je me trouve.
@@ -885,6 +889,10 @@
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R415-4
+  illustration:
+    gen: tourner_gauche_placement
+    params: {}
+    legende: Près de l’axe sans le franchir ; voie du milieu ; bord gauche en sens unique.
 - id: l-arret-ligne-continue
   question: Je veux m’arrêter au bord droit d’une route dont l’axe est une ligne continue. Quelle circonstance rendrait
     cet arrêt gênant, même sans panneau ?

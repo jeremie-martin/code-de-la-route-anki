@@ -578,6 +578,10 @@
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie art. 8 ; Code de la route, art. R110-2
+  illustration:
+    gen: portee_prescription
+    params: {}
+    legende: 'En jaune, la portion limitée à 30 : jusqu’à l’intersection pour le panneau isolé, jusqu’à la sortie pour la zone.'
 - id: aff-l-virage-gauche-axe
   contexte: Route à double sens, virage à gauche sans visibilité.
   affirmation: Je peux me rapprocher de l'axe de la chaussée pour élargir ma trajectoire.
@@ -587,6 +591,10 @@
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-9 et R413-17
+  illustration:
+    gen: virage_gauche
+    params: {}
+    legende: 'La voiture d’en face est cachée par l’intérieur du virage : je reste près du bord droit.'
 - id: aff-l-arret-pont
   contexte: Sur un pont, aucun panneau n’interdit l’arrêt ni le stationnement.
   affirmation: Je peux m’y arrêter quelques minutes pour consulter mon itinéraire.

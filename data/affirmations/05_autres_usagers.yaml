@@ -24,6 +24,10 @@
   theme: U
   sous_theme: pietons
   source: "Code de la route, R412-37 et R412-39, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177125/"
+  illustration:
+    gen: pieton_carrefour
+    params: {}
+    legende: Chaque chaussée traversée à angle droit, dans le prolongement des trottoirs ; jamais en diagonale.
 - id: aff-u-place-pmr
   contexte: Je dépose un passager devant un commerce ; la seule place libre porte le marquage « personnes handicapées ».
   affirmation: Un arrêt de deux minutes y est admis.

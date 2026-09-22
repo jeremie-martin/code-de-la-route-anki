@@ -93,6 +93,10 @@
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, L'alcool et la conduite ; Code en Poche"
+  illustration:
+    gen: verres_standard
+    params: {}
+    legende: Trois doses servies au bar, même quantité d’alcool pur.
 - id: c-verre-alcoolemie
   texte: 'Repère moyen : chaque verre standard fait monter l''alcoolémie d''environ {{c1::0,20 à 0,25 g/L}}.'
   explication: Davantage à jeun, pour une personne légère ou une femme ; deux verres peuvent donc suffire à atteindre 0,5 g/L, et un seul le seuil probatoire de 0,2 g/L.

@@ -203,6 +203,10 @@
   theme: U
   sous_theme: poids_lourds
   source: "securite-routiere.gouv.fr, Vrai ou faux : angles morts"
+  illustration:
+    gen: pl_angles_morts
+    params: {}
+    legende: 'À hauteur de la cabine, côté droit : dans le plus grand angle mort du camion.'
 - id: u-pl-tourne-droite
   question: 'Devant ma voiture bleue, le camion vient de se déporter à gauche, clignotant droit en marche.
     Comment réagir à l’espace laissé à sa droite ?'

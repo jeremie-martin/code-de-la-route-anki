@@ -156,6 +156,10 @@
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, L'alcool et la conduite ; Santé publique France"
+  illustration:
+    gen: verres_standard
+    params: {}
+    legende: Servies au bar, ces doses apportent autant d’alcool pur l’une que l’autre.
 - id: aff-c-alcool-sous-seuil
   affirmation: Sous 0,5 g/L, l'alcool n'a pas d'effet sur la conduite.
   verdict: faux

@@ -352,3 +352,7 @@
   theme: C
   sous_theme: vigilance
   source: "REMC (compétence 2) ; securite-routiere.gouv.fr, La vitesse et la conduite"
+  illustration:
+    gen: virage_gauche
+    params: {}
+    legende: 'Dans un virage à gauche, je reste près du bord droit : l’intérieur cache ce qui arrive en face.'

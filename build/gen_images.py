@@ -2151,7 +2151,154 @@ def pente_roues(params):
     return str(S)
 
 
+# ------------------------------------------------ drinks, lorry, placements, bends, protection, reach ---
+GLASS_EDGE, GLASS_FILL = "#8aa0aa", "#eef5f8"
+
+
+def verres_standard(params):
+    """Three standard drinks as served in a bar, each ≈ 10 g of pure alcohol."""
+    S = SVG(480, 300)
+    S.add(f'<rect x="0" y="0" width="480" height="300" fill="{PAPER}"/>')
+    base = 196
+    # beer: tall tumbler, 25 cl
+    S.add(f'<path d="M58,{base - 124} H122 L114,{base} H66 Z" fill="{GLASS_FILL}" stroke="{GLASS_EDGE}" stroke-width="3"/>'
+          f'<path d="M60,{base - 104} H120 L114,{base - 2} H66 Z" fill="#e0a526"/>'
+          f'<path d="M59,{base - 116} H121 L120,{base - 104} H60 Z" fill="{PAPER}" stroke="#e6d7b0" stroke-width="1"/>')
+    # wine: stemmed glass, 10 cl
+    S.add(f'<path d="M206,{base - 130} Q204,{base - 70} 240,{base - 62} Q276,{base - 70} 274,{base - 130} Z" fill="{GLASS_FILL}" '
+          f'stroke="{GLASS_EDGE}" stroke-width="3"/>'
+          f'<path d="M207,{base - 100} Q210,{base - 68} 240,{base - 64} Q270,{base - 68} 273,{base - 100} Z" fill="#8e1b3a"/>'
+          f'<path d="M240,{base - 62} V{base - 6}" stroke="{GLASS_EDGE}" stroke-width="4"/>'
+          f'<path d="M212,{base} Q240,{base - 10} 268,{base} Z" fill="{GLASS_FILL}" stroke="{GLASS_EDGE}" stroke-width="3"/>')
+    # whisky: short tumbler, 3 cl
+    S.add(f'<path d="M354,{base - 64} H426 L420,{base} H360 Z" fill="{GLASS_FILL}" stroke="{GLASS_EDGE}" stroke-width="3"/>'
+          f'<path d="M359,{base - 16} H421 L420,{base - 2} H360 Z" fill="#b8741a"/>')
+    for x, dose in ((90, "25 cl à 5°"), (240, "10 cl à 12°"), (390, "3 cl à 40°")):
+        _text(S, x, base + 32, dose, LABEL_SIZE, INK, "middle", 400)
+    S.add(f'<path d="M40,{base + 52} v8 H440 v-8" fill="none" stroke="{INK}" stroke-width="2.5"/>')
+    _text(S, 240, base + 88, "≈ 10 g d’alcool pur chacun", LABEL_SIZE, INK)
+    return str(S)
+
+
+def pl_angles_morts(params):
+    """Lorry from above: its blind spots (hatched) in front, along both sides — widest on the right — and behind;
+    a cyclist waiting beside the cab, inside the right-hand one."""
+    S = SVG(480, 460)
+    S.add(f'<rect x="0" y="0" width="480" height="460" fill="{ASPHALT}"/>')
+    _hidden_pattern(S)
+    zones = ("M190,34 H290 V98 H190 Z",                                     # in front of the cab
+             "M292,92 L470,70 L470,360 L292,344 Z",                          # right side, the largest
+             "M188,150 L96,168 L96,300 L188,320 Z",                          # left side
+             "M190,348 H290 V450 H190 Z")                                    # behind
+    for d in zones:
+        S.add(f'<path d="{d}" fill="url(#hidden)" stroke="{HIDDEN}" stroke-width="2"/>')
+    S.add(f'<g transform="translate(240,222) scale(2.1)">{vehicle_sprite("truck", "blanc")}</g>')
+    S.add(f'<g transform="translate(326,150) scale(1.3)">{vehicle_sprite("bike", "rouge")}</g>')
+    _pill(S, 16, 30, "angles morts")
+    return str(S)
+
+
+def tourner_gauche_placement(params):
+    """Where I wait to turn left, three roads: two-way with two lanes (next to the centre line, without crossing it),
+    two-way with three lanes (the middle lane), one-way (along the left edge)."""
+    S = SVG(480, 330)
+    S.add(f'<rect x="0" y="0" width="480" height="330" fill="{GRASS}"/>')
+    panels = ((0, 128, 2, [(64, "discontinue")], 64 + 22, "2 voies"),
+              (150, 180, 3, [(60, "discontinue"), (120, "discontinue")], 90, "3 voies"),
+              (352, 128, 2, [], 26, "sens unique"))
+    for x0, w, lanes, lines, me_x, name in panels:
+        S.add(f'<rect x="{x0}" y="0" width="{w}" height="290" fill="{ASPHALT}"/>')
+        for at, style in lines:
+            S.add(f'<path d="M{x0 + at},0 V290" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 26"/>')
+        if not lines:                                                   # one-way: arrows on the road
+            for y in (40, 110):
+                S.add(f'<path d="M{x0 + 88},{y + 40} V{y + 12} h-9 l13,-18 l13,18 h-9 V{y + 40} Z" fill="{MARK}" '
+                      f'transform="translate(-4,0)"/>')
+        S.add(f'<g transform="translate({x0 + me_x},200) scale(0.8)">{ME}{intention_arrow("left", front=42)}</g>')
+        S.add(f'<rect x="{x0}" y="290" width="{w}" height="40" fill="{PAPER}"/>')
+        _text(S, x0 + w / 2, 318, name, LABEL_SIZE, INK)
+    return str(S)
+
+
+def virage_gauche(params):
+    """Blind left-hand bend on a two-way road: the inside of the bend (trees) hides the oncoming car; my path stays
+    in my lane, near the right edge."""
+    S = SVG(480, 380)
+    S.add(f'<rect x="0" y="0" width="480" height="380" fill="{GRASS}"/>')
+    road = "M330,380 V230 A150,150 0 0 0 180,80 H0"
+    S.add(f'<path d="{road}" fill="none" stroke="{MARK}" stroke-width="166"/>'
+          f'<path d="{road}" fill="none" stroke="{ASPHALT}" stroke-width="160"/>'
+          f'<path d="{road}" fill="none" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 26"/>')
+    for cx, cy, r in ((186, 236, 44), (150, 270, 34), (214, 280, 30), (120, 230, 28), (160, 200, 26), (100, 300, 30),
+                      (70, 250, 26), (200, 330, 26)):
+        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#5d7f4a" stroke="#48673a" stroke-width="2"/>')
+    S.add(f'<path d="M372,300 V230 A192,192 0 0 0 180,38 H60" fill="none" stroke="{YELLOW}" stroke-width="3" stroke-dasharray="8 6"/>')
+    S.add(f'<g transform="translate(372,330)">{ME}</g>')
+    S.add(f'<g transform="translate(70,120) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
+    return str(S)
+
+
+def protection_accident(params):
+    """First on the scene of an accident, on a two-way road: I stop after it, on the verge, hazard lights on; the
+    warning triangle goes about 30 m before it (not to scale)."""
+    S = SVG(480, 290)
+    S.add(f'<rect x="0" y="0" width="480" height="290" fill="{GRASS}"/>')
+    S.add(f'<rect x="0" y="40" width="480" height="150" fill="{ASPHALT}"/>')
+    _dashes_h(S, 115, 3, 10, w=4)
+    S.add(f'<g transform="translate(250,152) rotate(118)">{vehicle_sprite("car", "rouge")}</g>')
+    S.add(f'<g transform="translate(300,160) rotate(70)">{vehicle_sprite("car", "gris")}</g>')
+    me = (420, 214)
+    S.add(f'<g transform="translate({me[0]},{me[1]}) rotate(90)">{_body({"me": True}, 90)}</g>')
+    for dx, dy in ((-40, -18), (-40, 18), (40, -18), (40, 18)):          # hazard lights flashing
+        _flash_rays(S, me[0] + dx, me[1] + dy, 3, AMBER)
+    S.add('<path d="M66,176 l14,-26 l14,26 z" fill="#e53935" stroke="#fff" stroke-width="2"/>')
+    S.add(f'<path d="M80,236 H142 M178,236 H226 M80,228 v16 M226,228 v16 M136,246 l12,-20 M166,246 l12,-20" '
+          f'stroke="{INK}" stroke-width="3" fill="none"/>')
+    _text(S, 160, 272, "≈ 30 m", LABEL_SIZE, INK)
+    return str(S)
+
+
+def pieton_carrefour(params):
+    """A pedestrian crossing a junction with no zebra nearby: each road crossed at right angles, in line with the
+    pavements; never on the diagonal."""
+    S = SVG(400, 400)
+    S.add(f'<rect x="0" y="0" width="400" height="400" fill="#cfd3d4"/>')
+    S.add(f'<rect x="130" y="0" width="140" height="400" fill="{ASPHALT}"/><rect x="0" y="130" width="400" height="140" fill="{ASPHALT}"/>')
+    for d in ("M200,0 V120 M200,280 V400", "M0,200 H120 M280,200 H400"):
+        S.add(f'<path d="{d}" stroke="{MARK}" stroke-width="4" stroke-dasharray="20 20"/>')
+    S.add(f'<path d="M140,260 L260,140" stroke="{WRONG}" stroke-width="3" stroke-dasharray="8 6"/>'
+          f'<path d="M188,188 l24,24 M212,188 l-24,24" stroke="{WRONG}" stroke-width="4"/>')
+    S.add(f'<path d="M110,300 V110 H300" fill="none" stroke="{YELLOW}" stroke-width="4" stroke-dasharray="10 7"/>'
+          f'<path d="M290,100 l12,10 l-12,10" fill="none" stroke="{YELLOW}" stroke-width="4"/>')
+    S.add(_person(110, 318, CLOTH))
+    return str(S)
+
+
+def portee_prescription(params):
+    """How far a speed limit reaches: an isolated sign stops at the next junction; a zone lasts until its end sign,
+    across junctions. The part of the road where 30 applies is highlighted."""
+    S = SVG(480, 360)
+    S.add(f'<rect x="0" y="0" width="480" height="360" fill="{GRASS}"/>')
+    rows = ((0, "panneau isolé", "France road sign B14 (30).svg", None, 180),
+            (180, "zone 30", "France road sign B30 (30).svg", "France road sign B51 (30).svg", 450))
+    for top, name, first, last, end in rows:
+        road_y = top + 104
+        for x in (180, 330):
+            S.add(f'<rect x="{x - 22}" y="{top}" width="44" height="180" fill="{ASPHALT}"/>')
+        S.add(f'<rect x="0" y="{road_y}" width="480" height="44" fill="{ASPHALT}"/>')
+        S.add(f'<rect x="40" y="{road_y + 14}" width="{end - 40}" height="16" rx="8" fill="{YELLOW}"/>')
+        for x, file in ((40, first), (end, last)):
+            if file:
+                uri, h = _sign_png({"kind": "sign", "file": file}, 48)
+                S.add(f'<image href="{uri}" x="{x - 24}" y="{road_y - 12 - h}" width="48" height="{h}"/>')
+        _pill(S, 255, top + 40, name, anchor="middle")
+    return str(S)
+
+
 REGISTRY.update({
+    "verres_standard": verres_standard, "pl_angles_morts": pl_angles_morts,
+    "tourner_gauche_placement": tourner_gauche_placement, "virage_gauche": virage_gauche,
+    "protection_accident": protection_accident, "pieton_carrefour": pieton_carrefour, "portee_prescription": portee_prescription,
     "feux_chargement": feux_chargement, "chargement_arriere": chargement_arriere, "chargement_coffre": chargement_coffre,
     "feux_recul": feux_recul, "gabarit_nuit": gabarit_nuit, "jauge_huile": jauge_huile, "ecrous_croix": ecrous_croix,
     "pneu_hernie": pneu_hernie, "pneu_gonflage": pneu_gonflage, "pente_roues": pente_roues,
