@@ -17,7 +17,7 @@
     commons: France road sign CE15a.svg
   nom: Poste de distribution de carburant
   signification: Indique une station-service ouverte 7 j/7 et 24 h/24 (signalisation obligatoire sur autoroute).
-  conduite: Sur autoroute, panonceau M1a avec la marque et la distance.
+  conduite: Sur autoroute, je repère la distance jusqu’à la station pour anticiper le ravitaillement.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -28,7 +28,7 @@
     commons: France road sign CE15i.svg
   nom: Recharge des véhicules électriques
   signification: Indique une borne de recharge pour véhicules électriques.
-  conduite: Les emplacements de recharge sont réservés aux véhicules électriques pendant la recharge (panonceau M6i).
+  conduite: Je n’occupe un emplacement réservé à la recharge que pour recharger un véhicule électrique.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

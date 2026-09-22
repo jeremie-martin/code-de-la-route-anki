@@ -19,7 +19,7 @@
   nom: Fin de limitation de vitesse
   signification: 'Fin de la limitation de vitesse indiquée : la vitesse maximale redevient celle du régime général de la route (agglomération 50, route 80 ou 90 selon la section, chaussées séparées par un terre-plein 110, autoroute 130).'
   conduite: Reprendre la vitesse réglementaire applicable, sans dépasser celle qui est adaptée aux conditions.
-  complement: 'Après un B33, ce n’est pas « vitesse libre » : c’est la limite générale du type de route qui s’applique.'
+  complement: 'Après la fin de limitation, la vitesse n’est pas libre : la limite générale de la route et les autres limitations applicables restent à respecter.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -29,7 +29,7 @@
   image:
     commons: France road sign B34.svg
   nom: Fin d'interdiction de dépasser
-  signification: Fin de l'interdiction de dépasser notifiée par le panneau B3.
+  signification: Fin de l’interdiction de dépasser signalée auparavant. Je ne dépasse que si la visibilité, les marquages et le trafic le permettent.
   conduite: Dépassement à nouveau autorisé si les conditions de sécurité et le marquage le permettent.
   theme: L
   sous_theme: panneaux
@@ -40,7 +40,7 @@
   image:
     commons: France road sign B40.svg
   nom: Fin de piste ou bande cyclable obligatoire
-  signification: Fin de la piste ou bande obligatoire pour les cycles (B22a) ; les cyclistes réintègrent la chaussée.
+  signification: Fin de la piste ou bande obligatoire pour les cycles ; les cyclistes réintègrent la chaussée.
   conduite: 'En voiture : s''attendre à voir des cyclistes revenir sur la chaussée.'
   theme: L
   sous_theme: panneaux

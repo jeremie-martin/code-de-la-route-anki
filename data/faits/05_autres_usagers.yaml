@@ -6,8 +6,8 @@
   sous_theme: edpm
   source: Code de la route, art. R412-43-1 à R412-43-3 ; décret n° 2023-848
   rappels:
-  - 'Âge minimal national pour conduire un EDPM motorisé : {{c1::14 ans}}.'
-  - 'Vitesse maximale par construction d’un EDPM motorisé : {{c2::25 km/h}}.'
+  - 'Âge minimal national pour conduire une trottinette électrique : {{c1::14 ans}}.'
+  - 'Vitesse maximale par construction d’une trottinette électrique : {{c2::25 km/h}}.'
   - 'Sur une trottinette électrique, nombre de personnes autorisées à bord : {{c3::une seule}}.'
 - id: u-velo-chiffres
   explication: File simple dès la nuit ou quand les conditions de circulation l’exigent, notamment lorsqu’un véhicule annonce

@@ -32,8 +32,7 @@
     ?
   reponse: 'Je le suis à son allure, sans klaxonner : en zone de rencontre (20 km/h maximum), les piétons circulent sur toute
     la chaussée et ont priorité sur les véhicules.'
-  explication: 'Aire piétonne (B54) : allure du pas, desserte seulement. Zone 30 (B30) : priorités habituelles, les piétons y
-    traversent aux passages. Double sens cyclable par défaut dans les trois.'
+  explication: Dans l’aire piétonne, les véhicules autorisés pour la desserte roulent à l’allure du pas. Dans une zone 30, les priorités habituelles s’appliquent et les piétons utilisent les passages lorsqu’ils y sont tenus. Le double sens cyclable est la règle par défaut dans ces zones.
   theme: U
   sous_theme: pietons
   source: Code de la route, art. R110-2 et R415-11
@@ -96,8 +95,7 @@
   sous_theme: cyclistes
   source: Code de la route, art. R412-10 et R414-6 ; En Voiture Simone — Les vélos
 - id: u-double-sens-cyclable
-  question: 'Panneau « sens interdit » avec panonceau « sauf vélos » (M9v2) à l''entrée d''une rue : que dois-je anticiper
-    ?'
+  question: Un sens interdit avec un panonceau « sauf vélos » est placé à l’autre entrée de la rue où je circule. Quel usager puis-je rencontrer en face ?
   reponse: 'Des cyclistes qui arrivent en face dans cette rue à sens unique (double-sens cyclable) : je me tiens à droite
     et je vérifie avant de tourner.'
   explication: Le double-sens cyclable est la règle par défaut dans les zones 30 et zones de rencontre, même sans panonceau
@@ -187,8 +185,7 @@
   question: Que signifie la plaque orange à l'arrière d'un camion, et qu'est-ce que cela change pour moi ?
   reponse: 'Il transporte des matières dangereuses : distance de sécurité accrue ; en cas d’accident, je n’approche pas et
     je signale la plaque aux secours.'
-  explication: 'Plaque numérotée : code danger en haut, numéro de la matière en bas ; losanges de classe (inflammable, toxique…).
-    Accès interdit à certains tunnels (B18a/b/c).'
+  explication: Sur la plaque orange numérotée, le haut renseigne le danger et le bas identifie la matière. Les losanges précisent le risque, par exemple inflammable ou toxique. Certaines routes ou certains tunnels sont interdits à ces transports ; je lis leur signalisation.
   theme: U
   sous_theme: poids_lourds
   source: Accord ADR ; IISR (B18)

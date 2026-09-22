@@ -185,8 +185,7 @@
     - avant
   question: Les véhicules suivent les flèches. Dois-je passer avant ou après la voiture rouge, et pourquoi ?
   reponse: 'Moi : je suis sur la route prioritaire, la rouge doit s''arrêter et me céder le passage.'
-  explication: Quand l'autre route a un STOP ou un cédez-le-passage, je suis prioritaire même si le véhicule vient
-    de ma droite. Le panneau AB2 (priorité ponctuelle) peut me le confirmer, mais son absence ne change rien.
+  explication: L’autre voiture doit me céder le passage à son STOP, même si elle arrive de ma droite. Je vérifie néanmoins qu’elle s’arrête avant de passer.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-6 et R415-7
@@ -199,7 +198,7 @@
   check: {pair: [S, W, apres]}
   question: "J'ai un cédez-le-passage et je tourne à droite ; une voiture arrive de ma gauche. Puis-je m'engager ?"
   reponse: "Non : je cède le passage à la rouge ; je peux m'engager sans m'arrêter seulement si la voie est libre."
-  explication: "Le cédez-le-passage (AB3a) n'impose pas l'arrêt, mais impose de laisser passer tous les véhicules de la route transversale, même en tournant à droite (la rouge va occuper la voie où je vais)."
+  explication: 'Le cédez-le-passage n’impose pas l’arrêt, mais impose de laisser passer les véhicules de la route transversale. Même en tournant à droite, je dois attendre : la rouge va occuper la voie où je m’engage.'
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-7"
@@ -211,7 +210,7 @@
       N: {vehicle: {colour: rouge}, goes: straight, sign: prioritaire}
       E: {vehicle: {colour: vert}, goes: straight, sign: stop}
   check: {order: [N, S, E]}
-  question: "Je suis sur une route prioritaire (AB6) et je tourne à gauche ; en face, la voiture rouge va tout droit ; à droite, la verte a un STOP. Ordre de passage ?"
+  question: Je suis sur une route prioritaire et je tourne à gauche ; en face, la voiture rouge va tout droit ; à droite, la verte a un STOP. Quel est l’ordre de passage ?
   reponse: "Rouge, puis moi, puis verte."
   explication: "Être sur la route prioritaire ne dispense pas de la règle du tourne-à-gauche : je cède à la rouge qui vient en face. La verte, au STOP, attend que nous soyons passés tous les deux, même si elle est à ma droite."
   theme: L
@@ -404,9 +403,9 @@
     vehicles:
       - {pos: S, colour: bleu, me: true, goes: straight, distance: 20}
       - {pos: inside, angle: 225, colour: rouge}
-  question: "Carrefour à sens giratoire (panneau AB25 + cédez-le-passage). Une voiture circule déjà dans l'anneau, à ma gauche. Puis-je m'engager ?"
+  question: Carrefour à sens giratoire avec cédez-le-passage à l’entrée. Une voiture circule déjà dans l’anneau, à ma gauche. Puis-je m’engager ?
   reponse: "Non : je cède le passage aux véhicules déjà engagés dans l'anneau (ils viennent de ma gauche), puis j'entre par la droite."
-  explication: "Dans un carrefour à sens giratoire (AB25), la priorité est à ceux qui sont dans l'anneau. On entre sans clignotant (ou à droite si l'on sort à la 1re sortie), et on met le clignotant droit avant chaque sortie."
+  explication: Je cède aux véhicules qui circulent dans l’anneau. Avant ma sortie, je contrôle les autres usagers puis mets mon clignotant droit.
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-10 ; IISR (AB25)"
@@ -417,9 +416,9 @@
     vehicles:
       - {pos: S, colour: bleu, me: true, goes: straight, distance: 20}
       - {pos: inside, angle: 225, colour: rouge}
-  question: "Rond-point SANS panneau AB25 ni cédez-le-passage, seulement des AB1 (rare, ex. place de l'Étoile). Une voiture circule dans l'anneau à ma gauche. Puis-je m'engager ?"
-  reponse: "Oui : sans signalisation, c'est la priorité à droite — celui qui entre est prioritaire sur celui qui tourne dans l'anneau."
-  explication: "C'est la différence entre un « carrefour à sens giratoire » (AB25 : l'anneau est prioritaire) et un simple « rond-point » (priorité à droite : l'entrant est prioritaire). Le panneau AB25 fait toute la différence."
+  question: Intersection circulaire signalée par des triangles avec une croix noire, sans cédez-le-passage. Une voiture circule dans l’anneau à ma gauche. Puis-je m’engager ?
+  reponse: 'Oui, si elle me laisse passer : la priorité à droite s’applique et j’arrive à sa droite. Je vérifie qu’elle ralentit avant de m’engager.'
+  explication: 'La croix noire rappelle la priorité à droite : je suis à droite de la voiture déjà dans l’anneau. Elle doit me laisser entrer. C’est l’inverse d’un giratoire dont les entrées portent un cédez-le-passage.'
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5 et R415-10 ; IISR"

@@ -7,7 +7,7 @@
   nom: Panonceau de distance
   signification: Indique la distance entre le panneau et le début du danger, de la zone réglementée ou du point indiqué (ex. « 150 m », « 2 km »).
   conduite: Le danger ou la prescription ne commence qu'à la distance indiquée, pas au panneau.
-  complement: 'Sous un panneau de danger : distance différente des 150 m / 50 m habituels. Sous un AB3a : signal avancé (AB3b). Sous CE : distance jusqu''au service.'
+  complement: Le nombre indique la distance jusqu’au danger ou au lieu annoncé. Sous un cédez-le-passage, il annonce l’intersection plus loin ; sous un panneau de service, il indique la distance jusqu’au service.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -19,10 +19,13 @@
   nom: Panonceau d'étendue
   signification: 'Indique la longueur de la section dangereuse ou soumise à la réglementation (ex. « 3 km ») : la prescription s''applique sur toute cette longueur, même au-delà d''intersections.'
   conduite: Maintenir la prescription (vitesse, interdiction de dépasser) sur toute la distance indiquée.
-  piege: M1 « 150 m » = le danger est DANS 150 m ; M2 « 150 m » = le danger DURE 150 m.
+  piege: Sans flèches, « 150 m » indique où commence le danger. Avec les deux flèches, « 150 m » indique la longueur de la section concernée.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: m1
+    legende: 'Sans flèches : distance avant le danger.'
 - id: m3a
   type: panonceau
   code: M3a
@@ -71,7 +74,7 @@
   image:
     commons: France road sign M4d2.svg
   nom: 'Catégorie : cyclomoteurs'
-  signification: 'Le panneau ne s''applique qu''aux cyclomoteurs (sous B22a : piste ouverte/obligatoire aussi pour les cyclomoteurs).'
+  signification: Le panneau s’applique aux cyclomoteurs. Sous un panneau de piste cyclable obligatoire, il étend l’usage de la piste aux cyclomoteurs.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -93,7 +96,7 @@
     commons: France road sign M4f.svg
   nom: 'Catégorie : véhicules dont le PTAC/PTRA excède le nombre indiqué'
   signification: Le panneau ne s'applique qu'aux véhicules dont le poids total autorisé dépasse la valeur indiquée (ex. « 3,5 t »).
-  complement: 'Sous un B8 : interdiction aux camions de plus de X t seulement.'
+  complement: Sous un panneau interdisant les véhicules de transport de marchandises, le tonnage précise le poids maximal autorisé au-delà duquel l’interdiction s’applique.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -103,7 +106,7 @@
   image:
     commons: France road sign M5.svg
   nom: Panonceau « STOP » (distance du STOP)
-  signification: Sous le panneau AB5, indique la distance entre le signal avancé et l'endroit où l'on devra marquer l'arrêt (ex. « STOP 150 m »).
+  signification: Sous le triangle inversé, l’inscription « STOP » et la distance annoncent l’endroit où je devrai marquer l’arrêt.
   conduite: Se préparer à s'arrêter à la distance indiquée.
   theme: L
   sous_theme: panonceaux
@@ -114,7 +117,7 @@
   image:
     commons: France road sign M6a.svg
   nom: Stationnement ou arrêt gênant (fourrière)
-  signification: 'Précise que le stationnement (ou l''arrêt sous B6d) est gênant au sens de R417-10 : mise en fourrière possible.'
+  signification: 'Le stationnement, ou l’arrêt si le panneau l’interdit aussi, est gênant : le véhicule peut être mis en fourrière.'
   conduite: 'Ne pas s''y arrêter ni stationner : risque d''enlèvement.'
   theme: L
   sous_theme: panonceaux
@@ -125,7 +128,7 @@
   image:
     commons: France road sign M6b debut mois.svg
   nom: Stationnement unilatéral à alternance semi-mensuelle
-  signification: 'Précise les jours d''interdiction du stationnement alterné : « du 1er au 15 » ou « du 16 à la fin du mois », sous B6a2/B6a3 (ou B6a1).'
+  signification: 'Précise les jours où le stationnement est interdit de ce côté : « du 1er au 15 » ou « du 16 à la fin du mois ».'
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -181,7 +184,7 @@
   nom: Panonceau schéma d'intersection
   signification: 'Schéma de l''intersection abordée : les branches prioritaires sont en trait large, les non prioritaires en trait fin.'
   conduite: 'Lire le schéma : suis-je sur la branche prioritaire (trait large) ? D''où viennent les autres ?'
-  complement: Sous AB2, ou sous AB3b/AB5. La branche verticale du bas est la route sur laquelle je me trouve.
+  complement: Le trait épais montre l’itinéraire prioritaire. La branche qui part du bas correspond à mon arrivée au carrefour.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -232,7 +235,7 @@
   image:
     commons: France road sign M9c.svg
   nom: Cédez le passage (inscription)
-  signification: Inscription « Cédez le passage », complétant le panneau AB3a.
+  signification: L’inscription « Cédez le passage » rappelle le sens du triangle inversé situé au-dessus.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -242,7 +245,7 @@
   image:
     commons: France road sign M9d.svg
   nom: Passage pour piétons surélevé
-  signification: 'Sous C20a, précise que le passage pour piétons est surélevé (plateau) : ralentir.'
+  signification: 'Sous le panneau de passage pour piétons, indique un passage surélevé : je ralentis avant le plateau.'
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -254,7 +257,7 @@
   nom: « Interdit sauf vélos » (la prescription ne s'applique pas aux cyclistes)
   signification: La prescription ne s’applique pas aux cycles, aux EDPM ni aux cyclomobiles légers.
   conduite: Sous un sens interdit, anticiper ces usagers venant en face ; vérifier la voie avant de tourner.
-  complement: 'M9v2 porte « SAUF » et un vélo : même lecture.'
+  complement: L’exception peut aussi être écrite avec le mot « SAUF » et le symbole d’un vélo.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -277,7 +280,7 @@
   nom: Indications diverses par inscription
   signification: 'Panonceau à inscription libre : « RAPPEL », « SAUF RIVERAINS », « PAR TEMPS DE PLUIE », « SORTIE D''USINE »…'
   conduite: Lire et appliquer ; « RAPPEL » signifie que la prescription précédente est toujours en vigueur (elle n'est pas nouvelle).
-  complement: '« RAPPEL » sous un B14 : la limitation continue, souvent après une intersection.'
+  complement: « RAPPEL » sous un panneau de vitesse confirme que la limitation continue, notamment après une intersection.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -287,7 +290,7 @@
   image:
     commons: France road sign M11b1.svg
   nom: Période d'application (aire piétonne, zone hivernale)
-  signification: 'Indique la période durant laquelle la voie a le statut d''aire piétonne (sous B54) ou la période d''obligation d''équipements hivernaux (sous B58 : « du 01/11 au 31/03 »).'
+  signification: 'Précise les périodes d’application du panneau placé au-dessus : par exemple les horaires d’une aire piétonne ou la période d’équipement hivernal.'
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -297,7 +300,7 @@
   image:
     commons: France road sign M11d.png
   nom: Caractéristiques de la restriction de circulation (ZFE)
-  signification: 'Sous B56 : indique les véhicules concernés par la restriction et, après « SAUF », les vignettes Crit''Air autorisées (ici : poids lourds et bus interdits, sauf Crit''Air 0 à 3), avec les jours et heures.'
+  signification: Sous le panneau de zone à faibles émissions, indique les catégories de véhicules concernées, les vignettes Crit’Air admises après « SAUF », et les jours et heures d’application.
   conduite: Comparer sa vignette Crit'Air aux catégories affichées après « SAUF » avant d'entrer.
   theme: L
   sous_theme: panonceaux

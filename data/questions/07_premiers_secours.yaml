@@ -67,16 +67,15 @@
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
 - id: a-rcp-dae
-  question: Un adulte ne répond pas et ne respire pas normalement (respiration absente ou gasps). Que fais-je ?
-  reponse: J’alerte, fais apporter un DAE et commence immédiatement la RCP ; je suis les instructions des secours et du DAE.
+  question: 'Un adulte ne répond pas et ne respire pas normalement : pas de respiration, ou seulement des inspirations rares et bruyantes. Que fais-je ?'
+  reponse: J’alerte, fais apporter un défibrillateur et commence immédiatement les compressions thoraciques ; je suis les instructions des secours et de l’appareil.
   explication: 'Adulte : 30 compressions puis 2 insufflations si je sais et peux les pratiquer ; sinon compressions continues.
     Fréquence 100–120/min, profondeur 5–6 cm. Faire alerter et apporter le DAE ; suivre le guidage des secours.'
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
 - id: a-dae-utilisation
-  question: 'Un témoin apporte un DAE ; je l''ai allumé et j''ai posé les électrodes. L''appareil annonce « analyse en cours
-    » : que fais-je ?'
+  question: Un témoin apporte un défibrillateur automatisé externe (DAE). Je l’ai allumé et posé les électrodes ; il annonce « analyse en cours ». Que dois-je faire ?
   reponse: Je m’écarte et j’empêche quiconque de toucher la victime pendant l’analyse et le choc ; puis je reprends aussitôt
     les compressions, selon ses consignes.
   explication: Le DAE (panneau vert, cœur et éclair) parle et guide pas à pas ; c'est lui qui décide s'il faut choquer. On

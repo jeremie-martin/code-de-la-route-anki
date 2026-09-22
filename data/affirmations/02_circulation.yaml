@@ -22,7 +22,7 @@
   contexte: J'arrive sur une large avenue non prioritaire ; une ruelle étroite débouche à ma droite.
   affirmation: Ma voie étant nettement plus importante, je passe avant le véhicule qui sort de la ruelle.
   verdict: faux
-  pourquoi: 'La largeur ou l''importance apparente des routes n''entre pas dans la règle : sans panneau ni feu, le conducteur venant de gauche cède (R415-5). Seul un panneau de priorité (AB2, AB6) changerait l''ordre de passage.'
+  pourquoi: 'La largeur ou l’importance apparente des routes ne change pas la règle : sans autre signalisation, je cède au véhicule venant de ma droite.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-5
@@ -67,7 +67,7 @@
   contexte: Je circule déjà dans l'anneau d'un giratoire et je vais poursuivre au-delà de la prochaine sortie.
   affirmation: Le véhicule qui attend à cette entrée doit me laisser passer.
   verdict: vrai
-  pourquoi: 'Au carrefour à sens giratoire (AB25 + cédez-le-passage), ceux qui entrent cèdent le passage à ceux qui circulent sur l''anneau (R415-10). Je signale néanmoins clairement que je ne sors pas.'
+  pourquoi: Au giratoire avec cédez-le-passage aux entrées, les entrants cèdent aux véhicules dans l’anneau. Je ne mets pas mon clignotant droit avant une sortie que je ne prends pas.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-10
@@ -159,10 +159,10 @@
   sous_theme: depassement
   source: Code de la route, art. R412-9 et R414-7
 - id: aff-l-b3-deux-roues
-  contexte: Panneau rond « interdiction de dépasser » (B3) sur une route à double sens.
+  contexte: Panneau rond « interdiction de dépasser » sur une route à double sens.
   affirmation: Je peux encore dépasser une moto solo ou un cycliste si les conditions le permettent.
   verdict: vrai
-  pourquoi: 'B3 interdit de dépasser les véhicules à moteur autres que les deux-roues sans side-car : motos solo, cyclomoteurs, vélos et véhicules à traction animale restent dépassables, visibilité et écart latéral respectés.'
+  pourquoi: Ce panneau interdit de dépasser les véhicules à moteur autres que les deux-roues sans side-car. Une moto solo, un cyclomoteur, un vélo ou un véhicule à traction animale reste dépassable si la visibilité, les marquages et l’écart latéral le permettent.
   theme: L
   sous_theme: depassement
   source: IISR 4e partie (B3) ; Code de la route, art. R414-14
@@ -244,7 +244,7 @@
   contexte: Une ligne jaune discontinue est peinte sur la bordure du trottoir.
   affirmation: Je peux m'y arrêter le temps de laisser descendre un passager, mais pas y stationner.
   verdict: vrai
-  pourquoi: 'Ligne jaune discontinue = stationnement interdit, arrêt autorisé (équivalent au sol du panneau B6a1). La ligne jaune continue, elle, interdit l''arrêt comme le stationnement (B6d).'
+  pourquoi: La ligne jaune discontinue interdit le stationnement, mais permet l’arrêt. La ligne jaune continue interdit les deux, comme le panneau bleu barré d’une croix rouge.
   theme: L
   sous_theme: stationnement
   source: IISR 7e partie art. 118-2
@@ -276,7 +276,7 @@
   contexte: Je charge des cartons dans mon coffre, à côté de mon véhicule, pendant cinq minutes.
   affirmation: Il s'agit d'un arrêt, tant que je reste à proximité pour pouvoir déplacer le véhicule.
   verdict: vrai
-  pourquoi: 'R110-2 : l''arrêt couvre la montée et la descente de personnes et le chargement ou déchargement, conducteur aux commandes ou à proximité. Là où l''arrêt est interdit (ligne jaune continue, B6d), il l''est aussi.'
+  pourquoi: L’arrêt couvre une montée, une descente, un chargement ou un déchargement immédiat, conducteur aux commandes ou à proximité. Il reste interdit le long d’une ligne jaune continue ou devant un panneau interdisant l’arrêt.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R110-2
@@ -297,7 +297,7 @@
   sous_theme: stationnement
   source: Code de la route, art. R417-9 à R417-12 ; L325-1
 - id: aff-l-zone-rencontre-stationnement
-  contexte: Zone de rencontre (panneau B52), chaussée large et dégagée.
+  contexte: Dans une zone de rencontre, la chaussée est large et dégagée.
   affirmation: Je peux y stationner ailleurs que sur les emplacements marqués si je ne gêne personne.
   verdict: faux
   pourquoi: 'R417-10 : dans une zone de rencontre comme dans une aire piétonne, le stationnement hors des emplacements aménagés est gênant (35 €). La chaussée y est partagée avec les piétons, prioritaires partout.'
@@ -349,7 +349,7 @@
   sous_theme: vitesse
   source: Code de la route, art. R413-17
 - id: aff-l-zone-30-portee
-  contexte: J'entre dans une zone 30 (panneau B30) puis je traverse deux intersections.
+  contexte: J’entre dans une zone 30 puis je traverse deux intersections.
   affirmation: La limitation cesse de s'appliquer dès la première intersection franchie.
   verdict: faux
   pourquoi: 'Une zone (30, de rencontre, piétonne, ZFE) vaut jusqu''au panneau de fin de zone, intersections comprises. C''est la prescription posée par un panneau isolé qui tombe à la prochaine intersection.'
@@ -360,7 +360,7 @@
   contexte: En agglomération, un panneau triangulaire annonce un passage pour piétons.
   affirmation: Le passage se situe à environ 150 m.
   verdict: faux
-  pourquoi: 'En agglomération, les panneaux de danger sont implantés à environ 50 m du danger ; les 150 m valent hors agglomération (200 m sur autoroute). Un panonceau M1 indique toute autre distance.'
+  pourquoi: En agglomération, un panneau de danger se trouve généralement à environ 50 m du danger ; hors agglomération, à environ 150 m, ou 200 m sur autoroute. Un panonceau peut indiquer une autre distance.
   theme: L
   sous_theme: signalisation
   source: IISR 2e partie art. 28 ; Sécurité routière — Exemples de nouvelles questions (Q18, Q19)

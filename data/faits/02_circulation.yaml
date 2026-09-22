@@ -21,9 +21,7 @@
   - 'Route de campagne ordinaire (double sens, une voie par sens, sans terre-plein) : le département peut relever
     le plafond à {{c2::90 km/h}}, signalé par des panneaux.'
 - id: l-vitesse-separateur-autoroute
-  explication: 'Le terre-plein central sépare deux chaussées ; le nombre de voies ne suffit pas. Le panneau C107 réglemente
-    l’accès : il ne fixe pas à lui seul 110 km/h. Une limitation locale plus basse prévaut ; lire la configuration, les panneaux
-    et les conditions.'
+  explication: Le terre-plein central sépare deux chaussées ; le nombre de voies ne suffit pas. Le panneau bleu avec une voiture réglemente l’accès, sans fixer à lui seul 110 km/h. Je lis la configuration, les limitations et les conditions.
   theme: L
   sous_theme: vitesse
   source: R413-2 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
@@ -101,9 +99,7 @@
   sous_theme: stationnement
   source: Code de la route, art. R417-11 ; Code de la voirie routière, art. L118-5-1
 - id: l-stationnement-alterne
-  explication: 'Piège : le changement a lieu le soir (20 h 30), pas le matin. Signalé par les panneaux B6a2 (stationnement
-    interdit du 1er au 15 : posé côté des numéros pairs) et B6a3 (interdit du 16 à la fin du mois : côté impair), ou par le
-    panneau de zone B6b2.'
+  explication: 'Le changement de côté a lieu le soir, à 20 h 30. Je lis les dates d’interdiction sur les panneaux : du 1er au 15, ou du 16 à la fin du mois. Une prescription de zone peut aussi imposer ce régime.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-2
@@ -111,6 +107,11 @@
   - 'Stationnement unilatéral alterné semi-mensuel : du 1er au 15 du mois, côté des numéros {{c1::impairs}}.'
   - 'Stationnement unilatéral alterné semi-mensuel : le dernier jour de chaque période, changement de côté entre {{c2::20
     h 30 et 21 h}}.'
+  comparaisons:
+  - ref: b6a2
+    legende: Stationnement interdit du 1er au 15.
+  - ref: b6a3
+    legende: Stationnement interdit du 16 à la fin du mois.
 - id: l-stationnement-cote
   explication: 'Stationner à contresens (côté gauche d''une rue à double sens) est un stationnement gênant (35 €) et dangereux
     la nuit (feux non visibles). La nuit sur chaussée non éclairée : feux de position allumés.'
@@ -191,15 +192,15 @@
 - id: l-balises-j10
   dedup_ok:
   - aff-r-pn-150m
-  explication: 'Les bandes décomptent la distance : 3 bandes à 150 m, 2 à 100 m, 1 à 50 m. Elles n''existent pas toujours
-    en agglomération. Croix de Saint-André simple (G1) = une voie ; double (G1 bis) = plusieurs voies : un train peut
-    en cacher un autre.'
+  explication: 'Les bandes décomptent l’approche : trois à 150 m, deux à 100 m, une à 50 m. Je ralentis avant les voies ; les bandes ne disent ni combien de voies ferrées il y a, ni si un train arrive.'
   theme: L
   sous_theme: signalisation
   source: IISR 2e partie, art. 28 et 34
   rappels:
-  - 'Passage à niveau hors agglomération annoncé à 150 m : les balises J10 portent {{c1::3, puis 2, puis 1}} bandes
-    rouges, une par tranche de 50 m.'
+  - 'Passage à niveau hors agglomération annoncé à 150 m : les balises portent {{c1::3, puis 2, puis 1}} bandes rouges, une par tranche de 50 m.'
+  comparaisons:
+  - ref: j10
+    legende: Les bandes rouges décomptent la distance au passage à niveau.
 - id: l-passage-pieton-50m
   texte: Un piéton doit emprunter le passage piéton s’il en existe un à moins de {{c1::50 m}} ; au-delà, il peut traverser
     ailleurs, et le conducteur doit lui céder le passage.

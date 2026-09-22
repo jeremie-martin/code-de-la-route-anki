@@ -16,8 +16,8 @@
   image:
     commons: France road sign AK3.svg
   nom: Chaussée rétrécie (temporaire)
-  signification: Annonce un rétrécissement temporaire de la chaussée (chantier) ; variantes AK3a (par la droite) et AK3b (par la gauche).
-  conduite: Ralentir, se replacer, ne pas dépasser ; appliquer les règles de croisement (B15/C18, K10, feux KR11).
+  signification: Annonce un rétrécissement temporaire de la chaussée ; le dessin précise si la voie se resserre à droite, à gauche ou des deux côtés.
+  conduite: Je ralentis, me replace et respecte l’alternat indiqué par les panneaux, le signaleur ou les feux temporaires.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -39,8 +39,8 @@
     commons: France road sign AK5.svg
   nom: Travaux
   signification: 'Annonce une zone de travaux (chantier) sur ou près de la chaussée : présence d''ouvriers, d''engins, de modifications de la circulation.'
-  conduite: Ralentir (souvent 70 ou 50 par B14 jaune), respecter les balises et les signaleurs.
-  complement: 'Sur autoroute, souvent répété à 1 000 m et 500 m. AK5 seul n''impose aucune vitesse : c''est le B14 associé.'
+  conduite: Je ralentis, respecte la limitation affichée et suis le balisage ainsi que les instructions des signaleurs.
+  complement: 'Le triangle « travaux » appelle à ralentir mais ne fixe pas de vitesse chiffrée : je lis les panneaux de limitation associés.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -73,7 +73,7 @@
     commons: France road sign AK22.svg
   nom: Projection de gravillons
   signification: 'Annonce un risque de projection de gravillons (chaussée fraîchement gravillonnée) : danger pour les pare-brise et adhérence réduite.'
-  conduite: Ralentir (souvent B14 50 associé), augmenter les distances, éviter de dépasser ou de croiser à vive allure.
+  conduite: Je ralentis, augmente les distances et évite de dépasser ou de croiser à vive allure sur les gravillons.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -150,19 +150,22 @@
   image:
     commons: K10a.svg
   nom: Signal manuel « passage » (piquet K10, face verte)
-  signification: 'Face verte du piquet mobile K10 tenu par un signaleur de chantier : autorisation de passer (circulation alternée réglée manuellement).'
+  signification: La face verte du piquet tenu par le signaleur m’autorise à passer dans l’alternat de chantier.
   conduite: Passer prudemment en respectant les limitations du chantier ; obéir au signaleur comme à un agent.
-  complement: 'Piquet K10 à deux faces : K10a = VERTE (passer), K10b = ROUGE (arrêt). Le signaleur a autorité pour arrêter la circulation.'
+  complement: 'Le même piquet a deux faces : verte pour passer, rouge pour s’arrêter. Je suis celle que le signaleur me présente.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: k10b
+    legende: 'Face rouge : arrêt obligatoire.'
 - id: k10b
   type: panneau
   code: K10b
   image:
     commons: K10b.svg
   nom: Signal manuel « arrêt » (piquet K10, face rouge)
-  signification: 'Face rouge du piquet K10 tenu par un signaleur : arrêt obligatoire.'
+  signification: La face rouge du piquet tenu par le signaleur m’impose l’arrêt.
   conduite: S'arrêter à hauteur du signaleur et attendre qu'il présente la face verte.
   theme: L
   sous_theme: panneaux
@@ -184,7 +187,7 @@
   image:
     commons: KD10e1.svg
   nom: Annonce de la réduction du nombre de voies (temporaire)
-  signification: 'Panneau jaune annonçant (avec distance) la réduction du nombre de voies laissées libres sur route à chaussées séparées : KD10a (une voie neutralisée), KD10b (plusieurs voies, signalisation d''urgence).'
+  signification: 'Annonce une réduction du nombre de voies disponibles : je repère les voies qui ferment et prépare mon changement de voie à la distance indiquée.'
   conduite: Se rabattre à temps sur les voies restantes en respectant l'alternance (une voiture sur deux) en cas de bouchon.
   theme: L
   sous_theme: panneaux

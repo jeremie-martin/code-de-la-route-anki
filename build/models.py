@@ -6,6 +6,8 @@ GUIDs derive from the note id. Reimporting the same edition therefore updates
 notes in place instead of duplicating them.
 """
 
+from pathlib import Path
+
 MODEL_IDS = {
     "CDR Reconnaissance": 1758400000001,
     "CDR Confusion": 1758400000002,
@@ -76,58 +78,7 @@ def deck_for(theme: str, sous_theme: str) -> str:
     }[theme]
 
 
-CSS = """
-.card {
-  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 20px; line-height: 1.45; text-align: left;
-  color: #202124; background: #fafaf8; padding: 18px 18px 28px;
-  -webkit-text-size-adjust: 100%;
-}
-.card.nightMode, .nightMode .card, .night_mode .card { color: #ececec; background: #202124; }
-.cdr-wrap { max-width: 640px; margin: 0 auto; overflow-wrap: anywhere; }
-.cdr-img { text-align: center; margin: 0 auto 16px; }
-.cdr-img img { display: inline-block; max-width: 100%; max-height: 46vh; width: auto; height: auto; border-radius: 6px; }
-.cdr-img.sign img { max-height: 36vh; max-width: min(100%, 300px); }
-.cdr-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; text-align: center; }
-.cdr-pair > div { min-width: 0; }
-.cdr-side { display: block; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
-.cdr-pair img { max-width: 100%; max-height: 30vh; width: auto; height: auto; border-radius: 6px; }
-.cdr-q, .cdr-aff { font-size: 22px; font-weight: 600; margin: 12px 0; }
-.cdr-a { font-size: 22px; font-weight: 650; margin: 16px 0 12px; color: #176039; }
-.nightMode .cdr-a, .night_mode .cdr-a { color: #91d7ad; }
-.cdr-box { font-size: 18px; margin: 12px 0; }
-.cdr-box.conduite { margin-top: 14px; }
-.cdr-box.piege { border-left: 3px solid #b26614; padding-left: 12px; }
-.nightMode .cdr-box.piege, .night_mode .cdr-box.piege { border-color: #eab777; }
-.cdr-box b { font-weight: 650; }
-.cdr-ctx, .cdr-hint { font-size: 18px; color: #555b61; margin: 8px 0; }
-.cdr-hint { font-size: 16px; }
-.nightMode .cdr-ctx, .night_mode .cdr-ctx,
-.nightMode .cdr-hint, .night_mode .cdr-hint { color: #c0c3c7; }
-.cdr-back .cdr-q, .cdr-back .cdr-aff { font-size: 18px; font-weight: 400; }
-.cdr-aff::before { content: "«\\00a0"; }
-.cdr-aff::after { content: "\\00a0»"; }
-.cdr-fait { font-size: 22px; margin: 8px 0 16px; }
-.cloze { color: #176039; font-weight: 700; }
-.nightMode .cloze, .night_mode .cloze { color: #91d7ad; }
-hr#answer { border: 0; border-top: 1px solid #d0d3d5; margin: 18px 0; }
-.nightMode hr#answer, .night_mode hr#answer { border-color: #51555b; }
-.cdr-verdict { font-size: 22px; font-weight: 700; margin: 14px 0 8px; text-transform: capitalize; color: #176039; }
-.cdr-verdict.faux { color: #af2929; }
-.nightMode .cdr-verdict, .night_mode .cdr-verdict { color: #91d7ad; }
-.nightMode .cdr-verdict.faux, .night_mode .cdr-verdict.faux { color: #ffaaa5; }
-.cdr-reference { margin-top: 20px; border-top: 1px solid #d0d3d5; font-size: 16px; color: #555b61; }
-.cdr-reference summary { cursor: pointer; min-height: 44px; box-sizing: border-box; padding: 11px 0; }
-.cdr-reference summary:focus-visible { outline: 2px solid #2867b2; outline-offset: 3px; }
-.cdr-reference p { margin: 8px 0 14px; }
-.cdr-reference a { color: #24559a; overflow-wrap: anywhere; }
-.cdr-reference h3 { font-size: 17px; margin: 16px 0 8px; }
-.cdr-code { font-family: ui-monospace, Menlo, Consolas, monospace; }
-.nightMode .cdr-reference, .night_mode .cdr-reference { border-color: #51555b; color: #c0c3c7; }
-.nightMode .cdr-reference a, .night_mode .cdr-reference a { color: #9bc3ff; }
-ul.cdr-list { padding-left: 24px; }
-@media (max-width: 350px) { .card { padding: 14px 12px 24px; } }
-"""
+CSS = Path(__file__).with_name("cards.css").read_text(encoding="utf-8")
 
 
 def reference(extra=""):

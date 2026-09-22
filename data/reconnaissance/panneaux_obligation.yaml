@@ -11,7 +11,10 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: Flèche horizontale = tourner AVANT le panneau ; flèche coudée (B21c1) = à la PROCHAINE intersection.
+  piege: 'Flèche horizontale : je tourne avant le panneau. Flèche coudée : je tourne à la prochaine intersection.'
+  comparaisons:
+  - ref: b21c1
+    legende: 'Flèche coudée : à la prochaine intersection.'
 - id: b21-2
   type: panneau
   code: B21-2
@@ -57,10 +60,13 @@
   signification: À la prochaine intersection, le conducteur doit continuer tout droit (interdiction de tourner à droite ou à gauche).
   conduite: Rester dans la voie qui va tout droit.
   complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
-  piege: B21b (rond bleu, flèche vers le haut) = obligation d'aller tout droit ; C12 (carré bleu, flèche vers le haut) = sens unique (indication).
+  piege: Le rond bleu impose d’aller tout droit. La flèche vers le haut dans un carré bleu indique un sens unique, sans imposer d’aller tout droit à chaque intersection.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: c12
+    legende: 'Carré bleu : sens unique.'
 - id: b21c1
   type: panneau
   code: B21c1
@@ -133,7 +139,10 @@
   theme: L
   sous_theme: panneaux
   source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  piege: Rond bleu = obligatoire (B22a) ; carré bleu = conseillé (C113).
+  piege: Pour les cyclistes, le rond bleu impose la piste ; le carré bleu la conseille.
+  comparaisons:
+  - ref: c113
+    legende: 'Carré bleu : conseillé aux cyclistes.'
 - id: b22b
   type: panneau
   code: B22b

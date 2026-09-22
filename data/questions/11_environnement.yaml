@@ -84,9 +84,7 @@
   question: Qu'est-ce qu'une ZFE (zone à faibles émissions mobilité) ?
   reponse: Une zone urbaine délimitée par des panneaux où les véhicules les plus polluants (selon leur vignette Crit’Air)
     ne peuvent pas circuler, en permanence ou à certaines heures.
-  explication: 'Les restrictions varient selon la métropole et selon l''année : on vérifie les règles locales avant un trajet.
-    L''entrée est signalée par le panneau de zone B56, avec un panonceau qui précise les vignettes Crit''Air concernées et
-    les horaires.'
+  explication: 'Je vérifie les règles locales avant un trajet : elles varient selon la ville et la date. Le panneau d’entrée de zone et son panonceau précisent les véhicules concernés, les vignettes Crit’Air admises et les horaires.'
   theme: E
   sous_theme: pollution
   source: Code général des collectivités territoriales, art. L2213-4-1 ; service-public.fr F33371

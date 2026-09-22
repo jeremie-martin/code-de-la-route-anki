@@ -29,7 +29,7 @@ une meilleure idée.
 
 ## Répondre et s’évaluer
 
-Répondre **avant** de retourner la carte, en une phrase ou à voix haute. Pas de récitation mot à mot :
+Répondre **avant** de retourner la carte, avec ses propres mots ou à voix haute. Pas de récitation mot à mot :
 
 | Carte | Réponse attendue |
 |---|---|
@@ -41,8 +41,9 @@ Répondre **avant** de retourner la carte, en une phrase ou à voix haute. Pas d
 
 **À revoir** si la réponse est fausse, devinée, ou si la raison manque ; **Difficile** si elle est correcte avec
 effort ; **Bon** si elle vient sans difficulté. Une réponse juste formulée autrement est juste. L’explication
-sous la réponse donne le mécanisme, la limite ou la distinction : elle se lit, elle ne se récite pas. Le volet
-« Sources » contient la référence et le nom officiel du signal.
+sous la réponse donne le mécanisme, la limite ou la distinction : elle se lit, elle ne se récite pas.
+Les comparaisons utiles montrent les autres signaux avec leur sens en légende. Le volet
+« Sources » contient la référence, le code technique et le nom officiel du signal ; ces codes ne sont pas à apprendre.
 
 Après une erreur en série photo, chercher la cause avant d’ajouter une carte : règle oubliée (revoir la carte,
 `objectif::…` dans [COUVERTURE](out/COUVERTURE.md)), indice non vu (refaire des scènes, pas des cartes), lecture

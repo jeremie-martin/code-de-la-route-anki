@@ -6,20 +6,23 @@
     commons: FR road sign G1.svg
   nom: Croix de Saint-André (passage à niveau à une voie sans barrière)
   signification: 'Croix de Saint-André : passage à niveau à une voie, sans barrière ni signalisation automatique. Panneau de position, au niveau des rails.'
-  conduite: Regarder et écouter des deux côtés ; ne franchir qu'en l'absence de train. Un AB4 au-dessus impose l'arrêt.
-  complement: Annoncé par A8 et les balises J10. Une seule croix = une voie ferrée ; croix double (G1a) = plusieurs voies.
+  conduite: Je regarde et écoute des deux côtés ; je ne franchis qu’en l’absence de train. Un STOP associé impose l’arrêt.
+  complement: Un triangle avec une locomotive annonce le passage à niveau sans barrières. Une croix simple indique une voie ferrée ; une croix double, plusieurs voies.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
   piege: Dépassement interdit aux passages à niveau sans barrière ni demi-barrière (R414-12), même avec signalisation automatique.
+  comparaisons:
+  - ref: g1a
+    legende: 'Croix double : plusieurs voies ferrées.'
 - id: g1a
   type: panneau
   code: G1a
   image:
     commons: FR road sign G1a.svg
   nom: Croix de Saint-André double (passage à niveau à plusieurs voies sans barrière)
-  signification: 'Panneau de position d''un passage à niveau à plusieurs voies ferrées, sans barrière ni signalisation automatique (deux croix superposées, ou G1c : version étroite).'
-  conduite: Même conduite que G1, en tenant compte qu'un train peut en cacher un autre.
+  signification: 'Croix double : passage à niveau à plusieurs voies ferrées, sans barrières. Un train peut en cacher un autre.'
+  conduite: Je regarde et écoute des deux côtés, respecte un éventuel STOP et ne franchis que si aucune voie ferrée ne présente de danger et si je peux dégager entièrement.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

@@ -36,7 +36,7 @@
   nom: Feu vert
   signification: Passage autorisé, à condition que l'intersection soit dégagée et en cédant le passage aux piétons engagés.
   conduite: Ne s'engager que si l'on peut dégager le carrefour ; en tournant, céder aux piétons et aux véhicules d'en face.
-  piege: Le vert ne donne pas la priorité sur les piétons ; il prévaut sur un STOP ou un AB3a placé dessous.
+  piege: Le vert ne donne pas la priorité sur les piétons ; il prévaut sur un STOP ou un cédez-le-passage placé dessous.
   theme: L
   sous_theme: feux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -90,9 +90,9 @@
     params:
       state: vert
   nom: Signaux tricolores modaux (bus R13b, cyclistes R13c)
-  signification: 'Feux tricolores à pictogramme (bus R13b, vélo R13c) : ils ne s''adressent qu''à la catégorie représentée.'
-  conduite: Un conducteur de voiture ignore les feux modaux et suit le R11 ; un cycliste suit le feu vélo (petit feu tricolore avec pictogramme).
-  complement: Les feux vélo (R13c) sont souvent placés bas, près des sas vélo, avec quelques secondes d'avance (départ anticipé).
+  signification: Le symbole du vélo ou du bus indique à quels usagers ce feu s’adresse.
+  conduite: En voiture, je suis le feu destiné à ma voie, pas le feu portant un vélo ou un bus. À vélo, je suis le feu avec le symbole vélo.
+  complement: 'Un feu pour les vélos peut leur donner le départ avant les autres véhicules : je ne démarre pas en voiture tant que mon propre feu reste rouge.'
   theme: L
   sous_theme: feux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

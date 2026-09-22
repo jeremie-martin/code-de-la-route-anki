@@ -62,10 +62,15 @@
   contexte: Je suis à vélo ; une bande cyclable signalée par un panneau carré bleu longe la chaussée.
   affirmation: Je dois l'emprunter et quitter la chaussée.
   verdict: faux
-  pourquoi: 'Le panneau carré (C113) signale une bande conseillée : le cycliste choisit. Seul le panneau rond (B22a) la rend obligatoire (R431-9). Une trottinette électrique, elle, doit prendre la bande ou la piste en agglomération dès qu''elle existe.'
+  pourquoi: Pour un cycliste, le carré bleu conseille la piste ; le rond bleu la rend obligatoire. En agglomération, une trottinette électrique doit emprunter la piste ou la bande cyclable lorsqu’elle existe.
   theme: U
   sous_theme: cyclistes
   source: 'Code de la route, art. R431-9 et R412-43-1 ; IISR (B22a, C113)'
+  comparaisons:
+  - ref: c113
+    legende: 'Carré : conseillé aux cyclistes.'
+  - ref: b22a
+    legende: 'Rond : obligatoire pour les cyclistes.'
 - id: aff-u-velo-front-nuit
   contexte: Je roule à vélo avec un ami, hors agglomération, à la tombée du jour.
   affirmation: Nous pouvons rester à deux de front tant qu'aucune voiture n'arrive.
@@ -106,13 +111,16 @@
   sous_theme: cyclistes
   source: 'Code de la route, art. R412-28-1 et R110-2'
 - id: aff-u-velo-m12
-  contexte: Sous le feu tricolore, un panonceau M12 représente un vélo et une flèche vers la droite.
+  contexte: Sous le feu tricolore, un petit triangle inversé porte un vélo jaune et une flèche vers la droite.
   affirmation: Le cycliste peut franchir le feu rouge vers la droite sans céder le passage.
   verdict: faux
-  pourquoi: 'Le M12 (« cédez-le-passage cycliste au feu ») autorise le franchissement dans la seule direction fléchée, en cédant le passage aux piétons et aux véhicules qui ont le vert. Ce n''est pas une priorité.'
+  pourquoi: Ce panonceau autorise les usagers concernés à franchir le feu dans la seule direction fléchée, en cédant aux piétons et aux véhicules qui ont le vert. Il ne donne aucune priorité.
   theme: U
   sous_theme: cyclistes
   source: 'IISR (panonceau M12) ; Cerema — Doctrine cédez-le-passage cycliste au feu'
+  comparaisons:
+  - ref: m12
+    legende: Passage autorisé uniquement dans les directions fléchées, en cédant.
 - id: aff-u-velo-ecart-portieres
   contexte: En ville, un cycliste roule à un bon mètre de la file de voitures stationnées.
   affirmation: Il a le droit de s'écarter ainsi, et j'en tiens compte pour le dépasser.

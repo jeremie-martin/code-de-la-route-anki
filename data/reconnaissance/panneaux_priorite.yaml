@@ -22,7 +22,10 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: Priorité PONCTUELLE (une seule intersection), contrairement à AB6 qui vaut sur toute la route.
+  piege: Le triangle donne la priorité à la prochaine intersection seulement. Le losange jaune indique une route prioritaire jusqu’au panneau de fin.
+  comparaisons:
+  - ref: ab6
+    legende: 'Losange jaune : route prioritaire.'
 - id: ab3a
   type: panneau
   code: AB3a
@@ -35,19 +38,22 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: Triangle pointe en bas, reconnaissable de dos (comme AB3b/AB5 et le panonceau M12). Aux feux, le feu prévaut.
+  piege: La pointe vers le bas permet de reconnaître le cédez-le-passage, même de dos. Si un feu fonctionne, je suis ses indications.
 - id: ab3b
   type: panneau
   code: AB3b
   image:
     commons: France road sign AB3b.svg
   nom: Signal avancé de cédez-le-passage
-  signification: Annonce un cédez-le-passage (AB3a) situé à la distance indiquée par le panonceau M1 (le plus souvent 150 m).
+  signification: Annonce un cédez-le-passage à la distance indiquée, souvent 150 m.
   conduite: Ralentir progressivement, se préparer à céder le passage à l'intersection annoncée.
-  piege: AB3b = AB3a + panonceau de distance M1. Ne pas confondre avec AB5 (STOP à 150 m, panonceau M5).
+  piege: 'Le panonceau donne seulement une distance : cédez-le-passage à venir. S’il porte aussi « STOP », il annonce un arrêt obligatoire plus loin.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: ab5
+    legende: 'Avec « STOP » : arrêt obligatoire plus loin.'
 - id: ab4
   type: panneau
   code: AB4
@@ -67,24 +73,27 @@
   image:
     commons: France road sign AB5.svg
   nom: Signal avancé de STOP
-  signification: Annonce un panneau STOP (AB4) situé à la distance indiquée par le panonceau M5 (le plus souvent 150 m).
+  signification: Annonce un STOP à la distance indiquée, souvent 150 m.
   conduite: Ralentir, se préparer à marquer l'arrêt à l'intersection annoncée.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: 'AB5 ne demande pas de s''arrêter à son niveau : l''arrêt se fait au STOP, 150 m plus loin.'
+  piege: 'Je ne m’arrête pas devant ce signal avancé : l’arrêt se fait au STOP annoncé plus loin.'
 - id: ab6
   type: panneau
   code: AB6
   image:
     commons: France road sign AB6.svg
   nom: Route à caractère prioritaire
-  signification: 'La route suivie est prioritaire : à toutes les intersections jusqu''au panneau AB7, les routes transversales cèdent le passage.'
+  signification: 'Je suis sur une route prioritaire : les routes transversales cèdent le passage jusqu’au panneau de fin de priorité, le losange jaune barré.'
   conduite: Continuer sans ralentir inutilement ; céder quand même aux piétons, tramways et véhicules prioritaires en intervention.
   piege: 'Un STOP ou un cédez-le-passage rencontré ensuite l''emporte : le panneau le plus récent s''applique.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: ab7
+    legende: 'Losange barré : fin du caractère prioritaire.'
 - id: ab7
   type: panneau
   code: AB7
@@ -104,7 +113,7 @@
   nom: Carrefour à sens giratoire
   signification: 'Annonce un carrefour à sens giratoire : les usagers déjà engagés dans l''anneau sont prioritaires.'
   conduite: Ralentir, céder le passage à l'anneau, clignotant gauche si je dépasse la moitié, clignotant droit avant de sortir.
-  piege: Carrefour à sens giratoire (AB25 + AB3a) = priorité à l'anneau ; rond-point sans cédez-le-passage = priorité à droite, celui qui entre passe.
+  piege: À l’entrée d’un giratoire avec cédez-le-passage, je laisse passer ceux qui circulent dans l’anneau. Sur une intersection circulaire sans ce régime, la priorité à droite peut donner priorité aux entrants.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

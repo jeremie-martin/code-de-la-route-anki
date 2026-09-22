@@ -7,10 +7,13 @@
   nom: Circulation interdite à tout véhicule dans les deux sens
   signification: Interdiction de circuler à tout véhicule (avec ou sans moteur, y compris les cycles), dans les deux sens. Seuls les piétons peuvent passer.
   conduite: Ne pas s'engager. Un panonceau peut prévoir des exceptions (« sauf riverains », « sauf livraisons »).
-  piege: B0 (cercle rouge vide) = interdit dans les DEUX sens ; B1 (rouge à barre blanche) = sens interdit.
+  piege: Le cercle rouge vide interdit la circulation dans les deux sens. Le disque rouge à barre blanche interdit d’entrer par ce côté.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: b1
+    legende: 'Barre blanche : entrée interdite par ce côté.'
 - id: b1
   type: panneau
   code: B1
@@ -18,19 +21,22 @@
     commons: France road sign B1.svg
   nom: Sens interdit à tout véhicule
   signification: 'Interdiction de s''engager : la voie est à sens unique dans l''autre sens. Tous les véhicules, cycles compris, sauf panonceau.'
-  conduite: Ne pas s'engager. Avec un panonceau M9v1/M9v2 (« sauf vélo »), les cyclistes l'empruntent à contresens.
+  conduite: Je ne m’engage pas. Une exception « sauf vélos » peut autoriser les cyclistes à emprunter cette entrée.
   complement: Dans les zones 30 et zones de rencontre, des cyclistes peuvent arriver en face (double-sens cyclable).
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: Ne pas confondre avec B0 (cercle rouge vide), qui interdit la circulation dans les deux sens.
+  piege: Le cercle rouge vide interdit la circulation dans les deux sens ; la barre blanche interdit l’entrée par ce côté.
+  comparaisons:
+  - ref: b0
+    legende: 'Cercle vide : circulation interdite dans les deux sens.'
 - id: b1j
   type: panneau
   code: B1j
   image:
     commons: France road sign B1j.svg
   nom: Sens interdit sur bretelle (fond jaune)
-  signification: 'Panneau B1 inscrit dans un carré jaune : rappel renforcé du sens interdit sur les bretelles de sortie.'
+  signification: 'Sens interdit renforcé par un fond jaune, notamment sur les bretelles de sortie : je ne m’engage pas.'
   conduite: 'Ne jamais s''engager : on remonte une bretelle de sortie à contresens.'
   complement: Sur les bretelles de sortie, face aux usagers qui pourraient s'y engager par erreur.
   theme: L
@@ -46,7 +52,7 @@
   signification: Il est interdit de tourner à gauche à la prochaine intersection.
   conduite: Continuer tout droit ou tourner à droite ; ne pas tourner à gauche même si la voie paraît libre.
   complement: Vaut pour la prochaine intersection.
-  piege: l'interdiction ne vaut que pour LA prochaine intersection. Rond rouge = interdiction ; rond bleu (B21) = obligation.
+  piege: L’interdiction vise la prochaine intersection. Une flèche dans un rond rouge interdit une direction ; dans un rond bleu, elle impose une direction.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -70,7 +76,7 @@
   nom: Interdiction de faire demi-tour
   signification: Interdiction de faire demi-tour sur la route suivie, jusqu'à la prochaine intersection.
   conduite: Ne pas faire demi-tour ; continuer et changer de direction plus loin.
-  complement: Sans panneau, le demi-tour est interdit sur autoroute et route express (R421-6, R432-3) et dans les tunnels (C111) ; il est impossible en sens unique.
+  complement: Même sans ce panneau, le demi-tour est interdit sur autoroute, route express et dans un tunnel. Il ferait aussi circuler à contresens dans une rue à sens unique.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -116,10 +122,13 @@
   nom: Stationnement interdit
   signification: Stationnement interdit du côté du panneau, jusqu'à la prochaine intersection. L'arrêt reste autorisé.
   conduite: Ne pas stationner ; on peut s'arrêter pour déposer un passager ou charger rapidement.
-  piege: 1 barre = stationnement interdit ; 2 barres en croix (B6d) = arrêt ET stationnement interdits. B31 n'y met pas fin.
+  piege: Une barre interdit le stationnement ; deux barres en croix interdisent aussi l’arrêt. Le panneau de fin de toutes les interdictions ne met pas fin à cette règle de stationnement.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: b6d
+    legende: 'Croix rouge : arrêt et stationnement interdits.'
 - id: b6a2
   type: panneau
   code: B6a2
@@ -165,10 +174,13 @@
   nom: Accès interdit aux véhicules à moteur à l'exception des cyclomoteurs
   signification: Interdiction d'accès aux véhicules à moteur (voitures, motos, camions…), sauf les cyclomoteurs (≤ 50 cm³ / 45 km/h). Piétons et cycles peuvent passer.
   conduite: Ne pas s'engager en voiture ou à moto.
-  piege: B7a (voiture + moto, 2 symboles) laisse passer les cyclomoteurs ; B7b (voiture + moto + cyclomoteur, 3 symboles) interdit TOUS les véhicules à moteur.
+  piege: 'Voiture et moto : les cyclomoteurs restent admis. Avec un troisième symbole de cyclomoteur, tous les véhicules à moteur sont interdits.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: b7b
+    legende: 'Trois symboles : tous les véhicules à moteur.'
 - id: b7b
   type: panneau
   code: B7b
@@ -186,12 +198,15 @@
   image:
     commons: France road sign B8.svg
   nom: Accès interdit aux véhicules affectés au transport de marchandises
-  signification: Interdiction d'accès aux véhicules de transport de marchandises (camions, camionnettes). Un panonceau M4f peut limiter l'interdiction aux véhicules dépassant un certain PTAC (ex. « 3,5 t »).
+  signification: Accès interdit aux véhicules de transport de marchandises, camions et camionnettes. Un panonceau de tonnage peut restreindre l’interdiction aux véhicules dont le poids maximal autorisé dépasse la valeur indiquée.
   conduite: Ne concerne pas les voitures particulières.
-  piege: B8 = interdit aux camions quel que soit le poids ; B13 = interdit au-delà du poids indiqué.
+  piege: Le camion vise le transport de marchandises. Un nombre de tonnes dans le rond rouge vise le poids réel du véhicule, quelle que soit sa catégorie.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: b13
+    legende: 'Tonnage : limite de poids réel, toutes catégories.'
 - id: b9a
   type: panneau
   code: B9a
@@ -211,10 +226,17 @@
   nom: Accès interdit aux cycles
   signification: Accès interdit aux cycles, aux EDPM et aux cyclomobiles légers.
   conduite: Le cycliste doit prendre un autre itinéraire ; il peut éventuellement passer à pied en poussant son vélo (il devient piéton).
-  piege: 'Piège des trois vélos : rond rouge (B9b) interdit ; rond bleu (B22a) piste obligatoire ; carré bleu (C113) piste conseillée ; triangle (A21) débouché de cyclistes.'
+  piege: 'Avec le même symbole de vélo : rond rouge = accès interdit ; rond bleu = piste obligatoire ; carré bleu = piste conseillée ; triangle = débouché de cyclistes.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: b22a
+    legende: 'Rond bleu : piste obligatoire.'
+  - ref: c113
+    legende: 'Carré bleu : piste conseillée.'
+  - ref: a21
+    legende: 'Triangle : débouché de cyclistes.'
 - id: b9g
   type: panneau
   code: B9g
@@ -282,7 +304,12 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: Rond rouge = maximum (B14) ; rond bleu = minimum (B25) ; carré bleu = conseillé (C4a) ; fin = blanc barré (B33).
+  piege: Pour une vitesse, le rond rouge fixe un maximum, le rond bleu un minimum et le carré bleu une vitesse conseillée.
+  comparaisons:
+  - ref: b25
+    legende: 'Rond bleu : vitesse minimale.'
+  - ref: c4a
+    legende: 'Carré bleu : vitesse conseillée.'
 - id: b15
   type: panneau
   code: B15
@@ -291,11 +318,14 @@
   nom: Cédez le passage à la circulation venant en sens inverse
   signification: 'Dans un passage étroit, céder le passage aux véhicules venant en sens inverse : la priorité est à ceux d''en face.'
   conduite: Ralentir, s'arrêter avant le rétrécissement si un véhicule arrive en face, et ne s'engager que lorsque la voie est libre.
-  complement: Côté non prioritaire ; en face, le C18.
-  piege: 'La flèche ROUGE désigne toujours celui qui cède : sur B15 elle est à droite, c''est moi.'
+  complement: De l’autre côté du passage étroit, le panneau carré bleu donne la priorité au sens opposé.
+  piege: 'Ma direction est celle de la flèche vers le haut : elle est rouge, je cède le passage.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: c18
+    legende: 'De l’autre côté : le sens opposé a la priorité.'
 - id: b16
   type: panneau
   code: B16
@@ -316,7 +346,7 @@
   nom: Interdiction de circuler sans maintenir un intervalle minimal
   signification: 'Interdiction aux véhicules de circuler sans maintenir entre eux un intervalle au moins égal à la distance indiquée (ex. 70 m) : tunnels, ponts, cols.'
   conduite: Maintenir la distance indiquée avec le véhicule qui précède ; s'aider des repères au sol (chevrons, plots) quand ils existent.
-  piege: 'Fréquent à l''entrée des tunnels (ex. Mont-Blanc : 150 m). Ne pas confondre avec B14 (vitesse).'
+  piege: Le nombre suivi de « m » est une distance à garder, pas une vitesse. C’est particulièrement utile dans les tunnels.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

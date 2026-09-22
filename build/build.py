@@ -236,6 +236,17 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
             errors.append(f"id dupliqué: {i} (x{c})")
     for kind in KINDS:
         for it in data[kind]:
+            comparisons = it.get("comparaisons", [])
+            if not isinstance(comparisons, list):
+                errors.append(f"{it['id']}: comparaisons doit être une liste")
+                continue
+            for comparison in comparisons:
+                if (not isinstance(comparison, dict) or
+                        not isinstance(comparison.get("ref"), str) or
+                        comparison.get("ref") not in recon_by_id or
+                        not isinstance(comparison.get("legende"), str) or
+                        not comparison["legende"].strip()):
+                    errors.append(f"{it['id']}: comparaison attendue : ref de reconnaissance et legende non vide")
             for other in it.get("dedup_ok", []) or []:
                 if other not in ids:
                     errors.append(f"{it['_file']}:{it.get('id')}: dedup_ok cite une note inconnue {other}")
@@ -577,6 +588,18 @@ def img_tag(fname: str) -> str:
     return f'<img src="{fname}">'
 
 
+def feedback_html(note: dict, field: str, names: dict[str, str]) -> str:
+    """Reuse packaged recognition media in answer-only, captioned comparisons."""
+    result = inline_md(note.get(field, ""))
+    if note.get("comparaisons"):
+        figures = []
+        for comparison in note["comparaisons"]:
+            figures.append('<figure>' + img_tag(names[comparison["ref"]]) +
+                           '<figcaption>' + inline_md(comparison["legende"]) + '</figcaption></figure>')
+        result += '<div class="cdr-comparisons">' + ''.join(figures) + '</div>'
+    return result
+
+
 def tags_for(it: dict, kind: str) -> list[str]:
     """Tags a learner can search or suspend by; provenance stays in the YAML."""
     t = [f"type::{kind}", f"sous::{it['sous_theme']}", f"parcours::{it['_stage']}"]
@@ -671,41 +694,41 @@ def build_collection(data, names, out_apkg: Path):
             "Question": it.get("question") or TYPE_QUESTION[it["type"]],
             "Nom": md(it["nom"]), "Signification": md(it["signification"]),
             "ConduiteATenir": md(it.get("conduite", "")), "Complement": md(it.get("complement", "")),
-            "Piege": md(it.get("piege", "")), "Code": esc(it.get("code", "")),
+            "Piege": feedback_html(it, "piege", names), "Code": esc(it.get("code", "")),
             "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
         }, "reconnaissance", it)
     for it in data["confusions"]:
         a, b = recon[it["a"]], recon[it["b"]]
         add("CDR Confusion", {
             "Id": it["id"], "ImageA": img_tag(names[a["id"]]), "ImageB": img_tag(names[b["id"]]),
-            "NomA": md(a["nom"]), "NomB": md(b["nom"]), "Difference": md(it["difference"]),
+            "NomA": md(a["nom"]), "NomB": md(b["nom"]), "Difference": feedback_html(it, "difference", names),
             "Code": esc(f"{a.get('code', a['id'])} / {b.get('code', b['id'])}"),
             "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
         }, "confusions", it)
     for it in data["faits"]:
         add("CDR Fait", {
-            "Id": it["id"], "Texte": fait_html(it), "Explication": md(it.get("explication", "")),
+            "Id": it["id"], "Texte": fait_html(it), "Explication": feedback_html(it, "explication", names),
             "Image": img_tag(names[it["id"]]) if it.get("image") else "", "Code": esc(it.get("code", "")),
             "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
         }, "faits", it)
     for it in data["questions"]:
         add("CDR Question", {
             "Id": it["id"], "Question": md(it["question"]), "Reponse": md(it["reponse"]),
-            "Explication": md(it.get("explication", "")),
+            "Explication": feedback_html(it, "explication", names),
             "Image": img_tag(names[it["id"]]) if it.get("image") else "", "Code": esc(it.get("code", "")),
             "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
         }, "questions", it)
     for it in data["affirmations"]:
         add("CDR Affirmation", {
             "Id": it["id"], "Contexte": md(it.get("contexte", "")), "Affirmation": md(it["affirmation"]),
-            "Verdict": it["verdict"], "Pourquoi": md(it["pourquoi"]),
+            "Verdict": it["verdict"], "Pourquoi": feedback_html(it, "pourquoi", names),
             "Image": img_tag(names[it["id"]]) if it.get("image") else "", "Code": esc(it.get("code", "")),
             "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
         }, "affirmations", it)
     for it in data["scenarios"]:
         add("CDR Scenario", {
             "Id": it["id"], "Image": img_tag(names[it["id"]]), "Question": md(it["question"]),
-            "Reponse": md(it["reponse"]), "Explication": md(it.get("explication", "")), "Code": esc(it.get("code", "")),
+            "Reponse": md(it["reponse"]), "Explication": feedback_html(it, "explication", names), "Code": esc(it.get("code", "")),
             "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
         }, "scenarios", it)
 

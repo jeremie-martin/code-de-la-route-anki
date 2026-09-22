@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from build.build import curriculum, load_all, validate, lint, inline_md, fait_html
+from build.build import curriculum, load_all, validate, lint, inline_md, fait_html, feedback_html
 from build.learning import card_plan, objectives, annotate, validate_objectives
 from build.priority import passes_before
 from build.models import notetypes
@@ -17,6 +17,24 @@ class LearningTests(unittest.TestCase):
 
     def test_library_and_objectives_are_valid(self):
         self.assertEqual(validate(self.data), [])
+
+    def test_comparisons_require_existing_media_and_a_caption(self):
+        for value in ("a13b", [{}], [{"ref": []}],
+                      [{"ref": "missing", "legende": "Passage piéton"}],
+                      [{"ref": "a13b", "legende": " "}]):
+            with self.subTest(value=value):
+                data = copy.deepcopy(self.data)
+                data['reconnaissance'][0]['comparaisons'] = value
+                self.assertTrue(any('comparaison' in e for e in validate(data)))
+
+    def test_comparison_feedback_reuses_media_and_escapes_caption(self):
+        note = {'piege': 'Deux **enfants**.', 'comparaisons': [
+            {'ref': 'a13b', 'legende': 'Piéton <sur des bandes>'}]}
+        result = feedback_html(note, 'piege', {'a13b': 'cdr_a13b.png'})
+        self.assertIn('<b>enfants</b>', result)
+        self.assertIn('<img src="cdr_a13b.png"', result)
+        self.assertIn('<figcaption>Piéton &lt;sur des bandes&gt;</figcaption>', result)
+        self.assertEqual(feedback_html({}, 'piege', {}), '')
 
     def test_no_extension_card_interrupts_foundation(self):
         plan = card_plan(self.data, curriculum(self.data))

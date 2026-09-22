@@ -12,7 +12,12 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: J1 (virage) = bande BLANCHE ; J3 (intersection) = bande ROUGE ; J6 (délinéateur) = bande noire oblique.
+  piege: La bande blanche repère un virage ; la bande rouge repère une intersection. La balise à bande noire oblique guide le long du bord de la chaussée.
+  comparaisons:
+  - ref: j3
+    legende: 'Bande rouge : intersection.'
+  - ref: j6
+    legende: 'Bande noire : guidage le long de la chaussée.'
 - id: j3
   type: balise
   code: J3
@@ -26,7 +31,10 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: 'Bande ROUGE = intersection (J3) ; bande blanche = virage (J1). Le J3 ne dit rien du régime de priorité : il signale seulement qu''une intersection est là.'
+  piege: La bande rouge repère une intersection ; la bande blanche, un virage. Cette balise ne dit pas qui est prioritaire.
+  comparaisons:
+  - ref: j1
+    legende: 'Bande blanche : virage.'
 - id: j4
   type: balise
   code: J4
@@ -38,7 +46,10 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: Chevrons blancs sur fond BLEU = J4 (virage) ; sur fond VERT = J14b (musoir, divergence).
+  piege: Les chevrons sur fond bleu guident dans un virage. Les flèches blanches divergentes sur fond vert signalent une séparation de courants de circulation.
+  comparaisons:
+  - ref: j14a
+    legende: 'Flèches divergentes : séparation de courants de circulation.'
 - id: j5
   type: balise
   code: J5
@@ -46,7 +57,7 @@
     commons: France road sign J5.svg
   nom: Balise de tête d'îlot (contournement par la droite)
   signification: 'Balise carrée bleue à large flèche blanche oblique, en tête d''un îlot ou d''un terre-plein : passer à droite.'
-  conduite: Passer à droite de la balise (comme B21a1).
+  conduite: Je passe à droite de la balise.
   complement: En tête d’îlot, souvent à l’entrée d’un giratoire.
   theme: L
   sous_theme: balises
@@ -62,7 +73,12 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: J1 (virage) = bande blanche ; J3 (intersection) = bande rouge ; J6 (délinéateur) = bande noire oblique + catadioptre blanc.
+  piege: La bande noire oblique et le réflecteur blanc guident le long de la chaussée. Une bande blanche repère un virage ; une bande rouge, une intersection.
+  comparaisons:
+  - ref: j1
+    legende: 'Bande blanche : virage.'
+  - ref: j3
+    legende: 'Bande rouge : intersection.'
 - id: j7
   type: balise
   code: J7
@@ -71,7 +87,7 @@
   nom: Manche à air
   signification: Manche à air indiquant l'endroit où souffle fréquemment un vent latéral violent, ainsi que sa direction et son intensité (manche horizontale = vent fort).
   conduite: Tenir fermement le volant, ralentir, anticiper les rafales à la sortie d'un abri ; attention aux deux-roues et véhicules hauts.
-  complement: Signale l’endroit précis exposé au vent, en complément du panneau A24.
+  complement: La manche à air précise l’endroit exposé, en complément du triangle annonçant un vent latéral.
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -83,7 +99,7 @@
   nom: Balise de passage à niveau
   signification: Balises blanches à trois, deux puis une bande rouge oblique, placées à 150 m, 100 m et 50 m du passage à niveau (hors agglomération).
   conduite: 'Ralentir progressivement : à la balise à une seule bande, le passage à niveau est à 50 m.'
-  complement: La première balise (3 bandes) est sous le panneau A7 ou A8. Elles peuvent manquer en agglomération.
+  complement: La première balise, à trois bandes, accompagne le panneau annonçant le passage à niveau. Ces balises peuvent manquer en agglomération.
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -95,7 +111,7 @@
   nom: Balise de signalisation d'obstacle
   signification: Balise à bandes obliques bleues et blanches signalant un obstacle permanent proche de la chaussée.
   conduite: Garder ses distances avec l'obstacle signalé.
-  complement: Bandes bleues/blanches = obstacle permanent ; rouges/blanches = obstacle temporaire (K5c, K8).
+  complement: Les bandes bleues et blanches signalent un obstacle permanent ; les dispositifs rouges et blancs servent aux obstacles temporaires.
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

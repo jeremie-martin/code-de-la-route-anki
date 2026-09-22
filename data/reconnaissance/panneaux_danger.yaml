@@ -29,7 +29,7 @@
     commons: France road sign A1c.svg
   nom: Succession de virages dont le premier est à droite
   signification: Annonce une succession de virages, le premier étant à droite.
-  conduite: Ralentir, rester à droite sur toute la section ; un panonceau M2 peut préciser la longueur de la section sinueuse.
+  conduite: Je ralentis et reste à droite sur toute la section ; un panonceau peut préciser la longueur de la succession de virages.
   piege: c'est le premier virage dessiné (en bas) qui donne le sens ; ici le premier est à droite.
   theme: L
   sous_theme: panneaux
@@ -53,10 +53,13 @@
   nom: Cassis ou dos-d'âne
   signification: Annonce une déformation naturelle ou accidentelle de la chaussée (creux « cassis » ou bosse « dos-d'âne ») qui n'est pas un aménagement volontaire.
   conduite: Ralentir fortement ; risque de perte d'adhérence et de dommages au véhicule.
-  complement: A2a (deux bosses) = déformation de la route ; A2b (une bosse) = ralentisseur construit volontairement.
+  complement: Deux bosses représentent une déformation de la chaussée ; une seule bosse annonce un ralentisseur aménagé.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: a2b
+    legende: 'Une seule bosse : ralentisseur aménagé.'
 - id: a2b
   type: panneau
   code: A2b
@@ -64,11 +67,14 @@
     commons: France road sign A2b.svg
   nom: Ralentisseur de type dos-d'âne
   signification: Annonce un ralentisseur aménagé de type dos-d'âne (bosse) destiné à faire ralentir les véhicules.
-  conduite: Ralentir à la vitesse indiquée par le panneau B14 qui l'accompagne généralement (30 km/h).
+  conduite: Je ralentis avant le ralentisseur et respecte la limitation affichée, souvent 30 km/h.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: A2b = annonce (triangle) ; C27 = position (carré bleu).
+  piege: Le triangle annonce le ralentisseur ; le carré bleu en indique l’emplacement.
+  comparaisons:
+  - ref: c27
+    legende: 'Carré bleu : le ralentisseur est ici.'
 - id: a3
   type: panneau
   code: A3
@@ -76,7 +82,7 @@
     commons: France road sign A3.svg
   nom: Chaussée rétrécie
   signification: Annonce un rétrécissement de la chaussée par les deux côtés.
-  conduite: Ralentir et se replacer au centre de sa voie ; à une seule voie, appliquer la règle du croisement (B15/C18).
+  conduite: Je ralentis et reste dans ma voie. Si deux véhicules ne peuvent pas se croiser, je lis les panneaux de priorité et ne m’engage que si je peux dégager.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -167,10 +173,13 @@
   nom: Endroit fréquenté par les enfants
   signification: Annonce un endroit fréquenté par les enfants (école, colonie, terrain de jeux).
   conduite: Ralentir fortement (souvent limité à 30 km/h), être prêt à s'arrêter ; les enfants sont imprévisibles.
-  piege: 'Piège classique : A13a (enfants) ≠ A13b (passage pour piétons).'
+  piege: 'Deux enfants qui courent : lieu fréquenté par des enfants. Le piéton sur des bandes annonce, lui, un passage pour piétons.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: a13b
+    legende: 'Un piéton sur des bandes : passage pour piétons annoncé.'
 - id: a13b
   type: panneau
   code: A13b
@@ -182,13 +191,18 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: c20a
+    legende: 'Carré bleu : le passage est ici.'
+  - ref: a13a
+    legende: 'Deux enfants : lieu fréquenté par des enfants.'
 - id: a14
   type: panneau
   code: A14
   image:
     commons: France road sign A14.svg
   nom: Autres dangers
-  signification: Annonce un danger qui n'a pas de panneau spécifique ; le panonceau M9 en précise la nature.
+  signification: Annonce un danger sans symbole spécifique ; le texte du panonceau en précise la nature.
   conduite: Ralentir et lire le panonceau ; sans panonceau, redoubler de vigilance.
   complement: C'est le seul panneau de danger permanent qui doit normalement être complété par un panonceau explicatif.
   theme: L
@@ -261,7 +275,7 @@
   signification: Annonce qu'après une section à sens unique ou à chaussées séparées, la circulation redevient bidirectionnelle sur la même chaussée.
   conduite: 'Serrer à droite : la partie gauche de la chaussée n''est plus une voie dans mon sens.'
   complement: Seul panneau de danger implanté à l'endroit même du danger, et non 150 m avant.
-  piege: 'Il n''existe pas de panneau « fin de sens unique » : c''est A18 qui l''annonce. Ne pas confondre avec C24a.'
+  piege: 'Les deux flèches opposées dans le triangle annoncent une circulation à double sens : je dois désormais attendre des véhicules en face.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -296,10 +310,17 @@
   nom: Débouché de cyclistes venant de droite ou de gauche
   signification: Annonce un endroit où des cyclistes débouchent fréquemment sur la chaussée (sortie de piste cyclable, traversée).
   conduite: Ralentir, contrôler les côtés ; laisser au moins 1 m (agglo) ou 1,5 m (hors agglo) lors du dépassement d'un cycliste.
-  piege: triangle = danger (cyclistes qui débouchent) ; rond bleu = piste obligatoire (B22a) ; carré bleu = piste conseillée (C113) ; rond rouge = interdit aux cycles (B9b).
+  piege: 'Avec un vélo, la forme change le sens : triangle = danger ; rond bleu = piste obligatoire ; carré bleu = piste conseillée ; rond rouge = accès interdit.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: b9b
+    legende: 'Rond rouge : accès interdit aux cycles.'
+  - ref: b22a
+    legende: 'Rond bleu : piste obligatoire.'
+  - ref: c113
+    legende: 'Carré bleu : piste conseillée.'
 - id: a24
   type: panneau
   code: A24
@@ -308,7 +329,7 @@
   nom: Vent latéral
   signification: 'Annonce une zone exposée à des vents latéraux violents : pont, viaduc, plaine, sortie de tunnel.'
   conduite: Ralentir, tenir le volant à deux mains, garder ses distances des véhicules hauts et des deux-roues.
-  complement: Souvent complété par une manche à air (J7), qui balise l'endroit précis.
+  complement: Une manche à air peut préciser l’endroit exposé et montrer la direction et la force du vent.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France

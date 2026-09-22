@@ -19,6 +19,8 @@ from build.preview import CHROME, OUT
 from build.verify import import_package
 
 SAMPLES = {
+    'a13a', 'a13b', 'b9b', 'j1', 'r-b26-chaines-complement', 'conf-t1-dissuasion',
+    'l-balises-j10', 'a-rcp-dae',
     'scn-dep-cycliste-ligne-continue', 'scn-dep-ligne-discontinue-libre',
     'scn-dep-dissuasion-tracteur', 'c25a',
     'a-hemorragie',

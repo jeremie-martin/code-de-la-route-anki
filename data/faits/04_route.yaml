@@ -8,12 +8,15 @@
 - id: r-loi-montagne-periode
   texte: Dans les communes concernées par l’obligation saisonnière d’équipements hiver, la période annuelle est
     du {{c1::1er novembre au 31 mars}}.
-  explication: 'Pour une voiture : quatre pneus hiver admis (3PMSF) ou dispositifs antidérapants amovibles pour
-    au moins deux roues motrices. Les panneaux B58/B59 bornent la zone ; un B26 peut imposer une mise en service
-    locale. Lire ses compléments.'
+  explication: 'Pour une voiture : quatre pneus hiver admis, marqués 3PMSF, ou des dispositifs antidérapants amovibles pour au moins deux roues motrices. Le panneau d’entrée de zone fixe le régime saisonnier ; le rond bleu avec une roue chaînée concerne l’équipement en service sur la section.'
   theme: R
   sous_theme: intemperies
   source: Décret n° 2020-1264 du 16 octobre 2020 ; service-public.fr F19459
+  comparaisons:
+  - ref: b58
+    legende: Entrée de zone d’équipement hivernal.
+  - ref: b26
+    legende: Équipement en service sur la section.
 - id: r-tunnel-niches
   texte: Dans un tunnel, les issues d’évacuation sont signalées en {{c1::vert}}.
   explication: Les niches de sécurité contiennent des moyens d’alerte et de lutte contre l’incendie ; elles ne sont

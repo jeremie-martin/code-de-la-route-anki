@@ -13,8 +13,7 @@
   contexte: Route hors agglomération, panneau « passage à niveau » avec panonceau « signal automatique ».
   affirmation: Circulant hors agglomération, le passage à niveau se situe à environ 150 m.
   verdict: vrai
-  pourquoi: Hors agglomération, le panneau annonce le passage à 150 m ; les balises J10 égrènent ensuite 150 m (trois
-    bandes), 100 m (deux) et 50 m (une). En agglomération, ce serait 50 m.
+  pourquoi: 'Hors agglomération, les balises à bandes rouges décomptent l’approche : trois bandes à environ 150 m, deux à 100 m, une à 50 m. Je ralentis progressivement avant le passage à niveau.'
   theme: R
   sous_theme: passages_a_niveau
   source: Sécurité routière — Exemples de nouvelles questions (Q19) ; IISR
@@ -250,8 +249,7 @@
 - id: aff-r-vent-manche
   affirmation: Une manche à air placée à l'horizontale signale un vent fort.
   verdict: vrai
-  pourquoi: 'La manche à air donne en temps réel la force et la direction du vent : pendante à la verticale, pas
-    de vent ; tendue à l''horizontale, vent fort. Le panneau A24 annonce la zone exposée.'
+  pourquoi: 'La manche à air renseigne sur le vent : pendante, elle indique peu ou pas de vent ; tendue à l’horizontale, un vent fort. Le triangle portant ce symbole annonce une zone exposée.'
   theme: R
   sous_theme: intemperies
   source: IISR (A24, J7) ; Ornikar — Conduire par grand vent

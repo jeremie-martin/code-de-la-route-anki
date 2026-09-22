@@ -6,7 +6,7 @@
     commons: France road sign C1a.svg
   nom: Lieu aménagé pour le stationnement
   signification: Indique un parking ou un emplacement aménagé pour le stationnement (gratuit, sauf indication).
-  conduite: Se garer uniquement sur les emplacements ; des panonceaux (M4, M6, M3b) précisent catégories, conditions et direction.
+  conduite: 'Je me gare sur les emplacements autorisés et lis les panonceaux : usagers concernés, conditions et direction du parking.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -41,7 +41,7 @@
     commons: France road sign C8.svg
   nom: Emplacement d'arrêt d'urgence
   signification: Indique un emplacement (refuge) où l'arrêt d'urgence est possible sur une route sans bande d'arrêt d'urgence (autoroute, route à chaussées séparées, tunnel).
-  conduite: N'y stationner qu'en cas de panne ou d'urgence ; panonceaux M9e/M9f signalent un poste d'appel d'urgence et/ou un extincteur.
+  conduite: Je n’y stationne qu’en cas de panne ou d’urgence ; les panonceaux peuvent signaler un poste d’appel ou un extincteur.
   complement: Un arrêt hors urgence sur cet emplacement est interdit.
   theme: L
   sous_theme: panneaux
@@ -54,11 +54,14 @@
   nom: Circulation à sens unique
   signification: 'La chaussée est à sens unique : tous les véhicules circulent dans le sens de la flèche ; le demi-tour y est impossible.'
   conduite: Rester à droite, sauf pour tourner à gauche ou dépasser ; attention aux cyclistes à contresens si double-sens cyclable.
-  complement: L’autre extrémité de la voie porte un sens interdit (B1).
-  piege: C12 (rectangle bleu) = sens unique ; B21b (rond bleu) = tout droit obligatoire.
+  complement: À l’autre extrémité, un sens interdit empêche les véhicules d’entrer face à moi.
+  piege: La flèche sur fond bleu carré indique un sens unique ; dans un rond bleu, elle impose d’aller tout droit.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: b21b
+    legende: 'Rond bleu : tout droit obligatoire.'
 - id: c13a
   type: panneau
   code: C13a
@@ -98,13 +101,16 @@
   image:
     commons: France road sign C18.svg
   nom: Priorité par rapport à la circulation venant en sens inverse
-  signification: Dans un passage étroit, j'ai la priorité sur les véhicules venant en sens inverse (qui voient un B15).
+  signification: Dans ce passage étroit, j’ai la priorité sur les véhicules venant en sens inverse.
   conduite: 'S''engager en restant prudent : la priorité ne dispense pas de vérifier que l''autre a bien cédé le passage.'
-  complement: Côté prioritaire du passage étroit ; en face, le B15.
+  complement: En face, le panneau rond bordé de rouge impose aux autres véhicules de me céder le passage.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: 'La flèche ROUGE désigne toujours celui qui cède : sur C18 elle est à gauche, c''est l''autre.'
+  piege: 'Ma direction est celle de la flèche vers le haut. La flèche rouge descendante représente le sens opposé : c’est lui qui cède.'
+  comparaisons:
+  - ref: b15
+    legende: 'De l’autre côté : le sens opposé doit céder.'
 - id: c20a
   type: panneau
   code: C20a
@@ -117,7 +123,10 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: Triangle A13b = annonce (150 m avant) ; carré bleu C20a = position.
+  piege: Le triangle annonce un passage pour piétons plus loin ; le carré bleu en indique l’emplacement.
+  comparaisons:
+  - ref: a13b
+    legende: 'Triangle : passage pour piétons plus loin.'
 - id: c20c
   type: panneau
   code: C20c
@@ -206,7 +215,7 @@
     commons: France road sign C26b.svg
   nom: Voie de détresse à gauche
   signification: Voie de détresse située à gauche de la chaussée.
-  conduite: Même conduite que C26a.
+  conduite: En cas de défaillance des freins, j’emprunte la voie de détresse pour immobiliser le véhicule ; je la laisse libre en circulation normale.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -222,7 +231,10 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: Triangle A2b = annonce ; carré bleu C27 = position.
+  piege: Le triangle annonce le ralentisseur ; le carré bleu en indique l’emplacement.
+  comparaisons:
+  - ref: a2b
+    legende: 'Triangle : le ralentisseur est plus loin.'
 - id: c28
   type: panneau
   code: C28
@@ -253,7 +265,7 @@
     commons: France road sign C29b.svg
   nom: 'Créneau de dépassement à trois voies : deux voies dans mon sens'
   signification: 'Début d''un créneau de dépassement : la chaussée comporte trois voies dont deux affectées à mon sens de circulation ; le dépassement y est facilité.'
-  conduite: Utiliser la voie de gauche uniquement pour dépasser, puis se rabattre avant la fin du créneau (annoncée par C30).
+  conduite: Je n’utilise la voie de gauche que pour dépasser et me rabats avant la fin du créneau de dépassement annoncé.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -345,7 +357,7 @@
     commons: France road sign C111.svg
   nom: Entrée d'un tunnel
   signification: 'Entrée d''un tunnel : feux de croisement obligatoires, demi-tour, arrêt et stationnement interdits hors aires d''urgence.'
-  conduite: Allumer les feux de croisement, retirer les lunettes de soleil, garder ses distances (2 s ou l'intervalle du B17).
+  conduite: J’allume les feux de croisement, retire mes lunettes de soleil et garde au moins deux secondes d’écart, ou davantage si un panneau impose une distance supérieure.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -369,7 +381,7 @@
   nom: Piste ou bande cyclable conseillée et réservée aux cycles
   signification: Piste ou bande cyclable conseillée pour les cycles à deux ou trois roues.
   conduite: 'En voiture : ne pas y circuler ni s’y arrêter.'
-  complement: EDPM et cyclomobiles légers doivent l’emprunter, sauf décision locale contraire signalée. M4d2 peut autoriser les cyclomoteurs.
+  complement: Les trottinettes électriques et cyclomobiles légers doivent l’emprunter, sauf décision locale contraire signalée. Un panonceau avec un cyclomoteur peut aussi autoriser ces véhicules.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
@@ -395,10 +407,13 @@
   signification: 'Début d''autoroute : route réservée aux véhicules à moteur rapides, sans croisement à niveau ; arrêt, demi-tour et marche arrière interdits.'
   conduite: S'insérer par la voie d'accélération en cédant le passage, rouler à droite, ne pas circuler sur la BAU.
   complement: 130 km/h (110 sous la pluie, 110 en permis probatoire) ; 80 minimum sur la voie de gauche.
-  piege: Autoroute = pictogramme du pont (C207) ; route pour automobiles = voiture de face (C107).
+  piege: 'Le symbole de pont indique une autoroute. La voiture vue de face indique une route réservée aux automobiles : elle n’est pas forcément une autoroute.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: c107
+    legende: 'Voiture de face : route réservée aux automobiles.'
 - id: c208
   type: panneau
   code: C208

@@ -3,7 +3,24 @@
 Les éditions v1 à v8 sont les jalons d’une même journée de travail (21 septembre 2026) ; les détails sont dans
 l’historique git.
 
-## v9 — 21 septembre 2026 (édition actuelle)
+## v10 — 22 septembre 2026 (édition actuelle)
+
+Révision ciblée de 150 notes pour rendre l’apprentissage autonome : les codes de panneaux et de marquages
+laissent place aux indices visibles et aux décisions de conduite. Les références techniques restent dans
+« Sources ». Les comparaisons A/B existantes sont conservées ; 40 notes montrent désormais au verso des
+exemples supplémentaires légendés, à partir des médias déjà présents. Les questions sur les chaînes montrent
+le panneau ; quelques sigles de secours, renvois opaques et points de vue ambigus sont reformulés.
+
+Style Essential repris et consolidé dans `build/cards.css` : réponses bleu discret, feedback sans encadré,
+espacement compact et modes clair/sombre. Documentation du champ `comparaisons`, contrôle des références et
+vérification des images dans le paquet importé. 1 051 notes / 1 128 cartes, sans cartes supplémentaires.
+
+Validation des données, 21 tests et import/réimport Anki réussis ; résultats du contrôle navigateur dans
+[out/RENDU](out/RENDU.md), liés à l’empreinte du paquet. Captures inspectées : enfants/piétons, familles vélo,
+marquages, chaînes et cartes de secours. Consultations juridiques ciblées consignées dans le registre ; cette
+édition ne constitue pas une nouvelle vérification juridique exhaustive ni un essai sur téléphone réel.
+
+## v9 — 21 septembre 2026
 
 Révision après deux séries de relectures indépendantes : qualité des cartes vue par l’apprenant, exactitude et
 cohérence, couverture et structure, trajectoire du projet ; puis simulation de transfert à l’épreuve (131

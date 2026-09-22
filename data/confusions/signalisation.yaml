@@ -19,9 +19,7 @@
 - id: conf-a2a-a2b
   a: a2a
   b: a2b
-  difference: '**A** (deux bosses) : cassis ou dos-d''âne — déformation de la chaussée, ralentir. **B** (une
-    bosse) : ralentisseur de type dos-d''âne aménagé (agglomération, souvent 30 km/h), signalé aussi par le
-    C27 et des triangles au sol.'
+  difference: '**A**, deux bosses : déformation de la chaussée, cassis ou dos-d’âne. **B**, une bosse : ralentisseur aménagé. Dans les deux cas, je ralentis avant l’obstacle.'
   theme: L
   sous_theme: panneaux
   source: IISR 1re partie
@@ -227,20 +225,14 @@
 - id: conf-b52-b54
   a: b52
   b: b54
-  difference: '**A** (piéton, cycliste, voiture, « 20 ») : zone de rencontre — tous circulent, piétons prioritaires,
-    20 km/h. **B** (adulte et enfant) : aire piétonne — réservée aux piétons, véhicules autorisés seulement
-    pour la desserte, à l''allure du pas. Ne pas confondre avec B22b (rond bleu) : chemin obligatoire pour
-    piétons.'
+  difference: '**A**, piéton, cycliste, voiture et « 20 » : zone de rencontre, piétons prioritaires et 20 km/h au maximum. **B**, adulte et enfant : aire piétonne, véhicules autorisés seulement pour la desserte, à l’allure du pas.'
   theme: L
   sous_theme: panneaux
   source: Code de la route, art. R110-2
 - id: conf-b30-b56
   a: b30
   b: b56
-  difference: 'Deux panneaux de zone (rectangle blanc avec le mot ZONE) : **A** contient un B14 « 30 » — zone
-    30 (30 km/h, double sens cyclable par défaut). **B** contient un rond rouge vide (B0) avec un panonceau
-    de restriction — zone à faibles émissions (ZFE) : accès selon la vignette Crit''Air. Valables jusqu''au
-    panneau de fin de zone.'
+  difference: '**A** affiche « ZONE 30 » : la vitesse est limitée à 30 km/h dans la zone, même après une intersection. **B** annonce une zone à faibles émissions : le panonceau précise les véhicules et vignettes Crit’Air admis. Ces règles valent jusqu’à la sortie de leur zone.'
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie
@@ -342,9 +334,7 @@
 - id: conf-t1-dissuasion
   a: marq-ligne-discontinue-t1
   b: marq-ligne-dissuasion
-  difference: '**Discontinue ordinaire (T1)** : traits courts (3 m), intervalles longs (10 m) — dépassement autorisé.
-    **Dissuasion (T3)** : traits longs (3 m), intervalles courts (1,33 m) — dépassement déconseillé, sauf véhicule
-    très lent. Plus il y a de peinture, plus le message est restrictif.'
+  difference: '**A**, grands intervalles : ligne discontinue ordinaire, franchissable si la manœuvre est sûre. **B**, intervalles courts : ligne de dissuasion ; je réserve le dépassement aux véhicules lents et seulement si la visibilité le permet. Je reconnais l’espacement, sans mesurer les traits.'
   theme: L
   sous_theme: marquages
   source: IISR 7e partie, art. 113
@@ -388,8 +378,7 @@
 - id: conf-k10a-k10b
   a: k10a
   b: k10b
-  difference: 'Piquet mobile K10 tenu par un signaleur de chantier : **face verte** = passage autorisé (A)
-    ; **face rouge** = arrêt (B). Ses ordres priment sur la signalisation fixe.'
+  difference: 'Le signaleur présente un piquet à deux faces : **A, verte**, autorise le passage ; **B, rouge**, impose l’arrêt. Je suis la face tournée vers moi.'
   theme: L
   sous_theme: panneaux
   source: IISR 8e partie

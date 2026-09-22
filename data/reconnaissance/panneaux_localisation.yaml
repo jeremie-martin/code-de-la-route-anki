@@ -31,7 +31,7 @@
       text: Le Bourg
   nom: Localisation d'un lieu-dit ou d'un lieu traversé
   signification: 'Nom d''un lieu traversé qui n''est pas une agglomération : lieu-dit, hameau, forêt, col, pont. Aucune règle particulière.'
-  conduite: 'Aucune obligation : la limitation reste celle de la route (sauf panneau B14 associé).'
+  conduite: 'Ce panneau ne change pas la limitation : je conserve celle applicable à la route, sauf autre panneau de vitesse.'
   piege: Lettres ITALIQUES blanches sur fond noir = lieu-dit ; lettres droites noires sur fond blanc bordé de rouge = agglomération.
   theme: L
   sous_theme: panneaux

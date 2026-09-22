@@ -51,13 +51,16 @@
   image:
     commons: France road sign B30 (30).svg
   nom: Entrée d'une zone 30
-  signification: 'Entrée d''une zone 30 : 30 km/h dans toutes les rues de la zone, jusqu''au panneau de sortie B51.'
+  signification: 'Entrée d’une zone 30 : 30 km/h dans les rues de la zone, jusqu’au panneau de sortie de zone.'
   conduite: Rouler à 30 km/h maximum ; s'attendre à des cyclistes à contresens et à des aménagements (plateaux, chicanes).
   complement: Double-sens cyclable par défaut.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
-  piege: B14 30 (rond seul) = 30 km/h sur cette rue ; B30 (ZONE 30) = 30 km/h dans toute la zone.
+  piege: Le rond « 30 » limite la vitesse sur la section concernée ; le panneau « ZONE 30 » s’applique aussi après les intersections, jusqu’à la sortie de zone.
+  comparaisons:
+  - ref: b14
+    legende: 'Rond de vitesse : une section, sans portée de zone.'
 - id: b51
   type: panneau
   code: B51
@@ -90,17 +93,20 @@
   nom: Entrée d'une aire piétonne
   signification: 'Entrée d''une aire piétonne : zone affectée aux piétons, qui y sont prioritaires ; seuls les véhicules autorisés y circulent, à l''allure du pas.'
   conduite: Ne pas y entrer sans autorisation (panonceau) ; sinon rouler au pas, priorité absolue aux piétons.
-  piege: 'Piège de forme : B52 et B54 sont des carrés BLEUS ; B30, B56, B58 sont blancs bordés de rouge.'
+  piege: 'L’aire piétonne se parcourt à l’allure du pas pour les véhicules autorisés. Dans une zone de rencontre, le panneau montre aussi une voiture et « 20 » : les véhicules y circulent à 20 km/h au maximum.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  comparaisons:
+  - ref: b52
+    legende: 'Zone de rencontre : 20 km/h, piétons prioritaires.'
 - id: b56
   type: panneau
   code: B56
   image:
     commons: France road sign B56.svg
   nom: Entrée d'une zone à circulation restreinte (ZFE)
-  signification: 'Entrée d''une zone à faibles émissions (ZFE-m) : accès interdit aux véhicules dont la vignette Crit''Air ne figure pas parmi celles autorisées par le panonceau M11d.'
+  signification: 'Entrée d’une zone à faibles émissions : l’accès dépend de la vignette Crit’Air et des conditions indiquées sur le panonceau.'
   conduite: Vérifier sa vignette Crit'Air et les horaires du panonceau ; ne pas entrer si le véhicule est concerné (68 €).
   complement: Un panonceau précise les catégories, jours et heures concernés.
   theme: L
@@ -118,4 +124,7 @@
   theme: L
   sous_theme: panneaux
   source: Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12
-  piege: B58 porte sur l’équipement saisonnier de la zone ; B26 peut demander un équipement en service sur une section. Lire son complément.
+  piege: 'La zone impose un équipement hivernal pendant la période indiquée. Le panneau rond bleu avec une roue chaînée porte sur l’équipement à utiliser sur la section : je lis aussi son éventuel complément.'
+  comparaisons:
+  - ref: b26
+    legende: 'Roue chaînée : équipement en service sur la section.'

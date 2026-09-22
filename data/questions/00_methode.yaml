@@ -1,8 +1,7 @@
 - id: etg-pictogramme-point-de-vue
   question: Un pictogramme apparaît en haut à droite de la photo (piéton, vélo, moto, poids lourd…). Que signifie-t-il ?
   reponse: Que la question se place du point de vue de cet usager, pas de celui d'un automobiliste.
-  explication: 'Piège classique : la photo est prise au guidon d''un vélo ou d''une trottinette, et les règles à appliquer
-    sont celles de cet usager (piste cyclable, sas vélo, M12…). Toujours vérifier le pictogramme avant de répondre.'
+  explication: 'Une photo prise au guidon d’un vélo ou d’une trottinette appelle les règles de cet usager : piste cyclable, sas vélo, autorisation de franchir un feu dans une direction donnée. Je vérifie le pictogramme avant de répondre.'
   theme: X
   sous_theme: lecture
   source: Prépacode (ENPC) — Nouveau code 2023 ; Codes Rousseau — Nouveautés 2026

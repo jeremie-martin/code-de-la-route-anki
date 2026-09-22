@@ -17,7 +17,7 @@ data/                      bibliothèque de connaissances (YAML, une liste de no
   _meta/sign_exclusions.yaml signaux de l’inventaire sans carte : codes (inventaire), raison, couverts_par (ids)
   _meta/source_checks.yaml registre daté des consultations de sources (portée écrite, notes concernées)
 build/                     build.py (chargement, validation, lint, ordre, paquet) ; models.py (types de notes,
-                           gabarits, CSS) ; learning.py (objectifs, étapes, rapports) ; diagrams.py + gen_images.py
+                           gabarits) ; cards.css (style commun) ; learning.py (objectifs, étapes, rapports) ; diagrams.py + gen_images.py
                            (images générées) ; priority.py (solveur) ; import_signs.py ; commons_fetch.py +
                            commons_index.py (médias Wikimedia) ; verify.py, preview.py, render_check.py, dedup.py,
                            qa_sheet.py, yamlfix.py
@@ -82,7 +82,7 @@ taire un avertissement). Les valeurs contenant « : » se mettent entre guilleme
 - id: conf-b6a1-b6d
   a: b6a1
   b: b6d
-  difference: 'B6a1 (une barre) interdit le stationnement ; B6d (deux barres) interdit aussi l’arrêt.'
+  difference: 'A, une barre rouge : stationnement interdit. B, une croix rouge : arrêt et stationnement interdits.'
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie
@@ -120,6 +120,22 @@ taire un avertissement). Les valeurs contenant « : » se mettent entre guilleme
   sous_theme: voyants
   source: ISO 2575 ; notice constructeur
 ```
+
+Pour montrer un autre signal dans le feedback, ajouter `comparaisons` à la note :
+
+```yaml
+comparaisons:
+- ref: a13b
+  legende: 'Un piéton sur des bandes : passage pour piétons annoncé.'
+```
+
+`ref` réutilise le média d’une reconnaissance ; `legende` explique le détail visible et son sens.
+Le build valide la référence et incorpore l’image au verso, près de l’explication (dans « Piège » pour une
+reconnaissance). Aucun nouveau téléchargement ni carte supplémentaire. L’image principale reste seule au
+recto ; une comparaison au verso n’exige pas d’avoir étudié l’autre signal. Pour tester la distinction,
+utiliser une note `confusions`. Éviter les exemples supplémentaires qui ne changent pas la compréhension.
+Le style partagé est dans `build/cards.css`, adapté du fichier de référence `essential.css` ; reconstruire
+le paquet après une modification du style.
 
 Sous-thèmes par thème (l’ordre est aussi celui de `SUBTHEME_ORDER` dans `build/build.py` ; un sous-thème
 inconnu est signalé par un avertissement et trié en dernier) :

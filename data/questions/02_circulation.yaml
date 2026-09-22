@@ -130,8 +130,7 @@
 - id: l-depassement-interdit-lieux
   question: Sur une route à double sens, je veux dépasser une voiture en empruntant la voie opposée. Quels indices peuvent
     interdire cette manœuvre ?
-  reponse: Une visibilité insuffisante, une ligne continue de mon côté ou un panneau B3 ; et même sans eux, je dois pouvoir
-    me rabattre sans gêner.
+  reponse: Une visibilité insuffisante, une ligne continue de mon côté ou un panneau d’interdiction de dépasser. Même sans eux, je dois pouvoir me rabattre sans gêner.
   explication: Ce cas concerne le dépassement d’une voiture en utilisant le sens opposé ; ne pas en déduire une interdiction
     générale de tout dépassement sur une chaussée à plusieurs voies.
   theme: L
@@ -141,8 +140,7 @@
   question: Quels lieux interdisent de dépasser un véhicule (à quatre roues), même avec une bonne visibilité ?
   reponse: Intersection où je ne suis pas prioritaire, passage à niveau sans barrière, approche d’un passage piéton où un
     véhicule s’arrête ou ralentit, tram ou train arrêté côté voyageurs.
-  explication: 'Dépasser à une intersection reste possible si l''on est sur la route prioritaire (AB6, AB2), aux feux ou avec
-    un agent, et pour dépasser un deux-roues. Dépassement dangereux : 135 €, 3 points.'
+  explication: À une intersection, le dépassement peut rester possible si je suis sur la route prioritaire, si des feux ou un agent règlent le passage, ou si je dépasse un deux-roues. La visibilité et la sécurité de la manœuvre restent indispensables.
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-11 à R414-13
@@ -240,11 +238,15 @@
   question: Quelle différence entre un arrêt et un stationnement ?
   reponse: 'L’arrêt : immobilisation brève pour monter, descendre, charger ou décharger, conducteur prêt à déplacer le véhicule.
     Toute autre immobilisation est un stationnement.'
-  explication: Là où l'arrêt est interdit (ligne jaune continue, B6d), il l'est même pour une minute avec le moteur tournant.
-    Là où seul le stationnement est interdit (ligne jaune discontinue, B6a1), un arrêt bref est admis.
+  explication: Une ligne jaune continue ou un panneau bleu barré d’une croix rouge interdit même un arrêt d’une minute, moteur tournant. Une ligne jaune discontinue ou un panneau à une seule barre interdit seulement le stationnement.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R110-2
+  comparaisons:
+  - ref: b6a1
+    legende: 'Une barre : stationnement interdit.'
+  - ref: b6d
+    legende: 'Une croix : arrêt et stationnement interdits.'
 - id: l-stationnement-trottoir
   question: Je gare ma voiture avec deux roues sur le trottoir en laissant de la place aux piétons. Est-ce autorisé ?
   reponse: 'Non : pour une voiture, l’arrêt ou le stationnement sur un trottoir est très gênant (135 €), même si les piétons
@@ -376,9 +378,7 @@
 - id: l-vocab-routes-lettres
   question: Que signifient les lettres A, N, D et C (ou M) devant un numéro de route ?
   reponse: A = autoroute ; N = route nationale ; D = route départementale ; C = voie communale (M = voie métropolitaine).
-  explication: 'Cartouches : rouges pour A et N, jaunes pour D, blancs pour C. La lettre ne fixe pas la vitesse : une nationale
-    ou une départementale à accès réglementé (C107) est à 110 km/h seulement si ses chaussées sont séparées par un terre-plein
-    central, sinon 80 ou 90. Une route à grande circulation est en général une route prioritaire (AB6).'
+  explication: 'Les cartouches sont rouges pour A et N, jaunes pour D, blancs pour C. La lettre ne fixe pas la vitesse : je regarde la configuration de la route, les panneaux et les conditions de circulation.'
   theme: L
   sous_theme: signalisation
   source: Code de la route, art. L110-3 et s. ; IISR 5e partie (cartouches E42-E44)
@@ -674,8 +674,7 @@
   question: Je conduis une trottinette électrique (EDPM). Le feu est rouge et porte ce panonceau. Puis-je franchir
     la ligne d’effet du feu dans la direction fléchée ?
   reponse: Oui, dans la direction fléchée, en cédant aux piétons et aux véhicules bénéficiant du vert.
-  explication: Le M12 vise les cycles, EDPM et cyclomobiles légers. L’autorisation dépend de la catégorie et
-    de la direction ; elle ne donne pas priorité.
+  explication: Ce panonceau concerne les vélos, trottinettes électriques et cyclomobiles légers. Il autorise seulement les directions fléchées, en cédant le passage ; il ne donne aucune priorité.
   source: Arrêté du 24 novembre 1967, article 2-1 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
   image_ref: m12
 - id: l-visuel-m12-voiture
@@ -684,8 +683,7 @@
   question: Je conduis une voiture. Le feu est rouge et porte ce panonceau. Puis-je franchir la ligne d’effet
     du feu dans la direction fléchée ?
   reponse: Non. Le panonceau ne m’autorise pas à franchir le rouge ; j’attends le vert.
-  explication: Le M12 vise les cycles, EDPM et cyclomobiles légers. L’autorisation dépend de la catégorie et
-    de la direction ; elle ne donne pas priorité.
+  explication: Ce panonceau concerne les vélos, trottinettes électriques et cyclomobiles légers, pas les voitures. Même pour les usagers autorisés, il faut suivre les flèches et céder le passage.
   source: Arrêté du 24 novembre 1967, article 2-1 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
   image_ref: m12
 - id: l-c107-route-simple

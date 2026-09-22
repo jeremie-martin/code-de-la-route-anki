@@ -51,8 +51,7 @@
   question: Je suis sur une route prioritaire (losange jaune). Une voiture arrive de ma droite. Dois-je lui
     céder le passage ?
   reponse: Non. La voiture rouge doit me céder le passage.
-  explication: 'Le losange jaune (AB6) vaut jusqu''au panneau de fin (AB7). Je garde un œil sur la rouge :
-    « prioritaire » n''exonère pas de prudence.'
+  explication: 'Le losange jaune indique une route prioritaire jusqu’au losange barré. Je garde un œil sur la rouge : avoir la priorité ne dispense pas de prudence.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-7 ; IISR (AB6)
@@ -65,7 +64,7 @@
   check: {pair: [S, E, apres]}
   question: "Je viens de passer un losange jaune barré (fin de route prioritaire). Une voiture arrive de ma droite à l'intersection suivante. Qui passe ?"
   reponse: "La rouge : la fin de route prioritaire rétablit la priorité à droite."
-  explication: "AB7 = fin du caractère prioritaire ; sans autre panneau, la règle générale s'applique (R415-5). Un AB1 (croix) peut rappeler la priorité à droite."
+  explication: Le losange jaune barré annonce la fin du caractère prioritaire. Sans autre signalisation, la priorité à droite s’applique ; le triangle avec une croix noire peut la rappeler.
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5 ; IISR (AB7)"
@@ -215,7 +214,7 @@
     vehicles:
       - {pos: S, colour: bleu, me: true, goes: left, distance: 20}
       - {pos: W, colour: rouge, goes: straight, distance: 22}
-  question: "Carrefour à sens giratoire (AB25 + cédez-le-passage). L'anneau est vide ; la voiture rouge attend à l'entrée située à ma gauche. Je veux prendre la troisième sortie. Puis-je m'engager ?"
+  question: Carrefour à sens giratoire avec cédez-le-passage à chaque entrée. L’anneau est vide ; la voiture rouge attend à l’entrée située à ma gauche. Je veux prendre la troisième sortie. Puis-je m’engager ?
   reponse: "Oui : je ne cède qu'aux véhicules déjà dans l'anneau. Une fois engagé, c'est la rouge qui me cédera le passage à son entrée."
   explication: "R415-10 : priorité aux usagers qui circulent sur l'anneau ; un véhicule arrêté à une autre entrée n'y est pas encore. Clignotant gauche à l'entrée puisque je dépasse la moitié de l'anneau, puis clignotant droit avant ma sortie, en contrôlant à droite."
   theme: L

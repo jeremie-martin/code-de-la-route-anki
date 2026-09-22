@@ -44,9 +44,8 @@
   sous_theme: proteger
   source: Arrêté du 30 septembre 2008, art. 2 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000019566252/
 - id: rcp-rythme
-  explication: Un cycle est une seule procédure à retrouver. Si les insufflations sont impossibles, poursuivre les compressions.
-    Alerter, faire apporter un DAE et suivre ses consignes.
+  explication: Si les insufflations sont impossibles, je poursuis les compressions. Je fais alerter les secours et apporter un défibrillateur, puis suis ses consignes.
   theme: A
   sous_theme: secourir
   source: Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
-  texte: Chez l’adulte, quand je pratique une RCP avec insufflations, j’alterne {{c1::30 compressions puis 2 insufflations}}.
+  texte: Chez l’adulte, quand j’alterne compressions thoraciques et bouche-à-bouche, je fais {{c1::30 compressions puis 2 insufflations}} par cycle.

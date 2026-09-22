@@ -15,7 +15,7 @@ import tempfile
 from anki.collection import Collection
 from anki.import_export_pb2 import ImportAnkiPackageRequest, ImportAnkiPackageOptions
 
-from build.build import OUT, load_all, curriculum, inline_md, tags_for, fait_html
+from build.build import OUT, load_all, curriculum, inline_md, tags_for, fait_html, feedback_html, media_name
 from build.learning import card_count, card_plan
 from build.models import MODEL_IDS, DECK_ROOT, notetypes, CSS
 
@@ -35,6 +35,10 @@ def verify_content(col, data):
     assert {m['id'] for m in col.models.all() if m['name'] in MODEL_IDS} == set(MODEL_IDS.values())
     notes = {nid: col.get_note(nid) for nid in col.find_notes('')}
     assert {n['Id'] for n in notes.values()} == set(expected)
+    names = {n['id']: media_name('img', n['id']) for n in data['reconnaissance']}
+    feedback_fields = {'reconnaissance': 'Piege', 'confusions': 'Difference',
+                       'faits': 'Explication', 'questions': 'Explication',
+                       'affirmations': 'Pourquoi', 'scenarios': 'Explication'}
     text_fields = {'Source': 'source', 'Texte': 'texte', 'Question': 'question',
                    'Reponse': 'reponse', 'Explication': 'explication', 'Contexte': 'contexte',
                    'Affirmation': 'affirmation', 'Pourquoi': 'pourquoi', 'Nom': 'nom',
@@ -43,8 +47,12 @@ def verify_content(col, data):
     for note in notes.values():
         original = expected[note['Id']]
         for field, key in text_fields.items():
-            if field in note and key in original:
-                value = fait_html(original) if field == 'Texte' else inline_md(original[key])
+            is_feedback = field == feedback_fields[original['_kind']]
+            if field in note and (key in original or is_feedback):
+                if is_feedback:
+                    value = feedback_html(original, key, names)
+                else:
+                    value = fait_html(original) if field == 'Texte' else inline_md(original[key])
                 assert note[field] == value, f"{note['Id']} : {field} périmé"
         if 'Verdict' in note:
             assert note['Verdict'] == original['verdict']
@@ -62,6 +70,9 @@ def verify_content(col, data):
             for media in re.findall(r'<img src="([^"]+)"', rendered):
                 if not (Path(col.media.dir()) / media).is_file():
                     missing.append(media)
+        if expected[notes[card.nid]['Id']].get('comparaisons'):
+            assert 'class="cdr-comparisons"' not in card.question()
+            assert 'class="cdr-comparisons"' in card.answer()
     assert not missing, missing
 
 

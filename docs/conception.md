@@ -55,18 +55,20 @@ les défauts de structure ; les longueurs et les tics de style font l’objet d�
    depuis une carte sœur (deux trous complémentaires, un exercice à données fixes qui devient du rappel de
    nombre), ni depuis le style : les affirmations vraies et fausses partagent les mêmes tournures
    (« puisque », « tant que », « je peux », « toujours »… : le build signale une tournure à plus de 85 % d’un
-   côté), la part de « vrai » reste entre 40 et 60 %, et les questions oui/non ne sont pas massivement « non ».
+   côté), la balance des verdicts et des réponses oui/non fournit un autre indice à examiner.
    Une affirmation fausse décrit ce qu’un conducteur ordinaire fait ou croit vraiment ; si personne ne la
    dirait, elle n’apprend rien.
 4. **La réponse est courte et jugeable ; l’explication explique.** Réponse = la décision ou la valeur et la
-   raison décisive, en une phrase (le build signale au-delà de 35 mots ou de quatre éléments) ; tout ce qui ne
-   sert pas à juger sa propre réponse va dans l’explication. Celle-ci donne le mécanisme, la limite ou la
-   distinction utile ; elle n’ajoute pas une seconde liste à réciter, ne commente pas la fabrication du deck et
+   raison décisive, dans la forme adaptée au sujet ; tout ce qui ne sert pas à juger sa propre réponse va
+   dans l’explication. Les seuils du lint sont des alertes de relecture, pas des limites de rédaction.
+   L’explication donne le mécanisme, la limite ou la distinction utile ; elle n’ajoute pas une seconde liste à réciter, ne commente pas la fabrication du deck et
    ne s’adresse pas à un rédacteur. Une réserve n’y figure que si elle change ce que l’élève peut conclure
    (« valeur constructeur », « selon visibilité ») ; une réponse qui se limite à « voir la notice » n’en est pas une.
 5. **Le français est celui d’un bon moniteur.** Chaque champ se lit à voix haute sans être reformulé ; aucun
    champ n’est une étiquette suivie d’une valeur (« Conditions. Configuration → plafond ») ; première personne,
    pas d’inversions littéraires (« que fais-je »), pas de jargon administratif quand un mot courant existe.
+   Les codes de panneaux et de marquages restent dans les sources ; le texte d’apprentissage nomme le sens et les indices visibles. Une comparaison visuelle
+   montre les images avec une légende explicite. Développer un sigle lorsque son déchiffrage masque la décision.
 6. **Prérequis avant application.** Les bases (formes et couleurs des panneaux, vocabulaire, priorité à
    droite, code couleur des voyants) précèdent tout le reste ; un signal est reconnu avant qu’une question
    ne l’utilise ; les scénarios de priorité s’ouvrent après les panneaux de priorité. L’ordre est calculé par
