@@ -43,7 +43,8 @@ relation ; leur résultat seul ne doit pas devenir la connaissance à apprendre.
 
 ## Présentation
 
-Recto : situation, image utile, question. Verso : réponse visible puis explication. Les références, noms
+Recto : situation, image utile, question. Une illustration ne doit pas donner le rappel demandé
+(par exemple, légender le réglage que la question fait retrouver). Verso : réponse visible puis explication. Les références, noms
 techniques et codes restent dans le volet « Sources ». Les exemples visuels du verso portent une légende.
 Les repères de thème sont sur les sous-decks, sans alourdir chaque carte.
 

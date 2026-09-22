@@ -1,3 +1,21 @@
+# Installation et stationnement : décisions et conditions — 22 septembre 2026
+
+- Douze notes améliorées : réglage des rétroviseurs après déplacement du siège, verrouillage du siège,
+  miroirs jour/nuit, immobilisation en pente, contact coupé, enfant sans surveillance et prévention du vol.
+  L’affirmation non étayée sur les bras croisés cède la place au contrôle du siège ; effectifs inchangés.
+- Trois illustrations retirées : deux révélaient le réglage demandé, une représentait mal la pente.
+  Suppression des deux générateurs désormais inutilisés ; autres médias et modèles conservés.
+  Échantillon de captures recentré ; les mesures sur téléphone portent toujours sur toutes les cartes.
+- Ch. 10 et 26 du livre relus, illustrations du ch. 10 inspectées ; consultations primaires délimitées dans
+  le registre. Conception, maintenance et notes de recherche harmonisées.
+- Paquet reconstruit : 1 051 notes, 1 125 cartes, 362 médias. 22 tests réussis, import et réimport Anki réussis ;
+  absence des trois anciens médias vérifiée dans le paquet. Un avertissement de balance oui/non conservé
+  après lecture : les réponses restent décidées par le fond, sans quota.
+- Lecture des douze cartes modifiées à 430 px, quatre échantillons sombres à 320 px et exemples des six types.
+  9 054 faces/configurations contrôlées sans échec ; `out/RENDU.md` et `out/VERIFICATION.md`
+  identifient le même paquet par SHA-256.
+  Pas de revalidation juridique exhaustive, d’essai natif mobile ni de mesure d’efficacité.
+
 # Aides à la conduite : fonctions et limites — 22 septembre 2026
 
 - Neuf notes précisées : régulateur simple/adaptatif, limiteur en descente, détection d’angle mort,

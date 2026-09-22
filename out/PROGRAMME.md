@@ -934,7 +934,7 @@
 | 928 | `aff-m-feu-grille-nuit` | M · feux | affirmations | consolidation |
 | 929 | `aff-l-detresse-pluie` | L · positionnement | affirmations | consolidation |
 | 930 | `aff-a-dae-formation` | A · secourir | affirmations | consolidation |
-| 931 | `aff-p-volant-bras-croises` | P · installation | affirmations | consolidation |
+| 931 | `aff-p-siege-verrouille` | P · installation | affirmations | consolidation |
 | 932 | `d-autres-bareme-3-points` (1) | D · sanctions | faits | consolidation |
 | 933 | `aff-l-demi-tour-giratoire` | L · positionnement | affirmations | consolidation |
 | 934 | `m-feux-portees` (2) | M · feux | faits | consolidation |

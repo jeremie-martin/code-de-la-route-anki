@@ -62,7 +62,7 @@ croisement à l’indonésienne. Pas de nouveau média nécessaire pour les corr
   Le deck distingue déjà estimation pédagogique, réaction et freinage ; aucune nouvelle carte justifiée ici.
 
 Cette passe porte sur les points ci-dessus et leur cohérence dans le deck, pas sur une nouvelle vérification
-juridique de ses 1 052 notes. Le livre reste un document local de comparaison, exclu de Git et du paquet.
+juridique de toutes ses notes. Le livre reste un document local de comparaison, exclu de Git et du paquet.
 
 ## Aides à la conduite — complément du 22 septembre 2026
 
@@ -81,3 +81,23 @@ confusion utile. Notices Renault, fiche UE et rapport CNSR consultés ; les noti
 pas des spécifications universelles. Les quatorze images du ch. 15 ont été inspectées en planche : elles illustrent surtout les fonctions
 et les équipements, sans apporter de scène de décision manquante ici. Le générateur et les médias sont conservés.
 Cette passe porte sur les distinctions ci-dessus ; elle ne revalide pas chaque carte ni les illustrations du livre.
+
+## Installation et départ du véhicule — complément du 22 septembre 2026
+
+Les ch. 10 et 26 ont été relus ; les illustrations du ch. 10 ont été inspectées en planche.
+Elles montrent surtout des gestes d’installation, sans nouvelle scène de décision nécessaire ici. Le verrouillage du siège après réglage est un apport utile, confirmé par
+une notice Renault : il remplace une affirmation non étayée sur le croisement des bras. L’ordre
+récité des réglages devient une application : revérifier les miroirs après avoir déplacé le siège.
+
+Trois schémas du deck sont retirés : les miroirs montraient leur propre réponse ; la pente présentait
+une direction ambiguë et des roues déjà braquées. Le texte suffit à ces rappels. Les deux générateurs
+sans autre usage sont supprimés. Les autres signaux, comparaisons et scénarios sont conservés.
+
+Le raccourci du livre « roues côté trottoir en pente » n’est pas repris : la notice Nissan distingue
+montée et descente avec bordure. Rapport engagé, frein de stationnement et contact coupé sont
+harmonisés entre les cartes. L’absence d’un enfant et la prévention du vol sont expliquées sans
+chiffres de chaleur universels ni promesses de sécurité. Douze notes changent, sans augmenter
+la charge de révision. Le registre distingue les notices, le texte légal et les conseils officiels.
+
+Cette passe compare les passages cités et relit toutes les cartes du thème P ; elle ne certifie pas
+chaque carte du deck, ni les images et corrigés du livre. Aucun contenu du livre n’est distribué.

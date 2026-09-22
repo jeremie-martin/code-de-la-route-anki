@@ -1021,17 +1021,17 @@ Recherche Anki : `objectif::p-installer`
 | `p-dossier-reglage` | consolidation | questions | En Voiture Simone — S'installer ; REMC |
 | `p-appuie-tete` | socle | questions | securite-routiere.gouv.fr — Bien régler son appuie-tête ; Euro NCAP |
 | `p-retro-interieur` | socle | questions | REMC ; Codes Rousseau — Les rétroviseurs |
-| `p-retro-exterieurs` | socle | questions | REMC ; Codes Rousseau — Les rétroviseurs |
+| `p-retro-exterieurs` | socle | questions | REMC ; Renault, rétroviseurs — https://www.user-manual.renault.com/fr/r%C3%A9trovision/retroviseurs-1 |
 | `p-ceinture-position` | socle | questions | securite-routiere.gouv.fr — Comment positionner la ceinture de sécurité |
 | `p-volant-mains` | consolidation | questions | REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite |
-| `p-ordre-installation` | socle | questions | REMC ; Code en Poche — Prendre et quitter son véhicule ; En Voiture Simone — S'installer |
+| `p-ordre-installation` | socle | questions | REMC ; Renault, réglage de la position de conduite — https://www.user-manual.renault.com/fr/content/renault-trafic/getting-know-your-vehicle/seat-belts/ceintures-de-securite-avant |
 | `p-demarrage-point-mort` | consolidation | questions | REMC ; Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux |
 | `p-vehicule-emprunte-equipements` | consolidation | questions | Code de la route, art. R416-19 |
 | `aff-p-reglage-en-roulant` | consolidation | affirmations | Code en Poche — Prendre et quitter son véhicule ; REMC |
-| `aff-p-retro-interieur-nuit` | socle | affirmations | En Voiture Simone — S'installer ; Codes Rousseau — Les rétroviseurs |
+| `aff-p-retro-interieur-nuit` | socle | affirmations | Renault, rétroviseurs — https://www.user-manual.renault.com/fr/r%C3%A9trovision/retroviseurs-1 |
 | `aff-p-ceinture-sous-le-bras` | consolidation | affirmations | securite-routiere.gouv.fr — Comment positionner la ceinture de sécurité |
 | `aff-p-ceinture-blouson` | consolidation | affirmations | securite-routiere.gouv.fr — La ceinture de sécurité |
-| `aff-p-volant-bras-croises` | consolidation | affirmations | REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite |
+| `aff-p-siege-verrouille` | consolidation | affirmations | Renault, sièges avant — https://www.user-manual.renault.com/fr/si%C3%A8ges-avant/sieges-avant-4 |
 | `aff-p-pied-gauche-frein` | consolidation | affirmations | En Voiture Simone — S'installer au poste de conduite |
 | `aff-p-neige-toit` | consolidation | affirmations | Cours de code — Entrer et sortir de son véhicule ; securite-routiere.gouv.fr — Conduire en hiver |
 | `aff-p-entrer-face-circulation` | consolidation | affirmations | Cours de code — Entrer et sortir de son véhicule en sécurité |
@@ -1046,18 +1046,18 @@ Recherche Anki : `objectif::p-quitter`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `p-quitter-checklist` | socle | questions | Code de la route, art. R417-8 (précautions avant de s'éloigner du véhicule) |
-| `p-quitter-objets` | consolidation | questions | En Voiture Simone — Précautions pour quitter son véhicule ; securite-routiere.gouv.fr |
-| `p-pente-roues` | socle | questions | securite-routiere.gouv.fr ; Codes Rousseau — Stationner en pente |
-| `p-pente-vitesse` | socle | questions | Codes Rousseau — Stationner en pente ; En Voiture Simone — Quitter son véhicule |
+| `p-quitter-checklist` | socle | questions | Code de la route, art. R417-8 ; Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml |
+| `p-quitter-objets` | consolidation | questions | Ministère de l’Intérieur, prévention des vols dans les véhicules — https://www.interieur.gouv.fr/fr/Archives/Archives-de-la-rubrique-Ma-securite/Avec-votre-vehicule/Contre-les-vols-de-voitures-et-d-accessoires-les-bons-reflexes |
+| `p-pente-roues` | socle | questions | Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml |
+| `p-pente-vitesse` | socle | questions | Renault Megane 4, levier de vitesses et frein à main — https://www.user-manual.renault.com/fr/chapitre-2-la-conduite/levier-de-vitesses-frein-main ; Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml |
 | `p-ouvrir-portiere` | socle | questions | Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Portière gauche, main droite |
 | `p-passagers-descendre` | socle | questions | Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Enfants en voiture |
-| `p-enfants-seuls` | socle | questions | securite-routiere.gouv.fr — Enfants en voiture |
+| `p-enfants-seuls` | socle | questions | Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml ; Sécurité civile, fortes chaleurs — https://www.securite-civile.interieur.gouv.fr/actualites/actualites/fortes-chaleurs-canicule-quels-sont-bons-reflexes-a-adopter-pour-preserver-sa-sante |
 | `p-quitter-stationnement-surveiller` | socle | questions | Sécurité routière — Exemples de nouvelles questions (Q14) ; Code de la route, art. R412-10 |
 | `aff-p-quitter-documents` | consolidation | affirmations | En Voiture Simone — Précautions pour quitter son véhicule |
 | `aff-p-sortie-stationnement-priorite` | consolidation | affirmations | Code de la route, art. R412-10 ; Sécurité routière — Exemples de nouvelles questions (Q14) |
 | `aff-p-portiere-responsabilite` | consolidation | affirmations | Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Portière gauche, main droite |
-| `aff-p-boite-auto-position-p` | socle | affirmations | En Voiture Simone — Précautions pour quitter son véhicule ; Codes Rousseau |
+| `aff-p-boite-auto-position-p` | socle | affirmations | Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml |
 
 ## m-alertes — Identifier un voyant et choisir la réaction adaptée
 

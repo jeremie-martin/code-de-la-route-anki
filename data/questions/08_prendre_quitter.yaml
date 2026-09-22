@@ -2,12 +2,12 @@
 # Cartes de décision : une situation, une décision et sa raison (brief v2). Les repères chiffrés sont dans
 # data/faits/08, les idées reçues de l'épreuve dans data/affirmations/08.
 - id: p-verif-tour-vehicule
-  question: Avant de monter, je fais le tour de ma voiture. Qu'est-ce que ce tour me montre que je ne verrais pas du poste
-    de conduite ?
-  reponse: Un pneu affaissé ou abîmé, une fuite, un feu ou une plaque sale, et tout obstacle bas invisible du siège (un enfant
-    accroupi).
-  explication: Trente secondes qui évitent une crevaison sur autoroute ou un écrasement en marche arrière. Ces vérifications
-    extérieures sont aussi demandées à l'épreuve pratique.
+  question: Avant de monter, je fais le tour de ma voiture. Qu'est-ce que ce tour me montre que je ne verrais pas
+    du poste de conduite ?
+  reponse: Un pneu affaissé ou abîmé, une fuite, un feu ou une plaque sale, et tout obstacle bas invisible du siège
+    (un enfant accroupi).
+  explication: Ce contrôle repère des anomalies et des obstacles avant de bouger ; il ne garantit pas l’absence
+    de panne. L’aspect du pneu ne remplace pas la mesure de sa pression.
   theme: P
   sous_theme: verifications
   source: REMC (compétence 1) ; securite-routiere.gouv.fr — Bien préparer son trajet
@@ -67,30 +67,24 @@
   sous_theme: installation
   source: securite-routiere.gouv.fr — Bien régler son appuie-tête ; Euro NCAP
 - id: p-retro-interieur
-  question: 'Assis en position de conduite, je règle le rétroviseur intérieur : qu''est-ce que je dois y voir ?'
+  question: Assis en position de conduite, je règle un rétroviseur intérieur à miroir classique. Quelle vue dois-je
+    obtenir ?
   reponse: La totalité de la lunette arrière, sans bouger la tête ni les épaules.
-  explication: 'C''est le seul rétroviseur qui ne déforme pas les distances : il sert à juger un véhicule qui suit, et à savoir
-    quand se rabattre (le véhicule dépassé y apparaît en entier).'
-  image:
-    gen: retroviseur
-    params:
-      kind: interieur
+  explication: Ce miroir donne une vue centrale vers l’arrière ; il ne couvre pas les angles morts. Les rétroviseurs
+    extérieurs et le contrôle direct complètent l’observation avant une manœuvre.
   theme: P
   sous_theme: installation
   source: REMC ; Codes Rousseau — Les rétroviseurs
 - id: p-retro-exterieurs
-  question: Toujours assis en position de conduite, comment je règle mes rétroviseurs extérieurs ?
-  reponse: 'Un petit bord de carrosserie visible au bord intérieur du miroir, et l''horizon à mi-hauteur : autant de route
-    que de ciel.'
-  explication: Trop de carrosserie agrandit l'angle mort ; trop de ciel fait disparaître les deux-roues. Le réglage se fait
-    à l'arrêt, une fois la position du siège définitive.
-  image:
-    gen: retroviseur
-    params:
-      kind: exterieur
+  question: À l’arrêt sur terrain plat, assis en position de conduite, quelle vue rechercher dans les rétroviseurs
+    extérieurs ?
+  reponse: Une vue dégagée vers l’arrière et les côtés, avec peu de carrosserie et l’horizon vers le milieu du miroir.
+  explication: 'Ces repères servent à éviter de viser surtout la voiture ou le ciel ; ils s’adaptent au véhicule.
+    Le miroir peut faire paraître un usager plus éloigné : apprécier sa distance et contrôler l’angle mort avant
+    de se déporter.'
   theme: P
   sous_theme: installation
-  source: REMC ; Codes Rousseau — Les rétroviseurs
+  source: REMC ; Renault, rétroviseurs — https://www.user-manual.renault.com/fr/r%C3%A9trovision/retroviseurs-1
 - id: p-ceinture-position
   question: 'Je boucle ma ceinture : par où doivent passer les deux sangles ?'
   reponse: Sangle basse sur les os du bassin, sangle haute au milieu de l’épaule puis sur le sternum ; à plat, non vrillée,
@@ -110,14 +104,15 @@
   sous_theme: installation
   source: REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite
 - id: p-ordre-installation
-  question: Je monte dans une voiture qu'un autre conducteur vient d'utiliser. Dans quel ordre je fais mes réglages ?
-  reponse: Siège et dossier → appuie-tête → rétroviseurs → ceinture, puis le contact. Les rétroviseurs viennent après le siège,
-    sinon ils seront faux.
-  explication: 'Tous ces réglages se font à l''arrêt. Les écoles placent le volant tantôt avant, tantôt après l''appuie-tête
-    ; ce qui est attendu : le siège d''abord, rétroviseurs et ceinture en dernier.'
+  question: J’ai réglé mes rétroviseurs, puis avancé et remonté mon siège. Puis-je garder le réglage des miroirs
+    sans le vérifier ?
+  reponse: 'Non : ma position d’observation a changé. Je vérifie et, si besoin, règle à nouveau les rétroviseurs.'
+  explication: 'Je fixe d’abord ma position de conduite : siège, dossier et volant, avec accès complet aux pédales.
+    Puis je vérifie appuie-tête, rétroviseurs et ceinture. L’important est leur adaptation à ma position finale,
+    pas la récitation d’un ordre unique.'
   theme: P
   sous_theme: installation
-  source: REMC ; Code en Poche — Prendre et quitter son véhicule ; En Voiture Simone — S'installer
+  source: REMC ; Renault, réglage de la position de conduite — https://www.user-manual.renault.com/fr/content/renault-trafic/getting-know-your-vehicle/seat-belts/ceintures-de-securite-avant
 - id: p-demarrage-point-mort
   question: Tout est réglé, je vais mettre le contact. Où doit être le levier de vitesses ?
   reponse: 'Au point mort, embrayage enfoncé (boîte automatique : P, pied sur le frein), frein de stationnement serré : le
@@ -131,45 +126,43 @@
   source: REMC ; Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux
 - id: p-quitter-checklist
   question: Je me gare et je vais m'éloigner de ma voiture. Que fais-je avant de sortir ?
-  reponse: 'Moteur coupé, clé retirée, frein de stationnement serré et un rapport engagé (ou P) : rien ne doit pouvoir bouger
-    en mon absence.'
-  explication: 'R417-8 : on ne s''éloigne du lieu de stationnement qu''après avoir pris les précautions utiles pour prévenir
-    tout risque d''accident du fait de son absence.'
+  reponse: Je coupe le moteur et le contact, serre le frein de stationnement et sécurise la transmission selon la
+    notice (rapport engagé ou position P). Je vérifie l’immobilisation avant de sortir.
+  explication: Un moteur momentanément arrêté par le Stop & Start n’est pas un véhicule mis hors service. Je retire
+    et emporte la clé ou la carte ; les contrôles avant d’ouvrir la portière restent nécessaires.
   theme: P
   sous_theme: quitter
-  source: Code de la route, art. R417-8 (précautions avant de s'éloigner du véhicule)
+  source: Code de la route, art. R417-8 ; Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml
 - id: p-quitter-objets
-  question: Je laisse ma voiture sur un parking de gare pour la journée ; mon sac est sur le siège passager. Je le laisse
-    là ?
-  reponse: 'Non : je l’emporte ou je le range dans le coffre avant d’arriver, vitres fermées et véhicule verrouillé ; un objet
-    visible suffit à provoquer une effraction.'
-  explication: Les papiers du véhicule et les objets de valeur partent avec moi. Ranger le sac une fois garé, sous les yeux
-    d'un guetteur, ne sert à rien.
+  question: Je laisse ma voiture sur un parking de gare pour la journée ; mon sac est sur le siège passager. Je
+    le laisse là ?
+  reponse: 'Non : j’emporte le sac, surtout s’il contient des valeurs ou des documents. Je ferme les vitres et verrouille
+    le véhicule.'
+  explication: Si je dois laisser des affaires sans valeur, je les mets hors de vue dans le coffre fermé, de préférence
+    avant d’arriver. Cela réduit la tentation sans garantir contre le vol.
   theme: P
   sous_theme: quitter
-  source: En Voiture Simone — Précautions pour quitter son véhicule ; securite-routiere.gouv.fr
+  source: Ministère de l’Intérieur, prévention des vols dans les véhicules — https://www.interieur.gouv.fr/fr/Archives/Archives-de-la-rubrique-Ma-securite/Avec-votre-vehicule/Contre-les-vols-de-voitures-et-d-accessoires-les-bons-reflexes
 - id: p-pente-roues
   question: Je stationne à droite, en forte pente, contre une bordure de trottoir. Comment orienter les roues ?
-  reponse: 'En descente vers le trottoir, en montée vers la chaussée : si le frein lâche, le pneu bute contre la bordure au
-    lieu de partir.'
-  explication: Ce repère suppose une bordure pouvant retenir le pneu. Sans bordure, orienter pour limiter un départ vers la
-    circulation ; appliquer le frein de stationnement et la procédure de la notice.
-  image:
-    gen: roue_position
-    params:
-      pente: descente
+  reponse: 'En descente vers le trottoir, en montée vers la chaussée : si le frein lâche, le pneu bute contre la
+    bordure au lieu de partir.'
+  explication: Ce repère suppose une bordure pouvant retenir le pneu. Sans bordure, orienter pour limiter un départ
+    vers la circulation ; appliquer le frein de stationnement et la procédure de la notice.
   theme: P
   sous_theme: quitter
-  source: securite-routiere.gouv.fr ; Codes Rousseau — Stationner en pente
+  source: Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml
 - id: p-pente-vitesse
-  question: 'Même rue en pente, boîte manuelle : quel rapport j''engage en plus du frein à main ?'
-  reponse: 'La première en montée, la marche arrière en descente : le moteur retient le véhicule dans le sens où il partirait
-    ; en automatique, P.'
-  explication: Le frein de stationnement peut se desserrer ou lâcher ; le rapport engagé est la deuxième sécurité, le braquage
-    des roues vers le trottoir la troisième.
+  question: Je stationne une voiture à boîte manuelle en pente. Quel rapport laisser engagé en complément du frein
+    de stationnement ?
+  reponse: Le repère habituel est la première en montée et la marche arrière en descente ; je suis la notice du
+    véhicule.
+  explication: Le rapport engagé ajoute une retenue par la transmission ; il ne remplace pas le frein de stationnement.
+    Avec une boîte automatique équipée d’une position P, je sélectionne P et serre aussi ce frein.
   theme: P
   sous_theme: quitter
-  source: Codes Rousseau — Stationner en pente ; En Voiture Simone — Quitter son véhicule
+  source: Renault Megane 4, levier de vitesses et frein à main — https://www.user-manual.renault.com/fr/chapitre-2-la-conduite/levier-de-vitesses-frein-main
+    ; Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml
 - id: p-ouvrir-portiere
   question: Au siège conducteur d’une voiture à volant à gauche, garée à droite, je vais ouvrir côté circulation. Quels contrôles
     et quelle main utiliser ?
@@ -191,14 +184,17 @@
   sous_theme: quitter
   source: Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Enfants en voiture
 - id: p-enfants-seuls
-  question: Je m'arrête cinq minutes devant une boulangerie ; mon enfant dort à l'arrière. Je le laisse dans la voiture ?
-  reponse: 'Non : l’habitacle chauffe très vite, même vitre entrouverte, et l’enfant peut desserrer un frein ou ouvrir une
-    portière.'
-  explication: L'habitacle d'une voiture au soleil peut atteindre 70 °C en 20 minutes. Même consigne pour un animal, qui ne
-    transpire pas.
+  question: Je m'arrête cinq minutes devant une boulangerie ; mon enfant dort à l'arrière. Je le laisse dans la
+    voiture ?
+  reponse: 'Non : je l’emmène avec moi. Un enfant sans surveillance peut être en danger même pendant une courte
+    absence.'
+  explication: Par chaleur, l’habitacle peut vite devenir dangereux ; une vitre entrouverte ne sécurise pas l’absence.
+    Il existe aussi des risques liés aux commandes, aux portières ou à un malaise. Ne pas attendre une température
+    ou une durée précise pour agir ; même précaution pour un animal.
   theme: P
   sous_theme: quitter
-  source: securite-routiere.gouv.fr — Enfants en voiture
+  source: Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml
+    ; Sécurité civile, fortes chaleurs — https://www.securite-civile.interieur.gouv.fr/actualites/actualites/fortes-chaleurs-canicule-quels-sont-bons-reflexes-a-adopter-pour-preserver-sa-sante
 - id: p-quitter-stationnement-surveiller
   question: Garé à droite dans une rue à double sens, je quitte ma place pour rejoindre la voie à ma gauche. Quel angle mort
     contrôler juste avant le déport ?

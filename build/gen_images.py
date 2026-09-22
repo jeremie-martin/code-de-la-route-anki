@@ -503,26 +503,6 @@ def critair(params):
     return str(S)
 
 
-def roue_position(params):
-    """Wheel positions when parking on a slope, seen from above with the kerb at the right."""
-    S = SVG(480, 300)
-    S.add(f'<rect x="0" y="0" width="480" height="300" fill="{GRASS}"/>')
-    S.add(f'<rect x="0" y="0" width="360" height="300" fill="{ASPHALT}"/>')
-    S.add('<rect x="360" y="0" width="120" height="300" fill="#bdbdbd"/>')
-    S.add('<line x1="360" y1="0" x2="360" y2="300" stroke="#8a8a8a" stroke-width="3"/>')
-    slope = params.get("pente", "descente")  # descente = the car faces downhill (down the image)
-    S.add(f'<text x="20" y="30" font-family="{FONT}" font-size="16" fill="#fff">{"⬇ descente" if slope == "descente" else "⬆ montée"}</text>')
-    # car heading up (north) parked along kerb
-    S.add(f'<g transform="translate(300,150)">{vehicle_sprite("car", "bleu")}</g>')
-    ang = params.get("angle", 25)
-    for (x, y) in [(300 - 22, 150 - 28), (300 + 22, 150 - 28)]:
-        S.add(f'<rect x="{x - 5}" y="{y - 12}" width="10" height="24" rx="3" fill="#111" transform="rotate({ang} {x} {y})"/>')
-    for (x, y) in [(300 - 22, 150 + 28), (300 + 22, 150 + 28)]:
-        S.add(f'<rect x="{x - 5}" y="{y - 12}" width="10" height="24" rx="3" fill="#111"/>')
-    S.add(f'<text x="420" y="160" font-family="{FONT}" font-size="15" text-anchor="middle" fill="#333">trottoir</text>')
-    return str(S)
-
-
 def triangle_distance(params):
     """Broken-down car with warning triangle placed 30 m behind."""
     S = SVG(480, 200)
@@ -532,26 +512,6 @@ def triangle_distance(params):
     S.add(f'<g transform="translate(400,130) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
     S.add('<path d="M120,150 l14,-26 l14,26 z" fill="#e53935" stroke="#fff" stroke-width="2"/>')
     S.add(f'<line x1="140" y1="175" x2="360" y2="175" stroke="#fff" stroke-width="2"/><text x="250" y="192" font-family="{FONT}" font-size="14" text-anchor="middle" fill="#fff">{esc(str(params.get("label", "≈ 30 m")))}</text>')
-    return str(S)
-
-
-def retroviseur(params):
-    """Correct mirror adjustment: interior mirror frames the whole rear window; side mirrors show a sliver of car + horizon."""
-    S = SVG(480, 240)
-    S.add('<rect x="0" y="0" width="480" height="240" fill="#ffffff"/>')
-    kind = params.get("kind", "exterieur")
-    if kind == "exterieur":
-        S.add('<rect x="90" y="30" width="300" height="180" rx="16" fill="#9ec9f0" stroke="#222" stroke-width="4"/>')
-        S.add('<rect x="90" y="120" width="300" height="90" fill="#7fa86a"/>')
-        S.add('<rect x="90" y="30" width="300" height="90" fill="#bfe0ff"/>')
-        S.add('<rect x="90" y="118" width="300" height="4" fill="#333"/>')
-        S.add('<rect x="340" y="40" width="50" height="170" rx="6" fill="#2d6fd8" opacity="0.9"/>')
-        S.add(f'<text x="365" y="130" font-family="{FONT}" font-size="12" text-anchor="middle" fill="#fff" transform="rotate(90 365 130)">carrosserie</text>')
-        S.add(f'<text x="200" y="90" font-family="{FONT}" font-size="14" text-anchor="middle" fill="#333">ciel</text><text x="200" y="170" font-family="{FONT}" font-size="14" text-anchor="middle" fill="#fff">route</text>')
-    else:
-        S.add('<rect x="60" y="60" width="360" height="120" rx="12" fill="#bfe0ff" stroke="#222" stroke-width="4"/>')
-        S.add('<rect x="80" y="76" width="320" height="88" rx="10" fill="none" stroke="#333" stroke-width="3" stroke-dasharray="8 6"/>')
-        S.add(f'<text x="240" y="126" font-family="{FONT}" font-size="14" text-anchor="middle" fill="#333">toute la lunette arrière</text>')
     return str(S)
 
 
@@ -573,7 +533,7 @@ REGISTRY = {
     "feu_tricolore": feu_tricolore, "feu_fleche_composite": feu_fleche_composite, "feu_rouge_clignotant": feu_rouge_clignotant,
     "feu_pieton": feu_pieton, "feu_bus": feu_bus, "feu_velo": feu_velo, "signal_affectation": signal_affectation,
     "feu_chantier": feu_chantier, "agent": agent, "pictogramme_medicament": pictogramme_medicament, "critair": critair,
-    "roue_position": roue_position, "triangle_distance": triangle_distance, "retroviseur": retroviseur,
+    "triangle_distance": triangle_distance,
     "road": road_scene, "intersection": intersection_scene, "roundabout": roundabout_scene,
 }
 

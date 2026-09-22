@@ -207,6 +207,8 @@ python build/qa_sheet.py                 # planches image + code + nom par fichi
    le texte a été lu dans `cdr.txt`), `portee` (ce qui a été vérifié, en une phrase) et `notes` concernées.
 2. Écrire ou corriger la note dans `data/` (formats ci-dessus). Rechercher aussi la règle dans les autres
    cartes et leurs explications : une bonne réponse au recto ne compense pas une généralisation fausse au verso.
+   Une procédure dépendant du véhicule doit préciser son contexte ; vérifier aussi les exemples visuels
+   et les notes de recherche pour ne pas y laisser une ancienne généralisation.
    Pour un voyant, préciser le contexte utile (contact, moteur tournant, roulage) ; une notice constructeur
    documente un véhicule, pas une procédure universelle. Pour une aide à la conduite, distinguer sa fonction,
    ses limites et l’action du conducteur ; une perturbation peut entraîner une mauvaise réaction, pas seulement
@@ -226,8 +228,10 @@ python build/qa_sheet.py                 # planches image + code + nom par fichi
    et les tests. Regarder les cartes modifiées avec `build.preview` (une carte cloze donne `_c0`, `_c1`…). Pour
    une révision large, `python -m build.render_check` contrôle toutes les faces et écrit `out/RENDU.md` avec
    l’empreinte du paquet contrôlé : le lancer en dernier, après le build définitif. Un identifiant de capture
-   absent du paquet fait échouer le contrôle ; actualiser `SAMPLES` si une note disparaît. Les mesures ne lisent pas le
-   sens des images ni les petits textes incorporés : les inspecter.
+   absent du paquet fait échouer le contrôle. `SAMPLES` choisit les captures, le volet des sources et le complément
+   sur grand écran ; toutes les cartes sont mesurées sur téléphone. Garder des formes représentatives et les cas
+   modifiés, en remplaçant les anciens échantillons. Les mesures ne lisent pas le sens des images ni les petits
+   textes incorporés : les inspecter.
 6. Ajouter une ligne à [CHANGELOG](../CHANGELOG.md) et mettre à jour les effectifs du README.
 
 ## Identifiants et réimport

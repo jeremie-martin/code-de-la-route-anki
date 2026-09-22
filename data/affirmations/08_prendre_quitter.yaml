@@ -9,13 +9,14 @@
   sous_theme: installation
   source: Code en Poche — Prendre et quitter son véhicule ; REMC
 - id: aff-p-retro-interieur-nuit
-  contexte: De nuit, les phares du véhicule qui me suit m'éblouissent dans le rétroviseur intérieur.
+  contexte: De nuit, les phares du véhicule qui me suit m’éblouissent dans mon rétroviseur intérieur à levier jour/nuit.
   affirmation: Je bascule le rétroviseur en position nuit pour atténuer le reflet.
   verdict: vrai
-  pourquoi: "La manette sous le miroir incline une seconde surface : l'image s'assombrit sans que je perde la vue de l'arrière. Rabattre le rétroviseur, lui, m'en priverait."
+  pourquoi: Le levier atténue le reflet tout en conservant une vue vers l’arrière. Sur un rétroviseur électrochrome,
+    l’atténuation est automatique ; je repère l’équipement de la voiture.
   theme: P
   sous_theme: installation
-  source: En Voiture Simone — S'installer ; Codes Rousseau — Les rétroviseurs
+  source: Renault, rétroviseurs — https://www.user-manual.renault.com/fr/r%C3%A9trovision/retroviseurs-1
 - id: aff-p-ceinture-sous-le-bras
   contexte: La sangle d'épaule me gêne au niveau du cou.
   affirmation: Je peux la faire passer sous mon bras pour être plus à l'aise.
@@ -32,14 +33,15 @@
   theme: P
   sous_theme: installation
   source: securite-routiere.gouv.fr — La ceinture de sécurité
-- id: aff-p-volant-bras-croises
-  contexte: Je braque fortement pour prendre un virage serré.
-  affirmation: Croiser les bras sur le volant me permet de braquer plus vite.
-  verdict: faux
-  pourquoi: "Bras croisés, je perds de la force, je ne peux plus corriger, et l'airbag me projetterait les avant-bras au visage. Les mains restent de part et d'autre du cerceau."
+- id: aff-p-siege-verrouille
+  contexte: À l’arrêt, j’ai avancé mon siège à réglage manuel et relâché sa poignée.
+  affirmation: Avant de démarrer, je vérifie que le siège reste bloqué en position.
+  verdict: vrai
+  pourquoi: Un siège mal verrouillé peut coulisser au freinage et modifier mon accès aux pédales et au volant. La
+    bonne distance ne suffit pas ; le réglage doit rester en place.
   theme: P
   sous_theme: installation
-  source: REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite
+  source: Renault, sièges avant — https://www.user-manual.renault.com/fr/si%C3%A8ges-avant/sieges-avant-4
 - id: aff-p-pied-gauche-frein
   contexte: Je conduis une voiture à boîte manuelle.
   affirmation: Je peux freiner du pied gauche pour gagner du temps en cas d'urgence.
@@ -92,7 +94,8 @@
   contexte: Je stationne dans une rue en pente, avec une boîte automatique.
   affirmation: La position P dispense de serrer le frein de stationnement.
   verdict: faux
-  pourquoi: "Le cliquet de la position P n'est qu'un doigt d'acier bloquant la transmission : en pente il encaisse tout le poids du véhicule. Frein de stationnement serré en plus, et roues braquées vers le trottoir en descente."
+  pourquoi: P bloque la transmission ; le frein de stationnement immobilise aussi le véhicule et évite de faire
+    reposer sa retenue sur ce seul blocage. Je vérifie que le frein est serré, même s’il est automatique.
   theme: P
   sous_theme: quitter
-  source: En Voiture Simone — Précautions pour quitter son véhicule ; Codes Rousseau
+  source: Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml
