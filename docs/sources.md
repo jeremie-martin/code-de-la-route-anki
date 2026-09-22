@@ -19,7 +19,7 @@ cette date.
 | Pneumatiques, entretien | Préconisations constructeur (exemple : notice Renault pour les témoins), Michelin pour la pression | Valeurs propres au véhicule : à ne pas universaliser |
 | Anki | [Options de deck](https://docs.ankiweb.net/deck-options), [paquets](https://docs.ankiweb.net/importing/packaged-decks.html) | Ordre de collecte, enfouissement, import des préréglages |
 
-Les supports de préparation (Codes Rousseau, ENPC, Ornikar, En Voiture Simone, Stych…) servent à repérer ce
+Les supports de préparation (Codes Rousseau, ENPC, Ornikar, En Voiture Simone, Stych…) servent à repérer
 les sujets et les raccourcis pédagogiques (ordre de grandeur des distances, repères d’écoconduite). Ils ne
 certifient pas les réponses de la banque. Les dossiers `research/*.md` sont des notes de recherche historiques,
 avec des hypothèses parfois remplacées ; vérifier la source actuelle avant de réutiliser un passage.
@@ -38,9 +38,14 @@ pour une édition 2027). Chacune a une entrée dans `source_checks.yaml` ; le re
 
 Les dates des obligations d’équipement des voitures neuves (ISA, AEB : règlement GSR2, juillet 2024, de mémoire),
 le détail de certains signaux hérités de Wikipédia (dimensions des balises J10, pictogramme exact de B56), les
-pratiques des exploitants (tunnels, péages en flux libre), les chiffres ADEME et Euro NCAP cités dans les
+pratiques des exploitants (tunnels, péages en flux libre), les chiffres ADEME cités dans les
 explications, la date exacte des obligations d’équipement des sièges enfants. Ils n’apparaissent pas comme
 cibles de rappel.
+
+Euro NCAP : [le protocole 2026](https://www.euroncap.com/press-media/euro-ncap-announces-2026-protocol-changes-to-tackle-modern-driving-risks/)
+a été consulté le 22 septembre 2026 ; la carte ne présente plus l’ancienne grille comme actuelle.
+Les sondages juridiques et les corrections de cette édition sont détaillés dans le registre, sans
+assimiler l’import réussi du paquet à une validation du fond.
 
 ## Veille
 

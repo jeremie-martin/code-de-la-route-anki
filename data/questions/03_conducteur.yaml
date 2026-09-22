@@ -8,10 +8,12 @@
   sous_theme: perception
   source: REMC ; Codes Rousseau — L'exploration visuelle
 - id: c-croisement-nuit-regard
-  question: De nuit, un véhicule arrive en face avec ses phares. Où porter le regard pour le croiser en sécurité ?
+  question: De nuit, un véhicule arrive en face avec ses phares. Où porter le regard pour le croiser en sécurité
+    ?
   reponse: Vers la droite, le plus loin possible, sans fixer ses feux ; et je ralentis.
-  explication: Fixer les phares éblouit et attire le véhicule vers eux ; garder les feux de route éblouirait l’autre
-    conducteur. L'épreuve attend exactement ces deux réponses.
+  explication: Fixer les phares gêne la perception. Le regard vers le bord droit aide à suivre sa voie ; ralentir
+    permet de tenir compte de la visibilité réduite. Je passe aussi en feux de croisement pour ne pas éblouir l’autre
+    conducteur.
   theme: C
   sous_theme: perception
   source: Sécurité routière — Exemples de nouvelles questions (Q20)
@@ -63,10 +65,10 @@
   source: Sécurité routière — Exemples de nouvelles questions (Q3)
 - id: c-trottinette-vulnerable
   question: Pourquoi un usager de trottinette électrique est-il particulièrement vulnérable ?
-  reponse: Équilibre précaire (petites roues, freinage inégal) et faible gabarit peu détectable, surtout dans les angles morts
-    et de nuit.
-  explication: 'Conséquence : écart latéral d’au moins 1 m en agglomération (1,50 m hors agglomération), pas de dépassement
-    serré. L''épreuve retient ces deux caractéristiques.'
+  reponse: Équilibre précaire (petites roues, freinage inégal) et faible gabarit peu détectable, surtout dans les
+    angles morts et de nuit.
+  explication: Je prévois un écart possible et diffère le dépassement si la place manque. Pour dépasser un EDPM,
+    l’écart latéral minimal est de 1 m en agglomération et 1,50 m hors agglomération (R414-4).
   theme: C
   sous_theme: vigilance
   source: Sécurité routière — Exemples de nouvelles questions (Q4)
@@ -186,10 +188,10 @@
   source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
 - id: c-emotions
   question: Peut-on prendre le volant après une forte émotion (dispute, colère, mauvaise nouvelle) ?
-  reponse: 'Mieux vaut attendre : sous le coup de l’émotion, on perçoit moins, on prend plus de risques et le temps de réaction
-    s’allonge.'
-  explication: Le stress et la colère sont des « déficiences » au même titre que la fatigue. La réponse attendue à l'examen
-    est de différer le trajet ou de se calmer avant de partir.
+  reponse: 'Mieux vaut attendre : sous le coup de l’émotion, on perçoit moins, on prend plus de risques et le temps
+    de réaction s’allonge.'
+  explication: Une émotion forte peut accaparer l’attention et favoriser une réaction impulsive. Si je ne suis pas
+    disponible pour observer et décider calmement, je diffère le départ.
   theme: C
   sous_theme: deficiences
   source: securite-routiere.gouv.fr — Les facteurs de risque ; Codes Rousseau

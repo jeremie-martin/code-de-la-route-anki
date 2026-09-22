@@ -1,3 +1,16 @@
+# Audit ciblé — 22 septembre 2026
+
+- Corrections de fond : tabac/vapotage avec mineur, grille Euro NCAP 2026, statut des ambulances,
+  conditions de traversée des piétons et délai de réinscription après invalidation.
+- Cohérence : insertion sans recette « jamais s’arrêter », voyant de pression sans règle « rouge = toujours
+  arrêt », ABS testé sur la perte d’antiblocage plutôt que sur une distance imprévisible.
+- Apprentissage : cinq rappels de chiffres de campagne/angles de vision retirés ; les cartes de perception,
+  distraction et somnolence gardent les principes et décisions. Pluie : hypothèse du modèle explicite.
+  Plusieurs explications cessent d’affirmer un corrigé universel de l’ETG.
+- Documentation ajustée ; sources consultées et portée consignées. Échantillon visuel élargi aux cartes
+  corrigées ; import réel, réimport, tests et contrôle de toutes les faces relancés sur le nouveau paquet.
+- 1 049 notes, 1 123 cartes ; modèles, médias et architecture conservés.
+
 # Révision ciblée — 22 septembre 2026
 
 - Secours : distinction malaise/traumatisme conforme au PSC juillet 2026 ; vomissements et analyse du DAE sans choc traités explicitement. Retrait de la prétendue exception « réponse attendue à l’examen ».
@@ -11,7 +24,7 @@
 Les éditions v1 à v8 sont les jalons d’une même journée de travail (21 septembre 2026) ; les détails sont dans
 l’historique git.
 
-## v10 — 22 septembre 2026 (édition actuelle)
+## v10 — 22 septembre 2026
 
 Révision ciblée de 150 notes pour rendre l’apprentissage autonome : les codes de panneaux et de marquages
 laissent place aux indices visibles et aux décisions de conduite. Les références techniques restent dans

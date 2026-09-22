@@ -102,7 +102,7 @@ Recherche Anki : `objectif::l-intersection`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `l-passage-pieton-50m` | socle | faits | Code de la route, art. R412-37 et R415-11 |
+| `l-passage-pieton-50m` | socle | faits | Code de la route, R412-37, R415-11 et R413-17 |
 | `l-priorite-droite-defaut` | socle | questions | Code de la route, art. R415-5 |
 | `l-sortie-parking-priorite` | socle | questions | Code de la route, art. R415-9 |
 | `l-stop-arret` | socle | questions | Code de la route, art. R415-6 |
@@ -492,7 +492,7 @@ Recherche Anki : `objectif::l-position`
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `l-croisement-largeur` | consolidation | faits | Code de la route, R414-2 et R414-3 |
-| `l-entrecroisement` | socle | questions | Code de la route, art. R421-3 ; IISR 7e partie art. 117-3 |
+| `l-entrecroisement` | socle | questions | Code de la route, R421-3 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842314 ; R412-10 |
 | `l-depassement-droite` | socle | questions | Code de la route, art. R414-6 et R414-15 |
 | `l-position-chaussee` | socle | questions | Code de la route, art. R412-9 et R412-23 |
 | `l-tourner-droite-serrer` | socle | questions | Code de la route, art. R412-9, R412-23 et R415-14 |
@@ -689,14 +689,13 @@ Recherche Anki : `objectif::c-substances`
 
 La conversation et la manipulation détournent l'attention.
 
-7 notes / 9 cartes.
+6 notes / 6 cartes.
 
 Recherche Anki : `objectif::c-distraction`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `c-telephone-5s` | consolidation | faits | Calcul v/3,6 × durée ; Sécurité routière — téléphone et distraction |
-| `c-chiffres-campagne` | socle | faits | securite-routiere.gouv.fr — Le téléphone et la conduite ; La fatigue et la conduite ; La vitesse et la conduite |
 | `c-telephone-arret` | socle | questions | Code de la route, art. R412-6-1 et L224-1 |
 | `aff-c-mains-libres-passager` | socle | affirmations | securite-routiere.gouv.fr — Le téléphone et la conduite |
 | `aff-c-oreillette` | socle | affirmations | Code de la route, art. R412-6-1 |
@@ -1104,7 +1103,7 @@ Recherche Anki : `objectif::m-alertes`
 | `aff-m-voyant-abs-blocage` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q5) |
 | `aff-m-voyant-abs-arret` | socle | affirmations | Sécurité routière — Exemples de nouvelles questions (Q5) |
 | `aff-m-tpms-orange` | consolidation | affirmations | Notices constructeurs (Renault, témoins lumineux) ; REMC |
-| `aff-m-voyant-abs-distance` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q5) |
+| `aff-m-voyant-abs-distance` | consolidation | affirmations | Renault — témoin ABS : https://www.user-manual.renault.com/fr/notice/indicator/108271 ; Sécurité routière — vitesse et distances de sécurité, juin 2003 |
 | `aff-m-clignotant-rapide` | consolidation | affirmations | Notices constructeurs ; REMC |
 
 ## m-entretien — Vérifier pneus, liquides et éclairage
@@ -1227,9 +1226,9 @@ Recherche Anki : `objectif::s-retenir`
 | `aff-s-siege-manteau` | socle | affirmations | securite-routiere.gouv.fr — Transporter un enfant en voiture |
 | `aff-s-isofix` | consolidation | affirmations | service-public.fr F628 ; securite-routiere.gouv.fr — Transporter un enfant |
 | `aff-s-abs-passive` | consolidation | affirmations | Stych — Sécurité active et passive ; lepermislibre |
-| `aff-s-euroncap-pietons` | consolidation | affirmations | Euro NCAP — How to read the stars |
+| `aff-s-euroncap-pietons` | consolidation | affirmations | Euro NCAP — protocole 2026 : https://www.euroncap.com/press-media/euro-ncap-announces-2026-protocol-changes-to-tackle-modern-driving-risks/ |
 | `aff-s-ceinture-autocar` | consolidation | affirmations | Code de la route, art. R412-1 |
-| `aff-s-fumer-mineur` | consolidation | affirmations | Code de la santé publique, art. L3512-9 et R3515-4 |
+| `aff-s-fumer-mineur` | consolidation | affirmations | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F33513 ; Code de la santé publique, L3512-9 ; Code de la route, R412-6 |
 
 ## s-charger — Charger, signaler et tracter dans les limites
 
@@ -1342,7 +1341,7 @@ Recherche Anki : `objectif::d-permis`
 | `d-permis-am-14-ans` | consolidation | faits | Code de la route, art. R221-5 et R221-4 (catégorie AM) ; service-public F2828 |
 | `d-permis-b-perimetre` | socle | faits | Code de la route, art. R221-4 (catégorie B) |
 | `d-permis-b-125` | consolidation | questions | Code de la route, art. R221-8 ; arrêté du 17 décembre 2010 modifié ; service-public F2828 |
-| `d-invalidation-repasser` | consolidation | questions | Code de la route, art. L223-5 et R224-20 ; service-public F1704 |
+| `d-invalidation-repasser` | consolidation | questions | Service Public — invalidation, étapes 3 à 8 : https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 ; R224-20 |
 | `d-suspension-invalidation` | socle | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F14836 ; https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 |
 | `aff-d-probatoire-majoration` | consolidation | affirmations | Code de la route, art. L223-1 et R223-1 |
 | `aff-d-disque-a-duree` | consolidation | affirmations | Code de la route, art. R413-5 II et III ; L223-1 |
@@ -1501,15 +1500,14 @@ Recherche Anki : `objectif::l-services`
 
 Champ utile, éblouissement et correction visuelle expliquent où chercher l’information ; les ordres de grandeur ne sont pas des garanties individuelles.
 
-5 notes / 6 cartes.
+4 notes / 4 cartes.
 
 Recherche Anki : `objectif::c-vision`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `c-vue-90-pourcent` | consolidation | faits | Arrêté du 28 mars 2022 ; En Voiture Simone — Acuité visuelle ; Code de la route, art. R221-1-1 |
-| `c-champ-visuel-chiffres` | socle | faits | Sécurité routière — La vue et la conduite ; supports de préparation |
-| `aff-c-vision-peripherique` | consolidation | affirmations | Code en Poche — Le champ visuel ; securite-routiere.gouv.fr — Dépliant La vue |
+| `aff-c-vision-peripherique` | socle | affirmations | Code en Poche — Le champ visuel ; securite-routiere.gouv.fr — Dépliant La vue |
 | `aff-c-nuit-distances` | consolidation | affirmations | securite-routiere.gouv.fr — Conduire la nuit ; Dépliant La vue |
 | `aff-c-regard-obstacle` | consolidation | affirmations | REMC ; Codes Rousseau — L'exploration visuelle |
 

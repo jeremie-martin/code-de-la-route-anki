@@ -614,3 +614,49 @@
   url: https://www.service-public.gouv.fr/particuliers/actualites/A19037
   portee: 'Mesure locale Paris et petite couronne depuis le 7 août 2026, casque et équipement rétro-réfléchissant à toute heure ; ne pas généraliser à tout le pays. Contenu conservé.'
   notes: [u-edpm-regle-locale]
+
+- id: audit-tabac-vapotage
+  consulte_le: '2026-09-22'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F33513
+  portee: 'Interdiction de fumer en présence d’un mineur, applicable à tous les occupants ; ne pas étendre cette interdiction spécifique au vapotage. Gêne à la conduite distincte, R412-6 ; fiche F35111 également consultée.'
+  notes: [aff-s-fumer-mineur]
+- id: audit-euroncap-2026
+  consulte_le: '2026-09-22'
+  url: https://www.euroncap.com/press-media/euro-ncap-announces-2026-protocol-changes-to-tackle-modern-driving-risks/
+  portee: 'Les quatre volets de l’évaluation changent en 2026 ; protection des piétons et cyclistes maintenue. Ne pas enseigner la grille antérieure comme actuelle.'
+  notes: [aff-s-euroncap-pietons]
+- id: audit-abs
+  consulte_le: '2026-09-22'
+  url: https://www.user-manual.renault.com/fr/notice/indicator/108271
+  portee: 'Notice constructeur : défaut d’ABS et maintien du freinage ordinaire, contrôle au plus tôt. Le verdict teste désormais la perte d’antiblocage, sans prédire une distance d’arrêt. Dossier Sécurité routière « Vitesse et distances de sécurité », juin 2003, p. 11 également consulté pour le rôle de l’ABS.'
+  notes: [aff-m-voyant-abs-distance]
+- id: audit-insertion
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842314
+  portee: 'R421-3 impose de céder à l’entrée sur autoroute. Suppression des recettes « toute la longueur » et « jamais s’arrêter » qui contredisaient la décision de céder en fin de voie.'
+  notes: [l-insertion-autoroute-priorite, l-entrecroisement, r-autoroute-insertion-fin-voie]
+- id: audit-pietons-ambulances
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/
+  portee: 'Lecture ciblée dans le Code consolidé archivé du 10 septembre 2026 : R412-37 et R415-11 (absence de passage proche ne suffit pas à définir toute traversée régulière), R311-1 6.5/6.6 et R415-12 (catégorie, mission et avertisseurs des ambulances). R414-13 également relu : carte tramway conservée.'
+  notes: [l-passage-pieton-50m, u-ambulance-privee-sans-sirene, u-tram-depasser]
+- id: audit-invalidation-delai
+  consulte_le: '2026-09-22'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F1704
+  portee: 'Étapes 3 à 8 pour le permis B : réinscription dans les neuf mois de la remise du permis, démarches possibles pendant l’interdiction ; la délivrance attend sa fin. Le libellé R224-20 a aussi été relu dans le Code archivé ; la carte explicite la procédure décrite par Service Public.'
+  notes: [d-invalidation-repasser]
+- id: audit-sanctions-sondage
+  consulte_le: '2026-09-22'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F19460
+  portee: 'Plafonds de vitesse, visibilité inférieure à 50 m, délit dès 50 km/h d’excès et six points ; fiche F2886 également consultée pour six points stupéfiants seuls, neuf avec alcool. Cartes conservées ; sondage, pas revalidation exhaustive des sanctions.'
+  notes: [d-grand-exces, d-vitesse-bareme, l-vitesse-visibilite-50, d-stupefiants-delit, d-points-delit-cumul]
+- id: audit-pluie-exemple
+  consulte_le: '2026-09-22'
+  url: https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf
+  portee: 'Copie archivée, page 8 rendue et lue visuellement : Q13, réponses AC (adhérence divisée par deux et freinage doublé). La carte borne ce résultat au modèle de l’exercice, sans en déduire le corrigé de toute question de pluie.'
+  notes: [c-distance-mouillee]
+- id: audit-depassement-trottinette
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/
+  portee: 'R414-4 IV lu dans le Code consolidé archivé : écart minimal d’un mètre en agglomération et d’un mètre et demi hors agglomération, notamment pour un engin à deux ou trois roues ; application à la trottinette de la carte.'
+  notes: [c-trottinette-vulnerable]

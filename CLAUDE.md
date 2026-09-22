@@ -28,11 +28,11 @@ python build/yamlfix.py data/*/*.yaml  # quote les valeurs YAML contenant ': '
   retirer une note = la retirer aussi de tous les registres (le build le signale).
 - Les scénarios d’intersection déclarent `check` ; `build/priority.py` (modèle documenté en tête du fichier)
   doit être d’accord.
-- Toute valeur juridique se vérifie dans `docs/research/sources/cdr.txt` (Code consolidé au 10 septembre 2026,
-  `grep -n "R. 415-5"`), puis la consultation se note dans `data/_meta/source_checks.yaml`.
-- Les limites de longueur, la balance vrai/faux et les tournures qui trahissent un verdict sont des
-  **avertissements** : on juge la carte, on ne la tord pas pour faire taire le compteur. `long_ok` /
-  `multi_ok` / `dedup_ok` marquent une exception assumée.
+- Vérifier les règles dans une source primaire actuelle ; la copie du Code au 10 septembre 2026 sert de
+  point de départ, pas de preuve de leur maintien. Noter la portée de la consultation dans `data/_meta/source_checks.yaml`.
+- La balance vrai/faux et les tournures qui trahissent un verdict produisent des **avertissements** :
+  juger la carte, sans quota ni longueur universelle. `multi_ok` / `dedup_ok` documentent une exception ;
+  `long_ok` est sans effet.
 - Les images générées sont invalidées automatiquement quand `diagrams.py` ou `gen_images.py` change.
 - Pas de migration entre éditions : les GUID dérivent des ids, ce qui suffit au réimport d’une même édition.
 - Pas d’agents en cascade : au plus deux sous-agents à la fois, sur Opus, avec « ne pas lancer de sous-agents ».

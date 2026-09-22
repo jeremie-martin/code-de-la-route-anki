@@ -40,14 +40,16 @@
   source: Code de la route, art. R221-8 ; arrêté du 17 décembre 2010 modifié ; service-public F2828
 - id: d-invalidation-repasser
   question: Permis invalidé pour solde de points nul. Dois-je repasser le code et la conduite ?
-  reponse: Le code toujours ; la conduite aussi si j'avais le permis depuis moins de 3 ans, si l'interdiction était
-    d'un an (récidive) ou si je me réinscris plus de 9 mois après.
-  explication: Après l'interdiction de solliciter un nouveau permis (6 mois, 1 an en cas de récidive) et un examen
-    médical et psychotechnique, le titulaire depuis au moins 3 ans dont l'interdiction était inférieure à un an repasse
-    l'épreuve théorique seule, s'il s'inscrit dans les 9 mois (R224-20).
+  reponse: Le code est à repasser. La conduite aussi, sauf si j’avais le permis depuis au moins 3 ans, si l’interdiction
+    dure moins d’un an et si je respecte le délai de réinscription.
+  explication: Pour une invalidation, Service Public demande la réinscription dans les 9 mois à compter de la remise
+    du permis à la préfecture. Contrôles médical et psychotechnique requis. Je peux entreprendre les démarches pendant
+    l’interdiction ; obtenir le nouveau permis exige d’attendre sa fin (6 mois, ou 1 an après une nouvelle invalidation
+    dans les 5 ans).
   theme: D
   sous_theme: points
-  source: Code de la route, art. L223-5 et R224-20 ; service-public F1704
+  source: 'Service Public — invalidation, étapes 3 à 8 : https://www.service-public.gouv.fr/particuliers/vosdroits/F1704
+    ; R224-20'
 - id: d-ct-critique
   theme: D
   sous_theme: controle_technique

@@ -329,10 +329,11 @@
   source: Code de la route, art. R414-3
 - id: r-descente-freinage
   question: Comment freiner dans une longue descente (par exemple à 15 %) ?
-  reponse: Rapport inférieur pour le frein moteur, et freinage par intermittence (appuis francs puis relâche) plutôt que continu,
-    pour éviter la surchauffe.
-  explication: Un frein chaud perd son efficacité. L'épreuve attend « je freine par intermittence et j’utilise le
-    frein moteur », et non « doucement et en permanence ».
+  reponse: Rapport inférieur pour le frein moteur, et freinage par intermittence (appuis francs puis relâche) plutôt
+    que continu, pour éviter la surchauffe.
+  explication: Un frein qui chauffe perd de son efficacité. Je choisis mon rapport avant la descente et j’adapte
+    l’allure pour ne pas devoir freiner en continu ; les freinages restent maîtrisés, sans brusquer les commandes
+    sur sol glissant.
   theme: R
   sous_theme: montagne
   source: Sécurité routière — Exemples de nouvelles questions (Q18)

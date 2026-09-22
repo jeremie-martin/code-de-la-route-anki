@@ -5,7 +5,7 @@ en 2026, et comprendre les règles assez bien pour les appliquer à des situatio
 Il est généré à partir d’une bibliothèque de connaissances écrite à la main (`data/`) par le code de `build/`.
 
 **[Télécharger le paquet](out/Code-de-la-route-2026.apkg)** — effectifs exacts dans [STATS](out/STATS.md)
-(1 051 notes, 1 128 cartes). Le deck relie les signaux, les règles, les décisions et des scénarios dessinés à
+(1 049 notes, 1 123 cartes). Le deck relie les signaux, les règles, les décisions et des scénarios dessinés à
 49 objectifs d’apprentissage. Il ne contient pas de photographies d’examen.
 
 ## Commencer
@@ -15,10 +15,10 @@ Il est généré à partir d’une bibliothèque de connaissances écrite à la 
    enfouit les cartes sœurs. Sans lui, Anki servirait toutes les cartes de signalisation d’un bloc.
    Vérification : Options du deck → Nouvelles cartes → ordre de collecte « position la plus basse ».
 2. Étudier le deck parent **Code de la route 2026**. L’ordre d’introduction entrelace les thèmes ; les
-   617 premières cartes forment le socle, la suite consolide (variantes, exceptions, applications). Le nombre
+   613 premières cartes forment le socle, la suite consolide (variantes, exceptions, applications). Le nombre
    de nouvelles cartes par jour est un réglage personnel.
 3. L’écran de chaque sous-deck affiche le **repère** du thème (principe, exemple, transfert) ; les mêmes
-   textes sont réunis dans [REPERES](out/REPERES.md). Les lire avant les premières cartes d’un thème.
+   textes sont réunis dans [REPERES](out/REPERES.md), pour retrouver le principe derrière une carte.
 4. Faire en parallèle, dès le début, des séries de questions sur **photos et vidéos** puis des examens
    blancs chronométrés : Anki entraîne le savoir, les distinctions et le raisonnement ; la perception d’une
    scène nouvelle et la décision sous contrainte de temps s’entraînent sur des scènes nouvelles.
@@ -45,10 +45,8 @@ sous la réponse donne le mécanisme, la limite ou la distinction : elle se lit,
 Les comparaisons utiles montrent les autres signaux avec leur sens en légende. Le volet
 « Sources » contient la référence, le code technique et le nom officiel du signal ; ces codes ne sont pas à apprendre.
 
-Après une erreur en série photo, chercher la cause avant d’ajouter une carte : règle oubliée (revoir la carte,
-`objectif::…` dans [COUVERTURE](out/COUVERTURE.md)), indice non vu (refaire des scènes, pas des cartes), lecture
-de l’énoncé (« je peux » / « je dois », négations, nombre de réponses), précipitation (séries chronométrées).
-Une carte ambiguë se corrige dans `data/`, elle ne s’apprend pas par répétition.
+Pour retrouver une difficulté par compétence, utiliser les étiquettes `objectif::…` et
+[COUVERTURE](out/COUVERTURE.md). Une carte ambiguë se corrige dans `data/`.
 
 ## Reconstruire
 

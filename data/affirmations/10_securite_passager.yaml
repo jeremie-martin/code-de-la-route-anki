@@ -143,10 +143,12 @@
 - id: aff-s-euroncap-pietons
   affirmation: Les étoiles Euro NCAP évaluent aussi la protection des piétons et des cyclistes.
   verdict: vrai
-  pourquoi: 'Le classement porte sur quatre domaines : protection des occupants adultes, protection des occupants enfants, protection des usagers vulnérables et aides à la sécurité. Cinq étoiles au maximum.'
+  pourquoi: 'L’évaluation ne protège pas seulement les occupants : elle examine aussi les risques pour les usagers
+    extérieurs. Depuis 2026, ses quatre volets sont la conduite sûre, l’évitement des collisions, la protection
+    lors du choc et la sécurité après le choc. Le protocole évolue : tenir compte de l’année du test.'
   theme: S
   sous_theme: equipements
-  source: Euro NCAP — How to read the stars
+  source: 'Euro NCAP — protocole 2026 : https://www.euroncap.com/press-media/euro-ncap-announces-2026-protocol-changes-to-tackle-modern-driving-risks/'
 - id: aff-s-ceinture-autocar
   contexte: Voyage en autocar équipé de ceintures de sécurité.
   affirmation: Chaque passager doit attacher sa ceinture.
@@ -161,8 +163,10 @@
   contexte: Je conduis avec mon enfant de 12 ans à bord.
   affirmation: Je peux fumer une cigarette au volant, vitre ouverte.
   verdict: faux
-  pourquoi: 'Fumer (ou vapoter) dans un véhicule en présence d''un mineur est interdit : 135 €. Le geste détourne
-    aussi l''attention et une main du volant.'
+  pourquoi: Fumer est interdit à tous les occupants en présence d’un mineur, même vitre ouverte (amende forfaitaire
+    de 135 €). Cette interdiction spécifique ne vise pas le vapotage ; au volant, fumer ou vapoter reste sanctionnable
+    si le geste empêche de conduire en sécurité.
   theme: S
   sous_theme: passagers
-  source: Code de la santé publique, art. L3512-9 et R3515-4
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F33513 ; Code de la santé publique,
+    L3512-9 ; Code de la route, R412-6

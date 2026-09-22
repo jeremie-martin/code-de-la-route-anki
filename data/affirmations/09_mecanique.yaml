@@ -188,9 +188,9 @@
   contexte: En roulant, le voyant orange de pression des pneus s'allume ; la voiture ne tire pas et ne vibre pas.
   affirmation: Je peux continuer normalement jusqu'à ma destination et contrôler la pression plus tard.
   verdict: faux
-  pourquoi: 'Orange = anomalie à traiter rapidement : je réduis ma vitesse et je m''arrête dès que possible pour contrôler
-    les quatre pneus (station de gonflage). Si la voiture tire d''un côté ou vibre, c''est peut-être une crevaison
-    : arrêt immédiat en sécurité. Rouge, lui, impose toujours l''arrêt.'
+  pourquoi: 'Je réduis l’allure et m’arrête dans un lieu sûr dès que possible pour examiner les pneus et contrôler
+    leur pression selon la notice. Si la voiture tire ou vibre, une crevaison est possible : ne pas chercher à rejoindre
+    une station à tout prix. La couleur seule ne suffit pas à décider de la conduite à tenir.'
   theme: M
   sous_theme: voyants
   source: Notices constructeurs (Renault, témoins lumineux) ; REMC
@@ -215,14 +215,16 @@
   source: CNSR, Comité des experts — Les aides à la conduite (ADAS), 2024
 - id: aff-m-voyant-abs-distance
   contexte: Le voyant ABS reste allumé en permanence ; le freinage ordinaire fonctionne.
-  affirmation: Lors d'un freinage d'urgence, la distance d'arrêt sera fortement augmentée.
+  affirmation: 'Le freinage ordinaire fonctionne encore : je conserve donc aussi la protection contre le blocage
+    des roues.'
   verdict: faux
-  pourquoi: 'L''ABS empêche le blocage des roues et conserve la direction ; il ne raccourcit pas nettement l''arrêt
-    sur sol sec. Sans lui, ce qui est perdu, c''est la possibilité de braquer en freinant fort : c''est cela que
-    l''épreuve attend.'
+  pourquoi: 'Non : un défaut d’ABS peut laisser le freinage ordinaire fonctionner, mais les roues risquent de se
+    bloquer lors d’un freinage fort, avec perte de capacité à diriger. Je fais contrôler rapidement le véhicule.
+    La distance d’arrêt dépend aussi du sol, des pneus et du freinage : ce seul voyant ne permet pas de la prédire.'
   theme: M
   sous_theme: freinage
-  source: Sécurité routière — Exemples de nouvelles questions (Q5)
+  source: 'Renault — témoin ABS : https://www.user-manual.renault.com/fr/notice/indicator/108271 ; Sécurité routière
+    — vitesse et distances de sécurité, juin 2003'
 - id: aff-m-clignotant-rapide
   contexte: En actionnant le clignotant, le témoin vert clignote deux fois plus vite que d'habitude.
   affirmation: Cela signale qu'une ampoule de clignotant est grillée.

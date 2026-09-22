@@ -19,6 +19,11 @@ from build.preview import CHROME, OUT
 from build.verify import import_package
 
 SAMPLES = {
+    'aff-s-fumer-mineur', 'aff-s-euroncap-pietons', 'aff-m-voyant-abs-distance',
+    'aff-m-tpms-orange', 'l-entrecroisement', 'l-insertion-autoroute-priorite',
+    'u-ambulance-privee-sans-sirene', 'l-passage-pieton-50m', 'c-distance-mouillee',
+    'c-croisement-nuit-regard', 'c-trottinette-vulnerable', 'c-emotions',
+    'r-descente-freinage', 'd-invalidation-repasser', 'aff-c-vision-peripherique',
     'a13a', 'a13b', 'b9b', 'j1', 'r-b26-chaines-complement', 'conf-t1-dissuasion',
     'l-balises-j10', 'a-rcp-dae',
     'scn-dep-cycliste-ligne-continue', 'scn-dep-ligne-discontinue-libre',

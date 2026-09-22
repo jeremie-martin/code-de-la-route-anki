@@ -596,7 +596,6 @@
   titre: Écarter les distractions même légales
   raison: La conversation et la manipulation détournent l'attention.
   notes:
-  - c-chiffres-campagne
   - c-telephone-arret
   - aff-c-mains-libres-passager
   - aff-c-oreillette
@@ -1276,10 +1275,9 @@
   raison: Champ utile, éblouissement et correction visuelle expliquent où chercher l’information ; les ordres de
     grandeur ne sont pas des garanties individuelles.
   notes:
-  - c-champ-visuel-chiffres
+  - aff-c-vision-peripherique
   consolidation:
   - c-vue-90-pourcent
-  - aff-c-vision-peripherique
   - aff-c-nuit-distances
   - aff-c-regard-obstacle
 - id: u-lents

@@ -1,22 +1,22 @@
 # Statistiques du build
-- Notes : 1051
-- Cartes : 1128
-- Socle : 568 notes / 617 cartes (positions 1 à 617), puis consolidation
+- Notes : 1049
+- Cartes : 1123
+- Socle : 567 notes / 613 cartes (positions 1 à 613), puis consolidation
 
 ## Par type de note
 - CDR Affirmation : 250
 - CDR Confusion : 48
-- CDR Fait : 103
+- CDR Fait : 101
 - CDR Question : 310
 - CDR Reconnaissance : 284
 - CDR Scenario : 56
 
 ## Cartes par sous-deck
-- Code de la route 2026 : 1128
+- Code de la route 2026 : 1123
 - Code de la route 2026::00 Méthode d'examen : 6
 - Code de la route 2026::01 Signalisation : 346
 - Code de la route 2026::02 Circulation : 178
-- Code de la route 2026::03 Le conducteur : 98
+- Code de la route 2026::03 Le conducteur : 93
 - Code de la route 2026::04 La route : 74
 - Code de la route 2026::05 Les autres usagers : 82
 - Code de la route 2026::06 Réglementation et notions diverses : 91
@@ -29,7 +29,7 @@
 ## Notes par thème / sous-thème
 - **X — Méthode d'examen** : lecture 6
 - **L — La circulation routière** : agents 8, applications 16, balises 11, croisement 6, depassement 28, feux 20, marquages 35, panneaux 210, panonceaux 31, positionnement 17, priorites 60, signalisation 28, stationnement 21, vitesse 18
-- **C — Le conducteur** : applications 1, deficiences 41, distances 14, perception 10, vigilance 24
+- **C — Le conducteur** : applications 1, deficiences 41, distances 14, perception 9, vigilance 23
 - **R — La route** : autoroute 17, chantiers 3, intemperies 23, montagne 6, nuit 6, passages_a_niveau 9, tramways 3, tunnels 6
 - **U — Les autres usagers** : cyclistes 14, edpm 8, motos 10, pietons 15, poids_lourds 10, transports_commun 3, vehicules_lents_animaux 6, vehicules_prioritaires 7
 - **D — Les notions diverses** : controle_technique 1, documents 15, permis 11, points 13, sanctions 22

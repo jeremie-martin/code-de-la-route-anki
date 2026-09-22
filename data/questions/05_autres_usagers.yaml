@@ -221,12 +221,13 @@
   sous_theme: vehicules_prioritaires
   source: Code de la route, art. R415-12 ; securite-routiere.gouv.fr — Info/intox
 - id: u-ambulance-privee-sans-sirene
-  question: Une ambulance privée arrive derrière moi, feux bleus à éclats allumés mais sans avertisseur sonore. Que
-    fais-je ?
-  reponse: 'Je lui facilite le passage si je le peux sans danger : sans sirène, elle n''a que des facilités de passage,
-    pas la priorité.'
-  explication: 'Prioritaires (police, pompiers, SAMU…) : gyrophare bleu + deux tons → je cède (R415-12). Facilités de passage
-    (ambulances privées, EDF, transports de fonds) : feux à éclats + trois tons → je facilite.'
+  question: Une ambulance privée arrive derrière moi, feux bleus à éclats allumés mais sans avertisseur sonore.
+    Que fais-je ?
+  reponse: Je lui facilite le passage sans danger. Ses seuls feux bleus ne suffisent pas à m’imposer de lui céder
+    la priorité.
+  explication: Le statut dépend de la catégorie et de la mission, pas du seul mot « ambulance ». Une ambulance de
+    transport sanitaire bénéficie de facilités ; un véhicule affecté à l’intervention du SAMU peut être prioritaire.
+    La priorité de R415-12 suppose l’annonce par les avertisseurs spéciaux. Je ne fais aucune manœuvre dangereuse.
   theme: U
   sous_theme: vehicules_prioritaires
   source: Code de la route, art. R311-1 (6.5 et 6.6), R415-12 et R414-2

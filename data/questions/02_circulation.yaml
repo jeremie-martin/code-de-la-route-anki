@@ -76,21 +76,23 @@
   question: Sur une voie d'accélération (entrée d'autoroute ou de voie rapide), comment m'insérer ?
   reponse: 'Je cède le passage à ceux qui circulent déjà et j''adapte ma vitesse pour entrer dans un créneau : rien
     ne les oblige à se déporter.'
-  explication: R421-3. J'utilise toute la longueur de la voie d'accélération pour atteindre la vitesse du flux, clignotant
-    et contrôles faits, et je m'insère de préférence derrière un véhicule.
+  explication: J’utilise la voie pour adapter mon allure au trafic, avec clignotant et contrôles, sans attendre
+    systématiquement son extrémité. Je m’insère dès qu’un créneau sûr le permet ; à défaut, je cède, au besoin en
+    m’arrêtant avant la fin de la voie.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R421-3
 - id: l-entrecroisement
-  question: Sur une voie d'entrecroisement (l'entrée d'un échangeur rejoint la sortie du suivant), qui doit céder le passage
-    ?
-  reponse: Celui qui change de voie cède ; entrant et sortant ajustent leur vitesse pour se faciliter mutuellement le passage.
-    La priorité à droite ne s’y applique pas.
-  explication: Tronçon fréquent entre deux échangeurs rapprochés, délimité par une ligne discontinue à traits rapprochés.
-    On s'y insère en « fermeture éclair », sans jamais s'arrêter sur la voie.
+  question: Sur une voie d'entrecroisement (l'entrée d'un échangeur rejoint la sortie du suivant), qui doit céder
+    le passage ?
+  reponse: Celui qui change de voie cède ; entrant et sortant ajustent leur vitesse pour se faciliter mutuellement
+    le passage. La priorité à droite ne s’y applique pas.
+  explication: 'J’anticipe les trajectoires et ajuste mon allure pour éviter un conflit. La coopération ne crée
+    pas de priorité : l’entrant doit céder aux véhicules sur l’autoroute. Si aucun créneau sûr ne se présente, je
+    ralentis et, au besoin, m’arrête avant la fin de ma voie ; je ne force pas l’insertion.'
   theme: L
   sous_theme: priorites
-  source: Code de la route, art. R421-3 ; IISR 7e partie art. 117-3
+  source: Code de la route, R421-3 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842314 ; R412-10
 - id: l-intersection-encombree
   question: Le feu est vert mais l'intersection est bouchée derrière. Que fais-je ?
   reponse: 'J''attends avant l''intersection : je ne m''engage que si je suis sûr de la dégager sans bloquer les voies

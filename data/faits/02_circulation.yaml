@@ -202,14 +202,13 @@
   - ref: j10
     legende: Les bandes rouges décomptent la distance au passage à niveau.
 - id: l-passage-pieton-50m
-  texte: Un piéton doit emprunter le passage piéton s’il en existe un à moins de {{c1::50 m}} ; au-delà, il peut traverser
-    ailleurs, et le conducteur doit lui céder le passage.
-  explication: Je cède au piéton engagé ou qui manifeste clairement l’intention de traverser (135 €, 6 points). Dans une aire
-    piétonne ou une zone de rencontre, le piéton est prioritaire partout. Ne jamais s’arrêter sur le passage ni dépasser un
-    véhicule arrêté devant.
+  texte: Un piéton doit utiliser un passage prévu à son intention s’il en existe un à moins de {{c1::50 m}}.
+  explication: Sans passage proche, il tient compte de la visibilité, de la distance et de la vitesse des véhicules
+    ; à une intersection, il traverse dans le prolongement du trottoir. Je cède à celui qui s’engage régulièrement
+    ou manifeste clairement cette intention. Même face à un piéton en infraction, je dois éviter l’accident.
   theme: L
   sous_theme: priorites
-  source: Code de la route, art. R412-37 et R415-11
+  source: Code de la route, R412-37, R415-11 et R413-17
 - id: l-signalisation-hierarchie
   explication: Un feu vert ne permet ni un sens interdit ni le franchissement d’une ligne continue. Éviter la fausse hiérarchie
     « tous les panneaux > tous les marquages ».
