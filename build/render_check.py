@@ -19,6 +19,7 @@ from build.preview import CHROME, OUT
 from build.verify import import_package
 
 SAMPLES = {
+    's-remorque-vitesses', 's-remorque-permis-vitesse', 'm-freins-apres-lavage', 's-groupes-sieges',
     'l-sortie-parking-priorite', 'aff-l-chemin-terre', 'scn-moi-sortie-parking',
     'scn-t-moi-branche', 'l-giratoire-placement', 'l-giratoire-clignotant',
     'l-depassement-interdit-lieux-2', 'c-occlusion-pieton', 'l-stationnement-bande-cyclable',

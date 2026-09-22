@@ -24,6 +24,8 @@ Les supports de préparation (Codes Rousseau, ENPC, Ornikar, En Voiture Simone, 
 les sujets et les raccourcis pédagogiques (ordre de grandeur des distances, repères d’écoconduite). Ils ne
 certifient pas les réponses de la banque. Les dossiers `research/*.md` sont des notes de recherche historiques,
 avec des hypothèses parfois remplacées ; vérifier la source actuelle avant de réutiliser un passage.
+La [comparaison ciblée avec le livre 2025–2026](research/comparaison-livre-2025-2026.md) distingue les
+ajouts retenus, les divergences vérifiées et les éléments déjà couverts.
 
 ## Règles récentes (entrées datées du registre)
 

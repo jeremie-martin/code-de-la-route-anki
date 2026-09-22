@@ -1110,7 +1110,7 @@ Recherche Anki : `objectif::m-alertes`
 
 Préconisations constructeur et signes de panne priment sur les recettes.
 
-27 notes / 32 cartes.
+28 notes / 33 cartes.
 
 Recherche Anki : `objectif::m-entretien`
 
@@ -1124,6 +1124,7 @@ Recherche Anki : `objectif::m-entretien`
 | `m-niveau-huile` | socle | questions | Ornikar — Huile moteur ; lepermislibre — Contrôler les niveaux |
 | `m-liquide-refroidissement` | socle | questions | Ornikar — Liquide de refroidissement |
 | `m-liquide-frein` | socle | questions | Ornikar — Liquide de frein ; lepermislibre |
+| `m-freins-apres-lavage` | consolidation | questions | Volvo — Freins de route, rubrique Freinage sur route mouillée — https://www.volvocars.com/fr/support/car/v60-cross-country/15w17/article/b7763713f78f074bc0a801e8017136c8/ |
 | `m-plaquettes-usure` | consolidation | questions | Ornikar — Plaquettes et amortisseurs ; Stych — Pannes et dysfonctionnements |
 | `m-batterie-cables` | consolidation | questions | APRR — Utiliser des câbles de démarrage ; lepermislibre |
 | `m-carburants-etiquettes` | consolidation | questions | Norme EN 16942 (étiquetage 2018) ; TotalEnergies ; Ornikar |
@@ -1211,7 +1212,7 @@ Recherche Anki : `objectif::s-retenir`
 | `s-surnombre` | socle | questions | Code de la route, art. R412-1-1 ; Stych — Installation des passagers |
 | `s-enfant-moins-10-ans` | consolidation | questions | Code de la route, art. R412-2 et R412-3 ; service-public.fr — Transport d'enfants en voiture |
 | `s-siege-dos-route` | socle | questions | Code de la route, art. R412-3 ; règlement ONU R129 (i-Size) ; securite-routiere.gouv.fr — Enfants en voiture |
-| `s-groupes-sieges` | socle | questions | securite-routiere.gouv.fr — Transporter un enfant en voiture ; règlements ONU R44 et R129 |
+| `s-groupes-sieges` | socle | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F628 ; AWSR — https://www.awsr.be/securite-routiere/sieges-auto/ |
 | `s-securite-enfant-portieres` | consolidation | questions | securite-routiere.gouv.fr — Enfants en voiture |
 | `s-securite-active-passive` | socle | questions | securite-routiere.gouv.fr — Équipements de sécurité ; Euro NCAP |
 | `aff-s-passagere-arriere-danger` | socle | affirmations | Sécurité routière — Exemples de nouvelles questions (Q12) ; Dépliant ceinture 2022 |
@@ -1234,7 +1235,7 @@ Recherche Anki : `objectif::s-retenir`
 
 Lire les masses et appliquer les seuils à une situation.
 
-15 notes / 20 cartes.
+17 notes / 22 cartes.
 
 Recherche Anki : `objectif::s-charger`
 
@@ -1247,6 +1248,8 @@ Recherche Anki : `objectif::s-charger`
 | `s-chargement-depassement` | socle | questions | Code de la route, art. R312-19 à R312-22 |
 | `s-coffre-toit` | consolidation | questions | ADEME — Éco-conduite ; securite-routiere.gouv.fr |
 | `s-remorque-conduite` | socle | questions | securite-routiere.gouv.fr — Équipement de la voiture ; Stych — Chargement et remorque |
+| `s-remorque-vitesses` | socle | questions | Code de la route, art. R413-8 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426 ; R413-1 et R413-4 |
+| `s-remorque-permis-vitesse` | consolidation | questions | Code de la route, art. R413-8 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426 ; R221-4 |
 | `s-remorque-seuil-750` | socle | questions | Service Public, permis B — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828 |
 | `s-remorque-masse-reelle` | socle | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828 |
 | `aff-s-chargement-distance-arret` | consolidation | affirmations | securite-routiere.gouv.fr — Équipement de la voiture ; Stych — Chargement |

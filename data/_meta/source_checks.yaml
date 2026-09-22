@@ -740,6 +740,26 @@
   url: https://www.cetu.developpement-durable.gouv.fr/conduire-en-tunnel-a1597.html
   portee: 'Page CETU mise à jour le 31 octobre 2025, texte consulté par téléchargement HTTP après échec du navigateur de recherche : feux de croisement à l’entrée, distances particulières et respect des consignes. Retrait de l’explication non étayée par la réverbération.'
   notes: [r-tunnel-feux-jour]
+- id: comparaison-livre-remorque-vitesses
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426
+  portee: 'R413-8 relu en ligne, avec R413-1, R413-4 et R413-8-1 dans la section Vitesse : PTRA supérieur à 3,5 t pour un ensemble, 90 sur autoroute, 90 sur route prioritaire à chaussées séparées pour le cas léger retenu, 80 sur les autres routes hors agglomération. Les exemples distinguent ce critère des PTAC utilisés pour le permis ; aucun plafond de poids lourd supérieur à 12 t généralisé aux voitures.'
+  notes: [s-remorque-vitesses, s-remorque-permis-vitesse]
+- id: comparaison-livre-freins-mouilles
+  consulte_le: '2026-09-22'
+  url: https://www.volvocars.com/fr/support/car/v60-cross-country/15w17/article/b7763713f78f074bc0a801e8017136c8/
+  portee: 'Rubrique Freinage sur route mouillée lue dans le texte indexé du moteur de recherche (accès direct refusé) : retard possible après pluie prolongée ou lavage, freinage pour sécher et prise en compte du trafic. Carte de précaution, sans dosage ni nombre universel de freinages ; notice propre au véhicule conservée comme référence pratique.'
+  notes: [m-freins-apres-lavage]
+- id: comparaison-livre-siege-compatibilite
+  consulte_le: '2026-09-22'
+  url: https://www.awsr.be/securite-routiere/sieges-auto/
+  portee: 'Agence wallonne pour la Sécurité routière : choix selon taille et poids, compatibilité voiture, installation suivant la notice, existence de R129 avec ceinture seule, fin de vente neuve R44 en septembre 2024 sans interdiction des sièges déjà possédés. Seuls ces éléments techniques européens sont utilisés, pas les règles belges de transport des enfants. Fiche française F628 également consultée pour R44-03/04 ; son raccourci R129 = i-Size/ISOFIX ne sert pas à généraliser la fixation.'
+  notes: [s-groupes-sieges]
+- id: comparaison-livre-controle-technique
+  consulte_le: '2026-09-22'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F2878
+  portee: 'Comparaison avec le chapitre 9 du livre : S = défaillance majeure, validité deux mois ; R = critique, validité limitée au jour du contrôle. Cartes existantes conservées ; la ligne R du livre confond majeure et critique.'
+  notes: [d-ct-critique, aff-d-ct-defaillance-majeure]
 - id: audit-tunnel-distances-plurielles
   consulte_le: '2026-09-22'
   url: https://www.cetu.developpement-durable.gouv.fr/IMG/pdf/CETU-Note_Info_22_2011.pdf

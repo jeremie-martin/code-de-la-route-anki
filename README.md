@@ -5,7 +5,7 @@ en 2026, et comprendre les règles assez bien pour les appliquer à des situatio
 Il est généré à partir d’une bibliothèque de connaissances écrite à la main (`data/`) par le code de `build/`.
 
 **[Télécharger le paquet](out/Code-de-la-route-2026.apkg)** — effectifs exacts dans [STATS](out/STATS.md)
-(1 049 notes, 1 123 cartes). Le deck relie les signaux, les règles, les décisions et des scénarios dessinés à
+(1 052 notes, 1 126 cartes). Le deck relie les signaux, les règles, les décisions et des scénarios dessinés à
 49 objectifs d’apprentissage. Il ne contient pas de photographies d’examen.
 
 ## Commencer
@@ -15,7 +15,7 @@ Il est généré à partir d’une bibliothèque de connaissances écrite à la 
    enfouit les cartes sœurs. Sans lui, Anki servirait toutes les cartes de signalisation d’un bloc.
    Vérification : Options du deck → Nouvelles cartes → ordre de collecte « position la plus basse ».
 2. Étudier le deck parent **Code de la route 2026**. L’ordre d’introduction entrelace les thèmes ; les
-   613 premières cartes forment le socle, la suite consolide (variantes, exceptions, applications). Le nombre
+   614 premières cartes forment le socle, la suite consolide (variantes, exceptions, applications). Le nombre
    de nouvelles cartes par jour est un réglage personnel.
 3. L’écran de chaque sous-deck affiche le **repère** du thème (principe, exemple, transfert) ; les mêmes
    textes sont réunis dans [REPERES](out/REPERES.md), pour retrouver le principe derrière une carte.

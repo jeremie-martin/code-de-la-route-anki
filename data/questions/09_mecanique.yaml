@@ -51,6 +51,16 @@
   theme: M
   sous_theme: entretien
   source: Ornikar — Liquide de frein ; lepermislibre
+- id: m-freins-apres-lavage
+  question: 'Je repars après avoir lavé la voiture. Quelle vérification faire avant de reprendre de la vitesse, et pourquoi ?'
+  reponse: 'Tester le freinage à faible allure, dans un espace dégagé et sans gêner les autres :
+    l’eau sur les freins peut retarder leur action.'
+  explication: 'Des freinages contrôlés contribuent à sécher disques et garnitures. Je tiens compte du trafic
+    derrière et suis la notice du véhicule. Si le freinage reste anormal, je m’arrête en sécurité et fais contrôler ;
+    je ne suppose pas que toute perte d’efficacité vient de l’eau.'
+  theme: M
+  sous_theme: freinage
+  source: Volvo — Freins de route, rubrique Freinage sur route mouillée — https://www.volvocars.com/fr/support/car/v60-cross-country/15w17/article/b7763713f78f074bc0a801e8017136c8/
 - id: m-plaquettes-usure
   question: Quels signes annoncent des plaquettes de frein usées ?
   reponse: 'Un témoin d''usure au tableau de bord, un bruit métallique au freinage ou une baisse du liquide de frein

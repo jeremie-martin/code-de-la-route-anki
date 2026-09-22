@@ -1,3 +1,14 @@
+# Comparaison avec le livre 2025–2026 — 22 septembre 2026
+
+- Trois questions ajoutées : plafonds de vitesse avec remorque, distinction permis/PTRA dans un cas
+  concret, vérification des freins après lavage. Choix du siège enfant recentré sur l’adaptation,
+  la compatibilité et l’installation ; R129 n’impose pas toujours une fixation Isofix.
+- Comparaison ciblée et décisions dans `docs/research/comparaison-livre-2025-2026.md` ; sources et limites
+  de consultation consignées. Aucun texte ou média du livre intégré au paquet.
+- Paquet reconstruit : 1 052 notes, 1 126 cartes. 22 tests réussis, import et réimport Anki réussis,
+  9 234 faces/configurations contrôlées sans échec. Lecture visuelle des quatre notes modifiées,
+  avec échantillons en sombre et à 320 px. Pas de validation native mobile ni de mesure de rétention.
+
 # Circulation : conditions décisives — 22 septembre 2026
 
 - Douze notes améliorées, sans ajouter de cartes : placement au giratoire selon l’axe d’entrée, signalement

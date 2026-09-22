@@ -72,14 +72,15 @@
   source: Code de la route, art. R412-3 ; règlement ONU R129 (i-Size) ; securite-routiere.gouv.fr — Enfants en voiture
 - id: s-groupes-sieges
   question: Comment choisit-on un siège enfant ?
-  reponse: Selon sa taille (norme i-Size, R129) ou selon son poids (ancienne norme R44) ; homologation sur étiquette orange,
-    fixation Isofix de préférence.
-  explication: 'R44 : groupe 0 jusqu’à 10 kg, 0+ jusqu’à 13 kg ; groupe 1 de 9 à 18 kg ; 2 de 15 à 25 kg ; 3 de 22 à 36 kg.
-    Pour chaque siège, lire ses propres limites et sa notice. R44 n’est plus commercialisé neuf depuis septembre 2024, mais
-    son utilisation reste admise.'
+  reponse: Un siège homologué adapté à la taille et au poids de l’enfant, compatible avec la voiture et la place choisie.
+    Je vérifie l’étiquette et les notices du siège et du véhicule pour l’installer correctement.
+  explication: 'R129 classe les sièges par taille, avec une masse maximale à respecter lorsqu’elle est indiquée ;
+    l’ancienne norme R44 les classe par poids. R129 ne signifie pas toujours fixation Isofix : certains modèles
+    s’installent avec la ceinture. La fixation autorisée dépend du siège. Les R44-03 et R44-04 déjà possédés
+    restent utilisables ; les sièges R44 ne sont plus vendus neufs depuis septembre 2024.'
   theme: S
   sous_theme: enfants
-  source: securite-routiere.gouv.fr — Transporter un enfant en voiture ; règlements ONU R44 et R129
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F628 ; AWSR — https://www.awsr.be/securite-routiere/sieges-auto/
 - id: s-securite-enfant-portieres
   question: À quoi sert la « sécurité enfants » des portières arrière ?
   reponse: À empêcher l'ouverture des portes arrière depuis l'intérieur (et sur certains véhicules, le fonctionnement des
@@ -137,6 +138,28 @@
   theme: S
   sous_theme: equipements
   source: securite-routiere.gouv.fr — Équipements de sécurité ; Euro NCAP
+- id: s-remorque-vitesses
+  question: 'Je tracte une remorque avec une voiture de PTAC inférieur à 3,5 t et de PTRA 4 t.
+    Hors agglomération, quels plafonds de vitesse s’appliquent par temps sec, sans limitation plus basse ?'
+  reponse: '90 km/h sur autoroute et sur route prioritaire à chaussées séparées par un terre-plein central ;
+    80 km/h sur les autres routes.'
+  explication: 'Avec une remorque, le PTRA supérieur à 3,5 t déclenche ces plafonds, même si l’ensemble roule
+    peu chargé. Le PTRA est la masse maximale autorisée de l’ensemble, inscrite en F.3 sur la carte grise
+    de la voiture. Une limitation plus basse ou les conditions de circulation peuvent imposer de ralentir davantage.'
+  theme: S
+  sous_theme: chargement
+  source: Code de la route, art. R413-8 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426 ; R413-1 et R413-4
+- id: s-remorque-permis-vitesse
+  question: 'Voiture de PTAC 2 200 kg et de PTRA 4 000 kg, attelée à une remorque vide de PTAC 500 kg.
+    Le permis B suffit et les capacités techniques sont respectées. Sur une autoroute normalement limitée
+    à 130 km/h, par temps sec, puis-je rouler à 130 ?'
+  reponse: 'Non : 90 km/h au maximum, car je tracte et le PTRA de la voiture dépasse 3 500 kg.'
+  explication: 'Le permis requis et la vitesse autorisée sont deux vérifications différentes.
+    Ni la petite remorque, ni son faible poids réel, ni la somme des PTAC inférieure à 3 500 kg
+    ne suppriment ici la limite liée au PTRA. Sans remorque, ce seul PTRA ne soumet pas la voiture à 90 km/h.'
+  theme: S
+  sous_theme: chargement
+  source: Code de la route, art. R413-8 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426 ; R221-4
 - id: s-remorque-seuil-750
   theme: S
   sous_theme: applications

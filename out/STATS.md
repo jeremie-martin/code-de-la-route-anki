@@ -1,18 +1,18 @@
 # Statistiques du build
-- Notes : 1049
-- Cartes : 1123
-- Socle : 567 notes / 613 cartes (positions 1 à 613), puis consolidation
+- Notes : 1052
+- Cartes : 1126
+- Socle : 568 notes / 614 cartes (positions 1 à 614), puis consolidation
 
 ## Par type de note
 - CDR Affirmation : 250
 - CDR Confusion : 48
 - CDR Fait : 101
-- CDR Question : 310
+- CDR Question : 313
 - CDR Reconnaissance : 284
 - CDR Scenario : 56
 
 ## Cartes par sous-deck
-- Code de la route 2026 : 1123
+- Code de la route 2026 : 1126
 - Code de la route 2026::00 Méthode d'examen : 6
 - Code de la route 2026::01 Signalisation : 346
 - Code de la route 2026::02 Circulation : 178
@@ -22,8 +22,8 @@
 - Code de la route 2026::06 Réglementation et notions diverses : 91
 - Code de la route 2026::07 Premiers secours : 42
 - Code de la route 2026::08 Prendre et quitter son véhicule : 34
-- Code de la route 2026::09 Mécanique et équipements : 94
-- Code de la route 2026::10 Sécurité du passager et du véhicule : 46
+- Code de la route 2026::09 Mécanique et équipements : 95
+- Code de la route 2026::10 Sécurité du passager et du véhicule : 48
 - Code de la route 2026::11 Environnement : 37
 
 ## Notes par thème / sous-thème
@@ -35,6 +35,6 @@
 - **D — Les notions diverses** : controle_technique 1, documents 15, permis 11, points 13, sanctions 22
 - **A — Les premiers secours** : alerter 8, applications 2, obligations 7, pas 1, proteger 6, secourir 15
 - **P — Prendre et quitter son véhicule** : installation 15, quitter 12, verifications 7
-- **M — La mécanique et les équipements** : adas 18, applications 2, depannage 5, entretien 10, feux 6, freinage 5, pneus 11, tableau_de_bord 4, voyants 28
-- **S — La sécurité du passager et du véhicule** : applications 2, chargement 12, enfants 10, equipements 3, passagers 14
+- **M — La mécanique et les équipements** : adas 18, applications 2, depannage 5, entretien 10, feux 6, freinage 6, pneus 11, tableau_de_bord 4, voyants 28
+- **S — La sécurité du passager et du véhicule** : applications 2, chargement 14, enfants 10, equipements 3, passagers 14
 - **E — L'environnement** : bruit 1, ecoconduite 14, ecomobilite 9, pollution 11

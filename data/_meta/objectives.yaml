@@ -962,6 +962,7 @@
   - m-pneus-pression-quand
   - m-pneus-usure-1-6
   - m-plaquettes-usure
+  - m-freins-apres-lavage
   - m-batterie-cables
   - m-carburants-etiquettes
   - m-boite-auto-positions
@@ -1055,12 +1056,14 @@
   - s-chargement-depassement
   - s-remorque-chiffres
   - s-remorque-conduite
+  - s-remorque-vitesses
   - aff-s-coffre-toit-lourd
   - aff-s-caravane-passager
   - s-remorque-seuil-750
   - s-remorque-masse-reelle
   consolidation:
   - d-masses-definitions
+  - s-remorque-permis-vitesse
   - s-coffre-toit
   - aff-s-chargement-distance-arret
   - aff-s-plage-arriere
