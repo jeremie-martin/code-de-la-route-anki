@@ -63,7 +63,9 @@ def verify_content(col, data, removed=frozenset()):
                     value = feedback_html(original, key, names)
                 else:
                     value = fait_html(original) if field == 'Texte' else inline_md(original[key])
-                assert note[field] == value, f"{note['Id']} : {field} périmé"
+                # an update that brings a changed image under an existing name makes Anki store it as
+                # « name-<sha1>.png » and rewrite the reference: same content, suffixed name
+                assert re.sub(r'-[0-9a-f]{40}(\.png)', r'\1', note[field]) == value, f"{note['Id']} : {field} périmé"
         if 'Verdict' in note:
             assert note['Verdict'] == original['verdict']
         assert set(tags_for(original, original['_kind'])).issubset(note.tags)
