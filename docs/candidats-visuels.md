@@ -1,6 +1,6 @@
 # Candidats à une illustration
 
-État au 22 septembre 2026, après `d6520d6`. Carte de discussion éditoriale, pas liste d’images à produire.
+État au 22 septembre 2026, après intégration du premier lot de trois scènes. Carte de discussion éditoriale, pas liste d’images à produire.
 Les bénéfices indiqués sont des hypothèses de conception, sans mesure d’efficacité. Un candidat peut être
 abandonné si son prototype n’améliore pas la compréhension ou le rappel. Aucun quota d’illustrations.
 
@@ -10,10 +10,10 @@ Repérage dans les 1 051 notes : questions, affirmations et rappels des faits ; 
 comparaisons et scénarios pour chercher les recouvrements. Relecture détaillée des candidats principaux,
 de leurs réponses et des réserves du registre des sources. Inspection du recto de `scn-dep-passage-pieton`
 et de `scn-giratoire-cedez` à 390 px. Ce n’est ni une nouvelle validation juridique ni une inspection de
-chaque image du deck. Les idées ci-dessous demandent encore une vérification de leurs sources et un essai.
+chaque image du deck. Les propositions non intégrées demandent encore une vérification de leurs sources et un essai.
 
 Le deck possède déjà 284 notes de reconnaissance illustrées, 48 comparaisons visuelles et 56 scénarios ;
-22 questions et un fait ont aussi une image principale. L’absence d’image n’est donc pas un défaut en soi.
+25 questions et un fait ont aussi une image principale. L’absence d’image n’est donc pas un défaut en soi.
 Les notes non retenues restent inchangées ; leur omission ne signifie pas qu’elles ont été définitivement
 écartées. Les identifiants ci-dessous désignent des **notes**, parfois porteuses de plusieurs cartes cloze.
 
@@ -34,9 +34,9 @@ Chaque ligne décrit une piste, pas une autorisation de modifier toutes les note
 
 | Note cible | Gain attendu et dessin proposé | Conditions de réussite, recouvrements |
 |---|---|---|
-| `r-chantier-fleche-lumineuse` | **Recto.** Lire le sens du rabattement dans une situation réelle de voies : véhicule porteur, voie neutralisée, flèche lumineuse et voiture en approche. Demander de quel côté se rabattre et comment préparer la manœuvre. | Premier essai proposé. Choisir un dispositif précis, vérifier sa forme et son implantation dans l’IISR 8e partie. Ne pas mélanger FLR, panneau KD10 et signal au-dessus d’une voie. Pas de trajectoire de réponse ; une voie voisine dessinée libre ne garantit pas un créneau sûr. `kd10` entraîne déjà la reconnaissance du panneau. |
-| `u-corridor-securite` | **Recto.** Distinguer BAU, voie de circulation et espace de protection : dépanneuse sur la BAU, voiture en approche, autre véhicule dans la voie voisine. Demander comment adapter la conduite. | Réutiliser route et véhicules du chantier. Vérifier R412-11-1 et R413-17 pour le cas exact. Le dessin doit permettre de discuter la possibilité du déport, sans faire croire qu’un changement de voie est inconditionnel. Ne pas confondre avec un couloir central entre files. |
-| `u-cycliste-tourner-droite` | **Recto.** Comprendre le croisement des trajectoires : voiture avant le virage, piste longeant sa droite, cycliste arrivant derrière, intention de tourner indiquée. | Lire R415-13/R415-14 et dessiner un aménagement sans signal contradictoire. Ne pas montrer la voiture déjà en travers de la piste. Les scénarios de priorité existants ne montrent pas ce conflit longitudinal précis. |
+| `r-chantier-fleche-lumineuse` | **Intégrée, recto.** Deux FLR décalées et détail agrandi du signal actif ; choisir le côté et préparer le rabattement. | KR42 corrigé en KR43 après lecture de l’IISR VC20250904 et de l’arrêté du 4 septembre 2025. Deux panneaux schématiques, flèche oblique et B21a2 concordants ; aucune trajectoire de réponse. Le détail est de face et les distances hors échelle. |
+| `u-corridor-securite` | **Intégrée, recto.** Dépanneuse sur BAU et voiture à gauche empêchant un déport immédiat. | Cas de R412-11-1 où le changement de voie est irréalisable. La réponse demande ralentissement et écart dans sa voie ; l’explication conserve l’obligation de changer de voie lorsque cela devient possible sans danger. |
+| `u-cycliste-tourner-droite` | **Intégrée, recto.** Piste séparée traversant la rue de destination, vélo rejoignant la voiture et intention de virage. | R415-3 III vérifié. Pas de signal contraire, pas de voiture déjà engagée sur la piste ; la flèche représente seulement l’intention. La proximité temporelle reste explicitée dans le texte. |
 | `l-entrecroisement` | **Recto.** Rendre compréhensible cette géométrie peu évidente en mots : entrée prolongée jusqu’à une sortie, deux véhicules et leurs destinations. Demander qui change de voie dans le cas montré. | La question générale devrait devenir un cas déterminé, sans attribuer une priorité universelle à un véhicule coloré. Vérifier R421-3/R412-10. `marq-voie-insertion` montre un marquage et une insertion simple, pas deux intentions qui se croisent. |
 | `l-giratoire-sortie-impossible` | **Recto.** Voir pourquoi la sortie coupe la voie du cycliste : anneau à deux voies, voiture à l’intérieur, vélo à l’extérieur et sortie visée. | Le giratoire existant de `scn-giratoire-cedez` teste l’entrée, pas le changement de voie. Vérifier géométrie, sens et absence de flèches imposant une voie. Conserver la portée de `l-giratoire-placement` : une illustration ne doit pas transformer une voie facultative en obligation. |
 | `u-pl-tourne-droite` | **Recto**, puis éventuellement explication au **verso**. Montrer le déport initial à gauche avec clignotant droit ; expliquer ensuite le passage des roues arrière à l’intérieur du virage. | Le déplacement initial ne prouve pas une trajectoire future certaine. Le balayage dessiné doit correspondre au véhicule choisi, pas à une enveloppe universelle. Relire avec `u-pl-angles-morts`, qui teste la visibilité et non le gabarit. |
@@ -87,9 +87,10 @@ Ces idées peuvent être utiles, mais le coût, la redondance ou le risque de fu
 
 ## Comment reprendre ce travail
 
-Commencer par `r-chantier-fleche-lumineuse`, puis comparer l’intérêt de `u-corridor-securite` et
-`u-cycliste-tourner-droite`. Ce sont des essais proposés, sans obligation de réaliser un lot ni de suivre
-ensuite tout le tableau. Les vues techniques au verso peuvent attendre une décision sur leur apport réel.
+Le premier lot est intégré ; voir [l’historique](../CHANGELOG.md)
+et le commit intitulé « Add three focused visual decision scenes ». Les prochaines pistes à comparer sont
+`l-entrecroisement` et `l-giratoire-sortie-impossible`, sans engagement à réaliser toute la liste.
+Les vues techniques au verso peuvent attendre une décision sur leur apport réel.
 
 Pour un candidat, reprendre la note entière et ses voisines, écrire la décision que l’apprenant devra prendre,
 puis confronter la version textuelle à un prototype de carte complète. L’image doit apporter une information

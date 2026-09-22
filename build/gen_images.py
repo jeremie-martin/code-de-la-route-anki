@@ -8,7 +8,7 @@ from __future__ import annotations
 import math
 import textwrap
 
-from build.diagrams import ASPHALT, GRASS, MARK, FONT, SVG, draw_road, draw_intersection, draw_roundabout, vehicle_sprite, sign_data_uri, esc
+from build.diagrams import ASPHALT, GRASS, MARK, FONT, SVG, draw_road, draw_intersection, draw_roundabout, vehicle_sprite, intention_arrow, sign_data_uri, esc
 
 YELLOW = "#f2c200"
 SCALE = 12  # px per metre for marking strips (so 3 m dash = 36 px)
@@ -812,6 +812,96 @@ def chantier_approche(params):
     return str(S)
 
 
+# These scenes share one carriageway: traffic upwards, median left, shoulder right.
+def _motorway_scene():
+    S = SVG(640, 440)
+    S.add(f'<rect width="640" height="440" fill="{GRASS}"/>')
+    S.add('<path d="M60 0H85V440H60Z" fill="#aeb7a8"/>')
+    S.add(f'<path d="M85 0H430V440H85Z" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M92 0V440 M423 0V440" stroke="{MARK}" stroke-width="3"/>')
+    S.add(f'<path d="M225 0V440" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 18"/>')
+    S.add(f'<path d="M365 0V440" stroke="{MARK}" stroke-width="5" stroke-dasharray="78 26"/>')
+    return S
+
+
+def _flr_panel(sign_uri):
+    """Face-on FLR, left arrow active. IISR 8, annexes VI/VII (VC20250904)."""
+    S = SVG(110, 180)
+    # Red/white chevrons on the frame; inactive bulbs stay dark.
+    S.add('<rect width="110" height="180" fill="#fff"/>')
+    for y in range(-60, 200, 36):
+        S.add(f'<path d="M0 {y}L55 {y-55}L110 {y}V{y+18}L55 {y-37}L0 {y+18}Z" fill="#d8362d"/>')
+    S.add('<rect x="25" y="27" width="60" height="66" fill="#303638"/>')
+    left = [(10, 83), (10, 69), (10, 55), (10, 41),
+            (24, 83), (38, 83), (52, 83)]
+    left += [(30 + 10*i, 63 - 10*i) for i in range(6)]
+    right = [(110-x, y) for x, y in left]
+    for x, y in right:
+        S.add(f'<circle cx="{x}" cy="{y}" r="5" fill="#45494a" stroke="#222"/>')
+    for x, y in left:
+        S.add(f'<circle cx="{x}" cy="{y}" r="5" fill="#ffe34a" stroke="#987f12" stroke-width=".6"/>')
+    for x in (10, 100):
+        S.add(f'<circle cx="{x}" cy="12" r="7" fill="#ffe34a" stroke="#987f12"/>')
+    S.add(f'<image x="23" y="108" width="64" height="64" xlink:href="{sign_uri}"/>')
+    return str(S)
+
+
+def chantier_rabattement(params):
+    """Two offset FLRs; enlarged face shows the signal, never a driving trajectory."""
+    S = _motorway_scene()
+    uri = sign_data_uri(params["sign"]["file"], 160)
+    panel = _flr_panel(uri)
+    # Longitudinal work boundary beyond the position unit. Distances are not to scale.
+    S.add('<path d="M237 0H358V36H237Z" fill="#c9b99b"/>')
+    for y in (18, 48):
+        S.add(f'<g transform="translate(234,{y}) scale(.14) translate(-120,-249)">')
+        _draw_cone(S)
+        S.add('</g>')
+    # Each trailer's panel is shown face-on within this plan view, like roadside signs.
+    for x, y in ((295, 100), (365, 248)):
+        S.add(f'<g transform="translate({x-27.5},{y-45}) scale(.5)">{panel}</g>')
+        S.add(f'<path d="M{x-20} {y+49}h40" stroke="#222" stroke-width="6"/>')
+    S.add(f'<g transform="translate(295,373)">{vehicle_sprite("car", "bleu")}</g>')
+    S.add('<path d="M397 244L469 220" stroke="#687475" stroke-width="2"/>')
+    S.add(f'<g transform="translate(480,125)">{panel}</g>')
+    S.add(f'<text x="535" y="106" text-anchor="middle" font-family="{FONT}" font-size="18" fill="#263336">Signal agrandi</text>')
+    return str(S)
+
+
+def corridor_securite(params):
+    """An adjacent car prevents an immediate lane change past a shoulder recovery."""
+    S = _motorway_scene()
+    S.add(f'<g transform="translate(155,340)">{vehicle_sprite("car", "gris")}</g>')
+    S.add(f'<g transform="translate(295,355)">{vehicle_sprite("car", "bleu")}</g>')
+    # Recovery vehicle: existing truck cab, flat bed, secured car and amber beacon.
+    S.add(f'<g transform="translate(395,129) scale(.82)">{vehicle_sprite("truck", "orange")}')
+    S.add('<rect x="-23" y="-25" width="46" height="81" fill="#71787a"/>')
+    S.add(f'<g transform="translate(0,15) scale(.48)">{vehicle_sprite("car", "gris")}</g>')
+    S.add('<rect x="-16" y="-31" width="32" height="7" rx="2" fill="#ffc438" stroke="#805b14"/>')
+    S.add('</g>')
+    S.add(f'<text x="395" y="227" text-anchor="middle" font-family="{FONT}" font-size="18" fill="{MARK}">BAU</text>')
+    return str(S)
+
+
+def cycliste_tourne_droite(params):
+    """Cycle track continues across a side street; both users have yet to reach it."""
+    S = SVG(640, 440)
+    S.add(f'<rect width="640" height="440" fill="{GRASS}"/>')
+    S.add('<path d="M97 0H472V440H97Z M370 98H640V252H370Z" fill="#ced6c8"/>')
+    S.add(f'<path d="M110 0H370V440H110Z M370 110H640V240H370Z" fill="{ASPHALT}"/>')
+    # Physically separate one-way cycle track, crossing the mouth of the side street.
+    S.add(f'<path d="M398 0H456V440H398Z" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M240 0V440" stroke="{MARK}" stroke-width="3" stroke-dasharray="22 18"/>')
+    S.add(f'<path d="M117 0V440 M363 0V110H398 M456 110H640 M363 440V240H398 M456 240H640" fill="none" stroke="{MARK}" stroke-width="3"/>')
+    S.add(f'<path d="M402 0V110 M452 0V110 M402 240V440 M452 240V440" stroke="{MARK}" stroke-width="2"/>')
+    S.add(f'<g transform="translate(312,315)">{vehicle_sprite("car", "bleu")}{intention_arrow("right")}</g>')
+    S.add(f'<g transform="translate(427,335) scale(.85)">{vehicle_sprite("bike", "rouge")}</g>')
+    S.add(f'<path d="M427 300v-35m-7 8l7-9 7 9" fill="none" stroke="{MARK}" stroke-width="3"/>')
+    S.add(f'<text x="477" y="342" font-family="{FONT}" font-size="18" fill="#263336">Piste</text>')
+    S.add(f'<text x="477" y="365" font-family="{FONT}" font-size="18" fill="#263336">cyclable</text>')
+    return str(S)
+
+
 def barriere_k2(params):
     """K2 barrier: red and white striped rail on two legs, seen from the front, on a road."""
     S = SVG(360, 260)
@@ -875,5 +965,6 @@ REGISTRY.update({
     "direction_voies": direction_voies,
     "marquage_temporaire": marquage_temporaire, "zone_bleue": zone_bleue, "losange_sol": losange_sol, "cvcb": cvcb,
     "livraison": livraison, "direction_panel": direction_panel, "lieu_dit": lieu_dit, "feu_bicolore": feu_bicolore,
-    "chantier_approche": chantier_approche, "cone": cone, "triangle_seul": triangle_seul, "barriere_k2": barriere_k2,
+    "chantier_rabattement": chantier_rabattement, "corridor_securite": corridor_securite,
+    "cycliste_tourne_droite": cycliste_tourne_droite, "chantier_approche": chantier_approche, "cone": cone, "triangle_seul": triangle_seul, "barriere_k2": barriere_k2,
 })

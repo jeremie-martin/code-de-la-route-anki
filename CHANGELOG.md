@@ -1,3 +1,18 @@
+# Trois scènes de décision (22 septembre 2026)
+
+- `r-chantier-fleche-lumineuse` : lire le côté du rabattement et préparer la manœuvre, avec un détail
+  agrandi du signal. Confusion KR42/FLR corrigée en KR43 après consultation de l’IISR VC20250904 et
+  de l’arrêté du 4 septembre 2025 ; notes de recherche harmonisées.
+- `u-corridor-securite` : ralentir et s’écarter dans sa voie lorsque la voie voisine est occupée ;
+  `u-cycliste-tourner-droite` : céder au cycliste dont on va traverser la piste. Cas vérifiés dans le Code.
+- Palette et symboles existants réutilisés ; seul le fond de chaussée commun aux deux scènes d’autoroute
+  est partagé. Aucun nouveau type de note. Carte des candidats mise à jour avec les décisions prises.
+- Toujours 1 051 notes et 1 125 cartes, 366 médias. Comparaison des paquets : seules ces trois cartes
+  changent, trois images ajoutées, anciens médias et positions d’introduction identiques.
+- 24 tests réussis ; import, réimport, mise à jour et contrôles FSRS réussis. Inspection des trois cartes
+  à 390 px en clair et 320 px en sombre ; 9 042 faces/configurations sans échec (`out/RENDU.md`).
+  Schémas hors échelle, sans validation d’implantation routière, essai natif mobile ni mesure d’efficacité.
+
 # Scène d’approche d’un chantier (22 septembre 2026)
 
 - Intégration du prototype SVG approuvé à `r-chantier-approche`. Question centrée sur l’anticipation

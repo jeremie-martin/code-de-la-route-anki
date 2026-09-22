@@ -877,7 +877,7 @@ Recherche Anki : `objectif::r-travaux`
 | `conf-a14-ak14` | consolidation | confusions | IISR 1re et 8e parties |
 | `conf-k10a-k10b` | consolidation | confusions | IISR 8e partie |
 | `r-chantier-approche` | socle | questions | Bison Futé, Chantiers en cours, conseils de conduite : https://www.bison-fute.gouv.fr/IMG/pdf/Chantiers_en_cours.pdf |
-| `r-chantier-fleche-lumineuse` | socle | questions | IISR, 8e partie ; Ornikar, Flèches de rabattement |
+| `r-chantier-fleche-lumineuse` | socle | questions | IISR, 8e partie, art. 133 F et annexes VI/VII (VC20250904) : FLR avec flèche KR43 ; arrêté du 4 septembre 2025, https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052200261 |
 | `aff-r-chantier-sans-ouvriers` | socle | affirmations | IISR, 8e partie ; Code de la route, art. R411-25 |
 
 ## u-vulnerables : Préserver piétons, enfants et cyclistes
@@ -910,7 +910,7 @@ Recherche Anki : `objectif::u-vulnerables`
 | `u-personnes-agees` | consolidation | questions | Code de la route, art. R415-11 ; ONISR 2025 (bilan définitif) |
 | `u-fauteuil-roulant-chaussee` | consolidation | questions | Code de la route, art. R412-34, R412-35, R412-36 et R414-4 |
 | `u-cyclistes-de-front` | consolidation | questions | Code de la route, art. R431-7 et R414-4 |
-| `u-cycliste-tourner-droite` | socle | questions | Code de la route, art. R415-14 (piste cyclable) et R415-13 (voie réservée) |
+| `u-cycliste-tourner-droite` | socle | questions | Code de la route, art. R415-3 III : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278135 ; R415-14 |
 | `u-cycliste-bras-gauche` | consolidation | questions | Code de la route, art. R412-10 et R414-6 ; En Voiture Simone, Les vélos |
 | `u-double-sens-cyclable` | socle | questions | Code de la route, art. R412-28-1 et R110-2 |
 | `aff-u-pieton-telephone` | consolidation | affirmations | Code de la route, art. R415-11 ; Ornikar, Priorité piéton |
@@ -998,7 +998,7 @@ Recherche Anki : `objectif::u-intervention`
 | `u-vehicule-prioritaire-feu-rouge` | socle | questions | Code de la route, art. R415-12 ; securite-routiere.gouv.fr, Info/intox |
 | `u-ambulance-privee-sans-sirene` | socle | questions | Code de la route, art. R311-1 (6.5 et 6.6), R415-12 et R414-2 |
 | `u-gyrophare-orange` | socle | questions | Code de la route, art. R313-27 et R313-28 |
-| `u-corridor-securite` | socle | questions | Code de la route, art. R412-11-1 et R413-17 |
+| `u-corridor-securite` | socle | questions | Code de la route, art. R412-11-1 et R413-17 : https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159599 |
 | `aff-u-prioritaire-sans-avertisseur` | socle | affirmations | Code de la route, art. R415-12 et R313-27 |
 | `aff-u-prioritaire-feu-rouge-radar` | consolidation | affirmations | Code de la route, R415-12 et R411-28 |
 | `aff-u-prioritaire-route-prioritaire` | consolidation | affirmations | Code de la route, art. R415-12 |

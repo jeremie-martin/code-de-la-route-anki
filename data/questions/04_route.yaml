@@ -231,15 +231,19 @@
   sous_theme: chantiers
   source: "Bison Futé, Chantiers en cours, conseils de conduite : https://www.bison-fute.gouv.fr/IMG/pdf/Chantiers_en_cours.pdf"
 - id: r-chantier-fleche-lumineuse
-  question: 'Une flèche lumineuse de rabattement (FLR, KR42) ou un panneau de rabattement précède un chantier sur voie rapide
-    : que faire ?'
-  reponse: Me rabattre dès que possible du côté indiqué, en réduisant ma vitesse, sans attendre le dernier moment ni forcer
-    le passage.
-  explication: 'Les véhicules porteurs de flèche lumineuse sont eux-mêmes une protection : ne jamais se glisser entre eux
-    et le chantier.'
+  image:
+    gen: chantier_rabattement
+    width: 960
+    params:
+      sign: {kind: sign, file: "France road sign B21a2.svg"}
+  question: Sur cette chaussée d’autoroute, je conduis la voiture bleue vers le haut du dessin. De quel côté dois-je me rabattre, et comment préparer la manœuvre ?
+  reponse: À gauche. Je ralentis, contrôle les rétroviseurs et l’angle mort, puis signale et me rabats dès que je peux le faire sans danger.
+  explication: La flèche lumineuse indique le côté à rejoindre. Elle ne me donne pas priorité sur les véhicules de cette voie.
+    Je prépare le rabattement en amont, sans attendre d’être au niveau du dispositif. Schéma hors échelle ; le détail montre le signal de face.
   theme: R
   sous_theme: chantiers
-  source: "IISR, 8e partie ; Ornikar, Flèches de rabattement"
+  source: "IISR, 8e partie, art. 133 F et annexes VI/VII (VC20250904) : FLR avec flèche KR43 ; arrêté du 4 septembre 2025, https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052200261"
+
 - id: r-autoroute-insertion-fin-voie
   question: La voie d’accélération se termine et aucun espace sûr ne permet l’insertion. Que faire ?
   reponse: Je cède le passage, en ralentissant et au besoin en m’arrêtant avant la fin de la voie ; je ne force pas et n’utilise

@@ -850,3 +850,18 @@
   url: https://www.bison-fute.gouv.fr/IMG/pdf/Chantiers_en_cours.pdf
   portee: 'Conseils de conduite lus : vigilance dès la première signalisation annonçant les travaux, réduction de vitesse et respect des indications. Consultation limitée à ces conseils, sans reprendre les chiffres du dépliant ni valider une implantation réglementaire de chantier.'
   notes: [r-chantier-approche]
+- id: audit-visuel-flr
+  consulte_le: '2026-09-22'
+  url: https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_8epartie_vc_20250904_partie_modif_par_arrete_avril2025etsept2025_relu_dsr.pdf
+  portee: 'Art. 133 F et annexes VI/VII lus ; figures KR43 et FLR inspectées. Deux dispositifs décalés, signal oblique à 13 feux actifs, B21a2 concordant et feux KR2. Arrêté du 4 septembre 2025 également lu sur Légifrance. Correction de la confusion KR42/FLR. Vue pédagogique hors échelle, pas validation d’un plan d’implantation.'
+  notes: [r-chantier-fleche-lumineuse]
+- id: audit-visuel-corridor
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159599
+  portee: 'R412-11-1 lu dans la version en vigueur au 22 septembre 2026 : ralentir et changer de voie sans danger ; si ce changement est irréalisable, s’écarter en demeurant dans sa voie. Application à une dépanneuse sur BAU et une voie adjacente occupée.'
+  notes: [u-corridor-securite]
+- id: audit-visuel-cycliste-droite
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278135
+  portee: 'R415-3 III lu : en tournant à droite, céder aux cycles circulant sur la piste qui traverse la chaussée abordée. Cas dessiné sans signal contraire, piste parallèle et cycliste arrivant derrière ; flèche de la voiture limitée à l’intention.'
+  notes: [u-cycliste-tourner-droite]

@@ -24,7 +24,7 @@ from build.verify import import_package
 SAMPLES = {
     'a13a', 'b9b', 'ab4', 'voyant-temperature', 'conf-a2a-a2b', 'conf-ab3a-ab4',
     'l-vitesse-hors-agglo', 'triangle-distance', 's-chargement-chiffres',
-    'r-aquaplaning', 'l-arret-vs-stationnement', 'r-b26-chaines-complement',
+    'r-chantier-fleche-lumineuse', 'u-corridor-securite', 'u-cycliste-tourner-droite',
     'scn-stop-moi', 'scn-dep-cycliste-ligne-continue', 'aff-l-stop-rien-ne-vient',
     'r-chantier-approche', 'a-pls', 'a-message-alerte',
 }

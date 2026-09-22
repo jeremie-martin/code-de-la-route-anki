@@ -135,7 +135,7 @@ reconnaissance). Aucun nouveau téléchargement ni carte supplémentaire. L’im
 recto ; une comparaison au verso n’exige pas d’avoir étudié l’autre signal. Pour tester la distinction,
 utiliser une note `confusions`. Éviter les exemples supplémentaires qui ne changent pas la compréhension.
 Les scènes ponctuelles de questions utilisent `image.gen` dans `build/gen_images.py` (exemple :
-`chantier_approche`). Réutiliser la palette et les véhicules de `diagrams.py`, ainsi que les symboles
+`chantier_approche`, `chantier_rabattement`, `corridor_securite`, `cycliste_tourne_droite`). Réutiliser la palette et les véhicules de `diagrams.py`, ainsi que les symboles
 existants. Déclarer les panneaux Commons dans `image.params` avec `kind: sign` et `file` pour leur
 attribution automatique. Le SVG généré est rastérisé pour Anki ; les prototypes sont des archives,
 pas une seconde source à maintenir. Ajouter un helper partagé lorsqu’un dessin est effectivement réutilisé.
