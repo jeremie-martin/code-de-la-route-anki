@@ -1,3 +1,16 @@
+# Circulation : conditions décisives — 22 septembre 2026
+
+- Douze notes améliorées, sans ajouter de cartes : placement au giratoire selon l’axe d’entrée, signalement
+  de la première sortie, sorties de parking et statut des voies, arrêt et stationnement, consignes de tunnel.
+- La liste disparate des lieux de dépassement devient une décision à une intersection à priorité à droite ;
+  la carte du passage piéton masqué teste désormais explicitement la vérification avant de dépasser.
+  Les règles des passages à niveau et des tramways restent dans leurs cartes dédiées.
+- Références consultées et portée consignées ; exemple de maintenance et sens du champ `private` clarifiés.
+  Modèles, ordre, médias et effectifs conservés (1 049 notes, 1 123 cartes).
+- Vérification : 22 tests réussis ; import et réimport réussis ; 9 202 faces/configurations contrôlées
+  sans échec. Inspection des douze notes modifiées et d’exemples des six types de cartes ; contrôles visuels
+  complémentaires en sombre et à 320 px. Aucun essai natif AnkiMobile/AnkiDroid ni mesure d’efficacité.
+
 # Conditions et décisions — 22 septembre 2026
 
 - Huit notes corrigées sans ajout de cartes : limites sous la pluie, documents de vente, accès au 114,

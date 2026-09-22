@@ -19,6 +19,10 @@ from build.preview import CHROME, OUT
 from build.verify import import_package
 
 SAMPLES = {
+    'l-sortie-parking-priorite', 'aff-l-chemin-terre', 'scn-moi-sortie-parking',
+    'scn-t-moi-branche', 'l-giratoire-placement', 'l-giratoire-clignotant',
+    'l-depassement-interdit-lieux-2', 'c-occlusion-pieton', 'l-stationnement-bande-cyclable',
+    'l-entree-carrossable', 'r-tunnel-feux-jour', 'r-tunnel-distance-arret',
     'l-vitesse-probatoire', 'numero-114', 'd-vente-vehicule', 'm-remorquage',
     'e-rapports-regime', 'e-moteur-arret', 'e-climatisation-conso', 'aff-e-diesel-nox',
     'aff-s-fumer-mineur', 'aff-s-euroncap-pietons', 'aff-m-voyant-abs-distance',

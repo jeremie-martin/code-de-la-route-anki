@@ -177,7 +177,9 @@
   check: {pair: [S, W, avant]}
   question: "Intersection en T sans signalisation : ma rue débouche sur la route transversale et je tourne à droite ; la voiture rouge arrive de ma gauche. Qui passe en premier ?"
   reponse: "Moi : je suis à sa droite. Sans panneau, la route « qui continue » n'est pas prioritaire."
-  explication: "Priorité à droite (R415-5), même en T et même pour celui qui débouche d'une rue. Seuls un STOP, un cédez-le-passage ou une sortie de chemin de terre, de parking ou de voie privée changeraient l'ordre. Je vérifie que la rouge ralentit avant de m'engager."
+  explication: La forme en T ne change pas la priorité à droite entre routes ordinaires. Une signalisation de
+    priorité, une sortie de parking, de chemin de terre ou d’accès non ouvert à la circulation publique changerait
+    l’analyse. Je vérifie que la rouge ralentit avant de m’engager.
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5"
@@ -189,8 +191,9 @@
       W: {vehicle: {colour: rouge}, goes: straight}
   check: {pair: [S, W, apres]}
   question: "Je sors d'un parking pour traverser la rue ; la voiture rouge arrive de ma gauche. Qui passe en premier ?"
-  reponse: "La rouge : en sortant d'un lieu non ouvert à la circulation publique, je cède le passage à tous, même à ceux qui viennent de ma gauche."
-  explication: "R415-9 : le conducteur qui débouche d'un parking, d'une station-service, d'un chemin de terre ou d'une voie privée cède le passage à tout autre véhicule, et aux piétons du trottoir qu'il franchit (R415-11). La priorité à droite ne joue pas en ma faveur ici."
+  reponse: 'La rouge : en débouchant d’une aire de stationnement sur la rue, je cède aux véhicules des deux côtés.'
+  explication: Cette obligation vaut aussi pour un parking ouvert au public. Je franchis le trottoir à très faible
+    allure en laissant passer les piétons ; la priorité à droite ne joue pas en ma faveur.
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-9 et R415-11"

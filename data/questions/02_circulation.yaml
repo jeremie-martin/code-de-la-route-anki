@@ -13,12 +13,13 @@
 - id: l-sortie-parking-priorite
   question: 'Je sors d''un parking de supermarché : je dois franchir le trottoir puis m''engager dans la rue. Qui passe avant
     moi ?'
-  reponse: 'À tous : aux piétons du trottoir et aux véhicules de la rue, qu’ils viennent de gauche ou de droite.'
-  explication: 'R415-9 : le conducteur qui débouche d''un lieu non ouvert à la circulation publique (parking, station-service,
-    chemin de terre, voie privée) cède le passage à tous. Refus : 135 €, 4 points.'
+  reponse: Les piétons du trottoir et tous les véhicules de la rue, qu’ils viennent de gauche ou de droite.
+  explication: 'R415-9 vise séparément la sortie d’une aire de stationnement, d’un chemin de terre, d’un accès
+    non ouvert à la circulation publique et le franchissement d’un trottoir. Un parking de supermarché peut être
+    ouvert au public : cela ne donne aucune priorité à sa sortie.'
   theme: L
   sous_theme: priorites
-  source: Code de la route, art. R415-9
+  source: Code de la route, R415-9 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968 ; R415-11
 - id: l-stop-arret
   question: Au STOP, où exactement dois-je immobiliser mon véhicule ?
   reponse: À la ligne d’arrêt continue (sinon à la limite de la chaussée abordée), roues immobiles, avant de céder le passage.
@@ -48,22 +49,25 @@
   source: Code de la route, art. R415-10 ; IISR (AB25)
   debut: true
 - id: l-giratoire-clignotant
-  question: Dans un carrefour à sens giratoire, quand met-on le clignotant ?
-  reponse: Clignotant droit avant ma sortie, dès que la sortie précédente est passée.
-  explication: Clignotant gauche à l'entrée seulement si je vais au-delà de la moitié de l'anneau ; aucun clignotant
-    pour aller tout droit. Avant de sortir, rétroviseur droit et angle mort (cyclistes sur le pourtour).
+  question: Dans un giratoire, je vais sortir. Quand allumer mon clignotant droit ?
+  reponse: Après la sortie précédente, assez tôt pour annoncer la mienne ; pour la première sortie, dès l’approche
+    du giratoire.
+  explication: Je contrôle rétroviseur et angle mort avant de me rabattre ou de sortir. Le clignotant annonce
+    la manœuvre, il ne donne pas priorité. Tout changement de voie dans l’anneau doit aussi être signalé.
   theme: L
   sous_theme: priorites
-  source: REMC ; Codes Rousseau — Le giratoire
+  source: Code de la route, R412-9 et R412-10 ; Association Prévention Routière — https://www.preventionroutiere.asso.fr/le-carrefour-giratoire-commen-bien-lemprunter/
 - id: l-giratoire-placement
-  question: Giratoire à deux voies ; je veux prendre la troisième sortie. Sur quelle voie entrer, et comment en sortir ?
-  reponse: La voie de droite convient ; la voie intérieure est possible pour une sortie éloignée, en cédant aux usagers de
-    la voie extérieure avant de sortir.
-  explication: La voie intérieure est une possibilité, pas une obligation. Si le rabattement est impossible, je refais un
-    tour ; le clignotant ne donne aucune priorité. R412-9.
+  question: Giratoire à deux voies, sans flèches imposant une voie ; ma sortie est à gauche de mon axe d’entrée.
+    Sur quelle voie entrer, et comment en sortir ?
+  reponse: Je peux rester à droite ou emprunter la voie intérieure. Depuis l’intérieur, je cède aux usagers de
+    la voie extérieure avant de me rabattre et de sortir.
+  explication: C’est la position de la sortie par rapport à l’axe d’entrée qui compte, pas son numéro. La voie
+    intérieure est facultative. Contrôles et clignotant à chaque changement de voie ; si je ne peux pas me rabattre
+    sans danger, je refais un tour.
   theme: L
   sous_theme: priorites
-  source: Code de la route, art. R415-10 et R412-9 ; REMC
+  source: Code de la route, R412-9 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688
 - id: l-bus-quitte-arret
   question: En agglomération, un bus met son clignotant pour quitter son arrêt. Que dois-je faire ?
   reponse: Ralentir et, au besoin, m'arrêter pour le laisser reprendre sa place — sans freiner brusquement ni forcer le passage.
@@ -139,13 +143,16 @@
   sous_theme: depassement
   source: Code de la route, R414-4 et R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
 - id: l-depassement-interdit-lieux-2
-  question: Quels lieux interdisent de dépasser un véhicule (à quatre roues), même avec une bonne visibilité ?
-  reponse: Intersection où je ne suis pas prioritaire, passage à niveau sans barrière, approche d’un passage piéton où un
-    véhicule s’arrête ou ralentit, tram ou train arrêté côté voyageurs.
-  explication: À une intersection, le dépassement peut rester possible si je suis sur la route prioritaire, si des feux ou un agent règlent le passage, ou si je dépasse un deux-roues. La visibilité et la sécurité de la manœuvre restent indispensables.
+  question: J’aborde une intersection sans signalisation, où s’applique la priorité à droite. La visibilité est
+    bonne et personne n’arrive à droite. Puis-je y dépasser la voiture devant moi ?
+  reponse: 'Non : à cette intersection, le dépassement d’une voiture reste interdit, même si aucune voiture n’arrive
+    à droite.'
+  explication: R414-11 distingue les intersections où les autres routes doivent céder (STOP, cédez-le-passage,
+    route prioritaire), celles réglées par des feux ou un agent, et le dépassement d’un deux-roues. Ces exceptions
+    ne dispensent jamais des autres conditions de sécurité.
   theme: L
   sous_theme: depassement
-  source: Code de la route, art. R414-11 à R414-13
+  source: Code de la route, R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
 - id: l-depassement-droite
   question: Dans quels cas dépasse-t-on par la droite ?
   reponse: Un véhicule dont le conducteur a signalé qu’il tourne à gauche, et un tramway en marche si la place à droite suffit.
@@ -261,8 +268,9 @@
   question: Puis-je m'arrêter deux minutes sur une bande cyclable, feux de détresse allumés, pour déposer un passager ?
   reponse: 'Non : arrêt et stationnement sur une bande ou une piste cyclable sont très gênants (135 €) : ils renvoient le
     cycliste dans le trafic.'
-  explication: R417-11 vise l'arrêt autant que le stationnement, et les feux de détresse ne régularisent aucune immobilisation
-    interdite. Même régime sur une voie de bus, une voie verte ou une place réservée.
+  explication: 'L’interdiction vise l’arrêt autant que le stationnement ; les feux de détresse ne l’annulent
+    pas. Ne pas assimiler toutes les places réservées : une place de livraison peut permettre un arrêt pour charger,
+    contrairement à une bande cyclable.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-11
@@ -276,13 +284,15 @@
   source: Code de la route, R110-2 et R417-10 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551
 - id: l-entree-carrossable
   question: Puis-je stationner devant mon propre garage, sur la voie publique ?
-  reponse: 'Non : stationner devant une entrée carrossable est gênant (35 €), même devant la sienne ; seul un arrêt bref est
-    admis.'
-  explication: Un arrêt suppose le conducteur à proximité, prêt à déplacer le véhicule. R417-10. Certaines communes tolèrent
-    le stationnement du riverain par arrêté municipal ; sans arrêté, le véhicule est verbalisable et peut être mis en fourrière.
+  reponse: 'Non : le stationnement devant une entrée carrossable sur la voie publique est gênant, même devant
+    mon propre garage.'
+  explication: La propriété du garage ne réserve pas la chaussée à mon usage. Un véritable arrêt pour monter,
+    descendre, charger ou décharger reste distinct du stationnement, sous réserve de ne pas gêner ni mettre en
+    danger.
   theme: L
   sous_theme: stationnement
-  source: Code de la route, art. R417-10
+  source: Code de la route, R417-10 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551 ;
+    R110-2 ; Cass. crim., 20 juin 2017, n° 16-86.838
 - id: l-stationnement-dangereux
   question: Sur une route de campagne, je laisse ma voiture sur la chaussée juste avant un sommet de côte. Comment est-ce
     qualifié ?

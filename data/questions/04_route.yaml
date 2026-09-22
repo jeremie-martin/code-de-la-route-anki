@@ -118,23 +118,22 @@
   source: En Voiture Simone — Conduire face au soleil
 - id: r-tunnel-feux-jour
   question: 'Tunnel éclairé, en plein jour : dois-je allumer mes feux ?'
-  reponse: 'Oui : les feux de croisement dès le panneau d’entrée, même si le tunnel est éclairé ; jamais les feux de route
-    (réverbération sur les parois).'
-  explication: Le tunnel est une zone de visibilité insuffisante au sens de R416-4 et R416-6. On retire aussi ses lunettes
-    de soleil avant d'entrer.
+  reponse: 'Oui : j’allume les feux de croisement avant d’entrer, même si le tunnel est éclairé.'
+  explication: Je dois voir et être vu malgré le changement de luminosité. Les feux de jour ne remplacent pas
+    les feux de croisement ; je vérifie leur allumage au lieu de me fier au mode AUTO.
   theme: R
   sous_theme: tunnels
-  source: Code de la route, art. R416-4 et R416-6
+  source: CETU — https://www.cetu.developpement-durable.gouv.fr/conduire-en-tunnel-a1597.html
 - id: r-tunnel-distance-arret
-  question: Dans un tunnel, la circulation s'immobilise complètement devant moi. Quelle distance dois-je garder ?
-  reponse: 'Celle qu''affichent les panneaux du tunnel, en marche comme à l''arrêt : souvent 150 m en marche (deux
-    repères lumineux) et encore une distance importante à l''arrêt, pour évacuer et laisser passer les secours.'
-  explication: 'Au Mont-Blanc, par exemple : 150 m en marche, 100 m à l''arrêt. À l''arrêt, l''espace entre véhicules
-    répartit les usagers sur plusieurs issues et freine la propagation d''un incendie. Ne pas transposer « 150 m »
-    à tous les tunnels sans le lire.'
+  question: Un tunnel affiche deux distances entre véhicules, l’une en circulation, l’autre à l’arrêt. La file
+    s’immobilise devant moi. Quelle consigne appliquer ?
+  reponse: 'La distance prévue à l’arrêt : je laisse cet espace libre au lieu de venir coller le véhicule précédent.'
+  explication: Les consignes dépendent du tunnel et peuvent distinguer circulation et arrêt. L’espace limite
+    la propagation d’un incendie et facilite l’accès des secours ; une valeur apprise pour un autre tunnel ne
+    remplace pas la consigne affichée.
   theme: R
   sous_theme: tunnels
-  source: CETU — Conduire en tunnel ; Code de la route, art. R412-12
+  source: CETU — https://www.cetu.developpement-durable.gouv.fr/IMG/pdf/CETU-Note_Info_22_2011.pdf
 - id: r-tunnel-panne
   question: Mon véhicule tombe en panne dans un tunnel. Où me placer et que faire des clés ?
   reponse: Feux de détresse, garage (emplacement d’arrêt) le plus proche, moteur coupé, clés sur le contact et véhicule non

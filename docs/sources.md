@@ -39,7 +39,7 @@ pour une édition 2027). Chacune a une entrée dans `source_checks.yaml` ; le re
 
 Les dates des obligations d’équipement des voitures neuves (ISA, AEB : règlement GSR2, juillet 2024, de mémoire),
 le détail de certains signaux hérités de Wikipédia (dimensions des balises J10, pictogramme exact de B56), les
-pratiques des exploitants (tunnels, péages en flux libre), les chiffres ADEME cités dans les
+consignes locales des exploitants (distances propres à chaque tunnel, péages en flux libre), les chiffres ADEME cités dans les
 explications, la date exacte des obligations d’équipement des sièges enfants. Ils n’apparaissent pas comme
 cibles de rappel.
 

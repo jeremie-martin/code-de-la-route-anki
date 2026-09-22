@@ -38,7 +38,7 @@ Bootstrap : `uv venv .venv && uv pip install --python .venv/bin/python -r requir
 `python -m build.build` télécharge ~300 fichiers Commons à une requête par seconde (quelques minutes, réseau
 nécessaire), puis tout est en cache. Le texte du Code consolidé, ignoré par git, se produit avec
 `pdftotext -layout docs/research/sources/code_de_la_route_consolide_2026-09-10.pdf docs/research/sources/cdr.txt`
-(poppler) ; un article s’y cherche par `grep -n "R. 415-5" docs/research/sources/cdr.txt`.
+(poppler) ; un article s’y cherche par `rg -n "R. 415-5" docs/research/sources/cdr.txt`.
 
 ## Format des notes
 
@@ -54,7 +54,7 @@ taire un avertissement). Les valeurs contenant « : » se mettent entre guilleme
 - id: l-priorite-droite-defaut
   question: Intersection sans panneau ni feu ; deux voitures arrivent en même temps. À qui dois-je céder le passage ?
   reponse: 'À celle qui vient de ma droite : sans signalisation, la priorité à droite s’applique.'
-  explication: Elle vaut aussi pour une petite rue qui débouche sur une grande ; seuls un panneau, un feu ou un agent la changent.
+  explication: La largeur des rues ne décide pas de la priorité. Une sortie de parking, de chemin de terre ou d’accès non ouvert au public change la règle.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-5
@@ -215,8 +215,9 @@ python build/qa_sheet.py                 # planches image + code + nom par fichi
    Retirer une note = la supprimer du fichier et de tous les registres (`objectives`, `source_checks`,
    `couverts_par`, `dedup_ok`) ; le build nomme ce qui a été oublié.
 4. Pour un scénario d’intersection, déclarer `check` : le solveur (`build/priority.py`) doit être d’accord
-   (deux scénarios sans `check` sont acceptés mais non vérifiés). Giratoires et scénarios de route sont relus
-   à la main. Une modification de `diagrams.py` ou `gen_images.py` invalide les images générées au build suivant.
+   (deux scénarios sans `check` sont acceptés mais non vérifiés). `private: true` modélise une sortie de
+   parking ou un accès relevant de R415-9, pas toute voie de propriété privée. Giratoires et scénarios de route
+   sont relus à la main. Modifier `diagrams.py` ou `gen_images.py` invalide les images au build suivant.
 5. `python -m build.build --check`, lire les avertissements, puis `python -m build.build`, `python -m build.verify`
    et les tests. Regarder les cartes modifiées avec `build.preview` (une carte cloze donne `_c0`, `_c1`…). Pour
    une révision large, `python -m build.render_check` contrôle toutes les faces et écrit `out/RENDU.md` avec

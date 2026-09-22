@@ -247,10 +247,13 @@
 - id: c-occlusion-pieton
   theme: C
   sous_theme: vigilance
-  question: Une camionnette arrêtée masque l'entrée d'un passage piéton. Je ne vois personne. Que fais-je ?
-  reponse: 'Je ralentis pour pouvoir m''arrêter avant le passage : un piéton peut être masqué.'
-  explication: Absence d’usager visible et absence de danger ne sont pas équivalentes.
-  source: Code de la route, R413-17 et R415-11
+  question: Une camionnette arrêtée devant un passage piéton en masque l’entrée. La voie à sa gauche est libre
+    ; puis-je la dépasser sans voir derrière elle ?
+  reponse: 'Non : je dois d’abord m’assurer qu’aucun piéton n’est engagé. Je ralentis, prêt à m’arrêter avant
+    le passage ; « je ne vois personne » ne signifie pas « personne ne traverse ».'
+  explication: La camionnette peut cacher un piéton. R414-5 impose cette vérification avant de dépasser à l’approche
+    du passage ; je cède aussi à celui qui manifeste clairement l’intention de traverser (R415-11).
+  source: Code de la route, R414-5 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842217 ; R415-11
 - id: c-distance-obstacle-exercice
   theme: C
   sous_theme: applications

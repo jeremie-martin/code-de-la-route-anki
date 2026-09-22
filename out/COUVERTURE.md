@@ -104,7 +104,7 @@ Recherche Anki : `objectif::l-intersection`
 |---|---|---|---|
 | `l-passage-pieton-50m` | socle | faits | Code de la route, R412-37, R415-11 et R413-17 |
 | `l-priorite-droite-defaut` | socle | questions | Code de la route, art. R415-5 |
-| `l-sortie-parking-priorite` | socle | questions | Code de la route, art. R415-9 |
+| `l-sortie-parking-priorite` | socle | questions | Code de la route, R415-9 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968 ; R415-11 |
 | `l-stop-arret` | socle | questions | Code de la route, art. R415-6 |
 | `l-tourner-gauche-regle` | socle | questions | Code de la route, art. R415-4 et R412-10 |
 | `l-intersection-encombree` | socle | questions | Code de la route, art. R412-33 |
@@ -163,8 +163,8 @@ Recherche Anki : `objectif::l-giratoire`
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `l-giratoire-vs-rond-point` | socle | questions | Code de la route, art. R415-10 ; IISR (AB25) |
-| `l-giratoire-clignotant` | socle | questions | REMC ; Codes Rousseau — Le giratoire |
-| `l-giratoire-placement` | socle | questions | Code de la route, art. R415-10 et R412-9 ; REMC |
+| `l-giratoire-clignotant` | socle | questions | Code de la route, R412-9 et R412-10 ; Association Prévention Routière — https://www.preventionroutiere.asso.fr/le-carrefour-giratoire-commen-bien-lemprunter/ |
+| `l-giratoire-placement` | socle | questions | Code de la route, R412-9 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688 |
 | `l-giratoire-sortie-impossible` | socle | questions | Code de la route, R412-9 et R412-10 |
 | `aff-l-giratoire-sortie-cede` | consolidation | affirmations | Code de la route, art. R415-10 |
 | `aff-l-giratoire-depassement` | consolidation | affirmations | R414-4 et R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
@@ -458,7 +458,7 @@ Recherche Anki : `objectif::l-depasser`
 | `l-depassement-conditions` | socle | questions | Code de la route, art. R414-4 |
 | `l-depassement-rabattement` | socle | questions | Code de la route, art. R414-10 |
 | `l-depassement-interdit-lieux` | consolidation | questions | Code de la route, R414-4 et R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
-| `l-depassement-interdit-lieux-2` | consolidation | questions | Code de la route, art. R414-11 à R414-13 |
+| `l-depassement-interdit-lieux-2` | consolidation | questions | Code de la route, R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
 | `l-cycliste-ligne-espace` | socle | questions | Code de la route, R412-19 et R414-4 |
 | `l-cavalier-ligne-continue` | socle | questions | Code de la route, R412-19 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/ |
 | `c-cycliste-devant-depassement` | socle | questions | Code de la route, art. R414-4 (conditions du dépassement). |
@@ -548,7 +548,7 @@ Recherche Anki : `objectif::l-stationner`
 | `l-stationnement-trottoir` | socle | questions | Code de la route, art. R417-11 |
 | `l-stationnement-bande-cyclable` | socle | questions | Code de la route, art. R417-11 |
 | `l-double-file` | consolidation | questions | Code de la route, R110-2 et R417-10 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551 |
-| `l-entree-carrossable` | socle | questions | Code de la route, art. R417-10 |
+| `l-entree-carrossable` | socle | questions | Code de la route, R417-10 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551 ; R110-2 ; Cass. crim., 20 juin 2017, n° 16-86.838 |
 | `l-stationnement-dangereux` | socle | questions | Code de la route, art. R417-9 |
 | `l-stationnement-hors-agglo-nuit` | socle | questions | Code de la route, art. R417-4 et R416-12 |
 | `l-visuel-arret-b6a1` | socle | questions | Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
@@ -614,7 +614,7 @@ Recherche Anki : `objectif::c-observer`
 | `c-indice-ballon` | socle | questions | REMC — Anticiper ; securite-routiere.gouv.fr — Enfants |
 | `c-indice-cycliste-regard` | socle | questions | En Voiture Simone — Les vélos ; REMC |
 | `c-indice-vehicule-stationne-portiere` | socle | questions | securite-routiere.gouv.fr — Emportiérage ; REMC |
-| `c-occlusion-pieton` | socle | questions | Code de la route, R413-17 et R415-11 |
+| `c-occlusion-pieton` | socle | questions | Code de la route, R414-5 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842217 ; R415-11 |
 | `c-virage-technique` | socle | questions | REMC (compétence 2) ; securite-routiere.gouv.fr — La vitesse et la conduite |
 | `aff-c-champ-visuel-vitesse-pieton` | socle | affirmations | securite-routiere.gouv.fr — Dépliant La vue ; Conduire sur autoroute |
 | `aff-c-pieton-detectable-motard` | consolidation | affirmations | Sécurité routière — Exemples de nouvelles questions (Q11) |
@@ -827,8 +827,8 @@ Recherche Anki : `objectif::r-tunnel-rail`
 | `r-train-distance-arret` | consolidation | faits | SNCF Réseau — Sécurité aux passages à niveau ; securite-routiere.gouv.fr — Passage à niveau |
 | `r-tunnel-niches` | consolidation | faits | CETU — Conduire en tunnel |
 | `l-feu-pieton-tram` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `r-tunnel-feux-jour` | socle | questions | Code de la route, art. R416-4 et R416-6 |
-| `r-tunnel-distance-arret` | socle | questions | CETU — Conduire en tunnel ; Code de la route, art. R412-12 |
+| `r-tunnel-feux-jour` | socle | questions | CETU — https://www.cetu.developpement-durable.gouv.fr/conduire-en-tunnel-a1597.html |
+| `r-tunnel-distance-arret` | socle | questions | CETU — https://www.cetu.developpement-durable.gouv.fr/IMG/pdf/CETU-Note_Info_22_2011.pdf |
 | `r-tunnel-panne` | consolidation | questions | CETU — Conduire en tunnel ; securite-routiere.gouv.fr — Les tunnels |
 | `r-tunnel-incendie` | socle | questions | CETU — Consignes en cas d'incendie ; securite-routiere.gouv.fr — Les tunnels |
 | `r-pn-feu-rouge-clignotant` | socle | questions | Code de la route, art. R412-30 et R422-3 |
