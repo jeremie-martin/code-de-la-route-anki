@@ -176,7 +176,7 @@
   nom: 'Ligne de rive (T2 : 3 m de trait, 3,5 m de vide) et rive continue'
   signification: 'Ligne discontinue au bord de la chaussée : elle sépare la chaussée de l’accotement.'
   conduite: Rester à gauche de la ligne ; on peut la franchir pour s'arrêter sur l'accotement ou entrer dans une propriété.
-  complement: Continue, elle signale un accotement impraticable ou interdit à l'arrêt.
+  complement: 'Continue, elle borde surtout les chaussées sans bande d’arrêt d’urgence ou un accotement peu sûr : je ne la franchis que si l’accotement permet de s’arrêter sans danger.'
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

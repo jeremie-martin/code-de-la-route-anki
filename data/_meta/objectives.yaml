@@ -415,9 +415,8 @@
   - aff-l-virage-gauche-axe
   - l-position-chaussee
   - l-entrecroisement
-  - l-retrecissement-croisement
-  - l-file-changement
   - l-depassement-droite
+  - scn-pos-croisement-obstacle
   - aff-l-files-droite
   - aff-l-voie-preselection
   - aff-l-croisement-depasseur-en-face
@@ -435,7 +434,7 @@
   - aff-l-detresse-pluie
   - aff-l-demi-tour-ligne-continue
   - scn-pos-trois-voies
-  - scn-pos-croisement-obstacle
+  - l-file-changement
   - scn-pos-bau-bouchon
   - scn-crois-b15-je-cede
   - scn-crois-c18-je-passe

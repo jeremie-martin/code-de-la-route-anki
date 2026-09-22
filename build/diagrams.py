@@ -92,9 +92,22 @@ def sign_data_uri(commons_title: str, px: int = 120) -> str:
     return uri
 
 
+# AB3a without its optional plate, drawn here so scenarios and question drawings share it
+CEDEZ_SVG = ('<svg xmlns="http://www.w3.org/2000/svg" width="300" height="270" viewBox="0 0 300 270">'
+             '<path d="M20,22 L280,22 L150,248 Z" fill="#d52b1e" stroke="#9a9a9a" stroke-width="2" stroke-linejoin="round"/>'
+             '<path d="M58,44 L242,44 L150,204 Z" fill="#ffffff"/></svg>')
+
+
+def sign_uri(name: str, px: int = 120) -> str:
+    """Data URI of a scenario sign: the drawn give-way triangle, or the Commons file of SIGN_FILES."""
+    if name == "cedez":
+        return "data:image/svg+xml;base64," + base64.b64encode(CEDEZ_SVG.encode()).decode()
+    return sign_data_uri(SIGN_FILES[name], px)
+
+
 SIGN_FILES = {
     "stop": "France road sign AB4.svg",
-    "cedez": "France road sign AB3a.svg",
+    "cedez": None,  # drawn (CEDEZ_SVG): the Commons AB3a carries an unreadable « CÉDEZ LE PASSAGE » plate
     "prioritaire": "France road sign AB6.svg",
     "fin_prioritaire": "France road sign AB7.svg",
     "priorite_droite": "France road sign AB1.svg",
@@ -491,7 +504,7 @@ def _private_exit(S: SVG, a, cx, cy, half):
 
 def _sign(S: SVG, a, sign, cx, cy, half, px=54):
     """Place a sign on the right-hand verge of approach `a`, just before the intersection."""
-    uri = sign_data_uri(SIGN_FILES[sign], 120)
+    uri = sign_uri(sign)
     gap = 8
     if a == "S":
         x, y = cx + half + gap, cy + half + 10
@@ -614,8 +627,8 @@ def draw_roundabout(spec: dict) -> str:
         S.add(f'<line x1="{cx-half}" y1="{cy-R_out-2}" x2="{cx-2}" y2="{cy-R_out-2}" stroke="{MARK}" stroke-width="7" {dash}/>')
         S.add(f'<line x1="{cx+R_out+2}" y1="{cy-half}" x2="{cx+R_out+2}" y2="{cy-2}" stroke="{MARK}" stroke-width="7" {dash}/>')
         S.add(f'<line x1="{cx-R_out-2}" y1="{cy+2}" x2="{cx-R_out-2}" y2="{cy+half}" stroke="{MARK}" stroke-width="7" {dash}/>')
-        uri = sign_data_uri(SIGN_FILES["giratoire"], 120)
-        cede = sign_data_uri(SIGN_FILES["cedez"], 120)
+        uri = sign_uri("giratoire")
+        cede = sign_uri("cedez")
         # AB3a at the give-way line, AB25 on the same verge further from the ring
         for (x, y), (dx, dy) in zip([(cx+half+8, cy+R_out+6), (cx-half-8-50, cy-R_out-6-50), (cx+R_out+6, cy-half-8-50), (cx-R_out-6-50, cy+half+8)],
                                     [(0, 54), (0, -54), (54, 0), (-54, 0)]):

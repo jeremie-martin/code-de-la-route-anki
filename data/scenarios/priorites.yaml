@@ -304,7 +304,7 @@
           colour: rouge
         goes: straight
         sign: feu_orange_clignotant
-  question: Les feux de l'intersection clignotent au jaune. Une voiture arrive de ma droite. Qui passe en premier ?
+  question: Une voiture arrive de ma droite. Qui passe en premier ?
   reponse: 'La rouge : feux au jaune clignotant = prudence et retour aux panneaux ou, sans panneau, à la priorité
     à droite.'
   explication: 'Le jaune clignotant n''est pas un feu vert : il signale que les feux ne règlent plus la circulation.

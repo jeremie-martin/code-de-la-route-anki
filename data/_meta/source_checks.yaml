@@ -565,7 +565,6 @@
   - marq-couloir-bus
   - marq-sas-velo
   - scn-pos-croisement-obstacle
-  - l-retrecissement-croisement
 - id: v9-permis
   consulte_le: '2026-09-21'
   url: https://www.service-public.gouv.fr/particuliers/vosdroits/F2828

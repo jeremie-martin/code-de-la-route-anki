@@ -8,7 +8,7 @@ from __future__ import annotations
 import math
 import textwrap
 
-from build.diagrams import (ASPHALT, GRASS, MARK, LABEL, RAIL, CAR_COLOURS, FONT, SVG, agent_figure, draw_road, draw_intersection, draw_roundabout,
+from build.diagrams import (ASPHALT, GRASS, MARK, LABEL, RAIL, CAR_COLOURS, CEDEZ_SVG, FONT, SVG, agent_figure, draw_road, draw_intersection, draw_roundabout,
                             vehicle_sprite, intention_arrow, siren_rays, sign_data_uri, esc, _body)
 
 ME = _body({"me": True})  # the learner's car in decision scenes: blue, yellow halo, MOI (as in the scenarios)
@@ -171,7 +171,8 @@ def fleches(params):
 
 
 def transversale(params):
-    """Stop line (continuous) or give-way line (dashed) with sign; plus 'effet des feux'."""
+    """Stop line (continuous) or give-way line (dashed) with sign; plus 'effet des feux'. `arret`: MOI stopped at the
+    STOP line (question drawing) instead of the plain reference car."""
     S = SVG(480, 300)
     S.add(f'<rect x="0" y="0" width="480" height="300" fill="{GRASS}"/>')
     S.add(f'<rect x="120" y="0" width="240" height="300" fill="{ASPHALT}"/>')
@@ -188,7 +189,12 @@ def transversale(params):
         S.add(f'<rect x="366" y="40" width="22" height="58" rx="5" fill="#222"/>')
         for i, c in enumerate(["#d8362d", "#f08a24", "#2fa14b"]):
             S.add(f'<circle cx="377" cy="{51 + i * 18}" r="7" fill="{c if i == 0 else "#555"}"/>')
-    S.add(f'<g transform="translate(300,220)">{vehicle_sprite("car", "bleu")}</g>')
+    if params.get("arret"):      # a decision drawing: MOI stopped with its front at the line, the STOP sign beside it
+        uri, h = _sign_png({"kind": "sign", "file": "France road sign AB4.svg"}, 60)
+        S.add(f'<image href="{uri}" x="372" y="104" width="60" height="{h}"/>')
+        S.add(f'<g transform="translate(300,142)">{ME}</g>')
+    else:
+        S.add(f'<g transform="translate(300,220)">{vehicle_sprite("car", "bleu")}</g>')
     return str(S)
 
 
@@ -1302,10 +1308,7 @@ def formes_panneaux(params):
 
 def cedez_le_passage(params):
     """AB3a without its optional plate (the Commons file prints « CÉDEZ LE PASSAGE », i.e. the answer)."""
-    S = SVG(300, 270)
-    S.add(f'<path d="M20,22 L280,22 L150,248 Z" fill="{SIGN_RED}" stroke="#9a9a9a" stroke-width="2" stroke-linejoin="round"/>')
-    S.add(f'<path d="M58,44 L242,44 L150,204 Z" fill="{PAPER}"/>')
-    return str(S)
+    return CEDEZ_SVG
 
 
 def _sign_png(item, width):

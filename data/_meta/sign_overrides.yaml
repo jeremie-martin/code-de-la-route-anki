@@ -178,7 +178,7 @@ marq-zebra:
 marq-ligne-rive:
   signification: 'Ligne discontinue au bord de la chaussée : elle sépare la chaussée de l’accotement.'
   conduite: Rester à gauche de la ligne ; on peut la franchir pour s'arrêter sur l'accotement ou entrer dans une propriété.
-  complement: Continue, elle signale un accotement impraticable ou interdit à l'arrêt.
+  complement: 'Continue, elle borde surtout les chaussées sans bande d’arrêt d’urgence ou un accotement peu sûr : je ne la franchis que si l’accotement permet de s’arrêter sans danger.'
   piege: null
 marq-ligne-bau-t4:
   signification: Ligne discontinue à très longs traits (39 m) et vides de 13 m délimitant la bande d'arrêt d'urgence.

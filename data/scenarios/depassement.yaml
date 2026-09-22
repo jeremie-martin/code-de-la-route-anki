@@ -233,7 +233,7 @@
       - {kind: label, y: 55, text: "véhicule stationné"}
   question: "Un véhicule stationné occupe ma voie et une voiture arrive en face. Qui passe en premier ?"
   reponse: "La voiture d'en face : l'obstacle est de mon côté, c'est à moi de m'arrêter et de la laisser passer avant de contourner."
-  explication: 'L’obstacle est de mon côté : je dois empiéter sur la voie d’en face pour le contourner. Je laisse donc passer l’autre véhicule. Sur un passage étroit, je respecte aussi les panneaux qui fixent la priorité entre les deux sens.'
+  explication: 'L’obstacle est de mon côté : je dois empiéter sur la voie d’en face pour le contourner. Je laisse donc passer l’autre véhicule. Sur un passage étroit, je respecte aussi les panneaux qui fixent la priorité entre les deux sens ; un pont simplement étroit, sans obstacle d’un côté, ne permet pas de déduire cette priorité.'
   theme: L
   sous_theme: croisement
   source: "Code de la route, art. R414-1 ; règle de conduite (programme REMC)"

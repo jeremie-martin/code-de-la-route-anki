@@ -32,6 +32,12 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-6
+  illustration:
+    gen: transversale
+    params:
+      kind: stop
+      arret: true
+    legende: Arrêt complet, l’avant à la ligne continue ; puis j’avance au pas pour voir si besoin.
 - id: l-tourner-gauche-regle
   question: Je tourne à gauche à une intersection sans feu ni panneau de priorité. Quels véhicules peuvent avoir priorité
     sur moi ?
@@ -42,12 +48,28 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-4 et R412-10
+  illustration:
+    gen: intersection
+    params:
+      approaches:
+        S:
+          vehicle:
+            colour: bleu
+            me: true
+          goes: left
+        N:
+          vehicle:
+            colour: rouge
+          goes: straight
+        E:
+          vehicle:
+            colour: vert
+          goes: straight
+    legende: 'En face (rouge) et, en priorité à droite, à ma droite (vert) : les deux passent avant moi.'
 - id: l-giratoire-vs-rond-point
   question: Quelle différence entre un carrefour à sens giratoire et un simple rond-point, pour les priorités ?
-  reponse: 'Giratoire (panneau « cédez le passage » avec les flèches en anneau) : priorité à ceux qui sont déjà dans
-    l''anneau. Rond-point sans panneau : priorité à droite, donc à ceux qui entrent.'
-  explication: 'Repère visuel : cédez-le-passage et flèches en anneau à l’entrée = giratoire ; triangle à croix noire,
-    ou rien, = rond-point à priorité à droite. La forme ronde ne suffit pas : lire les signaux aux entrées.'
+  reponse: 'Giratoire (triangle à flèches en anneau, puis cédez-le-passage à chaque entrée) : priorité à ceux qui sont déjà dans l’anneau. Rond-point sans cédez-le-passage (triangle à croix noire, ou rien) : priorité à droite, donc à ceux qui entrent.'
+  explication: 'La forme ronde ne suffit pas : lire les signaux aux entrées.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-10 ; IISR (AB25)
@@ -131,8 +153,7 @@
       - lane: droite
         x: 330
 - id: l-entrecroisement
-  question: 'Je conduis la voiture bleue qui vient de l’entrée. La rouge circule déjà sur l’autoroute et veut
-    prendre la sortie. Puis-je m’insérer devant elle en l’obligeant à ralentir ?'
+  question: Je viens de l’entrée. La rouge circule déjà sur l’autoroute et veut prendre la sortie. Puis-je m’insérer devant elle en l’obligeant à ralentir ?
   reponse: Non. Je cède le passage à la rouge et adapte mon allure pour trouver un créneau sûr.
   explication: 'Cette voie d’entrecroisement sert à la fois à entrer et à sortir. L’entrant cède aux véhicules
     déjà sur l’autoroute, même s’ils veulent sortir. Les deux conducteurs contrôlent et signalent leur changement
@@ -225,61 +246,12 @@
   sous_theme: positionnement
   source: Code de la route, art. R412-9, R412-23 et R415-14
 - id: l-file-changement
-  question: Avenue à sens unique à trois voies, circulation à l'arrêt sur toutes les files ; la file voisine avance
-    un peu plus vite. Que fais-je ?
-  reponse: 'Je reste dans ma file : en files ininterrompues, on n''en change que pour préparer un changement de direction.'
-  explication: 'R412-24. Dans ces conditions, une file qui avance plus vite qu''une autre n''est pas un dépassement (R414-15)
-    : je n''ai rien à me reprocher, mais je ne zigzague pas non plus.'
+  question: Avenue à sens unique à trois voies, files ininterrompues sur toutes les voies. Dans quel cas puis-je changer de file ?
+  reponse: Seulement pour préparer un changement de direction (tourner, prendre une sortie), après contrôles et clignotant.
+  explication: R412-24. Changer de file pour gagner quelques places ne fait gagner presque rien et multiplie les conflits ; qu’une file avance plus vite qu’une autre n’est pas un dépassement (R414-15).
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-24 et R414-15
-  image:
-    gen: road
-    params:
-      lanes: 3
-      up_lanes: 3
-      axis: none
-      lane_lines:
-      - at: 1
-      - at: 2
-      vehicles:
-      - lane: 1
-        y: 12
-        colour: gris
-      - lane: 1
-        y: 68
-        colour: gris
-      - lane: 1
-        y: 94
-        colour: gris
-      - lane: 2
-        y: 12
-        colour: gris
-      - lane: 2
-        y: 40
-        colour: gris
-      - lane: 2
-        y: 68
-        colour: gris
-      - lane: 2
-        y: 94
-        colour: gris
-      - lane: 3
-        y: 12
-        colour: gris
-      - lane: 3
-        y: 40
-        colour: gris
-      - lane: 3
-        y: 68
-        colour: gris
-      - lane: 3
-        y: 94
-        colour: gris
-      - lane: 1
-        y: 40
-        colour: bleu
-        me: true
 - id: l-demi-tour-marche-arriere
   question: J'ai raté une sortie d'autoroute ; la bande d'arrêt d'urgence est libre et le terre-plein comporte une
     interruption. Que fais-je ?
@@ -292,13 +264,12 @@
 - id: l-ligne-rive-franchir
   question: Une ligne continue borde le côté droit de la chaussée (ligne de rive). Puis-je la franchir pour m'arrêter sur
     l'accotement ?
-  reponse: 'Oui : une ligne de rive n’est pas une ligne axiale ; on la franchit pour s’arrêter hors chaussée, tourner ou accéder
-    à une propriété.'
+  reponse: 'Oui, si l’accotement le permet : le Code n’interdit que le franchissement des lignes continues axiales ou séparatives de voies (R412-19) ; on franchit une ligne de rive pour s’arrêter hors chaussée, tourner ou accéder à une propriété.'
   explication: 'Exception : la ligne de rive d''une bande d''arrêt d''urgence d''autoroute (traits très longs) ne se franchit
     qu''en cas de nécessité absolue (R412-22).'
   theme: L
   sous_theme: positionnement
-  source: IISR 7e partie ; Code de la route, art. R412-22
+  source: Code de la route, art. R412-19 et R412-22 ; IISR 7e partie, art. 114-4
   comparaisons:
   - ref: marq-ligne-rive
     legende: 'Ligne de rive : se franchit pour s’arrêter hors chaussée ou tourner.'
@@ -325,15 +296,6 @@
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-10
-- id: l-retrecissement-croisement
-  question: Un obstacle occupe ma voie sur une route plate à double sens, sans signalisation de priorité. Une voiture arrive
-    en face. Qui attend ?
-  reponse: 'J’attends : je dois empiéter sur sa voie pour contourner l’obstacle, je ne peux pas la forcer à s’arrêter.'
-  explication: 'Un pont simplement étroit, sans obstacle d’un côté, ne permet pas de déduire cette priorité : observer l’engagement
-    et les possibilités de croisement.'
-  theme: L
-  sous_theme: croisement
-  source: Code de la route, art. R414-1 ; règle de conduite (programme REMC)
 - id: l-arret-vs-stationnement
   question: Quelle différence entre un arrêt et un stationnement ?
   reponse: 'L’arrêt : immobilisation brève pour monter, descendre, charger ou décharger, conducteur prêt à déplacer le véhicule.
@@ -394,6 +356,23 @@
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-9
+  illustration:
+    gen: road
+    params:
+      lanes: 2
+      axis: discontinue
+      vehicles:
+      - lane: 1
+        y: 60
+        colour: gris
+      - lane: 1
+        y: 15
+        colour: bleu
+        me: true
+      extras:
+      - kind: sommet
+        y: 70
+    legende: 'Garée juste avant le sommet : ceux qui arrivent ne la voient qu’au dernier moment.'
 - id: l-stationnement-hors-agglo-nuit
   question: Je dois m'arrêter sur une route de campagne. Où placer mon véhicule ?
   reponse: Hors de la chaussée si l’accotement le permet ; sinon à droite, dans mon sens de marche, au plus près du bord.
@@ -402,7 +381,7 @@
   sous_theme: stationnement
   source: Code de la route, art. R417-4 et R416-12
 - id: l-feu-hors-service-panneaux
-  question: Les feux de ce carrefour sont éteints (panne). Que faire ?
+  question: J’arrive à ce carrefour ; les feux ne fonctionnent pas. Que faire ?
   reponse: 'Appliquer le panneau : m''arrêter au STOP et céder le passage. Sans panneau, priorité à droite.'
   explication: 'Les panneaux placés sous les feux ne valent que quand les feux sont éteints ou au jaune clignotant. Feux en
     fonctionnement : ils priment sur les panneaux.'
@@ -595,8 +574,7 @@
 - id: l-giratoire-sortie-impossible
   theme: L
   sous_theme: priorites
-  question: 'Je conduis la voiture bleue et vise la sortie indiquée. Le cycliste continue dans l’anneau,
-    à mon niveau. Comment rejoindre ma sortie sans le gêner ?'
+  question: Je vise la sortie indiquée. Le cycliste continue dans l’anneau, à mon niveau. Comment rejoindre ma sortie sans le gêner ?
   reponse: Je lui cède le passage. Si je ne peux pas me rabattre sans lui couper la route, je refais un tour.
   explication: 'Pour sortir depuis la voie intérieure, je dois traverser la voie extérieure où circule le cycliste.
     Être dans l’anneau ne donne pas priorité pour changer de voie ; le clignotant non plus.'
@@ -628,8 +606,8 @@
         kind: sign
         file: France road sign A1a.svg
 - id: l-feu-modal-anticipation
-  question: Mon feu est rouge ; le petit feu voisin clignote. Puis-je le suivre en voiture particulière ?
-  reponse: 'Non : cette autorisation vise les usagers auxquels le signal modal s’adresse, pas ma voiture.'
+  question: En voiture, mon feu est rouge ; le petit feu voisin clignote. Puis-je le suivre ?
+  reponse: 'Non : ce signal s’adresse aux cyclistes (symbole vélo), pas à ma voiture ; je respecte mon feu rouge.'
   explication: Lire le destinataire du feu avant sa couleur ; les véhicules autorisés doivent encore céder le passage.
   theme: L
   sous_theme: signalisation
@@ -637,7 +615,7 @@
   image:
     gen: feu_modal
     params:
-      kind: bus
+      kind: velo
 - id: l-feu-cycliste-r19
   question: À vélo, j’arrive à ce feu rouge ; le petit feu voisin clignote. Puis-je tourner à droite ?
   reponse: Oui, après avoir cédé aux piétons et aux autres usagers ; je m’arrête si nécessaire.
@@ -842,8 +820,7 @@
 - id: l-c107-route-simple
   theme: L
   sous_theme: applications
-  question: 'Je conduis la voiture bleue hors agglomération, par temps sec, hors permis probatoire et sans autre
-    limitation ni relèvement signalé. Quel plafond s’applique ici, et quel élément du dessin le justifie ?'
+  question: Hors agglomération, par temps sec, hors permis probatoire et sans autre limitation ni relèvement signalé. Quel plafond s’applique ici, et quel élément du dessin le justifie ?
   reponse: '80 km/h : une seule chaussée, avec une voie dans chaque sens.'
   explication: 'Le panneau C107 réglemente l’accès, sans fixer à lui seul une vitesse de 110 km/h. Une ligne peinte
     entre les sens de circulation n’est pas un terre-plein central.'
@@ -857,8 +834,7 @@
 - id: l-c107-route-separee
   theme: L
   sous_theme: applications
-  question: 'Je conduis la voiture bleue hors agglomération, par temps sec, hors permis probatoire et sans autre
-    limitation ni relèvement signalé. Quel plafond s’applique ici, et quel élément du dessin le justifie ?'
+  question: Hors agglomération, par temps sec, hors permis probatoire et sans autre limitation ni relèvement signalé. Quel plafond s’applique ici, et quel élément du dessin le justifie ?
   reponse: '110 km/h : les deux chaussées sont séparées par un terre-plein central.'
   explication: 'Une seule voie par sens suffit ici : c’est la séparation des chaussées par un terre-plein central
     qui détermine ce plafond. Le panneau C107 réglemente l’accès ; il ne transforme pas la route en autoroute.'

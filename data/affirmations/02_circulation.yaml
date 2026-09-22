@@ -352,13 +352,30 @@
   sous_theme: positionnement
   source: Code de la route, art. R416-1 et R416-3
 - id: aff-l-voie-milieu-autoroute
-  contexte: Autoroute à trois voies, circulation très fluide ; je roule sur la voie du milieu à 130 km/h.
+  contexte: Autoroute à trois voies, circulation très fluide ; je roule sur la voie du milieu à 130 km/h, la voie de droite est libre devant moi.
   affirmation: Je peux rester sur la voie du milieu.
   verdict: faux
   pourquoi: "R412-23 impose d'emprunter la voie la plus à droite et de ne franchir les lignes que pour dépasser. Les voies de gauche servent au dépassement. Je me replace donc à droite dès que c'est possible."
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-23
+  image:
+    gen: road
+    params:
+      lanes: 3
+      up_lanes: 3
+      axis: none
+      lane_lines:
+      - at: 1
+      - at: 2
+      vehicles:
+      - lane: 2
+        y: 20
+        colour: bleu
+        me: true
+      - lane: 1
+        y: 80
+        colour: gris
 - id: aff-l-ilot-droite
   contexte: Cet îlot sépare la chaussée devant moi.
   affirmation: Si la voie de gauche est libre, je peux le contourner par la gauche.
@@ -451,13 +468,16 @@
         colour: bleu
         me: true
 - id: aff-l-sens-unique-gauche
-  contexte: Rue à sens unique, sans marquage ni panneau de stationnement.
+  contexte: En agglomération, rue à sens unique, sans marquage ni panneau de stationnement.
   affirmation: Je peux stationner du côté gauche de la chaussée.
   verdict: vrai
   pourquoi: 'R417-1 : dans une rue à sens unique, le stationnement est admis à droite comme à gauche, sauf arrêté ou signalisation contraire. Sur une chaussée à double sens, seul le côté droit est permis.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-1
+  comparaisons:
+  - ref: c12
+    legende: 'Sens unique : en agglomération, arrêt et stationnement à droite ou à gauche.'
 - id: aff-l-bau-appel
   contexte: Sur autoroute, mon téléphone sonne ; la bande d'arrêt d'urgence est dégagée.
   affirmation: Je peux m'y arrêter le temps de l'appel, feux de détresse allumés.
@@ -537,10 +557,6 @@
       axis: continue
       lane_lines:
       - at: 2
-      extras:
-      - kind: sign
-        file: France road sign B14 (90).svg
-        y: 60
       vehicles:
       - lane: 1
         y: 18
