@@ -144,6 +144,7 @@ def _rot_for(approach: str) -> float:
 
 # Half-length of each sprite: vehicles wait with their FRONT at the same distance from the junction,
 # and intention arrows start at the front, whatever the vehicle.
+HALF_WIDTH = {"car": 22, "truck": 26, "bus": 24}
 HALF_LENGTH = {"car": 42, "truck": 60, "bus": 64, "tram": 80, "moto": 38, "bike": 34, "pompiers": 50}
 
 
@@ -730,34 +731,39 @@ def draw_road(spec: dict) -> str:
             S.add(f'<line x1="{x0 + road_w}" y1="0" x2="{x0 + road_w}" y2="{H}" stroke="{MARK}" stroke-width="4" stroke-dasharray="78 26"/>')
             S.add(f'<text x="{x0 + road_w + 35}" y="{H/2}" font-family="{FONT}" font-size="14" text-anchor="middle" fill="#fff" '
                   f'transform="rotate(-90 {x0 + road_w + 35} {H/2})">bande d\'arrêt d\'urgence</text>')
-    # A tall vehicle masks an angular sector, not a confirmed pedestrian.
-    # Only the aligned northbound truck/car case is supported; dimensions match the sprites.
+    # A stopped or tall vehicle masks an angular sector, not a confirmed pedestrian. The sector is bounded by the
+    # sight lines from my eye (driver's seat) through the two extreme corners of the obstacle; both head up.
     for obstacle in spec.get("vehicles", []):
         if not obstacle.get("occludes"):
             continue
         observer = next((v for v in spec["vehicles"] if v.get("me")), None)
-        if (observer is None or obstacle.get("kind") != "truck" or observer.get("kind", "car") != "car" or
-                obstacle["lane"] != observer["lane"] or
+        if (observer is None or obstacle.get("kind", "car") not in HALF_WIDTH or
                 any(v.get("dir", "up") != "up" for v in (observer, obstacle))):
-            raise ValueError("occludes requires a northbound truck ahead of the learner car in the same lane")
+            raise ValueError("occludes requires a northbound car, truck or bus ahead of the northbound learner")
         ox = x0 + road_w - (observer["lane"] - .5) * lane_w - 12
         oy = ypx(observer["y"]) - 20
-        bx = x0 + road_w - (obstacle["lane"] - .5) * lane_w
-        by = ypx(obstacle["y"]) + 60
-        if by >= oy:
-            raise ValueError("occluding truck must be ahead of the observer")
-        left_, right_ = bx - 26, bx + 26
-        far_left = ox + (left_ - ox) * oy / (oy - by)
-        far_right = ox + (right_ - ox) * oy / (oy - by)
+        bx, cy = x0 + road_w - (obstacle["lane"] - .5) * lane_w, ypx(obstacle["y"])
+        hw, hl = HALF_WIDTH[obstacle.get("kind", "car")], HALF_LENGTH[obstacle.get("kind", "car")]
+        if cy + hl >= oy:
+            raise ValueError("the occluding vehicle must be ahead of the observer")
+        corners = sorted(((bx + sx * hw, cy + sy * hl) for sx in (-1, 1) for sy in (-1, 1)),
+                         key=lambda c: math.atan2(c[0] - ox, oy - c[1]))
+        (lx_, ly_), (rx_, ry_) = corners[0], corners[-1]
+        far = lambda x, y: (ox + (x - ox) * 40, oy + (y - oy) * 40)  # noqa: E731  (clipped by the frame)
+        (flx, fly), (frx, fry) = far(lx_, ly_), far(rx_, ry_)
         S.add('<defs><pattern id="hidden" width="12" height="12" patternUnits="userSpaceOnUse">'
               '<path d="M-3 3L3-3 M0 12L12 0 M9 15L15 9" stroke="#bac2c5" stroke-width="2"/></pattern></defs>')
-        S.add(f'<path d="M{left_} {by}L{far_left} 0H{far_right}L{right_} {by}Z" '
+        S.add(f'<path d="M{lx_:.1f} {ly_:.1f}L{flx:.1f} {fly:.1f}L{frx:.1f} {fry:.1f}L{rx_:.1f} {ry_:.1f}Z" '
               'fill="url(#hidden)" stroke="#bac2c5" stroke-width="2"/>')
-        S.add(f'<path d="M{ox} {oy}L{left_} {by} M{ox} {oy}L{right_} {by}" '
+        S.add(f'<path d="M{ox} {oy}L{lx_} {ly_} M{ox} {oy}L{rx_} {ry_}" '
               'stroke="#bac2c5" stroke-width="1.5" stroke-dasharray="5 5"/>')
-        # label below the sector's lower edge, leader pointing up into it
-        lx, ly = side + 6, by + 40
-        S.add(f'<path d="M{lx + 20} {ly - 20}L{right_ + 10} {by - 40}" fill="none" stroke="{LABEL}" stroke-width="2"/>')
+        # label beside the road below the obstacle; its leader ends just inside the sector's right edge
+        ux, uy = (rx_ - ox), (ry_ - oy)
+        d = math.hypot(ux, uy)
+        vx, vy = (lx_ - ox) / math.hypot(lx_ - ox, ly_ - oy), (ly_ - oy) / math.hypot(lx_ - ox, ly_ - oy)
+        tx, ty = ox + (ux / d * .85 + vx * .15) * (d + 50), oy + (uy / d * .85 + vy * .15) * (d + 50)
+        lx, ly = side + 6, cy + hl + 40
+        S.add(f'<path d="M{lx + 20} {ly - 20}L{tx:.1f} {ty:.1f}" fill="none" stroke="{LABEL}" stroke-width="2"/>')
         for dy, t in ((0, "Zone masquée"), (24, "depuis ma place")):
             S.add(f'<text x="{lx}" y="{ly + dy}" font-family="{FONT}" font-size="19" fill="{LABEL}">{t}</text>')
     for v in spec.get("vehicles", []):

@@ -145,14 +145,54 @@
   sous_theme: motos
   source: "securite-routiere.gouv.fr, Être visible à moto ; Code de la route, art. R415-4"
 - id: u-interfiles
-  question: Autoroute embouteillée, files ininterrompues sur toutes les voies ; une moto remonte entre les deux files de gauche.
-    Que fais-je ?
+  question: 'Autoroute embouteillée, files ininterrompues : une moto remonte entre ma file et celle de gauche. Que fais-je ?'
   reponse: 'Je reste dans ma file en gardant l’espace latéral, et je contrôle rétroviseurs et angle mort avant tout changement
     de file : l’inter-files est légale ici.'
   explication: 'Décret 2025-33, en vigueur le 11 janvier 2025 : motos et tricycles d’au plus 1 m de large, autoroutes et routes à chaussées séparées ≥ 70 km/h, circulation dense, 50 km/h maximum (30 si une file est arrêtée).'
   theme: U
   sous_theme: motos
   source: Code de la route, art. R412-11-3 (décret n° 2025-33 du 9 janvier 2025)
+  image:
+    gen: road
+    params:
+      lanes: 3
+      up_lanes: 3
+      axis: none
+      lane_lines:
+      - at: 1
+      - at: 2
+      vehicles:
+      - lane: 2
+        y: 22
+        me: true
+      - lane: 2
+        y: 58
+        colour: gris
+      - lane: 2
+        y: 92
+        colour: gris
+      - lane: 1
+        y: 8
+        colour: gris
+      - lane: 1
+        y: 40
+        colour: gris
+      - lane: 1
+        y: 74
+        colour: gris
+      - lane: 3
+        y: 4
+        colour: gris
+      - lane: 3
+        y: 62
+        colour: gris
+      - lane: 3
+        y: 96
+        colour: gris
+      - lane: 2.5
+        y: 37
+        kind: moto
+        colour: rouge
 - id: u-pl-angles-morts
   question: Je suis à vélo, arrêté au feu rouge à droite d'un camion, à hauteur de sa portière. Son conducteur me voit-il
     ?
@@ -180,14 +220,27 @@
     legende: 'Vue de principe : trajectoires du centre des trains avant et arrière dans un virage régulier.
       Le tracé intérieur explique pourquoi il faut laisser de la place ; ce n’est pas l’enveloppe complète du camion.'
 - id: u-pl-depasser-suivre
-  question: Route à double sens, je suis derrière un poids lourd que je souhaite dépasser. Quelles précautions particulières
-    ?
+  question: 'Route à double sens : je souhaite dépasser ce poids lourd. Quelles précautions particulières ?'
   reponse: Rester plus loin pour voir la route qu’il masque, ne m’engager que si la longueur libre suffit (dépassement long),
     ne pas me rabattre trop tôt.
   explication: Il freine moins vite, projette de l'eau et crée un appel d'air. Hors agglomération, deux poids lourds qui se suivent à la même vitesse gardent au moins 50 m (R412-12).
   theme: U
   sous_theme: poids_lourds
   source: "Code de la route, art. R414-4 et R412-12 ; coursdecode, Les poids lourds"
+  image:
+    gen: road
+    params:
+      lanes: 2
+      axis: discontinue
+      vehicles:
+      - lane: 1
+        y: 18
+        me: true
+      - lane: 1
+        y: 45
+        kind: truck
+        colour: gris
+        occludes: true
 - id: u-matieres-dangereuses
   question: Que signifie cette plaque à l’arrière du camion, et qu’est-ce que cela change pour moi ?
   reponse: 'Il transporte des matières dangereuses : distance de sécurité accrue ; en cas d’accident, je n’approche pas et

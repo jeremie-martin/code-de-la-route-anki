@@ -137,6 +137,18 @@
   theme: C
   sous_theme: vigilance
   source: "securite-routiere.gouv.fr, Emportiérage ; REMC"
+  illustration:
+    gen: rue_stationnement
+    params:
+      parked:
+      - 60
+      - 156
+      - 252
+      - 348
+      door: 1
+      door_label: portière ≈ 1 m
+      me: 330
+    legende: Je garde la place d’une portière qui s’ouvre.
 - id: c-routine-monotonie
   question: Pourquoi les trajets quotidiens et les longues lignes droites sont-ils dangereux pour la vigilance ?
   reponse: 'La familiarité fait baisser l’attention : on manque un changement de signalisation, un piéton ou un obstacle inhabituel.'
@@ -261,13 +273,32 @@
 - id: c-occlusion-pieton
   theme: C
   sous_theme: vigilance
-  question: Une camionnette arrêtée devant un passage piéton en masque l’entrée. La voie à sa gauche est libre
-    ; puis-je la dépasser sans voir derrière elle ?
+  question: Le véhicule blanc est arrêté juste avant le passage piéton ; la voie à sa gauche est libre. Puis-je le dépasser sans voir derrière lui ?
   reponse: 'Non : je dois d’abord m’assurer qu’aucun piéton n’est engagé. Je ralentis, prêt à m’arrêter avant
     le passage ; « je ne vois personne » ne signifie pas « personne ne traverse ».'
-  explication: La camionnette peut cacher un piéton. R414-5 impose cette vérification avant de dépasser à l’approche
+  explication: Le véhicule arrêté peut cacher un piéton. R414-5 impose cette vérification avant de dépasser à l’approche
     du passage ; je cède aussi à celui qui manifeste clairement l’intention de traverser (R415-11).
   source: "Code de la route, R414-5, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842217 ; R415-11"
+  image:
+    gen: road
+    params:
+      lanes: 2
+      up_lanes: 2
+      axis: none
+      lane_lines:
+      - at: 1
+      vehicles:
+      - lane: 2
+        y: 24
+        me: true
+      - lane: 1
+        y: 53
+        colour: blanc
+        kind: truck
+        occludes: true
+      extras:
+      - kind: passage_pieton
+        y: 72
 - id: c-distance-obstacle-exercice
   theme: C
   sous_theme: applications

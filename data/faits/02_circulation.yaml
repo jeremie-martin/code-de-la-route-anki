@@ -99,6 +99,15 @@
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-11 ; Code de la voirie routière, art. L118-5-1
+  illustration:
+    gen: rue_stationnement
+    params:
+      crossing: 80
+      no_parking: true
+      parked:
+      - 262
+      - 356
+    legende: 'Les 5 m en amont du passage restent libres : piétons et conducteurs s’y voient.'
 - id: l-stationnement-alterne
   explication: 'Le changement de côté se fait le soir, entre 20 h 30 et 21 h. Je lis les dates d’interdiction sur les panneaux : du 1er au 15, ou du 16 à la fin du mois. Une prescription de zone peut aussi imposer ce régime.'
   theme: L

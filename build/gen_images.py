@@ -8,7 +8,7 @@ from __future__ import annotations
 import math
 import textwrap
 
-from build.diagrams import (ASPHALT, GRASS, MARK, LABEL, RAIL, FONT, SVG, agent_figure, draw_road, draw_intersection, draw_roundabout,
+from build.diagrams import (ASPHALT, GRASS, MARK, LABEL, RAIL, CAR_COLOURS, FONT, SVG, agent_figure, draw_road, draw_intersection, draw_roundabout,
                             vehicle_sprite, intention_arrow, siren_rays, sign_data_uri, esc, _body)
 
 ME = _body({"me": True})  # the learner's car in decision scenes: blue, yellow halo, MOI (as in the scenarios)
@@ -142,13 +142,15 @@ def fleches(params):
             S.add(f'<path d="M{x},150 l40,0 l0,-10 l20,14 l-20,14 l0,-10 l-40,0 z" fill="{MARK}" transform="rotate(20 {x + 30} 150)"/>')
         _me_car(S, 50, 197)
     elif kind == "directionnelles":
-        # vertical road with 3 lanes at an intersection: left / straight / right
-        S = SVG(480, 300)
-        S.add(f'<rect x="0" y="0" width="480" height="300" fill="{GRASS}"/>')
-        S.add(f'<rect x="90" y="0" width="300" height="300" fill="{ASPHALT}"/>')
+        # vertical road with 3 lanes at an intersection: left / straight / right; `me`: MOI's lane, behind the arrows
+        me = params.get("me")
+        H = 400 if me else 300
+        S = SVG(480, H)
+        S.add(f'<rect x="0" y="0" width="480" height="{H}" fill="{GRASS}"/>')
+        S.add(f'<rect x="90" y="0" width="300" height="{H}" fill="{ASPHALT}"/>')
         S.add(f'<rect x="0" y="0" width="480" height="60" fill="{ASPHALT}"/>')
         for x in (190, 290):
-            S.add(f'<line x1="{x}" y1="70" x2="{x}" y2="300" stroke="{MARK}" stroke-width="4" stroke-dasharray="14 10"/>')
+            S.add(f'<line x1="{x}" y1="70" x2="{x}" y2="{H}" stroke="{MARK}" stroke-width="4" stroke-dasharray="14 10"/>')
         S.add(f'<rect x="90" y="66" width="300" height="6" fill="{MARK}"/>')
         # arrows: shaft 14 wide; turning arrows bend towards their side and keep inside their lane
         def arrow(cx, kind_):
@@ -161,6 +163,8 @@ def fleches(params):
             return f'<path d="{d} Z" fill="{MARK}"/>'
         S.add(arrow(146, "left")); S.add(arrow(240, "straight")); S.add(arrow(334, "right"))
         S.add(f'<rect x="90" y="0" width="300" height="60" fill="{ASPHALT}"/>')
+        if me:
+            S.add(f'<g transform="translate({ {"left": 140, "straight": 240, "right": 340}[me]},330)">{ME}</g>')
     elif kind == "insertion":
         pass
     return str(S)
@@ -1637,7 +1641,63 @@ def pn_plan(params):
     return str(S)
 
 
+# ------------------------------------------------------------ parked street ---
+
+def _dim_v(S, x, y0, y1, label):
+    """Vertical dimension: a bar with end ticks and its measure on the right, in INK."""
+    S.add(f'<path d="M{x},{y0} V{y1} M{x - 8},{y0} h16 M{x - 8},{y1} h16" stroke="{INK}" stroke-width="3" fill="none"/>')
+    _text(S, x + 14, (y0 + y1) / 2 + 7, label, LABEL_SIZE, INK, "start")
+
+
+ME_PATH = "#f2c200"                  # the yellow of MOI's halo: where MOI is going
+
+
+def rue_stationnement(params):
+    """Two-way street seen from above, my lane going up, a parking lane on the right along the pavement.
+    parked: y centres of the parked cars; door: index of the car whose driver's door is open;
+    door_label: its reach, written on the pavement; me: y of MOI (with a door open, the line its right side follows);
+    crossing: y of a zebra crossing, with `no_parking` the 5 m before it (upstream) marked and measured."""
+    S = SVG(420, 400, view=(80, 0, 340, 400))                                 # half of the oncoming lane is enough
+    S.add(f'<rect x="0" y="0" width="420" height="400" fill="#cfd3d4"/>')     # pavements
+    road0, axis, park0, park1 = 30, 120, 210, 272
+    S.add(f'<rect x="{road0}" y="0" width="{park1 - road0}" height="400" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M{axis},0 V400" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 30"/>')
+    for x in (road0, park1):
+        S.add(f'<rect x="{x - 3}" y="0" width="6" height="400" fill="#9aa0a2"/>')    # kerbs
+    px = (park0 + park1) / 2
+    cross = params.get("crossing")
+    if cross is not None:
+        for x in range(road0 + 6, park1 - 10, 24):
+            S.add(f'<rect x="{x}" y="{cross - 30}" width="14" height="60" fill="{MARK}"/>')
+        if params.get("no_parking"):
+            y0, y1 = cross + 34, cross + 34 + 100                               # 5 m at 20 px/m, upstream
+            S.add(f'<rect x="{park0 + 4}" y="{y0}" width="{park1 - park0 - 10}" height="{y1 - y0}" fill="none" '
+                  f'stroke="{WRONG}" stroke-width="3" stroke-dasharray="8 6"/>')
+            S.add(f'<path d="M{park0 + 8},{y0 + 4} L{park1 - 10},{y1 - 4} M{park1 - 10},{y0 + 4} L{park0 + 8},{y1 - 4}" '
+                  f'stroke="{WRONG}" stroke-width="3"/>')
+            _dim_v(S, park1 + 22, y0, y1, "5 m")
+    for i, y in enumerate(params.get("parked", [])):
+        S.add(f'<g transform="translate({px},{y})">{vehicle_sprite("car", "gris")}</g>')
+        if i == params.get("door"):
+            # driver's door (left side, towards traffic) hinged at its front edge, swung open about 60°:
+            # it reaches about 1 m (22 px) into the lane
+            S.add(f'<path d="M{px - 22},{y + 10} A26,26 0 0 1 {px - 44.5},{y - 3}" fill="none" stroke="{MARK}" '
+                  f'stroke-width="2" stroke-dasharray="4 3"/>')
+            S.add(f'<rect x="-4.5" y="0" width="9" height="26" rx="2" fill="{CAR_COLOURS["gris"]}" stroke="#111" '
+                  f'stroke-width="1.5" transform="translate({px - 22},{y - 16}) rotate(60)"/>')
+            if params.get("door_label"):
+                S.add(f'<path d="M{px + 26},{y - 6} H{park1 + 12}" stroke="{INK}" stroke-width="1.5" stroke-dasharray="4 4"/>')
+                _text(S, park1 + 16, y, params["door_label"], LABEL_SIZE, INK, "start")
+    if params.get("me") is not None:
+        me_x = px - 22 - 22 - 22            # a door's reach (≈ 1 m, 22 px) between MOI and the parked cars
+        if params.get("door") is not None:
+            S.add(f'<path d="M{me_x + 22},{params["me"] - 54} V0" stroke="{ME_PATH}" stroke-width="2.5" stroke-dasharray="8 6"/>')
+        S.add(f'<g transform="translate({me_x},{params["me"]})">{ME}</g>')
+    return str(S)
+
+
 REGISTRY.update({
+    "rue_stationnement": rue_stationnement,
     "bretelle": bretelle, "pn_face": pn_face, "pn_plan": pn_plan,
     "autoroute_attente": autoroute_attente,
     "medicaments_niveaux": medicaments_niveaux, "etiquettes_carburant": etiquettes_carburant, "pneu_flanc": pneu_flanc,

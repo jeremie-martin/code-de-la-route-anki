@@ -151,6 +151,49 @@
   theme: U
   sous_theme: motos
   source: 'Code de la route, art. R412-11-3 (décret n° 2025-33)'
+  illustration:
+    gen: road
+    params:
+      lanes: 3
+      up_lanes: 3
+      axis: none
+      lane_lines:
+      - at: 1
+      - at: 2
+      vehicles:
+      - lane: 2
+        y: 16
+        colour: gris
+      - lane: 2
+        y: 58
+        colour: gris
+      - lane: 2
+        y: 92
+        colour: gris
+      - lane: 1
+        y: 8
+        colour: gris
+      - lane: 1
+        y: 40
+        colour: gris
+      - lane: 1
+        y: 74
+        colour: gris
+      - lane: 3
+        y: 4
+        colour: gris
+      - lane: 3
+        y: 62
+        colour: gris
+      - lane: 3
+        y: 96
+        colour: gris
+      - lane: 2.5
+        y: 37
+        kind: moto
+        colour: bleu
+        me: true
+    legende: 'Sur trois voies : entre la file du milieu et celle de gauche, jamais ailleurs.'
 - id: aff-u-interfiles-panneau-autos
   contexte: Sur une voie rapide, je vois ce panneau.
   affirmation: Cette limitation s'applique aussi aux automobilistes quand la circulation est dense.

@@ -387,13 +387,18 @@
   - ref: marq-zebra
     legende: 'Hachures : on n’y circule pas.'
 - id: aff-l-voie-preselection
-  contexte: Je me suis engagé dans une voie de présélection dont la flèche au sol impose de tourner à droite.
+  contexte: Je me suis engagé dans cette voie de présélection.
   affirmation: Arrivé au carrefour, je peux continuer tout droit si personne ne me gêne.
   verdict: faux
   pourquoi: 'R412-26 : la flèche directionnelle impose de suivre la direction indiquée. On peut encore changer de voie tant que la ligne de séparation est discontinue, plus une fois arrivé à la ligne d''arrêt.'
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-26
+  image:
+    gen: fleches
+    params:
+      kind: directionnelles
+      me: right
 - id: aff-l-detresse-pluie
   contexte: Forte pluie sur autoroute ; je roule à 90 km/h dans le flux.
   affirmation: J'allume mes feux de détresse pour être mieux vu des véhicules qui me suivent.
