@@ -26,8 +26,7 @@
   sous_theme: tunnels
   source: "CETU, Conduire en tunnel"
 - id: r-autoroute-sortie-annonces
-  explication: La manœuvre doit être achevée au plus tard au début de la bretelle. Les aires sont annoncées à 2
-    000 m puis 1 000 m ; chaque sortie porte un numéro repris sur les panneaux.
+  explication: La manœuvre doit être achevée au plus tard au début de la bretelle ; un dernier panneau à 500 m peut compléter l’annonce. Chaque sortie porte un numéro repris sur les panneaux.
   theme: R
   sous_theme: autoroute
   source: IISR, 5e partie (art. 83 et 84) ; Code de la route, art. R421-4

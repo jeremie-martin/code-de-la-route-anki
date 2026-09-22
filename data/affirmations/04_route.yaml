@@ -12,7 +12,7 @@
   contexte: Route hors agglomération, panneau « passage à niveau » avec panonceau « signal automatique ».
   affirmation: Circulant hors agglomération, le passage à niveau se situe à environ 150 m.
   verdict: vrai
-  pourquoi: 'Hors agglomération, les balises à bandes rouges décomptent l’approche : trois bandes à environ 150 m, deux à 100 m, une à 50 m. Je ralentis progressivement avant le passage à niveau.'
+  pourquoi: Hors agglomération, un panneau de danger est implanté à environ 150 m de ce qu’il annonce, sauf panonceau de distance. Des balises à trois, deux puis une bande rouge décomptent l’approche (150, 100, 50 m).
   theme: R
   sous_theme: passages_a_niveau
   source: "Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR"
@@ -29,8 +29,7 @@
   affirmation: 'Une demi-barrière ne ferme que ma moitié de chaussée : je peux la contourner si je ne vois pas de
     train.'
   verdict: faux
-  pourquoi: Aucun usager ne doit s'engager quand les barrières sont fermées, en cours de fermeture ou d'ouverture
-    (R422-3 II). Un train peut en cacher un autre, et il lui faut environ 1 km pour s'arrêter.
+  pourquoi: Aucun usager ne doit s'engager quand les barrières sont fermées, en cours de fermeture ou d'ouverture (R422-3 II). Un train peut en cacher un autre, et un train lancé à 100 km/h peut avoir besoin d’environ 1 km pour s'arrêter.
   theme: R
   sous_theme: passages_a_niveau
   source: Code de la route, art. R422-3 ; SNCF Réseau
@@ -213,8 +212,7 @@
 - id: aff-r-nuit-feux-route-arret
   affirmation: À l'arrêt ou en stationnement, l'usage des feux de route est interdit.
   verdict: vrai
-  pourquoi: 'R416-5 : les feux de route sont interdits véhicule arrêté ou stationné (135 €). Hors agglomération
-    non éclairée, on signale le véhicule par ses feux de position.'
+  pourquoi: 'R416-5 : les feux de route sont interdits véhicule arrêté ou stationné (135 €). La nuit, hors agglomération, le véhicule arrêté sur la chaussée reste signalé par ses feux de position, même si la route est éclairée.'
   theme: R
   sous_theme: nuit
   source: Code de la route, art. R416-5
@@ -224,8 +222,7 @@
   contexte: Nuit, hors agglomération, feux de croisement ; un piéton en vêtements sombres marche sur le bas-côté.
   affirmation: Je le distingue à peu près aussi loin qu'un piéton portant un gilet rétroréfléchissant.
   verdict: faux
-  pourquoi: En vêtements sombres, il n'apparaît qu'à la limite de la zone éclairée par mes feux de croisement, une
-    trentaine de mètres ; un gilet rétroréfléchissant renvoie la lumière et le signale bien plus tôt.
+  pourquoi: En vêtements sombres, il se détache à peine du fond et n’apparaît que tard dans le faisceau des feux de croisement ; un gilet rétroréfléchissant renvoie la lumière et le signale bien plus tôt.
   theme: R
   sous_theme: nuit
   source: "securite-routiere.gouv.fr, Conduire de nuit ; Code de la route, art. R313-3"
@@ -236,7 +233,7 @@
     coupé, radio allumée ; si une évacuation est nécessaire, elle se fait à pied par les issues de secours.
   theme: R
   sous_theme: tunnels
-  source: "CETU, Conduire en tunnel ; Code de la route, art. R417-10 (arrêt et stationnement interdits en tunnel)"
+  source: CETU, Conduire en tunnel ; IISR (panneau C111, règles de circulation en tunnel)
 - id: aff-r-tram-station-pieton
   affirmation: Un tramway arrêté à sa station peut masquer un piéton qui traverse devant lui.
   verdict: vrai

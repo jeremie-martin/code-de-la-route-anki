@@ -8,7 +8,7 @@
   nom: Feu rouge fixe
   signification: 'Arrêt absolu : interdiction de franchir la ligne d''effet des feux, y compris pour tourner à droite.'
   conduite: S'arrêter avant la ligne d'arrêt, sans empiéter sur le passage piéton ni le sas vélo ; attendre le vert.
-  complement: Sans ligne au sol, l'arrêt se fait à l'aplomb du feu.
+  complement: Sans ligne au sol, je m'arrête avant le passage piéton s'il précède le feu, sinon à l'aplomb du feu.
   theme: L
   sous_theme: feux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -35,7 +35,7 @@
       state: vert
   nom: Feu vert
   signification: Passage autorisé, à condition que l'intersection soit dégagée et en cédant le passage aux piétons engagés.
-  conduite: Ne s'engager que si l'on peut dégager le carrefour ; en tournant, céder aux piétons et aux véhicules d'en face.
+  conduite: Ne s'engager que si l'on peut dégager le carrefour ; en tournant, céder aux piétons, et à gauche aux véhicules d'en face.
   piege: Le vert ne donne pas la priorité sur les piétons ; il prévaut sur un STOP ou un cédez-le-passage placé dessous.
   theme: L
   sous_theme: feux
@@ -151,6 +151,7 @@
       - croix
       - fleche
       - fleche
+      me_lane: 0
   nom: 'Signal d''affectation de voie : croix rouge'
   signification: 'Croix de Saint-André rouge fixe placée au-dessus d''une voie (autoroute, tunnel, péage, pont) : interdiction d''emprunter cette voie.'
   conduite: Quitter la voie dès que possible en sécurité ; ne jamais y circuler tant que la croix est allumée.
@@ -184,6 +185,7 @@
       - rabattement_droite
       - fleche
       - fleche
+      me_lane: 0
   nom: 'Signal d''affectation de voie : flèche jaune oblique clignotante'
   signification: 'Flèche jaune clignotante inclinée vers le bas au-dessus d''une voie : cette voie est fermée, se rabattre du côté indiqué.'
   conduite: Changer de voie dans le sens de la flèche dès que possible, sans manœuvre brusque.

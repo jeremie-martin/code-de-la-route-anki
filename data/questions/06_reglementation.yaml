@@ -32,10 +32,7 @@
   question: Permis invalidé pour solde de points nul. Dois-je repasser le code et la conduite ?
   reponse: Le code est à repasser. La conduite aussi, sauf si j’avais le permis depuis au moins 3 ans, si l’interdiction
     dure moins d’un an et si je respecte le délai de réinscription.
-  explication: Pour une invalidation, Service Public demande la réinscription dans les 9 mois à compter de la remise
-    du permis à la préfecture. Contrôles médical et psychotechnique requis. Je peux entreprendre les démarches pendant
-    l’interdiction ; obtenir le nouveau permis exige d’attendre sa fin (6 mois, ou 1 an après une nouvelle invalidation
-    dans les 5 ans).
+  explication: La réinscription doit intervenir dans un délai de 9 mois. Contrôles médical et psychotechnique requis. Je peux entreprendre les démarches pendant l’interdiction ; obtenir le nouveau permis exige d’attendre sa fin (6 mois, ou 1 an après une nouvelle invalidation dans les 5 ans).
   theme: D
   sous_theme: points
   source: "Service Public, invalidation, étapes 3 à 8 : https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 ; R224-20"
@@ -44,8 +41,7 @@
   sous_theme: controle_technique
   question: Le contrôle technique révèle une défaillance critique aujourd'hui. Jusqu'à quand puis-je conduire la voiture
     ?
-  reponse: 'Jusqu''à ce soir seulement : la validité est limitée au jour du contrôle ; ensuite, je fais transporter
-    le véhicule.'
+  reponse: 'Jusqu''à ce soir seulement : la validité est limitée au jour du contrôle ; ensuite, la voiture ne circule plus (réparation sur place ou dépanneuse).'
   explication: Ne pas confondre les deux mois pour la contre-visite avec l’autorisation de circuler.
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2878"
 - id: d-vitesse-40-49

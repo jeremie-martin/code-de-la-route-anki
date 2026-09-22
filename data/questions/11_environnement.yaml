@@ -130,15 +130,6 @@
   theme: E
   sous_theme: ecomobilite
   source: "ADEME, Se déplacer autrement"
-- id: e-covoiturage-voie
-  question: Comment reconnaît-on une voie réservée au covoiturage ?
-  reponse: 'Au losange blanc au sol ou sur panneau lumineux : aux heures indiquées, voie réservée au covoiturage (au moins
-    deux personnes) et à quelques catégories admises.'
-  explication: Signal déployé depuis 2020 (Lyon, Grenoble, périphérique parisien, A48/A13…). Y circuler sans y avoir droit
-    coûte 135 € ; des caméras comptent les occupants.
-  theme: E
-  sous_theme: ecomobilite
-  source: Code de la route, art. L411-8 ; IISR 9e partie (arrêté du 15 mars 2024) ; paris.fr
 - id: e-electrique-avantages
   question: Quels sont l'avantage et la limite principale d'une voiture électrique ?
   reponse: Pas d’émission à l’échappement pendant la conduite ; en revanche, je dois prévoir autonomie et recharge selon le

@@ -49,7 +49,7 @@
   code: ISO 7000-0239
   image: {commons: "ISO 7000 - Ref-No 0239.svg", tint: "#e53935"}
   nom: Alerte de freinage (rouge)
-  signification: Frein de stationnement serré, ou niveau de liquide de frein trop bas / défaillance du circuit de freinage.
+  signification: Alerte du système de freinage (niveau de liquide trop bas, défaut du circuit) ; sur certains modèles, il signale aussi le frein de stationnement serré.
   conduite: "Si le voyant reste allumé frein à main desserré, je m'arrête dès que possible : le freinage peut être dégradé."
   piege: "Ce cercle « (!) » est le voyant de **freinage** ; le « (P) » cerclé est le frein de stationnement seul."
   theme: M
@@ -118,7 +118,7 @@
   image: {commons: "ISO 7000 - Ref-No 0640.svg", tint: "#fb8c00"}
   nom: Défaut moteur / diagnostic (orange)
   signification: Le calculateur a détecté une anomalie du moteur ou du système antipollution (injection, allumage, sonde, catalyseur).
-  conduite: Fixe, je peux rouler en douceur et je fais contrôler rapidement ; clignotant, je m'arrête (risque de destruction du catalyseur).
+  conduite: Fixe, je roule en douceur et fais contrôler rapidement. Clignotant (ratés d'allumage, catalyseur menacé), je réduis aussitôt le régime et l'allure et je suis la notice ; je m'arrête en sécurité si le moteur fonctionne mal.
   theme: M
   sous_theme: voyants
   source: "ISO 2575 ; Codes Rousseau, Les voyants"
@@ -152,7 +152,7 @@
   image: {commons: "ISO 7000 - Ref-No 1434A.svg", tint: "#fb8c00"}
   nom: Pression des pneus (orange)
   signification: "Le système de surveillance de la pression détecte qu'au moins un pneu est sous-gonflé, éventuellement à cause d'une crevaison lente. Ce système est obligatoire sur les véhicules neufs depuis 2014."
-  conduite: Je réduis ma vitesse, je m'arrête pour contrôler les quatre pneus et je regonfle à la pression préconisée (à froid) ; je réinitialise le système si nécessaire.
+  conduite: 'Je réduis ma vitesse, je m''arrête pour contrôler les quatre pneus et je regonfle à la valeur de l''étiquette (pneus chauds : selon la notice) ; je réinitialise le système si nécessaire.'
   theme: M
   sous_theme: voyants
   source: "ISO 2575 ; règlement (CE) 661/2009"
@@ -162,7 +162,7 @@
   image: {commons: "ISO 7000 - Ref-No 0457.svg", tint: "#fb8c00"}
   nom: Préchauffage (diesel)
   signification: Les bougies de préchauffage chauffent la chambre de combustion (moteur diesel froid).
-  conduite: J'attends que le voyant s'éteigne avant d'actionner le démarreur ; s'il clignote en roulant, c'est un défaut d'injection à faire contrôler.
+  conduite: J'attends que le voyant s'éteigne avant d'actionner le démarreur ; s'il clignote en roulant, je fais contrôler le moteur selon la notice.
   theme: M
   sous_theme: voyants
   source: "ISO 2575 ; Codes Rousseau, Les voyants"
@@ -193,7 +193,7 @@
   image: {commons: "Kontrollleuchte DPF.svg", tint: "#fb8c00"}
   nom: Filtre à particules (diesel)
   signification: Le filtre à particules est encrassé et a besoin d'une régénération.
-  conduite: Je roule une vingtaine de minutes à allure soutenue et régulière (route ou voie rapide) pour permettre la régénération ; si le voyant persiste, garage.
+  conduite: Selon la notice, je roule une vingtaine de minutes à allure soutenue et régulière (route ou voie rapide) pour permettre la régénération ; si le voyant persiste, garage.
   theme: M
   sous_theme: voyants
   source: "Notices constructeurs ; Codes Rousseau"
@@ -214,7 +214,7 @@
   code: ISO 7000-0083
   image: {commons: "ISO 7000 - Ref-No 0083.svg", tint: "#43a047"}
   nom: Feux de croisement allumés (vert)
-  signification: "Les feux de croisement (codes) sont allumés. Ils éclairent à environ 30 m sans éblouir."
+  signification: Les feux de croisement (codes) sont allumés. Ils doivent éclairer à au moins 30 m sans éblouir.
   conduite: "Obligatoires la nuit, par visibilité réduite (pluie, brouillard, neige), dans les tunnels, et recommandés de jour."
   piege: "Faisceau incliné vers le bas = croisement ; faisceau horizontal (bleu) = route."
   theme: M
@@ -225,8 +225,8 @@
   code: ISO 7000-0082
   image: {commons: "ISO 7000 - Ref-No 0082.svg", tint: "#1e88e5"}
   nom: Feux de route allumés (bleu)
-  signification: "Les feux de route (pleins phares) sont allumés. Ils éclairent à environ 100 m, mais éblouissent les autres usagers."
-  conduite: Je les utilise la nuit hors agglomération non éclairée ; je repasse en croisement dès que je croise ou suis un véhicule.
+  signification: Les feux de route (pleins phares) sont allumés. Ils doivent éclairer à au moins 100 m, mais éblouissent les autres usagers.
+  conduite: Je les utilise la nuit sur route non éclairée ; je repasse en croisement dès que je croise ou suis un véhicule.
   theme: M
   sous_theme: voyants
   source: "Code de la route, art. R416-5 et s. ; ISO 2575"
@@ -245,8 +245,8 @@
   code: ISO 7000-2611
   image: {commons: "ISO 7000 - Ref-No 2611.svg", tint: "#43a047"}
   nom: Feux de jour (vert)
-  signification: Les feux de circulation diurne sont allumés (automatiques sur les véhicules neufs depuis 2011).
-  conduite: "Ils ne remplacent pas les feux de croisement la nuit ou par mauvaise visibilité : ils n'allument pas les feux arrière."
+  signification: Les feux de circulation diurne sont allumés (automatiques sur les voitures neuves depuis 2011-2012).
+  conduite: Ils ne remplacent pas les feux de croisement la nuit ou par mauvaise visibilité ; selon le véhicule, ils n'allument pas les feux arrière.
   theme: M
   sous_theme: voyants
   source: "Règlement (CE) 661/2009 ; ISO 2575"
@@ -255,7 +255,7 @@
   code: ISO 7000-2047
   image: {commons: "ISO 7000 - Ref-No 2047.svg", tint: "#43a047"}
   nom: Régulateur de vitesse actif
-  signification: Le régulateur maintient automatiquement la vitesse choisie (le limiteur, lui, empêche de la dépasser).
+  signification: Le régulateur maintient automatiquement la vitesse choisie ; le limiteur, lui, plafonne l’accélération à la consigne, sans garantir de ne pas la dépasser en descente.
   conduite: "Je reste maître du véhicule : un appui sur le frein (ou l'embrayage) le désactive ; je ne l'utilise pas en trafic dense, sur route sinueuse ou glissante."
   theme: M
   sous_theme: voyants

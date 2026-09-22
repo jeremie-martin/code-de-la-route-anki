@@ -94,11 +94,9 @@
   source: "Codeclic, L'angle mort ; securite-routiere.gouv.fr, Les angles morts"
 - id: aff-c-pause-sans-signe
   contexte: Long trajet sur autoroute, je me sens en forme.
-  affirmation: Une pause s'impose toutes les deux heures, même sans signe de fatigue.
-  verdict: vrai
-  pourquoi: Les pauses régulières préviennent l’accumulation de fatigue. La recommandation est une pause au
-    moins toutes les deux heures, et plus tôt dès les signes de fatigue. Aucun temps de réaction fixe ne découle
-    automatiquement de deux heures de conduite.
+  affirmation: Tant que je ne ressens aucune fatigue, je peux enchaîner quatre heures d'autoroute sans pause.
+  verdict: faux
+  pourquoi: 'La fatigue s''installe avant d''être ressentie : une pause au moins toutes les deux heures, et plus tôt dès les premiers signes (bâillements, paupières lourdes, trajectoire imprécise).'
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, La fatigue et la conduite ; En Voiture Simone, Fatigue"
@@ -112,12 +110,10 @@
 - id: aff-c-nuit-trafic-fluide
   affirmation: De nuit, le risque d'accident mortel est plus faible que de jour.
   verdict: faux
-  pourquoi: La fluidité ne supprime ni visibilité réduite ni somnolence. Il faut adapter l’allure à la distance
-    visible et interrompre le trajet si l’on n’est plus en état de conduire, sans déduire le risque du seul
-    nombre de véhicules.
+  pourquoi: La nuit concentre environ 4 tués sur 10 (ONISR, bilan 2025) pour une faible part du trafic. Visibilité réduite, somnolence, alcool et vitesse plus élevée sur route dégagée s'y cumulent. J'adapte l'allure à la distance éclairée et j'interromps le trajet si je ne suis plus en état de conduire.
   theme: C
   sous_theme: deficiences
-  source: "securite-routiere.gouv.fr, Conduire la nuit"
+  source: ONISR, bilan 2025 ; securite-routiere.gouv.fr, Conduire la nuit
 - id: aff-c-senior-reaction
   affirmation: Avec l’âge, la réaction et la récupération après éblouissement peuvent devenir plus lentes.
   verdict: vrai
@@ -143,6 +139,8 @@
   theme: C
   sous_theme: deficiences
   source: "Sécurité routière, Exemples de nouvelles questions (Q17) ; securite-routiere.gouv.fr, L'alcool et la conduite"
+  prerequis:
+  - c-verre-standard
 - id: aff-c-biere-whisky
   affirmation: Un demi de bière fait moins monter mon alcoolémie qu'un verre de whisky servi au bar.
   verdict: faux
@@ -163,9 +161,7 @@
 - id: aff-c-alcool-jugement
   affirmation: Après deux verres, je reste capable de juger moi-même si je suis en état de conduire.
   verdict: faux
-  pourquoi: 'L’alcool dégrade aussi le jugement : se sentir lucide ne prouve pas être apte à conduire. Un nombre
-    de verres ni un calcul d’attente ne garantissent d’être sous le seuil ; prévoir un conducteur sobre ou
-    un autre retour.'
+  pourquoi: 'L’alcool dégrade aussi le jugement : se sentir lucide ne prouve pas être apte à conduire. Ni un nombre de verres ni un calcul d’attente ne garantissent d’être sous le seuil ; prévoir un conducteur sobre ou un autre retour.'
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, L'alcool et la conduite"
@@ -257,7 +253,7 @@
 - id: aff-c-oreillette
   affirmation: Je peux téléphoner avec une oreillette Bluetooth, sans tenir le téléphone en main.
   verdict: faux
-  pourquoi: 'Le port à l''oreille de tout dispositif émettant du son (oreillette, écouteurs, casque) est interdit au conducteur depuis 2015 : 135 € et 3 points (R412-6-1). Seuls le kit intégré au véhicule et les appareils auditifs sont admis.'
+  pourquoi: 'Le port à l''oreille de tout dispositif émettant du son (oreillette, écouteurs, casque) est interdit au conducteur depuis 2015 : 135 € et 3 points (R412-6-1). Seuls les appareils auditifs font exception. Un système qui ne se tient pas en main et ne se porte pas à l''oreille reste autorisé, mais il distrait autant.'
   theme: C
   sous_theme: deficiences
   source: Code de la route, art. R412-6-1
@@ -275,16 +271,6 @@
   theme: C
   sous_theme: deficiences
   source: Code de la route, art. R412-6-2
-- id: aff-c-jeune-reflexes
-  affirmation: Grâce à leurs meilleurs réflexes, les jeunes conducteurs ont moins d'accidents mortels que la
-    moyenne.
-  verdict: faux
-  pourquoi: De bons réflexes ne compensent pas l’inexpérience ni la surconfiance. Les novices doivent encore
-    apprendre à reconnaître les dangers ; vitesse, nuit, substances et pression des passagers peuvent augmenter
-    leur risque.
-  theme: C
-  sous_theme: deficiences
-  source: "ONISR, Bilan définitif 2024 ; securite-routiere.gouv.fr, Conseils aux conducteurs novices"
 - id: aff-c-alcool-un-sur-trois
   affirmation: L'alcool est en cause dans près d'un accident mortel sur trois.
   verdict: vrai
@@ -300,7 +286,7 @@
   pourquoi: '16 % des tués pour 8 % de la population : inexpérience, nuit, vitesse, alcool et pression du groupe.
     D''où le permis probatoire, ses vitesses réduites et son seuil d''alcool à 0,2 g/L.'
   theme: C
-  sous_theme: vigilance
+  sous_theme: deficiences
   source: "ONISR, bilan 2025 ; securite-routiere.gouv.fr, Conducteurs novices"
 - id: aff-c-musique-forte
   contexte: Vitres fermées, musique à fort volume.

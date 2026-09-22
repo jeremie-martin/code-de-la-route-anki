@@ -79,6 +79,8 @@
   titre: Déterminer qui doit céder et où s'arrêter
   raison: Règle, exception et application visuelle ; le sens des flèches compte.
   notes:
+  - scn-prioritaire-droite-arrive
+  - scn-cedez-moi-gauche-arrive
   - scn-deux-stops-face
   - l-stop-arret
   - l-tourner-gauche-regle
@@ -107,13 +109,11 @@
   - scn-pd-je-tourne-gauche-gauche-arrive
   - scn-pd-les-deux-tournent-droite
   - scn-pd-face-tourne-droite-moi-gauche
-  - scn-cedez-moi-gauche-arrive
   - scn-route-prioritaire-tourne-gauche
   - scn-deux-stops
   - scn-feu-orange-clignotant
   - scn-stop-trois-vehicules
   - scn-cedez-face-tourne-gauche
-  - scn-prioritaire-droite-arrive
   - scn-fin-prioritaire
   - scn-feu-vert-pieton
   - scn-tram-droite-moi-prioritaire
@@ -133,9 +133,9 @@
   - l-giratoire-placement
   - l-giratoire-sortie-impossible
   - scn-giratoire-cedez
-  - scn-rond-point-priorite-droite
   - scn-giratoire-autre-entree
   consolidation:
+  - scn-rond-point-priorite-droite
   - aff-l-giratoire-sortie-cede
   - aff-l-giratoire-depassement
   - aff-l-demi-tour-giratoire
@@ -197,8 +197,6 @@
   - b7a
   - b7b
   - b9b
-  - b9g
-  - b9h
   - b11
   - b12
   - b13
@@ -222,6 +220,8 @@
   - b40
   - l-visuel-fin-interdictions
   consolidation:
+  - b9h
+  - b9g
   - b21d1
   - b21b
   - b21-1
@@ -274,13 +274,12 @@
   - l-formes-couleurs-panneaux
   - l-formes-priorite-temporaire
   - m4d1
-  - l-visuel-distance
-  - l-visuel-etendue
-  - l-visuel-m12-edpm
-  - l-visuel-m12-voiture
   consolidation:
+  - l-visuel-m12-voiture
+  - l-visuel-m12-edpm
+  - l-visuel-etendue
+  - l-visuel-distance
   - m9z
-  - m9v2
   - m8c
   - m8b
   - m8a
@@ -366,7 +365,6 @@
   - l-precipitations-neige
   consolidation:
   - sr3a
-  - sr3e
   - c51a
   - l-vitesse-minimale-autoroute
   - l-vitesse-engins
@@ -458,10 +456,10 @@
   - aff-l-zone-rencontre-stationnement
   - l-stationnement-cote
   - l-visuel-arret-b6a1
-  - l-visuel-arret-b6d
-  - l-visuel-jaune-continu
-  - l-visuel-jaune-discontinu
   consolidation:
+  - l-visuel-jaune-discontinu
+  - l-visuel-jaune-continu
+  - l-visuel-arret-b6d
   - marq-livraison
   - marq-zone-bleue
   - c1a
@@ -538,19 +536,19 @@
   - c-somnolence-que-faire
   - c-fatigue-remedes-faux
   - c-emotions
-  - aff-c-pause-sans-signe
   - aff-c-nuit-trafic-fluide
   consolidation:
+  - aff-c-pause-sans-signe
   - c-passagers-pression
   - aff-c-jeunes-risque-double
   - c-routine-monotonie
   - c-vitesse-fatigue
-  - aff-c-jeune-reflexes
 - id: c-substances
   theme: C
   titre: Distinguer seuil légal, danger et élimination
   raison: Aucun nombre de verres ni sentiment de lucidité ne garantit l'aptitude.
   notes:
+  - c-verre-standard
   - c-verre-alcoolemie
   - c-alcool-seuils-sang
   - c-conversion-air-sang
@@ -568,7 +566,6 @@
   consolidation:
   - aff-c-senior-visite-70
   - aff-c-alcool-un-sur-trois
-  - c-verre-standard
   - aff-c-repas-copieux
   - aff-c-senior-reaction
   - aff-c-lunettes-points
@@ -722,7 +719,6 @@
   - k10a
   - k10b
   - kr11
-  - r-chantier-approche
   - r-chantier-fleche-lumineuse
   - aff-r-chantier-sans-ouvriers
   consolidation:
@@ -762,7 +758,6 @@
   - marq-passage-pietons
   - u-cycliste-avant-droite
   consolidation:
-  - aff-u-velo-m12
   - marq-passage-cyclistes
   - u-velo-equipement-chiffres
   - u-pieton-hors-agglo-cote
@@ -787,10 +782,12 @@
   titre: Identifier les règles propres aux deux-roues et EDPM
   raison: Changer de point de vue et distinguer règle nationale et locale.
   notes:
-  - u-interfiles-chiffres
+  - aff-u-interfiles-panneau-autos
+  - u-interfiles
   - u-moto-vulnerabilite
   - aff-u-edpm-pousse-main
   consolidation:
+  - u-interfiles-chiffres
   - aff-u-interfiles-files-gauche
   - u-edpm-ou-circuler
   - u-edpm-chiffres
@@ -798,10 +795,8 @@
   - u-edpm-hors-agglo
   - u-moto-equipements-chiffres
   - u-edpm-pieton-ou-vehicule
-  - u-interfiles
   - u-moto-ecart-chaussee
   - aff-u-edpm-trottoir
-  - aff-u-interfiles-panneau-autos
   - aff-u-moto-vitesse-approche
   - aff-u-moto-feux-jour
 - id: u-gabarit
@@ -905,7 +900,6 @@
   - m-voyants-couleurs
   - aff-m-voyant-abs-arret
   - m-visuel-batterie-contact
-  - m-visuel-batterie-roulant
   consolidation:
   - voyant-brouillard-avant
   - voyant-position
@@ -920,7 +914,6 @@
   - voyant-regulateur
   - aff-m-voyant-orange-arret
   - aff-m-autotest-voyants
-  - aff-m-voyant-abs-blocage
   - conf-voyant-frein-stationnement
   - conf-voyant-brouillard-av-ar
   - conf-voyant-croisement-route
@@ -1020,7 +1013,6 @@
   - aff-s-ceinture-majeur-amende
   - aff-s-airbag-remplace-ceinture
   - aff-s-appuie-tete-securite
-  - aff-s-animal-libre
   - aff-s-enfant-135-cm
   - aff-s-enfant-genoux
   - aff-s-isofix
@@ -1097,7 +1089,6 @@
   consolidation:
   - a-non-assistance
   - aff-a-rester-sur-place
-  - aff-a-ne-rien-faire
   - aff-a-constat-signature
 - id: d-permis
   theme: D
@@ -1204,8 +1195,8 @@
   - j5
   - d-couleur-bleu
   - d-couleur-jaune
-  - l-vocab-routes-lettres
   consolidation:
+  - l-vocab-routes-lettres
   - e43
   - e42
   - j14a
@@ -1292,14 +1283,14 @@
   titre: Distinguer infraction, sanction et mesure sur le permis
   raison: Comprendre qui est responsable, quels points sont retirés et la différence entre maxima pénaux, amendes
     et mesures administratives ; les cas complètent le fonctionnement du capital.
-  notes: []
-  consolidation:
+  notes:
+  - d-alcool-delit
   - d-telephone-sanction
+  - d-stupefiants-delit
+  consolidation:
   - d-ceinture-sanction
   - d-feu-rouge-stop-sanction
   - d-vitesse-bareme
-  - d-alcool-delit
-  - d-stupefiants-delit
   - d-homicide-routier
   - d-delit-fuite
   - d-sans-permis-sans-assurance
@@ -1319,7 +1310,6 @@
   notes:
   - aff-e-borne-recharge
   consolidation:
-  - e-covoiturage-voie
   - e-electrique-avantages
   - e-energies-alternatives
   - e-e85

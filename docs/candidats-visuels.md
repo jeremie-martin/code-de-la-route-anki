@@ -30,7 +30,7 @@ dans [maintenance](maintenance.md).
 - Rétroviseurs et pente (`p-retro-*`, `p-pente-roues`) : les anciens dessins donnaient la réponse au recto
   ou représentaient mal la pente ; le texte suffit.
 - Pictogrammes de médicaments au recto (`c-medicaments-niveaux`) : ils portent la consigne demandée.
-- Doublons de reconnaissance (`e-covoiturage-voie`, `kd10`, `ak5`, `k5a`) : le signal a déjà sa carte ; une
+- Doublons de reconnaissance (`kd10`, `ak5`, `k5a`) : le signal a déjà sa carte ; une
   scène supplémentaire doit entraîner une décision distincte.
 - Sanctions, seuils, formalités, écoconduite générale : aucune scène nécessaire.
 

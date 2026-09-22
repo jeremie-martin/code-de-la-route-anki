@@ -29,7 +29,6 @@
   prerequis:
   - c-distance-arret-composantes
 - id: c-vitesse-double-freinage
-  dedup_ok:
   texte: À adhérence et décélération identiques dans un modèle simplifié, doubler la vitesse multiplie la distance de freinage
     par {{c1::4}}.
   explication: La distance de réaction, elle, double si le temps de réaction reste identique. La distance d’arrêt totale ne
@@ -40,8 +39,7 @@
   prerequis:
   - c-distance-arret-composantes
 - id: c-intervalle-2s
-  explication: 'La règle est temporelle : deux secondes au minimum, davantage selon les conditions. Le calcul physique donne
-    environ 28 m à 50 km/h et 72 m à 130 km/h. Les 30 et 78 m sont des approximations pédagogiques, pas des égalités.'
+  explication: 'La règle est temporelle : deux secondes au minimum, davantage selon les conditions. Le calcul physique donne environ 28 m à 50 km/h et 72 m à 130 km/h ; le raccourci « dizaines × 3 » par seconde (30 et 78 m) n’est qu’une approximation.'
   theme: C
   sous_theme: distances
   source: "Code de la route, art. R412-12 ; Codes Rousseau, Calcul des distances"
@@ -94,13 +92,13 @@
   source: "securite-routiere.gouv.fr, L'alcool et la conduite ; Code en Poche"
 - id: c-verre-alcoolemie
   texte: 'Repère moyen : chaque verre standard fait monter l''alcoolémie d''environ {{c1::0,20 à 0,25 g/L}}.'
-  explication: Davantage à jeun, pour une personne légère ou une femme ; deux verres peuvent donc suffire à dépasser
-    0,5 g/L, et un seul le seuil probatoire de 0,2 g/L.
+  explication: Davantage à jeun, pour une personne légère ou une femme ; deux verres peuvent donc suffire à atteindre 0,5 g/L, et un seul le seuil probatoire de 0,2 g/L.
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, L’alcool et la conduite"
   prerequis:
   - c-alcool-seuils-sang
+  - c-verre-standard
 - id: c-alcool-elimination
   explication: Le taux varie selon la personne et les conditions ; pas de règle fixe « heures par verre ». Café, douche ou
     sport n’accélèrent pas l’élimination. Une alcoolémie peut rester excessive le lendemain.

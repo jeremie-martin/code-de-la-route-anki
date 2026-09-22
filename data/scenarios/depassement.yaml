@@ -39,7 +39,7 @@
     de le dépasser ?
   reponse: 'Oui : le marquage l’autorise, sous réserve d’une visibilité et d’un espace suffisants pour dépasser
     puis me rabattre sans gêner.'
-  explication: 'Conditions de l''article R414-4 : visibilité suffisante, personne ne me dépasse, écart de vitesse
+  explication: 'Conditions de R414-4 : visibilité suffisante, personne ne me dépasse, écart de vitesse
     suffisant, retour sans gêner. Un camion se dépasse sur une longue distance : ne pas s''engager sans marge.'
   theme: L
   sous_theme: depassement
@@ -57,11 +57,10 @@
     - lane: 1
       y: 45
       colour: gris
-  question: En observant le marquage de mon côté, puis-je commencer un dépassement si les autres conditions
-    sont réunies ?
+  question: Les autres conditions du dépassement sont réunies. Le marquage me permet-il de commencer à dépasser ?
   reponse: 'Non : la ligne de mon côté est continue. Le sens opposé dispose d’une ligne discontinue, mais ses
     conducteurs doivent aussi vérifier toutes les conditions de sécurité.'
-  explication: 'Article R412-20 : on ne franchit une ligne mixte que si la ligne discontinue est de son côté
+  explication: 'R412-20 : on ne franchit une ligne mixte que si la ligne discontinue est de son côté
     au début de la manœuvre, et la manœuvre doit être terminée avant la fin de la discontinue.'
   theme: L
   sous_theme: depassement
@@ -79,8 +78,7 @@
     - lane: 1
       y: 45
       colour: gris
-  question: En observant le marquage de mon côté, puis-je commencer un dépassement si les autres conditions sont
-    réunies ?
+  question: Les autres conditions du dépassement sont réunies. Le marquage me permet-il de commencer à dépasser ?
   reponse: Oui, si les conditions habituelles sont réunies (visibilité, personne en face, personne ne me dépasse)
     et si je peux me rabattre avant la fin de la ligne discontinue.
   explication: "La ligne continue de l'autre côté interdit aux véhicules d'en face de dépasser, mais ne m'interdit pas de le faire. Je reste vigilant : elle annonce souvent une zone sans visibilité pour eux, pas pour moi."
@@ -106,7 +104,7 @@
       y: 70
   question: Le camion roule lentement. (1) Le marquage autorise-t-il à le dépasser ? (2) Puis-je le dépasser maintenant ?
   reponse: '(1) Oui : la ligne est discontinue. (2) Non : le sommet de côte masque la route en face ; sans visibilité suffisante, le dépassement est interdit.'
-  explication: 'Article R414-11. Le marquage n''est pas une garantie de visibilité : c''est au conducteur de juger.
+  explication: 'R414-11. Le marquage n''est pas une garantie de visibilité : c''est au conducteur de juger.
     Un véhicule peut surgir derrière le sommet à 90 km/h.'
   theme: L
   sous_theme: depassement
@@ -126,8 +124,7 @@
       colour: vert
       kind: truck
       label: '25'
-  question: Ligne de dissuasion (traits longs, espaces courts). Un engin agricole roule à 25 km/h devant moi,
-    bonne visibilité, personne en face. Puis-je le dépasser ?
+  question: Un engin agricole roule à 25 km/h devant moi ; bonne visibilité, personne en face. Puis-je le dépasser ?
   reponse: 'Oui : je peux dépasser cet engin très lent si je peux terminer la manœuvre sans danger.'
   explication: La ligne de dissuasion est discontinue. Elle déconseille le dépassement des véhicules à allure
     normale, souvent trop long pour la visibilité disponible. Elle peut annoncer une ligne continue.
@@ -152,7 +149,7 @@
     permettrait de laisser 1,50 m au cycliste puis de revenir sans gêner. Puis-je dépasser ?
   reponse: 'Oui : l’exception autorise le chevauchement pour dépasser un cycle, si toutes les conditions de
     sécurité sont réunies. Elle n’autorise pas le franchissement complet.'
-  explication: 'Exception de l''article R412-19 (2015) : chevauchement autorisé pour dépasser un cycle, un
+  explication: 'Exception de R412-19 (2015) : chevauchement autorisé pour dépasser un cycle, un
     EDPM ou un cyclomobile léger, dans les conditions de sécurité de R414-4. Avec un véhicule en face ou sans
     visibilité, j''attends derrière.'
   theme: L
@@ -169,9 +166,8 @@
     extras:
       - {kind: intersection_gauche, y: 68}
   question: "Le véhicule devant moi ralentit, clignotant gauche, pour entrer dans la rue à gauche. Puis-je le dépasser par la gauche ?"
-  reponse: 'Non : jamais par la gauche un véhicule qui a annoncé qu''il tourne à gauche ; par la droite si la place
-    le permet, sinon j''attends.'
-  explication: "Un véhicule qui tourne à gauche se dépasse par la droite (R414-6). À une intersection, dépasser n'est permis que si je suis prioritaire, si des feux ou un agent règlent le carrefour, ou pour dépasser un deux-roues (R414-11)."
+  reponse: 'Non. Par la gauche, jamais : il a annoncé qu’il tourne à gauche. Par la droite non plus ici : à cette intersection sans signalisation qui me donne la priorité, et sans place, j’attends derrière lui.'
+  explication: Un véhicule qui a signalé qu’il tourne à gauche se dépasse par la droite (R414-6). Mais à une intersection, dépasser autre chose qu’un deux-roues n’est permis que si les usagers des autres routes doivent me céder le passage (STOP, cédez-le-passage, route prioritaire), ou si des feux ou un agent règlent le carrefour (R414-11).
   theme: L
   sous_theme: depassement
   source: "Code de la route, art. R414-6 et R414-11"
@@ -199,12 +195,9 @@
       - {lane: 1, y: 45, colour: gris, kind: truck, occludes: true}
     extras:
       - {kind: passage_pieton, y: 62}
-  question: 'Le camion devant moi est arrêté avant le passage piéton. Je ne vois aucun piéton depuis ma voiture
-    bleue. Puis-je le dépasser ?'
+  question: Le camion devant moi est arrêté avant le passage piéton. Je ne vois aucun piéton depuis ma place. Puis-je le dépasser ?
   reponse: Non. Le camion me masque une partie du passage ; je reste derrière, prêt à céder le passage et à m’arrêter.
-  explication: 'Pour dépasser à l’approche d’un passage piéton, je dois pouvoir m’assurer qu’aucun piéton n’y est engagé.
-    Ne pas en voir ne suffit pas quand la vue est masquée. Les hachures montrent ce que le camion cache dans ce schéma,
-    sans affirmer qu’un piéton s’y trouve ni garantir la visibilité partout ailleurs.'
+  explication: Pour dépasser à l’approche d’un passage piéton, je dois pouvoir m’assurer qu’aucun piéton n’y est engagé. Ne pas en voir ne suffit pas quand la vue est masquée.
   theme: L
   sous_theme: depassement
   source: "Code de la route, R414-5, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842217"
@@ -223,7 +216,7 @@
   question: "Route à trois voies à double sens. Je veux dépasser le camion : quelle voie puis-je utiliser ?"
   reponse: La voie centrale, si elle est libre dans les deux sens sur toute la longueur du dépassement ; jamais la
     voie de gauche, réservée au sens inverse.
-  explication: "Article R414-8 : sur une chaussée à double sens à plus de deux voies, le véhicule qui dépasse n'emprunte jamais la voie la plus à gauche. La voie centrale sert au dépassement dans les deux sens : prudence, on y reste le moins longtemps possible."
+  explication: "R414-8 : sur une chaussée à double sens à plus de deux voies, le véhicule qui dépasse n'emprunte jamais la voie la plus à gauche. La voie centrale sert au dépassement dans les deux sens : prudence, on y reste le moins longtemps possible."
   theme: L
   sous_theme: positionnement
   source: "Code de la route, art. R414-8"
@@ -260,11 +253,10 @@
       - {lane: 2, y: 72, colour: vert}
     extras:
       - {kind: bau}
-    caption: "Autoroute, bouchon : ma sortie est à 500 m"
   question: "Bouchon sur autoroute ; ma sortie est à 500 m sur la droite. Puis-je emprunter la bande d'arrêt d'urgence pour la rejoindre ?"
   reponse: 'Non : la bande d''arrêt d''urgence est réservée aux urgences et aux secours (135 €, 3 points). Je reste
     dans ma file, feux de détresse si je suis le dernier.'
-  explication: "Article R412-8. Sur certains tronçons, la bande d'arrêt d'urgence est ouverte à la circulation aux heures de pointe comme voie auxiliaire, mais seulement sur signalisation lumineuse explicite (flèche verte au-dessus de la voie)."
+  explication: "R412-8. Sur certains tronçons, la bande d'arrêt d'urgence est ouverte à la circulation aux heures de pointe comme voie auxiliaire, mais seulement sur signalisation lumineuse explicite (flèche verte au-dessus de la voie)."
   theme: L
   sous_theme: positionnement
   source: "Code de la route, art. R412-8 et R416-18"
@@ -279,7 +271,7 @@
     extras:
       - {kind: retrecissement, y: 48}
       - {kind: sign, file: "France road sign B15.svg", y: 28}
-  question: "Un rétrécissement à une voie est annoncé par ce panneau (flèche rouge de mon côté) ; une voiture arrive en face. Qui passe ?"
+  question: Un rétrécissement ne laisse passer qu’un véhicule à la fois ; une voiture arrive en face. Qui passe ?
   reponse: 'Elle : mon panneau rond m’impose de céder le passage au sens opposé. Je m’arrête avant le rétrécissement.'
   explication: 'La flèche rouge vers le haut représente mon sens : je cède. De l’autre côté, le panneau carré bleu donne la priorité à la voiture rouge. Je reste avant le passage étroit pour lui laisser la place.'
   theme: L
@@ -296,7 +288,7 @@
     extras:
       - {kind: retrecissement, y: 48}
       - {kind: sign, file: "France road sign C18.svg", y: 28}
-  question: "Même rétrécissement, mais le panneau de mon côté est carré bleu (flèche blanche de mon côté). Une voiture arrive en face. Qui passe ?"
+  question: Un rétrécissement ne laisse passer qu’un véhicule à la fois ; une voiture arrive en face. Qui passe ?
   reponse: 'Moi : mon panneau carré bleu me donne la priorité sur le sens opposé. La voiture rouge doit attendre avant le passage étroit.'
   explication: "Priorité ne veut pas dire passage forcé : si la voiture rouge s'est déjà engagée, je la laisse sortir du rétrécissement. Piège : la couleur (rouge = je cède, bleu = je passe) et la flèche qui correspond à mon sens."
   theme: L

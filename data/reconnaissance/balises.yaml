@@ -12,6 +12,7 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  piege: La couleur de la bande distingue virage (blanche), intersection (rouge) et simple guidage (noire).
   comparaisons:
   - ref: j3
     legende: 'Bande rouge : intersection.'
@@ -72,6 +73,7 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  piege: 'Bande noire : simple guidage, ni virage ni intersection.'
   comparaisons:
   - ref: j1
     legende: 'Bande blanche : virage.'

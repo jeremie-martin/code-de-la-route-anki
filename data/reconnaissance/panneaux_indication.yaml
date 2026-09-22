@@ -51,7 +51,7 @@
   image:
     commons: France road sign C12.svg
   nom: Circulation à sens unique
-  signification: 'La chaussée est à sens unique : tous les véhicules circulent dans le sens de la flèche ; le demi-tour y est impossible.'
+  signification: 'La chaussée est à sens unique : tous les véhicules circulent dans le sens de la flèche ; le demi-tour y est interdit, puisqu''il ferait circuler à contresens.'
   conduite: Rester à droite, sauf pour tourner à gauche ou dépasser ; attention aux cyclistes à contresens si double-sens cyclable.
   complement: À l’autre extrémité, un sens interdit empêche les véhicules d’entrer face à moi.
   piege: La flèche sur fond bleu carré indique un sens unique ; dans un rond bleu, elle impose d’aller tout droit.
@@ -90,7 +90,7 @@
   image:
     commons: France road sign C13c.svg
   nom: Impasse comportant une issue pour les piétons
-  signification: Impasse pour les véhicules, mais avec une issue pour les piétons (créé en 2011).
+  signification: Impasse pour les véhicules, mais avec une issue pour les piétons.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -200,7 +200,7 @@
   image:
     commons: France road sign C25b.svg
   nom: Rappel des limitations de vitesse sur autoroute
-  signification: 'Rappel des limites de vitesse sur autoroute : 130 km/h par temps sec, 110 km/h par temps de pluie (ou 110/100 sur certaines sections).'
+  signification: 'Rappel des limites de vitesse sur autoroute : 130 km/h par temps sec et 110 km/h par temps de pluie ; sur les autoroutes limitées à 110, 100 par temps de pluie.'
   conduite: 'Réduire à 110 sur autoroute dès qu’il pleut ou qu’il y a d’autres précipitations (repère pratique : essuie-glaces en marche).'
   complement: 'Jeune conducteur (permis probatoire) : 110 sur autoroute, 100 sur route à chaussées séparées, 80 sur route.'
   theme: L
@@ -236,11 +236,12 @@
     commons: France road sign C27.svg
   nom: Surélévation de chaussée
   signification: Indique la position d'un ralentisseur (dos-d'âne, plateau surélevé, coussin) ; souvent limité à 30 km/h.
-  conduite: Franchir à vitesse très réduite, sans dépasser ; dos-d’âne et plateaux ne sont implantés que dans des zones limitées à 30 km/h.
+  conduite: Franchir à vitesse très réduite, sans dépasser ; ces ralentisseurs se trouvent en agglomération, souvent en zone 30.
   complement: Au sol, trois triangles blancs sur la rampe.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  piege: Le carré bleu se trouve au ralentisseur ; le triangle l'annonce en amont.
   comparaisons:
   - ref: a2b
     legende: 'Triangle : le ralentisseur est plus loin.'

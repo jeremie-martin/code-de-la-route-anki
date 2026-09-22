@@ -191,10 +191,8 @@
   sous_theme: quitter
   source: "Nissan Juke 2024, stationnement, https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml ; Sécurité civile, fortes chaleurs, https://www.securite-civile.interieur.gouv.fr/actualites/actualites/fortes-chaleurs-canicule-quels-sont-bons-reflexes-a-adopter-pour-preserver-sa-sante"
 - id: p-quitter-stationnement-surveiller
-  question: Garé à droite dans une rue à double sens, je quitte ma place pour rejoindre la voie à ma gauche. Quel angle mort
-    contrôler juste avant le déport ?
-  reponse: 'L’angle mort gauche, en plus des rétroviseurs : c’est le côté où je rejoins la circulation ; je signale et je
-    cède aux usagers.'
+  question: Garé le long du trottoir de droite, je vais quitter ma place. Juste avant de m'engager, que dois-je contrôler, et qui passe en premier ?
+  reponse: Rétroviseurs puis angle mort gauche, côté où je rejoins la circulation ; clignotant ; je laisse passer ceux qui circulent déjà.
   explication: Le côté du contrôle dépend de la manœuvre et de la configuration ; ne pas mémoriser « toujours à droite » d’après
     une seule photo.
   theme: P

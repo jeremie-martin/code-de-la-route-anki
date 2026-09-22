@@ -45,11 +45,9 @@
   source: Code de la route, art. R415-7
 - id: aff-l-tourner-gauche-centre
   contexte: Je tourne à gauche à un carrefour sans feu ; des véhicules arrivent en face.
-  affirmation: Je peux avancer au milieu du carrefour et attendre, clignotant allumé, roues droites, si je ne bloque
-    pas les voies transversales.
-  verdict: vrai
-  pourquoi: Je cède au trafic opposé en gardant les roues droites (un choc arrière ne me projette pas en face). Je
-    ne m'engage pas si je risque de bloquer le carrefour.
+  affirmation: J’attends au milieu du carrefour, roues déjà braquées vers la gauche, pour partir plus vite.
+  verdict: faux
+  pourquoi: 'Roues droites : un choc arrière me projetterait sinon dans le trafic d’en face. Je ne m’avance au centre que si je ne bloque pas les voies transversales.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-4 ; REMC
@@ -114,11 +112,13 @@
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-19
+  prerequis:
+  - marq-ligne-continue
 - id: aff-l-files-droite
-  contexte: Circulation dense sur une avenue à trois voies dans le même sens ; ma file avance plus vite que celle de gauche.
+  contexte: Avenue à sens unique à trois voies ; la circulation, très dense, s’est établie en files ininterrompues sur toutes les voies. Ma file avance plus vite que celle de gauche.
   affirmation: Je suis en train de dépasser par la droite, ce qui est interdit.
   verdict: faux
-  pourquoi: 'R414-15 : quand la circulation est établie en files, avancer plus vite que la file voisine n''est pas un dépassement. Je reste dans ma file et je ne me déporte pas pour gagner une place.'
+  pourquoi: 'R414-15 : quand la circulation est établie en files ininterrompues sur toutes les voies, avancer plus vite que la file voisine n''est pas un dépassement. Je reste dans ma file et je ne me déporte pas pour gagner une place.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-15 et R412-24
@@ -144,10 +144,10 @@
   contexte: Route à quatre voies à double sens, sans terre-plein central (deux voies par sens).
   affirmation: Je dépasse par la voie de gauche de mon sens, pas par celles d'en face.
   verdict: vrai
-  pourquoi: 'Chaque sens dispose de deux voies : celle de gauche sert au dépassement, puis je me replace à droite. Franchir l''axe reviendrait à circuler à contresens (135 €, 3 points).'
+  pourquoi: 'Chaque sens dispose de deux voies : celle de gauche sert au dépassement, puis je me replace à droite. Sur une chaussée à quatre voies à double sens, la ligne axiale est continue : la franchir est interdit (R412-19 : 135 €, 3 points).'
   theme: L
   sous_theme: depassement
-  source: Code de la route, art. R412-9 et R414-7
+  source: Code de la route, art. R412-19 et R414-8 ; IISR 7e partie, art. 114-2
 - id: aff-l-b3-deux-roues
   contexte: Panneau rond « interdiction de dépasser » sur une route à double sens.
   affirmation: Je peux encore dépasser une moto solo ou un cycliste si les conditions le permettent.
@@ -158,9 +158,9 @@
   source: IISR 4e partie (B3) ; Code de la route, art. R414-14
 - id: aff-l-klaxon-nuit
   contexte: Hors agglomération, de nuit, je m'apprête à dépasser un véhicule lent.
-  affirmation: J'avertis de préférence par un appel de phares plutôt qu'au klaxon.
+  affirmation: S’il faut avertir de mon dépassement, je le fais de préférence par un appel de phares plutôt qu’au klaxon.
   verdict: vrai
-  pourquoi: 'R416-2 : la nuit, l''avertissement se donne par l''allumage intermittent des feux, le klaxon restant réservé à l''absolue nécessité. Le clignotant gauche demeure l''annonce principale du dépassement.'
+  pourquoi: 'R416-2 : la nuit, l''avertissement se donne par l''allumage intermittent des feux, le klaxon restant réservé à l''absolue nécessité. Le clignotant gauche reste l''annonce du changement de direction.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R416-1 et R416-2
@@ -184,8 +184,8 @@
   source: Code de la route, art. R412-23
 - id: aff-l-ilot-droite
   contexte: Un îlot directionnel (refuge peint ou surélevé) sépare la chaussée devant moi.
-  affirmation: Je le contourne par la droite, sauf indication contraire de la signalisation.
-  verdict: vrai
+  affirmation: Si la voie de gauche est libre, je peux le contourner par la gauche.
+  verdict: faux
   pourquoi: 'R412-27 : tout obstacle, îlot, terre-plein ou borne se contourne par la droite, sauf si une flèche ou un panneau impose l''inverse. Les hachures qui le prolongent sont interdites à la circulation.'
   theme: L
   sous_theme: positionnement
@@ -242,7 +242,7 @@
   contexte: Sur autoroute, mon téléphone sonne ; la bande d'arrêt d'urgence est dégagée.
   affirmation: Je peux m'y arrêter le temps de l'appel, feux de détresse allumés.
   verdict: faux
-  pourquoi: 'La BAU n''est ouverte qu''à la nécessité absolue (panne, malaise, secours) : un arrêt de confort y est un stationnement gênant, et c''est l''un des endroits les plus meurtriers de l''autoroute.'
+  pourquoi: 'La BAU n''est ouverte qu''à la nécessité absolue (panne, malaise, secours) : s''y arrêter pour téléphoner est un arrêt gênant (35 €), et c''est l''un des endroits les plus meurtriers de l''autoroute.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R421-7 et R417-10
@@ -283,7 +283,7 @@
   contexte: Dans une zone de rencontre, la chaussée est large et dégagée.
   affirmation: Je peux y stationner ailleurs que sur les emplacements marqués si je ne gêne personne.
   verdict: faux
-  pourquoi: 'R417-10 : dans une zone de rencontre comme dans une aire piétonne, le stationnement hors des emplacements aménagés est gênant (35 €). La chaussée y est partagée avec les piétons, prioritaires partout.'
+  pourquoi: 'R417-10 : en zone de rencontre, le stationnement en dehors des emplacements aménagés est gênant (35 €). Les piétons peuvent y circuler sur la chaussée et ont priorité sur les véhicules.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-10 et R110-2
@@ -311,7 +311,7 @@
   contexte: Sur une route de campagne, un panneau à lettres italiques blanches sur fond noir annonce « Les Granges ».
   affirmation: À partir de ce panneau, je suis en agglomération et limité à 50 km/h.
   verdict: faux
-  pourquoi: "C'est un panneau de lieu-dit (E31), sans effet réglementaire. Le panneau d'entrée d'agglomération EB10 se reconnaît au nom sur fond blanc bordé de rouge. C'est lui qui déclenche la limite par défaut de 50 km/h et les autres règles d'agglomération."
+  pourquoi: C'est un panneau de lieu-dit, sans effet réglementaire. Le panneau d'entrée d'agglomération se reconnaît au nom sur fond blanc bordé de rouge ; c'est lui qui déclenche la limite par défaut de 50 km/h et les autres règles d'agglomération.
   theme: L
   sous_theme: vitesse
   source: IISR 5e partie art. 99-3 ; Code de la route, art. R110-2

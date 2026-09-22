@@ -39,7 +39,7 @@
   nom: Ligne de dissuasion T3 (3 m de trait, 1,33 m de vide)
   signification: 'Ligne discontinue à intervalles courts : elle dissuade de dépasser. Je ne dépasse qu’un véhicule lent, avec assez de visibilité et de place.'
   conduite: Ne pas dépasser un véhicule à allure normale ; dépasser un tracteur, un cyclomoteur ou un engin lent reste possible.
-  complement: Fréquente sur routes sinueuses et à l’approche des sorties d’autoroute.
+  complement: Fréquente sur routes sinueuses ou en rampe, où les dépassements sont délicats.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -105,7 +105,7 @@
   nom: 'Ligne de cédez-le-passage : ligne transversale discontinue'
   signification: 'Ligne blanche discontinue en travers de la voie : je cède le passage avant de la franchir, sans arrêt obligatoire si la voie est libre.'
   conduite: Ralentir, contrôler, s'arrêter à la ligne si un véhicule arrive, sinon passer sans s'arrêter.
-  complement: Se trouve aussi aux entrées de giratoire et en fin de voie d’insertion.
+  complement: Se trouve notamment aux entrées de giratoire.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -202,7 +202,7 @@
   signification: Chevrons blancs peints dans l'axe des voies (autoroutes, tunnels) pour matérialiser la distance de sécurité.
   conduite: Garder deux chevrons visibles entre son véhicule et celui de devant.
   complement: Sections d'autoroute et tunnels où les accidents en chaîne sont fréquents.
-  piege: Ces marques sont peintes sur la chaussée. Les chevrons sur fond bleu au bord de la route guident dans un virage ; ceux sur fond vert signalent une séparation de voies.
+  piege: Ces marques sont peintes sur la chaussée. Les chevrons sur fond bleu au bord de la route guident dans un virage ; les flèches blanches divergentes sur fond vert signalent une séparation de courants de circulation.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -295,7 +295,7 @@
     params:
       style: zigzag
   nom: 'Ligne jaune en zigzag : arrêt de bus'
-  signification: 'Ligne jaune en zigzag peinte le long du trottoir matérialisant un arrêt d''autobus : interdiction de s''y arrêter et d''y stationner pour les autres véhicules.'
+  signification: 'Ligne jaune en zigzag le long du trottoir, qui matérialise un arrêt d''autobus : les autres véhicules ne s''y arrêtent ni n''y stationnent pendant la période où circulent les bus.'
   conduite: Ne pas s'y arrêter, même brièvement ; ne pas gêner le bus qui repart.
   complement: Aux arrêts de bus. S’y arrêter ou stationner est un stationnement gênant, avec fourrière possible.
   theme: L
@@ -358,7 +358,7 @@
       kind: dos_d_ane
   nom: Marquage d'un ralentisseur (triangles blancs)
   signification: Trois triangles blancs (« dents de requin »), pointes dans le sens de la circulation, peints sur la rampe d'un ralentisseur.
-  conduite: 'Ralentir fortement avant de franchir : dos-d’âne et plateaux ne sont implantés que dans des zones limitées à 30 km/h.'
+  conduite: 'Ralentir fortement avant de franchir : ces ralentisseurs se trouvent en agglomération, souvent en zone 30.'
   complement: Ne pas confondre avec le grand triangle isolé, pointe vers le conducteur, qui peut précéder une ligne de cédez-le-passage.
   theme: L
   sous_theme: marquages
@@ -383,7 +383,7 @@
     params:
       kind: sas_velo
   nom: Sas vélo (sas cyclable)
-  signification: Espace réservé aux cyclistes entre deux lignes d'effet des feux (3 à 5 m), à un carrefour à feux.
+  signification: Espace réservé aux cycles (et aux trottinettes électriques) entre deux lignes d'effet des feux (3 à 5 m), à un carrefour à feux.
   conduite: 'En voiture ou à moto : s''arrêter à la première ligne, jamais dans le sas.'
   complement: Il permet aux cyclistes de se placer devant, bien visibles, et de démarrer les premiers.
   theme: L

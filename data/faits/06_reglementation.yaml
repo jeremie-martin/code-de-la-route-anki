@@ -54,9 +54,7 @@
   sous_theme: points
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F1704"
 - id: d-recuperation-points
-  explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès ≥ 20 km/h) sont de 4e
-    classe → c''est souvent 3 ans. Pendant le probatoire, le capital se reconstitue surtout par la majoration annuelle
-    (sans infraction) ou par un stage.'
+  explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès ≥ 20 km/h, et tout excès là où la limite est de 50 km/h ou moins) sont de 4e classe → c''est souvent 3 ans. Pendant le probatoire, le capital se reconstitue surtout par la majoration annuelle (sans infraction) ou par un stage.'
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-6 ; service-public.fr F1685
@@ -68,8 +66,7 @@
   - 'Hors règles particulières du probatoire, reconstitution des 12 points si une infraction est de classe 4 ou 5 ou un délit
     : {{c3::3 ans}} sans nouvelle infraction donnant lieu à retrait.'
 - id: d-stage-points
-  explication: Les points sont crédités le lendemain du dernier jour de stage. Avant 2011, la fréquence était d’une fois tous
-    les deux ans.
+  explication: Les points sont crédités le lendemain du dernier jour de stage.
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-6 et R223-8 ; service-public.fr F14208
@@ -116,24 +113,16 @@
   - Pour accompagner un élève, il faut l’accord de {{c2::l’assureur}} du véhicule pour cet apprentissage.
 - id: d-telephone-sanction
   texte: 'Téléphone tenu en main, oreillette, écouteurs ou casque audio au volant : 135 € et {{c1::3 points}}.'
-  explication: 'Si l’infraction est commise en même temps qu’une autre (vitesse, feu, priorité, ligne continue…), le permis
-    peut être retenu immédiatement puis suspendu. L’interdiction vaut dès que le véhicule est en circulation, même arrêté
-    au feu. Le kit mains libres intégré est toléré ; un écran vidéo dans le champ de vision : 5e classe et 3 points.'
+  explication: 'Si l’infraction est commise en même temps qu’une autre (vitesse, feu, priorité, ligne continue…), le permis peut être retenu immédiatement puis suspendu. L’interdiction vaut dès que le véhicule est en circulation, même arrêté au feu. Un système intégré, non tenu en main ni porté à l’oreille, reste autorisé mais distrait ; un écran vidéo dans le champ de vision : 5e classe et 3 points.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R412-6-1, R412-6-2, L224-1 et L224-2
 - id: d-ceinture-sanction
-  explication: 'Enfant non attaché : l''amende revient au conducteur (135 €) mais l''article R412-2 ne prévoit aucun
-    retrait de points, contrairement au conducteur qui ne s''attache pas lui-même (3 points). Un passager adulte non
-    attaché paie lui-même, sans point.'
+  explication: 'Passager majeur non attaché : 135 € pour lui, sans point. Passager mineur ou enfant mal retenu : 135 € pour le conducteur, sans point (R412-2).'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R412-1 et R412-2
-  rappels:
-  - 'Conducteur non attaché : 135 € et {{c1::3 points}}.'
-  - 'Passager majeur non attaché : l’amende de 135 € est payée par {{c2::le passager lui-même}}, sans retrait de points.'
-  - 'Passager de moins de 18 ans non attaché (ou enfant sans dispositif adapté) : l’amende de 135 € est payée par {{c3::le
-    conducteur}}, sans retrait de points.'
+  texte: 'Conducteur non attaché : 135 € et {{c1::3 points}}.'
 - id: d-feu-rouge-stop-sanction
   explication: La priorité piéton est passée de 4 à 6 points le 19 septembre 2018. Suspension possible jusqu'à 3 ans pour
     le feu rouge, le STOP et la priorité.
@@ -158,7 +147,7 @@
   - Un excès de vitesse retenu de 20 à 29 km/h entraîne le retrait de {{c3::2 points}}.
   - Un excès de vitesse retenu de 30 à 39 km/h entraîne le retrait de {{c4::3 points}}.
 - id: d-grand-exces
-  explication: "Depuis le 29 décembre 2025 (loi du 9 juillet 2025), c'est un délit dès la première fois, jugé au tribunal correctionnel. Auparavant, c'était une contravention de 5e classe avec retrait de 6 points, et un délit seulement en récidive. Une question non mise à jour peut encore attendre l'ancienne réponse."
+  explication: 'Depuis le 29 décembre 2025 (loi du 9 juillet 2025), c''est un délit dès la première fois : 6 points, peines judiciaires encourues ou amende forfaitaire délictuelle de 300 €, suspension, annulation ou confiscation possibles. Auparavant, c''était une contravention de 5e classe, délit seulement en récidive.'
   theme: D
   sous_theme: sanctions
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F19460"
@@ -168,13 +157,14 @@
 - id: d-alcool-contravention
   texte: 'Alcoolémie au moins égale à 0,5 g/L et inférieure à 0,8 g/L (seuil bas 0,2 en probatoire) : amende forfaitaire de
     135 € et retrait de {{c1::6 points}}.'
-  explication: L’égalité au seuil bas suffit à constituer l’infraction. À 0,8 g/L ou plus, il s’agit d’un délit. Suspension
-    possible ; ne pas présenter la rétention immédiate comme automatique pour toute alcoolémie contraventionnelle.
+  explication: L’égalité au seuil bas suffit à constituer l’infraction. À 0,8 g/L ou plus, c’est un délit. En dessous, pas de rétention immédiate du permis ; le juge peut le suspendre (jusqu’à 3 ans) et le véhicule peut être immobilisé.
   theme: D
   sous_theme: sanctions
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2881"
+  prerequis:
+  - c-alcool-seuils-sang
 - id: d-alcool-delit
-  explication: Le seuil est inclus. Des peines de prison et d’amende sont encourues ; après rétention, le préfet doit suspendre le permis. Le refus de vérification est aussi un délit. Depuis 2026, conduire en état d’ivresse manifeste, ou après avoir manifestement consommé de façon détournée une substance psychoactive listée (protoxyde d’azote par exemple), est un délit qui retire 6 points (L237-1).
+  explication: 'Le seuil est inclus. Des peines de prison et d’amende sont encourues ; après rétention, le préfet doit suspendre le permis. Le refus de vérification est aussi un délit. Depuis 2026, L237-1 regroupe l’ivresse manifeste et la consommation manifeste, détournée ou excessive, d’une substance psychoactive listée (protoxyde d’azote par exemple) : délit, 6 points.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L234-1, L234-2, L234-8, L237-1 (lois n° 2025-622 et n° 2026-798)
@@ -193,9 +183,7 @@
 - id: d-homicide-routier
   texte: Causer involontairement la mort d’autrui au volant avec une circonstance aggravante prévue par la loi peut constituer
     un {{c1::homicide routier}}.
-  explication: Alcool, stupéfiants ou grand excès de vitesse peuvent notamment aggraver les faits. C’est une qualification
-    pénale, pas la preuve d’une intention de tuer. Les peines dépendent des circonstances ; ne pas apprendre une liste abrégée
-    comme exhaustive.
+  explication: Alcool, stupéfiants ou grand excès de vitesse figurent parmi les circonstances aggravantes. C’est une qualification pénale, pas la preuve d’une intention de tuer ; les peines dépendent des circonstances.
   theme: D
   sous_theme: sanctions
   source: "Code pénal, art. 221-18 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886"
@@ -240,7 +228,7 @@
   sous_theme: sanctions
   source: Code de la route, art. R413-15 et R317-8
 - id: d-retention-suspension
-  explication: 'Cas de rétention : alcool, stupéfiants, refus, excès ≥ 40 km/h avec interception, téléphone cumulé à une autre infraction, refus d’obtempérer. Depuis la loi du 18 août 2026, après rétention pour alcoolémie délictuelle, stupéfiants, refus de vérification ou conduite sous emprise manifeste, le préfet doit prononcer la suspension ; dans les autres cas, elle reste possible. Le tribunal peut ensuite suspendre plus longtemps ou annuler le permis.'
+  explication: 'Cas de rétention, notamment : alcoolémie délictuelle ou ivresse, stupéfiants, refus de dépistage, excès ≥ 40 km/h avec interception, téléphone cumulé à une autre infraction, accident corporel avec infraction, refus d’obtempérer. Depuis la loi du 18 août 2026, après rétention pour alcoolémie délictuelle, stupéfiants, refus de vérification ou conduite sous emprise manifeste, le préfet doit prononcer la suspension ; dans les autres cas, elle reste possible. Le tribunal peut ensuite suspendre plus longtemps ou annuler le permis.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L224-1, L224-2, L224-7 ; service-public.fr F1040
@@ -300,15 +288,11 @@
   rappels:
   - Après un accident, le délai usuel pour déclarer le sinistre à l’assureur est {{c1::5 jours ouvrés}}.
 - id: d-equipements-obligatoires
-  explication: 'Le triangle présignale un véhicule immobilisé dangereux : environ 30 m en amont, davantage si nécessaire,
-    sauf si le poser expose manifestement le conducteur au danger. Cette exception ne se limite pas à l’autoroute.'
+  explication: 'Le triangle présignale un véhicule immobilisé dangereux : environ 30 m en amont, davantage si nécessaire, sauf si le poser expose manifestement le conducteur au danger. L’éthylotest n’est plus obligatoire à bord depuis 2020.'
   theme: D
   sous_theme: documents
   source: Code de la route, art. R416-19 ; décret n° 2020-605 ; service-public.fr F19459
-  rappels:
-  - 'Équipements obligatoires à bord d’une voiture : un {{c1::gilet de haute visibilité}} à portée de main et un triangle
-    de présignalisation.'
-  - L’{{c2::éthylotest}} n’est plus obligatoire à bord depuis mai 2020.
+  texte: 'Équipements obligatoires à bord d’une voiture : un {{c1::gilet de haute visibilité}} à portée de main et un triangle de présignalisation.'
 - id: d-vitres-teintees
   texte: Le pare-brise et les vitres latérales avant doivent laisser passer au moins {{c1::70 %}} de la lumière.
   explication: 'Infraction : 135 € et 3 points, immobilisation possible. Les vitres arrière peuvent être teintées librement.

@@ -193,7 +193,8 @@ dans « 02 Circulation », chaque autre thème dans son sous-deck. Étiquettes e
 dupliqué, champ obligatoire manquant, thème inconnu, référence à une note inexistante (confusions, `image_ref`,
 `dedup_ok`, objectifs, exclusions, registre des sources), numérotation de clozes non contiguë ou `rappels` mal
 formés, même réponse sous deux numéros de cloze, affirmation identique à une autre, note absente des objectifs,
-scénario dont la réponse déclarée (`check`) contredit le solveur de priorité. `import_signs.py` refuse de son
+scénario dont la réponse déclarée (`check`) contredit le solveur de priorité, reconnaissance dont les
+`comparaisons` n’ont pas de `piege` (elles s’affichent dans son encadré). `import_signs.py` refuse de son
 côté un signal retenu sans média ou une exclusion sans `raison`.
 
 Il imprime ensuite des **avertissements à relire** : trous susceptibles de révéler une carte sœur,
@@ -259,6 +260,19 @@ python build/qa_sheet.py                 # planches image + code + nom par fichi
    (dans `render_check.py`) choisit les captures ; un identifiant absent du paquet fait échouer le contrôle.
    Les mesures ne lisent pas le sens des images : les inspecter.
 6. Committer avec un message qui résume les changements de contenu (git tient l’historique des éditions).
+
+## Relecture complète avant publication
+
+Relire **toutes** les notes, pas un échantillon, par chapitres (signaux ; circulation ; scénarios et route ;
+conducteur et usagers ; réglementation, secours, prendre et quitter ; mécanique, passagers, environnement),
+avec une même grille : exactitude au Code consolidé ou à une source officielle, contradiction avec une autre
+carte (chercher le même sujet dans `data/`), conception de la carte ([conception](conception.md)), place au
+socle et prérequis, images rendues à 390 px en clair et sombre. Classer chaque constat : **bloquant** (règle
+fausse ou dépassée, contradiction, image contraire au texte, réponse ambiguë ou donnée au recto), **important**
+(condition omise, doublon, carte sans valeur au socle, prérequis après son application), **mineur** (style).
+Corriger les deux premiers, puis faire relire toutes les modifications ; publier quand cette dernière relecture
+ne trouve plus rien de bloquant ni d’important. Les chiffres se comparent d’un coup en extrayant de `data/`
+toutes les phrases qui contiennent des points, euros, km/h, mètres, durées ou seuils d’alcool.
 
 ## Identifiants et réimport
 

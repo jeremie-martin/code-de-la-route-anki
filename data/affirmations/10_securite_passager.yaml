@@ -8,10 +8,10 @@
   sous_theme: passagers
   source: "Sécurité routière, Exemples de nouvelles questions (Q12) ; Dépliant ceinture 2022"
 - id: aff-s-ceinture-majeur-amende
-  contexte: Un passager adulte refuse de mettre sa ceinture.
-  affirmation: C'est le conducteur qui sera verbalisé.
+  contexte: Mon passager de 16 ans n’a pas bouclé sa ceinture.
+  affirmation: C’est lui qui sera verbalisé.
   verdict: faux
-  pourquoi: "Un passager majeur répond de lui-même : 135 € pour lui, sans retrait de points. Le conducteur est responsable de l'attache des passagers de moins de 18 ans et de sa propre ceinture. S'il ne porte pas sa ceinture, il risque 135 € et 3 points."
+  pourquoi: 'Pour un passager de moins de 18 ans, c’est le conducteur qui paie : 135 €, sans retrait de points. Un passager majeur, lui, répond de lui-même.'
   theme: S
   sous_theme: passagers
   source: "Code de la route, art. R412-1 et R412-2 ; securite-routiere.gouv.fr, Port de la ceinture"
@@ -38,14 +38,6 @@
   theme: S
   sous_theme: passagers
   source: "securite-routiere.gouv.fr, Airbags ; Ornikar, Airbags"
-- id: aff-s-animal-libre
-  contexte: Trajet de 20 minutes avec un chien de taille moyenne.
-  affirmation: Il peut voyager libre sur la banquette arrière s'il est calme.
-  verdict: faux
-  pourquoi: 'Un animal non retenu réduit les possibilités de mouvement et le champ de vision du conducteur (35 €, R412-6) et devient un projectile au choc. Harnais relié à la ceinture, caisse de transport, ou grille de coffre.'
-  theme: S
-  sous_theme: passagers
-  source: "Code de la route, art. R412-6 ; Stych, Installation des passagers"
 - id: aff-s-enfant-10-ans-avant
   contexte: Un enfant vient d'avoir 10 ans, la voiture a des sièges arrière libres.
   affirmation: Il peut désormais s'asseoir à l'avant, attaché par la ceinture.
@@ -55,7 +47,7 @@
   sous_theme: enfants
   source: Code de la route, art. R412-2 et R412-3 ; service-public.fr F628
 - id: aff-s-enfant-135-cm
-  affirmation: Un enfant de plus de 1,35 m peut se passer de dispositif de retenue, même avant 10 ans.
+  affirmation: En France, le Code de la route fixe à 1,35 m la taille à partir de laquelle un enfant de moins de 10 ans peut se passer de dispositif de retenue.
   verdict: faux
   pourquoi: 'Le critère de 1,35 m vient d''autres pays européens. En France, la limite est l''âge de 10 ans (R412-2) ; on n''y échappe que par une morphologie adaptée à la ceinture, un certificat médical, un taxi ou un transport en commun.'
   theme: S

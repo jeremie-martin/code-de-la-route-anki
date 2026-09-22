@@ -51,7 +51,6 @@
   nom: Interdiction de tourner à gauche à la prochaine intersection
   signification: Il est interdit de tourner à gauche à la prochaine intersection.
   conduite: Continuer tout droit ou tourner à droite ; ne pas tourner à gauche même si la voie paraît libre.
-  complement: Vaut pour la prochaine intersection.
   piege: L’interdiction vise la prochaine intersection. Une flèche dans un rond rouge interdit une direction ; dans un rond bleu, elle impose une direction.
   theme: L
   sous_theme: panneaux
@@ -210,7 +209,7 @@
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: b13
-    legende: 'Tonnage : limite de poids réel, toutes catégories.'
+    legende: 'Nombre de tonnes : poids total autorisé (PTAC ou PTRA) supérieur à la valeur, tous véhicules.'
 - id: b9a
   type: panneau
   code: B9a

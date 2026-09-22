@@ -53,13 +53,13 @@
   nom: Cassis ou dos-d'âne
   signification: Annonce une déformation naturelle ou accidentelle de la chaussée (creux « cassis » ou bosse « dos-d'âne ») qui n'est pas un aménagement volontaire.
   conduite: Ralentir fortement ; risque de perte d'adhérence et de dommages au véhicule.
-  complement: Deux bosses représentent une déformation de la chaussée ; une seule bosse annonce un ralentisseur aménagé.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: a2b
     legende: 'Une seule bosse : ralentisseur aménagé.'
+  piege: 'Deux bosses : déformation de la chaussée ; une seule bosse : ralentisseur aménagé.'
 - id: a2b
   type: panneau
   code: A2b
@@ -126,7 +126,7 @@
     commons: France road sign A6.svg
   nom: Pont mobile
   signification: Annonce un pont mobile (pont levant, tournant, basculant) susceptible d'interrompre la circulation.
-  conduite: Ralentir, se préparer à s'arrêter ; respecter les feux rouges clignotants (R24) et barrières.
+  conduite: Ralentir, se préparer à s'arrêter ; respecter les feux rouges clignotants et les barrières.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -141,7 +141,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Le dépassement n'est interdit qu'aux passages à niveau SANS barrière ni demi-barrière (R414-12).
+  piege: L'interdiction propre de dépasser vise les passages sans barrière ; ici, un dépassement reste soumis aux règles générales, et je ne m'engage jamais si je risque de m'immobiliser sur les voies.
 - id: a8
   type: panneau
   code: A8
@@ -196,6 +196,7 @@
     legende: 'Carré bleu : le passage est ici.'
   - ref: a13a
     legende: 'Deux enfants : lieu fréquenté par des enfants.'
+  piege: Le triangle annonce le passage ; le carré bleu le situe.
 - id: a14
   type: panneau
   code: A14
@@ -332,4 +333,3 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Le symbole est ROUGE, exception parmi les symboles noirs des panneaux de danger.

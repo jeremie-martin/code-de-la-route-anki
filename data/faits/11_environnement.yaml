@@ -1,6 +1,5 @@
 - id: e-critair-chiffres
-  explication: 'La classification dépend aussi de la catégorie. Ne pas étendre les dates des voitures aux motos ou poids lourds.
-    Une classe identique n’autorise pas automatiquement l’accès à toutes les ZFE : consulter les règles locales.'
+  explication: 'La classification dépend aussi de la catégorie : ne pas étendre les dates des voitures aux motos ou poids lourds. Une classe identique n’autorise pas automatiquement l’accès à toutes les ZFE : consulter les règles locales.'
   theme: E
   sous_theme: pollution
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F33371"

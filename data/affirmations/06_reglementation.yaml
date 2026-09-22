@@ -2,7 +2,7 @@
   contexte: Je suis en première année de permis probatoire (6 points).
   affirmation: Contrôlé à 0,3 g/L de sang, je risque une amende mais je garde mon permis.
   verdict: faux
-  pourquoi: "En probatoire, le seuil est de 0,2 g/L. À 0,3 g/L, la sanction est de 135 € et 6 points. Si mon capital est de 6 points, je les perds tous : le permis est invalidé et je dois attendre 6 mois avant de le repasser."
+  pourquoi: 'En probatoire, le seuil est de 0,2 g/L. À 0,3 g/L, la sanction est de 135 € et 6 points. Si mon capital est de 6 points, je les perds tous : le permis est invalidé et je ne peux pas obtenir de nouveau permis avant 6 mois.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R234-1 et L223-5
@@ -10,8 +10,7 @@
   contexte: Permis B obtenu il y a dix-huit mois en filière classique, sans formation post-permis.
   affirmation: Je peux maintenant retirer le disque « A » de l’arrière de ma voiture.
   verdict: faux
-  pourquoi: Le signe distinctif reste obligatoire pendant tout le délai probatoire (3 ans ; 2 ans après AAC ou avec la formation
-    post-permis), avec les vitesses réduites et le seuil d’alcool à 0,2 g/L. Son absence est une contravention de 2e classe.
+  pourquoi: Le signe distinctif reste obligatoire pendant tout le délai probatoire (3 ans ; 2 ans après AAC ou avec la formation post-permis ; 1 an et 6 mois avec les deux), avec les vitesses réduites et le seuil d’alcool à 0,2 g/L. Son absence est une contravention de 2e classe.
   theme: D
   sous_theme: permis
   source: Code de la route, art. R413-5 II et III ; L223-1
@@ -24,7 +23,7 @@
   sous_theme: points
   source: Code de la route, art. L223-1 et R223-1
 - id: aff-d-recuperation-delai
-  contexte: Un excès de vitesse de 25 km/h m'a retiré 2 points ; je n'ai rien commis depuis.
+  contexte: Permis obtenu il y a dix ans. Un excès de vitesse de 25 km/h m'a retiré 2 points ; je n'ai rien commis depuis.
   affirmation: Je retrouve mon capital de 12 points au bout de deux ans.
   verdict: faux
   pourquoi: Il faut trois ans, parce qu'un excès d'au moins 20 km/h est une contravention de 4e classe. Le délai de deux ans
@@ -42,11 +41,10 @@
   sous_theme: points
   source: Code de la route, art. L223-1 ; service-public.fr F20443
 - id: aff-d-aac-points-eleve
-  contexte: 'Conduite accompagnée : l''élève commet un excès de vitesse, l''accompagnateur est à côté de lui.'
+  contexte: 'Conduite accompagnée : l''élève, qui n''a encore aucun permis, commet un excès de vitesse, l''accompagnateur est à côté de lui.'
   affirmation: Les points sont retirés à l'élève, auteur de l'infraction.
   verdict: faux
-  pourquoi: 'L''élève n''a pas encore de permis, donc pas de capital de points. L''accompagnateur, qui a la charge de
-    la conduite, peut voir sa responsabilité engagée ; l''infraction est notée dans le livret d''apprentissage.'
+  pourquoi: Sans permis, l'élève n'a pas de capital de points à perdre ; l'amende reste due. L'accompagnateur, qui a la charge de la conduite, peut voir sa responsabilité engagée.
   theme: D
   sous_theme: permis
   source: Code de la route, L121-1 et L223-1
@@ -67,9 +65,11 @@
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R412-6-1, L224-1 et L224-2
+  prerequis:
+  - d-telephone-sanction
 - id: aff-d-video-verbalisation
-  affirmation: Sans être intercepté par un agent, je ne peux être verbalisé que pour un excès de vitesse.
-  verdict: faux
+  affirmation: Un feu rouge grillé peut m'être verbalisé sans que je sois intercepté.
+  verdict: vrai
   pourquoi: La vidéo-verbalisation constate sans interception le téléphone tenu en main, le non-port de la ceinture,
     le franchissement d’une ligne continue, la circulation sur la bande d’arrêt d’urgence ou dans un couloir de
     bus, le feu rouge, le STOP, les distances de sécurité ou l’engagement dans une intersection encombrée. L’avis
@@ -80,8 +80,7 @@
 - id: aff-d-alcool-contravention
   affirmation: Contrôlé à 0,9 g/L de sang, je risque une contravention de 135 € et 6 points.
   verdict: faux
-  pourquoi: 'À partir de 0,8 g/L (0,40 mg/L d''air expiré), c''est un délit jugé au tribunal correctionnel : 6 points, peines
-    de prison et d''amende encourues, suspension ou annulation possibles. La contravention s''arrête sous 0,8 g/L.'
+  pourquoi: 'À partir de 0,8 g/L (0,40 mg/L d''air expiré), c''est un délit : 6 points, peines de prison et d''amende encourues. Le permis est retenu, puis le préfet doit le suspendre ; le juge peut ensuite le suspendre plus longtemps ou l''annuler. La contravention s''arrête sous 0,8 g/L.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L234-1 et R234-1

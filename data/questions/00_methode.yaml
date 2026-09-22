@@ -8,8 +8,7 @@
 - id: etg-halo-jaune
   question: Dans une question de l'ETG, un véhicule de la photo est entouré/surligné en jaune. Pourquoi ?
   reponse: C'est le véhicule dont parle la question (« ce véhicule », « la voiture bleue »…).
-  explication: Le repère de localisation (goutte/pin) joue le même rôle pour un lieu précis. Cela évite d'hésiter sur l'objet
-    de la question.
+  explication: 'Cela évite d''hésiter sur l''objet de la question : je relis ensuite l''énoncé à partir de ce véhicule.'
   theme: X
   sous_theme: lecture
   source: "securite-routiere.gouv.fr, Nouvelle épreuve du code 2023"

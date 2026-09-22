@@ -30,11 +30,11 @@
   type: panneau
   code: AB3a
   image:
-    commons: France road sign AB3a.svg
+    gen: cedez_le_passage
   nom: Cédez le passage
   signification: À l'intersection, céder le passage aux véhicules circulant sur la route croisée ou rejointe, sans obligation de s'arrêter.
   conduite: Ralentir, contrôler, s'arrêter à la ligne discontinue si nécessaire, et ne s'engager qu'en sécurité.
-  complement: Se trouve aussi en fin de voie d’insertion et aux entrées de giratoire.
+  complement: Se trouve notamment aux entrées de giratoire.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

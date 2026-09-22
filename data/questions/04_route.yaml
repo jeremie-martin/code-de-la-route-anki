@@ -21,19 +21,15 @@
   question: De nuit sur une route non éclairée, j’aperçois au loin des feux placés en hauteur, bien avant des phares.
     Qu’en conclure ?
   reponse: 'Qu’un poids lourd arrive en face : je passe en feux de croisement dès maintenant.'
-  explication: Les feux de gabarit, en haut de la cabine, se voient de plus loin que les projecteurs, souvent avant
-    un sommet de côte ou une courbe. Ils laissent le temps de basculer en feux de croisement sans éblouir un conducteur
-    assis haut.
+  explication: Les feux d’encombrement (dits de gabarit), en haut de la cabine, se voient de plus loin que les projecteurs, souvent avant un sommet de côte ou une courbe. Ils laissent le temps de basculer en feux de croisement sans éblouir un conducteur assis haut.
   theme: R
   sous_theme: nuit
-  source: Code de la route, art. R416-6 et R313-14
+  source: Code de la route, art. R416-6 et R313-10
 - id: r-nuit-vitesse-visibilite
   question: Pourquoi faut-il rouler moins vite de nuit, même sur une route connue et dégagée ?
   reponse: Pour pouvoir m’arrêter dans la distance effectivement visible, que l’éclairage, le contraste de l’obstacle et la
     météo limitent.
-  explication: 'Je dois pouvoir m’arrêter dans la partie de route que j’éclaire. En feux de croisement, la zone utile
-    est de l’ordre de 30 m, bien moins que la distance d’arrêt à 90 km/h : d’où les feux de route dès que personne
-    n’est ébloui.'
+  explication: 'Je dois pouvoir m’arrêter dans la partie de route que je vois. Les feux de croisement n’ont qu’une portée minimale réglementaire de 30 m, et un obstacle sombre s’y détache tard : à 90 km/h, la distance d’arrêt dépasse ce que je distingue. D’où les feux de route dès que personne n’est ébloui.'
   theme: R
   sous_theme: nuit
   source: "Code de la route, R413-17, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/"
@@ -240,19 +236,6 @@
   theme: R
   sous_theme: tramways
   source: "Code de la route, art. R422-3 et R417-11 ; coursdecode.com, Les tramways"
-- id: r-chantier-approche
-  image:
-    gen: chantier_approche
-    width: 960
-    params:
-      sign: {kind: sign, file: "France road sign AK5.svg"}
-  question: Je conduis la voiture bleue vers le haut du dessin. Quand commencer à adapter mon allure, et quel indice me le signale ?
-  reponse: 'Dès que je repère le panneau de travaux : je ralentis progressivement, avant d’arriver au balisage.'
-  explication: Le panneau annonce un danger à venir. Anticiper laisse le temps de suivre les indications et d’aborder
-    la zone à une allure adaptée. Le dessin n’est pas à l’échelle et ne fixe aucune vitesse chiffrée.
-  theme: R
-  sous_theme: chantiers
-  source: "Bison Futé, Chantiers en cours, conseils de conduite : https://www.bison-fute.gouv.fr/IMG/pdf/Chantiers_en_cours.pdf"
 - id: r-chantier-fleche-lumineuse
   image:
     gen: chantier_rabattement

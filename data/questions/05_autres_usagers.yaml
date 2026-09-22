@@ -81,7 +81,7 @@
   image: {gen: cycliste_tourne_droite, width: 960}
   question: Je conduis la voiture bleue et veux tourner à droite. Le cycliste arrive à ma hauteur et poursuit tout droit sur la piste ; aucun feu ni panneau ne règle la priorité. Qui doit attendre ?
   reponse: "Moi. Je laisse passer le cycliste avant de tourner : je vais couper la piste sur laquelle il circule."
-  explication: Je contrôle le rétroviseur droit et l’angle mort avant de tourner. Le cycliste arrive derrière moi, mais cela ne me donne pas priorité pour traverser sa piste. La flèche près de ma voiture indique mon intention, pas une priorité.
+  explication: Je contrôle le rétroviseur droit et l’angle mort avant de tourner. Le cycliste arrive à ma hauteur, mais cela ne me donne pas priorité pour traverser sa piste. La flèche près de ma voiture indique mon intention, pas une priorité.
   theme: U
   sous_theme: cyclistes
   source: "Code de la route, art. R415-3 III : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278135 ; R415-14"
@@ -116,8 +116,7 @@
   source: Code de la route, art. R412-43-1 ; service-public.fr F308
 - id: u-edpm-pieton-ou-vehicule
   question: À une intersection sans signalisation, une trottinette électrique arrive à ma droite. Qui passe ?
-  reponse: 'Elle : un EDPM est un véhicule soumis aux règles de priorité, pas un piéton ; seuls rollers, skate et trottinette
-    sans moteur sont assimilés aux piétons.'
+  reponse: 'Elle : un EDPM est un véhicule soumis aux règles de priorité, pas un piéton, contrairement aux rollers, skates et trottinettes sans moteur.'
   explication: 'Un EDPM respecte aussi les feux et les sens interdits. Pour l''automobiliste : 1 m / 1,50 m au dépassement,
     prudence accrue (faible gabarit, équilibre précaire).'
   theme: U
@@ -137,8 +136,7 @@
     Que fais-je ?
   reponse: 'Je reste dans ma file en gardant l’espace latéral, et je contrôle rétroviseurs et angle mort avant tout changement
     de file : l’inter-files est légale ici.'
-  explication: 'Décret 2025-33, en vigueur le 11 janvier 2025 : deux-roues ≤ 1 m de large, autoroutes et routes à chaussées
-    séparées ≥ 70 km/h, circulation dense, 50 km/h maximum (30 si une file est arrêtée).'
+  explication: 'Décret 2025-33, en vigueur le 11 janvier 2025 : motos et tricycles d’au plus 1 m de large, autoroutes et routes à chaussées séparées ≥ 70 km/h, circulation dense, 50 km/h maximum (30 si une file est arrêtée).'
   theme: U
   sous_theme: motos
   source: Code de la route, art. R412-11-3 (décret n° 2025-33 du 9 janvier 2025)
@@ -173,8 +171,7 @@
     ?
   reponse: Rester plus loin pour voir la route qu’il masque, ne m’engager que si la longueur libre suffit (dépassement long),
     ne pas me rabattre trop tôt.
-  explication: Il freine moins vite, projette de l'eau et crée un appel d'air. Hors agglomération, deux poids lourds qui se
-    suivent gardent au moins 50 m (R412-12).
+  explication: Il freine moins vite, projette de l'eau et crée un appel d'air. Hors agglomération, deux poids lourds qui se suivent à la même vitesse gardent au moins 50 m (R412-12).
   theme: U
   sous_theme: poids_lourds
   source: "Code de la route, art. R414-4 et R412-12 ; coursdecode, Les poids lourds"
@@ -187,12 +184,10 @@
   sous_theme: poids_lourds
   source: Accord ADR ; IISR (B18)
 - id: u-tram-depasser
-  dedup_ok:
   question: Un tramway est arrêté à sa station et des voyageurs descendent de mon côté. Que fais-je ?
   reponse: 'Je m''arrête et j''attends : on ne dépasse pas un tramway à l''arrêt du côté où les voyageurs montent
     ou descendent.'
-  explication: En marche, un tramway se dépasse par la droite si l'intervalle jusqu'au bord de la chaussée suffit (R414-6
-    II 2°). Le tram ne peut ni dévier ni freiner court.
+  explication: En marche, un tramway se dépasse par la droite si l'intervalle jusqu'au bord de la chaussée suffit ; par la gauche seulement sur une chaussée à sens unique ou si la moitié gauche de la chaussée reste libre (R414-6 II 2°). Le tram ne peut ni dévier ni freiner court.
   theme: U
   sous_theme: transports_commun
   source: Code de la route, art. R414-13 et R414-6
@@ -224,12 +219,10 @@
   sous_theme: vehicules_prioritaires
   source: Code de la route, art. R311-1, R313-27, R313-34 et R415-12
 - id: u-gyrophare-orange
-  question: Un véhicule avec un gyrophare orange (dépanneuse, engin agricole, engin de voirie) approche. Que signale
-    ce gyrophare ?
+  question: Un véhicule avec un gyrophare orange (dépanneuse, engin agricole, engin de chantier) approche. Que signale ce gyrophare ?
   reponse: Un véhicule lent, encombrant ou en intervention, donc un danger à contourner prudemment ; il n'est pas
     prioritaire.
-  explication: Gyrophare bleu + deux tons = prioritaire, on cède. Feux bleus à éclats + trois tons = facilités de passage
-    (ambulance privée, EDF), on facilite sans obligation.
+  explication: 'Gyrophare bleu + deux tons = prioritaire, on cède. Feux bleus à éclats + trois tons = facilités de passage (ambulance de transport sanitaire, par exemple), on facilite sans lui devoir la priorité. Exception au gyrophare orange : l’engin de service hivernal en action bénéficie de facilités de passage.'
   theme: U
   sous_theme: vehicules_prioritaires
   source: Code de la route, art. R313-27 et R313-28
@@ -243,11 +236,10 @@
   source: "Code de la route, art. R412-11-1 et R413-17 : https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159599"
 
 - id: u-convoi-exceptionnel
-  question: 'Un véhicule pilote « CONVOI EXCEPTIONNEL » avec gyrophares orange me fait signe de ralentir : que faire ?'
+  question: 'Un véhicule d’accompagnement « CONVOI EXCEPTIONNEL », gyrophares orange, me fait signe de ralentir : que faire ?'
   reponse: Ralentir, me ranger ou m’arrêter selon ses indications, ne pas m’engager dans l’intersection signalée, et ne dépasser
     le convoi que sur indication de l’accompagnateur.
-  explication: 'Ne pas suivre les indications d''un véhicule de guidage : 135 € (R433-2 III). Un convoi engagé dans une intersection
-    garde la priorité (R412-33).'
+  explication: 'Ne pas respecter les indications des véhicules de guidage d''un transport exceptionnel : 135 € (R433-2 III). Un convoi ou son accompagnement déjà engagé dans une intersection garde la priorité (R412-33).'
   theme: U
   sous_theme: vehicules_lents_animaux
   source: Code de la route, art. R433-17, R433-2 III et R412-33

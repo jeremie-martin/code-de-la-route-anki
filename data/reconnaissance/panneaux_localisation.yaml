@@ -5,12 +5,12 @@
   image:
     commons: France road sign EB10.svg
   nom: Entrée d'agglomération
-  signification: 'Entrée d''agglomération : à partir du panneau, 50 km/h sauf indication, priorité à droite en l''absence de signalisation, klaxon interdit sauf danger.'
+  signification: 'Entrée d''agglomération : à partir du panneau et jusqu''au panneau de sortie, 50 km/h sauf indication, et klaxon réservé au danger immédiat.'
   conduite: Être à 50 km/h au niveau du panneau ; redoubler d'attention (piétons, cyclistes, intersections).
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Un E31 (lieu-dit, lettres italiques blanches sur fond noir) ne limite PAS la vitesse à 50.
+  piege: 'La priorité à droite n''est pas propre à l''agglomération : sans signalisation, elle s''applique partout. Un nom en lettres blanches italiques sur fond noir (lieu-dit) ne limite pas la vitesse.'
 - id: eb20
   type: panneau
   code: EB20

@@ -152,13 +152,13 @@
   nom: Signal manuel « passage » (piquet K10, face verte)
   signification: La face verte du piquet tenu par le signaleur m’autorise à passer dans l’alternat de chantier.
   conduite: Passer prudemment en respectant les limitations du chantier ; obéir au signaleur comme à un agent.
-  complement: 'Le même piquet a deux faces : verte pour passer, rouge pour s’arrêter. Je suis celle que le signaleur me présente.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: k10b
     legende: 'Face rouge : arrêt obligatoire.'
+  piege: 'Je suis la face tournée vers moi : les usagers d''en face voient l''autre.'
 - id: k10b
   type: panneau
   code: K10b

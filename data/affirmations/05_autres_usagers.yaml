@@ -1,5 +1,5 @@
 - id: aff-u-pieton-telephone
-  contexte: Un piéton debout au bord d'un passage protégé consulte son téléphone, puis pose un pied sur la chaussée.
+  contexte: Un piéton debout au bord d'un passage protégé sans feux consulte son téléphone, puis pose un pied sur la chaussée.
   affirmation: Il bénéficie de la priorité et je dois m'arrêter pour le laisser traverser.
   verdict: vrai
   pourquoi: 'R415-11 : dès qu''un piéton s''engage ou manifeste clairement l''intention de traverser, je cède le passage, au besoin en m''arrêtant. Son inattention ne me dispense de rien (refus : 135 €, 6 points).'
@@ -35,7 +35,7 @@
 - id: aff-u-fauteuil-roulant-pieton
   affirmation: Une personne en fauteuil roulant motorisé qui circule à l'allure du pas est assimilée à un piéton.
   verdict: vrai
-  pourquoi: 'R412-34 : sont des piétons les personnes en chaise roulante, celles qui poussent une poussette et celles qui conduisent à la main un vélo, un cyclomoteur ou une trottinette électrique.'
+  pourquoi: 'R412-34 : sont assimilées aux piétons les personnes en fauteuil roulant mû par elles-mêmes ou circulant à l''allure du pas, ainsi que celles qui poussent une voiture d''enfant ou conduisent à la main un vélo, un cyclomoteur ou une trottinette électrique.'
   theme: U
   sous_theme: pietons
   source: 'Code de la route, art. R412-34 et R412-35'
@@ -101,17 +101,6 @@
   theme: U
   sous_theme: cyclistes
   source: 'Code de la route, art. R412-28-1 et R110-2'
-- id: aff-u-velo-m12
-  contexte: Sous le feu tricolore, un petit triangle inversé porte un vélo jaune et une flèche vers la droite.
-  affirmation: Le cycliste peut franchir le feu rouge vers la droite sans céder le passage.
-  verdict: faux
-  pourquoi: Ce panonceau autorise les usagers concernés à franchir le feu dans la seule direction fléchée, en cédant aux piétons et aux véhicules qui ont le vert. Il ne donne aucune priorité.
-  theme: U
-  sous_theme: cyclistes
-  source: "IISR (panonceau M12) ; Cerema, Doctrine cédez-le-passage cycliste au feu"
-  comparaisons:
-  - ref: m12
-    legende: Passage autorisé uniquement dans les directions fléchées, en cédant.
 - id: aff-u-velo-ecart-portieres
   contexte: En ville, un cycliste roule à un bon mètre de la file de voitures stationnées.
   affirmation: Il a le droit de s'écarter ainsi, et j'en tiens compte pour le dépasser.
@@ -158,7 +147,7 @@
   contexte: Sur une voie rapide, un panneau « 50 » est surmonté du panonceau « EN INTER-FILES ».
   affirmation: Cette limitation s'applique aussi aux automobilistes quand la circulation est dense.
   verdict: faux
-  pourquoi: 'Elle ne vise que les deux-roues circulant en inter-files. Les automobilistes restent soumis à la vitesse normalement autorisée sur leur voie.'
+  pourquoi: Elle ne vise que les motos et tricycles circulant en inter-files. Les automobilistes restent soumis à la vitesse normalement autorisée sur leur voie.
   theme: U
   sous_theme: motos
   source: "Sécurité routière, Exemples de nouvelles questions (Q16) ; Code de la route, art. R412-11-3"
@@ -243,8 +232,7 @@
   contexte: Passage piéton sans feux ; une personne âgée traverse lentement.
   affirmation: Je dois attendre qu'elle ait fini de traverser, puisqu'elle est engagée.
   verdict: vrai
-  pourquoi: 'R415-11 : je cède le passage au piéton engagé ou qui manifeste l''intention de traverser, quelle que
-    soit sa lenteur ; le contourner ou le presser est une infraction à 6 points.'
+  pourquoi: 'R415-11 : je cède le passage au piéton engagé ou qui manifeste l''intention de traverser, quelle que soit sa lenteur ; ne pas lui céder le passage : 135 € et 6 points.'
   theme: U
   sous_theme: pietons
   source: Code de la route, art. R415-11

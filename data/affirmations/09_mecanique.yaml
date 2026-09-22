@@ -17,15 +17,6 @@
   theme: M
   sous_theme: tableau_de_bord
   source: "Renault, témoins lumineux, https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux"
-- id: aff-m-voyant-abs-blocage
-  contexte: Le voyant ABS orange reste allumé, sans autre alerte ni anomalie du freinage.
-  affirmation: Lors d'un freinage d'urgence, les roues risquent de se bloquer.
-  verdict: vrai
-  pourquoi: 'L’antiblocage peut être indisponible : lors d’un freinage d’urgence les roues risquent de se bloquer.
-    J’augmente les marges et fais contrôler selon la notice.'
-  theme: M
-  sous_theme: tableau_de_bord
-  source: "Sécurité routière, Exemples de nouvelles questions (Q5)"
 - id: aff-m-voyant-abs-arret
   contexte: Seul le voyant ABS orange reste allumé ; aucun voyant rouge ni anomalie du freinage ordinaire.
   affirmation: Je dois m'arrêter immédiatement.
@@ -44,7 +35,7 @@
   sous_theme: freinage
   source: "Stych, Aides à la conduite ; Ornikar, ABS"
 - id: aff-m-frein-main-4-roues
-  affirmation: Le frein de stationnement remplace le frein principal pour un freinage d’urgence ordinaire.
+  affirmation: Le frein de stationnement remplace le frein principal pour un freinage d’urgence.
   verdict: faux
   pourquoi: Le frein principal est conçu pour arrêter le véhicule. Le frein de stationnement agit généralement sur
     l’arrière ; les systèmes électriques ont des modes d’urgence propres à la notice. Ne pas tirer brutalement un
@@ -53,9 +44,9 @@
   sous_theme: freinage
   source: "Ornikar, Frein à main ; Stych, Pannes"
 - id: aff-m-pression-chaud
-  affirmation: La pression des pneus se contrôle après quelques kilomètres, quand ils sont chauds.
+  affirmation: 'Après 100 km d’autoroute, je mesure 2,6 bar pour 2,2 bar préconisés : je dégonfle pour revenir à 2,2.'
   verdict: faux
-  pourquoi: 'Elle se contrôle à froid (plus de 2 h d''arrêt ou moins de 3 km), pour la comparer à la valeur du constructeur. À chaud, la pression monte : on ne dégonfle pas un pneu chaud, on contrôle de nouveau à froid.'
+  pourquoi: 'La mesure est faite à chaud : la pression monte en roulant. On ne dégonfle pas un pneu chaud ; la comparaison avec la valeur du constructeur se fait à froid (plus de 2 h d''arrêt ou moins de 3 km).'
   theme: M
   sous_theme: pneus
   source: "securite-routiere.gouv.fr, Pneus ; Michelin, Vérifier la pression"
@@ -108,10 +99,10 @@
   sous_theme: feux
   source: Code de la route, art. R313-2 et s. ; service-public.fr F19459
 - id: aff-m-stationnement-arriere
-  contexte: Ce conducteur va se ranger en créneau avec l'assistance au stationnement.
-  affirmation: Il n'a plus à surveiller la circulation vers l'arrière.
+  contexte: Je vais me ranger en créneau avec l'assistance au stationnement.
+  affirmation: Je n'ai plus à surveiller la circulation vers l'arrière.
   verdict: faux
-  pourquoi: 'Il doit surveiller vers l''avant comme vers l''arrière : la loi lui impose de garder le contrôle de la manœuvre et de pouvoir l''interrompre à tout instant (R412-6-3). Les capteurs ignorent un enfant ou un poteau fin.'
+  pourquoi: 'Je surveille vers l''avant comme vers l''arrière : la loi m''impose de garder le contrôle de la manœuvre et de pouvoir l''interrompre à tout instant (R412-6-3). Les capteurs ignorent un enfant ou un poteau fin.'
   theme: M
   sous_theme: adas
   source: "Sécurité routière, Exemples de nouvelles questions (Q8) ; Code de la route, art. R412-6-3"
@@ -157,9 +148,7 @@
   contexte: En roulant, le voyant orange de pression des pneus s'allume ; la voiture ne tire pas et ne vibre pas.
   affirmation: Je peux continuer normalement jusqu'à ma destination et contrôler la pression plus tard.
   verdict: faux
-  pourquoi: 'Le témoin signale une perte de pression, qui peut venir d’une crevaison lente. Je ralentis, je m’arrête
-    dès que possible en sécurité, j’examine les quatre pneus et je regonfle à la valeur de l’étiquette. Si la voiture
-    tire ou vibre, je n’essaie pas de rejoindre une station : rouler sous-gonflé fait chauffer puis éclater le pneu.'
+  pourquoi: 'Le témoin signale une perte de pression, qui peut venir d’une crevaison lente. Je ralentis, je m’arrête dès que possible en sécurité et j’examine les quatre pneus ; je regonfle selon l’étiquette et la notice (la valeur de référence se lit à froid). Si la voiture tire ou vibre, je n’essaie pas de rejoindre une station : rouler sous-gonflé fait chauffer puis éclater le pneu.'
   theme: M
   sous_theme: voyants
   source: Notices constructeurs (Renault, témoins lumineux) ; REMC

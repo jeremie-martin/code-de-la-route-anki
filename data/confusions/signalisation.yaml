@@ -24,9 +24,7 @@
 - id: conf-a7-a8
   a: a7
   b: a8
-  difference: '**A** (barrière) : passage à niveau **avec** barrières ou demi-barrières. **B** (locomotive)
-    : passage à niveau **sans** barrière : on ne compte que sur ses yeux et ses oreilles (croix de Saint-André,
-    éventuellement feux rouges clignotants). Dans les deux cas, ne jamais s''engager sans pouvoir dégager.'
+  difference: '**A** (barrière) : passage à niveau **avec** barrières ou demi-barrières. **B** (locomotive) : passage à niveau **sans** barrière, parfois équipé de feux rouges clignotants : je regarde et j''écoute avant de m''engager. Dans les deux cas, je ne m''engage jamais sans pouvoir dégager les voies.'
   theme: L
   sous_theme: panneaux
   source: IISR 1re partie ; Code de la route, art. R422-3
@@ -101,9 +99,7 @@
 - id: conf-b6a2-b6a3
   a: b6a2
   b: b6a3
-  difference: 'Stationnement unilatéral alterné semi-mensuel : **A** (« 1-15 ») interdit le stationnement de
-    ce côté du **1er au 15** ; **B** (« 16-31 ») l''interdit du **16 à la fin du mois**. Le changement de côté
-    se fait le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.'
+  difference: 'Stationnement unilatéral alterné semi-mensuel : **A** (« 1.15 ») interdit le stationnement de ce côté du **1er au 15** ; **B** (« 16.31 ») l''interdit du **16 à la fin du mois**. Le changement de côté se fait le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.'
   theme: L
   sous_theme: panneaux
   source: Code de la route, art. R417-2
@@ -201,7 +197,7 @@
 - id: conf-b52-b54
   a: b52
   b: b54
-  difference: '**A**, piéton, cycliste, voiture et « 20 » : zone de rencontre, piétons prioritaires et 20 km/h au maximum. **B**, adulte et enfant : aire piétonne, véhicules autorisés seulement pour la desserte, à l’allure du pas.'
+  difference: '**A**, piéton, cycliste, voiture et « 20 » : zone de rencontre, piétons prioritaires et 20 km/h au maximum. **B**, adulte et enfant : aire piétonne ; seuls les véhicules de desserte et les cycles y circulent, à l’allure du pas.'
   theme: L
   sous_theme: panneaux
   source: Code de la route, art. R110-2
@@ -248,7 +244,7 @@
 - id: conf-eb10-e31
   a: eb10
   b: e31
-  difference: "**A** (nom en lettres droites noires sur fond blanc, **bordure rouge**) marque l'entrée d'agglomération. La limite par défaut de 50 km/h et les règles d'agglomération s'appliquent jusqu'au panneau de sortie barré (EB20). **B** (nom en lettres **italiques blanches sur fond noir**) localise simplement un lieu-dit ou un hameau, sans changer les règles."
+  difference: '**A** (nom en lettres droites noires sur fond blanc, **bordure rouge**) marque l''entrée d''agglomération : la limite par défaut de 50 km/h et les règles d''agglomération s''appliquent jusqu''au panneau de sortie (le même, barré). **B** (nom en lettres **italiques blanches sur fond noir**) localise simplement un lieu-dit ou un hameau, sans changer les règles.'
   theme: L
   sous_theme: panneaux
   source: IISR 5e partie ; Code de la route, art. R110-2

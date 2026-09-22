@@ -10,7 +10,7 @@
   - 'Vitesse maximale par construction d’une trottinette électrique : {{c2::25 km/h}}.'
   - 'Sur une trottinette électrique, nombre de personnes autorisées à bord : {{c3::une seule}}.'
 - id: u-velo-chiffres
-  explication: En agglomération, le gilet n'est pas imposé au cycliste, contrairement à l'utilisateur d'une trottinette électrique. Le casque reste recommandé pour tous ; l'adulte qui transporte ou accompagne un enfant non casqué est verbalisé.
+  explication: En agglomération, le gilet n'est pas imposé au cycliste, contrairement à l'utilisateur d'une trottinette électrique. Le casque reste recommandé pour tous ; l'adulte qui transporte ou accompagne un enfant non casqué, et qui en a la garde, est verbalisé.
   theme: U
   sous_theme: cyclistes
   source: Code de la route, art. R431-1-1, R431-1-3, R412-34, R431-7

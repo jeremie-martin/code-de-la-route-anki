@@ -39,7 +39,7 @@
     commons: France road sign CE29.svg
   nom: Moyen de lutte contre l'incendie
   signification: Indique un extincteur ou moyen de lutte contre l'incendie utilisable par les usagers (obligatoire en tunnel).
-  conduite: 'En tunnel : se garer, couper le moteur, laisser les clés, rejoindre l''issue de secours.'
+  conduite: Sur un début de feu, je peux utiliser l'extincteur signalé si c'est sans risque ; sinon j'évacue par l'issue de secours.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

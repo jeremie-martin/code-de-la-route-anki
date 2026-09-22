@@ -107,8 +107,7 @@
   source: Code de la route, art. R414-4
 - id: l-depassement-rabattement
   question: Pendant un dépassement, à quel moment puis-je revenir à droite ?
-  reponse: Quand je vois le véhicule dépassé en entier dans mon rétroviseur intérieur ; clignotant droit, sans l’obliger à
-    ralentir.
+  reponse: 'Sans obliger le véhicule dépassé à ralentir, clignotant droit. Repère pratique : je le vois en entier dans mon rétroviseur intérieur.'
   explication: 'R414-10 : se rabattre sans provoquer le ralentissement du véhicule dépassé. Se rabattre trop tôt est la faute
     classique, surtout après un poids lourd, dont le gabarit trompe sur la distance.'
   theme: L
@@ -118,9 +117,7 @@
   question: Sur une route à double sens, je veux dépasser une voiture en empruntant la voie opposée. Quels indices peuvent
     interdire cette manœuvre ?
   reponse: Une visibilité insuffisante, une ligne continue de mon côté ou un panneau d’interdiction de dépasser. Même sans eux, je dois pouvoir me rabattre sans gêner.
-  explication: 'Trois indices interdisent : la ligne continue de mon côté, le panneau d’interdiction de dépasser et
-    la visibilité insuffisante (virage, sommet de côte). Sans eux, il reste à vérifier l’espace pour me rabattre et
-    l’écart de vitesse (R414-4).'
+  explication: Sans ces trois indices, il reste à vérifier l’espace pour me rabattre et l’écart de vitesse (R414-4).
   theme: L
   sous_theme: depassement
   source: "Code de la route, R414-4 et R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/"
@@ -138,9 +135,7 @@
 - id: l-depassement-droite
   question: Dans quels cas dépasse-t-on par la droite ?
   reponse: Un véhicule dont le conducteur a signalé qu’il tourne à gauche, et un tramway en marche si la place à droite suffit.
-  explication: En files parallèles denses (sens unique, chaussée à plusieurs voies dans le même sens, autoroute comprise),
-    avancer plus vite que la file de gauche n’est pas un dépassement (R414-15). Hors de ces cas, dépasser par la droite
-    coûte 135 € et 3 points.
+  explication: En files ininterrompues sur toutes les voies (sens unique, chaussée à plusieurs voies dans le même sens, autoroute comprise), avancer plus vite que la file de gauche n’est pas un dépassement (R414-15). Hors de ces cas, dépasser par la droite coûte 135 € et 3 points.
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-6 et R414-15
@@ -249,7 +244,7 @@
   sous_theme: stationnement
   source: Code de la route, art. R417-11
 - id: l-double-file
-  question: Je stationne en double file en attendant un passager, feux de détresse allumés. Est-ce autorisé ?
+  question: Je m’immobilise en double file en attendant un passager, feux de détresse allumés. Est-ce autorisé ?
   reponse: 'Non : stationner en double file est gênant. Les feux de détresse ne donnent aucune autorisation.'
   explication: 'Distinguer ce stationnement d’un arrêt réel pour une montée ou descente immédiate : R417-10 III vise le stationnement
     en double file. Un arrêt ne doit pas gêner ni mettre en danger.'
@@ -280,8 +275,7 @@
 - id: l-stationnement-hors-agglo-nuit
   question: Je dois m'arrêter sur une route de campagne. Où placer mon véhicule ?
   reponse: Hors de la chaussée si l’accotement le permet ; sinon à droite, dans mon sens de marche, au plus près du bord.
-  explication: 'R417-4. La nuit, sur chaussée non éclairée, les feux de position restent allumés ; si le véhicule constitue
-    un danger, feux de détresse et triangle à 30 m. S''arrêter sans signalisation la nuit : 135 €, 3 points.'
+  explication: 'R417-4. Hors agglomération, la nuit, les feux de position restent allumés, même sur une route éclairée ; si le véhicule constitue un danger, feux de détresse et triangle à environ 30 m. S''arrêter sur la chaussée sans éclairage ni signalisation, la nuit en un lieu non éclairé : 135 €, 3 points.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-4 et R416-12
@@ -365,10 +359,9 @@
   sous_theme: signalisation
   source: IISR 8e partie ; Code de la route, art. R411-25
 - id: l-agglomeration-panneau
-  question: Ce panneau d’entrée d’agglomération est posé seul, sans autre limitation. Quel plafond de vitesse commence ici
-    ?
-  reponse: 50 km/h par défaut, avec une allure plus basse si la situation l’exige.
-  explication: Le panneau fixe la limite de l’agglomération, même si les premières maisons sont éloignées.
+  question: Je roulais à 80 km/h ; je passe ce panneau, mais les premières maisons ne sont visibles que 300 m plus loin. À partir d’où dois-je respecter 50 km/h ?
+  reponse: 'Dès le panneau : c’est lui qui marque le début de l’agglomération, pas les maisons.'
+  explication: La limite par défaut de 50 km/h vaut jusqu’au panneau de sortie, sauf autre limitation ; j’arrive donc au panneau déjà ralenti.
   theme: L
   sous_theme: signalisation
   source: Code de la route, art. R110-2, R413-3, R416-1 ; IISR
@@ -432,6 +425,9 @@
   explication: L’exception autorise le chevauchement, pas le franchissement complet ; la distance latérale reste
     obligatoire.
   source: Code de la route, R412-19 et R414-4
+  prerequis:
+  - l-depassement-laterale
+  - marq-ligne-continue
 - id: l-feu-alerte-r1
   question: Un feu jaune clignotant est fixé au-dessus d'un panneau de danger. Que signifie-t-il ?
   reponse: Il renforce l'alerte du panneau (danger fréquent ou peu visible) ; il ne change rien aux règles de priorité.
@@ -566,11 +562,9 @@
 - id: l-visuel-arret-b6a1
   theme: L
   sous_theme: applications
-  question: De ce côté de la rue, après ce panneau, aucun autre motif d’interdiction ni danger. Puis-je déposer
-    immédiatement mon passager en restant aux commandes ?
-  reponse: 'Oui : ce panneau interdit le stationnement, pas cet arrêt pour descente immédiate.'
-  explication: Un arrêt reste interdit s’il est gênant, dangereux ou interdit par une autre règle, même sous
-    ce panneau.
+  question: De ce côté de la rue, après ce panneau, j’attends cinq minutes au volant, moteur tournant, qu’un ami descende de chez lui. Est-ce permis ?
+  reponse: 'Non : attendre n’est pas un arrêt mais un stationnement, et ce panneau interdit le stationnement.'
+  explication: L’arrêt se limite à la montée, la descente ou le chargement immédiats. Déposer aussitôt un passager serait permis ici, sauf s’il est gênant ou dangereux.
   source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: b6a1
 - id: l-visuel-arret-b6d

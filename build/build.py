@@ -241,6 +241,9 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
                         not isinstance(comparison.get("legende"), str) or
                         not comparison["legende"].strip()):
                     errors.append(f"{it['id']}: comparaison attendue : ref de reconnaissance et legende non vide")
+            if comparisons and kind == "reconnaissance" and not it.get("piege"):
+                # the comparisons are shown inside the « Piège » box: without its text the box is an empty heading
+                errors.append(f"{it['id']}: comparaisons sans piege")
             for other in it.get("dedup_ok", []) or []:
                 if other not in ids:
                     errors.append(f"{it['_file']}:{it.get('id')}: dedup_ok cite une note inconnue {other}")

@@ -96,7 +96,6 @@ def ligne_rive(params):
             S.add(f'<rect x="0" y="{y - 2}" width="{S.w}" height="4" fill="{MARK}"/>')
         else:
             _dashes_h(S, y, params.get("dash", 3), params.get("gap", 3.5), w=4)
-    _dashes_h(S, 150, 3, 10)
     _me_car(S, 70, 197)
     return str(S)
 
@@ -122,7 +121,6 @@ def ligne_jaune(params):
             x += 24
             up = not up
         S.add(f'<polyline points="{" ".join(pts)}" fill="none" stroke="{YELLOW}" stroke-width="5"/>')
-        S.add(f'<text x="{S.w / 2}" y="150" font-family="{FONT}" font-size="26" font-weight="700" text-anchor="middle" fill="{MARK}">BUS</text>')
     _dashes_h(S, 100, 3, 10)
     _me_car(S, 80, 150)
     S.add(f'<text x="{S.w - 12}" y="260" font-family="{FONT}" font-size="15" text-anchor="end" fill="#333">trottoir</text>')
@@ -140,8 +138,8 @@ def fleches(params):
         _dashes_h(S, 150, 3, 1.33, x0=90, x1=330)
         S.add(f'<rect x="330" y="147.5" width="150" height="5" fill="{MARK}"/>')
         for x in (120, 210, 290):
-            # arrow in my lane (bottom half), pointing forward and slanting right (toward the kerb)
-            S.add(f'<path d="M{x},197 l40,0 l0,-10 l20,14 l-20,14 l0,-10 l-40,0 z" fill="{MARK}" transform="rotate(20 {x + 30} 197)"/>')
+            # arrow astride the announcement line, pointing forward and into my lane
+            S.add(f'<path d="M{x},150 l40,0 l0,-10 l20,14 l-20,14 l0,-10 l-40,0 z" fill="{MARK}" transform="rotate(20 {x + 30} 150)"/>')
         _me_car(S, 50, 197)
     elif kind == "directionnelles":
         # vertical road with 3 lanes at an intersection: left / straight / right
@@ -292,10 +290,9 @@ def feu_tricolore(params):
         on = state.startswith(name)
         blink = "clignotant" in state and on
         cy = 70 + i * 100
-        if arrow and on:
-            _lamp(S, 120, cy, 36, "#3a3a3a", on=False)
-            S.add(f'<circle cx="120" cy="{cy}" r="36" fill="#111"/>')
-            S.add(_arrow_glyph(120, cy, c, arrow))
+        if arrow:
+            S.add(f'<circle cx="120" cy="{cy}" r="36" fill="{"#111" if on else "#3a3a3a"}"/>')
+            S.add(_arrow_glyph(120, cy, c if on else "#555", arrow))
         else:
             _lamp(S, 120, cy, 36, c, on=on, blink=blink)
     if params.get("caption"):
@@ -382,8 +379,7 @@ def feu_velo(params):
         cy = 70 + i * 80
         on = state == name
         S.add(f'<circle cx="100" cy="{cy}" r="28" fill="{"#111" if on else "#3a3a3a"}"/>')
-        if on:
-            S.add(f'<g transform="translate(100,{cy})" fill="none" stroke="{c}" stroke-width="3"><circle cx="-10" cy="6" r="8"/><circle cx="10" cy="6" r="8"/><path d="M-10,6 l7,-13 l11,0 l2,13 M-3,-7 l5,13"/></g>')
+        S.add(f'<g transform="translate(100,{cy})" fill="none" stroke="{c if on else "#555"}" stroke-width="3"><circle cx="-10" cy="6" r="8"/><circle cx="10" cy="6" r="8"/><path d="M-10,6 l7,-13 l11,0 l2,13 M-3,-7 l5,13"/></g>')
     return str(S)
 
 
@@ -403,13 +399,16 @@ def signal_affectation(params):
             S.add(f'<path d="M{cx - 18},56 l36,36 M{cx + 18},56 l-36,36" stroke="{RED}" stroke-width="7" stroke-linecap="round"/>')
         elif st == "fleche":  # green arrow pointing down: this lane is open
             S.add(f'<path d="M{cx},92 l16,-18 l-9,0 l0,-20 l-14,0 l0,20 l-9,0 z" fill="{GREEN}"/>')
-        elif st == "rabattement_droite":  # amber arrow slanting down-right: move to the next lane
+        elif st == "rabattement_droite":  # flashing amber arrow slanting down-right: move to the next lane
+            for ang in range(0, 360, 45):
+                a = math.radians(ang)
+                S.add(f'<line x1="{cx + 36 * math.cos(a):.1f}" y1="{74 + 36 * math.sin(a):.1f}" x2="{cx + 43 * math.cos(a):.1f}" y2="{74 + 43 * math.sin(a):.1f}" stroke="{AMBER}" stroke-width="3" stroke-linecap="round"/>')
             S.add(f'<path d="M{cx - 14},60 l22,22" fill="none" stroke="{AMBER}" stroke-width="6" stroke-linecap="round"/>')
             S.add(f'<path d="M{cx + 14},88 l-16,-2 l14,-14 z" fill="{AMBER}" stroke="{AMBER}" stroke-width="3" stroke-linejoin="round"/>')
         elif st == "rabattement_gauche":
             S.add(f'<path d="M{cx + 14},60 l-22,22" fill="none" stroke="{AMBER}" stroke-width="6" stroke-linecap="round"/>')
             S.add(f'<path d="M{cx - 14},88 l16,-2 l-14,-14 z" fill="{AMBER}" stroke="{AMBER}" stroke-width="3" stroke-linejoin="round"/>')
-    S.add(f'<g transform="translate(240,230)">{vehicle_sprite("car", "bleu")}</g>')
+    S.add(f'<g transform="translate({120 + 120 * params.get("me_lane", 1)},230)">{vehicle_sprite("car", "bleu")}</g>')
     return str(S)
 
 
@@ -473,14 +472,16 @@ def critair(params):
 
 
 def triangle_distance(params):
-    """Broken-down car with warning triangle placed 30 m behind."""
-    S = SVG(480, 200)
-    S.add(f'<rect x="0" y="0" width="480" height="200" fill="{GRASS}"/>')
+    """Broken-down car and warning triangle upstream; the measured gap is broken (≈) because it is not to scale."""
+    S = SVG(480, 220)
+    S.add(f'<rect x="0" y="0" width="480" height="220" fill="{GRASS}"/>')
     S.add(f'<rect x="0" y="40" width="480" height="120" fill="{ASPHALT}"/>')
     _dashes_h(S, 100, 3, 10, w=4)
     S.add(f'<g transform="translate(400,130) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
-    S.add('<path d="M120,150 l14,-26 l14,26 z" fill="#e53935" stroke="#fff" stroke-width="2"/>')
-    S.add(f'<line x1="140" y1="175" x2="360" y2="175" stroke="#fff" stroke-width="2"/><text x="250" y="192" font-family="{FONT}" font-size="14" text-anchor="middle" fill="#fff">{esc(str(params.get("label", "≈ 30 m")))}</text>')
+    S.add('<path d="M66,150 l14,-26 l14,26 z" fill="#e53935" stroke="#fff" stroke-width="2"/>')
+    S.add('<path d="M80,192 H222 M258,192 H362 M80,184 v16 M362,184 v16 M216,202 l12,-20 M246,202 l12,-20" '
+          'stroke="#222" stroke-width="3" fill="none"/>')
+    S.add(f'<text x="221" y="182" font-family="{FONT}" font-size="20" font-weight="700" text-anchor="middle" fill="#222">{esc(str(params.get("label", "≈ 30 m")))}</text>')
     return str(S)
 
 
@@ -796,32 +797,6 @@ def cone(params):
     return str(S)
 
 
-def chantier_approche(params):
-    """Anticipation before a worksite: schematic positions, not an implantation plan."""
-    S = SVG(640, 440)
-    S.add(f'<rect width="640" height="440" fill="{GRASS}"/>')
-    S.add('<path d="M112 0H408V440H112Z" fill="#ced6c8"/>')
-    S.add(f'<path d="M130 0H390V440H130Z" fill="{ASPHALT}"/>')
-    S.add(f'<path d="M137 0V440 M383 0V440" stroke="{MARK}" stroke-width="3"/>')
-    S.add(f'<path d="M260 0V440" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 18"/>')
-    S.add('<path d="M351 0H390V283L351 184Z" fill="#c9b99b"/>')
-    S.add('<path d="M364 22L380 18L382 140L370 151L362 143L365 100L359 69Z" fill="#99856a"/>')
-    S.add('<path d="M369 35L375 32 M366 63L377 67 M368 95L378 90 M366 126L377 129" '
-          'stroke="#b8a588" stroke-width="4" stroke-linecap="round"/>')
-    # One boundary, with a taper that leaves a corridor within the right lane.
-    for x, y in ((350, 27), (350, 67), (350, 107), (350, 147),
-                 (350, 187), (362, 219), (374, 251), (386, 283)):
-        S.add(f'<g transform="translate({x},{y}) scale(.14) translate(-120,-249)">')
-        _draw_cone(S)
-        S.add('</g>')
-    # Face-on sign for recognition within the plan view, before the cones.
-    S.add('<path d="M489 334V371 M474 374H504" stroke="#687475" stroke-width="5" stroke-linecap="round"/>')
-    uri = sign_data_uri(params["sign"]["file"], 240)
-    S.add(f'<image x="435" y="255" width="112" height="99" xlink:href="{uri}"/>')
-    S.add(f'<g transform="translate(325,355) scale(1.6)">{ME}</g>')
-    return str(S)
-
-
 # These scenes share one carriageway: traffic upwards, median left, shoulder right.
 def _motorway_scene():
     S = SVG(640, 440)
@@ -1049,6 +1024,14 @@ def triangle_seul(params):
     return str(S)
 
 
+def cedez_le_passage(params):
+    """AB3a without its optional plate (the Commons file prints « CÉDEZ LE PASSAGE », i.e. the answer)."""
+    S = SVG(300, 270)
+    S.add('<path d="M20,22 L280,22 L150,248 Z" fill="#d52b1e" stroke="#9a9a9a" stroke-width="2" stroke-linejoin="round"/>')
+    S.add('<path d="M58,44 L242,44 L150,204 Z" fill="#ffffff"/>')
+    return str(S)
+
+
 def balise_piquet(params):
     """Post beacons J1 (white band), J3 (red band), J1bis (red top): white trapezoid post, 1 m high."""
     kind = params.get("kind", "j1")
@@ -1091,5 +1074,5 @@ REGISTRY.update({
     "livraison": livraison, "direction_panel": direction_panel, "lieu_dit": lieu_dit, "feu_bicolore": feu_bicolore,
     "giratoire_sortie": giratoire_sortie, "rappel_limites": rappel_limites, "entrecroisement": entrecroisement, "route_c107": route_c107,
     "camion_virage": camion_virage, "camion_roues": camion_roues, "chantier_rabattement": chantier_rabattement, "corridor_securite": corridor_securite,
-    "cycliste_tourne_droite": cycliste_tourne_droite, "chantier_approche": chantier_approche, "cone": cone, "triangle_seul": triangle_seul, "barriere_k2": barriere_k2,
+    "cycliste_tourne_droite": cycliste_tourne_droite, "cone": cone, "cedez_le_passage": cedez_le_passage, "triangle_seul": triangle_seul, "barriere_k2": barriere_k2,
 })

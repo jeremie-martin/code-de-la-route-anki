@@ -22,10 +22,10 @@
   contexte: Matin d'hiver, moteur froid.
   affirmation: Je laisse tourner le moteur deux ou trois minutes avant de partir, pour le ménager.
   verdict: faux
-  pourquoi: 'Un moteur chauffe bien plus vite en roulant : on démarre et on roule doucement les premiers kilomètres. À l''arrêt il consomme et pollue sans avancer, et cela est interdit sans nécessité.'
+  pourquoi: 'Un moteur chauffe bien plus vite en roulant : on démarre et on roule doucement les premiers kilomètres. Au ralenti, il consomme et pollue sans avancer.'
   theme: E
   sous_theme: ecoconduite
-  source: "ADEME, Écoconduite ; arrêté du 12 novembre 1963"
+  source: ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
 - id: aff-e-trajets-courts
   affirmation: Les trajets de moins de trois kilomètres polluent peu, puisqu'ils sont courts.
   verdict: faux
@@ -78,7 +78,7 @@
   sous_theme: pollution
   source: Code de la route, art. R411-19-1 et R318-2 ; service-public.fr F33371
 - id: aff-e-diesel-nox
-  contexte: Un diesel et une essence de même année et de même puissance.
+  contexte: Une voiture diesel récente équipée d’un filtre à particules et une essence récente à injection directe.
   affirmation: C’est le diesel qui émet le plus de particules à l’échappement.
   verdict: faux
   pourquoi: Le système d’injection, la dépollution (notamment le filtre à particules) et les conditions d’usage
@@ -109,7 +109,7 @@
   contexte: Place équipée d'une borne de recharge, libre devant les commerces.
   affirmation: Je peux m'y garer sans recharger, le temps d'une course rapide.
   verdict: faux
-  pourquoi: 'La place est réservée aux véhicules en charge : s''y arrêter sans recharger est un stationnement gênant (35 €), avec mise en fourrière possible.'
+  pourquoi: 'La place est réservée aux véhicules en charge : y stationner sans recharger est un stationnement gênant (35 €), avec mise en fourrière possible.'
   theme: E
   sous_theme: ecomobilite
   source: Code de la route, art. R417-10 III 3°

@@ -12,7 +12,7 @@
   check: {pair: [S, E, apres]}
   question: "Intersection sans aucune signalisation. Je passe avant ou après la voiture rouge ?"
   reponse: "Après : elle vient de ma droite."
-  explication: "Sans signalisation, c'est la priorité à droite (art. R415-5). Je ralentis à l'approche pour pouvoir m'arrêter, je cède le passage, puis je passe."
+  explication: "Sans signalisation, c'est la priorité à droite (R415-5). Je ralentis à l'approche pour pouvoir m'arrêter, je cède le passage, puis je passe."
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5"
@@ -67,7 +67,7 @@
   check: {pair: [S, N, apres]}
   question: "Intersection sans signalisation. Je tourne à gauche, la voiture rouge d'en face va tout droit. Qui passe en premier ?"
   reponse: "La rouge : en tournant à gauche, je coupe sa trajectoire, je dois la laisser passer."
-  explication: "Règle du tourne-à-gauche (art. R415-4) : celui qui tourne à gauche cède le passage aux véhicules venant en face, qu'ils aillent tout droit ou tournent à droite. Je me place près de l'axe, clignotant, et j'attends au centre sans gêner."
+  explication: "Règle du tourne-à-gauche (R415-4) : celui qui tourne à gauche cède le passage aux véhicules venant en face, qu'ils aillent tout droit ou tournent à droite. Je me place près de l'axe, clignotant, et j'attends au centre sans gêner."
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-4"
@@ -225,11 +225,9 @@
       S: {vehicle: {colour: bleu, me: true}, goes: straight, sign: stop}
       E: {vehicle: {colour: rouge}, goes: straight, sign: stop}
   check: {pair: [S, E, apres]}
-  question: Les deux voitures sont arrêtées à leur ligne et la route transversale est libre. Qui repart en premier ?
+  question: Les deux voitures ont marqué l’arrêt à leur ligne ; aucun autre véhicule n’approche. Qui repart en premier ?
   reponse: 'La rouge : nous avons chacun un STOP ; entre deux véhicules arrêtés au STOP, la priorité à droite s''applique.'
-  explication: 'Après l''arrêt obligatoire, s''il n''y a personne sur la route prioritaire, aucun texte spécial ne
-    départage deux véhicules au STOP : on revient à la règle générale, la priorité à droite. C''est la réponse attendue
-    à l''épreuve.'
+  explication: 'Chaque STOP oblige à céder aux véhicules de l’autre route. Ici, chacun est sur la route de l’autre et aucun texte ne nous départage : on revient à la règle générale (R415-5), et la rouge, à ma droite, repart la première.'
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5 et R415-6"
@@ -255,10 +253,7 @@
   question: Une voiture sort d'un parking (à ma droite) au moment où j'arrive. La priorité à droite s'applique-t-elle
     ?
   reponse: Non. En sortant du parking, la voiture rouge doit me céder le passage.
-  explication: 'Art. R415-9 : celui qui débouche d''un accès non ouvert à la circulation publique, d''un chemin
-    de terre ou d''une aire de stationnement doit céder le passage à tout autre véhicule (et aux piétons du
-    trottoir qu''il franchit, R415-11). Même chose pour un véhicule qui quitte un stationnement ou une voie
-    non revêtue.'
+  explication: 'R415-9 : celui qui débouche d''un accès non ouvert à la circulation publique, d''un chemin de terre ou d''une aire de stationnement doit céder le passage à tout autre véhicule. Il franchit le trottoir au pas, en laissant passer les piétons.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-9 et R415-11
@@ -290,7 +285,7 @@
   question: Les véhicules suivent les flèches. Quel est l’ordre de passage, et quel indice tranche entre moi et
     la voiture rouge ?
   reponse: "Rouge, puis moi, puis verte (quand son feu passera au vert). Ce qui tranche entre la rouge et moi : je tourne à gauche et elle vient d'en face."
-  explication: "Le feu vert m'autorise à passer, mais en tournant à gauche je cède aux véhicules d'en face. Je m'avance au centre de l'intersection avec mon clignotant et je termine mon virage dès que c'est libre, même si mon feu passe à l'orange."
+  explication: Le feu vert m'autorise à passer, mais en tournant à gauche je cède aux véhicules d'en face. Je m'avance au centre de l'intersection avec mon clignotant et je termine mon virage dès que c'est libre, même si mon feu passe au jaune.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R412-33 et R415-4
@@ -313,7 +308,7 @@
   reponse: 'La rouge : feux au jaune clignotant = prudence et retour aux panneaux ou, sans panneau, à la priorité
     à droite.'
   explication: 'Le jaune clignotant n''est pas un feu vert : il signale que les feux ne règlent plus la circulation.
-    On applique la signalisation verticale présente ; à défaut, la priorité à droite (art. R412-32 et R415-5).'
+    On applique la signalisation verticale présente ; à défaut, la priorité à droite (R412-32 et R415-5).'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R412-32 et R415-5

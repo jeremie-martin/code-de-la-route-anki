@@ -8,14 +8,11 @@
   - Pour comparer la pression d’un pneu à la valeur de référence du constructeur, la mesurer à {{c1::froid}}.
   - 'Repère d’entretien : vérifier la pression au moins une fois par {{c2::mois}} et avant un long trajet.'
 - id: m-pneus-hiver-chiffres
-  explication: Le marquage 3PMSF (montagne à trois pics et flocon) atteste un pneu hiver ; le seul M+S ne suffit plus
-    depuis le 1er novembre 2024. Avec des pneus cloutés, 90 km/h au plus, sans relever une limite plus basse.
+  explication: Les pneus cloutés ne sont autorisés que pendant une période hivernale fixée par arrêté. Des pneus hiver ordinaires (3PMSF) n’imposent pas de plafond particulier.
   theme: M
   sous_theme: pneus
   source: Code de la route, art. R413-7 et R314-3 ; Stych
-  rappels:
-  - Les pneus admis comme pneus hiver portent, avec le M+S, le marquage {{c1::3PMSF}} (flocon dans une montagne).
-  - Avec des pneus cloutés, la vitesse est plafonnée à {{c2::90 km/h}}, sans relever une limite plus basse.
+  texte: Avec des pneus cloutés, la vitesse est plafonnée à {{c1::90 km/h}}, sans relever une limite plus basse.
 - id: m-feux-portees
   explication: Distinguer « être visible » (position) et « éclairer » (croisement, route). Ces minima réglementaires
     par temps clair ne décrivent pas une portée réelle garantie en pluie, brouillard ou face à un obstacle sombre.

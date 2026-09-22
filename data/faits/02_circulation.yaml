@@ -1,5 +1,5 @@
 - id: l-vitesse-agglo
-  texte: "Du panneau d'entrée d'agglomération (EB10) au panneau de sortie (EB20), la vitesse maximale par défaut est de {{c1::50 km/h}}."
+  texte: Du panneau d'entrée d'agglomération au panneau de sortie, la vitesse maximale par défaut est de {{c1::50 km/h}}.
   explication: 'Une autorité locale peut abaisser la limite. Le relèvement à 70 exige notamment des accès riverains et traversées
     piétonnes en nombre limité et protégés. Zone 30 : 30 ; zone de rencontre : 20 ; aire piétonne : allure du pas, sans seuil
     légal universel de 6 km/h.'
@@ -47,9 +47,7 @@
   sous_theme: vitesse
   source: "R413-4 ; R412-12 ; R413-17, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
   rappels:
-  - Le plafond spécial lié à une visibilité très réduite s’applique quand on voit à moins de {{c1::50 m}}.
-  - 'Brouillard, visibilité inférieure à 50 m : sur autoroute comme ailleurs, je ne dépasse pas {{c2::50 km/h}} (une
-    limite plus basse reste plus basse).'
+  - 'Brouillard : quand la visibilité est inférieure à {{c1::50 m}}, sur autoroute comme ailleurs, je ne dépasse pas {{c1::50 km/h}} (une limite plus basse reste plus basse).'
 - id: l-vitesse-probatoire
   explication: 'Une limitation locale plus basse reste applicable. Pluie et permis probatoire ne se cumulent pas par soustractions
     : appliquer le plafond le plus bas qui concerne la situation. Sur une autoroute normalement limitée à 130,
@@ -99,7 +97,7 @@
   sous_theme: stationnement
   source: Code de la route, art. R417-11 ; Code de la voirie routière, art. L118-5-1
 - id: l-stationnement-alterne
-  explication: 'Le changement de côté a lieu le soir, à 20 h 30. Je lis les dates d’interdiction sur les panneaux : du 1er au 15, ou du 16 à la fin du mois. Une prescription de zone peut aussi imposer ce régime.'
+  explication: 'Le changement de côté se fait le soir, entre 20 h 30 et 21 h. Je lis les dates d’interdiction sur les panneaux : du 1er au 15, ou du 16 à la fin du mois. Une prescription de zone peut aussi imposer ce régime.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-2
@@ -113,8 +111,7 @@
   - ref: b6a3
     legende: Placé du côté interdit du 16 à la fin du mois (numéros impairs).
 - id: l-stationnement-cote
-  explication: 'Stationner à gauche d''une rue à double sens en agglomération est interdit (R417-1, 35 €) ; la nuit,
-    le véhicule y est aussi moins visible. La nuit sur chaussée non éclairée : feux de position allumés.'
+  explication: Stationner à gauche d'une rue à double sens en agglomération est interdit (R417-1, 35 €) ; la nuit, le véhicule y est aussi moins visible. Hors agglomération, la nuit, les feux de position restent allumés, même sur une route éclairée.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-1, R417-4 et R416-12
@@ -204,7 +201,7 @@
   sous_theme: signalisation
   source: "Code de la route, R411-25 et R411-28 ; IISR, 8e partie, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087"
   rappels:
-  - Les ordres de l’{{c1::agent}} qui règle la circulation prévalent sur les feux et les panneaux.
-  - Les {{c2::feux}} en fonctionnement prévalent sur les panneaux qui règlent la priorité, pas sur les autres interdictions.
-  - En cas de contradiction, la signalisation {{c3::temporaire}} (jaune) prévaut sur la signalisation permanente.
+  - Les ordres de l’{{c1::agent}} qui règle la circulation prévalent sur toute autre signalisation.
+  - Les {{c2::feux}} en fonctionnement prévalent sur les panneaux qui règlent la priorité, pas sur les autres prescriptions (sens interdit, interdiction de tourner…).
+  - En cas de contradiction, la signalisation {{c3::temporaire}} (souvent jaune) prévaut sur la signalisation permanente.
   debut: true

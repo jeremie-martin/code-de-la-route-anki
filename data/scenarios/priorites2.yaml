@@ -76,10 +76,9 @@
       W: {vehicle: {colour: rouge}, goes: straight, sign: feu_rouge}
     crosswalks: [E]
     pedestrian: E
-    caption: "Un piéton traverse la rue où je tourne"
   question: "Feu vert, je tourne à droite ; un piéton traverse la rue dans laquelle je m'engage. Qui passe ?"
   reponse: "Le piéton : le feu vert ne me donne pas la priorité sur les piétons engagés ou qui manifestent l'intention de traverser la rue abordée."
-  explication: "Article R415-11 (135 €, 6 points). Même règle pour un cycliste sur une bande cyclable que je coupe. La rouge, au feu rouge, attend."
+  explication: "R415-11 (135 €, 6 points). Même règle pour un cycliste sur une bande cyclable que je coupe. La rouge, au feu rouge, attend."
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-11"
@@ -90,9 +89,9 @@
       S: {vehicle: {colour: bleu, me: true}, goes: straight, sign: prioritaire}
       E: {vehicle: {colour: jaune, kind: tram}, goes: straight}
   check: {pair: [S, E, apres]}
-  question: "Je suis sur une route prioritaire ; un tramway arrive sur ma droite. Qui passe ?"
+  question: Un tramway arrive sur ma droite. Qui passe ?
   reponse: "Le tramway : il est prioritaire sur tous les usagers, même sur une route à caractère prioritaire."
-  explication: "Article R422-3 : priorité aux véhicules sur rails. Seuls une signalisation qui le lui impose (feux, panneau) ou un agent peuvent l'arrêter. Il ne peut ni dévier ni freiner court."
+  explication: "R422-3 : priorité aux véhicules sur rails. Seuls une signalisation qui le lui impose (feux, panneau) ou un agent peuvent l'arrêter. Il ne peut ni dévier ni freiner court."
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R422-3"
@@ -106,7 +105,7 @@
   check: {pair: [S, E, apres]}
   question: "Intersection en T sans signalisation : la route se prolonge tout droit et une rue débouche à ma droite ; la voiture rouge en sort pour tourner à sa gauche. Qui passe ?"
   reponse: "La rouge : elle vient de ma droite et la priorité à droite s'applique même dans une intersection en T."
-  explication: "Beaucoup de candidats croient que la route « qui continue » est prioritaire : sans panneau, non. Seuls un STOP, un cédez-le-passage ou une sortie de chemin/parking changeraient l'ordre."
+  explication: 'Beaucoup de candidats croient que la route « qui continue » est prioritaire : sans panneau, non. Seule une signalisation (STOP, cédez-le-passage, panneau de priorité, feux, agent) ou une sortie de chemin de terre ou de parking changerait l’ordre.'
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5"
@@ -119,7 +118,7 @@
     agent: bras_leve
   question: Mon feu est vert. L'agent au centre du carrefour fait le geste montré dans le médaillon. Que fais-je ?
   reponse: 'Je m''arrête : bras levé = arrêt pour tous les usagers, sauf ceux déjà engagés ; les ordres de l''agent priment sur les feux.'
-  explication: "Article R411-28. Le bras levé annonce en général un changement de sens de passage ; on attend le geste suivant."
+  explication: "R411-28. Le bras levé annonce en général un changement de sens de passage ; on attend le geste suivant."
   theme: L
   sous_theme: agents
   source: "Code de la route, art. R411-28"
@@ -149,7 +148,7 @@
     ma route. Qui passe ?
   reponse: 'Les pompiers : un véhicule prioritaire en intervention passe avant tout le monde, même s''il tourne
     à gauche et même si j''ai le feu vert.'
-  explication: 'Article R415-12 : céder « en toutes circonstances ». Je m''arrête et je lui laisse le carrefour,
+  explication: 'R415-12 : céder « en toutes circonstances ». Je m''arrête et je lui laisse le carrefour,
     sans manœuvre dangereuse.'
   theme: L
   sous_theme: priorites

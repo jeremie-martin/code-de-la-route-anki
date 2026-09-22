@@ -163,8 +163,7 @@
   question: Rouler vite fatigue-t-il plus que rouler lentement ?
   reponse: 'Oui : à vitesse élevée, le cerveau traite plus d’informations en moins de temps ; stress, fatigue et perte de
     vigilance arrivent plus vite.'
-  explication: 'Idée reçue à l''examen : « rouler lentement endort ». La Sécurité routière retient l''inverse. Plus la vitesse
-    est élevée, plus le champ visuel se rétrécit et plus la fatigue arrive vite.'
+  explication: 'Idée reçue : « rouler lentement endort ». La Sécurité routière retient l''inverse. Plus la vitesse est élevée, plus le champ visuel se rétrécit et plus la fatigue arrive vite.'
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, La fatigue et la conduite ; La vitesse"

@@ -19,7 +19,7 @@ j1:
   signification: Balise blanche à collier rétroréfléchissant blanc, implantée à l'extérieur d'un virage pour en matérialiser
     le tracé.
   complement: null
-  piege: null
+  piege: La couleur de la bande distingue virage (blanche), intersection (rouge) et simple guidage (noire).
   comparaisons:
   - ref: j3
     legende: 'Bande rouge : intersection.'
@@ -41,7 +41,7 @@ j4:
     legende: 'Flèches divergentes : séparation de courants de circulation.'
 j6:
   signification: Piquets blancs (1 m) espacés le long de l'accotement, portant une bande noire oblique et un catadioptre blanc.
-  piege: null
+  piege: 'Bande noire : simple guidage, ni virage ni intersection.'
   complement: null
   comparaisons:
   - ref: j1
@@ -56,7 +56,7 @@ j10:
 feu-rouge:
   signification: 'Arrêt absolu : interdiction de franchir la ligne d''effet des feux, y compris pour tourner à droite.'
   conduite: S'arrêter avant la ligne d'arrêt, sans empiéter sur le passage piéton ni le sas vélo ; attendre le vert.
-  complement: Sans ligne au sol, l'arrêt se fait à l'aplomb du feu.
+  complement: Sans ligne au sol, je m'arrête avant le passage piéton s'il précède le feu, sinon à l'aplomb du feu.
   piege: Pas de « tourne à droite au rouge » en France. Les roues au-delà de la ligne, c'est déjà un feu grillé.
 feu-jaune-fixe:
   signification: 'Annonce l''imminence du rouge : arrêt obligatoire, sauf si l''on ne peut plus s''arrêter dans des conditions
@@ -67,7 +67,7 @@ feu-jaune-fixe:
   piege: 'Ne jamais accélérer pour « passer à l''orange » : le jaune impose l''arrêt, sauf impossibilité.'
 feu-vert:
   signification: Passage autorisé, à condition que l'intersection soit dégagée et en cédant le passage aux piétons engagés.
-  conduite: Ne s'engager que si l'on peut dégager le carrefour ; en tournant, céder aux piétons et aux véhicules d'en face.
+  conduite: Ne s'engager que si l'on peut dégager le carrefour ; en tournant, céder aux piétons, et à gauche aux véhicules d'en face.
   complement: Il n'existe pas de feu vert clignotant en France.
   piege: Le vert ne donne pas la priorité sur les piétons ; il prévaut sur un STOP ou un cédez-le-passage placé dessous.
 feu-jaune-clignotant:
@@ -131,7 +131,7 @@ marq-ligne-discontinue-t1:
 marq-ligne-dissuasion:
   signification: 'Ligne discontinue à intervalles courts : elle dissuade de dépasser. Je ne dépasse qu’un véhicule lent, avec assez de visibilité et de place.'
   conduite: Ne pas dépasser un véhicule à allure normale ; dépasser un tracteur, un cyclomoteur ou un engin lent reste possible.
-  complement: Fréquente sur routes sinueuses et à l’approche des sorties d’autoroute.
+  complement: Fréquente sur routes sinueuses ou en rampe, où les dépassements sont délicats.
 marq-ligne-mixte:
   signification: 'Ligne continue accolée à une ligne discontinue : c''est la ligne la plus proche de mon véhicule qui s''applique.'
   conduite: 'Discontinue de mon côté : je peux dépasser ; continue de mon côté : c''est interdit.'
@@ -149,7 +149,7 @@ marq-ligne-stop:
   piege: Ligne transversale CONTINUE = STOP ; ligne transversale DISCONTINUE (T'2) = cédez-le-passage.
 marq-ligne-cedez:
   signification: 'Ligne blanche discontinue en travers de la voie : je cède le passage avant de la franchir, sans arrêt obligatoire si la voie est libre.'
-  complement: Se trouve aussi aux entrées de giratoire et en fin de voie d’insertion.
+  complement: Se trouve notamment aux entrées de giratoire.
   piege: 'Un grand triangle blanc isolé, pointe vers moi, peut précéder cette ligne ; trois petits triangles pointés dans
     mon sens, sur une rampe, signalent un ralentisseur.'
 marq-ligne-effet-feux:
@@ -202,7 +202,7 @@ marq-couloir-bus:
   complement: Le panneau de voie réservée précise les usagers autorisés. Une ligne continue ne se franchit pas. Certains couloirs sont à contresens.
   piege: 'Y circuler : 135 € (R412-7) ; s’y arrêter ou y stationner : « très gênant », 135 € (R417-11).'
 marq-sas-velo:
-  signification: Espace réservé aux cyclistes entre deux lignes d'effet des feux (3 à 5 m), à un carrefour à feux.
+  signification: Espace réservé aux cycles (et aux trottinettes électriques) entre deux lignes d'effet des feux (3 à 5 m), à un carrefour à feux.
   conduite: 'En voiture ou à moto : s''arrêter à la première ligne, jamais dans le sas.'
   complement: Il permet aux cyclistes de se placer devant, bien visibles, et de démarrer les premiers.
   piege: 'S’engager dans le sas quand on risque d’y rester bloqué est une infraction (R415-2) ; franchir la ligne
@@ -216,6 +216,7 @@ marq-ligne-jaune-zigzag:
   conduite: Ne pas s'y arrêter, même brièvement ; ne pas gêner le bus qui repart.
   complement: Aux arrêts de bus. S’y arrêter ou stationner est un stationnement gênant, avec fourrière possible.
   piege: 'Un couloir bus, lui, est très gênant : 135 €.'
+  signification: 'Ligne jaune en zigzag le long du trottoir, qui matérialise un arrêt d''autobus : les autres véhicules ne s''y arrêtent ni n''y stationnent pendant la période où circulent les bus.'
 marq-livraison:
   nom: Aire de livraison (ligne jaune discontinue + inscription LIVRAISON)
   signification: 'Emplacement réservé à l''arrêt des véhicules qui chargent ou déchargent des marchandises : ligne jaune
@@ -227,8 +228,7 @@ marq-ralentisseur-triangles:
     d'un ralentisseur.
   complement: Ne pas confondre avec le grand triangle isolé, pointe vers le conducteur, qui peut précéder une ligne de
     cédez-le-passage.
-  conduite: 'Ralentir fortement avant de franchir : dos-d’âne et plateaux ne sont implantés que dans des zones limitées
-    à 30 km/h.'
+  conduite: 'Ralentir fortement avant de franchir : ces ralentisseurs se trouvent en agglomération, souvent en zone 30.'
 a2b:
   complement: null
   piege: Le triangle annonce le ralentisseur ; le carré bleu en indique l’emplacement.
@@ -239,7 +239,7 @@ a2b:
 a7:
   conduite: Ralentir, être prêt à s'arrêter ; ne jamais s'engager si l'on risque d'être immobilisé sur les voies.
   complement: null
-  piege: Le dépassement n'est interdit qu'aux passages à niveau SANS barrière ni demi-barrière (R414-12).
+  piege: L'interdiction propre de dépasser vise les passages sans barrière ; ici, un dépassement reste soumis aux règles générales, et je ne m'engage jamais si je risque de m'immobiliser sur les voies.
 a9b:
   signification: 'Annonce la traversée de voies de tramways : le tramway est prioritaire, il ne peut ni freiner court ni s''écarter.'
   conduite: Ralentir, regarder des deux côtés et lui céder le passage, même sur une route prioritaire.
@@ -254,6 +254,7 @@ a13b:
     legende: 'Carré bleu : le passage est ici.'
   - ref: a13a
     legende: 'Deux enfants : lieu fréquenté par des enfants.'
+  piege: Le triangle annonce le passage ; le carré bleu le situe.
 a16:
   signification: Annonce une descente dangereuse ; le nombre indiqué (ex. 10 %) est le pourcentage de pente.
   conduite: Rétrograder pour utiliser le frein moteur ; en montagne, le véhicule qui descend facilite le croisement.
@@ -269,7 +270,7 @@ a24:
   signification: 'Annonce une zone exposée à des vents latéraux violents : pont, viaduc, plaine, sortie de tunnel.'
   conduite: Ralentir, tenir le volant à deux mains, garder ses distances des véhicules hauts et des deux-roues.
   complement: Une manche à air peut préciser l’endroit exposé et montrer la direction et la force du vent.
-  piege: Le symbole est ROUGE, exception parmi les symboles noirs des panneaux de danger.
+  piege: null
 d-couleur-bleu:
   complement: 'Code des couleurs : bleu = autoroute ; vert = grande liaison ; blanc = itinéraire local ; jaune = déviation
     ; marron = touristique.'
@@ -282,8 +283,7 @@ c6:
   conduite: "Ne pas s'arrêter sur l'emplacement. En agglomération, ralentir et au besoin s'arrêter pour laisser le bus quitter son arrêt lorsqu'il annonce son départ par le clignotant (R412-11)."
   complement: null
 c12:
-  signification: 'La chaussée est à sens unique : tous les véhicules circulent dans le sens de la flèche ; le demi-tour y
-    est impossible.'
+  signification: 'La chaussée est à sens unique : tous les véhicules circulent dans le sens de la flèche ; le demi-tour y est interdit, puisqu''il ferait circuler à contresens.'
   conduite: Rester à droite, sauf pour tourner à gauche ou dépasser ; attention aux cyclistes à contresens si double-sens
     cyclable.
   complement: À l’autre extrémité, un sens interdit empêche les véhicules d’entrer face à moi.
@@ -317,12 +317,11 @@ c25a:
     gen: rappel_limites
 c27:
   complement: Au sol, trois triangles blancs sur la rampe.
-  piege: null
+  piege: Le carré bleu se trouve au ralentisseur ; le triangle l'annonce en amont.
   comparaisons:
   - ref: a2b
     legende: 'Triangle : le ralentisseur est plus loin.'
-  conduite: Franchir à vitesse très réduite, sans dépasser ; dos-d’âne et plateaux ne sont implantés que dans des
-    zones limitées à 30 km/h.
+  conduite: Franchir à vitesse très réduite, sans dépasser ; ces ralentisseurs se trouvent en agglomération, souvent en zone 30.
 c28:
   signification: Annonce une réduction du nombre de voies (ex. de 3 à 2, de 2 à 1).
   complement: null
@@ -429,11 +428,10 @@ e31:
   piege: Lettres ITALIQUES blanches sur fond noir = lieu-dit ; lettres droites noires sur fond blanc bordé de rouge = agglomération.
   conduite: 'Ce panneau ne change pas la limitation : je conserve celle applicable à la route, sauf autre panneau de vitesse.'
 eb10:
-  signification: 'Entrée d''agglomération : à partir du panneau, 50 km/h sauf indication, priorité à droite en l''absence
-    de signalisation, klaxon interdit sauf danger.'
+  signification: 'Entrée d''agglomération : à partir du panneau et jusqu''au panneau de sortie, 50 km/h sauf indication, et klaxon réservé au danger immédiat.'
   conduite: Être à 50 km/h au niveau du panneau ; redoubler d'attention (piétons, cyclistes, intersections).
   complement: null
-  piege: Un E31 (lieu-dit, lettres italiques blanches sur fond noir) ne limite PAS la vitesse à 50.
+  piege: 'La priorité à droite n''est pas propre à l''agglomération : sans signalisation, elle s''applique partout. Un nom en lettres blanches italiques sur fond noir (lieu-dit) ne limite pas la vitesse.'
 b21-1:
   complement: Placé en face de l'usager, au-delà de l'endroit où il doit tourner.
   piege: 'Flèche horizontale : je tourne avant le panneau. Flèche coudée : je tourne à la prochaine intersection.'
@@ -484,8 +482,10 @@ ab3a:
   signification: À l'intersection, céder le passage aux véhicules circulant sur la route croisée ou rejointe, sans obligation
     de s'arrêter.
   conduite: Ralentir, contrôler, s'arrêter à la ligne discontinue si nécessaire, et ne s'engager qu'en sécurité.
-  complement: Se trouve aussi en fin de voie d’insertion et aux entrées de giratoire.
+  complement: Se trouve notamment aux entrées de giratoire.
   piege: La pointe vers le bas permet de reconnaître le cédez-le-passage, même de dos. Si un feu fonctionne, je suis ses indications.
+  image:
+    gen: cedez_le_passage
 ab4:
   signification: Arrêt complet à la ligne ; sans ligne, à la limite de la chaussée abordée. Puis céder le passage aux véhicules
     de l’autre route.
@@ -634,9 +634,6 @@ vr-losange-debut:
 agent-geste-avancer:
   signification: Un va-et-vient du bras dans le sens de la circulation invite à avancer ou à accélérer ; un bras pointé indique
     où aller.
-sr3e:
-  signification: 'Pictogramme radar + rappel de la vitesse maximale : contrôle automatisé, souvent un radar tronçon (vitesse
-    moyenne).'
 j13:
   signification: Balise à bandes obliques bleues et blanches signalant un obstacle permanent proche de la chaussée.
   complement: Les bandes bleues et blanches signalent un obstacle permanent ; les dispositifs rouges et blancs servent aux obstacles temporaires.
@@ -665,7 +662,7 @@ c51a:
     variables.
   complement: null
 ce29:
-  conduite: 'En tunnel : se garer, couper le moteur, laisser les clés, rejoindre l''issue de secours.'
+  conduite: Sur un début de feu, je peux utiliser l'extincteur signalé si c'est sans risque ; sinon j'évacue par l'issue de secours.
 ak17:
   conduite: Ralentir, se préparer à s'arrêter ; ne pas passer au rouge même si la voie semble libre.
 k5a:
@@ -695,7 +692,7 @@ r21c:
   complement: null
 marq-chevrons:
   signification: Chevrons blancs peints dans l'axe des voies (autoroutes, tunnels) pour matérialiser la distance de sécurité.
-  piege: Ces marques sont peintes sur la chaussée. Les chevrons sur fond bleu au bord de la route guident dans un virage ; ceux sur fond vert signalent une séparation de voies.
+  piege: Ces marques sont peintes sur la chaussée. Les chevrons sur fond bleu au bord de la route guident dans un virage ; les flèches blanches divergentes sur fond vert signalent une séparation de courants de circulation.
 marq-plateau-sureleve:
   signification: 'Ralentisseur trapézoïdal : rampes d''accès et plateau plat sur toute la largeur de la chaussée, souvent
     avec passage piéton surélevé.'
@@ -719,7 +716,7 @@ b8:
   signification: Accès interdit aux véhicules de transport de marchandises, camions et camionnettes. Un panonceau de tonnage peut restreindre l’interdiction aux véhicules dont le poids maximal autorisé dépasse la valeur indiquée.
   comparaisons:
   - ref: b13
-    legende: 'Tonnage : limite de poids réel, toutes catégories.'
+    legende: 'Nombre de tonnes : poids total autorisé (PTAC ou PTRA) supérieur à la valeur, tous véhicules.'
 b13:
   signification: Accès interdit aux véhicules dont le PTAC (ou le PTRA d'un ensemble) dépasse le nombre indiqué (ex. 3,5 t).
   conduite: 'Peut concerner un camping-car ou une voiture + remorque : se référer à la carte grise (F.2/F.3).'
@@ -727,11 +724,12 @@ b21c2:
   conduite: Se placer à gauche, clignotant gauche, et céder le passage aux véhicules venant en face.
   complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
 k10a:
-  complement: 'Le même piquet a deux faces : verte pour passer, rouge pour s’arrêter. Je suis celle que le signaleur me présente.'
+  complement: null
   signification: La face verte du piquet tenu par le signaleur m’autorise à passer dans l’alternat de chantier.
   comparaisons:
   - ref: k10b
     legende: 'Face rouge : arrêt obligatoire.'
+  piege: 'Je suis la face tournée vers moi : les usagers d''en face voient l''autre.'
 kc1:
   signification: 'Panneau rectangulaire jaune à inscription informant d''une situation temporaire : « ROUTE BARRÉE », « CIRCULATION
     ALTERNÉE », « CHAUSSÉE DÉFORMÉE »…'
@@ -781,9 +779,6 @@ da40:
     pour Lyon.'
   conduite: Choisir sa voie assez tôt, après contrôles ; ne pas couper les autres voies au dernier moment.
   complement: null
-m9v2:
-  signification: La prescription ne s’applique pas aux cycles, aux EDPM ni aux cyclomobiles légers.
-  conduite: Sous un sens interdit, anticiper ces usagers venant en face ; vérifier la voie avant de tourner.
 b9b:
   signification: Accès interdit aux cycles, aux EDPM et aux cyclomobiles légers.
   piege: 'Avec le même symbole de vélo : rond rouge = accès interdit ; rond bleu = piste obligatoire ; carré bleu = piste conseillée ; triangle = débouché de cyclistes.'
@@ -823,10 +818,11 @@ marq-losange-vr:
   signification: Losange blanc peint dans l'axe d'une voie réservée (covoiturage, transports en commun, taxis) sur voie rapide,
     en complément du panneau à losange.
 a2a:
-  complement: Deux bosses représentent une déformation de la chaussée ; une seule bosse annonce un ralentisseur aménagé.
+  complement: null
   comparaisons:
   - ref: a2b
     legende: 'Une seule bosse : ralentisseur aménagé.'
+  piege: 'Deux bosses : déformation de la chaussée ; une seule bosse : ralentisseur aménagé.'
 a17:
   complement: Un feu jaune clignotant peut être ajouté au sommet du panneau pour renforcer l’alerte.
 b33:
@@ -853,6 +849,7 @@ c25b:
   conduite: "Réduire à 110 sur autoroute dès qu’il pleut ou qu’il y a d’autres précipitations (repère pratique : essuie-glaces
     en marche)."
   complement: 'Jeune conducteur (permis probatoire) : 110 sur autoroute, 100 sur route à chaussées séparées, 80 sur route.'
+  signification: 'Rappel des limites de vitesse sur autoroute : 130 km/h par temps sec et 110 km/h par temps de pluie ; sur les autoroutes limitées à 110, 100 par temps de pluie.'
 c26a:
   complement: Damier rouge et blanc au sol à l’entrée.
 c29a:
@@ -865,7 +862,7 @@ c30:
 c208:
   complement: null
 b2a:
-  complement: Vaut pour la prochaine intersection.
+  complement: null
   piege: L’interdiction vise la prochaine intersection. Une flèche dans un rond rouge interdit une direction ; dans un rond bleu, elle impose une direction.
 b2b:
   complement: Vaut pour la prochaine intersection.
@@ -938,6 +935,8 @@ b40:
 d50:
   conduite: Je prépare ma sortie et me rabats progressivement à droite après contrôles ; je repère le numéro de sortie.
   code: D52a
+  signification: Sur autoroute, panneau annonçant à 2 000 m, 1 000 m puis 500 m la proximité d'un échangeur ou d'une bifurcation ; une variante indique aussi l'affectation des voies.
+  complement: null
 m1:
   complement: Le nombre indique la distance jusqu’au danger ou au lieu annoncé. Sous un cédez-le-passage, il annonce l’intersection plus loin ; sous un panneau de service, il indique la distance jusqu’au service.
 m4d2:
@@ -982,3 +981,11 @@ b9i:
   signification: Accès interdit aux véhicules tractant une caravane ou une remorque de plus de 250 kg.
 c13b:
   conduite: Je ne tourne pas dans cette voie si je ne m’y rends pas ; j’anticipe les demi-tours de ceux qui en sortent.
+c13c:
+  signification: Impasse pour les véhicules, mais avec une issue pour les piétons.
+a6:
+  conduite: Ralentir, se préparer à s'arrêter ; respecter les feux rouges clignotants et les barrières.
+
+agent-profil:
+  question: Que dois-je faire à l'approche de cet agent ?
+  signification: 'Je le vois de profil (dans l''alignement de ses bras tendus, ou de ses épaules bras baissés) : je suis autorisé à passer.'

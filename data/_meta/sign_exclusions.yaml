@@ -79,10 +79,8 @@
   couverts_par:
   - c-autoroute-deux-traits
   - sr3a
-  - sr3e
   - vr-losange-debut
   - u-interfiles-chiffres
-  - e-covoiturage-voie
 - codes:
   - VR-COULOIR-CONTRESENS
   raison: Le contresens réservé se lit sur l’affectation des voies et les catégories ; consolidation de la lecture de C24
@@ -289,7 +287,7 @@
   - m8a
   - m8b
   - m8d
-  - m9v2
+  - m9v1
   - m11b1
   - m11d
   - m1
@@ -374,7 +372,6 @@
   - b18c
   - u-matieres-dangereuses
   - sr3a
-  - sr3e
 - codes:
   - CE3a
   - CE16
@@ -559,3 +556,13 @@
   - e42
   - kd22
   - feu-rouge
+- codes:
+  - SR3e
+  raison: 'Même information que SR3a (contrôle automatisé de la vitesse) avec le rappel de la limite : rien de plus à apprendre.'
+  couverts_par:
+  - sr3a
+- codes:
+  - M9v2
+  raison: 'Variante d’inscription de M9v1 (« SAUF » et vélo) : même sens.'
+  couverts_par:
+  - m9v1

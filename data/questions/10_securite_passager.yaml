@@ -10,8 +10,7 @@
   question: 'Choc frontal à 50 km/h : que devient un adulte non attaché ?'
   reponse: 'Il est projeté à la vitesse du véhicule et heurte l''habitacle ou les autres occupants : ses bras ne peuvent
     pas le retenir.'
-  explication: 'Repère des supports de préparation : le choc équivaut à une chute du troisième étage, et le corps
-    pèse « plusieurs tonnes » l''instant du choc. Retenir la nécessité de la ceinture, pas une constante.'
+  explication: 'Repère des supports de préparation : le choc équivaut à une chute du troisième étage, et le corps pèse « plusieurs tonnes » à l''instant du choc. Retenir la nécessité de la ceinture, pas une constante.'
   theme: S
   sous_theme: passagers
   source: "securite-routiere.gouv.fr, La ceinture de sécurité"
@@ -53,11 +52,9 @@
   sous_theme: passagers
   source: "Code de la route, art. R412-1-1 ; Stych, Installation des passagers"
 - id: s-enfant-moins-10-ans
-  question: Jusqu'à quel âge un enfant doit-il voyager dans un dispositif de retenue homologué (siège, réhausseur) ?
-  reponse: "Jusqu'à 10 ans, dans un dispositif adapté à sa taille et à son poids, en principe à l'arrière."
-  explication: 'Dérogations au dispositif de retenue (R412-2 III) : morphologie de l''enfant adaptée à la ceinture, certificat
-    médical, taxi ou transport en commun. Sanction : 135 € pour le conducteur, sans retrait de points. Les exceptions pour
-    la place avant sont celles de l''article R412-3.'
+  question: Dans quels cas un enfant de moins de 10 ans peut-il voyager sans dispositif de retenue homologué ?
+  reponse: Si sa morphologie est adaptée au port de la ceinture, sur certificat médical d’exemption, ou en taxi et en transport en commun.
+  explication: 'Hors de ces dérogations (R412-2 III), dispositif adapté jusqu’à 10 ans, à l’arrière sauf exceptions de R412-3. Sanction : 135 € pour le conducteur, sans retrait de points. La taille n’est pas le critère légal.'
   theme: S
   sous_theme: enfants
   source: "Code de la route, art. R412-2 et R412-3 ; service-public.fr, Transport d'enfants en voiture"
