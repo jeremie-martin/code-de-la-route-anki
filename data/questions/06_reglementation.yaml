@@ -10,14 +10,17 @@
   sous_theme: documents
   source: Code de la route, art. R233-1 ; service-public.fr F2794
 - id: d-vente-vehicule
-  question: Je vends ma voiture de huit ans à un particulier. Que dois-je lui remettre, et quelle démarche faire ?
-  reponse: Carte grise barrée et datée, certificat de situation administrative et contrôle technique de moins de 6 mois ;
-    puis je déclare la cession en ligne.
-  explication: Déclaration de cession sous 15 jours sur l'ANTS ou chez un professionnel habilité ; l'acheteur a ensuite un
-    mois pour établir la carte grise à son nom. Le contrôle technique doit dater de moins de 6 mois.
+  question: Je vends ma voiture de huit ans à un particulier, avec un contrôle technique favorable. Quels documents
+    de vente lui remettre, et quelle démarche faire ?
+  reponse: Carte grise barrée, datée (avec l’heure) et signée ; certificat de cession signé par nous deux ; certificat
+    de situation administrative de moins de 15 jours ; procès-verbal du contrôle technique. Je déclare la cession sous 15 jours.
+  explication: Le contrôle doit avoir moins de 6 mois lors de la demande de carte grise de l’acheteur. L’ANTS permet
+    la déclaration et fournit un code de cession à lui transmettre ; Simplimmat permet aussi une démarche commune.
+    Avec une contre-visite prescrite, le délai de 2 mois doit encore courir ; une défaillance critique exige réparation
+    et contre-visite avant la vente à un particulier.
   theme: D
   sous_theme: documents
-  source: Code de la route, art. R322-4 et R323-22 ; service-public.fr F21031
+  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F1707
 - id: d-conduite-supervisee
   question: À 19 ans, après ma formation en auto-école, je veux rouler avec un accompagnateur avant l’épreuve pratique. De
     quelle filière s’agit-il, et que change-t-elle par rapport à l’AAC ?

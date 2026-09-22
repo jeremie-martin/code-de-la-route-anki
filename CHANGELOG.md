@@ -1,3 +1,14 @@
+# Conditions et décisions — 22 septembre 2026
+
+- Huit notes corrigées sans ajout de cartes : limites sous la pluie, documents de vente, accès au 114,
+  remorquage, trois décisions d’écoconduite et comparaison des particules essence/diesel.
+- Les régimes moteur et seuils de climatisation arbitraires cèdent la place au choix adapté à la situation ;
+  les conditions manquantes et les références sont précisées. Consultations délimitées dans le registre.
+- Structure, ordre et médias conservés ; maintenance complétée sur la cohérence entre cartes et explications.
+- Vérification : 22 tests réussis, import et réimport réussis, 9 178 faces/configurations contrôlées sans échec.
+  Lecture visuelle des huit notes corrigées et de signaux/scénarios représentatifs ; vérification ponctuelle en
+  sombre et à 320 px. Rapports liés au SHA-256 du paquet. Pas d’essai AnkiMobile/AnkiDroid ni de mesure d’efficacité.
+
 # Audit ciblé — 22 septembre 2026
 
 - Corrections de fond : tabac/vapotage avec mineur, grille Euro NCAP 2026, statut des ambulances,

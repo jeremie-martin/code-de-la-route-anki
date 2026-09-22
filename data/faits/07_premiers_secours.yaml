@@ -17,12 +17,12 @@
   - 'Numéro des sapeurs-pompiers en France : {{c3::18}}.'
   - 'Numéro d’urgence utilisable dans toute l’Union européenne : {{c4::112}}.'
 - id: numero-114
-  texte: Le numéro d’urgence accessible par SMS ou visio, destiné aux personnes sourdes ou malentendantes, est le {{c1::114}}.
-  explication: Un automobiliste entendant utilise le 112, le 15, le 17 ou le 18 ; le 114 existe pour ne pas exclure les personnes
-    qui ne peuvent pas téléphoner.
+  texte: Le numéro d’urgence accessible par SMS ou visio aux personnes ayant des difficultés à entendre ou à parler est le {{c1::114}}.
+  explication: Une personne entendante qui ne peut pas parler à voix haute sans se mettre en danger peut aussi envoyer
+    un SMS au 114. Si je peux téléphoner, j’appelle le 112, le 15, le 17 ou le 18 selon l’urgence.
   theme: A
   sous_theme: alerter
-  source: service-public.fr — Numéros d'urgence
+  source: Ministère de l’Intérieur — https://www.masecurite.interieur.gouv.fr/fr/fiches-pratiques/famille-et-aides-aux-victimes/114-service-urgence-personnes-sourdes-sourdaveugles-malentendantes-aphasiques
 - id: borne-appel-autoroute
   texte: Sur autoroute, les bornes d'appel d'urgence (orange) sont implantées environ tous les {{c1::2 km}} ; elles localisent
     automatiquement l'appel et mettent en relation avec le poste de sécurité.

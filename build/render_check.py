@@ -19,6 +19,8 @@ from build.preview import CHROME, OUT
 from build.verify import import_package
 
 SAMPLES = {
+    'l-vitesse-probatoire', 'numero-114', 'd-vente-vehicule', 'm-remorquage',
+    'e-rapports-regime', 'e-moteur-arret', 'e-climatisation-conso', 'aff-e-diesel-nox',
     'aff-s-fumer-mineur', 'aff-s-euroncap-pietons', 'aff-m-voyant-abs-distance',
     'aff-m-tpms-orange', 'l-entrecroisement', 'l-insertion-autoroute-priorite',
     'u-ambulance-privee-sans-sirene', 'l-passage-pieton-50m', 'c-distance-mouillee',

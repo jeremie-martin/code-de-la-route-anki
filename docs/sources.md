@@ -17,6 +17,7 @@ cette date.
 | Aides à la conduite | [CNSR, comité des experts — ADAS (2024)](https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf) | Fonctions et limites des systèmes |
 | Fiches pratiques | service-public.gouv.fr (permis F2828, points F1685/F2390, invalidation F1704, contrôle technique F2878, équipements F19459, sanctions vitesse F19460, alcool F31551) | Règles administratives, avec leur date « vérifié le » |
 | Pneumatiques, entretien | Préconisations constructeur (exemple : notice Renault pour les témoins), Michelin pour la pression | Valeurs propres au véhicule : à ne pas universaliser |
+| Écoconduite, émissions | [ADEME](https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2), notices constructeur ; [étude IFPEN 2020](https://www.ifpenergiesnouvelles.fr/article/emissions-des-voitures-essence-et-diesel-recentes-publication-letude-realisee-ifpen) | Gestes et mécanismes ; une mesure sur un échantillon ne classe pas tout le parc |
 | Anki | [Options de deck](https://docs.ankiweb.net/deck-options), [paquets](https://docs.ankiweb.net/importing/packaged-decks.html) | Ordre de collecte, enfouissement, import des préréglages |
 
 Les supports de préparation (Codes Rousseau, ENPC, Ornikar, En Voiture Simone, Stych…) servent à repérer

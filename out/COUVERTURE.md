@@ -1190,7 +1190,7 @@ Recherche Anki : `objectif::m-panne`
 | `m-changer-roue-securite` | socle | questions | Stych — Dépannages ; Code en Poche — Changer une roue |
 | `m-changer-roue-ecrous` | consolidation | questions | Stych — Dépannages ; Code en Poche — Changer une roue |
 | `m-crevaison-eclatement` | socle | questions | Stych — Dépannages |
-| `m-remorquage` | consolidation | questions | lepermislibre — Remorquer un véhicule en panne ; securite-routiere.gouv.fr — Véhicule en panne |
+| `m-remorquage` | consolidation | questions | Notice Renault (exemple, consulter celle du véhicule concerné) — https://www.user-manual.renault.com/fr/d%C3%A9pannage/remorquage-depannage-13 |
 
 ## s-retenir — Attacher chaque occupant et choisir le siège enfant
 
@@ -1269,7 +1269,7 @@ Recherche Anki : `objectif::a-secourir`
 | `triangle-presignalisation` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France |
 | `pas-ordre` | socle | faits | Sécurité civile, PSC juillet 2026, Protection, Alerte et Hémorragies — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `numeros-urgence` | socle | faits | service-public.fr — Numéros d'urgence ; Code pénal, art. 223-6 |
-| `numero-114` | socle | faits | service-public.fr — Numéros d'urgence |
+| `numero-114` | socle | faits | Ministère de l’Intérieur — https://www.masecurite.interieur.gouv.fr/fr/fiches-pratiques/famille-et-aides-aux-victimes/114-service-urgence-personnes-sourdes-sourdaveugles-malentendantes-aphasiques |
 | `borne-appel-autoroute` | consolidation | faits | securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA |
 | `triangle-distance` | socle | faits | Arrêté du 30 septembre 2008, art. 2 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000019566252/ |
 | `rcp-rythme` | socle | faits | Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
@@ -1369,7 +1369,7 @@ Recherche Anki : `objectif::d-vehicule`
 | `d-equipements-obligatoires` | socle | faits | Code de la route, art. R416-19 ; décret n° 2020-605 ; service-public.fr F19459 |
 | `d-vitres-teintees` | consolidation | faits | Code de la route, art. R316-3-1 |
 | `d-controle-papiers-oublies` | consolidation | questions | Code de la route, art. R233-1 ; service-public.fr F2794 |
-| `d-vente-vehicule` | consolidation | questions | Code de la route, art. R322-4 et R323-22 ; service-public.fr F21031 |
+| `d-vente-vehicule` | consolidation | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F1707 |
 | `d-ct-critique` | socle | questions | Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2878 |
 | `aff-d-vignette-assurance` | socle | affirmations | Décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362 |
 | `aff-d-ct-defaillance-majeure` | socle | affirmations | service-public.fr F2878 ; arrêté du 18 juin 1991 |
@@ -1388,10 +1388,10 @@ Recherche Anki : `objectif::e-ecoconduite`
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `e-feu-rouge-anticipation` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
-| `e-rapports-regime` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
+| `e-rapports-regime` | socle | questions | Notice Kia — fonctionnement économique — https://ownersmanual.kia.com/docview/webhelp/doc/e654660e-4668-4ece-9479-cacf1bc87727/topics/chapter6_23.html |
 | `e-moteur-arret` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
 | `e-frein-moteur` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
-| `e-climatisation-conso` | socle | questions | ADEME — Écoconduite (climatisation) ; securite-routiere.gouv.fr — Chaleur et conduite |
+| `e-climatisation-conso` | socle | questions | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 ; notice Renault Captur, Air conditionné — https://www.user-manual.renault.com/sites/renault/files/Captur-1238-6_FRA.pdf |
 | `e-surconsommations-causes` | consolidation | questions | ADEME ; Codeclic — Conduite économique ; Ornikar — Conduite écologique |
 | `e-ecomobilite-choix` | socle | questions | ADEME — Se déplacer autrement |
 | `aff-e-clim-autoroute` | consolidation | affirmations | ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 |
@@ -1428,7 +1428,7 @@ Recherche Anki : `objectif::e-pollution`
 | `e-ve-recharge` | socle | questions | service-public.fr ; Code de la route, art. R417-10 |
 | `aff-e-electrique-zero` | socle | affirmations | ADEME ; En Voiture Simone — Achat éco-responsable |
 | `aff-e-zfe-vignette` | consolidation | affirmations | Code de la route, art. R411-19-1 et R318-2 ; service-public.fr F33371 |
-| `aff-e-diesel-nox` | consolidation | affirmations | En Voiture Simone — Achat éco-responsable ; service-public.fr F33371 |
+| `aff-e-diesel-nox` | consolidation | affirmations | IFPEN — étude de véhicules Euro 6d-TEMP (2020), pas un classement de tout le parc 2026 — https://www.ifpenergiesnouvelles.fr/article/emissions-des-voitures-essence-et-diesel-recentes-publication-letude-realisee-ifpen |
 | `aff-e-ve-silence` | socle | affirmations | Règlement (UE) 540/2014 (AVAS) ; ADEME — Véhicules électriques |
 | `aff-e-covoiturage-electrique` | consolidation | affirmations | Ville de Paris — https://www.paris.fr/pages/la-voie-reservee-sur-le-peripherique-entre-en-vigueur-le-3-mars-30106 |
 

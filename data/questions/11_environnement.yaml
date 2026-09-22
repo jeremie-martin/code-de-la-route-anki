@@ -9,20 +9,19 @@
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
 - id: e-rapports-regime
-  question: À quel régime passe-t-on les rapports pour consommer moins ?
-  reponse: 'Tôt : vers 2 000 à 2 500 tr/min en essence, 1 500 à 2 000 en diesel, ou dès que l''indicateur de changement
-    de rapport l''affiche.'
-  explication: 'Repère des supports de préparation : un régime bas consomme moins à vitesse égale, tant que le moteur
-    garde assez de reprise (montée, charge). L''indicateur du tableau de bord l''emporte sur le chiffre.'
+  question: En montée, le moteur peine après un passage au rapport supérieur pour économiser du carburant.
+    Dois-je garder ce rapport ?
+  reponse: Non, je rétrograde pour retrouver une reprise suffisante. Éviter le sur-régime ne signifie pas faire peiner le moteur.
+  explication: Passer les rapports assez tôt lorsque les conditions le permettent, sans à-coups. Le bon rapport dépend
+    du moteur, de la charge et de la pente ; l’indicateur de changement de rapport est une aide, pas un ordre prioritaire sur la situation.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  source: Notice Kia — fonctionnement économique — https://ownersmanual.kia.com/docview/webhelp/doc/e654660e-4668-4ece-9479-cacf1bc87727/topics/chapter6_23.html
 - id: e-moteur-arret
   question: Les barrières d'un passage à niveau viennent de se fermer devant moi. Je laisse tourner le moteur ?
-  reponse: 'Non : je coupe le moteur. Au-delà d''une trentaine de secondes d''arrêt, il consomme et pollue pour rien
-    (le Stop & Start le fait seul).'
-  explication: Repère des supports de préparation, pas un délai réglementaire. Je garde ce qu'exige la sécurité (feux
-    la nuit, désembuage).
+  reponse: Non, je coupe le moteur pendant cet arrêt prolongé, ou laisse agir le Stop & Start.
+  explication: Le ralenti consomme sans faire avancer. Je garde les fonctions nécessaires à la sécurité (feux,
+    désembuage) ; il n’y a pas de compte à rebours universel à appliquer à chaque arrêt dans la circulation.
   theme: E
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
@@ -36,16 +35,15 @@
   sous_theme: ecoconduite
   source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
 - id: e-climatisation-conso
-  question: Forte chaleur. Pour limiter la consommation, quand ouvrir les vitres et quand utiliser la climatisation
-    ?
-  reponse: 'À faible vitesse (ville, bouchon) : vitres ouvertes. À vitesse élevée (route, autoroute) : climatisation
-    modérée, vitres fermées.'
-  explication: 'Vitres ouvertes, la résistance à l''air croît avec la vitesse ; au-delà de 70-80 km/h la climatisation
-    coûte moins. Ordre de grandeur ADEME : jusqu''à un quart de consommation en plus pour la climatisation en ville.
-    La vigilance passe avant l''économie : aérer un habitacle surchauffé avant de partir.'
+  question: Par forte chaleur, comment utiliser la climatisation sans gaspiller ni compromettre la conduite ?
+  reponse: Aérer d’abord l’habitacle surchauffé, puis utiliser une climatisation modérée, vitres fermées.
+    Garder un confort thermique compatible avec la vigilance.
+  explication: Refroidir davantage que nécessaire consomme de l’énergie. La surconsommation dépend du véhicule,
+    de la chaleur et de l’usage ; aucun seuil de vitesse universel ne décide à lui seul du meilleur choix.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — Écoconduite (climatisation) ; securite-routiere.gouv.fr — Chaleur et conduite
+  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+    ; notice Renault Captur, Air conditionné — https://www.user-manual.renault.com/sites/renault/files/Captur-1238-6_FRA.pdf
 - id: e-surconsommations-causes
   question: En dehors de ma façon de conduire, quels facteurs liés au véhicule augmentent la consommation ?
   reponse: La climatisation utilisée sans besoin, les accessoires de toit (résistance à l’air), une charge inutile et des

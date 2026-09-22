@@ -255,14 +255,16 @@
   sous_theme: depannage
   source: Stych — Dépannages
 - id: m-remorquage
-  question: Un ami propose de me remorquer après une panne. Est-ce possible ?
-  reponse: 'Sur autoroute, non : dépanneur agréé seulement. Sur route, oui avec une barre ou une corde, à allure très
-    réduite et feux de détresse allumés.'
-  explication: 'Boîte automatique, freinage et direction assistés inactifs moteur coupé : la notice peut imposer un
-    plateau. Le tracté doit avoir un conducteur au volant.'
+  question: Sur route ordinaire après une panne, un ami propose de tirer ma voiture avec une corde. Puis-je accepter
+    sans autre vérification ?
+  reponse: Non. Je vérifie la notice, l’aptitude au freinage et à la direction, et les conditions du remorquage.
+    En cas de doute, j’appelle l’assistance.
+  explication: La notice peut imposer un plateau ou limiter le remorquage roues au sol. Les assistances peuvent
+    être inactives moteur coupé. Une barre rigide et les points d’attache prévus évitent d’improviser avec une corde ;
+    cela ne suffit pas à rendre tout véhicule remorquable.
   theme: M
   sous_theme: depannage
-  source: lepermislibre — Remorquer un véhicule en panne ; securite-routiere.gouv.fr — Véhicule en panne
+  source: Notice Renault (exemple, consulter celle du véhicule concerné) — https://www.user-manual.renault.com/fr/d%C3%A9pannage/remorquage-depannage-13
 - id: m-pression-etiquette
   theme: M
   sous_theme: pneus

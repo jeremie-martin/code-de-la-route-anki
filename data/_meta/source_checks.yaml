@@ -1,3 +1,43 @@
+- id: audit-conditions-vitesse
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177128
+  portee: 'R413-1, R413-2 II et R413-5 : correction de l’explication « autoroute à 110 pour tous » ; distinction entre sections normalement à 130 et à 110. Version en ligne affichée au 19 septembre 2026.'
+  notes: [l-vitesse-probatoire]
+- id: audit-vente-documents
+  consulte_le: '2026-09-22'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F1707
+  portee: 'Fiche vérifiée le 23 janvier 2026 : certificat de cession manquant rétabli, signature de la carte grise, âge du certificat de situation administrative, déclaration sous 15 jours et conditions du contrôle technique. F21031 ne traitait que de la demande par courrier.'
+  notes: [d-vente-vehicule]
+- id: audit-114-accessibilite
+  consulte_le: '2026-09-22'
+  url: https://www.masecurite.interieur.gouv.fr/fr/fiches-pratiques/famille-et-aides-aux-victimes/114-service-urgence-personnes-sourdes-sourdaveugles-malentendantes-aphasiques
+  portee: 'Public ayant des difficultés à entendre ou parler ; SMS aussi lorsqu’une personne entendante ne peut parler à voix haute sans danger.'
+  notes: [numero-114]
+- id: audit-eco-decisions
+  consulte_le: '2026-09-22'
+  url: https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  portee: 'Page mise à jour le 25 août 2026 : arrêt prolongé et climatisation modérée, consommation variable. Les anciens seuils de 30 secondes et 70–80 km/h ne sont plus demandés ni présentés comme universels. Pas de revalidation des autres chiffres ADEME du deck.'
+  notes: [e-moteur-arret, e-climatisation-conso]
+- id: audit-rapport-adapte
+  consulte_le: '2026-09-22'
+  url: https://ownersmanual.kia.com/docview/webhelp/doc/e654660e-4668-4ece-9479-cacf1bc87727/topics/chapter6_23.html
+  portee: 'Notice constructeur : rétrograder lorsque le moteur fonctionne en sous-régime, éviter aussi le sur-régime. Remplace le rappel d’un régime fixe par une décision en montée.'
+  notes: [e-rapports-regime]
+- id: audit-clim-aeration
+  consulte_le: '2026-09-22'
+  url: https://www.user-manual.renault.com/sites/renault/files/Captur-1238-6_FRA.pdf
+  portee: 'Section Air conditionné, conseils d’utilisation, extraite par la recherche : aérer un habitacle surchauffé avant de démarrer et rouler vitres fermées. Notice utilisée pour ces gestes, pas pour généraliser un réglage chiffré.'
+  notes: [e-climatisation-conso]
+- id: audit-particules-motorisations
+  consulte_le: '2026-09-22'
+  url: https://www.ifpenergiesnouvelles.fr/article/emissions-des-voitures-essence-et-diesel-recentes-publication-letude-realisee-ifpen
+  portee: 'Étude IFPEN de 2020 sur 22 véhicules Euro 6d-TEMP : les particules mesurées ne suivent pas le classement diesel > essence de l’ancienne carte. Sert à réfuter cette généralisation, pas à classer tous les véhicules de 2026.'
+  notes: [aff-e-diesel-nox]
+- id: audit-remorquage-notice
+  consulte_le: '2026-09-22'
+  url: https://www.user-manual.renault.com/fr/d%C3%A9pannage/remorquage-depannage-13
+  portee: 'Notice : barre rigide, aptitude au roulage et au freinage, points prévus ; corde seulement si la législation l’autorise. Remplacement de l’autorisation générale de remorquer sur route par la vérification des conditions. Ne prétend pas trancher tous les cas légaux de remorquage.'
+  notes: [m-remorquage]
 - id: vitesses
   consulte_le: '2026-09-21'
   url: https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/

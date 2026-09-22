@@ -53,7 +53,8 @@
     limite plus basse reste plus basse).'
 - id: l-vitesse-probatoire
   explication: 'Une limitation locale plus basse reste applicable. Pluie et permis probatoire ne se cumulent pas par soustractions
-    : appliquer le plafond le plus bas qui concerne la situation (sous la pluie, l’autoroute est à 110 pour tous).'
+    : appliquer le plafond le plus bas qui concerne la situation. Sur une autoroute normalement limitée à 130,
+    pluie et permis probatoire donnent le même plafond de 110 ; sur une section normalement limitée à 110, c’est 100.'
   theme: L
   sous_theme: vitesse
   source: Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/

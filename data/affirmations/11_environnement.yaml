@@ -79,12 +79,14 @@
   source: Code de la route, art. R411-19-1 et R318-2 ; service-public.fr F33371
 - id: aff-e-diesel-nox
   contexte: Un diesel et une essence de même année et de même puissance.
-  affirmation: Le diesel émet davantage d'oxydes d'azote et de particules.
-  verdict: vrai
-  pourquoi: Un peu moins de CO₂, mais plus de NOx et de particules — d'où un classement Crit'Air une classe en dessous à date égale, et le filtre à particules et l'AdBlue sur les diesels récents.
+  affirmation: Ces deux informations suffisent pour savoir lequel émet le plus de particules à l’échappement.
+  verdict: faux
+  pourquoi: Le système d’injection, la dépollution (notamment le filtre à particules) et les conditions d’usage
+    comptent aussi. Une essence à injection directe peut émettre davantage de particules qu’un diesel filtré.
+    Distinguer les polluants ; le carburant seul ne fournit pas un classement universel.
   theme: E
   sous_theme: pollution
-  source: En Voiture Simone — Achat éco-responsable ; service-public.fr F33371
+  source: IFPEN — étude de véhicules Euro 6d-TEMP (2020), pas un classement de tout le parc 2026 — https://www.ifpenergiesnouvelles.fr/article/emissions-des-voitures-essence-et-diesel-recentes-publication-letude-realisee-ifpen
 - id: aff-e-ve-silence
   contexte: Je conduis un véhicule électrique dans une rue étroite où des piétons circulent.
   affirmation: Son silence est un danger pour les piétons.
