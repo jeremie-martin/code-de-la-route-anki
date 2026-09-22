@@ -156,7 +156,7 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
             illustration = it["illustration"]
             source_keys = {"gen", "commons"} & set(illustration) if isinstance(illustration, dict) else set()
             if (kind not in ("questions", "faits", "affirmations") or not isinstance(illustration, dict) or
-                    set(illustration) - {"gen", "commons", "params", "width", "legende"} or len(source_keys) != 1 or
+                    set(illustration) - {"gen", "commons", "params", "width", "legende", "signal"} or len(source_keys) != 1 or
                     ("gen" in illustration and illustration["gen"] not in gen_images.REGISTRY) or
                     not isinstance(illustration.get("params", {}), dict) or
                     type(illustration.get("width", 640)) is not int or illustration.get("width", 640) <= 0 or
@@ -633,7 +633,8 @@ def feedback_html(note: dict, field: str, names: dict[str, str]) -> str:
         result += '<div class="cdr-comparisons">' + ''.join(figures) + '</div>'
     if note.get("illustration"):
         illustration = note["illustration"]
-        result += ('<figure class="cdr-illustration">' + img_tag(names[note["id"] + ":illustration"]) +
+        size = " cdr-signal" if illustration.get("signal") else ""
+        result += (f'<figure class="cdr-illustration{size}">' + img_tag(names[note["id"] + ":illustration"]) +
                    '<figcaption>' + inline_md(illustration["legende"]) + '</figcaption></figure>')
     return result
 

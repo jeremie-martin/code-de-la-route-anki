@@ -105,6 +105,11 @@
   theme: E
   sous_theme: ecomobilite
   source: "Ville de Paris, https://www.paris.fr/pages/la-voie-reservee-sur-le-peripherique-entre-en-vigueur-le-3-mars-30106"
+  comparaisons:
+  - ref: vr-losange-debut
+    legende: 'Voie réservée : le panonceau dit qui peut l’emprunter.'
+  - ref: marq-losange-vr
+    legende: Losange au sol dans la voie réservée.
 - id: aff-e-borne-recharge
   contexte: Place équipée d'une borne de recharge, libre devant les commerces.
   affirmation: Je peux m'y garer sans recharger, le temps d'une course rapide.

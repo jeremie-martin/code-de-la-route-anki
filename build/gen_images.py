@@ -448,20 +448,33 @@ def pictogramme_medicament(params):
     return str(S)
 
 
-def critair(params):
-    """Crit'Air vignette classes 0 (green, electric/hydrogen), 1 (violet), 2 (yellow), 3 (orange), 4 (bordeaux), 5 (grey)."""
-    cls = str(params.get("classe", "1"))
-    col = {"0": "#4caf50", "1": "#7e57c2", "2": "#fdd835", "3": "#fb8c00", "4": "#8d2b2b", "5": "#616161"}[cls]
-    label = {"0": "0", "1": "1", "2": "2", "3": "3", "4": "4", "5": "5"}[cls]
-    S = SVG(300, 300)
-    S.add('<rect x="0" y="0" width="300" height="300" fill="#ffffff"/>')
-    S.add(f'<circle cx="150" cy="150" r="130" fill="{col}" stroke="#222" stroke-width="3"/>')
-    S.add(f'<text x="150" y="112" font-family="{FONT}" font-size="26" font-weight="800" text-anchor="middle" fill="#fff">Crit\'Air</text>')
-    S.add(f'<text x="150" y="215" font-family="{FONT}" font-size="96" font-weight="800" text-anchor="middle" fill="#fff">{label}</text>')
-    if cls == "0":
-        S.add(f'<text x="150" y="255" font-family="{FONT}" font-size="15" text-anchor="middle" fill="#fff">électrique / hydrogène</text>')
-    return str(S)
+CRITAIR = {"E": "#43a047", "1": "#7e57c2", "2": "#fdd835", "3": "#fb8c00", "4": "#7b3f2a", "5": "#757575"}
 
+
+def _critair_disc(S, cx, cy, r, cls):
+    """One Crit'Air sticker: class E (electric, hydrogen) is green without a figure; 1 to 5 carry their figure."""
+    S.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{CRITAIR[cls]}" stroke="#222" stroke-width="2"/>')
+    ink = "#222" if cls == "2" else "#ffffff"
+    S.add(f'<text x="{cx}" y="{cy - r * 0.32}" font-family="{FONT}" font-size="{r * 0.34:.0f}" font-weight="800" '
+          f'text-anchor="middle" fill="{ink}">Crit\'Air</text>')
+    if cls != "E":
+        S.add(f'<text x="{cx}" y="{cy + r * 0.62}" font-family="{FONT}" font-size="{r * 1.05:.0f}" font-weight="800" '
+              f'text-anchor="middle" fill="{ink}">{cls}</text>')
+
+
+def critair(params):
+    """Crit'Air stickers in a row (default: all six classes), each with its class written underneath."""
+    classes = params.get("classes", list(CRITAIR))
+    cols = min(3, len(classes))
+    rows = (len(classes) + cols - 1) // cols
+    step, r, row_h = 480 / cols, 56, 170
+    S = SVG(480, rows * row_h)
+    S.add(f'<rect x="0" y="0" width="480" height="{S.h}" fill="{PAPER}"/>')
+    for i, cls in enumerate(classes):
+        cx, top = step * (i % cols + 0.5), (i // cols) * row_h
+        _critair_disc(S, cx, top + r + 8, r, cls)
+        _text(S, cx, top + 2 * r + 38, "électrique" if cls == "E" else f"classe {cls}")
+    return str(S)
 
 def triangle_distance(params):
     """Broken-down car and warning triangle upstream; the measured gap is broken (≈) because it is not to scale."""
@@ -861,6 +874,33 @@ def corridor_securite(params):
     S.add(siren_rays(0, -28, "#f08a24", r0=14, r1=22))
     S.add('</g>')
     S.add(f'<text x="399" y="240" text-anchor="middle" font-family="{FONT}" font-size="26" fill="{MARK}">BAU</text>')
+    return str(S)
+
+
+def _person(x, y, vest=YELLOW):
+    """A person seen from above (shoulders and head), in a high-visibility vest by default."""
+    return (f'<g transform="translate({x},{y})"><ellipse cx="0" cy="0" rx="13" ry="8" fill="{vest}" stroke="#8a7400" stroke-width="1.5"/>'
+            f'<circle cx="0" cy="0" r="6" fill="#6b4f3a"/></g>')
+
+
+def autoroute_attente(params):
+    """Breakdown on the hard shoulder: the car with its hazard lights, the occupants behind the safety barrier,
+    back from the car on the side traffic comes from (traffic goes up)."""
+    S = _motorway_scene()
+    for x in (155, 295):
+        S.add(f'<g transform="translate({x},230)"><path d="M0 30V-30m-10 12 10-12 10 12" fill="none" stroke="{MARK}" stroke-width="4"/></g>')
+    S.add(f'<g transform="translate(399,150) scale(1.5)">{vehicle_sprite("car", "gris")}</g>')
+    for dx in (-18, 18):                     # hazard lights at the four corners
+        for dy in (-44, 44):
+            S.add(f'<circle cx="{399 + dx}" cy="{150 + dy}" r="5" fill="{AMBER}"/>')
+            S.add(siren_rays(399 + dx, 150 + dy, AMBER, r0=8, r1=14))
+    S.add('<path d="M470 0V440" stroke="#8d969a" stroke-width="6"/>')                       # safety barrier
+    for y in range(20, 440, 40):
+        S.add(f'<rect x="466" y="{y}" width="8" height="8" fill="#6c7478"/>')
+    for x, y in ((520, 318), (566, 338), (528, 372)):
+        S.add(f'<g transform="translate({x},{y}) scale(1.8)">{_person(0, 0)}</g>')
+    _pill(S, 560, 40, "glissière", anchor="middle")
+    _pill(S, 548, 420, "occupants", anchor="middle")
     return str(S)
 
 
@@ -1492,6 +1532,7 @@ def ceinture(params):
 
 
 REGISTRY.update({
+    "autoroute_attente": autoroute_attente,
     "medicaments_niveaux": medicaments_niveaux, "etiquettes_carburant": etiquettes_carburant, "pneu_flanc": pneu_flanc,
     "pneu_usure": pneu_usure, "angles_morts": angles_morts, "ceinture": ceinture,
     "feu_modal": feu_modal, "feu_sur_panneau": feu_sur_panneau, "pmv": pmv, "plaque_orange": plaque_orange, "types_routes": types_routes,

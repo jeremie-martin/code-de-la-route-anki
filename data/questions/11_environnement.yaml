@@ -87,6 +87,9 @@
   theme: E
   sous_theme: pollution
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F33371"
+  illustration:
+    gen: critair
+    legende: Les six vignettes, de la classe E (électrique, hydrogène) à la classe 5.
 - id: e-zfe-definition
   question: Qu'est-ce qu'une ZFE (zone à faibles émissions mobilité) ?
   reponse: Une zone urbaine délimitée par des panneaux où les véhicules les plus polluants (selon leur vignette Crit’Air)

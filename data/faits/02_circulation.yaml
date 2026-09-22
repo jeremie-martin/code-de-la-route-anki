@@ -130,6 +130,16 @@
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-3 ; service-public.fr F34440
+  comparaisons:
+  - ref: b6b3
+    legende: 'Entrée de zone bleue : stationnement de durée limitée avec disque.'
+  - ref: marq-zone-bleue
+    legende: Places délimitées en bleu.
+  illustration:
+    commons: Disque-de-stationnement-France.svg
+    width: 320
+    signal: true
+    legende: 'Disque de stationnement : j’y règle mon heure d’arrivée.'
 - id: l-feux-detresse-usage
   texte: À l’approche d’un fort ralentissement, le {{c1::dernier véhicule de la file}} doit utiliser les feux de détresse
     pour avertir ceux qui arrivent.

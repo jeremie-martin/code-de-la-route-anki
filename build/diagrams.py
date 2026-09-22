@@ -615,7 +615,7 @@ def draw_road(spec: dict) -> str:
       vehicles: [{lane: 1..n (1 = the vehicle's OWN rightmost lane: screen-right for 'up', screen-left for 'down'),
                   y: 0..100 (% from bottom), colour, kind, me, dir: 'up'|'down', goes, label, occludes}]
       caption, extras: list of {"kind": "virage"|"sommet"|"passage_pieton"|"intersection_droite"|"intersection_gauche"
-                  |"sign"|"retrecissement"|"label"|"bau", y}
+                  |"sign"|"retrecissement"|"label"|"bau"|"ilot" (length), y}
     """
     H = ROAD_H
     lanes = spec.get("lanes", 2)
@@ -682,6 +682,14 @@ def draw_road(spec: dict) -> str:
             S.add(f'<path d="M{x0+road_w},{top-40} L{x0+road_w-w},{top} L{x0+road_w-w},{bottom} L{x0+road_w},{bottom+40}" fill="none" stroke="{MARK}" stroke-width="2"/>')
         elif k == "label":  # free text beside the road, at the height of what it names
             S.add(f'<text x="{ex.get("x", side)}" y="{y+6}" {text}>{esc(str(ex["text"]))}</text>')
+        elif k == "ilot":  # raised traffic island in the axis, announced at both ends by hatched (zebra) markings
+            half, w = ex.get("length", 140) / 2, 48
+            top, bottom = y - half, y + half
+            S.add(f'<defs><pattern id="zebra" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
+                  f'<rect width="6" height="14" fill="{MARK}"/></pattern></defs>')
+            for tip, base in ((top - 100, top + 4), (bottom + 100, bottom - 4)):
+                S.add(f'<path d="M{ax},{tip} L{ax - w / 2},{base} L{ax + w / 2},{base} Z" fill="url(#zebra)" stroke="{MARK}" stroke-width="3"/>')
+            S.add(f'<rect x="{ax - w / 2}" y="{top}" width="{w}" height="{bottom - top}" rx="{w / 2}" fill="{GRASS}" stroke="{MARK}" stroke-width="4"/>')
         elif k == "bau":
             S.add(f'<rect x="{x0 + road_w}" y="0" width="70" height="{H}" fill="#5c5c5c"/>')
             S.add(f'<line x1="{x0 + road_w}" y1="0" x2="{x0 + road_w}" y2="{H}" stroke="{MARK}" stroke-width="4" stroke-dasharray="78 26"/>')

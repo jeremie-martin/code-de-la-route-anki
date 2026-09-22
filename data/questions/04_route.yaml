@@ -301,13 +301,15 @@
   source: Code de la route, art. R421-7 et R416-19
 - id: r-autoroute-panne-attendre
   question: Mon véhicule est arrêté sur la bande d'arrêt d'urgence et tout le monde est sorti. Où attendre les secours ?
-  reponse: Derrière la glissière de sécurité, en amont du véhicule ; pour rejoindre la borne d’appel, je marche derrière la
-    glissière, jamais sur la chaussée.
+  reponse: Derrière la glissière de sécurité, en arrière du véhicule, du côté d’où arrivent les voitures ; pour rejoindre la borne d’appel, je marche derrière la glissière, jamais sur la chaussée.
   explication: Rester dans la voiture, ou debout derrière elle, est ce qui tue lors d'une panne sur autoroute. Seul un dépanneur
     agréé peut y intervenir.
   theme: R
   sous_theme: autoroute
   source: "securite-routiere.gouv.fr, Panne sur autoroute ; Code de la route, art. R421-7"
+  illustration:
+    gen: autoroute_attente
+    legende: Voiture sur la bande d’arrêt d’urgence ; occupants en gilet derrière la glissière, en arrière du véhicule.
 - id: r-autoroute-usagers-interdits
   question: Quels usagers n'ont pas le droit de circuler sur autoroute ?
   reponse: Piétons et animaux, vélos, véhicules à moteur non immatriculés (trottinettes électriques), cyclomoteurs, petits tricycles et quadricycles à moteur (voiturettes comprises), tracteurs et engins agricoles ou de travaux publics.

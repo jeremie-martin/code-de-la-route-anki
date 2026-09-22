@@ -304,13 +304,32 @@
   sous_theme: positionnement
   source: Code de la route, art. R412-23
 - id: aff-l-ilot-droite
-  contexte: Un îlot directionnel (refuge peint ou surélevé) sépare la chaussée devant moi.
+  contexte: Cet îlot sépare la chaussée devant moi.
   affirmation: Si la voie de gauche est libre, je peux le contourner par la gauche.
   verdict: faux
   pourquoi: 'R412-27 : tout obstacle, îlot, terre-plein ou borne se contourne par la droite, sauf si une flèche ou un panneau impose l''inverse. Les hachures qui le prolongent sont interdites à la circulation.'
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-27
+  image:
+    gen: road
+    params:
+      lanes: 2
+      axis: discontinue
+      extras:
+      - kind: ilot
+        y: 62
+        length: 120
+      vehicles:
+      - lane: 1
+        y: 12
+        colour: bleu
+        me: true
+  comparaisons:
+  - ref: j5
+    legende: 'Balise de tête d’îlot : contourner par la droite.'
+  - ref: marq-zebra
+    legende: 'Hachures : on n’y circule pas.'
 - id: aff-l-voie-preselection
   contexte: Je me suis engagé dans une voie de présélection dont la flèche au sol impose de tourner à droite.
   affirmation: Arrivé au carrefour, je peux continuer tout droit si personne ne me gêne.
