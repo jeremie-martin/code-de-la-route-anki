@@ -492,8 +492,9 @@
   titre: Relier vitesse, réaction, freinage et intervalle
   raison: Comprendre le mécanisme et calculer sur les données fournies.
   notes:
-  - c-distance-arret-carre
+  - c-distance-arret-composantes
   - c-temps-reaction
+  - c-distance-reaction-formule
   - c-distance-mouillee
   - c-vitesse-double-freinage
   - c-intervalle-2s
@@ -504,9 +505,7 @@
   - c-suiveur-trop-pres
   - c-distance-obstacle-exercice
   consolidation:
-  - c-distance-reaction-formule
   - c-intervalle-pl-tunnel
-  - aff-c-reaction-vehicule-ralentit
   - aff-c-vitesse-double-freinage-double
 - id: c-observer
   theme: C
@@ -943,6 +942,8 @@
   notes:
   - m-pneus-chiffres
   - m-pression-etiquette
+  - m-pneus-usure-1-6
+  - m-pneu-hernie
   - m-niveau-huile
   - m-liquide-refroidissement
   - m-liquide-frein
@@ -954,7 +955,6 @@
   consolidation:
   - m-pneus-hiver-chiffres
   - m-feux-portees
-  - m-pneus-usure-1-6
   - m-plaquettes-usure
   - m-freins-apres-lavage
   - m-batterie-cables

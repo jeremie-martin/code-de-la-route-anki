@@ -7,15 +7,12 @@
   sous_theme: distances
   source: "securite-routiere.gouv.fr, La vitesse et la conduite ; Codeclic, Temps de réaction"
 - id: c-distance-reaction-formule
-  dedup_ok:
-  - aff-c-temps-reaction-vitesse
-  explication: 'Calcul : vitesse en km/h ÷ 3,6 × durée en secondes, soit environ 14 m à 50 km/h, 25 m à 90 et 36 m
-    à 130. Le raccourci « dizaines × 3 » donne 15, 27 et 39 m. Utiliser les hypothèses de l’exercice.'
+  texte: 'À vitesse constante, distance parcourue en mètres = {{c1::vitesse en km/h ÷ 3,6 × durée en secondes}}.'
+  explication: 'Diviser par 3,6 convertit les km/h en m/s. À 90 km/h pendant 2 s : 90 ÷ 3,6 × 2 = 50 m.
+    Le raccourci « dizaines × 3 » estime seulement la distance en une seconde ; multiplier ensuite par la durée.'
   theme: C
   sous_theme: distances
-  source: "Codeclic ; En Voiture Simone ; securite-routiere.gouv.fr, Dépliant vitesse"
-  rappels:
-  - À 90 km/h, la distance parcourue pendant une seconde de réaction est d’environ {{c1::25 m}}.
+  source: "Conversion km/h en m/s ; Cerema, Évaluation V80 (2020), annexe 2, https://www.onisr.securite-routiere.gouv.fr/sites/default/files/2020-07/Cerema-EvaluationV80-Juillet2020-Vdef3.pdf"
 - id: c-distance-mouillee
   texte: Dans un exercice qui retient une adhérence divisée par deux sur sol mouillé, à vitesse égale, la distance
     de freinage est {{c1::doublée}}.
@@ -60,14 +57,6 @@
   theme: C
   sous_theme: distances
   source: "securite-routiere.gouv.fr, La vitesse et la conduite ; IISR 7e partie, art. 113-1"
-- id: c-telephone-5s
-  explication: 50 ÷ 3,6 × 5 ≈ 69,4 m. Les cinq secondes sont une hypothèse, pas la durée universelle d’un SMS. Le téléphone
-    ajoute des distractions visuelle, mentale et manuelle ; les mains libres ne suppriment pas la distraction mentale.
-  theme: C
-  sous_theme: vigilance
-  source: "Calcul v/3,6 × durée ; Sécurité routière, téléphone et distraction"
-  rappels:
-  - À 50 km/h, quitter la route des yeux pendant 5 s fait parcourir environ {{c1::70 m}}.
 - id: c-acuite-5-10
   texte: Pour le permis B, le seuil d’acuité visuelle binoculaire est d’au moins {{c1::5/10}}, avec correction si nécessaire.
   explication: 'Arrêté du 28 mars 2022 : acuité binoculaire ≥ 5/10 (si un œil voit moins de 1/10, l''autre doit atteindre

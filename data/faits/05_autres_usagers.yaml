@@ -66,9 +66,11 @@
   theme: U
   sous_theme: poids_lourds
   rappels:
-  - Un poids lourd de plus de 3,5 t (hors transport en commun) est limité sur autoroute à {{c1::90 km/h}}.
-  - Sur les autres routes hors agglomération, ce poids lourd est limité à {{c2::80 km/h}} (50 en agglomération).
-  explication: Un autocar (transport en commun) est limité à 90 km/h hors agglomération et à 100 km/h au plus sur
-    autoroute. Différence d’allure = dépassements longs et files derrière les camions dans les côtes ; en cas de neige
-    au sol, ni dépassement ni changement de file pour les plus de 3,5 t.
-  source: Code de la route, art. R413-8 et R413-10
+  - Sur autoroute, hors limitation plus basse, un camion de marchandises de plus de 3,5 t est limité à {{c1::90 km/h}}.
+  - Sur une route ordinaire hors agglomération, à une voie par sens et sans limitation plus basse,
+    un camion rigide de 7,5 t sans remorque est limité à {{c2::80 km/h}}.
+  explication: 'Ne pas généraliser le 80 : sur une route non prioritaire, un véhicule articulé ou avec remorque
+    de plus de 12 t est limité à 60 km/h. Sur une route prioritaire à chaussées séparées par terre-plein central,
+    le plafond est de 90 km/h jusqu’à 12 t. Ces limites différentes peuvent expliquer l’allure du véhicule devant moi ;
+    elles ne garantissent pas qu’un dépassement soit possible.'
+  source: 'Code de la route, art. R413-8, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426'

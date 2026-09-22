@@ -4,8 +4,8 @@ Un deck Anki en français pour **réussir l’épreuve théorique générale** (
 en 2026, et comprendre les règles assez bien pour les appliquer à des situations nouvelles.
 Il est généré à partir d’une bibliothèque de connaissances écrite à la main (`data/`) par le code de `build/`.
 
-**[Télécharger le paquet](out/Code-de-la-route-2026.apkg)**. Effectifs exacts dans [STATS](out/STATS.md)
-(1 054 notes, 1 126 cartes). Le deck relie les signaux, les règles, les décisions et des scénarios dessinés à
+**[Télécharger le paquet](out/Code-de-la-route-2026.apkg)**. Effectifs exacts dans [STATS](out/STATS.md).
+Le deck relie les signaux, les règles, les décisions et des scénarios dessinés à
 49 objectifs d’apprentissage. Il ne contient pas de photographies d’examen.
 
 ## Commencer
@@ -16,7 +16,7 @@ Il est généré à partir d’une bibliothèque de connaissances écrite à la 
    Vérification : Options du deck → Ordre d’affichage → collecte des nouvelles cartes par **position
    croissante**, tri dans **l’ordre de collecte**.
 2. Étudier le deck parent **Code de la route 2026**. L’ordre d’introduction entrelace les thèmes ; les
-   608 premières cartes forment le socle, la suite consolide (variantes, exceptions, applications). Le nombre
+   cartes du socle précèdent la consolidation (variantes, exceptions, applications). Le nombre
    de nouvelles cartes par jour est un réglage personnel.
 3. L’écran de chaque sous-deck affiche le **repère** du thème (principe, exemple, transfert) ; les mêmes
    textes sont réunis dans [REPERES](out/REPERES.md), pour retrouver le principe derrière une carte.
@@ -28,26 +28,16 @@ L’ETG demande 35 bonnes réponses sur 40 ([conditions officielles](https://www
 Réussir les cartes ne prouve pas l’aptitude à l’examen ; des séries nouvelles réussies régulièrement en donnent
 une meilleure idée.
 
-## FSRS et mises à jour
+## Options Anki
 
-Activer **FSRS** dans les options d’Anki ; ce choix s’applique à toute la collection, et ne s’active pas par
-l’import du deck. Utiliser des versions récentes sur tous les appareils. Le préréglage fournit une rétention
-souhaitée de **90 %**, des étapes d’apprentissage de `1m 10m` et de réapprentissage de `10m`, compatibles
-avec FSRS. Garder ses paramètres par défaut au départ ; « Optimiser » les adaptera à votre propre historique.
-La rétention souhaitée concerne le rappel des cartes à leur échéance, pas la note à l’examen.
-Voir le [guide officiel FSRS](https://docs.ankiweb.net/deck-options.html#fsrs).
+FSRS s’active dans les options d’Anki pour toute la collection, pas par l’import du paquet.
+Le préréglage fourni fixe l’ordre d’introduction et enfouit les cartes sœurs ; les limites quotidiennes
+et la rétention souhaitée restent des choix personnels. Voir le [guide Anki](https://docs.ankiweb.net/deck-options.html#fsrs).
+Les positions des cartes nouvelles organisent leur introduction ; après les réponses, le planificateur
+calcule leurs échéances.
 
-Les positions « dû » des cartes **nouvelles** servent uniquement à leur introduction : elles ne sont ni des
-dates ni des identifiants. Après les réponses, Anki calcule les échéances. Il n’y a rien à renuméroter ou à
-réinitialiser pour FSRS. Étudier le parent conserve l’entrelacement des thèmes ; les révisions suivent ensuite
-le planificateur. Le préréglage propose 20 nouvelles cartes/jour, valeur ajustable, et une limite de révisions
-de 9 999 pour laisser visibles les cartes dues. Ce ne sont pas des objectifs quotidiens : ajuster l’arrivée des
-nouvelles cartes à la charge supportable. Les cartes sœurs sont enfouies pour éviter les indices immédiats.
-
-Pour **mettre à jour** un deck déjà étudié, réimporter le paquet sans supprimer le deck et **sans importer
-les préréglages** : vos réglages personnels sont ainsi conservés. Les identités stables permettent la mise à
-jour des notes existantes tout en gardant leur historique ; cela ne supprime pas automatiquement d’anciennes
-notes retirées du dépôt. Les modifications locales de contenu suivent les options de mise à jour d’Anki.
+Le dépôt permet de reconstruire une édition, mais ne garantit pas la migration d’une édition à l’autre
+si des notes changent de type ou sont supprimées. Le paquet est destiné ici à un premier import.
 
 ## Répondre et s’évaluer
 
@@ -58,7 +48,7 @@ Répondre **avant** de retourner la carte, avec ses propres mots ou à voix haut
 | Signal | Son sens utile et ce qu’il change pour moi ; son code n’est pas à réciter |
 | Comparaison A/B | La différence qui change la règle ou la conduite |
 | Trou | La valeur avec son unité, ou le terme demandé |
-| Question / scénario | La décision et l’indice ou la règle qui la décide ; le verso ajoute les nuances |
+| Question / scénario | La réponse demandée : décision justifiée, distinction ou calcul avec sa méthode |
 | Vrai/faux | Le verdict **et** la raison ; si c’est faux, la règle exacte |
 
 **À revoir** si la réponse est fausse, devinée, ou si la raison manque ; **Difficile** si elle est correcte avec

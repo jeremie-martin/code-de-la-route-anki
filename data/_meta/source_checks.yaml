@@ -563,7 +563,6 @@
   portee: 'Corrigé des vingt exemples officiels de septembre 2023 (Q13 adhérence ÷ 2 et freinage × 2 sous la pluie ; Q8/Q14 aides au stationnement).'
   notes:
   - c-distance-mouillee
-  - c-distance-arret-carre
   - aff-m-camera-recul
 - id: v9-depassement-croisement
   consulte_le: '2026-09-21'
@@ -934,3 +933,39 @@
   url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/
   portee: 'Seconde comparaison avec le livre 2025–2026 (chapitres non traités par la première passe) ; ajouts vérifiés dans la copie consolidée : L223-6 dernier alinéa (réattribution après dix ans), R416-7 I (feux de brouillard avant avec les feux de route hors agglomération sur route étroite et sinueuse), R221-1-1 I bis (validité de quinze ans), R415-11 et R412-30 (fausse courtoisie). Consigne CETU pour un véhicule en feu en tunnel ; L121-3 et R130-11 pour la vidéo-verbalisation, non relus dans le texte. Les peines délictuelles du tableau du livre sont antérieures à la loi du 18 août 2026 et ne sont pas reprises.'
   notes: [u-fausse-courtoisie-pieton, r-tunnel-mon-vehicule-feu, l-b14-meme-support, r-nuit-gabarit-camion, d-points-dix-ans, aff-d-video-verbalisation, aff-r-brouillard-avant-sinueuse, d-permis-validite-15-ans]
+- id: revue-deck-distances
+  consulte_le: '2026-09-22'
+  url: https://www.onisr.securite-routiere.gouv.fr/sites/default/files/2020-07/Cerema-EvaluationV80-Juillet2020-Vdef3.pdf
+  portee: 'Annexe 2, sections A 2.3.1 à A 2.3.3 lues : temps de réaction variable, hypothèse de vitesse constante,
+    décomposition arrêt/réaction/freinage et limites du modèle. Calculs vérifiés par conversion des unités.
+    Remplacement du rappel du carré des dizaines par les composantes de l’arrêt ; méthode avant application.
+    Cette source de physique ne constitue pas un corrigé de la banque ETG 2026.'
+  notes: [c-distance-reaction-formule, c-telephone-5s, c-distance-arret-composantes, aff-c-temps-reaction-vitesse]
+- id: revue-deck-vitesses-camions
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426
+  portee: 'R413-8 lu en ligne, version en vigueur depuis janvier 2014 : le 80 hors autoroute ne vaut pas
+    pour tous les poids lourds. Rectos bornés à deux cas déterminés ; explication des exceptions 60/90
+    selon configuration, masse et caractère prioritaire de la route. Pas de nouvelle carte de barème PL.'
+  notes: [u-pl-vitesses-chiffres]
+- id: revue-deck-pneus-etat
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038995312
+  portee: 'Article 5 lu en ligne : minimum de 1,6 mm pour les voitures, rainures principales et témoins.
+    R314-1 lu dans la section Pneumatiques (LEGISCTA000006159580) après échec de la page article : toile
+    apparente et déchirure profonde interdites. Retrait de la formule « seul seuil légal » dans la note sur l’âge.'
+  notes: [m-pneus-usure-1-6, aff-m-pneu-age]
+- id: revue-deck-pneus-age
+  consulte_le: '2026-09-22'
+  url: https://www.michelin.fr/auto/conseils/changer-pneus/combien-dure-un-pneu
+  portee: 'Préconisations tourisme lues : contrôle annuel après cinq ans d’utilisation, remplacement après
+    dix ans depuis la fabrication, roue de secours comprise. Distinction explicite entre conseil du fabricant
+    et règle légale ; le rappel porte sur le vieillissement malgré un faible kilométrage.'
+  notes: [aff-m-pneu-age]
+- id: revue-deck-pneu-hernie
+  consulte_le: '2026-09-22'
+  url: https://www.michelin.fr/auto/conseils/changer-pneus/dommages-aux-flancs-des-pneus
+  portee: 'Rubriques dommages après choc et hernies lues : dommage de carcasse, perte de pression et contrôle
+    urgent. Application originale à un départ avec des sculptures encore profondes. Pas de copie d’image,
+    ni généralisation aux légères déformations normales des pneus radiaux.'
+  notes: [m-pneu-hernie]

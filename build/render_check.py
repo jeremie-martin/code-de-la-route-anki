@@ -27,6 +27,8 @@ SAMPLES = {
     'l-entrecroisement', 'l-giratoire-sortie-impossible', 'l-c107-route-simple',
     'l-c107-route-separee', 'u-pl-tourne-droite', 'scn-dep-passage-pieton',
     'aff-l-stop-rien-ne-vient', 'a-pls', 'a-message-alerte',
+    'c-distance-reaction-formule', 'c-distance-arret-composantes', 'c-telephone-5s',
+    'u-pl-vitesses-chiffres', 'm-pneus-usure-1-6', 'm-pneu-hernie', 'aff-m-pneu-age',
 }
 
 # Kept separate so the checker itself can be tested against deliberately bad pages.

@@ -1,5 +1,30 @@
 # Historique des éditions
 
+## v13 (22 septembre 2026)
+
+Révision ciblée du deck et de ses objectifs, sans refonte des gabarits ni des images.
+
+- **Distances** : apprendre la conversion vitesse × durée, puis l’appliquer avec une méthode explicite.
+  Le rappel du carré des dizaines devient une question sur réaction + freinage ; un vrai/faux redondant
+  est retiré. Le temps de réaction n’est plus présenté comme indépendant de la situation.
+- **Règles et décisions** : rectos des vitesses de camions bornés à des cas précis, avec les exceptions
+  pertinentes au verso ; profondeur des pneus distinguée des autres défauts interdits. Une nouvelle
+  décision sur une hernie teste cette distinction ; vieillissement et recommandation du fabricant séparés
+  d’une obligation légale. Consultations primaires et portée dans `data/_meta/source_checks.yaml`.
+- **Parcours et documentation** : méthode de calcul et contrôle des pneus dans le socle, avant leurs
+  applications ; conseils Anki condensés, règle de ponctuation arbitraire retirée, effectifs renvoyés aux
+  rapports générés. Les signaux, comparaisons et scènes existantes sont conservés.
+- **Vérification** : 24 tests réussis ; import neuf et réimport avec Anki 26.9.2 ; 9 064 faces/configurations
+  contrôlées dans Chromium, sans échec ; inspection de neuf captures de cartes et scènes en clair/sombre,
+  de 320 à 430 px. Les 371 médias sont identiques au paquet précédent. 1 054 notes, 1 126 cartes,
+  dont 611 dans le socle. L’avertissement éditorial sur les questions oui/non (42 « non », 17 « oui »)
+  est conservé : demander la justification reste nécessaire, sans fabriquer un quota de verdicts.
+
+Le livre a servi de comparaison ponctuelle (sommaire, pneus et distances), sans fournir de contenu au
+paquet. Cette passe ne constitue pas une nouvelle validation juridique de toutes les cartes ; elle ne
+mesure ni rétention ni réussite à l’ETG. Résultats techniques de cette édition dans
+`out/VERIFICATION.md` et `out/RENDU.md`.
+
 ## v12 (22 septembre 2026)
 
 Révision d’ensemble à partir de deux relectures indépendantes (signaux ; règles et transfert à l’épreuve), puis

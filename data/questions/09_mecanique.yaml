@@ -11,13 +11,24 @@
   source: "Codes Rousseau, Les voyants ; Ornikar, Voyants lumineux"
   debut: true
 - id: m-pneus-usure-1-6
-  question: À partir de quelle profondeur de sculpture un pneu doit-il être remplacé, et comment la vérifier ?
-  reponse: 1,6 mm, minimum légal repérable aux témoins d’usure ; contrôler aussi coupures, déformations et usure irrégulière.
-  explication: Un pneu endommagé peut devoir être remplacé avant d’atteindre la limite de sculpture. Les recommandations supplémentaires
-    dépendent du pneu et de son usage.
+  question: Sur une voiture, quelle profondeur minimale doivent garder les rainures principales des pneus,
+    et comment repérer cette limite ?
+  reponse: Au moins 1,6 mm ; les témoins d’usure permettent de repérer la limite. Une jauge permet de mesurer la profondeur.
+  explication: 'Contrôler à plusieurs endroits : une usure irrégulière peut laisser une zone trop usée.
+    La profondeur ne suffit pas : toile apparente et déchirure profonde du flanc sont également interdites.
+    Un pneu endommagé peut devoir être remplacé avant la limite d’usure.'
   theme: M
   sous_theme: pneus
-  source: Code de la route, art. R314-1 ; arrêté du 18 juillet 2019
+  source: 'Code de la route, R314-1 ; arrêté du 18 juillet 2019, art. 5, https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038995312'
+- id: m-pneu-hernie
+  question: 'Avant de partir, je découvre une bosse apparue sur le flanc d’un pneu après un choc contre
+    un trottoir. Ses rainures restent profondes. Puis-je partir avec ce pneu ?'
+  reponse: 'Non : une hernie peut signaler une carcasse endommagée, avec risque de perte brutale de pression.'
+  explication: 'Je fais remplacer le pneu ; si je ne peux pas monter une roue de secours selon la notice
+    et en sécurité, j’appelle l’assistance. Une bonne profondeur de sculpture ne compense pas ce dommage.'
+  theme: M
+  sous_theme: pneus
+  source: 'Michelin, Dommages aux flancs du pneu, https://www.michelin.fr/auto/conseils/changer-pneus/dommages-aux-flancs-des-pneus'
 - id: m-niveau-huile
   question: Comment contrôle-t-on le niveau d'huile moteur ?
   reponse: 'Sur sol horizontal, moteur arrêté et selon la notice ; avec une jauge : essuyer, réinsérer puis lire ; le niveau

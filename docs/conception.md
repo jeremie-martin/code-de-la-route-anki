@@ -17,7 +17,7 @@ ou la réussite à l’examen n’a été mesurée.
 | Reconnaissance | Sens du signal et conséquence pratique ; pas son code technique |
 | Comparaison A/B | Différence visible qui change la règle ou la conduite |
 | Fait à trous | Valeur avec unité ou terme précis, sans indice donné par une carte sœur |
-| Question | Décision et raison décisive, à partir des conditions du recto |
+| Question | Décision justifiée, mécanisme ou calcul avec sa méthode, à partir des conditions du recto |
 | Vrai/faux | Verdict justifié et correction de l’idée reçue |
 | Scénario dessiné | Lire les positions, signes et trajectoires avant de décider |
 
@@ -29,8 +29,6 @@ relation ; leur résultat seul ne doit pas devenir la connaissance à apprendre.
 
 - Donner au recto les conditions nécessaires : véhicule, statut du conducteur, route, météo, visibilité,
   point de vue. Une image hors échelle ne permet pas de mesurer une distance ou une vitesse.
-- Écrire sans tirets cadratins. Reformuler la phrase selon le lien logique (condition, conséquence,
-  précision), plutôt que remplacer mécaniquement la ponctuation.
 - Rendre la réponse jugeable avec ses propres mots. Mettre en explication le mécanisme, la limite ou la
   confusion utile. La longueur dépend du sujet ; aucune limite universelle de mots ou de listes.
 - Enseigner la règle actuelle et citer une source qui couvre aussi ses conditions. Un raccourci pédagogique
@@ -40,6 +38,8 @@ relation ; leur résultat seul ne doit pas devenir la connaissance à apprendre.
   visibilité masquée… Éviter les verdicts devinables par la tournure ou une prudence générique.
 - Introduire les prérequis avant leurs applications. Le build entrelace les thèmes, place le socle avant la
   consolidation, espace les cartes sœurs et vérifie les dépendances des images et comparaisons.
+  Les dépendances conceptuelles restent à relire dans `out/PROGRAMME.md` : par exemple, méthode de calcul
+  avant application chiffrée, contrôle d’un pneu avant décision face à un dommage.
 - Sélectionner les signaux pour leur sens utile ou une confusion réelle. Les variantes déductibles et les
   inscriptions transparentes peuvent rester hors du deck ; les exclusions indiquent la règle qui les couvre.
 

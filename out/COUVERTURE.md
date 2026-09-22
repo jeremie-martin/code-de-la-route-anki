@@ -565,26 +565,25 @@ Recherche Anki : `objectif::l-stationner`
 
 Comprendre le mécanisme et calculer sur les données fournies.
 
-15 notes / 16 cartes.
+14 notes / 15 cartes.
 
 Recherche Anki : `objectif::c-distances`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `c-temps-reaction` | socle | faits | securite-routiere.gouv.fr, La vitesse et la conduite ; Codeclic, Temps de réaction |
-| `c-distance-reaction-formule` | consolidation | faits | Codeclic ; En Voiture Simone ; securite-routiere.gouv.fr, Dépliant vitesse |
+| `c-distance-reaction-formule` | socle | faits | Conversion km/h en m/s ; Cerema, Évaluation V80 (2020), annexe 2, https://www.onisr.securite-routiere.gouv.fr/sites/default/files/2020-07/Cerema-EvaluationV80-Juillet2020-Vdef3.pdf |
 | `c-distance-mouillee` | socle | faits | Sécurité routière, exemple public Q13 (2023) ; repère et limites du modèle |
 | `c-vitesse-double-freinage` | socle | faits | securite-routiere.gouv.fr, La vitesse et la conduite ; Ornikar, Énergie cinétique |
 | `c-intervalle-2s` | socle | faits | Code de la route, art. R412-12 ; Codes Rousseau, Calcul des distances |
 | `c-intervalle-pl-tunnel` | consolidation | faits | Code de la route, R412-12 ; CETU, sécurité des usagers en tunnel |
 | `c-autoroute-deux-traits` | socle | faits | securite-routiere.gouv.fr, La vitesse et la conduite ; IISR 7e partie, art. 113-1 |
 | `c-suiveur-trop-pres` | socle | questions | Code de la route, art. R412-12 ; securite-routiere.gouv.fr, Les distances de sécurité |
-| `c-distance-arret-carre` | socle | questions | Supports de préparation (Codes Rousseau, ENPC), raccourci pédagogique ; Sécurité routière, exemples 2023, Q13 (freinage sous la pluie uniquement) |
+| `c-distance-arret-composantes` | socle | questions | Cerema, Évaluation V80 (2020), annexe 2, https://www.onisr.securite-routiere.gouv.fr/sites/default/files/2020-07/Cerema-EvaluationV80-Juillet2020-Vdef3.pdf ; raccourci des supports de préparation |
 | `c-double-vitesse-arret` | socle | questions | Modèle physique à décélération constante ; Sécurité routière, vitesse |
 | `c-intervalle-repere` | socle | questions | Code de la route, R412-12 |
 | `c-distance-obstacle-exercice` | socle | questions | Relation physique : arrêt = réaction + freinage ; calcul sur données explicites |
-| `aff-c-temps-reaction-vitesse` | socle | affirmations | Code en Poche, Temps de réaction ; securite-routiere.gouv.fr, La vitesse et la conduite |
-| `aff-c-reaction-vehicule-ralentit` | consolidation | affirmations | En Voiture Simone, Temps de réaction ; securite-routiere.gouv.fr, La vitesse et la conduite |
+| `aff-c-temps-reaction-vitesse` | socle | affirmations | Cerema, Évaluation V80 (2020), annexe 2, temps de réaction et modèle de distance d’arrêt |
 | `aff-c-vitesse-double-freinage-double` | consolidation | affirmations | securite-routiere.gouv.fr, La vitesse et la conduite ; Ornikar, Énergie cinétique |
 
 ## c-observer : Chercher les indices et les zones masquées
@@ -691,8 +690,8 @@ Recherche Anki : `objectif::c-distraction`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `c-telephone-5s` | consolidation | faits | Calcul v/3,6 × durée ; Sécurité routière, téléphone et distraction |
 | `c-telephone-arret` | socle | questions | Code de la route, art. R412-6-1 et L224-1 |
+| `c-telephone-5s` | consolidation | questions | Conversion des unités et calcul à vitesse constante ; Cerema, Évaluation V80 (2020), annexe 2 |
 | `aff-c-mains-libres-passager` | socle | affirmations | securite-routiere.gouv.fr, Le téléphone et la conduite |
 | `aff-c-oreillette` | socle | affirmations | Code de la route, art. R412-6-1 |
 | `aff-c-gps-roulant` | socle | affirmations | securite-routiere.gouv.fr, Le téléphone et la conduite ; Ornikar, Vigilance |
@@ -966,7 +965,7 @@ Recherche Anki : `objectif::u-gabarit`
 |---|---|---|---|
 | `c20c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `u-pl-angles-morts-chiffres` | consolidation | faits | securite-routiere.gouv.fr, Angles morts ; Code de la route, art. R313-32-1 et R412-12 |
-| `u-pl-vitesses-chiffres` | consolidation | faits | Code de la route, art. R413-8 et R413-10 |
+| `u-pl-vitesses-chiffres` | consolidation | faits | Code de la route, art. R413-8, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426 |
 | `l-bus-quitte-arret` | socle | questions | Code de la route, art. R412-11 |
 | `u-pl-angles-morts` | socle | questions | securite-routiere.gouv.fr, Vrai ou faux : angles morts |
 | `u-pl-tourne-droite` | socle | questions | Sécurité routière, fiche pédagogique 6, https://www.securite-routiere.gouv.fr/sites/default/files/2019-02/fiche_pedago_film_6.pdf |
@@ -1103,7 +1102,7 @@ Recherche Anki : `objectif::m-alertes`
 
 Préconisations constructeur et signes de panne priment sur les recettes.
 
-27 notes / 31 cartes.
+28 notes / 32 cartes.
 
 Recherche Anki : `objectif::m-entretien`
 
@@ -1112,7 +1111,8 @@ Recherche Anki : `objectif::m-entretien`
 | `m-pneus-chiffres` | socle | faits | R314-1 ; Michelin, https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus |
 | `m-pneus-hiver-chiffres` | consolidation | faits | Code de la route, art. R413-7 et R314-3 ; Stych |
 | `m-feux-portees` | consolidation | faits | Code de la route, art. R313-2 à R313-4 |
-| `m-pneus-usure-1-6` | consolidation | questions | Code de la route, art. R314-1 ; arrêté du 18 juillet 2019 |
+| `m-pneus-usure-1-6` | socle | questions | Code de la route, R314-1 ; arrêté du 18 juillet 2019, art. 5, https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038995312 |
+| `m-pneu-hernie` | socle | questions | Michelin, Dommages aux flancs du pneu, https://www.michelin.fr/auto/conseils/changer-pneus/dommages-aux-flancs-des-pneus |
 | `m-niveau-huile` | socle | questions | Ornikar, Huile moteur ; lepermislibre, Contrôler les niveaux |
 | `m-liquide-refroidissement` | socle | questions | Ornikar, Liquide de refroidissement |
 | `m-liquide-frein` | socle | questions | Ornikar, Liquide de frein ; lepermislibre |
@@ -1131,7 +1131,7 @@ Recherche Anki : `objectif::m-entretien`
 | `aff-m-pression-chaud` | consolidation | affirmations | securite-routiere.gouv.fr, Pneus ; Michelin, Vérifier la pression |
 | `aff-m-surgonflage` | consolidation | affirmations | Michelin, Usure des pneus ; Ornikar, Sous-gonflage |
 | `aff-m-pneus-neufs-arriere` | socle | affirmations | Michelin, Mixage des pneus ; Ornikar, Même essieu |
-| `aff-m-pneu-age` | consolidation | affirmations | Allopneus, Durée de vie d'un pneu ; Ornikar, Vérifier le flanc |
+| `aff-m-pneu-age` | consolidation | affirmations | Michelin, Combien de temps dure un pneu ?, https://www.michelin.fr/auto/conseils/changer-pneus/combien-dure-un-pneu |
 | `aff-m-4-saisons-3pmsf` | consolidation | affirmations | service-public.fr F19459 ; Code de la route, art. D314-8 |
 | `aff-m-refroidissement-bouchon` | consolidation | affirmations | Ornikar, Liquide de refroidissement |
 | `aff-m-boite-auto-p-arret` | consolidation | affirmations | Stych, La boîte automatique ; service-public.fr F2828 |

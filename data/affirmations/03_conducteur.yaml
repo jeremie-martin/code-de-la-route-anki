@@ -36,19 +36,11 @@
 - id: aff-c-temps-reaction-vitesse
   affirmation: Si je roule deux fois plus vite, mon temps de réaction est deux fois plus long.
   verdict: faux
-  pourquoi: 'Le temps de réaction dépend de moi (attention, fatigue, alcool), pas de la vitesse : environ une seconde.
-    Ce qui double, c''est la distance parcourue pendant ce temps : ~14 m à 50 km/h, ~28 m à 100 km/h.'
+  pourquoi: 'Il n’existe pas de proportion automatique entre vitesse et temps de réaction : la situation et
+    l’attention comptent aussi. Pour un même temps de réaction, doubler la vitesse double la distance parcourue.'
   theme: C
   sous_theme: distances
-  source: "Code en Poche, Temps de réaction ; securite-routiere.gouv.fr, La vitesse et la conduite"
-- id: aff-c-reaction-vehicule-ralentit
-  affirmation: Pendant mon temps de réaction, la voiture a déjà commencé à ralentir.
-  verdict: faux
-  pourquoi: 'Tant que je n''ai pas freiné, la voiture garde sa vitesse : la distance de réaction s''ajoute entièrement
-    à la distance de freinage. Distance d''arrêt = réaction + freinage.'
-  theme: C
-  sous_theme: distances
-  source: "En Voiture Simone, Temps de réaction ; securite-routiere.gouv.fr, La vitesse et la conduite"
+  source: 'Cerema, Évaluation V80 (2020), annexe 2, temps de réaction et modèle de distance d’arrêt'
 - id: aff-c-vitesse-double-freinage-double
   affirmation: Si je double ma vitesse, ma distance de freinage double aussi.
   verdict: faux

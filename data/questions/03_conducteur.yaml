@@ -213,15 +213,25 @@
   theme: C
   sous_theme: distances
   source: "Code de la route, art. R412-12 ; securite-routiere.gouv.fr, Les distances de sécurité"
-- id: c-distance-arret-carre
-  question: Sol sec, 90 km/h, aucune autre donnée. Quel ordre de grandeur retenir pour ma distance d’arrêt ?
-  reponse: 'Environ 80 m : le carré du chiffre des dizaines (9 × 9 = 81).'
-  explication: 'Raccourci des supports de préparation : 50 km/h → 25 m, 130 → 169 m. C’est un repère, pas une distance
-    garantie : temps de réaction, pneus et adhérence changent le résultat. Si l’exercice donne des distances de réaction
-    et de freinage, les additionner.'
+- id: c-distance-arret-composantes
+  question: 'Un obstacle apparaît. Pourquoi la distance nécessaire pour m’arrêter ne se limite-t-elle pas
+    à la distance de freinage ?'
+  reponse: 'Il faut ajouter la distance parcourue pendant mon temps de réaction : distance d’arrêt = réaction + freinage.'
+  explication: 'Réduire la vitesse réduit les deux distances. La fatigue allonge surtout la réaction ; une faible
+    adhérence allonge le freinage. Le raccourci « dizaines au carré » n’est qu’un ordre de grandeur :
+    utiliser les données de l’exercice, sans en déduire une distance garantie en conduite.'
   theme: C
   sous_theme: distances
-  source: "Supports de préparation (Codes Rousseau, ENPC), raccourci pédagogique ; Sécurité routière, exemples 2023, Q13 (freinage sous la pluie uniquement)"
+  source: "Cerema, Évaluation V80 (2020), annexe 2, https://www.onisr.securite-routiere.gouv.fr/sites/default/files/2020-07/Cerema-EvaluationV80-Juillet2020-Vdef3.pdf ; raccourci des supports de préparation"
+- id: c-telephone-5s
+  question: 'À 50 km/h constants, je quitte la route des yeux pendant 5 s. Comment estimer la distance
+    parcourue sans regarder, et quel ordre de grandeur cela donne-t-il ?'
+  reponse: '50 ÷ 3,6 × 5 ≈ 70 m. Avec le raccourci « dizaines × 3 » : 15 × 5 = 75 m, une estimation acceptable.'
+  explication: 'Retrouver le calcul compte davantage que réciter 70 m. Les 5 s sont une donnée de cet exercice,
+    pas la durée fixe d’un SMS ; pendant ce temps, un danger peut apparaître sans être perçu.'
+  theme: C
+  sous_theme: vigilance
+  source: 'Conversion des unités et calcul à vitesse constante ; Cerema, Évaluation V80 (2020), annexe 2'
 - id: c-double-vitesse-arret
   theme: C
   sous_theme: distances

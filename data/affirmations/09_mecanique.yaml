@@ -77,14 +77,15 @@
   sous_theme: pneus
   source: "Michelin, Mixage des pneus ; Ornikar, Même essieu"
 - id: aff-m-pneu-age
-  affirmation: Un pneu de plus de dix ans est à remplacer, même s’il a très peu roulé.
-  verdict: vrai
-  pourquoi: La gomme vieillit et se fissure indépendamment du kilométrage. Le DOT à quatre chiffres (semaine et année)
-    donne l’âge ; un contrôle professionnel s’impose dès cinq à six ans. C’est une recommandation des manufacturiers
-    ; le seul seuil légal est la profondeur de sculpture (1,6 mm).
+  contexte: 'Un pneu de voiture a dix ans depuis sa fabrication, mais semble peu usé.'
+  affirmation: Son faible kilométrage suffit pour le considérer encore sûr.
+  verdict: faux
+  pourquoi: 'Le vieillissement dépend aussi du temps et des conditions de stockage et d’usage. Michelin recommande
+    un contrôle annuel après cinq ans d’utilisation et un remplacement après dix ans depuis la fabrication,
+    même pour la roue de secours. Ce sont des préconisations du manufacturier, pas une durée de validité légale.'
   theme: M
   sous_theme: pneus
-  source: "Allopneus, Durée de vie d'un pneu ; Ornikar, Vérifier le flanc"
+  source: 'Michelin, Combien de temps dure un pneu ?, https://www.michelin.fr/auto/conseils/changer-pneus/combien-dure-un-pneu'
 - id: aff-m-4-saisons-3pmsf
   contexte: Zone soumise à la loi Montagne, période hivernale.
   affirmation: Des pneus 4 saisons marqués du symbole alpin 3PMSF comptent comme des pneus hiver.

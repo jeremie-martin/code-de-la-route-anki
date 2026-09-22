@@ -5,8 +5,9 @@ pour ne pas les réexaminer à chaque édition. Aucun quota : une image existe s
 texte ne peut pas établir (recto) ou explique une relation après le rappel (verso). Une trajectoire correcte
 tracée d’avance, une légende qui nomme la réponse ou une couleur qui donne le verdict disqualifient un recto.
 
-Déjà illustrés : 284 reconnaissances, 48 comparaisons, 56 scénarios, une trentaine de questions
-(`image`, `image_ref`) et un schéma explicatif de verso (`illustration`). Le support technique est décrit
+Déjà illustrés : reconnaissances, comparaisons, scénarios, certaines questions
+(`image`, `image_ref`) et un schéma explicatif de verso (`illustration`). Les effectifs sont dans
+[STATS](../out/STATS.md). Le support technique est décrit
 dans [maintenance](maintenance.md).
 
 ## Pistes ouvertes
