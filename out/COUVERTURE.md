@@ -404,7 +404,7 @@ Recherche Anki : `objectif::l-marquage`
 
 Les cas contrastés préviennent les soustractions automatiques.
 
-25 notes / 32 cartes.
+23 notes / 30 cartes.
 
 Recherche Anki : `objectif::l-vitesse`
 
@@ -422,18 +422,16 @@ Recherche Anki : `objectif::l-vitesse`
 | `l-vitesse-minimale-autoroute` | consolidation | faits | R413-19, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-vitesse-engins` | consolidation | faits | Code de la route, art. R311-1 |
 | `l-vitesse-adaptee` | consolidation | questions | Code de la route, art. R413-17 |
-| `l-probatoire-autoroute-110` | socle | questions | Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
-| `l-pluie-autoroute-110` | socle | questions | Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-brouillard-zone30` | socle | questions | Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-pluie-route80` | socle | questions | Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-pmv-limitation` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `l-visuel-b14-adaptation` | socle | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-17 |
 | `l-c107-route-simple` | socle | questions | https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-c107-route-separee` | socle | questions | https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
+| `l-precipitations-neige` | socle | questions | Code de la route, art. R413-2 |
 | `aff-l-90-departement` | consolidation | affirmations | Code de la route, art. R413-2 |
 | `aff-l-creneau-90` | socle | affirmations | Code de la route, art. R413-2 I 3° et R413-5 |
 | `aff-l-lieu-dit` | consolidation | affirmations | IISR 5e partie art. 99-3 ; Code de la route, art. R110-2 |
-| `aff-l-agglo-50-panneau` | consolidation | affirmations | Code de la route, art. R413-3 |
 | `aff-l-vitesse-sous-limite` | socle | affirmations | Code de la route, art. R413-17 |
 
 ## l-depasser : Décider si le dépassement est possible et renoncer à temps
@@ -483,7 +481,7 @@ Recherche Anki : `objectif::l-depasser`
 
 Ne pas confondre trajectoire, clignotant et droit de passage.
 
-26 notes / 26 cartes.
+27 notes / 27 cartes.
 
 Recherche Anki : `objectif::l-position`
 
@@ -501,6 +499,7 @@ Recherche Anki : `objectif::l-position`
 | `l-clignotant-quand` | socle | questions | Code de la route, art. R412-10 |
 | `l-retrecissement-croisement` | socle | questions | Code de la route, art. R414-1 ; règle de conduite (programme REMC) |
 | `l-voie-lents` | consolidation | questions | Code de la route, R422-1 |
+| `l-tourner-gauche-placement` | socle | questions | Code de la route, art. R415-4 |
 | `aff-l-files-droite` | socle | affirmations | Code de la route, art. R414-15 et R412-24 |
 | `aff-l-klaxon-hors-agglo` | consolidation | affirmations | Code de la route, art. R416-1 et R416-3 |
 | `aff-l-voie-milieu-autoroute` | consolidation | affirmations | Code de la route, art. R412-23 |
@@ -520,7 +519,7 @@ Recherche Anki : `objectif::l-position`
 
 La durée et les warnings ne créent aucune autorisation.
 
-34 notes / 37 cartes.
+36 notes / 39 cartes.
 
 Recherche Anki : `objectif::l-stationner`
 
@@ -553,6 +552,7 @@ Recherche Anki : `objectif::l-stationner`
 | `l-visuel-arret-b6d` | socle | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
 | `l-visuel-jaune-continu` | socle | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
 | `l-visuel-jaune-discontinu` | socle | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
+| `l-arret-ligne-continue` | consolidation | questions | Code de la route, art. R417-10 |
 | `aff-l-sens-unique-gauche` | socle | affirmations | Code de la route, art. R417-1 |
 | `aff-l-bau-appel` | consolidation | affirmations | Code de la route, art. R421-7 et R417-10 |
 | `aff-l-arret-moteur-tournant` | consolidation | affirmations | Code de la route, art. R110-2 |
@@ -560,12 +560,13 @@ Recherche Anki : `objectif::l-stationner`
 | `aff-l-trottoir-moto` | consolidation | affirmations | Code de la route, art. R417-10 |
 | `aff-l-genant-fourriere` | consolidation | affirmations | Code de la route, art. R417-9 à R417-12 ; L325-1 |
 | `aff-l-zone-rencontre-stationnement` | socle | affirmations | Code de la route, art. R417-10 et R110-2 |
+| `aff-l-arret-pont` | consolidation | affirmations | Code de la route, art. R417-10 |
 
 ## c-distances : Relier vitesse, réaction, freinage et intervalle
 
 Comprendre le mécanisme et calculer sur les données fournies.
 
-14 notes / 15 cartes.
+15 notes / 16 cartes.
 
 Recherche Anki : `objectif::c-distances`
 
@@ -578,6 +579,7 @@ Recherche Anki : `objectif::c-distances`
 | `c-intervalle-2s` | socle | faits | Code de la route, art. R412-12 ; Codes Rousseau, Calcul des distances |
 | `c-intervalle-pl-tunnel` | consolidation | faits | Code de la route, R412-12 ; CETU, sécurité des usagers en tunnel |
 | `c-autoroute-deux-traits` | socle | faits | securite-routiere.gouv.fr, La vitesse et la conduite ; IISR 7e partie, art. 113-1 |
+| `c-energie-choc` | socle | faits | Relation physique : énergie cinétique ½mv², hauteur équivalente v²/2g |
 | `c-suiveur-trop-pres` | socle | questions | Code de la route, art. R412-12 ; securite-routiere.gouv.fr, Les distances de sécurité |
 | `c-distance-arret-composantes` | socle | questions | Cerema, Évaluation V80 (2020), annexe 2, https://www.onisr.securite-routiere.gouv.fr/sites/default/files/2020-07/Cerema-EvaluationV80-Juillet2020-Vdef3.pdf ; raccourci des supports de préparation |
 | `c-double-vitesse-arret` | socle | questions | Modèle physique à décélération constante ; Sécurité routière, vitesse |
@@ -881,7 +883,7 @@ Recherche Anki : `objectif::r-travaux`
 
 Respecter leurs priorités et anticiper leurs erreurs.
 
-36 notes / 39 cartes.
+37 notes / 40 cartes.
 
 Recherche Anki : `objectif::u-vulnerables`
 
@@ -907,6 +909,7 @@ Recherche Anki : `objectif::u-vulnerables`
 | `u-cycliste-tourner-droite` | socle | questions | Code de la route, art. R415-3 III : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278135 ; R415-14 |
 | `u-cycliste-bras-gauche` | consolidation | questions | Code de la route, art. R412-10 et R414-6 ; En Voiture Simone, Les vélos |
 | `u-double-sens-cyclable` | socle | questions | Code de la route, art. R412-28-1 et R110-2 |
+| `u-cycliste-avant-droite` | socle | questions | Code de la route, art. R414-4 et R415-3 |
 | `aff-u-pieton-telephone` | consolidation | affirmations | Code de la route, art. R415-11 ; Ornikar, Priorité piéton |
 | `aff-u-pieton-imprudent` | socle | affirmations | Code de la route, art. R412-6 et R412-37 ; securite-routiere.gouv.fr, Réglementation des piétons |
 | `aff-u-pieton-passage-50m` | consolidation | affirmations | Code de la route, R412-37 et R412-39, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177125/ |
@@ -946,7 +949,7 @@ Recherche Anki : `objectif::u-micromobilite`
 | `u-edpm-regle-locale` | socle | questions | Service Public, https://www.service-public.gouv.fr/particuliers/actualites/A19037 |
 | `aff-u-edpm-trottoir` | consolidation | affirmations | Code de la route, art. R412-43-1 et R412-34 ; service-public.fr F308 |
 | `aff-u-edpm-pousse-main` | socle | affirmations | Code de la route, art. R412-34 II 2° |
-| `aff-u-edpm-gilet-agglo` | socle | affirmations | Code de la route, art. R412-43-2 et R431-1-1 ; service-public.fr F308 |
+| `aff-u-edpm-gilet-agglo` | socle | affirmations | Code de la route, art. R412-43-3 et R431-1-1 ; service-public.fr F308 |
 | `aff-u-interfiles-vitesse` | consolidation | affirmations | Code de la route, art. R412-11-3 (décret n° 2025-33) |
 | `aff-u-interfiles-files-gauche` | socle | affirmations | Code de la route, art. R412-11-3 (décret n° 2025-33) |
 | `aff-u-interfiles-panneau-autos` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q16) ; Code de la route, art. R412-11-3 |
@@ -1000,12 +1003,13 @@ Recherche Anki : `objectif::u-intervention`
 
 Réglage fonctionnel et champ visuel plutôt que liste arbitraire.
 
-22 notes / 22 cartes.
+23 notes / 23 cartes.
 
 Recherche Anki : `objectif::p-installer`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
+| `p-desembuage-clim` | consolidation | faits | securite-routiere.gouv.fr, Conduire par mauvais temps ; notices constructeurs (désembuage) |
 | `p-verif-tour-vehicule` | socle | questions | REMC (compétence 1) ; securite-routiere.gouv.fr, Bien préparer son trajet |
 | `p-verif-chargement-important` | consolidation | questions | Sécurité routière, Exemples de nouvelles questions (Q1) ; notices constructeurs |
 | `p-verif-pare-brise` | consolidation | questions | Code de la route, art. R412-6 ; securite-routiere.gouv.fr, Conduire en hiver |
@@ -1234,7 +1238,7 @@ Recherche Anki : `objectif::s-charger`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `d-masses-definitions` | consolidation | faits | Code de la route, art. R311-1 et R221-4 ; arrêté du 9 février 2009 (certificat d'immatriculation, rubriques F.2, F.3, G.1) |
+| `d-masses-definitions` | socle | faits | Code de la route, art. R311-1 et R221-4 ; arrêté du 9 février 2009 (certificat d'immatriculation, rubriques F.2, F.3, G.1) |
 | `s-chargement-chiffres` | socle | faits | Code de la route, art. R312-19 à R312-21 ; arrêté du 16 juillet 1954 (signalisation des chargements) |
 | `s-remorque-chiffres` | socle | faits | Code de la route, art. R221-4, R317-8, R413-8 ; service-public.fr F2827 |
 | `s-chargement-placement` | socle | questions | Code de la route, art. R312-19 ; securite-routiere.gouv.fr |
@@ -1256,7 +1260,7 @@ Recherche Anki : `objectif::s-charger`
 
 La respiration normale et le traumatisme changent le geste ; suivre les secours.
 
-33 notes / 36 cartes.
+34 notes / 37 cartes.
 
 Recherche Anki : `objectif::a-secourir`
 
@@ -1269,7 +1273,7 @@ Recherche Anki : `objectif::a-secourir`
 | `borne-appel-autoroute` | consolidation | faits | securite-routiere.gouv.fr, Bien se comporter sur autoroute ; ASFA |
 | `triangle-distance` | socle | faits | Arrêté du 30 septembre 2008, art. 2, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000019566252/ |
 | `rcp-rythme` | socle | faits | Sécurité civile, PSC juillet 2026, Arrêt cardiaque, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
-| `a-proteger-arret` | consolidation | questions | Code de la route, art. R416-19 ; Ornikar, Protéger la zone ; Croix-Rouge française |
+| `a-proteger-arret` | socle | questions | Code de la route, art. R416-19 ; Ornikar, Protéger la zone ; Croix-Rouge française |
 | `a-incendie-vehicule` | consolidation | questions | Sécurité civile, PSC juillet 2026, Protection, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-alerter-borne-ou-portable` | socle | questions | securite-routiere.gouv.fr, Bien se comporter sur autoroute ; ASFA |
 | `a-message-alerte` | socle | questions | Croix-Rouge française, Alerter les secours ; securite-routiere.gouv.fr |
@@ -1284,9 +1288,9 @@ Recherche Anki : `objectif::a-secourir`
 | `l-reperes-localisation` | consolidation | questions | Sécurité routière, alerte : route, sens, localisation |
 | `a-objet-plaie` | socle | questions | https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-traumatisme-respiration` | socle | questions | Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
+| `a-secours-deja-sur-place` | socle | questions | Sécurité civile, PSC juillet 2026, Protection, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Code pénal, art. 223-6 |
 | `aff-a-dae-formation` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q6) ; décret n° 2007-705 ; Croix-Rouge française |
 | `aff-a-pls-avec-casque` | socle | affirmations | Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Sécurité routière, secours au motard |
-| `aff-a-respire-mais-inconsciente` | consolidation | affirmations | Sécurité civile, PSC juillet 2026, Perte de connaissance, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `aff-a-compressions-seules` | socle | affirmations | Croix-Rouge française, Arrêt cardiaque |
 | `aff-a-donner-a-boire` | socle | affirmations | Sécurité civile, PSC juillet 2026, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `aff-a-contact-vehicules-accidentes` | consolidation | affirmations | Ornikar, Protéger la zone ; Croix-Rouge française |
@@ -1295,6 +1299,7 @@ Recherche Anki : `objectif::a-secourir`
 | `aff-a-18-secours-personne` | consolidation | affirmations | service-public.fr, Numéros d'urgence ; Croix-Rouge française |
 | `aff-a-degagement-urgence` | consolidation | affirmations | Sécurité civile, PSC juillet 2026, Dégagement d’urgence |
 | `aff-a-dae-sans-danger` | socle | affirmations | Sécurité civile, PSC juillet 2026, p. 26–34, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
+| `aff-a-transport-blesse` | socle | affirmations | Sécurité civile, PSC juillet 2026, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 
 ## a-accident : Assumer ses obligations après un accident
 

@@ -186,7 +186,7 @@
   image:
     commons: France road sign A13b.svg
   nom: Passage pour piétons (annonce du danger)
-  signification: Annonce un passage pour piétons (passage protégé) situé 150 m plus loin hors agglomération (50 m en agglomération).
+  signification: Annonce un passage pour piétons situé en général à environ 150 m hors agglomération (50 m en agglomération), sauf panonceau de distance.
   conduite: Ralentir, être prêt à s'arrêter pour laisser traverser les piétons engagés ou manifestant l'intention de traverser ; ne pas dépasser un véhicule qui ralentit ou s'arrête devant le passage.
   theme: L
   sous_theme: panneaux

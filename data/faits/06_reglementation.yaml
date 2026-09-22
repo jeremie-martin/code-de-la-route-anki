@@ -32,8 +32,7 @@
 - id: d-points-delit-cumul
   texte: Pour plusieurs infractions constatées en même temps, le retrait de points est plafonné à {{c1::8 points}} ; seul
     le cumul alcool + stupéfiants peut en retirer 9.
-  explication: 'Le cumul à 9 points date de la loi du 18 août 2026 ; une question non mise à jour peut encore attendre
-    8. Tous les délits ne retirent pas six points : le défaut d’assurance et la conduite sans permis n’en retirent
+  explication: 'Le retrait de 9 points pour le cumul alcool + stupéfiants est prévu par L235-1. Tous les délits ne retirent pas six points : le défaut d’assurance et la conduite sans permis n’en retirent
     aucun.'
   theme: D
   sous_theme: points
@@ -123,9 +122,9 @@
   sous_theme: permis
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2828"
 - id: d-accompagnateur
-  explication: 'En conduite accompagnée, c''est l''accompagnateur qui répond des infractions de l''élève : amende,
-    retrait de points et rétention ou suspension de son permis (L224-1 II). Il est aussi personnellement soumis aux
-    règles sur l''alcool et les stupéfiants.'
+  explication: 'En conduite accompagnée, l''accompagnateur a la charge de la conduite et peut voir sa responsabilité
+    engagée. Il est personnellement soumis aux règles sur l''alcool et les stupéfiants (rétention possible de son
+    permis, L224-1 II).'
   theme: D
   sous_theme: permis
   source: "Code de la route, R211-3 et R234-1 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2826"
@@ -274,8 +273,8 @@
   source: Code de la route, art. L224-1, L224-2, L224-7 ; service-public.fr F1040
   rappels:
   - Les forces de l’ordre peuvent retenir le permis sur place pendant {{c1::72 heures}} (120 h si des analyses sont en cours).
-  - Après une rétention, le préfet peut prononcer une suspension administrative jusqu’à {{c2::6 mois}} (1 an pour alcool,
-    stupéfiants, refus de dépistage ou accident corporel).
+  - Après une rétention, la suspension administrative du préfet dure au plus {{c2::6 mois}} (1 an notamment pour alcool,
+    stupéfiants, refus de vérification ou accident corporel ou mortel).
 - id: d-documents-bord
   explication: Pour une voiture immatriculée en France, l’assurance est contrôlée via le Fichier des véhicules assurés ; la
     suppression de la carte verte n’a pas supprimé l’obligation d’assurance. Gilet et triangle sont des équipements, pas des
@@ -353,6 +352,7 @@
   sous_theme: permis
   source: Code de la route, art. R221-5 et R221-4 (catégorie AM) ; service-public F2828
 - id: d-permis-b-perimetre
+  prerequis: [d-masses-definitions]
   rappels:
   - Le permis B autorise un véhicule dont le PTAC ne dépasse pas {{c1::3,5 t}}.
   - Le permis B autorise un véhicule conçu pour au plus {{c2::8 passagers}} en plus du conducteur.

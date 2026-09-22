@@ -134,9 +134,9 @@
   sous_theme: quitter
   source: "Code de la route, art. R417-8 ; Nissan Juke 2024, stationnement, https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml"
 - id: p-quitter-objets
-  question: Je laisse ma voiture sur un parking de gare pour la journée ; mon sac est sur le siège passager. Je
-    le laisse là ?
-  reponse: 'Non : j’emporte le sac, surtout s’il contient des valeurs ou des documents. Je ferme les vitres et verrouille
+  question: Je laisse ma voiture sur un parking de gare pour la journée ; mon sac est sur le siège passager. Que
+    fais-je avant de partir ?
+  reponse: 'J’emporte le sac, surtout s’il contient des valeurs ou des documents ; je ferme les vitres et verrouille
     le véhicule.'
   explication: Si je dois laisser des affaires sans valeur, je les mets hors de vue dans le coffre fermé, de préférence
     avant d’arriver. Cela réduit la tentation sans garantir contre le vol.
@@ -183,9 +183,8 @@
   sous_theme: quitter
   source: "Code de la route, art. R417-7 ; securite-routiere.gouv.fr, Enfants en voiture"
 - id: p-enfants-seuls
-  question: Je m'arrête cinq minutes devant une boulangerie ; mon enfant dort à l'arrière. Je le laisse dans la
-    voiture ?
-  reponse: 'Non : je l’emmène avec moi. Un enfant sans surveillance peut être en danger même pendant une courte
+  question: Je m'arrête cinq minutes devant une boulangerie ; mon enfant dort à l'arrière. Que fais-je de lui ?
+  reponse: 'Je l’emmène avec moi : un enfant sans surveillance peut être en danger même pendant une courte
     absence.'
   explication: Par chaleur, l’habitacle peut vite devenir dangereux ; une vitre entrouverte ne sécurise pas l’absence.
     Il existe aussi des risques liés aux commandes, aux portières ou à un malaise. Ne pas attendre une température

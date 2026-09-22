@@ -187,7 +187,7 @@
   source: "En Voiture Simone, Le verglas ; Roole, Neige et verglas"
 - id: aff-r-verglas-temperature-positive
   contexte: Aube d’hiver ; le thermomètre extérieur de la voiture indique +2 °C.
-  affirmation: La température étant positive, je peux exclure tout verglas sur la route.
+  affirmation: Avec une température positive, la route n’est pas verglacée.
   verdict: faux
   pourquoi: 'Le revêtement peut être plus froid que l’air, surtout sur les ponts, dans les zones d’ombre et près
     des cours d’eau : du verglas est possible avec une température affichée positive. Aucune valeur du thermomètre
@@ -205,10 +205,11 @@
   source: Code de la route, art. R414-17
 - id: aff-r-nuit-feux-position-agglo
   contexte: La nuit, en agglomération, sur une avenue bien éclairée.
-  affirmation: Je peux me contenter de mes feux de position.
-  verdict: faux
-  pourquoi: 'La nuit, même sur une voie éclairée, ce sont les feux de croisement qui s''imposent (R416-6 II 2°).
-    Les feux de position servent à être vu, pas à voir : ils n''éclairent pas la chaussée.'
+  affirmation: En voiture, je peux me contenter de mes feux de position.
+  verdict: vrai
+  pourquoi: 'En agglomération, si l''éclairage public permet de voir distinctement assez loin, les feux de position
+    suffisent à une voiture, même sous la pluie (R416-6) ; pas à une moto. Les feux de croisement restent préférables
+    pour être mieux vu, et s''imposent dès que l''éclairage est insuffisant.'
   theme: R
   sous_theme: nuit
   source: Code de la route, art. R416-6 et R416-8

@@ -201,7 +201,7 @@
     commons: France road sign C25b.svg
   nom: Rappel des limitations de vitesse sur autoroute
   signification: 'Rappel des limites de vitesse sur autoroute : 130 km/h par temps sec, 110 km/h par temps de pluie (ou 110/100 sur certaines sections).'
-  conduite: Réduire à 110 dès que la chaussée est mouillée (essuie-glaces en marche).
+  conduite: 'Réduire à 110 sur autoroute dès qu’il pleut ou qu’il y a d’autres précipitations (repère pratique : essuie-glaces en marche).'
   complement: 'Jeune conducteur (permis probatoire) : 110 sur autoroute, 100 sur route à chaussées séparées, 80 sur route.'
   theme: L
   sous_theme: panneaux

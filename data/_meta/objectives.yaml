@@ -361,8 +361,6 @@
   - l-vitesse-pluie
   - l-vitesse-probatoire
   - l-vitesse-visibilite-50
-  - l-probatoire-autoroute-110
-  - l-pluie-autoroute-110
   - l-pluie-route80
   - l-brouillard-zone30
   - aff-l-creneau-90
@@ -370,6 +368,7 @@
   - l-visuel-b14-adaptation
   - l-c107-route-simple
   - l-c107-route-separee
+  - l-precipitations-neige
   consolidation:
   - sr3a
   - sr3e
@@ -379,7 +378,6 @@
   - l-vitesse-adaptee
   - aff-l-90-departement
   - aff-l-lieu-dit
-  - aff-l-agglo-50-panneau
   - l-pmv-limitation
 - id: l-depasser
   theme: L
@@ -436,6 +434,7 @@
   - l-vocab-chaussee-voie
   - l-clignotant-quand
   - l-tourner-droite-serrer
+  - l-tourner-gauche-placement
   consolidation:
   - l-croisement-largeur
   - l-demi-tour-marche-arriere
@@ -487,6 +486,8 @@
   - aff-l-trottoir-moto
   - aff-l-genant-fourriere
   - conf-b6a2-b6a3
+  - l-arret-ligne-continue
+  - aff-l-arret-pont
 - id: c-distances
   theme: C
   titre: Relier vitesse, réaction, freinage et intervalle
@@ -504,6 +505,7 @@
   - aff-c-temps-reaction-vitesse
   - c-suiveur-trop-pres
   - c-distance-obstacle-exercice
+  - c-energie-choc
   consolidation:
   - c-intervalle-pl-tunnel
   - aff-c-vitesse-double-freinage-double
@@ -769,6 +771,7 @@
   - c20a
   - c115
   - marq-passage-pietons
+  - u-cycliste-avant-droite
   consolidation:
   - aff-u-velo-m12
   - marq-passage-cyclistes
@@ -876,6 +879,7 @@
   - aff-p-neige-toit
   - p-vehicule-emprunte-equipements
   - aff-p-entrer-face-circulation
+  - p-desembuage-clim
 - id: p-quitter
   theme: P
   titre: Immobiliser et sortir sans exposer les autres
@@ -1056,8 +1060,8 @@
   - aff-s-caravane-passager
   - s-remorque-seuil-750
   - s-remorque-masse-reelle
-  consolidation:
   - d-masses-definitions
+  consolidation:
   - s-remorque-permis-vitesse
   - s-coffre-toit
   - aff-s-chargement-distance-arret
@@ -1091,14 +1095,15 @@
   - numero-114
   - a-objet-plaie
   - a-traumatisme-respiration
+  - a-proteger-arret
+  - a-secours-deja-sur-place
+  - aff-a-transport-blesse
   consolidation:
   - aff-a-degagement-urgence
   - triangle-presignalisation
   - borne-appel-autoroute
-  - a-proteger-arret
   - a-incendie-vehicule
   - aff-a-dae-formation
-  - aff-a-respire-mais-inconsciente
   - aff-a-contact-vehicules-accidentes
   - aff-a-18-secours-personne
   - l-reperes-localisation

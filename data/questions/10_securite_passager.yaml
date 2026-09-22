@@ -123,7 +123,7 @@
   question: Qu'est-ce qui change au volant quand on tracte une remorque ou une caravane ?
   reponse: 'Gabarit et distance d’arrêt plus grands, dépassements plus longs, marche arrière inversée et risque de louvoiement
     : charge lourde en bas sur l’essieu, allure réduite.'
-  explication: 'Le poids réel de la remorque ne doit pas dépasser 1,3 fois celui du véhicule tracteur. Si l''attelage est
+  explication: 'Respecter les masses remorquables et le PTRA inscrits sur la carte grise. Si l''attelage est
     plus large, il faut des rétroviseurs additionnels. En cas de louvoiement : lever le pied sans freiner brutalement.'
   theme: S
   sous_theme: chargement
@@ -138,6 +138,7 @@
   sous_theme: equipements
   source: "securite-routiere.gouv.fr, Équipements de sécurité ; Euro NCAP"
 - id: s-remorque-vitesses
+  prerequis: [d-masses-definitions]
   question: 'Je tracte une remorque avec une voiture de PTAC inférieur à 3,5 t et de PTRA 4 t.
     Hors agglomération, quels plafonds de vitesse s’appliquent par temps sec, sans limitation plus basse ?'
   reponse: '90 km/h sur autoroute et sur route prioritaire à chaussées séparées par un terre-plein central ;
@@ -149,10 +150,11 @@
   sous_theme: chargement
   source: "Code de la route, art. R413-8, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426 ; R413-1 et R413-4"
 - id: s-remorque-permis-vitesse
+  prerequis: [d-masses-definitions]
   question: 'Voiture de PTAC 2 200 kg et de PTRA 4 000 kg, attelée à une remorque vide de PTAC 500 kg.
     Le permis B suffit et les capacités techniques sont respectées. Sur une autoroute normalement limitée
-    à 130 km/h, par temps sec, puis-je rouler à 130 ?'
-  reponse: 'Non : 90 km/h au maximum, car je tracte et le PTRA de la voiture dépasse 3 500 kg.'
+    à 130 km/h, par temps sec, quelle est ma vitesse maximale ?'
+  reponse: '90 km/h : je tracte et le PTRA de la voiture dépasse 3 500 kg.'
   explication: 'Le permis requis et la vitesse autorisée sont deux vérifications différentes.
     Ni la petite remorque, ni son faible poids réel, ni la somme des PTAC inférieure à 3 500 kg
     ne suppriment ici la limite liée au PTRA. Sans remorque, ce seul PTRA ne soumet pas la voiture à 90 km/h.'
@@ -160,6 +162,7 @@
   sous_theme: chargement
   source: "Code de la route, art. R413-8, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426 ; R221-4"
 - id: s-remorque-seuil-750
+  prerequis: [d-masses-definitions]
   theme: S
   sous_theme: applications
   question: Voiture de PTAC 3 500 kg, remorque de PTAC 750 kg ; capacités techniques respectées. Le permis
@@ -169,6 +172,7 @@
     Calculer seulement la somme dans tous les cas conduit à une erreur.
   source: "Service Public, permis B, https://www.service-public.gouv.fr/particuliers/vosdroits/F2828"
 - id: s-remorque-masse-reelle
+  prerequis: [d-masses-definitions]
   theme: S
   sous_theme: applications
   question: 'La somme des PTAC dépasse 3 500 kg, avec une remorque de PTAC 1 000 kg. La remorque est vide :

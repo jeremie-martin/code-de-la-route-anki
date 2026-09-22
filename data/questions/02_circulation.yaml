@@ -19,7 +19,8 @@
   sous_theme: priorites
   source: Code de la route, art. R415-6
 - id: l-tourner-gauche-regle
-  question: Je tourne à gauche à une intersection sans feu. Quels véhicules peuvent avoir priorité sur moi ?
+  question: Je tourne à gauche à une intersection sans feu ni panneau de priorité. Quels véhicules peuvent avoir priorité
+    sur moi ?
   reponse: Ceux qui viennent en face (tout droit ou tournant à droite) et, si la priorité à droite s’applique, ceux qui arrivent
     de ma droite.
   explication: Vérifier aussi les piétons qui traversent la chaussée abordée et les pistes cyclables traversées. La réponse
@@ -281,7 +282,8 @@
   reponse: 'Stationnement dangereux : 135 €, 3 points et fourrière possible, parce que la visibilité est insuffisante pour
     ceux qui arrivent.'
   explication: 'R417-9 : même qualification près d''une intersection, dans un virage ou à l''approche d''un passage à niveau.
-    C''est la seule infraction de stationnement qui retire des points.'
+    C''est la seule catégorie de stationnement qui retire des points ; un arrêt la nuit sans éclairage, sur une
+    chaussée non éclairée, en retire aussi (R416-12).'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-9
@@ -317,8 +319,9 @@
   question: Que signifient les formes et couleurs des panneaux de danger, d'interdiction, d'obligation et d'indication ?
   reponse: 'Triangle bordé de rouge : danger. Rond bordé de rouge : interdiction. Rond bleu : obligation. Carré bleu : indication.
     Ronds barrés : fin d’interdiction (blanc) ou d’obligation (bleu).'
-  explication: Les panneaux de danger sont implantés à 150 m du danger hors agglomération, 50 m en agglomération ; une interdiction
-    ou une obligation vaut jusqu'à la prochaine intersection ou jusqu'au panneau de fin.
+  explication: Les panneaux de danger sont en général implantés à environ 150 m du danger hors agglomération, 50 m en
+    agglomération, sauf panonceau de distance. Une interdiction ou une obligation ponctuelle vaut en général jusqu'à la
+    prochaine intersection ou jusqu'au panneau de fin ; une prescription de zone vaut jusqu'à la sortie de la zone.
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie
@@ -398,28 +401,13 @@
   theme: L
   sous_theme: signalisation
   source: Code de la route, art. R416-1
-- id: l-probatoire-autoroute-110
-  theme: L
-  sous_theme: vitesse
-  question: 'Permis probatoire, temps sec, section d’autoroute normalement limitée à 110 km/h : quel est mon maximum
-    ?'
-  reponse: 100 km/h.
-  explication: La limite probatoire de 110 ne concerne que les sections normalement à 130.
-  source: "Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/"
-- id: l-pluie-autoroute-110
-  theme: L
-  sous_theme: vitesse
-  question: 'Permis hors période probatoire, autoroute normalement limitée à 110 km/h : il pleut. Quel est le maximum
-    ?'
-  reponse: 100 km/h sous la pluie.
-  explication: Si un panneau impose moins, c’est ce plafond inférieur qui s’applique.
-  source: "Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/"
 - id: l-brouillard-zone30
   theme: L
   sous_theme: vitesse
-  question: Zone 30, visibilité réduite à 40 m. La règle du brouillard me permet-elle de rouler à 50 ?
-  reponse: 'Non : 30 km/h reste le maximum, et je ralentis davantage si nécessaire.'
-  explication: Le plafond de 50 ne relève jamais une limitation locale plus basse.
+  question: Zone 30, visibilité réduite à 40 m par le brouillard. Quelle vitesse maximale s’applique ?
+  reponse: '30 km/h, et je ralentis davantage si nécessaire : le plafond de 50 km/h par brouillard ne relève pas une
+    limite plus basse.'
+  explication: La règle du brouillard (50 km/h si la visibilité est inférieure à 50 m) abaisse les plafonds plus élevés ; elle ne relève jamais une limitation plus basse.
   source: "Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/"
 - id: l-pluie-route80
   theme: L
@@ -708,3 +696,31 @@
     observer son comportement.
   source: Code de la route, R415-1 et R413-17
   image_ref: ab6
+- id: l-tourner-gauche-placement
+  question: Je vais quitter la route sur ma gauche. Où me placer sur une chaussée à double sens à deux voies, sur une
+    chaussée à double sens à trois voies, et dans une rue à sens unique ?
+  reponse: 'Je serre à gauche : près de l’axe sans le dépasser à deux voies ; sur la voie médiane à trois voies (sauf
+    signalisation contraire) ; au bord gauche de la chaussée en sens unique.'
+  explication: Ce placement laisse passer à ma droite ceux qui continuent et annonce ma manœuvre. Il ne donne aucune
+    priorité ; je cède encore aux véhicules d’en face et aux cyclistes des pistes que je traverse.
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R415-4
+- id: l-arret-ligne-continue
+  question: Je veux m’arrêter au bord droit d’une route dont l’axe est une ligne continue. Quelle circonstance rendrait
+    cet arrêt gênant, même sans panneau ?
+  reponse: Que la largeur restant libre oblige les autres véhicules à chevaucher ou franchir la ligne continue pour passer.
+  explication: 'R417-10 II 3° : arrêt ou stationnement gênant (35 €). Je cherche un endroit où je laisse une voie
+    suffisante, ou je sors de la chaussée.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-10
+- id: l-precipitations-neige
+  question: Il neige, sans brouillard, sur une autoroute limitée à 130 km/h par temps sec. Permis définitif. Quel est
+    mon plafond ?
+  reponse: '110 km/h : les plafonds abaissés s’appliquent à la pluie et aux autres précipitations, neige et grêle comprises.'
+  explication: Une visibilité inférieure à 50 m imposerait 50 km/h. Sur neige, l’allure adaptée est souvent bien plus
+    basse que le plafond.
+  theme: L
+  sous_theme: vitesse
+  source: Code de la route, art. R413-2

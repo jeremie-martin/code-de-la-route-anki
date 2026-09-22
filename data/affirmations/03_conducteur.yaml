@@ -95,7 +95,7 @@
   sous_theme: vigilance
   source: "Code de la route, art. R416-1 ; securite-routiere.gouv.fr, Enfants piétons"
 - id: aff-c-retros-suffisent
-  affirmation: 'Mes rétroviseurs sont bien réglés : ils me suffisent pour changer de voie en sécurité.'
+  affirmation: 'Mes rétroviseurs sont bien réglés : un coup d’œil dedans avant de changer de voie me permet de le faire en sécurité.'
   verdict: faux
   pourquoi: 'Ils ne montrent pas l''angle mort, où un deux-roues tient entièrement. Avant de se déporter, un regard direct par-dessus l''épaule du côté de la manœuvre est indispensable ; s''il y a quelqu''un, on ne commence pas.'
   theme: C

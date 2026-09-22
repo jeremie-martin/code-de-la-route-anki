@@ -8,7 +8,10 @@ from __future__ import annotations
 import math
 import textwrap
 
-from build.diagrams import ASPHALT, GRASS, MARK, FONT, SVG, draw_road, draw_intersection, draw_roundabout, vehicle_sprite, intention_arrow, sign_data_uri, esc
+from build.diagrams import (ASPHALT, GRASS, MARK, FONT, SVG, agent_figure, draw_road, draw_intersection, draw_roundabout,
+                            vehicle_sprite, intention_arrow, siren_rays, sign_data_uri, esc, _body)
+
+ME = _body({"me": True})  # the learner's car in decision scenes: blue, yellow halo, MOI (as in the scenarios)
 
 YELLOW = "#f2c200"
 SCALE = 12  # px per metre for marking strips (so 3 m dash = 36 px)
@@ -149,15 +152,16 @@ def fleches(params):
         for x in (190, 290):
             S.add(f'<line x1="{x}" y1="70" x2="{x}" y2="300" stroke="{MARK}" stroke-width="4" stroke-dasharray="14 10"/>')
         S.add(f'<rect x="90" y="66" width="300" height="6" fill="{MARK}"/>')
-        # arrows
+        # arrows: shaft 14 wide; turning arrows bend towards their side and keep inside their lane
         def arrow(cx, kind_):
             if kind_ == "straight":
-                return f'<path d="M{cx},210 l0,-70 l-14,0 l14,-30 l14,30 l-14,0 l0,70 z" fill="{MARK}" transform="translate(0,0)"/>'
-            if kind_ == "left":
-                return (f'<path d="M{cx},210 l0,-60 q0,-16 -16,-16 l-10,0 l0,-12 l-26,20 l26,20 l0,-12 l10,0 q0,0 0,0 l0,60 z" fill="{MARK}"/>')
-            if kind_ == "right":
-                return (f'<path d="M{cx},210 l0,-60 q0,-16 16,-16 l10,0 l0,-12 l26,20 l-26,20 l0,-12 l-10,0 l0,60 z" fill="{MARK}"/>')
-        S.add(arrow(140, "left")); S.add(arrow(240, "straight")); S.add(arrow(340, "right"))
+                return f'<path d="M{cx - 7},240 V150 H{cx - 18} L{cx},112 L{cx + 18},150 H{cx + 7} V240 Z" fill="{MARK}"/>'
+            k = -1 if kind_ == "left" else 1  # mirror of the right-turn arrow
+            pts = [(-7, 240), (-7, 150), (-7, 134), (9, 128), (14, 128), (14, 112), (40, 135), (14, 158), (14, 142),
+                   (9, 142), (7, 146), (7, 240)]
+            d = " ".join(f"{'M' if i == 0 else 'L'}{cx + k * x},{y}" for i, (x, y) in enumerate(pts))
+            return f'<path d="{d} Z" fill="{MARK}"/>'
+        S.add(arrow(146, "left")); S.add(arrow(240, "straight")); S.add(arrow(334, "right"))
         S.add(f'<rect x="90" y="0" width="300" height="60" fill="{ASPHALT}"/>')
     elif kind == "insertion":
         pass
@@ -178,8 +182,7 @@ def transversale(params):
         for x in range(244, 358, 20):
             S.add(f'<rect x="{x}" y="88" width="12" height="10" fill="{MARK}"/>')
     elif kind == "effet_feux":
-        for x in range(244, 358, 12):
-            S.add(f'<rect x="{x}" y="90" width="6" height="4" fill="{MARK}"/>')
+        S.add(f'<line x1="244" y1="92" x2="358" y2="92" stroke="{MARK}" stroke-width="4" stroke-dasharray="6 6"/>')
         S.add(f'<rect x="366" y="40" width="22" height="58" rx="5" fill="#222"/>')
         for i, c in enumerate(["#d8362d", "#f08a24", "#2fa14b"]):
             S.add(f'<circle cx="377" cy="{51 + i * 18}" r="7" fill="{c if i == 0 else "#555"}"/>')
@@ -218,10 +221,12 @@ def passage(params):
     elif kind == "sas_velo":
         S.add(f'<rect x="120" y="0" width="240" height="300" fill="{ASPHALT}"/>')
         S.add(f'<rect x="0" y="0" width="480" height="70" fill="{ASPHALT}"/>')
-        S.add(f'<rect x="126" y="80" width="228" height="50" fill="#3aa657" opacity="0.85"/>')
-        S.add(f'<rect x="126" y="78" width="228" height="6" fill="{MARK}"/><rect x="126" y="130" width="228" height="6" fill="{MARK}"/>')
-        S.add(f'<g transform="translate(240,105)"><circle cx="-10" cy="6" r="8" fill="none" stroke="{MARK}" stroke-width="3"/><circle cx="12" cy="6" r="8" fill="none" stroke="{MARK}" stroke-width="3"/><path d="M-10,6 l8,-14 l12,0 l2,14 M-2,-8 l6,14" fill="none" stroke="{MARK}" stroke-width="3"/></g>')
-        S.add(f'<line x1="240" y1="140" x2="240" y2="300" stroke="{MARK}" stroke-width="4" stroke-dasharray="14 10"/>')
+        # the box covers my approach only, between two "effet des feux" lines (thin, dashed)
+        S.add(f'<rect x="243" y="80" width="114" height="54" fill="#3aa657" opacity="0.85"/>')
+        for y in (78, 134):
+            S.add(f'<line x1="243" y1="{y}" x2="357" y2="{y}" stroke="{MARK}" stroke-width="4" stroke-dasharray="6 6"/>')
+        S.add(f'<g transform="translate(300,105)"><circle cx="-10" cy="6" r="8" fill="none" stroke="{MARK}" stroke-width="3"/><circle cx="12" cy="6" r="8" fill="none" stroke="{MARK}" stroke-width="3"/><path d="M-10,6 l8,-14 l12,0 l2,14 M-2,-8 l6,14" fill="none" stroke="{MARK}" stroke-width="3"/></g>')
+        S.add(f'<line x1="240" y1="80" x2="240" y2="300" stroke="{MARK}" stroke-width="4" stroke-dasharray="14 10"/>')
         S.add(f'<rect x="364" y="30" width="22" height="58" rx="5" fill="#222"/>')
         for i, c in enumerate(["#d8362d", "#f08a24", "#2fa14b"]):
             S.add(f'<circle cx="375" cy="{41 + i * 18}" r="7" fill="{c if i == 0 else "#555"}"/>')
@@ -429,42 +434,9 @@ def agent(params):
     """
     S = SVG(340, 360)
     S.add('<rect x="0" y="0" width="340" height="360" fill="#ffffff"/>')
-    pose = params.get("pose", "bras_leve")
-    cx = 170  # room on the left for the motion marks of the "ralentir" gesture
-    body, hand = "#1f3a93", "#f5d0b0"
-    S.add(f'<rect x="{cx - 28}" y="200" width="22" height="110" rx="8" fill="{body}"/><rect x="{cx + 6}" y="200" width="22" height="110" rx="8" fill="{body}"/>')
-    S.add(f'<rect x="{cx - 40}" y="110" width="80" height="100" rx="14" fill="{body}"/>')
-    S.add(f'<rect x="{cx - 40}" y="150" width="80" height="14" fill="#fff" opacity="0.85"/>')
-    S.add(f'<circle cx="{cx}" cy="80" r="26" fill="{hand}"/>')
-    S.add(f'<path d="M{cx - 30},70 q30,-30 60,0 l0,-8 q-30,-26 -60,0 z" fill="#0d1f5c"/><rect x="{cx - 34}" y="66" width="68" height="8" rx="3" fill="#0d1f5c"/>')
-
-    def arm(x0, y0, x1, y1):
-        S.add(f'<line x1="{x0}" y1="{y0}" x2="{x1}" y2="{y1}" stroke="{body}" stroke-width="18" stroke-linecap="round"/>')
-        S.add(f'<circle cx="{x1}" cy="{y1}" r="10" fill="{hand}"/>')
-
-    ls, rs = (cx - 34, 122), (cx + 34, 122)  # shoulders (viewer's left / right)
-    if pose == "bras_leve":
-        arm(*rs, cx + 44, 22)
-        arm(*ls, cx - 52, 200)
-    elif pose == "bras_tendus":
-        arm(*ls, cx - 130, 128)
-        arm(*rs, cx + 130, 128)
-    elif pose == "ralentir":
-        arm(*ls, cx - 120, 170)
-        arm(*rs, cx + 52, 200)
-        # motion marks: the arm moves up and down
-        S.add(f'<path d="M{cx - 128},120 l0,-14 M{cx - 136},128 l-14,0" fill="none" stroke="#333" stroke-width="3"/>')
-        S.add(f'<path d="M{cx - 150},200 l0,14 M{cx - 158},192 l-14,0" fill="none" stroke="#333" stroke-width="3"/>')
-        S.add(f'<path d="M{cx - 140},140 q-16,30 0,60" fill="none" stroke="#333" stroke-width="3" stroke-dasharray="5 5"/>')
-    elif pose == "avancer":
-        arm(*ls, cx - 100, 140)          # upper arm out
-        arm(cx - 100, 140, cx - 70, 96)  # forearm swept back towards the chest
-        arm(*rs, cx + 52, 200)
-        S.add(f'<path d="M{cx - 150},130 q 10,-70 60,-70" fill="none" stroke="#333" stroke-width="4" stroke-dasharray="7 6"/>')
-        S.add(f'<path d="M{cx - 90},60 l14,-10 l-2,18 z" fill="#333"/>')
-        S.add(f'<path d="M{cx - 150},130 l-4,-18 l16,8 z" fill="#333"/>')
+    S.add(agent_figure(params.get("pose", "bras_leve")))
     if params.get("caption_text"):
-        S.add(f'<text x="{cx}" y="345" font-family="{FONT}" font-size="14" text-anchor="middle" fill="#333">{esc(str(params["caption_text"]))}</text>')
+        S.add(f'<text x="170" y="345" font-family="{FONT}" font-size="14" text-anchor="middle" fill="#333">{esc(str(params["caption_text"]))}</text>')
     return str(S)
 
 
@@ -611,19 +583,18 @@ def damier(params):
     S.add(f'<rect x="0" y="40" width="480" height="220" fill="{ASPHALT}"/>')
     colour = params.get("colour", "blanc")
     if colour == "blanc":  # bus lane crossing a junction: the checkerboard marks its continuity
+        # opposite lane (top), my general lane, my bus lane along the kerb; a side street crosses
         S.add(f'<rect x="200" y="0" width="120" height="300" fill="{ASPHALT}"/>')
-        S.add(f'<line x1="0" y1="150" x2="200" y2="150" stroke="{MARK}" stroke-width="4" stroke-dasharray="14 10"/>')
-        S.add(f'<line x1="320" y1="150" x2="480" y2="150" stroke="{MARK}" stroke-width="4" stroke-dasharray="14 10"/>')
-        _dashes_h(S, 196, 3, 1.33, w=6, x1=200)
-        _dashes_h(S, 196, 3, 1.33, w=6, x0=320)
-        S.add(f'<text x="100" y="240" font-family="{FONT}" font-size="30" font-weight="800" text-anchor="middle" fill="{MARK}" transform="scale(1,1.4) translate(0,-70)">BUS</text>')
-        S.add(f'<text x="400" y="240" font-family="{FONT}" font-size="30" font-weight="800" text-anchor="middle" fill="{MARK}" transform="scale(1,1.4) translate(0,-70)">BUS</text>')
-        x0, y0, size, cols, rows = 200, 198, 20, 6, 3
-        for i in range(cols):
-            for j in range(rows):
+        for x0_, x1_ in ((0, 200), (320, 480)):
+            _dashes_h(S, 110, 3, 10, w=4, x0=x0_, x1=x1_)
+            _dashes_h(S, 186, 3, 1.33, w=6, x0=x0_, x1=x1_)
+            S.add(f'<text x="{(x0_ + x1_) / 2}" y="240" font-family="{FONT}" font-size="30" font-weight="800" text-anchor="middle" fill="{MARK}">BUS</text>')
+        x0, y0, size = 200, 190, 20
+        for i in range(6):
+            for j in range(3):
                 if (i + j) % 2 == 0:
                     S.add(f'<rect x="{x0 + i * size}" y="{y0 + j * size}" width="{size}" height="{size}" fill="{MARK}"/>')
-        _me_car(S, 70, 100)
+        _me_car(S, 70, 148)
         return str(S)
     x0, y0, size = 150, 80, 30
     for i in range(6):
@@ -739,9 +710,9 @@ def livraison(params):
     S.add(f'<rect x="0" y="0" width="480" height="200" fill="{ASPHALT}"/>')
     S.add(f'<rect x="0" y="200" width="480" height="100" fill="#bdbdbd"/>')
     _dashes_h(S, 90, 3, 10)
-    S.add(f'<rect x="120" y="130" width="240" height="4" fill="{YELLOW}"/>')
-    S.add(f'<path d="M140,140 L340,196 M340,140 L140,196" stroke="{YELLOW}" stroke-width="4"/>')
-    S.add(f'<text x="240" y="176" font-family="{FONT}" font-size="20" font-weight="700" text-anchor="middle" fill="{YELLOW}">LIVRAISON</text>')
+    S.add(f'<path d="M150,198 V130 H430 V198" fill="none" stroke="{YELLOW}" stroke-width="5" stroke-dasharray="12 12"/>')
+    S.add(f'<text x="290" y="174" font-family="{FONT}" font-size="24" font-weight="700" text-anchor="middle" fill="{YELLOW}">LIVRAISON</text>')
+    _me_car(S, 60, 150)
     return str(S)
 
 
@@ -847,7 +818,7 @@ def chantier_approche(params):
     S.add('<path d="M489 334V371 M474 374H504" stroke="#687475" stroke-width="5" stroke-linecap="round"/>')
     uri = sign_data_uri(params["sign"]["file"], 240)
     S.add(f'<image x="435" y="255" width="112" height="99" xlink:href="{uri}"/>')
-    S.add(f'<g transform="translate(325,355) scale(1.6)">{vehicle_sprite("car", "bleu")}</g>')
+    S.add(f'<g transform="translate(325,355) scale(1.6)">{ME}</g>')
     return str(S)
 
 
@@ -901,7 +872,7 @@ def chantier_rabattement(params):
     for x, y in ((295, 100), (365, 248)):
         S.add(f'<g transform="translate({x-27.5},{y-45}) scale(.5)">{panel}</g>')
         S.add(f'<path d="M{x-20} {y+49}h40" stroke="#222" stroke-width="6"/>')
-    S.add(f'<g transform="translate(295,370) scale(1.5)">{vehicle_sprite("car", "bleu")}</g>')
+    S.add(f'<g transform="translate(295,370) scale(1.5)">{ME}</g>')
     S.add('<path d="M397 244L469 220" stroke="#687475" stroke-width="2"/>')
     S.add(f'<g transform="translate(480,125)">{panel}</g>')
     S.add(f'<text x="535" y="106" text-anchor="middle" font-family="{FONT}" font-size="26" fill="#263336">Signal agrandi</text>')
@@ -912,14 +883,15 @@ def corridor_securite(params):
     """An adjacent car prevents an immediate lane change past a shoulder recovery."""
     S = _motorway_scene()
     S.add(f'<g transform="translate(155,335) scale(1.5)">{vehicle_sprite("car", "gris")}</g>')
-    S.add(f'<g transform="translate(295,350) scale(1.5)">{vehicle_sprite("car", "bleu")}</g>')
+    S.add(f'<g transform="translate(295,350) scale(1.5)">{ME}</g>')
     # Recovery vehicle: existing truck cab, flat bed, secured car and amber beacon.
     S.add(f'<g transform="translate(399,129) scale(1.35)">{vehicle_sprite("truck", "orange")}')
     S.add('<rect x="-23" y="-25" width="46" height="81" fill="#71787a"/>')
     S.add(f'<g transform="translate(0,15) scale(.75)">{vehicle_sprite("car", "gris")}</g>')
     S.add('<rect x="-16" y="-31" width="32" height="7" rx="2" fill="#ffc438" stroke="#805b14"/>')
+    S.add(siren_rays(0, -28, "#f08a24", r0=14, r1=22))
     S.add('</g>')
-    S.add(f'<text x="399" y="227" text-anchor="middle" font-family="{FONT}" font-size="26" fill="{MARK}">BAU</text>')
+    S.add(f'<text x="399" y="240" text-anchor="middle" font-family="{FONT}" font-size="26" fill="{MARK}">BAU</text>')
     return str(S)
 
 
@@ -934,7 +906,7 @@ def cycliste_tourne_droite(params):
     S.add(f'<path d="M240 0V440" stroke="{MARK}" stroke-width="3" stroke-dasharray="22 18"/>')
     S.add(f'<path d="M117 0V440 M363 0V110H398 M456 110H640 M363 440V240H398 M456 240H640" fill="none" stroke="{MARK}" stroke-width="3"/>')
     S.add(f'<path d="M402 0V110 M452 0V110 M402 240V440 M452 240V440" stroke="{MARK}" stroke-width="2"/>')
-    S.add(f'<g transform="translate(312,318) scale(1.5)">{vehicle_sprite("car", "bleu")}{intention_arrow("right")}</g>')
+    S.add(f'<g transform="translate(312,318) scale(1.5)">{ME}{intention_arrow("right")}</g>')
     S.add(f'<g transform="translate(427,345) scale(.85)">{vehicle_sprite("bike", "rouge")}</g>')
     S.add(f'<path d="M427 300v-35m-7 8l7-9 7 9" fill="none" stroke="{MARK}" stroke-width="3"/>')
     S.add(f'<text x="477" y="342" font-family="{FONT}" font-size="26" fill="#263336">Piste</text>')
@@ -948,16 +920,17 @@ def giratoire_sortie(params):
     S.add(f'<rect width="640" height="440" fill="{GRASS}"/>')
     S.add(f'<path d="M190 0H290V440H190Z M0 165H640V275H0Z" fill="{ASPHALT}"/>')
     S.add(f'<circle cx="240" cy="220" r="195" fill="{ASPHALT}"/>')
-    S.add(f'<circle cx="240" cy="220" r="90" fill="{GRASS}" stroke="{MARK}" stroke-width="3"/>')
-    S.add(f'<circle cx="240" cy="220" r="142" fill="none" stroke="{MARK}" stroke-width="3" stroke-dasharray="18 15"/>')
+    S.add(f'<circle cx="240" cy="220" r="60" fill="{GRASS}" stroke="{MARK}" stroke-width="3"/>')
+    S.add(f'<circle cx="240" cy="220" r="128" fill="none" stroke="{MARK}" stroke-width="3" stroke-dasharray="18 15"/>')
     S.add(f'<path d="M437 220H640 M240 0V23 M240 417V440 M0 220H43" stroke="{MARK}" stroke-width="3"/>')
     for x1,y1,x2,y2 in ((440,168,440,216),(193,22,236,22),(244,418,287,418),(40,224,40,272)):
         S.add(f'<path d="M{x1} {y1}L{x2} {y2}" stroke="{MARK}" stroke-width="6" stroke-dasharray="8 6"/>')
     # Shared symbols retain readable silhouettes, with the bicycle smaller than the car.
-    for radius, angle, kind, colour, scale in ((116, -32, "car", "bleu", 1.15), (174, -28, "bike", "rouge", .8)):
+    for radius, angle, kind, colour, scale in ((94, -32, "car", "bleu", 1.0), (162, -30, "bike", "rouge", .9)):
         a = math.radians(angle)
         x, y = 240 + radius*math.cos(a), 220 - radius*math.sin(a)
-        S.add(f'<g transform="translate({x},{y}) rotate({-angle}) scale({scale})">{vehicle_sprite(kind,colour)}</g>')
+        sprite = _body({"me": True}, -angle) if colour == "bleu" else vehicle_sprite(kind, colour)
+        S.add(f'<g transform="translate({x},{y}) rotate({-angle}) scale({scale})">{sprite}</g>')
     S.add(f'<path d="M485 248h98m-12-8 12 8-12 8" fill="none" stroke="{MARK}" stroke-width="4"/>')
     S.add(f'<text x="537" y="314" text-anchor="middle" font-family="{FONT}" font-size="26" fill="#263336">Sortie visée</text>')
     return str(S)
@@ -974,7 +947,7 @@ def entrecroisement(params):
     S.add(f'<path d="M310 135V305" stroke="{MARK}" stroke-width="5" stroke-dasharray="12 14"/>')
     S.add(f'<path d="M460 0L310 135 M560 0L410 135V305L560 440 M310 305L460 440" '
           f'fill="none" stroke="{MARK}" stroke-width="3"/>')
-    S.add(f'<g transform="translate(360,260) scale(1.4)">{vehicle_sprite("car","bleu")}{intention_arrow("left")}</g>')
+    S.add(f'<g transform="translate(360,260) scale(1.4)">{ME}{intention_arrow("left")}</g>')
     S.add(f'<g transform="translate(250,220) scale(1.4)">{vehicle_sprite("car","rouge")}{intention_arrow("right")}</g>')
     for y, label in ((397, "Entrée"), (66, "Sortie")):
         S.add(f'<text x="574" y="{y}" text-anchor="middle" font-family="{FONT}" font-size="26" fill="#263336">{label}</text>')
@@ -994,7 +967,7 @@ def route_c107(params):
     else:
         S.add(f'<path d="M260 0V440" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 18"/>')
     S.add(f'<g transform="translate(185,120) rotate(180) scale(1.5)">{vehicle_sprite("car","gris")}</g>')
-    S.add(f'<g transform="translate(335,345) scale(1.5)">{vehicle_sprite("car","bleu")}</g>')
+    S.add(f'<g transform="translate(335,345) scale(1.5)">{ME}</g>')
     for x, y, direction in ((185, 300, 180), (335, 155, 0)):
         S.add(f'<g transform="translate({x},{y}) rotate({direction})"><path d="M0 20V-20m-8 10 8-10 8 10" '
               f'fill="none" stroke="{MARK}" stroke-width="4"/></g>')
@@ -1017,7 +990,7 @@ def camion_virage(params):
     # Lamps on the truck's right, with small rays indicating the lit phase.
     S.add('<path d="M23-60v9 M23 50v9" stroke="#ffc438" stroke-width="7"/>')
     S.add('<path d="M32-57h7 M32 55h7" stroke="#ffc438" stroke-width="3"/></g>')
-    S.add(f'<g transform="translate(345,530) scale(1.4)">{vehicle_sprite("car","bleu")}</g>')
+    S.add(f'<g transform="translate(345,530) scale(1.4)">{ME}</g>')
     return str(S)
 
 
@@ -1100,11 +1073,11 @@ def voyant_direction(params):
     S = SVG(360, 360)
     S.add('<defs><filter id="g" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4"/></filter></defs>')
     S.add('<rect x="0" y="0" width="360" height="360" rx="43" fill="#1b1b1b"/>')
-    wheel = (f'<circle cx="180" cy="180" r="112" fill="none" stroke="{c}" stroke-width="26"/>'
+    wheel = (f'<g transform="translate(150,180) scale(.82) translate(-180,-180)">'
+             f'<circle cx="180" cy="180" r="112" fill="none" stroke="{c}" stroke-width="26"/>'
              f'<circle cx="180" cy="180" r="34" fill="{c}"/>'
-             f'<path d="M180,214 L180,292 M70,166 L146,180 M290,166 L214,180" stroke="{c}" stroke-width="22" stroke-linecap="round"/>'
-             f'<rect x="168" y="112" width="24" height="60" rx="6" fill="#1b1b1b"/><circle cx="180" cy="188" r="12" fill="#1b1b1b"/>'
-             f'<rect x="171" y="118" width="18" height="46" rx="5" fill="{c}"/><circle cx="180" cy="186" r="9" fill="{c}"/>')
+             f'<path d="M180,214 L180,292 M70,166 L146,180 M290,166 L214,180" stroke="{c}" stroke-width="22" stroke-linecap="round"/></g>'
+             f'<rect x="284" y="110" width="26" height="92" rx="8" fill="{c}"/><circle cx="297" cy="236" r="15" fill="{c}"/>')
     S.add(f'<g filter="url(#g)" opacity="0.6">{wheel}</g>')
     S.add(wheel)
     return str(S)

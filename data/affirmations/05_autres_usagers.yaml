@@ -154,7 +154,7 @@
   pourquoi: 'Le cycliste ne porte le gilet que hors agglomération ; l''utilisateur d''EDPM, lui, doit un gilet ou un équipement rétro-réfléchissant partout, la nuit ou de jour par visibilité insuffisante (35 €).'
   theme: U
   sous_theme: edpm
-  source: 'Code de la route, art. R412-43-2 et R431-1-1 ; service-public.fr F308'
+  source: 'Code de la route, art. R412-43-3 et R431-1-1 ; service-public.fr F308'
 # ---------- Motos et cyclomoteurs ----------
 - id: aff-u-interfiles-vitesse
   contexte: Je suis motard, en inter-files sur une autoroute saturée ; les deux files avancent à 40 km/h.

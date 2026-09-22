@@ -10,16 +10,16 @@
   source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
 - id: e-rapports-regime
   question: En montée, le moteur peine après un passage au rapport supérieur pour économiser du carburant.
-    Dois-je garder ce rapport ?
-  reponse: Non, je rétrograde pour retrouver une reprise suffisante. Éviter le sur-régime ne signifie pas faire peiner le moteur.
+    Que fais-je ?
+  reponse: Je rétrograde pour retrouver une reprise suffisante. Éviter le sur-régime ne signifie pas faire peiner le moteur.
   explication: Passer les rapports assez tôt lorsque les conditions le permettent, sans à-coups. Le bon rapport dépend
     du moteur, de la charge et de la pente ; l’indicateur de changement de rapport est une aide, pas un ordre prioritaire sur la situation.
   theme: E
   sous_theme: ecoconduite
   source: "Notice Kia, fonctionnement économique, https://ownersmanual.kia.com/docview/webhelp/doc/e654660e-4668-4ece-9479-cacf1bc87727/topics/chapter6_23.html"
 - id: e-moteur-arret
-  question: Les barrières d'un passage à niveau viennent de se fermer devant moi. Je laisse tourner le moteur ?
-  reponse: Non, je coupe le moteur pendant cet arrêt prolongé, ou laisse agir le Stop & Start.
+  question: Les barrières d'un passage à niveau viennent de se fermer devant moi. Que fais-je du moteur ?
+  reponse: Je le coupe pendant cet arrêt prolongé, ou je laisse agir le Stop & Start.
   explication: Le ralenti consomme sans faire avancer. Je garde les fonctions nécessaires à la sécurité (feux,
     désembuage) ; il n’y a pas de compte à rebours universel à appliquer à chaque arrêt dans la circulation.
   theme: E

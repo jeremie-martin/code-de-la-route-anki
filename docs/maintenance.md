@@ -45,7 +45,8 @@ nécessaire), puis tout est en cache. Le texte du Code consolidé, ignoré par g
 Champs communs : `id` (unique, minuscules, chiffres, tirets), `theme` (X L C R U D A P M S E ; X = méthode de
 lecture de l’épreuve), `sous_theme` (voir la liste ci-dessous), `source`. Facultatifs : `image` (`{commons: nom
 de fichier exact}`, `{gen: générateur, params: {…}}`, `tint: "#hex"` pour un voyant ISO), `image_ref` (une
-question réutilise l’image d’une reconnaissance, qui la précède alors dans l’ordre), `debut: true` (base à
+question réutilise l’image d’une reconnaissance, qui la précède alors dans l’ordre), `prerequis: [ids]` (notes
+à connaître avant celle-ci : une définition, une évaluation avant le geste qui en dépend), `debut: true` (base à
 introduire avant tout le reste), `multi_ok`, `dedup_ok: [autre-id]` (exceptions assumées qui font
 taire un avertissement). Les valeurs contenant « : » se mettent entre guillemets (`python build/yamlfix.py fichier`).
 
@@ -145,9 +146,16 @@ nouvelle carte. Choisir le verso quand le dessin révélerait la réponse au rec
 dessine les marquages, feux, gestes de l’agent et les scènes ponctuelles des questions (`image.gen`). Tout
 changement de l’un ou l’autre invalide les images au build suivant. Conventions communes :
 
-- Même palette, mêmes silhouettes de véhicules ; « moi » est la voiture bleue cerclée de jaune, étiquetée MOI ;
-  en scénario, toujours l’approche S (en bas, cap au nord). Les flèches montrent l’intention, jamais une
-  trajectoire de réponse. Un tramway a ses rails, une sirène en service rayonne, un feu jaune clignotant aussi.
+- Même palette, mêmes silhouettes de véhicules ; « moi » est la voiture bleue cerclée de jaune, étiquetée MOI,
+  dans les scénarios comme dans les scènes de décision des questions (`ME` dans `gen_images.py`) ; en scénario,
+  toujours l’approche S (en bas, cap au nord). Les voitures des bandes de marquage ne sont que des repères.
+  Les flèches montrent l’intention, partent de l’avant du véhicule et ne dessinent jamais une trajectoire de
+  réponse. Tout véhicule qui attend a son avant à la même distance du carrefour (`HALF_LENGTH`), quelle que
+  soit sa longueur ; les inscriptions (MOI, TRAM, SOS) restent lisibles quelle que soit l’orientation.
+  Un tramway a ses rails, une sirène ou un gyrophare en service rayonne, un feu jaune clignotant aussi.
+- Ce qui ne se voit pas de dessus ne se dessine pas de dessus : un bras levé est montré de face dans un
+  médaillon relié à l’agent. Marquages transversaux : STOP continu large, cédez-le-passage discontinu large,
+  ligne d’effet des feux discontinue fine (aussi pour le sas vélo).
 - Les scènes sont dessinées sur un plan (600 × 600 pour les carrefours, 600 × 480 pour les routes) dont seule la
   fenêtre utile est exportée (`SVG.view`) : les véhicules, panneaux et flèches restent lisibles sur un
   téléphone. Une légende (`caption`) s’ajoute sous la fenêtre.
@@ -206,7 +214,8 @@ taille (signalisation, circulation, chaque thème, scénarios). Dans une piste :
 `SUBTHEME_ORDER`, faits avant questions avant affirmations, puis ordre du fichier. Les reconnaissances
 suivent `RECON_ORDER` (fichiers), chaque comparaison arrive après ses deux membres, les scénarios s’ouvrent
 quand les signaux dont ils dépendent sont vus (`SCENARIO_GATES`). Toutes les notes du socle (`notes` dans
-`objectives.yaml`) passent avant la consolidation ; les cartes sœurs d’un fait sont espacées de
+`objectives.yaml`) passent avant la consolidation ; les prérequis d’une note (`image_ref`, `prerequis`) pas encore
+vus sont avancés juste avant elle (un prérequis d’une note du socle doit être au socle) ; les cartes sœurs d’un fait sont espacées de
 `SIBLING_GAP` positions. `out/PROGRAMME.md` liste l’ordre obtenu.
 
 ## Commandes

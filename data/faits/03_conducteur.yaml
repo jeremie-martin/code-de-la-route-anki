@@ -43,8 +43,8 @@
     au moins {{c1::2 secondes}}.
   - 'Ne pas respecter la distance de sécurité : 135 € et un retrait de {{c2::3 points}}.'
 - id: c-intervalle-pl-tunnel
-  texte: Hors agglomération, deux véhicules de plus de 3,5 t (ou de plus de 7 m) qui se suivent à la même vitesse gardent
-    au moins {{c1::50 m}}.
+  texte: Hors agglomération, ma voiture tractant une caravane forme un ensemble de plus de 7 m ; derrière un poids lourd
+    ou un autre long ensemble roulant à la même vitesse, je garde au moins {{c1::50 m}}.
   explication: 'En tunnel, respecter la distance affichée : elle diffère souvent en circulation et à l’arrêt.'
   theme: C
   sous_theme: distances
@@ -130,3 +130,11 @@
   explication: 'Le seuil est inclus : il faut être en dessous. Lire sang ou air expiré ; aucun nombre de verres
     ne garantit le résultat. Zéro alcool reste le choix sûr.'
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2881"
+- id: c-energie-choc
+  texte: Heurter un obstacle à 50 km/h équivaut à une chute d’environ {{c1::10 m}}, soit un troisième étage.
+  explication: 'L’énergie du choc croît avec le carré de la vitesse : à vitesse doublée, elle est multipliée par quatre.
+    À 50 km/h (14 m/s), la hauteur de chute équivalente vaut v²/2g ≈ 10 m. C’est pourquoi quelques km/h de moins
+    réduisent fortement la gravité d’un choc, surtout pour un piéton.'
+  theme: C
+  sous_theme: distances
+  source: 'Relation physique : énergie cinétique ½mv², hauteur équivalente v²/2g'

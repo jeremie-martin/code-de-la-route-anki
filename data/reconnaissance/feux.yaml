@@ -106,7 +106,7 @@
       arrow: left
   nom: Signaux tricolores directionnels (feux à flèches)
   signification: 'Feux tricolores dont les trois feux portent une flèche : ils ne concernent que les usagers qui vont dans cette direction.'
-  conduite: Se placer dans la voie de sa direction et obéir au feu fléché ; céder quand même aux piétons.
+  conduite: Se placer dans la voie de sa direction et obéir au feu fléché ; au vert, les flux qui me coupent ont en principe le rouge, mais je laisse finir un piéton encore engagé.
   piege: Ne pas confondre avec R16, la flèche jaune clignotante (passer en cédant le passage).
   theme: L
   sous_theme: feux

@@ -209,7 +209,7 @@
     axis: discontinue
     vehicles:
       - {lane: 1, y: 30, colour: bleu, me: true}
-      - {lane: 2, y: 12, colour: gris}
+      - {lane: 2, y: 23, colour: gris}
   question: "Une voiture est en train de me dépasser. Que dois-je faire ?"
   reponse: "Serrer à droite sans accélérer, et ne surtout pas me déporter à gauche ; au besoin ralentir légèrement pour faciliter son rabattement."
   explication: "Accélérer quand on est dépassé : 135 €, 2 points (R414-16). Je ne dépasse pas non plus un véhicule qui est lui-même en train de dépasser."
@@ -336,12 +336,12 @@
     axis: discontinue
     vehicles:
       - {lane: 1, y: 40, colour: bleu, me: true, goes: left}
-      - {lane: 2, y: 18, colour: gris}
+      - {lane: 2, y: 38, colour: gris}
     extras:
       - {kind: intersection_gauche, y: 62}
   question: "Je ralentis, clignotant gauche, pour tourner dans la rue à gauche. Dans le rétroviseur, une voiture est déjà en train de me dépasser. Puis-je tourner maintenant ?"
   reponse: "Non : j'attends qu'elle m'ait dépassé ; me déporter à gauche maintenant la couperait."
-  explication: "R412-10 impose de s'assurer qu'un changement de direction est sans danger, et celui qui est sur le point d'être dépassé serre à droite (R414-16). Le clignotant annonce, il n'autorise pas : rétroviseur puis angle mort gauche avant de se déporter, même si l'autre n'aurait pas dû me dépasser par la gauche après mon signal (R414-6)."
+  explication: "R412-10 impose d'avertir ; le clignotant ne dispense pas de vérifier que je peux tourner sans danger, et celui qui est sur le point d'être dépassé serre à droite (R414-16). Le clignotant annonce, il n'autorise pas : rétroviseur puis angle mort gauche avant de se déporter, même si l'autre n'aurait pas dû me dépasser par la gauche après mon signal (R414-6)."
   theme: L
   sous_theme: depassement
   source: "Code de la route, art. R412-10, R414-16 et R414-6"

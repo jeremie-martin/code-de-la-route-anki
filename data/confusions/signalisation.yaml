@@ -3,7 +3,7 @@
   b: a13b
   difference: '**A** : deux enfants qui courent, sans bandes → endroit fréquenté par les enfants (école, aire
     de jeux) : je ralentis fortement, un enfant peut surgir. **B** : un adulte sur des bandes → annonce d''un
-    passage pour piétons (150 m hors agglomération, 50 m en ville).'
+    passage pour piétons (environ 150 m hors agglomération, 50 m en ville).'
   theme: L
   sous_theme: panneaux
   source: IISR 1re partie
@@ -230,7 +230,7 @@
 - id: conf-a13b-c20a
   a: a13b
   b: c20a
-  difference: '**A** (triangle) : **annonce** un passage pour piétons à 150 m (50 m en ville). **B** (carré
+  difference: '**A** (triangle) : **annonce** un passage pour piétons à environ 150 m (50 m en ville). **B** (carré
     bleu) : indique la **position** du passage pour piétons, à hauteur des bandes. Dans les deux cas, on cède
     le passage aux piétons engagés ou qui s''apprêtent à traverser.'
   theme: L
@@ -320,8 +320,8 @@
   b: marq-ligne-cedez
   difference: '**Ligne d''arrêt (STOP)** : ligne transversale **continue**, large : arrêt complet obligatoire à
     son niveau. **Ligne de cédez-le-passage** : ligne transversale **discontinue** (traits de 50 cm) : céder le
-    passage, sans obligation d''arrêt si la voie est libre. Les triangles blancs au sol signalent en France un ralentisseur,
-    pas un cédez-le-passage.'
+    passage, sans obligation d''arrêt si la voie est libre ; un grand triangle blanc, pointe vers moi, peut la
+    précéder.'
   theme: L
   sous_theme: marquages
   source: IISR 7e partie

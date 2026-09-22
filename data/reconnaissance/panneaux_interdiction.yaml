@@ -126,6 +126,8 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  prerequis:
+  - l-arret-vs-stationnement
   comparaisons:
   - ref: b6d
     legende: 'Croix rouge : arrêt et stationnement interdits.'
@@ -165,6 +167,8 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  prerequis:
+  - l-arret-vs-stationnement
   piege: 'Équivalent au sol : ligne jaune CONTINUE sur la bordure (arrêt interdit) ; jaune discontinue = stationnement interdit seulement.'
 - id: b7a
   type: panneau

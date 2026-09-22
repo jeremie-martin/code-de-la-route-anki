@@ -95,7 +95,8 @@ r13:
 r14:
   signification: 'Feux tricolores dont les trois feux portent une flèche : ils ne concernent que les usagers qui vont dans
     cette direction.'
-  conduite: Se placer dans la voie de sa direction et obéir au feu fléché ; céder quand même aux piétons.
+  conduite: Se placer dans la voie de sa direction et obéir au feu fléché ; au vert, les flux qui me coupent ont en principe
+    le rouge, mais je laisse finir un piéton encore engagé.
   piege: Ne pas confondre avec R16, la flèche jaune clignotante (passer en cédant le passage).
   complement: null
 r16:
@@ -149,7 +150,8 @@ marq-ligne-stop:
 marq-ligne-cedez:
   signification: 'Ligne blanche discontinue en travers de la voie : je cède le passage avant de la franchir, sans arrêt obligatoire si la voie est libre.'
   complement: Se trouve aussi aux entrées de giratoire et en fin de voie d’insertion.
-  piege: Les triangles blancs au sol signalent en France un ralentisseur, pas un cédez-le-passage.
+  piege: 'Un grand triangle blanc isolé, pointe vers moi, peut précéder cette ligne ; trois petits triangles pointés dans
+    mon sens, sur une rampe, signalent un ralentisseur.'
 marq-ligne-effet-feux:
   signification: 'Ligne blanche discontinue fine, en travers de la voie avant un feu : c''est là que l''on s''arrête au rouge.'
   conduite: S'arrêter avant cette ligne au rouge ou au jaune, sans empiéter sur le passage piéton ni le sas vélo.
@@ -215,14 +217,16 @@ marq-ligne-jaune-zigzag:
   complement: Aux arrêts de bus. S’y arrêter ou stationner est un stationnement gênant, avec fourrière possible.
   piege: 'Un couloir bus, lui, est très gênant : 135 €.'
 marq-livraison:
-  signification: 'Emplacement réservé à l''arrêt pour chargement/déchargement : ligne jaune discontinue, croix jaune et inscription
-    « LIVRAISON ».'
-  complement: Certaines aires (ligne discontinue simple) sont ouvertes au stationnement la nuit (20 h – 7 h), dimanches et
-    fêtes ; les aires à double ligne restent réservées 24 h/24.
+  nom: Aire de livraison (ligne jaune discontinue + inscription LIVRAISON)
+  signification: 'Emplacement réservé à l''arrêt des véhicules qui chargent ou déchargent des marchandises : ligne jaune
+    discontinue et inscription « LIVRAISON ».'
+  complement: Un arrêté local peut ouvrir l’aire au stationnement à certaines heures (la nuit, par exemple) ; en dehors
+    de ces horaires signalés, elle reste réservée aux livraisons.
 marq-ralentisseur-triangles:
   signification: Trois triangles blancs (« dents de requin »), pointes dans le sens de la circulation, peints sur la rampe
     d'un ralentisseur.
-  complement: En France, les triangles blancs au sol signalent un ralentisseur, pas un cédez-le-passage.
+  complement: Ne pas confondre avec le grand triangle isolé, pointe vers le conducteur, qui peut précéder une ligne de
+    cédez-le-passage.
   conduite: 'Ralentir fortement avant de franchir : dos-d’âne et plateaux ne sont implantés que dans des zones limitées
     à 30 km/h.'
 a2b:
@@ -242,6 +246,8 @@ a9b:
   complement: null
 a13b:
   nom: Passage pour piétons (annonce du danger)
+  signification: Annonce un passage pour piétons situé en général à environ 150 m hors agglomération (50 m en agglomération),
+    sauf panonceau de distance.
   complement: null
   comparaisons:
   - ref: c20a
@@ -321,8 +327,6 @@ c28:
   signification: Annonce une réduction du nombre de voies (ex. de 3 à 2, de 2 à 1).
   complement: null
   piege: Celui dont la voie disparaît doit s'insérer ; celui qui reste dans la voie qui continue est prioritaire.
-c50:
-  complement: "Dans l'exemple ci-contre, la mention locale autorise l'arrêt sur le trottoir. C'est une exception : sans cette autorisation, l'arrêt sur le trottoir est très gênant (135 €)."
 c65a:
   signification: 'Péage « en flux libre » (sans barrière, plaques lues sous un portique) : indique les moyens de paiement.'
   conduite: Ne pas s'arrêter sous le portique ; payer sous 72 h en ligne, en point de vente ou par télépéage.
@@ -377,6 +381,7 @@ b3:
   complement: null
   piege: 'Sur les panneaux d''interdiction de dépasser, la voiture ROUGE est à gauche : c''est celle qui dépasserait.'
 b6a1:
+  prerequis: [l-arret-vs-stationnement]
   signification: Stationnement interdit du côté du panneau, jusqu'à la prochaine intersection. L'arrêt reste autorisé.
   conduite: Ne pas stationner ; on peut s'arrêter pour déposer un passager ou charger rapidement.
   complement: null
@@ -393,6 +398,7 @@ b6a3:
   conduite: Du 16 à la fin du mois, se garer de l'autre côté.
   complement: Changement de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
 b6d:
+  prerequis: [l-arret-vs-stationnement]
   complement: null
   piege: 'Équivalent au sol : ligne jaune CONTINUE sur la bordure (arrêt interdit) ; jaune discontinue = stationnement interdit
     seulement.'
@@ -631,13 +637,6 @@ agent-geste-avancer:
 sr3e:
   signification: 'Pictogramme radar + rappel de la vitesse maximale : contrôle automatisé, souvent un radar tronçon (vitesse
     moyenne).'
-j11:
-  signification: Balise blanche souple implantée sur une ligne continue pour en empêcher le franchissement.
-  complement: null
-j12:
-  signification: Balise verte implantée sur le marquage d'une divergence (bretelle de sortie) pour renforcer la perception
-    du musoir.
-  complement: null
 j13:
   signification: Balise à bandes obliques bleues et blanches signalant un obstacle permanent proche de la chaussée.
   complement: Les bandes bleues et blanches signalent un obstacle permanent ; les dispositifs rouges et blancs servent aux obstacles temporaires.
@@ -669,10 +668,6 @@ ce29:
   conduite: 'En tunnel : se garer, couper le moteur, laisser les clés, rejoindre l''issue de secours.'
 ak17:
   conduite: Ralentir, se préparer à s'arrêter ; ne pas passer au rouge même si la voie semble libre.
-kd8:
-  signification: Panneau jaune schématisant un basculement de circulation (passage sur la chaussée opposée, déport de voies).
-  conduite: 'Suivre la trajectoire indiquée et ralentir : on peut rouler sur la chaussée opposée.'
-  complement: null
 k5a:
   signification: Cône rouge et blanc délimitant un chantier ou un obstacle temporaire, posé en file pour guider.
   conduite: Rester dans l'espace laissé libre ; ne pas franchir la file de cônes.
@@ -707,6 +702,7 @@ marq-plateau-sureleve:
   complement: Rencontré en agglomération, zones 30 et zones de rencontre.
   conduite: Ralentir fortement ; céder le passage aux piétons si le plateau porte un passage.
 marq-ligne-jaune-discontinue:
+  prerequis: [l-arret-vs-stationnement]
   signification: 'Ligne jaune discontinue sur la bordure ou en rive : stationnement interdit, arrêt autorisé.'
 a3:
   conduite: Je ralentis et reste dans ma voie. Si deux véhicules ne peuvent pas se croiser, je lis les panneaux de priorité et ne m’engage que si je peux dégager.
@@ -766,9 +762,6 @@ d20:
   signification: 'Panneau de direction en position : la pointe indique la voie à prendre au carrefour.'
   complement: null
   code: D21a
-d30:
-  signification: 'Signalisation avancée : la flèche indique la direction de sortie à préparer.'
-  complement: Anticiper le placement sans changer brutalement de voie ; suivre le tracé et la signalisation.
 d40:
   complement: Lire la flèche et, si elle est affichée, la distance. Ne pas confondre l’annonce avec le panneau de position
     au carrefour.
@@ -811,13 +804,9 @@ c113:
   conduite: 'En voiture : ne pas y circuler ni s’y arrêter.'
   complement: Les trottinettes électriques et cyclomobiles légers doivent l’emprunter, sauf décision locale contraire signalée. Un panonceau avec un cyclomoteur peut aussi autoriser ces véhicules.
   piege: Le rond bleu impose la piste aux cyclistes ; le carré la conseille. Les EDPM doivent l’emprunter en agglomération.
-c1b:
-  complement: null
 b27b:
   complement: null
 b6b4:
-  complement: null
-b19:
   complement: null
 b22b:
   complement: null
@@ -826,6 +815,7 @@ j7:
 r21b:
   complement: null
 marq-ligne-jaune-continue:
+  prerequis: [l-arret-vs-stationnement]
   complement: Jaune continue = arrêt et stationnement interdits ; jaune discontinue = stationnement interdit, arrêt possible.
   signification: 'Ligne jaune continue sur la bordure ou en rive de chaussée : arrêt et stationnement interdits.'
 marq-losange-vr:
@@ -839,8 +829,6 @@ a2a:
     legende: 'Une seule bosse : ralentisseur aménagé.'
 a17:
   complement: Un feu jaune clignotant peut être ajouté au sommet du panneau pour renforcer l’alerte.
-d60:
-  complement: null
 b33:
   signification: 'Fin de la limitation de vitesse indiquée : la vitesse maximale redevient celle du régime général de la route
     (agglomération 50, route 80 ou 90 selon la section, chaussées séparées par un terre-plein 110, autoroute 130).'
@@ -850,8 +838,6 @@ c1a:
   conduite: 'Je me gare sur les emplacements autorisés et lis les panonceaux : usagers concernés, conditions et direction du parking.'
 c4a:
   complement: Carré bleu = indication (conseil) ; rond rouge = interdiction (maximum) ; rond bleu = obligation (minimum).
-c5:
-  complement: null
 c8:
   complement: Un arrêt hors urgence sur cet emplacement est interdit.
   conduite: Je n’y stationne qu’en cas de panne ou d’urgence ; les panonceaux peuvent signaler un poste d’appel ou un extincteur.
@@ -864,6 +850,8 @@ c24a:
 c24c:
   complement: null
 c25b:
+  conduite: "Réduire à 110 sur autoroute dès qu’il pleut ou qu’il y a d’autres précipitations (repère pratique : essuie-glaces
+    en marche)."
   complement: 'Jeune conducteur (permis probatoire) : 110 sur autoroute, 100 sur route à chaussées séparées, 80 sur route.'
 c26a:
   complement: Damier rouge et blanc au sol à l’entrée.
@@ -873,8 +861,6 @@ c29b:
   complement: null
   conduite: Je n’utilise la voie de gauche que pour dépasser et me rabats avant la fin du créneau de dépassement annoncé.
 c30:
-  complement: null
-c64a:
   complement: null
 c208:
   complement: null
@@ -886,8 +872,6 @@ b2b:
 b3a:
   complement: null
 b4:
-  complement: null
-b5b:
   complement: null
 eb20:
   complement: null
@@ -916,14 +900,10 @@ g1a:
   complement: null
   signification: 'Croix double : passage à niveau à plusieurs voies ferrées, sans barrières. Un train peut en cacher un autre.'
   conduite: Je regarde et écoute des deux côtés, respecte un éventuel STOP et ne franchis que si aucune voie ferrée ne présente de danger et si je peux dégager entièrement.
-k1:
-  complement: null
 kd10:
   complement: null
   signification: 'Annonce une réduction du nombre de voies disponibles : je repère les voies qui ferment et prépare mon changement de voie à la distance indiquée.'
 kd22:
-  complement: null
-kd42:
   complement: null
 vr-losange-fin:
   complement: null

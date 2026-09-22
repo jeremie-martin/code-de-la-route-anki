@@ -45,8 +45,6 @@
   notes:
   - l-vitesse-pluie
   - l-vitesse-probatoire
-  - l-probatoire-autoroute-110
-  - l-pluie-autoroute-110
   - l-pluie-route80
   - l-brouillard-zone30
 - id: feux
@@ -85,7 +83,6 @@
   - a-pls
   - a-rcp-dae
   - aff-a-pls-avec-casque
-  - aff-a-respire-mais-inconsciente
   - rcp-rythme
 - id: pneus
   consulte_le: '2026-09-21'
@@ -969,3 +966,20 @@
     urgent. Application originale à un départ avec des sculptures encore profondes. Pas de copie d’image,
     ni généralisation aux légères déformations normales des pneus radiaux.'
   notes: [m-pneu-hernie]
+- id: v14-code-consolide-revue
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228
+  portee: 'Copie consolidée au 10 septembre 2026 (docs/research/sources). Relus : R311-1 6.6 (engin de service hivernal = facilités de passage), R413-2 II
+    (pluie ou autres précipitations), R414-4, R415-3, R415-4 (placement pour tourner à gauche), R416-6 (feux de
+    position en agglomération éclairée), R416-12, R417-1, R417-10 II 3° et 6°, R412-43-3, L224-1 II (portée limitée
+    à l’alcool et aux stupéfiants pour l’accompagnateur), L224-2, L235-1.'
+  notes: [r-deneigement-depassement, u-gyrophare-orange, l-precipitations-neige, u-cycliste-avant-droite,
+    l-tourner-gauche-placement, aff-r-nuit-feux-position-agglo, l-stationnement-dangereux, l-stationnement-cote,
+    l-arret-ligne-continue, aff-l-arret-pont, aff-u-edpm-gilet-agglo, aff-d-aac-points-eleve, d-accompagnateur,
+    d-retention-suspension, d-points-delit-cumul]
+- id: v14-iisr-7e-partie
+  consulte_le: '2026-09-22'
+  url: https://equipementsdelaroute.cerema.fr/IMG/pdf/IISR_7ePARTIE_VC20130621_cle539f61.pdf
+  portee: 'Art. 117-4 : triangle au sol possible avant une ligne de cédez-le-passage (pointe vers l’usager) ; trois
+    triangles pointés dans le sens de circulation sur un dos-d’âne ; ligne d’effet des feux discontinue fine (T''2).'
+  notes: [marq-ligne-cedez, marq-ralentisseur-triangles, conf-stop-cedez-lignes, marq-ligne-effet-feux, marq-sas-velo]

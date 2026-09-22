@@ -147,7 +147,7 @@
   source: "Renault, Régulateur de vitesse, https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10"
 - id: aff-m-limiteur-descente
   contexte: Limiteur réglé sur 90 km/h, longue descente.
-  affirmation: Le limiteur garantit le respect de 90 km/h dans toute descente.
+  affirmation: Dans cette descente, je peux laisser le limiteur tenir les 90 km/h et me concentrer sur la trajectoire.
   verdict: faux
   pourquoi: Selon le système et la pente, la voiture peut dépasser la consigne malgré le limiteur.
     Je surveille la vitesse et la maîtrise avec le frein moteur et les freins ; je ne suppose pas que le limiteur freinera à ma place.
@@ -174,7 +174,7 @@
   source: "securite-routiere.gouv.fr, Les aides à la conduite (ADAS), comité des experts du CNSR, 2024"
 - id: aff-m-isa-panneaux
   contexte: Voiture neuve équipée de l’adaptation intelligente de la vitesse (ISA), obligatoire depuis juillet 2024.
-  affirmation: La limitation affichée par le système me dispense de lire les panneaux.
+  affirmation: Je peux régler mon allure sur la limitation que le système affiche.
   verdict: faux
   pourquoi: 'La caméra peut manquer un panneau masqué, ignorer un panonceau (« par temps de pluie ») ou lire la limite
     d’une bretelle voisine, et la carte peut être obsolète. Le système avertit ou modère ; le conducteur reste seul

@@ -1,5 +1,41 @@
 # Historique des éditions
 
+## v14 (22 septembre 2026)
+
+Relecture des images générées (code et rendus), puis deux relectures indépendantes : exactitude juridique au
+Code consolidé du 10 septembre 2026, et transfert à l’examen avec comparaison au livre. 1 059 notes, 1 131 cartes.
+
+- **Images, justesse** : le tramway et les véhicules longs attendaient en partie dans le carrefour, flèche dessinée
+  sur la carrosserie ; ils ont désormais leur avant à la même distance que les voitures (`HALF_LENGTH`). Le bras
+  levé de l’agent, invisible de dessus, se lisait comme un bras tendu : il est montré de face dans un médaillon.
+  Ligne d’effet des feux fine et discontinue partout (elle était continue dans les scénarios) ; sas vélo limité à
+  la voie de mon sens ; damier blanc avec la voiture du bon côté de la chaussée ; flèche directionnelle « tout droit »
+  sans tige ; aire de livraison sans croix ni texte barré ; voyant de direction assistée avec son « ! » ;
+  sens de rotation du giratoire en vraies flèches ; voiture qui me dépasse placée à ma hauteur.
+- **Images, système** : « MOI » (voiture bleue cerclée) aussi dans les scènes de décision des questions ;
+  inscriptions TRAM et SOS lisibles quelle que soit l’orientation ; gyrophare allumé qui rayonne ; légende de la
+  zone masquée hors des hachures ; voies du giratoire à environ 1,5 largeur de voiture ; panneau jaune sans le
+  mot « DÉVIATION », qui donnait la réponse.
+- **Exactitude** : triangle au sol avant un cédez-le-passage (l’IISR le prévoit) ; feux de position admis pour une
+  voiture en agglomération bien éclairée (verdict inversé) ; engin de service hivernal = facilités de passage ;
+  seul le stationnement dangereux… et l’arrêt de nuit non éclairé retirent des points ; conduite accompagnée sans
+  transfert automatique de points ; suspension préfectorale ; stationnement à gauche (R417-1) ; distances
+  d’implantation « environ » ; source du retrait de 9 points ; références R412-10, R412-43-3 ; règle « 1,3 fois »
+  pour les remorques retirée ; distance à l’arrêt en tunnel sans chiffres non sourcés, plots bleus.
+- **Cartes** : réponses de scénarios qui répondent enfin à la question posée (STOP, feu vert) ; dix questions
+  « oui/non » dont la vraie compétence est l’action deviennent « que faire ? » ; cinq faux verdicts formulés sans
+  absolu révélateur ; virage à gauche/droite, verglas, incendie (extincteur), tourne-à-gauche précisés. Quatre
+  doublons retirés (pluie et probatoire à 110, PLS, panneau d’agglomération). Neuf ajouts : placement pour tourner
+  à gauche, arrêt le long d’une ligne continue, arrêt sur un pont, neige et plafonds, énergie d’un choc à 50 km/h,
+  cycliste avant de tourner à droite, secours déjà sur place, ne pas transporter un blessé, désembuage.
+- **Ordre** : champ `prerequis` ; un prérequis pas encore vu est avancé juste avant la note qui en dépend
+  (arrêt/stationnement avant les panneaux B6, PTAC/PTRA avant les règles de remorque, évaluation avant la
+  réanimation). Protéger les lieux et les définitions de masses passent au socle. 13 corrections orphelines
+  retirées de `sign_overrides.yaml`.
+- **Vérification** : `--check` sans erreur ni avertissement ; 25 tests ; import neuf et réimport Anki (`build.verify`) ;
+  contrôle de rendu de toutes les faces (`out/RENDU.md`) ; inspection des 84 scènes et 63 images générées, et de
+  cartes rendues à 390 px. Non mesuré : rétention ou réussite à l’ETG.
+
 ## v13 (22 septembre 2026)
 
 Révision ciblée du deck et de ses objectifs, sans refonte des gabarits ni des images.

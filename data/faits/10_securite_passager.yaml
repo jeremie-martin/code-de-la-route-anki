@@ -20,6 +20,7 @@
   - Le dépassement maximal du chargement à l’arrière est {{c1::3 m}}.
   - Un chargement dépassant de plus de {{c2::1 m}} à l’arrière doit porter une signalisation spécifique.
 - id: s-remorque-chiffres
+  prerequis: [d-masses-definitions]
   explication: 'Toujours respecter les capacités du véhicule tracteur. Au-delà de 3 500 kg de somme des PTAC : mention
     B96 (jusqu''à 4 250 kg) puis permis BE. Une remorque de plus de 500 kg de PTAC a sa propre carte grise.'
   theme: S

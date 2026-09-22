@@ -128,7 +128,7 @@ GEN_MAP = {
     "D-COULEUR-BLEU": ("direction_panel", {"colour": "bleu", "text": "LYON", "dist": "45"}),
     "D-COULEUR-VERT": ("direction_panel", {"colour": "vert", "text": "PARIS", "dist": "12"}),
     "D-COULEUR-BLANC": ("direction_panel", {"colour": "blanc", "text": "Vernon", "dist": "3"}),
-    "D-COULEUR-JAUNE": ("direction_panel", {"colour": "jaune", "text": "DÉVIATION", "dist": ""}),
+    "D-COULEUR-JAUNE": ("direction_panel", {"colour": "jaune", "text": "Évreux", "dist": ""}),
     "D-COULEUR-MARRON": ("direction_panel", {"colour": "marron", "text": "Château", "dist": "8"}),
     "E31": ("lieu_dit", {"text": "Le Bourg"}),
 }

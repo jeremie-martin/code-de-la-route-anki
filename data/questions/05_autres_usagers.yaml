@@ -19,10 +19,10 @@
   sous_theme: pietons
   source: "Code de la route, art. R412-6 et R415-11 ; securite-routiere.gouv.fr, Piétons"
 - id: u-fausse-courtoisie-pieton
-  question: Mon feu est vert ; un piéton attend au bord, son signal est rouge. Un véhicule me suit de près. Est-ce
-    que je m’arrête pour le laisser traverser ?
-  reponse: 'Non, je passe normalement : m’arrêter sans que rien ne l’impose met en danger le piéton et celui qui
-    me suit.'
+  question: Mon feu est vert ; un piéton attend au bord, son signal est rouge. Un véhicule me suit de près. Que
+    fais-je ?
+  reponse: 'Je passe normalement, en surveillant le piéton : m’arrêter sans que rien ne l’impose le mettrait en danger,
+    ainsi que celui qui me suit.'
   explication: Le piéton s’engagerait en confiance sans voir le véhicule qui me dépasse ou me percute ; le suiveur
     ne comprend pas mon arrêt. Je cède le passage au piéton engagé ou qui manifeste l’intention de traverser là
     où il en a le droit (R415-11), pas par courtoisie.
@@ -229,7 +229,7 @@
   sous_theme: vehicules_prioritaires
   source: Code de la route, art. R311-1 (6.5 et 6.6), R415-12 et R414-2
 - id: u-gyrophare-orange
-  question: Un véhicule avec un gyrophare orange (dépanneuse, chasse-neige, engin de voirie) approche. Que signale
+  question: Un véhicule avec un gyrophare orange (dépanneuse, engin agricole, engin de voirie) approche. Que signale
     ce gyrophare ?
   reponse: Un véhicule lent, encombrant ou en intervention, donc un danger à contourner prudemment ; il n'est pas
     prioritaire.
@@ -334,3 +334,12 @@
   explication: Depuis août 2026, Paris et la petite couronne imposent ces équipements. Vérifier les prescriptions
     locales, sans transformer cette mesure en règle nationale.
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/actualites/A19037"
+- id: u-cycliste-avant-droite
+  question: Je vais tourner à droite dans 30 m. Un cycliste roule devant moi, près du bord droit. Que fais-je ?
+  reponse: Je reste derrière lui et je tourne après son passage ; le dépasser juste avant de tourner reviendrait à lui
+    couper la route.
+  explication: 'Un dépassement doit permettre de se rabattre sans gêner (R414-4). Avant de tourner à droite : rétroviseur
+    droit et angle mort, en surveillant aussi les cyclistes qui me remontent par la droite.'
+  theme: U
+  sous_theme: cyclistes
+  source: Code de la route, art. R414-4 et R415-3

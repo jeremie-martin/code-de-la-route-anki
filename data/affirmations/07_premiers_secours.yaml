@@ -16,15 +16,6 @@
   theme: A
   sous_theme: secourir
   source: "Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Sécurité routière, secours au motard"
-- id: aff-a-respire-mais-inconsciente
-  contexte: Après un malaise sans traumatisme, une personne ne répond pas mais respire normalement.
-  affirmation: 'Elle est en arrêt cardiaque : je commence les compressions thoraciques.'
-  verdict: faux
-  pourquoi: 'Elle n’est pas en arrêt cardiaque : PLS, alerte et surveillance. Une respiration absente ou anormale
-    appelle une réanimation.'
-  theme: A
-  sous_theme: secourir
-  source: "Sécurité civile, PSC juillet 2026, Perte de connaissance, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: aff-a-compressions-seules
   contexte: La victime ne respire pas ; le bouche-à-bouche me rebute.
   affirmation: Je peux me limiter aux compressions thoraciques en attendant les secours.
@@ -122,3 +113,12 @@
   theme: A
   sous_theme: secourir
   source: "Sécurité civile, PSC juillet 2026, p. 26–34, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
+- id: aff-a-transport-blesse
+  contexte: Après un accident, un blessé conscient dit qu’il va bien ; l’hôpital est à dix minutes.
+  affirmation: Je l’y conduis moi-même, c’est plus rapide que d’attendre les secours.
+  verdict: faux
+  pourquoi: 'Je ne transporte pas un blessé : une lésion invisible peut s’aggraver pendant le trajet, sans soins possibles.
+    J’alerte, je décris son état et je suis les consignes des secours.'
+  theme: A
+  sous_theme: secourir
+  source: "Sécurité civile, PSC juillet 2026, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"

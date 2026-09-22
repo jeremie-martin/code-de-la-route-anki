@@ -2,10 +2,10 @@
 
 Import réel en collection temporaire avec la bibliothèque Anki 26.9.2.
 
-- import neuf : 1054 notes, 1126 cartes ; rendu, médias, ordre et options OK
+- import neuf : 1059 notes, 1131 cartes ; rendu, médias, ordre et options OK
 - paquet vierge : toutes les cartes nouvelles, aucun historique ni état mémoire ; FSRS natif : collecte des 7 premières cartes dans l’ordre, réponses Facile/À revoir ; réimport sans préréglages : options personnelles, FSRS, états mémoire et historique conservés
 - réimport de la même édition : aucun doublon ; historique et planification conservés
 
-SHA-256 du paquet vérifié : `0ff7cdb376a0012be6cf341be758cbc265757f33d1c730b262e74a511470369e`
+SHA-256 du paquet vérifié : `e221da753fad01373adadeb24f3faa0b56f8d3d407f46e109e1f82278fd29263`
 
 Ces contrôles ne valident ni la justesse de chaque phrase ni la réussite à l’examen. Voir aussi [le rendu navigateur](RENDU.md).

@@ -158,8 +158,8 @@
     - W
     - apres
   question: Les véhicules suivent les flèches. Dois-je passer avant ou après la voiture rouge, et pourquoi ?
-  reponse: M'arrêter complètement à la ligne, céder le passage à la rouge et à tout véhicule sur la route transversale,
-    puis repartir quand c'est libre.
+  reponse: 'Après : mon STOP m''impose de m''arrêter complètement à la ligne et de céder le passage à la rouge, comme
+    à tout véhicule de la route transversale.'
   explication: 'Le STOP annule la priorité à droite à mon détriment : je cède aux véhicules des deux côtés. L''arrêt
     doit être total (roues immobiles) au niveau de la ligne, même si la voie semble libre.'
   theme: L
@@ -331,7 +331,7 @@
     - E
   question: Les véhicules suivent les flèches. Quel est l’ordre de passage, et quel indice tranche entre moi et
     la voiture rouge ?
-  reponse: Rouge, puis moi, puis verte (quand son feu passera au vert).
+  reponse: "Rouge, puis moi, puis verte (quand son feu passera au vert). Ce qui tranche entre la rouge et moi : je tourne à gauche et elle vient d'en face."
   explication: "Le feu vert m'autorise à passer, mais en tournant à gauche je cède aux véhicules d'en face. Je m'avance au centre de l'intersection avec mon clignotant et je termine mon virage dès que c'est libre, même si mon feu passe à l'orange."
   theme: L
   sous_theme: priorites

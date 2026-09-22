@@ -88,7 +88,7 @@
   source: Code de la route, art. R411-19-1 et R318-2 ; service-public.fr F33371
 - id: aff-e-diesel-nox
   contexte: Un diesel et une essence de même année et de même puissance.
-  affirmation: Ces deux informations suffisent pour savoir lequel émet le plus de particules à l’échappement.
+  affirmation: C’est le diesel qui émet le plus de particules à l’échappement.
   verdict: faux
   pourquoi: Le système d’injection, la dépollution (notamment le filtre à particules) et les conditions d’usage
     comptent aussi. Une essence à injection directe peut émettre davantage de particules qu’un diesel filtré.

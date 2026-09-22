@@ -70,8 +70,13 @@ def validate_objectives(data):
     for n in by_id.values():
         if n['id'] not in assigned:
             errors.append(f"note sans objectif pédagogique : {n['id']}")
-        if n.get('image_ref') in by_id and n['_stage'] == 'socle' and by_id[n['image_ref']]['_stage'] != 'socle':
-            errors.append(f"{n['id']} : reconnaissance préalable hors socle")
+        for ident in [n.get('image_ref')] + list(n.get('prerequis') or []):
+            if ident is None:
+                continue
+            if ident not in by_id:
+                errors.append(f"{n['id']} : prérequis inconnu {ident}")
+            elif n['_stage'] == 'socle' and by_id[ident]['_stage'] != 'socle':
+                errors.append(f"{n['id']} : prérequis {ident} hors socle")
     decisions = yaml.safe_load(OBJECTIVES.with_name('sign_exclusions.yaml').read_text(encoding='utf-8'))
     for decision in decisions:
         label = ', '.join(decision.get('codes', []))

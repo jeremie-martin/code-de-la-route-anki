@@ -13,8 +13,10 @@
   source: "Code de la route, art. R416-19 ; Ornikar, Protéger la zone ; Croix-Rouge française"
 - id: a-incendie-vehicule
   question: 'Un véhicule accidenté commence à prendre feu sous le capot : que fais-je ?'
-  reponse: J’éloigne les personnes du danger et j’alerte le 18 ou le 112. Je ne m’expose pas pour essayer d’éteindre le feu.
-  explication: Ne pas ouvrir le capot en grand ni s’approcher pour lire une plaque de matières dangereuses. Transmettre aux
+  reponse: J’éloigne les personnes du danger et j’alerte le 18 ou le 112. Sur un feu naissant, j’utilise un extincteur
+    si j’en ai un, sans m’exposer.
+  explication: Jet à la base des flammes, capot fermé ou à peine entrouvert, jamais d’eau ; en tunnel, l’extincteur est
+    dans la niche de sécurité. Si le feu progresse, je m’éloigne. Ne pas s’approcher pour lire une plaque de matières dangereuses. Transmettre aux
     secours seulement les informations observables en sécurité ; suivre leurs consignes.
   theme: A
   sous_theme: proteger
@@ -65,9 +67,10 @@
   sous_theme: secourir
   source: "Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: a-rcp-dae
+  prerequis: [a-evaluer-victime]
   question: 'Un adulte ne répond pas et ne respire pas normalement : pas de respiration, ou seulement des inspirations rares et bruyantes. Que fais-je ?'
   reponse: J’alerte, fais apporter un défibrillateur et commence immédiatement les compressions thoraciques ; je suis les instructions des secours et de l’appareil.
-  explication: 'Adulte : 30 compressions puis 2 insufflations si je sais et peux les pratiquer ; sinon compressions continues.
+  explication: 'J’alterne compressions et insufflations si je sais et peux les pratiquer ; sinon compressions continues.
     Fréquence 100–120/min, profondeur 5–6 cm. Faire alerter et apporter le DAE ; suivre le guidage des secours.'
   theme: A
   sous_theme: secourir
@@ -173,3 +176,12 @@
   reponse: Je la laisse sur le dos, j’alerte et suis les consignes des secours ; je maintiens les voies aériennes libres et surveille continuellement sa respiration.
   explication: En cas de vomissements ou régurgitations, la tourner sur le côté en maintenant si possible l’axe tête-cou-tronc, avec de l’aide. Les secours peuvent aussi demander une PLS. Si la respiration devient anormale ou s’arrête, commencer la réanimation et prévenir les secours.
   source: "Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
+- id: a-secours-deja-sur-place
+  question: Je passe près d’un accident ; les secours sont déjà sur place et travaillent. Que fais-je ?
+  reponse: Je ne m’arrête pas. Je ralentis, reste attentif aux intervenants et aux piétons, et passe sans gêner, le regard
+    sur la route.
+  explication: S’arrêter pour regarder crée des bouchons et des suraccidents, et gêne l’accès des secours. L’obligation
+    d’assistance ne demande pas d’ajouter ma présence quand l’aide est déjà assurée.
+  theme: A
+  sous_theme: proteger
+  source: "Sécurité civile, PSC juillet 2026, Protection, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Code pénal, art. 223-6"

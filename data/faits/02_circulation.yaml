@@ -113,8 +113,8 @@
   - ref: b6a3
     legende: Placé du côté interdit du 16 à la fin du mois (numéros impairs).
 - id: l-stationnement-cote
-  explication: 'Stationner à contresens (côté gauche d''une rue à double sens) est un stationnement gênant (35 €) et dangereux
-    la nuit (feux non visibles). La nuit sur chaussée non éclairée : feux de position allumés.'
+  explication: 'Stationner à gauche d''une rue à double sens en agglomération est interdit (R417-1, 35 €) ; la nuit,
+    le véhicule y est aussi moins visible. La nuit sur chaussée non éclairée : feux de position allumés.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-1, R417-4 et R416-12

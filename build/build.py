@@ -431,8 +431,8 @@ def write_attributions(data):
 # exam. Inside a track: sub-themes in SUBTHEME_ORDER (else in order of first appearance), facts before
 # questions before affirmations, then file order. The sign track follows RECON_ORDER, each confusion right
 # after the later of its two members; the scenario track opens once the signs it depends on are seen
-# (SCENARIO_GATES). curriculum() then puts every socle note before the consolidation and delays each
-# visual application after its recognition. Cloze siblings of one note are spread SIBLING_GAP positions
+# (SCENARIO_GATES). curriculum() then puts every socle note before the consolidation and introduces each
+# note's prerequisites (`image_ref`, `prerequis`) just before it when they have not been seen yet. Cloze siblings of one note are spread SIBLING_GAP positions
 # apart so the second blank is met a couple of days later.
 SIBLING_GAP = 30
 KIND_RANK = {"faits": 0, "questions": 1, "affirmations": 2, "reconnaissance": 0, "confusions": 1, "scenarios": 3}
@@ -546,26 +546,32 @@ def _library_curriculum(data: dict[str, list[dict]]) -> list[tuple[str, str]]:
     return order
 
 
+def prerequisites(note: dict) -> list[str]:
+    """Notes that must be introduced before this one: the recognition whose image it reuses, and `prerequis`."""
+    return ([note['image_ref']] if note.get('image_ref') else []) + list(note.get('prerequis') or [])
+
+
 def curriculum(data: dict[str, list[dict]]) -> list[tuple[str, str]]:
-    """Socle first; preserve interleaving and prerequisite order within each stage."""
+    """Socle first; preserve interleaving. A note's prerequisites not yet introduced are pulled forward to
+    just before it, so a definition or a sign arrives when it is first needed."""
     order = _library_curriculum(data)
     by_key = {(kind, n['id']): n for kind, notes in data.items() for n in notes}
+    key_of = {ident: key for key in by_key for ident in [key[1]]}
     order = sorted(order, key=lambda key: by_key[key]['_stage'] != 'socle')
-    # A visual application follows recognition of its signal. Delay only the
-    # application, preserving the existing interleaving of other notes.
-    emitted, result, pending = set(), [], []
+    emitted, result = set(), []
+
+    def emit(key, chain=()):
+        if key in emitted:
+            return
+        if key in chain:
+            raise DataError(f"Prérequis circulaires : {' -> '.join(k[1] for k in chain + (key,))}")
+        for ident in prerequisites(by_key[key]):
+            emit(key_of[ident], chain + (key,))
+        emitted.add(key)
+        result.append(key)
+
     for key in order:
-        pending.append(key)
-        while True:
-            ready = next((k for k in pending if not by_key[k].get('image_ref') or
-                          by_key[k]['image_ref'] in emitted), None)
-            if ready is None:
-                break
-            pending.remove(ready)
-            result.append(ready)
-            emitted.add(ready[1])
-    if pending:
-        raise DataError(f"Prérequis visuels absents : {pending}")
+        emit(key)
     return result
 
 

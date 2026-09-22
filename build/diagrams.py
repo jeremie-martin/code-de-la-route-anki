@@ -142,8 +142,22 @@ def _rot_for(approach: str) -> float:
     return {"S": 0, "E": 270, "N": 180, "W": 90}[approach]
 
 
-def vehicle_sprite(kind: str, colour: str, label: str | None = None) -> str:
-    """Sprite drawn heading NORTH (up), centred on origin."""
+# Half-length of each sprite: vehicles wait with their FRONT at the same distance from the junction,
+# and intention arrows start at the front, whatever the vehicle.
+HALF_LENGTH = {"car": 42, "truck": 60, "bus": 64, "tram": 80, "moto": 38, "bike": 34, "pompiers": 50}
+
+
+def _upright(text: str, y: float, rot: float, size: int, fill="#111", along=False) -> str:
+    """Label centred on (0, y) of a sprite rotated by `rot`: it reads upright on screen, or, with `along`,
+    bottom-to-top when the vehicle is vertical (a long label then follows the body)."""
+    screen = -90 if along and rot % 180 == 0 else 0
+    return (f'<text x="0" y="0" font-family="{FONT}" font-size="{size}" font-weight="700" text-anchor="middle" '
+            f'dominant-baseline="central" fill="{fill}" transform="translate(0,{y}) rotate({screen - rot})">{text}</text>')
+
+
+def vehicle_sprite(kind: str, colour: str, label: str | None = None, rot: float = 0) -> str:
+    """Sprite drawn heading NORTH (up), centred on origin; `rot` is the rotation the caller applies,
+    so that text stays readable."""
     c = CAR_COLOURS.get(colour, colour)
     label = esc(str(label)) if label else None
     stroke = "#111"
@@ -153,7 +167,7 @@ def vehicle_sprite(kind: str, colour: str, label: str | None = None) -> str:
             f'<rect x="-17" y="-30" width="34" height="16" rx="4" fill="#cfe6f7" stroke="{stroke}" stroke-width="1.5"/>'
             f'<rect x="-17" y="18" width="34" height="12" rx="4" fill="#cfe6f7" stroke="{stroke}" stroke-width="1.5"/>'
             f'<rect x="-19" y="-44" width="8" height="5" fill="#fff6c2"/><rect x="11" y="-44" width="8" height="5" fill="#fff6c2"/>'
-            + (f'<text x="0" y="8" font-family="{FONT}" font-size="15" font-weight="700" text-anchor="middle" fill="#111">{label}</text>' if label else "")
+            + (_upright(label, 2, rot, 15) if label else "")
             + "</g>"
         )
     if kind == "truck":
@@ -162,7 +176,7 @@ def vehicle_sprite(kind: str, colour: str, label: str | None = None) -> str:
             f'<rect x="-26" y="-60" width="52" height="30" rx="6" fill="{c}" stroke="{stroke}" stroke-width="2"/>'
             f'<rect x="-20" y="-52" width="40" height="12" rx="3" fill="#cfe6f7" stroke="{stroke}" stroke-width="1.5"/>'
             f'<line x1="-26" y1="-28" x2="26" y2="-28" stroke="{stroke}" stroke-width="2"/>'
-            + (f'<text x="0" y="14" font-family="{FONT}" font-size="20" font-weight="700" text-anchor="middle" fill="#111">{label}</text>' if label else "")
+            + (_upright(label, 14, rot, 20) if label else "")
             + "</g>"
         )
     if kind == "bus":
@@ -170,15 +184,15 @@ def vehicle_sprite(kind: str, colour: str, label: str | None = None) -> str:
             f'<g><rect x="-24" y="-64" width="48" height="128" rx="8" fill="{c}" stroke="{stroke}" stroke-width="2"/>'
             f'<rect x="-19" y="-56" width="38" height="12" rx="3" fill="#cfe6f7" stroke="{stroke}" stroke-width="1.5"/>'
             + "".join(f'<rect x="-21" y="{y}" width="8" height="12" fill="#cfe6f7"/><rect x="13" y="{y}" width="8" height="12" fill="#cfe6f7"/>' for y in range(-36, 50, 20))
-            + (f'<text x="0" y="8" font-family="{FONT}" font-size="20" font-weight="700" text-anchor="middle" fill="#111">{label}</text>' if label else "")
+            + (_upright(label, 0, rot, 20) if label else "")
             + "</g>"
         )
-    if kind == "tram":
+    if kind == "tram":  # windows leave the middle of the body free for the label
         return (
             f'<g><rect x="-20" y="-80" width="40" height="160" rx="12" fill="{c}" stroke="{stroke}" stroke-width="2"/>'
             f'<rect x="-15" y="-72" width="30" height="10" rx="3" fill="#cfe6f7" stroke="{stroke}" stroke-width="1.5"/>'
-            + "".join(f'<rect x="-17" y="{y}" width="34" height="10" fill="#cfe6f7"/>' for y in range(-56, 70, 18))
-            + f'<text x="0" y="6" font-family="{FONT}" font-size="14" font-weight="700" text-anchor="middle" fill="#111">TRAM</text></g>'
+            + "".join(f'<rect x="-17" y="{y}" width="34" height="10" fill="#cfe6f7"/>' for y in (-56, -38, 34, 52))
+            + _upright("TRAM", 0, rot, 14, along=True) + "</g>"
         )
     if kind == "moto":
         return (
@@ -197,7 +211,7 @@ def vehicle_sprite(kind: str, colour: str, label: str | None = None) -> str:
             f'<g><rect x="-24" y="-50" width="48" height="100" rx="8" fill="#d8362d" stroke="{stroke}" stroke-width="2"/>'
             f'<rect x="-19" y="-40" width="38" height="14" rx="3" fill="#cfe6f7" stroke="{stroke}" stroke-width="1.5"/>'
             f'<circle cx="0" cy="-46" r="6" fill="#2d6fd8" stroke="#fff" stroke-width="1.5"/>'
-            f'<text x="0" y="14" font-family="{FONT}" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">SOS</text></g>'
+            + _upright("SOS", 10, rot, 12, fill="#fff") + "</g>"
         )
     raise ValueError(kind)
 
@@ -213,8 +227,8 @@ def siren_rays(cx: float, cy: float, colour="#2d6fd8", r0=10, r1=18) -> str:
     return "".join(ticks)
 
 
-def intention_arrow(goes: str, colour="#111") -> str:
-    """Arrow drawn in front of a north-heading sprite showing intention."""
+def intention_arrow(goes: str, colour="#111", front: float = 42) -> str:
+    """Arrow drawn in front of a north-heading sprite (whose front is `front` px ahead of its centre)."""
     # Arrows stop short of the junction centre so that several intentions stay distinguishable.
     if goes == "straight":
         path = "M0,-54 L0,-78"
@@ -228,9 +242,10 @@ def intention_arrow(goes: str, colour="#111") -> str:
     else:
         return ""
     return (
+        f'<g transform="translate(0,{42 - front})">'
         f'<path d="{path}" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>'
         f'<path d="{path}" fill="none" stroke="{colour}" stroke-width="4" stroke-linecap="round"/>'
-        f'<path d="{head}" fill="{colour}" stroke="#fff" stroke-width="1.5"/>'
+        f'<path d="{head}" fill="{colour}" stroke="#fff" stroke-width="1.5"/></g>'
     )
 
 
@@ -238,13 +253,19 @@ def _halo(me: bool) -> str:
     return '<rect x="-30" y="-50" width="60" height="100" rx="14" fill="none" stroke="#f2c200" stroke-width="5"/>' if me else ""
 
 
-def _body(v: dict) -> str:
+def _body(v: dict, rot: float = 0) -> str:
     """Sprite with halo and label; the learner's vehicle carries MOI inside its body."""
     label = v.get("label") or ("MOI" if v.get("me") else None)
-    body = vehicle_sprite(v.get("kind", "car"), v.get("colour", "bleu"), label)
+    body = vehicle_sprite(v.get("kind", "car"), v.get("colour", "bleu"), label, rot)
     if v.get("siren") and v.get("kind") == "pompiers":
         body += siren_rays(0, -46)
     return _halo(bool(v.get("me"))) + body
+
+
+def _vehicle_group(x, y, rot, v, goes=None) -> str:
+    front = HALF_LENGTH[v.get("kind", "car")]
+    arrow = intention_arrow(goes, front=front) if goes else ""
+    return f'<g transform="translate({x},{y}) rotate({rot})">{_body(v, rot)}{arrow}</g>'
 
 
 def draw_intersection(spec: dict) -> str:
@@ -305,11 +326,11 @@ def draw_intersection(spec: dict) -> str:
             raise ValueError(f"approach {a} not in branches {branches}")
         sign = ap.get("sign")
         if sign == "stop":
-            _transversal(S, a, cx, cy, half, solid=True)
+            _transversal(S, a, cx, cy, half, "stop")
         elif sign == "cedez":
-            _transversal(S, a, cx, cy, half, solid=False)
+            _transversal(S, a, cx, cy, half, "cedez")
         elif sign and sign.startswith("feu_"):
-            _transversal(S, a, cx, cy, half, solid=True, thin=True)
+            _transversal(S, a, cx, cy, half, "feux")
         if ap.get("private"):
             _private_exit(S, a, cx, cy, half)
     for a in spec.get("priority_road", []):
@@ -334,14 +355,15 @@ def draw_intersection(spec: dict) -> str:
     return str(S)
 
 
-def _pos_on_approach(a: str, cx, cy, half, dist, edge=None):
-    """Centre point of a vehicle waiting on its right-hand lane at `dist` px from the stop line.
+def _pos_on_approach(a: str, cx, cy, half, dist, edge=None, length=42):
+    """Centre point of a vehicle of half-length `length` waiting on its right-hand lane, its front
+    18 + `dist` px before the junction edge.
 
     `half` is the road half-width (sets the lane); `edge` is the distance from the centre to the
-    stop line (defaults to `half`; the ring radius for a roundabout).
+    junction edge (defaults to `half`; the ring radius for a roundabout).
     """
     lane = half / 2  # centre of right-hand lane
-    off = (half if edge is None else edge) + 60 + dist
+    off = (half if edge is None else edge) + 18 + length + dist
     if a == "S":
         return cx + lane, cy + off
     if a == "N":
@@ -354,9 +376,8 @@ def _pos_on_approach(a: str, cx, cy, half, dist, edge=None):
 
 
 def _vehicle(S: SVG, a, v, goes, cx, cy, half, dist):
-    x, y = _pos_on_approach(a, cx, cy, half, dist)
-    arrow = intention_arrow(goes) if goes else ""
-    S.add(f'<g transform="translate({x},{y}) rotate({_rot_for(a)})">{_body(v)}{arrow}</g>')
+    x, y = _pos_on_approach(a, cx, cy, half, dist, length=HALF_LENGTH[v.get("kind", "car")])
+    S.add(_vehicle_group(x, y, _rot_for(a), v, goes))
 
 
 def _rails(S: SVG, a, cx, cy, half):
@@ -371,10 +392,10 @@ def _rails(S: SVG, a, cx, cy, half):
             S.add(f'<line x1="0" y1="{y}" x2="600" y2="{y}" stroke="{RAIL}" stroke-width="2"/>')
 
 
-def _transversal(S: SVG, a, cx, cy, half, solid=True, thin=False):
-    """Stop line (solid) or give-way line (dashed) across the right-hand lane."""
-    w = 4 if thin else 8
-    dash = "" if solid else 'stroke-dasharray="10 8"'
+def _transversal(S: SVG, a, cx, cy, half, kind="stop"):
+    """Transverse line across the right-hand lane: stop (solid, wide), give-way (dashed, wide) or the line
+    where traffic lights take effect (dashed, thin: IISR T'2 of 15 cm)."""
+    w, dash = {"stop": (8, ""), "cedez": (8, 'stroke-dasharray="10 8"'), "feux": (4, 'stroke-dasharray="6 6"')}[kind]
     if a == "S":
         S.add(f'<line x1="{cx+2}" y1="{cy+half+6}" x2="{cx+half}" y2="{cy+half+6}" stroke="{MARK}" stroke-width="{w}" {dash}/>')
     elif a == "N":
@@ -457,23 +478,72 @@ def _light(S: SVG, a, colour, cx, cy, half):
         S.add(siren_rays(x + w / 2, y + 11 + 18, "#f08a24", r0=10, r1=16))
 
 
+def agent_figure(pose: str) -> str:
+    """Traffic officer seen from the front, in a 340 x 360 box.
+    pose: bras_leve | bras_tendus | ralentir | avancer."""
+    cx = 170  # room on the left for the motion marks of the "ralentir" gesture
+    body, hand = "#1f3a93", "#f5d0b0"
+    out = [f'<rect x="{cx - 28}" y="200" width="22" height="110" rx="8" fill="{body}"/><rect x="{cx + 6}" y="200" width="22" height="110" rx="8" fill="{body}"/>',
+           f'<rect x="{cx - 40}" y="110" width="80" height="100" rx="14" fill="{body}"/>',
+           f'<rect x="{cx - 40}" y="150" width="80" height="14" fill="#fff" opacity="0.85"/>',
+           f'<circle cx="{cx}" cy="80" r="26" fill="{hand}"/>',
+           f'<path d="M{cx - 30},70 q30,-30 60,0 l0,-8 q-30,-26 -60,0 z" fill="#0d1f5c"/><rect x="{cx - 34}" y="66" width="68" height="8" rx="3" fill="#0d1f5c"/>']
+
+    def arm(x0, y0, x1, y1):
+        out.append(f'<line x1="{x0}" y1="{y0}" x2="{x1}" y2="{y1}" stroke="{body}" stroke-width="18" stroke-linecap="round"/>')
+        out.append(f'<circle cx="{x1}" cy="{y1}" r="10" fill="{hand}"/>')
+
+    ls, rs = (cx - 34, 122), (cx + 34, 122)  # shoulders (viewer's left / right)
+    if pose == "bras_leve":
+        arm(*rs, cx + 44, 22)
+        arm(*ls, cx - 52, 200)
+    elif pose == "bras_tendus":
+        arm(*ls, cx - 130, 128)
+        arm(*rs, cx + 130, 128)
+    elif pose == "ralentir":
+        arm(*ls, cx - 120, 170)
+        arm(*rs, cx + 52, 200)
+        # motion marks: the arm moves up and down
+        out.append(f'<path d="M{cx - 128},120 l0,-14 M{cx - 136},128 l-14,0" fill="none" stroke="#333" stroke-width="3"/>')
+        out.append(f'<path d="M{cx - 150},200 l0,14 M{cx - 158},192 l-14,0" fill="none" stroke="#333" stroke-width="3"/>')
+        out.append(f'<path d="M{cx - 140},140 q-16,30 0,60" fill="none" stroke="#333" stroke-width="3" stroke-dasharray="5 5"/>')
+    elif pose == "avancer":
+        arm(*ls, cx - 100, 140)          # upper arm out
+        arm(cx - 100, 140, cx - 70, 96)  # forearm swept back towards the chest
+        arm(*rs, cx + 52, 200)
+        out.append(f'<path d="M{cx - 150},130 q 10,-70 60,-70" fill="none" stroke="#333" stroke-width="4" stroke-dasharray="7 6"/>')
+        out.append(f'<path d="M{cx - 90},60 l14,-10 l-2,18 z" fill="#333"/>')
+        out.append(f'<path d="M{cx - 150},130 l-4,-18 l16,8 z" fill="#333"/>')
+    else:
+        raise ValueError(pose)
+    return "".join(out)
+
+
 def _agent(S: SVG, cx, cy, pose):
-    """Traffic officer in the centre. pose: 'bras_leve' | 'bras_tendus_NS' | 'bras_tendus_EW'.
-    Arms are hi-vis yellow with a dark outline so their axis stays readable over the road markings."""
+    """Traffic officer in the centre, seen from above. pose: 'bras_leve' | 'bras_tendus_NS' | 'bras_tendus_EW'.
+    Outstretched arms are hi-vis yellow with a dark outline so their axis stays readable over the markings.
+    A raised arm cannot be seen from above (drawn as an arm along the road it would read as an outstretched
+    one): the officer is then drawn without arms and an inset shows the gesture face-on."""
     def arm(x1, y1, x2, y2):
         S.add(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#222" stroke-width="15" stroke-linecap="round"/>')
         S.add(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#ffb300" stroke-width="9" stroke-linecap="round"/>')
         S.add(f'<circle cx="{x2}" cy="{y2}" r="7" fill="#f5d0b0" stroke="#222" stroke-width="2"/>')
-    if pose == "bras_leve":
-        arm(cx, cy, cx, cy - 56)
-    elif pose == "bras_tendus_NS":  # arms along the N-S axis: N and S see the profile and pass, E and W stop
+    if pose == "bras_tendus_NS":  # arms along the N-S axis: N and S see the profile and pass, E and W stop
         arm(cx, cy, cx, cy - 56)
         arm(cx, cy, cx, cy + 56)
     elif pose == "bras_tendus_EW":
         arm(cx, cy, cx - 56, cy)
         arm(cx, cy, cx + 56, cy)
+    elif pose != "bras_leve":
+        raise ValueError(pose)
     S.add(f'<circle cx="{cx}" cy="{cy}" r="26" fill="#1f3a93" stroke="#ffb300" stroke-width="4"/>')
     S.add(f'<circle cx="{cx}" cy="{cy}" r="11" fill="#f5d0b0"/>')
+    if pose == "bras_leve":  # inset in the north-west corner (grass), linked to the officer
+        x, y = S.view[0] + 8, S.view[1] + 8
+        S.add(f'<path d="M{x + 120},{y + 110} L{cx - 24},{cy - 24}" stroke="{LABEL}" stroke-width="2" stroke-dasharray="5 4"/>')
+        S.add(f'<rect x="{x}" y="{y}" width="124" height="134" rx="8" fill="#fff" stroke="{LABEL}" stroke-width="2"/>')
+        S.add(f'<g transform="translate({x + 11},{y + 4}) scale(.3)">{agent_figure("bras_leve")}</g>')
+        S.add(f'<text x="{x + 62}" y="{y + 124}" font-family="{FONT}" font-size="14" text-anchor="middle" fill="{LABEL}">vu de face</text>')
 
 
 # ----------------------------------------------------------- roundabout ----
@@ -508,16 +578,13 @@ def draw_roundabout(spec: dict) -> str:
         for (x, y) in [(cx+half+8, cy+R_out+30), (cx-half-8-50, cy-R_out-30-50), (cx+R_out+30, cy-half-8-50), (cx-R_out-30-50, cy+half+8)]:
             S.add(f'<image href="{uri}" x="{x}" y="{y}" width="50" height="50"/>')
     # rotation arrows on the ring: in France, traffic circulates counter-clockwise around the central island
+    r = (R_out + R_in) / 2
+    pt = lambda ang, rad=r: (cx + rad * math.cos(math.radians(ang)), cy - rad * math.sin(math.radians(ang)))  # noqa: E731
     for ang in (45, 135, 225, 315):
-        r = (R_out + R_in) / 2
-        a0 = math.radians(ang)
-        x0, y0 = cx + r * math.cos(a0), cy - r * math.sin(a0)
-        a1 = math.radians(ang + 14)
-        x1, y1 = cx + r * math.cos(a1), cy - r * math.sin(a1)
+        (x0, y0), (x1, y1) = pt(ang), pt(ang + 16)
         S.add(f'<path d="M{x0:.1f},{y0:.1f} A{r},{r} 0 0 0 {x1:.1f},{y1:.1f}" fill="none" stroke="{MARK}" stroke-width="3"/>')
-        a2 = math.radians(ang + 20)
-        x2, y2 = cx + r * math.cos(a2), cy - r * math.sin(a2)
-        S.add(f'<circle cx="{x2:.1f}" cy="{y2:.1f}" r="4" fill="{MARK}"/>')
+        (tx, ty), (ax, ay), (bx, by) = pt(ang + 25), pt(ang + 16, r - 7), pt(ang + 16, r + 7)
+        S.add(f'<path d="M{tx:.1f},{ty:.1f} L{ax:.1f},{ay:.1f} L{bx:.1f},{by:.1f} Z" fill="{MARK}"/>')
     for v in spec.get("vehicles", []):
         pos = v["pos"]
         if pos == "inside":
@@ -525,11 +592,11 @@ def draw_roundabout(spec: dict) -> str:
             a = math.radians(v.get("angle", 270))
             x, y = cx + r * math.cos(a), cy - r * math.sin(a)
             # counter-clockwise travel: heading = angle + 90 (math), SVG rotation = 90 - heading = -angle
-            S.add(f'<g transform="translate({x:.1f},{y:.1f}) rotate({-v.get("angle", 270):.1f})">{_body(v)}</g>')
+            S.add(_vehicle_group(round(x, 1), round(y, 1), -v.get("angle", 270), v))
         else:
-            x, y = _pos_on_approach(pos, cx, cy, half, v.get("distance", 20), edge=R_out - 10)
-            arrow = intention_arrow(v["goes"]) if v.get("goes") else ""
-            S.add(f'<g transform="translate({x},{y}) rotate({_rot_for(pos)})">{_body(v)}{arrow}</g>')
+            x, y = _pos_on_approach(pos, cx, cy, half, v.get("distance", 20), edge=R_out - 10,
+                                    length=HALF_LENGTH[v.get("kind", "car")])
+            S.add(_vehicle_group(x, y, _rot_for(pos), v, v.get("goes")))
     if spec.get("caption"):
         S.caption(spec["caption"])
     return str(S)
@@ -645,10 +712,11 @@ def draw_road(spec: dict) -> str:
               'fill="url(#hidden)" stroke="#bac2c5" stroke-width="2"/>')
         S.add(f'<path d="M{ox} {oy}L{left_} {by} M{ox} {oy}L{right_} {by}" '
               'stroke="#bac2c5" stroke-width="1.5" stroke-dasharray="5 5"/>')
-        lx, ly = side + 70, by - 110
-        S.add(f'<path d="M{right_ + 24} {by - 70}L{lx - 30} {ly + 8}" fill="none" stroke="{LABEL}" stroke-width="2"/>')
+        # label below the sector's lower edge, leader pointing up into it
+        lx, ly = side + 6, by + 40
+        S.add(f'<path d="M{lx + 20} {ly - 20}L{right_ + 10} {by - 40}" fill="none" stroke="{LABEL}" stroke-width="2"/>')
         for dy, t in ((0, "Zone masquée"), (24, "depuis ma place")):
-            S.add(f'<text x="{lx}" y="{ly + 30 + dy}" text-anchor="middle" font-family="{FONT}" font-size="19" fill="{LABEL}">{t}</text>')
+            S.add(f'<text x="{lx}" y="{ly + dy}" font-family="{FONT}" font-size="19" fill="{LABEL}">{t}</text>')
     for v in spec.get("vehicles", []):
         lane = v["lane"]
         if v.get("dir", "up") == "up":
@@ -657,8 +725,7 @@ def draw_road(spec: dict) -> str:
         else:
             x = x0 + (lane - 0.5) * lane_w  # lane 1 = rightmost for a downward vehicle (its right = our left)
             rot = 180
-        arrow = intention_arrow(v["goes"]) if v.get("goes") else ""
-        S.add(f'<g transform="translate({x},{ypx(v["y"])}) rotate({rot})">{_body(v)}{arrow}</g>')
+        S.add(_vehicle_group(x, ypx(v["y"]), rot, v, v.get("goes")))
     if spec.get("caption"):
         S.caption(spec["caption"])
     return str(S)

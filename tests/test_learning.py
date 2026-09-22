@@ -137,6 +137,16 @@ class LearningTests(unittest.TestCase):
                 self.assertEqual(note['image'], recon[note['image_ref']]['image'])
                 self.assertLess(positions[note['image_ref']], positions[note['id']])
 
+    def test_declared_prerequisites_come_first(self):
+        plan = card_plan(self.data, curriculum(self.data))
+        first = {}
+        for pos, (_, ident, _) in enumerate(plan):
+            first.setdefault(ident, pos)
+        declared = [(n['id'], p) for notes in self.data.values() for n in notes for p in n.get('prerequis') or []]
+        self.assertTrue(declared)
+        for ident, prerequisite in declared:
+            self.assertLess(first[prerequisite], first[ident], f"{prerequisite} avant {ident}")
+
     def test_a_prompt_cannot_mix_or_repeat_sibling_targets(self):
         for invalid in (["A {{c1::x}} et B {{c2::y}}"],
                         ["A {{c1::x}}", "B {{c1::y}}"], ["Texte sans trou"]):

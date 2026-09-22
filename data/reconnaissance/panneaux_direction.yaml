@@ -47,7 +47,7 @@
     gen: direction_panel
     params:
       colour: jaune
-      text: DÉVIATION
+      text: Évreux
       dist: ''
   nom: Panneau de direction à fond jaune (temporaire / déviation)
   signification: 'Fond jaune : indication de direction à caractère temporaire ou d''exploitation (déviation, itinéraire de substitution, chantier).'

@@ -219,7 +219,7 @@
       - {pos: W, colour: rouge, goes: straight, distance: 22}
   question: Carrefour à sens giratoire avec cédez-le-passage à chaque entrée. L’anneau est vide ; la voiture rouge attend à l’entrée située à ma gauche. Je veux prendre la troisième sortie. Puis-je m’engager ?
   reponse: "Oui : je ne cède qu'aux véhicules déjà dans l'anneau. Une fois engagé, c'est la rouge qui me cédera le passage à son entrée."
-  explication: "R415-10 : priorité aux usagers qui circulent sur l'anneau ; un véhicule arrêté à une autre entrée n'y est pas encore. Clignotant gauche à l'entrée puisque je dépasse la moitié de l'anneau, puis clignotant droit avant ma sortie, en contrôlant à droite."
+  explication: "R415-10 : priorité aux usagers qui circulent sur l'anneau ; un véhicule arrêté à une autre entrée n'y est pas encore. Conseil : clignotant gauche à l'entrée puisque je dépasse la moitié de l'anneau, puis clignotant droit avant ma sortie, en contrôlant à droite."
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-10"

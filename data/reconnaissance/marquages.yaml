@@ -109,7 +109,7 @@
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Les triangles blancs au sol signalent en France un ralentisseur, pas un cédez-le-passage.
+  piege: Un grand triangle blanc isolé, pointe vers moi, peut précéder cette ligne ; trois petits triangles pointés dans mon sens, sur une rampe, signalent un ralentisseur.
 - id: marq-ligne-effet-feux
   type: marquage
   image:
@@ -272,6 +272,8 @@
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  prerequis:
+  - l-arret-vs-stationnement
 - id: marq-ligne-jaune-discontinue
   type: marquage
   image:
@@ -284,6 +286,8 @@
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  prerequis:
+  - l-arret-vs-stationnement
 - id: marq-ligne-jaune-zigzag
   type: marquage
   image:
@@ -303,10 +307,10 @@
   image:
     gen: livraison
     params: {}
-  nom: Aire de livraison (ligne jaune T'2 + croix jaune + inscription LIVRAISON)
-  signification: 'Emplacement réservé à l''arrêt pour chargement/déchargement : ligne jaune discontinue, croix jaune et inscription « LIVRAISON ».'
+  nom: Aire de livraison (ligne jaune discontinue + inscription LIVRAISON)
+  signification: 'Emplacement réservé à l''arrêt des véhicules qui chargent ou déchargent des marchandises : ligne jaune discontinue et inscription « LIVRAISON ».'
   conduite: Ne pas y stationner (arrêt bref possible pour un chargement) sauf horaires autorisés sur les aires partagées.
-  complement: Certaines aires (ligne discontinue simple) sont ouvertes au stationnement la nuit (20 h – 7 h), dimanches et fêtes ; les aires à double ligne restent réservées 24 h/24.
+  complement: Un arrêté local peut ouvrir l’aire au stationnement à certaines heures (la nuit, par exemple) ; en dehors de ces horaires signalés, elle reste réservée aux livraisons.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -355,7 +359,7 @@
   nom: Marquage d'un ralentisseur (triangles blancs)
   signification: Trois triangles blancs (« dents de requin »), pointes dans le sens de la circulation, peints sur la rampe d'un ralentisseur.
   conduite: 'Ralentir fortement avant de franchir : dos-d’âne et plateaux ne sont implantés que dans des zones limitées à 30 km/h.'
-  complement: En France, les triangles blancs au sol signalent un ralentisseur, pas un cédez-le-passage.
+  complement: Ne pas confondre avec le grand triangle isolé, pointe vers le conducteur, qui peut précéder une ligne de cédez-le-passage.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

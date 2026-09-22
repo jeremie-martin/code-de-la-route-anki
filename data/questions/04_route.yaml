@@ -95,8 +95,8 @@
   source: "securite-routiere.gouv.fr, Conduire en hiver ; Codes Rousseau, Neige et brouillard"
 - id: r-verglas-descente
   question: 'Chaussée verglacée dans une descente : quel rapport et quel frein ?'
-  reponse: Très lentement, rapport adapté et commandes progressives ; ni freinage brutal ni rétrogradage brusque ; si l’adhérence
-    ne le permet pas, je renonce.
+  reponse: Un rapport bas engagé avant la descente, allure très lente, freinage très doux et progressif ; ni freinage brutal
+    ni rétrogradage dans la pente. Si l’adhérence ne le permet pas, je renonce.
   explication: Le frein moteur peut lui aussi faire perdre l’adhérence. Ni ABS ni rapport court ne garantit de maîtriser une
     pente verglacée.
   theme: R
@@ -107,8 +107,9 @@
     ?
   reponse: 'Non : dépasser un engin de service hivernal en action est interdit ; devant lui, la chaussée n’est ni raclée ni
     salée.'
-  explication: Art. R414-17 (135 €). Son gyrophare orange ne lui donne aucune priorité, mais il signale un véhicule lent et
-    encombrant qui projette sel et neige.
+  explication: "Art. R414-17 (135 €). C’est un véhicule d’intérêt général bénéficiant de facilités de passage (R311-1) :
+    je lui facilite le passage, sans qu’il soit prioritaire aux intersections. Il projette sel et neige ; je reste
+    à bonne distance derrière lui."
   theme: R
   sous_theme: intemperies
   source: Code de la route, art. R414-17
@@ -140,9 +141,9 @@
   question: Un tunnel affiche deux distances entre véhicules, l’une en circulation, l’autre à l’arrêt. La file
     s’immobilise devant moi. Quelle consigne appliquer ?
   reponse: 'La distance prévue à l’arrêt : je laisse cet espace libre au lieu de venir coller le véhicule précédent.'
-  explication: 'Les panneaux du tunnel affichent deux intervalles : l’un en circulation, l’autre, plus court, à l’arrêt
-    (souvent 150 m et 50 m ; c’est l’affichage qui fait foi). Cet espace limite la propagation d’un incendie et laisse
-    passer les secours.'
+  explication: 'Ce sont les valeurs affichées à l’entrée du tunnel qui font foi ; sans distance propre à l’arrêt, je
+    garde la même qu’en circulation. Des plots bleus peuvent matérialiser l’intervalle (garder le nombre indiqué,
+    souvent deux). Cet espace limite la propagation d’un incendie et laisse passer les secours.'
   theme: R
   sous_theme: tunnels
   source: "CETU, https://www.cetu.developpement-durable.gouv.fr/IMG/pdf/CETU-Note_Info_22_2011.pdf"
@@ -165,8 +166,8 @@
   sous_theme: tunnels
   source: "CETU, Consignes en cas d'incendie ; securite-routiere.gouv.fr, Les tunnels"
 - id: r-tunnel-mon-vehicule-feu
-  question: De la fumée sort de mon capot alors que je roule dans un tunnel. Est-ce que je m’arrête sur place ?
-  reponse: 'Non si le véhicule peut encore rouler : je sors du tunnel et je m’arrête à l’air libre. Je ne m’arrête
+  question: De la fumée sort de mon capot alors que je roule dans un tunnel ; la voiture avance encore. Où dois-je m’arrêter ?
+  reponse: 'À l’air libre : tant que le véhicule peut rouler, je sors du tunnel avant de m’arrêter. Je ne m’arrête
     à l’intérieur que s’il ne peut plus avancer.'
   explication: 'Un véhicule en feu immobilisé enfume tout le tunnel et piège les usagers derrière moi. Si l’arrêt
     est inévitable : emplacement d’arrêt d’urgence, feux de détresse, moteur coupé et clés laissées, alerte depuis

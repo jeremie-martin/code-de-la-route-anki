@@ -326,14 +326,6 @@
   theme: L
   sous_theme: vitesse
   source: IISR 5e partie art. 99-3 ; Code de la route, art. R110-2
-- id: aff-l-agglo-50-panneau
-  contexte: Je franchis le panneau d'entrée d'agglomération ; aucun panneau de limitation ne suit.
-  affirmation: Je suis limité à 50 km/h dès ce panneau.
-  verdict: vrai
-  pourquoi: 'R413-3 : le panneau d''entrée d''agglomération vaut à lui seul limitation à 50 km/h, jusqu''au panneau de sortie. Le maire peut abaisser (zone 30, 30 généralisé) ou relever à 70 sur certaines sections.'
-  theme: L
-  sous_theme: vitesse
-  source: Code de la route, art. R413-3
 - id: aff-l-vitesse-sous-limite
   contexte: Rue de centre-ville limitée à 50, sortie d'école, nombreux piétons ; je roule à 48 km/h.
   affirmation: Je peux être verbalisé alors même que je respecte la limitation.
@@ -367,3 +359,12 @@
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-9 et R413-17
+- id: aff-l-arret-pont
+  contexte: Sur un pont, aucun panneau n’interdit l’arrêt ni le stationnement.
+  affirmation: Je peux m’y arrêter quelques minutes pour consulter mon itinéraire.
+  verdict: faux
+  pourquoi: 'Sans autre disposition locale, l’arrêt est gênant sur un pont, comme dans un tunnel, un passage souterrain
+    ou sous un passage supérieur (R417-10 II 6°) : la place et les échappatoires y manquent.'
+  theme: L
+  sous_theme: stationnement
+  source: Code de la route, art. R417-10
