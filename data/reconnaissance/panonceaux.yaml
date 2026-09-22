@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml (29 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (30 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: m1
   type: panonceau
   code: M1
@@ -284,6 +284,18 @@
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+- id: m10b
+  type: panonceau
+  code: M10b
+  image:
+    commons: France road sign M10b.svg
+  nom: 'Cartouche : numéro d''échangeur'
+  signification: Cartouche portant le numéro de la sortie/échangeur (sur autoroute), placé au-dessus des panneaux de sortie.
+  complement: Cartouche placé AU-DESSUS du panneau qu'il complète (exception parmi les panonceaux).
+  theme: L
+  sous_theme: panonceaux
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  conduite: Je compare ce numéro à celui de mon itinéraire avant de me rabattre vers la sortie.
 - id: m11b1
   type: panonceau
   code: M11b1
@@ -318,4 +330,4 @@
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Ne donne ni priorité ni autorisation aux voitures, motos ou cyclomoteurs ordinaires. Le signal lumineux R19 a un champ différent : les cyclistes.'
+  piege: Ne donne ni priorité ni autorisation aux voitures, motos ou cyclomoteurs ordinaires. Le feu R19 (vélo jaune clignotant) en est la version lumineuse, réservée aux cycles.

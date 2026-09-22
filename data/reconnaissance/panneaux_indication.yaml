@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml (35 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (36 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: c1a
   type: panneau
   code: C1a
@@ -30,7 +30,6 @@
   nom: Arrêt d'autobus ou d'autocar
   signification: Indique un arrêt de bus ou de car de ligne régulière ; l'arrêt et le stationnement des autres véhicules y sont interdits (zigzag jaune au sol).
   conduite: Ne pas s'arrêter sur l'emplacement. En agglomération, ralentir et au besoin s'arrêter pour laisser le bus quitter son arrêt lorsqu'il annonce son départ par le clignotant (R412-11).
-  complement: Zigzag jaune au sol.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -73,6 +72,18 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+- id: c13b
+  type: panneau
+  code: C13b
+  image:
+    commons: France road sign C13b.svg
+  nom: Présignalisation d'une impasse
+  signification: Annonce qu'une voie adjacente (à droite ou à gauche) est une impasse.
+  conduite: Je ne tourne pas dans cette voie si je ne m’y rends pas ; j’anticipe les demi-tours de ceux qui en sortent.
+  complement: Avant l'intersection avec l'impasse.
+  theme: L
+  sous_theme: panneaux
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c13c
   type: panneau
   code: C13c
@@ -91,7 +102,7 @@
   nom: Praticabilité d'une section de route
   signification: Présignale l'état (ouvert / fermé, chaînes obligatoires) d'un col, d'un tunnel ou d'une route de montagne, sur des volets amovibles.
   conduite: Choisir un autre itinéraire si la section est fermée ; prévoir l'équipement indiqué.
-  complement: Avant le dernier carrefour permettant d'éviter la section. Jamais complété d'un panonceau.
+  complement: Placé avant le dernier carrefour permettant d’éviter la section.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -119,7 +130,7 @@
   nom: Passage pour piétons (panneau de position)
   signification: Position d'un passage pour piétons matérialisé au sol.
   conduite: Céder le passage aux piétons engagés ou qui manifestent l'intention de traverser ; ne pas dépasser devant un passage.
-  complement: Arrêt et stationnement interdits dans les 5 m en amont du passage ; les emplacements matérialisés y sont tolérés jusqu’à fin 2026.
+  complement: Arrêt et stationnement interdits dans les 5 m en amont du passage, hors emplacements matérialisés ; ces emplacements doivent avoir disparu au 31 décembre 2026.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -176,11 +187,10 @@
   type: panneau
   code: C25a
   image:
-    commons: France road sign C25a.svg
+    gen: rappel_limites
   nom: Limitations générales de vitesse en France
   signification: Rappel des limitations générales de vitesse en France, selon le type de route.
   conduite: Tenir compte aussi des limitations locales, de la météo et du permis probatoire.
-  complement: 'Illustration simplifiée : la ligne des routes à chaussées séparées (110 km/h) n’est pas représentée.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -226,12 +236,11 @@
     commons: France road sign C27.svg
   nom: Surélévation de chaussée
   signification: Indique la position d'un ralentisseur (dos-d'âne, plateau surélevé, coussin) ; souvent limité à 30 km/h.
-  conduite: Franchir à vitesse très réduite (30 km/h maximum, souvent moins) ; ne pas dépasser sur le ralentisseur.
+  conduite: Franchir à vitesse très réduite, sans dépasser ; dos-d’âne et plateaux ne sont implantés que dans des zones limitées à 30 km/h.
   complement: Au sol, trois triangles blancs sur la rampe.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Le triangle annonce le ralentisseur ; le carré bleu en indique l’emplacement.
   comparaisons:
   - ref: a2b
     legende: 'Triangle : le ralentisseur est plus loin.'
@@ -305,12 +314,12 @@
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c64d
   type: panneau
-  code: C64d
+  code: C64d2
   image:
     commons: France road sign C64d2.svg
   nom: 'Voie de péage : paiement par abonnement (télépéage)'
   signification: Voie de péage pour les véhicules munis d’un badge de télépéage.
-  conduite: 'Suivre la limitation affichée : un passage à 30 km/h exige une voie signalée pour cela, sinon ralentir jusqu’à l’arrêt si nécessaire.'
+  conduite: Ralentir jusqu’à la vitesse affichée sur la voie, prêt à m’arrêter si la barrière ne s’ouvre pas.
   theme: L
   sous_theme: panneaux
   source: Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
@@ -334,7 +343,7 @@
   nom: Route à accès réglementé
   signification: 'Début d''une route pour automobiles réservée aux véhicules à moteur : interdite aux piétons, cycles, cyclomoteurs et véhicules lents.'
   conduite: S'insérer par la voie d'accélération ; ni arrêt, ni stationnement, ni demi-tour, ni marche arrière.
-  complement: 'Hors agglomération : 110 km/h sur chaussées séparées par terre-plein central, 80 sur une voie par sens sans séparateur ni relèvement ; appliquer les limites plus basses et les conditions météo/probatoires.'
+  complement: 'Hors agglomération : 110 km/h si les deux chaussées sont séparées par un terre-plein central, 80 avec une seule chaussée (90 sur les sections signalées) ; les limitations locales et les conditions (pluie, permis probatoire) s’appliquent.'
   piege: 'Le panneau ne fixe pas à lui seul la vitesse maximale : lire la route, les limitations et les conditions.'
   theme: L
   sous_theme: panneaux
@@ -385,7 +394,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Conseillée pour un vélo ne signifie pas facultative pour tous les usagers autorisés.
+  piege: Le rond bleu impose la piste aux cyclistes ; le carré la conseille. Les EDPM doivent l’emprunter en agglomération.
 - id: c115
   type: panneau
   code: C115

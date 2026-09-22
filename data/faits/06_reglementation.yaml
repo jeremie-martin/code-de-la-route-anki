@@ -32,9 +32,9 @@
 - id: d-points-delit-cumul
   texte: Pour plusieurs infractions constatées en même temps, le retrait de points est plafonné à {{c1::8 points}} ; seul
     le cumul alcool + stupéfiants peut en retirer 9.
-  explication: 'Tous les délits ne retirent pas six points : le défaut d’assurance et la conduite sans permis n’en
-    retirent aucun (on ne peut pas retirer de points à qui n’a pas de permis). Distinguer délit, amende et retrait
-    de points.'
+  explication: 'Le cumul à 9 points date de la loi du 18 août 2026 ; une question non mise à jour peut encore attendre
+    8. Tous les délits ne retirent pas six points : le défaut d’assurance et la conduite sans permis n’en retirent
+    aucun.'
   theme: D
   sous_theme: points
   source: "Code de la route, L223-2, L235-1 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F31551"
@@ -69,6 +69,15 @@
     {{c2::2 ans}} sans nouvelle infraction donnant lieu à retrait.'
   - 'Hors règles particulières du probatoire, reconstitution des 12 points si une infraction est de classe 4 ou 5 ou un délit
     : {{c3::3 ans}} sans nouvelle infraction donnant lieu à retrait.'
+- id: d-points-dix-ans
+  texte: Les points retirés pour des contraventions des quatre premières classes sont réattribués au bout de {{c1::dix
+    ans}}, même sans reconstitution complète du capital entre-temps.
+  explication: 'Ce délai long s’ajoute aux autres : six mois pour un point unique, deux ans sans nouvelle infraction,
+    trois ans si une contravention de 4e ou 5e classe ou un délit figure parmi elles, ou un stage. Il suppose un
+    permis resté valide ; contraventions de 5e classe et délits en sont exclus.'
+  theme: D
+  sous_theme: points
+  source: Code de la route, art. L223-6
 - id: d-stage-points
   explication: Les points sont crédités le lendemain du dernier jour de stage. Avant 2011, la fréquence était d’une fois tous
     les deux ans.
@@ -93,15 +102,23 @@
     rendez-vous pédagogiques.
 - id: d-permis-17-ans
   texte: En France, le permis B peut être obtenu et utilisé pour conduire seul dès {{c1::17 ans}}.
-  explication: Règle applicable depuis le 1er janvier 2024. L’âge ne dispense ni de réussir le permis ni des restrictions
-    probatoires ; l’AAC a ses propres conditions.
+  explication: Règle applicable depuis le 1er janvier 2024. Le délai probatoire, ses vitesses réduites et le seuil
+    de 0,2 g/L s’appliquent normalement ; l’AAC reste possible dès 15 ans.
   theme: D
   sous_theme: permis
   source: Décret n° 2023-1214 du 20 décembre 2023 ; Code de la route, art. R221-5
+- id: d-permis-validite-15-ans
+  texte: Le titre de permis de conduire de catégorie B a une durée de validité administrative de {{c1::15 ans}}
+    ; son renouvellement ne comporte ni examen ni visite médicale.
+  explication: Le renouvellement se demande en ligne ; il ne remet pas en cause le droit de conduire, qui dépend
+    des points et des restrictions. Les catégories poids lourds ont une validité de cinq ans.
+  theme: D
+  sous_theme: permis
+  source: Code de la route, art. R221-1-1
 - id: d-formation-minimale
   texte: 'Premier permis B en auto-école : formation pratique minimale ordinaire de {{c1::20 heures}} sur boîte manuelle.'
   explication: '13 heures pour une formation limitée à la boîte automatique. Hors simulateur : au moins 15 h en circulation
-    (10 h en automatique). Le minimum réglementaire n’est pas une promesse d’être prêt.'
+    (10 h en automatique).'
   theme: D
   sous_theme: permis
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2828"
@@ -302,15 +319,14 @@
   sous_theme: documents
   source: Code des assurances, art. L211-1, A121-1 et A121-1-1 ; service-public.fr F2655
 - id: d-constat-declaration
-  explication: 'Vérifier le contrat : un délai plus long peut être prévu. Le constat décrit les faits ; ne pas signer une
-    description inexacte. Déclarer rapidement sans attendre de régler un désaccord.'
+  explication: 'Vérifier le contrat : un délai plus long peut être prévu (deux jours ouvrés au minimum pour un vol).
+    Le constat décrit les faits ; ne pas signer une description inexacte. Déclarer rapidement sans attendre de régler
+    un désaccord.'
   theme: D
   sous_theme: documents
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2149 ; https://www.service-public.gouv.fr/particuliers/vosdroits/F2685"
   rappels:
   - Après un accident, le délai usuel pour déclarer le sinistre à l’assureur est {{c1::5 jours ouvrés}}.
-  - Pour un vol de véhicule, le délai contractuel de déclaration à l’assureur ne peut être inférieur à {{c2::2 jours ouvrés}}
-    après en avoir eu connaissance.
 - id: d-equipements-obligatoires
   explication: 'Le triangle présignale un véhicule immobilisé dangereux : environ 30 m en amont, davantage si nécessaire,
     sauf si le poser expose manifestement le conducteur au danger. Cette exception ne se limite pas à l’autoroute.'

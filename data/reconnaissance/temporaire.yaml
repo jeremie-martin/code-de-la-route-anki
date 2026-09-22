@@ -50,7 +50,7 @@
   image:
     commons: France road sign AK14.svg
   nom: Autres dangers (temporaire)
-  signification: Annonce un danger temporaire non prévu par un autre panneau, précisé par le panonceau KM9 (« sortie de camions », « bande rugueuse », « déviation »...).
+  signification: Annonce un danger temporaire non prévu par un autre panneau, précisé par un panonceau (« sortie de camions », « bande rugueuse », « déviation »…).
   conduite: Ralentir et lire le panonceau.
   theme: L
   sous_theme: panneaux
@@ -228,4 +228,4 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Absence à bord = 11 € ; ne pas revêtir le gilet ou ne pas présignaler = 135 €.
+  piege: 'Ne pas revêtir le gilet ou ne pas présignaler : 135 €. Gilet non gardé à portée de main : 11 €.'

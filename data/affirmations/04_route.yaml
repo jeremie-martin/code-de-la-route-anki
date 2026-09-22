@@ -125,6 +125,16 @@
   theme: R
   sous_theme: intemperies
   source: Code de la route, art. R416-7
+- id: aff-r-brouillard-avant-sinueuse
+  contexte: Hors agglomération, de nuit, sur une petite route étroite et sinueuse, personne en face.
+  affirmation: Je peux allumer mes feux de brouillard avant en plus de mes feux de route.
+  verdict: vrai
+  pourquoi: 'R416-7 I : hors agglomération, sur les routes étroites et sinueuses, les feux avant de brouillard peuvent
+    compléter les feux de route ; leur faisceau large éclaire les bas-côtés. Dès qu’un usager risque d’être ébloui,
+    je repasse en feux de croisement. Les feux arrière de brouillard restent réservés au brouillard et à la neige.'
+  theme: R
+  sous_theme: nuit
+  source: Code de la route, art. R416-7
 - id: aff-r-brouillard-feux-route
   affirmation: Dans le brouillard, les feux de route éclairent plus loin que les feux de croisement.
   verdict: faux

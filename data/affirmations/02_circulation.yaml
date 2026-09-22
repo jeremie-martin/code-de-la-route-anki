@@ -76,8 +76,9 @@
   contexte: Giratoire à deux voies ; un camion devant moi empiète sur les deux voies pour tourner.
   affirmation: Je peux me glisser à sa gauche pour le dépasser.
   verdict: faux
-  pourquoi: 'Son gabarit et sa trajectoire ne laissent aucune marge sûre : je reste derrière jusqu''à sa sortie. La
-    largeur apparente de l''anneau ne suffit pas (R414-4 : dépasser sans danger).'
+  pourquoi: 'Son gabarit l’oblige à occuper les deux voies pour tourner et ses côtés sont des angles morts : je reste
+    derrière jusqu’à sa sortie. Ne jamais se glisser dans l’espace qu’un camion semble libérer (R414-4 : dépasser
+    sans danger).'
   theme: L
   sous_theme: priorites
   source: "R414-4 et R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/"
@@ -240,14 +241,6 @@
   theme: L
   sous_theme: croisement
   source: Code de la route, art. R414-1 et R413-17
-- id: aff-l-ligne-jaune-discontinue
-  contexte: Une ligne jaune discontinue est peinte sur la bordure du trottoir.
-  affirmation: Je peux m'y arrêter le temps de laisser descendre un passager, mais pas y stationner.
-  verdict: vrai
-  pourquoi: La ligne jaune discontinue interdit le stationnement, mais permet l’arrêt. La ligne jaune continue interdit les deux, comme le panneau bleu barré d’une croix rouge.
-  theme: L
-  sous_theme: stationnement
-  source: IISR 7e partie art. 118-2
 - id: aff-l-sens-unique-gauche
   contexte: Rue à sens unique, sans marquage ni panneau de stationnement.
   affirmation: Je peux stationner du côté gauche de la chaussée.
@@ -282,9 +275,10 @@
   source: Code de la route, art. R110-2
 - id: aff-l-trottoir-moto
   contexte: Une moto est garée en travers sur un large trottoir.
-  affirmation: Pour un deux-roues motorisé, le stationnement sur trottoir échappe à toute sanction.
+  affirmation: Pour une moto garée sur le trottoir, le barème est le même que pour une voiture.
   verdict: faux
-  pourquoi: 'R417-10 : c''est un stationnement gênant (35 €, fourrière possible). Les motos et cyclomoteurs échappent seulement au « très gênant » à 135 € prévu pour les autres véhicules motorisés.'
+  pourquoi: Pour une voiture, le trottoir est très gênant (135 €) ; pour une moto ou un cyclomoteur, c’est un stationnement
+    gênant (35 €), avec fourrière possible dans les deux cas (R417-10 et R417-11).
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-10

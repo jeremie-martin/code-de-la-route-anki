@@ -9,15 +9,13 @@
 - id: c-distance-reaction-formule
   dedup_ok:
   - aff-c-temps-reaction-vitesse
-  explication: 'Le calcul physique est vitesse en km/h ÷ 3,6 × durée en secondes. Le raccourci dizaines × 3 donne environ
-    15, 27 et 39 m à 50, 90 et 130 km/h en 1 s ; valeurs physiques : environ 14, 25 et 36 m. Utiliser les hypothèses données
-    par l’exercice.'
+  explication: 'Calcul : vitesse en km/h ÷ 3,6 × durée en secondes, soit environ 14 m à 50 km/h, 25 m à 90 et 36 m
+    à 130. Le raccourci « dizaines × 3 » donne 15, 27 et 39 m. Utiliser les hypothèses de l’exercice.'
   theme: C
   sous_theme: distances
   source: "Codeclic ; En Voiture Simone ; securite-routiere.gouv.fr, Dépliant vitesse"
   rappels:
-  - Pour estimer mentalement la distance parcourue en une seconde, le raccourci « dizaines de km/h × … » utilise le facteur
-    {{c1::3}}.
+  - À 90 km/h, la distance parcourue pendant une seconde de réaction est d’environ {{c1::25 m}}.
 - id: c-distance-mouillee
   texte: Dans un exercice qui retient une adhérence divisée par deux sur sol mouillé, à vitesse égale, la distance
     de freinage est {{c1::doublée}}.
@@ -44,13 +42,13 @@
   sous_theme: distances
   source: "Code de la route, art. R412-12 ; Codes Rousseau, Calcul des distances"
   rappels:
-  - Entre deux voitures qui se suivent, l’intervalle minimal réglementaire correspond à la distance parcourue pendant au moins
-    {{c1::2 secondes}}.
+  - Entre deux voitures qui se suivent, l’intervalle minimal réglementaire correspond à la distance parcourue pendant
+    au moins {{c1::2 secondes}}.
+  - 'Ne pas respecter la distance de sécurité : 135 € et un retrait de {{c2::3 points}}.'
 - id: c-intervalle-pl-tunnel
   texte: Hors agglomération, deux véhicules de plus de 3,5 t (ou de plus de 7 m) qui se suivent à la même vitesse gardent
     au moins {{c1::50 m}}.
-  explication: 'En tunnel, respecter la distance signalée pour la situation : il n’existe pas de minimum universel de 150
-    m dans tous les tunnels, et les consignes peuvent distinguer circulation et arrêt.'
+  explication: 'En tunnel, respecter la distance affichée : elle diffère souvent en circulation et à l’arrêt.'
   theme: C
   sous_theme: distances
   source: "Code de la route, R412-12 ; CETU, sécurité des usagers en tunnel"
@@ -69,8 +67,8 @@
   sous_theme: vigilance
   source: "Calcul v/3,6 × durée ; Sécurité routière, téléphone et distraction"
   rappels:
-  - À 50 km/h (environ 14 m/s), quitter la route des yeux pendant 5 s fait parcourir environ {{c1::70 m}}.
-- id: c-vue-90-pourcent
+  - À 50 km/h, quitter la route des yeux pendant 5 s fait parcourir environ {{c1::70 m}}.
+- id: c-acuite-5-10
   texte: Pour le permis B, le seuil d’acuité visuelle binoculaire est d’au moins {{c1::5/10}}, avec correction si nécessaire.
   explication: 'Arrêté du 28 mars 2022 : acuité binoculaire ≥ 5/10 (si un œil voit moins de 1/10, l''autre doit atteindre
     5/10) et champ visuel horizontal ≥ 120°. Avec lunettes ou lentilles obligatoires, le permis porte le code 01 : conduire
@@ -92,8 +90,9 @@
 - id: c-verre-standard
   texte: Un verre standard (demi de bière, verre de vin, dose de whisky servis au bar) contient environ {{c1::10 g}} d’alcool
     pur.
-  explication: 'Le taux d’alcoolémie qui en résulte varie selon la personne, l’alimentation et le délai : un nombre de verres
-    ne garantit pas de rester sous le seuil. Les doses servies à domicile dépassent souvent le verre standard.'
+  explication: 'Bière 25 cl à 5°, vin 10 cl à 12°, whisky 3 cl à 40° : doses différentes, même quantité d’alcool pur.
+    Changer de boisson ne change donc rien à l’alcoolémie ; à la maison, les verres sont souvent plus remplis qu’au
+    bar.'
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, L'alcool et la conduite ; Code en Poche"
@@ -114,14 +113,13 @@
   - 'Repère moyen, sans garantie individuelle : l’alcoolémie baisse d’environ {{c1::0,10 à 0,15 g/L}} par heure.'
   - Le pic d’alcoolémie survient environ {{c2::30 min}} après absorption à jeun (environ 1 h au cours d’un repas).
 - id: c-conversion-air-sang
-  explication: 'Même règle pour les autres seuils : 0,2 g/L ↔ 0,10 mg/L, 0,8 g/L ↔ 0,40 mg/L. Ce sont des correspondances
-    réglementaires entre deux unités différentes. Lire « sang » ou « air » avant de répondre.'
+  explication: 'Le chiffre en mg/L d’air est la moitié du chiffre en g/L de sang : 0,2 g/L ↔ 0,10 mg/L, 0,8 g/L ↔
+    0,40 mg/L. Ce sont des correspondances réglementaires entre deux unités. Lire « sang » ou « air » avant de répondre.'
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, L'alcool et la conduite ; Code de la route, art. R234-1"
   rappels:
-  - Au seuil de 0,5 g/L de sang correspond le seuil légal de {{c1::0,25 mg/L}} d’air expiré (le chiffre est divisé
-    par deux).
+  - Au seuil de 0,5 g/L de sang correspond le seuil légal de {{c1::0,25 mg/L}} d’air expiré.
 - id: c-medicaments-niveaux
   explication: Somnifères et anxiolytiques (benzodiazépines), certains antihistaminiques, antitussifs et antalgiques sont
     concernés ; environ un tiers des médicaments portent un pictogramme, y compris sans ordonnance. Ne jamais associer à l'alcool.

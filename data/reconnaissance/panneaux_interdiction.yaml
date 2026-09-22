@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml (28 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (29 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: b0
   type: panneau
   code: B0
@@ -200,7 +200,7 @@
   nom: Accès interdit aux véhicules affectés au transport de marchandises
   signification: Accès interdit aux véhicules de transport de marchandises, camions et camionnettes. Un panonceau de tonnage peut restreindre l’interdiction aux véhicules dont le poids maximal autorisé dépasse la valeur indiquée.
   conduite: Ne concerne pas les voitures particulières.
-  piege: Le camion vise le transport de marchandises. Un nombre de tonnes dans le rond rouge vise le poids réel du véhicule, quelle que soit sa catégorie.
+  piege: Le camion vise le transport de marchandises. Un nombre de tonnes dans le rond rouge vise le poids total autorisé (PTAC, ou PTRA pour un ensemble), lu sur la carte grise, pas le poids réel.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -253,10 +253,21 @@
   image:
     commons: France road sign B9h.svg
   nom: Accès interdit aux motocyclettes et motocyclettes légères
-  signification: Interdiction d'accès aux motocyclettes (> 50 cm³) et motocyclettes légères (≤ 125 cm³).
+  signification: Interdiction d’accès aux motocyclettes (plus de 125 cm³ ou plus de 11 kW) et aux motocyclettes légères (au plus 125 cm³ et 11 kW).
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+- id: b9i
+  type: panneau
+  code: B9i
+  image:
+    commons: France road sign B9i.svg
+  nom: Accès interdit aux véhicules tractant une caravane ou une remorque de plus de 250 kg
+  signification: Accès interdit aux véhicules tractant une caravane ou une remorque de plus de 250 kg.
+  theme: L
+  sous_theme: panneaux
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  conduite: Avec une remorque de 250 kg au plus, je passe ; sinon je cherche un autre itinéraire.
 - id: b11
   type: panneau
   code: B11
@@ -334,7 +345,6 @@
   nom: Signaux sonores interdits
   signification: Interdiction d'utiliser l'avertisseur sonore (klaxon), sauf danger immédiat (l'usage en cas de danger reste toujours autorisé).
   conduite: Ne pas klaxonner ; de nuit, avertir par appel de phares.
-  complement: Hors panneau, le klaxon est interdit en agglomération sauf danger immédiat ; de nuit, avertir par appels de phares.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

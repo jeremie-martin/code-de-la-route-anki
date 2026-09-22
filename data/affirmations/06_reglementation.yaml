@@ -76,6 +76,16 @@
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R412-6-1, L224-1 et L224-2
+- id: aff-d-video-verbalisation
+  affirmation: Sans être intercepté par un agent, je ne peux être verbalisé que pour un excès de vitesse.
+  verdict: faux
+  pourquoi: La vidéo-verbalisation constate sans interception le téléphone tenu en main, le non-port de la ceinture,
+    le franchissement d’une ligne continue, la circulation sur la bande d’arrêt d’urgence ou dans un couloir de
+    bus, le feu rouge, le STOP, les distances de sécurité ou l’engagement dans une intersection encombrée. L’avis
+    arrive par courrier au titulaire de la carte grise.
+  theme: D
+  sous_theme: sanctions
+  source: Code de la route, art. L121-3 et R130-11 ; securite-routiere.gouv.fr, Contrôle automatisé
 - id: aff-d-alcool-contravention
   affirmation: Contrôlé à 0,9 g/L de sang, je risque une contravention de 135 € et 6 points.
   verdict: faux
@@ -99,6 +109,15 @@
   theme: D
   sous_theme: documents
   source: Décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362
+- id: aff-d-plaque-sale
+  contexte: Retour d’un chemin boueux ; la plaque arrière est illisible.
+  affirmation: Tant que la plaque est en place, sa lisibilité importe peu.
+  verdict: faux
+  pourquoi: Une plaque sale, masquée ou non conforme est sanctionnée de 135 €, sans retrait de points, avec immobilisation
+    possible. Je la nettoie avant de repartir, comme les feux et les vitres.
+  theme: D
+  sous_theme: documents
+  source: Code de la route, art. R317-8
 - id: aff-d-ct-defaillance-majeure
   contexte: Mon contrôle technique relève une défaillance majeure.
   affirmation: Je peux continuer à rouler en attendant la contre-visite.

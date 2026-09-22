@@ -121,7 +121,7 @@ GEN_MAP = {
     "KR11": ("feu_chantier", {"state": "rouge"}),
     "AGENT-bras-leve": ("agent", {"pose": "bras_leve"}),
     "AGENT-bras-tendu-face": ("agent", {"pose": "bras_tendus"}),
-    "AGENT-profil": ("intersection", {"approaches": {"S": {"vehicle": {"colour": "bleu", "me": True}, "goes": "straight"}, "E": {"vehicle": {"colour": "rouge"}, "goes": "straight"}}, "agent": "bras_tendus_EW"}),
+    "AGENT-profil": ("intersection", {"approaches": {"S": {"vehicle": {"colour": "bleu", "me": True}, "goes": "straight"}, "E": {"vehicle": {"colour": "rouge"}, "goes": "straight"}}, "agent": "bras_tendus_NS"}),  # MOI on the axis of the arms: sees the profile, passes
     "AGENT-geste-avancer": ("agent", {"pose": "avancer"}),
     "TRIANGLE-PRESIGNALISATION": ("triangle_seul", {}),
     "K5a": ("cone", {}),
@@ -238,6 +238,8 @@ def convert():
         elif code in GEN_MAP:
             g, p = GEN_MAP[code]
             image = {"gen": g, "params": p}
+            if g == "intersection":  # cropped plan view: same export size as the scenario cards
+                image["width"] = 800
         elif code in ALT_COMMONS and ALT_COMMONS[code]:
             image = {"commons": ALT_COMMONS[code]}
         elif wf:

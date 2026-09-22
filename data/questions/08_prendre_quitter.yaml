@@ -6,8 +6,8 @@
     du poste de conduite ?
   reponse: Un pneu affaissé ou abîmé, une fuite, un feu ou une plaque sale, et tout obstacle bas invisible du siège
     (un enfant accroupi).
-  explication: Ce contrôle repère des anomalies et des obstacles avant de bouger ; il ne garantit pas l’absence
-    de panne. L’aspect du pneu ne remplace pas la mesure de sa pression.
+  explication: 'Le tour sert à voir ce que le poste de conduite masque : bas des pneus, fuite au sol, feux et plaques
+    sales, obstacle bas ou enfant accroupi. Un pneu sous-gonflé ne se voit pas toujours : la pression se mesure.'
   theme: P
   sous_theme: verifications
   source: "REMC (compétence 1) ; securite-routiere.gouv.fr, Bien préparer son trajet"
@@ -207,8 +207,8 @@
   question: J'emprunte la voiture d'un proche ; le gilet et le triangle manquent. Qui est sanctionné en cas de contrôle
     ?
   reponse: 'Moi, le conducteur : les équipements obligatoires sont vérifiés avant de partir, quel que soit le propriétaire.'
-  explication: 'Gilet à portée de main et triangle à bord (11 € chacun s''ils manquent). Avant de partir avec un
-    véhicule inconnu, repérer aussi les commandes : feux, essuie-glaces, détresse.'
+  explication: 'Gilet à portée de main (11 € s’il manque) et triangle à bord. Avant de partir avec un véhicule inconnu,
+    repérer aussi les commandes : feux, essuie-glaces, détresse.'
   theme: P
   sous_theme: verifications
   source: Code de la route, art. R416-19

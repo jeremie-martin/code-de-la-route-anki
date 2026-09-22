@@ -112,7 +112,7 @@
   couverts_par:
   - u-voie-bus
   - aff-u-place-pmr
-  - l-quadrillage-carrefour
+  - l-intersection-encombree
   - l-bandes-rugueuses
   - l-voie-lents
 - codes:
@@ -318,7 +318,6 @@
 - codes:
   - C3
   - C9
-  - C13b
   - C23
   - C62
   - C64c1
@@ -516,7 +515,6 @@
   - C5
   - C50
   - CE22
-  - M10b
   - B19
   - B29
   - K1
@@ -544,7 +542,6 @@
   - j6
   - l-guidage-reflecteurs
 - codes:
-  - B9i
   - B10a
   - E44
   - KD8

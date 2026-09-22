@@ -109,9 +109,9 @@ def notetypes() -> list[dict]:
             "fields": ["Id", "Type", "Image", "Question", "Nom", "Signification", "ConduiteATenir", "Complement", "Piege", "Code", "Theme", "SousTheme", "Source"],
             "templates": [{
                 "name": "Reconnaissance",
-                "qfmt": f'<div class="cdr-wrap"><div class="cdr-img sign">{{{{Image}}}}</div><div class="cdr-q">{{{{Question}}}}</div></div>',
+                "qfmt": '<div class="cdr-wrap"><div class="cdr-img {{Type}}">{{Image}}</div><div class="cdr-q">{{Question}}</div></div>',
                 "afmt": (
-                    '<div class="cdr-wrap cdr-back">' + '<div class="cdr-img sign">{{Image}}</div>'
+                    '<div class="cdr-wrap cdr-back">' + '<div class="cdr-img {{Type}}">{{Image}}</div>'
                     '<div class="cdr-q">{{Question}}</div>'
                     '<hr id=answer>'
                     '<div class="cdr-a">{{Signification}}</div>'

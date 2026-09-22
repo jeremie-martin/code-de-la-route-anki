@@ -12,7 +12,6 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: La bande blanche repère un virage ; la bande rouge repère une intersection. La balise à bande noire oblique guide le long du bord de la chaussée.
   comparaisons:
   - ref: j3
     legende: 'Bande rouge : intersection.'
@@ -73,7 +72,6 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: La bande noire oblique et le réflecteur blanc guident le long de la chaussée. Une bande blanche repère un virage ; une bande rouge, une intersection.
   comparaisons:
   - ref: j1
     legende: 'Bande blanche : virage.'

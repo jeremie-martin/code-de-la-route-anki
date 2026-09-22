@@ -48,7 +48,7 @@ relation ; leur résultat seul ne doit pas devenir la connaissance à apprendre.
 Recto : situation, image utile, question. Une illustration ne doit pas donner le rappel demandé
 (par exemple, légender le réglage que la question fait retrouver). Le verso prolonge le recto sans déplacer
 les images ni atténuer les prompts ; réponse puis explication s’ajoutent dessous. Le cloze se révèle en place.
-Signal conserve le court séparateur jaune, les réponses contrastées et les explications sans panneaux remplis.
+Le thème des cartes garde le court séparateur jaune, les réponses contrastées et les explications sans panneaux remplis.
 Les références, noms techniques et codes restent dans le volet « Sources ». Les exemples visuels du verso portent une légende.
 Les repères de thème sont sur les sous-decks, sans alourdir chaque carte.
 

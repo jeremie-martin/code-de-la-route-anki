@@ -172,8 +172,8 @@
   image:
     commons: France road sign B26.svg
   nom: Chaînes à neige obligatoires
-  signification: 'Équipement hivernal en service : chaînes sur au moins deux roues motrices, ou pneus hiver admis en équivalence pour les catégories prévues.'
-  conduite: En voiture, vérifier les pneus et le complément du panneau ; avec « Chaînes à neige obligatoires », monter les chaînes avant la section.
+  signification: 'Équipement hivernal en service sur la section : pour une voiture, chaînes montées, ou pneus hiver conformes (3PMSF) admis en équivalence sauf mention contraire.'
+  conduite: Monter les chaînes avant la section si le panonceau les impose ; sinon, des pneus hiver conformes suffisent.
   theme: L
   sous_theme: panneaux
   source: Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12

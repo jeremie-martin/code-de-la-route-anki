@@ -69,6 +69,15 @@
   theme: E
   sous_theme: pollution
   source: "ADEME ; En Voiture Simone, Achat éco-responsable"
+- id: aff-e-monoxyde-garage
+  contexte: Je dégivre ma voiture dans un garage fermé, moteur tournant.
+  affirmation: Porte du garage baissée, je peux laisser tourner le moteur quelques minutes sans risque.
+  verdict: faux
+  pourquoi: Les gaz d’échappement contiennent du monoxyde de carbone, inodore et mortel, qui s’accumule dans un
+    local fermé. J’ouvre en grand avant de démarrer, ou je sors d’abord le véhicule.
+  theme: E
+  sous_theme: pollution
+  source: Santé publique France, intoxications au monoxyde de carbone
 - id: aff-e-zfe-vignette
   contexte: J'entre dans une ZFE au volant d'une voiture essence de 2022.
   affirmation: Même autorisée à circuler, ma voiture doit porter la vignette Crit'Air.

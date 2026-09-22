@@ -53,7 +53,7 @@
   signification: 'Traits longs et intervalles courts, accompagnés de flèches obliques : une ligne continue commence bientôt, il faut se rabattre à droite et ne plus entreprendre de dépassement.'
   conduite: Se rabattre avant la ligne continue ; ne pas commencer de dépassement.
   complement: Avant chaque ligne continue, sur une centaine de mètres.
-  piege: 'Les flèches de rabattement (trois, espacement décroissant) ne désignent pas une direction : elles ordonnent de se rabattre.'
+  piege: 'Les flèches de rabattement ne désignent pas une direction : elles ordonnent de se rabattre avant la ligne continue.'
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -133,7 +133,7 @@
   nom: Passage pour piétons (marquage au sol)
   signification: Bandes blanches parallèles à l'axe de la chaussée matérialisant la traversée des piétons ; s'y arrêter ou y stationner est interdit.
   conduite: Céder le passage au piéton engagé ou qui manifeste l'intention de traverser ; ne pas dépasser un véhicule arrêté devant.
-  complement: Arrêt et stationnement interdits dans les 5 m en amont du passage.
+  complement: Arrêt et stationnement interdits dans les 5 m en amont du passage, hors emplacements matérialisés.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -180,7 +180,6 @@
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Je repère d’abord sa position : la ligne de rive longe le bord de la chaussée ; une ligne axiale sépare les sens de circulation.'
 - id: marq-ligne-bau-t4
   type: marquage
   image:
@@ -190,7 +189,7 @@
   nom: 'Ligne délimitant la bande d''arrêt d''urgence (T4 : 39 m de trait, 13 m de vide)'
   signification: Ligne discontinue à très longs traits (39 m) et vides de 13 m délimitant la bande d'arrêt d'urgence.
   conduite: Ne pas circuler sur la BAU ; garder deux traits avec le véhicule précédent (un trait = danger).
-  complement: 'À 130 km/h, deux traits ≈ 90 m, soit un peu plus de 2 secondes. Circuler sur la BAU : 135 €, 3 points.'
+  complement: À 130 km/h, deux traits (environ 90 m) valent un peu plus de deux secondes.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -218,7 +217,7 @@
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'La largeur des traits aide à reconnaître une voie spéciale. Je regarde aussi où mène la voie : rejoindre la circulation ou en sortir ne demande pas la même manœuvre.'
+  piege: 'Une voie qui rejoint la circulation et une voie qui la quitte ne demandent pas la même manœuvre : je regarde où elle mène.'
 - id: marq-bande-cyclable
   type: marquage
   image:
@@ -355,7 +354,7 @@
       kind: dos_d_ane
   nom: Marquage d'un ralentisseur (triangles blancs)
   signification: Trois triangles blancs (« dents de requin »), pointes dans le sens de la circulation, peints sur la rampe d'un ralentisseur.
-  conduite: Ralentir à 30 km/h maximum avant de franchir.
+  conduite: 'Ralentir fortement avant de franchir : dos-d’âne et plateaux ne sont implantés que dans des zones limitées à 30 km/h.'
   complement: En France, les triangles blancs au sol signalent un ralentisseur, pas un cédez-le-passage.
   theme: L
   sous_theme: marquages
@@ -368,7 +367,7 @@
       kind: plateau
   nom: Ralentisseur de type trapézoïdal (plateau surélevé)
   signification: 'Ralentisseur trapézoïdal : rampes d''accès et plateau plat sur toute la largeur de la chaussée, souvent avec passage piéton surélevé.'
-  conduite: Ralentir à 30 km/h ; céder le passage aux piétons si le plateau porte un passage.
+  conduite: Ralentir fortement ; céder le passage aux piétons si le plateau porte un passage.
   complement: Rencontré en agglomération, zones 30 et zones de rencontre.
   theme: L
   sous_theme: marquages

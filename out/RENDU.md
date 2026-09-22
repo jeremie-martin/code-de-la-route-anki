@@ -1,28 +1,25 @@
-# Relecture manuelle des schémas récents
+# Vérification du rendu navigateur
 
-Paquet reconstruit SHA-256 : `a8bfe6b21aca015af287ca1878c245d448084265decaeacbf21e1f6b2b15bffb`.
+Paquet complet SHA-256 : `b118a60ea6705932e74ad95a491f7c92cfaa4145f7e2f0091d4bd3f75795091b`.
 
-Relecture du code de dessin, de ses coordonnées et transformations, des symboles partagés et des cartes
-complètes. Captures produites avec le rendu Anki et Chromium à 390 px en clair et 320 px en sombre,
-recto et verso. Onze images de dix notes examinées, dont le schéma explicatif au verso du camion.
+Paquet importé dans une collection temporaire ; contenus et gabarits rendus par Anki, puis chargés dans Chromium local sans réseau externe. Toutes les cartes, recto et verso, à 430 × 932 en clair et sombre, à 390 × 844 et 320 × 640 en sombre ; échantillon à 960 px.
 
-| Notes | Observation et décision |
-|---|---|
-| `r-chantier-approche` | Espacer les cônes dans le biseau pour éviter leurs chevauchements graphiques. |
-| `r-chantier-fleche-lumineuse` | Séparer les lampes centrales du bas, conserver le feu commun au croisement des diagonales ; relire l’annexe officielle et agrandir la légende du détail. |
-| `u-corridor-securite` | Corriger le gabarit relatif de la dépanneuse et de sa voiture chargée ; conserver des marges à l’intérieur de la BAU. |
-| `u-cycliste-tourner-droite`, `l-giratoire-sortie-impossible` | Réduire les vélos par rapport aux voitures ; agrandir les labels, conserver les positions qui déterminent le conflit. |
-| `l-entrecroisement` | Montrer deux bretelles physiquement séparées, reliées par une voie commune ; placer entièrement la voiture bleue dans celle-ci. |
-| `l-c107-route-simple`, `l-c107-route-separee` | Conserver les vues comparables : mêmes sens, véhicules et signal ; séparation physique distincte d’une ligne peinte. |
-| `u-pl-tourne-droite` | Replacer le camion en amont, ménager l’approche du virage et préciser le double sens de la rue réceptrice. Au verso, rendre les arcs visibles à travers la caisse et agrandir leur légende. |
-| `scn-dep-passage-pieton` | Sortir le texte des hachures et le relier au secteur masqué ; aucun piéton inventé. Réserver la projection aux véhicules alignés dans la même voie. |
+| Largeur × hauteur | Mode | Faces contrôlées |
+|---|---|---|
+| 430 × 932 | clair | 2252 |
+| 430 × 932 | sombre | 2252 |
+| 390 × 844 | sombre | 2252 |
+| 320 × 640 | sombre | 2252 |
+| 960 × 900 | clair | 40 |
 
-Captures locales : `out/preview/diagram-review-light/` et `out/preview/diagram-review-dark/`.
-Les questions, réponses et gabarits n’ont pas été modifiés. Les dessins restent schématiques et hors échelle ;
-les signaux de face sont des encarts pédagogiques dans le plan. Le schéma des trains du camion explique un
-virage régulier, sans constituer une enveloppe de giration du carrefour représenté au recto.
+**0 échec(s)** : débordement horizontal, média absent, rappel mal isolé, gabarit non résolu, recto déplacé/modifié au verso ou repère ouvert par défaut.
 
-À la demande de l’utilisateur, aucune suite de contrôles automatisés n’a été relancée pour cette révision.
-Ce rapport remplace les mesures de l’édition précédente par la portée de l’inspection actuelle. Il ne couvre
-pas toutes les anciennes images du deck, un essai dans AnkiMobile/AnkiDroid ou une mesure d’efficacité.
-Le [dernier rapport automatisé d’import](VERIFICATION.md) identifie explicitement le paquet précédent.
+4524 comparaisons recto/verso : géométrie des images, textes et typographie des prompts (le texte cloze se révèle en place et peut naturellement changer de longueur).
+
+578 faces/configurations nécessitent un défilement vertical ; ce défilement est admis. Captures en pleine hauteur et captures du seul écran (`_viewport`).
+
+100 ouvertures et fermetures du volet testées sur l’échantillon.
+
+402 captures dans `out/qa/render/`, avec le détail dans `measurements.json`.
+
+Les mesures de mise en page ne vérifient ni la lisibilité du texte incorporé dans une image, ni sa signification. L’inspection visuelle des captures reste nécessaire. Chromium ne remplace pas un essai dans AnkiMobile ou AnkiDroid.

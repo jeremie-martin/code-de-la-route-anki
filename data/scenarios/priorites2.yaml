@@ -51,7 +51,8 @@
   question: Je suis sur une route prioritaire (losange jaune). Une voiture arrive de ma droite. Dois-je lui
     céder le passage ?
   reponse: Non. La voiture rouge doit me céder le passage.
-  explication: 'Le losange jaune indique une route prioritaire jusqu’au losange barré. Je garde un œil sur la rouge : avoir la priorité ne dispense pas de prudence.'
+  explication: 'Le losange jaune indique une route prioritaire jusqu’au losange barré : la position de la rouge à
+    ma droite ne change rien, son cédez-le-passage lui impose d’attendre.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-7 ; IISR (AB6)
@@ -177,9 +178,8 @@
   check: {pair: [S, W, avant]}
   question: "Intersection en T sans signalisation : ma rue débouche sur la route transversale et je tourne à droite ; la voiture rouge arrive de ma gauche. Qui passe en premier ?"
   reponse: "Moi : je suis à sa droite. Sans panneau, la route « qui continue » n'est pas prioritaire."
-  explication: La forme en T ne change pas la priorité à droite entre routes ordinaires. Une signalisation de
-    priorité, une sortie de parking, de chemin de terre ou d’accès non ouvert à la circulation publique changerait
-    l’analyse. Je vérifie que la rouge ralentit avant de m’engager.
+  explication: 'La forme en T ne change pas la priorité à droite entre routes ordinaires : la rouge vient de ma gauche
+    et me cède le passage. Un panneau de priorité, une sortie de parking ou un chemin de terre changeraient l’analyse.'
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5"

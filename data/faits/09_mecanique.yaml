@@ -1,17 +1,15 @@
 - id: m-pneus-chiffres
-  explication: 'Véhicule chargé : appliquer la pression préconisée par le constructeur pour cette charge, lue sur
-    l’étiquette ou la notice ; ne pas ajouter systématiquement la même valeur à tous les véhicules.'
+  explication: '« À froid » : après deux heures d’arrêt ou moins de 3 km ; un pneu chaud affiche plus, on ne le dégonfle
+    pas. Roue de secours comprise. Véhicule chargé : appliquer la pression prévue par le constructeur pour cette charge.'
   theme: M
   sous_theme: pneus
   source: "R314-1 ; Michelin, https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus"
   rappels:
-  - 'Profondeur minimale réglementaire des rainures principales d’un pneu de voiture : {{c1::1,6 mm}}.'
-  - Pour comparer la pression d’un pneu à la valeur de référence du constructeur, la mesurer à {{c2::froid}}.
-  - 'Repère d’entretien : vérifier la pression au moins une fois par {{c3::mois}} et avant un long trajet.'
-- id: m-galette-chiffres
-  explication: 'Galette ou kit de réparation : respecter la vitesse maximale et la distance indiquées sur l’équipement
-    ou dans la notice ; 80 km/h n’est pas universel. Les équipements amovibles se montent selon la notice et les
-    prescriptions du lieu.'
+  - Pour comparer la pression d’un pneu à la valeur de référence du constructeur, la mesurer à {{c1::froid}}.
+  - 'Repère d’entretien : vérifier la pression au moins une fois par {{c2::mois}} et avant un long trajet.'
+- id: m-pneus-hiver-chiffres
+  explication: Le marquage 3PMSF (montagne à trois pics et flocon) atteste un pneu hiver ; le seul M+S ne suffit plus
+    depuis le 1er novembre 2024. Avec des pneus cloutés, 90 km/h au plus, sans relever une limite plus basse.
   theme: M
   sous_theme: pneus
   source: Code de la route, art. R413-7 et R314-3 ; Stych

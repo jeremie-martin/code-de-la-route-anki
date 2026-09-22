@@ -214,9 +214,11 @@
   sous_theme: distances
   source: "Code de la route, art. R412-12 ; securite-routiere.gouv.fr, Les distances de sécurité"
 - id: c-distance-arret-carre
-  question: Quel raccourci de calcul utilise-t-on dans les supports de préparation pour estimer la distance d’arrêt sur sol sec, sans autre donnée ?
-  reponse: 'Le carré du chiffre des dizaines : 50 km/h → 25 m, 90 → 81 m, 130 → 169 m.'
-  explication: C’est un repère pédagogique, pas une distance garantie. Le temps de réaction, les pneus et l’adhérence changent le résultat. Si l’exercice donne des distances de réaction et de freinage, les additionner ; le doublement du freinage sur sol mouillé est aussi un ordre de grandeur.
+  question: Sol sec, 90 km/h, aucune autre donnée. Quel ordre de grandeur retenir pour ma distance d’arrêt ?
+  reponse: 'Environ 80 m : le carré du chiffre des dizaines (9 × 9 = 81).'
+  explication: 'Raccourci des supports de préparation : 50 km/h → 25 m, 130 → 169 m. C’est un repère, pas une distance
+    garantie : temps de réaction, pneus et adhérence changent le résultat. Si l’exercice donne des distances de réaction
+    et de freinage, les additionner.'
   theme: C
   sous_theme: distances
   source: "Supports de préparation (Codes Rousseau, ENPC), raccourci pédagogique ; Sécurité routière, exemples 2023, Q13 (freinage sous la pluie uniquement)"

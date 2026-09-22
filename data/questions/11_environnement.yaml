@@ -3,8 +3,8 @@
     lève le pied tout de suite ?
   reponse: 'Je lève le pied tout de suite, rapport adapté : j’anticipe l’arrêt, je ménage les freins et j’évite une accélération
     inutile.'
-  explication: Sur de nombreux moteurs à injection, l’alimentation est coupée en décélération au-dessus d’un certain régime.
-    Ce mécanisme dépend du véhicule ; anticiper reste utile dans tous les cas.
+  explication: 'Lever le pied tôt avec un rapport engagé ne consomme rien et évite d’accélérer pour freiner ensuite.
+    Freiner tard oblige à réaccélérer : c’est là que le carburant part.'
   theme: E
   sous_theme: ecoconduite
   source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
@@ -29,8 +29,9 @@
   question: Qu'est-ce que le frein moteur et pourquoi l'utiliser ?
   reponse: 'Le ralentissement obtenu en relâchant l’accélérateur avec un rapport engagé : il maîtrise l’allure et limite l’échauffement
     des freins en descente.'
-  explication: Sur de nombreux moteurs à injection, la consommation peut être nulle dans certaines phases de décélération.
-    Ce n’est pas une promesse universelle ; une électrique peut récupérer de l’énergie, dans les limites de son système.
+  explication: 'Sur la plupart des moteurs à injection, l’alimentation est coupée en décélération avec un rapport
+    engagé : la consommation peut tomber à zéro, alors qu’au point mort le moteur tourne au ralenti. Une électrique
+    récupère de l’énergie de la même façon.'
   theme: E
   sous_theme: ecoconduite
   source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
@@ -38,8 +39,9 @@
   question: Par forte chaleur, comment utiliser la climatisation sans gaspiller ni compromettre la conduite ?
   reponse: Aérer d’abord l’habitacle surchauffé, puis utiliser une climatisation modérée, vitres fermées.
     Garder un confort thermique compatible avec la vigilance.
-  explication: Refroidir davantage que nécessaire consomme de l’énergie. La surconsommation dépend du véhicule,
-    de la chaleur et de l’usage ; aucun seuil de vitesse universel ne décide à lui seul du meilleur choix.
+  explication: 'À vitesse élevée, vitres fermées et climatisation modérée consomment moins que vitres ouvertes : la
+    résistance à l’air l’emporte. En ville, à faible allure, l’inverse peut être vrai. Refroidir plus que nécessaire
+    consomme de l’énergie.'
   theme: E
   sous_theme: ecoconduite
   source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 ; notice Renault Captur, Air conditionné, https://www.user-manual.renault.com/sites/renault/files/Captur-1238-6_FRA.pdf"
@@ -47,8 +49,9 @@
   question: En dehors de ma façon de conduire, quels facteurs liés au véhicule augmentent la consommation ?
   reponse: La climatisation utilisée sans besoin, les accessoires de toit (résistance à l’air), une charge inutile et des
     pneus sous-gonflés.
-  explication: 'Les pourcentages varient selon le trajet et le véhicule : retenir les mécanismes plutôt qu’un chiffre. Garder
-    le désembuage et le confort thermique nécessaires à la sécurité ; régler la pression selon la notice.'
+  explication: 'Trois mécanismes : la résistance à l’air (coffre de toit, vitres ouvertes à vitesse élevée), la masse
+    inutile et la résistance au roulement (pneus sous-gonflés). La climatisation et les équipements électriques ajoutent
+    une charge au moteur. Garder le désembuage nécessaire à la visibilité.'
   theme: E
   sous_theme: ecoconduite
   source: "ADEME ; Codeclic, Conduite économique ; Ornikar, Conduite écologique"

@@ -1,5 +1,5 @@
-/* Signal theme consolidated from docs/signal-theme-handoff/signal.css.
-   Front content keeps its geometry and typography when the answer is revealed. */
+/* Card theme: quiet paper, blue answers, short yellow separator. The front keeps its geometry and
+   typography when the answer is revealed; night mode is driven by the same variables. */
 .card {
   --paper: #f3f6f7; --text: #20343c; --answer: #17566e; --false: #a33c30;
   --body: #253b44; --muted: #536b75; --link: #18536c; --strong: #20343c;
@@ -17,8 +17,10 @@
 }
 .cdr-wrap { max-width: 640px; margin: 0 auto; overflow-wrap: break-word; }
 .cdr-img { text-align: center; margin: 0 auto 14px; }
-.cdr-img img { display: inline-block; max-width: 100%; max-height: 38vh; width: auto; height: auto; border-radius: 7px; }
-.cdr-img.sign img { max-height: 27vh; max-width: min(100%, 235px); }
+.cdr-img img { display: inline-block; max-width: 100%; max-height: 44vh; width: auto; height: auto; border-radius: 7px; }
+/* Pictogram-like signals stay at sign size; markings, gestures and plan views use the full width. */
+.cdr-img.panneau img, .cdr-img.panonceau img, .cdr-img.balise img, .cdr-img.feu img, .cdr-img.voyant img,
+.cdr-img.pictogramme img, .cdr-img.equipement img { max-height: 27vh; max-width: min(100%, 235px); }
 .cdr-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; text-align: center; }
 .cdr-pair > div { min-width: 0; }
 .cdr-pair img { max-width: 100%; max-height: 22vh; width: auto; height: auto; }

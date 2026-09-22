@@ -191,7 +191,9 @@
 - id: aff-u-moto-feux-jour
   affirmation: Une moto ou un cyclomoteur doit circuler feux de croisement (ou feux de jour) allumés, même en plein soleil.
   verdict: vrai
-  pourquoi: 'R416-17 : l''allumage de jour est imposé aux deux-roues motorisés pour compenser leur faible surface visible. Cela ne suffit pas à les rendre détectables : l''automobiliste doit regarder deux fois.'
+  pourquoi: 'R416-17 : l’allumage de jour est imposé aux deux-roues motorisés pour compenser leur faible surface visible.
+    Un feu unique ne donne ni la largeur ni la distance : c’est pourquoi on sous-estime la vitesse d’approche d’une
+    moto avant de tourner à gauche.'
   theme: U
   sous_theme: motos
   source: "Code de la route, art. R416-17 ; securite-routiere.gouv.fr, Être visible à moto"

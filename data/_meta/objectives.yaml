@@ -81,7 +81,6 @@
   notes:
   - scn-deux-stops-face
   - l-stop-arret
-  - l-sortie-parking-priorite
   - l-tourner-gauche-regle
   - l-intersection-encombree
   - aff-l-stop-avancer
@@ -98,7 +97,6 @@
   - l-passage-pieton-50m
   - l-priorite-prudence
   consolidation:
-  - l-sortie-stationnement
   - aff-l-chemin-terre
   - aff-l-zone-30-priorite-droite
   - aff-l-stop-rien-ne-vient
@@ -128,7 +126,6 @@
   - scn-t-moi-branche
   - scn-moi-sortie-parking
   - scn-pd-cycliste-droite
-  - l-quadrillage-carrefour
 - id: l-giratoire
   theme: L
   titre: Entrer, se placer et sortir sans couper une trajectoire
@@ -254,6 +251,7 @@
   - conf-b21-1-b21c1
   - conf-b21a1-b21c1
   - conf-b31-b33
+  - b9i
 - id: l-portee
   theme: L
   titre: Lire portée, catégorie, zone et agglomération
@@ -314,6 +312,7 @@
   - conf-b52-b54
   - conf-b30-b56
   - conf-m8a-m8b
+  - l-b14-meme-support
 - id: l-marquage
   theme: L
   titre: Lire lignes et affectations de voies
@@ -368,7 +367,6 @@
   - l-brouillard-zone30
   - aff-l-creneau-90
   - aff-l-vitesse-sous-limite
-  - l-visuel-b14-position
   - l-visuel-b14-adaptation
   - l-c107-route-simple
   - l-c107-route-separee
@@ -470,7 +468,6 @@
   - conf-b6a1-b6d
   - l-visuel-arret-b6a1
   - l-visuel-arret-b6d
-  - l-visuel-attendre-b6a1
   - l-visuel-jaune-continu
   - l-visuel-jaune-discontinu
   consolidation:
@@ -484,7 +481,6 @@
   - l-zone-bleue
   - l-feux-detresse-usage
   - l-double-file
-  - aff-l-ligne-jaune-discontinue
   - aff-l-bau-appel
   - aff-l-arret-moteur-tournant
   - aff-l-arret-chargement
@@ -636,6 +632,8 @@
   - aff-r-nuit-pieton-sombre
   - aff-r-vent-manche
   - aff-r-vent-deux-roues
+  - r-nuit-gabarit-camion
+  - aff-r-brouillard-avant-sinueuse
 - id: r-montagne
   theme: R
   titre: Préparer l'équipement hiver et gérer une forte pente
@@ -664,7 +662,6 @@
   - c8
   - c26a
   - l-insertion-autoroute-priorite
-  - r-autoroute-insertion-fin-voie
   - r-autoroute-sortie
   - r-autoroute-panne
   - r-autoroute-panne-attendre
@@ -723,6 +720,7 @@
   - aff-r-tunnel-demi-tour
   - aff-r-tram-station-pieton
   - l-feu-pieton-tram
+  - r-tunnel-mon-vehicule-feu
 - id: r-travaux
   theme: R
   titre: Suivre les indications temporaires
@@ -777,7 +775,6 @@
   - marq-passage-cyclistes
   - u-velo-equipement-chiffres
   - u-pieton-hors-agglo-cote
-  - u-personnes-agees
   - u-fauteuil-roulant-chaussee
   - u-cyclistes-de-front
   - u-cycliste-bras-gauche
@@ -793,8 +790,8 @@
   - aff-u-velo-casque-enfant-adulte
   - aff-u-velo-ecouteurs
   - aff-u-velo-double-sens-zone30
-  - conf-a21-c20c
   - conf-a13b-c20a
+  - u-fausse-courtoisie-pieton
 - id: u-micromobilite
   theme: U
   titre: Identifier les règles propres aux deux-roues et EDPM
@@ -826,7 +823,6 @@
   notes:
   - u-pl-angles-morts
   - u-pl-tourne-droite
-  - u-pl-giratoire-deport
   - u-pl-depasser-suivre
   - u-matieres-dangereuses
   - l-bus-quitte-arret
@@ -926,7 +922,6 @@
   - m-visuel-batterie-roulant
   consolidation:
   - aff-m-clignotant-rapide
-  - aff-m-voyant-abs-distance
   - aff-m-tpms-orange
   - voyant-direction
   - voyant-detresse
@@ -957,9 +952,8 @@
   - m-feux-reglage-hauteur
   - aff-m-pneus-neufs-arriere
   consolidation:
-  - m-galette-chiffres
+  - m-pneus-hiver-chiffres
   - m-feux-portees
-  - m-pneus-pression-quand
   - m-pneus-usure-1-6
   - m-plaquettes-usure
   - m-freins-apres-lavage
@@ -968,13 +962,13 @@
   - m-boite-auto-positions
   - m-appel-phares
   - aff-m-pression-chaud
-  - aff-m-chargement-pression
   - aff-m-surgonflage
   - aff-m-pneu-age
   - aff-m-4-saisons-3pmsf
   - aff-m-refroidissement-bouchon
   - aff-m-boite-auto-p-arret
   - aff-m-feu-grille-nuit
+  - m-feux-arriere-controle
 - id: m-aides
   theme: M
   titre: Utiliser les aides sans déléguer sa vigilance
@@ -1000,6 +994,7 @@
   - aff-m-angle-mort-moto
   - aff-m-detecteur-fatigue
   - aff-m-isa-panneaux
+  - m-freinage-sans-abs
 - id: m-panne
   theme: M
   titre: Réagir à une panne sans aggraver le risque
@@ -1012,6 +1007,7 @@
   consolidation:
   - m-changer-roue-ecrous
   - m-remorquage
+  - m-moteur-cale-direction
 - id: s-retenir
   theme: S
   titre: Attacher chaque occupant et choisir le siège enfant
@@ -1102,11 +1098,11 @@
   - a-proteger-arret
   - a-incendie-vehicule
   - aff-a-dae-formation
-  - aff-a-dae-sans-arret-cardiaque
   - aff-a-respire-mais-inconsciente
   - aff-a-contact-vehicules-accidentes
   - aff-a-18-secours-personne
   - l-reperes-localisation
+  - aff-a-fumer-sur-les-lieux
 - id: a-accident
   theme: A
   titre: Assumer ses obligations après un accident
@@ -1148,6 +1144,7 @@
   - aff-d-invalidation-capital
   - aff-d-recuperation-delai
   - aff-d-disque-a-duree
+  - d-points-dix-ans
 - id: d-vehicule
   theme: D
   titre: Rouler avec les documents, assurance et contrôle requis
@@ -1169,6 +1166,8 @@
   - d-vente-vehicule
   - aff-d-carte-grise-delai
   - aff-d-gilet-coffre
+  - aff-d-plaque-sale
+  - d-permis-validite-15-ans
 - id: e-ecoconduite
   theme: E
   titre: Réduire les consommations sans compromettre la sécurité
@@ -1215,6 +1214,7 @@
   - e-pic-pollution-chiffres
   - aff-e-zfe-vignette
   - aff-e-diesel-nox
+  - aff-e-monoxyde-garage
 - id: l-orientation
   theme: L
   titre: Lire un itinéraire et préparer sa voie
@@ -1261,6 +1261,8 @@
   - d20
   - d40
   - da40
+  - c13b
+  - m10b
 - id: l-services
   theme: L
   titre: Identifier le service recherché et son accès
@@ -1279,7 +1281,7 @@
   notes:
   - aff-c-vision-peripherique
   consolidation:
-  - c-vue-90-pourcent
+  - c-acuite-5-10
   - aff-c-nuit-distances
   - aff-c-regard-obstacle
 - id: u-lents
@@ -1333,6 +1335,7 @@
   - aff-d-clignotant-points
   - aff-d-sans-assurance-points
   - d-vitesse-40-49
+  - aff-d-video-verbalisation
 - id: e-mobilite
   theme: E
   titre: Choisir un mode de déplacement et une énergie adaptés

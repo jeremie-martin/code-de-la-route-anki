@@ -96,7 +96,7 @@ Recherche Anki : `objectif::l-priorite-signaux`
 
 Règle, exception et application visuelle ; le sens des flèches compte.
 
-49 notes / 49 cartes.
+46 notes / 46 cartes.
 
 Recherche Anki : `objectif::l-intersection`
 
@@ -104,12 +104,9 @@ Recherche Anki : `objectif::l-intersection`
 |---|---|---|---|
 | `l-passage-pieton-50m` | socle | faits | Code de la route, R412-37, R415-11 et R413-17 |
 | `l-priorite-droite-defaut` | socle | questions | Code de la route, art. R415-5 |
-| `l-sortie-parking-priorite` | socle | questions | Code de la route, R415-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968 ; R415-11 |
 | `l-stop-arret` | socle | questions | Code de la route, art. R415-6 |
 | `l-tourner-gauche-regle` | socle | questions | Code de la route, art. R415-4 et R412-10 |
 | `l-intersection-encombree` | socle | questions | Code de la route, art. R412-33 |
-| `l-sortie-stationnement` | consolidation | questions | Code de la route, art. R412-10 |
-| `l-quadrillage-carrefour` | consolidation | questions | Code de la route, R415-2 |
 | `l-priorite-prudence` | socle | questions | Code de la route, R415-1 et R413-17 |
 | `aff-l-chemin-terre` | consolidation | affirmations | R415-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968/ |
 | `aff-l-zone-30-priorite-droite` | consolidation | affirmations | Code de la route, art. R415-5 et R110-2 |
@@ -224,7 +221,7 @@ Recherche Anki : `objectif::l-feux`
 
 Identifier le symbole plutôt que réciter son numéro.
 
-63 notes / 63 cartes.
+64 notes / 64 cartes.
 
 Recherche Anki : `objectif::l-prescriptions`
 
@@ -250,6 +247,7 @@ Recherche Anki : `objectif::l-prescriptions`
 | `b9b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `b9g` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `b9h` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
+| `b9i` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `b11` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `b12` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `b13` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
@@ -298,7 +296,7 @@ Recherche Anki : `objectif::l-prescriptions`
 
 Une même valeur n'a pas toujours la même portée.
 
-54 notes / 54 cartes.
+55 notes / 55 cartes.
 
 Recherche Anki : `objectif::l-portee`
 
@@ -349,6 +347,7 @@ Recherche Anki : `objectif::l-portee`
 | `l-formes-couleurs-panneaux` | socle | questions | IISR 1re partie |
 | `l-formes-priorite-temporaire` | socle | questions | IISR 1re et 3e parties |
 | `l-portee-prescription` | socle | questions | IISR 1re partie, art. 8 ; Code de la route, art. R110-2 |
+| `l-b14-meme-support` | consolidation | questions | IISR, 4e partie (implantation des panneaux de prescription) ; Code de la route, art. R413-3 |
 | `l-panonceau-portee` | socle | questions | IISR 1re partie, art. 9 |
 | `l-signalisation-temporaire` | consolidation | questions | IISR 8e partie ; Code de la route, art. R411-25 |
 | `l-agglomeration-panneau` | consolidation | questions | Code de la route, art. R110-2, R413-3, R416-1 ; IISR |
@@ -405,7 +404,7 @@ Recherche Anki : `objectif::l-marquage`
 
 Les cas contrastés préviennent les soustractions automatiques.
 
-26 notes / 33 cartes.
+25 notes / 32 cartes.
 
 Recherche Anki : `objectif::l-vitesse`
 
@@ -428,7 +427,6 @@ Recherche Anki : `objectif::l-vitesse`
 | `l-brouillard-zone30` | socle | questions | Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-pluie-route80` | socle | questions | Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-pmv-limitation` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `l-visuel-b14-position` | socle | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
 | `l-visuel-b14-adaptation` | socle | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-17 |
 | `l-c107-route-simple` | socle | questions | https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-c107-route-separee` | socle | questions | https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
@@ -522,7 +520,7 @@ Recherche Anki : `objectif::l-position`
 
 La durée et les warnings ne créent aucune autorisation.
 
-36 notes / 39 cartes.
+34 notes / 37 cartes.
 
 Recherche Anki : `objectif::l-stationner`
 
@@ -553,10 +551,8 @@ Recherche Anki : `objectif::l-stationner`
 | `l-stationnement-hors-agglo-nuit` | socle | questions | Code de la route, art. R417-4 et R416-12 |
 | `l-visuel-arret-b6a1` | socle | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
 | `l-visuel-arret-b6d` | socle | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
-| `l-visuel-attendre-b6a1` | socle | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R110-2 |
 | `l-visuel-jaune-continu` | socle | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
 | `l-visuel-jaune-discontinu` | socle | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
-| `aff-l-ligne-jaune-discontinue` | consolidation | affirmations | IISR 7e partie art. 118-2 |
 | `aff-l-sens-unique-gauche` | socle | affirmations | Code de la route, art. R417-1 |
 | `aff-l-bau-appel` | consolidation | affirmations | Code de la route, art. R421-7 et R417-10 |
 | `aff-l-arret-moteur-tournant` | consolidation | affirmations | Code de la route, art. R110-2 |
@@ -569,7 +565,7 @@ Recherche Anki : `objectif::l-stationner`
 
 Comprendre le mécanisme et calculer sur les données fournies.
 
-15 notes / 15 cartes.
+15 notes / 16 cartes.
 
 Recherche Anki : `objectif::c-distances`
 
@@ -706,7 +702,7 @@ Recherche Anki : `objectif::c-distraction`
 
 Les plafonds et les équipements ne garantissent pas l'adhérence.
 
-27 notes / 27 cartes.
+29 notes / 29 cartes.
 
 Recherche Anki : `objectif::r-meteo`
 
@@ -715,6 +711,7 @@ Recherche Anki : `objectif::r-meteo`
 | `c-croisement-nuit-regard` | socle | questions | Sécurité routière, Exemples de nouvelles questions (Q20) |
 | `r-nuit-feux-croisement-route` | socle | questions | Code de la route, art. R416-5 et R416-6 |
 | `r-nuit-suivre-vehicule-feux` | socle | questions | Code de la route, art. R416-6 |
+| `r-nuit-gabarit-camion` | consolidation | questions | Code de la route, art. R416-6 et R313-14 |
 | `r-nuit-vitesse-visibilite` | socle | questions | Code de la route, R413-17, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/ |
 | `r-pluie-feux` | consolidation | questions | Code de la route, art. R416-4 et R416-6 |
 | `r-pluie-premieres-gouttes` | socle | questions | Stych, Circuler par temps de pluie ; securite-routiere.gouv.fr, Conduire sous la pluie |
@@ -727,6 +724,7 @@ Recherche Anki : `objectif::r-meteo`
 | `r-soleil-bas` | socle | questions | En Voiture Simone, Conduire face au soleil |
 | `aff-r-brouillard-arriere-pluie` | socle | affirmations | Code de la route, art. R416-7 |
 | `aff-r-brouillard-avant-pluie` | consolidation | affirmations | Code de la route, art. R416-7 |
+| `aff-r-brouillard-avant-sinueuse` | consolidation | affirmations | Code de la route, art. R416-7 |
 | `aff-r-brouillard-feux-route` | consolidation | affirmations | Code de la route, art. R416-6 |
 | `aff-r-visibilite-50-autoroute` | consolidation | affirmations | Code de la route, art. R413-4 |
 | `aff-r-aquaplaning-freiner` | consolidation | affirmations | Ornikar, L'aquaplaning ; securite-routiere.gouv.fr, Conduire sous la pluie |
@@ -768,7 +766,7 @@ Recherche Anki : `objectif::r-montagne`
 
 Les erreurs d'itinéraire ne justifient aucune manœuvre dangereuse.
 
-29 notes / 30 cartes.
+28 notes / 29 cartes.
 
 Recherche Anki : `objectif::r-autoroute`
 
@@ -787,7 +785,6 @@ Recherche Anki : `objectif::r-autoroute`
 | `r-autoroute-sortie-annonces` | consolidation | faits | IISR, 5e partie (art. 83 et 84) ; Code de la route, art. R421-4 |
 | `l-insertion-autoroute-priorite` | socle | questions | Code de la route, art. R421-3 |
 | `l-feu-acces-regule` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `r-autoroute-insertion-fin-voie` | socle | questions | Code de la route, R421-3 et R412-6 |
 | `r-autoroute-sortie` | socle | questions | Code de la route, R413-17, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/ ; R421-4 |
 | `r-autoroute-bau` | consolidation | questions | Code de la route, art. R412-8 et R421-7 |
 | `r-autoroute-panne` | socle | questions | Code de la route, art. R421-7 et R416-19 |
@@ -808,7 +805,7 @@ Recherche Anki : `objectif::r-autoroute`
 
 Arrêt imposé, sortie libre, refuge et issue ont des rôles distincts.
 
-29 notes / 29 cartes.
+30 notes / 30 cartes.
 
 Recherche Anki : `objectif::r-tunnel-rail`
 
@@ -831,6 +828,7 @@ Recherche Anki : `objectif::r-tunnel-rail`
 | `r-tunnel-distance-arret` | socle | questions | CETU, https://www.cetu.developpement-durable.gouv.fr/IMG/pdf/CETU-Note_Info_22_2011.pdf |
 | `r-tunnel-panne` | consolidation | questions | CETU, Conduire en tunnel ; securite-routiere.gouv.fr, Les tunnels |
 | `r-tunnel-incendie` | socle | questions | CETU, Consignes en cas d'incendie ; securite-routiere.gouv.fr, Les tunnels |
+| `r-tunnel-mon-vehicule-feu` | consolidation | questions | CETU, Conduire en tunnel ; securite-routiere.gouv.fr, Les tunnels |
 | `r-pn-feu-rouge-clignotant` | socle | questions | Code de la route, art. R412-30 et R422-3 |
 | `r-pn-engagement` | socle | questions | Code de la route, art. R422-3 ; SNCF Réseau, Sécurité aux passages à niveau |
 | `r-pn-bloque` | socle | questions | SNCF Réseau, Que faire en cas d'immobilisation ; Code de la route, art. R422-3 |
@@ -884,30 +882,27 @@ Recherche Anki : `objectif::r-travaux`
 
 Respecter leurs priorités et anticiper leurs erreurs.
 
-39 notes / 42 cartes.
+36 notes / 39 cartes.
 
 Recherche Anki : `objectif::u-vulnerables`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `a13b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
-| `a21` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `marq-passage-pietons` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `marq-passage-cyclistes` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `c20a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
-| `c20c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `c113` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `c115` | socle | reconnaissance | Code de la route, R110-2, R411-3-2 et R412-43-1, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006143859 |
-| `conf-a21-c20c` | consolidation | confusions | Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `conf-a13b-c20a` | consolidation | confusions | IISR 1re et 5e parties |
 | `u-velo-chiffres` | socle | faits | Code de la route, art. R431-1-1, R431-1-3, R412-34, R431-7 |
 | `u-velo-equipement-chiffres` | consolidation | faits | Code de la route, art. R313-4 et s. ; securite-routiere.gouv.fr, Équipements obligatoires vélo |
 | `u-pieton-hors-passage` | socle | questions | Code de la route, R412-37 à R412-39, R412-6 et R415-11, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037411323 |
 | `u-pieton-canne-blanche` | socle | questions | Code de la route, art. R412-6 et R415-11 ; securite-routiere.gouv.fr, Piétons |
+| `u-fausse-courtoisie-pieton` | consolidation | questions | Code de la route, art. R412-30 et R415-11 ; REMC (fausse courtoisie) |
 | `u-pieton-hors-agglo-cote` | consolidation | questions | Code de la route, art. R412-36 et R412-42 |
 | `u-zone-rencontre-pietons` | socle | questions | Code de la route, art. R110-2 et R415-11 |
 | `u-enfants-sortie-ecole` | socle | questions | Code de la route, art. R413-17 ; arrêté du 2 juillet 1982 (transports d'enfants) |
-| `u-personnes-agees` | consolidation | questions | Code de la route, art. R415-11 ; ONISR 2025 (bilan définitif) |
 | `u-fauteuil-roulant-chaussee` | consolidation | questions | Code de la route, art. R412-34, R412-35, R412-36 et R414-4 |
 | `u-cyclistes-de-front` | consolidation | questions | Code de la route, art. R431-7 et R414-4 |
 | `u-cycliste-tourner-droite` | socle | questions | Code de la route, art. R415-3 III : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278135 ; R415-14 |
@@ -963,7 +958,7 @@ Recherche Anki : `objectif::u-micromobilite`
 
 La présence dans le rétroviseur ne prouve pas que l'autre a regardé.
 
-15 notes / 16 cartes.
+14 notes / 15 cartes.
 
 Recherche Anki : `objectif::u-gabarit`
 
@@ -971,11 +966,10 @@ Recherche Anki : `objectif::u-gabarit`
 |---|---|---|---|
 | `c20c` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `u-pl-angles-morts-chiffres` | consolidation | faits | securite-routiere.gouv.fr, Angles morts ; Code de la route, art. R313-32-1 et R412-12 |
-| `u-pl-vitesses-chiffres` | consolidation | faits | Code de la route, art. R413-8 et R413-8-1 |
+| `u-pl-vitesses-chiffres` | consolidation | faits | Code de la route, art. R413-8 et R413-10 |
 | `l-bus-quitte-arret` | socle | questions | Code de la route, art. R412-11 |
 | `u-pl-angles-morts` | socle | questions | securite-routiere.gouv.fr, Vrai ou faux : angles morts |
 | `u-pl-tourne-droite` | socle | questions | Sécurité routière, fiche pédagogique 6, https://www.securite-routiere.gouv.fr/sites/default/files/2019-02/fiche_pedago_film_6.pdf |
-| `u-pl-giratoire-deport` | socle | questions | securite-routiere.gouv.fr, Angles morts ; Ornikar, Transports de marchandises |
 | `u-pl-depasser-suivre` | socle | questions | Code de la route, art. R414-4 et R412-12 ; coursdecode, Les poids lourds |
 | `u-matieres-dangereuses` | socle | questions | Accord ADR ; IISR (B18) |
 | `u-tram-depasser` | consolidation | questions | Code de la route, art. R414-13 et R414-6 |
@@ -1063,7 +1057,7 @@ Recherche Anki : `objectif::p-quitter`
 
 Le symbole et les symptômes décident, pas la couleur seule.
 
-36 notes / 36 cartes.
+35 notes / 35 cartes.
 
 Recherche Anki : `objectif::m-alertes`
 
@@ -1103,23 +1097,21 @@ Recherche Anki : `objectif::m-alertes`
 | `aff-m-voyant-abs-blocage` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q5) |
 | `aff-m-voyant-abs-arret` | socle | affirmations | Sécurité routière, Exemples de nouvelles questions (Q5) |
 | `aff-m-tpms-orange` | consolidation | affirmations | Notices constructeurs (Renault, témoins lumineux) ; REMC |
-| `aff-m-voyant-abs-distance` | consolidation | affirmations | Renault, témoin ABS : https://www.user-manual.renault.com/fr/notice/indicator/108271 ; Sécurité routière, vitesse et distances de sécurité, juin 2003 |
 | `aff-m-clignotant-rapide` | consolidation | affirmations | Notices constructeurs ; REMC |
 
 ## m-entretien : Vérifier pneus, liquides et éclairage
 
 Préconisations constructeur et signes de panne priment sur les recettes.
 
-28 notes / 33 cartes.
+27 notes / 31 cartes.
 
 Recherche Anki : `objectif::m-entretien`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `m-pneus-chiffres` | socle | faits | R314-1 ; Michelin, https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus |
-| `m-galette-chiffres` | consolidation | faits | Code de la route, art. R413-7 et R314-3 ; Stych |
+| `m-pneus-hiver-chiffres` | consolidation | faits | Code de la route, art. R413-7 et R314-3 ; Stych |
 | `m-feux-portees` | consolidation | faits | Code de la route, art. R313-2 à R313-4 |
-| `m-pneus-pression-quand` | consolidation | questions | Michelin, https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus |
 | `m-pneus-usure-1-6` | consolidation | questions | Code de la route, art. R314-1 ; arrêté du 18 juillet 2019 |
 | `m-niveau-huile` | socle | questions | Ornikar, Huile moteur ; lepermislibre, Contrôler les niveaux |
 | `m-liquide-refroidissement` | socle | questions | Ornikar, Liquide de refroidissement |
@@ -1132,11 +1124,11 @@ Recherche Anki : `objectif::m-entretien`
 | `m-boite-auto-positions` | consolidation | questions | Stych, La boîte automatique ; service-public.fr F2828 |
 | `m-feux-jour-limite` | socle | questions | Stych, Systèmes d'éclairage ; Code de la route, art. R416-6 |
 | `m-feux-reglage-hauteur` | socle | questions | Sécurité routière, Exemples de nouvelles questions (Q1) ; Ornikar, Réglage des feux |
+| `m-feux-arriere-controle` | consolidation | questions | Code de la route, art. R313-2 à R313-11 ; REMC |
 | `m-appel-phares` | consolidation | questions | Code de la route, art. R416-1 et R416-2 ; Ornikar, L'appel de phares |
 | `m-allumage-automatique` | socle | questions | securite-routiere.gouv.fr, ADAS ; Stych, Systèmes d'éclairage |
 | `m-pression-etiquette` | socle | questions | Michelin, https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus |
 | `aff-m-pression-chaud` | consolidation | affirmations | securite-routiere.gouv.fr, Pneus ; Michelin, Vérifier la pression |
-| `aff-m-chargement-pression` | consolidation | affirmations | Michelin, https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus |
 | `aff-m-surgonflage` | consolidation | affirmations | Michelin, Usure des pneus ; Ornikar, Sous-gonflage |
 | `aff-m-pneus-neufs-arriere` | socle | affirmations | Michelin, Mixage des pneus ; Ornikar, Même essieu |
 | `aff-m-pneu-age` | consolidation | affirmations | Allopneus, Durée de vie d'un pneu ; Ornikar, Vérifier le flanc |
@@ -1149,13 +1141,14 @@ Recherche Anki : `objectif::m-entretien`
 
 Distinguer fonctions et limites, y compris en urgence.
 
-19 notes / 19 cartes.
+20 notes / 20 cartes.
 
 Recherche Anki : `objectif::m-aides`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `m-freinage-urgence-abs` | socle | questions | securite-routiere.gouv.fr, Dépliant vitesse ; Ornikar, ABS |
+| `m-freinage-sans-abs` | consolidation | questions | securite-routiere.gouv.fr, Les aides à la conduite (ADAS) ; REMC |
 | `s-esp-fonction` | socle | questions | securite-routiere.gouv.fr, Les aides à la conduite ; règlement (CE) 661/2009 |
 | `m-afu-aeb` | socle | questions | CNSR, Comité des experts, aides à la conduite, https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf |
 | `s-regulateur-limiteur` | socle | questions | CNSR, Les aides à la conduite, 2024 ; Renault, https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4 |
@@ -1179,7 +1172,7 @@ Recherche Anki : `objectif::m-aides`
 
 Assurer sa protection avant toute réparation.
 
-6 notes / 6 cartes.
+7 notes / 7 cartes.
 
 Recherche Anki : `objectif::m-panne`
 
@@ -1190,6 +1183,7 @@ Recherche Anki : `objectif::m-panne`
 | `m-changer-roue-securite` | socle | questions | Stych, Dépannages ; Code en Poche, Changer une roue |
 | `m-changer-roue-ecrous` | consolidation | questions | Stych, Dépannages ; Code en Poche, Changer une roue |
 | `m-crevaison-eclatement` | socle | questions | Stych, Dépannages |
+| `m-moteur-cale-direction` | consolidation | questions | REMC (compétence 4) ; notices constructeur (direction assistée, servofrein) |
 | `m-remorquage` | consolidation | questions | Notice Renault (exemple, consulter celle du véhicule concerné), https://www.user-manual.renault.com/fr/d%C3%A9pannage/remorquage-depannage-13 |
 
 ## s-retenir : Attacher chaque occupant et choisir le siège enfant
@@ -1234,7 +1228,7 @@ Recherche Anki : `objectif::s-retenir`
 
 Lire les masses et appliquer les seuils à une situation.
 
-17 notes / 22 cartes.
+17 notes / 21 cartes.
 
 Recherche Anki : `objectif::s-charger`
 
@@ -1291,12 +1285,12 @@ Recherche Anki : `objectif::a-secourir`
 | `a-objet-plaie` | socle | questions | https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-traumatisme-respiration` | socle | questions | Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `aff-a-dae-formation` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q6) ; décret n° 2007-705 ; Croix-Rouge française |
-| `aff-a-dae-sans-arret-cardiaque` | consolidation | affirmations | Sécurité civile, PSC juillet 2026, Défibrillation, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `aff-a-pls-avec-casque` | socle | affirmations | Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Sécurité routière, secours au motard |
 | `aff-a-respire-mais-inconsciente` | consolidation | affirmations | Sécurité civile, PSC juillet 2026, Perte de connaissance, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `aff-a-compressions-seules` | socle | affirmations | Croix-Rouge française, Arrêt cardiaque |
 | `aff-a-donner-a-boire` | socle | affirmations | Sécurité civile, PSC juillet 2026, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `aff-a-contact-vehicules-accidentes` | consolidation | affirmations | Ornikar, Protéger la zone ; Croix-Rouge française |
+| `aff-a-fumer-sur-les-lieux` | consolidation | affirmations | Sécurité civile, PSC juillet 2026, Protection ; Croix-Rouge française |
 | `aff-a-triangle-autoroute` | socle | affirmations | Code de la route, art. R416-19 ; arrêté du 30 septembre 2008 ; Ornikar, Protéger la zone |
 | `aff-a-18-secours-personne` | consolidation | affirmations | service-public.fr, Numéros d'urgence ; Croix-Rouge française |
 | `aff-a-degagement-urgence` | consolidation | affirmations | Sécurité civile, PSC juillet 2026, Dégagement d’urgence |
@@ -1324,7 +1318,7 @@ Recherche Anki : `objectif::a-accident`
 
 Apprendre les conséquences structurantes avant les détails de procédure.
 
-22 notes / 31 cartes.
+23 notes / 32 cartes.
 
 Recherche Anki : `objectif::d-permis`
 
@@ -1337,6 +1331,7 @@ Recherche Anki : `objectif::d-permis`
 | `d-probatoire-3-points` | socle | faits | Code de la route, art. L223-6, R223-4, R223-8, L223-5 |
 | `d-invalidation-delai` | consolidation | faits | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 |
 | `d-recuperation-points` | socle | faits | Code de la route, art. L223-6 ; service-public.fr F1685 |
+| `d-points-dix-ans` | consolidation | faits | Code de la route, art. L223-6 |
 | `d-stage-points` | socle | faits | Code de la route, art. L223-6 et R223-8 ; service-public.fr F14208 |
 | `d-grand-exces` | socle | faits | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F19460 |
 | `d-alcool-contravention` | socle | faits | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2881 |
@@ -1357,12 +1352,13 @@ Recherche Anki : `objectif::d-permis`
 
 Appliquer les obligations à une situation concrète.
 
-15 notes / 20 cartes.
+17 notes / 21 cartes.
 
 Recherche Anki : `objectif::d-vehicule`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
+| `d-permis-validite-15-ans` | consolidation | faits | Code de la route, art. R221-1-1 |
 | `d-documents-bord` | socle | faits | Code de la route, art. R233-1 ; décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362 |
 | `d-carte-grise-delais` | consolidation | faits | Code de la route, art. R322-4, R322-5, R322-7 ; service-public.fr F21031 |
 | `d-controle-technique` | socle | faits | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2878 |
@@ -1374,6 +1370,7 @@ Recherche Anki : `objectif::d-vehicule`
 | `d-vente-vehicule` | consolidation | questions | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F1707 |
 | `d-ct-critique` | socle | questions | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2878 |
 | `aff-d-vignette-assurance` | socle | affirmations | Décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362 |
+| `aff-d-plaque-sale` | consolidation | affirmations | Code de la route, art. R317-8 |
 | `aff-d-ct-defaillance-majeure` | socle | affirmations | service-public.fr F2878 ; arrêté du 18 juin 1991 |
 | `aff-d-carte-grise-delai` | consolidation | affirmations | Code de la route, art. R322-4, R322-5 et R322-7 ; service-public.fr F21031 |
 | `aff-d-assurance-tiers` | socle | affirmations | Code des assurances, art. L211-1 ; service-public.fr F2655 |
@@ -1409,7 +1406,7 @@ Recherche Anki : `objectif::e-ecoconduite`
 
 Lire les conditions locales et ne pas confondre électrique et sans impact.
 
-18 notes / 20 cartes.
+19 notes / 21 cartes.
 
 Recherche Anki : `objectif::e-pollution`
 
@@ -1429,6 +1426,7 @@ Recherche Anki : `objectif::e-pollution`
 | `e-entretien-dechets` | socle | questions | ADEME, Déchets automobiles |
 | `e-ve-recharge` | socle | questions | service-public.fr ; Code de la route, art. R417-10 |
 | `aff-e-electrique-zero` | socle | affirmations | ADEME ; En Voiture Simone, Achat éco-responsable |
+| `aff-e-monoxyde-garage` | consolidation | affirmations | Santé publique France, intoxications au monoxyde de carbone |
 | `aff-e-zfe-vignette` | consolidation | affirmations | Code de la route, art. R411-19-1 et R318-2 ; service-public.fr F33371 |
 | `aff-e-diesel-nox` | consolidation | affirmations | IFPEN, étude de véhicules Euro 6d-TEMP (2020), pas un classement de tout le parc 2026, https://www.ifpenergiesnouvelles.fr/article/emissions-des-voitures-essence-et-diesel-recentes-publication-letude-realisee-ifpen |
 | `aff-e-ve-silence` | socle | affirmations | Règlement (UE) 540/2014 (AVAS) ; ADEME, Véhicules électriques |
@@ -1438,7 +1436,7 @@ Recherche Anki : `objectif::e-pollution`
 
 Couleurs, cartouches, confirmation et affectation de voies servent à choisir assez tôt ; une erreur de direction ne justifie pas une manœuvre dangereuse.
 
-39 notes / 39 cartes.
+41 notes / 41 cartes.
 
 Recherche Anki : `objectif::l-orientation`
 
@@ -1446,6 +1444,7 @@ Recherche Anki : `objectif::l-orientation`
 |---|---|---|---|
 | `c12` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `c13a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
+| `c13b` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `c13c` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `c24a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `c24b` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
@@ -1457,6 +1456,7 @@ Recherche Anki : `objectif::l-orientation`
 | `c28` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `e42` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `e43` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
+| `m10b` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `j1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `j3` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `j4` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
@@ -1508,7 +1508,7 @@ Recherche Anki : `objectif::c-vision`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `c-vue-90-pourcent` | consolidation | faits | Arrêté du 28 mars 2022 ; En Voiture Simone, Acuité visuelle ; Code de la route, art. R221-1-1 |
+| `c-acuite-5-10` | consolidation | faits | Arrêté du 28 mars 2022 ; En Voiture Simone, Acuité visuelle ; Code de la route, art. R221-1-1 |
 | `aff-c-vision-peripherique` | socle | affirmations | Code en Poche, Le champ visuel ; securite-routiere.gouv.fr, Dépliant La vue |
 | `aff-c-nuit-distances` | consolidation | affirmations | securite-routiere.gouv.fr, Conduire la nuit ; Dépliant La vue |
 | `aff-c-regard-obstacle` | consolidation | affirmations | REMC ; Codes Rousseau, L'exploration visuelle |
@@ -1551,7 +1551,7 @@ Recherche Anki : `objectif::d-apprentissage`
 
 Comprendre qui est responsable, quels points sont retirés et la différence entre maxima pénaux, amendes et mesures administratives ; les cas complètent le fonctionnement du capital.
 
-18 notes / 29 cartes.
+19 notes / 30 cartes.
 
 Recherche Anki : `objectif::d-sanctions`
 
@@ -1574,6 +1574,7 @@ Recherche Anki : `objectif::d-sanctions`
 | `d-vitesse-40-49` | consolidation | questions | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F19460 |
 | `aff-d-probatoire-alcool` | consolidation | affirmations | Code de la route, art. R234-1 et L223-5 |
 | `aff-d-clignotant-points` | consolidation | affirmations | Code de la route, art. R412-10 |
+| `aff-d-video-verbalisation` | consolidation | affirmations | Code de la route, art. L121-3 et R130-11 ; securite-routiere.gouv.fr, Contrôle automatisé |
 | `aff-d-sans-assurance-points` | consolidation | affirmations | Code de la route, art. L324-2 ; Code des assurances, art. L211-1 |
 
 ## e-mobilite : Choisir un mode de déplacement et une énergie adaptés

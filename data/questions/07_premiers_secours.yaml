@@ -5,7 +5,9 @@
   question: Je suis le premier à arriver sur un accident, sur une route à double sens. Où et comment je m'arrête ?
   reponse: Après le lieu de l’accident (pour ne pas le masquer), en sécurité sur l’accotement ; feux de détresse allumés et
     gilet enfilé avant de sortir.
-  explication: "Protéger, c'est éviter le suraccident. Chaque occupant qui sort met un gilet. Placer le triangle à 30 m ou plus, avant un virage ou un sommet de côte si nécessaire, seulement si sa pose n'expose pas au danger. Tout le monde se met hors de la chaussée, derrière la glissière sur voie rapide."
+  explication: Protéger, c’est éviter le suraccident. Je mets le gilet avant de sortir (obligatoire pour le conducteur,
+    recommandé pour les passagers). Triangle à 30 m ou plus, avant un virage ou un sommet de côte si nécessaire, seulement
+    si sa pose n’expose pas au danger. Tout le monde se met hors de la chaussée, derrière la glissière sur voie rapide.
   theme: A
   sous_theme: proteger
   source: "Code de la route, art. R416-19 ; Ornikar, Protéger la zone ; Croix-Rouge française"

@@ -1,8 +1,0 @@
-{
-  "Id": "r-chantier-approche",
-  "Image": "<img src=\"scene.png\" alt=\"Un panneau temporaire de travaux précède un balisage par cônes sur le bord droit de la chaussée.\">",
-  "Question": "Les cônes sont encore devant moi. Quand commencer à adapter mon allure, et quel indice me le signale ?",
-  "Reponse": "Dès le panneau de travaux : je ralentis progressivement, avant d’arriver au balisage.",
-  "Explication": "Le panneau annonce un danger à venir. Anticiper laisse le temps de suivre les indications et d’aborder la zone à une allure adaptée. Le dessin ne permet pas de déduire une distance ni une vitesse chiffrée.",
-  "Source": "Sécurité routière, Conduire aux abords des chantiers : <a href=\"https://www.securite-routiere.gouv.fr/sites/default/files/2019-01/198x210-chantier_cle181d87.pdf\">dépliant</a>. Illustration générée, prototype non intégré au deck."
-}

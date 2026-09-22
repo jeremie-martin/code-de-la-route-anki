@@ -164,8 +164,8 @@
 - id: aff-c-doses-maison
   affirmation: Le plus souvent, les doses d'alcool servies à la maison sont plus importantes que celles servies dans un bar.
   verdict: vrai
-  pourquoi: 'Réponse attendue à l''épreuve : « à la maison ». Au bar, le verre standard est dosé (≈ 10 g d''alcool
-    pur) ; chez soi, on sert sans mesure : un verre maison peut en valoir deux ou trois.'
+  pourquoi: 'Au bar, le verre standard est dosé (environ 10 g d’alcool pur) ; chez soi, on sert sans mesure : un verre
+    maison peut en valoir deux ou trois.'
   theme: C
   sous_theme: deficiences
   source: "Sécurité routière, Exemples de nouvelles questions (Q17) ; securite-routiere.gouv.fr, L'alcool et la conduite"

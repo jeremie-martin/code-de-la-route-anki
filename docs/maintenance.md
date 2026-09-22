@@ -17,10 +17,10 @@ data/                      bibliothèque de connaissances (YAML, une liste de no
   _meta/sign_exclusions.yaml signaux de l’inventaire sans carte : codes (inventaire), raison, couverts_par (ids)
   _meta/source_checks.yaml registre daté des consultations de sources (portée écrite, notes concernées)
 build/                     build.py (chargement, validation, lint, ordre, paquet) ; models.py (types de notes,
-                           gabarits) ; cards.css (style commun) ; learning.py (objectifs, étapes, rapports) ; diagrams.py + gen_images.py
-                           (images générées) ; priority.py (solveur) ; import_signs.py ; commons_fetch.py +
-                           commons_index.py (médias Wikimedia) ; verify.py, preview.py, render_check.py, dedup.py,
-                           qa_sheet.py, yamlfix.py
+                           gabarits) ; cards.css ; learning.py (objectifs, étapes, rapports) ; diagrams.py (scènes
+                           de scénarios) ; gen_images.py (marquages, feux, gestes, scènes de questions) ; priority.py
+                           (solveur) ; import_signs.py ; commons_fetch.py + commons_index.py (médias Wikimedia) ;
+                           verify.py, preview.py, render_check.py, dedup.py, qa_sheet.py, yamlfix.py
 assets/                    index Commons et icônes ISO des voyants ; cache des téléchargements (ignoré par git)
 out/                       paquet, médias, rapports (STATS, PROGRAMME, COUVERTURE, REPERES, SELECTION-SIGNAUX,
                            VERIFICATION, RENDU, ATTRIBUTIONS)
@@ -38,7 +38,7 @@ Bootstrap : `uv venv .venv && uv pip install --python .venv/bin/python -r requir
 `python -m build.build` télécharge ~300 fichiers Commons à une requête par seconde (quelques minutes, réseau
 nécessaire), puis tout est en cache. Le texte du Code consolidé, ignoré par git, se produit avec
 `pdftotext -layout docs/research/sources/code_de_la_route_consolide_2026-09-10.pdf docs/research/sources/cdr.txt`
-(poppler) ; un article s’y cherche par `rg -n "R. 415-5" docs/research/sources/cdr.txt`.
+(poppler) ; un article s’y cherche par son en-tête, par exemple `grep -n "^R. 415-5 " docs/research/sources/cdr.txt`.
 
 ## Format des notes
 
@@ -92,7 +92,7 @@ taire un avertissement). Les valeurs contenant « : » se mettent entre guilleme
 # feu_orange_clignotant…, private), branches [E, W, S] pour un T, agent bras_leve|bras_tendus_NS|bras_tendus_EW ;
 # check {pair: [a, b, avant|apres|independant]} ou {order: [...]} est recalculé par build/priority.py.
 # roundabout : vehicles [{pos: N|E|S|W|inside, angle, colour, me, goes}] ; road : lanes, axis, vehicles
-# [{lane, y, colour, me, dir}], extras (sign, retrecissement, passage_pieton, bau, label…), caption. Voir diagrams.py.
+# [{lane, y, colour, me, dir, goes, occludes}], extras (sign, retrecissement, passage_pieton, bau, label…), caption.
 - id: scn-pd-droite-tourne-gauche
   kind: intersection
   spec:
@@ -121,6 +121,10 @@ taire un avertissement). Les valeurs contenant « : » se mettent entre guilleme
   source: ISO 2575 ; notice constructeur
 ```
 
+Le `type` d’une reconnaissance règle aussi la taille de l’image sur la carte : panneaux, panonceaux, balises,
+feux, voyants et pictogrammes s’affichent à la taille d’un signal ; marquages, gestes et vues en plan prennent
+toute la largeur.
+
 Pour montrer un autre signal dans le feedback, ajouter `comparaisons` à la note :
 
 ```yaml
@@ -129,42 +133,36 @@ comparaisons:
   legende: 'Un piéton sur des bandes : passage pour piétons annoncé.'
 ```
 
-`ref` réutilise le média d’une reconnaissance ; `legende` explique le détail visible et son sens.
-Le build valide la référence et incorpore l’image au verso, près de l’explication (dans « Piège » pour une
-reconnaissance). Aucun nouveau téléchargement ni carte supplémentaire. L’image principale reste seule au
-recto ; une comparaison au verso n’exige pas d’avoir étudié l’autre signal. Pour tester la distinction,
-utiliser une note `confusions`. Éviter les exemples supplémentaires qui ne changent pas la compréhension.
-Les scènes ponctuelles de questions utilisent `image.gen` dans `build/gen_images.py` (exemple :
-`chantier_approche`, `chantier_rabattement`, `corridor_securite`, `cycliste_tourne_droite`). Réutiliser la palette et les véhicules de `diagrams.py`, ainsi que les symboles
-existants. Déclarer les panneaux Commons dans `image.params` avec `kind: sign` et `file` pour leur
-attribution automatique. Le SVG généré est rastérisé pour Anki ; les prototypes sont des archives,
-pas une seconde source à maintenir. Ajouter un helper partagé lorsqu’un dessin est effectivement réutilisé.
+`ref` réutilise le média d’une reconnaissance ; `legende` explique le détail visible et son sens. Le build
+valide la référence et incorpore l’image au verso, près de l’explication. Pour tester la distinction, utiliser une
+note `confusions`. Pour une explication dessinée au **verso d’une question**, utiliser `illustration`
+(`gen`, `params`, `width`, `legende` obligatoire) : le média est ajouté à l’explication, sans nouveau champ ni
+nouvelle carte. Choisir le verso quand le dessin révélerait la réponse au recto.
 
-Pour une explication dessinée au **verso d’une question**, utiliser `illustration` :
+## Images générées
 
-```yaml
-illustration:
-  gen: camion_roues
-  width: 960
-  legende: 'Ce que le schéma explique et les limites utiles à sa lecture.'
-```
+`build/diagrams.py` dessine les scénarios (intersections, giratoires, bandes de route) ; `build/gen_images.py`
+dessine les marquages, feux, gestes de l’agent et les scènes ponctuelles des questions (`image.gen`). Tout
+changement de l’un ou l’autre invalide les images au build suivant. Conventions communes :
 
-Le générateur, les `params` éventuels et la largeur suivent le principe de `image` ; une légende est requise.
-Le build ajoute le média à l’explication existante, sans nouveau champ Anki ni nouvelle carte. Il contrôle
-le générateur et réserve cet usage aux questions. Les panneaux éventuels dans `illustration.params`
-sont attribués comme ceux de `image.params`. Choisir le verso quand le dessin révélerait la réponse au recto.
+- Même palette, mêmes silhouettes de véhicules ; « moi » est la voiture bleue cerclée de jaune, étiquetée MOI ;
+  en scénario, toujours l’approche S (en bas, cap au nord). Les flèches montrent l’intention, jamais une
+  trajectoire de réponse. Un tramway a ses rails, une sirène en service rayonne, un feu jaune clignotant aussi.
+- Les scènes sont dessinées sur un plan (600 × 600 pour les carrefours, 600 × 480 pour les routes) dont seule la
+  fenêtre utile est exportée (`SVG.view`) : les véhicules, panneaux et flèches restent lisibles sur un
+  téléphone. Une légende (`caption`) s’ajoute sous la fenêtre.
+- Échelle : une voie vaut environ deux largeurs de voiture ; les scènes ponctuelles des questions reprennent
+  cette proportion (`scale` des sprites). Les distances ne sont pas à l’échelle et les schémas ne sont pas des
+  plans d’implantation.
+- Déclarer les panneaux Commons d’une scène dans `params` avec `kind: sign` et `file` : ils sont attribués
+  automatiquement dans `out/ATTRIBUTIONS.md`.
 
-Pour relire une scène, suivre les coordonnées et les transformations jusque dans les symboles partagés :
-gabarit relatif des usagers, place dans la voie, sens de circulation, branches et espace disponible avant
-une manœuvre. Distinguer les panneaux montrés de face du plan routier. Inspecter ensuite la carte à taille
-réelle ; une absence de débordement ne prouve ni la lisibilité ni la justesse de la situation. Les raccourcis
-hors échelle doivent préserver les relations qui font décider. Conserver les éléments qui fonctionnent.
+Pour relire une scène, suivre les coordonnées jusque dans les symboles partagés : gabarit des usagers, place
+dans la voie, sens de circulation, branches et espace disponible avant une manœuvre ; distinguer les panneaux
+montrés de face du plan routier. Puis regarder la carte rendue à taille réelle (`build.preview`) : l’absence de
+débordement ne prouve ni la lisibilité ni la justesse de la situation.
 
-Le thème **Signal** est dans `build/cards.css`, consolidé depuis le
-[handoff approuvé](signal-theme-handoff/README.md). Ce dossier reste une référence visuelle historique,
-pas une source de contenu à réimporter. Les tests comparent le rendu au CSS exporté et vérifient séparément
-`.nightMode` et `.night_mode`, sur la carte ou un ancêtre. Reconstruire le paquet après toute modification.
-Le verso prolonge le recto : mêmes images, prompts et typographie ; le cloze se révèle en place.
+## Sous-thèmes, sous-decks, étiquettes
 
 Sous-thèmes par thème (l’ordre est aussi celui de `SUBTHEME_ORDER` dans `build/build.py` ; un sous-thème
 inconnu est signalé par un avertissement et trié en dernier) :
@@ -193,14 +191,12 @@ côté un signal retenu sans média ou une exclusion sans `raison`.
 Il imprime ensuite des **avertissements à relire** : trous susceptibles de révéler une carte sœur,
 réponses identiques, indices de style ou déséquilibre des verdicts, sous-thème inconnu. Ces signaux invitent
 à relire ; ils ne justifient ni un quota de vrai/faux ni une modification artificielle du texte. `multi_ok`
-et `dedup_ok` documentent les exceptions utiles. La longueur des réponses se juge sur la carte rendue,
-sans seuil automatique ; les anciens champs `long_ok` sont sans effet.
+et `dedup_ok` documentent les exceptions utiles. La longueur des réponses se juge sur la carte rendue.
 
-`python -m unittest discover -s tests` couvre l’ordre, les objectifs, les gabarits, le solveur et le
-rendu des clozes indépendantes. Avec `requirements-qa.txt`, les tests contrôlent aussi la conformité au thème
-Signal. `python -m build.verify` importe le paquet dans une collection temporaire (contenu, médias, ordre,
-préréglage, identifiants de schéma) puis le réimporte. Pour vérifier une mise à jour, conserver l’ancien
-paquet avant le build et le passer à `--previous` : identités et historique témoin sont alors contrôlés.
+`python -m unittest discover -s tests` couvre l’ordre, les objectifs, les gabarits, le solveur, le rendu des
+clozes indépendantes et le vérificateur de rendu. `python -m build.verify` importe le paquet dans une
+collection temporaire (contenu, médias, ordre, préréglage, identifiants de schéma) puis le réimporte ; avec
+`--previous ancien.apkg`, il contrôle aussi la mise à jour d’un paquet déjà étudié.
 
 ## Ordre d’introduction
 
@@ -223,8 +219,8 @@ python -m build.verify [--previous ancien.apkg] # import, réimport ; mise à jo
 python -m unittest discover -s tests
 python build/import_signs.py             # régénère data/reconnaissance/* (sauf voyants.yaml)
 python build/yamlfix.py data/*/*.yaml    # quote les valeurs contenant ': '
-python -m build.preview --ids id1,id2 [--night] [--width 430] [--out dossier]   # captures (Chromium via requirements-qa.txt ;
-                                         # nécessite un build préalable ; --out est VIDÉ avant les captures)
+python -m build.preview --ids id1,id2 [--night] [--width 390] [--height 700] [--out dossier]   # captures (Chrome ;
+                                         # requirements-qa.txt ; nécessite un build préalable ; --out est VIDÉ avant)
 python -m build.render_check             # toutes les faces, quatre tailles d'écran (~10 min, requirements-qa.txt)
 python -m build.dedup [--threshold 0.62] # paires de notes textuellement proches (décision éditoriale, rien n'est modifié)
 python build/qa_sheet.py                 # planches image + code + nom par fichier de reconnaissance -> out/qa/
@@ -234,53 +230,37 @@ python build/qa_sheet.py                 # planches image + code + nom par fichi
 
 1. Définir la connaissance ou la décision visée et vérifier la règle **et ses conditions** dans une source
    primaire actuelle (voir [sources](sources.md)). Inscrire la consultation dans `data/_meta/source_checks.yaml` :
-   `id`, `consulte_le` (date ISO), `url` (l’article ou la section sur Légifrance ou la fiche officielle, même si
-   le texte a été lu dans `cdr.txt`), `portee` (ce qui a été vérifié, en une phrase) et `notes` concernées.
-2. Écrire ou corriger la note dans `data/` (formats ci-dessus). Rechercher aussi la règle dans les autres
-   cartes et leurs explications : une bonne réponse au recto ne compense pas une généralisation fausse au verso.
-   Une procédure dépendant du véhicule doit préciser son contexte ; vérifier aussi les exemples visuels
-   et les notes de recherche pour ne pas y laisser une ancienne généralisation.
-   Pour un voyant, préciser le contexte utile (contact, moteur tournant, roulage) ; une notice constructeur
-   documente un véhicule, pas une procédure universelle. Pour une aide à la conduite, distinguer sa fonction,
-   ses limites et l’action du conducteur ; une perturbation peut entraîner une mauvaise réaction, pas seulement
-   une désactivation.
-   Pour une reconnaissance : corriger
-   `signs_inventory.yaml` ou `_meta/sign_overrides.yaml`, puis `python build/import_signs.py` ; retirer un
-   signal = l’ajouter à `_meta/sign_exclusions.yaml` (`codes` de l’inventaire, `raison`, `couverts_par` = ids des
-   cartes qui couvrent la règle), puis régénérer. `voyants.yaml` s’édite directement.
+   `id`, `consulte_le` (date ISO), `url`, `portee` (ce qui a été vérifié, en une phrase) et `notes` concernées.
+2. Écrire ou corriger la note dans `data/`. Rechercher aussi la règle dans les autres cartes et leurs
+   explications : une bonne réponse au recto ne compense pas une généralisation fausse au verso. Une procédure
+   qui dépend du véhicule (voyant, aide à la conduite, remorquage) précise son contexte ; une notice constructeur
+   documente un véhicule, pas une règle universelle. Pour une reconnaissance : corriger `signs_inventory.yaml`
+   ou `_meta/sign_overrides.yaml`, puis `python build/import_signs.py` ; retirer un signal = l’ajouter à
+   `_meta/sign_exclusions.yaml` (`codes`, `raison`, `couverts_par`), puis régénérer. `voyants.yaml` s’édite directement.
 3. Relier la note à son objectif dans `_meta/objectives.yaml` (`notes` = socle, `consolidation` = suite).
    Retirer une note = la supprimer du fichier et de tous les registres (`objectives`, `source_checks`,
    `couverts_par`, `dedup_ok`) ; le build nomme ce qui a été oublié.
-4. Pour un scénario d’intersection, déclarer `check` : le solveur (`build/priority.py`) doit être d’accord
-   (deux scénarios sans `check` sont acceptés mais non vérifiés). `private: true` modélise une sortie de
-   parking ou un accès relevant de R415-9, pas toute voie de propriété privée. Giratoires et scénarios de route
-   sont relus à la main. Modifier `diagrams.py` ou `gen_images.py` invalide les images au build suivant.
+4. Pour un scénario d’intersection, déclarer `check` : le solveur (`build/priority.py`) doit être d’accord.
+   `private: true` modélise une sortie de parking ou un accès relevant de R415-9. Giratoires et scénarios de
+   route sont relus à la main.
 5. `python -m build.build --check`, lire les avertissements, puis `python -m build.build`, `python -m build.verify`
-   et les tests. Regarder les cartes modifiées avec `build.preview` (une carte cloze donne `_c0`, `_c1`…). Pour
-   une révision large, `python -m build.render_check` contrôle toutes les faces et écrit `out/RENDU.md` avec
-   l’empreinte du paquet contrôlé : le lancer en dernier, après le build définitif. Un identifiant de capture
-   absent du paquet fait échouer le contrôle. `SAMPLES` choisit les captures, le volet des sources et le complément
-   sur grand écran ; toutes les cartes sont mesurées sur téléphone, avec comparaison de la géométrie et de la
-   typographie du recto avant/après révélation. Garder des formes représentatives et les cas
-   modifiés, en remplaçant les anciens échantillons. Les mesures ne lisent pas le sens des images ni les petits
-   textes incorporés : les inspecter.
-6. Ajouter une ligne à [CHANGELOG](../CHANGELOG.md) et mettre à jour les effectifs du README.
+   et les tests. Regarder les cartes modifiées avec `build.preview` (une carte cloze donne `_c0`, `_c1`…), en
+   clair et en sombre. Pour une révision large, `python -m build.render_check` contrôle toutes les faces et
+   écrit `out/RENDU.md` avec l’empreinte du paquet : le lancer en dernier, après le build définitif. `SAMPLES`
+   (dans `render_check.py`) choisit les captures ; un identifiant absent du paquet fait échouer le contrôle.
+   Les mesures ne lisent pas le sens des images : les inspecter.
+6. Ajouter une entrée au [CHANGELOG](../CHANGELOG.md) et mettre à jour les effectifs du README.
 
 ## Identifiants et réimport
 
 Les identifiants des types de notes et des decks sont fixes (`build/models.py`), ceux des champs et modèles
-de cartes sont conservés dans `build/schema_ids.json` (issus du paquet `67618d8`). Ne pas les régénérer :
-Anki les utilise pour reconnaître une mise à jour de schéma. Les GUID dérivent de l’`id` de la note : réimporter une nouvelle version de la même édition met les notes à jour sans doublon et
-conserve l’historique de révision. Il n’y a pas de migration entre éditions : renommer un `id`, renuméroter un
-cloze ou changer la structure des champs crée de nouvelles cartes à l’import, à faire en connaissance de cause.
+de cartes sont conservés dans `build/schema_ids.json`. Ne pas les régénérer : Anki les utilise pour reconnaître
+une mise à jour de schéma. Les GUID dérivent de l’`id` de la note : réimporter une nouvelle version de la même
+édition met les notes à jour sans doublon et conserve l’historique de révision. Renommer un `id`, renuméroter un
+cloze ou changer la structure des champs crée de nouvelles cartes à l’import.
 
-Le paquet est exporté sans progression : cartes nouvelles, aucun historique ni état mémoire FSRS.
-Le `due` d’une carte nouvelle est sa position dans le programme, pas son identité ; les identifiants numériques
-de notes/cartes peuvent différer entre builds. Ne pas réordonner les cartes déjà étudiées. Le format de paquet
-`legacy=True` sert à la compatibilité d’import, sans imposer l’ancien planificateur.
-FSRS est un choix global de l’utilisateur ; le deck fournit un préréglage compatible, sans paramètres appris
-sur l’historique d’une autre personne. Importer ce préréglage au départ, puis le laisser décoché aux mises à jour.
-`build.verify` exerce aussi FSRS dans une collection temporaire et vérifie que cette procédure conserve les
-options personnelles et les états mémoire. Pour une livraison, conserver le paquet précédent et lancer
-`python -m build.verify --previous ancien.apkg` ; ce témoin ne couvre pas toutes les personnalisations possibles.
-Une note retirée du dépôt reste chez les utilisateurs précédents : documenter les suppressions dans le changelog.
+Le paquet est exporté sans progression : cartes nouvelles, aucun historique ni état mémoire FSRS. Le `due`
+d’une carte nouvelle est sa position dans le programme, pas son identité. Le préréglage embarqué (collecte par
+position croissante, cartes sœurs enfouies, rétention 90 %) s’importe au premier import puis se laisse décoché
+aux mises à jour pour conserver les réglages personnels ; `build.verify` exerce ce parcours. Une note retirée du
+dépôt reste chez les utilisateurs précédents : documenter les suppressions dans le changelog.

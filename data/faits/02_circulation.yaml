@@ -91,10 +91,10 @@
   - Sauf délai local plus court, laisser un véhicule au même endroit plus de {{c2::7 jours consécutifs}} constitue un stationnement
     abusif.
 - id: l-stationnement-5m-passage
-  texte: Pour une voiture, arrêt et stationnement sont interdits sur un passage piéton et dans les {{c1::5 m}} en amont (emplacements
-    matérialisés tolérés jusqu'à fin 2026).
-  explication: Les places matérialisées qui existaient encore dans ces 5 m doivent avoir été supprimées par le gestionnaire
-    de la voie au 31 décembre 2026 (loi LOM) ; ensuite, ces 5 m sont libres partout.
+  texte: Pour une voiture, arrêt et stationnement sont interdits sur un passage piéton et dans les {{c1::5 m}} en
+    amont, en dehors des emplacements matérialisés.
+  explication: La loi impose au gestionnaire de la voie d’avoir supprimé les emplacements matérialisés dans ces 5
+    m au 31 décembre 2026 ; tant qu’une place marquée existe, elle reste utilisable.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-11 ; Code de la voirie routière, art. L118-5-1
@@ -109,9 +109,9 @@
     h 30 et 21 h}}.'
   comparaisons:
   - ref: b6a2
-    legende: Stationnement interdit du 1er au 15.
+    legende: Placé du côté interdit du 1er au 15 (numéros pairs).
   - ref: b6a3
-    legende: Stationnement interdit du 16 à la fin du mois.
+    legende: Placé du côté interdit du 16 à la fin du mois (numéros impairs).
 - id: l-stationnement-cote
   explication: 'Stationner à contresens (côté gauche d''une rue à double sens) est un stationnement gênant (35 €) et dangereux
     la nuit (feux non visibles). La nuit sur chaussée non éclairée : feux de position allumés.'
@@ -197,7 +197,7 @@
   sous_theme: signalisation
   source: IISR 2e partie, art. 28 et 34
   rappels:
-  - 'Passage à niveau hors agglomération annoncé à 150 m : les balises portent {{c1::3, puis 2, puis 1}} bandes rouges, une par tranche de 50 m.'
+  - 'Passage à niveau hors agglomération annoncé à 150 m : les balises portent {{c1::3, puis 2, puis 1}} bandes rouges.'
   comparaisons:
   - ref: j10
     legende: Les bandes rouges décomptent la distance au passage à niveau.

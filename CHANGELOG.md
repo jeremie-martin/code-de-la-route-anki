@@ -1,213 +1,60 @@
-# Relecture manuelle des schémas récents (22 septembre 2026)
-
-- Relecture du code des onze images de dix notes, de leurs symboles partagés et de leur relation aux
-  questions. Proportions corrigées pour les vélos et la dépanneuse chargée ; BAU ajustée pour conserver
-  des marges autour du véhicule. Espacement des cônes et lampes FLR corrigé après inspection du dessin officiel.
-- Entrecroisement redessiné avec des bretelles séparées et une voie commune clairement identifiable.
-  Camion placé en amont du carrefour, avec espace pour préparer le virage et rue réceptrice à double sens.
-  Au verso, les trajectoires restent visibles à travers le camion. Labels agrandis ; légende du masque
-  de visibilité déplacée hors des hachures. Les deux vues C107 sont conservées.
-- Paquet reconstruit : toujours 1 051 notes, 1 125 cartes et 370 médias. Questions, réponses, gabarits et
-  ordre d’introduction inchangés. Aucun ajout de carte ni nouvelle infrastructure de dessin.
-- Inspection manuelle des cartes à 390 px en clair et 320 px en sombre. À la demande de l’utilisateur,
-  aucune suite de contrôles automatisés relancée : le rapport de rendu décrit cette relecture ; le dernier
-  rapport d’import reste explicitement rattaché au paquet précédent. Aucun essai natif mobile, plan de
-  giration homologué ou nouvelle validation exhaustive des autres images du deck.
-
-# Cinq situations spatiales (22 septembre 2026)
-
-- Six notes améliorées : sortie de giratoire, entrecroisement, deux configurations sous C107,
-  camion tournant à droite et passage piéton masqué. Les questions exploitent les dessins ; elles
-  conservent les faits qu’une image fixe ne peut établir, comme une intention ou un clignotement.
-- Deux vues C107 comparables font distinguer chaussée unique et terre-plein central. La scène du
-  passage piéton montre une zone masquée sans inventer un piéton ; les sanctions hors sujet sont retirées.
-- Le camion reçoit aussi un schéma explicatif au verso. Petit support `illustration` dans le champ
-  d’explication existant, avec légende, attribution et vérification du rendu natif ; aucun nouveau type
-  de note. Palette, véhicules et symboles partagés réutilisés.
-- Sources primaires consultées et portée consignée ; carte des candidats et maintenance actualisées.
-  Le schéma du camion est un modèle géométrique de principe, pas une enveloppe de giration calculée
-  pour le carrefour. Les schémas de circulation ne sont pas des plans d’implantation réglementaires.
-- 1 051 notes, 1 125 cartes, 370 médias. Comparaison avec le paquet précédent : seules les six notes
-  prévues changent ; quatre médias ajoutés et trois remplacés. Identités et ordre d’introduction identiques.
-- 26 tests réussis ; import neuf, réimport, mise à jour et contrôles FSRS réussis. Inspection des six
-  cartes à 390 px en clair et 320 px en sombre ; 9 042 faces/configurations sans échec (`out/RENDU.md`).
-  Aucun essai natif mobile ni mesure d’efficacité pédagogique.
-
-# Trois scènes de décision (22 septembre 2026)
-
-- `r-chantier-fleche-lumineuse` : lire le côté du rabattement et préparer la manœuvre, avec un détail
-  agrandi du signal. Confusion KR42/FLR corrigée en KR43 après consultation de l’IISR VC20250904 et
-  de l’arrêté du 4 septembre 2025 ; notes de recherche harmonisées.
-- `u-corridor-securite` : ralentir et s’écarter dans sa voie lorsque la voie voisine est occupée ;
-  `u-cycliste-tourner-droite` : céder au cycliste dont on va traverser la piste. Cas vérifiés dans le Code.
-- Palette et symboles existants réutilisés ; seul le fond de chaussée commun aux deux scènes d’autoroute
-  est partagé. Aucun nouveau type de note. Carte des candidats mise à jour avec les décisions prises.
-- Toujours 1 051 notes et 1 125 cartes, 366 médias. Comparaison des paquets : seules ces trois cartes
-  changent, trois images ajoutées, anciens médias et positions d’introduction identiques.
-- 24 tests réussis ; import, réimport, mise à jour et contrôles FSRS réussis. Inspection des trois cartes
-  à 390 px en clair et 320 px en sombre ; 9 042 faces/configurations sans échec (`out/RENDU.md`).
-  Schémas hors échelle, sans validation d’implantation routière, essai natif mobile ni mesure d’efficacité.
-
-# Scène d’approche d’un chantier (22 septembre 2026)
-
-- Intégration du prototype SVG approuvé à `r-chantier-approche`. Question centrée sur l’anticipation
-  dès le panneau, avant le balisage ; conseil vérifié dans le dépliant officiel Bison Futé.
-- Palette et voiture existantes réutilisées, symbole du cône partagé sans modifier son rendu antérieur.
-  Panneau AK5 issu de Commons, attribution conservée. Aucun moteur de scènes supplémentaire.
-- Une seule carte modifiée, un média ajouté (363 au total), tous les anciens médias identiques.
-  Toujours 1 051 notes et 1 125 cartes ; identités et positions d’introduction conservées.
-- 24 tests réussis ; import, réimport, mise à jour depuis le paquet précédent et contrôles FSRS réussis.
-  9 042 faces/configurations contrôlées sans échec ; inspection visuelle à 390 px en clair et 320 px en sombre.
-  Aucun essai natif mobile ni mesure d’efficacité pédagogique. Le dessin est un schéma hors échelle,
-  pas un plan réglementaire d’implantation de chantier.
-- Maintenance et statut du prototype mis à jour ; trois candidats voisins évalués dans son README.
-  La flèche de rabattement reste le prochain candidat, sans modification de cette carte à ce stade.
-
-# Formulations sans tirets cadratins (22 septembre 2026)
-
-- Reformulation de 41 passages pédagogiques : conditions explicites, conséquences reliées à leur cause et
-  comparaisons en phrases naturelles. Sources, commentaires, documentation et générateurs harmonisés.
-- Identifiants, ordre d’introduction, cibles des clozes et liens des sources conservés. Les données de
-  reconnaissance ont été régénérées depuis leurs sources ; le paquet contient toujours 1 051 notes et 1 125 cartes.
-- 24 tests réussis ; import, réimport, mise à jour depuis le paquet précédent et vérifications FSRS réussis.
-  Aucun tiret cadratin dans les textes suivis du dépôt ni les champs du paquet exporté.
-  Contrôle de 9 042 faces/configurations sans échec et inspection visuelle de quatre cartes reformulées.
-  Les documents sources originaux et les captures historiques du handoff restent des archives.
-
-# Planification et utilisation avec FSRS (22 septembre 2026)
-
-- Instructions de premier import, d’activation de FSRS et de mise à jour sans écraser les réglages personnels.
-  Distinction entre positions d’introduction, identités stables et échéances calculées ; aucune renumérotation
-  nécessaire. Les paramètres FSRS restent ceux de l’utilisateur, sans historique livré avec le deck.
-- Plafond de révisions porté de 400 à 9 999 pour laisser visibles les cartes dues ; enfouissement étendu aux
-  cartes sœurs en apprentissage ayant franchi le changement de jour. Contenu et ordre d’introduction inchangés.
-- Vérification du paquet vierge, de la collecte réelle et de réponses avec FSRS natif ; réimport sans
-  préréglages conservant les options personnelles, les états mémoire et l’historique. Import neuf, réimport et
-  mise à jour depuis le paquet Signal vérifiés ; 24 tests réussis. Aucun essai natif mobile ni mesure d’efficacité.
-
-# Thème Signal (22 septembre 2026)
-
-- Application du Signal approuvé dans `docs/signal-theme-handoff/` : CSS consolidé et comparé au rendu de
-  référence, réponses de 21 px, texte de 19 px, séparateur jaune court, feedback sans panneaux remplis,
-  sources compactes et fermées. Alias sombres indépendants et contraste des labels A/B corrigés.
-- Le verso conserve les images et prompts du recto ; les trois prompts manquants sont restaurés dans les
-  gabarits natifs. Clozes, contenu, médias, objectifs et ordre d’apprentissage conservés.
-- Correction d’un défaut de reconstruction découvert lors de l’essai de mise à jour : les identifiants des
-  champs et modèles de cartes étaient aléatoires. Ceux du paquet publié `67618d8` sont désormais fixes ;
-  `build.verify --previous` vérifie aussi la mise à jour, sans toucher à une collection utilisateur.
-- Les captures utilisent un viewport Chromium exact, sans artefact de taille de fenêtre. Le contrôle complet
-  compare désormais images, prompts et typographie entre les faces ; largeurs de téléphone 320, 390 et 430 px.
-- 24 tests réussis ; 9 042 faces/configurations et 4 521 comparaisons recto/verso sans échec. Import neuf,
-  réimport et mise à jour du paquet précédent réussis, sans doublon ni perte de l’historique témoin.
-  Inspection visuelle des six types en clair/sombre, avec exemples étroits et images de comparaison.
-  Rapports liés au paquet livré (1 051 notes, 1 125 cartes) par SHA-256 ; AnkiMobile/AnkiDroid non testés.
-
-# Installation et stationnement : décisions et conditions (22 septembre 2026)
-
-- Douze notes améliorées : réglage des rétroviseurs après déplacement du siège, verrouillage du siège,
-  miroirs jour/nuit, immobilisation en pente, contact coupé, enfant sans surveillance et prévention du vol.
-  L’affirmation non étayée sur les bras croisés cède la place au contrôle du siège ; effectifs inchangés.
-- Trois illustrations retirées : deux révélaient le réglage demandé, une représentait mal la pente.
-  Suppression des deux générateurs désormais inutilisés ; autres médias et modèles conservés.
-  Échantillon de captures recentré ; les mesures sur téléphone portent toujours sur toutes les cartes.
-- Ch. 10 et 26 du livre relus, illustrations du ch. 10 inspectées ; consultations primaires délimitées dans
-  le registre. Conception, maintenance et notes de recherche harmonisées.
-- Paquet reconstruit : 1 051 notes, 1 125 cartes, 362 médias. 22 tests réussis, import et réimport Anki réussis ;
-  absence des trois anciens médias vérifiée dans le paquet. Un avertissement de balance oui/non conservé
-  après lecture : les réponses restent décidées par le fond, sans quota.
-- Lecture des douze cartes modifiées à 430 px, quatre échantillons sombres à 320 px et exemples des six types.
-  9 054 faces/configurations contrôlées sans échec ; `out/RENDU.md` et `out/VERIFICATION.md`
-  identifient le même paquet par SHA-256.
-  Pas de revalidation juridique exhaustive, d’essai natif mobile ni de mesure d’efficacité.
-
-# Aides à la conduite : fonctions et limites (22 septembre 2026)
-
-- Neuf notes précisées : régulateur simple/adaptatif, limiteur en descente, détection d’angle mort,
-  maintien de voie, eCall et compatibilité avant un démarrage avec câbles. Le cas ACC teste une file
-  arrêtée découverte quand le véhicule suivi change de voie ; les notices ne deviennent pas des règles universelles.
-- Retrait d’un rappel AFU redondant ; comparaison AFU/AEB conservée et avancée dans son sous-thème.
-  Aucun ajout de média ni changement des modèles. Paquet : 1 051 notes, 1 125 cartes ; effectif du socle inchangé.
-- Ch. 15 du livre relu et ses quatorze illustrations inspectées ; sources primaires et portée consignées.
-  Documentation de maintenance précisée et notes de recherche harmonisées sur les points modifiés.
-- Vérification : 22 tests réussis ; import et réimport Anki réussis ; 9 260 faces/configurations
-  contrôlées sans échec. Lecture des neuf notes corrigées et de la comparaison conservée à 430 px,
-  échantillons sombres à 320 px et exemples des six types de cartes. Rapports liés au paquet par SHA-256.
-  Pas de nouvelle validation juridique exhaustive, d’essai natif mobile ni de mesure d’efficacité.
-
-# Voyants et traversées piétonnes (22 septembre 2026)
-
-- Huit notes corrigées, sans ajouter de cartes : distinguer contact et roulage, pression et niveau d’huile,
-  adapter la consigne de surchauffe au véhicule ; préciser les conditions de traversée des piétons.
-  Le vrai/faux redondant sur les 50 m devient une application au carrefour.
-- Les questions personnalisées de reconnaissance passent désormais par le même traitement de texte que
-  les autres questions ; le contrôle d’import a révélé puis confirmé la correction de cette incohérence.
-- Sources primaires consultées, comparaison ciblée du livre prolongée et maintenance précisée.
-  Le livre commercial reste local, ignoré par Git ; aucun de ses médias n’est incorporé.
-- Paquet reconstruit : 1 052 notes, 1 126 cartes. 22 tests réussis ; import et réimport Anki réussis.
-  Inspection des huit notes modifiées à 430 px, avec échantillons sombres et à 320 px.
-  Le rapport `out/RENDU.md` donne les résultats automatiques pour l’empreinte du paquet livré.
-  Pas de revalidation juridique exhaustive, d’essai natif mobile ni de mesure de rétention.
-
-# Comparaison avec le livre 2025–2026 (22 septembre 2026)
-
-- Trois questions ajoutées : plafonds de vitesse avec remorque, distinction permis/PTRA dans un cas
-  concret, vérification des freins après lavage. Choix du siège enfant recentré sur l’adaptation,
-  la compatibilité et l’installation ; R129 n’impose pas toujours une fixation Isofix.
-- Comparaison ciblée et décisions dans `docs/research/comparaison-livre-2025-2026.md` ; sources et limites
-  de consultation consignées. Aucun texte ou média du livre intégré au paquet.
-- Paquet reconstruit : 1 052 notes, 1 126 cartes. 22 tests réussis, import et réimport Anki réussis,
-  9 234 faces/configurations contrôlées sans échec. Lecture visuelle des quatre notes modifiées,
-  avec échantillons en sombre et à 320 px. Pas de validation native mobile ni de mesure de rétention.
-
-# Circulation : conditions décisives (22 septembre 2026)
-
-- Douze notes améliorées, sans ajouter de cartes : placement au giratoire selon l’axe d’entrée, signalement
-  de la première sortie, sorties de parking et statut des voies, arrêt et stationnement, consignes de tunnel.
-- La liste disparate des lieux de dépassement devient une décision à une intersection à priorité à droite ;
-  la carte du passage piéton masqué teste désormais explicitement la vérification avant de dépasser.
-  Les règles des passages à niveau et des tramways restent dans leurs cartes dédiées.
-- Références consultées et portée consignées ; exemple de maintenance et sens du champ `private` clarifiés.
-  Modèles, ordre, médias et effectifs conservés (1 049 notes, 1 123 cartes).
-- Vérification : 22 tests réussis ; import et réimport réussis ; 9 202 faces/configurations contrôlées
-  sans échec. Inspection des douze notes modifiées et d’exemples des six types de cartes ; contrôles visuels
-  complémentaires en sombre et à 320 px. Aucun essai natif AnkiMobile/AnkiDroid ni mesure d’efficacité.
-
-# Conditions et décisions (22 septembre 2026)
-
-- Huit notes corrigées sans ajout de cartes : limites sous la pluie, documents de vente, accès au 114,
-  remorquage, trois décisions d’écoconduite et comparaison des particules essence/diesel.
-- Les régimes moteur et seuils de climatisation arbitraires cèdent la place au choix adapté à la situation ;
-  les conditions manquantes et les références sont précisées. Consultations délimitées dans le registre.
-- Structure, ordre et médias conservés ; maintenance complétée sur la cohérence entre cartes et explications.
-- Vérification : 22 tests réussis, import et réimport réussis, 9 178 faces/configurations contrôlées sans échec.
-  Lecture visuelle des huit notes corrigées et de signaux/scénarios représentatifs ; vérification ponctuelle en
-  sombre et à 320 px. Rapports liés au SHA-256 du paquet. Pas d’essai AnkiMobile/AnkiDroid ni de mesure d’efficacité.
-
-# Audit ciblé (22 septembre 2026)
-
-- Corrections de fond : tabac/vapotage avec mineur, grille Euro NCAP 2026, statut des ambulances,
-  conditions de traversée des piétons et délai de réinscription après invalidation.
-- Cohérence : insertion sans recette « jamais s’arrêter », voyant de pression sans règle « rouge = toujours
-  arrêt », ABS testé sur la perte d’antiblocage plutôt que sur une distance imprévisible.
-- Apprentissage : cinq rappels de chiffres de campagne/angles de vision retirés ; les cartes de perception,
-  distraction et somnolence gardent les principes et décisions. Pluie : hypothèse du modèle explicite.
-  Plusieurs explications cessent d’affirmer un corrigé universel de l’ETG.
-- Documentation ajustée ; sources consultées et portée consignées. Échantillon visuel élargi aux cartes
-  corrigées ; import réel, réimport, tests et contrôle de toutes les faces relancés sur le nouveau paquet.
-- 1 049 notes, 1 123 cartes ; modèles, médias et architecture conservés.
-
-# Révision ciblée (22 septembre 2026)
-
-- Secours : distinction malaise/traumatisme conforme au PSC juillet 2026 ; vomissements et analyse du DAE sans choc traités explicitement. Retrait de la prétendue exception « réponse attendue à l’examen ».
-- Rappel : observation vidéo élargie aux indices stables et aux zones masquées ; formule de distance d’arrêt présentée comme raccourci ; contrôles de changement de voie expliqués par leur fonction.
-- Maintenance : suppression des seuils de longueur et de taille des listes dans le lint ; conception condensée et statut des dossiers de recherche clarifié.
-- Rendu : sept identifiants de capture obsolètes remplacés ; le contrôle refuse désormais un échantillon absent du paquet.
-- Aucun ajout de cartes ni changement de modèle ; effectifs inchangés. Rapports d’import et de rendu régénérés avec le paquet.
-
 # Historique des éditions
 
-Les éditions v1 à v8 sont les jalons d’une même journée de travail (21 septembre 2026) ; les détails sont dans
-l’historique git.
+## v12 (22 septembre 2026)
+
+Révision d’ensemble à partir de deux relectures indépendantes (signaux ; règles et transfert à l’épreuve), puis
+vérification adverse des modifications et comparaison des chapitres du livre non encore relus. 1 054 notes, 1 126 cartes.
+
+- **Images** : les scènes de scénario sont exportées sur leur fenêtre utile (véhicules, flèches et panneaux
+  environ une fois et demie plus grands sur téléphone) ; « MOI » est écrit dans la voiture ; un tramway a ses
+  rails, une sirène et un feu jaune clignotant rayonnent ; les flèches d’intention s’arrêtent avant le centre du
+  carrefour. Scènes de questions redessinées à l’échelle des scénarios. Corrections de sens : la scène « agent vu
+  de profil » plaçait le conducteur sur l’axe barré ; voie d’insertion dessinée en sortie ; flèches vertes
+  d’affectation de voie vers le haut ; triangles de ralentisseur à l’envers et trop nombreux ; plateau surélevé
+  confondu avec un passage piéton ; bandes du passage piéton perpendiculaires à l’axe ; couloir bus à ligne
+  continue ; panneau C25a sans la ligne 110. Les images de
+  reconnaissance n’écrivent plus leur réponse (BAU, voie d’insertion, STOP, panneau AB3a, code R17) ; les
+  marquages, gestes et vues en plan s’affichent en pleine largeur, les panneaux à taille de signal.
+- **Contenu** : une phrase fausse corrigée (dépassement par la droite « interdit sur autoroute ») ; gilet imposé
+  au seul conducteur ; emplacements matérialisés avant un passage piéton ; vitesses des autocars (R413-10) ;
+  B8 (tonnage = PTAC), B9h (définition des motocyclettes), AB25 (clignotant), M12, B26, C107, triangle de
+  présignalisation. Une trentaine d’explications réécrites pour énoncer le mécanisme ou la valeur attendue
+  au lieu de mises en garde (galette, molette des feux, neige, frein moteur, climatisation, portée d’un panneau,
+  panne de freins, remorquage, voyants…). Treize doublons retirés (sortie de parking, sortie de stationnement,
+  camion en giratoire, pression à froid, voyant ABS, DAE, ligne jaune, insertion, quadrillage, B14…) ; quinze
+  ajouts : moteur qui cale (direction et freins durcis), freinage d’urgence sans ABS, ne pas fumer sur les lieux
+  d’un accident, contrôle des feux arrière, monoxyde de carbone en garage fermé, plaque illisible, sanction des
+  distances de sécurité, fausse courtoisie envers un piéton, véhicule en feu dans un tunnel, limitation posée
+  sur le support d’entrée d’agglomération, feux de gabarit d’un poids lourd la nuit, réattribution des points
+  après dix ans, vidéo-verbalisation, feux de brouillard avant avec les feux de route, validité du titre de
+  permis ; signaux B9i, M10b et C13b réintégrés ; paire A21/C20c retirée. Clozes dont l’énoncé
+  donnait la réponse reformulées (téléphone 5 s, air/sang, balises J10, facteur de réaction).
+- **Dépôt** : thème de cartes sans fixture ni test d’apparence figée ; prototypes archivés supprimés ; historique
+  condensé ; médias obsolètes purgés au build ; carte des candidats visuels réduite aux décisions utiles.
+- **Vérification** : `--check` sans avertissement, 24 tests, import et réimport Anki, contrôle du rendu de
+  toutes les faces (`out/RENDU.md`), inspection à 390 px des scènes, marquages et cartes réécrites. Consultations
+  consignées dans le registre. Non couvert : essai natif AnkiMobile/AnkiDroid, mesure d’efficacité, validation
+  juridique exhaustive des notes non modifiées.
+
+## v11 (22 septembre 2026)
+
+Quinze passes ciblées après la v10, sans changement d’effectif notable (1 051 notes, 1 125 cartes) :
+
+- **Contenu** : conditions décisives des règles de circulation (giratoires, sorties de parking, arrêt et
+  stationnement, tunnels) ; voyants distingués selon contact ou roulage ; aides à la conduite décrites par leur
+  fonction et leurs limites ; installation au poste de conduite et départ du véhicule ; secours alignés sur les
+  références PSC de juillet 2026 ; corrections de fond (tabac avec mineur, grille Euro NCAP 2026, statut des
+  ambulances, traversée des piétons, réinscription après invalidation). Trois questions issues de la comparaison
+  avec le livre 2025–2026 (vitesses avec remorque, freins après lavage) ; sièges enfants recentrés sur R129.
+- **Images** : scènes de décision dessinées pour l’approche d’un chantier, la flèche lumineuse de rabattement,
+  le corridor de sécurité, le cycliste à droite, l’entrecroisement, la sortie de giratoire, les deux routes sous
+  C107, le camion qui tourne à droite (avec schéma explicatif au verso) et le passage piéton masqué. Trois
+  illustrations qui donnaient la réponse au recto retirées.
+- **Présentation** : thème de cartes consolidé dans `build/cards.css` ; verso qui prolonge le recto ; volet
+  « Sources » compact ; identifiants de champs et de gabarits figés ; préréglage FSRS (rétention 90 %, étapes
+  `1m 10m`, révisions non plafonnées, cartes sœurs enfouies) ; formulations sans tirets cadratins.
+- **Vérification** : `build.verify` étendu à la mise à jour d’un paquet précédent ; `build.render_check`
+  compare recto et verso sur trois largeurs de téléphone.
 
 ## v10 (22 septembre 2026)
 

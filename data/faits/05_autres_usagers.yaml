@@ -57,8 +57,8 @@
 - id: u-pl-angles-morts-chiffres
   texte: Depuis 2021, les véhicules de plus de {{c1::3,5 t}} portent des autocollants « angles morts » sur les côtés et à
     l’arrière.
-  explication: 'Un poids lourd a des angles morts devant, derrière et sur les deux côtés, surtout à droite. Un camion qui
-    tourne à droite se déporte d’abord à gauche : ne jamais se glisser dans l’espace qu’il semble libérer.'
+  explication: 'Un camion qui tourne à droite se déporte d’abord à gauche : ne jamais se glisser dans l’espace qu’il
+    semble libérer.'
   theme: U
   sous_theme: poids_lourds
   source: "securite-routiere.gouv.fr, Angles morts ; Code de la route, art. R313-32-1 et R412-12"
@@ -68,7 +68,7 @@
   rappels:
   - Un poids lourd de plus de 3,5 t (hors transport en commun) est limité sur autoroute à {{c1::90 km/h}}.
   - Sur les autres routes hors agglomération, ce poids lourd est limité à {{c2::80 km/h}} (50 en agglomération).
-  explication: Un autocar de plus de 3,5 t et jusqu'à 12 t peut rouler à 110 sur autoroute. Différence d'allure
-    = dépassements longs et files derrière les camions dans les côtes ; en cas de neige au sol, ni dépassement ni
-    changement de file pour eux.
-  source: Code de la route, art. R413-8 et R413-8-1
+  explication: Un autocar (transport en commun) est limité à 90 km/h hors agglomération et à 100 km/h au plus sur
+    autoroute. Différence d’allure = dépassements longs et files derrière les camions dans les côtes ; en cas de neige
+    au sol, ni dépassement ni changement de file pour les plus de 3,5 t.
+  source: Code de la route, art. R413-8 et R413-10

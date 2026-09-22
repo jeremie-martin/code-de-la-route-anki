@@ -10,16 +10,6 @@
   sous_theme: priorites
   source: Code de la route, art. R415-5
   debut: true
-- id: l-sortie-parking-priorite
-  question: 'Je sors d''un parking de supermarché : je dois franchir le trottoir puis m''engager dans la rue. Qui passe avant
-    moi ?'
-  reponse: Les piétons du trottoir et tous les véhicules de la rue, qu’ils viennent de gauche ou de droite.
-  explication: 'R415-9 vise séparément la sortie d’une aire de stationnement, d’un chemin de terre, d’un accès
-    non ouvert à la circulation publique et le franchissement d’un trottoir. Un parking de supermarché peut être
-    ouvert au public : cela ne donne aucune priorité à sa sortie.'
-  theme: L
-  sous_theme: priorites
-  source: "Code de la route, R415-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968 ; R415-11"
 - id: l-stop-arret
   question: Au STOP, où exactement dois-je immobiliser mon véhicule ?
   reponse: À la ligne d’arrêt continue (sinon à la limite de la chaussée abordée), roues immobiles, avant de céder le passage.
@@ -41,9 +31,8 @@
   question: Quelle différence entre un carrefour à sens giratoire et un simple rond-point, pour les priorités ?
   reponse: 'Giratoire (panneau « cédez le passage » avec les flèches en anneau) : priorité à ceux qui sont déjà dans
     l''anneau. Rond-point sans panneau : priorité à droite, donc à ceux qui entrent.'
-  explication: 'La forme ronde ne suffit pas à attribuer la priorité : lire les signaux aux entrées. Les changements de voie
-    imposent contrôles, signalement et respect des usagers de la voie rejointe. Ne pas déduire une interdiction générale de
-    dépasser du seul mot giratoire.'
+  explication: 'Repère visuel : cédez-le-passage et flèches en anneau à l’entrée = giratoire ; triangle à croix noire,
+    ou rien, = rond-point à priorité à droite. La forme ronde ne suffit pas : lire les signaux aux entrées.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-10 ; IISR (AB25)
@@ -101,20 +90,12 @@
   question: Le feu est vert mais l'intersection est bouchée derrière. Que fais-je ?
   reponse: 'J''attends avant l''intersection : je ne m''engage que si je suis sûr de la dégager sans bloquer les voies
     transversales.'
-  explication: 'Article R412-33. Même règle aux passages à niveau, aux passages piétons et aux traversées de tramway : ne
-    jamais s''y arrêter.'
+  explication: 'Article R412-33 ; un quadrillage jaune au sol matérialise parfois la zone à laisser libre, mais l’obligation
+    vaut sans marquage. Même règle aux passages à niveau, aux passages piétons et aux traversées de tramway : ne jamais
+    s’y arrêter.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R412-33
-- id: l-sortie-stationnement
-  question: Je quitte ma place de stationnement le long du trottoir pour reprendre la circulation. Qui a la priorité ?
-  reponse: 'Les véhicules qui circulent : clignotant, contrôle des rétroviseurs et de l’angle mort, et je ne m’engage que
-    si la voie est libre.'
-  explication: R412-10 impose d'avertir avant de reprendre sa place dans le courant de la circulation. Celui qui sort d'un
-    stationnement ne bénéficie d'aucune priorité, pas même la priorité à droite.
-  theme: L
-  sous_theme: priorites
-  source: Code de la route, art. R412-10
 - id: l-depassement-conditions
   question: Avant de me déporter pour dépasser, de quoi dois-je m'être assuré ?
   reponse: Visibilité et marquage compatibles ; personne ne me dépasse ; écart de vitesse suffisant ; espace pour m’écarter
@@ -137,8 +118,9 @@
   question: Sur une route à double sens, je veux dépasser une voiture en empruntant la voie opposée. Quels indices peuvent
     interdire cette manœuvre ?
   reponse: Une visibilité insuffisante, une ligne continue de mon côté ou un panneau d’interdiction de dépasser. Même sans eux, je dois pouvoir me rabattre sans gêner.
-  explication: Ce cas concerne le dépassement d’une voiture en utilisant le sens opposé ; ne pas en déduire une interdiction
-    générale de tout dépassement sur une chaussée à plusieurs voies.
+  explication: 'Trois indices interdisent : la ligne continue de mon côté, le panneau d’interdiction de dépasser et
+    la visibilité insuffisante (virage, sommet de côte). Sans eux, il reste à vérifier l’espace pour me rabattre et
+    l’écart de vitesse (R414-4).'
   theme: L
   sous_theme: depassement
   source: "Code de la route, R414-4 et R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/"
@@ -147,17 +129,18 @@
     bonne et personne n’arrive à droite. Puis-je y dépasser la voiture devant moi ?
   reponse: 'Non : à cette intersection, le dépassement d’une voiture reste interdit, même si aucune voiture n’arrive
     à droite.'
-  explication: R414-11 distingue les intersections où les autres routes doivent céder (STOP, cédez-le-passage,
-    route prioritaire), celles réglées par des feux ou un agent, et le dépassement d’un deux-roues. Ces exceptions
-    ne dispensent jamais des autres conditions de sécurité.
+  explication: L’interdiction tombe seulement si les autres routes doivent me céder le passage (route prioritaire,
+    STOP ou cédez-le-passage pour elles), si des feux ou un agent règlent le carrefour, ou pour dépasser un deux-roues.
+    Les autres conditions de sécurité restent entières.
   theme: L
   sous_theme: depassement
   source: "Code de la route, R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/"
 - id: l-depassement-droite
   question: Dans quels cas dépasse-t-on par la droite ?
   reponse: Un véhicule dont le conducteur a signalé qu’il tourne à gauche, et un tramway en marche si la place à droite suffit.
-  explication: 'En files parallèles denses (sens unique, routes à plusieurs voies dans le même sens), avancer plus vite que
-    la file de gauche n''est pas un dépassement. Hors de ces cas : 135 €, 3 points, et interdit sur autoroute.'
+  explication: En files parallèles denses (sens unique, chaussée à plusieurs voies dans le même sens, autoroute comprise),
+    avancer plus vite que la file de gauche n’est pas un dépassement (R414-15). Hors de ces cas, dépasser par la droite
+    coûte 135 € et 3 points.
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-6 et R414-15
@@ -354,11 +337,22 @@
   question: Une limitation à 30 km/h par un panneau rond isolé (hors zone 30 et hors panneau d'agglomération) est
     suivie d'une intersection. Elle n'est pas répétée après. Que devient-elle ?
   reponse: Elle cesse après l’intersection ; j’applique ensuite la limitation propre à la route et aux autres panneaux.
-  explication: 'Ne pas généraliser à toute prescription : une zone 30 traverse les intersections ; une limitation associée
-    au panneau d’entrée d’agglomération peut concerner toute l’agglomération.'
+  explication: Un panneau isolé cesse à la prochaine intersection ; une prescription de zone (zone 30, zone de rencontre,
+    aire piétonne, ZFE) vaut jusqu’au panneau de fin de zone, intersections comprises. Un panonceau « RAPPEL » prolonge
+    une limitation isolée ; celle qui accompagne le panneau d’agglomération vaut dans toute l’agglomération.
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie, art. 8 ; Code de la route, art. R110-2
+- id: l-b14-meme-support
+  question: À l’entrée d’une agglomération, un panneau « 30 » est fixé sur le support du panneau de nom de ville.
+    Jusqu’où s’applique-t-il ?
+  reponse: À toute l’agglomération, pas seulement à la rue où je me trouve.
+  explication: Un panneau de vitesse isolé cesse à la prochaine intersection ou au panneau de fin ; posé sur le
+    support d’entrée d’agglomération, il fixe la vitesse de l’ensemble de l’agglomération, jusqu’au panneau de sortie.
+    C’est ainsi qu’une commune généralise le 30.
+  theme: L
+  sous_theme: signalisation
+  source: IISR, 4e partie (implantation des panneaux de prescription) ; Code de la route, art. R413-3
 - id: l-panonceau-portee
   question: À quoi s'applique un panonceau (petit rectangle blanc) placé sous un panneau ?
   reponse: Au panneau qu’il complète ; symbole, mentions et position sur le support disent quels usagers ou quelle portée
@@ -394,11 +388,13 @@
   sous_theme: signalisation
   source: Code de la route, art. L110-3 et s. ; IISR 5e partie (cartouches E42-E44)
 - id: l-klaxon-danger-agglo
-  question: En ville, un enfant s'apprête à traverser en courant sans me voir. Puis-je klaxonner ?
+  question: En ville, une voiture se déporte vers ma voie sans m’avoir vu et le choc est imminent. Puis-je klaxonner
+    ?
   reponse: 'Oui : en agglomération, l''avertisseur sonore est permis en cas de danger immédiat, et seulement dans
     ce cas.'
-  explication: Hors agglomération, il sert aussi à annoncer un dépassement ou un croisement difficile ; la nuit,
-    les appels de phares le remplacent sauf danger immédiat (R416-1 à R416-3).
+  explication: 'Hors agglomération, il sert aussi à annoncer un dépassement ou un croisement difficile ; la nuit,
+    les appels de phares le remplacent sauf danger immédiat (R416-1 à R416-3). Face à un enfant ou un animal, le klaxon
+    peut provoquer un sursaut : ralentir et s’arrêter vaut mieux.'
   theme: L
   sous_theme: signalisation
   source: Code de la route, art. R416-1
@@ -514,14 +510,6 @@
   theme: L
   sous_theme: signalisation
   source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
-- id: l-quadrillage-carrefour
-  question: Mon feu est vert mais la sortie du carrefour est bloquée ; un quadrillage au sol matérialise la zone centrale.
-    Que fais-je ?
-  reponse: 'J''attends avant l''intersection de pouvoir la dégager : le quadrillage doit rester libre.'
-  explication: Le marquage rappelle une obligation déjà valable même sans quadrillage.
-  theme: L
-  sous_theme: signalisation
-  source: Code de la route, R415-2
 - id: l-bandes-rugueuses
   question: Des bandes transversales font vibrer la voiture à l'approche d'un carrefour. Que signalent-elles ?
   reponse: 'L''approche d''un danger ou d''une intersection : je ralentis et je cherche ce qui est annoncé (STOP,
@@ -616,16 +604,6 @@
   explication: La brièveté, la présence du conducteur et les warnings ne lèvent pas l’interdiction.
   source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: b6d
-- id: l-visuel-attendre-b6a1
-  theme: L
-  sous_theme: applications
-  question: Après ce panneau, je reste au volant en attendant un ami qui n’est pas encore arrivé. Est-ce autorisé
-    de ce côté de la rue ?
-  reponse: 'Non : cette attente est un stationnement, interdit ici.'
-  explication: L’arrêt réglementaire correspond à une montée, descente, opération de chargement ou déchargement,
-    pas à toute immobilisation courte.
-  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R110-2"
-  image_ref: b6a1
 - id: l-visuel-jaune-continu
   theme: L
   sous_theme: applications
@@ -645,15 +623,6 @@
     de s’appliquer.
   source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: marq-ligne-jaune-discontinue
-- id: l-visuel-b14-position
-  theme: L
-  sous_theme: applications
-  question: J’approche de ce panneau isolé, sans panonceau. Dois-je commencer à freiner au panneau ou avoir
-    déjà atteint le plafond à son niveau ?
-  reponse: Avoir déjà atteint au plus 50 km/h à son niveau.
-  explication: Préparer le ralentissement en amont, selon le trafic et sans freinage brutal.
-  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
-  image_ref: b14
 - id: l-visuel-b14-adaptation
   theme: L
   sous_theme: applications

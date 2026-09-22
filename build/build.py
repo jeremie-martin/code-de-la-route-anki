@@ -368,7 +368,7 @@ def ensure_media(data: dict[str, list[dict]], force=False) -> dict[str, str]:
         if not need(fname, spec):
             continue
         draw = {"intersection": draw_intersection, "roundabout": draw_roundabout, "road": draw_road}[it["kind"]]
-        render_png(draw(it["spec"]), MEDIA / fname, width=560)
+        render_png(draw(it["spec"]), MEDIA / fname, width=800)
         manifest[fname] = stamp(spec)
         print("  media", fname)
     for it in data["questions"]:
@@ -380,6 +380,9 @@ def ensure_media(data: dict[str, list[dict]], force=False) -> dict[str, str]:
                 make_image(img, MEDIA / fname, 420, 640, it["id"])
                 manifest[fname] = stamp(img)
                 print("  media", fname)
+    for stale in set(manifest) - set(names.values()):
+        (MEDIA / stale).unlink(missing_ok=True)
+        del manifest[stale]
     manifest_path.write_text(json.dumps(manifest, indent=0), encoding="utf-8")
     write_attributions(data)
     return names

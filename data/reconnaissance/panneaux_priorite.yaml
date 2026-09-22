@@ -112,7 +112,7 @@
     commons: France road sign AB25.svg
   nom: Carrefour à sens giratoire
   signification: 'Annonce un carrefour à sens giratoire : les usagers déjà engagés dans l''anneau sont prioritaires.'
-  conduite: Ralentir, céder le passage à l'anneau, clignotant gauche si je dépasse la moitié, clignotant droit avant de sortir.
+  conduite: Ralentir, céder le passage à l’anneau ; signaler tout changement de voie dans l’anneau et ma sortie au clignotant droit.
   piege: À l’entrée d’un giratoire avec cédez-le-passage, je laisse passer ceux qui circulent dans l’anneau. Sur une intersection circulaire sans ce régime, la priorité à droite peut donner priorité aux entrants.
   theme: L
   sous_theme: panneaux

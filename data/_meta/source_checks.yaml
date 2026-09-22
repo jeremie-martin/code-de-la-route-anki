@@ -94,7 +94,6 @@
   notes:
   - m-pneus-chiffres
   - m-pression-etiquette
-  - aff-m-chargement-pression
 - id: voyants
   consulte_le: '2026-09-21'
   url: https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
@@ -157,7 +156,6 @@
   portee: Définitions C20c, B13, B31, M9c, signaux R12 à R25 ; destinataire et conditions de franchissement.
     Version consolidée consultée, pas certification de toutes les entrées de l’inventaire.
   notes:
-  - conf-a21-c20c
   - conf-b31-b33
   - b31
   - m9c
@@ -244,7 +242,6 @@
   portee: Préconisations du constructeur selon charge, contrôle à froid et fréquence ; les valeurs des tableaux
     ajoutés sont fictives, pas tirées de cette page.
   notes:
-  - m-pneus-pression-quand
   - m-pneus-chiffres
 - id: v4-signalisation
   consulte_le: '2026-09-21'
@@ -256,8 +253,6 @@
   - l-visuel-etendue
   - l-visuel-arret-b6a1
   - l-visuel-arret-b6d
-  - l-visuel-attendre-b6a1
-  - l-visuel-b14-position
   - l-visuel-fin-interdictions
 - id: v4-ecoconduite
   consulte_le: '2026-09-21'
@@ -289,12 +284,6 @@
   notes:
   - d-formation-minimale
   - s-remorque-seuil-750
-- id: v4-risque
-  consulte_le: '2026-09-21'
-  url: https://www.onisr.securite-routiere.gouv.fr/etat-de-linsecurite-routiere/bilans-annuels-de-la-securite-routiere/bilan-2025-de-la-securite-routiere
-  portee: Structure et périmètre du bilan ; les nouvelles tâches portent sur sa lecture, sans faire réciter
-    les totaux annuels.
-  notes: []
 - id: v4-vitesse-sanction
   consulte_le: '2026-09-21'
   url: https://www.service-public.gouv.fr/particuliers/vosdroits/F19460
@@ -369,7 +358,6 @@
   - a-objet-plaie
   - a-rcp-dae
   - rcp-rythme
-  - aff-a-dae-sans-arret-cardiaque
   - a-traumatisme-respiration
 - id: v5-fatigue
   consulte_le: '2026-09-21'
@@ -437,12 +425,6 @@
     collectif au recto.'
   notes:
   - d-autres-bareme-3-points
-- id: v5-format-etg
-  consulte_le: '2026-09-21'
-  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F33694
-  portee: 'Confirmation du format et du seuil : 40 questions et au moins 35 réponses justes ; ne certifie pas
-    une distribution par thème.'
-  notes: []
 - id: v5-stop
   consulte_le: '2026-09-21'
   url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842245/
@@ -520,13 +502,6 @@
   notes:
   - aff-e-borne-recharge
   - scn-dep-passage-pieton
-- id: v8-etg-1er-juillet-2026
-  consulte_le: '2026-09-21'
-  url: https://www.digischool.fr/articles/auto/actualites/examen-code-de-la-route-1er-juillet-2026/
-  portee: 'Arrêté du 16 avril 2026 (JO du 29 avril) appliqué au 1er juillet 2026 : inscription close au plus tard la veille,
-    contrôle d’identité renforcé, pas de nouvelle tentative le jour même. Format, banque (12 septembre 2023) et seuil
-    (35/40) inchangés : aucune carte de contenu à modifier.'
-  notes: []
 - id: v8-l235-1-cumul-alcool-stupefiants
   consulte_le: '2026-09-21'
   url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006841089
@@ -665,16 +640,11 @@
   url: https://www.euroncap.com/press-media/euro-ncap-announces-2026-protocol-changes-to-tackle-modern-driving-risks/
   portee: 'Les quatre volets de l’évaluation changent en 2026 ; protection des piétons et cyclistes maintenue. Ne pas enseigner la grille antérieure comme actuelle.'
   notes: [aff-s-euroncap-pietons]
-- id: audit-abs
-  consulte_le: '2026-09-22'
-  url: https://www.user-manual.renault.com/fr/notice/indicator/108271
-  portee: 'Notice constructeur : défaut d’ABS et maintien du freinage ordinaire, contrôle au plus tôt. Le verdict teste désormais la perte d’antiblocage, sans prédire une distance d’arrêt. Dossier Sécurité routière « Vitesse et distances de sécurité », juin 2003, p. 11 également consulté pour le rôle de l’ABS.'
-  notes: [aff-m-voyant-abs-distance]
 - id: audit-insertion
   consulte_le: '2026-09-22'
   url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842314
   portee: 'R421-3 impose de céder à l’entrée sur autoroute. Suppression des recettes « toute la longueur » et « jamais s’arrêter » qui contredisaient la décision de céder en fin de voie.'
-  notes: [l-insertion-autoroute-priorite, l-entrecroisement, r-autoroute-insertion-fin-voie]
+  notes: [l-insertion-autoroute-priorite, l-entrecroisement]
 - id: audit-pietons-ambulances
   consulte_le: '2026-09-22'
   url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/
@@ -704,7 +674,7 @@
   consulte_le: '2026-09-22'
   url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968
   portee: 'R415-9 : catégories distinctes (trottoir, accès non ouvert au public, chemin de terre, aire de stationnement). Correction de l’assimilation parking = fermé au public et voie privée = absence de priorité.'
-  notes: [l-sortie-parking-priorite, aff-l-chemin-terre, scn-moi-sortie-parking, scn-t-moi-branche]
+  notes: [aff-l-chemin-terre, scn-moi-sortie-parking, scn-t-moi-branche]
 - id: audit-giratoire-axe
   consulte_le: '2026-09-22'
   url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688
@@ -900,3 +870,67 @@
   url: https://www.securite-routiere.gouv.fr/sites/default/files/2019-02/fiche_pedago_film_6.pdf
   portee: 'Texte du PDF officiel déjà téléchargé relu : placement à gauche dans sa voie, puis progression dans le carrefour avant de tourner. Camion replacé en amont et rue de destination représentée à double sens. Schéma explicatif : empattement et rayons relus dans le code, arcs rendus visibles à travers la caisse ; pas de simulation de l’enveloppe réelle.'
   notes: [u-pl-tourne-droite]
+- id: v4-risque
+  consulte_le: '2026-09-21'
+  url: https://www.onisr.securite-routiere.gouv.fr/etat-de-linsecurite-routiere/bilans-annuels-de-la-securite-routiere/bilan-2025-de-la-securite-routiere
+  portee: Structure et périmètre du bilan ; les nouvelles tâches portent sur sa lecture, sans faire réciter
+    les totaux annuels.
+  notes: []
+- id: v5-format-etg
+  consulte_le: '2026-09-21'
+  url: https://www.service-public.gouv.fr/particuliers/vosdroits/F33694
+  portee: 'Confirmation du format et du seuil : 40 questions et au moins 35 réponses justes ; ne certifie pas
+    une distribution par thème.'
+  notes: []
+- id: v8-etg-1er-juillet-2026
+  consulte_le: '2026-09-21'
+  url: https://www.digischool.fr/articles/auto/actualites/examen-code-de-la-route-1er-juillet-2026/
+  portee: 'Arrêté du 16 avril 2026 (JO du 29 avril) appliqué au 1er juillet 2026 : inscription close au plus tard la veille,
+    contrôle d’identité renforcé, pas de nouvelle tentative le jour même. Format, banque (12 septembre 2023) et seuil
+    (35/40) inchangés : aucune carte de contenu à modifier.'
+  notes: []
+- id: rev12-vitesses-autocars
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177128
+  portee: 'R413-8, R413-8-1 et R413-10 lus dans la copie consolidée du 10 septembre 2026 : les autocars (transport en commun) sont limités à 90 km/h hors agglomération, 100 sur autoroute ; le 110 de R413-8-1 ne vise pas les transports en commun.'
+  notes: [u-pl-vitesses-chiffres]
+- id: rev12-gilet-triangle
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177130
+  portee: 'R416-19 : le gilet est imposé au conducteur qui quitte un véhicule immobilisé après un arrêt d’urgence (4e classe) ; gilet non à portée de main : 1re classe ; le texte n’attache pas de sanction propre à l’absence du triangle à bord.'
+  notes: [a-proteger-arret, p-vehicule-emprunte-equipements, triangle-presignalisation]
+- id: rev12-distance-securite-sanction
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177121
+  portee: 'R412-12 V et VII : non-respect de la distance de sécurité, contravention de 4e classe et retrait de 3 points.'
+  notes: [c-intervalle-2s]
+- id: rev12-edpm-hors-agglo
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177121
+  portee: 'R412-43-1 III 3° et IV : l’autorisation locale hors agglomération ne vise que des routes limitées à 80 km/h au plus, avec casque attaché, gilet ou équipement rétro-réfléchissant, éclairage complémentaire et feux allumés.'
+  notes: [u-edpm-hors-agglo]
+- id: rev12-depassement-droite-files
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177131
+  portee: 'R414-15 : sur les routes à sens unique ou à plus de deux voies (autoroute comprise), avancer plus vite que la file voisine en files ininterrompues n’est pas un dépassement ; R414-6 V : 3 points pour un dépassement par la droite.'
+  notes: [l-depassement-droite, aff-l-files-droite]
+- id: rev12-plaque-illisible
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177113
+  portee: 'R317-8 : plaque non conforme ou illisible, contravention de 4e classe, immobilisation possible ; aucun retrait de points.'
+  notes: [aff-d-plaque-sale]
+- id: rev12-stationnement-5m
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177135
+  portee: 'R417-11 I 8° c) : interdiction dans les 5 m en amont des passages piétons « en dehors des emplacements matérialisés » ; la suppression de ces emplacements au 31 décembre 2026 incombe au gestionnaire (L118-5-1 du Code de la voirie routière).'
+  notes: [l-stationnement-5m-passage]
+- id: rev12-signaux-relecture
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  portee: 'Arrêté du 24 novembre 1967 et IISR, lus pour les corrections de signaux : B13 vise le poids total autorisé (B8 corrigé) ; motocyclette = plus de 125 cm³ ou 11 kW, motocyclette légère au plus 125 cm³ et 11 kW (R311-1 ; B9h) ; triangles de ralentisseur sur la rampe, pointe dans le sens de circulation (IISR 7e partie, art. 118-9) ; signaux d’affectation de voie R21 (flèche verte vers le bas) ; C25a avec ses quatre régimes ; B9i, M10b et C13b réintégrés.'
+  notes: [b8, b9h, marq-ralentisseur-triangles, marq-plateau-sureleve, r21a, r21b, r21c, c25a, b9i, m10b, c13b]
+- id: rev12-livre-seconde-passe
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/
+  portee: 'Seconde comparaison avec le livre 2025–2026 (chapitres non traités par la première passe) ; ajouts vérifiés dans la copie consolidée : L223-6 dernier alinéa (réattribution après dix ans), R416-7 I (feux de brouillard avant avec les feux de route hors agglomération sur route étroite et sinueuse), R221-1-1 I bis (validité de quinze ans), R415-11 et R412-30 (fausse courtoisie). Consigne CETU pour un véhicule en feu en tunnel ; L121-3 et R130-11 pour la vidéo-verbalisation, non relus dans le texte. Les peines délictuelles du tableau du livre sont antérieures à la loi du 18 août 2026 et ne sont pas reprises.'
+  notes: [u-fausse-courtoisie-pieton, r-tunnel-mon-vehicule-feu, l-b14-meme-support, r-nuit-gabarit-camion, d-points-dix-ans, aff-d-video-verbalisation, aff-r-brouillard-avant-sinueuse, d-permis-validite-15-ans]

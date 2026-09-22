@@ -2,20 +2,14 @@
   question: Que signifient les couleurs des voyants du tableau de bord ?
   reponse: 'Rouge : danger ou arrêt nécessaire ; orange : anomalie à contrôler ; vert ou bleu : fonction active. Le symbole
     décide, pas la couleur seule.'
-  explication: 'Orange n’autorise pas automatiquement à continuer : une alerte de pression peut signaler une crevaison. Rouge
-    peut simplement rappeler une ceinture ou un frein de stationnement. Suivre la notice.'
+  explication: 'Rouge : j’arrête dès que c’est sûr (huile, température, frein, charge). Orange : je lis le symbole
+    ; selon le cas je poursuis en adaptant ma conduite ou je m’arrête en sécurité (perte de pression des pneus, freinage
+    anormal), et je fais contrôler. Vert ou bleu : fonction en service. Certains rouges rappellent seulement une ceinture
+    ou le frein de stationnement.'
   theme: M
   sous_theme: tableau_de_bord
   source: "Codes Rousseau, Les voyants ; Ornikar, Voyants lumineux"
   debut: true
-- id: m-pneus-pression-quand
-  question: Quand et comment vérifie-t-on la pression des pneus ?
-  reponse: À froid, une fois par mois et avant un long trajet, à la valeur du constructeur, roue de secours comprise.
-  explication: '« À froid » : après 2 h d''arrêt ou moins de 3 km. Un pneu chaud affiche une pression plus élevée
-    : on ne le dégonfle pas pour retrouver la valeur à froid.'
-  theme: M
-  sous_theme: pneus
-  source: "Michelin, https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus"
 - id: m-pneus-usure-1-6
   question: À partir de quelle profondeur de sculpture un pneu doit-il être remplacé, et comment la vérifier ?
   reponse: 1,6 mm, minimum légal repérable aux témoins d’usure ; contrôler aussi coupures, déformations et usure irrégulière.
@@ -37,8 +31,9 @@
   question: Quelle précaution essentielle avec le liquide de refroidissement ?
   reponse: Ne jamais ouvrir le vase d’expansion moteur chaud (liquide sous pression, brûlures graves) ; contrôler à froid,
     entre mini et maxi, avec un liquide antigel adapté.
-  explication: En cas d’alerte de surchauffe, s’arrêter en sécurité et suivre la notice ou l’assistance. Un délai fixe de
-    trente minutes ne garantit pas un circuit refroidi et sans pression. Une baisse répétée du niveau appelle un contrôle.
+  explication: 'Le circuit est sous pression tant qu’il est chaud : ouvrir projette du liquide bouillant. En cas d’alerte
+    de surchauffe, je m’arrête, je coupe le moteur et j’attends le refroidissement complet avant tout contrôle. Une
+    baisse répétée du niveau appelle un contrôle du circuit.'
   theme: M
   sous_theme: entretien
   source: "Ornikar, Liquide de refroidissement"
@@ -115,12 +110,22 @@
   theme: M
   sous_theme: freinage
   source: "securite-routiere.gouv.fr, Dépliant vitesse ; Ornikar, ABS"
+- id: m-freinage-sans-abs
+  question: 'Véhicule sans ABS, freinage d’urgence : les roues se bloquent et le véhicule ne répond plus au volant.
+    Que fais-je ?'
+  reponse: Je relâche légèrement la pédale pour débloquer les roues, puis je réappuie fort, et je répète jusqu’à
+    l’arrêt en gardant le cap.
+  explication: 'Des roues bloquées glissent tout droit : le volant n’agit plus. Ce relâchement-réappui est ce que
+    l’ABS fait automatiquement et très vite ; avec ABS, au contraire, on écrase la pédale et on la maintient.'
+  theme: M
+  sous_theme: freinage
+  source: securite-routiere.gouv.fr, Les aides à la conduite (ADAS) ; REMC
 - id: m-panne-freins
   question: 'Les freins ne répondent plus dans une descente : que faire ?'
-  reponse: Je relâche l’accélérateur, rétrograde progressivement et cherche un dégagement sûr ou une voie de détresse, en
-    avertissant les autres.
-  explication: 'Ne pas couper le contact ni engager P en mouvement. Le recours au frein de stationnement dépend du système
-    : suivre la notice ; ne pas donner un coup brutal au levier.'
+  reponse: Je pompe la pédale, je rétrograde pour le frein moteur, j’avertis (détresse, klaxon) et je vise un dégagement
+    ou une voie de détresse ; le frein de stationnement en dernier recours, progressivement.
+  explication: Ne jamais couper le contact (plus d’assistance de direction ni de freinage) ni engager P ou N en mouvement
+    (plus de frein moteur). Un frein de stationnement électrique a son propre mode d’urgence, décrit dans la notice.
   theme: M
   sous_theme: freinage
   source: "Stych, Pannes ; En Voiture Simone, Voies de détresse"
@@ -137,11 +142,22 @@
   question: À quoi sert la molette de réglage des feux (0 à 3) ?
   reponse: À adapter la hauteur du faisceau à la charge pour ne pas éblouir, à la position prescrite par la notice (certains
     véhicules corrigent seuls).
-  explication: Une charge arrière importante peut relever l’avant de la voiture. Le chiffre à sélectionner dépend du véhicule
-    et de la répartition de la charge, pas seulement du poids total.
+  explication: 'Plus la charge à l’arrière est importante, plus le numéro à sélectionner est élevé (0 = véhicule à
+    vide) : la charge relève l’avant et le faisceau éblouirait. Le tableau exact est dans la notice ; certains véhicules
+    corrigent seuls.'
   theme: M
   sous_theme: feux
   source: "Sécurité routière, Exemples de nouvelles questions (Q1) ; Ornikar, Réglage des feux"
+- id: m-feux-arriere-controle
+  question: Je ne vois pas mes feux stop ni mes feux arrière depuis le poste de conduite. Comment m’assurer qu’ils
+    fonctionnent ?
+  reponse: Je les fais vérifier par quelqu’un, ou je recule vers une vitrine ou un mur clair, contact mis, en appuyant
+    sur la pédale de frein.
+  explication: Un feu stop hors service prive ceux qui me suivent de l’annonce de mon freinage. Un dispositif d’éclairage
+    ou de signalisation défaillant est une contravention de 3e classe (68 €), avec immobilisation possible la nuit.
+  theme: M
+  sous_theme: feux
+  source: Code de la route, art. R313-2 à R313-11 ; REMC
 - id: m-appel-phares
   question: Un conducteur arrêté me fait un appel de phares pour me laisser passer. Puis-je m'engager ?
   reponse: 'Seulement après mes propres contrôles : l’appel ne garantit ni que les autres voies sont libres ni que les autres
@@ -216,8 +232,9 @@
     rôle du conducteur ?
   reponse: 'Surveiller en permanence la circulation et pouvoir reprendre les commandes immédiatement : l''attention
     n''est pas transférée au système.'
-  explication: 'Au niveau 2, accélération et direction assistées ne transfèrent pas la tâche de surveillance. Les fonctions
-    autorisées à un autre niveau ont des conditions spécifiques : ne pas généraliser.'
+  explication: 'Au niveau 2, accélération et direction sont assistées mais le conducteur reste responsable : regard
+    sur la route, mains disponibles, reprise immédiate. Seul un système de niveau 3 homologué, dans son domaine d’emploi,
+    autorise à détourner l’attention, en restant prêt à reprendre la main à sa demande.'
   theme: M
   sous_theme: adas
   source: "Décret n° 2021-873 ; securite-routiere.gouv.fr, ADAS"
@@ -234,9 +251,8 @@
   question: Que faut-il mettre en place avant de lever le véhicule pour changer une roue ?
   reponse: Sol plat et stable hors circulation, frein de stationnement serré et rapport engagé, feux de détresse et gilet,
     cric au point de levage prévu.
-  explication: Sur autoroute, se mettre à l’abri et appeler le dépannage agréé ; ne pas travailler exposé au trafic. Avec
-    une roue temporaire, respecter la vitesse et les autres limites inscrites sur l’équipement ou dans la notice, sans valeur
-    universelle.
+  explication: 'Sur autoroute, on ne change pas de roue côté circulation : abri derrière la glissière et dépanneur
+    agréé. Avec une galette, la vitesse inscrite sur l’équipement (souvent 80 km/h) s’applique jusqu’au garage.'
   theme: M
   sous_theme: depannage
   source: "Stych, Dépannages ; Code en Poche, Changer une roue"
@@ -258,14 +274,26 @@
   theme: M
   sous_theme: depannage
   source: "Stych, Dépannages"
+- id: m-moteur-cale-direction
+  question: Le moteur cale brusquement alors que je roule. Que deviennent la direction et les freins, et que fais-je
+    ?
+  reponse: 'La direction devient très dure et le freinage demande beaucoup plus d’effort : je tiens fermement le
+    volant, j’appuie fort sur la pédale et je me range hors de la circulation.'
+  explication: Les assistances de direction et de freinage dépendent du moteur. Les commandes répondent encore,
+    au prix d’un effort bien supérieur. Je ne coupe pas le contact (l’antivol de direction pourrait se verrouiller)
+    et j’allume les feux de détresse.
+  theme: M
+  sous_theme: depannage
+  source: REMC (compétence 4) ; notices constructeur (direction assistée, servofrein)
 - id: m-remorquage
   question: Sur route ordinaire après une panne, un ami propose de tirer ma voiture avec une corde. Puis-je accepter
     sans autre vérification ?
   reponse: Non. Je vérifie la notice, l’aptitude au freinage et à la direction, et les conditions du remorquage.
     En cas de doute, j’appelle l’assistance.
-  explication: La notice peut imposer un plateau ou limiter le remorquage roues au sol. Les assistances peuvent
-    être inactives moteur coupé. Une barre rigide et les points d’attache prévus évitent d’improviser avec une corde ;
-    cela ne suffit pas à rendre tout véhicule remorquable.
+  explication: 'Moteur coupé, direction et freinage ne sont plus assistés : le véhicule remorqué reste conduit et
+    freiné par un titulaire du permis. Barre rigide plutôt que corde, anneaux prévus par le constructeur, feux de
+    détresse des deux véhicules, allure réduite ; la notice peut imposer un plateau (boîte automatique, électrique).
+    Sur autoroute, seul un dépanneur agréé intervient.'
   theme: M
   sous_theme: depannage
   source: "Notice Renault (exemple, consulter celle du véhicule concerné), https://www.user-manual.renault.com/fr/d%C3%A9pannage/remorquage-depannage-13"

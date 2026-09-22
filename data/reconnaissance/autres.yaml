@@ -20,6 +20,7 @@
       pose: bras_tendus
   nom: 'Agent : bras tendu(s) horizontalement, vu de face ou de dos'
   signification: 'Bras tendu(s) à l''horizontale : les usagers qui voient l''agent de face ou de dos s''arrêtent ; ceux qui le voient de profil passent.'
+  conduite: Je m’arrête avant l’intersection et j’attends le geste suivant ; déjà engagé, je dégage le carrefour.
   complement: L’ordre reste valable quand l’agent baisse les bras.
   theme: L
   sous_theme: agents
@@ -39,7 +40,8 @@
           vehicle:
             colour: rouge
           goes: straight
-      agent: bras_tendus_EW
+      agent: bras_tendus_NS
+    width: 800
   nom: Agent vu de profil (bras tendus ou baissés)
   signification: Les usagers qui voient l'agent de profil (dans l'alignement de ses bras tendus, ou de ses épaules bras baissés) sont autorisés à passer.
   conduite: Passer prudemment, en suivant les gestes de l'agent ; céder le passage aux piétons.

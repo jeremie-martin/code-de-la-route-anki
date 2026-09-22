@@ -10,7 +10,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Sans panonceau, le losange vaut bus + taxis + covoiturage 2+.
+  piege: Les catégories admises et les horaires sont ceux du panonceau ou du panneau d’information placé en amont.
 - id: vr-losange-fin
   type: panneau
   image:

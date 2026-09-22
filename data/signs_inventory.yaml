@@ -1705,8 +1705,8 @@
   - M4j
   importance: essentiel
   wikimedia_file: France road sign B26.svg
-  notes: Un panonceau M9 peut préciser « pneus neige admis ». Les pneus hiver marqués 3PMSF ne dispensent PAS d'obéir
-    au B26 sauf mention sur panonceau. Depuis 2021, en zone B58, chaînes dans le coffre OU pneus hiver.
+  notes: 'Depuis l’arrêté du 23 juin 2021 (IISR art. 67-1), les pneus hiver 3PMSF sont admis en équivalence des chaînes
+    pour les voitures, sauf panonceau « Chaînes à neige obligatoires ». En zone B58 : chaînes dans le coffre OU pneus hiver.'
 - code: B27a
   categorie: obligation
   nom: Voie réservée aux véhicules des services réguliers de transport en commun
@@ -5559,7 +5559,7 @@
   signification: Cartouche portant le numéro de la sortie/échangeur (sur autoroute), placé au-dessus des panneaux
     de sortie.
   conduite_a_tenir: ''
-  implantation: Sous le panneau qu'il complète, sur le même support ; il ne s'applique qu'à ce panneau.
+  implantation: Au-dessus du panneau de sortie qu'il complète.
   fin: ''
   forme_couleur: petit rectangle (blanc ou noir) avec le numéro de sortie
   confusions:

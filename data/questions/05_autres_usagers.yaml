@@ -18,6 +18,17 @@
   theme: U
   sous_theme: pietons
   source: "Code de la route, art. R412-6 et R415-11 ; securite-routiere.gouv.fr, Piétons"
+- id: u-fausse-courtoisie-pieton
+  question: Mon feu est vert ; un piéton attend au bord, son signal est rouge. Un véhicule me suit de près. Est-ce
+    que je m’arrête pour le laisser traverser ?
+  reponse: 'Non, je passe normalement : m’arrêter sans que rien ne l’impose met en danger le piéton et celui qui
+    me suit.'
+  explication: Le piéton s’engagerait en confiance sans voir le véhicule qui me dépasse ou me percute ; le suiveur
+    ne comprend pas mon arrêt. Je cède le passage au piéton engagé ou qui manifeste l’intention de traverser là
+    où il en a le droit (R415-11), pas par courtoisie.
+  theme: U
+  sous_theme: pietons
+  source: Code de la route, art. R412-30 et R415-11 ; REMC (fausse courtoisie)
 - id: u-pieton-hors-agglo-cote
   question: Je suis piéton, hors agglomération, sans trottoir ni accotement praticable. De quel côté de la chaussée dois-je
     marcher ?
@@ -46,15 +57,6 @@
   theme: U
   sous_theme: pietons
   source: Code de la route, art. R413-17 ; arrêté du 2 juillet 1982 (transports d'enfants)
-- id: u-personnes-agees
-  question: Mon feu passe au vert, mais un piéton âgé, engagé sur le passage, traverse lentement devant moi. Que fais-je ?
-  reponse: 'Je le laisse terminer sa traversée sans avancer sur lui ni klaxonner : mon feu vert ne retire pas la priorité
-    du piéton engagé.'
-  explication: 'Ne pas généraliser une déficience à toutes les personnes âgées : c’est la traversée en cours et son rythme
-    réel qui commandent ma décision.'
-  theme: U
-  sous_theme: pietons
-  source: Code de la route, art. R415-11 ; ONISR 2025 (bilan définitif)
 - id: u-fauteuil-roulant-chaussee
   question: Hors agglomération, une personne en fauteuil roulant circule sur la chaussée devant moi, près du bord droit. Que
     fais-je ?
@@ -145,8 +147,8 @@
     ?
   reponse: 'Il peut ne pas me voir (angle mort) : je reste en retrait, hors de sa trajectoire, plutôt que de présumer qu’il
     m’a repéré.'
-  explication: La visibilité dépend du véhicule, des rétroviseurs, des capteurs et du regard du conducteur. Voir son rétroviseur
-    ne prouve pas qu’il me voit ; ne pas s’installer à côté d’un camion qui pourrait tourner.
+  explication: Un poids lourd a des angles morts devant, derrière et sur les deux côtés, surtout à droite. Voir son
+    rétroviseur ne prouve pas qu’il me voit ; je ne m’installe pas à côté d’un camion qui pourrait tourner.
   theme: U
   sous_theme: poids_lourds
   source: "securite-routiere.gouv.fr, Vrai ou faux : angles morts"
@@ -166,16 +168,6 @@
     width: 960
     legende: 'Vue de principe : trajectoires du centre des trains avant et arrière dans un virage régulier.
       Le tracé intérieur explique pourquoi il faut laisser de la place ; ce n’est pas l’enveloppe complète du camion.'
-- id: u-pl-giratoire-deport
-  question: Dans un carrefour à sens giratoire à deux voies, le poids lourd devant moi roule à cheval sur les deux voies.
-    Puis-je le dépasser dans l'anneau ?
-  reponse: 'Non : son gabarit l’oblige à occuper les deux voies pour tourner et ses côtés sont des angles morts ; je reste
-    derrière lui jusqu’à sa sortie.'
-  explication: 'Même logique qu''un camion qui se déporte à gauche avant de tourner à droite : ne jamais se glisser dans l''espace
-    qu''il semble libérer.'
-  theme: U
-  sous_theme: poids_lourds
-  source: "securite-routiere.gouv.fr, Angles morts ; Ornikar, Transports de marchandises"
 - id: u-pl-depasser-suivre
   question: Route à double sens, je suis derrière un poids lourd que je souhaite dépasser. Quelles précautions particulières
     ?
@@ -326,9 +318,10 @@
   question: Je suis en trottinette électrique et je veux rejoindre le village voisin par une départementale limitée
     à 80 km/h. Est-ce permis ?
   reponse: 'Non : hors agglomération, un EDPM ne circule que sur les voies vertes et les pistes cyclables, sauf autorisation
-    locale (casque, gilet et feux exigés).'
-  explication: 'En agglomération au contraire, la chaussée limitée à 50 km/h est autorisée à défaut d''aménagement cyclable.
-    Circuler hors des voies permises : 135 €.'
+    locale sur des routes limitées à 80 km/h au plus.'
+  explication: 'Avec cette autorisation locale : casque attaché, gilet ou équipement rétro-réfléchissant, éclairage
+    complémentaire et feux de position allumés jour et nuit. En agglomération, la chaussée limitée à 50 km/h est autorisée
+    à défaut d’aménagement cyclable. Circuler hors des voies permises : 135 €.'
   theme: U
   sous_theme: edpm
   source: Code de la route, art. R412-43-1 II et III ; service-public.fr F308

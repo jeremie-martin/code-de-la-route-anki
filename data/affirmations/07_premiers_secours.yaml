@@ -8,15 +8,6 @@
   theme: A
   sous_theme: secourir
   source: "Sécurité routière, Exemples de nouvelles questions (Q6) ; décret n° 2007-705 ; Croix-Rouge française"
-- id: aff-a-dae-sans-arret-cardiaque
-  contexte: Une victime ne répond pas et ne respire pas normalement. Un DAE est disponible.
-  affirmation: Je dois attendre de connaître précisément son rythme cardiaque avant d’utiliser le DAE.
-  verdict: faux
-  pourquoi: C’est le DAE qui analyse le rythme et décide si un choc est indiqué. Je l’allume et suis ses consignes
-    sans retarder la RCP ; personne ne touche la victime pendant l’analyse et le choc.
-  theme: A
-  sous_theme: secourir
-  source: "Sécurité civile, PSC juillet 2026, Défibrillation, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: aff-a-pls-avec-casque
   contexte: Après sa chute, un motard est inconscient, allongé sur le dos, et respire normalement. Il se met à vomir.
   affirmation: Je le tourne sur le côté en maintenant si possible l’axe tête-cou-tronc, avec de l’aide, sans retirer son casque.
@@ -59,6 +50,15 @@
   theme: A
   sous_theme: proteger
   source: "Ornikar, Protéger la zone ; Croix-Rouge française"
+- id: aff-a-fumer-sur-les-lieux
+  contexte: J’arrive sur un accident ; du carburant s’écoule sous un véhicule.
+  affirmation: Je peux fumer en attendant les secours, à quelques mètres des véhicules.
+  verdict: faux
+  pourquoi: Une cigarette ou une flamme peut enflammer le carburant et ses vapeurs. Je coupe le contact des véhicules
+    accidentés, j’éloigne les personnes et j’interdis de fumer sur la zone.
+  theme: A
+  sous_theme: proteger
+  source: Sécurité civile, PSC juillet 2026, Protection ; Croix-Rouge française
 - id: aff-a-triangle-autoroute
   contexte: Accident sur autoroute ; poser le triangle m'obligerait à marcher sur les voies de circulation.
   affirmation: Je renonce au triangle et je me mets à l'abri derrière la glissière.
@@ -115,7 +115,10 @@
   contexte: Une victime ne répond pas et ne respire pas normalement ; un témoin apporte un DAE.
   affirmation: Le DAE peut décider qu’aucun choc n’est nécessaire ; dans ce cas, je reprends immédiatement les compressions selon ses consignes.
   verdict: vrai
-  pourquoi: L’absence de choc conseillé ne signifie pas que la victime est réanimée. Le DAE analyse le rythme ; je poursuis la réanimation et suis ses instructions jusqu’au relais des secours ou à la reprise d’une respiration normale.
+  pourquoi: 'C’est le DAE qui analyse le rythme et décide du choc : je l’allume dès qu’il arrive, sans retarder la
+    réanimation, et personne ne touche la victime pendant l’analyse et le choc. « Pas de choc conseillé » ne signifie
+    pas que la victime est réanimée : je poursuis les compressions jusqu’au relais des secours ou à la reprise d’une
+    respiration normale.'
   theme: A
   sous_theme: secourir
   source: "Sécurité civile, PSC juillet 2026, p. 26–34, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"

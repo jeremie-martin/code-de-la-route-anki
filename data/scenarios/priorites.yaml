@@ -25,7 +25,8 @@
   check: {pair: [S, W, avant]}
   question: "Intersection sans signalisation. Je passe avant ou après la voiture rouge ?"
   reponse: "Avant : elle vient de ma gauche, je suis à sa droite."
-  explication: "Priorité à droite : le rouge doit me céder le passage. Je vérifie quand même qu'il ralentit avant de m'engager (« prioritaire » ne veut pas dire « aveugle »)."
+  explication: 'Priorité à droite : le rouge, qui vient de ma gauche, doit me céder le passage. Rien à ma droite,
+    aucun panneau : je passe.'
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5"
@@ -185,7 +186,8 @@
     - avant
   question: Les véhicules suivent les flèches. Dois-je passer avant ou après la voiture rouge, et pourquoi ?
   reponse: 'Moi : je suis sur la route prioritaire, la rouge doit s''arrêter et me céder le passage.'
-  explication: L’autre voiture doit me céder le passage à son STOP, même si elle arrive de ma droite. Je vérifie néanmoins qu’elle s’arrête avant de passer.
+  explication: 'Le STOP de la rouge l’oblige à s’arrêter et à me céder le passage, même si elle arrive de ma droite
+    : un panneau de priorité remplace la priorité à droite.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-6 et R415-7
