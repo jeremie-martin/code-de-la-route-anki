@@ -172,6 +172,53 @@
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-24 et R414-15
+  image:
+    gen: road
+    params:
+      lanes: 3
+      up_lanes: 3
+      axis: none
+      lane_lines:
+      - at: 1
+      - at: 2
+      vehicles:
+      - lane: 1
+        y: 12
+        colour: gris
+      - lane: 1
+        y: 68
+        colour: gris
+      - lane: 1
+        y: 94
+        colour: gris
+      - lane: 2
+        y: 12
+        colour: gris
+      - lane: 2
+        y: 40
+        colour: gris
+      - lane: 2
+        y: 68
+        colour: gris
+      - lane: 2
+        y: 94
+        colour: gris
+      - lane: 3
+        y: 12
+        colour: gris
+      - lane: 3
+        y: 40
+        colour: gris
+      - lane: 3
+        y: 68
+        colour: gris
+      - lane: 3
+        y: 94
+        colour: gris
+      - lane: 1
+        y: 40
+        colour: bleu
+        me: true
 - id: l-demi-tour-marche-arriere
   question: J'ai raté une sortie d'autoroute ; la bande d'arrêt d'urgence est libre et le terre-plein comporte une
     interruption. Que fais-je ?

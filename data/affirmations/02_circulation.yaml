@@ -129,6 +129,53 @@
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-15 et R412-24
+  image:
+    gen: road
+    params:
+      lanes: 3
+      up_lanes: 3
+      axis: none
+      lane_lines:
+      - at: 1
+      - at: 2
+      vehicles:
+      - lane: 1
+        y: 12
+        colour: gris
+      - lane: 1
+        y: 68
+        colour: gris
+      - lane: 1
+        y: 94
+        colour: gris
+      - lane: 2
+        y: 12
+        colour: gris
+      - lane: 2
+        y: 40
+        colour: gris
+      - lane: 2
+        y: 68
+        colour: gris
+      - lane: 2
+        y: 94
+        colour: gris
+      - lane: 3
+        y: 12
+        colour: gris
+      - lane: 3
+        y: 40
+        colour: gris
+      - lane: 3
+        y: 68
+        colour: gris
+      - lane: 3
+        y: 94
+        colour: gris
+      - lane: 1
+        y: 40
+        colour: bleu
+        me: true
 - id: aff-l-surdepassement
   contexte: Route à double sens, une voie par sens. La voiture devant moi dépasse déjà un camion en occupant la
     voie opposée.
@@ -139,22 +186,85 @@
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-4
+  image:
+    gen: road
+    params:
+      lanes: 2
+      axis: discontinue
+      vehicles:
+      - lane: 1
+        y: 62
+        colour: gris
+        kind: truck
+      - lane: 2
+        y: 48
+        colour: rouge
+      - lane: 1
+        y: 14
+        colour: bleu
+        me: true
 - id: aff-l-depassement-intersection-prioritaire
-  contexte: Je circule sur une route prioritaire (losange jaune) et j'approche d'un carrefour, bonne visibilité.
+  contexte: Je circule sur cette route et j’approche d’un carrefour, bonne visibilité.
   affirmation: Je peux y dépasser la voiture qui me précède.
   verdict: vrai
   pourquoi: 'R414-11 interdit le dépassement aux intersections, sauf pour celui qui y est prioritaire (route prioritaire, ou STOP et cédez-le-passage pour les autres), aux carrefours à feux ou réglés par un agent.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-11
+  image:
+    gen: road
+    params:
+      lanes: 2
+      axis: discontinue
+      extras:
+      - kind: sign
+        file: France road sign AB6.svg
+        y: 22
+      - kind: intersection_droite
+        y: 78
+      - kind: intersection_gauche
+        y: 78
+      vehicles:
+      - lane: 1
+        y: 45
+        colour: gris
+      - lane: 1
+        y: 12
+        colour: bleu
+        me: true
 - id: aff-l-4-voies-double-sens
-  contexte: Route à quatre voies à double sens, sans terre-plein central (deux voies par sens).
+  contexte: Route à double sens, sans terre-plein central, comme sur ce plan.
   affirmation: Je dépasse par la voie de gauche de mon sens, pas par celles d'en face.
   verdict: vrai
   pourquoi: 'Chaque sens dispose de deux voies : celle de gauche sert au dépassement, puis je me replace à droite. Sur une chaussée à quatre voies à double sens, la ligne axiale est continue : la franchir est interdit (R412-19 : 135 €, 3 points).'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-19 et R414-8 ; IISR 7e partie, art. 114-2
+  image:
+    gen: road
+    params:
+      lanes: 4
+      up_lanes: 2
+      axis: continue
+      lane_lines:
+      - at: 1
+      - at: 3
+      vehicles:
+      - lane: 1
+        y: 45
+        colour: gris
+      - lane: 1
+        y: 14
+        colour: bleu
+        me: true
+      - lane: 1
+        y: 80
+        colour: rouge
+        dir: down
+      - lane: 2
+        y: 55
+        colour: gris
+        dir: down
 - id: aff-l-b3-deux-roues
   contexte: Ce panneau est implanté sur une route à double sens.
   affirmation: Je peux encore dépasser une moto solo ou un cycliste si les conditions le permettent.
@@ -234,13 +344,32 @@
   sous_theme: positionnement
   source: Code de la route, art. R412-19 et R412-20
 - id: aff-l-croisement-depasseur-en-face
-  contexte: Route à double sens ; en face, une voiture a entrepris un dépassement et arrive sur ma voie.
+  contexte: Route à double sens ; en face, la voiture rouge a entrepris un dépassement et arrive sur ma voie.
   affirmation: 'Je maintiens ma vitesse et ma trajectoire : c''est à elle de se rabattre.'
   verdict: faux
   pourquoi: 'Le réflexe attendu est de ralentir et de serrer à droite pour lui laisser de la place : avoir raison ne protège pas d''un choc frontal. R414-1 impose de serrer à droite, R413-17 de rester maître de sa vitesse.'
   theme: L
   sous_theme: croisement
   source: Code de la route, art. R414-1 et R413-17
+  image:
+    gen: road
+    params:
+      lanes: 2
+      axis: discontinue
+      vehicles:
+      - lane: 1
+        y: 72
+        colour: gris
+        kind: truck
+        dir: down
+      - lane: 2
+        y: 56
+        colour: rouge
+        dir: down
+      - lane: 1
+        y: 14
+        colour: bleu
+        me: true
 - id: aff-l-sens-unique-gauche
   contexte: Rue à sens unique, sans marquage ni panneau de stationnement.
   affirmation: Je peux stationner du côté gauche de la chaussée.
@@ -312,8 +441,7 @@
   sous_theme: vitesse
   source: Code de la route, art. R413-2
 - id: aff-l-creneau-90
-  contexte: Temps sec, permis hors période probatoire. Une section hors agglomération à deux voies dans mon sens
-    est signalée à 90 ; le sens opposé n’a qu’une voie.
+  contexte: Temps sec, permis hors période probatoire, hors agglomération, sur cette section.
   affirmation: Je peux y rouler à 90 km/h sur ces voies.
   verdict: vrai
   pourquoi: R413-2 relève la vitesse à 90 km/h sur les sections comportant au moins deux voies affectées au même
@@ -321,6 +449,27 @@
   theme: L
   sous_theme: vitesse
   source: Code de la route, art. R413-2 I 3° et R413-5
+  image:
+    gen: road
+    params:
+      lanes: 3
+      up_lanes: 2
+      axis: continue
+      lane_lines:
+      - at: 2
+      extras:
+      - kind: sign
+        file: France road sign B14 (90).svg
+        y: 60
+      vehicles:
+      - lane: 1
+        y: 18
+        colour: bleu
+        me: true
+      - lane: 1
+        y: 70
+        colour: rouge
+        dir: down
 - id: aff-l-lieu-dit
   contexte: Sur une route de campagne, je passe ce panneau.
   affirmation: À partir de ce panneau, je suis en agglomération et limité à 50 km/h.
