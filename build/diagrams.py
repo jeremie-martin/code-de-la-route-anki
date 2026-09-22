@@ -279,43 +279,54 @@ def draw_intersection(spec: dict) -> str:
       caption: optional text under the diagram
       crosswalks: branches with a zebra crossing; pedestrian: the branch whose crossing is in use
       agent: bras_leve | bras_tendus_NS | bras_tendus_EW
+      narrow: branches drawn as a one-lane street without centre line (a lane is still two car widths)
+      parked: [{branch, side}] two cars parked along one kerb of a branch, next to the corner (side: compass
+              point of that kerb, e.g. "S" for the southern kerb of the E branch)
+      queue: {branch, count} stopped cars on the exit lane of a branch, bumper to bumper from the junction
+      rails: branches whose lane carries tram rails even with no tram in the scene
     """
     branches = spec.get("branches") or ["N", "E", "S", "W"]
     approaches = spec.get("approaches", {})
     S = SVG(600, 600, view=(100, 100, 400, 400))
     cx, cy, half = 300, 300, 54  # half road width (2 lanes of 54 px)
     S.add(f'<rect x="0" y="0" width="600" height="600" fill="{GRASS}"/>')
+    narrow = set(spec.get("narrow", []))
+    hw = {b: (30 if b in narrow else half) for b in "NESW"}  # half width of each branch
     # roads
     if "N" in branches:
-        S.add(f'<rect x="{cx-half}" y="0" width="{2*half}" height="{cy}" fill="{ASPHALT}"/>')
+        S.add(f'<rect x="{cx-hw["N"]}" y="0" width="{2*hw["N"]}" height="{cy}" fill="{ASPHALT}"/>')
     if "S" in branches:
-        S.add(f'<rect x="{cx-half}" y="{cy}" width="{2*half}" height="{600-cy}" fill="{ASPHALT}"/>')
+        S.add(f'<rect x="{cx-hw["S"]}" y="{cy}" width="{2*hw["S"]}" height="{600-cy}" fill="{ASPHALT}"/>')
     if "W" in branches:
-        S.add(f'<rect x="0" y="{cy-half}" width="{cx}" height="{2*half}" fill="{ASPHALT}"/>')
+        S.add(f'<rect x="0" y="{cy-hw["W"]}" width="{cx}" height="{2*hw["W"]}" fill="{ASPHALT}"/>')
     if "E" in branches:
-        S.add(f'<rect x="{cx}" y="{cy-half}" width="{600-cx}" height="{2*half}" fill="{ASPHALT}"/>')
-    # centre lines (dashed) up to the intersection square
+        S.add(f'<rect x="{cx}" y="{cy-hw["E"]}" width="{600-cx}" height="{2*hw["E"]}" fill="{ASPHALT}"/>')
+    S.add(f'<rect x="{cx-half}" y="{cy-half}" width="{2*half}" height="{2*half}" fill="{ASPHALT}"/>')
+    # centre lines (dashed) up to the intersection square; a narrow street has none
     dash = 'stroke-dasharray="18 14"'
-    if "N" in branches:
+    if "N" in branches and "N" not in narrow:
         S.add(f'<line x1="{cx}" y1="0" x2="{cx}" y2="{cy-half}" stroke="{MARK}" stroke-width="3" {dash}/>')
-    if "S" in branches:
+    if "S" in branches and "S" not in narrow:
         S.add(f'<line x1="{cx}" y1="{cy+half}" x2="{cx}" y2="600" stroke="{MARK}" stroke-width="3" {dash}/>')
-    if "W" in branches:
+    if "W" in branches and "W" not in narrow:
         S.add(f'<line x1="0" y1="{cy}" x2="{cx-half}" y2="{cy}" stroke="{MARK}" stroke-width="3" {dash}/>')
-    if "E" in branches:
+    if "E" in branches and "E" not in narrow:
         S.add(f'<line x1="{cx+half}" y1="{cy}" x2="600" y2="{cy}" stroke="{MARK}" stroke-width="3" {dash}/>')
     # edge lines
     S.add(f'<g fill="none" stroke="{MARK}" stroke-width="2">')
     for b in branches:
+        h = hw[b]
         if b == "N":
-            S.add(f'<line x1="{cx-half}" y1="0" x2="{cx-half}" y2="{cy-half}"/><line x1="{cx+half}" y1="0" x2="{cx+half}" y2="{cy-half}"/>')
+            S.add(f'<line x1="{cx-h}" y1="0" x2="{cx-h}" y2="{cy-half}"/><line x1="{cx+h}" y1="0" x2="{cx+h}" y2="{cy-half}"/>')
         if b == "S":
-            S.add(f'<line x1="{cx-half}" y1="{cy+half}" x2="{cx-half}" y2="600"/><line x1="{cx+half}" y1="{cy+half}" x2="{cx+half}" y2="600"/>')
+            S.add(f'<line x1="{cx-h}" y1="{cy+half}" x2="{cx-h}" y2="600"/><line x1="{cx+h}" y1="{cy+half}" x2="{cx+h}" y2="600"/>')
         if b == "W":
-            S.add(f'<line x1="0" y1="{cy-half}" x2="{cx-half}" y2="{cy-half}"/><line x1="0" y1="{cy+half}" x2="{cx-half}" y2="{cy+half}"/>')
+            S.add(f'<line x1="0" y1="{cy-h}" x2="{cx-half}" y2="{cy-h}"/><line x1="0" y1="{cy+h}" x2="{cx-half}" y2="{cy+h}"/>')
         if b == "E":
-            S.add(f'<line x1="{cx+half}" y1="{cy-half}" x2="600" y2="{cy-half}"/><line x1="{cx+half}" y1="{cy+half}" x2="600" y2="{cy+half}"/>')
+            S.add(f'<line x1="{cx+half}" y1="{cy-h}" x2="600" y2="{cy-h}"/><line x1="{cx+half}" y1="{cy+h}" x2="600" y2="{cy+h}"/>')
     S.add("</g>")
+    for b in spec.get("rails", []):
+        _rails(S, b, cx, cy, half)
     # a tram runs on rails laid in its lane, through the whole junction
     for a, ap in approaches.items():
         if (ap.get("vehicle") or {}).get("kind") == "tram":
@@ -346,10 +357,34 @@ def draw_intersection(spec: dict) -> str:
         _crosswalk(S, b, cx, cy, half, pedestrian=(b == spec.get("pedestrian")))
     if spec.get("agent"):
         _agent(S, cx, cy, spec["agent"])
+    for p in spec.get("parked", []):  # two cars along a kerb, just past the corner (they mask the view)
+        b, side = p["branch"], p["side"]
+        for i in range(2):
+            along = half + 34 + i * 92
+            if b in ("E", "W"):
+                x = cx + along if b == "E" else cx - along
+                y = cy - hw[b] + 14 if side == "N" else cy + hw[b] - 14
+                S.add(f'<g transform="translate({x},{y}) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
+            else:
+                y = cy - along if b == "N" else cy + along
+                x = cx - hw[b] + 14 if side == "W" else cx + hw[b] - 14
+                S.add(f'<g transform="translate({x},{y})">{vehicle_sprite("car", "gris")}</g>')
+    if spec.get("queue"):  # stopped cars on the exit lane of a branch, first one just past the junction
+        b, n = spec["queue"]["branch"], spec["queue"].get("count", 3)
+        for i in range(n):
+            d = half + 8 + HALF_LENGTH["car"] + i * 2 * (HALF_LENGTH["car"] + 4)
+            x, y = {"N": (cx + hw["N"] / 2, cy - d), "S": (cx - hw["S"] / 2, cy + d),
+                    "E": (cx + d, cy + hw["E"] / 2), "W": (cx - d, cy - hw["W"] / 2)}[b]
+            S.add(_vehicle_group(x, y, _rot_for(opposite(b)), {"colour": "gris"}))
     for a, ap in approaches.items():
         v = ap.get("vehicle")
         if v:
-            _vehicle(S, a, v, ap.get("goes"), cx, cy, half, ap.get("distance", 0))
+            if a in narrow:
+                x, y = _pos_on_approach(a, cx, cy, hw[a], ap.get("distance", 0), edge=half,
+                                        length=HALF_LENGTH[v.get("kind", "car")])
+                S.add(_vehicle_group(x, y, _rot_for(a), v, ap.get("goes")))
+            else:
+                _vehicle(S, a, v, ap.get("goes"), cx, cy, half, ap.get("distance", 0))
     if spec.get("caption"):
         S.caption(spec["caption"])
     return str(S)

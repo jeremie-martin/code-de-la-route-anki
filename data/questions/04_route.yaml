@@ -250,7 +250,7 @@
   sous_theme: tramways
   source: Code de la route, art. R422-3 et R414-13
 - id: r-tram-traversee-degager
-  question: Je dois traverser des rails de tramway pour rejoindre une rue où la circulation est arrêtée. Que fais-je ?
+  question: Je dois traverser ces rails de tramway pour continuer tout droit. Que fais-je ?
   reponse: 'J’attends avant les rails de pouvoir les dégager entièrement : s’arrêter sur la plateforme est interdit et le
     tram ne peut pas m’éviter.'
   explication: La distance de freinage d'un tramway est très longue et il ne peut pas dévier ; une station toute proche fait
@@ -258,6 +258,20 @@
   theme: R
   sous_theme: tramways
   source: "Code de la route, art. R422-3 et R417-11 ; coursdecode.com, Les tramways"
+  image:
+    gen: intersection
+    params:
+      rails:
+      - E
+      queue:
+        branch: N
+        count: 3
+      approaches:
+        S:
+          vehicle:
+            colour: bleu
+            me: true
+          goes: straight
 - id: r-chantier-fleche-lumineuse
   image:
     gen: chantier_rabattement

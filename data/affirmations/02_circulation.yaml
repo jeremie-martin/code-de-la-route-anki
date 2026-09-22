@@ -21,21 +21,55 @@
   - ref: b30
     legende: 'Entrée de zone 30 : la vitesse change, les priorités restent.'
 - id: aff-l-priorite-droite-rue-etroite
-  contexte: J'arrive sur une large avenue non prioritaire ; une ruelle étroite débouche à ma droite.
+  contexte: Aucun panneau ni feu ; une ruelle débouche à ma droite, sur l’avenue où je roule.
   affirmation: Ma voie étant nettement plus importante, je passe avant le véhicule qui sort de la ruelle.
   verdict: faux
   pourquoi: 'La largeur ou l’importance apparente des routes ne change pas la règle : sans autre signalisation, je cède au véhicule venant de ma droite.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-5
+  image:
+    gen: intersection
+    params:
+      branches:
+      - N
+      - E
+      - S
+      narrow:
+      - E
+      approaches:
+        S:
+          vehicle:
+            colour: bleu
+            me: true
+          goes: straight
+        E:
+          vehicle:
+            colour: rouge
+          goes: right
 - id: aff-l-stop-avancer
-  contexte: Je suis arrêté à la ligne du STOP, mais des véhicules en stationnement masquent la rue transversale.
+  contexte: Je suis arrêté à la ligne ; les voitures stationnées masquent la rue transversale.
   affirmation: Je peux ensuite avancer lentement au-delà de la ligne pour voir avant de m'engager.
   verdict: vrai
   pourquoi: 'L''arrêt à la ligne est obligatoire ; une fois marqué, on progresse au pas jusqu''à voir, puis on cède le passage. Ce second temps est la manœuvre attendue, pas une infraction.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-6 ; REMC
+  image:
+    gen: intersection
+    params:
+      parked:
+      - branch: E
+        side: S
+      - branch: W
+        side: S
+      approaches:
+        S:
+          vehicle:
+            colour: bleu
+            me: true
+          goes: straight
+          sign: stop
 - id: aff-l-cedez-arret
   contexte: Ce panneau est implanté à l’intersection ; la route transversale est libre.
   affirmation: Je peux m'engager sans marquer l'arrêt, puisque la route est libre.

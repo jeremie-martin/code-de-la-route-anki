@@ -9,6 +9,21 @@
   sous_theme: priorites
   source: Code de la route, art. R415-5
   debut: true
+  illustration:
+    gen: intersection
+    params:
+      approaches:
+        S:
+          vehicle:
+            colour: bleu
+            me: true
+          goes: straight
+        E:
+          vehicle:
+            colour: rouge
+          goes: straight
+    width: 600
+    legende: 'Ma droite, c’est la branche d’où arrive la voiture rouge : je la laisse passer.'
 - id: l-stop-arret
   question: Au STOP, où exactement dois-je immobiliser mon véhicule ?
   reponse: À la ligne d’arrêt continue (sinon à la limite de la chaussée abordée), roues immobiles, avant de céder le passage.
@@ -94,7 +109,7 @@
   source: "Code de la route, R421-3, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842314 ; R412-10"
   image: {gen: entrecroisement, width: 960}
 - id: l-intersection-encombree
-  question: Le feu est vert mais l'intersection est bouchée derrière. Que fais-je ?
+  question: Mon feu est vert ; je veux continuer tout droit. Que fais-je ?
   reponse: 'J''attends avant l''intersection : je ne m''engage que si je suis sûr de la dégager sans bloquer les voies
     transversales.'
   explication: 'Article R412-33 ; un quadrillage jaune au sol matérialise parfois la zone à laisser libre, mais l’obligation
@@ -103,6 +118,19 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R412-33
+  image:
+    gen: intersection
+    params:
+      queue:
+        branch: N
+        count: 3
+      approaches:
+        S:
+          vehicle:
+            colour: bleu
+            me: true
+          goes: straight
+          sign: feu_vert
 - id: l-depassement-conditions
   question: Avant de me déporter pour dépasser, de quoi dois-je m'être assuré ?
   reponse: Visibilité et marquage compatibles ; personne ne me dépasse ; écart de vitesse suffisant ; espace pour m’écarter
