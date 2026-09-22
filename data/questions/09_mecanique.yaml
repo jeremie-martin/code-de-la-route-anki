@@ -71,14 +71,13 @@
   sous_theme: entretien
   source: Ornikar — Plaquettes et amortisseurs ; Stych — Pannes et dysfonctionnements
 - id: m-batterie-cables
-  question: Avant de démarrer avec des câbles, quelle information dois-je vérifier ?
-  reponse: 'L''ordre de branchement : rouge sur les deux bornes +, noir sur la borne − de la batterie de secours puis
-    sur une masse du véhicule en panne.'
-  explication: 'Débrancher dans l''ordre inverse. Les hybrides et électriques ont une procédure propre, indiquée dans
-    la notice ; batterie gonflée ou fuyante : assistance.'
+  question: Ma batterie de démarrage est déchargée. Un autre automobiliste propose ses câbles ; que vérifier avant de les brancher ?
+  reponse: Que les notices autorisent le dépannage pour les deux véhicules, avec une tension compatible et les points de branchement prévus.
+  explication: La procédure et les bornes accessibles varient ; certains hybrides ne doivent pas servir de véhicule donneur.
+    Respecter les polarités et l’ordre indiqué, éviter les étincelles ; en cas de batterie endommagée ou de doute sur la procédure, appeler l’assistance.
   theme: M
   sous_theme: entretien
-  source: APRR — Utiliser des câbles de démarrage ; lepermislibre
+  source: Renault Clio 5, Batterie — dépannage (exemple constructeur) — https://www.user-manual.renault.com/fr/d%C3%A9pannage/batterie-depannage
 - id: m-carburants-etiquettes
   question: Que signifient les étiquettes ronde, carrée et en losange sur les pistolets de carburant ?
   reponse: Rond = essence ; carré = gazole ; losange = gaz (GPL, GNV ou hydrogène).
@@ -161,34 +160,30 @@
   theme: M
   sous_theme: adas
   source: securite-routiere.gouv.fr — Les aides à la conduite ; règlement (CE) 661/2009
-- id: s-afu-fonction
-  question: Qu'est-ce que l'AFU (aide au freinage d'urgence) ?
-  reponse: Un système qui détecte un appui brusque sur le frein et applique aussitôt la pression maximale, car on freine rarement
-    assez fort en urgence.
-  explication: 'Il peut aussi allumer les feux de détresse. À ne pas confondre avec le freinage automatique d''urgence
-    (AEB), qui freine seul si le conducteur ne réagit pas à un obstacle détecté par radar ou caméra : obligatoire
-    sur les voitures neuves depuis juillet 2024 (détection des piétons et cyclistes généralisée en 2026).'
+- id: m-afu-aeb
   theme: M
   sous_theme: adas
-  source: securite-routiere.gouv.fr — Les aides à la conduite
+  question: Quelle différence entre AFU et freinage automatique d’urgence (AEB) ?
+  reponse: L’AFU amplifie un freinage d’urgence déclenché par le conducteur ; l’AEB peut déclencher un freinage
+    après détection d’un risque de collision.
+  explication: 'Ni l’un ni l’autre ne garantit l’évitement : rester attentif et prêt à freiner.'
+  source: CNSR, Comité des experts, aides à la conduite — https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf
 - id: s-regulateur-limiteur
-  question: Quelle différence entre régulateur et limiteur de vitesse ?
-  reponse: Le régulateur maintient une vitesse choisie ; le limiteur plafonne la vitesse tandis que je dose l’accélérateur.
-    Le freinage reste ma tâche.
-  explication: 'La désactivation et le dépassement volontaire du plafond dépendent du système. Freiner ne désactive pas nécessairement
-    un limiteur : consulter la notice.'
+  question: Quelle différence entre régulateur de vitesse simple et limiteur de vitesse ?
+  reponse: Le régulateur simple maintient l’allure choisie sans appui sur l’accélérateur ; avec le limiteur, je dose l’accélérateur jusqu’au plafond réglé.
+  explication: "Aucun des deux ne règle l’intervalle avec le véhicule devant : c’est la fonction du régulateur adaptatif.
+    Je reste prêt à freiner. Le dépassement de la consigne et la désactivation dépendent du système ; un limiteur peut laisser la vitesse augmenter en descente."
   theme: M
   sous_theme: adas
-  source: securite-routiere.gouv.fr — Les aides à la conduite ; Codes Rousseau
+  source: CNSR, Les aides à la conduite, 2024 ; Renault — https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4
 - id: s-ecall
-  question: Qu'est-ce que l'eCall ?
-  reponse: 'L’appel d’urgence automatique : après un choc grave, le véhicule appelle seul le 112 et transmet sa position ;
-    un bouton SOS le déclenche à la main.'
-  explication: Obligatoire sur les modèles homologués depuis le 31 mars 2018. Il appelle le 112, jamais le 15, et transmet
-    la position, l'identifiant du véhicule et le nombre d'occupants. Il n'empêche pas de protéger les lieux et d'alerter soi-même.
+  question: Après un choc grave, les occupants ne peuvent pas téléphoner. À quoi peut servir l’eCall fondé sur le 112 ?
+  reponse: Il peut déclencher automatiquement un appel aux secours et transmettre la position du véhicule, même si personne ne peut parler.
+  explication: "Un bouton permet aussi l’appel manuel. Si je peux parler, je précise les dangers et l’état des victimes :
+    les données automatiques ne remplacent pas ce bilan. L’eCall ne protège pas les lieux et ne réalise pas les gestes de secours."
   theme: M
   sous_theme: adas
-  source: Règlement (UE) 2015/758 ; securite-routiere.gouv.fr
+  source: Union européenne, eCall — https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency-assistance-vehicles-ecall/index_fr.htm
 - id: m-adas-responsabilite
   question: Mon véhicule a un détecteur d'angle mort et une alerte de franchissement de ligne. Puis-je m'y fier pour changer
     de voie ?
@@ -200,14 +195,13 @@
   sous_theme: adas
   source: securite-routiere.gouv.fr — ADAS
 - id: m-ldw-lka
-  question: Quelle différence entre l'alerte de franchissement de ligne et le maintien de voie ?
-  reponse: L’alerte (LDW) prévient par un son ou une vibration en cas de franchissement sans clignotant ; le maintien de voie
-    (LKA) corrige lui-même la trajectoire.
-  explication: 'Les deux lisent le marquage au sol : une ligne effacée, couverte de neige ou noyée sous la pluie les désactive.
-    Depuis juillet 2024, le maintien de voie d''urgence équipe toutes les voitures neuves (règlement GSR2).'
+  question: Quelle différence entre l’alerte de franchissement de ligne et l’aide au maintien de voie ?
+  reponse: L’alerte (LDW) avertit d’une sortie involontaire de voie ; l’aide au maintien (LKA) peut aussi corriger la trajectoire.
+  explication: Marquages effacés, pluie ou caméra masquée peuvent provoquer une absence de réaction ou une correction erronée,
+    pas seulement une désactivation. Je garde le contrôle de la direction ; les limites et les consignes de désactivation figurent dans la notice.
   theme: M
   sous_theme: adas
-  source: securite-routiere.gouv.fr — ADAS ; règlement (UE) 2019/2144
+  source: Renault Megane Sedan, Aide au maintien de voie — https://www.user-manual.renault.com/fr/fonctions-daides-suppl%C3%A9mentaires-%C3%A0-la-conduite/aide-au-maintien-de-voie
 - id: m-allumage-automatique
   question: Les feux sont sur « AUTO » et il se met à pleuvoir en plein jour. Puis-je m'en remettre au système ?
   reponse: 'Je vérifie que les feux de croisement sont réellement allumés et je les commande moi-même au besoin : le mode
@@ -284,14 +278,6 @@
   explication: On lit la préconisation correspondant au véhicule et aux pneus, plutôt que d’ajouter forfaitairement
     0,3 bar.
   source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
-- id: m-afu-aeb
-  theme: M
-  sous_theme: adas
-  question: Quelle différence entre AFU et freinage automatique d’urgence (AEB) ?
-  reponse: L’AFU amplifie un freinage d’urgence déclenché par le conducteur ; l’AEB peut déclencher un freinage
-    après détection d’un risque de collision.
-  explication: 'Ni l’un ni l’autre ne garantit l’évitement : rester attentif et prêt à freiner.'
-  source: CNSR, Comité des experts, aides à la conduite — https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf
 - id: m-visuel-batterie-contact
   theme: M
   sous_theme: applications

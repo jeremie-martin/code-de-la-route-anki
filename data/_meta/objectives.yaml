@@ -992,7 +992,6 @@
   - aff-m-limiteur-descente
   consolidation:
   - aff-m-regulateur-adaptatif
-  - s-afu-fonction
   - m-ldw-lka
   - m-conduite-automatisee
   - aff-m-abs-direction

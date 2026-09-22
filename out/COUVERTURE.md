@@ -1126,7 +1126,7 @@ Recherche Anki : `objectif::m-entretien`
 | `m-liquide-frein` | socle | questions | Ornikar — Liquide de frein ; lepermislibre |
 | `m-freins-apres-lavage` | consolidation | questions | Volvo — Freins de route, rubrique Freinage sur route mouillée — https://www.volvocars.com/fr/support/car/v60-cross-country/15w17/article/b7763713f78f074bc0a801e8017136c8/ |
 | `m-plaquettes-usure` | consolidation | questions | Ornikar — Plaquettes et amortisseurs ; Stych — Pannes et dysfonctionnements |
-| `m-batterie-cables` | consolidation | questions | APRR — Utiliser des câbles de démarrage ; lepermislibre |
+| `m-batterie-cables` | consolidation | questions | Renault Clio 5, Batterie — dépannage (exemple constructeur) — https://www.user-manual.renault.com/fr/d%C3%A9pannage/batterie-depannage |
 | `m-carburants-etiquettes` | consolidation | questions | Norme EN 16942 (étiquetage 2018) ; TotalEnergies ; Ornikar |
 | `m-erreur-carburant` | socle | questions | TotalEnergies — Erreur de carburant ; Ornikar — Carburants |
 | `m-boite-auto-positions` | consolidation | questions | Stych — La boîte automatique ; service-public.fr F2828 |
@@ -1149,7 +1149,7 @@ Recherche Anki : `objectif::m-entretien`
 
 Distinguer fonctions et limites, y compris en urgence.
 
-20 notes / 20 cartes.
+19 notes / 19 cartes.
 
 Recherche Anki : `objectif::m-aides`
 
@@ -1157,23 +1157,22 @@ Recherche Anki : `objectif::m-aides`
 |---|---|---|---|
 | `m-freinage-urgence-abs` | socle | questions | securite-routiere.gouv.fr — Dépliant vitesse ; Ornikar — ABS |
 | `s-esp-fonction` | socle | questions | securite-routiere.gouv.fr — Les aides à la conduite ; règlement (CE) 661/2009 |
-| `s-afu-fonction` | consolidation | questions | securite-routiere.gouv.fr — Les aides à la conduite |
-| `s-regulateur-limiteur` | socle | questions | securite-routiere.gouv.fr — Les aides à la conduite ; Codes Rousseau |
-| `s-ecall` | socle | questions | Règlement (UE) 2015/758 ; securite-routiere.gouv.fr |
-| `m-adas-responsabilite` | socle | questions | securite-routiere.gouv.fr — ADAS |
-| `m-ldw-lka` | consolidation | questions | securite-routiere.gouv.fr — ADAS ; règlement (UE) 2019/2144 |
-| `m-conduite-automatisee` | consolidation | questions | Décret n° 2021-873 ; securite-routiere.gouv.fr — ADAS |
 | `m-afu-aeb` | socle | questions | CNSR, Comité des experts, aides à la conduite — https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf |
+| `s-regulateur-limiteur` | socle | questions | CNSR, Les aides à la conduite, 2024 ; Renault — https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4 |
+| `s-ecall` | socle | questions | Union européenne, eCall — https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency-assistance-vehicles-ecall/index_fr.htm |
+| `m-adas-responsabilite` | socle | questions | securite-routiere.gouv.fr — ADAS |
+| `m-ldw-lka` | consolidation | questions | Renault Megane Sedan, Aide au maintien de voie — https://www.user-manual.renault.com/fr/fonctions-daides-suppl%C3%A9mentaires-%C3%A0-la-conduite/aide-au-maintien-de-voie |
+| `m-conduite-automatisee` | consolidation | questions | Décret n° 2021-873 ; securite-routiere.gouv.fr — ADAS |
 | `aff-m-abs-direction` | consolidation | affirmations | Stych — Aides à la conduite ; Ornikar — ABS |
 | `aff-m-frein-main-4-roues` | consolidation | affirmations | Ornikar — Frein à main ; Stych — Pannes |
 | `aff-m-stationnement-arriere` | socle | affirmations | Sécurité routière — Exemples de nouvelles questions (Q8) ; Code de la route, art. R412-6-3 |
-| `aff-m-regulateur-obstacle` | socle | affirmations | Stych — Aides à la conduite ; Ornikar — Limiteur et régulateur |
-| `aff-m-regulateur-conditions` | consolidation | affirmations | Stych — Aides à la conduite ; Ornikar — Limiteur et régulateur |
-| `aff-m-limiteur-descente` | socle | affirmations | Ornikar — Limiteur et régulateur ; Stych — Aides à la conduite |
-| `aff-m-angle-mort-moto` | consolidation | affirmations | securite-routiere.gouv.fr — ADAS ; Stych — Nouvelles aides à la conduite |
+| `aff-m-regulateur-obstacle` | socle | affirmations | CNSR, Les aides à la conduite, 2024 ; Renault — https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10 |
+| `aff-m-regulateur-conditions` | consolidation | affirmations | Renault, Régulateur de vitesse — https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10 |
+| `aff-m-limiteur-descente` | socle | affirmations | Renault, Limiteur de vitesse — https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4 |
+| `aff-m-angle-mort-moto` | consolidation | affirmations | Renault Express, Avertisseur d’angle mort — https://www.user-manual.renault.com/fr/content/xjk/driving/additional-driving-aid-functions/avertisseur-dangle-mort |
 | `aff-m-detecteur-fatigue` | consolidation | affirmations | securite-routiere.gouv.fr — Les aides à la conduite (ADAS), comité des experts du CNSR, 2024 |
 | `aff-m-isa-panneaux` | consolidation | affirmations | securite-routiere.gouv.fr — Les aides à la conduite (ADAS) ; règlement (UE) 2019/2144 (GSR2) |
-| `aff-m-regulateur-adaptatif` | consolidation | affirmations | CNSR, Comité des experts — Les aides à la conduite (ADAS), 2024 |
+| `aff-m-regulateur-adaptatif` | consolidation | affirmations | Renault Austral, Régulateur adaptatif — https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-adaptatif-0 |
 | `aff-m-camera-recul` | socle | affirmations | CNSR, Comité des experts — Les aides à la conduite (ADAS), 2024 |
 
 ## m-panne — Réagir à une panne sans aggraver le risque

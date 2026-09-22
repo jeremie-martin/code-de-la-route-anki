@@ -208,7 +208,9 @@ python build/qa_sheet.py                 # planches image + code + nom par fichi
 2. Écrire ou corriger la note dans `data/` (formats ci-dessus). Rechercher aussi la règle dans les autres
    cartes et leurs explications : une bonne réponse au recto ne compense pas une généralisation fausse au verso.
    Pour un voyant, préciser le contexte utile (contact, moteur tournant, roulage) ; une notice constructeur
-   documente un véhicule, pas une procédure universelle.
+   documente un véhicule, pas une procédure universelle. Pour une aide à la conduite, distinguer sa fonction,
+   ses limites et l’action du conducteur ; une perturbation peut entraîner une mauvaise réaction, pas seulement
+   une désactivation.
    Pour une reconnaissance : corriger
    `signs_inventory.yaml` ou `_meta/sign_overrides.yaml`, puis `python build/import_signs.py` ; retirer un
    signal = l’ajouter à `_meta/sign_exclusions.yaml` (`codes` de l’inventaire, `raison`, `couverts_par` = ids des

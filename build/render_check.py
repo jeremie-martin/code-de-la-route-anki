@@ -19,6 +19,9 @@ from build.preview import CHROME, OUT
 from build.verify import import_package
 
 SAMPLES = {
+    'm-batterie-cables', 'm-afu-aeb', 's-regulateur-limiteur', 's-ecall', 'm-ldw-lka',
+    'aff-m-regulateur-obstacle', 'aff-m-regulateur-conditions', 'aff-m-limiteur-descente',
+    'aff-m-angle-mort-moto', 'aff-m-regulateur-adaptatif',
     'p-demarrage-point-mort', 'voyant-huile', 'voyant-batterie', 'voyant-temperature',
     'aff-m-autotest-voyants', 'u-pieton-hors-passage', 'aff-u-pieton-passage-50m',
     's-remorque-vitesses', 's-remorque-permis-vitesse', 'm-freins-apres-lavage', 's-groupes-sieges',

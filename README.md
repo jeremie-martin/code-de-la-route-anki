@@ -5,7 +5,7 @@ en 2026, et comprendre les règles assez bien pour les appliquer à des situatio
 Il est généré à partir d’une bibliothèque de connaissances écrite à la main (`data/`) par le code de `build/`.
 
 **[Télécharger le paquet](out/Code-de-la-route-2026.apkg)** — effectifs exacts dans [STATS](out/STATS.md)
-(1 052 notes, 1 126 cartes). Le deck relie les signaux, les règles, les décisions et des scénarios dessinés à
+(1 051 notes, 1 125 cartes). Le deck relie les signaux, les règles, les décisions et des scénarios dessinés à
 49 objectifs d’apprentissage. Il ne contient pas de photographies d’examen.
 
 ## Commencer

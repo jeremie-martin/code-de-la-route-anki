@@ -1,3 +1,17 @@
+# Aides à la conduite : fonctions et limites — 22 septembre 2026
+
+- Neuf notes précisées : régulateur simple/adaptatif, limiteur en descente, détection d’angle mort,
+  maintien de voie, eCall et compatibilité avant un démarrage avec câbles. Le cas ACC teste une file
+  arrêtée découverte quand le véhicule suivi change de voie ; les notices ne deviennent pas des règles universelles.
+- Retrait d’un rappel AFU redondant ; comparaison AFU/AEB conservée et avancée dans son sous-thème.
+  Aucun ajout de média ni changement des modèles. Paquet : 1 051 notes, 1 125 cartes ; effectif du socle inchangé.
+- Ch. 15 du livre relu et ses quatorze illustrations inspectées ; sources primaires et portée consignées.
+  Documentation de maintenance précisée et notes de recherche harmonisées sur les points modifiés.
+- Vérification : 22 tests réussis ; import et réimport Anki réussis ; 9 260 faces/configurations
+  contrôlées sans échec. Lecture des neuf notes corrigées et de la comparaison conservée à 430 px,
+  échantillons sombres à 320 px et exemples des six types de cartes. Rapports liés au paquet par SHA-256.
+  Pas de nouvelle validation juridique exhaustive, d’essai natif mobile ni de mesure d’efficacité.
+
 # Voyants et traversées piétonnes — 22 septembre 2026
 
 - Huit notes corrigées, sans ajouter de cartes : distinguer contact et roulage, pression et niveau d’huile,

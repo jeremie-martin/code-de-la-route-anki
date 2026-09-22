@@ -780,3 +780,43 @@
   url: https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux
   portee: 'Notice Clio 5 phase 1 consultée : allumage au contact/démarrage puis extinction, airbag absent au contact, huile et batterie en roulage ; surchauffe avec bref ralenti avant arrêt moteur. Exemple constructeur qui réfute les consignes universelles, pas procédure applicable à tous les véhicules. Contrôle du niveau seul insuffisant pour banaliser une alerte de pression.'
   notes: [p-demarrage-point-mort, voyant-huile, voyant-batterie, voyant-temperature, aff-m-autotest-voyants]
+- id: audit-aides-fonctions
+  consulte_le: '2026-09-22'
+  url: https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf
+  portee: 'PDF CNSR téléchargé et texte lu : hétérogénéité des systèmes, limites de perception, tableaux AFU/AEB et régulateurs. La comparaison AFU/AEB remplace le rappel AFU redondant ; pas de nouveau contrôle du calendrier GSR2.'
+  notes: [m-afu-aeb, s-regulateur-limiteur]
+- id: audit-regulateur-simple
+  consulte_le: '2026-09-22'
+  url: https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10
+  portee: 'Notice Renault consultée : régulation simple et conditions d’utilisation, circulation dense et chaussée glissante. Le contexte des deux affirmations précise désormais non adaptatif ; aucune règle universelle de désactivation par débrayage.'
+  notes: [aff-m-regulateur-obstacle, aff-m-regulateur-conditions]
+- id: audit-limiteur-descente
+  consulte_le: '2026-09-22'
+  url: https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4
+  portee: 'Notice consultée : consigne susceptible d’être dépassée en forte descente. Cet exemple suffit à réfuter la garantie universelle ; ne pas généraliser l’absence de freinage à tous les limiteurs.'
+  notes: [s-regulateur-limiteur, aff-m-limiteur-descente]
+- id: audit-acc-obstacle-decouvert
+  consulte_le: '2026-09-22'
+  url: https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-adaptatif-0
+  portee: 'Notice Austral, édition 7 avril–14 juillet 2025 : accélération et freinage, limites quand le véhicule suivi déboîte et découvre un véhicule arrêté, absence de freinage d’urgence par l’ACC. Cas transposé sans enseigner les seuils propres au modèle.'
+  notes: [aff-m-regulateur-adaptatif]
+- id: audit-maintien-voie
+  consulte_le: '2026-09-22'
+  url: https://www.user-manual.renault.com/fr/fonctions-daides-suppl%C3%A9mentaires-%C3%A0-la-conduite/aide-au-maintien-de-voie
+  portee: 'Notice Megane Sedan depuis novembre 2025 : correction de direction, mauvaises conditions pouvant produire une correction erronée ou absente. Retrait de la désactivation présentée comme automatique et du calendrier réglementaire accessoire.'
+  notes: [m-ldw-lka]
+- id: audit-angle-mort-controles
+  consulte_le: '2026-09-22'
+  url: https://www.user-manual.renault.com/fr/content/xjk/driving/additional-driving-aid-functions/avertisseur-dangle-mort
+  portee: 'Notice Express : périmètre, capteurs, conditions de détection et limites. Retrait de l’affirmation selon laquelle le regard par-dessus l’épaule serait la seule vérification fiable ; rétroviseurs et contrôle direct se complètent.'
+  notes: [aff-m-angle-mort-moto]
+- id: audit-ecall-bilan
+  consulte_le: '2026-09-22'
+  url: https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency-assistance-vehicles-ecall/index_fr.htm
+  portee: 'Fiche UE consultée : appel automatique ou manuel au 112, localisation et communication vocale. Ne plus garantir la transmission du nombre d’occupants ; recentrer le rappel sur l’utilité de l’appel et le bilan humain.'
+  notes: [s-ecall]
+- id: audit-batterie-compatibilite
+  consulte_le: '2026-09-22'
+  url: https://www.user-manual.renault.com/fr/d%C3%A9pannage/batterie-depannage
+  portee: 'Notice Clio 5 (septembre 2025–mars 2026) consultée : tension identique, bornes déportées, interdiction d’utiliser la version E-tech full hybrid comme donneuse. Exemple constructeur justifiant la vérification des deux notices, sans imposer son ordre de branchement à tous les véhicules.'
+  notes: [m-batterie-cables]

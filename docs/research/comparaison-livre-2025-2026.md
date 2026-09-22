@@ -63,3 +63,21 @@ croisement à l’indonésienne. Pas de nouveau média nécessaire pour les corr
 
 Cette passe porte sur les points ci-dessus et leur cohérence dans le deck, pas sur une nouvelle vérification
 juridique de ses 1 052 notes. Le livre reste un document local de comparaison, exclu de Git et du paquet.
+
+## Aides à la conduite — complément du 22 septembre 2026
+
+Le ch. 15 distingue régulateur simple, adaptatif, limiteur, AFU et maintien de voie. Cette lecture conduit
+à préciser neuf notes du deck, sans reprendre les images du livre :
+
+- Régulateur simple explicite dans les questions ; application de l’ACC à une file arrêtée soudainement
+  découverte. Une consigne de vitesse ou un intervalle suivi ne garantit pas l’évitement d’une collision.
+- Maintien de voie : une mauvaise perception peut produire une correction erronée, pas seulement désactiver
+  l’aide. Détecteur d’angle mort : contrôles directs et rétroviseurs complémentaires.
+- eCall : apprendre l’utilité d’une alerte quand les occupants ne peuvent pas parler, sans garantir un
+  comptage automatique des victimes. Batterie : vérifier la compatibilité des deux véhicules et leurs notices.
+
+Le rappel AFU isolé est retiré : la comparaison AFU/AEB existante enseigne déjà cette fonction et sa
+confusion utile. Notices Renault, fiche UE et rapport CNSR consultés ; les notices sont des exemples,
+pas des spécifications universelles. Les quatorze images du ch. 15 ont été inspectées en planche : elles illustrent surtout les fonctions
+et les équipements, sans apporter de scène de décision manquante ici. Le générateur et les médias sont conservés.
+Cette passe porte sur les distinctions ci-dessus ; elle ne revalide pas chaque carte ni les illustrations du livre.

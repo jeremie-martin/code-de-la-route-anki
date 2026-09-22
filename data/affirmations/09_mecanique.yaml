@@ -134,36 +134,40 @@
   sous_theme: adas
   source: Sécurité routière — Exemples de nouvelles questions (Q8) ; Code de la route, art. R412-6-3
 - id: aff-m-regulateur-obstacle
-  contexte: Régulateur de vitesse enclenché sur route à 80 km/h.
-  affirmation: Le régulateur coupe l'accélération si un obstacle surgit devant moi.
+  contexte: Régulateur de vitesse simple (non adaptatif) enclenché à 80 km/h ; le véhicule devant ralentit.
+  affirmation: Le régulateur va adapter ma vitesse à celle du véhicule devant.
   verdict: faux
-  pourquoi: 'Un régulateur simple ne voit rien : il maintient la vitesse jusqu''à ce que je freine ou que je débraye. Seul le régulateur adaptatif (ACC), équipé d''un radar, conserve la distance avec le véhicule qui précède.'
+  pourquoi: Le régulateur simple maintient la consigne sans gérer l’intervalle. Je ralentis moi-même pour conserver la distance de sécurité.
+    Un régulateur adaptatif peut agir sur la vitesse et les freins, mais sa détection et son freinage ont aussi des limites.
   theme: M
   sous_theme: adas
-  source: Stych — Aides à la conduite ; Ornikar — Limiteur et régulateur
+  source: CNSR, Les aides à la conduite, 2024 ; Renault — https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10
 - id: aff-m-regulateur-conditions
-  affirmation: Le régulateur de vitesse est déconseillé en circulation dense et sur chaussée glissante.
+  contexte: Ma voiture possède un régulateur de vitesse simple, non adaptatif.
+  affirmation: Il est déconseillé de l’utiliser en circulation dense ou sur chaussée glissante.
   verdict: vrai
-  pourquoi: 'Il retarde la réaction (le pied quitte les pédales) et favorise l''hypovigilance ; sur sol glissant, la reprise d''accélération peut faire patiner. On le réserve aux voies rapides fluides, pied près des pédales.'
+  pourquoi: En trafic dense, l’allure doit être ajustée fréquemment ; sur sol glissant, les variations automatiques de puissance
+    peuvent être inadaptées à l’adhérence. Je conduis moi-même à une allure adaptée et respecte les conditions d’utilisation de la notice.
   theme: M
   sous_theme: adas
-  source: Stych — Aides à la conduite ; Ornikar — Limiteur et régulateur
+  source: Renault, Régulateur de vitesse — https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10
 - id: aff-m-limiteur-descente
   contexte: Limiteur réglé sur 90 km/h, longue descente.
   affirmation: Le limiteur garantit le respect de 90 km/h dans toute descente.
   verdict: faux
-  pourquoi: 'Le limiteur n''agit que sur l''accélérateur : en descente, la voiture peut dépasser la consigne, sans
-    que le système freine. Je surveille le compteur et j''utilise le frein moteur ou le frein.'
+  pourquoi: Selon le système et la pente, la voiture peut dépasser la consigne malgré le limiteur.
+    Je surveille la vitesse et la maîtrise avec le frein moteur et les freins ; je ne suppose pas que le limiteur freinera à ma place.
   theme: M
   sous_theme: adas
-  source: Ornikar — Limiteur et régulateur ; Stych — Aides à la conduite
+  source: Renault, Limiteur de vitesse — https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4
 - id: aff-m-angle-mort-moto
-  affirmation: Le détecteur d'angle mort peut ne pas signaler une moto qui remonte vite la file voisine.
+  affirmation: Le détecteur d’angle mort peut ne pas signaler une moto qui remonte vite la file voisine.
   verdict: vrai
-  pourquoi: 'Les radars latéraux ont une portée limitée et détectent mal un usager étroit arrivant à grande vitesse. Le contrôle visuel par-dessus l''épaule reste la seule vérification fiable avant de se déporter.'
+  pourquoi: La zone et les conditions de détection sont limitées et varient selon le système. Une absence d’alerte ne prouve pas que la voie est libre.
+    Je combine rétroviseurs et contrôle direct de l’angle mort juste avant de me déporter, en continuant à surveiller devant.
   theme: M
   sous_theme: adas
-  source: securite-routiere.gouv.fr — ADAS ; Stych — Nouvelles aides à la conduite
+  source: Renault Express, Avertisseur d’angle mort — https://www.user-manual.renault.com/fr/content/xjk/driving/additional-driving-aid-functions/avertisseur-dangle-mort
 - id: aff-m-detecteur-fatigue
   contexte: Ma voiture est équipée d’un détecteur de fatigue (pictogramme « tasse de café »).
   affirmation: Tant que le détecteur ne m'alerte pas, je peux considérer que je suis apte à poursuivre.
@@ -195,15 +199,14 @@
   sous_theme: voyants
   source: Notices constructeurs (Renault, témoins lumineux) ; REMC
 - id: aff-m-regulateur-adaptatif
-  contexte: Régulateur adaptatif (ACC) enclenché sur autoroute, trafic fluide.
-  affirmation: Le système règle ma vitesse sur le véhicule qui précède, mais la surveillance et le freinage d'urgence
-    restent de ma responsabilité.
+  contexte: Sur autoroute, mon régulateur adaptatif suit une voiture. Elle change de voie et découvre une file arrêtée ; ma voiture ne ralentit pas.
+  affirmation: Je freine sans attendre une réaction du régulateur.
   verdict: vrai
-  pourquoi: L'ACC maintient un intervalle grâce à un radar ; il peut ne pas détecter un véhicule arrêté, un deux-roues
-    ou un obstacle en courbe, et ne remplace ni l'observation ni la décision.
+  pourquoi: Un véhicule arrêté soudainement découvert peut ne pas être détecté à temps ; le freinage du régulateur est limité.
+    Le maintien d’un intervalle avec un véhicule suivi ne garantit pas un arrêt d’urgence devant un nouvel obstacle.
   theme: M
   sous_theme: adas
-  source: CNSR, Comité des experts — Les aides à la conduite (ADAS), 2024
+  source: Renault Austral, Régulateur adaptatif — https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-adaptatif-0
 - id: aff-m-camera-recul
   contexte: Ma voiture est équipée d'une caméra de recul et de capteurs de stationnement.
   affirmation: Grâce à eux, je peux reculer sans contrôler les rétroviseurs ni l'angle mort.
