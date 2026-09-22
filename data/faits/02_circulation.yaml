@@ -177,6 +177,10 @@
   rappels:
   - Passer entièrement de l’autre côté d’une ligne continue, c’est la {{c1::franchir}}.
   - Empiéter sur une ligne continue sans passer entièrement de l’autre côté, c’est la {{c2::chevaucher}}.
+  illustration:
+    gen: ligne_continue_gestes
+    params: {}
+    legende: 'Chevaucher : les roues passent sur la ligne. Franchir : le véhicule passe entièrement de l’autre côté.'
 - id: l-croisement-largeur
   explication: 'Exception : les transports en commun en agglomération. En montagne, c’est le descendant qui s’arrête le premier
     ; pour reculer : véhicule seul avant ensemble, léger avant lourd, puis descendant sauf si le refuge est plus accessible

@@ -237,6 +237,14 @@
   theme: C
   sous_theme: distances
   source: "Cerema, Évaluation V80 (2020), annexe 2, https://www.onisr.securite-routiere.gouv.fr/sites/default/files/2020-07/Cerema-EvaluationV80-Juillet2020-Vdef3.pdf ; raccourci des supports de préparation"
+  illustration:
+    gen: distance_arret
+    params:
+      named: true
+      rows:
+      - reaction: 14
+        freinage: 20
+    legende: Pendant la réaction, je roule encore à pleine vitesse.
 - id: c-telephone-5s
   question: 'À 50 km/h constants, je quitte la route des yeux pendant 5 s. Comment estimer la distance
     parcourue sans regarder, et quel ordre de grandeur cela donne-t-il ?'
@@ -254,6 +262,18 @@
   reponse: '60 m : 20 m de réaction + 40 m de freinage.'
   explication: La réaction double, le freinage quadruple ; la distance d’arrêt totale ne quadruple donc pas automatiquement.
   source: "Modèle physique à décélération constante ; Sécurité routière, vitesse"
+  illustration:
+    gen: distance_arret
+    params:
+      total: true
+      rows:
+      - label: v
+        reaction: 10
+        freinage: 10
+      - label: 2 v
+        reaction: 20
+        freinage: 40
+    legende: 'À vitesse double : réaction × 2, freinage × 4.'
 - id: c-intervalle-repere
   theme: C
   sous_theme: distances

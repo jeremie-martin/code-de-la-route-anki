@@ -1649,7 +1649,7 @@ def _dim_v(S, x, y0, y1, label):
     _text(S, x + 14, (y0 + y1) / 2 + 7, label, LABEL_SIZE, INK, "start")
 
 
-ME_PATH = "#f2c200"                  # the yellow of MOI's halo: where MOI is going
+ME_PATH = YELLOW                     # the yellow of MOI's halo: where MOI is going
 
 
 def rue_stationnement(params):
@@ -1696,7 +1696,62 @@ def rue_stationnement(params):
     return str(S)
 
 
+# ------------------------------------------------------ distances, lines ---
+REACTION, BRAKING = VISIBLE, "#f6d0cb"     # pale yellow: I have not braked yet; pale sign red: I brake
+
+
+def distance_arret(params):
+    """Stopping distance as bars to scale: reaction then braking, one row per case.
+    rows: [{label?, reaction, freinage}] in metres; `named` writes the words in the bars instead of the metres
+    (and no legend), `total` writes each row's stopping distance at its end."""
+    rows, named = params["rows"], params.get("named", False)
+    L = 64 if any(r.get("label") for r in rows) else 16
+    right = 84 if params.get("total") else 16
+    top = 20 if named else 56
+    H = top + 64 * len(rows) + (52 if named else 8)
+    S = SVG(480, H)
+    S.add(f'<rect x="0" y="0" width="480" height="{H}" fill="{PAPER}"/>')
+    scale = (480 - L - right) / max(r["reaction"] + r["freinage"] for r in rows)
+    if not named:
+        for i, (name, fill, stroke) in enumerate((("réaction", REACTION, YELLOW), ("freinage", BRAKING, SIGN_RED))):
+            x = L + i * 150
+            S.add(f'<rect x="{x}" y="14" width="22" height="22" rx="4" fill="{fill}" stroke="{stroke}" stroke-width="2"/>')
+            _text(S, x + 30, 32, name, LABEL_SIZE, INK, "start", 400)
+    for i, r in enumerate(rows):
+        y = top + 64 * i
+        if r.get("label"):
+            _text(S, L - 12, y + 32, r["label"], NUMBER_SIZE, INK, "end")
+        x = L
+        for key, fill, stroke in (("reaction", REACTION, YELLOW), ("freinage", BRAKING, SIGN_RED)):
+            w = r[key] * scale
+            S.add(f'<rect x="{x}" y="{y + 8}" width="{w}" height="40" rx="4" fill="{fill}" stroke="{stroke}" stroke-width="2"/>')
+            _text(S, x + w / 2, y + 34, ("réaction" if key == "reaction" else "freinage") if named else f"{r[key]:g} m",
+                  LABEL_SIZE, INK, "middle", 700)
+            x += w
+        if params.get("total"):
+            _text(S, x + 10, y + 34, f"= {r['reaction'] + r['freinage']:g} m", LABEL_SIZE, INK, "start")
+        if named:                                                   # the sum, spanned under the bar
+            S.add(f'<path d="M{L},{y + 58} v8 H{x} v-8" fill="none" stroke="{INK}" stroke-width="2.5"/>')
+            _text(S, (L + x) / 2, y + 90, "distance d’arrêt", LABEL_SIZE, INK)
+    return str(S)
+
+
+def ligne_continue_gestes(params):
+    """The two gestures on a continuous line, side by side: straddle it (chevaucher), cross it entirely (franchir)."""
+    S = SVG(480, 330)
+    S.add(f'<rect x="0" y="0" width="480" height="330" fill="{PAPER}"/>')
+    for cx, name in ((120, "chevaucher"), (360, "franchir")):
+        S.add(f'<rect x="{cx - 90}" y="0" width="180" height="290" fill="{ASPHALT}"/>')
+        S.add(f'<path d="M{cx},0 V290" stroke="{MARK}" stroke-width="5"/>')
+        _text(S, cx, 318, name, LABEL_SIZE, INK)
+    S.add(f'<g transform="translate(120,150) rotate(-12)">{ME}</g>')                  # wheels on both sides
+    S.add(f'<path d="M405,280 C405,200 315,190 315,110" fill="none" stroke="{ME_PATH}" stroke-width="3" stroke-dasharray="8 6"/>')
+    S.add(f'<g transform="translate(315,100)">{ME}</g>')                               # entirely on the other side
+    return str(S)
+
+
 REGISTRY.update({
+    "distance_arret": distance_arret, "ligne_continue_gestes": ligne_continue_gestes,
     "rue_stationnement": rue_stationnement,
     "bretelle": bretelle, "pn_face": pn_face, "pn_plan": pn_plan,
     "autoroute_attente": autoroute_attente,
