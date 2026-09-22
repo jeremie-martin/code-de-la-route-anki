@@ -1,3 +1,19 @@
+# Relecture manuelle des schémas récents (22 septembre 2026)
+
+- Relecture du code des onze images de dix notes, de leurs symboles partagés et de leur relation aux
+  questions. Proportions corrigées pour les vélos et la dépanneuse chargée ; BAU ajustée pour conserver
+  des marges autour du véhicule. Espacement des cônes et lampes FLR corrigé après inspection du dessin officiel.
+- Entrecroisement redessiné avec des bretelles séparées et une voie commune clairement identifiable.
+  Camion placé en amont du carrefour, avec espace pour préparer le virage et rue réceptrice à double sens.
+  Au verso, les trajectoires restent visibles à travers le camion. Labels agrandis ; légende du masque
+  de visibilité déplacée hors des hachures. Les deux vues C107 sont conservées.
+- Paquet reconstruit : toujours 1 051 notes, 1 125 cartes et 370 médias. Questions, réponses, gabarits et
+  ordre d’introduction inchangés. Aucun ajout de carte ni nouvelle infrastructure de dessin.
+- Inspection manuelle des cartes à 390 px en clair et 320 px en sombre. À la demande de l’utilisateur,
+  aucune suite de contrôles automatisés relancée : le rapport de rendu décrit cette relecture ; le dernier
+  rapport d’import reste explicitement rattaché au paquet précédent. Aucun essai natif mobile, plan de
+  giration homologué ou nouvelle validation exhaustive des autres images du deck.
+
 # Cinq situations spatiales (22 septembre 2026)
 
 - Six notes améliorées : sortie de giratoire, entrecroisement, deux configurations sous C107,

@@ -890,3 +890,13 @@
   url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842217
   portee: 'R414-5 lu : dépasser à l’approche du passage suppose de s’assurer qu’aucun piéton n’est engagé. Secteur masqué construit depuis la place du conducteur jusqu’aux coins arrière du camion ; aucun piéton dessiné, visibilité ailleurs non garantie. Retrait de l’affirmation de présence probable et du rappel de sanctions sans rapport avec la décision.'
   notes: [scn-dep-passage-pieton]
+- id: revue-dessins-flr
+  consulte_le: '2026-09-22'
+  url: https://equipementsdelaroute.cerema.fr/IMG/pdf/iisr_8epartie_vc_20250904_partie_modif_par_arrete_avril2025etsept2025_relu_dsr.pdf
+  portee: 'Annexe FLR, page imprimée 56, réinspectée : les diagonales se croisent sur un feu commun et la rangée du bas compte huit feux distincts. Dessin corrigé pour séparer les deux lampes voisines au centre de cette rangée ; 13 feux actifs conservés, orientation cohérente avec B21a2. Relecture du symbole, sans nouvelle validation de l’implantation hors échelle.'
+  notes: [r-chantier-fleche-lumineuse]
+- id: revue-dessins-camion
+  consulte_le: '2026-09-22'
+  url: https://www.securite-routiere.gouv.fr/sites/default/files/2019-02/fiche_pedago_film_6.pdf
+  portee: 'Texte du PDF officiel déjà téléchargé relu : placement à gauche dans sa voie, puis progression dans le carrefour avant de tourner. Camion replacé en amont et rue de destination représentée à double sens. Schéma explicatif : empattement et rayons relus dans le code, arcs rendus visibles à travers la caisse ; pas de simulation de l’enveloppe réelle.'
+  notes: [u-pl-tourne-droite]

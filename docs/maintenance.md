@@ -154,6 +154,12 @@ Le build ajoute le média à l’explication existante, sans nouveau champ Anki 
 le générateur et réserve cet usage aux questions. Les panneaux éventuels dans `illustration.params`
 sont attribués comme ceux de `image.params`. Choisir le verso quand le dessin révélerait la réponse au recto.
 
+Pour relire une scène, suivre les coordonnées et les transformations jusque dans les symboles partagés :
+gabarit relatif des usagers, place dans la voie, sens de circulation, branches et espace disponible avant
+une manœuvre. Distinguer les panneaux montrés de face du plan routier. Inspecter ensuite la carte à taille
+réelle ; une absence de débordement ne prouve ni la lisibilité ni la justesse de la situation. Les raccourcis
+hors échelle doivent préserver les relations qui font décider. Conserver les éléments qui fonctionnent.
+
 Le thème **Signal** est dans `build/cards.css`, consolidé depuis le
 [handoff approuvé](signal-theme-handoff/README.md). Ce dossier reste une référence visuelle historique,
 pas une source de contenu à réimporter. Les tests comparent le rendu au CSS exporté et vérifient séparément

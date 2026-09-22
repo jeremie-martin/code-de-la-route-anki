@@ -1,4 +1,8 @@
-# Vérification du paquet
+# Dernière vérification automatisée du paquet
+
+La révision actuelle des schémas a été relue manuellement ; aucun contrôle d’import automatisé n’a été
+relancé pour cette révision. Les résultats ci-dessous concernent le **paquet précédent**, identifié par
+son SHA-256 en fin de rapport. Voir [la relecture actuelle des rendus](RENDU.md).
 
 Import réel en collection temporaire avec la bibliothèque Anki 26.9.2.
 

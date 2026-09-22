@@ -85,6 +85,14 @@ Ces idées peuvent être utiles, mais le coût, la redondance ou le risque de fu
 | `a-pls`, `a-rcp-dae`, `a-hemorragie` | Les cartes testent d’abord le choix de l’action selon l’état de la victime. Un dessin du geste au recto donne cette action ; une procédure graphique exigerait des références techniques et une vérification dédiée. Ne pas improviser une gestuelle médicale. |
 | Réglementation administrative, sanctions, seuils, formalités ; écoconduite générale | Aucun besoin manifeste de scène dans ce repérage. Ne pas ajouter de permis, billets, balances ou voitures décoratives aux rappels numériques et conceptuels. Un tableau explicatif peut suffire si une confusion précise apparaît. |
 
+## Relecture du lot intégré
+
+Les onze images des dix notes intégrées ont été relues dans leur code et sur les cartes : proportions
+relatives des véhicules, continuité des voies, place avant la manœuvre, masques et lisibilité des légendes.
+Voir l’entrée « Relecture manuelle des schémas récents » dans [l’historique](../CHANGELOG.md).
+Les deux C107 sont conservés ; les autres corrections améliorent les situations existantes sans ajouter
+une nouvelle cible de rappel. Cette relecture ne valide pas toutes les anciennes images du deck.
+
 ## Comment reprendre ce travail
 
 Les deux lots sont intégrés ; voir [l’historique](../CHANGELOG.md), entrées « Trois scènes de décision »
