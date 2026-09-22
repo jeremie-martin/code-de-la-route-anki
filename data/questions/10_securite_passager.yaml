@@ -71,6 +71,10 @@
   theme: S
   sous_theme: enfants
   source: "Code de la route, art. R412-3 ; règlement ONU R129 (i-Size) ; securite-routiere.gouv.fr, Enfants en voiture"
+  illustration:
+    gen: siege_dos_route
+    params: {}
+    legende: Dos à la route, la tête du bébé est du côté de la planche de bord, là où l’airbag se déploie.
 - id: s-groupes-sieges
   question: Comment choisit-on un siège enfant ?
   reponse: Un siège homologué adapté à la taille et au poids de l’enfant, compatible avec la voiture et la place choisie.

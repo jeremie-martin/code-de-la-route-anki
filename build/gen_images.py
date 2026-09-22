@@ -1136,6 +1136,8 @@ SIGN_RED, SIGN_BLUE = "#d52b1e", "#1f5fae"
 PAPER = "#ffffff"
 HIDDEN = "#bac2c5"            # same hatch as the masked zone of the scenarios
 VISIBLE = "#fff9c4"
+SKIN, CLOTH, CLOTH_DARK = "#f2c8a0", "#5c7a99", "#3e556b"    # people
+SEAT, SEAT_DARK = "#d7dde0", "#c5ccd0"                       # seats, head restraints, dashboard
 LABEL_SIZE, NUMBER_SIZE = 18, 20
 
 
@@ -1540,12 +1542,12 @@ def ceinture(params):
     variant = params.get("variante", "correcte")
     S = SVG(360, 420)
     S.add(f'<rect x="0" y="0" width="360" height="420" fill="{PAPER}"/>')
-    S.add('<rect x="70" y="60" width="220" height="340" rx="30" fill="#d7dde0"/>')                  # seat back
-    S.add('<rect x="130" y="20" width="100" height="60" rx="16" fill="#c5ccd0"/>')                  # head rest
-    S.add('<circle cx="180" cy="82" r="36" fill="#f2c8a0"/>')                                      # head
-    S.add('<path d="M110,140 Q180,112 250,140 L262,300 L98,300 Z" fill="#5c7a99"/>')               # torso
-    S.add('<path d="M110,140 L78,280 M250,140 L282,280" stroke="#f2c8a0" stroke-width="22" stroke-linecap="round"/>')
-    S.add('<path d="M98,300 H262 L256,352 H104 Z" fill="#3e556b"/>')                               # hips
+    S.add(f'<rect x="70" y="60" width="220" height="340" rx="30" fill="{SEAT}"/>')                  # seat back
+    S.add(f'<rect x="130" y="20" width="100" height="60" rx="16" fill="{SEAT_DARK}"/>')                  # head rest
+    S.add(f'<circle cx="180" cy="82" r="36" fill="{SKIN}"/>')                                      # head
+    S.add(f'<path d="M110,140 Q180,112 250,140 L262,300 L98,300 Z" fill="{CLOTH}"/>')               # torso
+    S.add(f'<path d="M110,140 L78,280 M250,140 L282,280" stroke="{SKIN}" stroke-width="22" stroke-linecap="round"/>')
+    S.add(f'<path d="M98,300 H262 L256,352 H104 Z" fill="{CLOTH_DARK}"/>')                               # hips
     if variant == "enceinte":
         S.add('<ellipse cx="180" cy="262" rx="62" ry="46" fill="#6d8aa8"/>')
     belt = WRONG if variant == "sous_bras" else INK
@@ -1656,7 +1658,8 @@ def rue_stationnement(params):
     """Two-way street seen from above, my lane going up, a parking lane on the right along the pavement.
     parked: y centres of the parked cars; door: index of the car whose driver's door is open;
     door_label: its reach, written on the pavement; me: y of MOI (with a door open, the line its right side follows);
-    crossing: y of a zebra crossing, with `no_parking` the 5 m before it (upstream) marked and measured."""
+    crossing: y of a zebra crossing, with `no_parking` the 5 m before it (upstream) marked and measured;
+    child: y of a child standing in a gap between the parked cars, about to step out."""
     S = SVG(420, 400, view=(80, 0, 340, 400))                                 # half of the oncoming lane is enough
     S.add(f'<rect x="0" y="0" width="420" height="400" fill="#cfd3d4"/>')     # pavements
     road0, axis, park0, park1 = 30, 120, 210, 272
@@ -1688,6 +1691,10 @@ def rue_stationnement(params):
             if params.get("door_label"):
                 S.add(f'<path d="M{px + 26},{y - 6} H{park1 + 12}" stroke="{INK}" stroke-width="1.5" stroke-dasharray="4 4"/>')
                 _text(S, park1 + 16, y, params["door_label"], LABEL_SIZE, INK, "start")
+    if params.get("child") is not None:                  # a child in a gap between parked cars, about to step out
+        y = params["child"]
+        S.add(_person(px - 4, y, SIGN_RED))
+        S.add(f'<path d="M{px - 20},{y} H{px - 50} m8,-7 l-8,7 l8,7" fill="none" stroke="{MARK}" stroke-width="3"/>')
     if params.get("me") is not None:
         me_x = px - 22 - 22 - 22            # a door's reach (≈ 1 m, 22 px) between MOI and the parked cars
         if params.get("door") is not None:
@@ -1750,7 +1757,185 @@ def ligne_continue_gestes(params):
     return str(S)
 
 
+# ------------------------------------------------------ at the wheel ---
+
+def _limb(a, b, width, colour):
+    return (f'<path d="M{a[0]:.1f},{a[1]:.1f} L{b[0]:.1f},{b[1]:.1f}" stroke="{colour}" stroke-width="{width}" '
+            f'stroke-linecap="round"/>')
+
+
+def _knee(hip, ankle, thigh, shin):
+    """Two-segment leg: the knee bends upwards (towards the top of the drawing)."""
+    dx, dy = ankle[0] - hip[0], ankle[1] - hip[1]
+    d = math.hypot(dx, dy)
+    if d > thigh + shin:
+        raise ValueError("the leg cannot reach the pedal")
+    along = (thigh ** 2 - shin ** 2 + d ** 2) / (2 * d)
+    h = math.sqrt(max(thigh ** 2 - along ** 2, 0))
+    ux, uy = dx / d, dy / d
+    return hip[0] + ux * along + uy * h, hip[1] + uy * along - ux * h
+
+
+SEAT_HIP, SEAT_LEAN = (160, 250), math.radians(15)     # side views: occupant's hip on the cushion, backrest lean
+
+
+def _side_seat(S, head_top):
+    """Front seat seen from the side (car front to the right), backrest leaning back; the head restraint's top front
+    corner at `head_top` (distance along the backrest from hip level), right behind the head of an adult occupant."""
+    up, fwd = (-math.sin(SEAT_LEAN), -math.cos(SEAT_LEAN)), (math.cos(SEAT_LEAN), -math.sin(SEAT_LEAN))
+    ox, oy = SEAT_HIP[0] - fwd[0] * 25, SEAT_HIP[1] - fwd[1] * 25          # backrest front face, at hip level
+    S.add(f'<g transform="translate({ox:.1f},{oy:.1f}) rotate(-15)">'
+          f'<rect x="-22" y="-172" width="6" height="30" fill="#9aa0a2"/>'
+          f'<rect x="-34" y="{-head_top / math.cos(SEAT_LEAN) - 4:.1f}" width="34" height="62" rx="12" fill="{SEAT_DARK}"/>'
+          f'<rect x="-36" y="-158" width="36" height="190" rx="14" fill="{SEAT}"/></g>')
+    S.add(f'<path d="M116,262 L264,248 Q274,248 274,258 L274,272 Q274,282 264,282 L124,298 Z" fill="{SEAT}"/>')
+    S.add(f'<rect x="196" y="292" width="44" height="50" fill="{SEAT_DARK}"/>')
+    S.add(f'<path d="M352,150 L480,140 L480,240 L346,232 Q336,190 352,150 Z" fill="{SEAT_DARK}"/>')   # dashboard
+
+
+def poste_conduite(params):
+    """Driver seen from the side (car front to the right), in the settings check: pedal pressed fully with the leg
+    still slightly bent, shoulders against the backrest, arms straight with the wrists on top of the wheel, top of
+    the head restraint level with the top of the head, close behind it. `focus`: jambe | bras | tete adds the
+    matching callout."""
+    S = SVG(480, 360)
+    S.add(f'<rect x="0" y="0" width="480" height="360" fill="{PAPER}"/>')
+    S.add('<rect x="0" y="342" width="480" height="18" fill="#9aa0a2"/>')                         # floor
+    up, fwd = (-math.sin(SEAT_LEAN), -math.cos(SEAT_LEAN)), (math.cos(SEAT_LEAN), -math.sin(SEAT_LEAN))
+    hip, torso, neck, half, head_r = SEAT_HIP, 150, 40, 25, 26
+    at = lambda d_up, d_fwd=0: (hip[0] + up[0] * d_up + fwd[0] * d_fwd, hip[1] + up[1] * d_up + fwd[1] * d_fwd)  # noqa: E731
+    shoulder, head = at(torso), at(torso + neck)
+    _side_seat(S, torso + neck + head_r)
+    # steering column and pedal hanging from under the dashboard
+    tilt, wheel_r = math.radians(20), 45
+    wrist = (shoulder[0] + 165 * math.cos(math.radians(10)), shoulder[1] + 165 * math.sin(math.radians(10)))
+    # the rim's top leans forward: centre and bottom lie back and down from the wrist resting on the top
+    centre = (wrist[0] - wheel_r * math.sin(tilt), wrist[1] + 7 + wheel_r * math.cos(tilt))
+    rim_top = (centre[0] + wheel_r * math.sin(tilt), centre[1] - wheel_r * math.cos(tilt))
+    bottom = (centre[0] - wheel_r * math.sin(tilt), centre[1] + wheel_r * math.cos(tilt))
+    S.add(_limb(centre, (centre[0] + 104 * math.cos(tilt), centre[1] + 104 * math.sin(tilt)), 12, "#555"))
+    pad = (402, 300)
+    S.add(_limb((414, 236), pad, 7, "#555") + _limb((pad[0] - 3, pad[1] - 14), (pad[0] + 5, pad[1] + 12), 10, "#333"))
+    # leg: thigh along the cushion, knee slightly bent, foot pressing the pedal fully
+    ankle = (378, 314)
+    knee = _knee(hip, ankle, 122, 122)
+    S.add(_limb(hip, knee, 38, CLOTH_DARK) + _limb(knee, ankle, 30, CLOTH_DARK))
+    S.add(_limb(ankle, (pad[0] - 2, pad[1] - 4), 16, "#333"))                              # shoe on the pedal
+    # torso, head, steering wheel seen edge-on, then the near arm: straight, wrist on the top of the rim
+    S.add(_limb(hip, shoulder, 2 * half, CLOTH))
+    S.add(f'<circle cx="{head[0]:.1f}" cy="{head[1]:.1f}" r="{head_r}" fill="{SKIN}"/>')
+    S.add(_limb(rim_top, bottom, 12, "#333"))
+    S.add(_limb(shoulder, wrist, 20, CLOTH) + _limb(wrist, (wrist[0] + 16, wrist[1] + 8), 14, SKIN))
+    focus = params.get("focus")
+    if focus == "tete":
+        y = head[1] - head_r
+        S.add(f'<path d="M30,{y:.1f} H200" stroke="{INK}" stroke-width="2" stroke-dasharray="6 5"/>')
+        _pill(S, 214, y + 7, "même hauteur")
+    elif focus == "jambe":
+        _pill(S, 214, 334, "jambe encore fléchie")
+    elif focus == "bras":
+        _pill(S, 214, 108, "poignets sur le haut du volant")
+        _pill(S, 12, 334, "épaules au dossier")
+    return str(S)
+
+
+def siege_dos_route(params):
+    """Front passenger seat from the side with a rear-facing infant carrier: the baby's head is at the high end of the
+    shell, towards the dashboard, where an active frontal airbag would strike."""
+    S = SVG(480, 360)
+    S.add(f'<rect x="0" y="0" width="480" height="360" fill="{PAPER}"/>')
+    S.add('<rect x="0" y="342" width="480" height="18" fill="#9aa0a2"/>')                         # floor
+    _side_seat(S, 216)
+    # carrier shell on the cushion, reclined, its back facing forward; the baby lies in it facing the rear
+    S.add('<path d="M168,246 Q176,282 214,280 L262,262 Q300,244 306,176 L290,172 Q284,232 250,246 L206,262 Q186,262 182,242 Z" '
+          'fill="#6d8aa8" stroke="#3e556b" stroke-width="2"/>')
+    S.add(_limb((206, 252), (262, 222), 22, "#f7e3a1"))                                   # body in a light suit
+    S.add(f'<circle cx="276" cy="200" r="15" fill="{SKIN}"/>')
+    S.add('<path d="M188,236 Q240,150 300,170" fill="none" stroke="#3e556b" stroke-width="6"/>')        # handle
+    # the airbag, deployed from the dashboard, reaching the shell at the head
+    S.add(f'<ellipse cx="338" cy="188" rx="48" ry="42" fill="{PAPER}" stroke="{WRONG}" stroke-width="3" stroke-dasharray="8 5"/>')
+    _pill(S, 470, 124, "airbag", colour=WRONG, anchor="end")
+    return str(S)
+
+
+def volant_mains(params):
+    """Steering wheel from the driver's seat, hands at 9 h 15: each hand grips the rim just above the side spoke,
+    thumb resting along the rim instead of hooked round the spoke."""
+    S = SVG(420, 340)
+    S.add(f'<rect x="0" y="0" width="420" height="340" fill="{PAPER}"/>')
+    cx, cy, r = 210, 170, 120
+    S.add(f'<path d="M{cx - r + 6},{cy + 8} H{cx + r - 6} M{cx},{cy} V{cy + r - 6}" stroke="#555" stroke-width="18"/>')
+    S.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="#333" stroke-width="22"/>')
+    S.add(f'<circle cx="{cx}" cy="{cy + 4}" r="40" fill="#555"/>')
+    for side in (-1, 1):
+        x = cx + side * r
+        S.add(f'<rect x="{x - 19}" y="{cy - 30}" width="38" height="46" rx="16" fill="{SKIN}" stroke="#c99a70" stroke-width="2"/>')
+        # thumb along the inside of the rim, pointing up (mirrored for the right hand)
+        rho = r - 12
+        thumb = [(cx - side * rho * math.cos(math.radians(a)), cy - rho * math.sin(math.radians(a))) for a in (172, 160)]
+        S.add(_limb(thumb[0], thumb[1], 14, SKIN))
+    return str(S)
+
+
+def retroviseur(params):
+    """What a well set mirror shows. vue: 'interieur' (the whole rear window, framed by the cabin) or 'exterieur'
+    (left door mirror: the road behind and beside, a thin strip of my own car on the inner edge, horizon mid-height)."""
+    if params.get("vue", "interieur") == "interieur":
+        S = SVG(480, 200)
+        S.add(f'<rect x="0" y="0" width="480" height="200" fill="{PAPER}"/>')
+        S.add('<rect x="20" y="24" width="440" height="152" rx="44" fill="#222"/>')
+        S.add('<clipPath id="glace"><rect x="32" y="36" width="416" height="128" rx="34"/></clipPath>')
+        S.add(f'<g clip-path="url(#glace)"><rect x="0" y="0" width="480" height="200" fill="{SEAT}"/>'   # cabin lining
+              + "".join(f'<rect x="{x - 26}" y="148" width="52" height="30" rx="10" fill="{SEAT_DARK}"/>' for x in (130, 350))
+              + '</g>')                                                  # rear head restraints, below the window
+        S.add('<clipPath id="lunette"><path d="M96,52 H384 L412,140 H68 Z"/></clipPath>')
+        S.add('<g clip-path="url(#lunette)">'
+              '<rect x="0" y="0" width="480" height="200" fill="#dbe9f5"/>'
+              f'<rect x="0" y="98" width="480" height="102" fill="{GRASS}"/>'
+              f'<path d="M190,98 H290 L400,160 H80 Z" fill="{ASPHALT}"/>'
+              f'<rect x="220" y="108" width="40" height="22" rx="6" fill="{CAR_COLOURS["gris"]}" stroke="#111" stroke-width="1.5"/>'
+              '<rect x="226" y="112" width="28" height="7" rx="2" fill="#cfe6f7"/></g>')
+        S.add('<path d="M96,52 H384 L412,140 H68 Z" fill="none" stroke="#9aa0a2" stroke-width="4"/>')
+        return str(S)
+    S = SVG(360, 260)
+    S.add(f'<rect x="0" y="0" width="360" height="260" fill="{PAPER}"/>')
+    S.add('<path d="M40,40 H300 Q330,40 330,70 V200 Q330,230 300,230 H70 Q30,230 26,190 L20,80 Q18,40 40,40 Z" fill="#222"/>')
+    S.add('<clipPath id="miroir"><path d="M48,54 H296 Q316,54 316,74 V196 Q316,216 296,216 H74 Q44,216 40,186 L34,84 Q32,54 48,54 Z"/></clipPath>')
+    S.add('<g clip-path="url(#miroir)">'
+          '<rect x="0" y="0" width="360" height="135" fill="#dbe9f5"/>'
+          f'<rect x="0" y="135" width="360" height="125" fill="{GRASS}"/>'
+          f'<path d="M150,135 H190 L300,260 H-40 Z" fill="{ASPHALT}"/>'
+          f'<path d="M170,138 L150,260" stroke="{MARK}" stroke-width="4" stroke-dasharray="14 14"/>'
+          f'<rect x="120" y="150" width="34" height="20" rx="5" fill="{CAR_COLOURS["gris"]}" stroke="#111" stroke-width="1.5"/>'
+          '<rect x="125" y="153" width="24" height="6" rx="2" fill="#cfe6f7"/>'
+          f'<path d="M286,0 H360 V260 H276 Q270,130 286,0 Z" fill="{CAR_COLOURS["bleu"]}"/></g>')         # my car's side
+    return str(S)
+
+
+def champ_visuel(params):
+    """Plan view: from my seat, the narrow central vision (reads, identifies) inside the wide peripheral field
+    (detects movement), and a pedestrian stepping off the pavement on the edge of the field."""
+    S = SVG(480, 400)
+    S.add(f'<rect x="0" y="0" width="480" height="400" fill="#cfd3d4"/>')
+    S.add(f'<rect x="100" y="0" width="260" height="400" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M230,0 V400" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 30"/>')
+    eye = (290, 300)
+    R = 250
+    wide = [(eye[0] + R * math.sin(math.radians(a)), eye[1] - R * math.cos(math.radians(a))) for a in range(-90, 91, 10)]
+    S.add(f'<path d="M{eye[0]},{eye[1]} ' + " ".join(f"L{x:.0f},{y:.0f}" for x, y in wide) + f' Z" fill="{VISIBLE}" opacity="0.35"/>')
+    narrow = [(eye[0] + R * math.sin(math.radians(a)), eye[1] - R * math.cos(math.radians(a))) for a in (-6, 6)]
+    S.add(f'<path d="M{eye[0]},{eye[1]} L{narrow[0][0]:.0f},{narrow[0][1]:.0f} L{narrow[1][0]:.0f},{narrow[1][1]:.0f} Z" '
+          f'fill="{YELLOW}" opacity="0.55"/>')
+    S.add(f'<g transform="translate(290,330)">{ME}</g>')
+    S.add(_person(392, 200) + f'<path d="M378,200 H350 m8,-7 l-8,7 l8,7" fill="none" stroke="{INK}" stroke-width="3"/>')
+    _pill(S, 274, 40, "vision centrale : précise", anchor="end")
+    _pill(S, 16, 250, "vision périphérique :")
+    _pill(S, 16, 282, "détecte les mouvements")
+    return str(S)
+
+
 REGISTRY.update({
+    "poste_conduite": poste_conduite, "siege_dos_route": siege_dos_route, "volant_mains": volant_mains, "retroviseur": retroviseur, "champ_visuel": champ_visuel,
     "distance_arret": distance_arret, "ligne_continue_gestes": ligne_continue_gestes,
     "rue_stationnement": rue_stationnement,
     "bretelle": bretelle, "pn_face": pn_face, "pn_plan": pn_plan,

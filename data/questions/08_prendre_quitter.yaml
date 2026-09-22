@@ -46,6 +46,11 @@
   theme: P
   sous_theme: installation
   source: "REMC ; securite-routiere.gouv.fr, S'installer au poste de conduite"
+  illustration:
+    gen: poste_conduite
+    params:
+      focus: jambe
+    legende: Pédale enfoncée à fond, la jambe reste légèrement fléchie.
 - id: p-dossier-reglage
   question: Le siège est à la bonne distance. Comment je vérifie l'inclinaison du dossier ?
   reponse: Bras tendus, poignets posés sur le haut du volant sans décoller les épaules du dossier ; en conduite, les bras
@@ -55,6 +60,11 @@
   theme: P
   sous_theme: installation
   source: "En Voiture Simone, S'installer ; REMC"
+  illustration:
+    gen: poste_conduite
+    params:
+      focus: bras
+    legende: Bras tendus, poignets posés sur le volant, sans décoller les épaules.
 - id: p-appuie-tete
   question: Je viens de régler mon siège. À quelle hauteur je place l'appuie-tête ?
   reponse: Son sommet au niveau du sommet de ma tête, le plus près possible de la nuque ; trop bas, il fait pivot et aggrave
@@ -64,6 +74,11 @@
   theme: P
   sous_theme: installation
   source: "securite-routiere.gouv.fr, Bien régler son appuie-tête ; Euro NCAP"
+  illustration:
+    gen: poste_conduite
+    params:
+      focus: tete
+    legende: Le sommet de l’appuie-tête au niveau du sommet de la tête, tout près de la nuque.
 - id: p-retro-interieur
   question: Assis en position de conduite, je règle un rétroviseur intérieur à miroir classique. Quelle vue dois-je
     obtenir ?
@@ -73,6 +88,11 @@
   theme: P
   sous_theme: installation
   source: "REMC ; Codes Rousseau, Les rétroviseurs"
+  illustration:
+    gen: retroviseur
+    params:
+      vue: interieur
+    legende: Toute la lunette arrière, cadrée dans le miroir.
 - id: p-retro-exterieurs
   question: À l’arrêt sur terrain plat, assis en position de conduite, quelle vue rechercher dans les rétroviseurs
     extérieurs ?
@@ -83,6 +103,11 @@
   theme: P
   sous_theme: installation
   source: "REMC ; Renault, rétroviseurs, https://www.user-manual.renault.com/fr/r%C3%A9trovision/retroviseurs-1"
+  illustration:
+    gen: retroviseur
+    params:
+      vue: exterieur
+    legende: 'Rétroviseur gauche : un filet de carrosserie sur le bord intérieur, l’horizon vers le milieu.'
 - id: p-ceinture-position
   question: 'Je boucle ma ceinture : par où doivent passer les deux sangles ?'
   reponse: Sangle basse sur les os du bassin, sangle haute au milieu de l’épaule puis sur le sternum ; à plat, non vrillée,
@@ -104,6 +129,10 @@
   theme: P
   sous_theme: installation
   source: "REMC ; securite-routiere.gouv.fr, S'installer au poste de conduite"
+  illustration:
+    gen: volant_mains
+    params: {}
+    legende: '9 h 15 : les pouces reposent sur la jante, sans s’accrocher aux branches.'
 - id: p-ordre-installation
   question: J’ai réglé mes rétroviseurs, puis avancé et remonté mon siège. Puis-je garder le réglage des miroirs
     sans le vérifier ?

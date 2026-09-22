@@ -66,6 +66,16 @@
   theme: C
   sous_theme: vigilance
   source: "Sécurité routière, Exemples de nouvelles questions (Q3)"
+  illustration:
+    gen: rue_stationnement
+    params:
+      parked:
+      - 40
+      - 150
+      - 300
+      child: 225
+      me: 350
+    legende: Plus petit qu’un capot, l’enfant entre deux voitures reste caché jusqu’au dernier moment.
 - id: c-trottinette-vulnerable
   question: Pourquoi un usager de trottinette électrique est-il particulièrement vulnérable ?
   reponse: Équilibre précaire (petites roues, freinage inégal) et faible gabarit peu détectable, surtout dans les

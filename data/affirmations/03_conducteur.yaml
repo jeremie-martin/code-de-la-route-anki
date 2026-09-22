@@ -16,6 +16,10 @@
   theme: C
   sous_theme: perception
   source: "Code en Poche, Le champ visuel ; securite-routiere.gouv.fr, Dépliant La vue"
+  illustration:
+    gen: champ_visuel
+    params: {}
+    legende: La vision centrale identifie ; la vision périphérique repère le piéton qui bouge.
 - id: aff-c-nuit-distances
   contexte: Je conduis de nuit.
   affirmation: 'La perception du relief et des contrastes est atténuée : je risque de mal estimer les distances.'
