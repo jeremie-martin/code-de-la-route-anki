@@ -6,7 +6,6 @@ import unittest
 
 from build.models import CSS
 from build.preview import CHROME
-from build.render_check import MEASURE, page_html
 
 HANDOFF = Path(__file__).resolve().parents[1] / 'docs/signal-theme-handoff'
 # Compare observable layout and typography, not the lab's redundant cascade.
@@ -28,6 +27,7 @@ SNAPSHOT = """() => [...document.querySelectorAll(
 class SignalThemeTests(unittest.TestCase):
     def test_approved_rendering_and_independent_night_aliases(self):
         from playwright.sync_api import sync_playwright
+        from build.render_check import MEASURE, page_html
         # The only intended differences from the export: structural helpers and readable A/B labels.
         reference = (HANDOFF / 'signal.css').read_text() + '''
 .cdr-reference h3 { font-size:16px; margin:16px 0 8px; }
@@ -69,6 +69,7 @@ ul.cdr-list { padding-left:24px; }
 
     def test_signal_review_affordances(self):
         from playwright.sync_api import sync_playwright
+        from build.render_check import page_html
         body = '''<div class="cdr-wrap cdr-back"><div class="cdr-aff">Une affirmation</div>
 <hr id="answer"><div class="cdr-a">Réponse</div><div class="cdr-box">Explication</div>
 <div class="cdr-fait"><span class="cloze">Cible</span></div>
