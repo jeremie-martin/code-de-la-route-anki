@@ -363,16 +363,16 @@
       axis: discontinue
       vehicles:
       - lane: 1
-        y: 60
-        colour: gris
-      - lane: 1
-        y: 15
+        y: 55
         colour: bleu
         me: true
+      - lane: 1
+        y: 15
+        colour: gris
       extras:
       - kind: sommet
         y: 70
-    legende: 'Garée juste avant le sommet : ceux qui arrivent ne la voient qu’au dernier moment.'
+    legende: Pour contourner ma voiture, ceux qui suivent doivent se déporter sans voir ce qui arrive en face.
 - id: l-stationnement-hors-agglo-nuit
   question: Je dois m'arrêter sur une route de campagne. Où placer mon véhicule ?
   reponse: Hors de la chaussée si l’accotement le permet ; sinon à droite, dans mon sens de marche, au plus près du bord.

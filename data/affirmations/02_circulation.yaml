@@ -373,7 +373,7 @@
         y: 20
         colour: bleu
         me: true
-      - lane: 1
+      - lane: 3
         y: 80
         colour: gris
 - id: aff-l-ilot-droite
@@ -544,8 +544,7 @@
   contexte: Temps sec, permis hors période probatoire, hors agglomération, sur cette section.
   affirmation: Je peux y rouler à 90 km/h sur ces voies.
   verdict: vrai
-  pourquoi: R413-2 relève la vitesse à 90 km/h sur les sections comportant au moins deux voies affectées au même
-    sens, sur ces seules voies. Le sens à une voie reste à 80, et le permis probatoire aussi.
+  pourquoi: R413-2 relève la vitesse à 90 km/h sur les sections comportant au moins deux voies affectées au même sens, sur ces seules voies. Ces sections sont signalées (panneau 90 à leur début) ; c’est la présence de deux voies dans mon sens qui les caractérise. Le sens à une voie reste à 80, et le permis probatoire aussi.
   theme: L
   sous_theme: vitesse
   source: Code de la route, art. R413-2 I 3° et R413-5

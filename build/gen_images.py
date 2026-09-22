@@ -1703,8 +1703,8 @@ def rue_stationnement(params):
         S.add(f'<rect x="{mx}" y="{my}" width="130" height="92" rx="10" fill="{PAPER}" stroke="#9aa0a2" stroke-width="2"/>')
         S.add(f'<g transform="translate({mx + 8},{my + 84}) scale(0.48)">' + _car_side(0, 0, "gris") + '</g>')
         _hidden_pattern(S, "cache")
-        S.add(f'<g transform="translate({mx + 74},{my + 80})"><circle cx="0" cy="-50" r="8" fill="url(#cache)" '
-              f'stroke="{INK}" stroke-width="1.5" stroke-dasharray="3 2"/><rect x="-7" y="-41" width="14" height="36" rx="5" '
+        S.add(f'<g transform="translate({mx + 74},{my + 80})"><circle cx="0" cy="-30" r="6" fill="url(#cache)" '
+              f'stroke="{INK}" stroke-width="1.5" stroke-dasharray="3 2"/><rect x="-5" y="-23" width="10" height="20" rx="4" '
               f'fill="url(#cache)" stroke="{INK}" stroke-width="1.5" stroke-dasharray="3 2"/></g>')
     if params.get("me") is not None:
         me_x = px - 22 - 22 - 22            # a door's reach (≈ 1 m, 22 px) between MOI and the parked cars

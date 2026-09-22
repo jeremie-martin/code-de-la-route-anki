@@ -471,7 +471,7 @@ Recherche Anki : `objectif::l-depasser`
 
 Ne pas confondre trajectoire, clignotant et droit de passage.
 
-27 notes / 27 cartes.
+26 notes / 26 cartes.
 
 Recherche Anki : `objectif::l-position`
 
@@ -482,12 +482,11 @@ Recherche Anki : `objectif::l-position`
 | `l-depassement-droite` | socle | questions | Code de la route, art. R414-6 et R414-15 |
 | `l-position-chaussee` | socle | questions | Code de la route, art. R412-9 et R412-23 |
 | `l-tourner-droite-serrer` | socle | questions | Code de la route, art. R412-9, R412-23 et R415-14 |
-| `l-file-changement` | socle | questions | Code de la route, art. R412-24 et R414-15 |
+| `l-file-changement` | consolidation | questions | Code de la route, art. R412-24 et R414-15 |
 | `l-demi-tour-marche-arriere` | consolidation | questions | Code de la route, art. R421-6 et R412-19 |
-| `l-ligne-rive-franchir` | consolidation | questions | IISR 7e partie ; Code de la route, art. R412-22 |
+| `l-ligne-rive-franchir` | consolidation | questions | Code de la route, art. R412-19 et R412-22 ; IISR 7e partie, art. 114-4 |
 | `l-vocab-chaussee-voie` | socle | questions | Code de la route, art. R110-2 ; IISR 7e partie |
 | `l-clignotant-quand` | socle | questions | Code de la route, art. R412-10 |
-| `l-retrecissement-croisement` | socle | questions | Code de la route, art. R414-1 ; règle de conduite (programme REMC) |
 | `l-voie-lents` | consolidation | questions | Code de la route, R422-1 |
 | `l-tourner-gauche-placement` | socle | questions | Code de la route, art. R415-4 |
 | `aff-l-files-droite` | socle | affirmations | Code de la route, art. R414-15 et R412-24 |
@@ -500,7 +499,7 @@ Recherche Anki : `objectif::l-position`
 | `aff-l-croisement-depasseur-en-face` | socle | affirmations | Code de la route, art. R414-1 et R413-17 |
 | `aff-l-virage-gauche-axe` | socle | affirmations | Code de la route, art. R412-9 et R413-17 |
 | `scn-pos-trois-voies` | consolidation | scenarios | Code de la route, art. R414-8 |
-| `scn-pos-croisement-obstacle` | consolidation | scenarios | Code de la route, art. R414-1 ; règle de conduite (programme REMC) |
+| `scn-pos-croisement-obstacle` | socle | scenarios | Code de la route, art. R414-1 ; règle de conduite (programme REMC) |
 | `scn-pos-bau-bouchon` | consolidation | scenarios | Code de la route, art. R412-8 et R416-18 |
 | `scn-crois-b15-je-cede` | consolidation | scenarios | IISR 4e et 5e parties (B15, C18) ; Code de la route, art. R414-1 |
 | `scn-crois-c18-je-passe` | consolidation | scenarios | IISR 5e partie (C18) ; Code de la route, art. R414-1 |
@@ -820,7 +819,7 @@ Recherche Anki : `objectif::r-tunnel-rail`
 | `r-tram-priorite` | socle | questions | Code de la route, art. R422-3 et R414-13 |
 | `r-tram-traversee-degager` | consolidation | questions | Code de la route, art. R422-3 et R417-11 ; coursdecode.com, Les tramways |
 | `aff-r-pn-150m` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR |
-| `aff-r-pn-feux-rouges-possibles` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR, 6e partie |
+| `aff-r-pn-feux-rouges-possibles` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR, 4e partie (signal G2) |
 | `aff-r-pn-barriere-contourner` | consolidation | affirmations | Code de la route, art. R422-3 ; SNCF Réseau |
 | `aff-r-tunnel-demi-tour` | consolidation | affirmations | CETU, Conduire en tunnel ; IISR (panneau C111, règles de circulation en tunnel) |
 | `aff-r-tram-station-pieton` | consolidation | affirmations | Code de la route, art. R414-13 ; coursdecode.com, Les tramways |
@@ -1523,8 +1522,8 @@ Recherche Anki : `objectif::d-sanctions`
 |---|---|---|---|
 | `d-telephone-sanction` | socle | faits | Code de la route, art. R412-6-1, R412-6-2, L224-1 et L224-2 |
 | `d-ceinture-sanction` | consolidation | faits | Code de la route, art. R412-1 et R412-2 |
-| `d-feu-rouge-stop-sanction` | consolidation | faits | Code de la route, art. R412-30, R412-31, R415-5 à R415-11 |
-| `d-vitesse-bareme` | consolidation | faits | Code de la route, art. R413-14 ; décret n° 2023-1150 du 6 décembre 2023 |
+| `d-feu-rouge-stop-sanction` | socle | faits | Code de la route, art. R412-30, R412-31, R415-5 à R415-11 |
+| `d-vitesse-bareme` | socle | faits | Code de la route, art. R413-14 ; décret n° 2023-1150 du 6 décembre 2023 |
 | `d-alcool-delit` | socle | faits | Code de la route, art. L234-1, L234-2, L234-8, L237-1 (lois n° 2025-622 et n° 2026-798) |
 | `d-stupefiants-delit` | socle | faits | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886 |
 | `d-homicide-routier` | consolidation | faits | Code pénal, art. 221-18 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886 |

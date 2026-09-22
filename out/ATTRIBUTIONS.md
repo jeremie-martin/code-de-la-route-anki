@@ -45,7 +45,6 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign AB1.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_AB1.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45
 - [File:France road sign AB2.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_AB2.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45
 - [File:France road sign AB25.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_AB25.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45
-- [File:France road sign AB3a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_AB3a.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45
 - [File:France road sign AB3b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_AB3b.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45
 - [File:France road sign AB4.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_AB4.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45
 - [File:France road sign AB5.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_AB5.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45
