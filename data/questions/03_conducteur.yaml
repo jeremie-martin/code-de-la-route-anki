@@ -47,8 +47,7 @@
   sous_theme: vigilance
   source: "Code de la route, art. R412-10 ; En Voiture Simone, Angle mort et contrôles"
 - id: c-zone-attention-pluie
-  question: Sous la pluie, un piéton à droite avance vers la chaussée ; la voiture loin devant garde son allure. Quel indice
-    exige mon attention immédiate ?
+  question: 'Sous la pluie, en ville : un piéton s’approche du bord du trottoir à droite, une voiture roule loin devant à allure constante, une autre est garée en face. Lequel de ces éléments exige mon attention immédiate ?'
   reponse: 'Le piéton qui approche de la chaussée : je réduis l’allure et me tiens prêt à m’arrêter, sans cesser de surveiller
     le reste.'
   explication: 'La position « à droite » ne suffit pas : c’est le mouvement du piéton et la possibilité de conflit qui rendent

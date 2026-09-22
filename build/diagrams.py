@@ -346,6 +346,12 @@ def draw_intersection(spec: dict) -> str:
             S.add(f'<line x1="0" y1="{cy-h}" x2="{cx-half}" y2="{cy-h}"/><line x1="0" y1="{cy+h}" x2="{cx-half}" y2="{cy+h}"/>')
         if b == "E":
             S.add(f'<line x1="{cx+half}" y1="{cy-h}" x2="600" y2="{cy-h}"/><line x1="{cx+half}" y1="{cy+h}" x2="600" y2="{cy+h}"/>')
+    # the edge line runs straight on across the side of a T where there is no branch
+    closed = {"N": (cx - half, cy - half, cx + half, cy - half), "S": (cx - half, cy + half, cx + half, cy + half),
+              "W": (cx - half, cy - half, cx - half, cy + half), "E": (cx + half, cy - half, cx + half, cy + half)}
+    for b, (x1, y1, x2, y2) in closed.items():
+        if b not in branches:
+            S.add(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}"/>')
     S.add("</g>")
     for b in spec.get("rails", []):
         _rails(S, b, cx, cy, half)
