@@ -183,7 +183,7 @@ def slug(code: str) -> str:
 
 
 def strip_unverified(text: str) -> str:
-    """Drop sentences that carry research flags ('À VÉRIFIER') — they must not reach a card."""
+    """Keep sentences carrying research flags ('À VÉRIFIER') out of cards."""
     if not text:
         return ""
     parts = re.split(r"(?<=[.;])\s+", text)
@@ -276,7 +276,7 @@ def convert():
             "piege": piege,
             "theme": "L",
             "sous_theme": sous,
-            "source": "IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France",
+            "source": "IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France",
         }
         if e.get("variants"):
             item["complement"] = (item["complement"] + f" Variantes courantes : {', '.join(str(v) for v in e['variants'])}.").strip()
@@ -300,7 +300,7 @@ def convert():
     total = 0
     for fname, items in by_file.items():
         p = OUT_DIR / f"{fname}.yaml"
-        header = f"# Généré par build/import_signs.py depuis data/signs_inventory.yaml — {len(items)} entrées. Corrections manuelles : data/_meta/sign_overrides.yaml\n"
+        header = f"# Généré par build/import_signs.py depuis data/signs_inventory.yaml ({len(items)} entrées). Corrections manuelles : data/_meta/sign_overrides.yaml\n"
         p.write_text(header + yaml.safe_dump(items, allow_unicode=True, sort_keys=False, width=1000), encoding="utf-8")
         total += len(items)
         print(f"{p.name}: {len(items)}")

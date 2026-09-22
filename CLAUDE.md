@@ -1,4 +1,4 @@
-# Code de la route 2026 — deck Anki
+# Deck Anki du Code de la route 2026
 
 Génère `out/Code-de-la-route-2026.apkg`, un deck Anki pour réussir l’ETG (code de la route, permis B) telle
 qu’elle existe en 2026. Lire `README.md`, `docs/conception.md` (ce qu’on optimise, principes de rédaction) et

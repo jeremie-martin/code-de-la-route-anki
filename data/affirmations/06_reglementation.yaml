@@ -2,8 +2,7 @@
   contexte: Je suis en première année de permis probatoire (6 points).
   affirmation: Contrôlé à 0,3 g/L de sang, je risque une amende mais je garde mon permis.
   verdict: faux
-  pourquoi: En probatoire le seuil est 0,2 g/L ; à 0,3 g/L, c'est 135 € et 6 points — soit la totalité d'un capital de 6 points,
-    donc l'invalidation du permis et un délai de 6 mois avant de le repasser.
+  pourquoi: "En probatoire, le seuil est de 0,2 g/L. À 0,3 g/L, la sanction est de 135 € et 6 points. Si mon capital est de 6 points, je les perds tous : le permis est invalidé et je dois attendre 6 mois avant de le repasser."
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R234-1 et L223-5
@@ -88,9 +87,7 @@
 - id: aff-d-sans-assurance-points
   affirmation: Conduire sans assurance est un délit, mais ne fait perdre aucun point.
   verdict: vrai
-  pourquoi: Amende délictuelle, suspension et confiscation possibles — mais zéro point retiré. La responsabilité civile reste
-    obligatoire pour tout véhicule à moteur, même immobilisé, et le FGAO peut réclamer au responsable non assuré les sommes
-    versées aux victimes.
+  pourquoi: "Le défaut d'assurance expose à une amende délictuelle, à une suspension et à une confiscation, sans retrait de points. La responsabilité civile reste obligatoire pour tout véhicule à moteur, même immobilisé, et le FGAO peut réclamer au responsable non assuré les sommes versées aux victimes."
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L324-2 ; Code des assurances, art. L211-1

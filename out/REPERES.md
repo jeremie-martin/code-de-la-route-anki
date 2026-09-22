@@ -2,7 +2,7 @@
 
 Un repère par thème : le principe, un exemple expliqué et une piste de transfert. Ils sont aussi affichés sur l’écran de chaque sous-deck dans Anki. Ils donnent un cadre de raisonnement ; les cartes et leurs sources précisent les règles et leurs exceptions.
 
-## X — Lire, décider, puis vérifier chaque proposition
+## X : Lire, décider, puis vérifier chaque proposition
 
 Commencer par identifier de quel usager on parle, ce qu’il veut faire et ce qui est réellement visible. Distinguer une permission (« je peux »), une obligation (« je dois ») et une précaution utile. Une réponse se justifie par un indice de la scène et une règle, pas par le mot qui paraît le plus prudent.
 
@@ -10,7 +10,7 @@ Commencer par identifier de quel usager on parle, ce qu’il veut faire et ce qu
 
 **Transfert.** Sur une série nouvelle, nommer après correction l’indice manqué : point de vue, signal, trajectoire, masque ou mot de l’énoncé. Dans Anki, une justification devinée ne vaut pas une règle retrouvée.
 
-## L — Combiner les règles au lieu d’en choisir une seule
+## L : Combiner les règles au lieu d’en choisir une seule
 
 Lire le destinataire d’un signal, son point de départ et sa portée. Pour une manœuvre, vérifier aussi les priorités, les trajectoires et l’espace libre. Le droit de passer et la possibilité de passer sans danger sont deux conditions nécessaires. Une limitation est un plafond, pas une allure à maintenir.
 
@@ -18,7 +18,7 @@ Lire le destinataire d’un signal, son point de départ et sa portée. Pour une
 
 **Transfert.** Après une erreur, préciser quelle condition changerait la réponse : signal, côté de la ligne, catégorie d’usager, visibilité, trafic ou portée de la prescription.
 
-## C — Garder du temps et de l’espace pour réagir
+## C : Garder du temps et de l’espace pour réagir
 
 La voiture avance avant même le début du freinage : distance d’arrêt = distance de réaction + distance de freinage. Vitesse, attention et adhérence n’agissent pas de la même manière. Les distances fournies dans un exercice sont des données ; une table approximative n’est jamais une garantie en circulation.
 
@@ -26,7 +26,7 @@ La voiture avance avant même le début du freinage : distance d’arrêt = dist
 
 **Transfert.** Distinguer règle oubliée et indice non vu. L’alcool, la distraction et la somnolence ne se compensent pas par de « bons réflexes » ; modifier le trajet ou interrompre la conduite si nécessaire.
 
-## R — Adapter la conduite aux contraintes de la route
+## R : Adapter la conduite aux contraintes de la route
 
 Météo, relief, rails, tunnel et autoroute changent l’adhérence, la visibilité ou les possibilités d’évitement. Chercher en amont l’action qui reste possible : ralentir, attendre, renoncer ou rejoindre un endroit protégé. Lire la signalisation locale plutôt que réciter une distance universelle.
 
@@ -34,7 +34,7 @@ Météo, relief, rails, tunnel et autoroute changent l’adhérence, la visibili
 
 **Transfert.** Dans une scène nouvelle, identifier d’abord ce qui empêcherait de s’arrêter, de dégager ou de se mettre à l’abri. Un équipement d’hiver ne supprime pas le besoin d’adapter l’allure.
 
-## U — Anticiper ce que les autres peuvent faire ou ne pas voir
+## U : Anticiper ce que les autres peuvent faire ou ne pas voir
 
 Chercher la trajectoire possible, le masque visuel et la marge dont l’autre usager a besoin. Un piéton, un cycliste, un deux-roues et un poids lourd n’ont ni le même gabarit ni les mêmes contraintes. Ne pas présumer que l’autre m’a vu, ni qu’un signal d’intention garantit sa trajectoire.
 
@@ -42,7 +42,7 @@ Chercher la trajectoire possible, le masque visuel et la marge dont l’autre us
 
 **Transfert.** Sur les photos et vidéos, chercher ce qui pourrait surgir d’un masque : bus, véhicule stationné, enfant derrière un objet ou deux-roues dans un angle mort. La priorité n’autorise pas à provoquer un choc.
 
-## D — Distinguer droit de conduire, documents et conséquences
+## D : Distinguer droit de conduire, documents et conséquences
 
 Permis, assurance et contrôle technique répondent à des questions différentes : qui peut conduire, quels dommages sont couverts, et si les contrôles du véhicule sont valides. Une amende forfaitaire, un retrait de points, une rétention, une suspension et une invalidation ne sont pas interchangeables.
 
@@ -50,7 +50,7 @@ Permis, assurance et contrôle technique répondent à des questions différente
 
 **Transfert.** Lire la catégorie, le délai et le mot exact de la question. Pour une statistique, vérifier année, territoire et dénominateur ; pour une démarche, consulter sa source actualisée.
 
-## A — Choisir l’aide selon l’état de la victime
+## A : Choisir l’aide selon l’état de la victime
 
 Protéger sans se mettre en danger, alerter et secourir. Donner le lieu précis, les dangers et l’état des victimes ; suivre les instructions de l’opérateur. Une victime qui ne répond pas doit être évaluée selon sa respiration : des gasps ne sont pas une respiration normale.
 
@@ -58,7 +58,7 @@ Protéger sans se mettre en danger, alerter et secourir. Donner le lieu précis,
 
 **Transfert.** Reconnaître le cas dans une carte ne prouve pas savoir réaliser le geste. Une formation pratique de secours permet d’apprendre les gestes et de les faire corriger. Ne pas s’exposer au trafic pour poser un triangle.
 
-## P — Préparer les contrôles avant le mouvement
+## P : Préparer les contrôles avant le mouvement
 
 Les réglages servent à atteindre les commandes et à voir ; les contrôles servent à vérifier que la manœuvre reste sûre. Régler le siège avant les rétroviseurs. Avant de quitter le véhicule, l’immobiliser puis contrôler le côté où l’on ouvre, même si l’on ne voit rien dans le rétroviseur.
 
@@ -66,7 +66,7 @@ Les réglages servent à atteindre les commandes et à voir ; les contrôles ser
 
 **Transfert.** Dans une voiture inconnue, utiliser les repères fonctionnels et la notice. Une caméra ou un rétroviseur bien réglé ne remplace pas la recherche d’un obstacle bas ou masqué.
 
-## M — Lire le symbole, la situation et la notice
+## M : Lire le symbole, la situation et la notice
 
 Un voyant doit être interprété avec son symbole, le moment où il s’allume et les symptômes. Pour l’entretien, appliquer la préconisation du véhicule : charge, essieu, température ou échéance peuvent changer la réponse. Une aide à la conduite a une fonction précise et des limites.
 
@@ -74,7 +74,7 @@ Un voyant doit être interprété avec son symbole, le moment où il s’allume 
 
 **Transfert.** Chercher dans une scène l’information qui manque avant de conclure. Ne pas transformer « orange » en autorisation générale de continuer ni une valeur d’exercice en prescription pour sa propre voiture.
 
-## S — Retenir les occupants et respecter les masses
+## S : Retenir les occupants et respecter les masses
 
 Ceinture, siège enfant, appuie-tête et airbag se complètent. Le dispositif doit être adapté et utilisé correctement ; un objet libre continue son mouvement lors d’un choc. Pour une remorque, distinguer ce que le permis autorise des capacités techniques et des masses effectivement admissibles.
 
@@ -82,7 +82,7 @@ Ceinture, siège enfant, appuie-tête et airbag se complètent. Le dispositif do
 
 **Transfert.** Sur une image, regarder l’installation réelle, pas seulement la présence d’une ceinture ou d’un siège. Dans un calcul de remorque, nommer les masses utilisées avant de les additionner.
 
-## E — Économiser sans réduire les marges de sécurité
+## E : Économiser sans réduire les marges de sécurité
 
 Anticiper évite des accélérations et freinages inutiles. Un rapport adapté, l’entretien et la réduction des charges ou accessoires inutiles limitent la consommation. Les conseils dépendent du véhicule et des conditions ; ils ne doivent jamais dégrader la visibilité, la vigilance ou la maîtrise de l’allure.
 

@@ -613,7 +613,7 @@
 - id: v9-secours
   consulte_le: '2026-09-21'
   url: https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
-  portee: 'PSC juillet 2026 — perte de connaissance (PLS ; traumatisme : sur le dos, sur le côté si vomissements) et dégagement d’urgence.'
+  portee: "PSC juillet 2026 : perte de connaissance (PLS ; traumatisme : sur le dos, sur le côté si vomissements) et dégagement d’urgence."
   notes:
   - a-pls
   - aff-a-degagement-urgence

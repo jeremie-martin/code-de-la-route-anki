@@ -1,4 +1,4 @@
-# Thème L — Scénarios de priorité complémentaires (réponses vérifiées par build/priority.py)
+# Thème L : Scénarios de priorité complémentaires (réponses vérifiées par build/priority.py)
 
 - id: scn-stop-trois-vehicules
   kind: intersection
@@ -250,4 +250,4 @@
     revient à la règle du tourne-à-gauche (R415-4). C''est la réponse attendue à l''exemple officiel de 2023 (Q2).'
   theme: L
   sous_theme: priorites
-  source: Code de la route, art. R415-4 et R415-6 ; Sécurité routière — Exemples de nouvelles questions (Q2)
+  source: "Code de la route, art. R415-4 et R415-6 ; Sécurité routière, Exemples de nouvelles questions (Q2)"

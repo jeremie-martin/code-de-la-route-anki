@@ -5,7 +5,7 @@
     l’allonger ; deux secondes n’est pas une valeur fixe pour ces états.
   theme: C
   sous_theme: distances
-  source: securite-routiere.gouv.fr — La vitesse et la conduite ; Codeclic — Temps de réaction
+  source: "securite-routiere.gouv.fr, La vitesse et la conduite ; Codeclic, Temps de réaction"
 - id: c-distance-reaction-formule
   dedup_ok:
   - aff-c-temps-reaction-vitesse
@@ -14,7 +14,7 @@
     par l’exercice.'
   theme: C
   sous_theme: distances
-  source: Codeclic ; En Voiture Simone ; securite-routiere.gouv.fr — Dépliant vitesse
+  source: "Codeclic ; En Voiture Simone ; securite-routiere.gouv.fr, Dépliant vitesse"
   rappels:
   - Pour estimer mentalement la distance parcourue en une seconde, le raccourci « dizaines de km/h × … » utilise le facteur
     {{c1::3}}.
@@ -36,13 +36,13 @@
     quadruple donc pas automatiquement ; voir les exercices sur les deux composantes.
   theme: C
   sous_theme: distances
-  source: securite-routiere.gouv.fr — La vitesse et la conduite ; Ornikar — Énergie cinétique
+  source: "securite-routiere.gouv.fr, La vitesse et la conduite ; Ornikar, Énergie cinétique"
 - id: c-intervalle-2s
   explication: 'La règle est temporelle : deux secondes au minimum, davantage selon les conditions. Le calcul physique donne
     environ 28 m à 50 km/h et 72 m à 130 km/h. Les 30 et 78 m sont des approximations pédagogiques, pas des égalités.'
   theme: C
   sous_theme: distances
-  source: Code de la route, art. R412-12 ; Codes Rousseau — Calcul des distances
+  source: "Code de la route, art. R412-12 ; Codes Rousseau, Calcul des distances"
   rappels:
   - Entre deux voitures qui se suivent, l’intervalle minimal réglementaire correspond à la distance parcourue pendant au moins
     {{c1::2 secondes}}.
@@ -53,7 +53,7 @@
     m dans tous les tunnels, et les consignes peuvent distinguer circulation et arrêt.'
   theme: C
   sous_theme: distances
-  source: Code de la route, R412-12 ; CETU — sécurité des usagers en tunnel
+  source: "Code de la route, R412-12 ; CETU, sécurité des usagers en tunnel"
 - id: c-autoroute-deux-traits
   texte: 'Sur autoroute, repère visuel usuel d''intervalle : laisser au moins {{c1::2 traits}} complets de la ligne de rive
     de la bande d''arrêt d''urgence, davantage selon les conditions.'
@@ -61,13 +61,13 @@
     secondes représentent environ 72 m : le repère des traits laisse une marge. Augmenter encore l’intervalle si nécessaire.'
   theme: C
   sous_theme: distances
-  source: securite-routiere.gouv.fr — La vitesse et la conduite ; IISR 7e partie, art. 113-1
+  source: "securite-routiere.gouv.fr, La vitesse et la conduite ; IISR 7e partie, art. 113-1"
 - id: c-telephone-5s
   explication: 50 ÷ 3,6 × 5 ≈ 69,4 m. Les cinq secondes sont une hypothèse, pas la durée universelle d’un SMS. Le téléphone
     ajoute des distractions visuelle, mentale et manuelle ; les mains libres ne suppriment pas la distraction mentale.
   theme: C
   sous_theme: vigilance
-  source: Calcul v/3,6 × durée ; Sécurité routière — téléphone et distraction
+  source: "Calcul v/3,6 × durée ; Sécurité routière, téléphone et distraction"
   rappels:
   - À 50 km/h (environ 14 m/s), quitter la route des yeux pendant 5 s fait parcourir environ {{c1::70 m}}.
 - id: c-vue-90-pourcent
@@ -77,14 +77,14 @@
     sans, c''est 135 € et 3 points. La baisse de la vue est progressive et passe inaperçue : contrôle régulier conseillé.'
   theme: C
   sous_theme: perception
-  source: Arrêté du 28 mars 2022 ; En Voiture Simone — Acuité visuelle ; Code de la route, art. R221-1-1
+  source: "Arrêté du 28 mars 2022 ; En Voiture Simone, Acuité visuelle ; Code de la route, art. R221-1-1"
 - id: c-fatigue-pause-chiffres
   explication: 'Une pause de 15 à 20 minutes est un repère, pas une garantie : elle ne permet pas de continuer malgré les
     paupières lourdes. Une courte sieste ne compense pas toute dette de sommeil ; changer de conducteur ou interrompre le
     trajet si nécessaire.'
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — La fatigue et la conduite
+  source: "securite-routiere.gouv.fr, La fatigue et la conduite"
   rappels:
   - Sur un long trajet, une pause est recommandée au moins toutes les {{c1::2 heures}}, avant tout signe de fatigue.
   - En cas de somnolence au volant, s’arrêter en sécurité sans attendre et dormir {{c2::15 à 20 min}} ; ne repartir
@@ -96,20 +96,20 @@
     ne garantit pas de rester sous le seuil. Les doses servies à domicile dépassent souvent le verre standard.'
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code en Poche
+  source: "securite-routiere.gouv.fr, L'alcool et la conduite ; Code en Poche"
 - id: c-verre-alcoolemie
   texte: 'Repère moyen : chaque verre standard fait monter l''alcoolémie d''environ {{c1::0,20 à 0,25 g/L}}.'
   explication: Davantage à jeun, pour une personne légère ou une femme ; deux verres peuvent donc suffire à dépasser
     0,5 g/L, et un seul le seuil probatoire de 0,2 g/L.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — L’alcool et la conduite
+  source: "securite-routiere.gouv.fr, L’alcool et la conduite"
 - id: c-alcool-elimination
   explication: Le taux varie selon la personne et les conditions ; pas de règle fixe « heures par verre ». Café, douche ou
     sport n’accélèrent pas l’élimination. Une alcoolémie peut rester excessive le lendemain.
   theme: C
   sous_theme: deficiences
-  source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2024-03/depliant_alcool-conduite-070823.pdf
+  source: "Sécurité routière, https://www.securite-routiere.gouv.fr/sites/default/files/2024-03/depliant_alcool-conduite-070823.pdf"
   rappels:
   - 'Repère moyen, sans garantie individuelle : l’alcoolémie baisse d’environ {{c1::0,10 à 0,15 g/L}} par heure.'
   - Le pic d’alcoolémie survient environ {{c2::30 min}} après absorption à jeun (environ 1 h au cours d’un repas).
@@ -118,7 +118,7 @@
     réglementaires entre deux unités différentes. Lire « sang » ou « air » avant de répondre.'
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code de la route, art. R234-1
+  source: "securite-routiere.gouv.fr, L'alcool et la conduite ; Code de la route, art. R234-1"
   rappels:
   - Au seuil de 0,5 g/L de sang correspond le seuil légal de {{c1::0,25 mg/L}} d’air expiré (le chiffre est divisé
     par deux).
@@ -127,8 +127,7 @@
     concernés ; environ un tiers des médicaments portent un pictogramme, y compris sans ordonnance. Ne jamais associer à l'alcool.
   theme: C
   sous_theme: deficiences
-  source: ANSM — Médicaments et conduite ; arrêté du 8 août 2008 (CSP, art. R5121-139) ; securite-routiere.gouv.fr — Les médicaments
-    et la conduite
+  source: "ANSM, Médicaments et conduite ; arrêté du 8 août 2008 (CSP, art. R5121-139) ; securite-routiere.gouv.fr, Les médicaments et la conduite"
   rappels:
   - 'Pictogramme médicaments de niveau 1 (jaune) : {{c1::lire la notice}} avant de conduire.'
   - 'Pictogramme médicaments de niveau 2 (orange) : ne pas conduire sans {{c2::l’avis d’un professionnel de santé}}.'
@@ -143,4 +142,4 @@
     sang.'
   explication: 'Le seuil est inclus : il faut être en dessous. Lire sang ou air expiré ; aucun nombre de verres
     ne garantit le résultat. Zéro alcool reste le choix sûr.'
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2881
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2881"

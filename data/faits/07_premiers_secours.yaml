@@ -3,14 +3,14 @@
     un geste vital pour réciter une séquence rigide.
   theme: A
   sous_theme: pas
-  source: Sécurité civile, PSC juillet 2026, Protection, Alerte et Hémorragies — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: "Sécurité civile, PSC juillet 2026, Protection, Alerte et Hémorragies, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
   texte: Face à un accident, les trois priorités de l’aide sont {{c1::protéger, alerter, secourir}}.
 - id: numeros-urgence
   explication: 'Le 112 est le bon réflexe si l''on hésite : il redirige vers le service compétent. Il fonctionne depuis un
     téléphone verrouillé ou sans crédit, via n''importe quel réseau disponible.'
   theme: A
   sous_theme: alerter
-  source: service-public.fr — Numéros d'urgence ; Code pénal, art. 223-6
+  source: "service-public.fr, Numéros d'urgence ; Code pénal, art. 223-6"
   rappels:
   - 'Numéro du SAMU pour une urgence médicale en France : {{c1::15}}.'
   - 'Numéro de la police ou de la gendarmerie pour une urgence en France : {{c2::17}}.'
@@ -22,7 +22,7 @@
     un SMS au 114. Si je peux téléphoner, j’appelle le 112, le 15, le 17 ou le 18 selon l’urgence.
   theme: A
   sous_theme: alerter
-  source: Ministère de l’Intérieur — https://www.masecurite.interieur.gouv.fr/fr/fiches-pratiques/famille-et-aides-aux-victimes/114-service-urgence-personnes-sourdes-sourdaveugles-malentendantes-aphasiques
+  source: "Ministère de l’Intérieur, https://www.masecurite.interieur.gouv.fr/fr/fiches-pratiques/famille-et-aides-aux-victimes/114-service-urgence-personnes-sourdes-sourdaveugles-malentendantes-aphasiques"
 - id: borne-appel-autoroute
   texte: Sur autoroute, les bornes d'appel d'urgence (orange) sont implantées environ tous les {{c1::2 km}} ; elles localisent
     automatiquement l'appel et mettent en relation avec le poste de sécurité.
@@ -30,7 +30,7 @@
     En tunnel, les postes d'appel sont dans les niches de sécurité.
   theme: A
   sous_theme: alerter
-  source: securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA
+  source: "securite-routiere.gouv.fr, Bien se comporter sur autoroute ; ASFA"
 - id: triangle-distance
   texte: Sur route, si sa pose ne me met pas en danger, le triangle se place environ {{c1::30 m}} avant l'obstacle, ou davantage
     pour être visible à temps.
@@ -42,10 +42,10 @@
       label: '?'
   theme: A
   sous_theme: proteger
-  source: Arrêté du 30 septembre 2008, art. 2 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000019566252/
+  source: "Arrêté du 30 septembre 2008, art. 2, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000019566252/"
 - id: rcp-rythme
   explication: Si les insufflations sont impossibles, je poursuis les compressions. Je fais alerter les secours et apporter un défibrillateur, puis suis ses consignes.
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: "Sécurité civile, PSC juillet 2026, Arrêt cardiaque, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
   texte: Chez l’adulte, quand j’alterne compressions thoraciques et bouche-à-bouche, je fais {{c1::30 compressions puis 2 insufflations}} par cycle.

@@ -1,4 +1,4 @@
-# Thème P — Prendre et quitter son véhicule (≈ 3 questions) : vérifier, s'installer, démarrer, quitter.
+# Thème P : Prendre et quitter son véhicule (≈ 3 questions) : vérifier, s'installer, démarrer, quitter.
 # Cartes de décision : une situation, une décision et sa raison (brief v2). Les repères chiffrés sont dans
 # data/faits/08, les idées reçues de l'épreuve dans data/affirmations/08.
 - id: p-verif-tour-vehicule
@@ -10,7 +10,7 @@
     de panne. L’aspect du pneu ne remplace pas la mesure de sa pression.
   theme: P
   sous_theme: verifications
-  source: REMC (compétence 1) ; securite-routiere.gouv.fr — Bien préparer son trajet
+  source: "REMC (compétence 1) ; securite-routiere.gouv.fr, Bien préparer son trajet"
 - id: p-verif-chargement-important
   question: 'Je charge le coffre de valises pour partir en vacances : qu''est-ce que je règle avant de démarrer ?'
   reponse: Je règle la pression à la valeur prévue pour cette charge et j’adapte la hauteur des feux selon la notice, sauf
@@ -19,7 +19,7 @@
     même réglage manuel.
   theme: P
   sous_theme: verifications
-  source: Sécurité routière — Exemples de nouvelles questions (Q1) ; notices constructeurs
+  source: "Sécurité routière, Exemples de nouvelles questions (Q1) ; notices constructeurs"
 - id: p-verif-pare-brise
   question: 'Matin d''hiver, je suis pressé : le pare-brise est givré sauf un hublot dégagé devant moi. Que fais-je
     ?'
@@ -29,7 +29,7 @@
     un liquide antigel pour ne pas geler sur la vitre.
   theme: P
   sous_theme: verifications
-  source: Code de la route, art. R412-6 ; securite-routiere.gouv.fr — Conduire en hiver
+  source: "Code de la route, art. R412-6 ; securite-routiere.gouv.fr, Conduire en hiver"
 - id: p-verif-gps-passagers
   question: Je pars vers une adresse inconnue, avec deux passagers à l'arrière. À quel moment est-ce que je programme
     le GPS ?
@@ -38,7 +38,7 @@
     que tout le monde est attaché. Une modification d’itinéraire se fait sur une aire ou un parking.
   theme: P
   sous_theme: verifications
-  source: securite-routiere.gouv.fr — Bien préparer son trajet ; REMC
+  source: "securite-routiere.gouv.fr, Bien préparer son trajet ; REMC"
 - id: p-siege-reglage
   question: Je m’installe au volant d’une voiture à boîte manuelle. Comment vérifier l’avancée du siège ?
   reponse: Pédale d’embrayage enfoncée à fond, ma jambe reste légèrement fléchie. Je dois aussi pouvoir freiner à fond sans
@@ -47,7 +47,7 @@
     laisser les commandes accessibles sans étirer les jambes.
   theme: P
   sous_theme: installation
-  source: REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite
+  source: "REMC ; securite-routiere.gouv.fr, S'installer au poste de conduite"
 - id: p-dossier-reglage
   question: Le siège est à la bonne distance. Comment je vérifie l'inclinaison du dossier ?
   reponse: Bras tendus, poignets posés sur le haut du volant sans décoller les épaules du dossier ; en conduite, les bras
@@ -56,7 +56,7 @@
     ne plaque plus le buste.'
   theme: P
   sous_theme: installation
-  source: En Voiture Simone — S'installer ; REMC
+  source: "En Voiture Simone, S'installer ; REMC"
 - id: p-appuie-tete
   question: Je viens de régler mon siège. À quelle hauteur je place l'appuie-tête ?
   reponse: Son sommet au niveau du sommet de ma tête, le plus près possible de la nuque ; trop bas, il fait pivot et aggrave
@@ -65,7 +65,7 @@
     un véhicule partagé.
   theme: P
   sous_theme: installation
-  source: securite-routiere.gouv.fr — Bien régler son appuie-tête ; Euro NCAP
+  source: "securite-routiere.gouv.fr, Bien régler son appuie-tête ; Euro NCAP"
 - id: p-retro-interieur
   question: Assis en position de conduite, je règle un rétroviseur intérieur à miroir classique. Quelle vue dois-je
     obtenir ?
@@ -74,7 +74,7 @@
     extérieurs et le contrôle direct complètent l’observation avant une manœuvre.
   theme: P
   sous_theme: installation
-  source: REMC ; Codes Rousseau — Les rétroviseurs
+  source: "REMC ; Codes Rousseau, Les rétroviseurs"
 - id: p-retro-exterieurs
   question: À l’arrêt sur terrain plat, assis en position de conduite, quelle vue rechercher dans les rétroviseurs
     extérieurs ?
@@ -84,7 +84,7 @@
     de se déporter.'
   theme: P
   sous_theme: installation
-  source: REMC ; Renault, rétroviseurs — https://www.user-manual.renault.com/fr/r%C3%A9trovision/retroviseurs-1
+  source: "REMC ; Renault, rétroviseurs, https://www.user-manual.renault.com/fr/r%C3%A9trovision/retroviseurs-1"
 - id: p-ceinture-position
   question: 'Je boucle ma ceinture : par où doivent passer les deux sangles ?'
   reponse: Sangle basse sur les os du bassin, sangle haute au milieu de l’épaule puis sur le sternum ; à plat, non vrillée,
@@ -93,7 +93,7 @@
     point d'ancrage supérieur se règle en hauteur.
   theme: P
   sous_theme: installation
-  source: securite-routiere.gouv.fr — Comment positionner la ceinture de sécurité
+  source: "securite-routiere.gouv.fr, Comment positionner la ceinture de sécurité"
 - id: p-volant-mains
   question: 'Je vais démarrer : où je place mes mains sur le volant, et pourquoi là ?'
   reponse: 'À 9 h 15 (ou 10 h 10), pouces à l’extérieur des branches : je braque vite des deux côtés sans me blesser si l’airbag
@@ -102,7 +102,7 @@
     revenir en le guidant, sans lâcher prise.
   theme: P
   sous_theme: installation
-  source: REMC ; securite-routiere.gouv.fr — S'installer au poste de conduite
+  source: "REMC ; securite-routiere.gouv.fr, S'installer au poste de conduite"
 - id: p-ordre-installation
   question: J’ai réglé mes rétroviseurs, puis avancé et remonté mon siège. Puis-je garder le réglage des miroirs
     sans le vérifier ?
@@ -112,7 +112,7 @@
     pas la récitation d’un ordre unique.'
   theme: P
   sous_theme: installation
-  source: REMC ; Renault, réglage de la position de conduite — https://www.user-manual.renault.com/fr/content/renault-trafic/getting-know-your-vehicle/seat-belts/ceintures-de-securite-avant
+  source: "REMC ; Renault, réglage de la position de conduite, https://www.user-manual.renault.com/fr/content/renault-trafic/getting-know-your-vehicle/seat-belts/ceintures-de-securite-avant"
 - id: p-demarrage-point-mort
   question: Tout est réglé, je vais mettre le contact. Où doit être le levier de vitesses ?
   reponse: 'Au point mort, embrayage enfoncé (boîte automatique : P, pied sur le frein), frein de stationnement serré : le
@@ -123,7 +123,7 @@
     stationnement qu’au moment de rouler.
   theme: P
   sous_theme: installation
-  source: REMC ; Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux
+  source: "REMC ; Renault, témoins lumineux, https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux"
 - id: p-quitter-checklist
   question: Je me gare et je vais m'éloigner de ma voiture. Que fais-je avant de sortir ?
   reponse: Je coupe le moteur et le contact, serre le frein de stationnement et sécurise la transmission selon la
@@ -132,7 +132,7 @@
     et emporte la clé ou la carte ; les contrôles avant d’ouvrir la portière restent nécessaires.
   theme: P
   sous_theme: quitter
-  source: Code de la route, art. R417-8 ; Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml
+  source: "Code de la route, art. R417-8 ; Nissan Juke 2024, stationnement, https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml"
 - id: p-quitter-objets
   question: Je laisse ma voiture sur un parking de gare pour la journée ; mon sac est sur le siège passager. Je
     le laisse là ?
@@ -142,7 +142,7 @@
     avant d’arriver. Cela réduit la tentation sans garantir contre le vol.
   theme: P
   sous_theme: quitter
-  source: Ministère de l’Intérieur, prévention des vols dans les véhicules — https://www.interieur.gouv.fr/fr/Archives/Archives-de-la-rubrique-Ma-securite/Avec-votre-vehicule/Contre-les-vols-de-voitures-et-d-accessoires-les-bons-reflexes
+  source: "Ministère de l’Intérieur, prévention des vols dans les véhicules, https://www.interieur.gouv.fr/fr/Archives/Archives-de-la-rubrique-Ma-securite/Avec-votre-vehicule/Contre-les-vols-de-voitures-et-d-accessoires-les-bons-reflexes"
 - id: p-pente-roues
   question: Je stationne à droite, en forte pente, contre une bordure de trottoir. Comment orienter les roues ?
   reponse: 'En descente vers le trottoir, en montée vers la chaussée : si le frein lâche, le pneu bute contre la
@@ -151,7 +151,7 @@
     vers la circulation ; appliquer le frein de stationnement et la procédure de la notice.
   theme: P
   sous_theme: quitter
-  source: Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml
+  source: "Nissan Juke 2024, stationnement, https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml"
 - id: p-pente-vitesse
   question: Je stationne une voiture à boîte manuelle en pente. Quel rapport laisser engagé en complément du frein
     de stationnement ?
@@ -161,8 +161,7 @@
     Avec une boîte automatique équipée d’une position P, je sélectionne P et serre aussi ce frein.
   theme: P
   sous_theme: quitter
-  source: Renault Megane 4, levier de vitesses et frein à main — https://www.user-manual.renault.com/fr/chapitre-2-la-conduite/levier-de-vitesses-frein-main
-    ; Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml
+  source: "Renault Megane 4, levier de vitesses et frein à main, https://www.user-manual.renault.com/fr/chapitre-2-la-conduite/levier-de-vitesses-frein-main ; Nissan Juke 2024, stationnement, https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml"
 - id: p-ouvrir-portiere
   question: Au siège conducteur d’une voiture à volant à gauche, garée à droite, je vais ouvrir côté circulation. Quels contrôles
     et quelle main utiliser ?
@@ -172,7 +171,7 @@
     adapter le côté et la main ; attention aux vélos même sur un trottoir ou une piste.
   theme: P
   sous_theme: quitter
-  source: Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Portière gauche, main droite
+  source: "Code de la route, art. R417-7 ; securite-routiere.gouv.fr, Portière gauche, main droite"
 - id: p-passagers-descendre
   question: Je m'arrête le long d'une rue pour déposer mes enfants assis à l'arrière. Par où doivent-ils descendre
     ?
@@ -182,7 +181,7 @@
     à l'arrière, c'est au conducteur d'organiser la descente.
   theme: P
   sous_theme: quitter
-  source: Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Enfants en voiture
+  source: "Code de la route, art. R417-7 ; securite-routiere.gouv.fr, Enfants en voiture"
 - id: p-enfants-seuls
   question: Je m'arrête cinq minutes devant une boulangerie ; mon enfant dort à l'arrière. Je le laisse dans la
     voiture ?
@@ -193,8 +192,7 @@
     ou une durée précise pour agir ; même précaution pour un animal.
   theme: P
   sous_theme: quitter
-  source: Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml
-    ; Sécurité civile, fortes chaleurs — https://www.securite-civile.interieur.gouv.fr/actualites/actualites/fortes-chaleurs-canicule-quels-sont-bons-reflexes-a-adopter-pour-preserver-sa-sante
+  source: "Nissan Juke 2024, stationnement, https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml ; Sécurité civile, fortes chaleurs, https://www.securite-civile.interieur.gouv.fr/actualites/actualites/fortes-chaleurs-canicule-quels-sont-bons-reflexes-a-adopter-pour-preserver-sa-sante"
 - id: p-quitter-stationnement-surveiller
   question: Garé à droite dans une rue à double sens, je quitte ma place pour rejoindre la voie à ma gauche. Quel angle mort
     contrôler juste avant le déport ?
@@ -204,7 +202,7 @@
     une seule photo.
   theme: P
   sous_theme: quitter
-  source: Sécurité routière — Exemples de nouvelles questions (Q14) ; Code de la route, art. R412-10
+  source: "Sécurité routière, Exemples de nouvelles questions (Q14) ; Code de la route, art. R412-10"
 - id: p-vehicule-emprunte-equipements
   question: J'emprunte la voiture d'un proche ; le gilet et le triangle manquent. Qui est sanctionné en cas de contrôle
     ?

@@ -1,4 +1,4 @@
-# L — Circulation : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
+# L : Circulation : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
 # Priorités et signalisation sont les thèmes les plus échoués : les fausses affirmations reprennent
 # les distracteurs réels de l'épreuve (« je maintiens ma vitesse », « je peux », « puisque… »).
 - id: aff-l-chemin-terre
@@ -10,7 +10,7 @@
     pas à la classer ainsi.
   theme: L
   sous_theme: priorites
-  source: R415-9 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968/
+  source: "R415-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968/"
 - id: aff-l-zone-30-priorite-droite
   contexte: Je circule dans une zone 30 résidentielle.
   affirmation: En zone 30, la priorité à droite ne s'applique plus.
@@ -80,7 +80,7 @@
     largeur apparente de l''anneau ne suffit pas (R414-4 : dépasser sans danger).'
   theme: L
   sous_theme: priorites
-  source: R414-4 et R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
+  source: "R414-4 et R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/"
 - id: aff-l-pieton-intention
   dedup_ok: [aff-u-pieton-telephone]
   contexte: Un piéton se tient sur le trottoir, tourné vers la chaussée, à un pas d'un passage piéton.
@@ -112,8 +112,7 @@
     dans des conditions de sécurité suffisantes.
   affirmation: Je continue et je dégage le carrefour, sans accélérer.
   verdict: vrai
-  pourquoi: 'R412-31 prévoit l''exception : on ne s''arrête pas si l''arrêt ne peut plus se faire « dans des conditions
-    de sécurité suffisantes » — freinage brutal, véhicule collé derrière.'
+  pourquoi: "R412-31 prévoit une exception : on ne s'arrête pas si l'arrêt ne peut plus se faire « dans des conditions de sécurité suffisantes ». C'est le cas si l'arrêt impose un freinage brutal avec un véhicule collé derrière."
   theme: L
   sous_theme: feux
   source: Code de la route, art. R412-31
@@ -189,7 +188,7 @@
   contexte: Autoroute à trois voies, circulation très fluide ; je roule sur la voie du milieu à 130 km/h.
   affirmation: Je peux rester sur la voie du milieu.
   verdict: faux
-  pourquoi: 'R412-23 impose d''emprunter la voie la plus à droite et de ne franchir les lignes que pour dépasser. Les voies de gauche servent au dépassement — je me replace à droite dès que c''est possible.'
+  pourquoi: "R412-23 impose d'emprunter la voie la plus à droite et de ne franchir les lignes que pour dépasser. Les voies de gauche servent au dépassement. Je me replace donc à droite dès que c'est possible."
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-23
@@ -269,7 +268,7 @@
   contexte: J'attends quelqu'un dix minutes au volant, moteur tournant, le long du trottoir.
   affirmation: Il s'agit d'un arrêt, pas d'un stationnement.
   verdict: faux
-  pourquoi: 'R110-2 : l''arrêt est l''immobilisation momentanée le temps d''une montée, d''une descente ou d''un chargement. Attendre, même au volant et moteur tournant, est un stationnement — soumis à toutes les interdictions de stationner.'
+  pourquoi: "R110-2 définit l'arrêt comme une immobilisation momentanée le temps d'une montée, d'une descente ou d'un chargement. Attendre, même au volant et moteur tournant, est un stationnement. Les interdictions de stationner s'appliquent donc."
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R110-2
@@ -329,7 +328,7 @@
   contexte: Sur une route de campagne, un panneau à lettres italiques blanches sur fond noir annonce « Les Granges ».
   affirmation: À partir de ce panneau, je suis en agglomération et limité à 50 km/h.
   verdict: faux
-  pourquoi: 'C''est un panneau de lieu-dit (E31), sans effet réglementaire. Seul le panneau d''entrée d''agglomération EB10 — nom sur fond blanc bordé de rouge — déclenche les 50 km/h et les autres règles d''agglomération.'
+  pourquoi: "C'est un panneau de lieu-dit (E31), sans effet réglementaire. Le panneau d'entrée d'agglomération EB10 se reconnaît au nom sur fond blanc bordé de rouge. C'est lui qui déclenche la limite par défaut de 50 km/h et les autres règles d'agglomération."
   theme: L
   sous_theme: vitesse
   source: IISR 5e partie art. 99-3 ; Code de la route, art. R110-2
@@ -364,7 +363,7 @@
   pourquoi: En agglomération, un panneau de danger se trouve généralement à environ 50 m du danger ; hors agglomération, à environ 150 m, ou 200 m sur autoroute. Un panonceau peut indiquer une autre distance.
   theme: L
   sous_theme: signalisation
-  source: IISR 2e partie art. 28 ; Sécurité routière — Exemples de nouvelles questions (Q18, Q19)
+  source: "IISR 2e partie art. 28 ; Sécurité routière, Exemples de nouvelles questions (Q18, Q19)"
 - id: aff-l-virage-gauche-axe
   contexte: Route à double sens, virage à gauche sans visibilité.
   affirmation: Je peux me rapprocher de l'axe de la chaussée pour élargir ma trajectoire.

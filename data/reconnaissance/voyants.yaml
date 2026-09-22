@@ -1,4 +1,4 @@
-# Thème M — Voyants du tableau de bord (symboles ISO 7000 / ISO 2575, domaine public sur Commons)
+# Thème M : Voyants du tableau de bord (symboles ISO 7000 / ISO 2575, domaine public sur Commons)
 # La couleur oriente ; lire le symbole, le message et la notice pour décider.
 # Teintes : rouge #e53935, orange #fb8c00, vert #43a047, bleu #1e88e5.
 
@@ -16,7 +16,7 @@
     normal ; c’est l’allumage en roulant qui est testé ici.
   theme: M
   sous_theme: voyants
-  source: ISO 2575 ; Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux
+  source: "ISO 2575 ; Renault, témoins lumineux, https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux"
 - id: voyant-batterie
   type: voyant
   code: ISO 7000-0247
@@ -31,19 +31,19 @@
     aucune garantie de rejoindre un garage.'
   theme: M
   sous_theme: voyants
-  source: Renault, témoins lumineux (exemple constructeur ; consulter la notice du véhicule) — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
+  source: "Renault, témoins lumineux (exemple constructeur ; consulter la notice du véhicule), https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux"
 - id: voyant-temperature
   type: voyant
   code: ISO 7000-0246
   image: {commons: "ISO 7000 - Ref-No 0246.svg", tint: "#e53935"}
   nom: Température du liquide de refroidissement (rouge)
-  signification: Le moteur surchauffe (manque de liquide, fuite, ventilateur en panne) — risque de joint de culasse et de casse.
+  signification: "Le moteur surchauffe : manque de liquide, fuite ou ventilateur en panne, par exemple. Cela risque d'endommager le joint de culasse ou de casser le moteur."
   conduite: Je m’arrête en sécurité et suis la notice pour le moteur (arrêt ou bref ralenti selon le véhicule) ;
     je n’ouvre jamais le vase d’expansion à chaud, car le liquide sous pression peut brûler.
   piege: En bleu au démarrage sur certains véhicules = moteur froid, sans gravité.
   theme: M
   sous_theme: voyants
-  source: ISO 2575 ; Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux
+  source: "ISO 2575 ; Renault, témoins lumineux, https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux"
 - id: voyant-frein
   type: voyant
   code: ISO 7000-0239
@@ -54,7 +54,7 @@
   piege: "Ce cercle « (!) » est le voyant de **freinage** ; le « (P) » cerclé est le frein de stationnement seul."
   theme: M
   sous_theme: voyants
-  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+  source: "ISO 2575 ; Codes Rousseau, Les voyants"
 - id: voyant-frein-stationnement
   type: voyant
   code: ISO 7000-0238
@@ -64,14 +64,14 @@
   conduite: Je desserre complètement le frein de stationnement avant de rouler ; s'il reste allumé en roulant, je m'arrête pour vérifier (échauffement des freins arrière, liquide de frein).
   theme: M
   sous_theme: voyants
-  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+  source: "ISO 2575 ; Codes Rousseau, Les voyants"
 - id: voyant-ceinture
   type: voyant
   code: ISO 7000-0249
   image: {commons: "ISO 7000 - Ref-No 0249.svg", tint: "#e53935"}
   nom: Ceinture non bouclée (rouge)
   signification: Un occupant (conducteur, et sur les véhicules récents chaque passager) n'a pas attaché sa ceinture ; un signal sonore s'ajoute quand on roule.
-  conduite: Je boucle ma ceinture et je m'assure que tous les passagers sont attachés avant de partir — le conducteur est responsable des mineurs.
+  conduite: "Avant de partir, je boucle ma ceinture et je m'assure que tous les passagers sont attachés. Le conducteur est responsable de l'attache des mineurs."
   theme: M
   sous_theme: voyants
   source: "ISO 2575 ; Code de la route, art. R412-1"
@@ -89,7 +89,7 @@
     dos à la route.
   theme: M
   sous_theme: voyants
-  source: Renault, témoins lumineux (exemple constructeur ; consulter la notice du véhicule) — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
+  source: "Renault, témoins lumineux (exemple constructeur ; consulter la notice du véhicule), https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux"
 - id: voyant-direction
   type: voyant
   code: ISO 7000-2305
@@ -106,7 +106,7 @@
   image: {commons: "ISO 7000 - Ref-No 0085.svg", tint: "#e53935"}
   nom: Feux de détresse (warning) en fonction
   signification: Les quatre clignotants fonctionnent ensemble pour signaler un danger ou un véhicule immobilisé.
-  conduite: Je les utilise en cas de panne, d'arrêt forcé, de ralentissement brusque ou de remorquage — jamais pour stationner.
+  conduite: "Je les utilise en cas de panne, d'arrêt forcé, de ralentissement brusque ou de remorquage. Ils ne m'autorisent pas à stationner."
   theme: M
   sous_theme: voyants
   source: "Code de la route, art. R416-18 ; ISO 2575"
@@ -121,7 +121,7 @@
   conduite: Fixe, je peux rouler en douceur et je fais contrôler rapidement ; clignotant, je m'arrête (risque de destruction du catalyseur).
   theme: M
   sous_theme: voyants
-  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+  source: "ISO 2575 ; Codes Rousseau, Les voyants"
 - id: voyant-abs
   type: voyant
   code: ISO 7000-1407
@@ -135,7 +135,7 @@
   piege: L’absence d’ABS seule n’impose pas un arrêt sur-le-champ ; un défaut du circuit de freinage est différent.
   theme: M
   sous_theme: voyants
-  source: Sécurité routière — Exemples de nouvelles questions (Q5) ; ISO 2575
+  source: "Sécurité routière, Exemples de nouvelles questions (Q5) ; ISO 2575"
 - id: voyant-esp
   type: voyant
   code: ESP / ESC
@@ -145,13 +145,13 @@
   conduite: "S'il clignote, je lève le pied et je garde une trajectoire souple, la chaussée est glissante. S'il est fixe alors que je ne l'ai pas désactivé, je fais contrôler."
   theme: M
   sous_theme: voyants
-  source: "ISO 2575 ; Codes Rousseau — Les aides à la conduite"
+  source: "ISO 2575 ; Codes Rousseau, Les aides à la conduite"
 - id: voyant-pression-pneus
   type: voyant
   code: ISO 7000-1434A
   image: {commons: "ISO 7000 - Ref-No 1434A.svg", tint: "#fb8c00"}
   nom: Pression des pneus (orange)
-  signification: Un pneu au moins est sous-gonflé (ou crevaison lente) — détecté par le système de surveillance de la pression (obligatoire sur les véhicules neufs depuis 2014).
+  signification: "Le système de surveillance de la pression détecte qu'au moins un pneu est sous-gonflé, éventuellement à cause d'une crevaison lente. Ce système est obligatoire sur les véhicules neufs depuis 2014."
   conduite: Je réduis ma vitesse, je m'arrête pour contrôler les quatre pneus et je regonfle à la pression préconisée (à froid) ; je réinitialise le système si nécessaire.
   theme: M
   sous_theme: voyants
@@ -165,7 +165,7 @@
   conduite: J'attends que le voyant s'éteigne avant d'actionner le démarreur ; s'il clignote en roulant, c'est un défaut d'injection à faire contrôler.
   theme: M
   sous_theme: voyants
-  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+  source: "ISO 2575 ; Codes Rousseau, Les voyants"
 - id: voyant-brouillard-arriere
   type: voyant
   code: ISO 7000-0634
@@ -186,7 +186,7 @@
   conduite: Je fais remplacer les plaquettes rapidement ; le freinage reste possible mais se dégrade et les disques s'abîment.
   theme: M
   sous_theme: voyants
-  source: "ISO 2575 ; Codes Rousseau — Les voyants"
+  source: "ISO 2575 ; Codes Rousseau, Les voyants"
 - id: voyant-fap
   type: voyant
   code: FAP / DPF
@@ -203,7 +203,7 @@
   code: ISO 7000-0456
   image: {commons: "ISO 7000 - Ref-No 0456.svg", tint: "#43a047"}
   nom: Feux de position allumés (vert)
-  signification: Les feux de position (veilleuses) sont en fonction — ils servent à être vu, pas à voir.
+  signification: "Les feux de position (veilleuses) sont allumés. Ils servent à être vu, pas à éclairer la route."
   conduite: "Obligatoires à l'arrêt ou en stationnement la nuit sur la chaussée (R416-12). Pour rouler la nuit, ils ne suffisent jamais, même en ville éclairée : feux de croisement (R416-6)."
   piege: "Seule tolérance des feux de position seuls en marche : de jour, par temps de pluie, en agglomération suffisamment éclairée."
   theme: M
@@ -214,7 +214,7 @@
   code: ISO 7000-0083
   image: {commons: "ISO 7000 - Ref-No 0083.svg", tint: "#43a047"}
   nom: Feux de croisement allumés (vert)
-  signification: Les feux de croisement (codes) sont en fonction — portée d'environ 30 m, sans éblouir.
+  signification: "Les feux de croisement (codes) sont allumés. Ils éclairent à environ 30 m sans éblouir."
   conduite: "Obligatoires la nuit, par visibilité réduite (pluie, brouillard, neige), dans les tunnels, et recommandés de jour."
   piege: "Faisceau incliné vers le bas = croisement ; faisceau horizontal (bleu) = route."
   theme: M
@@ -225,7 +225,7 @@
   code: ISO 7000-0082
   image: {commons: "ISO 7000 - Ref-No 0082.svg", tint: "#1e88e5"}
   nom: Feux de route allumés (bleu)
-  signification: Les feux de route (pleins phares) sont en fonction — portée d'environ 100 m, éblouissants.
+  signification: "Les feux de route (pleins phares) sont allumés. Ils éclairent à environ 100 m, mais éblouissent les autres usagers."
   conduite: Je les utilise la nuit hors agglomération non éclairée ; je repasse en croisement dès que je croise ou suis un véhicule.
   theme: M
   sous_theme: voyants
@@ -259,4 +259,4 @@
   conduite: "Je reste maître du véhicule : un appui sur le frein (ou l'embrayage) le désactive ; je ne l'utilise pas en trafic dense, sur route sinueuse ou glissante."
   theme: M
   sous_theme: voyants
-  source: "ISO 2575 ; Codes Rousseau — Les aides à la conduite"
+  source: "ISO 2575 ; Codes Rousseau, Les aides à la conduite"

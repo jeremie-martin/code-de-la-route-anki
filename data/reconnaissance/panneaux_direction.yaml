@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 9 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (9 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: d-couleur-bleu
   type: panneau
   image:
@@ -13,7 +13,7 @@
   complement: 'Code des couleurs : bleu = autoroute ; vert = grande liaison ; blanc = itinéraire local ; jaune = déviation ; marron = touristique.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: d-couleur-vert
   type: panneau
   image:
@@ -27,7 +27,7 @@
   conduite: Suivre le vert pour les longs trajets hors autoroute.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: d-couleur-blanc
   type: panneau
   image:
@@ -40,7 +40,7 @@
   signification: 'Fond blanc : direction locale (communes, quartiers, lieux-dits, zones d''activité) sur route ordinaire.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: d-couleur-jaune
   type: panneau
   image:
@@ -54,7 +54,7 @@
   conduite: Suivre l'itinéraire jaune de déviation ; il prime sur les indications permanentes contradictoires.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: d-couleur-marron
   type: panneau
   image:
@@ -67,7 +67,7 @@
   signification: 'Fond marron : indication d''un site ou d''un itinéraire d''intérêt culturel ou touristique (château, musée, parc naturel), avec pictogramme (idéogramme ID).'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: d20
   type: panneau
   code: D20
@@ -78,7 +78,7 @@
   conduite: Tourner au niveau du panneau dans la direction de la pointe.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: d40
   type: panneau
   code: D40
@@ -90,18 +90,18 @@
   complement: Lire la flèche et, si elle est affichée, la distance. Ne pas confondre l’annonce avec le panneau de position au carrefour.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: da40
   type: panneau
   code: Da40
   image:
     gen: direction_voies
-  nom: Affectation des voies par direction — schéma simplifié
+  nom: Affectation des voies par direction (schéma simplifié)
   signification: 'Les flèches vers le bas désignent les voies : sur ce schéma, deux voies pour Paris et la voie de droite pour Lyon.'
   conduite: Choisir sa voie assez tôt, après contrôles ; ne pas couper les autres voies au dernier moment.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   complement: 'Schéma simplifié : les destinations servent à lire l’affectation des voies.'
 - id: d50
   type: panneau
@@ -114,4 +114,4 @@
   complement: 2 000 m, 1 000 m et 500 m avant l'échangeur.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

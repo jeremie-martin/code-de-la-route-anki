@@ -1,4 +1,4 @@
-# R — La route : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
+# R : La route : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
 # Pièges tirés de docs/research/knowledge-facts.md R15 et des formes officielles Q10, Q13, Q18, Q19, Q20.
 - id: aff-r-descente-150m
   contexte: Route de montagne hors agglomération, panneau triangulaire « descente dangereuse 15 % ».
@@ -8,7 +8,7 @@
     sauf panonceau de distance.
   theme: R
   sous_theme: montagne
-  source: Sécurité routière — Exemples de nouvelles questions (Q18) ; IISR, 1re partie
+  source: "Sécurité routière, Exemples de nouvelles questions (Q18) ; IISR, 1re partie"
 - id: aff-r-pn-150m
   contexte: Route hors agglomération, panneau « passage à niveau » avec panonceau « signal automatique ».
   affirmation: Circulant hors agglomération, le passage à niveau se situe à environ 150 m.
@@ -16,7 +16,7 @@
   pourquoi: 'Hors agglomération, les balises à bandes rouges décomptent l’approche : trois bandes à environ 150 m, deux à 100 m, une à 50 m. Je ralentis progressivement avant le passage à niveau.'
   theme: R
   sous_theme: passages_a_niveau
-  source: Sécurité routière — Exemples de nouvelles questions (Q19) ; IISR
+  source: "Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR"
 - id: aff-r-pn-feux-rouges-possibles
   contexte: Passage à niveau annoncé par un panonceau « signal automatique ».
   affirmation: À ce passage à niveau, je peux rencontrer des feux rouges clignotants.
@@ -25,7 +25,7 @@
     feux rouges clignotants et une sonnerie, avec ou sans demi-barrières.'
   theme: R
   sous_theme: passages_a_niveau
-  source: Sécurité routière — Exemples de nouvelles questions (Q19) ; IISR, 6e partie
+  source: "Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR, 6e partie"
 - id: aff-r-pn-barriere-contourner
   affirmation: 'Une demi-barrière ne ferme que ma moitié de chaussée : je peux la contourner si je ne vois pas de
     train.'
@@ -104,7 +104,7 @@
     de la borne et un agent règle la situation à distance.
   theme: R
   sous_theme: autoroute
-  source: Code de la route, art. R421-6 ; ASFA — Le péage
+  source: "Code de la route, art. R421-6 ; ASFA, Le péage"
 - id: aff-r-brouillard-arriere-pluie
   dedup_ok:
   - aff-r-brouillard-avant-pluie
@@ -148,7 +148,7 @@
     progressivement, volant tenu fermement et roues droites, jusqu''au retour du contact.'
   theme: R
   sous_theme: intemperies
-  source: Ornikar — L'aquaplaning ; securite-routiere.gouv.fr — Conduire sous la pluie
+  source: "Ornikar, L'aquaplaning ; securite-routiere.gouv.fr, Conduire sous la pluie"
 - id: aff-r-montagne-ms
   affirmation: Des pneus marqués seulement « M+S » suffisent pour satisfaire à l'obligation d'équipement en zone
     montagne.
@@ -166,7 +166,7 @@
     et de chaussettes, il ne reste que les quatre pneus marqués 3PMSF.'
   theme: R
   sous_theme: intemperies
-  source: Sécurité routière — Exemples de nouvelles questions (Q10) ; décret n° 2020-1264
+  source: "Sécurité routière, Exemples de nouvelles questions (Q10) ; décret n° 2020-1264"
 - id: aff-r-verglas-pont
   affirmation: Un pont peut être verglacé alors que la route qui y mène ne l'est pas.
   verdict: vrai
@@ -174,7 +174,7 @@
     Même piège dans les zones d''ombre, les sous-bois et près des cours d''eau.'
   theme: R
   sous_theme: intemperies
-  source: En Voiture Simone — Le verglas ; Roole — Neige et verglas
+  source: "En Voiture Simone, Le verglas ; Roole, Neige et verglas"
 - id: aff-r-verglas-temperature-positive
   contexte: Aube d’hiver ; le thermomètre extérieur de la voiture indique +2 °C.
   affirmation: La température étant positive, je peux exclure tout verglas sur la route.
@@ -184,7 +184,7 @@
     ne garantit l’absence de glace.'
   theme: R
   sous_theme: intemperies
-  source: Codes Rousseau — Neige et brouillard ; En Voiture Simone — Le verglas
+  source: "Codes Rousseau, Neige et brouillard ; En Voiture Simone, Le verglas"
 - id: aff-r-neige-depassement-pl
   affirmation: Sur une chaussée enneigée, un poids lourd de plus de 3,5 t ne peut ni dépasser ni changer de file.
   verdict: vrai
@@ -220,7 +220,7 @@
     trentaine de mètres ; un gilet rétroréfléchissant renvoie la lumière et le signale bien plus tôt.
   theme: R
   sous_theme: nuit
-  source: securite-routiere.gouv.fr — Conduire de nuit ; Code de la route, art. R313-3
+  source: "securite-routiere.gouv.fr, Conduire de nuit ; Code de la route, art. R313-3"
 - id: aff-r-tunnel-demi-tour
   affirmation: Si un bouchon se forme dans le tunnel, je peux faire demi-tour pour ressortir.
   verdict: faux
@@ -228,7 +228,7 @@
     coupé, radio allumée ; si une évacuation est nécessaire, elle se fait à pied par les issues de secours.
   theme: R
   sous_theme: tunnels
-  source: CETU — Conduire en tunnel ; Code de la route, art. R417-10 (arrêt et stationnement interdits en tunnel)
+  source: "CETU, Conduire en tunnel ; Code de la route, art. R417-10 (arrêt et stationnement interdits en tunnel)"
 - id: aff-r-tram-station-pieton
   affirmation: Un tramway arrêté à sa station peut masquer un piéton qui traverse devant lui.
   verdict: vrai
@@ -236,7 +236,7 @@
     on ralentit à l''approche d''une station, et on ne dépasse pas du côté où ils descendent.'
   theme: R
   sous_theme: tramways
-  source: Code de la route, art. R414-13 ; coursdecode.com — Les tramways
+  source: "Code de la route, art. R414-13 ; coursdecode.com, Les tramways"
 - id: aff-r-chantier-sans-ouvriers
   contexte: Chantier autoroutier un dimanche, limitation jaune à 90, aucun engin ni ouvrier en vue.
   affirmation: 'Personne ne travaille : je peux reprendre 130 km/h.'
@@ -252,7 +252,7 @@
   pourquoi: 'La manche à air renseigne sur le vent : pendante, elle indique peu ou pas de vent ; tendue à l’horizontale, un vent fort. Le triangle portant ce symbole annonce une zone exposée.'
   theme: R
   sous_theme: intemperies
-  source: IISR (A24, J7) ; Ornikar — Conduire par grand vent
+  source: "IISR (A24, J7) ; Ornikar, Conduire par grand vent"
 - id: aff-r-vent-deux-roues
   affirmation: Par vent latéral, je laisse un écart plus grand au motard que je dépasse.
   verdict: vrai
@@ -260,4 +260,4 @@
     surprend surtout à la sortie d'une zone abritée (tunnel, pile de pont, rideau d'arbres).
   theme: R
   sous_theme: intemperies
-  source: securite-routiere.gouv.fr — Le vent ; En Voiture Simone — Le vent
+  source: "securite-routiere.gouv.fr, Le vent ; En Voiture Simone, Le vent"

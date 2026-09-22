@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 3 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (3 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: g1
   type: panneau
   code: G1
@@ -10,7 +10,7 @@
   complement: Un triangle avec une locomotive annonce le passage à niveau sans barrières. Une croix simple indique une voie ferrée ; une croix double, plusieurs voies.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Dépassement interdit aux passages à niveau sans barrière ni demi-barrière (R414-12), même avec signalisation automatique.
   comparaisons:
   - ref: g1a
@@ -25,7 +25,7 @@
   conduite: Je regarde et écoute des deux côtés, respecte un éventuel STOP et ne franchis que si aucune voie ferrée ne présente de danger et si je peux dégager entièrement.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: g1bis
   type: panneau
   code: G1bis
@@ -36,4 +36,4 @@
   conduite: Feu rouge clignotant allumé = arrêt absolu, même si le train n'est pas visible ; feu éteint = franchir après s'être assuré qu'aucun train n'approche.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

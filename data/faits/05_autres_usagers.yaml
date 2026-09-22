@@ -27,7 +27,7 @@
     les pédales) et un avertisseur sonore. Les catadioptres font voir le vélo de côté dans les phares d’une voiture qui débouche.'
   theme: U
   sous_theme: cyclistes
-  source: Code de la route, art. R313-4 et s. ; securite-routiere.gouv.fr — Équipements obligatoires vélo
+  source: "Code de la route, art. R313-4 et s. ; securite-routiere.gouv.fr, Équipements obligatoires vélo"
   rappels:
   - De nuit ou par visibilité insuffisante, un vélo doit avoir un feu avant {{c1::blanc ou jaune}} et un feu arrière
     rouge.
@@ -37,7 +37,7 @@
     basse ne suffit pas à exclure l’inter-files.
   theme: U
   sous_theme: motos
-  source: Code de la route, R412-11-3 — https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050963583/
+  source: "Code de la route, R412-11-3, https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050963583/"
   rappels:
   - L'inter-files est réglementée sur les autoroutes et routes à chaussées séparées (au moins deux voies par sens) normalement
     limitées à {{c1::70 km/h}} ou plus.
@@ -61,7 +61,7 @@
     tourne à droite se déporte d’abord à gauche : ne jamais se glisser dans l’espace qu’il semble libérer.'
   theme: U
   sous_theme: poids_lourds
-  source: securite-routiere.gouv.fr — Angles morts ; Code de la route, art. R313-32-1 et R412-12
+  source: "securite-routiere.gouv.fr, Angles morts ; Code de la route, art. R313-32-1 et R412-12"
 - id: u-pl-vitesses-chiffres
   theme: U
   sous_theme: poids_lourds

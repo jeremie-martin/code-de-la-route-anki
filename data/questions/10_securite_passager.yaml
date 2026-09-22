@@ -2,9 +2,7 @@
   question: Qui doit porter la ceinture dans la voiture, et qui répond du non-port ?
   reponse: 'Tous les occupants, à l’avant comme à l’arrière : un passager majeur répond de lui-même ; le conducteur répond
     de chaque passager de moins de 18 ans.'
-  explication: 'Conducteur non attaché : 135 € et 3 points ; passager majeur : 135 € pour lui, sans points ; passager mineur
-    non attaché : 135 € pour le conducteur, sans points. Une place équipée d''une ceinture par personne ; dispenses limitées
-    (morphologie inadaptée, certificat médical, taxi en service — R412-1 II).'
+  explication: "Conducteur non attaché : 135 € et 3 points ; passager majeur : 135 € pour lui, sans points ; passager mineur non attaché : 135 € pour le conducteur, sans points. Il faut une place équipée d'une ceinture par personne. R412-1 II prévoit des dispenses limitées : morphologie inadaptée, certificat médical, taxi en service…"
   theme: S
   sous_theme: passagers
   source: Code de la route, art. R412-1 et R412-2
@@ -16,7 +14,7 @@
     pèse « plusieurs tonnes » l''instant du choc. Retenir la nécessité de la ceinture, pas une constante.'
   theme: S
   sous_theme: passagers
-  source: securite-routiere.gouv.fr — La ceinture de sécurité
+  source: "securite-routiere.gouv.fr, La ceinture de sécurité"
 - id: s-femme-enceinte
   question: Une femme enceinte doit-elle porter la ceinture ?
   reponse: 'Oui : sangle basse sous le ventre (sur les hanches), sangle haute entre les seins ; c''est la meilleure protection
@@ -25,7 +23,7 @@
     dispense pas à elle seule de ceinture ; une dispense médicale relève d’une procédure spécifique.
   theme: S
   sous_theme: passagers
-  source: securite-routiere.gouv.fr — La ceinture de sécurité
+  source: "securite-routiere.gouv.fr, La ceinture de sécurité"
 - id: s-airbag-distance
   question: Je suis très près du volant. Pourquoi reculer le siège tout en gardant les commandes accessibles ?
   reponse: Pour laisser à l'airbag l'espace de se déployer, environ 25 cm entre le sternum et le volant, tout en atteignant
@@ -34,7 +32,7 @@
     transforme l'airbag en danger.
   theme: S
   sous_theme: passagers
-  source: securite-routiere.gouv.fr — S'installer au poste de conduite ; constructeurs
+  source: "securite-routiere.gouv.fr, S'installer au poste de conduite ; constructeurs"
 - id: s-animaux
   question: Comment transporter un animal en voiture ?
   reponse: Attaché (harnais relié à la ceinture), en caisse, ou derrière un filet ou une grille dans le coffre ; jamais libre
@@ -52,16 +50,16 @@
     coffre, dans une caravane en circulation ou dans la zone de chargement d'un utilitaire.
   theme: S
   sous_theme: passagers
-  source: Code de la route, art. R412-1-1 ; Stych — Installation des passagers
+  source: "Code de la route, art. R412-1-1 ; Stych, Installation des passagers"
 - id: s-enfant-moins-10-ans
   question: Jusqu'à quel âge un enfant doit-il voyager dans un dispositif de retenue homologué (siège, réhausseur) ?
-  reponse: Jusqu'à 10 ans, adapté à sa taille et à son poids — et en principe à l'arrière.
+  reponse: "Jusqu'à 10 ans, dans un dispositif adapté à sa taille et à son poids, en principe à l'arrière."
   explication: 'Dérogations au dispositif de retenue (R412-2 III) : morphologie de l''enfant adaptée à la ceinture, certificat
     médical, taxi ou transport en commun. Sanction : 135 € pour le conducteur, sans retrait de points. Les exceptions pour
     la place avant sont celles de l''article R412-3.'
   theme: S
   sous_theme: enfants
-  source: Code de la route, art. R412-2 et R412-3 ; service-public.fr — Transport d'enfants en voiture
+  source: "Code de la route, art. R412-2 et R412-3 ; service-public.fr, Transport d'enfants en voiture"
 - id: s-siege-dos-route
   question: Peut-on installer un siège bébé dos à la route sur le siège passager avant ?
   reponse: 'Seulement si l’airbag frontal passager est désactivé : sinon son déploiement contre le siège peut tuer le bébé.'
@@ -69,7 +67,7 @@
     l'impose jusqu'à 15 mois. Le voyant « airbag passager OFF » confirme la désactivation.
   theme: S
   sous_theme: enfants
-  source: Code de la route, art. R412-3 ; règlement ONU R129 (i-Size) ; securite-routiere.gouv.fr — Enfants en voiture
+  source: "Code de la route, art. R412-3 ; règlement ONU R129 (i-Size) ; securite-routiere.gouv.fr, Enfants en voiture"
 - id: s-groupes-sieges
   question: Comment choisit-on un siège enfant ?
   reponse: Un siège homologué adapté à la taille et au poids de l’enfant, compatible avec la voiture et la place choisie.
@@ -80,7 +78,7 @@
     restent utilisables ; les sièges R44 ne sont plus vendus neufs depuis septembre 2024.'
   theme: S
   sous_theme: enfants
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F628 ; AWSR — https://www.awsr.be/securite-routiere/sieges-auto/
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F628 ; AWSR, https://www.awsr.be/securite-routiere/sieges-auto/"
 - id: s-securite-enfant-portieres
   question: À quoi sert la « sécurité enfants » des portières arrière ?
   reponse: À empêcher l'ouverture des portes arrière depuis l'intérieur (et sur certains véhicules, le fonctionnement des
@@ -89,7 +87,7 @@
     jamais un enfant seul dans le véhicule.
   theme: S
   sous_theme: enfants
-  source: securite-routiere.gouv.fr — Enfants en voiture
+  source: "securite-routiere.gouv.fr, Enfants en voiture"
 - id: s-chargement-placement
   question: Comment répartit-on un chargement dans le véhicule ?
   reponse: Objets lourds en bas et le plus en avant possible (contre le dossier), légers au-dessus, le tout arrimé et pas
@@ -119,7 +117,7 @@
     l''allure en virage et par vent latéral.'
   theme: S
   sous_theme: chargement
-  source: ADEME — Éco-conduite ; securite-routiere.gouv.fr
+  source: "ADEME, Éco-conduite ; securite-routiere.gouv.fr"
 - id: s-remorque-conduite
   question: Qu'est-ce qui change au volant quand on tracte une remorque ou une caravane ?
   reponse: 'Gabarit et distance d’arrêt plus grands, dépassements plus longs, marche arrière inversée et risque de louvoiement
@@ -128,7 +126,7 @@
     plus large, il faut des rétroviseurs additionnels. En cas de louvoiement : lever le pied sans freiner brutalement.'
   theme: S
   sous_theme: chargement
-  source: securite-routiere.gouv.fr — Équipement de la voiture ; Stych — Chargement et remorque
+  source: "securite-routiere.gouv.fr, Équipement de la voiture ; Stych, Chargement et remorque"
 - id: s-securite-active-passive
   question: Quelle différence entre sécurité active et sécurité passive ?
   reponse: La sécurité active évite l’accident (freins, pneus, éclairage…) ; la sécurité passive limite les blessures quand
@@ -137,7 +135,7 @@
     les prétensionneurs, les zones de déformation et l'habitacle rigide. Le classement Euro NCAP (5 étoiles) évalue les deux.
   theme: S
   sous_theme: equipements
-  source: securite-routiere.gouv.fr — Équipements de sécurité ; Euro NCAP
+  source: "securite-routiere.gouv.fr, Équipements de sécurité ; Euro NCAP"
 - id: s-remorque-vitesses
   question: 'Je tracte une remorque avec une voiture de PTAC inférieur à 3,5 t et de PTRA 4 t.
     Hors agglomération, quels plafonds de vitesse s’appliquent par temps sec, sans limitation plus basse ?'
@@ -148,7 +146,7 @@
     de la voiture. Une limitation plus basse ou les conditions de circulation peuvent imposer de ralentir davantage.'
   theme: S
   sous_theme: chargement
-  source: Code de la route, art. R413-8 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426 ; R413-1 et R413-4
+  source: "Code de la route, art. R413-8, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426 ; R413-1 et R413-4"
 - id: s-remorque-permis-vitesse
   question: 'Voiture de PTAC 2 200 kg et de PTRA 4 000 kg, attelée à une remorque vide de PTAC 500 kg.
     Le permis B suffit et les capacités techniques sont respectées. Sur une autoroute normalement limitée
@@ -159,7 +157,7 @@
     ne suppriment ici la limite liée au PTRA. Sans remorque, ce seul PTRA ne soumet pas la voiture à 90 km/h.'
   theme: S
   sous_theme: chargement
-  source: Code de la route, art. R413-8 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426 ; R221-4
+  source: "Code de la route, art. R413-8, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426 ; R221-4"
 - id: s-remorque-seuil-750
   theme: S
   sous_theme: applications
@@ -168,7 +166,7 @@
   reponse: 'Oui : la remorque ne dépasse pas 750 kg de PTAC, même si la somme des PTAC atteint 4 250 kg.'
   explication: Le cas de la remorque au plus égale à 750 kg est distinct du cas d’une remorque plus lourde.
     Calculer seulement la somme dans tous les cas conduit à une erreur.
-  source: Service Public, permis B — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828
+  source: "Service Public, permis B, https://www.service-public.gouv.fr/particuliers/vosdroits/F2828"
 - id: s-remorque-masse-reelle
   theme: S
   sous_theme: applications
@@ -177,4 +175,4 @@
   reponse: 'Non : pour cette règle de permis, on additionne les PTAC, pas les masses réelles du jour.'
   explication: Le permis et les capacités techniques sont deux contrôles différents. Vider la remorque ne modifie
     pas son PTAC.
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2828"

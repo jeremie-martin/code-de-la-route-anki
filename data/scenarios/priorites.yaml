@@ -1,4 +1,4 @@
-# Thème L — Scénarios de priorité (schémas générés, réponses vérifiées par build/priority.py)
+# Thème L : Scénarios de priorité (schémas générés, réponses vérifiées par build/priority.py)
 # Convention : « MOI » = voiture bleue cerclée de jaune, toujours en bas (approche S). Les flèches indiquent l'intention.
 # check.order = ordre calculé attendu (lettres d'approche : N, E, S, W) ; check.pair = [a, b, avant|apres|independant].
 
@@ -330,9 +330,7 @@
   question: Les véhicules suivent les flèches. Quel est l’ordre de passage, et quel indice tranche entre moi et
     la voiture rouge ?
   reponse: Rouge, puis moi, puis verte (quand son feu passera au vert).
-  explication: Feu vert = je peux passer, mais en tournant à gauche je cède aux véhicules d'en face. Je m'avance
-    au centre de l'intersection, clignotant, et je termine mon virage dès que c'est libre — même si mon feu passe
-    à l'orange.
+  explication: "Le feu vert m'autorise à passer, mais en tournant à gauche je cède aux véhicules d'en face. Je m'avance au centre de l'intersection avec mon clignotant et je termine mon virage dès que c'est libre, même si mon feu passe à l'orange."
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R412-33 et R415-4

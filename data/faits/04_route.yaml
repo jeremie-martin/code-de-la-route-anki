@@ -4,7 +4,7 @@
     signaux et vérifier qu’on peut dégager entièrement les rails avant de s’engager.'
   theme: R
   sous_theme: passages_a_niveau
-  source: SNCF Réseau — Sécurité aux passages à niveau ; securite-routiere.gouv.fr — Passage à niveau
+  source: "SNCF Réseau, Sécurité aux passages à niveau ; securite-routiere.gouv.fr, Passage à niveau"
 - id: r-loi-montagne-periode
   texte: Dans les communes concernées par l’obligation saisonnière d’équipements hiver, la période annuelle est
     du {{c1::1er novembre au 31 mars}}.
@@ -24,7 +24,7 @@
     varie selon le tunnel.
   theme: R
   sous_theme: tunnels
-  source: CETU — Conduire en tunnel
+  source: "CETU, Conduire en tunnel"
 - id: r-autoroute-sortie-annonces
   explication: La manœuvre doit être achevée au plus tard au début de la bretelle. Les aires sont annoncées à 2
     000 m puis 1 000 m ; chaque sortie porte un numéro repris sur les panneaux.

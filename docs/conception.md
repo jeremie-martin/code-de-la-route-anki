@@ -29,6 +29,8 @@ relation ; leur résultat seul ne doit pas devenir la connaissance à apprendre.
 
 - Donner au recto les conditions nécessaires : véhicule, statut du conducteur, route, météo, visibilité,
   point de vue. Une image hors échelle ne permet pas de mesurer une distance ou une vitesse.
+- Écrire sans tirets cadratins. Reformuler la phrase selon le lien logique (condition, conséquence,
+  précision), plutôt que remplacer mécaniquement la ponctuation.
 - Rendre la réponse jugeable avec ses propres mots. Mettre en explication le mécanisme, la limite ou la
   confusion utile. La longueur dépend du sujet ; aucune limite universelle de mots ou de listes.
 - Enseigner la règle actuelle et citer une source qui couvre aussi ses conditions. Un raccourci pédagogique

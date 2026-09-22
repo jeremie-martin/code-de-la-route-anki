@@ -1,12 +1,11 @@
 - id: l-vitesse-agglo
-  texte: En agglomération, la vitesse maximale par défaut est de {{c1::50 km/h}} — dès le panneau d'entrée d'agglomération
-    (EB10), jusqu'au panneau de sortie (EB20).
+  texte: "Du panneau d'entrée d'agglomération (EB10) au panneau de sortie (EB20), la vitesse maximale par défaut est de {{c1::50 km/h}}."
   explication: 'Une autorité locale peut abaisser la limite. Le relèvement à 70 exige notamment des accès riverains et traversées
     piétonnes en nombre limité et protégés. Zone 30 : 30 ; zone de rencontre : 20 ; aire piétonne : allure du pas, sans seuil
     légal universel de 6 km/h.'
   theme: L
   sous_theme: vitesse
-  source: R413-3 et R110-2 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
+  source: "R413-3 et R110-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
 - id: l-vitesse-hors-agglo
   dedup_ok:
   - aff-l-90-departement
@@ -24,7 +23,7 @@
   explication: Le terre-plein central sépare deux chaussées ; le nombre de voies ne suffit pas. Le panneau bleu avec une voiture réglemente l’accès, sans fixer à lui seul 110 km/h. Je lis la configuration, les limitations et les conditions.
   theme: L
   sous_theme: vitesse
-  source: R413-2 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
+  source: "R413-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
   rappels:
   - 'Route à deux chaussées séparées par un terre-plein central, hors agglomération, temps sec, permis définitif :
     je ne dépasse pas {{c1::110 km/h}}.'
@@ -34,7 +33,7 @@
     inférieure à 50 m : plafond de 50 km/h, sans relever une limite à 30.'
   theme: L
   sous_theme: vitesse
-  source: Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+  source: "Code de la route, art. R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/"
   rappels:
   - Il pleut. Sur une autoroute limitée à 130 par temps sec, je ne dépasse pas {{c1::110 km/h}}.
   - Il pleut. Sur une autoroute limitée à 110, ou sur une route à chaussées séparées par un terre-plein (110 par temps
@@ -46,7 +45,7 @@
     inférieure à 50 m.
   theme: L
   sous_theme: vitesse
-  source: R413-4 ; R412-12 ; R413-17 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
+  source: "R413-4 ; R412-12 ; R413-17, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
   rappels:
   - Le plafond spécial lié à une visibilité très réduite s’applique quand on voit à moins de {{c1::50 m}}.
   - 'Brouillard, visibilité inférieure à 50 m : sur autoroute comme ailleurs, je ne dépasse pas {{c2::50 km/h}} (une
@@ -57,7 +56,7 @@
     pluie et permis probatoire donnent le même plafond de 110 ; sur une section normalement limitée à 110, c’est 100.'
   theme: L
   sous_theme: vitesse
-  source: Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+  source: "Code de la route, art. R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/"
   rappels:
   - Permis probatoire (ou élève), temps sec. Sur autoroute (130 pour les autres), je ne dépasse pas {{c1::110 km/h}}.
   - Permis probatoire (ou élève), temps sec. Sur une autoroute limitée à 110, ou une route à chaussées séparées (110
@@ -72,7 +71,7 @@
     (35 €).
   theme: L
   sous_theme: vitesse
-  source: R413-19 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
+  source: "R413-19, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
 - id: l-vitesse-engins
   explication: 'Un EDPM est bridé à 25 km/h (voir la carte dédiée). Sur un VAE conforme, l’assistance se coupe à 25 km/h mais
     on peut pédaler plus vite : ce n’est pas un cyclomoteur. Une assistance débridée change sa conformité.'
@@ -146,7 +145,7 @@
     l’étendre à tous ces usagers.'
   theme: L
   sous_theme: depassement
-  source: Code de la route, R414-4 et R412-19 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/
+  source: "Code de la route, R414-4 et R412-19, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/"
   rappels:
   - Pour dépasser un cycliste en agglomération, l’écart latéral minimal est {{c1::1 m}}.
   - Pour dépasser un cycliste hors agglomération, l’écart latéral minimal est {{c2::1,50 m}}.
@@ -185,7 +184,7 @@
     de distance indique l’éloignement réel annoncé ; un panonceau d’étendue décrit la longueur concernée.
   theme: L
   sous_theme: signalisation
-  source: IISR 2e partie, art. 28 ; Sécurité routière — Exemples de nouvelles questions (Q18, Q19)
+  source: "IISR 2e partie, art. 28 ; Sécurité routière, Exemples de nouvelles questions (Q18, Q19)"
   rappels:
   - Hors agglomération, sans panonceau de distance, un panneau de danger est généralement placé à environ {{c1::150 m}} du
     danger.
@@ -216,7 +215,7 @@
     « tous les panneaux > tous les marquages ».
   theme: L
   sous_theme: signalisation
-  source: Code de la route, R411-25 et R411-28 ; IISR, 8e partie — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087
+  source: "Code de la route, R411-25 et R411-28 ; IISR, 8e partie, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087"
   rappels:
   - Les ordres de l’{{c1::agent}} qui règle la circulation prévalent sur les feux et les panneaux.
   - Les {{c2::feux}} en fonctionnement prévalent sur les panneaux qui règlent la priorité, pas sur les autres interdictions.

@@ -1,6 +1,6 @@
 # Vérification du rendu navigateur
 
-Paquet complet SHA-256 : `dd9a5e155ac39b2c92630160c1fa0aa39a3f945c476d49c552d8b6f9def3b591`.
+Paquet complet SHA-256 : `3da6dd76133e49f900b4d0cbf1cea34be67a10955b37981fff2a019fcc06af1b`.
 
 Paquet importé dans une collection temporaire ; contenus et gabarits rendus par Anki, puis chargés dans Chromium local sans réseau externe. Toutes les cartes, recto et verso, à 430 × 932 en clair et sombre, à 390 × 844 et 320 × 640 en sombre ; échantillon à 960 px.
 
@@ -16,7 +16,7 @@ Paquet importé dans une collection temporaire ; contenus et gabarits rendus par
 
 4521 comparaisons recto/verso : géométrie des images, textes et typographie des prompts (le texte cloze se révèle en place et peut naturellement changer de longueur).
 
-514 faces/configurations nécessitent un défilement vertical ; ce défilement est admis. Captures en pleine hauteur et captures du seul écran (`_viewport`).
+521 faces/configurations nécessitent un défilement vertical ; ce défilement est admis. Captures en pleine hauteur et captures du seul écran (`_viewport`).
 
 105 ouvertures et fermetures du volet testées sur l’échantillon.
 

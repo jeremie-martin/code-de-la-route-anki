@@ -1,6 +1,6 @@
 # Comparaison avec le livre 2025–2026
 
-22 septembre 2026 — *Le Code de la route 2025–2026 pour les Nuls, poche*, Permisecole.com,
+Lecture du 22 septembre 2026 : *Le Code de la route 2025–2026 pour les Nuls, poche*, Permisecole.com,
 édition numérique fournie localement (métadonnées : 23 janvier 2025).
 
 Le sommaire a été rapproché des objectifs du deck, puis les passages susceptibles d’apporter une
@@ -46,7 +46,7 @@ Aucun scénario du paquet ne met actuellement en scène deux véhicules opposés
 Cette comparaison ne démontre ni la couverture exhaustive de l’ETG ni un gain mesuré de rétention.
 Les scènes photo/vidéo nouvelles restent nécessaires pour entraîner la perception.
 
-## Seconde lecture ciblée — 22 septembre 2026
+## Seconde lecture ciblée du 22 septembre 2026
 
 Relecture des passages sur le placement, les changements de direction, les croisements, les distances,
 le fonctionnement du véhicule et les piétons (ch. 14, 19–21, 24 et 37), avec inspection du schéma de
@@ -64,7 +64,7 @@ croisement à l’indonésienne. Pas de nouveau média nécessaire pour les corr
 Cette passe porte sur les points ci-dessus et leur cohérence dans le deck, pas sur une nouvelle vérification
 juridique de toutes ses notes. Le livre reste un document local de comparaison, exclu de Git et du paquet.
 
-## Aides à la conduite — complément du 22 septembre 2026
+## Aides à la conduite : complément du 22 septembre 2026
 
 Le ch. 15 distingue régulateur simple, adaptatif, limiteur, AFU et maintien de voie. Cette lecture conduit
 à préciser neuf notes du deck, sans reprendre les images du livre :
@@ -82,7 +82,7 @@ pas des spécifications universelles. Les quatorze images du ch. 15 ont été in
 et les équipements, sans apporter de scène de décision manquante ici. Le générateur et les médias sont conservés.
 Cette passe porte sur les distinctions ci-dessus ; elle ne revalide pas chaque carte ni les illustrations du livre.
 
-## Installation et départ du véhicule — complément du 22 septembre 2026
+## Installation et départ du véhicule : complément du 22 septembre 2026
 
 Les ch. 10 et 26 ont été relus ; les illustrations du ch. 10 ont été inspectées en planche.
 Elles montrent surtout des gestes d’installation, sans nouvelle scène de décision nécessaire ici. Le verrouillage du siège après réglage est un apport utile, confirmé par

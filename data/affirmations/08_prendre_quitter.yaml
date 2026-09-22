@@ -1,4 +1,4 @@
-# P — Prendre et quitter son véhicule : affirmations à juger VRAI/FAUX (cf. docs/05-audit-v2.md §2.2).
+# P : Prendre et quitter son véhicule : affirmations à juger VRAI/FAUX (cf. docs/05-audit-v2.md §2.2).
 # Les fausses sont les idées reçues réelles du thème (knowledge-facts « Pièges U et S ») ; le verso donne la raison.
 - id: aff-p-reglage-en-roulant
   contexte: Je m'aperçois en roulant que mon rétroviseur droit est mal orienté.
@@ -7,7 +7,7 @@
   pourquoi: "Les réglages du poste de conduite se font véhicule à l'arrêt : chercher la commande détourne le regard et une main. Je m'arrête en sécurité, je règle, puis je repars."
   theme: P
   sous_theme: installation
-  source: Code en Poche — Prendre et quitter son véhicule ; REMC
+  source: "Code en Poche, Prendre et quitter son véhicule ; REMC"
 - id: aff-p-retro-interieur-nuit
   contexte: De nuit, les phares du véhicule qui me suit m’éblouissent dans mon rétroviseur intérieur à levier jour/nuit.
   affirmation: Je bascule le rétroviseur en position nuit pour atténuer le reflet.
@@ -16,7 +16,7 @@
     l’atténuation est automatique ; je repère l’équipement de la voiture.
   theme: P
   sous_theme: installation
-  source: Renault, rétroviseurs — https://www.user-manual.renault.com/fr/r%C3%A9trovision/retroviseurs-1
+  source: "Renault, rétroviseurs, https://www.user-manual.renault.com/fr/r%C3%A9trovision/retroviseurs-1"
 - id: aff-p-ceinture-sous-le-bras
   contexte: La sangle d'épaule me gêne au niveau du cou.
   affirmation: Je peux la faire passer sous mon bras pour être plus à l'aise.
@@ -24,7 +24,7 @@
   pourquoi: "Sous le bras, la sangle n'appuie plus sur le sternum : au choc, le buste part en avant et les côtes cèdent. Je règle plutôt la hauteur du point d'ancrage supérieur."
   theme: P
   sous_theme: installation
-  source: securite-routiere.gouv.fr — Comment positionner la ceinture de sécurité
+  source: "securite-routiere.gouv.fr, Comment positionner la ceinture de sécurité"
 - id: aff-p-ceinture-blouson
   contexte: Je monte en voiture par grand froid, avec une doudoune épaisse.
   affirmation: Cette doudoune réduit l'efficacité de ma ceinture.
@@ -32,7 +32,7 @@
   pourquoi: "L'épaisseur laisse du jeu entre la sangle et le corps : au choc, le buste parcourt cette distance avant d'être retenu. Mieux vaut retirer le blouson et bien tendre la sangle."
   theme: P
   sous_theme: installation
-  source: securite-routiere.gouv.fr — La ceinture de sécurité
+  source: "securite-routiere.gouv.fr, La ceinture de sécurité"
 - id: aff-p-siege-verrouille
   contexte: À l’arrêt, j’ai avancé mon siège à réglage manuel et relâché sa poignée.
   affirmation: Avant de démarrer, je vérifie que le siège reste bloqué en position.
@@ -41,7 +41,7 @@
     bonne distance ne suffit pas ; le réglage doit rester en place.
   theme: P
   sous_theme: installation
-  source: Renault, sièges avant — https://www.user-manual.renault.com/fr/si%C3%A8ges-avant/sieges-avant-4
+  source: "Renault, sièges avant, https://www.user-manual.renault.com/fr/si%C3%A8ges-avant/sieges-avant-4"
 - id: aff-p-pied-gauche-frein
   contexte: Je conduis une voiture à boîte manuelle.
   affirmation: Je peux freiner du pied gauche pour gagner du temps en cas d'urgence.
@@ -49,7 +49,7 @@
   pourquoi: "En boîte manuelle le pied gauche ne sert qu'à l'embrayage et se repose sur le repose-pied ; le pied droit bascule du talon entre accélérateur et frein, ce qui garantit un appui franc."
   theme: P
   sous_theme: installation
-  source: En Voiture Simone — S'installer au poste de conduite
+  source: "En Voiture Simone, S'installer au poste de conduite"
 - id: aff-p-quitter-documents
   contexte: Je laisse ma voiture sur un parking pour la journée.
   affirmation: Je laisse le certificat d'immatriculation dans la boîte à gants, sa place est dans le véhicule.
@@ -57,7 +57,7 @@
   pourquoi: "Les documents du véhicule repartent avec le conducteur : laissés à bord, ils facilitent la revente d'une voiture volée. Objets de valeur hors de vue, vitres fermées, véhicule verrouillé."
   theme: P
   sous_theme: quitter
-  source: En Voiture Simone — Précautions pour quitter son véhicule
+  source: "En Voiture Simone, Précautions pour quitter son véhicule"
 - id: aff-p-neige-toit
   contexte: Après une nuit de neige, j'ai dégagé le pare-brise et les vitres.
   affirmation: Je dois aussi déneiger le toit avant de partir.
@@ -65,7 +65,7 @@
   pourquoi: "Au premier freinage, la plaque glisse sur le pare-brise et m'aveugle ; en roulant, elle s'envole sur ceux qui suivent. Je dégage également les feux et les plaques."
   theme: P
   sous_theme: verifications
-  source: Cours de code — Entrer et sortir de son véhicule ; securite-routiere.gouv.fr — Conduire en hiver
+  source: "Cours de code, Entrer et sortir de son véhicule ; securite-routiere.gouv.fr, Conduire en hiver"
 - id: aff-p-entrer-face-circulation
   contexte: Ma voiture est garée le long d'une rue passante, portière conducteur côté chaussée.
   affirmation: Je m'approche face à la circulation pour monter à bord.
@@ -73,7 +73,7 @@
   pourquoi: "Faire face aux véhicules qui arrivent permet de les voir venir et d'attendre. J'ouvre peu, je m'installe vite et je ne reste pas debout sur la chaussée."
   theme: P
   sous_theme: verifications
-  source: Cours de code — Entrer et sortir de son véhicule en sécurité
+  source: "Cours de code, Entrer et sortir de son véhicule en sécurité"
 - id: aff-p-sortie-stationnement-priorite
   contexte: Je quitte ma place de stationnement le long d'une rue.
   affirmation: Les véhicules qui circulent dans la rue doivent me laisser reprendre ma place dans le trafic.
@@ -81,7 +81,7 @@
   pourquoi: "C'est moi qui cède le passage : je reprends la circulation après un stationnement, ce qui n'ouvre aucune priorité. J'avertis au clignotant et je m'insère sans forcer (R412-10)."
   theme: P
   sous_theme: quitter
-  source: "Code de la route, art. R412-10 ; Sécurité routière — Exemples de nouvelles questions (Q14)"
+  source: "Code de la route, art. R412-10 ; Sécurité routière, Exemples de nouvelles questions (Q14)"
 - id: aff-p-portiere-responsabilite
   contexte: J'ouvre ma portière côté chaussée ; un cycliste la heurte.
   affirmation: C'est le cycliste qui est en tort, il devait anticiper l'ouverture.
@@ -89,7 +89,7 @@
   pourquoi: "R417-7 interdit à tout occupant d'ouvrir une portière quand la manœuvre constitue un danger : la faute est celle de qui ouvre sans avoir contrôlé rétroviseur et angle mort."
   theme: P
   sous_theme: quitter
-  source: "Code de la route, art. R417-7 ; securite-routiere.gouv.fr — Portière gauche, main droite"
+  source: "Code de la route, art. R417-7 ; securite-routiere.gouv.fr, Portière gauche, main droite"
 - id: aff-p-boite-auto-position-p
   contexte: Je stationne dans une rue en pente, avec une boîte automatique.
   affirmation: La position P dispense de serrer le frein de stationnement.
@@ -98,4 +98,4 @@
     reposer sa retenue sur ce seul blocage. Je vérifie que le frein est serré, même s’il est automatique.
   theme: P
   sous_theme: quitter
-  source: Nissan Juke 2024, stationnement — https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml
+  source: "Nissan Juke 2024, stationnement, https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml"

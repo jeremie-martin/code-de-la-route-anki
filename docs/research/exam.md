@@ -1,4 +1,4 @@
-# L'examen du code de la route (ETG, permis B) tel qu'il existe en septembre 2026 — dossier factuel
+# L'examen du code de la route (ETG, permis B) tel qu'il existe en septembre 2026 : dossier factuel
 
 > Objet : décrire l'épreuve théorique générale (ETG) **telle qu'elle est réellement passée en septembre 2026**, pour concevoir un deck Anki calibré sur ce qui est testé et sur la forme des questions.
 > Méthode : sources officielles en priorité (Légifrance, securite-routiere.gouv.fr, service-public.gouv.fr, préfectures, DEAL), puis éditeurs (Codes Rousseau, ENPC/Prépacode, Ediser) et sites de formation (Ornikar, En Voiture Simone, Codeclic, Stych, lePERMISLIBRE, Dekra, Pointcode, digiSchool, Permisécole). Chaque affirmation est suivie de son URL. Les citations verbatim sont entre « ». Consultation : 20–21 septembre 2026.
@@ -9,14 +9,14 @@
 ## 1. Format de l'épreuve (état septembre 2026)
 
 ### 1.1 Base réglementaire
-- L'ETG est « une épreuve théorique générale commune d'admissibilité […] portant sur la connaissance des règlements concernant la circulation et la conduite d'un véhicule ainsi que sur celle des bons comportements du conducteur » — arrêté du 20 avril 2012 modifié, art. 2 (version en vigueur depuis le 04/12/2022). https://www.legifrance.gouv.fr/loda/id/JORFTEXT000025803494/
-- Seuil de réussite (officiel, verbatim) : « L'épreuve théorique générale commune ou motocyclette est déclarée réussie lorsque le candidat obtient un nombre de réponses justes supérieur ou égal à 35 sur un total de quarante questions, numérotées de 1 à 40 pour chaque série. » — arrêté du 20 avril 2012, art. 2. https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042591786
+- L'ETG est « une épreuve théorique générale commune d'admissibilité […] portant sur la connaissance des règlements concernant la circulation et la conduite d'un véhicule ainsi que sur celle des bons comportements du conducteur ». Référence : arrêté du 20 avril 2012 modifié, art. 2 (version en vigueur depuis le 04/12/2022). https://www.legifrance.gouv.fr/loda/id/JORFTEXT000025803494/
+- Seuil de réussite (officiel, verbatim) : « L'épreuve théorique générale commune ou motocyclette est déclarée réussie lorsque le candidat obtient un nombre de réponses justes supérieur ou égal à 35 sur un total de quarante questions, numérotées de 1 à 40 pour chaque série. » Référence : arrêté du 20 avril 2012, art. 2. https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042591786
 - Organisation matérielle : **arrêté du 16 avril 2026** « relatif aux modalités de délivrance des agréments et portant cahier des charges pour l'organisation des épreuves théoriques du permis de conduire », JO du 29 avril 2026. Il **abroge** l'arrêté du 29 avril 2024 (art. 18 : « L'arrêté du 29 avril 2024 portant cahier des charges pour l'organisation des épreuves théoriques du permis de conduire est abrogé. »). https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673
 - Le tirage : « Pour chaque candidat, un tirage aléatoire de 40 diapositives est proposé » ; « il s'agit d'une combinaison de 40 diapositives parmi celles constituant la banque ETG » ; « Chaque organisme agréé reçoit de la part de la DSR une banque de diapositives de catégorie A et B, constituant les questions de l'épreuve sans les réponses » (annexe VI de l'arrêté du 16 avril 2026). https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673
 - Résultat stocké/transmis : « le résultat sous la forme « Favorable » ou « Défavorable », le nombre de réponses justes sur quarante » (mesure M-29). https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673
 
 ### 1.2 Nombre de questions, images et vidéos
-- **40 questions**, tirées aléatoirement, sur tablette ou ordinateur : « un jeu de 40 questions extrait de la banque de données de façon aléatoire et personnel, est adressé au candidat sur tablette ou ordinateur. 35 bonnes réponses du candidat sont toujours exigées pour valider l'examen. » — communiqué DSR du 11/09/2023 (officiel). https://www.guadeloupe.developpement-durable.gouv.fr/IMG/pdf/code_de_la_route-cp_banque-etg_11.09_2023.pdf
+- **40 questions**, tirées aléatoirement, sur tablette ou ordinateur : « un jeu de 40 questions extrait de la banque de données de façon aléatoire et personnel, est adressé au candidat sur tablette ou ordinateur. 35 bonnes réponses du candidat sont toujours exigées pour valider l'examen. » Référence : communiqué DSR du 11/09/2023 (officiel). https://www.guadeloupe.developpement-durable.gouv.fr/IMG/pdf/code_de_la_route-cp_banque-etg_11.09_2023.pdf
 - **Vidéos** : aucun nombre officiel trouvé. Sites de formation : « Lors d'une session d'examen, les questions vidéos sont présentes à hauteur de 10% » (Ornikar) https://www.ornikar.com/code/examen/questions-video ; « environ 10 % » (École de conduite Antoine) https://www.ecoledeconduiteantoine.fr/combien-questions-code-route/ ; « 4 questions sont en vidéo » (preparation-code.fr) https://www.preparation-code.fr/lexamen-theorique-generale-du-permis-b-etg/ . À retenir : **≈ 4 vidéos sur 40, nombre non garanti**.
 - Les vidéos ne sont visionnables **qu'une seule fois** : « 1 seul visionnage des vidéos pour les questions que ça concerne » (Stych) https://www.stych.fr/Fiche/code/comment-deroule-epreuve-code ; « des images ou des vidéos (visionnables une seule fois) » (lePERMISLIBRE) https://www.lepermislibre.fr/code-route/comment-se-passe-examen-code-route/
 - Dans le PDF officiel d'exemples, la question 5 porte le filigrane « Q109042.mp4 » : c'est une question vidéo (tableau de bord filmé, voyant allumé). https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf
@@ -44,11 +44,11 @@
 - Depuis le 12/09/2023, le nombre de réponses attendues est indiqué (officiel, verbatim) : « Pour les questions à choix multiples, le nombre de réponses attendues sera désormais indiqué. Par exemple, pour une question qui offre 4 choix de réponses possibles, la mention « plusieurs bonnes réponses » sera affichée lorsque 2 bonnes réponses sont attendues. » https://www.guadeloupe.developpement-durable.gouv.fr/IMG/pdf/code_de_la_route-cp_banque-etg_11.09_2023.pdf
 - Sur les écrans réels (PDF officiel d'exemples), la mention affichée en haut à droite du bandeau noir est exactement **« Une réponse »** ou **« Plusieurs réponses »** (et non « plusieurs bonnes réponses »). https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf
 - Codes Rousseau : « Le bandeau de la question indique si une seule ou plusieurs réponses sont attendues. » Lorsque plusieurs réponses sont possibles, il peut y avoir 2 ou 3 propositions correctes ; au moins une réponse demeure incorrecte. https://public.codesrousseau.fr/code-de-la-route/passer-le-code/ ; idem Codes Rousseau pro : « Le bandeau de la question précise si une ou plusieurs réponses sont attendues ». https://pro.codesrousseau.fr/le-mag-pro/09/974-le-nouvel-examen-du-code-entrera-en-vigueur-le-12-septembre-2023.html
-- Cas observé dans les exemples officiels : Q19 a **3 bonnes réponses sur 4** (BCD) — « Plusieurs réponses » couvre donc 2 ou 3 bonnes réponses. https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf
+- Cas observé dans les exemples officiels : Q19 a **3 bonnes réponses sur 4** (BCD). « Plusieurs réponses » couvre donc 2 ou 3 bonnes réponses. https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf
 
 ### 1.5 Notation des questions à réponses multiples (tout ou rien)
 - Officiel : le seul barème est « nombre de réponses justes ≥ 35 sur 40 » (arrêté du 20 avril 2012, art. 2) ; aucune notation partielle n'est prévue. https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042591786
-- Sites de formation (concordants) : « Chaque question de l'ETG vaut 1 point » ; « Certaines questions comportent plusieurs propositions — toutes les bonnes réponses doivent être cochées pour que la question soit considérée comme juste. Si une seule réponse manque ou si une mauvaise réponse est sélectionnée, la question est comptée comme fausse (0 point). » (Ornikar) https://www.ornikar.com/code/examen/points-code-route ; « 1 point par bonne réponse, 0 sinon » (lePERMISLIBRE) https://www.lepermislibre.fr/code-route/question-code-de-la-route/
+- Sites de formation (concordants) : « Chaque question de l'ETG vaut 1 point » ; selon Ornikar, pour les questions à plusieurs propositions, il faut cocher toutes les bonnes réponses et aucune mauvaise ; une omission ou une mauvaise sélection vaut 0 point (paraphrase) https://www.ornikar.com/code/examen/points-code-route ; « 1 point par bonne réponse, 0 sinon » (lePERMISLIBRE) https://www.lepermislibre.fr/code-route/question-code-de-la-route/
 - Conséquence pour les « questions en deux parties » (deux sous-questions OUI/NON sur un même écran) : « répondre correctement aux deux parties pour obtenir le point complet » (Ornikar) https://www.ornikar.com/code/pedagogie/methodologie/pieges-a-eviter ; « Les deux interrogations ne sont pas forcément liées » (EVS) https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route
 
 ### 1.6 Matériel : tablette, casque
@@ -65,11 +65,11 @@
 ### 1.8 Opérateurs agréés (2026)
 - Depuis le 13 juin 2016 l'ETG « non spécifique » est externalisée à des organismes agréés (OA) ; l'État ne fait passer que les épreuves spécifiques (« ETG Etat », ~12 000 candidats en 2025). https://www.vienne.gouv.fr/Actions-de-l-Etat/Transports-deplacements-et-securite-routiere/L-Education-routiere-dont-le-permis-de-conduire/L-epreuve-theorique ; https://www.securite-routiere.gouv.fr/sites/default/files/2026-06/bilan_annuel_2025_des_examens_du_permis_de_conduire.pdf
 - Liste (5 opérateurs, concordante Codes Rousseau [page mise à jour 17/08/2026], Ornikar, lePERMISLIBRE) :
-  1. **La Poste** — « Le Code avec La Poste » — https://www.lecode.laposte.fr/
-  2. **SGS** — « Objectif Code » — https://www.objectifcode.sgs.com/
-  3. **Dekra** — « Le Code Dekra » — https://www.le-code-dekra.fr/
-  4. **Bureau Veritas** — « Code'nGo » — https://codengo.bureauveritas.fr/
-  5. **Pearson Vue** — « Point Code » — https://www.pointcode.fr/
+  1. **La Poste** : « Le Code avec La Poste » : https://www.lecode.laposte.fr/
+  2. **SGS** : « Objectif Code » : https://www.objectifcode.sgs.com/
+  3. **Dekra** : « Le Code Dekra » : https://www.le-code-dekra.fr/
+  4. **Bureau Veritas** : « Code'nGo » : https://codengo.bureauveritas.fr/
+  5. **Pearson Vue** : « Point Code » : https://www.pointcode.fr/
   Sources : https://public.codesrousseau.fr/conseils-pratiques/611-ou-passer-le-code-de-la-route.html ; https://www.ornikar.com/code/examen/centre-agree ; https://www.lepermislibre.fr/code-route/examen-code/centres
 - « plus de 2 700 centres répartis sur toute la France » (Ornikar). https://www.ornikar.com/code/examen/centre-agree
 - **Divergence** : En Voiture Simone cite aussi « Exa code » (6 opérateurs) https://www.envoituresimone.com/code-de-la-route/examen ; lePERMISLIBRE cite « France code » et « Exacode » sur une autre page https://www.lepermislibre.fr/code-route/comment-se-passe-examen-code-route/ . Aucune liste officielle nominative n'a pu être consultée (pages préfectorales inaccessibles le 21/09/2026) ; l'arrêté du 16 avril 2026 ne nomme pas les opérateurs. Retenir les 5 grands réseaux ci-dessus comme certains.
@@ -79,7 +79,7 @@
 - Officiel (verbatim) : « Les candidats ayant obtenu un résultat favorable à l'épreuve théorique générale commune aux catégories B1, B, BE, C, D, CE, DE, C1, D1, C1E, D1E conservent le bénéfice de leur admissibilité à la condition qu'un délai maximum de cinq ans ne se soit pas écoulé depuis l'obtention de cette admissibilité. » (arrêté du 20 avril 2012, art. 2, version en vigueur depuis le 04/12/2022). https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042591786
 - Officiel : « La durée de validité de l'ETG, jusqu'à l'obtention de l'examen pratique, est de 5 ans **quel que soit le nombre de présentations**. » (communiqué DSR 11/09/2023). https://www.guadeloupe.developpement-durable.gouv.fr/IMG/pdf/code_de_la_route-cp_banque-etg_11.09_2023.pdf
 - « La réussite à l'épreuve du « code » est valable pendant cinq ans. Un candidat déjà titulaire d'une catégorie du permis de conduire est dispensé de se présenter à cette épreuve pendant cinq ans à compter de la date de réussite à l'épreuve en circulation. » https://www.securite-routiere.gouv.fr/node/498?_format=json
-- **Divergence** : plusieurs préfectures et sites reprennent l'ancienne formule « valable cinq ans dans la limite de cinq présentations à l'épreuve pratique » (ex. Oise, Maine-et-Loire dans les résultats de recherche ; digiSchool ETM). Le texte en vigueur (art. 2 ci-dessus) et le communiqué 2023 ne prévoient **plus** de limite de 5 tentatives pour le permis B — la limite « cinq épreuves » ne subsiste que pour le bénéfice du plateau (hors circulation) des catégories A1/A2/BE. https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042591786
+- **Divergence** : plusieurs préfectures et sites reprennent l'ancienne formule « valable cinq ans dans la limite de cinq présentations à l'épreuve pratique » (ex. Oise, Maine-et-Loire dans les résultats de recherche ; digiSchool ETM). Le texte en vigueur (art. 2 ci-dessus) et le communiqué 2023 ne prévoient **plus** de limite de 5 tentatives pour le permis B. La limite « cinq épreuves » ne subsiste que pour le bénéfice du plateau (hors circulation) des catégories A1/A2/BE. https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042591786
 
 ### 1.10 Âge minimum et inscription (NEPH)
 - Officiel : « La demande de permis de conduire ne peut être effectuée avant l'âge de 16 ans révolus, à l'exception de la catégorie AM pour laquelle l'âge est de 14 ans révolus et de la catégorie B, dans le cadre de l'apprentissage anticipé de la conduite, pour laquelle l'âge est de 15 ans révolus. » (arrêté du 20 avril 2012, art. 1 II, version en vigueur depuis le 15/02/2025). Donc ETG possible dès **16 ans** (filière classique) ou **15 ans** (AAC). https://www.legifrance.gouv.fr/loda/id/JORFTEXT000025803494/
@@ -92,7 +92,7 @@
 - Calendrier (officiel, art. 17) : « Les dispositions du chapitre 1er entrent en vigueur le 1er mai 2026. Les organismes agréés mettent en œuvre les dispositions du chapitre II au plus tard le 1er juillet 2026. » Chapitre I = agréments ; chapitre II = « Modalités de fonctionnement des sites d'examen et organisation des épreuves théoriques ». https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673
 - **Inscription J-1** (officiel, art. 12) : « Toute session d'épreuve théorique du permis de conduire est organisée […] sans qu'aucune puisse commencer avant 8 heures ou finir après 20 heures. Aucune session ne peut être organisée les dimanches et jours fériés. Les examens commencent aux horaires prévus sans qu'une tolérance puisse être accordée aux candidats. Aucun candidat se présentant sur le site d'examen après l'horaire de début de la session qui lui a été notifié ne peut être admis à participer à l'examen. L'inscription doit s'effectuer au plus tard la veille de l'épreuve. » https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673 . Codeclic : « Same-day registration ends June 30, 2026 ». https://www.codeclic.com/blog-code-de-la-route/5651-examen-du-code-de-la-route-2026-ce-qui-change-vraiment-pour-les-candidats/
 - **Identité** (officiel, art. 13) : « Avant la tenue de l'épreuve, l'examinateur vérifie l'identité de chaque candidat conformément à l'arrêté du 23 décembre 2016 […]. En cas de doute sur l'identité d'une personne, l'examinateur ne l'autorise pas à passer l'examen. » ; M-5 : « Au début de chaque épreuve, les examinateurs vérifient l'identité de chaque candidat au moyen de la convocation et d'une pièce d'identité conforme aux instructions en vigueur. » ; RG_INS_004 : l'OA compare « les informations d'inscription sur le portail avec une pièce d'identité valide du candidat ». https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673 . Permisécole : « pièce en cours de validité obligatoire; France Identité désormais acceptée ». https://www.permisecole.com/actualites/code-2026-ce-qui-change
-- **Anti-fraude** (officiel) : art. 10 — en cas « d'écart significatif » des résultats d'un site par rapport aux moyennes départementales, obligation sous deux mois de vidéosurveillance ou de logiciel de surveillance asynchrone, « conservation des enregistrements pour une durée de trente jours » ; M-9 : « la vidéo-surveillance est préconisée » ; M-10 vidéosurveillance autorisée en site collectif. https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673 . Fondement : décret n° 2025-1437 du 31 décembre 2025 (visé par l'arrêté ; cité par digiSchool). https://www.digischool.fr/articles/auto/actualites/examen-code-de-la-route-1er-juillet-2026/
+- **Anti-fraude** (officiel) : art. 10 : en cas « d'écart significatif » des résultats d'un site par rapport aux moyennes départementales, obligation sous deux mois de vidéosurveillance ou de logiciel de surveillance asynchrone, « conservation des enregistrements pour une durée de trente jours » ; M-9 : « la vidéo-surveillance est préconisée » ; M-10 vidéosurveillance autorisée en site collectif. https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673 . Fondement : décret n° 2025-1437 du 31 décembre 2025 (visé par l'arrêté ; cité par digiSchool). https://www.digischool.fr/articles/auto/actualites/examen-code-de-la-route-1er-juillet-2026/
 - **Résultats** (officiel, M-27) : « Le résultat est communiqué au candidat par voie électronique ou, en cas d'impossibilité par cette voie, par voie postale, l'envoi ne pouvant intervenir que vingt-quatre heures après la fin de l'épreuve. » https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673 . Service-public : « Vous pouvez consulter le résultat en ligne dès le lendemain du passage de l'examen ». https://www.service-public.gouv.fr/particuliers/vosdroits/F2825 . L'e-mail de résultat ne mentionne plus la date ni l'adresse du centre mais le numéro d'agrément (Permisécole). https://www.permisecole.com/actualites/code-2026-ce-qui-change
 - **« 48 h entre deux tentatives »** : ce n'est **pas** une règle écrite de l'arrêté 2026 (le seul « 48 h » du texte est le délai NEPH→inscription, RG_INS_003). C'est la conséquence pratique « résultat sous 24 h + inscription la veille » : « le résultat arrive sous 24h » donc impossible de repasser le lendemain (Codeclic) https://www.codeclic.com/blog-code-de-la-route/5651-examen-du-code-de-la-route-2026-ce-qui-change-vraiment-pour-les-candidats/ ; « No explicit 48-hour waiting period exists in the text » (digiSchool) https://www.digischool.fr/articles/auto/actualites/examen-code-de-la-route-1er-juillet-2026/ ; Permisécole affirme « minimum 48 heures entre deux tentatives » https://www.permisecole.com/actualites/code-2026-ce-qui-change . Par ailleurs, la règle réglementaire de « deux jours (date à date) » entre deux épreuves (arrêté du 20 avril 2012, art. 2 II-C) ne vise que les épreuves « organisée[s] par l'autorité administrative », donc pas l'ETG chez un OA ; service-public la reprend toutefois de façon générale : « En cas d'échec à une épreuve du permis de conduire, vous ne pouvez pas vous présenter à l'épreuve suivante avant un délai de 2 jours ». https://www.legifrance.gouv.fr/loda/id/JORFTEXT000025803494/ ; https://www.service-public.gouv.fr/particuliers/vosdroits/F2825 . Codeclic (FAQ) dit au contraire « Un délai minimum de 24 heures s'applique entre deux passages ». https://www.codeclic.com/gratuit.php
 - **Ce qui ne change pas** : 40 questions, 35/40, 10 thèmes, banque du 12/09/2023, 30 €, validité 5 ans (Codeclic, digiSchool, Permisécole, Codes Rousseau). https://www.codeclic.com/blog-code-de-la-route/5651-examen-du-code-de-la-route-2026-ce-qui-change-vraiment-pour-les-candidats/ ; https://www.permisecole.com/actualites/code-2026-ce-qui-change
@@ -105,7 +105,7 @@
 
 ## 2. La banque de questions du 12 septembre 2023
 
-### 2.1 Le communiqué officiel (DSR, 11/09/2023) — texte intégral utile
+### 2.1 Le communiqué officiel (DSR, 11/09/2023) : texte intégral utile
 - « La banque de questions de l'examen théorique général (ETG) plus communément appelée « examen du code » a été entièrement renouvelée et sera opérationnelle dès le 12 septembre 2023. » https://www.guadeloupe.developpement-durable.gouv.fr/IMG/pdf/code_de_la_route-cp_banque-etg_11.09_2023.pdf
 - Finalité : « L'ETG a pour objectif de s'assurer que les futurs conducteurs (automobiles ou deux-roues motorisés) disposent d'un niveau de connaissance suffisant des règles de conduite et des comportements nécessaires pour partager la route. Il cherche également à faire prendre conscience des risques de la conduite. » (idem)
 - « Plus de lisibilité dans la formulation…. Chacune des 1 037 questions a fait l'objet d'une réécriture visant à faciliter sa compréhension avec une nouvelle formulation pour améliorer l'intelligibilité. » (idem)
@@ -133,7 +133,7 @@ Les 10 thèmes dérivent de la liste de connaissances de l'annexe II de la direc
 - Intitulés « officiels » : Prépacode (ENPC). https://www.prepacode-enpc.fr/permis-b/examen/passer-lexamen-du-code/quelles-sont-les-10-thematiques-des-questions-du-code-de-la
 - Codes lettres L/C/R/U/D/A/P/M/S/E avec intitulés : City'Zen (« Thème L - La circulation routière », « Thème C - Le conducteur », « Thème R - La route », « Thème U - Les usagers », « Thème D - Les notions diverses », « Thème A - Les premiers secours », « Thème P - Prendre et quitter son véhicule », « Thème M - La mécanique et les équipements », « Thème S - La sécurité du passager et du véhicule », « Thème E - L'environnement »). https://www.city-zen.info/formations/code-en-ligne/code-de-la-route/guides-code-de-la-route/cours-code-de-la-route-10-themes/ ; « La construction suit les 10 familles réglementaires du Code de la route: L, C, R, U, D, A, P, M, S et E. » https://www.code-route-facile.com/tests-code-route/test-blanc-complet-40-questions-type-examen-officiel/
 - Intitulés courants : Code en Poche, Ornikar, lePERMISLIBRE, Codeclic, préfecture de la Vienne (« 10 thèmes en 9 familles »). https://www.codeenpoche.fr/articles/les-themes-officiels-du-code-de-la-route/ ; https://www.ornikar.com/code/gratuit/test-thematique ; https://www.vienne.gouv.fr/Actions-de-l-Etat/Transports-deplacements-et-securite-routiere/L-Education-routiere-dont-le-permis-de-conduire/L-epreuve-theorique
-- **Attention** : la page securite-routiere.gouv.fr « Objectifs et réglementation de l'examen du code » parle de « Onze thèmes à connaître » et liste (10 items) : « Arrêt et stationnement / Croisement et dépassement / Économie et écoconduite / Règles de priorités / Règles de circulation / Signalisation / Tunnels et passages à niveau / Visibilité et éclairage / Usagers, partage de l'espace public / Prise de conscience des risques » — c'est la présentation « sous-familles » héritée de la réforme 2016, pas la nomenclature à 10 familles utilisée par les éditeurs et les résultats. https://www.securite-routiere.gouv.fr/node/498?_format=json
+- **Attention** : la page securite-routiere.gouv.fr « Objectifs et réglementation de l'examen du code » parle de « Onze thèmes à connaître » et liste (10 items) : « Arrêt et stationnement / Croisement et dépassement / Économie et écoconduite / Règles de priorités / Règles de circulation / Signalisation / Tunnels et passages à niveau / Visibilité et éclairage / Usagers, partage de l'espace public / Prise de conscience des risques ». C'est la présentation « sous-familles » héritée de la réforme 2016, pas la nomenclature à 10 familles utilisée par les éditeurs et les résultats. https://www.securite-routiere.gouv.fr/node/498?_format=json
 
 ### 2.3 Nombre de questions par thème dans une série de 40 (comparaison de sources)
 | Thème | Prépacode/ENPC | En Voiture Simone | Code en Poche / École Antoine |
@@ -150,20 +150,20 @@ Les 10 thèmes dérivent de la liste de connaissances de l'annexe II de la direc
 | A Premiers secours | 1 | 1 | 1 |
 | Total | 40 | 40 | 40 |
 
-Sources : https://www.prepacode-enpc.fr/permis-b/examen/passer-lexamen-du-code/quelles-sont-les-10-thematiques-des-questions-du-code-de-la ; https://www.envoituresimone.com/code-de-la-route/examen ; https://www.codeenpoche.fr/articles/les-themes-officiels-du-code-de-la-route/ ; https://www.ecoledeconduiteantoine.fr/combien-questions-code-route/ . Codes Rousseau et Ornikar ne donnent pas de répartition. **Aucune répartition officielle publiée** (l'arrêté ne parle que d'un « tirage aléatoire de 40 diapositives »). Source discordante isolée : code-route-facile.com (« un minimum de 4 questions sur les premiers secours ») https://www.code-route-facile.com/tests-code-route/test-blanc-complet-40-questions-type-examen-officiel/ — à ignorer. À retenir : **C ≈ 10, U 4–5, L/R/M 4, D 3–4, P/S/E 3, A 1**. Le thème **Conducteur** pèse 25 % de l'examen.
+Sources : https://www.prepacode-enpc.fr/permis-b/examen/passer-lexamen-du-code/quelles-sont-les-10-thematiques-des-questions-du-code-de-la ; https://www.envoituresimone.com/code-de-la-route/examen ; https://www.codeenpoche.fr/articles/les-themes-officiels-du-code-de-la-route/ ; https://www.ecoledeconduiteantoine.fr/combien-questions-code-route/ . Codes Rousseau et Ornikar ne donnent pas de répartition. **Aucune répartition officielle publiée** (l'arrêté ne parle que d'un « tirage aléatoire de 40 diapositives »). Source discordante isolée : code-route-facile.com (« un minimum de 4 questions sur les premiers secours ») https://www.code-route-facile.com/tests-code-route/test-blanc-complet-40-questions-type-examen-officiel/. Cette source est à écarter. À retenir : **C ≈ 10, U 4–5, L/R/M 4, D 3–4, P/S/E 3, A 1**. Le thème **Conducteur** pèse 25 % de l'examen.
 
 ### 2.4 Sous-thèmes de chaque thème (Prépacode/ENPC, verbatim)
 Source : https://www.prepacode-enpc.fr/permis-b/examen/passer-lexamen-du-code/quelles-sont-les-10-thematiques-des-questions-du-code-de-la
-- **L — Les dispositions légales en matière de circulation routière** : « La signalisation routière ; Les règles de priorité ; Les règles de circulation ; La vitesse ; Le positionnement sur la chaussée ; L'arrêt et le stationnement ; Le croisement et le dépassement ».
-- **C — Le conducteur** : « La vigilance à l'égard des autres usagers ; La perception et l'évaluation des distances de sécurité ; Les déficiences du conducteur et les risques sur la conduite ».
-- **R — La route** : « Le comportement et la réglementation en circulant lors d'intempéries ou de nuit ; La manière d'aborder un tunnel, un passage à niveau, la circulation des tramways ; Les réactions en conduisant sur des zones de chantiers et de travaux ; Les règles à suivre pour la conduite sur autoroute ».
-- **U — Les autres usagers de la route** : « Les usagers vulnérables ; Les motos ; Les véhicules lourds ; Les transports en commun ; Les véhicules d'intérêt général ».
-- **D — La réglementation générale et divers** : « Les documents administratifs liés à l'utilisation du véhicule ; Le fonctionnement du permis à point ; Les principales infractions et sanctions ; Le transport des passagers ; Le chargement du véhicule ».
-- **A — Porter secours** : « La protection des victimes et des lieux ; Alerter les secours ; Les gestes de premiers secours ; La protection des populations ».
-- **P — Les précautions nécessaires en quittant le véhicule** : « Vérifier son véhicule avant de prendre la route ; Bien s'installer à bord de son véhicule ; Quitter en toute sécurité sa voiture ».
-- **M — Les éléments mécaniques et autres équipements liés à la sécurité** : « L'entretien du véhicule ; Les éléments de sécurité et le dépannage ; Le tableau de bord et ses composants ; Les pneus et leur entretien ».
-- **S — Les équipements de sécurité des véhicules** : « L'installation sécurisée des enfants ; Les passagers ; Les équipements de sécurité du véhicule (ABS, ESP…) ».
-- **E — L'utilisation du véhicule et le respect de l'environnement** : « L'écomobilité ; Le bruit et la pollution ; L'écoconduite ».
+- **L : Les dispositions légales en matière de circulation routière** : « La signalisation routière ; Les règles de priorité ; Les règles de circulation ; La vitesse ; Le positionnement sur la chaussée ; L'arrêt et le stationnement ; Le croisement et le dépassement ».
+- **C : Le conducteur** : « La vigilance à l'égard des autres usagers ; La perception et l'évaluation des distances de sécurité ; Les déficiences du conducteur et les risques sur la conduite ».
+- **R : La route** : « Le comportement et la réglementation en circulant lors d'intempéries ou de nuit ; La manière d'aborder un tunnel, un passage à niveau, la circulation des tramways ; Les réactions en conduisant sur des zones de chantiers et de travaux ; Les règles à suivre pour la conduite sur autoroute ».
+- **U : Les autres usagers de la route** : « Les usagers vulnérables ; Les motos ; Les véhicules lourds ; Les transports en commun ; Les véhicules d'intérêt général ».
+- **D : La réglementation générale et divers** : « Les documents administratifs liés à l'utilisation du véhicule ; Le fonctionnement du permis à point ; Les principales infractions et sanctions ; Le transport des passagers ; Le chargement du véhicule ».
+- **A : Porter secours** : « La protection des victimes et des lieux ; Alerter les secours ; Les gestes de premiers secours ; La protection des populations ».
+- **P : Les précautions nécessaires en quittant le véhicule** : « Vérifier son véhicule avant de prendre la route ; Bien s'installer à bord de son véhicule ; Quitter en toute sécurité sa voiture ».
+- **M : Les éléments mécaniques et autres équipements liés à la sécurité** : « L'entretien du véhicule ; Les éléments de sécurité et le dépannage ; Le tableau de bord et ses composants ; Les pneus et leur entretien ».
+- **S : Les équipements de sécurité des véhicules** : « L'installation sécurisée des enfants ; Les passagers ; Les équipements de sécurité du véhicule (ABS, ESP…) ».
+- **E : L'utilisation du véhicule et le respect de l'environnement** : « L'écomobilité ; Le bruit et la pollution ; L'écoconduite ».
 
 Compléments (Ornikar, verbatim) : L = « La signalisation routière / Les intersections / Les règles de circulation en général / La vitesse / Le fait de croiser et de dépasser d'autres usagers / Le stationnement et l'arrêt » ; C = « Comment conduire / Le fait de savoir si un usager est ou non en état de conduire » ; R = « Le fait de conduire dans des conditions difficiles / La conduite sur une autoroute / La traversée des zones de circulation dangereuses » ; U = « Le partage de la rue entre les usagers / Les caractéristiques et les spécificités des autres usagers » ; D = « Les documents administratifs (obligatoires ou facultatifs) / Le chargement des véhicules en fonction de leur PTAC / Le permis de conduire à points / Les infractions et les sanctions » ; P = « L'installation devant son poste de conduite / Entrer et sortir de son véhicule » ; M = « Le fonctionnement de la motorisation, des feux et du tableau de bord / L'entretien et le dépannage » ; S = « Installer correctement des passagers adultes / Installer correctement des enfants selon leur âge / Les technologies et aides à la conduite » ; E = « L'écomobilité pour réduire son impact environnemental / Le choix du véhicule selon sa motorisation et son carburant / L'éco-conduite ». https://www.ornikar.com/code/gratuit/test-thematique
 - Sous-familles signalées par l'État : « Ces thèmes comportent différentes sous-familles, notamment celles concernant les gestes de premier secours ou la circulation inter-files des motards (mise en expérimentation par le décret n° 2015-1750 du 23 décembre 2015) ». https://www.securite-routiere.gouv.fr/node/498?_format=json
@@ -172,7 +172,7 @@ Compléments (Ornikar, verbatim) : L = « La signalisation routière / Les inter
 ### 2.5 Conventions visuelles (observées sur les 20 exemples officiels + descriptions éditeurs)
 Source primaire : https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf (11 pages, 20 questions, réponses fournies).
 - **Écran** : image ou vidéo plein cadre en haut ; **bandeau noir** en bas avec l'énoncé en blanc gras, les propositions en bleu clair suivies de pointillés et d'une lettre encadrée A/B/C/D ; à droite, la mention « Une réponse » ou « Plusieurs réponses » au-dessus d'un **cercle-chronomètre**.
-- **Véhicule désigné** : entouré d'un **rectangle jaune** (Q8, Q14) — et non d'un cercle ; **cercle jaune avec lettre** (A, B) pour désigner des véhicules sur vue drone (Q2) ou pour étiqueter deux situations comparées (Q13, Q17) ; **rectangles jaunes lettrés A/B/C** pour désigner des zones du champ visuel (Q9 : rétroviseur, piéton, voiture) ; rectangle jaune autour d'un panneau dans la scène + **vignette agrandie du panneau** en haut à gauche (Q15, Q16).
+- **Véhicule désigné** : entouré d'un **rectangle jaune** (Q8, Q14), et non d'un cercle ; **cercle jaune avec lettre** (A, B) pour désigner des véhicules sur vue drone (Q2) ou pour étiqueter deux situations comparées (Q13, Q17) ; **rectangles jaunes lettrés A/B/C** pour désigner des zones du champ visuel (Q9 : rétroviseur, piéton, voiture) ; rectangle jaune autour d'un panneau dans la scène + **vignette agrandie du panneau** en haut à gauche (Q15, Q16).
 - **Pictogramme de point de vue** : disque jaune en **haut à droite** de l'image avec silhouette noire : enfant qui court (Q3), piéton (Q11), moto (Q16). Il signale que « je » n'est pas l'automobiliste. Codes Rousseau : « Un symbole graphique apparaît » pour identifier les perspectives (cycliste, piéton, motocycliste, poids lourd). https://public.codesrousseau.fr/code-de-la-route/passer-le-code/ ; Ornikar : pictogrammes « cyclist, motorcyclist, scooter user, truck driver, pedestrian, child » et vidéos pouvant montrer les points de vue de deux usagers. https://aide.ornikar.com/hc/fr/articles/20268679529492-Nouveaut%C3%A9-la-r%C3%A9forme-de-septembre-2023-du-code-de-la-route
 - **Symbole de localisation (« pin »/goutte inversée)** : Codes Rousseau : « symbole de la localisation (goutte inversée) » et « Cadres pour mettre en évidence les indices importants » https://public.codesrousseau.fr/code-de-la-route/passer-le-code/ ; Codes Rousseau pro : « Les questions sont jalonnées d'indications visuelles comme des zones définies par des rectangles, des symboles de localisation pour désigner un usager » ; « Les questions peuvent aussi comporter des schémas, des vues de drone et des dessins ». https://pro.codesrousseau.fr/le-mag-pro/09/974-le-nouvel-examen-du-code-entrera-en-vigueur-le-12-septembre-2023.html . digiSchool : « Updated images incorporating icons such as location markers ». https://www.digischool.fr/articles/auto/actualites/nouvel-examen-code-de-la-route-12-septembre-2023/ (Aucun « pin » n'apparaît dans les 20 exemples officiels.)
 - **Vues drone** : Q2 (intersection avec STOP, vue aérienne). Permisécole/Codes Rousseau : vues aériennes utilisées pour les questions de régime de priorité. https://public.codesrousseau.fr/conseils-pratiques/973-code-de-la-route-2026-les-nouveautes.html
@@ -191,34 +191,138 @@ Source primaire : https://www.securite-routiere.gouv.fr/sites/default/files/2023
 ## 3. Formes typiques des questions (banque 2023+)
 
 ### 3.1 Les 20 exemples officiels, verbatim (Sécurité routière, sept. 2023)
-Source : https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf (transcription des écrans ; les vidéos correspondantes sont sur la chaîne YouTube « Sécurité routière », identifiants Q106188, Q106565, Q106596, Q108390, Q109042, Q109048, Q109063, Q109073, Q109120, Q109143, Q109155, Q109182, Q109187, Q109194, Q109197, Q109202, Q109207, Q109211, Q109236, Q109274 — https://www.securite-routiere.gouv.fr/node/499?_format=json). NB : la page officielle annonce « 24 questions » mais 20 sont publiées.
+Source : https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf (transcription des écrans ; les vidéos correspondantes sont sur la chaîne YouTube « Sécurité routière », identifiants Q106188, Q106565, Q106596, Q108390, Q109042, Q109048, Q109063, Q109073, Q109120, Q109143, Q109155, Q109182, Q109187, Q109194, Q109197, Q109202, Q109207, Q109211, Q109236, Q109274 ; https://www.securite-routiere.gouv.fr/node/499?_format=json). NB : la page officielle annonce « 24 questions » mais 20 sont publiées.
 
-1. [Photo : coffre chargé de valises] « En cas de chargement important du véhicule : » — « je diminue la pression des pneus » A / « j'augmente la pression des pneus » B / « je règle la hauteur des feux » C — *Plusieurs réponses* — **BC**.
-2. [Vue drone, intersection avec STOP, véhicules A et B cerclés de jaune] « Le véhicule A qui va en face : » — « doit céder le passage de chaque côté » OUI A / NON B — « bénéficie de la priorité de passage par rapport au véhicule B » OUI C / NON D — *Plusieurs réponses* — **AC**.
-3. [Photo trottoir, voiture sortant d'une rue, picto enfant] « Un enfant peut être masqué par des véhicules en stationnement : » OUI A / NON B — « Un enfant perçoit les dangers de la même façon qu'un adulte : » OUI C / NON D — *Plusieurs réponses* — **AD**.
-4. [Photo : trottinette devant une voiture] « Un usager à trottinette est vulnérable car : » — « son équilibre est précaire » OUI A / NON B — « son faible gabarit le rend peu détectable » OUI C / NON D — *Plusieurs réponses* — **AC**.
-5. [Vidéo poste de conduite, voyant allumé] « Ce voyant reste allumé en permanence. Lors d'un freinage d'urgence : » — « les roues risquent de se bloquer » A / « la distance d'arrêt sera fortement augmentée » B — « Je dois m'arrêter immédiatement : » OUI C / NON D — *Plusieurs réponses* — **AD**.
-6. [Photo : électrode de DAE sur un torse] « Avant d'utiliser un DAE (Défibrillateur Automatisé Externe), je dois suivre une formation : » OUI A / NON B — « Si la victime n'est pas en arrêt cardiaque, l'utilisation du DAE peut être dangereuse : » OUI C / NON D — *Plusieurs réponses* — **BD**.
-7. [Poste de conduite, cycliste devant à droite, en cours de dépassement ; **pas d'énoncé**, seulement les propositions] « J'accélère. » A / « Je poursuis le dépassement. » B / « Je me replace à droite. » C — *Une réponse* — **C**.
-8. [Photo : voiture encadrée en jaune se garant] « Ce conducteur va se ranger en créneau en utilisant l'assistance au stationnement. » — « Il doit surveiller la circulation vers l'avant : » OUI A / NON B — « Il doit surveiller la circulation vers l'arrière : » OUI C / NON D — *Plusieurs réponses* — **AC**.
-9. [Poste de conduite sous la pluie, trois zones encadrées A (rétroviseur gauche), B (voiture au loin), C (piétons/voiture à droite)] « Je concentre mon attention principalement sur la zone : » A / B / C — *Une réponse* — **C**.
-10. [Route enneigée, panneau d'entrée de zone] « Je ne dispose pas de chaînes ou chaussettes à neige. Pour entrer dans cette zone en période hivernale, mon véhicule doit obligatoirement être équipé de 4 pneus hiver : » OUI A / NON B — *Une réponse* — **A**.
-11. [Photo depuis un trottoir près d'un passage piéton, voiture et moto arrivant, picto piéton] « Je suis facilement détectable par : » — « les conducteurs des deux véhicules » A / « le motard » B / « le conducteur de la voiture » C — *Une réponse* — **C**.
-12. [Habitacle : passagère arrière sans ceinture visible] « Cette passagère arrière : » — « est en danger » OUI A / NON B — « met le conducteur en danger » OUI C / NON D — *Plusieurs réponses* — **AC**.
-13. [Deux images A (autoroute sèche) / B (autoroute mouillée)] « Dans la situation B, par rapport à la situation A : » — « l'adhérence est 2 fois moins bonne » OUI A / NON B — « la distance de freinage est 2 fois plus longue » OUI C / NON D — *Plusieurs réponses* — **AC**.
-14. [Photo : voiture encadrée en jaune quittant une place] « Pour quitter son stationnement en sécurité, ce conducteur doit surveiller : » — « face à lui et derrière lui » OUI A / NON B — « dans l'angle mort sur sa droite » OUI C / NON D — *Plusieurs réponses* — **AC**.
-15. [Poste de conduite, panneau A13 « enfants » encadré + vignette] « Ce panneau annonce : » — « une école » A / « un endroit fréquenté par les enfants » B / « un passage pour piétons » C — *Une réponse* — **B**.
-16. [Vue depuis une moto, panneau 50 + panonceau « EN INTER-FILES », picto moto] « Cette limitation de vitesse concerne : » — « les motards lorsqu'ils circulent en inter-files » OUI A / NON B — « les automobilistes lorsque la circulation est dense » OUI C / NON D — *Plusieurs réponses* — **AD**.
-17. [Deux images A « Dans un bar » / B « À la maison »] « Le plus souvent, les doses d'alcool servies sont plus importantes : » — « dans la situation A » A / « dans la situation B » B — *Une réponse* — **B**.
-18. [Route de montagne, panneau descente 15 %] « La descente dangereuse à 15 % commence à environ 150 m : » OUI A / NON B — « Je freine doucement et en permanence » C — « Je freine par intermittence et j'utilise le frein moteur » D — *Plusieurs réponses* — **AD**.
-19. [Route hors agglomération, panneau passage à niveau « SIGNAL AUTOMATIQUE »] « Circulant hors agglomération, le passage à niveau se situe à environ : » — « 50 m » A / « 150 m » B — « Je peux rencontrer des feux rouges clignotants » C — « Je ralentis » D — *Plusieurs réponses* — **BCD**.
-20. [Nuit, véhicule en face] « Pour croiser ce véhicule en sécurité : » — « je regarde ses feux » A / « je regarde vers la droite le plus loin possible » B / « je ralentis » C / « je conserve les feux de route » D — *Plusieurs réponses* — **BC**.
+1. [Photo : coffre chargé de valises] « En cas de chargement important du véhicule : »
+
+   - « je diminue la pression des pneus » A / « j'augmente la pression des pneus » B / « je règle la hauteur des feux » C
+
+   *Plusieurs réponses*. Corrigé : **BC**.
+
+2. [Vue drone, intersection avec STOP, véhicules A et B cerclés de jaune] « Le véhicule A qui va en face : »
+
+   - « doit céder le passage de chaque côté » OUI A / NON B
+   - « bénéficie de la priorité de passage par rapport au véhicule B » OUI C / NON D
+
+   *Plusieurs réponses*. Corrigé : **AC**.
+
+3. [Photo trottoir, voiture sortant d'une rue, picto enfant] « Un enfant peut être masqué par des véhicules en stationnement : » OUI A / NON B
+
+   - « Un enfant perçoit les dangers de la même façon qu'un adulte : » OUI C / NON D
+
+   *Plusieurs réponses*. Corrigé : **AD**.
+
+4. [Photo : trottinette devant une voiture] « Un usager à trottinette est vulnérable car : »
+
+   - « son équilibre est précaire » OUI A / NON B
+   - « son faible gabarit le rend peu détectable » OUI C / NON D
+
+   *Plusieurs réponses*. Corrigé : **AC**.
+
+5. [Vidéo poste de conduite, voyant allumé] « Ce voyant reste allumé en permanence. Lors d'un freinage d'urgence : »
+
+   - « les roues risquent de se bloquer » A / « la distance d'arrêt sera fortement augmentée » B
+   - « Je dois m'arrêter immédiatement : » OUI C / NON D
+
+   *Plusieurs réponses*. Corrigé : **AD**.
+
+6. [Photo : électrode de DAE sur un torse] « Avant d'utiliser un DAE (Défibrillateur Automatisé Externe), je dois suivre une formation : » OUI A / NON B
+
+   - « Si la victime n'est pas en arrêt cardiaque, l'utilisation du DAE peut être dangereuse : » OUI C / NON D
+
+   *Plusieurs réponses*. Corrigé : **BD**.
+
+7. [Poste de conduite, cycliste devant à droite, en cours de dépassement ; **pas d'énoncé**, seulement les propositions] « J'accélère. » A / « Je poursuis le dépassement. » B / « Je me replace à droite. » C
+
+   *Une réponse*. Corrigé : **C**.
+
+8. [Photo : voiture encadrée en jaune se garant] « Ce conducteur va se ranger en créneau en utilisant l'assistance au stationnement. »
+
+   - « Il doit surveiller la circulation vers l'avant : » OUI A / NON B
+   - « Il doit surveiller la circulation vers l'arrière : » OUI C / NON D
+
+   *Plusieurs réponses*. Corrigé : **AC**.
+
+9. [Poste de conduite sous la pluie, trois zones encadrées A (rétroviseur gauche), B (voiture au loin), C (piétons/voiture à droite)] « Je concentre mon attention principalement sur la zone : » A / B / C
+
+   *Une réponse*. Corrigé : **C**.
+
+10. [Route enneigée, panneau d'entrée de zone] « Je ne dispose pas de chaînes ou chaussettes à neige. Pour entrer dans cette zone en période hivernale, mon véhicule doit obligatoirement être équipé de 4 pneus hiver : » OUI A / NON B
+
+    *Une réponse*. Corrigé : **A**.
+
+11. [Photo depuis un trottoir près d'un passage piéton, voiture et moto arrivant, picto piéton] « Je suis facilement détectable par : »
+
+    - « les conducteurs des deux véhicules » A / « le motard » B / « le conducteur de la voiture » C
+
+    *Une réponse*. Corrigé : **C**.
+
+12. [Habitacle : passagère arrière sans ceinture visible] « Cette passagère arrière : »
+
+    - « est en danger » OUI A / NON B
+    - « met le conducteur en danger » OUI C / NON D
+
+    *Plusieurs réponses*. Corrigé : **AC**.
+
+13. [Deux images A (autoroute sèche) / B (autoroute mouillée)] « Dans la situation B, par rapport à la situation A : »
+
+    - « l'adhérence est 2 fois moins bonne » OUI A / NON B
+    - « la distance de freinage est 2 fois plus longue » OUI C / NON D
+
+    *Plusieurs réponses*. Corrigé : **AC**.
+
+14. [Photo : voiture encadrée en jaune quittant une place] « Pour quitter son stationnement en sécurité, ce conducteur doit surveiller : »
+
+    - « face à lui et derrière lui » OUI A / NON B
+    - « dans l'angle mort sur sa droite » OUI C / NON D
+
+    *Plusieurs réponses*. Corrigé : **AC**.
+
+15. [Poste de conduite, panneau A13 « enfants » encadré + vignette] « Ce panneau annonce : »
+
+    - « une école » A / « un endroit fréquenté par les enfants » B / « un passage pour piétons » C
+
+    *Une réponse*. Corrigé : **B**.
+
+16. [Vue depuis une moto, panneau 50 + panonceau « EN INTER-FILES », picto moto] « Cette limitation de vitesse concerne : »
+
+    - « les motards lorsqu'ils circulent en inter-files » OUI A / NON B
+    - « les automobilistes lorsque la circulation est dense » OUI C / NON D
+
+    *Plusieurs réponses*. Corrigé : **AD**.
+
+17. [Deux images A « Dans un bar » / B « À la maison »] « Le plus souvent, les doses d'alcool servies sont plus importantes : »
+
+    - « dans la situation A » A / « dans la situation B » B
+
+    *Une réponse*. Corrigé : **B**.
+
+18. [Route de montagne, panneau descente 15 %] « La descente dangereuse à 15 % commence à environ 150 m : » OUI A / NON B
+
+    - « Je freine doucement et en permanence » C
+    - « Je freine par intermittence et j'utilise le frein moteur » D
+
+    *Plusieurs réponses*. Corrigé : **AD**.
+
+19. [Route hors agglomération, panneau passage à niveau « SIGNAL AUTOMATIQUE »] « Circulant hors agglomération, le passage à niveau se situe à environ : »
+
+    - « 50 m » A / « 150 m » B
+    - « Je peux rencontrer des feux rouges clignotants » C
+    - « Je ralentis » D
+
+    *Plusieurs réponses*. Corrigé : **BCD**.
+
+20. [Nuit, véhicule en face] « Pour croiser ce véhicule en sécurité : »
+
+    - « je regarde ses feux » A / « je regarde vers la droite le plus loin possible » B / « je ralentis » C / « je conserve les feux de route » D
+
+    *Plusieurs réponses*. Corrigé : **BC**.
 
 Bilan de ces 20 exemples : 14 « Plusieurs réponses » / 6 « Une réponse » ; 11 sur 20 sont des **doubles OUI/NON** (deux affirmations, chacune avec OUI/NON) ; 2 comportent 4 propositions libres (Q19, Q20) ; 1 sans énoncé (Q7) ; 3 avec pictogramme de point de vue ; 1 vidéo identifiée (Q5).
 
 ### 3.2 Classification des « formes » récurrentes
 Formes attestées dans les exemples officiels (O) et/ou décrites par les sites de formation (F) :
-1. **Double affirmation OUI/NON** (O, la plus fréquente) : « [Affirmation 1] : OUI A / NON B — [Affirmation 2] : OUI C / NON D ». Toujours « Plusieurs réponses » (une lettre par ligne). Variante : contexte en tête (« Ce conducteur va se ranger en créneau… »). Les deux parties peuvent être indépendantes (EVS). https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route
+1. **Double affirmation OUI/NON** (O, la plus fréquente) : « [Affirmation 1] : OUI A / NON B ; [Affirmation 2] : OUI C / NON D ». Toujours « Plusieurs réponses » (une lettre par ligne). Variante : contexte en tête (« Ce conducteur va se ranger en créneau… »). Les deux parties peuvent être indépendantes (EVS). https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route
 2. **OUI/NON simple** (O, Q10) : une affirmation, A/B, « Une réponse ».
 3. **Liste d'actions à la 1re personne** (O : Q1, Q7, Q20) : « Dans cette situation je… » / propositions « J'accélère / Je poursuis le dépassement / Je me replace à droite », « je ralentis », « je regarde… ». Une ou plusieurs réponses selon le bandeau. Ornikar cite le type « Je me déporte à gauche » (Non) + « Je décélère » (Oui). https://www.ornikar.com/code/pedagogie/methodologie/pieges-a-eviter
 4. **Signification d'un panneau** (O, Q15) : « Ce panneau annonce : … » / « Cette limitation de vitesse concerne : … » (Q16), avec vignette du panneau.
@@ -227,7 +331,7 @@ Formes attestées dans les exemples officiels (O) et/ou décrites par les sites 
 7. **Zone d'attention** (O, Q9) : « Je concentre mon attention principalement sur la zone : A B C » avec cadres jaunes dans l'image.
 8. **Comparaison de deux situations A/B** (O, Q13, Q17) : « Dans la situation B, par rapport à la situation A : … », « … dans la situation A / dans la situation B ».
 9. **Point de vue d'un autre usager** (O, Q3, Q11, Q16 ; ≈ 10 questions dans la banque) : « Je suis facilement détectable par : … », « Un enfant peut être masqué… ». Le « je » est celui du pictogramme.
-10. **Checklist « plusieurs réponses » à 3–4 propositions** (O, Q1, Q20) : « En cas de chargement important du véhicule : … », « Pour croiser ce véhicule en sécurité : … ». Le brief cite « Avant de partir je vérifie : … » — cohérent avec le sous-thème P « Vérifier son véhicule avant de prendre la route » mais non retrouvé verbatim.
+10. **Checklist « plusieurs réponses » à 3–4 propositions** (O, Q1, Q20) : « En cas de chargement important du véhicule : … », « Pour croiser ce véhicule en sécurité : … ». Le brief cite « Avant de partir je vérifie : … ». Ce libellé est cohérent avec le sous-thème P « Vérifier son véhicule avant de prendre la route », mais n’a pas été retrouvé verbatim.
 11. **Mécanique/voyants** (O, Q5) : « Ce voyant reste allumé en permanence. Lors d'un freinage d'urgence : … ».
 12. **Premiers secours** (O, Q6) : DAE, arrêt cardiaque (1 question par série).
 13. **Questions à la 3e personne sur le véhicule encadré** (O, Q8, Q14) : « ce conducteur doit surveiller : … ».
@@ -245,13 +349,13 @@ Formes attestées dans les exemples officiels (O) et/ou décrites par les sites 
 
 ### 4.1 Statistiques officielles (bilans DSR/SDERPC/BRPCE)
 - **Bilan 2025** (publié juin 2026) : ETGOA (ETG chez les opérateurs agréés) : 2 265 919 examinés, 1 116 095 reçus, **49,3 %** toutes présentations ; **58,9 %** en première présentation (1 173 408 examinés 1P, 690 626 reçus). ETG État : 30,6 %. ETMOA (moto) : 71,7 %. Ensemble épreuves théoriques : « le taux de réussite aux épreuves théoriques s'établit à 50,8%, enregistrant une baisse de 2 points par rapport à 2024. » https://www.securite-routiere.gouv.fr/sites/default/files/2026-06/bilan_annuel_2025_des_examens_du_permis_de_conduire.pdf
-- Série ETGOA France : **2022 : 56,6 % — 2023 : 53,5 % — 2024 : 50,7 % — 2025 : 49,3 %**. (bilans 2024 et 2025) https://www.securite-routiere.gouv.fr/sites/default/files/2025-08/bilan_annuel_2024_des_examens_du_permis_de_conduire.pdf ; https://www.securite-routiere.gouv.fr/sites/default/files/2026-06/bilan_annuel_2025_des_examens_du_permis_de_conduire.pdf
+- Série ETGOA France : **56,6 % en 2022 ; 53,5 % en 2023 ; 50,7 % en 2024 ; 49,3 % en 2025**. (bilans 2024 et 2025) https://www.securite-routiere.gouv.fr/sites/default/files/2025-08/bilan_annuel_2024_des_examens_du_permis_de_conduire.pdf ; https://www.securite-routiere.gouv.fr/sites/default/files/2026-06/bilan_annuel_2025_des_examens_du_permis_de_conduire.pdf
 - 2024 : ETGOA 2 256 445 examinés, 50,7 % TP, 59,6 % 1P ; « Épreuves théoriques : le taux de réussite à l'épreuve théorique générale (ETG) s'établit à 52,8%, enregistrant une baisse de 2,4 points par rapport à 2023 » (ce 52,8 % agrège ETG+ETM). https://www.securite-routiere.gouv.fr/sites/default/files/2025-08/bilan_annuel_2024_des_examens_du_permis_de_conduire.pdf
 - Disparités 2025 (ETGOA) : meilleurs départements Vendée 56,8 %, Morbihan 54,9 %, Hautes-Alpes 54,3 %, Ille-et-Vilaine 53,8 % ; plus bas Guyane 21,5 %, Mayotte 22,6 %, Martinique 35,4 %, Guadeloupe 35,6 % ; régions : Pays de la Loire 53,5 %, Bretagne 53,4 %, Normandie 51,9 % ; Île-de-France 49,1 % ; Seine-Saint-Denis 45,6 %. https://www.securite-routiere.gouv.fr/sites/default/files/2026-06/bilan_annuel_2025_des_examens_du_permis_de_conduire.pdf
 - Contexte 2025 : « 1 376 213 nouveaux candidats se sont inscrits, soit une baisse de 7,5 % par rapport à 2024 » ; permis B pratique 59,9 %. (idem)
 - Lecture des sites : la baisse depuis 2023 est attribuée à la « Refonte complète de la banque de questions » et à des questions « davantage axées sur la compréhension des situations et le partage de la route » (Ornikar, Codes Rousseau). https://www.ornikar.com/code/taux-de-reussite-code-de-la-route ; https://public.codesrousseau.fr/conseils-pratiques/702-taux-de-reussite-au-code-de-la-route-et-au-permis-2026.html
 - Officiel : « Les candidats qui passent l'examen théorique pour la première fois échouent de peu. En conséquence, si un candidat […] a le sentiment que sa préparation est à parfaire, il est préférable de repousser de quelques jours le passage de l'examen. » https://www.securite-routiere.gouv.fr/node/498?_format=json
-- **Divergence** : Codeclic affiche « Pass rate in 2026: 72% » — chiffre non officiel, probablement interne (« Les candidats qui utilisent le mode examen simulé réussissent au premier passage dans 71 % des cas »). https://www.codeclic.com/code-de-la-route/comment-reussir-code-route.html ; https://www.codeclic.com/gratuit.php
+- **Divergence** : Codeclic affiche « Pass rate in 2026: 72% ». Ce chiffre est non officiel et probablement interne (« Les candidats qui utilisent le mode examen simulé réussissent au premier passage dans 71 % des cas »). https://www.codeclic.com/code-de-la-route/comment-reussir-code-route.html ; https://www.codeclic.com/gratuit.php
 
 ### 4.2 Thèmes les plus ratés (selon les formateurs, pas de statistique officielle par thème)
 - Codeclic : « Les priorités et la signalisation posent le plus de difficultés aux candidats, et depuis la réforme 2023, ces thèmes ont été renforcés » ; erreurs récurrentes : « les priorités, la signalisation, les autres usagers et les règles liées au conducteur ». https://www.codeclic.com/code-de-la-route/
@@ -261,17 +365,17 @@ Formes attestées dans les exemples officiels (O) et/ou décrites par les sites 
 - Ornikar (bilan 2016→2023) : les questions portent sur « risques et décisions sécuritaires en situation de conduite, plutôt que de simples règles ». https://www.ornikar.com/code/pedagogie/methodologie/pieges-a-eviter
 
 ### 4.3 Pièges classiques (recoupés)
-1. **« Je peux » vs « Je dois »** — « distinction critique entre autorisation et obligation » (Dekra) ; Ornikar : un appel de phare « pourrait éventuellement être utilisé » mais n'est pas obligatoire ; il est obligatoire de céder le passage au piéton ; EVS : « Le verbe de l'énoncé est essentiel ». https://www.le-code-dekra.fr/actualites/2024/07/05/reussir-l-examen-du-code-de-la-route-10-erreurs-a-eviter/id/78 ; https://www.ornikar.com/code/pedagogie/methodologie/pieges-a-eviter ; https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route . Résumé de recherche (Asso Sehri) : « Une question demandant "je peux" aura souvent plusieurs réponses correctes, tandis que "je dois" n'en aura qu'une seule » (à prendre comme heuristique, pas comme règle). https://assosehri.fr/2026/06/25/examen-du-code-de-la-route-les-pieges-a-eviter/
-2. **Le klaxon** — EVS : « L'usage de l'avertisseur sonore est strictement réglementé », réservé aux « situations d'urgence » et « danger immédiat » ⇒ en agglomération « je klaxonne » est presque toujours faux. https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route
-3. **Les rétroviseurs / l'élément perturbateur** — Ornikar : « un élément perturbateur se cache souvent au second plan » ; « Un vélo dans le rétroviseur signale qu'un freinage brusque mettrait en danger le cycliste ; mieux vaut utiliser le frein moteur » ; Dekra : « Faire attention aux détails - particulièrement aux scènes visibles dans les rétroviseurs » ; EVS : vérifier « Rétroviseurs, Signalisation lointaine, Comportements d'autres usagers, Clignotants/feux, Obstacles sur la chaussée ». https://www.ornikar.com/code/pedagogie/methodologie/pieges-a-eviter ; https://www.le-code-dekra.fr/actualites/2024/07/05/reussir-l-examen-du-code-de-la-route-10-erreurs-a-eviter/id/78 ; https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route
-4. **« Plusieurs réponses »** — lire le bandeau ; cocher toutes les bonnes et seulement elles (tout ou rien) ; il reste toujours au moins une mauvaise (Codes Rousseau). https://public.codesrousseau.fr/code-de-la-route/passer-le-code/ ; https://www.ornikar.com/code/examen/points-code-route
-5. **Questions en deux parties** — les deux sous-questions « ne sont pas forcément liées » ; une erreur sur l'une = 0 pour la question (EVS, Ornikar). (cf. supra)
-6. **Adverbes restrictifs** — « obligatoirement », « exclusivement », « uniquement » (EVS) ; « sauf si » et fin d'énoncé (Codeclic : « La nuance se trouve souvent à la fin de l'énoncé, parfois après un « sauf si » ou un « dans ce cas » »). https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route ; https://www.codeclic.com/gratuit.php
-7. **Négations / double négation** — Codeclic : « « Il n'est pas interdit de tourner à droite » signifie « c'est autorisé » » (l'affirmation « 38 % des erreurs en ETG 2025 » est invérifiable). https://www.codeclic.com/gratuit.php
-8. **Le pictogramme de point de vue** — Codeclic : « « Le véhicule rouge a-t-il la priorité ? » n'est pas « Avez-vous la priorité ? » » ; exemples officiels Q3/Q11/Q16 : « je » = piéton ou motard. https://www.codeclic.com/gratuit.php ; https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf
-9. **Distances et priorités sur photo** — vues drone pour les priorités ; distances d'implantation (150 m hors agglo, 50 m en agglo) testées en OUI/NON ou 50/150 m (Q18, Q19 officielles). Signalisation temporaire : « en présence de panneaux temporaires liés à des travaux, les règles changent » (résumé de recherche, Roule Raoule/Ornikar). https://www.rouleraoule.fr/code/pieges-eviter
-10. **Éco-conduite contre-intuitive** — EVS : « une « conduite souple et d'une allure stable » peut primer sur le ralentissement immédiat ». https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route
-11. **Ordre des questions** — Codes Rousseau : « Les premières et dernières questions sont généralement plus faciles ». https://public.codesrousseau.fr/code-de-la-route/passer-le-code/
+1. **« Je peux » vs « Je dois »** : « distinction critique entre autorisation et obligation » (Dekra) ; Ornikar : un appel de phare « pourrait éventuellement être utilisé » mais n'est pas obligatoire ; il est obligatoire de céder le passage au piéton ; EVS : « Le verbe de l'énoncé est essentiel ». https://www.le-code-dekra.fr/actualites/2024/07/05/reussir-l-examen-du-code-de-la-route-10-erreurs-a-eviter/id/78 ; https://www.ornikar.com/code/pedagogie/methodologie/pieges-a-eviter ; https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route . Résumé de recherche (Asso Sehri) : « Une question demandant "je peux" aura souvent plusieurs réponses correctes, tandis que "je dois" n'en aura qu'une seule » (à prendre comme heuristique, pas comme règle). https://assosehri.fr/2026/06/25/examen-du-code-de-la-route-les-pieges-a-eviter/
+2. **Le klaxon** : EVS : « L'usage de l'avertisseur sonore est strictement réglementé », réservé aux « situations d'urgence » et « danger immédiat » ⇒ en agglomération « je klaxonne » est presque toujours faux. https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route
+3. **Les rétroviseurs / l'élément perturbateur** : Ornikar : « un élément perturbateur se cache souvent au second plan » ; « Un vélo dans le rétroviseur signale qu'un freinage brusque mettrait en danger le cycliste ; mieux vaut utiliser le frein moteur » ; Dekra : « Faire attention aux détails - particulièrement aux scènes visibles dans les rétroviseurs » ; EVS : vérifier « Rétroviseurs, Signalisation lointaine, Comportements d'autres usagers, Clignotants/feux, Obstacles sur la chaussée ». https://www.ornikar.com/code/pedagogie/methodologie/pieges-a-eviter ; https://www.le-code-dekra.fr/actualites/2024/07/05/reussir-l-examen-du-code-de-la-route-10-erreurs-a-eviter/id/78 ; https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route
+4. **« Plusieurs réponses »** : lire le bandeau ; cocher toutes les bonnes et seulement elles (tout ou rien) ; il reste toujours au moins une mauvaise (Codes Rousseau). https://public.codesrousseau.fr/code-de-la-route/passer-le-code/ ; https://www.ornikar.com/code/examen/points-code-route
+5. **Questions en deux parties** : les deux sous-questions « ne sont pas forcément liées » ; une erreur sur l'une = 0 pour la question (EVS, Ornikar). (cf. supra)
+6. **Adverbes restrictifs** : « obligatoirement », « exclusivement », « uniquement » (EVS) ; « sauf si » et fin d'énoncé (Codeclic : « La nuance se trouve souvent à la fin de l'énoncé, parfois après un « sauf si » ou un « dans ce cas » »). https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route ; https://www.codeclic.com/gratuit.php
+7. **Négations / double négation** : Codeclic : « « Il n'est pas interdit de tourner à droite » signifie « c'est autorisé » » (l'affirmation « 38 % des erreurs en ETG 2025 » est invérifiable). https://www.codeclic.com/gratuit.php
+8. **Le pictogramme de point de vue** : Codeclic : « « Le véhicule rouge a-t-il la priorité ? » n'est pas « Avez-vous la priorité ? » » ; exemples officiels Q3/Q11/Q16 : « je » = piéton ou motard. https://www.codeclic.com/gratuit.php ; https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf
+9. **Distances et priorités sur photo** : vues drone pour les priorités ; distances d'implantation (150 m hors agglo, 50 m en agglo) testées en OUI/NON ou 50/150 m (Q18, Q19 officielles). Signalisation temporaire : « en présence de panneaux temporaires liés à des travaux, les règles changent » (résumé de recherche, Roule Raoule/Ornikar). https://www.rouleraoule.fr/code/pieges-eviter
+10. **Éco-conduite contre-intuitive** : EVS : « une « conduite souple et d'une allure stable » peut primer sur le ralentissement immédiat ». https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route
+11. **Ordre des questions** : Codes Rousseau : « Les premières et dernières questions sont généralement plus faciles ». https://public.codesrousseau.fr/code-de-la-route/passer-le-code/
 
 ### 4.4 Stratégies recommandées pour le jour J
 - Ne s'inscrire qu'à partir d'un niveau stable en examens blancs : « Viser 37/40 minimum avant inscription » (Ornikar) https://www.ornikar.com/code/taux-de-reussite-code-de-la-route ; « Visez 37 ou 38 sur 40 en examen blanc avant de réserver » (Codeclic) https://www.codeclic.com/gratuit.php ; « Only register for the exam after consistently scoring fewer than 5 errors » https://www.codeclic.com/code-de-la-route/comment-reussir-code-route.html ; officiel : « repousser de quelques jours » si la préparation est à parfaire. https://www.securite-routiere.gouv.fr/node/498?_format=json
@@ -288,13 +392,13 @@ Formes attestées dans les exemples officiels (O) et/ou décrites par les sites 
 ### 5.1 Contenu de la banque : pas de nouvelle banque annoncée depuis le 12/09/2023
 - Toutes les sources consultées (officielles et éditeurs) indiquent que le programme et la banque sont ceux du 12 septembre 2023 : « Program follows September 12, 2023 standards » (Codeclic) ; « Program content unchanged since September 12, 2023 » (digiSchool) ; « 10 thèmes du programme (depuis septembre 2023) » (Permisécole) ; Codes Rousseau 2026 : « Pas de modifications sur la règlementation du Code de la route en tant que telle ». https://www.codeclic.com/blog-code-de-la-route/5651-examen-du-code-de-la-route-2026-ce-qui-change-vraiment-pour-les-candidats/ ; https://www.digischool.fr/articles/auto/actualites/examen-code-de-la-route-1er-juillet-2026/ ; https://www.permisecole.com/actualites/code-2026-ce-qui-change ; https://public.codesrousseau.fr/conseils-pratiques/973-code-de-la-route-2026-les-nouveautes.html
 - **Aucun communiqué officiel** trouvé annonçant l'ajout de questions (ZFE/Crit'Air, EDPM, ADAS, homicide routier, nouveaux panneaux) à la banque ETG entre 2024 et septembre 2026. Les mentions de « thèmes montants » (Permisécole, lePERMISLIBRE) sont des observations éditoriales, non sourcées. https://www.permisecole.com/actualites/code-programme-2026 ; https://www.lepermislibre.fr/code-route/code-route-2026-changements-sanctions-nouvelles-regles/
-- Affirmation à écarter : « Depuis l'ordonnance n°2026-145 du 10 mars 2026, l'examen du permis B intègre une question sur les règles d'usage des trottinettes électriques » (résumé de recherche d'un site SEO) — non retrouvée dans une source officielle.
-- La DSR peut néanmoins actualiser silencieusement des diapositives (la banque est « reçue de la DSR » par les OA — annexe VI) ; l'État recommande de vérifier que les supports « ont bien pris en compte les dernières modifications du code de la route ». https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673 ; https://www.securite-routiere.gouv.fr/node/499?_format=json
+- Affirmation à écarter : « Depuis l'ordonnance n°2026-145 du 10 mars 2026, l'examen du permis B intègre une question sur les règles d'usage des trottinettes électriques » (résumé de recherche d'un site SEO). Cette affirmation n’a pas été retrouvée dans une source officielle.
+- La DSR peut néanmoins actualiser silencieusement des diapositives (la banque est « reçue de la DSR » par les OA, selon l’annexe VI) ; l'État recommande de vérifier que les supports « ont bien pris en compte les dernières modifications du code de la route ». https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673 ; https://www.securite-routiere.gouv.fr/node/499?_format=json
 
 ### 5.2 Changements réglementaires du Code de la route 2024–2026 susceptibles d'être testés (règles, pas format)
 - **Permis B à 17 ans** depuis le 1er janvier 2024 (officiel). https://www.prefectures-regions.gouv.fr/normandie/Region-et-institutions/Action-de-l-Etat/Securite-routiere/Actualites-Communiques-de-presse/Permis-B-l-age-minimal-legal-pour-conduire-est-abaisse-a-17-ans ; https://www.securite-routiere.gouv.fr/node/501?_format=json
 - **Loi n° 2025-622 du 9 juillet 2025 « créant l'homicide routier et visant à lutter contre la violence routière »** : nouveaux art. 221-18 à 221-20 du code pénal (homicide routier, blessures routières) ; circonstances aggravantes (alcool, stupéfiants, conduite sans permis, vitesse ≥ 30 km/h au-dessus, délit de fuite, téléphone, refus d'obtempérer, ceinture…) ; art. 6 : « Le fait, pour tout conducteur d'un véhicule à moteur, de dépasser de 50 kilomètres à l'heure ou plus la vitesse maximale autorisée est puni de trois mois d'emprisonnement et de 3 750 euros d'amende » (L. 413-1 modifié), en vigueur « à une date fixée par décret, et au plus tard le 31 décembre 2025 ». https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051871463 . lePERMISLIBRE : « Dépasser la limite de 50 km/h ou plus n'est plus une simple infraction administrative. C'est désormais un délit. » (fin décembre 2025). https://www.lepermislibre.fr/code-route/code-route-2026-changements-sanctions-nouvelles-regles/
-- **EDPM** : extension aux EDPM de la signalisation destinée aux cyclistes (panneaux et feux) — Tribune des auto-écoles. https://www.tribune-auto-ecoles.fr/actualite-auto-ecole/magazine-enseignant-de-la-conduite/reglementation-t-15/signalisation-routiere-extension-aux-edpm-des-regles-applicables-aux-velos-a-967/
+- **EDPM** : extension aux EDPM de la signalisation destinée aux cyclistes (panneaux et feux). Source : Tribune des auto-écoles. https://www.tribune-auto-ecoles.fr/actualite-auto-ecole/magazine-enseignant-de-la-conduite/reglementation-t-15/signalisation-routiere-extension-aux-edpm-des-regles-applicables-aux-velos-a-967/
 - Autres nouveautés 2026 relevées par lePERMISLIBRE (non vérifiées ici) : contrôle technique durci (janvier 2026), plaques temporaires roses, malus CO₂ à 108 g/km, stationnement interdit « à moins de cinq mètres en amont d'un passage piéton ». https://www.lepermislibre.fr/code-route/code-route-2026-changements-sanctions-nouvelles-regles/
 - **CPF et permis** : loi de finances 2026 (19/02/2026) + décret du 24/02/2026 restreignant le CPF permis ; aide France Travail 1 200 € supprimée au 1er avril 2026 (Codeclic, à vérifier). https://www.codeclic.com/gratuit.php
 
@@ -306,7 +410,7 @@ Formes attestées dans les exemples officiels (O) et/ou décrites par les sites 
 ### 5.4 ETM (code moto) : épreuve distincte, hors périmètre
 - Officiel : l'arrêté du 20 avril 2012 distingue « une épreuve théorique générale commune d'admissibilité, et pour les catégories A1 et A2, une épreuve théorique générale motocyclette d'admissibilité » ; « L'épreuve ETM (épreuve théorique moto) à compter du 1er mars 2020 » (bilans DSR). https://www.legifrance.gouv.fr/loda/id/JORFTEXT000025803494/ ; https://www.securite-routiere.gouv.fr/sites/default/files/2026-06/bilan_annuel_2025_des_examens_du_permis_de_conduire.pdf
 - « le code auto et le code moto sont deux examens distincts, sans équivalence entre eux » ; l'ETM a 40 questions, 35/40, 9 thèmes dont « l'équipement de protection » (digiSchool). https://www.digischool.fr/articles/moto/code-et-permis-moto/etm-epreuve-theorique-moto/
-- Nuance utile pour le deck B : la banque ETG (B) contient des questions **vues depuis une moto** (Q16 officielle, panneau « EN INTER-FILES ») et des sous-familles « circulation inter-files des motards » — donc les règles de base concernant les motards restent dans le périmètre B. https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf ; https://www.securite-routiere.gouv.fr/node/498?_format=json
+- Nuance utile pour le deck B : la banque ETG (B) contient des questions **vues depuis une moto** (Q16 officielle, panneau « EN INTER-FILES ») et des sous-familles « circulation inter-files des motards ». Les règles de base concernant les motards restent donc dans le périmètre B. https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf ; https://www.securite-routiere.gouv.fr/node/498?_format=json
 
 ---
 
@@ -317,7 +421,7 @@ Formes attestées dans les exemples officiels (O) et/ou décrites par les sites 
 4. **Répartition par thème** : ENPC (U 4, D 4) vs EVS/Code en Poche/École Antoine (U 5, D 3) ; le reste identique ; aucune répartition officielle.
 5. **« 5 ans / 5 tentatives »** : la limite de 5 présentations pratiques n'existe plus pour le B dans l'arrêté en vigueur ni dans le communiqué DSR 2023 (« quel que soit le nombre de présentations ») ; des pages préfectorales/sites répètent l'ancienne règle.
 6. **Délai entre deux passages** : « 48 h » (Permisécole) / conséquence pratique J-1 + résultat 24 h (Codeclic, digiSchool) / « 2 jours » (service-public, Ornikar) / « 24 h » (Codeclic FAQ). Réglementairement : la règle « deux jours » de l'arrêté 2012 ne vise que les épreuves organisées par l'administration ; le seul « 48 h » de l'arrêté 2026 est NEPH→inscription.
-7. **Délai de résultat** : « en moyenne 2h après » (lePERMISLIBRE centres, Stych — obsolète) vs « 24 h » minimum (M-27, arrêtés 2024 et 2026), « dès le lendemain » (service-public), « 24 à 48 h » (Ornikar, lePERMISLIBRE).
+7. **Délai de résultat** : « en moyenne 2h après » (lePERMISLIBRE centres, Stych, indication obsolète) vs « 24 h » minimum (M-27, arrêtés 2024 et 2026), « dès le lendemain » (service-public), « 24 à 48 h » (Ornikar, lePERMISLIBRE).
 8. **Liste des opérateurs** : 5 (Codes Rousseau, Ornikar, lePERMISLIBRE) vs 6 avec « Exa code » (EVS) ; « France code » (lePERMISLIBRE ancienne page).
 9. **Taux de réussite** : 49,3 % (ETGOA 2025, officiel) vs 50,8 % (ensemble théorique 2025, officiel) vs 50,7 % (ETGOA 2024) vs « 72 % » (Codeclic, non officiel).
 10. **Nombre de thèmes** : « 10 thèmes » (partout) vs « Onze thèmes » avec 10 items (securite-routiere.gouv.fr, page ancienne) vs « 9 familles » (préfecture de la Vienne : « 10 thèmes en 9 familles »).
@@ -331,33 +435,33 @@ Formes attestées dans les exemples officiels (O) et/ou décrites par les sites 
 ## 7. Sources consultées (20–21 septembre 2026)
 
 ### Officielles
-- Arrêté du 16 avril 2026 (agréments et cahier des charges des épreuves théoriques), JO 29/04/2026 — https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673 (consulté 20–21/09/2026)
-- Arrêté du 29 avril 2024 (cahier des charges, abrogé) — https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049502288 (21/09/2026)
-- Arrêté du 20 avril 2012 modifié (conditions d'établissement, de délivrance et de validité du permis) — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000025803494/ et art. 2 https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042591786 (21/09/2026)
-- Loi n° 2025-622 du 9 juillet 2025 (homicide routier) — https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051871463 (21/09/2026)
-- Directive (UE) 2025/2205 du 22 octobre 2025 — https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=OJ:L_202502205 (21/09/2026)
-- Communiqué DSR du 11/09/2023 (PDF via DEAL Guadeloupe) — https://www.guadeloupe.developpement-durable.gouv.fr/IMG/pdf/code_de_la_route-cp_banque-etg_11.09_2023.pdf et page https://www.guadeloupe.developpement-durable.gouv.fr/renouvellement-de-la-banque-de-questions-du-code-a4326.html (21/09/2026)
-- Sécurité routière, « Se préparer à l'examen du code » — https://www.securite-routiere.gouv.fr/passer-son-permis-de-conduire/preparation-de-lexamen-du-code-de-la-route/se-preparer-lexamen-du (contenu lu via https://www.securite-routiere.gouv.fr/node/499?_format=json) (21/09/2026)
-- Sécurité routière, PDF « Exemples de nouvelles questions à l'examen du code de la route » — https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf (20/09/2026)
-- Sécurité routière, « Objectifs et réglementation de l'examen du code » — https://www.securite-routiere.gouv.fr/node/498?_format=json (21/09/2026)
-- Sécurité routière, « Passer son permis B » — https://www.securite-routiere.gouv.fr/node/501?_format=json (21/09/2026)
-- Bilan annuel 2025 des examens du permis de conduire (DSR/SDERPC/BRPCE, juin 2026) — https://www.securite-routiere.gouv.fr/sites/default/files/2026-06/bilan_annuel_2025_des_examens_du_permis_de_conduire.pdf (21/09/2026)
-- Bilan annuel 2024 des examens du permis de conduire (août 2025) — https://www.securite-routiere.gouv.fr/sites/default/files/2025-08/bilan_annuel_2024_des_examens_du_permis_de_conduire.pdf (20/09/2026)
-- Service-public.gouv.fr, F2825 « Permis B » (vérifié le 26/05/2025) — https://www.service-public.gouv.fr/particuliers/vosdroits/F2825 (21/09/2026)
-- Préfecture de la Vienne, « L'épreuve théorique » — https://www.vienne.gouv.fr/Actions-de-l-Etat/Transports-deplacements-et-securite-routiere/L-Education-routiere-dont-le-permis-de-conduire/L-epreuve-theorique (20/09/2026)
-- Préfecture de région Normandie, permis à 17 ans — https://www.prefectures-regions.gouv.fr/normandie/Region-et-institutions/Action-de-l-Etat/Securite-routiere/Actualites-Communiques-de-presse/Permis-B-l-age-minimal-legal-pour-conduire-est-abaisse-a-17-ans (21/09/2026, via résultats de recherche)
-- jeunes.gouv.fr — https://www.jeunes.gouv.fr/examen-du-code-de-la-route-une-nouvelle-formulation-des-questions-1731 (20/09/2026)
-- Ministère de l'Intérieur, communiqué (bloqué par Cloudflare, non lu) — https://www.interieur.gouv.fr/actualites/communiques-de-presse/renouvellement-de-banque-de-questions-du-code-plus-de-lisibilite
-- YouTube « Sécurité routière », vidéos d'exemples (ex. Q106188) — https://www.youtube.com/watch?v=gM3SsPwPPoI (21/09/2026)
+- Arrêté du 16 avril 2026 (agréments et cahier des charges des épreuves théoriques), JO 29/04/2026 : https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053974673 (consulté 20–21/09/2026)
+- Arrêté du 29 avril 2024 (cahier des charges, abrogé) : https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049502288 (21/09/2026)
+- Arrêté du 20 avril 2012 modifié (conditions d'établissement, de délivrance et de validité du permis) : https://www.legifrance.gouv.fr/loda/id/JORFTEXT000025803494/ et art. 2 https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042591786 (21/09/2026)
+- Loi n° 2025-622 du 9 juillet 2025 (homicide routier) : https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051871463 (21/09/2026)
+- Directive (UE) 2025/2205 du 22 octobre 2025 : https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=OJ:L_202502205 (21/09/2026)
+- Communiqué DSR du 11/09/2023 (PDF via DEAL Guadeloupe) : https://www.guadeloupe.developpement-durable.gouv.fr/IMG/pdf/code_de_la_route-cp_banque-etg_11.09_2023.pdf et page https://www.guadeloupe.developpement-durable.gouv.fr/renouvellement-de-la-banque-de-questions-du-code-a4326.html (21/09/2026)
+- Sécurité routière, « Se préparer à l'examen du code » : https://www.securite-routiere.gouv.fr/passer-son-permis-de-conduire/preparation-de-lexamen-du-code-de-la-route/se-preparer-lexamen-du (contenu lu via https://www.securite-routiere.gouv.fr/node/499?_format=json) (21/09/2026)
+- Sécurité routière, PDF « Exemples de nouvelles questions à l'examen du code de la route » : https://www.securite-routiere.gouv.fr/sites/default/files/2023-09/exemples_nouvelles_questions_code.pdf (20/09/2026)
+- Sécurité routière, « Objectifs et réglementation de l'examen du code » : https://www.securite-routiere.gouv.fr/node/498?_format=json (21/09/2026)
+- Sécurité routière, « Passer son permis B » : https://www.securite-routiere.gouv.fr/node/501?_format=json (21/09/2026)
+- Bilan annuel 2025 des examens du permis de conduire (DSR/SDERPC/BRPCE, juin 2026) : https://www.securite-routiere.gouv.fr/sites/default/files/2026-06/bilan_annuel_2025_des_examens_du_permis_de_conduire.pdf (21/09/2026)
+- Bilan annuel 2024 des examens du permis de conduire (août 2025) : https://www.securite-routiere.gouv.fr/sites/default/files/2025-08/bilan_annuel_2024_des_examens_du_permis_de_conduire.pdf (20/09/2026)
+- Service-public.gouv.fr, F2825 « Permis B » (vérifié le 26/05/2025) : https://www.service-public.gouv.fr/particuliers/vosdroits/F2825 (21/09/2026)
+- Préfecture de la Vienne, « L'épreuve théorique » : https://www.vienne.gouv.fr/Actions-de-l-Etat/Transports-deplacements-et-securite-routiere/L-Education-routiere-dont-le-permis-de-conduire/L-epreuve-theorique (20/09/2026)
+- Préfecture de région Normandie, permis à 17 ans : https://www.prefectures-regions.gouv.fr/normandie/Region-et-institutions/Action-de-l-Etat/Securite-routiere/Actualites-Communiques-de-presse/Permis-B-l-age-minimal-legal-pour-conduire-est-abaisse-a-17-ans (21/09/2026, via résultats de recherche)
+- jeunes.gouv.fr : https://www.jeunes.gouv.fr/examen-du-code-de-la-route-une-nouvelle-formulation-des-questions-1731 (20/09/2026)
+- Ministère de l'Intérieur, communiqué (bloqué par Cloudflare, non lu) : https://www.interieur.gouv.fr/actualites/communiques-de-presse/renouvellement-de-banque-de-questions-du-code-plus-de-lisibilite
+- YouTube « Sécurité routière », vidéos d'exemples (ex. Q106188) : https://www.youtube.com/watch?v=gM3SsPwPPoI (21/09/2026)
 
 ### Éditeurs
-- Codes Rousseau (pro), « Le nouvel examen du Code entrera en vigueur le 12 septembre 2023 » — https://pro.codesrousseau.fr/le-mag-pro/09/974-le-nouvel-examen-du-code-entrera-en-vigueur-le-12-septembre-2023.html (21/09/2026)
-- Codes Rousseau, « Passer le Code de la route » — https://public.codesrousseau.fr/code-de-la-route/passer-le-code/ (21/09/2026)
-- Codes Rousseau, « Code de la route 2026, les nouveautés » — https://public.codesrousseau.fr/conseils-pratiques/973-code-de-la-route-2026-les-nouveautes.html (21/09/2026)
-- Codes Rousseau, « Où passer le Code » (maj 17/08/2026) — https://public.codesrousseau.fr/conseils-pratiques/611-ou-passer-le-code-de-la-route.html (21/09/2026)
-- Codes Rousseau, taux de réussite 2026 — https://public.codesrousseau.fr/conseils-pratiques/702-taux-de-reussite-au-code-de-la-route-et-au-permis-2026.html (20/09/2026)
-- Codes Rousseau, test 40 questions — https://public.codesrousseau.fr/conseils-pratiques/449-test-du-code-de-la-route-gratuit-40-questions.html (21/09/2026)
-- ENPC / Prépacode, « Quelles sont les 10 thématiques » — https://www.prepacode-enpc.fr/permis-b/examen/passer-lexamen-du-code/quelles-sont-les-10-thematiques-des-questions-du-code-de-la (20–21/09/2026)
+- Codes Rousseau (pro), « Le nouvel examen du Code entrera en vigueur le 12 septembre 2023 » : https://pro.codesrousseau.fr/le-mag-pro/09/974-le-nouvel-examen-du-code-entrera-en-vigueur-le-12-septembre-2023.html (21/09/2026)
+- Codes Rousseau, « Passer le Code de la route » : https://public.codesrousseau.fr/code-de-la-route/passer-le-code/ (21/09/2026)
+- Codes Rousseau, « Code de la route 2026, les nouveautés » : https://public.codesrousseau.fr/conseils-pratiques/973-code-de-la-route-2026-les-nouveautes.html (21/09/2026)
+- Codes Rousseau, « Où passer le Code » (maj 17/08/2026) : https://public.codesrousseau.fr/conseils-pratiques/611-ou-passer-le-code-de-la-route.html (21/09/2026)
+- Codes Rousseau, taux de réussite 2026 : https://public.codesrousseau.fr/conseils-pratiques/702-taux-de-reussite-au-code-de-la-route-et-au-permis-2026.html (20/09/2026)
+- Codes Rousseau, test 40 questions : https://public.codesrousseau.fr/conseils-pratiques/449-test-du-code-de-la-route-gratuit-40-questions.html (21/09/2026)
+- ENPC / Prépacode, « Quelles sont les 10 thématiques » : https://www.prepacode-enpc.fr/permis-b/examen/passer-lexamen-du-code/quelles-sont-les-10-thematiques-des-questions-du-code-de-la (20–21/09/2026)
 - (Ediser : aucune page dédiée accessible/identifiée ; la nomenclature à lettres est corroborée par City'Zen et code-route-facile.)
 
 ### Sites de formation et opérateurs
@@ -365,19 +469,19 @@ Formes attestées dans les exemples officiels (O) et/ou décrites par les sites 
 - En Voiture Simone : examen https://www.envoituresimone.com/code-de-la-route/examen ; pièges https://www.envoituresimone.com/code-de-la-route/guides/questions-pieges-code-de-la-route ; centres https://www.envoituresimone.com/demarches-et-informations/centres-agrees (20–21/09/2026)
 - Codeclic : 2026 https://www.codeclic.com/blog-code-de-la-route/5651-examen-du-code-de-la-route-2026-ce-qui-change-vraiment-pour-les-candidats/ ; réussir https://www.codeclic.com/code-de-la-route/comment-reussir-code-route.html ; thèmes https://www.codeclic.com/code-de-la-route/ ; gratuit/FAQ https://www.codeclic.com/gratuit.php (20–21/09/2026)
 - digiSchool : 12/09/2023 https://www.digischool.fr/articles/auto/actualites/nouvel-examen-code-de-la-route-12-septembre-2023/ ; 1er juillet 2026 https://www.digischool.fr/articles/auto/actualites/examen-code-de-la-route-1er-juillet-2026/ ; déroulement https://www.digischool.fr/articles/auto/examen-code-auto/comment-se-passe-lexamen-du-code-de-la-route/ ; ETM https://www.digischool.fr/articles/moto/code-et-permis-moto/etm-epreuve-theorique-moto/ (20–21/09/2026)
-- Stych — https://www.stych.fr/Fiche/code/comment-deroule-epreuve-code (21/09/2026)
+- Stych : https://www.stych.fr/Fiche/code/comment-deroule-epreuve-code (21/09/2026)
 - lePERMISLIBRE : déroulement https://www.lepermislibre.fr/code-route/comment-se-passe-examen-code-route/ ; questions https://www.lepermislibre.fr/code-route/question-code-de-la-route/ ; thèmes https://www.lepermislibre.fr/code-route/les-10-themes-du-code-de-la-route-2021/ ; centres https://www.lepermislibre.fr/code-route/examen-code/centres ; nouveautés https://www.lepermislibre.fr/code-route/nouveautes-code-de-la-route/ et https://www.lepermislibre.fr/code-route/code-route-2026-changements-sanctions-nouvelles-regles/ (21/09/2026)
-- Dekra (opérateur) — https://www.le-code-dekra.fr/actualites/2024/07/05/reussir-l-examen-du-code-de-la-route-10-erreurs-a-eviter/id/78 (21/09/2026)
-- Pointcode / Pearson Vue (opérateur) — https://www.pointcode.fr/blog/deroulement-examen-code-route.html (21/09/2026)
+- Dekra (opérateur) : https://www.le-code-dekra.fr/actualites/2024/07/05/reussir-l-examen-du-code-de-la-route-10-erreurs-a-eviter/id/78 (21/09/2026)
+- Pointcode / Pearson Vue (opérateur) : https://www.pointcode.fr/blog/deroulement-examen-code-route.html (21/09/2026)
 - Permisécole : 2026 https://www.permisecole.com/actualites/code-2026-ce-qui-change ; programme 2026 https://www.permisecole.com/actualites/code-programme-2026 ; directive UE https://www.permisecole.com/actualites/nouveaux-themes-examen-de-demain ; 2025-2026 https://www.permisecole.com/actualites/code-de-la-route-2025-2026 ; vitesse https://www.permisecole.com/actualites/exces-de-vitesse (21/09/2026)
-- Code en Poche — https://www.codeenpoche.fr/articles/les-themes-officiels-du-code-de-la-route/ (21/09/2026)
-- City'Zen — https://www.city-zen.info/formations/code-en-ligne/code-de-la-route/guides-code-de-la-route/cours-code-de-la-route-10-themes/ (21/09/2026)
-- École de conduite Antoine — https://www.ecoledeconduiteantoine.fr/combien-questions-code-route/ (21/09/2026)
-- preparation-code.fr — https://www.preparation-code.fr/lexamen-theorique-generale-du-permis-b-etg/ (21/09/2026)
-- Roule Raoule — https://www.rouleraoule.fr/code/questions-video (21/09/2026)
-- code-route-facile.com — https://www.code-route-facile.com/tests-code-route/test-blanc-complet-40-questions-type-examen-officiel/ (21/09/2026)
-- coursdecode.com — https://www.coursdecode.com/test-categorie/ (21/09/2026)
-- IJ Hauts-de-France — https://www.ij-hdf.fr/actualite/753/examen-du-code-de-la-route-ce-qui-change (21/09/2026)
-- Saumur Kiosque — https://www.le-kiosque.org/dossier-de-nouvelles-questions-au-code-pour-plus-de-lisibilite-et-de-clarte/ (21/09/2026)
-- Tribune des auto-écoles (EDPM) — https://www.tribune-auto-ecoles.fr/actualite-auto-ecole/magazine-enseignant-de-la-conduite/reglementation-t-15/signalisation-routiere-extension-aux-edpm-des-regles-applicables-aux-velos-a-967/ (via résultats de recherche)
+- Code en Poche : https://www.codeenpoche.fr/articles/les-themes-officiels-du-code-de-la-route/ (21/09/2026)
+- City'Zen : https://www.city-zen.info/formations/code-en-ligne/code-de-la-route/guides-code-de-la-route/cours-code-de-la-route-10-themes/ (21/09/2026)
+- École de conduite Antoine : https://www.ecoledeconduiteantoine.fr/combien-questions-code-route/ (21/09/2026)
+- preparation-code.fr : https://www.preparation-code.fr/lexamen-theorique-generale-du-permis-b-etg/ (21/09/2026)
+- Roule Raoule : https://www.rouleraoule.fr/code/questions-video (21/09/2026)
+- code-route-facile.com : https://www.code-route-facile.com/tests-code-route/test-blanc-complet-40-questions-type-examen-officiel/ (21/09/2026)
+- coursdecode.com : https://www.coursdecode.com/test-categorie/ (21/09/2026)
+- IJ Hauts-de-France : https://www.ij-hdf.fr/actualite/753/examen-du-code-de-la-route-ce-qui-change (21/09/2026)
+- Saumur Kiosque : https://www.le-kiosque.org/dossier-de-nouvelles-questions-au-code-pour-plus-de-lisibilite-et-de-clarte/ (21/09/2026)
+- Tribune des auto-écoles (EDPM) : https://www.tribune-auto-ecoles.fr/actualite-auto-ecole/magazine-enseignant-de-la-conduite/reglementation-t-15/signalisation-routiere-extension-aux-edpm-des-regles-applicables-aux-velos-a-967/ (via résultats de recherche)
 - Inaccessibles le 21/09/2026 (cités pour mémoire) : codedelaroute.io (504), media.roole.fr (429), interieur.gouv.fr (Cloudflare), préfectures Rhône/Drôme/Oise/Haute-Garonne (timeouts/404).

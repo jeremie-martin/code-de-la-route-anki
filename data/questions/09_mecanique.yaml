@@ -6,7 +6,7 @@
     peut simplement rappeler une ceinture ou un frein de stationnement. Suivre la notice.'
   theme: M
   sous_theme: tableau_de_bord
-  source: Codes Rousseau — Les voyants ; Ornikar — Voyants lumineux
+  source: "Codes Rousseau, Les voyants ; Ornikar, Voyants lumineux"
   debut: true
 - id: m-pneus-pression-quand
   question: Quand et comment vérifie-t-on la pression des pneus ?
@@ -15,7 +15,7 @@
     : on ne le dégonfle pas pour retrouver la valeur à froid.'
   theme: M
   sous_theme: pneus
-  source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
+  source: "Michelin, https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus"
 - id: m-pneus-usure-1-6
   question: À partir de quelle profondeur de sculpture un pneu doit-il être remplacé, et comment la vérifier ?
   reponse: 1,6 mm, minimum légal repérable aux témoins d’usure ; contrôler aussi coupures, déformations et usure irrégulière.
@@ -32,7 +32,7 @@
     n’est pas une simple mesure de niveau : arrêt en sécurité et consignes constructeur.'
   theme: M
   sous_theme: entretien
-  source: Ornikar — Huile moteur ; lepermislibre — Contrôler les niveaux
+  source: "Ornikar, Huile moteur ; lepermislibre, Contrôler les niveaux"
 - id: m-liquide-refroidissement
   question: Quelle précaution essentielle avec le liquide de refroidissement ?
   reponse: Ne jamais ouvrir le vase d’expansion moteur chaud (liquide sous pression, brûlures graves) ; contrôler à froid,
@@ -41,7 +41,7 @@
     trente minutes ne garantit pas un circuit refroidi et sans pression. Une baisse répétée du niveau appelle un contrôle.
   theme: M
   sous_theme: entretien
-  source: Ornikar — Liquide de refroidissement
+  source: "Ornikar, Liquide de refroidissement"
 - id: m-liquide-frein
   question: 'Le niveau du liquide de frein a baissé : que faut-il en conclure ?'
   reponse: 'Plaquettes usées ou fuite du circuit : je fais contrôler sans faire d''appoint à l''aveugle ; une pédale
@@ -50,7 +50,7 @@
     perd son efficacité à chaud.
   theme: M
   sous_theme: entretien
-  source: Ornikar — Liquide de frein ; lepermislibre
+  source: "Ornikar, Liquide de frein ; lepermislibre"
 - id: m-freins-apres-lavage
   question: 'Je repars après avoir lavé la voiture. Quelle vérification faire avant de reprendre de la vitesse, et pourquoi ?'
   reponse: 'Tester le freinage à faible allure, dans un espace dégagé et sans gêner les autres :
@@ -60,7 +60,7 @@
     je ne suppose pas que toute perte d’efficacité vient de l’eau.'
   theme: M
   sous_theme: freinage
-  source: Volvo — Freins de route, rubrique Freinage sur route mouillée — https://www.volvocars.com/fr/support/car/v60-cross-country/15w17/article/b7763713f78f074bc0a801e8017136c8/
+  source: "Volvo, Freins de route, rubrique Freinage sur route mouillée, https://www.volvocars.com/fr/support/car/v60-cross-country/15w17/article/b7763713f78f074bc0a801e8017136c8/"
 - id: m-plaquettes-usure
   question: Quels signes annoncent des plaquettes de frein usées ?
   reponse: 'Un témoin d''usure au tableau de bord, un bruit métallique au freinage ou une baisse du liquide de frein
@@ -69,7 +69,7 @@
     fait contrôler, on ne se contente pas de remettre du liquide.'
   theme: M
   sous_theme: entretien
-  source: Ornikar — Plaquettes et amortisseurs ; Stych — Pannes et dysfonctionnements
+  source: "Ornikar, Plaquettes et amortisseurs ; Stych, Pannes et dysfonctionnements"
 - id: m-batterie-cables
   question: Ma batterie de démarrage est déchargée. Un autre automobiliste propose ses câbles ; que vérifier avant de les brancher ?
   reponse: Que les notices autorisent le dépannage pour les deux véhicules, avec une tension compatible et les points de branchement prévus.
@@ -77,7 +77,7 @@
     Respecter les polarités et l’ordre indiqué, éviter les étincelles ; en cas de batterie endommagée ou de doute sur la procédure, appeler l’assistance.
   theme: M
   sous_theme: entretien
-  source: Renault Clio 5, Batterie — dépannage (exemple constructeur) — https://www.user-manual.renault.com/fr/d%C3%A9pannage/batterie-depannage
+  source: "Renault Clio 5, Batterie, dépannage (exemple constructeur), https://www.user-manual.renault.com/fr/d%C3%A9pannage/batterie-depannage"
 - id: m-carburants-etiquettes
   question: Que signifient les étiquettes ronde, carrée et en losange sur les pistolets de carburant ?
   reponse: Rond = essence ; carré = gazole ; losange = gaz (GPL, GNV ou hydrogène).
@@ -96,7 +96,7 @@
     et la détruit. L''assurance ne couvre généralement pas cette erreur.'
   theme: M
   sous_theme: entretien
-  source: TotalEnergies — Erreur de carburant ; Ornikar — Carburants
+  source: "TotalEnergies, Erreur de carburant ; Ornikar, Carburants"
 - id: m-boite-auto-positions
   question: Que signifient les positions P, R, N et D d'une boîte automatique ?
   reponse: P bloque la transmission pour stationner ; R est la marche arrière ; N le point mort ; D la marche avant.
@@ -105,7 +105,7 @@
     boîte manuelle.'
   theme: M
   sous_theme: entretien
-  source: Stych — La boîte automatique ; service-public.fr F2828
+  source: "Stych, La boîte automatique ; service-public.fr F2828"
 - id: m-freinage-urgence-abs
   question: Comment freiner en urgence avec un véhicule équipé de l'ABS ?
   reponse: Écraser la pédale à fond d’un coup et la maintenir malgré les vibrations, en braquant si nécessaire ; en boîte
@@ -114,7 +114,7 @@
     courte sur tout revêtement. Ne pas pomper la pédale avec ABS. L’adhérence et la vitesse restent déterminantes.
   theme: M
   sous_theme: freinage
-  source: securite-routiere.gouv.fr — Dépliant vitesse ; Ornikar — ABS
+  source: "securite-routiere.gouv.fr, Dépliant vitesse ; Ornikar, ABS"
 - id: m-panne-freins
   question: 'Les freins ne répondent plus dans une descente : que faire ?'
   reponse: Je relâche l’accélérateur, rétrograde progressivement et cherche un dégagement sûr ou une voie de détresse, en
@@ -123,7 +123,7 @@
     : suivre la notice ; ne pas donner un coup brutal au levier.'
   theme: M
   sous_theme: freinage
-  source: Stych — Pannes ; En Voiture Simone — Voies de détresse
+  source: "Stych, Pannes ; En Voiture Simone, Voies de détresse"
 - id: m-feux-jour-limite
   question: Que font exactement les feux de jour (feux diurnes) ?
   reponse: Ils rendent le véhicule visible de jour, surtout de l’avant ; ils ne remplacent pas les feux de croisement la nuit,
@@ -132,7 +132,7 @@
     au lieu de se fier à la luminosité du tableau de bord.
   theme: M
   sous_theme: feux
-  source: Stych — Systèmes d'éclairage ; Code de la route, art. R416-6
+  source: "Stych, Systèmes d'éclairage ; Code de la route, art. R416-6"
 - id: m-feux-reglage-hauteur
   question: À quoi sert la molette de réglage des feux (0 à 3) ?
   reponse: À adapter la hauteur du faisceau à la charge pour ne pas éblouir, à la position prescrite par la notice (certains
@@ -141,7 +141,7 @@
     et de la répartition de la charge, pas seulement du poids total.
   theme: M
   sous_theme: feux
-  source: Sécurité routière — Exemples de nouvelles questions (Q1) ; Ornikar — Réglage des feux
+  source: "Sécurité routière, Exemples de nouvelles questions (Q1) ; Ornikar, Réglage des feux"
 - id: m-appel-phares
   question: Un conducteur arrêté me fait un appel de phares pour me laisser passer. Puis-je m'engager ?
   reponse: 'Seulement après mes propres contrôles : l’appel ne garantit ni que les autres voies sont libres ni que les autres
@@ -150,7 +150,7 @@
     le piéton masqué par le véhicule arrêté.
   theme: M
   sous_theme: feux
-  source: Code de la route, art. R416-1 et R416-2 ; Ornikar — L'appel de phares
+  source: "Code de la route, art. R416-1 et R416-2 ; Ornikar, L'appel de phares"
 - id: s-esp-fonction
   question: À quoi sert l'ESP (contrôle électronique de stabilité) ?
   reponse: À corriger un début de dérapage en freinant des roues séparément et en réduisant le couple moteur, pour garder
@@ -159,7 +159,7 @@
     vitesse excessive dans un virage glissant, il ne peut rien. Son voyant clignote quand il travaille.'
   theme: M
   sous_theme: adas
-  source: securite-routiere.gouv.fr — Les aides à la conduite ; règlement (CE) 661/2009
+  source: "securite-routiere.gouv.fr, Les aides à la conduite ; règlement (CE) 661/2009"
 - id: m-afu-aeb
   theme: M
   sous_theme: adas
@@ -167,7 +167,7 @@
   reponse: L’AFU amplifie un freinage d’urgence déclenché par le conducteur ; l’AEB peut déclencher un freinage
     après détection d’un risque de collision.
   explication: 'Ni l’un ni l’autre ne garantit l’évitement : rester attentif et prêt à freiner.'
-  source: CNSR, Comité des experts, aides à la conduite — https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf
+  source: "CNSR, Comité des experts, aides à la conduite, https://www.securite-routiere.gouv.fr/sites/default/files/2024-06/les_aides_a_la_conduite_%28adas%29.pdf"
 - id: s-regulateur-limiteur
   question: Quelle différence entre régulateur de vitesse simple et limiteur de vitesse ?
   reponse: Le régulateur simple maintient l’allure choisie sans appui sur l’accélérateur ; avec le limiteur, je dose l’accélérateur jusqu’au plafond réglé.
@@ -175,7 +175,7 @@
     Je reste prêt à freiner. Le dépassement de la consigne et la désactivation dépendent du système ; un limiteur peut laisser la vitesse augmenter en descente."
   theme: M
   sous_theme: adas
-  source: CNSR, Les aides à la conduite, 2024 ; Renault — https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4
+  source: "CNSR, Les aides à la conduite, 2024 ; Renault, https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4"
 - id: s-ecall
   question: Après un choc grave, les occupants ne peuvent pas téléphoner. À quoi peut servir l’eCall fondé sur le 112 ?
   reponse: Il peut déclencher automatiquement un appel aux secours et transmettre la position du véhicule, même si personne ne peut parler.
@@ -183,7 +183,7 @@
     les données automatiques ne remplacent pas ce bilan. L’eCall ne protège pas les lieux et ne réalise pas les gestes de secours."
   theme: M
   sous_theme: adas
-  source: Union européenne, eCall — https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency-assistance-vehicles-ecall/index_fr.htm
+  source: "Union européenne, eCall, https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency-assistance-vehicles-ecall/index_fr.htm"
 - id: m-adas-responsabilite
   question: Mon véhicule a un détecteur d'angle mort et une alerte de franchissement de ligne. Puis-je m'y fier pour changer
     de voie ?
@@ -193,7 +193,7 @@
     la place du conducteur. Marquage effacé, neige, forte pluie, soleil bas ou capteurs sales les mettent en défaut.'
   theme: M
   sous_theme: adas
-  source: securite-routiere.gouv.fr — ADAS
+  source: "securite-routiere.gouv.fr, ADAS"
 - id: m-ldw-lka
   question: Quelle différence entre l’alerte de franchissement de ligne et l’aide au maintien de voie ?
   reponse: L’alerte (LDW) avertit d’une sortie involontaire de voie ; l’aide au maintien (LKA) peut aussi corriger la trajectoire.
@@ -201,7 +201,7 @@
     pas seulement une désactivation. Je garde le contrôle de la direction ; les limites et les consignes de désactivation figurent dans la notice.
   theme: M
   sous_theme: adas
-  source: Renault Megane Sedan, Aide au maintien de voie — https://www.user-manual.renault.com/fr/fonctions-daides-suppl%C3%A9mentaires-%C3%A0-la-conduite/aide-au-maintien-de-voie
+  source: "Renault Megane Sedan, Aide au maintien de voie, https://www.user-manual.renault.com/fr/fonctions-daides-suppl%C3%A9mentaires-%C3%A0-la-conduite/aide-au-maintien-de-voie"
 - id: m-allumage-automatique
   question: Les feux sont sur « AUTO » et il se met à pleuvoir en plein jour. Puis-je m'en remettre au système ?
   reponse: 'Je vérifie que les feux de croisement sont réellement allumés et je les commande moi-même au besoin : le mode
@@ -210,7 +210,7 @@
     actifs ne prouvent pas que les feux de croisement le sont.
   theme: M
   sous_theme: adas
-  source: securite-routiere.gouv.fr — ADAS ; Stych — Systèmes d'éclairage
+  source: "securite-routiere.gouv.fr, ADAS ; Stych, Systèmes d'éclairage"
 - id: m-conduite-automatisee
   question: Voiture à conduite partiellement automatisée (niveau 2), fonctions actives sur autoroute. Quel est le
     rôle du conducteur ?
@@ -220,7 +220,7 @@
     autorisées à un autre niveau ont des conditions spécifiques : ne pas généraliser.'
   theme: M
   sous_theme: adas
-  source: Décret n° 2021-873 ; securite-routiere.gouv.fr — ADAS
+  source: "Décret n° 2021-873 ; securite-routiere.gouv.fr, ADAS"
 - id: m-panne-procedure-route
   question: 'Mon véhicule tombe en panne sur une route ordinaire : que faire dans l''ordre ?'
   reponse: Je signale et me range en sécurité ; gilet avant de sortir ; occupants à l’abri ; triangle à 30 m au moins si sa
@@ -229,7 +229,7 @@
     étroite ou sans visibilité pour le poser.
   theme: M
   sous_theme: depannage
-  source: Code de la route, art. R416-19 ; securite-routiere.gouv.fr — Véhicule en panne
+  source: "Code de la route, art. R416-19 ; securite-routiere.gouv.fr, Véhicule en panne"
 - id: m-changer-roue-securite
   question: Que faut-il mettre en place avant de lever le véhicule pour changer une roue ?
   reponse: Sol plat et stable hors circulation, frein de stationnement serré et rapport engagé, feux de détresse et gilet,
@@ -239,7 +239,7 @@
     universelle.
   theme: M
   sous_theme: depannage
-  source: Stych — Dépannages ; Code en Poche — Changer une roue
+  source: "Stych, Dépannages ; Code en Poche, Changer une roue"
 - id: m-changer-roue-ecrous
   question: À quel moment desserre-t-on et resserre-t-on les écrous d'une roue ?
   reponse: Desserrer d’un quart de tour roue encore au sol (sinon elle tourne) ; serrer en croix une fois la roue redescendue
@@ -248,7 +248,7 @@
     la pression de la roue montée dès que possible.
   theme: M
   sous_theme: depannage
-  source: Stych — Dépannages ; Code en Poche — Changer une roue
+  source: "Stych, Dépannages ; Code en Poche, Changer une roue"
 - id: m-crevaison-eclatement
   question: Un pneu éclate en roulant. Quelle réaction ?
   reponse: Je tiens fermement le volant sans freiner brutalement ; je lève le pied, je laisse le véhicule ralentir puis je
@@ -257,7 +257,7 @@
     avant de sortir, et sur autoroute tout le monde derrière la glissière.'
   theme: M
   sous_theme: depannage
-  source: Stych — Dépannages
+  source: "Stych, Dépannages"
 - id: m-remorquage
   question: Sur route ordinaire après une panne, un ami propose de tirer ma voiture avec une corde. Puis-je accepter
     sans autre vérification ?
@@ -268,7 +268,7 @@
     cela ne suffit pas à rendre tout véhicule remorquable.
   theme: M
   sous_theme: depannage
-  source: Notice Renault (exemple, consulter celle du véhicule concerné) — https://www.user-manual.renault.com/fr/d%C3%A9pannage/remorquage-depannage-13
+  source: "Notice Renault (exemple, consulter celle du véhicule concerné), https://www.user-manual.renault.com/fr/d%C3%A9pannage/remorquage-depannage-13"
 - id: m-pression-etiquette
   theme: M
   sous_theme: pneus
@@ -277,14 +277,14 @@
   reponse: 2,6 bar, la valeur prévue pour cette charge.
   explication: On lit la préconisation correspondant au véhicule et aux pneus, plutôt que d’ajouter forfaitairement
     0,3 bar.
-  source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
+  source: "Michelin, https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus"
 - id: m-visuel-batterie-contact
   theme: M
   sous_theme: applications
   question: Ce témoin s'allume quand je mets le contact, avant de démarrer. Que dois-je vérifier ?
   reponse: 'Qu''il s''éteint une fois le moteur lancé : à la mise du contact, son allumage est l''autotest normal.'
   explication: L’état du moteur et les indications de la notice changent l’interprétation du même symbole.
-  source: Notice Renault — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
+  source: "Notice Renault, https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux"
   image_ref: voyant-batterie
 - id: m-visuel-batterie-roulant
   theme: M
@@ -295,5 +295,5 @@
     ou les consignes d’assistance.'
   explication: 'Reconnaître la batterie dessinée ne suffit pas : il faut tenir compte du moment où l’alerte
     apparaît.'
-  source: Notice Renault — https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux
+  source: "Notice Renault, https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux"
   image_ref: voyant-batterie

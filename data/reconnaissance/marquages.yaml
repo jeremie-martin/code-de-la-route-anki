@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 31 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (31 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: marq-ligne-continue
   type: marquage
   image:
@@ -11,7 +11,7 @@
   complement: 'Exception R412-19 : la chevaucher, sans la franchir, pour dépasser un cycle, un EDPM ou un cyclomobile léger.'
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Franchir une ligne continue : 135 € et 3 points ; la chevaucher : 135 € et 1 point.'
 - id: marq-ligne-discontinue-t1
   type: marquage
@@ -26,7 +26,7 @@
   conduite: Dépasser seulement si la visibilité le permet, et terminer avant la ligne d'annonce ou la ligne continue.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Une ligne discontinue autorise le franchissement mais n''oblige à rien : le dépassement reste soumis aux règles générales.'
 - id: marq-ligne-dissuasion
   type: marquage
@@ -42,7 +42,7 @@
   complement: Fréquente sur routes sinueuses et à l’approche des sorties d’autoroute.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-ligne-annonce
   type: marquage
   image:
@@ -56,7 +56,7 @@
   piege: 'Les flèches de rabattement (trois, espacement décroissant) ne désignent pas une direction : elles ordonnent de se rabattre.'
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-ligne-mixte
   type: marquage
   image:
@@ -69,7 +69,7 @@
   complement: 'R412-20 : la ligne discontinue doit être la plus proche AU DÉBUT de la manœuvre, qui doit s''achever avant la fin de la partie discontinue.'
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-fleches-directionnelles
   type: marquage
   image:
@@ -82,7 +82,7 @@
   complement: Voies de présélection et de sortie. Avec une ligne continue entre les voies, changer de voie est interdit.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-ligne-stop
   type: marquage
   image:
@@ -94,7 +94,7 @@
   conduite: S'arrêter complètement les roues avant la ligne, sans la dépasser, puis céder le passage.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Ligne transversale CONTINUE = STOP ; ligne transversale DISCONTINUE (T'2) = cédez-le-passage.
 - id: marq-ligne-cedez
   type: marquage
@@ -108,7 +108,7 @@
   complement: Se trouve aussi aux entrées de giratoire et en fin de voie d’insertion.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Les triangles blancs au sol signalent en France un ralentisseur, pas un cédez-le-passage.
 - id: marq-ligne-effet-feux
   type: marquage
@@ -122,7 +122,7 @@
   complement: Sans marquage, l'arrêt se fait avant le passage piéton, sinon à l'aplomb du feu.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Franchir la ligne d'effet des feux au rouge = feu grillé (135 €, 4 points), même en s'arrêtant ensuite.
 - id: marq-passage-pietons
   type: marquage
@@ -136,7 +136,7 @@
   complement: Arrêt et stationnement interdits dans les 5 m en amont du passage.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Refus de priorité à un piéton : 135 € et 6 points.'
 - id: marq-passage-cyclistes
   type: marquage
@@ -151,7 +151,7 @@
   piege: En ligne droite, c’est la signalisation du carrefour qui fixe la priorité, pas le marquage. Mais en tournant, je cède aux cyclistes de la piste que je coupe (R415-3 et R415-4).
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-zebra
   type: marquage
   image:
@@ -164,7 +164,7 @@
   complement: Zébra bordé d'une ligne continue = infranchissable ; bordé d'une ligne discontinue = franchissable en cas de nécessité.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-ligne-rive
   type: marquage
   image:
@@ -179,7 +179,7 @@
   complement: Continue, elle signale un accotement impraticable ou interdit à l'arrêt.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Je repère d’abord sa position : la ligne de rive longe le bord de la chaussée ; une ligne axiale sépare les sens de circulation.'
 - id: marq-ligne-bau-t4
   type: marquage
@@ -193,7 +193,7 @@
   complement: 'À 130 km/h, deux traits ≈ 90 m, soit un peu plus de 2 secondes. Circuler sur la BAU : 135 €, 3 points.'
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-chevrons
   type: marquage
   image:
@@ -206,7 +206,7 @@
   piege: Ces marques sont peintes sur la chaussée. Les chevrons sur fond bleu au bord de la route guident dans un virage ; ceux sur fond vert signalent une séparation de voies.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-voie-insertion
   type: marquage
   image:
@@ -217,7 +217,7 @@
   conduite: 'Voie d''accélération : prendre la vitesse du trafic et s''insérer en cédant le passage. Voie de décélération : freiner dedans.'
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'La largeur des traits aide à reconnaître une voie spéciale. Je regarde aussi où mène la voie : rejoindre la circulation ou en sortir ne demande pas la même manœuvre.'
 - id: marq-bande-cyclable
   type: marquage
@@ -231,7 +231,7 @@
   complement: Pour les cyclistes, le rond bleu rend l’aménagement obligatoire ; le carré bleu le conseille. La bande peut être à contresens de la circulation générale.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Bande cyclable = sur la chaussée ; piste cyclable = séparée de la chaussée. S''y arrêter : 135 €.'
 - id: marq-couloir-bus
   type: marquage
@@ -245,7 +245,7 @@
   complement: Le panneau de voie réservée précise les usagers autorisés. Une ligne continue ne se franchit pas. Certains couloirs sont à contresens.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Y circuler : 135 € (R412-7) ; s’y arrêter ou y stationner : « très gênant », 135 € (R417-11).'
 - id: marq-damier-blanc
   type: marquage
@@ -259,7 +259,7 @@
   complement: Dans les carrefours traversés par un site propre.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-ligne-jaune-continue
   type: marquage
   image:
@@ -272,7 +272,7 @@
   complement: Jaune continue = arrêt et stationnement interdits ; jaune discontinue = stationnement interdit, arrêt possible.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-ligne-jaune-discontinue
   type: marquage
   image:
@@ -284,7 +284,7 @@
   conduite: On peut s'arrêter brièvement (dépose, chargement) mais pas stationner.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-ligne-jaune-zigzag
   type: marquage
   image:
@@ -297,7 +297,7 @@
   complement: Aux arrêts de bus. S’y arrêter ou stationner est un stationnement gênant, avec fourrière possible.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Un couloir bus, lui, est très gênant : 135 €.'
 - id: marq-livraison
   type: marquage
@@ -310,7 +310,7 @@
   complement: Certaines aires (ligne discontinue simple) sont ouvertes au stationnement la nuit (20 h – 7 h), dimanches et fêtes ; les aires à double ligne restent réservées 24 h/24.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-marquage-temporaire-jaune
   type: marquage
   image:
@@ -322,7 +322,7 @@
   complement: 'Zones de chantier, basculements de chaussée. Priorité : marquage temporaire jaune > marquage permanent blanc.'
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-zone-bleue
   type: marquage
   image:
@@ -333,7 +333,7 @@
   conduite: Apposer son disque de stationnement et respecter la durée maximale.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-damier-rouge-blanc
   type: marquage
   image:
@@ -346,7 +346,7 @@
   complement: Ce marquage se trouve à l’entrée des voies de détresse.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-ralentisseur-triangles
   type: marquage
   image:
@@ -359,7 +359,7 @@
   complement: En France, les triangles blancs au sol signalent un ralentisseur, pas un cédez-le-passage.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-plateau-sureleve
   type: marquage
   image:
@@ -372,7 +372,7 @@
   complement: Rencontré en agglomération, zones 30 et zones de rencontre.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-sas-velo
   type: marquage
   image:
@@ -385,7 +385,7 @@
   complement: Il permet aux cyclistes de se placer devant, bien visibles, et de démarrer les premiers.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'S’engager dans le sas quand on risque d’y rester bloqué est une infraction (R415-2) ; franchir la ligne d’arrêt des voitures au rouge, c’est un feu grillé : 135 € et 4 points.'
 - id: marq-cvcb
   type: marquage
@@ -397,7 +397,7 @@
   conduite: Rouler au centre, pas sur la rive ; pour croiser, se déporter après avoir vérifié l'absence de cycliste.
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: marq-losange-vr
   type: marquage
   image:
@@ -408,4 +408,4 @@
   conduite: Ne pas emprunter la voie si l'on n'appartient pas aux catégories autorisées (aux heures indiquées).
   theme: L
   sous_theme: marquages
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

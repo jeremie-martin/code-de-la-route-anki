@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 35 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (35 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: c1a
   type: panneau
   code: C1a
@@ -9,7 +9,7 @@
   conduite: 'Je me gare sur les emplacements autorisés et lis les panonceaux : usagers concernés, conditions et direction du parking.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c4a
   type: panneau
   code: C4a
@@ -21,7 +21,7 @@
   complement: Carré bleu = indication (conseil) ; rond rouge = interdiction (maximum) ; rond bleu = obligation (minimum).
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c6
   type: panneau
   code: C6
@@ -29,11 +29,11 @@
     commons: France road sign C6.svg
   nom: Arrêt d'autobus ou d'autocar
   signification: Indique un arrêt de bus ou de car de ligne régulière ; l'arrêt et le stationnement des autres véhicules y sont interdits (zigzag jaune au sol).
-  conduite: Ne pas s'arrêter sur l'emplacement ; en agglomération, ralentir et au besoin s'arrêter pour laisser le bus quitter son arrêt (R412-11) — il annonce son départ par le clignotant.
+  conduite: Ne pas s'arrêter sur l'emplacement. En agglomération, ralentir et au besoin s'arrêter pour laisser le bus quitter son arrêt lorsqu'il annonce son départ par le clignotant (R412-11).
   complement: Zigzag jaune au sol.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c8
   type: panneau
   code: C8
@@ -45,7 +45,7 @@
   complement: Un arrêt hors urgence sur cet emplacement est interdit.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c12
   type: panneau
   code: C12
@@ -58,7 +58,7 @@
   piege: La flèche sur fond bleu carré indique un sens unique ; dans un rond bleu, elle impose d’aller tout droit.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: b21b
     legende: 'Rond bleu : tout droit obligatoire.'
@@ -72,7 +72,7 @@
   conduite: Ne pas s'y engager si l'on ne s'y rend pas ; attention aux demi-tours des autres.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c13c
   type: panneau
   code: C13c
@@ -82,7 +82,7 @@
   signification: Impasse pour les véhicules, mais avec une issue pour les piétons (créé en 2011).
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c14
   type: panneau
   code: C14
@@ -94,7 +94,7 @@
   complement: Avant le dernier carrefour permettant d'éviter la section. Jamais complété d'un panonceau.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c18
   type: panneau
   code: C18
@@ -106,7 +106,7 @@
   complement: En face, le panneau rond bordé de rouge impose aux autres véhicules de me céder le passage.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Ma direction est celle de la flèche vers le haut. La flèche rouge descendante représente le sens opposé : c’est lui qui cède.'
   comparaisons:
   - ref: b15
@@ -122,7 +122,7 @@
   complement: Arrêt et stationnement interdits dans les 5 m en amont du passage ; les emplacements matérialisés y sont tolérés jusqu’à fin 2026.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Le triangle annonce un passage pour piétons plus loin ; le carré bleu en indique l’emplacement.
   comparaisons:
   - ref: a13b
@@ -137,7 +137,7 @@
   conduite: Céder le passage au tramway, ne pas s'immobiliser sur les rails.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c24a
   type: panneau
   code: C24a
@@ -149,7 +149,7 @@
   complement: Sert notamment à signaler un double-sens cyclable (vélo à contresens) ou un couloir bus à contresens.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c24b
   type: panneau
   code: C24b
@@ -160,7 +160,7 @@
   conduite: Se placer à l'avance dans la voie de sa direction ; une fois engagé, on doit la suivre.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c24c
   type: panneau
   code: C24c
@@ -171,7 +171,7 @@
   conduite: Tenir compte, avant de tourner, de la présence éventuelle d'usagers à contresens sur la voie embranchée (cyclistes).
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c25a
   type: panneau
   code: C25a
@@ -183,7 +183,7 @@
   complement: 'Illustration simplifiée : la ligne des routes à chaussées séparées (110 km/h) n’est pas représentée.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c25b
   type: panneau
   code: C25b
@@ -195,7 +195,7 @@
   complement: 'Jeune conducteur (permis probatoire) : 110 sur autoroute, 100 sur route à chaussées séparées, 80 sur route.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c26a
   type: panneau
   code: C26a
@@ -207,7 +207,7 @@
   complement: Damier rouge et blanc au sol à l’entrée.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c26b
   type: panneau
   code: C26b
@@ -218,7 +218,7 @@
   conduite: En cas de défaillance des freins, j’emprunte la voie de détresse pour immobiliser le véhicule ; je la laisse libre en circulation normale.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c27
   type: panneau
   code: C27
@@ -230,7 +230,7 @@
   complement: Au sol, trois triangles blancs sur la rampe.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Le triangle annonce le ralentisseur ; le carré bleu en indique l’emplacement.
   comparaisons:
   - ref: a2b
@@ -245,7 +245,7 @@
   conduite: Se rabattre à temps sur la voie qui subsiste (généralement la droite), en alternant courtoisement (fermeture éclair) en cas de bouchon.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Celui dont la voie disparaît doit s'insérer ; celui qui reste dans la voie qui continue est prioritaire.
 - id: c29a
   type: panneau
@@ -257,7 +257,7 @@
   conduite: Se préparer à dépasser sur le créneau plutôt qu'avant.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c29b
   type: panneau
   code: C29b
@@ -268,7 +268,7 @@
   conduite: Je n’utilise la voie de gauche que pour dépasser et me rabats avant la fin du créneau de dépassement annoncé.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c29c
   type: panneau
   code: C29c
@@ -280,7 +280,7 @@
   piege: Sur une route à trois voies, la voie du milieu appartient au sens qui a deux flèches.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c30
   type: panneau
   code: C30
@@ -291,7 +291,7 @@
   conduite: Se rabattre à droite en toute sécurité avant la fin du créneau (flèches de rabattement au sol).
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c51a
   type: panneau
   code: C51a
@@ -302,7 +302,7 @@
   conduite: Respecter les vitesses affichées sur les panneaux lumineux, qui remplacent la limite générale.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c64d
   type: panneau
   code: C64d
@@ -313,7 +313,7 @@
   conduite: 'Suivre la limitation affichée : un passage à 30 km/h exige une voie signalée pour cela, sinon ralentir jusqu’à l’arrêt si nécessaire.'
   theme: L
   sous_theme: panneaux
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
 - id: c65a
   type: panneau
   code: C65a
@@ -325,7 +325,7 @@
   complement: 'Sans barrière : le paiement se fait après le passage, dans le délai indiqué.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c107
   type: panneau
   code: C107
@@ -338,7 +338,7 @@
   piege: 'Le panneau ne fixe pas à lui seul la vitesse maximale : lire la route, les limitations et les conditions.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c108
   type: panneau
   code: C108
@@ -349,7 +349,7 @@
   conduite: Réduire la vitesse, se méfier des usagers lents et des intersections.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c111
   type: panneau
   code: C111
@@ -360,7 +360,7 @@
   conduite: J’allume les feux de croisement, retire mes lunettes de soleil et garde au moins deux secondes d’écart, ou davantage si un panneau impose une distance supérieure.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Carré bleu (indication) mais il emporte de vraies obligations : feux de croisement, pas de demi-tour, pas d''arrêt.'
 - id: c112
   type: panneau
@@ -372,7 +372,7 @@
   conduite: Attention à l'éblouissement et au vent latéral en sortie.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: c113
   type: panneau
   code: C113
@@ -384,7 +384,7 @@
   complement: Les trottinettes électriques et cyclomobiles légers doivent l’emprunter, sauf décision locale contraire signalée. Un panonceau avec un cyclomoteur peut aussi autoriser ces véhicules.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Conseillée pour un vélo ne signifie pas facultative pour tous les usagers autorisés.
 - id: c115
   type: panneau
@@ -396,7 +396,7 @@
   conduite: En voiture, ne pas y entrer sans autorisation. Les usagers admis partagent l’espace en protégeant les plus vulnérables.
   theme: L
   sous_theme: panneaux
-  source: Code de la route, R110-2, R411-3-2 et R412-43-1 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006143859
+  source: Code de la route, R110-2, R411-3-2 et R412-43-1, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006143859
   piege: Une trottinette électrique n’est pas interdite du seul fait de son moteur.
 - id: c207
   type: panneau
@@ -410,7 +410,7 @@
   piege: 'Le symbole de pont indique une autoroute. La voiture vue de face indique une route réservée aux automobiles : elle n’est pas forcément une autoroute.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: c107
     legende: 'Voiture de face : route réservée aux automobiles.'
@@ -424,4 +424,4 @@
   conduite: 'Ralentir en conséquence : l''impression de lenteur après l''autoroute est trompeuse (contrôler le compteur).'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

@@ -1,4 +1,4 @@
-/* Signal — consolidated from docs/signal-theme-handoff/signal.css.
+/* Signal theme consolidated from docs/signal-theme-handoff/signal.css.
    Front content keeps its geometry and typography when the answer is revealed. */
 .card {
   --paper: #f3f6f7; --text: #20343c; --answer: #17566e; --false: #a33c30;

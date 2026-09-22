@@ -69,7 +69,7 @@ Run after integration, using the repository virtual environment:
 
 Preview output directories are cleared by that command: use the dedicated paths above. Confirm those sample IDs still exist before running.
 
-Add/retain meaningful regression checks: front/back image geometry and prompt typography; bold true/false claims; cloze sibling isolation; visible divider; answer/body size ratio; no boxed feedback/sources; comparison captions and image bounds; source expansion; no horizontal overflow at 320/390/430px. Long answers may scroll vertically—do not shrink them to force a fit.
+Add/retain meaningful regression checks: front/back image geometry and prompt typography; bold true/false claims; cloze sibling isolation; visible divider; answer/body size ratio; no boxed feedback/sources; comparison captions and image bounds; source expansion; no horizontal overflow at 320/390/430px. Allow long answers to scroll vertically. Keep their text at a readable size.
 
 Inspect light/dark recognition, paired signs, illustrated cloze, text-only question, long scenario, true/false and answer-only comparisons. Try the final package in AnkiMobile on the target iPhone before claiming native rendering parity. Update the maintenance note that currently describes the stylesheet as Essential.
 
@@ -83,3 +83,7 @@ Inspect light/dark recognition, paired signs, illustrated cloze, text-only quest
 - `validation.json`: bounded handoff checks, distinct from future production acceptance.
 
 Sample text and media retain their original licences. Refer to the deck's `out/ATTRIBUTIONS.md` and README; this handoff does not change attribution or licensing.
+
+Repository maintenance: sample prose was revised on 22 September 2026 to avoid em dashes.
+The screenshots and validation record retain the original visual handoff; runtime tests compare both
+stylesheets against the revised samples. The manifest hashes describe the current files.

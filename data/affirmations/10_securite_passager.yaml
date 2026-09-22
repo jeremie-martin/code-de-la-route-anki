@@ -1,4 +1,4 @@
-# S — La sécurité du passager et du véhicule : affirmations à juger VRAI/FAUX.
+# S : La sécurité du passager et du véhicule : affirmations à juger VRAI/FAUX.
 # Forme dominante de l'ETG (11 des 20 questions officielles), dont la Q12 « Cette passagère arrière
 # met le conducteur en danger ». Les affirmations sur les aides à la conduite sont dans le thème M.
 - id: aff-s-passagere-arriere-danger
@@ -8,15 +8,15 @@
   pourquoi: 'Lors d''un choc, un passager arrière non attaché est projeté vers l''avant : il écrase le dossier et la tête de l''occupant avant. Elle est en danger et elle en crée un.'
   theme: S
   sous_theme: passagers
-  source: Sécurité routière — Exemples de nouvelles questions (Q12) ; Dépliant ceinture 2022
+  source: "Sécurité routière, Exemples de nouvelles questions (Q12) ; Dépliant ceinture 2022"
 - id: aff-s-ceinture-majeur-amende
   contexte: Un passager adulte refuse de mettre sa ceinture.
   affirmation: C'est le conducteur qui sera verbalisé.
   verdict: faux
-  pourquoi: 'Un passager majeur répond de lui-même : 135 € pour lui, sans retrait de points. Le conducteur n''est responsable que des passagers de moins de 18 ans — et de sa propre ceinture (135 € et 3 points).'
+  pourquoi: "Un passager majeur répond de lui-même : 135 € pour lui, sans retrait de points. Le conducteur est responsable de l'attache des passagers de moins de 18 ans et de sa propre ceinture. S'il ne porte pas sa ceinture, il risque 135 € et 3 points."
   theme: S
   sous_theme: passagers
-  source: Code de la route, art. R412-1 et R412-2 ; securite-routiere.gouv.fr — Port de la ceinture
+  source: "Code de la route, art. R412-1 et R412-2 ; securite-routiere.gouv.fr, Port de la ceinture"
 - id: aff-s-airbag-remplace-ceinture
   contexte: Voiture récente équipée d'airbags frontaux, latéraux et rideaux.
   affirmation: À l'arrière, la ceinture devient facultative.
@@ -24,14 +24,14 @@
   pourquoi: 'L''airbag est un complément de la ceinture, jamais un substitut : sans ceinture, l''occupant est projeté hors de la trajectoire du coussin, ou le heurte de plein fouet. La ceinture est due à toutes les places.'
   theme: S
   sous_theme: passagers
-  source: securite-routiere.gouv.fr — Airbags ; Code de la route, art. R412-1
+  source: "securite-routiere.gouv.fr, Airbags ; Code de la route, art. R412-1"
 - id: aff-s-appuie-tete-securite
   affirmation: L'appuie-tête est d'abord un équipement de confort.
   verdict: faux
   pourquoi: 'C''est un équipement de sécurité passive : il retient la tête lors d''un choc arrière et évite le « coup du lapin ». Réglé trop bas, il fait pivot et aggrave la lésion cervicale.'
   theme: S
   sous_theme: passagers
-  source: Ornikar — Appuie-tête ; Stych — Installation au poste de conduite
+  source: "Ornikar, Appuie-tête ; Stych, Installation au poste de conduite"
 - id: aff-s-airbag-pieds
   contexte: Passager avant, long trajet sur autoroute.
   affirmation: Poser ses pieds sur le tableau de bord expose à des blessures graves.
@@ -39,7 +39,7 @@
   pourquoi: 'L''airbag passager sort du tableau de bord en quelques dizaines de millisecondes à plus de 200 km/h : les jambes sont renvoyées vers le visage et le bassin. Les pieds restent au plancher, dos calé, ceinture bouclée.'
   theme: S
   sous_theme: passagers
-  source: securite-routiere.gouv.fr — Airbags ; Ornikar — Airbags
+  source: "securite-routiere.gouv.fr, Airbags ; Ornikar, Airbags"
 - id: aff-s-animal-libre
   contexte: Trajet de 20 minutes avec un chien de taille moyenne.
   affirmation: Il peut voyager libre sur la banquette arrière s'il est calme.
@@ -47,7 +47,7 @@
   pourquoi: 'Un animal non retenu réduit les possibilités de mouvement et le champ de vision du conducteur (35 €, R412-6) et devient un projectile au choc. Harnais relié à la ceinture, caisse de transport, ou grille de coffre.'
   theme: S
   sous_theme: passagers
-  source: Code de la route, art. R412-6 ; Stych — Installation des passagers
+  source: "Code de la route, art. R412-6 ; Stych, Installation des passagers"
 - id: aff-s-enfant-10-ans-avant
   contexte: Un enfant vient d'avoir 10 ans, la voiture a des sièges arrière libres.
   affirmation: Il peut désormais s'asseoir à l'avant, attaché par la ceinture.
@@ -70,7 +70,7 @@
   pourquoi: 'Une place et une ceinture par personne (R412-1-1) : au choc, l''adulte est projeté sur l''enfant, qui est écrasé. Le surnombre est une contravention de 4e classe et coûte 3 points au conducteur.'
   theme: S
   sous_theme: enfants
-  source: Code de la route, art. R412-1-1 ; securite-routiere.gouv.fr — Transporter un enfant
+  source: "Code de la route, art. R412-1-1 ; securite-routiere.gouv.fr, Transporter un enfant"
 - id: aff-s-siege-manteau
   contexte: Départ un matin d'hiver, l'enfant est installé dans son siège auto.
   affirmation: Il peut garder sa doudoune sous le harnais.
@@ -78,14 +78,14 @@
   pourquoi: 'La doudoune se comprime au choc et laisse plusieurs centimètres de jeu : l''enfant peut glisser hors du harnais. On l''attache en vêtements fins et on pose le manteau par-dessus, ou une couverture.'
   theme: S
   sous_theme: enfants
-  source: securite-routiere.gouv.fr — Transporter un enfant en voiture
+  source: "securite-routiere.gouv.fr, Transporter un enfant en voiture"
 - id: aff-s-isofix
   affirmation: La fixation Isofix réduit le risque d'installer un siège enfant de travers.
   verdict: vrai
   pourquoi: 'Le siège s''ancre par deux crochets sur des points fixes de la caisse, avec sangle haute ou jambe de force, au lieu d''être sanglé par la ceinture. Isofix équipe les véhicules neufs depuis 2011 ; deux sièges sur trois sont mal installés.'
   theme: S
   sous_theme: enfants
-  source: service-public.fr F628 ; securite-routiere.gouv.fr — Transporter un enfant
+  source: "service-public.fr F628 ; securite-routiere.gouv.fr, Transporter un enfant"
 - id: aff-s-chargement-distance-arret
   contexte: Quatre passagers et un coffre plein pour partir en vacances.
   affirmation: Ma distance d'arrêt sera plus longue qu'à vide.
@@ -93,7 +93,7 @@
   pourquoi: 'La masse en mouvement augmente l''énergie à dissiper : le freinage s''allonge et la tenue de route se dégrade. On augmente la pression des pneus, on abaisse le faisceau des feux et on allonge les intervalles.'
   theme: S
   sous_theme: chargement
-  source: securite-routiere.gouv.fr — Équipement de la voiture ; Stych — Chargement
+  source: "securite-routiere.gouv.fr, Équipement de la voiture ; Stych, Chargement"
 - id: aff-s-plage-arriere
   contexte: Une boîte de mouchoirs et un parapluie posés sur la plage arrière.
   affirmation: Des objets légers posés là ne présentent pas de danger.
@@ -101,7 +101,7 @@
   pourquoi: 'Au choc, tout objet libre poursuit sa course à la vitesse du véhicule et devient un projectile, même léger : il peut blesser la nuque ou le visage. La plage arrière et la lunette arrière restent dégagées.'
   theme: S
   sous_theme: chargement
-  source: securite-routiere.gouv.fr — Conseils chargement ; Stych — Chargement
+  source: "securite-routiere.gouv.fr, Conseils chargement ; Stych, Chargement"
 - id: aff-s-chargement-avant
   affirmation: Un chargement peut dépasser d'un mètre à l'avant du véhicule s'il est signalé.
   verdict: faux
@@ -116,7 +116,7 @@
   pourquoi: 'Le poids en hauteur élève le centre de gravité : roulis, prise au vent latéral, tenue de route dégradée. Le lourd va en bas, contre le dossier de la banquette ; la charge de toit est limitée par la notice.'
   theme: S
   sous_theme: chargement
-  source: securite-routiere.gouv.fr — Conseils chargement ; ADEME
+  source: "securite-routiere.gouv.fr, Conseils chargement ; ADEME"
 - id: aff-s-caravane-passager
   contexte: Trajet avec une caravane attelée.
   affirmation: Un passager peut s'installer dans la caravane pendant le trajet.
@@ -124,7 +124,7 @@
   pourquoi: 'On ne transporte de passagers que sur des sièges du véhicule, dans la limite des places de la carte grise : personne dans une caravane, dans un coffre ou dans la zone de chargement d''un utilitaire.'
   theme: S
   sous_theme: chargement
-  source: Code de la route, art. R412-1-1 ; Stych — Chargement et remorque
+  source: "Code de la route, art. R412-1-1 ; Stych, Chargement et remorque"
 - id: aff-s-remorque-retroviseurs
   contexte: La caravane attelée est plus large que la voiture.
   affirmation: Il faut monter des rétroviseurs additionnels.
@@ -132,14 +132,14 @@
   pourquoi: 'Le conducteur doit conserver une vision vers l''arrière sans angle mort notable : si la remorque masque le champ des rétroviseurs d''origine, des bras rallongés sont nécessaires. La plaque et les feux doivent aussi rester visibles.'
   theme: S
   sous_theme: chargement
-  source: Code de la route, art. R316-6 ; securite-routiere.gouv.fr — Équipement de la voiture
+  source: "Code de la route, art. R316-6 ; securite-routiere.gouv.fr, Équipement de la voiture"
 - id: aff-s-abs-passive
   affirmation: L'ABS et l'ESP font partie de la sécurité passive du véhicule.
   verdict: faux
   pourquoi: 'Ils relèvent de la sécurité active : ils aident à éviter l''accident, comme les freins, les pneus, les amortisseurs et l''éclairage. La sécurité passive limite les blessures une fois le choc survenu.'
   theme: S
   sous_theme: equipements
-  source: Stych — Sécurité active et passive ; lepermislibre
+  source: "Stych, Sécurité active et passive ; lepermislibre"
 - id: aff-s-euroncap-pietons
   affirmation: Les étoiles Euro NCAP évaluent aussi la protection des piétons et des cyclistes.
   verdict: vrai
@@ -148,7 +148,7 @@
     lors du choc et la sécurité après le choc. Le protocole évolue : tenir compte de l’année du test.'
   theme: S
   sous_theme: equipements
-  source: 'Euro NCAP — protocole 2026 : https://www.euroncap.com/press-media/euro-ncap-announces-2026-protocol-changes-to-tackle-modern-driving-risks/'
+  source: "Euro NCAP, protocole 2026 : https://www.euroncap.com/press-media/euro-ncap-announces-2026-protocol-changes-to-tackle-modern-driving-risks/"
 - id: aff-s-ceinture-autocar
   contexte: Voyage en autocar équipé de ceintures de sécurité.
   affirmation: Chaque passager doit attacher sa ceinture.
@@ -168,5 +168,4 @@
     si le geste empêche de conduire en sécurité.
   theme: S
   sous_theme: passagers
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F33513 ; Code de la santé publique,
-    L3512-9 ; Code de la route, R412-6
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F33513 ; Code de la santé publique, L3512-9 ; Code de la route, R412-6"

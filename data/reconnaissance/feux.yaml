@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 13 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (13 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: feu-rouge
   type: feu
   image:
@@ -11,7 +11,7 @@
   complement: Sans ligne au sol, l'arrêt se fait à l'aplomb du feu.
   theme: L
   sous_theme: feux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Pas de « tourne à droite au rouge » en France. Les roues au-delà de la ligne, c'est déjà un feu grillé.
 - id: feu-jaune-fixe
   type: feu
@@ -25,7 +25,7 @@
   complement: 'Officiellement « jaune » : le Code ne parle pas d''orange. Franchir alors qu''on pouvait s''arrêter : 35 €, sans retrait de points.'
   theme: L
   sous_theme: feux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Ne jamais accélérer pour « passer à l''orange » : le jaune impose l''arrêt, sauf impossibilité.'
 - id: feu-vert
   type: feu
@@ -39,7 +39,7 @@
   piege: Le vert ne donne pas la priorité sur les piétons ; il prévaut sur un STOP ou un cédez-le-passage placé dessous.
   theme: L
   sous_theme: feux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   complement: Il n'existe pas de feu vert clignotant en France.
 - id: feu-jaune-clignotant
   type: feu
@@ -53,7 +53,7 @@
   piege: Un feu jaune clignotant seul sur un panneau (R1) n'est qu'un renfort d'attention, pas un régime de priorité.
   theme: L
   sous_theme: feux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   complement: 'Au milieu : feux momentanément mis au clignotant. En bas : il peut remplacer le vert dans un cycle normal, ce n’est pas forcément une panne.'
 - id: feu-rouge-clignotant
   type: feu
@@ -62,11 +62,11 @@
     params:
       twin: true
   nom: Feu rouge clignotant (signal d'arrêt R24)
-  signification: 'Un ou deux feux rouges alternés : arrêt absolu devant un danger — passage à niveau, pont mobile, sortie de pompiers, traversée de tram.'
+  signification: 'Un ou deux feux rouges alternés imposent l''arrêt absolu devant un danger : passage à niveau, pont mobile, sortie de pompiers ou traversée de tram.'
   conduite: S'arrêter avant le feu et attendre son extinction ; au passage à niveau, ne jamais contourner les demi-barrières.
   theme: L
   sous_theme: feux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Ne jamais franchir même si rien n''est visible : le train peut arriver dans quelques secondes.'
 - id: r12
   type: feu
@@ -80,7 +80,7 @@
   conduite: 'En voiture : céder le passage aux piétons engagés, même si leur feu vient de passer au rouge.'
   theme: L
   sous_theme: feux
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
   piege: Vert autorise à commencer la traversée ; au rouge, ne pas s’engager. En voiture, laisser finir les piétons déjà engagés.
 - id: r13
   type: feu
@@ -95,7 +95,7 @@
   complement: 'Un feu pour les vélos peut leur donner le départ avant les autres véhicules : je ne démarre pas en voiture tant que mon propre feu reste rouge.'
   theme: L
   sous_theme: feux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: r14
   type: feu
   code: R14
@@ -110,7 +110,7 @@
   piege: Ne pas confondre avec R16, la flèche jaune clignotante (passer en cédant le passage).
   theme: L
   sous_theme: feux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: r16
   type: feu
   code: R16
@@ -126,7 +126,7 @@
   complement: Souvent pour le tourne-à-droite. Sans R16, tourner à droite au rouge reste interdit.
   theme: L
   sous_theme: feux
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
   piege: 'Flèche jaune clignotante : autorisation conditionnelle, sans priorité sur les usagers dont on coupe la trajectoire.'
 - id: r17
   type: feu
@@ -140,7 +140,7 @@
   conduite: 'En voiture, suivre son propre feu ; se méfier d''un bus dont la barre est verticale : il va passer.'
   theme: L
   sous_theme: feux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: r21a
   type: feu
   code: R21a
@@ -157,7 +157,7 @@
   complement: Sur portique au-dessus de chaque voie. Croix rouge = voie fermée ; flèche verte vers le bas = voie ouverte ; flèche jaune oblique clignotante = se rabattre sur la voie indiquée.
   theme: L
   sous_theme: feux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: r21b
   type: feu
   code: R21b
@@ -173,7 +173,7 @@
   conduite: Rester ou se placer dans cette voie.
   theme: L
   sous_theme: feux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: r21c
   type: feu
   code: R21c
@@ -189,4 +189,4 @@
   conduite: Changer de voie dans le sens de la flèche dès que possible, sans manœuvre brusque.
   theme: L
   sous_theme: feux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

@@ -7,7 +7,7 @@
     chaleurs.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
 - id: aff-e-point-mort-descente
   contexte: Longue descente, route dégagée.
   affirmation: Passer au point mort économise du carburant.
@@ -17,7 +17,7 @@
     décélération.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
 - id: aff-e-moteur-chauffer
   contexte: Matin d'hiver, moteur froid.
   affirmation: Je laisse tourner le moteur deux ou trois minutes avant de partir, pour le ménager.
@@ -25,7 +25,7 @@
   pourquoi: 'Un moteur chauffe bien plus vite en roulant : on démarre et on roule doucement les premiers kilomètres. À l''arrêt il consomme et pollue sans avancer, et cela est interdit sans nécessité.'
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — Écoconduite ; arrêté du 12 novembre 1963
+  source: "ADEME, Écoconduite ; arrêté du 12 novembre 1963"
 - id: aff-e-trajets-courts
   affirmation: Les trajets de moins de trois kilomètres polluent peu, puisqu'ils sont courts.
   verdict: faux
@@ -33,7 +33,7 @@
     encore atteint leur efficacité normale. Pour un court trajet, envisager marche ou vélo selon les possibilités.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
 - id: aff-e-coffre-toit-vide
   contexte: Retour de vacances ; le coffre de toit est encore sur le pavillon, vide.
   affirmation: Vide, il ne coûte plus rien en carburant.
@@ -42,7 +42,7 @@
     ne sert plus ; l’augmentation dépend du coffre et de la vitesse, pas d’un pourcentage fixe.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
 - id: aff-e-vitesse-stable
   contexte: Route dégagée, trafic fluide.
   affirmation: Une allure souple et stable consomme moins qu'une conduite nerveuse à la même vitesse moyenne.
@@ -51,7 +51,7 @@
     l’allure réduit ces pertes ; la circulation et la sécurité restent prioritaires.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
 - id: aff-e-equipements-electriques
   affirmation: Le dégivrage de la lunette arrière et les sièges chauffants font consommer du carburant.
   verdict: vrai
@@ -59,7 +59,7 @@
     mais garder le désembuage ou le dégivrage tant qu’ils sont nécessaires à la visibilité.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
   contexte: Voiture thermique.
 - id: aff-e-electrique-zero
   affirmation: Un véhicule électrique n'émet aucune pollution.
@@ -68,7 +68,7 @@
     et la production de l'électricité. La vignette verte ne veut pas dire « sans impact ».
   theme: E
   sous_theme: pollution
-  source: ADEME ; En Voiture Simone — Achat éco-responsable
+  source: "ADEME ; En Voiture Simone, Achat éco-responsable"
 - id: aff-e-zfe-vignette
   contexte: J'entre dans une ZFE au volant d'une voiture essence de 2022.
   affirmation: Même autorisée à circuler, ma voiture doit porter la vignette Crit'Air.
@@ -86,15 +86,15 @@
     Distinguer les polluants ; le carburant seul ne fournit pas un classement universel.
   theme: E
   sous_theme: pollution
-  source: IFPEN — étude de véhicules Euro 6d-TEMP (2020), pas un classement de tout le parc 2026 — https://www.ifpenergiesnouvelles.fr/article/emissions-des-voitures-essence-et-diesel-recentes-publication-letude-realisee-ifpen
+  source: "IFPEN, étude de véhicules Euro 6d-TEMP (2020), pas un classement de tout le parc 2026, https://www.ifpenergiesnouvelles.fr/article/emissions-des-voitures-essence-et-diesel-recentes-publication-letude-realisee-ifpen"
 - id: aff-e-ve-silence
   contexte: Je conduis un véhicule électrique dans une rue étroite où des piétons circulent.
   affirmation: Son silence est un danger pour les piétons.
   verdict: vrai
-  pourquoi: 'Les piétons se fient beaucoup à l''ouïe : un véhicule électrique arrive sans être entendu. D''où l''avertisseur sonore imposé sous 20 km/h sur les modèles récents — et une vigilance accrue du conducteur.'
+  pourquoi: "Les piétons se fient beaucoup à l'ouïe : un véhicule électrique peut arriver sans être entendu. Un avertisseur sonore est donc imposé sous 20 km/h sur les modèles récents. Le conducteur doit rester particulièrement vigilant."
   theme: E
   sous_theme: ecomobilite
-  source: Règlement (UE) 540/2014 (AVAS) ; ADEME — Véhicules électriques
+  source: "Règlement (UE) 540/2014 (AVAS) ; ADEME, Véhicules électriques"
 - id: aff-e-covoiturage-electrique
   contexte: Une voie réservée (losange) est active ; le panonceau autorise les véhicules à au moins deux occupants,
     les taxis et les bus.
@@ -104,7 +104,7 @@
     de cette voie peuvent l''emprunter. Sans panonceau, ce sont les transports en commun, les taxis et le covoiturage.'
   theme: E
   sous_theme: ecomobilite
-  source: Ville de Paris — https://www.paris.fr/pages/la-voie-reservee-sur-le-peripherique-entre-en-vigueur-le-3-mars-30106
+  source: "Ville de Paris, https://www.paris.fr/pages/la-voie-reservee-sur-le-peripherique-entre-en-vigueur-le-3-mars-30106"
 - id: aff-e-borne-recharge
   contexte: Place équipée d'une borne de recharge, libre devant les commerces.
   affirmation: Je peux m'y garer sans recharger, le temps d'une course rapide.
@@ -122,4 +122,4 @@
     principal en urgence.'
   theme: E
   sous_theme: ecoconduite
-  source: "ADEME — Voiture électrique : conseils d’usage ; securite-routiere.gouv.fr — Les aides à la conduite (ADAS)"
+  source: "ADEME, Voiture électrique : conseils d’usage ; securite-routiere.gouv.fr, Les aides à la conduite (ADAS)"

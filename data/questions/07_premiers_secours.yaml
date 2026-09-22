@@ -1,16 +1,14 @@
-# Thème A — Porter secours (≈ 1 question) : protéger, alerter, secourir, obligations après un accident.
+# Thème A : Porter secours (≈ 1 question) : protéger, alerter, secourir, obligations après un accident.
 # Cartes de décision : une situation, une décision et sa raison (brief v2). Les chiffres sont dans data/faits/07,
 # les idées reçues de l'épreuve dans data/affirmations/07.
 - id: a-proteger-arret
   question: Je suis le premier à arriver sur un accident, sur une route à double sens. Où et comment je m'arrête ?
   reponse: Après le lieu de l’accident (pour ne pas le masquer), en sécurité sur l’accotement ; feux de détresse allumés et
     gilet enfilé avant de sortir.
-  explication: 'Protéger = éviter le suraccident : gilet pour chaque occupant qui sort, triangle à 30 m et plus (avant un
-    virage ou un sommet de côte) si sa pose n''expose pas, puis tout le monde hors chaussée — derrière la glissière sur voie
-    rapide.'
+  explication: "Protéger, c'est éviter le suraccident. Chaque occupant qui sort met un gilet. Placer le triangle à 30 m ou plus, avant un virage ou un sommet de côte si nécessaire, seulement si sa pose n'expose pas au danger. Tout le monde se met hors de la chaussée, derrière la glissière sur voie rapide."
   theme: A
   sous_theme: proteger
-  source: Code de la route, art. R416-19 ; Ornikar — Protéger la zone ; Croix-Rouge française
+  source: "Code de la route, art. R416-19 ; Ornikar, Protéger la zone ; Croix-Rouge française"
 - id: a-incendie-vehicule
   question: 'Un véhicule accidenté commence à prendre feu sous le capot : que fais-je ?'
   reponse: J’éloigne les personnes du danger et j’alerte le 18 ou le 112. Je ne m’expose pas pour essayer d’éteindre le feu.
@@ -18,7 +16,7 @@
     secours seulement les informations observables en sécurité ; suivre leurs consignes.
   theme: A
   sous_theme: proteger
-  source: Sécurité civile, PSC juillet 2026, Protection — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: "Sécurité civile, PSC juillet 2026, Protection, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: a-alerter-borne-ou-portable
   question: 'Témoin d''un accident sur autoroute, j''ai mon portable et une borne d''appel orange à 200 m : lequel j''utilise
     ?'
@@ -28,7 +26,7 @@
     Donner route, sens et repère au téléphone ; aucun appel mobile sans réseau disponible.
   theme: A
   sous_theme: alerter
-  source: securite-routiere.gouv.fr — Bien se comporter sur autoroute ; ASFA
+  source: "securite-routiere.gouv.fr, Bien se comporter sur autoroute ; ASFA"
 - id: a-message-alerte
   question: J’appelle le 112 pour un accident. Quelles informations mon message doit-il donner ?
   reponse: Le lieu précis (route, sens et repère) ; la nature de l’accident ; le nombre et l’état des victimes ; les dangers
@@ -37,7 +35,7 @@
     aux questions et ne pas raccrocher le premier.'
   theme: A
   sous_theme: alerter
-  source: Croix-Rouge française — Alerter les secours ; securite-routiere.gouv.fr
+  source: "Croix-Rouge française, Alerter les secours ; securite-routiere.gouv.fr"
 - id: a-alerter-raccrocher
   question: Au téléphone avec le 112, j'ai donné le lieu, le nombre de victimes et leur état. À quel moment je raccroche ?
   reponse: 'Seulement quand l’opérateur me le dit : il peut avoir des questions ou des consignes à donner ; je ne raccroche
@@ -46,7 +44,7 @@
     et j''envoie quelqu''un guider les secours.'
   theme: A
   sous_theme: alerter
-  source: Croix-Rouge française — Alerter ; Ornikar — Alerter les secours
+  source: "Croix-Rouge française, Alerter ; Ornikar, Alerter les secours"
 - id: a-evaluer-victime
   question: 'Zone protégée, secours alertés. Une victime est allongée et ne bouge pas : que fais-je en premier ?'
   reponse: Je vérifie si elle répond ; sinon je libère les voies aériennes et recherche une respiration normale pendant dix
@@ -55,7 +53,7 @@
     RCP et faire apporter un DAE.'
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: "Sécurité civile, PSC juillet 2026, Perte de connaissance, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: a-pls
   question: Après un malaise sans chute ni traumatisme, une personne ne répond pas mais respire normalement. Quel geste après
     vérification de la respiration ?
@@ -63,7 +61,7 @@
   explication: La PLS maintient les voies aériennes libres et permet aux liquides de s’écouler. Après un traumatisme ou si la cause est inconnue, la conduite diffère ; suivre les consignes des secours.
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, p. 36–38 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: "Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: a-rcp-dae
   question: 'Un adulte ne répond pas et ne respire pas normalement : pas de respiration, ou seulement des inspirations rares et bruyantes. Que fais-je ?'
   reponse: J’alerte, fais apporter un défibrillateur et commence immédiatement les compressions thoraciques ; je suis les instructions des secours et de l’appareil.
@@ -71,7 +69,7 @@
     Fréquence 100–120/min, profondeur 5–6 cm. Faire alerter et apporter le DAE ; suivre le guidage des secours.'
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, Arrêt cardiaque — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: "Sécurité civile, PSC juillet 2026, Arrêt cardiaque, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: a-dae-utilisation
   question: Un témoin apporte un défibrillateur automatisé externe (DAE). Je l’ai allumé et posé les électrodes ; il annonce « analyse en cours ». Que dois-je faire ?
   reponse: Je m’écarte et j’empêche quiconque de toucher la victime pendant l’analyse et le choc ; puis je reprends aussitôt
@@ -80,7 +78,7 @@
     le laisse en place et allumé jusqu'à l'arrivée des secours.
   theme: A
   sous_theme: secourir
-  source: Croix-Rouge française — Défibrillateur ; décret n° 2007-705
+  source: "Croix-Rouge française, Défibrillateur ; décret n° 2007-705"
 - id: a-hemorragie
   question: Zone protégée. Une victime saigne abondamment du bras, sans objet planté dans la plaie. Quel geste immédiat ?
   reponse: Je comprime fortement la plaie (main protégée si possible) et je maintiens la pression ; victime allongée, secours
@@ -89,7 +87,7 @@
     ; noter l’heure, ne pas le desserrer. La présence d’un objet planté change le geste.'
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, pages 15–18 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: "Sécurité civile, PSC juillet 2026, pages 15–18, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: a-blesse-deplacer
   question: 'Un blessé conscient est coincé dans sa voiture, en plein soleil. Un témoin veut le sortir pour le mettre à l''ombre
     : que fais-je ?'
@@ -98,7 +96,7 @@
     et ne rien donner à boire.
   theme: A
   sous_theme: secourir
-  source: Croix-Rouge française ; Ornikar — Secourir un blessé
+  source: "Croix-Rouge française ; Ornikar, Secourir un blessé"
 - id: a-casque-motard
   question: 'Un motard accidenté est inconscient mais respire. Un témoin veut lui retirer son casque « pour qu''il respire
     mieux » : que fais-je ?'
@@ -137,7 +135,7 @@
     fois signé et les exemplaires séparés, plus rien ne peut être modifié.'
   theme: A
   sous_theme: obligations
-  source: service-public.fr — Constat amiable ; Code des assurances, art. L113-2
+  source: "service-public.fr, Constat amiable ; Code des assurances, art. L113-2"
 - id: a-accident-corporel-obligations
   question: Je suis impliqué dans un accident où quelqu'un est blessé. Une fois les secours alertés, que dois-je faire d'autre
     ?
@@ -156,7 +154,7 @@
     en danger pour aller le chercher.
   theme: A
   sous_theme: alerter
-  source: 'Sécurité routière — alerte : route, sens, localisation'
+  source: "Sécurité routière, alerte : route, sens, localisation"
 - id: a-objet-plaie
   theme: A
   sous_theme: applications
@@ -172,4 +170,4 @@
   question: Après un choc routier, une victime ne répond pas mais respire normalement, allongée sur le dos. Elle ne vomit pas et la zone est protégée. Que fais-je ?
   reponse: Je la laisse sur le dos, j’alerte et suis les consignes des secours ; je maintiens les voies aériennes libres et surveille continuellement sa respiration.
   explication: En cas de vomissements ou régurgitations, la tourner sur le côté en maintenant si possible l’axe tête-cou-tronc, avec de l’aide. Les secours peuvent aussi demander une PLS. Si la respiration devient anormale ou s’arrête, commencer la réanimation et prévenir les secours.
-  source: Sécurité civile, PSC juillet 2026, p. 36–38 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: "Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"

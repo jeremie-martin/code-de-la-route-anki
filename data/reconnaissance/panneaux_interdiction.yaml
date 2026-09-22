@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 28 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (28 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: b0
   type: panneau
   code: B0
@@ -10,7 +10,7 @@
   piege: Le cercle rouge vide interdit la circulation dans les deux sens. Le disque rouge à barre blanche interdit d’entrer par ce côté.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: b1
     legende: 'Barre blanche : entrée interdite par ce côté.'
@@ -25,7 +25,7 @@
   complement: Dans les zones 30 et zones de rencontre, des cyclistes peuvent arriver en face (double-sens cyclable).
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Le cercle rouge vide interdit la circulation dans les deux sens ; la barre blanche interdit l’entrée par ce côté.
   comparaisons:
   - ref: b0
@@ -41,7 +41,7 @@
   complement: Sur les bretelles de sortie, face aux usagers qui pourraient s'y engager par erreur.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Ici le fond jaune n''est pas une signalisation temporaire : c''est un renforcement (carré, exception à la forme ronde des B).'
 - id: b2a
   type: panneau
@@ -55,7 +55,7 @@
   piege: L’interdiction vise la prochaine intersection. Une flèche dans un rond rouge interdit une direction ; dans un rond bleu, elle impose une direction.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b2b
   type: panneau
   code: B2b
@@ -67,7 +67,7 @@
   complement: Vaut pour la prochaine intersection.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b2c
   type: panneau
   code: B2c
@@ -79,7 +79,7 @@
   complement: Même sans ce panneau, le demi-tour est interdit sur autoroute, route express et dans un tunnel. Il ferait aussi circuler à contresens dans une rue à sens unique.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b3
   type: panneau
   code: B3
@@ -90,7 +90,7 @@
   conduite: Rester derrière voitures, camions, tracteurs ; on peut encore dépasser une moto solo, un cyclomoteur, un cycliste.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Sur les panneaux d''interdiction de dépasser, la voiture ROUGE est à gauche : c''est celle qui dépasserait.'
 - id: b3a
   type: panneau
@@ -102,7 +102,7 @@
   conduite: Ne concerne pas le conducteur d'une voiture ; les poids lourds doivent rester dans leur voie.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b4
   type: panneau
   code: B4
@@ -113,7 +113,7 @@
   conduite: S'arrêter à hauteur du poste et attendre les instructions ; ne repartir qu'après autorisation.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b6a1
   type: panneau
   code: B6a1
@@ -125,7 +125,7 @@
   piege: Une barre interdit le stationnement ; deux barres en croix interdisent aussi l’arrêt. Le panneau de fin de toutes les interdictions ne met pas fin à cette règle de stationnement.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: b6d
     legende: 'Croix rouge : arrêt et stationnement interdits.'
@@ -140,7 +140,7 @@
   complement: Changement de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Les chiffres portés sont les jours où le stationnement est INTERDIT de ce côté.
 - id: b6a3
   type: panneau
@@ -153,7 +153,7 @@
   complement: Changement de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b6d
   type: panneau
   code: B6d
@@ -164,7 +164,7 @@
   conduite: Ne pas s'immobiliser, même pour déposer quelqu'un ; continuer.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Équivalent au sol : ligne jaune CONTINUE sur la bordure (arrêt interdit) ; jaune discontinue = stationnement interdit seulement.'
 - id: b7a
   type: panneau
@@ -177,7 +177,7 @@
   piege: 'Voiture et moto : les cyclomoteurs restent admis. Avec un troisième symbole de cyclomoteur, tous les véhicules à moteur sont interdits.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: b7b
     legende: 'Trois symboles : tous les véhicules à moteur.'
@@ -191,7 +191,7 @@
   conduite: Ne pas s'engager avec un véhicule à moteur.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b8
   type: panneau
   code: B8
@@ -203,7 +203,7 @@
   piege: Le camion vise le transport de marchandises. Un nombre de tonnes dans le rond rouge vise le poids réel du véhicule, quelle que soit sa catégorie.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: b13
     legende: 'Tonnage : limite de poids réel, toutes catégories.'
@@ -217,7 +217,7 @@
   conduite: En cas de panne sur une telle voie, rester derrière les glissières.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b9b
   type: panneau
   code: B9b
@@ -229,7 +229,7 @@
   piege: 'Avec le même symbole de vélo : rond rouge = accès interdit ; rond bleu = piste obligatoire ; carré bleu = piste conseillée ; triangle = débouché de cyclistes.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: b22a
     legende: 'Rond bleu : piste obligatoire.'
@@ -246,7 +246,7 @@
   signification: Interdiction d'accès aux cyclomoteurs (≤ 50 cm³ ou 4 kW, ≤ 45 km/h).
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b9h
   type: panneau
   code: B9h
@@ -256,7 +256,7 @@
   signification: Interdiction d'accès aux motocyclettes (> 50 cm³) et motocyclettes légères (≤ 125 cm³).
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b11
   type: panneau
   code: B11
@@ -267,7 +267,7 @@
   conduite: Une voiture fait environ 1,8 à 2 m ; attention aux rétroviseurs et aux chargements larges.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b12
   type: panneau
   code: B12
@@ -279,7 +279,7 @@
   complement: Un portique de gabarit peut compléter la signalisation.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b13
   type: panneau
   code: B13
@@ -291,7 +291,7 @@
   piege: c'est le poids AUTORISÉ (carte grise), pas le poids réel du véhicule à l'instant t.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b14
   type: panneau
   code: B14
@@ -303,7 +303,7 @@
   complement: Posée sur un panneau de danger, elle ne vaut que pour ce danger.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Pour une vitesse, le rond rouge fixe un maximum, le rond bleu un minimum et le carré bleu une vitesse conseillée.
   comparaisons:
   - ref: b25
@@ -322,7 +322,7 @@
   piege: 'Ma direction est celle de la flèche vers le haut : elle est rouge, je cède le passage.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: c18
     legende: 'De l’autre côté : le sens opposé a la priorité.'
@@ -337,7 +337,7 @@
   complement: Hors panneau, le klaxon est interdit en agglomération sauf danger immédiat ; de nuit, avertir par appels de phares.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b17
   type: panneau
   code: B17
@@ -349,7 +349,7 @@
   piege: Le nombre suivi de « m » est une distance à garder, pas une vitesse. C’est particulièrement utile dans les tunnels.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b18c
   type: panneau
   code: B18c
@@ -359,4 +359,4 @@
   signification: Interdiction d'accès aux véhicules transportant des marchandises dangereuses (signalés par des plaques orange), typiquement à l'entrée de certains tunnels et zones urbaines.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

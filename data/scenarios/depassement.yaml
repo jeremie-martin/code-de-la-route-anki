@@ -109,8 +109,7 @@
     réunies ?
   reponse: Oui, si les conditions habituelles sont réunies (visibilité, personne en face, personne ne me dépasse)
     et si je peux me rabattre avant la fin de la ligne discontinue.
-  explication: 'La ligne continue de l''autre côté interdit aux véhicules d''en face de dépasser — pas à moi. Je
-    reste vigilant : elle annonce souvent une zone sans visibilité pour eux, pas pour moi.'
+  explication: "La ligne continue de l'autre côté interdit aux véhicules d'en face de dépasser, mais ne m'interdit pas de le faire. Je reste vigilant : elle annonce souvent une zone sans visibilité pour eux, pas pour moi."
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-20

@@ -4,7 +4,7 @@
   explication: 'Une photo prise au guidon d’un vélo ou d’une trottinette appelle les règles de cet usager : piste cyclable, sas vélo, autorisation de franchir un feu dans une direction donnée. Je vérifie le pictogramme avant de répondre.'
   theme: X
   sous_theme: lecture
-  source: Prépacode (ENPC) — Nouveau code 2023 ; Codes Rousseau — Nouveautés 2026
+  source: "Prépacode (ENPC), Nouveau code 2023 ; Codes Rousseau, Nouveautés 2026"
 - id: etg-halo-jaune
   question: Dans une question de l'ETG, un véhicule de la photo est entouré/surligné en jaune. Pourquoi ?
   reponse: C'est le véhicule dont parle la question (« ce véhicule », « la voiture bleue »…).
@@ -12,7 +12,7 @@
     de la question.
   theme: X
   sous_theme: lecture
-  source: securite-routiere.gouv.fr — Nouvelle épreuve du code 2023
+  source: "securite-routiere.gouv.fr, Nouvelle épreuve du code 2023"
 - id: etg-je-peux-je-dois
   question: Quelle différence de lecture entre « Je peux… » et « Je dois… » dans une question de l'ETG ?
   reponse: 'Convention de l’épreuve : « Je peux » demande si l’action est à la fois autorisée et sûre ; « Je dois
@@ -28,7 +28,7 @@
   explication: Ne pas fixer seulement l’événement le plus spectaculaire. La réponse peut dépendre d’un panneau déjà passé, d’un usager derrière ou d’un danger masqué. Relier ensuite chaque proposition aux indices réellement observés.
   theme: X
   sous_theme: lecture
-  source: Méthode d’observation (synthèse pédagogique) ; Sécurité routière — préparation à l’examen
+  source: "Méthode d’observation (synthèse pédagogique) ; Sécurité routière, préparation à l’examen"
 - id: etg-forme-double-oui-non
   question: Une question de l'ETG présente deux affirmations sur la même photo, chacune à juger OUI/NON. Comment est-elle
     notée ?
@@ -37,7 +37,7 @@
   explication: Juger séparément les deux affirmations, puis vérifier les lettres cochées.
   theme: X
   sous_theme: lecture
-  source: Sécurité routière — Exemples de nouvelles questions (PDF, sept. 2023) ; En Voiture Simone — Questions pièges
+  source: "Sécurité routière, Exemples de nouvelles questions (PDF, sept. 2023) ; En Voiture Simone, Questions pièges"
 - id: etg-negation
   question: 'Énoncé de l''ETG : « Il n''est pas interdit de tourner à droite. » Qu''est-ce que cela veut dire ?'
   reponse: 'Que c''est autorisé : une double négation (« pas interdit ») équivaut à une permission.'
@@ -45,4 +45,4 @@
     avant de juger l'affirmation.
   theme: X
   sous_theme: lecture
-  source: Codeclic — Comment réussir le code
+  source: "Codeclic, Comment réussir le code"

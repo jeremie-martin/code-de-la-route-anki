@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 5 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (5 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: ce2a
   type: panneau
   code: CE2a
@@ -9,7 +9,7 @@
   conduite: 'Sur autoroute, les bornes sont tous les 2 km : les préférer au téléphone portable car elles localisent l''appel.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: ce15a
   type: panneau
   code: CE15a
@@ -20,7 +20,7 @@
   conduite: Sur autoroute, je repère la distance jusqu’à la station pour anticiper le ravitaillement.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: ce15i
   type: panneau
   code: CE15i
@@ -31,7 +31,7 @@
   conduite: Je n’occupe un emplacement réservé à la recharge que pour recharger un véhicule électrique.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: ce29
   type: panneau
   code: CE29
@@ -42,7 +42,7 @@
   conduite: 'En tunnel : se garer, couper le moteur, laisser les clés, rejoindre l''issue de secours.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: ce30a
   type: panneau
   code: CE30a
@@ -53,4 +53,4 @@
   conduite: En cas d'incendie ou d'accident dans un tunnel, rejoindre l'issue de secours indiquée à pied.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

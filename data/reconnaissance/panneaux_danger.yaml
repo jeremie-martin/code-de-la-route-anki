@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 27 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (27 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: a1a
   type: panneau
   code: A1a
@@ -10,7 +10,7 @@
   complement: Le sens de la flèche indique le sens du virage.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a1b
   type: panneau
   code: A1b
@@ -21,7 +21,7 @@
   conduite: Ralentir, serrer à droite (ne pas couper le virage), ne pas dépasser.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a1c
   type: panneau
   code: A1c
@@ -33,7 +33,7 @@
   piege: c'est le premier virage dessiné (en bas) qui donne le sens ; ici le premier est à droite.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a1d
   type: panneau
   code: A1d
@@ -44,7 +44,7 @@
   conduite: Ralentir, rester à droite sur toute la section.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a2a
   type: panneau
   code: A2a
@@ -56,7 +56,7 @@
   complement: Deux bosses représentent une déformation de la chaussée ; une seule bosse annonce un ralentisseur aménagé.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: a2b
     legende: 'Une seule bosse : ralentisseur aménagé.'
@@ -70,7 +70,7 @@
   conduite: Je ralentis avant le ralentisseur et respecte la limitation affichée, souvent 30 km/h.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Le triangle annonce le ralentisseur ; le carré bleu en indique l’emplacement.
   comparaisons:
   - ref: c27
@@ -85,7 +85,7 @@
   conduite: Je ralentis et reste dans ma voie. Si deux véhicules ne peuvent pas se croiser, je lis les panneaux de priorité et ne m’engage que si je peux dégager.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a3a
   type: panneau
   code: A3a
@@ -96,7 +96,7 @@
   conduite: Ralentir, contrôler le rétroviseur gauche avant de se décaler, ne pas dépasser.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a3b
   type: panneau
   code: A3b
@@ -107,7 +107,7 @@
   conduite: Ralentir ; les usagers venant en face peuvent être déportés vers ma voie.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a4
   type: panneau
   code: A4
@@ -118,7 +118,7 @@
   conduite: Ralentir avant la section, éviter les freinages et accélérations brusques, augmenter les distances de sécurité.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a6
   type: panneau
   code: A6
@@ -129,7 +129,7 @@
   conduite: Ralentir, se préparer à s'arrêter ; respecter les feux rouges clignotants (R24) et barrières.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a7
   type: panneau
   code: A7
@@ -140,7 +140,7 @@
   conduite: Ralentir, être prêt à s'arrêter ; ne jamais s'engager si l'on risque d'être immobilisé sur les voies.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Le dépassement n'est interdit qu'aux passages à niveau SANS barrière ni demi-barrière (R414-12).
 - id: a8
   type: panneau
@@ -152,7 +152,7 @@
   conduite: Ralentir fortement, regarder et écouter ; ne franchir que si aucun train n'est visible ni audible.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   complement: La croix de Saint-André marque le passage lui-même ; un STOP peut la surmonter.
 - id: a9b
   type: panneau
@@ -164,7 +164,7 @@
   conduite: Ralentir, regarder des deux côtés et lui céder le passage, même sur une route prioritaire.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a13a
   type: panneau
   code: A13a
@@ -176,7 +176,7 @@
   piege: 'Deux enfants qui courent : lieu fréquenté par des enfants. Le piéton sur des bandes annonce, lui, un passage pour piétons.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: a13b
     legende: 'Un piéton sur des bandes : passage pour piétons annoncé.'
@@ -190,7 +190,7 @@
   conduite: Ralentir, être prêt à s'arrêter pour laisser traverser les piétons engagés ou manifestant l'intention de traverser ; ne pas dépasser un véhicule qui ralentit ou s'arrête devant le passage.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: c20a
     legende: 'Carré bleu : le passage est ici.'
@@ -207,7 +207,7 @@
   complement: C'est le seul panneau de danger permanent qui doit normalement être complété par un panonceau explicatif.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a15a1
   type: panneau
   code: A15a1
@@ -218,7 +218,7 @@
   conduite: Ralentir, être prêt à s'arrêter ; un troupeau peut occuper toute la chaussée.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a15b
   type: panneau
   code: A15b
@@ -230,7 +230,7 @@
   piege: animaux sauvages (cerf) vs domestiques (vache). Une variante avec un lynx existe localement.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a15c
   type: panneau
   code: A15c
@@ -241,7 +241,7 @@
   conduite: Ralentir, ne pas klaxonner ni effrayer les chevaux, dépasser avec un large écart et à faible vitesse.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a16
   type: panneau
   code: A16
@@ -252,7 +252,7 @@
   conduite: Rétrograder pour utiliser le frein moteur ; en montagne, le véhicule qui descend facilite le croisement.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: 'Le pourcentage est la pente, pas une vitesse : 10 % = 10 m de dénivelé pour 100 m.'
 - id: a17
   type: panneau
@@ -265,7 +265,7 @@
   complement: Un feu jaune clignotant peut être ajouté au sommet du panneau pour renforcer l’alerte.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a18
   type: panneau
   code: A18
@@ -278,7 +278,7 @@
   piege: 'Les deux flèches opposées dans le triangle annoncent une circulation à double sens : je dois désormais attendre des véhicules en face.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a19
   type: panneau
   code: A19
@@ -290,7 +290,7 @@
   complement: Le côté du talus dessiné indique d'où viennent les pierres.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a20
   type: panneau
   code: A20
@@ -301,7 +301,7 @@
   conduite: Ralentir fortement, ne pas manœuvrer ou stationner près du bord.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: a21
   type: panneau
   code: A21
@@ -313,7 +313,7 @@
   piege: 'Avec un vélo, la forme change le sens : triangle = danger ; rond bleu = piste obligatoire ; carré bleu = piste conseillée ; rond rouge = accès interdit.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: b9b
     legende: 'Rond rouge : accès interdit aux cycles.'
@@ -332,5 +332,5 @@
   complement: Une manche à air peut préciser l’endroit exposé et montrer la direction et la force du vent.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   piege: Le symbole est ROUGE, exception parmi les symboles noirs des panneaux de danger.

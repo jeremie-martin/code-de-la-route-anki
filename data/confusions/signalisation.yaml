@@ -10,9 +10,7 @@
 - id: conf-a15a1-a15b
   a: a15a1
   b: a15b
-  difference: '**A** (vache) : passage d''animaux **domestiques** (troupeaux, sorties de fermes) — ralentir,
-    ne pas klaxonner. **B** (cerf bondissant) : passage d''animaux **sauvages** (gibier, surtout à l''aube
-    et au crépuscule, en forêt) — ralentir, scruter les bas-côtés.'
+  difference: "**A** (vache) annonce le passage d'animaux **domestiques** : troupeaux, sorties de fermes. Je ralentis et je ne klaxonne pas. **B** (cerf bondissant) annonce le passage d'animaux **sauvages** : gibier, surtout à l'aube et au crépuscule, en forêt. Je ralentis et je scrute les bas-côtés."
   theme: L
   sous_theme: panneaux
   source: IISR 1re partie
@@ -48,14 +46,11 @@
     ces deux signaux ne désignent pas le même usager.'
   theme: L
   sous_theme: panneaux
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: conf-ab1-ab2
   a: ab1
   b: ab2
-  difference: '**A** (croix) : intersection où la **priorité à droite** s''applique — je cède aux véhicules
-    venant de ma droite. **B** (barre verticale épaisse) : intersection où **je suis prioritaire**, ponctuellement
-    (les autres ont un STOP ou un cédez-le-passage). Les deux sont des triangles de danger implantés avant
-    l''intersection.'
+  difference: "**A** (croix) annonce une intersection où la **priorité à droite** s'applique : je cède aux véhicules venant de ma droite. **B** (barre verticale épaisse) annonce une intersection où **je suis prioritaire**, ponctuellement : les autres ont un STOP ou un cédez-le-passage. Les deux sont des triangles de danger implantés avant l'intersection."
   theme: L
   sous_theme: panneaux
   source: IISR 1re partie ; Code de la route, art. R415-5 et R415-7
@@ -110,13 +105,11 @@
     le marquage et l’écart latéral restent à vérifier.
   theme: L
   sous_theme: panneaux
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: conf-b6a1-b6d
   a: b6a1
   b: b6d
-  difference: '**A** (une barre rouge) : **stationnement** interdit — un arrêt bref (déposer un passager) reste
-    possible. **B** (croix rouge) : **arrêt et stationnement** interdits — même une minute, même moteur tournant.
-    Valable du panneau jusqu''à la prochaine intersection, du côté où il est implanté.'
+  difference: "**A** (une barre rouge) interdit le **stationnement**. Un arrêt bref pour déposer un passager reste possible. **B** (croix rouge) interdit **l'arrêt et le stationnement**, même une minute, même moteur tournant. L'interdiction vaut du panneau jusqu'à la prochaine intersection, du côté où il est implanté."
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie ; Code de la route, art. R110-2
@@ -157,9 +150,7 @@
 - id: conf-b14-c4a
   a: b14
   b: c4a
-  difference: '**A** (rond rouge) : vitesse **maximale** autorisée, obligatoire, jusqu''à la prochaine intersection
-    ou au panneau de fin. **B** (carré bleu) : vitesse **conseillée**, indicative (virage, descente) — la dépasser
-    n''est pas une infraction en soi, mais peut être dangereux.'
+  difference: "**A** (rond rouge) impose une vitesse **maximale**, jusqu'à la prochaine intersection ou au panneau de fin. **B** (carré bleu) indique une vitesse **conseillée**, par exemple pour un virage ou une descente. La dépasser n'est pas une infraction en soi, mais peut être dangereux."
   theme: L
   sous_theme: panneaux
   source: IISR 4e et 5e parties
@@ -213,7 +204,7 @@
     pendant la période indiquée, quatre pneus hiver conformes ou des dispositifs amovibles détenus à bord.'
   theme: L
   sous_theme: panneaux
-  source: Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12
+  source: "Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12"
 - id: conf-b31-b33
   a: b31
   b: b33
@@ -221,7 +212,7 @@
     de stationner. B termine seulement la limitation de vitesse indiquée. Les règles générales restent applicables.
   theme: L
   sous_theme: panneaux
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: conf-b52-b54
   a: b52
   b: b54
@@ -265,18 +256,14 @@
 - id: conf-c8-c26a
   a: c8
   b: c26a
-  difference: '**A** (route avec encoche) : emplacement d''arrêt d''urgence (aire aménagée pour s''arrêter
-    en cas de panne, sur route sans bande d''arrêt d''urgence ou en tunnel). **B** (voie qui monte, damier)
-    : voie de détresse — voie en gravier pour arrêter un véhicule dont les freins ont lâché en descente.'
+  difference: "**A** (route avec encoche) indique un emplacement d'arrêt d'urgence, aménagé pour s'arrêter en cas de panne sur une route sans bande d'arrêt d'urgence ou en tunnel. **B** (voie qui monte, damier) indique une voie de détresse : son lit de gravier permet d'arrêter un véhicule dont les freins ont lâché en descente."
   theme: L
   sous_theme: panneaux
   source: IISR 5e partie
 - id: conf-eb10-e31
   a: eb10
   b: e31
-  difference: '**A** (nom en lettres droites noires sur fond blanc, **bordure rouge**) : entrée d''agglomération
-    — 50 km/h, règles de l''agglomération jusqu''au panneau de sortie barré (EB20). **B** (nom en lettres **italiques
-    blanches sur fond noir**) : simple localisation d''un lieu-dit ou hameau — aucun changement de règle.'
+  difference: "**A** (nom en lettres droites noires sur fond blanc, **bordure rouge**) marque l'entrée d'agglomération. La limite par défaut de 50 km/h et les règles d'agglomération s'appliquent jusqu'au panneau de sortie barré (EB20). **B** (nom en lettres **italiques blanches sur fond noir**) localise simplement un lieu-dit ou un hameau, sans changer les règles."
   theme: L
   sous_theme: panneaux
   source: IISR 5e partie ; Code de la route, art. R110-2
@@ -316,9 +303,7 @@
 - id: conf-j4-j5
   a: j4
   b: j5
-  difference: '**A** (chevron blanc sur fond bleu, pointant vers l''intérieur du virage) : balise de virage
-    — indique le sens du virage. **B** (flèche blanche oblique sur fond bleu) : balise de tête d''îlot — contournement
-    obligatoire par la droite de l''îlot ou du refuge.'
+  difference: "**A** (chevron blanc sur fond bleu, pointant vers l'intérieur du virage) est une balise qui indique le sens du virage. **B** (flèche blanche oblique sur fond bleu) est une balise de tête d'îlot : elle impose de contourner l'îlot ou le refuge par la droite."
   theme: L
   sous_theme: balises
   source: IISR 1re partie
@@ -374,7 +359,7 @@
     aux autres usagers.'
   theme: L
   sous_theme: feux
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: conf-k10a-k10b
   a: k10a
   b: k10b
@@ -385,18 +370,14 @@
 - id: conf-voyant-frein-stationnement
   a: voyant-frein
   b: voyant-frein-stationnement
-  difference: '**(!)** rouge : alerte de freinage — niveau de liquide de frein bas ou défaut du circuit (ou frein
-    à main serré sur certains modèles) : si le frein à main est desserré et qu''il reste allumé, s''arrêter. **(P)**
-    rouge : le frein de stationnement est serré — le desserrer complètement avant de rouler.'
+  difference: "**(!)** rouge signale une alerte de freinage : niveau de liquide de frein bas ou défaut du circuit. Sur certains modèles, il signale aussi le frein à main serré. S'il reste allumé après desserrage du frein à main, je m'arrête. **(P)** rouge indique que le frein de stationnement est serré : je le desserre complètement avant de rouler."
   theme: M
   sous_theme: voyants
   source: ISO 2575
 - id: conf-voyant-brouillard-av-ar
   a: voyant-brouillard-avant
   b: voyant-brouillard-arriere
-  difference: '**Vert, faisceau vers la gauche, rayons obliques** : feux de brouillard **avant** (utilisables par
-    brouillard, neige ou forte pluie). **Orange, faisceau vers la droite, rayons horizontaux** : feu de brouillard
-    **arrière** — uniquement par brouillard ou neige, jamais sous la pluie, à éteindre dès que la visibilité revient.'
+  difference: "**Vert, faisceau vers la gauche, rayons obliques** : feux de brouillard **avant**, utilisables par brouillard, neige ou forte pluie. **Orange, faisceau vers la droite, rayons horizontaux** : feu de brouillard **arrière**, utilisable uniquement par brouillard ou neige, jamais sous la pluie. Je l'éteins dès que la visibilité revient."
   theme: M
   sous_theme: voyants
   source: ISO 2575 ; Code de la route, art. R416-7
@@ -408,4 +389,4 @@
     réduit la visibilité.'
   theme: M
   sous_theme: voyants
-  source: Code de la route, R416-4 à R416-7 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159603
+  source: "Code de la route, R416-4 à R416-7, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159603"

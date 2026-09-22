@@ -77,8 +77,7 @@ feu-jaune-clignotant:
     ce n’est pas forcément une panne.'
   piege: Un feu jaune clignotant seul sur un panneau (R1) n'est qu'un renfort d'attention, pas un régime de priorité.
 feu-rouge-clignotant:
-  signification: 'Un ou deux feux rouges alternés : arrêt absolu devant un danger — passage à niveau, pont mobile, sortie
-    de pompiers, traversée de tram.'
+  signification: "Un ou deux feux rouges alternés imposent l'arrêt absolu devant un danger : passage à niveau, pont mobile, sortie de pompiers ou traversée de tram."
   conduite: S'arrêter avant le feu et attendre son extinction ; au passage à niveau, ne jamais contourner les demi-barrières.
   complement: null
   piege: 'Ne jamais franchir même si rien n''est visible : le train peut arriver dans quelques secondes.'
@@ -88,7 +87,7 @@ r12:
   conduite: 'En voiture : céder le passage aux piétons engagés, même si leur feu vient de passer au rouge.'
   complement: null
   piege: Vert autorise à commencer la traversée ; au rouge, ne pas s’engager. En voiture, laisser finir les piétons déjà engagés.
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 r13:
   signification: Le symbole du vélo ou du bus indique à quels usagers ce feu s’adresse.
   conduite: En voiture, je suis le feu destiné à ma voie, pas le feu portant un vélo ou un bus. À vélo, je suis le feu avec le symbole vélo.
@@ -105,7 +104,7 @@ r16:
   conduite: Céder le passage aux piétons et aux véhicules qui ont le vert avant de tourner ; s'arrêter si nécessaire.
   complement: Souvent pour le tourne-à-droite. Sans R16, tourner à droite au rouge reste interdit.
   piege: 'Flèche jaune clignotante : autorisation conditionnelle, sans priorité sur les usagers dont on coupe la trajectoire.'
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 r17:
   signification: 'Feux réservés aux bus et tramways, en barres blanches : barre verticale = passage, disque = arrêt imminent,
     barre horizontale = arrêt.'
@@ -269,10 +268,9 @@ b31:
   conduite: Reprendre la vitesse réglementaire de la route et les manœuvres à nouveau autorisées.
   signification: Fin des interdictions signalées imposées aux véhicules en mouvement.
   piege: Ne met pas fin aux interdictions d’arrêt ou de stationnement ; les règles générales restent applicables.
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 c6:
-  conduite: Ne pas s'arrêter sur l'emplacement ; en agglomération, ralentir et au besoin s'arrêter pour laisser le bus quitter
-    son arrêt (R412-11) — il annonce son départ par le clignotant.
+  conduite: "Ne pas s'arrêter sur l'emplacement. En agglomération, ralentir et au besoin s'arrêter pour laisser le bus quitter son arrêt lorsqu'il annonce son départ par le clignotant (R412-11)."
   complement: Zigzag jaune au sol.
 c12:
   signification: 'La chaussée est à sens unique : tous les véhicules circulent dans le sens de la flèche ; le demi-tour y
@@ -317,8 +315,7 @@ c28:
   complement: null
   piege: Celui dont la voie disparaît doit s'insérer ; celui qui reste dans la voie qui continue est prioritaire.
 c50:
-  complement: 'Exemple ci-contre : mention locale autorisant l''arrêt sur le trottoir — cas exceptionnel, l''arrêt sur trottoir
-    étant sinon très gênant (135 €).'
+  complement: "Dans l'exemple ci-contre, la mention locale autorise l'arrêt sur le trottoir. C'est une exception : sans cette autorisation, l'arrêt sur le trottoir est très gênant (135 €)."
 c65a:
   signification: 'Péage « en flux libre » (sans barrière, plaques lues sous un portique) : indique les moyens de paiement.'
   conduite: Ne pas s'arrêter sous le portique ; payer sous 72 h en ligne, en point de vente ou par télépéage.
@@ -436,7 +433,7 @@ b22a:
   conduite: 'En voiture : ne pas y rouler ni s''y arrêter ; attention aux cyclistes en la coupant pour tourner.'
   complement: 'Un panonceau peut l’ouvrir aux cyclomoteurs. S’y arrêter ou stationner : très gênant, 135 €.'
   piege: Pour les cyclistes, le rond bleu impose la piste ; le carré bleu la conseille.
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
   comparaisons:
   - ref: c113
     legende: 'Carré bleu : conseillé aux cyclistes.'
@@ -451,7 +448,7 @@ b26:
   piege: Chaînes dans le coffre ne suffisent pas si le véhicule doit être équipé de chaînes montées.
   signification: 'Équipement hivernal en service : chaînes sur au moins deux roues motrices, ou pneus hiver admis en équivalence
     pour les catégories prévues.'
-  source: Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12
+  source: "Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12"
 b27a:
   signification: Voie réservée aux autobus et cars de lignes régulières ; interdite aux autres véhicules, sauf catégories
     autorisées par panonceau.
@@ -483,7 +480,7 @@ ab4:
   conduite: Immobiliser les roues, même si la voie semble libre.
   complement: Un feu en fonctionnement prévaut sur ce panneau de priorité.
   piege: Le panneau est reconnaissable de dos à sa forme octogonale.
-  source: Code de la route, R415-6 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842245/
+  source: "Code de la route, R415-6, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842245/"
 ab5:
   complement: null
   piege: 'Je ne m’arrête pas devant ce signal avancé : l’arrêt se fait au STOP annoncé plus loin.'
@@ -539,7 +536,7 @@ b58:
   conduite: 'Vérifier son équipement avant d''entrer : pneus hiver, ou chaînes/chaussettes dans le coffre.'
   complement: Le marquage M+S seul ne suffit plus depuis le 1er novembre 2024.
   piege: 'La zone impose un équipement hivernal pendant la période indiquée. Le panneau rond bleu avec une roue chaînée porte sur l’équipement à utiliser sur la section : je lis aussi son éventuel complément.'
-  source: Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12
+  source: "Arrêté du 23 juin 2021, art. 7 (IISR 67-1) ; D314-8, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12"
   comparaisons:
   - ref: b26
     legende: 'Roue chaînée : équipement en service sur la section.'
@@ -611,7 +608,7 @@ kr11:
 triangle-presignalisation:
   signification: Triangle rouge rétroréfléchissant à placer sur la chaussée pour signaler un véhicule immobilisé. Obligatoire
     à bord avec le gilet.
-  conduite: Gilet avant de sortir, feux de détresse, triangle au moins 30 m en amont — sauf si cela m'expose.
+  conduite: "Mettre le gilet avant de sortir et allumer les feux de détresse. Placer le triangle au moins 30 m en amont, sauf si sa pose m'expose au danger."
   complement: 'Sur autoroute, ne pas poser le triangle si cela met en danger : priorité à l''évacuation derrière la glissière.'
   piege: Absence à bord = 11 € ; ne pas revêtir le gilet ou ne pas présignaler = 135 €.
 vr-losange-debut:
@@ -744,14 +741,14 @@ c115:
   conduite: En voiture, ne pas y entrer sans autorisation. Les usagers admis partagent l’espace en protégeant les plus vulnérables.
   complement: null
   piege: Une trottinette électrique n’est pas interdite du seul fait de son moteur.
-  source: Code de la route, R110-2, R411-3-2 et R412-43-1 — https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006143859
+  source: "Code de la route, R110-2, R411-3-2 et R412-43-1, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006143859"
 c64d:
   signification: Voie de péage pour les véhicules munis d’un badge de télépéage.
   conduite: 'Suivre la limitation affichée : un passage à 30 km/h exige une voie signalée pour cela, sinon ralentir jusqu’à
     l’arrêt si nécessaire.'
   complement: null
   piege: null
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 marq-damier-blanc:
   conduite: 'Ne pas bloquer la traversée. Lire les feux et les priorités : le damier seul ne donne pas une priorité générale
     au bus.'
@@ -774,7 +771,7 @@ m9c:
 da40:
   image:
     gen: direction_voies
-  nom: Affectation des voies par direction — schéma simplifié
+  nom: "Affectation des voies par direction (schéma simplifié)"
   signification: 'Les flèches vers le bas désignent les voies : sur ce schéma, deux voies pour Paris et la voie de droite
     pour Lyon.'
   conduite: Choisir sa voie assez tôt, après contrôles ; ne pas couper les autres voies au dernier moment.

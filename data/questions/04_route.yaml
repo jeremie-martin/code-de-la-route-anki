@@ -25,7 +25,7 @@
     réelle fixe. Aucun seuil universel de 70 km/h ne sépare obstacle évitable et inévitable.
   theme: R
   sous_theme: nuit
-  source: Code de la route, R413-17 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/
+  source: "Code de la route, R413-17, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/"
 - id: r-pluie-feux
   question: Averse de jour sur une route hors agglomération, la visibilité baisse nettement. Dois-je allumer mes feux ?
   reponse: 'Oui, les feux de croisement : obligatoires dès que la visibilité est réduite par la météo, de jour comme de nuit.'
@@ -43,7 +43,7 @@
     la route.
   theme: R
   sous_theme: intemperies
-  source: Stych — Circuler par temps de pluie ; securite-routiere.gouv.fr — Conduire sous la pluie
+  source: "Stych, Circuler par temps de pluie ; securite-routiere.gouv.fr, Conduire sous la pluie"
 - id: r-aquaplaning
   question: Sur chaussée très mouillée, la direction devient soudain légère et le véhicule répond mal. Que faire face à un
     possible aquaplanage ?
@@ -53,7 +53,7 @@
     suffit pas à diagnostiquer un aquaplanage. Prévenir : allure réduite, pneus en état, intervalle accru.'
   theme: R
   sous_theme: intemperies
-  source: Ornikar — L'aquaplaning ; securite-routiere.gouv.fr — Conduire sous la pluie
+  source: "Ornikar, L'aquaplaning ; securite-routiere.gouv.fr, Conduire sous la pluie"
 - id: r-brouillard-feux
   question: Par brouillard, quels feux dois-je utiliser ?
   reponse: Les feux de croisement (jamais les feux de route, qui se réfléchissent sur le brouillard), complétés au besoin
@@ -71,7 +71,7 @@
     vitesse à atteindre.
   theme: R
   sous_theme: intemperies
-  source: Code de la route, art. R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+  source: "Code de la route, art. R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/"
 - id: r-neige-conduite
   question: Je roule sur une route couverte de neige. Comment dois-je agir sur les commandes ?
   reponse: 'Je réduis fortement ma vitesse et j’augmente les distances, avec des commandes progressives : accélération, freinage
@@ -80,7 +80,7 @@
     réelles.'
   theme: R
   sous_theme: intemperies
-  source: securite-routiere.gouv.fr — Conduire en hiver ; Codes Rousseau — Neige et brouillard
+  source: "securite-routiere.gouv.fr, Conduire en hiver ; Codes Rousseau, Neige et brouillard"
 - id: r-verglas-descente
   question: 'Chaussée verglacée dans une descente : quel rapport et quel frein ?'
   reponse: Très lentement, rapport adapté et commandes progressives ; ni freinage brutal ni rétrogradage brusque ; si l’adhérence
@@ -89,7 +89,7 @@
     pente verglacée.
   theme: R
   sous_theme: intemperies
-  source: securite-routiere.gouv.fr — Conduire en hiver ; En Voiture Simone — Le verglas
+  source: "securite-routiere.gouv.fr, Conduire en hiver ; En Voiture Simone, Le verglas"
 - id: r-deneigement-depassement
   question: Un engin de service hivernal (saleuse, lame) travaille devant moi sur la chaussée enneigée. Puis-je le dépasser
     ?
@@ -107,7 +107,7 @@
   explication: Une rafale peut aussi surprendre à la sortie d’un tunnel ou à la fin d’une rangée d’arbres. Le triangle portant une manche à air annonce une zone exposée.
   theme: R
   sous_theme: intemperies
-  source: securite-routiere.gouv.fr — Le vent ; Ornikar — Conduire par grand vent
+  source: "securite-routiere.gouv.fr, Le vent ; Ornikar, Conduire par grand vent"
 - id: r-soleil-bas
   question: 'Soleil rasant de face au coucher : que fais-je ?'
   reponse: Je ralentis selon ma visibilité, j’augmente l’intervalle et j’utilise le pare-soleil avec un pare-brise propre.
@@ -115,7 +115,7 @@
     pas nécessairement de face lui aussi.
   theme: R
   sous_theme: intemperies
-  source: En Voiture Simone — Conduire face au soleil
+  source: "En Voiture Simone, Conduire face au soleil"
 - id: r-tunnel-feux-jour
   question: 'Tunnel éclairé, en plein jour : dois-je allumer mes feux ?'
   reponse: 'Oui : j’allume les feux de croisement avant d’entrer, même si le tunnel est éclairé.'
@@ -123,7 +123,7 @@
     les feux de croisement ; je vérifie leur allumage au lieu de me fier au mode AUTO.
   theme: R
   sous_theme: tunnels
-  source: CETU — https://www.cetu.developpement-durable.gouv.fr/conduire-en-tunnel-a1597.html
+  source: "CETU, https://www.cetu.developpement-durable.gouv.fr/conduire-en-tunnel-a1597.html"
 - id: r-tunnel-distance-arret
   question: Un tunnel affiche deux distances entre véhicules, l’une en circulation, l’autre à l’arrêt. La file
     s’immobilise devant moi. Quelle consigne appliquer ?
@@ -133,7 +133,7 @@
     remplace pas la consigne affichée.
   theme: R
   sous_theme: tunnels
-  source: CETU — https://www.cetu.developpement-durable.gouv.fr/IMG/pdf/CETU-Note_Info_22_2011.pdf
+  source: "CETU, https://www.cetu.developpement-durable.gouv.fr/IMG/pdf/CETU-Note_Info_22_2011.pdf"
 - id: r-tunnel-panne
   question: Mon véhicule tombe en panne dans un tunnel. Où me placer et que faire des clés ?
   reponse: Feux de détresse, garage (emplacement d’arrêt) le plus proche, moteur coupé, clés sur le contact et véhicule non
@@ -142,7 +142,7 @@
     localisé et l''exploitant voit le tunnel en vidéo.'
   theme: R
   sous_theme: tunnels
-  source: CETU — Conduire en tunnel ; securite-routiere.gouv.fr — Les tunnels
+  source: "CETU, Conduire en tunnel ; securite-routiere.gouv.fr, Les tunnels"
 - id: r-tunnel-incendie
   question: Un véhicule brûle devant moi dans le tunnel et la fumée se propage. Que fais-je ?
   reponse: Je m’arrête à distance sur le côté, moteur coupé et clés laissées ; je rejoins à pied l’issue de secours la plus
@@ -151,7 +151,7 @@
     en voiture. Les issues sont signalées en vert.'
   theme: R
   sous_theme: tunnels
-  source: CETU — Consignes en cas d'incendie ; securite-routiere.gouv.fr — Les tunnels
+  source: "CETU, Consignes en cas d'incendie ; securite-routiere.gouv.fr, Les tunnels"
 - id: r-pn-feu-rouge-clignotant
   question: À un passage à niveau, les feux rouges clignotent et la sonnerie retentit, mais la barrière n'est pas
     encore baissée. Que fais-je ?
@@ -170,7 +170,7 @@
     est en outre interdit aux passages à niveau sans barrière ni demi-barrière (R414-12).
   theme: R
   sous_theme: passages_a_niveau
-  source: Code de la route, art. R422-3 ; SNCF Réseau — Sécurité aux passages à niveau
+  source: "Code de la route, art. R422-3 ; SNCF Réseau, Sécurité aux passages à niveau"
 - id: r-pn-bloque
   question: Ma voiture reste immobilisée sur les rails et ne peut plus avancer. Que faire ?
   reponse: Faire sortir les occupants, s’éloigner des voies et alerter immédiatement (numéro affiché au passage à niveau,
@@ -179,7 +179,7 @@
     ce cas avec celui d’un véhicule incapable de bouger ; ne pas rester pour sauver la voiture.
   theme: R
   sous_theme: passages_a_niveau
-  source: SNCF Réseau — Que faire en cas d'immobilisation ; Code de la route, art. R422-3
+  source: "SNCF Réseau, Que faire en cas d'immobilisation ; Code de la route, art. R422-3"
 - id: r-pn-sans-barriere
   question: À un passage à niveau sans barrière ni feux (croix de Saint-André seule), comment procéder ?
   reponse: Ralentir fortement, regarder et écouter des deux côtés, et ne traverser que si aucun train n’approche ; dans le
@@ -216,7 +216,7 @@
     en outre surgir des piétons.
   theme: R
   sous_theme: tramways
-  source: Code de la route, art. R422-3 et R417-11 ; coursdecode.com — Les tramways
+  source: "Code de la route, art. R422-3 et R417-11 ; coursdecode.com, Les tramways"
 - id: r-chantier-approche
   question: Un triangle jaune « travaux », puis des cônes, annoncent un rétrécissement de ma voie sur une route limitée à 90 km/h. Comment j’adapte ma conduite ?
   reponse: Je ralentis dès le panneau d’approche, je coupe le régulateur et je suis le balisage sans le franchir, à la vitesse
@@ -225,7 +225,7 @@
     à s''arrêter. Signalisation d''approche puis de position.'
   theme: R
   sous_theme: chantiers
-  source: IISR, 8e partie ; securite-routiere.gouv.fr — Zones de chantier
+  source: "IISR, 8e partie ; securite-routiere.gouv.fr, Zones de chantier"
 - id: r-chantier-fleche-lumineuse
   question: 'Une flèche lumineuse de rabattement (FLR, KR42) ou un panneau de rabattement précède un chantier sur voie rapide
     : que faire ?'
@@ -235,7 +235,7 @@
     et le chantier.'
   theme: R
   sous_theme: chantiers
-  source: IISR, 8e partie ; Ornikar — Flèches de rabattement
+  source: "IISR, 8e partie ; Ornikar, Flèches de rabattement"
 - id: r-autoroute-insertion-fin-voie
   question: La voie d’accélération se termine et aucun espace sûr ne permet l’insertion. Que faire ?
   reponse: Je cède le passage, en ralentissant et au besoin en m’arrêtant avant la fin de la voie ; je ne force pas et n’utilise
@@ -253,7 +253,7 @@
     et anticiper évitent un freinage tardif. Une sortie manquée se rattrape à l’échangeur suivant.
   theme: R
   sous_theme: autoroute
-  source: Code de la route, R413-17 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/ ; R421-4
+  source: "Code de la route, R413-17, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/ ; R421-4"
 - id: r-autoroute-bau
   question: À quoi sert la bande d'arrêt d'urgence et qui peut l'emprunter ?
   reponse: Aux arrêts d’urgence (panne, malaise) et aux véhicules de secours ou d’exploitation ; y rouler, ou s’y arrêter
@@ -280,7 +280,7 @@
     agréé peut y intervenir.
   theme: R
   sous_theme: autoroute
-  source: securite-routiere.gouv.fr — Panne sur autoroute ; Code de la route, art. R421-7
+  source: "securite-routiere.gouv.fr, Panne sur autoroute ; Code de la route, art. R421-7"
 - id: r-autoroute-usagers-interdits
   question: Quels usagers n'ont pas le droit de circuler sur autoroute ?
   reponse: Piétons et animaux, véhicules sans moteur (vélos), cyclomoteurs et voiturettes, tracteurs et engins de travaux
@@ -297,7 +297,7 @@
     le péage, chacun se réinsère en fermeture éclair ; attention aux agents à pied dans la zone.'
   theme: R
   sous_theme: autoroute
-  source: ASFA — Le péage ; IISR
+  source: "ASFA, Le péage ; IISR"
 - id: r-autoroute-fatigue-aires
   question: Sur autoroute, où puis-je m'arrêter pour faire une pause ?
   reponse: 'Sur une aire seulement : aire de repos (stationnement, détente) ou aire de service (carburant, restauration) ;
@@ -306,7 +306,7 @@
     sans attendre dès les premiers signes de somnolence (sieste de 15 à 20 minutes).
   theme: R
   sous_theme: autoroute
-  source: ASFA — Les aires d'autoroute ; securite-routiere.gouv.fr — La fatigue
+  source: "ASFA, Les aires d'autoroute ; securite-routiere.gouv.fr, La fatigue"
 - id: r-montagne-croisement-difficile
   question: 'Route de montagne étroite : un véhicule monte pendant que je descends et le croisement s''annonce difficile.
     Qui s''arrête ?'
@@ -335,14 +335,14 @@
     sur sol glissant.
   theme: R
   sous_theme: montagne
-  source: Sécurité routière — Exemples de nouvelles questions (Q18)
+  source: "Sécurité routière, Exemples de nouvelles questions (Q18)"
 - id: r-b26-pneus-equivalence
   question: Ma voiture possède quatre pneus hiver marqués 3PMSF et M+S. Ce panneau, sans panonceau, annonce une section enneigée. Dois-je monter des chaînes pour le respecter ?
   reponse: 'Non : les pneus hiver conformes sont admis en équivalence pour une voiture.'
   explication: 'Ce panneau concerne l’équipement en service, pas seulement des chaînes dans le coffre. J’adapte aussi mon allure : l’équipement ne garantit pas l’adhérence.'
   theme: R
   sous_theme: montagne
-  source: IISR, art. 67-1, modifié par arrêté du 23 juin 2021 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12
+  source: "IISR, art. 67-1, modifié par arrêté du 23 juin 2021, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12"
   image_ref: b26
 - id: r-b26-chaines-complement
   question: Ce panneau est complété par « Chaînes à neige obligatoires ». Ma voiture a quatre pneus 3PMSF. Puis-je continuer sans chaînes montées ?
@@ -351,5 +351,5 @@
     d’emprunter la section.
   theme: R
   sous_theme: montagne
-  source: IISR, art. 67-1, modifié par arrêté du 23 juin 2021 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12
+  source: "IISR, art. 67-1, modifié par arrêté du 23 juin 2021, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12"
   image_ref: b26

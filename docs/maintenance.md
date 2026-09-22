@@ -60,7 +60,7 @@ taire un avertissement). Les valeurs contenant « : » se mettent entre guilleme
   source: Code de la route, art. R415-5
   debut: true
 
-# faits/ — un trou par phrase ; plusieurs cibles → rappels (un ordinal distinct par phrase, c1..c4)
+# faits/ : un trou par phrase ; plusieurs cibles → rappels (un ordinal distinct par phrase, c1..c4)
 - id: l-vitesse-agglo
   texte: En agglomération, la vitesse maximale par défaut est de {{c1::50 km/h}}.
   explication: Zone 30 : 30 ; zone de rencontre : 20 ; aire piétonne : allure du pas.
@@ -78,7 +78,7 @@ taire un avertissement). Les valeurs contenant « : » se mettent entre guilleme
   sous_theme: priorites
   source: Code de la route, art. R415-6
 
-# confusions/ — a et b sont des ids de reconnaissance
+# confusions/ : a et b sont des ids de reconnaissance
 - id: conf-b6a1-b6d
   a: b6a1
   b: b6d
@@ -87,7 +87,7 @@ taire un avertissement). Les valeurs contenant « : » se mettent entre guilleme
   sous_theme: panneaux
   source: IISR 4e partie
 
-# scenarios/ — intersection : approaches N E S W (vehicle {colour, me, kind car|truck|bus|tram|moto|bike|pompiers,
+# scenarios/ : intersection : approaches N E S W (vehicle {colour, me, kind car|truck|bus|tram|moto|bike|pompiers,
 # siren}, goes straight|left|right, sign stop|cedez|prioritaire|fin_prioritaire|priorite_droite|feu_vert|feu_rouge|
 # feu_orange_clignotant…, private), branches [E, W, S] pour un T, agent bras_leve|bras_tendus_NS|bras_tendus_EW ;
 # check {pair: [a, b, avant|apres|independant]} ou {order: [...]} est recalculé par build/priority.py.
@@ -107,7 +107,7 @@ taire un avertissement). Les valeurs contenant « : » se mettent entre guilleme
   sous_theme: priorites
   source: "Code de la route, art. R415-5 et R415-4"
 
-# reconnaissance/voyants.yaml (les autres fichiers sont générés) — type panneau|panonceau|balise|marquage|feu|geste|
+# reconnaissance/voyants.yaml (les autres fichiers sont générés) : type panneau|panonceau|balise|marquage|feu|geste|
 # voyant|pictogramme|equipement ; champs nom, signification, conduite, complement, piege, code, question (facultatif)
 - id: voyant-huile
   type: voyant

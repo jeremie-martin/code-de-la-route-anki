@@ -1,4 +1,4 @@
-# L — Circulation : cartes de décision (situation → décision + raison). Voir docs/research/brief-v2-redaction.md.
+# L : Circulation : cartes de décision (situation → décision + raison). Voir docs/research/brief-v2-redaction.md.
 # Les listes de la v1 ont été découpées en décisions et en affirmations (data/affirmations/02_circulation.yaml).
 - id: l-priorite-droite-defaut
   question: Intersection sans panneau ni feu ; deux véhicules arrivent en même temps par des routes ordinaires. À
@@ -19,7 +19,7 @@
     ouvert au public : cela ne donne aucune priorité à sa sortie.'
   theme: L
   sous_theme: priorites
-  source: Code de la route, R415-9 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968 ; R415-11
+  source: "Code de la route, R415-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968 ; R415-11"
 - id: l-stop-arret
   question: Au STOP, où exactement dois-je immobiliser mon véhicule ?
   reponse: À la ligne d’arrêt continue (sinon à la limite de la chaussée abordée), roues immobiles, avant de céder le passage.
@@ -56,7 +56,7 @@
     la manœuvre, il ne donne pas priorité. Tout changement de voie dans l’anneau doit aussi être signalé.
   theme: L
   sous_theme: priorites
-  source: Code de la route, R412-9 et R412-10 ; Association Prévention Routière — https://www.preventionroutiere.asso.fr/le-carrefour-giratoire-commen-bien-lemprunter/
+  source: "Code de la route, R412-9 et R412-10 ; Association Prévention Routière, https://www.preventionroutiere.asso.fr/le-carrefour-giratoire-commen-bien-lemprunter/"
 - id: l-giratoire-placement
   question: Giratoire à deux voies, sans flèches imposant une voie ; ma sortie est à gauche de mon axe d’entrée.
     Sur quelle voie entrer, et comment en sortir ?
@@ -67,10 +67,10 @@
     sans danger, je refais un tour.
   theme: L
   sous_theme: priorites
-  source: Code de la route, R412-9 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688
+  source: "Code de la route, R412-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688"
 - id: l-bus-quitte-arret
   question: En agglomération, un bus met son clignotant pour quitter son arrêt. Que dois-je faire ?
-  reponse: Ralentir et, au besoin, m'arrêter pour le laisser reprendre sa place — sans freiner brusquement ni forcer le passage.
+  reponse: "Ralentir et, au besoin, m'arrêter pour le laisser reprendre sa place, sans freiner brusquement ni forcer le passage."
   explication: 'R412-11 : en agglomération seulement, « ralentir si nécessaire et au besoin s''arrêter » pour laisser un véhicule
     de transport en commun quitter un arrêt signalé. Hors agglomération, le car attend une interruption du trafic.'
   theme: L
@@ -96,7 +96,7 @@
     ralentis et, au besoin, m’arrête avant la fin de ma voie ; je ne force pas l’insertion.'
   theme: L
   sous_theme: priorites
-  source: Code de la route, R421-3 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842314 ; R412-10
+  source: "Code de la route, R421-3, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842314 ; R412-10"
 - id: l-intersection-encombree
   question: Le feu est vert mais l'intersection est bouchée derrière. Que fais-je ?
   reponse: 'J''attends avant l''intersection : je ne m''engage que si je suis sûr de la dégager sans bloquer les voies
@@ -141,7 +141,7 @@
     générale de tout dépassement sur une chaussée à plusieurs voies.
   theme: L
   sous_theme: depassement
-  source: Code de la route, R414-4 et R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
+  source: "Code de la route, R414-4 et R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/"
 - id: l-depassement-interdit-lieux-2
   question: J’aborde une intersection sans signalisation, où s’applique la priorité à droite. La visibilité est
     bonne et personne n’arrive à droite. Puis-je y dépasser la voiture devant moi ?
@@ -152,7 +152,7 @@
     ne dispensent jamais des autres conditions de sécurité.
   theme: L
   sous_theme: depassement
-  source: Code de la route, R414-11 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
+  source: "Code de la route, R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/"
 - id: l-depassement-droite
   question: Dans quels cas dépasse-t-on par la droite ?
   reponse: Un véhicule dont le conducteur a signalé qu’il tourne à gauche, et un tramway en marche si la place à droite suffit.
@@ -281,7 +281,7 @@
     en double file. Un arrêt ne doit pas gêner ni mettre en danger.'
   theme: L
   sous_theme: stationnement
-  source: Code de la route, R110-2 et R417-10 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551
+  source: "Code de la route, R110-2 et R417-10, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551"
 - id: l-entree-carrossable
   question: Puis-je stationner devant mon propre garage, sur la voie publique ?
   reponse: 'Non : le stationnement devant une entrée carrossable sur la voie publique est gênant, même devant
@@ -291,8 +291,7 @@
     danger.
   theme: L
   sous_theme: stationnement
-  source: Code de la route, R417-10 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551 ;
-    R110-2 ; Cass. crim., 20 juin 2017, n° 16-86.838
+  source: "Code de la route, R417-10, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045025551 ; R110-2 ; Cass. crim., 20 juin 2017, n° 16-86.838"
 - id: l-stationnement-dangereux
   question: Sur une route de campagne, je laisse ma voiture sur la chaussée juste avant un sommet de côte. Comment est-ce
     qualifié ?
@@ -330,7 +329,7 @@
       pose: ralentir
   theme: L
   sous_theme: agents
-  source: Code de la route, art. R411-28 ; Codes Rousseau — Les agents
+  source: "Code de la route, art. R411-28 ; Codes Rousseau, Les agents"
 - id: l-formes-couleurs-panneaux
   question: Que signifient les formes et couleurs des panneaux de danger, d'interdiction, d'obligation et d'indication ?
   reponse: 'Triangle bordé de rouge : danger. Rond bordé de rouge : interdiction. Rond bleu : obligation. Carré bleu : indication.
@@ -410,7 +409,7 @@
     ?'
   reponse: 100 km/h.
   explication: La limite probatoire de 110 ne concerne que les sections normalement à 130.
-  source: Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+  source: "Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/"
 - id: l-pluie-autoroute-110
   theme: L
   sous_theme: vitesse
@@ -418,28 +417,28 @@
     ?'
   reponse: 100 km/h sous la pluie.
   explication: Si un panneau impose moins, c’est ce plafond inférieur qui s’applique.
-  source: Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+  source: "Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/"
 - id: l-brouillard-zone30
   theme: L
   sous_theme: vitesse
   question: Zone 30, visibilité réduite à 40 m. La règle du brouillard me permet-elle de rouler à 50 ?
   reponse: 'Non : 30 km/h reste le maximum, et je ralentis davantage si nécessaire.'
   explication: Le plafond de 50 ne relève jamais une limitation locale plus basse.
-  source: Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+  source: "Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/"
 - id: l-pluie-route80
   theme: L
   sous_theme: vitesse
   question: Route hors agglomération limitée à 80 km/h, il pleut. La limite devient-elle automatiquement 70 ?
   reponse: 'Non : le plafond reste 80 km/h ; mon allure réelle peut devoir être bien plus basse.'
   explication: 'Ne pas soustraire systématiquement 10 ou 20 : identifier le type de route et les plafonds applicables.'
-  source: Code de la route, R413-1 à R413-5 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/
+  source: "Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/"
 - id: l-feu-vert-interdiction-tourner
   theme: L
   sous_theme: signalisation
   question: Le feu est vert mais un panneau interdit de tourner à gauche. Puis-je tourner à gauche ?
   reponse: 'Non : le vert ne supprime pas cette interdiction.'
   explication: Les feux prévalent sur les panneaux qui règlent la priorité, pas sur toutes les prescriptions.
-  source: Code de la route, R411-25 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087
+  source: "Code de la route, R411-25, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087"
 - id: l-giratoire-sortie-impossible
   theme: L
   sous_theme: priorites
@@ -463,7 +462,7 @@
   explication: Distinguer le feu de renforcement d’un panneau du fonctionnement d’un carrefour au jaune clignotant.
   theme: L
   sous_theme: signalisation
-  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: l-feu-modal-anticipation
   question: Mon feu automobile est rouge. À côté, un petit feu jaune clignotant porte le mot BUS. Puis-je le suivre
     en voiture particulière ?
@@ -471,7 +470,7 @@
   explication: Lire le destinataire du feu avant sa couleur ; les véhicules autorisés doivent encore céder le passage.
   theme: L
   sous_theme: signalisation
-  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: l-feu-cycliste-r19
   question: À vélo, un feu jaune clignotant porte un vélo et une flèche à droite à côté du rouge. Puis-je tourner
     à droite ?
@@ -479,7 +478,7 @@
   explication: La direction représentée et le symbole vélo limitent l’autorisation. Ce signal ne donne pas de priorité.
   theme: L
   sous_theme: signalisation
-  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: l-feu-acces-regule
   question: Un feu tricolore sur ma bretelle d’accès à l’autoroute est rouge alors qu’un créneau semble libre. Puis-je
     m’insérer ?
@@ -487,7 +486,7 @@
   explication: Le feu régule le débit d’entrée ; il ne transforme pas la bretelle en voie prioritaire.
   theme: L
   sous_theme: signalisation
-  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: l-feu-pieton-tram
   question: À pied, devant une traversée de tramway, le signal piéton affiche STOP en rouge clignotant. Aucun tram
     n’est encore visible. Puis-je traverser ?
@@ -496,14 +495,14 @@
     rapidement.
   theme: L
   sous_theme: signalisation
-  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: l-decompte-pieton
   question: Le décompteur piéton indique quelques secondes avant la fin du rouge. Quand puis-je traverser ?
   reponse: 'Au signal vert seulement : le décompte informe, il n''autorise rien.'
   explication: Ne pas anticiper une autorisation qui n’est pas encore donnée.
   theme: L
   sous_theme: signalisation
-  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: l-pmv-limitation
   question: Sur autoroute normalement limitée à 130, un panneau lumineux affiche un disque rouge « 90 ». Est-ce
     un simple conseil ?
@@ -512,7 +511,7 @@
     pas la même interprétation.'
   theme: L
   sous_theme: signalisation
-  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: l-quadrillage-carrefour
   question: Mon feu est vert mais la sortie du carrefour est bloquée ; un quadrillage au sol matérialise la zone centrale.
     Que fais-je ?
@@ -528,7 +527,7 @@
   explication: Un dispositif d’alerte n’est ni un STOP ni une règle de priorité.
   theme: L
   sous_theme: signalisation
-  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: l-voie-lents
   question: Une voie à droite est signalée pour les véhicules lents. Ma voiture tractant une remorque n’arrive pas
     à dépasser 60 km/h dans la montée. Dois-je l’utiliser ?
@@ -544,14 +543,14 @@
   explication: 'Même principe pour le jalonnement piéton : le destinataire compte autant que le nom de la destination.'
   theme: L
   sous_theme: signalisation
-  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: l-itineraire-bis
   question: Quelle différence entre un itinéraire « Bis » et une déviation de chantier ?
   reponse: 'Le Bis est une alternative conseillée ; la déviation s''impose : la route habituelle est fermée.'
   explication: Un itinéraire conseillé ne m’autorise jamais à ignorer un sens interdit ou une route barrée.
   theme: L
   sous_theme: signalisation
-  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: l-cartouche-vitesse
   question: Le cartouche de la route passe de D à M, sans changement de chaussée ni de panneau. Quelle vitesse maximale
     s'applique ?
@@ -568,7 +567,7 @@
   explication: Distinguer guidage visuel, affectation de voie et autorisation de changer de voie.
   theme: L
   sous_theme: signalisation
-  source: Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
 - id: l-fleche-jaune-droite-rouge
   question: Mon feu est rouge ; à côté, une flèche jaune clignotante pointe vers la droite. Puis-je tourner à droite
     ?
@@ -584,7 +583,7 @@
   question: Sous un panneau de chaussée rétrécie, je lis ce panonceau. Où le danger annoncé commence-t-il ?
   reponse: À 50 m du panneau ; je me prépare avant d’y arriver.
   explication: L’absence de flèches verticales indique une distance jusqu’au danger, pas sa longueur.
-  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: m1
 - id: l-visuel-etendue
   theme: L
@@ -594,7 +593,7 @@
   reponse: Sur 50 m à partir du début du danger.
   explication: Les flèches verticales indiquent l’étendue. Ce n’est pas une invitation à attendre 50 m pour
     ralentir.
-  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: m2
 - id: l-visuel-arret-b6a1
   theme: L
@@ -604,7 +603,7 @@
   reponse: 'Oui : ce panneau interdit le stationnement, pas cet arrêt pour descente immédiate.'
   explication: Un arrêt reste interdit s’il est gênant, dangereux ou interdit par une autre règle, même sous
     ce panneau.
-  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: b6a1
 - id: l-visuel-arret-b6d
   theme: L
@@ -613,7 +612,7 @@
     immédiatement mon passager en restant aux commandes ?
   reponse: 'Non : ce panneau interdit aussi l’arrêt volontaire.'
   explication: La brièveté, la présence du conducteur et les warnings ne lèvent pas l’interdiction.
-  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: b6d
 - id: l-visuel-attendre-b6a1
   theme: L
@@ -623,7 +622,7 @@
   reponse: 'Non : cette attente est un stationnement, interdit ici.'
   explication: L’arrêt réglementaire correspond à une montée, descente, opération de chargement ou déchargement,
     pas à toute immobilisation courte.
-  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R110-2
+  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R110-2"
   image_ref: b6a1
 - id: l-visuel-jaune-continu
   theme: L
@@ -632,7 +631,7 @@
     disponible, sans autre danger ?
   reponse: 'Non : la ligne jaune continue interdit l’arrêt et le stationnement.'
   explication: 'La couleur seule ne tranche pas : lire aussi la continuité de la ligne.'
-  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: marq-ligne-jaune-continue
 - id: l-visuel-jaune-discontinu
   theme: L
@@ -642,7 +641,7 @@
   reponse: 'Oui : ce marquage interdit le stationnement, mais permet cet arrêt de chargement.'
   explication: Si j’attends sans charger, il s’agit d’un stationnement. Les autres interdictions continuent
     de s’appliquer.
-  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: marq-ligne-jaune-discontinue
 - id: l-visuel-b14-position
   theme: L
@@ -651,7 +650,7 @@
     déjà atteint le plafond à son niveau ?
   reponse: Avoir déjà atteint au plus 50 km/h à son niveau.
   explication: Préparer le ralentissement en amont, selon le trafic et sans freinage brutal.
-  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: b14
 - id: l-visuel-b14-adaptation
   theme: L
@@ -660,7 +659,7 @@
     à conserver cette vitesse ?
   reponse: 'Non : c’est un plafond ; je ralentis davantage pour pouvoir réagir aux enfants.'
   explication: Le maximum autorisé et l’allure adaptée sont deux décisions différentes.
-  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-17
+  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-17"
   image_ref: b14
 - id: l-visuel-fin-interdictions
   theme: L
@@ -669,7 +668,7 @@
     ce panneau et rien ne suit. Voiture, temps sec, permis définitif : à combien puis-je rouler ?'
   reponse: '80 km/h : la limitation ponctuelle cesse, mais la règle générale de cette route demeure.'
   explication: Une fin d’interdiction ne signifie pas vitesse libre. Vérifier le type de route et les conditions.
-  source: Arrêté du 24 novembre 1967 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-2
+  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-2"
   image_ref: b31
 - id: l-cavalier-ligne-continue
   theme: L
@@ -679,7 +678,7 @@
   reponse: 'Non : cette exception ne concerne pas le cavalier ; j’attends une possibilité légale et sûre.'
   explication: L’obligation d’écart latéral couvre plusieurs usagers, mais l’exception de chevauchement ne
     couvre que cycles, EDPM et cyclomobiles légers.
-  source: Code de la route, R412-19 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/
+  source: "Code de la route, R412-19, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/"
 - id: l-visuel-m12-edpm
   theme: L
   sous_theme: applications
@@ -687,7 +686,7 @@
     la ligne d’effet du feu dans la direction fléchée ?
   reponse: Oui, dans la direction fléchée, en cédant aux piétons et aux véhicules bénéficiant du vert.
   explication: Ce panonceau concerne les vélos, trottinettes électriques et cyclomobiles légers. Il autorise seulement les directions fléchées, en cédant le passage ; il ne donne aucune priorité.
-  source: Arrêté du 24 novembre 1967, article 2-1 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  source: "Arrêté du 24 novembre 1967, article 2-1, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: m12
 - id: l-visuel-m12-voiture
   theme: L
@@ -696,7 +695,7 @@
     du feu dans la direction fléchée ?
   reponse: Non. Le panonceau ne m’autorise pas à franchir le rouge ; j’attends le vert.
   explication: Ce panonceau concerne les vélos, trottinettes électriques et cyclomobiles légers, pas les voitures. Même pour les usagers autorisés, il faut suivre les flèches et céder le passage.
-  source: Arrêté du 24 novembre 1967, article 2-1 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  source: "Arrêté du 24 novembre 1967, article 2-1, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: m12
 - id: l-c107-route-simple
   theme: L

@@ -6,7 +6,7 @@
     côtés) et contrôler le rétroviseur intérieur toutes les 5 à 10 secondes environ.'
   theme: C
   sous_theme: perception
-  source: REMC ; Codes Rousseau — L'exploration visuelle
+  source: "REMC ; Codes Rousseau, L'exploration visuelle"
 - id: c-croisement-nuit-regard
   question: De nuit, un véhicule arrive en face avec ses phares. Où porter le regard pour le croiser en sécurité
     ?
@@ -16,7 +16,7 @@
     conducteur.
   theme: C
   sous_theme: perception
-  source: Sécurité routière — Exemples de nouvelles questions (Q20)
+  source: "Sécurité routière, Exemples de nouvelles questions (Q20)"
 - id: c-angle-mort-definition
   question: Qu'est-ce que l'angle mort et comment le contrôle-t-on ?
   reponse: La zone latérale arrière invisible dans les rétroviseurs ; on la contrôle d’un regard direct par-dessus l’épaule,
@@ -25,7 +25,7 @@
     la route de vue ; si un usager s'y trouve, on ne commence pas la manœuvre.
   theme: C
   sous_theme: perception
-  source: REMC ; securite-routiere.gouv.fr — Les angles morts
+  source: "REMC ; securite-routiere.gouv.fr, Les angles morts"
 - id: c-ordre-controles-changement-file
   question: Sur une route à deux voies dans mon sens, je veux passer sur la voie de gauche. Dans quel ordre est-ce
     que je procède ?
@@ -34,7 +34,7 @@
   explication: Les contrôles vérifient que la voie est libre ; le clignotant avertit sans donner la priorité. Recontrôler juste avant le déport, et renoncer si un usager arrive. La sécurité de la manœuvre compte davantage qu’une séquence récitée.
   theme: C
   sous_theme: vigilance
-  source: Codeclic — L'angle mort ; Stych — Les contrôles ; Code de la route, art. R412-10
+  source: "Codeclic, L'angle mort ; Stych, Les contrôles ; Code de la route, art. R412-10"
 - id: c-clignotant-avant-ralentir
   question: Je vais tourner à droite à la prochaine intersection. Je mets mon clignotant avant ou après avoir ralenti ?
   reponse: 'Avant de ralentir, juste après le contrôle des rétroviseurs : ceux qui me suivent sont prévenus avant mon freinage.'
@@ -42,7 +42,7 @@
     une autre rue ou une sortie intermédiaire) est ambigu : assez tôt, mais après la dernière intersection.'
   theme: C
   sous_theme: vigilance
-  source: Code de la route, art. R412-10 ; En Voiture Simone — Angle mort et contrôles
+  source: "Code de la route, art. R412-10 ; En Voiture Simone, Angle mort et contrôles"
 - id: c-zone-attention-pluie
   question: Sous la pluie, un piéton à droite avance vers la chaussée ; la voiture loin devant garde son allure. Quel indice
     exige mon attention immédiate ?
@@ -52,7 +52,7 @@
     ce danger prioritaire.'
   theme: C
   sous_theme: vigilance
-  source: Sécurité routière — Exemples de nouvelles questions (Q9)
+  source: "Sécurité routière, Exemples de nouvelles questions (Q9)"
 - id: c-enfant-masque
   question: Devant une école ou une rangée de voitures stationnées, quel risque spécifique lié aux enfants faut-il anticiper
     ?
@@ -62,7 +62,7 @@
     public de question (2023) valide « un enfant peut être masqué par des véhicules en stationnement ».'
   theme: C
   sous_theme: vigilance
-  source: Sécurité routière — Exemples de nouvelles questions (Q3)
+  source: "Sécurité routière, Exemples de nouvelles questions (Q3)"
 - id: c-trottinette-vulnerable
   question: Pourquoi un usager de trottinette électrique est-il particulièrement vulnérable ?
   reponse: Équilibre précaire (petites roues, freinage inégal) et faible gabarit peu détectable, surtout dans les
@@ -71,7 +71,7 @@
     l’écart latéral minimal est de 1 m en agglomération et 1,50 m hors agglomération (R414-4).
   theme: C
   sous_theme: vigilance
-  source: Sécurité routière — Exemples de nouvelles questions (Q4)
+  source: "Sécurité routière, Exemples de nouvelles questions (Q4)"
 - id: c-cycliste-devant-depassement
   question: Je suis en train de dépasser un cycliste ; un véhicule arrive en face et je ne pourrai pas terminer en sécurité.
     Que fais-je ?
@@ -88,7 +88,7 @@
     pour consulter le rétroviseur.
   theme: C
   sous_theme: vigilance
-  source: Ornikar — Pièges à éviter ; REMC
+  source: "Ornikar, Pièges à éviter ; REMC"
 - id: c-indice-feux-recul
   question: Une voiture stationnée devant moi a ses feux de recul (blancs) allumés. Qu'est-ce que j'anticipe ?
   reponse: 'Qu’elle va reculer ou quitter sa place : je ralentis, prêt à m’arrêter, et je garde mes distances plutôt que de
@@ -98,7 +98,7 @@
     stationnement doit avertir de son intention (R412-10) et céder le passage, mais l''ETG attend que j''anticipe.'
   theme: C
   sous_theme: vigilance
-  source: Code de la route, art. R416-20 et R412-10 ; REMC — Anticiper
+  source: "Code de la route, art. R416-20 et R412-10 ; REMC, Anticiper"
 - id: c-indice-bus-arrete
   question: Un bus est arrêté à son arrêt, à droite, en ville. Quels dangers j'anticipe ?
   reponse: 'Des piétons masqués qui traversent devant ou derrière le bus, et son redémarrage : je ralentis, je m’écarte et
@@ -115,7 +115,7 @@
     mon freinage au risque et au trafic arrière.
   theme: C
   sous_theme: vigilance
-  source: REMC — Anticiper ; securite-routiere.gouv.fr — Enfants
+  source: "REMC, Anticiper ; securite-routiere.gouv.fr, Enfants"
 - id: c-indice-cycliste-regard
   question: Devant moi, un cycliste regarde par-dessus son épaule gauche. Qu'est-ce que cela annonce ?
   reponse: 'Un déport ou un virage à gauche : je ralentis, je garde de la place et je diffère le dépassement tant que sa manœuvre
@@ -124,7 +124,7 @@
     pour éviter une plaque d'égout, des gravillons ou une portière.
   theme: C
   sous_theme: vigilance
-  source: En Voiture Simone — Les vélos ; REMC
+  source: "En Voiture Simone, Les vélos ; REMC"
 - id: c-indice-vehicule-stationne-portiere
   question: Je longe une file de voitures stationnées en ville. Où je me place et à quelle allure ?
   reponse: 'À au moins une largeur de portière (≈ 1 m) des véhicules et à vitesse réduite : portière qui s’ouvre, piéton entre
@@ -133,7 +133,7 @@
     fréquent pour les cyclistes ; à 30 km/h, la distance d'arrêt est bien plus courte qu'à 50.
   theme: C
   sous_theme: vigilance
-  source: securite-routiere.gouv.fr — Emportiérage ; REMC
+  source: "securite-routiere.gouv.fr, Emportiérage ; REMC"
 - id: c-routine-monotonie
   question: Pourquoi les trajets quotidiens et les longues lignes droites sont-ils dangereux pour la vigilance ?
   reponse: 'La familiarité fait baisser l’attention : on manque un changement de signalisation, un piéton ou un obstacle inhabituel.'
@@ -141,7 +141,7 @@
     ne permet pas d’évaluer le risque de la scène.
   theme: C
   sous_theme: vigilance
-  source: securite-routiere.gouv.fr — Port de la ceinture (trajets courts) ; Ornikar — Vigilance
+  source: "securite-routiere.gouv.fr, Port de la ceinture (trajets courts) ; Ornikar, Vigilance"
 - id: c-somnolence-que-faire
   question: Sur autoroute, je bâille, mes paupières sont lourdes et ma trajectoire flotte. Que fais-je ?
   reponse: Je gagne dès que possible un lieu d’arrêt sûr pour dormir ; je ne poursuis pas en luttant contre le sommeil.
@@ -149,7 +149,7 @@
     automatique de repartir. Si la vigilance reste insuffisante, différer le trajet ou passer le volant à un conducteur apte.
   theme: C
   sous_theme: deficiences
-  source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf
+  source: "Sécurité routière, https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf"
 - id: c-fatigue-remedes-faux
   question: 'Je suis somnolent au volant. Café, fenêtre ouverte, musique forte : que vaut chacun de ces remèdes ?'
   reponse: 'Rien de durable : la seule solution est de m''arrêter en sécurité pour dormir, et de ne repartir qu''une
@@ -158,7 +158,7 @@
     pas le sommeil. Le café ne justifie pas de continuer à lutter contre l’endormissement.
   theme: C
   sous_theme: deficiences
-  source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf
+  source: "Sécurité routière, https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf"
 - id: c-vitesse-fatigue
   question: Rouler vite fatigue-t-il plus que rouler lentement ?
   reponse: 'Oui : à vitesse élevée, le cerveau traite plus d’informations en moins de temps ; stress, fatigue et perte de
@@ -167,7 +167,7 @@
     est élevée, plus le champ visuel se rétrécit et plus la fatigue arrive vite.'
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — La fatigue et la conduite ; La vitesse
+  source: "securite-routiere.gouv.fr, La fatigue et la conduite ; La vitesse"
 - id: c-telephone-arret
   question: Puis-je utiliser mon téléphone en main, arrêté au feu rouge ou dans un bouchon ?
   reponse: 'Non : l’interdiction vaut dès que le véhicule est en circulation, même arrêté au feu ou dans un bouchon ; il faut
@@ -185,7 +185,7 @@
     ne mesurent pas une aptitude à conduire. Les effets peuvent se cumuler avec ceux de l’alcool ou de médicaments.
   theme: C
   sous_theme: deficiences
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886"
 - id: c-emotions
   question: Peut-on prendre le volant après une forte émotion (dispute, colère, mauvaise nouvelle) ?
   reponse: 'Mieux vaut attendre : sous le coup de l’émotion, on perçoit moins, on prend plus de risques et le temps
@@ -194,7 +194,7 @@
     disponible pour observer et décider calmement, je diffère le départ.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — Les facteurs de risque ; Codes Rousseau
+  source: "securite-routiere.gouv.fr, Les facteurs de risque ; Codes Rousseau"
 - id: c-passagers-pression
   question: Mes passagers m'incitent à rouler plus vite ou à « passer à l'orange ». Que faire ?
   reponse: 'Refuser et garder mon allure : le conducteur est seul responsable ; la pression des passagers est un facteur reconnu
@@ -203,7 +203,7 @@
     monter avec un conducteur qui a bu : désigner un « Sam ».'
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — Conseils aux conducteurs novices
+  source: "securite-routiere.gouv.fr, Conseils aux conducteurs novices"
 - id: c-suiveur-trop-pres
   question: Sur une route à double sens, le véhicule qui me suit roule à quelques mètres de mon pare-chocs. Que fais-je ?
   reponse: J’allonge mon intervalle avec le véhicule qui me précède et je laisse le suiveur me dépasser dès qu’il le peut
@@ -212,14 +212,14 @@
     la marge que lui n'a plus. Les 2 s de l'art. R412-12 se comptent devant moi, pas derrière.
   theme: C
   sous_theme: distances
-  source: Code de la route, art. R412-12 ; securite-routiere.gouv.fr — Les distances de sécurité
+  source: "Code de la route, art. R412-12 ; securite-routiere.gouv.fr, Les distances de sécurité"
 - id: c-distance-arret-carre
   question: Quel raccourci de calcul utilise-t-on dans les supports de préparation pour estimer la distance d’arrêt sur sol sec, sans autre donnée ?
   reponse: 'Le carré du chiffre des dizaines : 50 km/h → 25 m, 90 → 81 m, 130 → 169 m.'
   explication: C’est un repère pédagogique, pas une distance garantie. Le temps de réaction, les pneus et l’adhérence changent le résultat. Si l’exercice donne des distances de réaction et de freinage, les additionner ; le doublement du freinage sur sol mouillé est aussi un ordre de grandeur.
   theme: C
   sous_theme: distances
-  source: Supports de préparation (Codes Rousseau, ENPC), raccourci pédagogique ; Sécurité routière — exemples 2023, Q13 (freinage sous la pluie uniquement)
+  source: "Supports de préparation (Codes Rousseau, ENPC), raccourci pédagogique ; Sécurité routière, exemples 2023, Q13 (freinage sous la pluie uniquement)"
 - id: c-double-vitesse-arret
   theme: C
   sous_theme: distances
@@ -227,7 +227,7 @@
     réaction et la même adhérence. Distance d’arrêt théorique ?'
   reponse: '60 m : 20 m de réaction + 40 m de freinage.'
   explication: La réaction double, le freinage quadruple ; la distance d’arrêt totale ne quadruple donc pas automatiquement.
-  source: Modèle physique à décélération constante ; Sécurité routière — vitesse
+  source: "Modèle physique à décélération constante ; Sécurité routière, vitesse"
 - id: c-intervalle-repere
   theme: C
   sous_theme: distances
@@ -253,7 +253,7 @@
     le passage ; « je ne vois personne » ne signifie pas « personne ne traverse ».'
   explication: La camionnette peut cacher un piéton. R414-5 impose cette vérification avant de dépasser à l’approche
     du passage ; je cède aussi à celui qui manifeste clairement l’intention de traverser (R415-11).
-  source: Code de la route, R414-5 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842217 ; R415-11
+  source: "Code de la route, R414-5, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842217 ; R415-11"
 - id: c-distance-obstacle-exercice
   theme: C
   sous_theme: applications
@@ -272,4 +272,4 @@
     arriver en face, masqué par le virage.
   theme: C
   sous_theme: vigilance
-  source: REMC (compétence 2) ; securite-routiere.gouv.fr — La vitesse et la conduite
+  source: "REMC (compétence 2) ; securite-routiere.gouv.fr, La vitesse et la conduite"

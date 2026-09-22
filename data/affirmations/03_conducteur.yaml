@@ -8,14 +8,14 @@
     vitesse.
   theme: C
   sous_theme: perception
-  source: securite-routiere.gouv.fr — Dépliant La vue ; Conduire sur autoroute
+  source: "securite-routiere.gouv.fr, Dépliant La vue ; Conduire sur autoroute"
 - id: aff-c-vision-peripherique
   affirmation: C'est ma vision périphérique, peu précise, qui me permet de détecter un mouvement sur le côté, comme un piéton qui descend du trottoir.
   verdict: vrai
   pourquoi: 'La vision centrale est précise (lire un panneau) mais étroite ; la vision périphérique est sensible aux mouvements et aux contrastes : elle détecte, la vision centrale identifie ensuite. D''où l''intérêt de balayer du regard.'
   theme: C
   sous_theme: perception
-  source: Code en Poche — Le champ visuel ; securite-routiere.gouv.fr — Dépliant La vue
+  source: "Code en Poche, Le champ visuel ; securite-routiere.gouv.fr, Dépliant La vue"
 - id: aff-c-nuit-distances
   contexte: Je conduis de nuit.
   affirmation: 'La perception du relief et des contrastes est atténuée : je risque de mal estimer les distances.'
@@ -25,14 +25,14 @@
     sens.
   theme: C
   sous_theme: perception
-  source: securite-routiere.gouv.fr — Conduire la nuit ; Dépliant La vue
+  source: "securite-routiere.gouv.fr, Conduire la nuit ; Dépliant La vue"
 - id: aff-c-regard-obstacle
   affirmation: Fixer du regard un obstacle que je veux éviter augmente le risque de le heurter.
   verdict: vrai
-  pourquoi: 'Le véhicule va où le regard se porte : on regarde la trajectoire d''évitement (l''espace libre), pas l''obstacle — ni les phares du véhicule que l''on croise.'
+  pourquoi: "Le véhicule va où le regard se porte. Je regarde l'espace libre où je veux passer, sans fixer l'obstacle ni les phares du véhicule que je croise."
   theme: C
   sous_theme: perception
-  source: REMC ; Codes Rousseau — L'exploration visuelle
+  source: "REMC ; Codes Rousseau, L'exploration visuelle"
 - id: aff-c-temps-reaction-vitesse
   affirmation: Si je roule deux fois plus vite, mon temps de réaction est deux fois plus long.
   verdict: faux
@@ -40,7 +40,7 @@
     Ce qui double, c''est la distance parcourue pendant ce temps : ~14 m à 50 km/h, ~28 m à 100 km/h.'
   theme: C
   sous_theme: distances
-  source: Code en Poche — Temps de réaction ; securite-routiere.gouv.fr — La vitesse et la conduite
+  source: "Code en Poche, Temps de réaction ; securite-routiere.gouv.fr, La vitesse et la conduite"
 - id: aff-c-reaction-vehicule-ralentit
   affirmation: Pendant mon temps de réaction, la voiture a déjà commencé à ralentir.
   verdict: faux
@@ -48,7 +48,7 @@
     à la distance de freinage. Distance d''arrêt = réaction + freinage.'
   theme: C
   sous_theme: distances
-  source: En Voiture Simone — Temps de réaction ; securite-routiere.gouv.fr — La vitesse et la conduite
+  source: "En Voiture Simone, Temps de réaction ; securite-routiere.gouv.fr, La vitesse et la conduite"
 - id: aff-c-vitesse-double-freinage-double
   affirmation: Si je double ma vitesse, ma distance de freinage double aussi.
   verdict: faux
@@ -56,7 +56,7 @@
     est une autre composante : ne pas appliquer ce facteur à toute la distance d’arrêt.'
   theme: C
   sous_theme: distances
-  source: securite-routiere.gouv.fr — La vitesse et la conduite ; Ornikar — Énergie cinétique
+  source: "securite-routiere.gouv.fr, La vitesse et la conduite ; Ornikar, Énergie cinétique"
   contexte: 'Modèle simplifié : même adhérence et même décélération de freinage.'
 - id: aff-c-pieton-detectable-motard
   contexte: Je suis piéton. Une moto arrive près du passage où je veux traverser.
@@ -67,7 +67,7 @@
     ne prouvent que j’ai été vu.'
   theme: C
   sous_theme: vigilance
-  source: Sécurité routière — Exemples de nouvelles questions (Q11)
+  source: "Sécurité routière, Exemples de nouvelles questions (Q11)"
 - id: aff-c-enfant-percoit-adulte
   affirmation: Un enfant perçoit les dangers de la circulation de la même façon qu'un adulte.
   verdict: faux
@@ -76,7 +76,7 @@
     de maîtrise.
   theme: C
   sous_theme: vigilance
-  source: Sécurité routière — Exemples de nouvelles questions (Q3) ; securite-routiere.gouv.fr — Enfants piétons
+  source: "Sécurité routière, Exemples de nouvelles questions (Q3) ; securite-routiere.gouv.fr, Enfants piétons"
 - id: aff-c-enfant-croit-vu
   affirmation: Un enfant qui voit ma voiture peut croire que je l’ai vu lui aussi.
   verdict: vrai
@@ -84,7 +84,7 @@
     peux pas compter sur l’enfant pour vérifier que je l’ai repéré.'
   theme: C
   sous_theme: vigilance
-  source: securite-routiere.gouv.fr — Enfants piétons ; REMC
+  source: "securite-routiere.gouv.fr, Enfants piétons ; REMC"
 - id: aff-c-indice-danger-certain
   affirmation: 'Je ne ralentis que lorsque le danger est certain : un simple indice, comme un ballon ou une
     portière entrouverte, ne justifie pas de lever le pied.'
@@ -93,7 +93,7 @@
     un occupant qui descend. J''adapte l''allure à ce que la scène ne permet pas d''exclure.'
   theme: C
   sous_theme: vigilance
-  source: Code en Poche — Anticiper ; REMC
+  source: "Code en Poche, Anticiper ; REMC"
 - id: aff-c-klaxon-ecole
   contexte: Je passe devant une école à l'heure de la sortie.
   affirmation: Je klaxonne pour prévenir les enfants de mon arrivée.
@@ -101,14 +101,14 @@
   pourquoi: 'Le klaxon est interdit en agglomération hors danger immédiat (R416-1) et peut faire sursauter un enfant. La réponse attendue : je ralentis fortement et je me tiens prêt à m''arrêter.'
   theme: C
   sous_theme: vigilance
-  source: Code de la route, art. R416-1 ; securite-routiere.gouv.fr — Enfants piétons
+  source: "Code de la route, art. R416-1 ; securite-routiere.gouv.fr, Enfants piétons"
 - id: aff-c-retros-suffisent
   affirmation: 'Mes rétroviseurs sont bien réglés : ils me suffisent pour changer de voie en sécurité.'
   verdict: faux
   pourquoi: 'Ils ne montrent pas l''angle mort, où un deux-roues tient entièrement. Avant de se déporter, un regard direct par-dessus l''épaule du côté de la manœuvre est indispensable ; s''il y a quelqu''un, on ne commence pas.'
   theme: C
   sous_theme: vigilance
-  source: Codeclic — L'angle mort ; securite-routiere.gouv.fr — Les angles morts
+  source: "Codeclic, L'angle mort ; securite-routiere.gouv.fr, Les angles morts"
 - id: aff-c-pause-sans-signe
   contexte: Long trajet sur autoroute, je me sens en forme.
   affirmation: Une pause s'impose toutes les deux heures, même sans signe de fatigue.
@@ -118,7 +118,7 @@
     automatiquement de deux heures de conduite.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — La fatigue et la conduite ; En Voiture Simone — Fatigue
+  source: "securite-routiere.gouv.fr, La fatigue et la conduite ; En Voiture Simone, Fatigue"
 - id: aff-c-micro-sommeil
   affirmation: Un micro-sommeil de quelques secondes suffit à provoquer un accident mortel sur autoroute.
   verdict: vrai
@@ -127,14 +127,14 @@
     de somnolence.
   theme: C
   sous_theme: deficiences
-  source: Sécurité routière — https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf
+  source: "Sécurité routière, https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf"
 - id: aff-c-repas-copieux
   affirmation: Un repas copieux avant de reprendre la route favorise la somnolence.
   verdict: vrai
   pourquoi: 'Repas copieux, alcool, dette de sommeil, chaleur et médicaments aggravent la somnolence, surtout en début d''après-midi (13 h-15 h) et entre 2 h et 5 h : repas léger et pause avant de repartir.'
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — La fatigue et la conduite ; Départ en vacances
+  source: "securite-routiere.gouv.fr, La fatigue et la conduite ; Départ en vacances"
 - id: aff-c-nuit-trafic-fluide
   affirmation: De nuit, le risque d'accident mortel est plus faible que de jour.
   verdict: faux
@@ -143,7 +143,7 @@
     nombre de véhicules.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — Conduire la nuit
+  source: "securite-routiere.gouv.fr, Conduire la nuit"
 - id: aff-c-senior-reaction
   affirmation: Avec l’âge, la réaction et la récupération après éblouissement peuvent devenir plus lentes.
   verdict: vrai
@@ -152,7 +152,7 @@
     tenir compte de ses capacités réelles.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — Conseils pour les seniors ; Dépliant La vue
+  source: "securite-routiere.gouv.fr, Conseils pour les seniors ; Dépliant La vue"
 - id: aff-c-lunettes-points
   contexte: Mon permis porte la mention 01 (port de verres correcteurs).
   affirmation: Conduire sans mes lunettes me coûte une amende, mais aucun point.
@@ -168,7 +168,7 @@
     pur) ; chez soi, on sert sans mesure : un verre maison peut en valoir deux ou trois.'
   theme: C
   sous_theme: deficiences
-  source: Sécurité routière — Exemples de nouvelles questions (Q17) ; securite-routiere.gouv.fr — L'alcool et la conduite
+  source: "Sécurité routière, Exemples de nouvelles questions (Q17) ; securite-routiere.gouv.fr, L'alcool et la conduite"
 - id: aff-c-biere-whisky
   affirmation: Un demi de bière fait moins monter mon alcoolémie qu'un verre de whisky servi au bar.
   verdict: faux
@@ -176,7 +176,7 @@
     donc pas la conduite sûre ; le taux obtenu varie avec la personne, la dose réellement servie et les conditions.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — L'alcool et la conduite ; Santé publique France
+  source: "securite-routiere.gouv.fr, L'alcool et la conduite ; Santé publique France"
 - id: aff-c-alcool-sous-seuil
   affirmation: Sous 0,5 g/L, l'alcool n'a pas d'effet sur la conduite.
   verdict: faux
@@ -185,7 +185,7 @@
     sans conduire après avoir bu.'
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — L'alcool et la conduite ; En Voiture Simone — Alcool au volant
+  source: "securite-routiere.gouv.fr, L'alcool et la conduite ; En Voiture Simone, Alcool au volant"
 - id: aff-c-alcool-jugement
   affirmation: Après deux verres, je reste capable de juger moi-même si je suis en état de conduire.
   verdict: faux
@@ -194,7 +194,7 @@
     un autre retour.'
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — L'alcool et la conduite
+  source: "securite-routiere.gouv.fr, L'alcool et la conduite"
 - id: aff-c-alcool-eblouissement
   affirmation: L'alcool rend plus sensible à l'éblouissement.
   verdict: vrai
@@ -202,7 +202,7 @@
     avec une visibilité réduite : rester sous un seuil légal ne supprime pas le risque.'
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — L'alcool et la conduite
+  source: "securite-routiere.gouv.fr, L'alcool et la conduite"
 - id: aff-c-dernier-verre-depart
   affirmation: 'Aussitôt mon dernier verre bu, mon alcoolémie commence à baisser : mieux vaut partir tout de
     suite.'
@@ -211,7 +211,7 @@
     à jeun ou une heure au cours d’un repas. Ces repères ne fixent pas une heure sûre de départ.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — L'alcool et la conduite
+  source: "securite-routiere.gouv.fr, L'alcool et la conduite"
 - id: aff-c-cafe-dessoule
   affirmation: Un café serré ou une douche froide accélèrent l'élimination de l'alcool.
   verdict: faux
@@ -219,7 +219,7 @@
     ne permettent pas de promettre une heure de retour sous le seuil, ni un délai fixe par verre.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — L'alcool et la conduite ; Vinci Autoroutes — Idées reçues
+  source: "securite-routiere.gouv.fr, L'alcool et la conduite ; Vinci Autoroutes, Idées reçues"
 - id: aff-c-lendemain-matin
   contexte: Soirée arrosée terminée vers 2 h du matin.
   affirmation: À 8 h, je peux encore être au-dessus de 0,5 g/L.
@@ -229,7 +229,7 @@
     au réveil.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — L'alcool et la conduite ; Code en Poche — Conduite en état d'ivresse
+  source: "securite-routiere.gouv.fr, L'alcool et la conduite ; Code en Poche, Conduite en état d'ivresse"
 - id: aff-c-probatoire-un-verre
   contexte: Je suis en permis probatoire.
   affirmation: Un seul verre standard peut suffire à atteindre le seuil d’alcool interdit.
@@ -238,7 +238,7 @@
     ; je ne calcule pas un nombre de verres autorisés. Le choix sûr est zéro alcool.
   theme: C
   sous_theme: deficiences
-  source: Code de la route, art. R234-1 ; securite-routiere.gouv.fr — L'alcool et la conduite
+  source: "Code de la route, art. R234-1 ; securite-routiere.gouv.fr, L'alcool et la conduite"
 - id: aff-c-cannabis-veille
   affirmation: Un joint fumé la veille au soir peut encore être détecté par un test salivaire le lendemain
     matin.
@@ -248,28 +248,28 @@
     une vérification.
   theme: C
   sous_theme: deficiences
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886"
 - id: aff-c-medicament-sans-ordonnance
   affirmation: Un médicament acheté sans ordonnance ne peut pas être incompatible avec la conduite.
   verdict: faux
   pourquoi: 'L''automédication (antihistaminiques, antitussifs, antalgiques…) peut porter un pictogramme de niveau 2, voire 3 : vérifier la boîte et la rubrique « conducteurs » de la notice, et ne pas associer à l''alcool.'
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — Les médicaments et la conduite ; ANSM
+  source: "securite-routiere.gouv.fr, Les médicaments et la conduite ; ANSM"
 - id: aff-c-somnifere-soir
   affirmation: Un somnifère pris le soir n'a plus d'effet sur ma conduite le lendemain matin.
   verdict: faux
   pourquoi: 'Somnifères et anxiolytiques (benzodiazépines) ont des effets prolongés : somnolence résiduelle, réflexes ralentis, vision faussée au réveil ; ils portent un pictogramme de niveau 2 ou 3. Vérifier la notice avant de conduire.'
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — Les médicaments et la conduite ; Vidal — Médicaments et conduite
+  source: "securite-routiere.gouv.fr, Les médicaments et la conduite ; Vidal, Médicaments et conduite"
 - id: aff-c-medicament-alcool
   affirmation: Associer un médicament de niveau 1 (pictogramme jaune) à un verre d'alcool peut rendre la conduite dangereuse.
   verdict: vrai
-  pourquoi: 'Alcool et médicaments additionnent leurs effets (somnolence, temps de réaction) : un traitement compatible avec la conduite quand il est pris seul peut devenir incompatible avec de l''alcool — de même avec le cannabis.'
+  pourquoi: "Alcool et médicaments additionnent leurs effets : somnolence, temps de réaction allongé… Un traitement compatible avec la conduite lorsqu'il est pris seul peut devenir incompatible avec de l'alcool ou du cannabis."
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — Les médicaments et la conduite ; Code en Poche — Médicaments
+  source: "securite-routiere.gouv.fr, Les médicaments et la conduite ; Code en Poche, Médicaments"
 - id: aff-c-mains-libres-passager
   affirmation: Téléphoner avec le kit mains-libres intégré au véhicule est aussi peu risqué que discuter avec
     un passager.
@@ -279,7 +279,7 @@
     un dispositif autorisé.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — Le téléphone et la conduite
+  source: "securite-routiere.gouv.fr, Le téléphone et la conduite"
 - id: aff-c-oreillette
   affirmation: Je peux téléphoner avec une oreillette Bluetooth, sans tenir le téléphone en main.
   verdict: faux
@@ -293,7 +293,7 @@
   pourquoi: 'Quitter la route des yeux 5 s, c''est 70 m parcourus à l''aveugle à 50 km/h. On programme le GPS à l''arrêt et on suit ses consignes vocales en roulant.'
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — Le téléphone et la conduite ; Ornikar — Vigilance
+  source: "securite-routiere.gouv.fr, Le téléphone et la conduite ; Ornikar, Vigilance"
 - id: aff-c-ecran-video
   affirmation: Un écran vidéo en fonctionnement dans mon champ de vision est interdit, même si je ne le manipule pas.
   verdict: vrai
@@ -310,7 +310,7 @@
     leur risque.
   theme: C
   sous_theme: deficiences
-  source: ONISR — Bilan définitif 2024 ; securite-routiere.gouv.fr — Conseils aux conducteurs novices
+  source: "ONISR, Bilan définitif 2024 ; securite-routiere.gouv.fr, Conseils aux conducteurs novices"
 - id: aff-c-alcool-un-sur-trois
   affirmation: L'alcool est en cause dans près d'un accident mortel sur trois.
   verdict: vrai
@@ -319,7 +319,7 @@
     par environ 18 avec un taux illégal.
   theme: C
   sous_theme: deficiences
-  source: securite-routiere.gouv.fr — L'alcool et la conduite ; ONISR, bilan 2025
+  source: "securite-routiere.gouv.fr, L'alcool et la conduite ; ONISR, bilan 2025"
 - id: aff-c-jeunes-risque-double
   affirmation: Les 18-24 ans ont un risque d'être tués sur la route environ deux fois plus élevé que la moyenne.
   verdict: vrai
@@ -327,7 +327,7 @@
     D''où le permis probatoire, ses vitesses réduites et son seuil d''alcool à 0,2 g/L.'
   theme: C
   sous_theme: vigilance
-  source: ONISR, bilan 2025 ; securite-routiere.gouv.fr — Conducteurs novices
+  source: "ONISR, bilan 2025 ; securite-routiere.gouv.fr, Conducteurs novices"
 - id: aff-c-musique-forte
   contexte: Vitres fermées, musique à fort volume.
   affirmation: Je reste capable d'entendre aussi bien une sirène, un klaxon ou un deux-roues qui arrive.
@@ -337,7 +337,7 @@
     non plus un remède à la somnolence.
   theme: C
   sous_theme: perception
-  source: securite-routiere.gouv.fr — Distracteurs ; Code de la route, art. R412-6-1
+  source: "securite-routiere.gouv.fr, Distracteurs ; Code de la route, art. R412-6-1"
 - id: aff-c-senior-visite-70
   affirmation: À partir de 70 ans, conserver son permis B impose une visite médicale périodique.
   verdict: faux

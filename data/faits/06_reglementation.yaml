@@ -37,7 +37,7 @@
     de points.'
   theme: D
   sous_theme: points
-  source: Code de la route, L223-2, L235-1 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F31551
+  source: "Code de la route, L223-2, L235-1 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F31551"
 - id: d-probatoire-3-points
   texte: En permis probatoire, une infraction retirant au moins {{c1::3 points}} entraîne l’obligation de suivre un stage
     de sensibilisation (lettre 48N).
@@ -54,7 +54,7 @@
     de conduite est conditionnelle : vérifier la procédure à la réception de la décision.'
   theme: D
   sous_theme: points
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F1704
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F1704"
 - id: d-recuperation-points
   explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès ≥ 20 km/h) sont de 4e
     classe → c''est souvent 3 ans. Pendant le probatoire, le capital se reconstitue surtout par la majoration annuelle
@@ -104,14 +104,14 @@
     (10 h en automatique). Le minimum réglementaire n’est pas une promesse d’être prêt.'
   theme: D
   sous_theme: permis
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2828
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2828"
 - id: d-accompagnateur
   explication: 'En conduite accompagnée, c''est l''accompagnateur qui répond des infractions de l''élève : amende,
     retrait de points et rétention ou suspension de son permis (L224-1 II). Il est aussi personnellement soumis aux
     règles sur l''alcool et les stupéfiants.'
   theme: D
   sous_theme: permis
-  source: Code de la route, R211-3 et R234-1 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2826
+  source: "Code de la route, R211-3 et R234-1 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2826"
   rappels:
   - Pour accompagner un élève, il faut notamment le permis B depuis {{c1::5 ans}} sans interruption.
   - Pour accompagner un élève, il faut l’accord de {{c2::l’assureur}} du véhicule pour cet apprentissage.
@@ -167,12 +167,10 @@
   - Un excès de vitesse retenu de 20 à 29 km/h entraîne le retrait de {{c3::2 points}}.
   - Un excès de vitesse retenu de 30 à 39 km/h entraîne le retrait de {{c4::3 points}}.
 - id: d-grand-exces
-  explication: 'Depuis le 29 décembre 2025 (loi du 9 juillet 2025) : délit dès la première fois, jugé au tribunal
-    correctionnel. Avant cette date : contravention de 5e classe, 6 points, délit seulement en récidive — une question
-    non mise à jour peut encore attendre cette réponse.'
+  explication: "Depuis le 29 décembre 2025 (loi du 9 juillet 2025), c'est un délit dès la première fois, jugé au tribunal correctionnel. Auparavant, c'était une contravention de 5e classe avec retrait de 6 points, et un délit seulement en récidive. Une question non mise à jour peut encore attendre l'ancienne réponse."
   theme: D
   sous_theme: sanctions
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F19460
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F19460"
   rappels:
   - En 2026, un excès de vitesse retenu d’au moins 50 km/h constitue un {{c1::délit dès la première fois}}.
   - Un excès de vitesse retenu d’au moins 50 km/h entraîne le retrait de {{c2::6 points}}.
@@ -183,7 +181,7 @@
     possible ; ne pas présenter la rétention immédiate comme automatique pour toute alcoolémie contraventionnelle.
   theme: D
   sous_theme: sanctions
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2881
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2881"
 - id: d-alcool-delit
   explication: Le seuil est inclus. Des peines de prison et d’amende ainsi qu’une suspension ou annulation sont encourues.
     L’ivresse manifeste et le refus de vérification constituent aussi des délits ; les peines maximales ne sont pas automatiques.
@@ -198,7 +196,7 @@
     et aggravent les sanctions. Des peines de prison, d’amende et des mesures sur le permis sont encourues.
   theme: D
   sous_theme: sanctions
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886"
   rappels:
   - Conduire après usage de stupéfiants est un {{c1::délit}}, même sans signe d’altération ressenti.
   - 'Conduite après usage de stupéfiants : retrait de {{c2::6 points}} ; en cumul avec une alcoolémie interdite, 9 points.'
@@ -210,7 +208,7 @@
     comme exhaustive.
   theme: D
   sous_theme: sanctions
-  source: Code pénal, art. 221-18 ; Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2886
+  source: "Code pénal, art. 221-18 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886"
 - id: d-delit-fuite
   texte: Après avoir causé ou occasionné un accident, chercher à échapper à sa responsabilité sans s’arrêter peut constituer
     un {{c1::délit de fuite}}, même sans blessé.
@@ -288,7 +286,7 @@
     est prescrite, son délai ne doit pas être dépassé. Ne pas confondre périodicité et validité pour la vente.
   theme: D
   sous_theme: documents
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2878
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2878"
   rappels:
   - 'Voiture particulière : le premier contrôle technique se fait dans les 6 mois précédant le {{c1::4e anniversaire}}
     de sa première mise en circulation.'
@@ -308,7 +306,7 @@
     description inexacte. Déclarer rapidement sans attendre de régler un désaccord.'
   theme: D
   sous_theme: documents
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F2149 ; https://www.service-public.gouv.fr/particuliers/vosdroits/F2685
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2149 ; https://www.service-public.gouv.fr/particuliers/vosdroits/F2685"
   rappels:
   - Après un accident, le délai usuel pour déclarer le sinistre à l’assureur est {{c1::5 jours ouvrés}}.
   - Pour un vol de véhicule, le délai contractuel de déclaration à l’assureur ne peut être inférieur à {{c2::2 jours ouvrés}}

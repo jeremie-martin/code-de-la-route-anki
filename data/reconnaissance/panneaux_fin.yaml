@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml — 4 entrées. Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (4 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: b31
   type: panneau
   code: B31
@@ -10,7 +10,7 @@
   piege: Ne met pas fin aux interdictions d’arrêt ou de stationnement ; les règles générales restent applicables.
   theme: L
   sous_theme: panneaux
-  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7 — https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
+  source: Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
 - id: b33
   type: panneau
   code: B33
@@ -22,7 +22,7 @@
   complement: 'Après la fin de limitation, la vitesse n’est pas libre : la limite générale de la route et les autres limitations applicables restent à respecter.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b34
   type: panneau
   code: B34
@@ -33,7 +33,7 @@
   conduite: Dépassement à nouveau autorisé si les conditions de sécurité et le marquage le permettent.
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: b40
   type: panneau
   code: B40
@@ -44,4 +44,4 @@
   conduite: 'En voiture : s''attendre à voir des cyclistes revenir sur la chaussée.'
   theme: L
   sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR — signalisation routière en France
+  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

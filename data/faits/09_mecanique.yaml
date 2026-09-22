@@ -3,7 +3,7 @@
     l’étiquette ou la notice ; ne pas ajouter systématiquement la même valeur à tous les véhicules.'
   theme: M
   sous_theme: pneus
-  source: R314-1 ; Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
+  source: "R314-1 ; Michelin, https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus"
   rappels:
   - 'Profondeur minimale réglementaire des rainures principales d’un pneu de voiture : {{c1::1,6 mm}}.'
   - Pour comparer la pression d’un pneu à la valeur de référence du constructeur, la mesurer à {{c2::froid}}.

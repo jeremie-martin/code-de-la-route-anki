@@ -1,11 +1,11 @@
-# Signalisation routière française — notes de recherche (permis B / ETG)
+# Notes de recherche sur la signalisation routière française (permis B / ETG)
 
 Rédigé le 2026-09-21. Complète le dataset `data/signs_inventory.yaml` (≈ 500 entrées).
 Les points marqués **À VÉRIFIER** n'ont pas été confirmés sur une source primaire.
 
 ## Sources utilisées
 
-Wikipédia FR (les pages citent l'IISR — Instruction interministérielle sur la signalisation routière — et
+Wikipédia FR (les pages citent l'IISR (Instruction interministérielle sur la signalisation routière) et
 l'arrêté du 24 novembre 1967 modifié ; le texte wiki brut a été récupéré via `action=raw`) :
 
 - Danger (A) : https://fr.wikipedia.org/wiki/Panneau_de_signalisation_routi%C3%A8re_de_danger_en_France
@@ -45,7 +45,7 @@ Wikimedia Commons : liste des fichiers `France road sign *.svg` (737 fichiers) r
 descriptions de fichiers consultées pour K10a/K10b, C65a/b/c, C109/C110, SR3x, M9k/M9l, M9v3/v4, B56/B57.
 
 Documents officiels non accessibles pendant la recherche (URL CEREMA en 404) : « Liste complète des signaux routiers
-en usage » (annexe de l'arrêté de 1967, PDF CEREMA juin 2021) et les parties 1 à 9 de l'IISR — à refaire si un
+en usage » (annexe de l'arrêté de 1967, PDF CEREMA juin 2021) et les parties 1 à 9 de l'IISR. Refaire cette vérification si un
 doute persiste.
 
 ## 1. Formes et couleurs : la grammaire des panneaux
@@ -97,18 +97,18 @@ Règles simples à retenir :
 | Signal | Hors agglomération | En agglomération | Sur autoroute |
 |---|---|---|---|
 | Panneaux de danger A (sauf A18) | 100 à 200 m, le plus souvent **150 m** | 0 à 50 m, le plus souvent **50 m** | 200 m |
-| A18 (circulation dans les deux sens) | à l'endroit même du danger | idem | — |
-| AB1, AB2 (annonces de priorité) | ≈ 150 m (jusqu'à 400 m si visibilité, répété à mi-distance si > 200 m) | 0 à 30 m | — |
-| AB3b (cédez à X m), AB5 (STOP à X m) | ≈ 150 m, distance sur M1 / M5 | distance sur panonceau (arrondie aux 10 m si < 50 m) | — |
-| AB3a, AB4 | **à hauteur** de l'intersection, à la ligne au sol | idem | — |
-| A7 / A8 + balises J10 | A7/A8 à 150 m avec J10 3 bandes, puis J10 2 bandes (100 m) et 1 bande (50 m) | A7/A8 à 50 m, balises facultatives | — |
-| Panneaux de prescription B | à l'endroit où commence la prescription ; **répétés après chaque intersection** | idem | — |
-| B2a/b/c, B4, B5, B21b à B21e | **avant** l'endroit où s'applique la prescription | idem | — |
-| B6 (stationnement) | du côté où l'interdiction s'applique | idem | — |
-| Panneaux de danger : panonceau M1 | seulement si la distance diffère de la distance normale (max 400 m) | (max 150 m) | — |
-| Sorties d'autoroute (D50) | — | — | 2 000 m, 1 000 m, 500 m |
+| A18 (circulation dans les deux sens) | à l'endroit même du danger | idem | Sans indication |
+| AB1, AB2 (annonces de priorité) | ≈ 150 m (jusqu'à 400 m si visibilité, répété à mi-distance si > 200 m) | 0 à 30 m | Sans indication |
+| AB3b (cédez à X m), AB5 (STOP à X m) | ≈ 150 m, distance sur M1 / M5 | distance sur panonceau (arrondie aux 10 m si < 50 m) | Sans indication |
+| AB3a, AB4 | **à hauteur** de l'intersection, à la ligne au sol | idem | Sans indication |
+| A7 / A8 + balises J10 | A7/A8 à 150 m avec J10 3 bandes, puis J10 2 bandes (100 m) et 1 bande (50 m) | A7/A8 à 50 m, balises facultatives | Sans indication |
+| Panneaux de prescription B | à l'endroit où commence la prescription ; **répétés après chaque intersection** | idem | Sans indication |
+| B2a/b/c, B4, B5, B21b à B21e | **avant** l'endroit où s'applique la prescription | idem | Sans indication |
+| B6 (stationnement) | du côté où l'interdiction s'applique | idem | Sans indication |
+| Panneaux de danger : panonceau M1 | seulement si la distance diffère de la distance normale (max 400 m) | (max 150 m) | Sans indication |
+| Sorties d'autoroute (D50) | Sans indication | Sans indication | 2 000 m, 1 000 m, 500 m |
 | Triangle de présignalisation (panne) | ≥ 30 m en amont du véhicule | idem | seulement si sa pose est sans danger (sinon feux de détresse + gilet + glissière) |
-| Bornes d'appel d'urgence | — | — | tous les 2 km |
+| Bornes d'appel d'urgence | Sans indication | Sans indication | tous les 2 km |
 
 Autres chiffres : marquage STOP = ligne continue de 50 cm ; cédez-le-passage = T'2 (50 cm trait / 50 cm vide,
 largeur 50 cm) ; ligne d'effet des feux = T'2 largeur 15 cm ; passage piéton = bandes de 2,50 m × 0,50 m espacées
@@ -260,11 +260,11 @@ ralentisseur, sas vélo.
 - **2021** : expérimentation de la **circulation inter-files** des deux-roues motorisés (panneau d'information
   SR + panonceau M4c « en inter-files », 50 km/h) ; état 2026 **À VÉRIFIER**.
 - **2021-2022** : panonceaux **M9k1/M9k2** (contrôle automatisé des voies réservées, avec SR3d) et **M9l**
-  (radars « bruit ») ; panonceaux **M9v3/M9v4** (« sauf cyclomoteurs ») — arrêtés de création **À VÉRIFIER**.
+  (radars « bruit ») ; panonceaux **M9v3/M9v4** (« sauf cyclomoteurs »). Les arrêtés de création restent **À VÉRIFIER**.
 - **2022 (arrêté du 13 juin 2022)** : décompteur de temps pour piétons, signal **R12m** (piétons + cycles),
   mise à jour de la 2e partie de l'IISR (passages à niveau : G1, G1a, G1b, G1c et versions « bis »).
 - **2022-2025** : **péage en flux libre** (A79, A13/A14, A4…) : panneaux **C65a/C65b/C65c** (moyens et délai
-  de paiement, rappel en sortie) — fichiers Commons de décembre 2025 ; arrêté de création **À VÉRIFIER**.
+  de paiement, rappel en sortie). Les fichiers Commons datent de décembre 2025 ; arrêté de création **À VÉRIFIER**.
   Attention : d'anciennes sources donnent C65a/b = présignalisation des aires (assurée aujourd'hui par D46).
 - Panneaux **supprimés** à connaître pour trier les vieux decks : C7 (arrêt de tramway) et B45b (fin de voie
   tram) supprimés en 2009 ; C109/C110 (aire piétonne) devenus B54/B55 en 2008 ; B21f (sens giratoire) supprimé
@@ -318,7 +318,7 @@ ralentisseur, sas vélo.
   « C9 tunnel », « R25 piétons », « B21f giratoire », « SR50 covoiturage » (le losange n'a pas de code), « B58 ZTL »
   (B58 = équipements hivernaux).
 - Les « dents de requin » (triangles) au sol signalent en France un ralentisseur, pas un cédez-le-passage
-  (marquage cédez = ligne discontinue T'2) — usage sur aménagements cyclables **À VÉRIFIER**.
+  (marquage cédez = ligne discontinue T'2). L'usage sur les aménagements cyclables reste **À VÉRIFIER**.
 
 ## 9. Suites à donner
 

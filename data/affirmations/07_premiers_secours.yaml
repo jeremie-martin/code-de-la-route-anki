@@ -1,4 +1,4 @@
-# A — Porter secours : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
+# A : Porter secours : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
 # Les fausses sont les idées reçues réelles du thème (knowledge-facts P7) ; le verso donne la raison en une ligne.
 - id: aff-a-dae-formation
   contexte: Une victime est en arrêt cardiaque ; un DAE est accroché au mur du magasin voisin.
@@ -7,7 +7,7 @@
   pourquoi: "Depuis 2007, toute personne, même non formée, peut se servir d'un défibrillateur automatisé externe : il s'allume, parle et guide pas à pas. Hésiter fait perdre des minutes décisives."
   theme: A
   sous_theme: secourir
-  source: "Sécurité routière — Exemples de nouvelles questions (Q6) ; décret n° 2007-705 ; Croix-Rouge française"
+  source: "Sécurité routière, Exemples de nouvelles questions (Q6) ; décret n° 2007-705 ; Croix-Rouge française"
 - id: aff-a-dae-sans-arret-cardiaque
   contexte: Une victime ne répond pas et ne respire pas normalement. Un DAE est disponible.
   affirmation: Je dois attendre de connaître précisément son rythme cardiaque avant d’utiliser le DAE.
@@ -16,7 +16,7 @@
     sans retarder la RCP ; personne ne touche la victime pendant l’analyse et le choc.
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, Défibrillation — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: "Sécurité civile, PSC juillet 2026, Défibrillation, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: aff-a-pls-avec-casque
   contexte: Après sa chute, un motard est inconscient, allongé sur le dos, et respire normalement. Il se met à vomir.
   affirmation: Je le tourne sur le côté en maintenant si possible l’axe tête-cou-tronc, avec de l’aide, sans retirer son casque.
@@ -24,7 +24,7 @@
   pourquoi: Les vomissements menacent ses voies aériennes et justifient la mise sur le côté malgré le traumatisme. Alerter et suivre les secours, surveiller la respiration ; ne pas retirer le casque pour le confort.
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, p. 36–38 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Sécurité routière — secours au motard
+  source: "Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Sécurité routière, secours au motard"
 - id: aff-a-respire-mais-inconsciente
   contexte: Après un malaise sans traumatisme, une personne ne répond pas mais respire normalement.
   affirmation: 'Elle est en arrêt cardiaque : je commence les compressions thoraciques.'
@@ -33,7 +33,7 @@
     appelle une réanimation.'
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, Perte de connaissance — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: "Sécurité civile, PSC juillet 2026, Perte de connaissance, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: aff-a-compressions-seules
   contexte: La victime ne respire pas ; le bouche-à-bouche me rebute.
   affirmation: Je peux me limiter aux compressions thoraciques en attendant les secours.
@@ -41,7 +41,7 @@
   pourquoi: "Des compressions seules, commencées tout de suite et poursuivies sans interruption, valent bien mieux que l'inaction. L'opérateur du 15 guide le rythme au téléphone jusqu'à l'arrivée des secours."
   theme: A
   sous_theme: secourir
-  source: Croix-Rouge française — Arrêt cardiaque
+  source: "Croix-Rouge française, Arrêt cardiaque"
 - id: aff-a-donner-a-boire
   contexte: Un blessé conscient me demande à boire en attendant les secours.
   affirmation: Je peux lui donner un peu d'eau pour le soulager.
@@ -50,7 +50,7 @@
     et le protège du froid comme de la chaleur, selon les conditions.
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: "Sécurité civile, PSC juillet 2026, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: aff-a-contact-vehicules-accidentes
   contexte: Deux voitures accidentées sont immobilisées au milieu d'un carrefour.
   affirmation: Laisser leur contact mis ne présente pas de risque particulier.
@@ -58,7 +58,7 @@
   pourquoi: "On coupe le contact des véhicules accidentés : carburant et circuit électrique font un risque d'incendie. Le balisage est assuré par mes propres feux de détresse et par le triangle."
   theme: A
   sous_theme: proteger
-  source: Ornikar — Protéger la zone ; Croix-Rouge française
+  source: "Ornikar, Protéger la zone ; Croix-Rouge française"
 - id: aff-a-triangle-autoroute
   contexte: Accident sur autoroute ; poser le triangle m'obligerait à marcher sur les voies de circulation.
   affirmation: Je renonce au triangle et je me mets à l'abri derrière la glissière.
@@ -66,7 +66,7 @@
   pourquoi: "La mise en place du triangle n'est pas exigée quand elle met manifestement en danger la vie du conducteur (arrêté du 30 septembre 2008) : feux de détresse et mise à l'abri priment. Ailleurs, 30 m au moins."
   theme: A
   sous_theme: proteger
-  source: "Code de la route, art. R416-19 ; arrêté du 30 septembre 2008 ; Ornikar — Protéger la zone"
+  source: "Code de la route, art. R416-19 ; arrêté du 30 septembre 2008 ; Ornikar, Protéger la zone"
 - id: aff-a-18-secours-personne
   contexte: Un conducteur est coincé dans sa voiture après un choc ; il n'y a pas d'incendie.
   affirmation: Le 18 est un bon numéro à composer dans cette situation.
@@ -74,7 +74,7 @@
   pourquoi: "Les sapeurs-pompiers assurent aussi le secours à personne et la désincarcération, pas seulement les incendies. Le 15 et le 112 conviennent également : les services se transmettent l'appel."
   theme: A
   sous_theme: alerter
-  source: service-public.fr — Numéros d'urgence ; Croix-Rouge française
+  source: "service-public.fr, Numéros d'urgence ; Croix-Rouge française"
 - id: aff-a-rester-sur-place
   contexte: Témoin d'un accident avec blessés, j'ai alerté les secours ; rien ne me menace sur place.
   affirmation: 'Une fois l''alerte donnée, je peux repartir : les secours sont prévenus.'
@@ -83,7 +83,7 @@
     Un conducteur impliqué doit de toute façon rester et prévenir la police (R231-1).'
   theme: A
   sous_theme: obligations
-  source: Croix-Rouge française — Alerter ; Code de la route, art. R231-1
+  source: "Croix-Rouge française, Alerter ; Code de la route, art. R231-1"
 - id: aff-a-ne-rien-faire
   contexte: Je n'ai suivi aucune formation aux premiers secours et j'arrive sur un accident.
   affirmation: Mieux vaut ne rien faire que risquer d'aggraver l'état des victimes.
@@ -100,7 +100,7 @@
   pourquoi: "Le constat décrit les faits ; ce sont les assureurs qui répartissent ensuite les responsabilités. En revanche on ne signe pas un constat inexact, et rien ne se modifie après signature."
   theme: A
   sous_theme: obligations
-  source: service-public.fr — Constat amiable
+  source: "service-public.fr, Constat amiable"
 - id: aff-a-degagement-urgence
   contexte: 'Voiture accidentée : de la fumée sort du moteur ; le conducteur, conscient, est bloqué par sa ceinture.'
   affirmation: Je peux le sortir du véhicule, dès lors qu'un danger immédiat l'exige.
@@ -110,7 +110,7 @@
     puis j''alerte.'
   theme: A
   sous_theme: proteger
-  source: Sécurité civile, PSC juillet 2026 — Dégagement d’urgence
+  source: "Sécurité civile, PSC juillet 2026, Dégagement d’urgence"
 - id: aff-a-dae-sans-danger
   contexte: Une victime ne répond pas et ne respire pas normalement ; un témoin apporte un DAE.
   affirmation: Le DAE peut décider qu’aucun choc n’est nécessaire ; dans ce cas, je reprends immédiatement les compressions selon ses consignes.
@@ -118,4 +118,4 @@
   pourquoi: L’absence de choc conseillé ne signifie pas que la victime est réanimée. Le DAE analyse le rythme ; je poursuis la réanimation et suis ses instructions jusqu’au relais des secours ou à la reprise d’une respiration normale.
   theme: A
   sous_theme: secourir
-  source: Sécurité civile, PSC juillet 2026, p. 26–34 — https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  source: "Sécurité civile, PSC juillet 2026, p. 26–34, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"

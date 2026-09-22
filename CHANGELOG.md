@@ -1,4 +1,15 @@
-# Planification et utilisation avec FSRS — 22 septembre 2026
+# Formulations sans tirets cadratins (22 septembre 2026)
+
+- Reformulation de 41 passages pédagogiques : conditions explicites, conséquences reliées à leur cause et
+  comparaisons en phrases naturelles. Sources, commentaires, documentation et générateurs harmonisés.
+- Identifiants, ordre d’introduction, cibles des clozes et liens des sources conservés. Les données de
+  reconnaissance ont été régénérées depuis leurs sources ; le paquet contient toujours 1 051 notes et 1 125 cartes.
+- 24 tests réussis ; import, réimport, mise à jour depuis le paquet précédent et vérifications FSRS réussis.
+  Aucun tiret cadratin dans les textes suivis du dépôt ni les champs du paquet exporté.
+  Contrôle de 9 042 faces/configurations sans échec et inspection visuelle de quatre cartes reformulées.
+  Les documents sources originaux et les captures historiques du handoff restent des archives.
+
+# Planification et utilisation avec FSRS (22 septembre 2026)
 
 - Instructions de premier import, d’activation de FSRS et de mise à jour sans écraser les réglages personnels.
   Distinction entre positions d’introduction, identités stables et échéances calculées ; aucune renumérotation
@@ -9,7 +20,7 @@
   préréglages conservant les options personnelles, les états mémoire et l’historique. Import neuf, réimport et
   mise à jour depuis le paquet Signal vérifiés ; 24 tests réussis. Aucun essai natif mobile ni mesure d’efficacité.
 
-# Thème Signal — 22 septembre 2026
+# Thème Signal (22 septembre 2026)
 
 - Application du Signal approuvé dans `docs/signal-theme-handoff/` : CSS consolidé et comparé au rendu de
   référence, réponses de 21 px, texte de 19 px, séparateur jaune court, feedback sans panneaux remplis,
@@ -26,7 +37,7 @@
   Inspection visuelle des six types en clair/sombre, avec exemples étroits et images de comparaison.
   Rapports liés au paquet livré (1 051 notes, 1 125 cartes) par SHA-256 ; AnkiMobile/AnkiDroid non testés.
 
-# Installation et stationnement : décisions et conditions — 22 septembre 2026
+# Installation et stationnement : décisions et conditions (22 septembre 2026)
 
 - Douze notes améliorées : réglage des rétroviseurs après déplacement du siège, verrouillage du siège,
   miroirs jour/nuit, immobilisation en pente, contact coupé, enfant sans surveillance et prévention du vol.
@@ -44,7 +55,7 @@
   identifient le même paquet par SHA-256.
   Pas de revalidation juridique exhaustive, d’essai natif mobile ni de mesure d’efficacité.
 
-# Aides à la conduite : fonctions et limites — 22 septembre 2026
+# Aides à la conduite : fonctions et limites (22 septembre 2026)
 
 - Neuf notes précisées : régulateur simple/adaptatif, limiteur en descente, détection d’angle mort,
   maintien de voie, eCall et compatibilité avant un démarrage avec câbles. Le cas ACC teste une file
@@ -58,7 +69,7 @@
   échantillons sombres à 320 px et exemples des six types de cartes. Rapports liés au paquet par SHA-256.
   Pas de nouvelle validation juridique exhaustive, d’essai natif mobile ni de mesure d’efficacité.
 
-# Voyants et traversées piétonnes — 22 septembre 2026
+# Voyants et traversées piétonnes (22 septembre 2026)
 
 - Huit notes corrigées, sans ajouter de cartes : distinguer contact et roulage, pression et niveau d’huile,
   adapter la consigne de surchauffe au véhicule ; préciser les conditions de traversée des piétons.
@@ -72,7 +83,7 @@
   Le rapport `out/RENDU.md` donne les résultats automatiques pour l’empreinte du paquet livré.
   Pas de revalidation juridique exhaustive, d’essai natif mobile ni de mesure de rétention.
 
-# Comparaison avec le livre 2025–2026 — 22 septembre 2026
+# Comparaison avec le livre 2025–2026 (22 septembre 2026)
 
 - Trois questions ajoutées : plafonds de vitesse avec remorque, distinction permis/PTRA dans un cas
   concret, vérification des freins après lavage. Choix du siège enfant recentré sur l’adaptation,
@@ -83,7 +94,7 @@
   9 234 faces/configurations contrôlées sans échec. Lecture visuelle des quatre notes modifiées,
   avec échantillons en sombre et à 320 px. Pas de validation native mobile ni de mesure de rétention.
 
-# Circulation : conditions décisives — 22 septembre 2026
+# Circulation : conditions décisives (22 septembre 2026)
 
 - Douze notes améliorées, sans ajouter de cartes : placement au giratoire selon l’axe d’entrée, signalement
   de la première sortie, sorties de parking et statut des voies, arrêt et stationnement, consignes de tunnel.
@@ -96,7 +107,7 @@
   sans échec. Inspection des douze notes modifiées et d’exemples des six types de cartes ; contrôles visuels
   complémentaires en sombre et à 320 px. Aucun essai natif AnkiMobile/AnkiDroid ni mesure d’efficacité.
 
-# Conditions et décisions — 22 septembre 2026
+# Conditions et décisions (22 septembre 2026)
 
 - Huit notes corrigées sans ajout de cartes : limites sous la pluie, documents de vente, accès au 114,
   remorquage, trois décisions d’écoconduite et comparaison des particules essence/diesel.
@@ -107,7 +118,7 @@
   Lecture visuelle des huit notes corrigées et de signaux/scénarios représentatifs ; vérification ponctuelle en
   sombre et à 320 px. Rapports liés au SHA-256 du paquet. Pas d’essai AnkiMobile/AnkiDroid ni de mesure d’efficacité.
 
-# Audit ciblé — 22 septembre 2026
+# Audit ciblé (22 septembre 2026)
 
 - Corrections de fond : tabac/vapotage avec mineur, grille Euro NCAP 2026, statut des ambulances,
   conditions de traversée des piétons et délai de réinscription après invalidation.
@@ -120,7 +131,7 @@
   corrigées ; import réel, réimport, tests et contrôle de toutes les faces relancés sur le nouveau paquet.
 - 1 049 notes, 1 123 cartes ; modèles, médias et architecture conservés.
 
-# Révision ciblée — 22 septembre 2026
+# Révision ciblée (22 septembre 2026)
 
 - Secours : distinction malaise/traumatisme conforme au PSC juillet 2026 ; vomissements et analyse du DAE sans choc traités explicitement. Retrait de la prétendue exception « réponse attendue à l’examen ».
 - Rappel : observation vidéo élargie aux indices stables et aux zones masquées ; formule de distance d’arrêt présentée comme raccourci ; contrôles de changement de voie expliqués par leur fonction.
@@ -133,7 +144,7 @@
 Les éditions v1 à v8 sont les jalons d’une même journée de travail (21 septembre 2026) ; les détails sont dans
 l’historique git.
 
-## v10 — 22 septembre 2026
+## v10 (22 septembre 2026)
 
 Révision ciblée de 150 notes pour rendre l’apprentissage autonome : les codes de panneaux et de marquages
 laissent place aux indices visibles et aux décisions de conduite. Les références techniques restent dans
@@ -150,7 +161,7 @@ Validation des données, 21 tests et import/réimport Anki réussis ; résultats
 marquages, chaînes et cartes de secours. Consultations juridiques ciblées consignées dans le registre ; cette
 édition ne constitue pas une nouvelle vérification juridique exhaustive ni un essai sur téléphone réel.
 
-## v9 — 21 septembre 2026
+## v9 (21 septembre 2026)
 
 Révision après deux séries de relectures indépendantes : qualité des cartes vue par l’apprenant, exactitude et
 cohérence, couverture et structure, trajectoire du projet ; puis simulation de transfert à l’épreuve (131
@@ -185,37 +196,37 @@ documentées par un nouveau mainteneur. 1 051 notes / 1 128 cartes.
   rétrécissement dessiné dans les scénarios B15/C18.
 - **Documentation** réduite à README, conception, maintenance, sources et cet historique.
 
-## v8 — 21 septembre 2026
+## v8 (21 septembre 2026)
 
 Relecture complète ; 41 signaux déductibles retirés (sorties de zone, fins rares, pictogrammes transparents) ;
 six scénarios de priorité ajoutés ; freinage régénératif, détecteur de fatigue et ISA ajoutés. 1 100 notes.
 
-## v6 et v7 — 21 septembre 2026
+## v6 et v7 (21 septembre 2026)
 
 101 signaux de catalogue retirés, compléments des reconnaissances resserrés, maxima de peine retirés ; règles
 récentes reconsultées (délit dès 50 km/h, ZFE, inter-files, loi du 18 août 2026). Réponses des questions
 réécrites en « décision + raison décisive », clozes à plusieurs trous scindées, cadre des vitesses.
 
-## v5 et v5.1 — 21 septembre 2026
+## v5 et v5.1 (21 septembre 2026)
 
 75 notes corrigées (sur-généralisations) ; contrôle du rendu de toutes les faces dans Chromium ; gabarits
 refaits pour le téléphone (un seul volet de références, plus de consignes de notation au verso).
 
-## v4 — 21 septembre 2026
+## v4 (21 septembre 2026)
 
 Repères par thème, rappels indépendants (`rappels`), réutilisation des images de signaux dans les questions,
 registres de familles de cas et de retraits.
 
-## v3 et v3.1 — 21 septembre 2026
+## v3 et v3.1 (21 septembre 2026)
 
 Manifeste d’objectifs reliant chaque note à une compétence, socle et consolidation, vérification par import
 réel, premiers tests ; plafond de cartes introduit puis retiré.
 
-## v2 — 21 septembre 2026
+## v2 (21 septembre 2026)
 
 Type « affirmation » (vrai/faux justifié), programme d’introduction entrelacé, préréglage d’options embarqué,
 premières limites de longueur, versos de reconnaissance resserrés.
 
-## v1 — 21 septembre 2026
+## v1 (21 septembre 2026)
 
 Bibliothèque initiale (896 notes), inventaire des signaux, générateur, solveur de priorité, images générées.

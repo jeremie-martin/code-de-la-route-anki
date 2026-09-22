@@ -7,7 +7,7 @@
     Ce mécanisme dépend du véhicule ; anticiper reste utile dans tous les cas.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
 - id: e-rapports-regime
   question: En montée, le moteur peine après un passage au rapport supérieur pour économiser du carburant.
     Dois-je garder ce rapport ?
@@ -16,7 +16,7 @@
     du moteur, de la charge et de la pente ; l’indicateur de changement de rapport est une aide, pas un ordre prioritaire sur la situation.
   theme: E
   sous_theme: ecoconduite
-  source: Notice Kia — fonctionnement économique — https://ownersmanual.kia.com/docview/webhelp/doc/e654660e-4668-4ece-9479-cacf1bc87727/topics/chapter6_23.html
+  source: "Notice Kia, fonctionnement économique, https://ownersmanual.kia.com/docview/webhelp/doc/e654660e-4668-4ece-9479-cacf1bc87727/topics/chapter6_23.html"
 - id: e-moteur-arret
   question: Les barrières d'un passage à niveau viennent de se fermer devant moi. Je laisse tourner le moteur ?
   reponse: Non, je coupe le moteur pendant cet arrêt prolongé, ou laisse agir le Stop & Start.
@@ -24,7 +24,7 @@
     désembuage) ; il n’y a pas de compte à rebours universel à appliquer à chaque arrêt dans la circulation.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
 - id: e-frein-moteur
   question: Qu'est-ce que le frein moteur et pourquoi l'utiliser ?
   reponse: 'Le ralentissement obtenu en relâchant l’accélérateur avec un rapport engagé : il maîtrise l’allure et limite l’échauffement
@@ -33,7 +33,7 @@
     Ce n’est pas une promesse universelle ; une électrique peut récupérer de l’énergie, dans les limites de son système.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
 - id: e-climatisation-conso
   question: Par forte chaleur, comment utiliser la climatisation sans gaspiller ni compromettre la conduite ?
   reponse: Aérer d’abord l’habitacle surchauffé, puis utiliser une climatisation modérée, vitres fermées.
@@ -42,8 +42,7 @@
     de la chaleur et de l’usage ; aucun seuil de vitesse universel ne décide à lui seul du meilleur choix.
   theme: E
   sous_theme: ecoconduite
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
-    ; notice Renault Captur, Air conditionné — https://www.user-manual.renault.com/sites/renault/files/Captur-1238-6_FRA.pdf
+  source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 ; notice Renault Captur, Air conditionné, https://www.user-manual.renault.com/sites/renault/files/Captur-1238-6_FRA.pdf"
 - id: e-surconsommations-causes
   question: En dehors de ma façon de conduire, quels facteurs liés au véhicule augmentent la consommation ?
   reponse: La climatisation utilisée sans besoin, les accessoires de toit (résistance à l’air), une charge inutile et des
@@ -52,7 +51,7 @@
     le désembuage et le confort thermique nécessaires à la sécurité ; régler la pression selon la notice.'
   theme: E
   sous_theme: ecoconduite
-  source: ADEME ; Codeclic — Conduite économique ; Ornikar — Conduite écologique
+  source: "ADEME ; Codeclic, Conduite économique ; Ornikar, Conduite écologique"
 - id: e-polluant-co2
   question: Pourquoi le CO₂ ne se traite-t-il pas comme les autres polluants d'un véhicule ?
   reponse: Le CO₂ contribue au réchauffement climatique ; NOx et particules dégradent l’air respiré. Réduire l’un ne supprime
@@ -61,7 +60,7 @@
     pas ce gaz. Ne pas en déduire que le CO₂ serait inoffensif à toute concentration.
   theme: E
   sous_theme: pollution
-  source: ADEME — https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2
+  source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
 - id: e-particules-usure
   question: En dehors de l'échappement, d'où viennent les particules fines émises par une voiture ?
   reponse: De l’usure des freins, des pneus et de la chaussée, ainsi que de la remise en suspension des dépôts.
@@ -69,7 +68,7 @@
     ; la décision utile est de limiter les trajets, accélérations et freinages inutiles.
   theme: E
   sous_theme: pollution
-  source: ADEME ; En Voiture Simone — Achat éco-responsable
+  source: "ADEME ; En Voiture Simone, Achat éco-responsable"
 - id: e-critair-classes
   question: Sur quoi repose la classe Crit'Air d'un véhicule ?
   reponse: Sur la catégorie du véhicule, sa motorisation et sa norme Euro, ou à défaut sa date de première immatriculation.
@@ -77,7 +76,7 @@
     et le simulateur officiel ; Crit’Air ne mesure pas la consommation réelle.
   theme: E
   sous_theme: pollution
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/vosdroits/F33371
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F33371"
 - id: e-zfe-definition
   question: Qu'est-ce qu'une ZFE (zone à faibles émissions mobilité) ?
   reponse: Une zone urbaine délimitée par des panneaux où les véhicules les plus polluants (selon leur vignette Crit’Air)
@@ -94,7 +93,7 @@
     et les catégories admises dépendent de l'arrêté du jour.
   theme: E
   sous_theme: pollution
-  source: service-public.fr — Pic de pollution ; arrêtés préfectoraux
+  source: "service-public.fr, Pic de pollution ; arrêtés préfectoraux"
 - id: e-bruit-sources
   question: Quelles nuisances sonores un conducteur peut-il éviter ?
   reponse: Les coups de klaxon inutiles, un échappement défectueux ou modifié et les accélérations bruyantes.
@@ -111,7 +110,7 @@
     sa voiture en station plutôt que dans la rue évite le rejet d'hydrocarbures dans les eaux pluviales.
   theme: E
   sous_theme: pollution
-  source: ADEME — Déchets automobiles
+  source: "ADEME, Déchets automobiles"
 - id: e-ecomobilite-choix
   question: Qu'est-ce que l'écomobilité ?
   reponse: Choisir pour chaque déplacement le mode le moins polluant (marche, vélo, transports en commun, covoiturage) et
@@ -120,7 +119,7 @@
     et forfait mobilités durables complètent l'offre.
   theme: E
   sous_theme: ecomobilite
-  source: ADEME — Se déplacer autrement
+  source: "ADEME, Se déplacer autrement"
 - id: e-covoiturage-voie
   question: Comment reconnaît-on une voie réservée au covoiturage ?
   reponse: 'Au losange blanc au sol ou sur panneau lumineux : aux heures indiquées, voie réservée au covoiturage (au moins
@@ -138,7 +137,7 @@
     freins émettent aussi des particules.
   theme: E
   sous_theme: ecomobilite
-  source: ADEME — Car Labelling ; service-public.fr
+  source: "ADEME, Car Labelling ; service-public.fr"
 - id: e-ve-recharge
   question: Que faut-il prévoir pour partir loin en voiture électrique ?
   reponse: 'Les bornes compatibles sur le trajet, leur puissance, le temps de recharge et une marge d''autonomie :
@@ -155,7 +154,7 @@
     sa production consomme beaucoup d'énergie. Distinguer carburant, propulsion et production de l'énergie.
   theme: E
   sous_theme: ecomobilite
-  source: En Voiture Simone — Achat éco-responsable ; service-public.fr F33371
+  source: "En Voiture Simone, Achat éco-responsable ; service-public.fr F33371"
 - id: e-e85
   question: Qu'est-ce que le superéthanol E85 ?
   reponse: Un carburant contenant jusqu’à 85 % de bioéthanol, réservé aux véhicules flex-fuel ou à boîtier homologué ; moins
@@ -164,4 +163,4 @@
     essences récentes. En cas d'erreur de carburant, on ne démarre pas et on fait vidanger le réservoir.
   theme: E
   sous_theme: ecomobilite
-  source: En Voiture Simone — Achat éco-responsable ; ADEME
+  source: "En Voiture Simone, Achat éco-responsable ; ADEME"

@@ -1,10 +1,10 @@
-# Code de la route 2026 — deck Anki
+# Deck Anki du Code de la route 2026
 
 Un deck Anki en français pour **réussir l’épreuve théorique générale** (ETG, permis B) telle qu’elle existe
 en 2026, et comprendre les règles assez bien pour les appliquer à des situations nouvelles.
 Il est généré à partir d’une bibliothèque de connaissances écrite à la main (`data/`) par le code de `build/`.
 
-**[Télécharger le paquet](out/Code-de-la-route-2026.apkg)** — effectifs exacts dans [STATS](out/STATS.md)
+**[Télécharger le paquet](out/Code-de-la-route-2026.apkg)**. Effectifs exacts dans [STATS](out/STATS.md)
 (1 051 notes, 1 125 cartes). Le deck relie les signaux, les règles, les décisions et des scénarios dessinés à
 49 objectifs d’apprentissage. Il ne contient pas de photographies d’examen.
 
@@ -87,11 +87,11 @@ Les rapports [d’import](out/VERIFICATION.md) et [de rendu](out/RENDU.md) ident
 par son SHA-256. Ils ne constituent pas une validation juridique exhaustive ; la portée des consultations
 est dans le [registre des sources](data/_meta/source_checks.yaml).
 
-- [Conception](docs/conception.md) — ce que le deck optimise, les formes de cartes, les principes de rédaction.
-- [Maintenance](docs/maintenance.md) — structure des données, procédure de modification, contrôles.
-- [Sources](docs/sources.md) — références utilisées et registre des consultations.
-- [Comparaison avec le livre](docs/research/comparaison-livre-2025-2026.md) — apports retenus, divergences et limites.
-- [Historique](CHANGELOG.md) — les éditions successives.
+- [Conception](docs/conception.md) : ce que le deck optimise, les formes de cartes, les principes de rédaction.
+- [Maintenance](docs/maintenance.md) : structure des données, procédure de modification, contrôles.
+- [Sources](docs/sources.md) : références utilisées et registre des consultations.
+- [Comparaison avec le livre](docs/research/comparaison-livre-2025-2026.md) : apports retenus, divergences et limites.
+- [Historique](CHANGELOG.md) : les éditions successives.
 
 ## Licences
 

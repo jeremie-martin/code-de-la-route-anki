@@ -5,7 +5,7 @@
   pourquoi: 'R415-11 : dès qu''un piéton s''engage ou manifeste clairement l''intention de traverser, je cède le passage, au besoin en m''arrêtant. Son inattention ne me dispense de rien (refus : 135 €, 6 points).'
   theme: U
   sous_theme: pietons
-  source: 'Code de la route, art. R415-11 ; Ornikar — Priorité piéton'
+  source: "Code de la route, art. R415-11 ; Ornikar, Priorité piéton"
 - id: aff-u-pieton-imprudent
   contexte: Un piéton traverse en courant hors passage, alors qu'un passage protégé se trouve à 20 m.
   affirmation: Comme il est en tort, je ne suis pas tenu de ralentir.
@@ -13,7 +13,7 @@
   pourquoi: 'R412-6 impose une prudence accrue envers les usagers vulnérables, y compris lorsqu''ils se montrent imprudents : je ralentis et je le laisse passer. Son amende de 4 € ne m''exonère de rien.'
   theme: U
   sous_theme: pietons
-  source: 'Code de la route, art. R412-6 et R412-37 ; securite-routiere.gouv.fr — Réglementation des piétons'
+  source: "Code de la route, art. R412-6 et R412-37 ; securite-routiere.gouv.fr, Réglementation des piétons"
 - id: aff-u-pieton-passage-50m
   contexte: Je suis piéton à un carrefour ordinaire, hors zone de rencontre et aire piétonne.
     Aucun passage piéton n’est aménagé à proximité ; il n’y a ni feu ni agent.
@@ -23,7 +23,7 @@
     la circulation. L’absence de passage proche ne permet pas de choisir n’importe quelle trajectoire.
   theme: U
   sous_theme: pietons
-  source: Code de la route, R412-37 et R412-39 — https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177125/
+  source: "Code de la route, R412-37 et R412-39, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177125/"
 - id: aff-u-place-pmr
   contexte: Je dépose un passager devant un commerce ; la seule place libre porte le marquage « personnes handicapées ».
   affirmation: Un arrêt de deux minutes y est admis.
@@ -58,8 +58,7 @@
     ne pas présumer avoir été vu.
   theme: U
   sous_theme: pietons
-  source: Code de la route, R413-17 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/
-    ; R313-3
+  source: "Code de la route, R413-17, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/ ; R313-3"
 - id: aff-u-velo-bande-obligatoire
   contexte: Je suis à vélo ; une bande cyclable signalée par un panneau carré bleu longe la chaussée.
   affirmation: Je dois l'emprunter et quitter la chaussée.
@@ -103,7 +102,7 @@
   pourquoi: 'R412-6-1 interdit à tout conducteur le port à l''oreille d''un dispositif émettant du son, vélo et trottinette électrique compris : 135 €. Sans permis en jeu, il n''y a simplement pas de retrait de points.'
   theme: U
   sous_theme: cyclistes
-  source: 'Code de la route, art. R412-6-1 ; securite-routiere.gouv.fr — Règles de circulation pour les cyclistes'
+  source: "Code de la route, art. R412-6-1 ; securite-routiere.gouv.fr, Règles de circulation pour les cyclistes"
 - id: aff-u-velo-double-sens-zone30
   contexte: Je suis à vélo dans une zone 30 ; la rue est à sens unique pour les voitures.
   affirmation: Je peux la remonter à contresens, même sans panonceau « sauf vélos ».
@@ -119,7 +118,7 @@
   pourquoi: Ce panonceau autorise les usagers concernés à franchir le feu dans la seule direction fléchée, en cédant aux piétons et aux véhicules qui ont le vert. Il ne donne aucune priorité.
   theme: U
   sous_theme: cyclistes
-  source: 'IISR (panonceau M12) ; Cerema — Doctrine cédez-le-passage cycliste au feu'
+  source: "IISR (panonceau M12) ; Cerema, Doctrine cédez-le-passage cycliste au feu"
   comparaisons:
   - ref: m12
     legende: Passage autorisé uniquement dans les directions fléchées, en cédant.
@@ -180,7 +179,7 @@
   pourquoi: 'Elle ne vise que les deux-roues circulant en inter-files. Les automobilistes restent soumis à la vitesse normalement autorisée sur leur voie.'
   theme: U
   sous_theme: motos
-  source: 'Sécurité routière — Exemples de nouvelles questions (Q16) ; Code de la route, art. R412-11-3'
+  source: "Sécurité routière, Exemples de nouvelles questions (Q16) ; Code de la route, art. R412-11-3"
 - id: aff-u-moto-vitesse-approche
   contexte: Je suis motard ; en face, une voiture attend pour tourner à gauche devant moi.
   affirmation: Son conducteur évalue ma vitesse d'approche aussi bien que celle d'une voiture.
@@ -188,14 +187,14 @@
   pourquoi: 'Un phare unique et une silhouette étroite font paraître la moto plus loin et plus lente qu''elle ne l''est : c''est le mécanisme du « je ne l''ai pas vue arriver si vite ». Je couvre mes freins et je me rends visible.'
   theme: U
   sous_theme: motos
-  source: 'securite-routiere.gouv.fr — Être visible à moto'
+  source: "securite-routiere.gouv.fr, Être visible à moto"
 - id: aff-u-moto-feux-jour
   affirmation: Une moto ou un cyclomoteur doit circuler feux de croisement (ou feux de jour) allumés, même en plein soleil.
   verdict: vrai
   pourquoi: 'R416-17 : l''allumage de jour est imposé aux deux-roues motorisés pour compenser leur faible surface visible. Cela ne suffit pas à les rendre détectables : l''automobiliste doit regarder deux fois.'
   theme: U
   sous_theme: motos
-  source: 'Code de la route, art. R416-17 ; securite-routiere.gouv.fr — Être visible à moto'
+  source: "Code de la route, art. R416-17 ; securite-routiere.gouv.fr, Être visible à moto"
 # ---------- Poids lourds, bus, tramways ----------
 - id: aff-u-pl-retroviseur
   contexte: Arrêté au feu à côté d'un camion, je ne distingue pas le visage de son conducteur dans son rétroviseur.
@@ -205,7 +204,7 @@
     qu’il m’a remarqué : je reste hors de sa trajectoire et évite de me placer à côté.'
   theme: U
   sous_theme: poids_lourds
-  source: 'securite-routiere.gouv.fr — Vrai ou faux : les angles morts'
+  source: "securite-routiere.gouv.fr, Vrai ou faux : les angles morts"
 - id: aff-u-pl-voie-gauche
   contexte: Autoroute à trois voies dans mon sens ; un poids lourd rattrape deux véhicules plus lents.
   affirmation: Il peut utiliser la voie de gauche le temps de les dépasser.
@@ -218,7 +217,7 @@
   contexte: Hors agglomération, un autocar met son clignotant gauche pour quitter son arrêt.
   affirmation: Je dois ralentir et, au besoin, m'arrêter pour le laisser repartir.
   verdict: faux
-  pourquoi: 'R412-11 ne vaut qu''« en agglomération » : hors agglomération, c''est au car d''attendre un créneau. Je peux lui faciliter le passage, mais il n''a aucune priorité — piège classique de l''épreuve.'
+  pourquoi: "R412-11 ne vaut qu'en agglomération. Hors agglomération, c'est au car d'attendre un créneau. Je peux lui faciliter le passage, mais il n'a aucune priorité."
   theme: U
   sous_theme: transports_commun
   source: 'Code de la route, art. R412-11'

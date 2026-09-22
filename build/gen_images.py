@@ -552,7 +552,7 @@ def tableau_lecture(params):
     height = top + 62 * (len(rows) + 1) + 2
     S = SVG(width, height)
     S.add(f'<rect width="{width}" height="{height}" fill="#fff"/>')
-    S.add(f'<text x="270" y="32" font-family="{FONT}" font-size="20" text-anchor="middle" fill="#555">Exercice — données fictives</text>')
+    S.add(f'<text x="270" y="32" font-family="{FONT}" font-size="20" text-anchor="middle" fill="#555">Exercice avec données fictives</text>')
     S.add(f'<text x="270" y="72" font-family="{FONT}" font-size="30" font-weight="700" text-anchor="middle" fill="#222">{esc(params["title"])}</text>')
     for row_index, row in enumerate([columns] + rows):
         if len(row) != len(columns):

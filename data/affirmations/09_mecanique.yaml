@@ -1,4 +1,4 @@
-# M — La mécanique et les équipements : affirmations à juger VRAI/FAUX.
+# M : La mécanique et les équipements : affirmations à juger VRAI/FAUX.
 # Priorité aux aides à la conduite (ADAS), sous-représentées en v1 alors que trois des vingt
 # questions officielles en relèvent (voyant ABS, assistance au stationnement, quitter un stationnement).
 - id: aff-m-voyant-orange-arret
@@ -9,7 +9,7 @@
     en sécurité, par exemple pour une perte de pression. La notice précise la conduite à tenir.'
   theme: M
   sous_theme: tableau_de_bord
-  source: Ornikar — Voyants lumineux ; En Voiture Simone — Tableau de bord
+  source: "Ornikar, Voyants lumineux ; En Voiture Simone, Tableau de bord"
 - id: aff-m-autotest-voyants
   contexte: La notice prévoit que le témoin d’airbag s’allume brièvement à la mise du contact.
   affirmation: Un voyant qui ne s'allume pas du tout à ce moment-là est bon signe.
@@ -18,7 +18,7 @@
     de l’autotest dépend du véhicule, tous les témoins ne s’allument pas systématiquement.
   theme: M
   sous_theme: tableau_de_bord
-  source: Renault, témoins lumineux — https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux
+  source: "Renault, témoins lumineux, https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux"
 - id: aff-m-voyant-abs-blocage
   contexte: Le voyant ABS orange reste allumé, sans autre alerte ni anomalie du freinage.
   affirmation: Lors d'un freinage d'urgence, les roues risquent de se bloquer.
@@ -27,7 +27,7 @@
     J’augmente les marges et fais contrôler selon la notice.'
   theme: M
   sous_theme: tableau_de_bord
-  source: Sécurité routière — Exemples de nouvelles questions (Q5)
+  source: "Sécurité routière, Exemples de nouvelles questions (Q5)"
 - id: aff-m-voyant-abs-arret
   contexte: Seul le voyant ABS orange reste allumé ; aucun voyant rouge ni anomalie du freinage ordinaire.
   affirmation: Je dois m'arrêter immédiatement.
@@ -36,7 +36,7 @@
     les distances et fais contrôler rapidement selon la notice. Si le freinage devient anormal, je m’arrête en sécurité.
   theme: M
   sous_theme: voyants
-  source: Sécurité routière — Exemples de nouvelles questions (Q5)
+  source: "Sécurité routière, Exemples de nouvelles questions (Q5)"
 - id: aff-m-abs-direction
   contexte: Un obstacle surgit, je freine en urgence sur un véhicule équipé de l'ABS.
   affirmation: Je peux continuer à braquer pendant le freinage pour contourner l'obstacle.
@@ -44,7 +44,7 @@
   pourquoi: 'C''est tout l''intérêt de l''ABS : les roues ne se bloquent pas, donc elles continuent de diriger le véhicule. Sans ABS, des roues bloquées dérapent tout droit malgré le volant.'
   theme: M
   sous_theme: freinage
-  source: Stych — Aides à la conduite ; Ornikar — ABS
+  source: "Stych, Aides à la conduite ; Ornikar, ABS"
 - id: aff-m-frein-main-4-roues
   affirmation: Le frein de stationnement remplace le frein principal pour un freinage d’urgence ordinaire.
   verdict: faux
@@ -53,14 +53,14 @@
     levier mécanique.
   theme: M
   sous_theme: freinage
-  source: Ornikar — Frein à main ; Stych — Pannes
+  source: "Ornikar, Frein à main ; Stych, Pannes"
 - id: aff-m-pression-chaud
   affirmation: La pression des pneus se contrôle après quelques kilomètres, quand ils sont chauds.
   verdict: faux
   pourquoi: 'Elle se contrôle à froid (plus de 2 h d''arrêt ou moins de 3 km). À chaud la pression monte : on ne dégonfle pas un pneu chaud, et si l''on doit gonfler à chaud on majore de 0,3 bar.'
   theme: M
   sous_theme: pneus
-  source: securite-routiere.gouv.fr — Pneus ; Michelin — Vérifier la pression
+  source: "securite-routiere.gouv.fr, Pneus ; Michelin, Vérifier la pression"
 - id: aff-m-chargement-pression
   contexte: Coffre plein de valises pour un départ en vacances.
   affirmation: Je diminue la pression des pneus pour gagner en confort.
@@ -69,14 +69,14 @@
     provoque sous-gonflage et échauffement. Je vérifie aussi le réglage des feux.
   theme: M
   sous_theme: pneus
-  source: Michelin — https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus
+  source: "Michelin, https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus"
 - id: aff-m-surgonflage
   affirmation: Un pneu surgonflé s'use au centre de la bande de roulement et adhère moins.
   verdict: vrai
   pourquoi: 'Trop gonflé, le pneu bombe et ne porte plus que par le centre : surface de contact réduite, adhérence et confort dégradés. Sous-gonflé, c''est l''inverse : il s''use sur les épaules et chauffe.'
   theme: M
   sous_theme: pneus
-  source: Michelin — Usure des pneus ; Ornikar — Sous-gonflage
+  source: "Michelin, Usure des pneus ; Ornikar, Sous-gonflage"
 - id: aff-m-pneus-neufs-arriere
   contexte: Je ne fais remplacer que deux pneus sur quatre.
   affirmation: Je fais monter les pneus neufs à l'arrière.
@@ -84,14 +84,14 @@
   pourquoi: 'Les pneus les plus adhérents vont à l''arrière : un train arrière qui décroche part en survirage, bien plus difficile à rattraper qu''un sous-virage. Les deux pneus d''un même essieu doivent être identiques.'
   theme: M
   sous_theme: pneus
-  source: Michelin — Mixage des pneus ; Ornikar — Même essieu
+  source: "Michelin, Mixage des pneus ; Ornikar, Même essieu"
 - id: aff-m-pneu-age
   affirmation: Un pneu de plus de dix ans doit être remplacé, même s'il a très peu roulé.
   verdict: vrai
   pourquoi: 'La gomme vieillit et se fissure indépendamment du kilométrage. Le DOT à quatre chiffres (semaine et année) donne l''âge ; un contrôle professionnel s''impose dès cinq à six ans.'
   theme: M
   sous_theme: pneus
-  source: Allopneus — Durée de vie d'un pneu ; Ornikar — Vérifier le flanc
+  source: "Allopneus, Durée de vie d'un pneu ; Ornikar, Vérifier le flanc"
 - id: aff-m-4-saisons-3pmsf
   contexte: Zone soumise à la loi Montagne, période hivernale.
   affirmation: Des pneus 4 saisons marqués du symbole alpin 3PMSF comptent comme des pneus hiver.
@@ -109,14 +109,14 @@
     l’absence de danger.'
   theme: M
   sous_theme: entretien
-  source: Ornikar — Liquide de refroidissement
+  source: "Ornikar, Liquide de refroidissement"
 - id: aff-m-boite-auto-p-arret
   affirmation: Sur une boîte automatique, on n'engage P ou R qu'une fois le véhicule complètement arrêté.
   verdict: vrai
   pourquoi: 'Passer P ou R en mouvement abîme la transmission. On démarre en P ou N, pied sur le frein ; en descente on n''utilise pas N, qui supprime le frein moteur et le contrôle du véhicule.'
   theme: M
   sous_theme: entretien
-  source: Stych — La boîte automatique ; service-public.fr F2828
+  source: "Stych, La boîte automatique ; service-public.fr F2828"
 - id: aff-m-feu-grille-nuit
   contexte: Un feu de croisement est grillé, je dois rouler ce soir.
   affirmation: Rouler ainsi la nuit peut entraîner l'immobilisation du véhicule.
@@ -132,7 +132,7 @@
   pourquoi: 'Il doit surveiller vers l''avant comme vers l''arrière : la loi lui impose de garder le contrôle de la manœuvre et de pouvoir l''interrompre à tout instant (R412-6-3). Les capteurs ignorent un enfant ou un poteau fin.'
   theme: M
   sous_theme: adas
-  source: Sécurité routière — Exemples de nouvelles questions (Q8) ; Code de la route, art. R412-6-3
+  source: "Sécurité routière, Exemples de nouvelles questions (Q8) ; Code de la route, art. R412-6-3"
 - id: aff-m-regulateur-obstacle
   contexte: Régulateur de vitesse simple (non adaptatif) enclenché à 80 km/h ; le véhicule devant ralentit.
   affirmation: Le régulateur va adapter ma vitesse à celle du véhicule devant.
@@ -141,7 +141,7 @@
     Un régulateur adaptatif peut agir sur la vitesse et les freins, mais sa détection et son freinage ont aussi des limites.
   theme: M
   sous_theme: adas
-  source: CNSR, Les aides à la conduite, 2024 ; Renault — https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10
+  source: "CNSR, Les aides à la conduite, 2024 ; Renault, https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10"
 - id: aff-m-regulateur-conditions
   contexte: Ma voiture possède un régulateur de vitesse simple, non adaptatif.
   affirmation: Il est déconseillé de l’utiliser en circulation dense ou sur chaussée glissante.
@@ -150,7 +150,7 @@
     peuvent être inadaptées à l’adhérence. Je conduis moi-même à une allure adaptée et respecte les conditions d’utilisation de la notice.
   theme: M
   sous_theme: adas
-  source: Renault, Régulateur de vitesse — https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10
+  source: "Renault, Régulateur de vitesse, https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10"
 - id: aff-m-limiteur-descente
   contexte: Limiteur réglé sur 90 km/h, longue descente.
   affirmation: Le limiteur garantit le respect de 90 km/h dans toute descente.
@@ -159,7 +159,7 @@
     Je surveille la vitesse et la maîtrise avec le frein moteur et les freins ; je ne suppose pas que le limiteur freinera à ma place.
   theme: M
   sous_theme: adas
-  source: Renault, Limiteur de vitesse — https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4
+  source: "Renault, Limiteur de vitesse, https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4"
 - id: aff-m-angle-mort-moto
   affirmation: Le détecteur d’angle mort peut ne pas signaler une moto qui remonte vite la file voisine.
   verdict: vrai
@@ -167,7 +167,7 @@
     Je combine rétroviseurs et contrôle direct de l’angle mort juste avant de me déporter, en continuant à surveiller devant.
   theme: M
   sous_theme: adas
-  source: Renault Express, Avertisseur d’angle mort — https://www.user-manual.renault.com/fr/content/xjk/driving/additional-driving-aid-functions/avertisseur-dangle-mort
+  source: "Renault Express, Avertisseur d’angle mort, https://www.user-manual.renault.com/fr/content/xjk/driving/additional-driving-aid-functions/avertisseur-dangle-mort"
 - id: aff-m-detecteur-fatigue
   contexte: Ma voiture est équipée d’un détecteur de fatigue (pictogramme « tasse de café »).
   affirmation: Tant que le détecteur ne m'alerte pas, je peux considérer que je suis apte à poursuivre.
@@ -177,7 +177,7 @@
     café n’est qu’une suggestion de pause.'
   theme: M
   sous_theme: adas
-  source: securite-routiere.gouv.fr — Les aides à la conduite (ADAS), comité des experts du CNSR, 2024
+  source: "securite-routiere.gouv.fr, Les aides à la conduite (ADAS), comité des experts du CNSR, 2024"
 - id: aff-m-isa-panneaux
   contexte: Voiture neuve équipée de l’adaptation intelligente de la vitesse (ISA), obligatoire depuis juillet 2024.
   affirmation: La limitation affichée par le système me dispense de lire les panneaux.
@@ -187,7 +187,7 @@
     responsable de sa vitesse.'
   theme: M
   sous_theme: adas
-  source: securite-routiere.gouv.fr — Les aides à la conduite (ADAS) ; règlement (UE) 2019/2144 (GSR2)
+  source: "securite-routiere.gouv.fr, Les aides à la conduite (ADAS) ; règlement (UE) 2019/2144 (GSR2)"
 - id: aff-m-tpms-orange
   contexte: En roulant, le voyant orange de pression des pneus s'allume ; la voiture ne tire pas et ne vibre pas.
   affirmation: Je peux continuer normalement jusqu'à ma destination et contrôler la pression plus tard.
@@ -206,7 +206,7 @@
     Le maintien d’un intervalle avec un véhicule suivi ne garantit pas un arrêt d’urgence devant un nouvel obstacle.
   theme: M
   sous_theme: adas
-  source: Renault Austral, Régulateur adaptatif — https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-adaptatif-0
+  source: "Renault Austral, Régulateur adaptatif, https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-adaptatif-0"
 - id: aff-m-camera-recul
   contexte: Ma voiture est équipée d'une caméra de recul et de capteurs de stationnement.
   affirmation: Grâce à eux, je peux reculer sans contrôler les rétroviseurs ni l'angle mort.
@@ -215,7 +215,7 @@
     capteurs, rétroviseurs et regard vers l'arrière se complètent.
   theme: M
   sous_theme: adas
-  source: CNSR, Comité des experts — Les aides à la conduite (ADAS), 2024
+  source: "CNSR, Comité des experts, Les aides à la conduite (ADAS), 2024"
 - id: aff-m-voyant-abs-distance
   contexte: Le voyant ABS reste allumé en permanence ; le freinage ordinaire fonctionne.
   affirmation: 'Le freinage ordinaire fonctionne encore : je conserve donc aussi la protection contre le blocage
@@ -226,8 +226,7 @@
     La distance d’arrêt dépend aussi du sol, des pneus et du freinage : ce seul voyant ne permet pas de la prédire.'
   theme: M
   sous_theme: freinage
-  source: 'Renault — témoin ABS : https://www.user-manual.renault.com/fr/notice/indicator/108271 ; Sécurité routière
-    — vitesse et distances de sécurité, juin 2003'
+  source: "Renault, témoin ABS : https://www.user-manual.renault.com/fr/notice/indicator/108271 ; Sécurité routière, vitesse et distances de sécurité, juin 2003"
 - id: aff-m-clignotant-rapide
   contexte: En actionnant le clignotant, le témoin vert clignote deux fois plus vite que d'habitude.
   affirmation: Cela signale qu'une ampoule de clignotant est grillée.

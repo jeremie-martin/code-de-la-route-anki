@@ -243,23 +243,23 @@ def lint(data: dict[str, list[dict]]) -> list[str]:
         for it in data[kind]:
             tr = track_of(kind, it)
             if tr in SUBTHEME_ORDER and it["sous_theme"] not in SUBTHEME_ORDER[tr]:
-                warn.append(f"{it['id']}: sous-thème « {it['sous_theme']} » absent de SUBTHEME_ORDER[{tr}] — faute de frappe, ou à ajouter à l'ordre")
+                warn.append(f"{it['id']}: sous-thème « {it['sous_theme']} » absent de SUBTHEME_ORDER[{tr}] ; vérifier l'orthographe ou compléter l'ordre")
     for it in data["faits"]:
         n = sorted({int(x) for x in CLOZE_RE.findall(it.get("texte", ""))})
         if len(n) > 1 and "rappels" not in it and not it.get("multi_ok"):
-            warn.append(f"{it['id']}: {len(n)} trous dans une même phrase — chaque trou se rappelle-t-il sans lire les autres ?")
+            warn.append(f"{it['id']}: {len(n)} trous dans une même phrase. Chaque trou se rappelle-t-il sans lire les autres ?")
     seen_answers: dict[str, str] = {}
     yes_no = Counter()
     for it in data["questions"]:
         key = norm_text(it.get("reponse"))
         if len(key) > 30 and key in seen_answers:
-            warn.append(f"{it['id']}: réponse identique à {seen_answers[key]} — doublon probable")
+            warn.append(f"{it['id']}: réponse identique à {seen_answers[key]} (doublon probable)")
         seen_answers.setdefault(key, it["id"])
         m = re.match(r"\s*(oui|non)\b", str(it.get("reponse", "")), re.I)
         if m:
             yes_no[m[1].lower()] += 1
     if sum(yes_no.values()) >= 20 and yes_no["non"] / sum(yes_no.values()) > 0.7:
-        warn.append(f"questions oui/non : {yes_no['non']} « non » pour {yes_no['oui']} « oui » — répondre « non » sans réfléchir devient rentable")
+        warn.append(f"questions oui/non : {yes_no['non']} « non » pour {yes_no['oui']} « oui ». Répondre « non » sans réfléchir devient rentable")
     verdicts = Counter()
     markers: dict[str, Counter] = {m: Counter() for m in STYLE_MARKERS}
     for it in data["affirmations"]:
@@ -270,12 +270,12 @@ def lint(data: dict[str, list[dict]]) -> list[str]:
                 markers[m][it.get("verdict")] += 1
     tot = verdicts["vrai"] + verdicts["faux"]
     if tot and not LINT_VRAI_SHARE[0] <= verdicts["vrai"] / tot <= LINT_VRAI_SHARE[1]:
-        warn.append(f"affirmations : {verdicts['vrai']} vrai / {verdicts['faux']} faux sur l'ensemble — examiner le risque de réponse devinable, sans imposer un quota")
+        warn.append(f"affirmations : {verdicts['vrai']} vrai / {verdicts['faux']} faux sur l'ensemble. Examiner le risque de réponse devinable, sans imposer un quota")
     for m, c in markers.items():
         n = c["vrai"] + c["faux"]
         if n >= 5 and max(c["vrai"], c["faux"]) / n >= 0.85:
             side = "vrai" if c["vrai"] >= c["faux"] else "faux"
-            warn.append(f"affirmations : « {m} » est {side} dans {max(c.values())} cas sur {n} — le style trahit le verdict")
+            warn.append(f"affirmations : « {m} » est {side} dans {max(c.values())} cas sur {n}. Le style trahit le verdict")
     return warn
 
 
@@ -393,8 +393,8 @@ def write_attributions(data):
         key, e = find(t)
         if not e:
             continue
-        author = re.sub(r"<[^>]+>", "", e.get("author") or "").strip() or "—"
-        lines.append(f"- [{key}](https://commons.wikimedia.org/wiki/{key.replace(' ', '_')}) — {e.get('license') or '?'} — {author}")
+        author = re.sub(r"<[^>]+>", "", e.get("author") or "").strip() or "auteur non renseigné"
+        lines.append(f"- [{key}](https://commons.wikimedia.org/wiki/{key.replace(' ', '_')}) ; licence : {e.get('license') or '?'} ; auteur : {author}")
     (OUT / "ATTRIBUTIONS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -828,7 +828,7 @@ def main(argv=None):
     warnings = lint(data)
     if warnings:
         print("\n".join("À RELIRE " + w for w in warnings))
-        print(f"{len(warnings)} avertissement(s) éditorial(aux) — à juger, pas à faire taire")
+        print(f"{len(warnings)} avertissement(s) éditorial(aux). Examiner leur pertinence")
     if args.check:
         return
     names = ensure_media(data, force=args.force_media)
@@ -851,7 +851,7 @@ def main(argv=None):
     themes = sorted({k[0] for k in by_theme}, key=lambda t: "XLCRUDAPMSE".index(t))
     for t in themes:
         subs = sorted({k[1] for k in by_theme if k[0] == t})
-        stats.append(f"- **{t} — {M.THEME_NAMES[t]}** : " + ", ".join(f"{sub} {by_theme[(t, sub)]}" for sub in subs) + "\n")
+        stats.append(f"- **{t} : {M.THEME_NAMES[t]}** : " + ", ".join(f"{sub} {by_theme[(t, sub)]}" for sub in subs) + "\n")
     (OUT / "STATS.md").write_text("".join(stats), encoding="utf-8")
     print(f"OK -> {out_apkg} ({n_notes} notes, {n_cards} cartes)")
     print("".join(stats))

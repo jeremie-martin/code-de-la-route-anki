@@ -8,7 +8,7 @@
     je ralentis et évite de le mettre en danger.
   theme: U
   sous_theme: pietons
-  source: Code de la route, R412-37 à R412-39, R412-6 et R415-11 — https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037411323
+  source: "Code de la route, R412-37 à R412-39, R412-6 et R415-11, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037411323"
 - id: u-pieton-canne-blanche
   question: Un piéton avec une canne blanche attend au bord de la chaussée. Que fais-je ?
   reponse: 'Je m’arrête et le laisse traverser, sans klaxonner : une personne malvoyante se repère au son et ne peut pas juger
@@ -17,14 +17,13 @@
     passer. Prudence accrue envers les usagers vulnérables (R412-6).'
   theme: U
   sous_theme: pietons
-  source: Code de la route, art. R412-6 et R415-11 ; securite-routiere.gouv.fr — Piétons
+  source: "Code de la route, art. R412-6 et R415-11 ; securite-routiere.gouv.fr, Piétons"
 - id: u-pieton-hors-agglo-cote
   question: Je suis piéton, hors agglomération, sans trottoir ni accotement praticable. De quel côté de la chaussée dois-je
     marcher ?
   reponse: Près du bord gauche, face aux véhicules, sauf danger particulier ; en fauteuil roulant ou en poussant un vélo,
     on tient la droite.
-  explication: Un cortège, un convoi ou une procession marche à droite, en laissant libre toute la moitié gauche (R412-42).
-    La nuit, vêtements clairs ou gilet réfléchissant sont recommandés — jamais obligatoires pour un piéton.
+  explication: "Un cortège, un convoi ou une procession marche à droite, en laissant libre toute la moitié gauche (R412-42). La nuit, les vêtements clairs ou le gilet réfléchissant sont recommandés pour un piéton, mais ne sont pas obligatoires."
   theme: U
   sous_theme: pietons
   source: Code de la route, art. R412-36 et R412-42
@@ -94,7 +93,7 @@
     se porte à gauche se dépasse par la droite, jamais par la gauche ; dans le doute, j''attends.'
   theme: U
   sous_theme: cyclistes
-  source: Code de la route, art. R412-10 et R414-6 ; En Voiture Simone — Les vélos
+  source: "Code de la route, art. R412-10 et R414-6 ; En Voiture Simone, Les vélos"
 - id: u-double-sens-cyclable
   question: Un sens interdit avec un panonceau « sauf vélos » est placé à l’autre entrée de la rue où je circule. Quel usager puis-je rencontrer en face ?
   reponse: 'Des cyclistes qui arrivent en face dans cette rue à sens unique (double-sens cyclable) : je me tiens à droite
@@ -131,7 +130,7 @@
     distance réellement suffisante reste nécessaire pour tourner sans la gêner.
   theme: U
   sous_theme: motos
-  source: securite-routiere.gouv.fr — Être visible à moto ; Code de la route, art. R415-4
+  source: "securite-routiere.gouv.fr, Être visible à moto ; Code de la route, art. R415-4"
 - id: u-interfiles
   question: Autoroute embouteillée, files ininterrompues sur toutes les voies ; une moto remonte entre les deux files de gauche.
     Que fais-je ?
@@ -151,7 +150,7 @@
     ne prouve pas qu’il me voit ; ne pas s’installer à côté d’un camion qui pourrait tourner.
   theme: U
   sous_theme: poids_lourds
-  source: 'securite-routiere.gouv.fr — Vrai ou faux : angles morts'
+  source: "securite-routiere.gouv.fr, Vrai ou faux : angles morts"
 - id: u-pl-tourne-droite
   question: Un poids lourd met son clignotant droit devant moi et se déporte vers la gauche. Que fait-il et que dois-je faire
     ?
@@ -161,7 +160,7 @@
     de la place. Un clignotant décrit une intention, pas une certitude sur la manœuvre exacte.'
   theme: U
   sous_theme: poids_lourds
-  source: Ornikar — Transports de marchandises ; securite-routiere.gouv.fr — Angles morts
+  source: "Ornikar, Transports de marchandises ; securite-routiere.gouv.fr, Angles morts"
 - id: u-pl-giratoire-deport
   question: Dans un carrefour à sens giratoire à deux voies, le poids lourd devant moi roule à cheval sur les deux voies.
     Puis-je le dépasser dans l'anneau ?
@@ -171,7 +170,7 @@
     qu''il semble libérer.'
   theme: U
   sous_theme: poids_lourds
-  source: securite-routiere.gouv.fr — Angles morts ; Ornikar — Transports de marchandises
+  source: "securite-routiere.gouv.fr, Angles morts ; Ornikar, Transports de marchandises"
 - id: u-pl-depasser-suivre
   question: Route à double sens, je suis derrière un poids lourd que je souhaite dépasser. Quelles précautions particulières
     ?
@@ -181,7 +180,7 @@
     suivent gardent au moins 50 m (R412-12).
   theme: U
   sous_theme: poids_lourds
-  source: Code de la route, art. R414-4 et R412-12 ; coursdecode — Les poids lourds
+  source: "Code de la route, art. R414-4 et R412-12 ; coursdecode, Les poids lourds"
 - id: u-matieres-dangereuses
   question: Que signifie la plaque orange à l'arrière d'un camion, et qu'est-ce que cela change pour moi ?
   reponse: 'Il transporte des matières dangereuses : distance de sécurité accrue ; en cas d’accident, je n’approche pas et
@@ -220,7 +219,7 @@
     approche (refus : 135 €, 4 points). Jamais de manœuvre dangereuse pour les piétons.'
   theme: U
   sous_theme: vehicules_prioritaires
-  source: Code de la route, art. R415-12 ; securite-routiere.gouv.fr — Info/intox
+  source: "Code de la route, art. R415-12 ; securite-routiere.gouv.fr, Info/intox"
 - id: u-ambulance-privee-sans-sirene
   question: Une ambulance privée arrive derrière moi, feux bleus à éclats allumés mais sans avertisseur sonore.
     Que fais-je ?
@@ -270,7 +269,7 @@
     masqués par l'outil attelé.
   theme: U
   sous_theme: vehicules_lents_animaux
-  source: Code de la route, art. R313-28 et R414-4 ; Ornikar — Véhicules lents
+  source: "Code de la route, art. R313-28 et R414-4 ; Ornikar, Véhicules lents"
 - id: u-cavalier-depassement
   question: Hors agglomération, un cavalier circule au bord droit de la route devant moi. Comment le dépasser ?
   reponse: 'Lentement, avec au moins 1,50 m d’écart (1 m en agglomération), sans klaxonner ni accélérer brusquement : un cheval
@@ -295,11 +294,10 @@
     Que dois-je en déduire ?
   reponse: 'Qu’elle ne peut pas aller plus vite (45 km/h par construction) et que son conducteur peut n’avoir que 14 ans :
     véhicule lent, dépassement sans forcer.'
-  explication: 'Une voiturette est interdite sur autoroute et voies rapides. Son conducteur est souvent très jeune ou très
-    âgé — donc peu expérimenté ou peu réactif : je lui laisse de la marge.'
+  explication: "Une voiturette est interdite sur autoroute et voies rapides. Son conducteur peut manquer d'expérience ou avoir besoin de plus de temps pour réagir. Je lui laisse de la marge."
   theme: U
   sous_theme: vehicules_lents_animaux
-  source: Code de la route, art. R311-1 et R421-2 ; service-public.fr — Permis AM
+  source: "Code de la route, art. R311-1 et R421-2 ; service-public.fr, Permis AM"
 - id: u-moto-ecart-chaussee
   question: Le motard qui me précède se déporte brusquement vers le milieu de la voie à l'approche d'une plaque d'égout mouillée.
     Que fais-je ?
@@ -309,7 +307,7 @@
     d''air d''un camion le déportent aussi : on ne le serre jamais.'
   theme: U
   sous_theme: motos
-  source: Code en Poche — Les motos ; Code de la route, art. R414-4
+  source: "Code en Poche, Les motos ; Code de la route, art. R414-4"
 - id: u-pl-insertion-autoroute
   question: Sur autoroute, un poids lourd chargé met son clignotant pour s'insérer depuis une bretelle, à ma hauteur. Que
     fais-je ?
@@ -319,7 +317,7 @@
     pour tous les véhicules et toutes les bretelles.
   theme: U
   sous_theme: poids_lourds
-  source: Code de la route, art. R421-3 ; coursdecode — Les poids lourds
+  source: "Code de la route, art. R421-3 ; coursdecode, Les poids lourds"
 - id: u-edpm-hors-agglo
   question: Je suis en trottinette électrique et je veux rejoindre le village voisin par une départementale limitée
     à 80 km/h. Est-ce permis ?
@@ -338,4 +336,4 @@
   reponse: 'Non : je respecte aussi cette obligation locale.'
   explication: Depuis août 2026, Paris et la petite couronne imposent ces équipements. Vérifier les prescriptions
     locales, sans transformer cette mesure en règle nationale.
-  source: Service Public — https://www.service-public.gouv.fr/particuliers/actualites/A19037
+  source: "Service Public, https://www.service-public.gouv.fr/particuliers/actualites/A19037"

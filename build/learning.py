@@ -79,7 +79,7 @@ def validate_objectives(data):
             errors.append(f"sign_exclusions.yaml : exclusion sans justification ({label})")
         for ident in decision['couverts_par']:
             if ident not in by_id:
-                errors.append(f"sign_exclusions.yaml : entrée {label} — couverture inconnue {ident}")
+                errors.append(f"sign_exclusions.yaml : entrée {label} : couverture inconnue {ident}")
     themes = {n["theme"] for n in by_id.values() if n["_stage"] == "socle"}
     if themes != set("XLCRUDAPMSE"):
         errors.append(f"socle : thèmes manquants {set('XLCRUDAPMSE') - themes}")
@@ -143,7 +143,7 @@ def write_reports(data, note_order, out):
                 "banque confidentielle de l'ETG.\n"]
     for obj in objectives():
         notes = [n for n in by_id.values() if obj["id"] in n["_objectives"]]
-        coverage.extend([f"## {obj['id']} — {obj['titre']}\n", obj["raison"] + "\n",
+        coverage.extend([f"## {obj['id']} : {obj['titre']}\n", obj["raison"] + "\n",
                          f"{len(notes)} notes / {sum(card_count(n) for n in notes)} cartes.\n",
                          "Recherche Anki : `objectif::" + obj["id"] + "`\n",
                          "| Note | Étape | Forme | Source |", "|---|---|---|---|"])
@@ -157,7 +157,7 @@ def write_reports(data, note_order, out):
              'sur l’écran de chaque sous-deck dans Anki. Ils donnent un cadre de raisonnement ; les cartes et leurs '
              'sources précisent les règles et leurs exceptions.\n']
     for lesson in lessons().values():
-        guide.extend([f"## {lesson['theme']} — {lesson['titre']}\n", lesson['principe'] + '\n',
+        guide.extend([f"## {lesson['theme']} : {lesson['titre']}\n", lesson['principe'] + '\n',
                       '**Exemple.** ' + lesson['exemple'] + '\n', '**Transfert.** ' + lesson['transfert'] + '\n'])
     (out / 'REPERES.md').write_text('\n'.join(guide) + '\n', encoding='utf-8')
     decisions = yaml.safe_load(OBJECTIVES.with_name('sign_exclusions.yaml').read_text(encoding='utf-8'))
