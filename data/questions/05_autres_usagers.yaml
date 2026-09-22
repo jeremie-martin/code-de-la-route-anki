@@ -188,7 +188,6 @@
   source: Accord ADR ; IISR (B18)
 - id: u-tram-depasser
   dedup_ok:
-  - aff-u-car-scolaire-depassement
   question: Un tramway est arrêté à sa station et des voyageurs descendent de mon côté. Que fais-je ?
   reponse: 'Je m''arrête et j''attends : on ne dépasse pas un tramway à l''arrêt du côté où les voyageurs montent
     ou descendent.'
@@ -217,17 +216,13 @@
   theme: U
   sous_theme: vehicules_prioritaires
   source: "Code de la route, art. R415-12 ; securite-routiere.gouv.fr, Info/intox"
-- id: u-ambulance-privee-sans-sirene
-  question: Une ambulance privée arrive derrière moi, feux bleus à éclats allumés mais sans avertisseur sonore.
-    Que fais-je ?
-  reponse: Je lui facilite le passage sans danger. Ses seuls feux bleus ne suffisent pas à m’imposer de lui céder
-    la priorité.
-  explication: Le statut dépend de la catégorie et de la mission, pas du seul mot « ambulance ». Une ambulance de
-    transport sanitaire bénéficie de facilités ; un véhicule affecté à l’intervention du SAMU peut être prioritaire.
-    La priorité de R415-12 suppose l’annonce par les avertisseurs spéciaux. Je ne fais aucune manœuvre dangereuse.
+- id: u-ambulance-trois-tons
+  question: Une ambulance de transport sanitaire arrive derrière moi, feux bleus à éclats et avertisseur trois tons en marche. Dois-je lui céder la priorité comme à des pompiers ?
+  reponse: 'Non : elle bénéficie de facilités de passage, pas de la priorité. Je lui facilite le passage si je peux le faire sans danger.'
+  explication: 'Deux tons, avec feux tournants : véhicule prioritaire, à qui je cède en toutes circonstances (R415-12). Trois tons : facilités de passage (R313-27, R313-34) ; je m''écarte ou je ralentis quand c''est sans danger, sans lui devoir la priorité à une intersection. Le mot « ambulance » ne suffit pas : l''avertisseur renseigne. Aucune manœuvre dangereuse.'
   theme: U
   sous_theme: vehicules_prioritaires
-  source: Code de la route, art. R311-1 (6.5 et 6.6), R415-12 et R414-2
+  source: Code de la route, art. R311-1, R313-27, R313-34 et R415-12
 - id: u-gyrophare-orange
   question: Un véhicule avec un gyrophare orange (dépanneuse, engin agricole, engin de voirie) approche. Que signale
     ce gyrophare ?
@@ -325,15 +320,6 @@
   theme: U
   sous_theme: edpm
   source: Code de la route, art. R412-43-1 II et III ; service-public.fr F308
-- id: u-edpm-regle-locale
-  theme: U
-  sous_theme: edpm
-  question: À trottinette électrique en ville, une règle locale impose casque et équipement rétro-réfléchissant
-    de jour. Puis-je appliquer seulement la règle nationale moins stricte ?
-  reponse: 'Non : je respecte aussi cette obligation locale.'
-  explication: Depuis août 2026, Paris et la petite couronne imposent ces équipements. Vérifier les prescriptions
-    locales, sans transformer cette mesure en règle nationale.
-  source: "Service Public, https://www.service-public.gouv.fr/particuliers/actualites/A19037"
 - id: u-cycliste-avant-droite
   question: Je vais tourner à droite dans 30 m. Un cycliste roule devant moi, près du bord droit. Que fais-je ?
   reponse: Je reste derrière lui et je tourne après son passage ; le dépasser juste avant de tourner reviendrait à lui

@@ -622,7 +622,7 @@ kr11:
 triangle-presignalisation:
   signification: Triangle rouge rétroréfléchissant à placer sur la chaussée pour signaler un véhicule immobilisé. Obligatoire
     à bord avec le gilet.
-  conduite: "Mettre le gilet avant de sortir et allumer les feux de détresse. Placer le triangle au moins 30 m en amont, sauf si sa pose m'expose au danger."
+  conduite: "Mettre le gilet avant de sortir et allumer les feux de détresse. Placer le triangle à environ 30 m en amont, davantage si nécessaire, sauf si sa pose m'expose au danger."
   complement: 'Sur autoroute, ne pas poser le triangle si cela met en danger : priorité à l''évacuation derrière la glissière.'
   piege: 'Ne pas revêtir le gilet ou ne pas présignaler : 135 €. Gilet non gardé à portée de main : 11 €.'
 vr-losange-debut:

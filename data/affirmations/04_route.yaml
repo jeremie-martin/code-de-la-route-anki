@@ -1,5 +1,4 @@
-# R : La route : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
-# Pièges tirés de docs/research/knowledge-facts.md R15 et des formes officielles Q10, Q13, Q18, Q19, Q20.
+# R : La route : affirmations à juger VRAI/FAUX.
 - id: aff-r-descente-150m
   contexte: Route de montagne hors agglomération, panneau triangulaire « descente dangereuse 15 % ».
   affirmation: La descente dangereuse à 15 % commence à environ 150 m.
@@ -206,10 +205,8 @@
 - id: aff-r-nuit-feux-position-agglo
   contexte: La nuit, en agglomération, sur une avenue bien éclairée.
   affirmation: En voiture, je peux me contenter de mes feux de position.
-  verdict: vrai
-  pourquoi: 'En agglomération, si l''éclairage public permet de voir distinctement assez loin, les feux de position
-    suffisent à une voiture, même sous la pluie (R416-6) ; pas à une moto. Les feux de croisement restent préférables
-    pour être mieux vu, et s''imposent dès que l''éclairage est insuffisant.'
+  verdict: faux
+  pourquoi: 'R416-6 II 2° : la nuit, en agglomération sur une route suffisamment éclairée, une voiture circule en feux de croisement (pas en feux de route). Les feux de position seuls ne sont admis, en agglomération bien éclairée, que lorsque la visibilité est réduite par la météo, en pratique de jour sous la pluie, et jamais pour une moto.'
   theme: R
   sous_theme: nuit
   source: Code de la route, art. R416-6 et R416-8

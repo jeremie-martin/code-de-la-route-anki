@@ -251,8 +251,7 @@
   source: "Décret n° 2021-873 ; securite-routiere.gouv.fr, ADAS"
 - id: m-panne-procedure-route
   question: 'Mon véhicule tombe en panne sur une route ordinaire : que faire dans l''ordre ?'
-  reponse: Je signale et me range en sécurité ; gilet avant de sortir ; occupants à l’abri ; triangle à 30 m au moins si sa
-    pose ne m’expose pas.
+  reponse: Je signale et me range en sécurité ; gilet avant de sortir ; occupants à l’abri ; triangle à environ 30 m en amont, davantage si nécessaire, si sa pose ne m’expose pas.
   explication: L’exception de danger pour la pose du triangle existe aussi hors autoroute. Ne pas s’exposer sur une route
     étroite ou sans visibilité pour le poser.
   theme: M

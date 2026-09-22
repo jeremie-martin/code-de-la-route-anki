@@ -41,15 +41,6 @@
   theme: C
   sous_theme: distances
   source: 'Cerema, Évaluation V80 (2020), annexe 2, temps de réaction et modèle de distance d’arrêt'
-- id: aff-c-vitesse-double-freinage-double
-  affirmation: Si je double ma vitesse, ma distance de freinage double aussi.
-  verdict: faux
-  pourquoi: 'Sous ces hypothèses, doubler la vitesse multiplie la distance de freinage par quatre. La réaction
-    est une autre composante : ne pas appliquer ce facteur à toute la distance d’arrêt.'
-  theme: C
-  sous_theme: distances
-  source: "securite-routiere.gouv.fr, La vitesse et la conduite ; Ornikar, Énergie cinétique"
-  contexte: 'Modèle simplifié : même adhérence et même décélération de freinage.'
 - id: aff-c-pieton-detectable-motard
   contexte: Je suis piéton. Une moto arrive près du passage où je veux traverser.
   affirmation: Si je vois le motard, je peux présumer qu’il m’a déjà repéré.
@@ -111,15 +102,6 @@
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, La fatigue et la conduite ; En Voiture Simone, Fatigue"
-- id: aff-c-micro-sommeil
-  affirmation: Un micro-sommeil de quelques secondes suffit à provoquer un accident mortel sur autoroute.
-  verdict: vrai
-  pourquoi: À 130 km/h, quatre secondes représentent environ 144 m parcourus sans surveillance. Il suffit de
-    quelques instants pour sortir de sa voie ou manquer un obstacle ; s’arrêter pour dormir dès les signes
-    de somnolence.
-  theme: C
-  sous_theme: deficiences
-  source: "Sécurité routière, https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf"
 - id: aff-c-repas-copieux
   affirmation: Un repas copieux avant de reprendre la route favorise la somnolence.
   verdict: vrai

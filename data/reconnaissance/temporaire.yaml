@@ -223,7 +223,7 @@
     params: {}
   nom: Triangle de présignalisation (véhicule en panne ou accidenté)
   signification: Triangle rouge rétroréfléchissant à placer sur la chaussée pour signaler un véhicule immobilisé. Obligatoire à bord avec le gilet.
-  conduite: Mettre le gilet avant de sortir et allumer les feux de détresse. Placer le triangle au moins 30 m en amont, sauf si sa pose m'expose au danger.
+  conduite: Mettre le gilet avant de sortir et allumer les feux de détresse. Placer le triangle à environ 30 m en amont, davantage si nécessaire, sauf si sa pose m'expose au danger.
   complement: 'Sur autoroute, ne pas poser le triangle si cela met en danger : priorité à l''évacuation derrière la glissière.'
   theme: L
   sous_theme: panneaux

@@ -39,16 +39,6 @@
   theme: U
   sous_theme: pietons
   source: 'Code de la route, art. R412-34 et R412-35'
-- id: aff-u-car-scolaire-depassement
-  contexte: Un car de transport d'enfants est arrêté sur le bas-côté, feux de détresse allumés.
-  affirmation: Je peux le dépasser à allure très réduite, à condition de pouvoir m'arrêter si un enfant surgit.
-  verdict: vrai
-  pourquoi: 'Aucun texte n''interdit ce dépassement : R413-17 impose de réduire fortement sa vitesse au croisement
-    comme au dépassement d''un transport d''enfants à l''arrêt. Un enfant peut surgir devant le car. L''interdiction
-    de dépasser vise le tramway ou le train à l''arrêt, du côté où des voyageurs montent ou descendent.'
-  theme: U
-  sous_theme: pietons
-  source: 'Code de la route, art. R413-17 III 3° et R414-13'
 - id: aff-u-pieton-nuit-croisement
   contexte: Je marche la nuit sur une route non éclairée, avec des vêtements sombres.
   affirmation: Je peux être découvert trop tard par un conducteur en feux de croisement.
@@ -156,14 +146,6 @@
   sous_theme: edpm
   source: 'Code de la route, art. R412-43-3 et R431-1-1 ; service-public.fr F308'
 # ---------- Motos et cyclomoteurs ----------
-- id: aff-u-interfiles-vitesse
-  contexte: Je suis motard, en inter-files sur une autoroute saturée ; les deux files avancent à 40 km/h.
-  affirmation: Je peux remonter les files à 70 km/h.
-  verdict: faux
-  pourquoi: 'R412-11-3 : 50 km/h au maximum en inter-files, et 30 km/h dès que l''une des deux files est à l''arrêt. Hors de ces conditions : 135 € et 3 points.'
-  theme: U
-  sous_theme: motos
-  source: 'Code de la route, art. R412-11-3 (décret n° 2025-33)'
 - id: aff-u-interfiles-files-gauche
   contexte: Je suis motard sur une autoroute à trois voies, circulation dense en files ininterrompues.
   affirmation: Je ne peux remonter qu'entre les deux files les plus à gauche.

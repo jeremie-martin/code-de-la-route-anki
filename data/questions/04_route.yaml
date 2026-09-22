@@ -305,9 +305,8 @@
   source: "securite-routiere.gouv.fr, Panne sur autoroute ; Code de la route, art. R421-7"
 - id: r-autoroute-usagers-interdits
   question: Quels usagers n'ont pas le droit de circuler sur autoroute ?
-  reponse: Piétons et animaux, véhicules sans moteur (vélos), cyclomoteurs et voiturettes, tracteurs et engins de travaux
-    publics.
-  explication: Ces usagers sont aussi interdits sur les routes réservées aux automobiles, signalées par une voiture de face sur fond bleu. Un élève en conduite accompagnée peut, lui, circuler sur autoroute.
+  reponse: Piétons et animaux, vélos, véhicules à moteur non immatriculés (trottinettes électriques), cyclomoteurs, petits tricycles et quadricycles à moteur (voiturettes comprises), tracteurs et engins agricoles ou de travaux publics.
+  explication: 'Point commun : ils ne peuvent pas tenir l''allure du trafic ou y sont trop vulnérables. Ces usagers sont aussi interdits sur les routes réservées aux automobiles, signalées par une voiture de face sur fond bleu. Un élève en conduite accompagnée peut, lui, circuler sur autoroute.'
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R421-2

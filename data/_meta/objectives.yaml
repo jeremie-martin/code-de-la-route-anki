@@ -65,12 +65,12 @@
   - ab25
   - b15
   - c18
-  - m7
   - conf-ab1-ab2
   - conf-ab3a-ab4
   - conf-b15-c18
   - conf-ab6-ab7
   consolidation:
+  - m7
   - m5
   - m9c
   - conf-ab3b-ab5
@@ -99,7 +99,6 @@
   consolidation:
   - aff-l-chemin-terre
   - aff-l-zone-30-priorite-droite
-  - aff-l-stop-rien-ne-vient
   - aff-l-cedez-arret
   - aff-l-tourner-gauche-centre
   - aff-l-pieton-intention
@@ -111,8 +110,6 @@
   - scn-cedez-moi-gauche-arrive
   - scn-route-prioritaire-tourne-gauche
   - scn-deux-stops
-  - scn-tram-gauche
-  - scn-pompiers-gauche
   - scn-feu-orange-clignotant
   - scn-stop-trois-vehicules
   - scn-cedez-face-tourne-gauche
@@ -207,9 +204,7 @@
   - b13
   - b14
   - b16
-  - b21-1
   - b21c1
-  - b21d1
   - b22a
   - b25
   - b26
@@ -221,13 +216,15 @@
   - conf-b14-c4a
   - conf-b22a-c113
   - b21a1
-  - b21b
   - b22b
   - b27a
   - b27b
   - b40
   - l-visuel-fin-interdictions
   consolidation:
+  - b21d1
+  - b21b
+  - b21-1
   - b1j
   - b3a
   - b4
@@ -259,13 +256,6 @@
   notes:
   - m1
   - m2
-  - m4a
-  - m4f
-  - m6c
-  - m6h
-  - m8a
-  - m8b
-  - m9v2
   - m12
   - eb10
   - eb20
@@ -283,15 +273,22 @@
   - conf-eb10-e31
   - l-formes-couleurs-panneaux
   - l-formes-priorite-temporaire
-  - m3a
   - m4d1
-  - m8c
-  - m9z
   - l-visuel-distance
   - l-visuel-etendue
   - l-visuel-m12-edpm
   - l-visuel-m12-voiture
   consolidation:
+  - m9z
+  - m9v2
+  - m8c
+  - m8b
+  - m8a
+  - m6h
+  - m6c
+  - m4f
+  - m4a
+  - m3a
   - b6b1
   - b6b2
   - b6b3
@@ -308,7 +305,6 @@
   - m11b1
   - l-signalisation-temporaire
   - l-agglomeration-panneau
-  - aff-l-implantation-agglo-50
   - conf-b52-b54
   - conf-b30-b56
   - conf-m8a-m8b
@@ -347,7 +343,6 @@
   - marq-plateau-sureleve
   - conf-t1-dissuasion
   - conf-stop-cedez-lignes
-  - conf-jaune-continue-discontinue
   - l-bandes-rugueuses
   - marq-damier-blanc
 - id: l-vitesse
@@ -375,7 +370,6 @@
   - c51a
   - l-vitesse-minimale-autoroute
   - l-vitesse-engins
-  - l-vitesse-adaptee
   - aff-l-90-departement
   - aff-l-lieu-dit
   - l-pmv-limitation
@@ -394,14 +388,13 @@
   - scn-dep-ligne-discontinue-libre
   - scn-dep-mixte-mon-cote
   - scn-dep-mixte-autre-cote
-  - scn-dep-vehicule-en-face
   - scn-dep-sommet-cote
   - c-cycliste-devant-depassement
-  - c29b
-  - c29c
-  - c30
   - l-cavalier-ligne-continue
   consolidation:
+  - c30
+  - c29c
+  - c29b
   - c29a
   - l-ligne-continue-sanction
   - l-depasse-serrer-droite
@@ -464,7 +457,6 @@
   - aff-l-sens-unique-gauche
   - aff-l-zone-rencontre-stationnement
   - l-stationnement-cote
-  - conf-b6a1-b6d
   - l-visuel-arret-b6a1
   - l-visuel-arret-b6d
   - l-visuel-jaune-continu
@@ -508,7 +500,6 @@
   - c-energie-choc
   consolidation:
   - c-intervalle-pl-tunnel
-  - aff-c-vitesse-double-freinage-double
 - id: c-observer
   theme: C
   titre: Chercher les indices et les zones masquées
@@ -547,11 +538,10 @@
   - c-somnolence-que-faire
   - c-fatigue-remedes-faux
   - c-emotions
-  - c-passagers-pression
   - aff-c-pause-sans-signe
-  - aff-c-micro-sommeil
   - aff-c-nuit-trafic-fluide
   consolidation:
+  - c-passagers-pression
   - aff-c-jeunes-risque-double
   - c-routine-monotonie
   - c-vitesse-fatigue
@@ -670,10 +660,10 @@
   - aff-r-peage-reculer
   - aff-r-autoroute-cyclo
   - r-autoroute-peage
-  - c64d
-  - c65a
   - conf-c107-c207
   consolidation:
+  - c65a
+  - c64d
   - c108
   - r-autoroute-sortie-annonces
   - r-autoroute-bau
@@ -692,12 +682,7 @@
   raison: Arrêt imposé, sortie libre, refuge et issue ont des rôles distincts.
   notes:
   - c111
-  - ce2a
-  - ce29
-  - ce30a
   - g1
-  - g1a
-  - g1bis
   - j10
   - r-tunnel-feux-jour
   - r-tunnel-distance-arret
@@ -708,8 +693,12 @@
   - r-pn-barrieres-ouverture
   - r-tram-priorite
   consolidation:
+  - g1bis
+  - g1a
+  - ce30a
+  - ce29
+  - ce2a
   - c112
-  - l-balises-j10
   - r-train-distance-arret
   - r-tunnel-niches
   - r-tunnel-panne
@@ -730,20 +719,20 @@
   - ak5
   - ak3
   - ak4
-  - ak22
-  - ak30
-  - ak31
-  - k5a
-  - k8
   - k10a
   - k10b
-  - kd10
-  - kd22
   - kr11
   - r-chantier-approche
   - r-chantier-fleche-lumineuse
   - aff-r-chantier-sans-ouvriers
   consolidation:
+  - kd22
+  - kd10
+  - k8
+  - k5a
+  - ak31
+  - ak30
+  - ak22
   - ak2
   - ak14
   - ak17
@@ -784,7 +773,6 @@
   - aff-u-pieton-passage-50m
   - aff-u-place-pmr
   - aff-u-fauteuil-roulant-pieton
-  - aff-u-car-scolaire-depassement
   - aff-u-pieton-nuit-croisement
   - aff-u-velo-bande-obligatoire
   - aff-u-velo-front-nuit
@@ -799,22 +787,20 @@
   titre: Identifier les règles propres aux deux-roues et EDPM
   raison: Changer de point de vue et distinguer règle nationale et locale.
   notes:
-  - u-edpm-chiffres
-  - u-edpm-ou-circuler
-  - u-edpm-hors-agglo
-  - u-edpm-regle-locale
   - u-interfiles-chiffres
   - u-moto-vulnerabilite
   - aff-u-edpm-pousse-main
-  - aff-u-edpm-gilet-agglo
-  - aff-u-interfiles-files-gauche
   consolidation:
+  - aff-u-interfiles-files-gauche
+  - u-edpm-ou-circuler
+  - u-edpm-chiffres
+  - aff-u-edpm-gilet-agglo
+  - u-edpm-hors-agglo
   - u-moto-equipements-chiffres
   - u-edpm-pieton-ou-vehicule
   - u-interfiles
   - u-moto-ecart-chaussee
   - aff-u-edpm-trottoir
-  - aff-u-interfiles-vitesse
   - aff-u-interfiles-panneau-autos
   - aff-u-moto-vitesse-approche
   - aff-u-moto-feux-jour
@@ -844,7 +830,7 @@
   raison: Priorité, facilité de passage et gyrophare orange sont distincts.
   notes:
   - u-vehicule-prioritaire-feu-rouge
-  - u-ambulance-privee-sans-sirene
+  - u-ambulance-trois-tons
   - u-gyrophare-orange
   - u-corridor-securite
   - aff-u-prioritaire-sans-avertisseur
@@ -871,7 +857,6 @@
   - p-dossier-reglage
   - p-volant-mains
   - p-demarrage-point-mort
-  - aff-p-reglage-en-roulant
   - aff-p-ceinture-sous-le-bras
   - aff-p-ceinture-blouson
   - aff-p-siege-verrouille
@@ -915,15 +900,15 @@
   - voyant-esp
   - voyant-pression-pneus
   - voyant-brouillard-arriere
-  - voyant-position
   - voyant-croisement
   - voyant-route
-  - voyant-brouillard-avant
   - m-voyants-couleurs
   - aff-m-voyant-abs-arret
   - m-visuel-batterie-contact
   - m-visuel-batterie-roulant
   consolidation:
+  - voyant-brouillard-avant
+  - voyant-position
   - aff-m-clignotant-rapide
   - aff-m-tpms-orange
   - voyant-direction
@@ -967,7 +952,6 @@
   - m-appel-phares
   - aff-m-pression-chaud
   - aff-m-surgonflage
-  - aff-m-pneu-age
   - aff-m-4-saisons-3pmsf
   - aff-m-refroidissement-bouchon
   - aff-m-boite-auto-p-arret
@@ -978,24 +962,21 @@
   titre: Utiliser les aides sans déléguer sa vigilance
   raison: Distinguer fonctions et limites, y compris en urgence.
   notes:
-  - aff-m-camera-recul
   - m-freinage-urgence-abs
   - s-esp-fonction
   - s-regulateur-limiteur
-  - m-afu-aeb
   - m-adas-responsabilite
   - s-ecall
   - aff-m-stationnement-arriere
   - aff-m-regulateur-obstacle
   - aff-m-limiteur-descente
   consolidation:
+  - m-afu-aeb
   - aff-m-regulateur-adaptatif
   - m-ldw-lka
   - m-conduite-automatisee
   - aff-m-abs-direction
   - aff-m-frein-main-4-roues
-  - aff-m-regulateur-conditions
-  - aff-m-angle-mort-moto
   - aff-m-detecteur-fatigue
   - aff-m-isa-panneaux
   - m-freinage-sans-abs
@@ -1044,7 +1025,6 @@
   - aff-s-enfant-genoux
   - aff-s-isofix
   - aff-s-abs-passive
-  - aff-s-euroncap-pietons
 - id: s-charger
   theme: S
   titre: Charger, signaler et tracter dans les limites
@@ -1055,14 +1035,13 @@
   - s-chargement-depassement
   - s-remorque-chiffres
   - s-remorque-conduite
-  - s-remorque-vitesses
   - aff-s-coffre-toit-lourd
   - aff-s-caravane-passager
   - s-remorque-seuil-750
-  - s-remorque-masse-reelle
   - d-masses-definitions
   consolidation:
-  - s-remorque-permis-vitesse
+  - s-remorque-masse-reelle
+  - s-remorque-vitesses
   - s-coffre-toit
   - aff-s-chargement-distance-arret
   - aff-s-plage-arriere
@@ -1107,7 +1086,6 @@
   - aff-a-contact-vehicules-accidentes
   - aff-a-18-secours-personne
   - l-reperes-localisation
-  - aff-a-fumer-sur-les-lieux
 - id: a-accident
   theme: A
   titre: Assumer ses obligations après un accident
@@ -1144,12 +1122,10 @@
   - d-formation-post-permis
   - d-points-delit-cumul
   - d-invalidation-delai
-  - aff-d-probatoire-majoration
   - d-invalidation-repasser
   - aff-d-invalidation-capital
   - aff-d-recuperation-delai
   - aff-d-disque-a-duree
-  - d-points-dix-ans
 - id: d-vehicule
   theme: D
   titre: Rouler avec les documents, assurance et contrôle requis
@@ -1168,8 +1144,6 @@
   - d-constat-declaration
   - d-vitres-teintees
   - d-controle-papiers-oublies
-  - d-vente-vehicule
-  - aff-d-carte-grise-delai
   - aff-d-gilet-coffre
   - aff-d-plaque-sale
   - d-permis-validite-15-ans
@@ -1179,6 +1153,7 @@
   raison: Relier consommation et gestes de conduite ; distinguer recommandations adaptables et calculs sur données
     fournies.
   notes:
+  - e-vitesse-consommation
   - e-feu-rouge-anticipation
   - e-rapports-regime
   - e-frein-moteur
@@ -1216,10 +1191,8 @@
   - m11d
   - vr-losange-fin
   - e-critair-chiffres
-  - e-pic-pollution-chiffres
   - aff-e-zfe-vignette
   - aff-e-diesel-nox
-  - aff-e-monoxyde-garage
 - id: l-orientation
   theme: L
   titre: Lire un itinéraire et préparer sa voie
@@ -1228,22 +1201,22 @@
   notes:
   - c12
   - c28
-  - j1
-  - j3
-  - j4
   - j5
-  - j6
-  - j14a
   - d-couleur-bleu
-  - d-couleur-vert
-  - d-couleur-blanc
   - d-couleur-jaune
-  - d-couleur-marron
-  - e42
-  - e43
-  - d50
   - l-vocab-routes-lettres
   consolidation:
+  - e43
+  - e42
+  - j14a
+  - j6
+  - j4
+  - j3
+  - j1
+  - d50
+  - d-couleur-vert
+  - d-couleur-marron
+  - d-couleur-blanc
   - c13a
   - c13c
   - c24a
@@ -1311,7 +1284,6 @@
   consolidation:
   - d-aac-conditions
   - d-permis-17-ans
-  - d-formation-minimale
   - d-accompagnateur
   - d-conduite-supervisee
   - aff-d-aac-points-eleve
@@ -1322,7 +1294,6 @@
     et mesures administratives ; les cas complètent le fonctionnement du capital.
   notes: []
   consolidation:
-  - d-classes-amendes
   - d-telephone-sanction
   - d-ceinture-sanction
   - d-feu-rouge-stop-sanction

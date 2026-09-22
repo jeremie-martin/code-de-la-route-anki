@@ -1,6 +1,4 @@
-# S : La sécurité du passager et du véhicule : affirmations à juger VRAI/FAUX.
-# Forme dominante de l'ETG (11 des 20 questions officielles), dont la Q12 « Cette passagère arrière
-# met le conducteur en danger ». Les affirmations sur les aides à la conduite sont dans le thème M.
+# S : La sécurité du passager et du véhicule : affirmations à juger VRAI/FAUX (aides à la conduite : thème M).
 - id: aff-s-passagere-arriere-danger
   contexte: Une passagère assise à l'arrière n'a pas bouclé sa ceinture.
   affirmation: Elle met aussi le conducteur en danger.
@@ -140,15 +138,6 @@
   theme: S
   sous_theme: equipements
   source: "Stych, Sécurité active et passive ; lepermislibre"
-- id: aff-s-euroncap-pietons
-  affirmation: Les étoiles Euro NCAP évaluent aussi la protection des piétons et des cyclistes.
-  verdict: vrai
-  pourquoi: 'L’évaluation ne protège pas seulement les occupants : elle examine aussi les risques pour les usagers
-    extérieurs. Depuis 2026, ses quatre volets sont la conduite sûre, l’évitement des collisions, la protection
-    lors du choc et la sécurité après le choc. Le protocole évolue : tenir compte de l’année du test.'
-  theme: S
-  sous_theme: equipements
-  source: "Euro NCAP, protocole 2026 : https://www.euroncap.com/press-media/euro-ncap-announces-2026-protocol-changes-to-tackle-modern-driving-risks/"
 - id: aff-s-ceinture-autocar
   contexte: Voyage en autocar équipé de ceintures de sécurité.
   affirmation: Chaque passager doit attacher sa ceinture.

@@ -1,6 +1,4 @@
-# L : Circulation : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
-# Priorités et signalisation sont les thèmes les plus échoués : les fausses affirmations reprennent
-# les distracteurs réels de l'épreuve (« je maintiens ma vitesse », « je peux », « puisque… »).
+# L : Circulation : affirmations à juger VRAI/FAUX ; les fausses reprennent des idées reçues réelles.
 - id: aff-l-chemin-terre
   contexte: Intersection de campagne sans panneau ni feu.
   affirmation: Un véhicule qui débouche d'un chemin de terre sur ma droite bénéficie de la priorité à droite.
@@ -27,15 +25,6 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-5
-- id: aff-l-stop-rien-ne-vient
-  contexte: J'aborde un STOP ; la route transversale est parfaitement dégagée.
-  affirmation: Un net ralentissement, sans immobiliser les roues, suffit.
-  verdict: faux
-  pourquoi: 'R415-6 impose l’arrêt à la ligne, roues immobiles, même sans trafic : 135 € et 4 points. Une bonne
-    visibilité n’annule pas le STOP ; après l’arrêt, je vérifie et cède le passage.'
-  theme: L
-  sous_theme: priorites
-  source: Code de la route, art. R415-6
 - id: aff-l-stop-avancer
   contexte: Je suis arrêté à la ligne du STOP, mais des véhicules en stationnement masquent la rue transversale.
   affirmation: Je peux ensuite avancer lentement au-delà de la ligne pour voir avant de m'engager.
@@ -342,14 +331,6 @@
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie art. 8 ; Code de la route, art. R110-2
-- id: aff-l-implantation-agglo-50
-  contexte: En agglomération, un panneau triangulaire annonce un passage pour piétons.
-  affirmation: Le passage se situe à environ 150 m.
-  verdict: faux
-  pourquoi: En agglomération, un panneau de danger se trouve généralement à environ 50 m du danger ; hors agglomération, à environ 150 m, ou 200 m sur autoroute. Un panonceau peut indiquer une autre distance.
-  theme: L
-  sous_theme: signalisation
-  source: "IISR 2e partie art. 28 ; Sécurité routière, Exemples de nouvelles questions (Q18, Q19)"
 - id: aff-l-virage-gauche-axe
   contexte: Route à double sens, virage à gauche sans visibilité.
   affirmation: Je peux me rapprocher de l'axe de la chaussée pour élargir ma trajectoire.

@@ -70,23 +70,23 @@ taire un avertissement). Les valeurs contenant « : » se mettent entre guilleme
   source: Code de la route, art. R413-3
 
 # affirmations/
-- id: aff-l-stop-rien-ne-vient
-  contexte: J'aborde un STOP ; la route transversale est parfaitement dégagée.
-  affirmation: Un net ralentissement, sans immobiliser les roues, suffit.
-  verdict: faux
-  pourquoi: 'R415-6 impose l’arrêt à la ligne, roues immobiles, même sans trafic : 135 € et 4 points.'
+- id: aff-l-stop-avancer
+  contexte: Je suis arrêté à la ligne du STOP, mais des véhicules en stationnement masquent la rue transversale.
+  affirmation: Je peux ensuite avancer lentement au-delà de la ligne pour voir avant de m'engager.
+  verdict: vrai
+  pourquoi: 'L’arrêt à la ligne est obligatoire ; une fois marqué, on progresse au pas jusqu’à voir, puis on cède le passage.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-6
 
 # confusions/ : a et b sont des ids de reconnaissance
-- id: conf-b6a1-b6d
-  a: b6a1
-  b: b6d
-  difference: 'A, une barre rouge : stationnement interdit. B, une croix rouge : arrêt et stationnement interdits.'
+- id: conf-ab3a-ab4
+  a: ab3a
+  b: ab4
+  difference: 'A : céder le passage, sans arrêt obligatoire si la voie est libre. B : arrêt complet obligatoire, puis céder le passage.'
   theme: L
   sous_theme: panneaux
-  source: IISR 4e partie
+  source: IISR 3e partie
 
 # scenarios/ : intersection : approaches N E S W (vehicle {colour, me, kind car|truck|bus|tram|moto|bike|pompiers,
 # siren}, goes straight|left|right, sign stop|cedez|prioritaire|fin_prioritaire|priorite_droite|feu_vert|feu_rouge|
@@ -258,7 +258,7 @@ python build/qa_sheet.py                 # planches image + code + nom par fichi
    écrit `out/RENDU.md` avec l’empreinte du paquet : le lancer en dernier, après le build définitif. `SAMPLES`
    (dans `render_check.py`) choisit les captures ; un identifiant absent du paquet fait échouer le contrôle.
    Les mesures ne lisent pas le sens des images : les inspecter.
-6. Ajouter une entrée au [CHANGELOG](../CHANGELOG.md) et mettre à jour les effectifs du README.
+6. Committer avec un message qui résume les changements de contenu (git tient l’historique des éditions).
 
 ## Identifiants et réimport
 
@@ -272,4 +272,4 @@ Le paquet est exporté sans progression : cartes nouvelles, aucun historique ni 
 d’une carte nouvelle est sa position dans le programme, pas son identité. Le préréglage embarqué (collecte par
 position croissante, cartes sœurs enfouies, rétention 90 %) s’importe au premier import puis se laisse décoché
 aux mises à jour pour conserver les réglages personnels ; `build.verify` exerce ce parcours. Une note retirée du
-dépôt reste chez les utilisateurs précédents : documenter les suppressions dans le changelog.
+dépôt reste chez les utilisateurs précédents.

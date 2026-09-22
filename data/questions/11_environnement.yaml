@@ -8,6 +8,13 @@
   theme: E
   sous_theme: ecoconduite
   source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
+- id: e-vitesse-consommation
+  question: Sur autoroute, pourquoi rouler à 110 plutôt qu’à 130 km/h réduit-il nettement la consommation, pour un temps de trajet à peine allongé ?
+  reponse: 'La résistance de l’air croît avec le carré de la vitesse : à allure élevée, elle absorbe l’essentiel de l’énergie, et quelques km/h de moins la réduisent fortement.'
+  explication: Le gain relatif dépend du véhicule, du vent et de la charge ; le temps perdu reste de quelques minutes sur un long trajet. Les mêmes mécanismes expliquent la surconsommation d’un coffre de toit ou de vitres ouvertes à grande vitesse.
+  theme: E
+  sous_theme: ecoconduite
+  source: "Ministère de la Transition écologique, « Économies d’énergie : le vrai du faux » ; ADEME, écoconduite"
 - id: e-rapports-regime
   question: En montée, le moteur peine après un passage au rapport supérieur pour économiser du carburant.
     Que fais-je ?

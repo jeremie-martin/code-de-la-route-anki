@@ -21,13 +21,11 @@
   - Un chargement dépassant de plus de {{c2::1 m}} à l’arrière doit porter une signalisation spécifique.
 - id: s-remorque-chiffres
   prerequis: [d-masses-definitions]
-  explication: 'Toujours respecter les capacités du véhicule tracteur. Au-delà de 3 500 kg de somme des PTAC : mention
-    B96 (jusqu''à 4 250 kg) puis permis BE. Une remorque de plus de 500 kg de PTAC a sa propre carte grise.'
+  explication: 'Toujours respecter les capacités du véhicule tracteur (masse remorquable, PTRA). Au-delà de 4 250 kg de somme des PTAC : permis BE. Une remorque de plus de 500 kg de PTAC a sa propre carte grise.'
   theme: S
   sous_theme: chargement
   source: Code de la route, art. R221-4, R317-8, R413-8 ; service-public.fr F2827
   rappels:
-  - Avec le permis B, une remorque de PTAC au plus égal à {{c1::750 kg}} est autorisée derrière un véhicule de catégorie
-    B, sous réserve des masses admissibles du véhicule.
-  - Avec le permis B seul, si la remorque dépasse 750 kg de PTAC, la somme des PTAC ne doit pas dépasser {{c2::3 500
-    kg}}.
+  - Avec le permis B, une remorque de PTAC au plus égal à {{c1::750 kg}} est autorisée derrière un véhicule de catégorie B, sous réserve des masses admissibles du véhicule.
+  - Avec le permis B seul, si la remorque dépasse 750 kg de PTAC, la somme des PTAC ne doit pas dépasser {{c2::3 500 kg}}.
+  - 'Remorque de plus de 750 kg, somme des PTAC comprise entre 3 500 et 4 250 kg : le permis B suffit après la formation {{c3::B96}} (7 heures, sans examen).'

@@ -7,7 +7,7 @@
   consulte_le: '2026-09-22'
   url: https://www.service-public.gouv.fr/particuliers/vosdroits/F1707
   portee: 'Fiche vérifiée le 23 janvier 2026 : certificat de cession manquant rétabli, signature de la carte grise, âge du certificat de situation administrative, déclaration sous 15 jours et conditions du contrôle technique. F21031 ne traitait que de la demande par courrier.'
-  notes: [d-vente-vehicule]
+  notes: []
 - id: audit-114-accessibilite
   consulte_le: '2026-09-22'
   url: https://www.masecurite.interieur.gouv.fr/fr/fiches-pratiques/famille-et-aides-aux-victimes/114-service-urgence-personnes-sourdes-sourdaveugles-malentendantes-aphasiques
@@ -111,8 +111,7 @@
   url: https://www.service-public.gouv.fr/particuliers/actualites/A19037
   portee: Casque et équipement rétro-réfléchissant à Paris et en petite couronne depuis août 2026 ; portée
     locale.
-  notes:
-  - u-edpm-regle-locale
+  notes: []
 - id: invalidation
   consulte_le: '2026-09-21'
   url: https://www.service-public.gouv.fr/particuliers/vosdroits/F1704
@@ -279,7 +278,6 @@
   portee: Minima de formation et réduction de la part en circulation avec simulateur ; branche remorque au
     plus 750 kg distincte de la somme des PTAC.
   notes:
-  - d-formation-minimale
   - s-remorque-seuil-750
 - id: v4-vitesse-sanction
   consulte_le: '2026-09-21'
@@ -413,8 +411,7 @@
   url: https://www.service-public.gouv.fr/particuliers/actualites/A19037
   portee: Confirmation de la portée locale des équipements imposés depuis août 2026 à Paris et en petite couronne
     ; aucune extrapolation nationale.
-  notes:
-  - u-edpm-regle-locale
+  notes: []
 - id: v5-points
   consulte_le: '2026-09-21'
   url: https://www.service-public.gouv.fr/particuliers/vosdroits/F31551
@@ -474,15 +471,13 @@
   notes:
   - u-interfiles-chiffres
   - u-interfiles
-  - aff-u-interfiles-vitesse
   - aff-u-interfiles-files-gauche
 - id: v7-edpm-paris-petite-couronne
   consulte_le: '2026-09-21'
   url: https://www.service-public.gouv.fr/particuliers/actualites/A19037
   portee: 'Obligation locale (Paris, 92, 93, 94) depuis le 7 août 2026 : casque et équipement rétro-réfléchissant
     pour les EDPM à toute heure ; règle locale, non nationale.'
-  notes:
-  - u-edpm-regle-locale
+  notes: []
 - id: v7-disque-a-r413-5
   consulte_le: '2026-09-21'
   url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842295
@@ -560,7 +555,6 @@
   portee: 'Corrigé des vingt exemples officiels de septembre 2023 (Q13 adhérence ÷ 2 et freinage × 2 sous la pluie ; Q8/Q14 aides au stationnement).'
   notes:
   - c-distance-mouillee
-  - aff-m-camera-recul
 - id: v9-depassement-croisement
   consulte_le: '2026-09-21'
   url: https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
@@ -624,7 +618,7 @@
   consulte_le: '2026-09-22'
   url: https://www.service-public.gouv.fr/particuliers/actualites/A19037
   portee: 'Mesure locale Paris et petite couronne depuis le 7 août 2026, casque et équipement rétro-réfléchissant à toute heure ; ne pas généraliser à tout le pays. Contenu conservé.'
-  notes: [u-edpm-regle-locale]
+  notes: []
 
 - id: audit-tabac-vapotage
   consulte_le: '2026-09-22'
@@ -635,7 +629,7 @@
   consulte_le: '2026-09-22'
   url: https://www.euroncap.com/press-media/euro-ncap-announces-2026-protocol-changes-to-tackle-modern-driving-risks/
   portee: 'Les quatre volets de l’évaluation changent en 2026 ; protection des piétons et cyclistes maintenue. Ne pas enseigner la grille antérieure comme actuelle.'
-  notes: [aff-s-euroncap-pietons]
+  notes: []
 - id: audit-insertion
   consulte_le: '2026-09-22'
   url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842314
@@ -645,7 +639,7 @@
   consulte_le: '2026-09-22'
   url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/
   portee: 'Lecture ciblée dans le Code consolidé archivé du 10 septembre 2026 : R412-37 et R415-11 (absence de passage proche ne suffit pas à définir toute traversée régulière), R311-1 6.5/6.6 et R415-12 (catégorie, mission et avertisseurs des ambulances). R414-13 également relu : carte tramway conservée.'
-  notes: [l-passage-pieton-50m, u-ambulance-privee-sans-sirene, u-tram-depasser]
+  notes: [l-passage-pieton-50m, u-ambulance-trois-tons, u-tram-depasser]
 - id: audit-invalidation-delai
   consulte_le: '2026-09-22'
   url: https://www.service-public.gouv.fr/particuliers/vosdroits/F1704
@@ -710,7 +704,7 @@
   consulte_le: '2026-09-22'
   url: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426
   portee: 'R413-8 relu en ligne, avec R413-1, R413-4 et R413-8-1 dans la section Vitesse : PTRA supérieur à 3,5 t pour un ensemble, 90 sur autoroute, 90 sur route prioritaire à chaussées séparées pour le cas léger retenu, 80 sur les autres routes hors agglomération. Les exemples distinguent ce critère des PTAC utilisés pour le permis ; aucun plafond de poids lourd supérieur à 12 t généralisé aux voitures.'
-  notes: [s-remorque-vitesses, s-remorque-permis-vitesse]
+  notes: [s-remorque-vitesses]
 - id: comparaison-livre-freins-mouilles
   consulte_le: '2026-09-22'
   url: https://www.volvocars.com/fr/support/car/v60-cross-country/15w17/article/b7763713f78f074bc0a801e8017136c8/
@@ -755,7 +749,7 @@
   consulte_le: '2026-09-22'
   url: https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10
   portee: 'Notice Renault consultée : régulation simple et conditions d’utilisation, circulation dense et chaussée glissante. Le contexte des deux affirmations précise désormais non adaptatif ; aucune règle universelle de désactivation par débrayage.'
-  notes: [aff-m-regulateur-obstacle, aff-m-regulateur-conditions]
+  notes: [aff-m-regulateur-obstacle]
 - id: audit-limiteur-descente
   consulte_le: '2026-09-22'
   url: https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4
@@ -775,7 +769,7 @@
   consulte_le: '2026-09-22'
   url: https://www.user-manual.renault.com/fr/content/xjk/driving/additional-driving-aid-functions/avertisseur-dangle-mort
   portee: 'Notice Express : périmètre, capteurs, conditions de détection et limites. Retrait de l’affirmation selon laquelle le regard par-dessus l’épaule serait la seule vérification fiable ; rétroviseurs et contrôle direct se complètent.'
-  notes: [aff-m-angle-mort-moto]
+  notes: []
 - id: audit-ecall-bilan
   consulte_le: '2026-09-22'
   url: https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency-assistance-vehicles-ecall/index_fr.htm
@@ -929,7 +923,7 @@
   consulte_le: '2026-09-22'
   url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/
   portee: 'Seconde comparaison avec le livre 2025–2026 (chapitres non traités par la première passe) ; ajouts vérifiés dans la copie consolidée : L223-6 dernier alinéa (réattribution après dix ans), R416-7 I (feux de brouillard avant avec les feux de route hors agglomération sur route étroite et sinueuse), R221-1-1 I bis (validité de quinze ans), R415-11 et R412-30 (fausse courtoisie). Consigne CETU pour un véhicule en feu en tunnel ; L121-3 et R130-11 pour la vidéo-verbalisation, non relus dans le texte. Les peines délictuelles du tableau du livre sont antérieures à la loi du 18 août 2026 et ne sont pas reprises.'
-  notes: [u-fausse-courtoisie-pieton, r-tunnel-mon-vehicule-feu, l-b14-meme-support, r-nuit-gabarit-camion, d-points-dix-ans, aff-d-video-verbalisation, aff-r-brouillard-avant-sinueuse, d-permis-validite-15-ans]
+  notes: [u-fausse-courtoisie-pieton, r-tunnel-mon-vehicule-feu, l-b14-meme-support, r-nuit-gabarit-camion, aff-d-video-verbalisation, aff-r-brouillard-avant-sinueuse, d-permis-validite-15-ans]
 - id: revue-deck-distances
   consulte_le: '2026-09-22'
   url: https://www.onisr.securite-routiere.gouv.fr/sites/default/files/2020-07/Cerema-EvaluationV80-Juillet2020-Vdef3.pdf
@@ -951,14 +945,14 @@
   portee: 'Article 5 lu en ligne : minimum de 1,6 mm pour les voitures, rainures principales et témoins.
     R314-1 lu dans la section Pneumatiques (LEGISCTA000006159580) après échec de la page article : toile
     apparente et déchirure profonde interdites. Retrait de la formule « seul seuil légal » dans la note sur l’âge.'
-  notes: [m-pneus-usure-1-6, aff-m-pneu-age]
+  notes: [m-pneus-usure-1-6]
 - id: revue-deck-pneus-age
   consulte_le: '2026-09-22'
   url: https://www.michelin.fr/auto/conseils/changer-pneus/combien-dure-un-pneu
   portee: 'Préconisations tourisme lues : contrôle annuel après cinq ans d’utilisation, remplacement après
     dix ans depuis la fabrication, roue de secours comprise. Distinction explicite entre conseil du fabricant
     et règle légale ; le rappel porte sur le vieillissement malgré un faible kilométrage.'
-  notes: [aff-m-pneu-age]
+  notes: []
 - id: revue-deck-pneu-hernie
   consulte_le: '2026-09-22'
   url: https://www.michelin.fr/auto/conseils/changer-pneus/dommages-aux-flancs-des-pneus
@@ -983,3 +977,13 @@
   portee: 'Art. 117-4 : triangle au sol possible avant une ligne de cédez-le-passage (pointe vers l’usager) ; trois
     triangles pointés dans le sens de circulation sur un dos-d’âne ; ligne d’effet des feux discontinue fine (T''2).'
   notes: [marq-ligne-cedez, marq-ralentisseur-triangles, conf-stop-cedez-lignes, marq-ligne-effet-feux, marq-sas-velo]
+- id: audit-vitesse-consommation
+  consulte_le: '2026-09-22'
+  url: https://www.ecologie.gouv.fr/actualites/economies-denergie-vrai-du-faux-avoir-bons-reflexes
+  portee: 'Rouler à 110 plutôt qu’à 130 km/h sur autoroute réduit la consommation pour quelques minutes de trajet en plus ; le chiffre en litres de la page n’est pas repris, faute de base de calcul précisée.'
+  notes: [e-vitesse-consommation]
+- id: audit-2026-09-22-code-consolide
+  consulte_le: '2026-09-22'
+  url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/
+  portee: 'Code consolidé au 10 septembre 2026 (cdr.txt) : R416-4 à R416-6 (feux de croisement la nuit en agglomération éclairée, feux de position seulement pour la visibilité réduite par la météo) ; R421-2 I (usagers interdits sur autoroute) ; R313-27 et R313-34 (feux et timbres des véhicules à facilités de passage) ; L224-2 I A (suspension préfectorale obligatoire) et L237-1 (conduite sous emprise manifeste), loi n° 2026-798 ; R221-4 (B96). Arrêté du 30 septembre 2008 : triangle à environ 30 m.'
+  notes: [aff-r-nuit-feux-position-agglo, r-autoroute-usagers-interdits, u-ambulance-trois-tons, d-retention-suspension, d-alcool-delit, s-remorque-chiffres, m-panne-procedure-route, aff-a-triangle-autoroute]

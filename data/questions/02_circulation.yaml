@@ -1,5 +1,4 @@
-# L : Circulation : cartes de décision (situation → décision + raison). Voir docs/research/brief-v2-redaction.md.
-# Les listes de la v1 ont été découpées en décisions et en affirmations (data/affirmations/02_circulation.yaml).
+# L : Circulation : cartes de décision (situation → décision + raison).
 - id: l-priorite-droite-defaut
   question: Intersection sans panneau ni feu ; deux véhicules arrivent en même temps par des routes ordinaires. À
     qui dois-je céder le passage ?
@@ -209,15 +208,6 @@
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-10
-- id: l-vitesse-adaptee
-  question: Le panneau indique 50 km/h. Que représente cette valeur pour moi ?
-  reponse: 'Un maximum pour des conditions optimales : pluie, virage sans visibilité ou rue animée imposent de rouler
-    moins vite.'
-  explication: R413-17 impose de réduire sa vitesse au croisement de piétons ou de cyclistes, devant un transport d'enfants
-    à l'arrêt, dans les virages et descentes, par visibilité insuffisante. Rouler « à la limite » peut donc être verbalisé.
-  theme: L
-  sous_theme: vitesse
-  source: Code de la route, art. R413-17
 - id: l-retrecissement-croisement
   question: Un obstacle occupe ma voie sur une route plate à double sens, sans signalisation de priorité. Une voiture arrive
     en face. Qui attend ?

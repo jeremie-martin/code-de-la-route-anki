@@ -1,5 +1,4 @@
-# A : Porter secours : affirmations à juger VRAI/FAUX (forme dominante de l'ETG, cf. docs/05-audit-v2.md §2.2).
-# Les fausses sont les idées reçues réelles du thème (knowledge-facts P7) ; le verso donne la raison en une ligne.
+# A : Porter secours : affirmations à juger VRAI/FAUX.
 - id: aff-a-dae-formation
   contexte: Une victime est en arrêt cardiaque ; un DAE est accroché au mur du magasin voisin.
   affirmation: Avant d'utiliser un DAE, je dois avoir suivi une formation.
@@ -41,20 +40,11 @@
   theme: A
   sous_theme: proteger
   source: "Ornikar, Protéger la zone ; Croix-Rouge française"
-- id: aff-a-fumer-sur-les-lieux
-  contexte: J’arrive sur un accident ; du carburant s’écoule sous un véhicule.
-  affirmation: Je peux fumer en attendant les secours, à quelques mètres des véhicules.
-  verdict: faux
-  pourquoi: Une cigarette ou une flamme peut enflammer le carburant et ses vapeurs. Je coupe le contact des véhicules
-    accidentés, j’éloigne les personnes et j’interdis de fumer sur la zone.
-  theme: A
-  sous_theme: proteger
-  source: Sécurité civile, PSC juillet 2026, Protection ; Croix-Rouge française
 - id: aff-a-triangle-autoroute
   contexte: Accident sur autoroute ; poser le triangle m'obligerait à marcher sur les voies de circulation.
   affirmation: Je renonce au triangle et je me mets à l'abri derrière la glissière.
   verdict: vrai
-  pourquoi: "La mise en place du triangle n'est pas exigée quand elle met manifestement en danger la vie du conducteur (arrêté du 30 septembre 2008) : feux de détresse et mise à l'abri priment. Ailleurs, 30 m au moins."
+  pourquoi: 'La mise en place du triangle n''est pas exigée quand elle met manifestement en danger la vie du conducteur (arrêté du 30 septembre 2008) : feux de détresse et mise à l''abri priment. Ailleurs, environ 30 m en amont, davantage si nécessaire.'
   theme: A
   sous_theme: proteger
   source: "Code de la route, art. R416-19 ; arrêté du 30 septembre 2008 ; Ornikar, Protéger la zone"

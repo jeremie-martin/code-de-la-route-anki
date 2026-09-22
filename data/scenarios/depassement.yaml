@@ -44,32 +44,6 @@
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-4 et R412-18
-- id: scn-dep-vehicule-en-face
-  kind: road
-  spec:
-    lanes: 2
-    axis: discontinue
-    vehicles:
-    - lane: 1
-      y: 15
-      colour: bleu
-      me: true
-    - lane: 1
-      y: 42
-      colour: gris
-      kind: truck
-    - lane: 1
-      y: 78
-      colour: rouge
-      dir: down
-  question: La voiture rouge arrive trop vite pour que je termine avant son arrivée. Puis-je dépasser le camion
-    maintenant ?
-  reponse: 'Non : je n''emprunte la voie de gauche que si personne n''arrive en face sur toute la longueur du dépassement.'
-  explication: 'Article R414-7. Un dépassement de camion demande plusieurs centaines de mètres : la voiture rouge
-    arriverait avant que je me rabatte.'
-  theme: L
-  sous_theme: depassement
-  source: Code de la route, art. R414-7
 - id: scn-dep-mixte-mon-cote
   kind: road
   spec:
@@ -130,9 +104,8 @@
     extras:
     - kind: sommet
       y: 70
-  question: La route au-delà de la zone indiquée est masquée. Puis-je dépasser le camion maintenant ?
-  reponse: 'Non : sans visibilité suffisante vers l''avant (sommet de côte, virage), le dépassement est interdit
-    sur une chaussée à double sens, même avec une ligne discontinue.'
+  question: Le camion roule lentement. (1) Le marquage autorise-t-il à le dépasser ? (2) Puis-je le dépasser maintenant ?
+  reponse: '(1) Oui : la ligne est discontinue. (2) Non : le sommet de côte masque la route en face ; sans visibilité suffisante, le dépassement est interdit.'
   explication: 'Article R414-11. Le marquage n''est pas une garantie de visibilité : c''est au conducteur de juger.
     Un véhicule peut surgir derrière le sommet à 90 km/h.'
   theme: L

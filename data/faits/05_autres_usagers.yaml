@@ -10,18 +10,13 @@
   - 'Vitesse maximale par construction d’une trottinette électrique : {{c2::25 km/h}}.'
   - 'Sur une trottinette électrique, nombre de personnes autorisées à bord : {{c3::une seule}}.'
 - id: u-velo-chiffres
-  explication: File simple dès la nuit ou quand les conditions de circulation l’exigent, notamment lorsqu’un véhicule annonce
-    son dépassement. Le casque reste recommandé pour tous.
+  explication: En agglomération, le gilet n'est pas imposé au cycliste, contrairement à l'utilisateur d'une trottinette électrique. Le casque reste recommandé pour tous ; l'adulte qui transporte ou accompagne un enfant non casqué est verbalisé.
   theme: U
   sous_theme: cyclistes
   source: Code de la route, art. R431-1-1, R431-1-3, R412-34, R431-7
   rappels:
   - À vélo, le casque attaché est obligatoire pour un conducteur ou passager de moins de {{c1::12 ans}}.
-  - À vélo hors agglomération, le gilet de haute visibilité est obligatoire {{c2::la nuit ou par visibilité insuffisante}}.
-  - Un enfant de moins de {{c3::8 ans}} peut rouler à vélo sur le trottoir au pas, sans gêner les piétons, sauf dispositions
-    contraires.
-  - Sur la chaussée, le nombre maximal de cyclistes pouvant rouler de front est {{c4::deux}}, avec remise en file simple lorsque
-    la règle l’impose.
+  - À vélo, le gilet de haute visibilité est obligatoire la nuit ou par visibilité insuffisante {{c2::hors agglomération}}.
 - id: u-velo-equipement-chiffres
   explication: 'Équipement permanent : deux freins, des catadioptres (arrière rouge, avant blanc, orange sur les côtés et
     les pédales) et un avertisseur sonore. Les catadioptres font voir le vélo de côté dans les phares d’une voiture qui débouche.'

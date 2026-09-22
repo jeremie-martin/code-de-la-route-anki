@@ -178,7 +178,6 @@
   source: Code de la route, art. R414-6 et R414-16
 - id: l-implantation-danger
   dedup_ok:
-  - aff-l-implantation-agglo-50
   - aff-r-descente-150m
   explication: Distances usuelles d’implantation (200 m sur autoroute), pas des mesures de la scène. Le panonceau
     de distance indique l’éloignement réel annoncé ; un panonceau d’étendue décrit la longueur concernée.
@@ -189,18 +188,6 @@
   - Hors agglomération, sans panonceau de distance, un panneau de danger est généralement placé à environ {{c1::150 m}} du
     danger.
   - En agglomération, sans panonceau de distance, un panneau de danger est généralement placé à environ {{c2::50 m}} du danger.
-- id: l-balises-j10
-  dedup_ok:
-  - aff-r-pn-150m
-  explication: 'Les bandes décomptent l’approche : trois à 150 m, deux à 100 m, une à 50 m. Je ralentis avant les voies ; les bandes ne disent ni combien de voies ferrées il y a, ni si un train arrive.'
-  theme: L
-  sous_theme: signalisation
-  source: IISR 2e partie, art. 28 et 34
-  rappels:
-  - 'Passage à niveau hors agglomération annoncé à 150 m : les balises portent {{c1::3, puis 2, puis 1}} bandes rouges.'
-  comparaisons:
-  - ref: j10
-    legende: Les bandes rouges décomptent la distance au passage à niveau.
 - id: l-passage-pieton-50m
   texte: Hors aire piétonne et zone de rencontre, un piéton doit utiliser un passage prévu à son intention
     s’il en existe un à moins de {{c1::50 m}}.

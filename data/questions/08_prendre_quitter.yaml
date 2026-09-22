@@ -1,6 +1,4 @@
-# Thème P : Prendre et quitter son véhicule (≈ 3 questions) : vérifier, s'installer, démarrer, quitter.
-# Cartes de décision : une situation, une décision et sa raison (brief v2). Les repères chiffrés sont dans
-# data/faits/08, les idées reçues de l'épreuve dans data/affirmations/08.
+# P : Prendre et quitter son véhicule : vérifier, s'installer, démarrer, quitter.
 - id: p-verif-tour-vehicule
   question: Avant de monter, je fais le tour de ma voiture. Qu'est-ce que ce tour me montre que je ne verrais pas
     du poste de conduite ?

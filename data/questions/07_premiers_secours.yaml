@@ -1,6 +1,4 @@
-# Thème A : Porter secours (≈ 1 question) : protéger, alerter, secourir, obligations après un accident.
-# Cartes de décision : une situation, une décision et sa raison (brief v2). Les chiffres sont dans data/faits/07,
-# les idées reçues de l'épreuve dans data/affirmations/07.
+# A : Porter secours : protéger, alerter, secourir, obligations après un accident.
 - id: a-proteger-arret
   question: Je suis le premier à arriver sur un accident, sur une route à double sens. Où et comment je m'arrête ?
   reponse: Après le lieu de l’accident (pour ne pas le masquer), en sécurité sur l’accotement ; feux de détresse allumés et

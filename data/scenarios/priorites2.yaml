@@ -8,8 +8,8 @@
       E: {vehicle: {colour: rouge}, goes: straight}
       W: {vehicle: {colour: vert}, goes: left}
   check: {order: [E, W, S]}
-  question: "J'ai un STOP. Sur la route transversale, la rouge (à ma droite) va tout droit et la verte (à ma gauche) tourne à sa gauche. Dans quel ordre passent les véhicules ?"
-  reponse: "Rouge, puis verte, puis moi."
+  question: Les véhicules suivent les flèches. Dans quel ordre passent-ils ?
+  reponse: 'Rouge, puis verte, puis moi : mon STOP me fait céder aux deux ; la verte tourne à gauche et cède à la rouge qui vient en face.'
   explication: "Au STOP, je passe après tous les véhicules de la route prioritaire, quel que soit leur sens. Entre eux : la verte tourne à gauche et cède donc à la rouge qui vient en face."
   theme: L
   sous_theme: priorites
@@ -22,8 +22,8 @@
       N: {vehicle: {colour: rouge}, goes: left}
       E: {vehicle: {colour: vert}, goes: straight, sign: cedez}
   check: {order: [S, N, E]}
-  question: "Je vais tout droit ; en face, la rouge tourne à sa gauche ; à ma droite, la verte a un cédez-le-passage. Ordre de passage ?"
-  reponse: "Moi, puis la rouge, puis la verte."
+  question: Je vais tout droit ; les autres véhicules suivent les flèches. Quel est l'ordre de passage ?
+  reponse: 'Moi, puis la rouge, puis la verte : la verte a un cédez-le-passage ; la rouge tourne à gauche et me cède.'
   explication: "La verte cède à tous (cédez-le-passage), même si elle est à ma droite. La rouge tourne à gauche et cède à moi qui viens en face. La verte passe en dernier, après la rouge qui est sur la route prioritaire."
   theme: L
   sous_theme: priorites
@@ -48,9 +48,8 @@
     - S
     - E
     - avant
-  question: Je suis sur une route prioritaire (losange jaune). Une voiture arrive de ma droite. Dois-je lui
-    céder le passage ?
-  reponse: Non. La voiture rouge doit me céder le passage.
+  question: Une voiture arrive de ma droite. Dois-je lui céder le passage ?
+  reponse: 'Non : je suis sur une route prioritaire (losange jaune) et la rouge a un cédez-le-passage.'
   explication: 'Le losange jaune indique une route prioritaire jusqu’au losange barré : la position de la rouge à
     ma droite ne change rien, son cédez-le-passage lui impose d’attendre.'
   theme: L
@@ -63,8 +62,8 @@
       S: {vehicle: {colour: bleu, me: true}, goes: straight, sign: fin_prioritaire}
       E: {vehicle: {colour: rouge}, goes: straight}
   check: {pair: [S, E, apres]}
-  question: "Je viens de passer un losange jaune barré (fin de route prioritaire). Une voiture arrive de ma droite à l'intersection suivante. Qui passe ?"
-  reponse: "La rouge : la fin de route prioritaire rétablit la priorité à droite."
+  question: Une voiture arrive de ma droite à la prochaine intersection. Qui passe ?
+  reponse: 'La rouge : le losange barré que je viens de passer met fin à la route prioritaire ; la priorité à droite s''applique.'
   explication: Le losange jaune barré annonce la fin du caractère prioritaire. Sans autre signalisation, la priorité à droite s’applique ; le triangle avec une croix noire peut la rappeler.
   theme: L
   sous_theme: priorites
@@ -93,7 +92,7 @@
   check: {pair: [S, E, apres]}
   question: "Je suis sur une route prioritaire ; un tramway arrive sur ma droite. Qui passe ?"
   reponse: "Le tramway : il est prioritaire sur tous les usagers, même sur une route à caractère prioritaire."
-  explication: "Article R422-3 : priorité aux véhicules sur rails. Seuls des feux propres au tram ou un agent peuvent l'arrêter. Il ne peut ni dévier ni freiner court."
+  explication: "Article R422-3 : priorité aux véhicules sur rails. Seuls une signalisation qui le lui impose (feux, panneau) ou un agent peuvent l'arrêter. Il ne peut ni dévier ni freiner court."
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R422-3"
@@ -118,8 +117,8 @@
       S: {vehicle: {colour: bleu, me: true}, goes: straight, sign: feu_vert}
       E: {vehicle: {colour: rouge}, goes: straight, sign: feu_rouge}
     agent: bras_leve
-  question: "Mon feu est vert, mais l'agent au centre du carrefour lève le bras verticalement. Que fais-je ?"
-  reponse: "Je m'arrête : bras levé = arrêt pour tous les usagers, et les ordres de l'agent priment sur les feux."
+  question: Mon feu est vert. L'agent au centre du carrefour fait le geste montré dans le médaillon. Que fais-je ?
+  reponse: 'Je m''arrête : bras levé = arrêt pour tous les usagers, sauf ceux déjà engagés ; les ordres de l''agent priment sur les feux.'
   explication: "Article R411-28. Le bras levé annonce en général un changement de sens de passage ; on attend le geste suivant."
   theme: L
   sous_theme: agents
@@ -217,8 +216,8 @@
     vehicles:
       - {pos: S, colour: bleu, me: true, goes: left, distance: 20}
       - {pos: W, colour: rouge, goes: straight, distance: 22}
-  question: Carrefour à sens giratoire avec cédez-le-passage à chaque entrée. L’anneau est vide ; la voiture rouge attend à l’entrée située à ma gauche. Je veux prendre la troisième sortie. Puis-je m’engager ?
-  reponse: "Oui : je ne cède qu'aux véhicules déjà dans l'anneau. Une fois engagé, c'est la rouge qui me cédera le passage à son entrée."
+  question: L'anneau est vide ; la voiture rouge attend à l'entrée située à ma gauche. Je veux prendre la troisième sortie. Puis-je m'engager ?
+  reponse: 'Oui : à ce giratoire (cédez-le-passage aux entrées), je ne cède qu''aux véhicules déjà dans l''anneau. Une fois engagé, c''est la rouge qui me cédera le passage.'
   explication: "R415-10 : priorité aux usagers qui circulent sur l'anneau ; un véhicule arrêté à une autre entrée n'y est pas encore. Conseil : clignotant gauche à l'entrée puisque je dépasse la moitié de l'anneau, puis clignotant droit avant ma sortie, en contrôlant à droite."
   theme: L
   sous_theme: priorites
@@ -243,9 +242,8 @@
     - S
     - N
     - avant
-  question: Nous avons chacun un STOP, face à face, et la route transversale est libre. La rouge tourne à sa gauche,
-    je vais tout droit. Qui repart en premier ?
-  reponse: 'Moi : après l''arrêt, celui qui tourne à gauche cède le passage au véhicule qui vient en face.'
+  question: Les deux voitures sont arrêtées à leur ligne, face à face, et la route transversale est libre. La rouge tourne à sa gauche, je vais tout droit. Qui repart en premier ?
+  reponse: 'Moi : nos deux STOP règlent la priorité avec la route transversale ; entre nous, celui qui tourne à gauche cède au véhicule qui vient en face.'
   explication: 'Le STOP règle la priorité avec la route transversale, pas entre les deux véhicules arrêtés : on
     revient à la règle du tourne-à-gauche (R415-4). C''est la réponse attendue à l''exemple officiel de 2023 (Q2).'
   theme: L

@@ -24,11 +24,10 @@
 - id: d-formation-post-permis
   texte: La formation complémentaire « post-permis » (une journée, entre le 6e et le 12e mois) ramène le délai probatoire
     de 3 ans à {{c1::2 ans}}.
-  explication: 'Après AAC, elle le ramène de 2 ans à 1 an et 6 mois. Volontaire, dans une école labellisée, réservée au premier
-    permis et sans infraction avec retrait de points. Avec elle : 12 points après 2 ans au lieu de 3.'
+  explication: 'Après AAC, elle le ramène de 2 ans à 1 an et 6 mois. Volontaire, dans une école labellisée, réservée au premier permis, sans infraction avec retrait de points ni suspension ou restriction du droit de conduire. Avec elle : 12 points après 2 ans au lieu de 3.'
   theme: D
   sous_theme: points
-  source: Code de la route, art. L223-1 et R223-4-1 ; décret n° 2018-715 ; service-public.fr F2390
+  source: Code de la route, art. L223-1 ; arrêté d'application de la formation complémentaire (R223-4-1 II et III abrogés par le décret n° 2025-1437) ; service-public.fr F2390
 - id: d-points-delit-cumul
   texte: Pour plusieurs infractions constatées en même temps, le retrait de points est plafonné à {{c1::8 points}} ; seul
     le cumul alcool + stupéfiants peut en retirer 9.
@@ -68,15 +67,6 @@
     {{c2::2 ans}} sans nouvelle infraction donnant lieu à retrait.'
   - 'Hors règles particulières du probatoire, reconstitution des 12 points si une infraction est de classe 4 ou 5 ou un délit
     : {{c3::3 ans}} sans nouvelle infraction donnant lieu à retrait.'
-- id: d-points-dix-ans
-  texte: Les points retirés pour des contraventions des quatre premières classes sont réattribués au bout de {{c1::dix
-    ans}}, même sans reconstitution complète du capital entre-temps.
-  explication: 'Ce délai long s’ajoute aux autres : six mois pour un point unique, deux ans sans nouvelle infraction,
-    trois ans si une contravention de 4e ou 5e classe ou un délit figure parmi elles, ou un stage. Il suppose un
-    permis resté valide ; contraventions de 5e classe et délits en sont exclus.'
-  theme: D
-  sous_theme: points
-  source: Code de la route, art. L223-6
 - id: d-stage-points
   explication: Les points sont crédités le lendemain du dernier jour de stage. Avant 2011, la fréquence était d’une fois tous
     les deux ans.
@@ -114,13 +104,6 @@
   theme: D
   sous_theme: permis
   source: Code de la route, art. R221-1-1
-- id: d-formation-minimale
-  texte: 'Premier permis B en auto-école : formation pratique minimale ordinaire de {{c1::20 heures}} sur boîte manuelle.'
-  explication: '13 heures pour une formation limitée à la boîte automatique. Hors simulateur : au moins 15 h en circulation
-    (10 h en automatique).'
-  theme: D
-  sous_theme: permis
-  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2828"
 - id: d-accompagnateur
   explication: 'En conduite accompagnée, l''accompagnateur a la charge de la conduite et peut voir sa responsabilité
     engagée. Il est personnellement soumis aux règles sur l''alcool et les stupéfiants (rétention possible de son
@@ -131,14 +114,6 @@
   rappels:
   - Pour accompagner un élève, il faut notamment le permis B depuis {{c1::5 ans}} sans interruption.
   - Pour accompagner un élève, il faut l’accord de {{c2::l’assureur}} du véhicule pour cet apprentissage.
-- id: d-classes-amendes
-  texte: Une contravention relève du tribunal de police ; un délit relève du {{c1::tribunal correctionnel}} et peut exposer
-    à une peine de prison.
-  explication: Une amende forfaitaire, une amende majorée et le maximum fixé par la loi ne sont pas le même montant. Pour
-    un avis reçu, lire sa procédure et ses délais. Les infractions utiles au permis sont étudiées dans leurs situations.
-  theme: D
-  sous_theme: sanctions
-  source: Code pénal, art. 131-13 ; Code de procédure pénale, art. R49 ; service-public.fr F18509
 - id: d-telephone-sanction
   texte: 'Téléphone tenu en main, oreillette, écouteurs ou casque audio au volant : 135 € et {{c1::3 points}}.'
   explication: 'Si l’infraction est commise en même temps qu’une autre (vitesse, feu, priorité, ligne continue…), le permis
@@ -199,8 +174,7 @@
   sous_theme: sanctions
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2881"
 - id: d-alcool-delit
-  explication: Le seuil est inclus. Des peines de prison et d’amende ainsi qu’une suspension ou annulation sont encourues.
-    L’ivresse manifeste et le refus de vérification constituent aussi des délits ; les peines maximales ne sont pas automatiques.
+  explication: Le seuil est inclus. Des peines de prison et d’amende sont encourues ; après rétention, le préfet doit suspendre le permis. Le refus de vérification est aussi un délit. Depuis 2026, conduire en état d’ivresse manifeste, ou après avoir manifestement consommé de façon détournée une substance psychoactive listée (protoxyde d’azote par exemple), est un délit qui retire 6 points (L237-1).
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L234-1, L234-2, L234-8, L237-1 (lois n° 2025-622 et n° 2026-798)
@@ -266,8 +240,7 @@
   sous_theme: sanctions
   source: Code de la route, art. R413-15 et R317-8
 - id: d-retention-suspension
-  explication: 'Cas de rétention : alcool, stupéfiants, refus, excès ≥ 40 km/h avec interception, téléphone cumulé à une autre
-    infraction, refus d’obtempérer. Le tribunal peut ensuite suspendre plus longtemps ou annuler le permis.'
+  explication: 'Cas de rétention : alcool, stupéfiants, refus, excès ≥ 40 km/h avec interception, téléphone cumulé à une autre infraction, refus d’obtempérer. Depuis la loi du 18 août 2026, après rétention pour alcoolémie délictuelle, stupéfiants, refus de vérification ou conduite sous emprise manifeste, le préfet doit prononcer la suspension ; dans les autres cas, elle reste possible. Le tribunal peut ensuite suspendre plus longtemps ou annuler le permis.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L224-1, L224-2, L224-7 ; service-public.fr F1040
@@ -365,11 +338,9 @@
   theme: D
   sous_theme: documents
   rappels:
-  - Le PTAC (rubrique F.2 de la carte grise) est la masse maximale autorisée du véhicule {{c1::chargé}}, passagers
-    et bagages compris.
-  - La charge utile est la différence entre le PTAC et le {{c2::poids à vide}} (rubrique G.1).
-  - La masse maximale autorisée de l'ensemble véhicule + remorque est le {{c3::PTRA}} (rubrique F.3).
-  explication: Dépasser le PTAC allonge la distance d'arrêt, dégrade la tenue de route et expose à une amende et
-    à l'immobilisation. Pour le permis B, ce sont les PTAC, pas les masses réelles, qui se comparent aux 3 500 kg.
+  - Le PTAC est la masse maximale autorisée du véhicule {{c1::chargé}}, passagers et bagages compris.
+  - La charge utile est la différence entre le PTAC et le {{c2::poids à vide}}.
+  - La masse maximale autorisée de l'ensemble véhicule + remorque est le {{c3::PTRA}}.
+  explication: 'Sur la carte grise : PTAC en F.2, PTRA en F.3, poids à vide en G.1 (à lire, pas à apprendre). Dépasser le PTAC allonge la distance d''arrêt, dégrade la tenue de route et expose à une amende et à l''immobilisation. Pour le permis B, ce sont les PTAC, pas les masses réelles, qui se comparent aux 3 500 kg.'
   source: Code de la route, art. R311-1 et R221-4 ; arrêté du 9 février 2009 (certificat d'immatriculation, rubriques
     F.2, F.3, G.1)

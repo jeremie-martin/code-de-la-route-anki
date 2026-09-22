@@ -198,8 +198,8 @@
       S: {vehicle: {colour: bleu, me: true}, goes: right, sign: cedez}
       W: {vehicle: {colour: rouge}, goes: straight}
   check: {pair: [S, W, apres]}
-  question: "J'ai un cédez-le-passage et je tourne à droite ; une voiture arrive de ma gauche. Puis-je m'engager ?"
-  reponse: "Non : je cède le passage à la rouge ; je peux m'engager sans m'arrêter seulement si la voie est libre."
+  question: Je tourne à droite ; une voiture arrive de ma gauche. Puis-je m'engager avant elle ?
+  reponse: 'Non : mon cédez-le-passage m''impose de laisser passer la rouge. Si la voie était libre, je pourrais m''engager sans m''arrêter.'
   explication: 'Le cédez-le-passage n’impose pas l’arrêt, mais impose de laisser passer les véhicules de la route transversale. Même en tournant à droite, je dois attendre : la rouge va occuper la voie où je m’engage.'
   theme: L
   sous_theme: priorites
@@ -212,8 +212,8 @@
       N: {vehicle: {colour: rouge}, goes: straight, sign: prioritaire}
       E: {vehicle: {colour: vert}, goes: straight, sign: stop}
   check: {order: [N, S, E]}
-  question: Je suis sur une route prioritaire et je tourne à gauche ; en face, la voiture rouge va tout droit ; à droite, la verte a un STOP. Quel est l’ordre de passage ?
-  reponse: "Rouge, puis moi, puis verte."
+  question: Je tourne à gauche ; les autres véhicules suivent les flèches. Quel est l'ordre de passage ?
+  reponse: 'Rouge, puis moi, puis verte : je suis prioritaire (losange) mais je cède à la rouge qui vient d''en face ; la verte a un STOP.'
   explication: "Être sur la route prioritaire ne dispense pas de la règle du tourne-à-gauche : je cède à la rouge qui vient en face. La verte, au STOP, attend que nous soyons passés tous les deux, même si elle est à ma droite."
   theme: L
   sous_theme: priorites
@@ -225,8 +225,8 @@
       S: {vehicle: {colour: bleu, me: true}, goes: straight, sign: stop}
       E: {vehicle: {colour: rouge}, goes: straight, sign: stop}
   check: {pair: [S, E, apres]}
-  question: "Nous avons chacun un STOP, la voiture rouge est à ma droite, et la route transversale est libre. Qui repart en premier ?"
-  reponse: "La rouge : entre deux véhicules arrêtés au STOP, la priorité à droite s'applique."
+  question: Les deux voitures sont arrêtées à leur ligne et la route transversale est libre. Qui repart en premier ?
+  reponse: 'La rouge : nous avons chacun un STOP ; entre deux véhicules arrêtés au STOP, la priorité à droite s''applique.'
   explication: 'Après l''arrêt obligatoire, s''il n''y a personne sur la route prioritaire, aucun texte spécial ne
     départage deux véhicules au STOP : on revient à la règle générale, la priorité à droite. C''est la réponse attendue
     à l''épreuve.'
@@ -262,48 +262,6 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-9 et R415-11
-- id: scn-tram-gauche
-  kind: intersection
-  spec:
-    approaches:
-      S: {vehicle: {colour: bleu, me: true}, goes: straight}
-      W: {vehicle: {colour: jaune, kind: tram}, goes: straight}
-  check: {pair: [S, W, apres]}
-  question: "Intersection sans signalisation : un tramway arrive de ma gauche. Qui passe en premier ?"
-  reponse: "Le tramway, même s'il vient de ma gauche."
-  explication: "Le tramway est prioritaire sur tous les usagers, même venant de gauche (art. R422-3 I) ; seuls des feux ou un agent peuvent l'arrêter. Il ne peut pas freiner court ni dévier : je m'arrête avant les rails."
-  theme: L
-  sous_theme: priorites
-  source: "Code de la route, art. R422-3"
-- id: scn-pompiers-gauche
-  kind: intersection
-  spec:
-    approaches:
-      S:
-        vehicle:
-          colour: bleu
-          me: true
-        goes: straight
-      W:
-        vehicle:
-          colour: rouge
-          kind: pompiers
-          siren: true
-        goes: straight
-  check:
-    pair:
-    - S
-    - W
-    - apres
-  question: 'Intersection sans signalisation : un véhicule de pompiers arrive de ma gauche, sirène et gyrophare
-    en marche. Qui passe en premier ?'
-  reponse: 'Les pompiers : je m''arrête et je leur laisse le passage, même si je suis prioritaire.'
-  explication: 'Véhicules d''intérêt général prioritaires (pompiers, police, gendarmerie, SAMU, douanes) avec avertisseurs
-    spéciaux (2 tons + gyrophare bleu) : tout usager doit leur céder le passage et faciliter leur progression (art.
-    R415-12), sans mise en danger.'
-  theme: L
-  sous_theme: priorites
-  source: Code de la route, art. R415-12
 - id: scn-feu-vert-tourne-gauche
   kind: intersection
   spec:
@@ -351,8 +309,7 @@
           colour: rouge
         goes: straight
         sign: feu_orange_clignotant
-  question: Les feux de l'intersection clignotent au jaune (hors service). Une voiture arrive de ma droite. Qui passe
-    en premier ?
+  question: Les feux de l'intersection clignotent au jaune. Une voiture arrive de ma droite. Qui passe en premier ?
   reponse: 'La rouge : feux au jaune clignotant = prudence et retour aux panneaux ou, sans panneau, à la priorité
     à droite.'
   explication: 'Le jaune clignotant n''est pas un feu vert : il signale que les feux ne règlent plus la circulation.
@@ -373,9 +330,8 @@
       E: {vehicle: {colour: rouge}, goes: straight}
     agent: bras_tendus_NS
   check: {pair: [S, E, avant]}
-  question: 'Un agent règle la circulation, bras tendus à l''horizontale : je le vois de profil, dans l''axe de ses
-    bras. Puis-je passer ?'
-  reponse: "Oui : je suis dans l'axe de ses bras, donc je passe ; la rouge, qui voit sa poitrine, doit s'arrêter."
+  question: Un agent règle la circulation. D'après sa position et celle de ses bras, puis-je passer ?
+  reponse: 'Oui : je le vois de profil, dans l''axe de ses bras tendus ; la rouge, qui le voit de face, doit s''arrêter.'
   explication: "Bras tendus = barrière pour ceux qui voient l'agent de face ou de dos ; passage pour ceux qui le voient de profil. Bras levé vertical = tout le monde s'arrête. L'agent prime sur les feux et les panneaux."
   theme: L
   sous_theme: agents
@@ -388,8 +344,8 @@
       W: {vehicle: {colour: rouge}, goes: straight}
     agent: bras_tendus_EW
   check: {pair: [S, W, apres]}
-  question: "L'agent me fait face, bras tendus en travers de ma route. La voiture rouge à ma gauche passe-t-elle avant moi ?"
-  reponse: "Oui : de face, ses bras tendus me barrent le passage ; la rouge, qui le voit de profil, est libérée."
+  question: Un agent règle la circulation. La voiture rouge, à ma gauche, passe-t-elle avant moi ?
+  reponse: 'Oui : l''agent me fait face, bras tendus en travers de ma route, ce qui m''arrête ; la rouge, qui le voit de profil, est libérée.'
   explication: "De face ou de dos, bras tendus = arrêt. La priorité à droite ne compte plus quand un agent règle la circulation : seuls ses gestes décident."
   theme: L
   sous_theme: agents
@@ -403,8 +359,8 @@
     vehicles:
       - {pos: S, colour: bleu, me: true, goes: straight, distance: 20}
       - {pos: inside, angle: 225, colour: rouge}
-  question: Carrefour à sens giratoire avec cédez-le-passage à l’entrée. Une voiture circule déjà dans l’anneau, à ma gauche. Puis-je m’engager ?
-  reponse: "Non : je cède le passage aux véhicules déjà engagés dans l'anneau (ils viennent de ma gauche), puis j'entre par la droite."
+  question: Une voiture circule déjà dans l'anneau, à ma gauche. Puis-je m'engager avant elle ?
+  reponse: 'Non : les entrées portent un cédez-le-passage, c''est un carrefour à sens giratoire ; je cède aux véhicules déjà dans l''anneau.'
   explication: Je cède aux véhicules qui circulent dans l’anneau. Avant ma sortie, je contrôle les autres usagers puis mets mon clignotant droit.
   theme: L
   sous_theme: priorites
@@ -416,8 +372,8 @@
     vehicles:
       - {pos: S, colour: bleu, me: true, goes: straight, distance: 20}
       - {pos: inside, angle: 225, colour: rouge}
-  question: Intersection circulaire signalée par des triangles avec une croix noire, sans cédez-le-passage. Une voiture circule dans l’anneau à ma gauche. Puis-je m’engager ?
-  reponse: 'Oui, si elle me laisse passer : la priorité à droite s’applique et j’arrive à sa droite. Je vérifie qu’elle ralentit avant de m’engager.'
+  question: Une voiture circule déjà dans l'anneau, à ma gauche. Puis-je m'engager avant elle ?
+  reponse: 'Oui, si elle me laisse passer : les triangles à croix noire, sans cédez-le-passage, annoncent la priorité à droite, et j''arrive à sa droite. Je vérifie qu''elle ralentit.'
   explication: 'La croix noire rappelle la priorité à droite : je suis à droite de la voiture déjà dans l’anneau. Elle doit me laisser entrer. C’est l’inverse d’un giratoire dont les entrées portent un cédez-le-passage.'
   theme: L
   sous_theme: priorites

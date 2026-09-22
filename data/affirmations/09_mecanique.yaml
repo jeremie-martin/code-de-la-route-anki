@@ -1,6 +1,4 @@
 # M : La mécanique et les équipements : affirmations à juger VRAI/FAUX.
-# Priorité aux aides à la conduite (ADAS), sous-représentées en v1 alors que trois des vingt
-# questions officielles en relèvent (voyant ABS, assistance au stationnement, quitter un stationnement).
 - id: aff-m-voyant-orange-arret
   contexte: Je roule sur route, un voyant orange s'allume au tableau de bord.
   affirmation: Je dois m'arrêter sur-le-champ, au besoin sur la bande d'arrêt d'urgence.
@@ -57,7 +55,7 @@
 - id: aff-m-pression-chaud
   affirmation: La pression des pneus se contrôle après quelques kilomètres, quand ils sont chauds.
   verdict: faux
-  pourquoi: 'Elle se contrôle à froid (plus de 2 h d''arrêt ou moins de 3 km). À chaud la pression monte : on ne dégonfle pas un pneu chaud, et si l''on doit gonfler à chaud on majore de 0,3 bar.'
+  pourquoi: 'Elle se contrôle à froid (plus de 2 h d''arrêt ou moins de 3 km), pour la comparer à la valeur du constructeur. À chaud, la pression monte : on ne dégonfle pas un pneu chaud, on contrôle de nouveau à froid.'
   theme: M
   sous_theme: pneus
   source: "securite-routiere.gouv.fr, Pneus ; Michelin, Vérifier la pression"
@@ -76,16 +74,6 @@
   theme: M
   sous_theme: pneus
   source: "Michelin, Mixage des pneus ; Ornikar, Même essieu"
-- id: aff-m-pneu-age
-  contexte: 'Un pneu de voiture a dix ans depuis sa fabrication, mais semble peu usé.'
-  affirmation: Son faible kilométrage suffit pour le considérer encore sûr.
-  verdict: faux
-  pourquoi: 'Le vieillissement dépend aussi du temps et des conditions de stockage et d’usage. Michelin recommande
-    un contrôle annuel après cinq ans d’utilisation et un remplacement après dix ans depuis la fabrication,
-    même pour la roue de secours. Ce sont des préconisations du manufacturier, pas une durée de validité légale.'
-  theme: M
-  sous_theme: pneus
-  source: 'Michelin, Combien de temps dure un pneu ?, https://www.michelin.fr/auto/conseils/changer-pneus/combien-dure-un-pneu'
 - id: aff-m-4-saisons-3pmsf
   contexte: Zone soumise à la loi Montagne, période hivernale.
   affirmation: Des pneus 4 saisons marqués du symbole alpin 3PMSF comptent comme des pneus hiver.
@@ -136,15 +124,6 @@
   theme: M
   sous_theme: adas
   source: "CNSR, Les aides à la conduite, 2024 ; Renault, https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10"
-- id: aff-m-regulateur-conditions
-  contexte: Ma voiture possède un régulateur de vitesse simple, non adaptatif.
-  affirmation: Il est déconseillé de l’utiliser en circulation dense ou sur chaussée glissante.
-  verdict: vrai
-  pourquoi: En trafic dense, l’allure doit être ajustée fréquemment ; sur sol glissant, les variations automatiques de puissance
-    peuvent être inadaptées à l’adhérence. Je conduis moi-même à une allure adaptée et respecte les conditions d’utilisation de la notice.
-  theme: M
-  sous_theme: adas
-  source: "Renault, Régulateur de vitesse, https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-10"
 - id: aff-m-limiteur-descente
   contexte: Limiteur réglé sur 90 km/h, longue descente.
   affirmation: Dans cette descente, je peux laisser le limiteur tenir les 90 km/h et me concentrer sur la trajectoire.
@@ -154,14 +133,6 @@
   theme: M
   sous_theme: adas
   source: "Renault, Limiteur de vitesse, https://www.user-manual.renault.com/fr/la-conduite/limiteur-de-vitesse-4"
-- id: aff-m-angle-mort-moto
-  affirmation: Le détecteur d’angle mort peut ne pas signaler une moto qui remonte vite la file voisine.
-  verdict: vrai
-  pourquoi: La zone et les conditions de détection sont limitées et varient selon le système. Une absence d’alerte ne prouve pas que la voie est libre.
-    Je combine rétroviseurs et contrôle direct de l’angle mort juste avant de me déporter, en continuant à surveiller devant.
-  theme: M
-  sous_theme: adas
-  source: "Renault Express, Avertisseur d’angle mort, https://www.user-manual.renault.com/fr/content/xjk/driving/additional-driving-aid-functions/avertisseur-dangle-mort"
 - id: aff-m-detecteur-fatigue
   contexte: Ma voiture est équipée d’un détecteur de fatigue (pictogramme « tasse de café »).
   affirmation: Tant que le détecteur ne m'alerte pas, je peux considérer que je suis apte à poursuivre.
@@ -201,15 +172,6 @@
   theme: M
   sous_theme: adas
   source: "Renault Austral, Régulateur adaptatif, https://www.user-manual.renault.com/fr/la-conduite/regulateur-de-vitesse-adaptatif-0"
-- id: aff-m-camera-recul
-  contexte: Ma voiture est équipée d'une caméra de recul et de capteurs de stationnement.
-  affirmation: Grâce à eux, je peux reculer sans contrôler les rétroviseurs ni l'angle mort.
-  verdict: faux
-  pourquoi: Le champ de la caméra est limité et déformé ; un piéton ou un vélo peut arriver par le côté. Caméra,
-    capteurs, rétroviseurs et regard vers l'arrière se complètent.
-  theme: M
-  sous_theme: adas
-  source: "CNSR, Comité des experts, Les aides à la conduite (ADAS), 2024"
 - id: aff-m-clignotant-rapide
   contexte: En actionnant le clignotant, le témoin vert clignote deux fois plus vite que d'habitude.
   affirmation: Cela signale qu'une ampoule de clignotant est grillée.

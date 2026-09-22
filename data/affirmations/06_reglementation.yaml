@@ -6,15 +6,6 @@
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R234-1 et L223-5
-- id: aff-d-probatoire-majoration
-  affirmation: Après une première année de permis sans aucune infraction, mon capital passe de 6 à 8 points.
-  verdict: vrai
-  pourquoi: Dans cette situation, la majoration est de deux points par an. Après AAC, elle est de trois. Une infraction entraînant
-    un retrait de points interrompt cette acquisition progressive.
-  theme: D
-  sous_theme: points
-  source: Code de la route, art. L223-1 et R223-1
-  contexte: Permis B obtenu en filière classique, sans formation post-permis ni infraction entraînant un retrait de points.
 - id: aff-d-disque-a-duree
   contexte: Permis B obtenu il y a dix-huit mois en filière classique, sans formation post-permis.
   affirmation: Je peux maintenant retirer le disque « A » de l’arrière de ma voiture.
@@ -127,15 +118,6 @@
   theme: D
   sous_theme: documents
   source: service-public.fr F2878 ; arrêté du 18 juin 1991
-- id: aff-d-carte-grise-delai
-  contexte: J'achète une voiture d'occasion à un particulier.
-  affirmation: J'ai un mois pour faire établir la carte grise à mon nom.
-  verdict: vrai
-  pourquoi: Un mois à compter de la cession, sur l'ANTS ou chez un professionnel habilité (135 € à défaut). Le vendeur, lui,
-    déclare la cession sous 15 jours. Même délai d'un mois pour un changement d'adresse.
-  theme: D
-  sous_theme: documents
-  source: Code de la route, art. R322-4, R322-5 et R322-7 ; service-public.fr F21031
 - id: aff-d-assurance-tiers
   contexte: Je suis responsable d'un accident et je suis assuré au tiers.
   affirmation: Mon assurance prendra en charge la réparation de ma propre voiture.

@@ -46,7 +46,8 @@ relation ; leur résultat seul ne doit pas devenir la connaissance à apprendre.
 ## Présentation
 
 Recto : situation, image utile, question. Une illustration ne doit pas donner le rappel demandé
-(par exemple, légender le réglage que la question fait retrouver). Le verso prolonge le recto sans déplacer
+(par exemple, légender le réglage que la question fait retrouver). À l’inverse, l’énoncé ne nomme pas ce que
+l’image doit faire lire (panneau, marquage, geste d’agent) : repérer l’indice fait partie de la compétence. Le verso prolonge le recto sans déplacer
 les images ni atténuer les prompts ; réponse puis explication s’ajoutent dessous. Le cloze se révèle en place.
 Le thème des cartes garde le court séparateur jaune, les réponses contrastées et les explications sans panneaux remplis.
 Les références, noms techniques et codes restent dans le volet « Sources ». Les exemples visuels du verso portent une légende.

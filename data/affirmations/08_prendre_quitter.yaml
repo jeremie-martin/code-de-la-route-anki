@@ -1,13 +1,4 @@
-# P : Prendre et quitter son véhicule : affirmations à juger VRAI/FAUX (cf. docs/05-audit-v2.md §2.2).
-# Les fausses sont les idées reçues réelles du thème (knowledge-facts « Pièges U et S ») ; le verso donne la raison.
-- id: aff-p-reglage-en-roulant
-  contexte: Je m'aperçois en roulant que mon rétroviseur droit est mal orienté.
-  affirmation: Je le rectifie sans m'arrêter, en gardant un œil sur la route.
-  verdict: faux
-  pourquoi: "Les réglages du poste de conduite se font véhicule à l'arrêt : chercher la commande détourne le regard et une main. Je m'arrête en sécurité, je règle, puis je repars."
-  theme: P
-  sous_theme: installation
-  source: "Code en Poche, Prendre et quitter son véhicule ; REMC"
+# P : Prendre et quitter son véhicule : affirmations à juger VRAI/FAUX.
 - id: aff-p-retro-interieur-nuit
   contexte: De nuit, les phares du véhicule qui me suit m’éblouissent dans mon rétroviseur intérieur à levier jour/nuit.
   affirmation: Je bascule le rétroviseur en position nuit pour atténuer le reflet.
