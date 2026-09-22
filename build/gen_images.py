@@ -8,7 +8,7 @@ from __future__ import annotations
 import math
 import textwrap
 
-from build.diagrams import (ASPHALT, GRASS, MARK, LABEL, FONT, SVG, agent_figure, draw_road, draw_intersection, draw_roundabout,
+from build.diagrams import (ASPHALT, GRASS, MARK, LABEL, RAIL, FONT, SVG, agent_figure, draw_road, draw_intersection, draw_roundabout,
                             vehicle_sprite, intention_arrow, siren_rays, sign_data_uri, esc, _body)
 
 ME = _body({"me": True})  # the learner's car in decision scenes: blue, yellow halo, MOI (as in the scenarios)
@@ -1558,7 +1558,87 @@ def ceinture(params):
     return str(S)
 
 
+# ------------------------------------------------ motorway ramps, level crossings ---
+
+def bretelle(params):
+    """Motorway (traffic left to right) with an auxiliary lane on the right: 'insertion' (acceleration lane closing
+    ahead) or 'sortie' (deceleration lane opening ahead). vehicles: [{lane: gauche|droite|bretelle, x, me, colour}].
+    A label names the auxiliary lane when `label` is given."""
+    mode = params.get("mode", "insertion")
+    S = SVG(480, 300)
+    S.add(f'<rect x="0" y="0" width="480" height="300" fill="{GRASS}"/>')
+    S.add(f'<rect x="0" y="40" width="480" height="150" fill="{ASPHALT}"/>')
+    S.add(f'<rect x="0" y="42" width="480" height="4" fill="{MARK}"/>')
+    _dashes_h(S, 115, 3, 10)
+    if mode == "insertion":
+        S.add(f'<path d="M0,190 L260,190 L480,190 L260,260 L0,260 Z" fill="{ASPHALT}"/>')
+        _dashes_h(S, 190, 3, 3.5, w=5, x1=260)
+        S.add(f'<path d="M260,260 L480,190 L480,192 L262,262 Z" fill="{MARK}"/>')
+    else:
+        S.add(f'<path d="M0,190 L220,260 L480,260 L480,190 Z" fill="{ASPHALT}"/>')
+        _dashes_h(S, 190, 3, 3.5, w=5, x0=220)
+        S.add(f'<path d="M0,190 L220,260 L218,262 L0,192 Z" fill="{MARK}"/>')
+    ys = {"gauche": 78, "droite": 152, "bretelle": 226}
+    for v in params.get("vehicles", []):
+        sprite = _body({"me": True}, 90) if v.get("me") else vehicle_sprite("car", v.get("colour", "gris"))
+        S.add(f'<g transform="translate({v["x"]},{ys[v["lane"]]}) rotate(90)">{sprite}</g>')
+    if params.get("label"):
+        _pill(S, 470, 288, params["label"], anchor="end")
+    return str(S)
+
+
+def pn_face(params):
+    """Level crossing with half barriers seen from the approach: the R24 twin light (as on its recognition card),
+    lit and flashing when `feux`, and the half barrier 'haute', 'mi' (moving) or 'basse'."""
+    S = SVG(420, 320)
+    S.add(f'<rect x="0" y="0" width="420" height="320" fill="{PAPER}"/>')
+    S.add('<rect x="0" y="282" width="420" height="38" fill="#7a7a7a"/>')
+    S.add('<rect x="96" y="100" width="10" height="186" fill="#9a9a9a"/>')
+    S.add('<rect x="41" y="40" width="120" height="80" rx="10" fill="#222" stroke="#000" stroke-width="2"/>')
+    lit = params.get("feux", True)
+    _lamp(S, 74, 80, 21, RED, on=lit, blink=lit)
+    _lamp(S, 128, 80, 21, RED, on=False)
+    angle = {"haute": -84, "mi": -38, "basse": 0}[params.get("barriere", "haute")]
+    S.add('<rect x="176" y="246" width="34" height="40" rx="4" fill="#d9d9d9" stroke="#777"/>')
+    S.add(f'<g transform="translate(200,258) rotate({angle})">'
+          f'<rect x="0" y="-7" width="210" height="14" fill="{PAPER}" stroke="#777" stroke-width="1.5"/>'
+          + "".join(f'<rect x="{10 + 40 * i}" y="-7" width="20" height="14" fill="{SIGN_RED}"/>' for i in range(5)) + '</g>')
+    return str(S)
+
+
+def pn_plan(params):
+    """Level crossing from above (traffic of my lane goes up): two tracks across the road, half barriers on the
+    right-hand side of each approach ('basses' or 'hautes'), red lights flashing when `feux` (drawn only lit), optional stopped
+    queue just after the tracks in my lane."""
+    S = SVG(480, 440)
+    S.add(f'<rect x="0" y="0" width="480" height="440" fill="{GRASS}"/>')
+    x0, w = 150, 180                                         # road: two lanes of 90
+    S.add(f'<rect x="{x0}" y="0" width="{w}" height="440" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M{x0 + w / 2},0 V440" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 18"/>')
+    for ty in (170, 210):                                   # two tracks: sleepers and rails
+        for x in range(0, 480, 16):
+            S.add(f'<rect x="{x}" y="{ty - 12}" width="8" height="24" fill="#8d7b68"/>')
+        for dy in (-7, 7):
+            S.add(f'<path d="M0,{ty + dy} H480" stroke="{RAIL}" stroke-width="3"/>')
+    low = params.get("barrieres", "basses") == "basses"
+    # each approach has its half barrier and its light on its right: mine (going up) east, the other one west
+    for post_x, post_y, arm, light_x in ((x0 + w + 12, 252, -1, x0 + w + 44), (x0 - 12, 128, 1, x0 - 44)):
+        S.add(f'<rect x="{post_x - 8}" y="{post_y - 8}" width="16" height="16" fill="#d9d9d9" stroke="#777"/>')
+        end = post_x + arm * ((w / 2 + 10) if low else 24)
+        S.add(f'<path d="M{post_x},{post_y} H{end}" stroke="{PAPER}" stroke-width="9"/>'
+              f'<path d="M{post_x},{post_y} H{end}" stroke="{SIGN_RED}" stroke-width="9" stroke-dasharray="12 12"/>')
+        if params.get("feux", low):
+            _lamp(S, light_x, post_y, 9, RED, blink=True)
+    if params.get("file"):
+        for i in range(3):
+            y = 104 - i * 94
+            S.add(f'<g transform="translate({x0 + w * 0.75},{y})">{vehicle_sprite("car", "gris")}</g>')
+    S.add(f'<g transform="translate({x0 + w * 0.75},{380})">{ME}</g>')
+    return str(S)
+
+
 REGISTRY.update({
+    "bretelle": bretelle, "pn_face": pn_face, "pn_plan": pn_plan,
     "autoroute_attente": autoroute_attente,
     "medicaments_niveaux": medicaments_niveaux, "etiquettes_carburant": etiquettes_carburant, "pneu_flanc": pneu_flanc,
     "pneu_usure": pneu_usure, "angles_morts": angles_morts, "ceinture": ceinture,

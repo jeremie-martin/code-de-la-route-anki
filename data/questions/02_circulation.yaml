@@ -119,6 +119,17 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R421-3
+  image:
+    gen: bretelle
+    params:
+      vehicles:
+      - lane: bretelle
+        x: 130
+        me: true
+      - lane: droite
+        x: 60
+      - lane: droite
+        x: 330
 - id: l-entrecroisement
   question: 'Je conduis la voiture bleue qui vient de l’entrée. La rouge circule déjà sur l’autoroute et veut
     prendre la sortie. Puis-je m’insérer devant elle en l’obligeant à ralentir ?'

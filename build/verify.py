@@ -42,7 +42,7 @@ def verify_content(col, data):
     assert {n['Id'] for n in notes.values()} == set(expected)
     names = {n['id']: media_name('img', n['id']) for n in data['reconnaissance']}
     names.update({n['id'] + ':illustration': media_name('exp', n['id'])
-                  for n in data['questions'] if n.get('illustration')})
+                  for kind in ('faits', 'questions', 'affirmations') for n in data[kind] if n.get('illustration')})
     feedback_fields = {'reconnaissance': 'Piege', 'confusions': 'Difference',
                        'faits': 'Explication', 'questions': 'Explication',
                        'affirmations': 'Pourquoi', 'scenarios': 'Explication'}
@@ -83,8 +83,8 @@ def verify_content(col, data):
             assert 'class="cdr-comparisons"' not in card.question()
             assert 'class="cdr-comparisons"' in card.answer()
         if expected[notes[card.nid]['Id']].get('illustration'):
-            assert 'class="cdr-illustration"' not in card.question()
-            assert 'class="cdr-illustration"' in card.answer()
+            assert 'class="cdr-illustration' not in card.question()
+            assert 'class="cdr-illustration' in card.answer()
     assert not missing, missing
 
 

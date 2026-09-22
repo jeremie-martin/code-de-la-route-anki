@@ -199,6 +199,10 @@
   theme: R
   sous_theme: passages_a_niveau
   source: Code de la route, art. R412-30 et R422-3
+  image:
+    gen: pn_face
+    params:
+      barriere: haute
 - id: r-pn-engagement
   question: J'arrive sur un passage à niveau ouvert, mais la file de voitures est arrêtée juste après. Que fais-je
     ?
@@ -208,6 +212,11 @@
   theme: R
   sous_theme: passages_a_niveau
   source: "Code de la route, art. R422-3 ; SNCF Réseau, Sécurité aux passages à niveau"
+  image:
+    gen: pn_plan
+    params:
+      barrieres: hautes
+      file: true
 - id: r-pn-bloque
   question: Ma voiture reste immobilisée sur les rails et ne peut plus avancer. Que faire ?
   reponse: Faire sortir les occupants, s’éloigner des voies et alerter immédiatement (numéro affiché au passage à niveau,
@@ -240,6 +249,10 @@
   theme: R
   sous_theme: passages_a_niveau
   source: Code de la route, art. R422-3 ; SNCF Réseau
+  image:
+    gen: pn_face
+    params:
+      barriere: mi
 - id: r-tram-priorite
   question: Un tramway arrive sur ma gauche à un croisement sans feu ni panneau. Qui passe ?
   reponse: 'Le tramway : il est prioritaire sur tous les usagers, d’où qu’il vienne, car il ne peut ni s’écarter ni s’arrêter
@@ -295,6 +308,18 @@
   theme: R
   sous_theme: autoroute
   source: "Code de la route, R413-17, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/ ; R421-4"
+  illustration:
+    gen: bretelle
+    params:
+      mode: sortie
+      label: voie de décélération
+      vehicles:
+      - lane: bretelle
+        x: 330
+        me: true
+      - lane: droite
+        x: 120
+    legende: Je ralentis une fois sur cette voie, hors du flot de l’autoroute.
 - id: r-autoroute-bau
   question: À quoi sert la bande d'arrêt d'urgence et qui peut l'emprunter ?
   reponse: Aux arrêts d’urgence (panne, malaise) et aux véhicules de secours ou d’exploitation ; y rouler, ou s’y arrêter

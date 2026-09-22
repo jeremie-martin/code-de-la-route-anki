@@ -46,8 +46,12 @@
   theme: R
   sous_theme: passages_a_niveau
   source: Code de la route, art. R422-3 ; SNCF Réseau
+  image:
+    gen: pn_plan
+    params:
+      barrieres: basses
 - id: aff-r-insertion-prioritaire
-  contexte: Je circule sur la voie de droite de l'autoroute ; une voiture descend la bretelle d'accès sur ma droite.
+  contexte: Sur l'autoroute, la voiture rouge arrive par la voie d'accélération.
   affirmation: 'Je dois lui laisser le passage : celui qui s''insère est prioritaire.'
   verdict: faux
   pourquoi: L’entrant cède le passage (R421-3). Je facilite si possible en ajustant mon allure ou en changeant de
@@ -55,6 +59,16 @@
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R421-3
+  image:
+    gen: bretelle
+    params:
+      vehicles:
+      - lane: droite
+        x: 150
+        me: true
+      - lane: bretelle
+        x: 190
+        colour: rouge
 - id: aff-r-autoroute-voie-gauche-80
   contexte: Autoroute à trois voies, circulation fluide, temps sec.
   affirmation: Sur la voie de gauche, je dois rouler à au moins 80 km/h tant que la circulation reste fluide.
