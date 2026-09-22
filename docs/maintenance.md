@@ -45,7 +45,7 @@ nécessaire), puis tout est en cache. Le texte du Code consolidé, ignoré par g
 Champs communs : `id` (unique, minuscules, chiffres, tirets), `theme` (X L C R U D A P M S E ; X = méthode de
 lecture de l’épreuve), `sous_theme` (voir la liste ci-dessous), `source`. Facultatifs : `image` (`{commons: nom
 de fichier exact}`, `{gen: générateur, params: {…}}`, `tint: "#hex"` pour un voyant ISO), `image_ref` (une
-question réutilise l’image d’une reconnaissance, qui la précède alors dans l’ordre), `prerequis: [ids]` (notes
+note réutilise l’image d’une reconnaissance, qui la précède alors dans l’ordre), `prerequis: [ids]` (notes
 à connaître avant celle-ci : une définition, une évaluation avant le geste qui en dépend), `debut: true` (base à
 introduire avant tout le reste), `multi_ok`, `dedup_ok: [autre-id]` (exceptions assumées qui font
 taire un avertissement). Les valeurs contenant « : » se mettent entre guillemets (`python build/yamlfix.py fichier`).
@@ -136,9 +136,15 @@ comparaisons:
 
 `ref` réutilise le média d’une reconnaissance ; `legende` explique le détail visible et son sens. Le build
 valide la référence et incorpore l’image au verso, près de l’explication. Pour tester la distinction, utiliser une
-note `confusions`. Pour une explication dessinée au **verso d’une question**, utiliser `illustration`
-(`gen`, `params`, `width`, `legende` obligatoire) : le média est ajouté à l’explication, sans nouveau champ ni
-nouvelle carte. Choisir le verso quand le dessin révélerait la réponse au recto.
+note `confusions`. Pour un dessin au **verso** d’un fait, d’une question ou d’une affirmation, utiliser
+`illustration` (`gen` ou `commons`, `params`, `width`, `legende` obligatoire, `signal: true` pour un signal à sa
+taille de signal) : le média est ajouté à l’explication, sans nouveau champ ni nouvelle carte.
+
+Où placer l’image : au **recto** quand elle pose la situation sans donner la réponse (la question cesse alors de
+décrire ce que l’image montre) ; en `illustration` quand elle l’expliquerait ou la révélerait ; en `verso: true`
+sur une image générée quand le même dessin doit se compléter au verso (lettres ou numéros au recto, noms au
+verso, à la même place) : le build produit `<id>-verso` et la carte échange les deux sur place, sans
+déplacement. Une image de reconnaissance n’écrit jamais sa réponse.
 
 ## Images générées
 
@@ -164,6 +170,17 @@ changement de l’un ou l’autre invalide les images au build suivant. Conventi
   plans d’implantation.
 - Déclarer les panneaux Commons d’une scène dans `params` avec `kind: sign` et `file` : ils sont attribués
   automatiquement dans `out/ATTRIBUTIONS.md`.
+- Dessins pédagogiques (section « teaching » de `gen_images.py`) : une palette nommée (`INK` pour les étiquettes,
+  `ANSWER` réservé au texte révélé par un verso, `WRONG` pour ce qu’il ne faut pas faire, `HIDDEN` hachuré pour ce
+  qui est masqué, `VISIBLE` et `YELLOW` pour ce qui est vu ou le trajet de MOI, `SKIN`/`CLOTH`/`SEAT` pour les
+  personnes et sièges) et des primitives partagées (`_text`, `_pill` sur fond chargé, `_tag`/`_slot` pour les
+  étiquettes recto/verso, `_flash_rays` pour tout ce qui clignote, `_person`, `_car_side`, `_car_rear`,
+  `_side_seat`, `_sign_png`). Réutiliser avant de créer ; une nouvelle couleur ou forme se nomme une fois.
+- `build.build` affiche à la taille d’un signal les feux, panneaux et panonceaux dessinés (`SIGNAL_GENERATORS`)
+  comme ceux des reconnaissances ; les autres dessins prennent la largeur de la carte.
+- `tests/test_images.py` rend chaque image générée d’une carte : texte hors cadre, étiquettes qui se chevauchent
+  (mesurées avec la vraie police) et verso de canevas différent du recto font échouer les tests. Il ne juge ni le
+  sens ni la lisibilité : regarder la carte.
 
 Pour relire une scène, suivre les coordonnées jusque dans les symboles partagés : gabarit des usagers, place
 dans la voie, sens de circulation, branches et espace disponible avant une manœuvre ; distinguer les panneaux
