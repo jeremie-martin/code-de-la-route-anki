@@ -17,6 +17,9 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-5 et R110-2
+  comparaisons:
+  - ref: b30
+    legende: 'Entrée de zone 30 : la vitesse change, les priorités restent.'
 - id: aff-l-priorite-droite-rue-etroite
   contexte: J'arrive sur une large avenue non prioritaire ; une ruelle étroite débouche à ma droite.
   affirmation: Ma voie étant nettement plus importante, je passe avant le véhicule qui sort de la ruelle.
@@ -34,7 +37,7 @@
   sous_theme: priorites
   source: Code de la route, art. R415-6 ; REMC
 - id: aff-l-cedez-arret
-  contexte: Panneau cédez-le-passage (triangle pointe en bas) et route transversale libre.
+  contexte: Ce panneau est implanté à l’intersection ; la route transversale est libre.
   affirmation: Je peux m'engager sans marquer l'arrêt, puisque la route est libre.
   verdict: vrai
   pourquoi: 'Le cédez-le-passage n''impose que de laisser passer les usagers de la route abordée : si elle est libre,
@@ -43,6 +46,10 @@
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-7
+  image_ref: ab3a
+  comparaisons:
+  - ref: ab4
+    legende: 'STOP : arrêt complet à la ligne, même route libre.'
 - id: aff-l-tourner-gauche-centre
   contexte: Je tourne à gauche à un carrefour sans feu ; des véhicules arrivent en face.
   affirmation: J’attends au milieu du carrefour, roues déjà braquées vers la gauche, pour partir plus vite.
@@ -149,13 +156,17 @@
   sous_theme: depassement
   source: Code de la route, art. R412-19 et R414-8 ; IISR 7e partie, art. 114-2
 - id: aff-l-b3-deux-roues
-  contexte: Panneau rond « interdiction de dépasser » sur une route à double sens.
+  contexte: Ce panneau est implanté sur une route à double sens.
   affirmation: Je peux encore dépasser une moto solo ou un cycliste si les conditions le permettent.
   verdict: vrai
   pourquoi: Ce panneau interdit de dépasser les véhicules à moteur autres que les deux-roues sans side-car. Une moto solo, un cyclomoteur, un vélo ou un véhicule à traction animale reste dépassable si la visibilité, les marquages et l’écart latéral le permettent.
   theme: L
   sous_theme: depassement
   source: IISR 4e partie (B3) ; Code de la route, art. R414-14
+  image_ref: b3
+  comparaisons:
+  - ref: b3a
+    legende: Même interdiction, pour les seuls poids lourds de plus de 3,5 t.
 - id: aff-l-klaxon-nuit
   contexte: Hors agglomération, de nuit, je m'apprête à dépasser un véhicule lent.
   affirmation: S’il faut avertir de mon dépassement, je le fais de préférence par un appel de phares plutôt qu’au klaxon.
@@ -287,6 +298,9 @@
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-10 et R110-2
+  comparaisons:
+  - ref: b52
+    legende: 'Entrée de zone de rencontre : 20 km/h, piétons prioritaires, stationnement sur les emplacements seulement.'
 - id: aff-l-90-departement
   contexte: Route hors agglomération à double sens, une voie par sens, sans séparateur central ni panneau relevant
     la limitation.
@@ -308,13 +322,17 @@
   sous_theme: vitesse
   source: Code de la route, art. R413-2 I 3° et R413-5
 - id: aff-l-lieu-dit
-  contexte: Sur une route de campagne, un panneau à lettres italiques blanches sur fond noir annonce « Les Granges ».
+  contexte: Sur une route de campagne, je passe ce panneau.
   affirmation: À partir de ce panneau, je suis en agglomération et limité à 50 km/h.
   verdict: faux
   pourquoi: C'est un panneau de lieu-dit, sans effet réglementaire. Le panneau d'entrée d'agglomération se reconnaît au nom sur fond blanc bordé de rouge ; c'est lui qui déclenche la limite par défaut de 50 km/h et les autres règles d'agglomération.
   theme: L
   sous_theme: vitesse
   source: IISR 5e partie art. 99-3 ; Code de la route, art. R110-2
+  image_ref: e31
+  comparaisons:
+  - ref: eb10
+    legende: 'Entrée d’agglomération : nom noir sur fond blanc bordé de rouge ; c’est lui qui déclenche 50 km/h.'
 - id: aff-l-vitesse-sous-limite
   contexte: Rue de centre-ville limitée à 50, sortie d'école, nombreux piétons ; je roule à 48 km/h.
   affirmation: Je peux être verbalisé alors même que je respecte la limitation.

@@ -70,6 +70,11 @@
   theme: R
   sous_theme: intemperies
   source: Code de la route, art. R416-6 et R416-7
+  comparaisons:
+  - ref: voyant-brouillard-avant
+    legende: 'Feux de brouillard avant : brouillard, neige ou forte pluie.'
+  - ref: voyant-brouillard-arriere
+    legende: 'Feu de brouillard arrière : brouillard ou neige ; à éteindre dès que la visibilité revient.'
 - id: r-brouillard-intervalle
   question: Le brouillard réduit la visibilité à 40 m. La route est normalement limitée à 80. Quel plafond de vitesse appliquer
     ?
@@ -117,6 +122,11 @@
   theme: R
   sous_theme: intemperies
   source: "securite-routiere.gouv.fr, Le vent ; Ornikar, Conduire par grand vent"
+  comparaisons:
+  - ref: a24
+    legende: Zone exposée au vent latéral.
+  - ref: j7
+    legende: 'Manche à air : direction et force du vent.'
 - id: r-soleil-bas
   question: 'Soleil rasant de face au coucher : que fais-je ?'
   reponse: Je ralentis selon ma visibilité, j’augmente l’intervalle et j’utilise le pare-soleil avec un pare-brise propre.
@@ -152,6 +162,11 @@
   theme: R
   sous_theme: tunnels
   source: "CETU, Conduire en tunnel ; securite-routiere.gouv.fr, Les tunnels"
+  comparaisons:
+  - ref: c8
+    legende: Emplacement d’arrêt d’urgence.
+  - ref: ce2a
+    legende: 'Poste d’appel : l’appel est localisé.'
 - id: r-tunnel-incendie
   question: Un véhicule brûle devant moi dans le tunnel et la fumée se propage. Que fais-je ?
   reponse: Je m’arrête à distance sur le côté, moteur coupé et clés laissées ; je rejoins à pied l’issue de secours la plus
@@ -161,6 +176,9 @@
   theme: R
   sous_theme: tunnels
   source: "CETU, Consignes en cas d'incendie ; securite-routiere.gouv.fr, Les tunnels"
+  comparaisons:
+  - ref: ce30a
+    legende: Issue de secours à rejoindre à pied.
 - id: r-tunnel-mon-vehicule-feu
   question: De la fumée sort de mon capot alors que je roule dans un tunnel ; la voiture avance encore. Où dois-je m’arrêter ?
   reponse: 'À l’air libre : tant que le véhicule peut rouler, je sors du tunnel avant de m’arrêter. Je ne m’arrête
@@ -200,7 +218,7 @@
   sous_theme: passages_a_niveau
   source: "SNCF Réseau, Que faire en cas d'immobilisation ; Code de la route, art. R422-3"
 - id: r-pn-sans-barriere
-  question: À un passage à niveau sans barrière ni feux (croix de Saint-André seule), comment procéder ?
+  question: Un passage à niveau n’est signalé que par ceci, sans barrière ni feu. Comment procéder ?
   reponse: Ralentir fortement, regarder et écouter des deux côtés, et ne traverser que si aucun train n’approche ; dans le
     doute, s’arrêter.
   explication: 'Une croix simple annonce une voie, une croix double plusieurs voies : « un train peut en cacher un autre ».
@@ -208,6 +226,10 @@
   theme: R
   sous_theme: passages_a_niveau
   source: Code de la route, art. R422-3 et R414-12 ; IISR (G1, A8, J10)
+  image_ref: g1
+  comparaisons:
+  - ref: g1a
+    legende: 'Croix double : plusieurs voies ferrées ; un train peut en cacher un autre.'
 - id: r-pn-barrieres-ouverture
   question: Les demi-barrières commencent à se relever mais les feux rouges clignotent encore. Quand puis-je passer
     ?
@@ -293,6 +315,11 @@
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R421-2
+  comparaisons:
+  - ref: c207
+    legende: Début d’autoroute.
+  - ref: c107
+    legende: 'Route pour automobiles : mêmes usagers interdits.'
 - id: r-autoroute-peage
   question: Comment choisir sa voie à l'approche d'un péage ?
   reponse: 'Tôt, d’après les pictogrammes : « t » orange pour le télépéage, carte bancaire, pièces ou péagiste ; une croix
@@ -302,6 +329,11 @@
   theme: R
   sous_theme: autoroute
   source: "ASFA, Le péage ; IISR"
+  comparaisons:
+  - ref: c64d
+    legende: 'Voie « t » : télépéage.'
+  - ref: r21a
+    legende: 'Croix rouge : voie fermée.'
 - id: r-autoroute-fatigue-aires
   question: Sur autoroute, où puis-je m'arrêter pour faire une pause ?
   reponse: 'Sur une aire seulement : aire de repos (stationnement, détente) ou aire de service (carburant, restauration) ;

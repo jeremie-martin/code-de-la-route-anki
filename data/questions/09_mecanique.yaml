@@ -76,6 +76,9 @@
   theme: M
   sous_theme: entretien
   source: "Ornikar, Plaquettes et amortisseurs ; Stych, Pannes et dysfonctionnements"
+  comparaisons:
+  - ref: voyant-plaquettes
+    legende: Témoin d’usure des plaquettes.
 - id: m-batterie-cables
   question: Ma batterie de démarrage est déchargée. Un autre automobiliste propose ses câbles ; que vérifier avant de les brancher ?
   reponse: Que les notices autorisent le dépannage pour les deux véhicules, avec une tension compatible et les points de branchement prévus.
@@ -140,6 +143,11 @@
   theme: M
   sous_theme: freinage
   source: "Stych, Pannes ; En Voiture Simone, Voies de détresse"
+  comparaisons:
+  - ref: c26a
+    legende: Annonce d’une voie de détresse.
+  - ref: marq-damier-rouge-blanc
+    legende: Damier rouge et blanc à l’entrée de la voie de détresse.
 - id: m-feux-jour-limite
   question: Que font exactement les feux de jour (feux diurnes) ?
   reponse: Ils rendent le véhicule visible de jour, surtout de l’avant ; ils ne remplacent pas les feux de croisement la nuit,
@@ -149,6 +157,11 @@
   theme: M
   sous_theme: feux
   source: "Stych, Systèmes d'éclairage ; Code de la route, art. R416-6"
+  comparaisons:
+  - ref: voyant-feux-jour
+    legende: 'Feux de jour : ils font voir la voiture, ils n’éclairent pas.'
+  - ref: voyant-croisement
+    legende: 'Feux de croisement : la nuit, en tunnel ou par mauvaise visibilité.'
 - id: m-feux-reglage-hauteur
   question: À quoi sert la molette de réglage des feux (0 à 3) ?
   reponse: À adapter la hauteur du faisceau à la charge pour ne pas éblouir, à la position prescrite par la notice (certains
@@ -187,6 +200,9 @@
   theme: M
   sous_theme: adas
   source: "securite-routiere.gouv.fr, Les aides à la conduite ; règlement (CE) 661/2009"
+  comparaisons:
+  - ref: voyant-esp
+    legende: 'Voyant ESP : il clignote quand le système corrige un dérapage.'
 - id: m-afu-aeb
   theme: M
   sous_theme: adas

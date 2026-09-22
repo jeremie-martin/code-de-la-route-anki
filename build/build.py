@@ -100,9 +100,11 @@ def load_all() -> dict[str, list[dict]]:
     for kind, notes in data.items():
         for n in notes:
             if 'image_ref' in n:
-                if kind != 'questions' or n['image_ref'] not in recon or 'image' in n:
+                if kind not in ('questions', 'faits', 'affirmations') or n['image_ref'] not in recon or 'image' in n:
                     raise DataError(f"{n['id']}: image_ref doit référencer une reconnaissance, sans image concurrente")
-                n['image'] = recon[n['image_ref']]['image']
+                ref = recon[n['image_ref']]
+                # a sign, light or tell-tale keeps its signal size wherever it is shown
+                n['image'] = {**ref['image'], 'signal': True} if ref['type'] in SIGNAL_TYPES else ref['image']
     learning.annotate(data)
     return data
 
@@ -116,6 +118,8 @@ def norm_text(s) -> str:
 # -------------------------------------------------------------- validate ---
 CLOZE_RE = re.compile(r"\{\{c(\d+)::")
 IMAGE_KEYS = {"commons", "gen", "file"}
+# recognition types shown at the size of a real signal, not across the card
+SIGNAL_TYPES = {"panneau", "panonceau", "balise", "feu", "voyant", "pictogramme", "equipement"}
 PAIR_RESULTS = {"avant", "apres", "independant", "indetermine"}
 
 
@@ -142,18 +146,20 @@ def validate(data: dict[str, list[dict]]) -> list[str]:
                 errors.append(f"{it.get('_file')}:{it.get('id')}: image doit être un dict avec une seule clé parmi {sorted(IMAGE_KEYS)}")
             elif "gen" in img and img["gen"] not in gen_images.REGISTRY:
                 errors.append(f"{it.get('_file')}:{it.get('id')}: générateur inconnu {img['gen']}")
+            elif img.get("verso") and ("gen" not in img or kind in ("reconnaissance", "scenarios")):
+                errors.append(f"{it.get('_file')}:{it.get('id')}: verso exige une image générée (le générateur reçoit verso=True)")
 
         if "illustration" in it:
             illustration = it["illustration"]
-            if (kind != "questions" or not isinstance(illustration, dict) or
-                    set(illustration) - {"gen", "params", "width", "legende"} or
-                    not isinstance(illustration.get("gen"), str) or
-                    illustration.get("gen") not in gen_images.REGISTRY or
+            source_keys = {"gen", "commons"} & set(illustration) if isinstance(illustration, dict) else set()
+            if (kind not in ("questions", "faits", "affirmations") or not isinstance(illustration, dict) or
+                    set(illustration) - {"gen", "commons", "params", "width", "legende"} or len(source_keys) != 1 or
+                    ("gen" in illustration and illustration["gen"] not in gen_images.REGISTRY) or
                     not isinstance(illustration.get("params", {}), dict) or
                     type(illustration.get("width", 640)) is not int or illustration.get("width", 640) <= 0 or
                     not isinstance(illustration.get("legende"), str) or
                     not illustration.get("legende", "").strip()):
-                errors.append(f"{it.get('id')}: illustration exige une question, un générateur connu, des paramètres objet, une largeur positive et une légende")
+                errors.append(f"{it.get('id')}: illustration exige un fait, une question ou une affirmation, un générateur connu ou un fichier Commons, des paramètres objet, une largeur positive et une légende")
 
     for it in data["reconnaissance"]:
         common(it, "reconnaissance")
@@ -364,6 +370,18 @@ def ensure_media(data: dict[str, list[dict]], force=False) -> dict[str, str]:
             make_image(img, MEDIA / fname, w_commons, w_gen, it["id"])
             manifest[fname] = stamp(img)
             print("  media", fname)
+        for it in data[kind]:
+            img = it.get("image")
+            if not (img and img.get("verso")):
+                continue
+            # same drawing with the answer added: shown in place of the front image on the back
+            back = {**img, "params": {**(img.get("params") or {}), "verso": True}}
+            fname = media_name(prefix, it["id"] + "-verso")
+            names[it["id"] + ":verso"] = fname
+            if need(fname, back):
+                make_image(back, MEDIA / fname, w_commons, w_gen, it["id"])
+                manifest[fname] = stamp(back)
+                print("  media", fname)
     for it in data["scenarios"]:
         fname = media_name("scn", it["id"])
         names[it["id"]] = fname
@@ -374,7 +392,7 @@ def ensure_media(data: dict[str, list[dict]], force=False) -> dict[str, str]:
         render_png(draw(it["spec"]), MEDIA / fname, width=800)
         manifest[fname] = stamp(spec)
         print("  media", fname)
-    for it in data["questions"]:
+    for it in data["faits"] + data["questions"] + data["affirmations"]:
         img = it.get("illustration")
         if img:
             fname = media_name("exp", it["id"])
@@ -588,6 +606,18 @@ def img_tag(fname: str) -> str:
     return f'<img src="{fname}">'
 
 
+def image_html(it: dict, names: dict[str, str]) -> str:
+    """Front image; with `verso`, the back shows the annotated twin in the same place (CSS swaps them)."""
+    if not it.get("image"):
+        return ""
+    if (it["image"] or {}).get("verso"):
+        html = (f'<span class="cdr-recto">{img_tag(names[it["id"]])}</span>'
+                f'<span class="cdr-verso">{img_tag(names[it["id"] + ":verso"])}</span>')
+    else:
+        html = img_tag(names[it["id"]])
+    return f'<span class="cdr-signal">{html}</span>' if it["image"].get("signal") else html
+
+
 def feedback_html(note: dict, field: str, names: dict[str, str]) -> str:
     """Append captioned comparison media and explanatory illustrations to answer text."""
     result = inline_md(note.get(field, ""))
@@ -718,21 +748,21 @@ def build_collection(data, names, out_apkg: Path):
     for it in data["faits"]:
         add("CDR Fait", {
             "Id": it["id"], "Texte": fait_html(it), "Explication": feedback_html(it, "explication", names),
-            "Image": img_tag(names[it["id"]]) if it.get("image") else "", "Code": esc(it.get("code", "")),
+            "Image": image_html(it, names), "Code": esc(it.get("code", "")),
             "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
         }, "faits", it)
     for it in data["questions"]:
         add("CDR Question", {
             "Id": it["id"], "Question": md(it["question"]), "Reponse": md(it["reponse"]),
             "Explication": feedback_html(it, "explication", names),
-            "Image": img_tag(names[it["id"]]) if it.get("image") else "", "Code": esc(it.get("code", "")),
+            "Image": image_html(it, names), "Code": esc(it.get("code", "")),
             "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
         }, "questions", it)
     for it in data["affirmations"]:
         add("CDR Affirmation", {
             "Id": it["id"], "Contexte": md(it.get("contexte", "")), "Affirmation": md(it["affirmation"]),
             "Verdict": it["verdict"], "Pourquoi": feedback_html(it, "pourquoi", names),
-            "Image": img_tag(names[it["id"]]) if it.get("image") else "", "Code": esc(it.get("code", "")),
+            "Image": image_html(it, names), "Code": esc(it.get("code", "")),
             "Theme": M.THEME_NAMES[it["theme"]], "SousTheme": it["sous_theme"], "Source": md(it["source"]),
         }, "affirmations", it)
     for it in data["scenarios"]:

@@ -95,6 +95,11 @@
   theme: E
   sous_theme: pollution
   source: Code général des collectivités territoriales, art. L2213-4-1 ; service-public.fr F33371
+  comparaisons:
+  - ref: b56
+    legende: Entrée d’une zone à faibles émissions.
+  - ref: m11d
+    legende: 'Panonceau : véhicules et vignettes admis, horaires.'
 - id: e-pic-pollution
   question: Que peut décider le préfet lors d'un épisode de pollution ?
   reponse: Restreindre la circulation selon les vignettes Crit'Air, abaisser les vitesses maximales (souvent de 20

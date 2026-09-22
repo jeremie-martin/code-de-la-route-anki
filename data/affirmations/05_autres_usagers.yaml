@@ -32,6 +32,9 @@
   theme: U
   sous_theme: pietons
   source: 'Code de la route, art. R417-11 ; service-public.fr F2891'
+  comparaisons:
+  - ref: m6h
+    legende: Emplacement réservé aux titulaires de la carte « stationnement ».
 - id: aff-u-fauteuil-roulant-pieton
   affirmation: Une personne en fauteuil roulant motorisé qui circule à l'allure du pas est assimilée à un piéton.
   verdict: vrai
@@ -101,6 +104,11 @@
   theme: U
   sous_theme: cyclistes
   source: 'Code de la route, art. R412-28-1 et R110-2'
+  comparaisons:
+  - ref: b30
+    legende: En zone 30, le double sens cyclable est la règle par défaut.
+  - ref: m9v1
+    legende: Ailleurs, c’est ce panonceau qui ouvre le contresens aux vélos.
 - id: aff-u-velo-ecart-portieres
   contexte: En ville, un cycliste roule à un bon mètre de la file de voitures stationnées.
   affirmation: Il a le droit de s'écarter ainsi, et j'en tiens compte pour le dépasser.

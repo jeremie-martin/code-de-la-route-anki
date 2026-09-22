@@ -31,6 +31,9 @@
   theme: A
   sous_theme: alerter
   source: "securite-routiere.gouv.fr, Bien se comporter sur autoroute ; ASFA"
+  comparaisons:
+  - ref: ce2a
+    legende: Panneau d’un poste d’appel d’urgence.
 - id: triangle-distance
   texte: Sur route, si sa pose ne me met pas en danger, le triangle se place environ {{c1::30 m}} avant l'obstacle, ou davantage
     pour être visible à temps.

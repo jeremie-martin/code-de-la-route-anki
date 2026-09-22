@@ -8,6 +8,11 @@
   theme: M
   sous_theme: tableau_de_bord
   source: "Ornikar, Voyants lumineux ; En Voiture Simone, Tableau de bord"
+  comparaisons:
+  - ref: voyant-pression-pneus
+    legende: 'Orange, mais arrêt en sécurité dès que possible : perte de pression d’un pneu.'
+  - ref: voyant-moteur
+    legende: 'Orange : anomalie à faire contrôler ; lire la notice.'
 - id: aff-m-autotest-voyants
   contexte: La notice prévoit que le témoin d’airbag s’allume brièvement à la mise du contact.
   affirmation: Un voyant qui ne s'allume pas du tout à ce moment-là est bon signe.
@@ -17,8 +22,11 @@
   theme: M
   sous_theme: tableau_de_bord
   source: "Renault, témoins lumineux, https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux"
+  comparaisons:
+  - ref: voyant-airbag
+    legende: 'Témoin d’airbag : il s’allume brièvement à la mise du contact, puis s’éteint.'
 - id: aff-m-voyant-abs-arret
-  contexte: Seul le voyant ABS orange reste allumé ; aucun voyant rouge ni anomalie du freinage ordinaire.
+  contexte: Seul ce voyant reste allumé ; aucun voyant rouge ni anomalie du freinage ordinaire.
   affirmation: Je dois m'arrêter immédiatement.
   verdict: faux
   pourquoi: La perte de l’antiblocage seule n’impose pas de s’immobiliser sur-le-champ. Je réduis l’allure, augmente
@@ -26,6 +34,7 @@
   theme: M
   sous_theme: voyants
   source: "Sécurité routière, Exemples de nouvelles questions (Q5)"
+  image_ref: voyant-abs
 - id: aff-m-abs-direction
   contexte: Un obstacle surgit, je freine en urgence sur un véhicule équipé de l'ABS.
   affirmation: Je peux continuer à braquer pendant le freinage pour contourner l'obstacle.
@@ -145,13 +154,14 @@
   sous_theme: adas
   source: "securite-routiere.gouv.fr, Les aides à la conduite (ADAS) ; règlement (UE) 2019/2144 (GSR2)"
 - id: aff-m-tpms-orange
-  contexte: En roulant, le voyant orange de pression des pneus s'allume ; la voiture ne tire pas et ne vibre pas.
+  contexte: En roulant, ce voyant s’allume ; la voiture ne tire pas et ne vibre pas.
   affirmation: Je peux continuer normalement jusqu'à ma destination et contrôler la pression plus tard.
   verdict: faux
   pourquoi: 'Le témoin signale une perte de pression, qui peut venir d’une crevaison lente. Je ralentis, je m’arrête dès que possible en sécurité et j’examine les quatre pneus ; je regonfle selon l’étiquette et la notice (la valeur de référence se lit à froid). Si la voiture tire ou vibre, je n’essaie pas de rejoindre une station : rouler sous-gonflé fait chauffer puis éclater le pneu.'
   theme: M
   sous_theme: voyants
   source: Notices constructeurs (Renault, témoins lumineux) ; REMC
+  image_ref: voyant-pression-pneus
 - id: aff-m-regulateur-adaptatif
   contexte: Sur autoroute, mon régulateur adaptatif suit une voiture. Elle change de voie et découvre une file arrêtée ; ma voiture ne ralentit pas.
   affirmation: Je freine sans attendre une réaction du régulateur.

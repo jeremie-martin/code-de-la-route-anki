@@ -1,23 +1,30 @@
 # R : La route : affirmations à juger VRAI/FAUX.
 - id: aff-r-descente-150m
-  contexte: Route de montagne hors agglomération, panneau triangulaire « descente dangereuse 15 % ».
-  affirmation: La descente dangereuse à 15 % commence à environ 150 m.
+  contexte: Route de montagne hors agglomération ; je passe ce panneau.
+  affirmation: Le danger annoncé commence à environ 150 m.
   verdict: vrai
   pourquoi: Hors agglomération, un panneau de danger est implanté à environ 150 m de ce qu'il annonce (50 m en agglomération),
     sauf panonceau de distance.
   theme: R
   sous_theme: montagne
   source: "Sécurité routière, Exemples de nouvelles questions (Q18) ; IISR, 1re partie"
+  image_ref: a16
 - id: aff-r-pn-150m
-  contexte: Route hors agglomération, panneau « passage à niveau » avec panonceau « signal automatique ».
+  contexte: Route hors agglomération ; je passe ce panneau.
   affirmation: Circulant hors agglomération, le passage à niveau se situe à environ 150 m.
   verdict: vrai
   pourquoi: Hors agglomération, un panneau de danger est implanté à environ 150 m de ce qu’il annonce, sauf panonceau de distance. Des balises à trois, deux puis une bande rouge décomptent l’approche (150, 100, 50 m).
   theme: R
   sous_theme: passages_a_niveau
   source: "Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR"
+  image:
+    commons: France road sign A7 + M9z Signal Automatique.svg
+    signal: true
+  comparaisons:
+  - ref: j10
+    legende: 'Balises à 3, 2 puis 1 bande rouge : 150, 100, 50 m avant le passage.'
 - id: aff-r-pn-feux-rouges-possibles
-  contexte: Passage à niveau annoncé par un panonceau « signal automatique ».
+  contexte: Un passage à niveau est annoncé par ce panneau et son panonceau.
   affirmation: À ce passage à niveau, je peux rencontrer des feux rouges clignotants.
   verdict: vrai
   pourquoi: 'Le panonceau « signal automatique » annonce une signalisation automatique lumineuse et sonore : deux
@@ -25,6 +32,12 @@
   theme: R
   sous_theme: passages_a_niveau
   source: "Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR, 6e partie"
+  image:
+    commons: France road sign A7 + M9z Signal Automatique.svg
+    signal: true
+  comparaisons:
+  - ref: g1bis
+    legende: 'Au passage : croix de Saint-André, feux rouges clignotants et sonnerie.'
 - id: aff-r-pn-barriere-contourner
   affirmation: 'Une demi-barrière ne ferme que ma moitié de chaussée : je peux la contourner si je ne vois pas de
     train.'
@@ -175,6 +188,9 @@
   theme: R
   sous_theme: intemperies
   source: "Sécurité routière, Exemples de nouvelles questions (Q10) ; décret n° 2020-1264"
+  comparaisons:
+  - ref: b58
+    legende: Entrée de zone où l’équipement hivernal est obligatoire pendant la période indiquée.
 - id: aff-r-verglas-pont
   affirmation: Un pont peut être verglacé alors que la route qui y mène ne l'est pas.
   verdict: vrai
@@ -209,6 +225,11 @@
   theme: R
   sous_theme: nuit
   source: Code de la route, art. R416-6 et R416-8
+  comparaisons:
+  - ref: voyant-position
+    legende: 'Feux de position : se faire voir, pas éclairer.'
+  - ref: voyant-croisement
+    legende: 'Feux de croisement : obligatoires la nuit en ville.'
 - id: aff-r-nuit-feux-route-arret
   affirmation: À l'arrêt ou en stationnement, l'usage des feux de route est interdit.
   verdict: vrai
@@ -251,13 +272,6 @@
   theme: R
   sous_theme: chantiers
   source: IISR, 8e partie ; Code de la route, art. R411-25
-- id: aff-r-vent-manche
-  affirmation: Une manche à air placée à l'horizontale signale un vent fort.
-  verdict: vrai
-  pourquoi: 'La manche à air renseigne sur le vent : pendante, elle indique peu ou pas de vent ; tendue à l’horizontale, un vent fort. Le triangle portant ce symbole annonce une zone exposée.'
-  theme: R
-  sous_theme: intemperies
-  source: "IISR (A24, J7) ; Ornikar, Conduire par grand vent"
 - id: aff-r-vent-deux-roues
   affirmation: Par vent latéral, je laisse un écart plus grand au motard que je dépasse.
   verdict: vrai

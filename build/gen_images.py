@@ -1066,7 +1066,79 @@ def voyant_direction(params):
     return str(S)
 
 
+# ------------------------------------------------------- recto / verso ---
+# Generators called with params["verso"] draw the same picture with the answer added in place.
+
+def _tag(S, x, y, text, verso_text, verso, size=20, anchor="middle", colour="#222"):
+    """A label that reads « A » on the front and its answer on the back, at the same place."""
+    S.add(f'<text x="{x}" y="{y}" font-family="{FONT}" font-size="{size}" font-weight="700" '
+          f'text-anchor="{anchor}" fill="{colour}">{esc(verso_text if verso else text)}</text>')
+
+
+def vocab_route(params):
+    """Road seen from above with a label margin: A = chaussée (brace), B = one lane (brace), C = accotement."""
+    verso = params.get("verso", False)
+    S = SVG(480, 280)
+    S.add('<rect x="0" y="0" width="480" height="280" fill="#ffffff"/>')
+    L = 130  # label margin on the left
+    S.add(f'<rect x="{L}" y="20" width="{480 - L}" height="50" fill="#b9c79f"/>')
+    S.add(f'<rect x="{L}" y="190" width="{480 - L}" height="50" fill="#b9c79f"/>')
+    S.add(f'<rect x="{L}" y="70" width="{480 - L}" height="120" fill="{ASPHALT}"/>')
+    for y in (72, 188):
+        S.add(f'<rect x="{L}" y="{y - 2}" width="{480 - L}" height="3" fill="{MARK}"/>')
+    x = L
+    while x < 480:
+        S.add(f'<rect x="{x}" y="128" width="36" height="4" fill="{MARK}"/>')
+        x += 96
+    S.add(f'<g transform="translate(400,160) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
+    # A: whole asphalt width; B: my lane only; C: the verge (arrow)
+    S.add(f'<path d="M{L - 14},70 v120 M{L - 20},70 h12 M{L - 20},190 h12" stroke="#222" stroke-width="3" fill="none"/>')
+    S.add(f'<path d="M{L + 24},130 v60 M{L + 18},130 h12 M{L + 18},190 h12" stroke="#f2c200" stroke-width="4" fill="none"/>')
+    _tag(S, L - 26, 137, "A", "chaussée", verso, anchor="end")
+    _tag(S, L + 36, 166, "B", "voie", verso, colour="#f2c200", anchor="start")
+    S.add(f'<path d="M{L - 18},215 H{L + 30} M{L + 20},207 l10,8 l-10,8" stroke="#222" stroke-width="3" fill="none"/>')
+    _tag(S, L - 24, 221, "C", "accotement", verso, anchor="end", size=16 if verso else 20)
+    return str(S)
+
+def _sign_shape(S, cx, cy, kind):
+    r = 46
+    if kind == "danger":
+        S.add(f'<path d="M{cx},{cy - 50} L{cx + 55},{cy + 42} L{cx - 55},{cy + 42} Z" fill="#fff" stroke="#d52b1e" stroke-width="10" stroke-linejoin="round"/>')
+    elif kind == "interdiction":
+        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#fff" stroke="#d52b1e" stroke-width="10"/>')
+    elif kind == "obligation":
+        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r + 4}" fill="#1c5fb8"/>')
+    elif kind == "indication":
+        S.add(f'<rect x="{cx - 46}" y="{cy - 46}" width="92" height="92" rx="6" fill="#1c5fb8"/>')
+    elif kind == "fin_interdiction":
+        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r + 4}" fill="#fff" stroke="#888" stroke-width="2"/>')
+        S.add(f'<path d="M{cx - 33},{cy + 33} L{cx + 33},{cy - 33}" stroke="#111" stroke-width="10"/>')
+    elif kind == "fin_obligation":
+        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r + 4}" fill="#1c5fb8"/>')
+        S.add(f'<path d="M{cx - 33},{cy + 33} L{cx + 33},{cy - 33}" stroke="#d52b1e" stroke-width="10"/>')
+
+
+def formes_panneaux(params):
+    """Shape and colour families of French signs, without pictograms: numbered, then named on the back."""
+    verso = params.get("verso", False)
+    kinds = params.get("kinds", ["danger", "interdiction", "obligation", "indication", "fin_interdiction", "fin_obligation"])
+    names = {"danger": "danger", "interdiction": "interdiction", "obligation": "obligation", "indication": "indication",
+             "fin_interdiction": "fin d’interdiction", "fin_obligation": "fin d’obligation"}
+    cols = 3
+    S = SVG(480, 180 * ((len(kinds) + cols - 1) // cols))
+    S.add(f'<rect x="0" y="0" width="{S.w}" height="{S.h}" fill="#ffffff"/>')
+    for i, k in enumerate(kinds):
+        cx, cy = 80 + (i % cols) * 160, 66 + (i // cols) * 175
+        _sign_shape(S, cx, cy, k)
+        _tag(S, cx, cy + 86, str(i + 1), str(i + 1), verso, size=18)
+        if verso:  # the name appears on its own line under the number: nothing else moves
+            S.add(f'<text x="{cx}" y="{cy + 106}" font-family="{FONT}" font-size="16" font-weight="700" '
+                  f'text-anchor="middle" fill="#1c5fb8">{esc(names[k])}</text>')
+    return str(S)
+
+
 REGISTRY.update({
+    "vocab_route": vocab_route, "formes_panneaux": formes_panneaux,
     "balise_piquet": balise_piquet, "voyant_direction": voyant_direction,
     "voie_insertion": voie_insertion, "bande_cyclable": bande_cyclable, "damier": damier, "ralentisseur": ralentisseur,
     "direction_voies": direction_voies,

@@ -41,7 +41,7 @@ class LearningTests(unittest.TestCase):
         for kind, value in [('questions', v) for v in (
                 None, 'camion_roues', {}, {**valid, 'gen': 'unknown'},
                 {**valid, 'legende': ' '}, {**valid, 'commons': 'extra.svg'},
-                {**valid, 'params': 'invalid'}, {**valid, 'width': 0}, {**valid, 'width': True})] + [('faits', valid)]:
+                {**valid, 'params': 'invalid'}, {**valid, 'width': 0}, {**valid, 'width': True})] + [('reconnaissance', valid)]:
             with self.subTest(kind=kind, value=value):
                 data = copy.deepcopy(self.data)
                 data[kind][0]['illustration'] = value
@@ -127,6 +127,12 @@ class LearningTests(unittest.TestCase):
                 self.assertNotIn('{{SousTheme}}', template['qfmt'])
                 for answer in ('Reponse', 'Verdict', 'Pourquoi', 'Signification', 'Nom'):
                     self.assertNotIn('{{' + answer + '}}', template['qfmt'])
+
+    def test_backs_do_not_scroll_to_an_answer_anchor(self):
+        # Anki scrolls the back to an element with id="answer": the question would jump out of view.
+        for nt in notetypes():
+            for template in nt['templates']:
+                self.assertNotIn('id=answer', template['afmt'].replace('"', ''))
 
     def test_visual_applications_follow_their_recognition(self):
         plan = card_plan(self.data, curriculum(self.data))

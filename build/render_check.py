@@ -39,7 +39,8 @@ MEASURE = """() => {
     front: [...document.querySelectorAll('.cdr-img, .cdr-img img, .cdr-pair, .cdr-pair img, .cdr-side, .cdr-q, .cdr-aff, .cdr-ctx, .cdr-hint')]
       .filter(visible).map(e => {
         const r = e.getBoundingClientRect(), s = getComputedStyle(e);
-        return {text: e.innerText, src: e.getAttribute('src'),
+        // an annotated « verso » image replaces its front twin in place: same geometry, same slot
+        return {text: e.innerText, src: (e.getAttribute('src') || '').replace(/-verso\.png$/, '.png'),
           rect: [r.x, r.y, r.width, r.height],
           style: [s.fontFamily, s.fontSize, s.fontWeight, s.lineHeight, s.letterSpacing, s.color]};
       }),

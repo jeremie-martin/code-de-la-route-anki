@@ -168,7 +168,6 @@
   - conf-jaune-fixe-clignotant
   - conf-r14-r16
   consolidation:
-  - l-fleche-jaune-droite-rouge
   - r13
   - r17
   - agent-geste-avancer
@@ -618,7 +617,6 @@
   - aff-r-nuit-feux-position-agglo
   - aff-r-nuit-feux-route-arret
   - aff-r-nuit-pieton-sombre
-  - aff-r-vent-manche
   - aff-r-vent-deux-roues
   - r-nuit-gabarit-camion
   - aff-r-brouillard-avant-sinueuse

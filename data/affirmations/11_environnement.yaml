@@ -113,6 +113,11 @@
   theme: E
   sous_theme: ecomobilite
   source: Code de la route, art. R417-10 III 3°
+  comparaisons:
+  - ref: m6i
+    legende: Place réservée aux véhicules électriques pendant la recharge.
+  - ref: ce15i
+    legende: Signalisation d’une borne de recharge.
 - id: aff-e-freinage-regeneratif
   contexte: Voiture électrique ou hybride, en décélération.
   affirmation: En levant le pied, le moteur ralentit le véhicule et recharge la batterie.

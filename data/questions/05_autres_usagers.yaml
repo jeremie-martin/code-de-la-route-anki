@@ -39,14 +39,17 @@
   sous_theme: pietons
   source: Code de la route, art. R412-36 et R412-42
 - id: u-zone-rencontre-pietons
-  question: J'entre dans une zone de rencontre. Un piéton marche au milieu de la chaussée devant moi. Que fais-je
-    ?
+  question: Je passe ce panneau ; un piéton marche au milieu de la chaussée devant moi. Que fais-je ?
   reponse: 'Je le suis à son allure, sans klaxonner : en zone de rencontre (20 km/h maximum), les piétons circulent sur toute
     la chaussée et ont priorité sur les véhicules.'
   explication: Dans l’aire piétonne, les véhicules autorisés pour la desserte roulent à l’allure du pas. Dans une zone 30, les priorités habituelles s’appliquent et les piétons utilisent les passages lorsqu’ils y sont tenus. Le double sens cyclable est la règle par défaut dans ces zones.
   theme: U
   sous_theme: pietons
   source: Code de la route, art. R110-2 et R415-11
+  image_ref: b52
+  comparaisons:
+  - ref: b54
+    legende: 'Aire piétonne : seuls les véhicules de desserte et les cycles, au pas.'
 - id: u-enfants-sortie-ecole
   question: Un car de transport d'enfants (pictogramme enfants) est arrêté devant moi, feux de détresse allumés. Que fais-je
     ?
@@ -201,6 +204,11 @@
   theme: U
   sous_theme: transports_commun
   source: Code de la route, art. R412-7 et R417-11
+  comparaisons:
+  - ref: marq-couloir-bus
+    legende: 'Couloir bus : ligne large et inscription au sol.'
+  - ref: marq-damier-blanc
+    legende: 'Damier : endroit où traverser la voie bus au carrefour.'
 - id: u-vehicule-prioritaire-feu-rouge
   question: Arrêté au feu rouge, j'entends la sirène deux tons d'une ambulance du SAMU qui arrive derrière moi, gyrophare
     allumé. Que fais-je ?
@@ -312,6 +320,11 @@
   theme: U
   sous_theme: edpm
   source: Code de la route, art. R412-43-1 II et III ; service-public.fr F308
+  comparaisons:
+  - ref: c115
+    legende: Voie verte.
+  - ref: b22a
+    legende: Piste ou bande cyclable obligatoire.
 - id: u-cycliste-avant-droite
   question: Je vais tourner à droite dans 30 m. Un cycliste roule devant moi, près du bord droit. Que fais-je ?
   reponse: Je reste derrière lui et je tourne après son passage ; le dépasser juste avant de tourner reviendrait à lui

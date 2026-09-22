@@ -171,7 +171,7 @@ Recherche Anki : `objectif::l-giratoire`
 
 Le vert n'est pas une permission sans conditions.
 
-36 notes / 38 cartes.
+35 notes / 37 cartes.
 
 Recherche Anki : `objectif::l-feux`
 
@@ -205,7 +205,6 @@ Recherche Anki : `objectif::l-feux`
 | `l-feu-modal-anticipation` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `l-feu-cycliste-r19` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `l-decompte-pieton` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `l-fleche-jaune-droite-rouge` | consolidation | questions | Code de la route, art. R412-30 et R412-32 ; arrêté du 24 novembre 1967 (signal R16) |
 | `aff-l-feu-vert-priorite` | consolidation | affirmations | Code de la route, art. R412-33 et R415-11 |
 | `aff-l-jaune-accelerer` | consolidation | affirmations | Code de la route, art. R412-31 |
 | `aff-l-jaune-trop-engage` | socle | affirmations | Code de la route, art. R412-31 |
@@ -688,7 +687,7 @@ Recherche Anki : `objectif::c-distraction`
 
 Les plafonds et les équipements ne garantissent pas l'adhérence.
 
-29 notes / 29 cartes.
+28 notes / 28 cartes.
 
 Recherche Anki : `objectif::r-meteo`
 
@@ -721,7 +720,6 @@ Recherche Anki : `objectif::r-meteo`
 | `aff-r-nuit-feux-position-agglo` | consolidation | affirmations | Code de la route, art. R416-6 et R416-8 |
 | `aff-r-nuit-feux-route-arret` | consolidation | affirmations | Code de la route, art. R416-5 |
 | `aff-r-nuit-pieton-sombre` | consolidation | affirmations | securite-routiere.gouv.fr, Conduire de nuit ; Code de la route, art. R313-3 |
-| `aff-r-vent-manche` | consolidation | affirmations | IISR (A24, J7) ; Ornikar, Conduire par grand vent |
 | `aff-r-vent-deux-roues` | consolidation | affirmations | securite-routiere.gouv.fr, Le vent ; En Voiture Simone, Le vent |
 
 ## r-montagne : Préparer l'équipement hiver et gérer une forte pente

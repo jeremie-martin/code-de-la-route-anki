@@ -113,7 +113,7 @@ def notetypes() -> list[dict]:
                 "afmt": (
                     '<div class="cdr-wrap cdr-back">' + '<div class="cdr-img {{Type}}">{{Image}}</div>'
                     '<div class="cdr-q">{{Question}}</div>'
-                    '<hr id=answer>'
+                    '<hr class="cdr-sep">'
                     '<div class="cdr-a">{{Signification}}</div>'
                     '{{#ConduiteATenir}}<div class="cdr-box conduite"><b>En pratique.</b> {{ConduiteATenir}}</div>{{/ConduiteATenir}}'
                     '{{#Complement}}<div class="cdr-box info">{{Complement}}</div>{{/Complement}}'
@@ -136,7 +136,7 @@ def notetypes() -> list[dict]:
                     '<div class="cdr-wrap cdr-back">' +
                     '<div class="cdr-pair"><div><span class="cdr-side">A</span>{{ImageA}}</div><div><span class="cdr-side">B</span>{{ImageB}}</div></div>'
                     '<div class="cdr-q">Quelle est la différence ?</div>'
-                    '<hr id=answer>'
+                    '<hr class="cdr-sep">'
                     '<div class="cdr-box cdr-difference">{{Difference}}</div>'
                     + reference('<p>A : {{NomA}}<br>B : {{NomB}}</p>') + '</div>'
                 ),
@@ -176,7 +176,7 @@ def notetypes() -> list[dict]:
                     '<div class="cdr-wrap cdr-back">' +
                     '{{#Image}}<div class="cdr-img">{{Image}}</div>{{/Image}}'
                     '<div class="cdr-q">{{Question}}</div>'
-                    '<hr id=answer>'
+                    '<hr class="cdr-sep">'
                     '<div class="cdr-a">{{Reponse}}</div>'
                     '{{#Explication}}<div class="cdr-box">{{Explication}}</div>{{/Explication}}'
                     + SRC + '</div>'
@@ -197,7 +197,7 @@ def notetypes() -> list[dict]:
                     '<div class="cdr-wrap cdr-back">' +
                     '<div class="cdr-img">{{Image}}</div>'
                     '<div class="cdr-q">{{Question}}</div>'
-                    '<hr id=answer>'
+                    '<hr class="cdr-sep">'
                     '<div class="cdr-a">{{Reponse}}</div>'
                     '{{#Explication}}<div class="cdr-box">{{Explication}}</div>{{/Explication}}'
                     + SRC + '</div>'
@@ -222,7 +222,7 @@ def notetypes() -> list[dict]:
                     '{{#Contexte}}<div class="cdr-ctx">{{Contexte}}</div>{{/Contexte}}'
                     '<div class="cdr-aff">{{Affirmation}}</div>'
                     '<div class="cdr-hint">Vrai ou faux ? Pourquoi ?</div>'
-                    '<hr id=answer>'
+                    '<hr class="cdr-sep">'
                     '<div class="cdr-verdict {{Verdict}}">{{Verdict}}</div>'
                     '<div class="cdr-box">{{Pourquoi}}</div>'
                     + SRC + '</div>'

@@ -37,6 +37,13 @@
   sous_theme: priorites
   source: Code de la route, art. R415-10 ; IISR (AB25)
   debut: true
+  comparaisons:
+  - ref: ab25
+    legende: 'Carrefour à sens giratoire annoncé : flèches en anneau.'
+  - ref: ab3a
+    legende: 'À l’entrée du giratoire : cédez le passage à ceux qui sont dans l’anneau.'
+  - ref: ab1
+    legende: 'Croix noire : priorité à droite ; dans un rond-point, ceux qui entrent sont prioritaires.'
 - id: l-giratoire-clignotant
   question: Dans un giratoire, je vais sortir. Quand allumer mon clignotant droit ?
   reponse: Après la sortie précédente, assez tôt pour annoncer la mienne ; pour la première sortie, dès l’approche
@@ -184,16 +191,23 @@
   theme: L
   sous_theme: positionnement
   source: IISR 7e partie ; Code de la route, art. R412-22
+  comparaisons:
+  - ref: marq-ligne-rive
+    legende: 'Ligne de rive : se franchit pour s’arrêter hors chaussée ou tourner.'
+  - ref: marq-ligne-bau-t4
+    legende: 'Traits très longs : bande d’arrêt d’urgence, nécessité absolue seulement.'
 - id: l-vocab-chaussee-voie
-  question: Quelle différence entre la chaussée, une voie et l'accotement ?
-  reponse: 'La chaussée : partie de la route où circulent les véhicules ; la voie : subdivision de la chaussée large d’une
-    file ; l’accotement : partie latérale hors chaussée.'
+  question: Sur ce dessin de route, que désignent A, B et C ?
+  reponse: 'A, la chaussée : partie de la route où circulent les véhicules. B, une voie : subdivision de la chaussée large d’une file. C, l’accotement : partie latérale hors chaussée.'
   explication: Vocabulaire des énoncés d'examen. La partie revêtue de l'accotement est la bande dérasée ; sur autoroute, c'est
     la bande d'arrêt d'urgence. Le trottoir, surélevé, est réservé aux piétons.
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R110-2 ; IISR 7e partie
   debut: true
+  image:
+    gen: vocab_route
+    verso: true
 - id: l-clignotant-quand
   question: En dehors des changements de direction à une intersection, quand le clignotant est-il obligatoire ?
   reponse: Avant tout déport ou changement de voie, avant un dépassement et son rabattement, et pour reprendre la circulation
@@ -300,9 +314,8 @@
   sous_theme: agents
   source: "Code de la route, art. R411-28 ; Codes Rousseau, Les agents"
 - id: l-formes-couleurs-panneaux
-  question: Que signifient les formes et couleurs des panneaux de danger, d'interdiction, d'obligation et d'indication ?
-  reponse: 'Triangle bordé de rouge : danger. Rond bordé de rouge : interdiction. Rond bleu : obligation. Carré bleu : indication.
-    Ronds barrés : fin d’interdiction (blanc) ou d’obligation (bleu).'
+  question: Que signale chacune de ces familles de panneaux, d’après sa forme et sa couleur ?
+  reponse: 1 danger (triangle bordé de rouge) ; 2 interdiction (rond bordé de rouge) ; 3 obligation (rond bleu) ; 4 indication (carré bleu) ; 5 fin d’interdiction (rond blanc barré) ; 6 fin d’obligation (rond bleu barré).
   explication: Les panneaux de danger sont en général implantés à environ 150 m du danger hors agglomération, 50 m en
     agglomération, sauf panonceau de distance. Une interdiction ou une obligation ponctuelle vaut en général jusqu'à la
     prochaine intersection ou jusqu'au panneau de fin ; une prescription de zone vaut jusqu'à la sortie de la zone.
@@ -310,6 +323,9 @@
   sous_theme: signalisation
   source: IISR 1re partie
   debut: true
+  image:
+    gen: formes_panneaux
+    verso: true
 - id: l-formes-priorite-temporaire
   question: À quoi reconnaît-on les panneaux de priorité et la signalisation temporaire ?
   reponse: 'STOP : octogone rouge. Cédez-le-passage : triangle pointe en bas. Route prioritaire : losange jaune. Dangers temporaires
@@ -373,6 +389,11 @@
   theme: L
   sous_theme: signalisation
   source: Code de la route, art. L110-3 et s. ; IISR 5e partie (cartouches E42-E44)
+  comparaisons:
+  - ref: e42
+    legende: 'Cartouche rouge : autoroute ou route nationale.'
+  - ref: e43
+    legende: 'Cartouche jaune : route départementale.'
 - id: l-klaxon-danger-agglo
   question: En ville, une voiture se déporte vers ma voie sans m’avoir vu et le choc est imminent. Puis-je klaxonner
     ?
@@ -532,15 +553,6 @@
   theme: L
   sous_theme: signalisation
   source: "Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
-- id: l-fleche-jaune-droite-rouge
-  question: Mon feu est rouge ; à côté, une flèche jaune clignotante pointe vers la droite. Puis-je tourner à droite
-    ?
-  reponse: 'Oui, avec prudence : je cède le passage aux piétons et aux véhicules qui ont le vert.'
-  explication: Cette flèche autorise le mouvement indiqué malgré le rouge, sans donner la priorité. Sans flèche,
-    tourner à droite au feu rouge reste interdit en France.
-  theme: L
-  sous_theme: feux
-  source: Code de la route, art. R412-30 et R412-32 ; arrêté du 24 novembre 1967 (signal R16)
 - id: l-visuel-distance
   theme: L
   sous_theme: applications

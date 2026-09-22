@@ -62,6 +62,9 @@
   theme: C
   sous_theme: distances
   source: "securite-routiere.gouv.fr, La vitesse et la conduite ; IISR 7e partie, art. 113-1"
+  comparaisons:
+  - ref: marq-ligne-bau-t4
+    legende: 'Ligne de rive de la bande d’arrêt d’urgence : longs traits espacés.'
 - id: c-acuite-5-10
   texte: Pour le permis B, le seuil d’acuité visuelle binoculaire est d’au moins {{c1::5/10}}, avec correction si nécessaire.
   explication: 'Arrêté du 28 mars 2022 : acuité binoculaire ≥ 5/10 (si un œil voit moins de 1/10, l''autre doit atteindre

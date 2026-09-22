@@ -38,6 +38,7 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign A3b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_A3b.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45
 - [File:France road sign A4.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_A4.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex_45
 - [File:France road sign A6.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_A6.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex_45
+- [File:France road sign A7 + M9z Signal Automatique.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_A7_+_M9z_Signal_Automatique.svg) ; licence : CC0 ; auteur : Marcel Roblin
 - [File:France road sign A7.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_A7.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45
 - [File:France road sign A8.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_A8.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex_45
 - [File:France road sign A9.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_A9.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex_45
