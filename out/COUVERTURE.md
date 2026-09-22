@@ -876,7 +876,7 @@ Recherche Anki : `objectif::r-travaux`
 | `kr11` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `conf-a14-ak14` | consolidation | confusions | IISR 1re et 8e parties |
 | `conf-k10a-k10b` | consolidation | confusions | IISR 8e partie |
-| `r-chantier-approche` | socle | questions | IISR, 8e partie ; securite-routiere.gouv.fr, Zones de chantier |
+| `r-chantier-approche` | socle | questions | Bison Futé, Chantiers en cours, conseils de conduite : https://www.bison-fute.gouv.fr/IMG/pdf/Chantiers_en_cours.pdf |
 | `r-chantier-fleche-lumineuse` | socle | questions | IISR, 8e partie ; Ornikar, Flèches de rabattement |
 | `aff-r-chantier-sans-ouvriers` | socle | affirmations | IISR, 8e partie ; Code de la route, art. R411-25 |
 

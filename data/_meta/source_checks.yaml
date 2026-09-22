@@ -845,3 +845,8 @@
   url: https://www.interieur.gouv.fr/fr/Archives/Archives-de-la-rubrique-Ma-securite/Avec-votre-vehicule/Contre-les-vols-de-voitures-et-d-accessoires-les-bons-reflexes
   portee: 'Page archivée du 12 mai 2015 lue, uniquement les conseils de prévention : emporter documents/valeurs, fermer et verrouiller, objets hors de vue. Retrait de la causalité automatique objet visible/effraction et de l’inutilité absolue d’un rangement à l’arrivée ; pas de validation des démarches administratives anciennes de la page.'
   notes: [p-quitter-objets]
+- id: audit-chantier-anticipation
+  consulte_le: '2026-09-22'
+  url: https://www.bison-fute.gouv.fr/IMG/pdf/Chantiers_en_cours.pdf
+  portee: 'Conseils de conduite lus : vigilance dès la première signalisation annonçant les travaux, réduction de vitesse et respect des indications. Consultation limitée à ces conseils, sans reprendre les chiffres du dépliant ni valider une implantation réglementaire de chantier.'
+  notes: [r-chantier-approche]

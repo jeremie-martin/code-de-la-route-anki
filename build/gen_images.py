@@ -8,7 +8,7 @@ from __future__ import annotations
 import math
 import textwrap
 
-from build.diagrams import ASPHALT, GRASS, MARK, FONT, SVG, draw_road, draw_intersection, draw_roundabout, vehicle_sprite, esc
+from build.diagrams import ASPHALT, GRASS, MARK, FONT, SVG, draw_road, draw_intersection, draw_roundabout, vehicle_sprite, sign_data_uri, esc
 
 YELLOW = "#f2c200"
 SCALE = 12  # px per metre for marking strips (so 3 m dash = 36 px)
@@ -771,13 +771,44 @@ def feu_bicolore(params):
     return str(S)
 
 
-def cone(params):
-    S = SVG(240, 300)
-    S.add('<rect x="0" y="0" width="240" height="300" fill="#ffffff"/>')
+def _draw_cone(S):
+    """Shared K5a symbol, in its original 240 × 300 coordinate space."""
     S.add('<rect x="50" y="240" width="140" height="18" rx="4" fill="#e8501e" stroke="#333" stroke-width="2"/>')
     S.add('<path d="M100,40 L140,40 L180,240 L60,240 Z" fill="#e8501e" stroke="#333" stroke-width="2"/>')
     S.add('<path d="M92,80 L148,80 L156,120 L84,120 Z" fill="#ffffff"/>')
     S.add('<path d="M78,150 L162,150 L170,190 L70,190 Z" fill="#ffffff"/>')
+
+
+def cone(params):
+    S = SVG(240, 300)
+    S.add('<rect x="0" y="0" width="240" height="300" fill="#ffffff"/>')
+    _draw_cone(S)
+    return str(S)
+
+
+def chantier_approche(params):
+    """Anticipation before a worksite: schematic positions, not an implantation plan."""
+    S = SVG(640, 440)
+    S.add(f'<rect width="640" height="440" fill="{GRASS}"/>')
+    S.add('<path d="M112 0H408V440H112Z" fill="#ced6c8"/>')
+    S.add(f'<path d="M130 0H390V440H130Z" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M137 0V440 M383 0V440" stroke="{MARK}" stroke-width="3"/>')
+    S.add(f'<path d="M260 0V440" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 18"/>')
+    S.add('<path d="M351 0H390V263L351 184Z" fill="#c9b99b"/>')
+    S.add('<path d="M364 22L380 18L382 140L370 151L362 143L365 100L359 69Z" fill="#99856a"/>')
+    S.add('<path d="M369 35L375 32 M366 63L377 67 M368 95L378 90 M366 126L377 129" '
+          'stroke="#b8a588" stroke-width="4" stroke-linecap="round"/>')
+    # One boundary, with a taper that leaves a corridor within the right lane.
+    for x, y in ((350, 27), (350, 67), (350, 107), (350, 147),
+                 (350, 187), (362, 213), (374, 239), (386, 265)):
+        S.add(f'<g transform="translate({x},{y}) scale(.14) translate(-120,-249)">')
+        _draw_cone(S)
+        S.add('</g>')
+    # Face-on sign for recognition within the plan view, before the cones.
+    S.add('<path d="M489 334V371 M474 374H504" stroke="#687475" stroke-width="5" stroke-linecap="round"/>')
+    uri = sign_data_uri(params["sign"]["file"], 240)
+    S.add(f'<image x="435" y="255" width="112" height="99" xlink:href="{uri}"/>')
+    S.add(f'<g transform="translate(325,363) scale(1.2)">{vehicle_sprite("car", "bleu")}</g>')
     return str(S)
 
 
@@ -844,5 +875,5 @@ REGISTRY.update({
     "direction_voies": direction_voies,
     "marquage_temporaire": marquage_temporaire, "zone_bleue": zone_bleue, "losange_sol": losange_sol, "cvcb": cvcb,
     "livraison": livraison, "direction_panel": direction_panel, "lieu_dit": lieu_dit, "feu_bicolore": feu_bicolore,
-    "cone": cone, "triangle_seul": triangle_seul, "barriere_k2": barriere_k2,
+    "chantier_approche": chantier_approche, "cone": cone, "triangle_seul": triangle_seul, "barriere_k2": barriere_k2,
 })

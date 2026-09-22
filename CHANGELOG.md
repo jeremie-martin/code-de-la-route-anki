@@ -1,3 +1,18 @@
+# Scène d’approche d’un chantier (22 septembre 2026)
+
+- Intégration du prototype SVG approuvé à `r-chantier-approche`. Question centrée sur l’anticipation
+  dès le panneau, avant le balisage ; conseil vérifié dans le dépliant officiel Bison Futé.
+- Palette et voiture existantes réutilisées, symbole du cône partagé sans modifier son rendu antérieur.
+  Panneau AK5 issu de Commons, attribution conservée. Aucun moteur de scènes supplémentaire.
+- Une seule carte modifiée, un média ajouté (363 au total), tous les anciens médias identiques.
+  Toujours 1 051 notes et 1 125 cartes ; identités et positions d’introduction conservées.
+- 24 tests réussis ; import, réimport, mise à jour depuis le paquet précédent et contrôles FSRS réussis.
+  9 042 faces/configurations contrôlées sans échec ; inspection visuelle à 390 px en clair et 320 px en sombre.
+  Aucun essai natif mobile ni mesure d’efficacité pédagogique. Le dessin est un schéma hors échelle,
+  pas un plan réglementaire d’implantation de chantier.
+- Maintenance et statut du prototype mis à jour ; trois candidats voisins évalués dans son README.
+  La flèche de rabattement reste le prochain candidat, sans modification de cette carte à ce stade.
+
 # Formulations sans tirets cadratins (22 septembre 2026)
 
 - Reformulation de 41 passages pédagogiques : conditions explicites, conséquences reliées à leur cause et

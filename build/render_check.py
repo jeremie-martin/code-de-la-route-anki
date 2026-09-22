@@ -26,7 +26,7 @@ SAMPLES = {
     'l-vitesse-hors-agglo', 'triangle-distance', 's-chargement-chiffres',
     'r-aquaplaning', 'l-arret-vs-stationnement', 'r-b26-chaines-complement',
     'scn-stop-moi', 'scn-dep-cycliste-ligne-continue', 'aff-l-stop-rien-ne-vient',
-    'aff-p-siege-verrouille', 'a-pls', 'a-message-alerte',
+    'r-chantier-approche', 'a-pls', 'a-message-alerte',
 }
 
 # Kept separate so the checker itself can be tested against deliberately bad pages.

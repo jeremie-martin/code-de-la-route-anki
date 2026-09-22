@@ -4,7 +4,9 @@
 [Source SVG éditable](scene.svg), [PNG utilisé dans la carte](scene.png),
 [recto](front.png), [verso](back.png), [champs proposés](note.json).
 Comparer avec [l’essai par génération d’image](../roadworks/preview.html).
-Le paquet publié et les données du deck restent inchangés.
+Prototype historique, désormais intégré à `r-chantier-approche`. La version de production est générée
+par `chantier_approche` dans [gen_images.py](../../../build/gen_images.py), avec la palette, la voiture
+et le cône partagés du deck. Les fichiers de ce dossier conservent l’essai approuvé.
 
 ## Choix du dessin
 
@@ -34,3 +36,11 @@ combinaisons sans débordement horizontal ni image manquante. Inspection visuell
 Le schéma occupe environ 241 px de haut dans cette carte à 390 px de large. Aucun essai natif mobile
 ni mesure d’efficacité pédagogique. La géométrie du biseau est contrôlée directement dans le SVG ;
 son implantation n’a pas fait l’objet d’une validation de signalisation de chantier.
+
+## Candidats voisins
+
+| Carte | Décision |
+|---|---|
+| `r-chantier-fleche-lumineuse` | Prochain candidat : lire une flèche et choisir le côté du rabattement. Vérifier la représentation exacte du dispositif avant de dessiner ; pas encore modifié. |
+| `kd10` | Déjà illustrée : la fermeture de voie est lisible sur le panneau. Pas de scène supplémentaire pour le même rappel. |
+| `aff-r-chantier-sans-ouvriers` | Garder le texte : l’absence d’ouvriers ne rend pas caduque la limitation temporaire. Une image n’ajoute pas de distinction utile. |

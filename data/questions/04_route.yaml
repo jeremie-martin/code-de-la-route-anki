@@ -218,14 +218,18 @@
   sous_theme: tramways
   source: "Code de la route, art. R422-3 et R417-11 ; coursdecode.com, Les tramways"
 - id: r-chantier-approche
-  question: Un triangle jaune « travaux », puis des cônes, annoncent un rétrécissement de ma voie sur une route limitée à 90 km/h. Comment j’adapte ma conduite ?
-  reponse: Je ralentis dès le panneau d’approche, je coupe le régulateur et je suis le balisage sans le franchir, à la vitesse
-    du chantier.
-  explication: 'Les ouvriers sont des usagers vulnérables : on s''écarte au maximum, on ne klaxonne pas et on se tient prêt
-    à s''arrêter. Signalisation d''approche puis de position.'
+  image:
+    gen: chantier_approche
+    width: 960
+    params:
+      sign: {kind: sign, file: "France road sign AK5.svg"}
+  question: Je conduis la voiture bleue vers le haut du dessin. Quand commencer à adapter mon allure, et quel indice me le signale ?
+  reponse: 'Dès que je repère le panneau de travaux : je ralentis progressivement, avant d’arriver au balisage.'
+  explication: Le panneau annonce un danger à venir. Anticiper laisse le temps de suivre les indications et d’aborder
+    la zone à une allure adaptée. Le dessin n’est pas à l’échelle et ne fixe aucune vitesse chiffrée.
   theme: R
   sous_theme: chantiers
-  source: "IISR, 8e partie ; securite-routiere.gouv.fr, Zones de chantier"
+  source: "Bison Futé, Chantiers en cours, conseils de conduite : https://www.bison-fute.gouv.fr/IMG/pdf/Chantiers_en_cours.pdf"
 - id: r-chantier-fleche-lumineuse
   question: 'Une flèche lumineuse de rabattement (FLR, KR42) ou un panneau de rabattement précède un chantier sur voie rapide
     : que faire ?'
