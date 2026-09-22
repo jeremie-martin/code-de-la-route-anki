@@ -120,6 +120,9 @@ CLOZE_RE = re.compile(r"\{\{c(\d+)::")
 IMAGE_KEYS = {"commons", "gen", "file"}
 # recognition types shown at the size of a real signal, not across the card
 SIGNAL_TYPES = {"panneau", "panonceau", "balise", "feu", "voyant", "pictogramme", "equipement"}
+# drawn signage seen face-on is shown at the same signal size as the recognition cards
+SIGNAL_GENERATORS = {"support_panneaux", "feu_modal", "feu_sur_panneau", "pmv", "direction_panel", "cedez_le_passage",
+                     "feu_tricolore", "feu_fleche_composite", "feu_pieton", "feu_velo"}
 PAIR_RESULTS = {"avant", "apres", "independant", "indetermine"}
 
 
@@ -615,7 +618,8 @@ def image_html(it: dict, names: dict[str, str]) -> str:
                 f'<span class="cdr-verso">{img_tag(names[it["id"] + ":verso"])}</span>')
     else:
         html = img_tag(names[it["id"]])
-    return f'<span class="cdr-signal">{html}</span>' if it["image"].get("signal") else html
+    signal = it["image"].get("signal") or it["image"].get("gen") in SIGNAL_GENERATORS
+    return f'<span class="cdr-signal">{html}</span>' if signal else html
 
 
 def feedback_html(note: dict, field: str, names: dict[str, str]) -> str:

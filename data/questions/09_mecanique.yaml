@@ -10,6 +10,15 @@
   sous_theme: tableau_de_bord
   source: "Codes Rousseau, Les voyants ; Ornikar, Voyants lumineux"
   debut: true
+  comparaisons:
+  - ref: voyant-huile
+    legende: 'Rouge : danger ; je m’arrête dès que c’est sûr.'
+  - ref: voyant-moteur
+    legende: 'Orange : anomalie ; je lis le symbole et fais contrôler.'
+  - ref: voyant-croisement
+    legende: 'Vert : fonction en service.'
+  - ref: voyant-route
+    legende: 'Bleu : feux de route allumés.'
 - id: m-pneus-usure-1-6
   question: Sur une voiture, quelle profondeur minimale doivent garder les rainures principales des pneus,
     et comment repérer cette limite ?
@@ -20,6 +29,9 @@
   theme: M
   sous_theme: pneus
   source: 'Code de la route, R314-1 ; arrêté du 18 juillet 2019, art. 5, https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038995312'
+  illustration:
+    gen: pneu_usure
+    legende: Quand la bande de roulement arrive au niveau du témoin, la limite est atteinte.
 - id: m-pneu-hernie
   question: 'Avant de partir, je découvre une bosse apparue sur le flanc d’un pneu après un choc contre
     un trottoir. Ses rainures restent profondes. Puis-je partir avec ce pneu ?'
@@ -88,7 +100,7 @@
   sous_theme: entretien
   source: "Renault Clio 5, Batterie, dépannage (exemple constructeur), https://www.user-manual.renault.com/fr/d%C3%A9pannage/batterie-depannage"
 - id: m-carburants-etiquettes
-  question: Que signifient les étiquettes ronde, carrée et en losange sur les pistolets de carburant ?
+  question: Sur les pistolets de carburant et la trappe du véhicule, que signifie chacune de ces formes d’étiquette ?
   reponse: Rond = essence ; carré = gazole ; losange = gaz (GPL, GNV ou hydrogène).
   explication: Étiquetage européen depuis 2018, repris sur la trappe du véhicule. Le SP95-E10 convient à la plupart des essences
     depuis 2000 ; l'E85 exige un moteur flexfuel ou un boîtier homologué. Un diesel récent a un filtre à particules et souvent
@@ -96,6 +108,9 @@
   theme: M
   sous_theme: entretien
   source: Norme EN 16942 (étiquetage 2018) ; TotalEnergies ; Ornikar
+  image:
+    gen: etiquettes_carburant
+    verso: true
 - id: m-erreur-carburant
   question: Je viens de faire le plein avec le mauvais carburant. Que faire ?
   reponse: 'Ne pas mettre le contact et faire vidanger le réservoir sur place : démarrer entraîne le carburant dans la pompe

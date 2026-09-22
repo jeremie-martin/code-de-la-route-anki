@@ -92,6 +92,9 @@
   theme: P
   sous_theme: installation
   source: "securite-routiere.gouv.fr, Comment positionner la ceinture de sécurité"
+  illustration:
+    gen: ceinture
+    legende: Sangle basse sur les os du bassin ; sangle haute au milieu de l’épaule, puis sur le sternum.
 - id: p-volant-mains
   question: 'Je vais démarrer : où je place mes mains sur le volant, et pourquoi là ?'
   reponse: 'À 9 h 15 (ou 10 h 10), pouces à l’extérieur des branches : je braque vite des deux côtés sans me blesser si l’airbag

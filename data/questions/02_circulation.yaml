@@ -401,7 +401,7 @@
       - kind: sign
         file: France road sign AB4.svg
         name: STOP
-      - draw: cedez
+      - gen: cedez_le_passage
         name: cédez le passage
       - kind: sign
         file: France road sign AB6.svg

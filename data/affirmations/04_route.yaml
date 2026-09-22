@@ -179,6 +179,11 @@
   theme: R
   sous_theme: intemperies
   source: Décret n° 2020-1264 ; service-public.fr F19459
+  illustration:
+    gen: pneu_flanc
+    legende: '1 : M+S seul. 2 : M+S et symbole alpin, exigé depuis le 1er novembre 2024.'
+    params:
+      mode: comparaison
 - id: aff-r-montagne-4-pneus
   contexte: Route enneigée, panneau d'entrée de zone montagne, en pleine période hivernale.
   affirmation: Sans chaînes ni chaussettes à bord, il me faut quatre pneus hiver pour circuler ici.

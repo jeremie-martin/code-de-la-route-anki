@@ -26,6 +26,9 @@
   theme: C
   sous_theme: perception
   source: "REMC ; securite-routiere.gouv.fr, Les angles morts"
+  illustration:
+    gen: angles_morts
+    legende: 'Zones indicatives : elles varient selon le véhicule et le réglage des rétroviseurs.'
 - id: c-ordre-controles-changement-file
   question: Sur une route à deux voies dans mon sens, je veux passer sur la voie de gauche. Dans quel ordre est-ce
     que je procède ?

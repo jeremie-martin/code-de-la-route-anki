@@ -20,7 +20,7 @@
 .cdr-img img { display: inline-block; max-width: 100%; max-height: 44vh; width: auto; height: auto; border-radius: 7px; }
 /* Pictogram-like signals stay at sign size; markings, gestures and plan views use the full width. */
 .cdr-img.panneau img, .cdr-img.panonceau img, .cdr-img.balise img, .cdr-img.feu img, .cdr-img.voyant img,
-.cdr-img.pictogramme img, .cdr-img.equipement img { max-height: 27vh; max-width: min(100%, 235px); }
+.cdr-img.pictogramme img, .cdr-img.equipement img { max-height: 27vh; max-width: min(100%, 340px); }
 .cdr-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; text-align: center; }
 .cdr-pair > div { min-width: 0; }
 .cdr-pair img { max-width: 100%; max-height: 22vh; width: auto; height: auto; }
@@ -63,4 +63,4 @@ ul.cdr-list { padding-left: 24px; }
 .cdr-back .cdr-verso { display: inline; }
 .cdr-back .cdr-recto { display: none; }
 /* panneau, feu ou voyant montré sur une carte de règle : taille d'un signal, comme en reconnaissance */
-.cdr-img .cdr-signal img { max-height: 27vh; max-width: min(100%, 235px); }
+.cdr-img .cdr-signal img { max-height: 27vh; max-width: min(100%, 340px); }

@@ -16,6 +16,11 @@
   theme: P
   sous_theme: installation
   source: "securite-routiere.gouv.fr, Comment positionner la ceinture de sécurité"
+  illustration:
+    gen: ceinture
+    legende: 'À ne pas faire : sous le bras, la sangle ne retient plus le buste.'
+    params:
+      variante: sous_bras
 - id: aff-p-ceinture-blouson
   contexte: Je monte en voiture par grand froid, avec une doudoune épaisse.
   affirmation: Cette doudoune réduit l'efficacité de ma ceinture.

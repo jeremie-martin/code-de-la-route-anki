@@ -8,7 +8,7 @@ from __future__ import annotations
 import math
 import textwrap
 
-from build.diagrams import (ASPHALT, GRASS, MARK, FONT, SVG, agent_figure, draw_road, draw_intersection, draw_roundabout,
+from build.diagrams import (ASPHALT, GRASS, MARK, LABEL, FONT, SVG, agent_figure, draw_road, draw_intersection, draw_roundabout,
                             vehicle_sprite, intention_arrow, siren_rays, sign_data_uri, esc, _body)
 
 ME = _body({"me": True})  # the learner's car in decision scenes: blue, yellow halo, MOI (as in the scenarios)
@@ -268,11 +268,7 @@ def _lamp(S, cx, cy, r, colour, on=True, blink=False):
     if on:
         S.add(f'<circle cx="{cx}" cy="{cy}" r="{r + 4}" fill="none" stroke="{colour}" stroke-opacity="0.45" stroke-width="4"/>')
     if blink and on:
-        for ang in range(0, 360, 45):
-            a = math.radians(ang)
-            x1, y1 = cx + (r + 9) * math.cos(a), cy + (r + 9) * math.sin(a)
-            x2, y2 = cx + (r + 16) * math.cos(a), cy + (r + 16) * math.sin(a)
-            S.add(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{colour}" stroke-width="3" stroke-linecap="round"/>')
+        _flash_rays(S, cx, cy, r + 3, colour)
 
 
 RED, AMBER, GREEN = "#e53935", "#fb8c00", "#43a047"
@@ -319,9 +315,7 @@ def feu_fleche_composite(params):
     S.add('<circle cx="210" cy="270" r="36" fill="#111"/>')
     S.add(_arrow_glyph(210, 270, colour, params.get("direction", "right")))
     if params.get("blink", True):
-        for ang in range(0, 360, 45):
-            a = math.radians(ang)
-            S.add(f'<line x1="{210 + 44 * math.cos(a):.1f}" y1="{270 + 44 * math.sin(a):.1f}" x2="{210 + 50 * math.cos(a):.1f}" y2="{270 + 50 * math.sin(a):.1f}" stroke="{colour}" stroke-width="3" stroke-linecap="round"/>')
+        _flash_rays(S, 210, 270, 38, colour)
     return str(S)
 
 
@@ -400,9 +394,7 @@ def signal_affectation(params):
         elif st == "fleche":  # green arrow pointing down: this lane is open
             S.add(f'<path d="M{cx},92 l16,-18 l-9,0 l0,-20 l-14,0 l0,20 l-9,0 z" fill="{GREEN}"/>')
         elif st == "rabattement_droite":  # flashing amber arrow slanting down-right: move to the next lane
-            for ang in range(0, 360, 45):
-                a = math.radians(ang)
-                S.add(f'<line x1="{cx + 36 * math.cos(a):.1f}" y1="{74 + 36 * math.sin(a):.1f}" x2="{cx + 43 * math.cos(a):.1f}" y2="{74 + 43 * math.sin(a):.1f}" stroke="{AMBER}" stroke-width="3" stroke-linecap="round"/>')
+            _flash_rays(S, cx, 74, 30, AMBER)
             S.add(f'<path d="M{cx - 14},60 l22,22" fill="none" stroke="{AMBER}" stroke-width="6" stroke-linecap="round"/>')
             S.add(f'<path d="M{cx + 14},88 l-16,-2 l14,-14 z" fill="{AMBER}" stroke="{AMBER}" stroke-width="3" stroke-linejoin="round"/>')
         elif st == "rabattement_gauche":
@@ -479,9 +471,9 @@ def triangle_distance(params):
     _dashes_h(S, 100, 3, 10, w=4)
     S.add(f'<g transform="translate(400,130) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
     S.add('<path d="M66,150 l14,-26 l14,26 z" fill="#e53935" stroke="#fff" stroke-width="2"/>')
-    S.add('<path d="M80,192 H222 M258,192 H362 M80,184 v16 M362,184 v16 M216,202 l12,-20 M246,202 l12,-20" '
-          'stroke="#222" stroke-width="3" fill="none"/>')
-    S.add(f'<text x="221" y="182" font-family="{FONT}" font-size="20" font-weight="700" text-anchor="middle" fill="#222">{esc(str(params.get("label", "≈ 30 m")))}</text>')
+    S.add(f'<path d="M80,192 H222 M258,192 H362 M80,184 v16 M362,184 v16 M216,202 l12,-20 M246,202 l12,-20" '
+          f'stroke="{LABEL}" stroke-width="3" fill="none"/>')
+    S.add(f'<text x="221" y="182" font-family="{FONT}" font-size="20" font-weight="700" text-anchor="middle" fill="{LABEL}">{esc(str(params.get("label", "≈ 30 m")))}</text>')
     return str(S)
 
 
@@ -733,8 +725,7 @@ def direction_panel(params):
     S.add(f'<text x="140" y="92" font-family="{FONT}" font-size="34" font-weight="700" fill="{fg}">{text}</text>')
     S.add(f'<text x="385" y="92" font-family="{FONT}" font-size="30" font-weight="700" text-anchor="end" fill="{fg}">{dist}</text>')
     if params.get("picto") == "velo":
-        S.add(f'<g transform="translate(300,80) scale(1.3)" fill="none" stroke="{fg}" stroke-width="3"><circle cx="-10" cy="6" r="8"/>'
-              f'<circle cx="10" cy="6" r="8"/><path d="M-10,6 l7,-13 l11,0 l2,13 M-3,-7 l5,13"/></g>')
+        S.add(_bike(300, 80, fg, 1.3))
     return str(S)
 
 
@@ -1027,14 +1018,6 @@ def triangle_seul(params):
     return str(S)
 
 
-def cedez_le_passage(params):
-    """AB3a without its optional plate (the Commons file prints « CÉDEZ LE PASSAGE », i.e. the answer)."""
-    S = SVG(300, 270)
-    S.add('<path d="M20,22 L280,22 L150,248 Z" fill="#d52b1e" stroke="#9a9a9a" stroke-width="2" stroke-linejoin="round"/>')
-    S.add('<path d="M58,44 L242,44 L150,204 Z" fill="#ffffff"/>')
-    return str(S)
-
-
 def balise_piquet(params):
     """Post beacons J1 (white band), J3 (red band), J1bis (red top): white trapezoid post, 1 m high."""
     kind = params.get("kind", "j1")
@@ -1069,23 +1052,97 @@ def voyant_direction(params):
     return str(S)
 
 
-# ------------------------------------------------------- recto / verso ---
-# Generators called with params["verso"] draw the same picture with the answer added in place.
+# ====================================================== teaching drawings ===
+# Drawings added to rule cards share one visual language:
+#   INK for text and outlines; ANSWER for what the back of an « verso » image adds in place (the cards' answer
+#   colour); WRONG for what not to do; SIGN_RED / SIGN_BLUE for drawn signs; the scenarios' HIDDEN hatch for what
+#   cannot be seen and VISIBLE for what a mirror shows. Drawings keep a white background in both card themes.
+#   Front and back of a « verso » image are drawn by the same code with the same canvas: only answer text is added.
+INK = LABEL
+ANSWER = "#17566e"            # cards.css --answer (light theme)
+WRONG = "#a33c30"             # cards.css --false
+SIGN_RED, SIGN_BLUE = "#d52b1e", "#1f5fae"
+PAPER = "#ffffff"
+HIDDEN = "#bac2c5"            # same hatch as the masked zone of the scenarios
+VISIBLE = "#fff9c4"
+LABEL_SIZE, NUMBER_SIZE = 18, 20
 
-def _tag(S, x, y, text, verso_text, verso, size=20, anchor="middle", colour="#222"):
-    """A label that reads « A » on the front and its answer on the back, at the same place."""
-    S.add(f'<text x="{x}" y="{y}" font-family="{FONT}" font-size="{size}" font-weight="700" '
-          f'text-anchor="{anchor}" fill="{colour}">{esc(verso_text if verso else text)}</text>')
 
+_font_cache: dict = {}
+
+
+def text_width(s: str, size: float, weight: int = 700) -> float:
+    """Width of a label in the font the PNGs are rendered with (Inter, via fontconfig), used for layout and by the
+    image tests. Falls back to a conservative estimate if the font cannot be found."""
+    key = (int(size), weight >= 600)
+    if key not in _font_cache:
+        try:
+            import subprocess
+            from PIL import ImageFont
+            path = subprocess.run(["fc-match", "-f", "%{file}", "Inter:bold" if key[1] else "Inter"],
+                                  capture_output=True, text=True, check=True).stdout
+            _font_cache[key] = ImageFont.truetype(path, key[0])
+        except Exception:  # noqa: BLE001 — measurement is a best effort; the estimate errs on the wide side
+            _font_cache[key] = None
+    font = _font_cache[key]
+    return font.getlength(s) if font else len(s) * size * 0.6
+
+
+def _text(S, x, y, s, size=LABEL_SIZE, colour=INK, anchor="middle", weight=700):
+    S.add(f'<text x="{x}" y="{y}" font-family="{FONT}" font-size="{size}" font-weight="{weight}" '
+          f'text-anchor="{anchor}" fill="{colour}">{esc(str(s))}</text>')
+
+
+def _tag(S, x, y, front, back, verso, size=NUMBER_SIZE, anchor="middle"):
+    """A label that reads `front` (a letter or number) and, on the back, `back` at the same place, in ANSWER colour."""
+    _text(S, x, y, back if verso else front, size, ANSWER if verso else INK, anchor)
+
+
+def _slot(S, cx, y, number, name, verso):
+    """Numbered slot under an item: the number on both sides, the name added below it on the back."""
+    if number is not None:
+        _text(S, cx, y, number, NUMBER_SIZE)
+    if verso:
+        _text(S, cx, y + 24, name, LABEL_SIZE, ANSWER)
+
+
+def _pill(S, x, y, s, size=LABEL_SIZE, colour=INK, anchor="start"):
+    """Label on a white pill, for text drawn over asphalt or other busy areas."""
+    w = text_width(s, size) + 16
+    left = x - 8 if anchor == "start" else x - w / 2 if anchor == "middle" else x - w + 8
+    S.add(f'<rect x="{left}" y="{y - size - 4}" width="{w}" height="{size + 12}" rx="6" fill="{PAPER}" opacity="0.92"/>')
+    _text(S, x, y, s, size, colour, anchor)
+
+
+def _hidden_pattern(S, pid="hidden"):
+    S.add(f'<defs><pattern id="{pid}" width="12" height="12" patternUnits="userSpaceOnUse">'
+          f'<path d="M-3 3L3-3 M0 12L12 0 M9 15L15 9" stroke="{HIDDEN}" stroke-width="2"/></pattern></defs>')
+
+
+def _flash_rays(S, cx, cy, r, colour):
+    """Short rays around a flashing light, as on every blinking light of the deck."""
+    for ang in range(0, 360, 45):
+        a = math.radians(ang)
+        S.add(f'<line x1="{cx + (r + 6) * math.cos(a):.1f}" y1="{cy + (r + 6) * math.sin(a):.1f}" '
+              f'x2="{cx + (r + 13) * math.cos(a):.1f}" y2="{cy + (r + 13) * math.sin(a):.1f}" '
+              f'stroke="{colour}" stroke-width="3" stroke-linecap="round"/>')
+
+
+def _bike(x, y, colour, s=1.0):
+    return (f'<g transform="translate({x},{y}) scale({s})" fill="none" stroke="{colour}" stroke-width="3">'
+            f'<circle cx="-10" cy="6" r="8"/><circle cx="10" cy="6" r="8"/><path d="M-10,6 l7,-13 l11,0 l2,13 M-3,-7 l5,13"/></g>')
+
+
+# ------------------------------------------------------------ road words ---
 
 def vocab_route(params):
     """Road seen from above with a label margin: A = chaussée (brace), B = one lane (brace), C = accotement."""
     verso = params.get("verso", False)
     S = SVG(480, 280)
-    S.add('<rect x="0" y="0" width="480" height="280" fill="#ffffff"/>')
+    S.add(f'<rect x="0" y="0" width="480" height="280" fill="{PAPER}"/>')
     L = 130  # label margin on the left
-    S.add(f'<rect x="{L}" y="20" width="{480 - L}" height="50" fill="#b9c79f"/>')
-    S.add(f'<rect x="{L}" y="190" width="{480 - L}" height="50" fill="#b9c79f"/>')
+    S.add(f'<rect x="{L}" y="20" width="{480 - L}" height="50" fill="{GRASS}"/>')
+    S.add(f'<rect x="{L}" y="190" width="{480 - L}" height="50" fill="{GRASS}"/>')
     S.add(f'<rect x="{L}" y="70" width="{480 - L}" height="120" fill="{ASPHALT}"/>')
     for y in (72, 188):
         S.add(f'<rect x="{L}" y="{y - 2}" width="{480 - L}" height="3" fill="{MARK}"/>')
@@ -1094,186 +1151,12 @@ def vocab_route(params):
         S.add(f'<rect x="{x}" y="128" width="36" height="4" fill="{MARK}"/>')
         x += 96
     S.add(f'<g transform="translate(400,160) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
-    # A: whole asphalt width; B: my lane only; C: the verge (arrow)
-    S.add(f'<path d="M{L - 14},70 v120 M{L - 20},70 h12 M{L - 20},190 h12" stroke="#222" stroke-width="3" fill="none"/>')
-    S.add(f'<path d="M{L + 24},130 v60 M{L + 18},130 h12 M{L + 18},190 h12" stroke="#f2c200" stroke-width="4" fill="none"/>')
+    S.add(f'<path d="M{L - 14},70 v120 M{L - 20},70 h12 M{L - 20},190 h12" stroke="{INK}" stroke-width="3" fill="none"/>')
+    S.add(f'<path d="M{L + 24},130 v60 M{L + 18},130 h12 M{L + 18},190 h12" stroke="{YELLOW}" stroke-width="4" fill="none"/>')
     _tag(S, L - 26, 137, "A", "chaussée", verso, anchor="end")
-    _tag(S, L + 36, 166, "B", "voie", verso, colour="#f2c200", anchor="start")
-    S.add(f'<path d="M{L - 18},215 H{L + 30} M{L + 20},207 l10,8 l-10,8" stroke="#222" stroke-width="3" fill="none"/>')
-    _tag(S, L - 24, 221, "C", "accotement", verso, anchor="end", size=16 if verso else 20)
-    return str(S)
-
-def _sign_shape(S, cx, cy, kind):
-    r = 46
-    if kind == "danger":
-        S.add(f'<path d="M{cx},{cy - 50} L{cx + 55},{cy + 42} L{cx - 55},{cy + 42} Z" fill="#fff" stroke="#d52b1e" stroke-width="10" stroke-linejoin="round"/>')
-    elif kind == "interdiction":
-        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#fff" stroke="#d52b1e" stroke-width="10"/>')
-    elif kind == "obligation":
-        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r + 4}" fill="#1c5fb8"/>')
-    elif kind == "indication":
-        S.add(f'<rect x="{cx - 46}" y="{cy - 46}" width="92" height="92" rx="6" fill="#1c5fb8"/>')
-    elif kind == "fin_interdiction":
-        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r + 4}" fill="#fff" stroke="#888" stroke-width="2"/>')
-        S.add(f'<path d="M{cx - 33},{cy + 33} L{cx + 33},{cy - 33}" stroke="#111" stroke-width="10"/>')
-    elif kind == "fin_obligation":
-        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r + 4}" fill="#1c5fb8"/>')
-        S.add(f'<path d="M{cx - 33},{cy + 33} L{cx + 33},{cy - 33}" stroke="#d52b1e" stroke-width="10"/>')
-
-
-def formes_panneaux(params):
-    """Shape and colour families of French signs, without pictograms: numbered, then named on the back."""
-    verso = params.get("verso", False)
-    kinds = params.get("kinds", ["danger", "interdiction", "obligation", "indication", "fin_interdiction", "fin_obligation"])
-    names = {"danger": "danger", "interdiction": "interdiction", "obligation": "obligation", "indication": "indication",
-             "fin_interdiction": "fin d’interdiction", "fin_obligation": "fin d’obligation"}
-    cols = 3
-    S = SVG(480, 180 * ((len(kinds) + cols - 1) // cols))
-    S.add(f'<rect x="0" y="0" width="{S.w}" height="{S.h}" fill="#ffffff"/>')
-    for i, k in enumerate(kinds):
-        cx, cy = 80 + (i % cols) * 160, 66 + (i // cols) * 175
-        _sign_shape(S, cx, cy, k)
-        _tag(S, cx, cy + 86, str(i + 1), str(i + 1), verso, size=18)
-        if verso:  # the name appears on its own line under the number: nothing else moves
-            S.add(f'<text x="{cx}" y="{cy + 106}" font-family="{FONT}" font-size="16" font-weight="700" '
-                  f'text-anchor="middle" fill="#1c5fb8">{esc(names[k])}</text>')
-    return str(S)
-
-
-# ---------------------------------------------------------- sign composites ---
-# Signs are Commons files declared as {kind: sign, file: …} (attributed automatically in ATTRIBUTIONS.md).
-
-def _sign_png(item, width):
-    """Data URI and height of one sign item rendered at `width` px (keeps the file's proportions)."""
-    import base64, struct
-    if "gen" in item or item.get("draw") == "cedez":  # a drawn signal (AB3a without its plate, a light…)
-        import re
-        svg = render(item.get("gen", "cedez_le_passage"), item.get("params") or {})
-        w, h = (float(v) for v in re.search(r'width="([\d.]+)" height="([\d.]+)"', svg).groups())
-        uri = "data:image/svg+xml;base64," + base64.b64encode(svg.encode()).decode()
-        return uri, round(width * h / w)
-    uri = sign_data_uri(item["file"], width * 2)
-    png = base64.b64decode(uri.split(",", 1)[1])
-    w, h = struct.unpack(">II", png[16:24])
-    return uri, round(width * h / w)
-
-
-def support_panneaux(params):
-    """Several signs (and plates) on one post, top to bottom, as seen when approaching."""
-    items = params["signs"]
-    width = params.get("width", 150)
-    parts, y = [], 16
-    for item in items:
-        w = item.get("w", width)
-        uri, h = _sign_png(item, w)
-        parts.append((uri, w, h, y))
-        y += h + 6
-    H = y + 70
-    S = SVG(300, H)
-    S.add(f'<rect x="0" y="0" width="300" height="{H}" fill="#ffffff"/>')
-    S.add(f'<rect x="144" y="20" width="12" height="{H - 20}" fill="#9a9a9a"/>')
-    for uri, w, h, top in parts:
-        S.add(f'<image href="{uri}" x="{150 - w / 2}" y="{top}" width="{w}" height="{h}"/>')
-    return str(S)
-
-
-def planche_signaux(params):
-    """Numbered sheet of signs; with verso, each name appears under its number (nothing else moves)."""
-    verso = params.get("verso", False)
-    items = params["signs"]
-    cols = params.get("cols", len(items) if len(items) <= 3 else 2 if len(items) == 4 else 3)
-    cell_w, sign_w = 480 // cols, min(150, 480 // cols - 40)
-    rows = (len(items) + cols - 1) // cols
-    cells = []
-    for item in items:
-        uri, h = _sign_png(item, item.get("w", sign_w))
-        cells.append((uri, item.get("w", sign_w), h, item["name"]))
-    row_h = max(h for _, _, h, _ in cells) + 60
-    S = SVG(480, rows * row_h)
-    S.add(f'<rect x="0" y="0" width="480" height="{rows * row_h}" fill="#ffffff"/>')
-    for i, (uri, w, h, name) in enumerate(cells):
-        cx = cell_w * (i % cols) + cell_w / 2
-        top = (i // cols) * row_h + 8
-        S.add(f'<image href="{uri}" x="{cx - w / 2}" y="{top + (row_h - 60 - h) / 2}" width="{w}" height="{h}"/>')
-        _tag(S, cx, top + row_h - 36, str(i + 1), str(i + 1), verso, size=20)
-        if verso:
-            S.add(f'<text x="{cx}" y="{top + row_h - 12}" font-family="{FONT}" font-size="20" font-weight="700" '
-                  f'text-anchor="middle" fill="#1c5fb8">{esc(name)}</text>')
-    return str(S)
-
-
-# ------------------------------------------------------------ lights, panels ---
-
-def _flash_rays(S, cx, cy, r, colour):
-    for ang in range(0, 360, 45):
-        a = math.radians(ang)
-        S.add(f'<line x1="{cx + (r + 6) * math.cos(a):.1f}" y1="{cy + (r + 6) * math.sin(a):.1f}" '
-              f'x2="{cx + (r + 13) * math.cos(a):.1f}" y2="{cy + (r + 13) * math.sin(a):.1f}" '
-              f'stroke="{colour}" stroke-width="3" stroke-linecap="round"/>')
-
-
-def feu_modal(params):
-    """Red main light with a small flashing amber head beside it: BUS (R15) or cycle + arrow (R19)."""
-    kind = params.get("kind", "bus")
-    S = SVG(320, 360)
-    S.add('<rect x="0" y="0" width="320" height="360" fill="#ffffff"/>')
-    S.add('<rect x="50" y="20" width="100" height="300" rx="16" fill="#222" stroke="#000" stroke-width="2"/>')
-    _lamp(S, 100, 70, 36, RED, on=True)
-    _lamp(S, 100, 170, 36, AMBER, on=False)
-    _lamp(S, 100, 270, 36, GREEN, on=False)
-    S.add('<rect x="180" y="210" width="100" height="100" rx="14" fill="#222" stroke="#000" stroke-width="2"/>')
-    S.add('<circle cx="230" cy="260" r="38" fill="#111"/>')
-    if kind == "bus":
-        S.add(f'<text x="230" y="270" font-family="{FONT}" font-size="26" font-weight="800" text-anchor="middle" fill="{AMBER}">BUS</text>')
-    else:
-        S.add(f'<g transform="translate(222,256)" fill="none" stroke="{AMBER}" stroke-width="3"><circle cx="-10" cy="6" r="8"/>'
-              f'<circle cx="10" cy="6" r="8"/><path d="M-10,6 l7,-13 l11,0 l2,13 M-3,-7 l5,13"/></g>')
-        S.add(f'<path d="M244,244 h14 v-6 l10,10 l-10,10 v-6 h-14 z" fill="{AMBER}"/>')
-    _flash_rays(S, 230, 260, 44, AMBER)
-    return str(S)
-
-
-def feu_sur_panneau(params):
-    """Flashing amber light fixed above a warning sign (R1): it reinforces the sign's warning."""
-    S = SVG(260, 330)
-    S.add('<rect x="0" y="0" width="260" height="330" fill="#ffffff"/>')
-    S.add('<rect x="124" y="120" width="12" height="210" fill="#9a9a9a"/>')
-    S.add('<rect x="95" y="14" width="70" height="70" rx="12" fill="#222"/>')
-    _lamp(S, 130, 49, 24, AMBER, on=True)
-    _flash_rays(S, 130, 49, 26, AMBER)
-    uri = sign_data_uri(params["sign"]["file"], 300)
-    S.add(f'<image href="{uri}" x="55" y="92" width="150" height="150"/>')
-    return str(S)
-
-
-def pmv(params):
-    """Variable-message panel over a motorway lane showing a speed limit (red ring, lit figures)."""
-    value = esc(str(params.get("value", "90")))
-    S = SVG(420, 260)
-    S.add('<rect x="0" y="0" width="420" height="260" fill="#ffffff"/>')
-    S.add('<rect x="10" y="20" width="400" height="16" fill="#8a8a8a"/>')
-    S.add('<rect x="110" y="36" width="200" height="200" rx="14" fill="#141414" stroke="#555" stroke-width="3"/>')
-    S.add('<circle cx="210" cy="136" r="78" fill="none" stroke="#e53935" stroke-width="16"/>')
-    S.add(f'<text x="210" y="160" font-family="{FONT}" font-size="68" font-weight="800" text-anchor="middle" fill="#f6f6f6">{value}</text>')
-    return str(S)
-
-
-def plaque_orange(params):
-    """Rear of a lorry carrying dangerous goods: orange plate (hazard number over UN number) and a hazard diamond."""
-    top, bottom = esc(str(params.get("danger", "33"))), esc(str(params.get("matiere", "1203")))
-    S = SVG(420, 320)
-    S.add('<rect x="0" y="0" width="420" height="320" fill="#ffffff"/>')
-    S.add('<rect x="40" y="20" width="340" height="240" rx="8" fill="#c9ced1" stroke="#555" stroke-width="3"/>')
-    S.add('<rect x="40" y="250" width="340" height="30" fill="#333"/>')
-    for x in (70, 330):
-        S.add(f'<rect x="{x - 20}" y="232" width="40" height="18" rx="3" fill="#d52b1e"/>')
-    S.add('<rect x="140" y="130" width="140" height="94" rx="4" fill="#f28c00" stroke="#111" stroke-width="5"/>')
-    S.add('<path d="M140,177 H280" stroke="#111" stroke-width="4"/>')
-    S.add(f'<text x="210" y="167" font-family="{FONT}" font-size="34" font-weight="800" text-anchor="middle" fill="#111">{top}</text>')
-    S.add(f'<text x="210" y="214" font-family="{FONT}" font-size="34" font-weight="800" text-anchor="middle" fill="#111">{bottom}</text>')
-    # hazard diamond (flammable liquid): red, white flame
-    S.add('<path d="M320,40 l42,42 l-42,42 l-42,-42 z" fill="#d52b1e" stroke="#fff" stroke-width="3"/>')
-    S.add('<path d="M320,58 c10,14 14,22 8,34 c-3,6 -13,8 -18,2 c-6,-8 -1,-18 4,-22 c0,6 2,10 6,10 c2,-8 -2,-16 0,-24 z" fill="#fff"/>')
+    _pill(S, L + 36, 166, "voie" if verso else "B", NUMBER_SIZE, ANSWER if verso else INK)
+    S.add(f'<path d="M{L - 18},215 H{L + 30} M{L + 20},207 l10,8 l-10,8" stroke="{INK}" stroke-width="3" fill="none"/>')
+    _tag(S, L - 24, 221, "C", "accotement", verso, size=16 if verso else NUMBER_SIZE, anchor="end")
     return str(S)
 
 
@@ -1285,33 +1168,332 @@ def types_routes(params):
     H = 300
     S = SVG(480, H + 80)
     S.add(f'<rect x="0" y="0" width="480" height="{H}" fill="{GRASS}"/>')
-    S.add(f'<rect x="0" y="{H}" width="480" height="80" fill="#ffffff"/>')
+    S.add(f'<rect x="0" y="{H}" width="480" height="80" fill="{PAPER}"/>')
 
     def carriage(x, w, lanes=1, shoulder=None):
         S.add(f'<rect x="{x}" y="0" width="{w}" height="{H}" fill="{ASPHALT}"/>')
         S.add(f'<path d="M{x + 2},0 V{H} M{x + w - 2},0 V{H}" stroke="{MARK}" stroke-width="3"/>')
         for i in range(1, lanes):
             S.add(f'<path d="M{x + w * i / lanes},0 V{H}" stroke="{MARK}" stroke-width="3" stroke-dasharray="18 16"/>')
-        if shoulder:  # hard shoulder beyond the right-hand edge line
-            sx = x + w if shoulder == "right" else x - 16
-            S.add(f'<rect x="{sx}" y="0" width="16" height="{H}" fill="#6e6e6e"/>')
+        if shoulder:  # hard shoulder beyond the edge line
+            S.add(f'<rect x="{x + w if shoulder == "right" else x - 16}" y="0" width="16" height="{H}" fill="#6e6e6e"/>')
 
     reserve = "#9cb07e"
-    carriage(40, 90, lanes=2)                                                      # 1
+    carriage(40, 90, lanes=2)                                                                   # 1
     carriage(180, 46); S.add(f'<rect x="226" y="0" width="24" height="{H}" fill="{reserve}"/>'); carriage(250, 46)  # 2
     carriage(356, 50, lanes=2, shoulder="left"); S.add(f'<rect x="406" y="0" width="14" height="{H}" fill="{reserve}"/>')
-    carriage(420, 50, lanes=2, shoulder="right")                                    # 3
+    carriage(420, 50, lanes=2, shoulder="right")                                                # 3
     uri = sign_data_uri("France road sign C207.svg", 160)
-    S.add(f'<rect x="386" y="18" width="64" height="64" rx="6" fill="#ffffff"/>')
+    S.add(f'<rect x="386" y="18" width="64" height="64" rx="6" fill="{PAPER}"/>')
     S.add(f'<image href="{uri}" x="390" y="22" width="56" height="56"/>')
     for i, cx in enumerate((85, 238, 413)):
-        _tag(S, cx, H + 30, str(i + 1), str(i + 1), verso, size=24)
+        _slot(S, cx, H + 30, str(i + 1), limits[i], verso)
+    return str(S)
+
+
+# ---------------------------------------------------------------- signs ---
+
+def _sign_shape(S, cx, cy, kind):
+    r = 46
+    if kind == "danger":
+        S.add(f'<path d="M{cx},{cy - 50} L{cx + 55},{cy + 42} L{cx - 55},{cy + 42} Z" fill="{PAPER}" stroke="{SIGN_RED}" stroke-width="10" stroke-linejoin="round"/>')
+    elif kind == "interdiction":
+        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{PAPER}" stroke="{SIGN_RED}" stroke-width="10"/>')
+    elif kind == "obligation":
+        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r + 4}" fill="{SIGN_BLUE}"/>')
+    elif kind == "indication":
+        S.add(f'<rect x="{cx - 46}" y="{cy - 46}" width="92" height="92" rx="6" fill="{SIGN_BLUE}"/>')
+    elif kind == "fin_interdiction":
+        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r + 4}" fill="{PAPER}" stroke="#888888" stroke-width="2"/>')
+        S.add(f'<path d="M{cx - 33},{cy + 33} L{cx + 33},{cy - 33}" stroke="#111111" stroke-width="10"/>')
+    elif kind == "fin_obligation":
+        S.add(f'<circle cx="{cx}" cy="{cy}" r="{r + 4}" fill="{SIGN_BLUE}"/>')
+        S.add(f'<path d="M{cx - 33},{cy + 33} L{cx + 33},{cy - 33}" stroke="{SIGN_RED}" stroke-width="10"/>')
+
+
+def formes_panneaux(params):
+    """Shape and colour families of French signs, without pictograms: numbered, then named on the back."""
+    verso = params.get("verso", False)
+    kinds = params.get("kinds", ["danger", "interdiction", "obligation", "indication", "fin_interdiction", "fin_obligation"])
+    names = {"danger": "danger", "interdiction": "interdiction", "obligation": "obligation", "indication": "indication",
+             "fin_interdiction": "fin d’interdiction", "fin_obligation": "fin d’obligation"}
+    cols = 3
+    S = SVG(480, 180 * ((len(kinds) + cols - 1) // cols))
+    S.add(f'<rect x="0" y="0" width="{S.w}" height="{S.h}" fill="{PAPER}"/>')
+    for i, k in enumerate(kinds):
+        cx, cy = 80 + (i % cols) * 160, 66 + (i // cols) * 180
+        _sign_shape(S, cx, cy, k)
+        _slot(S, cx, cy + 86, str(i + 1), names[k], verso)
+    return str(S)
+
+
+def cedez_le_passage(params):
+    """AB3a without its optional plate (the Commons file prints « CÉDEZ LE PASSAGE », i.e. the answer)."""
+    S = SVG(300, 270)
+    S.add(f'<path d="M20,22 L280,22 L150,248 Z" fill="{SIGN_RED}" stroke="#9a9a9a" stroke-width="2" stroke-linejoin="round"/>')
+    S.add(f'<path d="M58,44 L242,44 L150,204 Z" fill="{PAPER}"/>')
+    return str(S)
+
+
+def _sign_png(item, width):
+    """Data URI and height of one sign item rendered at `width` px (keeps the file's proportions).
+    item: {kind: sign, file: <Commons file>} (attributed automatically) or {gen: <generator>, params} for a drawn one."""
+    import base64
+    import re
+    import struct
+    if "gen" in item:
+        svg = render(item["gen"], item.get("params") or {})
+        w, h = (float(v) for v in re.search(r'width="([\d.]+)" height="([\d.]+)"', svg).groups())
+        return "data:image/svg+xml;base64," + base64.b64encode(svg.encode()).decode(), round(width * h / w)
+    uri = sign_data_uri(item["file"], width * 2)
+    png = base64.b64decode(uri.split(",", 1)[1])
+    w, h = struct.unpack(">II", png[16:24])
+    return uri, round(width * h / w)
+
+
+def support_panneaux(params):
+    """Several signs (and plates, or a drawn light) on one post, top to bottom, as seen when approaching."""
+    items = params["signs"]
+    parts, y = [], 16
+    for item in items:
+        w = item.get("w", params.get("width", 150))
+        uri, h = _sign_png(item, w)
+        parts.append((uri, w, h, y))
+        y += h + 6
+    H = y + 70
+    S = SVG(300, H)
+    S.add(f'<rect x="0" y="0" width="300" height="{H}" fill="{PAPER}"/>')
+    S.add(f'<rect x="144" y="20" width="12" height="{H - 20}" fill="#9a9a9a"/>')
+    for uri, w, h, top in parts:
+        S.add(f'<image href="{uri}" x="{150 - w / 2}" y="{top}" width="{w}" height="{h}"/>')
+    return str(S)
+
+
+def planche_signaux(params):
+    """Numbered sheet of signs; on the back each name appears under its number (nothing else moves)."""
+    verso = params.get("verso", False)
+    items = params["signs"]
+    cols = params.get("cols", len(items) if len(items) <= 3 else 2 if len(items) == 4 else 3)
+    cell_w = 480 // cols
+    sign_w = min(150, cell_w - 40)
+    cells = [(*_sign_png(item, item.get("w", sign_w)), item.get("w", sign_w), item["name"]) for item in items]
+    row_h = max(h for _, h, _, _ in cells) + 64
+    rows = (len(items) + cols - 1) // cols
+    S = SVG(480, rows * row_h)
+    S.add(f'<rect x="0" y="0" width="480" height="{rows * row_h}" fill="{PAPER}"/>')
+    for i, (uri, h, w, name) in enumerate(cells):
+        cx = cell_w * (i % cols) + cell_w / 2
+        top = (i // cols) * row_h + 8
+        S.add(f'<image href="{uri}" x="{cx - w / 2}" y="{top + (row_h - 64 - h) / 2}" width="{w}" height="{h}"/>')
+        _slot(S, cx, top + row_h - 38, str(i + 1), name, verso)
+    return str(S)
+
+
+# --------------------------------------------------------- lights, panels ---
+
+def feu_modal(params):
+    """Red main light with a small flashing amber head beside it: BUS (R15) or cycle + arrow (R19)."""
+    kind = params.get("kind", "bus")
+    S = SVG(320, 360)
+    S.add(f'<rect x="0" y="0" width="320" height="360" fill="{PAPER}"/>')
+    S.add('<rect x="50" y="20" width="100" height="300" rx="16" fill="#222" stroke="#000" stroke-width="2"/>')
+    _lamp(S, 100, 70, 36, RED, on=True)
+    _lamp(S, 100, 170, 36, AMBER, on=False)
+    _lamp(S, 100, 270, 36, GREEN, on=False)
+    S.add('<rect x="180" y="210" width="100" height="100" rx="14" fill="#222" stroke="#000" stroke-width="2"/>')
+    S.add('<circle cx="230" cy="260" r="38" fill="#111"/>')
+    if kind == "bus":
+        _text(S, 230, 270, "BUS", 26, AMBER, weight=800)
+    else:
+        S.add(_bike(222, 256, AMBER))
+        S.add(f'<path d="M244,244 h14 v-6 l10,10 l-10,10 v-6 h-14 z" fill="{AMBER}"/>')
+    _flash_rays(S, 230, 260, 44, AMBER)
+    return str(S)
+
+
+def feu_sur_panneau(params):
+    """Flashing amber light fixed above a warning sign (R1): it reinforces the sign's warning."""
+    S = SVG(260, 330)
+    S.add(f'<rect x="0" y="0" width="260" height="330" fill="{PAPER}"/>')
+    S.add('<rect x="124" y="120" width="12" height="210" fill="#9a9a9a"/>')
+    S.add('<rect x="95" y="14" width="70" height="70" rx="12" fill="#222"/>')
+    _lamp(S, 130, 49, 24, AMBER, on=True)
+    _flash_rays(S, 130, 49, 26, AMBER)
+    uri = sign_data_uri(params["sign"]["file"], 300)
+    S.add(f'<image href="{uri}" x="55" y="92" width="150" height="150"/>')
+    return str(S)
+
+
+def pmv(params):
+    """Variable-message panel over a motorway lane showing a speed limit (red ring, lit figures)."""
+    S = SVG(420, 260)
+    S.add(f'<rect x="0" y="0" width="420" height="260" fill="{PAPER}"/>')
+    S.add('<rect x="10" y="20" width="400" height="16" fill="#8a8a8a"/>')
+    S.add('<rect x="110" y="36" width="200" height="200" rx="14" fill="#141414" stroke="#555" stroke-width="3"/>')
+    S.add(f'<circle cx="210" cy="136" r="78" fill="none" stroke="{RED}" stroke-width="16"/>')
+    _text(S, 210, 160, params.get("value", "90"), 68, "#f6f6f6", weight=800)
+    return str(S)
+
+
+def plaque_orange(params):
+    """Rear of a lorry carrying dangerous goods: orange plate (hazard number over UN number) and a hazard diamond."""
+    S = SVG(420, 300)
+    S.add(f'<rect x="0" y="0" width="420" height="300" fill="{PAPER}"/>')
+    S.add('<rect x="40" y="20" width="340" height="240" rx="8" fill="#c9ced1" stroke="#555" stroke-width="3"/>')
+    S.add('<rect x="40" y="250" width="340" height="30" fill="#333"/>')
+    for x in (70, 350):
+        S.add(f'<rect x="{x - 20}" y="232" width="40" height="18" rx="3" fill="{SIGN_RED}"/>')
+    S.add('<rect x="140" y="130" width="140" height="94" rx="4" fill="#f28c00" stroke="#111" stroke-width="5"/>')
+    S.add('<path d="M140,177 H280" stroke="#111" stroke-width="4"/>')
+    _text(S, 210, 167, params.get("danger", "33"), 34, "#111", weight=800)
+    _text(S, 210, 214, params.get("matiere", "1203"), 34, "#111", weight=800)
+    S.add(f'<path d="M320,40 l42,42 l-42,42 l-42,-42 z" fill="{SIGN_RED}" stroke="{PAPER}" stroke-width="3"/>')  # flammable
+    S.add(f'<path d="M320,58 c10,14 14,22 8,34 c-3,6 -13,8 -18,2 c-6,-8 -1,-18 4,-22 c0,6 2,10 6,10 c2,-8 -2,-16 0,-24 z" fill="{PAPER}"/>')
+    return str(S)
+
+
+# ------------------------------------------------------ vehicle & safety ---
+
+def medicaments_niveaux(params):
+    """The three medicine pictograms (arrêté of 8 August 2008) side by side, with their headline."""
+    S = SVG(480, 220)
+    S.add(f'<rect x="0" y="0" width="480" height="220" fill="{PAPER}"/>')
+    for i, (colour, text) in enumerate((("#f7d117", "Soyez prudent"), ("#f28c00", "Soyez très prudent"), ("#d8232a", "Ne pas conduire"))):
+        cx, level = 80 + i * 160, i + 1
+        S.add(f'<path d="M{cx},18 L{cx + 70},142 L{cx - 70},142 Z" fill="{colour}" stroke="#000" stroke-width="3" stroke-linejoin="round"/>')
+        S.add(f'<g transform="translate({cx},96) scale(.7)"><rect x="-38" y="-14" width="76" height="30" rx="8" fill="#000"/>'
+              f'<rect x="-24" y="-30" width="48" height="20" rx="6" fill="#000"/><circle cx="-22" cy="20" r="8" fill="#000"/>'
+              f'<circle cx="22" cy="20" r="8" fill="#000"/></g>')
+        _text(S, cx, 134, f"NIVEAU {level}", 13, "#000", weight=800)
+        _text(S, cx, 176, f"Niveau {level}", 17)
+        _text(S, cx, 202, text, 15, weight=400)
+    return str(S)
+
+
+def etiquettes_carburant(params):
+    """EN 16942 fuel labels: empty circle, square, diamond on the front; E10, B7, LPG and the fuel on the back."""
+    verso = params.get("verso", False)
+    S = SVG(480, 230)
+    S.add(f'<rect x="0" y="0" width="480" height="230" fill="{PAPER}"/>')
+    for cx, shape, code, name in ((80, "circle", "E10", "essence"), (240, "square", "B7", "gazole"), (400, "diamond", "LPG", "gaz (GPL)")):
+        if shape == "circle":
+            S.add(f'<circle cx="{cx}" cy="90" r="58" fill="{PAPER}" stroke="#111" stroke-width="8"/>')
+        elif shape == "square":
+            S.add(f'<rect x="{cx - 56}" y="34" width="112" height="112" fill="{PAPER}" stroke="#111" stroke-width="8"/>')
+        else:
+            S.add(f'<path d="M{cx},24 L{cx + 66},90 L{cx},156 L{cx - 66},90 Z" fill="{PAPER}" stroke="#111" stroke-width="8" stroke-linejoin="round"/>')
         if verso:
-            S.add(f'<text x="{cx}" y="{H + 64}" font-family="{FONT}" font-size="24" font-weight="700" text-anchor="middle" fill="#1c5fb8">{esc(limits[i])}</text>')
+            _text(S, cx, 104, code, 36, "#111", weight=800)
+        _slot(S, cx, 181, None, name, verso)
+    return str(S)
+
+
+def _alpine_symbol(cx, cy, s=1.0, colour=INK):
+    """Three-peak mountain with a snowflake (3PMSF), outline style as moulded on a sidewall."""
+    flake = "".join(f'<path d="M0,0 L0,-11" transform="rotate({a})"/>' for a in range(0, 360, 60))
+    return (f'<g transform="translate({cx},{cy}) scale({s})" fill="none" stroke="{colour}" stroke-width="3" stroke-linejoin="round">'
+            f'<path d="M-34,22 L-18,-6 L-8,8 L4,-22 L20,6 L26,-2 L36,22 Z"/>'
+            f'<g transform="translate(2,6)" stroke-width="2.5">{flake}</g></g>')
+
+
+def pneu_flanc(params):
+    """Strip of tyre sidewall with moulded markings. mode '3pmsf' (M+S and alpine symbol) or 'comparaison'
+    (1: M+S alone; 2: M+S and alpine symbol). On the back of '3pmsf', each marking is named in place."""
+    verso = params.get("verso", False)
+    mode = params.get("mode", "3pmsf")
+    rows = [(False, "M+S seul : ne suffit plus"), (True, "M+S et symbole alpin : pneu hiver")] if mode == "comparaison" \
+        else [(True, None)]
+    moulded = "#d0d0d0"
+    S = SVG(480, 170 * len(rows) + 10)
+    S.add(f'<rect x="0" y="0" width="480" height="{S.h}" fill="{PAPER}"/>')
+    for i, (alpine, caption) in enumerate(rows):
+        y = 10 + i * 170
+        S.add(f'<rect x="20" y="{y}" width="440" height="120" rx="60" fill="#2b2b2b"/>')
+        S.add(f'<path d="M60,{y + 18} H420 M60,{y + 102} H420" stroke="#3d3d3d" stroke-width="3"/>')
+        _text(S, 150 if alpine else 240, y + 74, "M+S", 36, moulded, weight=800)
+        if alpine:
+            S.add(_alpine_symbol(320, y + 58, 1.3, moulded))
+        if caption:
+            _text(S, 44, y + 72, str(i + 1), NUMBER_SIZE, MARK, weight=800)
+            _text(S, 240, y + 152, caption, LABEL_SIZE)       # an explanatory comparison: captions on both sides
+        elif verso:
+            _text(S, 150, y + 152, "M+S", LABEL_SIZE, ANSWER)
+            _text(S, 320, y + 152, "symbole alpin (3PMSF)", LABEL_SIZE, ANSWER)
+    return str(S)
+
+
+def pneu_usure(params):
+    """Tread seen from above with wear bars at the bottom of the main grooves, and a groove in section."""
+    S = SVG(480, 300)
+    S.add(f'<rect x="0" y="0" width="480" height="300" fill="{PAPER}"/>')
+    S.add('<rect x="30" y="20" width="200" height="260" rx="14" fill="#2f2f2f"/>')
+    for x in (78, 130, 182):
+        S.add(f'<rect x="{x - 9}" y="20" width="18" height="260" fill="#151515"/>')
+        for y in (70, 190):
+            S.add(f'<rect x="{x - 9}" y="{y}" width="18" height="10" fill="#8a8a8a"/>')
+    S.add(f'<path d="M130,75 C180,70 230,60 258,60" stroke="{INK}" stroke-width="2.5" fill="none"/>')
+    _text(S, 262, 56, "témoin d’usure", 17, anchor="start")
+    _text(S, 262, 76, "au fond d’une rainure", 15, anchor="start", weight=400)
+    S.add('<path d="M270,150 H330 V240 H350 V214 H370 V240 H390 V150 H450 V270 H270 Z" fill="#2f2f2f"/>')
+    S.add(f'<path d="M345,150 H375 M345,214 H375 M360,150 V214" stroke="{INK}" stroke-width="2.5"/>')
+    _text(S, 360, 140, "rainure", 15)
+    _text(S, 360, 292, "limite légale : 1,6 mm de rainure", 15, weight=400)
+    return str(S)
+
+
+def angles_morts(params):
+    """Plan view: my car, what the mirrors show (VISIBLE cones) and the two blind spots (HIDDEN hatch), a motorbike in one.
+    The zones are indicative: they vary with the vehicle and the mirror setting."""
+    S = SVG(480, 420)
+    S.add(f'<rect x="0" y="0" width="480" height="420" fill="{ASPHALT}"/>')
+    for x in (160, 320):
+        S.add(f'<path d="M{x},0 V420" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 20"/>')
+    cx, cy = 240, 150
+    for pts in (f"{cx - 14},{cy + 40} {cx - 50},420 {cx + 50},420 {cx + 14},{cy + 40}",
+                f"{cx - 30},{cy - 10} {cx - 150},420 {cx - 70},420", f"{cx + 30},{cy - 10} {cx + 150},420 {cx + 70},420"):
+        S.add(f'<polygon points="{pts}" fill="{VISIBLE}" opacity="0.3"/>')
+    _hidden_pattern(S)
+    for side in (-1, 1):
+        x_in, x_out = cx + side * 40, cx + side * 150
+        S.add(f'<path d="M{x_in},{cy - 20} L{x_out},{cy + 10} L{x_out},{cy + 150} L{x_in},{cy + 70} Z" fill="url(#hidden)" stroke="{HIDDEN}" stroke-width="2"/>')
+    S.add(f'<g transform="translate({cx},{cy}) scale(1.4)">{ME}</g>')
+    S.add(f'<g transform="translate({cx - 95},{cy + 70}) scale(1.3)">{vehicle_sprite("moto", "rouge")}</g>')
+    _pill(S, 16, 30, "angles morts")
+    _pill(S, 464, 404, "vu dans les rétroviseurs", anchor="end")
+    return str(S)
+
+
+def ceinture(params):
+    """Occupant seen from the front: lap belt low on the pelvis bones, diagonal over the middle of the shoulder and the
+    sternum. Variants: 'enceinte' (lap belt under the belly, diagonal beside it), 'sous_bras' (what not to do, crossed)."""
+    variant = params.get("variante", "correcte")
+    S = SVG(360, 420)
+    S.add(f'<rect x="0" y="0" width="360" height="420" fill="{PAPER}"/>')
+    S.add('<rect x="70" y="60" width="220" height="340" rx="30" fill="#d7dde0"/>')                  # seat back
+    S.add('<rect x="130" y="20" width="100" height="60" rx="16" fill="#c5ccd0"/>')                  # head rest
+    S.add('<circle cx="180" cy="82" r="36" fill="#f2c8a0"/>')                                      # head
+    S.add('<path d="M110,140 Q180,112 250,140 L262,300 L98,300 Z" fill="#5c7a99"/>')               # torso
+    S.add('<path d="M110,140 L78,280 M250,140 L282,280" stroke="#f2c8a0" stroke-width="22" stroke-linecap="round"/>')
+    S.add('<path d="M98,300 H262 L256,352 H104 Z" fill="#3e556b"/>')                               # hips
+    if variant == "enceinte":
+        S.add('<ellipse cx="180" cy="262" rx="62" ry="46" fill="#6d8aa8"/>')
+    belt = WRONG if variant == "sous_bras" else INK
+    if variant == "sous_bras":
+        S.add(f'<path d="M262,210 L112,318" stroke="{belt}" stroke-width="14" stroke-linecap="round"/>')
+    else:
+        mid, low = ("150,190", "116,246") if variant == "enceinte" else ("170,215", "140,262")
+        S.add(f'<path d="M222,132 C205,175 {mid} {low} L112,318" fill="none" stroke="{belt}" stroke-width="14" stroke-linecap="round"/>')
+    lap_y = 322 if variant == "enceinte" else 314
+    S.add(f'<path d="M100,{lap_y} Q180,{lap_y + 10} 260,{lap_y}" fill="none" stroke="{belt}" stroke-width="14" stroke-linecap="round"/>')
+    S.add('<rect x="102" y="306" width="22" height="18" rx="3" fill="#9e9e9e"/>')                  # buckle
+    if variant == "sous_bras":
+        S.add(f'<path d="M60,40 L300,380 M300,40 L60,380" stroke="{WRONG}" stroke-width="8" opacity="0.8"/>')
     return str(S)
 
 
 REGISTRY.update({
+    "medicaments_niveaux": medicaments_niveaux, "etiquettes_carburant": etiquettes_carburant, "pneu_flanc": pneu_flanc,
+    "pneu_usure": pneu_usure, "angles_morts": angles_morts, "ceinture": ceinture,
     "feu_modal": feu_modal, "feu_sur_panneau": feu_sur_panneau, "pmv": pmv, "plaque_orange": plaque_orange, "types_routes": types_routes,
     "support_panneaux": support_panneaux, "planche_signaux": planche_signaux,
     "vocab_route": vocab_route, "formes_panneaux": formes_panneaux,

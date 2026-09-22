@@ -131,6 +131,9 @@
   - 'Pictogramme médicaments de niveau 1 (jaune) : {{c1::lire la notice}} avant de conduire.'
   - 'Pictogramme médicaments de niveau 2 (orange) : ne pas conduire sans {{c2::l’avis d’un professionnel de santé}}.'
   - 'Pictogramme médicaments de niveau 3 (rouge) : {{c3::ne pas conduire}} ; demander un avis médical pour reprendre.'
+  illustration:
+    gen: medicaments_niveaux
+    legende: Les trois pictogrammes imprimés sur les boîtes de médicaments.
 - id: c-alcool-seuils-sang
   theme: C
   sous_theme: deficiences

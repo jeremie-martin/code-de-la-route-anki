@@ -92,6 +92,9 @@
   theme: C
   sous_theme: vigilance
   source: "Codeclic, L'angle mort ; securite-routiere.gouv.fr, Les angles morts"
+  illustration:
+    gen: angles_morts
+    legende: 'La moto est dans un angle mort : aucun rétroviseur ne la montre.'
 - id: aff-c-pause-sans-signe
   contexte: Long trajet sur autoroute, je me sens en forme.
   affirmation: Tant que je ne ressens aucune fatigue, je peux enchaîner quatre heures d'autoroute sans pause.

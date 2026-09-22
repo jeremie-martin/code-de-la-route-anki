@@ -75,13 +75,16 @@
   sous_theme: pneus
   source: "Michelin, Mixage des pneus ; Ornikar, Même essieu"
 - id: aff-m-4-saisons-3pmsf
-  contexte: Zone soumise à la loi Montagne, période hivernale.
-  affirmation: Des pneus 4 saisons marqués du symbole alpin 3PMSF comptent comme des pneus hiver.
+  contexte: Zone soumise à la loi Montagne, période hivernale. Mes pneus 4 saisons portent ces marquages sur le flanc.
+  affirmation: Ils comptent comme des pneus hiver.
   verdict: vrai
-  pourquoi: 'Depuis le 1er novembre 2024, le pneu hiver doit porter le symbole alpin 3PMSF (montagne à trois pics et flocon), en plus du marquage M+S ; un pneu 4 saisons qui les porte est accepté. Le seul marquage M+S ne suffit plus.'
+  pourquoi: Depuis le 1er novembre 2024, le pneu hiver doit porter le symbole alpin (montagne à trois pics et flocon, dit 3PMSF) en plus du marquage M+S ; un pneu 4 saisons qui les porte est accepté. Le seul marquage M+S ne suffit plus.
   theme: M
   sous_theme: pneus
   source: service-public.fr F19459 ; Code de la route, art. D314-8
+  image:
+    gen: pneu_flanc
+    verso: true
 - id: aff-m-refroidissement-bouchon
   contexte: Le voyant rouge de température s'allume, de la vapeur sort du capot.
   affirmation: J'ouvre le bocal de liquide de refroidissement pour faire tomber la pression.

@@ -24,6 +24,11 @@
   theme: S
   sous_theme: passagers
   source: "securite-routiere.gouv.fr, La ceinture de sécurité"
+  illustration:
+    gen: ceinture
+    legende: Sangle basse sous le ventre, sur les hanches ; sangle haute entre les seins, à côté du ventre.
+    params:
+      variante: enceinte
 - id: s-airbag-distance
   question: Je suis très près du volant. Pourquoi reculer le siège tout en gardant les commandes accessibles ?
   reponse: Pour laisser à l'airbag l'espace de se déployer, environ 25 cm entre le sternum et le volant, tout en atteignant
