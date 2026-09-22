@@ -138,9 +138,10 @@ class LearningTests(unittest.TestCase):
         plan = card_plan(self.data, curriculum(self.data))
         positions = {ident: pos for pos, (_, ident, _) in enumerate(plan)}
         recon = {n['id']: n for n in self.data['reconnaissance']}
-        for note in self.data['questions']:
+        for note in self.data['faits'] + self.data['questions'] + self.data['affirmations']:
             if note.get('image_ref'):
-                self.assertEqual(note['image'], recon[note['image_ref']]['image'])
+                image = {k: v for k, v in note['image'].items() if k != 'signal'}
+                self.assertEqual(image, recon[note['image_ref']]['image'])
                 self.assertLess(positions[note['image_ref']], positions[note['id']])
 
     def test_declared_prerequisites_come_first(self):
