@@ -215,7 +215,7 @@
   image: {commons: "ISO 7000 - Ref-No 0083.svg", tint: "#43a047"}
   nom: Feux de croisement allumés (vert)
   signification: Les feux de croisement (codes) sont allumés. Ils doivent éclairer à au moins 30 m sans éblouir.
-  conduite: "La nuit dès que les feux de route éblouiraient ou que la route est éclairée ; par visibilité réduite (sauf en ville bien éclairée, où les feux de position suffisent) ; dans les tunnels ; conseillés de jour hors agglomération."
+  conduite: "La nuit dès que les feux de route éblouiraient ou que la route est éclairée ; par visibilité réduite (de jour en ville bien éclairée, les feux de position suffisent) ; dans les tunnels ; conseillés de jour hors agglomération."
   piege: "Faisceau incliné vers le bas = croisement ; faisceau horizontal (bleu) = route."
   theme: M
   sous_theme: voyants

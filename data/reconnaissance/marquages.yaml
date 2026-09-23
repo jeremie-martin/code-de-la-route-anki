@@ -161,7 +161,7 @@
   nom: Zébra (hachures blanches)
   signification: 'Zone hachurée blanche : surface non circulable (îlot peint, biseau, musoir).'
   conduite: Ne pas y circuler, ni s'y arrêter, ni s'en servir pour dépasser ou tourner.
-  complement: Elle est bordée d'une ligne continue, qui ne se franchit pas.
+  complement: Elle est normalement bordée d'une ligne continue, qui ne se franchit pas.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

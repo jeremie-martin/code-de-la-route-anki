@@ -1502,9 +1502,9 @@ Recherche Anki : `objectif::d-apprentissage`
 |---|---|---|---|
 | `d-aac-conditions` | consolidation | faits | Code de la route, art. R211-3 et R211-5 ; service-public.fr F2826 |
 | `d-permis-17-ans` | consolidation | faits | Décret n° 2023-1214 du 20 décembre 2023 ; Code de la route, art. R221-5 |
-| `d-accompagnateur` | consolidation | faits | Code de la route, R211-3 et R234-1 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2826 |
+| `d-accompagnateur` | consolidation | faits | Code de la route, R211-3 et R234-1 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2826 ; art. L234-1, L235-1 et L224-1 II |
 | `d-conduite-supervisee` | consolidation | questions | Code de la route, art. R211-5-1 ; service-public.fr F2827 |
-| `aff-d-aac-points-eleve` | consolidation | affirmations | Code de la route, L121-1 et L223-1 |
+| `aff-d-aac-points-eleve` | consolidation | affirmations | Code de la route, L121-1 et L223-1 ; art. L234-1, L235-1 et L224-1 II |
 
 ## d-sanctions : Distinguer infraction, sanction et mesure sur le permis
 

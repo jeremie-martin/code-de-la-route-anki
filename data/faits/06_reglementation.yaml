@@ -108,7 +108,8 @@
     soumis aux règles sur l'alcool et les stupéfiants (rétention possible de son permis, L224-1 II).
   theme: D
   sous_theme: permis
-  source: "Code de la route, R211-3 et R234-1 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2826"
+  source: Code de la route, R211-3 et R234-1 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2826
+    ; art. L234-1, L235-1 et L224-1 II
   rappels:
   - Pour accompagner un élève, il faut notamment le permis B depuis {{c1::5 ans}} sans interruption.
   - Pour accompagner un élève, il faut l’accord de {{c2::l’assureur}} du véhicule pour cet apprentissage.
@@ -164,8 +165,9 @@
   - c-alcool-seuils-sang
 - id: d-alcool-delit
   explication: 'Le seuil est inclus. Des peines de prison et d’amende sont encourues ; après rétention, le préfet doit suspendre
-    le permis. Le refus de vérification est aussi un délit. Depuis 2026, L237-1 regroupe l’ivresse manifeste et la consommation
-    manifeste, détournée ou excessive, d’une substance psychoactive figurant sur une liste fixée par décret : délit, 6 points.'
+    le permis. Le refus de vérification est aussi un délit. Depuis 2026, L237-1 réprime l’ivresse manifeste, l’usage manifeste
+    de stupéfiants et la consommation manifeste, détournée ou excessive, d’une substance psychoactive figurant sur une liste
+    fixée par décret (liste pas encore publiée en septembre 2026) : délit, 6 points.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L234-1, L234-2, L234-8, L237-1 (lois n° 2025-622 et n° 2026-798)

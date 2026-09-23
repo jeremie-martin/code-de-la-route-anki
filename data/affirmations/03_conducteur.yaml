@@ -117,9 +117,10 @@
 - id: aff-c-nuit-trafic-fluide
   affirmation: De nuit, le risque d'accident mortel est plus faible que de jour.
   verdict: faux
-  pourquoi: La nuit concentre environ 4 tués sur 10 (ONISR, bilan 2024). Visibilité réduite, somnolence, alcool et vitesse
-    plus élevée sur route dégagée s'y cumulent. J'adapte l'allure à la distance éclairée et j'interromps le trajet si je
-    ne suis plus en état de conduire.
+  pourquoi: 'La Sécurité routière le résume : « la nuit tue plus que le jour » ; le risque d’accident mortel y est nettement
+    supérieur au risque de jour, et la nuit concentre environ 4 tués sur 10 (ONISR, bilan 2024). Visibilité réduite, somnolence,
+    alcool et vitesse plus élevée sur route dégagée s''y cumulent. J''adapte l''allure à la distance éclairée et j''interromps
+    le trajet si je ne suis plus en état de conduire.'
   theme: C
   sous_theme: deficiences
   source: ONISR, bilan 2024 ; securite-routiere.gouv.fr, Conduire la nuit

@@ -263,9 +263,9 @@
   contexte: Je circule sur cette route et j’approche d’un carrefour, bonne visibilité.
   affirmation: Je peux y dépasser la voiture qui me précède.
   verdict: vrai
-  pourquoi: R414-11 interdit aux intersections le dépassement d’autre chose qu’un deux-roues, sauf pour celui qui y est
-    prioritaire (route prioritaire, ou STOP et cédez-le-passage pour les autres), aux carrefours à feux ou réglés par un
-    agent.
+  pourquoi: R414-11 interdit de dépasser aux intersections, sauf un deux-roues ; l’interdiction ne vaut pas pour celui qui
+    y est prioritaire (route prioritaire, ou STOP et cédez-le-passage pour les autres), ni aux carrefours à feux ou réglés
+    par un agent.
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-11
@@ -294,9 +294,9 @@
   contexte: Route à double sens, sans terre-plein central, comme sur ce plan.
   affirmation: Je dépasse par la voie de gauche de mon sens, pas par celles d'en face.
   verdict: vrai
-  pourquoi: 'Chaque sens dispose de deux voies : celle de gauche sert au dépassement, puis je me replace à droite. Les voies
-    d’en face sont interdites au dépassement (R414-8) ; ici, la ligne axiale est continue, comme toujours à quatre voies
-    hors agglomération : la franchir est interdit (R412-19 : 135 €, 3 points).'
+  pourquoi: 'Chaque sens dispose de deux voies : celle de gauche sert au dépassement, puis je me replace à droite. La voie
+    la plus à gauche de la chaussée m’est interdite pour dépasser (R414-8) ; ici, la ligne axiale est continue, comme c’est
+    la règle à quatre voies en rase campagne : la franchir est interdit (R412-19 : 135 €, 3 points).'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-19 et R414-8 ; IISR 7e partie, art. 114-2

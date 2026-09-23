@@ -4130,7 +4130,7 @@
     bifurcation ; variante Da50 avec affectation de voies.
   conduite_a_tenir: Se rabattre à droite progressivement pour sortir ; la sortie est signalée par un numéro (cartouche
     M10b).
-  implantation: 2 000 m, 1 000 m et 500 m avant l'échangeur.
+  implantation: Environ une minute de parcours avant la signalisation de la sortie (IISR 5e partie, art. 83-6).
   fin: ''
   forme_couleur: rectangle bleu, mention et distance
   confusions:
@@ -5561,7 +5561,7 @@
   conduite_a_tenir: ''
   implantation: Au-dessus des panneaux C107 et C207 seulement (IISR 1re partie, art. 9-1 B 10).
   fin: ''
-  forme_couleur: petit rectangle (blanc ou noir) avec le numéro de sortie
+  forme_couleur: petit rectangle (blanc ou noir) avec le numéro de l'échangeur
   confusions:
   - M10a
   - D50
@@ -6006,7 +6006,7 @@
     train n''approche avant de franchir. Sert aussi (avec M9a et feux rouges clignotants) pour les aires de danger
     aérien.'
   conduite_a_tenir: S'arrêter si nécessaire, regarder et écouter des deux côtés ; franchir sans s'arrêter sur les
-    voies uniquement si aucun train n'est visible ou audible ; si un AB4 (STOP) surmonte la croix, arrêt obligatoire.
+    voies uniquement si aucun train n'est visible ou audible ; si un AB4 (STOP) est placé sous la croix, arrêt obligatoire.
   implantation: 'À hauteur du passage à niveau (position) ; annoncé par A8 + balises J10. Variante G1b : croix plus
     étroite pour implantation difficile.'
   fin: ''

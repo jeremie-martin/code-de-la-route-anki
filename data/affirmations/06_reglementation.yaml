@@ -48,7 +48,7 @@
     ses propres manquements (alcool, stupéfiants) et doit rester apte à reprendre la conduite.
   theme: D
   sous_theme: permis
-  source: Code de la route, L121-1 et L223-1
+  source: Code de la route, L121-1 et L223-1 ; art. L234-1, L235-1 et L224-1 II
 - id: aff-d-clignotant-points
   affirmation: Tourner sans mettre le clignotant se solde par une amende de 35 €, sans retrait de points.
   verdict: faux

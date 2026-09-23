@@ -328,7 +328,7 @@
   check: {pair: [S, E, avant]}
   question: Un agent règle la circulation. D'après sa position et celle de ses bras, puis-je passer ?
   reponse: 'Oui : je le vois de profil, dans l''axe de ses bras tendus ; la rouge, qui le voit de face, doit s''arrêter.'
-  explication: "Bras tendus = barrière pour ceux qui voient l'agent de face ou de dos ; passage pour ceux qui le voient de profil. Bras levé vertical = tout le monde s'arrête. L'agent prime sur les feux et les panneaux."
+  explication: "Bras tendus = barrière pour ceux qui voient l'agent de face ou de dos ; passage pour ceux qui le voient de profil. Bras levé vertical = arrêt pour tous, sauf ceux déjà engagés ou qui ne peuvent plus s'arrêter sans danger. L'agent prime sur les feux et les panneaux."
   theme: L
   sous_theme: agents
   source: "Code de la route, art. R411-28"

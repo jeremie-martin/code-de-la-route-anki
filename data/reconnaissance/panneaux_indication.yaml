@@ -202,7 +202,7 @@
   nom: Rappel des limitations de vitesse sur autoroute
   signification: 'Rappel des limites de vitesse sur autoroute : 130 km/h par temps sec et 110 km/h par temps de pluie ; sur les autoroutes limitées à 110, 100 par temps de pluie.'
   conduite: 'Réduire à 110 sur autoroute dès qu’il pleut ou qu’il y a d’autres précipitations (repère pratique : essuie-glaces en marche).'
-  complement: 'Jeune conducteur (permis probatoire) : 110 sur autoroute, 100 sur route à chaussées séparées, 80 sur route.'
+  complement: 'Jeune conducteur (permis probatoire) : 110 sur autoroute normalement à 130, 100 sur les autres autoroutes et les routes à chaussées séparées, 80 ailleurs.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

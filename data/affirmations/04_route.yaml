@@ -263,8 +263,9 @@
 - id: aff-r-tunnel-demi-tour
   affirmation: Si un bouchon se forme dans le tunnel, je peux faire demi-tour pour ressortir.
   verdict: faux
-  pourquoi: Demi-tour et marche arrière sont interdits en tunnel. On s'arrête en gardant la distance affichée, moteur
-    coupé, radio allumée ; si une évacuation est nécessaire, elle se fait à pied par les issues de secours.
+  pourquoi: Demi-tour et marche arrière sont interdits dans un tunnel signalé (panneau tunnel). On s'arrête en gardant la
+    distance affichée, moteur coupé, radio allumée ; si une évacuation est nécessaire, elle se fait à pied par les issues
+    de secours.
   theme: R
   sous_theme: tunnels
   source: CETU, Conduire en tunnel ; IISR (panneau C111, règles de circulation en tunnel)

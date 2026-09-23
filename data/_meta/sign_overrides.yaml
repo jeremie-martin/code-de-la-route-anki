@@ -176,7 +176,7 @@ marq-passage-cyclistes:
 marq-zebra:
   signification: 'Zone hachurée blanche : surface non circulable (îlot peint, biseau, musoir).'
   conduite: Ne pas y circuler, ni s'y arrêter, ni s'en servir pour dépasser ou tourner.
-  complement: Elle est bordée d'une ligne continue, qui ne se franchit pas.
+  complement: Elle est normalement bordée d'une ligne continue, qui ne se franchit pas.
 marq-ligne-rive:
   signification: 'Ligne discontinue au bord de la chaussée : elle sépare la chaussée de l’accotement.'
   conduite: Rester à gauche de la ligne ; on peut la franchir pour s'arrêter sur l'accotement ou entrer dans une propriété.
@@ -587,8 +587,7 @@ m9z:
     »…'
   complement: « RAPPEL » sous un panneau de vitesse confirme que la limitation continue, notamment après une intersection.
 m10b:
-  complement: Cartouche placé AU-DESSUS du panneau qu'il complète (exception parmi les panonceaux) ; il ne s'emploie qu'avec
-    les panneaux d'entrée d'autoroute ou de route à accès réglementé.
+  complement: Cartouche placé AU-DESSUS du panneau qu'il complète, alors que les panonceaux se placent d'ordinaire dessous.
   conduite: 'Je repère ce numéro : il situe mon point d''entrée sur l''itinéraire.'
   signification: 'Cartouche placé au-dessus du panneau d''entrée d''autoroute (ou de route à accès réglementé) : numéro
     de l''échangeur par lequel j''entre.'
@@ -864,10 +863,12 @@ c24c:
   conduite: 'Si je tourne à droite, je me prépare à ce que le pictogramme annonce (ici, un passage à niveau : ralentir,
     être prêt à m’arrêter).'
 c25b:
-  conduite: "Réduire à 110 sur autoroute dès qu’il pleut ou qu’il y a d’autres précipitations (repère pratique : essuie-glaces
-    en marche)."
-  complement: 'Jeune conducteur (permis probatoire) : 110 sur autoroute, 100 sur route à chaussées séparées, 80 sur route.'
-  signification: 'Rappel des limites de vitesse sur autoroute : 130 km/h par temps sec et 110 km/h par temps de pluie ; sur les autoroutes limitées à 110, 100 par temps de pluie.'
+  conduite: 'Réduire à 110 sur autoroute dès qu’il pleut ou qu’il y a d’autres précipitations (repère pratique : essuie-glaces
+    en marche).'
+  complement: 'Jeune conducteur (permis probatoire) : 110 sur autoroute normalement à 130, 100 sur les autres autoroutes
+    et les routes à chaussées séparées, 80 ailleurs.'
+  signification: 'Rappel des limites de vitesse sur autoroute : 130 km/h par temps sec et 110 km/h par temps de pluie ;
+    sur les autoroutes limitées à 110, 100 par temps de pluie.'
 c26a:
   complement: Damier rouge et blanc au sol à l’entrée.
 c29a:

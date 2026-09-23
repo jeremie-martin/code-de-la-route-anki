@@ -279,7 +279,7 @@
     commons: France road sign M10b.svg
   nom: 'Cartouche : numéro d''échangeur'
   signification: 'Cartouche placé au-dessus du panneau d''entrée d''autoroute (ou de route à accès réglementé) : numéro de l''échangeur par lequel j''entre.'
-  complement: Cartouche placé AU-DESSUS du panneau qu'il complète (exception parmi les panonceaux) ; il ne s'emploie qu'avec les panneaux d'entrée d'autoroute ou de route à accès réglementé.
+  complement: Cartouche placé AU-DESSUS du panneau qu'il complète, alors que les panonceaux se placent d'ordinaire dessous.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

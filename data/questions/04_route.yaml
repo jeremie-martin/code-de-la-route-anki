@@ -64,8 +64,8 @@
   source: "Ornikar, L'aquaplaning ; securite-routiere.gouv.fr, Conduire sous la pluie"
 - id: r-brouillard-feux
   question: Par brouillard, quels feux dois-je utiliser ?
-  reponse: Les feux de croisement (jamais les feux de route, qui se réfléchissent sur le brouillard), complétés au besoin
-    des feux de brouillard avant et arrière.
+  reponse: Les feux de croisement ou les feux de brouillard avant (jamais les feux de route, qui se réfléchissent sur le
+    brouillard), complétés au besoin des feux de brouillard arrière.
   explication: 'Les feux de brouillard arrière s''éteignent dès que la visibilité redevient correcte : ils éblouissent ceux
     qui suivent. À l''arrêt dans le brouillard, feux de position.'
   theme: R

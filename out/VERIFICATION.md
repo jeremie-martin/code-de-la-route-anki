@@ -7,6 +7,6 @@ Import réel en collection temporaire avec la bibliothèque Anki 26.9.2.
 - réimport de la même édition : aucun doublon ; historique et planification conservés
 - mise à jour depuis SHA-256 `3f1b7aaa7225d26e2ae2d44dae8dff53674c2d2d615349084d9e307a115f959e` : identités des notes/cartes conservées, aucun doublon ; historique et planification du témoin conservés ; notes retirées depuis, restées dans la collection : aff-r-autoroute-trouee-terre-plein, conf-b6a2-b6a3
 
-SHA-256 du paquet vérifié : `28c817d01743746f3b0505de9dd946e56493cf1f9b52a648e7bde6edd9be7479`
+SHA-256 du paquet vérifié : `9f3c7e8ae741eeec20111b954ede1e4061ceb1d80a25f03ba84856d04b641e99`
 
 Ces contrôles ne valident ni la justesse de chaque phrase ni la réussite à l’examen. Voir aussi [le rendu navigateur](RENDU.md).

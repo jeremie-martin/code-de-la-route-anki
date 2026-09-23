@@ -51,7 +51,7 @@
   image_ref: b52
   comparaisons:
   - ref: b54
-    legende: 'Aire piétonne : seuls les véhicules de desserte et les cycles, au pas.'
+    legende: 'Aire piétonne : véhicules de desserte, cycles et trottinettes électriques seulement, au pas.'
 - id: u-enfants-sortie-ecole
   question: Ce car est arrêté devant moi. Que fais-je ?
   reponse: 'Je réduis fortement ma vitesse, prêt à m’arrêter : des enfants peuvent surgir devant ou derrière le car ; je ne
