@@ -40,7 +40,7 @@
     commons: France road sign C8.svg
   nom: Emplacement d'arrêt d'urgence
   signification: Indique un emplacement (refuge) où l'arrêt d'urgence est possible sur une route sans bande d'arrêt d'urgence (autoroute, route à chaussées séparées, tunnel).
-  conduite: Je n’y stationne qu’en cas de panne ou d’urgence ; les panonceaux peuvent signaler un poste d’appel ou un extincteur.
+  conduite: Je ne m’y arrête qu’en cas de panne ou d’urgence ; les panonceaux peuvent signaler un poste d’appel ou un extincteur.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -356,7 +356,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  complement: 'La vitesse redevient celle du type de route : 80 km/h sur une chaussée unique, 110 si les chaussées restent séparées par un terre-plein central, sauf autre limitation signalée.'
+  complement: 'La vitesse redevient celle du type de route : 80 km/h sur une chaussée unique (90 sur les sections signalées), 110 si les chaussées restent séparées par un terre-plein central, sauf autre limitation signalée.'
 - id: c111
   type: panneau
   code: C111

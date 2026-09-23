@@ -272,8 +272,9 @@
   image:
     commons: France road sign A18.svg
   nom: Circulation dans les deux sens
-  signification: Annonce qu'après une section à sens unique ou à chaussées séparées, la circulation redevient bidirectionnelle sur la même chaussée.
+  signification: Marque le début d’une section où, après un sens unique ou des chaussées séparées, la circulation redevient à double sens sur la même chaussée.
   conduite: 'Serrer à droite : la partie gauche de la chaussée n''est plus une voie dans mon sens.'
+  complement: 'Exception parmi les panneaux de danger : répété en amont, il porte un panonceau de distance.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

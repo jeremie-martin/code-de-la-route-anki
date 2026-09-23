@@ -51,7 +51,7 @@
     ou un autre long ensemble roulant à la même vitesse, je garde au moins {{c1::50 m}}.
   theme: C
   sous_theme: distances
-  source: "Code de la route, R412-12 ; CETU, sécurité des usagers en tunnel"
+  source: Code de la route, art. R412-12
 - id: c-autoroute-deux-traits
   texte: 'Sur autoroute, repère visuel usuel d''intervalle : laisser au moins {{c1::2 traits}} complets de la ligne de rive
     de la bande d''arrêt d''urgence, davantage selon les conditions.'

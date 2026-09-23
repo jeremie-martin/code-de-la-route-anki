@@ -1045,3 +1045,8 @@
   url: https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
   portee: 'PSC juillet 2026, fiche « Alerte et protection des populations » (p. 8–9) : signal en trois cycles de 1 min 41 espacés de 5 s, fin d’alerte par un son continu de 30 s, essai sur un seul cycle le premier mercredi du mois à midi ; FR-Alert ; réflexes : se mettre en sécurité (bâtiment le plus proche), ne pas chercher les enfants à l’école, s’informer, ne téléphoner qu’en urgence vitale, suivre les consignes. Préfecture du Haut-Rhin : rester dans un véhicule est à éviter. Exemple officiel Q11 (Sécurité routière, 2023, p. 7) : photo revue, le motard suit la voiture, masqué ; bonne réponse « le conducteur de la voiture ».'
   notes: [a-alerte-populations, aff-c-pieton-detectable-motard]
+- id: ecart-net-2026-09-23
+  consulte_le: '2026-09-23'
+  url: https://equipementsdelaroute.cerema.fr/IMG/pdf/IISR_7ePARTIE_VC_20160215_cle217e65.pdf
+  portee: 'Relecture de l’écart net depuis la base vérifiée (69ece0b). IISR 7e partie art. 115-3 A : ligne d’annonce T3 avec flèches de rabattement sur les routes à deux voies hors milieu urbain ; en milieu urbain, sans flèches possible si les vitesses d’approche sont faibles ; avant une ligne continue de délimitation de voies, sans flèches. IISR 2e partie art. 25 A et E (registre A, a18) : le A18 est un panneau de position placé au début de la zone, répété en amont avec un panonceau de distance. R412-19 : chevauchement autorisé pour dépasser cycle, EDPM ou cyclomobile léger dans les conditions de R414-4.'
+  notes: [a18, marq-ligne-annonce, conf-annonce-dissuasion, marq-ligne-continue]

@@ -157,11 +157,11 @@
     params: {}
     legende: Servies au bar, ces doses apportent autant d’alcool pur l’une que l’autre.
 - id: aff-c-alcool-sous-seuil
-  affirmation: À 0,3 g/L, sous le seuil légal, mon attention et mes réflexes sont déjà diminués.
+  affirmation: À 0,3 g/L, sous le seuil général de 0,5 g/L, mon attention et mes réflexes sont déjà diminués.
   verdict: vrai
-  pourquoi: 'Le seuil légal n’est pas un seuil de sécurité : l’alcool peut altérer l’attention, le jugement
-    et les réflexes avant de le dépasser. En probatoire, le seuil interdit est déjà 0,2 g/L. Prévoir un retour
-    sans conduire après avoir bu.'
+  pourquoi: 'Le seuil légal n’est pas un seuil de sécurité : l’alcool peut altérer l’attention, le jugement et les réflexes
+    avant de le dépasser. En probatoire, le seuil interdit est déjà 0,2 g/L. Prévoir un retour sans conduire : désigner
+    un conducteur qui ne boit pas (« Sam »), et ne pas monter avec un conducteur qui a bu.'
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, L'alcool et la conduite ; En Voiture Simone, Alcool au volant"

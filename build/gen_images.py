@@ -198,21 +198,25 @@ def transversale(params):
 
 
 def passage(params):
-    """Pedestrian crossing (bandes), cyclist crossing (carrés), or 'zebra' hatched area."""
+    """Pedestrian crossing (bandes), cyclist crossing (narrow bands, drawn beside a pedestrian crossing so the width
+    and spacing compare, as at many junctions), or 'zebra' hatched area."""
     S = SVG(480, 300)
     S.add(f'<rect x="0" y="0" width="480" height="300" fill="{GRASS}"/>')
     kind = params.get("kind", "pieton")
     if kind in ("pieton", "cycliste"):
         S.add(f'<rect x="0" y="60" width="480" height="180" fill="{ASPHALT}"/>')
         S.add(f'<rect x="0" y="240" width="480" height="60" fill="#bdbdbd"/><rect x="0" y="0" width="480" height="60" fill="#bdbdbd"/>')
-        if kind == "pieton":  # bands parallel to the road axis, stacked across the carriageway
-            for y in range(68, 226, 22):
+        if kind == "pieton":  # bands parallel to the road axis, stacked across the carriageway (0.50 m, ~0.57 m apart)
+            for y in range(68, 226, 30):
                 S.add(f'<rect x="{200}" y="{y}" width="100" height="14" fill="{MARK}"/>')
         else:  # IISR 7, art. 118-1 C: bands parallel to the axis, half those of a zebra crossing, 0.40 m apart
-            for y in range(68, 230, 18):
-                S.add(f'<rect x="215" y="{y}" width="70" height="7" fill="{MARK}"/>')
-        _dashes_h(S, 150, 3, 10, x1=190)
-        _dashes_h(S, 150, 3, 10, x0=300)
+            for y in range(68, 226, 30):             # the pedestrian crossing beside it: 0.50 m bands, ~0.57 m apart
+                S.add(f'<rect x="150" y="{y}" width="80" height="14" fill="{MARK}"/>')
+            for y in range(68, 234, 18):             # 0.25 m bands, 0.40 m apart, across the whole carriageway
+                S.add(f'<rect x="262" y="{y}" width="60" height="7" fill="{MARK}"/>')
+        gap = (140, 332) if kind == "cycliste" else (190, 300)     # the axis line stops at the crossings
+        _dashes_h(S, 150, 3, 10, x1=gap[0])
+        _dashes_h(S, 150, 3, 10, x0=gap[1])
         _me_car(S, 70, 197)
     elif kind == "zebra":
         S.add(f'<rect x="0" y="40" width="480" height="220" fill="{ASPHALT}"/>')

@@ -531,7 +531,8 @@
 - id: l-vocab-routes-lettres
   question: Que signifient les lettres A, N, D et C (ou M) devant un numéro de route ?
   reponse: A = autoroute ; N = route nationale ; D = route départementale ; C = voie communale (M = voie métropolitaine).
-  explication: 'Couleur du cartouche : rouge pour A et N, jaune pour D, blanc pour C.'
+  explication: 'Couleur du cartouche : rouge pour A et N, jaune pour D, blanc pour C. Le cartouche identifie la route ;
+    il ne donne aucune priorité.'
   theme: L
   sous_theme: signalisation
   source: Code de la route, art. L110-3 et s. ; IISR 5e partie (cartouches E42-E44)

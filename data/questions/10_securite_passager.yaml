@@ -47,10 +47,10 @@
   sous_theme: passagers
   source: Code de la route, art. R412-6 ; securite-routiere.gouv.fr
 - id: s-surnombre
-  question: Où lire le nombre maximal de personnes que ma voiture peut transporter ?
-  reponse: 'Sur le certificat d’immatriculation, rubrique S.1 : nombre de places assises, conducteur compris.'
-  explication: Une personne par place, un enfant compte pour une place. Le surnombre est une contravention de 4e classe
-    et coûte 3 points au conducteur (R412-1-1).
+  question: Combien de personnes, conducteur compris, peuvent monter dans ma voiture ?
+  reponse: 'Autant que de places assises, conducteur compris : c’est le nombre inscrit sur la carte grise (rubrique S.1)
+    ; un enfant compte pour une place.'
+  explication: Le surnombre est une contravention de 4e classe et coûte 3 points au conducteur (R412-1-1).
   theme: S
   sous_theme: passagers
   source: Code de la route, art. R412-1-1 ; service-public.fr, Certificat d’immatriculation (rubrique S.1) ; Stych, Installation

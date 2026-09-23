@@ -31,10 +31,10 @@
   source: "securite-routiere.gouv.fr, La ceinture de sécurité"
 - id: aff-p-siege-verrouille
   contexte: À l’arrêt, j’ai avancé mon siège à réglage manuel et relâché sa poignée.
-  affirmation: Poignée relâchée, le siège est bloqué en position.
-  verdict: faux
-  pourquoi: 'Je vérifie d’abord que le siège reste bloqué en position : mal verrouillé, il peut coulisser au freinage et
-    m’éloigner des pédales et du volant.'
+  affirmation: Avant de démarrer, je vérifie que le siège reste bloqué en position.
+  verdict: vrai
+  pourquoi: Un siège mal verrouillé peut coulisser au freinage et modifier mon accès aux pédales et au volant. La bonne
+    distance ne suffit pas ; le réglage doit rester en place.
   theme: P
   sous_theme: installation
   source: "Renault, sièges avant, https://www.user-manual.renault.com/fr/si%C3%A8ges-avant/sieges-avant-4"

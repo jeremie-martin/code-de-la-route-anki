@@ -450,8 +450,8 @@
 - code: A18
   categorie: danger
   nom: Circulation dans les deux sens
-  signification: Annonce qu'après une section à sens unique ou à chaussées séparées, la circulation se fait à nouveau
-    dans les deux sens sur la même chaussée.
+  signification: Marque le début d'une section où, après un sens unique ou des chaussées séparées, la circulation
+    se fait à nouveau dans les deux sens sur la même chaussée.
   conduite_a_tenir: Serrer à droite, ne plus utiliser la partie gauche de la chaussée comme une voie de circulation
     dans son sens.
   implantation: Implanté au début de la section à double sens (à hauteur du danger), et non 150 m avant comme les
@@ -2414,7 +2414,7 @@
   nom: Emplacement d'arrêt d'urgence
   signification: Indique un emplacement (refuge) où l'arrêt d'urgence est possible sur une route sans bande d'arrêt
     d'urgence (autoroute, route à chaussées séparées, tunnel).
-  conduite_a_tenir: N'y stationner qu'en cas de panne ou d'urgence ; panonceaux M9e/M9f signalent un poste d'appel
+  conduite_a_tenir: Ne s'y arrêter qu'en cas de panne ou d'urgence ; panonceaux M9e/M9f signalent un poste d'appel
     d'urgence et/ou un extincteur.
   implantation: En position.
   fin: ''
@@ -7257,8 +7257,8 @@
   - MARQ-ligne-continue
   importance: essentiel
   wikimedia_file: ''
-  notes: 'Piège : ligne d''annonce (T3 avec flèches de rabattement, annonce une ligne continue) vs ligne de dissuasion
-    (T3 plus large, sans flèches, sur une longue section). Les flèches de rabattement lèvent l''ambiguïté.'
+  notes: 'Piège : ligne d''annonce (T3 2u, flèches de rabattement sur route à deux voies hors agglomération ; sans
+    flèches possible en ville ou entre deux voies de même sens) vs ligne de dissuasion (même T3 2u, sans flèches).'
 - code: MARQ-ligne-mixte
   categorie: marquage
   nom: Ligne mixte (continue doublée d'une discontinue)
@@ -7394,15 +7394,16 @@
 - code: MARQ-passage-cyclistes
   categorie: marquage
   nom: Traversée cyclable (passage pour cyclistes)
-  signification: Traversée de chaussée réservée aux cyclistes matérialisée par des carrés (ou pointillés) blancs
-    de 50 cm de part et d'autre ; le cycliste qui l'emprunte reste soumis aux règles de priorité du carrefour (panneaux,
+  signification: Traversée de chaussée réservée aux cyclistes matérialisée par des bandes blanches parallèles à l'axe,
+    de largeur moitié de celles d'un passage piéton, espacées de 0,40 m (anciens marquages en carrés blancs) ; le cycliste qui l'emprunte reste soumis aux règles de priorité du carrefour (panneaux,
     feux), sauf si un cédez-le-passage ou un STOP impose aux voitures de céder.
   conduite_a_tenir: Contrôler la traversée avant de tourner ; céder le passage aux cyclistes si la signalisation
     le prévoit (souvent AB3a pour les voitures) ; sinon le cycliste n'est pas automatiquement prioritaire comme
     un piéton.
   implantation: En prolongement des pistes cyclables aux intersections.
   fin: ''
-  forme_couleur: carrés (pointillés) blancs de 50 cm de part et d'autre de la traversée
+  forme_couleur: bandes blanches parallèles à l'axe, de largeur moitié de celles d'un passage piéton, espacées de
+    0,40 m (anciens marquages en carrés blancs)
   confusions:
   - MARQ-passage-pietons
   - C20c

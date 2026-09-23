@@ -284,12 +284,12 @@
 - id: conf-annonce-dissuasion
   a: marq-ligne-annonce
   b: marq-ligne-dissuasion
-  difference: '**A, traits avec flèches de rabattement : une ligne continue arrive**, je me rabats et je ne commence plus
-    de dépassement. **B, mêmes traits sans flèches : dépassement déconseillé**, encore possible pour un véhicule lent si
-    la visibilité le permet.'
+  difference: 'Sur une route à deux voies hors agglomération : **A, traits avec flèches de rabattement : une ligne continue
+    arrive**, je me rabats et je ne commence plus de dépassement. **B, mêmes traits sans flèches : dépassement déconseillé**,
+    encore possible pour un véhicule lent si la visibilité le permet. En ville, une ligne d’annonce peut être sans flèches.'
   theme: L
   sous_theme: marquages
-  source: IISR, 7e partie, art. 113
+  source: IISR, 7e partie, art. 115-3 et 116
 - id: conf-t1-dissuasion
   a: marq-ligne-discontinue-t1
   b: marq-ligne-dissuasion

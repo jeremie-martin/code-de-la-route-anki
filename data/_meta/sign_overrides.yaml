@@ -130,15 +130,17 @@ marq-ligne-annonce:
   nom: Ligne d'annonce d'une ligne continue (T3) avec flèches de rabattement
   signification: 'Traits longs et intervalles courts, accompagnés de flèches obliques : une ligne continue commence bientôt,
     il faut se rabattre à droite et ne plus entreprendre de dépassement.'
-  piege: 'Même tracé que la ligne de dissuasion : ce sont les flèches de rabattement qui en font une ligne d’annonce.'
+  piege: Sur une route à deux voies hors agglomération, ce sont les flèches de rabattement qui la distinguent de la ligne
+    de dissuasion. En ville, ou entre deux voies de même sens, elle peut être sans flèches.
   conduite: Je termine ou j’abandonne mon dépassement et je me rabats avant le début de la ligne continue.
   comparaisons:
   - ref: marq-ligne-dissuasion
-    legende: 'Sans flèches : ligne de dissuasion.'
+    legende: 'Ligne de dissuasion : mêmes traits, sans flèches.'
 marq-ligne-continue:
   signification: 'Ligne blanche continue : interdiction de la franchir et de la chevaucher.'
   conduite: 'Je ne la franchis pas : ni pour dépasser, ni pour tourner ou faire demi-tour.'
-  complement: 'Seule exception : la chevaucher, sans la franchir, pour dépasser un cycle, un EDPM ou un cyclomobile léger.'
+  complement: 'Seule exception : la chevaucher, sans la franchir, pour dépasser un cycle, un EDPM ou un cyclomobile léger,
+    dans les conditions normales du dépassement.'
   piege: 'Franchir une ligne continue : 135 € et 3 points ; la chevaucher : 135 € et 1 point.'
 marq-ligne-discontinue-t1:
   signification: 'Ligne discontinue à grands intervalles : je peux la franchir pour dépasser ou changer de direction si les autres conditions le permettent.'
@@ -190,6 +192,7 @@ marq-passage-cyclistes:
   conduite: Je contrôle la traversée avant de tourner et respecte les priorités indiquées, notamment un éventuel cédez-le-passage.
   piege: En ligne droite, c’est la signalisation du carrefour qui fixe la priorité, pas le marquage. Mais en tournant, je
     cède aux cyclistes de la piste que je coupe.
+  question: Que signifie le marquage de droite, à côté du passage piéton ?
 marq-zebra:
   signification: 'Zone hachurée blanche : surface non circulable (îlot peint, biseau, musoir).'
   conduite: Ne pas y circuler, ni s'y arrêter, ni s'en servir pour dépasser ou tourner.
@@ -288,10 +291,10 @@ a16:
   complement: null
   piege: 'Le pourcentage est la pente, pas une vitesse : 10 % = 10 m de dénivelé pour 100 m.'
 a18:
-  signification: Annonce qu'après une section à sens unique ou à chaussées séparées, la circulation redevient bidirectionnelle
-    sur la même chaussée.
+  signification: Marque le début d’une section où, après un sens unique ou des chaussées séparées, la circulation redevient
+    à double sens sur la même chaussée.
   conduite: 'Serrer à droite : la partie gauche de la chaussée n''est plus une voie dans mon sens.'
-  complement: null
+  complement: 'Exception parmi les panneaux de danger : répété en amont, il porte un panonceau de distance.'
   piege: null
 a24:
   signification: 'Annonce une zone exposée à des vents latéraux violents : pont, viaduc, plaine, sortie de tunnel.'
@@ -884,7 +887,7 @@ c4a:
   complement: Carré bleu = indication (conseil) ; rond rouge = interdiction (maximum) ; rond bleu = obligation (minimum).
 c8:
   complement: null
-  conduite: Je n’y stationne qu’en cas de panne ou d’urgence ; les panonceaux peuvent signaler un poste d’appel ou un extincteur.
+  conduite: Je ne m’y arrête qu’en cas de panne ou d’urgence ; les panonceaux peuvent signaler un poste d’appel ou un extincteur.
 c13a:
   complement: null
 c20c:
@@ -1075,8 +1078,8 @@ ak32:
 c108:
   signification: 'Fin de la route à accès réglementé : piétons, cycles et véhicules lents peuvent de nouveau s’y trouver,
     et des intersections reprennent.'
-  complement: 'La vitesse redevient celle du type de route : 80 km/h sur une chaussée unique, 110 si les chaussées restent
-    séparées par un terre-plein central, sauf autre limitation signalée.'
+  complement: 'La vitesse redevient celle du type de route : 80 km/h sur une chaussée unique (90 sur les sections signalées),
+    110 si les chaussées restent séparées par un terre-plein central, sauf autre limitation signalée.'
 ce2a:
   conduite: 'Sur autoroute, préférer les bornes d’appel au téléphone portable : elles localisent l’appel.'
 b11:

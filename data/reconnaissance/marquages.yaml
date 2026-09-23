@@ -8,7 +8,7 @@
   nom: Ligne continue (axiale ou séparative de voies)
   signification: 'Ligne blanche continue : interdiction de la franchir et de la chevaucher.'
   conduite: 'Je ne la franchis pas : ni pour dépasser, ni pour tourner ou faire demi-tour.'
-  complement: 'Seule exception : la chevaucher, sans la franchir, pour dépasser un cycle, un EDPM ou un cyclomobile léger.'
+  complement: 'Seule exception : la chevaucher, sans la franchir, pour dépasser un cycle, un EDPM ou un cyclomobile léger, dans les conditions normales du dépassement.'
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -53,13 +53,13 @@
   signification: 'Traits longs et intervalles courts, accompagnés de flèches obliques : une ligne continue commence bientôt, il faut se rabattre à droite et ne plus entreprendre de dépassement.'
   conduite: Je termine ou j’abandonne mon dépassement et je me rabats avant le début de la ligne continue.
   complement: Avant chaque ligne continue, sur une centaine de mètres.
-  piege: 'Même tracé que la ligne de dissuasion : ce sont les flèches de rabattement qui en font une ligne d’annonce.'
+  piege: Sur une route à deux voies hors agglomération, ce sont les flèches de rabattement qui la distinguent de la ligne de dissuasion. En ville, ou entre deux voies de même sens, elle peut être sans flèches.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: marq-ligne-dissuasion
-    legende: 'Sans flèches : ligne de dissuasion.'
+    legende: 'Ligne de dissuasion : mêmes traits, sans flèches.'
 - id: marq-ligne-mixte
   type: marquage
   image:
@@ -155,6 +155,7 @@
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  question: Que signifie le marquage de droite, à côté du passage piéton ?
 - id: marq-zebra
   type: marquage
   image:

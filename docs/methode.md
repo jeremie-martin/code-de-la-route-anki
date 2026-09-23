@@ -23,7 +23,10 @@ correction locale créait une incohérence ailleurs. La méthode ci-dessous a fa
 7. **Corriger par type, dans tout le deck, au plus juste** : une seule formulation partout où l’erreur
    apparaît ; chercher l’ancienne formulation dans `data/` ; garder les `id` (reformuler plutôt que supprimer).
 8. **Relecture finale des modifications** : une correction introduit souvent une nouvelle erreur ou laisse la
-   même ailleurs.
+   même ailleurs. Après plusieurs passes, relire aussi l’écart net depuis la dernière base vérifiée, note par
+   note (mieux, égal, moins bien, régression) : c’est là qu’apparaissent les faits justes perdus en route.
+   Retirer une phrase exige de montrer, par une recherche dans les cartes rendues, que le fait vit ailleurs ; un
+   doute « à vérifier » se tranche dans les registres de vérification avant de supprimer.
 9. **Contrôles automatiques, puis les yeux** : `--check`, tests, `verify --previous`, `render_check`, puis la
    lecture des cartes rendues sur téléphone, en clair et en sombre. Réussir les contrôles ne prouve ni le sens
    ni la lisibilité.

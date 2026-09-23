@@ -191,7 +191,7 @@
   source: "Code pénal, art. 221-18 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886"
 - id: d-sans-permis-sans-assurance
   explication: 'Le Fonds protège les victimes, pas le responsable : cette dette peut atteindre des montants considérables
-    et s’ajoute aux sanctions du délit de défaut d’assurance.'
+    et s’ajoute aux sanctions. Conduire sans assurance, comme sans le permis requis, est un délit.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L221-2 et L324-2 ; Code des assurances, art. L211-1 ; Fonds de garantie, Nos missions (https://www.fondsdegarantie.fr/nos-missions)
@@ -217,7 +217,8 @@
 - id: d-detecteur-radar
   texte: 'Entre un avertisseur de zones de danger (application d’aide à la conduite) et un détecteur de radars, seul {{c1::le
     détecteur (ou brouilleur) de radars}} est interdit : 5e classe, 6 points, confiscation de l’appareil.'
-  explication: La confiscation peut viser aussi le véhicule.
+  explication: Le simple fait de le détenir ou de le transporter, sans s’en servir, est déjà sanctionné. La confiscation
+    peut viser aussi le véhicule.
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R413-15
@@ -305,11 +306,12 @@
   rappels:
   - Le permis B autorise un véhicule dont le PTAC ne dépasse pas {{c1::3,5 t}}.
   - Le permis B autorise un véhicule conçu pour au plus {{c2::8 passagers}} en plus du conducteur.
-  explication: 'Soit 9 places au total. Au-delà : permis C1/C (poids) ou D1/D (personnes). Remorque : 750 kg de PTAC,
-    ou davantage si la somme des PTAC reste sous 3,5 t (B96 jusqu''à 4,25 t, puis le permis BE).'
+  explication: 'Soit 9 places au total. Au-delà : permis C1/C (poids) ou D1/D (personnes). Remorque : 750 kg de PTAC, ou
+    davantage si la somme des PTAC reste sous 3,5 t (B96 jusqu’à 4,25 t, puis le permis BE). Un permis obtenu sur boîte
+    automatique (code 78), hors restriction médicale, s’étend à la boîte manuelle après une formation d’au moins 7 heures.'
   theme: D
   sous_theme: permis
-  source: Code de la route, art. R221-4 (catégorie B)
+  source: Code de la route, art. R221-4 (catégorie B) ; service-public.fr F2828 (code 78, formation de 7 heures)
 - id: d-masses-definitions
   theme: D
   sous_theme: documents

@@ -46,7 +46,7 @@
     II). Un train peut en cacher un autre, et un train ne peut pas s’arrêter court.
   theme: R
   sous_theme: passages_a_niveau
-  source: Code de la route, art. R422-3 ; SNCF Réseau
+  source: Code de la route, art. R422-3
   image:
     gen: pn_plan
     params:

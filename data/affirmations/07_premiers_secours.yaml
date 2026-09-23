@@ -86,9 +86,9 @@
     seul ; je peux l’atteindre facilement.'
   affirmation: Je le sors moi-même de la voiture, sans attendre les secours.
   verdict: vrai
-  pourquoi: 'Danger réel, immédiat et non contrôlable (incendie), victime qui ne peut s’y soustraire seule : c’est le cas
-    du dégagement d’urgence, exception à la règle « ne pas déplacer un blessé ». Je l’éloigne vers un lieu sûr sans m’exposer
-    moi-même, puis j’alerte.'
+  pourquoi: 'Danger réel, immédiat et non contrôlable (incendie), victime qui ne peut s’y soustraire seule et facile à atteindre
+    : c’est le cas du dégagement d’urgence, exception à la règle « ne pas déplacer un blessé ». Je l’éloigne vers un lieu
+    sûr sans m’exposer moi-même, puis j’alerte.'
   theme: A
   sous_theme: proteger
   source: "Sécurité civile, PSC juillet 2026, Dégagement d’urgence"
@@ -98,8 +98,7 @@
   verdict: vrai
   pourquoi: 'C’est le DAE qui analyse le rythme et décide du choc : je l’allume dès qu’il arrive, sans retarder la réanimation.
     « Pas de choc conseillé » ne signifie pas que la victime est réanimée : je poursuis les compressions jusqu’à ce que
-    le DAE demande de les interrompre ou que les secours prennent le relais. Son usage est sûr et sans risque, même par
-    une personne peu ou pas formée.'
+    le DAE demande de les interrompre ou que les secours prennent le relais.'
   theme: A
   sous_theme: secourir
   source: "Sécurité civile, PSC juillet 2026, p. 26–34, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"

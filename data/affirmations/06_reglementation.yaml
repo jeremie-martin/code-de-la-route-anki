@@ -74,7 +74,9 @@
   affirmation: Je peux quand même recevoir une amende par courrier.
   verdict: vrai
   pourquoi: La vidéo-verbalisation constate sans interception notamment le téléphone tenu en main, le non-port de la ceinture,
-    le feu rouge, le STOP et la ligne continue. L’avis arrive par courrier au titulaire de la carte grise.
+    le franchissement d’une ligne continue, la circulation sur la bande d’arrêt d’urgence ou dans un couloir de bus, le
+    feu rouge, le STOP, les distances de sécurité ou l’engagement dans une intersection encombrée. L’avis arrive par courrier
+    au titulaire de la carte grise.
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L121-3 et R130-11 ; securite-routiere.gouv.fr, Contrôle automatisé

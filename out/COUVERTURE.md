@@ -385,7 +385,7 @@ Recherche Anki : `objectif::l-marquage`
 | `marq-sas-velo` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `marq-cvcb` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `conf-continue-dissuasion` | socle | confusions | Code de la route, R412-19 ; IISR, 7e partie |
-| `conf-annonce-dissuasion` | socle | confusions | IISR, 7e partie, art. 113 |
+| `conf-annonce-dissuasion` | socle | confusions | IISR, 7e partie, art. 115-3 et 116 |
 | `conf-t1-dissuasion` | consolidation | confusions | IISR 7e partie, art. 113 |
 | `conf-stop-cedez-lignes` | consolidation | confusions | IISR 7e partie |
 | `l-bandes-rugueuses` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
@@ -406,7 +406,7 @@ Recherche Anki : `objectif::l-vitesse`
 | `l-vitesse-hors-agglo` | socle | faits | Code de la route, art. R413-2 ; CGCT, art. L3221-4-1 (relèvement à 90 par le département) |
 | `l-vitesse-separateur-autoroute` | socle | faits | Code de la route, art. R413-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-vitesse-pluie` | socle | faits | Code de la route, art. R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
-| `l-vitesse-visibilite-50` | socle | faits | Code de la route, art. R413-4 ; R412-12 ; R413-17, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
+| `l-vitesse-visibilite-50` | socle | faits | Code de la route, art. R413-4 et R413-17, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-vitesse-probatoire` | socle | faits | Code de la route, art. R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-vitesse-minimale-autoroute` | consolidation | faits | Code de la route, art. R413-19, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-vitesse-engins` | consolidation | faits | Code de la route, art. R311-1 |
@@ -518,7 +518,7 @@ Recherche Anki : `objectif::l-stationner`
 | `l-stationnement-categories` | consolidation | faits | Code de la route, art. R417-9 à R417-12 ; service-public.fr F34212 |
 | `l-stationnement-5m-passage` | consolidation | faits | Code de la route, art. R417-11 ; Code de la voirie routière, art. L118-5-1 |
 | `l-stationnement-alterne` | consolidation | faits | Code de la route, art. R417-2 |
-| `l-stationnement-cote` | socle | faits | Code de la route, art. R417-1, R417-4 et R416-12 |
+| `l-stationnement-cote` | socle | faits | Code de la route, art. R417-1 |
 | `l-zone-bleue` | consolidation | faits | Code de la route, art. R417-3 ; service-public.fr F34440 |
 | `l-feux-detresse-usage` | consolidation | faits | Code de la route, art. R416-18 et R416-19 |
 | `l-arret-vs-stationnement` | socle | questions | Code de la route, art. R110-2 |
@@ -557,7 +557,7 @@ Recherche Anki : `objectif::c-distances`
 | `c-distance-mouillee` | socle | faits | Sécurité routière, exemple public Q13 (2023) ; repère et limites du modèle |
 | `c-vitesse-double-freinage` | socle | faits | securite-routiere.gouv.fr, La vitesse et la conduite ; Ornikar, Énergie cinétique |
 | `c-intervalle-2s` | socle | faits | Code de la route, art. R412-12 ; Codes Rousseau, Calcul des distances |
-| `c-intervalle-pl-tunnel` | consolidation | faits | Code de la route, R412-12 ; CETU, sécurité des usagers en tunnel |
+| `c-intervalle-pl-tunnel` | consolidation | faits | Code de la route, art. R412-12 |
 | `c-autoroute-deux-traits` | socle | faits | securite-routiere.gouv.fr, La vitesse et la conduite ; IISR 7e partie, art. 113-1 |
 | `c-energie-choc` | socle | faits | Relation physique : énergie cinétique ½mv², hauteur équivalente v²/2g |
 | `c-suiveur-trop-pres` | socle | questions | Code de la route, art. R412-12 ; securite-routiere.gouv.fr, Les distances de sécurité |
@@ -814,7 +814,7 @@ Recherche Anki : `objectif::r-tunnel-rail`
 | `r-tram-traversee-degager` | consolidation | questions | Code de la route, art. R422-3 et R417-11 ; coursdecode.com, Les tramways |
 | `aff-r-pn-150m` | consolidation | affirmations | IISR, 2e partie, art. 25 ; Sécurité routière, Exemples de nouvelles questions (Q19, variante en agglomération) |
 | `aff-r-pn-feux-rouges-possibles` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR, 4e partie (signal G2) |
-| `aff-r-pn-barriere-contourner` | consolidation | affirmations | Code de la route, art. R422-3 ; SNCF Réseau |
+| `aff-r-pn-barriere-contourner` | consolidation | affirmations | Code de la route, art. R422-3 |
 | `aff-r-tunnel-demi-tour` | consolidation | affirmations | CETU, Conduire en tunnel ; IISR (panneau C111, règles de circulation en tunnel) |
 | `aff-r-tram-station-pieton` | consolidation | affirmations | Code de la route, art. R414-13 ; coursdecode.com, Les tramways |
 
@@ -1298,7 +1298,7 @@ Recherche Anki : `objectif::d-permis`
 | `d-grand-exces` | socle | faits | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F19460 |
 | `d-alcool-contravention` | socle | faits | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2881 |
 | `d-permis-am-14-ans` | consolidation | faits | Code de la route, art. R211-1 III et R211-2 ; securite-routiere.gouv.fr, Permis cyclomoteur – catégorie AM |
-| `d-permis-b-perimetre` | socle | faits | Code de la route, art. R221-4 (catégorie B) |
+| `d-permis-b-perimetre` | socle | faits | Code de la route, art. R221-4 (catégorie B) ; service-public.fr F2828 (code 78, formation de 7 heures) |
 | `d-permis-b-125` | consolidation | questions | Code de la route, art. R221-8 ; arrêté du 17 décembre 2010 modifié ; service-public F2828 |
 | `d-invalidation-repasser` | consolidation | questions | Service Public, invalidation, étapes 3 à 8 : https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 ; R224-20 |
 | `d-suspension-invalidation` | socle | questions | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F14836 ; https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 |
