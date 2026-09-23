@@ -1,67 +1,55 @@
 # Deck Anki du Code de la route 2026
 
 Un deck Anki en français pour **réussir l’épreuve théorique générale** (ETG, permis B) telle qu’elle existe
-en 2026, et comprendre les règles assez bien pour les appliquer à des situations nouvelles.
-Il est généré à partir d’une bibliothèque de connaissances écrite à la main (`data/`) par le code de `build/`.
+en 2026, et comprendre les règles assez bien pour les appliquer à des situations nouvelles. Il est généré à
+partir d’une bibliothèque de connaissances écrite à la main (`data/`) par le code de `build/`.
 
-**[Télécharger le paquet](out/Code-de-la-route-2026.apkg)**. Effectifs exacts dans [STATS](out/STATS.md).
-Le deck relie les signaux, les règles, les décisions et des scénarios dessinés à
-49 objectifs d’apprentissage. Il ne contient pas de photographies d’examen.
+**[Télécharger le paquet](out/Code-de-la-route-2026.apkg)** (effectifs dans [STATS](out/STATS.md)). Le deck
+relie signaux, règles, décisions et scénarios dessinés à 49 objectifs d’apprentissage ; chaque note a été
+vérifiée contre une source primaire (registre dans [`docs/research/verification-2026-09`](docs/research/verification-2026-09/README.md)).
+Il ne contient pas de photographies d’examen.
 
-## Commencer
+## Étudier
 
-1. Au premier import dans Anki (version récente), cocher **« Importer les préréglages de deck »** : c’est
-   ce préréglage qui fait arriver les nouvelles cartes dans l’ordre calculé (position la plus basse) et qui
-   enfouit les cartes sœurs. Sans lui, l’ordre dépend de vos options existantes.
-   Vérification : Options du deck → Ordre d’affichage → collecte des nouvelles cartes par **position
-   croissante**, tri dans **l’ordre de collecte**.
-2. Étudier le deck parent **Code de la route 2026**. L’ordre d’introduction entrelace les thèmes ; les
-   cartes du socle précèdent la consolidation (variantes, exceptions, applications). Le nombre
-   de nouvelles cartes par jour est un réglage personnel.
-3. L’écran de chaque sous-deck affiche le **repère** du thème (principe, exemple, transfert) ; les mêmes
-   textes sont réunis dans [REPERES](out/REPERES.md), pour retrouver le principe derrière une carte.
-4. Faire en parallèle, dès le début, des séries de questions sur **photos et vidéos** puis des examens
-   blancs chronométrés : Anki entraîne le savoir, les distinctions et le raisonnement ; la perception d’une
-   scène nouvelle et la décision sous contrainte de temps s’entraînent sur des scènes nouvelles.
+1. Au premier import dans Anki (version récente), cocher **« Importer les préréglages de deck »** : ce
+   préréglage fait arriver les nouvelles cartes dans l’ordre calculé et enfouit les cartes sœurs. Vérifier
+   dans Options du deck → Ordre d’affichage : collecte des nouvelles cartes par **position croissante**, tri
+   dans **l’ordre de collecte**. Le préréglage propose 20 nouvelles cartes par jour et une rétention de 90 % ;
+   FSRS (réglage global d’Anki), les limites et la rétention s’ajustent selon chacun
+   ([guide Anki](https://docs.ankiweb.net/deck-options.html#fsrs)).
+2. Étudier le deck parent **Code de la route 2026**. Les thèmes sont entrelacés ; le socle précède la
+   consolidation (variantes, exceptions, applications). L’écran de chaque sous-deck affiche le **repère** du
+   thème (principe, exemple, transfert), réunis aussi dans [REPERES](out/REPERES.md).
+3. Faire en parallèle, dès le début, des séries sur **photos et vidéos** puis des examens blancs chronométrés :
+   Anki entraîne le savoir, les distinctions et le raisonnement ; la perception d’une scène nouvelle et la
+   décision sous contrainte de temps s’entraînent sur des scènes nouvelles. L’ETG demande 35 bonnes réponses
+   sur 40 ([conditions officielles](https://www.service-public.gouv.fr/particuliers/vosdroits/F33694)).
 
-L’ETG demande 35 bonnes réponses sur 40 ([conditions officielles](https://www.service-public.gouv.fr/particuliers/vosdroits/F33694)).
-Réussir les cartes ne prouve pas l’aptitude à l’examen ; des séries nouvelles réussies régulièrement en donnent
-une meilleure idée.
-
-## Options Anki
-
-FSRS s’active dans les options d’Anki pour toute la collection, pas par l’import du paquet.
-Le préréglage fourni fixe l’ordre d’introduction et enfouit les cartes sœurs ; les limites quotidiennes
-et la rétention souhaitée restent des choix personnels. Voir le [guide Anki](https://docs.ankiweb.net/deck-options.html#fsrs).
-Les positions des cartes nouvelles organisent leur introduction ; après les réponses, le planificateur
-calcule leurs échéances.
-
-Le dépôt permet de reconstruire une édition, mais ne garantit pas la migration d’une édition à l’autre
-si des notes changent de type ou sont supprimées. Le paquet est destiné ici à un premier import.
+**Mettre à jour** : réimporter une nouvelle édition du paquet (préréglages décochés) met les cartes à jour et
+garde la progression. Une note retirée d’une édition reste dans la collection sans être mise à jour ; les notes
+à supprimer sont nommées dans [VERIFICATION](out/VERIFICATION.md) (chercher `Id:…` dans le navigateur d’Anki).
 
 ## Répondre et s’évaluer
 
-Répondre **avant** de retourner la carte, avec ses propres mots ou à voix haute. Pas de récitation mot à mot :
+Répondre **avant** de retourner la carte, avec ses propres mots ou à voix haute :
 
 | Carte | Réponse attendue |
 |---|---|
 | Signal | Son sens utile et ce qu’il change pour moi ; son code n’est pas à réciter |
 | Comparaison A/B | La différence qui change la règle ou la conduite |
-| Trou | La valeur avec son unité, ou le terme demandé |
-| Question / scénario | La réponse demandée : décision justifiée, distinction ou calcul avec sa méthode |
+| Trou | La valeur avec son unité, le terme ou la décision demandés |
+| Question / scénario | Décision justifiée, distinction ou calcul avec sa méthode |
 | Vrai/faux | Le verdict **et** la raison ; si c’est faux, la règle exacte |
 
-**À revoir** si la réponse est fausse, devinée, ou si la raison manque ; **Difficile** si elle est correcte avec
-effort ; **Bon** pour un rappel correct ordinaire ; **Facile** si le rappel est immédiat et sans hésitation.
-Une réponse juste formulée autrement est juste. L’explication
-sous la réponse donne le mécanisme, la limite ou la distinction : elle se lit, elle ne se récite pas.
-Les comparaisons utiles montrent les autres signaux avec leur sens en légende. Le volet
-« Sources » contient la référence, le code technique et le nom officiel du signal ; ces codes ne sont pas à apprendre.
+**À revoir** si la réponse est fausse, devinée ou sans raison ; **Difficile** si elle est correcte avec effort ;
+**Bon** pour un rappel correct ordinaire ; **Facile** si le rappel est immédiat. Une réponse juste formulée
+autrement est juste. L’explication donne le mécanisme, la limite ou la distinction : elle se lit, elle ne se
+récite pas. Le volet « Sources » contient la référence et le code officiel du signal, qui ne sont pas à
+apprendre. Après plusieurs erreurs sur un même sujet, rechercher l’étiquette `objectif::…` dans Anki ; les
+objectifs et leurs notes sont dans [COUVERTURE](out/COUVERTURE.md). Une carte ambiguë ou fausse se corrige dans
+`data/`.
 
-Pour retrouver une difficulté par compétence, utiliser les étiquettes `objectif::…` et
-[COUVERTURE](out/COUVERTURE.md). Une carte ambiguë se corrige dans `data/`.
-
-## Reconstruire
+## Reconstruire et maintenir
 
 ```bash
 uv venv .venv && uv pip install --python .venv/bin/python -r requirements.txt
@@ -71,16 +59,14 @@ python -m build.build              # médias, paquet, rapports dans out/
 python -m build.verify             # import réel et réimport dans une collection temporaire
 ```
 
-Le premier build télécharge les médias Commons (quelques minutes), ensuite tout est en cache. Les autres
-commandes (tests, captures de cartes, contrôle du rendu) sont dans la [maintenance](docs/maintenance.md).
-Les rapports [d’import](out/VERIFICATION.md) et [de rendu](out/RENDU.md) identifient le paquet contrôlé
-par son SHA-256. Ils ne constituent pas une validation juridique exhaustive ; la portée des consultations
-est dans le [registre des sources](data/_meta/source_checks.yaml).
-
 - [Conception](docs/conception.md) : ce que le deck optimise, les formes de cartes, les principes de rédaction.
-- [Maintenance](docs/maintenance.md) : structure des données, procédure de modification, contrôles.
-- [Sources](docs/sources.md) : références utilisées et registre des consultations.
-- [Comparaison avec le livre](docs/research/comparaison-livre-2025-2026.md) : apports retenus, divergences et limites.
+- [Méthode](docs/methode.md) : comment relire et corriger le deck sans tourner en rond.
+- [Maintenance](docs/maintenance.md) : données, dessins, contrôles, procédure, mises à jour.
+- [Sources](docs/sources.md) : références primaires et veille ; consultations datées dans
+  [`data/_meta/source_checks.yaml`](data/_meta/source_checks.yaml).
+
+Les rapports [d’import](out/VERIFICATION.md) et [de rendu](out/RENDU.md) identifient le paquet contrôlé par son
+empreinte SHA-256.
 
 ## Licences
 

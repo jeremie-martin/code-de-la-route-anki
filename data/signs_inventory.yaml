@@ -3,7 +3,8 @@
 # « Liste des signaux routiers … », « Liste des panonceaux … », « Feux et signaux lumineux routiers en France »,
 # « Signalisation routière horizontale en France »), qui citent l'Instruction interministérielle sur la
 # signalisation routière (IISR) et l'arrêté du 24 novembre 1967 modifié ; Légifrance (arrêté du 24 août 2020
-# modifié sur les voies réservées) ; Wikimedia Commons (noms de fichiers). Voir docs/research/signs-notes.md.
+# modifié sur les voies réservées) ; Wikimedia Commons (noms de fichiers). Vérification contre l'IISR et l'arrêté de
+# 1967 : docs/research/verification-2026-09 (groupe A) ; les corrections passent par data/_meta/sign_overrides.yaml.
 # Champs : code, categorie, nom, signification, conduite_a_tenir, implantation, fin, forme_couleur, confusions,
 # importance (essentiel | utile | rare), wikimedia_file (à vérifier par script), notes, variants (optionnel).
 # Catégories : danger | intersection_priorite | interdiction | obligation | fin_prescription | prescription_zonale (ajoutée :
