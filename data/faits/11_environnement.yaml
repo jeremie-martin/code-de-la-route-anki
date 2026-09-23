@@ -4,9 +4,8 @@
   sous_theme: pollution
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F33371"
   rappels:
-  - Pour une voiture diesel Euro 5 ou 6, la vignette est Crit’Air {{c1::2}}.
-  - Pour une voiture essence Euro 5 ou 6, la vignette est Crit’Air {{c2::1}}.
-  - Pour une voiture entièrement électrique ou à hydrogène, la vignette Crit’Air est {{c3::verte (classe électrique)}}.
+  - Pour une voiture Euro 5 ou 6, la vignette est Crit’Air {{c1::1}} en essence et Crit’Air {{c1::2}} en diesel.
+  - Pour une voiture entièrement électrique ou à hydrogène, la vignette Crit’Air est {{c2::verte (classe électrique)}}.
   illustration:
     gen: critair
     params:

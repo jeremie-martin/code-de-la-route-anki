@@ -784,15 +784,6 @@
     de s’appliquer.
   source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: marq-ligne-jaune-discontinue
-- id: l-visuel-b14-adaptation
-  theme: L
-  sous_theme: applications
-  question: Après ce panneau, des enfants jouent près du bord et pourraient surgir. La valeur affichée m’autorise-t-elle
-    à conserver cette vitesse ?
-  reponse: 'Non : c’est un plafond ; je ralentis davantage pour pouvoir réagir aux enfants.'
-  explication: Le maximum autorisé et l’allure adaptée sont deux décisions différentes.
-  source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-17"
-  image_ref: b14
 - id: l-visuel-fin-interdictions
   theme: L
   sous_theme: applications

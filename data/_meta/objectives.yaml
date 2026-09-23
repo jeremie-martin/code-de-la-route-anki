@@ -71,7 +71,6 @@
   - conf-ab6-ab7
   consolidation:
   - m7
-  - m9c
   - conf-ab3b-ab5
 - id: l-intersection
   theme: L
@@ -292,7 +291,6 @@
   - b6b3
   - b6b4
   - m4d2
-  - m4e
   - m6a
   - m6b
   - m6d
@@ -359,7 +357,6 @@
   - l-brouillard-zone30
   - aff-l-creneau-90
   - aff-l-vitesse-sous-limite
-  - l-visuel-b14-adaptation
   - l-c107-route-simple
   - l-c107-route-separee
   - l-precipitations-neige
@@ -395,7 +392,6 @@
   - c29b
   - c29a
   - l-ligne-continue-sanction
-  - l-depasse-serrer-droite
   - l-depassement-interdit-lieux
   - l-depassement-interdit-lieux-2
   - aff-l-surdepassement
@@ -542,6 +538,7 @@
   - c-passagers-pression
   - aff-c-jeunes-risque-double
   - c-routine-monotonie
+  - c-monotonie-autoroute
   - c-vitesse-fatigue
 - id: c-substances
   theme: C
@@ -652,6 +649,7 @@
   - r-autoroute-sortie
   - r-autoroute-panne
   - r-autoroute-panne-attendre
+  - r-contresens-signale
   - aff-r-autoroute-bouchon-detresse
   - aff-r-peage-reculer
   - aff-r-autoroute-cyclo
@@ -720,7 +718,6 @@
   - r-chantier-fleche-lumineuse
   - aff-r-chantier-sans-ouvriers
   consolidation:
-  - kd22
   - kd10
   - k8
   - k5a
@@ -1028,6 +1025,7 @@
   - aff-s-caravane-passager
   - s-remorque-seuil-750
   - d-masses-definitions
+  - s-surcharge-ptac
   consolidation:
   - s-remorque-masse-reelle
   - s-remorque-vitesses
@@ -1124,6 +1122,7 @@
   - d-documents-bord
   - d-controle-technique
   - d-assurance-garanties
+  - d-bonus-malus
   - d-equipements-obligatoires
   - d-ct-critique
   - aff-d-ct-defaillance-majeure
@@ -1219,7 +1218,6 @@
   - j7
   - j13
   - conf-c13a-c13c
-  - conf-e42-e43
   - conf-j1-j3
   - conf-j4-j5
   - l-jalonnement-destinataire
@@ -1291,7 +1289,6 @@
   consolidation:
   - d-ceinture-sanction
   - d-homicide-routier
-  - d-delit-fuite
   - d-sans-permis-sans-assurance
   - d-refus-obtemperer
   - d-autres-bareme-3-points

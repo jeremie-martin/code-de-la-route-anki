@@ -293,10 +293,10 @@
   sous_theme: depannage
   source: "Code de la route, art. R416-19 ; securite-routiere.gouv.fr, Véhicule en panne"
   illustration:
-    gen: triangle_distance
+    gen: panne_route
     params:
       label: ≈ 30 m
-    legende: Triangle environ 30 m en amont, si le poser ne m’expose pas.
+    legende: Voiture sur l’accotement, occupants à l’écart de la chaussée ; triangle en amont (distance non à l’échelle).
 - id: m-changer-roue-securite
   question: Que faut-il mettre en place avant de lever le véhicule pour changer une roue ?
   reponse: Sol plat et stable hors circulation, frein de stationnement serré et rapport engagé, feux de détresse et gilet,
@@ -352,12 +352,14 @@
 - id: m-pression-etiquette
   theme: M
   sous_theme: pneus
-  question: L’étiquette de ma voiture indique 2,2 bar à vide et 2,6 bar en charge. Je pars chargé et les pneus sont
-    froids. Quelle valeur choisir ?
-  reponse: 2,6 bar, la valeur prévue pour cette charge.
+  question: Voici l’étiquette de pression de ma voiture. Je pars en vacances, voiture chargée ; les pneus sont froids. Quelles
+    pressions dois-je régler ?
+  reponse: 'Celles de la ligne « pleine charge » : 2,6 bar à l’avant et 2,8 bar à l’arrière.'
   explication: On lit la préconisation correspondant au véhicule et aux pneus, plutôt que d’ajouter forfaitairement
     0,3 bar.
   source: "Michelin, https://www.michelin.fr/auto/conseils/pression-pneus/gonfler-pneus"
+  image:
+    gen: etiquette_pression
 - id: m-visuel-batterie-contact
   theme: M
   sous_theme: applications

@@ -151,11 +151,11 @@
   type: panneau
   code: C24a
   image:
-    commons: France road sign C24a.svg
+    commons: France road sign C24a-2.svg
   nom: Conditions particulières de circulation par voie sur la route suivie
   signification: 'Indique, voie par voie, des conditions particulières de circulation sur la route suivie : voie réservée (bus, vélos), voie à contresens, double-sens cyclable, voie réservée aux véhicules lents, etc.'
   conduite: Se placer dans la voie qui correspond à son véhicule et à sa direction ; ne pas emprunter une voie réservée.
-  complement: Ici, trois voies dans mon sens, sans voie particulière. Le même panneau sert à signaler un double-sens cyclable (vélo à contresens) ou un couloir bus à contresens.
+  complement: 'Ici : une voie dans mon sens et, à gauche, une voie à contresens réservée aux cycles ; je croise des vélos en sens inverse. Le même panneau signale aussi un couloir bus à contresens.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

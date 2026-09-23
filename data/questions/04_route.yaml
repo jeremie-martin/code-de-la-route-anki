@@ -115,18 +115,18 @@
   sous_theme: intemperies
   source: Code de la route, art. R414-17
 - id: r-vent-lateral
-  question: Vent latéral fort ; je dépasse un poids lourd sur un viaduc. Que se passe-t-il et que dois-je faire ?
-  reponse: 'Abrité le long du camion, je suis déporté par la rafale en le dépassant : volant tenu fermement à deux mains,
-    allure réduite, écart latéral élargi.'
-  explication: Une rafale peut aussi surprendre à la sortie d’un tunnel ou à la fin d’une rangée d’arbres. Le triangle portant une manche à air annonce une zone exposée.
+  question: Vent latéral fort sur un viaduc ; je dépasse un poids lourd. À quel moment du dépassement dois-je m’attendre
+    à être déporté, et comment m’y préparer ?
+  reponse: 'En fin de dépassement, quand je sors de l’abri du camion : la rafale me frappe d’un coup. Avant, je réduis l’allure,
+    tiens le volant à deux mains et élargis l’écart latéral.'
+  explication: Même surprise à la sortie d’un tunnel ou à la fin d’une rangée d’arbres. Un triangle portant une manche à
+    air annonce une zone exposée au vent.
   theme: R
   sous_theme: intemperies
   source: "securite-routiere.gouv.fr, Le vent ; Ornikar, Conduire par grand vent"
-  comparaisons:
-  - ref: a24
-    legende: Zone exposée au vent latéral.
-  - ref: j7
-    legende: 'Manche à air : direction et force du vent.'
+  illustration:
+    gen: vent_depassement
+    legende: 'Vent de droite : la zone hachurée est abritée par le camion ; devant la cabine, plus d’abri.'
 - id: r-soleil-bas
   question: 'Soleil rasant de face au coucher : que fais-je ?'
   reponse: Je ralentis selon ma visibilité, j’augmente l’intervalle et j’utilise le pare-soleil avec un pare-brise propre.
@@ -349,8 +349,8 @@
   sous_theme: autoroute
   source: Code de la route, art. R421-7 et R416-19
   illustration:
-    gen: autoroute_attente
-    legende: Voiture au bord droit de la bande d’arrêt d’urgence ; occupants en gilet derrière la glissière.
+    gen: autoroute_panne
+    legende: Roues avant braquées vers l’extérieur ; les occupants sortent côté droit et passent derrière la glissière.
 - id: r-autoroute-panne-attendre
   question: Mon véhicule est arrêté sur la bande d'arrêt d'urgence et tout le monde est sorti. Où attendre les secours ?
   reponse: Derrière la glissière de sécurité, en arrière du véhicule, du côté d’où arrivent les voitures ; pour rejoindre la borne d’appel, je marche derrière la glissière, jamais sur la chaussée.
@@ -445,3 +445,13 @@
   sous_theme: montagne
   source: "IISR, art. 67-1, modifié par arrêté du 23 juin 2021, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043775737/2024-11-12"
   image_ref: b26
+- id: r-contresens-signale
+  question: 'Sur autoroute, les panneaux à messages et la radio d’autoroute (107.7) signalent un véhicule à contresens sur
+    ma section. Que fais-je ?'
+  reponse: 'Je ralentis et j’augmente mes distances, je ne dépasse plus et j’évite la voie de gauche ; si une aire est
+    proche, je m’y arrête jusqu’à la fin de l’alerte.'
+  explication: 'Si je croise moi-même le véhicule, je préviens les secours sans téléphone en main : borne d’appel, 112
+    une fois arrêté, ou par un passager.'
+  theme: R
+  sous_theme: autoroute
+  source: APRR, Que dois-je faire si je croise un véhicule à contresens sur l’autoroute ? ; ASFA, Les contresens

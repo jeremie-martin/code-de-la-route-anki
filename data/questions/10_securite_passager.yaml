@@ -180,3 +180,12 @@
   explication: Le permis et les capacités techniques sont deux contrôles différents. Vider la remorque ne modifie
     pas son PTAC.
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2828"
+- id: s-surcharge-ptac
+  question: 'Chargée pour les vacances, ma voiture pèse 2 050 kg ; son PTAC (carte grise, rubrique F.2) est de 1 900 kg.
+    Que dois-je faire avant de partir ?'
+  reponse: 'La décharger jusqu’à repasser sous le PTAC : son poids réel ne doit jamais le dépasser.'
+  explication: 'Surchargée, elle freine plus long et tient moins bien la route. Amende de 4e classe par tranche de 0,5 t
+    de dépassement ; un agent peut exiger une pesée et immobiliser le véhicule.'
+  theme: S
+  sous_theme: chargement
+  source: Code de la route, art. R312-2 et R325-8

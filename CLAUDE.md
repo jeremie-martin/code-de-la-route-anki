@@ -22,9 +22,9 @@ python build/import_signs.py           # régénère data/reconnaissance/* (sauf
 
 - Un problème signalé est l’exemple d’une classe : la chercher dans tout le deck et corriger partout de la même
   façon, avec preuve, puis faire relire les modifications (`docs/methode.md`).
-- L’utilisateur a importé le deck (paquet du commit 1e32131, voir la fin de `docs/maintenance.md`) : garder les
-  `id` (GUID) et `build/schema_ids.json` ; reformuler plutôt que supprimer ; `build.verify --previous` sur ce
-  paquet nomme les notes retirées, à lui signaler.
+- L’utilisateur n’a pas encore étudié : il supprimera et réimportera le deck une fois fini. D’ici là, changer
+  de type de note, fusionner ou retirer des trous est permis ; garder quand même les `id` (GUID) et
+  `build/schema_ids.json`. Après ce réimport, la contrainte de mise à jour reprend (fin de `docs/maintenance.md`).
 - `data/reconnaissance/*.yaml` sont **générés** : corriger `data/_meta/sign_overrides.yaml` (clé = id, `null`
   retire un champ) et garder `data/signs_inventory.yaml` cohérent, puis régénérer. `voyants.yaml` est écrit à la main.
 - Chaque note figure dans `data/_meta/objectives.yaml` (`notes` = socle, `consolidation` = suite) ; les

@@ -353,3 +353,12 @@
   theme: C
   sous_theme: vigilance
   source: "REMC (compétence 2) ; securite-routiere.gouv.fr, La vitesse et la conduite"
+- id: c-monotonie-autoroute
+  question: 'Longue autoroute sans surprise, trafic faible ; je suis bien reposé. Qu’est-ce qui menace ma vigilance ?'
+  reponse: 'La monotonie : un environnement prévisible et répétitif fait baisser la vigilance et favorise la somnolence,
+    même sans fatigue au départ.'
+  explication: 'Sur autoroute, un accident mortel sur trois est associé à la somnolence. Pause toutes les deux heures,
+    et arrêt dès les premiers signes (bâillements, paupières lourdes, regard fixe).'
+  theme: C
+  sous_theme: vigilance
+  source: securite-routiere.gouv.fr, La fatigue et la conduite ; Fondation VINCI Autoroutes, Qu’est-ce que l’hypovigilance

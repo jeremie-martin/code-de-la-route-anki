@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml (20 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (19 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: ak2
   type: panneau
   code: AK2
@@ -189,17 +189,6 @@
   nom: Annonce de la réduction du nombre de voies (temporaire)
   signification: 'Annonce une réduction du nombre de voies disponibles : je repère les voies qui ferment et prépare mon changement de voie à la distance indiquée.'
   conduite: Se rabattre à temps sur les voies restantes en respectant l'alternance (une voiture sur deux) en cas de bouchon.
-  theme: L
-  sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-- id: kd22
-  type: panneau
-  code: KD22
-  image:
-    commons: KD22a.svg
-  nom: Direction de déviation
-  signification: Panneau de direction jaune en forme de flèche portant la mention « Déviation » (ou un numéro d’itinéraire de déviation) indiquant le chemin de la déviation.
-  conduite: Suivre la déviation.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

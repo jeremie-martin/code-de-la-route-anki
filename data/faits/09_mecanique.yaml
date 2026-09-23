@@ -24,10 +24,6 @@
   - De nuit par temps clair, les feux de position avant doivent être visibles à {{c1::150 m}}.
   - De nuit par temps clair, les feux de croisement doivent éclairer efficacement à au moins {{c2::30 m}}.
   - De nuit par temps clair, les feux de route doivent éclairer efficacement à au moins {{c3::100 m}}.
-  comparaisons:
-  - ref: voyant-position
-    legende: 'Feux de position : être vu.'
-  - ref: voyant-croisement
-    legende: 'Feux de croisement : éclairer sans éblouir.'
-  - ref: voyant-route
-    legende: 'Feux de route : éclairer loin ; ils éblouissent.'
+  illustration:
+    gen: feux_portees
+    legende: Minima réglementaires par temps clair, à l’échelle.

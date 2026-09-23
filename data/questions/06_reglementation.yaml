@@ -71,3 +71,11 @@
   theme: D
   sous_theme: permis
   source: Code de la route, art. L224-16
+- id: d-bonus-malus
+  question: 'Je provoque un accident dont je suis entièrement responsable. Que devient mon coefficient bonus-malus ?'
+  reponse: 'Il augmente de 25 % : il est multiplié par 1,25 à l’échéance suivante.'
+  explication: 'Responsabilité partagée : +12,5 %. Chaque année sans accident responsable, il baisse de 5 %, jusqu’à 0,50
+    au mieux.'
+  theme: D
+  sous_theme: documents
+  source: Code des assurances, art. A121-1 ; service-public.fr F2655

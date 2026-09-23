@@ -66,7 +66,7 @@ Recherche Anki : `objectif::l-danger`
 
 Préparer les décisions aux intersections et aux rétrécissements.
 
-18 notes / 18 cartes.
+17 notes / 17 cartes.
 
 Recherche Anki : `objectif::l-priorite-signaux`
 
@@ -84,7 +84,6 @@ Recherche Anki : `objectif::l-priorite-signaux`
 | `b15` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `c18` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m7` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
-| `m9c` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `conf-ab1-ab2` | socle | confusions | IISR 1re partie ; Code de la route, art. R415-5 et R415-7 |
 | `conf-ab3a-ab4` | socle | confusions | Code de la route, art. R415-6 et R415-7 |
 | `conf-ab3b-ab5` | consolidation | confusions | IISR 1re partie |
@@ -292,7 +291,7 @@ Recherche Anki : `objectif::l-prescriptions`
 
 Une même valeur n'a pas toujours la même portée.
 
-53 notes / 53 cartes.
+52 notes / 52 cartes.
 
 Recherche Anki : `objectif::l-portee`
 
@@ -317,7 +316,6 @@ Recherche Anki : `objectif::l-portee`
 | `m4a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m4d1` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m4d2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
-| `m4e` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m4f` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m6a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m6b` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
@@ -398,7 +396,7 @@ Recherche Anki : `objectif::l-marquage`
 
 Les cas contrastés préviennent les soustractions automatiques.
 
-21 notes / 27 cartes.
+20 notes / 26 cartes.
 
 Recherche Anki : `objectif::l-vitesse`
 
@@ -417,7 +415,6 @@ Recherche Anki : `objectif::l-vitesse`
 | `l-brouillard-zone30` | socle | questions | Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-pluie-route80` | socle | questions | Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-pmv-limitation` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `l-visuel-b14-adaptation` | socle | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ ; R413-17 |
 | `l-c107-route-simple` | socle | questions | https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-c107-route-separee` | socle | questions | https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-precipitations-neige` | socle | questions | Code de la route, art. R413-2 |
@@ -430,7 +427,7 @@ Recherche Anki : `objectif::l-vitesse`
 
 Ligne, visibilité, usager et espace latéral sont des conditions cumulatives.
 
-31 notes / 33 cartes.
+30 notes / 32 cartes.
 
 Recherche Anki : `objectif::l-depasser`
 
@@ -442,7 +439,6 @@ Recherche Anki : `objectif::l-depasser`
 | `c30` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `l-depassement-laterale` | socle | faits | Code de la route, R414-4 et R412-19, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/ |
 | `l-ligne-continue-sanction` | consolidation | faits | Code de la route, art. R412-18 à R412-20 |
-| `l-depasse-serrer-droite` | consolidation | faits | Code de la route, art. R414-6 et R414-16 |
 | `l-depassement-conditions` | socle | questions | Code de la route, art. R414-4 |
 | `l-depassement-rabattement` | socle | questions | Code de la route, art. R414-10 |
 | `l-depassement-interdit-lieux` | consolidation | questions | Code de la route, R414-4, R414-5, R414-11 et R414-12, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
@@ -511,7 +507,7 @@ Recherche Anki : `objectif::l-position`
 
 La durée et les warnings ne créent aucune autorisation.
 
-30 notes / 33 cartes.
+30 notes / 32 cartes.
 
 Recherche Anki : `objectif::l-stationner`
 
@@ -611,7 +607,7 @@ Recherche Anki : `objectif::c-observer`
 
 Savoir agir avant le micro-sommeil ou la prise de risque.
 
-10 notes / 11 cartes.
+11 notes / 12 cartes.
 
 Recherche Anki : `objectif::c-fatigue`
 
@@ -624,6 +620,7 @@ Recherche Anki : `objectif::c-fatigue`
 | `c-vitesse-fatigue` | consolidation | questions | securite-routiere.gouv.fr, La fatigue et la conduite ; La vitesse |
 | `c-emotions` | socle | questions | securite-routiere.gouv.fr, Les facteurs de risque ; Codes Rousseau |
 | `c-passagers-pression` | consolidation | questions | securite-routiere.gouv.fr, Conseils aux conducteurs novices |
+| `c-monotonie-autoroute` | consolidation | questions | securite-routiere.gouv.fr, La fatigue et la conduite ; Fondation VINCI Autoroutes, Qu’est-ce que l’hypovigilance |
 | `aff-c-pause-sans-signe` | consolidation | affirmations | securite-routiere.gouv.fr, La fatigue et la conduite ; En Voiture Simone, Fatigue |
 | `aff-c-nuit-trafic-fluide` | socle | affirmations | ONISR, bilan 2024 ; securite-routiere.gouv.fr, Conduire la nuit |
 | `aff-c-jeunes-risque-double` | consolidation | affirmations | ONISR, bilan 2025 ; securite-routiere.gouv.fr, Conducteurs novices |
@@ -749,7 +746,7 @@ Recherche Anki : `objectif::r-montagne`
 
 Les erreurs d'itinéraire ne justifient aucune manœuvre dangereuse.
 
-27 notes / 28 cartes.
+28 notes / 29 cartes.
 
 Recherche Anki : `objectif::r-autoroute`
 
@@ -775,6 +772,7 @@ Recherche Anki : `objectif::r-autoroute`
 | `r-autoroute-usagers-interdits` | consolidation | questions | Code de la route, art. R421-2 |
 | `r-autoroute-peage` | socle | questions | ASFA, Le péage ; IISR |
 | `r-autoroute-fatigue-aires` | consolidation | questions | ASFA, Les aires d'autoroute ; securite-routiere.gouv.fr, La fatigue |
+| `r-contresens-signale` | socle | questions | APRR, Que dois-je faire si je croise un véhicule à contresens sur l’autoroute ? ; ASFA, Les contresens |
 | `aff-r-insertion-prioritaire` | consolidation | affirmations | Code de la route, art. R421-3 |
 | `aff-r-autoroute-voie-gauche-80` | consolidation | affirmations | Code de la route, art. R413-19 |
 | `aff-r-autoroute-vitesse-pluie` | consolidation | affirmations | Code de la route, art. R413-2 et R413-5 |
@@ -827,7 +825,7 @@ Recherche Anki : `objectif::r-tunnel-rail`
 
 Lire l'état actuel de la route, même sans ouvriers visibles.
 
-23 notes / 23 cartes.
+22 notes / 22 cartes.
 
 Recherche Anki : `objectif::r-travaux`
 
@@ -851,7 +849,6 @@ Recherche Anki : `objectif::r-travaux`
 | `k10b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `kc1` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `kd10` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
-| `kd22` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `kr11` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `conf-a14-ak14` | consolidation | confusions | IISR 1re et 8e parties |
 | `r-chantier-fleche-lumineuse` | socle | questions | IISR, 8e partie, art. 133 F et annexes VI/VII (VC20250904) : FLR avec flèche KR43 ; arrêté du 4 septembre 2025, https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052200261 |
@@ -907,7 +904,7 @@ Recherche Anki : `objectif::u-vulnerables`
 
 Changer de point de vue et distinguer règle nationale et locale.
 
-16 notes / 21 cartes.
+16 notes / 20 cartes.
 
 Recherche Anki : `objectif::u-micromobilite`
 
@@ -1197,7 +1194,7 @@ Recherche Anki : `objectif::s-retenir`
 
 Lire les masses et appliquer les seuils à une situation.
 
-16 notes / 21 cartes.
+17 notes / 22 cartes.
 
 Recherche Anki : `objectif::s-charger`
 
@@ -1213,6 +1210,7 @@ Recherche Anki : `objectif::s-charger`
 | `s-remorque-vitesses` | consolidation | questions | Code de la route, art. R413-8, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028436426 ; R413-1 et R413-4 |
 | `s-remorque-seuil-750` | socle | questions | Service Public, permis B, https://www.service-public.gouv.fr/particuliers/vosdroits/F2828 |
 | `s-remorque-masse-reelle` | consolidation | questions | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2828 |
+| `s-surcharge-ptac` | socle | questions | Code de la route, art. R312-2 et R325-8 |
 | `aff-s-chargement-distance-arret` | consolidation | affirmations | securite-routiere.gouv.fr, Équipement de la voiture ; Stych, Chargement |
 | `aff-s-plage-arriere` | consolidation | affirmations | securite-routiere.gouv.fr, Conseils chargement ; Stych, Chargement |
 | `aff-s-chargement-avant` | consolidation | affirmations | Code de la route, art. R312-21 et R312-22 |
@@ -1224,7 +1222,7 @@ Recherche Anki : `objectif::s-charger`
 
 La respiration normale et le traumatisme changent le geste ; suivre les secours.
 
-33 notes / 36 cartes.
+33 notes / 33 cartes.
 
 Recherche Anki : `objectif::a-secourir`
 
@@ -1319,7 +1317,7 @@ Recherche Anki : `objectif::d-permis`
 
 Appliquer les obligations à une situation concrète.
 
-15 notes / 18 cartes.
+16 notes / 18 cartes.
 
 Recherche Anki : `objectif::d-vehicule`
 
@@ -1335,6 +1333,7 @@ Recherche Anki : `objectif::d-vehicule`
 | `d-vitres-teintees` | consolidation | faits | Code de la route, art. R316-3-1 |
 | `d-controle-papiers-oublies` | consolidation | questions | Code de la route, art. R233-1 ; service-public.fr F2794 |
 | `d-ct-critique` | socle | questions | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2878 |
+| `d-bonus-malus` | socle | questions | Code des assurances, art. A121-1 ; service-public.fr F2655 |
 | `aff-d-vignette-assurance` | socle | affirmations | Décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362 |
 | `aff-d-plaque-sale` | consolidation | affirmations | Code de la route, art. R317-8 |
 | `aff-d-ct-defaillance-majeure` | socle | affirmations | service-public.fr F2878 ; arrêté du 18 juin 1991 |
@@ -1372,7 +1371,7 @@ Recherche Anki : `objectif::e-ecoconduite`
 
 Lire les conditions locales et ne pas confondre électrique et sans impact.
 
-17 notes / 19 cartes.
+17 notes / 18 cartes.
 
 Recherche Anki : `objectif::e-pollution`
 
@@ -1400,7 +1399,7 @@ Recherche Anki : `objectif::e-pollution`
 
 Couleurs, cartouches, confirmation et affectation de voies servent à choisir assez tôt ; une erreur de direction ne justifie pas une manœuvre dangereuse.
 
-41 notes / 41 cartes.
+40 notes / 40 cartes.
 
 Recherche Anki : `objectif::l-orientation`
 
@@ -1439,7 +1438,6 @@ Recherche Anki : `objectif::l-orientation`
 | `da40` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `d50` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `conf-c13a-c13c` | consolidation | confusions | IISR 5e partie |
-| `conf-e42-e43` | consolidation | confusions | IISR 5e partie |
 | `conf-j1-j3` | consolidation | confusions | IISR 1re partie (balises J1, J3, J6) |
 | `conf-j4-j5` | consolidation | confusions | IISR 1re partie |
 | `l-vocab-routes-lettres` | consolidation | questions | Code de la route, art. L110-3 et s. ; IISR 5e partie (cartouches E42-E44) |
@@ -1514,7 +1512,7 @@ Recherche Anki : `objectif::d-apprentissage`
 
 Comprendre qui est responsable, quels points sont retirés et la différence entre maxima pénaux, amendes et mesures administratives ; les cas complètent le fonctionnement du capital.
 
-18 notes / 27 cartes.
+17 notes / 26 cartes.
 
 Recherche Anki : `objectif::d-sanctions`
 
@@ -1527,7 +1525,6 @@ Recherche Anki : `objectif::d-sanctions`
 | `d-alcool-delit` | socle | faits | Code de la route, art. L234-1, L234-2, L234-8, L237-1 (lois n° 2025-622 et n° 2026-798) |
 | `d-stupefiants-delit` | socle | faits | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886 |
 | `d-homicide-routier` | consolidation | faits | Code pénal, art. 221-18 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886 |
-| `d-delit-fuite` | consolidation | faits | Code pénal, art. 434-10 ; Code de la route, art. L231-1 |
 | `d-sans-permis-sans-assurance` | consolidation | faits | Code de la route, art. L221-2 et L324-2 ; Code des assurances, art. L211-1 ; Fonds de garantie, Nos missions (https://www.fondsdegarantie.fr/nos-missions) |
 | `d-refus-obtemperer` | consolidation | faits | Code de la route, art. L233-1, L233-1-1, L236-1, L224-16 |
 | `d-autres-bareme-3-points` | consolidation | faits | Code de la route, art. R412-19, R412-12, R414-4, R412-8, R412-9, R412-10, R412-28, R421-6, R416-11, R417-9 |

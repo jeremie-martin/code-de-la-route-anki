@@ -12,10 +12,8 @@
   sous_theme: alerter
   source: "service-public.fr, Numéros d'urgence ; Code pénal, art. 223-6"
   rappels:
-  - 'Numéro du SAMU pour une urgence médicale en France : {{c1::15}}.'
-  - 'Numéro de la police ou de la gendarmerie pour une urgence en France : {{c2::17}}.'
-  - 'Numéro des sapeurs-pompiers en France : {{c3::18}}.'
-  - 'Numéro d’urgence utilisable dans toute l’Union européenne : {{c4::112}}.'
+  - 'Numéros d’urgence en France : SAMU {{c1::15}} ; police ou gendarmerie {{c1::17}} ; sapeurs-pompiers {{c1::18}} ; numéro
+    d’urgence européen {{c1::112}}.'
 - id: numero-114
   texte: Le numéro d’urgence accessible par SMS ou visio aux personnes ayant des difficultés à entendre ou à parler est le {{c1::114}}.
   explication: Une personne entendante qui ne peut pas parler à voix haute sans se mettre en danger peut aussi envoyer

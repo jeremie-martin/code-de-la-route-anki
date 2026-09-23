@@ -2,6 +2,7 @@
 
 Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels que déclarés sur Commons.
 
+- [File:Angles morts sur un camion.svg](https://commons.wikimedia.org/wiki/File:Angles_morts_sur_un_camion.svg) ; licence : CC BY-SA 3.0 fr ; auteur : Q3043442 -
 - [File:D21a.svg](https://commons.wikimedia.org/wiki/File:D21a.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex_45
 - [File:E42.svg](https://commons.wikimedia.org/wiki/File:E42.svg) ; licence : Public domain ; auteur : Roulex 45
 - [File:E43.svg](https://commons.wikimedia.org/wiki/File:E43.svg) ; licence : Public domain ; auteur : Roulex 45
@@ -138,7 +139,7 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign C208.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C208.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45 self-made from source above
 - [File:France road sign C20a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C20a.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45 self-made from source above
 - [File:France road sign C20c.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C20c.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45 self-made from source above
-- [File:France road sign C24a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C24a.svg) ; licence : Public domain ; auteur : Roulex 45 self-made from source above
+- [File:France road sign C24a-2.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C24a-2.svg) ; licence : Public domain ; auteur : Roulex 45 self-made from source above
 - [File:France road sign C24b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C24b.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45 self-made from source above
 - [File:France road sign C24c.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C24c.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45 self-made from source above
 - [File:France road sign C25b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_C25b.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45 self-made from source above
@@ -178,7 +179,6 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign M4c interfile.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4c_interfile.svg) ; licence : CC BY 4.0 ; auteur : Chabe01
 - [File:France road sign M4d1.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4d1.svg) ; licence : CC BY-SA 4.0 ; auteur : Paris 16
 - [File:France road sign M4d2.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4d2.svg) ; licence : CC BY-SA 4.0 ; auteur : Chabe01
-- [File:France road sign M4e.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4e.svg) ; licence : CC BY-SA 4.0 ; auteur : มองโกเลีย๔๔
 - [File:France road sign M4f.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4f.svg) ; licence : CC BY-SA 4.0 ; auteur : Chabe01
 - [File:France road sign M6a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M6a.svg) ; licence : CC BY-SA 4.0 ; auteur : Paris 16
 - [File:France road sign M6b debut mois.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M6b_debut_mois.svg) ; licence : CC BY-SA 4.0 ; auteur : Chabe01
@@ -191,10 +191,9 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign M8b.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M8b.svg) ; licence : CC0 ; auteur : Mathgb
 - [File:France road sign M8c.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M8c.svg) ; licence : CC BY-SA 4.0 ; auteur : Chabe01
 - [File:France road sign M8d.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M8d.svg) ; licence : CC0 ; auteur : Mathgb
-- [File:France road sign M9c.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M9c.svg) ; licence : CC BY-SA 4.0 ; auteur : Chabe01
 - [File:France road sign M9d.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M9d.svg) ; licence : CC0 ; auteur : Mathgb
 - [File:France road sign M9v1.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M9v1.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45
-- [File:France road sign M9z.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M9z.svg) ; licence : CC BY-SA 4.0 ; auteur : Paris 16
+- [File:France road sign M9z-2.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M9z-2.svg) ; licence : CC BY-SA 4.0 ; auteur : Pyrog
 - [File:France road sign SR3a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_SR3a.svg) ; licence : CC BY-SA 3.0 ; auteur : Ryse93
 - [File:ISO 7000 - Ref-No 0082.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0082.svg) ; licence : Public domain ; auteur : Vectorization:  Mrmw
 - [File:ISO 7000 - Ref-No 0083.svg](https://commons.wikimedia.org/wiki/File:ISO_7000_-_Ref-No_0083.svg) ; licence : Public domain ; auteur : Vectorization:  Mrmw
@@ -221,7 +220,6 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:K8e1.svg](https://commons.wikimedia.org/wiki/File:K8e1.svg) ; licence : CC0 ; auteur : Mathgb
 - [File:KC1 route barrée.svg](https://commons.wikimedia.org/wiki/File:KC1_route_barrée.svg) ; licence : CC BY-SA 3.0 ; auteur : Mathgb
 - [File:KD10e1.svg](https://commons.wikimedia.org/wiki/File:KD10e1.svg) ; licence : CC BY-SA 3.0 ; auteur : Mathgb
-- [File:KD22a.svg](https://commons.wikimedia.org/wiki/File:KD22a.svg) ; licence : CC BY-SA 3.0 ; auteur : Mathgb
 - [File:Kontrollleuchte DPF.svg](https://commons.wikimedia.org/wiki/File:Kontrollleuchte_DPF.svg) ; licence : CC0 ; auteur : Chris828
 - [File:Kontrollleuchte ESP 2.svg](https://commons.wikimedia.org/wiki/File:Kontrollleuchte_ESP_2.svg) ; licence : Public domain ; auteur : Chris828 at German Wikipedia
 - [File:Panneau de début de voie réservée aux véhicules à occupation multiple.svg](https://commons.wikimedia.org/wiki/File:Panneau_de_début_de_voie_réservée_aux_véhicules_à_occupation_multiple.svg) ; licence : CC BY-SA 4.0 ; auteur : Datamok

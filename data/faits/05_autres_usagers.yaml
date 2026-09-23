@@ -1,13 +1,12 @@
 - id: u-edpm-chiffres
-  explication: Assurance de responsabilité civile obligatoire ; casque recommandé (obligatoire sur une route ouverte par
-    autorisation locale hors agglomération).
+  explication: Une seule personne à bord. Assurance de responsabilité civile obligatoire ; casque recommandé (obligatoire
+    sur une route ouverte par autorisation locale hors agglomération).
   theme: U
   sous_theme: edpm
   source: Code de la route, art. R412-43-1 à R412-43-3 ; décret n° 2023-848
   rappels:
   - 'Âge minimal national pour conduire une trottinette électrique : {{c1::14 ans}}.'
   - 'Vitesse maximale par construction d’une trottinette électrique : {{c2::25 km/h}}.'
-  - 'Sur une trottinette électrique, nombre de personnes autorisées à bord : {{c3::une seule}}.'
 - id: u-velo-chiffres
   explication: En agglomération, le gilet n'est pas imposé au cycliste, alors que l'utilisateur d'une trottinette électrique
     porte la nuit un gilet ou un équipement rétroréfléchissant. Le casque reste recommandé pour tous ; l'adulte qui transporte
@@ -50,13 +49,14 @@
   - 'Conduire un deux-roues motorisé sans casque homologué attaché : 135 € et {{c1::3 points}}.'
   - Depuis 2016, des {{c2::gants}} certifiés CE sont obligatoires à moto et en cyclomoteur, pour le conducteur et le passager.
 - id: u-pl-angles-morts-chiffres
-  texte: Depuis 2021, les véhicules de plus de {{c1::3,5 t}} portent des autocollants « angles morts » sur les côtés et à
-    l’arrière.
+  texte: Cet autocollant est obligatoire depuis 2021, sur les côtés et à l’arrière, des véhicules de plus de {{c1::3,5 t}}.
   explication: 'Ils rappellent de ne pas s’attarder dans ces zones, surtout à droite de la cabine. Leur absence ne prouve
     pas l’absence d’angle mort : une camionnette en a aussi.'
   theme: U
   sous_theme: poids_lourds
   source: "securite-routiere.gouv.fr, Angles morts ; Code de la route, art. R313-32-1 et R412-12"
+  image:
+    commons: Angles morts sur un camion.svg
 - id: u-pl-vitesses-chiffres
   theme: U
   sous_theme: poids_lourds

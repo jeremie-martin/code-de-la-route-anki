@@ -176,7 +176,7 @@
   raison: 'Numéro et confirmation d’un itinéraire de déviation : application de lecture plutôt que code administratif à réciter.'
   couverts_par:
   - l-jalonnement-destinataire
-  - kd22
+  - d-couleur-jaune
 - codes:
   - C60
   - C61
@@ -502,7 +502,7 @@
   - a3b
   - m1
   - m2
-  - kd22
+  - d-couleur-jaune
   - k5a
   - k2
   - l-signalisation-temporaire
@@ -554,7 +554,7 @@
   - b11
   - b12
   - e42
-  - kd22
+  - d-couleur-jaune
   - feu-rouge
 - codes:
   - SR3e
@@ -573,3 +573,19 @@
   couverts_par:
   - ab5
   - conf-ab3b-ab5
+- codes:
+  - M9c
+  raison: 'L’inscription « Cédez le passage » répète en toutes lettres le triangle inversé au-dessus : rien à reconnaître.'
+  couverts_par:
+  - ab3a
+- codes:
+  - M4e
+  raison: 'Panonceau de catégorie en toutes lettres : la règle (le panonceau restreint le panneau aux usagers nommés) est
+    apprise avec les panonceaux à pictogramme.'
+  couverts_par:
+  - l-panonceau-portee
+- codes:
+  - KD22
+  raison: 'Le mot « Déviation » est écrit sur le panneau ; la couleur jaune des directions temporaires est apprise à part.'
+  couverts_par:
+  - d-couleur-jaune

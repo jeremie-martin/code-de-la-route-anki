@@ -123,14 +123,13 @@
   - ref: b6a3
     legende: Placé du côté interdit du 16 à la fin du mois (numéros impairs).
 - id: l-stationnement-cote
-  explication: Stationner à gauche d'une rue à double sens en agglomération est interdit (R417-1, 35 €) ; la nuit, le véhicule y est aussi moins visible. Hors agglomération, la nuit, un véhicule arrêté sur la chaussée garde ses feux de position allumés, même sur une route éclairée.
+  explication: Stationner à gauche d’une rue à double sens en agglomération est interdit (R417-1, 35 €) ; la nuit, le véhicule
+    y est aussi moins visible.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-1, R417-4 et R416-12
   rappels:
   - 'Rue à double sens en agglomération : stationner du côté {{c1::droit}} dans son sens de circulation.'
-  - Hors agglomération, stationner autant que possible {{c2::hors de la chaussée}}, sans créer de danger ni enfreindre une
-    autre interdiction.
 - id: l-zone-bleue
   texte: En zone bleue, j’indique sur le disque mon heure {{c1::d’arrivée}} ; la durée autorisée se lit sur la signalisation
     locale.
@@ -190,13 +189,6 @@
   rappels:
   - Sur chaussée étroite, un véhicule de plus de {{c1::2 m}} de large (ou de plus de 7 m de long) doit faciliter le
     croisement avec un plus petit.
-- id: l-depasse-serrer-droite
-  texte: Quand on est dépassé, on serre à droite sans accélérer ; accélérer pendant qu'on est dépassé coûte 135 € et {{c1::2
-    points}}.
-  explication: Je ne me déporte pas non plus à gauche ; au besoin, je ralentis pour faciliter son rabattement.
-  theme: L
-  sous_theme: depassement
-  source: Code de la route, art. R414-6 et R414-16
 - id: l-implantation-danger
   dedup_ok:
   - aff-r-descente-150m

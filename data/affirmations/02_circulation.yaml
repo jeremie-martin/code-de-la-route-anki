@@ -584,13 +584,14 @@
   - ref: eb10
     legende: 'Entrée d’agglomération : nom noir sur fond blanc bordé de rouge ; c’est lui qui déclenche 50 km/h.'
 - id: aff-l-vitesse-sous-limite
-  contexte: Rue de centre-ville limitée à 50, sortie d'école, nombreux piétons ; je roule à 48 km/h.
+  contexte: 'Après ce panneau, en centre-ville : sortie d’école, nombreux piétons ; je roule à 48 km/h.'
   affirmation: Je peux être verbalisé alors même que je respecte la limitation.
   verdict: vrai
   pourquoi: 'R413-17 : les vitesses maximales ne valent qu''en conditions optimales, et le conducteur doit réduire son allure devant une école, des piétons, un virage ou une chaussée glissante. Vitesse inadaptée : 135 €.'
   theme: L
   sous_theme: vitesse
   source: Code de la route, art. R413-17
+  image_ref: b14
 - id: aff-l-zone-30-portee
   contexte: J’entre dans une zone 30 puis je traverse deux intersections.
   affirmation: La limitation cesse de s'appliquer dès la première intersection franchie.

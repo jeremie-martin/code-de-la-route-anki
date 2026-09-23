@@ -264,6 +264,6 @@ Le paquet est exporté sans progression. Son préréglage (collecte par position
 enfouies, rétention 90 %) s’importe au premier import, puis se laisse décoché pour garder les réglages
 personnels. Avant de publier, `build.verify --previous` sur le paquet déjà importé contrôle la mise à jour et
 nomme les notes retirées : elles restent chez l’utilisateur, à supprimer à la main (`Id:…` dans le navigateur).
-Le premier paquet importé par l’utilisateur est celui du commit 1e32131 (il a pu réimporter depuis celui de cfa5040) :
-`git show 1e32131:out/Code-de-la-route-2026.apkg > /tmp/importe.apkg` puis `build.verify --previous /tmp/importe.apkg`
-nomme toutes les notes retirées depuis. Mettre à jour cette référence quand il réimporte.
+L’utilisateur n’a pas encore étudié le deck ; il le supprimera et le réimportera une fois fini. Noter ici le commit
+du paquet réimporté : c’est lui que `build.verify --previous` devra prendre ensuite
+(`git show <commit>:out/Code-de-la-route-2026.apkg > /tmp/importe.apkg`).

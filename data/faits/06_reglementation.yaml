@@ -191,14 +191,6 @@
   theme: D
   sous_theme: sanctions
   source: "Code pénal, art. 221-18 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886"
-- id: d-delit-fuite
-  texte: Après avoir causé ou occasionné un accident, chercher à échapper à sa responsabilité sans s’arrêter peut constituer
-    un {{c1::délit de fuite}}, même sans blessé.
-  explication: S’arrêter et se faire connaître ; alerter et porter l’aide possible si quelqu’un est blessé. Six points et
-    des peines judiciaires sont encourus. Une non-assistance n’est pas automatiquement constituée par toute présence de blessés.
-  theme: D
-  sous_theme: sanctions
-  source: Code pénal, art. 434-10 ; Code de la route, art. L231-1
 - id: d-sans-permis-sans-assurance
   explication: 'Le Fonds protège les victimes, pas le responsable : cette dette peut atteindre des montants considérables
     et s’ajoute aux sanctions du délit de défaut d’assurance.'
@@ -208,8 +200,8 @@
   texte: 'Un conducteur non assuré cause un accident : le Fonds de garantie des assurances obligatoires (FGAO) indemnise
     les victimes, puis {{c1::lui réclame les sommes versées}}.'
 - id: d-refus-obtemperer
-  texte: Refuser la sommation de s’arrêter d’un agent habilité constitue un {{c1::délit}} (refus d’obtempérer), même sans
-    autre infraction.
+  texte: 'Je n’ai commis aucune infraction, mais je ne m’arrête pas à la sommation d’un agent : c’est {{c1::un délit (refus
+    d’obtempérer)}}.'
   explication: Je m’arrête à l’endroit indiqué sans créer de danger. Des peines judiciaires, un retrait de points et des mesures
     sur le permis et le véhicule sont encourus ; mettre autrui en danger aggrave les faits.
   theme: D
@@ -241,15 +233,13 @@
   - Après une rétention, la suspension administrative du préfet dure au plus {{c2::6 mois}} (1 an notamment pour alcool,
     stupéfiants, refus de vérification ou accident corporel ou mortel).
 - id: d-documents-bord
-  explication: Permis physique ou numérique admis. La suppression de la carte verte n’a pas supprimé l’obligation d’assurance.
-    Les agents peuvent aussi demander à voir le gilet et le triangle (R233-1).
+  explication: 'L’assurance est vérifiée dans le Fichier des véhicules assurés : aucune attestation papier n’est exigée.
+    Permis physique ou numérique admis. Les agents peuvent aussi demander à voir le gilet et le triangle (R233-1).'
   theme: D
   sous_theme: documents
   source: Code de la route, art. R233-1 ; décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362
   rappels:
-  - 'Au contrôle routier, je présente mon permis de conduire et {{c1::le certificat d’immatriculation (carte grise)}}.'
-  - 'Voiture immatriculée en France : au contrôle, une attestation d’assurance papier est {{c2::inutile, l’assurance est
-    vérifiée dans le Fichier des véhicules assurés}}.'
+  - Au contrôle routier, je présente mon permis de conduire et {{c1::le certificat d’immatriculation (carte grise)}}.
 - id: d-carte-grise-delais
   explication: 'Démarches sur l’ANTS ou chez un professionnel habilité. Défaut : 135 €. Le vendeur remet aussi un certificat
     de situation administrative de moins de 15 jours ; le certificat provisoire vaut 1 mois.'
@@ -274,9 +264,8 @@
   texte: 'L''assurance automobile obligatoire est la {{c1::responsabilité civile (« au tiers »)}} : elle couvre les dommages
     causés aux autres, pas ceux du conducteur responsable ni de son véhicule.'
   explication: 'Garanties facultatives : dommages tous accidents (« tous risques »), vol, incendie, bris de glace, garantie
-    du conducteur, assistance. Bonus-malus : coefficient 1 au départ, −5 % par an sans accident responsable (jusqu''à 0,50),
-    +25 % par accident responsable (jusqu''à 3,50). Jeune conducteur : surprime jusqu''à 100 % (50 % après AAC), réduite de
-    moitié chaque année sans sinistre.'
+    du conducteur, assistance. Jeune conducteur : surprime jusqu’à 100 % (50 % après AAC), réduite de moitié chaque année
+    sans sinistre.'
   theme: D
   sous_theme: documents
   source: Code des assurances, art. L211-1, A121-1 et A121-1-1 ; service-public.fr F2655
@@ -329,6 +318,7 @@
   - La masse maximale autorisée du véhicule chargé, passagers et bagages compris, est le {{c1::PTAC}}.
   - La charge utile est la différence entre le PTAC et le {{c2::poids à vide}}.
   - La masse maximale autorisée de l'ensemble véhicule + remorque est le {{c3::PTRA}}.
-  explication: 'Sur la carte grise : PTAC en F.2, PTRA en F.3, poids à vide en G.1 (à lire, pas à apprendre). Dépasser le PTAC allonge la distance d''arrêt, dégrade la tenue de route et expose à une amende et à l''immobilisation. Pour le permis B, ce sont les PTAC, pas les masses réelles, qui se comparent aux 3 500 kg.'
+  explication: 'Sur la carte grise : PTAC en F.2, PTRA en F.3, poids à vide en G.1 (à lire, pas à apprendre). Pour le permis
+    B, ce sont les PTAC, pas les masses réelles, qui se comparent aux 3 500 kg.'
   source: Code de la route, art. R311-1 et R221-4 ; arrêté du 9 février 2009 (certificat d'immatriculation, rubriques
     F.2, F.3, G.1)

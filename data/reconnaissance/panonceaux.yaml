@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml (28 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (26 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: m1
   type: panonceau
   code: M1
@@ -75,17 +75,6 @@
     commons: France road sign M4d2.svg
   nom: 'Catégorie : cyclomoteurs'
   signification: Le panneau s’applique aux cyclomoteurs. Sous un panneau de piste cyclable obligatoire, il étend l’usage de la piste aux cyclomoteurs.
-  theme: L
-  sous_theme: panonceaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-- id: m4e
-  type: panonceau
-  code: M4e
-  image:
-    commons: France road sign M4e.svg
-  nom: 'Catégorie : usagers désignés par inscription'
-  signification: Désigne les usagers concernés par une inscription (ex. « véhicules lents », « 3+ » pour le covoiturage, « riverains »).
-  complement: Utilisé sur les voies réservées à losange pour préciser le nombre minimal d'occupants.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -218,16 +207,6 @@
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-- id: m9c
-  type: panonceau
-  code: M9c
-  image:
-    commons: France road sign M9c.svg
-  nom: Cédez le passage (inscription)
-  signification: L’inscription « Cédez le passage » rappelle le sens du triangle inversé situé au-dessus.
-  theme: L
-  sous_theme: panonceaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: m9d
   type: panonceau
   code: M9d
@@ -253,7 +232,7 @@
   type: panonceau
   code: M9z
   image:
-    commons: France road sign M9z.svg
+    commons: France road sign M9z-2.svg
   nom: Indications diverses par inscription
   signification: 'Panonceau à inscription libre : « RAPPEL », « SAUF RIVERAINS », « PAR TEMPS DE PLUIE », « SORTIE D''USINE »…'
   conduite: Lire et appliquer ; « RAPPEL » signifie que la prescription précédente est toujours en vigueur (elle n'est pas nouvelle).

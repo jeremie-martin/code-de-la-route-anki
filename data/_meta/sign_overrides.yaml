@@ -609,6 +609,8 @@ m9z:
   signification: 'Panonceau à inscription libre : « RAPPEL », « SAUF RIVERAINS », « PAR TEMPS DE PLUIE », « SORTIE D''USINE
     »…'
   complement: « RAPPEL » sous un panneau de vitesse confirme que la limitation continue, notamment après une intersection.
+  image:
+    commons: France road sign M9z-2.svg
 m10b:
   complement: null
   conduite: 'Je repère ce numéro : il situe mon point d''entrée sur l''itinéraire.'
@@ -709,8 +711,6 @@ k5a:
 k10b:
   signification: La face rouge du piquet tenu par le signaleur m’impose l’arrêt.
   complement: null
-m4e:
-  complement: Utilisé sur les voies réservées à losange pour préciser le nombre minimal d'occupants.
 m6a:
   signification: 'Le stationnement, ou l’arrêt si le panneau l’interdit aussi, est gênant : le véhicule peut être mis en fourrière.'
 m6c:
@@ -810,9 +810,6 @@ d40:
       dist: ''
   signification: Annonce avant l’intersection la direction à suivre pour les destinations indiquées.
   code: D43
-m9c:
-  signification: L’inscription « Cédez le passage » rappelle le sens du triangle inversé situé au-dessus.
-  complement: null
 da40:
   image:
     gen: direction_voies
@@ -888,8 +885,10 @@ c13a:
 c20c:
   complement: null
 c24a:
-  complement: 'Ici, trois voies dans mon sens, sans voie particulière. Le même panneau sert à signaler un double-sens
-    cyclable (vélo à contresens) ou un couloir bus à contresens.'
+  complement: 'Ici : une voie dans mon sens et, à gauche, une voie à contresens réservée aux cycles ; je croise des vélos
+    en sens inverse. Le même panneau signale aussi un couloir bus à contresens.'
+  image:
+    commons: France road sign C24a-2.svg
 c24c:
   complement: null
   signification: 'Signale une condition particulière sur la route qui part sur le côté : ici, un passage à niveau sur
@@ -956,10 +955,6 @@ g1a:
 kd10:
   complement: null
   signification: 'Annonce une réduction du nombre de voies disponibles : je repère les voies qui ferment et prépare mon changement de voie à la distance indiquée.'
-kd22:
-  complement: null
-  signification: Panneau de direction jaune en forme de flèche portant la mention « Déviation » (ou un numéro d’itinéraire
-    de déviation) indiquant le chemin de la déviation.
 vr-losange-fin:
   complement: null
   conduite: null

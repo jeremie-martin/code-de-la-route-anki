@@ -240,14 +240,6 @@
   theme: L
   sous_theme: panneaux
   source: IISR 5e partie ; Code de la route, art. R110-2
-- id: conf-e42-e43
-  a: e42
-  b: e43
-  difference: '**A, rouge : route nationale ou autoroute. B, jaune : route départementale.** Le cartouche identifie
-    la route, sans donner de priorité.'
-  theme: L
-  sous_theme: panneaux
-  source: IISR 5e partie
 - id: conf-m1-m2
   a: m1
   b: m2

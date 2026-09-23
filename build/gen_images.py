@@ -892,6 +892,156 @@ def corridor_securite(params):
     return str(S)
 
 
+def autoroute_panne(params):
+    """Breakdown on the motorway, the first moves: the car against the right edge of the hard shoulder, hazard lights,
+    front wheels turned towards the verge; the occupants, in vests, leave by the right-hand doors and cross the
+    barrier (traffic goes up)."""
+    S = _motorway_scene()
+    for x in (162, 302):
+        S.add(f'<g transform="translate({x},330)"><path d="M0 30V-30m-10 12 10-12 10 12" fill="none" stroke="{MARK}" stroke-width="4"/></g>')
+    cx, cy = 434, 170
+    S.add(f'<g transform="translate({cx},{cy}) scale(1.5)">{vehicle_sprite("car", "gris")}</g>')
+    for wx in (cx - 36, cx + 36):                   # front wheels turned to the right, towards the verge
+        S.add(f'<rect x="-5" y="-13" width="10" height="26" rx="3" fill="#111" transform="translate({wx},{cy - 36}) rotate(25)"/>')
+    for dx in (-27, 27):
+        for dy in (-59, 59):
+            _flash_rays(S, cx + dx, cy + dy, 4, AMBER)
+    S.add('<path d="M500 0V440" stroke="#8d969a" stroke-width="6"/>')
+    for y in range(20, 440, 40):
+        S.add(f'<rect x="496" y="{y}" width="8" height="8" fill="#6c7478"/>')
+    for (x, y), (tx, ty) in (((487, 200), (566, 280)), ((487, 250), (596, 330))):   # out by the right, over the barrier
+        S.add(pedestrian(x, y, YELLOW, 1.1))
+        S.add(f'<path d="M{x + 10},{y + 8} Q{x + 40},{y + 60} {tx},{ty}" fill="none" stroke="{INK}" stroke-width="3" '
+              f'stroke-dasharray="7 5"/><path d="M{tx},{ty} l-14,-2 l6,-11 z" fill="{INK}"/>')
+    _pill(S, 570, 40, "glissière", anchor="middle")
+    return str(S)
+
+
+def panne_route(params):
+    """Breakdown on an ordinary two-way road: the car pulled onto the verge with its hazard lights, the occupants in
+    vests away from the carriageway, the warning triangle upstream (not to scale; traffic on my side goes right)."""
+    S = SVG(560, 300)
+    S.add(f'<rect x="0" y="0" width="560" height="300" fill="{GRASS}"/>')
+    S.add(f'<rect x="0" y="40" width="560" height="130" fill="{ASPHALT}"/>')
+    S.add(f'<rect x="0" y="170" width="560" height="44" fill="#b9c2ae"/>')                # verge
+    _dashes_h(S, 105, 3, 10, w=4)
+    S.add(f'<path d="M0 168H560" stroke="{MARK}" stroke-width="3"/>')
+    S.add(f'<path d="M40 138h60m-12-8 12 8-12 8" fill="none" stroke="{MARK}" stroke-width="4"/>')   # direction on my side
+    cx, cy = 440, 178                                                     # astride the edge, mostly on the verge
+    S.add(f'<g transform="translate({cx},{cy}) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
+    for dx, dy in ((-40, -18), (-40, 18), (40, -18), (40, 18)):
+        _flash_rays(S, cx + dx, cy + dy, 3, AMBER)
+    for x in (380, 410, 440):
+        S.add(pedestrian(x, 262, YELLOW, 1.3))
+    S.add('<path d="M150,152 l14,-26 l14,26 z" fill="#e53935" stroke="#fff" stroke-width="2"/>')
+    S.add(f'<path d="M164,30 H390 M164,22 v16 M390,22 v16 M262,40 l12,-20 M284,40 l12,-20" stroke="{LABEL}" '
+          f'stroke-width="3" fill="none"/>')
+    _pill(S, 360, 290, "occupants", anchor="end")
+    if params.get("label"):
+        _text(S, 277, 18, params["label"], LABEL_SIZE, LABEL)
+    return str(S)
+
+
+def vent_depassement(params):
+    """Overtaking a lorry on a viaduct in a strong crosswind from the right: sheltered alongside the trailer (hatched
+    lee), then hit at once past the cab. MOI is at the cab, the small arrow shows the push towards the left."""
+    S = SVG(480, 440)
+    S.add(f'<rect width="480" height="440" fill="#9aa3a6"/>')                  # viaduct deck beyond the parapets
+    S.add(f'<path d="M100 0H380V440H100Z" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M92 0V440 M388 0V440" stroke="#5e676b" stroke-width="10"/>')    # parapets
+    S.add(f'<path d="M104 0V440 M376 0V440" stroke="{MARK}" stroke-width="3"/>')
+    S.add(f'<path d="M240 0V440" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 26"/>')
+    lx, ly = 310, 250                                                         # lorry in the right lane
+    _hidden_pattern(S)
+    S.add(f'<path d="M{lx - 30},{ly - 60} H{lx - 128} V{ly + 120} H{lx - 30} Z" fill="url(#hidden)" stroke="{HIDDEN}" stroke-width="2"/>')
+    S.add(f'<g transform="translate({lx},{ly})">{vehicle_sprite("lorry", "gris")}</g>')
+    _pill(S, lx - 79, ly + 60, "abri", anchor="middle")
+    S.add(f'<g transform="translate(172,{ly - 100})">{ME}</g>')
+    S.add(f'<path d="M142,{ly - 100} h-26 m10,-8 -10,8 10,8" fill="none" stroke="{INK}" stroke-width="4"/>')
+    for y in (60, 130, 200):                                                  # wind from the right
+        S.add(f'<path d="M470,{y} H410 m12,-9 -12,9 12,9" fill="none" stroke="#2f6fb0" stroke-width="4"/>')
+    _pill(S, 466, 300, "vent", anchor="end")
+    return str(S)
+def cycliste_bras(params):
+    """Town street, MOI behind a cyclist who holds out the left arm (a side street opens on the left ahead).
+    answer_on_back: the cyclist's path into the side street, drawn only on the back of a « verso » image."""
+    S = SVG(480, 440)
+    S.add('<rect width="480" height="440" fill="#cfd3d4"/>')                        # pavements
+    S.add(f'<path d="M130 0H370V440H130Z M0 70H130V160H0Z" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M127 0V70 M127 160V440 M373 0V440" stroke="#9aa0a2" stroke-width="6"/>')   # kerbs
+    S.add(f'<path d="M250 0V440" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 30"/>')
+    bx, by = 310, 220
+    S.add(f'<g transform="translate({bx},{by}) scale(1.4)">{vehicle_sprite("bike", "rouge")}'
+          f'<line x1="-8" y1="-2" x2="-40" y2="-2" stroke="#222" stroke-width="8" stroke-linecap="round"/>'
+          f'<line x1="-8" y1="-2" x2="-40" y2="-2" stroke="{SKIN}" stroke-width="5" stroke-linecap="round"/></g>')
+    S.add(f'<g transform="translate({bx},370) scale(1.2)">{ME}</g>')
+    if params.get("verso") or not params.get("answer_on_back"):
+        S.add(f'<path d="M{bx},{by - 50} C{bx},150 240,115 150,115 H40" fill="none" stroke="{INK}" stroke-width="3" '
+              f'stroke-dasharray="8 6"/><path d="M36,115 l14,-8 v16 z" fill="{INK}"/>')
+    return str(S)
+
+
+def voie_bus_tourner(params):
+    """Avenue going up: my lane, then a bus lane on the right whose wide line turns from continuous to broken just
+    before the side street on the right; a bus behind in its lane. answer_on_back: MOI's path, drawn only on the
+    back of a « verso » image: along my lane, into the bus lane on the broken part, then right."""
+    S = SVG(480, 480)
+    S.add('<rect width="480" height="480" fill="#cfd3d4"/>')
+    S.add(f'<path d="M130 0H360V480H130Z M360 40H480V130H360Z" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M127 0V480 M363 0V40 M363 130V480" stroke="#9aa0a2" stroke-width="6"/>')
+    S.add(f'<rect x="238" y="200" width="12" height="280" fill="{MARK}"/>')             # continuous wide line
+    for y in range(140, 200, 26):                                                     # broken before the junction
+        S.add(f'<rect x="238" y="{y}" width="12" height="14" fill="{MARK}"/>')
+    S.add(f'<text x="305" y="330" font-family="{FONT}" font-size="30" font-weight="800" fill="{MARK}" text-anchor="middle" '
+          f'transform="rotate(-90 305 330)">BUS</text>')
+    S.add(f'<g transform="translate(190,390) scale(1.2)">{ME}</g>')
+    S.add(f'<g transform="translate(305,470) scale(1.1)">{vehicle_sprite("bus", "jaune")}</g>')
+    if params.get("verso") or not params.get("answer_on_back"):
+        S.add(f'<path d="M190,330 V215 C190,175 300,190 300,150 C300,100 330,85 440,85" fill="none" stroke="{ME_PATH}" '
+              f'stroke-width="4" stroke-dasharray="10 7"/><path d="M448,85 l-14,-8 v16 z" fill="{ME_PATH}"/>')
+    return str(S)
+
+
+def feux_portees(params):
+    """The three lights as bars to scale (metres): position lights seen from 150 m, dipped beam lighting 30 m,
+    main beam 100 m. Night background; labels large enough to read on a phone."""
+    S = SVG(640, 300)
+    S.add('<rect width="640" height="300" rx="12" fill="#1d2733"/>')
+    x0, k, size = 178, 1.6, 26                                               # px per metre
+    rows = (("Position", 150, "vus à 150 m", True), ("Croisement", 30, "30 m", False), ("Route", 100, "100 m", False))
+    for i, (name, m, label, seen) in enumerate(rows):
+        y = 64 + i * 84
+        _text(S, 18, y + 9, name, size, "#ffffff", "start")
+        if seen:   # seen from afar: an eye at the far end, the dashed sight line back to the car
+            S.add(f'<path d="M{x0},{y} H{x0 + m * k}" stroke="#ffe082" stroke-width="4" stroke-dasharray="9 7"/>')
+            S.add(f'<circle cx="{x0}" cy="{y}" r="8" fill="#ffe082"/>')
+            S.add(f'<ellipse cx="{x0 + m * k + 16}" cy="{y}" rx="15" ry="9" fill="none" stroke="#fff" stroke-width="2.5"/>'
+                  f'<circle cx="{x0 + m * k + 16}" cy="{y}" r="4" fill="#fff"/>')
+        else:
+            S.add(f'<path d="M{x0},{y - 6} L{x0 + m * k},{y - 18} V{y + 18} L{x0},{y + 6} Z" fill="#fff4b0" opacity="0.85"/>')
+        _text(S, x0 + m * k + (42 if seen else 12), y + 9, label, size, "#ffffff", "start")
+    _text(S, 622, 286, "à l’échelle", 18, "#c7d0d6", "end", 400)
+    return str(S)
+
+
+def etiquette_pression(params):
+    """Tyre-pressure label as found in a door frame: pressures when cold, front/rear, normal and full load."""
+    S = SVG(520, 300)
+    S.add('<rect width="520" height="300" fill="#ffffff"/>')
+    S.add('<rect x="20" y="20" width="480" height="260" rx="12" fill="#f4f4f0" stroke="#333" stroke-width="3"/>')
+    _text(S, 260, 60, "Pression à froid (bar) — 205/55 R16", 22, INK)
+    S.add('<path d="M40 80H480" stroke="#333" stroke-width="2"/>')
+    for x, t in ((330, "AV"), (430, "AR")):
+        _text(S, x, 118, t, 24, INK)
+    for i, (row, av, ar) in enumerate((("Normal", "2,2", "2,1"), ("Pleine charge", "2,6", "2,8"))):
+        y = 175 + i * 64
+        S.add(f'<path d="M40 {y - 38}H480" stroke="#bbb" stroke-width="1.5"/>')
+        _text(S, 50, y, row, 24, INK, "start")
+        _text(S, 330, y, av, 28, INK)
+        _text(S, 430, y, ar, 28, INK)
+    return str(S)
+
+
 def autoroute_attente(params):
     """Breakdown on the hard shoulder: the car with its hazard lights, the occupants behind the safety barrier,
     back from the car on the side traffic comes from (traffic goes up)."""
@@ -2394,6 +2544,9 @@ def deux_traits(params):
 
 
 REGISTRY.update({
+    "autoroute_panne": autoroute_panne, "panne_route": panne_route, "vent_depassement": vent_depassement,
+    "cycliste_bras": cycliste_bras, "voie_bus_tourner": voie_bus_tourner, "feux_portees": feux_portees,
+    "etiquette_pression": etiquette_pression,
     "deux_traits": deux_traits,
     "verres_standard": verres_standard, "pl_angles_morts": pl_angles_morts,
     "tourner_gauche_placement": tourner_gauche_placement, "virage_gauche": virage_gauche,
