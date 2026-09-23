@@ -164,7 +164,7 @@ build suivant. Conventions :
 - Les scènes sont dessinées sur un plan (600 × 600 carrefours, 600 × 480 routes) dont seule la fenêtre utile est
   exportée (`SVG.view`).
 - Dessins pédagogiques : palette nommée (`INK` étiquettes, `ANSWER` réservé au texte révélé au verso, `WRONG`
-  à ne pas faire, `HIDDEN` hachuré pour ce qui est masqué, `VISIBLE`/`YELLOW` pour ce qui est vu ou le trajet de
+  à ne pas faire, `WRONG_ON_ROAD` sa version claire sur l’enrobé, `HIDDEN` hachuré pour ce qui est masqué, `VISIBLE`/`YELLOW` pour ce qui est vu ou le trajet de
   MOI, `SKIN`/`CLOTH`/`SEAT`) et primitives partagées (`_text`, `_pill`, `_tag`/`_slot`, `_flash_rays`,
   `pedestrian`, `_car_side`, `_car_rear`, `_side_seat`, `_sign_png`). Réutiliser avant de créer ; une nouvelle
   couleur ou forme se nomme une fois.

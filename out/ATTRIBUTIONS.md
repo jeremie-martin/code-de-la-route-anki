@@ -9,7 +9,6 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:FR road beacon J13.svg](https://commons.wikimedia.org/wiki/File:FR_road_beacon_J13.svg) ; licence : CC0 ; auteur : มองโกเลีย๔๔
 - [File:FR road beacon J14a.svg](https://commons.wikimedia.org/wiki/File:FR_road_beacon_J14a.svg) ; licence : CC BY-SA 4.0 ; auteur : Roulex 45
 - [File:FR road beacon J4.svg](https://commons.wikimedia.org/wiki/File:FR_road_beacon_J4.svg) ; licence : CC BY-SA 4.0 ; auteur : Paris 16
-- [File:FR road beacon J6.svg](https://commons.wikimedia.org/wiki/File:FR_road_beacon_J6.svg) ; licence : CC0 ; auteur : มองโกเลีย๔๔
 - [File:FR road beacon J7.svg](https://commons.wikimedia.org/wiki/File:FR_road_beacon_J7.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex_45
 - [File:FR road sign G1 bis.svg](https://commons.wikimedia.org/wiki/File:FR_road_sign_G1_bis.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45
 - [File:FR road sign G1.svg](https://commons.wikimedia.org/wiki/File:FR_road_sign_G1.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex_45

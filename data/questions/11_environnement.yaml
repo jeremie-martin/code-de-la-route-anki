@@ -1,6 +1,5 @@
 - id: e-feu-rouge-anticipation
-  question: Le feu passe au rouge à une centaine de mètres devant moi. Je maintiens mon allure pour freiner ensuite, ou je
-    lève le pied tout de suite ?
+  question: Le feu passe au rouge à une centaine de mètres devant moi. Que fais-je de mon allure ?
   reponse: 'Je lève le pied tout de suite, rapport adapté : j’anticipe l’arrêt, je ménage les freins et j’évite une accélération
     inutile.'
   explication: 'Rapport engagé, pied levé, l’injection est généralement coupée : la consommation peut tomber à zéro. Arriver
@@ -64,7 +63,7 @@
   sous_theme: ecoconduite
   source: "ADEME ; Codeclic, Conduite économique ; Ornikar, Conduite écologique"
 - id: e-polluant-co2
-  question: Pourquoi le CO₂ ne se traite-t-il pas comme les autres polluants d'un véhicule ?
+  question: Quelle différence d’effet entre le CO₂ et les autres polluants d’un véhicule (NOx, particules) ?
   reponse: Le CO₂ contribue au réchauffement climatique ; NOx et particules dégradent l’air respiré. Réduire l’un ne supprime
     pas les autres.
   explication: Pour un carburant donné, le CO₂ à l’échappement dépend de la quantité brûlée. Un filtre à particules ne piège

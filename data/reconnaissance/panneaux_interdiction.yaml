@@ -273,7 +273,7 @@
   image:
     commons: France road sign B11.svg
   nom: Limitation de largeur
-  signification: Accès interdit aux véhicules dont la largeur, chargement compris, dépasse le nombre indiqué (ex. 2 m).
+  signification: Accès interdit aux véhicules dont la largeur, chargement compris, dépasse le nombre indiqué (ici 2,5 m).
   conduite: Une voiture fait environ 1,8 à 2 m ; attention aux rétroviseurs et aux chargements larges.
   theme: L
   sous_theme: panneaux
@@ -296,7 +296,7 @@
   image:
     commons: France road sign B13.svg
   nom: Limitation de poids total
-  signification: Accès interdit aux véhicules dont le PTAC (ou le PTRA d'un ensemble) dépasse le nombre indiqué (ex. 3,5 t).
+  signification: Accès interdit aux véhicules dont le PTAC (ou le PTRA d’un ensemble) dépasse le nombre indiqué (ici 5,5 t).
   conduite: 'Peut concerner un camping-car ou une voiture + remorque : se référer à la carte grise (F.2/F.3).'
   piege: C'est le poids AUTORISÉ (carte grise), pas le poids réel du véhicule à l'instant t.
   theme: L

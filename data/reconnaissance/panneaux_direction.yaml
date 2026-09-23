@@ -10,10 +10,10 @@
   nom: Panneau de direction à fond bleu (autoroute)
   signification: 'Fond bleu : la direction indiquée est desservie par une autoroute (ou l''on se trouve sur le réseau autoroutier).'
   conduite: Suivre les panneaux bleus pour rejoindre ou rester sur l'autoroute ; anticiper le choix de voie.
-  complement: 'Code des couleurs : bleu = autoroute ; vert = grande liaison ; blanc = itinéraire local ; jaune = déviation ; marron = touristique.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  question: Que m’indique la couleur de fond de ce panneau de direction ?
 - id: d-couleur-vert
   type: panneau
   image:
@@ -28,6 +28,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  question: Que m’indique la couleur de fond de ce panneau de direction ?
 - id: d-couleur-blanc
   type: panneau
   image:
@@ -41,6 +42,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  question: Que m’indique la couleur de fond de ce panneau de direction ?
 - id: d-couleur-jaune
   type: panneau
   image:
@@ -55,6 +57,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  question: Que m’indique la couleur de fond de ce panneau de direction ?
 - id: d-couleur-marron
   type: panneau
   image:
@@ -68,17 +71,19 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  question: Que m’indique la couleur de fond de ce panneau de direction ?
 - id: d20
   type: panneau
   code: D21a
   image:
     commons: D21a.svg
   nom: Panneau de position (D21)
-  signification: 'Panneau de direction en position : la pointe indique la voie à prendre au carrefour.'
+  signification: 'Panneau de direction placé au carrefour même : sa pointe indique la direction à prendre.'
   conduite: Je dois déjà être dans la voie de cette direction en arrivant au panneau.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  question: Où ce panneau est-il placé par rapport au carrefour, et à quoi sert-il ?
 - id: d40
   type: panneau
   code: D43
@@ -91,10 +96,11 @@
   nom: Panneau de présignalisation (D42/D43)
   signification: Annonce avant l’intersection la direction à suivre pour les destinations indiquées.
   conduite: Choisir sa direction et sa voie à l'avance.
-  complement: Lire la flèche et, si elle est affichée, la distance. Ne pas confondre l’annonce avec le panneau de position au carrefour.
+  complement: Le panneau de position, au carrefour même, est découpé en forme de flèche.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  question: Où ce panneau est-il placé par rapport au carrefour, et à quoi sert-il ?
 - id: da40
   type: panneau
   code: Da40

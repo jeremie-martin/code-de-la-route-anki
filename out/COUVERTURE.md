@@ -482,7 +482,7 @@ Recherche Anki : `objectif::l-position`
 | `l-ligne-rive-franchir` | consolidation | questions | Code de la route, art. R412-19 et R412-22 ; IISR 7e partie, art. 114-4 |
 | `l-vocab-chaussee-voie` | socle | questions | Code de la route, art. R110-2 ; IISR 7e partie |
 | `l-clignotant-quand` | socle | questions | Code de la route, art. R412-10 |
-| `l-voie-lents` | consolidation | questions | Code de la route, R422-1 |
+| `l-voie-lents` | consolidation | questions | Code de la route, art. R422-1 et R422-2 ; IISR, 4e partie (voie réservée aux véhicules lents) |
 | `l-tourner-gauche-placement` | socle | questions | Code de la route, art. R415-4 |
 | `l-croisement-montagne` | consolidation | questions | Code de la route, art. R414-3 |
 | `l-virage-droite-placement` | socle | questions | Code de la route, art. R412-9 ; règle de conduite (programme REMC) |
@@ -1218,7 +1218,7 @@ Recherche Anki : `objectif::s-charger`
 
 La respiration normale et le traumatisme changent le geste ; suivre les secours.
 
-33 notes / 33 cartes.
+34 notes / 34 cartes.
 
 Recherche Anki : `objectif::a-secourir`
 
@@ -1247,6 +1247,7 @@ Recherche Anki : `objectif::a-secourir`
 | `a-objet-plaie` | socle | questions | Sécurité civile, PSC juillet 2026, Hémorragies, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-traumatisme-respiration` | socle | questions | Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-secours-deja-sur-place` | socle | questions | Sécurité civile, PSC juillet 2026, Protection, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Code pénal, art. 223-6 |
+| `a-alerte-populations` | consolidation | questions | Sécurité civile, PSC juillet 2026, fiche « Alerte et protection des populations », p. 8–9 ; arrêté du 23 mars 2007 (signal national d’alerte) ; préfecture du Haut-Rhin, Comment réagir au signal national d’alerte |
 | `aff-a-dae-formation` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q6) ; décret n° 2007-705 ; Croix-Rouge française |
 | `aff-a-pls-avec-casque` | socle | affirmations | Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Sécurité routière, secours au motard |
 | `aff-a-compressions-seules` | socle | affirmations | Croix-Rouge française, Arrêt cardiaque |
@@ -1508,7 +1509,7 @@ Recherche Anki : `objectif::d-apprentissage`
 
 Comprendre qui est responsable, quels points sont retirés et la différence entre maxima pénaux, amendes et mesures administratives ; les cas complètent le fonctionnement du capital.
 
-17 notes / 26 cartes.
+17 notes / 23 cartes.
 
 Recherche Anki : `objectif::d-sanctions`
 

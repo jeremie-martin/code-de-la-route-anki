@@ -22,7 +22,7 @@ j1:
   signification: Balise blanche à collier rétroréfléchissant blanc, implantée à l'extérieur d'un virage pour en matérialiser
     le tracé.
   complement: null
-  piege: 'Même piquet que les balises d’intersection et de bord de chaussée : seule la bande blanche désigne un virage.'
+  piege: Parmi les balises à piquet, seule celle à bande blanche désigne un virage.
   comparaisons:
   - ref: j3
     legende: 'Bande rouge : intersection.'
@@ -46,13 +46,17 @@ j4:
 j6:
   signification: 'Balise de bord de chaussée : elle jalonne le tracé de la route, surtout de nuit, sans annoncer de danger
     particulier.'
-  piege: 'Même piquet que les balises de virage et d’intersection : seule la bande noire désigne le simple guidage.'
+  piege: 'Piquet blanc comme les balises de virage et d’intersection : la bande noire oblique désigne le simple guidage.'
   complement: null
   comparaisons:
   - ref: j1
     legende: 'Bande blanche : virage.'
   - ref: j3
     legende: 'Bande rouge : intersection.'
+  image:
+    gen: balise_piquet
+    params:
+      kind: j6
 j10:
   signification: Balises blanches à trois, deux puis une bande rouge oblique, placées à 150 m, 100 m et 50 m du passage à
     niveau (hors agglomération).
@@ -295,8 +299,8 @@ a24:
   complement: Une manche à air peut préciser l’endroit exposé et montrer la direction et la force du vent.
   piege: null
 d-couleur-bleu:
-  complement: 'Code des couleurs : bleu = autoroute ; vert = grande liaison ; blanc = itinéraire local ; jaune = déviation
-    ; marron = touristique.'
+  complement: null
+  question: Que m’indique la couleur de fond de ce panneau de direction ?
 b31:
   conduite: Reprendre la vitesse réglementaire de la route et les manœuvres à nouveau autorisées.
   signification: Fin des interdictions signalées imposées aux véhicules en mouvement.
@@ -619,8 +623,8 @@ m9z:
 m10b:
   complement: null
   conduite: 'Je repère ce numéro : il situe mon point d''entrée sur l''itinéraire.'
-  signification: 'Cartouche placé au-dessus du panneau d''entrée d''autoroute (ou de route à accès réglementé) : numéro
-    de l''échangeur par lequel j''entre.'
+  signification: Numéro de l’échangeur, qui est aussi celui de sa sortie ; placé au-dessus du panneau d’entrée d’autoroute
+    ou de route pour automobiles, il indique par quel échangeur j’entre.
 m12:
   signification: Sous un feu imposant l’arrêt, autorise cycles, EDPM et cyclomobiles légers à passer dans les directions
     fléchées, en cédant le passage.
@@ -760,7 +764,8 @@ b8:
   - ref: b13
     legende: 'Panneau distinct : interdit à tout véhicule dont le poids total autorisé dépasse la valeur.'
 b13:
-  signification: Accès interdit aux véhicules dont le PTAC (ou le PTRA d'un ensemble) dépasse le nombre indiqué (ex. 3,5 t).
+  signification: Accès interdit aux véhicules dont le PTAC (ou le PTRA d’un ensemble) dépasse le nombre indiqué (ici 5,5
+    t).
   conduite: 'Peut concerner un camping-car ou une voiture + remorque : se référer à la carte grise (F.2/F.3).'
 b21c2:
   conduite: Se placer à gauche, clignotant gauche, et céder le passage aux véhicules venant en face.
@@ -794,13 +799,13 @@ marq-damier-blanc:
   conduite: 'Ne pas bloquer la traversée. Lire les feux et les priorités : le damier seul ne donne pas une priorité générale
     au bus.'
 d20:
-  signification: 'Panneau de direction en position : la pointe indique la voie à prendre au carrefour.'
+  signification: 'Panneau de direction placé au carrefour même : sa pointe indique la direction à prendre.'
   complement: null
   code: D21a
   conduite: Je dois déjà être dans la voie de cette direction en arrivant au panneau.
+  question: Où ce panneau est-il placé par rapport au carrefour, et à quoi sert-il ?
 d40:
-  complement: Lire la flèche et, si elle est affichée, la distance. Ne pas confondre l’annonce avec le panneau de position
-    au carrefour.
+  complement: Le panneau de position, au carrefour même, est découpé en forme de flèche.
   image:
     gen: direction_panel
     params:
@@ -809,6 +814,7 @@ d40:
       dist: ''
   signification: Annonce avant l’intersection la direction à suivre pour les destinations indiquées.
   code: D43
+  question: Où ce panneau est-il placé par rapport au carrefour, et à quoi sert-il ?
 da40:
   image:
     gen: direction_voies
@@ -1003,7 +1009,8 @@ m4f:
   signification: Le panneau ne s’applique qu’aux véhicules dont le poids total autorisé dépasse la valeur indiquée (ici
     5,5 t).
 m9d:
-  signification: 'Sous le panneau de passage pour piétons, indique un passage surélevé : je ralentis avant le plateau.'
+  signification: 'Le passage pour piétons est surélevé : je ralentis avant le plateau.'
+  question: Placé sous un panneau de passage pour piétons, que signifie ce panonceau ?
 marq-zone-bleue:
   signification: 'Emplacements délimités en bleu : stationnement gratuit à durée limitée, avec disque. Je lis les horaires et la durée autorisée sur les panneaux.'
 marq-damier-rouge-blanc:
@@ -1072,3 +1079,13 @@ c108:
     séparées par un terre-plein central, sauf autre limitation signalée.'
 ce2a:
   conduite: 'Sur autoroute, préférer les bornes d’appel au téléphone portable : elles localisent l’appel.'
+b11:
+  signification: Accès interdit aux véhicules dont la largeur, chargement compris, dépasse le nombre indiqué (ici 2,5 m).
+d-couleur-vert:
+  question: Que m’indique la couleur de fond de ce panneau de direction ?
+d-couleur-blanc:
+  question: Que m’indique la couleur de fond de ce panneau de direction ?
+d-couleur-jaune:
+  question: Que m’indique la couleur de fond de ce panneau de direction ?
+d-couleur-marron:
+  question: Que m’indique la couleur de fond de ce panneau de direction ?

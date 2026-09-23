@@ -167,12 +167,13 @@
       - {lane: 1, y: 45, colour: gris, goes: left}
     extras:
       - {kind: intersection_gauche, y: 68}
-  question: Le véhicule devant moi ralentit, clignotant gauche, pour entrer dans la rue à gauche. Puis-je le dépasser, et
-    de quel côté ?
-  reponse: 'Non : pas par la gauche (il tourne à gauche), ni par la droite (à une intersection sans priorité pour moi, dépasser
-    une voiture est interdit) ; j’attends derrière.'
-  explication: Le dépassement par la droite redevient possible hors intersection, ou à une intersection où les autres routes
-    me cèdent le passage, ou que des feux ou un agent règlent (R414-11).
+  question: Intersection sans signalisation. Le véhicule devant moi ralentit, clignotant gauche, pour entrer dans la rue
+    à gauche. Puis-je le dépasser, et de quel côté ?
+  reponse: 'Non : pas par la gauche (il tourne à gauche), ni par la droite : à une intersection, dépasser une voiture n’est
+    permis que si un STOP, un cédez-le-passage ou une route prioritaire fait céder les autres, ou si des feux ou un agent
+    règlent le carrefour. Ici, rien de cela : j’attends derrière.'
+  explication: 'Le dépassement par la droite redevient possible hors intersection. La priorité à droite ne suffit pas :
+    il faut une signalisation qui impose aux autres de céder (R414-11).'
   theme: L
   sous_theme: depassement
   source: "Code de la route, art. R414-6 et R414-11"

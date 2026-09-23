@@ -133,9 +133,9 @@
     params: {}
     legende: '9 h 15 : les pouces reposent sur la jante, sans s’accrocher aux branches.'
 - id: p-ordre-installation
-  question: J’ai réglé mes rétroviseurs, puis avancé et remonté mon siège. Puis-je garder le réglage des miroirs
-    sans le vérifier ?
-  reponse: 'Non : ma position d’observation a changé. Je vérifie et, si besoin, règle à nouveau les rétroviseurs.'
+  question: J’ai réglé mes rétroviseurs, puis avancé et remonté mon siège. Que fais-je des rétroviseurs avant de partir
+    ?
+  reponse: 'Je les vérifie et, si besoin, les règle à nouveau : ma position d’observation a changé.'
   explication: 'Je fixe d’abord ma position de conduite : siège, dossier et volant, avec accès complet aux pédales.
     Puis je vérifie appuie-tête, rétroviseurs et ceinture. L’important est leur adaptation à ma position finale,
     pas la récitation d’un ordre unique.'

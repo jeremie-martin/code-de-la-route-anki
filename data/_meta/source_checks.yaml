@@ -1040,3 +1040,8 @@
   url: https://equipementsdelaroute.cerema.fr/IMG/pdf/IISR_7ePARTIE_VC_20160215_cle217e65.pdf
   portee: 'IISR 7e partie (VC 2025-04-04 ; teneur identique à la VC 2016-02-15 consultée), art. 118-1 C : traversée cyclable marquée par des bandes rectangulaires blanches parallèles à l’axe de la chaussée, de largeur moitié de celle des bandes d’un passage piéton (art. 118), espacées de 0,40 m (réductible à 0,25 m) ; art. 118-7 : caractères des inscriptions fortement dilatés dans le sens longitudinal. Dessins corrigés en conséquence.'
   notes: [marq-passage-cyclistes, marq-couloir-bus, marq-damier-blanc, u-voie-bus]
+- id: alerte-populations-2026-09-23
+  consulte_le: '2026-09-23'
+  url: https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+  portee: 'PSC juillet 2026, fiche « Alerte et protection des populations » (p. 8–9) : signal en trois cycles de 1 min 41 espacés de 5 s, fin d’alerte par un son continu de 30 s, essai sur un seul cycle le premier mercredi du mois à midi ; FR-Alert ; réflexes : se mettre en sécurité (bâtiment le plus proche), ne pas chercher les enfants à l’école, s’informer, ne téléphoner qu’en urgence vitale, suivre les consignes. Préfecture du Haut-Rhin : rester dans un véhicule est à éviter. Exemple officiel Q11 (Sécurité routière, 2023, p. 7) : photo revue, le motard suit la voiture, masqué ; bonne réponse « le conducteur de la voiture ».'
+  notes: [a-alerte-populations, aff-c-pieton-detectable-motard]

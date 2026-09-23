@@ -48,12 +48,12 @@
   sous_theme: distances
   source: 'Cerema, Évaluation V80 (2020), annexe 2, temps de réaction et modèle de distance d’arrêt'
 - id: aff-c-pieton-detectable-motard
-  contexte: Je suis piéton. Une moto arrive près du passage où je veux traverser.
-  affirmation: Si je vois le motard, je peux présumer qu’il m’a déjà repéré.
+  contexte: Je suis piéton au bord d’un passage sans feux. Une voiture approche ; une moto la suit de près.
+  affirmation: Le motard me voit aussi facilement que le conducteur de la voiture.
   verdict: faux
-  pourquoi: 'La visibilité réciproque n’est pas garantie : masque, angle mort ou attention ailleurs. Je m’assure
-    que le véhicule ralentit et peut s’arrêter avant de traverser. Ni le type de véhicule ni le regard apparent
-    ne prouvent que j’ai été vu.'
+  pourquoi: 'La voiture qui le précède me masque au motard, comme elle me le masque : seul le conducteur de tête a la vue
+    dégagée sur moi. Avant de m’engager, je vérifie qu’aucun deux-roues ne suit ou ne double le véhicule de tête ; même
+    quand je vois un conducteur, je m’assure qu’il s’arrête.'
   theme: C
   sous_theme: vigilance
   source: "Sécurité routière, Exemples de nouvelles questions (Q11)"

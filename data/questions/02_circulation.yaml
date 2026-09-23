@@ -686,12 +686,13 @@
 - id: l-voie-lents
   question: Une voie à droite est signalée pour les véhicules lents. Ma voiture tractant une remorque n’arrive pas
     à dépasser 60 km/h dans la montée. Dois-je l’utiliser ?
-  reponse: 'Oui : cette voie concerne les véhicules lents, pas seulement les camions.'
-  explication: Lire la prescription et ses conditions ; à sa fin, se réinsérer après contrôles et sans forcer le
-    passage.
+  reponse: 'Oui : cette voie leur est réservée, et est « lent » tout véhicule qui ne peut dépasser 60 km/h sur la section
+    en cause, quel que soit son type ; mon ensemble en fait partie.'
+  explication: En bout de voie, je cède le passage aux usagers de la circulation générale (R422-2). Sauf signalisation contraire,
+    je peux emprunter un moment la voie de gauche pour dépasser un véhicule plus lent (R422-1).
   theme: L
   sous_theme: signalisation
-  source: Code de la route, R422-1
+  source: Code de la route, art. R422-1 et R422-2 ; IISR, 4e partie (voie réservée aux véhicules lents)
 - id: l-jalonnement-destinataire
   question: À qui s’adresse ce panneau directionnel ?
   reponse: 'Aux cyclistes : il jalonne un itinéraire cyclable ; ma voiture suit les panneaux de direction ordinaires.'

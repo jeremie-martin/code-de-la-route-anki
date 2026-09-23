@@ -1,26 +1,26 @@
 # Statistiques du build
-- Notes : 1011
-- Cartes : 1068
-- Socle : 515 notes / 557 cartes (positions 1 à 557), puis consolidation
+- Notes : 1012
+- Cartes : 1066
+- Socle : 515 notes / 554 cartes (positions 1 à 554), puis consolidation
 
 ## Par type de note
 - CDR Affirmation : 226
 - CDR Confusion : 43
 - CDR Fait : 97
-- CDR Question : 313
+- CDR Question : 314
 - CDR Reconnaissance : 278
 - CDR Scenario : 54
 
 ## Cartes par sous-deck
-- Code de la route 2026 : 1068
+- Code de la route 2026 : 1066
 - Code de la route 2026::00 Méthode d'examen : 6
 - Code de la route 2026::01 Signalisation : 332
 - Code de la route 2026::02 Circulation : 167
 - Code de la route 2026::03 Le conducteur : 91
 - Code de la route 2026::04 La route : 74
 - Code de la route 2026::05 Les autres usagers : 75
-- Code de la route 2026::06 Réglementation et notions diverses : 85
-- Code de la route 2026::07 Premiers secours : 39
+- Code de la route 2026::06 Réglementation et notions diverses : 82
+- Code de la route 2026::07 Premiers secours : 40
 - Code de la route 2026::08 Prendre et quitter son véhicule : 34
 - Code de la route 2026::09 Mécanique et équipements : 85
 - Code de la route 2026::10 Sécurité du passager et du véhicule : 46
@@ -33,7 +33,7 @@
 - **R : La route** : autoroute 16, chantiers 2, intemperies 22, montagne 6, nuit 8, passages_a_niveau 9, tramways 3, tunnels 7
 - **U : Les autres usagers** : cyclistes 14, edpm 7, motos 9, pietons 14, poids_lourds 9, transports_commun 3, vehicules_lents_animaux 6, vehicules_prioritaires 7
 - **D : Les notions diverses** : controle_technique 1, documents 15, permis 12, points 12, sanctions 21
-- **A : Les premiers secours** : alerter 8, applications 2, obligations 7, pas 1, proteger 7, secourir 14
+- **A : Les premiers secours** : alerter 9, applications 2, obligations 7, pas 1, proteger 7, secourir 14
 - **P : Prendre et quitter son véhicule** : installation 14, quitter 12, verifications 8
 - **M : La mécanique et les équipements** : adas 14, applications 1, depannage 6, entretien 10, feux 7, freinage 6, pneus 9, tableau_de_bord 3, voyants 28
 - **S : La sécurité du passager et du véhicule** : applications 2, chargement 14, enfants 10, equipements 2, passagers 13

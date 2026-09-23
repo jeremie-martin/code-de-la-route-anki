@@ -200,3 +200,16 @@
   theme: A
   sous_theme: obligations
   source: Code de la route, art. R231-1
+- id: a-alerte-populations
+  question: 'Je roule en ville ; les sirènes émettent un son montant et descendant, répété en plusieurs cycles, un jour
+    qui n’est pas celui de l’essai mensuel. Que fais-je ?'
+  reponse: 'C’est le signal national d’alerte : je m’arrête en sécurité et je rejoins le bâtiment le plus proche, sans
+    rester dans la voiture.'
+  explication: 'Ensuite je m’informe (radio, FR-Alert, comptes officiels) et j’applique les consignes (confinement ou
+    évacuation). Je ne vais pas chercher les enfants à l’école : leurs enseignants les protègent. Je ne téléphone qu’en
+    cas d’urgence vitale. L’essai a lieu le premier mercredi du mois à midi, sur un seul cycle ; la fin d’alerte est un
+    son continu de 30 s.'
+  theme: A
+  sous_theme: alerter
+  source: Sécurité civile, PSC juillet 2026, fiche « Alerte et protection des populations », p. 8–9 ; arrêté du 23 mars 2007 (signal national d’alerte) ; préfecture du Haut-Rhin, Comment réagir au signal national d’alerte
+

@@ -12,7 +12,7 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Même piquet que les balises d’intersection et de bord de chaussée : seule la bande blanche désigne un virage.'
+  piege: Parmi les balises à piquet, seule celle à bande blanche désigne un virage.
   comparaisons:
   - ref: j3
     legende: 'Bande rouge : intersection.'
@@ -65,14 +65,16 @@
   type: balise
   code: J6
   image:
-    commons: FR road beacon J6.svg
+    gen: balise_piquet
+    params:
+      kind: j6
   nom: Délinéateur (balise de délimitation de chaussée)
   signification: 'Balise de bord de chaussée : elle jalonne le tracé de la route, surtout de nuit, sans annoncer de danger particulier.'
   conduite: S'en servir pour évaluer le tracé et garder sa trajectoire de nuit.
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Même piquet que les balises de virage et d’intersection : seule la bande noire désigne le simple guidage.'
+  piege: 'Piquet blanc comme les balises de virage et d’intersection : la bande noire oblique désigne le simple guidage.'
   comparaisons:
   - ref: j1
     legende: 'Bande blanche : virage.'

@@ -37,11 +37,10 @@
   source: "Code de la route, L223-2, L235-1 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F31551"
 - id: d-probatoire-3-points
   texte: En permis probatoire, une infraction retirant au moins {{c1::3 points}} entraîne l’obligation de suivre un stage
-    de sensibilisation (lettre 48N).
-  explication: 'Le stage, à suivre dans les 4 mois, rend jusqu’à 4 points dans la limite du capital. L’amende est remboursée (ou n’est
-    plus recouvrée) sur demande envoyée dans les 15 jours ouvrables après le stage ; passé ce délai, la demande est rejetée.
-    La perte de la totalité des points (6 la première année) entraîne l’invalidation du permis : un seul délit ou une contravention
-    à 6 points suffit.'
+    de sensibilisation.
+  explication: Le stage, à suivre dans les 4 mois, rend jusqu’à 4 points dans la limite du capital. L’amende est remboursée
+    (ou n’est plus recouvrée) sur demande envoyée dans les 15 jours ouvrables après le stage ; passé ce délai, la demande
+    est rejetée.
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-6, R223-4, R223-8 (décret 2025-1437), L223-5
@@ -137,15 +136,14 @@
   - 'Refuser la priorité à un piéton : 135 € et {{c2::6 points}}.'
   - 'Ne pas s’arrêter à un feu jaune fixe alors que c’était possible : {{c3::35 €}}, sans retrait de points.'
 - id: d-vitesse-bareme
-  explication: Le retrait pour les excès < 5 km/h a été supprimé le 1er janvier 2024. Les excès portent sur la vitesse retenue, après la marge propre au dispositif de contrôle.
+  explication: Le retrait pour les excès de moins de 5 km/h a été supprimé le 1er janvier 2024 ; l’amende reste. Les excès
+    portent sur la vitesse retenue, après la marge propre au dispositif de contrôle.
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R413-14 ; décret n° 2023-1150 du 6 décembre 2023
   rappels:
-  - Un excès de vitesse retenu de moins de 5 km/h entraîne le retrait de {{c1::0 point}} ; l’amende reste applicable.
-  - Un excès de vitesse retenu de 5 à 19 km/h entraîne le retrait de {{c2::1 point}}.
-  - Un excès de vitesse retenu de 20 à 29 km/h entraîne le retrait de {{c3::2 points}}.
-  - Un excès de vitesse retenu de 30 à 39 km/h entraîne le retrait de {{c4::3 points}}.
+  - 'Retrait de points selon l’excès de vitesse retenu : moins de 5 km/h, {{c1::0 point}} ; de 5 à 19 km/h, {{c1::1 point}}
+    ; de 20 à 29 km/h, {{c1::2 points}} ; de 30 à 39 km/h, {{c1::3 points}}.'
 - id: d-grand-exces
   explication: 'Depuis le 29 décembre 2025 (loi du 9 juillet 2025), c''est un délit dès la première fois : 6 points, peines judiciaires encourues ou amende forfaitaire délictuelle de 300 €, suspension, annulation ou confiscation possibles. Auparavant, c''était une contravention de 5e classe, délit seulement en récidive.'
   theme: D
@@ -233,7 +231,9 @@
   - Après une rétention, la suspension administrative du préfet dure au plus {{c2::6 mois}} (1 an notamment pour alcool,
     stupéfiants, refus de vérification ou accident corporel ou mortel).
 - id: d-documents-bord
-  explication: Permis physique ou numérique admis. Les agents peuvent aussi demander à voir le gilet et le triangle (R233-1).
+  explication: 'L’attestation d’assurance n’est plus à présenter depuis le 1er avril 2024 : les agents vérifient l’assurance
+    dans le fichier des véhicules assurés. Permis physique ou numérique admis. Les agents peuvent aussi demander à voir
+    le gilet et le triangle (R233-1).'
   theme: D
   sous_theme: documents
   source: Code de la route, art. R233-1 ; décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362

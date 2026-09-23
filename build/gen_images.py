@@ -1237,13 +1237,19 @@ def triangle_seul(params):
 
 
 def balise_piquet(params):
-    """Post beacons J1 (white band), J3 (red band), J1bis (red top): white trapezoid post, 1 m high."""
+    """Post beacons J1 (white band), J3 (red band), J1bis (red top), J6 (edge post: slanted top, black oblique band
+    with a reflector): white post, about 1 m high, on the same tile so they compare side by side."""
     kind = params.get("kind", "j1")
     S = SVG(240, 300)
     S.add(f'<rect x="0" y="0" width="240" height="300" fill="{GRASS}"/>')
     S.add(f'<rect x="0" y="230" width="240" height="70" fill="{ASPHALT}"/>')
     # post (slightly tapered), ground shadow
     S.add('<ellipse cx="120" cy="262" rx="34" ry="8" fill="#000" opacity="0.25"/>')
+    if kind == "j6":
+        S.add('<path d="M96,40 L144,62 L150,262 L90,262 Z" fill="#eeeeee" stroke="#8a8a8a" stroke-width="2"/>')
+        S.add('<path d="M95,70 L145,94 L146,140 L94,116 Z" fill="#111111"/>')                # black oblique band
+        S.add('<rect x="108" y="90" width="24" height="30" fill="#f2f2f2" stroke="#6a6a6a" stroke-width="1.5"/>')  # reflector
+        return str(S)
     S.add('<path d="M96,40 L144,40 L150,262 L90,262 Z" fill="#eeeeee" stroke="#8a8a8a" stroke-width="2"/>')
     if kind == "j1bis":
         S.add('<path d="M96,40 L144,40 L146,86 L94,86 Z" fill="#d8362d"/>')
@@ -1280,6 +1286,7 @@ def voyant_direction(params):
 INK = LABEL
 ANSWER = "#17566e"            # cards.css --answer (light theme)
 WRONG = "#a33c30"             # cards.css --false
+WRONG_ON_ROAD = "#ff8a7a"     # the same "not allowed" red, light enough to read on asphalt
 SIGN_RED, SIGN_BLUE = "#d52b1e", "#1f5fae"
 PAPER = "#ffffff"
 VISIBLE = "#fff9c4"
@@ -1859,9 +1866,9 @@ def rue_stationnement(params):
         if params.get("no_parking"):
             y0, y1 = cross + 34, cross + 34 + 100                               # 5 m at 20 px/m, upstream
             S.add(f'<rect x="{park0 + 4}" y="{y0}" width="{park1 - park0 - 10}" height="{y1 - y0}" fill="none" '
-                  f'stroke="{WRONG}" stroke-width="3" stroke-dasharray="8 6"/>')
+                  f'stroke="{WRONG_ON_ROAD}" stroke-width="3" stroke-dasharray="8 6"/>')
             S.add(f'<path d="M{park0 + 8},{y0 + 4} L{park1 - 10},{y1 - 4} M{park1 - 10},{y0 + 4} L{park0 + 8},{y1 - 4}" '
-                  f'stroke="{WRONG}" stroke-width="3"/>')
+                  f'stroke="{WRONG_ON_ROAD}" stroke-width="3"/>')
             _dim_v(S, park1 + 22, y0, y1, "5 m")
     for i, y in enumerate(params.get("parked", [])):
         S.add(f'<g transform="translate({px},{y})">{vehicle_sprite("car", "gris")}</g>')
@@ -2466,8 +2473,8 @@ def pieton_carrefour(params):
     S.add(f'<rect x="130" y="0" width="140" height="400" fill="{ASPHALT}"/><rect x="0" y="130" width="400" height="140" fill="{ASPHALT}"/>')
     for d in ("M200,0 V120 M200,280 V400", "M0,200 H120 M280,200 H400"):
         S.add(f'<path d="{d}" stroke="{MARK}" stroke-width="4" stroke-dasharray="20 20"/>')
-    S.add(f'<path d="M140,260 L260,140" stroke="{WRONG}" stroke-width="3" stroke-dasharray="8 6"/>'
-          f'<path d="M188,188 l24,24 M212,188 l-24,24" stroke="{WRONG}" stroke-width="4"/>')
+    S.add(f'<path d="M140,260 L260,140" stroke="{WRONG_ON_ROAD}" stroke-width="3" stroke-dasharray="8 6"/>'
+          f'<path d="M188,188 l24,24 M212,188 l-24,24" stroke="{WRONG_ON_ROAD}" stroke-width="4"/>')
     S.add(f'<path d="M110,300 V110 H300" fill="none" stroke="{ME_PATH}" stroke-width="4" stroke-dasharray="10 7"/>'
           f'<path d="M290,100 l12,10 l-12,10" fill="none" stroke="{ME_PATH}" stroke-width="4"/>')
     S.add(pedestrian(110, 322))

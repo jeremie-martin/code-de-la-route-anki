@@ -14,7 +14,9 @@ correction locale créait une incohérence ailleurs. La méthode ci-dessous a fa
 3. **Tout couvrir, pas un échantillon** : chaque note reçoit un verdict et ses sources, le deck étant réparti
    en groupes. « OK » veut dire vérifié, pas « rien de bizarre ». C’est ce qui permet de finir.
 4. **Un angle par passe** : exactitude juridique, apprenant qui étudie dans l’ordre sur les cartes rendues,
-   images, confrontation aux sources. Chaque angle trouve une classe de problèmes différente.
+   apprenant qui répond au recto avant de lire le verso (question ambiguë, réponse décalée, carte devinée,
+   prérequis pas encore vu), images en clair et en sombre, couverture du programme officiel de l’ETG,
+   confrontation aux sources. Chaque angle trouve une classe de problèmes différente.
 5. **Seul le fond bloque** : faux, trompeur, contradictoire. Le goût se note et ne se corrige pas.
 6. **Preuve, puis vérification** : un constat cite sa source primaire ; chaque constat est revérifié avant
    d’être appliqué (les relecteurs se trompent aussi : règle étrangère, article mal lu, chiffre inventé).
@@ -29,7 +31,9 @@ correction locale créait une incohérence ailleurs. La méthode ci-dessous a fa
     `docs/research/verification-*`, et une liste franche de ce qui reste ouvert.
 
 Une tâche est finie quand une passe complète et sa relecture finale ne laissent aucun constat bloquant, et que
-les incertitudes restantes sont écrites.
+les incertitudes restantes sont écrites. Quand les constats ne portent plus que sur des détails, une nouvelle passe
+générale coûte presque autant qu’elle rapporte (une part des derniers défauts venait des corrections elles-mêmes) :
+geler, étudier, et ne traiter que les retours d’usage.
 
 ## Mettre en œuvre
 
@@ -47,3 +51,16 @@ les incertitudes restantes sont écrites.
   type, chacun avec citation et correction prête.
 - **Publication** : le paquet rebâti passe `build.verify --previous` sur le paquet déjà importé ; les notes
   retirées y sont nommées pour que l’utilisateur les supprime.
+
+## Gel, retours d’étude et publication
+
+- **Gel** : après la passe finale, plus de relecture générale. Le deck ne change que pour un retour d’usage ou une
+  règle modifiée.
+- **Retours d’étude** : pendant l’étude, marquer d’un drapeau Anki la carte qui gêne (ambiguë, fausse, trop facile,
+  mal placée, image peu claire) et noter un mot dans la carte ou à part avec son `Id`. Chaque retour se traite comme
+  une classe (principe 1) : chercher les cartes semblables, corriger par type, relire les modifications.
+- **Avant de publier** : revérifier sur Légifrance les règles datées (vitesses, sanctions, délits récents, décrets
+  attendus) et dater l’état du droit dans le README ; regarder le deck sur AnkiDroid et AnkiMobile, en clair et en
+  sombre ; relire `out/ATTRIBUTIONS.md` et la section Licences du README ; vérifier que le dépôt publié ne contient
+  que des textes publics (le livre commercial et `cdr.txt` sont ignorés par git) ; noter dans maintenance.md le
+  commit du paquet publié, référence des mises à jour suivantes.

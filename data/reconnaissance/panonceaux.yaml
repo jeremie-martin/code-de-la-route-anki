@@ -202,10 +202,11 @@
   image:
     commons: France road sign M9d.svg
   nom: Passage pour piétons surélevé
-  signification: 'Sous le panneau de passage pour piétons, indique un passage surélevé : je ralentis avant le plateau.'
+  signification: 'Le passage pour piétons est surélevé : je ralentis avant le plateau.'
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  question: Placé sous un panneau de passage pour piétons, que signifie ce panonceau ?
 - id: m9v1
   type: panonceau
   code: M9v1
@@ -234,7 +235,7 @@
   image:
     commons: France road sign M10b.svg
   nom: 'Cartouche : numéro d''échangeur'
-  signification: 'Cartouche placé au-dessus du panneau d''entrée d''autoroute (ou de route à accès réglementé) : numéro de l''échangeur par lequel j''entre.'
+  signification: Numéro de l’échangeur, qui est aussi celui de sa sortie ; placé au-dessus du panneau d’entrée d’autoroute ou de route pour automobiles, il indique par quel échangeur j’entre.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

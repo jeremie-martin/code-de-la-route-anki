@@ -69,6 +69,7 @@ ALT_COMMONS = {
 GEN_MAP = {
     "J1": ("balise_piquet", {"kind": "j1"}),
     "J3": ("balise_piquet", {"kind": "j3"}),
+    "J6": ("balise_piquet", {"kind": "j6"}),
     "J1bis": ("balise_piquet", {"kind": "j1bis"}),
     "MARQ-ligne-continue": ("ligne_axiale", {"style": "continue"}),
     "MARQ-ligne-discontinue-T1": ("ligne_axiale", {"style": "discontinue", "dash": 3, "gap": 10}),
