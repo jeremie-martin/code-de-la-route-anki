@@ -150,13 +150,13 @@ Recherche Anki : `objectif::l-intersection`
 
 Distinguer priorité à l'entrée et priorité lors d'un changement de voie.
 
-10 notes / 10 cartes.
+11 notes / 11 cartes.
 
 Recherche Anki : `objectif::l-giratoire`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `l-giratoire-vs-rond-point` | socle | questions | Code de la route, art. R415-10 ; IISR (AB25) |
+| `l-giratoire-vs-rond-point` | socle | questions | Code de la route, art. R110-2, R415-5 et R415-10 |
 | `l-giratoire-clignotant` | socle | questions | Code de la route, R412-9 et R412-10 ; Association Prévention Routière, https://www.preventionroutiere.asso.fr/le-carrefour-giratoire-commen-bien-lemprunter/ |
 | `l-giratoire-placement` | socle | questions | Code de la route, R412-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688 |
 | `l-giratoire-sortie-impossible` | socle | questions | Code de la route, R412-9 et R412-10, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177121/ |
@@ -165,6 +165,7 @@ Recherche Anki : `objectif::l-giratoire`
 | `aff-l-demi-tour-giratoire` | consolidation | affirmations | Code de la route, art. R415-10 ; REMC |
 | `scn-giratoire-cedez` | socle | scenarios | Code de la route, art. R415-10 ; IISR (AB25) |
 | `scn-rond-point-priorite-droite` | consolidation | scenarios | Code de la route, art. R415-5 et R415-10 ; IISR |
+| `scn-rond-point-dans-anneau` | consolidation | scenarios | Code de la route, art. R415-5 et R415-10 |
 | `scn-giratoire-autre-entree` | socle | scenarios | Code de la route, art. R415-10 |
 
 ## l-feux : Combiner feux, agent et restrictions

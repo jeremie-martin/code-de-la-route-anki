@@ -374,3 +374,16 @@
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5 et R415-10 ; IISR"
+- id: scn-rond-point-dans-anneau
+  kind: roundabout
+  spec:
+    giratoire: false
+    vehicles:
+      - {pos: inside, angle: 300, colour: bleu, me: true}
+      - {pos: E, colour: rouge, goes: straight, distance: 20}
+  question: "Je circule dans l'anneau. Qui passe en premier, la voiture rouge ou moi ?"
+  reponse: 'La rouge : sans cédez-le-passage ni STOP aux entrées, la priorité à droite s''applique, et elle arrive à ma droite.'
+  explication: 'Conséquence peu intuitive de la priorité à droite : dans un tel rond-point, je cède à chaque entrée sur ma droite, même si je suis déjà engagé. Au carrefour à sens giratoire, c''est l''inverse.'
+  theme: L
+  sous_theme: priorites
+  source: "Code de la route, art. R415-5 et R415-10"

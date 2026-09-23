@@ -136,6 +136,7 @@
   - scn-giratoire-autre-entree
   consolidation:
   - scn-rond-point-priorite-droite
+  - scn-rond-point-dans-anneau
   - aff-l-giratoire-sortie-cede
   - aff-l-giratoire-depassement
   - aff-l-demi-tour-giratoire

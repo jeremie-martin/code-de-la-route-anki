@@ -32,6 +32,23 @@ Conserver plusieurs cartes d’une règle si elles font travailler des compéten
 puis scène à lire). Éviter les reformulations qui demandent exactement le même rappel. Les exemples chiffrés
 servent à comprendre une relation ; leur résultat seul ne doit pas devenir la connaissance à apprendre.
 
+## Une carte forte
+
+- **Un rappel par carte.** La réponse attendue tient en une décision, une valeur ou un critère. Deux règles à
+  réciter font deux cartes, ou une question sur le critère qui les départage. Une liste n’est une cible que si
+  la liste elle-même est la connaissance (numéros d’urgence).
+- **Le recto oriente vers le bon critère.** Il pose la question dans les termes de la situation réelle et
+  conduit au critère décisif (le panneau à l’entrée), jamais vers une catégorie que la réponse déclare sans
+  effet (la forme ronde) : chaque révision renforce la manière de penser que l’énoncé suggère.
+- **La réponse commence par ce qui décide.** L’élément décisif est dans la réponse, pas relégué en explication.
+  L’explication donne le mécanisme, la limite ou le piège sans répéter la réponse ; une légende d’image dit ce
+  que le texte ne dit pas. Une information ne se lit qu’à un endroit.
+- **Une image montre la situation et ce qu’il faut retenir** (qui cède à qui), avec des éléments d’un même
+  rôle : un panneau d’annonce et un panneau d’entrée ne se juxtaposent pas comme s’ils étaient équivalents.
+- **La règle couvre ses cas courants et ses conséquences.** Les variantes qui changent peu (cédez-le-passage
+  ou STOP) sont dites ; une conséquence contre-intuitive de la règle (dans un rond-point sans cédez-le-passage,
+  je cède à ceux qui entrent) a sa propre carte.
+
 ## Rédiger et vérifier
 
 - Donner au recto les conditions nécessaires : véhicule, statut du conducteur, route, météo, visibilité,

@@ -70,20 +70,31 @@
           goes: straight
     legende: 'En face (rouge) et, en priorité à droite, à ma droite (vert) : les deux passent avant moi.'
 - id: l-giratoire-vs-rond-point
-  question: Quelle différence entre un carrefour à sens giratoire et un simple rond-point, pour les priorités ?
-  reponse: 'Giratoire (triangle à flèches en anneau, puis cédez-le-passage à chaque entrée) : priorité à ceux qui sont déjà dans l’anneau. Rond-point sans cédez-le-passage (triangle à croix noire, ou rien) : priorité à droite, donc à ceux qui entrent.'
-  explication: 'La forme ronde ne suffit pas : lire les signaux aux entrées.'
+  question: J’arrive à l’entrée d’un rond-point. Qu’est-ce qui décide si je dois laisser passer ceux qui sont déjà dans
+    l’anneau ?
+  reponse: 'Le panneau à l’entrée : avec un cédez-le-passage ou un STOP, je cède à ceux qui sont dans l’anneau ; sans l’un
+    ni l’autre, la priorité à droite s’applique et ce sont eux qui me cèdent.'
+  explication: 'La forme ronde ne décide rien : ce sont ses entrées signalées qui font d’un rond-point un carrefour à sens
+    giratoire (R110-2, R415-10). Sans cédez-le-passage ni STOP, celui qui circule dans l’anneau cède à chaque entrée à sa
+    droite.'
   theme: L
   sous_theme: priorites
-  source: Code de la route, art. R415-10 ; IISR (AB25)
+  source: Code de la route, art. R110-2, R415-5 et R415-10
   debut: true
-  comparaisons:
-  - ref: ab25
-    legende: 'Carrefour à sens giratoire annoncé : flèches en anneau.'
-  - ref: ab3a
-    legende: 'À l’entrée du giratoire : cédez le passage à ceux qui sont dans l’anneau.'
-  - ref: ab1
-    legende: 'Croix noire : priorité à droite ; dans un rond-point, ceux qui entrent sont prioritaires.'
+  illustration:
+    gen: roundabout
+    params:
+      giratoire: true
+      vehicles:
+      - pos: S
+        colour: bleu
+        me: true
+        goes: straight
+        distance: 20
+      - pos: inside
+        angle: 225
+        colour: rouge
+    legende: 'Cédez-le-passage à l’entrée : la rouge, déjà dans l’anneau, passe avant moi.'
 - id: l-giratoire-clignotant
   question: Je vise la sortie indiquée. Quand allumer mon clignotant droit ?
   reponse: Après la sortie précédente, assez tôt pour annoncer la mienne ; pour la première sortie, dès l’approche
