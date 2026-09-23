@@ -469,8 +469,9 @@
   source: IISR 1re partie, art. 8 ; Code de la route, art. R110-2
   illustration:
     gen: portee_prescription
-    params: {}
-    legende: 'En jaune, la portion limitée à 30 : jusqu’à l’intersection pour le panneau isolé, jusqu’à la sortie pour la zone.'
+    params:
+      isole: true
+    legende: En jaune, la portion limitée à 30 par le panneau isolé.
 - id: l-b14-meme-support
   question: À l’entrée d’une agglomération, je vois ce support. Jusqu’où s’applique le 30 ?
   reponse: À toute l’agglomération, pas seulement à la rue où je me trouve.
@@ -529,7 +530,7 @@
 - id: l-vocab-routes-lettres
   question: Que signifient les lettres A, N, D et C (ou M) devant un numéro de route ?
   reponse: A = autoroute ; N = route nationale ; D = route départementale ; C = voie communale (M = voie métropolitaine).
-  explication: Cartouche blanc pour C.
+  explication: 'Couleur du cartouche : rouge pour A et N, jaune pour D, blanc pour C.'
   theme: L
   sous_theme: signalisation
   source: Code de la route, art. L110-3 et s. ; IISR 5e partie (cartouches E42-E44)
@@ -539,10 +540,8 @@
   - ref: e43
     legende: 'Cartouche jaune : D.'
 - id: l-klaxon-danger-agglo
-  question: En ville, une voiture se déporte vers ma voie sans m’avoir vu et le choc est imminent. Puis-je klaxonner
-    ?
-  reponse: 'Oui : en agglomération, l''avertisseur sonore est permis en cas de danger immédiat, et seulement dans
-    ce cas.'
+  question: 'En ville, feu vert : la voiture devant moi ne démarre pas. Puis-je klaxonner ?'
+  reponse: 'Non : en agglomération, l’avertisseur sonore n’est permis qu’en cas de danger immédiat.'
   explication: 'Hors agglomération, il sert aussi à annoncer un dépassement ou un croisement difficile ; la nuit,
     les appels de phares le remplacent sauf danger immédiat (R416-1 à R416-3). Face à un enfant ou un animal, le klaxon
     peut provoquer un sursaut : ralentir et s’arrêter vaut mieux.'
@@ -560,8 +559,8 @@
 - id: l-pluie-route80
   theme: L
   sous_theme: vitesse
-  question: Route hors agglomération limitée à 80 km/h, il pleut. La limite devient-elle automatiquement 70 ?
-  reponse: 'Non : le plafond reste 80 km/h ; mon allure réelle peut devoir être bien plus basse.'
+  question: Route hors agglomération limitée à 80 km/h, il pleut. Quel est mon plafond ?
+  reponse: '80 km/h : la pluie n’abaisse pas une route déjà à 80 ; mon allure réelle peut devoir être bien plus basse.'
   explication: 'Ne pas soustraire systématiquement 10 ou 20 : identifier le type de route et les plafonds applicables.'
   source: "Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/"
 - id: l-feu-vert-interdiction-tourner

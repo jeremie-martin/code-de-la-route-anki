@@ -1,35 +1,35 @@
 # Statistiques du build
-- Notes : 1015
-- Cartes : 1074
+- Notes : 1011
+- Cartes : 1068
 - Socle : 515 notes / 557 cartes (positions 1 à 557), puis consolidation
 
 ## Par type de note
-- CDR Affirmation : 227
+- CDR Affirmation : 226
 - CDR Confusion : 43
 - CDR Fait : 97
 - CDR Question : 313
-- CDR Reconnaissance : 281
+- CDR Reconnaissance : 278
 - CDR Scenario : 54
 
 ## Cartes par sous-deck
-- Code de la route 2026 : 1074
+- Code de la route 2026 : 1068
 - Code de la route 2026::00 Méthode d'examen : 6
-- Code de la route 2026::01 Signalisation : 335
+- Code de la route 2026::01 Signalisation : 332
 - Code de la route 2026::02 Circulation : 167
-- Code de la route 2026::03 Le conducteur : 92
+- Code de la route 2026::03 Le conducteur : 91
 - Code de la route 2026::04 La route : 74
 - Code de la route 2026::05 Les autres usagers : 75
 - Code de la route 2026::06 Réglementation et notions diverses : 85
 - Code de la route 2026::07 Premiers secours : 39
 - Code de la route 2026::08 Prendre et quitter son véhicule : 34
-- Code de la route 2026::09 Mécanique et équipements : 87
+- Code de la route 2026::09 Mécanique et équipements : 85
 - Code de la route 2026::10 Sécurité du passager et du véhicule : 46
 - Code de la route 2026::11 Environnement : 34
 
 ## Notes par thème / sous-thème
 - **X : Méthode d'examen** : lecture 6
-- **L : La circulation routière** : agents 8, applications 13, balises 11, croisement 6, depassement 26, feux 19, marquages 35, panneaux 205, panonceaux 28, positionnement 19, priorites 56, signalisation 26, stationnement 22, vitesse 15
-- **C : Le conducteur** : applications 1, deficiences 40, distances 13, perception 9, vigilance 23
+- **L : La circulation routière** : agents 8, applications 13, balises 11, croisement 6, depassement 26, feux 19, marquages 35, panneaux 204, panonceaux 26, positionnement 19, priorites 56, signalisation 26, stationnement 22, vitesse 15
+- **C : Le conducteur** : applications 1, deficiences 40, distances 13, perception 9, vigilance 22
 - **R : La route** : autoroute 16, chantiers 2, intemperies 22, montagne 6, nuit 8, passages_a_niveau 9, tramways 3, tunnels 7
 - **U : Les autres usagers** : cyclistes 14, edpm 7, motos 9, pietons 14, poids_lourds 9, transports_commun 3, vehicules_lents_animaux 6, vehicules_prioritaires 7
 - **D : Les notions diverses** : controle_technique 1, documents 15, permis 12, points 12, sanctions 21

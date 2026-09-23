@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml (19 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (18 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: ak2
   type: panneau
   code: AK2
@@ -170,17 +170,6 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-- id: kc1
-  type: panneau
-  code: KC1
-  image:
-    commons: KC1 route barrée.svg
-  nom: Panneau d'indication temporaire (route barrée, circulation alternée…)
-  signification: 'Panneau rectangulaire jaune à inscription informant d''une situation temporaire : « ROUTE BARRÉE », « CIRCULATION ALTERNÉE », « CHAUSSÉE DÉFORMÉE »…'
-  conduite: 'Lire et appliquer : « route barrée » = déviation ; « absence de marquage » = serrer à droite.'
-  theme: L
-  sous_theme: panneaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: kd10
   type: panneau
   code: KD10
@@ -188,7 +177,7 @@
     commons: KD10e1.svg
   nom: Annonce de la réduction du nombre de voies (temporaire)
   signification: 'Annonce une réduction du nombre de voies disponibles : je repère les voies qui ferment et prépare mon changement de voie à la distance indiquée.'
-  conduite: Se rabattre à temps sur les voies restantes en respectant l'alternance (une voiture sur deux) en cas de bouchon.
+  conduite: Se rabattre à temps sur les voies restantes ; en bouchon, l’insertion alternée (une voiture sur deux) fluidifie la circulation.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

@@ -198,7 +198,8 @@ autres notes de L dans « 02 Circulation » ; chaque autre thème dans son sous-
 Calculé par `curriculum()` (`build/build.py`) et exporté comme position des cartes nouvelles : méthode (X), puis
 les notes `debut: true`, puis toutes les pistes entrelacées au prorata de leur taille. Dans une piste :
 sous-thèmes dans l’ordre, faits avant questions avant affirmations, puis ordre du fichier. Les reconnaissances
-suivent `RECON_ORDER`, une comparaison vient après ses deux membres, un scénario après les signaux dont il
+suivent `RECON_ORDER`, une comparaison vient `CONFUSION_GAP` signaux après le second de ses
+membres (le lendemain environ : la paire se rappelle au lieu de se relire), un scénario après les signaux dont il
 dépend (`SCENARIO_GATES`) et, pour le dépassement et le croisement, après les faits et questions de ce sous-thème
 (`SCENARIO_RULE_GATES`). Le socle passe avant la consolidation ; les prérequis (`image_ref`, `prerequis`) sont
 avancés juste avant la note (un prérequis d’une note du socle doit être au socle) ; les cartes sœurs d’un fait

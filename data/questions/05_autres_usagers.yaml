@@ -78,10 +78,9 @@
 - id: u-cyclistes-de-front
   question: De jour, sur route, deux cyclistes roulent de front devant moi et j'annonce mon intention de les dépasser. Que
     doivent-ils faire ?
-  reponse: 'Se remettre en file simple : rouler de front est permis, mais la file simple s’impose dès qu’un véhicule annonce
-    son dépassement ou à la nuit tombée.'
-  explication: 'Exceptions : aires piétonnes, zones de rencontre et voies vertes (décret 2024-1074). Même en file, je garde
-    1,50 m hors agglomération et je ne les serre pas.'
+  reponse: 'Se remettre en file simple : rouler à deux de front est permis, mais pas quand un véhicule annonce son dépassement.'
+  explication: 'Même obligation à la chute du jour (R431-7). Exceptions : aires piétonnes, zones de rencontre et voies vertes.
+    Même en file, je garde 1,50 m hors agglomération.'
   theme: U
   sous_theme: cyclistes
   source: Code de la route, art. R431-7 et R414-4

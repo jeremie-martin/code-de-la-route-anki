@@ -50,8 +50,8 @@
   - Depuis 2016, des {{c2::gants}} certifiés CE sont obligatoires à moto et en cyclomoteur, pour le conducteur et le passager.
 - id: u-pl-angles-morts-chiffres
   texte: Cet autocollant est obligatoire depuis 2021, sur les côtés et à l’arrière, des véhicules de plus de {{c1::3,5 t}}.
-  explication: 'Ils rappellent de ne pas s’attarder dans ces zones, surtout à droite de la cabine. Leur absence ne prouve
-    pas l’absence d’angle mort : une camionnette en a aussi.'
+  explication: 'Ces autocollants rappellent de ne pas s’attarder dans ces zones, surtout à droite de la cabine. Leur absence
+    ne prouve pas l’absence d’angle mort : une camionnette en a aussi.'
   theme: U
   sous_theme: poids_lourds
   source: "securite-routiere.gouv.fr, Angles morts ; Code de la route, art. R313-32-1 et R412-12"

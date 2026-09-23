@@ -26,7 +26,7 @@
   question: En roulant, ce voyant rouge s’allume. Que signale-t-il et que faire ?
   nom: Charge de la batterie (rouge)
   signification: 'Défaut du circuit de charge : la batterie peut ne plus se recharger correctement.'
-  conduite: Je gagne un endroit sûr et consulte les messages et la notice ; avec STOP, arrêt impératif en sécurité.
+  conduite: Je gagne un endroit sûr et consulte les messages et la notice ; si le message « STOP » s’affiche aussi, arrêt impératif en sécurité.
   piege: 'L''autonomie restante est inconnue : les consommateurs (feux, climatisation) épuisent la batterie ; je n''ai
     aucune garantie de rejoindre un garage.'
   theme: M
@@ -129,7 +129,7 @@
     commons: ISO 7000 - Ref-No 1407.svg
     tint: '#fb8c00'
   nom: Défaut ABS (orange)
-  signification: 'Voyant restant allumé : défaut de l’antiblocage. Les roues peuvent se bloquer au freinage.'
+  signification: 'Voyant restant allumé : défaut de l’antiblocage des roues (ABS). Les roues peuvent se bloquer au freinage.'
   conduite: Si le freinage ordinaire est normal et sans autre alerte, j’adapte l’allure et fais contrôler. Sinon,
     arrêt en sécurité.
   piege: L’absence d’ABS seule n’impose pas un arrêt sur-le-champ ; un défaut du circuit de freinage est différent.
@@ -141,7 +141,7 @@
   code: ESP / ESC
   image: {commons: "Kontrollleuchte ESP 2.svg", tint: "#fb8c00"}
   nom: ESP / contrôle de stabilité (orange)
-  signification: "Clignotant : l'ESP intervient (perte d'adhérence détectée). Fixe : ESP désactivé ou en défaut."
+  signification: "Clignotant : l'ESP (contrôle électronique de stabilité) intervient (perte d'adhérence détectée). Fixe : ESP désactivé ou en défaut."
   conduite: "S'il clignote, je lève le pied et je garde une trajectoire souple, la chaussée est glissante. S'il est fixe alors que je ne l'ai pas désactivé, je fais contrôler."
   theme: M
   sous_theme: voyants
@@ -205,7 +205,6 @@
   nom: Feux de position allumés (vert)
   signification: "Les feux de position (veilleuses) sont allumés. Ils servent à être vu, pas à éclairer la route."
   conduite: "Obligatoires à l'arrêt ou en stationnement la nuit sur la chaussée, sauf en agglomération suffisamment éclairée. Pour rouler la nuit, ils ne suffisent jamais, même en ville éclairée : feux de croisement."
-  piege: "Seule tolérance des feux de position seuls en marche : de jour, par temps de pluie, en agglomération suffisamment éclairée."
   theme: M
   sous_theme: voyants
   source: "Code de la route, art. R416-1 et s. ; ISO 2575"

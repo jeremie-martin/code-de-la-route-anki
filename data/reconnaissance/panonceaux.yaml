@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml (26 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (24 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: m1
   type: panonceau
   code: M1
@@ -84,8 +84,7 @@
   image:
     commons: France road sign M4f.svg
   nom: 'Catégorie : véhicules dont le PTAC/PTRA excède le nombre indiqué'
-  signification: Le panneau ne s'applique qu'aux véhicules dont le poids total autorisé dépasse la valeur indiquée (ex. « 3,5 t »).
-  complement: Sous un panneau interdisant les véhicules de transport de marchandises, le tonnage précise le poids maximal autorisé au-delà duquel l’interdiction s’applique.
+  signification: Le panneau ne s’applique qu’aux véhicules dont le poids total autorisé dépasse la valeur indiquée (ici 5,5 t).
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -97,16 +96,6 @@
   nom: Stationnement ou arrêt gênant (fourrière)
   signification: 'Le stationnement, ou l’arrêt si le panneau l’interdit aussi, est gênant : le véhicule peut être mis en fourrière.'
   conduite: 'Ne pas s''y arrêter ni stationner : risque d''enlèvement.'
-  theme: L
-  sous_theme: panonceaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-- id: m6b
-  type: panonceau
-  code: M6b
-  image:
-    commons: France road sign M6b debut mois.svg
-  nom: Stationnement unilatéral à alternance semi-mensuelle
-  signification: 'Précise les jours où le stationnement est interdit de ce côté : « du 1er au 15 » ou « du 16 à la fin du mois ».'
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -234,9 +223,8 @@
   image:
     commons: France road sign M9z-2.svg
   nom: Indications diverses par inscription
-  signification: 'Panonceau à inscription libre : « RAPPEL », « SAUF RIVERAINS », « PAR TEMPS DE PLUIE », « SORTIE D''USINE »…'
-  conduite: Lire et appliquer ; « RAPPEL » signifie que la prescription précédente est toujours en vigueur (elle n'est pas nouvelle).
-  complement: « RAPPEL » sous un panneau de vitesse confirme que la limitation continue, notamment après une intersection.
+  signification: '« RAPPEL » : la prescription du panneau au-dessus continue ; elle n’est pas nouvelle (par exemple une limitation de vitesse après une intersection).'
+  complement: 'Panonceau à inscription libre : les autres inscriptions (« SAUF RIVERAINS », « PAR TEMPS DE PLUIE ») se lisent et s’appliquent telles quelles.'
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -251,16 +239,6 @@
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   conduite: 'Je repère ce numéro : il situe mon point d''entrée sur l''itinéraire.'
-- id: m11b1
-  type: panonceau
-  code: M11b1
-  image:
-    commons: France road sign M11b1.svg
-  nom: Période d'application (aire piétonne, zone hivernale)
-  signification: 'Précise les périodes d’application du panneau placé au-dessus : par exemple les horaires d’une aire piétonne ou la période d’équipement hivernal.'
-  theme: L
-  sous_theme: panonceaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: m11d
   type: panonceau
   code: M11d

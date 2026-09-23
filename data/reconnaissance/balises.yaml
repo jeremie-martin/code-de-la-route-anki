@@ -67,12 +67,12 @@
   image:
     commons: FR road beacon J6.svg
   nom: Délinéateur (balise de délimitation de chaussée)
-  signification: Piquets blancs (1 m) espacés le long de l'accotement, portant une bande noire oblique et un catadioptre blanc.
+  signification: 'Balise de bord de chaussée : elle jalonne le tracé de la route, surtout de nuit, sans annoncer de danger particulier.'
   conduite: S'en servir pour évaluer le tracé et garder sa trajectoire de nuit.
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Elle suit le bord de la chaussée, sans annoncer de danger particulier.
+  piege: 'Même piquet que les balises de virage et d’intersection : seule la bande noire désigne le simple guidage.'
   comparaisons:
   - ref: j1
     legende: 'Bande blanche : virage.'

@@ -1,8 +1,8 @@
 - id: p-desembuage-clim
-  texte: Pour désembuer rapidement le pare-brise, j’utilise la {{c1::climatisation}}, qui assèche l’air, avec la ventilation
-    dirigée vers le vitrage.
-  explication: Buée = humidité qui se condense sur une vitre froide. L’air sec l’absorbe ; attendre que la vue soit
-    dégagée avant de partir.
+  texte: Pour désembuer rapidement le pare-brise, je mets la {{c1::climatisation}} en marche, ventilation dirigée vers le
+    vitrage.
+  explication: Buée = humidité condensée sur une vitre froide. La climatisation assèche l’air, qui absorbe cette humidité
+    ; attendre que la vue soit dégagée avant de partir.
   theme: P
   sous_theme: verifications
   source: securite-routiere.gouv.fr, Conduire par mauvais temps ; notices constructeurs (désembuage)

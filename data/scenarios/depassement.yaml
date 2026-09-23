@@ -169,10 +169,10 @@
       - {kind: intersection_gauche, y: 68}
   question: Le véhicule devant moi ralentit, clignotant gauche, pour entrer dans la rue à gauche. Puis-je le dépasser, et
     de quel côté ?
-  reponse: 'Non, d’aucun côté : jamais par la gauche, puisqu’il a annoncé qu’il tourne à gauche ; par la droite, ce serait
-    la règle ailleurs, mais ici aucune signalisation ne me donne la priorité à l’intersection et la place manque : j’attends
-    derrière lui.'
-  explication: Un véhicule qui a signalé qu’il tourne à gauche se dépasse par la droite (R414-6). Mais à une intersection, dépasser autre chose qu’un deux-roues n’est permis que si les usagers des autres routes doivent me céder le passage (STOP, cédez-le-passage, route prioritaire), ou si des feux ou un agent règlent le carrefour (R414-11).
+  reponse: 'Non : pas par la gauche (il tourne à gauche), ni par la droite (à une intersection sans priorité pour moi, dépasser
+    une voiture est interdit) ; j’attends derrière.'
+  explication: Le dépassement par la droite redevient possible hors intersection, ou à une intersection où les autres routes
+    me cèdent le passage, ou que des feux ou un agent règlent (R414-11).
   theme: L
   sous_theme: depassement
   source: "Code de la route, art. R414-6 et R414-11"

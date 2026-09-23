@@ -54,15 +54,16 @@
   question: 'Zone protégée, secours alertés. Une victime est allongée et ne bouge pas : que fais-je en premier ?'
   reponse: Je vérifie si elle répond ; sinon je libère les voies aériennes et recherche une respiration normale pendant dix
     secondes au maximum.
-  explication: 'Les gasps, respirations rares et irrégulières, ne sont pas une respiration normale : alerter, commencer la
-    RCP et faire apporter un DAE.'
+  explication: 'Les gasps, respirations rares et irrégulières, ne sont pas une respiration normale : alerter, commencer
+    les compressions thoraciques et faire apporter un défibrillateur.'
   theme: A
   sous_theme: secourir
   source: "Sécurité civile, PSC juillet 2026, Perte de connaissance, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: a-pls
   question: Après un malaise sans chute ni traumatisme, une personne ne répond pas mais respire normalement. Quel geste après
     vérification de la respiration ?
-  reponse: Je la mets sur le côté (PLS), j’alerte et je surveille sa respiration jusqu’aux secours.
+  reponse: Je la mets sur le côté, en position latérale de sécurité (PLS), j’alerte et je surveille sa respiration jusqu’aux
+    secours.
   explication: La PLS maintient les voies aériennes libres et permet aux liquides de s’écouler. Après un traumatisme ou si la cause est inconnue, la conduite diffère ; suivre les consignes des secours.
   theme: A
   sous_theme: secourir
@@ -71,8 +72,7 @@
   prerequis: [a-evaluer-victime]
   question: 'Un adulte ne répond pas et ne respire pas normalement : pas de respiration, ou seulement des inspirations rares et bruyantes. Que fais-je ?'
   reponse: J’alerte, fais apporter un défibrillateur et commence immédiatement les compressions thoraciques ; je suis les instructions des secours et de l’appareil.
-  explication: J’alterne compressions et insufflations si je sais et peux les pratiquer ; sinon compressions continues.
-    Fréquence 100–120/min, profondeur 5–6 cm.
+  explication: Compressions au centre du thorax, 100 à 120 par minute, 5 à 6 cm de profondeur, sans interruption inutile.
   theme: A
   sous_theme: secourir
   source: "Sécurité civile, PSC juillet 2026, Arrêt cardiaque, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"

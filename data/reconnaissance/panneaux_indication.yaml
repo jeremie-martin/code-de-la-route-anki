@@ -153,9 +153,9 @@
   image:
     commons: France road sign C24a-2.svg
   nom: Conditions particulières de circulation par voie sur la route suivie
-  signification: 'Indique, voie par voie, des conditions particulières de circulation sur la route suivie : voie réservée (bus, vélos), voie à contresens, double-sens cyclable, voie réservée aux véhicules lents, etc.'
+  signification: 'Voie par voie : ma voie à droite, et à gauche une voie à contresens réservée aux cycles ; je croiserai des vélos venant en face.'
   conduite: Se placer dans la voie qui correspond à son véhicule et à sa direction ; ne pas emprunter une voie réservée.
-  complement: 'Ici : une voie dans mon sens et, à gauche, une voie à contresens réservée aux cycles ; je croise des vélos en sens inverse. Le même panneau signale aussi un couloir bus à contresens.'
+  complement: 'Le même modèle décrit d’autres voies : couloir bus (dans mon sens ou à contresens), voie pour véhicules lents.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -200,7 +200,6 @@
   nom: Rappel des limitations de vitesse sur autoroute
   signification: 'Rappel des limites de vitesse sur autoroute : 130 km/h par temps sec et 110 km/h par temps de pluie ; sur les autoroutes limitées à 110, 100 par temps de pluie.'
   conduite: 'Réduire à 110 sur autoroute dès qu’il pleut ou qu’il y a d’autres précipitations (repère pratique : essuie-glaces en marche).'
-  complement: 'Jeune conducteur (permis probatoire) : 110 sur autoroute normalement à 130, 100 sur les autres autoroutes et les routes à chaussées séparées, 80 ailleurs.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -352,11 +351,12 @@
   image:
     commons: France road sign C108.svg
   nom: Fin de route à accès réglementé
-  signification: Fin de la route à accès réglementé ; retour aux règles ordinaires (usagers lents admis, vitesse 80/90, intersections).
+  signification: 'Fin de la route à accès réglementé : piétons, cycles et véhicules lents peuvent de nouveau s’y trouver, et des intersections reprennent.'
   conduite: Réduire la vitesse, se méfier des usagers lents et des intersections.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  complement: 'La vitesse redevient celle du type de route : 80 km/h sur une chaussée unique, 110 si les chaussées restent séparées par un terre-plein central, sauf autre limitation signalée.'
 - id: c111
   type: panneau
   code: C111

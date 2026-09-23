@@ -199,7 +199,8 @@ def split_notes(notes: str) -> tuple[str, str]:
         return "", ""
     n = strip_unverified(notes.strip())
     if re.search(r"confondre|pi[èe]ge|≠|attention|ne pas prendre|à ne pas", n, re.I):
-        return re.sub(r"^\s*Pi[èe]ge\s*:\s*", "", n), ""
+        piege = re.sub(r"^\s*Pi[èe]ge\s*:\s*", "", n)
+        return piege[:1].upper() + piege[1:], ""
     return "", n
 
 

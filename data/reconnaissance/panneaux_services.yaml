@@ -6,7 +6,7 @@
     commons: France road sign CE2a.svg
   nom: Poste d'appel d'urgence
   signification: Indique un poste d'appel d'urgence (borne orange reliée aux secours), notamment quand il n'est pas visible depuis la route.
-  conduite: 'Sur autoroute, les bornes sont tous les 2 km : les préférer au téléphone portable car elles localisent l''appel.'
+  conduite: 'Sur autoroute, préférer les bornes d’appel au téléphone portable : elles localisent l’appel.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

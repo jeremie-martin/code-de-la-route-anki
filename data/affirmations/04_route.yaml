@@ -42,7 +42,8 @@
   affirmation: 'Une demi-barrière ne ferme que ma moitié de chaussée : je peux la contourner si je ne vois pas de
     train.'
   verdict: faux
-  pourquoi: Aucun usager ne doit s'engager quand les barrières sont fermées, en cours de fermeture ou d'ouverture (R422-3 II). Un train peut en cacher un autre, et un train lancé à 100 km/h peut avoir besoin d’environ 1 km pour s'arrêter.
+  pourquoi: Aucun usager ne doit s’engager quand les barrières sont fermées, en cours de fermeture ou d’ouverture (R422-3
+    II). Un train peut en cacher un autre, et un train ne peut pas s’arrêter court.
   theme: R
   sous_theme: passages_a_niveau
   source: Code de la route, art. R422-3 ; SNCF Réseau
@@ -204,13 +205,14 @@
   - ref: b58
     legende: Entrée de zone où l’équipement hivernal est obligatoire pendant la période indiquée.
 - id: aff-r-verglas-pont
-  affirmation: Un pont peut être verglacé alors que la route qui y mène ne l'est pas.
-  verdict: vrai
+  affirmation: 'Je peux garder mon allure : s’il n’y a pas de verglas avant le pont, il n’y en a pas dessus.'
+  verdict: faux
   pourquoi: 'Un tablier de pont se refroidit par-dessus et par-dessous : il gèle avant le reste de la chaussée.
     Même piège dans les zones d''ombre, les sous-bois et près des cours d''eau.'
   theme: R
   sous_theme: intemperies
   source: "En Voiture Simone, Le verglas ; Roole, Neige et verglas"
+  contexte: Par 1 °C, la route n’a pas gelé jusqu’ici ; j’aborde un pont.
 - id: aff-r-verglas-temperature-positive
   contexte: Aube d’hiver ; le thermomètre extérieur de la voiture indique +2 °C.
   affirmation: Avec une température positive, la route n’est pas verglacée.
@@ -255,8 +257,8 @@
   dedup_ok:
   - aff-u-pieton-nuit-croisement
   contexte: Nuit, hors agglomération, feux de croisement ; un piéton en vêtements sombres marche sur le bas-côté.
-  affirmation: Je le distingue à peu près aussi loin qu'un piéton portant un gilet rétroréfléchissant.
-  verdict: faux
+  affirmation: Ce piéton m’apparaîtra bien plus tard qu’un piéton portant un gilet rétroréfléchissant.
+  verdict: vrai
   pourquoi: En vêtements sombres, il se détache à peine du fond et n’apparaît que tard dans le faisceau des feux de croisement ; un gilet rétroréfléchissant renvoie la lumière et le signale bien plus tôt.
   theme: R
   sous_theme: nuit

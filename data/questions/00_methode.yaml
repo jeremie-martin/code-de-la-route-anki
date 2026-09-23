@@ -13,7 +13,8 @@
   sous_theme: lecture
   source: "securite-routiere.gouv.fr, Nouvelle épreuve du code 2023"
 - id: etg-je-peux-je-dois
-  question: Quelle différence de lecture entre « Je peux… » et « Je dois… » dans une question de l'ETG ?
+  question: Quelle différence de lecture entre « Je peux… » et « Je dois… » dans une question de l’ETG (épreuve théorique
+    générale, le code) ?
   reponse: 'Convention de l’épreuve : « Je peux » demande si l’action est à la fois autorisée et sûre ; « Je dois
     » demande si elle est obligatoire.'
   explication: 'Exemple : feu vert et piéton engagé → « je peux passer » = non (danger) ; « je dois m''arrêter » = oui. Une

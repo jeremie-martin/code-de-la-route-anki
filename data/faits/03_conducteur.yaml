@@ -85,9 +85,8 @@
 - id: c-verre-standard
   texte: Un verre standard (demi de bière, verre de vin, dose de whisky servis au bar) contient environ {{c1::10 g}} d’alcool
     pur.
-  explication: 'Bière 25 cl à 5°, vin 10 cl à 12°, whisky 3 cl à 40° : doses différentes, même quantité d’alcool pur.
-    Changer de boisson ne change donc rien à l’alcoolémie ; à la maison, les verres sont souvent plus remplis qu’au
-    bar.'
+  explication: 'Bière 25 cl à 5°, vin 10 cl à 12°, whisky 3 cl à 40° : doses différentes, même quantité d’alcool pur. Changer
+    de boisson ne change donc rien à l’alcoolémie.'
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, L'alcool et la conduite ; Code en Poche"
@@ -97,7 +96,8 @@
     legende: Trois doses servies au bar, même quantité d’alcool pur.
 - id: c-verre-alcoolemie
   texte: 'Repère moyen : chaque verre standard fait monter l''alcoolémie d''environ {{c1::0,20 à 0,25 g/L}}.'
-  explication: Davantage à jeun, pour une personne légère ou une femme ; deux verres peuvent donc suffire à atteindre 0,5 g/L, et un seul le seuil probatoire de 0,2 g/L.
+  explication: 'Davantage à jeun, pour une personne légère ou une femme : ce repère moyen ne permet pas de calculer un nombre
+    de verres autorisés.'
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, L’alcool et la conduite"
@@ -105,8 +105,7 @@
   - c-alcool-seuils-sang
   - c-verre-standard
 - id: c-alcool-elimination
-  explication: Le taux varie selon la personne et les conditions ; pas de règle fixe « heures par verre ». Café, douche ou
-    sport n’accélèrent pas l’élimination. Une alcoolémie peut rester excessive le lendemain.
+  explication: Le taux varie selon la personne et les conditions ; pas de règle fixe « heures par verre ».
   theme: C
   sous_theme: deficiences
   source: "Sécurité routière, https://www.securite-routiere.gouv.fr/sites/default/files/2024-03/depliant_alcool-conduite-070823.pdf"

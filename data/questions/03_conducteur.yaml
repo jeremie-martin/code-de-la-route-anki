@@ -181,10 +181,11 @@
   sous_theme: deficiences
   source: "Sécurité routière, https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf"
 - id: c-fatigue-remedes-faux
-  question: 'Je suis somnolent au volant. Café, fenêtre ouverte ou musique forte : que faire ?'
-  reponse: 'M’arrêter en sécurité pour dormir, et ne repartir qu’une fois réellement apte : aucun de ces moyens ne supprime
-    le besoin de sommeil.'
-  explication: Une courte sieste peut aider mais ne garantit pas la récupération.
+  question: Somnolent au volant, j’ouvre la fenêtre, je bois un café et je monte la musique. Pourquoi cela ne permet-il
+    pas de continuer ?
+  reponse: 'Ces moyens stimulent quelques minutes sans supprimer le besoin de sommeil : la somnolence revient, avec des
+    micro-sommeils que je ne sens pas venir.'
+  explication: 'Seul le sommeil répond à la somnolence : arrêt en sécurité et sieste, ou changement de conducteur.'
   theme: C
   sous_theme: deficiences
   source: "Sécurité routière, https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf"
@@ -214,11 +215,10 @@
   sous_theme: deficiences
   source: Service Public, F2886 ; Drogues Info Service, Durée de positivité d’un test salivaire
 - id: c-emotions
-  question: Peut-on prendre le volant après une forte émotion (dispute, colère, mauvaise nouvelle) ?
-  reponse: 'Mieux vaut attendre : sous le coup de l’émotion, on perçoit moins, on prend plus de risques et le temps
-    de réaction s’allonge.'
-  explication: Une émotion forte peut accaparer l’attention et favoriser une réaction impulsive. Si je ne suis pas
-    disponible pour observer et décider calmement, je diffère le départ.
+  question: Je sors d’une violente dispute et je dois partir tout de suite. Qu’est-ce que la colère change à ma conduite
+    ?
+  reponse: 'Je perçois moins, je réagis plus tard et je prends plus de risques : je diffère le départ ou je laisse le volant.'
+  explication: Une émotion forte (colère, mauvaise nouvelle) accapare l’attention et favorise une réaction impulsive.
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, Les facteurs de risque ; Codes Rousseau"
@@ -357,8 +357,8 @@
   question: 'Longue autoroute sans surprise, trafic faible ; je suis bien reposé. Qu’est-ce qui menace ma vigilance ?'
   reponse: 'La monotonie : un environnement prévisible et répétitif fait baisser la vigilance et favorise la somnolence,
     même sans fatigue au départ.'
-  explication: 'Sur autoroute, un accident mortel sur trois est associé à la somnolence. Pause toutes les deux heures,
-    et arrêt dès les premiers signes (bâillements, paupières lourdes, regard fixe).'
+  explication: Sur autoroute, un accident mortel sur trois est associé à la somnolence ; la monotonie la favorise même chez
+    un conducteur reposé.
   theme: C
   sous_theme: vigilance
   source: securite-routiere.gouv.fr, La fatigue et la conduite ; Fondation VINCI Autoroutes, Qu’est-ce que l’hypovigilance

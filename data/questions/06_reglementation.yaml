@@ -19,7 +19,7 @@
     dès 16 ans.
   theme: D
   sous_theme: permis
-  source: Code de la route, art. R211-5-1 ; service-public.fr F2827
+  source: Code de la route, art. R211-5-1 ; service-public.fr F21012 (conduite supervisée)
 - id: d-permis-b-125
   question: J'ai le permis B depuis trois ans. Puis-je conduire un scooter de 125 cm³ ?
   reponse: 'Oui, après une formation de 7 heures : permis B depuis au moins 2 ans, motocyclette légère (125 cm³,
@@ -32,7 +32,8 @@
   question: Permis invalidé pour solde de points nul. Dois-je repasser le code et la conduite ?
   reponse: Le code est à repasser. La conduite aussi, sauf si j’avais le permis depuis au moins 3 ans, si l’interdiction
     dure moins d’un an et si je respecte le délai de réinscription.
-  explication: La réinscription doit intervenir dans un délai de 9 mois. Contrôles médical et psychotechnique requis. Je peux entreprendre les démarches pendant l’interdiction ; obtenir le nouveau permis exige d’attendre sa fin (6 mois, ou 1 an après une nouvelle invalidation dans les 5 ans).
+  explication: La réinscription doit intervenir dans un délai de 9 mois. Contrôles médical et psychotechnique requis. Je
+    peux entreprendre les démarches pendant l’interdiction ; obtenir le nouveau permis exige d’attendre sa fin.
   theme: D
   sous_theme: points
   source: "Service Public, invalidation, étapes 3 à 8 : https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 ; R224-20"
@@ -75,7 +76,7 @@
   question: 'Je provoque un accident dont je suis entièrement responsable. Que devient mon coefficient bonus-malus ?'
   reponse: 'Il augmente de 25 % : il est multiplié par 1,25 à l’échéance suivante.'
   explication: 'Responsabilité partagée : +12,5 %. Chaque année sans accident responsable, il baisse de 5 %, jusqu’à 0,50
-    au mieux.'
+    au mieux ; après trois ans à 0,50, un premier accident responsable n’entraîne pas de malus.'
   theme: D
   sous_theme: documents
   source: Code des assurances, art. A121-1 ; service-public.fr F2655

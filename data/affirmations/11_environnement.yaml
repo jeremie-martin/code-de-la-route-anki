@@ -36,8 +36,8 @@
   source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
 - id: aff-e-coffre-toit-vide
   contexte: Retour de vacances ; le coffre de toit est encore sur le pavillon, vide.
-  affirmation: Vide, il ne coûte plus rien en carburant.
-  verdict: faux
+  affirmation: Même vide, le coffre de toit resté sur le pavillon fait consommer davantage.
+  verdict: vrai
   pourquoi: Même vide, le coffre augmente la résistance à l’air et donc la consommation. Le retirer lorsqu’il
     ne sert plus ; l’augmentation dépend du coffre et de la vitesse, pas d’un pourcentage fixe.
   theme: E
@@ -62,10 +62,10 @@
   source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
   contexte: Voiture thermique.
 - id: aff-e-electrique-zero
-  affirmation: Un véhicule électrique n'émet aucune pollution.
-  verdict: faux
-  pourquoi: Rien à l'échappement, mais des particules d'usure (freins, pneus, chaussée), la fabrication de la batterie
-    et la production de l'électricité. La vignette verte ne veut pas dire « sans impact ».
+  affirmation: Sans pot d’échappement, une voiture électrique émet elle aussi des particules fines.
+  verdict: vrai
+  pourquoi: Usure des freins, des pneus et de la chaussée, et remise en suspension des poussières. S’y ajoutent la fabrication
+    de la batterie et la production de l’électricité. La vignette verte ne veut pas dire « sans impact ».
   theme: E
   sous_theme: pollution
   source: "ADEME ; En Voiture Simone, Achat éco-responsable"
@@ -89,9 +89,10 @@
   source: "IFPEN, étude de véhicules Euro 6d-TEMP (2020), pas un classement de tout le parc 2026, https://www.ifpenergiesnouvelles.fr/article/emissions-des-voitures-essence-et-diesel-recentes-publication-letude-realisee-ifpen"
 - id: aff-e-ve-silence
   contexte: Je conduis un véhicule électrique dans une rue étroite où des piétons circulent.
-  affirmation: Son silence est un danger pour les piétons.
+  affirmation: Sous 20 km/h, une voiture électrique récente émet un son artificiel pour être entendue des piétons.
   verdict: vrai
-  pourquoi: "Les piétons se fient beaucoup à l'ouïe : un véhicule électrique peut arriver sans être entendu. Un avertisseur sonore est donc imposé sous 20 km/h sur les modèles récents. Le conducteur doit rester particulièrement vigilant."
+  pourquoi: 'Les piétons se fient beaucoup à l’ouïe : sans ce son, un véhicule électrique arriverait sans être entendu.
+    Au-delà, le bruit de roulement prend le relais ; le conducteur reste particulièrement vigilant.'
   theme: E
   sous_theme: ecomobilite
   source: "Règlement (UE) 540/2014 (AVAS) ; ADEME, Véhicules électriques"

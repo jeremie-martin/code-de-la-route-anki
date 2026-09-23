@@ -291,7 +291,7 @@ Recherche Anki : `objectif::l-prescriptions`
 
 Une même valeur n'a pas toujours la même portée.
 
-52 notes / 52 cartes.
+50 notes / 50 cartes.
 
 Recherche Anki : `objectif::l-portee`
 
@@ -318,7 +318,6 @@ Recherche Anki : `objectif::l-portee`
 | `m4d2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m4f` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m6a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
-| `m6b` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m6c` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m6d` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m6h` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
@@ -330,7 +329,6 @@ Recherche Anki : `objectif::l-portee`
 | `m9d` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m9v1` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m9z` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
-| `m11b1` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `m12` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `conf-b52-b54` | consolidation | confusions | Code de la route, art. R110-2, R412-43-1 et R431-9 |
 | `conf-b30-b56` | consolidation | confusions | IISR 4e partie |
@@ -573,7 +571,7 @@ Recherche Anki : `objectif::c-distances`
 
 La situation décide du danger ; ne pas attendre la certitude.
 
-23 notes / 23 cartes.
+22 notes / 22 cartes.
 
 Recherche Anki : `objectif::c-observer`
 
@@ -598,7 +596,6 @@ Recherche Anki : `objectif::c-observer`
 | `aff-c-pieton-detectable-motard` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q11) |
 | `aff-c-enfant-percoit-adulte` | socle | affirmations | Sécurité routière, Exemples de nouvelles questions (Q3) ; securite-routiere.gouv.fr, Enfants piétons |
 | `aff-c-enfant-croit-vu` | socle | affirmations | securite-routiere.gouv.fr, Enfants piétons ; REMC |
-| `aff-c-indice-danger-certain` | consolidation | affirmations | Code en Poche, Anticiper ; REMC |
 | `aff-c-klaxon-ecole` | consolidation | affirmations | Code de la route, art. R416-1 ; securite-routiere.gouv.fr, Enfants piétons |
 | `aff-c-retros-suffisent` | consolidation | affirmations | Codeclic, L'angle mort ; securite-routiere.gouv.fr, Les angles morts |
 | `aff-c-musique-forte` | consolidation | affirmations | securite-routiere.gouv.fr, Distracteurs ; Code de la route, art. R412-6-1 |
@@ -825,7 +822,7 @@ Recherche Anki : `objectif::r-tunnel-rail`
 
 Lire l'état actuel de la route, même sans ouvriers visibles.
 
-22 notes / 22 cartes.
+21 notes / 21 cartes.
 
 Recherche Anki : `objectif::r-travaux`
 
@@ -847,7 +844,6 @@ Recherche Anki : `objectif::r-travaux`
 | `k8` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `k10a` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `k10b` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
-| `kc1` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `kd10` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `kr11` | socle | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `conf-a14-ak14` | consolidation | confusions | IISR 1re et 8e parties |
@@ -1074,7 +1070,7 @@ Recherche Anki : `objectif::m-alertes`
 
 Préconisations constructeur et signes de panne priment sur les recettes.
 
-27 notes / 30 cartes.
+27 notes / 28 cartes.
 
 Recherche Anki : `objectif::m-entretien`
 
@@ -1505,7 +1501,7 @@ Recherche Anki : `objectif::d-apprentissage`
 | `d-aac-conditions` | consolidation | faits | Code de la route, art. R211-3 et R211-5 ; service-public.fr F2826 |
 | `d-permis-17-ans` | consolidation | faits | Décret n° 2023-1214 du 20 décembre 2023 ; Code de la route, art. R221-5 |
 | `d-accompagnateur` | consolidation | faits | Code de la route, R211-3 et R234-1 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2826 ; art. L234-1, L235-1 et L224-1 II |
-| `d-conduite-supervisee` | consolidation | questions | Code de la route, art. R211-5-1 ; service-public.fr F2827 |
+| `d-conduite-supervisee` | consolidation | questions | Code de la route, art. R211-5-1 ; service-public.fr F21012 (conduite supervisée) |
 | `aff-d-aac-points-eleve` | consolidation | affirmations | Code de la route, L121-1 et L223-1 ; art. L234-1, L235-1 et L224-1 II |
 
 ## d-sanctions : Distinguer infraction, sanction et mesure sur le permis

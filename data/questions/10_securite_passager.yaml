@@ -143,8 +143,9 @@
   question: Quelle différence entre sécurité active et sécurité passive ?
   reponse: La sécurité active évite l’accident (freins, pneus, éclairage…) ; la sécurité passive limite les blessures quand
     il survient (ceinture, airbags…).
-  explication: Sont actifs aussi la direction, les amortisseurs et toutes les aides à la conduite (ABS, ESP, AFU) ; sont passifs
-    les prétensionneurs, les zones de déformation et l'habitacle rigide. Le classement Euro NCAP (5 étoiles) évalue les deux.
+  explication: Sont actifs aussi la direction, les amortisseurs et toutes les aides à la conduite (ABS, ESP, aide au freinage
+    d’urgence) ; sont passifs les prétensionneurs, les zones de déformation et l’habitacle rigide. Le classement Euro NCAP
+    (5 étoiles) évalue les deux.
   theme: S
   sous_theme: equipements
   source: "securite-routiere.gouv.fr, Équipements de sécurité ; Euro NCAP"
@@ -181,9 +182,10 @@
     pas son PTAC.
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2828"
 - id: s-surcharge-ptac
-  question: 'Chargée pour les vacances, ma voiture pèse 2 050 kg ; son PTAC (carte grise, rubrique F.2) est de 1 900 kg.
-    Que dois-je faire avant de partir ?'
-  reponse: 'La décharger jusqu’à repasser sous le PTAC : son poids réel ne doit jamais le dépasser.'
+  question: 'Chargée pour les vacances, sans remorque, ma voiture pèse 2 050 kg. Carte grise : F.2 = 1 900 kg, F.3 = 2 800
+    kg. Puis-je partir ainsi ?'
+  reponse: 'Non : sans remorque, c’est le PTAC (F.2, 1 900 kg) que le poids réel ne doit pas dépasser ; le PTRA (F.3) concerne
+    l’ensemble avec remorque. Je décharge.'
   explication: 'Surchargée, elle freine plus long et tient moins bien la route. Amende de 4e classe par tranche de 0,5 t
     de dépassement ; un agent peut exiger une pesée et immobiliser le véhicule.'
   theme: S

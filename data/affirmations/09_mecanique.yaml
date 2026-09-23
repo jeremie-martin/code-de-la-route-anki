@@ -1,10 +1,9 @@
 # M : La mécanique et les équipements : affirmations à juger VRAI/FAUX.
 - id: aff-m-voyant-orange-arret
   contexte: Je roule sur route, un voyant orange s'allume au tableau de bord.
-  affirmation: Je dois m'arrêter sur-le-champ, au besoin sur la bande d'arrêt d'urgence.
+  affirmation: 'Il est orange, pas rouge : je peux continuer et le signaler à la prochaine révision.'
   verdict: faux
-  pourquoi: 'La couleur seule ne décide pas : lire le symbole et le message. Un voyant orange peut exiger un arrêt
-    en sécurité, par exemple pour une perte de pression. La notice précise la conduite à tenir.'
+  pourquoi: 'La couleur seule ne décide pas : je lis le symbole et le message, et la notice précise la conduite à tenir.'
   theme: M
   sous_theme: tableau_de_bord
   source: "Ornikar, Voyants lumineux ; En Voiture Simone, Tableau de bord"

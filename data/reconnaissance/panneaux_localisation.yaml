@@ -43,7 +43,6 @@
     commons: E42.svg
   nom: Cartouche de route nationale ou d'autoroute
   signification: Cartouche identifiant une autoroute (A + numéro) ou une route nationale (N + numéro).
-  complement: 'Couleur des cartouches : rouge = A/N (État), jaune = D (département), blanc = C/VC (commune), vert = E (Europe).'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

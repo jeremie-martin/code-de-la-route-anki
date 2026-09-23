@@ -24,10 +24,11 @@
     legende: La vision centrale identifie ; la vision périphérique repère le piéton qui bouge.
 - id: aff-c-nuit-distances
   contexte: Je conduis de nuit sur une route que je connais bien.
-  affirmation: J’estime les distances aussi bien que de jour.
+  affirmation: 'Je connais les virages : je peux garder la même allure que de jour.'
   verdict: faux
   pourquoi: 'De nuit, la perception du relief et des contrastes est atténuée : la détection et l’estimation des distances
-    sont moins sûres, même sur une route connue. Réduire l’allure et augmenter les marges.'
+    sont moins sûres. Connaître la route ne compense pas une détection plus tardive : je réduis l’allure et j’augmente les
+    marges.'
   theme: C
   sous_theme: perception
   source: "securite-routiere.gouv.fr, Conduire la nuit ; Dépliant La vue"
@@ -57,7 +58,7 @@
   sous_theme: vigilance
   source: "Sécurité routière, Exemples de nouvelles questions (Q11)"
 - id: aff-c-enfant-percoit-adulte
-  affirmation: Un enfant perçoit les dangers de la circulation de la même façon qu'un adulte.
+  affirmation: Dès 8 ans, un enfant évalue la vitesse d’une voiture qui approche aussi bien qu’un adulte.
   verdict: faux
   pourquoi: La petite taille masque l’enfant et limite sa vue. Son attention et son estimation des vitesses
     sont encore en développement. Je ralentis et anticipe un mouvement imprévu, sans supposer un âge exact
@@ -66,22 +67,13 @@
   sous_theme: vigilance
   source: "Sécurité routière, Exemples de nouvelles questions (Q3) ; securite-routiere.gouv.fr, Enfants piétons"
 - id: aff-c-enfant-croit-vu
-  affirmation: Un enfant qui voit ma voiture peut croire que je l’ai vu lui aussi.
+  affirmation: Un enfant qui voit ma voiture arriver croit souvent que je l’ai vu, moi aussi.
   verdict: vrai
-  pourquoi: 'Voir ne signifie pas être vu. J’anticipe une traversée imprévue et je réduis l’allure : je ne
-    peux pas compter sur l’enfant pour vérifier que je l’ai repéré.'
+  pourquoi: 'Voir ne signifie pas être vu : l’enfant pense que je vais m’arrêter pour lui. J’anticipe une traversée et je
+    réduis l’allure ; je ne compte pas sur lui pour vérifier que je l’ai repéré.'
   theme: C
   sous_theme: vigilance
   source: "securite-routiere.gouv.fr, Enfants piétons ; REMC"
-- id: aff-c-indice-danger-certain
-  affirmation: 'Je ne ralentis que lorsque le danger est certain : un simple indice, comme un ballon ou une
-    portière entrouverte, ne justifie pas de lever le pied.'
-  verdict: faux
-  pourquoi: 'Un indice permet d''anticiper avant de voir le danger : un ballon annonce un enfant, une portière entrouverte
-    un occupant qui descend. J''adapte l''allure à ce que la scène ne permet pas d''exclure.'
-  theme: C
-  sous_theme: vigilance
-  source: "Code en Poche, Anticiper ; REMC"
 - id: aff-c-klaxon-ecole
   contexte: Je passe devant une école à l'heure de la sortie.
   affirmation: Je klaxonne pour prévenir les enfants de mon arrivée.
@@ -126,7 +118,7 @@
   sous_theme: deficiences
   source: ONISR, bilan 2024 ; securite-routiere.gouv.fr, Conduire la nuit
 - id: aff-c-senior-reaction
-  affirmation: Avec l’âge, la réaction et la récupération après éblouissement peuvent devenir plus lentes.
+  affirmation: Avec l’âge, la récupération après un éblouissement s’allonge souvent.
   verdict: vrai
   pourquoi: L’avancée en âge peut modifier vision et réflexes, avec de grandes différences individuelles. Pas
     de délai de récupération universel après un éblouissement ; adapter l’allure, faire contrôler sa vue et
@@ -165,8 +157,8 @@
     params: {}
     legende: Servies au bar, ces doses apportent autant d’alcool pur l’une que l’autre.
 - id: aff-c-alcool-sous-seuil
-  affirmation: Sous 0,5 g/L, l'alcool n'a pas d'effet sur la conduite.
-  verdict: faux
+  affirmation: À 0,3 g/L, sous le seuil légal, mon attention et mes réflexes sont déjà diminués.
+  verdict: vrai
   pourquoi: 'Le seuil légal n’est pas un seuil de sécurité : l’alcool peut altérer l’attention, le jugement
     et les réflexes avant de le dépasser. En probatoire, le seuil interdit est déjà 0,2 g/L. Prévoir un retour
     sans conduire après avoir bu.'
@@ -235,16 +227,16 @@
   sous_theme: deficiences
   source: Service Public, F2886 ; Drogues Info Service, Durée de positivité d’un test salivaire
 - id: aff-c-medicament-sans-ordonnance
-  affirmation: Un médicament acheté sans ordonnance ne peut pas être incompatible avec la conduite.
-  verdict: faux
+  affirmation: Certains antihistaminiques vendus sans ordonnance portent le pictogramme orange de niveau 2.
+  verdict: vrai
   pourquoi: 'L''automédication (antihistaminiques, antitussifs, antalgiques…) peut porter un pictogramme, jusqu’au niveau
     2 : vérifier la boîte et la rubrique « conducteurs » de la notice, et ne pas associer à l''alcool.'
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, Les médicaments et la conduite ; ANSM"
 - id: aff-c-somnifere-soir
-  affirmation: Un somnifère pris le soir n'a plus d'effet sur ma conduite le lendemain matin.
-  verdict: faux
+  affirmation: Un somnifère pris vers minuit peut encore ralentir mes réflexes au volant à 8 h.
+  verdict: vrai
   pourquoi: 'Somnifères et anxiolytiques (benzodiazépines) ont des effets prolongés : somnolence résiduelle, réflexes ralentis, vision faussée au réveil ; ils portent un pictogramme de niveau 2 ou 3. Vérifier la notice avant de conduire.'
   theme: C
   sous_theme: deficiences
@@ -306,8 +298,8 @@
   source: "ONISR, bilan 2025 ; securite-routiere.gouv.fr, Conducteurs novices"
 - id: aff-c-musique-forte
   contexte: Vitres fermées, musique à fort volume.
-  affirmation: Je reste capable d'entendre aussi bien une sirène, un klaxon ou un deux-roues qui arrive.
-  verdict: faux
+  affirmation: La sirène d’une ambulance qui arrive derrière moi me parviendra plus tard qu’avec la musique coupée.
+  verdict: vrai
   pourquoi: L'ouïe complète la vue pour détecter ce qui n'est pas encore visible (véhicule prioritaire, moto qui
     remonte). Le volume sonore et les écouteurs (interdits) suppriment cette information ; la musique n'est pas
     non plus un remède à la somnolence.

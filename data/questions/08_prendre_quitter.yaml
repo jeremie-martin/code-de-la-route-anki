@@ -63,7 +63,7 @@
     gen: poste_conduite
     params:
       focus: bras
-    legende: Bras tendus, poignets posés sur le volant, sans décoller les épaules.
+    legende: 'Vue de côté : dossier presque droit, bras tendus sans que le buste avance.'
 - id: p-appuie-tete
   question: Je viens de régler mon siège. À quelle hauteur je place l'appuie-tête ?
   reponse: Son sommet au niveau du sommet de ma tête, le plus près possible de la nuque ; trop bas, il fait pivot et aggrave

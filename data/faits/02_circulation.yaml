@@ -73,7 +73,7 @@
   sous_theme: vitesse
   source: "R413-19, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
 - id: l-vitesse-engins
-  explication: 'Un EDPM est bridé à 25 km/h (voir la carte dédiée). Sur un VAE conforme, l’assistance se coupe à 25 km/h mais
+  explication: 'Un EDPM est bridé à 25 km/h (voir la carte dédiée). Sur un vélo à assistance électrique conforme, l’assistance se coupe à 25 km/h mais
     on peut pédaler plus vite : ce n’est pas un cyclomoteur. Une assistance débridée change sa conformité.'
   theme: L
   sous_theme: vitesse
@@ -211,9 +211,8 @@
   sous_theme: priorites
   source: Code de la route, R412-37, R415-11 et R413-17
 - id: l-signalisation-hierarchie
-  explication: 'En cas de contradiction : l’agent l’emporte sur tout ; les feux, sur les panneaux de priorité ; le
-    temporaire, sur le permanent. Les feux ne règlent que la priorité : un feu vert ne permet ni de prendre un sens
-    interdit, ni de tourner malgré une interdiction, ni de franchir une ligne continue.'
+  explication: 'Un feu vert ne lève que les panneaux de priorité placés au même carrefour : sens interdit, interdiction
+    de tourner et ligne continue restent valables.'
   theme: L
   sous_theme: signalisation
   source: "Code de la route, R411-25 et R411-28 ; IISR, 8e partie, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087"

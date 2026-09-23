@@ -225,7 +225,7 @@
 - id: m-afu-aeb
   theme: M
   sous_theme: adas
-  question: Quelle différence entre AFU et freinage automatique d’urgence (AEB) ?
+  question: Quelle différence entre l’aide au freinage d’urgence (AFU) et le freinage automatique d’urgence (AEB) ?
   reponse: L’AFU amplifie un freinage d’urgence déclenché par le conducteur ; l’AEB peut déclencher un freinage
     après détection d’un risque de collision.
   explication: 'Ni l’un ni l’autre ne garantit l’évitement : rester attentif et prêt à freiner.'
@@ -251,8 +251,9 @@
     de voie ?
   reponse: 'Non : rétroviseurs, angle mort et clignotant restent à ma charge ; ces aides assistent le conducteur sans le remplacer,
     il reste seul responsable.'
-  explication: 'C''est le principe officiel des ADAS : elles avertissent, corrigent ou évitent, mais ne surveillent pas à
-    la place du conducteur. Marquage effacé, neige, forte pluie, soleil bas ou capteurs sales les mettent en défaut.'
+  explication: 'C’est le principe officiel des aides à la conduite (ADAS) : elles avertissent, corrigent ou évitent, mais
+    ne surveillent pas à la place du conducteur. Marquage effacé, neige, forte pluie, soleil bas ou capteurs sales les mettent
+    en défaut.'
   theme: M
   sous_theme: adas
   source: "securite-routiere.gouv.fr, ADAS"
@@ -296,7 +297,7 @@
     gen: panne_route
     params:
       label: ≈ 30 m
-    legende: Voiture sur l’accotement, occupants à l’écart de la chaussée ; triangle en amont (distance non à l’échelle).
+    legende: Détresse allumée, voiture sortie de la chaussée autant que possible ; distance du triangle non à l’échelle.
 - id: m-changer-roue-securite
   question: Que faut-il mettre en place avant de lever le véhicule pour changer une roue ?
   reponse: Sol plat et stable hors circulation, frein de stationnement serré et rapport engagé, feux de détresse et gilet,
@@ -352,8 +353,8 @@
 - id: m-pression-etiquette
   theme: M
   sous_theme: pneus
-  question: Voici l’étiquette de pression de ma voiture. Je pars en vacances, voiture chargée ; les pneus sont froids. Quelles
-    pressions dois-je régler ?
+  question: Voici l’étiquette de pression de ma voiture. Nous partons à quatre avec les bagages des vacances ; les pneus
+    sont froids. Quelles pressions dois-je régler ?
   reponse: 'Celles de la ligne « pleine charge » : 2,6 bar à l’avant et 2,8 bar à l’arrière.'
   explication: On lit la préconisation correspondant au véhicule et aux pneus, plutôt que d’ajouter forfaitairement
     0,3 bar.

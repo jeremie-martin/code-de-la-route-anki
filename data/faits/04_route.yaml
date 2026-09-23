@@ -8,7 +8,7 @@
 - id: r-loi-montagne-periode
   texte: Dans les communes concernées par l’obligation saisonnière d’équipements hiver, la période annuelle est
     du {{c1::1er novembre au 31 mars}}.
-  explication: Pendant cette période, dans la zone signalée, une voiture doit avoir quatre pneus hiver marqués 3PMSF, ou
+  explication: Pendant cette période, dans la zone signalée, une voiture doit avoir quatre pneus hiver marqués du symbole alpin (3PMSF), ou
     des dispositifs antidérapants amovibles (chaînes, chaussettes) pour au moins deux roues motrices.
   theme: R
   sous_theme: intemperies

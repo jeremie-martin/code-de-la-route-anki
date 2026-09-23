@@ -453,12 +453,14 @@ def write_attributions(data):
 # shapes and colours of signs, road vocabulary, the default priority rule, the colour code of dashboard
 # lights), then every track interleaved in proportion to its size so each day is a slice of the whole
 # exam. Inside a track: sub-themes in SUBTHEME_ORDER (else in order of first appearance), facts before
-# questions before affirmations, then file order. The sign track follows RECON_ORDER, each confusion right
-# after the later of its two members; the scenario track opens once the signs it depends on are seen
+# questions before affirmations, then file order. The sign track follows RECON_ORDER, each confusion
+# CONFUSION_GAP sign cards after the later of its two members (about a day later: the pair is recalled,
+# not just re-read); the scenario track opens once the signs it depends on are seen
 # (SCENARIO_GATES). curriculum() then puts every socle note before the consolidation and introduces each
 # note's prerequisites (`image_ref`, `prerequis`) just before it when they have not been seen yet. Cloze siblings of one note are spread SIBLING_GAP positions
 # apart so the second blank is met a couple of days later.
 SIBLING_GAP = 30
+CONFUSION_GAP = 8
 KIND_RANK = {"faits": 0, "questions": 1, "affirmations": 2, "reconnaissance": 0, "confusions": 1, "scenarios": 3}
 # scenario sub-theme -> recognition file that must be (mostly) known before the track opens
 SCENARIO_GATES = {"priorites": "panneaux_priorite", "agents": "autres", "depassement": "marquages",
@@ -502,7 +504,7 @@ def _library_curriculum(data: dict[str, list[dict]]) -> list[tuple[str, str]]:
     first.sort(key=lambda it: (it["theme"] != "X", KIND_RANK[it["_kind"]], it["_file"], it["_pos"]))
     order.extend((it["_kind"], it["id"]) for it in first)
     done = {it["id"] for it in first}
-    # --- sign track: recognition in RECON_ORDER, each confusion right after the later of its members
+    # --- sign track: recognition in RECON_ORDER, each confusion CONFUSION_GAP places after its later member
     sign_recon = [it for it in data["reconnaissance"] if it["theme"] == "L" and it["id"] not in done]
     sign_recon.sort(key=lambda it: (RECON_ORDER.index(it["_file"][:-5]) if it["_file"][:-5] in RECON_ORDER else 99, it["_pos"]))
     sign_pos = {it["id"]: i for i, it in enumerate(sign_recon)}
@@ -510,7 +512,7 @@ def _library_curriculum(data: dict[str, list[dict]]) -> list[tuple[str, str]]:
     for it in data["confusions"]:
         if it["theme"] != "L" or it["id"] in done:
             continue  # e.g. dashboard-light pairs: they follow their own theme's track
-        pos = max(sign_pos.get(it["a"], 0), sign_pos.get(it["b"], 0)) + 0.5
+        pos = max(sign_pos.get(it["a"], 0), sign_pos.get(it["b"], 0)) + CONFUSION_GAP + 0.5
         sign_items.append((pos, "confusions", it["id"]))
     sign_items.sort()
     # position after which each recognition file is fully seen (gates for the scenario track)

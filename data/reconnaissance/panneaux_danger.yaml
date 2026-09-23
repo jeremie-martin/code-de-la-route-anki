@@ -30,7 +30,7 @@
   nom: Succession de virages dont le premier est à droite
   signification: Annonce une succession de virages, le premier étant à droite.
   conduite: Je ralentis et reste à droite sur toute la section ; un panonceau peut préciser la longueur de la succession de virages.
-  piege: c'est le premier virage dessiné (en bas) qui donne le sens ; ici le premier est à droite.
+  piege: C'est le premier virage dessiné (en bas) qui donne le sens ; ici le premier est à droite.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -141,7 +141,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: L'interdiction propre de dépasser vise les passages sans barrière ; ici, un dépassement reste soumis aux règles générales, et je ne m'engage jamais si je risque de m'immobiliser sur les voies.
+  piege: L’interdiction de dépasser propre aux passages à niveau vise ceux qui n’ont pas de barrières ; ici, le dépassement reste soumis aux règles générales.
 - id: a8
   type: panneau
   code: A8
@@ -274,7 +274,6 @@
   nom: Circulation dans les deux sens
   signification: Annonce qu'après une section à sens unique ou à chaussées séparées, la circulation redevient bidirectionnelle sur la même chaussée.
   conduite: 'Serrer à droite : la partie gauche de la chaussée n''est plus une voie dans mon sens.'
-  complement: Seul panneau de danger implanté à l'endroit même du danger, et non 150 m avant.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

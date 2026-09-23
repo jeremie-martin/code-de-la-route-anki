@@ -76,7 +76,8 @@
   contexte: Je roule à vélo avec un ami, hors agglomération, à la tombée du jour.
   affirmation: Nous pouvons rester à deux de front tant qu'aucune voiture n'arrive.
   verdict: faux
-  pourquoi: 'R431-7 : deux de front au maximum, mais la file simple s''impose dès la chute du jour, et dès qu''un véhicule annonce son dépassement. Exceptions : aire piétonne, voie verte, zone de rencontre.'
+  pourquoi: 'R431-7 : deux de front au maximum, mais la file simple s’impose dès la chute du jour. Exceptions : aire piétonne,
+    voie verte, zone de rencontre.'
   theme: U
   sous_theme: cyclistes
   source: 'Code de la route, art. R431-7 (décret n° 2024-1074)'
@@ -221,8 +222,8 @@
         w: 120
 - id: aff-u-moto-vitesse-approche
   contexte: Je suis motard ; en face, une voiture attend pour tourner à gauche devant moi.
-  affirmation: Son conducteur évalue ma vitesse d'approche aussi bien que celle d'une voiture.
-  verdict: faux
+  affirmation: Son conducteur risque de me croire plus loin et plus lent que je ne le suis.
+  verdict: vrai
   pourquoi: 'Un phare unique et une silhouette étroite font paraître la moto plus loin et plus lente qu''elle ne l''est : c''est le mécanisme du « je ne l''ai pas vue arriver si vite ». Je couvre mes freins et je me rends visible.'
   theme: U
   sous_theme: motos
@@ -236,12 +237,11 @@
   source: "Code de la route, art. R416-17 ; securite-routiere.gouv.fr, Être visible à moto"
 # ---------- Poids lourds, bus, tramways ----------
 - id: aff-u-pl-retroviseur
-  contexte: Arrêté au feu à côté d’un camion, je vois le visage de son conducteur dans son rétroviseur.
-  affirmation: Il m’a donc forcément vu.
-  verdict: faux
-  pourquoi: Le contact visuel indique seulement que je suis hors de l’angle mort. Rien ne prouve que le conducteur regarde
-    ce rétroviseur ou m’a remarqué ; je reste hors de sa trajectoire et évite de me placer à côté. Si je ne vois pas son
-    visage, je suis dans son angle mort.
+  contexte: Arrêté au feu à côté d’un camion.
+  affirmation: Si je ne vois pas le visage de son conducteur dans son rétroviseur, je suis dans son angle mort.
+  verdict: vrai
+  pourquoi: 'Le rétroviseur marche dans les deux sens : sans contact visuel, il ne peut pas me voir. Même avec ce contact,
+    rien ne prouve qu’il regarde ce miroir ; je reste hors de sa trajectoire et évite de me placer à côté.'
   theme: U
   sous_theme: poids_lourds
   source: "securite-routiere.gouv.fr, Vrai ou faux : les angles morts"

@@ -622,7 +622,7 @@ def _agent(S: SVG, cx, cy, pose):
 
 # ----------------------------------------------------------- roundabout ----
 def draw_roundabout(spec: dict) -> str:
-    """Roundabout with 4 branches. spec: giratoire (bool: AB25 signs), vehicles: list of
+    """Roundabout with 4 branches. spec: giratoire (bool: give-way signs at the entries), vehicles: list of
     {pos: 'inside'|'S'|'E'|'N'|'W', angle (for inside, degrees, 0 = east, counter-clockwise), colour, me, goes}"""
     S = SVG(600, 600, view=(30, 30, 540, 540))
     cx, cy = 300, 300
@@ -640,13 +640,10 @@ def draw_roundabout(spec: dict) -> str:
         S.add(f'<line x1="{cx-half}" y1="{cy-R_out-2}" x2="{cx-2}" y2="{cy-R_out-2}" stroke="{MARK}" stroke-width="7" {dash}/>')
         S.add(f'<line x1="{cx+R_out+2}" y1="{cy-half}" x2="{cx+R_out+2}" y2="{cy-2}" stroke="{MARK}" stroke-width="7" {dash}/>')
         S.add(f'<line x1="{cx-R_out-2}" y1="{cy+2}" x2="{cx-R_out-2}" y2="{cy+half}" stroke="{MARK}" stroke-width="7" {dash}/>')
-        uri = sign_uri("giratoire")
         cede = sign_uri("cedez")
-        # AB3a at the give-way line, AB25 on the same verge further from the ring
-        for (x, y), (dx, dy) in zip([(cx+half+8, cy+R_out+6), (cx-half-8-50, cy-R_out-6-50), (cx+R_out+6, cy-half-8-50), (cx-R_out-6-50, cy+half+8)],
-                                    [(0, 54), (0, -54), (54, 0), (-54, 0)]):
+        # only the entry sign, which decides: the advance triangle (AB25) stands further upstream, off the drawing
+        for (x, y) in [(cx+half+8, cy+R_out+6), (cx-half-8-50, cy-R_out-6-50), (cx+R_out+6, cy-half-8-50), (cx-R_out-6-50, cy+half+8)]:
             S.add(f'<image href="{cede}" x="{x}" y="{y}" width="50" height="50"/>')
-            S.add(f'<image href="{uri}" x="{x+dx}" y="{y+dy}" width="50" height="50"/>')
     else:
         uri = sign_data_uri(SIGN_FILES["priorite_droite"], 120)
         for (x, y) in [(cx+half+8, cy+R_out+30), (cx-half-8-50, cy-R_out-30-50), (cx+R_out+30, cy-half-8-50), (cx-R_out-30-50, cy+half+8)]:

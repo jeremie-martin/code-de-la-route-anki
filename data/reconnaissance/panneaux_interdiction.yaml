@@ -36,9 +36,8 @@
   image:
     commons: France road sign B1j.svg
   nom: Sens interdit sur bretelle (fond jaune)
-  signification: 'Sens interdit renforcé par un fond jaune, notamment sur les bretelles de sortie : je ne m’engage pas.'
+  signification: 'Sens interdit sur fond jaune, renforcé pour être vu : je ne m’engage pas.'
   conduite: 'Ne jamais s''engager : on remonte une bretelle de sortie à contresens.'
-  complement: Sur les bretelles de sortie, face aux usagers qui pourraient s'y engager par erreur.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -198,15 +197,15 @@
   image:
     commons: France road sign B8.svg
   nom: Accès interdit aux véhicules affectés au transport de marchandises
-  signification: Accès interdit aux véhicules de transport de marchandises, camions et camionnettes. Un panonceau de tonnage peut restreindre l’interdiction aux véhicules dont le poids maximal autorisé dépasse la valeur indiquée.
+  signification: Accès interdit aux véhicules de transport de marchandises, camions et camionnettes.
   conduite: Ne concerne pas les voitures particulières.
-  piege: Le camion vise le transport de marchandises, quel que soit son poids, sauf panonceau de tonnage.
+  piege: Le camion vise les véhicules de marchandises quel que soit leur poids, sauf panonceau de tonnage.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: b13
-    legende: 'Nombre de tonnes : tous véhicules dont le poids total autorisé (carte grise) dépasse la valeur.'
+    legende: 'Panneau distinct : interdit à tout véhicule dont le poids total autorisé dépasse la valeur.'
 - id: b9a
   type: panneau
   code: B9a
@@ -299,7 +298,7 @@
   nom: Limitation de poids total
   signification: Accès interdit aux véhicules dont le PTAC (ou le PTRA d'un ensemble) dépasse le nombre indiqué (ex. 3,5 t).
   conduite: 'Peut concerner un camping-car ou une voiture + remorque : se référer à la carte grise (F.2/F.3).'
-  piege: c'est le poids AUTORISÉ (carte grise), pas le poids réel du véhicule à l'instant t.
+  piege: C'est le poids AUTORISÉ (carte grise), pas le poids réel du véhicule à l'instant t.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -354,7 +353,7 @@
   nom: Interdiction de circuler sans maintenir un intervalle minimal
   signification: 'Interdiction aux véhicules de circuler sans maintenir entre eux un intervalle au moins égal à la distance indiquée (ex. 70 m) : tunnels, ponts, cols.'
   conduite: Maintenir la distance indiquée avec le véhicule qui précède ; s'aider des repères au sol (chevrons, plots) quand ils existent.
-  piege: Le nombre suivi de « m » est une distance à garder, pas une vitesse. C’est particulièrement utile dans les tunnels.
+  piege: Le nombre suivi de « m » est une distance à garder, pas une vitesse.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

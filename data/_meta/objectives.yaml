@@ -292,13 +292,11 @@
   - b6b4
   - m4d2
   - m6a
-  - m6b
   - m6d
   - m6i
   - m8d
   - m9d
   - m9v1
-  - m11b1
   - l-signalisation-temporaire
   - l-agglomeration-panneau
   - conf-b52-b54
@@ -520,7 +518,6 @@
   - c-trottinette-vulnerable
   - c-indice-bus-arrete
   - aff-c-pieton-detectable-motard
-  - aff-c-indice-danger-certain
   - aff-c-klaxon-ecole
   - aff-c-retros-suffisent
 - id: c-fatigue
@@ -729,7 +726,6 @@
   - ak17
   - ak32
   - k2
-  - kc1
   - conf-a14-ak14
 - id: u-vulnerables
   theme: U

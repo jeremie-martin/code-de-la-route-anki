@@ -1,20 +1,20 @@
 # Vérification du rendu navigateur
 
-Paquet complet SHA-256 : `f8b9ccdd309a930420f5faf0482cd28cdd0952b51fc2e6eb0313556317409c34`.
+Paquet complet SHA-256 : `e806eb7cce4878d1f8d41ccc603b0bbc7d31c7988ffe6edf4b54ae687363405e`.
 
 Paquet importé dans une collection temporaire ; contenus et gabarits rendus par Anki, puis chargés dans Chromium local sans réseau externe. Toutes les cartes, recto et verso, à 430 × 932 en clair et sombre, à 390 × 844 et 320 × 640 en sombre ; échantillon à 960 px.
 
 | Largeur × hauteur | Mode | Faces contrôlées |
 |---|---|---|
-| 430 × 932 | clair | 2168 |
-| 430 × 932 | sombre | 2168 |
-| 390 × 844 | sombre | 2168 |
-| 320 × 640 | sombre | 2168 |
+| 430 × 932 | clair | 2136 |
+| 430 × 932 | sombre | 2136 |
+| 390 × 844 | sombre | 2136 |
+| 320 × 640 | sombre | 2136 |
 | 960 × 900 | clair | 56 |
 
 **0 échec(s)** : débordement horizontal, média absent, rappel mal isolé, gabarit non résolu, recto déplacé/modifié au verso ou repère ouvert par défaut.
 
-4364 comparaisons recto/verso : géométrie des images, textes et typographie des prompts (le texte cloze se révèle en place et peut naturellement changer de longueur).
+4300 comparaisons recto/verso : géométrie des images, textes et typographie des prompts (le texte cloze se révèle en place et peut naturellement changer de longueur).
 
 756 faces/configurations nécessitent un défilement vertical ; ce défilement est admis. Captures en pleine hauteur et captures du seul écran (`_viewport`).
 

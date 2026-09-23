@@ -3,8 +3,8 @@
     lève le pied tout de suite ?
   reponse: 'Je lève le pied tout de suite, rapport adapté : j’anticipe l’arrêt, je ménage les freins et j’évite une accélération
     inutile.'
-  explication: 'Lever le pied tôt avec un rapport engagé ne consomme rien et évite d’accélérer pour freiner ensuite.
-    Freiner tard oblige à réaccélérer : c’est là que le carburant part.'
+  explication: 'Rapport engagé, pied levé, l’injection est coupée : je ne consomme rien. Arriver vite puis freiner fort
+    gaspille l’énergie déjà payée ; en arrivant lentement, le feu est souvent repassé au vert avant que je m’arrête.'
   theme: E
   sous_theme: ecoconduite
   source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
@@ -57,9 +57,8 @@
   question: En dehors de ma façon de conduire, quels facteurs liés au véhicule augmentent la consommation ?
   reponse: La climatisation utilisée sans besoin, les accessoires de toit (résistance à l’air), une charge inutile et des
     pneus sous-gonflés.
-  explication: 'Trois mécanismes : la résistance à l’air (coffre de toit, vitres ouvertes à vitesse élevée), la masse
-    inutile et la résistance au roulement (pneus sous-gonflés). La climatisation et les équipements électriques ajoutent
-    une charge au moteur. Garder le désembuage nécessaire à la visibilité.'
+  explication: 'Trois mécanismes : résistance à l’air, masse, résistance au roulement ; la climatisation ajoute une charge
+    au moteur. Garder le désembuage nécessaire à la visibilité.'
   theme: E
   sous_theme: ecoconduite
   source: "ADEME ; Codeclic, Conduite économique ; Ornikar, Conduite écologique"

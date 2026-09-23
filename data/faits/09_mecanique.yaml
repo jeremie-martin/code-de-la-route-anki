@@ -21,9 +21,8 @@
   sous_theme: feux
   source: Code de la route, art. R313-2 à R313-4
   rappels:
-  - De nuit par temps clair, les feux de position avant doivent être visibles à {{c1::150 m}}.
-  - De nuit par temps clair, les feux de croisement doivent éclairer efficacement à au moins {{c2::30 m}}.
-  - De nuit par temps clair, les feux de route doivent éclairer efficacement à au moins {{c3::100 m}}.
+  - 'De nuit par temps clair : feux de position visibles à {{c1::150 m}} ; feux de croisement éclairant à au moins {{c1::30
+    m}} ; feux de route éclairant à au moins {{c1::100 m}}.'
   illustration:
     gen: feux_portees
     legende: Minima réglementaires par temps clair, à l’échelle.

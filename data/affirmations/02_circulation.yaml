@@ -596,7 +596,8 @@
   contexte: J’entre dans une zone 30 puis je traverse deux intersections.
   affirmation: La limitation cesse de s'appliquer dès la première intersection franchie.
   verdict: faux
-  pourquoi: 'Une zone (30, de rencontre, piétonne, ZFE) vaut jusqu''au panneau de fin de zone, intersections comprises. C''est la prescription posée par un panneau isolé qui tombe à la prochaine intersection.'
+  pourquoi: Une zone (30, de rencontre, piétonne, zone à faibles émissions) vaut jusqu’au panneau de fin de zone, intersections
+    comprises. C’est la prescription posée par un panneau isolé qui tombe à la prochaine intersection.
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie art. 8 ; Code de la route, art. R110-2

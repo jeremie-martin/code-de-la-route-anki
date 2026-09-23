@@ -6,11 +6,11 @@
     commons: France road sign B21-1.svg
   nom: Obligation de tourner à droite avant le panneau
   signification: Le conducteur doit tourner à droite avant le panneau (le panneau est implanté en face, sur l'îlot ou le mur de fond).
-  conduite: Tourner à droite au niveau du panneau ; clignotant, contrôle rétroviseur droit.
+  conduite: Clignotant et contrôle du rétroviseur droit avant de tourner.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Flèche sans coude : je tourne avant le panneau, implanté en face de moi, au-delà de l’endroit où je tourne.'
+  piege: 'Flèche sans coude : le virage se prend ici, pas à l’intersection suivante.'
   comparaisons:
   - ref: b21c1
     legende: 'Flèche coudée : à la prochaine intersection.'

@@ -33,8 +33,8 @@
   source: "Ornikar, Appuie-tête ; Stych, Installation au poste de conduite"
 - id: aff-s-airbag-pieds
   contexte: Passager avant, long trajet sur autoroute.
-  affirmation: Poser ses pieds sur le tableau de bord expose à des blessures graves.
-  verdict: vrai
+  affirmation: Ceinture bouclée, le passager avant peut garder les pieds sur le tableau de bord pendant un long trajet.
+  verdict: faux
   pourquoi: 'L''airbag passager sort du tableau de bord en quelques dizaines de millisecondes à plus de 200 km/h : les jambes sont renvoyées vers le visage et le bassin. Les pieds restent au plancher, dos calé, ceinture bouclée.'
   theme: S
   sous_theme: passagers
@@ -50,7 +50,8 @@
 - id: aff-s-enfant-135-cm
   affirmation: En France, le Code de la route fixe à 1,35 m la taille à partir de laquelle un enfant de moins de 10 ans peut se passer de dispositif de retenue.
   verdict: faux
-  pourquoi: 'Le critère de 1,35 m vient d''autres pays européens. En France, la limite est l''âge de 10 ans (R412-2) ; on n''y échappe que par une morphologie adaptée à la ceinture, un certificat médical, un taxi ou un transport en commun.'
+  pourquoi: Le critère de 1,35 m vient d’autres pays européens. En France, la limite est l’âge de 10 ans (R412-2), sauf
+    dérogations.
   theme: S
   sous_theme: enfants
   source: Code de la route, art. R412-2 ; service-public.fr F628

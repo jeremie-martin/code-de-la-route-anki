@@ -107,9 +107,9 @@
 - id: conf-b9g-b9h
   a: b9g
   b: b9h
-  difference: '**A** (petit deux-roues à pédales/plateau) : accès interdit aux **cyclomoteurs** (≤ 50 cm³,
-    45 km/h). **B** (moto) : accès interdit aux **motocyclettes** et motocyclettes légères (125). Les silhouettes
-    se ressemblent : regarder la taille de la machine.'
+  difference: '**A** (petit deux-roues à pédales/plateau) : accès interdit aux **cyclomoteurs** (≤ 50 cm³, 45 km/h). **B**
+    (moto) : accès interdit aux **motocyclettes** et motocyclettes légères (jusqu’à 125 cm³). Les silhouettes se ressemblent
+    : regarder la taille de la machine.'
   theme: L
   sous_theme: panneaux
   source: IISR 4e partie

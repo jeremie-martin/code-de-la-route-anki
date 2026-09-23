@@ -92,9 +92,8 @@
     params:
       state: vert
   nom: Signaux tricolores modaux (bus R13b, cyclistes R13c)
-  signification: Le symbole du vélo ou du bus indique à quels usagers ce feu s’adresse.
-  conduite: En voiture, je suis le feu destiné à ma voie, pas le feu portant un vélo ou un bus. À vélo, je suis le feu avec le symbole vélo.
-  complement: 'Un feu pour les vélos peut leur donner le départ avant les autres véhicules : je ne démarre pas en voiture tant que mon propre feu reste rouge.'
+  signification: 'Feu réservé aux cyclistes (symbole vélo) : en voiture, je ne le suis pas, je suis le feu de ma voie.'
+  conduite: 'À vélo, je suis ce feu. Il peut donner le départ aux vélos avant les autres : je ne démarre pas en voiture tant que mon propre feu reste rouge.'
   theme: L
   sous_theme: feux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

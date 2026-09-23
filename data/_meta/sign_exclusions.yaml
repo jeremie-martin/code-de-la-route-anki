@@ -281,14 +281,12 @@
   raison: 'variantes d’inscription ou de flèche dont la lecture se déduit du panonceau de base déjà appris (début/fin,
     catégorie, période, cartouche, inscription libre). Une inscription se lit ; elle ne se mémorise pas comme un code.'
   couverts_par:
-  - m6b
   - m6c
   - m6d
   - m8a
   - m8b
   - m8d
   - m9v1
-  - m11b1
   - m11d
   - m1
   - m2
@@ -587,5 +585,25 @@
 - codes:
   - KD22
   raison: 'Le mot « Déviation » est écrit sur le panneau ; la couleur jaune des directions temporaires est apprise à part.'
+  couverts_par:
+  - d-couleur-jaune
+- codes:
+  - M6b
+  raison: 'L’inscription (« du 1er au 15 du mois ») se lit sur le panonceau ; le stationnement alterné semi-mensuel est
+    appris avec ses panneaux.'
+  couverts_par:
+  - b6a2
+  - b6a3
+  - l-stationnement-alterne
+- codes:
+  - M11b1
+  raison: 'Les heures sont écrites sur le panonceau ; la règle (un panonceau limite la prescription à sa période) est
+    apprise avec la portée des panonceaux.'
+  couverts_par:
+  - l-panonceau-portee
+- codes:
+  - KC1
+  raison: '« Route barrée » est écrit sur le panneau ; la couleur jaune des panneaux temporaires et la déviation sont
+    apprises à part.'
   couverts_par:
   - d-couleur-jaune

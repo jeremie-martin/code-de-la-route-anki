@@ -892,6 +892,21 @@ def corridor_securite(params):
     return str(S)
 
 
+def _motorway_barrier(S):
+    """Safety barrier beyond the hard shoulder of _motorway_scene, with its posts."""
+    S.add('<path d="M500 0V440" stroke="#8d969a" stroke-width="6"/>')
+    for y in range(20, 440, 40):
+        S.add(f'<rect x="496" y="{y}" width="8" height="8" fill="#6c7478"/>')
+
+
+def _hazard_car(S, cx, cy, scale=1.5):
+    """Grey car heading up with its four hazard lights flashing."""
+    S.add(f'<g transform="translate({cx},{cy}) scale({scale})">{vehicle_sprite("car", "gris")}</g>')
+    for dx in (-27, 27):
+        for dy in (-59, 59):
+            _flash_rays(S, cx + dx, cy + dy, 4, AMBER)
+
+
 def autoroute_panne(params):
     """Breakdown on the motorway, the first moves: the car against the right edge of the hard shoulder, hazard lights,
     front wheels turned towards the verge; the occupants, in vests, leave by the right-hand doors and cross the
@@ -900,15 +915,11 @@ def autoroute_panne(params):
     for x in (162, 302):
         S.add(f'<g transform="translate({x},330)"><path d="M0 30V-30m-10 12 10-12 10 12" fill="none" stroke="{MARK}" stroke-width="4"/></g>')
     cx, cy = 434, 170
-    S.add(f'<g transform="translate({cx},{cy}) scale(1.5)">{vehicle_sprite("car", "gris")}</g>')
-    for wx in (cx - 36, cx + 36):                   # front wheels turned to the right, towards the verge
-        S.add(f'<rect x="-5" y="-13" width="10" height="26" rx="3" fill="#111" transform="translate({wx},{cy - 36}) rotate(25)"/>')
-    for dx in (-27, 27):
-        for dy in (-59, 59):
-            _flash_rays(S, cx + dx, cy + dy, 4, AMBER)
-    S.add('<path d="M500 0V440" stroke="#8d969a" stroke-width="6"/>')
-    for y in range(20, 440, 40):
-        S.add(f'<rect x="496" y="{y}" width="8" height="8" fill="#6c7478"/>')
+    _hazard_car(S, cx, cy)
+    for wx in (cx - 38, cx + 38):                   # front wheels turned to the right, towards the verge
+        S.add(f'<rect x="-7" y="-17" width="14" height="34" rx="4" fill="#111" stroke="#fff" stroke-width="1.5" '
+              f'transform="translate({wx},{cy - 36}) rotate(25)"/>')
+    _motorway_barrier(S)
     for (x, y), (tx, ty) in (((487, 200), (566, 280)), ((487, 250), (596, 330))):   # out by the right, over the barrier
         S.add(pedestrian(x, y, YELLOW, 1.1))
         S.add(f'<path d="M{x + 10},{y + 8} Q{x + 40},{y + 60} {tx},{ty}" fill="none" stroke="{INK}" stroke-width="3" '
@@ -962,6 +973,8 @@ def vent_depassement(params):
         S.add(f'<path d="M470,{y} H410 m12,-9 -12,9 12,9" fill="none" stroke="#2f6fb0" stroke-width="4"/>')
     _pill(S, 466, 300, "vent", anchor="end")
     return str(S)
+
+
 def cycliste_bras(params):
     """Town street, MOI behind a cyclist who holds out the left arm (a side street opens on the left ahead).
     answer_on_back: the cyclist's path into the side street, drawn only on the back of a « verso » image."""
@@ -1007,7 +1020,7 @@ def feux_portees(params):
     main beam 100 m. Night background; labels large enough to read on a phone."""
     S = SVG(640, 300)
     S.add('<rect width="640" height="300" rx="12" fill="#1d2733"/>')
-    x0, k, size = 178, 1.6, 26                                               # px per metre
+    x0, k, size = 178, 1.6, 26          # bar origin, px per metre, label size
     rows = (("Position", 150, "vus à 150 m", True), ("Croisement", 30, "30 m", False), ("Route", 100, "100 m", False))
     for i, (name, m, label, seen) in enumerate(rows):
         y = 64 + i * 84
@@ -1048,13 +1061,8 @@ def autoroute_attente(params):
     S = _motorway_scene()
     for x in (162, 302):
         S.add(f'<g transform="translate({x},230)"><path d="M0 30V-30m-10 12 10-12 10 12" fill="none" stroke="{MARK}" stroke-width="4"/></g>')
-    S.add(f'<g transform="translate(429,150) scale(1.5)">{vehicle_sprite("car", "gris")}</g>')
-    for dx in (-27, 27):                     # hazard lights at the four corners, on the lamps
-        for dy in (-59, 59):
-            _flash_rays(S, 429 + dx, 150 + dy, 4, AMBER)
-    S.add('<path d="M500 0V440" stroke="#8d969a" stroke-width="6"/>')                       # safety barrier
-    for y in range(20, 440, 40):
-        S.add(f'<rect x="496" y="{y}" width="8" height="8" fill="#6c7478"/>')
+    _hazard_car(S, 429, 150)
+    _motorway_barrier(S)
     for x, y in ((548, 306), (594, 326), (556, 356)):
         S.add(pedestrian(x, y, YELLOW, 1.6))
     _pill(S, 570, 40, "glissière", anchor="middle")
@@ -2500,11 +2508,13 @@ def pieton_carrefour(params):
 def portee_prescription(params):
     """How far a speed limit reaches: an isolated sign stops at the next junction; a zone lasts until its end sign,
     across junctions. Traffic goes right, signs stand on its right-hand side; the part where 30 applies is
-    highlighted."""
-    S = SVG(480, 400)
-    S.add(f'<rect x="0" y="0" width="480" height="400" fill="{GRASS}"/>')
+    highlighted. `isole`: only the isolated sign (the zone is another card's answer)."""
     rows = ((0, "panneau isolé", "France road sign B14 (30).svg", None, 180),
             (200, "zone 30", "France road sign B30 (30).svg", "France road sign B51 (30).svg", 450))
+    if params.get("isole"):
+        rows = rows[:1]
+    S = SVG(480, 200 * len(rows))
+    S.add(f'<rect x="0" y="0" width="480" height="{200 * len(rows)}" fill="{GRASS}"/>')
     for top, name, first, last, end in rows:
         road_y = top + 58
         for x in (180, 330):
