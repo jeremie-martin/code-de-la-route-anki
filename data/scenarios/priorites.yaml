@@ -250,7 +250,7 @@
     - S
     - E
     - avant
-  question: "La voiture rouge arrive au moment où j'arrive. La priorité à droite s'applique-t-elle ?"
+  question: "La voiture rouge et moi arrivons en même temps. La priorité à droite s'applique-t-elle ?"
   reponse: Non. En sortant du parking, la voiture rouge doit me céder le passage.
   explication: 'R415-9 : celui qui débouche d''un accès non ouvert à la circulation publique, d''un chemin de terre ou d''une aire de stationnement doit céder le passage à tout autre véhicule. Il franchit le trottoir au pas, en laissant passer les piétons.'
   theme: L

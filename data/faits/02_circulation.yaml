@@ -145,8 +145,8 @@
   - ref: marq-zone-bleue
     legende: Places délimitées en bleu.
   illustration:
-    commons: Disque de stationnement européen.png
-    width: 320
+    gen: disque_stationnement
+    width: 240
     signal: true
     legende: 'Disque de stationnement : j’y règle mon heure d’arrivée.'
 - id: l-feux-detresse-usage

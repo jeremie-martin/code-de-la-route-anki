@@ -94,7 +94,7 @@
   explication: "R422-3 : priorité aux véhicules sur rails. Seuls une signalisation qui le lui impose (feux, panneau) ou un agent peuvent l'arrêter. Il ne peut ni dévier ni freiner court."
   theme: L
   sous_theme: priorites
-  source: "Code de la route, art. R422-3 ; IISR 3e partie, art. 42-8"
+  source: "Code de la route, art. R422-3 ; IISR 3e partie, art. 42-9 B 3°"
 - id: scn-t-intersection-droite
   kind: intersection
   spec:

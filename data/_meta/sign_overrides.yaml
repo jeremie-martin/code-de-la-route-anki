@@ -847,9 +847,10 @@ c24a:
     cyclable (vélo à contresens) ou un couloir bus à contresens.'
 c24c:
   complement: null
-  signification: 'Indique une condition particulière sur la route que je vais rejoindre : ici, un passage à niveau
-    juste après la bifurcation à droite.'
-  conduite: Avant de tourner, je me prépare à ce que le pictogramme annonce (ici, ralentir pour le passage à niveau).
+  signification: 'Signale une condition particulière sur la route qui part sur le côté : ici, un passage à niveau sur
+    la route à droite.'
+  conduite: 'Si je tourne à droite, je me prépare à ce que le pictogramme annonce (ici, un passage à niveau : ralentir,
+    être prêt à m’arrêter).'
 c25b:
   conduite: "Réduire à 110 sur autoroute dès qu’il pleut ou qu’il y a d’autres précipitations (repère pratique : essuie-glaces
     en marche)."
@@ -858,7 +859,8 @@ c25b:
 c26a:
   complement: Damier rouge et blanc au sol à l’entrée.
 c29a:
-  complement: null
+  complement: 'Toujours placé à l’avance, la distance étant donnée par un panonceau ; la fin de la section est annoncée
+    par le panneau de réduction du nombre de voies.'
 c29b:
   complement: null
   conduite: Je n’utilise la voie de gauche que pour dépasser et me rabats avant la fin du créneau de dépassement annoncé.

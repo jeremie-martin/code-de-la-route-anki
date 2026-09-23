@@ -2766,13 +2766,13 @@
   - C30
   importance: essentiel
   wikimedia_file: France road sign C28.svg
-  notes: 'Version temporaire jaune : KD10. En cas de rétrécissement, celui qui reste dans sa voie qui continue est
-    prioritaire ; celui dont la voie disparaît doit s''insérer.'
+  notes: 'Version temporaire jaune : KD10. Repère pratique : celui dont la voie disparaît s’insère dans la voie qui continue,
+    sans gêner ceux qui y circulent.'
 - code: C29a
   categorie: indication
   nom: Présignalisation d'un créneau de dépassement
-  signification: 'Annonce, avec un panonceau de distance, une section à deux voies dans chaque sens : créneau de
-    dépassement à 2 × 2 voies ou route à chaussées séparées.'
+  signification: 'Annonce une section à deux voies dans chaque sens : créneau de dépassement à 2 × 2 voies ou route à
+    chaussées séparées.'
   conduite_a_tenir: Attendre cette section pour dépasser plutôt que tenter un dépassement avant.
   implantation: Avant la section, avec un panonceau de distance (M1).
   fin: ''

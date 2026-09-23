@@ -71,6 +71,7 @@
         x: 190
         colour: rouge
 - id: aff-r-autoroute-voie-gauche-80
+  prerequis: [l-vitesse-minimale-autoroute]
   contexte: Autoroute à trois voies, circulation fluide, pluie battante ; sur la voie de gauche, je dépasse à 70 km/h
     un camion plus lent.
   affirmation: Je suis en infraction, puisque le minimum est de 80 km/h sur cette voie.

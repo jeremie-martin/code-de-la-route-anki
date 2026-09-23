@@ -137,7 +137,7 @@ Recherche Anki : `objectif::l-intersection`
 | `scn-prioritaire-droite-arrive` | socle | scenarios | Code de la route, art. R415-7 ; IISR (AB6) |
 | `scn-fin-prioritaire` | consolidation | scenarios | Code de la route, art. R415-5 ; IISR (AB7) |
 | `scn-feu-vert-pieton` | consolidation | scenarios | Code de la route, art. R415-11 |
-| `scn-tram-droite-moi-prioritaire` | consolidation | scenarios | Code de la route, art. R422-3 ; IISR 3e partie, art. 42-8 |
+| `scn-tram-droite-moi-prioritaire` | consolidation | scenarios | Code de la route, art. R422-3 ; IISR 3e partie, art. 42-9 B 3° |
 | `scn-t-intersection-droite` | consolidation | scenarios | Code de la route, art. R415-5 |
 | `scn-pompiers-face-tourne-gauche` | consolidation | scenarios | Code de la route, art. R415-12 |
 | `scn-pd-droite-tourne-gauche` | consolidation | scenarios | Code de la route, art. R415-5 et R415-4 |
@@ -640,7 +640,7 @@ Recherche Anki : `objectif::c-substances`
 | `c-alcool-elimination` | socle | faits | Sécurité routière, https://www.securite-routiere.gouv.fr/sites/default/files/2024-03/depliant_alcool-conduite-070823.pdf |
 | `c-conversion-air-sang` | socle | faits | securite-routiere.gouv.fr, L'alcool et la conduite ; Code de la route, art. R234-1 |
 | `c-medicaments-niveaux` | socle | faits | ANSM, Médicaments et conduite ; arrêté du 8 août 2008 (CSP, art. R5121-139) ; securite-routiere.gouv.fr, Les médicaments et la conduite |
-| `c-alcool-seuils-sang` | socle | faits | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2881 |
+| `c-alcool-seuils-sang` | socle | faits | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2881 ; Code de la route, art. R234-1 |
 | `c-cannabis-effets` | socle | questions | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886 |
 | `c-alcool-unites-probatoire` | socle | questions | Code de la route, R234-1 |
 | `aff-c-repas-copieux` | consolidation | affirmations | securite-routiere.gouv.fr, La fatigue et la conduite ; Départ en vacances |
@@ -812,7 +812,7 @@ Recherche Anki : `objectif::r-tunnel-rail`
 | `r-pn-bloque` | socle | questions | SNCF Réseau, Que faire en cas d'immobilisation ; Code de la route, art. R422-3 |
 | `r-pn-sans-barriere` | consolidation | questions | Code de la route, art. R422-3 et R414-12 ; IISR (G1, A8, J10) |
 | `r-pn-barrieres-ouverture` | socle | questions | Code de la route, art. R422-3 ; SNCF Réseau |
-| `r-tram-priorite` | socle | questions | Code de la route, art. R422-3 et R414-13 ; IISR 3e partie, art. 42-8 |
+| `r-tram-priorite` | socle | questions | Code de la route, art. R422-3 et R414-13 ; IISR 3e partie, art. 42-9 B 3° |
 | `r-tram-traversee-degager` | consolidation | questions | Code de la route, art. R422-3 et R417-11 ; coursdecode.com, Les tramways |
 | `aff-r-pn-150m` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR |
 | `aff-r-pn-feux-rouges-possibles` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR, 4e partie (signal G2) |
@@ -1166,7 +1166,7 @@ Recherche Anki : `objectif::s-retenir`
 | Note | Étape | Forme | Source |
 |---|---|---|---|
 | `s-enfant-chiffres` | socle | faits | Code de la route, art. R412-2 et R412-3 ; règlement ONU R129 |
-| `s-ceinture-obligation` | socle | questions | Code de la route, art. R412-1 et R412-2 |
+| `s-ceinture-obligation` | socle | questions | Code de la route, art. R412-1, R412-1-1 et R412-2 |
 | `s-ceinture-50-kmh` | consolidation | questions | securite-routiere.gouv.fr, La ceinture de sécurité |
 | `s-femme-enceinte` | socle | questions | securite-routiere.gouv.fr, La ceinture de sécurité |
 | `s-airbag-distance` | consolidation | questions | securite-routiere.gouv.fr, S'installer au poste de conduite ; constructeurs |

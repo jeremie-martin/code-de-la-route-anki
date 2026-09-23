@@ -492,7 +492,8 @@ def _crosswalk(S: SVG, b, cx, cy, half, walker=False):
 
 
 def pedestrian(x, y, fill=PEDESTRIAN, scale=1.25) -> str:
-    """A person on a plan (every card draws people with this figure); YELLOW `fill` for a high-visibility vest."""
+    """The deck's walking figure for a person on a road plan (scenarios and question scenes); YELLOW `fill` for a
+    high-visibility vest."""
     return (f'<g transform="translate({x},{y}) scale({scale})"><circle cx="0" cy="-14" r="6" fill="{fill}" stroke="#5a3a00" stroke-width="1"/>'
             f'<path d="M-6,-6 l12,0 l4,16 l-5,1 l-3,-8 l-3,14 l-6,0 l2,-14 l-3,7 l-5,-2 z" fill="{fill}" stroke="#5a3a00" stroke-width="1"/></g>')
 
@@ -623,7 +624,7 @@ def _agent(S: SVG, cx, cy, pose):
 def draw_roundabout(spec: dict) -> str:
     """Roundabout with 4 branches. spec: giratoire (bool: AB25 signs), vehicles: list of
     {pos: 'inside'|'S'|'E'|'N'|'W', angle (for inside, degrees, 0 = east, counter-clockwise), colour, me, goes}"""
-    S = SVG(600, 600, view=(45, 45, 510, 510))
+    S = SVG(600, 600, view=(30, 30, 540, 540))
     cx, cy = 300, 300
     R_out, R_in = 130, 60
     half = 54

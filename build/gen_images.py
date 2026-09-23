@@ -180,7 +180,7 @@ def transversale(params):
     S.add(f'<line x1="240" y1="100" x2="240" y2="300" stroke="{MARK}" stroke-width="4" stroke-dasharray="14 10"/>')
     kind = params.get("kind", "stop")
     if kind == "stop":
-        S.add(f'<rect x="242" y="84" width="116" height="16" fill="{MARK}"/>')      # wide: 50 cm, 3–4× a lane line
+        S.add(f'<rect x="242" y="84" width="116" height="16" fill="{MARK}"/>')      # wide: 50 cm, well over twice a lane line
     elif kind == "cedez":
         for x in range(244, 358, 20):
             S.add(f'<rect x="{x}" y="84" width="12" height="16" fill="{MARK}"/>')
@@ -904,7 +904,7 @@ def autoroute_attente(params):
     S.add('<path d="M500 0V440" stroke="#8d969a" stroke-width="6"/>')                       # safety barrier
     for y in range(20, 440, 40):
         S.add(f'<rect x="496" y="{y}" width="8" height="8" fill="#6c7478"/>')
-    for x, y in ((548, 318), (594, 338), (556, 372)):
+    for x, y in ((548, 306), (594, 326), (556, 356)):
         S.add(pedestrian(x, y, YELLOW, 1.6))
     _pill(S, 570, 40, "glissière", anchor="middle")
     _pill(S, 570, 420, "occupants", anchor="middle")
@@ -1422,6 +1422,27 @@ def plaque_orange(params):
     _text(S, 210, 214, params.get("matiere", "1203"), 34, "#111", weight=800)
     S.add(f'<path d="M320,40 l42,42 l-42,42 l-42,-42 z" fill="{SIGN_RED}" stroke="{PAPER}" stroke-width="3"/>')  # flammable
     S.add(f'<path d="M320,58 c10,14 14,22 8,34 c-3,6 -13,8 -18,2 c-6,-8 -1,-18 4,-22 c0,6 2,10 6,10 c2,-8 -2,-16 0,-24 z" fill="{PAPER}"/>')
+    return str(S)
+
+
+def disque_stationnement(params):
+    """European parking disc, French model (arrêté du 6 décembre 2007): light text on a dark blue face, « P », one
+    window « heure d'arrivée » where the pointer marks the time set (by half hours)."""
+    blue = "#1f4fa8"
+    S = SVG(300, 300)
+    S.add(f'<rect x="0" y="0" width="300" height="300" fill="{PAPER}"/>')
+    S.add(f'<rect x="20" y="10" width="260" height="280" rx="10" fill="{blue}"/>')
+    S.add(f'<rect x="124" y="28" width="52" height="52" rx="4" fill="none" stroke="#fff" stroke-width="5"/>')
+    _text(S, 150, 70, "P", 40, "#fff", weight=800)
+    _text(S, 150, 112, "HEURE D’ARRIVÉE", 20, "#fff", weight=800)
+    S.add('<path d="M130,128 H170 L150,236 Z" fill="#fff"/><circle cx="150" cy="170" r="4" fill="#9aa4b0"/>')
+    S.add('<path d="M72,246 Q150,212 228,246 L218,278 Q150,250 82,278 Z" fill="#fff"/>')        # time window
+    for i, x in enumerate(range(92, 212, 12)):
+        S.add(f'<line x1="{x}" y1="{252 - 8 * math.sin(math.pi * (x - 72) / 156):.1f}" x2="{x}" '
+              f'y2="{258 - 8 * math.sin(math.pi * (x - 72) / 156):.1f}" stroke="{blue}" stroke-width="2"/>')
+    _text(S, 118, 270, "10", 17, blue, weight=800)
+    _text(S, 150, 263, "30", 12, blue, weight=700)
+    _text(S, 182, 270, "11", 17, blue, weight=800)
     return str(S)
 
 
@@ -2369,7 +2390,7 @@ REGISTRY.update({
     "autoroute_attente": autoroute_attente,
     "medicaments_niveaux": medicaments_niveaux, "etiquettes_carburant": etiquettes_carburant, "pneu_flanc": pneu_flanc,
     "pneu_usure": pneu_usure, "angles_morts": angles_morts, "ceinture": ceinture,
-    "feu_modal": feu_modal, "feu_sur_panneau": feu_sur_panneau, "pmv": pmv, "plaque_orange": plaque_orange, "car_enfants": car_enfants, "types_routes": types_routes,
+    "feu_modal": feu_modal, "feu_sur_panneau": feu_sur_panneau, "pmv": pmv, "plaque_orange": plaque_orange, "car_enfants": car_enfants, "disque_stationnement": disque_stationnement, "types_routes": types_routes,
     "support_panneaux": support_panneaux, "planche_signaux": planche_signaux,
     "vocab_route": vocab_route, "formes_panneaux": formes_panneaux,
     "balise_piquet": balise_piquet, "voyant_direction": voyant_direction,

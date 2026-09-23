@@ -174,7 +174,7 @@ changement de l’un ou l’autre invalide les images au build suivant. Conventi
   `ANSWER` réservé au texte révélé par un verso, `WRONG` pour ce qu’il ne faut pas faire, `HIDDEN` hachuré pour ce
   qui est masqué, `VISIBLE` et `YELLOW` pour ce qui est vu ou le trajet de MOI, `SKIN`/`CLOTH`/`SEAT` pour les
   personnes et sièges) et des primitives partagées (`_text`, `_pill` sur fond chargé, `_tag`/`_slot` pour les
-  étiquettes recto/verso, `_flash_rays` pour tout ce qui clignote, `pedestrian` (personne vue en plan, la même que dans les scénarios), `_car_side`, `_car_rear`,
+  étiquettes recto/verso, `_flash_rays` pour tout ce qui clignote, `pedestrian` (silhouette de piéton posée sur les plans, la même que dans les scénarios), `_car_side`, `_car_rear`,
   `_side_seat`, `_sign_png`). Réutiliser avant de créer ; une nouvelle couleur ou forme se nomme une fois.
 - `build.build` affiche à la taille d’un signal les feux, panneaux et panonceaux dessinés (`SIGNAL_GENERATORS`)
   comme ceux des reconnaissances ; les autres dessins prennent la largeur de la carte.

@@ -178,8 +178,8 @@
   image:
     commons: France road sign C24c.svg
   nom: Conditions particulières de circulation sur la route ou la voie embranchée
-  signification: 'Indique une condition particulière sur la route que je vais rejoindre : ici, un passage à niveau juste après la bifurcation à droite.'
-  conduite: Avant de tourner, je me prépare à ce que le pictogramme annonce (ici, ralentir pour le passage à niveau).
+  signification: 'Signale une condition particulière sur la route qui part sur le côté : ici, un passage à niveau sur la route à droite.'
+  conduite: 'Si je tourne à droite, je me prépare à ce que le pictogramme annonce (ici, un passage à niveau : ralentir, être prêt à m’arrêter).'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -263,8 +263,9 @@
   image:
     commons: France road sign C29a.svg
   nom: Présignalisation d'un créneau de dépassement
-  signification: 'Annonce, avec un panonceau de distance, une section à deux voies dans chaque sens : créneau de dépassement à 2 × 2 voies ou route à chaussées séparées.'
+  signification: 'Annonce une section à deux voies dans chaque sens : créneau de dépassement à 2 × 2 voies ou route à chaussées séparées.'
   conduite: Attendre cette section pour dépasser plutôt que tenter un dépassement avant.
+  complement: Toujours placé à l’avance, la distance étant donnée par un panonceau ; la fin de la section est annoncée par le panneau de réduction du nombre de voies.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

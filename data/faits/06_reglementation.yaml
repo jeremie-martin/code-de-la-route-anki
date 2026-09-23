@@ -40,8 +40,8 @@
 - id: d-probatoire-3-points
   texte: En permis probatoire, une infraction retirant au moins {{c1::3 points}} entraîne l’obligation de suivre un stage
     de sensibilisation (lettre 48N).
-  explication: 'Le stage, à suivre dans les 4 mois, rend jusqu’à 4 points dans la limite du capital ; l’amende payée est remboursée
-    sur demande (dans les 15 jours ouvrables après le stage).
+  explication: 'Le stage, à suivre dans les 4 mois, rend jusqu’à 4 points dans la limite du capital. L’amende est remboursée (ou n’est
+    plus recouvrée) sur demande envoyée dans les 15 jours ouvrables après le stage ; passé ce délai, la demande est rejetée.
     La perte de la totalité des points (6 la première année) entraîne l’invalidation du permis : un seul délit ou une contravention
     à 6 points suffit.'
   theme: D

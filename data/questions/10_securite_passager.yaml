@@ -5,7 +5,7 @@
   explication: "Conducteur non attaché : 135 € et 3 points ; passager majeur : 135 € pour lui, sans points ; passager mineur non attaché : 135 € pour le conducteur, sans points. Chaque passager occupe sa propre place assise (R412-1-1). R412-1 II prévoit des dispenses limitées : morphologie inadaptée, certificat médical, taxi en service…"
   theme: S
   sous_theme: passagers
-  source: Code de la route, art. R412-1 et R412-2
+  source: Code de la route, art. R412-1, R412-1-1 et R412-2
 - id: s-ceinture-50-kmh
   question: 'Choc frontal à 50 km/h : que devient un adulte non attaché ?'
   reponse: 'Il est projeté à la vitesse du véhicule et heurte l''habitacle ou les autres occupants : ses bras ne peuvent
