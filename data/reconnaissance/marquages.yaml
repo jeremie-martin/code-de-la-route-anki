@@ -145,7 +145,7 @@
     params:
       kind: cycliste
   nom: Traversée cyclable (passage pour cyclistes)
-  signification: Traversée de chaussée réservée aux cyclistes, matérialisée par deux rangées de carrés blancs de 50 cm.
+  signification: Traversée de chaussée réservée aux cyclistes, matérialisée par des bandes blanches étroites (ou, sur d'anciens marquages, deux rangées de carrés blancs).
   conduite: Je contrôle la traversée avant de tourner et respecte les priorités indiquées, notamment un éventuel cédez-le-passage.
   complement: En prolongement des pistes cyclables aux intersections.
   piege: En ligne droite, c’est la signalisation du carrefour qui fixe la priorité, pas le marquage. Mais en tournant, je cède aux cyclistes de la piste que je coupe (R415-3 et R415-4).
@@ -159,9 +159,9 @@
     params:
       kind: zebra
   nom: Zébra (hachures blanches)
-  signification: 'Zone hachurée blanche interdite à la circulation, à l''arrêt et au stationnement : îlot peint, biseau, musoir.'
-  conduite: Ne pas y circuler, y stationner ni s'en servir pour dépasser ou tourner.
-  complement: Zébra bordé d'une ligne continue = infranchissable ; bordé d'une ligne discontinue = franchissable en cas de nécessité.
+  signification: 'Zone hachurée blanche : surface non circulable (îlot peint, biseau, musoir).'
+  conduite: Ne pas y circuler, ni s'y arrêter, ni s'en servir pour dépasser ou tourner.
+  complement: Elle est bordée d'une ligne continue, qui ne se franchit pas.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -309,8 +309,8 @@
     params: {}
   nom: Aire de livraison (ligne jaune discontinue + inscription LIVRAISON)
   signification: 'Emplacement réservé à l''arrêt des véhicules qui chargent ou déchargent des marchandises : ligne jaune discontinue et inscription « LIVRAISON ».'
-  conduite: Ne pas y stationner (arrêt bref possible pour un chargement) sauf horaires autorisés sur les aires partagées.
-  complement: Un arrêté local peut ouvrir l’aire au stationnement à certaines heures (la nuit, par exemple) ; en dehors de ces horaires signalés, elle reste réservée aux livraisons.
+  conduite: Aux heures où elle est réservée, ne pas y stationner.
+  complement: 'Ligne discontinue : réservée aux livraisons les jours ouvrables de 7 h à 20 h, sauf autres horaires affichés ; en dehors, on peut y stationner. Double ligne continue : réservée en permanence.'
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

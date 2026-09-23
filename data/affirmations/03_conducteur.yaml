@@ -117,10 +117,12 @@
 - id: aff-c-nuit-trafic-fluide
   affirmation: De nuit, le risque d'accident mortel est plus faible que de jour.
   verdict: faux
-  pourquoi: La nuit concentre environ 4 tués sur 10 (ONISR, bilan 2025) pour une faible part du trafic. Visibilité réduite, somnolence, alcool et vitesse plus élevée sur route dégagée s'y cumulent. J'adapte l'allure à la distance éclairée et j'interromps le trajet si je ne suis plus en état de conduire.
+  pourquoi: La nuit concentre environ 4 tués sur 10 (ONISR, bilan 2024). Visibilité réduite, somnolence, alcool et vitesse
+    plus élevée sur route dégagée s'y cumulent. J'adapte l'allure à la distance éclairée et j'interromps le trajet si je
+    ne suis plus en état de conduire.
   theme: C
   sous_theme: deficiences
-  source: ONISR, bilan 2025 ; securite-routiere.gouv.fr, Conduire la nuit
+  source: ONISR, bilan 2024 ; securite-routiere.gouv.fr, Conduire la nuit
 - id: aff-c-senior-reaction
   affirmation: Avec l’âge, la réaction et la récupération après éblouissement peuvent devenir plus lentes.
   verdict: vrai
@@ -229,11 +231,12 @@
     une vérification.
   theme: C
   sous_theme: deficiences
-  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886"
+  source: Service Public, F2886 ; Drogues Info Service, Durée de positivité d’un test salivaire
 - id: aff-c-medicament-sans-ordonnance
   affirmation: Un médicament acheté sans ordonnance ne peut pas être incompatible avec la conduite.
   verdict: faux
-  pourquoi: 'L''automédication (antihistaminiques, antitussifs, antalgiques…) peut porter un pictogramme de niveau 2, voire 3 : vérifier la boîte et la rubrique « conducteurs » de la notice, et ne pas associer à l''alcool.'
+  pourquoi: 'L''automédication (antihistaminiques, antitussifs, antalgiques…) peut porter un pictogramme, jusqu’au niveau
+    2 : vérifier la boîte et la rubrique « conducteurs » de la notice, et ne pas associer à l''alcool.'
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, Les médicaments et la conduite ; ANSM"
@@ -312,9 +315,9 @@
 - id: aff-c-senior-visite-70
   affirmation: À partir de 70 ans, conserver son permis B impose une visite médicale périodique.
   verdict: faux
-  pourquoi: Aucune visite liée à l'âge n'existe pour le permis B en France ; seules certaines affections, restrictions
-    ou activités professionnelles imposent un contrôle médical. Chacun doit cependant faire vérifier sa vue et adapter
-    sa conduite.
+  pourquoi: Aucune visite liée à l'âge n'existe pour le permis B en France ; seules certaines affections, restrictions ou
+    activités professionnelles imposent un contrôle médical. Il reste conseillé de faire vérifier régulièrement sa vue et
+    d'adapter sa conduite.
   theme: C
   sous_theme: deficiences
   source: Code de la route, art. R221-10 et R226-1 ; service-public F2882

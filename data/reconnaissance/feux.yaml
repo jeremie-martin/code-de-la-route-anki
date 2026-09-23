@@ -54,7 +54,7 @@
   theme: L
   sous_theme: feux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  complement: 'Sur un feu tricolore, c’est la lampe du milieu qui clignote ; certains carrefours fonctionnent ainsi la nuit ou en dehors des heures de pointe : ce n’est pas forcément une panne.'
+  complement: 'Le plus souvent, c’est la lampe du milieu qui clignote (parfois celle du bas, notamment aux feux de chantier) ; certains carrefours fonctionnent ainsi la nuit ou en dehors des heures de pointe : ce n’est pas forcément une panne.'
 - id: feu-rouge-clignotant
   type: feu
   image:

@@ -75,7 +75,7 @@
   nom: Interdiction de faire demi-tour
   signification: Interdiction de faire demi-tour sur la route suivie, jusqu'à la prochaine intersection.
   conduite: Ne pas faire demi-tour ; continuer et changer de direction plus loin.
-  complement: Même sans ce panneau, le demi-tour est interdit sur autoroute, route express et dans un tunnel. Il ferait aussi circuler à contresens dans une rue à sens unique.
+  complement: Même sans ce panneau, le demi-tour est interdit sur autoroute, sur route express et dans un tunnel signalé par le panneau tunnel. Il ferait aussi circuler à contresens dans une rue à sens unique.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -312,7 +312,6 @@
   nom: Limitation de vitesse
   signification: Interdiction de dépasser la vitesse indiquée, à partir du panneau.
   conduite: Être déjà à cette vitesse au niveau du panneau ; c'est un maximum, pas une consigne.
-  complement: Posée sur un panneau de danger, elle ne vaut que pour ce danger.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

@@ -190,10 +190,10 @@
 - id: conf-b52-b54
   a: b52
   b: b54
-  difference: '**A**, piéton, cycliste, voiture et « 20 » : zone de rencontre, piétons prioritaires et 20 km/h au maximum. **B**, adulte et enfant : aire piétonne ; seuls les véhicules de desserte et les cycles y circulent, à l’allure du pas.'
+  difference: '**A**, piéton, cycliste, voiture et « 20 » : zone de rencontre, piétons prioritaires et 20 km/h au maximum. **B**, adulte et enfant : aire piétonne ; seuls les véhicules de desserte, les cycles et les trottinettes électriques y circulent (sauf interdiction locale), à l’allure du pas.'
   theme: L
   sous_theme: panneaux
-  source: Code de la route, art. R110-2
+  source: Code de la route, art. R110-2, R412-43-1 et R431-9
 - id: conf-b30-b56
   a: b30
   b: b56

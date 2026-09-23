@@ -1,7 +1,8 @@
 - id: s-enfant-chiffres
-  explication: 'Exceptions pour l''avant : siège dos à la route avec airbag passager désactivé, absence de
-    sièges arrière ou sièges arrière tous occupés par des enfants de moins de 10 ans. Sanction : 135 € pour
-    le conducteur, sans points. La limite légale est l''âge, pas la taille.'
+  explication: 'Exceptions pour l''avant : siège dos à la route avec airbag passager désactivé ; pas de sièges arrière ou
+    sièges arrière sans ceinture ; sièges arrière momentanément inutilisables ou tous occupés par des enfants de moins de
+    10 ans, chaque enfant restant dans un dispositif adapté. Sanction : 135 € pour le conducteur, sans points. La limite
+    légale est l''âge, pas la taille.'
   theme: S
   sous_theme: enfants
   source: Code de la route, art. R412-2 et R412-3 ; règlement ONU R129

@@ -109,7 +109,9 @@
       - 356
     legende: 'Les 5 m en amont du passage restent libres : piétons et conducteurs s’y voient.'
 - id: l-stationnement-alterne
-  explication: 'Le changement de côté se fait le soir, entre 20 h 30 et 21 h. Je lis les dates d’interdiction sur les panneaux : du 1er au 15, ou du 16 à la fin du mois. Une prescription de zone peut aussi imposer ce régime.'
+  explication: 'Sauf arrêté local différent, le changement de côté se fait le soir, entre 20 h 30 et 21 h. Je lis les dates
+    d’interdiction sur les panneaux : du 1er au 15, ou du 16 à la fin du mois. Une prescription de zone peut aussi imposer
+    ce régime.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-2
@@ -206,7 +208,7 @@
     de distance indique l’éloignement réel annoncé ; un panonceau d’étendue décrit la longueur concernée.
   theme: L
   sous_theme: signalisation
-  source: "IISR 2e partie, art. 28 ; Sécurité routière, Exemples de nouvelles questions (Q18, Q19)"
+  source: IISR 2e partie, art. 25 ; Sécurité routière, Exemples de nouvelles questions (Q18, Q19)
   rappels:
   - Hors agglomération, sans panonceau de distance, un panneau de danger est généralement placé à environ {{c1::150 m}} du
     danger.

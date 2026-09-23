@@ -104,9 +104,8 @@
   sous_theme: permis
   source: Code de la route, art. R221-1-1
 - id: d-accompagnateur
-  explication: 'En conduite accompagnée, l''accompagnateur a la charge de la conduite et peut voir sa responsabilité
-    engagée. Il est personnellement soumis aux règles sur l''alcool et les stupéfiants (rétention possible de son
-    permis, L224-1 II).'
+  explication: L'accompagnateur répond de ses propres manquements et doit rester apte à reprendre la conduite. Il est personnellement
+    soumis aux règles sur l'alcool et les stupéfiants (rétention possible de son permis, L224-1 II).
   theme: D
   sous_theme: permis
   source: "Code de la route, R211-3 et R234-1 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2826"
@@ -164,7 +163,9 @@
   prerequis:
   - c-alcool-seuils-sang
 - id: d-alcool-delit
-  explication: 'Le seuil est inclus. Des peines de prison et d’amende sont encourues ; après rétention, le préfet doit suspendre le permis. Le refus de vérification est aussi un délit. Depuis 2026, L237-1 regroupe l’ivresse manifeste et la consommation manifeste, détournée ou excessive, d’une substance psychoactive listée (protoxyde d’azote par exemple) : délit, 6 points.'
+  explication: 'Le seuil est inclus. Des peines de prison et d’amende sont encourues ; après rétention, le préfet doit suspendre
+    le permis. Le refus de vérification est aussi un délit. Depuis 2026, L237-1 regroupe l’ivresse manifeste et la consommation
+    manifeste, détournée ou excessive, d’une substance psychoactive figurant sur une liste fixée par décret : délit, 6 points.'
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L234-1, L234-2, L234-8, L237-1 (lois n° 2025-622 et n° 2026-798)
@@ -183,7 +184,8 @@
 - id: d-homicide-routier
   texte: Causer involontairement la mort d’autrui au volant avec une circonstance aggravante prévue par la loi peut constituer
     un {{c1::homicide routier}}.
-  explication: Alcool, stupéfiants ou grand excès de vitesse figurent parmi les circonstances aggravantes. C’est une qualification pénale, pas la preuve d’une intention de tuer ; les peines dépendent des circonstances.
+  explication: Alcool, stupéfiants ou excès de vitesse d’au moins 30 km/h figurent parmi les circonstances prévues. C’est
+    une qualification pénale, pas la preuve d’une intention de tuer ; les peines dépendent des circonstances.
   theme: D
   sous_theme: sanctions
   source: "Code pénal, art. 221-18 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886"
@@ -225,7 +227,7 @@
   explication: Les avertisseurs de « zones de danger » (Coyote, Waze) restent autorisés.
   theme: D
   sous_theme: sanctions
-  source: Code de la route, art. R413-15 et R317-8
+  source: Code de la route, art. R413-15
 - id: d-retention-suspension
   explication: 'Cas de rétention, notamment : alcoolémie délictuelle ou ivresse, stupéfiants, refus de dépistage, excès ≥ 40 km/h avec interception, téléphone cumulé à une autre infraction, accident corporel avec infraction, refus d’obtempérer. Depuis la loi du 18 août 2026, après rétention pour alcoolémie délictuelle, stupéfiants, refus de vérification ou conduite sous emprise manifeste, le préfet doit prononcer la suspension ; dans les autres cas, elle reste possible. Le tribunal peut ensuite suspendre plus longtemps ou annuler le permis.'
   theme: D
@@ -236,8 +238,8 @@
   - Après une rétention, la suspension administrative du préfet dure au plus {{c2::6 mois}} (1 an notamment pour alcool,
     stupéfiants, refus de vérification ou accident corporel ou mortel).
 - id: d-documents-bord
-  explication: 'Permis physique ou numérique admis. La suppression de la carte verte n’a pas supprimé l’obligation
-    d’assurance. Gilet et triangle sont des équipements, pas des documents.'
+  explication: Permis physique ou numérique admis. La suppression de la carte verte n’a pas supprimé l’obligation d’assurance.
+    Les agents peuvent aussi demander à voir le gilet et le triangle (R233-1).
   theme: D
   sous_theme: documents
   source: Code de la route, art. R233-1 ; décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362
@@ -304,7 +306,7 @@
     électrique se conduit aussi dès 14 ans, sans permis.
   theme: D
   sous_theme: permis
-  source: Code de la route, art. R221-5 et R221-4 (catégorie AM) ; service-public F2828
+  source: Code de la route, art. R211-1 III et R211-2 ; securite-routiere.gouv.fr, Permis cyclomoteur – catégorie AM
 - id: d-permis-b-perimetre
   prerequis: [d-masses-definitions]
   rappels:

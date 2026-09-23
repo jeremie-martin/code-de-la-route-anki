@@ -106,10 +106,12 @@
   check: {pair: [S, W, avant]}
   question: "Intersection sans signalisation. Les véhicules suivent les flèches. Qui passe en premier ?"
   reponse: "Moi : je suis à sa droite."
-  explication: "La priorité à droite joue en ma faveur ; le tourne-à-gauche ne m'oblige à céder qu'aux véhicules venant d'en face et aux piétons de la rue que j'aborde. Je m'assure que le rouge ralentit, puis je tourne."
+  explication: La priorité à droite joue en ma faveur ; le tourne-à-gauche m'oblige à céder aux véhicules venant d'en face,
+    aux usagers d'une piste cyclable que je traverse et aux piétons de la rue que j'aborde. Je m'assure que le rouge ralentit,
+    puis je tourne.
   theme: L
   sous_theme: priorites
-  source: "Code de la route, art. R415-5"
+  source: Code de la route, art. R415-5 et R415-4
 - id: scn-pd-les-deux-tournent-droite
   kind: intersection
   spec:

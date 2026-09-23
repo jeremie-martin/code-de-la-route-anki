@@ -263,7 +263,9 @@
   contexte: Je circule sur cette route et j’approche d’un carrefour, bonne visibilité.
   affirmation: Je peux y dépasser la voiture qui me précède.
   verdict: vrai
-  pourquoi: 'R414-11 interdit le dépassement aux intersections, sauf pour celui qui y est prioritaire (route prioritaire, ou STOP et cédez-le-passage pour les autres), aux carrefours à feux ou réglés par un agent.'
+  pourquoi: R414-11 interdit aux intersections le dépassement d’autre chose qu’un deux-roues, sauf pour celui qui y est
+    prioritaire (route prioritaire, ou STOP et cédez-le-passage pour les autres), aux carrefours à feux ou réglés par un
+    agent.
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-11
@@ -292,7 +294,9 @@
   contexte: Route à double sens, sans terre-plein central, comme sur ce plan.
   affirmation: Je dépasse par la voie de gauche de mon sens, pas par celles d'en face.
   verdict: vrai
-  pourquoi: 'Chaque sens dispose de deux voies : celle de gauche sert au dépassement, puis je me replace à droite. Sur une chaussée à quatre voies à double sens, la ligne axiale est continue : la franchir est interdit (R412-19 : 135 €, 3 points).'
+  pourquoi: 'Chaque sens dispose de deux voies : celle de gauche sert au dépassement, puis je me replace à droite. Les voies
+    d’en face sont interdites au dépassement (R414-8) ; ici, la ligne axiale est continue, comme toujours à quatre voies
+    hors agglomération : la franchir est interdit (R412-19 : 135 €, 3 points).'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-19 et R414-8 ; IISR 7e partie, art. 114-2
@@ -335,7 +339,7 @@
     legende: Même interdiction, pour les seuls poids lourds de plus de 3,5 t.
 - id: aff-l-klaxon-nuit
   contexte: Hors agglomération, de nuit, je m'apprête à dépasser un véhicule lent.
-  affirmation: S’il faut avertir de mon dépassement, je le fais de préférence par un appel de phares plutôt qu’au klaxon.
+  affirmation: S’il faut avertir de mon dépassement, je le fais par des appels de phares, pas au klaxon.
   verdict: vrai
   pourquoi: 'R416-2 : la nuit, l''avertissement se donne par l''allumage intermittent des feux, le klaxon restant réservé à l''absolue nécessité. Le clignotant gauche reste l''annonce du changement de direction.'
   theme: L

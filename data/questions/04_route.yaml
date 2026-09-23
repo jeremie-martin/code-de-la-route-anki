@@ -34,7 +34,7 @@
   explication: 'Je dois pouvoir m’arrêter dans la partie de route que je vois. Les feux de croisement n’ont qu’une portée minimale réglementaire de 30 m, et un obstacle sombre s’y détache tard : à 90 km/h, la distance d’arrêt dépasse ce que je distingue. D’où les feux de route dès que personne n’est ébloui.'
   theme: R
   sous_theme: nuit
-  source: "Code de la route, R413-17, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/"
+  source: Code de la route, R413-17 et R313-3
 - id: r-pluie-feux
   question: Averse de jour sur une route hors agglomération, la visibilité baisse nettement. Dois-je allumer mes feux ?
   reponse: 'Oui, les feux de croisement : obligatoires dès que la visibilité est réduite par la météo, de jour comme de nuit.'
@@ -70,7 +70,7 @@
     qui suivent. À l''arrêt dans le brouillard, feux de position.'
   theme: R
   sous_theme: intemperies
-  source: Code de la route, art. R416-6 et R416-7
+  source: Code de la route, art. R416-6, R416-7 et R416-12
   comparaisons:
   - ref: voyant-brouillard-avant
     legende: 'Feux de brouillard avant : brouillard, neige ou forte pluie.'
@@ -147,9 +147,9 @@
   question: Un tunnel affiche deux distances entre véhicules, l’une en circulation, l’autre à l’arrêt. La file
     s’immobilise devant moi. Quelle consigne appliquer ?
   reponse: 'La distance prévue à l’arrêt : je laisse cet espace libre au lieu de venir coller le véhicule précédent.'
-  explication: 'Ce sont les valeurs affichées à l’entrée du tunnel qui font foi ; sans distance propre à l’arrêt, je
-    garde la même qu’en circulation. Des plots bleus peuvent matérialiser l’intervalle (garder le nombre indiqué,
-    souvent deux). Cet espace limite la propagation d’un incendie et laisse passer les secours.'
+  explication: Ce sont les valeurs affichées à l’entrée du tunnel qui font foi ; sans distance propre à l’arrêt, je laisse
+    un large espace (la directive européenne recommande au moins 5 m). Des plots bleus peuvent matérialiser l’intervalle
+    (garder le nombre indiqué, souvent deux). Cet espace limite la propagation d’un incendie et laisse passer les secours.
   theme: R
   sous_theme: tunnels
   source: "CETU, https://www.cetu.developpement-durable.gouv.fr/IMG/pdf/CETU-Note_Info_22_2011.pdf"

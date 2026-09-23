@@ -44,7 +44,8 @@
   contexte: 'Conduite accompagnée : l''élève, qui n''a encore aucun permis, commet un excès de vitesse, l''accompagnateur est à côté de lui.'
   affirmation: Les points sont retirés à l'élève, auteur de l'infraction.
   verdict: faux
-  pourquoi: Sans permis, l'élève n'a pas de capital de points à perdre ; l'amende reste due. L'accompagnateur, qui a la charge de la conduite, peut voir sa responsabilité engagée.
+  pourquoi: Sans permis, l'élève n'a pas de capital de points à perdre ; l'amende reste due. L'accompagnateur répond de
+    ses propres manquements (alcool, stupéfiants) et doit rester apte à reprendre la conduite.
   theme: D
   sous_theme: permis
   source: Code de la route, L121-1 et L223-1

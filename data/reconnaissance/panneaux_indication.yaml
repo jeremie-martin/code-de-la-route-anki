@@ -29,7 +29,7 @@
     commons: France road sign C6.svg
   nom: Arrêt d'autobus ou d'autocar
   signification: Indique un arrêt de bus ou de car de ligne régulière ; l'arrêt et le stationnement des autres véhicules y sont interdits (zigzag jaune au sol).
-  conduite: Ne pas s'arrêter sur l'emplacement. En agglomération, ralentir et au besoin s'arrêter pour laisser le bus quitter son arrêt lorsqu'il annonce son départ par le clignotant (R412-11).
+  conduite: Ne pas s'arrêter sur l'emplacement. En agglomération, ralentir et au besoin s'arrêter pour laisser le bus quitter son arrêt (R412-11) ; son clignotant annonce ce départ.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -417,7 +417,7 @@
   nom: Début d'une section d'autoroute
   signification: 'Début d''autoroute : route réservée aux véhicules à moteur rapides, sans croisement à niveau ; arrêt, demi-tour et marche arrière interdits.'
   conduite: S'insérer par la voie d'accélération en cédant le passage, rouler à droite, ne pas circuler sur la BAU.
-  complement: 130 km/h (110 sous la pluie, 110 en permis probatoire) ; 80 minimum sur la voie de gauche.
+  complement: '130 km/h (110 sous la pluie, 110 en permis probatoire) ; voie de gauche : 80 minimum si la circulation est fluide et que visibilité et adhérence le permettent.'
   piege: 'Le symbole de pont indique une autoroute. La voiture vue de face indique une route réservée aux automobiles : elle n’est pas forcément une autoroute.'
   theme: L
   sous_theme: panneaux

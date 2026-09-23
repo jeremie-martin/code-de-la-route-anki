@@ -1006,3 +1006,9 @@
   url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/
   portee: 'Code consolidé au 10/09/2026 : aucune disposition propre aux piétons aveugles ou à la canne blanche (recherche « canne », « aveugle », « malvoyant ») ; R415-11 (céder au piéton qui s’engage ou manifeste clairement l’intention de traverser) et R412-6 (prudence accrue envers les plus vulnérables) s’appliquent. La règle « canne levée = arrêt partout » relève du droit suisse (OCR), pas du Code français.'
   notes: [u-pieton-canne-blanche]
+- id: c107-arrete-1967-vitesse
+  consulte_le: '2026-09-23'
+  url: https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/
+  portee: 'L’arrêté du 24 novembre 1967 (version du 25/04/2025) dit encore que la route à accès réglementé (C107) est limitée à 110 km/h « sauf indication contraire » ; le décret, postérieur et supérieur (R413-2 I : 110 sur les routes à deux chaussées séparées par un terre-plein, 80 sur les autres), l’emporte. Le deck enseigne R413-2 : C107 ne fixe pas à lui seul 110 km/h.'
+  notes: [c107, conf-c107-c207, l-c107-route-simple, l-c107-route-separee]
+

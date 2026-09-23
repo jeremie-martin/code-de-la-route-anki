@@ -102,8 +102,8 @@
 - id: aff-r-autoroute-aac
   affirmation: Un élève en conduite accompagnée n'a pas le droit de circuler sur autoroute.
   verdict: faux
-  pourquoi: L'autoroute est autorisée en conduite accompagnée ; l'élève est seulement soumis aux vitesses du permis
-    probatoire (110 km/h sur autoroute, 100 sur chaussées séparées, 80 ailleurs).
+  pourquoi: L'autoroute est autorisée en conduite accompagnée ; l'élève est seulement soumis aux vitesses du permis probatoire
+    (110 km/h sur autoroute normalement à 130, 100 sur les autres autoroutes et les chaussées séparées, 80 ailleurs).
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R413-5 ; service-public.fr F2390
@@ -157,11 +157,11 @@
 - id: aff-r-brouillard-feux-route
   affirmation: Dans le brouillard, les feux de route éclairent plus loin que les feux de croisement.
   verdict: faux
-  pourquoi: Leur faisceau se réfléchit sur les gouttelettes et forme un mur blanc qui réduit encore la visibilité
-    ; R416-6 impose d'ailleurs les feux de croisement par visibilité réduite.
+  pourquoi: Leur faisceau se réfléchit sur les gouttelettes et forme un mur blanc qui réduit encore la visibilité ; R416-6
+    interdit d'ailleurs les feux de route par visibilité réduite (feux de croisement ou de brouillard avant).
   theme: R
   sous_theme: intemperies
-  source: Code de la route, art. R416-6
+  source: Code de la route, art. R416-6 et R416-7
 - id: aff-r-visibilite-50-autoroute
   affirmation: La limitation à 50 km/h en cas de visibilité inférieure à 50 m ne s'applique pas sur autoroute.
   verdict: faux
@@ -249,7 +249,7 @@
   pourquoi: 'R416-5 : les feux de route sont interdits véhicule arrêté ou stationné (135 €). La nuit, hors agglomération, le véhicule arrêté sur la chaussée reste signalé par ses feux de position, même si la route est éclairée.'
   theme: R
   sous_theme: nuit
-  source: Code de la route, art. R416-5
+  source: Code de la route, art. R416-5 et R416-12
 - id: aff-r-nuit-pieton-sombre
   dedup_ok:
   - aff-u-pieton-nuit-croisement

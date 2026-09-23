@@ -32,7 +32,9 @@
   contexte: Je dépose un passager devant un commerce ; la seule place libre porte le marquage « personnes handicapées ».
   affirmation: Un arrêt de deux minutes y est admis.
   verdict: faux
-  pourquoi: 'R417-11 vise « l''arrêt ou le stationnement » sur ces emplacements : 135 € et fourrière. Ils sont réservés aux porteurs de la carte mobilité inclusion « stationnement », qui y stationnent gratuitement (durée limitable par la commune, mais au moins 12 h).'
+  pourquoi: 'R417-11 vise « l''arrêt ou le stationnement » sur ces emplacements : 135 €, fourrière possible. Ils sont réservés
+    aux porteurs de la carte mobilité inclusion « stationnement », qui y stationnent gratuitement (durée limitable par la
+    commune, mais au moins 12 h).'
   theme: U
   sous_theme: pietons
   source: 'Code de la route, art. R417-11 ; service-public.fr F2891'
@@ -247,7 +249,9 @@
   contexte: Autoroute à trois voies dans mon sens ; un poids lourd rattrape deux véhicules plus lents.
   affirmation: Il peut utiliser la voie de gauche le temps de les dépasser.
   verdict: faux
-  pourquoi: 'R412-25 : sur une chaussée à trois voies ou plus dans le même sens, les véhicules de plus de 3,5 t ou de plus de 7 m sont cantonnés aux deux voies de droite. Sur une 2×2 voies, ils peuvent doubler.'
+  pourquoi: 'R412-25 : sur une chaussée à trois voies ou plus dans le même sens, les véhicules de plus de 3,5 t et les ensembles
+    de plus de 7 m sont cantonnés aux deux voies de droite (sauf pour préparer un changement de direction). Sur une 2×2
+    voies, ils peuvent doubler.'
   theme: U
   sous_theme: poids_lourds
   source: 'Code de la route, art. R412-25'

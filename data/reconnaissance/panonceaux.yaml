@@ -278,12 +278,12 @@
   image:
     commons: France road sign M10b.svg
   nom: 'Cartouche : numéro d''échangeur'
-  signification: Cartouche portant le numéro de la sortie/échangeur (sur autoroute), placé au-dessus des panneaux de sortie.
-  complement: Cartouche placé AU-DESSUS du panneau qu'il complète (exception parmi les panonceaux).
+  signification: 'Cartouche placé au-dessus du panneau d''entrée d''autoroute (ou de route à accès réglementé) : numéro de l''échangeur par lequel j''entre.'
+  complement: Cartouche placé AU-DESSUS du panneau qu'il complète (exception parmi les panonceaux) ; il ne s'emploie qu'avec les panneaux d'entrée d'autoroute ou de route à accès réglementé.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  conduite: Je compare ce numéro à celui de mon itinéraire avant de me rabattre vers la sortie.
+  conduite: 'Je repère ce numéro : il situe mon point d''entrée sur l''itinéraire.'
 - id: m11b1
   type: panonceau
   code: M11b1

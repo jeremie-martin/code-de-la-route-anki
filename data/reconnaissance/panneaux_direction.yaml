@@ -108,7 +108,7 @@
   image:
     commons: France road sign D52a.svg
   nom: Panneau d'avertissement de sortie ou de bifurcation (D51/D52)
-  signification: Sur autoroute, panneau annonçant à 2 000 m, 1 000 m puis 500 m la proximité d'un échangeur ou d'une bifurcation ; une variante indique aussi l'affectation des voies.
+  signification: Sur autoroute ou voie rapide à échangeurs numérotés, panneau d'avertissement placé environ une minute avant la signalisation de la sortie ou de la bifurcation ; une variante indique l'affectation des voies.
   conduite: Je prépare ma sortie et me rabats progressivement à droite après contrôles ; je repère le numéro de sortie.
   theme: L
   sous_theme: panneaux

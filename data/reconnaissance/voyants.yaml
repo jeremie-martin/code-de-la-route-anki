@@ -204,7 +204,7 @@
   image: {commons: "ISO 7000 - Ref-No 0456.svg", tint: "#43a047"}
   nom: Feux de position allumés (vert)
   signification: "Les feux de position (veilleuses) sont allumés. Ils servent à être vu, pas à éclairer la route."
-  conduite: "Obligatoires à l'arrêt ou en stationnement la nuit sur la chaussée (R416-12). Pour rouler la nuit, ils ne suffisent jamais, même en ville éclairée : feux de croisement (R416-6)."
+  conduite: "Obligatoires à l'arrêt ou en stationnement la nuit sur la chaussée (R416-12), sauf en agglomération suffisamment éclairée (R416-16). Pour rouler la nuit, ils ne suffisent jamais, même en ville éclairée : feux de croisement (R416-6)."
   piege: "Seule tolérance des feux de position seuls en marche : de jour, par temps de pluie, en agglomération suffisamment éclairée."
   theme: M
   sous_theme: voyants
@@ -215,7 +215,7 @@
   image: {commons: "ISO 7000 - Ref-No 0083.svg", tint: "#43a047"}
   nom: Feux de croisement allumés (vert)
   signification: Les feux de croisement (codes) sont allumés. Ils doivent éclairer à au moins 30 m sans éblouir.
-  conduite: "Obligatoires la nuit, par visibilité réduite (pluie, brouillard, neige), dans les tunnels, et recommandés de jour."
+  conduite: "La nuit dès que les feux de route éblouiraient ou que la route est éclairée ; par visibilité réduite (sauf en ville bien éclairée, où les feux de position suffisent) ; dans les tunnels ; conseillés de jour hors agglomération."
   piege: "Faisceau incliné vers le bas = croisement ; faisceau horizontal (bleu) = route."
   theme: M
   sous_theme: voyants
@@ -235,8 +235,8 @@
   code: ISO 7000-0633
   image: {commons: "ISO 7000 - Ref-No 0633.svg", tint: "#43a047"}
   nom: Feux de brouillard avant allumés (vert)
-  signification: Les feux de brouillard avant sont en fonction, en complément des feux de croisement.
-  conduite: "Je les utilise par brouillard, neige ou forte pluie ; je les éteins dès que la visibilité redevient normale (ils éblouissent)."
+  signification: Les feux de brouillard avant sont en fonction.
+  conduite: "Par brouillard, neige ou forte pluie, à la place ou en plus des feux de croisement ; hors agglomération sur route étroite et sinueuse, avec les feux de route. Je les éteins dès que la visibilité revient (ils éblouissent)."
   theme: M
   sous_theme: voyants
   source: "Code de la route, art. R416-7 ; ISO 2575"

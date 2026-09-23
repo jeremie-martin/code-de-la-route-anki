@@ -51,7 +51,7 @@
   image:
     commons: France road sign A2a.svg
   nom: Cassis ou dos-d'âne
-  signification: Annonce une déformation naturelle ou accidentelle de la chaussée (creux « cassis » ou bosse « dos-d'âne ») qui n'est pas un aménagement volontaire.
+  signification: Annonce un cassis (creux) ou un dos-d'âne (bosse) marqué, dangereux à franchir vite, qui n'est pas un ralentisseur.
   conduite: Ralentir fortement ; risque de perte d'adhérence et de dommages au véhicule.
   theme: L
   sous_theme: panneaux
@@ -153,7 +153,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  complement: La croix de Saint-André marque le passage lui-même ; un STOP peut la surmonter.
+  complement: La croix de Saint-André marque le passage lui-même ; un STOP peut être placé sous la croix.
 - id: a9b
   type: panneau
   code: A9b

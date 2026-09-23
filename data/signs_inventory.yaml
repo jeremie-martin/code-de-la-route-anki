@@ -82,8 +82,8 @@
 - code: A2a
   categorie: danger
   nom: Cassis ou dos-d'âne
-  signification: Annonce une déformation naturelle ou accidentelle de la chaussée (creux « cassis » ou bosse « dos-d'âne
-    ») qui n'est pas un aménagement volontaire.
+  signification: Annonce un cassis (creux) ou un dos-d'âne (bosse) marqué, dangereux à franchir vite, qui n'est pas un
+    ralentisseur.
   conduite_a_tenir: Ralentir fortement ; risque de perte d'adhérence et de dommages au véhicule.
   implantation: 'Hors agglomération : 100 à 200 m avant le danger, le plus souvent 150 m (200 m sur autoroute).
     En agglomération : 0 à 50 m, le plus souvent 50 m. Un panonceau M1 précise la distance si elle est différente.
@@ -5556,10 +5556,10 @@
 - code: M10b
   categorie: panonceau
   nom: 'Cartouche : numéro d''échangeur'
-  signification: Cartouche portant le numéro de la sortie/échangeur (sur autoroute), placé au-dessus des panneaux
-    de sortie.
+  signification: 'Cartouche placé au-dessus du panneau d''entrée d''autoroute (ou de route à accès réglementé) :
+    numéro de l''échangeur par lequel j''entre.'
   conduite_a_tenir: ''
-  implantation: Au-dessus du panneau de sortie qu'il complète.
+  implantation: Au-dessus des panneaux C107 et C207 seulement (IISR 1re partie, art. 9-1 B 10).
   fin: ''
   forme_couleur: petit rectangle (blanc ou noir) avec le numéro de sortie
   confusions:

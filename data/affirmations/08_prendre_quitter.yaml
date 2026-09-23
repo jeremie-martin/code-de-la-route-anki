@@ -56,9 +56,11 @@
   source: "En Voiture Simone, Précautions pour quitter son véhicule"
 - id: aff-p-neige-toit
   contexte: Après une nuit de neige, j'ai dégagé le pare-brise et les vitres.
-  affirmation: Je dois aussi déneiger le toit avant de partir.
+  affirmation: Je déneige aussi le toit avant de partir.
   verdict: vrai
-  pourquoi: "Au premier freinage, la plaque glisse sur le pare-brise et m'aveugle ; en roulant, elle s'envole sur ceux qui suivent. Je dégage également les feux et les plaques."
+  pourquoi: 'Au premier freinage, la plaque glisse sur le pare-brise et m''aveugle ; en roulant, elle s''envole sur ceux
+    qui suivent. Je dégage également les feux et les plaques. Aucun article ne vise le toit en propre : c’est une précaution,
+    la plaque qui glisse réduisant le champ de vision (R412-6 II).'
   theme: P
   sous_theme: verifications
   source: "Cours de code, Entrer et sortir de son véhicule ; securite-routiere.gouv.fr, Conduire en hiver"

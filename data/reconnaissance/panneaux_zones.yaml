@@ -41,7 +41,7 @@
     commons: France road sign B6b4.svg
   nom: Entrée d'une zone à stationnement payant
   signification: Entrée d'une zone où le stationnement est payant (horodateur, parcmètre, paiement mobile) selon les horaires indiqués.
-  conduite: Payer et afficher le ticket ; sinon forfait post-stationnement (FPS).
+  conduite: Payer (ticket placé à l'avant, ou paiement dématérialisé) ; sinon forfait post-stationnement (FPS).
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

@@ -6,12 +6,12 @@
     params:
       pose: bras_leve
   nom: 'Agent : bras levé verticalement'
-  signification: 'Bras levé verticalement : « attention, arrêt » pour tous, sauf ceux déjà engagés dans l''intersection, qui la dégagent.'
+  signification: 'Bras levé verticalement : « attention, arrêt » pour tous, sauf ceux déjà engagés dans l''intersection, qui la dégagent, et ceux qui ne peuvent plus s''arrêter sans danger.'
   conduite: S'arrêter (avant l'intersection) et attendre le signal suivant ; si l'on est déjà engagé, terminer sa traversée.
   complement: Équivalent du jaune puis du rouge pour tout le monde. Les injonctions de l'agent prévalent sur les feux et les panneaux.
   theme: L
   sous_theme: agents
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  source: Convention de Vienne sur la circulation routière (1968), art. 6 ; Code de la route, art. R411-28
 - id: agent-bras-tendu-face
   type: geste
   image:
@@ -24,7 +24,7 @@
   complement: L’ordre reste valable quand l’agent baisse les bras.
   theme: L
   sous_theme: agents
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  source: Convention de Vienne sur la circulation routière (1968), art. 6 ; Code de la route, art. R411-28
 - id: agent-profil
   type: geste
   image:
@@ -47,7 +47,7 @@
   conduite: Passer prudemment, en suivant les gestes de l'agent ; céder le passage aux piétons.
   theme: L
   sous_theme: agents
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  source: Convention de Vienne sur la circulation routière (1968), art. 6 ; Code de la route, art. R411-28
   question: Que dois-je faire à l'approche de cet agent ?
 - id: agent-geste-avancer
   type: geste
@@ -56,11 +56,11 @@
     params:
       pose: avancer
   nom: 'Agent : geste d''appel / de balancement du bras (avancer, accélérer)'
-  signification: Un va-et-vient du bras dans le sens de la circulation invite à avancer ou à accélérer ; un bras pointé indique où aller.
+  signification: 'Geste d''usage, non défini par les textes : un va-et-vient du bras dans le sens de la circulation invite à avancer ou à accélérer ; un bras pointé indique où aller.'
   conduite: Avancer sans hésiter dans la direction indiquée, à allure modérée.
   theme: L
   sous_theme: agents
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  source: Usage des agents ; Code de la route, art. R411-28 (les indications de l'agent prévalent)
 - id: sr3a
   type: panneau
   code: SR3a

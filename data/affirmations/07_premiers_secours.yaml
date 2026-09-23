@@ -33,7 +33,8 @@
     et le protège du froid comme de la chaleur, selon les conditions.
   theme: A
   sous_theme: secourir
-  source: "Sécurité civile, PSC juillet 2026, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
+  source: Sécurité civile, PSC juillet 2026, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf
+    ; securite-routiere.gouv.fr, Accident de la route
 - id: aff-a-contact-vehicules-accidentes
   contexte: Deux voitures accidentées sont immobilisées au milieu d'un carrefour.
   affirmation: Laisser leur contact mis ne présente pas de risque particulier.

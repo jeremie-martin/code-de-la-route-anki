@@ -1,7 +1,7 @@
 - id: u-edpm-chiffres
-  explication: Assurance de responsabilité civile obligatoire. Trottoir interdit sauf autorisation locale, au pas et sans
-    gêner. Vérifier aussi les obligations locales d’équipement ; certaines imposent un casque alors que la règle nationale
-    ne l’impose pas partout.
+  explication: 'Assurance de responsabilité civile obligatoire. Trottoir interdit sauf autorisation locale, au pas et sans
+    gêner. Sur une route limitée à 80 km/h ouverte par autorisation locale : casque attaché, gilet et éclairage complémentaire
+    obligatoires ; ailleurs, le casque est recommandé.'
   theme: U
   sous_theme: edpm
   source: Code de la route, art. R412-43-1 à R412-43-3 ; décret n° 2023-848
@@ -10,7 +10,9 @@
   - 'Vitesse maximale par construction d’une trottinette électrique : {{c2::25 km/h}}.'
   - 'Sur une trottinette électrique, nombre de personnes autorisées à bord : {{c3::une seule}}.'
 - id: u-velo-chiffres
-  explication: En agglomération, le gilet n'est pas imposé au cycliste, alors que l'utilisateur d'une trottinette électrique porte la nuit un gilet ou un équipement rétroréfléchissant. Le casque reste recommandé pour tous ; l'adulte qui transporte ou accompagne un enfant non casqué, et qui en a la garde, est verbalisé.
+  explication: En agglomération, le gilet n'est pas imposé au cycliste, alors que l'utilisateur d'une trottinette électrique
+    porte la nuit un gilet ou un équipement rétroréfléchissant. Le casque reste recommandé pour tous ; l'adulte qui transporte
+    un enfant non casqué, ou qui accompagne un enfant cycliste dont il a la charge, est verbalisé (135 €).
   theme: U
   sous_theme: cyclistes
   source: Code de la route, art. R431-1-1, R431-1-3, R412-34, R431-7

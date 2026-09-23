@@ -2,8 +2,8 @@
   question: Pourquoi conseille-t-on de regarder loin devant soi en conduisant ?
   reponse: 'Pour anticiper : voir les dangers tôt, adapter l’allure en douceur et stabiliser la trajectoire (le véhicule va
     où le regard se porte).'
-  explication: 'Regarder juste devant le capot oblige à réagir tard et brutalement. La règle : regarder loin, balayer (près,
-    côtés) et contrôler le rétroviseur intérieur toutes les 5 à 10 secondes environ.'
+  explication: 'Regarder juste devant le capot oblige à réagir tard et brutalement. Principe : regarder loin, balayer (près,
+    côtés) et contrôler régulièrement le rétroviseur intérieur (repère d’enseignement : toutes les 5 à 10 secondes environ).'
   theme: C
   sous_theme: perception
   source: "REMC ; Codes Rousseau, L'exploration visuelle"
@@ -21,8 +21,8 @@
   question: Qu'est-ce que l'angle mort et comment le contrôle-t-on ?
   reponse: La zone latérale arrière invisible dans les rétroviseurs ; on la contrôle d’un regard direct par-dessus l’épaule,
     dernier geste avant de se déporter.
-  explication: Un deux-roues tient entièrement dans l'angle mort. Le contrôle est bref (moins d'une seconde) pour ne pas perdre
-    la route de vue ; si un usager s'y trouve, on ne commence pas la manœuvre.
+  explication: 'Un deux-roues tient entièrement dans l''angle mort. Le contrôle reste bref (repère : un coup d’œil) pour
+    ne pas perdre la route de vue ; si un usager s''y trouve, on ne commence pas la manœuvre.'
   theme: C
   sous_theme: perception
   source: "REMC ; securite-routiere.gouv.fr, Les angles morts"
@@ -106,8 +106,9 @@
   reponse: 'Qu’elle va reculer ou quitter sa place : je ralentis, prêt à m’arrêter, et je garde mes distances plutôt que de
     la frôler.'
   explication: 'Les feux de recul ne s''allument qu''en marche arrière (R416-20) : c''est un indice fiable. Mêmes indices
-    d''un départ imminent : roues braquées vers la chaussée, conducteur installé au volant, clignotant. Celui qui quitte un
-    stationnement doit avertir de son intention (R412-10) et céder le passage, mais l''ETG attend que j''anticipe.'
+    d''un départ imminent : roues braquées vers la chaussée, conducteur installé au volant, clignotant. Celui qui quitte
+    un stationnement doit avertir de son intention (R412-10) et reprendre sa place sans gêner ceux qui arrivent, mais l''ETG
+    attend que j''anticipe.'
   theme: C
   sous_theme: vigilance
   source: "Code de la route, art. R416-20 et R412-10 ; REMC, Anticiper"
@@ -211,7 +212,7 @@
     ne mesurent pas une aptitude à conduire. Les effets peuvent se cumuler avec ceux de l’alcool ou de médicaments.
   theme: C
   sous_theme: deficiences
-  source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2886"
+  source: Service Public, F2886 ; Drogues Info Service, Durée de positivité d’un test salivaire
 - id: c-emotions
   question: Peut-on prendre le volant après une forte émotion (dispute, colère, mauvaise nouvelle) ?
   reponse: 'Mieux vaut attendre : sous le coup de l’émotion, on perçoit moins, on prend plus de risques et le temps

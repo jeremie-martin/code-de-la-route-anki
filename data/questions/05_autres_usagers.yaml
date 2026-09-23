@@ -300,7 +300,10 @@
   question: Un véhicule avec un gyrophare orange (dépanneuse, engin agricole, engin de chantier) approche. Que signale ce gyrophare ?
   reponse: Un véhicule lent, encombrant ou en intervention, donc un danger à contourner prudemment ; il n'est pas
     prioritaire.
-  explication: 'Gyrophare bleu + deux tons = prioritaire, on cède. Feux bleus à éclats + trois tons = facilités de passage (ambulance de transport sanitaire, par exemple), on facilite sans lui devoir la priorité. Exception au gyrophare orange : l’engin de service hivernal en action bénéficie de facilités de passage.'
+  explication: 'Gyrophare bleu + deux tons = prioritaire, on cède. Feux bleus à éclats + trois tons = facilités de passage
+    (ambulance de transport sanitaire, par exemple), on facilite sans lui devoir la priorité. Exceptions au gyrophare orange
+    : l’engin de service hivernal et, sur autoroute ou route à chaussées séparées, le véhicule d’intervention du gestionnaire
+    de la voie bénéficient de facilités de passage.'
   theme: U
   sous_theme: vehicules_prioritaires
   source: Code de la route, art. R313-27 et R313-28

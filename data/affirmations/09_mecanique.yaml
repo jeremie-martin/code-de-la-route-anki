@@ -110,10 +110,11 @@
   contexte: Un feu de croisement est grillé, je dois rouler ce soir.
   affirmation: Rouler ainsi la nuit peut entraîner l'immobilisation du véhicule.
   verdict: vrai
-  pourquoi: 'Un feu défaillant est une contravention de 3e classe (68 €) avec immobilisation possible, surtout la nuit. Un seul phare rend aussi le véhicule difficile à identifier par les autres usagers.'
+  pourquoi: Un feu défaillant est une contravention de 3e classe (68 €) ; la nuit, ou le jour par visibilité insuffisante,
+    le véhicule peut être immobilisé. Un seul phare rend aussi le véhicule difficile à identifier par les autres usagers.
   theme: M
   sous_theme: feux
-  source: Code de la route, art. R313-2 et s. ; service-public.fr F19459
+  source: Code de la route, art. R313-3 ; service-public.fr F19459
 - id: aff-m-stationnement-arriere
   contexte: Je vais me ranger en créneau avec l'assistance au stationnement.
   affirmation: Je n'ai plus à surveiller la circulation vers l'arrière.

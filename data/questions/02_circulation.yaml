@@ -208,10 +208,12 @@
   question: Sur une route à double sens, je veux dépasser une voiture en empruntant la voie opposée. Quels indices peuvent
     interdire cette manœuvre ?
   reponse: Une visibilité insuffisante, une ligne continue de mon côté ou un panneau d’interdiction de dépasser. Même sans eux, je dois pouvoir me rabattre sans gêner.
-  explication: Sans ces trois indices, il reste à vérifier l’espace pour me rabattre et l’écart de vitesse (R414-4).
+  explication: 'D’autres lieux l’interdisent aussi : intersection où je ne suis pas prioritaire, passage piéton où un piéton
+    peut être engagé, passage à niveau sans barrières. Restent à vérifier l’espace pour me rabattre et l’écart de vitesse
+    (R414-4).'
   theme: L
   sous_theme: depassement
-  source: "Code de la route, R414-4 et R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/"
+  source: Code de la route, R414-4, R414-5, R414-11 et R414-12, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
 - id: l-depassement-interdit-lieux-2
   question: J’aborde une intersection sans signalisation, où s’applique la priorité à droite. La visibilité est
     bonne et personne n’arrive à droite. Puis-je y dépasser la voiture devant moi ?
@@ -246,7 +248,7 @@
     que je dois traverser.
   theme: L
   sous_theme: positionnement
-  source: Code de la route, art. R412-9, R412-23 et R415-14
+  source: Code de la route, art. R415-3, R412-9 et R415-14
 - id: l-file-changement
   question: Avenue à sens unique à trois voies, files ininterrompues sur toutes les voies. Dans quel cas puis-je changer de file ?
   reponse: Seulement pour préparer un changement de direction (tourner, prendre une sortie), après contrôles et clignotant.
@@ -487,12 +489,12 @@
         w: 110
 - id: l-panonceau-portee
   question: À quoi s’applique le petit panneau placé sous le 70 ?
-  reponse: 'Au panneau qu’il complète : ici, le 70 ne vise que les véhicules dont le poids total autorisé en charge (PTAC, sur la carte grise) dépasse la valeur
-    indiquée.'
+  reponse: 'Au panneau qu’il complète : ici, le 70 ne vise que les véhicules ou ensembles dont le poids total autorisé (PTAC,
+    ou PTRA pour un ensemble, sur la carte grise) dépasse la valeur indiquée.'
   explication: 'Un panonceau précise le panneau au-dessus : usagers concernés, distance, étendue, période. Un panonceau de catégorie peut concerner plusieurs prescriptions groupées sur le même support : ne pas mémoriser « toujours le seul panneau juste au-dessus ».'
   theme: L
   sous_theme: signalisation
-  source: IISR 1re partie, art. 9
+  source: IISR 1re partie, art. 9 ; IISR 4e partie (panonceau M4f)
   image:
     gen: support_panneaux
     params:

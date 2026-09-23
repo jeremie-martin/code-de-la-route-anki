@@ -72,10 +72,12 @@
 - id: aff-s-isofix
   affirmation: La fixation Isofix réduit le risque d'installer un siège enfant de travers.
   verdict: vrai
-  pourquoi: 'Le siège s''ancre par deux crochets sur des points fixes de la caisse, avec sangle haute ou jambe de force, au lieu d''être sanglé par la ceinture. Isofix équipe les véhicules neufs depuis 2011 ; deux sièges sur trois sont mal installés.'
+  pourquoi: Le siège s'ancre par deux crochets sur des points fixes de la caisse, avec sangle haute ou jambe de force, au
+    lieu d'être sanglé par la ceinture. Isofix équipe les véhicules neufs depuis 2011 ; près de deux enfants sur trois restent
+    mal attachés (harnais, ceinture).
   theme: S
   sous_theme: enfants
-  source: "service-public.fr F628 ; securite-routiere.gouv.fr, Transporter un enfant"
+  source: service-public.fr F628 ; securite-routiere.gouv.fr, Transporter un enfant ; Prévention routière, étude OURSE (2026)
 - id: aff-s-chargement-distance-arret
   contexte: Quatre passagers et un coffre plein pour partir en vacances.
   affirmation: Ma distance d'arrêt sera plus longue qu'à vide.
