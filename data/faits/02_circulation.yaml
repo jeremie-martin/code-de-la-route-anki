@@ -221,13 +221,14 @@
   sous_theme: priorites
   source: Code de la route, R412-37, R415-11 et R413-17
 - id: l-signalisation-hierarchie
-  explication: Un feu vert ne permet ni un sens interdit ni le franchissement d’une ligne continue. Éviter la fausse hiérarchie
-    « tous les panneaux > tous les marquages ».
+  explication: 'En cas de contradiction : l’agent l’emporte sur tout ; les feux, sur les panneaux de priorité ; le
+    temporaire, sur le permanent. Les feux ne règlent que la priorité : un feu vert ne permet ni de prendre un sens
+    interdit, ni de tourner malgré une interdiction, ni de franchir une ligne continue.'
   theme: L
   sous_theme: signalisation
   source: "Code de la route, R411-25 et R411-28 ; IISR, 8e partie, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087"
   rappels:
-  - Les ordres de l’{{c1::agent}} qui règle la circulation prévalent sur toute autre signalisation.
-  - Les {{c2::feux}} en fonctionnement prévalent sur les panneaux qui règlent la priorité, pas sur les autres prescriptions (sens interdit, interdiction de tourner…).
-  - En cas de contradiction, la signalisation {{c3::temporaire}} (souvent jaune) prévaut sur la signalisation permanente.
+  - 'Un agent règle la circulation à un carrefour à feux : je suis {{c1::ses gestes, pas les feux}}.'
+  - 'Feux en fonctionnement et panneau STOP au même carrefour : je suis {{c2::les feux}}.'
+  - 'Un panneau jaune de chantier contredit le panneau habituel : je suis {{c3::le panneau jaune (temporaire)}}.'
   debut: true

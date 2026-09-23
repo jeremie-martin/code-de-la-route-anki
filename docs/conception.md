@@ -21,6 +21,12 @@ ou la réussite à l’examen n’a été mesurée.
 | Vrai/faux | Verdict justifié et correction de l’idée reçue |
 | Scénario dessiné | Lire les positions, signes et trajectoires avant de décider |
 
+Un trou vaut par ce qu’il fait retrouver : la valeur, le terme ou la décision à apprendre, que le reste de la phrase
+ne souffle pas (« l’[agent] qui règle la circulation » se devine ; « un agent règle un carrefour à feux : je suis
+[ses gestes] » s’apprend). Quand la connaissance est un classement, une comparaison ou une décision, une phrase de
+situation dont le trou est l’action, ou une autre forme, vaut mieux qu’un mot manquant. L’explication prolonge ce trou
+(mécanisme, limite, piège), pas un sujet voisin.
+
 Conserver plusieurs cartes d’une règle si elles font travailler des compétences distinctes. Éviter les
 reformulations qui demandent exactement le même rappel. Les exemples chiffrés servent à comprendre une
 relation ; leur résultat seul ne doit pas devenir la connaissance à apprendre.
@@ -45,7 +51,9 @@ relation ; leur résultat seul ne doit pas devenir la connaissance à apprendre.
 
 ## Présentation
 
-Recto : situation, image utile, question. Une illustration ne doit pas donner le rappel demandé
+Recto : situation, image utile, question. Un dessin qui pose la situation va au recto s’il ne montre pas la réponse ;
+s’il la montre (trajectoire, placement, zone), il reste au verso, ou le même dessin passe au recto sans ce tracé et
+le verso l’ajoute en place. Un dessin au recto ne doit pas faire d’une carte de règle le double d’un scénario. Une illustration ne doit pas donner le rappel demandé
 (par exemple, légender le réglage que la question fait retrouver). À l’inverse, l’énoncé ne nomme pas ce que
 l’image doit faire lire (panneau, marquage, geste d’agent, position ou trajectoire d’un usager) : repérer l’indice fait partie de la compétence. Le verso prolonge le recto sans déplacer
 les images ni atténuer les prompts ; réponse puis explication s’ajoutent dessous. Le cloze se révèle en place.

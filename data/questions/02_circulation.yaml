@@ -1,15 +1,16 @@
 # L : Circulation : cartes de décision (situation → décision + raison).
 - id: l-priorite-droite-defaut
-  question: Intersection sans panneau ni feu ; deux véhicules arrivent en même temps par des routes ordinaires. À
-    qui dois-je céder le passage ?
-  reponse: À celui qui vient de ma droite, même si c'est un vélo ou une trottinette.
+  question: Intersection sans panneau ni feu, routes ordinaires ; nous arrivons en même temps. À qui dois-je céder le
+    passage ?
+  reponse: 'À la voiture rouge, qui vient de ma droite ; la verte, à ma gauche, me cède le passage. Même règle pour un vélo
+    ou une trottinette.'
   explication: Sans panneau, feu ni agent, la priorité à droite s'applique, quelle que soit la largeur des rues. Une
     sortie de parking, un chemin de terre ou un véhicule prioritaire annoncé changent l'analyse.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-5
   debut: true
-  illustration:
+  image:
     gen: intersection
     params:
       approaches:
@@ -22,8 +23,10 @@
           vehicle:
             colour: rouge
           goes: straight
-    width: 600
-    legende: 'Ma droite, c’est la branche d’où arrive la voiture rouge : je la laisse passer.'
+        W:
+          vehicle:
+            colour: vert
+          goes: straight
 - id: l-stop-arret
   question: Au STOP, où exactement dois-je immobiliser mon véhicule ?
   reponse: À la ligne d’arrêt continue (sinon à la limite de la chaussée abordée), roues immobiles, avant de céder le passage.
@@ -82,7 +85,7 @@
   - ref: ab1
     legende: 'Croix noire : priorité à droite ; dans un rond-point, ceux qui entrent sont prioritaires.'
 - id: l-giratoire-clignotant
-  question: Dans un giratoire, je vais sortir. Quand allumer mon clignotant droit ?
+  question: Je vise la sortie indiquée. Quand allumer mon clignotant droit ?
   reponse: Après la sortie précédente, assez tôt pour annoncer la mienne ; pour la première sortie, dès l’approche
     du giratoire.
   explication: Je contrôle rétroviseur et angle mort avant de me rabattre ou de sortir. Le clignotant annonce
@@ -90,22 +93,21 @@
   theme: L
   sous_theme: priorites
   source: "Code de la route, R412-9 et R412-10 ; Association Prévention Routière, https://www.preventionroutiere.asso.fr/le-carrefour-giratoire-commen-bien-lemprunter/"
-  illustration:
+  image:
     gen: giratoire_sortie
+    verso: true
     params:
       vehicles:
       - me: true
-        lane: ext
-        angle: 130
+        entry: S
       exit: W
+      answer_on_back: true
       marker:
         angle: 105
         text: clignotant droit
         label:
         - 330
         - 40
-    width: 640
-    legende: 'Je vise la sortie de gauche : je mets le clignotant droit après être passé devant la sortie précédente.'
 - id: l-giratoire-placement
   question: Giratoire à deux voies, sans flèches au sol ; je vise la sortie indiquée. Sur quelle voie entrer, et comment sortir ?
   reponse: Je peux rester à droite ou emprunter la voie intérieure. Depuis l’intérieur, je cède aux usagers de

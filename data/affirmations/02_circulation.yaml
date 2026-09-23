@@ -607,10 +607,11 @@
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-9 et R413-17
-  illustration:
+  image:
     gen: virage_gauche
-    params: {}
-    legende: 'La voiture d’en face est cachée par l’intérieur du virage : je reste près du bord droit.'
+    verso: true
+    params:
+      answer_on_back: true
 - id: aff-l-arret-pont
   contexte: Sur un pont, aucun panneau n’interdit l’arrêt ni le stationnement.
   affirmation: Je peux m’y arrêter quelques minutes pour consulter mon itinéraire.

@@ -143,7 +143,7 @@ taille de signal) : le média est ajouté à l’explication, sans nouveau champ
 Où placer l’image : au **recto** quand elle pose la situation sans donner la réponse (la question cesse alors de
 décrire ce que l’image montre) ; en `illustration` quand elle l’expliquerait ou la révélerait ; en `verso: true`
 sur une image générée quand le même dessin doit se compléter au verso (lettres ou numéros au recto, noms au
-verso, à la même place) : le build produit `<id>-verso` et la carte échange les deux sur place, sans
+verso, à la même place ; ou un tracé de réponse que le générateur ne dessine qu’au verso, `answer_on_back`) : le build produit `<id>-verso` et la carte échange les deux sur place, sans
 déplacement. Une image de reconnaissance n’écrit jamais sa réponse.
 
 ## Images générées

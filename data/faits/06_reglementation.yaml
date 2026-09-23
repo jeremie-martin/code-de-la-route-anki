@@ -236,17 +236,15 @@
   - Après une rétention, la suspension administrative du préfet dure au plus {{c2::6 mois}} (1 an notamment pour alcool,
     stupéfiants, refus de vérification ou accident corporel ou mortel).
 - id: d-documents-bord
-  explication: Pour une voiture immatriculée en France, l’assurance est contrôlée via le Fichier des véhicules assurés ; la
-    suppression de la carte verte n’a pas supprimé l’obligation d’assurance. Gilet et triangle sont des équipements, pas des
-    documents.
+  explication: 'Permis physique ou numérique admis. La suppression de la carte verte n’a pas supprimé l’obligation
+    d’assurance. Gilet et triangle sont des équipements, pas des documents.'
   theme: D
   sous_theme: documents
   source: Code de la route, art. R233-1 ; décret n° 2023-1152 du 8 décembre 2023 ; service-public.fr F1362
   rappels:
-  - Au contrôle routier, le document prouvant mon droit de conduire est le {{c1::permis de conduire}} (physique ou numérique
-    admis).
-  - Au contrôle routier d’une voiture immatriculée, son document d’identification est le {{c2::certificat d’immatriculation}}
-    (carte grise).
+  - 'Au contrôle routier, je présente mon permis de conduire et {{c1::le certificat d’immatriculation (carte grise)}}.'
+  - 'Voiture immatriculée en France : au contrôle, une attestation d’assurance papier est {{c2::inutile, l’assurance est
+    vérifiée dans le Fichier des véhicules assurés}}.'
 - id: d-carte-grise-delais
   explication: 'Démarches sur l’ANTS ou chez un professionnel habilité. Défaut : 135 €. Le vendeur remet aussi un certificat
     de situation administrative de moins de 15 jours ; le certificat provisoire vaut 1 mois.'

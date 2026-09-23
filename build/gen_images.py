@@ -934,7 +934,8 @@ def giratoire_sortie(params):
     """Two-lane roundabout seen from above (entries S, W, N, E; anticlockwise). params:
     vehicles: [{kind, colour, me, lane: "int" | "ext" | "both" (straddling), angle (deg, 0 = east, anticlockwise)}]
               or {entry: S|W|N|E} for a vehicle waiting at that entry; exit: the branch marked « Sortie visée »;
-    marker: {angle, text, label: [x, y]} a spot of the outer lane, with its label placed at (x, y). Default: MOI inside, cyclist outside, exit E."""
+    marker: {angle, text, label: [x, y]} a spot of the outer lane, with its label placed at (x, y). Default: MOI inside, cyclist outside, exit E.
+    answer_on_back: the marker is the answer, drawn only on the back of a « verso » image."""
     vehicles = params.get("vehicles", [{"me": True, "lane": "int", "angle": -32}, {"kind": "bike", "colour": "rouge", "lane": "ext", "angle": -30}])
     exit_ = params.get("exit", "E")
     S = SVG(640, 440)
@@ -969,14 +970,17 @@ def giratoire_sortie(params):
     elif exit_ == "W":
         S.add(f'<path d="M40 192h-28m12-8 -12 8 12 8" fill="none" stroke="{MARK}" stroke-width="4"/>')
         _pill(S, 14, 318, "Sortie visée", 24)
-    if params.get("marker"):
+    if params.get("marker") and (params.get("verso") or not params.get("answer_on_back")):
         m = params["marker"]
         a = math.radians(m["angle"])
         x, y = 240 + 185 * math.cos(a), 220 - 185 * math.sin(a)
         S.add(f'<circle cx="{x}" cy="{y}" r="9" fill="{YELLOW}" stroke="{LABEL}" stroke-width="2"/>')
         tx, ty = m["label"]
         S.add(f'<path d="M{x},{y} L{tx},{ty}" stroke="{LABEL}" stroke-width="2"/>')
-        _pill(S, tx, ty + 6, m["text"])
+        if params.get("answer_on_back"):         # revealed on the back: answer colour, as large as « Sortie visée »
+            _pill(S, tx, ty + 12, m["text"], 24, ANSWER)
+        else:
+            _pill(S, tx, ty + 6, m["text"])
     return str(S)
 
 def entrecroisement(params):
@@ -1131,7 +1135,8 @@ def voyant_direction(params):
 #   INK for text and outlines; ANSWER for what the back of an « verso » image adds in place (the cards' answer
 #   colour); WRONG for what not to do; SIGN_RED / SIGN_BLUE for drawn signs; the scenarios' HIDDEN hatch for what
 #   cannot be seen and VISIBLE for what a mirror shows. Drawings keep a white background in both card themes.
-#   Front and back of a « verso » image are drawn by the same code with the same canvas: only answer text is added.
+#   Front and back of a « verso » image are drawn by the same code with the same canvas: only the answer (text, or a
+#   mark such as a path or a spot, with `answer_on_back`) is added.
 INK = LABEL
 ANSWER = "#17566e"            # cards.css --answer (light theme)
 WRONG = "#a33c30"             # cards.css --false
@@ -2277,7 +2282,8 @@ def tourner_gauche_placement(params):
 
 def virage_gauche(params):
     """Blind left-hand bend on a two-way road: the inside of the bend (trees) hides the oncoming car; my path stays
-    in my lane, near the right edge."""
+    in my lane, near the right edge. answer_on_back: the path is the answer, drawn only on the back of a « verso »
+    image."""
     S = SVG(480, 380)
     S.add(f'<rect x="0" y="0" width="480" height="380" fill="{GRASS}"/>')
     road = "M330,380 V230 A150,150 0 0 0 180,80 H0"
@@ -2287,7 +2293,8 @@ def virage_gauche(params):
     for cx, cy, r in ((186, 236, 44), (150, 270, 34), (214, 280, 30), (120, 230, 28), (160, 200, 26), (100, 300, 30),
                       (70, 250, 26), (200, 330, 26)):
         S.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#5d7f4a" stroke="#48673a" stroke-width="2"/>')
-    S.add(f'<path d="M372,268 V230 A192,192 0 0 0 180,38 H60" fill="none" stroke="{YELLOW}" stroke-width="3" stroke-dasharray="8 6"/>')
+    if params.get("verso") or not params.get("answer_on_back"):
+        S.add(f'<path d="M372,268 V230 A192,192 0 0 0 180,38 H60" fill="none" stroke="{YELLOW}" stroke-width="3" stroke-dasharray="8 6"/>')
     S.add(f'<g transform="translate(372,318)">{ME}</g>')
     S.add(f'<g transform="translate(70,120) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
     return str(S)
