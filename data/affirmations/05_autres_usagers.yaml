@@ -1,5 +1,5 @@
 - id: aff-u-pieton-telephone
-  contexte: Un piéton debout au bord d'un passage protégé sans feux consulte son téléphone, puis pose un pied sur la chaussée.
+  contexte: Un piéton debout au bord d'un passage piéton sans feux consulte son téléphone, puis pose un pied sur la chaussée.
   affirmation: Il bénéficie de la priorité et je dois m'arrêter pour le laisser traverser.
   verdict: vrai
   pourquoi: 'R415-11 : dès qu''un piéton s''engage ou manifeste clairement l''intention de traverser, je cède le passage, au besoin en m''arrêtant. Son inattention ne me dispense de rien (refus : 135 €, 6 points).'
@@ -7,7 +7,7 @@
   sous_theme: pietons
   source: "Code de la route, art. R415-11 ; Ornikar, Priorité piéton"
 - id: aff-u-pieton-imprudent
-  contexte: Un piéton traverse en courant hors passage, alors qu'un passage protégé se trouve à 20 m.
+  contexte: Un piéton traverse en courant hors passage, alors qu'un passage piéton se trouve à 20 m.
   affirmation: Il est en infraction, mais je dois quand même ralentir et le laisser passer.
   verdict: vrai
   pourquoi: 'Avec un passage à moins de 50 m, il devait l’utiliser (R412-37) : son amende est de 4 €. Cela ne m’exonère
@@ -144,9 +144,10 @@
   source: 'Code de la route, art. R412-34 II 2°'
 - id: aff-u-edpm-gilet-agglo
   contexte: Je rentre en trottinette électrique, de nuit, dans une rue éclairée en agglomération.
-  affirmation: Le gilet ou l'équipement rétro-réfléchissant m'est imposé, même en ville.
+  affirmation: Le gilet ou l'équipement rétroréfléchissant m'est imposé, même en ville.
   verdict: vrai
-  pourquoi: 'Le cycliste ne porte le gilet que hors agglomération ; l''utilisateur d''EDPM, lui, doit un gilet ou un équipement rétro-réfléchissant partout, la nuit ou de jour par visibilité insuffisante (35 €).'
+  pourquoi: Le cycliste ne porte le gilet que hors agglomération ; l'utilisateur d'EDPM, lui, doit un gilet ou un équipement
+    rétroréfléchissant partout, la nuit ou de jour par visibilité insuffisante (35 €).
   theme: U
   sous_theme: edpm
   source: 'Code de la route, art. R412-43-3 et R431-1-1 ; service-public.fr F308'

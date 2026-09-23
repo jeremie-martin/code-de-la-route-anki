@@ -94,7 +94,7 @@
     et le véhicule en face en danger.
   theme: C
   sous_theme: vigilance
-  source: Code de la route, art. R414-4 (conditions du dépassement).
+  source: Code de la route, art. R414-4 (conditions du dépassement)
 - id: c-retro-avant-freiner
   question: Avant un ralentissement que je peux anticiper, pourquoi contrôler le rétroviseur intérieur ?
   reponse: Pour connaître le trafic derrière et préparer un ralentissement progressif.

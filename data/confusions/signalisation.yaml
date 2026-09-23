@@ -1,9 +1,9 @@
 - id: conf-a13a-a13b
   a: a13a
   b: a13b
-  difference: '**A** : deux enfants qui courent, sans bandes → endroit fréquenté par les enfants (école, aire
-    de jeux) : je ralentis fortement, un enfant peut surgir. **B** : un adulte sur des bandes → annonce d''un
-    passage pour piétons (environ 150 m hors agglomération, 50 m en ville).'
+  difference: '**A** : deux enfants qui courent, sans bandes → endroit fréquenté par les enfants (école, aire de jeux) :
+    je ralentis fortement, un enfant peut surgir. **B** : un adulte sur des bandes → annonce d''un passage pour piétons
+    (environ 150 m hors agglomération, 50 m en agglomération).'
   theme: L
   sous_theme: panneaux
   source: IISR 1re partie
@@ -32,7 +32,7 @@
 - id: conf-a14-ak14
   a: a14
   b: ak14
-  difference: Même symbole (point d'exclamation), mais **A** (fond blanc) est un panneau permanent d'« autres
+  difference: Même symbole (point d'exclamation), mais **A** (fond blanc) est un panneau permanent d’« autres
     dangers », précisé par un panonceau, tandis que **B** (fond jaune) est temporaire (chantier, incident)
     et prime sur la signalisation permanente.
   theme: L
@@ -211,9 +211,9 @@
 - id: conf-a13b-c20a
   a: a13b
   b: c20a
-  difference: '**A** (triangle) : **annonce** un passage pour piétons à environ 150 m (50 m en ville). **B** (carré
-    bleu) : indique la **position** du passage pour piétons, à hauteur des bandes. Dans les deux cas, on cède
-    le passage aux piétons engagés ou qui s''apprêtent à traverser.'
+  difference: '**A** (triangle) : **annonce** un passage pour piétons à environ 150 m (50 m en agglomération). **B** (carré
+    bleu) : indique la **position** du passage pour piétons, à hauteur des bandes. Dans les deux cas, on cède le passage
+    aux piétons engagés ou qui manifestent l’intention de traverser.'
   theme: L
   sous_theme: panneaux
   source: IISR 1re et 5e parties

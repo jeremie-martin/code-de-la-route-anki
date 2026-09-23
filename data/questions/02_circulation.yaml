@@ -436,7 +436,8 @@
     verso: true
 - id: l-formes-priorite-temporaire
   question: Que signifient ces quatre panneaux, reconnaissables à leur forme et à leur couleur ?
-  reponse: 1 STOP (octogone rouge) ; 2 cédez le passage (triangle pointe en bas) ; 3 route prioritaire (losange jaune) ; 4 danger temporaire (triangle à fond jaune).
+  reponse: 1 STOP (octogone rouge) ; 2 cédez-le-passage (triangle pointe en bas) ; 3 route prioritaire (losange jaune) ;
+    4 danger temporaire (triangle à fond jaune).
   explication: 'Jaune ne signifie pas toujours temporaire : le losange de route prioritaire est jaune lui aussi. Les prescriptions
     de chantier gardent généralement leur forme habituelle.'
   theme: L
@@ -452,7 +453,7 @@
         file: France road sign AB4.svg
         name: STOP
       - gen: cedez_le_passage
-        name: cédez le passage
+        name: cédez-le-passage
       - kind: sign
         file: France road sign AB6.svg
         name: route prioritaire
@@ -542,12 +543,12 @@
 - id: l-klaxon-danger-agglo
   question: 'En ville, feu vert : la voiture devant moi ne démarre pas. Puis-je klaxonner ?'
   reponse: 'Non : en agglomération, l’avertisseur sonore n’est permis qu’en cas de danger immédiat.'
-  explication: 'Hors agglomération, il sert aussi à annoncer un dépassement ou un croisement difficile ; la nuit,
-    les appels de phares le remplacent sauf danger immédiat (R416-1 à R416-3). Face à un enfant ou un animal, le klaxon
-    peut provoquer un sursaut : ralentir et s’arrêter vaut mieux.'
+  explication: 'Hors agglomération, il sert aussi à annoncer un dépassement ou un croisement difficile ; la nuit, les appels
+    de phares le remplacent sauf absolue nécessité (R416-2). Face à un enfant ou un animal, le klaxon peut provoquer un
+    sursaut : ralentir et s’arrêter vaut mieux.'
   theme: L
   sous_theme: signalisation
-  source: Code de la route, art. R416-1
+  source: Code de la route, art. R416-1 et R416-2
 - id: l-brouillard-zone30
   theme: L
   sous_theme: vitesse
@@ -761,7 +762,7 @@
   question: De ce côté de la rue, après ce panneau, aucun autre motif d’interdiction ni danger. Puis-je déposer
     immédiatement mon passager en restant aux commandes ?
   reponse: 'Non : ce panneau interdit aussi l’arrêt volontaire.'
-  explication: La brièveté, la présence du conducteur et les warnings ne lèvent pas l’interdiction.
+  explication: La brièveté, la présence du conducteur et les feux de détresse ne lèvent pas l’interdiction.
   source: "Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/"
   image_ref: b6d
 - id: l-visuel-jaune-continu
@@ -826,7 +827,7 @@
   reponse: '80 km/h : une seule chaussée, avec une voie dans chaque sens.'
   explication: 'Le panneau bleu à voiture blanche réglemente l’accès, sans fixer à lui seul une vitesse de 110 km/h. Une ligne peinte
     entre les sens de circulation n’est pas un terre-plein central.'
-  source: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
+  source: Code de la route, art. R413-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
   image:
     gen: route_c107
     width: 960
@@ -840,7 +841,7 @@
   reponse: '110 km/h : les deux chaussées sont séparées par un terre-plein central.'
   explication: 'Une seule voie par sens suffit ici : c’est la séparation des chaussées par un terre-plein central
     qui détermine ce plafond. Le panneau bleu à voiture blanche réglemente l’accès ; il ne transforme pas la route en autoroute.'
-  source: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
+  source: Code de la route, art. R413-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
   image:
     gen: route_c107
     width: 960

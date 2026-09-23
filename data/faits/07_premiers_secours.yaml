@@ -39,6 +39,7 @@
     sur la même voie, pas exposer celui qui le pose. Sur autoroute, se protéger derrière la glissière et alerter.'
   image:
     gen: triangle_distance
+    verso: true
     params:
       label: '?'
   theme: A

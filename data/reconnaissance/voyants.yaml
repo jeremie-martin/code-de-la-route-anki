@@ -225,7 +225,7 @@
   image: {commons: "ISO 7000 - Ref-No 0082.svg", tint: "#1e88e5"}
   nom: Feux de route allumés (bleu)
   signification: Les feux de route (pleins phares) sont allumés. Ils doivent éclairer à au moins 100 m, mais éblouissent les autres usagers.
-  conduite: Je les utilise la nuit sur route non éclairée ; je repasse en croisement dès que je croise ou suis un véhicule.
+  conduite: Je les utilise la nuit sur route non éclairée ; je repasse en croisement avant de croiser un véhicule et quand j’en suis un de près.
   theme: M
   sous_theme: voyants
   source: "Code de la route, art. R416-5 et s. ; ISO 2575"

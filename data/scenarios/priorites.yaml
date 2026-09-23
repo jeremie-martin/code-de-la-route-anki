@@ -187,7 +187,7 @@
     - E
     - avant
   question: Les véhicules suivent les flèches. Dois-je passer avant ou après la voiture rouge, et pourquoi ?
-  reponse: 'Moi : la rouge a un STOP ; elle doit s’arrêter et me céder le passage, même si elle vient de ma droite.'
+  reponse: 'Avant : la rouge a un STOP ; elle doit s’arrêter et me céder le passage, même si elle vient de ma droite.'
   explication: Un panneau de priorité remplace la priorité à droite ; il ne vise que les usagers de la route où il est implanté.
   theme: L
   sous_theme: priorites

@@ -391,9 +391,9 @@
     à 80 km/h. Est-ce permis ?
   reponse: 'Non : hors agglomération, un EDPM ne circule que sur les voies vertes et les pistes cyclables, sauf autorisation
     locale sur des routes limitées à 80 km/h au plus.'
-  explication: 'Avec cette autorisation locale : casque attaché, gilet ou équipement rétro-réfléchissant, éclairage
-    complémentaire et feux de position allumés jour et nuit. En agglomération, la chaussée limitée à 50 km/h est autorisée
-    à défaut d’aménagement cyclable. Circuler hors des voies permises : 135 €.'
+  explication: 'Avec cette autorisation locale : casque attaché, gilet ou équipement rétroréfléchissant, éclairage complémentaire
+    et feux de position allumés jour et nuit. En agglomération, la chaussée limitée à 50 km/h est autorisée à défaut d’aménagement
+    cyclable. Circuler hors des voies permises : 135 €.'
   theme: U
   sous_theme: edpm
   source: Code de la route, art. R412-43-1 II et III ; service-public.fr F308

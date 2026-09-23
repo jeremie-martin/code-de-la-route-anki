@@ -2,7 +2,8 @@
 
 All diagrams share one visual identity: dark asphalt, white markings, soft green
 surroundings, flat-colour vehicles with a windscreen showing the heading, real
-road-sign pictograms (Commons SVG rasterised and embedded as data URIs).
+road-sign pictograms (Commons SVG rasterised and embedded as data URIs; the give-way triangle is drawn,
+CEDEZ_SVG).
 
 Coordinate system: intersections and roundabouts are drawn on a 600x600 plane centred at (300, 300);
 road strips on a 600x480 plane. The exported viewBox is cropped to the part of the plane that carries
@@ -26,6 +27,7 @@ MARK = "#ffffff"
 YELLOW = "#f2c200"
 RAIL = "#c4c4c4"
 LABEL = "#263336"
+HIDDEN = "#bac2c5"            # hatch of what cannot be seen (masked zone, blind spots)
 PEDESTRIAN = "#e65100"
 CAR_COLOURS = {
     "bleu": "#2d6fd8",
@@ -239,6 +241,12 @@ def vehicle_sprite(kind: str, colour: str, label: str | None = None, rot: float 
     raise ValueError(kind)
 
 
+def hidden_pattern(pid="hidden") -> str:
+    """Pattern definition of the hatch that marks what cannot be seen."""
+    return (f'<defs><pattern id="{pid}" width="12" height="12" patternUnits="userSpaceOnUse">'
+            f'<path d="M-3 3L3-3 M0 12L12 0 M9 15L15 9" stroke="{HIDDEN}" stroke-width="2"/></pattern></defs>')
+
+
 def siren_rays(cx: float, cy: float, colour="#2d6fd8", r0=10, r1=18) -> str:
     """Radiating ticks around a lamp: the device is active (rotating beacon, flashing light)."""
     ticks = []
@@ -273,7 +281,7 @@ def intention_arrow(goes: str, colour="#111", front: float = 42) -> str:
 
 
 def _halo(me: bool) -> str:
-    return '<rect x="-30" y="-50" width="60" height="100" rx="14" fill="none" stroke="#f2c200" stroke-width="5"/>' if me else ""
+    return f'<rect x="-30" y="-50" width="60" height="100" rx="14" fill="none" stroke="{YELLOW}" stroke-width="5"/>' if me else ""
 
 
 def _body(v: dict, rot: float = 0) -> str:
@@ -725,7 +733,7 @@ def draw_road(spec: dict) -> str:
     for sep in spec.get("lane_lines", []):
         vline(x0 + sep["at"] * lane_w, sep.get("style", "discontinue"))
     side = x0 + road_w + 10  # left edge of roadside labels and signs
-    text = f'font-family="{FONT}" font-size="16" fill="{LABEL}"'
+    text = f'font-family="{FONT}" font-size="20" fill="{LABEL}"'
     for ex in spec.get("extras", []):
         y = ypx(ex.get("y", 50))
         k = ex["kind"]
@@ -741,7 +749,7 @@ def draw_road(spec: dict) -> str:
             S.add(f'<rect x="{x0}" y="0" width="{road_w}" height="{y-7}" fill="#000" opacity="0.18"/>')
             S.add(f'<text x="{side}" y="{y+6}" {text}>sommet de côte</text>')
         elif k == "virage":
-            S.add(f'<text x="{side}" y="{y-2}" {text}>virage</text><text x="{side}" y="{y+16}" {text}>sans visibilité</text>')
+            S.add(f'<text x="{side}" y="{y-2}" {text}>virage</text><text x="{side}" y="{y+20}" {text}>sans visibilité</text>')
             S.add(f'<path d="M{x0+road_w},{y-30} q40,-30 80,0" fill="none" stroke="{LABEL}" stroke-width="3" stroke-dasharray="6 6"/>')
         elif k == "sign":  # roadside sign, drawn large enough to be read on a phone
             uri = sign_data_uri(ex["file"], 200)
@@ -752,8 +760,10 @@ def draw_road(spec: dict) -> str:
             S.add(f'<path d="M{x0+road_w},{top-40} L{x0+road_w-w},{top} L{x0+road_w-w},{bottom} L{x0+road_w},{bottom+40} Z" fill="{GRASS}"/>')
             S.add(f'<path d="M{x0},{top-40} L{x0+w},{top} L{x0+w},{bottom} L{x0},{bottom+40}" fill="none" stroke="{MARK}" stroke-width="2"/>')
             S.add(f'<path d="M{x0+road_w},{top-40} L{x0+road_w-w},{top} L{x0+road_w-w},{bottom} L{x0+road_w},{bottom+40}" fill="none" stroke="{MARK}" stroke-width="2"/>')
-        elif k == "label":  # free text beside the road, at the height of what it names
-            S.add(f'<text x="{ex.get("x", side)}" y="{y+6}" {text}>{esc(str(ex["text"]))}</text>')
+        elif k == "label":  # free text beside the road, at the height of what it names; a list = one line each
+            lines = ex["text"] if isinstance(ex["text"], list) else [ex["text"]]
+            for i, line in enumerate(lines):
+                S.add(f'<text x="{ex.get("x", side)}" y="{y + 6 + i * 24}" {text}>{esc(str(line))}</text>')
         elif k == "ilot":  # raised traffic island in the axis, announced at both ends by hatched (zebra) markings
             half, w = ex.get("length", 140) / 2, 48
             top, bottom = y - half, y + half
@@ -765,8 +775,8 @@ def draw_road(spec: dict) -> str:
         elif k == "bau":
             S.add(f'<rect x="{x0 + road_w}" y="0" width="70" height="{H}" fill="#5c5c5c"/>')
             S.add(f'<line x1="{x0 + road_w}" y1="0" x2="{x0 + road_w}" y2="{H}" stroke="{MARK}" stroke-width="4" stroke-dasharray="78 26"/>')
-            S.add(f'<text x="{x0 + road_w + 35}" y="{H/2}" font-family="{FONT}" font-size="14" text-anchor="middle" fill="#fff" '
-                  f'transform="rotate(-90 {x0 + road_w + 35} {H/2})">bande d\'arrêt d\'urgence</text>')
+            S.add(f'<text x="{x0 + road_w + 35}" y="{H/2}" font-family="{FONT}" font-size="22" font-weight="700" text-anchor="middle" fill="#fff" '
+                  f'transform="rotate(-90 {x0 + road_w + 35} {H/2})">bande d’arrêt d’urgence</text>')
     # A stopped or tall vehicle masks an angular sector, not a confirmed pedestrian. The sector is bounded by the
     # sight lines from my eye (driver's seat) through the two extreme corners of the obstacle; both head up.
     hide_answer = spec.get("answer_on_back") and not spec.get("verso")  # the masked zone is the answer
@@ -788,12 +798,11 @@ def draw_road(spec: dict) -> str:
         (lx_, ly_), (rx_, ry_) = corners[0], corners[-1]
         far = lambda x, y: (ox + (x - ox) * 40, oy + (y - oy) * 40)  # noqa: E731  (clipped by the frame)
         (flx, fly), (frx, fry) = far(lx_, ly_), far(rx_, ry_)
-        S.add('<defs><pattern id="hidden" width="12" height="12" patternUnits="userSpaceOnUse">'
-              '<path d="M-3 3L3-3 M0 12L12 0 M9 15L15 9" stroke="#bac2c5" stroke-width="2"/></pattern></defs>')
+        S.add(hidden_pattern())
         S.add(f'<path d="M{lx_:.1f} {ly_:.1f}L{flx:.1f} {fly:.1f}L{frx:.1f} {fry:.1f}L{rx_:.1f} {ry_:.1f}Z" '
-              'fill="url(#hidden)" stroke="#bac2c5" stroke-width="2"/>')
+              f'fill="url(#hidden)" stroke="{HIDDEN}" stroke-width="2"/>')
         S.add(f'<path d="M{ox} {oy}L{lx_} {ly_} M{ox} {oy}L{rx_} {ry_}" '
-              'stroke="#bac2c5" stroke-width="1.5" stroke-dasharray="5 5"/>')
+              f'stroke="{HIDDEN}" stroke-width="1.5" stroke-dasharray="5 5"/>')
         # label beside the road below the obstacle; its leader ends just inside the sector's right edge
         ux, uy = (rx_ - ox), (ry_ - oy)
         d = math.hypot(ux, uy)

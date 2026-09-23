@@ -3,8 +3,9 @@
     lève le pied tout de suite ?
   reponse: 'Je lève le pied tout de suite, rapport adapté : j’anticipe l’arrêt, je ménage les freins et j’évite une accélération
     inutile.'
-  explication: 'Rapport engagé, pied levé, l’injection est coupée : je ne consomme rien. Arriver vite puis freiner fort
-    gaspille l’énergie déjà payée ; en arrivant lentement, le feu est souvent repassé au vert avant que je m’arrête.'
+  explication: 'Rapport engagé, pied levé, l’injection est généralement coupée : la consommation peut tomber à zéro. Arriver
+    vite puis freiner fort gaspille l’énergie déjà payée ; en arrivant lentement, le feu est souvent repassé au vert avant
+    que je m’arrête.'
   theme: E
   sous_theme: ecoconduite
   source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"

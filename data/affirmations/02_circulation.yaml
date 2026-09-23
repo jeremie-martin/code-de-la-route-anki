@@ -8,7 +8,7 @@
     pas à la classer ainsi.
   theme: L
   sous_theme: priorites
-  source: "R415-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968/"
+  source: "Code de la route, art. R415-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968/"
 - id: aff-l-zone-30-priorite-droite
   contexte: Je circule dans une zone 30 résidentielle.
   affirmation: En zone 30, la priorité à droite ne s'applique plus.
@@ -120,7 +120,7 @@
     sans danger).'
   theme: L
   sous_theme: priorites
-  source: "R414-4 et R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/"
+  source: "Code de la route, art. R414-4 et R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/"
   image:
     gen: giratoire_sortie
     params:
@@ -488,10 +488,11 @@
   contexte: Sur autoroute, mon téléphone sonne ; la bande d'arrêt d'urgence est dégagée.
   affirmation: Je peux m'y arrêter le temps de l'appel, feux de détresse allumés.
   verdict: faux
-  pourquoi: 'La BAU n''est ouverte qu''à la nécessité absolue (panne, malaise, secours) : s''y arrêter pour téléphoner est un arrêt gênant (35 €), et c''est l''un des endroits les plus meurtriers de l''autoroute.'
+  pourquoi: 'La BAU n''est ouverte qu''à la nécessité absolue (panne, malaise, secours) : s''y arrêter pour téléphoner est
+    interdit (35 €), et c''est l''un des endroits les plus meurtriers de l''autoroute.'
   theme: L
   sous_theme: stationnement
-  source: Code de la route, art. R421-7 et R417-10
+  source: Code de la route, art. R421-7
 - id: aff-l-arret-moteur-tournant
   contexte: J'attends quelqu'un dix minutes au volant, moteur tournant, le long du trottoir.
   affirmation: Il s'agit d'un arrêt, pas d'un stationnement.

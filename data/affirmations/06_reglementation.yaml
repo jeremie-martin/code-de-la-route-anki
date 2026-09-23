@@ -28,7 +28,7 @@
   contexte: Permis obtenu il y a dix ans. Un excès de vitesse de 25 km/h m'a retiré 2 points ; je n'ai rien commis depuis.
   affirmation: Je retrouve mon capital de 12 points au bout de deux ans.
   verdict: faux
-  pourquoi: Il faut trois ans, parce qu'un excès d'au moins 20 km/h est une contravention de 4e classe. Le délai de deux ans
+  pourquoi: Il faut trois ans, parce qu'un excès de 20 à 49 km/h est une contravention de 4e classe. Le délai de deux ans
     ne vaut que si toutes les infractions sont des contraventions de 1re à 3e classe.
   theme: D
   sous_theme: points

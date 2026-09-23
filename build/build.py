@@ -685,7 +685,7 @@ def build_collection(data, names, out_apkg: Path):
         old_dids[name] = col.decks.id(name)
     # deck descriptions: what the deck is, then each theme's repère (principle, worked example, transfer)
     root = col.decks.by_name(M.DECK_ROOT)
-    root["desc"] = ("Deck pour réussir l'épreuve théorique générale (code de la route, permis B), édition 2026 : "
+    root["desc"] = inline_md("Deck pour réussir l'épreuve théorique générale (code de la route, permis B), édition 2026 : "
                     "signaux, règles, décisions et scénarios, dans un ordre d'introduction calculé. "
                     "Au premier import, cocher « Importer les préréglages de deck ». "
                     "Étudier le deck parent ; collecte des nouvelles cartes par position croissante, tri dans l'ordre de collecte. "
@@ -696,7 +696,7 @@ def build_collection(data, names, out_apkg: Path):
     for sub, desc in M.DECK_DESCRIPTIONS.items():
         d = col.decks.by_name(f"{M.DECK_ROOT}::{sub}")
         if d:
-            d["desc"] = desc + repere_html(M.THEME_OF_DECK[sub])
+            d["desc"] = inline_md(desc) + repere_html(M.THEME_OF_DECK[sub])
             col.decks.save(d)
 
     # options preset shipped with the deck: new cards in curriculum order (positions), siblings buried
@@ -858,6 +858,9 @@ def inline_md(s) -> str:
     # Keep French high punctuation with its preceding word on narrow screens.
     # Apply before HTML/link generation; URLs contain no literal spaces.
     s = re.sub(r" +(?=[;:!?])", "\u202f", s)
+    # One apostrophe throughout: the typographic one between two letters, outside URLs.
+    s = "".join(part if part.startswith("http") else re.sub(r"(?<=[^\W\d_])'(?=[^\W\d_])", "\u2019", part)
+                for part in re.split(r"(https?://\S+)", s))
     lines = s.split("\n")
     out, in_list = [], False
     for ln in lines:

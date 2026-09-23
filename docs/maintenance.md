@@ -150,8 +150,9 @@ build suivant. Conventions :
   MOI (`ME`), toujours sur l’approche S dans les scénarios ; un piéton est la silhouette `pedestrian` ; un
   poids lourd est `lorry` (environ 2,7 longueurs de voiture) ; `truck`, plus court, sert au petit porteur,
   à la dépanneuse et à l’engin agricole.
-- Échelle : une voie vaut environ deux largeurs de voiture, bande d’arrêt d’urgence comprise, et les dessins
-  des questions reprennent cette proportion (`scale` des sprites) ; distances hors
+- Échelle : sur les routes et dans les dessins des questions, une voie vaut environ deux largeurs de voiture,
+  bande d’arrêt d’urgence comprise (`scale` des sprites) ; les carrefours et giratoires des scénarios resserrent la
+  voie (54 pour une voiture de 44) pour que tout le carrefour tienne à l’écran ; distances hors
   échelle, jamais des plans d’implantation. Un véhicule qui attend garde son avant à la même distance du
   carrefour, en deçà de sa ligne d’arrêt, qui reste visible. Les panneaux se placent du côté droit du sens de
   circulation représenté.

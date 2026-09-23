@@ -235,7 +235,7 @@
       - {lane: 1, y: 55, colour: noir}
       - {lane: 1, y: 70, colour: rouge, dir: down}
     extras:
-      - {kind: label, y: 55, text: "véhicule stationné"}
+      - {kind: label, y: 55, text: ["véhicule", "stationné"]}
   question: "Un véhicule stationné occupe ma voie et une voiture arrive en face. Qui passe en premier ?"
   reponse: "La voiture d'en face : l'obstacle est de mon côté, c'est à moi de m'arrêter et de la laisser passer avant de contourner."
   explication: Sur un passage étroit, je respecte aussi les panneaux qui fixent la priorité entre les deux sens ; un pont

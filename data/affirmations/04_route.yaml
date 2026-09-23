@@ -103,7 +103,8 @@
   affirmation: Un élève en conduite accompagnée n'a pas le droit de circuler sur autoroute.
   verdict: faux
   pourquoi: L'autoroute est autorisée en conduite accompagnée ; l'élève est seulement soumis aux vitesses du permis probatoire
-    (110 km/h sur autoroute normalement à 130, 100 sur les autres autoroutes et les chaussées séparées, 80 ailleurs).
+    (110 km/h sur autoroute normalement à 130, 100 sur les autres autoroutes et les chaussées séparées, 80 sur les routes
+    où les autres roulent à 90).
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R413-5 ; service-public.fr F2390

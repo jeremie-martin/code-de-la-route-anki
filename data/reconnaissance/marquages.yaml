@@ -189,7 +189,7 @@
     params:
       style: bau
   nom: 'Ligne délimitant la bande d''arrêt d''urgence (T4 : 39 m de trait, 13 m de vide)'
-  signification: Ligne discontinue à très longs traits (39 m) et vides de 13 m délimitant la bande d'arrêt d'urgence.
+  signification: Ligne discontinue à très longs traits (39 m) et vides de 13 m délimitant la bande d'arrêt d'urgence (BAU).
   conduite: Ne pas circuler sur la BAU ; garder deux traits avec le véhicule précédent (un trait = danger).
   complement: À 130 km/h, deux traits (environ 90 m) valent un peu plus de deux secondes.
   theme: L

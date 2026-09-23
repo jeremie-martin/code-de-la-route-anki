@@ -53,7 +53,10 @@
   sous_theme: points
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F1704"
 - id: d-recuperation-points
-  explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès ≥ 20 km/h, et tout excès là où la limite est de 50 km/h ou moins) sont de 4e classe → c''est souvent 3 ans. Pendant le probatoire, le capital se reconstitue surtout par la majoration annuelle (sans infraction) ou par un stage.'
+  explication: 'Piège : la plupart des infractions courantes (téléphone, ceinture, feu rouge, excès de 20 à 49 km/h, et
+    tout excès de moins de 50 km/h là où la limite est de 50 km/h ou moins) sont de 4e classe → c’est souvent 3 ans ; un
+    excès de 50 km/h ou plus est un délit, 3 ans aussi. Pendant le probatoire, le capital se reconstitue surtout par la
+    majoration annuelle (sans infraction) ou par un stage.'
   theme: D
   sous_theme: points
   source: Code de la route, art. L223-6 ; service-public.fr F1685

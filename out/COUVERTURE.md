@@ -106,7 +106,7 @@ Recherche Anki : `objectif::l-intersection`
 | `l-tourner-gauche-regle` | socle | questions | Code de la route, art. R415-4 et R412-10 |
 | `l-intersection-encombree` | socle | questions | Code de la route, art. R412-33 |
 | `l-priorite-prudence` | socle | questions | Code de la route, R415-1 et R413-17 |
-| `aff-l-chemin-terre` | consolidation | affirmations | R415-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968/ |
+| `aff-l-chemin-terre` | consolidation | affirmations | Code de la route, art. R415-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023095968/ |
 | `aff-l-zone-30-priorite-droite` | consolidation | affirmations | Code de la route, art. R415-5 et R110-2 |
 | `aff-l-priorite-droite-rue-etroite` | socle | affirmations | Code de la route, art. R415-5 |
 | `aff-l-stop-avancer` | socle | affirmations | Code de la route, art. R415-6 ; REMC |
@@ -159,7 +159,7 @@ Recherche Anki : `objectif::l-giratoire`
 | `l-giratoire-placement` | socle | questions | Code de la route, R412-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688 |
 | `l-giratoire-sortie-impossible` | socle | questions | Code de la route, R412-9 et R412-10, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177121/ |
 | `aff-l-giratoire-sortie-cede` | consolidation | affirmations | Code de la route, art. R415-10 |
-| `aff-l-giratoire-depassement` | consolidation | affirmations | R414-4 et R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
+| `aff-l-giratoire-depassement` | consolidation | affirmations | Code de la route, art. R414-4 et R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
 | `aff-l-demi-tour-giratoire` | consolidation | affirmations | Code de la route, art. R415-10 ; REMC |
 | `scn-giratoire-cedez` | socle | scenarios | Code de la route, art. R415-10 ; IISR (AB25) |
 | `scn-rond-point-priorite-droite` | consolidation | scenarios | Code de la route, art. R415-5 et R415-10 ; IISR |
@@ -198,7 +198,7 @@ Recherche Anki : `objectif::l-feux`
 | `l-signalisation-hierarchie` | socle | faits | Code de la route, R411-25 et R411-28 ; IISR, 8e partie, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087 |
 | `l-feu-hors-service-panneaux` | socle | questions | Code de la route, art. R411-25 ; IISR 6e partie |
 | `l-agent-ralentir-avancer` | consolidation | questions | Code de la route, art. R411-28 ; Codes Rousseau, Les agents |
-| `l-klaxon-danger-agglo` | socle | questions | Code de la route, art. R416-1 |
+| `l-klaxon-danger-agglo` | socle | questions | Code de la route, art. R416-1 et R416-2 |
 | `l-feu-vert-interdiction-tourner` | socle | questions | Code de la route, R411-25, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842087 |
 | `l-feu-alerte-r1` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
 | `l-feu-modal-anticipation` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
@@ -402,19 +402,19 @@ Recherche Anki : `objectif::l-vitesse`
 |---|---|---|---|
 | `sr3a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `c51a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
-| `l-vitesse-agglo` | socle | faits | R413-3 et R110-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
+| `l-vitesse-agglo` | socle | faits | Code de la route, art. R413-3 et R110-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-vitesse-hors-agglo` | socle | faits | Code de la route, art. R413-2 ; CGCT, art. L3221-4-1 (relèvement à 90 par le département) |
-| `l-vitesse-separateur-autoroute` | socle | faits | R413-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
+| `l-vitesse-separateur-autoroute` | socle | faits | Code de la route, art. R413-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-vitesse-pluie` | socle | faits | Code de la route, art. R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
-| `l-vitesse-visibilite-50` | socle | faits | R413-4 ; R412-12 ; R413-17, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
+| `l-vitesse-visibilite-50` | socle | faits | Code de la route, art. R413-4 ; R412-12 ; R413-17, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-vitesse-probatoire` | socle | faits | Code de la route, art. R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
-| `l-vitesse-minimale-autoroute` | consolidation | faits | R413-19, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
+| `l-vitesse-minimale-autoroute` | consolidation | faits | Code de la route, art. R413-19, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-vitesse-engins` | consolidation | faits | Code de la route, art. R311-1 |
 | `l-brouillard-zone30` | socle | questions | Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-pluie-route80` | socle | questions | Code de la route, R413-1 à R413-5, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177128/ |
 | `l-pmv-limitation` | consolidation | questions | Arrêté du 24 novembre 1967, art. 5 et 7 ; IISR, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25 |
-| `l-c107-route-simple` | socle | questions | https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
-| `l-c107-route-separee` | socle | questions | https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
+| `l-c107-route-simple` | socle | questions | Code de la route, art. R413-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
+| `l-c107-route-separee` | socle | questions | Code de la route, art. R413-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600 |
 | `l-precipitations-neige` | socle | questions | Code de la route, art. R413-2 |
 | `aff-l-90-departement` | consolidation | affirmations | Code de la route, art. R413-2 |
 | `aff-l-creneau-90` | socle | affirmations | Code de la route, art. R413-2 I 3° et R413-5 |
@@ -443,7 +443,7 @@ Recherche Anki : `objectif::l-depasser`
 | `l-depassement-interdit-lieux-2` | consolidation | questions | Code de la route, R414-11, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/ |
 | `l-cycliste-ligne-espace` | socle | questions | Code de la route, R412-19 et R414-4 |
 | `l-cavalier-ligne-continue` | socle | questions | Code de la route, R412-19, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842138/ |
-| `c-cycliste-devant-depassement` | socle | questions | Code de la route, art. R414-4 (conditions du dépassement). |
+| `c-cycliste-devant-depassement` | socle | questions | Code de la route, art. R414-4 (conditions du dépassement) |
 | `aff-l-continue-cyclomoteur` | socle | affirmations | Code de la route, art. R412-19 |
 | `aff-l-surdepassement` | consolidation | affirmations | Code de la route, art. R414-4 |
 | `aff-l-depassement-intersection-prioritaire` | consolidation | affirmations | Code de la route, art. R414-11 |
@@ -534,7 +534,7 @@ Recherche Anki : `objectif::l-stationner`
 | `l-visuel-jaune-discontinu` | consolidation | questions | Arrêté du 24 novembre 1967, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/ |
 | `l-arret-ligne-continue` | consolidation | questions | Code de la route, art. R417-10 |
 | `aff-l-sens-unique-gauche` | socle | affirmations | Code de la route, art. R417-1 |
-| `aff-l-bau-appel` | consolidation | affirmations | Code de la route, art. R421-7 et R417-10 |
+| `aff-l-bau-appel` | consolidation | affirmations | Code de la route, art. R421-7 |
 | `aff-l-arret-moteur-tournant` | consolidation | affirmations | Code de la route, art. R110-2 |
 | `aff-l-arret-chargement` | consolidation | affirmations | Code de la route, art. R110-2 |
 | `aff-l-trottoir-moto` | consolidation | affirmations | Code de la route, art. R417-10 |
@@ -1244,7 +1244,7 @@ Recherche Anki : `objectif::a-secourir`
 | `a-blesse-deplacer` | socle | questions | Croix-Rouge française ; Ornikar, Secourir un blessé |
 | `a-casque-motard` | socle | questions | Croix-Rouge française ; securite-routiere.gouv.fr |
 | `l-reperes-localisation` | consolidation | questions | Sécurité routière, alerte : route, sens, localisation |
-| `a-objet-plaie` | socle | questions | https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
+| `a-objet-plaie` | socle | questions | Sécurité civile, PSC juillet 2026, Hémorragies, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-traumatisme-respiration` | socle | questions | Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf |
 | `a-secours-deja-sur-place` | socle | questions | Sécurité civile, PSC juillet 2026, Protection, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Code pénal, art. 223-6 |
 | `aff-a-dae-formation` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q6) ; décret n° 2007-705 ; Croix-Rouge française |

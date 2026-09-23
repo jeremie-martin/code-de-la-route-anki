@@ -1,7 +1,8 @@
 - id: r-nuit-feux-croisement-route
   question: De nuit, hors agglomération, je roule en feux de route ; des phares apparaissent au loin en face. Que fais-je
     ?
-  reponse: Je passe en feux de croisement assez tôt pour ne pas l'éblouir, et j'y reste tant que nous ne sommes pas croisés.
+  reponse: Je passe en feux de croisement assez tôt pour ne pas éblouir l’autre conducteur, et j’y reste tant que nous ne
+    sommes pas croisés.
   explication: 'Le passage doit se faire « suffisamment à l’avance » (R416-6 III) : l’autre conducteur ne doit à aucun moment
     recevoir mes feux de route.'
   theme: R

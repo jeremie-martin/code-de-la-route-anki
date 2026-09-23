@@ -5,7 +5,7 @@
     légal universel de 6 km/h.'
   theme: L
   sous_theme: vitesse
-  source: "R413-3 et R110-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
+  source: "Code de la route, art. R413-3 et R110-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
 - id: l-vitesse-hors-agglo
   dedup_ok:
   - aff-l-90-departement
@@ -24,7 +24,7 @@
   explication: Le terre-plein central sépare deux chaussées ; le nombre de voies ne suffit pas. Je lis la configuration, les limitations et les conditions.
   theme: L
   sous_theme: vitesse
-  source: "R413-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
+  source: "Code de la route, art. R413-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
   rappels:
   - 'Route 2 (deux chaussées séparées par un terre-plein central), hors agglomération, temps sec, permis définitif : je ne dépasse pas {{c1::110 km/h}}.'
   - 'Autoroute (3), temps sec, permis définitif : le plafond général est de {{c2::130 km/h}}.'
@@ -47,7 +47,7 @@
     bien en dessous de 50 km/h (R413-17).'
   theme: L
   sous_theme: vitesse
-  source: "R413-4 ; R412-12 ; R413-17, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
+  source: "Code de la route, art. R413-4 ; R412-12 ; R413-17, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
   rappels:
   - 'Brouillard : quand la visibilité est inférieure à {{c1::50 m}}, sur autoroute comme ailleurs, je ne dépasse pas {{c1::50 km/h}} (une limite plus basse reste plus basse).'
 - id: l-vitesse-probatoire
@@ -71,7 +71,7 @@
     (35 €).
   theme: L
   sous_theme: vitesse
-  source: "R413-19, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
+  source: "Code de la route, art. R413-19, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
 - id: l-vitesse-engins
   explication: 'Un EDPM est bridé à 25 km/h (voir la carte dédiée). Sur un vélo à assistance électrique conforme, l’assistance se coupe à 25 km/h mais
     on peut pédaler plus vite : ce n’est pas un cyclomoteur. Une assistance débridée change sa conformité.'
