@@ -31,7 +31,8 @@
   question: Pourquoi faut-il rouler moins vite de nuit, même sur une route connue et dégagée ?
   reponse: Pour pouvoir m’arrêter dans la distance effectivement visible, que l’éclairage, le contraste de l’obstacle et la
     météo limitent.
-  explication: 'Je dois pouvoir m’arrêter dans la partie de route que je vois. Les feux de croisement n’ont qu’une portée minimale réglementaire de 30 m, et un obstacle sombre s’y détache tard : à 90 km/h, la distance d’arrêt dépasse ce que je distingue. D’où les feux de route dès que personne n’est ébloui.'
+  explication: 'Les feux de croisement n’ont qu’une portée minimale réglementaire de 30 m, et un obstacle sombre s’y détache
+    tard : à 90 km/h, la distance d’arrêt dépasse ce que je distingue. D’où les feux de route dès que personne n’est ébloui.'
   theme: R
   sous_theme: nuit
   source: Code de la route, R413-17 et R313-3
@@ -53,12 +54,10 @@
   sous_theme: intemperies
   source: "Stych, Circuler par temps de pluie ; securite-routiere.gouv.fr, Conduire sous la pluie"
 - id: r-aquaplaning
-  question: Sur chaussée très mouillée, la direction devient soudain légère et le véhicule répond mal. Que faire face à un
-    possible aquaplanage ?
-  reponse: Je relâche progressivement l’accélérateur et garde une direction stable, sans freinage ni braquage brusque, pour
-    retrouver l’adhérence.
-  explication: 'Les pneus peuvent perdre le contact avec la chaussée sur un film d’eau. Une gerbe derrière un véhicule ne
-    suffit pas à diagnostiquer un aquaplanage. Prévenir : allure réduite, pneus en état, intervalle accru.'
+  question: Sur chaussée très mouillée, la direction devient soudain légère et la voiture ne répond plus à mes gestes. Que
+    se passe-t-il ?
+  reponse: 'Un aquaplanage : séparés de la chaussée par un film d’eau, les pneus ne transmettent plus ni direction ni freinage.'
+  explication: 'Prévenir : allure réduite, pneus en état, intervalle accru.'
   theme: R
   sous_theme: intemperies
   source: "Ornikar, L'aquaplaning ; securite-routiere.gouv.fr, Conduire sous la pluie"
@@ -207,8 +206,7 @@
   question: J'arrive sur un passage à niveau ouvert, mais la file de voitures est arrêtée juste après. Que fais-je
     ?
   reponse: Je m'arrête avant le passage et j'attends de pouvoir le franchir d'un trait, sans risquer d'y rester bloqué.
-  explication: Art. R422-3 II. Beaucoup d'accidents viennent d'un véhicule bloqué sur les voies par un bouchon ; le dépassement
-    est en outre interdit aux passages à niveau sans barrière ni demi-barrière (R414-12).
+  explication: Art. R422-3 II. Beaucoup d’accidents viennent d’un véhicule bloqué sur les voies par un bouchon.
   theme: R
   sous_theme: passages_a_niveau
   source: "Code de la route, art. R422-3 ; SNCF Réseau, Sécurité aux passages à niveau"
@@ -230,11 +228,10 @@
   question: Un passage à niveau n’est signalé que par ceci, sans barrière ni feu. Comment procéder ?
   reponse: Ralentir fortement, regarder et écouter des deux côtés, et ne traverser que si aucun train n’approche ; dans le
     doute, s’arrêter.
-  explication: 'Une croix simple annonce une voie, une croix double plusieurs voies : « un train peut en cacher un autre ».
-    Le dépassement y est interdit (R414-12).'
+  explication: Le dépassement y est interdit (R414-12). Si un STOP accompagne la croix, l’arrêt est obligatoire.
   theme: R
   sous_theme: passages_a_niveau
-  source: Code de la route, art. R422-3 et R414-12 ; IISR (G1, A8, J10)
+  source: Code de la route, art. R422-3, R414-12 et R415-6 ; IISR (G1, A8, J10)
   image_ref: g1
   comparaisons:
   - ref: g1a

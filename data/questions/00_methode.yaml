@@ -22,9 +22,12 @@
   sous_theme: lecture
   source: Méthode d'examen (synthèse des conseils Codes Rousseau, ENPC, Ornikar)
 - id: etg-video-strategie
-  question: 'Question vidéo à l''ETG : que faut-il observer pendant la vidéo ?'
-  reponse: Le point de vue, la signalisation, les usagers et leurs mouvements, les rétroviseurs et les zones masquées ; repérer aussi ce qui change.
-  explication: Ne pas fixer seulement l’événement le plus spectaculaire. La réponse peut dépendre d’un panneau déjà passé, d’un usager derrière ou d’un danger masqué. Relier ensuite chaque proposition aux indices réellement observés.
+  question: 'Question vidéo à l’ETG : à la fin, tout semble se jouer sur ce qui est à l’écran. Où peut se trouver l’indice
+    décisif ?'
+  reponse: 'Dans ce qui a défilé avant : un panneau déjà passé, un usager apparu dans un rétroviseur, une zone masquée.
+    Je les repère pendant toute la vidéo.'
+  explication: Observer le point de vue, la signalisation, les usagers et leurs mouvements ; ne pas fixer seulement l’événement
+    le plus spectaculaire. Relier ensuite chaque proposition aux indices réellement vus.
   theme: X
   sous_theme: lecture
   source: "Méthode d’observation (synthèse pédagogique) ; Sécurité routière, préparation à l’examen"

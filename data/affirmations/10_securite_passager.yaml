@@ -24,9 +24,10 @@
   sous_theme: passagers
   source: "securite-routiere.gouv.fr, Airbags ; Code de la route, art. R412-1"
 - id: aff-s-appuie-tete-securite
-  affirmation: L'appuie-tête est d'abord un équipement de confort.
+  affirmation: L’appuie-tête protège surtout lors d’un choc frontal.
   verdict: faux
-  pourquoi: 'C''est un équipement de sécurité passive : il retient la tête lors d''un choc arrière et évite le « coup du lapin ». Réglé trop bas, il fait pivot et aggrave la lésion cervicale.'
+  pourquoi: 'Il agit lors d’un choc arrière : il retient la tête projetée en arrière et évite le « coup du lapin ». C’est
+    un équipement de sécurité passive.'
   theme: S
   sous_theme: passagers
   source: "Ornikar, Appuie-tête ; Stych, Installation au poste de conduite"
@@ -70,11 +71,12 @@
   sous_theme: enfants
   source: "securite-routiere.gouv.fr, Transporter un enfant en voiture"
 - id: aff-s-isofix
-  affirmation: La fixation Isofix réduit le risque d'installer un siège enfant de travers.
+  affirmation: Un siège Isofix pour jeune enfant s’ancre sur des points fixes de la caisse, sans dépendre de la ceinture
+    de la voiture pour être maintenu.
   verdict: vrai
-  pourquoi: Le siège s'ancre par deux crochets sur des points fixes de la caisse, avec sangle haute ou jambe de force, au
-    lieu d'être sanglé par la ceinture. Isofix équipe les véhicules neufs depuis 2011 ; près de deux enfants sur trois restent
-    mal attachés (harnais, ceinture).
+  pourquoi: 'Deux crochets sur des points d’ancrage, avec sangle haute ou jambe de force : moins d’erreurs d’installation
+    qu’un siège sanglé par la ceinture. Isofix équipe les véhicules neufs depuis 2011 ; près de deux enfants sur trois restent
+    mal attachés (harnais, ceinture).'
   theme: S
   sous_theme: enfants
   source: service-public.fr F628 ; securite-routiere.gouv.fr, Transporter un enfant ; Prévention routière, étude OURSE (2026)

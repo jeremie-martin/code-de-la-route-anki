@@ -3,7 +3,6 @@
 Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels que déclarés sur Commons.
 
 - [File:D21a.svg](https://commons.wikimedia.org/wiki/File:D21a.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex_45
-- [File:D43.svg](https://commons.wikimedia.org/wiki/File:D43.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45
 - [File:E42.svg](https://commons.wikimedia.org/wiki/File:E42.svg) ; licence : Public domain ; auteur : Roulex 45
 - [File:E43.svg](https://commons.wikimedia.org/wiki/File:E43.svg) ; licence : Public domain ; auteur : Roulex 45
 - [File:FR road beacon J13.svg](https://commons.wikimedia.org/wiki/File:FR_road_beacon_J13.svg) ; licence : CC0 ; auteur : มองโกเลีย๔๔
@@ -181,7 +180,6 @@ Fichiers utilisés tels quels ou rastérisés/teintés. Licence et auteur tels q
 - [File:France road sign M4d2.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4d2.svg) ; licence : CC BY-SA 4.0 ; auteur : Chabe01
 - [File:France road sign M4e.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4e.svg) ; licence : CC BY-SA 4.0 ; auteur : มองโกเลีย๔๔
 - [File:France road sign M4f.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M4f.svg) ; licence : CC BY-SA 4.0 ; auteur : Chabe01
-- [File:France road sign M5.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M5.svg) ; licence : CC BY-SA 4.0 ; auteur : Chabe01
 - [File:France road sign M6a.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M6a.svg) ; licence : CC BY-SA 4.0 ; auteur : Paris 16
 - [File:France road sign M6b debut mois.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M6b_debut_mois.svg) ; licence : CC BY-SA 4.0 ; auteur : Chabe01
 - [File:France road sign M6c.svg](https://commons.wikimedia.org/wiki/File:France_road_sign_M6c.svg) ; licence : CC BY-SA 3.0 ; auteur : Roulex 45

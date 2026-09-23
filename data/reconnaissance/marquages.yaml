@@ -7,8 +7,8 @@
       style: continue
   nom: Ligne continue (axiale ou séparative de voies)
   signification: 'Ligne blanche continue : interdiction de la franchir et de la chevaucher.'
-  conduite: Ne pas dépasser ni la franchir ; on peut la chevaucher pour dépasser un cycliste ou un EDPM, avec visibilité.
-  complement: 'Exception R412-19 : la chevaucher, sans la franchir, pour dépasser un cycle, un EDPM ou un cyclomobile léger.'
+  conduite: 'Je ne la franchis pas : ni pour dépasser, ni pour tourner ou faire demi-tour.'
+  complement: 'Seule exception : la chevaucher, sans la franchir, pour dépasser un cycle, un EDPM ou un cyclomobile léger.'
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -51,12 +51,15 @@
       kind: rabattement
   nom: Ligne d'annonce d'une ligne continue (T3) avec flèches de rabattement
   signification: 'Traits longs et intervalles courts, accompagnés de flèches obliques : une ligne continue commence bientôt, il faut se rabattre à droite et ne plus entreprendre de dépassement.'
-  conduite: Se rabattre avant la ligne continue ; ne pas commencer de dépassement.
+  conduite: Je termine ou j’abandonne mon dépassement et je me rabats avant le début de la ligne continue.
   complement: Avant chaque ligne continue, sur une centaine de mètres.
-  piege: 'Les flèches de rabattement ne désignent pas une direction : elles ordonnent de se rabattre avant la ligne continue.'
+  piege: 'Même tracé que la ligne de dissuasion : ce sont les flèches de rabattement qui en font une ligne d’annonce.'
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
+  comparaisons:
+  - ref: marq-ligne-dissuasion
+    legende: 'Sans flèches : ligne de dissuasion.'
 - id: marq-ligne-mixte
   type: marquage
   image:
@@ -66,7 +69,7 @@
   nom: Ligne mixte (continue doublée d'une discontinue)
   signification: 'Ligne continue accolée à une ligne discontinue : c''est la ligne la plus proche de mon véhicule qui s''applique.'
   conduite: 'Discontinue de mon côté : je peux dépasser ; continue de mon côté : c''est interdit.'
-  complement: 'R412-20 : la ligne discontinue doit être la plus proche AU DÉBUT de la manœuvre, qui doit s''achever avant la fin de la partie discontinue.'
+  complement: La ligne discontinue doit être la plus proche AU DÉBUT de la manœuvre, qui doit s’achever avant la fin de la partie discontinue.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -95,7 +98,7 @@
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Ligne transversale CONTINUE = STOP ; ligne transversale DISCONTINUE (T'2) = cédez-le-passage.
+  piege: Ligne transversale CONTINUE = STOP ; ligne transversale DISCONTINUE = cédez-le-passage.
 - id: marq-ligne-cedez
   type: marquage
   image:
@@ -132,12 +135,12 @@
       kind: pieton
   nom: Passage pour piétons (marquage au sol)
   signification: Bandes blanches parallèles à l'axe de la chaussée matérialisant la traversée des piétons ; s'y arrêter ou y stationner est interdit.
-  conduite: Céder le passage au piéton engagé ou qui manifeste l'intention de traverser ; ne pas dépasser un véhicule arrêté devant.
-  complement: Arrêt et stationnement interdits dans les 5 m en amont du passage, hors emplacements matérialisés.
+  conduite: Ralentir et céder le passage au piéton qui traverse ; ne pas dépasser un véhicule arrêté devant le passage.
+  complement: 'Arrêt et stationnement interdits dans les 5 m en amont du passage, hors emplacements matérialisés. Refus de priorité à un piéton : 135 € et 6 points.'
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Refus de priorité à un piéton : 135 € et 6 points.'
+  piege: Le piéton qui attend au bord en montrant qu’il va traverser a déjà la priorité, même sans avoir posé le pied sur la chaussée.
 - id: marq-passage-cyclistes
   type: marquage
   image:
@@ -148,7 +151,7 @@
   signification: Traversée de chaussée réservée aux cyclistes, matérialisée par des bandes blanches étroites (ou, sur d'anciens marquages, deux rangées de carrés blancs).
   conduite: Je contrôle la traversée avant de tourner et respecte les priorités indiquées, notamment un éventuel cédez-le-passage.
   complement: En prolongement des pistes cyclables aux intersections.
-  piege: En ligne droite, c’est la signalisation du carrefour qui fixe la priorité, pas le marquage. Mais en tournant, je cède aux cyclistes de la piste que je coupe (R415-3 et R415-4).
+  piege: En ligne droite, c’est la signalisation du carrefour qui fixe la priorité, pas le marquage. Mais en tournant, je cède aux cyclistes de la piste que je coupe.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -202,7 +205,6 @@
   signification: Chevrons blancs peints dans l'axe des voies (autoroutes, tunnels) pour matérialiser la distance de sécurité.
   conduite: Garder deux chevrons visibles entre son véhicule et celui de devant.
   complement: Sections d'autoroute et tunnels où les accidents en chaîne sont fréquents.
-  piege: Ces marques sont peintes sur la chaussée. Les chevrons sur fond bleu au bord de la route guident dans un virage ; les flèches blanches divergentes sur fond vert signalent une séparation de courants de circulation.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -241,11 +243,10 @@
   nom: Couloir réservé aux bus (ligne T3 5u + inscription BUS)
   signification: Voie réservée aux autobus, repérée par une ligne large et l’inscription « BUS ».
   conduite: Ne pas y circuler ni y stationner ; la traverser seulement pour tourner, si la ligne est discontinue.
-  complement: Le panneau de voie réservée précise les usagers autorisés. Une ligne continue ne se franchit pas. Certains couloirs sont à contresens.
+  complement: 'Le panneau de voie réservée précise les usagers autorisés ; certains couloirs sont à contresens. Y circuler : 135 € ; s’y arrêter ou y stationner : très gênant, 135 €.'
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Y circuler : 135 € (R412-7) ; s’y arrêter ou y stationner : « très gênant », 135 € (R417-11).'
 - id: marq-damier-blanc
   type: marquage
   image:
@@ -296,12 +297,15 @@
       style: zigzag
   nom: 'Ligne jaune en zigzag : arrêt de bus'
   signification: 'Ligne jaune en zigzag le long du trottoir, qui matérialise un arrêt d''autobus : les autres véhicules ne s''y arrêtent ni n''y stationnent pendant la période où circulent les bus.'
-  conduite: Ne pas s'y arrêter, même brièvement ; ne pas gêner le bus qui repart.
-  complement: Aux arrêts de bus. S’y arrêter ou stationner est un stationnement gênant, avec fourrière possible.
+  conduite: Laisser l’emplacement libre ; ne pas gêner le bus qui repart.
+  complement: 'S’y arrêter ou y stationner est gênant : fourrière possible.'
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Un couloir bus, lui, est très gênant : 135 €.'
+  piege: Même le temps de déposer quelqu’un, s’y arrêter est interdit.
+  comparaisons:
+  - ref: marq-ligne-jaune-discontinue
+    legende: 'Jaune discontinue : l’arrêt reste permis.'
 - id: marq-livraison
   type: marquage
   image:
@@ -322,7 +326,7 @@
   nom: Marquage temporaire jaune (chantier)
   signification: 'En zone de travaux, les lignes et flèches temporaires sont peintes en jaune : elles remplacent le marquage blanc permanent, même si celui-ci reste visible, et prévalent sur lui.'
   conduite: Suivre les lignes jaunes et ignorer les lignes blanches contradictoires.
-  complement: 'Zones de chantier, basculements de chaussée. Priorité : marquage temporaire jaune > marquage permanent blanc.'
+  complement: Zones de chantier, basculements de chaussée.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -346,7 +350,6 @@
   nom: Damier rouge et blanc (voie de détresse)
   signification: Damier rouge et blanc peint au début d'une voie de détresse (lit d'arrêt) en fin de descente dangereuse.
   conduite: N'y entrer qu'en cas de défaillance des freins ; ne jamais s'y arrêter ou stationner.
-  complement: Ce marquage se trouve à l’entrée des voies de détresse.
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -389,7 +392,7 @@
   theme: L
   sous_theme: marquages
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'S’engager dans le sas quand on risque d’y rester bloqué est une infraction (R415-2) ; franchir la ligne d’arrêt des voitures au rouge, c’est un feu grillé : 135 € et 4 points.'
+  piege: 'S’engager dans le sas quand on risque d’y rester bloqué est une infraction ; franchir la ligne d’arrêt des voitures au rouge, c’est un feu grillé : 135 € et 4 points.'
 - id: marq-cvcb
   type: marquage
   image:

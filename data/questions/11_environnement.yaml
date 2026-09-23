@@ -43,12 +43,13 @@
   sous_theme: ecoconduite
   source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2"
 - id: e-climatisation-conso
-  question: Par forte chaleur, comment utiliser la climatisation sans gaspiller ni compromettre la conduite ?
-  reponse: Aérer d’abord l’habitacle surchauffé, puis utiliser une climatisation modérée, vitres fermées.
-    Garder un confort thermique compatible avec la vigilance.
-  explication: 'À vitesse élevée, vitres fermées et climatisation modérée consomment moins que vitres ouvertes : la
-    résistance à l’air l’emporte. En ville, à faible allure, l’inverse peut être vrai. Refroidir plus que nécessaire
-    consomme de l’énergie.'
+  question: Ma voiture a stationné en plein soleil ; l’habitacle est brûlant. Que fais-je avant de compter sur la climatisation
+    ?
+  reponse: J’aère d’abord, portières ou vitres ouvertes quelques instants, pour évacuer l’air surchauffé ; puis je roule
+    vitres fermées avec une climatisation modérée.
+  explication: La climatisation n’a plus à refroidir l’air accumulé. Refroidir plus que nécessaire consomme de l’énergie
+    ; garder un confort thermique compatible avec la vigilance. En ville, à faible allure, vitres ouvertes peuvent consommer
+    moins.
   theme: E
   sous_theme: ecoconduite
   source: "ADEME, https://agirpourlatransition.ademe.fr/particuliers/economiser/carburant/ecoconduite-solution-consommer-moins-carburant-limiter-emissions-co2 ; notice Renault Captur, Air conditionné, https://www.user-manual.renault.com/sites/renault/files/Captur-1238-6_FRA.pdf"
@@ -138,15 +139,6 @@
   theme: E
   sous_theme: ecomobilite
   source: "ADEME, Se déplacer autrement"
-- id: e-electrique-avantages
-  question: Quels sont l'avantage et la limite principale d'une voiture électrique ?
-  reponse: Pas d’émission à l’échappement pendant la conduite ; en revanche, je dois prévoir autonomie et recharge selon le
-    trajet.
-  explication: Coût, masse et bilan environnemental dépendent du modèle, de l’usage et de la production d’énergie. Pneus et
-    freins émettent aussi des particules.
-  theme: E
-  sous_theme: ecomobilite
-  source: "ADEME, Car Labelling ; service-public.fr"
 - id: e-ve-recharge
   question: Que faut-il prévoir pour partir loin en voiture électrique ?
   reponse: 'Les bornes compatibles sur le trajet, leur puissance, le temps de recharge et une marge d''autonomie :
@@ -157,10 +149,11 @@
   sous_theme: ecomobilite
   source: service-public.fr ; Code de la route, art. R417-10
 - id: e-energies-alternatives
-  question: Avant de choisir un véhicule au GPL, au GNV ou à l’hydrogène, que dois-je comparer pour mes trajets ?
-  reponse: La disponibilité du carburant et des stations, l’autonomie, les coûts et le bilan environnemental de la filière.
-  explication: GPL et GNV émettent moins de particules ; l'hydrogène n'émet que de la vapeur d'eau à l'usage mais
-    sa production consomme beaucoup d'énergie. Distinguer carburant, propulsion et production de l'énergie.
+  question: À l’usage, une voiture à hydrogène ne rejette que de la vapeur d’eau. Où se situe alors l’essentiel de son impact
+    environnemental ?
+  reponse: Dans la production de l’hydrogène, qui consomme beaucoup d’énergie.
+  explication: GPL et GNV émettent moins de particules. Pour toutes ces filières, comparer aussi les stations disponibles,
+    l’autonomie et les coûts. Distinguer carburant, propulsion et production de l’énergie.
   theme: E
   sous_theme: ecomobilite
   source: "En Voiture Simone, Achat éco-responsable ; service-public.fr F33371"

@@ -688,6 +688,7 @@ def draw_road(spec: dict) -> str:
       axis: "continue" | "discontinue" | "mixte_moi" (continuous on my side) | "mixte_autre" | "dissuasion" | "none"
       vehicles: [{lane: 1..n (1 = the vehicle's OWN rightmost lane: screen-right for 'up', screen-left for 'down'),
                   y: 0..100 (% from bottom), colour, kind, me, dir: 'up'|'down', goes, label, occludes}]
+      answer_on_back: the zone masked by an `occludes` vehicle is drawn only on the back of a « verso » image
       caption, extras: list of {"kind": "virage"|"sommet"|"passage_pieton"|"intersection_droite"|"intersection_gauche"
                   |"sign"|"retrecissement"|"label"|"bau"|"ilot" (length), y}
     """
@@ -771,8 +772,9 @@ def draw_road(spec: dict) -> str:
                   f'transform="rotate(-90 {x0 + road_w + 35} {H/2})">bande d\'arrêt d\'urgence</text>')
     # A stopped or tall vehicle masks an angular sector, not a confirmed pedestrian. The sector is bounded by the
     # sight lines from my eye (driver's seat) through the two extreme corners of the obstacle; both head up.
+    hide_answer = spec.get("answer_on_back") and not spec.get("verso")  # the masked zone is the answer
     for obstacle in spec.get("vehicles", []):
-        if not obstacle.get("occludes"):
+        if not obstacle.get("occludes") or hide_answer:
             continue
         observer = next((v for v in spec["vehicles"] if v.get("me")), None)
         if (observer is None or obstacle.get("kind", "car") not in HALF_WIDTH or

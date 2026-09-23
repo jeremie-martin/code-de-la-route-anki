@@ -8,9 +8,10 @@
   source: "Code de la route, art. R415-11 ; Ornikar, Priorité piéton"
 - id: aff-u-pieton-imprudent
   contexte: Un piéton traverse en courant hors passage, alors qu'un passage protégé se trouve à 20 m.
-  affirmation: Comme il est en tort, je ne suis pas tenu de ralentir.
-  verdict: faux
-  pourquoi: 'R412-6 impose une prudence accrue envers les usagers vulnérables, y compris lorsqu''ils se montrent imprudents : je ralentis et je le laisse passer. Son amende de 4 € ne m''exonère de rien.'
+  affirmation: Il est en infraction, mais je dois quand même ralentir et le laisser passer.
+  verdict: vrai
+  pourquoi: 'Avec un passage à moins de 50 m, il devait l’utiliser (R412-37) : son amende est de 4 €. Cela ne m’exonère
+    de rien : R412-6 impose une prudence accrue envers les usagers vulnérables, même imprudents.'
   theme: U
   sous_theme: pietons
   source: "Code de la route, art. R412-6 et R412-37 ; securite-routiere.gouv.fr, Réglementation des piétons"
@@ -50,27 +51,27 @@
   source: 'Code de la route, art. R412-34 et R412-35'
 - id: aff-u-pieton-nuit-croisement
   contexte: Je marche la nuit sur une route non éclairée, avec des vêtements sombres.
-  affirmation: Je peux être découvert trop tard par un conducteur en feux de croisement.
-  verdict: vrai
-  pourquoi: La distance de détection dépend du contraste, de l’éclairage et de la météo. Les 30 m de portée
-    minimale réglementaire ne sont pas une distance garantie de détection d’un piéton. Me rendre visible et
-    ne pas présumer avoir été vu.
+  affirmation: Un conducteur en feux de croisement me verra à temps, puisque ses feux éclairent au moins 30 m.
+  verdict: faux
+  pourquoi: 'Les 30 m sont une portée minimale réglementaire, pas une distance garantie de détection : contraste, éclairage
+    et météo décident. Des vêtements sombres me font repérer bien plus tard. Je me rends visible et je ne présume pas avoir
+    été vu.'
   theme: U
   sous_theme: pietons
   source: "Code de la route, R413-17, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047794480/ ; R313-3"
 - id: aff-u-velo-bande-obligatoire
-  contexte: Je suis à vélo ; une bande cyclable signalée par un panneau carré bleu longe la chaussée.
+  contexte: Je suis à vélo ; ce panneau signale la bande cyclable qui longe la chaussée.
   affirmation: Je dois l'emprunter et quitter la chaussée.
   verdict: faux
-  pourquoi: Pour un cycliste, le carré bleu conseille la piste ; le rond bleu la rend obligatoire. En agglomération, une trottinette électrique doit emprunter la piste ou la bande cyclable lorsqu’elle existe.
+  pourquoi: Pour un cycliste, ce carré bleu signale l’aménagement sans l’imposer. Une trottinette électrique, elle, doit
+    l’emprunter en agglomération.
   theme: U
   sous_theme: cyclistes
   source: 'Code de la route, art. R431-9 et R412-43-1 ; IISR (B22a, C113)'
   comparaisons:
-  - ref: c113
-    legende: 'Carré : conseillé aux cyclistes.'
   - ref: b22a
     legende: 'Rond : obligatoire pour les cyclistes.'
+  image_ref: c113
 - id: aff-u-velo-front-nuit
   contexte: Je roule à vélo avec un ami, hors agglomération, à la tombée du jour.
   affirmation: Nous pouvons rester à deux de front tant qu'aucune voiture n'arrive.
@@ -229,19 +230,18 @@
 - id: aff-u-moto-feux-jour
   affirmation: Une moto ou un cyclomoteur doit circuler feux de croisement (ou feux de jour) allumés, même en plein soleil.
   verdict: vrai
-  pourquoi: 'R416-17 : l’allumage de jour est imposé aux deux-roues motorisés pour compenser leur faible surface visible.
-    Un feu unique ne donne ni la largeur ni la distance : c’est pourquoi on sous-estime la vitesse d’approche d’une
-    moto avant de tourner à gauche.'
+  pourquoi: 'R416-17 : l’allumage de jour est imposé aux deux-roues motorisés pour compenser leur faible surface visible.'
   theme: U
   sous_theme: motos
   source: "Code de la route, art. R416-17 ; securite-routiere.gouv.fr, Être visible à moto"
 # ---------- Poids lourds, bus, tramways ----------
 - id: aff-u-pl-retroviseur
-  contexte: Arrêté au feu à côté d'un camion, je ne distingue pas le visage de son conducteur dans son rétroviseur.
-  affirmation: Je dois considérer qu’il peut ne pas me voir.
-  verdict: vrai
-  pourquoi: 'L’absence de contact visuel m’alerte sur un angle mort. Même si je vois le conducteur, rien ne garantit
-    qu’il m’a remarqué : je reste hors de sa trajectoire et évite de me placer à côté.'
+  contexte: Arrêté au feu à côté d’un camion, je vois le visage de son conducteur dans son rétroviseur.
+  affirmation: Il m’a donc forcément vu.
+  verdict: faux
+  pourquoi: Le contact visuel indique seulement que je suis hors de l’angle mort. Rien ne prouve que le conducteur regarde
+    ce rétroviseur ou m’a remarqué ; je reste hors de sa trajectoire et évite de me placer à côté. Si je ne vois pas son
+    visage, je suis dans son angle mort.
   theme: U
   sous_theme: poids_lourds
   source: "securite-routiere.gouv.fr, Vrai ou faux : les angles morts"
@@ -273,11 +273,13 @@
   sous_theme: vehicules_prioritaires
   source: 'Code de la route, art. R415-12 et R313-27'
 - id: aff-u-prioritaire-feu-rouge-radar
-  contexte: Je suis arrêté au rouge ; les pompiers annoncent leur approche derrière moi.
-  affirmation: Leur sirène suffit à me permettre de traverser tout le carrefour sans vérifier les autres usagers.
+  contexte: Je suis arrêté au rouge ; les pompiers annoncent leur approche derrière moi. Des piétons traversent devant moi,
+    au vert.
+  affirmation: Je dois avancer quand même pour leur libérer le passage.
   verdict: faux
-  pourquoi: Je facilite leur passage en contrôlant la circulation, sans créer un nouveau danger. Ne pas confondre
-    dégager prudemment le passage et traverser aveuglément au rouge ; une consigne d’un agent prime.
+  pourquoi: 'Je facilite leur passage seulement si je peux le faire sans créer de danger : j’attends que les piétons soient
+    passés, puis je me range ou j’avance au pas en contrôlant le carrefour. Les pompiers adaptent leur trajectoire ; une
+    consigne d’un agent prime.'
   theme: U
   sous_theme: vehicules_prioritaires
   source: Code de la route, R415-12 et R411-28
@@ -298,8 +300,8 @@
   sous_theme: vehicules_lents_animaux
   source: 'Code de la route, art. R412-33 et R433-17'
 - id: aff-u-pieton-engage-lent
-  contexte: Passage piéton sans feux ; une personne âgée traverse lentement.
-  affirmation: Je dois attendre qu'elle ait fini de traverser, puisqu'elle est engagée.
+  contexte: Passage piéton sans feux ; une personne âgée traverse lentement et une file se forme derrière moi.
+  affirmation: Je dois attendre qu’elle ait fini de traverser.
   verdict: vrai
   pourquoi: 'R415-11 : je cède le passage au piéton engagé ou qui manifeste l''intention de traverser, quelle que soit sa lenteur ; ne pas lui céder le passage : 135 € et 6 points.'
   theme: U

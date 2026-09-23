@@ -61,7 +61,7 @@
   image:
     commons: France road sign AK17.svg
   nom: Annonce de signaux lumineux temporaires
-  signification: Annonce des feux tricolores temporaires (feux de chantier KR11) réglant une circulation alternée.
+  signification: Annonce des feux tricolores temporaires (feux de chantier) réglant une circulation alternée.
   conduite: Ralentir, se préparer à s'arrêter ; ne pas passer au rouge même si la voie semble libre.
   theme: L
   sous_theme: panneaux
@@ -105,7 +105,7 @@
   image:
     commons: France road sign AK32.svg
   nom: Nappes de brouillard ou de fumées épaisses
-  signification: Annonce des nappes de brouillard ou de fumées (incendie, écobuage) réduisant la visibilité, souvent sur panneau à messages variables (XAK32).
+  signification: Annonce des nappes de brouillard ou de fumées (incendie, écobuage) réduisant la visibilité, souvent sur panneau à messages variables.
   conduite: Ralentir (50 km/h maximum si visibilité < 50 m), allumer feux de croisement et feux de brouillard avant, augmenter les distances.
   theme: L
   sous_theme: panneaux
@@ -198,7 +198,7 @@
   image:
     commons: KD22a.svg
   nom: Direction de déviation
-  signification: Panneau de direction jaune en forme de flèche portant la mention « Déviation » (ou le symbole KS1 numéroté) indiquant le chemin de la déviation.
+  signification: Panneau de direction jaune en forme de flèche portant la mention « Déviation » (ou un numéro d’itinéraire de déviation) indiquant le chemin de la déviation.
   conduite: Suivre la déviation.
   theme: L
   sous_theme: panneaux
@@ -224,8 +224,8 @@
   nom: Triangle de présignalisation (véhicule en panne ou accidenté)
   signification: Triangle rouge rétroréfléchissant à placer sur la chaussée pour signaler un véhicule immobilisé. Obligatoire à bord avec le gilet.
   conduite: Mettre le gilet avant de sortir et allumer les feux de détresse. Placer le triangle à environ 30 m en amont, davantage si nécessaire, sauf si sa pose m'expose au danger.
-  complement: 'Sur autoroute, ne pas poser le triangle si cela met en danger : priorité à l''évacuation derrière la glissière.'
+  complement: 'Ne pas revêtir le gilet ou ne pas présignaler : 135 €. Gilet non gardé à portée de main : 11 €.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Ne pas revêtir le gilet ou ne pas présignaler : 135 €. Gilet non gardé à portée de main : 11 €.'
+  piege: 'Sur autoroute, je ne reste pas près du véhicule pour poser le triangle : j’évacue d’abord derrière la glissière.'

@@ -10,7 +10,8 @@
   check: {order: [E, W, S]}
   question: Les véhicules suivent les flèches. Dans quel ordre passent-ils ?
   reponse: 'Rouge, puis verte, puis moi : mon STOP me fait céder aux deux ; la verte tourne à gauche et cède à la rouge qui vient en face.'
-  explication: "Au STOP, je passe après tous les véhicules de la route prioritaire, quel que soit leur sens. Entre eux : la verte tourne à gauche et cède donc à la rouge qui vient en face."
+  explication: 'Mon STOP ne change rien entre les véhicules de la route transversale : ils se départagent par leurs propres
+    règles.'
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-6 et R415-4"
@@ -24,7 +25,8 @@
   check: {order: [S, N, E]}
   question: "Les véhicules suivent les flèches. Quel est l'ordre de passage ?"
   reponse: 'Moi, puis la rouge, puis la verte : la verte a un cédez-le-passage ; la rouge tourne à gauche et me cède.'
-  explication: "La verte cède à tous (cédez-le-passage), même si elle est à ma droite. La rouge tourne à gauche et cède à moi qui viens en face. La verte passe en dernier, après la rouge, qui n'a pas de cédez-le-passage."
+  explication: Le cédez-le-passage de la verte vaut envers tous les véhicules de la route transversale, quel que soit leur
+    côté, même la rouge, qui tourne à gauche et n’a pas de panneau.
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-7 et R415-4"
@@ -162,7 +164,8 @@
   check: {pair: [S, E, apres]}
   question: "Intersection sans signalisation. Les véhicules suivent les flèches. Qui passe en premier ?"
   reponse: "La rouge : elle vient de ma droite. La règle du tourne-à-gauche ne la fait céder qu'aux véhicules qui arrivent en face d'elle, pas à moi."
-  explication: "Priorité à droite (R415-5), quelle que soit la direction prise par le véhicule de droite. Le tourne-à-gauche (R415-4) impose de céder aux véhicules venant en sens inverse : pour la rouge, ce serait un véhicule venant de ma gauche. Je ralentis et je la laisse tourner."
+  explication: Priorité à droite (R415-5), quelle que soit la direction prise par le véhicule de droite. Je ralentis et
+    je la laisse tourner.
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5 et R415-4"
@@ -242,9 +245,9 @@
     - N
     - avant
   question: "Les deux voitures ont marqué l'arrêt à leur ligne et la route transversale est libre. Les véhicules suivent les flèches. Qui repart en premier ?"
-  reponse: 'Moi : nos deux STOP règlent la priorité avec la route transversale ; entre nous, celui qui tourne à gauche cède au véhicule qui vient en face.'
-  explication: 'Le STOP règle la priorité avec la route transversale, pas entre les deux véhicules arrêtés : on
-    revient à la règle du tourne-à-gauche (R415-4). C''est la réponse attendue à l''exemple officiel de 2023 (Q2).'
+  reponse: 'Moi : entre nous deux, celui qui tourne à gauche cède à celui qui vient en face.'
+  explication: 'Nos deux STOP règlent la priorité avec la route transversale, pas entre nous : on revient à la règle du
+    tourne-à-gauche (R415-4). C’est la réponse attendue à l’exemple officiel de 2023 (Q2).'
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-4 et R415-6 ; Sécurité routière, Exemples de nouvelles questions (Q2)"

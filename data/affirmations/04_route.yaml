@@ -10,24 +10,23 @@
   source: "Sécurité routière, Exemples de nouvelles questions (Q18) ; IISR, 1re partie"
   image_ref: a16
 - id: aff-r-pn-150m
-  contexte: Route hors agglomération ; je passe ce panneau.
-  affirmation: Le passage à niveau se situe à environ 150 m.
+  contexte: En agglomération ; je passe ce panneau.
+  affirmation: Le passage à niveau se situe à environ 50 m.
   verdict: vrai
-  pourquoi: Hors agglomération, un panneau de danger est implanté à environ 150 m de ce qu’il annonce, sauf panonceau de distance. Des balises à trois, deux puis une bande rouge décomptent l’approche (150, 100, 50 m).
+  pourquoi: En agglomération, un panneau de danger est implanté à environ 50 m de ce qu’il annonce, sauf panonceau de distance
+    ; environ 150 m hors agglomération.
   theme: R
   sous_theme: passages_a_niveau
-  source: "Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR"
+  source: IISR, 2e partie, art. 25 ; Sécurité routière, Exemples de nouvelles questions (Q19, variante en agglomération)
   image:
     commons: France road sign A7 + M9z Signal Automatique.svg
     signal: true
-  comparaisons:
-  - ref: j10
-    legende: 'Balises à 3, 2 puis 1 bande rouge : 150, 100, 50 m avant le passage.'
 - id: aff-r-pn-feux-rouges-possibles
   contexte: Un passage à niveau est annoncé par ce panneau et son panonceau.
   affirmation: À ce passage à niveau, je peux rencontrer des feux rouges clignotants.
   verdict: vrai
-  pourquoi: 'A7 annonce des barrières ; le panonceau « signal automatique » précise qu’elles sont automatiques : de chaque côté, un feu rouge clignotant et une sonnerie précèdent la fermeture des demi-barrières.'
+  pourquoi: 'Ce triangle annonce un passage à niveau avec barrières ; le panonceau « signal automatique » précise qu’elles
+    sont automatiques : de chaque côté, un feu rouge clignotant et une sonnerie précèdent la fermeture des demi-barrières.'
   theme: R
   sous_theme: passages_a_niveau
   source: Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR, 4e partie (signal G2)
@@ -234,7 +233,9 @@
   contexte: La nuit, en agglomération, sur une avenue bien éclairée.
   affirmation: En voiture, je peux me contenter de mes feux de position.
   verdict: faux
-  pourquoi: 'R416-6 II 2° : la nuit, en agglomération sur une route suffisamment éclairée, une voiture circule en feux de croisement (pas en feux de route). Les feux de position seuls ne sont admis, en agglomération bien éclairée, que lorsque la visibilité est réduite par la météo, en pratique de jour sous la pluie, et jamais pour une moto.'
+  pourquoi: La nuit, en agglomération sur une route suffisamment éclairée, une voiture circule en feux de croisement (pas
+    en feux de route). Les feux de position seuls ne sont admis, en agglomération bien éclairée, que lorsque la visibilité
+    est réduite par la météo, en pratique de jour sous la pluie, et jamais pour une moto.
   theme: R
   sous_theme: nuit
   source: Code de la route, art. R416-6 et R416-8
@@ -242,7 +243,7 @@
   - ref: voyant-position
     legende: 'Feux de position : se faire voir, pas éclairer.'
   - ref: voyant-croisement
-    legende: 'Feux de croisement : obligatoires la nuit en ville.'
+    legende: Voyant des feux de croisement.
 - id: aff-r-nuit-feux-route-arret
   affirmation: À l'arrêt ou en stationnement, l'usage des feux de route est interdit.
   verdict: vrai
@@ -299,8 +300,8 @@
 - id: aff-r-vent-deux-roues
   affirmation: Par vent latéral, je laisse un écart plus grand au motard que je dépasse.
   verdict: vrai
-  pourquoi: Deux-roues, caravanes, fourgons et véhicules à coffre de toit sont les plus sensibles au vent ; la rafale
-    surprend surtout à la sortie d'une zone abritée (tunnel, pile de pont, rideau d'arbres).
+  pourquoi: 'Une rafale peut déporter brusquement le motard vers moi : un écart élargi lui laisse cette marge. Elle surprend
+    surtout à la sortie d’une zone abritée (tunnel, pile de pont, rideau d’arbres).'
   theme: R
   sous_theme: intemperies
   source: "securite-routiere.gouv.fr, Le vent ; En Voiture Simone, Le vent"

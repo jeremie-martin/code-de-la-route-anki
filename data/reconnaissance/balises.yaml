@@ -12,7 +12,7 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: La couleur de la bande distingue virage (blanche), intersection (rouge) et simple guidage (noire).
+  piege: 'Même piquet que les balises d’intersection et de bord de chaussée : seule la bande blanche désigne un virage.'
   comparaisons:
   - ref: j3
     legende: 'Bande rouge : intersection.'
@@ -31,7 +31,7 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: La bande rouge repère une intersection ; la bande blanche, un virage. Cette balise ne dit pas qui est prioritaire.
+  piege: 'Elle ne dit pas qui est prioritaire : je lis la signalisation de l’intersection.'
   comparaisons:
   - ref: j1
     legende: 'Bande blanche : virage.'
@@ -46,10 +46,10 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Les chevrons sur fond bleu guident dans un virage. Les flèches blanches divergentes sur fond vert signalent une séparation de courants de circulation.
+  piege: 'Le fond bleu en fait une balise permanente : elle suit le tracé du virage, elle n’annonce pas un contournement de chantier.'
   comparaisons:
-  - ref: j14a
-    legende: 'Flèches divergentes : séparation de courants de circulation.'
+  - ref: k8
+    legende: 'Chevron rouge sur fond blanc : déviation ou rétrécissement de chantier.'
 - id: j5
   type: balise
   code: J5
@@ -57,8 +57,7 @@
     commons: France road sign J5.svg
   nom: Balise de tête d'îlot (contournement par la droite)
   signification: 'Balise carrée bleue à large flèche blanche oblique, en tête d''un îlot ou d''un terre-plein : passer à droite.'
-  conduite: Je passe à droite de la balise.
-  complement: En tête d’îlot, souvent à l’entrée d’un giratoire.
+  complement: Souvent à l’entrée d’un giratoire.
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -73,7 +72,7 @@
   theme: L
   sous_theme: balises
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Bande noire : simple guidage, ni virage ni intersection.'
+  piege: Elle suit le bord de la chaussée, sans annoncer de danger particulier.
   comparaisons:
   - ref: j1
     legende: 'Bande blanche : virage.'

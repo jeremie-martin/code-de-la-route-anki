@@ -24,7 +24,8 @@
 - id: conf-a7-a8
   a: a7
   b: a8
-  difference: '**A** (barrière) : passage à niveau **avec** barrières ou demi-barrières. **B** (locomotive) : passage à niveau **sans** barrière, parfois équipé de feux rouges clignotants : je regarde et j''écoute avant de m''engager. Dans les deux cas, je ne m''engage jamais sans pouvoir dégager les voies.'
+  difference: '**A (barrière) : passage à niveau avec barrières ou demi-barrières.** **B (locomotive) : sans barrière**,
+    parfois avec des feux rouges clignotants : je regarde et j’écoute avant de m’engager, et je ne dépasse pas sur le passage.'
   theme: L
   sous_theme: panneaux
   source: IISR 1re partie ; Code de la route, art. R422-3
@@ -81,18 +82,17 @@
 - id: conf-b1-c12
   a: b1
   b: c12
-  difference: A interdit d’entrer par ce sens. B indique le sens unique des véhicules concernés ; rester attentif
-    aux catégories autorisées à contresens, notamment cycles et EDPM. Le sens unique ne garantit pas l’absence
-    de tout usager en face.
+  difference: A interdit d’entrer par ce sens. B indique le sens unique des véhicules concernés ; des catégories autorisées,
+    notamment cycles et EDPM, peuvent venir en face.
   theme: L
   sous_theme: panneaux
   source: IISR 4e et 5e parties
 - id: conf-b3-b3a
   a: b3
   b: b3a
-  difference: A interdit de dépasser les véhicules à moteur autres que les deux-roues sans side-car. B impose
-    cette interdiction aux véhicules de transport de marchandises dont le PTAC ou PTRA dépasse 3,5 t. La visibilité,
-    le marquage et l’écart latéral restent à vérifier.
+  difference: '**A (voiture rouge) : je ne dépasse aucun véhicule à moteur**, sauf deux-roues sans side-car. **B (camion
+    rouge) : la même interdiction, pour les seuls véhicules de marchandises de plus de 3,5 t** ; en voiture, elle ne me
+    concerne pas.'
   theme: L
   sous_theme: panneaux
   source: "Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
@@ -164,9 +164,8 @@
 - id: conf-b22a-c113
   a: b22a
   b: c113
-  difference: 'Pour un cycliste concerné : A impose la piste ou bande ; B la conseille sans l’imposer. Dans
-    les deux cas, une voiture ordinaire n’y circule pas. Les EDPM et cyclomobiles légers ont leurs règles d’accès
-    : « interdit à tout moteur » serait faux.'
+  difference: 'Pour un cycliste concerné : A impose la piste ou la bande, B la conseille sans l’imposer. Dans les deux cas,
+    une voiture ordinaire n’y circule pas.'
   theme: L
   sous_theme: panneaux
   source: IISR 4e et 5e parties ; Code de la route, art. R431-9
@@ -221,9 +220,9 @@
 - id: conf-c107-c207
   a: c107
   b: c207
-  difference: 'A marque une route à accès réglementé ; B une autoroute. A ne fixe pas à lui seul 110 km/h :
-    la vitesse dépend de la chaussée, des panneaux et des conditions. Sur autoroute, 130 est seulement le plafond
-    général par temps sec.'
+  difference: '**A (voiture de face) : route pour automobiles**, interdite aux piétons, cycles et véhicules lents ; la vitesse
+    dépend de la chaussée : 110 avec terre-plein central, sinon 80 (90 sur les sections signalées). **B (pont au-dessus
+    de la chaussée) : autoroute**, 130 par temps sec.'
   theme: L
   sous_theme: panneaux
   source: Code de la route, R413-2 à R413-5 ; arrêté signalisation, C107 et C207
@@ -261,8 +260,8 @@
 - id: conf-m8a-m8b
   a: m8a
   b: m8b
-  difference: 'Pour l’arrêt ou le stationnement : **A marque le début** de l’interdiction ; **B en marque la
-    fin**. Lire le sens de la flèche.'
+  difference: 'Pour l’arrêt ou le stationnement : **A, flèche vers le haut, l’interdiction commence au panneau et vaut au-delà**
+    ; **B, flèche vers le bas, elle valait avant le panneau et s’arrête ici.**'
   theme: L
   sous_theme: panonceaux
   source: IISR 1re partie, art. 9
@@ -284,12 +283,21 @@
 - id: conf-continue-dissuasion
   a: marq-ligne-continue
   b: marq-ligne-dissuasion
-  difference: 'Ligne continue : franchissement interdit ; chevauchement exceptionnel pour dépasser cycles, EDPM
-    et cyclomobiles légers dans les conditions légales. Dissuasion : ligne discontinue à intervalles courts, dépassement
-    à éviter sauf véhicule très lent et conditions sûres. Une ligne d’annonce se reconnaît aussi à ses flèches.'
+  difference: 'Ligne continue : franchissement interdit ; chevauchement seulement pour dépasser cycles, EDPM et cyclomobiles
+    légers dans les conditions légales. Dissuasion : ligne discontinue à intervalles courts ; dépassement à éviter, sauf
+    véhicule très lent et conditions sûres.'
   theme: L
   sous_theme: marquages
   source: Code de la route, R412-19 ; IISR, 7e partie
+- id: conf-annonce-dissuasion
+  a: marq-ligne-annonce
+  b: marq-ligne-dissuasion
+  difference: '**A, traits avec flèches de rabattement : une ligne continue arrive**, je me rabats et je ne commence plus
+    de dépassement. **B, mêmes traits sans flèches : dépassement déconseillé**, encore possible pour un véhicule lent si
+    la visibilité le permet.'
+  theme: L
+  sous_theme: marquages
+  source: IISR, 7e partie, art. 113
 - id: conf-t1-dissuasion
   a: marq-ligne-discontinue-t1
   b: marq-ligne-dissuasion
@@ -325,13 +333,6 @@
   theme: L
   sous_theme: feux
   source: "Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
-- id: conf-k10a-k10b
-  a: k10a
-  b: k10b
-  difference: 'Le signaleur présente un piquet à deux faces : **A, verte**, autorise le passage ; **B, rouge**, impose l’arrêt. Je suis la face tournée vers moi.'
-  theme: L
-  sous_theme: panneaux
-  source: IISR 8e partie
 - id: conf-voyant-frein-stationnement
   a: voyant-frein
   b: voyant-frein-stationnement

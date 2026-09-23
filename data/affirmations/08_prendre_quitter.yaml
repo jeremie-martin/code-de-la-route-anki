@@ -50,7 +50,8 @@
   contexte: Je laisse ma voiture sur un parking pour la journée.
   affirmation: Je laisse le certificat d'immatriculation dans la boîte à gants, sa place est dans le véhicule.
   verdict: faux
-  pourquoi: "Les documents du véhicule repartent avec le conducteur : laissés à bord, ils facilitent la revente d'une voiture volée. Objets de valeur hors de vue, vitres fermées, véhicule verrouillé."
+  pourquoi: 'Les documents du véhicule repartent avec le conducteur : laissés à bord, ils facilitent la revente d’une voiture
+    volée.'
   theme: P
   sous_theme: quitter
   source: "En Voiture Simone, Précautions pour quitter son véhicule"

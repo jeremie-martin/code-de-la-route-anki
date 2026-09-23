@@ -7,7 +7,7 @@
   nom: Circulation interdite à tout véhicule dans les deux sens
   signification: Interdiction de circuler à tout véhicule (avec ou sans moteur, y compris les cycles), dans les deux sens. Seuls les piétons peuvent passer.
   conduite: Ne pas s'engager. Un panonceau peut prévoir des exceptions (« sauf riverains », « sauf livraisons »).
-  piege: Le cercle rouge vide interdit la circulation dans les deux sens. Le disque rouge à barre blanche interdit d’entrer par ce côté.
+  piege: 'Le cercle est vide : l’interdiction vaut dans les deux sens, pas seulement à l’entrée.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -26,7 +26,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Le cercle rouge vide interdit la circulation dans les deux sens ; la barre blanche interdit l’entrée par ce côté.
+  piege: 'La barre blanche ne vise que l’entrée par ce côté : la rue est circulée dans l’autre sens.'
   comparaisons:
   - ref: b0
     legende: 'Cercle vide : circulation interdite dans les deux sens.'
@@ -63,7 +63,6 @@
   nom: Interdiction de tourner à droite à la prochaine intersection
   signification: Il est interdit de tourner à droite à la prochaine intersection.
   conduite: Continuer tout droit ou tourner à gauche.
-  complement: Vaut pour la prochaine intersection.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -121,7 +120,7 @@
   nom: Stationnement interdit
   signification: Stationnement interdit du côté du panneau, jusqu'à la prochaine intersection. L'arrêt reste autorisé.
   conduite: Ne pas stationner ; on peut s'arrêter pour déposer un passager ou charger rapidement.
-  piege: Une barre interdit le stationnement ; deux barres en croix interdisent aussi l’arrêt. Le panneau de fin de toutes les interdictions ne met pas fin à cette règle de stationnement.
+  piege: Le panneau de fin de toutes les interdictions ne lève pas cette interdiction de stationner.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -129,7 +128,7 @@
   - l-arret-vs-stationnement
   comparaisons:
   - ref: b6d
-    legende: 'Croix rouge : arrêt et stationnement interdits.'
+    legende: 'Croix rouge : l’arrêt est interdit aussi.'
 - id: b6a2
   type: panneau
   code: B6a2
@@ -175,7 +174,7 @@
   nom: Accès interdit aux véhicules à moteur à l'exception des cyclomoteurs
   signification: Interdiction d'accès aux véhicules à moteur (voitures, motos, camions…), sauf les cyclomoteurs (≤ 50 cm³ / 45 km/h). Piétons et cycles peuvent passer.
   conduite: Ne pas s'engager en voiture ou à moto.
-  piege: 'Voiture et moto : les cyclomoteurs restent admis. Avec un troisième symbole de cyclomoteur, tous les véhicules à moteur sont interdits.'
+  piege: 'Deux symboles seulement : le cyclomoteur n’y figure pas, il reste admis.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -201,13 +200,13 @@
   nom: Accès interdit aux véhicules affectés au transport de marchandises
   signification: Accès interdit aux véhicules de transport de marchandises, camions et camionnettes. Un panonceau de tonnage peut restreindre l’interdiction aux véhicules dont le poids maximal autorisé dépasse la valeur indiquée.
   conduite: Ne concerne pas les voitures particulières.
-  piege: Le camion vise le transport de marchandises. Un nombre de tonnes dans le rond rouge vise le poids total autorisé (PTAC, ou PTRA pour un ensemble), lu sur la carte grise, pas le poids réel.
+  piege: Le camion vise le transport de marchandises, quel que soit son poids, sauf panonceau de tonnage.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: b13
-    legende: 'Nombre de tonnes : poids total autorisé (PTAC ou PTRA) supérieur à la valeur, tous véhicules.'
+    legende: 'Nombre de tonnes : tous véhicules dont le poids total autorisé (carte grise) dépasse la valeur.'
 - id: b9a
   type: panneau
   code: B9a
@@ -227,7 +226,7 @@
   nom: Accès interdit aux cycles
   signification: 'Accès interdit aux cycles, aux engins de déplacement personnel motorisés (EDPM : trottinette électrique, gyroroue…) et aux cyclomobiles légers (petits véhicules électriques d’au plus 30 kg, limités à 25 km/h).'
   conduite: Le cycliste doit prendre un autre itinéraire ; il peut éventuellement passer à pied en poussant son vélo (il devient piéton).
-  piege: 'Avec le même symbole de vélo : rond rouge = accès interdit ; rond bleu = piste obligatoire ; carré bleu = piste conseillée ; triangle = débouché de cyclistes.'
+  piege: 'Avec le même vélo, c’est la forme qui fixe le sens : le rond rouge interdit.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -315,7 +314,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Pour une vitesse, le rond rouge fixe un maximum, le rond bleu un minimum et le carré bleu une vitesse conseillée.
+  piege: 'Le même chiffre change de sens avec la forme et la couleur : ici, rond rouge, un plafond.'
   comparaisons:
   - ref: b25
     legende: 'Rond bleu : vitesse minimale.'
@@ -329,14 +328,13 @@
   nom: Cédez le passage à la circulation venant en sens inverse
   signification: 'Dans un passage étroit, céder le passage aux véhicules venant en sens inverse : la priorité est à ceux d''en face.'
   conduite: Ralentir, s'arrêter avant le rétrécissement si un véhicule arrive en face, et ne s'engager que lorsque la voie est libre.
-  complement: De l’autre côté du passage étroit, le panneau carré bleu donne la priorité au sens opposé.
-  piege: 'Ma direction est celle de la flèche vers le haut : elle est rouge, je cède le passage.'
+  piege: 'Je lis ma flèche, celle qui monte : rouge ici, je cède.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: c18
-    legende: 'De l’autre côté : le sens opposé a la priorité.'
+    legende: 'Panneau vu par ceux d’en face : ils ont la priorité.'
 - id: b16
   type: panneau
   code: B16

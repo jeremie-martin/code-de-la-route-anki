@@ -40,3 +40,4 @@ Un signal a sa carte s’il porte une décision de conduite ou une discriminatio
 | B10a, E44, KD8, KD9, KD42, CE52, R23 | Variantes d’une famille apprise (caravane après les limitations de poids, longueur après largeur et hauteur, cartouche communal après E42/E43, déviations temporaires après KD22) ou signaux au pictogramme transparent (aire de covoiturage, feu bicolore de contrôle individuel) : aucune question plausible de l’épreuve ne porte sur eux. | `b13`, `b11`, `b12`, `e42`, `kd22`, `feu-rouge` |
 | SR3e | Même information que SR3a (contrôle automatisé de la vitesse) avec le rappel de la limite : rien de plus à apprendre. | `sr3a` |
 | M9v2 | Variante d’inscription de M9v1 (« SAUF » et vélo) : même sens. | `m9v1` |
+| M5 | Le signal avancé de STOP (triangle et panonceau « STOP » avec distance) est déjà reconnu en entier : même rappel, même conduite. | `ab5`, `conf-ab3b-ab5` |

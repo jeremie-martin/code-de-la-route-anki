@@ -9,9 +9,11 @@
   source: "Sécurité routière, Exemples de nouvelles questions (Q6) ; décret n° 2007-705 ; Croix-Rouge française"
 - id: aff-a-pls-avec-casque
   contexte: Après sa chute, un motard est inconscient, allongé sur le dos, et respire normalement. Il se met à vomir.
-  affirmation: Je le tourne sur le côté en maintenant si possible l’axe tête-cou-tronc, avec de l’aide, sans retirer son casque.
+  affirmation: Je le tourne sur le côté malgré sa chute.
   verdict: vrai
-  pourquoi: Les vomissements menacent ses voies aériennes et justifient la mise sur le côté malgré le traumatisme. Alerter et suivre les secours, surveiller la respiration ; ne pas retirer le casque pour le confort.
+  pourquoi: 'Les vomissements menacent ses voies aériennes : je le tourne sur le côté malgré le traumatisme, en maintenant
+    si possible l’axe tête-cou-tronc, avec de l’aide, sans retirer le casque. J’alerte, je suis les consignes des secours
+    et je surveille la respiration.'
   theme: A
   sous_theme: secourir
   source: "Sécurité civile, PSC juillet 2026, p. 36–38, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Sécurité routière, secours au motard"
@@ -80,10 +82,13 @@
   sous_theme: obligations
   source: "service-public.fr, Constat amiable"
 - id: aff-a-degagement-urgence
-  contexte: 'Voiture accidentée : des flammes apparaissent sous le capot ; le conducteur, conscient mais incapable de sortir seul, est facile à atteindre et rien ne gêne son dégagement.'
-  affirmation: Je le dégage du véhicule et l'éloigne du danger.
+  contexte: 'Voiture accidentée : des flammes apparaissent sous le capot. Le conducteur, conscient, ne parvient pas à sortir
+    seul ; je peux l’atteindre facilement.'
+  affirmation: Je le sors moi-même de la voiture, sans attendre les secours.
   verdict: vrai
-  pourquoi: 'Le dégagement d''urgence est l''exception à la règle « ne pas déplacer une victime » : danger réel, immédiat et non contrôlable (incendie, risque d''explosion ou de suraccident), victime qui ne peut s''en soustraire seule et facile à atteindre. Je l''éloigne vers un lieu sûr sans m''exposer moi-même, puis j''alerte.'
+  pourquoi: 'Danger réel, immédiat et non contrôlable (incendie), victime qui ne peut s’y soustraire seule : c’est le cas
+    du dégagement d’urgence, exception à la règle « ne pas déplacer un blessé ». Je l’éloigne vers un lieu sûr sans m’exposer
+    moi-même, puis j’alerte.'
   theme: A
   sous_theme: proteger
   source: "Sécurité civile, PSC juillet 2026, Dégagement d’urgence"
@@ -91,7 +96,9 @@
   contexte: Une victime ne répond pas et ne respire pas normalement ; un témoin apporte un DAE.
   affirmation: Le DAE peut décider qu’aucun choc n’est nécessaire ; je reprends alors immédiatement les compressions.
   verdict: vrai
-  pourquoi: 'C’est le DAE qui analyse le rythme et décide du choc : je l’allume dès qu’il arrive, sans retarder la réanimation, et personne ne touche la victime pendant l’analyse et le choc. « Pas de choc conseillé » ne signifie pas que la victime est réanimée : je poursuis les compressions jusqu’à ce que le DAE demande de les interrompre ou que les secours prennent le relais.'
+  pourquoi: 'C’est le DAE qui analyse le rythme et décide du choc : je l’allume dès qu’il arrive, sans retarder la réanimation.
+    « Pas de choc conseillé » ne signifie pas que la victime est réanimée : je poursuis les compressions jusqu’à ce que
+    le DAE demande de les interrompre ou que les secours prennent le relais.'
   theme: A
   sous_theme: secourir
   source: "Sécurité civile, PSC juillet 2026, p. 26–34, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"

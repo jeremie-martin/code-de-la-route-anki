@@ -1,16 +1,18 @@
 # A : Porter secours : protéger, alerter, secourir, obligations après un accident.
 - id: a-proteger-arret
-  question: Je suis le premier à arriver sur un accident, sur une route à double sens. Où et comment je m'arrête ?
-  reponse: Après le lieu de l’accident (pour ne pas le masquer), en sécurité sur l’accotement ; feux de détresse allumés et
-    gilet enfilé avant de sortir.
-  explication: Protéger, c’est éviter le suraccident. Je mets le gilet avant de sortir (obligatoire pour le conducteur, recommandé pour les passagers). Triangle à environ 30 m en amont, davantage avant un virage ou un sommet de côte si nécessaire, seulement si sa pose n’expose pas au danger. Tout le monde se met hors de la chaussée, derrière la glissière sur voie rapide.
+  question: Je suis le premier à arriver sur un accident, sur une route à double sens. Je m’arrête avant ou après les véhicules
+    accidentés, et où ?
+  reponse: 'Après l’accident, sur l’accotement, feux de détresse allumés : ma voiture ne masque pas l’accident à ceux qui
+    arrivent.'
+  explication: Protéger, c’est éviter le suraccident. Gilet enfilé avant de sortir, puis tout le monde hors de la chaussée
+    (derrière la glissière sur voie rapide). Le triangle se pose en amont, seulement si sa pose n’expose pas au danger.
   theme: A
   sous_theme: proteger
   source: "Code de la route, art. R416-19 ; Ornikar, Protéger la zone ; Croix-Rouge française"
   illustration:
     gen: protection_accident
     params: {}
-    legende: Arrêt après l’accident, sur l’accotement, feux de détresse ; triangle en amont (distance non à l’échelle).
+    legende: Triangle en amont de l’accident (distance non à l’échelle).
 - id: a-incendie-vehicule
   question: 'Un véhicule accidenté commence à prendre feu sous le capot : que fais-je ?'
   reponse: J’éloigne les personnes du danger et j’alerte le 18 ou le 112. Sur un feu naissant, j’utilise un extincteur
@@ -34,8 +36,8 @@
   question: J’appelle le 112 pour un accident. Quelles informations mon message doit-il donner ?
   reponse: Le lieu précis (route, sens et repère) ; la nature de l’accident ; le nombre et l’état des victimes ; les dangers
     particuliers (incendie, produits ou voie coupée).
-  explication: 'C’est d’après ce message que l’opérateur dimensionne les secours : rester précis et calme, s’identifier, répondre
-    aux questions et ne pas raccrocher le premier.'
+  explication: 'C’est d’après ce message que l’opérateur dimensionne les secours : rester précis et calme, s’identifier
+    et répondre à ses questions.'
   theme: A
   sous_theme: alerter
   source: "Croix-Rouge française, Alerter les secours ; securite-routiere.gouv.fr"
@@ -69,16 +71,17 @@
   prerequis: [a-evaluer-victime]
   question: 'Un adulte ne répond pas et ne respire pas normalement : pas de respiration, ou seulement des inspirations rares et bruyantes. Que fais-je ?'
   reponse: J’alerte, fais apporter un défibrillateur et commence immédiatement les compressions thoraciques ; je suis les instructions des secours et de l’appareil.
-  explication: 'J’alterne compressions et insufflations si je sais et peux les pratiquer ; sinon compressions continues.
-    Fréquence 100–120/min, profondeur 5–6 cm. Faire alerter et apporter le DAE ; suivre le guidage des secours.'
+  explication: J’alterne compressions et insufflations si je sais et peux les pratiquer ; sinon compressions continues.
+    Fréquence 100–120/min, profondeur 5–6 cm.
   theme: A
   sous_theme: secourir
   source: "Sécurité civile, PSC juillet 2026, Arrêt cardiaque, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf"
 - id: a-dae-utilisation
   question: Un témoin apporte un défibrillateur automatisé externe (DAE). Je l’ai allumé et posé les électrodes ; il annonce « analyse en cours ». Que dois-je faire ?
-  reponse: Je m'écarte et j'empêche quiconque de toucher la victime pendant l'analyse et le choc ; dès le choc délivré, ou annoncé comme non nécessaire, je reprends les compressions sans attendre.
-  explication: Le DAE (panneau vert, cœur et éclair) parle et guide pas à pas ; c'est lui qui décide s'il faut choquer. On
-    le laisse en place et allumé jusqu'à l'arrivée des secours.
+  reponse: 'Je m’écarte et je fais écarter tout le monde : personne ne touche la victime pendant l’analyse ni pendant le
+    choc.'
+  explication: Un contact peut fausser l’analyse ou exposer au choc électrique. Le DAE (panneau vert, cœur et éclair) parle
+    et guide pas à pas ; on le laisse en place et allumé jusqu’à l’arrivée des secours.
   theme: A
   sous_theme: secourir
   source: "Croix-Rouge française, Défibrillateur ; décret n° 2007-705"
@@ -151,11 +154,12 @@
   sous_theme: obligations
   source: Code de la route, art. R231-1, L234-3 et L235-2 ; Code pénal, art. 223-6
 - id: l-reperes-localisation
-  question: J’appelle les secours depuis une route. Une borne indique le numéro de route et un point kilométrique.
-    Qu’en faire ?
-  reponse: Je transmets ces repères et mon sens de circulation pour préciser ma position.
-  explication: Un nom de département ou d’aire peut aider mais ne remplace pas un repère précis ; ne pas me mettre
-    en danger pour aller le chercher.
+  question: J’appelle les secours depuis une route à chaussées séparées. J’ai donné le numéro de la route et le point kilométrique.
+    Que dois-je ajouter pour qu’ils me trouvent ?
+  reponse: 'Mon sens de circulation (la direction de la ville suivante) : le même point kilométrique existe sur les deux
+    chaussées.'
+  explication: Un nom de département ou d’aire aide sans remplacer un repère précis ; ne pas me mettre en danger pour aller
+    le lire.
   theme: A
   sous_theme: alerter
   source: "Sécurité routière, alerte : route, sens, localisation"
@@ -186,3 +190,13 @@
   theme: A
   sous_theme: proteger
   source: "Sécurité civile, PSC juillet 2026, Protection, https://www.securite-civile.interieur.gouv.fr/sites/securitecivile/files/medias/documents/2026-07/References-techniques-nationales-PSC_juillet-2026.pdf ; Code pénal, art. 223-6"
+- id: a-accrochage-degager
+  question: 'Accrochage sans blessé au milieu d’un carrefour, entre une autre voiture et moi. Que faisons-nous des deux
+    voitures avant de remplir le constat ?'
+  reponse: 'Après avoir noté ou photographié leur position, nous les rangeons hors de la circulation : sans blessé, rien
+    n’oblige à les laisser sur place, et elles exposeraient à un suraccident.'
+  explication: 'Chaque conducteur s’arrête sans créer de danger et donne son identité et son adresse. S’il y a un blessé,
+    j’alerte et je modifie les lieux le moins possible, dans la mesure compatible avec la sécurité de la circulation.'
+  theme: A
+  sous_theme: obligations
+  source: Code de la route, art. R231-1

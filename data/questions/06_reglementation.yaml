@@ -10,12 +10,12 @@
   sous_theme: documents
   source: Code de la route, art. R233-1 ; service-public.fr F2794
 - id: d-conduite-supervisee
-  question: À 19 ans, après ma formation en auto-école, je veux rouler avec un accompagnateur avant l’épreuve pratique. De
-    quelle filière s’agit-il, et que change-t-elle par rapport à l’AAC ?
-  reponse: 'La conduite supervisée : dès 18 ans après l’ETG, avec l’accord de l’école, sans durée ni kilométrage minimal ;
-    elle ne réduit pas le délai probatoire.'
-  explication: Elle peut aussi être proposée après un échec à l’épreuve pratique. L’accompagnateur et l’assureur doivent donner
-    leur accord, comme en AAC. La conduite encadrée est une troisième filière, réservée aux élèves en formation professionnelle
+  question: À 19 ans, après avoir réussi l’ETG, je roule avec un accompagnateur avant l’épreuve pratique (conduite supervisée).
+    Qu’est-ce que cette filière ne m’apporte pas, contrairement à l’AAC ?
+  reponse: 'La réduction du délai probatoire (2 ans au lieu de 3) : l’AAC la donne, la conduite supervisée non. Elle n’impose
+    ni durée ni kilométrage minimal.'
+  explication: Possible dès 18 ans, après l’ETG, avec l’accord de l’école, de l’accompagnateur et de l’assureur ; elle peut
+    aussi suivre un échec à l’épreuve pratique. La conduite encadrée est réservée aux élèves en formation professionnelle,
     dès 16 ans.
   theme: D
   sous_theme: permis
@@ -55,9 +55,19 @@
 - id: d-suspension-invalidation
   theme: D
   sous_theme: permis
-  question: Quelle différence entre suspension et invalidation pour solde de points nul ?
-  reponse: La suspension interdit temporairement de conduire ; l’invalidation pour solde nul fait perdre la
-    validité du permis et impose une procédure pour en obtenir un nouveau.
-  explication: La rétention est une mesure conservatoire immédiate des forces de l’ordre. L’annulation judiciaire
-    est décidée par un juge. Aucun de ces termes n’est synonyme d’un simple retrait de points.
+  question: 'Suspension ou invalidation pour solde de points nul : dans quel cas mon permis redevient-il valable à la fin
+    de la mesure, sans en obtenir un nouveau ?'
+  reponse: 'La suspension : c’est une interdiction temporaire de conduire, et le permis reste le mien. L’invalidation lui
+    fait perdre sa validité : il faut en obtenir un nouveau, après le délai d’interdiction.'
+  explication: La rétention est une mesure immédiate des forces de l’ordre, l’annulation une décision du juge ; aucun de
+    ces termes ne désigne un simple retrait de points.
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F14836 ; https://www.service-public.gouv.fr/particuliers/vosdroits/F1704"
+- id: d-conduite-malgre-suspension
+  question: 'Le préfet a suspendu mon permis et la décision m’a été notifiée. Je conduis quand même pour aller travailler.
+    Qu’est-ce que je risque ?'
+  reponse: 'Un délit : jusqu’à 2 ans d’emprisonnement et 4 500 € d’amende, et la perte de la moitié de mes points (6).'
+  explication: Peuvent s’y ajouter l’immobilisation et la confiscation du véhicule, une nouvelle suspension jusqu’à 3 ans,
+    voire l’annulation du permis. Conduire pendant une rétention ou après une annulation est le même délit.
+  theme: D
+  sous_theme: permis
+  source: Code de la route, art. L224-16

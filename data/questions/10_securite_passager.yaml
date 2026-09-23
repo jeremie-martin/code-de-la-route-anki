@@ -1,8 +1,9 @@
 - id: s-ceinture-obligation
-  question: Qui doit porter la ceinture dans la voiture, et qui répond du non-port ?
-  reponse: 'Tous les occupants, à l’avant comme à l’arrière : un passager majeur répond de lui-même ; le conducteur répond
-    de chaque passager de moins de 18 ans.'
-  explication: "Conducteur non attaché : 135 € et 3 points ; passager majeur : 135 € pour lui, sans points ; passager mineur non attaché : 135 € pour le conducteur, sans points. Chaque passager occupe sa propre place assise (R412-1-1). R412-1 II prévoit des dispenses limitées : morphologie inadaptée, certificat médical, taxi en service…"
+  question: 'Contrôle routier : ni moi, au volant, ni mon passager de 30 ans ne sommes attachés. Qui perd des points ?'
+  reponse: 'Moi seul : 135 € et 3 points. Mon passager majeur paie 135 € pour lui-même, sans retrait de points.'
+  explication: 'La ceinture est due à toutes les places, avant comme arrière. Pour un passager de moins de 18 ans, c’est
+    le conducteur qui paie l’amende, sans points. R412-1 II prévoit des dispenses limitées : morphologie inadaptée, certificat
+    médical, taxi en service…'
   theme: S
   sous_theme: passagers
   source: Code de la route, art. R412-1, R412-1-1 et R412-2
@@ -15,18 +16,16 @@
   sous_theme: passagers
   source: "securite-routiere.gouv.fr, La ceinture de sécurité"
 - id: s-femme-enceinte
-  question: Une femme enceinte doit-elle porter la ceinture ?
-  reponse: 'Oui : sangle basse sous le ventre (sur les hanches), sangle haute entre les seins ; c''est la meilleure protection
-    du bébé comme de la mère.'
-  explication: 'La grossesse ne dispense jamais de ceinture : c’est la meilleure protection du fœtus. Sangle basse
-    sous le ventre, sur les hanches ; sangle haute entre les seins, jamais sur l’abdomen. Une dispense relève d’un
-    certificat médical.'
+  question: 'Une femme enceinte boucle sa ceinture : par où doit passer chaque sangle ?'
+  reponse: Sangle basse sous le ventre, sur les hanches ; sangle haute entre les seins, à côté du ventre.
+  explication: 'La grossesse ne dispense pas de la ceinture, sauf certificat médical : bien placée, c’est la meilleure protection
+    du fœtus comme de la mère. Aucune sangle sur l’abdomen.'
   theme: S
   sous_theme: passagers
   source: "securite-routiere.gouv.fr, La ceinture de sécurité"
   illustration:
     gen: ceinture
-    legende: Sangle basse sous le ventre, sur les hanches ; sangle haute entre les seins, à côté du ventre.
+    legende: Ceinture bien placée pendant la grossesse.
     params:
       variante: enceinte
 - id: s-airbag-distance
@@ -48,14 +47,14 @@
   sous_theme: passagers
   source: Code de la route, art. R412-6 ; securite-routiere.gouv.fr
 - id: s-surnombre
-  question: Peut-on transporter plus de passagers qu'il n'y a de places assises ?
-  reponse: 'Non : une personne par siège, dans la limite du nombre inscrit sur la carte grise (repère S.1) ; un enfant compte
-    pour une place.'
-  explication: Le surnombre est une contravention de 4e classe et coûte 3 points au conducteur (R412-1-1). Personne dans le
-    coffre, dans une caravane en circulation ou dans la zone de chargement d'un utilitaire.
+  question: Où lire le nombre maximal de personnes que ma voiture peut transporter ?
+  reponse: 'Sur le certificat d’immatriculation, rubrique S.1 : nombre de places assises, conducteur compris.'
+  explication: Une personne par place, un enfant compte pour une place. Le surnombre est une contravention de 4e classe
+    et coûte 3 points au conducteur (R412-1-1).
   theme: S
   sous_theme: passagers
-  source: "Code de la route, art. R412-1-1 ; Stych, Installation des passagers"
+  source: Code de la route, art. R412-1-1 ; service-public.fr, Certificat d’immatriculation (rubrique S.1) ; Stych, Installation
+    des passagers
 - id: s-enfant-moins-10-ans
   question: Dans quels cas un enfant de moins de 10 ans peut-il voyager sans dispositif de retenue homologué ?
   reponse: Si sa morphologie est adaptée au port de la ceinture, sur certificat médical d’exemption, ou en taxi et en transport en commun.
@@ -76,13 +75,12 @@
     params: {}
     legende: Dos à la route, la tête du bébé est du côté de la planche de bord, là où l’airbag se déploie.
 - id: s-groupes-sieges
-  question: Comment choisit-on un siège enfant ?
-  reponse: Un siège homologué adapté à la taille et au poids de l’enfant, compatible avec la voiture et la place choisie.
-    Je vérifie l’étiquette et les notices du siège et du véhicule pour l’installer correctement.
-  explication: 'R129 classe les sièges par taille, avec une masse maximale à respecter lorsqu’elle est indiquée ;
-    l’ancienne norme R44 les classe par poids. R129 ne signifie pas toujours fixation Isofix : certains modèles
-    s’installent avec la ceinture. La fixation autorisée dépend du siège. Les R44-03 et R44-04 déjà possédés
-    restent utilisables ; les sièges R44 ne sont plus vendus neufs depuis septembre 2024.'
+  question: Un siège enfant est homologué R129 (i-Size). Sur quel critère de l’enfant son étiquette se lit-elle ?
+  reponse: Sa taille, en centimètres, avec une masse maximale quand elle est indiquée ; l’ancienne norme R44 classait les
+    sièges par poids.
+  explication: 'R129 ne signifie pas toujours Isofix : certains modèles s’installent avec la ceinture. Les R44-03 et R44-04
+    déjà possédés restent utilisables ; les R44 ne sont plus vendus neufs depuis septembre 2024. Je vérifie la compatibilité
+    avec la voiture et la place choisie.'
   theme: S
   sous_theme: enfants
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F628 ; AWSR, https://www.awsr.be/securite-routiere/sieges-auto/"
@@ -126,11 +124,11 @@
       depasse: 2
     legende: 'À l’extrémité : dispositif réfléchissant rouge, et feu rouge la nuit.'
 - id: s-coffre-toit
-  question: Quelles conséquences un coffre de toit (ou une galerie) a-t-il sur la conduite ?
-  reponse: Prise au vent et consommation en hausse, centre de gravité plus haut ; je respecte la charge maximale et je vérifie
-    la hauteur totale.
-  explication: 'L''effet varie avec le coffre, la charge et la vitesse : je retire les accessoires inutilisés et j''adapte
-    l''allure en virage et par vent latéral.'
+  question: Coffre de toit monté, j’arrive à l’entrée d’un parking souterrain dont la hauteur est limitée. Que dois-je vérifier
+    ?
+  reponse: La hauteur totale de ma voiture avec le coffre, à comparer à la hauteur maximale affichée à l’entrée.
+  explication: Le coffre ajoute une hauteur qu’on oublie une fois au volant. Je respecte aussi la charge maximale de toit
+    indiquée par la notice.
   theme: S
   sous_theme: chargement
   source: "ADEME, Éco-conduite ; securite-routiere.gouv.fr"

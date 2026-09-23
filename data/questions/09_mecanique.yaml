@@ -1,24 +1,21 @@
 - id: m-voyants-couleurs
   question: Que signifient les couleurs des voyants du tableau de bord ?
-  reponse: 'Rouge : danger ou arrêt nécessaire ; orange : anomalie à contrôler ; vert ou bleu : fonction active. Le symbole
-    décide, pas la couleur seule.'
-  explication: 'Rouge : j’arrête dès que c’est sûr (huile, température, frein, charge). Orange : je lis le symbole
-    ; selon le cas je poursuis en adaptant ma conduite ou je m’arrête en sécurité (perte de pression des pneus, freinage
-    anormal), et je fais contrôler. Vert ou bleu : fonction en service. Certains rouges rappellent seulement une ceinture
-    ou le frein de stationnement.'
+  reponse: 'Rouge : danger ou arrêt nécessaire ; orange : anomalie à contrôler ; vert ou bleu : fonction en service.'
+  explication: La couleur annonce le degré ; le symbole et le message précisent la conduite à tenir. Certains rouges ne
+    font que rappeler une ceinture non bouclée ou le frein de stationnement serré.
   theme: M
   sous_theme: tableau_de_bord
   source: "Codes Rousseau, Les voyants ; Ornikar, Voyants lumineux"
   debut: true
   comparaisons:
   - ref: voyant-huile
-    legende: 'Rouge : danger ; je m’arrête dès que c’est sûr.'
+    legende: Pression d’huile.
   - ref: voyant-moteur
-    legende: 'Orange : anomalie ; je lis le symbole et fais contrôler.'
+    legende: Anomalie moteur.
   - ref: voyant-croisement
-    legende: 'Vert : fonction en service.'
+    legende: Feux de croisement.
   - ref: voyant-route
-    legende: 'Bleu : feux de route allumés.'
+    legende: Feux de route.
 - id: m-pneus-usure-1-6
   question: Sur une voiture, quelle profondeur minimale doivent garder les rainures principales des pneus,
     et comment repérer cette limite ?
@@ -58,12 +55,11 @@
     params: {}
     legende: 'Jauge essuyée, réinsérée puis retirée : l’huile s’arrête entre min et max.'
 - id: m-liquide-refroidissement
-  question: Quelle précaution essentielle avec le liquide de refroidissement ?
-  reponse: Ne jamais ouvrir le vase d’expansion moteur chaud (liquide sous pression, brûlures graves) ; contrôler à froid,
-    entre mini et maxi, avec un liquide antigel adapté.
-  explication: 'Le circuit est sous pression tant qu’il est chaud : ouvrir projette du liquide bouillant. En cas d’alerte
-    de surchauffe, je m’arrête, je coupe le moteur et j’attends le refroidissement complet avant tout contrôle. Une
-    baisse répétée du niveau appelle un contrôle du circuit.'
+  question: Quand et où contrôler le niveau du liquide de refroidissement ?
+  reponse: 'Moteur froid, sur le vase d’expansion : le niveau doit être entre mini et maxi ; l’appoint se fait avec le liquide
+    antigel prévu par la notice.'
+  explication: 'Chaud, le circuit est sous pression : l’ouvrir projette du liquide bouillant. Une baisse répétée du niveau
+    appelle un contrôle du circuit.'
   theme: M
   sous_theme: entretien
   source: "Ornikar, Liquide de refroidissement"
@@ -88,10 +84,10 @@
   source: "Volvo, Freins de route, rubrique Freinage sur route mouillée, https://www.volvocars.com/fr/support/car/v60-cross-country/15w17/article/b7763713f78f074bc0a801e8017136c8/"
 - id: m-plaquettes-usure
   question: Quels signes annoncent des plaquettes de frein usées ?
-  reponse: 'Un témoin d''usure au tableau de bord, un bruit métallique au freinage ou une baisse du liquide de frein
-    : contrôle sans attendre.'
-  explication: 'Une baisse du liquide accompagne l''usure des plaquettes, mais peut aussi signaler une fuite : on
-    fait contrôler, on ne se contente pas de remettre du liquide.'
+  reponse: 'Un témoin d’usure qui s’allume au tableau de bord, ou un bruit métallique au freinage : je fais contrôler sans
+    attendre.'
+  explication: 'Le niveau de liquide de frein baisse aussi avec l’usure des plaquettes, mais cette baisse peut venir d’une
+    fuite : elle se juge à part.'
   theme: M
   sous_theme: entretien
   source: "Ornikar, Plaquettes et amortisseurs ; Stych, Pannes et dysfonctionnements"
@@ -131,9 +127,7 @@
 - id: m-boite-auto-positions
   question: Que signifient les positions P, R, N et D d'une boîte automatique ?
   reponse: P bloque la transmission pour stationner ; R est la marche arrière ; N le point mort ; D la marche avant.
-  explication: 'On démarre en P ou N, pied sur le frein ; on n''engage P ou R qu''à l''arrêt complet, on n''utilise jamais
-    N en descente (plus de frein moteur) et le pied gauche reste au repos. Permis BVA : code 78, passerelle de 7 h vers la
-    boîte manuelle.'
+  explication: On démarre en P ou N, pied sur le frein ; le pied gauche reste au repos.
   theme: M
   sous_theme: entretien
   source: "Stych, La boîte automatique ; service-public.fr F2828"
@@ -188,9 +182,8 @@
   question: À quoi sert la molette de réglage des feux (0 à 3) ?
   reponse: À adapter la hauteur du faisceau à la charge pour ne pas éblouir, à la position prescrite par la notice (certains
     véhicules corrigent seuls).
-  explication: 'Plus la charge à l’arrière est importante, plus le numéro à sélectionner est élevé (0 = véhicule à
-    vide) : la charge relève l’avant et le faisceau éblouirait. Le tableau exact est dans la notice ; certains véhicules
-    corrigent seuls.'
+  explication: 'Plus la charge à l’arrière est importante, plus le numéro est élevé (0 = véhicule à vide) : la charge relève
+    l’avant, et le faisceau éblouirait.'
   theme: M
   sous_theme: feux
   source: "Sécurité routière, Exemples de nouvelles questions (Q1) ; Ornikar, Réglage des feux"

@@ -32,7 +32,7 @@
 - id: d-points-delit-cumul
   texte: Pour plusieurs infractions constatées en même temps, le retrait de points est plafonné à {{c1::8 points}} ; seul
     le cumul alcool + stupéfiants peut en retirer 9.
-  explication: 'Le retrait de 9 points pour le cumul alcool + stupéfiants est prévu par L235-1. Tous les délits ne retirent pas six points : le défaut d’assurance et la conduite sans permis n’en retirent
+  explication: 'Tous les délits ne retirent pas six points : le défaut d’assurance et la conduite sans permis n’en retirent
     aucun.'
   theme: D
   sous_theme: points
@@ -200,12 +200,13 @@
   sous_theme: sanctions
   source: Code pénal, art. 434-10 ; Code de la route, art. L231-1
 - id: d-sans-permis-sans-assurance
-  explication: 'L’assurance minimale obligatoire est la responsabilité civile. Le FGAO peut indemniser les victimes puis réclamer
-    les sommes au responsable non assuré : une dette considérable peut s’ajouter aux sanctions pénales.'
+  explication: 'Le Fonds protège les victimes, pas le responsable : cette dette peut atteindre des montants considérables
+    et s’ajoute aux sanctions du délit de défaut d’assurance.'
   theme: D
   sous_theme: sanctions
-  source: Code de la route, art. L221-2 et L324-2 ; Code des assurances, art. L211-1
-  texte: Conduire sans le permis requis ou sans assurance constitue un {{c1::délit}}.
+  source: Code de la route, art. L221-2 et L324-2 ; Code des assurances, art. L211-1 ; Fonds de garantie, Nos missions (https://www.fondsdegarantie.fr/nos-missions)
+  texte: 'Un conducteur non assuré cause un accident : le Fonds de garantie des assurances obligatoires (FGAO) indemnise
+    les victimes, puis {{c1::lui réclame les sommes versées}}.'
 - id: d-refus-obtemperer
   texte: Refuser la sommation de s’arrêter d’un agent habilité constitue un {{c1::délit}} (refus d’obtempérer), même sans
     autre infraction.
@@ -224,9 +225,9 @@
   - Un dépassement dangereux entraîne un retrait de {{c1::3 points}}.
   - Hors exception autorisée, chevaucher une ligne continue entraîne le retrait de {{c2::1 point}}.
 - id: d-detecteur-radar
-  texte: 'Détenir, transporter ou utiliser un détecteur ou brouilleur de radars : contravention de 5e classe, {{c1::6 points}},
-    confiscation de l''appareil et éventuellement du véhicule.'
-  explication: Les avertisseurs de « zones de danger » (Coyote, Waze) restent autorisés.
+  texte: 'Entre un avertisseur de zones de danger (application d’aide à la conduite) et un détecteur de radars, seul {{c1::le
+    détecteur (ou brouilleur) de radars}} est interdit : 5e classe, 6 points, confiscation de l’appareil.'
+  explication: La confiscation peut viser aussi le véhicule.
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R413-15
@@ -289,11 +290,13 @@
   rappels:
   - Après un accident, le délai usuel pour déclarer le sinistre à l’assureur est {{c1::5 jours ouvrés}}.
 - id: d-equipements-obligatoires
-  explication: 'Le triangle présignale un véhicule immobilisé dangereux : environ 30 m en amont, davantage si nécessaire, sauf si le poser expose manifestement le conducteur au danger. L’éthylotest n’est plus obligatoire à bord depuis 2020.'
+  explication: 'Le triangle présignale un véhicule immobilisé dangereux : environ 30 m en amont, davantage si nécessaire,
+    sauf si le poser expose manifestement le conducteur au danger.'
   theme: D
   sous_theme: documents
   source: Code de la route, art. R416-19 ; décret n° 2020-605 ; service-public.fr F19459
-  texte: 'Équipements obligatoires à bord d’une voiture : un {{c1::gilet de haute visibilité}} à portée de main et un triangle de présignalisation.'
+  texte: 'Équipements de sécurité obligatoires à bord d’une voiture : {{c1::un gilet de haute visibilité et un triangle
+    de présignalisation}} ; l’éthylotest ne l’est plus depuis 2020.'
 - id: d-vitres-teintees
   texte: Le pare-brise et les vitres latérales avant doivent laisser passer au moins {{c1::70 %}} de la lumière.
   explication: 'Infraction : 135 € et 3 points, immobilisation possible. Les vitres arrière peuvent être teintées librement.
@@ -323,7 +326,7 @@
   theme: D
   sous_theme: documents
   rappels:
-  - Le PTAC est la masse maximale autorisée du véhicule {{c1::chargé}}, passagers et bagages compris.
+  - La masse maximale autorisée du véhicule chargé, passagers et bagages compris, est le {{c1::PTAC}}.
   - La charge utile est la différence entre le PTAC et le {{c2::poids à vide}}.
   - La masse maximale autorisée de l'ensemble véhicule + remorque est le {{c3::PTRA}}.
   explication: 'Sur la carte grise : PTAC en F.2, PTRA en F.3, poids à vide en G.1 (à lire, pas à apprendre). Dépasser le PTAC allonge la distance d''arrêt, dégrade la tenue de route et expose à une amende et à l''immobilisation. Pour le permis B, ce sont les PTAC, pas les masses réelles, qui se comparent aux 3 500 kg.'

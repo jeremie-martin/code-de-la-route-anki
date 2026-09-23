@@ -43,9 +43,8 @@
     sec), je ne dépasse pas {{c2::100 km/h}}.
   - Il pleut. Sur une route de campagne relevée à 90 par temps sec, je ne dépasse pas {{c3::80 km/h}}.
 - id: l-vitesse-visibilite-50
-  explication: R413-4 fixe un plafond de vitesse, pas un intervalle universel de 50 m. Garder au moins deux secondes et augmenter
-    la marge selon les conditions ; rester capable de s’arrêter dans la distance visible. Le seuil légal est une visibilité
-    inférieure à 50 m.
+  explication: 'C’est un plafond, pas une allure conseillée : je dois pouvoir m’arrêter dans la distance que je vois, souvent
+    bien en dessous de 50 km/h (R413-17).'
   theme: L
   sous_theme: vitesse
   source: "R413-4 ; R412-12 ; R413-17, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
@@ -109,9 +108,8 @@
       - 356
     legende: 'Les 5 m en amont du passage restent libres : piétons et conducteurs s’y voient.'
 - id: l-stationnement-alterne
-  explication: 'Sauf arrêté local différent, le changement de côté se fait le soir, entre 20 h 30 et 21 h. Je lis les dates
-    d’interdiction sur les panneaux : du 1er au 15, ou du 16 à la fin du mois. Une prescription de zone peut aussi imposer
-    ce régime.'
+  explication: 'Je lis les dates d’interdiction sur les panneaux : du 1er au 15, ou du 16 à la fin du mois. Un arrêté local
+    peut fixer d’autres horaires, et une prescription de zone peut imposer ce régime.'
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-2
@@ -184,20 +182,18 @@
     params: {}
     legende: 'Chevaucher : les roues passent sur la ligne. Franchir : le véhicule passe entièrement de l’autre côté.'
 - id: l-croisement-largeur
-  explication: 'Exception : les transports en commun en agglomération. En montagne, c’est le descendant qui s’arrête le premier
-    ; pour reculer : véhicule seul avant ensemble, léger avant lourd, puis descendant sauf si le refuge est plus accessible
-    au montant.'
+  explication: 'Il doit réduire sa vitesse et, au besoin, s’arrêter ou se garer pour laisser passer. Exception : les transports
+    en commun en agglomération.'
   theme: L
   sous_theme: croisement
-  source: Code de la route, R414-2 et R414-3
+  source: Code de la route, R414-2
   rappels:
   - Sur chaussée étroite, un véhicule de plus de {{c1::2 m}} de large (ou de plus de 7 m de long) doit faciliter le
     croisement avec un plus petit.
 - id: l-depasse-serrer-droite
   texte: Quand on est dépassé, on serre à droite sans accélérer ; accélérer pendant qu'on est dépassé coûte 135 € et {{c1::2
     points}}.
-  explication: Le dépassement se fait à gauche, sauf pour dépasser un véhicule qui a signalé qu'il tourne à gauche, ou un
-    tramway (par la droite si la place suffit).
+  explication: Je ne me déporte pas non plus à gauche ; au besoin, je ralentis pour faciliter son rabattement.
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-6 et R414-16

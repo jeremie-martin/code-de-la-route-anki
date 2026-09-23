@@ -7,11 +7,10 @@
   nom: Obligation de tourner à droite avant le panneau
   signification: Le conducteur doit tourner à droite avant le panneau (le panneau est implanté en face, sur l'îlot ou le mur de fond).
   conduite: Tourner à droite au niveau du panneau ; clignotant, contrôle rétroviseur droit.
-  complement: Placé en face de l'usager, au-delà de l'endroit où il doit tourner.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Flèche horizontale : je tourne avant le panneau. Flèche coudée : je tourne à la prochaine intersection.'
+  piege: 'Flèche sans coude : je tourne avant le panneau, implanté en face de moi, au-delà de l’endroit où je tourne.'
   comparaisons:
   - ref: b21c1
     legende: 'Flèche coudée : à la prochaine intersection.'
@@ -22,7 +21,7 @@
     commons: France road sign B21-2.svg
   nom: Obligation de tourner à gauche avant le panneau
   signification: Le conducteur doit tourner à gauche avant le panneau.
-  conduite: Tourner à gauche au niveau du panneau.
+  conduite: Je me place à gauche à l’avance et je cède aux véhicules d’en face.
   complement: Placé en face de l'usager, au-delà de l'endroit où il doit tourner.
   theme: L
   sous_theme: panneaux
@@ -34,7 +33,6 @@
     commons: France road sign B21a1.svg
   nom: Contournement obligatoire par la droite
   signification: Obligation de contourner par la droite l'obstacle ou l'îlot devant lequel le panneau est placé (refuge, terre-plein, îlot central de giratoire, chantier).
-  conduite: Passer à droite du panneau/obstacle.
   complement: Placé sur l’obstacle lui-même (tête d’îlot, entrée de giratoire, refuge).
   theme: L
   sous_theme: panneaux
@@ -46,7 +44,6 @@
     commons: France road sign B21a2.svg
   nom: Contournement obligatoire par la gauche
   signification: Obligation de contourner par la gauche l'obstacle devant lequel le panneau est placé.
-  conduite: Passer à gauche du panneau/obstacle.
   complement: Placé sur l’obstacle lui-même.
   theme: L
   sous_theme: panneaux
@@ -60,13 +57,13 @@
   signification: À la prochaine intersection, le conducteur doit continuer tout droit (interdiction de tourner à droite ou à gauche).
   conduite: Rester dans la voie qui va tout droit.
   complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
-  piege: Le rond bleu impose d’aller tout droit. La flèche vers le haut dans un carré bleu indique un sens unique, sans imposer d’aller tout droit à chaque intersection.
+  piege: 'L’obligation cesse après cette intersection : à la suivante, je peux de nouveau tourner.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: c12
-    legende: 'Carré bleu : sens unique.'
+    legende: 'Carré bleu : sens unique, sans obligation de direction.'
 - id: b21c1
   type: panneau
   code: B21c1
@@ -98,7 +95,6 @@
     commons: France road sign B21d1.svg
   nom: 'Directions obligatoires à la prochaine intersection : tout droit ou à droite'
   signification: À la prochaine intersection, le conducteur doit aller tout droit ou tourner à droite (interdiction de tourner à gauche).
-  conduite: Choisir entre tout droit et à droite.
   complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
   theme: L
   sous_theme: panneaux
@@ -110,7 +106,6 @@
     commons: France road sign B21d2.svg
   nom: 'Directions obligatoires à la prochaine intersection : tout droit ou à gauche'
   signification: À la prochaine intersection, le conducteur doit aller tout droit ou tourner à gauche (interdiction de tourner à droite).
-  conduite: Choisir entre tout droit et à gauche.
   complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
   theme: L
   sous_theme: panneaux
@@ -122,7 +117,6 @@
     commons: France road sign B21e.svg
   nom: 'Directions obligatoires à la prochaine intersection : à droite ou à gauche'
   signification: À la prochaine intersection, tourner à droite ou à gauche ; interdit d'aller tout droit.
-  conduite: Choisir entre droite et gauche ; ne pas continuer tout droit.
   complement: Placé avant l'intersection, pas à l'endroit où l'on tourne.
   theme: L
   sous_theme: panneaux
@@ -139,10 +133,10 @@
   theme: L
   sous_theme: panneaux
   source: Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  piege: Pour les cyclistes, le rond bleu impose la piste ; le carré bleu la conseille.
+  piege: Le cycliste ne peut plus rouler sur la chaussée à côté de la piste.
   comparaisons:
   - ref: c113
-    legende: 'Carré bleu : conseillé aux cyclistes.'
+    legende: 'Carré bleu : conseillée, sans obligation.'
 - id: b22b
   type: panneau
   code: B22b

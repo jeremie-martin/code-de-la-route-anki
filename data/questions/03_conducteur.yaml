@@ -18,17 +18,20 @@
   sous_theme: perception
   source: "Sécurité routière, Exemples de nouvelles questions (Q20)"
 - id: c-angle-mort-definition
-  question: Qu'est-ce que l'angle mort et comment le contrôle-t-on ?
-  reponse: La zone latérale arrière invisible dans les rétroviseurs ; on la contrôle d’un regard direct par-dessus l’épaule,
-    dernier geste avant de se déporter.
-  explication: 'Un deux-roues tient entièrement dans l''angle mort. Le contrôle reste bref (repère : un coup d’œil) pour
-    ne pas perdre la route de vue ; si un usager s''y trouve, on ne commence pas la manœuvre.'
+  question: Je vais me déporter sur la voie de gauche. Où un usager peut-il se trouver sans apparaître dans mes rétroviseurs
+    ?
+  reponse: 'Dans l’angle mort : la zone latérale arrière, de chaque côté, que les rétroviseurs ne montrent pas ; un deux-roues
+    y tient entièrement.'
+  explication: 'Seul un regard direct par-dessus l’épaule la contrôle, dernier geste avant de se déporter. Les zones dessinées
+    sont indicatives : elles varient selon le véhicule et le réglage des rétroviseurs.'
   theme: C
   sous_theme: perception
   source: "REMC ; securite-routiere.gouv.fr, Les angles morts"
-  illustration:
+  image:
     gen: angles_morts
-    legende: 'Zones indicatives : elles varient selon le véhicule et le réglage des rétroviseurs.'
+    verso: true
+    params:
+      answer_on_back: true
 - id: c-ordre-controles-changement-file
   question: Sur une route à deux voies dans mon sens, je veux passer sur la voie de gauche. Dans quel ordre est-ce
     que je procède ?
@@ -56,17 +59,16 @@
   sous_theme: vigilance
   source: "Sécurité routière, Exemples de nouvelles questions (Q9)"
 - id: c-enfant-masque
-  question: Devant une école ou une rangée de voitures stationnées, quel risque spécifique lié aux enfants faut-il anticiper
-    ?
+  question: Je longe cette file de voitures garées devant une école, à la sortie des classes. Qu’est-ce que j’anticipe ?
   reponse: 'Un enfant, plus petit qu’un capot et masqué par les voitures, peut surgir entre deux véhicules : je ralentis fortement,
     prêt à m’arrêter.'
-  explication: 'Sortie d’école, adultes qui attendent, car scolaire : ces indices imposent d’arriver déjà lent. Un exemple
-    public de question (2023) valide « un enfant peut être masqué par des véhicules en stationnement ».'
+  explication: 'Sortie d’école, adultes qui attendent, car scolaire : ces indices imposent d’arriver déjà lent.'
   theme: C
   sous_theme: vigilance
   source: "Sécurité routière, Exemples de nouvelles questions (Q3)"
-  illustration:
+  image:
     gen: rue_stationnement
+    verso: true
     params:
       parked:
       - 40
@@ -74,7 +76,7 @@
       - 300
       child: 225
       me: 330
-    legende: Plus petit qu’un capot, l’enfant entre deux voitures reste caché jusqu’au dernier moment (en médaillon, vu de côté).
+      answer_on_back: true
 - id: c-trottinette-vulnerable
   question: Pourquoi un usager de trottinette électrique est-il particulièrement vulnérable ?
   reponse: Équilibre précaire (petites roues, freinage inégal) et faible gabarit peu détectable, surtout dans les
@@ -163,10 +165,10 @@
       me: 330
     legende: Je garde la place d’une portière qui s’ouvre.
 - id: c-routine-monotonie
-  question: Pourquoi les trajets quotidiens et les longues lignes droites sont-ils dangereux pour la vigilance ?
-  reponse: 'La familiarité fait baisser l’attention : on manque un changement de signalisation, un piéton ou un obstacle inhabituel.'
-  explication: Continuer à observer activement la route connue et ses intersections. Une statistique sur la proximité du domicile
-    ne permet pas d’évaluer le risque de la scène.
+  question: Je fais ce trajet tous les jours. Pourquoi mon risque de manquer un danger y augmente-t-il ?
+  reponse: 'L’habitude fait baisser l’attention : je conduis sans vraiment observer et je manque un changement (signalisation,
+    travaux, piéton ou obstacle inhabituel).'
+  explication: Observer activement la route connue et ses intersections, comme un trajet nouveau.
   theme: C
   sous_theme: vigilance
   source: "securite-routiere.gouv.fr, Port de la ceinture (trajets courts) ; Ornikar, Vigilance"
@@ -179,11 +181,10 @@
   sous_theme: deficiences
   source: "Sécurité routière, https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf"
 - id: c-fatigue-remedes-faux
-  question: 'Je suis somnolent au volant. Café, fenêtre ouverte, musique forte : que vaut chacun de ces remèdes ?'
-  reponse: 'Rien de durable : la seule solution est de m''arrêter en sécurité pour dormir, et de ne repartir qu''une
-    fois réellement apte.'
-  explication: Une courte sieste peut aider mais ne garantit pas la récupération. Une fenêtre ouverte ou la musique ne remplace
-    pas le sommeil. Le café ne justifie pas de continuer à lutter contre l’endormissement.
+  question: 'Je suis somnolent au volant. Café, fenêtre ouverte ou musique forte : que faire ?'
+  reponse: 'M’arrêter en sécurité pour dormir, et ne repartir qu’une fois réellement apte : aucun de ces moyens ne supprime
+    le besoin de sommeil.'
+  explication: Une courte sieste peut aider mais ne garantit pas la récupération.
   theme: C
   sous_theme: deficiences
   source: "Sécurité routière, https://www.securite-routiere.gouv.fr/sites/default/files/2023-05/sets_fatigue.pdf"
@@ -205,11 +206,10 @@
   sous_theme: deficiences
   source: Code de la route, art. R412-6-1 et L224-1
 - id: c-cannabis-effets
-  question: Quels effets le cannabis a-t-il sur la conduite, et combien de temps durent-ils ?
-  reponse: Temps de réaction allongé, somnolence, trajectoire et distances mal maîtrisées ; les effets durent plusieurs heures,
-    la détection bien plus longtemps.
-  explication: Il est interdit de conduire après usage. Le dépistage et la vérification servent à établir cet usage ; ils
-    ne mesurent pas une aptitude à conduire. Les effets peuvent se cumuler avec ceux de l’alcool ou de médicaments.
+  question: Quels effets le cannabis a-t-il sur la conduite ?
+  reponse: Temps de réaction allongé, somnolence, trajectoire et distances mal maîtrisées, pendant plusieurs heures.
+  explication: Ces effets se cumulent avec ceux de l’alcool ou de médicaments. Conduire après usage est interdit quel que
+    soit le ressenti, et la détection dure bien plus longtemps que les effets.
   theme: C
   sous_theme: deficiences
   source: Service Public, F2886 ; Drogues Info Service, Durée de positivité d’un test salivaire
@@ -226,8 +226,7 @@
   question: Mes passagers m'incitent à rouler plus vite ou à « passer à l'orange ». Que faire ?
   reponse: 'Refuser et garder mon allure : le conducteur est seul responsable ; la pression des passagers est un facteur reconnu
     de prise de risque.'
-  explication: 'Le disque A signale aux autres un conducteur novice et réduit l''impatience des suiveurs. Refuser aussi de
-    monter avec un conducteur qui a bu : désigner un « Sam ».'
+  explication: Céder met aussi mes passagers en danger ; si la pression continue, je m’arrête et je le dis clairement.
   theme: C
   sous_theme: deficiences
   source: "securite-routiere.gouv.fr, Conseils aux conducteurs novices"
@@ -306,11 +305,12 @@
 - id: c-occlusion-pieton
   theme: C
   sous_theme: vigilance
-  question: Chaussée à deux voies dans mon sens. Le véhicule blanc est arrêté ; la voie à sa gauche est libre. Puis-je le dépasser sans voir derrière lui ?
-  reponse: 'Non : je dois d’abord m’assurer qu’aucun piéton n’est engagé. Je ralentis, prêt à m’arrêter avant
-    le passage ; « je ne vois personne » ne signifie pas « personne ne traverse ».'
-  explication: Le véhicule arrêté peut cacher un piéton. R414-5 impose cette vérification avant de dépasser à l’approche
-    du passage ; je cède aussi à celui qui manifeste clairement l’intention de traverser (R415-11).
+  question: Chaussée à deux voies dans mon sens. Le véhicule blanc est arrêté ; la voie à sa gauche est libre. Que fais-je
+    ?
+  reponse: 'Je ralentis, prêt à m’arrêter avant le passage : je ne dépasse le véhicule arrêté qu’après m’être assuré qu’aucun
+    piéton n’est engagé devant lui.'
+  explication: 'Le véhicule arrêté peut cacher un piéton : « je ne vois personne » ne signifie pas « personne ne traverse
+    ». R414-5 impose cette vérification ; je cède aussi à celui qui manifeste clairement l’intention de traverser (R415-11).'
   source: "Code de la route, R414-5, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006842217 ; R415-11"
   image:
     gen: road
@@ -332,6 +332,8 @@
       extras:
       - kind: passage_pieton
         y: 72
+      answer_on_back: true
+    verso: true
 - id: c-distance-obstacle-exercice
   theme: C
   sous_theme: applications

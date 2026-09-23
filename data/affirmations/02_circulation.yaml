@@ -19,7 +19,7 @@
   source: Code de la route, art. R415-5 et R110-2
   comparaisons:
   - ref: b30
-    legende: 'Entrée de zone 30 : la vitesse change, les priorités restent.'
+    legende: Entrée de zone 30.
 - id: aff-l-priorite-droite-rue-etroite
   contexte: Aucun panneau ni feu ; une ruelle débouche à ma droite, sur l’avenue où je roule.
   affirmation: Ma voie étant nettement plus importante, je passe avant le véhicule qui sort de la ruelle.
@@ -74,9 +74,8 @@
   contexte: Ce panneau est implanté à l’intersection ; la route transversale est libre.
   affirmation: Je peux m'engager sans marquer l'arrêt, puisque la route est libre.
   verdict: vrai
-  pourquoi: 'Le cédez-le-passage n''impose que de laisser passer les usagers de la route abordée : si elle est libre,
-    je m''engage en ralentissant, prêt à m''arrêter. C''est le STOP (octogone) qui impose l''arrêt complet même sans
-    trafic.'
+  pourquoi: 'Le cédez-le-passage n’impose que de laisser passer les usagers de la route abordée : si elle est libre, je
+    m’engage en ralentissant, prêt à m’arrêter.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-7
@@ -96,7 +95,8 @@
   contexte: Je circule déjà dans l’anneau et je vais poursuivre au-delà de la prochaine sortie ; la voiture grise attend à cette entrée.
   affirmation: La voiture grise doit me laisser passer.
   verdict: vrai
-  pourquoi: Au giratoire avec cédez-le-passage aux entrées, les entrants cèdent aux véhicules dans l’anneau. Je ne mets pas mon clignotant droit avant une sortie que je ne prends pas.
+  pourquoi: 'Les entrées portent un cédez-le-passage : ceux qui entrent cèdent à ceux qui circulent dans l’anneau. Je ne
+    mets pas mon clignotant droit avant une sortie que je ne prends pas : la grise croirait que je sors.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-10
@@ -110,6 +110,7 @@
       - entry: E
         colour: gris
       exit: null
+      cedez: true
 - id: aff-l-giratoire-depassement
   contexte: Giratoire à deux voies ; le camion devant moi occupe les deux voies pour tourner.
   affirmation: Je peux me glisser à sa gauche pour le dépasser.
@@ -384,7 +385,8 @@
   contexte: Cet îlot sépare la chaussée devant moi.
   affirmation: Si la voie de gauche est libre, je peux le contourner par la gauche.
   verdict: faux
-  pourquoi: 'R412-27 : tout obstacle, îlot, terre-plein ou borne se contourne par la droite, sauf si une flèche ou un panneau impose l''inverse. Les hachures qui le prolongent sont interdites à la circulation.'
+  pourquoi: 'R412-27 : tout obstacle, îlot, terre-plein ou borne se contourne par la droite, sauf si une flèche ou un panneau
+    impose l’inverse.'
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-27
@@ -404,7 +406,7 @@
         me: true
   comparaisons:
   - ref: j5
-    legende: 'Balise de tête d’îlot : contourner par la droite.'
+    legende: 'Balise de tête d’îlot : elle indique le côté du contournement.'
   - ref: marq-zebra
     legende: 'Hachures : on n’y circule pas.'
 - id: aff-l-voie-preselection
@@ -481,7 +483,7 @@
   source: Code de la route, art. R417-1
   comparaisons:
   - ref: c12
-    legende: 'Sens unique : en agglomération, arrêt et stationnement à droite ou à gauche.'
+    legende: Panneau de sens unique.
 - id: aff-l-bau-appel
   contexte: Sur autoroute, mon téléphone sonne ; la bande d'arrêt d'urgence est dégagée.
   affirmation: Je peux m'y arrêter le temps de l'appel, feux de détresse allumés.
@@ -533,7 +535,7 @@
   source: Code de la route, art. R417-10 et R110-2
   comparaisons:
   - ref: b52
-    legende: 'Entrée de zone de rencontre : 20 km/h, piétons prioritaires, stationnement sur les emplacements seulement.'
+    legende: 'Entrée de zone de rencontre : 20 km/h.'
 - id: aff-l-90-departement
   contexte: Route hors agglomération à double sens, une voie par sens, sans séparateur central ni panneau relevant
     la limitation.
@@ -573,7 +575,7 @@
   contexte: Sur une route de campagne, je passe ce panneau.
   affirmation: À partir de ce panneau, je suis en agglomération et limité à 50 km/h.
   verdict: faux
-  pourquoi: C'est un panneau de lieu-dit, sans effet réglementaire. Le panneau d'entrée d'agglomération se reconnaît au nom sur fond blanc bordé de rouge ; c'est lui qui déclenche la limite par défaut de 50 km/h et les autres règles d'agglomération.
+  pourquoi: 'C’est un panneau de lieu-dit, sans effet réglementaire : je reste hors agglomération, à la vitesse de la route.'
   theme: L
   sous_theme: vitesse
   source: IISR 5e partie art. 99-3 ; Code de la route, art. R110-2
@@ -605,9 +607,8 @@
   contexte: Route à double sens, virage à gauche sans visibilité.
   affirmation: Je peux me rapprocher de l'axe de la chaussée pour élargir ma trajectoire.
   verdict: faux
-  pourquoi: Un véhicule masqué par le virage arrive en face sur cette partie de chaussée. On reste dans sa voie,
-    près du bord droit, allure réduite avant la courbe (R412-9, R413-17). Avant un virage à droite, je me décale
-    vers le milieu de ma voie pour voir plus loin, sans m'approcher de l'axe.
+  pourquoi: Un véhicule masqué par le virage peut arriver en face, lui aussi près de l’axe. Je reste dans ma voie, près
+    du bord droit, allure réduite avant la courbe (R412-9, R413-17).
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-9 et R413-17

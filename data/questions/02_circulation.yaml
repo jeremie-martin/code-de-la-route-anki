@@ -2,8 +2,7 @@
 - id: l-priorite-droite-defaut
   question: Intersection sans panneau ni feu, routes ordinaires ; nous arrivons en même temps. À qui dois-je céder le
     passage ?
-  reponse: 'À la voiture rouge, qui vient de ma droite ; la verte, à ma gauche, me cède le passage. Même règle pour un vélo
-    ou une trottinette.'
+  reponse: À la voiture rouge, qui vient de ma droite ; la verte, à ma gauche, me cède le passage.
   explication: Sans panneau, feu ni agent, la priorité à droite s'applique, quelle que soit la largeur des rues. Une
     sortie de parking, un chemin de terre ou un véhicule prioritaire annoncé changent l'analyse.
   theme: L
@@ -30,8 +29,7 @@
 - id: l-stop-arret
   question: Au STOP, où exactement dois-je immobiliser mon véhicule ?
   reponse: À la ligne d’arrêt continue (sinon à la limite de la chaussée abordée), roues immobiles, avant de céder le passage.
-  explication: L'arrêt s'impose même si la route paraît libre (135 €, 4 points). Une fois arrêté, je peux avancer au pas pour
-    améliorer ma visibilité, puis je cède le passage des deux côtés.
+  explication: L’arrêt s’impose même si la route paraît libre (135 €, 4 points) ; je cède ensuite le passage des deux côtés.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-6
@@ -40,7 +38,7 @@
     params:
       kind: stop
       arret: true
-    legende: Arrêt complet, l’avant à la ligne continue ; puis j’avance au pas pour voir si besoin.
+    legende: Arrêt complet, l’avant à la ligne continue.
 - id: l-tourner-gauche-regle
   question: Je tourne à gauche à une intersection sans feu ni panneau de priorité. Quels véhicules peuvent avoir priorité
     sur moi ?
@@ -75,8 +73,8 @@
   reponse: 'Le panneau à l’entrée : avec un cédez-le-passage ou un STOP, je cède à ceux qui sont dans l’anneau ; sans l’un
     ni l’autre, la priorité à droite s’applique et ce sont eux qui me cèdent.'
   explication: 'La forme ronde ne décide rien : ce sont ses entrées signalées qui font d’un rond-point un carrefour à sens
-    giratoire (R110-2, R415-10). Sans cédez-le-passage ni STOP, celui qui circule dans l’anneau cède à chaque entrée à sa
-    droite.'
+    giratoire (R110-2, R415-10). Aux abords, le triangle à flèches tournantes annonce un carrefour à sens giratoire ; des
+    triangles à croix noire annoncent la priorité à droite.'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R110-2, R415-5 et R415-10
@@ -120,12 +118,12 @@
         - 330
         - 40
 - id: l-giratoire-placement
-  question: Giratoire à deux voies, sans flèches au sol ; je vise la sortie indiquée. Sur quelle voie entrer, et comment sortir ?
-  reponse: Je peux rester à droite ou emprunter la voie intérieure. Depuis l’intérieur, je cède aux usagers de
-    la voie extérieure avant de me rabattre et de sortir.
-  explication: C’est la position de la sortie par rapport à l’axe d’entrée qui compte, pas son numéro. La voie
-    intérieure est facultative. Contrôles et clignotant à chaque changement de voie ; si je ne peux pas me rabattre
-    sans danger, je refais un tour.
+  question: Giratoire à deux voies, sans flèches au sol ; je vise la sortie indiquée. Puis-je entrer sur la voie intérieure
+    ?
+  reponse: 'Oui, sans y être obligé : ma sortie est à gauche de mon axe d’entrée, ce qui me permet de serrer à gauche. Pour
+    une sortie qui n’est pas à ma gauche, je reste sur la voie de droite.'
+  explication: C’est la position de la sortie par rapport à mon axe d’entrée qui compte, pas son numéro. Chaque changement
+    de voie dans l’anneau se signale et reste soumis aux règles de priorité.
   theme: L
   sous_theme: priorites
   source: "Code de la route, R412-9, https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050965688"
@@ -216,12 +214,13 @@
   sous_theme: depassement
   source: Code de la route, art. R414-10
 - id: l-depassement-interdit-lieux
-  question: Sur une route à double sens, je veux dépasser une voiture en empruntant la voie opposée. Quels indices peuvent
-    interdire cette manœuvre ?
-  reponse: Une visibilité insuffisante, une ligne continue de mon côté ou un panneau d’interdiction de dépasser. Même sans eux, je dois pouvoir me rabattre sans gêner.
-  explication: 'D’autres lieux l’interdisent aussi : intersection où je ne suis pas prioritaire, passage piéton où un piéton
-    peut être engagé, passage à niveau sans barrières. Restent à vérifier l’espace pour me rabattre et l’écart de vitesse
-    (R414-4).'
+  question: Route à double sens, ligne discontinue, aucun panneau. Quels lieux m’interdisent quand même de dépasser une
+    voiture en empruntant la voie opposée ?
+  reponse: Là où la visibilité vers l’avant est insuffisante (virage, sommet de côte), une intersection, sauf si un panneau,
+    des feux ou un agent m’y donnent le passage, l’approche d’un passage piéton si un piéton peut y être engagé, un passage
+    à niveau sans barrières.
+  explication: 'La ligne discontinue autorise la manœuvre sans garantir qu’elle soit possible. Restent les conditions générales
+    : place pour me rabattre sans gêner, écart de vitesse suffisant (R414-4).'
   theme: L
   sous_theme: depassement
   source: Code de la route, R414-4, R414-5, R414-11 et R414-12, https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177131/
@@ -288,9 +287,9 @@
   source: Code de la route, art. R412-19 et R412-22 ; IISR 7e partie, art. 114-4
   comparaisons:
   - ref: marq-ligne-rive
-    legende: 'Ligne de rive : se franchit pour s’arrêter hors chaussée ou tourner.'
+    legende: Ligne de rive.
   - ref: marq-ligne-bau-t4
-    legende: 'Traits très longs : bande d’arrêt d’urgence, nécessité absolue seulement.'
+    legende: 'Traits très longs : bande d’arrêt d’urgence.'
 - id: l-vocab-chaussee-voie
   question: Sur ce dessin de route, que désignent A, B et C ?
   reponse: 'A, la chaussée : partie de la route où circulent les véhicules. B, une voie : subdivision de la chaussée large d’une file. C, l’accotement : partie latérale hors chaussée.'
@@ -316,15 +315,11 @@
   question: Quelle différence entre un arrêt et un stationnement ?
   reponse: 'L’arrêt : immobilisation brève pour monter, descendre, charger ou décharger, conducteur prêt à déplacer le véhicule.
     Toute autre immobilisation est un stationnement.'
-  explication: Une ligne jaune continue ou un panneau bleu barré d’une croix rouge interdit même un arrêt d’une minute, moteur tournant. Une ligne jaune discontinue ou un panneau à une seule barre interdit seulement le stationnement.
+  explication: Le motif décide, pas la durée ni le moteur. La distinction compte parce que certains lieux n’interdisent
+    que le stationnement.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R110-2
-  comparaisons:
-  - ref: b6a1
-    legende: 'Une barre : stationnement interdit.'
-  - ref: b6d
-    legende: 'Une croix : arrêt et stationnement interdits.'
 - id: l-stationnement-trottoir
   question: Je gare ma voiture avec deux roues sur le trottoir en laissant de la place aux piétons. Est-ce autorisé ?
   reponse: 'Non : pour une voiture, l’arrêt ou le stationnement sur un trottoir est très gênant (135 €), même si les piétons
@@ -430,9 +425,8 @@
 - id: l-formes-couleurs-panneaux
   question: Que signale chacune de ces familles de panneaux, d’après sa forme et sa couleur ?
   reponse: 1 danger (triangle bordé de rouge) ; 2 interdiction (rond bordé de rouge) ; 3 obligation (rond bleu) ; 4 indication (carré bleu) ; 5 fin d’interdiction (rond blanc barré) ; 6 fin d’obligation (rond bleu barré).
-  explication: Les panneaux de danger sont en général implantés à environ 150 m du danger hors agglomération, 50 m en
-    agglomération, sauf panonceau de distance. Une interdiction ou une obligation ponctuelle vaut en général jusqu'à la
-    prochaine intersection ou jusqu'au panneau de fin ; une prescription de zone vaut jusqu'à la sortie de la zone.
+  explication: 'Deux indices se combinent : la bordure rouge interdit ou alerte, le fond bleu oblige ou informe ; une barre
+    oblique marque une fin. STOP, cédez-le-passage et route prioritaire échappent à ce code.'
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie
@@ -469,9 +463,7 @@
   question: Une limitation à 30 km/h par un panneau rond isolé (hors zone 30 et hors panneau d'agglomération) est
     suivie d'une intersection. Elle n'est pas répétée après. Que devient-elle ?
   reponse: Elle cesse après l’intersection ; j’applique ensuite la limitation propre à la route et aux autres panneaux.
-  explication: Un panneau isolé cesse à la prochaine intersection ; une prescription de zone (zone 30, zone de rencontre,
-    aire piétonne, ZFE) vaut jusqu’au panneau de fin de zone, intersections comprises. Un panonceau « RAPPEL » prolonge
-    une limitation isolée ; celle qui accompagne le panneau d’agglomération vaut dans toute l’agglomération.
+  explication: Seul un panonceau « RAPPEL » après l’intersection la prolonge.
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie, art. 8 ; Code de la route, art. R110-2
@@ -499,10 +491,11 @@
         file: France road sign B14 (30).svg
         w: 110
 - id: l-panonceau-portee
-  question: À quoi s’applique le petit panneau placé sous le 70 ?
-  reponse: 'Au panneau qu’il complète : ici, le 70 ne vise que les véhicules ou ensembles dont le poids total autorisé (PTAC,
-    ou PTRA pour un ensemble, sur la carte grise) dépasse la valeur indiquée.'
-  explication: 'Un panonceau précise le panneau au-dessus : usagers concernés, distance, étendue, période. Un panonceau de catégorie peut concerner plusieurs prescriptions groupées sur le même support : ne pas mémoriser « toujours le seul panneau juste au-dessus ».'
+  question: Je conduis une voiture dont le poids total autorisé est de 1,8 t. Ce 70 me concerne-t-il ?
+  reponse: 'Non : le panonceau réserve ce 70 aux véhicules ou ensembles dont le poids total autorisé (PTAC, ou PTRA pour
+    un ensemble, sur la carte grise) dépasse la valeur indiquée ; pour moi, la limite habituelle de la route s’applique.'
+  explication: 'Un panonceau précise le panneau qu’il accompagne : usagers concernés, distance, étendue, période. Un panonceau
+    de catégorie peut viser plusieurs prescriptions groupées sur le même support.'
   theme: L
   sous_theme: signalisation
   source: IISR 1re partie, art. 9 ; IISR 4e partie (panonceau M4f)
@@ -516,11 +509,12 @@
         file: France road sign M4f.svg
         w: 120
 - id: l-signalisation-temporaire
-  question: Un chantier impose temporairement 50 km/h alors que la limitation permanente est de 90. Quel plafond respecter
-    ?
-  reponse: '50 km/h : je respecte la prescription temporaire du chantier.'
-  explication: 'Le jaune caractérise notamment les dangers temporaires, les directions et les marquages. Les panneaux de prescription
-    temporaires peuvent garder leur aspect habituel : ne pas se fier à la couleur seule.'
+  question: Au début d’un chantier, un panneau 50 à fond blanc, pas jaune ; la limite habituelle est de 90. Quel plafond
+    s’applique ?
+  reponse: '50 km/h : une prescription temporaire peut garder son aspect habituel, sans fond jaune, et elle prime sur la
+    prescription permanente.'
+  explication: 'Le jaune caractérise notamment les dangers temporaires, la signalisation de direction et les marquages provisoires
+    : ne pas se fier à la couleur seule.'
   theme: L
   sous_theme: signalisation
   source: IISR 8e partie ; Code de la route, art. R411-25
@@ -535,15 +529,15 @@
 - id: l-vocab-routes-lettres
   question: Que signifient les lettres A, N, D et C (ou M) devant un numéro de route ?
   reponse: A = autoroute ; N = route nationale ; D = route départementale ; C = voie communale (M = voie métropolitaine).
-  explication: 'Les cartouches sont rouges pour A et N, jaunes pour D, blancs pour C. La lettre ne fixe pas la vitesse : je regarde la configuration de la route, les panneaux et les conditions de circulation.'
+  explication: Cartouche blanc pour C.
   theme: L
   sous_theme: signalisation
   source: Code de la route, art. L110-3 et s. ; IISR 5e partie (cartouches E42-E44)
   comparaisons:
   - ref: e42
-    legende: 'Cartouche rouge : autoroute ou route nationale.'
+    legende: 'Cartouche rouge : A ou N.'
   - ref: e43
-    legende: 'Cartouche jaune : route départementale.'
+    legende: 'Cartouche jaune : D.'
 - id: l-klaxon-danger-agglo
   question: En ville, une voiture se déporte vers ma voie sans m’avoir vu et le choc est imminent. Puis-je klaxonner
     ?
@@ -592,8 +586,8 @@
 - id: l-giratoire-sortie-impossible
   theme: L
   sous_theme: priorites
-  question: Je vise la sortie indiquée. Le cycliste continue dans l’anneau, à mon niveau. Comment rejoindre ma sortie sans le gêner ?
-  reponse: Je lui cède le passage. Si je ne peux pas me rabattre sans lui couper la route, je refais un tour.
+  question: Je vise la sortie indiquée ; le cycliste continue dans l’anneau, à mon niveau. Que fais-je ?
+  reponse: Je lui cède le passage ; si je ne peux pas me rabattre sans lui couper la route, je refais un tour.
   explication: 'Pour sortir depuis la voie intérieure, je dois traverser la voie extérieure où circule le cycliste.
     Être dans l’anneau ne donne pas priorité pour changer de voie ; le clignotant non plus.'
   source: "Code de la route, R412-9 et R412-10, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177121/"
@@ -869,8 +863,8 @@
   question: Je circule sous ce régime de priorité. À une intersection, une voiture arrive vite de droite sans ralentir.
     Que fais-je ?
   reponse: 'Je ralentis et me tiens prêt à m''arrêter : ma priorité ne garantit pas que l''autre l''a comprise.'
-  explication: Le droit de passer n’établit pas que l’autre conducteur l’a compris ou peut s’arrêter. Il faut
-    observer son comportement.
+  explication: 'R413-17 : même prioritaire, je reste maître de ma vitesse ; à l’approche de l’intersection, je regarde si
+    l’autre ralentit vraiment.'
   source: Code de la route, R415-1 et R413-17
   image_ref: ab6
 - id: l-tourner-gauche-placement
@@ -905,3 +899,22 @@
   theme: L
   sous_theme: vitesse
   source: Code de la route, art. R413-2
+- id: l-croisement-montagne
+  question: 'Route de montagne étroite et en pente : je monte, une voiture descend en face et le croisement est difficile.
+    Qui doit s’arrêter le premier ?'
+  reponse: 'Celle qui descend : sur route de montagne ou à forte déclivité, le véhicule descendant doit s’arrêter à temps
+    le premier.'
+  explication: 'S’il faut qu’un des deux recule : le véhicule seul plutôt que l’ensemble, le plus léger plutôt que le plus
+    lourd, le camion de plus de 3,5 t plutôt que l’autocar ; à catégorie égale, le descendant, sauf si le montant est
+    manifestement mieux placé, par exemple près d’une place d’évitement.'
+  theme: L
+  sous_theme: croisement
+  source: Code de la route, art. R414-3
+- id: l-virage-droite-placement
+  question: 'Route à double sens, virage à droite sans visibilité : où me placer dans ma voie à l’approche ?'
+  reponse: 'Vers le milieu de ma voie, sans m’approcher de l’axe : je vois plus loin dans le virage.'
+  explication: 'Repère de conduite, pas une règle écrite : R412-9 impose seulement de rester dans ma voie, près du bord
+    droit en marche normale.'
+  theme: L
+  sous_theme: positionnement
+  source: Code de la route, art. R412-9 ; règle de conduite (programme REMC)

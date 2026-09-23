@@ -1,4 +1,4 @@
-# Généré par build/import_signs.py depuis data/signs_inventory.yaml (29 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
+# Généré par build/import_signs.py depuis data/signs_inventory.yaml (28 entrées). Corrections manuelles : data/_meta/sign_overrides.yaml
 - id: m1
   type: panonceau
   code: M1
@@ -7,7 +7,7 @@
   nom: Panonceau de distance
   signification: Indique la distance entre le panneau et le début du danger, de la zone réglementée ou du point indiqué (ex. « 150 m », « 2 km »).
   conduite: Le danger ou la prescription ne commence qu'à la distance indiquée, pas au panneau.
-  complement: Le nombre indique la distance jusqu’au danger ou au lieu annoncé. Sous un cédez-le-passage, il annonce l’intersection plus loin ; sous un panneau de service, il indique la distance jusqu’au service.
+  complement: Sous un cédez-le-passage, il annonce l’intersection plus loin ; sous un panneau de service, la distance jusqu’au service.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -19,7 +19,7 @@
   nom: Panonceau d'étendue
   signification: 'Indique la longueur de la section dangereuse ou soumise à la réglementation (ex. « 3 km ») : la prescription s''applique sur toute cette longueur, même au-delà d''intersections.'
   conduite: Maintenir la prescription (vitesse, interdiction de dépasser) sur toute la distance indiquée.
-  piege: Sans flèches, « 150 m » indique où commence le danger. Avec les deux flèches, « 150 m » indique la longueur de la section concernée.
+  piege: 'Ce sont les flèches qui changent le sens du nombre : ici, une longueur de section.'
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -100,17 +100,6 @@
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-- id: m5
-  type: panonceau
-  code: M5
-  image:
-    commons: France road sign M5.svg
-  nom: Panonceau « STOP » (distance du STOP)
-  signification: Sous le triangle inversé, l’inscription « STOP » et la distance annoncent l’endroit où je devrai marquer l’arrêt.
-  conduite: Se préparer à s'arrêter à la distance indiquée.
-  theme: L
-  sous_theme: panonceaux
-  source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
 - id: m6a
   type: panonceau
   code: M6a
@@ -172,7 +161,7 @@
     commons: France road sign M6i.svg
   nom: Stationnement réservé aux véhicules électriques en recharge
   signification: Indique que le stationnement est réservé aux véhicules électriques pendant la durée de la recharge (inscription « INTERDIT SAUF » + pictogramme de voiture électrique branchée).
-  conduite: 'Ne pas occuper l''emplacement avec un véhicule non électrique ou hors recharge : stationnement gênant (R417-10 III 3°), 35 € et mise en fourrière possible.'
+  conduite: 'Ne pas occuper l’emplacement avec un véhicule non électrique ou hors recharge : stationnement gênant, 35 € et mise en fourrière possible.'
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -279,7 +268,6 @@
     commons: France road sign M10b.svg
   nom: 'Cartouche : numéro d''échangeur'
   signification: 'Cartouche placé au-dessus du panneau d''entrée d''autoroute (ou de route à accès réglementé) : numéro de l''échangeur par lequel j''entre.'
-  complement: Cartouche placé AU-DESSUS du panneau qu'il complète, alors que les panonceaux se placent d'ordinaire dessous.
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -318,4 +306,4 @@
   theme: L
   sous_theme: panonceaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Ne donne ni priorité ni autorisation aux voitures, motos ou cyclomoteurs ordinaires. Le feu R19 (vélo jaune clignotant) en est la version lumineuse, réservée aux cycles.
+  piege: Ne donne ni priorité ni autorisation aux voitures, motos ou cyclomoteurs ordinaires. Le feu vélo jaune clignotant en est la version lumineuse, réservée aux cycles.

@@ -10,14 +10,12 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Les catégories admises et les horaires sont ceux du panonceau ou du panneau d’information placé en amont.
 - id: vr-losange-fin
   type: panneau
   image:
     commons: Panneau de fin de voie réservée aux véhicules à occupation multiple en France.svg
   nom: Fin de voie réservée (losange barré)
   signification: 'Panneau carré portant un losange blanc barré d''une diagonale rouge : fin de la voie réservée ; la voie redevient ouverte à tous.'
-  conduite: La voie peut de nouveau être empruntée par tous les véhicules.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

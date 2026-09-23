@@ -22,7 +22,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Le triangle donne la priorité à la prochaine intersection seulement. Le losange jaune indique une route prioritaire jusqu’au panneau de fin.
+  piege: 'Le triangle ne vaut que pour la prochaine intersection : après elle, je relis la signalisation.'
   comparaisons:
   - ref: ab6
     legende: 'Losange jaune : route prioritaire.'
@@ -47,7 +47,7 @@
   nom: Signal avancé de cédez-le-passage
   signification: Annonce un cédez-le-passage à la distance indiquée, souvent 150 m.
   conduite: Ralentir progressivement, se préparer à céder le passage à l'intersection annoncée.
-  piege: 'Le panonceau donne seulement une distance : cédez-le-passage à venir. S’il porte aussi « STOP », il annonce un arrêt obligatoire plus loin.'
+  piege: 'Le panonceau ne porte qu’une distance : c’est un cédez-le-passage qui m’attend, sans arrêt obligatoire.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -113,7 +113,7 @@
   nom: Carrefour à sens giratoire
   signification: 'Annonce un carrefour à sens giratoire : les usagers déjà engagés dans l''anneau sont prioritaires.'
   conduite: Ralentir, céder le passage à l’anneau ; signaler tout changement de voie dans l’anneau et ma sortie au clignotant droit.
-  piege: À l’entrée d’un giratoire avec cédez-le-passage, je laisse passer ceux qui circulent dans l’anneau. Sur une intersection circulaire sans ce régime, la priorité à droite peut donner priorité aux entrants.
+  piege: Ce triangle annonce le régime ; c’est le cédez-le-passage à l’entrée qui m’impose de céder. Sur un simple rond-point sans cédez-le-passage, la priorité à droite s’applique.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

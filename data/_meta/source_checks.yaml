@@ -1017,3 +1017,18 @@
   portee: 'L237-1 (loi 2026-798) : ivresse manifeste, usage manifeste de stupéfiants et consommation manifeste d’une substance psychoactive « figurant sur une liste établie […] par décret en Conseil d’État ». Au 23/09/2026, ce décret n’est pas publié (questions écrites à l’Assemblée nationale en attente) : le 3° n’est pas encore applicable, aucune substance n’est nommée par la carte.'
   notes: [d-alcool-delit]
 
+- id: conception-2026-09-23-regles
+  consulte_le: '2026-09-23'
+  url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/
+  portee: 'Refonte de conception : articles relus dans la version consolidée du Code (docs/research/sources/cdr.txt) avant d’écrire les nouvelles cartes et formulations. R414-3 (croisement en montagne : le descendant s’arrête le premier ; ordre de la marche arrière), R414-2 (gabarit > 2 m ou 7 m, exception transports en commun en agglomération), R412-9 (giratoire : serrer à gauche pour une sortie à gauche de l’axe d’entrée), R412-43-1 (EDPM sur pistes et bandes en agglomération), R313-32-1 (signalisation des angles morts au-delà de 3,5 t), L224-16 (conduite malgré suspension : 2 ans, 4 500 €, moitié des points), R231-1 (obligations après accident ; état des lieux préservé seulement s’il y a des blessés).'
+  notes: [l-croisement-montagne, l-croisement-largeur, l-giratoire-placement, c113, u-pl-angles-morts-chiffres, d-conduite-malgre-suspension, a-accrochage-degager]
+- id: fgao-recours-2026-09-23
+  consulte_le: '2026-09-23'
+  url: https://www.fondsdegarantie.fr/nos-missions
+  portee: '« Après avoir indemnisé les victimes, le Fonds de Garantie des Victimes se retourne contre les responsables pour récupérer les sommes versées. »'
+  notes: [d-sans-permis-sans-assurance]
+- id: psc-dae-analyse-2026-09-23
+  consulte_le: '2026-09-23'
+  url: https://www.interieur.gouv.fr/Publications/Securite-interieure/Referentiels-de-secourisme
+  portee: 'Référentiel PSC : « Lorsque le DAE l’indique, arrêter les compressions thoraciques, ne plus toucher la victime et s’assurer que les personnes aux alentours fassent de même » ; reprise immédiate des compressions après le choc ou si le choc n’est pas nécessaire.'
+  notes: [a-dae-utilisation, aff-a-dae-sans-danger]

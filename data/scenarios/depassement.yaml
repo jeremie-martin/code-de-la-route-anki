@@ -58,8 +58,7 @@
       y: 45
       colour: gris
   question: Les autres conditions du dépassement sont réunies. Le marquage me permet-il de commencer à dépasser ?
-  reponse: 'Non : la ligne de mon côté est continue. Le sens opposé dispose d’une ligne discontinue, mais ses
-    conducteurs doivent aussi vérifier toutes les conditions de sécurité.'
+  reponse: 'Non : la ligne de mon côté est continue ; je ne peux pas commencer à la franchir.'
   explication: 'R412-20 : on ne franchit une ligne mixte que si la ligne discontinue est de son côté
     au début de la manœuvre, et la manœuvre doit être terminée avant la fin de la discontinue.'
   theme: L
@@ -79,9 +78,10 @@
       y: 45
       colour: gris
   question: Les autres conditions du dépassement sont réunies. Le marquage me permet-il de commencer à dépasser ?
-  reponse: Oui, si les conditions habituelles sont réunies (visibilité, personne en face, personne ne me dépasse)
-    et si je peux me rabattre avant la fin de la ligne discontinue.
-  explication: "La ligne continue de l'autre côté interdit aux véhicules d'en face de dépasser, mais ne m'interdit pas de le faire. Je reste vigilant : elle annonce souvent une zone sans visibilité pour eux, pas pour moi."
+  reponse: 'Oui : la ligne discontinue est de mon côté ; je dois pouvoir me rabattre avant la fin de la discontinue.'
+  explication: 'On ne franchit une ligne mixte que si la discontinue est de son côté au début de la manœuvre. La continue
+    d’en face interdit aux véhicules d’en face de dépasser ; elle annonce souvent une zone sans visibilité pour eux : je
+    reste vigilant.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R412-20
@@ -102,10 +102,11 @@
     extras:
     - kind: sommet
       y: 80
-  question: Le camion roule lentement. (1) Le marquage autorise-t-il à le dépasser ? (2) Puis-je le dépasser maintenant ?
-  reponse: '(1) Oui : la ligne est discontinue. (2) Non : le sommet de côte masque la route en face ; sans visibilité suffisante, le dépassement est interdit.'
-  explication: 'R414-11. Le marquage n''est pas une garantie de visibilité : c''est au conducteur de juger.
-    Un véhicule peut surgir derrière le sommet à 80 km/h.'
+  question: Le camion roule lentement. Puis-je le dépasser maintenant ?
+  reponse: 'Non : le sommet de côte masque la route en face ; sans visibilité suffisante, le dépassement est interdit, même
+    si la ligne est discontinue.'
+  explication: 'Le marquage ne garantit pas la visibilité : c’est à moi de la juger. Un véhicule peut surgir derrière le
+    sommet à 80 km/h.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-11
@@ -125,9 +126,10 @@
       kind: truck
       label: '25'
   question: Un engin agricole roule à 25 km/h devant moi ; bonne visibilité, personne en face. Puis-je le dépasser ?
-  reponse: 'Oui : je peux dépasser cet engin très lent si je peux terminer la manœuvre sans danger.'
-  explication: La ligne de dissuasion est discontinue. Elle déconseille le dépassement des véhicules à allure
-    normale, souvent trop long pour la visibilité disponible. Elle peut annoncer une ligne continue.
+  reponse: 'Oui, si je peux terminer la manœuvre sans danger : cette ligne de dissuasion reste discontinue ; elle déconseille
+    surtout de dépasser des véhicules à allure normale, pas un engin aussi lent.'
+  explication: 'Dépasser un véhicule à allure normale y serait souvent trop long pour la visibilité disponible. Elle peut
+    annoncer une ligne continue : je dois pouvoir me rabattre avant.'
   theme: L
   sous_theme: depassement
   source: IISR 7e partie, art. 113 ; Code de la route, art. R412-18
@@ -165,8 +167,11 @@
       - {lane: 1, y: 45, colour: gris, goes: left}
     extras:
       - {kind: intersection_gauche, y: 68}
-  question: "Le véhicule devant moi ralentit, clignotant gauche, pour entrer dans la rue à gauche. Puis-je le dépasser par la gauche ?"
-  reponse: 'Non. Par la gauche, jamais : il a annoncé qu’il tourne à gauche. Par la droite non plus ici : à cette intersection sans signalisation qui me donne la priorité, et sans place, j’attends derrière lui.'
+  question: Le véhicule devant moi ralentit, clignotant gauche, pour entrer dans la rue à gauche. Puis-je le dépasser, et
+    de quel côté ?
+  reponse: 'Non, d’aucun côté : jamais par la gauche, puisqu’il a annoncé qu’il tourne à gauche ; par la droite, ce serait
+    la règle ailleurs, mais ici aucune signalisation ne me donne la priorité à l’intersection et la place manque : j’attends
+    derrière lui.'
   explication: Un véhicule qui a signalé qu’il tourne à gauche se dépasse par la droite (R414-6). Mais à une intersection, dépasser autre chose qu’un deux-roues n’est permis que si les usagers des autres routes doivent me céder le passage (STOP, cédez-le-passage, route prioritaire), ou si des feux ou un agent règlent le carrefour (R414-11).
   theme: L
   sous_theme: depassement
@@ -233,7 +238,8 @@
       - {kind: label, y: 55, text: "véhicule stationné"}
   question: "Un véhicule stationné occupe ma voie et une voiture arrive en face. Qui passe en premier ?"
   reponse: "La voiture d'en face : l'obstacle est de mon côté, c'est à moi de m'arrêter et de la laisser passer avant de contourner."
-  explication: 'L’obstacle est de mon côté : je dois empiéter sur la voie d’en face pour le contourner. Je laisse donc passer l’autre véhicule. Sur un passage étroit, je respecte aussi les panneaux qui fixent la priorité entre les deux sens ; un pont simplement étroit, sans obstacle d’un côté, ne permet pas de déduire cette priorité.'
+  explication: Sur un passage étroit, je respecte aussi les panneaux qui fixent la priorité entre les deux sens ; un pont
+    simplement étroit, sans obstacle d’un côté, ne permet pas de déduire cette priorité.
   theme: L
   sous_theme: croisement
   source: "Code de la route, art. R414-1 ; règle de conduite (programme REMC)"
@@ -273,7 +279,8 @@
       - {kind: sign, file: "France road sign B15.svg", y: 28}
   question: Un rétrécissement ne laisse passer qu’un véhicule à la fois ; une voiture arrive en face. Qui passe ?
   reponse: 'Elle : mon panneau rond m’impose de céder le passage au sens opposé. Je m’arrête avant le rétrécissement.'
-  explication: 'La flèche rouge vers le haut représente mon sens : je cède. De l’autre côté, le panneau carré bleu donne la priorité à la voiture rouge. Je reste avant le passage étroit pour lui laisser la place.'
+  explication: 'Sur le panneau rond, la flèche rouge vers le haut est mon sens : c’est lui qui cède. De l’autre côté, le
+    panneau carré bleu donne la priorité à la voiture rouge.'
   theme: L
   sous_theme: croisement
   source: "IISR 4e et 5e parties (B15, C18) ; Code de la route, art. R414-1"
@@ -306,7 +313,9 @@
       - {kind: intersection_gauche, y: 62}
   question: "Je ralentis, clignotant gauche, pour tourner dans la rue à gauche. Dans le rétroviseur, une voiture est déjà en train de me dépasser. Puis-je tourner maintenant ?"
   reponse: "Non : j'attends qu'elle m'ait dépassé ; me déporter à gauche maintenant la couperait."
-  explication: "R412-10 impose d'avertir ; le clignotant ne dispense pas de vérifier que je peux tourner sans danger, et celui qui est sur le point d'être dépassé serre à droite (R414-16). Le clignotant annonce, il n'autorise pas : rétroviseur puis angle mort gauche avant de se déporter, même si l'autre n'aurait pas dû me dépasser par la gauche après mon signal (R414-6)."
+  explication: 'Le clignotant annonce, il n’autorise pas (R412-10) : rétroviseur puis angle mort gauche avant de me déporter.
+    Même si l’autre n’aurait pas dû me dépasser après mon signal (R414-6), je le laisse finir ; il doit pouvoir se rabattre
+    (R414-16).'
   theme: L
   sous_theme: depassement
   source: "Code de la route, art. R412-10, R414-16 et R414-6"

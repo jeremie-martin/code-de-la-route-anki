@@ -71,7 +71,6 @@
   - conf-ab6-ab7
   consolidation:
   - m7
-  - m5
   - m9c
   - conf-ab3b-ab5
 - id: l-intersection
@@ -334,6 +333,7 @@
   - marq-voie-insertion
   - marq-cvcb
   - conf-continue-dissuasion
+  - conf-annonce-dissuasion
   consolidation:
   - marq-ligne-rive
   - marq-chevrons
@@ -414,6 +414,7 @@
   raison: Ne pas confondre trajectoire, clignotant et droit de passage.
   notes:
   - aff-l-virage-gauche-axe
+  - l-virage-droite-placement
   - l-position-chaussee
   - l-entrecroisement
   - l-depassement-droite
@@ -427,6 +428,7 @@
   - l-tourner-gauche-placement
   consolidation:
   - l-croisement-largeur
+  - l-croisement-montagne
   - l-demi-tour-marche-arriere
   - l-ligne-rive-franchir
   - aff-l-klaxon-hors-agglo
@@ -732,7 +734,6 @@
   - k2
   - kc1
   - conf-a14-ak14
-  - conf-k10a-k10b
 - id: u-vulnerables
   theme: U
   titre: Préserver piétons, enfants et cyclistes
@@ -1080,6 +1081,7 @@
   raison: Identifier, déclarer et conserver les faits sans signer un récit contesté.
   notes:
   - a-accident-materiel-obligations
+  - a-accrochage-degager
   - a-accident-corporel-obligations
   - a-constat-desaccord
   consolidation:
@@ -1103,6 +1105,7 @@
   - aff-d-telephone-retention
   - aff-d-velo-points
   - d-suspension-invalidation
+  - d-conduite-malgre-suspension
   consolidation:
   - d-permis-b-125
   - d-permis-am-14-ans
@@ -1306,7 +1309,6 @@
   notes:
   - aff-e-borne-recharge
   consolidation:
-  - e-electrique-avantages
   - e-energies-alternatives
   - e-e85
 - id: e-bruit

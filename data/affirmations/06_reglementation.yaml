@@ -10,7 +10,9 @@
   contexte: Permis B obtenu il y a dix-huit mois en filière classique, sans formation post-permis.
   affirmation: Je peux maintenant retirer le disque « A » de l’arrière de ma voiture.
   verdict: faux
-  pourquoi: Le signe distinctif reste obligatoire pendant tout le délai probatoire (3 ans ; 2 ans après AAC ou avec la formation post-permis ; 1 an et 6 mois avec les deux), avec les vitesses réduites et le seuil d’alcool à 0,2 g/L. Son absence est une contravention de 2e classe.
+  pourquoi: 'Le disque « A » reste obligatoire pendant tout le délai probatoire : 3 ans dans mon cas (filière classique,
+    sans formation post-permis). Il suit la durée du probatoire, pas une durée fixe ; son absence est une contravention
+    de 2e classe.'
   theme: D
   sous_theme: permis
   source: Code de la route, art. R413-5 II et III ; L223-1
@@ -69,15 +71,14 @@
   prerequis:
   - d-telephone-sanction
 - id: aff-d-video-verbalisation
-  affirmation: Un feu rouge grillé peut m'être verbalisé sans que je sois intercepté.
+  affirmation: Je peux quand même recevoir une amende par courrier.
   verdict: vrai
-  pourquoi: La vidéo-verbalisation constate sans interception le téléphone tenu en main, le non-port de la ceinture,
-    le franchissement d’une ligne continue, la circulation sur la bande d’arrêt d’urgence ou dans un couloir de
-    bus, le feu rouge, le STOP, les distances de sécurité ou l’engagement dans une intersection encombrée. L’avis
-    arrive par courrier au titulaire de la carte grise.
+  pourquoi: La vidéo-verbalisation constate sans interception notamment le téléphone tenu en main, le non-port de la ceinture,
+    le feu rouge, le STOP et la ligne continue. L’avis arrive par courrier au titulaire de la carte grise.
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L121-3 et R130-11 ; securite-routiere.gouv.fr, Contrôle automatisé
+  contexte: Je téléphone au volant, téléphone en main ; aucun agent ne m’arrête.
 - id: aff-d-alcool-contravention
   affirmation: Contrôlé à 0,9 g/L de sang, je risque une contravention de 135 € et 6 points.
   verdict: faux
@@ -88,7 +89,8 @@
 - id: aff-d-sans-assurance-points
   affirmation: Conduire sans assurance est un délit, mais ne fait perdre aucun point.
   verdict: vrai
-  pourquoi: "Le défaut d'assurance expose à une amende délictuelle, à une suspension et à une confiscation, sans retrait de points. La responsabilité civile reste obligatoire pour tout véhicule à moteur, même immobilisé, et le FGAO peut réclamer au responsable non assuré les sommes versées aux victimes."
+  pourquoi: Le défaut d’assurance expose à une amende délictuelle, à une suspension et à une confiscation, sans retrait
+    de points. La responsabilité civile reste obligatoire pour tout véhicule à moteur, même immobilisé.
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. L324-2 ; Code des assurances, art. L211-1

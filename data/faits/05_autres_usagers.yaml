@@ -1,7 +1,6 @@
 - id: u-edpm-chiffres
-  explication: 'Assurance de responsabilité civile obligatoire. Trottoir interdit sauf autorisation locale, au pas et sans
-    gêner. Sur une route limitée à 80 km/h ou moins, ouverte par autorisation locale : casque attaché, gilet et éclairage
-    complémentaire obligatoires ; ailleurs, le casque est recommandé.'
+  explication: Assurance de responsabilité civile obligatoire ; casque recommandé (obligatoire sur une route ouverte par
+    autorisation locale hors agglomération).
   theme: U
   sous_theme: edpm
   source: Code de la route, art. R412-43-1 à R412-43-3 ; décret n° 2023-848
@@ -21,13 +20,14 @@
   - À vélo, le gilet de haute visibilité est obligatoire la nuit ou par visibilité insuffisante {{c2::hors agglomération}}.
 - id: u-velo-equipement-chiffres
   explication: 'Équipement permanent : deux freins, des catadioptres (arrière rouge, avant blanc, orange sur les côtés et
-    les pédales) et un avertisseur sonore. Les catadioptres font voir le vélo de côté dans les phares d’une voiture qui débouche.'
+    les pédales) et un avertisseur sonore. Un catadioptre ne renvoie que la lumière des phares qui l’éclairent : hors de
+    ce faisceau, il ne signale rien.'
   theme: U
   sous_theme: cyclistes
   source: "Code de la route, art. R313-4 et s. ; securite-routiere.gouv.fr, Équipements obligatoires vélo"
   rappels:
-  - De nuit ou par visibilité insuffisante, un vélo doit avoir un feu avant {{c1::blanc ou jaune}} et un feu arrière
-    rouge.
+  - 'De nuit ou par visibilité insuffisante, les catadioptres ne suffisent pas : un vélo doit avoir {{c1::un feu avant (blanc
+    ou jaune) et un feu arrière rouge}} allumés.'
 - id: u-interfiles-chiffres
   explication: Files ininterrompues sur toutes les voies ; motos et tricycles L3e/L5e d’au plus 1 m de large, entre les deux
     voies les plus à gauche. Pas de neige, verglas ou travaux sur la chaussée ; espace suffisant. La limitation locale plus
@@ -42,9 +42,7 @@
     de la moto en inter-files : {{c2::50 km/h}}.'
   - 'En inter-files, dès qu''une des deux files est arrêtée, vitesse maximale : {{c3::30 km/h}}.'
 - id: u-moto-equipements-chiffres
-  explication: Un gilet de haute visibilité doit être à bord, à revêtir en cas d’arrêt d’urgence. Un cyclomoteur (≤ 50 cm³,
-    45 km/h) se conduit dès 14 ans avec le permis AM ; une 125 cm³ avec le permis A1, ou le permis B depuis 2 ans et 7 h de
-    formation.
+  explication: Un gilet de haute visibilité doit être à bord, à revêtir en cas d’arrêt d’urgence.
   theme: U
   sous_theme: motos
   source: Code de la route, art. R431-1, R431-1-2, R416-17, R416-19
@@ -54,8 +52,8 @@
 - id: u-pl-angles-morts-chiffres
   texte: Depuis 2021, les véhicules de plus de {{c1::3,5 t}} portent des autocollants « angles morts » sur les côtés et à
     l’arrière.
-  explication: 'Un camion qui tourne à droite se déporte d’abord à gauche : ne jamais se glisser dans l’espace qu’il
-    semble libérer.'
+  explication: 'Ils rappellent de ne pas s’attarder dans ces zones, surtout à droite de la cabine. Leur absence ne prouve
+    pas l’absence d’angle mort : une camionnette en a aussi.'
   theme: U
   sous_theme: poids_lourds
   source: "securite-routiere.gouv.fr, Angles morts ; Code de la route, art. R313-32-1 et R412-12"

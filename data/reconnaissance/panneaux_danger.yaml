@@ -59,7 +59,7 @@
   comparaisons:
   - ref: a2b
     legende: 'Une seule bosse : ralentisseur aménagé.'
-  piege: 'Deux bosses : déformation de la chaussée ; une seule bosse : ralentisseur aménagé.'
+  piege: 'Deux bosses : c’est un défaut de la chaussée, pas un aménagement ; il surprend à vitesse normale.'
 - id: a2b
   type: panneau
   code: A2b
@@ -71,7 +71,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Le triangle annonce le ralentisseur ; le carré bleu en indique l’emplacement.
+  piege: 'Le triangle est implanté en amont : le ralentisseur est encore plus loin.'
   comparaisons:
   - ref: c27
     legende: 'Carré bleu : le ralentisseur est ici.'
@@ -173,7 +173,7 @@
   nom: Endroit fréquenté par les enfants
   signification: Annonce un endroit fréquenté par les enfants (école, colonie, terrain de jeux).
   conduite: Ralentir fortement (souvent limité à 30 km/h), être prêt à s'arrêter ; les enfants sont imprévisibles.
-  piege: 'Deux enfants qui courent : lieu fréquenté par des enfants. Le piéton sur des bandes annonce, lui, un passage pour piétons.'
+  piege: 'Pas de bandes sous les silhouettes : aucun passage n’est annoncé, un enfant peut traverser n’importe où.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -196,7 +196,7 @@
     legende: 'Carré bleu : le passage est ici.'
   - ref: a13a
     legende: 'Deux enfants : lieu fréquenté par des enfants.'
-  piege: Le triangle annonce le passage ; le carré bleu le situe.
+  piege: 'Le triangle annonce le passage : les bandes ne sont pas à sa hauteur mais plus loin.'
 - id: a14
   type: panneau
   code: A14
@@ -275,7 +275,6 @@
   signification: Annonce qu'après une section à sens unique ou à chaussées séparées, la circulation redevient bidirectionnelle sur la même chaussée.
   conduite: 'Serrer à droite : la partie gauche de la chaussée n''est plus une voie dans mon sens.'
   complement: Seul panneau de danger implanté à l'endroit même du danger, et non 150 m avant.
-  piege: 'Les deux flèches opposées dans le triangle annoncent une circulation à double sens : je dois désormais attendre des véhicules en face.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -310,7 +309,7 @@
   nom: Débouché de cyclistes venant de droite ou de gauche
   signification: Annonce un endroit où des cyclistes débouchent fréquemment sur la chaussée (sortie de piste cyclable, traversée).
   conduite: Ralentir, contrôler les côtés ; laisser au moins 1 m (agglo) ou 1,5 m (hors agglo) lors du dépassement d'un cycliste.
-  piege: 'Avec un vélo, la forme change le sens : triangle = danger ; rond bleu = piste obligatoire ; carré bleu = piste conseillée ; rond rouge = accès interdit.'
+  piege: 'Avec le même vélo, c’est la forme qui fixe le sens : le triangle annonce seulement un danger.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

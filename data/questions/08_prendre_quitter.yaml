@@ -4,8 +4,7 @@
     du poste de conduite ?
   reponse: Un pneu affaissé ou abîmé, une fuite, un feu ou une plaque sale, et tout obstacle bas invisible du siège
     (un enfant accroupi).
-  explication: 'Le tour sert à voir ce que le poste de conduite masque : bas des pneus, fuite au sol, feux et plaques
-    sales, obstacle bas ou enfant accroupi. Un pneu sous-gonflé ne se voit pas toujours : la pression se mesure.'
+  explication: 'Un pneu sous-gonflé ne se voit pas toujours : la pression se mesure, à froid.'
   theme: P
   sous_theme: verifications
   source: "REMC (compétence 1) ; securite-routiere.gouv.fr, Bien préparer son trajet"
@@ -164,12 +163,10 @@
   sous_theme: quitter
   source: "Code de la route, art. R417-8 ; Nissan Juke 2024, stationnement, https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml"
 - id: p-quitter-objets
-  question: Je laisse ma voiture sur un parking de gare pour la journée ; mon sac est sur le siège passager. Que
-    fais-je avant de partir ?
-  reponse: 'J’emporte le sac, surtout s’il contient des valeurs ou des documents ; je ferme les vitres et verrouille
-    le véhicule.'
-  explication: Si je dois laisser des affaires sans valeur, je les mets hors de vue dans le coffre fermé, de préférence
-    avant d’arriver. Cela réduit la tentation sans garantir contre le vol.
+  question: Je dois laisser un sac dans ma voiture, sur un parking de gare, pour la journée. Où et quand le ranger ?
+  reponse: 'Dans le coffre fermé, de préférence avant d’arriver : le ranger sur place montre ce qu’il y a à prendre.'
+  explication: Valeurs et documents repartent avec moi ; vitres fermées, véhicule verrouillé. Cela réduit la tentation sans
+    garantir contre le vol.
   theme: P
   sous_theme: quitter
   source: "Ministère de l’Intérieur, prévention des vols dans les véhicules, https://www.interieur.gouv.fr/fr/Archives/Archives-de-la-rubrique-Ma-securite/Avec-votre-vehicule/Contre-les-vols-de-voitures-et-d-accessoires-les-bons-reflexes"
@@ -227,10 +224,10 @@
   sous_theme: quitter
   source: "Nissan Juke 2024, stationnement, https://www.nissan.fr/etre-proprietaire-d-une-nissan/manuels-utilisation/manuels/iom/juke/0f16/e0/2024/stationnement-3.shtml ; Sécurité civile, fortes chaleurs, https://www.securite-civile.interieur.gouv.fr/actualites/actualites/fortes-chaleurs-canicule-quels-sont-bons-reflexes-a-adopter-pour-preserver-sa-sante"
 - id: p-quitter-stationnement-surveiller
-  question: Garé le long du trottoir de droite, je vais quitter ma place. Juste avant de m'engager, que dois-je contrôler, et qui passe en premier ?
-  reponse: Rétroviseurs puis angle mort gauche, côté où je rejoins la circulation ; clignotant ; je laisse passer ceux qui circulent déjà.
-  explication: Le côté du contrôle dépend de la manœuvre et de la configuration ; ne pas mémoriser « toujours à droite » d’après
-    une seule photo.
+  question: Garé le long du trottoir de droite, je vais repartir. Quel contrôle juste avant de m’engager ?
+  reponse: 'Le rétroviseur gauche puis l’angle mort gauche, en tournant la tête : c’est de ce côté que je rejoins la circulation.'
+  explication: Un cycliste ou un deux-roues peut se trouver dans l’angle mort, que le rétroviseur ne montre pas. Le clignotant
+    annonce ma manœuvre sans me donner la priorité.
   theme: P
   sous_theme: quitter
   source: "Sécurité routière, Exemples de nouvelles questions (Q14) ; Code de la route, art. R412-10"

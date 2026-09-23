@@ -6,13 +6,16 @@
     params:
       state: rouge
   nom: Feu rouge fixe
-  signification: 'Arrêt absolu : interdiction de franchir la ligne d''effet des feux, y compris pour tourner à droite.'
+  signification: 'Arrêt absolu : interdiction de franchir la ligne d’effet des feux.'
   conduite: S'arrêter avant la ligne d'arrêt, sans empiéter sur le passage piéton ni le sas vélo ; attendre le vert.
   complement: Sans ligne au sol, je m'arrête avant le passage piéton s'il précède le feu, sinon à l'aplomb du feu.
   theme: L
   sous_theme: feux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Pas de « tourne à droite au rouge » en France. Les roues au-delà de la ligne, c'est déjà un feu grillé.
+  piege: En voiture, pas de tourne-à-droite au rouge sans signal qui l’autorise. Les roues au-delà de la ligne, c’est déjà un feu grillé.
+  comparaisons:
+  - ref: r16
+    legende: 'Flèche jaune clignotante : passage permis dans sa direction, en cédant.'
 - id: feu-jaune-fixe
   type: feu
   image:
@@ -26,7 +29,6 @@
   theme: L
   sous_theme: feux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Ne jamais accélérer pour « passer à l''orange » : le jaune impose l''arrêt, sauf impossibilité.'
 - id: feu-vert
   type: feu
   image:
@@ -50,7 +52,7 @@
   nom: Feu jaune clignotant
   signification: Passage prudent, en respectant les panneaux de priorité et les autres règles de priorité.
   conduite: Ralentir et appliquer le panneau placé sous le feu (STOP, cédez-le-passage) ou, à défaut, la priorité à droite.
-  piege: Un feu jaune clignotant seul sur un panneau (R1) n'est qu'un renfort d'attention, pas un régime de priorité.
+  piege: Un feu jaune clignotant fixé au-dessus d’un panneau de danger n’est qu’un renfort d’attention, pas un régime de priorité.
   theme: L
   sous_theme: feux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -81,7 +83,7 @@
   theme: L
   sous_theme: feux
   source: Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  piege: Vert autorise à commencer la traversée ; au rouge, ne pas s’engager. En voiture, laisser finir les piétons déjà engagés.
+  piege: 'Quand je tourne au vert, les piétons de la rue où j’entre peuvent avoir leur propre vert : je leur cède le passage.'
 - id: r13
   type: feu
   code: R13
@@ -107,7 +109,7 @@
   nom: Signaux tricolores directionnels (feux à flèches)
   signification: 'Feux tricolores dont les trois feux portent une flèche : ils ne concernent que les usagers qui vont dans cette direction.'
   conduite: Se placer dans la voie de sa direction et obéir au feu fléché ; au vert, les flux qui me coupent ont en principe le rouge, mais je laisse finir un piéton encore engagé.
-  piege: Ne pas confondre avec R16, la flèche jaune clignotante (passer en cédant le passage).
+  piege: Ne pas confondre avec la flèche jaune clignotante, qui permet de passer en cédant le passage.
   theme: L
   sous_theme: feux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -123,11 +125,10 @@
   nom: Signal d'anticipation directionnel (flèche jaune clignotante)
   signification: 'Flèche jaune clignotante à côté d''un feu tricolore : les usagers allant dans cette direction peuvent passer, même au rouge, sans aucune priorité.'
   conduite: Céder le passage aux piétons et aux véhicules qui ont le vert avant de tourner ; s'arrêter si nécessaire.
-  complement: Souvent pour le tourne-à-droite. Sans R16, tourner à droite au rouge reste interdit.
+  complement: Souvent pour le tourne-à-droite. Sans cette flèche, tourner à droite au rouge reste interdit.
   theme: L
   sous_theme: feux
   source: Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25
-  piege: 'Flèche jaune clignotante : autorisation conditionnelle, sans priorité sur les usagers dont on coupe la trajectoire.'
 - id: r17
   type: feu
   code: R17
@@ -171,7 +172,6 @@
       - fleche
   nom: 'Signal d''affectation de voie : flèche verte vers le bas'
   signification: 'Flèche verte fixe pointant vers le bas au-dessus d''une voie : autorisation de circuler sur cette voie.'
-  conduite: Rester ou se placer dans cette voie.
   theme: L
   sous_theme: feux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

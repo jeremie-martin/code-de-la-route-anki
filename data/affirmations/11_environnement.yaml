@@ -81,9 +81,9 @@
   contexte: Une voiture diesel récente équipée d’un filtre à particules et une essence récente à injection directe.
   affirmation: C’est le diesel qui émet le plus de particules à l’échappement.
   verdict: faux
-  pourquoi: Le système d’injection, la dépollution (notamment le filtre à particules) et les conditions d’usage
-    comptent aussi. Une essence à injection directe peut émettre davantage de particules qu’un diesel filtré.
-    Distinguer les polluants ; le carburant seul ne fournit pas un classement universel.
+  pourquoi: 'Une essence à injection directe peut émettre davantage de particules qu’un diesel équipé d’un filtre : l’injection,
+    la dépollution et les conditions d’usage comptent autant que le carburant. Distinguer les polluants ; le carburant seul
+    ne fournit pas un classement universel.'
   theme: E
   sous_theme: pollution
   source: "IFPEN, étude de véhicules Euro 6d-TEMP (2020), pas un classement de tout le parc 2026, https://www.ifpenergiesnouvelles.fr/article/emissions-des-voitures-essence-et-diesel-recentes-publication-letude-realisee-ifpen"
@@ -107,9 +107,7 @@
   source: "Ville de Paris, https://www.paris.fr/pages/la-voie-reservee-sur-le-peripherique-entre-en-vigueur-le-3-mars-30106"
   comparaisons:
   - ref: vr-losange-debut
-    legende: 'Voie réservée : le panonceau dit qui peut l’emprunter.'
-  - ref: marq-losange-vr
-    legende: Losange au sol dans la voie réservée.
+    legende: 'Début de voie réservée : lire le panonceau qui l’accompagne.'
 - id: aff-e-borne-recharge
   contexte: Place équipée d'une borne de recharge, libre devant les commerces.
   affirmation: Je peux m'y garer sans recharger, le temps d'une course rapide.
@@ -120,9 +118,7 @@
   source: Code de la route, art. R417-10 III 3°
   comparaisons:
   - ref: m6i
-    legende: Place réservée aux véhicules électriques pendant la recharge.
-  - ref: ce15i
-    legende: Signalisation d’une borne de recharge.
+    legende: Panonceau des places réservées à la recharge.
 - id: aff-e-freinage-regeneratif
   contexte: Voiture électrique ou hybride, en décélération.
   affirmation: En levant le pied, le moteur ralentit le véhicule et recharge la batterie.

@@ -566,3 +566,10 @@
   raison: 'Variante d’inscription de M9v1 (« SAUF » et vélo) : même sens.'
   couverts_par:
   - m9v1
+- codes:
+  - M5
+  raison: 'Le signal avancé de STOP (triangle et panonceau « STOP » avec distance) est déjà reconnu en entier : même
+    rappel, même conduite.'
+  couverts_par:
+  - ab5
+  - conf-ab3b-ab5

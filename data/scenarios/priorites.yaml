@@ -187,9 +187,8 @@
     - E
     - avant
   question: Les véhicules suivent les flèches. Dois-je passer avant ou après la voiture rouge, et pourquoi ?
-  reponse: 'Moi : je suis sur la route prioritaire, la rouge doit s''arrêter et me céder le passage.'
-  explication: 'Le STOP de la rouge l’oblige à s’arrêter et à me céder le passage, même si elle arrive de ma droite
-    : un panneau de priorité remplace la priorité à droite.'
+  reponse: 'Moi : la rouge a un STOP ; elle doit s’arrêter et me céder le passage, même si elle vient de ma droite.'
+  explication: Un panneau de priorité remplace la priorité à droite ; il ne vise que les usagers de la route où il est implanté.
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R415-6 et R415-7
@@ -201,8 +200,9 @@
       W: {vehicle: {colour: rouge}, goes: straight}
   check: {pair: [S, W, apres]}
   question: "Les véhicules suivent les flèches. Puis-je m'engager avant la voiture rouge ?"
-  reponse: 'Non : mon cédez-le-passage m''impose de laisser passer la rouge. Si la voie était libre, je pourrais m''engager sans m''arrêter.'
-  explication: 'Le cédez-le-passage n’impose pas l’arrêt, mais impose de laisser passer les véhicules de la route transversale. Même en tournant à droite, je dois attendre : la rouge va occuper la voie où je m’engage.'
+  reponse: 'Non : mon cédez-le-passage m’impose de laisser passer la rouge, même si je tourne à droite : elle va occuper
+    la voie où je m’engage.'
+  explication: 'Le cédez-le-passage n’impose pas l’arrêt : si la route était libre, je m’engagerais sans m’arrêter.'
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-7"
@@ -216,7 +216,8 @@
   check: {order: [N, S, E]}
   question: "Les véhicules suivent les flèches. Quel est l'ordre de passage ?"
   reponse: 'Rouge, puis moi, puis verte : je suis prioritaire (losange) mais je cède à la rouge qui vient d''en face ; la verte a un STOP.'
-  explication: "Être sur la route prioritaire ne dispense pas de la règle du tourne-à-gauche : je cède à la rouge qui vient en face. La verte, au STOP, attend que nous soyons passés tous les deux, même si elle est à ma droite."
+  explication: 'Le losange règle la priorité avec les routes transversales, pas entre les deux sens de la route prioritaire
+    : entre la rouge et moi, c’est la règle du tourne-à-gauche (R415-4).'
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-4 et R415-6"
@@ -308,8 +309,7 @@
   question: "Les véhicules suivent les flèches. Qui passe en premier ?"
   reponse: 'La rouge : feux au jaune clignotant = prudence et retour aux panneaux ou, sans panneau, à la priorité
     à droite.'
-  explication: 'Le jaune clignotant n''est pas un feu vert : il signale que les feux ne règlent plus la circulation.
-    On applique la signalisation verticale présente ; à défaut, la priorité à droite (R412-32 et R415-5).'
+  explication: 'Le jaune clignotant n’est pas un feu vert : il signale que les feux ne règlent plus la circulation (R412-32).'
   theme: L
   sous_theme: priorites
   source: Code de la route, art. R412-32 et R415-5
@@ -357,7 +357,7 @@
       - {pos: inside, angle: 225, colour: rouge}
   question: "Puis-je m'engager avant la voiture rouge ?"
   reponse: 'Non : les entrées portent un cédez-le-passage, c''est un carrefour à sens giratoire ; je cède aux véhicules déjà dans l''anneau.'
-  explication: Je cède aux véhicules qui circulent dans l’anneau. Avant ma sortie, je contrôle les autres usagers puis mets mon clignotant droit.
+  explication: Avant ma sortie, je contrôle les autres usagers puis mets mon clignotant droit.
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-10 ; IISR (AB25)"
@@ -370,7 +370,8 @@
       - {pos: inside, angle: 225, colour: rouge}
   question: "Puis-je m'engager avant la voiture rouge ?"
   reponse: 'Oui, si elle me laisse passer : les triangles à croix noire, sans cédez-le-passage, annoncent la priorité à droite, et j''arrive à sa droite. Je vérifie qu''elle ralentit.'
-  explication: 'La croix noire rappelle la priorité à droite : je suis à droite de la voiture déjà dans l’anneau. Elle doit me laisser entrer. C’est l’inverse d’un giratoire dont les entrées portent un cédez-le-passage.'
+  explication: 'C’est l’inverse d’un giratoire dont les entrées portent un cédez-le-passage (R415-10) : sans lui, la règle
+    générale (R415-5) s’applique aussi à l’entrée de l’anneau.'
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5 et R415-10 ; IISR"

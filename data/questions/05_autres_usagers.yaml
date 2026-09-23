@@ -44,7 +44,8 @@
   question: Je passe ce panneau ; un piéton marche au milieu de la chaussée devant moi. Que fais-je ?
   reponse: 'Je le suis à son allure, sans klaxonner : en zone de rencontre (20 km/h maximum), les piétons circulent sur toute
     la chaussée et ont priorité sur les véhicules.'
-  explication: Dans l’aire piétonne, les véhicules autorisés pour la desserte roulent à l’allure du pas. Dans une zone 30, les priorités habituelles s’appliquent et les piétons utilisent les passages lorsqu’ils y sont tenus. Le double sens cyclable est la règle par défaut en zone 30 et en zone de rencontre.
+  explication: Dans une zone 30, au contraire, les priorités habituelles s’appliquent et les piétons utilisent les passages
+    lorsqu’ils y sont tenus.
   theme: U
   sous_theme: pietons
   source: Code de la route, art. R110-2 et R415-11
@@ -124,8 +125,8 @@
 - id: u-edpm-ou-circuler
   question: Je suis en trottinette électrique, en agglomération, sur une avenue limitée à 50 km/h sans piste ni bande cyclable.
     Où dois-je rouler ?
-  reponse: Sur la chaussée (limitée à 50 km/h au plus), en tenant ma droite, faute d’aménagement cyclable ; le trottoir n’est
-    admis que sur autorisation locale, au pas.
+  reponse: 'Sur la chaussée, en tenant ma droite : sans piste ni bande cyclable, l’EDPM roule sur les voies limitées à 50
+    km/h au plus.'
   explication: 'Trottoir : seulement sur autorisation du maire, à l''allure du pas ; sinon je descends et je la pousse (je
     deviens piéton). Circuler hors des voies autorisées : 135 €.'
   theme: U
@@ -226,13 +227,14 @@
     width: 960
     legende: 'Les roues arrière coupent l’intérieur du virage : le camion a besoin de cette place.'
 - id: u-pl-depasser-suivre
-  question: 'Route à double sens : je souhaite dépasser ce poids lourd. Quelles précautions particulières ?'
-  reponse: Rester plus loin pour voir la route qu’il masque, ne m’engager que si la longueur libre suffit (dépassement long),
-    ne pas me rabattre trop tôt.
-  explication: Il freine moins vite, projette de l'eau et crée un appel d'air. Hors agglomération, deux poids lourds qui se suivent à la même vitesse gardent au moins 50 m (R412-12).
+  question: 'Route à double sens : je veux dépasser ce poids lourd. Où me placer avant de décider si je peux dépasser ?'
+  reponse: 'Plus loin derrière lui, pour voir la route qu’il me masque : collé à lui, je ne vois ni les véhicules en face
+    ni la longueur libre.'
+  explication: 'Le dépassement est long : je ne m’engage que si la longueur libre suffit, et je ne me rabats pas trop tôt.
+    Il freine moins vite, projette de l’eau et crée un appel d’air.'
   theme: U
   sous_theme: poids_lourds
-  source: "Code de la route, art. R414-4 et R412-12 ; coursdecode, Les poids lourds"
+  source: Code de la route, art. R414-4 ; coursdecode, Les poids lourds
   image:
     gen: road
     params:
@@ -297,9 +299,9 @@
   sous_theme: vehicules_prioritaires
   source: Code de la route, art. R311-1, R313-27, R313-34 et R415-12
 - id: u-gyrophare-orange
-  question: Un véhicule avec un gyrophare orange (dépanneuse, engin agricole, engin de chantier) approche. Que signale ce gyrophare ?
-  reponse: Un véhicule lent, encombrant ou en intervention, donc un danger à contourner prudemment ; il n'est pas
-    prioritaire.
+  question: Un véhicule équipé d’un gyrophare orange allumé arrive derrière moi. Que m’indique ce feu ?
+  reponse: 'Un véhicule lent, encombrant ou en intervention : un danger à contourner prudemment. Ce feu ne lui donne aucune
+    priorité.'
   explication: 'Gyrophare bleu + deux tons = prioritaire, on cède. Feux bleus à éclats + trois tons = facilités de passage
     (ambulance de transport sanitaire, par exemple), on facilite sans lui devoir la priorité. Exceptions au gyrophare orange
     : l’engin de service hivernal et, sur autoroute ou route à chaussées séparées, le véhicule d’intervention du gestionnaire

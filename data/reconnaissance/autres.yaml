@@ -7,7 +7,7 @@
       pose: bras_leve
   nom: 'Agent : bras levé verticalement'
   signification: 'Bras levé verticalement : « attention, arrêt » pour tous, sauf ceux déjà engagés dans l''intersection, qui la dégagent, et ceux qui ne peuvent plus s''arrêter sans danger.'
-  conduite: S'arrêter (avant l'intersection) et attendre le signal suivant ; si l'on est déjà engagé, terminer sa traversée.
+  conduite: Je m’arrête avant l’intersection et j’attends le geste suivant.
   complement: Équivalent du jaune puis du rouge pour tout le monde. Les injonctions de l'agent prévalent sur les feux et les panneaux.
   theme: L
   sous_theme: agents
@@ -39,7 +39,6 @@
         E:
           vehicle:
             colour: rouge
-          goes: straight
       agent: bras_tendus_NS
     width: 800
   nom: Agent vu de profil (bras tendus ou baissés)

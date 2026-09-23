@@ -5,6 +5,7 @@ Visual identity matches build/diagrams.py (same asphalt, grass, marking colours)
 """
 from __future__ import annotations
 
+import base64
 import math
 import textwrap
 
@@ -935,7 +936,8 @@ def giratoire_sortie(params):
     vehicles: [{kind, colour, me, lane: "int" | "ext" | "both" (straddling), angle (deg, 0 = east, anticlockwise)}]
               or {entry: S|W|N|E} for a vehicle waiting at that entry; exit: the branch marked « Sortie visée »;
     marker: {angle, text, label: [x, y]} a spot of the outer lane, with its label placed at (x, y). Default: MOI inside, cyclist outside, exit E.
-    answer_on_back: the marker is the answer, drawn only on the back of a « verso » image."""
+    answer_on_back: the marker is the answer, drawn only on the back of a « verso » image;
+    cedez: a give-way sign on the right-hand verge of each entry (the entries' regime is then visible)."""
     vehicles = params.get("vehicles", [{"me": True, "lane": "int", "angle": -32}, {"kind": "bike", "colour": "rouge", "lane": "ext", "angle": -30}])
     exit_ = params.get("exit", "E")
     S = SVG(640, 440)
@@ -947,6 +949,10 @@ def giratoire_sortie(params):
     S.add(f'<path d="M437 220H640 M240 0V23 M240 417V440 M0 220H43" stroke="{MARK}" stroke-width="3"/>')
     for x1, y1, x2, y2 in ((440, 168, 440, 216), (193, 22, 236, 22), (244, 418, 287, 418), (40, 224, 40, 272)):
         S.add(f'<path d="M{x1} {y1}L{x2} {y2}" stroke="{MARK}" stroke-width="6" stroke-dasharray="8 6"/>')
+    if params.get("cedez"):
+        cede = "data:image/svg+xml;base64," + base64.b64encode(CEDEZ_SVG.encode()).decode()
+        for x, y in ((298, 398), (148, 0), (446, 122), (0, 280)):  # S, N, E, W: verge on the entrant's right
+            S.add(f'<image href="{cede}" x="{x}" y="{y}" width="40" height="40"/>')
     radius = {"int": 94, "ext": 162, "both": 128}
     entry = {"S": (265, 390, 0), "N": (215, 50, 180), "E": (560, 195, 270), "W": (-80, 245, 90)}
     for v in vehicles:
@@ -1562,7 +1568,8 @@ def pneu_usure(params):
 
 def angles_morts(params):
     """Plan view: my car, what the mirrors show (VISIBLE cones) and the two blind spots (HIDDEN hatch), a motorbike in one.
-    The zones are indicative: they vary with the vehicle and the mirror setting."""
+    The zones are indicative: they vary with the vehicle and the mirror setting.
+    answer_on_back: the blind spots and the motorbike are the answer, drawn only on the back of a « verso » image."""
     S = SVG(480, 420)
     S.add(f'<rect x="0" y="0" width="480" height="420" fill="{ASPHALT}"/>')
     for x in (160, 320):
@@ -1571,13 +1578,16 @@ def angles_morts(params):
     for pts in (f"{cx - 14},{cy + 40} {cx - 50},420 {cx + 50},420 {cx + 14},{cy + 40}",
                 f"{cx - 30},{cy - 10} {cx - 150},420 {cx - 70},420", f"{cx + 30},{cy - 10} {cx + 150},420 {cx + 70},420"):
         S.add(f'<polygon points="{pts}" fill="{VISIBLE}" opacity="0.3"/>')
-    _hidden_pattern(S)
-    for side in (-1, 1):
-        x_in, x_out = cx + side * 40, cx + side * 200    # across the whole neighbouring lane
-        S.add(f'<path d="M{x_in},{cy - 20} L{x_out},{cy + 10} L{x_out},{cy + 150} L{x_in},{cy + 70} Z" fill="url(#hidden)" stroke="{HIDDEN}" stroke-width="2"/>')
+    answer = params.get("verso") or not params.get("answer_on_back")
+    if answer:
+        _hidden_pattern(S)
+        for side in (-1, 1):
+            x_in, x_out = cx + side * 40, cx + side * 200    # across the whole neighbouring lane
+            S.add(f'<path d="M{x_in},{cy - 20} L{x_out},{cy + 10} L{x_out},{cy + 150} L{x_in},{cy + 70} Z" fill="url(#hidden)" stroke="{HIDDEN}" stroke-width="2"/>')
     S.add(f'<g transform="translate({cx},{cy}) scale(1.4)">{ME}</g>')
-    S.add(f'<g transform="translate(80,{cy + 60}) scale(1.3)">{vehicle_sprite("moto", "rouge")}</g>')  # mid-lane
-    _pill(S, 16, 30, "angles morts")
+    if answer:
+        S.add(f'<g transform="translate(80,{cy + 60}) scale(1.3)">{vehicle_sprite("moto", "rouge")}</g>')  # mid-lane
+        _pill(S, 16, 30, "angles morts")
     _pill(S, 464, 404, "vu dans les rétroviseurs", anchor="end")
     return str(S)
 
@@ -1705,7 +1715,8 @@ def rue_stationnement(params):
     parked: y centres of the parked cars; door: index of the car whose driver's door is open;
     door_label: its reach, written on the pavement; me: y of MOI (with a door open, the line its right side follows);
     crossing: y of a zebra crossing, with `no_parking` the 5 m before it (upstream) marked and measured;
-    child: y of a child standing in a gap between the parked cars, about to step out."""
+    child: y of a child standing in a gap between the parked cars, about to step out (with answer_on_back, the child
+    and the side-view inset are drawn only on the back of a « verso » image)."""
     S = SVG(420, 400, view=(80, 0, 340, 400))                                 # half of the oncoming lane is enough
     S.add(f'<rect x="0" y="0" width="420" height="400" fill="#cfd3d4"/>')     # pavements
     road0, axis, park0, park1 = 30, 120, 210, 272
@@ -1737,7 +1748,7 @@ def rue_stationnement(params):
             if params.get("door_label"):
                 S.add(f'<path d="M{px + 26},{y - 6} H{park1 + 12}" stroke="{INK}" stroke-width="1.5" stroke-dasharray="4 4"/>')
                 _text(S, park1 + 16, y, params["door_label"], LABEL_SIZE, INK, "start")
-    if params.get("child") is not None:                  # a child in a gap between parked cars, about to step out
+    if params.get("child") is not None and (params.get("verso") or not params.get("answer_on_back")):
         y = params["child"]
         S.add(pedestrian(px - 4, y + 4))
         S.add(f'<path d="M{px - 20},{y} H{px - 50} m8,-7 l-8,7 l8,7" fill="none" stroke="{MARK}" stroke-width="3"/>')
@@ -2282,8 +2293,8 @@ def tourner_gauche_placement(params):
 
 def virage_gauche(params):
     """Blind left-hand bend on a two-way road: the inside of the bend (trees) hides the oncoming car; my path stays
-    in my lane, near the right edge. answer_on_back: the path is the answer, drawn only on the back of a « verso »
-    image."""
+    in my lane, near the right edge. answer_on_back: the path and the oncoming car are the answer, drawn only on the
+    back of a « verso » image."""
     S = SVG(480, 380)
     S.add(f'<rect x="0" y="0" width="480" height="380" fill="{GRASS}"/>')
     road = "M330,380 V230 A150,150 0 0 0 180,80 H0"
@@ -2293,10 +2304,10 @@ def virage_gauche(params):
     for cx, cy, r in ((186, 236, 44), (150, 270, 34), (214, 280, 30), (120, 230, 28), (160, 200, 26), (100, 300, 30),
                       (70, 250, 26), (200, 330, 26)):
         S.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#5d7f4a" stroke="#48673a" stroke-width="2"/>')
-    if params.get("verso") or not params.get("answer_on_back"):
+    if params.get("verso") or not params.get("answer_on_back"):  # the hidden oncoming car is part of the answer too
         S.add(f'<path d="M372,268 V230 A192,192 0 0 0 180,38 H60" fill="none" stroke="{YELLOW}" stroke-width="3" stroke-dasharray="8 6"/>')
+        S.add(f'<g transform="translate(70,120) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
     S.add(f'<g transform="translate(372,318)">{ME}</g>')
-    S.add(f'<g transform="translate(70,120) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
     return str(S)
 
 

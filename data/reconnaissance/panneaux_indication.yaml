@@ -29,7 +29,7 @@
     commons: France road sign C6.svg
   nom: Arrêt d'autobus ou d'autocar
   signification: Indique un arrêt de bus ou de car de ligne régulière ; l'arrêt et le stationnement des autres véhicules y sont interdits (zigzag jaune au sol).
-  conduite: Ne pas s'arrêter sur l'emplacement. En agglomération, ralentir et au besoin s'arrêter pour laisser le bus quitter son arrêt (R412-11) ; son clignotant annonce ce départ.
+  conduite: Ne pas s’arrêter sur l’emplacement. En agglomération, ralentir et au besoin s’arrêter pour laisser le bus quitter son arrêt ; son clignotant annonce ce départ.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -41,7 +41,6 @@
   nom: Emplacement d'arrêt d'urgence
   signification: Indique un emplacement (refuge) où l'arrêt d'urgence est possible sur une route sans bande d'arrêt d'urgence (autoroute, route à chaussées séparées, tunnel).
   conduite: Je n’y stationne qu’en cas de panne ou d’urgence ; les panonceaux peuvent signaler un poste d’appel ou un extincteur.
-  complement: Un arrêt hors urgence sur cet emplacement est interdit.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -54,7 +53,7 @@
   signification: 'La chaussée est à sens unique : tous les véhicules circulent dans le sens de la flèche ; le demi-tour y est interdit, puisqu''il ferait circuler à contresens.'
   conduite: Rester à droite, sauf pour tourner à gauche ou dépasser ; attention aux cyclistes à contresens si double-sens cyclable.
   complement: À l’autre extrémité, un sens interdit empêche les véhicules d’entrer face à moi.
-  piege: La flèche sur fond bleu carré indique un sens unique ; dans un rond bleu, elle impose d’aller tout droit.
+  piege: Dans un carré bleu, la flèche donne le sens de la rue ; elle ne m’impose pas d’aller tout droit au carrefour.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -114,14 +113,13 @@
   nom: Priorité par rapport à la circulation venant en sens inverse
   signification: Dans ce passage étroit, j’ai la priorité sur les véhicules venant en sens inverse.
   conduite: 'S''engager en restant prudent : la priorité ne dispense pas de vérifier que l''autre a bien cédé le passage.'
-  complement: En face, le panneau rond bordé de rouge impose aux autres véhicules de me céder le passage.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Ma direction est celle de la flèche vers le haut. La flèche rouge descendante représente le sens opposé : c’est lui qui cède.'
+  piege: 'Je lis ma flèche, celle qui monte : blanche ici, j’ai la priorité ; rouge, je céderais.'
   comparaisons:
   - ref: b15
-    legende: 'De l’autre côté : le sens opposé doit céder.'
+    legende: 'Panneau vu par ceux d’en face : ils me cèdent.'
 - id: c20a
   type: panneau
   code: C20a
@@ -134,7 +132,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Le triangle annonce un passage pour piétons plus loin ; le carré bleu en indique l’emplacement.
+  piege: 'Ce panneau est au passage même : les bandes sont à sa hauteur.'
   comparaisons:
   - ref: a13b
     legende: 'Triangle : passage pour piétons plus loin.'
@@ -241,7 +239,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Le carré bleu se trouve au ralentisseur ; le triangle l'annonce en amont.
+  piege: 'Le carré bleu est au ralentisseur même : je dois déjà rouler à allure réduite.'
   comparaisons:
   - ref: a2b
     legende: 'Triangle : le ralentisseur est plus loin.'
@@ -256,7 +254,6 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: 'Repère pratique : celui dont la voie disparaît s’insère dans la voie qui continue, sans gêner ceux qui y circulent.'
 - id: c29a
   type: panneau
   code: C29a
@@ -333,7 +330,6 @@
   nom: 'Péage en flux libre : moyens de paiement'
   signification: 'Péage « en flux libre » (sans barrière, plaques lues sous un portique) : indique les moyens de paiement.'
   conduite: Ne pas s'arrêter sous le portique ; payer sous 72 h en ligne, en point de vente ou par télépéage.
-  complement: 'Sans barrière : le paiement se fait après le passage, dans le délai indiqué.'
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -392,11 +388,11 @@
   nom: Piste ou bande cyclable conseillée et réservée aux cycles
   signification: Piste ou bande cyclable conseillée pour les cycles à deux ou trois roues.
   conduite: 'En voiture : ne pas y circuler ni s’y arrêter.'
-  complement: Les trottinettes électriques et cyclomobiles légers doivent l’emprunter, sauf décision locale contraire signalée. Un panonceau avec un cyclomoteur peut aussi autoriser ces véhicules.
+  complement: Un panonceau cyclomoteur peut l’ouvrir aux cyclomoteurs ; une décision locale peut l’interdire aux trottinettes.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Le rond bleu impose la piste aux cyclistes ; le carré la conseille. Les EDPM doivent l’emprunter en agglomération.
+  piege: '« Conseillée » ne vaut que pour les cyclistes : en agglomération, la trottinette électrique doit l’emprunter.'
 - id: c115
   type: panneau
   code: C115
@@ -418,13 +414,13 @@
   signification: 'Début d''autoroute : route réservée aux véhicules à moteur rapides, sans croisement à niveau ; arrêt, demi-tour et marche arrière interdits.'
   conduite: S'insérer par la voie d'accélération en cédant le passage, rouler à droite, ne pas circuler sur la BAU.
   complement: '130 km/h (110 sous la pluie, 110 en permis probatoire) ; voie de gauche : 80 minimum si la circulation est fluide et que visibilité et adhérence le permettent.'
-  piege: 'Le symbole de pont indique une autoroute. La voiture vue de face indique une route réservée aux automobiles : elle n’est pas forcément une autoroute.'
+  piege: Le pont au-dessus de la chaussée signale l’autoroute.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
   comparaisons:
   - ref: c107
-    legende: 'Voiture de face : route réservée aux automobiles.'
+    legende: 'Voiture de face : route pour automobiles, pas forcément une autoroute.'
 - id: c208
   type: panneau
   code: C208

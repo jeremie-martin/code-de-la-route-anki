@@ -49,7 +49,6 @@
 - id: c-intervalle-pl-tunnel
   texte: Hors agglomération, ma voiture tractant une caravane forme un ensemble de plus de 7 m ; derrière un poids lourd
     ou un autre long ensemble roulant à la même vitesse, je garde au moins {{c1::50 m}}.
-  explication: 'En tunnel, respecter la distance affichée : elle diffère souvent en circulation et à l’arrêt.'
   theme: C
   sous_theme: distances
   source: "Code de la route, R412-12 ; CETU, sécurité des usagers en tunnel"
@@ -67,9 +66,8 @@
     legende: 'Deux traits complets entre nous : environ 90 m, plus que 2 s à 130 km/h.'
 - id: c-acuite-5-10
   texte: Pour le permis B, le seuil d’acuité visuelle binoculaire est d’au moins {{c1::5/10}}, avec correction si nécessaire.
-  explication: 'Arrêté du 28 mars 2022 : acuité binoculaire ≥ 5/10 (si un œil voit moins de 1/10, l''autre doit atteindre
-    5/10) et champ visuel horizontal ≥ 120°. Avec lunettes ou lentilles obligatoires, le permis porte le code 01 : conduire
-    sans, c''est 135 € et 3 points. La baisse de la vue est progressive et passe inaperçue : contrôle régulier conseillé.'
+  explication: 'Si un œil voit moins de 1/10, l’autre doit atteindre 5/10 ; le champ visuel horizontal doit atteindre au
+    moins 120° (arrêté du 28 mars 2022). La baisse de la vue est progressive et passe inaperçue : contrôle régulier conseillé.'
   theme: C
   sous_theme: perception
   source: "Arrêté du 28 mars 2022 ; En Voiture Simone, Acuité visuelle ; Code de la route, art. R221-1-1"
@@ -126,15 +124,16 @@
   prerequis:
   - c-alcool-seuils-sang
 - id: c-medicaments-niveaux
-  explication: Somnifères et anxiolytiques (benzodiazépines), certains antihistaminiques, antitussifs et antalgiques sont
-    concernés ; environ un tiers des médicaments portent un pictogramme, y compris sans ordonnance. Ne jamais associer à l'alcool.
+  explication: 'Niveau 3 : pour reprendre la conduite, demander un avis médical. Somnifères et anxiolytiques (benzodiazépines),
+    certains antihistaminiques, antitussifs et antalgiques sont concernés ; environ un tiers des médicaments portent un
+    pictogramme, y compris sans ordonnance. Ne jamais associer à l’alcool.'
   theme: C
   sous_theme: deficiences
   source: "ANSM, Médicaments et conduite ; arrêté du 8 août 2008 (CSP, art. R5121-139) ; securite-routiere.gouv.fr, Les médicaments et la conduite"
   rappels:
   - 'Pictogramme médicaments de niveau 1 (jaune) : {{c1::lire la notice}} avant de conduire.'
   - 'Pictogramme médicaments de niveau 2 (orange) : ne pas conduire sans {{c2::l’avis d’un professionnel de santé}}.'
-  - 'Pictogramme médicaments de niveau 3 (rouge) : {{c3::ne pas conduire}} ; demander un avis médical pour reprendre.'
+  - 'Pictogramme médicaments de niveau 3 (rouge) : {{c3::ne pas conduire}}.'
   illustration:
     gen: medicaments_niveaux
     legende: Les trois pictogrammes imprimés sur les boîtes de médicaments.
@@ -151,7 +150,7 @@
     et de car, et à celui dont le permis est limité aux véhicules équipés d’un éthylotest anti-démarrage (R234-1).'
   source: "Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F2881 ; Code de la route, art. R234-1"
 - id: c-energie-choc
-  texte: Heurter un obstacle à 50 km/h équivaut à une chute d’environ {{c1::10 m}}, soit un troisième étage.
+  texte: Heurter un obstacle à 50 km/h équivaut à une chute d’environ {{c1::10 m, soit un troisième étage}}.
   explication: 'L’énergie du choc croît avec le carré de la vitesse : à vitesse doublée, elle est multipliée par quatre.
     À 50 km/h (14 m/s), la hauteur de chute équivalente vaut v²/2g ≈ 10 m. C’est pourquoi quelques km/h de moins
     réduisent fortement la gravité d’un choc, surtout pour un piéton.'

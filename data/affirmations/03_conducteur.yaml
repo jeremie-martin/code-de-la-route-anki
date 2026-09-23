@@ -1,18 +1,20 @@
 - id: aff-c-champ-visuel-vitesse-pieton
   contexte: Je roule vite dans une rue bordée de trottoirs.
-  affirmation: Plus ma vitesse est élevée, plus je risque de ne pas voir un piéton qui s'apprête à traverser
-    depuis le trottoir.
-  verdict: vrai
-  pourquoi: À vitesse élevée, l’attention se concentre davantage vers l’avant et laisse moins de temps pour
-    explorer les côtés. Réduire l’allure et balayer du regard ; pas de table d’angles garantie pour chaque
-    vitesse.
+  affirmation: 'À vitesse élevée, mon regard porte plus loin : je repère donc plus tôt un piéton qui s’apprête à traverser
+    depuis le trottoir.'
+  verdict: faux
+  pourquoi: 'Mon regard porte bien plus loin, mais mon champ visuel se rétrécit : l’attention se concentre vers l’avant,
+    j’explore moins les côtés et j’ai moins de temps pour y détecter un mouvement. Réduire l’allure et balayer du regard
+    les trottoirs.'
   theme: C
   sous_theme: perception
   source: "securite-routiere.gouv.fr, Dépliant La vue ; Conduire sur autoroute"
 - id: aff-c-vision-peripherique
-  affirmation: C'est ma vision périphérique, peu précise, qui me permet de détecter un mouvement sur le côté, comme un piéton qui descend du trottoir.
-  verdict: vrai
-  pourquoi: 'La vision centrale est précise (lire un panneau) mais étroite ; la vision périphérique est sensible aux mouvements et aux contrastes : elle détecte, la vision centrale identifie ensuite. D''où l''intérêt de balayer du regard.'
+  affirmation: C’est ma vision centrale, précise, qui me permet de détecter en premier un mouvement sur le côté, comme un
+    piéton qui descend du trottoir.
+  verdict: faux
+  pourquoi: La vision centrale est précise mais étroite ; c’est la vision périphérique, peu précise mais sensible aux mouvements
+    et aux contrastes, qui détecte le piéton. La vision centrale l’identifie ensuite, d’où l’intérêt de balayer du regard.
   theme: C
   sous_theme: perception
   source: "Code en Poche, Le champ visuel ; securite-routiere.gouv.fr, Dépliant La vue"
@@ -21,12 +23,11 @@
     params: {}
     legende: La vision centrale identifie ; la vision périphérique repère le piéton qui bouge.
 - id: aff-c-nuit-distances
-  contexte: Je conduis de nuit.
-  affirmation: 'La perception du relief et des contrastes est atténuée : je risque de mal estimer les distances.'
-  verdict: vrai
-  pourquoi: L’éclairage et les contrastes réduits compliquent la détection et l’estimation des distances. Réduire
-    l’allure et augmenter les marges ; ne pas supposer que toutes les erreurs d’estimation vont dans le même
-    sens.
+  contexte: Je conduis de nuit sur une route que je connais bien.
+  affirmation: J’estime les distances aussi bien que de jour.
+  verdict: faux
+  pourquoi: 'De nuit, la perception du relief et des contrastes est atténuée : la détection et l’estimation des distances
+    sont moins sûres, même sur une route connue. Réduire l’allure et augmenter les marges.'
   theme: C
   sous_theme: perception
   source: "securite-routiere.gouv.fr, Conduire la nuit ; Dépliant La vue"
