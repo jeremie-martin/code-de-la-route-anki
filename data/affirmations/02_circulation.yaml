@@ -124,13 +124,13 @@
     gen: giratoire_sortie
     params:
       vehicles:
-      - kind: truck
+      - kind: lorry
         colour: gris
         lane: both
-        angle: -20
+        angle: 0
       - me: true
         lane: ext
-        angle: -62
+        angle: -66
       exit: null
 - id: aff-l-pieton-intention
   dedup_ok: [aff-u-pieton-telephone]
@@ -251,7 +251,7 @@
       - lane: 1
         y: 62
         colour: gris
-        kind: truck
+        kind: lorry
       - lane: 2
         y: 48
         colour: rouge
@@ -457,7 +457,7 @@
       - lane: 1
         y: 72
         colour: gris
-        kind: truck
+        kind: lorry
         dir: down
       - lane: 2
         y: 56
@@ -602,7 +602,8 @@
   affirmation: Je peux me rapprocher de l'axe de la chaussée pour élargir ma trajectoire.
   verdict: faux
   pourquoi: Un véhicule masqué par le virage arrive en face sur cette partie de chaussée. On reste dans sa voie,
-    près du bord droit, allure réduite avant la courbe (R412-9, R413-17).
+    près du bord droit, allure réduite avant la courbe (R412-9, R413-17). Avant un virage à droite, je me décale
+    vers le milieu de ma voie pour voir plus loin, sans m'approcher de l'axe.
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R412-9 et R413-17

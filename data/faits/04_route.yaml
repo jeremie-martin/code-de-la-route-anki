@@ -31,7 +31,7 @@
   - ref: ce2a
     legende: Poste d’appel d’urgence.
 - id: r-autoroute-sortie-annonces
-  explication: La manœuvre doit être achevée au plus tard au début de la bretelle ; un dernier panneau à 500 m peut compléter l’annonce. Chaque sortie porte un numéro repris sur les panneaux.
+  explication: La manœuvre doit être achevée au plus tard au début de la bretelle ; un panneau à 500 m complète souvent l’annonce. Chaque sortie porte un numéro repris sur les panneaux.
   theme: R
   sous_theme: autoroute
   source: IISR, 5e partie (art. 83 et 84) ; Code de la route, art. R421-4
@@ -40,4 +40,4 @@
   - Sur autoroute, une sortie est présignalée à environ {{c2::1 000 m}}, puis signalée au début de la voie de décélération.
   comparaisons:
   - ref: d50
-    legende: 'Avertissement : la sortie approche (2 000, 1 000 puis 500 m).'
+    legende: 'Avertissement : la sortie approche (2 000 m, 1 000 m, souvent 500 m).'

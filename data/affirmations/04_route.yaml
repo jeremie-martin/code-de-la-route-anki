@@ -71,24 +71,16 @@
         x: 190
         colour: rouge
 - id: aff-r-autoroute-voie-gauche-80
-  contexte: Autoroute à trois voies, circulation fluide, temps sec.
-  affirmation: Sur la voie de gauche, je dois rouler à au moins 80 km/h tant que la circulation reste fluide.
-  verdict: vrai
-  pourquoi: 'R413-19 : sur la voie la plus à gauche d''une autoroute, 80 km/h au minimum quand la circulation est
-    fluide et que les conditions permettent visibilité et adhérence suffisantes. Dans un bouchon ou sous une pluie
-    battante, ce minimum ne s''applique plus.'
+  contexte: Autoroute à trois voies, circulation fluide, pluie battante ; sur la voie de gauche, je dépasse à 70 km/h
+    un camion plus lent.
+  affirmation: Je suis en infraction, puisque le minimum est de 80 km/h sur cette voie.
+  verdict: faux
+  pourquoi: 'R413-19 n’impose 80 km/h sur la voie la plus à gauche que si la circulation est fluide et que la visibilité
+    et l’adhérence sont suffisantes. Sous une pluie battante, adapter sa vitesse prime (R413-17) : je dépasse plus
+    lentement, puis je me rabats.'
   theme: R
   sous_theme: autoroute
   source: Code de la route, art. R413-19
-- id: aff-r-autoroute-trouee-terre-plein
-  affirmation: Une trouée aménagée dans le terre-plein central me permet de faire demi-tour si je me suis trompé.
-  verdict: faux
-  pourquoi: 'Le demi-tour est interdit sur autoroute « en aucun cas », y compris en traversant le terre-plein central
-    ou en empruntant une de ses interruptions (R421-6) : 135 €, 4 points. Ces passages sont réservés aux services
-    d''exploitation et de secours.'
-  theme: R
-  sous_theme: autoroute
-  source: Code de la route, art. R421-5 et R421-6
 - id: aff-r-autoroute-vitesse-pluie
   contexte: Autoroute normalement limitée à 130 km/h, sous une forte averse.
   affirmation: Sous la pluie, la limitation passe à 110 km/h, y compris pour un conducteur en permis probatoire.

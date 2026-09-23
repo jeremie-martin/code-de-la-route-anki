@@ -157,7 +157,7 @@
   nom: Conditions particulières de circulation par voie sur la route suivie
   signification: 'Indique, voie par voie, des conditions particulières de circulation sur la route suivie : voie réservée (bus, vélos), voie à contresens, double-sens cyclable, voie réservée aux véhicules lents, etc.'
   conduite: Se placer dans la voie qui correspond à son véhicule et à sa direction ; ne pas emprunter une voie réservée.
-  complement: Sert notamment à signaler un double-sens cyclable (vélo à contresens) ou un couloir bus à contresens.
+  complement: Ici, trois voies dans mon sens, sans voie particulière. Le même panneau sert à signaler un double-sens cyclable (vélo à contresens) ou un couloir bus à contresens.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -178,8 +178,8 @@
   image:
     commons: France road sign C24c.svg
   nom: Conditions particulières de circulation sur la route ou la voie embranchée
-  signification: Indique les conditions de circulation (sens unique, double-sens cyclable, voie bus…) sur la route que l'on va rejoindre ou croiser.
-  conduite: Tenir compte, avant de tourner, de la présence éventuelle d'usagers à contresens sur la voie embranchée (cyclistes).
+  signification: 'Indique une condition particulière sur la route que je vais rejoindre : ici, un passage à niveau juste après la bifurcation à droite.'
+  conduite: Avant de tourner, je me prépare à ce que le pictogramme annonce (ici, ralentir pour le passage à niveau).
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -263,8 +263,8 @@
   image:
     commons: France road sign C29a.svg
   nom: Présignalisation d'un créneau de dépassement
-  signification: Annonce, avec la distance, un créneau de dépassement (section à trois voies avec deux voies dans un sens, ou passage à chaussées séparées).
-  conduite: Se préparer à dépasser sur le créneau plutôt qu'avant.
+  signification: 'Annonce, avec un panonceau de distance, une section à deux voies dans chaque sens : créneau de dépassement à 2 × 2 voies ou route à chaussées séparées.'
+  conduite: Attendre cette section pour dépasser plutôt que tenter un dépassement avant.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

@@ -280,8 +280,7 @@
   question: Je dois traverser ces rails de tramway pour continuer tout droit ; la file devant moi est arrêtée. Que fais-je ?
   reponse: 'J’attends avant les rails de pouvoir les dégager entièrement : s’arrêter sur la plateforme est interdit et le
     tram ne peut pas m’éviter.'
-  explication: La distance de freinage d'un tramway est très longue et il ne peut pas dévier ; une station toute proche fait
-    en outre surgir des piétons.
+  explication: La distance de freinage d'un tramway est très longue et il ne peut pas dévier.
   theme: R
   sous_theme: tramways
   source: "Code de la route, art. R422-3 et R417-11 ; coursdecode.com, Les tramways"

@@ -341,17 +341,12 @@
     priment sur une table mnémotechnique.
   source: 'Relation physique : arrêt = réaction + freinage ; calcul sur données explicites'
 - id: c-virage-technique
-  question: J'aborde un virage serré à gauche sur une route de campagne. Quand est-ce que je freine, et où je me place ?
-  reponse: Je freine avant le virage, en ligne droite ; dans la courbe, allure stable et je reste près du bord droit,
-    sans couper vers l'axe.
+  question: J'aborde un virage serré sur une route de campagne. Quand est-ce que je freine, et comment je le parcours ?
+  reponse: Je freine avant le virage, en ligne droite ; dans la courbe, allure stable, puis je réaccélère
+    progressivement en sortie.
   explication: Freiner en courbe surcharge l'avant et peut faire décrocher l'arrière ; la force centrifuge pousse
-    vers l'extérieur et croît avec le carré de la vitesse. Réaccélérer progressivement en sortie. Un véhicule peut
-    arriver en face, masqué par le virage. Avant un virage à droite, je me décale vers le milieu de ma voie pour
-    voir plus loin, sans m'approcher de l'axe.
+    vers l'extérieur et croît avec le carré de la vitesse. La vitesse se choisit donc avant d'entrer dans la courbe,
+    d'après ce que je vois de sa sortie.
   theme: C
   sous_theme: vigilance
   source: "REMC (compétence 2) ; securite-routiere.gouv.fr, La vitesse et la conduite"
-  illustration:
-    gen: virage_gauche
-    params: {}
-    legende: 'Dans un virage à gauche, je reste près du bord droit : l’intérieur cache ce qui arrive en face.'

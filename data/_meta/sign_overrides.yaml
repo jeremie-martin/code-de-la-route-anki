@@ -391,11 +391,11 @@ b6a1:
 b6a2:
   signification: Stationnement interdit du côté du panneau du 1er au 15 du mois ; autorisé de ce côté du 16 à la fin.
   conduite: Du 1er au 15, se garer de l'autre côté.
-  complement: Changement de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
+  complement: null
   piege: Les chiffres portés sont les jours où le stationnement est INTERDIT de ce côté.
 b6a3:
   conduite: Du 16 à la fin du mois, se garer de l'autre côté.
-  complement: Changement de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
+  complement: null
 b6d:
   prerequis: [l-arret-vs-stationnement]
   complement: null
@@ -514,7 +514,7 @@ ab25:
 b6b2:
   signification: 'Entrée d''une zone à stationnement alterné semi-mensuel : du 1er au 15 côté impair, du 16 à la fin côté
     pair.'
-  conduite: Changer de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
+  conduite: Changer de côté à la fin de chaque période, le 15 et le dernier jour du mois.
   complement: 'Mémo : « 1 » est impair.'
 b30:
   signification: 'Entrée d’une zone 30 : 30 km/h dans les rues de la zone, jusqu’au panneau de sortie de zone.'
@@ -574,7 +574,7 @@ m8d:
 m9v1:
   signification: La prescription ne s’applique pas aux cycles, aux EDPM ni aux cyclomobiles légers.
   conduite: Sous un sens interdit, anticiper ces usagers venant en face ; vérifier la voie avant de tourner.
-  complement: L’exception peut aussi être écrite avec le mot « SAUF » et le symbole d’un vélo.
+  complement: null
 m9z:
   signification: 'Panonceau à inscription libre : « RAPPEL », « SAUF RIVERAINS », « PAR TEMPS DE PLUIE », « SORTIE D''USINE
     »…'
@@ -842,9 +842,13 @@ c13a:
 c20c:
   complement: null
 c24a:
-  complement: Sert notamment à signaler un double-sens cyclable (vélo à contresens) ou un couloir bus à contresens.
+  complement: 'Ici, trois voies dans mon sens, sans voie particulière. Le même panneau sert à signaler un double-sens
+    cyclable (vélo à contresens) ou un couloir bus à contresens.'
 c24c:
   complement: null
+  signification: 'Indique une condition particulière sur la route que je vais rejoindre : ici, un passage à niveau
+    juste après la bifurcation à droite.'
+  conduite: Avant de tourner, je me prépare à ce que le pictogramme annonce (ici, ralentir pour le passage à niveau).
 c25b:
   conduite: "Réduire à 110 sur autoroute dès qu’il pleut ou qu’il y a d’autres précipitations (repère pratique : essuie-glaces
     en marche)."

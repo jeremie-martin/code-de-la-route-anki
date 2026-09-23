@@ -220,7 +220,7 @@
 - id: d-detecteur-radar
   texte: 'Détenir, transporter ou utiliser un détecteur ou brouilleur de radars : contravention de 5e classe, {{c1::6 points}},
     confiscation de l''appareil et éventuellement du véhicule.'
-  explication: Les avertisseurs de « zones de danger » (Coyote, Waze) restent tolérés.
+  explication: Les avertisseurs de « zones de danger » (Coyote, Waze) restent autorisés.
   theme: D
   sous_theme: sanctions
   source: Code de la route, art. R413-15 et R317-8

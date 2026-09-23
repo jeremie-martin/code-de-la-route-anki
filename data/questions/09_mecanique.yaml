@@ -370,6 +370,7 @@
   sous_theme: applications
   question: Ce témoin s'allume quand je mets le contact, avant de démarrer. Que dois-je vérifier ?
   reponse: 'Qu''il s''éteint une fois le moteur lancé : à la mise du contact, son allumage est l''autotest normal.'
-  explication: L’état du moteur et les indications de la notice changent l’interprétation du même symbole.
+  explication: 'Allumé moteur tournant, il signale un défaut de charge : je m’arrête dès que possible en sécurité et je
+    fais contrôler. Le sens exact de chaque témoin se lit dans la notice.'
   source: "Notice Renault, https://www.user-manual.renault.com/fr/content/xfk/getting-know-your-vehicle/temoins-lumineux"
   image_ref: voyant-batterie

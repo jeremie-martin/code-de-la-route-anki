@@ -473,7 +473,6 @@
   - aff-l-arret-chargement
   - aff-l-trottoir-moto
   - aff-l-genant-fourriere
-  - conf-b6a2-b6a3
   - l-arret-ligne-continue
   - aff-l-arret-pont
 - id: c-distances
@@ -665,7 +664,6 @@
   - r-autoroute-fatigue-aires
   - aff-r-insertion-prioritaire
   - aff-r-autoroute-voie-gauche-80
-  - aff-r-autoroute-trouee-terre-plein
   - aff-r-autoroute-vitesse-pluie
   - aff-r-autoroute-aac
   - conf-c8-c26a

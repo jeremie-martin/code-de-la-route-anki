@@ -17,7 +17,7 @@
     commons: France road sign B6b2.svg
   nom: Entrée d'une zone à stationnement unilatéral à alternance semi-mensuelle
   signification: 'Entrée d''une zone à stationnement alterné semi-mensuel : du 1er au 15 côté impair, du 16 à la fin côté pair.'
-  conduite: Changer de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
+  conduite: Changer de côté à la fin de chaque période, le 15 et le dernier jour du mois.
   complement: 'Mémo : « 1 » est impair.'
   theme: L
   sous_theme: panneaux

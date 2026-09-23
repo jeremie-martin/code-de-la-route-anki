@@ -138,7 +138,6 @@
   nom: Stationnement interdit du 1er au 15 du mois
   signification: Stationnement interdit du côté du panneau du 1er au 15 du mois ; autorisé de ce côté du 16 à la fin.
   conduite: Du 1er au 15, se garer de l'autre côté.
-  complement: Changement de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
@@ -151,7 +150,6 @@
   nom: Stationnement interdit du 16 à la fin du mois
   signification: Stationnement interdit, du côté du panneau, du 16 à la fin du mois ; autorisé de ce côté du 1er au 15.
   conduite: Du 16 à la fin du mois, se garer de l'autre côté.
-  complement: Changement de côté le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France

@@ -256,8 +256,9 @@
   question: J'ai raté une sortie d'autoroute ; la bande d'arrêt d'urgence est libre et le terre-plein comporte une
     interruption. Que fais-je ?
   reponse: 'Je poursuis jusqu''à la prochaine sortie : marche arrière et demi-tour sont interdits sur autoroute.'
-  explication: 'Sur route ordinaire, examiner séparément les règles de chaque manœuvre : une ligne axiale continue interdit
-    son franchissement, pas toute marche arrière dans sa propre voie.'
+  explication: 'R421-6 l’interdit « en aucun cas », y compris par une interruption du terre-plein, réservée aux services
+    d’exploitation et de secours : 135 €, 4 points. Sur route ordinaire, examiner séparément les règles de chaque
+    manœuvre : une ligne axiale continue interdit son franchissement, pas toute marche arrière dans sa propre voie.'
   theme: L
   sous_theme: positionnement
   source: Code de la route, art. R421-6 et R412-19
@@ -400,7 +401,7 @@
         file: France road sign AB4.svg
         w: 110
 - id: l-agent-ralentir-avancer
-  question: Un agent qui règle la circulation balance un bras de haut en bas dans ma direction. Que me demande-t-il ?
+  question: Un agent qui règle la circulation me fait ce geste. Que me demande-t-il ?
   reponse: 'De ralentir : il ne m''arrête pas, mais je réduis nettement mon allure et je reste prêt à m''immobiliser.'
   explication: À distinguer du bras levé (arrêt pour tous) et du geste d'appel (avancer). Le geste s'adresse à l'usager que
     l'agent regarde ; ses injonctions priment sur les feux et les panneaux.
@@ -822,7 +823,7 @@
   sous_theme: applications
   question: Hors agglomération, par temps sec, hors permis probatoire et sans autre limitation ni relèvement signalé. Quel plafond s’applique ici, et quel élément du dessin le justifie ?
   reponse: '80 km/h : une seule chaussée, avec une voie dans chaque sens.'
-  explication: 'Le panneau C107 réglemente l’accès, sans fixer à lui seul une vitesse de 110 km/h. Une ligne peinte
+  explication: 'Le panneau bleu à voiture blanche réglemente l’accès, sans fixer à lui seul une vitesse de 110 km/h. Une ligne peinte
     entre les sens de circulation n’est pas un terre-plein central.'
   source: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
   image:
@@ -837,7 +838,7 @@
   question: Hors agglomération, par temps sec, hors permis probatoire et sans autre limitation ni relèvement signalé. Quel plafond s’applique ici, et quel élément du dessin le justifie ?
   reponse: '110 km/h : les deux chaussées sont séparées par un terre-plein central.'
   explication: 'Une seule voie par sens suffit ici : c’est la séparation des chaussées par un terre-plein central
-    qui détermine ce plafond. Le panneau C107 réglemente l’accès ; il ne transforme pas la route en autoroute.'
+    qui détermine ce plafond. Le panneau bleu à voiture blanche réglemente l’accès ; il ne transforme pas la route en autoroute.'
   source: https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600
   image:
     gen: route_c107

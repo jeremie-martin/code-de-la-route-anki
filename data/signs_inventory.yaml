@@ -2771,12 +2771,12 @@
 - code: C29a
   categorie: indication
   nom: Présignalisation d'un créneau de dépassement
-  signification: Annonce, avec la distance, un créneau de dépassement (section à trois voies avec deux voies dans
-    un sens, ou passage à chaussées séparées).
-  conduite_a_tenir: Se préparer à dépasser sur le créneau plutôt qu'avant.
-  implantation: Avant le créneau, avec distance.
+  signification: 'Annonce, avec un panonceau de distance, une section à deux voies dans chaque sens : créneau de
+    dépassement à 2 × 2 voies ou route à chaussées séparées.'
+  conduite_a_tenir: Attendre cette section pour dépasser plutôt que tenter un dépassement avant.
+  implantation: Avant la section, avec un panonceau de distance (M1).
   fin: ''
-  forme_couleur: 'carré bleu : schéma de trois voies avec panonceau M1'
+  forme_couleur: 'carré bleu : deux flèches dans chaque sens, avec panonceau M1'
   confusions:
   - C29b
   - C29c

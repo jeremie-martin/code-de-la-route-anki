@@ -26,6 +26,7 @@ MARK = "#ffffff"
 YELLOW = "#f2c200"
 RAIL = "#c4c4c4"
 LABEL = "#263336"
+PEDESTRIAN = "#e65100"
 CAR_COLOURS = {
     "bleu": "#2d6fd8",
     "rouge": "#d8362d",
@@ -382,7 +383,7 @@ def draw_intersection(spec: dict) -> str:
         elif sign and sign.startswith("feu_"):
             _light(S, a, sign.split("_", 1)[1], cx, cy, half)
     for b in spec.get("crosswalks", []):
-        _crosswalk(S, b, cx, cy, half, pedestrian=(b == spec.get("pedestrian")))
+        _crosswalk(S, b, cx, cy, half, walker=(b == spec.get("pedestrian")))
     if spec.get("agent"):
         _agent(S, cx, cy, spec["agent"])
     for p in spec.get("parked", []):  # two cars along a kerb, just past the corner (they mask the view)
@@ -420,13 +421,13 @@ def draw_intersection(spec: dict) -> str:
 
 def _pos_on_approach(a: str, cx, cy, half, dist, edge=None, length=42):
     """Centre point of a vehicle of half-length `length` waiting on its right-hand lane, its front
-    18 + `dist` px before the junction edge.
+    28 + `dist` px before the junction edge.
 
     `half` is the road half-width (sets the lane); `edge` is the distance from the centre to the
     junction edge (defaults to `half`; the ring radius for a roundabout).
     """
     lane = half / 2  # centre of right-hand lane
-    off = (half if edge is None else edge) + 18 + length + dist
+    off = (half if edge is None else edge) + 28 + length + dist
     if a == "S":
         return cx + lane, cy + off
     if a == "N":
@@ -473,7 +474,7 @@ def _transversal(S: SVG, a, cx, cy, half, kind="stop"):
         S.add(f'<line x1="{cx-half-6}" y1="{cy+2}" x2="{cx-half-6}" y2="{cy+half}" stroke="{MARK}" stroke-width="{w}" {dash}/>')
 
 
-def _crosswalk(S: SVG, b, cx, cy, half, pedestrian=False):
+def _crosswalk(S: SVG, b, cx, cy, half, walker=False):
     """Zebra crossing across branch b just outside the intersection square, optionally with a pedestrian."""
     off = half + 24
     if b in ("N", "S"):
@@ -486,9 +487,14 @@ def _crosswalk(S: SVG, b, cx, cy, half, pedestrian=False):
         for y in range(int(cy - half + 6), int(cy + half - 6), 16):
             S.add(f'<rect x="{x0}" y="{y}" width="26" height="9" fill="{MARK}"/>')
         px, py = x0 + 13, cy + half - 14
-    if pedestrian:
-        S.add(f'<g transform="translate({px},{py}) scale(1.25)"><circle cx="0" cy="-14" r="6" fill="#e65100"/>'
-              f'<path d="M-6,-6 l12,0 l4,16 l-5,1 l-3,-8 l-3,14 l-6,0 l2,-14 l-3,7 l-5,-2 z" fill="#e65100"/></g>')
+    if walker:
+        S.add(pedestrian(px, py))
+
+
+def pedestrian(x, y, fill=PEDESTRIAN, scale=1.25) -> str:
+    """A person on a plan (every card draws people with this figure); YELLOW `fill` for a high-visibility vest."""
+    return (f'<g transform="translate({x},{y}) scale({scale})"><circle cx="0" cy="-14" r="6" fill="{fill}" stroke="#5a3a00" stroke-width="1"/>'
+            f'<path d="M-6,-6 l12,0 l4,16 l-5,1 l-3,-8 l-3,14 l-6,0 l2,-14 l-3,7 l-5,-2 z" fill="{fill}" stroke="#5a3a00" stroke-width="1"/></g>')
 
 
 def _private_exit(S: SVG, a, cx, cy, half):
@@ -570,10 +576,10 @@ def agent_figure(pose: str) -> str:
     elif pose == "ralentir":
         arm(*ls, cx - 120, 170)
         arm(*rs, cx + 52, 200)
-        # motion marks: the arm moves up and down
-        out.append(f'<path d="M{cx - 128},120 l0,-14 M{cx - 136},128 l-14,0" fill="none" stroke="#333" stroke-width="3"/>')
-        out.append(f'<path d="M{cx - 150},200 l0,14 M{cx - 158},192 l-14,0" fill="none" stroke="#333" stroke-width="3"/>')
-        out.append(f'<path d="M{cx - 140},140 q-16,30 0,60" fill="none" stroke="#333" stroke-width="3" stroke-dasharray="5 5"/>')
+        # motion marks, drawn like those of "avancer": the outstretched arm swings up and down
+        out.append(f'<path d="M{cx - 140},128 q-18,42 0,84" fill="none" stroke="#333" stroke-width="4" stroke-dasharray="7 6"/>')
+        out.append(f'<path d="M{cx - 140},116 l-9,16 l17,-2 z" fill="#333"/>')
+        out.append(f'<path d="M{cx - 140},224 l-9,-16 l17,2 z" fill="#333"/>')
     elif pose == "avancer":
         arm(*ls, cx - 100, 140)          # upper arm out
         arm(cx - 100, 140, cx - 70, 96)  # forearm swept back towards the chest
@@ -770,7 +776,7 @@ def draw_road(spec: dict) -> str:
         observer = next((v for v in spec["vehicles"] if v.get("me")), None)
         if (observer is None or obstacle.get("kind", "car") not in HALF_WIDTH or
                 any(v.get("dir", "up") != "up" for v in (observer, obstacle))):
-            raise ValueError("occludes requires a northbound car, truck or bus ahead of the northbound learner")
+            raise ValueError("occludes requires a northbound car, truck, lorry or bus ahead of the northbound learner")
         ox = x0 + road_w - (observer["lane"] - .5) * lane_w - 12
         oy = ypx(observer["y"]) - 20
         bx, cy = x0 + road_w - (obstacle["lane"] - .5) * lane_w, ypx(obstacle["y"])

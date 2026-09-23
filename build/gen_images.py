@@ -9,7 +9,7 @@ import math
 import textwrap
 
 from build.diagrams import (ASPHALT, GRASS, MARK, LABEL, RAIL, CAR_COLOURS, CEDEZ_SVG, FONT, SVG, agent_figure, draw_road, draw_intersection, draw_roundabout,
-                            vehicle_sprite, intention_arrow, siren_rays, sign_data_uri, esc, _body)
+                            vehicle_sprite, intention_arrow, siren_rays, sign_data_uri, esc, _body, pedestrian)
 
 ME = _body({"me": True})  # the learner's car in decision scenes: blue, yellow halo, MOI (as in the scenarios)
 
@@ -180,10 +180,10 @@ def transversale(params):
     S.add(f'<line x1="240" y1="100" x2="240" y2="300" stroke="{MARK}" stroke-width="4" stroke-dasharray="14 10"/>')
     kind = params.get("kind", "stop")
     if kind == "stop":
-        S.add(f'<rect x="242" y="88" width="116" height="10" fill="{MARK}"/>')
+        S.add(f'<rect x="242" y="84" width="116" height="16" fill="{MARK}"/>')      # wide: 50 cm, 3–4× a lane line
     elif kind == "cedez":
         for x in range(244, 358, 20):
-            S.add(f'<rect x="{x}" y="88" width="12" height="10" fill="{MARK}"/>')
+            S.add(f'<rect x="{x}" y="84" width="12" height="16" fill="{MARK}"/>')
     elif kind == "effet_feux":
         S.add(f'<line x1="244" y1="92" x2="358" y2="92" stroke="{MARK}" stroke-width="4" stroke-dasharray="6 6"/>')
         S.add(f'<rect x="366" y="40" width="22" height="58" rx="5" fill="#222"/>')
@@ -192,7 +192,7 @@ def transversale(params):
     if params.get("arret"):      # a decision drawing: MOI stopped with its front at the line, the STOP sign beside it
         uri, h = _sign_png({"kind": "sign", "file": "France road sign AB4.svg"}, 60)
         S.add(f'<image href="{uri}" x="372" y="104" width="60" height="{h}"/>')
-        S.add(f'<g transform="translate(300,142)">{ME}</g>')
+        S.add(f'<g transform="translate(300,152)">{ME}</g>')
     else:
         S.add(f'<g transform="translate(300,220)">{vehicle_sprite("car", "bleu")}</g>')
     return str(S)
@@ -493,10 +493,12 @@ def triangle_distance(params):
     S.add(f'<rect x="0" y="40" width="480" height="120" fill="{ASPHALT}"/>')
     _dashes_h(S, 100, 3, 10, w=4)
     S.add(f'<g transform="translate(400,130) rotate(90)">{vehicle_sprite("car", "gris")}</g>')
+    for dx, dy in ((-40, -18), (-40, 18), (40, -18), (40, 18)):          # hazard lights flashing
+        _flash_rays(S, 400 + dx, 130 + dy, 3, AMBER)
     S.add('<path d="M66,150 l14,-26 l14,26 z" fill="#e53935" stroke="#fff" stroke-width="2"/>')
     S.add(f'<path d="M80,192 H222 M258,192 H362 M80,184 v16 M362,184 v16 M216,202 l12,-20 M246,202 l12,-20" '
           f'stroke="{LABEL}" stroke-width="3" fill="none"/>')
-    S.add(f'<text x="221" y="182" font-family="{FONT}" font-size="20" font-weight="700" text-anchor="middle" fill="{LABEL}">{esc(str(params.get("label", "≈ 30 m")))}</text>')
+    S.add(f'<text x="221" y="174" font-family="{FONT}" font-size="20" font-weight="700" text-anchor="middle" fill="{LABEL}">{esc(str(params.get("label", "≈ 30 m")))}</text>')
     return str(S)
 
 
@@ -816,13 +818,15 @@ def cone(params):
 
 # These scenes share one carriageway: traffic upwards, median left, shoulder right.
 def _motorway_scene():
+    """One carriageway going up: left lane (centre x 162), right lane (302), hard shoulder (BAU, 372–468) wide
+    enough to hold a car clear of its line; roadside from x 475."""
     S = SVG(640, 440)
     S.add(f'<rect width="640" height="440" fill="{GRASS}"/>')
     S.add('<path d="M60 0H85V440H60Z" fill="#aeb7a8"/>')
-    S.add(f'<path d="M85 0H440V440H85Z" fill="{ASPHALT}"/>')
-    S.add(f'<path d="M92 0V440 M433 0V440" stroke="{MARK}" stroke-width="3"/>')
-    S.add(f'<path d="M225 0V440" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 18"/>')
-    S.add(f'<path d="M365 0V440" stroke="{MARK}" stroke-width="5" stroke-dasharray="78 26"/>')
+    S.add(f'<path d="M85 0H475V440H85Z" fill="{ASPHALT}"/>')
+    S.add(f'<path d="M92 0V440 M468 0V440" stroke="{MARK}" stroke-width="3"/>')
+    S.add(f'<path d="M232 0V440" stroke="{MARK}" stroke-width="4" stroke-dasharray="22 18"/>')
+    S.add(f'<path d="M372 0V440" stroke="{MARK}" stroke-width="5" stroke-dasharray="78 26"/>')
     return S
 
 
@@ -855,17 +859,17 @@ def chantier_rabattement(params):
     uri = sign_data_uri(params["sign"]["file"], 160)
     panel = _flr_panel(uri)
     # Longitudinal work boundary beyond the position unit. Distances are not to scale.
-    S.add('<path d="M237 0H358V36H237Z" fill="#c9b99b"/>')
+    S.add('<path d="M244 0H365V36H244Z" fill="#c9b99b"/>')
     for y in (18, 48):
-        S.add(f'<g transform="translate(234,{y}) scale(.14) translate(-120,-249)">')
+        S.add(f'<g transform="translate(241,{y}) scale(.14) translate(-120,-249)">')
         _draw_cone(S)
         S.add('</g>')
     # Each trailer's panel is shown face-on within this plan view, like roadside signs.
-    for x, y in ((295, 100), (365, 248)):
+    for x, y in ((302, 100), (420, 248)):
         S.add(f'<g transform="translate({x-27.5},{y-45}) scale(.5)">{panel}</g>')
         S.add(f'<path d="M{x-20} {y+49}h40" stroke="#222" stroke-width="6"/>')
-    S.add(f'<g transform="translate(295,370) scale(1.5)">{ME}</g>')
-    S.add('<path d="M397 244L469 220" stroke="#687475" stroke-width="2"/>')
+    S.add(f'<g transform="translate(302,370) scale(1.5)">{ME}</g>')
+    S.add('<path d="M450 236L480 226" stroke="#687475" stroke-width="2"/>')
     S.add(f'<g transform="translate(480,125)">{panel}</g>')
     S.add(f'<text x="535" y="106" text-anchor="middle" font-family="{FONT}" font-size="26" fill="#263336">Signal agrandi</text>')
     return str(S)
@@ -874,43 +878,36 @@ def chantier_rabattement(params):
 def corridor_securite(params):
     """An adjacent car prevents an immediate lane change past a shoulder recovery."""
     S = _motorway_scene()
-    S.add(f'<g transform="translate(155,335) scale(1.5)">{vehicle_sprite("car", "gris")}</g>')
-    S.add(f'<g transform="translate(295,350) scale(1.5)">{ME}</g>')
+    S.add(f'<g transform="translate(162,335) scale(1.5)">{vehicle_sprite("car", "gris")}</g>')
+    S.add(f'<g transform="translate(302,350) scale(1.5)">{ME}</g>')
     # Recovery vehicle: existing truck cab, flat bed, secured car and amber beacon.
-    S.add(f'<g transform="translate(399,129) scale(1.35)">{vehicle_sprite("truck", "orange")}')
+    S.add(f'<g transform="translate(424,129) scale(1.35)">{vehicle_sprite("truck", "orange")}')
     S.add('<rect x="-23" y="-25" width="46" height="81" fill="#71787a"/>')
     S.add(f'<g transform="translate(0,15) scale(.75)">{vehicle_sprite("car", "gris")}</g>')
     S.add('<rect x="-16" y="-31" width="32" height="7" rx="2" fill="#ffc438" stroke="#805b14"/>')
     S.add(siren_rays(0, -28, "#f08a24", r0=14, r1=22))
     S.add('</g>')
-    S.add(f'<text x="399" y="240" text-anchor="middle" font-family="{FONT}" font-size="26" fill="{MARK}">BAU</text>')
+    S.add(f'<text x="424" y="240" text-anchor="middle" font-family="{FONT}" font-size="26" fill="{MARK}">BAU</text>')
     return str(S)
-
-
-def _person(x, y, vest=YELLOW):
-    """A person seen from above (shoulders and head), in a high-visibility vest by default."""
-    return (f'<g transform="translate({x},{y})"><ellipse cx="0" cy="0" rx="13" ry="8" fill="{vest}" stroke="#8a7400" stroke-width="1.5"/>'
-            f'<circle cx="0" cy="0" r="6" fill="#6b4f3a"/></g>')
 
 
 def autoroute_attente(params):
     """Breakdown on the hard shoulder: the car with its hazard lights, the occupants behind the safety barrier,
     back from the car on the side traffic comes from (traffic goes up)."""
     S = _motorway_scene()
-    for x in (155, 295):
+    for x in (162, 302):
         S.add(f'<g transform="translate({x},230)"><path d="M0 30V-30m-10 12 10-12 10 12" fill="none" stroke="{MARK}" stroke-width="4"/></g>')
-    S.add(f'<g transform="translate(399,150) scale(1.5)">{vehicle_sprite("car", "gris")}</g>')
-    for dx in (-18, 18):                     # hazard lights at the four corners
-        for dy in (-44, 44):
-            S.add(f'<circle cx="{399 + dx}" cy="{150 + dy}" r="5" fill="{AMBER}"/>')
-            S.add(siren_rays(399 + dx, 150 + dy, AMBER, r0=8, r1=14))
-    S.add('<path d="M470 0V440" stroke="#8d969a" stroke-width="6"/>')                       # safety barrier
+    S.add(f'<g transform="translate(429,150) scale(1.5)">{vehicle_sprite("car", "gris")}</g>')
+    for dx in (-27, 27):                     # hazard lights at the four corners, on the lamps
+        for dy in (-59, 59):
+            _flash_rays(S, 429 + dx, 150 + dy, 4, AMBER)
+    S.add('<path d="M500 0V440" stroke="#8d969a" stroke-width="6"/>')                       # safety barrier
     for y in range(20, 440, 40):
-        S.add(f'<rect x="466" y="{y}" width="8" height="8" fill="#6c7478"/>')
-    for x, y in ((520, 318), (566, 338), (528, 372)):
-        S.add(f'<g transform="translate({x},{y}) scale(1.8)">{_person(0, 0)}</g>')
-    _pill(S, 560, 40, "glissière", anchor="middle")
-    _pill(S, 548, 420, "occupants", anchor="middle")
+        S.add(f'<rect x="496" y="{y}" width="8" height="8" fill="#6c7478"/>')
+    for x, y in ((548, 318), (594, 338), (556, 372)):
+        S.add(pedestrian(x, y, YELLOW, 1.6))
+    _pill(S, 570, 40, "glissière", anchor="middle")
+    _pill(S, 570, 420, "occupants", anchor="middle")
     return str(S)
 
 
@@ -1530,10 +1527,10 @@ def angles_morts(params):
         S.add(f'<polygon points="{pts}" fill="{VISIBLE}" opacity="0.3"/>')
     _hidden_pattern(S)
     for side in (-1, 1):
-        x_in, x_out = cx + side * 40, cx + side * 150
+        x_in, x_out = cx + side * 40, cx + side * 200    # across the whole neighbouring lane
         S.add(f'<path d="M{x_in},{cy - 20} L{x_out},{cy + 10} L{x_out},{cy + 150} L{x_in},{cy + 70} Z" fill="url(#hidden)" stroke="{HIDDEN}" stroke-width="2"/>')
     S.add(f'<g transform="translate({cx},{cy}) scale(1.4)">{ME}</g>')
-    S.add(f'<g transform="translate({cx - 95},{cy + 70}) scale(1.3)">{vehicle_sprite("moto", "rouge")}</g>')
+    S.add(f'<g transform="translate(80,{cy + 60}) scale(1.3)">{vehicle_sprite("moto", "rouge")}</g>')  # mid-lane
     _pill(S, 16, 30, "angles morts")
     _pill(S, 464, 404, "vu dans les rétroviseurs", anchor="end")
     return str(S)
@@ -1696,7 +1693,7 @@ def rue_stationnement(params):
                 _text(S, park1 + 16, y, params["door_label"], LABEL_SIZE, INK, "start")
     if params.get("child") is not None:                  # a child in a gap between parked cars, about to step out
         y = params["child"]
-        S.add(_person(px - 4, y, CLOTH))
+        S.add(pedestrian(px - 4, y + 4))
         S.add(f'<path d="M{px - 20},{y} H{px - 50} m8,-7 l-8,7 l8,7" fill="none" stroke="{MARK}" stroke-width="3"/>')
         # side view on the pavement: the child, shorter than the car, is hidden behind it (hatched, dashed outline)
         mx, my = park1 + 14, 60
@@ -1852,7 +1849,7 @@ def poste_conduite(params):
     elif focus == "jambe":
         _pill(S, 214, 334, "jambe encore fléchie")
     elif focus == "bras":
-        _pill(S, 214, 108, "poignets sur le haut du volant")
+        _pill(S, 200, 44, "poignets sur le haut du volant")
     return str(S)
 
 
@@ -1944,7 +1941,7 @@ def champ_visuel(params):
     S.add(f'<path d="M{eye[0]},{eye[1]} L{narrow[0][0]:.0f},{narrow[0][1]:.0f} L{narrow[1][0]:.0f},{narrow[1][1]:.0f} Z" '
           f'fill="{YELLOW}" opacity="0.55"/>')
     S.add(f'<g transform="translate(290,330)">{ME}</g>')
-    S.add(f'<g transform="translate(396,200) scale(1.5)">{_person(0, 0)}</g>'
+    S.add(pedestrian(396, 206, scale=1.5) +
           f'<path d="M372,200 H346 m8,-7 l-8,7 l8,7" fill="none" stroke="{INK}" stroke-width="3"/>')
     _pill(S, 274, 40, "vision centrale : précise", anchor="end")
     _pill(S, 16, 250, "vision périphérique :")
@@ -2198,19 +2195,19 @@ def verres_standard(params):
 
 
 def pl_angles_morts(params):
-    """Lorry from above: its blind spots (hatched) in front, along both sides — widest on the right — and behind;
-    a cyclist waiting beside the cab, inside the right-hand one."""
-    S = SVG(480, 460)
-    S.add(f'<rect x="0" y="0" width="480" height="460" fill="{ASPHALT}"/>')
+    """Rigid lorry from above, at the deck's lorry proportions: its blind spots (hatched) in front, along both
+    sides — widest on the right — and behind; a cyclist waiting beside the cab, inside the right-hand one."""
+    S = SVG(480, 560)
+    S.add(f'<rect x="0" y="0" width="480" height="560" fill="{ASPHALT}"/>')
     _hidden_pattern(S)
-    zones = ("M190,34 H290 V98 H190 Z",                                     # in front of the cab
-             "M292,92 L470,70 L470,360 L292,344 Z",                          # right side, the largest
-             "M188,150 L96,168 L96,300 L188,320 Z",                          # left side
-             "M190,348 H290 V450 H190 Z")                                    # behind
+    zones = ("M204,44 H276 V118 H204 Z",                                     # in front of the cab
+             "M280,122 L470,96 L470,430 L280,404 Z",                         # right side, the largest
+             "M200,190 L100,206 L100,366 L200,384 Z",                        # left side
+             "M204,442 H276 V552 H204 Z")                                    # behind
     for d in zones:
         S.add(f'<path d="{d}" fill="url(#hidden)" stroke="{HIDDEN}" stroke-width="2"/>')
-    S.add(f'<g transform="translate(240,222) scale(2.1)">{vehicle_sprite("truck", "blanc")}</g>')
-    S.add(f'<g transform="translate(326,150) scale(1.3)">{vehicle_sprite("bike", "rouge")}</g>')
+    S.add(f'<g transform="translate(240,280) scale(1.35)">{vehicle_sprite("lorry", "blanc")}</g>')
+    S.add(f'<g transform="translate(318,170) scale(1.3)">{vehicle_sprite("bike", "rouge")}</g>')
     _pill(S, 16, 30, "angles morts")
     return str(S)
 
@@ -2287,28 +2284,30 @@ def pieton_carrefour(params):
           f'<path d="M188,188 l24,24 M212,188 l-24,24" stroke="{WRONG}" stroke-width="4"/>')
     S.add(f'<path d="M110,300 V110 H300" fill="none" stroke="{YELLOW}" stroke-width="4" stroke-dasharray="10 7"/>'
           f'<path d="M290,100 l12,10 l-12,10" fill="none" stroke="{YELLOW}" stroke-width="4"/>')
-    S.add(_person(110, 318, CLOTH))
+    S.add(pedestrian(110, 322))
     return str(S)
 
 
 def portee_prescription(params):
     """How far a speed limit reaches: an isolated sign stops at the next junction; a zone lasts until its end sign,
-    across junctions. The part of the road where 30 applies is highlighted."""
-    S = SVG(480, 360)
-    S.add(f'<rect x="0" y="0" width="480" height="360" fill="{GRASS}"/>')
+    across junctions. Traffic goes right, signs stand on its right-hand side; the part where 30 applies is
+    highlighted."""
+    S = SVG(480, 400)
+    S.add(f'<rect x="0" y="0" width="480" height="400" fill="{GRASS}"/>')
     rows = ((0, "panneau isolé", "France road sign B14 (30).svg", None, 180),
-            (180, "zone 30", "France road sign B30 (30).svg", "France road sign B51 (30).svg", 450))
+            (200, "zone 30", "France road sign B30 (30).svg", "France road sign B51 (30).svg", 450))
     for top, name, first, last, end in rows:
-        road_y = top + 104
+        road_y = top + 58
         for x in (180, 330):
-            S.add(f'<rect x="{x - 22}" y="{top}" width="44" height="180" fill="{ASPHALT}"/>')
+            S.add(f'<rect x="{x - 22}" y="{top}" width="44" height="200" fill="{ASPHALT}"/>')
         S.add(f'<rect x="0" y="{road_y}" width="480" height="44" fill="{ASPHALT}"/>')
+        S.add(f'<path d="M6,{road_y + 22} h22 m-8,-7 l8,7 l-8,7" fill="none" stroke="{MARK}" stroke-width="3"/>')
         S.add(f'<rect x="40" y="{road_y + 14}" width="{end - 40}" height="16" rx="8" fill="{YELLOW}"/>')
         for x, file in ((40, first), (end, last)):
             if file:
                 uri, h = _sign_png({"kind": "sign", "file": file}, 48)
-                S.add(f'<image href="{uri}" x="{x - 24}" y="{road_y - 12 - h}" width="48" height="{h}"/>')
-        _pill(S, 255, top + 40, name, anchor="middle")
+                S.add(f'<image href="{uri}" x="{x - 24}" y="{road_y + 54}" width="48" height="{h}"/>')
+        _pill(S, 255, top + 30, name, anchor="middle")
     return str(S)
 
 

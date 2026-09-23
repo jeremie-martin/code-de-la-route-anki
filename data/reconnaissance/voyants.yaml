@@ -255,7 +255,7 @@
   code: ISO 7000-2047
   image: {commons: "ISO 7000 - Ref-No 2047.svg", tint: "#43a047"}
   nom: Régulateur de vitesse actif
-  signification: Le régulateur maintient automatiquement la vitesse choisie ; le limiteur, lui, plafonne l’accélération à la consigne, sans garantir de ne pas la dépasser en descente.
+  signification: Le régulateur de vitesse est actif et maintient automatiquement la vitesse choisie.
   conduite: "Je reste maître du véhicule : un appui sur le frein (ou l'embrayage) le désactive ; je ne l'utilise pas en trafic dense, sur route sinueuse ou glissante."
   theme: M
   sous_theme: voyants

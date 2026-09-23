@@ -96,13 +96,6 @@
   theme: L
   sous_theme: panneaux
   source: "Arrêté du 24 novembre 1967, art. 4, 5 et 7, https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000829916/2025-04-25"
-- id: conf-b6a2-b6a3
-  a: b6a2
-  b: b6a3
-  difference: 'Stationnement unilatéral alterné semi-mensuel : **A** (« 1.15 ») interdit le stationnement de ce côté du **1er au 15** ; **B** (« 16.31 ») l''interdit du **16 à la fin du mois**. Le changement de côté se fait le 15 et le dernier jour du mois, entre 20 h 30 et 21 h.'
-  theme: L
-  sous_theme: panneaux
-  source: Code de la route, art. R417-2
 - id: conf-b7a-b7b
   a: b7a
   b: b7b

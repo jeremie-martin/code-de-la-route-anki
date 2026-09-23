@@ -508,19 +508,16 @@ Recherche Anki : `objectif::l-position`
 
 La durée et les warnings ne créent aucune autorisation.
 
-33 notes / 36 cartes.
+30 notes / 33 cartes.
 
 Recherche Anki : `objectif::l-stationner`
 
 | Note | Étape | Forme | Source |
 |---|---|---|---|
-| `b6a2` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
-| `b6a3` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `marq-livraison` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `marq-zone-bleue` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `c1a` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
 | `c6` | consolidation | reconnaissance | IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France |
-| `conf-b6a2-b6a3` | consolidation | confusions | Code de la route, art. R417-2 |
 | `l-stationnement-categories` | consolidation | faits | Code de la route, art. R417-9 à R417-12 ; service-public.fr F34212 |
 | `l-stationnement-5m-passage` | consolidation | faits | Code de la route, art. R417-11 ; Code de la voirie routière, art. L118-5-1 |
 | `l-stationnement-alterne` | consolidation | faits | Code de la route, art. R417-2 |
@@ -749,7 +746,7 @@ Recherche Anki : `objectif::r-montagne`
 
 Les erreurs d'itinéraire ne justifient aucune manœuvre dangereuse.
 
-28 notes / 29 cartes.
+27 notes / 28 cartes.
 
 Recherche Anki : `objectif::r-autoroute`
 
@@ -777,7 +774,6 @@ Recherche Anki : `objectif::r-autoroute`
 | `r-autoroute-fatigue-aires` | consolidation | questions | ASFA, Les aires d'autoroute ; securite-routiere.gouv.fr, La fatigue |
 | `aff-r-insertion-prioritaire` | consolidation | affirmations | Code de la route, art. R421-3 |
 | `aff-r-autoroute-voie-gauche-80` | consolidation | affirmations | Code de la route, art. R413-19 |
-| `aff-r-autoroute-trouee-terre-plein` | consolidation | affirmations | Code de la route, art. R421-5 et R421-6 |
 | `aff-r-autoroute-vitesse-pluie` | consolidation | affirmations | Code de la route, art. R413-2 et R413-5 |
 | `aff-r-autoroute-cyclo` | socle | affirmations | Code de la route, art. R421-2 |
 | `aff-r-autoroute-aac` | consolidation | affirmations | Code de la route, art. R413-5 ; service-public.fr F2390 |

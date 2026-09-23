@@ -9,9 +9,9 @@
       colour: bleu
       me: true
     - lane: 1
-      y: 45
+      y: 58
       colour: gris
-      kind: truck
+      kind: lorry
   question: Le camion roule lentement ; bonne visibilité, personne en face ni derrière. Le marquage permet-il
     de le dépasser ?
   reponse: 'Non : dépasser ce camion demanderait de franchir ou chevaucher la ligne continue, ce qui est interdit
@@ -32,9 +32,9 @@
       colour: bleu
       me: true
     - lane: 1
-      y: 45
+      y: 58
       colour: gris
-      kind: truck
+      kind: lorry
   question: Le camion roule lentement ; bonne visibilité, personne en face ni derrière. Le marquage permet-il
     de le dépasser ?
   reponse: 'Oui : le marquage l’autorise, sous réserve d’une visibilité et d’un espace suffisants pour dépasser
@@ -92,20 +92,20 @@
     axis: discontinue
     vehicles:
     - lane: 1
-      y: 15
+      y: 11
       colour: bleu
       me: true
     - lane: 1
-      y: 40
+      y: 53
       colour: gris
-      kind: truck
+      kind: lorry
     extras:
     - kind: sommet
-      y: 70
+      y: 80
   question: Le camion roule lentement. (1) Le marquage autorise-t-il à le dépasser ? (2) Puis-je le dépasser maintenant ?
   reponse: '(1) Oui : la ligne est discontinue. (2) Non : le sommet de côte masque la route en face ; sans visibilité suffisante, le dépassement est interdit.'
   explication: 'R414-11. Le marquage n''est pas une garantie de visibilité : c''est au conducteur de juger.
-    Un véhicule peut surgir derrière le sommet à 90 km/h.'
+    Un véhicule peut surgir derrière le sommet à 80 km/h.'
   theme: L
   sous_theme: depassement
   source: Code de la route, art. R414-11
@@ -191,10 +191,10 @@
     lanes: 2
     axis: discontinue
     vehicles:
-      - {lane: 1, y: 15, colour: bleu, me: true}
-      - {lane: 1, y: 45, colour: gris, kind: truck, occludes: true}
+      - {lane: 1, y: 8, colour: bleu, me: true}
+      - {lane: 1, y: 47, colour: gris, kind: lorry, occludes: true}
     extras:
-      - {kind: passage_pieton, y: 62}
+      - {kind: passage_pieton, y: 76}
   question: Le camion devant moi est arrêté avant le passage piéton. Je ne vois aucun piéton depuis ma place. Puis-je le dépasser ?
   reponse: Non. Le camion me masque une partie du passage ; je reste derrière, prêt à céder le passage et à m’arrêter.
   explication: Pour dépasser à l’approche d’un passage piéton, je dois pouvoir m’assurer qu’aucun piéton n’y est engagé. Ne pas en voir ne suffit pas quand la vue est masquée.
@@ -211,7 +211,7 @@
       - {at: 2, style: discontinue}
     vehicles:
       - {lane: 1, y: 15, colour: bleu, me: true}
-      - {lane: 1, y: 50, colour: gris, kind: truck}
+      - {lane: 1, y: 55, colour: gris, kind: lorry}
       - {lane: 1, y: 85, colour: rouge, dir: down}
   question: "Route à trois voies à double sens. Je veux dépasser le camion : quelle voie puis-je utiliser ?"
   reponse: La voie centrale, si elle est libre dans les deux sens sur toute la longueur du dépassement ; jamais la
@@ -247,9 +247,9 @@
       - {at: 1, style: discontinue}
     vehicles:
       - {lane: 1, y: 15, colour: bleu, me: true}
-      - {lane: 1, y: 45, colour: gris}
-      - {lane: 2, y: 45, colour: noir}
-      - {lane: 1, y: 70, colour: gris, kind: truck}
+      - {lane: 1, y: 42, colour: gris}
+      - {lane: 2, y: 42, colour: noir}
+      - {lane: 1, y: 80, colour: gris, kind: lorry}
       - {lane: 2, y: 72, colour: vert}
     extras:
       - {kind: bau}

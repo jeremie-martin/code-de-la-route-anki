@@ -65,7 +65,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: left}
       N: {vehicle: {colour: rouge}, goes: straight}
   check: {pair: [S, N, apres]}
-  question: "Intersection sans signalisation. Je tourne à gauche, la voiture rouge d'en face va tout droit. Qui passe en premier ?"
+  question: "Intersection sans signalisation. Les véhicules suivent les flèches. Qui passe en premier ?"
   reponse: "La rouge : en tournant à gauche, je coupe sa trajectoire, je dois la laisser passer."
   explication: "Règle du tourne-à-gauche (R415-4) : celui qui tourne à gauche cède le passage aux véhicules venant en face, qu'ils aillent tout droit ou tournent à droite. Je me place près de l'axe, clignotant, et j'attends au centre sans gêner."
   theme: L
@@ -78,7 +78,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: straight}
       N: {vehicle: {colour: rouge}, goes: left}
   check: {pair: [S, N, avant]}
-  question: "Intersection sans signalisation. Je vais tout droit, la voiture rouge d'en face tourne à sa gauche. Qui passe en premier ?"
+  question: "Intersection sans signalisation. Les véhicules suivent les flèches. Qui passe en premier ?"
   reponse: "Moi : c'est elle qui coupe ma trajectoire."
   explication: "Le véhicule qui tourne à gauche cède le passage à ceux d'en face. Je vérifie qu'elle s'arrête bien avant de m'engager : un conducteur pressé peut « forcer »."
   theme: L
@@ -91,7 +91,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: left}
       E: {vehicle: {colour: rouge}, goes: straight}
   check: {pair: [S, E, apres]}
-  question: "Intersection sans signalisation. Je tourne à gauche ; une voiture arrive de ma droite. Qui passe en premier ?"
+  question: "Intersection sans signalisation. Les véhicules suivent les flèches. Qui passe en premier ?"
   reponse: "La rouge : elle vient de ma droite."
   explication: "Priorité à droite, quelle que soit ma direction. Tourner à gauche est la manœuvre qui cède à presque tout le monde : véhicules de droite (priorité à droite) et véhicules d'en face (tourne-à-gauche)."
   theme: L
@@ -104,9 +104,9 @@
       S: {vehicle: {colour: bleu, me: true}, goes: left}
       W: {vehicle: {colour: rouge}, goes: straight}
   check: {pair: [S, W, avant]}
-  question: "Intersection sans signalisation. Je tourne à gauche ; une voiture arrive de ma gauche et va tout droit. Qui passe en premier ?"
+  question: "Intersection sans signalisation. Les véhicules suivent les flèches. Qui passe en premier ?"
   reponse: "Moi : je suis à sa droite."
-  explication: "La priorité à droite joue en ma faveur ; le tourne-à-gauche ne m'oblige à céder qu'aux véhicules venant d'en face. Je m'assure que le rouge ralentit, puis je tourne."
+  explication: "La priorité à droite joue en ma faveur ; le tourne-à-gauche ne m'oblige à céder qu'aux véhicules venant d'en face et aux piétons de la rue que j'aborde. Je m'assure que le rouge ralentit, puis je tourne."
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-5"
@@ -117,7 +117,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: right}
       N: {vehicle: {colour: rouge}, goes: right}
   check: {pair: [S, N, independant]}
-  question: "Intersection sans signalisation. Je tourne à droite, la voiture d'en face tourne à sa droite. Qui doit céder le passage ?"
+  question: "Intersection sans signalisation. Les véhicules suivent les flèches. Qui doit céder le passage ?"
   reponse: "Personne : nos trajectoires ne se croisent pas, nous pouvons tourner en même temps."
   explication: "Deux véhicules qui se font face et tournent chacun à droite ne se gênent pas. Je surveille tout de même un piéton qui traverserait la rue où je m'engage."
   theme: L
@@ -130,7 +130,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: left}
       N: {vehicle: {colour: rouge}, goes: right}
   check: {pair: [S, N, apres]}
-  question: "Intersection sans signalisation. Je tourne à gauche, la voiture d'en face tourne à sa droite (nous prenons la même rue). Qui passe en premier ?"
+  question: "Intersection sans signalisation. Les véhicules suivent les flèches. Qui passe en premier ?"
   reponse: "La rouge : elle a la priorité sur moi qui tourne à gauche, et elle n'a pas à traverser la chaussée."
   explication: "Tourner à gauche = céder le passage à tous les véhicules d'en face (tout droit ou à droite). Je la laisse s'engager, puis je tourne derrière elle."
   theme: L
@@ -198,7 +198,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: right, sign: cedez}
       W: {vehicle: {colour: rouge}, goes: straight}
   check: {pair: [S, W, apres]}
-  question: Je tourne à droite ; une voiture arrive de ma gauche. Puis-je m'engager avant elle ?
+  question: "Les véhicules suivent les flèches. Puis-je m'engager avant la voiture rouge ?"
   reponse: 'Non : mon cédez-le-passage m''impose de laisser passer la rouge. Si la voie était libre, je pourrais m''engager sans m''arrêter.'
   explication: 'Le cédez-le-passage n’impose pas l’arrêt, mais impose de laisser passer les véhicules de la route transversale. Même en tournant à droite, je dois attendre : la rouge va occuper la voie où je m’engage.'
   theme: L
@@ -212,7 +212,7 @@
       N: {vehicle: {colour: rouge}, goes: straight, sign: prioritaire}
       E: {vehicle: {colour: vert}, goes: straight, sign: stop}
   check: {order: [N, S, E]}
-  question: Je tourne à gauche ; les autres véhicules suivent les flèches. Quel est l'ordre de passage ?
+  question: "Les véhicules suivent les flèches. Quel est l'ordre de passage ?"
   reponse: 'Rouge, puis moi, puis verte : je suis prioritaire (losange) mais je cède à la rouge qui vient d''en face ; la verte a un STOP.'
   explication: "Être sur la route prioritaire ne dispense pas de la règle du tourne-à-gauche : je cède à la rouge qui vient en face. La verte, au STOP, attend que nous soyons passés tous les deux, même si elle est à ma droite."
   theme: L
@@ -250,8 +250,7 @@
     - S
     - E
     - avant
-  question: Une voiture sort d'un parking (à ma droite) au moment où j'arrive. La priorité à droite s'applique-t-elle
-    ?
+  question: "La voiture rouge arrive au moment où j'arrive. La priorité à droite s'applique-t-elle ?"
   reponse: Non. En sortant du parking, la voiture rouge doit me céder le passage.
   explication: 'R415-9 : celui qui débouche d''un accès non ouvert à la circulation publique, d''un chemin de terre ou d''une aire de stationnement doit céder le passage à tout autre véhicule. Il franchit le trottoir au pas, en laissant passer les piétons.'
   theme: L
@@ -304,7 +303,7 @@
           colour: rouge
         goes: straight
         sign: feu_orange_clignotant
-  question: Une voiture arrive de ma droite. Qui passe en premier ?
+  question: "Les véhicules suivent les flèches. Qui passe en premier ?"
   reponse: 'La rouge : feux au jaune clignotant = prudence et retour aux panneaux ou, sans panneau, à la priorité
     à droite.'
   explication: 'Le jaune clignotant n''est pas un feu vert : il signale que les feux ne règlent plus la circulation.
@@ -339,7 +338,7 @@
       W: {vehicle: {colour: rouge}, goes: straight}
     agent: bras_tendus_EW
   check: {pair: [S, W, apres]}
-  question: Un agent règle la circulation. La voiture rouge, à ma gauche, passe-t-elle avant moi ?
+  question: "Un agent règle la circulation. La voiture rouge passe-t-elle avant moi ?"
   reponse: 'Oui : l''agent me fait face, bras tendus en travers de ma route, ce qui m''arrête ; la rouge, qui le voit de profil, est libérée.'
   explication: "De face ou de dos, bras tendus = arrêt. La priorité à droite ne compte plus quand un agent règle la circulation : seuls ses gestes décident."
   theme: L
@@ -354,7 +353,7 @@
     vehicles:
       - {pos: S, colour: bleu, me: true, goes: straight, distance: 20}
       - {pos: inside, angle: 225, colour: rouge}
-  question: Une voiture circule déjà dans l'anneau, à ma gauche. Puis-je m'engager avant elle ?
+  question: "Puis-je m'engager avant la voiture rouge ?"
   reponse: 'Non : les entrées portent un cédez-le-passage, c''est un carrefour à sens giratoire ; je cède aux véhicules déjà dans l''anneau.'
   explication: Je cède aux véhicules qui circulent dans l’anneau. Avant ma sortie, je contrôle les autres usagers puis mets mon clignotant droit.
   theme: L
@@ -367,7 +366,7 @@
     vehicles:
       - {pos: S, colour: bleu, me: true, goes: straight, distance: 20}
       - {pos: inside, angle: 225, colour: rouge}
-  question: Une voiture circule déjà dans l'anneau, à ma gauche. Puis-je m'engager avant elle ?
+  question: "Puis-je m'engager avant la voiture rouge ?"
   reponse: 'Oui, si elle me laisse passer : les triangles à croix noire, sans cédez-le-passage, annoncent la priorité à droite, et j''arrive à sa droite. Je vérifie qu''elle ralentit.'
   explication: 'La croix noire rappelle la priorité à droite : je suis à droite de la voiture déjà dans l’anneau. Elle doit me laisser entrer. C’est l’inverse d’un giratoire dont les entrées portent un cédez-le-passage.'
   theme: L

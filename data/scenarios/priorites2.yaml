@@ -22,9 +22,9 @@
       N: {vehicle: {colour: rouge}, goes: left}
       E: {vehicle: {colour: vert}, goes: straight, sign: cedez}
   check: {order: [S, N, E]}
-  question: Je vais tout droit ; les autres véhicules suivent les flèches. Quel est l'ordre de passage ?
+  question: "Les véhicules suivent les flèches. Quel est l'ordre de passage ?"
   reponse: 'Moi, puis la rouge, puis la verte : la verte a un cédez-le-passage ; la rouge tourne à gauche et me cède.'
-  explication: "La verte cède à tous (cédez-le-passage), même si elle est à ma droite. La rouge tourne à gauche et cède à moi qui viens en face. La verte passe en dernier, après la rouge qui est sur la route prioritaire."
+  explication: "La verte cède à tous (cédez-le-passage), même si elle est à ma droite. La rouge tourne à gauche et cède à moi qui viens en face. La verte passe en dernier, après la rouge, qui n'a pas de cédez-le-passage."
   theme: L
   sous_theme: priorites
   source: "Code de la route, art. R415-7 et R415-4"
@@ -48,7 +48,7 @@
     - S
     - E
     - avant
-  question: Une voiture arrive de ma droite. Dois-je lui céder le passage ?
+  question: "Dois-je céder le passage à la voiture rouge ?"
   reponse: 'Non : je suis sur une route prioritaire (losange jaune) et la rouge a un cédez-le-passage.'
   explication: 'Le losange jaune indique une route prioritaire jusqu’au losange barré : la position de la rouge à
     ma droite ne change rien, son cédez-le-passage lui impose d’attendre.'
@@ -62,7 +62,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: straight, sign: fin_prioritaire}
       E: {vehicle: {colour: rouge}, goes: straight}
   check: {pair: [S, E, apres]}
-  question: Une voiture arrive de ma droite à la prochaine intersection. Qui passe ?
+  question: "Qui passe en premier à cette intersection ?"
   reponse: 'La rouge : le losange barré que je viens de passer met fin à la route prioritaire ; la priorité à droite s''applique.'
   explication: Le losange jaune barré annonce la fin du caractère prioritaire. Sans autre signalisation, la priorité à droite s’applique ; le triangle avec une croix noire peut la rappeler.
   theme: L
@@ -76,7 +76,7 @@
       W: {vehicle: {colour: rouge}, goes: straight, sign: feu_rouge}
     crosswalks: [E]
     pedestrian: E
-  question: "Feu vert, je tourne à droite ; un piéton traverse la rue dans laquelle je m'engage. Qui passe ?"
+  question: "Je suis la flèche. Qui passe en premier, le piéton ou moi ?"
   reponse: "Le piéton : le feu vert ne me donne pas la priorité sur les piétons engagés ou qui manifestent l'intention de traverser la rue abordée."
   explication: "R415-11 (135 €, 6 points). Même règle pour un cycliste sur une bande cyclable que je coupe. La rouge, au feu rouge, attend."
   theme: L
@@ -89,7 +89,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: straight, sign: prioritaire}
       E: {vehicle: {colour: jaune, kind: tram}, goes: straight}
   check: {pair: [S, E, apres]}
-  question: Un tramway arrive sur ma droite. Qui passe ?
+  question: "Le tramway et moi arrivons en même temps. Qui passe en premier ?"
   reponse: "Le tramway : il est prioritaire sur tous les usagers, même sur une route à caractère prioritaire."
   explication: "R422-3 : priorité aux véhicules sur rails. Seuls une signalisation qui le lui impose (feux, panneau) ou un agent peuvent l'arrêter. Il ne peut ni dévier ni freiner court."
   theme: L
@@ -103,7 +103,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: straight}
       E: {vehicle: {colour: rouge}, goes: left}
   check: {pair: [S, E, apres]}
-  question: "Intersection en T sans signalisation : la route se prolonge tout droit et une rue débouche à ma droite ; la voiture rouge en sort pour tourner à sa gauche. Qui passe ?"
+  question: "Intersection en T sans signalisation. Les véhicules suivent les flèches. Qui passe en premier ?"
   reponse: "La rouge : elle vient de ma droite et la priorité à droite s'applique même dans une intersection en T."
   explication: 'Beaucoup de candidats croient que la route « qui continue » est prioritaire : sans panneau, non. Seule une signalisation (STOP, cédez-le-passage, panneau de priorité, feux, agent) ou une sortie de chemin de terre ou de parking changerait l’ordre.'
   theme: L
@@ -160,7 +160,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: straight}
       E: {vehicle: {colour: rouge}, goes: left}
   check: {pair: [S, E, apres]}
-  question: "Intersection sans signalisation. La voiture rouge, à ma droite, tourne à sa gauche et va couper ma route. Qui passe en premier ?"
+  question: "Intersection sans signalisation. Les véhicules suivent les flèches. Qui passe en premier ?"
   reponse: "La rouge : elle vient de ma droite. La règle du tourne-à-gauche ne la fait céder qu'aux véhicules qui arrivent en face d'elle, pas à moi."
   explication: "Priorité à droite (R415-5), quelle que soit la direction prise par le véhicule de droite. Le tourne-à-gauche (R415-4) impose de céder aux véhicules venant en sens inverse : pour la rouge, ce serait un véhicule venant de ma gauche. Je ralentis et je la laisse tourner."
   theme: L
@@ -174,7 +174,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: right}
       W: {vehicle: {colour: rouge}, goes: straight}
   check: {pair: [S, W, avant]}
-  question: "Intersection en T sans signalisation : ma rue débouche sur la route transversale et je tourne à droite ; la voiture rouge arrive de ma gauche. Qui passe en premier ?"
+  question: "Intersection en T sans signalisation. Les véhicules suivent les flèches. Qui passe en premier ?"
   reponse: "Moi : je suis à sa droite. Sans panneau, la route « qui continue » n'est pas prioritaire."
   explication: 'La forme en T ne change pas la priorité à droite entre routes ordinaires : la rouge vient de ma gauche
     et me cède le passage. Un panneau de priorité, une sortie de parking ou un chemin de terre changeraient l’analyse.'
@@ -188,7 +188,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: straight, private: true}
       W: {vehicle: {colour: rouge}, goes: straight}
   check: {pair: [S, W, apres]}
-  question: "Je sors d'un parking pour traverser la rue ; la voiture rouge arrive de ma gauche. Qui passe en premier ?"
+  question: "Je sors d'un parking pour traverser la rue. Qui passe en premier, la voiture rouge ou moi ?"
   reponse: 'La rouge : en débouchant d’une aire de stationnement sur la rue, je cède aux véhicules des deux côtés.'
   explication: Cette obligation vaut aussi pour un parking ouvert au public. Je franchis le trottoir à très faible
     allure en laissant passer les piétons ; la priorité à droite ne joue pas en ma faveur.
@@ -202,7 +202,7 @@
       S: {vehicle: {colour: bleu, me: true}, goes: straight}
       E: {vehicle: {colour: vert, kind: bike}, goes: straight}
   check: {pair: [S, E, apres]}
-  question: "Intersection sans signalisation : un cycliste arrive de ma droite. Dois-je lui céder le passage ?"
+  question: "Intersection sans signalisation. Dois-je céder le passage au cycliste ?"
   reponse: "Oui : la priorité à droite vaut pour tout véhicule, vélo compris. Je ralentis et je le laisse passer."
   explication: "R415-5 ne distingue pas les catégories de véhicules : un cycliste, une trottinette électrique ou un cyclomoteur venant de droite ont la priorité. Sa vulnérabilité impose en plus une prudence accrue (R412-6) : ne pas s'engager en comptant sur son freinage."
   theme: L
@@ -215,7 +215,7 @@
     vehicles:
       - {pos: S, colour: bleu, me: true, goes: left, distance: 20}
       - {pos: W, colour: rouge, goes: straight, distance: 22}
-  question: L'anneau est vide ; la voiture rouge attend à l'entrée située à ma gauche. Je veux prendre la troisième sortie. Puis-je m'engager ?
+  question: "L'anneau est vide et je veux prendre la troisième sortie. Puis-je m'engager avant la voiture rouge ?"
   reponse: 'Oui : à ce giratoire (cédez-le-passage aux entrées), je ne cède qu''aux véhicules déjà dans l''anneau. Une fois engagé, c''est la rouge qui me cédera le passage.'
   explication: "R415-10 : priorité aux usagers qui circulent sur l'anneau ; un véhicule arrêté à une autre entrée n'y est pas encore. Conseil : clignotant gauche à l'entrée puisque je dépasse la moitié de l'anneau, puis clignotant droit avant ma sortie, en contrôlant à droite."
   theme: L
@@ -241,7 +241,7 @@
     - S
     - N
     - avant
-  question: Les deux voitures sont arrêtées à leur ligne, face à face, et la route transversale est libre. La rouge tourne à sa gauche, je vais tout droit. Qui repart en premier ?
+  question: "Les deux voitures ont marqué l'arrêt à leur ligne et la route transversale est libre. Les véhicules suivent les flèches. Qui repart en premier ?"
   reponse: 'Moi : nos deux STOP règlent la priorité avec la route transversale ; entre nous, celui qui tourne à gauche cède au véhicule qui vient en face.'
   explication: 'Le STOP règle la priorité avec la route transversale, pas entre les deux véhicules arrêtés : on
     revient à la règle du tourne-à-gauche (R415-4). C''est la réponse attendue à l''exemple officiel de 2023 (Q2).'

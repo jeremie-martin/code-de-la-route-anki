@@ -14,11 +14,11 @@
   - ref: voyant-moteur
     legende: 'Orange : anomalie à faire contrôler ; lire la notice.'
 - id: aff-m-autotest-voyants
-  contexte: La notice prévoit que le témoin d’airbag s’allume brièvement à la mise du contact.
-  affirmation: Un voyant qui ne s'allume pas du tout à ce moment-là est bon signe.
+  contexte: À la mise du contact, le témoin d’airbag ne s’allume pas du tout.
+  affirmation: 'C’est bon signe : aucun défaut n’est détecté.'
   verdict: faux
-  pourquoi: Ce témoin devrait s’allumer pour vérifier l’alerte. Son absence peut signaler une panne ; le fonctionnement
-    de l’autotest dépend du véhicule, tous les témoins ne s’allument pas systématiquement.
+  pourquoi: 'Ce témoin s’allume normalement quelques secondes à la mise du contact, pour montrer que l’alerte fonctionne,
+    puis s’éteint. S’il ne s’allume pas, l’alerte elle-même peut être en panne : je fais contrôler l’airbag.'
   theme: M
   sous_theme: tableau_de_bord
   source: "Renault, témoins lumineux, https://www.user-manual.renault.com/fr/chapitre1-faites-connaissance-avec-votre-v%C3%A9hicule/temoins-lumineux"
