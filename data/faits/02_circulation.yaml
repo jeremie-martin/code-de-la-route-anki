@@ -21,7 +21,7 @@
     gen: types_routes
     verso: true
 - id: l-vitesse-separateur-autoroute
-  explication: Le terre-plein central sépare deux chaussées ; le nombre de voies ne suffit pas. Le panneau bleu avec une voiture réglemente l’accès, sans fixer à lui seul 110 km/h. Je lis la configuration, les limitations et les conditions.
+  explication: Le terre-plein central sépare deux chaussées ; le nombre de voies ne suffit pas. Je lis la configuration, les limitations et les conditions.
   theme: L
   sous_theme: vitesse
   source: "R413-2, https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006159600"
@@ -123,7 +123,7 @@
   - ref: b6a3
     legende: Placé du côté interdit du 16 à la fin du mois (numéros impairs).
 - id: l-stationnement-cote
-  explication: Stationner à gauche d'une rue à double sens en agglomération est interdit (R417-1, 35 €) ; la nuit, le véhicule y est aussi moins visible. Hors agglomération, la nuit, les feux de position restent allumés, même sur une route éclairée.
+  explication: Stationner à gauche d'une rue à double sens en agglomération est interdit (R417-1, 35 €) ; la nuit, le véhicule y est aussi moins visible. Hors agglomération, la nuit, un véhicule arrêté sur la chaussée garde ses feux de position allumés, même sur une route éclairée.
   theme: L
   sous_theme: stationnement
   source: Code de la route, art. R417-1, R417-4 et R416-12

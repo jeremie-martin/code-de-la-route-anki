@@ -142,8 +142,7 @@
   theme: C
   sous_theme: deficiences
   rappels:
-  - 'Conducteur de voiture hors probatoire, sans restriction EAD : la conduite est interdite dès {{c1::0,5
-    g/L}} d’alcool dans le sang.'
+  - 'Conducteur de voiture hors probatoire : la conduite est interdite dès {{c1::0,5 g/L}} d’alcool dans le sang.'
   - 'Élève conducteur ou permis probatoire : la conduite est interdite dès {{c2::0,2 g/L}} d’alcool dans le
     sang.'
   explication: 'Le seuil est inclus : il faut être en dessous. Lire sang ou air expiré ; aucun nombre de verres

@@ -225,7 +225,7 @@
   image:
     commons: France road sign B9b.svg
   nom: Accès interdit aux cycles
-  signification: Accès interdit aux cycles, aux EDPM et aux cyclomobiles légers.
+  signification: 'Accès interdit aux cycles, aux engins de déplacement personnel motorisés (EDPM : trottinette électrique, gyroroue…) et aux cyclomobiles légers (petits véhicules électriques d’au plus 30 kg, limités à 25 km/h).'
   conduite: Le cycliste doit prendre un autre itinéraire ; il peut éventuellement passer à pied en poussant son vélo (il devient piéton).
   piege: 'Avec le même symbole de vélo : rond rouge = accès interdit ; rond bleu = piste obligatoire ; carré bleu = piste conseillée ; triangle = débouché de cyclistes.'
   theme: L

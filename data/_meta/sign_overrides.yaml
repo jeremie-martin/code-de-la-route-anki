@@ -325,7 +325,7 @@ c27:
 c28:
   signification: Annonce une réduction du nombre de voies (ex. de 3 à 2, de 2 à 1).
   complement: null
-  piege: Celui dont la voie disparaît doit s'insérer ; celui qui reste dans la voie qui continue est prioritaire.
+  piege: 'Repère pratique : celui dont la voie disparaît s’insère dans la voie qui continue, sans gêner ceux qui y circulent.'
 c65a:
   signification: 'Péage « en flux libre » (sans barrière, plaques lues sous un portique) : indique les moyens de paiement.'
   conduite: Ne pas s'arrêter sous le portique ; payer sous 72 h en ligne, en point de vente ou par télépéage.
@@ -780,7 +780,8 @@ da40:
   conduite: Choisir sa voie assez tôt, après contrôles ; ne pas couper les autres voies au dernier moment.
   complement: null
 b9b:
-  signification: Accès interdit aux cycles, aux EDPM et aux cyclomobiles légers.
+  signification: 'Accès interdit aux cycles, aux engins de déplacement personnel motorisés (EDPM : trottinette électrique,
+    gyroroue…) et aux cyclomobiles légers (petits véhicules électriques d’au plus 30 kg, limités à 25 km/h).'
   piege: 'Avec le même symbole de vélo : rond rouge = accès interdit ; rond bleu = piste obligatoire ; carré bleu = piste conseillée ; triangle = débouché de cyclistes.'
   comparaisons:
   - ref: b22a

@@ -2,7 +2,7 @@
   question: Qui doit porter la ceinture dans la voiture, et qui répond du non-port ?
   reponse: 'Tous les occupants, à l’avant comme à l’arrière : un passager majeur répond de lui-même ; le conducteur répond
     de chaque passager de moins de 18 ans.'
-  explication: "Conducteur non attaché : 135 € et 3 points ; passager majeur : 135 € pour lui, sans points ; passager mineur non attaché : 135 € pour le conducteur, sans points. Il faut une place équipée d'une ceinture par personne. R412-1 II prévoit des dispenses limitées : morphologie inadaptée, certificat médical, taxi en service…"
+  explication: "Conducteur non attaché : 135 € et 3 points ; passager majeur : 135 € pour lui, sans points ; passager mineur non attaché : 135 € pour le conducteur, sans points. Chaque passager occupe sa propre place assise (R412-1-1). R412-1 II prévoit des dispenses limitées : morphologie inadaptée, certificat médical, taxi en service…"
   theme: S
   sous_theme: passagers
   source: Code de la route, art. R412-1 et R412-2

@@ -51,15 +51,17 @@
   - ref: b54
     legende: 'Aire piétonne : seuls les véhicules de desserte et les cycles, au pas.'
 - id: u-enfants-sortie-ecole
-  question: Un car de transport d'enfants (pictogramme enfants) est arrêté devant moi, feux de détresse allumés. Que fais-je
-    ?
+  question: Ce car est arrêté devant moi. Que fais-je ?
   reponse: 'Je réduis fortement ma vitesse, prêt à m’arrêter : des enfants peuvent surgir devant ou derrière le car ; je ne
     le dépasse qu’à très faible allure.'
   explication: 'R413-17 III 3° : vitesse réduite au croisement ou au dépassement d''un transport d''enfants pendant la montée
-    ou la descente. Les feux de détresse du car sont le signal.'
+    ou la descente. Le carré jaune aux deux enfants signale un transport d’enfants ; ses feux de détresse, l’arrêt pour
+    la montée ou la descente.'
   theme: U
   sous_theme: pietons
-  source: Code de la route, art. R413-17 ; arrêté du 2 juillet 1982 (transports d'enfants)
+  source: Code de la route, art. R413-17 ; arrêté du 2 juillet 1982 (transports d'enfants), annexe 7
+  image:
+    gen: car_enfants
 - id: u-fauteuil-roulant-chaussee
   question: Hors agglomération, une personne en fauteuil roulant circule sur la chaussée devant moi, près du bord droit. Que
     fais-je ?

@@ -1425,6 +1425,26 @@ def plaque_orange(params):
     return str(S)
 
 
+def car_enfants(params):
+    """Rear of a coach carrying children, stopped: the square signal (yellow, frame and two children in dark blue,
+    arrêté du 2 juillet 1982, annexe 7) and both rear hazard lights flashing."""
+    navy = "#1b2a5c"
+    S = SVG(420, 300)
+    S.add(f'<rect x="0" y="0" width="420" height="300" fill="{PAPER}"/>')
+    S.add('<rect x="60" y="14" width="300" height="252" rx="18" fill="#e3e6e8" stroke="#555" stroke-width="3"/>')
+    S.add('<rect x="82" y="30" width="256" height="92" rx="8" fill="#cfe6f7" stroke="#555" stroke-width="2"/>')   # rear window
+    S.add('<rect x="60" y="252" width="300" height="28" rx="6" fill="#333"/>')                                   # bumper
+    for x in (86, 334):                                                                     # hazard lights flashing
+        S.add(f'<rect x="{x - 12}" y="212" width="24" height="28" rx="4" fill="{AMBER}"/>')
+        _flash_rays(S, x, 226, 12, AMBER)
+    S.add(f'<rect x="160" y="142" width="100" height="100" fill="#f7d117" stroke="{navy}" stroke-width="7"/>')
+    for cx, h in ((194, 1.0), (226, 0.82)):                                                 # two children walking
+        S.add(f'<g transform="translate({cx},226) scale({h})" fill="{navy}"><circle cx="0" cy="-58" r="9"/>'
+              f'<path d="M-9,-46 h18 l4,26 h-6 l-2,-14 l-2,32 h-6 l-1,-22 l-1,22 h-6 l-2,-32 l-2,14 h-6 z"/></g>')
+    S.add(f'<path d="M203,190 L213,194" stroke="{navy}" stroke-width="4" stroke-linecap="round"/>')          # holding hands
+    return str(S)
+
+
 # ------------------------------------------------------ vehicle & safety ---
 
 def medicaments_niveaux(params):
@@ -2349,7 +2369,7 @@ REGISTRY.update({
     "autoroute_attente": autoroute_attente,
     "medicaments_niveaux": medicaments_niveaux, "etiquettes_carburant": etiquettes_carburant, "pneu_flanc": pneu_flanc,
     "pneu_usure": pneu_usure, "angles_morts": angles_morts, "ceinture": ceinture,
-    "feu_modal": feu_modal, "feu_sur_panneau": feu_sur_panneau, "pmv": pmv, "plaque_orange": plaque_orange, "types_routes": types_routes,
+    "feu_modal": feu_modal, "feu_sur_panneau": feu_sur_panneau, "pmv": pmv, "plaque_orange": plaque_orange, "car_enfants": car_enfants, "types_routes": types_routes,
     "support_panneaux": support_panneaux, "planche_signaux": planche_signaux,
     "vocab_route": vocab_route, "formes_panneaux": formes_panneaux,
     "balise_piquet": balise_piquet, "voyant_direction": voyant_direction,

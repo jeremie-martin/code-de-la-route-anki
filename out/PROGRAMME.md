@@ -59,66 +59,66 @@
 | 53 | `conf-a13a-a13b` | L · panneaux | confusions | socle |
 | 54 | `a-proteger-arret` | A · proteger | questions | socle |
 | 55 | `a14` | L · panneaux | reconnaissance | socle |
-| 56 | `l-feu-vert-interdiction-tourner` | L · signalisation | questions | socle |
-| 57 | `aff-c-vision-peripherique` | C · perception | affirmations | socle |
-| 58 | `b52` | L · panneaux | reconnaissance | socle |
-| 59 | `u-zone-rencontre-pietons` | U · pietons | questions | socle |
-| 60 | `a15a1` | L · panneaux | reconnaissance | socle |
+| 56 | `b2a` | L · panneaux | reconnaissance | socle |
+| 57 | `l-feu-vert-interdiction-tourner` | L · signalisation | questions | socle |
+| 58 | `aff-c-vision-peripherique` | C · perception | affirmations | socle |
+| 59 | `b52` | L · panneaux | reconnaissance | socle |
+| 60 | `u-zone-rencontre-pietons` | U · pietons | questions | socle |
 | 61 | `d-probatoire-duree` (2) | D · points | faits | socle |
-| 62 | `voyant-frein` | M · voyants | reconnaissance | socle |
-| 63 | `a15b` | L · panneaux | reconnaissance | socle |
-| 64 | `e-rapports-regime` | E · ecoconduite | questions | socle |
-| 65 | `d-probatoire-3-points` (1) | D · points | faits | socle |
-| 66 | `voyant-frein-stationnement` | M · voyants | reconnaissance | socle |
-| 67 | `a16` | L · panneaux | reconnaissance | socle |
-| 68 | `u-enfants-sortie-ecole` | U · pietons | questions | socle |
+| 62 | `a15a1` | L · panneaux | reconnaissance | socle |
+| 63 | `voyant-frein` | M · voyants | reconnaissance | socle |
+| 64 | `a15b` | L · panneaux | reconnaissance | socle |
+| 65 | `e-rapports-regime` | E · ecoconduite | questions | socle |
+| 66 | `d-probatoire-3-points` (1) | D · points | faits | socle |
+| 67 | `voyant-frein-stationnement` | M · voyants | reconnaissance | socle |
+| 68 | `a16` | L · panneaux | reconnaissance | socle |
 | 69 | `l-signalisation-hierarchie` (3) | L · signalisation | faits | socle |
-| 70 | `a17` | L · panneaux | reconnaissance | socle |
-| 71 | `a18` | L · panneaux | reconnaissance | socle |
-| 72 | `voyant-ceinture` | M · voyants | reconnaissance | socle |
-| 73 | `a21` | L · panneaux | reconnaissance | socle |
-| 74 | `a24` | L · panneaux | reconnaissance | socle |
-| 75 | `voyant-airbag` | M · voyants | reconnaissance | socle |
-| 76 | `ab1` | L · panneaux | reconnaissance | socle |
-| 77 | `e-moteur-arret` | E · ecoconduite | questions | socle |
-| 78 | `ab2` | L · panneaux | reconnaissance | socle |
-| 79 | `d-recuperation-points` (1) | D · points | faits | socle |
-| 80 | `conf-ab1-ab2` | L · panneaux | confusions | socle |
-| 81 | `c-distance-arret-composantes` | C · distances | questions | socle |
-| 82 | `c-temps-reaction` (1) | C · distances | faits | socle |
-| 83 | `s-animaux` | S · passagers | questions | socle |
-| 84 | `ab3a` | L · panneaux | reconnaissance | socle |
-| 85 | `a-secours-deja-sur-place` | A · proteger | questions | socle |
-| 86 | `ab3b` | L · panneaux | reconnaissance | socle |
-| 87 | `r-loi-montagne-periode` (1) | R · intemperies | faits | socle |
-| 88 | `ab4` | L · panneaux | reconnaissance | socle |
-| 89 | `aff-u-pieton-imprudent` | U · pietons | affirmations | socle |
-| 90 | `c-distance-reaction-formule` (1) | C · distances | faits | socle |
-| 91 | `conf-ab3a-ab4` | L · panneaux | confusions | socle |
-| 92 | `d-stage-points` (1) | D · points | faits | socle |
+| 70 | `u-enfants-sortie-ecole` | U · pietons | questions | socle |
+| 71 | `a17` | L · panneaux | reconnaissance | socle |
+| 72 | `a18` | L · panneaux | reconnaissance | socle |
+| 73 | `voyant-ceinture` | M · voyants | reconnaissance | socle |
+| 74 | `a21` | L · panneaux | reconnaissance | socle |
+| 75 | `a24` | L · panneaux | reconnaissance | socle |
+| 76 | `voyant-airbag` | M · voyants | reconnaissance | socle |
+| 77 | `ab1` | L · panneaux | reconnaissance | socle |
+| 78 | `e-moteur-arret` | E · ecoconduite | questions | socle |
+| 79 | `ab2` | L · panneaux | reconnaissance | socle |
+| 80 | `d-recuperation-points` (1) | D · points | faits | socle |
+| 81 | `conf-ab1-ab2` | L · panneaux | confusions | socle |
+| 82 | `c-distance-arret-composantes` | C · distances | questions | socle |
+| 83 | `c-temps-reaction` (1) | C · distances | faits | socle |
+| 84 | `s-animaux` | S · passagers | questions | socle |
+| 85 | `ab3a` | L · panneaux | reconnaissance | socle |
+| 86 | `a-secours-deja-sur-place` | A · proteger | questions | socle |
+| 87 | `ab3b` | L · panneaux | reconnaissance | socle |
+| 88 | `r-loi-montagne-periode` (1) | R · intemperies | faits | socle |
+| 89 | `ab4` | L · panneaux | reconnaissance | socle |
+| 90 | `aff-u-pieton-imprudent` | U · pietons | affirmations | socle |
+| 91 | `c-distance-reaction-formule` (1) | C · distances | faits | socle |
+| 92 | `conf-ab3a-ab4` | L · panneaux | confusions | socle |
 | 93 | `d-probatoire-duree` (3) | D · points | faits | socle |
-| 94 | `ab5` | L · panneaux | reconnaissance | socle |
-| 95 | `p-verif-gps-passagers` | P · verifications | questions | socle |
-| 96 | `e-frein-moteur` | E · ecoconduite | questions | socle |
-| 97 | `ab6` | L · panneaux | reconnaissance | socle |
-| 98 | `c-distance-mouillee` (1) | C · distances | faits | socle |
-| 99 | `ab7` | L · panneaux | reconnaissance | socle |
-| 100 | `s-surnombre` | S · passagers | questions | socle |
-| 101 | `voyant-moteur` | M · voyants | reconnaissance | socle |
-| 102 | `conf-ab6-ab7` | L · panneaux | confusions | socle |
-| 103 | `ab25` | L · panneaux | reconnaissance | socle |
-| 104 | `r-pluie-premieres-gouttes` | R · intemperies | questions | socle |
-| 105 | `b0` | L · panneaux | reconnaissance | socle |
-| 106 | `c-vitesse-double-freinage` (1) | C · distances | faits | socle |
-| 107 | `scn-pd-droite-tout-droit` | L · priorites | scenarios | socle |
-| 108 | `b1` | L · panneaux | reconnaissance | socle |
-| 109 | `voyant-abs` | M · voyants | reconnaissance | socle |
-| 110 | `d-recuperation-points` (2) | D · points | faits | socle |
-| 111 | `conf-b0-b1` | L · panneaux | confusions | socle |
-| 112 | `scn-pd-gauche-tout-droit` | L · priorites | scenarios | socle |
-| 113 | `c-intervalle-2s` (1) | C · distances | faits | socle |
-| 114 | `r-aquaplaning` | R · intemperies | questions | socle |
-| 115 | `b2a` | L · panneaux | reconnaissance | socle |
+| 94 | `d-stage-points` (1) | D · points | faits | socle |
+| 95 | `ab5` | L · panneaux | reconnaissance | socle |
+| 96 | `p-verif-gps-passagers` | P · verifications | questions | socle |
+| 97 | `e-frein-moteur` | E · ecoconduite | questions | socle |
+| 98 | `ab6` | L · panneaux | reconnaissance | socle |
+| 99 | `c-distance-mouillee` (1) | C · distances | faits | socle |
+| 100 | `ab7` | L · panneaux | reconnaissance | socle |
+| 101 | `s-surnombre` | S · passagers | questions | socle |
+| 102 | `voyant-moteur` | M · voyants | reconnaissance | socle |
+| 103 | `conf-ab6-ab7` | L · panneaux | confusions | socle |
+| 104 | `ab25` | L · panneaux | reconnaissance | socle |
+| 105 | `r-pluie-premieres-gouttes` | R · intemperies | questions | socle |
+| 106 | `b0` | L · panneaux | reconnaissance | socle |
+| 107 | `c-vitesse-double-freinage` (1) | C · distances | faits | socle |
+| 108 | `scn-pd-droite-tout-droit` | L · priorites | scenarios | socle |
+| 109 | `b1` | L · panneaux | reconnaissance | socle |
+| 110 | `voyant-abs` | M · voyants | reconnaissance | socle |
+| 111 | `d-recuperation-points` (2) | D · points | faits | socle |
+| 112 | `conf-b0-b1` | L · panneaux | confusions | socle |
+| 113 | `scn-pd-gauche-tout-droit` | L · priorites | scenarios | socle |
+| 114 | `c-intervalle-2s` (1) | C · distances | faits | socle |
+| 115 | `r-aquaplaning` | R · intemperies | questions | socle |
 | 116 | `e-climatisation-conso` | E · ecoconduite | questions | socle |
 | 117 | `voyant-esp` | M · voyants | reconnaissance | socle |
 | 118 | `b2b` | L · panneaux | reconnaissance | socle |
@@ -127,9 +127,9 @@
 | 121 | `scn-pd-trois-vehicules` | L · priorites | scenarios | socle |
 | 122 | `b3` | L · panneaux | reconnaissance | socle |
 | 123 | `aff-l-zone-30-portee` | L · signalisation | affirmations | socle |
-| 124 | `d-stage-points` (2) | D · points | faits | socle |
-| 125 | `aff-a-triangle-autoroute` | A · proteger | affirmations | socle |
-| 126 | `d-probatoire-duree` (4) | D · points | faits | socle |
+| 124 | `aff-a-triangle-autoroute` | A · proteger | affirmations | socle |
+| 125 | `d-probatoire-duree` (4) | D · points | faits | socle |
+| 126 | `d-stage-points` (2) | D · points | faits | socle |
 | 127 | `r-brouillard-feux` | R · intemperies | questions | socle |
 | 128 | `voyant-pression-pneus` | M · voyants | reconnaissance | socle |
 | 129 | `l-passage-pieton-50m` (1) | L · priorites | faits | socle |
@@ -146,11 +146,11 @@
 | 140 | `b7a` | L · panneaux | reconnaissance | socle |
 | 141 | `aff-u-pieton-engage-lent` | U · pietons | affirmations | socle |
 | 142 | `scn-pd-face-tourne-gauche` | L · priorites | scenarios | socle |
-| 143 | `d-recuperation-points` (3) | D · points | faits | socle |
-| 144 | `voyant-brouillard-arriere` | M · voyants | reconnaissance | socle |
+| 143 | `voyant-brouillard-arriere` | M · voyants | reconnaissance | socle |
+| 144 | `d-recuperation-points` (3) | D · points | faits | socle |
 | 145 | `b7b` | L · panneaux | reconnaissance | socle |
-| 146 | `c-intervalle-2s` (2) | C · distances | faits | socle |
-| 147 | `r-neige-conduite` | R · intemperies | questions | socle |
+| 146 | `r-neige-conduite` | R · intemperies | questions | socle |
+| 147 | `c-intervalle-2s` (2) | C · distances | faits | socle |
 | 148 | `l-giratoire-clignotant` | L · priorites | questions | socle |
 | 149 | `c-suiveur-trop-pres` | C · distances | questions | socle |
 | 150 | `u-velo-chiffres` (1) | U · cyclistes | faits | socle |

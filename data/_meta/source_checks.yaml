@@ -991,3 +991,8 @@
   url: https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/
   portee: 'Relecture de toutes les notes par chapitre contre le Code consolidé du 10 septembre 2026 (R412-30, R412-34, R414-11, R414-15, R416-12, R417-10, R421-7, R433-2, L224-1, L224-2 I A, L413-1), l’arrêté du 24 novembre 1967 (B13, SR3, AB3a), l’IISR 7e partie (lignes, zigzag, flèches de rabattement), l’arrêté du 12 novembre 1963 et les références techniques PSC de juillet 2026 (DAE, dégagement d’urgence).'
   notes: [scn-dep-vehicule-tourne-gauche, aff-l-zone-rencontre-stationnement, aff-l-4-voies-double-sens, aff-l-files-droite, aff-d-alcool-contravention, d-alcool-contravention, d-grand-exces, a-dae-utilisation, aff-a-dae-sans-danger, aff-a-degagement-urgence, aff-c-oreillette, aff-e-moteur-chauffer, voyant-regulateur, voyant-frein, voyant-croisement, voyant-route, b8, eb10, a7, feu-rouge, marq-ligne-jaune-zigzag, u-convoi-exceptionnel, aff-r-nuit-feux-route-arret]
+- id: tram-priorite-iisr
+  consulte_le: '2026-09-23'
+  url: https://www.msr25.doubs.developpement-durable.gouv.fr/IMG/pdf/iisr_3eme_partie_intersections_et_regimes_de_priorite.pdf
+  portee: 'R422-3 I (Code consolidé au 10/09/2026) soumet les tramways sur chaussée aux prescriptions absolues et aux agents ; l’IISR 3e partie lit ce même article comme donnant la priorité de passage aux tramways, au point de faire perdre son caractère prioritaire à une route qui croise des voies de tramway. Règle du deck maintenue, source complétée.'
+  notes: [r-tram-priorite, scn-tram-droite-moi-prioritaire]

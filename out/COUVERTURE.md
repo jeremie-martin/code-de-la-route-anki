@@ -137,7 +137,7 @@ Recherche Anki : `objectif::l-intersection`
 | `scn-prioritaire-droite-arrive` | socle | scenarios | Code de la route, art. R415-7 ; IISR (AB6) |
 | `scn-fin-prioritaire` | consolidation | scenarios | Code de la route, art. R415-5 ; IISR (AB7) |
 | `scn-feu-vert-pieton` | consolidation | scenarios | Code de la route, art. R415-11 |
-| `scn-tram-droite-moi-prioritaire` | consolidation | scenarios | Code de la route, art. R422-3 |
+| `scn-tram-droite-moi-prioritaire` | consolidation | scenarios | Code de la route, art. R422-3 ; IISR 3e partie, art. 42-8 |
 | `scn-t-intersection-droite` | consolidation | scenarios | Code de la route, art. R415-5 |
 | `scn-pompiers-face-tourne-gauche` | consolidation | scenarios | Code de la route, art. R415-12 |
 | `scn-pd-droite-tourne-gauche` | consolidation | scenarios | Code de la route, art. R415-5 et R415-4 |
@@ -812,7 +812,7 @@ Recherche Anki : `objectif::r-tunnel-rail`
 | `r-pn-bloque` | socle | questions | SNCF Réseau, Que faire en cas d'immobilisation ; Code de la route, art. R422-3 |
 | `r-pn-sans-barriere` | consolidation | questions | Code de la route, art. R422-3 et R414-12 ; IISR (G1, A8, J10) |
 | `r-pn-barrieres-ouverture` | socle | questions | Code de la route, art. R422-3 ; SNCF Réseau |
-| `r-tram-priorite` | socle | questions | Code de la route, art. R422-3 et R414-13 |
+| `r-tram-priorite` | socle | questions | Code de la route, art. R422-3 et R414-13 ; IISR 3e partie, art. 42-8 |
 | `r-tram-traversee-degager` | consolidation | questions | Code de la route, art. R422-3 et R417-11 ; coursdecode.com, Les tramways |
 | `aff-r-pn-150m` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR |
 | `aff-r-pn-feux-rouges-possibles` | consolidation | affirmations | Sécurité routière, Exemples de nouvelles questions (Q19) ; IISR, 4e partie (signal G2) |
@@ -879,7 +879,7 @@ Recherche Anki : `objectif::u-vulnerables`
 | `u-fausse-courtoisie-pieton` | consolidation | questions | Code de la route, art. R412-30 et R415-11 ; REMC (fausse courtoisie) |
 | `u-pieton-hors-agglo-cote` | consolidation | questions | Code de la route, art. R412-36 et R412-42 |
 | `u-zone-rencontre-pietons` | socle | questions | Code de la route, art. R110-2 et R415-11 |
-| `u-enfants-sortie-ecole` | socle | questions | Code de la route, art. R413-17 ; arrêté du 2 juillet 1982 (transports d'enfants) |
+| `u-enfants-sortie-ecole` | socle | questions | Code de la route, art. R413-17 ; arrêté du 2 juillet 1982 (transports d'enfants), annexe 7 |
 | `u-fauteuil-roulant-chaussee` | consolidation | questions | Code de la route, art. R412-34, R412-35, R412-36 et R414-4 |
 | `u-cyclistes-de-front` | consolidation | questions | Code de la route, art. R431-7 et R414-4 |
 | `u-cycliste-tourner-droite` | socle | questions | Code de la route, art. R415-3 III : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039278135 ; R415-14 |
@@ -1293,7 +1293,7 @@ Recherche Anki : `objectif::d-permis`
 | `d-probatoire-duree` | socle | faits | Code de la route, art. L223-1 et R223-1 ; service-public.fr F2390 |
 | `d-formation-post-permis` | consolidation | faits | Code de la route, art. L223-1 ; arrêté d'application de la formation complémentaire (R223-4-1 II et III abrogés par le décret n° 2025-1437) ; service-public.fr F2390 |
 | `d-points-delit-cumul` | consolidation | faits | Code de la route, L223-2, L235-1 ; Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F31551 |
-| `d-probatoire-3-points` | socle | faits | Code de la route, art. L223-6, R223-4, R223-8, L223-5 |
+| `d-probatoire-3-points` | socle | faits | Code de la route, art. L223-6, R223-4, R223-8 (décret 2025-1437), L223-5 |
 | `d-invalidation-delai` | consolidation | faits | Service Public, https://www.service-public.gouv.fr/particuliers/vosdroits/F1704 |
 | `d-recuperation-points` | socle | faits | Code de la route, art. L223-6 ; service-public.fr F1685 |
 | `d-stage-points` | socle | faits | Code de la route, art. L223-6 et R223-8 ; service-public.fr F14208 |

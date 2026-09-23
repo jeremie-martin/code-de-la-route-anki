@@ -15,12 +15,13 @@
   sous_theme: points
   source: Code de la route, art. L223-1 et R223-1 ; service-public.fr F2390
   rappels:
-  - Sans formation post-permis ni AAC, le délai probatoire ordinaire dure {{c1::3 ans}}.
-  - Après AAC, sans formation post-permis, le délai probatoire ordinaire dure {{c2::2 ans}}.
+  - Sans formation complémentaire post-permis ni conduite accompagnée (AAC), le délai probatoire ordinaire dure {{c1::3
+    ans}}.
+  - Après une conduite accompagnée (AAC), sans formation post-permis, le délai probatoire ordinaire dure {{c2::2 ans}}.
   - Sans infraction avec retrait de points, en filière classique, le capital probatoire augmente normalement de {{c3::2 points}}
     par année.
-  - Sans infraction avec retrait de points, après AAC, le capital probatoire augmente normalement de {{c4::3 points}} par
-    année.
+  - Sans infraction avec retrait de points, après une conduite accompagnée (AAC), le capital probatoire augmente normalement
+    de {{c4::3 points}} par année.
 - id: d-formation-post-permis
   texte: La formation complémentaire « post-permis » (une journée, entre le 6e et le 12e mois) ramène le délai probatoire
     de 3 ans à {{c1::2 ans}}.
@@ -39,12 +40,13 @@
 - id: d-probatoire-3-points
   texte: En permis probatoire, une infraction retirant au moins {{c1::3 points}} entraîne l’obligation de suivre un stage
     de sensibilisation (lettre 48N).
-  explication: 'Le stage, à suivre dans les 4 mois, remplace l’amende et rend jusqu’à 4 points dans la limite du capital.
+  explication: 'Le stage, à suivre dans les 4 mois, rend jusqu’à 4 points dans la limite du capital ; l’amende payée est remboursée
+    sur demande (dans les 15 jours ouvrables après le stage).
     La perte de la totalité des points (6 la première année) entraîne l’invalidation du permis : un seul délit ou une contravention
     à 6 points suffit.'
   theme: D
   sous_theme: points
-  source: Code de la route, art. L223-6, R223-4, R223-8, L223-5
+  source: Code de la route, art. L223-6, R223-4, R223-8 (décret 2025-1437), L223-5
 - id: d-invalidation-delai
   texte: Après une invalidation pour solde de points nul, il est interdit d’obtenir un nouveau permis pendant {{c1::6 mois}}
     (1 an en cas de nouvelle invalidation dans les cinq ans).

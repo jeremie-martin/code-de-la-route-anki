@@ -256,7 +256,7 @@
   theme: L
   sous_theme: panneaux
   source: IISR (Instruction interministérielle sur la signalisation routière) ; Wikipédia FR, signalisation routière en France
-  piege: Celui dont la voie disparaît doit s'insérer ; celui qui reste dans la voie qui continue est prioritaire.
+  piege: 'Repère pratique : celui dont la voie disparaît s’insère dans la voie qui continue, sans gêner ceux qui y circulent.'
 - id: c29a
   type: panneau
   code: C29a
