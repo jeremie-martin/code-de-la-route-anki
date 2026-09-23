@@ -7,7 +7,8 @@ partir d’une bibliothèque de connaissances écrite à la main (`data/`) par l
 **[Télécharger le paquet](out/Code-de-la-route-2026.apkg)** (effectifs dans [STATS](out/STATS.md)). Le deck
 relie signaux, règles, décisions et scénarios dessinés à 49 objectifs d’apprentissage ; chaque note a été
 vérifiée contre une source primaire (registre dans [`docs/research/verification-2026-09`](docs/research/verification-2026-09/README.md)).
-Il ne contient pas de photographies d’examen.
+Il ne contient pas de photographies d’examen. État du droit : Code de la route consolidé au 10 septembre 2026,
+règles datées revérifiées sur Légifrance du 21 au 23 septembre 2026.
 
 ## Étudier
 

@@ -1,6 +1,6 @@
 # Vérification du rendu navigateur
 
-Paquet complet SHA-256 : `67698fcc616bd3ef9ee3652d739385425ed2bd8eaa95c37393c5812c5a8ce956`.
+Paquet complet SHA-256 : `e5d24c91775cd5029f64d62c9a402f5ff42a226667cd7edbe43d0f52daba431f`.
 
 Paquet importé dans une collection temporaire ; contenus et gabarits rendus par Anki, puis chargés dans Chromium local sans réseau externe. Toutes les cartes, recto et verso, à 430 × 932 en clair et sombre, à 390 × 844 et 320 × 640 en sombre ; échantillon à 960 px.
 

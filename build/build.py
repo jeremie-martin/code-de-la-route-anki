@@ -691,7 +691,10 @@ def build_collection(data, names, out_apkg: Path):
                     "Étudier le deck parent ; collecte des nouvelles cartes par position croissante, tri dans l'ordre de collecte. "
                     "Activer FSRS dans les options d'Anki si souhaité (réglage global). "
                     "Lors des mises à jour, laisser l'import des préréglages décoché pour garder ses réglages personnels. "
-                    "Compléter par des séries photo/vidéo et des examens blancs.")
+                    "Compléter par des séries photo/vidéo et des examens blancs.\n"
+                    "Règles vérifiées sur le Code de la route consolidé au 10 septembre 2026. "
+                    "Textes et schémas : CC BY-SA 4.0 ; images Wikimedia Commons sous leur propre licence, auteurs et liens : "
+                    "https://github.com/jeremie-martin/code-de-la-route-anki/blob/master/out/ATTRIBUTIONS.md")
     col.decks.save(root)
     for sub, desc in M.DECK_DESCRIPTIONS.items():
         d = col.decks.by_name(f"{M.DECK_ROOT}::{sub}")
